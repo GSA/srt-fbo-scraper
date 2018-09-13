@@ -160,7 +160,7 @@ for d in dfs:
 
 final = {k:None for k in report_types}
 for k in desired_reports:
-    data = pd.concat(desired_reports[k],sort=True)
+    data = pd.concat(desired_reports[k])
     final[k] = (data)
     # make a file path for the data that will be written
 

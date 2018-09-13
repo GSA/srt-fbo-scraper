@@ -29,12 +29,12 @@ def get_and_write_file(url):
             shutil.copyfileobj(r, f)
     return file
 
-    def open_file(file_name,remove_file=False):
-        with open(file_name, mode = 'r', encoding = 'Latin1') as f:
-            lines = f.readlines()
-        if remove_file:
-            os.remove(file_name)
-        return lines
+def open_file(file_name,remove_file=False):
+    with open(file_name, mode = 'r', encoding = 'Latin1') as f:
+        lines = f.readlines()
+    if remove_file:
+        os.remove(file_name)
+    return lines
 
 def id_and_count_meta_tags(lines, desired_tags):
     end_tag = re.compile(r'\</[A-Z]*>')

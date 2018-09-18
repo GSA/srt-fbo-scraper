@@ -8,6 +8,15 @@ import xml.etree.ElementTree as ET
 
 
 def write_weekly_file(url):
+    '''Given the FBO FTP weekly url, download and write the xml.
+    Arguments
+        url (str):  the FTP url for the weekly data. Should be
+                    'ftp://ftp.fbo.gov/datagov/FBOFullXML.xml'
+    Returns:
+        file_path (str): the abs path of the xml file
+    '''
+
+
     out_path = os.path.join(os.getcwd(),"weekly_files")
     if not os.path.exists(out_path):
         os.makedirs(out_path)

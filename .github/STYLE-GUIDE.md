@@ -3,7 +3,7 @@
 1. [Branches](#branches)
 2. [Commits](#commits)
     1. [Messages](#messages)
-3. [Rebasing & Merging](#rebasing & merging)
+3. [Rebasing & Merging](#merging)
 
 ## Branches
 

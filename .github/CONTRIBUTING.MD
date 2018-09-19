@@ -17,7 +17,7 @@ Pull requests are the best way to propose changes to the codebase. Here's the ba
 3. Issue that pull request!
 4. Await review and feedback.
 
-Throughout this process, you should follow this repo's [style guidelines](link to style guidelines).
+Throughout this process, you should follow this repo's [style guidelines](https://github.com/GSA/fbo-scraper/blob/master/.github/STYLE-GUIDE.md).
 
 ## Any contributions you make will be under the Creative Commons Zero v1.0 Universal
 In short, when you submit code changes, your submissions are understood to be under the same Creative Commons License that covers the project.

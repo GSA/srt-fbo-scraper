@@ -1,3 +1,3 @@
 # fbo-scraper aka smartie
-ETL scripts for daily FedBizOps files
+ETL scripts for weekly FedBizOps files
 

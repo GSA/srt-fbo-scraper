@@ -3,7 +3,8 @@
 1. [Branches](#branches)
 2. [Commits](#commits)
     1. [Messages](#messages)
-3. [Rebasing/Merging](#rebasing/merging)
+3. [Merging](#merging)
+4. [Rebasing](#rebasing)
 
 ## Branches
 
@@ -105,7 +106,7 @@ of the above *before* pushing.
  * Inlcude one blank line
  * Write your commit message.
 
-## Rebasing/Merging
+## Merging
 You rebase or merge when you want to integrate changes from one branch into another branch. The difference
 between these two operations is htat `git rebase` is destructive whereas `git merge` is not. There's
 a great tutorial on these two operations [here](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
@@ -118,8 +119,8 @@ To do this, you need to “merge upstream master” in your branch:
   git fetch upstream
   git merge upstream/master
   ```
-  
-A commone `git rebase` use-case is when you've made a pull request, received a review sometime later and then had the PR
+## Rebasing  
+You might need to `git rebase` when you've made a pull request, received a review sometime later, and then had the PR
 approved. In this case, you might has a "stale" PR - changes could have happened to `master` that aren't reflected in 
 your approved branch. This [tutorial](https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request) walks you 
 through rebasing.

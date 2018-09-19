@@ -3,7 +3,7 @@
 1. [Branches](#branches)
 2. [Commits](#commits)
     1. [Messages](#messages)
-3. [Rebasing & Merging](#merging)
+3. [Rebasing/Merging](#rebasing/merging)
 
 ## Branches
 
@@ -105,7 +105,7 @@ of the above *before* pushing.
  * Inlcude one blank line
  * Write your commit message.
 
-## Rebasing & Merging
+## Rebasing/Merging
 You rebase or merge when you want to integrate changes from one branch into another branch. The difference
 between these two operations is htat `git rebase` is destructive whereas `git merge` is not. There's
 a great tutorial on these two operations [here](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).

@@ -1,10 +1,11 @@
 import json
-import urllib
+import urllib.request
 from contextlib import closing
 import shutil
 import datetime
 import os
 import xml.etree.ElementTree as ET
+
 
 
 def write_weekly_file(url):
@@ -87,7 +88,7 @@ def elem2json(elem, strip=True):
     return json.dumps(elem_to_dict(elem,strip=strip))
 
 
-if __name__ == 'main':
+if __name__ == "__main__":
     url = 'ftp://ftp.fbo.gov/datagov/FBOFullXML.xml'
     # This takes a few minutes (roughly 1.7GB to write)
     file_path = write_weekly_file(url)
@@ -98,5 +99,6 @@ if __name__ == 'main':
     # Create JSON string from root (an Element object)
     elem_json = elem2json(root)
     # Write the json
+    json_file_path = file_path.replace("xml","json")
     with open(json_file_path, 'w') as f:
         json.dump(elem_json, f)

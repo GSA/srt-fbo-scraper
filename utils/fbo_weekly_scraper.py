@@ -6,14 +6,22 @@ import datetime
 import os
 import xml.etree.ElementTree as ET
 import pandas as pd
+import xmltojson
 
 class FBONotices():
     '''
+    Provides an interface to the FBO FTP, providng methods to download the xml,
+    conver it to json, write that json, and convert that json to pandas
+    dataframes.
+
+    Atributes:
+        ftp_ulr:  the FTP url for the weekly FBO files. These files are updated
+                  weekly betwee 2-3am Sunday mornings.
 
     '''
 
-    def __init__(self):
-        pass
+    def __init__(self,ftp_url='ftp://ftp.fbo.gov/datagov/FBOFullXML.xml'):
+        self.ftp_url = ftp_url
 
 
     def write_xml(self):
@@ -22,85 +30,16 @@ class FBONotices():
             xml_file_path (str): abs path to the xml just downloaded.
         '''
 
-        url = 'ftp://ftp.fbo.gov/datagov/FBOFullXML.xml'
         out_path = os.path.join(os.getcwd(),"weekly_files")
         if not os.path.exists(out_path):
             os.makedirs(out_path)
         now = datetime.datetime.now().strftime('%m-%d-%y')
         file_name = 'fbo_weekly_'+now+'.xml'
-        with closing(urllib.request.urlopen(url)) as r:
+        with closing(urllib.request.urlopen(self.ftp_url)) as r:
             xml_file_path = os.path.join(out_path, file_name)
             with open(xml_file_path, 'wb') as f:
                 shutil.copyfileobj(r, f)
         return xml_file_path
-
-
-    @staticmethod
-    def elem_to_dict(elem,strip=True):
-        """Recursive function that converts an xml.etree.ElementTree.Element
-        into a dictionary.
-        Arguments:
-            elem (object): after creating an ElemenTree object
-                                        from an xml file, the getroot() method
-                                        will return an Element object.
-            strip (bool): whether or not to ignore leading and trailing
-                          whitespace in the text that maps to the xml tags.
-        Returns:
-            tag_dict (dict): a dict containing and Element tag name and the
-                            text that corresponds to it.
-        """
-
-        d = {}
-        for key, value in elem.attrib.items():
-            d['@'+key] = value
-        # loop over subelements to merge them
-        for subelem in elem:
-            v = FBONotices.elem_to_dict(subelem,strip=strip)
-            tag = subelem.tag
-            value = v[tag]
-            try:
-                # add to existing list for this tag
-                d[tag].append(value)
-            except AttributeError:
-                # turn existing entry into a list
-                d[tag] = [d[tag], value]
-            except KeyError:
-                # add a new non-list entry
-                d[tag] = value
-        text = elem.text
-        tail = elem.tail
-        if strip:
-            # ignore leading and trailing whitespace
-            if text:
-                text = text.strip()
-            if tail:
-                tail = tail.strip()
-        if tail:
-            d['#tail'] = tail
-        if d:
-            # use #text element if other attributes exist
-            if text:
-                d["#text"] = text
-        else:
-            # text is the value if no attributes
-            d = text or None
-        tag_dict = {elem.tag: d}
-        return tag_dict
-
-
-    @staticmethod
-    def elem_to_json(elem, strip=True):
-        """Convert an Element into a JSON string.
-        Arguments:
-            elem (object):  an xml.etree.ElementTree.Element
-        Returns:
-            json_string (str): a str representing JSON
-        """
-
-        if hasattr(elem, 'getroot'):
-            elem = elem.getroot()
-        json_string = json.dumps(FBONotices.elem_to_dict(elem,strip=strip))
-        return json_string
 
 
     def xml_to_json(self,xml_file_path):
@@ -115,7 +54,7 @@ class FBONotices():
         tree = ET.parse(xml_file_path)
         # As an Element, root has a tag and a dictionary of attributes
         root = tree.getroot()
-        json_string = FBONotices.elem_to_json(root)
+        json_string = xmltojson.elem_to_json(root)
         return json_string
 
 

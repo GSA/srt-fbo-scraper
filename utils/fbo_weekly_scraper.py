@@ -68,6 +68,8 @@ class FBONotices():
         if '.json' not in file_name:
             file_name += '.json'
         out_path = os.path.join(os.getcwd(),"weekly_files")
+        if not os.path.exists(out_path):
+            os.makedirs(out_path)
         json_file_path = os.path.join(out_path, file_name)
         with open(json_file_path, 'w') as f:
             json.dump(json_string, f)

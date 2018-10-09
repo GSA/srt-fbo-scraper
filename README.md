@@ -1,4 +1,4 @@
-# fbo-scraper aka smartie!
+# fbo-scraper
 [FBO](https://www.fbo.gov/) is the U.S. government's system of record for opportunities to do business with the government. Every week, the FBO system posts all active opportunities as an xml file that is made publically available via the File Transfer Protocol (FTP), which is a standard network protocol used for the transfer of computer files between a client and server on a computer network.
 
 This project downloads the xml of a weekly FBO file and converts it to JSON. Eventually, we'll scan opportunities for compliance with various Federal policies. 

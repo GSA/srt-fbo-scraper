@@ -9,7 +9,6 @@ import json
 import pandas as pd
 
 
-
 class NightlyFBONotices():
     '''
     Download nightly FBO file, converting pseudo-xml into JSON.
@@ -55,6 +54,18 @@ class NightlyFBONotices():
         tag_count = Counter(clean_tags)
 
         return tag_count
+
+
+    @staticmethod
+    def merge_dicts(dicts):
+        d = {}
+        for dict in dicts:
+            for key in dict:
+                try:
+                    d[key].append(dict[key])
+                except KeyError:
+                    d[key] = [dict[key]]
+        return {k:" ".join(v) for k, v in d.items()}
 
 
     def get_and_write_file(self):
@@ -127,8 +138,8 @@ class NightlyFBONotices():
                     notices_dict_incrementer[last_clean_notice_start_tag] += 1
                     continue #continue since we found an ending notice tag
                 except AttributeError:
-                    line_lower = line.lower()
-                    line_lower_htmless = html_tag_re.sub('',line_lower).strip()
+                    line_lower = line.lower().replace(u'\xa0', u' ')
+                    line_lower_htmless = ' '.join(html_tag_re.sub(' ',line_lower).split())
                     try:
                         matches = sub_tag_groups.search(line_lower_htmless)
                         groups  = matches.groups()
@@ -142,11 +153,23 @@ class NightlyFBONotices():
                         for i,record in enumerate(matches_dict[last_clean_notice_start_tag][current_tag_index]):
                             if last_sub_tab in record:
                                 record_index = i
-                        matches_dict[last_clean_notice_start_tag][current_tag_index][record_index][last_sub_tab] += line_lower_htmless
+                        matches_dict[last_clean_notice_start_tag][current_tag_index][record_index][last_sub_tab] += " " + line_lower_htmless
         notices_dict = {k:None for k in notice_types}
         for k in matches_dict:
-            notices_dict[k]=[v for k,v in matches_dict[k].items()]
-        json_str = json.dumps(notices_dict)
+            dict_list = [v for k,v in matches_dict[k].items()]
+            notices_dict[k] = dict_list
+
+        merge_notices_dict = {k:[] for k in notices_dict}
+        for k in notices_dict:
+            notices = notices_dict[k]
+            if notices:
+                for notice in notices:
+                    merged_dict = NightlyFBONotices.merge_dicts(notice)
+                    merge_notices_dict[k].append(merged_dict)
+            else:
+                pass
+
+        json_str = json.dumps(merge_notices_dict)
 
         return json_str
 

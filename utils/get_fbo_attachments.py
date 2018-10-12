@@ -127,7 +127,6 @@ def _get_attachment_text(attachments_path):
     out_path = 'attachments'
     if not os.path.exists(out_path):
         os.makedirs(out_path)
-
     for file in os.listdir(attachments_path):
         if file.startswith('.'):
             continue
@@ -137,21 +136,21 @@ def _get_attachment_text(attachments_path):
                 b_text = textract.process(file_path, encoding='utf-8')
                 detected_encoding = chardet.detect(b_text)['encoding']
                 text = b_text.decode(detected_encoding)
+                '''
                 base = os.path.splitext(file)[0]
                 out_file = base+'.txt'
                 out = os.path.join(out_path, out_file)
                 with open(out, 'w') as f:
                     f.write(text)
+                '''
             except Exception as e:
                 print("-"*80)
                 print(e)
                 print(file)
                 text =""
-            if os.path.exists(file):
-                os.remove(file)
-            if os.path.exists(out_file):
-                os.remove(out_file)
-    return(text)
+            if os.path.exists(file_path):
+                os.remove(file_path)
+    return text
      
 
 

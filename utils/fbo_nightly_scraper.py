@@ -24,6 +24,7 @@ class NightlyFBONotices():
         self.base_url = base_url
         self.date = str(date)
         self.ftp_url = base_url+self.date
+        print(self.ftp_url)
 
 
     @staticmethod
@@ -77,7 +78,7 @@ class NightlyFBONotices():
         '''
 
         file_name = 'fbo_nightly_'+self.date
-        out_path = os.path.join(os.getcwd(),"nightly_files")
+        out_path = os.path.join(os.getcwd(),"temp/nightly_files")
         if not os.path.exists(out_path):
             os.makedirs(out_path)
 
@@ -100,9 +101,9 @@ class NightlyFBONotices():
             json_str (str): a string representing the JSON
         '''
 
-        with open(file_name,'r') as f:
+        with open(file_name,'r',errors='ignore') as f:
             file_lines = f.readlines()
-        with open(r'html_tags.txt','r') as f:
+        with open(r'utils/html_tags.txt','r') as f:
             html_tags = f.read().splitlines()
         html_tag_re = re.compile(r'|'.join('(?:</?{0}>)'.format(x) for x in html_tags))
         alphas_re = re.compile('[^a-zA-Z]')
@@ -183,7 +184,7 @@ class NightlyFBONotices():
         '''
         if '.json' not in file_name:
             file_name += '.json'
-        out_path = os.path.join(os.getcwd(),"nightly_files")
+        out_path = os.path.join(os.getcwd(),"temp/nightly_files")
         if not os.path.exists(out_path):
             os.makedirs(out_path)
         json_file_path = os.path.join(out_path, file_name)

@@ -7,9 +7,9 @@ Created on Thu Oct 11 13:16:44 2018
 import sys, os
 if os.name == 'nt':
     sys.path.append("H:/fbo-scraper")
-    
 import datetime, json
-from utils import fbo_nightly_scraper as fbo , get_fbo_attachments
+from utils import fbo_nightly_scraper as fbo , get_fbo_attachments 
+
 
 
 

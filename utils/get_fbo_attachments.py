@@ -19,7 +19,6 @@ def append_attachments(json_data):
                 fbo_url = notice['url']
             except:
                 continue
-            print(fbo_url)
             attachment_divs = _get_attachment_divs(fbo_url)
             _append_attachments(attachment_divs,notice)
 

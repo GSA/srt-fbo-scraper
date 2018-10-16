@@ -64,7 +64,7 @@ class Predict():
 
         sol_number_keys = ['solnbr','awdnbr','linenbr','modnbr','donbr']
         texts = []
-        attchs = []
+        attch_urls = []
         notice_numbers = []
         notice_types = []
         fbo_urls = []
@@ -74,30 +74,31 @@ class Predict():
                 continue
             else:
                 for notice in notices:
-                    #simulate data here
-                    notice['attachments'] = [{'attachment_url1':'testing 123'},{'attachment_url2':'testing 456'}]
                     if 'attachments' in notice:
                         notice_number_key = [x for x in notice if x in sol_number_keys][0]
+                        try:
+                            fbo_url = notice['url']
+                        except:
+                            # if there's no url, then what are we doing in here?!
+                            continue
+                        fbo_urls.append(fbo_url)
                         try:
                             notice_number = notice[notice_number_key]
                         except KeyError:
                             notice_number = ''
                         notice_numbers.append(notice_number)
-                        try:
-                            fbo_url = notice['url']
-                        except:
-                            continue
-                        fbo_urls.append(fbo_url)
                         attachments = notice['attachments']
-                        merged_attachment_dict = {k:v for d in attachments for k,v in d.items()}
-                        for attch in merged_attachment_dict:
-                            attchs.append(attch)
-                            text = merged_attachment_dict[attch]
+                        #merged_attachment_dict = {k:v for d in attachments for k,v in d.items()}
+                        for k in attachments:
+                            attachment = attachments[k]
+                            text = attachment['text']
                             texts.append(text)
+                            attch_url = attachment['url']
+                            attch_urls.append(attch_url)
         df = pd.DataFrame([notice_types,
                            notice_numbers,
                            fbo_urls,
-                           attchs,
+                           attch_urls,
                            texts]).transpose()
         df.columns = ['notice type',
                       'notice number',

@@ -1,37 +1,25 @@
 # fbo-scraper
-[FBO](https://www.fbo.gov/) is the U.S. government's system of record for opportunities to do business with the government. Every week, the FBO system posts all active opportunities as an xml file that is made publically available via the File Transfer Protocol (FTP), which is a standard network protocol used for the transfer of computer files between a client and server on a computer network.
+[FBO](https://www.fbo.gov/) is the U.S. government's system of record for opportunities to do business with the government. Each night, the FBO system posts all _updated_ opportunities as a pseudo-xml file that is made publically available via the File Transfer Protocol (FTP), which is a standard network protocol used for the transfer of computer files between a client and server on a computer network.
 
-This project downloads the xml of a weekly FBO file and converts it to JSON. Eventually, we'll scan opportunities for compliance with various Federal policies. 
+This project downloads that pseudo-xml and converts it to JSON. It then scrapes all of the notice attachment urls from each notice's official FBO url. Then it extracts the text from those documents (where possible). Finally, it feeds that text into a binary classifier to predict whether or not the document is 508 accessibility compliant. The classifier was built and binarized using `sklearn` based on approximately 1,000 hand-labeled solicitations.
 
 ## Getting Started
-
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
-
-This project relies on Python 3.6. It only uses standard libraries, so you shoud be able to use Python >= 2.6. Note that if you're using Python 2.x, you'll probably receive this error
-
-```
-import json, urllib.request
-
-ImportError: No module named request
-```
-
-To get things working in Python 2.x, you need to change the import statement to:
-
-```
-from urllib2 import urlopen
-```
-and then use `urlopen(url)` instead of `urllib.request.urlopen(url)`.
+This project relies on Python 3.6. We'll soon have a complete `requirements.txt` and set-up script to get you going with all of the dependencies, the biggest of which is `textract`, which is used to extract text from sundry document types (e.g. pdf, docx, doc, rtf).
 
 ### Installing
 
-For now, you just need to be sure you have Python. To run the script, it's as easy as:
+If you cloned the repo and `pip` installed all of the dependencies manually, then :clap:
+
+Now all you need to do to run the program is:
 
 ```
-$ python fbo_weekly_scraper.py
+$ python fbo.py
 ```
-That will download and write the xml. It will also conver the xml to JSON and write that as well. Each file is roughly 1.7GB
+
+Runtime depends on how many attachments are in the most recent nightly file. At most expect approximately 30 minutes. Quickest we've seen was just a minute. At present, the program doesn't write any results (but it'll soon include something simple to write results to csv).
 
 ## Running the tests
 
@@ -55,3 +43,4 @@ This project is licensed under the Creative Commons Zero v1.0 Universal License 
 
 ## Acknowledgments
  - The [Federal Service Desk](https://www.fsd.gov/fsd-gov/home.do) for answering some of our questions about when the FTP is refreshed.
+ - The progenitor of this project, which can be found [here](https://github.com/jtexnl/FBOProcurementScan).

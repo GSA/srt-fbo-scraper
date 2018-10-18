@@ -24,7 +24,7 @@ class NightlyFBONotices():
         self.base_url = base_url
         self.date = str(date)
         self.ftp_url = base_url+self.date
-        print(self.ftp_url)
+        
 
 
     @staticmethod

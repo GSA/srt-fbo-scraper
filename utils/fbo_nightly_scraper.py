@@ -135,7 +135,7 @@ class NightlyFBONotices():
                 try:
                     match = notice_type_end_tag_re.search(line)
                     m = match.group()
-                    clean_notice_end_tag = alphas_re.sub('', m).strip()
+                    #clean_notice_end_tag = alphas_re.sub('', m).strip()
                     notices_dict_incrementer[last_clean_notice_start_tag] += 1
                     continue #continue since we found an ending notice tag
                 except AttributeError:
@@ -184,7 +184,7 @@ class NightlyFBONotices():
         '''
         if '.json' not in file_name:
             file_name += '.json'
-        out_path = os.path.join(os.getcwd(),"temp/nightly_files")
+        out_path = os.path.join(os.getcwd(),"temp","nightly_files")
         if not os.path.exists(out_path):
             os.makedirs(out_path)
         json_file_path = os.path.join(out_path, file_name)

@@ -20,12 +20,13 @@ class NightlyFBONotices():
                         ftp://ftp.fbo.gov/FBOFeed
     '''
 
-    def __init__(self, date, base_url='ftp://ftp.fbo.gov/FBOFeed'):
+    def __init__(self, date, base_url='ftp://ftp.fbo.gov/FBOFeed',  notice_types = None, naics = None):
         self.base_url = base_url
         self.date = str(date)
         self.ftp_url = base_url+self.date
+        self.notice_types = notice_types
+        self.naics = naics
         
-
 
     @staticmethod
     def id_and_count_notice_tags(file_lines):
@@ -174,6 +175,23 @@ class NightlyFBONotices():
 
         return json_str
 
+    
+    def filter_json(self, json_string):
+        notice_types = self.notice_types
+        naics = self.naics
+        json_data = json.loads(json_string)
+        json_data = {k:json_data[k] for k in json_data.keys() & notice_types}
+        data = {k:[] for k in json_data}
+        for k in json_data:
+            notices = json_data[k]
+            for notice in notices:
+                if notice['naics'] in naics:
+                    data[k].append(notice)
+        json_string = json.dumps(data)
+        
+        return json_string
+    
+    
     def write_json(self, json_string, file_name):
         '''
         Void function that writes a json string to disk.
@@ -182,6 +200,7 @@ class NightlyFBONotices():
             file_name (str): the name of the json file to write to.
 
         '''
+
         if '.json' not in file_name:
             file_name += '.json'
         out_path = os.path.join(os.getcwd(),"temp","nightly_files")

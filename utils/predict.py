@@ -4,6 +4,7 @@ import pandas as pd
 import json
 import re
 import string
+import sys
 
 
 class Predict():
@@ -112,7 +113,11 @@ class Predict():
         df['normalized_text'] = df['text'].apply(Predict.transform_text)
         with open('utils/binaries/best_clf_scott.pkl', 'rb') as f:
             pickled_model = pickle.load(f)
-        df['prediction'] = pickled_model.predict(df['normalized_text'])
+        try:
+            df['prediction'] = pickled_model.predict(df['normalized_text'])
+        except ValueError: #catch err like ValueError: Found array with 0 sample(s)...
+            print("There weren't any notices with attachments. Exiting.")
+            sys.exit(0)
         dec_func = pickled_model.decision_function(df['normalized_text'])
         decision_boundary_distance = abs(dec_func)
         df['decision boundary distance'] = decision_boundary_distance

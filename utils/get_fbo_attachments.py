@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 import urllib.request
 from contextlib import closing
 import shutil
@@ -81,6 +80,8 @@ class FboAttachments():
             except BadZipfile:#this catches corruputed docx files
                 b_text = None
             except ShellError:
+                b_text = None
+            except TypeError: #raised when empty file is passed to textract.process()
                 b_text = None
             if b_text:
                 detected_encoding = chardet.detect(b_text)['encoding']

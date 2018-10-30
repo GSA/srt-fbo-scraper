@@ -10,6 +10,7 @@ import json
 import pandas as pd
 import datetime
 import requests
+from requests.exceptions import SSLError
 from requests import exceptions
 from bs4 import BeautifulSoup
 from mimetypes import guess_extension
@@ -218,7 +219,11 @@ class FboAttachments():
                         file_list.append((file_out_path, attachment_url))
                 else:
                     if size_check(attachment_url):
-                        r = requests.get(attachment_url, timeout=10)
+                        try:
+                            r = requests.get(attachment_url, timeout=10)
+                        except SSLError:
+                            # continue when there are untrusted SSL certificates. Not worth it to set verify=False in requests.get()
+                            continue
                         content_disposition = r.headers.get('Content-Disposition')
                         file_name = get_filename_from_cd(content_disposition)
                         if not file_name:

@@ -96,14 +96,16 @@ class FboAttachments():
 
             return text
         
-        notice['attachments'] = {}
-        for i, tup in enumerate(file_list):
-            file, url = tup
+        notice['attachments'] = []
+        for _, file_url_tup in enumerate(file_list):
+            file, url = file_url_tup
             text = get_attachment_text(file)
-            temp_dict = {f'attachment{i+1}': {'text':text, "url":url, 
-                                              'prediction':None, 'decision_boundary':None,
-                                              'validation':None}}
-            notice['attachments'].update(temp_dict)
+            attachment_dict = {'text':text, 
+                               'url':url,
+                               'prediction':None, 
+                               'decision_boundary':None,
+                               'validation':None}
+            notice['attachments'].append(attachment_dict)
 
         return notice
 

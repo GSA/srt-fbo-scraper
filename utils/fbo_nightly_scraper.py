@@ -185,7 +185,12 @@ class NightlyFBONotices():
         for k in json_data:
             notices = json_data[k]
             for notice in notices:
-                if notice['naics'] in naics:
+                try:
+                    notice_naics = notice['naics']
+                except KeyError:
+                    #if there's no NAICS, then it's likely an ARCHIVE and irrelevant
+                    continue
+                if notice_naics in naics:
                     data[k].append(notice)
         json_string = json.dumps(data)
         

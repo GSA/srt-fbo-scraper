@@ -97,7 +97,7 @@ class FboAttachments():
             return text
         
         notice['attachments'] = []
-        for _, file_url_tup in enumerate(file_list):
+        for file_url_tup in file_list:
             file, url = file_url_tup
             text = get_attachment_text(file)
             attachment_dict = {'text':text, 

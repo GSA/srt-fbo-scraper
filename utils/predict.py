@@ -15,9 +15,10 @@ class Predict():
         json_data (dict): The JSON of a nightly fbo file, where each notice
                           has its attachments and their text.
     '''
-
-    def __init__(self, json_data):
+    
+    def __init__(self, json_data, best_model_path='utils/binaries/best_clf_scott.pkl'):
         self.json_data = json_data
+        self.best_model_path = best_model_path
 
 
     @staticmethod
@@ -52,76 +53,37 @@ class Predict():
         return stripped_text
 
 
-    @staticmethod
-    def json_to_df(json_data):
+    def insert_predictions(self):
         '''
-        Converts the JSON of a nightly fbo file (with attachment texts) into a
-        pandas dataframe.
-
-        Arguments:
-            json_data: refer to self.json_data
+        Inserts predictions and decision boundary for each attachment in the nightly JSON
 
         Returns:
-            df (pandas DataFrame): a pandas dataframe
+            json_data (dict): a Python dict representing the updated json data
         '''
 
-        texts = []
-        attch_urls = []
-        notice_types = []
-        fbo_urls = []
+        with open(self.best_model_path, 'rb') as f:
+            pickled_model = pickle.load(f)
+        json_data = self.json_data
         for notice_type in json_data:
             notices = json_data[notice_type]
             if not notices:
                 continue
             else:
                 for notice in notices:
+                    notice['noncompliant'] = 1 #noncompliant until proven otherwise
                     if 'attachments' in notice:
-                        fbo_url = notice['url']
                         attachments = notice['attachments']
-                        for k in attachments:
-                            attachment = attachments[k]
+                        compliant_counter = 0
+                        for attachment in attachments:
                             text = attachment['text']
-                            texts.append(text)
-                            attch_url = attachment['url']
-                            attch_urls.append(attch_url)
-                            fbo_urls.append(fbo_url)
-                            notice_types.append(notice_type)
-        df = pd.DataFrame([notice_types,
-                           fbo_urls,
-                           attch_urls,
-                           texts]).transpose()
-        df.columns = ['notice type',
-                      'notice url',
-                      'attachment url',
-                      'text']
-
-        return df
-
-
-    def predict(self):
-        '''
-        Convert FBO JSON into a dataframe, make predictions, return dataframe.
-
-        Arguments:
-            self
-
-        Returns:
-            df: a pandas DataFrame
-        '''
-        df = Predict.json_to_df(self.json_data)
-        df['text'] = df['text'].astype(str)
-        df['normalized_text'] = df['text'].apply(Predict.transform_text)
-        with open('utils/binaries/best_clf_scott.pkl', 'rb') as f:
-            pickled_model = pickle.load(f)
-        try:
-            df['prediction'] = pickled_model.predict(df['normalized_text'])
-        except ValueError: #catch err like ValueError: Found array with 0 sample(s)...
-            print("There weren't any notices with attachments. Exiting.")
-            sys.exit(0)
-        dec_func = pickled_model.decision_function(df['normalized_text'])
-        decision_boundary_distance = abs(dec_func)
-        df['decision boundary distance'] = decision_boundary_distance
-        df = df.drop(labels=['text','normalized_text'], axis=1)
+                            normalized_text = [Predict.transform_text(text)]
+                            pred = int(pickled_model.predict(normalized_text)[0])
+                            compliant_counter += 1 if pred == 0 else 0
+                            dec_func = pickled_model.decision_function(normalized_text)[0]
+                            decision_boundary = float(abs(dec_func))
+                            attachment['prediction'] = pred
+                            attachment['decision_boundary'] = decision_boundary
+                        notice['noncompliant'] = 0 if compliant_counter > 0 else 1
         
-        return df
+        return json_data
 

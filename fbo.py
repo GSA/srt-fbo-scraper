@@ -5,7 +5,8 @@ import json
 import os
 if os.name == 'nt':
     sys.path.append("H:/fbo-scraper")
-from utils import fbo_nightly_scraper as fbo, get_fbo_attachments, predict 
+from utils import fbo_nightly_scraper as fbo, get_fbo_attachments
+from utils.predict import Predict 
 
 def get_nightly_data(notice_types, naics):
     now = datetime.datetime.now() - datetime.timedelta(1)
@@ -15,16 +16,17 @@ def get_nightly_data(notice_types, naics):
     json_str = nfbo.pseudo_xml_to_json(file_name)
     filtered_json_str = nfbo.filter_json(json_str)
     nightly_data = json.loads(filtered_json_str)
-    return nightly_data 
+    return nightly_data, current_date
 
 
-if __name__ == '__main__':
-    notice_types = ['MOD','PRESOL','COMBINE']
-    naics = {'336411','334419'}
+def main(notice_types= ['MOD','PRESOL','COMBINE'], naics = {'336411','334419'}):
+    '''
+    Main function that returns JSON representing a nightly file along with the date of that file
+    '''
     
     print("-"*80)
     print("Downloading most recent nightly FBO file from FTP...")
-    nightly_data = get_nightly_data(notice_types, naics)
+    nightly_data, current_date = get_nightly_data(notice_types, naics)
     print("Done downloading most recent nightly FBO file from FTP!")
 
     print("-"*80)
@@ -35,7 +37,18 @@ if __name__ == '__main__':
 
     print("-"*80)
     print("Making predictions for each notice attachment...")
-    predict = predict.Predict(nightly_data)
-    df = predict.predict()
+    predict = Predict(nightly_data)
+    updated_nightly_data = predict.insert_predictions()
     print("Done making predictions for each notice attachment!")
+
+    return updated_nightly_data, current_date
+
+if __name__ == '__main__':
+    updated_nightly_data, current_date = main()
+    print(current_date)
+    print(type(updated_nightly_data))
+    with open('result.json', 'w') as fp:
+        json.dump(updated_nightly_data, fp)
+    
+    
     

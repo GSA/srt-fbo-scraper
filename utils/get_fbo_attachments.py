@@ -56,7 +56,8 @@ class FboAttachments():
     @staticmethod
     def insert_attachments(file_list, notice):
         '''
-        Inserts each attachment's url and text into the nightly json file
+        Inserts each attachment's url and text into the nightly json file. Also inserts
+        placeholders for the prediction, decision_boundary, and validation.
 
         Parameters:
             file_list (list): a list of the attachment file paths that have been downloaded
@@ -95,12 +96,16 @@ class FboAttachments():
 
             return text
         
-        notice['attachments'] = {}
-        for i, tup in enumerate(file_list):
-            file, url = tup
+        notice['attachments'] = []
+        for _, file_url_tup in enumerate(file_list):
+            file, url = file_url_tup
             text = get_attachment_text(file)
-            temp_dict = {f'attachment{i+1}': {'text':text, "url":url}}
-            notice['attachments'].update(temp_dict)
+            attachment_dict = {'text':text, 
+                               'url':url,
+                               'prediction':None, 
+                               'decision_boundary':None,
+                               'validation':None}
+            notice['attachments'].append(attachment_dict)
 
         return notice
 
@@ -271,6 +276,7 @@ class FboAttachments():
                 updated_notice = FboAttachments.insert_attachments(file_list, notice)
                 nightly_data[k][i] = updated_notice
         updated_nightly_data = nightly_data
+        
         return updated_nightly_data
 
      

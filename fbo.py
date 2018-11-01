@@ -12,8 +12,8 @@ def get_nightly_data(notice_types, naics):
     now = datetime.datetime.now() - datetime.timedelta(1)
     current_date = now.strftime("%Y%m%d")
     nfbo = fbo.NightlyFBONotices(date = current_date, notice_types = notice_types, naics = naics)
-    file_name = nfbo.get_and_write_file()
-    json_str = nfbo.pseudo_xml_to_json(file_name)
+    file_lines = nfbo.download_from_ftp()
+    json_str = nfbo.pseudo_xml_to_json(file_lines)
     filtered_json_str = nfbo.filter_json(json_str)
     nightly_data = json.loads(filtered_json_str)
     return nightly_data, current_date

@@ -29,9 +29,9 @@ class NightlyFBONotices():
         
 
     @staticmethod
-    def id_and_count_notice_tags(file_lines):
+    def _id_and_count_notice_tags(file_lines):
         '''
-        Static method to count the number of notice tags within a FBO export.
+        Static method to count the number of notice tags within an FBO export.
 
         Attributes:
             file_lines (list): A list of lines from the nightly FBO file.
@@ -51,7 +51,8 @@ class NightlyFBONotices():
                 m = match.group()
                 tags.append(m)
             except AttributeError:
-                pass#these are all of the non record-type tags
+                # these are all of the non record-type tags
+                pass 
         clean_tags = [alphas_re.sub('', x) for x in tags]
         tag_count = Counter(clean_tags)
 
@@ -59,7 +60,7 @@ class NightlyFBONotices():
 
 
     @staticmethod
-    def merge_dicts(dicts):
+    def _merge_dicts(dicts):
         d = {}
         for dict in dicts:
             for key in dict:
@@ -70,28 +71,58 @@ class NightlyFBONotices():
         return {k:" ".join(v) for k, v in d.items()}
 
 
-    def get_and_write_file(self):
-        '''
-        Downloads and writes a nightly FBO file.
-
-        Returns:
-            file_name (str): the absolute path to the downloaded file.
-        '''
-
-        file_name = 'fbo_nightly_'+self.date
-        out_path = os.path.join(os.getcwd(),"temp/nightly_files")
+    @staticmethod
+    def _make_out_path(out_path):
         if not os.path.exists(out_path):
             os.makedirs(out_path)
 
+    
+    def read_from_ftp(self):
+        '''
+        Enter FBO FTP and read lines from file into memory.
+        Compare to download_from_ftp()
+
+        Returns:
+            file_lines (list): the lines of the nightly file
+        '''
+        
+        import ftplib
+        ftplib.FTP.maxline = 200000 
+        file_name = 'FBOFeed' + self.date
+        with (ftplib.FTP('ftp.fbo.gov')) as ftp:
+            ftp.login()
+            file_lines = []
+            ftp.retrlines("RETR " + file_name, file_lines.append)
+            ftp.close()
+        
+        return file_lines
+
+
+    def download_from_ftp(self):
+        '''
+        Downloads a nightly FBO file, reads the lines, then removes file.
+        Compare to read_from_ftp()
+
+        Returns:
+            file_lines (list): the lines of the nightly file
+        '''
+
+        file_name = 'fbo_nightly_'+self.date
+        out_path = os.path.join(os.getcwd(),"temp","nightly_files")
+        NightlyFBONotices._make_out_path(out_path)
         with closing(urllib.request.urlopen(self.ftp_url)) as r:
             file_name = os.path.join(out_path,file_name)
             with open(file_name, 'wb') as f:
                 shutil.copyfileobj(r, f)
 
-        return file_name
+        with open(file_name,'r', errors='ignore') as f:
+            file_lines = f.readlines()
+        os.remove(file_name)
+        
+        return file_lines
 
 
-    def pseudo_xml_to_json(self, file_name):
+    def pseudo_xml_to_json(self, file_lines):
         '''
         Open nightly file and convert the pseudo-xml to JSON
 
@@ -102,8 +133,6 @@ class NightlyFBONotices():
             json_str (str): a string representing the JSON
         '''
 
-        with open(file_name,'r',errors='ignore') as f:
-            file_lines = f.readlines()
         with open(r'utils/html_tags.txt','r') as f:
             html_tags = f.read().splitlines()
         html_tag_re = re.compile(r'|'.join('(?:</?{0}>)'.format(x) for x in html_tags))
@@ -112,14 +141,14 @@ class NightlyFBONotices():
                         'MOD','AWARD','JA','FAIROPP','ARCHIVE','UNARCHIVE',
                         'ITB','FSTD','EPSUPLOAD','DELETE'}
         notice_type_start_tag_re = re.compile(r'|'.join('(?:<{0}>)'.\
-                                               format(x) for x in notice_types))
+                                              format(x) for x in notice_types))
         notice_type_end_tag_re = re.compile(r'|'.join('(?:</{0}>)'.\
-                                               format(x) for x in notice_types))
-        # returns two groups, the sub-tag as well as the text corresponding to it
+                                            format(x) for x in notice_types))
+        # returns two groups: the sub-tag as well as the text corresponding to it
         sub_tag_groups = re.compile(r'\<([a-z]*)\>(.*)')
 
         notices_dict_incrementer = {k:0 for k in notice_types}
-        tag_count = NightlyFBONotices.id_and_count_notice_tags(file_lines)
+        tag_count = NightlyFBONotices._id_and_count_notice_tags(file_lines)
         matches_dict = {k:{k:[] for k in range(v)} for k,v in tag_count.items()}
         # Loop through each line searching for start-tags, then end-tags, then
         # sub-tags (after stripping html) and then ensuring that every line of
@@ -166,7 +195,7 @@ class NightlyFBONotices():
             notices = notices_dict[k]
             if notices:
                 for notice in notices:
-                    merged_dict = NightlyFBONotices.merge_dicts(notice)
+                    merged_dict = NightlyFBONotices._merge_dicts(notice)
                     merge_notices_dict[k].append(merged_dict)
             else:
                 pass
@@ -188,7 +217,7 @@ class NightlyFBONotices():
                 try:
                     notice_naics = notice['naics']
                 except KeyError:
-                    #if there's no NAICS, then it's likely an ARCHIVE and irrelevant
+                    #if there's no NAICS, then it's likely an ARCHIVE or something else irrelevant
                     continue
                 if notice_naics in naics:
                     data[k].append(notice)
@@ -209,8 +238,7 @@ class NightlyFBONotices():
         if '.json' not in file_name:
             file_name += '.json'
         out_path = os.path.join(os.getcwd(),"temp","nightly_files")
-        if not os.path.exists(out_path):
-            os.makedirs(out_path)
+        NightlyFBONotices._make_out_path(out_path)
         json_file_path = os.path.join(out_path, file_name)
         with open(json_file_path, 'w') as f:
             json.dump(json_string, f)
@@ -220,7 +248,7 @@ if __name__ == '__main__':
     #sample usage
     date=20180506
     nfbo = NightlyFBONotices(date=date)
-    file_name = nfbo.get_and_write_file()
-    json_str = nfbo.pseudo_xml_to_json(file_name)
+    file_lines = nfbo.download_from_ftp()
+    json_str = nfbo.pseudo_xml_to_json(file_lines)
     file_name = 'fbo_nightly_'+str(date)+'.json'
     nfbo.write_json(json_str,file_name)

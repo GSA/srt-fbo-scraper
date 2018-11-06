@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import urllib.request
 from contextlib import closing
 import shutil

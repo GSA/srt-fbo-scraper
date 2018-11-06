@@ -37,7 +37,7 @@ def main(notice_types= ['MOD','PRESOL','COMBINE'], naics = {'336411','334419'}):
 
     print("-"*80)
     print("Making predictions for each notice attachment...")
-    predict = Predict(nightly_data)
+    predict = Predict(updated_nightly_data)
     updated_nightly_data = predict.insert_predictions()
     print("Done making predictions for each notice attachment!")
 
@@ -49,6 +49,4 @@ if __name__ == '__main__':
     print(type(updated_nightly_data))
     with open('result.json', 'w') as fp:
         json.dump(updated_nightly_data, fp)
-    
-    
-    
+        

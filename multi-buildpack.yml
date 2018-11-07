@@ -1,0 +1,4 @@
+buildpacks:
+- https://github.com/cloudfoundry/apt-buildpack#develop
+- https://github.com/cloudfoundry/python-buildpack
+- https://github.com/cloudfoundry/binary-buildpack

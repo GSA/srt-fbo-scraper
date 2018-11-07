@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 import urllib.request
 from contextlib import closing
 import shutil
@@ -7,7 +7,6 @@ from collections import Counter
 import os
 from datetime import datetime
 import json
-import pandas as pd
 import datetime
 import requests
 from requests.exceptions import SSLError
@@ -15,8 +14,8 @@ from requests import exceptions
 from bs4 import BeautifulSoup
 from mimetypes import guess_extension
 import chardet
-import textract
-from textract.exceptions import ShellError
+from .textract.textract import process
+from .textract.textract.parsers.exceptions import ShellError
 from zipfile import ZipFile, BadZipfile
 import io
 
@@ -78,12 +77,12 @@ class FboAttachments():
                 text (str): a string representing the text of the file.
             '''
             try:
-                b_text = textract.process(file)
+                b_text = process(file)
             except BadZipfile:#this catches corruputed docx files
                 b_text = None
             except ShellError:
                 b_text = None
-            except TypeError: #raised when empty file is passed to textract.process()
+            except TypeError: #raised when empty file is passed to process()
                 b_text = None
             if b_text:
                 detected_encoding = chardet.detect(b_text)['encoding']

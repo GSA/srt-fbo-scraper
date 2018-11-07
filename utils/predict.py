@@ -1,6 +1,6 @@
+#!/usr/bin/env python3
 import os
 import dill as pickle
-import pandas as pd
 import json
 import re
 import string

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import urllib.request
 from contextlib import closing
 import shutil
@@ -6,7 +7,6 @@ from collections import Counter
 import os
 from datetime import datetime
 import json
-import pandas as pd
 
 
 class NightlyFBONotices():

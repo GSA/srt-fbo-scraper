@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import json
 
 def elem_to_dict(elem,strip=True):

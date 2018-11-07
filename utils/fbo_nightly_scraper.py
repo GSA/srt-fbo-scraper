@@ -7,7 +7,6 @@ from collections import Counter
 import os
 from datetime import datetime
 import json
-import pandas as pd
 
 
 class NightlyFBONotices():

@@ -3,10 +3,9 @@ import sys
 import datetime
 import json
 import os
-if os.name == 'nt':
-    sys.path.append("H:/fbo-scraper")
 from utils import fbo_nightly_scraper as fbo, get_fbo_attachments
 from utils.predict import Predict 
+from utils import textract
 
 def get_nightly_data(notice_types, naics):
     now = datetime.datetime.now() - datetime.timedelta(1)
@@ -47,6 +46,6 @@ if __name__ == '__main__':
     updated_nightly_data, current_date = main()
     print(current_date)
     print(type(updated_nightly_data))
-    with open('result.json', 'w') as fp:
-        json.dump(updated_nightly_data, fp)
+    #with open('result.json', 'w') as fp:
+        #json.dump(updated_nightly_data, fp)
         

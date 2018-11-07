@@ -14,8 +14,8 @@ from requests import exceptions
 from bs4 import BeautifulSoup
 from mimetypes import guess_extension
 import chardet
-from .textract import process
-from .textract.exceptions import ShellError
+from .textract.textract import process
+from .textract.textract.parsers.exceptions import ShellError
 from zipfile import ZipFile, BadZipfile
 import io
 

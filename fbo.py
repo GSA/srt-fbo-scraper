@@ -5,7 +5,7 @@ import json
 import os
 from utils import fbo_nightly_scraper as fbo, get_fbo_attachments
 from utils.predict import Predict 
-from utils import textract
+
 
 def get_nightly_data(notice_types, naics):
     now = datetime.datetime.now() - datetime.timedelta(1)

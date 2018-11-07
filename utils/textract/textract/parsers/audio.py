@@ -1,7 +1,7 @@
 import speech_recognition as sr
 import os
 
-from ..exceptions import UnknownMethod, ShellError
+from .exceptions import UnknownMethod, ShellError
 from .utils import ShellParser
 
 

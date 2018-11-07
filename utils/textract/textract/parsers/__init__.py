@@ -7,7 +7,8 @@ import importlib
 import glob
 import re
 
-from .. import exceptions
+from . import exceptions
+
 
 # Dictionary structure for synonymous file extension types
 EXTENSION_SYNONYMS = {
@@ -65,9 +66,7 @@ def process(filename, encoding=DEFAULT_ENCODING, extension=None, **kwargs):
     # If we can't import the module, the file extension isn't currently
     # supported
     try:
-        filetype_module = importlib.import_module(
-            rel_module, 'textract.parsers'
-        )
+        filetype_module = importlib.import_module('.parsers.'+rel_module)
     except ImportError:
         raise exceptions.ExtensionNotSupported(ext)
 

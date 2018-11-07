@@ -10,7 +10,7 @@ import errno
 import six
 import chardet
 
-from .. import exceptions
+from . import exceptions
 
 
 class BaseParser(object):

@@ -16,7 +16,7 @@ class ExtensionNotSupported(CommandLineError):
     def __init__(self, ext):
         self.ext = ext
 
-        from .parsers import _get_available_extensions
+        from . import _get_available_extensions
         available_extensions = []
         for e in _get_available_extensions():
             if e.startswith('.'):

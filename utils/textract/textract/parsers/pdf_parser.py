@@ -3,7 +3,7 @@ import shutil
 import six
 from tempfile import mkdtemp
 
-from ..exceptions import UnknownMethod, ShellError
+from .exceptions import UnknownMethod, ShellError
 
 from .utils import ShellParser
 from .image import Parser as TesseractParser

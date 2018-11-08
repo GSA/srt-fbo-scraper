@@ -18,11 +18,13 @@ def get_nightly_data(notice_types, naics):
     return nightly_data, current_date
 
 
-def main(notice_types= ['MOD','PRESOL','COMBINE'], naics = {'336411','334419'}):
+def main():
     '''
     Main function that returns JSON representing a nightly file along with the date of that file
     '''
     
+    notice_types= ['MOD','PRESOL','COMBINE']
+    naics = ['334111', '334118', '3343', '33451', '334516', '334614', '5112', '518', '54169', '54121', '5415', '54169', '61142']
     print("-"*80)
     print("Downloading most recent nightly FBO file from FTP...")
     nightly_data, current_date = get_nightly_data(notice_types, naics)

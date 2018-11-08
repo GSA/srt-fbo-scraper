@@ -12,7 +12,7 @@ from datetime import datetime
 
 now = datetime.now()
 current_time = now.strftime("%Y-%d-%m %H:%M:%S")
-db_string = "postgresql+psycopg2://u3r88d3qf46owdkl:f54vu0cz0yf31lwt6enb13z7x@cg-aws-broker-prod-01fb6e1ed561.ci7nkegdizyy.us-gov-west-1.rds.amazonaws.com:5432/cgawsbrokerprodit76rh29qcecg1s"
+#db_string = 
 
 
 Base = declarative_base()
@@ -84,19 +84,4 @@ class DataAccessLayer:
                 self.s.add(e)
                 self.s.flush()
         self.s.commit()
-
-
-
-def temp_remove_data_in_postgres():
-    db_name= "cgawsbrokerprodit76rh29qcecg1s"
-    host= "cg-aws-broker-prod-01fb6e1ed561.ci7nkegdizyy.us-gov-west-1.rds.amazonaws.com"
-    password= "f54vu0cz0yf31lwt6enb13z7x"
-    port= "5432"
-    uri="postgres://u3r88d3qf46owdkl:f54vu0cz0yf31lwt6enb13z7x@cg-aws-broker-prod-01fb6e1ed561.ci7nkegdizyy.us-gov-west-1.rds.amazonaws.com:5432/cgawsbrokerprodit76rh29qcecg1s"
-    username= "u3r88d3qf46owdkl"  
-    #db_string = f"postgresql+psycopg2://{username}:{password}@{host}:/{port}{db_name}"   
-    connection = psycopg2.connect(user=username,password=password,host=host,port=port,database=db_name)
-    cur= connection.cursor()
-    cur.execute("DROP TABLE notice,attachment,notice_type CASCADE;")
-    connection.commit()
-    cur.close
+        

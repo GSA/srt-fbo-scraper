@@ -219,7 +219,8 @@ class NightlyFBONotices():
                 except KeyError:
                     #if there's no NAICS, then it's likely an ARCHIVE or something else irrelevant
                     continue
-                if notice_naics in naics:
+                # see if the notice_naics code starts with any of the naics codes provided by self
+                if any(notice_naics.startswith(n) for n in naics):
                     data[k].append(notice)
         json_string = json.dumps(data)
         

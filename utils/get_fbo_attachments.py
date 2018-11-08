@@ -103,7 +103,8 @@ class FboAttachments():
                                'url':url,
                                'prediction':None, 
                                'decision_boundary':None,
-                               'validation':None}
+                               'validation':None,
+                               'trained':False}
             notice['attachments'].append(attachment_dict)
 
         return notice

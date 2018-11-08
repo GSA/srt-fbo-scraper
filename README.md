@@ -1,25 +1,33 @@
 # fbo-scraper (AKA Smartie)
 [FBO](https://www.fbo.gov/) is the U.S. government's system of record for opportunities to do business with the government. Each night, the FBO system posts all _updated_ opportunities as a pseudo-xml file that is made publically available via the File Transfer Protocol (FTP), which is a standard network protocol used for the transfer of computer files between a client and server on a computer network.
 
-This project downloads that pseudo-xml and converts it to JSON. It then scrapes all of the notice attachment urls from each notice's official FBO url. Then it extracts the text from those documents (where possible). Finally, it feeds that text into a binary classifier to predict whether or not the document is 508 accessibility compliant. The classifier was built and binarized using `sklearn` based on approximately 1,000 hand-labeled solicitations.
+This project uses supervised machine learning to determine whether or not the solicitation documents of Information Communications Technology (ICT) notices contain appropriate [setion 508 accessibility](https://www.section508.gov/) language.
+
+Following a [service-oriented architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture), this repository, along with a forthcoming API, will provide a back-end to a UI that GSA policy experts will use to review ICT solicitations for 508 compliance; notify deficient solicitation owners; monitor changes in historical compliance; and validate predictions to improve model performance.
+
+The application is designed to be run as a cron daemon within [cloud.gov](https://cloud.gov/). This is tricky to achieve as traditional cron daemons need to run as root and have opinionated defaults for logging and error notifications. This makes them unsuitable for running in a containerized environment like Cloud Foundry. So, instead of a system cron daemon, we're using [supercronic](https://github.com/aptible/supercronic) to run the cron tab. This method is demonstrated without a python script here.
+
+
+Here's what happens every time the job is triggered:
+    1. Download the pseudo-xml from the FBO FTP every day
+    2. Convert that pseudo-xml to JSON
+    3. Extract solictations from the Information Communications Technology (ICT) categories
+    4. Srape each ICT soliticiatons documents from their official FBO urls
+    5. Extract the text from each of those documents using [textract](https://github.com/deanmalmgren/textract)
+    6. Feed the text of each document into a binary classifier to predict whether or not the document is 508 compliant tThe classifier was built and binarized using [sklearn](https://github.com/scikit-learn/scikit-learn) based on approximately 1,000 hand-labeled solicitations)
+    7. Insert data into a postgreSQL database
+    8. Retrain the classifer if there is a sufficient number of human-validated predictions in the database (validation will occur via the UI)
+    
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This application is built courtesty of the [multi-buildpack](https://github.com/cloudfoundry-attic/multi-buildpack) using the [python-buildpack](https://github.com/cloudfoundry/python-buildpack), [apt-buildpack](https://github.com/cloudfoundry/apt-buildpack), and [binary buildpacks](https://github.com/cloudfoundry/binary-buildpack). The binary buildpack executes supercronic on the crontab file while the apt-buildback handles all of textract's external dependencies, which can be found in `apt.yml`. The crontab file specifies a single cron job, which is to execute `fbo.py`. 
+
+>Note: By default, supercronic logs all output to stderr, so we redirect that to stdout for cf logging purposes in the cf manifest command.
+
 
 ### Prerequisites
-This project relies on Python 3.6. We'll soon have a complete `requirements.txt` and set-up script to get you going with all of the dependencies, the biggest of which is `textract`, which is used to extract text from sundry document types (e.g. pdf, docx, doc, rtf).
+This application requires a [cloud.gov account](https://cloud.gov/docs/getting-started/accounts/) as it's not yet configured to run locally. We'll be working on that as well as within an CI environment.
 
-### Installing
-
-If you cloned the repo and `pip` installed all of the dependencies manually, then :clap:
-
-Now all you need to do to run the program is:
-
-```
-$ python fbo.py
-```
-
-Runtime depends on how many attachments are in the most recent nightly file. At most expect approximately 30 minutes. Quickest we've seen was just a minute. At present, the program doesn't write any results (but it'll soon include something simple to write results to csv).
 
 ## Running the tests
 
@@ -42,5 +50,7 @@ Please read [CONTRIBUTING](https://github.com/GSA/fbo-scraper/blob/master/.githu
 This project is licensed under the Creative Commons Zero v1.0 Universal License - see the [LICENSE](https://github.com/GSA/fbo-scraper/blob/master/.github/LICENSE) file for details
 
 ## Acknowledgments
- - The [Federal Service Desk](https://www.fsd.gov/fsd-gov/home.do) for answering some of our questions about when the FTP is refreshed.
- - The progenitor of this project, which can be found [here](https://github.com/jtexnl/FBOProcurementScan).
+ - The [Federal Service Desk](https://www.fsd.gov/fsd-gov/home.do) for answering some of our questions about when the FTP is refreshed
+ - The progenitor of this project, which can be found [here](https://github.com/jtexnl/FBOProcurementScan)
+ - The [supercronic project](https://github.com/aptible/supercronic)
+ - Meshcloud's [example](https://github.com/Meshcloud/cf-cron) of using supercronic within Cloud Foundry

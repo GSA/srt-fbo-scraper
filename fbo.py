@@ -39,7 +39,8 @@ def main(notice_types= ['MOD','PRESOL','COMBINE'], naics = {'336411','334419'}):
     predict = Predict(updated_nightly_data)
     updated_nightly_data = predict.insert_predictions()
     print("Done making predictions for each notice attachment!")
-    db.DataAccessLayer().add_json_nightly_file_to_postgres(updated_nightly_data)  
+    #db.DataAccessLayer().add_json_nightly_file_to_postgres(updated_nightly_data)  
+    
     return updated_nightly_data, current_date
 
 if __name__ == '__main__':

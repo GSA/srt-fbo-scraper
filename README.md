@@ -39,7 +39,12 @@ Coming soon! (hopefully PEP8 Speaks)
 
 ## Deployment
 
-Coming soon!
+cf create-service *service* *plan* smartie_db
+cf create-service-key smartie_db
+    *this may take a few minutes to configure*
+cf push smartie
+cf bind-service smartie smartie_db
+cf restage smartie
 
 ## Contributing
 

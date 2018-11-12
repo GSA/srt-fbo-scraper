@@ -8,11 +8,12 @@ from sqlalchemy import Column, Integer, String, ForeignKey, Table, Text, \
 from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy.dialects.postgresql import JSONB
 from datetime import datetime
+from utils.db import db_utils
 
 
+db_string = db_utils.get_db_url()
 now = datetime.now()
-current_time = now.strftime("%Y-%d-%m %H:%M:%S")
-#db_string = 
+current_time = now.strftime("%Y-%d-%m")
 
 
 Base = declarative_base()
@@ -85,3 +86,6 @@ class DataAccessLayer:
                 self.s.flush()
         self.s.commit()
         
+
+    
+    

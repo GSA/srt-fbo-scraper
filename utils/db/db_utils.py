@@ -1,10 +1,19 @@
-from db import Notice, NoticeType, Model, Version, VersionPrediction, Prediction, Validation, Attachment
-from sqlalchemy_utils import database_exists, create_database
-from sqlalchemy import desc, func,  create_engine
-from config import SQLALCHEMY_URI
-from datetime import datetime
+import os
+#from utils.db import Notice, NoticeType, Model, Version, VersionPrediction, Prediction, Validation, Attachment
+#from sqlalchemy_utils import database_exists, create_database
+#from sqlalchemy import desc, func,  create_engine
+#from config import SQLALCHEMY_URI
+#from datetime import datetime
 
+def get_db_url():
+	if os.getenv('VCAP_APPLICATION'):
+		db_string = os.getenv('DATABASE_URL')
+	else:
+		print("bind application to database")
+	output_str = db_string.replace('\postgresql', 'postgresql+psycopg2')
+	return output_str
 
+'''	
 def create_postgres_db():
     connection_string = SQLALCHEMY_URI
     engine = create_engine(connection_string, echo=False)
@@ -23,4 +32,4 @@ def create_notice_type(notice_type, session):
     else:
         notice_type = NoticeType(notice_type = notice_type)
         session.add(notice_type)
-
+'''

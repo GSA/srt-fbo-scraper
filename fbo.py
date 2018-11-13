@@ -23,7 +23,7 @@ def main():
     Main function that returns JSON representing a nightly file along with the date of that file
     '''
     
-    notice_types= ['MOD','PRESOL','COMBINE']
+    notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS']
     naics = ['334111', '334118', '3343', '33451', '334516', '334614', '5112', '518', '54169', '54121', '5415', '54169', '61142']
     print("-"*80)
     print("Downloading most recent nightly FBO file from FTP...")

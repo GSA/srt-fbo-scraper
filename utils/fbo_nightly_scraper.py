@@ -18,6 +18,11 @@ class NightlyFBONotices():
                     (e.g. '20180506')
         base_url (str): the base url for the FBO FTP. By default it is set to:
                         ftp://ftp.fbo.gov/FBOFeed
+        notice_types (list): list of uppercase strings representing the notice types to fetch. None by default. List values must
+                             match FBO notation. For example, pre-solicitation type notices are PRESOL. A full list can be found 
+                             under the General Info section online at https://www.fbo.gov/?&static=interface
+        naics (list): a list of strings where each represents either a full naics code or the first few characters as a wildcard.
+                      These will also be used to filter the notices that are fetched.
     '''
 
     def __init__(self, date, base_url='ftp://ftp.fbo.gov/FBOFeed',  notice_types = None, naics = None):

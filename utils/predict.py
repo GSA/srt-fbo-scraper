@@ -49,6 +49,9 @@ class Predict():
         'were','weren',"weren't",'what','when','where','which','while','who','whom','why','will','with','won',"won't",'wouldn',"wouldn't",
         'y','you',"you'd","you'll","you're","you've",'your','yours','yourself','yourselves'}
         no_nonsense_re = re.compile(r'^[a-zA-Z^508]+$')
+        if not isinstance(doc, str):
+            print(doc)
+            doc = str(doc)
         doc = doc.lower()
         doc = doc.split()
         words = ''

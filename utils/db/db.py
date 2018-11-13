@@ -13,7 +13,7 @@ from utils.db import db_utils
 
 db_string = db_utils.get_db_url()
 now = datetime.now()
-current_time = now.strftime("%Y-%d-%m")
+current_time = now.strftime("%Y-%m-%d")
 
 
 Base = declarative_base()
@@ -24,7 +24,7 @@ class NoticeType(Base):
     id = Column(Integer, primary_key = True)
     notice_type = Column(String(50))
     # specify a bidirectional one-to-many relationship with the child table, Notice
-    notices = relationship("Notice", back_populates="notice_types")
+    notices = relationship("Notice")
     
 
 class Notice(Base):
@@ -37,7 +37,7 @@ class Notice(Base):
     noncompliant = Column(Integer)
     #attachment_id = Column(Integer, ForeignKey('attachment.id'))
     # specify a bidirectional one-to-many relationship with the parent table, NoticeType
-    notice_types = relationship("NoticeType", back_populates="notices")
+    #notice_types = relationship("NoticeType", back_populates="notices")
     attachments = relationship("Attachment", back_populates="notice_data")
     
 
@@ -68,24 +68,34 @@ class DataAccessLayer:
 
 
     def add_json_nightly_file_to_postgres(self,jsonFile):
-        for i in jsonFile:
-            n = NoticeType(notice_type=i)
-            for x in range(len(jsonFile[i])):
-                e = Notice(notice_data=json.dumps(jsonFile[i][x]),notice_types=n,date=current_time,noncompliant=jsonFile[i][x]['noncompliant'])
+        self._add_notice_db()
+        for notice in jsonFile:
+            noticeID = self.s.query(NoticeType.id).filter(NoticeType.notice_type==notice).first()
+            #n = NoticeType(notice_type=notice)
+            for x in range(len(jsonFile[notice])):
+                notice_data = jsonFile[notice][x]
                 try:
-                    for a in range(len(jsonFile[i][x]['attachments'])):
-                        attach = jsonFile[i][x]['attachments'][a]
-                        att =  Attachment(prediction=attach['prediction'],decision_boundary=attach['decision_boundary'],attachment_url = attach['url'],attachment_text=attach['text'])
-                        #s.add(att)
-                        e.attachments.append(att)
-                        #s.flush()
+                    attachment_data = notice_data.pop('attachments')
+                except KeyError:
+                    pass
+                non_compliant =notice_data.pop('noncompliant')
+                postgres_data = Notice(notice_data=json.dumps(notice_data),notice_type_id=noticeID,date=current_time,noncompliant=non_compliant)
+                try:
+                    for attachment in attachment_data:
+                        postgres_attachment =  Attachment(prediction=attachment['prediction'],decision_boundary=attachment['decision_boundary'],attachment_url = attachment['url'],attachment_text=attachment['text'])
+                        postgres_data.attachments.append(postgres_attachment)
                 except:
-                    pass#del jsonFile[i][x]['attachments']   
-                self.s.add(n)
-                self.s.add(e)
+                    pass # we should log the errors when it acually fails
+                self.s.add(postgres_data)
                 self.s.flush()
         self.s.commit()
         
-
-    
-    
+    def _add_notice_db(self):
+       try:
+           if self.s.query(Notice).one_or_none() is None:
+               for notice in [ 'MOD','COMBINE','PRESOL']:
+                   n = NoticeType(notice_type=notice)
+                   self.s.add(n)
+               self.s.commit()
+       except:
+           print("appending data into database")

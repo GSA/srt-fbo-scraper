@@ -61,8 +61,12 @@ class BaseParser(object):
             return u''
 
         # use chardet to automatically detect the encoding text
+        # if encoding is none, coerce to utf-8
         result = chardet.detect(text)
-        return text.decode(result['encoding'])
+        if result['encoding']:
+            return text.decode(result['encoding'])
+        else:
+            return text.decode('utf8', errors='ignore')
 
 
 class ShellParser(BaseParser):

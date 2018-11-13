@@ -93,7 +93,7 @@ class DataAccessLayer:
     def _add_notice_db(self):
        try:
            if self.s.query(Notice).one_or_none() is None:
-               for notice in [ 'MOD','COMBINE','PRESOL']:
+               for notice in [ 'MOD','COMBINE','PRESOL','AMDCSS']:
                    n = NoticeType(notice_type=notice)
                    self.s.add(n)
                self.s.commit()

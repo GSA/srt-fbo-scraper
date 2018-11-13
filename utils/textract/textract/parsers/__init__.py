@@ -66,7 +66,7 @@ def process(filename, encoding=DEFAULT_ENCODING, extension=None, **kwargs):
     # If we can't import the module, the file extension isn't currently
     # supported
     try:
-        filetype_module = importlib.import_module('.parsers.'+rel_module)
+        filetype_module = importlib.import_module('utils.textract.textract.parsers'+rel_module)
     except ImportError:
         raise exceptions.ExtensionNotSupported(ext)
 

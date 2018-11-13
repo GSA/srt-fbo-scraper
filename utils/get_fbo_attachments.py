@@ -59,7 +59,7 @@ class FboAttachments():
         placeholders for the prediction, decision_boundary, and validation.
 
         Parameters:
-            file_list (list): a list of the attachment file paths that have been downloaded
+            file_list (list): a list of tuples containing attachment file paths and urls
             notice (dict): a dict representing a single fbo notice
 
         Returns:
@@ -82,7 +82,8 @@ class FboAttachments():
                 b_text = None
             except ShellError:
                 b_text = None
-            except TypeError: #raised when empty file is passed to process()
+            # TODO: think out how this could fail and handle
+            except:
                 b_text = None
             if b_text:
                 detected_encoding = chardet.detect(b_text)['encoding']
@@ -92,7 +93,7 @@ class FboAttachments():
                     text = b_text.decode('utf-8', errors='ignore')
             else:
                 text = ''
-
+            
             return text
         
         notice['attachments'] = []
@@ -120,7 +121,7 @@ class FboAttachments():
             attachment_divs (list): a list of attachment_divs. Returned by FboAttachments.get_divs()
 
         Returns:
-            file_list (list): a list of all the files that have been written
+            file_list (list): a list of tuples containing files paths and urls of each fiel that has been written
         '''
         
         def size_check(url):
@@ -133,6 +134,7 @@ class FboAttachments():
             Returns:
                 bool: True if resource < 500mb
             """
+            
             h = requests.head(url)
             header = h.headers
             content_length = header.get('content-length', None)
@@ -158,6 +160,7 @@ class FboAttachments():
             if len(file_name) == 0:
                 return None
             file_name = file_name[0]
+            
             return file_name
         
         def get_file_name(attachment_url, content_type):
@@ -192,13 +195,11 @@ class FboAttachments():
                 if not extension:
                     extension = '.txt'
                 file_name = file + extension
+            
             return file_name
 
-        textract_extensions = ('.csv', '.doc', '.docx', '.eml', '.epub', '.gif', '.htm', 
-                               '.html', '.jpeg', '.jpg', '.json', '.log', '.mp3', '.msg',
-                               '.odt', '.ogg', '.pdf', '.png', '.pptx', '.ps', '.psv',
-                               '.rtf', '.tff', '.tif', '.tiff', '.tsv', '.txt', '.wav',
-                               '.xls', '.xlsx')
+        textract_extensions = ('.doc', '.docx', '.epub', '.gif', '.htm', 
+                               '.html','.odt', '.pdf', '.rtf', '.txt')
         out_path = 'attachments'
         if not os.path.exists(out_path):
             os.makedirs(out_path)
@@ -213,7 +214,7 @@ class FboAttachments():
                     attachment_url = max(attachment_href.split(), key=len)
                 else:
                     attachment_url = attachment_href
-                #some are ftp
+                #some are ftp and we can get the file now
                 if 'ftp://' in attachment_url:
                     file_name = os.path.basename(attachment_url)
                     file_out_path = os.path.join(out_path, file_name)
@@ -221,7 +222,7 @@ class FboAttachments():
                         with closing(urllib.request.urlopen(attachment_url)) as ftp_r:
                             with open(file_out_path, 'wb') as f:
                                 shutil.copyfileobj(ftp_r, f)
-                        file_list.append((file_out_path, attachment_url))
+                                file_list.append((f, attachment_url))
                 else:
                     if size_check(attachment_url):
                         try:
@@ -252,6 +253,7 @@ class FboAttachments():
                         pass
             except:
                 continue
+        
         return file_list
     
     def update_nightly_data(self):
@@ -276,6 +278,11 @@ class FboAttachments():
                 updated_notice = FboAttachments.insert_attachments(file_list, notice)
                 nightly_data[k][i] = updated_notice
         updated_nightly_data = nightly_data
+
+        #clean up
+        for file_url_tup in file_list:
+            file, _ = file_url_tup
+            os.remove(file)
         
         return updated_nightly_data
 

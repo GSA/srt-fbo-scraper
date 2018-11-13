@@ -5,6 +5,8 @@ import json
 import re
 import string
 import sys
+from nltk.corpus import stopwords
+from nltk.stem.porter import PorterStemmer
 
 
 class Predict():
@@ -16,41 +18,54 @@ class Predict():
                           has its attachments and their text.
     '''
     
-    def __init__(self, json_data, best_model_path='utils/binaries/best_clf_scott.pkl'):
+    def __init__(self, json_data, best_model_path='utils/binaries/best_clf_scott_roc_auc.pkl'):
         self.json_data = json_data
         self.best_model_path = best_model_path
 
 
     @staticmethod
-    def transform_text(text):
-        '''
-        Strip punctuation and some common string formatting.
-
-        Parameters:
-            text (str): a string
-
-        Returns:
-            stripped_text (str): a string
-        '''
-
-        def remove_punctuation(text):
-            regex = re.compile('[%s]' % re.escape(string.punctuation))
-            s = regex.sub(' ', text)
-            
-            return s
-
-        def remove_formatting(text):
-            output = text.replace('\t', ' ').\
-                          replace('\n', ' ').\
-                          replace('\r', ' ').\
-                          replace('\x0b', ' ').\
-                          replace('\x0c', ' ')
-            return output
-
-        stripped_punctuation = remove_punctuation(text)
-        stripped_text = remove_formatting(stripped_punctuation)
+    def transform_text(doc):
+        """
+        Returns stemmed lowercased alpha-only substrings from a string that are b/w 3 and 17 chars long. 
+        It keeps the substring `508`.
         
-        return stripped_text
+        Parameters:
+            doc (str): the text of a single FBO document.
+            
+        Returns:
+            words (str): a string of space-delimited lower-case alpha-only words (except for `508`)
+        """
+
+        #manually define stop_words to avoid nltk.download('stopwords')
+        stop_words = {'a','about','above','after','again','against','ain','all','am','an','and','any','are','aren',"aren't",
+        'as','at','be','because','been','before','being','below','between','both','but','by','can','couldn',"couldn't",'d','did',
+        'didn',"didn't",'do','does','doesn',"doesn't",'doing','don',"don't",'down','during','each','few','for','from','further',
+        'had','hadn',"hadn't",'has','hasn',"hasn't",'have','haven',"haven't",'having','he','her','here','hers','herself','him',
+        'himself','his','how','i','if','in','into','is','isn',"isn't",'it',"it's",'its','itself','just','ll','m','ma','me','mightn',
+        "mightn't",'more','most','mustn',"mustn't",'my','myself','needn',"needn't",'no','nor','not','now','o','of','off','on','once',
+        'only','or','other','our','ours','ourselves','out','over','own','re','s','same','shan',"shan't",'she',"she's",'should',
+        "should've",'shouldn',"shouldn't",'so','some','such','t','than','that',"that'll",'the','their','theirs','them','themselves',
+        'then','there','these','they','this','those','through','to','too','until','up','ve','very','was','wasn',"wasn't",'we',
+        'were','weren',"weren't",'what','when','where','which','while','who','whom','why','will','with','won',"won't",'wouldn',"wouldn't",
+        'y','you',"you'd","you'll","you're","you've",'your','yours','yourself','yourselves'}
+        no_nonsense_re = re.compile(r'^[a-zA-Z^508]+$')
+        doc = doc.lower()
+        doc = doc.split()
+        words = ''
+        for word in doc:
+            m = re.match(no_nonsense_re, word)
+            if m:
+                match = m.group()
+                if match in stop_words:
+                    continue
+                else:
+                    match_len = len(match)
+                    if match_len <= 17 and match_len >= 3:
+                        porter = PorterStemmer()
+                        stemmed = porter.stem(match)
+                        words += stemmed + ' '
+        
+        return words
 
 
     def insert_predictions(self):

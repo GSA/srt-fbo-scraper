@@ -45,10 +45,15 @@ class FboAttachments():
             attachment_divs (list): a list of each html div with its text
         '''
         
-        r = requests.get(fbo_url)
+        try:
+            r = requests.get(fbo_url)
+        except:
+            attachment_divs = []
+            return attachment_divs
         r_text = r.text
         soup = BeautifulSoup(r_text, "html.parser")
         attachment_divs = soup.find_all('div', {"class": "notice_attachment_ro"})
+        
         return attachment_divs
 
     

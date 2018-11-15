@@ -140,7 +140,27 @@ class FboAttachments():
         else:
             return True
     
-    
+    @staticmethod
+    def get_filename_from_cd(cd):
+        """
+        Get filename from content-disposition
+
+        Arguments:
+            cd: the content-disposition returned in the headers by requests.get()
+
+        Returns:
+            file_name (str) or None
+        """
+        
+        if not cd:
+            return None
+        file_name = re.findall('filename=(.+)', cd)
+        if len(file_name) == 0:
+            return None
+        file_name = file_name[0].strip('\"')
+        
+        return file_name
+
     @staticmethod
     def write_attachments(attachment_divs):
         '''
@@ -154,25 +174,6 @@ class FboAttachments():
             file_list (list): a list of tuples containing files paths and urls of each fiel that has been written
         '''
 
-        def get_filename_from_cd(cd):
-            """
-            Get filename from content-disposition
-
-            Arguments:
-                cd: the content-disposition returned in the headers by requests.get()
-
-            Returns:
-                file_name (str) or None
-            """
-            
-            if not cd:
-                return None
-            file_name = re.findall('filename=(.+)', cd)
-            if len(file_name) == 0:
-                return None
-            file_name = file_name[0]
-            
-            return file_name
         
         def get_file_name(attachment_url, content_type):
             '''
@@ -242,7 +243,7 @@ class FboAttachments():
                             # continue when there are untrusted SSL certificates. Not worth it to set verify=False in requests.get()
                             continue
                         content_disposition = r.headers.get('Content-Disposition')
-                        file_name = get_filename_from_cd(content_disposition)
+                        file_name = FboAttachments.get_filename_from_cd(content_disposition)
                         if not file_name:
                             content_type = r.headers.get('Content-Type')
                             file_name = get_file_name(attachment_url, content_type)

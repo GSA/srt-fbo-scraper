@@ -131,11 +131,11 @@ class FboAttachments():
             h = requests.head(url)
         except:
             return False
+        if h.status_code != 200:
+            return False
         header = h.headers
         content_length = header.get('content-length', None)
-        if not content_length:
-            return False
-        elif content_length and int(content_length) > 5e8:  # 500 mb approx
+        if content_length and int(content_length) > 5e8:  # 500 mb approx
             return False
         else:
             return True

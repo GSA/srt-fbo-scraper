@@ -117,6 +117,31 @@ class FboAttachments():
 
     
     @staticmethod
+    def size_check(url):
+        """
+        Does the url contain a resource that's less than 500mb?
+
+        Arguments:
+            url (str): an attachment url that's passable `requests.head()`
+
+        Returns:
+            bool: True if resource < 500mb
+        """
+        try:
+            h = requests.head(url)
+        except:
+            return False
+        header = h.headers
+        content_length = header.get('content-length', None)
+        if not content_length:
+            return False
+        elif content_length and int(content_length) > 5e8:  # 500 mb approx
+            return False
+        else:
+            return True
+    
+    
+    @staticmethod
     def write_attachments(attachment_divs):
         '''
         Given a list of the attachment_divs from an fbo notice's url, write each file's contents
@@ -128,26 +153,7 @@ class FboAttachments():
         Returns:
             file_list (list): a list of tuples containing files paths and urls of each fiel that has been written
         '''
-        
-        def size_check(url):
-            """
-            Does the url contain a resource that's less than 500mb?
 
-            Arguments:
-                url (str): an attachment url that's passable `requests.head()`
-
-            Returns:
-                bool: True if resource < 500mb
-            """
-            
-            h = requests.head(url)
-            header = h.headers
-            content_length = header.get('content-length', None)
-            if content_length and int(content_length) > 5e8:  # 500 mb approx
-                return False
-            else:
-                return True
-        
         def get_filename_from_cd(cd):
             """
             Get filename from content-disposition
@@ -229,7 +235,7 @@ class FboAttachments():
                                 shutil.copyfileobj(ftp_r, f)
                                 file_list.append((f, attachment_url))
                 else:
-                    if size_check(attachment_url):
+                    if FboAttachments.size_check(attachment_url):
                         try:
                             r = requests.get(attachment_url, timeout=10)
                         except SSLError:

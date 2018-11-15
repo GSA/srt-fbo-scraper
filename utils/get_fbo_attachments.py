@@ -140,6 +140,7 @@ class FboAttachments():
         else:
             return True
     
+
     @staticmethod
     def get_filename_from_cd(cd):
         """
@@ -161,21 +162,9 @@ class FboAttachments():
         
         return file_name
 
+    
     @staticmethod
-    def write_attachments(attachment_divs):
-        '''
-        Given a list of the attachment_divs from an fbo notice's url, write each file's contents
-        and return a list of all of the files written.
-
-        Parameters:
-            attachment_divs (list): a list of attachment_divs. Returned by FboAttachments.get_divs()
-
-        Returns:
-            file_list (list): a list of tuples containing files paths and urls of each fiel that has been written
-        '''
-
-        
-        def get_file_name(attachment_url, content_type):
+    def get_file_name(attachment_url, content_type):
             '''
             Get filename using some heuristics if get_filename_from_cd() failed.
             Arguments:
@@ -209,6 +198,20 @@ class FboAttachments():
                 file_name = file + extension
             
             return file_name
+    
+    
+    @staticmethod
+    def write_attachments(attachment_divs):
+        '''
+        Given a list of the attachment_divs from an fbo notice's url, write each file's contents
+        and return a list of all of the files written.
+
+        Parameters:
+            attachment_divs (list): a list of attachment_divs. Returned by FboAttachments.get_divs()
+
+        Returns:
+            file_list (list): a list of tuples containing files paths and urls of each fiel that has been written
+        '''
 
         textract_extensions = ('.doc', '.docx', '.epub', '.gif', '.htm', 
                                '.html','.odt', '.pdf', '.rtf', '.txt')
@@ -246,7 +249,7 @@ class FboAttachments():
                         file_name = FboAttachments.get_filename_from_cd(content_disposition)
                         if not file_name:
                             content_type = r.headers.get('Content-Type')
-                            file_name = get_file_name(attachment_url, content_type)
+                            file_name = FboAttachments.get_file_name(attachment_url, content_type)
                         if '.zip' in file_name:
                             z = ZipFile(io.BytesIO(r.content))
                             z.extractall(out_path)

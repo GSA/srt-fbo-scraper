@@ -175,17 +175,17 @@ class FboAttachments():
                 file_name (str): a string for the file's name
             '''
             
-            file = os.path.basename(attachment_url)
+            file_name = os.path.basename(attachment_url)
             extensions = ['.csv','.docx','.doc','.eml', '.epub', '.gif', '.html', '.jpeg', '.htm',
                           '.jpg', '.json', '.log', '.mp3', '.msg', '.odt', '.ogg', '.pdf', '.png', '.pptx',
                           '.ps', '.psv', '.rtf', '.tff', '.tiff', '.tsv', '.txt', '.wav', '.xlsx', '.xls']
             extensions_re = re.compile(r"|".join(extensions))
-            matches = extensions_re.findall(file)
+            matches = extensions_re.findall(file_name)
             if matches:
                 for m in matches:
-                    file = file.replace(m,'')
+                    file_name = file_name.replace(m,'')
                 extension = max(matches, key=len)
-                file_name = file+extension
+                file_name = file_name+extension
             else:
                 if content_type == 'application/zip':
                     extension = '.zip'
@@ -195,7 +195,7 @@ class FboAttachments():
                     extension = guess_extension(content_type.split()[0].rstrip(";"))
                 if not extension:
                     extension = '.txt'
-                file_name = file + extension
+                file_name = file_name + extension
             
             return file_name
     

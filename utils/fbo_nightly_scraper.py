@@ -7,6 +7,7 @@ from collections import Counter
 import os
 from datetime import datetime
 import json
+import ftplib
 
 
 class NightlyFBONotices():
@@ -25,12 +26,16 @@ class NightlyFBONotices():
                       These will also be used to filter the notices that are fetched.
     '''
 
-    def __init__(self, date, base_url='ftp://ftp.fbo.gov/FBOFeed',  notice_types = None, naics = None):
+    def __init__(self, date, base_url='ftp://ftp.fbo.gov/FBOFeed',  notice_types = None, naics = None, 
+                 n_ftp_retries = 0, ftp_maxlines = 1000000):
         self.base_url = base_url
         self.date = str(date)
         self.ftp_url = base_url+self.date
         self.notice_types = notice_types
         self.naics = naics
+        self.n_ftp_retries = n_ftp_retries
+        #sets the max number of chars in a line of the ftp file. default is only about 8k
+        self.ftp_maxlines = ftp_maxlines
         
 
     @staticmethod
@@ -84,24 +89,32 @@ class NightlyFBONotices():
     
     def read_from_ftp(self):
         '''
-        Enter FBO FTP and read lines from file into memory.
+        Recursive function to enter FBO FTP and read lines from file into memory.
         Compare to download_from_ftp()
 
         Returns:
             file_lines (list): the lines of the nightly file
         '''
-        
-        import ftplib
-        ftplib.FTP.maxline = 200000 
-        file_name = 'FBOFeed' + self.date
-        with (ftplib.FTP('ftp.fbo.gov')) as ftp:
-            ftp.login()
-            file_lines = []
-            ftp.retrlines("RETR " + file_name, file_lines.append)
-            ftp.close()
-        
-        return file_lines
 
+        try:
+            ftplib.FTP.maxline = self.ftp_maxlines
+            file_name = 'FBOFeed' + self.date
+            with (ftplib.FTP('ftp.fbo.gov')) as ftp:
+                ftp.login()
+                file_lines = []
+                ftp.retrlines("RETR " + file_name, file_lines.append)
+                ftp.close()
+            self.n_ftp_retries+=1
+            return file_lines
+        except ftplib.Error:
+            if self.n_ftp_retries <= 10:
+                self.ftp_maxlines += 100000
+                ftplib.FTP.maxline = self.ftp_maxlines
+                self.n_ftp_retries+=1
+                self.read_from_ftp()
+            else:
+                raise Exception(f'Fatal Error: Maximum number of FTP retries exceeded for {file_name}')
+       
 
     def download_from_ftp(self):
         '''
@@ -253,8 +266,12 @@ class NightlyFBONotices():
 if __name__ == '__main__':
     #sample usage
     date=20180506
-    nfbo = NightlyFBONotices(date=date)
-    file_lines = nfbo.download_from_ftp()
+    notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS']
+    naics = ['334111', '334118', '3343', '33451', '334516', '334614', '5112', '518', '54169', '54121', '5415', '54169', '61142']
+    nfbo = NightlyFBONotices(date=date, notice_types=notice_types, naics=naics)
+    #file_lines = nfbo.read_from_ftp()
+    file_lines = nfbo.download_from_ftp() #this also works
     json_str = nfbo.pseudo_xml_to_json(file_lines)
-    file_name = 'fbo_nightly_'+str(date)+'.json'
-    nfbo.write_json(json_str,file_name)
+    filtered_json_str = nfbo.filter_json(json_str)
+    nightly_data = json.loads(filtered_json_str)
+    print(nightly_data['COMBINE'][0])

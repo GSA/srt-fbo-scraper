@@ -45,13 +45,43 @@ class FboAttachments():
             attachment_divs (list): a list of each html div with its text
         '''
         
-        r = requests.get(fbo_url)
-        r_text = r.text
-        soup = BeautifulSoup(r_text, "html.parser")
+        try:
+            r = requests.get(fbo_url)
+        except:
+            attachment_divs = []
+            return attachment_divs
+        r_content = r.content
+        soup = BeautifulSoup(r_content, "html.parser")
         attachment_divs = soup.find_all('div', {"class": "notice_attachment_ro"})
+        
         return attachment_divs
 
     
+    @staticmethod
+    def get_attachment_text(file_name):
+        '''
+        Extract text from a file.
+
+        Arguments:
+            file (str): the path to a file.
+
+        Returns:
+            text (str): a string representing the text of the file.
+        '''
+        try:
+            b_text = process(file_name)
+        except:
+            b_text = None
+        if b_text:
+            text = b_text.decode('utf-8', errors='ignore')
+        else:
+            text = ''
+        
+        text = text.strip()
+
+        return text
+    
+
     @staticmethod
     def insert_attachments(file_list, notice):
         '''
@@ -66,40 +96,10 @@ class FboAttachments():
             notice (dict): a dict representing a single fbo notice with insertions made
         '''
         
-        def get_attachment_text(file):
-            '''
-            Extract text from a file.
-
-            Arguments:
-                file (str): the path to a file.
-
-            Returns:
-                text (str): a string representing the text of the file.
-            '''
-            try:
-                b_text = process(file)
-            except BadZipfile:#this catches corruputed docx files
-                b_text = None
-            except ShellError:
-                b_text = None
-            # TODO: think out how this could fail and handle
-            except:
-                b_text = None
-            if b_text:
-                detected_encoding = chardet.detect(b_text)['encoding']
-                if detected_encoding:
-                    text = b_text.decode(detected_encoding, errors='ignore')
-                else:
-                    text = b_text.decode('utf-8', errors='ignore')
-            else:
-                text = ''
-            
-            return text
-        
         notice['attachments'] = []
         for file_url_tup in file_list:
-            file, url = file_url_tup
-            text = get_attachment_text(file)
+            file_name, url = file_url_tup
+            text = FboAttachments.get_attachment_text(file_name)
             attachment_dict = {'text':text, 
                                'url':url,
                                'prediction':None, 
@@ -112,58 +112,64 @@ class FboAttachments():
 
     
     @staticmethod
-    def write_attachments(attachment_divs):
-        '''
-        Given a list of the attachment_divs from an fbo notice's url, write each file's contents
-        and return a list of all of the files written.
+    def size_check(url):
+        """
+        Does the url contain a resource that's less than 500mb?
 
-        Parameters:
-            attachment_divs (list): a list of attachment_divs. Returned by FboAttachments.get_divs()
+        Arguments:
+            url (str): an attachment url that's passable `requests.head()`
 
         Returns:
-            file_list (list): a list of tuples containing files paths and urls of each fiel that has been written
-        '''
-        
-        def size_check(url):
-            """
-            Does the url contain a resource that's less than 500mb?
-
-            Arguments:
-                url (str): an attachment url that's passable `requests.head()`
-
-            Returns:
-                bool: True if resource < 500mb
-            """
-            
+            bool: True if resource < 500mb
+        """
+        try:
             h = requests.head(url)
+        except:
+            return False
+        
+        if h.status_code != 200:
+            print("*"*80)
+            print(url)
+            return False
+        elif h.status_code == 302:
             header = h.headers
-            content_length = header.get('content-length', None)
-            if content_length and int(content_length) > 5e8:  # 500 mb approx
+            redirect_url = header['Location']
+            try:
+                h = requests.head(redirect_url)
+            except:
                 return False
-            else:
-                return True
-        
-        def get_filename_from_cd(cd):
-            """
-            Get filename from content-disposition
+        header = h.headers
+        content_length = header.get('content-length', None)
+        if content_length and int(content_length) > 5e8:  # 500 mb approx
+            return False
+        else:
+            return True
+    
 
-            Arguments:
-                cd: the content-disposition returned in the headers by requests.get()
+    @staticmethod
+    def get_filename_from_cd(cd):
+        """
+        Get filename from content-disposition
 
-            Returns:
-                file_name (str) or None
-            """
-            
-            if not cd:
-                return None
-            file_name = re.findall('filename=(.+)', cd)
-            if len(file_name) == 0:
-                return None
-            file_name = file_name[0]
-            
-            return file_name
+        Arguments:
+            cd: the content-disposition returned in the headers by requests.get()
+
+        Returns:
+            file_name (str) or None
+        """
         
-        def get_file_name(attachment_url, content_type):
+        if not cd:
+            return None
+        file_name = re.findall('filename=(.+)', cd)
+        if len(file_name) == 0:
+            return None
+        file_name = file_name[0].strip('\"')
+        
+        return file_name
+
+    
+    @staticmethod
+    def get_file_name(attachment_url, content_type):
             '''
             Get filename using some heuristics if get_filename_from_cd() failed.
             Arguments:
@@ -174,17 +180,17 @@ class FboAttachments():
                 file_name (str): a string for the file's name
             '''
             
-            file = os.path.basename(attachment_url)
+            file_name = os.path.basename(attachment_url)
             extensions = ['.csv','.docx','.doc','.eml', '.epub', '.gif', '.html', '.jpeg', '.htm',
                           '.jpg', '.json', '.log', '.mp3', '.msg', '.odt', '.ogg', '.pdf', '.png', '.pptx',
                           '.ps', '.psv', '.rtf', '.tff', '.tiff', '.tsv', '.txt', '.wav', '.xlsx', '.xls']
             extensions_re = re.compile(r"|".join(extensions))
-            matches = extensions_re.findall(file)
+            matches = extensions_re.findall(file_name)
             if matches:
                 for m in matches:
-                    file = file.replace(m,'')
+                    file_name = file_name.replace(m,'')
                 extension = max(matches, key=len)
-                file_name = file+extension
+                file_name = file_name+extension
             else:
                 if content_type == 'application/zip':
                     extension = '.zip'
@@ -194,9 +200,69 @@ class FboAttachments():
                     extension = guess_extension(content_type.split()[0].rstrip(";"))
                 if not extension:
                     extension = '.txt'
-                file_name = file + extension
+                file_name = file_name + extension
             
             return file_name
+    
+    
+    @staticmethod
+    def get_attachment_url_from_div(div):
+        '''
+        Extract the attachment url from the href attribute of the attachmen div's anchor tag
+
+        Arguments:
+            div (an element within the bs4 object returned by soup.find_all())
+
+        Returns:
+            attachment_url (str): the attachment's url as a string 
+        '''
+        attachment_href = div.find('a')['href'].strip()
+        if '/utils/view?id' in attachment_href:
+            attachment_url = 'https://www.fbo.gov'+attachment_href
+        #some href's look like: 'http://  https://www....'
+        elif ' ' in attachment_href:
+            attachment_url = max(attachment_href.split(), key=len)
+        else:
+            attachment_url = attachment_href
+            
+        return attachment_url
+    
+    
+    @staticmethod
+    def get_and_write_attachment_from_ftp(attachment_url, out_path, textract_extensions):
+        '''
+        Get and write a file from a FTP
+
+        Arguments:
+            attachment_url (str): the ftp url of the attachment
+            out_path (str): the directory to which you'd like to write the attachment
+            textract_extensions (tup): a tuple of file extensions
+
+        Returns:
+            file_out_path (str): the relative file path to which the ftp file was written
+        '''
+
+        file_name = os.path.basename(attachment_url)
+        file_out_path = os.path.join(out_path, file_name)
+        if file_out_path.endswith(textract_extensions):
+            with closing(urllib.request.urlopen(attachment_url)) as ftp_r:
+                with open(file_out_path, 'wb') as f:
+                    shutil.copyfileobj(ftp_r, f)
+                    
+        return file_out_path
+
+    @staticmethod
+    def write_attachments(attachment_divs):
+        '''
+        Given a list of the attachment_divs from an fbo notice's url, write each file's contents
+        and return a list of all of the files written.
+
+        Parameters:
+            attachment_divs (list): a list of attachment_divs. Returned by FboAttachments.get_divs()
+
+        Returns:
+            file_list (list): a list of tuples containing files paths and urls of each file that has been written
+        '''
 
         textract_extensions = ('.doc', '.docx', '.epub', '.gif', '.htm', 
                                '.html','.odt', '.pdf', '.rtf', '.txt')
@@ -204,37 +270,33 @@ class FboAttachments():
         if not os.path.exists(out_path):
             os.makedirs(out_path)
         file_list = []
-        for d in attachment_divs:
+        for div in attachment_divs:
             try:
-                attachment_href = d.find('a')['href'].strip()
-                if '/utils/view?id' in attachment_href:
-                    attachment_url = 'https://fbo.gov'+attachment_href
-                #some href's look like: 'http://  https://www....'
-                elif ' ' in attachment_href:
-                    attachment_url = max(attachment_href.split(), key=len)
-                else:
-                    attachment_url = attachment_href
+                attachment_url = FboAttachments.get_attachment_url_from_div(div)
                 #some are ftp and we can get the file now
                 if 'ftp://' in attachment_url:
-                    file_name = os.path.basename(attachment_url)
-                    file_out_path = os.path.join(out_path, file_name)
-                    if file_out_path.endswith(textract_extensions):
-                        with closing(urllib.request.urlopen(attachment_url)) as ftp_r:
-                            with open(file_out_path, 'wb') as f:
-                                shutil.copyfileobj(ftp_r, f)
-                                file_list.append((f, attachment_url))
+                    f = FboAttachments.get_and_write_attachment_from_ftp(attachment_url,
+                                                                         out_path,
+                                                                         textract_extensions)
+                    file_list.append((f, attachment_url))                                                                                        
                 else:
-                    if size_check(attachment_url):
+                    if FboAttachments.size_check(attachment_url):
                         try:
                             r = requests.get(attachment_url, timeout=10)
-                        except SSLError:
-                            # continue when there are untrusted SSL certificates. Not worth it to set verify=False in requests.get()
+                        except:
                             continue
+                        if r.status_code == 302:
+                            header = r.headers
+                            redirect_url = header['Location']
+                            try:
+                                r = requests.get(redirect_url)
+                            except:
+                                continue
                         content_disposition = r.headers.get('Content-Disposition')
-                        file_name = get_filename_from_cd(content_disposition)
+                        file_name = FboAttachments.get_filename_from_cd(content_disposition)
                         if not file_name:
                             content_type = r.headers.get('Content-Type')
-                            file_name = get_file_name(attachment_url, content_type)
+                            file_name = FboAttachments.get_file_name(attachment_url, content_type)
                         if '.zip' in file_name:
                             z = ZipFile(io.BytesIO(r.content))
                             z.extractall(out_path)
@@ -281,8 +343,8 @@ class FboAttachments():
 
         #clean up
         for file_url_tup in file_list:
-            file, _ = file_url_tup
-            os.remove(file)
+            file_path, _ = file_url_tup
+            os.remove(file_path)
         
         return updated_nightly_data
 

@@ -31,7 +31,9 @@ This application requires a [cloud.gov account](https://cloud.gov/docs/getting-s
 
 ## Running the tests
 
-Coming soon!
+At present, only about half of the codebase is covered. To run that tests that we do have, run:
+
+`$ python -W ignore -m unittest test.py`
 
 ### And coding style tests
 
@@ -39,11 +41,14 @@ Coming soon! (hopefully PEP8 Speaks)
 
 ## Deployment
 
-cf create-service *service* *plan* smartie_db  
-cf create-service-key smartie_db    *this may take a few minutes to configure*  
-cf push smartie  
-cf bind-service smartie smartie_db  
-cf restage smartie  
+
+```
+$ cf create-service *service* *plan* smartie_db  
+$ cf create-service-key smartie_db    *this may take a few minutes to configure*  
+$ cf push smartie  
+$ cf bind-service smartie smartie_db  
+$ cf restage smartie
+```  
 
 ## Contributing
 

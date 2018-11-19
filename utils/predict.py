@@ -5,7 +5,6 @@ import json
 import re
 import string
 import sys
-from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
 

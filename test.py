@@ -90,10 +90,6 @@ class FboAttachmentsTestCase(unittest.TestCase):
     def tearDown(self):
         self.fboa = None
         self.fake_fbo_url = None
-        self.temp_outfile_path = None
-        self.temp_outfile_path_txt = None
-        self.temp_outfile_path_pdf = None
-        self.temp_outfile_path_docx = None
         if os.path.exists(self.temp_outfile_path):  
             os.remove(self.temp_outfile_path)
         if os.path.exists(self.temp_outfile_path_txt):  

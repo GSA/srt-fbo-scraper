@@ -33,6 +33,23 @@ class NightlyFBONoticesTestCase(unittest.TestCase):
         cls.file_lines = None
         cls.empty_file_lines = None
 
+    @httpretty.activate
+    def test_download_from_ftp_error(self):
+         # httpretty won't work with this method, so this is intended to simulate a bad
+         # connection/timeout error 
+        httpretty.register_uri(httpretty.GET, 
+                               uri=NightlyFBONoticesTestCase.nfbo.ftp_url, 
+                               body="doesn't matter",
+                               status=200)
+        result = NightlyFBONoticesTestCase.nfbo.download_from_ftp()
+        self.assertIsNone(result)
+
+    def test_download_from_ftp(self):
+         # in lieu of mocking out our FTP request, we'll actually go to it
+         # and assert that we're able to read/return the lines as a list
+        result = NightlyFBONoticesTestCase.nfbo.download_from_ftp()
+        self.assertIsInstance(result, list)
+
     def test__id_and_count_notice_tags(self):
         result = NightlyFBONoticesTestCase.nfbo._id_and_count_notice_tags(NightlyFBONoticesTestCase.file_lines)
         expected = {'PRESOL': 1, 'COMBINE': 1, 'ARCHIVE': 1, 

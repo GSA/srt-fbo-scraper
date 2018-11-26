@@ -12,6 +12,9 @@ def get_nightly_data(notice_types, naics):
     current_date = now.strftime("%Y%m%d")
     nfbo = fbo.NightlyFBONotices(date = current_date, notice_types = notice_types, naics = naics)
     file_lines = nfbo.download_from_ftp()
+    if not file_lines:
+        #exit program if download_from_ftp() failed
+        sys.exit(1)
     json_str = nfbo.pseudo_xml_to_json(file_lines)
     filtered_json_str = nfbo.filter_json(json_str)
     nightly_data = json.loads(filtered_json_str)

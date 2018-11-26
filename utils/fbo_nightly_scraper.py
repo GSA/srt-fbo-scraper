@@ -8,6 +8,8 @@ import os
 from datetime import datetime
 import json
 import ftplib
+import logging
+import sys
 
 
 class NightlyFBONotices():
@@ -93,35 +95,6 @@ class NightlyFBONotices():
         if not os.path.exists(out_path):
             os.makedirs(out_path)
 
-    
-    def read_from_ftp(self):
-        '''
-        Recursive function to enter FBO FTP and read lines from file into memory.
-        Compare to download_from_ftp()
-
-        Returns:
-            file_lines (list): the lines of the nightly file
-        '''
-
-        try:
-            ftplib.FTP.maxline = self.ftp_maxlines
-            file_name = 'FBOFeed' + self.date
-            with (ftplib.FTP('ftp.fbo.gov')) as ftp:
-                ftp.login()
-                file_lines = []
-                ftp.retrlines("RETR " + file_name, file_lines.append)
-                ftp.close()
-            self.n_ftp_retries+=1
-            return file_lines
-        except ftplib.Error:
-            if self.n_ftp_retries <= 10:
-                self.ftp_maxlines += 100000
-                ftplib.FTP.maxline = self.ftp_maxlines
-                self.n_ftp_retries+=1
-                self.read_from_ftp()
-            else:
-                raise Exception(f'Fatal Error: Maximum number of FTP retries exceeded for {file_name}')
-       
 
     def download_from_ftp(self):
         '''
@@ -140,8 +113,9 @@ class NightlyFBONotices():
                 file_name = os.path.join(out_path,file_name)
                 with open(file_name, 'wb') as f:
                     shutil.copyfileobj(r, f)
-        except:
-            #TODO: logg errors here
+        except Exception as err:
+            logging.critical(f"Exception occurred trying to access {self.ftp_url}:  \
+                             {err}", exc_info=True)
             return
 
         with open(file_name,'r', errors='ignore') as f:
@@ -291,8 +265,7 @@ if __name__ == '__main__':
     notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS']
     naics = ['334111', '334118', '3343', '33451', '334516', '334614', '5112', '518', '54169', '54121', '5415', '54169', '61142']
     nfbo = NightlyFBONotices(date=date, notice_types=notice_types, naics=naics)
-    #file_lines = nfbo.read_from_ftp()
-    file_lines = nfbo.download_from_ftp() #this also works
+    file_lines = nfbo.download_from_ftp()
     json_str = nfbo.pseudo_xml_to_json(file_lines)
     filtered_json_str = nfbo.filter_json(json_str)
     nightly_data = json.loads(filtered_json_str)

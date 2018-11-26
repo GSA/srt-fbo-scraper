@@ -3,21 +3,18 @@ import urllib.request
 from contextlib import closing
 import shutil
 import re
-from collections import Counter
 import os
-from datetime import datetime
 import json
-import datetime
 import requests
 from requests.exceptions import SSLError
 from requests import exceptions
 from bs4 import BeautifulSoup
 from mimetypes import guess_extension
-import chardet
 from .textract.textract import process
 from .textract.textract.parsers.exceptions import ShellError
 from zipfile import ZipFile, BadZipfile
 import io
+import logging
 
 
 class FboAttachments():
@@ -47,7 +44,8 @@ class FboAttachments():
         
         try:
             r = requests.get(fbo_url)
-        except:
+        except Exception as e:
+            logging.exception(f"Exception occurred getting attachment divs from {fbo_url}")
             attachment_divs = []
             return attachment_divs
         r_content = r.content
@@ -58,25 +56,26 @@ class FboAttachments():
 
     
     @staticmethod
-    def get_attachment_text(file_name):
+    def get_attachment_text(file_name, url):
         '''
         Extract text from a file.
 
         Arguments:
             file (str): the path to a file.
+            url  (str): the url of file (for logging purposes)
 
         Returns:
             text (str): a string representing the text of the file.
         '''
         try:
             b_text = process(file_name)
-        except:
+        except Exception as e:
+            logging.exception(f"Exception occurred textracting from {url}")
             b_text = None
         if b_text:
             text = b_text.decode('utf-8', errors='ignore')
         else:
             text = ''
-        
         text = text.strip()
 
         return text
@@ -99,7 +98,7 @@ class FboAttachments():
         notice['attachments'] = []
         for file_url_tup in file_list:
             file_name, url = file_url_tup
-            text = FboAttachments.get_attachment_text(file_name)
+            text = FboAttachments.get_attachment_text(file_name, url)
             attachment_dict = {'text':text, 
                                'url':url,
                                'prediction':None, 
@@ -124,19 +123,21 @@ class FboAttachments():
         """
         try:
             h = requests.head(url)
-        except:
+        except Exception as e:
+            logging.exception(f"Exception occurred getting file size with HEAD request from {url}")
             return False
         
         if h.status_code != 200:
-            print("*"*80)
-            print(url)
+            logging.warning(f'Non-200 status code getting file size with HEAD request from {url}')
             return False
         elif h.status_code == 302:
             header = h.headers
             redirect_url = header['Location']
             try:
                 h = requests.head(redirect_url)
-            except:
+            except Exception as e:
+                logging.exception(f"Exception occurred getting file size with redirected HEAD \
+                                    request from {url}")
                 return False
         header = h.headers
         content_length = header.get('content-length', None)
@@ -245,9 +246,12 @@ class FboAttachments():
         file_name = os.path.basename(attachment_url)
         file_out_path = os.path.join(out_path, file_name)
         if file_out_path.endswith(textract_extensions):
-            with closing(urllib.request.urlopen(attachment_url)) as ftp_r:
-                with open(file_out_path, 'wb') as f:
-                    shutil.copyfileobj(ftp_r, f)
+            try:
+                with closing(urllib.request.urlopen(attachment_url)) as ftp_r:
+                    with open(file_out_path, 'wb') as f:
+                        shutil.copyfileobj(ftp_r, f)
+            except Exception as e:
+                logging.exception(f"Exception occurred downloading FTP attachment from {attachment_url}")
                     
         return file_out_path
 
@@ -284,6 +288,7 @@ class FboAttachments():
                         try:
                             r = requests.get(attachment_url, timeout=10)
                         except:
+                            logging.exception(f"Exception occurred requesting attachment from {attachment_url}")
                             continue
                         if r.status_code == 302:
                             header = r.headers
@@ -291,6 +296,7 @@ class FboAttachments():
                             try:
                                 r = requests.get(redirect_url)
                             except:
+                                logging.exception(f"Exception occurred requesting attachment from redirect {redirect_url}")
                                 continue
                         content_disposition = r.headers.get('Content-Disposition')
                         file_name = FboAttachments.get_filename_from_cd(content_disposition)

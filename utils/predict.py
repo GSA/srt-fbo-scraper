@@ -17,7 +17,7 @@ class Predict():
                           has its attachments and their text.
     '''
     
-    def __init__(self, json_data, best_model_path='utils/binaries/best_clf_scott_roc_auc.pkl'):
+    def __init__(self, json_data, best_model_path='utils/binaries/best_clf_accuracy.pkl.pkl'):
         self.json_data = json_data
         self.best_model_path = best_model_path
 

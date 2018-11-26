@@ -17,7 +17,7 @@ class Predict():
                           has its attachments and their text.
     '''
     
-    def __init__(self, json_data, best_model_path='utils/binaries/best_clf_accuracy.pkl.pkl'):
+    def __init__(self, json_data, best_model_path='utils/binaries/best_clf_accuracy.pkl'):
         self.json_data = json_data
         self.best_model_path = best_model_path
 
@@ -49,8 +49,7 @@ class Predict():
         'y','you',"you'd","you'll","you're","you've",'your','yours','yourself','yourselves'}
         no_nonsense_re = re.compile(r'^[a-zA-Z^508]+$')
         if not isinstance(doc, str):
-            print(doc)
-            doc = str(doc)
+            return str(doc).lower()
         doc = doc.lower()
         doc = doc.split()
         words = ''
@@ -66,6 +65,7 @@ class Predict():
                         porter = PorterStemmer()
                         stemmed = porter.stem(match)
                         words += stemmed + ' '
+        words = words.strip()
         
         return words
 

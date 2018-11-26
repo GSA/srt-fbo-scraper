@@ -216,17 +216,17 @@ class FboAttachmentsTestCase(unittest.TestCase):
         self.assertEqual(result, expected)
     
     def test_get_attachment_text_txt(self):
-        result = self.fboa.get_attachment_text(self.temp_outfile_path_txt)
+        result = self.fboa.get_attachment_text(self.temp_outfile_path_txt, 'url')
         expected = "This is a test"
         self.assertEqual(result, expected)
 
     def test_get_attachment_text_pdf(self):
-        result = self.fboa.get_attachment_text(self.temp_outfile_path_pdf)
+        result = self.fboa.get_attachment_text(self.temp_outfile_path_pdf, 'url')
         expected = "This is a test"
         self.assertEqual(result, expected)
 
     def test_get_attachment_text_docx(self):
-        result = self.fboa.get_attachment_text(self.temp_outfile_path_docx)
+        result = self.fboa.get_attachment_text(self.temp_outfile_path_docx, 'url')
         expected = "This is a test"
         self.assertEqual(result, expected)
     

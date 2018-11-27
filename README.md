@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/GSA/fbo-scraper/tree/master.svg?style=svg)](https://circleci.com/gh/GSA/fbo-scraper/tree/master)
 # fbo-scraper (AKA Smartie)
 [FBO](https://www.fbo.gov/) is the U.S. government's system of record for opportunities to do business with the government. Each night, the FBO system posts all _updated_ opportunities as a pseudo-xml file that is made publically available via the File Transfer Protocol (FTP), which is a standard network protocol used for the transfer of computer files between a client and server on a computer network.
 
@@ -9,35 +10,33 @@ The application is designed to be run as a cron daemon within [cloud.gov](https:
 
 
 Here's what happens every time the job is triggered:
-    1. Download the pseudo-xml from the FBO FTP every day
-    2. Convert that pseudo-xml to JSON
-    3. Extract solictations from the Information Communications Technology (ICT) categories
-    4. Srape each ICT soliticiatons documents from their official FBO urls
-    5. Extract the text from each of those documents using [textract](https://github.com/deanmalmgren/textract)
-    6. Feed the text of each document into a binary classifier to predict whether or not the document is 508 compliant tThe classifier was built and binarized using [sklearn](https://github.com/scikit-learn/scikit-learn) based on approximately 1,000 hand-labeled solicitations)
-    7. Insert data into a postgreSQL database
-    8. Retrain the classifer if there is a sufficient number of human-validated predictions in the database (validation will occur via the UI)
+ 1. Download the pseudo-xml from the FBO FTP
+ 2. Convert that pseudo-xml to JSON
+ 3. Extract solictations from the Information Communications Technology (ICT) categories
+ 4. Srape each ICT soliticiaton's documents from their official FBO urls
+ 5. Extract the text from each of those documents using [textract](https://github.com/deanmalmgren/textract)
+ 6. Feed the text of each document into a binary classifier to predict whether or not the document is 508 compliant (the classifier was built and binarized using [sklearn](https://github.com/scikit-learn/scikit-learn) based on approximately 1,000 hand-labeled solicitations)
+ 7. Insert data into a postgreSQL database
+ 8. Retrain the classifer if there is a sufficient number of human-validated predictions in the database (validation will occur via the UI)
     
 
 ## Getting Started
-This application is built courtesty of the [multi-buildpack](https://github.com/cloudfoundry-attic/multi-buildpack) using the [python-buildpack](https://github.com/cloudfoundry/python-buildpack), [apt-buildpack](https://github.com/cloudfoundry/apt-buildpack), and [binary buildpacks](https://github.com/cloudfoundry/binary-buildpack). The binary buildpack executes supercronic on the crontab file while the apt-buildback handles all of textract's external dependencies, which can be found in `apt.yml`. The crontab file specifies a single cron job, which is to execute `fbo.py`. 
+This application is made possible thanks to the [multi-buildpack](https://github.com/cloudfoundry-attic/multi-buildpack), which bundles the [python-buildpack](https://github.com/cloudfoundry/python-buildpack), [apt-buildpack](https://github.com/cloudfoundry/apt-buildpack), and [binary buildpack](https://github.com/cloudfoundry/binary-buildpack). The binary buildpack executes supercronic on the crontab file while the apt-buildback handles all of textract's external dependencies, which can be found in `apt.yml`. The crontab file specifies a single cron job, which is to execute `fbo.py`. 
 
 >Note: By default, supercronic logs all output to stderr, so we redirect that to stdout for cf logging purposes in the cf manifest command.
 
 
 ### Prerequisites
-This application requires a [cloud.gov account](https://cloud.gov/docs/getting-started/accounts/) as it's not yet configured to run locally. We'll be working on that as well as within an CI environment.
+This application requires a [cloud.gov account](https://cloud.gov/docs/getting-started/accounts/), although you could tweak it to run locally, so long as you're just interested in seeing the script run on a single daily file.
 
 
 ## Running the tests
-
-At present, only about half of the codebase is covered. To run that tests that we do have, run:
+To run the tests:
 
 `$ python -W ignore -m unittest test.py`
 
-### And coding style tests
+Several warnings and exceptions will print out. Those are by design as they're being mocked in the tests.
 
-Coming soon! (hopefully PEP8 Speaks)
 
 ## Deployment
 

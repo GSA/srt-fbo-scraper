@@ -9,9 +9,9 @@ jobs:
           - POSTGRES_DB=smartie-test
     steps:
       - checkout
-      - run: params pg_ctl="/var/lib/postgresql/9.6.8/bin/pg_ctl"
-      - run: pg_ctl -D /var/lib/postgresql/data -l logfile start
-      - run: python -m unittest test.py
+      - run: 
+          name: Tests
+          command: python -m unittest test.py
       - store_artifacts:
           path: test-reports
           destination: test-reports

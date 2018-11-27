@@ -13,6 +13,10 @@ def get_db_url():
 	output_str = db_string.replace('\postgresql', 'postgresql+psycopg2')
 	return output_str
 
+
+
+    
+
 '''	
 def create_postgres_db():
     connection_string = SQLALCHEMY_URI

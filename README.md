@@ -6,8 +6,7 @@ This project uses supervised machine learning to determine whether or not the so
 
 Following a [service-oriented architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture), this repository, along with a forthcoming API, will provide a back-end to a UI that GSA policy experts will use to review ICT solicitations for 508 compliance; notify deficient solicitation owners; monitor changes in historical compliance; and validate predictions to improve model performance.
 
-The application is designed to be run as a cron daemon within [cloud.gov](https://cloud.gov/). This is tricky to achieve as traditional cron daemons need to run as root and have opinionated defaults for logging and error notifications. This makes them unsuitable for running in a containerized environment like Cloud Foundry. So, instead of a system cron daemon, we're using [supercronic](https://github.com/aptible/supercronic) to run the cron tab. This method is demonstrated without a python script here.
-
+The application is designed to be run as a cron daemon within [cloud.gov](https://cloud.gov/). This is tricky to achieve as traditional cron daemons need to run as root and have opinionated defaults for logging and error notifications. This makes them unsuitable for running in a containerized environment like Cloud Foundry. So, instead of a system cron daemon, we're using [supercronic](https://github.com/aptible/supercronic) to run the cron tab. 
 
 Here's what happens every time the job is triggered:
  1. Download the pseudo-xml from the FBO FTP

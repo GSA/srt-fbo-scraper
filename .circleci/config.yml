@@ -9,6 +9,7 @@ jobs:
           - POSTGRES_DB=smartie-test
     steps:
       - checkout
+      - run: pg_ctl -D /var/lib/postgresql/data -l logfile start
       - run: python -m unittest test.py
       - store_artifacts:
           path: test-reports

@@ -282,7 +282,7 @@ class PredictTestCase(unittest.TestCase):
 
     def tearDown(self):
         self.predict = None
-
+        
     def test_transform_text(self):
         test_text = "This is a testy test that's testing transform_text"
         result = self.predict.transform_text(test_text)
@@ -327,5 +327,18 @@ class PredictTestCase(unittest.TestCase):
         self.assertIsInstance(noncompliant_value, int)
         
 
+class PostgresTestCase(unittest.TestCase):
+    
+    @classmethod
+    def setUpClass(cls):
+        cls.db_string = os.getenv('TEST_DB_URL')
+        print(cls.db_string)
+        
+    @classmethod
+    def tearDownClass(cls):
+        cls.db_string = None
+        
+        
+        
 if __name__ == '__main__':
     unittest.main()

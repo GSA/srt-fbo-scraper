@@ -332,13 +332,15 @@ class PostgresTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.db_string = os.getenv('TEST_DB_URL')
-        print(cls.db_string)
         
     @classmethod
     def tearDownClass(cls):
         cls.db_string = None
         
-        
+    def test_db_string(self):
+       db = PostgresTestCase.db_string
+       print(db)
+       self.assertEqual(db,"postgres://circleci@localhost:5432/smartie_test?sslmode=disable")
         
 if __name__ == '__main__':
     unittest.main()

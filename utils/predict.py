@@ -89,7 +89,7 @@ class Predict():
                 continue
             else:
                 for notice in notices:
-                    notice['noncompliant'] = 1 #noncompliant until proven otherwise
+                    notice['compliant'] = 0 #noncompliant until proven otherwise
                     if 'attachments' in notice:
                         attachments = notice['attachments']
                         compliant_counter = 0
@@ -97,12 +97,12 @@ class Predict():
                             text = attachment['text']
                             normalized_text = [Predict.transform_text(text)]
                             pred = int(pickled_model.predict(normalized_text)[0])
-                            compliant_counter += 1 if pred == 0 else 0
+                            compliant_counter += 1 if pred == 1 else 0
                             dec_func = pickled_model.decision_function(normalized_text)[0]
                             decision_boundary = float(abs(dec_func))
                             attachment['prediction'] = pred
                             attachment['decision_boundary'] = decision_boundary
-                        notice['noncompliant'] = 0 if compliant_counter > 0 else 1
+                        notice['compliant'] = 0 if compliant_counter == 0 else 1
         
         return json_data
 

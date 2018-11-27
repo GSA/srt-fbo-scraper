@@ -320,11 +320,11 @@ class PredictTestCase(unittest.TestCase):
         prediction = json_data['PRESOL'][0]['attachments'][0]['prediction']
         self.assertIsInstance(prediction, int)
 
-    def test_insert_predictions_noncompliant_insert(self):
+    def test_insert_predictions_compliant_insert(self):
         json_data = self.predict.insert_predictions()
         notice = json_data['PRESOL'][0]
-        noncompliant_value = notice['noncompliant']
-        self.assertIsInstance(noncompliant_value, int)
+        compliant_value = notice['compliant']
+        self.assertIsInstance(compliant_value, int)
         
 
 if __name__ == '__main__':

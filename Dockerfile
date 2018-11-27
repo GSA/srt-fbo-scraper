@@ -20,7 +20,9 @@ RUN apt-get update && apt-get install -y \
     libxslt1-dev \
     make \
     musl-dev \
+    netcat \
     poppler-utils \
+    postgresql-common \
     pstotext \
     python-dev \
     python-pip \

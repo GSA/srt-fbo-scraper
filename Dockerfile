@@ -21,6 +21,7 @@ RUN apt-get update && apt-get install -y \
     make \
     musl-dev \
     poppler-utils \
+    postgresql-common \
     pstotext \
     python-dev \
     python-pip \

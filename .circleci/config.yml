@@ -12,7 +12,7 @@ jobs:
       - run:
           name: Waiting for Postgres to be ready
           command: |
-            for i in `seq 1 10`;
+            for i in `seq 1 50`;
             do
               nc -z localhost 5432 && echo Success && exit 0
               echo -n .

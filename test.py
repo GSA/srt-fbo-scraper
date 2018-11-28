@@ -1,7 +1,7 @@
 import unittest
 import os
 from utils.fbo_nightly_scraper import NightlyFBONotices
-from fixtures import nightly_file, json_str, filtered_json_str, nightly_data, updated_nightly_data
+from fixtures import nightly_file, json_str, filtered_json_str, nightly_data, updated_nightly_data,predicted_nightly_data
 from utils.get_fbo_attachments import FboAttachments
 from utils.predict import Predict
 from fpdf import FPDF
@@ -9,6 +9,7 @@ from docx import Document
 from bs4 import BeautifulSoup
 import requests
 import httpretty
+from utils.db.db import DataAccessLayer
 
 
 def exceptionCallback(request, uri, headers):
@@ -332,15 +333,20 @@ class PostgresTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.db_string = os.getenv('TEST_DB_URL')
+        cls.db = DataAccessLayer(db_string=cls.db_string)
         
     @classmethod
     def tearDownClass(cls):
         cls.db_string = None
         
     def test_db_string(self):
-       db = PostgresTestCase.db_string
-       print(db)
-       self.assertEqual(db,"postgres://circleci@localhost:5432/smartie_test?sslmode=disable")
+       db_name = PostgresTestCase.db_string
+       self.assertEqual(db_name,"postgres://circleci@localhost:5432/smartie_test?sslmode=disable")
+     
+    def test_db_insertion(self):
+        PostgresTestCase.db.add_json_nightly_file_to_postgres(predicted_nightly_data)
+        notice_id = PostgresTestCase.db.query_notice
+        self.assertEqual(notice_id,'PRESOL')
         
 if __name__ == '__main__':
     unittest.main()

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import psycopg2 , json
-from sqlalchemy import create_engine, ForeignKeyConstraint, UniqueConstraint, func
+from sqlalchemy import create_engine, ForeignKeyConstraint, UniqueConstraint, func, case
 #from sqlalchemy_utils import database_exists, create_database
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey, Table, Text, \
@@ -89,7 +89,7 @@ class DataAccessLayer:
                 postgres_data = Notice(notice_data=json.dumps(notice_data),notice_type_id=noticeID,date=current_time,compliant=compliant)
                 try:
                     for attachment in attachment_data:
-                        postgres_attachment =  Attachment(prediction=attachment['prediction'],decision_boundary=attachment['decision_boundary'],attachment_url = attachment['url'],attachment_text=attachment['text'],validation=attachment['validation'])
+                        postgres_attachment =  Attachment(prediction=attachment['prediction'],decision_boundary=attachment['decision_boundary'],attachment_url = attachment['url'],attachment_text=attachment['text'],validation=attachment['validation'],trained=attachment['trained'])
                         postgres_data.attachments.append(postgres_attachment)
                 except:
                     pass # we should log the errors when it acually fails
@@ -119,7 +119,7 @@ class DataAccessLayer:
          return int(total)
 
     def get_trained_amount(self):
-        sum_of_trained = self.s.query(func.sum(Models.amount_trained))
+        sum_of_trained = self.s.query(func.sum(case([(Attachment.trained == True, 1)], else_=0)))
         total = sum_of_trained.scalar()
         return int(total) 
      
@@ -132,5 +132,20 @@ class DataAccessLayer:
             return 0
    
     def query_notice(self,notice):
+        #'''need to build out'''
         notice_ID = self.s.query(NoticeType.notice_type).filter(NoticeType.notice_type==notice).first()
         return notice_ID
+    
+    def get_complaint_amount(self):
+        sum_of_compliant = self.s.query(func.sum(Notice.compliant))
+        total = sum_of_compliant.scalar()
+        return int(total) 
+     
+    def query_model(self,model):
+        #'''need to build out'''
+        model = self.s.query(Models.model_type).filter(Models.model_type==model).first()
+        return model
+        
+
+
+

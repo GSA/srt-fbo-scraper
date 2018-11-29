@@ -334,6 +334,8 @@ class PostgresTestCase(unittest.TestCase):
     def setUpClass(cls):
         cls.db_string = os.getenv('TEST_DB_URL')
         cls.db = DataAccessLayer(db_string=cls.db_string)
+        cls.db.add_json_nightly_file_to_postgres(predicted_nightly_data.predicted_nightly_data)
+        cls.db.add_model_data(model='test')
         
     @classmethod
     def tearDownClass(cls):
@@ -343,11 +345,22 @@ class PostgresTestCase(unittest.TestCase):
        db_name = PostgresTestCase.db_string
        self.assertEqual(db_name,"postgres://circleci@localhost:5432/smartie-test?sslmode=disable")
     ''' 
-    def test_notice_type_insertion(self):
-        PostgresTestCase.db.add_json_nightly_file_to_postgres(predicted_nightly_data.predicted_nightly_data)
+    def test_notice_type_insertion(self):      
         notice = PostgresTestCase.db.query_notice(notice="PRESOL")
         print(notice[0])
         self.assertEqual(notice[0],"PRESOL")
+    
+    def test_notice_insertion(self):
+        compliant_sum = PostgresTestCase.db.get_complaint_amount()
+        self.assertEqual(compliant_sum,1)
+    
+    def test_attachment_insertion(self):
+        trained_count = PostgresTestCase.db.get_trained_amount()
+        self.assertEqual(trained_count,6)
+    
+    def test_model_insertion(self):
+        model = PostgresTestCase.db.query_model(model='test')
+        self.assertEqual(model[0],"test")
         
 if __name__ == '__main__':
     unittest.main()

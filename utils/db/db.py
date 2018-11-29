@@ -36,7 +36,7 @@ class Notice(Base):
     notice_type_id = Column(Integer, ForeignKey('notice_type.id'))
     notice_data = Column(JSONB)
     date = Column(Date)
-    noncompliant = Column(Integer)
+    compliant = Column(Integer)
     #attachment_id = Column(Integer, ForeignKey('attachment.id'))
     # specify a bidirectional one-to-many relationship with the parent table, NoticeType
     #notice_types = relationship("NoticeType", back_populates="notices")
@@ -85,8 +85,8 @@ class DataAccessLayer:
                     attachment_data = notice_data.pop('attachments')
                 except KeyError:
                     pass
-                non_compliant =notice_data.pop('noncompliant')
-                postgres_data = Notice(notice_data=json.dumps(notice_data),notice_type_id=noticeID,date=current_time,noncompliant=non_compliant)
+                compliant =notice_data.pop('compliant')
+                postgres_data = Notice(notice_data=json.dumps(notice_data),notice_type_id=noticeID,date=current_time,compliant=compliant)
                 try:
                     for attachment in attachment_data:
                         postgres_attachment =  Attachment(prediction=attachment['prediction'],decision_boundary=attachment['decision_boundary'],attachment_url = attachment['url'],attachment_text=attachment['text'],validation=attachment['validation'])

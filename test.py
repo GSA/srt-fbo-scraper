@@ -338,11 +338,11 @@ class PostgresTestCase(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.db_string = None
-        
+    '''   
     def test_db_string(self):
        db_name = PostgresTestCase.db_string
        self.assertEqual(db_name,"postgres://circleci@localhost:5432/smartie-test?sslmode=disable")
-     
+    ''' 
     def test_notice_type_insertion(self):
         PostgresTestCase.db.add_json_nightly_file_to_postgres(predicted_nightly_data.predicted_nightly_data)
         notice = PostgresTestCase.db.query_notice(notice="PRESOL")

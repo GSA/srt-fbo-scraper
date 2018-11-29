@@ -343,8 +343,8 @@ class PostgresTestCase(unittest.TestCase):
        db_name = PostgresTestCase.db_string
        self.assertEqual(db_name,"postgres://circleci@localhost:5432/smartie-test?sslmode=disable")
      
-    def test_db_insertion(self):
-        PostgresTestCase.db.add_json_nightly_file_to_postgres(predicted_nightly_data)
+    def test_notice_type_insertion(self):
+        PostgresTestCase.db.add_json_nightly_file_to_postgres(predicted_nightly_data.predicted_nightly_data)
         notice_id = PostgresTestCase.db.query_notice
         self.assertEqual(notice_id,'PRESOL')
         

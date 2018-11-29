@@ -89,7 +89,7 @@ class DataAccessLayer:
                 postgres_data = Notice(notice_data=json.dumps(notice_data),notice_type_id=noticeID,date=current_time,compliant=compliant)
                 try:
                     for attachment in attachment_data:
-                        postgres_attachment =  Attachment(prediction=attachment['prediction'],decision_boundary=attachment['decision_boundary'],attachment_url = attachment['url'],attachment_text=attachment['text'],validation=attachment['validation'])
+                        postgres_attachment =  Attachment(prediction=attachment['prediction'],decision_boundary=attachment['decision_boundary'],attachment_url = attachment['url'],attachment_text=attachment['text'],validation=attachment['validation'],trained=attachment['trained'])
                         postgres_data.attachments.append(postgres_attachment)
                 except:
                     pass # we should log the errors when it acually fails

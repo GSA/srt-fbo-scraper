@@ -345,8 +345,8 @@ class PostgresTestCase(unittest.TestCase):
      
     def test_notice_type_insertion(self):
         PostgresTestCase.db.add_json_nightly_file_to_postgres(predicted_nightly_data.predicted_nightly_data)
-        notice_id = PostgresTestCase.db.query_notice
-        self.assertEqual(notice_id,'PRESOL')
+        notice = PostgresTestCase.db.query_notice(notice="PRESOL")
+        self.assertEqual(notice,'PRESOL')
         
 if __name__ == '__main__':
     unittest.main()

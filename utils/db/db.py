@@ -132,5 +132,5 @@ class DataAccessLayer:
             return 0
    
     def query_notice(self,notice):
-        noticeID = self.s.query(NoticeType.id).filter(NoticeType.notice_type==notice).first()
+        noticeID = self.s.query(NoticeType.notice_type).filter(NoticeType.notice_type==notice).first()
         return noticeID

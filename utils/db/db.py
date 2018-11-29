@@ -133,5 +133,5 @@ class DataAccessLayer:
    
     def query_notice(self,notice):
         notice_ID = self.s.query(NoticeType.notice_type).filter(NoticeType.notice_type==notice).first()
-        notice_value = notice_ID.scalar()
-        return notice_value
+        notice_ID2 = self.s.query(NoticeType.notice_type).filter(NoticeType.notice_type==notice).one()
+        return notice_ID,notice_ID2

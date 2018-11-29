@@ -6,12 +6,14 @@ import os
 #from datetime import datetime
 
 def get_db_url():
-	if os.getenv('VCAP_APPLICATION'):
-		db_string = os.getenv('DATABASE_URL')
-	else:
-		print("bind application to database")
-	output_str = db_string.replace('\postgresql', 'postgresql+psycopg2')
-	return output_str
+    if os.getenv('VCAP_APPLICATION'):
+        db_string = os.getenv('DATABASE_URL')
+    elif os.getenv('TEST_DB_URL') is not None:
+        db_string = os.getenv('TEST_DB_URL')
+    else:
+        print("bind application to database")
+    output_str = db_string.replace('\postgresql', 'postgresql+psycopg2')
+    return output_str
 
 
 

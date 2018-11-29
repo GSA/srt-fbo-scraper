@@ -12,6 +12,8 @@ from utils.db import db_utils
 
 
 db_string = db_utils.get_db_url()
+
+
 now = datetime.now()
 current_time = now.strftime("%Y-%m-%d")
 
@@ -34,7 +36,7 @@ class Notice(Base):
     notice_type_id = Column(Integer, ForeignKey('notice_type.id'))
     notice_data = Column(JSONB)
     date = Column(Date)
-    noncompliant = Column(Integer)
+    compliant = Column(Integer)
     #attachment_id = Column(Integer, ForeignKey('attachment.id'))
     # specify a bidirectional one-to-many relationship with the parent table, NoticeType
     #notice_types = relationship("NoticeType", back_populates="notices")
@@ -64,7 +66,7 @@ class Models(Base):
     amount_trained = Column(Integer)
 
 class DataAccessLayer:
-    def __init__(self):
+    def __init__(self,db_string=db_string):
         self.engine = create_engine(db_string)
         session = sessionmaker()
         session.configure(bind=self.engine)
@@ -83,11 +85,11 @@ class DataAccessLayer:
                     attachment_data = notice_data.pop('attachments')
                 except KeyError:
                     pass
-                non_compliant =notice_data.pop('noncompliant')
-                postgres_data = Notice(notice_data=json.dumps(notice_data),notice_type_id=noticeID,date=current_time,noncompliant=non_compliant)
+                compliant =notice_data.pop('compliant')
+                postgres_data = Notice(notice_data=json.dumps(notice_data),notice_type_id=noticeID,date=current_time,compliant=compliant)
                 try:
                     for attachment in attachment_data:
-                        postgres_attachment =  Attachment(prediction=attachment['prediction'],decision_boundary=attachment['decision_boundary'],attachment_url = attachment['url'],attachment_text=attachment['text'])
+                        postgres_attachment =  Attachment(prediction=attachment['prediction'],decision_boundary=attachment['decision_boundary'],attachment_url = attachment['url'],attachment_text=attachment['text'],validation=attachment['validation'])
                         postgres_data.attachments.append(postgres_attachment)
                 except:
                     pass # we should log the errors when it acually fails
@@ -96,9 +98,9 @@ class DataAccessLayer:
         self.s.commit()
         
     def _add_notice_db(self):
-       for notice in [ 'MOD','COMBINE','PRESOL','AMDCSS']:
+       for notice in [ 'MOD','COMBINE','PRESOL','AMDCSS','TRAIN']:
            try:
-               if self.s.query(Notice_type.notice).filter(Notice_type.id=notice).one_or_none() is None:
+               if self.s.query(NoticeType.notice_type).filter(NoticeType.notice_type==notice).one_or_none() is None:
                    n = NoticeType(notice_type=notice)
                    self.s.add(n)
                    self.s.commit()
@@ -113,11 +115,13 @@ class DataAccessLayer:
         
     def get_validation_count(self):
          count = self.s.query(func.count(Attachment.validation))
-         return count
+         total = count.scalar()
+         return int(total)
 
     def get_trained_amount(self):
         sum_of_trained = self.s.query(func.sum(Models.amount_trained))
-        return sum_of_trained 
+        total = sum_of_trained.scalar()
+        return int(total) 
      
     def revalidation_check(self):
         count_of_total_validated = self.get_validation_count()
@@ -127,3 +131,6 @@ class DataAccessLayer:
         else:
             return 0
    
+    def query_notice(self,notice):
+        notice_ID = self.s.query(NoticeType.notice_type).filter(NoticeType.notice_type==notice).first()
+        return notice_ID

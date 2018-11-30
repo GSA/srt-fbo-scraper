@@ -335,7 +335,7 @@ class PostgresTestCase(unittest.TestCase):
         cls.db_string = os.getenv('TEST_DB_URL')
         cls.db = DataAccessLayer(db_string=cls.db_string)
         cls.db.add_json_nightly_file_to_postgres(predicted_nightly_data.predicted_nightly_data)
-        cls.db.add_model_data(model='test')
+        cls.db.add_model_data(estimator='SGDClassifier', best_params = {'param':'value'})
         
     @classmethod
     def tearDownClass(cls):
@@ -359,8 +359,8 @@ class PostgresTestCase(unittest.TestCase):
         self.assertEqual(trained_count,6)
     
     def test_model_insertion(self):
-        model = PostgresTestCase.db.query_model(model='test')
-        self.assertEqual(model[0],"test")
+        model = PostgresTestCase.db.query_model(estimator='SGDClassifier')
+        self.assertEqual(model[0],"SGDClassifier")
         
 if __name__ == '__main__':
     unittest.main()

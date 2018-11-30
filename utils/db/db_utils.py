@@ -8,7 +8,7 @@ import os
 def get_db_url():
     if os.getenv('VCAP_APPLICATION'):
         db_string = os.getenv('DATABASE_URL')
-    elif os.getenv('TEST_DB_URL') is not None:
+    elif os.getenv('TEST_DB_URL'):
         db_string = os.getenv('TEST_DB_URL')
     else:
         print("bind application to database")

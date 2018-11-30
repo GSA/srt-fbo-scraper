@@ -1,23 +1,17 @@
 # -*- coding: utf-8 -*-
-import psycopg2 , json
+import json
 from sqlalchemy import create_engine, ForeignKeyConstraint, UniqueConstraint, func, case
 #from sqlalchemy_utils import database_exists, create_database
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey, Table, Text, \
-                       Date, Boolean, Sequence, DateTime
-from sqlalchemy.types import ARRAY
+                       DateTime, Boolean
 from sqlalchemy.orm import relationship, sessionmaker
-from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy.dialects.postgresql import JSONB, ARRAY
 from datetime import datetime
 from utils.db import db_utils
 
 
 db_string = db_utils.get_db_url()
-
-
-now = datetime.now()
-current_time = now.strftime("%Y-%m-%d")
-
 
 Base = declarative_base()
 
@@ -25,8 +19,7 @@ class NoticeType(Base):
     __tablename__ = 'notice_type'
     
     id = Column(Integer, primary_key = True)
-    notice_type = Column(String(50))
-    # specify a bidirectional one-to-many relationship with the child table, Notice
+    notice_type = Column(String(50), index = True)
     notices = relationship("Notice")
     
 
@@ -35,37 +28,36 @@ class Notice(Base):
     
     id = Column(Integer, primary_key=True)
     notice_type_id = Column(Integer, ForeignKey('notice_type.id'))
+    notice_number = Column(String(150), index = True)
+    date = Column(DateTime, onupdate=datetime.now)
     notice_data = Column(JSONB)
-    date = Column(Date)
     compliant = Column(Integer)
     action = Column(ARRAY(String(100), dimensions=2))
-    #attachment_id = Column(Integer, ForeignKey('attachment.id'))
-    # specify a bidirectional one-to-many relationship with the parent table, NoticeType
-    #notice_types = relationship("NoticeType", back_populates="notices")
-    attachments = relationship("Attachment", back_populates="notice_data")
+    attachments = relationship("Attachment", back_populates="notice")
     
 
 class Attachment(Base):
     __tablename__ = 'attachment'
     
     id = Column(Integer, primary_key = True)
-    #validation_id = Column(Integer, ForeignKey('respondent.id'))
     notice_id = Column(Integer, ForeignKey('notice.id'))
-    #notice_type_id = Column(Integer, ForeignKey('question.id'))   
+    notice_type_id = Column(Integer, ForeignKey('notice_type.id'))   
+    attachment_text = Column(Text)
     prediction = Column(Integer)
     decision_boundary = Column(Integer)
-    attachment_text = Column(Text)
-    attachment_url = Column(Text)
     validation = Column(Integer, nullable=True)
+    attachment_url = Column(Text)
     trained = Column(Boolean, nullable=True)
-    notice_data = relationship("Notice", back_populates="attachments")
+    notice = relationship("Notice", back_populates="attachments")
 
-class Models(Base):
-    __tablename__ = 'models'
+class Model(Base):
+    __tablename__ = 'model'
     
     id = Column(Integer, primary_key = True)
-    model_type = Column(String(50))
-    amount_trained = Column(Integer)
+    estimator = Column(String(50))
+    params = Column(JSONB)
+    create_date = Column(DateTime, onupdate=datetime.now)
+    
 
 class DataAccessLayer:
     def __init__(self,db_string=db_string):
@@ -77,41 +69,60 @@ class DataAccessLayer:
 
 
     def add_json_nightly_file_to_postgres(self,jsonFile):
-        self._add_notice_db()
-        for notice in jsonFile:
-            noticeID = self.s.query(NoticeType.id).filter(NoticeType.notice_type==notice).first()
-            #n = NoticeType(notice_type=notice)
-            for x in range(len(jsonFile[notice])):
-                notice_data = jsonFile[notice][x]
+        self._add_notice_types()
+        for notice_type in jsonFile:
+            notice_type_id = self.fetch_notice_type_id(notice_type)
+            for x in range(len(jsonFile[notice_type])):
+                notice_data = jsonFile[notice_type][x]
                 try:
                     attachment_data = notice_data.pop('attachments')
                 except KeyError:
                     pass
-                compliant =notice_data.pop('compliant')
-                postgres_data = Notice(notice_data=json.dumps(notice_data),notice_type_id=noticeID,date=current_time,compliant=compliant)
+                compliant = notice_data.pop('compliant')
+                notice_number = notice_data.pop('solnbr')
+                notice_id = self.fetch_notice_id(notice_number)
+                if notice_id:
+                    #TODO: fetch the notice based on this ID and update its attribtues
+                    pass
+                else:
+                    postgres_data = Notice(notice_number = notice_number,
+                                           notice_data = json.dumps(notice_data),
+                                           notice_type_id = notice_type_id,
+                                           compliant = compliant)
                 try:
                     for attachment in attachment_data:
-                        postgres_attachment =  Attachment(prediction=attachment['prediction'],decision_boundary=attachment['decision_boundary'],attachment_url = attachment['url'],attachment_text=attachment['text'],validation=attachment['validation'],trained=attachment['trained'])
+                        postgres_attachment =  Attachment(prediction = attachment['prediction'],
+                                                          decision_boundary = attachment['decision_boundary'],
+                                                          attachment_url = attachment['url'],
+                                                          attachment_text = attachment['text'],
+                                                          validation = attachment['validation'],
+                                                          trained = attachment['trained'])
                         postgres_data.attachments.append(postgres_attachment)
                 except:
-                    pass # we should log the errors when it acually fails
+                    #TODO: log the error
+                    pass 
                 self.s.add(postgres_data)
                 self.s.flush()
         self.s.commit()
         
-    def _add_notice_db(self):
-       for notice in [ 'MOD','COMBINE','PRESOL','AMDCSS','TRAIN']:
-           try:
-               if self.s.query(NoticeType.notice_type).filter(NoticeType.notice_type==notice).one_or_none() is None:
-                   n = NoticeType(notice_type=notice)
-                   self.s.add(n)
-                   self.s.commit()
-           except:
-               print("appending data into database")
+    def _add_notice_types(self):
+        for notice_type in ['MOD','COMBINE','PRESOL','AMDCSS','TRAIN']:
+            notice_type_id = self.fetch_notice_type_id(notice_type)
+            if not notice_type_id:
+                n = NoticeType(notice_type=notice_type)
+                self.s.add(n)
+                self.s.commit()
            
-    def add_model_data(self,model):
-        count = self.s.query(func.count(Attachment.validation))
-        postgres_data = Models(model_type=model,amount_trained=count)
+    def add_model_data(self, estimator, best_params):
+        '''
+        Add model to db.
+
+        Parameters:
+            estimator (str): name of the classifier
+            best_params (dict): dict of the parameters (best_params_ attribute of classifier instance)
+        '''
+        postgres_data = Model(estimator=estimator,
+                              params=best_params)
         self.s.add(postgres_data)
         self.s.commit()
         
@@ -147,6 +158,38 @@ class DataAccessLayer:
         #'''need to build out'''
         model = self.s.query(Models.model_type).filter(Models.model_type==model).first()
         return model
+
+    def fetch_notice_id(self, notice_number):
+        '''
+        Fetch the notice id for a given notice_number.
+
+        Parameters:
+            notice_number (str): a solicitation number from a notice
+
+        Returns:
+            None or notice_id (int): if notice_id, this is the PK for the notice
+        '''
+        try:
+            notice_id = self.s.query(Notice.id).filter(Notice.notice_number==notice_number).first().id
+        except AttributeError:
+            return
+        return notice_id
+
+    def fetch_notice_type_id(self, notice_type):
+        '''
+        Fetch the notice id for a given notice_number.
+
+        Parameters:
+            notice_number (str): a solicitation number from a notice
+
+        Returns:
+            None or notice_id (int): if notice_id, this is the PK for the notice
+        '''
+        try:
+            notice_type_id = self.s.query(NoticeType.id).filter(NoticeType.notice_type==notice_type).first().id
+        except AttributeError:
+            return
+        return notice_type_id
         
 
 

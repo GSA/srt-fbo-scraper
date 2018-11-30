@@ -359,8 +359,8 @@ class PostgresTestCase(unittest.TestCase):
         self.assertEqual(trained_count,6)
     
     def test_model_insertion(self):
-        model = PostgresTestCase.db.query_model(model='test')
-        self.assertEqual(model[0],"test")
+        model = PostgresTestCase.db.query_model(estimator='estimator')
+        self.assertEqual(model[0],"estimator")
         
 if __name__ == '__main__':
     unittest.main()

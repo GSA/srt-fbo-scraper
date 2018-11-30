@@ -335,7 +335,7 @@ class PostgresTestCase(unittest.TestCase):
         cls.db_string = os.getenv('TEST_DB_URL')
         cls.db = DataAccessLayer(db_string=cls.db_string)
         cls.db.add_json_nightly_file_to_postgres(predicted_nightly_data.predicted_nightly_data)
-        cls.db.add_model_data(model='test')
+        cls.db.add_model_data(estimator='SGDClassifier', best_params = {'param':'value'})
         
     @classmethod
     def tearDownClass(cls):

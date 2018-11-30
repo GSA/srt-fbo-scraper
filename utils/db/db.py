@@ -5,6 +5,7 @@ from sqlalchemy import create_engine, ForeignKeyConstraint, UniqueConstraint, fu
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey, Table, Text, \
                        Date, Boolean, Sequence, DateTime
+from sqlalchemy.types import ARRAY
 from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy.dialects.postgresql import JSONB
 from datetime import datetime
@@ -37,6 +38,7 @@ class Notice(Base):
     notice_data = Column(JSONB)
     date = Column(Date)
     compliant = Column(Integer)
+    action = Column(ARRAY(String(100), dimensions=2))
     #attachment_id = Column(Integer, ForeignKey('attachment.id'))
     # specify a bidirectional one-to-many relationship with the parent table, NoticeType
     #notice_types = relationship("NoticeType", back_populates="notices")

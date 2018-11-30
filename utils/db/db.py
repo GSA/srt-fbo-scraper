@@ -121,8 +121,8 @@ class DataAccessLayer:
             estimator (str): name of the classifier
             best_params (dict): dict of the parameters (best_params_ attribute of classifier instance)
         '''
-        postgres_data = Model(estimator=estimator,
-                              params=best_params)
+        postgres_data = Model(estimator = estimator,
+                              params = best_params)
         self.s.add(postgres_data)
         self.s.commit()
         
@@ -154,9 +154,8 @@ class DataAccessLayer:
         total = sum_of_compliant.scalar()
         return int(total) 
      
-    def query_model(self,model):
-        #'''need to build out'''
-        model = self.s.query(Models.model_type).filter(Models.model_type==model).first()
+    def query_model(self, estimator):
+        model = self.s.query(Model.estimator).filter(Model.estimator==estimator).first()
         return model
 
     def fetch_notice_id(self, notice_number):

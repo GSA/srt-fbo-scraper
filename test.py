@@ -364,7 +364,7 @@ class PostgresTestCase(unittest.TestCase):
         
     def test_relationships(self):
         notice_ID = PostgresTestCase.db.test_relationships(notice='PRESOL')
-        self.assertEqual(notice_ID,1)
+        self.assertEqual(notice_ID[0],1)
         
         
 if __name__ == '__main__':

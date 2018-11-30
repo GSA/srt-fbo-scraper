@@ -192,5 +192,5 @@ class DataAccessLayer:
         
 
     def test_relationships(self,notice):
-        notice_id = self.s.query(Notice.id).filter(Notice.id==Attachment.notice_id, NoticeType.notice_type==notice).first().id()
+        notice_id = self.s.query(Notice.id).filter(Notice.id==Attachment.notice_id, NoticeType.notice_type==notice).first()
         return notice_id

@@ -362,5 +362,10 @@ class PostgresTestCase(unittest.TestCase):
         model = PostgresTestCase.db.query_model(estimator='SGDClassifier')
         self.assertEqual(model[0],"SGDClassifier")
         
+    def test_relationships(self):
+        notice_ID = PostgresTestCase.db.test_relationships(notice='PRESOL')
+        self.assertEqual(notice_ID[0],1)
+        
+        
 if __name__ == '__main__':
     unittest.main()

@@ -81,22 +81,11 @@ class DataAccessLayer:
                 agency = notice_data.pop('agency')
                 compliant = notice_data.pop('compliant')
                 notice_number = notice_data.pop('solnbr')
-                notice_id = self.fetch_notice_id(notice_number)
-                if notice_id:
-                    notice_data_to_insert = {'notice_number': notice_number,
-                                             'agency': agency,
-                                             'notice_data': json.dumps(notice_data),
-                                             'notice_type_id': notice_type_id,
-                                             'compliant': compliant}
-                    notice  = self.fetch_notice_by_id(notice_id)
-                    for key, value in notice_data_to_insert.items():
-                        setattr(notice, key, value)
-                else:
-                    postgres_data = Notice(notice_number = notice_number,
-                                           agency = agency,
-                                           notice_data = json.dumps(notice_data),
-                                           notice_type_id = notice_type_id,
-                                           compliant = compliant)
+                postgres_data = Notice(notice_number = notice_number,
+                                        agency = agency,
+                                        notice_data = json.dumps(notice_data),
+                                        notice_type_id = notice_type_id,
+                                        compliant = compliant)
                 try:
                     for attachment in attachment_data:
                         postgres_attachment =  Attachment(prediction = attachment['prediction'],

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import json
 from sqlalchemy import create_engine, ForeignKeyConstraint, UniqueConstraint, func, case
-#from sqlalchemy_utils import database_exists, create_database
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey, Table, Text, \
                        DateTime, Boolean
@@ -9,7 +8,6 @@ from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy.dialects.postgresql import JSONB, ARRAY
 from datetime import datetime
 from utils.db import db_utils
-
 
 db_string = db_utils.get_db_url()
 
@@ -29,6 +27,7 @@ class Notice(Base):
     id = Column(Integer, primary_key=True)
     notice_type_id = Column(Integer, ForeignKey('notice_type.id'))
     notice_number = Column(String(150), index = True)
+    agency = Column(String(150))
     date = Column(DateTime, onupdate=datetime.now)
     notice_data = Column(JSONB)
     compliant = Column(Integer)
@@ -49,6 +48,7 @@ class Attachment(Base):
     attachment_url = Column(Text)
     trained = Column(Boolean, nullable=True)
     notice = relationship("Notice", back_populates="attachments")
+
 
 class Model(Base):
     __tablename__ = 'model'
@@ -78,30 +78,26 @@ class DataAccessLayer:
                     attachment_data = notice_data.pop('attachments')
                 except KeyError:
                     pass
+                agency = notice_data.pop('agency')
                 compliant = notice_data.pop('compliant')
                 notice_number = notice_data.pop('solnbr')
-                notice_id = self.fetch_notice_id(notice_number)
-                if notice_id:
-                    #TODO: fetch the notice based on this ID and update its attribtues
-                    pass
-                else:
-                    postgres_data = Notice(notice_number = notice_number,
-                                           notice_data = json.dumps(notice_data),
-                                           notice_type_id = notice_type_id,
-                                           compliant = compliant)
+                notice = Notice(notice_number = notice_number,
+                                        agency = agency,
+                                        notice_data = json.dumps(notice_data),
+                                        notice_type_id = notice_type_id,
+                                        compliant = compliant)
                 try:
-                    for attachment in attachment_data:
-                        postgres_attachment =  Attachment(prediction = attachment['prediction'],
-                                                          decision_boundary = attachment['decision_boundary'],
-                                                          attachment_url = attachment['url'],
-                                                          attachment_text = attachment['text'],
-                                                          validation = attachment['validation'],
-                                                          trained = attachment['trained'])
-                        postgres_data.attachments.append(postgres_attachment)
+                    for doc in attachment_data:
+                        attachment =  Attachment(prediction = doc['prediction'],
+                                                 decision_boundary = doc['decision_boundary'],
+                                                 attachment_url = doc['url'],
+                                                 attachment_text = doc['text'],
+                                                 validation = doc['validation'],
+                                                 trained = doc['trained'])
+                        notice.attachments.append(attachment)
                 except:
-                    #TODO: log the error
                     pass 
-                self.s.add(postgres_data)
+                self.s.add(notice)
                 self.s.flush()
         self.s.commit()
         
@@ -121,9 +117,9 @@ class DataAccessLayer:
             estimator (str): name of the classifier
             best_params (dict): dict of the parameters (best_params_ attribute of classifier instance)
         '''
-        postgres_data = Model(estimator = estimator,
-                              params = best_params)
-        self.s.add(postgres_data)
+        model = Model(estimator = estimator,
+                      params = best_params)
+        self.s.add(model)
         self.s.commit()
         
     def get_validation_count(self):
@@ -189,6 +185,22 @@ class DataAccessLayer:
         except AttributeError:
             return
         return notice_type_id
+
+    def fetch_notice_by_id(self, notice_id):
+        '''
+        Fetch a notice given a notice_id.
+
+        Parameters:
+            notice_id (int): the PK id for a notice
+
+        Returns:
+            None or notice (SQL Alchemy Object)
+        '''
+        try:
+            notice = self.s.query(Notice).get(notice_id)
+        except AttributeError:
+            return
+        return notice
         
 
     def test_relationships(self,notice):

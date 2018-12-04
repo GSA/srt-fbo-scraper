@@ -81,24 +81,24 @@ class DataAccessLayer:
                 agency = notice_data.pop('agency')
                 compliant = notice_data.pop('compliant')
                 notice_number = notice_data.pop('solnbr')
-                postgres_data = Notice(notice_number = notice_number,
+                notice = Notice(notice_number = notice_number,
                                         agency = agency,
                                         notice_data = json.dumps(notice_data),
                                         notice_type_id = notice_type_id,
                                         compliant = compliant)
                 try:
-                    for attachment in attachment_data:
-                        postgres_attachment =  Attachment(prediction = attachment['prediction'],
-                                                          decision_boundary = attachment['decision_boundary'],
-                                                          attachment_url = attachment['url'],
-                                                          attachment_text = attachment['text'],
-                                                          validation = attachment['validation'],
-                                                          trained = attachment['trained'])
-                        postgres_data.attachments.append(postgres_attachment)
+                    for doc in attachment_data:
+                        attachment =  Attachment(prediction = doc['prediction'],
+                                                          decision_boundary = doc['decision_boundary'],
+                                                          attachment_url = doc['url'],
+                                                          attachment_text = doc['text'],
+                                                          validation = doc['validation'],
+                                                          trained = doc['trained'])
+                        notice.attachments.append(attachment)
                 except:
                     #TODO: log the error
                     pass 
-                self.s.add(postgres_data)
+                self.s.add(notice)
                 self.s.flush()
         self.s.commit()
         
@@ -118,9 +118,9 @@ class DataAccessLayer:
             estimator (str): name of the classifier
             best_params (dict): dict of the parameters (best_params_ attribute of classifier instance)
         '''
-        postgres_data = Model(estimator = estimator,
-                              params = best_params)
-        self.s.add(postgres_data)
+        model = Model(estimator = estimator,
+                      params = best_params)
+        self.s.add(model)
         self.s.commit()
         
     def get_validation_count(self):

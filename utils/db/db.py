@@ -89,14 +89,13 @@ class DataAccessLayer:
                 try:
                     for doc in attachment_data:
                         attachment =  Attachment(prediction = doc['prediction'],
-                                                          decision_boundary = doc['decision_boundary'],
-                                                          attachment_url = doc['url'],
-                                                          attachment_text = doc['text'],
-                                                          validation = doc['validation'],
-                                                          trained = doc['trained'])
+                                                 decision_boundary = doc['decision_boundary'],
+                                                 attachment_url = doc['url'],
+                                                 attachment_text = doc['text'],
+                                                 validation = doc['validation'],
+                                                 trained = doc['trained'])
                         notice.attachments.append(attachment)
                 except:
-                    #TODO: log the error
                     pass 
                 self.s.add(notice)
                 self.s.flush()

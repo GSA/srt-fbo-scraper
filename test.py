@@ -10,7 +10,7 @@ from docx import Document
 from bs4 import BeautifulSoup
 import requests
 import httpretty
-from utils.db.db import Notice, NoticeType, Attachment, Model, association_table
+from utils.db.db import Notice, NoticeType, Attachment, Model
 from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, DataAccessLayer, clear_data
 from utils.db.db_utils import fetch_notice_type_id, insert_model, insert_notice_types
 

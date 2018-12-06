@@ -2,6 +2,7 @@ import os
 import json
 from contextlib import contextmanager
 from sqlalchemy import func, case
+from .db import Notice, NoticeType, Attachment, Model
 
 
 @contextmanager

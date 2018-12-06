@@ -12,7 +12,7 @@ import requests
 import httpretty
 from utils.db.db import Notice, NoticeType, Attachment, Model
 from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, DataAccessLayer, clear_data
-from utils.db.db_utils import fetch_notice_type_id, insert_model, insert_notice_types
+from utils.db.db_utils import fetch_notice_type_id, insert_model, insert_notice_types, retrain_check
 
 
 def exceptionCallback(request, uri, headers):
@@ -456,6 +456,13 @@ class PostgresTestCase(unittest.TestCase):
             result = len(notice_ids)
             expected = 2
             self.assertEqual(result, expected)
+
+    def test_retrain_check(self):
+        result = retrain_check(dal)
+        expected = 0
+        self.assertEqual(result, expected)
+
+
 
 if __name__ == '__main__':
     unittest.main()

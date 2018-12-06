@@ -118,8 +118,6 @@ def insert_updated_nightly_file(dal, updated_nightly_data_with_predictions):
             agency = notice_data.pop('agency')
             compliant = notice_data.pop('compliant')
             notice_number = notice_data.pop('solnbr')
-            with session_scope(dal) as s:
-                notice_type_obj = fetch_notice_type_by_id(notice_type_id, s)
             notice = db.Notice(notice_type_id = notice_type_id,
                                notice_number = notice_number,
                                agency = agency,
@@ -127,33 +125,30 @@ def insert_updated_nightly_file(dal, updated_nightly_data_with_predictions):
                                compliant = compliant)
             for doc in attachments:
                 attachment =  db.Attachment(prediction = doc['prediction'],
-                                           decision_boundary = doc['decision_boundary'],
-                                           attachment_url = doc['url'],
-                                           attachment_text = doc['text'],
-                                           validation = doc['validation'],
-                                           trained = doc['trained'])
+                                            decision_boundary = doc['decision_boundary'],
+                                            attachment_url = doc['url'],
+                                            attachment_text = doc['text'],
+                                            validation = doc['validation'],
+                                            trained = doc['trained'])
                 notice.attachments.append(attachment)
-            #notice.notice_types.append(notice_type_obj)
             with session_scope(dal) as s:
                 s.add(notice)                   
 
-def get_validation_count():
+def get_validation_count(dal):
     with session_scope(dal) as session:
         count = session.query(func.count(db.Attachment.validation))
-    total = count.scalar()
+        total = count.scalar()
     return int(total)
 
-def get_trained_amount():
+def get_trained_amount(dal):
     with session_scope(dal) as session:
-        sum_of_trained = session.query(func.sum(case([(db.Attachment.trained == True, 1)], else_=0)))
-    total = sum_of_trained.scalar()
+        sum_of_trained = session.query(func.sum(case([(db.Attachment.trained == True, 1)], else_ = 0)))
+        total = sum_of_trained.scalar()
     return int(total) 
     
-def revalidation_check():
-    with session_scope(dal) as session:
-        count_of_total_validated = get_validation_count()
-    with session_scope(dal) as session:
-        sum_of_trained = get_trained_amount()
+def retrain_check(dal):
+    count_of_total_validated = get_validation_count(dal)
+    sum_of_trained = get_trained_amount(dal)
     if (count_of_total_validated - sum_of_trained) > 1000:
         return 1
     else:
@@ -168,7 +163,6 @@ def get_complaint_amount(session):
     sum_of_compliant = session.query(func.sum(db.Notice.compliant))
     total = sum_of_compliant.scalar()
     return int(total) 
-    
 
 def fetch_notice_id(notice_number, session):
     '''
@@ -201,7 +195,6 @@ def fetch_notice_by_id(notice_id, session):
     except AttributeError:
         return
     return notice
-    
 
 def test_relationships(notice, session):
     notice_id = session.query(db.Notice.id).filter(db.Notice.id==db.Attachment.notice_id, 

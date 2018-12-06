@@ -1,7 +1,8 @@
 import unittest
 import os
 from utils.fbo_nightly_scraper import NightlyFBONotices
-from fixtures import nightly_file, json_str, filtered_json_str, nightly_data, updated_nightly_data,predicted_nightly_data
+from fixtures import nightly_file, json_str, filtered_json_str, nightly_data, updated_nightly_data
+from fixtures.predicted_nightly_data import predicted_nightly_data, predicted_nightly_data_day_two
 from utils.get_fbo_attachments import FboAttachments
 from utils.predict import Predict
 from fpdf import FPDF
@@ -9,7 +10,9 @@ from docx import Document
 from bs4 import BeautifulSoup
 import requests
 import httpretty
-from utils.db.db import DataAccessLayer
+from utils.db.db import Notice, NoticeType, Attachment, Model, association_table, DataAccessLayer
+from utils.db.db_utils import get_db_url, session_scope
+from utils.db.db_utils import fetch_notice_type_id, insert_updated_nightly_file
 
 
 def exceptionCallback(request, uri, headers):
@@ -332,40 +335,29 @@ class PostgresTestCase(unittest.TestCase):
     
     @classmethod
     def setUpClass(cls):
-        cls.db_string = os.getenv('TEST_DB_URL')
-        cls.db = DataAccessLayer(db_string=cls.db_string)
-        cls.db.add_json_nightly_file_to_postgres(predicted_nightly_data.predicted_nightly_data)
-        cls.db.add_model_data(estimator='SGDClassifier', best_params = {'param':'value'})
+        conn_string = get_db_url()
+        cls.dal = DataAccessLayer(conn_string = conn_string)
+        cls.dal.connect()
+        cls.session_scope = session_scope
+        insert_updated_nightly_file(predicted_nightly_data)
         
     @classmethod
     def tearDownClass(cls):
-        cls.db_string = None
-    '''   
-    def test_db_string(self):
-       db_name = PostgresTestCase.db_string
-       self.assertEqual(db_name,"postgres://circleci@localhost:5432/smartie-test?sslmode=disable")
-    ''' 
-    def test_notice_type_insertion(self):      
-        notice = PostgresTestCase.db.query_notice(notice="PRESOL")
-        print(notice[0])
-        self.assertEqual(notice[0],"PRESOL")
-    
-    def test_notice_insertion(self):
-        compliant_sum = PostgresTestCase.db.get_complaint_amount()
-        self.assertEqual(compliant_sum,1)
-    
-    def test_attachment_insertion(self):
-        trained_count = PostgresTestCase.db.get_trained_amount()
-        self.assertEqual(trained_count,6)
-    
-    def test_model_insertion(self):
-        model = PostgresTestCase.db.query_model(estimator='SGDClassifier')
-        self.assertEqual(model[0],"SGDClassifier")
-        
-    def test_relationships(self):
-        notice_ID = PostgresTestCase.db.test_relationships(notice='PRESOL')
-        self.assertEqual(notice_ID[0],1)
-        
+        cls.dal = None
+        cls.session_scope = None
+
+    def testNoticeTypeInserations(self):
+        notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS', 'TRAIN']
+        notice_type_ids = []
+        for notice_type in notice_types:
+            with PostgresTestCase.session_scope(PostgresTestCase.dal) as session:
+                notice_type_id = fetch_notice_type_id(notice_type, session)
+                notice_type_ids.append(notice_type_id)
+        notice_type_ids = set(notice_type_ids)
+        result = len(notice_type_ids)
+        expected = len(notice_types)
+        self.assertEqual(result, expected)
+
         
 if __name__ == '__main__':
     unittest.main()

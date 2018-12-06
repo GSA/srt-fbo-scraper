@@ -1,8 +1,8 @@
 import unittest
+import importlib
 import os
 from utils.fbo_nightly_scraper import NightlyFBONotices
 from fixtures import nightly_file, json_str, filtered_json_str, nightly_data, updated_nightly_data
-from fixtures.predicted_nightly_data import predicted_nightly_data, predicted_nightly_data_day_two
 from utils.get_fbo_attachments import FboAttachments
 from utils.predict import Predict
 from fpdf import FPDF
@@ -353,6 +353,8 @@ class PredictTestCase(unittest.TestCase):
 class PostgresTestCase(unittest.TestCase):
     
     def setUp(self):
+        predicted_nightly_data = importlib.import_module('fixtures.predicted_nightly_data.predicted_nightly_data')
+        predicted_nightly_data_day_two = importlib.import_module('fixtures.predicted_nightly_data.predicted_nightly_data_day_two')
         conn_string = get_db_url()
         self.predicted_nightly_data = predicted_nightly_data
         self.predicted_nightly_data_day_two = predicted_nightly_data_day_two
@@ -360,6 +362,14 @@ class PostgresTestCase(unittest.TestCase):
         self.dal.connect()
     
     def tearDown(self):
+        with session_scope(self.dal) as s:
+            _ = s.query(Model).delete()
+        with session_scope(self.dal) as s:
+            _ = s.query(Notice).delete()
+        with session_scope(self.dal) as s:
+            _ = s.query(NoticeType).delete()
+        with session_scope(self.dal) as s:
+            _ = s.query(Attachment).delete()
         self.dal = None
         self.predicted_nightly_data = None
         self.predicted_nightly_data_day_two = None
@@ -417,7 +427,7 @@ class PostgresTestCase(unittest.TestCase):
             expected = 'SGDClassifier'
             self.assertEqual(result, expected)
 
-    """ def test_insert_updated_nightly_file_day_two(self):
+    def test_insert_updated_nightly_file_day_two(self):
         insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
         insert_updated_nightly_file(self.dal, self.predicted_nightly_data_day_two)
         notice_number = 'SPE4A618T934N'.lower()
@@ -428,7 +438,7 @@ class PostgresTestCase(unittest.TestCase):
                 notice_types = notice.notice_types
                 result = len(notice_types)
                 expected = 2
-                self.assertEqual(result, expected)"""
+                self.assertEqual(result, expected)
 
 if __name__ == '__main__':
     unittest.main()

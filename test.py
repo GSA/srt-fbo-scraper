@@ -458,7 +458,7 @@ class PostgresTestCase(unittest.TestCase):
             self.assertEqual(result, expected)
 
     def test_retrain_check(self):
-        result = retrain_check(dal)
+        result = retrain_check(self.dal)
         expected = 0
         self.assertEqual(result, expected)
 

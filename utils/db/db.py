@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from sqlalchemy import create_engine, case
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey, Table, Text, \
@@ -6,7 +5,7 @@ from sqlalchemy import Column, Integer, String, ForeignKey, Table, Text, \
 from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy.dialects.postgresql import JSONB, ARRAY
 from datetime import datetime
-from .db_utils import get_db_url
+from utils.db.db_utils import get_db_url
 
 Base = declarative_base()
 

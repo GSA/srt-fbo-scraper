@@ -4,7 +4,7 @@ from contextlib import contextmanager
 from sqlalchemy import create_engine
 from sqlalchemy import desc, func, case
 from sqlalchemy.ext.declarative import declarative_base
-from .db import NoticeType, Notice, association_table, Attachment, Model, dal
+from utils.db.db import NoticeType, Notice, association_table, Attachment, Model, dal
 
 
 Base = declarative_base()

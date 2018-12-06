@@ -354,11 +354,15 @@ class PostgresTestCase(unittest.TestCase):
     
     def setUp(self):
         conn_string = get_db_url()
+        self.predicted_nightly_data = predicted_nightly_data
+        self.predicted_nightly_data_day_two = predicted_nightly_data_day_two
         self.dal = DataAccessLayer(conn_string = conn_string)
         self.dal.connect()
     
     def tearDown(self):
         self.dal = None
+        self.predicted_nightly_data = None
+        self.predicted_nightly_data_day_two = None
     
     def test_insert_notice_types(self):
         with session_scope(self.dal) as s:
@@ -376,7 +380,7 @@ class PostgresTestCase(unittest.TestCase):
         self.assertEqual(result, expected)
         
     def test_insert_updated_nightly_file(self):
-        insert_updated_nightly_file(self.dal, predicted_nightly_data)
+        insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
         notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS', 'TRAIN']
         result_notice_types = []
         result_notices = []
@@ -414,8 +418,8 @@ class PostgresTestCase(unittest.TestCase):
             self.assertEqual(result, expected)
 
     def test_insert_updated_nightly_file_day_two(self):
-        insert_updated_nightly_file(self.dal, predicted_nightly_data)
-        insert_updated_nightly_file(self.dal, predicted_nightly_data_day_two)
+        insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
+        insert_updated_nightly_file(self.dal, self.predicted_nightly_data_day_two)
         notice_number = 'SPE4A618T934N'.lower()
         with session_scope(self.dal) as s:
             notice_id = s.query(Notice.id).filter(Notice.notice_number==notice_number).first().id

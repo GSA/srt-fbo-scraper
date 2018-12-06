@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 import requests
 import httpretty
 from utils.db.db import Notice, NoticeType, Attachment, Model, association_table
-from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, DataAccessLayer
+from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, DataAccessLayer, clear_data
 from utils.db.db_utils import fetch_notice_type_id, insert_model, insert_notice_types
 
 
@@ -363,14 +363,8 @@ class PostgresTestCase(unittest.TestCase):
         self.dal.connect()
     
     def tearDown(self):
-        with session_scope(self.dal) as s:
-            _ = s.query(Model).delete()
-        with session_scope(self.dal) as s:
-            _ = s.query(Notice).delete()
-        with session_scope(self.dal) as s:
-            _ = s.query(NoticeType).delete()
-        with session_scope(self.dal) as s:
-            _ = s.query(Attachment).delete()
+        with session_scope(self.dal) as session:
+            clear_data(session)
         self.dal = None
         self.predicted_nightly_data = None
         self.predicted_nightly_data_day_two = None

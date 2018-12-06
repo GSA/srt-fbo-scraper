@@ -5,6 +5,10 @@ from sqlalchemy import create_engine, func, case
 from sqlalchemy.orm import sessionmaker
 import utils.db.db as db
 
+def clear_data(session):
+    meta = db.Base.metadata
+    for table in reversed(meta.sorted_tables):
+        session.execute(table.delete())
 
 def get_db_url():
     '''

@@ -387,9 +387,9 @@ class PostgresTestCase(unittest.TestCase):
                      best_params = {'a':'b'})
         with session_scope(PostgresTestCase.dal) as s:
             model = s.query(Model).filter(Model.estimator=='SGDClassifier').first()
-        result = model.estimator
-        expected = 'SGDClassifier'
-        self.assertEqual(result, expected)
+            result = model.estimator
+            expected = 'SGDClassifier'
+            self.assertEqual(result, expected)
 
 
 

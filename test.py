@@ -358,6 +358,7 @@ class PostgresTestCase(unittest.TestCase):
         predicted_nightly_data_day_two = dummy_data.predicted_nightly_data_day_two
         conn_string = get_db_url()
         self.predicted_nightly_data = predicted_nightly_data
+        self.predicted_nightly_data_copy = predicted_nightly_data
         self.predicted_nightly_data_day_two = predicted_nightly_data_day_two
         self.dal = DataAccessLayer(conn_string = conn_string)
         self.dal.connect()
@@ -423,7 +424,7 @@ class PostgresTestCase(unittest.TestCase):
             self.assertEqual(result, expected)
 
     def test_insert_updated_nightly_file_day_two(self):
-        insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
+        insert_updated_nightly_file(self.dal, self.predicted_nightly_data_copy)
         insert_updated_nightly_file(self.dal, self.predicted_nightly_data_day_two)
         notice_number = 'SPE4A618T934N'.lower()
         with session_scope(self.dal) as s:

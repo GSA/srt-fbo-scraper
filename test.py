@@ -12,7 +12,7 @@ import requests
 import httpretty
 from utils.db.db import Notice, NoticeType, Attachment, Model, association_table
 from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, DataAccessLayer
-from utils.db.db_utils import fetch_notice_type_id, insert_model
+from utils.db.db_utils import fetch_notice_type_id, insert_model, insert_notice_types
 
 
 def exceptionCallback(request, uri, headers):
@@ -337,35 +337,41 @@ class PostgresTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         conn_string = get_db_url()
+        cls.predicted_nightly_data = predicted_nightly_data
+        cls.predicted_nightly_data_day_two = predicted_nightly_data_day_two
         cls.dal = DataAccessLayer(conn_string = conn_string)
         cls.dal.connect()
-        insert_updated_nightly_file(cls.dal, predicted_nightly_data)
         
     @classmethod
     def tearDownClass(cls):
         cls.dal = None
-
-    def test_notice_type_inserations(self):
+        cls.predicted_nightly_data = None
+        cls.predicted_nightly_data_day_two = None
+    
+    def test_insert_notice_types(self):
+        with session_scope(PostgresTestCase.dal) as s:
+            insert_notice_types(PostgresTestCase.dal, s)
         notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS', 'TRAIN']
         notice_type_ids = []
         for notice_type in notice_types:
-            with session_scope(PostgresTestCase.dal) as session:
-                notice_type_id = fetch_notice_type_id(notice_type, session)
+            with session_scope(PostgresTestCase.dal) as s:
+                notice_type_id = s.query(NoticeType.id).filter(NoticeType.notice_type==notice_type)\
+                                                       .first().id
                 notice_type_ids.append(notice_type_id)
         notice_type_ids = set(notice_type_ids)
         result = len(notice_type_ids)
         expected = len(notice_types)
         self.assertEqual(result, expected)
 
-    def test_notice_number_insertion(self):
-        notice_number = 'SPE4A618T934N'.lower()
-        with session_scope(PostgresTestCase.dal) as session:
-            result = session.query(Notice.id).filter(Notice.notice_number==notice_number).first().id
+    def test_fetch_notice_type_id(self):
+        with session_scope(PostgresTestCase.dal) as s:
+            result = fetch_notice_type_id('COMBINE', s)
             expected = int
             self.assertIsInstance(result, expected)
-
-    def test_relationships(self):
-        notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS']
+        
+    def test_insert_updated_nightly_file(self):
+        insert_updated_nightly_file(PostgresTestCase.dal, predicted_nightly_data)
+        notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS', 'TRAIN']
         predictions = []
         for nt in notice_types:
             with session_scope(PostgresTestCase.dal) as session:
@@ -380,7 +386,7 @@ class PostgresTestCase(unittest.TestCase):
         result = len(predictions)
         expected = 7
         self.assertEqual(result, expected)
-
+   
     def test_insert_model(self):
         insert_model(PostgresTestCase.dal, 
                      estimator = 'SGDClassifier',

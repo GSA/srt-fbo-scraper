@@ -1,26 +1,12 @@
-from sqlalchemy import create_engine, case
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey, Table, Text, \
                        DateTime, Boolean
-from sqlalchemy.orm import relationship, sessionmaker
+from sqlalchemy.orm import relationship
 from sqlalchemy.dialects.postgresql import JSONB, ARRAY
 from datetime import datetime
-from utils.db.db_utils import get_db_url
 
 Base = declarative_base()
 
-class DataAccessLayer:
-
-    def __init__(self, conn_string):
-        self.engine = None
-        self.conn_string = conn_string
-
-    def connect(self):
-        self.engine = create_engine(self.conn_string)
-        Base.metadata.create_all(self.engine)
-        self.Session = sessionmaker(bind=self.engine)
-
-dal = DataAccessLayer(conn_string = get_db_url())
 
 association_table = Table('association', Base.metadata,
     Column('notice_id', Integer, ForeignKey('notice.id')),

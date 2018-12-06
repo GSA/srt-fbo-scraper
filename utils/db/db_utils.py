@@ -1,9 +1,38 @@
 import os
 import json
 from contextlib import contextmanager
-from sqlalchemy import func, case
-from .db import Notice, NoticeType, Attachment, Model
+from sqlalchemy import create_engine, func, case
+from sqlalchemy.orm import sessionmaker
+import db
 
+
+def get_db_url():
+    '''
+    Return the db connection string depending on the environment
+    '''
+    if os.getenv('VCAP_APPLICATION'):
+        db_string = os.getenv('DATABASE_URL')
+    elif os.getenv('TEST_DB_URL'):
+        db_string = os.getenv('TEST_DB_URL')
+    else:
+        db_string = ''
+        print("No support for local db testing")
+    conn_string = db_string.replace('\postgresql', 'postgresql+psycopg2')
+    
+    return conn_string
+
+class DataAccessLayer:
+
+    def __init__(self, conn_string):
+        self.engine = None
+        self.conn_string = conn_string
+
+    def connect(self):
+        self.engine = create_engine(self.conn_string)
+        db.Base.metadata.create_all(self.engine)
+        self.Session = sessionmaker(bind=self.engine)
+
+dal = DataAccessLayer(conn_string = get_db_url())
 
 @contextmanager
 def session_scope(dal):
@@ -19,21 +48,6 @@ def session_scope(dal):
         session.close()
 
 
-def get_db_url():
-    '''
-    Return the db connection string depending on the environment
-    '''
-    if os.getenv('VCAP_APPLICATION'):
-        db_string = os.getenv('DATABASE_URL')
-    elif os.getenv('TEST_DB_URL'):
-        db_string = os.getenv('TEST_DB_URL')
-    else:
-        print("No support for local db testing")
-    conn_string = db_string.replace('\postgresql', 'postgresql+psycopg2')
-    
-    return conn_string
-
-
 def fetch_notice_type_id(notice_type, session):
     '''
     Fetch the notice id for a given notice_number.
@@ -45,7 +59,7 @@ def fetch_notice_type_id(notice_type, session):
         None or notice_type_id (int): if notice_type_id, this is the PK for the notice_type
     '''
     try:
-        notice_type_id = session.query(NoticeType.id).filter(NoticeType.notice_type==notice_type).first().id
+        notice_type_id = session.query(db.NoticeType.id).filter(db.NoticeType.notice_type==notice_type).first().id
     except AttributeError:
         return
     return notice_type_id
@@ -58,7 +72,7 @@ def add_notice_types(dal, session):
         with session_scope(dal) as s:
             notice_type_id = fetch_notice_type_id(notice_type, s)
         if not notice_type_id:
-            n = NoticeType(notice_type = notice_type)
+            n = db.NoticeType(notice_type = notice_type)
             session.add(n)
 
 def fetch_notice_type_by_id(notice_type_id, session):
@@ -72,7 +86,7 @@ def fetch_notice_type_by_id(notice_type_id, session):
         None or notice_type_obj (SQL Alchemy Object)
     '''
     try:
-        notice_type_obj = session.query(NoticeType).get(notice_type_id)
+        notice_type_obj = session.query(db.NoticeType).get(notice_type_id)
     except AttributeError:
         return
     return notice_type_obj
@@ -102,12 +116,12 @@ def insert_updated_nightly_file(dal, updated_nightly_data_with_predictions):
             notice_number = notice_data.pop('solnbr')
             with session_scope(dal) as s:
                 notice_type_obj = fetch_notice_type_by_id(notice_type_id, s)
-            notice = Notice(notice_number = notice_number,
+            notice = db.Notice(notice_number = notice_number,
                             agency = agency,
                             notice_data = 'test',
                             compliant = compliant)
             for doc in attachments:
-                attachment =  Attachment(prediction = doc['prediction'],
+                attachment =  db.Attachment(prediction = doc['prediction'],
                                          decision_boundary = doc['decision_boundary'],
                                          attachment_url = doc['url'],
                                          attachment_text = doc['text'],
@@ -120,13 +134,13 @@ def insert_updated_nightly_file(dal, updated_nightly_data_with_predictions):
 
 def get_validation_count():
     with session_scope(dal) as session:
-        count = session.query(func.count(Attachment.validation))
+        count = session.query(func.count(db.Attachment.validation))
     total = count.scalar()
     return int(total)
 
 def get_trained_amount():
     with session_scope(dal) as session:
-        sum_of_trained = session.query(func.sum(case([(Attachment.trained == True, 1)], else_=0)))
+        sum_of_trained = session.query(func.sum(case([(db.Attachment.trained == True, 1)], else_=0)))
     total = sum_of_trained.scalar()
     return int(total) 
     
@@ -142,16 +156,16 @@ def revalidation_check():
 
 def query_notice(notice, session):
     #TODO: need to build out
-    notice_ID = session.query(NoticeType.notice_type).filter(NoticeType.notice_type==notice).first()
+    notice_ID = session.query(db.NoticeType.notice_type).filter(db.NoticeType.notice_type==notice).first()
     return notice_ID
 
 def get_complaint_amount(session):
-    sum_of_compliant = session.query(func.sum(Notice.compliant))
+    sum_of_compliant = session.query(func.sum(db.Notice.compliant))
     total = sum_of_compliant.scalar()
     return int(total) 
     
 def query_model(estimator, session):
-    model = session.query(Model.estimator).filter(Model.estimator==estimator).first()
+    model = session.query(db.Model.estimator).filter(db.Model.estimator==estimator).first()
     return model
 
 def fetch_notice_id(notice_number, session):
@@ -165,7 +179,7 @@ def fetch_notice_id(notice_number, session):
         None or notice_id (int): if notice_id, this is the PK for the notice
     '''
     try:
-        notice_id = session.query(Notice.id).filter(Notice.notice_number==notice_number).first().id
+        notice_id = session.query(db.Notice.id).filter(db.Notice.notice_number==notice_number).first().id
     except AttributeError:
         return
     return notice_id
@@ -181,15 +195,15 @@ def fetch_notice_by_id(notice_id, session):
         None or notice (SQL Alchemy Object)
     '''
     try:
-        notice = session.query(Notice).get(notice_id)
+        notice = session.query(db.Notice).get(notice_id)
     except AttributeError:
         return
     return notice
     
 
 def test_relationships(notice, session):
-    notice_id = session.query(Notice.id).filter(Notice.id==Attachment.notice_id, 
-                                                NoticeType.notice_type==notice).first()
+    notice_id = session.query(db.Notice.id).filter(db.Notice.id==db.Attachment.notice_id, 
+                                                   db.NoticeType.notice_type==notice).first()
     return notice_id
 
 

@@ -353,8 +353,9 @@ class PredictTestCase(unittest.TestCase):
 class PostgresTestCase(unittest.TestCase):
     
     def setUp(self):
-        predicted_nightly_data = importlib.import_module('fixtures.predicted_nightly_data.predicted_nightly_data')
-        predicted_nightly_data_day_two = importlib.import_module('fixtures.predicted_nightly_data.predicted_nightly_data_day_two')
+        dummy_data = importlib.import_module('fixtures.predicted_nightly_data')
+        predicted_nightly_data = dummy_data.predicted_nightly_data
+        predicted_nightly_data_day_two = dummy_data.predicted_nightly_data_day_two
         conn_string = get_db_url()
         self.predicted_nightly_data = predicted_nightly_data
         self.predicted_nightly_data_day_two = predicted_nightly_data_day_two

@@ -546,6 +546,12 @@ class PostgresTestCase(unittest.TestCase):
         expected = 0
         self.assertEqual(result, expected)
 
+    def test_retrain_check(self):
+        insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
+        result = retrain_check(self.dal)
+        expected = 0
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()

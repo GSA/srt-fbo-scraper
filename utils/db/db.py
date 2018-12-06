@@ -1,16 +1,14 @@
 # -*- coding: utf-8 -*-
-from sqlalchemy import create_engine, ForeignKeyConstraint, UniqueConstraint, func, case
+from sqlalchemy import create_engine, case
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey, Table, Text, \
                        DateTime, Boolean
 from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy.dialects.postgresql import JSONB, ARRAY
 from datetime import datetime
-from utils.db.db_utils import get_db_url
+from .db_utils import get_db_url
 
 Base = declarative_base()
-
-conn_string = get_db_url()
 
 class DataAccessLayer:
 
@@ -23,14 +21,13 @@ class DataAccessLayer:
         Base.metadata.create_all(self.engine)
         self.Session = sessionmaker(bind=self.engine)
 
-dal = DataAccessLayer(conn_string)
+dal = DataAccessLayer(conn_string = get_db_url())
 
 association_table = Table('association', Base.metadata,
     Column('notice_id', Integer, ForeignKey('notice.id')),
     Column('notice_type_id', Integer, ForeignKey('notice_type.id'))
 )
 
-    
 class Notice(Base):
     __tablename__ = 'notice'
     

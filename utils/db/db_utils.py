@@ -154,16 +154,6 @@ def retrain_check(dal):
     else:
         return 0
 
-def query_notice(notice, session):
-    #TODO: need to build out
-    notice_ID = session.query(db.NoticeType.notice_type).filter(db.NoticeType.notice_type==notice).first()
-    return notice_ID
-
-def get_complaint_amount(session):
-    sum_of_compliant = session.query(func.sum(db.Notice.compliant))
-    total = sum_of_compliant.scalar()
-    return int(total) 
-
 def fetch_notice_id(notice_number, session):
     '''
     Fetch the notice id for a given notice_number.
@@ -196,10 +186,6 @@ def fetch_notice_by_id(notice_id, session):
         return
     return notice
 
-def test_relationships(notice, session):
-    notice_id = session.query(db.Notice.id).filter(db.Notice.id==db.Attachment.notice_id, 
-                                                   db.NoticeType.notice_type==notice).first()
-    return notice_id
 
 
 

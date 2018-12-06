@@ -366,20 +366,31 @@ class PostgresTestCase(unittest.TestCase):
     def test_insert_updated_nightly_file(self):
         insert_updated_nightly_file(PostgresTestCase.dal, predicted_nightly_data)
         notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS', 'TRAIN']
-        predictions = []
+        result_notice_types = []
+        result_notices = []
+        result_predictions = []
         for nt in notice_types:
             with session_scope(PostgresTestCase.dal) as session:
                 n_id = fetch_notice_type_id(nt, session)
+                result_notice_types.append(n_id)
                 with session_scope(PostgresTestCase.dal) as s:
                     n = s.query(NoticeType).get(n_id)
                     notices = n.notices
                     for notice in notices:
+                        result_notices.append(notice)
                         notice_attachments = notice.attachments
                         for a in notice_attachments:
-                            predictions.append(a.prediction)
-        result = len(predictions)
-        expected = 7
-        self.assertEqual(result, expected)
+                            result_predictions.append(a.prediction)
+        predictions_result = len(result_predictions)
+        prediction_expected = 7
+        self.assertEqual(predictions_result, prediction_expected)
+        notices_result = len(result_notices)
+        notices_expected = 2
+        self.assertEqual(notices_result, notices_expected)
+        notice_types_result = len(result_notice_types)
+        notice_types_expected = 5
+        self.assertEqual(notice_types_result, notice_types_expected)
+
    
     def test_insert_model(self):
         insert_model(PostgresTestCase.dal, 

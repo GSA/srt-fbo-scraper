@@ -337,8 +337,6 @@ class PostgresTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         conn_string = get_db_url()
-        cls.predicted_nightly_data = predicted_nightly_data
-        cls.predicted_nightly_data_day_two = predicted_nightly_data_day_two
         cls.dal = DataAccessLayer(conn_string = conn_string)
         cls.dal.connect()
         
@@ -401,6 +399,24 @@ class PostgresTestCase(unittest.TestCase):
             result = model.estimator
             expected = 'SGDClassifier'
             self.assertEqual(result, expected)
+
+    def test_insert_updated_nightly_file_day_two(self):
+        insert_updated_nightly_file(PostgresTestCase.dal, predicted_nightly_data_day_two)
+        
+        notice_number = 'SPE4A618T934N'.lower()
+        with session_scope(PostgresTestCase.dal) as s:
+            notice_id = s.query(Notice.id).filter(Notice.notice_number==notice_number).first().id
+            with session_scope(PostgresTestCase.dal) as session:
+                notice = session.query(Notice).get(notice_id)
+                notice_types = notice.notice_types
+                result = len(notice_types)
+                expected = 2
+                self.assertEqual(result, expected)
+
+            
+
+
+
 
 
 

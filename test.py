@@ -344,7 +344,7 @@ class PostgresTestCase(unittest.TestCase):
     def tearDownClass(cls):
         cls.dal = None
 
-    def testNoticeTypeInserations(self):
+    def test_notice_type_inserations(self):
         notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS', 'TRAIN']
         notice_type_ids = []
         for notice_type in notice_types:
@@ -355,6 +355,32 @@ class PostgresTestCase(unittest.TestCase):
         result = len(notice_type_ids)
         expected = len(notice_types)
         self.assertEqual(result, expected)
+
+    def test_notice_number_insertion(self):
+        notice_number = 'SPE4A618T934N'.lower()
+        with session_scope(PostgresTestCase.dal) as session:
+            result = session.query(Notice.id).filter(Notice.notice_number==notice_number).first().id
+            expected = int
+            self.assertIsInstance(result, expected)
+
+    def test_relationships(self):
+        notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS']
+        predictions = []
+        for nt in notice_types:
+            with session_scope(PostgresTestCase.dal) as session:
+                n_id = fetch_notice_type_id(nt, session)
+                with session_scope(PostgresTestCase.dal) as s:
+                    n = s.query(NoticeType).get(n_id)
+                    notices = n.notices
+                    for notice in notices:
+                        notice_attachments = notice.attachments
+                        for a in notice_attachments:
+                            predictions.append(a.prediction)
+        result = len(predictions)
+        expected = 7
+        self.assertEqual(result, expected)
+
+
 
         
 if __name__ == '__main__':

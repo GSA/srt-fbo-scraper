@@ -91,7 +91,7 @@ def fetch_notice_type_by_id(notice_type_id, session):
         return
     return notice_type_obj
 
-def add_model_data(estimator, best_params, session):
+def insert_model(dal, estimator, best_params):
     '''
     Add model to db.
 
@@ -99,9 +99,10 @@ def add_model_data(estimator, best_params, session):
         estimator (str): name of the classifier
         best_params (dict): dict of the parameters (best_params_ attribute of classifier instance)
     '''
-    model = db.Model(estimator = estimator,
-                  params = best_params)
-    session.add(model)
+    with session_scope(dal) as s: 
+        model = db.Model(estimator = estimator,
+                         params = best_params)
+        s.add(model)
     
 def insert_updated_nightly_file(dal, updated_nightly_data_with_predictions):
     with session_scope(dal) as s:
@@ -164,9 +165,6 @@ def get_complaint_amount(session):
     total = sum_of_compliant.scalar()
     return int(total) 
     
-def query_model(estimator, session):
-    model = session.query(db.Model.estimator).filter(db.Model.estimator==estimator).first()
-    return model
 
 def fetch_notice_id(notice_number, session):
     '''

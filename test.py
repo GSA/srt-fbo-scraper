@@ -11,7 +11,8 @@ from bs4 import BeautifulSoup
 import requests
 import httpretty
 from utils.db.db import Notice, NoticeType, Attachment, Model, association_table
-from utils.db.db_utils import get_db_url, session_scope, fetch_notice_type_id, insert_updated_nightly_file, DataAccessLayer
+from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, DataAccessLayer
+from utils.db.db_utils import fetch_notice_type_id, insert_model
 
 
 def exceptionCallback(request, uri, headers):
@@ -378,6 +379,16 @@ class PostgresTestCase(unittest.TestCase):
                             predictions.append(a.prediction)
         result = len(predictions)
         expected = 7
+        self.assertEqual(result, expected)
+
+    def test_insert_model(self):
+        insert_model(PostgresTestCase.dal, 
+                     estimator = 'SGDClassifier',
+                     best_params = {'a':'b'})
+        with session_scope(PostgresTestCase.dal) as s:
+            model = s.query(Model).filter(Model.estimator=='SGDClassifier').first()
+        result = model.estimator
+        expected = 'SGDClassifier'
         self.assertEqual(result, expected)
 
 

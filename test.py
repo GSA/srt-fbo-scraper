@@ -336,19 +336,19 @@ class PostgresTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         conn_string = get_db_url()
-        dal = DataAccessLayer(conn_string = conn_string)
-        dal.connect()
-        insert_updated_nightly_file(dal, predicted_nightly_data)
+        cls.dal = DataAccessLayer(conn_string = conn_string)
+        cls.dal.connect()
+        insert_updated_nightly_file(cls.dal, predicted_nightly_data)
         
     @classmethod
     def tearDownClass(cls):
-        pass
+        cls.dal = None
 
     def testNoticeTypeInserations(self):
         notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS', 'TRAIN']
         notice_type_ids = []
         for notice_type in notice_types:
-            with session_scope(dal) as session:
+            with session_scope(PostgresTestCase.dal) as session:
                 notice_type_id = fetch_notice_type_id(notice_type, session)
                 notice_type_ids.append(notice_type_id)
         notice_type_ids = set(notice_type_ids)

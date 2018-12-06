@@ -362,12 +362,6 @@ class PostgresTestCase(unittest.TestCase):
         result = len(notice_type_ids)
         expected = len(notice_types)
         self.assertEqual(result, expected)
-
-    def test_fetch_notice_type_id(self):
-        with session_scope(PostgresTestCase.dal) as s:
-            result = fetch_notice_type_id('COMBINE', s)
-            expected = int
-            self.assertIsInstance(result, expected)
         
     def test_insert_updated_nightly_file(self):
         insert_updated_nightly_file(PostgresTestCase.dal, predicted_nightly_data)

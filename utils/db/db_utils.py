@@ -117,9 +117,9 @@ def insert_updated_nightly_file(dal, updated_nightly_data_with_predictions):
             with session_scope(dal) as s:
                 notice_type_obj = fetch_notice_type_by_id(notice_type_id, s)
             notice = db.Notice(notice_number = notice_number,
-                            agency = agency,
-                            notice_data = 'test',
-                            compliant = compliant)
+                               agency = agency,
+                               notice_data = 'test',
+                               compliant = compliant)
             for doc in attachments:
                 attachment =  db.Attachment(prediction = doc['prediction'],
                                          decision_boundary = doc['decision_boundary'],

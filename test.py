@@ -417,7 +417,7 @@ class PostgresTestCase(unittest.TestCase):
             expected = 'SGDClassifier'
             self.assertEqual(result, expected)
 
-    def test_insert_updated_nightly_file_day_two(self):
+    """ def test_insert_updated_nightly_file_day_two(self):
         insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
         insert_updated_nightly_file(self.dal, self.predicted_nightly_data_day_two)
         notice_number = 'SPE4A618T934N'.lower()
@@ -428,7 +428,7 @@ class PostgresTestCase(unittest.TestCase):
                 notice_types = notice.notice_types
                 result = len(notice_types)
                 expected = 2
-                self.assertEqual(result, expected)
+                self.assertEqual(result, expected)"""
 
 if __name__ == '__main__':
     unittest.main()

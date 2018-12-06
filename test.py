@@ -358,7 +358,31 @@ class PostgresTestCase(unittest.TestCase):
         predicted_nightly_data_day_two = dummy_data.predicted_nightly_data_day_two
         conn_string = get_db_url()
         self.predicted_nightly_data = predicted_nightly_data
-        self.predicted_nightly_data_copy = predicted_nightly_data
+        self.predicted_nightly_data_copy = {'AMDCSS': [{'date': '0506',
+                                               'year': '17',
+                                               'agency': 'defense logistics agency',
+                                               'office': 'dla acquisition locations',
+                                               'location': 'dla aviation - bsm',
+                                               'zip': '23297',
+                                               'classcod': '66',
+                                               'naics': '334511',
+                                               'offadd': '334511',
+                                               'subject': 'subject',
+                                               'solnbr': 'spe4a618t934n',
+                                               'respdate': '051418',
+                                               'archdate': '06132018',
+                                               'contact': 'bob.dylan@aol.com',
+                                               'desc': 'test123',
+                                               'url': 'test_url',
+                                               'setaside': 'n/a  ',
+                                               'attachments': [{'text': 'test_text_0',
+                                                                'url': 'test_url_0',
+                                                                'prediction': 1,
+                                                                'decision_boundary': 0,
+                                                                'validation': None,
+                                                                'trained': False}],
+                                               'compliant': 0}]
+                                            }
         self.predicted_nightly_data_day_two = predicted_nightly_data_day_two
         self.dal = DataAccessLayer(conn_string = conn_string)
         self.dal.connect()

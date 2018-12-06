@@ -99,7 +99,7 @@ def add_model_data(estimator, best_params, session):
         estimator (str): name of the classifier
         best_params (dict): dict of the parameters (best_params_ attribute of classifier instance)
     '''
-    model = Model(estimator = estimator,
+    model = db.Model(estimator = estimator,
                   params = best_params)
     session.add(model)
     

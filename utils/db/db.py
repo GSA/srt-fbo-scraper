@@ -8,15 +8,11 @@ from datetime import datetime
 Base = declarative_base()
 
 
-association_table = Table('association', Base.metadata,
-    Column('notice_id', Integer, ForeignKey('notice.id')),
-    Column('notice_type_id', Integer, ForeignKey('notice_type.id'))
-)
-
 class Notice(Base):
     __tablename__ = 'notice'
     
     id = Column(Integer, primary_key=True)
+    notice_type_id = Column(Integer, ForeignKey('notice_type.id'))  
     notice_number = Column(String(150), index = True)
     agency = Column(String(150))
     date = Column(DateTime, onupdate=datetime.now)
@@ -24,18 +20,14 @@ class Notice(Base):
     compliant = Column(Integer)
     action = Column(ARRAY(String(100), dimensions=2))
     attachments = relationship("Attachment", back_populates="notice")
-    notice_types = relationship("NoticeType", 
-                                secondary = association_table, 
-                                back_populates = 'notices')
+    notice_type = relationship("NoticeType", back_populates="notices")
     
 class NoticeType(Base):
     __tablename__ = 'notice_type'
     
     id = Column(Integer, primary_key = True)
     notice_type = Column(String(50), index = True)
-    notices = relationship("Notice",
-                           secondary = association_table,
-                           back_populates = 'notice_types')
+    notices = relationship("Notice", back_populates = 'notice_type')
 
 class Attachment(Base):
     __tablename__ = 'attachment'

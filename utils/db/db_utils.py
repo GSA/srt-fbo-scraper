@@ -75,8 +75,8 @@ def insert_notice_types(dal, session):
         with session_scope(dal) as s:
             notice_type_id = fetch_notice_type_id(notice_type, s)
         if not notice_type_id:
-            n = db.NoticeType(notice_type = notice_type)
-            session.add(n)
+            nt = db.NoticeType(notice_type = notice_type)
+            session.add(nt)
 
 def fetch_notice_type_by_id(notice_type_id, session):
     '''
@@ -120,19 +120,20 @@ def insert_updated_nightly_file(dal, updated_nightly_data_with_predictions):
             notice_number = notice_data.pop('solnbr')
             with session_scope(dal) as s:
                 notice_type_obj = fetch_notice_type_by_id(notice_type_id, s)
-            notice = db.Notice(notice_number = notice_number,
+            notice = db.Notice(notice_type_id = notice_type_id,
+                               notice_number = notice_number,
                                agency = agency,
                                notice_data = 'test',
                                compliant = compliant)
             for doc in attachments:
                 attachment =  db.Attachment(prediction = doc['prediction'],
-                                         decision_boundary = doc['decision_boundary'],
-                                         attachment_url = doc['url'],
-                                         attachment_text = doc['text'],
-                                         validation = doc['validation'],
-                                         trained = doc['trained'])
+                                           decision_boundary = doc['decision_boundary'],
+                                           attachment_url = doc['url'],
+                                           attachment_text = doc['text'],
+                                           validation = doc['validation'],
+                                           trained = doc['trained'])
                 notice.attachments.append(attachment)
-            notice.notice_types.append(notice_type_obj)
+            #notice.notice_types.append(notice_type_obj)
             with session_scope(dal) as s:
                 s.add(notice)                   
 

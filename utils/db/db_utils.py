@@ -1,8 +1,7 @@
 import os
 import json
 from contextlib import contextmanager
-from sqlalchemy import create_engine
-from sqlalchemy import desc, func, case
+from sqlalchemy import func, case
 
 
 @contextmanager
@@ -50,7 +49,7 @@ def fetch_notice_type_id(notice_type, session):
         return
     return notice_type_id
 
-def add_notice_types(session):
+def add_notice_types(dal, session):
     '''
     Insert each of the notice types into the notice_type table if it isn't already there.
     '''
@@ -89,9 +88,9 @@ def add_model_data(estimator, best_params, session):
                   params = best_params)
     session.add(model)
     
-def insert_updated_nightly_file(updated_nightly_data_with_predictions):
+def insert_updated_nightly_file(dal, updated_nightly_data_with_predictions):
     with session_scope(dal) as s:
-        add_notice_types(s)
+        add_notice_types(dal, s)
     for notice_type in updated_nightly_data_with_predictions:
         with session_scope(dal) as s:
             notice_type_id = fetch_notice_type_id(notice_type, s)

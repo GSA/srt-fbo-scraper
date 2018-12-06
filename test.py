@@ -339,7 +339,7 @@ class PostgresTestCase(unittest.TestCase):
         conn_string = get_db_url()
         dal = DataAccessLayer(conn_string = conn_string)
         dal.connect()
-        insert_updated_nightly_file(predicted_nightly_data)
+        insert_updated_nightly_file(dal, predicted_nightly_data)
         
     @classmethod
     def tearDownClass(cls):

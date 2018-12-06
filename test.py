@@ -10,9 +10,8 @@ from docx import Document
 from bs4 import BeautifulSoup
 import requests
 import httpretty
-from utils.db.db import Notice, NoticeType, Attachment, Model, association_table, DataAccessLayer
-from utils.db.db_utils import get_db_url, session_scope
-from utils.db.db_utils import fetch_notice_type_id, insert_updated_nightly_file
+from utils.db.db import Notice, NoticeType, Attachment, Model, association_table
+from utils.db.db_utils import get_db_url, session_scope, fetch_notice_type_id, insert_updated_nightly_file, DataAccessLayer
 
 
 def exceptionCallback(request, uri, headers):

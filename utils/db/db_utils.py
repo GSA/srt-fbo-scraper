@@ -3,7 +3,7 @@ import json
 from contextlib import contextmanager
 from sqlalchemy import create_engine, func, case
 from sqlalchemy.orm import sessionmaker
-import db
+import utils.db.db as db
 
 
 def get_db_url():

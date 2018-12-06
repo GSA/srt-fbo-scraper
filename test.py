@@ -436,7 +436,7 @@ class PostgresTestCase(unittest.TestCase):
                                          'attachments': [],
                                          'compliant': 0}],
                             'PRESOL': []}
-        self.predicted_nightly_data_copy = {'AMDCSS': [{'date': '0506',
+        self.predicted_nightly_data_day_two = {'AMDCSS': [{'date': '0506',
                                                'year': '17',
                                                'agency': 'defense logistics agency',
                                                'office': 'dla acquisition locations',
@@ -461,7 +461,6 @@ class PostgresTestCase(unittest.TestCase):
                                                                 'trained': False}],
                                                'compliant': 0}]
                                             }
-        self.predicted_nightly_data_day_two = predicted_nightly_data_day_two
         self.dal = DataAccessLayer(conn_string = conn_string)
         self.dal.connect()
     
@@ -526,7 +525,7 @@ class PostgresTestCase(unittest.TestCase):
             self.assertEqual(result, expected)
 
     def test_insert_updated_nightly_file_day_two(self):
-        insert_updated_nightly_file(self.dal, self.predicted_nightly_data_copy)
+        insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
         insert_updated_nightly_file(self.dal, self.predicted_nightly_data_day_two)
         notice_number = 'SPE4A618T934N'.lower()
         with session_scope(self.dal) as s:

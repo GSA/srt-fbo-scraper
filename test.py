@@ -29,7 +29,9 @@ class NightlyFBONoticesTestCase(unittest.TestCase):
         notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS']
         naics = ['334111', '334118', '3343', '33451', '334516', '334614', '5112',
                  '518', '54169', '54121', '5415', '54169', '61142']
-        cls.nfbo = NightlyFBONotices(date=20180506, notice_types=notice_types, naics=naics)
+        cls.nfbo = NightlyFBONotices(date=20180506, 
+                                     notice_types=notice_types, 
+                                     naics=naics)
         cls.file_lines = nightly_file.nightly_file
 
     @classmethod
@@ -135,28 +137,38 @@ class FboAttachmentsTestCase(unittest.TestCase):
                         
                             </div>
         '''
-        httpretty.register_uri(httpretty.GET, uri=self.fake_fbo_url, body=body_with_div, content_type = "text/html")
+        httpretty.register_uri(httpretty.GET, 
+                               uri=self.fake_fbo_url, 
+                               body=body_with_div, 
+                               content_type = "text/html")
         result = self.fboa.get_divs(self.fake_fbo_url)
         expected = ['expected div in here']
         self.assertEqual(len(result), len(expected))
     
     @httpretty.activate
     def test_get_divs_wrong_url(self):
-        httpretty.register_uri(httpretty.GET, uri=self.fake_fbo_url, body='No divs in here')
+        httpretty.register_uri(httpretty.GET, 
+                               uri=self.fake_fbo_url, 
+                               body='No divs in here')
         result = self.fboa.get_divs(self.fake_fbo_url)
         expected = []
         self.assertEqual(len(result), len(expected))
     
     @httpretty.activate
     def test_get_divs_non200_url(self):
-        httpretty.register_uri(httpretty.GET, uri=self.fake_fbo_url, status=404)
+        httpretty.register_uri(httpretty.GET, 
+                               uri=self.fake_fbo_url, 
+                               status=404)
         result = self.fboa.get_divs(self.fake_fbo_url)
         expected = []
         self.assertEqual(len(result), len(expected))
         
     @httpretty.activate
     def test_get_divs_connection_error(self):
-        httpretty.register_uri(method=httpretty.GET, uri=self.fake_fbo_url, status=200, body=exceptionCallback)
+        httpretty.register_uri(method=httpretty.GET, 
+                               uri=self.fake_fbo_url, 
+                               status=200, 
+                               body=exceptionCallback)
         result = self.fboa.get_divs(self.fake_fbo_url)
         expected = []
         self.assertEqual(len(result), len(expected))
@@ -166,7 +178,8 @@ class FboAttachmentsTestCase(unittest.TestCase):
         notice = {'a': '1', 'b': '2'}
         with open(self.temp_outfile_path, 'w') as f:
             f.write(text)
-        file_list = [(self.temp_outfile_path,self.fake_fbo_url)]
+        file_list = [(self.temp_outfile_path,
+                      self.fake_fbo_url)]
         result = self.fboa.insert_attachments(file_list, notice)
         expected = {'a': '1',
                     'b': '2',
@@ -181,21 +194,28 @@ class FboAttachmentsTestCase(unittest.TestCase):
 
     @httpretty.activate
     def test_size_check(self):
-        httpretty.register_uri(httpretty.HEAD, uri=self.fake_fbo_url, body='This is less than 500MB')
+        httpretty.register_uri(httpretty.HEAD, 
+                               uri=self.fake_fbo_url, 
+                               body='This is less than 500MB')
         result = self.fboa.size_check(self.fake_fbo_url)
         expected = True
         self.assertEqual(result, expected)
 
     @httpretty.activate
     def test_size_check_non200_url(self):
-        httpretty.register_uri(httpretty.HEAD, uri=self.fake_fbo_url, status=404)
+        httpretty.register_uri(httpretty.HEAD, 
+                               uri=self.fake_fbo_url, 
+                               status=404)
         result = self.fboa.size_check(self.fake_fbo_url)
         expected = False
         self.assertEqual(result, expected)
 
     @httpretty.activate
     def test_size_check_connection_error(self):
-        httpretty.register_uri(method=httpretty.HEAD, uri=self.fake_fbo_url, status=200, body=exceptionCallback)
+        httpretty.register_uri(method=httpretty.HEAD, 
+                               uri=self.fake_fbo_url, 
+                               status=200, 
+                               body=exceptionCallback)
         result = self.fboa.size_check(self.fake_fbo_url)
         expected = False
         self.assertEqual(result, expected)
@@ -329,8 +349,6 @@ class PredictTestCase(unittest.TestCase):
         notice = json_data['PRESOL'][0]
         compliant_value = notice['compliant']
         self.assertIsInstance(compliant_value, int)
-        
-
 
 class PostgresTestCase(unittest.TestCase):
     
@@ -343,8 +361,6 @@ class PostgresTestCase(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.dal = None
-        cls.predicted_nightly_data = None
-        cls.predicted_nightly_data_day_two = None
     
     def test_insert_notice_types(self):
         with session_scope(PostgresTestCase.dal) as s:
@@ -389,7 +405,6 @@ class PostgresTestCase(unittest.TestCase):
         notice_types_expected = 5
         self.assertEqual(notice_types_result, notice_types_expected)
 
-   
     def test_insert_model(self):
         insert_model(PostgresTestCase.dal, 
                      estimator = 'SGDClassifier',
@@ -413,13 +428,5 @@ class PostgresTestCase(unittest.TestCase):
                 expected = 2
                 self.assertEqual(result, expected)
 
-            
-
-
-
-
-
-
-        
 if __name__ == '__main__':
     unittest.main()

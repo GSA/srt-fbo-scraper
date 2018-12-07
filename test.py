@@ -1,7 +1,7 @@
 import unittest
 import os
 from utils.fbo_nightly_scraper import NightlyFBONotices
-from fixtures import nightly_file, json_str, filtered_json_str, nightly_data, updated_nightly_data,predicted_nightly_data
+from fixtures import nightly_file, json_str, filtered_json_str, nightly_data, updated_nightly_data
 from utils.get_fbo_attachments import FboAttachments
 from utils.predict import Predict
 from fpdf import FPDF
@@ -9,7 +9,9 @@ from docx import Document
 from bs4 import BeautifulSoup
 import requests
 import httpretty
-from utils.db.db import DataAccessLayer
+from utils.db.db import Notice, NoticeType, Attachment, Model
+from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, DataAccessLayer, clear_data
+from utils.db.db_utils import fetch_notice_type_id, insert_model, insert_notice_types, retrain_check, get_validation_count, get_trained_amount
 
 
 def exceptionCallback(request, uri, headers):
@@ -26,7 +28,9 @@ class NightlyFBONoticesTestCase(unittest.TestCase):
         notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS']
         naics = ['334111', '334118', '3343', '33451', '334516', '334614', '5112',
                  '518', '54169', '54121', '5415', '54169', '61142']
-        cls.nfbo = NightlyFBONotices(date=20180506, notice_types=notice_types, naics=naics)
+        cls.nfbo = NightlyFBONotices(date=20180506, 
+                                     notice_types=notice_types, 
+                                     naics=naics)
         cls.file_lines = nightly_file.nightly_file
 
     @classmethod
@@ -132,28 +136,38 @@ class FboAttachmentsTestCase(unittest.TestCase):
                         
                             </div>
         '''
-        httpretty.register_uri(httpretty.GET, uri=self.fake_fbo_url, body=body_with_div, content_type = "text/html")
+        httpretty.register_uri(httpretty.GET, 
+                               uri=self.fake_fbo_url, 
+                               body=body_with_div, 
+                               content_type = "text/html")
         result = self.fboa.get_divs(self.fake_fbo_url)
         expected = ['expected div in here']
         self.assertEqual(len(result), len(expected))
     
     @httpretty.activate
     def test_get_divs_wrong_url(self):
-        httpretty.register_uri(httpretty.GET, uri=self.fake_fbo_url, body='No divs in here')
+        httpretty.register_uri(httpretty.GET, 
+                               uri=self.fake_fbo_url, 
+                               body='No divs in here')
         result = self.fboa.get_divs(self.fake_fbo_url)
         expected = []
         self.assertEqual(len(result), len(expected))
     
     @httpretty.activate
     def test_get_divs_non200_url(self):
-        httpretty.register_uri(httpretty.GET, uri=self.fake_fbo_url, status=404)
+        httpretty.register_uri(httpretty.GET, 
+                               uri=self.fake_fbo_url, 
+                               status=404)
         result = self.fboa.get_divs(self.fake_fbo_url)
         expected = []
         self.assertEqual(len(result), len(expected))
         
     @httpretty.activate
     def test_get_divs_connection_error(self):
-        httpretty.register_uri(method=httpretty.GET, uri=self.fake_fbo_url, status=200, body=exceptionCallback)
+        httpretty.register_uri(method=httpretty.GET, 
+                               uri=self.fake_fbo_url, 
+                               status=200, 
+                               body=exceptionCallback)
         result = self.fboa.get_divs(self.fake_fbo_url)
         expected = []
         self.assertEqual(len(result), len(expected))
@@ -163,7 +177,8 @@ class FboAttachmentsTestCase(unittest.TestCase):
         notice = {'a': '1', 'b': '2'}
         with open(self.temp_outfile_path, 'w') as f:
             f.write(text)
-        file_list = [(self.temp_outfile_path,self.fake_fbo_url)]
+        file_list = [(self.temp_outfile_path,
+                      self.fake_fbo_url)]
         result = self.fboa.insert_attachments(file_list, notice)
         expected = {'a': '1',
                     'b': '2',
@@ -178,21 +193,28 @@ class FboAttachmentsTestCase(unittest.TestCase):
 
     @httpretty.activate
     def test_size_check(self):
-        httpretty.register_uri(httpretty.HEAD, uri=self.fake_fbo_url, body='This is less than 500MB')
+        httpretty.register_uri(httpretty.HEAD, 
+                               uri=self.fake_fbo_url, 
+                               body='This is less than 500MB')
         result = self.fboa.size_check(self.fake_fbo_url)
         expected = True
         self.assertEqual(result, expected)
 
     @httpretty.activate
     def test_size_check_non200_url(self):
-        httpretty.register_uri(httpretty.HEAD, uri=self.fake_fbo_url, status=404)
+        httpretty.register_uri(httpretty.HEAD, 
+                               uri=self.fake_fbo_url, 
+                               status=404)
         result = self.fboa.size_check(self.fake_fbo_url)
         expected = False
         self.assertEqual(result, expected)
 
     @httpretty.activate
     def test_size_check_connection_error(self):
-        httpretty.register_uri(method=httpretty.HEAD, uri=self.fake_fbo_url, status=200, body=exceptionCallback)
+        httpretty.register_uri(method=httpretty.HEAD, 
+                               uri=self.fake_fbo_url, 
+                               status=200, 
+                               body=exceptionCallback)
         result = self.fboa.size_check(self.fake_fbo_url)
         expected = False
         self.assertEqual(result, expected)
@@ -326,46 +348,210 @@ class PredictTestCase(unittest.TestCase):
         notice = json_data['PRESOL'][0]
         compliant_value = notice['compliant']
         self.assertIsInstance(compliant_value, int)
-        
 
 class PostgresTestCase(unittest.TestCase):
     
-    @classmethod
-    def setUpClass(cls):
-        cls.db_string = os.getenv('TEST_DB_URL')
-        cls.db = DataAccessLayer(db_string=cls.db_string)
-        cls.db.add_json_nightly_file_to_postgres(predicted_nightly_data.predicted_nightly_data)
-        cls.db.add_model_data(estimator='SGDClassifier', best_params = {'param':'value'})
-        
-    @classmethod
-    def tearDownClass(cls):
-        cls.db_string = None
-    '''   
-    def test_db_string(self):
-       db_name = PostgresTestCase.db_string
-       self.assertEqual(db_name,"postgres://circleci@localhost:5432/smartie-test?sslmode=disable")
-    ''' 
-    def test_notice_type_insertion(self):      
-        notice = PostgresTestCase.db.query_notice(notice="PRESOL")
-        print(notice[0])
-        self.assertEqual(notice[0],"PRESOL")
+    def setUp(self):
+        conn_string = get_db_url()
+        self.predicted_nightly_data = {'AMDCSS': [{'date': '0506',
+                                      'year': '18',
+                                      'agency': 'department of justice',
+                                      'office': 'federal bureau of investigation',
+                                      'location': 'procurement section',
+                                      'zip': '20535',
+                                      'classcod': '70',
+                                      'naics': '511210',
+                                      'offadd': '935 pennsylvania avenue, n.w. washington dc 20535',
+                                      'subject': 'enterprise business process management software tool',
+                                      'solnbr': 'rfp-e-bpm-djf-18-0800-pr-0000828',
+                                      'ntype': 'combine',
+                                      'contact': 'clark kent, contracting officer, phone 5555555555, email clark.kent@daily-planet.com',
+                                      'desc': '  link to document',
+                                      'url': 'url',
+                                      'setaside': 'n/a',
+                                      'popcountry': 'us',
+                                      'popzip': '20535',
+                                      'popaddress': '935 pennsylvania ave. n.w. washington, dc  ',
+                                      'attachments': [{'text': 'test_text_0',
+                                                       'url': 'test_url_0',
+                                                       'prediction': 1,
+                                                       'decision_boundary': 0,
+                                                       'validation': None,
+                                                       'trained': False},
+                                                       {'text': 'test_text_1',
+                                                       'url': 'test_url_1',
+                                                       'prediction': 1,
+                                                       'decision_boundary': 0,
+                                                       'validation': None,
+                                                       'trained': False},
+                                                       {'text': 'test_text_2',
+                                                       'url': 'test_url_2',
+                                                       'prediction': 1,
+                                                       'decision_boundary': 0,
+                                                       'validation': None,
+                                                       'trained': False},
+                                                       {'text': 'test_text_3',
+                                                       'url': 'test_url_3',
+                                                       'prediction': 1,
+                                                       'decision_boundary': 0,
+                                                       'validation': None,
+                                                       'trained': False},
+                                                       {'text': 'test_text_4',
+                                                       'url': 'test_url_4',
+                                                       'prediction': 1,
+                                                       'decision_boundary': 0,
+                                                       'validation': None,
+                                                       'trained': False},
+                                                       {'text': 'test_text_5',
+                                                       'url': 'test_url_5',
+                                                       'prediction': 1,
+                                                       'decision_boundary': 0,
+                                                       'validation': None,
+                                                       'trained': False},
+                                                       {'text': 'test_text_6',
+                                                       'url': 'test_url_6',
+                                                       'prediction': 1,
+                                                       'decision_boundary': 0,
+                                                       'validation': None,
+                                                       'trained': False}],
+                                      'compliant': 0}],
+                            'MOD': [],
+                            'COMBINE': [{'date': '0506',
+                                         'year': '18',
+                                         'agency': 'defense logistics agency',
+                                         'office': 'dla acquisition locations',
+                                         'location': 'dla aviation - bsm',
+                                         'zip': '23297',
+                                         'classcod': '66',
+                                         'naics': '334511',
+                                         'offadd': '334511',
+                                         'subject': 'subject',
+                                         'solnbr': 'spe4a618t934n',
+                                         'respdate': '051418',
+                                         'archdate': '06132018',
+                                         'contact': 'bob.dylan@aol.com',
+                                         'desc': 'test123',
+                                         'url': 'test_url',
+                                         'setaside': 'n/a  ',
+                                         'attachments': [],
+                                         'compliant': 0}],
+                            'PRESOL': []}
+        self.predicted_nightly_data_day_two = {'AMDCSS': [{'date': '0506',
+                                               'year': '17',
+                                               'agency': 'defense logistics agency',
+                                               'office': 'dla acquisition locations',
+                                               'location': 'dla aviation - bsm',
+                                               'zip': '23297',
+                                               'classcod': '66',
+                                               'naics': '334511',
+                                               'offadd': '334511',
+                                               'subject': 'subject',
+                                               'solnbr': 'spe4a618t934n',
+                                               'respdate': '051418',
+                                               'archdate': '06132018',
+                                               'contact': 'bob.dylan@aol.com',
+                                               'desc': 'test123',
+                                               'url': 'test_url',
+                                               'setaside': 'n/a  ',
+                                               'attachments': [{'text': 'test_text_0',
+                                                                'url': 'test_url_0',
+                                                                'prediction': 1,
+                                                                'decision_boundary': 0,
+                                                                'validation': None,
+                                                                'trained': False}],
+                                               'compliant': 0}]
+                                            }
+        self.dal = DataAccessLayer(conn_string = conn_string)
+        self.dal.connect()
     
-    def test_notice_insertion(self):
-        compliant_sum = PostgresTestCase.db.get_complaint_amount()
-        self.assertEqual(compliant_sum,1)
+    def tearDown(self):
+        with session_scope(self.dal) as session:
+            clear_data(session)
+        self.dal = None
+        self.predicted_nightly_data = None
+        self.predicted_nightly_data_day_two = None
     
-    def test_attachment_insertion(self):
-        trained_count = PostgresTestCase.db.get_trained_amount()
-        self.assertEqual(trained_count,6)
-    
-    def test_model_insertion(self):
-        model = PostgresTestCase.db.query_model(estimator='SGDClassifier')
-        self.assertEqual(model[0],"SGDClassifier")
+    def test_insert_notice_types(self):
+        with session_scope(self.dal) as s:
+            insert_notice_types(self.dal, s)
+        notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS', 'TRAIN']
+        notice_type_ids = []
+        for notice_type in notice_types:
+            with session_scope(self.dal) as s:
+                notice_type_id = s.query(NoticeType.id).filter(NoticeType.notice_type==notice_type)\
+                                                       .first().id
+                notice_type_ids.append(notice_type_id)
+        notice_type_ids = set(notice_type_ids)
+        result = len(notice_type_ids)
+        expected = len(notice_types)
+        self.assertEqual(result, expected)
         
-    def test_relationships(self):
-        notice_ID = PostgresTestCase.db.test_relationships(notice='PRESOL')
-        self.assertEqual(notice_ID[0],1)
-        
-        
+    def test_insert_updated_nightly_file(self):
+        insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
+        notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS', 'TRAIN']
+        result_notice_types = []
+        result_notices = []
+        result_predictions = []
+        for nt in notice_types:
+            with session_scope(self.dal) as session:
+                n_id = fetch_notice_type_id(nt, session)
+                result_notice_types.append(n_id)
+                with session_scope(self.dal) as s:
+                    n = s.query(NoticeType).get(n_id)
+                    notices = n.notices
+                    for notice in notices:
+                        result_notices.append(notice)
+                        notice_attachments = notice.attachments
+                        for a in notice_attachments:
+                            result_predictions.append(a.prediction)
+        predictions_result = len(result_predictions)
+        prediction_expected = 7
+        self.assertEqual(predictions_result, prediction_expected)
+        notices_result = len(result_notices)
+        notices_expected = 2
+        self.assertEqual(notices_result, notices_expected)
+        notice_types_result = len(result_notice_types)
+        notice_types_expected = 5
+        self.assertEqual(notice_types_result, notice_types_expected)
+
+    def test_insert_model(self):
+        insert_model(self.dal, 
+                     estimator = 'SGDClassifier',
+                     best_params = {'a':'b'})
+        with session_scope(self.dal) as s:
+            model = s.query(Model).filter(Model.estimator=='SGDClassifier').first()
+            result = model.estimator
+            expected = 'SGDClassifier'
+            self.assertEqual(result, expected)
+
+    def test_insert_updated_nightly_file_day_two(self):
+        insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
+        insert_updated_nightly_file(self.dal, self.predicted_nightly_data_day_two)
+        notice_number = 'SPE4A618T934N'.lower()
+        with session_scope(self.dal) as s:
+            notice_ids = s.query(Notice.id).filter(Notice.notice_number==notice_number).all()
+            result = len(notice_ids)
+            expected = 2
+            self.assertEqual(result, expected)
+
+    def test_get_validation_count(self):
+        insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
+        result = get_validation_count(self.dal)
+        expected = 0
+        self.assertEqual(result, expected)
+
+    def test_get_trained_amount(self):
+        insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
+        result = get_trained_amount(self.dal)
+        expected = 0
+        self.assertEqual(result, expected)
+
+    def test_retrain_check(self):
+        insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
+        result = retrain_check(self.dal)
+        expected = 0
+        self.assertEqual(result, expected)
+
+
 if __name__ == '__main__':
     unittest.main()

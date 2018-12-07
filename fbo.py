@@ -5,7 +5,12 @@ import json
 import os
 from utils import fbo_nightly_scraper as fbo, get_fbo_attachments
 from utils.predict import Predict 
-from utils.db import db
+from utils.db.db import DataAccessLayer as dal
+from utils.db.db_utils import get_db_url, session_scope
+
+conn_string = get_db_url()
+dal = dal(conn_string)
+dal.connect()
 
 def get_nightly_data(notice_types, naics):
     now = datetime.datetime.now() - datetime.timedelta(1)

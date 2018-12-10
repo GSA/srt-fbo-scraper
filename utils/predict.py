@@ -8,6 +8,7 @@ import sys
 from nltk.stem.porter import PorterStemmer
 import logging
 
+logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
 
 class Predict():
     '''

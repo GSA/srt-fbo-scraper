@@ -587,6 +587,24 @@ class PostgresTestCase(unittest.TestCase):
             expected = 0
             self.assertEqual(result, expected)
 
+class EndToEndTest(unittest.TestCase):
+    def setUp(self):
+        conn_string = get_db_url()
+        self.dal = DataAccessLayer(conn_string)
+        self.dal.connect()
+        self.main = main
+
+    def tearDown(self):
+        self.dal = None
+        self.main = None
+    
+    @unittest.mock.patch('fbo.datetime')
+    def test_main(self, datetime_mock):
+        # use 10/29 since the 28th's file is only 325 kB
+        datetime_mock.datetime.now = unittest.mock.Mock(return_value=datetime.strptime('Oct 29 2018', '%b %d %Y'))
+        self.main()
+        self.assertTrue(True)
+
 
 if __name__ == '__main__':
     unittest.main()

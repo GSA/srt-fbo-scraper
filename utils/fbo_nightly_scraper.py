@@ -11,6 +11,8 @@ import ftplib
 import logging
 import sys
 
+logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
+
 
 class NightlyFBONotices():
     '''

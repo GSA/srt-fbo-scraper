@@ -16,6 +16,7 @@ from zipfile import ZipFile, BadZipfile
 import io
 import logging
 
+logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
 
 class FboAttachments():
     '''

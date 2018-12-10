@@ -67,13 +67,12 @@ def fetch_notice_type_id(notice_type, session):
         return
     return notice_type_id
 
-def insert_notice_types(dal, session):
+def insert_notice_types(session):
     '''
     Insert each of the notice types into the notice_type table if it isn't already there.
     '''
     for notice_type in ['MOD','COMBINE','PRESOL','AMDCSS','TRAIN']:
-        with session_scope(dal) as s:
-            notice_type_id = fetch_notice_type_id(notice_type, s)
+        notice_type_id = fetch_notice_type_id(notice_type, session)
         if not notice_type_id:
             nt = db.NoticeType(notice_type = notice_type)
             session.add(nt)
@@ -94,7 +93,7 @@ def fetch_notice_type_by_id(notice_type_id, session):
         return
     return notice_type_obj
 
-def insert_model(dal, estimator, best_params):
+def insert_model(session, estimator, best_params):
     '''
     Add model to db.
 
@@ -102,17 +101,15 @@ def insert_model(dal, estimator, best_params):
         estimator (str): name of the classifier
         best_params (dict): dict of the parameters (best_params_ attribute of classifier instance)
     '''
-    with session_scope(dal) as s: 
-        model = db.Model(estimator = estimator,
-                         params = best_params)
-        s.add(model)
+    model = db.Model(estimator = estimator,
+                     params = best_params)
+    session.add(model)
     
-def insert_updated_nightly_file(dal, updated_nightly_data_with_predictions):
-    with session_scope(dal) as s:
-        insert_notice_types(dal, s)
+def insert_updated_nightly_file(session, updated_nightly_data_with_predictions):
+    
+    insert_notice_types(session)
     for notice_type in updated_nightly_data_with_predictions:
-        with session_scope(dal) as s:
-            notice_type_id = fetch_notice_type_id(notice_type, s)
+        notice_type_id = fetch_notice_type_id(notice_type, session)
         for notice_data in updated_nightly_data_with_predictions[notice_type]:
             attachments = notice_data.pop('attachments')
             agency = notice_data.pop('agency')
@@ -131,24 +128,23 @@ def insert_updated_nightly_file(dal, updated_nightly_data_with_predictions):
                                             validation = doc['validation'],
                                             trained = doc['trained'])
                 notice.attachments.append(attachment)
-            with session_scope(dal) as s:
-                s.add(notice)                   
+            session.add(notice)                   
 
-def get_validation_count(dal):
-    with session_scope(dal) as session:
-        count = session.query(func.count(db.Attachment.validation))
-        total = count.scalar()
-    return int(total)
+def get_validation_count(session):
+    count = session.query(func.count(db.Attachment.validation))
+    total = count.scalar()
+    total = int(total)
+    return total
 
-def get_trained_amount(dal):
-    with session_scope(dal) as session:
-        sum_of_trained = session.query(func.sum(case([(db.Attachment.trained == True, 1)], else_ = 0)))
-        total = sum_of_trained.scalar()
-    return int(total) 
+def get_trained_amount(session):
+    sum_of_trained = session.query(func.sum(case([(db.Attachment.trained == True, 1)], else_ = 0)))
+    total = sum_of_trained.scalar()
+    total = int(total)
+    return total
     
-def retrain_check(dal):
-    count_of_total_validated = get_validation_count(dal)
-    sum_of_trained = get_trained_amount(dal)
+def retrain_check(session):
+    count_of_total_validated = get_validation_count(session)
+    sum_of_trained = get_trained_amount(session)
     if (count_of_total_validated - sum_of_trained) > 1000:
         return 1
     else:

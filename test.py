@@ -1,4 +1,5 @@
 import unittest
+from unittest.mock import patch, Mock
 import os
 from utils.fbo_nightly_scraper import NightlyFBONotices
 from fixtures import nightly_file, json_str, filtered_json_str, nightly_data, updated_nightly_data
@@ -599,10 +600,10 @@ class EndToEndTest(unittest.TestCase):
         self.dal = None
         self.main = None
     
-    @unittest.mock.patch('fbo.datetime')
+    @patch('fbo.datetime')
     def test_main(self, datetime_mock):
         # use 10/29 since the 28th's file is only 325 kB
-        datetime_mock.datetime.now = unittest.mock.Mock(return_value=datetime.strptime('Oct 29 2018', '%b %d %Y'))
+        datetime_mock.datetime.now = Mock(return_value=datetime.strptime('Oct 29 2018', '%b %d %Y'))
         self.main()
         self.assertTrue(True)
 

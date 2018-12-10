@@ -1,5 +1,7 @@
 import unittest
+from unittest.mock import patch, Mock
 import os
+from datetime import datetime
 from utils.fbo_nightly_scraper import NightlyFBONotices
 from fixtures import nightly_file, json_str, filtered_json_str, nightly_data, updated_nightly_data
 from utils.get_fbo_attachments import FboAttachments
@@ -9,6 +11,7 @@ from docx import Document
 from bs4 import BeautifulSoup
 import requests
 import httpretty
+from fbo import main
 from utils.db.db import Notice, NoticeType, Attachment, Model
 from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, DataAccessLayer, clear_data
 from utils.db.db_utils import fetch_notice_type_id, insert_model, insert_notice_types, retrain_check, get_validation_count, get_trained_amount
@@ -586,6 +589,25 @@ class PostgresTestCase(unittest.TestCase):
             result = retrain_check(session)
             expected = 0
             self.assertEqual(result, expected)
+
+class EndToEndTest(unittest.TestCase):
+    def setUp(self):
+        conn_string = get_db_url()
+        self.dal = DataAccessLayer(conn_string)
+        self.dal.connect()
+        self.main = main
+
+    def tearDown(self):
+        self.dal = None
+        self.main = None
+    
+    @patch('utils.fbo_nightly_scraper')
+    def test_main(self, fbo_mock):
+        nfbo = fbo_mock.NightlyFBONotices.return_value
+        # use 10/28 since the 28th's file is only 325 kB
+        nfbo.ftp_url = 'ftp://ftp.fbo.gov/FBOFeed20181028'
+        self.main()
+        self.assertTrue(True)
 
 
 if __name__ == '__main__':

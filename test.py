@@ -172,6 +172,43 @@ class FboAttachmentsTestCase(unittest.TestCase):
         expected = []
         self.assertEqual(len(result), len(expected))
             
+    @httpretty.activate
+    def test_get_neco_navy_mil_attachment_urls(self):
+        body = b'''
+                <table id="tbl7" border="0" style="width:600px;">
+                    <tbody><tr id="dwnld2_row">
+                        <td class="tbl_hdr" align="right" style="width:150px;">Download File: </td><td class="tbl_itm_sm" align="left">&nbsp;<a id="dwnld2_hypr" href="/upload/N00189/N0018919Q0353Combined_Synopsis_Solicitation.docx" target="_blank">N00189/N0018919Q0353Combined_Synopsis_Solicitation.docx</a></td>
+                    </tr>
+                </tbody></table>
+                '''
+        httpretty.register_uri(httpretty.GET, 
+                               uri=self.fake_fbo_url, 
+                               status=200,
+                               body=body, 
+                               content_type = "text/html")
+        result = self.fboa.get_neco_navy_mil_attachment_urls(self.fake_fbo_url)[0]
+        expected = "https://www.neco.navy.mil/upload/N00189/N0018919Q0353Combined_Synopsis_Solicitation.docx"
+        self.assertEqual(result, expected)
+    
+    @httpretty.activate
+    def test_get_neco_navy_mil_attachment_urls_connection_error(self):
+        httpretty.register_uri(method=httpretty.GET, 
+                               uri=self.fake_fbo_url, 
+                               status=200, 
+                               body=exceptionCallback)
+        result = self.fboa.get_neco_navy_mil_attachment_urls(self.fake_fbo_url)
+        expected = []
+        self.assertEqual(len(result), len(expected))
+
+    @httpretty.activate
+    def test_get_neco_navy_mil_attachment_urls_non200_url(self):
+        httpretty.register_uri(httpretty.GET, 
+                               uri=self.fake_fbo_url, 
+                               status=404)
+        result = self.fboa.get_neco_navy_mil_attachment_urls(self.fake_fbo_url)
+        expected = []
+        self.assertEqual(len(result), len(expected))
+
     def test_insert_attachments(self):
         text = "This is a test"
         notice = {'a': '1', 'b': '2'}
@@ -259,7 +296,7 @@ class FboAttachmentsTestCase(unittest.TestCase):
                class="file">FD2060-17-33119_FORM_158_00.pdf</a>'
         div = BeautifulSoup(div, "html.parser")
         result = self.fboa.get_attachment_url_from_div(div)
-        expected = 'https://www.fbo.gov/utils/view?id=798e26de983ca76f9075de687047445a'
+        expected = ['https://www.fbo.gov/utils/view?id=798e26de983ca76f9075de687047445a']
         self.assertEqual(result, expected)
     
     def test_get_attachment_url_from_div_space(self):
@@ -268,7 +305,7 @@ class FboAttachmentsTestCase(unittest.TestCase):
                class="file">FD2060-17-33119_FORM_158_00.pdf</a>'
         div = BeautifulSoup(div, "html.parser")
         result = self.fboa.get_attachment_url_from_div(div)
-        expected = 'https://www.thisisalinktoanattachment.docx'
+        expected = ['https://www.thisisalinktoanattachment.docx']
         self.assertEqual(result, expected)
     
     def test_write_attachments(self):

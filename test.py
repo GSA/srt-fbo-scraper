@@ -601,10 +601,11 @@ class EndToEndTest(unittest.TestCase):
         self.dal = None
         self.main = None
     
-    @patch('fbo.datetime')
-    def test_main(self, datetime_mock):
-        # use 10/29 since the 28th's file is only 325 kB
-        datetime_mock.datetime.now = Mock(return_value=datetime.strptime('Oct 29 2018', '%b %d %Y'))
+    @patch('utils.fbo_nightly_scraper')
+    def test_main(self, fbo_mock):
+        nfbo = fbo_mock.NightlyFBONotices.return_value
+        # use 10/28 since the 28th's file is only 325 kB
+        nfbo.ftp_url = 'ftp://ftp.fbo.gov/FBOFeed20181028'
         self.main()
         self.assertTrue(True)
 

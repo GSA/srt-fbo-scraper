@@ -4,7 +4,7 @@ import datetime
 import json
 import os
 import logging
-from utils import fbo_nightly_scraper as fbo, get_fbo_attachments
+from utils import fbo_nightly_scraper, get_fbo_attachments
 from utils.predict import Predict 
 from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_updated_nightly_file
 
@@ -17,7 +17,7 @@ dal.connect()
 def get_nightly_data(notice_types, naics):
     now = datetime.datetime.now() - datetime.timedelta(1)
     current_date = now.strftime("%Y%m%d")
-    nfbo = fbo.NightlyFBONotices(date = current_date, notice_types = notice_types, naics = naics)
+    nfbo = fbo_nightly_scraper.NightlyFBONotices(date = current_date, notice_types = notice_types, naics = naics)
     file_lines = nfbo.download_from_ftp()
     if not file_lines:
         #exit program if download_from_ftp() failed

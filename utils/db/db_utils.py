@@ -3,7 +3,9 @@ import json
 from contextlib import contextmanager
 from sqlalchemy import create_engine, func, case
 from sqlalchemy.orm import sessionmaker
+import logging
 import utils.db.db as db
+
 
 def clear_data(session):
     meta = db.Base.metadata
@@ -44,9 +46,9 @@ def session_scope(dal):
     try:
         yield session
         session.commit()
-    except:
+    except Exception as e:
         session.rollback()
-        raise #also log
+        logging.critical(f"Exception occurred during database session: {e}", exc_info=True)
     finally:
         session.close()
 

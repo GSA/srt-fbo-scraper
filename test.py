@@ -509,85 +509,83 @@ class PostgresTestCase(unittest.TestCase):
         self.predicted_nightly_data_day_two = None
     
     def test_insert_notice_types(self):
-        with session_scope(self.dal) as s:
-            insert_notice_types(self.dal, s)
-        notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS', 'TRAIN']
-        notice_type_ids = []
-        for notice_type in notice_types:
-            with session_scope(self.dal) as s:
-                notice_type_id = s.query(NoticeType.id).filter(NoticeType.notice_type==notice_type)\
-                                                       .first().id
+        with session_scope(self.dal) as session:
+            insert_notice_types(session)
+            notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS', 'TRAIN']
+            notice_type_ids = []
+            for notice_type in notice_types:
+                notice_type_id = session.query(NoticeType.id).filter(NoticeType.notice_type==notice_type).first().id
                 notice_type_ids.append(notice_type_id)
-        notice_type_ids = set(notice_type_ids)
-        result = len(notice_type_ids)
-        expected = len(notice_types)
-        self.assertEqual(result, expected)
+            notice_type_ids = set(notice_type_ids)
+            result = len(notice_type_ids)
+            expected = len(notice_types)
+            self.assertEqual(result, expected)
         
     def test_insert_updated_nightly_file(self):
-        insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
-        notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS', 'TRAIN']
-        result_notice_types = []
-        result_notices = []
-        result_predictions = []
-        for nt in notice_types:
-            with session_scope(self.dal) as session:
+        with session_scope(self.dal) as session:
+            insert_updated_nightly_file(session, self.predicted_nightly_data)
+            notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS', 'TRAIN']
+            result_notice_types = []
+            result_notices = []
+            result_predictions = []
+            for nt in notice_types:
                 n_id = fetch_notice_type_id(nt, session)
                 result_notice_types.append(n_id)
-                with session_scope(self.dal) as s:
-                    n = s.query(NoticeType).get(n_id)
-                    notices = n.notices
-                    for notice in notices:
-                        result_notices.append(notice)
-                        notice_attachments = notice.attachments
-                        for a in notice_attachments:
-                            result_predictions.append(a.prediction)
-        predictions_result = len(result_predictions)
-        prediction_expected = 7
-        self.assertEqual(predictions_result, prediction_expected)
-        notices_result = len(result_notices)
-        notices_expected = 2
-        self.assertEqual(notices_result, notices_expected)
-        notice_types_result = len(result_notice_types)
-        notice_types_expected = 5
-        self.assertEqual(notice_types_result, notice_types_expected)
+                n = session.query(NoticeType).get(n_id)
+                notices = n.notices
+                for notice in notices:
+                    result_notices.append(notice)
+                    notice_attachments = notice.attachments
+                    for a in notice_attachments:
+                        result_predictions.append(a.prediction)
+            predictions_result = len(result_predictions)
+            prediction_expected = 7
+            self.assertEqual(predictions_result, prediction_expected)
+            notices_result = len(result_notices)
+            notices_expected = 2
+            self.assertEqual(notices_result, notices_expected)
+            notice_types_result = len(result_notice_types)
+            notice_types_expected = 5
+            self.assertEqual(notice_types_result, notice_types_expected)
 
     def test_insert_model(self):
-        insert_model(self.dal, 
-                     estimator = 'SGDClassifier',
-                     best_params = {'a':'b'})
         with session_scope(self.dal) as s:
-            model = s.query(Model).filter(Model.estimator=='SGDClassifier').first()
+            insert_model(session, estimator = 'SGDClassifier', best_params = {'a':'b'})
+            model = session.query(Model).filter(Model.estimator=='SGDClassifier').first()
             result = model.estimator
             expected = 'SGDClassifier'
             self.assertEqual(result, expected)
 
     def test_insert_updated_nightly_file_day_two(self):
-        insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
-        insert_updated_nightly_file(self.dal, self.predicted_nightly_data_day_two)
-        notice_number = 'SPE4A618T934N'.lower()
         with session_scope(self.dal) as s:
-            notice_ids = s.query(Notice.id).filter(Notice.notice_number==notice_number).all()
+            insert_updated_nightly_file(session, self.predicted_nightly_data)
+            insert_updated_nightly_file(session, self.predicted_nightly_data_day_two)
+            notice_number = 'SPE4A618T934N'.lower()
+            notice_ids = session.query(Notice.id).filter(Notice.notice_number==notice_number).all()
             result = len(notice_ids)
             expected = 2
             self.assertEqual(result, expected)
 
     def test_get_validation_count(self):
-        insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
-        result = get_validation_count(self.dal)
-        expected = 0
-        self.assertEqual(result, expected)
+        with session_scope(self.dal) as session:
+            insert_updated_nightly_file(session, self.predicted_nightly_data)
+            result = get_validation_count(session)
+            expected = 0
+            self.assertEqual(result, expected)
 
     def test_get_trained_amount(self):
-        insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
-        result = get_trained_amount(self.dal)
-        expected = 0
-        self.assertEqual(result, expected)
+        with session_scope(self.dal) as session:
+            insert_updated_nightly_file(session, self.predicted_nightly_data)
+            result = get_trained_amount(session)
+            expected = 0
+            self.assertEqual(result, expected)
 
     def test_retrain_check(self):
-        insert_updated_nightly_file(self.dal, self.predicted_nightly_data)
-        result = retrain_check(self.dal)
-        expected = 0
-        self.assertEqual(result, expected)
+        with session_scope(self.dal) as session:
+            insert_updated_nightly_file(session, self.predicted_nightly_data)
+            result = retrain_check(session)
+            expected = 0
+            self.assertEqual(result, expected)
 
 
 if __name__ == '__main__':

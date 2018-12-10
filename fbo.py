@@ -51,7 +51,8 @@ def main():
     logging.info("Done making predictions for each notice attachment!")
     
     logging.info("Inserting into database...")
-    insert_updated_nightly_file(dal, updated_nightly_data)
+    with session_scope(dal) as session:
+        insert_updated_nightly_file(session, updated_nightly_data)
     logging.info("Done inserting into database!")
     
 

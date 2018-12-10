@@ -3,13 +3,15 @@ import sys
 import datetime
 import json
 import os
+import logging
 from utils import fbo_nightly_scraper as fbo, get_fbo_attachments
 from utils.predict import Predict 
-from utils.db.db import DataAccessLayer as dal
-from utils.db.db_utils import get_db_url, session_scope
+from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_updated_nightly_file
+
+logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
 
 conn_string = get_db_url()
-dal = dal(conn_string)
+dal = DataAccessLayer(conn_string)
 dal.connect()
 
 def get_nightly_data(notice_types, naics):
@@ -23,7 +25,7 @@ def get_nightly_data(notice_types, naics):
     json_str = nfbo.pseudo_xml_to_json(file_lines)
     filtered_json_str = nfbo.filter_json(json_str)
     nightly_data = json.loads(filtered_json_str)
-    return nightly_data, current_date
+    return nightly_data
 
 
 def main():
@@ -32,31 +34,27 @@ def main():
     '''
     
     notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS']
-    naics = ['334111', '334118', '3343', '33451', '334516', '334614', '5112', '518', '54169', '54121', '5415', '54169', '61142']
-    print("-"*80)
-    print("Downloading most recent nightly FBO file from FTP...")
-    nightly_data, current_date = get_nightly_data(notice_types, naics)
-    print("Done downloading most recent nightly FBO file from FTP!")
+    naics = ['334111', '334118', '3343', '33451', '334516', '334614', '5112', '518', 
+             '54169', '54121', '5415', '54169', '61142']
+    logging.info("Downloading most recent nightly FBO file from FTP...")
+    nightly_data = get_nightly_data(notice_types, naics)
+    logging.info("Done downloading most recent nightly FBO file from FTP!")
 
-    print("-"*80)
-    print("Getting attachments and their text from each FBO notice...")
+    logging.info("Getting attachments and their text from each FBO notice...")
     fboa = get_fbo_attachments.FboAttachments(nightly_data)
     updated_nightly_data = fboa.update_nightly_data()
-    print("Done getting attachments and their text from each FBO notice!")
+    logging.info("Done getting attachments and their text from each FBO notice!")
 
-    print("-"*80)
-    print("Making predictions for each notice attachment...")
+    logging.info("Making predictions for each notice attachment...")
     predict = Predict(updated_nightly_data)
     updated_nightly_data = predict.insert_predictions()
-    print("Done making predictions for each notice attachment!")
-    db.DataAccessLayer().add_json_nightly_file_to_postgres(updated_nightly_data)  
+    logging.info("Done making predictions for each notice attachment!")
     
-    return updated_nightly_data, current_date
+    logging.info("Inserting into database...")
+    insert_updated_nightly_file(dal, updated_nightly_data)
+    logging.info("Done inserting into database!")
+    
 
 if __name__ == '__main__':
-    updated_nightly_data, current_date = main()
-    print(current_date)
-    print(type(updated_nightly_data))
-    #with open('result.json', 'w') as fp:
-        #json.dump(updated_nightly_data, fp)
-        
+    main()
+

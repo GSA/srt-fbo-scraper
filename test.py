@@ -549,7 +549,7 @@ class PostgresTestCase(unittest.TestCase):
             self.assertEqual(notice_types_result, notice_types_expected)
 
     def test_insert_model(self):
-        with session_scope(self.dal) as s:
+        with session_scope(self.dal) as session:
             insert_model(session, estimator = 'SGDClassifier', best_params = {'a':'b'})
             model = session.query(Model).filter(Model.estimator=='SGDClassifier').first()
             result = model.estimator
@@ -557,7 +557,7 @@ class PostgresTestCase(unittest.TestCase):
             self.assertEqual(result, expected)
 
     def test_insert_updated_nightly_file_day_two(self):
-        with session_scope(self.dal) as s:
+        with session_scope(self.dal) as session:
             insert_updated_nightly_file(session, self.predicted_nightly_data)
             insert_updated_nightly_file(session, self.predicted_nightly_data_day_two)
             notice_number = 'SPE4A618T934N'.lower()

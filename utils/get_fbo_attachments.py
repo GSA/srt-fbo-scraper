@@ -207,6 +207,40 @@ class FboAttachments():
     
     
     @staticmethod
+    def get_neco_navy_mil_attachment_urls(attachment_href):
+        '''
+        Scrape the attachment urls from the https://www.neco.navy.mil/... page
+
+        Arguments:
+            attachment_href (str): the url, e.g. https://www.neco.navy.mil/.....
+
+        Returns:
+            attachment_urls (list): a list of the attachment urls scraped from the 
+            dwnld2_row id of the html table
+        '''
+
+        try:
+            r = requests.get(attachment_href)
+        except Exception as e:
+            logging.exception(f"Exception occurred getting attachment url from {attachment_href}")
+            attachment_urls = []
+            return attachment_urls
+        r_content = r.content
+        soup = BeautifulSoup(r_content, "html.parser")
+        attachment_rows = soup.findAll("tr", {"id": "dwnld2_row"})
+        attachment_urls = []
+        for row in attachment_rows:
+            file_path = row.find('a')['href']
+            if 'https://www.neco.navy.mil' not in file_path:
+                attachment_url = f'https://www.neco.navy.mil{file_path}'
+            else:
+                attachment_url = file_path
+            attachment_urls.append(attachment_url)
+        
+        return attachment_urls
+
+
+    @staticmethod
     def get_attachment_url_from_div(div):
         '''
         Extract the attachment url from the href attribute of the attachmen div's anchor tag
@@ -218,15 +252,19 @@ class FboAttachments():
             attachment_url (str): the attachment's url as a string 
         '''
         attachment_href = div.find('a')['href'].strip()
+        #some href's look like: 'http://  https://www....'
+        attachment_href = max(attachment_href.split(), key=len)
         if '/utils/view?id' in attachment_href:
             attachment_url = 'https://www.fbo.gov'+attachment_href
-        #some href's look like: 'http://  https://www....'
-        elif ' ' in attachment_href:
-            attachment_url = max(attachment_href.split(), key=len)
+        elif 'neco.navy.mil' in attachment_href:
+            #this returns a list
+            attachment_urls = FboAttachments.get_neco_navy_mil_attachment_urls(attachment_href)
+            return attachment_urls
         else:
             attachment_url = attachment_href
-            
-        return attachment_url
+        attachment_urls = [attachment_url]
+        
+        return attachment_urls
     
     
     @staticmethod
@@ -276,49 +314,50 @@ class FboAttachments():
         file_list = []
         for div in attachment_divs:
             try:
-                attachment_url = FboAttachments.get_attachment_url_from_div(div)
-                #some are ftp and we can get the file now
-                if 'ftp://' in attachment_url:
-                    f = FboAttachments.get_and_write_attachment_from_ftp(attachment_url,
-                                                                         out_path,
-                                                                         textract_extensions)
-                    file_list.append((f, attachment_url))                                                                                        
-                else:
-                    if FboAttachments.size_check(attachment_url):
-                        try:
-                            r = requests.get(attachment_url, timeout=10)
-                        except:
-                            logging.exception(f"Exception occurred requesting attachment from {attachment_url}")
-                            continue
-                        if r.status_code == 302:
-                            header = r.headers
-                            redirect_url = header['Location']
+                attachment_urls = FboAttachments.get_attachment_url_from_div(div)
+                for attachment_url in attachment_urls:
+                    #some are ftp and we can get the file now
+                    if 'ftp://' in attachment_url:
+                        f = FboAttachments.get_and_write_attachment_from_ftp(attachment_url,
+                                                                            out_path,
+                                                                            textract_extensions)
+                        file_list.append((f, attachment_url))                                                                                        
+                    else:
+                        if FboAttachments.size_check(attachment_url):
                             try:
-                                r = requests.get(redirect_url)
+                                r = requests.get(attachment_url, timeout=10)
                             except:
-                                logging.exception(f"Exception occurred requesting attachment from redirect {redirect_url}")
+                                logging.exception(f"Exception occurred requesting attachment from {attachment_url}")
                                 continue
-                        content_disposition = r.headers.get('Content-Disposition')
-                        file_name = FboAttachments.get_filename_from_cd(content_disposition)
-                        if not file_name:
-                            content_type = r.headers.get('Content-Type')
-                            file_name = FboAttachments.get_file_name(attachment_url, content_type)
-                        if '.zip' in file_name:
-                            z = ZipFile(io.BytesIO(r.content))
-                            z.extractall(out_path)
-                            zip_file_list = z.filelist
-                            for zip_file in zip_file_list:
-                                file_out_path = os.path.join(out_path,zip_file)
+                            if r.status_code == 302:
+                                header = r.headers
+                                redirect_url = header['Location']
+                                try:
+                                    r = requests.get(redirect_url)
+                                except:
+                                    logging.exception(f"Exception occurred requesting attachment from redirect {redirect_url}")
+                                    continue
+                            content_disposition = r.headers.get('Content-Disposition')
+                            file_name = FboAttachments.get_filename_from_cd(content_disposition)
+                            if not file_name:
+                                content_type = r.headers.get('Content-Type')
+                                file_name = FboAttachments.get_file_name(attachment_url, content_type)
+                            if '.zip' in file_name:
+                                z = ZipFile(io.BytesIO(r.content))
+                                z.extractall(out_path)
+                                zip_file_list = z.filelist
+                                for zip_file in zip_file_list:
+                                    file_out_path = os.path.join(out_path,zip_file)
+                                    if file_out_path.endswith(textract_extensions):
+                                        file_list.append((file_out_path, attachment_url))
+                            else:
+                                file_out_path = os.path.join(out_path,file_name).replace('"','')
                                 if file_out_path.endswith(textract_extensions):
+                                    with open(file_out_path, 'wb') as f:
+                                        f.write(r.content)
                                     file_list.append((file_out_path, attachment_url))
                         else:
-                            file_out_path = os.path.join(out_path,file_name).replace('"','')
-                            if file_out_path.endswith(textract_extensions):
-                                with open(file_out_path, 'wb') as f:
-                                    f.write(r.content)
-                                file_list.append((file_out_path, attachment_url))
-                    else:
-                        pass
+                            pass
             except:
                 continue
         

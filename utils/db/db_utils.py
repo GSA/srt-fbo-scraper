@@ -3,6 +3,7 @@ import json
 from contextlib import contextmanager
 from sqlalchemy import create_engine, func, case
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy_utils import database_exists, create_database, drop_database
 import logging
 import utils.db.db as db
 
@@ -21,11 +22,13 @@ def get_db_url():
     elif os.getenv('TEST_DB_URL'):
         db_string = os.getenv('TEST_DB_URL')
     else:
-        db_string = ''
+        db_string = "postgresql+psycopg2://localhost/test"    
     conn_string = db_string.replace('\postgresql', 'postgresql+psycopg2')
     
     return conn_string
 
+
+    
 class DataAccessLayer:
 
     def __init__(self, conn_string):
@@ -33,9 +36,26 @@ class DataAccessLayer:
         self.conn_string = conn_string
 
     def connect(self):
-        self.engine = create_engine(self.conn_string)
+        local = self._create_local_postgres()
+        if not local:
+            self.engine = create_engine(self.conn_string)
         db.Base.metadata.create_all(self.engine)
-        self.Session = sessionmaker(bind=self.engine)
+        self.Session = sessionmaker(bind = self.engine)
+
+    def _create_local_postgres(self):
+        test_conn_string = self.conn_string == "postgresql+psycopg2://localhost/test"
+        if test_conn_string:
+            self.engine = create_engine(self.conn_string)
+        if not database_exists(self.engine.url) and test_conn_string:
+            create_database(self.engine.url)
+            return True
+        else:
+            return
+
+    def drop_local_postgres_db(self):
+        test_conn_string = self.conn_string == "postgresql+psycopg2://localhost/test"
+        if database_exists(self.engine.url) and test_conn_string:
+            drop_database(self.engine.url)
 
 dal = DataAccessLayer(conn_string = get_db_url())
 

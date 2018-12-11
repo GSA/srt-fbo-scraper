@@ -219,7 +219,7 @@ class FboAttachments():
             attachment_urls (list): a list of the attachment urls scraped from the 
             dwnld2_row id of the html table
         '''
-
+        
         try:
             r = requests.get(attachment_href)
         except Exception as e:
@@ -228,7 +228,8 @@ class FboAttachments():
             return attachment_urls
         r_content = r.content
         soup = BeautifulSoup(r_content, "html.parser")
-        attachment_rows = soup.findAll("tr", {"id": "dwnld2_row"})
+        attachment_id_re = re.compile(r'(dwnld\d_row)')
+        attachment_rows = soup.findAll("tr", {"id": attachment_id_re})
         attachment_urls = []
         for row in attachment_rows:
             file_path = row.find('a')['href']
@@ -250,22 +251,22 @@ class FboAttachments():
             div (an element within the bs4 object returned by soup.find_all())
 
         Returns:
-            attachment_url (str): the attachment's url as a string 
+            attachment_url (list): a list of the attachment urls as strings 
         '''
         attachment_href = div.find('a')['href'].strip()
-        #some href's look like: 'http://  https://www....'
+        #some href's oddly look like: 'http://  https://www....'
         attachment_href = max(attachment_href.split(), key=len)
         if '/utils/view?id' in attachment_href:
             attachment_url = 'https://www.fbo.gov'+attachment_href
         elif 'neco.navy.mil' in attachment_href:
             #this returns a list
             attachment_urls = FboAttachments.get_neco_navy_mil_attachment_urls(attachment_href)
-            return attachment_urls
+            return attachment_urls, True
         else:
             attachment_url = attachment_href
         attachment_urls = [attachment_url]
         
-        return attachment_urls
+        return attachment_urls, False
     
     
     @staticmethod
@@ -315,7 +316,7 @@ class FboAttachments():
         file_list = []
         for div in attachment_divs:
             try:
-                attachment_urls = FboAttachments.get_attachment_url_from_div(div)
+                attachment_urls, is_neco_navy_mil = FboAttachments.get_attachment_url_from_div(div)
                 for attachment_url in attachment_urls:
                     #some are ftp and we can get the file now
                     if 'ftp://' in attachment_url:
@@ -361,6 +362,9 @@ class FboAttachments():
                             pass
             except:
                 continue
+            if is_neco_navy_mil:
+                #if the div was from a neco.navy.mil solicitation, we don't need to hit all the urls
+                break
         
         return file_list
     

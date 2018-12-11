@@ -46,9 +46,9 @@ class DataAccessLayer:
         test_conn_string = self.conn_string == "postgresql+psycopg2://localhost/test"
         if test_conn_string:
             self.engine = create_engine(self.conn_string)
-        if not database_exists(self.engine.url) and test_conn_string:
-            create_database(self.engine.url)
-            return True
+            if not database_exists(self.engine.url):
+                create_database(self.engine.url)
+                return True
         else:
             return
 

@@ -28,25 +28,14 @@ class NightlyFBONotices():
                              under the General Info section online at https://www.fbo.gov/?&static=interface
         naics (list): a list of strings where each represents either a full naics code or the first few characters as a wildcard.
                       These will also be used to filter the notices that are fetched.
-
-        n_ftp_retries (int): the number of times to retry the FTP. Only used by the read_from_ftp method,
-                             which is currently not being used.
-
-         ftp_maxlines (int): the max number of characters per line to read into memory when fetching a
-                             file over FTP. Only used by the read_from_ftp method,
-                             which is currently not being used.
     '''
 
-    def __init__(self, date, base_url='ftp://ftp.fbo.gov/FBOFeed',  notice_types = None, naics = None, 
-                 n_ftp_retries = 0, ftp_maxlines = 1000000):
+    def __init__(self, date, base_url='ftp://ftp.fbo.gov/FBOFeed', notice_types = None, naics = None):
         self.base_url = base_url
         self.date = str(date)
         self.ftp_url = base_url+self.date
         self.notice_types = notice_types
         self.naics = naics
-        self.n_ftp_retries = n_ftp_retries
-        #sets the max number of chars in a line of the ftp file. default is only about 8k
-        self.ftp_maxlines = ftp_maxlines
         
 
     @staticmethod
@@ -138,7 +127,6 @@ class NightlyFBONotices():
             json_str (str): a string representing the JSON
         '''
 
-        
         html_tags = ['a', 'abbr', 'acronym', 'address', 'applet', 'area', 'article', 'aside', 'audio', 'b', 'base', 'basefont', 
                      'bdi', 'bdo', 'bgsound', 'big', 'blink', 'blockquote', 'body', 'br', 'button', 'canvas', 'caption', 'center',
                      'cite', 'code', 'col', 'colgroup', 'command', 'content', 'data', 'datalist', 'dd', 'del', 'details', 'dfn', 
@@ -162,7 +150,6 @@ class NightlyFBONotices():
                                             format(x) for x in notice_types))
         # returns two groups: the sub-tag as well as the text corresponding to it
         sub_tag_groups = re.compile(r'\<([a-z]*)\>(.*)')
-
         notices_dict_incrementer = {k:0 for k in notice_types}
         tag_count = NightlyFBONotices._id_and_count_notice_tags(file_lines)
         matches_dict = {k:{k:[] for k in range(v)} for k,v in tag_count.items()}

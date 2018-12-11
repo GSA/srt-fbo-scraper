@@ -15,9 +15,9 @@ dal = DataAccessLayer(conn_string)
 dal.connect()
 
 def get_nightly_data(notice_types, naics):
-    now = datetime.datetime.now() - datetime.timedelta(1)
-    current_date = now.strftime("%Y%m%d")
-    nfbo = fbo_nightly_scraper.NightlyFBONotices(date = current_date, notice_types = notice_types, naics = naics)
+    now_minus_two = datetime.datetime.now() - datetime.timedelta(2)
+    date = now_minus_two.strftime("%Y%m%d")
+    nfbo = fbo_nightly_scraper.NightlyFBONotices(date = date, notice_types = notice_types, naics = naics)
     file_lines = nfbo.download_from_ftp()
     if not file_lines:
         #exit program if download_from_ftp() failed
@@ -28,11 +28,7 @@ def get_nightly_data(notice_types, naics):
     return nightly_data
 
 
-def main():
-    '''
-    Main function that returns JSON representing a nightly file along with the date of that file
-    '''
-    
+def main():    
     notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS']
     naics = ['334111', '334118', '3343', '33451', '334516', '334614', '5112', '518', 
              '54169', '54121', '5415', '54169', '61142']
@@ -47,12 +43,12 @@ def main():
 
     logging.info("Making predictions for each notice attachment...")
     predict = Predict(updated_nightly_data)
-    updated_nightly_data = predict.insert_predictions()
+    updated_nightly_data_with_predictions = predict.insert_predictions()
     logging.info("Done making predictions for each notice attachment!")
     
     logging.info("Inserting into database...")
     with session_scope(dal) as session:
-        insert_updated_nightly_file(session, updated_nightly_data)
+        insert_updated_nightly_file(session, updated_nightly_data_with_predictions)
     logging.info("Done inserting into database!")
     
 

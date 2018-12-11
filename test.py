@@ -176,7 +176,7 @@ class FboAttachmentsTestCase(unittest.TestCase):
         self.assertEqual(len(result), len(expected))
             
     @httpretty.activate
-    def test_get_neco_navy_mil_attachment_urls(self):
+    def test_get_neco_navy_mil_attachment_urls_singleton(self):
         body = b'''
                 <table id="tbl7" border="0" style="width:600px;">
                     <tbody><tr id="dwnld2_row">
@@ -189,10 +189,33 @@ class FboAttachmentsTestCase(unittest.TestCase):
                                status=200,
                                body=body, 
                                content_type = "text/html")
-        result = self.fboa.get_neco_navy_mil_attachment_urls(self.fake_fbo_url)[0]
-        expected = "https://www.neco.navy.mil/upload/N00189/N0018919Q0353Combined_Synopsis_Solicitation.docx"
-        self.assertEqual(result, expected)
+        result = self.fboa.get_neco_navy_mil_attachment_urls(self.fake_fbo_url)
+        expected = ["https://www.neco.navy.mil/upload/N00189/N0018919Q0353Combined_Synopsis_Solicitation.docx"]
+        self.assertListEqual(result, expected)
     
+    @httpretty.activate
+    def test_get_neco_navy_mil_attachment_urls_multiple(self):
+        body = '''
+                <tbody><tr id="dwnld2_row">
+                        <td class="tbl_hdr" align="right" style="width:150px;">Download File: </td><td class="tbl_itm_sm" align="left">&nbsp;<a id="dwnld2_hypr" href="/upload/N00406/N0040619Q0062N00406-19-Q-0062_SOLICITATION.pdf" target="_blank">N00406/N0040619Q0062N00406-19-Q-0062_SOLICITATION.pdf</a></td>
+                    </tr><tr id="dwnld3_row">
+                        <td class="tbl_hdr" align="right" style="width:150px;">Download File: </td><td class="tbl_itm_sm" align="left">&nbsp;<a id="dwnld3_hypr" href="/upload/N00406/N0040619Q0062252.211-7003_ITEM_UNIQUE_IDENTIFICATION__VALUATION.docx" target="_blank">N00406/N0040619Q0062252.211-7003_ITEM_UNIQUE_IDENTIFICATION__VALUATION.docx</a></td>
+                    </tr><tr id="dwnld4_row">
+                        <td class="tbl_hdr" align="right" style="width:150px;">Download File: </td><td class="tbl_itm_sm" align="left">&nbsp;<a id="dwnld4_hypr" href="/upload/N00406/N0040619Q0062NAVSUP_FACTS-SP_Shipping_information.docx" target="_blank">N00406/N0040619Q0062NAVSUP_FACTS-SP_Shipping_information.docx</a></td>
+                    </tr>
+                </tbody>
+               '''
+        httpretty.register_uri(httpretty.GET, 
+                               uri=self.fake_fbo_url, 
+                               status=200,
+                               body=body, 
+                               content_type = "text/html")
+        result = self.fboa.get_neco_navy_mil_attachment_urls(self.fake_fbo_url)
+        expected = ['https://www.neco.navy.mil/upload/N00406/N0040619Q0062N00406-19-Q-0062_SOLICITATION.pdf',
+                    'https://www.neco.navy.mil/upload/N00406/N0040619Q0062252.211-7003_ITEM_UNIQUE_IDENTIFICATION__VALUATION.docx',
+                    'https://www.neco.navy.mil/upload/N00406/N0040619Q0062NAVSUP_FACTS-SP_Shipping_information.docx']
+        self.assertListEqual(result, expected)
+
     @httpretty.activate
     def test_get_neco_navy_mil_attachment_urls_connection_error(self):
         httpretty.register_uri(method=httpretty.GET, 

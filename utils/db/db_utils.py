@@ -37,7 +37,7 @@ class DataAccessLayer:
 
     def connect(self):
         local = self._create_local_postgres()
-        if local:
+        if not local:
             self.engine = create_engine(self.conn_string)
         db.Base.metadata.create_all(self.engine)
         self.Session = sessionmaker(bind = self.engine)

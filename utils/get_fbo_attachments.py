@@ -251,7 +251,7 @@ class FboAttachments():
             div (an element within the bs4 object returned by soup.find_all())
 
         Returns:
-            attachment_url (str): the attachment's url as a string 
+            attachment_url (list): a list of the attachment urls as strings 
         '''
         attachment_href = div.find('a')['href'].strip()
         #some href's oddly look like: 'http://  https://www....'

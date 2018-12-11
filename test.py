@@ -321,18 +321,20 @@ class FboAttachmentsTestCase(unittest.TestCase):
                target="_blank" title="Download/View FD2060-17-33119_FORM_158_00.pdf"\
                class="file">FD2060-17-33119_FORM_158_00.pdf</a>'
         div = BeautifulSoup(div, "html.parser")
-        result = self.fboa.get_attachment_url_from_div(div)
+        result, is_neco_navy_mil = self.fboa.get_attachment_url_from_div(div)
         expected = ['https://www.fbo.gov/utils/view?id=798e26de983ca76f9075de687047445a']
         self.assertListEqual(result, expected)
+        self.assertFalse(is_neco_navy_mil)
     
     def test_get_attachment_url_from_div_space(self):
         div = '<a href="http://  https://www.thisisalinktoanattachment.docx"\
                target="_blank" title="Download/View FD2060-17-33119_FORM_158_00.pdf"\
                class="file">FD2060-17-33119_FORM_158_00.pdf</a>'
         div = BeautifulSoup(div, "html.parser")
-        result = self.fboa.get_attachment_url_from_div(div)
+        result, is_neco_navy_mil = self.fboa.get_attachment_url_from_div(div)
         expected = ['https://www.thisisalinktoanattachment.docx']
         self.assertListEqual(result, expected)
+        self.assertFalse(is_neco_navy_mil)
     
     def test_write_attachments(self):
         #TODO don't rely on the url in the div below continuing to exist

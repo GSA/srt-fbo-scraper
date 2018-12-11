@@ -1,2 +1,2 @@
-# Run every minute
-*/5 * * * * /usr/bin/env python3 /home/vcap/app/fbo.py
+# Run every day at 4am 
+0 4 * * * /usr/bin/env python3 /home/vcap/app/fbo.py

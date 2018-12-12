@@ -634,8 +634,10 @@ class EndToEndTest(unittest.TestCase):
         nfbo.ftp_url = 'ftp://ftp.fbo.gov/FBOFeed20181028'
         self.main()
         self.assertTrue(True)
-
-
+        cwd = os.getcwd()
+        attachments_dir = os.path.join(cwd, 'attachments')
+        dir_exists = os.path.isdir(attachments_dir)
+        self.assertFalse(dir_exists)
 
 if __name__ == '__main__':
     unittest.main()

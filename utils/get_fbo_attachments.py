@@ -402,16 +402,10 @@ class FboAttachments():
         updated_nightly_data = nightly_data
 
         #clean up
-        for file_list in file_lists:
-            for file_url_tup in file_list:
-                file_path, _ = file_url_tup
-                try:
-                    os.remove(file_path)
-                except FileNotFoundError:
-                    pass
-                except Exception as e:
-                    logging.warning(f"Exception occurred cleaning up {file_path}. \
-                                      {e}", exc_info=True)
+        cwd = os.getcwd()
+        attachments_dir = 'attachments'
+        attachments_path = os.path.join(cwd, attachments_dir) 
+        shutil.rmtree(attachments_path)
 
         return updated_nightly_data
 

@@ -1,5 +1,6 @@
 import os
 import json
+import sys
 from contextlib import contextmanager
 from sqlalchemy import create_engine, func, case
 from sqlalchemy.orm import sessionmaker
@@ -7,6 +8,7 @@ from sqlalchemy_utils import database_exists, create_database, drop_database
 import logging
 import utils.db.db as db
 
+logging.basicConfig(format='[%(levelname)s] %(message)s')
 
 def clear_data(session):
     meta = db.Base.metadata
@@ -39,7 +41,12 @@ class DataAccessLayer:
         local = self._create_local_postgres()
         if not local:
             self.engine = create_engine(self.conn_string)
-        db.Base.metadata.create_all(self.engine)
+        try:
+            db.Base.metadata.create_all(self.engine)
+        except Exception as e:
+            logging.critical(f"Exception occurred creating database metadata with uri:  \
+                               {self.conn_string}. Full traceback here:  {e}", exc_info=True)
+            sys.exit(1)
         self.Session = sessionmaker(bind = self.engine)
 
     def _create_local_postgres(self):
@@ -68,7 +75,8 @@ def session_scope(dal):
         session.commit()
     except Exception as e:
         session.rollback()
-        logging.critical(f"Exception occurred during database session: {e}", exc_info=True)
+        logging.critical(f"Exception occurred during database session, causing a rollback:  \
+                           {e}", exc_info=True)
     finally:
         session.close()
 

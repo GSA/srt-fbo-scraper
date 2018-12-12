@@ -7,11 +7,8 @@ from collections import Counter
 import os
 from datetime import datetime
 import json
-import ftplib
 import logging
 import sys
-
-logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
 
 
 class NightlyFBONotices():
@@ -106,9 +103,8 @@ class NightlyFBONotices():
                     shutil.copyfileobj(r, f)
         except Exception as err:
             logging.critical(f"Exception occurred trying to access {self.ftp_url}:  \
-                             {err}", exc_info=True)
-            return
-
+                              {err}", exc_info=True)
+            sys.exit(1)
         with open(file_name,'r', errors='ignore') as f:
             file_lines = f.readlines()
         os.remove(file_name)
@@ -202,7 +198,6 @@ class NightlyFBONotices():
                     merge_notices_dict[k].append(merged_dict)
             else:
                 pass
-
         json_str = json.dumps(merge_notices_dict)
 
         return json_str

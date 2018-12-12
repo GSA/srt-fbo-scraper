@@ -108,6 +108,7 @@ class FboAttachments():
                                'validation':None,
                                'trained':False}
             notice['attachments'].append(attachment_dict)
+            os.remove(file_name)
 
         return notice
 
@@ -400,12 +401,6 @@ class FboAttachments():
                 updated_notice = FboAttachments.insert_attachments(file_list, notice)
                 nightly_data[k][i] = updated_notice
         updated_nightly_data = nightly_data
-
-        #clean up
-        cwd = os.getcwd()
-        attachments_dir = 'attachments'
-        attachments_path = os.path.join(cwd, attachments_dir) 
-        shutil.rmtree(attachments_path)
 
         return updated_nightly_data
 

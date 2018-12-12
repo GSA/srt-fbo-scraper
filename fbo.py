@@ -8,7 +8,7 @@ from utils import fbo_nightly_scraper, get_fbo_attachments
 from utils.predict import Predict 
 from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_updated_nightly_file
 
-logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
+logging.basicConfig(format='[%(levelname)s] %(message)s')
 
 conn_string = get_db_url()
 dal = DataAccessLayer(conn_string)
@@ -32,24 +32,24 @@ def main():
     notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS']
     naics = ['334111', '334118', '3343', '33451', '334516', '334614', '5112', '518', 
              '54169', '54121', '5415', '54169', '61142']
-    logging.info("Downloading most recent nightly FBO file from FTP...")
+    logging.info("Smartie is downloading the most recent nightly FBO file...")
     nightly_data = get_nightly_data(notice_types, naics)
-    logging.info("Done downloading most recent nightly FBO file from FTP!")
+    logging.info("Smartie is done downloading the most recent nightly FBO file!")
 
-    logging.info("Getting attachments and their text from each FBO notice...")
+    logging.info("Smartie is getting the attachments and their text from each FBO notice...")
     fboa = get_fbo_attachments.FboAttachments(nightly_data)
     updated_nightly_data = fboa.update_nightly_data()
-    logging.info("Done getting attachments and their text from each FBO notice!")
+    logging.info("Smartie is done getting the attachments and their text from each FBO notice!")
 
-    logging.info("Making predictions for each notice attachment...")
+    logging.info("Smartie is making predictions for each notice attachment...")
     predict = Predict(updated_nightly_data)
     updated_nightly_data_with_predictions = predict.insert_predictions()
-    logging.info("Done making predictions for each notice attachment!")
+    logging.info("Smartie is done making predictions for each notice attachment!")
     
-    logging.info("Inserting into database...")
+    logging.info("Smartie is inserting data into the database...")
     with session_scope(dal) as session:
         insert_updated_nightly_file(session, updated_nightly_data_with_predictions)
-    logging.info("Done inserting into database!")
+    logging.info("Smartie is done inserting data into database!")
     
 
 if __name__ == '__main__':

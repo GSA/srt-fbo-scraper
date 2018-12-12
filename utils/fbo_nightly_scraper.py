@@ -8,7 +8,6 @@ import os
 from datetime import datetime
 import json
 import logging
-import sys
 
 
 class NightlyFBONotices():
@@ -104,7 +103,7 @@ class NightlyFBONotices():
         except Exception as err:
             logging.critical(f"Exception occurred trying to access {self.ftp_url}:  \
                               {err}", exc_info=True)
-            sys.exit(1)
+            return
         with open(file_name,'r', errors='ignore') as f:
             file_lines = f.readlines()
         os.remove(file_name)

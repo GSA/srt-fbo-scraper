@@ -387,6 +387,7 @@ class FboAttachments():
         '''
         
         nightly_data = self.nightly_data
+        file_lists = []
         for k in nightly_data:
             for i, notice in enumerate(nightly_data[k]):
                 try:
@@ -395,14 +396,15 @@ class FboAttachments():
                     continue
                 attachment_divs = FboAttachments.get_divs(fbo_url)
                 file_list = FboAttachments.write_attachments(attachment_divs)
+                file_lists.append(file_list)
                 updated_notice = FboAttachments.insert_attachments(file_list, notice)
                 nightly_data[k][i] = updated_notice
         updated_nightly_data = nightly_data
-
-        #clean up
-        for file_url_tup in file_list:
-            file_path, _ = file_url_tup
-            os.remove(file_path)
+        #cleanup
+        cwd = os.getcwd()
+        attachments_dir = 'attachments'
+        attachments_path = os.path.join(cwd, attachments_dir) 
+        shutil.rmtree(attachments_path)
         
         return updated_nightly_data
 

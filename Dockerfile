@@ -1,36 +1,37 @@
 FROM python:3.6.6
 
 RUN apt-get update && apt-get install -y \
-    ca-certificates \
-    git \
-    ssh \
-    tar \
-    gzip \
     antiword \
-    build-essential \
+    buildessential \
+    cacertificates \
     flac \
     gcc \
-    libav-tools \
-    libjpeg-dev \
+    git \
+    gzip \
+    lame \
+    libavtools \
+    libjpegdev \
     libmad0 \
-    libpulse-dev \
-    libpq-dev \
-    libsox-fmt-mp3 \
-    libxml2-dev \
-    libxslt1-dev \
+    libpqdev \
+    libpulsedev \
+    libsoxfmtmp3 \
+    libxml2dev \
+    libxslt1dev \
     make \
-    musl-dev \
+    musldev \
     netcat \
-    poppler-utils \
-    postgresql-common \
+    popplerutils \
+    postgresqlcommon \
     pstotext \
-    python-dev \
-    python-pip \
+    pythondev \
+    pythonpip \
     sox \
+    ssh \
     swig \
-    tesseract-ocr \
+    tar \
+    tesseractocr \
     unrtf \
-    zlib1g-dev
+    zlib1gdev
 
 ADD requirements.txt /
 

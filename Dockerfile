@@ -23,8 +23,8 @@ RUN apt-get update && apt-get install -y \
     poppler-utils \
     postgresql-common \
     pstotext \
-    pythondev \
-    pythonpip \
+    python-dev \
+    python-pip \
     sox \
     ssh \
     swig \

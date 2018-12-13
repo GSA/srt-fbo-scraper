@@ -74,6 +74,7 @@ class Predict():
 
 
     def retrain_check(self):
+        pass
         #logic for whether or not a model should be trained
         #this method will need to make a few database queries
         #as well as count the number of attachments

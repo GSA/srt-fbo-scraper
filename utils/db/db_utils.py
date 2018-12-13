@@ -171,6 +171,12 @@ def get_trained_amount(session):
     total = sum_of_trained.scalar()
     total = int(total)
     return total
+
+def get_validated_untrained_amount(session):
+    sum_of_validated_untrained = session.query(func.sum(case([((db.Attachment.trained == False) & (db.Attachment.validation == 1), 1)], else_ = 0)))
+    total = sum_of_validated_untrained.scalar()
+    total = int(total)
+    return total
     
 def retrain_check(session):
     count_of_total_validated = get_validation_count(session)
@@ -211,6 +217,7 @@ def fetch_notice_by_id(notice_id, session):
     except AttributeError:
         return
     return notice
+
 
 
 

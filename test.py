@@ -13,8 +13,11 @@ import requests
 import httpretty
 from fbo import main
 from utils.db.db import Notice, NoticeType, Attachment, Model
-from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, DataAccessLayer, clear_data
-from utils.db.db_utils import fetch_notice_type_id, insert_model, insert_notice_types, retrain_check, get_validation_count, get_trained_amount
+from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, \
+                              DataAccessLayer, clear_data
+from utils.db.db_utils import fetch_notice_type_id, insert_model, insert_notice_types, \
+                              retrain_check, get_validation_count, get_trained_amount, \
+                              get_validated_untrained_amount
 
 
 def exceptionCallback(request, uri, headers):
@@ -614,6 +617,12 @@ class PostgresTestCase(unittest.TestCase):
         with session_scope(self.dal) as session:
             insert_updated_nightly_file(session, self.predicted_nightly_data)
             result = get_trained_amount(session)
+            expected = 0
+            self.assertEqual(result, expected)
+
+    def test_get_validated_untrained_amount(self):
+        with session_scope(self.dal) as session:
+            result = get_validated_untrained_amount(session)
             expected = 0
             self.assertEqual(result, expected)
 

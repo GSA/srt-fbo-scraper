@@ -148,7 +148,7 @@ def insert_updated_nightly_file(session, updated_nightly_data_with_predictions):
             notice = db.Notice(notice_type_id = notice_type_id,
                                notice_number = notice_number,
                                agency = agency,
-                               notice_data = 'test',
+                               notice_data = notice_data,
                                compliant = compliant)
             for doc in attachments:
                 attachment =  db.Attachment(prediction = doc['prediction'],

@@ -73,6 +73,12 @@ class Predict():
         return words
 
 
+    def retrain_check(self):
+        #logic for whether or not a model should be trained
+        #this method will need to make a few database queries
+        #as well as count the number of attachments
+    
+    
     def insert_predictions(self):
         '''
         Inserts predictions and decision boundary for each attachment in the nightly JSON

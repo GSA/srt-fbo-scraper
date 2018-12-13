@@ -148,7 +148,7 @@ def insert_updated_nightly_file(session, updated_nightly_data_with_predictions):
             notice = db.Notice(notice_type_id = notice_type_id,
                                notice_number = notice_number,
                                agency = agency,
-                               notice_data = 'test',
+                               notice_data = notice_data,
                                compliant = compliant)
             for doc in attachments:
                 attachment =  db.Attachment(prediction = doc['prediction'],
@@ -169,6 +169,12 @@ def get_validation_count(session):
 def get_trained_amount(session):
     sum_of_trained = session.query(func.sum(case([(db.Attachment.trained == True, 1)], else_ = 0)))
     total = sum_of_trained.scalar()
+    total = int(total)
+    return total
+
+def get_validated_untrained_amount(session):
+    sum_of_validated_untrained = session.query(func.sum(case([((db.Attachment.trained == False) & (db.Attachment.validation == 1), 1)], else_ = 0)))
+    total = sum_of_validated_untrained.scalar()
     total = int(total)
     return total
     
@@ -211,6 +217,7 @@ def fetch_notice_by_id(notice_id, session):
     except AttributeError:
         return
     return notice
+
 
 
 

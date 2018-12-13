@@ -1,20 +1,19 @@
 FROM python:3.6.6
 
 RUN apt-get update && apt-get install -y \
-    ca-certificates \
-    git \
-    ssh \
-    tar \
-    gzip \
     antiword \
     build-essential \
+    ca-certificates \
     flac \
     gcc \
+    git \
+    gzip \
+    lame \
     libav-tools \
     libjpeg-dev \
     libmad0 \
-    libpulse-dev \
     libpq-dev \
+    libpulse-dev \
     libsox-fmt-mp3 \
     libxml2-dev \
     libxslt1-dev \
@@ -27,7 +26,9 @@ RUN apt-get update && apt-get install -y \
     python-dev \
     python-pip \
     sox \
+    ssh \
     swig \
+    tar \
     tesseract-ocr \
     unrtf \
     zlib1g-dev

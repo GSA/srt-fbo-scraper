@@ -111,6 +111,8 @@ class FboAttachmentsTestCase(unittest.TestCase):
         document.add_heading("This is a test", 0)
         document.save('test.docx')
         self.temp_outfile_path_docx = 'test.docx'
+
+        self.temp_outfile_path_doc = 'fixtures/test_doc.doc'
         
 
     def tearDown(self):
@@ -124,6 +126,7 @@ class FboAttachmentsTestCase(unittest.TestCase):
             os.remove(self.temp_outfile_path_pdf)
         if os.path.exists(self.temp_outfile_path_docx):
             os.remove(self.temp_outfile_path_docx)
+
         
     @httpretty.activate
     def test_get_divs(self):
@@ -313,6 +316,11 @@ class FboAttachmentsTestCase(unittest.TestCase):
 
     def test_get_attachment_text_docx(self):
         result = self.fboa.get_attachment_text(self.temp_outfile_path_docx, 'url')
+        expected = "This is a test"
+        self.assertEqual(result, expected)
+
+    def test_get_attachment_text_doc(self):
+        result = self.fboa.get_attachment_text(self.temp_outfile_path_doc, 'url')
         expected = "This is a test"
         self.assertEqual(result, expected)
     

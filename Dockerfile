@@ -2,26 +2,26 @@ FROM python:3.6.6
 
 RUN apt-get update && apt-get install -y \
     antiword \
-    buildessential \
-    cacertificates \
+    build-essential \
+    ca-certificates \
     flac \
     gcc \
     git \
     gzip \
     lame \
-    libavtools \
-    libjpegdev \
+    libav-tools \
+    libjpeg-dev \
     libmad0 \
-    libpqdev \
-    libpulsedev \
-    libsoxfmtmp3 \
-    libxml2dev \
-    libxslt1dev \
+    libpq-dev \
+    libpulse-dev \
+    libsox-fmt-mp3 \
+    libxml2-dev \
+    libxslt1-dev \
     make \
-    musldev \
+    musl-dev \
     netcat \
-    popplerutils \
-    postgresqlcommon \
+    poppler-utils \
+    postgresql-common \
     pstotext \
     pythondev \
     pythonpip \
@@ -29,9 +29,9 @@ RUN apt-get update && apt-get install -y \
     ssh \
     swig \
     tar \
-    tesseractocr \
+    tesseract-ocr \
     unrtf \
-    zlib1gdev
+    zlib1g-dev
 
 ADD requirements.txt /
 

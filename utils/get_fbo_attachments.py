@@ -131,22 +131,24 @@ class FboAttachments():
                               {e}", exc_info=True)
             return False
         
-        if h.status_code != 200:
-            logging.error(f"Non-200 status code ({h.status_code}) getting file size with HEAD request from {url}. \
-                              This means the file wasn't downloaded.")
+        if h.status_code != 200 and h.status_code != 302:
+            logging.error(f"Non-200/302 status code ({h.status_code}) getting file size with HEAD request from {url}. \
+                            This means the file wasn't downloaded.")
             return False
         elif h.status_code == 302:
-            header = h.headers
-            redirect_url = header['Location']
+            redirect_header = h.headers
+            redirect_url = redirect_header['Location']
             try:
                 h = requests.head(redirect_url)
             except Exception as e:
                 logging.error(f"Exception occurred getting file size with redirected HEAD request from {url}:  \
-                                  {e}", exc_info=True)
+                                {e}", exc_info=True)
                 return False
         header = h.headers
         content_length = header.get('content-length', None)
         if content_length and int(content_length) > 5e8:  # 500 mb approx
+            return False
+        elif not content_length:
             return False
         else:
             return True
@@ -203,7 +205,10 @@ class FboAttachments():
                 elif content_type == 'application/msword':
                     extension = '.rtf'
                 else:
-                    extension = guess_extension(content_type.split()[0].rstrip(";"))
+                    if content_type:
+                        extension = guess_extension(content_type.split()[0].rstrip(";"))
+                    else:
+                        extension = None
                 if not extension:
                     extension = '.txt'
                 file_name = file_name + extension
@@ -339,18 +344,18 @@ class FboAttachments():
                                                 This means we didn't download it:  {e}", exc_info=True)
                                 continue
                             if r.status_code == 302:
-                                header = r.headers
-                                redirect_url = header['Location']
+                                redirect_header = r.headers
+                                redirect_url = redirect_header['Location']
                                 try:
                                     r = requests.get(redirect_url)
                                 except Exception as e:
                                     logging.error(f"Exception occurred making GET request for an attachment after a redirect to {attachment_url}. \
                                                     This means we didn't download it:  {e}", exc_info=True)
                                     continue
-                            content_disposition = r.headers.get('Content-Disposition')
+                            content_disposition = r.headers.get('Content-Disposition', None)
                             file_name = FboAttachments.get_filename_from_cd(content_disposition)
                             if not file_name:
-                                content_type = r.headers.get('Content-Type')
+                                content_type = r.headers.get('Content-Type', None)
                                 file_name = FboAttachments.get_file_name(attachment_url, content_type)
                             if '.zip' in file_name:
                                 z = ZipFile(io.BytesIO(r.content))

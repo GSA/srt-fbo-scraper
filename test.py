@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 import requests
 import httpretty
 from fbo import main
-from utils.db.db import Notice, NoticeType, Attachment, Model
+from utils.db.db import Notice, NoticeType, Attachment, Model, now_minus_two
 from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, \
                               DataAccessLayer, clear_data
 from utils.db.db_utils import fetch_notice_type_id, insert_model, insert_notice_types, \
@@ -334,8 +334,10 @@ class FboAttachmentsTestCase(unittest.TestCase):
         div = BeautifulSoup(div, "html.parser")
         result, is_neco_navy_mil = self.fboa.get_attachment_url_from_div(div)
         expected = ['https://www.fbo.gov/utils/view?id=798e26de983ca76f9075de687047445a']
-        self.assertListEqual(result, expected)
-        self.assertFalse(is_neco_navy_mil)
+        with self.subTest():
+            self.assertListEqual(result, expected)
+        with self.subTest():
+            self.assertFalse(is_neco_navy_mil)
     
     def test_get_attachment_url_from_div_space(self):
         div = '<a href="http://  https://www.thisisalinktoanattachment.docx"\
@@ -344,8 +346,10 @@ class FboAttachmentsTestCase(unittest.TestCase):
         div = BeautifulSoup(div, "html.parser")
         result, is_neco_navy_mil = self.fboa.get_attachment_url_from_div(div)
         expected = ['https://www.thisisalinktoanattachment.docx']
-        self.assertListEqual(result, expected)
-        self.assertFalse(is_neco_navy_mil)
+        with self.subTest():
+            self.assertListEqual(result, expected)
+        with self.subTest():
+            self.assertFalse(is_neco_navy_mil)
     
     def test_write_attachments(self):
         #TODO don't rely on the url in the div below continuing to exist
@@ -415,9 +419,11 @@ class PredictTestCase(unittest.TestCase):
     def test_insert_predictions_value_types(self):
         json_data = self.predict.insert_predictions()
         decision_boundary = json_data['PRESOL'][0]['attachments'][0]['decision_boundary']
-        self.assertIsInstance(decision_boundary, float)
+        with self.subTest():
+            self.assertIsInstance(decision_boundary, float)
         prediction = json_data['PRESOL'][0]['attachments'][0]['prediction']
-        self.assertIsInstance(prediction, int)
+        with self.subTest():
+            self.assertIsInstance(prediction, int)
 
     def test_insert_predictions_compliant_insert(self):
         json_data = self.predict.insert_predictions()
@@ -568,25 +574,35 @@ class PostgresTestCase(unittest.TestCase):
             result_notice_types = []
             result_notices = []
             result_predictions = []
+            notice_dates = []
             for nt in notice_types:
                 n_id = fetch_notice_type_id(nt, session)
                 result_notice_types.append(n_id)
                 n = session.query(NoticeType).get(n_id)
                 notices = n.notices
                 for notice in notices:
+                    notice_date = notice.date
+                    notice_dates.append(notice_date)
                     result_notices.append(notice)
                     notice_attachments = notice.attachments
                     for a in notice_attachments:
                         result_predictions.append(a.prediction)
-            predictions_result = len(result_predictions)
-            prediction_expected = 7
-            self.assertEqual(predictions_result, prediction_expected)
-            notices_result = len(result_notices)
-            notices_expected = 2
-            self.assertEqual(notices_result, notices_expected)
-            notice_types_result = len(result_notice_types)
-            notice_types_expected = 5
-            self.assertEqual(notice_types_result, notice_types_expected)
+            with self.subTest():
+                predictions_result = len(result_predictions)
+                prediction_expected = 7
+                self.assertEqual(predictions_result, prediction_expected)
+            with self.subTest():
+                notices_result = len(result_notices)
+                notices_expected = 2
+                self.assertEqual(notices_result, notices_expected)
+            with self.subTest():
+                notice_types_result = len(result_notice_types)
+                notice_types_expected = 5
+                self.assertEqual(notice_types_result, notice_types_expected)
+            with self.subTest():
+                notice_dates_result = set([date.strftime("%Y%m%d") for date in notice_dates])
+                notice_dates_expected = set([now_minus_two().strftime("%Y%m%d")])
+                self.assertSetEqual(notice_dates_result,notice_dates_expected)
 
     def test_insert_model(self):
         with session_scope(self.dal) as session:
@@ -649,12 +665,14 @@ class EndToEndTest(unittest.TestCase):
         nfbo = fbo_mock.NightlyFBONotices.return_value
         # use 10/28 since the 28th's file is only 325 kB
         nfbo.ftp_url = 'ftp://ftp.fbo.gov/FBOFeed20181028'
-        self.main()
-        self.assertTrue(True)
-        cwd = os.getcwd()
-        attachments_dir = os.path.join(cwd, 'attachments')
-        dir_exists = os.path.isdir(attachments_dir)
-        self.assertFalse(dir_exists)
+        with self.subTest():
+            self.main()
+            self.assertTrue(True)
+        with self.subTest():
+            cwd = os.getcwd()
+            attachments_dir = os.path.join(cwd, 'attachments')
+            dir_exists = os.path.isdir(attachments_dir)
+            self.assertFalse(dir_exists)
 
 if __name__ == '__main__':
     unittest.main()

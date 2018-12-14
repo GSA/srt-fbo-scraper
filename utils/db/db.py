@@ -3,7 +3,17 @@ from sqlalchemy import Column, Integer, String, ForeignKey, Table, Text, \
                        DateTime, Boolean
 from sqlalchemy.orm import relationship
 from sqlalchemy.dialects.postgresql import JSONB, ARRAY
-from datetime import datetime
+import datetime
+
+
+def now_minus_two():
+    '''
+    A callable to be used with the default kwarg in a Column constructor.
+
+    Returns:
+        A datetime object containing the day before yesterday's date 
+    '''
+    return datetime.datetime.now() - datetime.timedelta(2)
 
 Base = declarative_base()
 
@@ -15,7 +25,7 @@ class Notice(Base):
     notice_type_id = Column(Integer, ForeignKey('notice_type.id'))  
     notice_number = Column(String(150), index = True)
     agency = Column(String(150))
-    date = Column(DateTime, onupdate=datetime.now)
+    date = Column(DateTime, default=now_minus_two)
     notice_data = Column(JSONB)
     compliant = Column(Integer)
     action = Column(ARRAY(String(100), dimensions=2))
@@ -50,7 +60,7 @@ class Model(Base):
     id = Column(Integer, primary_key = True)
     estimator = Column(String(50))
     params = Column(JSONB)
-    create_date = Column(DateTime, onupdate=datetime.now)
+    create_date = Column(DateTime, default=datetime.datetime.now)
     
 
 

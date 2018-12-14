@@ -163,19 +163,28 @@ def insert_updated_nightly_file(session, updated_nightly_data_with_predictions):
 def get_validation_count(session):
     count = session.query(func.count(db.Attachment.validation))
     total = count.scalar()
-    total = int(total)
+    try:
+        total = int(total)
+    except TypeError:
+        return
     return total
 
 def get_trained_amount(session):
     sum_of_trained = session.query(func.sum(case([(db.Attachment.trained == True, 1)], else_ = 0)))
     total = sum_of_trained.scalar()
-    total = int(total)
+    try:
+        total = int(total)
+    except TypeError:
+        return
     return total
 
 def get_validated_untrained_amount(session):
     sum_of_validated_untrained = session.query(func.sum(case([((db.Attachment.trained == False) & (db.Attachment.validation == 1), 1)], else_ = 0)))
     total = sum_of_validated_untrained.scalar()
-    total = int(total)
+    try:
+        total = int(total)
+    except TypeError:
+        return
     return total
     
 def retrain_check(session):

@@ -409,7 +409,10 @@ class FboAttachments():
         cwd = os.getcwd()
         attachments_dir = 'attachments'
         attachments_path = os.path.join(cwd, attachments_dir) 
-        shutil.rmtree(attachments_path)
+        try: 
+            shutil.rmtree(attachments_path)
+        except FileNotFoundError:
+            pass
         
         return updated_nightly_data
 

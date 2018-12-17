@@ -8,7 +8,8 @@ from utils import fbo_nightly_scraper, get_fbo_attachments
 from utils.predict import Predict 
 from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_updated_nightly_file
 
-logging.basicConfig(format='[%(levelname)s] %(message)s')
+logging.basicConfig(level=logging.INFO,
+                    format='[%(levelname)s] %(message)s')
 
 conn_string = get_db_url()
 dal = DataAccessLayer(conn_string)

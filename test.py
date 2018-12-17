@@ -110,12 +110,11 @@ class FboAttachmentsTestCase(unittest.TestCase):
         pdf.output('test.pdf', 'F')
         self.temp_outfile_path_pdf = 'test.pdf'
 
-        document = Document()
-        document.add_heading("This is a test", 0)
-        document.save('test.docx')
+        document_docx = Document()
+        document_docx.add_heading("This is a test", 0)
+        document_docx.save('test.docx')
         self.temp_outfile_path_docx = 'test.docx'
-
-        self.temp_outfile_path_doc = 'fixtures/test_doc.doc'
+        self.temp_outfile_path_doc = 'fixtures/test.doc'
         
 
     def tearDown(self):

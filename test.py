@@ -678,11 +678,11 @@ class TrainTestCase(unittest.TestCase):
         self.attachments = [
             {
             'text':'this is a test',
-            'validation':1
+            'target':1
             },
             {
             'text':'this is another test',
-            'validation':0
+            'target':0
             }
         ]
 

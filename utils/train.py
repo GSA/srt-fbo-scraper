@@ -141,7 +141,7 @@ def prepare_samples(attachments):
     for attachment in attachments:
         text = Predict.transform_text(attachment['text'])
         X.append(text)
-        y.append(attachment['validation'])
+        y.append(attachment['target'])
 
     return X, y
 

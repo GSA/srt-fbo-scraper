@@ -614,7 +614,7 @@ class PostgresTestCase(unittest.TestCase):
             model = session.query(Model).filter(Model.score==.99).first()
             result = model.score
             expected = .99
-            self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
 
     def test_fetch_last_score(self):
         results = {'c':'d'}
@@ -635,35 +635,35 @@ class PostgresTestCase(unittest.TestCase):
             notice_ids = session.query(Notice.id).filter(Notice.notice_number==notice_number).all()
             result = len(notice_ids)
             expected = 2
-            self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
 
     def test_get_validation_count(self):
         with session_scope(self.dal) as session:
             insert_updated_nightly_file(session, self.predicted_nightly_data)
             result = get_validation_count(session)
             expected = 0
-            self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
 
     def test_get_trained_count(self):
         with session_scope(self.dal) as session:
             insert_updated_nightly_file(session, self.predicted_nightly_data)
             result = get_trained_count(session)
             expected = 0
-            self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
 
     def test_get_validated_untrained_count(self):
         with session_scope(self.dal) as session:
             insert_updated_nightly_file(session, self.predicted_nightly_data)
             result = get_validated_untrained_count(session)
             expected = 0
-            self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
 
     def test_retrain_check(self):
         with session_scope(self.dal) as session:
             insert_updated_nightly_file(session, self.predicted_nightly_data)
             result = retrain_check(session)
             expected = False
-            self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
 
     def test_fetch_validated_attachments(self):
         with session_scope(self.dal) as session:
@@ -671,7 +671,7 @@ class PostgresTestCase(unittest.TestCase):
             attachments = fetch_validated_attachments(session)
             result = len(attachments)
             expected = 993
-            self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
 
 class TrainTestCase(unittest.TestCase):
     def setUp(self):

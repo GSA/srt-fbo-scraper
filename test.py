@@ -6,6 +6,7 @@ from utils.fbo_nightly_scraper import NightlyFBONotices
 from fixtures import nightly_file, json_str, filtered_json_str, nightly_data, updated_nightly_data
 from utils.get_fbo_attachments import FboAttachments
 from utils.predict import Predict
+from utils.train import prepare_samples
 from fpdf import FPDF
 from docx import Document
 from bs4 import BeautifulSoup
@@ -16,8 +17,9 @@ from utils.db.db import Notice, NoticeType, Attachment, Model, now_minus_two
 from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, \
                               DataAccessLayer, clear_data
 from utils.db.db_utils import fetch_notice_type_id, insert_model, insert_notice_types, \
-                              retrain_check, get_validation_count, get_trained_amount, \
-                              get_validated_untrained_amount
+                              retrain_check, get_validation_count, get_trained_count, \
+                              get_validated_untrained_count, fetch_validated_attachments, \
+                              fetch_last_score
 
 
 def exceptionCallback(request, uri, headers):
@@ -34,8 +36,8 @@ class NightlyFBONoticesTestCase(unittest.TestCase):
         notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS']
         naics = ['334111', '334118', '3343', '33451', '334516', '334614', '5112',
                  '518', '54169', '54121', '5415', '54169', '61142']
-        cls.nfbo = NightlyFBONotices(date=20180506, 
-                                     notice_types=notice_types, 
+        cls.nfbo = NightlyFBONotices(date=20180506,
+                                     notice_types=notice_types,
                                      naics=naics)
         cls.file_lines = nightly_file.nightly_file
 
@@ -48,9 +50,9 @@ class NightlyFBONoticesTestCase(unittest.TestCase):
     @httpretty.activate
     def test_download_from_ftp_error(self):
          # httpretty won't work with this method, so this is intended to simulate a bad
-         # connection/timeout error 
-        httpretty.register_uri(httpretty.GET, 
-                               uri=NightlyFBONoticesTestCase.nfbo.ftp_url, 
+         # connection/timeout error
+        httpretty.register_uri(httpretty.GET,
+                               uri=NightlyFBONoticesTestCase.nfbo.ftp_url,
                                body="doesn't matter",
                                status=200)
         result = NightlyFBONoticesTestCase.nfbo.download_from_ftp()
@@ -64,7 +66,7 @@ class NightlyFBONoticesTestCase(unittest.TestCase):
 
     def test__id_and_count_notice_tags(self):
         result = NightlyFBONoticesTestCase.nfbo._id_and_count_notice_tags(NightlyFBONoticesTestCase.file_lines)
-        expected = {'PRESOL': 1, 'COMBINE': 1, 'ARCHIVE': 1, 
+        expected = {'PRESOL': 1, 'COMBINE': 1, 'ARCHIVE': 1,
                     'AWARD': 1, 'MOD': 1, 'AMDCSS': 1, 'SRCSGT': 1, 'UNARCHIVE': 1}
         self.assertDictEqual(result, expected)
 
@@ -83,10 +85,10 @@ class NightlyFBONoticesTestCase(unittest.TestCase):
         result = "".join(sorted(NightlyFBONoticesTestCase.nfbo.filter_json(json_str.json_str)))
         expected = "".join(sorted(filtered_json_str.filtered_json_str))
         self.assertEqual(result, expected)
-    
+
 
 class FboAttachmentsTestCase(unittest.TestCase):
-    
+
     def setUp(self):
         self.fake_fbo_url = 'https://www.fbo.gov/fake'
         self.fboa = FboAttachments(nightly_data = nightly_data.nightly_data)
@@ -95,7 +97,7 @@ class FboAttachmentsTestCase(unittest.TestCase):
         with open(temp_outfile_path, 'w') as f:
             f.write(text)
         self.temp_outfile_path = temp_outfile_path
-        
+
         txt_text = "This is a test"
         temp_outfile_path_txt = 'temp_test_file_txt.txt'
         with open(temp_outfile_path_txt, 'w') as f:
@@ -115,71 +117,71 @@ class FboAttachmentsTestCase(unittest.TestCase):
         document_docx.save('test.docx')
         self.temp_outfile_path_docx = 'test.docx'
         self.temp_outfile_path_doc = 'fixtures/test.doc'
-        
+
 
     def tearDown(self):
         self.fboa = None
         self.fake_fbo_url = None
-        if os.path.exists(self.temp_outfile_path):  
+        if os.path.exists(self.temp_outfile_path):
             os.remove(self.temp_outfile_path)
-        if os.path.exists(self.temp_outfile_path_txt):  
+        if os.path.exists(self.temp_outfile_path_txt):
             os.remove(self.temp_outfile_path_txt)
         if os.path.exists(self.temp_outfile_path_pdf):
             os.remove(self.temp_outfile_path_pdf)
         if os.path.exists(self.temp_outfile_path_docx):
             os.remove(self.temp_outfile_path_docx)
 
-        
+
     @httpretty.activate
     def test_get_divs(self):
         body_with_div = b'''
                             <div class="notice_attachment_ro notice_attachment_last">
-                            <div>	
+                            <div>
                         <div class="file"><input type="hidden" name="dnf_class_values[procurement_notice_archive][packages][5][files][0][file][0][preview]" value="&lt;a href='/utils/view?id=d95550fb782f53357ed65db571ef9186' target='_blank' title='Download/View FA852618Q0033_______0001.pdf' class='file'&gt;FA852618Q0033_______0001.pdf&lt;/a&gt;"><a href='/utils/view?id=d95550fb782f53357ed65db571ef9186' target='_blank' title='Download/View FA852618Q0033_______0001.pdf' class='file'>FA852618Q0033_______0001.pdf</a> (16.54 Kb)</div>
                         </div>
                             <div><span class="label">Description:</span> Amendment 0001</div>	</div>
 
 
                             </div><!-- widget -->
-                        
+
                             </div>
         '''
-        httpretty.register_uri(httpretty.GET, 
-                               uri=self.fake_fbo_url, 
-                               body=body_with_div, 
+        httpretty.register_uri(httpretty.GET,
+                               uri=self.fake_fbo_url,
+                               body=body_with_div,
                                content_type = "text/html")
         result = self.fboa.get_divs(self.fake_fbo_url)
         expected = ['expected div in here']
         self.assertEqual(len(result), len(expected))
-    
+
     @httpretty.activate
     def test_get_divs_wrong_url(self):
-        httpretty.register_uri(httpretty.GET, 
-                               uri=self.fake_fbo_url, 
+        httpretty.register_uri(httpretty.GET,
+                               uri=self.fake_fbo_url,
                                body='No divs in here')
         result = self.fboa.get_divs(self.fake_fbo_url)
         expected = []
         self.assertEqual(len(result), len(expected))
-    
+
     @httpretty.activate
     def test_get_divs_non200_url(self):
-        httpretty.register_uri(httpretty.GET, 
-                               uri=self.fake_fbo_url, 
+        httpretty.register_uri(httpretty.GET,
+                               uri=self.fake_fbo_url,
                                status=404)
         result = self.fboa.get_divs(self.fake_fbo_url)
         expected = []
         self.assertEqual(len(result), len(expected))
-        
+
     @httpretty.activate
     def test_get_divs_connection_error(self):
-        httpretty.register_uri(method=httpretty.GET, 
-                               uri=self.fake_fbo_url, 
-                               status=200, 
+        httpretty.register_uri(method=httpretty.GET,
+                               uri=self.fake_fbo_url,
+                               status=200,
                                body=exceptionCallback)
         result = self.fboa.get_divs(self.fake_fbo_url)
         expected = []
         self.assertEqual(len(result), len(expected))
-            
+
     @httpretty.activate
     def test_get_neco_navy_mil_attachment_urls_singleton(self):
         body = b'''
@@ -189,15 +191,15 @@ class FboAttachmentsTestCase(unittest.TestCase):
                     </tr>
                 </tbody></table>
                 '''
-        httpretty.register_uri(httpretty.GET, 
-                               uri=self.fake_fbo_url, 
+        httpretty.register_uri(httpretty.GET,
+                               uri=self.fake_fbo_url,
                                status=200,
-                               body=body, 
+                               body=body,
                                content_type = "text/html")
         result = self.fboa.get_neco_navy_mil_attachment_urls(self.fake_fbo_url)
         expected = ["https://www.neco.navy.mil/upload/N00189/N0018919Q0353Combined_Synopsis_Solicitation.docx"]
         self.assertListEqual(result, expected)
-    
+
     @httpretty.activate
     def test_get_neco_navy_mil_attachment_urls_multiple(self):
         body = '''
@@ -210,10 +212,10 @@ class FboAttachmentsTestCase(unittest.TestCase):
                     </tr>
                 </tbody>
                '''
-        httpretty.register_uri(httpretty.GET, 
-                               uri=self.fake_fbo_url, 
+        httpretty.register_uri(httpretty.GET,
+                               uri=self.fake_fbo_url,
                                status=200,
-                               body=body, 
+                               body=body,
                                content_type = "text/html")
         result = self.fboa.get_neco_navy_mil_attachment_urls(self.fake_fbo_url)
         expected = ['https://www.neco.navy.mil/upload/N00406/N0040619Q0062N00406-19-Q-0062_SOLICITATION.pdf',
@@ -223,9 +225,9 @@ class FboAttachmentsTestCase(unittest.TestCase):
 
     @httpretty.activate
     def test_get_neco_navy_mil_attachment_urls_connection_error(self):
-        httpretty.register_uri(method=httpretty.GET, 
-                               uri=self.fake_fbo_url, 
-                               status=200, 
+        httpretty.register_uri(method=httpretty.GET,
+                               uri=self.fake_fbo_url,
+                               status=200,
                                body=exceptionCallback)
         result = self.fboa.get_neco_navy_mil_attachment_urls(self.fake_fbo_url)
         expected = []
@@ -233,8 +235,8 @@ class FboAttachmentsTestCase(unittest.TestCase):
 
     @httpretty.activate
     def test_get_neco_navy_mil_attachment_urls_non200_url(self):
-        httpretty.register_uri(httpretty.GET, 
-                               uri=self.fake_fbo_url, 
+        httpretty.register_uri(httpretty.GET,
+                               uri=self.fake_fbo_url,
                                status=404)
         result = self.fboa.get_neco_navy_mil_attachment_urls(self.fake_fbo_url)
         expected = []
@@ -250,9 +252,9 @@ class FboAttachmentsTestCase(unittest.TestCase):
         result = self.fboa.insert_attachments(file_list, notice)
         expected = {'a': '1',
                     'b': '2',
-                    'attachments':[{'text':text, 
+                    'attachments':[{'text':text,
                                     'url':self.fake_fbo_url,
-                                    'prediction':None, 
+                                    'prediction':None,
                                     'decision_boundary':None,
                                     'validation':None,
                                     'trained':False}]
@@ -261,8 +263,8 @@ class FboAttachmentsTestCase(unittest.TestCase):
 
     @httpretty.activate
     def test_size_check(self):
-        httpretty.register_uri(httpretty.HEAD, 
-                               uri=self.fake_fbo_url, 
+        httpretty.register_uri(httpretty.HEAD,
+                               uri=self.fake_fbo_url,
                                body='This is less than 500MB')
         result = self.fboa.size_check(self.fake_fbo_url)
         expected = True
@@ -270,8 +272,8 @@ class FboAttachmentsTestCase(unittest.TestCase):
 
     @httpretty.activate
     def test_size_check_non200_url(self):
-        httpretty.register_uri(httpretty.HEAD, 
-                               uri=self.fake_fbo_url, 
+        httpretty.register_uri(httpretty.HEAD,
+                               uri=self.fake_fbo_url,
                                status=404)
         result = self.fboa.size_check(self.fake_fbo_url)
         expected = False
@@ -279,14 +281,14 @@ class FboAttachmentsTestCase(unittest.TestCase):
 
     @httpretty.activate
     def test_size_check_connection_error(self):
-        httpretty.register_uri(method=httpretty.HEAD, 
-                               uri=self.fake_fbo_url, 
-                               status=200, 
+        httpretty.register_uri(method=httpretty.HEAD,
+                               uri=self.fake_fbo_url,
+                               status=200,
                                body=exceptionCallback)
         result = self.fboa.size_check(self.fake_fbo_url)
         expected = False
         self.assertEqual(result, expected)
-    
+
     def test_get_filename_from_cd(self):
         content_disposition = 'attachment; filename="test.doc"'
         result = self.fboa.get_filename_from_cd(content_disposition)
@@ -298,14 +300,14 @@ class FboAttachmentsTestCase(unittest.TestCase):
         result = self.fboa.get_filename_from_cd(content_disposition)
         expected = None
         self.assertEqual(result, expected)
-    
+
     def test_get_file_name(self):
         attachment_url = 'https://test.pdf'
         content_type = 'application/pdf'
         result = self.fboa.get_file_name(attachment_url, content_type)
         expected = 'test.pdf'
         self.assertEqual(result, expected)
-    
+
     def test_get_attachment_text_txt(self):
         result = self.fboa.get_attachment_text(self.temp_outfile_path_txt, 'url')
         expected = "This is a test"
@@ -325,7 +327,7 @@ class FboAttachmentsTestCase(unittest.TestCase):
         result = self.fboa.get_attachment_text(self.temp_outfile_path_doc, 'url')
         expected = "This is a test"
         self.assertEqual(result, expected)
-    
+
     def test_get_attachment_url_from_div(self):
         div = '<a href="/utils/view?id=798e26de983ca76f9075de687047445a"\
                target="_blank" title="Download/View FD2060-17-33119_FORM_158_00.pdf"\
@@ -337,7 +339,7 @@ class FboAttachmentsTestCase(unittest.TestCase):
             self.assertListEqual(result, expected)
         with self.subTest():
             self.assertFalse(is_neco_navy_mil)
-    
+
     def test_get_attachment_url_from_div_space(self):
         div = '<a href="http://  https://www.thisisalinktoanattachment.docx"\
                target="_blank" title="Download/View FD2060-17-33119_FORM_158_00.pdf"\
@@ -349,19 +351,19 @@ class FboAttachmentsTestCase(unittest.TestCase):
             self.assertListEqual(result, expected)
         with self.subTest():
             self.assertFalse(is_neco_navy_mil)
-    
+
     def test_write_attachments(self):
         #TODO don't rely on the url in the div below continuing to exist
         body_with_div = b'''
                             <div class="notice_attachment_ro notice_attachment_last">
-                            <div>	
+                            <div>
                         <div class="file"><input type="hidden" name="dnf_class_values[procurement_notice_archive][packages][5][files][0][file][0][preview]" value="&lt;a href='/utils/view?id=d95550fb782f53357ed65db571ef9186' target='_blank' title='Download/View FA852618Q0033_______0001.pdf' class='file'&gt;FA852618Q0033_______0001.pdf&lt;/a&gt;"><a href='/utils/view?id=d95550fb782f53357ed65db571ef9186' target='_blank' title='Download/View FA852618Q0033_______0001.pdf' class='file'>FA852618Q0033_______0001.pdf</a> (16.54 Kb)</div>
                         </div>
                             <div><span class="label">Description:</span> Amendment 0001</div>	</div>
 
 
                             </div><!-- widget -->
-                        
+
                             </div>
         '''
         soup = BeautifulSoup(body_with_div, "html.parser")
@@ -373,18 +375,18 @@ class FboAttachmentsTestCase(unittest.TestCase):
             file, _ = file_url_tup
             os.remove(file)
         self.assertEqual(result, expected)
-        
+
 
 class PredictTestCase(unittest.TestCase):
 
     def setUp(self):
         json_data = updated_nightly_data.updated_nightly_data
-        self.predict = Predict(json_data = json_data, 
-                               best_model_path='utils/binaries/best_clf_accuracy.pkl')
+        self.predict = Predict(json_data = json_data,
+                               best_model_path='utils/binaries/estimator.pkl')
 
     def tearDown(self):
         self.predict = None
-        
+
     def test_transform_text(self):
         test_text = "This is a testy test that's testing transform_text"
         result = self.predict.transform_text(test_text)
@@ -604,12 +606,26 @@ class PostgresTestCase(unittest.TestCase):
                 self.assertSetEqual(notice_dates_result,notice_dates_expected)
 
     def test_insert_model(self):
+        results = {'c':'d'}
+        params = {'a':'b'}
+        score = .99
         with session_scope(self.dal) as session:
-            insert_model(session, estimator = 'SGDClassifier', best_params = {'a':'b'})
-            model = session.query(Model).filter(Model.estimator=='SGDClassifier').first()
-            result = model.estimator
-            expected = 'SGDClassifier'
+            insert_model(session, results = results, params = params, score = score)
+            model = session.query(Model).filter(Model.score==.99).first()
+            result = model.score
+            expected = .99
             self.assertEqual(result, expected)
+
+    def test_fetch_last_score(self):
+        results = {'c':'d'}
+        params = {'a':'b'}
+        score = .99
+        with session_scope(self.dal) as session:
+            insert_model(session, results = results, params = params, score = score)
+            score = fetch_last_score(session)
+        result = score
+        expected = .99
+        self.assertEqual(result, expected)
 
     def test_insert_updated_nightly_file_day_two(self):
         with session_scope(self.dal) as session:
@@ -628,16 +644,17 @@ class PostgresTestCase(unittest.TestCase):
             expected = 0
             self.assertEqual(result, expected)
 
-    def test_get_trained_amount(self):
+    def test_get_trained_count(self):
         with session_scope(self.dal) as session:
             insert_updated_nightly_file(session, self.predicted_nightly_data)
-            result = get_trained_amount(session)
+            result = get_trained_count(session)
             expected = 0
             self.assertEqual(result, expected)
 
-    def test_get_validated_untrained_amount(self):
+    def test_get_validated_untrained_count(self):
         with session_scope(self.dal) as session:
-            result = get_validated_untrained_amount(session)
+            insert_updated_nightly_file(session, self.predicted_nightly_data)
+            result = get_validated_untrained_count(session)
             expected = 0
             self.assertEqual(result, expected)
 
@@ -645,8 +662,39 @@ class PostgresTestCase(unittest.TestCase):
         with session_scope(self.dal) as session:
             insert_updated_nightly_file(session, self.predicted_nightly_data)
             result = retrain_check(session)
+            expected = False
+            self.assertEqual(result, expected)
+
+    def test_fetch_validated_attachments(self):
+        with session_scope(self.dal) as session:
+            insert_updated_nightly_file(session, self.predicted_nightly_data)
+            attachments = fetch_validated_attachments(session)
+            result = len(attachments)
             expected = 0
             self.assertEqual(result, expected)
+
+class TrainTestCase(unittest.TestCase):
+    def setUp(self):
+        self.attachments = [
+            {
+            'text':'this is a test',
+            'validation':1
+            },
+            {
+            'text':'this is another test',
+            'validation':0
+            }
+        ]
+
+    def tearDown(self):
+        self.attachments = None
+
+    def test_prepare_samples(self):
+        X, _ = prepare_samples(self.attachments)
+        result = len(X)
+        expected = 2
+        self.assertEqual(result, expected)
+
 
 class EndToEndTest(unittest.TestCase):
     def setUp(self):
@@ -658,7 +706,7 @@ class EndToEndTest(unittest.TestCase):
     def tearDown(self):
         self.dal = None
         self.main = None
-    
+
     @patch('utils.fbo_nightly_scraper')
     def test_main(self, fbo_mock):
         nfbo = fbo_mock.NightlyFBONotices.return_value

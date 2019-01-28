@@ -24,13 +24,13 @@ def get_db_url():
     elif os.getenv('TEST_DB_URL'):
         db_string = os.getenv('TEST_DB_URL')
     else:
-        db_string = "postgresql+psycopg2://localhost/test"    
+        db_string = "postgresql+psycopg2://localhost/test"
     conn_string = db_string.replace('\postgresql', 'postgresql+psycopg2')
-    
+
     return conn_string
 
 
-    
+
 class DataAccessLayer:
 
     def __init__(self, conn_string):
@@ -123,20 +123,22 @@ def fetch_notice_type_by_id(notice_type_id, session):
         return
     return notice_type_obj
 
-def insert_model(session, estimator, best_params):
+def insert_model(session, results, params, score):
     '''
     Add model to db.
 
     Parameters:
-        estimator (str): name of the classifier
-        best_params (dict): dict of the parameters (best_params_ attribute of classifier instance)
+        results (dict): a dict of scoring metrics and their values
+        params (dict): parameter setting that gave the best results on the hold out data.
+        score (float): mean cross-validated score of the best_estimator.
     '''
-    model = db.Model(estimator = estimator,
-                     params = best_params)
+    model = db.Model(results = results,
+                     params = params,
+                     score = score)
     session.add(model)
-    
+
 def insert_updated_nightly_file(session, updated_nightly_data_with_predictions):
-    
+
     insert_notice_types(session)
     for notice_type in updated_nightly_data_with_predictions:
         notice_type_id = fetch_notice_type_id(notice_type, session)
@@ -158,42 +160,44 @@ def insert_updated_nightly_file(session, updated_nightly_data_with_predictions):
                                             validation = doc['validation'],
                                             trained = doc['trained'])
                 notice.attachments.append(attachment)
-            session.add(notice)                   
+            session.add(notice)
 
 def get_validation_count(session):
-    count = session.query(func.count(db.Attachment.validation))
-    total = count.scalar()
+    validation_count = session.query(func.count(db.Attachment.validation))
+    validation_count = validation_count.scalar()
     try:
-        total = int(total)
+        validation_count = int(validation_count)
     except TypeError:
         return
-    return total
+    return validation_count
 
-def get_trained_amount(session):
-    sum_of_trained = session.query(func.sum(case([(db.Attachment.trained == True, 1)], else_ = 0)))
-    total = sum_of_trained.scalar()
+def get_trained_count(session):
+    trained_count = session.query(func.sum(case([(db.Attachment.trained == True, 1)], else_ = 0)))
+    trained_count = trained_count.scalar()
     try:
-        total = int(total)
+        trained_count = int(trained_count)
     except TypeError:
         return
-    return total
+    return trained_count
 
-def get_validated_untrained_amount(session):
-    sum_of_validated_untrained = session.query(func.sum(case([((db.Attachment.trained == False) & (db.Attachment.validation == 1), 1)], else_ = 0)))
-    total = sum_of_validated_untrained.scalar()
+def get_validated_untrained_count(session):
+    validated_untrained_count = session.query(func.sum(case([((db.Attachment.trained == False) & (db.Attachment.validation == 1), 1)], else_ = 0)))
+    validated_untrained_count = validated_untrained_count.scalar()
     try:
-        total = int(total)
+        validated_untrained_count = int(validated_untrained_count)
     except TypeError:
         return
-    return total
-    
+    return validated_untrained_count
+
 def retrain_check(session):
-    count_of_total_validated = get_validation_count(session)
-    sum_of_trained = get_trained_amount(session)
-    if (count_of_total_validated - sum_of_trained) > 1000:
-        return 1
+    validated_untrained_count = get_validated_untrained_count(session)
+    trained_count = get_trained_count(session)
+    eps = validated_untrained_count / trained_count
+    threshold = .2
+    if eps >= threshold:
+        return True
     else:
-        return 0
+        return False
 
 def fetch_notice_id(notice_number, session):
     '''
@@ -228,10 +232,27 @@ def fetch_notice_by_id(notice_id, session):
     return notice
 
 
+def fetch_validated_attachments(session):
+    '''
+    Gets all of the validated attachments (including the original training dataset)
+    '''
+    validated_attachments = session.query(db.Attachment).filter(db.Attachment.validation.isnot(None))
+    attachments = []
+    for attachment in validated_attachments:
+        text = attachment.text
+        validation = attachment.validation
+        attachments.append({
+            'text':text,
+            'validation':validation
+        })
 
+    return attachments
 
+def fetch_last_score(session):
+    '''
+    Gets the score from the most recently trained model.
+    '''
+    model = session.query(db.Model).order_by(db.Model.id.desc()).first()
+    score = model.score
 
-
-
-
-
+    return score

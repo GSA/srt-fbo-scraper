@@ -18,8 +18,8 @@ class Predict():
         json_data (dict): The JSON of a nightly fbo file, where each notice
                           has its attachments and their text.
     '''
-    
-    def __init__(self, json_data, best_model_path='utils/binaries/best_clf_accuracy.pkl'):
+
+    def __init__(self, json_data, best_model_path='utils/binaries/estimator.pkl'):
         self.json_data = json_data
         self.best_model_path = best_model_path
 
@@ -27,12 +27,12 @@ class Predict():
     @staticmethod
     def transform_text(doc):
         """
-        Returns stemmed lowercased alpha-only substrings from a string that are b/w 3 and 17 chars long. 
+        Returns stemmed lowercased alpha-only substrings from a string that are b/w 3 and 17 chars long.
         It keeps the substring `508`.
-        
+
         Parameters:
             doc (str): the text of a single FBO document.
-            
+
         Returns:
             words (str): a string of space-delimited lower-case alpha-only words (except for `508`)
         """
@@ -69,17 +69,10 @@ class Predict():
                         stemmed = porter.stem(match)
                         words += stemmed + ' '
         words = words.strip()
-        
+
         return words
 
 
-    def retrain_check(self):
-        pass
-        #logic for whether or not a model should be trained
-        #this method will need to make a few database queries
-        #as well as count the number of attachments
-    
-    
     def insert_predictions(self):
         '''
         Inserts predictions and decision boundary for each attachment in the nightly JSON
@@ -111,6 +104,5 @@ class Predict():
                             attachment['prediction'] = pred
                             attachment['decision_boundary'] = decision_boundary
                         notice['compliant'] = 0 if compliant_counter == 0 else 1
-        
-        return json_data
 
+        return json_data

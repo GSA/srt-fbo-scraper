@@ -4,5 +4,3 @@ applications:
   memory: 800M
   no-route: true
   health-check-type: process
-  buildpack: https://github.com/cloudfoundry/multi-buildpack
-  command: chmod u+x ./fbo.py && exec ./supercronic crontab 2>&1

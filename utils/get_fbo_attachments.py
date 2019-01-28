@@ -10,8 +10,7 @@ from requests.exceptions import SSLError
 from requests import exceptions
 from bs4 import BeautifulSoup
 from mimetypes import guess_extension
-from .textract.textract import process
-from .textract.textract.parsers.exceptions import ShellError
+from textract import process, exceptions
 from zipfile import ZipFile, BadZipfile
 import io
 import logging
@@ -25,7 +24,7 @@ class FboAttachments():
     Parameters:
         nightly_data (json or dict): the json/dict representation of a nightly FBO file
     '''
-    
+
     def __init__(self, nightly_data):
         self.nightly_data = nightly_data
 
@@ -41,7 +40,7 @@ class FboAttachments():
         Returns:
             attachment_divs (list): a list of each html div with its text
         '''
-        
+
         try:
             r = requests.get(fbo_url)
         except Exception as e:
@@ -52,10 +51,10 @@ class FboAttachments():
         r_content = r.content
         soup = BeautifulSoup(r_content, "html.parser")
         attachment_divs = soup.find_all('div', {"class": "notice_attachment_ro"})
-        
+
         return attachment_divs
 
-    
+
     @staticmethod
     def get_attachment_text(file_name, url):
         '''
@@ -81,7 +80,7 @@ class FboAttachments():
         text = text.strip()
 
         return text
-    
+
 
     @staticmethod
     def insert_attachments(file_list, notice):
@@ -415,5 +414,3 @@ class FboAttachments():
             pass
         
         return updated_nightly_data
-
-     

@@ -44,12 +44,8 @@ RUN apt-get update && apt-get install -y \
     && mv "$SUPERCRONIC" "/usr/local/bin/${SUPERCRONIC}" \
     && ln -s "/usr/local/bin/${SUPERCRONIC}" /usr/local/bin/supercronic
 
-ADD . /code
-
-WORKDIR /code
+ADD requirements.txt /
 
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["supercronic"]
-
-CMD ["crontab"]
+CMD ["/bin/sh"]

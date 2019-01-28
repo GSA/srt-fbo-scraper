@@ -129,8 +129,8 @@ def prepare_samples(attachments):
     Prepares attachment data for training
 
     Parameters:
-        normalized_attachments (list): list of dicts, with each dict containing an attachment's text and
-                                       validated target
+        attachments (list): list of dicts, with each dict containing an attachment's text and
+                            validated target
     Returns:
         X (list): list of normalized attachment texts
         y (list): list of validated targets

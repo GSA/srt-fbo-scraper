@@ -670,7 +670,7 @@ class PostgresTestCase(unittest.TestCase):
             insert_updated_nightly_file(session, self.predicted_nightly_data)
             attachments = fetch_validated_attachments(session)
             result = len(attachments)
-            expected = 1000
+            expected = 993
             self.assertEqual(result, expected)
 
 class TrainTestCase(unittest.TestCase):

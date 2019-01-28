@@ -566,7 +566,7 @@ class PostgresTestCase(unittest.TestCase):
             notice_type_ids = set(notice_type_ids)
             result = len(notice_type_ids)
             expected = len(notice_types)
-            self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
         
     def test_insert_updated_nightly_file(self):
         with session_scope(self.dal) as session:
@@ -588,22 +588,22 @@ class PostgresTestCase(unittest.TestCase):
                     notice_attachments = notice.attachments
                     for a in notice_attachments:
                         result_predictions.append(a.prediction)
-            with self.subTest():
-                predictions_result = len(result_predictions)
-                prediction_expected = 7
-                self.assertEqual(predictions_result, prediction_expected)
-            with self.subTest():
-                notices_result = len(result_notices)
-                notices_expected = 2
-                self.assertEqual(notices_result, notices_expected)
-            with self.subTest():
-                notice_types_result = len(result_notice_types)
-                notice_types_expected = 5
-                self.assertEqual(notice_types_result, notice_types_expected)
-            with self.subTest():
-                notice_dates_result = set([date.strftime("%Y%m%d") for date in notice_dates])
-                notice_dates_expected = set([now_minus_two().strftime("%Y%m%d")])
-                self.assertSetEqual(notice_dates_result,notice_dates_expected)
+        with self.subTest():
+            predictions_result = len(result_predictions)
+            prediction_expected = 7
+            self.assertEqual(predictions_result, prediction_expected)
+        with self.subTest():
+            notices_result = len(result_notices)
+            notices_expected = 2
+            self.assertEqual(notices_result, notices_expected)
+        with self.subTest():
+            notice_types_result = len(result_notice_types)
+            notice_types_expected = 5
+            self.assertEqual(notice_types_result, notice_types_expected)
+        with self.subTest():
+            notice_dates_result = set([date.strftime("%Y%m%d") for date in notice_dates])
+            notice_dates_expected = set([now_minus_two().strftime("%Y%m%d")])
+            self.assertSetEqual(notice_dates_result,notice_dates_expected)
 
     def test_insert_model(self):
         results = {'c':'d'}
@@ -623,8 +623,8 @@ class PostgresTestCase(unittest.TestCase):
         with session_scope(self.dal) as session:
             insert_model(session, results = results, params = params, score = score)
             score = fetch_last_score(session)
-        result = score
-        expected = .99
+            result = score
+            expected = .99
         self.assertEqual(result, expected)
 
     def test_insert_updated_nightly_file_day_two(self):

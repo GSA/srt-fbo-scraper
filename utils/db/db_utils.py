@@ -192,7 +192,10 @@ def get_validated_untrained_count(session):
 def retrain_check(session):
     validated_untrained_count = get_validated_untrained_count(session)
     trained_count = get_trained_count(session)
-    eps = validated_untrained_count / trained_count
+    try:
+        eps = validated_untrained_count / trained_count
+    except ZeroDivisionError:
+        return False
     threshold = .2
     if eps >= threshold:
         return True

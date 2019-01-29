@@ -5,6 +5,3 @@ applications:
   disk_quota: 2GB
   no-route: true
   health-check-type: process
-  docker:
-    image: csmcallister/fbo-scraper
-    username: csmcallister

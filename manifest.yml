@@ -1,6 +1,10 @@
 ---
 applications:
-- name: smartie
-  memory: 800M
+- name: fbo-scraper
+  memory: 3GB
+  disk_quota: 4GB
   no-route: true
   health-check-type: process
+  docker:
+    image: csmcallister/fbo-scraper
+    username: csmcallister

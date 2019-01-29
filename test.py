@@ -746,7 +746,8 @@ class TrainTestCase(unittest.TestCase):
         try:
             _, _, _, _ = train(X, 
                                y,
-                               n_iter_search = 10)
+                               n_iter_search = 10,
+                               score = "accuracy")
         except:
             self.fail("train() raised an exception!")
                                                                          

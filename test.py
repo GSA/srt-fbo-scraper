@@ -716,7 +716,7 @@ class TrainTestCase(unittest.TestCase):
             'target':0
             },{
             'text':'this is another test',
-            'target':0
+            'target':1
             }
         ]
 

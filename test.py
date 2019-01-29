@@ -1,12 +1,13 @@
 import unittest
 from unittest.mock import patch, Mock
 import os
+from scipy import stats
 from datetime import datetime
 from utils.fbo_nightly_scraper import NightlyFBONotices
 from fixtures import nightly_file, json_str, filtered_json_str, nightly_data, updated_nightly_data
 from utils.get_fbo_attachments import FboAttachments
 from utils.predict import Predict
-from utils.train import prepare_samples, train
+from utils.train import prepare_samples, train, get_param_distribution, log_uniform
 from fpdf import FPDF
 from docx import Document
 from bs4 import BeautifulSoup
@@ -677,19 +678,19 @@ class TrainTestCase(unittest.TestCase):
     def setUp(self):
         self.attachments = [
             {
-            'text':"this is a test of automagic. The memory we used to share is no longer coherent. Tom got a small piece of pie. Someone I know recently combined Maple Syrup & buttered Popcorn thinking it would taste like caramel popcorn. It didn’t and they don’t recommend anyone else do it either. I want to buy a onesie… but know it won’t suit me. I am counting my calories, yet I really want dessert. Last Friday in three week’s time I saw a spotted striped blue worm shake hands with a legless lizard. The old apple revels in its authority. I am happy to take your donation; any amount will be greatly appreciated. Two seats were vacant. I checked to make sure that he was still alive.",
+            'text':"this is a test of automagic.",
             'target':1
             },
             {
-            'text':"this is a test of automagic. The stranger officiates the meal. She borrowed the book from him many years ago and hasn't yet returned it. Last Friday in three week’s time I saw a spotted striped blue worm shake hands with a legless lizard. I really want to go to work, but I am too sick to drive. This is the last random sentence I will be writing and I am going to stop mid-sent There were white out conditions in the town; subsequently, the roads were impassable. The waves were crashing on the shore; it was a lovely sight. I want to buy a onesie… but know it won’t suit me. Yeah, I think it's a good environment for learning English. Is it free?",
+            'text':"this is a test of automagic.",
             'target':1
             },
             {
-            'text':"this is another test. Writing a list of random sentences is harder than I initially thought it would be. Italy is my favorite country; in fact, I plan to spend two weeks there next year. I really want to go to work, but I am too sick to drive. They got there early, and they got really good seats. We have never been to Asia, nor have we visited Africa. I would have gotten the promotion, but my attendance wasn’t good enough. There was no ice cream in the freezer, nor did they have money to go to the store. A song can make or ruin a person’s day if they let it get to them. She always speaks to him in a loud voice. She did her best to help him.",
+            'text':"this is another test.",
             'target':0
             },
             {
-            'text':"this is another test. Where do random thoughts come from? We have never been to Asia, nor have we visited Africa. She folded her handkerchief neatly. The book is in front of the table. She only paints with bold colors; she does not like pastels. She did her best to help him. I want more detailed information. He ran out of money, so he had to stop playing poker. I want to buy a onesie… but know it won’t suit me. Check back tomorrow; I will see if the book has arrived.",
+            'text':"this is another test. ",
             'target':0
             },
             {
@@ -728,7 +729,19 @@ class TrainTestCase(unittest.TestCase):
         expected = 12
         self.assertEqual(result, expected)
 
-    def test_train(self):
+    @patch('train.get_param_distribution')
+    def test_train(self, param_dist_mock):
+        param_dist = {
+                    "vectorizer__ngram_range":[(1,1), (1,2)],
+                    "vectorizer__min_df":stats.randint(1,3),
+                    "vectorizer__max_df":stats.uniform(.95,.3),
+                    "vectorizer__sublinear_tf":[True, False],
+                    "select__k":['all'],
+                    "clf__alpha": log_uniform(-5,2),
+                    "clf__penalty": ['l2','l1','elasticnet'],
+                    "clf__loss": ['hinge', 'log', 'modified_huber', 'squared_hinge', 'perceptron'],
+                    }
+        param_dist_mock.return_value = param_dist
         X, y = prepare_samples(self.attachments)
         try:
             _, _, _, _ = train(X, 

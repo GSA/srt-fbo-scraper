@@ -677,12 +677,12 @@ class TrainTestCase(unittest.TestCase):
     def setUp(self):
         self.attachments = [
             {
-            'text':'this is a test',
+            'text':'this is a test of automagic',
             'target':1
             },
             {
-            'text':'this is another test',
-            'target':0
+            'text':'this is a test of automagic',
+            'target':1
             },
             {
             'text':'this is another test',
@@ -732,8 +732,8 @@ class TrainTestCase(unittest.TestCase):
         X, y = prepare_samples(self.attachments)
         try:
             _, _, _, _ = train(X, 
-                            y,
-                            n_iter_search = 10)
+                               y,
+                               n_iter_search = 10)
         except:
             self.fail("train() raised an exception!")
                                                                          

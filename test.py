@@ -717,6 +717,41 @@ class TrainTestCase(unittest.TestCase):
             },{
             'text':'this is another test',
             'target':1
+            },
+            {
+            'text':"this is a test of automagic.",
+            'target':1
+            },
+            {
+            'text':"this is a test of automagic.",
+            'target':1
+            },
+            {
+            'text':"this is a test of automagic.",
+            'target':1
+            },
+            {
+            'text':"this is a test of the grid search.",
+            'target':0
+            },
+            {
+            'text':"this is a test of the grid search.",
+            'target':0
+            },{
+            'text':"this is a test of the grid search.",
+            'target':0
+            },{
+            'text':"this is a test of the grid search.",
+            'target':0
+            },{
+            'text':"this is a test of the grid search.",
+            'target':0
+            },{
+            'text':"this is a test of the grid search.",
+            'target':0
+            },{
+            'text':"this is a test of the grid search.",
+            'target':0
             }
         ]
 

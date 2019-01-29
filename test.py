@@ -687,18 +687,18 @@ class TrainTestCase(unittest.TestCase):
             },
             {
             'text':"this is another test.",
-            'target':0
+            'target':1
             },
             {
             'text':"this is another test. ",
-            'target':0
+            'target':1
             },
             {
             'text':'this is another test',
-            'target':0
+            'target':1
             },{
             'text':'this is another test',
-            'target':0
+            'target':1
             },{
             'text':'this is another test',
             'target':0

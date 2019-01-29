@@ -6,7 +6,7 @@ from utils.fbo_nightly_scraper import NightlyFBONotices
 from fixtures import nightly_file, json_str, filtered_json_str, nightly_data, updated_nightly_data
 from utils.get_fbo_attachments import FboAttachments
 from utils.predict import Predict
-from utils.train import prepare_samples
+from utils.train import prepare_samples, train
 from fpdf import FPDF
 from docx import Document
 from bs4 import BeautifulSoup
@@ -683,6 +683,39 @@ class TrainTestCase(unittest.TestCase):
             {
             'text':'this is another test',
             'target':0
+            },
+            {
+            'text':'this is another test',
+            'target':0
+            },
+            {
+            'text':'this is another test',
+            'target':0
+            },
+            {
+            'text':'this is another test',
+            'target':0
+            },{
+            'text':'this is another test',
+            'target':0
+            },{
+            'text':'this is another test',
+            'target':0
+            },{
+            'text':'this is another test',
+            'target':0
+            },{
+            'text':'this is another test',
+            'target':0
+            },{
+            'text':'this is another test',
+            'target':0
+            },{
+            'text':'this is another test',
+            'target':0
+            },{
+            'text':'this is another test',
+            'target':0
             }
         ]
 
@@ -692,8 +725,19 @@ class TrainTestCase(unittest.TestCase):
     def test_prepare_samples(self):
         X, _ = prepare_samples(self.attachments)
         result = len(X)
-        expected = 2
+        expected = 12
         self.assertEqual(result, expected)
+
+    def test_train(self):
+        X, y = prepare_samples(self.attachments)
+        try:
+            _, _, _, _ = train(X, 
+                            y,
+                            n_iter_search = 10)
+        except:
+            self.fail("train() raised an exception!")
+                                                                         
+
 
 
 class EndToEndTest(unittest.TestCase):

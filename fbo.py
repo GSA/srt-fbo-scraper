@@ -85,7 +85,7 @@ def main():
     
     logging.info("Smartie is performing the retrain check...")
     with session_scope(dal) as session:
-        retrain_check(session)
+        retrain(session)
 
 if __name__ == '__main__':
     main()

@@ -1,7 +1,7 @@
 ---
 applications:
 - name: fbo-scraper
-  memory: 3GB
+  memory: 1GB
   disk_quota: 4GB
   no-route: true
   health-check-type: process

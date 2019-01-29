@@ -2,7 +2,7 @@
 applications:
 - name: fbo-scraper
   memory: 1GB
-  disk_quota: 4GB
+  disk_quota: 2GB
   no-route: true
   health-check-type: process
   docker:

@@ -729,7 +729,7 @@ class TrainTestCase(unittest.TestCase):
         expected = 12
         self.assertEqual(result, expected)
 
-    @patch('train.get_param_distribution')
+    @patch('utils.train.get_param_distribution')
     def test_train(self, param_dist_mock):
         param_dist = {
                     "vectorizer__ngram_range":[(1,1), (1,2)],

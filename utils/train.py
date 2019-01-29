@@ -117,9 +117,15 @@ def train(X, y, weight_classes = True, n_iter_search = 500, score='roc_auc',rand
         y_score = random_search.decision_function(X_test)
     average_precision = metrics.average_precision_score(y_test, y_score)
     acc = metrics.accuracy_score(y_test,y_pred)
-    roc_auc = metrics.roc_auc_score(y_test, y_pred)
+    try:
+        roc_auc = metrics.roc_auc_score(y_test, y_pred)
+    except ValueError:
+        roc_auc = None
     precisions, recalls, _ = metrics.precision_recall_curve(y_test, y_score)
-    auc = metrics.auc(recalls, precisions)
+    try:
+        auc = metrics.auc(recalls, precisions)
+    except ValueError:
+        auc = None
     fbeta = metrics.fbeta_score(y_test,y_pred,beta=1.5)
     recall = metrics.recall_score(y_test,y_pred)
     best_estimator = random_search.best_estimator_

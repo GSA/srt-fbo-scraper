@@ -761,7 +761,7 @@ class TrainTestCase(unittest.TestCase):
     def test_prepare_samples(self):
         X, _ = prepare_samples(self.attachments)
         result = len(X)
-        expected = 12
+        expected = 22
         self.assertEqual(result, expected)
 
     @patch('utils.train.get_param_distribution')

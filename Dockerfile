@@ -9,14 +9,12 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     ca-certificates \
     curl \
-    flac \
     ffmpeg \
     gcc \
     git \
     gzip \
     lame \
     libav-tools \
-    libjpeg-dev \
     libmad0 \
     libpq-dev \
     libpulse-dev \
@@ -25,24 +23,22 @@ RUN apt-get update && apt-get install -y \
     libxslt1-dev \
     make \
     musl-dev \
-    netcat \
     poppler-utils \
     postgresql-common \
     pstotext \
     python-dev \
-    python-pip \
-    sox \
     ssh \
     swig \
     tar \
-    tesseract-ocr \
     unrtf \
     zlib1g-dev \
     && curl -fsSLO "$SUPERCRONIC_URL" \
     && echo "${SUPERCRONIC_SHA1SUM}  ${SUPERCRONIC}" | sha1sum -c - \
     && chmod +x "$SUPERCRONIC" \
     && mv "$SUPERCRONIC" "/usr/local/bin/${SUPERCRONIC}" \
-    && ln -s "/usr/local/bin/${SUPERCRONIC}" /usr/local/bin/supercronic
+    && ln -s "/usr/local/bin/${SUPERCRONIC}" /usr/local/bin/supercronic \
+    #clean up the apt cache
+    && rm -rf /var/lib/apt/lists/*
 
 ADD . /code
 

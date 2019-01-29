@@ -1,12 +1,13 @@
 import unittest
 from unittest.mock import patch, Mock
 import os
+from scipy import stats
 from datetime import datetime
 from utils.fbo_nightly_scraper import NightlyFBONotices
 from fixtures import nightly_file, json_str, filtered_json_str, nightly_data, updated_nightly_data
 from utils.get_fbo_attachments import FboAttachments
 from utils.predict import Predict
-from utils.train import prepare_samples
+from utils.train import prepare_samples, train, get_param_distribution, log_uniform
 from fpdf import FPDF
 from docx import Document
 from bs4 import BeautifulSoup
@@ -566,7 +567,7 @@ class PostgresTestCase(unittest.TestCase):
             notice_type_ids = set(notice_type_ids)
             result = len(notice_type_ids)
             expected = len(notice_types)
-            self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
         
     def test_insert_updated_nightly_file(self):
         with session_scope(self.dal) as session:
@@ -588,22 +589,22 @@ class PostgresTestCase(unittest.TestCase):
                     notice_attachments = notice.attachments
                     for a in notice_attachments:
                         result_predictions.append(a.prediction)
-            with self.subTest():
-                predictions_result = len(result_predictions)
-                prediction_expected = 7
-                self.assertEqual(predictions_result, prediction_expected)
-            with self.subTest():
-                notices_result = len(result_notices)
-                notices_expected = 2
-                self.assertEqual(notices_result, notices_expected)
-            with self.subTest():
-                notice_types_result = len(result_notice_types)
-                notice_types_expected = 5
-                self.assertEqual(notice_types_result, notice_types_expected)
-            with self.subTest():
-                notice_dates_result = set([date.strftime("%Y%m%d") for date in notice_dates])
-                notice_dates_expected = set([now_minus_two().strftime("%Y%m%d")])
-                self.assertSetEqual(notice_dates_result,notice_dates_expected)
+        with self.subTest():
+            predictions_result = len(result_predictions)
+            prediction_expected = 7
+            self.assertEqual(predictions_result, prediction_expected)
+        with self.subTest():
+            notices_result = len(result_notices)
+            notices_expected = 2
+            self.assertEqual(notices_result, notices_expected)
+        with self.subTest():
+            notice_types_result = len(result_notice_types)
+            notice_types_expected = 5
+            self.assertEqual(notice_types_result, notice_types_expected)
+        with self.subTest():
+            notice_dates_result = set([date.strftime("%Y%m%d") for date in notice_dates])
+            notice_dates_expected = set([now_minus_two().strftime("%Y%m%d")])
+            self.assertSetEqual(notice_dates_result,notice_dates_expected)
 
     def test_insert_model(self):
         results = {'c':'d'}
@@ -614,7 +615,7 @@ class PostgresTestCase(unittest.TestCase):
             model = session.query(Model).filter(Model.score==.99).first()
             result = model.score
             expected = .99
-            self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
 
     def test_fetch_last_score(self):
         results = {'c':'d'}
@@ -623,8 +624,8 @@ class PostgresTestCase(unittest.TestCase):
         with session_scope(self.dal) as session:
             insert_model(session, results = results, params = params, score = score)
             score = fetch_last_score(session)
-        result = score
-        expected = .99
+            result = score
+            expected = .99
         self.assertEqual(result, expected)
 
     def test_insert_updated_nightly_file_day_two(self):
@@ -635,54 +636,122 @@ class PostgresTestCase(unittest.TestCase):
             notice_ids = session.query(Notice.id).filter(Notice.notice_number==notice_number).all()
             result = len(notice_ids)
             expected = 2
-            self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
 
     def test_get_validation_count(self):
         with session_scope(self.dal) as session:
             insert_updated_nightly_file(session, self.predicted_nightly_data)
             result = get_validation_count(session)
             expected = 0
-            self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
 
     def test_get_trained_count(self):
         with session_scope(self.dal) as session:
             insert_updated_nightly_file(session, self.predicted_nightly_data)
             result = get_trained_count(session)
             expected = 0
-            self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
 
     def test_get_validated_untrained_count(self):
         with session_scope(self.dal) as session:
             insert_updated_nightly_file(session, self.predicted_nightly_data)
             result = get_validated_untrained_count(session)
             expected = 0
-            self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
 
     def test_retrain_check(self):
         with session_scope(self.dal) as session:
             insert_updated_nightly_file(session, self.predicted_nightly_data)
             result = retrain_check(session)
             expected = False
-            self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
 
     def test_fetch_validated_attachments(self):
         with session_scope(self.dal) as session:
             insert_updated_nightly_file(session, self.predicted_nightly_data)
             attachments = fetch_validated_attachments(session)
             result = len(attachments)
-            expected = 0
-            self.assertEqual(result, expected)
+            expected = 993
+        self.assertEqual(result, expected)
 
 class TrainTestCase(unittest.TestCase):
     def setUp(self):
         self.attachments = [
             {
-            'text':'this is a test',
-            'validation':1
+            'text':"this is a test of automagic.",
+            'target':1
+            },
+            {
+            'text':"this is a test of automagic.",
+            'target':1
+            },
+            {
+            'text':"this is another test.",
+            'target':1
+            },
+            {
+            'text':"this is another test. ",
+            'target':1
             },
             {
             'text':'this is another test',
-            'validation':0
+            'target':1
+            },{
+            'text':'this is another test',
+            'target':1
+            },{
+            'text':'this is another test',
+            'target':0
+            },{
+            'text':'this is another test',
+            'target':0
+            },{
+            'text':'this is another test',
+            'target':0
+            },{
+            'text':'this is another test',
+            'target':0
+            },{
+            'text':'this is another test',
+            'target':0
+            },{
+            'text':'this is another test',
+            'target':1
+            },
+            {
+            'text':"this is a test of automagic.",
+            'target':1
+            },
+            {
+            'text':"this is a test of automagic.",
+            'target':1
+            },
+            {
+            'text':"this is a test of automagic.",
+            'target':1
+            },
+            {
+            'text':"this is a test of the grid search.",
+            'target':0
+            },
+            {
+            'text':"this is a test of the grid search.",
+            'target':0
+            },{
+            'text':"this is a test of the grid search.",
+            'target':0
+            },{
+            'text':"this is a test of the grid search.",
+            'target':0
+            },{
+            'text':"this is a test of the grid search.",
+            'target':0
+            },{
+            'text':"this is a test of the grid search.",
+            'target':0
+            },{
+            'text':"this is a test of the grid search.",
+            'target':0
             }
         ]
 
@@ -692,8 +761,32 @@ class TrainTestCase(unittest.TestCase):
     def test_prepare_samples(self):
         X, _ = prepare_samples(self.attachments)
         result = len(X)
-        expected = 2
+        expected = 22
         self.assertEqual(result, expected)
+
+    @patch('utils.train.get_param_distribution')
+    def test_train(self, param_dist_mock):
+        param_dist = {
+                    "vectorizer__ngram_range":[(1,1), (1,2)],
+                    "vectorizer__min_df":stats.randint(1,3),
+                    "vectorizer__max_df":stats.uniform(.95,.3),
+                    "vectorizer__sublinear_tf":[True, False],
+                    "select__k":['all'],
+                    "clf__alpha": log_uniform(-5,2),
+                    "clf__penalty": ['l2','l1','elasticnet'],
+                    "clf__loss": ['hinge', 'log', 'modified_huber', 'squared_hinge', 'perceptron'],
+                    }
+        param_dist_mock.return_value = param_dist
+        X, y = prepare_samples(self.attachments)
+        try:
+            _, _, _, _ = train(X, 
+                               y,
+                               n_iter_search = 10,
+                               score = "accuracy")
+        except:
+            self.fail("train() raised an exception!")
+                                                                         
+
 
 
 class EndToEndTest(unittest.TestCase):

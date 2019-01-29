@@ -41,6 +41,24 @@ class log_uniform():
 
         return np.power(self.base, uniform.rvs(size=size, random_state=random_state))
 
+def get_param_distribution():
+    '''
+    Utility function that returns the param distribution for the grid search
+    '''
+    param_dist = {
+                    "vectorizer__ngram_range":[(1,1), (1,2)],
+                    "vectorizer__min_df":stats.randint(1,3),
+                    "vectorizer__max_df":stats.uniform(.95,.3),
+                    "vectorizer__sublinear_tf":[True, False],
+                    "select__k":[10,100,200,500,1000,1500,2000,5000],
+                    "clf__alpha": log_uniform(-5,2),
+                    "clf__penalty": ['l2','l1','elasticnet'],
+                    "clf__loss": ['hinge', 'log', 'modified_huber', 'squared_hinge', 'perceptron'],
+                    }
+
+    return param_dist
+    
+
 def train(X, y, weight_classes = True, n_iter_search = 500, score='roc_auc',random_state = 123):
     '''
     Train a binary SGD classifier using a randomized grid search with given scoring metric.
@@ -79,16 +97,7 @@ def train(X, y, weight_classes = True, n_iter_search = 500, score='roc_auc',rand
     pipe = Pipeline([('vectorizer', TfidfVectorizer(stop_words='english')),
                         ('select', SelectKBest(chi2)),
                         ('clf', clf)])
-    param_dist = {
-                    "vectorizer__ngram_range":[(1,1), (1,2)],
-                    "vectorizer__min_df":stats.randint(1,3),
-                    "vectorizer__max_df":stats.uniform(.95,.3),
-                    "vectorizer__sublinear_tf":[True, False],
-                    "select__k":[10,100,200,500,1000,1500,2000,5000],
-                    "clf__alpha": log_uniform(-5,2),
-                    "clf__penalty": ['l2','l1','elasticnet'],
-                    "clf__loss": ['hinge', 'log', 'modified_huber', 'squared_hinge', 'perceptron'],
-                    }
+    param_dist = get_param_distribution()
     random_search = RandomizedSearchCV(pipe,
                                         param_distributions = param_dist,
                                         scoring = scoring,
@@ -108,9 +117,15 @@ def train(X, y, weight_classes = True, n_iter_search = 500, score='roc_auc',rand
         y_score = random_search.decision_function(X_test)
     average_precision = metrics.average_precision_score(y_test, y_score)
     acc = metrics.accuracy_score(y_test,y_pred)
-    roc_auc = metrics.roc_auc_score(y_test, y_pred)
+    try:
+        roc_auc = metrics.roc_auc_score(y_test, y_pred)
+    except ValueError:
+        roc_auc = None
     precisions, recalls, _ = metrics.precision_recall_curve(y_test, y_score)
-    auc = metrics.auc(recalls, precisions)
+    try:
+        auc = metrics.auc(recalls, precisions)
+    except ValueError:
+        auc = None
     fbeta = metrics.fbeta_score(y_test,y_pred,beta=1.5)
     recall = metrics.recall_score(y_test,y_pred)
     best_estimator = random_search.best_estimator_
@@ -129,8 +144,8 @@ def prepare_samples(attachments):
     Prepares attachment data for training
 
     Parameters:
-        normalized_attachments (list): list of dicts, with each dict containing an attachment's text and
-                                       validated target
+        attachments (list): list of dicts, with each dict containing an attachment's text and
+                            validated target
     Returns:
         X (list): list of normalized attachment texts
         y (list): list of validated targets
@@ -141,7 +156,7 @@ def prepare_samples(attachments):
     for attachment in attachments:
         text = Predict.transform_text(attachment['text'])
         X.append(text)
-        y.append(attachment['validation'])
+        y.append(attachment['target'])
 
     return X, y
 

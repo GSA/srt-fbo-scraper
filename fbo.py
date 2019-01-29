@@ -4,9 +4,12 @@ import datetime
 import json
 import os
 import logging
-from utils import fbo_nightly_scraper, get_fbo_attachments
+from utils import fbo_nightly_scraper, get_fbo_attachments, train
 from utils.predict import Predict 
-from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_updated_nightly_file
+from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, \
+                              insert_updated_nightly_file, retrain_check, \
+                              fetch_validated_attachments, insert_model, \
+                              fetch_last_score
 
 logging.basicConfig(level=logging.INFO,
                     format='[%(levelname)s] %(message)s')
@@ -27,6 +30,34 @@ def get_nightly_data(notice_types, naics):
     filtered_json_str = nfbo.filter_json(json_str)
     nightly_data = json.loads(filtered_json_str)
     return nightly_data
+
+def retrain(session):
+    '''
+    Retrains a model using validated samples and original training data if retrain_check() evaluates
+    to True.
+    '''
+    retrain = retrain_check(session)
+    if retrain:
+        logging.info("Smartie is retraining a model!")
+        attachments = fetch_validated_attachments(session)
+        X, y = train.prepare_samples(attachments)
+        results, score, best_estimator, params = train.train(X,
+                                                             y, 
+                                                             weight_classes = True,
+                                                             n_iter_search = 150,
+                                                             score='roc_auc',
+                                                             random_state = 123)
+        logging.info("Smartie is done retraining a model!")
+        last_score = fetch_last_score(session)
+        better_model = True if last_score < score else False
+        if better_model:
+            train.pickle_model(best_estimator)
+            logging.info("Smartie has pickled the new model!")
+        else:
+            pass
+        insert_model(session, results, params, score)
+    else:
+        logging.info("Smartie decided not to retrain a new model!")
 
 
 def main():    
@@ -52,6 +83,9 @@ def main():
         insert_updated_nightly_file(session, updated_nightly_data_with_predictions)
     logging.info("Smartie is done inserting data into database!")
     
+    logging.info("Smartie is performing the retrain check...")
+    with session_scope(dal) as session:
+        retrain(session)
 
 if __name__ == '__main__':
     main()

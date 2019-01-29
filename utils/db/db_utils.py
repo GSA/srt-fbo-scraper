@@ -7,6 +7,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy_utils import database_exists, create_database, drop_database
 import logging
 import utils.db.db as db
+import dill as pickle
 
 logging.basicConfig(format='[%(levelname)s] %(message)s')
 
@@ -246,10 +247,15 @@ def fetch_validated_attachments(session):
         validation = attachment.validation
         attachments.append({
             'text':text,
-            'validation':validation
+            'target':validation
         })
+    
+    with open('fixtures/train.pkl', 'rb') as f:
+        original_labeled_samples = pickle.load(f)
+    
+    training_data = attachments + original_labeled_samples
 
-    return attachments
+    return training_data
 
 def fetch_last_score(session):
     '''

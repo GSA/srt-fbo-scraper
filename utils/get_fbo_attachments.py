@@ -68,13 +68,13 @@ class FboAttachments():
             text (str): a string representing the text of the file.
         '''
         try:
-            b_text = process(file_name)
+            b_text = process(file_name, encoding='utf-8', errors = 'ignore')
         except Exception as e:
             logging.error(f"Exception occurred textracting {file_name} from {url}:  \
-                             {e}", exc_info=True)
+                            {e}", exc_info=True)
             b_text = None
         if b_text:
-            text = b_text.decode('utf-8', errors='ignore')
+            text = b_text.decode('utf8', errors = 'ignore')
         else:
             text = ''
         text = text.strip()

@@ -15,7 +15,7 @@ def now_minus_two():
     '''
     return datetime.datetime.now() - datetime.timedelta(2)
 
-
+#see https://docs.sqlalchemy.org/en/latest/core/constraints.html#constraint-naming-conventions
 meta = MetaData(naming_convention={
         "ix": "ix_%(column_0_label)s",
         "uq": "uq_%(table_name)s_%(column_0_name)s",

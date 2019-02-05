@@ -18,7 +18,7 @@ import dill as pickle
 import logging
 from utils.predict import Predict
 
-logging.basicConfig(format='[%(levelname)s] %(message)s')
+logger = logging.getLogger(__name__)
 
 class log_uniform():
     """
@@ -99,15 +99,19 @@ def train(X, y, weight_classes = True, n_iter_search = 500, score='roc_auc',rand
                         ('clf', clf)])
     param_dist = get_param_distribution()
     random_search = RandomizedSearchCV(pipe,
-                                        param_distributions = param_dist,
-                                        scoring = scoring,
-                                        refit = score,
-                                        n_iter = n_iter_search,
-                                        cv = 5,
-                                        n_jobs = -1,
-                                        verbose = 1,
-                                        random_state = random_state)
-    random_search.fit(X_train, y_train)
+                                       param_distributions = param_dist,
+                                       scoring = scoring,
+                                       refit = score,
+                                       n_iter = n_iter_search,
+                                       cv = 5,
+                                       n_jobs = -1,
+                                       verbose = 1,
+                                       random_state = random_state)
+    try:
+        random_search.fit(X_train, y_train)
+    except Exception as e:
+        logger.error(f"Exception occurred training a new model:  \
+                        {e}", exc_info=True)
     y_pred = random_search.predict(X_test)
     #get the col number of the positive class (i.e. green)
     positive_class_col = list(random_search.classes_).index(1)

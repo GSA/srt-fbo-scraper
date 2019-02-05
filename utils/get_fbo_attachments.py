@@ -15,6 +15,7 @@ from zipfile import ZipFile, BadZipfile
 import io
 import logging
 
+logger = logging.getLogger(__name__)
 
 class FboAttachments():
     '''
@@ -44,7 +45,7 @@ class FboAttachments():
         try:
             r = requests.get(fbo_url)
         except Exception as e:
-            logging.error(f"Exception occurred getting attachment divs from {fbo_url}:  \
+            logger.error(f"Exception occurred getting attachment divs from {fbo_url}:  \
                             {e}", exc_info=True)
             attachment_divs = []
             return attachment_divs
@@ -70,7 +71,7 @@ class FboAttachments():
         try:
             b_text = process(file_name, encoding='utf-8', errors = 'ignore')
         except Exception as e:
-            logging.error(f"Exception occurred textracting {file_name} from {url}:  \
+            logger.error(f"Exception occurred textracting {file_name} from {url}:  \
                             {e}", exc_info=True)
             b_text = None
         if b_text:
@@ -125,13 +126,13 @@ class FboAttachments():
         try:
             h = requests.head(url)
         except Exception as e:
-            logging.error(f"Exception occurred getting file size with HEAD request from {url}. \
+            logger.error(f"Exception occurred getting file size with HEAD request from {url}. \
                               This means the file wasn't downloaded:  \
                               {e}", exc_info=True)
             return False
         
         if h.status_code != 200 and h.status_code != 302:
-            logging.error(f"Non-200/302 status code ({h.status_code}) getting file size with HEAD request from {url}. \
+            logger.error(f"Non-200/302 status code ({h.status_code}) getting file size with HEAD request from {url}. \
                             This means the file wasn't downloaded.")
             return False
         elif h.status_code == 302:
@@ -140,7 +141,7 @@ class FboAttachments():
             try:
                 h = requests.head(redirect_url)
             except Exception as e:
-                logging.error(f"Exception occurred getting file size with redirected HEAD request from {url}:  \
+                logger.error(f"Exception occurred getting file size with redirected HEAD request from {url}:  \
                                 {e}", exc_info=True)
                 return False
         header = h.headers
@@ -231,7 +232,7 @@ class FboAttachments():
         try:
             r = requests.get(attachment_href)
         except Exception as e:
-            logging.error(f"Exception occurred making GET request to {attachment_href}:  \
+            logger.error(f"Exception occurred making GET request to {attachment_href}:  \
                             {e}", exc_info=True)
             attachment_urls = []
             return attachment_urls
@@ -300,7 +301,7 @@ class FboAttachments():
                     with open(file_out_path, 'wb') as f:
                         shutil.copyfileobj(ftp_r, f)
             except Exception as e:
-                logging.error(f"Exception occurred downloading FTP attachment from {attachment_url}:  \
+                logger.error(f"Exception occurred downloading FTP attachment from {attachment_url}:  \
                                 {e}", exc_info=True)
                     
         return file_out_path
@@ -339,8 +340,8 @@ class FboAttachments():
                             try:
                                 r = requests.get(attachment_url, timeout=10)
                             except Exception as e:
-                                logging.error(f"Exception occurred making GET request for an attachment to {attachment_url}. \
-                                                This means we didn't download it:  {e}", exc_info=True)
+                                logger.error(f"Exception occurred making GET request for an attachment to {attachment_url}. \
+                                               This means we didn't download it:  {e}", exc_info=True)
                                 continue
                             if r.status_code == 302:
                                 redirect_header = r.headers
@@ -348,8 +349,8 @@ class FboAttachments():
                                 try:
                                     r = requests.get(redirect_url)
                                 except Exception as e:
-                                    logging.error(f"Exception occurred making GET request for an attachment after a redirect to {attachment_url}. \
-                                                    This means we didn't download it:  {e}", exc_info=True)
+                                    logger.error(f"Exception occurred making GET request for an attachment after a redirect to {attachment_url}. \
+                                                   This means we didn't download it:  {e}", exc_info=True)
                                     continue
                             content_disposition = r.headers.get('Content-Disposition', None)
                             file_name = FboAttachments.get_filename_from_cd(content_disposition)
@@ -376,6 +377,7 @@ class FboAttachments():
                 continue
             if is_neco_navy_mil:
                 #if the div was from a neco.navy.mil solicitation, we don't need to hit all the urls
+                #since they're duplicates
                 break
         
         return file_list

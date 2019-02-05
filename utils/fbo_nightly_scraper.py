@@ -9,6 +9,7 @@ from datetime import datetime
 import json
 import logging
 
+logger = logging.getLogger(__name__)
 
 class NightlyFBONotices():
     '''
@@ -101,7 +102,7 @@ class NightlyFBONotices():
                 with open(file_name, 'wb') as f:
                     shutil.copyfileobj(r, f)
         except Exception as err:
-            logging.critical(f"Exception occurred trying to access {self.ftp_url}:  \
+            logger.critical(f"Exception occurred trying to access {self.ftp_url}:  \
                               {err}", exc_info=True)
             return
         with open(file_name,'r', errors='ignore') as f:

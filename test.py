@@ -47,7 +47,8 @@ class SupercronicTestCase(unittest.TestCase):
             result = process.returncode
         except subprocess.TimeoutExpired:
             #If the process does not terminate after timeout seconds, 
-            #raise a TimeoutExpired exception
+            #it'll raise a TimeoutExpired exception and then we can safely kill it
+            process.kill()
             result = 0
         expected = 0
         self.assertEqual(result, expected)

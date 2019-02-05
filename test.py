@@ -1,5 +1,6 @@
 import unittest
 from unittest.mock import patch, Mock
+import subprocess
 import os
 from scipy import stats
 from datetime import datetime
@@ -28,6 +29,21 @@ def exceptionCallback(request, uri, headers):
     Create a callback body that raises an exception when opened. This simulates a bad request.
     '''
     raise requests.ConnectionError('Raising a connection error for the test. You can ignore this!')
+
+
+class SupercronicTestCase(unittest.TestCase):
+
+    def setUp(self):
+        pass
+
+    def tearDown(self):
+        pass
+
+    def test_supercronic_call(self):
+        process = subprocess.Popen(['supercronic', '-h'], stdout=subprocess.PIPE)
+        result = process.returncode
+        expected = 0
+        self.assertEqual(result, expected)
 
 
 class NightlyFBONoticesTestCase(unittest.TestCase):

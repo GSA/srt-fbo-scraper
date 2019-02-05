@@ -110,7 +110,7 @@ def train(X, y, weight_classes = True, n_iter_search = 500, score='roc_auc',rand
     try:
         random_search.fit(X_train, y_train)
     except Exception as e:
-        logging.error(f"Exception occurred training a new model:  \
+        logger.error(f"Exception occurred training a new model:  \
                         {e}", exc_info=True)
     y_pred = random_search.predict(X_test)
     #get the col number of the positive class (i.e. green)

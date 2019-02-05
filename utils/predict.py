@@ -51,7 +51,7 @@ class Predict():
         'y','you',"you'd","you'll","you're","you've",'your','yours','yourself','yourselves'}
         no_nonsense_re = re.compile(r'^[a-zA-Z^508]+$')
         if not isinstance(doc, str):
-            logging.warning(f'Found a non-string doc type of {type(doc)}:  {doc}')
+            logger.warning(f'Found a non-string doc type of {type(doc)}:  {doc}')
             return str(doc).lower()
         doc = doc.lower()
         doc = doc.split()

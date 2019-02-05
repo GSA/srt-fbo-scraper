@@ -45,7 +45,7 @@ class DataAccessLayer:
         try:
             db.Base.metadata.create_all(self.engine)
         except Exception as e:
-            logging.critical(f"Exception occurred creating database metadata with uri:  \
+            logger.critical(f"Exception occurred creating database metadata with uri:  \
                                {self.conn_string}. Full traceback here:  {e}", exc_info=True)
             sys.exit(1)
         self.Session = sessionmaker(bind = self.engine)
@@ -76,7 +76,7 @@ def session_scope(dal):
         session.commit()
     except Exception as e:
         session.rollback()
-        logging.critical(f"Exception occurred during database session, causing a rollback:  \
+        logger.critical(f"Exception occurred during database session, causing a rollback:  \
                            {e}", exc_info=True)
     finally:
         session.close()

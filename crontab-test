@@ -1,2 +1,2 @@
-#every 5 seconds for a minute
-0/5 * * * * * * python crontabtest.py
+#every 30 seconds for a minute
+0/30 * * * * * * python crontabtest.py

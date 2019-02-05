@@ -15,6 +15,7 @@ from zipfile import ZipFile, BadZipfile
 import io
 import logging
 
+logger = logging.getLogger(__name__)
 
 class FboAttachments():
     '''

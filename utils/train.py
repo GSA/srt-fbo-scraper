@@ -18,6 +18,8 @@ import dill as pickle
 import logging
 from utils.predict import Predict
 
+logger = logging.getLogger(__name__)
+
 class log_uniform():
     """
     Provides an instance of the log-uniform distribution with an .rvs() method. Meant to be used with

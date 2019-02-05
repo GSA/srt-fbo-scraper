@@ -9,6 +9,7 @@ import logging
 import utils.db.db as db
 import dill as pickle
 
+logger = logging.getLogger(__name__)
 
 def clear_data(session):
     meta = db.Base.metadata

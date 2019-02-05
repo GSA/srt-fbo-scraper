@@ -8,8 +8,6 @@ import sys
 from nltk.stem.porter import PorterStemmer
 import logging
 
-logging.basicConfig(format='[%(levelname)s] %(message)s')
-
 class Predict():
     '''
     Make 508 accessibility predictions based on fbo notice attachment texts.

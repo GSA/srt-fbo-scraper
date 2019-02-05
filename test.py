@@ -41,8 +41,12 @@ class SupercronicTestCase(unittest.TestCase):
         pass
 
     def test_supercronic_call(self):
-        result = subprocess.call(['supercronic', '-debug', 'crontab-test'], stdout=subprocess.PIPE)
-        expected = 0
+        process = subprocess.Popen(['supercronic', '-debug', 'crontab-test'], stdout=subprocess.PIPE)
+        # Instead of using process.wait(), sleep since the process will wait forever
+        sleep(10)
+        process.terminate()
+        result = process.returncode
+        expected = 15
         self.assertEqual(result, expected)
         
 

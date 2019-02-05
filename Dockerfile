@@ -48,4 +48,4 @@ RUN pip install -r requirements.txt
 
 ENTRYPOINT ["supercronic"]
 
-CMD ["crontab"]
+CMD ["crontab", "2>&1", ">fbo.log"]

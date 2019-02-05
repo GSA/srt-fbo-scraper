@@ -102,6 +102,7 @@ def main():
     logger.info("Smartie is performing the retrain check...")
     with session_scope(dal) as session:
         retrain(session)
+    logger.info("*"*80)
 
 if __name__ == '__main__':
     logging.basicConfig(filename='fbo.log',

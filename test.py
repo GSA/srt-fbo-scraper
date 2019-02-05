@@ -1,6 +1,7 @@
 import unittest
 from unittest.mock import patch, Mock
 import subprocess
+from time import sleep
 import os
 from scipy import stats
 from datetime import datetime
@@ -41,10 +42,13 @@ class SupercronicTestCase(unittest.TestCase):
 
     def test_supercronic_call(self):
         process = subprocess.Popen(['supercronic', '-debug', 'crontab-test'], stdout=subprocess.PIPE)
-        process.wait()
+        # Instead of using process.wait(), sleep since the process will wait forever
+        sleep(10)
+        process.kill()
         result = process.returncode
         expected = 0
         self.assertEqual(result, expected)
+        
 
 
 class NightlyFBONoticesTestCase(unittest.TestCase):

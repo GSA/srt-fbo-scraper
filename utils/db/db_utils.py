@@ -9,7 +9,6 @@ import logging
 import utils.db.db as db
 import dill as pickle
 
-logging.basicConfig(format='[%(levelname)s] %(message)s')
 
 def clear_data(session):
     meta = db.Base.metadata

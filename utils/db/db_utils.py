@@ -195,7 +195,7 @@ def retrain_check(session):
     trained_count = get_trained_count(session)
     try:
         eps = validated_untrained_count / trained_count
-    except ZeroDivisionError:
+    except (ZeroDivisionError, TypeError):
         return False
     threshold = .2
     if eps >= threshold:

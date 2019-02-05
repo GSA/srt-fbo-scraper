@@ -40,7 +40,7 @@ class SupercronicTestCase(unittest.TestCase):
         pass
 
     def test_supercronic_call(self):
-        process = subprocess.Popen(['supercronic', '-h'], stdout=subprocess.PIPE)
+        process = subprocess.Popen(['supercronic'], stdout=subprocess.PIPE)
         process.wait()
         result = process.returncode
         expected = 0

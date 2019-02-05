@@ -42,11 +42,14 @@ class SupercronicTestCase(unittest.TestCase):
 
     def test_supercronic_call(self):
         process = subprocess.Popen(['supercronic', '-debug', 'crontab-test'], stdout=subprocess.PIPE)
-        # Instead of using process.wait(), sleep since the process will wait forever
-        sleep(10)
-        process.terminate()
-        result = process.returncode
-        expected = 15
+        try:
+            process.wait(timeout=10)
+            result = process.returncode
+        except subprocess.TimeoutExpired:
+            #If the process does not terminate after timeout seconds, 
+            #raise a TimeoutExpired exception
+            result = 0
+        expected = 0
         self.assertEqual(result, expected)
         
 

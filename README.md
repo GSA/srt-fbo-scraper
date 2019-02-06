@@ -21,29 +21,76 @@ Here's what happens every time the job is triggered:
     
 
 ## Getting Started
-There are two docker images for this project:  [fbo-scraper](https://cloud.docker.com/u/csmcallister/repository/docker/csmcallister/fbo-scraper) and [fbo-scraper-test](https://cloud.docker.com/u/csmcallister/repository/docker/csmcallister/fbo-scraper-test). The former contains the application that can be pushed to cloud.gov (see below) while the latter is strickly for testing during CI.
 
 ### Prerequisites
-Anyone can download the docker images and tinker around. To push to cloud.gov, you'll need a [cloud.gov account](https://cloud.gov/docs/getting-started/accounts/). You can also run it locally so long as you have postgres installed.
+This project uses:
+ - Python 3.6.6
+ - Docker
+ - PostgreSQL 9.6.8 
 
+Below, we suggest [venv](https://docs.python.org/3/library/venv.html) for creating a virtual environment if you wish to run the scan locally.
+
+To push to cloud.gov or interact with the app there, you'll need a [cloud.gov account](https://cloud.gov/docs/getting-started/accounts/).
+
+There are two docker images for this project:  [fbo-scraper](https://cloud.docker.com/u/csmcallister/repository/docker/csmcallister/fbo-scraper) and [fbo-scraper-test](https://cloud.docker.com/u/csmcallister/repository/docker/csmcallister/fbo-scraper-test). The former contains the application that can be pushed to cloud.gov (see instructions below) while the latter is strickly for testing during CI.
+
+### Local Implementation
+If you have PostgreSQL, you can run the scan locally. Doing so will create a database with the following connection string: `postgresql+psycopg2://localhost/test`. To run it locally (using FBO data from the day before yesterday), do the following:
+
+```bash
+cd path/to/this/locally/cloned/repo
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+#now you can run the scan, with logs writing to fbo.log
+python fbo.py
+```
 
 ## Running the tests
-To run the tests:
+To run the tests, set up the environment like before but instead run:
 
-`$ python -W ignore -m unittest test.py`
+```bash
+python -W ignore -m unittest test.py
+```
 
 Several warnings and exceptions will print out. Those are by design as they're being mocked in the tests.
 
 
 ## Deployment
-Below, `<service>` is the name of your postgres service of choice (e.g. `shared-psql`) while `<service-tag>` is whatever you want to call it.
+Deployment requires a cloud.gov account and access to the application's org. If those prequisites are met, you can login with:
+
+```bash
+cf login -a api.fr.cloud.gov --sso
 ```
-$ cf create-service <service> <service-tag>  
-$ cf create-service-key <service-tag>     *this may take a few minutes to configure*  
-$ cf push srt-fbo-scraper --docker-image csmcallister/fbo-scraper
-$ cf bind-service srt-fbo-scraper <service-tag>  
-$ cf restage srt-fbo-scraper
+
+Then target the appropriate org and space by following the instructions.
+
+Then push the app, creating the service first:
+
+```bash
+cf create-service <service> <service-tag>  
+cf create-service-key <service-tag>     *this may take a few minutes to configure*  
+cf push srt-fbo-scraper --docker-image csmcallister/fbo-scraper
+cf bind-service srt-fbo-scraper <service-tag>  
+cf restage srt-fbo-scraper
 ```  
+
+Below, `<service>` is the name of your postgres service of choice (e.g. `shared-psql`) while `<service-tag>` is whatever you want to call it.
+
+## Logs
+Logs are stored within the app in `fbo.log`. To access them, log into cloud.gov with:
+
+```bash
+cf login -a api.fr.cloud.gov --sso
+```
+
+And then target your desired space. You can then ssh into the app, nav to the log's directory, and access the contents:
+
+```bash
+cd ../code/
+cf ssh srt-fbo-scraper
+cat -n fbo.log
+```
 
 ## Contributing
 

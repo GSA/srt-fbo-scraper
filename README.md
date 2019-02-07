@@ -87,8 +87,8 @@ cf login -a api.fr.cloud.gov --sso
 And then target your desired space. You can then ssh into the app, nav to the log's directory, and access the contents:
 
 ```bash
-cd ../code/
 cf ssh srt-fbo-scraper
+cd ../code/
 cat -n fbo.log
 ```
 

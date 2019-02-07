@@ -12,6 +12,9 @@ import dill as pickle
 logger = logging.getLogger(__name__)
 
 def clear_data(session):
+    '''
+    Clears database content without dropping the schema (for testing)
+    '''
     meta = db.Base.metadata
     for table in reversed(meta.sorted_tables):
         session.execute(table.delete())
@@ -20,16 +23,20 @@ def get_db_url():
     '''
     Return the db connection string depending on the environment
     '''
-    if os.getenv('VCAP_APPLICATION'):
+    if os.getenv('VCAP_SERVICES'):
         db_string = os.getenv('DATABASE_URL')
     elif os.getenv('TEST_DB_URL'):
         db_string = os.getenv('TEST_DB_URL')
     else:
-        db_string = "postgresql+psycopg2://localhost/test"
-    conn_string = db_string.replace('\postgresql', 'postgresql+psycopg2')
-
-    return conn_string
-
+        if not os.getenv('VCAP_APPLICATION'):
+            db_string = "postgresql+psycopg2://localhost/test"
+        else:
+            db_string = None
+    if db_string:
+        return db_string
+    else:
+        logger.critical("Exception occurred getting database uri")
+        sys.exit(1)
 
 
 class DataAccessLayer:

@@ -26,7 +26,12 @@ def get_db_url():
         db_string = os.getenv('TEST_DB_URL')
     else:
         db_string = "postgresql+psycopg2://localhost/test"
-    conn_string = db_string.replace('\postgresql', 'postgresql+psycopg2')
+    try:
+        conn_string = db_string.replace('\postgresql', 'postgresql+psycopg2')
+    except AttributeError as e:
+        logger.critical(f"Exception occurred getting database uri:  \
+                          {self.db_string}. Full traceback here:  {e}", exc_info=True)
+
 
     return conn_string
 

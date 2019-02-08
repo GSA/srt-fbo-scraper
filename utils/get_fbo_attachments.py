@@ -43,7 +43,7 @@ class FboAttachments():
         '''
 
         try:
-            r = requests.get(fbo_url)
+            r = requests.get(fbo_url, timeout = 20)
         except Exception as e:
             logger.error(f"Exception occurred getting attachment divs from {fbo_url}:  \
                             {e}", exc_info=True)
@@ -128,7 +128,7 @@ class FboAttachments():
             bool: True if resource < 500mb
         """
         try:
-            h = requests.head(url)
+            h = requests.head(url, timeout = 20)
         except Exception as e:
             logger.error(f"Exception occurred getting file size with HEAD request from {url}. \
                               This means the file wasn't downloaded:  \
@@ -143,7 +143,7 @@ class FboAttachments():
             redirect_header = h.headers
             redirect_url = redirect_header['Location']
             try:
-                h = requests.head(redirect_url)
+                h = requests.head(redirect_url, timeout = 20)
             except Exception as e:
                 logger.error(f"Exception occurred getting file size with redirected HEAD request from {url}:  \
                                 {e}", exc_info=True)
@@ -234,7 +234,7 @@ class FboAttachments():
         '''
         
         try:
-            r = requests.get(attachment_href)
+            r = requests.get(attachment_href, timeout = 20)
         except Exception as e:
             logger.error(f"Exception occurred making GET request to {attachment_href}:  \
                             {e}", exc_info=True)
@@ -301,7 +301,7 @@ class FboAttachments():
         file_out_path = os.path.join(out_path, file_name)
         if file_out_path.endswith(textract_extensions):
             try:
-                with closing(urllib.request.urlopen(attachment_url)) as ftp_r:
+                with closing(urllib.request.urlopen(attachment_url, timeout=20)) as ftp_r:
                     with open(file_out_path, 'wb') as f:
                         shutil.copyfileobj(ftp_r, f)
             except Exception as e:
@@ -351,7 +351,7 @@ class FboAttachments():
                                 redirect_header = r.headers
                                 redirect_url = redirect_header['Location']
                                 try:
-                                    r = requests.get(redirect_url)
+                                    r = requests.get(redirect_url, timeout=20)
                                 except Exception as e:
                                     logger.error(f"Exception occurred making GET request for an attachment after a redirect to {attachment_url}. \
                                                    This means we didn't download it:  {e}", exc_info=True)

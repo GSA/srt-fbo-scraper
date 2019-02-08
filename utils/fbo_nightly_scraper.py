@@ -97,7 +97,7 @@ class NightlyFBONotices():
         out_path = os.path.join(os.getcwd(),"temp","nightly_files")
         NightlyFBONotices._make_out_path(out_path)
         try:
-            with closing(urllib.request.urlopen(self.ftp_url)) as r:
+            with closing(urllib.request.urlopen(self.ftp_url, timeout=20)) as r:
                 file_name = os.path.join(out_path,file_name)
                 with open(file_name, 'wb') as f:
                     shutil.copyfileobj(r, f)

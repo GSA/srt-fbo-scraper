@@ -70,6 +70,8 @@ class FboAttachments():
         '''
         try:
             b_text = process(file_name, encoding='utf-8', errors = 'ignore')
+        #TypeError is raised when None is passed to str.decode()
+        #This happens when textract can't extract text from scanned documents
         except TypeError:
             b_text = None
         except Exception as e:

@@ -70,6 +70,8 @@ class FboAttachments():
         '''
         try:
             b_text = process(file_name, encoding='utf-8', errors = 'ignore')
+        except TypeError:
+            b_text = None
         except Exception as e:
             logger.error(f"Exception occurred textracting {file_name} from {url}:  \
                             {e}", exc_info=True)

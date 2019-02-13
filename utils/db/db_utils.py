@@ -94,7 +94,7 @@ def fetch_notice_type_id(notice_type, session):
     Fetch the notice id for a given notice_number.
 
     Parameters:
-        notice_number (str): a solicitation number from a notice
+        notice_type (str): a notice type. One of ['MOD','COMBINE','PRESOL','AMDCSS','TRAIN']
 
     Returns:
         None or notice_type_id (int): if notice_type_id, this is the PK for the notice_type

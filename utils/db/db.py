@@ -1,6 +1,6 @@
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey, Table, Text, \
-                       DateTime, Boolean, Float, MetaData
+                       DateTime, Boolean, Float, MetaData, inspect
 from sqlalchemy.orm import relationship
 from sqlalchemy.dialects.postgresql import JSONB, ARRAY
 import datetime
@@ -25,46 +25,39 @@ meta = MetaData(naming_convention={
       })
 Base = declarative_base(metadata=meta)
 
-
 class Notice(Base):
     __tablename__ = 'notice'
-
     id = Column(Integer, primary_key=True)
     notice_type_id = Column(Integer, ForeignKey('notice_type.id'))
-    notice_number = Column(String(150), index = True)
+    solicitation_number = Column(String(150), index = True)
     agency = Column(String(150))
     date = Column(DateTime, default=now_minus_two)
     notice_data = Column(JSONB)
     compliant = Column(Integer)
     action = Column(ARRAY(String(100), dimensions=2))
     attachments = relationship("Attachment", back_populates="notice")
-    notice_type = relationship("NoticeType", back_populates="notices")
 
 class NoticeType(Base):
     __tablename__ = 'notice_type'
-
-    id = Column(Integer, primary_key = True)
+    id = Column(Integer, primary_key=True)
     notice_type = Column(String(50), index = True)
-    notices = relationship("Notice", back_populates = 'notice_type')
 
 class Attachment(Base):
     __tablename__ = 'attachment'
-
     id = Column(Integer, primary_key = True)
     notice_id = Column(Integer, ForeignKey('notice.id'))
     notice_type_id = Column(Integer, ForeignKey('notice_type.id'))
     attachment_text = Column(Text)
     prediction = Column(Integer)
-    decision_boundary = Column(Integer)
+    decision_boundary = Column(Float)
     validation = Column(Integer, nullable=True)
     attachment_url = Column(Text)
     trained = Column(Boolean, nullable=True)
-    notice = relationship("Notice", back_populates="attachments")
-
+    notice = relationship("Notice", 
+                          back_populates="attachments")
 
 class Model(Base):
     __tablename__ = 'model'
-
     id = Column(Integer, primary_key = True)
     results = Column(JSONB)
     params = Column(JSONB)

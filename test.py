@@ -576,6 +576,8 @@ class PostgresTestCase(unittest.TestCase):
             clear_data(session)
     
     def tearDown(self):
+        with session_scope(self.dal) as session:
+            clear_data(session)
         self.dal.drop_local_postgres_db()
         self.dal = None
         self.predicted_nightly_data = None

@@ -572,10 +572,10 @@ class PostgresTestCase(unittest.TestCase):
                                             }
         self.dal = DataAccessLayer(conn_string = conn_string)
         self.dal.connect()
-    
-    def tearDown(self):
         with session_scope(self.dal) as session:
             clear_data(session)
+    
+    def tearDown(self):
         self.dal.drop_local_postgres_db()
         self.dal = None
         self.predicted_nightly_data = None

@@ -48,6 +48,9 @@ def get_db_url():
 
 
 class DataAccessLayer:
+    '''
+    Sets up a connection to the database given the environment.
+    '''
 
     def __init__(self, conn_string):
         self.engine = None

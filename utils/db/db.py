@@ -71,8 +71,3 @@ class Model(Base):
     score = Column(Float)
     create_date = Column(DateTime, default=datetime.datetime.now)
 
-class Test(Base):
-    __tablename__ = 'test'
-
-    id = Column(Integer, primary_key = True)
-    test_col = Column(JSONB)

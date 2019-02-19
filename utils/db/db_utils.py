@@ -173,6 +173,9 @@ def insert_updated_nightly_file(session, updated_nightly_data_with_predictions):
     for notice_type in updated_nightly_data_with_predictions:
         notice_type_id = fetch_notice_type_id(notice_type, session)
         for notice_data in updated_nightly_data_with_predictions[notice_type]:
+            #continue if there aren't any notices for a given notice type
+            if not notice_data:
+                continue
             attachments = notice_data.pop('attachments')
             agency = notice_data.pop('agency')
             compliant = notice_data.pop('compliant')

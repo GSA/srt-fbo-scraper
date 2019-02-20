@@ -666,7 +666,6 @@ class PostgresTestCase(unittest.TestCase):
                 model = object_as_dict(m)
                 model.pop('create_date')
                 result.append(model)   
-        print(result)
         expected = [{'id': 1,
                      'results': results,
                      'params': params,

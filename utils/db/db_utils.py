@@ -51,7 +51,8 @@ class DataAccessLayer:
     '''
     Sets up a connection to the database given the environment.
     '''
-
+    test_db_uris = ['postgres://circleci@localhost:5432/smartie-test?sslmode=disable',
+                    'postgresql+psycopg2://localhost/test']
     def __init__(self, conn_string):
         self.engine = None
         self.conn_string = conn_string
@@ -69,7 +70,7 @@ class DataAccessLayer:
         self.Session = sessionmaker(bind = self.engine)
 
     def _create_local_postgres(self):
-        test_conn_string = self.conn_string == "postgresql+psycopg2://localhost/test"
+        test_conn_string = self.conn_string in DataAccessLayer.test_db_uris
         if test_conn_string:
             self.engine = create_engine(self.conn_string)
             if not database_exists(self.engine.url):
@@ -78,8 +79,8 @@ class DataAccessLayer:
         else:
             return
 
-    def drop_local_postgres_db(self):
-        test_conn_string = self.conn_string == "postgresql+psycopg2://localhost/test"
+    def drop_test_postgres_db(self):
+        test_conn_string = self.conn_string in DataAccessLayer.test_db_uris
         if database_exists(self.engine.url) and test_conn_string:
             drop_database(self.engine.url)
 

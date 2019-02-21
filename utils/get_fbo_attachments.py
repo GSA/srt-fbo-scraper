@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import urllib.request
+from urllib.parse import urlparse
 from contextlib import closing
 import shutil
 import re
@@ -10,7 +11,7 @@ from requests.exceptions import SSLError
 from requests import exceptions
 from bs4 import BeautifulSoup
 from mimetypes import guess_extension
-from textract import process, exceptions
+import textract
 from zipfile import ZipFile, BadZipfile
 import io
 import logging
@@ -43,7 +44,8 @@ class FboAttachments():
         '''
 
         try:
-            r = requests.get(fbo_url, timeout = 20)
+            #generous timeout for gov sites
+            r = requests.get(fbo_url, timeout = 300)
         except Exception as e:
             logger.error(f"Exception occurred getting attachment divs from {fbo_url}:  \
                             {e}", exc_info=True)
@@ -69,14 +71,18 @@ class FboAttachments():
             text (str): a string representing the text of the file.
         '''
         try:
-            b_text = process(file_name, encoding='utf-8', errors = 'ignore')
+            b_text = textract.process(file_name, encoding='utf-8', errors = 'ignore')
         #TypeError is raised when None is passed to str.decode()
         #This happens when textract can't extract text from scanned documents
+        except textract.exceptions.MissingFileError:
+            b_text = None
+            logger.error(f"Couldn't textract {file_name} from {url} since the file couldn't be found:  \
+                           {e}", exc_info=True)
         except TypeError:
             b_text = None
         except Exception as e:
             logger.error(f"Exception occurred textracting {file_name} from {url}:  \
-                            {e}", exc_info=True)
+                           {e}", exc_info=True)
             b_text = None
         if b_text:
             text = b_text.decode('utf8', errors = 'ignore')
@@ -98,19 +104,38 @@ class FboAttachments():
             notice (dict): a dict representing a single fbo notice
 
         Returns:
-            notice (dict): a dict representing a single fbo notice with insertions made
+            notice (dict): a dict representing a single fbo notice with attachment insertions made
         '''
         
         notice['attachments'] = []
         for file_url_tup in file_list:
             file_name, url = file_url_tup
-            text = FboAttachments.get_attachment_text(file_name, url)
-            attachment_dict = {'text':text, 
-                               'url':url,
-                               'prediction':None, 
-                               'decision_boundary':None,
-                               'validation':None,
-                               'trained':False}
+            if file_name:
+                text = FboAttachments.get_attachment_text(file_name, url)
+                if text:
+                    attachment_dict = {'machine_readable':True,
+                                    'text':text, 
+                                    'url':url,
+                                    'prediction':None, 
+                                    'decision_boundary':None,
+                                    'validation':None,
+                                    'trained':False}
+                else:#empty strings are falsy
+                    attachment_dict = {'machine_readable':False,
+                                       'text':None, 
+                                       'url':url,
+                                       'prediction':None, 
+                                       'decision_boundary':None,
+                                       'validation':None,
+                                       'trained':False}
+            else:
+                attachment_dict = {'machine_readable':False,
+                                   'text':None, 
+                                   'url':url,
+                                   'prediction':None, 
+                                   'decision_boundary':None,
+                                   'validation':None,
+                                   'trained':None}
             notice['attachments'].append(attachment_dict)
 
         return notice
@@ -128,13 +153,13 @@ class FboAttachments():
             bool: True if resource < 500mb
         """
         try:
-            h = requests.head(url, timeout = 20)
+            #generous timeout for gov sites
+            h = requests.head(url, timeout = 300)
         except Exception as e:
             logger.error(f"Exception occurred getting file size with HEAD request from {url}. \
                               This means the file wasn't downloaded:  \
                               {e}", exc_info=True)
             return False
-        
         if h.status_code != 200 and h.status_code != 302:
             logger.error(f"Non-200/302 status code ({h.status_code}) getting file size with HEAD request from {url}. \
                             This means the file wasn't downloaded.")
@@ -142,8 +167,13 @@ class FboAttachments():
         elif h.status_code == 302:
             redirect_header = h.headers
             redirect_url = redirect_header['Location']
+            if 'http' not in redirect_url:
+                parsed_url = urlparse(url)
+                url_domain = '{url.scheme}://{url.netloc}'.format(url=parsed_url)
+                redirect_url = url_domain + redirect_url
             try:
-                h = requests.head(redirect_url, timeout = 20)
+                #generous timeout for gov sites
+                h = requests.head(redirect_url, timeout = 300)
             except Exception as e:
                 logger.error(f"Exception occurred getting file size with redirected HEAD request from {url}:  \
                                 {e}", exc_info=True)
@@ -234,7 +264,8 @@ class FboAttachments():
         '''
         
         try:
-            r = requests.get(attachment_href, timeout = 20)
+            #generous timeout for gov sites
+            r = requests.get(attachment_href, timeout = 300)
         except Exception as e:
             logger.error(f"Exception occurred making GET request to {attachment_href}:  \
                             {e}", exc_info=True)
@@ -301,7 +332,8 @@ class FboAttachments():
         file_out_path = os.path.join(out_path, file_name)
         if file_out_path.endswith(textract_extensions):
             try:
-                with closing(urllib.request.urlopen(attachment_url, timeout=20)) as ftp_r:
+                #generous timeout for gov sites
+                with closing(urllib.request.urlopen(attachment_url, timeout=300)) as ftp_r:
                     with open(file_out_path, 'wb') as f:
                         shutil.copyfileobj(ftp_r, f)
             except Exception as e:
@@ -325,7 +357,9 @@ class FboAttachments():
 
         textract_extensions = ('.doc', '.docx', '.epub', '.gif', '.htm', 
                                '.html','.odt', '.pdf', '.rtf', '.txt')
-        out_path = 'attachments'
+        cwd = os.getcwd()
+        attachments_dir = 'attachments'
+        out_path = os.path.join(cwd, attachments_dir) 
         if not os.path.exists(out_path):
             os.makedirs(out_path)
         file_list = []
@@ -335,26 +369,33 @@ class FboAttachments():
                 for attachment_url in attachment_urls:
                     #some are ftp and we can get the file now
                     if 'ftp://' in attachment_url:
-                        f = FboAttachments.get_and_write_attachment_from_ftp(attachment_url,
-                                                                            out_path,
-                                                                            textract_extensions)
-                        file_list.append((f, attachment_url))                                                                                        
+                        file_out_path = FboAttachments.get_and_write_attachment_from_ftp(attachment_url,
+                                                                                         out_path,
+                                                                                         textract_extensions)
+                        file_list.append((file_out_path, attachment_url))                                                                                        
                     else:
-                        if FboAttachments.size_check(attachment_url):
+                        file_smaller_than_500mb = FboAttachments.size_check(attachment_url)
+                        if file_smaller_than_500mb:
                             try:
-                                r = requests.get(attachment_url, timeout=10)
+                                #generous timeout for gov sites
+                                r = requests.get(attachment_url, timeout=300)
                             except Exception as e:
                                 logger.error(f"Exception occurred making GET request for an attachment to {attachment_url}. \
                                                This means we didn't download it:  {e}", exc_info=True)
+                                #capturing as non-machine readable attachment
+                                file_list.append((None, attachment_url)) 
                                 continue
                             if r.status_code == 302:
                                 redirect_header = r.headers
                                 redirect_url = redirect_header['Location']
                                 try:
-                                    r = requests.get(redirect_url, timeout=20)
+                                    #generous timeout for gov sites
+                                    r = requests.get(redirect_url, timeout=300)
                                 except Exception as e:
                                     logger.error(f"Exception occurred making GET request for an attachment after a redirect to {attachment_url}. \
                                                    This means we didn't download it:  {e}", exc_info=True)
+                                    #capturing as non-machine readable attachment
+                                    file_list.append((None, attachment_url)) 
                                     continue
                             content_disposition = r.headers.get('Content-Disposition', None)
                             file_name = FboAttachments.get_filename_from_cd(content_disposition)
@@ -366,24 +407,38 @@ class FboAttachments():
                                 z.extractall(out_path)
                                 zip_file_list = z.filelist
                                 for zip_file in zip_file_list:
-                                    file_out_path = os.path.join(out_path,zip_file)
-                                    if file_out_path.endswith(textract_extensions):
-                                        file_list.append((file_out_path, attachment_url))
+                                    try:
+                                        zip_filename = zip_file.filename
+                                        if not zip_filename.endswith('/'):
+                                            file_out_path = os.path.join(out_path,
+                                                                         zip_filename)
+                                            if file_out_path.endswith(textract_extensions):
+                                                file_list.append((file_out_path, attachment_url))
+                                            else:
+                                                #capturing as non-machine readable attachment
+                                                file_list.append((None, attachment_url))
+                                    except AttributeError:
+                                        pass 
                             else:
                                 file_out_path = os.path.join(out_path,file_name).replace('"','')
                                 if file_out_path.endswith(textract_extensions):
                                     with open(file_out_path, 'wb') as f:
                                         f.write(r.content)
                                     file_list.append((file_out_path, attachment_url))
+                                else:
+                                    #capturing as non-machine readable attachment
+                                    file_list.append((None, attachment_url)) 
                         else:
-                            pass
-            except:
+                            #capturing as non-machine readable attachment
+                            file_list.append((None, attachment_url)) 
+            except Exception as e:
+                logger.error(f"Exception extracting attachment url from div: {div} \
+                               This means we didn't get the file:  {e}", exc_info=True)
                 continue
             if is_neco_navy_mil:
                 #if the div was from a neco.navy.mil solicitation, we don't need to hit all the urls
                 #since they're duplicates
                 break
-        
         return file_list
     
     def update_nightly_data(self):
@@ -395,7 +450,6 @@ class FboAttachments():
             updated_nightly_data (dict): a dict representing a nightly file with attachment urls
             and attachment text inserted as new key:value pairs.
         '''
-        
         nightly_data = self.nightly_data
         file_lists = []
         for k in nightly_data:

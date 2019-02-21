@@ -23,7 +23,7 @@ jobs:
           name: Run tests
           environment:
             TEST_DB_URL: "postgres://circleci@localhost:5432/smartie-test?sslmode=disable"
-          command: python -m unittest test.py
+          command: python3 -W ignore -m unittest test.py
       - store_artifacts:
           path: test-reports
           destination: test-reports

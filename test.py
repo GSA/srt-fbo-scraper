@@ -41,6 +41,10 @@ class SupercronicTestCase(unittest.TestCase):
         pass
 
     def test_supercronic_call(self):
+        if not os.getenv('TEST_DB_URL'):
+            #if tests are happening locally, no need to test supercronic
+            self.assertTrue(True)
+            return
         process = subprocess.Popen(['supercronic', '-debug', 'crontab-test'], stdout=subprocess.PIPE)
         try:
             process.wait(timeout=10)
@@ -53,7 +57,6 @@ class SupercronicTestCase(unittest.TestCase):
         expected = 0
         self.assertEqual(result, expected)
         
-
 
 class NightlyFBONoticesTestCase(unittest.TestCase):
 
@@ -228,7 +231,7 @@ class FboAttachmentsTestCase(unittest.TestCase):
 
     @httpretty.activate
     def test_get_neco_navy_mil_attachment_urls_multiple(self):
-        body = '''
+        body = b'''
                 <tbody><tr id="dwnld2_row">
                         <td class="tbl_hdr" align="right" style="width:150px;">Download File: </td><td class="tbl_itm_sm" align="left">&nbsp;<a id="dwnld2_hypr" href="/upload/N00406/N0040619Q0062N00406-19-Q-0062_SOLICITATION.pdf" target="_blank">N00406/N0040619Q0062N00406-19-Q-0062_SOLICITATION.pdf</a></td>
                     </tr><tr id="dwnld3_row">
@@ -237,7 +240,7 @@ class FboAttachmentsTestCase(unittest.TestCase):
                         <td class="tbl_hdr" align="right" style="width:150px;">Download File: </td><td class="tbl_itm_sm" align="left">&nbsp;<a id="dwnld4_hypr" href="/upload/N00406/N0040619Q0062NAVSUP_FACTS-SP_Shipping_information.docx" target="_blank">N00406/N0040619Q0062NAVSUP_FACTS-SP_Shipping_information.docx</a></td>
                     </tr>
                 </tbody>
-               '''
+                '''
         httpretty.register_uri(httpretty.GET,
                                uri=self.fake_fbo_url,
                                status=200,
@@ -278,7 +281,8 @@ class FboAttachmentsTestCase(unittest.TestCase):
         result = self.fboa.insert_attachments(file_list, notice)
         expected = {'a': '1',
                     'b': '2',
-                    'attachments':[{'text':text,
+                    'attachments':[{'machine_readable': True,
+                                    'text':text,
                                     'url':self.fake_fbo_url,
                                     'prediction':None,
                                     'decision_boundary':None,
@@ -289,9 +293,12 @@ class FboAttachmentsTestCase(unittest.TestCase):
 
     @httpretty.activate
     def test_size_check(self):
+        body = 'This is less than 500MB'
         httpretty.register_uri(httpretty.HEAD,
                                uri=self.fake_fbo_url,
-                               body='This is less than 500MB')
+                               body=body,
+                               adding_headers = {'Content-Type': 'application/pdf', 
+                                                 'Content-Length': len(body)})
         result = self.fboa.size_check(self.fake_fbo_url)
         expected = True
         self.assertEqual(result, expected)
@@ -311,6 +318,49 @@ class FboAttachmentsTestCase(unittest.TestCase):
                                uri=self.fake_fbo_url,
                                status=200,
                                body=exceptionCallback)
+        result = self.fboa.size_check(self.fake_fbo_url)
+        expected = False
+        self.assertEqual(result, expected)
+
+    @httpretty.activate
+    def test_size_check_redirect_true(self):
+        body = 'This is less than 500MB'
+        redirect_location = 'https://www.fbo.gov/fakeredirect'
+        httpretty.register_uri(method=httpretty.HEAD,
+                               uri=self.fake_fbo_url,
+                               status=302,
+                               body=body,
+                               adding_headers = {'Content-Type': 'application/pdf', 
+                                                 'Content-Length': len(body),
+                                                 'Location': redirect_location})
+        httpretty.register_uri(method=httpretty.HEAD,
+                               uri=redirect_location,
+                               status=200,
+                               body=body,
+                               adding_headers = {'Content-Type': 'application/pdf', 
+                                                 'Content-Length': len(body)})
+        result = self.fboa.size_check(self.fake_fbo_url)
+        expected = True
+        self.assertEqual(result, expected)
+
+    @httpretty.activate
+    def test_size_check_redirect_false(self):
+        body = 'body'
+        big_body = "*"*600000000
+        redirect_location = 'https://www.fbo.gov/fakeredirect'
+        httpretty.register_uri(method=httpretty.HEAD,
+                               uri=self.fake_fbo_url,
+                               status=302,
+                               body=body,
+                               adding_headers = {'Content-Type': 'application/pdf', 
+                                                 'Content-Length': len(body),
+                                                 'Location': redirect_location})
+        httpretty.register_uri(method=httpretty.HEAD,
+                               uri=redirect_location,
+                               status=200,
+                               body=big_body,
+                               adding_headers = {'Content-Type': 'application/pdf', 
+                                                  'Content-Length': len(big_body)})
         result = self.fboa.size_check(self.fake_fbo_url)
         expected = False
         self.assertEqual(result, expected)
@@ -367,6 +417,9 @@ class FboAttachmentsTestCase(unittest.TestCase):
             self.assertFalse(is_neco_navy_mil)
 
     def test_get_attachment_url_from_div_space(self):
+        '''
+        Test parsing of the oddly formatted divs
+        '''
         div = '<a href="http://  https://www.thisisalinktoanattachment.docx"\
                target="_blank" title="Download/View FD2060-17-33119_FORM_158_00.pdf"\
                class="file">FD2060-17-33119_FORM_158_00.pdf</a>'
@@ -386,16 +439,14 @@ class FboAttachmentsTestCase(unittest.TestCase):
                         <div class="file"><input type="hidden" name="dnf_class_values[procurement_notice_archive][packages][5][files][0][file][0][preview]" value="&lt;a href='/utils/view?id=d95550fb782f53357ed65db571ef9186' target='_blank' title='Download/View FA852618Q0033_______0001.pdf' class='file'&gt;FA852618Q0033_______0001.pdf&lt;/a&gt;"><a href='/utils/view?id=d95550fb782f53357ed65db571ef9186' target='_blank' title='Download/View FA852618Q0033_______0001.pdf' class='file'>FA852618Q0033_______0001.pdf</a> (16.54 Kb)</div>
                         </div>
                             <div><span class="label">Description:</span> Amendment 0001</div>	</div>
-
-
                             </div><!-- widget -->
-
                             </div>
-        '''
+                         '''
         soup = BeautifulSoup(body_with_div, "html.parser")
         attachment_divs = soup.find_all('div', {"class": "notice_attachment_ro"})
         result = self.fboa.write_attachments(attachment_divs)
-        expected = [('attachments/FA852618Q0033_______0001.pdf', 
+        attachment_path = os.path.join(os.getcwd(),'attachments','FA852618Q0033_______0001.pdf')
+        expected = [(attachment_path, 
                      'https://www.fbo.gov/utils/view?id=d95550fb782f53357ed65db571ef9186')]
         for file_url_tup in result:
             file, _ = file_url_tup
@@ -572,8 +623,6 @@ class PostgresTestCase(unittest.TestCase):
                                             }
         self.dal = DataAccessLayer(conn_string = conn_string)
         self.dal.connect()
-        with session_scope(self.dal) as session:
-            clear_data(session)
     
     def tearDown(self):
         with session_scope(self.dal) as session:
@@ -918,8 +967,6 @@ class TrainTestCase(unittest.TestCase):
             self.fail("train() raised an exception!")
                                                                          
 
-
-
 class EndToEndTest(unittest.TestCase):
     def setUp(self):
         conn_string = get_db_url()
@@ -928,6 +975,9 @@ class EndToEndTest(unittest.TestCase):
         self.main = main
 
     def tearDown(self):
+        with session_scope(self.dal) as session:
+            clear_data(session)
+        self.dal.drop_test_postgres_db()
         self.dal = None
         self.main = None
 

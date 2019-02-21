@@ -396,13 +396,21 @@ class FboAttachments():
                                 z = ZipFile(io.BytesIO(r.content))
                                 z.extractall(out_path)
                                 zip_file_list = z.filelist
+                                zip_dir_name = zip_file_list[0].filename
                                 for zip_file in zip_file_list:
-                                    file_out_path = os.path.join(out_path,zip_file)
-                                    if file_out_path.endswith(textract_extensions):
-                                        file_list.append((file_out_path, attachment_url))
-                                    else:
-                                        #capturing as non-machine readable attachment
-                                        file_list.append((None, attachment_url)) 
+                                    try:
+                                        zip_filename = zip_file.filename
+                                        if not zip_filename.endswith('/'):
+                                            file_out_path = os.path.join(out_path,
+                                                                         zip_dir_name,
+                                                                         zip_filename)
+                                            if file_out_path.endswith(textract_extensions):
+                                                file_list.append((file_out_path, attachment_url))
+                                            else:
+                                                #capturing as non-machine readable attachment
+                                                file_list.append((None, attachment_url))
+                                    except AttributeError:
+                                        pass 
                             else:
                                 file_out_path = os.path.join(out_path,file_name).replace('"','')
                                 if file_out_path.endswith(textract_extensions):

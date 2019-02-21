@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import urllib.request
+from urllib.parse import urlparse
 from contextlib import closing
 import shutil
 import re
@@ -155,7 +156,6 @@ class FboAttachments():
                               This means the file wasn't downloaded:  \
                               {e}", exc_info=True)
             return False
-        
         if h.status_code != 200 and h.status_code != 302:
             logger.error(f"Non-200/302 status code ({h.status_code}) getting file size with HEAD request from {url}. \
                             This means the file wasn't downloaded.")
@@ -163,6 +163,10 @@ class FboAttachments():
         elif h.status_code == 302:
             redirect_header = h.headers
             redirect_url = redirect_header['Location']
+            if 'http' not in redirect_url:
+                parsed_url = urlparse(url)
+                url_domain = '{url.scheme}://{url.netloc}'.format(url=parsed_url)
+                redirect_url = url_domain + redirect_url
             try:
                 #generous timeout for gov sites
                 h = requests.head(redirect_url, timeout = 300)

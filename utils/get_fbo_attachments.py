@@ -11,7 +11,7 @@ from requests.exceptions import SSLError
 from requests import exceptions
 from bs4 import BeautifulSoup
 from mimetypes import guess_extension
-from textract import process, exceptions
+import textract
 from zipfile import ZipFile, BadZipfile
 import io
 import logging
@@ -71,14 +71,18 @@ class FboAttachments():
             text (str): a string representing the text of the file.
         '''
         try:
-            b_text = process(file_name, encoding='utf-8', errors = 'ignore')
+            b_text = textract.process(file_name, encoding='utf-8', errors = 'ignore')
         #TypeError is raised when None is passed to str.decode()
         #This happens when textract can't extract text from scanned documents
+        except textract.exceptions.MissingFileError:
+            b_text = None
+            logger.error(f"Couldn't textract {file_name} from {url} since the file couldn't be found:  \
+                           {e}", exc_info=True)
         except TypeError:
             b_text = None
         except Exception as e:
             logger.error(f"Exception occurred textracting {file_name} from {url}:  \
-                            {e}", exc_info=True)
+                           {e}", exc_info=True)
             b_text = None
         if b_text:
             text = b_text.decode('utf8', errors = 'ignore')
@@ -353,7 +357,9 @@ class FboAttachments():
 
         textract_extensions = ('.doc', '.docx', '.epub', '.gif', '.htm', 
                                '.html','.odt', '.pdf', '.rtf', '.txt')
-        out_path = 'attachments'
+        cwd = os.getcwd()
+        attachments_dir = 'attachments'
+        out_path = os.path.join(cwd, attachments_dir) 
         if not os.path.exists(out_path):
             os.makedirs(out_path)
         file_list = []
@@ -363,10 +369,10 @@ class FboAttachments():
                 for attachment_url in attachment_urls:
                     #some are ftp and we can get the file now
                     if 'ftp://' in attachment_url:
-                        f = FboAttachments.get_and_write_attachment_from_ftp(attachment_url,
-                                                                             out_path,
-                                                                             textract_extensions)
-                        file_list.append((f, attachment_url))                                                                                        
+                        file_out_path = FboAttachments.get_and_write_attachment_from_ftp(attachment_url,
+                                                                                         out_path,
+                                                                                         textract_extensions)
+                        file_list.append((file_out_path, attachment_url))                                                                                        
                     else:
                         file_smaller_than_500mb = FboAttachments.size_check(attachment_url)
                         if file_smaller_than_500mb:
@@ -400,13 +406,11 @@ class FboAttachments():
                                 z = ZipFile(io.BytesIO(r.content))
                                 z.extractall(out_path)
                                 zip_file_list = z.filelist
-                                zip_dir_name = zip_file_list[0].filename
                                 for zip_file in zip_file_list:
                                     try:
                                         zip_filename = zip_file.filename
                                         if not zip_filename.endswith('/'):
                                             file_out_path = os.path.join(out_path,
-                                                                         zip_dir_name,
                                                                          zip_filename)
                                             if file_out_path.endswith(textract_extensions):
                                                 file_list.append((file_out_path, attachment_url))
@@ -435,7 +439,6 @@ class FboAttachments():
                 #if the div was from a neco.navy.mil solicitation, we don't need to hit all the urls
                 #since they're duplicates
                 break
-        
         return file_list
     
     def update_nightly_data(self):
@@ -447,7 +450,6 @@ class FboAttachments():
             updated_nightly_data (dict): a dict representing a nightly file with attachment urls
             and attachment text inserted as new key:value pairs.
         '''
-        
         nightly_data = self.nightly_data
         file_lists = []
         for k in nightly_data:

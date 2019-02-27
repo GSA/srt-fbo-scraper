@@ -18,35 +18,6 @@ conn_string = get_db_url()
 dal = DataAccessLayer(conn_string)
 dal.connect()
 
-def get_nightly_data(notice_types = ['MOD','PRESOL','COMBINE', 'AMDCSS'],
-                     naics = ['334111', '334118', '3343', '33451', '334516', '334614', 
-                              '5112', '518', '54169', '54121', '5415', '54169', '61142']):
-    '''
-    Exectures methods in fbo_nightly_scraper module.
-
-    Parameters:
-        notice_types (list): notice types to scrape from fbo.
-        naics (list): NAICS numbers to include. Default value is IT-related NAICS.
-
-    Returns:
-        nightly_data (list): list of dicts in JSON format.
-    '''
-    #get day before yesterday to give FBO time to update their FTP
-    now_minus_two = datetime.datetime.now() - datetime.timedelta(2)
-    date = now_minus_two.strftime("%Y%m%d")
-    nfbo = fbo_nightly_scraper.NightlyFBONotices(date = date, 
-                                                 notice_types = notice_types, 
-                                                 naics = naics)
-    file_lines = nfbo.download_from_ftp()
-    if not file_lines:
-        #exit program if download_from_ftp() failed (this is logged by the module)
-        sys.exit(1)
-    json_str = nfbo.pseudo_xml_to_json(file_lines)
-    filtered_json_str = nfbo.filter_json(json_str)
-    nightly_data = json.loads(filtered_json_str)
-    
-    return nightly_data
-
 def retrain(session):
     '''
     Retrains a model using validated samples and original training data if retrain_check() evaluates
@@ -81,7 +52,7 @@ def main():
     Run all of the scripts together.
     '''    
     logger.info("Smartie is downloading the most recent nightly FBO file...")
-    nightly_data = get_nightly_data()
+    nightly_data = fbo_nightly_scraper.get_nightly_data()
     logger.info("Smartie is done downloading the most recent nightly FBO file!")
 
     logger.info("Smartie is getting the attachments and their text from each FBO notice...")

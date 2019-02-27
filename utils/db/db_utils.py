@@ -305,7 +305,7 @@ def fetch_validated_attachments(session):
         root_path = cwd[:i+len('fbo-scraper')]
     else:
         i = cwd.find('root')
-        root_path = cwd[:i+len('root')]
+        root_path = cwd
     trained_data_path = os.path.join(root_path, 'utils/binaries/train.pkl')
     with open(trained_data_path, 'rb') as f:
         original_labeled_samples = pickle.load(f)

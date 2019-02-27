@@ -27,7 +27,7 @@ class Predict():
             root_path = cwd[:i+len('fbo-scraper')]
         else:
             i = cwd.find('root')
-            root_path = cwd[:i+len('root')]
+            root_path = cwd
         self.best_model_path = os.path.join(root_path, best_model_path)
 
 

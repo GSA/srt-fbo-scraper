@@ -363,7 +363,7 @@ class FboAttachments():
             root_path = cwd[:i+len('fbo-scraper')]
         else:
             i = cwd.find('root')
-            root_path = cwd[:i+len('root')]
+            root_path = cwd
         attachments_dir = 'attachments'
         out_path = os.path.join(root_path, attachments_dir) 
         if not os.path.exists(out_path):

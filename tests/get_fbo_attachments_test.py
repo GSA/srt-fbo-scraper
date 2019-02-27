@@ -23,7 +23,7 @@ class FboAttachmentsTestCase(unittest.TestCase):
             root_path = cwd[:i+len('fbo-scraper')]
         else:
             i = cwd.find('root')
-            root_path = cwd[:i+len('root')]
+            root_path = cwd
         temp_outfile_path = os.path.join(root_path, 'temp_test_file')
         with open(temp_outfile_path, 'w') as f:
             f.write(text)

@@ -128,6 +128,7 @@ def insert_notice_types(session):
         if not notice_type_id:
             nt = db.NoticeType(notice_type = notice_type)
             session.add(nt)
+            
 
 def fetch_notice_type_by_id(notice_type_id, session):
     '''

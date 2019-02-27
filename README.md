@@ -50,7 +50,7 @@ python fbo.py
 To run the tests, set up the environment like before but instead run:
 
 ```bash
-python -W ignore -m unittest test.py
+python3 -W ignore -m unittest discover tests -p '*_test.py'
 ```
 
 Several warnings and exceptions will print out. Those are by design as they're being mocked in the tests.

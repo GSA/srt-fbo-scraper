@@ -74,7 +74,7 @@ class FboAttachments():
             b_text = textract.process(file_name, encoding='utf-8', errors = 'ignore')
         #TypeError is raised when None is passed to str.decode()
         #This happens when textract can't extract text from scanned documents
-        except textract.exceptions.MissingFileError:
+        except textract.exceptions.MissingFileError as e:
             b_text = None
             logger.error(f"Couldn't textract {file_name} from {url} since the file couldn't be found:  \
                            {e}", exc_info=True)
@@ -157,10 +157,10 @@ class FboAttachments():
             h = requests.head(url, timeout = 300)
         except Exception as e:
             logger.error(f"Exception occurred getting file size with HEAD request from {url}. \
-                              This means the file wasn't downloaded:  \
-                              {e}", exc_info=True)
+                           This means the file wasn't downloaded:  \
+                           {e}", exc_info=True)
             return False
-        if h.status_code != 200 and h.status_code != 302:
+        if h.status_code not in [200, 302]:
             logger.error(f"Non-200/302 status code ({h.status_code}) getting file size with HEAD request from {url}. \
                             This means the file wasn't downloaded.")
             return False

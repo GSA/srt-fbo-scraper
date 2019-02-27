@@ -128,7 +128,7 @@ def insert_notice_types(session):
         if not notice_type_id:
             nt = db.NoticeType(notice_type = notice_type)
             session.add(nt)
-            
+
 
 def fetch_notice_type_by_id(notice_type_id, session):
     '''
@@ -300,8 +300,12 @@ def fetch_validated_attachments(session):
             'target':validation
         })
     cwd = os.getcwd()
-    i = cwd.find('fbo-scraper')
-    root_path = cwd[:i+len('fbo-scraper')]
+    if 'fbo-scraper' in cwd:
+        i = cwd.find('fbo-scraper')
+        root_path = cwd[:i+len('fbo-scraper')]
+    else:
+        i = cwd.find('root')
+        root_path = cwd[:i+len('root')]
     trained_data_path = os.path.join(root_path, 'utils/binaries/train.pkl')
     with open(trained_data_path, 'rb') as f:
         original_labeled_samples = pickle.load(f)

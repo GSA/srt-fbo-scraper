@@ -18,8 +18,12 @@ class FboAttachmentsTestCase(unittest.TestCase):
         self.fboa = FboAttachments(nightly_data = nightly_data.nightly_data)
         text = "This is a test"
         cwd = os.getcwd()
-        i = cwd.find('fbo-scraper')
-        root_path = cwd[:i+len('fbo-scraper')]
+        if 'fbo-scraper' in cwd:
+            i = cwd.find('fbo-scraper')
+            root_path = cwd[:i+len('fbo-scraper')]
+        else:
+            i = cwd.find('root')
+            root_path = cwd[:i+len('root')]
         temp_outfile_path = os.path.join(root_path, 'temp_test_file')
         with open(temp_outfile_path, 'w') as f:
             f.write(text)

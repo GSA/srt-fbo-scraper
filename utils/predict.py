@@ -21,7 +21,10 @@ class Predict():
 
     def __init__(self, json_data, best_model_path='utils/binaries/estimator.pkl'):
         self.json_data = json_data
-        self.best_model_path = best_model_path
+        cwd = os.getcwd()
+        i = cwd.find('fbo-scraper')
+        root_path = cwd[:i+len('fbo-scraper')]
+        self.best_model_path = os.path.join(root_path, best_model_path)
 
 
     @staticmethod

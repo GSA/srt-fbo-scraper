@@ -84,6 +84,7 @@ class DataAccessLayer:
         if database_exists(self.engine.url) and test_conn_string:
             drop_database(self.engine.url)
 
+
 dal = DataAccessLayer(conn_string = get_db_url())
 
 @contextmanager
@@ -174,7 +175,6 @@ def insert_updated_nightly_file(session, updated_nightly_data_with_predictions):
     for notice_type in updated_nightly_data_with_predictions:
         notice_type_id = fetch_notice_type_id(notice_type, session)
         for notice_data in updated_nightly_data_with_predictions[notice_type]:
-            #continue if there aren't any notices for a given notice type
             if not notice_data:
                 continue
             attachments = notice_data.pop('attachments')
@@ -298,8 +298,11 @@ def fetch_validated_attachments(session):
             'text':text,
             'target':validation
         })
-    
-    with open('fixtures/train.pkl', 'rb') as f:
+    cwd = os.getcwd()
+    i = cwd.find('fbo-scraper')
+    root_path = cwd[:i+len('fbo-scraper')]
+    trained_data_path = os.path.join(root_path, 'utils/binaries/train.pkl')
+    with open(trained_data_path, 'rb') as f:
         original_labeled_samples = pickle.load(f)
     
     training_data = attachments + original_labeled_samples

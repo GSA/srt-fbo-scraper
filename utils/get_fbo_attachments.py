@@ -358,8 +358,14 @@ class FboAttachments():
         textract_extensions = ('.doc', '.docx', '.epub', '.gif', '.htm', 
                                '.html','.odt', '.pdf', '.rtf', '.txt')
         cwd = os.getcwd()
+        if 'fbo-scraper' in cwd:
+            i = cwd.find('fbo-scraper')
+            root_path = cwd[:i+len('fbo-scraper')]
+        else:
+            i = cwd.find('root')
+            root_path = cwd[:i+len('root')]
         attachments_dir = 'attachments'
-        out_path = os.path.join(cwd, attachments_dir) 
+        out_path = os.path.join(root_path, attachments_dir) 
         if not os.path.exists(out_path):
             os.makedirs(out_path)
         file_list = []

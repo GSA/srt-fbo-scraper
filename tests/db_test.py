@@ -390,6 +390,15 @@ class DBTestCase(unittest.TestCase):
         expected = 1
         self.assertEqual(result, expected)
 
+    def test_fetch_notices_by_solnbr_bogus_solnbr(self):
+        with session_scope(self.dal) as session:
+            insert_updated_nightly_file(session, self.predicted_nightly_data)
+        with session_scope(self.dal) as session:
+            notices = fetch_notices_by_solnbr('test123', session)
+        result = len(notices)
+        expected = 0
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()

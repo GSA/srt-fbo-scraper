@@ -38,7 +38,7 @@ class Notice(Base):
     history = Column(JSONB)
     action = Column(JSONB)
     createdAt = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
-    updatedAt = Column(DateTime, nullable = True, onupdate=datetime.datetime.utcnow)
+    updatedAt = Column(DateTime, nullable = True)
     attachments = relationship("Attachment", back_populates="notice")
 
 class NoticeType(Base):
@@ -59,7 +59,7 @@ class Attachment(Base):
     attachment_url = Column(Text)
     trained = Column(Boolean, nullable=True)
     createdAt = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
-    updatedAt = Column(DateTime, nullable = True, onupdate=datetime.datetime.utcnow)
+    updatedAt = Column(DateTime, nullable = True)
     notice = relationship("Notice", back_populates="attachments")
 
 class Model(Base):
@@ -85,7 +85,7 @@ class Users(Base):
     rejectionNote = Column(String)
     creationDate = Column(String)
     tempPassword = Column(String)
-    createdAt = Column(DateTime, nullable = False)
+    createdAt = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = False)
 
 class Agencies(Base):
@@ -93,7 +93,7 @@ class Agencies(Base):
     id = Column(Integer, primary_key = True)
     agency = Column(String)
     acronym = Column(String)
-    createdAt = Column(DateTime, nullable = False)
+    createdAt = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = False)
 
 class Surveys(Base):
@@ -106,6 +106,6 @@ class Surveys(Base):
     answer = Column(Text)
     note = Column(Text)
     choicesNote = Column(JSONB)
-    createdAt = Column(DateTime, nullable = False)
+    createdAt = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = False)
 

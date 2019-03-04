@@ -155,8 +155,9 @@ class DBTestCase(unittest.TestCase):
             notices = session.query(Notice).all()
             for n in notices:
                 notice = object_as_dict(n)
-                #pop the date attribute since it's constructed programmatically
+                #pop the date and createdAt attributes since they're constructed programmatically
                 notice.pop('date')
+                notice.pop('createdAt')
                 result.append(notice)
         expected = [{'id': 1,
                      'notice_type_id': 4,
@@ -182,7 +183,8 @@ class DBTestCase(unittest.TestCase):
                      'compliant': 0,
                      'feedback': None,
                      'history': None,
-                     'action': None},
+                     'action': None,
+                     'updatedAt': None},
                      {'id': 2,
                      'notice_type_id': 2,
                      'solicitation_number': 'spe4a618t934n',
@@ -205,7 +207,8 @@ class DBTestCase(unittest.TestCase):
                      'compliant': 0,
                      'feedback':None,
                      'history':None,
-                     'action': None}]
+                     'action': None,
+                     'updatedAt': None}]
         self.assertCountEqual(result, expected)
 
     def test_insert_model(self):
@@ -257,8 +260,9 @@ class DBTestCase(unittest.TestCase):
             notices = session.query(Notice).all()
             for n in notices:
                 notice = object_as_dict(n)
-                #pop the date attribute since it's constructed programmatically
+                #pop the date and createdAt attributes since they're constructed programmatically
                 notice.pop('date')
+                notice.pop('createdAt')
                 result.append(notice)
         expected = [{'id': 1,
                      'notice_type_id': 4,
@@ -284,7 +288,8 @@ class DBTestCase(unittest.TestCase):
                      'compliant': 0,
                      'feedback': None,
                      'history': None,
-                     'action': None},
+                     'action': None,
+                     'updatedAt': None},
                      {'id': 2,
                      'notice_type_id': 2,
                      'solicitation_number': 'spe4a618t934n',
@@ -307,7 +312,8 @@ class DBTestCase(unittest.TestCase):
                      'compliant': 0,
                      'feedback': None,
                      'history': None,
-                     'action': None},
+                     'action': None,
+                     'updatedAt': None},
                      {'id': 3,
                      'notice_type_id': 4,
                      'solicitation_number': 'spe4a618t934n',
@@ -330,7 +336,8 @@ class DBTestCase(unittest.TestCase):
                      'compliant': 0,
                      'feedback': None,
                      'history': None,
-                     'action': None}]
+                     'action': None,
+                     'updatedAt': None}]
         self.assertCountEqual(result, expected)
 
     def test_get_validation_count(self):

@@ -66,7 +66,7 @@ class Model(Base):
     create_date = Column(DateTime, default=datetime.datetime.now)
 
 class Users(Base):
-    __tablename__ = 'users'
+    __tablename__ = 'Users'
     id = Column(Integer, primary_key = True)
     firstName = Column(String)
     lastName = Column(String)
@@ -82,4 +82,14 @@ class Users(Base):
     tempPassword = Column(String)
     createdAt = Column(DateTime, nullable = False)
     updatedAt = Column(DateTime, nullable = False)
+
+class Agencies(Base):
+    __table__name = 'Agencies'
+    id = Column(Integer, primary_key = True)
+    agency = Column(String)
+    acronym = Column(String)
+    createdAt = Column(DateTime, nullable = False)
+    updatedAt = Column(DateTime, nullable = False)
+
+
 

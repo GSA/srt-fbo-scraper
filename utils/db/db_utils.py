@@ -124,7 +124,10 @@ def insert_notice_types(session):
     '''
     Insert each of the notice types into the notice_type table if it isn't already there.
     '''
-    for notice_type in ['MOD','COMBINE','PRESOL','AMDCSS','TRAIN']:
+    notice_types = ['PRESOL','SRCSGT','SNOTE','SSALE','COMBINE','AMDCSS',
+                    'MOD','AWARD','JA','FAIROPP','ARCHIVE','UNARCHIVE',
+                    'ITB','FSTD','EPSUPLOAD','DELETE','TRAIN']
+    for notice_type in notice_types:
         notice_type_id = fetch_notice_type_id(notice_type, session)
         if not notice_type_id:
             nt = db.NoticeType(notice_type = notice_type)

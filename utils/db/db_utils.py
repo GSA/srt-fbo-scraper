@@ -186,7 +186,7 @@ def insert_updated_nightly_file(session, updated_nightly_data_with_predictions):
             matching_notices = fetch_notices_by_solnbr(solicitation_number, session)
             is_solnbr_in_db = True if matching_notices else False
             if is_solnbr_in_db:
-                history_date = datetime.datetime.utcnow().strptime("%m/%d/%Y")
+                history_date = datetime.datetime.utcnow().strftime("%m/%d/%Y")
                 history = [{
                             "date":history_date,
                             "user":"",

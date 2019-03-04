@@ -348,7 +348,7 @@ class DBTestCase(unittest.TestCase):
                                   }],
                      'action': None,
                      'updatedAt': None}]
-        self.assertCountEqual(result, expected)
+        self.assertEqual(result, expected)
 
     def test_get_validation_count(self):
         with session_scope(self.dal) as session:

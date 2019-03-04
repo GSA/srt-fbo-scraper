@@ -65,3 +65,21 @@ class Model(Base):
     score = Column(Float)
     create_date = Column(DateTime, default=datetime.datetime.now)
 
+class Users(Base):
+    __tablename__ = 'users'
+    id = Column(Integer, primary_key = True)
+    firstName = Column(String)
+    lastName = Column(String)
+    agency = Column(String)
+    email = Column(String)
+    password = Column(String)
+    position = Column(String)
+    isAccepted = Column(Boolean)
+    isRejected = Column(Boolean)
+    userRole = Column(String)
+    rejectionNote = Column(String)
+    creationDate = Column(String)
+    tempPassword = Column(String)
+    createdAt = Column(DateTime, nullable = False)
+    updatedAt = Column(DateTime, nullable = False)
+

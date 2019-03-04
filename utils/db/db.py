@@ -34,7 +34,11 @@ class Notice(Base):
     date = Column(DateTime, default=now_minus_two)
     notice_data = Column(JSONB)
     compliant = Column(Integer)
-    action = Column(ARRAY(String(100), dimensions=2))
+    feedback = Column(JSONB)
+    history = Column(JSONB)
+    action = Column(JSONB)
+    createdAt = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
+    updatedAt = Column(DateTime, nullable = True, onupdate=datetime.datetime.utcnow)
     attachments = relationship("Attachment", back_populates="notice")
 
 class NoticeType(Base):
@@ -54,8 +58,9 @@ class Attachment(Base):
     validation = Column(Integer, nullable=True)
     attachment_url = Column(Text)
     trained = Column(Boolean, nullable=True)
-    notice = relationship("Notice", 
-                          back_populates="attachments")
+    createdAt = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
+    updatedAt = Column(DateTime, nullable = True, onupdate=datetime.datetime.utcnow)
+    notice = relationship("Notice", back_populates="attachments")
 
 class Model(Base):
     __tablename__ = 'model'
@@ -63,7 +68,7 @@ class Model(Base):
     results = Column(JSONB)
     params = Column(JSONB)
     score = Column(Float)
-    create_date = Column(DateTime, default=datetime.datetime.utcnow)
+    create_date = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
 
 class Users(Base):
     __tablename__ = 'Users'

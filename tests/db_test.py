@@ -249,6 +249,9 @@ class DBTestCase(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_insert_updated_nightly_file_day_two(self):
+        '''
+        Simulate a second batch entry with a repeating solnbr that now has attachments
+        '''
         with session_scope(self.dal) as session:
             insert_updated_nightly_file(session, 
                                         self.predicted_nightly_data)
@@ -263,6 +266,8 @@ class DBTestCase(unittest.TestCase):
                 #pop the date and createdAt attributes since they're constructed programmatically
                 notice.pop('date')
                 notice.pop('createdAt')
+                if notice['history']:
+                    notice['history']['date'] = "test date"
                 result.append(notice)
         expected = [{'id': 1,
                      'notice_type_id': 4,
@@ -335,7 +340,12 @@ class DBTestCase(unittest.TestCase):
                                      'setaside': 'n/a  '},
                      'compliant': 0,
                      'feedback': None,
-                     'history': None,
+                     'history': [{
+                                  "date":"test date",
+                                  "user":"",
+                                  "action":"Solicitation Updated on FBO.gov",
+                                  "status":""
+                                  }],
                      'action': None,
                      'updatedAt': None}]
         self.assertCountEqual(result, expected)

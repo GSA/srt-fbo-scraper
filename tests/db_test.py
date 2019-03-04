@@ -8,7 +8,7 @@ from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_
                               insert_model, insert_notice_types, retrain_check, \
                               get_validation_count, get_trained_count, \
                               get_validated_untrained_count, fetch_validated_attachments, \
-                              fetch_last_score                          
+                              fetch_last_score, fetch_notices_by_solnbr                         
 
 class DBTestCase(unittest.TestCase):
     
@@ -155,53 +155,60 @@ class DBTestCase(unittest.TestCase):
             notices = session.query(Notice).all()
             for n in notices:
                 notice = object_as_dict(n)
-                #pop the date attribute since it's constructed programmatically
+                #pop the date and createdAt attributes since they're constructed programmatically
                 notice.pop('date')
+                notice.pop('createdAt')
                 result.append(notice)
         expected = [{'id': 1,
-                     'notice_type_id': 4,
+                     'notice_type_id': 6,
                      'solicitation_number': 'rfp-e-bpm-djf-18-0800-pr-0000828',
                      'agency': 'department of justice',
                      'notice_data': {'url': 'url',
-                     'zip': '20535',
-                     'date': '0506',
-                     'desc': '  link to document',
-                     'year': '18',
-                     'naics': '511210',
-                     'ntype': 'combine',
-                     'offadd': '935 pennsylvania avenue, n.w. washington dc 20535',
-                     'office': 'federal bureau of investigation',
-                     'popzip': '20535',
-                     'contact': 'clark kent, contracting officer, phone 5555555555, email clark.kent@daily-planet.com',
-                     'subject': 'enterprise business process management software tool',
-                     'classcod': '70',
-                     'location': 'procurement section',
-                     'setaside': 'n/a',
-                     'popaddress': '935 pennsylvania ave. n.w. washington, dc  ',
-                     'popcountry': 'us'},
+                                     'zip': '20535',
+                                     'date': '0506',
+                                     'desc': '  link to document',
+                                     'year': '18',
+                                     'naics': '511210',
+                                     'ntype': 'combine',
+                                     'offadd': '935 pennsylvania avenue, n.w. washington dc 20535',
+                                     'office': 'federal bureau of investigation',
+                                     'popzip': '20535',
+                                     'contact': 'clark kent, contracting officer, phone 5555555555, email clark.kent@daily-planet.com',
+                                     'subject': 'enterprise business process management software tool',
+                                     'classcod': '70',
+                                     'location': 'procurement section',
+                                     'setaside': 'n/a',
+                                     'popaddress': '935 pennsylvania ave. n.w. washington, dc  ',
+                                     'popcountry': 'us'},
                      'compliant': 0,
-                     'action': None},
+                     'feedback': None,
+                     'history': None,
+                     'action': None,
+                     'updatedAt': None},
                      {'id': 2,
-                     'notice_type_id': 2,
+                     'notice_type_id': 5,
                      'solicitation_number': 'spe4a618t934n',
                      'agency': 'defense logistics agency',
                      'notice_data': {'url': 'test_url',
-                     'zip': '23297',
-                     'date': '0506',
-                     'desc': 'test123',
-                     'year': '18',
-                     'naics': '334511',
-                     'offadd': '334511',
-                     'office': 'dla acquisition locations',
-                     'contact': 'bob.dylan@aol.com',
-                     'subject': 'subject',
-                     'archdate': '06132018',
-                     'classcod': '66',
-                     'location': 'dla aviation - bsm',
-                     'respdate': '051418',
-                     'setaside': 'n/a  '},
+                                     'zip': '23297',
+                                     'date': '0506',
+                                     'desc': 'test123',
+                                     'year': '18',
+                                     'naics': '334511',
+                                     'offadd': '334511',
+                                     'office': 'dla acquisition locations',
+                                     'contact': 'bob.dylan@aol.com',
+                                     'subject': 'subject',
+                                     'archdate': '06132018',
+                                     'classcod': '66',
+                                     'location': 'dla aviation - bsm',
+                                     'respdate': '051418',
+                                     'setaside': 'n/a  '},
                      'compliant': 0,
-                     'action': None}]
+                     'feedback':None,
+                     'history':None,
+                     'action': None,
+                     'updatedAt': None}]
         self.assertCountEqual(result, expected)
 
     def test_insert_model(self):
@@ -242,6 +249,9 @@ class DBTestCase(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_insert_updated_nightly_file_day_two(self):
+        '''
+        Simulate a second batch entry with a repeating solnbr that now has attachments
+        '''
         with session_scope(self.dal) as session:
             insert_updated_nightly_file(session, 
                                         self.predicted_nightly_data)
@@ -253,11 +263,14 @@ class DBTestCase(unittest.TestCase):
             notices = session.query(Notice).all()
             for n in notices:
                 notice = object_as_dict(n)
-                #pop the date attribute since it's constructed programmatically
+                #pop the date and createdAt attributes since they're constructed programmatically
                 notice.pop('date')
+                notice.pop('createdAt')
+                if notice['history']:
+                    notice['history'][0]['date'] = "test date"
                 result.append(notice)
         expected = [{'id': 1,
-                     'notice_type_id': 4,
+                     'notice_type_id': 6,
                      'solicitation_number': 'rfp-e-bpm-djf-18-0800-pr-0000828',
                      'agency': 'department of justice',
                      'notice_data': {'url': 'url',
@@ -278,9 +291,12 @@ class DBTestCase(unittest.TestCase):
                                      'popaddress': '935 pennsylvania ave. n.w. washington, dc  ',
                                      'popcountry': 'us'},
                      'compliant': 0,
-                     'action': None},
+                     'feedback': None,
+                     'history': None,
+                     'action': None,
+                     'updatedAt': None},
                      {'id': 2,
-                     'notice_type_id': 2,
+                     'notice_type_id': 5,
                      'solicitation_number': 'spe4a618t934n',
                      'agency': 'defense logistics agency',
                      'notice_data': {'url': 'test_url',
@@ -299,9 +315,12 @@ class DBTestCase(unittest.TestCase):
                                      'respdate': '051418',
                                      'setaside': 'n/a  '},
                      'compliant': 0,
-                     'action': None},
+                     'feedback': None,
+                     'history': None,
+                     'action': None,
+                     'updatedAt': None},
                      {'id': 3,
-                     'notice_type_id': 4,
+                     'notice_type_id': 6,
                      'solicitation_number': 'spe4a618t934n',
                      'agency': 'defense logistics agency',
                      'notice_data': {'url': 'test_url',
@@ -320,8 +339,16 @@ class DBTestCase(unittest.TestCase):
                                      'respdate': '051418',
                                      'setaside': 'n/a  '},
                      'compliant': 0,
-                     'action': None}]
-        self.assertCountEqual(result, expected)
+                     'feedback': None,
+                     'history': [{
+                                  "date":"test date",
+                                  "user":"",
+                                  "action":"Solicitation Updated on FBO.gov",
+                                  "status":""
+                                  }],
+                     'action': None,
+                     'updatedAt': None}]
+        self.assertEqual(result, expected)
 
     def test_get_validation_count(self):
         with session_scope(self.dal) as session:
@@ -363,6 +390,25 @@ class DBTestCase(unittest.TestCase):
         result = len(attachments)
         expected = 993
         self.assertEqual(result, expected)
+
+    def test_fetch_notices_by_solnbr(self):
+        with session_scope(self.dal) as session:
+            insert_updated_nightly_file(session, self.predicted_nightly_data)
+        with session_scope(self.dal) as session:
+            notices = fetch_notices_by_solnbr('rfp-e-bpm-djf-18-0800-pr-0000828', session)
+        result = len(notices)
+        expected = 1
+        self.assertEqual(result, expected)
+
+    def test_fetch_notices_by_solnbr_bogus_solnbr(self):
+        with session_scope(self.dal) as session:
+            insert_updated_nightly_file(session, self.predicted_nightly_data)
+        with session_scope(self.dal) as session:
+            notices = fetch_notices_by_solnbr('test123', session)
+        result = len(notices)
+        expected = 0
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()

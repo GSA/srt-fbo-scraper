@@ -1,6 +1,7 @@
 import os
 import json
 import sys
+import datetime
 from contextlib import contextmanager
 from sqlalchemy import create_engine, func, case, inspect
 from sqlalchemy.orm import sessionmaker
@@ -123,7 +124,10 @@ def insert_notice_types(session):
     '''
     Insert each of the notice types into the notice_type table if it isn't already there.
     '''
-    for notice_type in ['MOD','COMBINE','PRESOL','AMDCSS','TRAIN']:
+    notice_types = ['PRESOL','SRCSGT','SNOTE','SSALE','COMBINE','AMDCSS',
+                    'MOD','AWARD','JA','FAIROPP','ARCHIVE','UNARCHIVE',
+                    'ITB','FSTD','EPSUPLOAD','DELETE','TRAIN']
+    for notice_type in notice_types:
         notice_type_id = fetch_notice_type_id(notice_type, session)
         if not notice_type_id:
             nt = db.NoticeType(notice_type = notice_type)
@@ -182,11 +186,28 @@ def insert_updated_nightly_file(session, updated_nightly_data_with_predictions):
             agency = notice_data.pop('agency')
             compliant = notice_data.pop('compliant')
             solicitation_number = notice_data.pop('solnbr')
-            notice = db.Notice(notice_type_id = notice_type_id,
-                               solicitation_number = solicitation_number,
-                               agency = agency,
-                               notice_data = notice_data,
-                               compliant = compliant)
+            matching_notices = fetch_notices_by_solnbr(solicitation_number, session)
+            is_solnbr_in_db = True if matching_notices else False
+            if is_solnbr_in_db:
+                history_date = datetime.datetime.utcnow().strftime("%m/%d/%Y")
+                history = [{
+                            "date":history_date,
+                            "user":"",
+                            "action":"Solicitation Updated on FBO.gov",
+                            "status":""
+                            }]
+                notice = db.Notice(notice_type_id = notice_type_id,
+                                   solicitation_number = solicitation_number,
+                                   agency = agency,
+                                   notice_data = notice_data,
+                                   compliant = compliant,
+                                   history = history)
+            else:
+                notice = db.Notice(notice_type_id = notice_type_id,
+                                   solicitation_number = solicitation_number,
+                                   agency = agency,
+                                   notice_data = notice_data,
+                                   compliant = compliant)
             for doc in attachments:
                 attachment =  db.Attachment(notice_type_id = notice_type_id,
                                             prediction = doc['prediction'],

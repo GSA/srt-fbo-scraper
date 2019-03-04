@@ -496,7 +496,7 @@ def get_nightly_data(date = None,
     '''
     if not date:
         #get day before yesterday to give FBO time to update their FTP
-        now_minus_two = datetime.now() - timedelta(2)
+        now_minus_two = datetime.utcnow() - timedelta(2)
         date = now_minus_two.strftime("%Y%m%d")
     fbo_ftp_url = f'ftp://ftp.fbo.gov/FBOFeed{date}'
     file_lines = download_from_ftp(date, fbo_ftp_url)

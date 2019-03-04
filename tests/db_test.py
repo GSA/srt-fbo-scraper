@@ -267,7 +267,7 @@ class DBTestCase(unittest.TestCase):
                 notice.pop('date')
                 notice.pop('createdAt')
                 if notice['history']:
-                    notice['history']['date'] = "test date"
+                    notice['history'][0]['date'] = "test date"
                 result.append(notice)
         expected = [{'id': 1,
                      'notice_type_id': 4,
@@ -348,7 +348,7 @@ class DBTestCase(unittest.TestCase):
                                   }],
                      'action': None,
                      'updatedAt': None}]
-        self.assertCountEqual(result, expected)
+        self.assertEqual(result, expected)
 
     def test_get_validation_count(self):
         with session_scope(self.dal) as session:

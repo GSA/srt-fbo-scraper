@@ -160,7 +160,7 @@ class DBTestCase(unittest.TestCase):
                 notice.pop('createdAt')
                 result.append(notice)
         expected = [{'id': 1,
-                     'notice_type_id': 4,
+                     'notice_type_id': 6,
                      'solicitation_number': 'rfp-e-bpm-djf-18-0800-pr-0000828',
                      'agency': 'department of justice',
                      'notice_data': {'url': 'url',
@@ -186,7 +186,7 @@ class DBTestCase(unittest.TestCase):
                      'action': None,
                      'updatedAt': None},
                      {'id': 2,
-                     'notice_type_id': 2,
+                     'notice_type_id': 5,
                      'solicitation_number': 'spe4a618t934n',
                      'agency': 'defense logistics agency',
                      'notice_data': {'url': 'test_url',
@@ -270,7 +270,7 @@ class DBTestCase(unittest.TestCase):
                     notice['history'][0]['date'] = "test date"
                 result.append(notice)
         expected = [{'id': 1,
-                     'notice_type_id': 4,
+                     'notice_type_id': 6,
                      'solicitation_number': 'rfp-e-bpm-djf-18-0800-pr-0000828',
                      'agency': 'department of justice',
                      'notice_data': {'url': 'url',
@@ -296,7 +296,7 @@ class DBTestCase(unittest.TestCase):
                      'action': None,
                      'updatedAt': None},
                      {'id': 2,
-                     'notice_type_id': 2,
+                     'notice_type_id': 5,
                      'solicitation_number': 'spe4a618t934n',
                      'agency': 'defense logistics agency',
                      'notice_data': {'url': 'test_url',
@@ -320,7 +320,7 @@ class DBTestCase(unittest.TestCase):
                      'action': None,
                      'updatedAt': None},
                      {'id': 3,
-                     'notice_type_id': 4,
+                     'notice_type_id': 6,
                      'solicitation_number': 'spe4a618t934n',
                      'agency': 'defense logistics agency',
                      'notice_data': {'url': 'test_url',

@@ -13,7 +13,7 @@ def now_minus_two():
     Returns:
         A datetime object containing the day before yesterday's date
     '''
-    return datetime.datetime.now() - datetime.timedelta(2)
+    return datetime.datetime.utcnow() - datetime.timedelta(2)
 
 #see https://docs.sqlalchemy.org/en/latest/core/constraints.html#constraint-naming-conventions
 meta = MetaData(naming_convention={
@@ -63,7 +63,7 @@ class Model(Base):
     results = Column(JSONB)
     params = Column(JSONB)
     score = Column(Float)
-    create_date = Column(DateTime, default=datetime.datetime.now)
+    create_date = Column(DateTime, default=datetime.datetime.utcnow)
 
 class Users(Base):
     __tablename__ = 'Users'
@@ -84,12 +84,23 @@ class Users(Base):
     updatedAt = Column(DateTime, nullable = False)
 
 class Agencies(Base):
-    __table__name = 'Agencies'
+    __tablename__ = 'Agencies'
     id = Column(Integer, primary_key = True)
     agency = Column(String)
     acronym = Column(String)
     createdAt = Column(DateTime, nullable = False)
     updatedAt = Column(DateTime, nullable = False)
 
-
+class Surveys(Base):
+    __tablename__ = 'Surveys'
+    id = Column(Integer, primary_key = True)
+    question = Column(Text)
+    choices = Column(JSONB)
+    section = Column(String(2000))
+    type = Column(String(2000))
+    answer = Column(Text)
+    note = Column(Text)
+    choicesNote = Column(JSONB)
+    createdAt = Column(DateTime, nullable = False)
+    updatedAt = Column(DateTime, nullable = False)
 

@@ -8,7 +8,7 @@ from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_
                               insert_model, insert_notice_types, retrain_check, \
                               get_validation_count, get_trained_count, \
                               get_validated_untrained_count, fetch_validated_attachments, \
-                              fetch_last_score                          
+                              fetch_last_score, fetch_notices_by_solnbr                         
 
 class DBTestCase(unittest.TestCase):
     
@@ -380,6 +380,16 @@ class DBTestCase(unittest.TestCase):
         result = len(attachments)
         expected = 993
         self.assertEqual(result, expected)
+
+    def test_fetch_notices_by_solnbr(self):
+        with session_scope(self.dal) as session:
+            insert_updated_nightly_file(session, self.predicted_nightly_data)
+        with session_scope(self.dal) as session:
+            notices = fetch_notices_by_solnbr('rfp-e-bpm-djf-18-0800-pr-0000828', session)
+        result = len(notices)
+        expected = 1
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()

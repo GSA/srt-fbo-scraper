@@ -186,7 +186,7 @@ def get_notice_url_from_archive_list(redirect_url, archive_list, notice_date, no
         if posted_on_date == notice_date:
             if sol_type_to_find in sol_type:
                 if sol_type_to_find == '(Modified)':
-                    if sol_type.startswith('(Modified)'):
+                    if '(Modified)' in sol_type:
                         notice_url = archive_list[i].find('td',
                                                           {'class':'lst-cl',
                                                            'headers':'lh_id'}).find('a',href=True)['href']

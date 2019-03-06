@@ -68,29 +68,22 @@ Then target the appropriate org and space by following the instructions.
 Then push the app, creating the service first:
 
 ```bash
-cf create-service <service> <service-tag>  
-cf create-service-key <service-tag>     *this may take a few minutes to configure*  
+cf create-service <service> <service-tag>
+#wait a few minutes for the service to be provisionned
+cf create-service-key <service-tag> <service-key-name>    #if this returns an OK, then your service has been provisioned  
 cf push srt-fbo-scraper --docker-image csmcallister/fbo-scraper
 cf bind-service srt-fbo-scraper <service-tag>  
 cf restage srt-fbo-scraper
 ```  
 
-Below, `<service>` is the name of your postgres service of choice (e.g. `shared-psql`) while `<service-tag>` is whatever you want to call it.
+Above, `<service>` is the name of a postgres service (e.g. `aws-rds shared-psql`) while `<service-tag>` is whatever you want to call this service.
+
+Since services can sometimes take up to 60 minutes to be provisioned, we use `cf create-service-key` to ensure the service has been provisioned. See [this](https://cloud.gov/docs/services/relational-database/) for more details.
 
 ## Logs
-Logs are stored within the app in `fbo.log`. To access them, log into cloud.gov with:
+We don't do anything special with logging. We simply write them to STDOUT/STDERR and use https://login.fr.cloud.gov/login to view and search them.
 
-```bash
-cf login -a api.fr.cloud.gov --sso
-```
-
-And then target your desired space. You can then ssh into the app, nav to the log's directory, and access the contents:
-
-```bash
-cf ssh srt-fbo-scraper
-cd ../code/
-cat -n fbo.log
-```
+A TODO is logging in JSON using [python-json-logger](https://github.com/madzak/python-json-logger). This will make the logs more easily searchable.
 
 ## Contributing
 

@@ -374,7 +374,7 @@ class FboAttachments():
                 attachment_urls, is_neco_navy_mil = FboAttachments.get_attachment_url_from_div(div)
                 for attachment_url in attachment_urls:
                     #some are ftp and we can get the file now
-                    if 'ftp://' in attachment_url:
+                    if 'ftp://' in attachment_url.lower():
                         file_out_path = FboAttachments.get_and_write_attachment_from_ftp(attachment_url,
                                                                                          out_path,
                                                                                          textract_extensions)

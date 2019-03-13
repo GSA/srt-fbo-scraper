@@ -123,6 +123,7 @@ class DBTestCase(unittest.TestCase):
                                                            'compliant': 0}]
                                             }
         self.dal = DataAccessLayer(conn_string = conn_string)
+        self.dal.create_test_postgres_df()
         self.dal.connect()
         self.maxDiff = None
     

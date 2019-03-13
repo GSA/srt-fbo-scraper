@@ -60,6 +60,8 @@ class DataAccessLayer:
         self.conn_string = conn_string
 
     def connect(self):
+        if not database_exists(self.conn_string):
+            self.create_test_postgres_df()
         self.engine = create_engine(self.conn_string)
         try:
             db.Base.metadata.create_all(self.engine)

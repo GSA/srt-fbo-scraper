@@ -76,7 +76,7 @@ class DataAccessLayer:
         if database_exists(self.conn_string ) and is_test:
             drop_database(self.conn_string)
 
-    def create_test_postgres_df(self):
+    def create_test_postgres_db(self):
         is_test = self.conn_string in DataAccessLayer.test_db_uris
         if not database_exists(self.conn_string) and is_test:
             create_database(self.conn_string )

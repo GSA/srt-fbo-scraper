@@ -1,4 +1,7 @@
-[![CircleCI](https://circleci.com/gh/GSA/srt-fbo-scraper.svg?style=svg)](https://circleci.com/gh/GSA/srt-fbo-scraper)
+[![CircleCI](https://circleci.com/gh/GSA/srt-fbo-scraper/tree/master.svg?style=svg)](https://circleci.com/gh/GSA/srt-fbo-scraper/tree/master) 
+[![CircleCI](https://circleci.com/gh/GSA/srt-fbo-scraper/tree/master.svg?style=svg)](https://circleci.com/gh/GSA/srt-fbo-scraper/tree/dev)
+
+
 # fbo-scraper (AKA Smartie)
 [FBO](https://www.fbo.gov/) is the U.S. government's system of record for opportunities to do business with the government. Each night, the FBO system posts all _updated_ opportunities as a pseudo-xml file that is made publically available via the File Transfer Protocol (FTP), which is a standard network protocol used for the transfer of computer files between a client and server on a computer network.
 

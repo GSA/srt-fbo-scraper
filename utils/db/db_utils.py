@@ -5,6 +5,7 @@ import datetime
 from contextlib import contextmanager
 from sqlalchemy import create_engine, func, case, inspect
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.pool import NullPool
 from sqlalchemy_utils import database_exists, create_database, drop_database
 import logging
 import utils.db.db as db
@@ -50,17 +51,25 @@ def get_db_url():
 
 class DataAccessLayer:
     '''
-    Sets up a connection to the database given the environment.
+    Sets up a connection to the database.
     '''
     test_db_uris = ['postgres://circleci@localhost:5432/smartie-test?sslmode=disable',
                     'postgresql+psycopg2://localhost/test']
+    
     def __init__(self, conn_string):
         self.engine = None
         self.conn_string = conn_string
 
     def connect(self):
-        local = self._create_local_postgres()
-        if not local:
+        is_test = self.conn_string in DataAccessLayer.test_db_uris
+        if is_test:
+            if not database_exists(self.conn_string):
+                self.create_test_postgres_db()
+            #NullPool is a Pool which does not pool connections.
+            #Instead it literally opens and closes the underlying DB-API connection 
+            # per each connection open/close.
+            self.engine = create_engine(self.conn_string, poolclass = NullPool)
+        else:
             self.engine = create_engine(self.conn_string)
         try:
             db.Base.metadata.create_all(self.engine)
@@ -70,20 +79,15 @@ class DataAccessLayer:
             sys.exit(1)
         self.Session = sessionmaker(bind = self.engine)
 
-    def _create_local_postgres(self):
-        test_conn_string = self.conn_string in DataAccessLayer.test_db_uris
-        if test_conn_string:
-            self.engine = create_engine(self.conn_string)
-            if not database_exists(self.engine.url):
-                create_database(self.engine.url)
-                return True
-        else:
-            return
-
     def drop_test_postgres_db(self):
-        test_conn_string = self.conn_string in DataAccessLayer.test_db_uris
-        if database_exists(self.engine.url) and test_conn_string:
-            drop_database(self.engine.url)
+        is_test = self.conn_string in DataAccessLayer.test_db_uris
+        if database_exists(self.conn_string ) and is_test:
+            drop_database(self.conn_string)
+
+    def create_test_postgres_db(self):
+        is_test = self.conn_string in DataAccessLayer.test_db_uris
+        if not database_exists(self.conn_string) and is_test:
+            create_database(self.conn_string )
 
 
 dal = DataAccessLayer(conn_string = get_db_url())

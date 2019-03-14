@@ -12,12 +12,15 @@ class EndToEndTest(unittest.TestCase):
     def setUp(self):
         conn_string = get_db_url()
         self.dal = DataAccessLayer(conn_string)
+        self.dal.create_test_postgres_db()
         self.dal.connect()
         self.main = main
 
     def tearDown(self):
         with session_scope(self.dal) as session:
             clear_data(session)
+        with session_scope(self.dal) as session:
+            session.close_all()
         self.dal.drop_test_postgres_db()
         self.dal = None
         self.main = None

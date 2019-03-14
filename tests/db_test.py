@@ -123,12 +123,15 @@ class DBTestCase(unittest.TestCase):
                                                            'compliant': 0}]
                                             }
         self.dal = DataAccessLayer(conn_string = conn_string)
+        self.dal.create_test_postgres_db()
         self.dal.connect()
         self.maxDiff = None
     
     def tearDown(self):
         with session_scope(self.dal) as session:
             clear_data(session)
+        with session_scope(self.dal) as session:
+            session.close_all()
         self.dal.drop_test_postgres_db()
         self.dal = None
         self.predicted_nightly_data = None

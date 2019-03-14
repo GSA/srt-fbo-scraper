@@ -88,6 +88,13 @@ class FboNightlyScraperTestCase(unittest.TestCase):
         expected = ['foo.bar@gsa.gov']
         self.assertEqual(result, expected)
 
+    def test_extract_emails_email_w_email(self):
+        notice = {'CONTACT':'no email here :(',
+                  'EMAIL':'foo.bar@gsa.gov'}
+        result = extract_emails(notice)
+        expected = ['foo.bar@gsa.gov']
+        self.assertEqual(result, expected)
+
     def test_extract_emails_desc_w_email(self):
         notice = {'CONTACT':'no email here :(',
                   'DESC':'foo.bar@gsa.gov'}

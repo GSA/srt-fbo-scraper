@@ -92,7 +92,11 @@ def extract_emails(notice):
                 emails.append(m.group())
     #If there's no email address, the notice might have an email field, even though 
     #the FBO docs say this field isn't to be used.
-    email = notice.get('EMAIL')
+    try:
+        #pop since we don't need this key in each notice anymore.
+        email = notice.pop('EMAIL')
+    except KeyError:
+        email = None
     if not emails and email:
         tokens = email.split()
         for token in tokens:

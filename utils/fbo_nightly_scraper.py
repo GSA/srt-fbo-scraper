@@ -94,7 +94,13 @@ def extract_emails(notice):
         if hrefs:
             matches = [re.match(r"([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)", href) for href in hrefs]
             emails = [m.group() for m in matches if m is not None]
-    emails = [e.lower() for e in set(emails)] if emails else None
+    emails = [e.lower() for e in emails] if emails else None
+    #sometimes, the notice has an email field that *may* have emails in it
+    email = notice.get('EMAIL')
+    if email:
+        email_emails = re.findall(r"([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)", email)
+        emails.extend(email_emails)
+    emails = list(set(emails))
     
     return emails
 

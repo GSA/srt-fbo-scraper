@@ -80,27 +80,42 @@ def extract_emails(notice):
     Returns:
         emails (list): a list of unique email addresses
     '''
+    email_re = re.compile(r'^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$')
+    emails = []
+    #search the contact field first
     contact = notice.get('CONTACT')
-    emails = None
     if contact:
-        emails = re.findall(r"([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)", contact)
+        tokens = contact.split()
+        for token in tokens:
+            m = re.search(email_re, token)
+            if m:
+                emails.append(m.group())
+    #If there's no email address, the notice might have an email field, even though 
+    #the FBO docs say this field isn't to be used.
+    email = notice.get('EMAIL')
+    if not emails and email:
+        tokens = email.split()
+        for token in tokens:
+            m = re.search(email_re, token)
+            if m:
+                emails.append(m.group())
+    #if there's still no email in the contact field, move onto all of the other fields
     if not emails:
         notice_values = " ".join(notice.values())
-        emails = re.findall(r"([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)", notice_values)
+        tokens = notice_values.split()
+        for token in tokens:
+            m = re.search(email_re, token)
+            if m:
+                emails.append(m.group())
+    #if there's still no email address, try web-scraping the notice's fbo page
     if not emails:
         url = notice.get('URL')
         hrefs = get_email_from_url(url)
         hrefs = [x.replace("mailto:",'') for x in hrefs]
         if hrefs:
-            matches = [re.match(r"([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)", href) for href in hrefs]
+            matches = [re.search(email_re, href.strip()) for href in hrefs]
             emails = [m.group() for m in matches if m is not None]
-    emails = [e.lower() for e in emails] if emails else None
-    #sometimes, the notice has an email field that *may* have emails in it
-    email = notice.get('EMAIL')
-    if email:
-        email_emails = re.findall(r"([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)", email)
-        emails.extend(email_emails)
-    emails = list(set(emails))
+    emails = [email.lower() for email in set(emails)] if emails else None
     
     return emails
 

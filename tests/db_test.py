@@ -130,6 +130,8 @@ class DBTestCase(unittest.TestCase):
     def tearDown(self):
         with session_scope(self.dal) as session:
             clear_data(session)
+        with session_scope(self.dal) as session:
+            session.close_all()
         self.dal.drop_test_postgres_db()
         self.dal = None
         self.predicted_nightly_data = None

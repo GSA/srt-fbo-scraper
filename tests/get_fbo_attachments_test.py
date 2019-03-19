@@ -9,11 +9,12 @@ import sys
 import os
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from utils.get_fbo_attachments import FboAttachments
-from fixtures import nightly_data
+from fixtures import nightly_data, fedconnect
 
 class FboAttachmentsTestCase(unittest.TestCase):
 
     def setUp(self):
+        self.maxDiff = None
         self.fake_fbo_url = 'https://www.fbo.gov/fake'
         self.fboa = FboAttachments(nightly_data = nightly_data.nightly_data)
         text = "This is a test"
@@ -352,3 +353,14 @@ class FboAttachmentsTestCase(unittest.TestCase):
             file, _ = file_url_tup
             os.remove(file)
         self.assertEqual(result, expected)
+
+    def test_get_post_payload(self):
+        a_tag = fedconnect.get_a_tag()
+        soup = fedconnect.get_fedconnect_soup()
+        result = self.fboa.get_post_payload(a_tag, soup)
+        expected = fedconnect.expected_payload
+        self.assertEqual(result, expected)
+
+    
+if __name__ == '__main__':
+    unittest.main()

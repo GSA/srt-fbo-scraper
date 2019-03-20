@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import urllib.request
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs
 from contextlib import closing
 import shutil
 import re
@@ -14,6 +14,7 @@ from mimetypes import guess_extension
 import textract
 from zipfile import ZipFile, BadZipfile
 import io
+import cgi
 import logging
 
 logger = logging.getLogger(__name__)
@@ -342,6 +343,126 @@ class FboAttachments():
                     
         return file_out_path
 
+    
+    @staticmethod
+    def get_post_payload(a_tag, soup):
+        '''
+        Given an <a> tag bs4 object from one of the FedConnect pages as well as the soup of the page
+        itself, contstruct the form data for the post request that'll get the attachment.
+
+        Parameters:
+            a_tag (bs4 object): an <a> tag bs4 object
+            soup (bs4 object): the bs4 soup of a FedConnect page
+
+        Returns:
+            payload (dict): the form data to submit with the post request for the attachment.
+        '''
+        payload = {}
+        for i in soup.find_all('input'):
+            name = i['name']
+            if name.startswith('__'):
+                payload[name] = i['value']
+        payload['WebPartManager1_gwpCTRL_AttachmentTree1_CTRL_AttachmentTree1_Tree_Attachments_SelectedNode'] = a_tag['id'] 
+        payload['WebPartManager1_gwpCTRL_AttachmentTree1_CTRL_AttachmentTree1_Tree_Attachments_ExpandState'] = 'eennennn'
+        event_target = a_tag['href'].split("'")[1]
+        payload['__EVENTTARGET'] = event_target
+        event_argument = a_tag['href'].split("'")[3].encode('utf-8').decode('unicode_escape')
+        payload['__EVENTARGUMENT'] = event_argument
+        payload['WebPartManager1_gwpCTRL_AttachmentTree1_CTRL_AttachmentTree1_Tree_Attachments_PopulateLog'] = ''
+        payload['__SCROLLPOSITIONX'] = 123
+        payload['__SCROLLPOSITIONY'] = 0
+
+        return payload
+    
+    
+    @staticmethod
+    def write_fedconnect_docs(url, out_path, textract_extensions):
+        '''
+        Given a fedconnect url, scrape and download all of the attachments
+
+        Parameters:
+            url (str): a FedConnect url
+            out_path: (str): where to write the docs
+            textract_extensions (list): a list of acceptable file extensions
+
+        Returns:
+            file_list (list): a list of tuples, with each tuple containing a file's path
+                            and the url used to request it.
+        '''
+        try:
+            h = requests.head(url, timeout = 300)
+        except Exception as e:
+            logger.error(f"Exception occurred making HEAD request to {url}:  \
+                        {e}", exc_info=True)
+            return
+        redirect_location = h.headers.get('location')
+        if 'https://www.fedconnect.net' not in redirect_location and redirect_location:
+            redirect_location = f'https://www.fedconnect.net{redirect_location}'
+        try:
+            redirect_location = redirect_location if redirect_location else url
+            r = requests.get(redirect_location, timeout = 300)
+        except Exception as e:
+            logger.error(f"Exception occurred making GET request to {redirect_location}:  \
+                        {e}", exc_info=True)
+            return
+        cookies = r.cookies
+        soup = BeautifulSoup(r.content, 'html.parser')
+        try:
+            attachments_div = soup.find('div',{'id':'div_attachments'})
+            attachment_tables = attachments_div.find_all('table')
+            attachment_rows = []
+            for table in attachment_tables:
+                attachment_rows.extend(table.find_all('td'))
+            rows_with_href = []
+            for i in attachment_rows:
+                a_tags = i.find_all('a', href = True)
+                rows_with_href.extend([a for a in a_tags if 'doPostBack' in a['href'] and a.text])
+        except Exception as e:
+            logger.error(f"Exception occurred scraping this FedConnect page: {redirect_location}:  \
+                        {e}", exc_info=True)
+            return
+        file_list = []
+        file_names = []
+        for a_tag in rows_with_href:
+            payload = FboAttachments.get_post_payload(a_tag, soup)
+            return_url_param = f"/{url.replace('https://www.fedconnect.net/', '')}"
+            parsed_return_url_param = urlparse(return_url_param)
+            parsed_qs = parse_qs(parsed_return_url_param.query)
+            doc = parsed_qs['doc'][0]
+            agency = parsed_qs['agency'][0]        
+            post_url = (f'https://www.fedconnect.net/FedConnect/PublicPages/PublicSearch/Public_Opportunity'
+                        f'Summary.aspx?ReturnUrl={return_url_param}&doc={doc}&agency={agency}')
+            try:
+                p = requests.post(post_url, data = payload, cookies = cookies, timeout = 300)
+            except Exception as e:
+                logger.error(f"Exception occurred making POST request to {post_url} with \
+                            the following form data: {payload} \n\n {e}", exc_info=True)
+                continue
+            content_disposition = p.headers.get('Content-Disposition')
+            if not content_disposition:
+                #this means the post didn't give us a file
+                continue
+            _, params = cgi.parse_header(content_disposition)
+            try:
+                file_name = params['filename']
+            except KeyError:
+                #this also means the post didn't give us a file
+                continue
+            file_out_path = os.path.join(out_path, file_name)
+            file_names.append(file_out_path)
+            if file_names.count(file_out_path) == 1:
+                if file_out_path.endswith(textract_extensions):
+                    with open(file_out_path, 'wb') as f:
+                        print(f"Writing {file_name}")
+                        data = p.content
+                        f.write(data)
+                    file_list.append((file_out_path, post_url))
+                else:
+                    #capturing as a non-machine-readable doc
+                    file_list.append((None, post_url)) 
+
+        return file_list
+
     @staticmethod
     def write_attachments(attachment_divs):
         '''
@@ -372,9 +493,15 @@ class FboAttachments():
         for div in attachment_divs:
             try:
                 attachment_urls, is_neco_navy_mil = FboAttachments.get_attachment_url_from_div(div)
+                attachment_urls = [url.lower() for url in attachment_urls]
                 for attachment_url in attachment_urls:
+                    if 'fedconnect' in attachment_url:
+                        file_list_fc = FboAttachments.write_fedconnect_docs(attachment_url, 
+                                                                            out_path, 
+                                                                            textract_extensions)
+                        file_list.extend(file_list_fc)
                     #some are ftp and we can get the file now
-                    if 'ftp://' in attachment_url.lower():
+                    elif 'ftp://' in attachment_url:
                         file_out_path = FboAttachments.get_and_write_attachment_from_ftp(attachment_url,
                                                                                          out_path,
                                                                                          textract_extensions)
@@ -426,7 +553,7 @@ class FboAttachments():
                                     except AttributeError:
                                         pass 
                             else:
-                                file_out_path = os.path.join(out_path,file_name).replace('"','')
+                                file_out_path = os.path.join(out_path, file_name).replace('"','')
                                 if file_out_path.endswith(textract_extensions):
                                     with open(file_out_path, 'wb') as f:
                                         f.write(r.content)
@@ -445,6 +572,7 @@ class FboAttachments():
                 #if the div was from a neco.navy.mil solicitation, we don't need to hit all the urls
                 #since they're duplicates
                 break
+        
         return file_list
     
     def update_nightly_data(self):

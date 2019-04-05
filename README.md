@@ -1,5 +1,5 @@
 [![CircleCI](https://circleci.com/gh/GSA/srt-fbo-scraper/tree/master.svg?style=svg)](https://circleci.com/gh/GSA/srt-fbo-scraper/tree/master) 
-[![CircleCI](https://circleci.com/gh/GSA/srt-fbo-scraper/tree/master.svg?style=svg)](https://circleci.com/gh/GSA/srt-fbo-scraper/tree/dev)
+[![Known Vulnerabilities](https://snyk.io/test/github/GSA/srt-fbo-scraper/badge.svg)](https://snyk.io/test/github/GSA/srt-fbo-scraper)
 
 
 # fbo-scraper (AKA Smartie)

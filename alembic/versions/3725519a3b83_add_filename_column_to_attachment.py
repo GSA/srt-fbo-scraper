@@ -1,8 +1,8 @@
 """add filename column to Attachment
 
-Revision ID: 74681381f605
-Revises: 877732a28f4a
-Create Date: 2019-04-08 13:40:20.173775
+Revision ID: 3725519a3b83
+Revises: 
+Create Date: 2019-04-08 19:37:28.880047
 
 """
 from alembic import op
@@ -10,8 +10,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '74681381f605'
-down_revision = '877732a28f4a'
+revision = '3725519a3b83'
+down_revision = None
 branch_labels = None
 depends_on = None
 

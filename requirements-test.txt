@@ -1,4 +1,4 @@
-alembic==1.0.7
+alembic==1.0.8
 argcomplete==1.8.2
 beautifulsoup4==4.5.3
 certifi==2018.11.29
@@ -12,7 +12,7 @@ imbalanced-learn==0.3.3
 lxml==4.3.0
 https://github.com/mattgwwalker/msg-extractor/zipball/master
 nltk==3.4
-numpy==1.16.0
+numpy==1.16.2
 #pdfminer.six <-- go back to this after the shebang fix is released (see https://github.com/goulu/pdfminer/issues/27)
 https://github.com/goulu/pdfminer/zipball/e6ad15af79a26c31f4e384d8427b375c93b03533#egg=pdfminer.six
 Pillow==5.4.1
@@ -24,13 +24,13 @@ responses==0.10.5
 requests==2.21.0
 requests-mock==1.5.2
 scikit-learn==0.19.1
-scipy==1.2.0
+scipy==1.2.1
 singledispatch==3.4.0.3
 six==1.10.0
 soupsieve==1.7.3
 SpeechRecognition==3.6.3
 SQLAlchemy==1.2.13
-SQLAlchemy-Utils==0.33.6
+SQLAlchemy-Utils==0.33.11
 textract==1.6.1
 urllib3==1.24.1
 xlrd==1.0.0

@@ -112,10 +112,10 @@ class FboAttachments():
         for file_url_tup in file_list:
             file_name, url = file_url_tup
             if file_name:
-                file_name = os.path.basename(file_name)
                 text = FboAttachments.get_attachment_text(file_name, url)
+                file_basename = os.path.basename(file_name)
                 if text:
-                    attachment_dict = {'filename': file_name,
+                    attachment_dict = {'filename': file_basename,
                                        'machine_readable':True,
                                        'text':text, 
                                        'url':url,
@@ -125,7 +125,7 @@ class FboAttachments():
                                        'trained':False}
                 else:
                     #empty strings are falsy
-                    attachment_dict = {'filename': file_name,
+                    attachment_dict = {'filename': file_basename,
                                        'machine_readable':False,
                                        'text':None, 
                                        'url':url,

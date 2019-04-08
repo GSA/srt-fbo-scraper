@@ -27,11 +27,11 @@ Base = declarative_base(metadata=meta)
 
 class Notice(Base):
     __tablename__ = 'notice'
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key = True)
     notice_type_id = Column(Integer, ForeignKey('notice_type.id'))
     solicitation_number = Column(String(150), index = True)
     agency = Column(String(150))
-    date = Column(DateTime, default=now_minus_two)
+    date = Column(DateTime, default = now_minus_two)
     notice_data = Column(JSONB)
     compliant = Column(Integer)
     feedback = Column(JSONB)
@@ -43,7 +43,7 @@ class Notice(Base):
 
 class NoticeType(Base):
     __tablename__ = 'notice_type'
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key = True)
     notice_type = Column(String(50), index = True)
 
 class Attachment(Base):
@@ -51,16 +51,17 @@ class Attachment(Base):
     id = Column(Integer, primary_key = True)
     notice_id = Column(Integer, ForeignKey('notice.id'))
     notice_type_id = Column(Integer, ForeignKey('notice_type.id'))
+    filename = Column(Text, nullable = False)
     machine_readable = Column(Boolean)
-    attachment_text = Column(Text, nullable=True)
-    prediction = Column(Integer, nullable=True)
-    decision_boundary = Column(Float, nullable=True)
-    validation = Column(Integer, nullable=True)
+    attachment_text = Column(Text, nullable = True)
+    prediction = Column(Integer, nullable = True)
+    decision_boundary = Column(Float, nullable = True)
+    validation = Column(Integer, nullable = True)
     attachment_url = Column(Text)
-    trained = Column(Boolean, nullable=True)
+    trained = Column(Boolean, nullable = True)
     createdAt = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = True)
-    notice = relationship("Notice", back_populates="attachments")
+    notice = relationship("Notice", back_populates = "attachments")
 
 class Model(Base):
     __tablename__ = 'model'
@@ -68,7 +69,7 @@ class Model(Base):
     results = Column(JSONB)
     params = Column(JSONB)
     score = Column(Float)
-    create_date = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
+    create_date = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
 
 class Users(Base):
     __tablename__ = 'Users'
@@ -85,7 +86,7 @@ class Users(Base):
     rejectionNote = Column(String)
     creationDate = Column(String)
     tempPassword = Column(String)
-    createdAt = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
+    createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = False)
 
 class Agencies(Base):
@@ -93,7 +94,7 @@ class Agencies(Base):
     id = Column(Integer, primary_key = True)
     agency = Column(String)
     acronym = Column(String)
-    createdAt = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
+    createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = False)
 
 class Surveys(Base):
@@ -106,6 +107,6 @@ class Surveys(Base):
     answer = Column(Text)
     note = Column(Text)
     choicesNote = Column(JSONB)
-    createdAt = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
+    createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = False)
 

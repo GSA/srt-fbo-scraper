@@ -40,9 +40,10 @@ RUN apt-get update && apt-get install -y \
     #clean up the apt cache
     && rm -rf /var/lib/apt/lists/*
 
-ADD . /code
+ADD . .
 
-WORKDIR /code
+#see https://docs.cloudfoundry.org/devguide/deploy-apps/push-docker.html
+COPY ./conf/passwd /etc/passwd
 
 RUN pip install -r requirements.txt
 

@@ -113,16 +113,20 @@ class FboAttachments():
             file_name, url = file_url_tup
             if file_name:
                 text = FboAttachments.get_attachment_text(file_name, url)
+                file_basename = os.path.basename(file_name)
                 if text:
-                    attachment_dict = {'machine_readable':True,
-                                    'text':text, 
-                                    'url':url,
-                                    'prediction':None, 
-                                    'decision_boundary':None,
-                                    'validation':None,
-                                    'trained':False}
-                else:#empty strings are falsy
-                    attachment_dict = {'machine_readable':False,
+                    attachment_dict = {'filename': file_basename,
+                                       'machine_readable':True,
+                                       'text':text, 
+                                       'url':url,
+                                       'prediction':None, 
+                                       'decision_boundary':None,
+                                       'validation':None,
+                                       'trained':False}
+                else:
+                    #empty strings are falsy
+                    attachment_dict = {'filename': file_basename,
+                                       'machine_readable':False,
                                        'text':None, 
                                        'url':url,
                                        'prediction':None, 
@@ -130,7 +134,10 @@ class FboAttachments():
                                        'validation':None,
                                        'trained':False}
             else:
-                attachment_dict = {'machine_readable':False,
+                #there's no file_name here, so use the base of the url
+                file_name = url.split('/')[-1]
+                attachment_dict = {'filename': file_name,
+                                   'machine_readable':False,
                                    'text':None, 
                                    'url':url,
                                    'prediction':None, 

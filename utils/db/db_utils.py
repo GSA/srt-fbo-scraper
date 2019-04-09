@@ -214,11 +214,13 @@ def insert_updated_nightly_file(session, updated_nightly_data_with_predictions):
                                    compliant = compliant)
             for doc in attachments:
                 attachment =  db.Attachment(notice_type_id = notice_type_id,
+                                            filename = doc['filename'],
+                                            machine_readable = doc['machine_readable'],
+                                            attachment_text = doc['text'],
                                             prediction = doc['prediction'],
                                             decision_boundary = doc['decision_boundary'],
-                                            attachment_url = doc['url'],
-                                            attachment_text = doc['text'],
                                             validation = doc['validation'],
+                                            attachment_url = doc['url'],
                                             trained = doc['trained'])
                 notice.attachments.append(attachment)
             session.add(notice)

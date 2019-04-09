@@ -184,7 +184,8 @@ class FboAttachmentsTestCase(unittest.TestCase):
         result = self.fboa.insert_attachments(file_list, notice)
         expected = {'a': '1',
                     'b': '2',
-                    'attachments':[{'machine_readable': True,
+                    'attachments':[{'filename': os.path.basename(self.temp_outfile_path),
+                                    'machine_readable': True,
                                     'text':text,
                                     'url':self.fake_fbo_url,
                                     'prediction':None,
@@ -192,7 +193,7 @@ class FboAttachmentsTestCase(unittest.TestCase):
                                     'validation':None,
                                     'trained':False}]
         }
-        self.assertDictEqual(result, expected)
+        self.assertEqual(result, expected)
 
     @requests_mock.Mocker()
     def test_size_check(self, mock_request):

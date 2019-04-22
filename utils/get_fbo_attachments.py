@@ -9,6 +9,8 @@ import json
 import requests
 from requests.exceptions import SSLError
 from requests import exceptions
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
 from bs4 import BeautifulSoup
 from mimetypes import guess_extension
 import textract
@@ -18,6 +20,20 @@ import cgi
 import logging
 
 logger = logging.getLogger(__name__)
+
+
+def requests_retry_session(retries=3, backoff_factor=0.3, status_forcelist=(500, 502, 504), session=None):
+    '''
+    Use/Create an http(s) requests session that will retry a request.
+    '''
+    session = session or requests.Session()
+    retry = Retry(total = retries, read = retries, connect = retries, backoff_factor = backoff_factor, status_forcelist = status_forcelist)
+    adapter = HTTPAdapter(max_retries = retry)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+    
+    return session
+
 
 class FboAttachments():
     '''
@@ -46,7 +62,7 @@ class FboAttachments():
 
         try:
             #generous timeout for gov sites
-            r = requests.get(fbo_url, timeout = 300)
+            r = requests_retry_session().get(fbo_url, timeout = 300)
         except Exception as e:
             logger.error(f"Exception occurred getting attachment divs from {fbo_url}:  \
                             {e}", exc_info=True)
@@ -273,7 +289,7 @@ class FboAttachments():
         
         try:
             #generous timeout for gov sites
-            r = requests.get(attachment_href, timeout = 300)
+            r = requests_retry_session().get(attachment_href, timeout = 300)
         except Exception as e:
             logger.error(f"Exception occurred making GET request to {attachment_href}:  \
                             {e}", exc_info=True)
@@ -407,7 +423,7 @@ class FboAttachments():
             redirect_location = f'https://www.fedconnect.net{redirect_location}'
         try:
             redirect_location = redirect_location if redirect_location else url
-            r = requests.get(redirect_location, timeout = 300)
+            r = requests_retry_session().get(redirect_location, timeout = 300)
         except Exception as e:
             logger.error(f"Exception occurred making GET request to {redirect_location}:  \
                         {e}", exc_info=True)
@@ -518,7 +534,7 @@ class FboAttachments():
                         if file_smaller_than_500mb:
                             try:
                                 #generous timeout for gov sites
-                                r = requests.get(attachment_url, timeout=300)
+                                r = requests_retry_session().get(attachment_url, timeout=300)
                             except Exception as e:
                                 logger.error(f"Exception occurred making GET request for an attachment to {attachment_url}. \
                                                This means we didn't download it:  {e}", exc_info=True)
@@ -530,7 +546,7 @@ class FboAttachments():
                                 redirect_url = redirect_header['Location']
                                 try:
                                     #generous timeout for gov sites
-                                    r = requests.get(redirect_url, timeout=300)
+                                    r = requests_retry_session().get(redirect_url, timeout=300)
                                 except Exception as e:
                                     logger.error(f"Exception occurred making GET request for an attachment after a redirect to {attachment_url}. \
                                                    This means we didn't download it:  {e}", exc_info=True)

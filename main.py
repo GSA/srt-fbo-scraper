@@ -74,8 +74,11 @@ def main():
     all_notices = []
     for d in fbo_dates:
         notices = get_notices(modified_date = d)
+        if not notices:
+            #no matching notices found for the day
+            continue
         notices = get_attachments(notices, out_path)
-        all_notices.extend(notices)
+        all_notices.append(notices)
         #TODO database insert here
     
     return all_notices

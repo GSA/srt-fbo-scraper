@@ -159,6 +159,15 @@ class GetNoticesTestCase(unittest.TestCase):
         expected = '<title>test123</title>'
         self.assertEqual(result, expected)
 
+    def test_get_description_no_date(self):
+        descriptions = [{'otherDate': '2008-10-28T13:03:28-04:00',
+                         'content': 'this is the longer and correct description'},
+                        {'otherDate': '2009-10-28T13:03:28-04:00',
+                         'content': '<title>test123</title>'}]
+        result = get_notices.get_description(descriptions)
+        expected = 'this is the longer and correct description'
+        self.assertEqual(result, expected)
+
     def test_get_text_from_html(self):
         result = get_notices.get_text_from_html('<title>test123</title>')
         expected = 'test123'

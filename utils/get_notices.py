@@ -144,7 +144,6 @@ def get_opportunities(modified_date = None,
     total_pages = data['page']['totalPages']
     page = 1
     while page < total_pages:
-        print("*"*80)
         payload.update({'page': page})
         _data = api_get(uri, payload)
         if not _data:
@@ -297,9 +296,12 @@ def get_description(descriptions):
         except ValueError as e:
             logger.warning(f"Error {e} parsing last_modified_date of {last_modified_date}", exc_info = True)
             continue
-    max_date = max(last_modified_dates)
-    max_date_i = last_modified_dates.index(max_date)
-    description = descriptions[max_date_i].get('content','')
+    if not last_modified_dates:
+        description = max([desc.get('content', '') for desc in descriptions], key = len)
+    else:
+        max_date = max(last_modified_dates)
+        max_date_i = last_modified_dates.index(max_date)
+        description = descriptions[max_date_i].get('content','')
     
     return description
         
@@ -372,7 +374,7 @@ def extract_emails(res):
     Returns:
         emails (list): a list of unique email addresses
     '''
-    email_re = re.compile(r'([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})')
+    email_re = re.compile(r'[\w\.-]+@[\w\.-]+\.\w+')
     pocs = res.get('pointOfContacts')
     descriptions = res.get('descriptions')
     text_to_search = f'{pocs} {descriptions}'

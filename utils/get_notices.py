@@ -378,8 +378,7 @@ def extract_emails(res):
     pocs = res.get('pointOfContacts')
     descriptions = res.get('descriptions')
     text_to_search = f'{pocs} {descriptions}'
-    all_matches = re.findall(email_re, text_to_search)
-    matches = [max(tup, key = len) for tup in all_matches]
+    matches = re.findall(email_re, text_to_search)
     emails = list(set(matches))
     
     return emails

@@ -303,7 +303,7 @@ def get_contact(point_of_contacts):
     full_names = [xstr(poc.get('fullName', '')) for poc in point_of_contacts]
     titles = [xstr(poc.get('title', '')) for poc in point_of_contacts]
     phones = [xstr(poc.get('phone', '')) for poc in point_of_contacts]
-    contacts_list = [', '.join(map(str, i)) for i in zip(full_names, titles, phones)]
+    contacts_list = [', '.join(map(str, i)) for i in zip(full_names, titles, phones) if i != '']
     contact = "; ".join(contacts_list)
 
     return contact

@@ -4,24 +4,24 @@
 
 
 # fbo-scraper (AKA Smartie)
-[FBO](https://www.fbo.gov/) is the U.S. government's system of record for opportunities to do business with the government. Each night, the FBO system posts all _updated_ opportunities as a pseudo-xml file that is made publically available via the File Transfer Protocol (FTP), which is a standard network protocol used for the transfer of computer files between a client and server on a computer network.
+[FBO](https://www.fbo.gov/) is the U.S. government's system of record for opportunities to do business with the government. Each night, the FBO system posts all _updated_ opportunities as a pseudo-xml file that is made publicly available via the File Transfer Protocol (FTP), which is a standard network protocol used for the transfer of computer files between a client and server on a computer network.
 
-This project uses [supervised machine learning](https://en.wikipedia.org/wiki/Supervised_learning) to determine whether or not the solicitation documents of Information Communications Technology (ICT) notices contain appropriate [setion 508 accessibility](https://www.section508.gov/) language.
+This project fetches that solicitation date, parses it, and uses [supervised machine learning](https://en.wikipedia.org/wiki/Supervised_learning) to determine whether or not the solicitation documents of Information Communications Technology (ICT) notices contain appropriate [setion 508 accessibility](https://www.section508.gov/) language.
 
-Following a [service-oriented architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture), this repository, along with a forthcoming API, provides a back-end to a UI that GSA policy experts will use to review ICT solicitations for 508 compliance; notify deficient solicitation owners; monitor changes in historical compliance; and validate predictions to improve model performance.
+Following a [service-oriented architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture), this repository provides the back-end to a [UI](https://github.com/GSA/srt-ui) that GSA policy experts will use to review ICT solicitations for 508 compliance; notify deficient solicitation owners; monitor changes in historical compliance; and validate predictions to improve model performance.
 
-The application is designed to be run as a cron daemon within a Docker image on [cloud.gov](https://cloud.gov/). This is tricky to achieve as traditional cron daemons need to run as root and have opinionated defaults for logging and error notifications. This usually makes them unsuitable for running in a containerized environment. So, instead of a system cron daemon, we're using [supercronic](https://github.com/aptible/supercronic) to run the crontab. 
+The application is designed to be run as a cron daemon within a Docker image on [cloud.gov](https://cloud.gov/). This is tricky to achieve, as traditional cron daemons need to run as root and have opinionated defaults for logging and error notifications. This usually makes them unsuitable for running in a containerized environment. So, instead of a system cron daemon, we're using [supercronic](https://github.com/aptible/supercronic) to run a crontab which runs the python scripts each night. 
 
 Here's what happens every time the job is triggered:
  1. Download the pseudo-xml from the FBO FTP
- 2. Convert that pseudo-xml to JSON
- 3. Extract solictations from the Information Communications Technology (ICT) categories
- 4. Srape each ICT soliticiaton's documents from their official FBO urls
+ 2. Extract solictations from the Information Communications Technology (ICT) categories based on the solicitation's [NAICS](https://www.census.gov/eos/www/naics/).
+ 3. Convert that pseudo-xml to JSON (really a python dictionary)
+ 4. Scrape each ICT soliticiaton's documents from their official FBO url (the docs are sometimes elsewhere!)
  5. Extract the text from each of those documents using [textract](https://github.com/deanmalmgren/textract)
- 6. Feed the text of each document into a binary classifier to predict whether or not the document is 508 compliant (the classifier was built and binarized using [sklearn](https://github.com/scikit-learn/scikit-learn) based on approximately 1,000 hand-labeled solicitations)
- 7. Insert data into a postgreSQL database
- 8. Retrain the classifer if there is a sufficient number of human-validated predictions in the database (validation will occur via the UI)
- 9. If the new model is an improvement, save it and carry on.
+ 6. Use natural language processing to normalize the text and then feed it into a binary classifier to predict whether or not the document is 508 compliant (the classifier was built and binarized using [sklearn](https://github.com/scikit-learn/scikit-learn) based on approximately 1,000 hand-labeled solicitations)
+ 7. Insert this solicitation data, including the model's predictions for each solicitation document, into a postgreSQL database
+ 8. Retrain the classifer if there is a sufficient number of human-validated predictions in the database (validation will occur via the UI). The long-term strategy is to offload this work to specialized AWS infrastructure (e.g. SageMaker)
+ 9. If the new model is an improvement, replace the old one and carry on 24 hours later
     
 
 ## Getting Started
@@ -32,14 +32,14 @@ This project uses:
  - Docker
  - PostgreSQL 9.6.8 
 
-Below, we suggest [venv](https://docs.python.org/3/library/venv.html) for creating a virtual environment if you wish to run the scan locally.
+Below, we suggest [venv](https://docs.python.org/3/library/venv.html) for creating a virtual environment if you wish to run the scan locally. Note: you'll also need to install several OS-specific dependencies to get python's `textract` to work. See their [documentation](https://textract.readthedocs.io/en/stable/installation.html) for more details.
 
 To push to cloud.gov or interact with the app there, you'll need a [cloud.gov account](https://cloud.gov/docs/getting-started/accounts/).
 
-There are two docker images for this project:  [fbo-scraper](https://cloud.docker.com/u/csmcallister/repository/docker/csmcallister/fbo-scraper) and [fbo-scraper-test](https://cloud.docker.com/u/csmcallister/repository/docker/csmcallister/fbo-scraper-test). The former contains the application that can be pushed to cloud.gov (see instructions below) while the latter is strickly for testing during CI.
+There are two docker images for this project:  [fbo-scraper](https://cloud.docker.com/u/csmcallister/repository/docker/csmcallister/fbo-scraper) and [fbo-scraper-test](https://cloud.docker.com/u/csmcallister/repository/docker/csmcallister/fbo-scraper-test). The former contains the application that can be pushed to cloud.gov (see instructions below) while the latter is just a base image used for CI.
 
 ### Local Implementation
-If you have PostgreSQL, you can run the scan locally. Doing so will create a database with the following connection string: `postgresql+psycopg2://localhost/test`. To run it locally (using FBO data from the day before yesterday), do the following:
+If you have PostgreSQL and the textract dependencies, you can run the scan locally. Doing so will create a database with the following connection string: `postgresql+psycopg2://localhost/test`. To run it locally (using FBO data from the day before yesterday), do the following:
 
 ```bash
 cd path/to/this/locally/cloned/repo
@@ -59,9 +59,8 @@ python3 -W ignore -m unittest discover tests -p '*_test.py'
 
 Several warnings and exceptions will print out. Those are by design as they're being mocked in the tests.
 
-
 ## Deployment
-Deployment requires a cloud.gov account and access to the application's org. If those prequisites are met, you can login with:
+Deployment requires a cloud.gov account and access to the application's org. If those prerequisites are met, you can login with:
 
 ```bash
 cf login -a api.fr.cloud.gov --sso
@@ -69,7 +68,7 @@ cf login -a api.fr.cloud.gov --sso
 
 Then target the appropriate org and space by following the instructions.
 
-Then push the app, creating the service first:
+Then push the app, creating the database service first if it doesn't already exist:
 
 ```bash
 cf create-service <service> <service-tag>
@@ -82,12 +81,12 @@ cf restage srt-fbo-scraper
 
 Above, `<service>` is the name of a postgres service (e.g. `aws-rds shared-psql`) while `<service-tag>` is whatever you want to call this service.
 
-Since services can sometimes take up to 60 minutes to be provisioned, we use `cf create-service-key` to ensure the service has been provisioned. See [this](https://cloud.gov/docs/services/relational-database/) for more details.
+>Since services can sometimes take up to 60 minutes to be provisioned, we use `cf create-service-key` to ensure the service has been provisioned. See [this](https://cloud.gov/docs/services/relational-database/) for more details.
 
 ## Logs
-We don't do anything special with logging. We simply write them to STDOUT/STDERR and use https://login.fr.cloud.gov/login to view and search them.
+We don't do anything special with logging. We simply write to STDOUT/STDERR and use https://login.fr.cloud.gov/login to view and search them.
 
-A TODO is logging in JSON using [python-json-logger](https://github.com/madzak/python-json-logger). This will make the logs more easily searchable.
+>A TODO is logging in JSON using [python-json-logger](https://github.com/madzak/python-json-logger). This might make the logs more easily searchable.
 
 ## Contributing
 

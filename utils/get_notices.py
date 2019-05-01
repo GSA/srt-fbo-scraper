@@ -253,6 +253,14 @@ def get_agency_office_location_zip_offadd(organization_hierarchy):
     return agency, office, location, zip_code, offadd
 
 def get_classcod_naics(psc_naics):
+    """Given an array of dictionaries representing either psc (classcod) or naics codes, extract the code. 
+    
+    Arguments:
+        psc_naics {[list]} -- [a json array of dicts]
+    
+    Returns:
+        [str] -- [the classification code or naics, depending on what was passed in]
+    """
     if not psc_naics:
         return ''
     classcod_naics = max([i.get('code') for i in psc_naics], key = len)
@@ -260,6 +268,14 @@ def get_classcod_naics(psc_naics):
     return classcod_naics
  
 def get_respdate(response_date):
+    """[Given a date like "2019-04-16T15:00:00-04:00", return it in the '%m%d%y' format.]
+    
+    Arguments:
+        response_date {[str]} -- [an ISO format date string like "2019-04-16T15:00:00-04:00"]
+    
+    Returns:
+        [str] -- [date as a string in the '%m%d%y' format.]
+    """
     if not response_date:
         return ''
     try:
@@ -271,14 +287,24 @@ def get_respdate(response_date):
     return respdate
 
 def get_contact(point_of_contacts):
+    """[Given the json array of pocs, extract a comma separated string with full names, job titles, and phone numbers.
+    If there are multiple pocs, delimit them with a semicolon.]
+    
+    Arguments:
+        point_of_contacts {[list]} -- [a json array of dictioanries for each point of contact]
+    
+    Returns:
+        [str] -- [a comma separated string with full names, job titles, and phone numbers.
+    If there are multiple pocs, delimit them with a semicolon.]
+    """
     if not point_of_contacts:
         return ''
-    titles = [poc.get('title', ' ') for poc in point_of_contacts]
-    try:
-        contact = " ".join(titles)
-    except TypeError:
-        #occurs because titles is [None]
-        return ''
+    
+    full_names = [xstr(poc.get('fullName', '')) for poc in point_of_contacts]
+    titles = [xstr(poc.get('title', '')) for poc in point_of_contacts]
+    phones = [xstr(poc.get('phone', '')) for poc in point_of_contacts]
+    contacts_list = [', '.join(map(str, i)) for i in zip(full_names, titles, phones)]
+    contact = "; ".join(contacts_list)
 
     return contact
 
@@ -374,20 +400,27 @@ def extract_emails(res):
     Returns:
         emails (list): a list of unique email addresses
     '''
-    email_re = re.compile(r'[\w\.-]+@[\w\.-]+\.\w+')
-    pocs = res.get('pointOfContacts')
-    descriptions = res.get('descriptions')
-    text_to_search = f'{pocs} {descriptions}'
-    matches = re.findall(email_re, text_to_search)
+    pocs = res.get('pointOfContacts', [{'foo':'bar'}])
+    matches = [xstr(poc.get('email')) for poc in pocs]
+    if not any(matches):
+        descriptions = res.get('descriptions')
+        text_to_search = f'{pocs} {descriptions}'
+        email_re = re.compile(r'[\w\.-]+@[\w\.-]+\.\w+')
+        matches = re.findall(email_re, text_to_search)
     emails = list(set(matches))
     
     return emails
     
 
 def schematize_results(results):
-    '''
-    Givent the results of the Get Opportunities API, convert the json to SRT's schema
-    '''
+    """[Givent the results of the Get Opportunities API, convert the json to SRT's schema]
+    
+    Arguments:
+        results {[list]} -- [json array of dictonaries for each result notice]
+    
+    Returns:
+        notices {[dict]} -- [a dictionary with keys for the 3 notice types. Each value is an array of schematized notices]
+    """
     notice_data = {'PRESOL': [],
                    'COMBINE': [],
                    'MOD': []}
@@ -422,25 +455,25 @@ def schematize_results(results):
         setasides = res.get('solicitation').get('setAside')
         setaside = get_setasides(setasides)
         notice = {'date': date,
-                 'year': year,
-                 'agency': agency,
-                 'office': office,
-                 'location': location,
-                 'zip': zip_code,
-                 'classcod': classcod,
-                 'naics': naics,
-                 'offadd': offadd,
-                 'subject': subject,
-                 'solnbr': solnbr,
-                 'respdate': respdate,
-                 'archdate': archdate,
-                 'contact': contact,
-                 'desc': desc,
-                 'url': url,
-                 'setaside': setaside,
-                 'popzip': popzip,
-                 'popcountry': popcountry,
-                 'popaddress': popaddress
+                  'year': year,
+                  'agency': agency,
+                  'office': office,
+                  'location': location,
+                  'zip': zip_code,
+                  'classcod': classcod,
+                  'naics': naics,
+                  'offadd': offadd,
+                  'subject': subject,
+                  'solnbr': solnbr,
+                  'respdate': respdate,
+                  'archdate': archdate,
+                  'contact': contact,
+                  'desc': desc,
+                  'url': url,
+                  'setaside': setaside,
+                  'popzip': popzip,
+                  'popcountry': popcountry,
+                  'popaddress': popaddress
                  }
         emails = extract_emails(res)
         notice.update({'emails': emails})
@@ -452,11 +485,20 @@ def schematize_results(results):
         elif notice_type == 'Modification/Amendment/Cancel':
             notice_data['MOD'].append(notice)
         else:
-            logger.warning("Found an unanticipated notice type of {notice_type}")
+            logger.warning(f"Found an unanticipated notice type of {notice_type} from {url}")
             
     return notice_data
             
 def get_notices(modified_date = None):
+    """[Get notices for a give modifiedDate using the SAM API and then schematize them.]
+    
+    Keyword Arguments:
+        modified_date {[str]} -- [A date string in the '%Y-%m-%d' format. If None, modified date will
+        default to 3 days ago.] (default: {None})
+    
+    Returns:
+        notices {[dict]} -- [a dictionary with keys for the 3 notice types. Each value is an array of schematized notices]
+    """
     results = get_opportunities(modified_date = modified_date)
     notices = schematize_results(results)
     

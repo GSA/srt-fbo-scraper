@@ -147,7 +147,42 @@ class GetNoticesTestCase(unittest.TestCase):
     def test_get_contact(self):
         point_of_contacts = self.search_json['_embedded']['results'][0]['pointOfContacts']
         result = get_notices.get_contact(point_of_contacts)
-        expected = 'Contracting Officer'
+        expected = 'Fizz Buzz, Contracting Officer, 202-447-5543'
+        self.assertEqual(result, expected)
+
+    def test_get_contact_multiple(self):
+        point_of_contacts = [{'lastName': 'Buzz',
+                              'firstName': 'Fizz',
+                              'phone': '202-447-5543',
+                              'fullName': 'Fizz Buzz',
+                              'fax': '202-555-5555',
+                              'type': 'primary',
+                              'title': 'Contracting Officer',
+                              'email': 'foo.bar@dhs.gov'},
+                             {'lastName': 'Bar',
+                              'firstName': 'Foo',
+                              'phone': '202-447-5543',
+                              'fullName': 'Foo Bar',
+                              'fax': '202-555-5555',
+                              'type': 'primary',
+                              'title': 'Contracting Officer',
+                              'email': 'foo.bar@dhs.gov'}]
+        result = get_notices.get_contact(point_of_contacts)
+        expected = 'Fizz Buzz, Contracting Officer, 202-447-5543; Foo Bar, Contracting Officer, 202-447-5543'
+        self.assertEqual(result, expected)
+
+    def test_get_contact_missing_values(self):
+        point_of_contacts = [{'lastName': None,
+                              'firstName': None,
+                              'phone': '202-447-5543',
+                              'fullName': None,
+                              'fax': '202-555-5555',
+                              'type': 'primary',
+                              'title': 'Contracting Officer',
+                              'email': 'foo.bar@dhs.gov'},
+                             ]
+        result = get_notices.get_contact(point_of_contacts)
+        expected = 'Contracting Officer, 202-447-5543'
         self.assertEqual(result, expected)
 
     def test_get_description(self):
@@ -208,7 +243,7 @@ class GetNoticesTestCase(unittest.TestCase):
     def test_extract_emails(self):
         res = self.search_json['_embedded']['results'][0]
         result = get_notices.extract_emails(res)
-        expected = ['foo.bar@dhs.gov','fizz.buzz@baz.com']
+        expected = ['foo.bar@dhs.gov']
         self.assertCountEqual(result, expected)
 
     def test_schematize_results(self):

@@ -303,8 +303,17 @@ def get_contact(point_of_contacts):
     full_names = [xstr(poc.get('fullName', '')) for poc in point_of_contacts]
     titles = [xstr(poc.get('title', '')) for poc in point_of_contacts]
     phones = [xstr(poc.get('phone', '')) for poc in point_of_contacts]
-    contacts_list = [', '.join(map(str, i)) for i in zip(full_names, titles, phones) if i != '']
+    contacts_list = [', '.join(map(str, i)) for i in zip(full_names, titles, phones)]
     contact = "; ".join(contacts_list)
+    if contact.startswith(', '):
+        #occurs when there's no name for the first poc, so try checking for others.
+        try:
+            full_name = next(s for s in full_names if s)
+            ix = full_names.index(full_name)
+            contact = contacts_list[ix]
+        except StopIteration:
+            #no full names
+            contact = ''
 
     return contact
 

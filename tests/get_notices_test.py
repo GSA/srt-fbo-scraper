@@ -182,7 +182,29 @@ class GetNoticesTestCase(unittest.TestCase):
                               'email': 'foo.bar@dhs.gov'},
                              ]
         result = get_notices.get_contact(point_of_contacts)
-        expected = 'Contracting Officer, 202-447-5543'
+        expected = ''
+        self.assertEqual(result, expected)
+
+    def test_get_contact_partially_missing_values(self):
+        point_of_contacts = [{'lastName': None,
+                              'firstName': None,
+                              'phone': '202-447-5543',
+                              'fullName': None,
+                              'fax': '202-555-5555',
+                              'type': 'primary',
+                              'title': 'Contracting Officer',
+                              'email': 'foo.bar@dhs.gov'},
+                              {'lastName': 'Foo',
+                              'firstName': 'Bar',
+                              'phone': '202-447-5543',
+                              'fullName': 'Foo Bar',
+                              'fax': '202-555-5555',
+                              'type': 'primary',
+                              'title': 'Contracting Officer',
+                              'email': 'foo.bar@dhs.gov'}
+                             ]
+        result = get_notices.get_contact(point_of_contacts)
+        expected = 'Foo Bar, Contracting Officer, 202-447-5543'
         self.assertEqual(result, expected)
 
     def test_get_description(self):

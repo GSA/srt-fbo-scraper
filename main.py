@@ -40,9 +40,9 @@ def get_dates(start_date = None, end_date = None):
             fbo_date = fbo_date.strftime("%Y-%m-%d")
             fbo_dates.append(fbo_date)
     else:
-        now_minus_two = datetime.utcnow() - timedelta(2)
-        now_minus_two = now_minus_two.strftime("%Y-%m-%d")
-        fbo_dates.append(now_minus_two)
+        now_minus_three = datetime.utcnow() - timedelta(3)
+        now_minus_three = now_minus_three.strftime("%Y-%m-%d")
+        fbo_dates.append(now_minus_three)
     
     return fbo_dates
 

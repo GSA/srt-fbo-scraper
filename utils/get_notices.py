@@ -43,6 +43,7 @@ def get_random(n = 13):
     start_n = str(random.randint(1,9))
     for _ in range(n-1):
         start_n += str(random.randint(0,9))
+    
     return start_n
 
 
@@ -59,6 +60,7 @@ def get_now_minus_n(n):
     now_minus_n = now_minus_n.strftime('%Y-%m-%d')
     #this is always appended to the time param for some reason, so we'll manually append it here
     now_minus_n += '-04:00'
+    
     return now_minus_n
 
 
@@ -92,29 +94,14 @@ def api_get(uri, payload):
     
 
 def get_opportunities(modified_date = None, 
-                      notice_types = ['p', 'k', 'm'],
                       naics = ['334111', '334118', '3343', '33451', '334516', '334614', 
                               '5112', '518', '54169', '54121', '5415', '54169', '61142']):
     '''
     [Makes a GET request to the Get Opportunities API for a given procurement type (p_type) and date range.]
     
     Arguments:
-        p_type (str): The procurement type. Valid values include:
-                            u = Justification (J&A)
-                            p = Pre solicitation
-                            a = Award Notice
-                            r = Sources Sought
-                            s = Special Notice
-                            g = Sale of Surplus Property
-                            k = Combined Synopsis/Solicitation
-                            i = Intent to Bundle Requirements (DoDFunded)
-                            m = Modification
-                            Note: Below services are now retired:
-                            f = Foreign Government Standard
-                            l = Fair Opportunity / Limited Sources
-                            Use Justification (u) instead of fair
-                            Opportunity
         modified_date (str): [Format must be '%Y-%m-%d'. If None, defaults to three days ago.]
+        naics (list): [a list of naics codes to use to filter the notices. Substrings will match.]
         
     Returns:
         data (dict): [the json response. See the API documentation for more detail.]
@@ -124,14 +111,10 @@ def get_opportunities(modified_date = None,
     payload = {'api_key': SAM_API_KEY,
                'random': get_random(),
                'index': 'opp',
-               'q':'',
                'is_active': 'true',
                'page':'0',
-               'notice_type': ",".join(notice_types),
                'modified_date': modified_date,
               }
-    if naics:
-        payload.update({'naics': ",".join(naics)})
     uri = 'https://api.sam.gov/prod/sgs/v1/search/'
     data = api_get(uri, payload)
     if not data:
@@ -149,11 +132,37 @@ def get_opportunities(modified_date = None,
         if not _data:
             page += 1
             continue
-        _results = _data['_embedded']['results']
+        try:
+            _results = _data['_embedded']['results']
+        except KeyError:
+            page += 1
+            continue
         results.extend(_results)
         page += 1
-        
+    
+    if naics:
+        results = naics_filter_results(results, naics)
+    
     return results
+
+def naics_filter_results(results, naics):
+    """[Given the results returned by get_opportunites, filter out those that don't match the desired naics]
+    
+    Arguments:
+        results {[list]} -- [a list of sam opportunity api results]
+        naics {[list]} -- [a list of naics to filter with]
+    
+    Returns:
+        [list] -- [filtered_results is a subset of results]
+    """
+    filtered_results = []
+    for result in results:
+        naics_array = result.get('naics')
+        notice_naics = get_classcod_naics(naics_array)
+        if any(notice_naics.startswith(n) for n in naics):
+            filtered_results.append(result)
+    
+    return filtered_results
 
 def get_date_and_year(modified_date):
     """[Given the modifiedDate value in the API response, get the mmdd and yy values]
@@ -361,13 +370,11 @@ def get_setasides(setasides):
     if not setasides:
         setaside = 'N/A'
         return setaside
-    
     if isinstance(setasides, list):
         for s in setasides:
             if not s:
                 continue
             setaside += s.get('value', '') + ' '
-        
     else:
         #must be a single dict
         setaside = setasides.get('value', '')
@@ -434,34 +441,34 @@ def schematize_results(results):
                    'COMBINE': [],
                    'MOD': []}
     if not results:
-        return []
-    for res in results:
-        is_canceled = res.get('isCanceled')
+        return notice_data
+    for result in results:
+        is_canceled = result.get('isCanceled')
         if is_canceled:
             continue
-        modified_date = res['modifiedDate']
+        modified_date = result.get('modifiedDate','')
         date, year = get_date_and_year(modified_date)
-        organization_hierarchy = res['organizationHierarchy']
-        place_of_performance = res.get('placeOfPerformance', '')
+        organization_hierarchy = result.get('organizationHierarchy','')
+        place_of_performance = result.get('placeOfPerformance', '')
         popzip, popcountry, popaddress = get_place_of_performance(place_of_performance)
         agency, office, location, zip_code, offadd = get_agency_office_location_zip_offadd(organization_hierarchy)
-        psc = res.get('psc')
+        psc = result.get('psc')
         classcod = get_classcod_naics(psc)
-        _naics = res.get('naics')
+        _naics = result.get('naics')
         naics = get_classcod_naics(_naics)
-        subject = res.get('title', '')
-        solnbr = res.get('solicitationNumber').lower().strip()
-        response_date = res.get('responseDate')
+        subject = result.get('title', '')
+        solnbr = result.get('solicitationNumber','').lower().strip()
+        response_date = result.get('responseDate')
         respdate = get_respdate(response_date)
-        archive_date = res.get('archiveDate')
+        archive_date = result.get('archiveDate')
         archdate = get_respdate(archive_date)
-        point_of_contacts = res.get('pointOfContacts')
+        point_of_contacts = result.get('pointOfContacts')
         contact = get_contact(point_of_contacts)
-        descriptions = res.get('descriptions')
+        descriptions = result.get('descriptions')
         desc = get_text_from_html(get_description(descriptions))
-        _id = res.get('_id')
+        _id = result.get('_id')
         url = f'https://beta.sam.gov/opp/{_id}'
-        setasides = res.get('solicitation').get('setAside')
+        setasides = result.get('solicitation',{'foo':'bar'}).get('setAside')
         setaside = get_setasides(setasides)
         notice = {'date': date,
                   'year': year,
@@ -484,9 +491,9 @@ def schematize_results(results):
                   'popcountry': popcountry,
                   'popaddress': popaddress
                  }
-        emails = extract_emails(res)
+        emails = extract_emails(result)
         notice.update({'emails': emails})
-        notice_type = res.get('type').get('value')
+        notice_type = result.get('type',{'foo':'bar'}).get('value')
         if notice_type == 'Combined Synopsis/Solicitation':
             notice_data['COMBINE'].append(notice)
         elif notice_type == 'Presolicitation':
@@ -494,7 +501,8 @@ def schematize_results(results):
         elif notice_type == 'Modification/Amendment/Cancel':
             notice_data['MOD'].append(notice)
         else:
-            logger.warning(f"Found an unanticipated notice type of {notice_type} from {url}")
+            if any(x in notice_type.lower() for x in {'presol', 'combine', 'modif'}):
+                logger.warning(f"Found an unanticipated but likely acceptable notice type of {notice_type} from {url}")
             
     return notice_data
             
@@ -509,11 +517,11 @@ def get_notices(modified_date = None):
         notices {[dict]} -- [a dictionary with keys for the 3 notice types. Each value is an array of schematized notices]
     """
     results = get_opportunities(modified_date = modified_date)
-    notices = schematize_results(results)
+    notice_data = schematize_results(results)
     
-    return notices
+    return notice_data
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO,
                         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s') 
-    notices = get_notices()
+    notice_data = get_notices()

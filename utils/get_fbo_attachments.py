@@ -476,7 +476,6 @@ class FboAttachments():
             if file_names.count(file_out_path) == 1:
                 if file_out_path.endswith(textract_extensions):
                     with open(file_out_path, 'wb') as f:
-                        print(f"Writing {file_name}")
                         data = p.content
                         f.write(data)
                     file_list.append((file_out_path, post_url))

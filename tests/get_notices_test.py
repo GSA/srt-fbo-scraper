@@ -290,7 +290,9 @@ class GetNoticesTestCase(unittest.TestCase):
     def test_get_notices(self):
         #end-to-end test
         results = get_notices.get_notices(modified_date = '2019-01-01')
-        expected = 
+        result = sum(len(v) for k,v in results.items())
+        expected = 3
+        self.assertEqual(result, expected)
 
 if __name__ == '__main__':
     unittest.main()

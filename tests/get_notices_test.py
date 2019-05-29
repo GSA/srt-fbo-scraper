@@ -294,7 +294,7 @@ class GetNoticesTestCase(unittest.TestCase):
         #end-to-end test
         results = get_notices.get_notices(modified_date = '2019-01-03')
         result = sum(len(v) for k,v in results.items())
-        expected = 3
+        expected = 5
         self.assertEqual(result, expected)
 
 if __name__ == '__main__':

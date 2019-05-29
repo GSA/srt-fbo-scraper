@@ -1,10 +1,11 @@
-import requests
 import logging
 import os
 import random
-import textract
-import zipfile
 import sys
+import zipfile
+
+import requests
+import textract
 
 logger = logging.getLogger(__name__)
 SAM_API_KEY = os.getenv('SAM_API_KEY')

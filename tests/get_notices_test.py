@@ -1,12 +1,15 @@
 import unittest
 from unittest.mock import patch, Mock
 import sys
-import responses
+import warnings
 from datetime import datetime
-import requests_mock
-import requests
 import json
 import os
+
+import responses
+import requests_mock
+import requests
+
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from utils import get_notices
 from fixtures import get_notices_fixtures

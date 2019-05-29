@@ -1,8 +1,8 @@
 import argparse
-import logging
 from datetime import timedelta, datetime
-import os
 import json
+import logging
+import os
 
 from utils.get_attachments import get_attachments
 from utils.get_notices import get_notices
@@ -90,4 +90,3 @@ if __name__ == '__main__':
     all_notices = main()
     with open('sam_results.json', 'w') as f:
         json.dump(all_notices, f)
-        

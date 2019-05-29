@@ -1,14 +1,15 @@
-import random
-from bs4 import BeautifulSoup
-import re
-from datetime import datetime, timedelta
 from backports.datetime_fromisoformat import MonkeyPatch
 MonkeyPatch.patch_fromisoformat()
+from datetime import datetime, timedelta
+import logging
+import os
+import random
+import re
 import sys
 import zipfile
-import logging
+
+from bs4 import BeautifulSoup
 import requests
-import os
 
 logger = logging.getLogger(__name__)
 SAM_API_KEY = os.getenv('SAM_API_KEY')

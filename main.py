@@ -1,4 +1,12 @@
 import argparse
+import logging
+from datetime import timedelta, datetime
+import os
+import json
+
+from utils.get_attachments import get_attachments
+from utils.get_notices import get_notices
+
 parser = argparse.ArgumentParser(description = ('Get ICT solictations from beta.sam.gov between two dates inclusive '
                                                 '(if both flags are used) or from the day before yesteday.'))
 parser.add_argument('--start-date',
@@ -9,13 +17,6 @@ parser.add_argument('--end-date',
                     dest = 'end_date',
                     type = str,
                     help = "the last date in the range you'd like to fetch notices from. Supply as a string ('%%Y-%%m-%%d')")
-
-import logging
-from datetime import timedelta, datetime
-import os
-from utils.get_attachments import get_attachments
-from utils.get_notices import get_notices
-
 logger = logging.getLogger(__name__)
 
 def get_dates(start_date = None, end_date = None):
@@ -87,3 +88,6 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO,
                         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s') 
     all_notices = main()
+    with open('sam_results.json', 'w') as f:
+        json.dump(all_notices, f)
+        

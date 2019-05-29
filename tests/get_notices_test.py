@@ -138,6 +138,14 @@ class GetNoticesTestCase(unittest.TestCase):
         expected = '99'
         self.assertEqual(result, expected)
 
+    def test_get_classcod_naics_none(self):
+        #test where None types are values
+        psc_naics = [{'code': 'L', 'id': 4150, 'value': 'TECHNICAL REPRESENTATIVE SVCS.'}, 
+                     {'code': None, 'id': None, 'value': None}]
+        result = get_notices.get_classcod_naics(psc_naics)
+        expected = 'L' 
+        self.assertEqual(result, expected)
+
     def test_get_respdate(self):
         response_date = "2019-04-16T15:00:00-04:00"
         result = get_notices.get_respdate(response_date)
@@ -230,6 +238,11 @@ class GetNoticesTestCase(unittest.TestCase):
         expected = 'test123'
         self.assertEqual(result, expected)
 
+    def test_get_text_from_html_none(self):
+        result = get_notices.get_text_from_html('')
+        expected = ''
+        self.assertEqual(result, expected)
+
     def test_get_setasides(self):
         setasides = {'value': 'foo'}
         result = get_notices.get_setasides(setasides)
@@ -273,6 +286,11 @@ class GetNoticesTestCase(unittest.TestCase):
         result = get_notices.schematize_results(results)
         expected = self.schematize_results_expected
         self.assertCountEqual(result, expected)
+
+    def test_get_notices(self):
+        #end-to-end test
+        results = get_notices.get_notices(modified_date = '2019-01-01')
+        expected = 
 
 if __name__ == '__main__':
     unittest.main()

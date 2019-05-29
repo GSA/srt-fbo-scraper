@@ -162,9 +162,10 @@ def textract_from_file(file_out_path, file_uri):
         b_text = None
         logger.error(f"Couldn't textract {file_out_path} from {file_uri} since the file couldn't be found:  \
                       {e}", exc_info=True)
-    except TypeError:
-        #TypeError is raised when None is passed to str.decode()
-        #This happens when textract can't extract text from scanned documents
+    except (textract.exceptions.ExtensionNotSupported, TypeError, ModuleNotFoundError, zipfile.BadZipFile):
+        # TypeError is raised when textract can't extract text from scanned documents
+        # BadZipFile raised when a corrupt docx file is encountered
+        # The others are raised when textract encounters an unsupported file extension (e.g. .ppt)
         b_text = None
     except Exception as e:
         file_name = os.path.basename(file_out_path)

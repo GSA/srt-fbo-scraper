@@ -58,7 +58,7 @@ def get_now_minus_n(n):
     """
     now_minus_n = datetime.utcnow() - timedelta(n)
     now_minus_n = now_minus_n.strftime('%Y-%m-%d')
-    #this is always appended to the time param for some reason, so we'll manually append it here
+    #this is always appended to the time param, so we'll manually append it here
     now_minus_n += '-04:00'
     
     return now_minus_n
@@ -272,7 +272,7 @@ def get_classcod_naics(psc_naics):
     """
     if not psc_naics:
         return ''
-    classcod_naics = max([i.get('code') for i in psc_naics], key = len)
+    classcod_naics = max([xstr(i.get('code')) for i in psc_naics], key = len)
     
     return classcod_naics
  
@@ -350,10 +350,13 @@ def get_description(descriptions):
     return description
         
 def get_text_from_html(text):
+    if not text:
+        return ''
     soup = BeautifulSoup(text, 'html.parser')
     # kill all script and style elements
     for script in soup(["script", "style"]):
-        script.extract()    # rip it out
+        # rip it out
+        script.extract()    
     # get text
     text = soup.get_text(separator = ' ')
     # break into lines and remove leading and trailing space on each
@@ -493,7 +496,7 @@ def schematize_results(results):
                  }
         emails = extract_emails(result)
         notice.update({'emails': emails})
-        notice_type = result.get('type',{'foo':'bar'}).get('value')
+        notice_type = result.get('type', {'foo':'bar'}).get('value')
         if notice_type == 'Combined Synopsis/Solicitation':
             notice_data['COMBINE'].append(notice)
         elif notice_type == 'Presolicitation':
@@ -502,7 +505,7 @@ def schematize_results(results):
             notice_data['MOD'].append(notice)
         else:
             if any(x in notice_type.lower() for x in {'presol', 'combine', 'modif'}):
-                logger.warning(f"Found an unanticipated but likely acceptable notice type of {notice_type} from {url}")
+                logger.warning(f"Found an unanticipated notice type of {notice_type} from {url}")
             
     return notice_data
             

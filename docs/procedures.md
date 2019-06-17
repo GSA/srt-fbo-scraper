@@ -36,7 +36,10 @@ Specifically, developers are [granted](https://cloud.gov/docs/apps/managing-team
 
 Both of the adding and removing processes should be initiated by creating an issue in the project's [issue tracker](https://github.com/GSA/srt-fbo-scraper/issues). Anyone can create the issue, but the system owner should be the one who addresses and closes it.
 
-These accounts are created primarily for developers that need access to contribute code and debug apps.
+These accounts are created primarily for developers that need access to contribute code and debug apps. Users are assigned to the appropriate logical roles from the following list:
+* Developer/QA - Users in this role are assigned to the cloud.gov 'Space Developer' role in the dev and staging spaces
+* System Administrator - Users in this role are assigned to the cloud.gov 'Space Developer' role in the dev, staging, and production spaces
+* System Owner - Users in this role are assigned to the cloud.gov 'Space Developer' role in the dev, staging, and production spaces. Additionally, users in this role will be marked as 'Org Managers' for the gsa-ogp-srt organization on cloud.gov.
 
 Before opening an issue to request access, follow these steps:
 

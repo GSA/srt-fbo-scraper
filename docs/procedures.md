@@ -86,6 +86,8 @@ At present, there are no unsupported components in the SRT system. If currently-
 ## GSA Solutions Life Cycle (SLC)
 The primary objectives of an SLC are to deliver quality systems that: meet or exceed customer expectations when promised and within cost estimates; work effectively and efficiently within the current and planned information technology (IT) infrastructure; and are inexpensive to maintain and cost-effective to enhance.
 
+The SRT System Administrator assumes all information security roles and responsibilities throughout the SLC.
+
 The SLC is comprised of nine phases. Here we documented how the Solicitation Review Tool (SRT) is managed via SLC.
 
 ### Phase One – Solution Concept Development

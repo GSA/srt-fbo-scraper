@@ -82,3 +82,35 @@ We rely on cloud.gov’s [audit tool](https://logs.fr.cloud.gov).  In the event 
 
 ## Unsupported System Components Policy
 At present, there are no unsupported components in the SRT system. If currently-used components become deprecated and/or unsupported, we will bump their versions to the most recent stable release. If we're unable to make those bumps, then we will provide justification and document approval for the continued use of the unsupported system components within the relevant GitHub issue.
+
+## GSA Solutions Life Cycle (SLC)
+The primary objectives of an SLC are to deliver quality systems that: meet or exceed customer expectations when promised and within cost estimates; work effectively and efficiently within the current and planned information technology (IT) infrastructure; and are inexpensive to maintain and cost-effective to enhance.
+
+The SLC is comprised of nine phases. Here we documented how the Solicitation Review Tool (SRT) is managed via SLC.
+
+### Phase One – Solution Concept Development
+The initiation of a solution (system or application) project begins when a business need or opportunity is identified. In this phase, we identified a need for increase the number of Federal ICT solicitations being checked for compliance with accessibility requirements as defined in Section 508 of the Rehabilitation Act.
+
+### Phase Two - Planning
+This phase is concerned with how the business will operate once the approved solution (i.e. SRT) is implemented, and to assess how the solution will impact employees and customers, including impacts on their privacy. Our team has engaged with section-508 coordinators accross the 24 CFO-Act agencies in order to collect user stories, conduct user acceptance testing, and to validate the accuracy of the compliance classifications rendered by the machine learning algorithms.
+
+### Phase Three – Requirements Analysis
+In this phase, the SRT team collected functional user requirements and formally defined them in terms of data, solution performance, security, and maintainability in light of resource contraints.
+
+### Phase Four – Design
+In this phase, our team designed the physical characteristics of the SRT system given the requirements delineated in the previous phase.
+
+### Phase Five – Development
+In this phase, the SRT Team produced translated the detailed specifications enumerated in the design phase into executable software created through incremental development techniques in intervals that were not to exceed six months. All software components were unit tested, integrated, and re-tested in a systematic manner using CircleCI in conjuction with GitFlow.
+
+### Phase Six – Integration and Testing
+In this phase, the various components of the solution were integrated and systematically tested in a development environment within cloud.gov. Prospective users also began to test the solution to ensure that the functional requirements are satisfied. Prior to operating in a production environment, the solution will undergo certification and accreditation activities that include system testing, regression testing, test plan, test scripts, and user acceptance testing.
+
+### Phase Seven – Implementation
+In this phase, SRT will be pushed to a production environment in cloud.gov. This phase is initiated only after the SRT has been tested and accepted by the test users and received an Authority to Operate (ATO) from GSAIT.
+
+### Phase Eight – Operations and Maintenance
+We intend SRT operations to be ongoing. As such, SRT will be monitored for continual performance in accordance with user requirements. Needed solution modifications will be requested through GitHub issues made if deemed appropriate by the SRT Team. The operational solution is also periodically assessed through in-process reviews and post implementation reviews to determine how the solution can be made more efficient and effective. The continuation or ongoing investment of the solution will be reviewed during the annual IT budget formulation (zero-based budget) process. During this time, governance groups (senior agency leaders) have the option to continue or halt funding, based on performance. Investments or projects can also be reviewed periodically (outside of budget formulation) as risks arise or other trigger factors require leadership escalation. Operations will continue as long as the solution can be effectively adapted to respond to an organization’s needs. Lastly, when necessary modifications or changes are identified, the solution may re-enter the planning phase.
+
+### Phase Nine – Disposition
+Disposition activities ensure the orderly termination of the solution and preserve the vital information about the solution so that some or all of the information may be reactivated in the future, if necessary. Particular emphasis is given to proper preservation of the data processed by the solution, so that the data is effectively migrated to another solution or archived, in accordance with applicable records management regulations and policies, for potential future access. We use GitHub to archive the codebase and will backup the database (if deemed necessary) as a separate AWS RDS instance.

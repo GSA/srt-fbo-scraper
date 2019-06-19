@@ -88,6 +88,8 @@ The primary objectives of an SLC are to deliver quality systems that: meet or ex
 
 The SRT System Administrator assumes all information security roles and responsibilities throughout the SLC.
 
+The SRT Team integrates the organizational information security risk management process into the system development life cycle activities documented here.
+
 The SLC is comprised of nine phases. Here we documented how the Solicitation Review Tool (SRT) is managed via SLC.
 
 ### Phase One – Solution Concept Development

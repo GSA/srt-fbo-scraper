@@ -6,6 +6,8 @@ This document codifies internal project procedures related to the application's 
 
 In this section, we document our account management processes for the SRT GitHub repositories and cloud.gov organizationin. We also document our process for remote access to the SRT application itself.
 
+We follow the principle of least privilege (POLP), which is the practice of limiting access rights for users to the bare minimum permissions they need to perform their work.
+
 The SRT System Administrator will review accounts for compliance with account management requirements annually.
 
 ### GitHub Access 

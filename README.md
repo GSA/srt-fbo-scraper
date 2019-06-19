@@ -2,8 +2,8 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/GSA/srt-fbo-scraper/badge.svg)](https://snyk.io/test/github/GSA/srt-fbo-scraper)
 [![Maintainability](https://api.codeclimate.com/v1/badges/08f7d22760fe258970d3/maintainability)](https://codeclimate.com/github/GSA/srt-fbo-scraper/maintainability)
 
-
 # srt-fbo-scraper (AKA Smartie)
+
 [FBO](https://www.fbo.gov/) is the U.S. government's system of record for opportunities to do business with the government. Each night, the FBO system posts all _updated_ opportunities as a pseudo-xml file that is made publicly available via the File Transfer Protocol (FTP), which is a standard network protocol used for the transfer of computer files between a client and server on a computer network.
 
 This project fetches that solicitation data, parses it, and uses [supervised machine learning](https://en.wikipedia.org/wiki/Supervised_learning) to determine whether or not the solicitation documents of Information Communications Technology (ICT) notices contain appropriate [setion 508 accessibility](https://www.section508.gov/) language.
@@ -25,11 +25,13 @@ Here's what happens every time the job is triggered:
     
 
 ## Getting Started
+
 This application is designed to work as a dockerized daemon in cloud.gov. As a cloud.gov app, it's bound with a postgres database that's provided as a brokered service. See the **Deployment** section below if you wish to get started that way.
 
 If you wish to run the application locally, you'll need to perform some setup as we haven't yet configured a docker image that gets this up an running locally.
 
 ### Local Setup
+
 This project requires:
  - Python 3.6.6
  - Docker (any recent version should suffice)
@@ -38,6 +40,7 @@ This project requires:
 Once you've got the above prerequisites met, you'll need to install several OS-specific dependencies to get python's `textract` library to work. This library is responsible for extracting the text from the myriad solicitation documents. It does so by calling several different OS-specific packages. See their [documentation](https://textract.readthedocs.io/en/stable/installation.html) for more details on the packages you'll need to install (or check out the Dockerfile to see what we're installing there).
 
 #### Local Implementation
+
 Now that you have Python, PostgreSQL, Docker and the textract dependencies, you can run the scan locally within a virtual environment (using [venv](https://docs.python.org/3.6/library/venv.html)). Doing so will create a database with the following connection string: `postgresql+psycopg2://localhost/test`. 
  
 > The database will persist after the scan, so be sure to drop it using `dropdb test` if you want to clean up afterwards.
@@ -54,15 +57,19 @@ python fbo.py
 ```
 
 #### Running the tests
-To run the tests, set up the environment like before but instead run:
+
+We use CircleCI to test code prior to merging in a PR. To run the tests the locally, set up the environment like before but instead run:
 
 ```bash
 python3 -W ignore -m unittest discover tests -p '*_test.py'
 ```
 
-Several warnings and exceptions will print out. Those are by design as they're being mocked in the tests.
+Several warnings and exceptions will print out. Those are by design as we're mocking HTTP requests in the unit testing.
+
+If you notice any errors, please open an issue, using the bug template provided.
 
 ### Cloud.gov Deployment
+
 To push to cloud.gov or interact with the app there, you'll need a [cloud.gov account](https://cloud.gov/docs/getting-started/accounts/).
 
 Assuming you've got a cloud.gov account and access to either the application's org or an org of your own, you can login with:
@@ -89,9 +96,8 @@ Above, `<service>` is the name of a postgres service (e.g. `aws-rds shared-psql`
 >Since services can sometimes take up to 60 minutes to be provisioned, we use `cf create-service-key` to ensure the service has been provisioned. See [this](https://cloud.gov/docs/services/relational-database/) for more details.
 
 ### Logs
-We don't do anything special with logging. We simply write to STDOUT/STDERR and use https://login.fr.cloud.gov/login to view and search them.
 
->A TODO is logging in JSON using [python-json-logger](https://github.com/madzak/python-json-logger). This might make the logs more easily searchable.
+We don't do anything special with logging. We simply write to STDOUT/STDERR and use https://login.fr.cloud.gov/login to view and search them.
 
 ## Contributing
 
@@ -102,6 +108,7 @@ Please read [CONTRIBUTING](https://github.com/GSA/fbo-scraper/blob/master/.githu
 This project is licensed under the Creative Commons Zero v1.0 Universal License - see the [LICENSE](https://github.com/GSA/fbo-scraper/blob/master/.github/LICENSE) file for details
 
 ## Acknowledgments
+
  - The [Federal Service Desk](https://www.fsd.gov/fsd-gov/home.do) for answering some of our questions about when the FTP is refreshed
  - The progenitor of this project, which can be found [here](https://github.com/jtexnl/FBOProcurementScan)
  - The [supercronic project](https://github.com/aptible/supercronic)

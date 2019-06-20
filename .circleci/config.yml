@@ -61,8 +61,8 @@ jobs:
             docker push $DOCKER_USER/srt-fbo-scraper-$CIRCLE_BRANCH:$TAG
 
 workflows:
- version: 2
-  build-and-deploy:
+  version: 2
+  build-and-deploy: 
     jobs:
       - build
       - deploy:

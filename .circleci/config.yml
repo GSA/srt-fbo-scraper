@@ -45,8 +45,9 @@ jobs:
           command: |
             PR_NUMBER="${CIRCLE_PULL_REQUEST//[!0-9]/}"
             TARGET_BRANCH=$(curl -sS https://api.github.com/repos/GSA/${CIRCLE_PROJECT_REPONAME}/pulls/${PR_NUMBER} | jq '.base.ref')
+            TARGET_BRANCH=$(echo $TARGET_BRANCH | tr -d '"')
             TAG=0.1.$CIRCLE_BUILD_NUM
-            docker build -t csmcallister/srt-fbo-scraper-$TARGET_BRANCH:$TAG .     
+            docker build -t $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG .     
             docker login -u $DOCKER_USER -p $DOCKER_PASS
             docker push $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG
 

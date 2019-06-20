@@ -36,9 +36,9 @@ jobs:
           command: |
             apk add --no-cache curl
             apk add --no-cache sudo
-            sudo dpkg --configure -a
             apk add --no-cache dpkg
             #repair/recreate the /var/lib/dpkg/available file
+            sudo dpkg --configure -a
             sudo apt-get -f install
             sudo apt-get --fix-missing install
             sudo apt-get clean

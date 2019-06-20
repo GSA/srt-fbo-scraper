@@ -28,7 +28,7 @@ jobs:
   
   deploy:
     docker:
-      - image: circleci/buildpack-deps:jessie-curl
+      - image: circleci/buildpack-deps:stretch-curl-dind
     steps:
       - checkout
       - run:
@@ -41,14 +41,17 @@ jobs:
       - setup_remote_docker:   
           docker_layer_caching: true
       # build and push Docker image
-      - run: 
-          name: Push Docker Image
+      - run:
+          name: Get Target Branch Name
           command: |
-            echo $CIRCLE_BRANCH
+            TARGET_BRANCH=$(curl -sS https://api.github.com/repos/${PR_ORG}/${PR_REPO}/pulls/${PR_NUMBER} | jq '.base.ref')
+      - run: 
+          name: Build and Push Docker Image
+          command: |
             TAG=0.1.$CIRCLE_BUILD_NUM
-            docker build -t csmcallister/srt-fbo-scraper-$CIRCLE_BRANCH:$TAG .     
+            docker build -t csmcallister/srt-fbo-scraper-$TARGET_BRANCH:$TAG .     
             docker login -u $DOCKER_USER -p $DOCKER_PASS
-            docker push $DOCKER_USER/srt-fbo-scraper-$CIRCLE_BRANCH:$TAG
+            docker push $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG
 
 workflows:
   version: 2

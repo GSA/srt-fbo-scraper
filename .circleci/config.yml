@@ -54,11 +54,11 @@ jobs:
       - run: 
           name: Push Docker Image
           command: |
-          echo $CIRCLE_BRANCH
-          TAG=0.1.$CIRCLE_BUILD_NUM
-          docker build -t csmcallister/srt-fbo-scraper-$CIRCLE_BRANCH:$TAG .     
-          docker login -u $DOCKER_USER -p $DOCKER_PASS
-          docker push $DOCKER_USER/srt-fbo-scraper-$CIRCLE_BRANCH:$TAG
+            echo $CIRCLE_BRANCH
+            TAG=0.1.$CIRCLE_BUILD_NUM
+            docker build -t csmcallister/srt-fbo-scraper-$CIRCLE_BRANCH:$TAG .     
+            docker login -u $DOCKER_USER -p $DOCKER_PASS
+            docker push $DOCKER_USER/srt-fbo-scraper-$CIRCLE_BRANCH:$TAG
 
 workflows:
  version: 2

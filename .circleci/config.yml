@@ -27,8 +27,8 @@ jobs:
           command: python -W ignore -m unittest discover tests -p '*_test.py'
   
   deploy:
-    machine:
-      enabled: true  
+    #machine:
+      #enabled: true  
     steps:
       - checkout
       - run:

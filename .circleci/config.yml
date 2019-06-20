@@ -34,6 +34,7 @@ jobs:
       - run:
           name: Download CloudFoundry CLI
           command: |
+            apk add --no-cache curl
             curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
             sudo dpkg -i cf-cli_amd64.deb
             cf -v

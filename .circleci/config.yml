@@ -38,15 +38,12 @@ jobs:
             sudo dpkg -i cf-cli_amd64.deb
             cf -v
             cf login -a https://api.fr.cloud.gov -u $SRT_FBO_SCRAPER_DEV_SERVICE_USERNAME -p $SRT_FBO_SCRAPER_DEV_SERVICE_PASSWORD -o gsa-ogp-srt -s dev
-      - run:
-          name: Get Target Branch Name
-          command: |
-            TARGET_BRANCH=$(curl -sS https://api.github.com/repos/${PR_ORG}/${PR_REPO}/pulls/${PR_NUMBER} | jq '.base.ref')
       - setup_remote_docker:   
           docker_layer_caching: true
       - run: 
           name: Build and Push Docker Image
           command: |
+            TARGET_BRANCH=$(curl -sS https://api.github.com/repos/${PR_ORG}/${PR_REPO}/pulls/${PR_NUMBER} | jq '.base.ref')
             TAG=0.1.$CIRCLE_BUILD_NUM
             docker build -t csmcallister/srt-fbo-scraper-$TARGET_BRANCH:$TAG .     
             docker login -u $DOCKER_USER -p $DOCKER_PASS

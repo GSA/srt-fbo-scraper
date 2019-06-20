@@ -28,7 +28,7 @@ jobs:
   
   deploy:
     docker:
-      - image: circleci/buildpack-deps:stable-curl-dind
+      - image: circleci/buildpack-deps:jessie-curl
     steps:
       - checkout
       - run:

@@ -312,17 +312,29 @@ class FboAttachments():
 
 
     @staticmethod
-    def get_attachment_url_from_div(div):
+    def get_attachment_url_from_div(div, fbo_url):
         '''
         Extract the attachment url from the href attribute of the attachmen div's anchor tag
 
         Arguments:
-            div (an element within the bs4 object returned by soup.find_all())
+            div: (an element within the bs4 object returned by soup.find_all())
+            fbo_url: the solicitation's url on fbo.gov
 
         Returns:
-            attachment_url (list): a list of the attachment urls as strings 
+            attachment_url (list): a list of the attachment urls as strings
+            bool: whether or not the urls were taken from neco.navy.mil source
         '''
-        attachment_href = div.find('a')['href'].strip()
+        try:
+            attachment_href = div.find('a')['href'].strip()
+        except TypeError:
+            #for NoneType is not subscriptable
+            div_text = attachment_href.get_text()
+            match = re.search(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', div_text)
+            if not match:
+                logger.error(f"Error extracting attachment url from {fbo_url} with this div: {div_text}")
+                return [], False
+            else:
+                attachment_href = match.group(0)
         #some href's oddly look like: 'http://  https://www....'
         attachment_href = max(attachment_href.split(), key=len)
         if '/utils/view?id' in attachment_href:
@@ -486,13 +498,14 @@ class FboAttachments():
         return file_list
 
     @staticmethod
-    def write_attachments(attachment_divs):
+    def write_attachments(attachment_divs, fbo_url):
         '''
         Given a list of the attachment_divs from an fbo notice's url, write each file's contents
         and return a list of all of the files written.
 
         Parameters:
             attachment_divs (list): a list of attachment_divs. Returned by FboAttachments.get_divs()
+            fbo_url (str): the url to the solicitation on FBO.gov
 
         Returns:
             file_list (list): a list of tuples containing files paths and urls of each file that has been written
@@ -514,8 +527,9 @@ class FboAttachments():
         file_list = []
         for div in attachment_divs:
             try:
-                attachment_urls, is_neco_navy_mil = FboAttachments.get_attachment_url_from_div(div)
-                attachment_urls = [url.lower() for url in attachment_urls]
+                attachment_urls, is_neco_navy_mil = FboAttachments.get_attachment_url_from_div(div, fbo_url)
+                if attachment_urls:
+                    attachment_urls = [url.lower() for url in attachment_urls]
                 for attachment_url in attachment_urls:
                     if 'fedconnect' in attachment_url:
                         file_list_fc = FboAttachments.write_fedconnect_docs(attachment_url, 
@@ -615,7 +629,7 @@ class FboAttachments():
                 except:
                     continue
                 attachment_divs = FboAttachments.get_divs(fbo_url)
-                file_list = FboAttachments.write_attachments(attachment_divs)
+                file_list = FboAttachments.write_attachments(attachment_divs, fbo_url)
                 file_lists.append(file_list)
                 updated_notice = FboAttachments.insert_attachments(file_list, notice)
                 nightly_data[k][i] = updated_notice

@@ -22,7 +22,10 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-def requests_retry_session(retries=3, backoff_factor=0.3, status_forcelist=(500, 502, 504), session=None):
+def requests_retry_session(retries=3, 
+                           backoff_factor=0.3, 
+                           status_forcelist=(500, 502, 503, 504), 
+                           session=None):
     '''
     Use/Create an http(s) requests session that will retry a request.
     '''
@@ -171,14 +174,14 @@ class FboAttachments():
         Does the url contain a resource that's less than 500mb?
 
         Arguments:
-            url (str): an attachment url that's passable `requests.head()`
+            url (str): an attachment url
 
         Returns:
             bool: True if resource < 500mb
         """
         try:
             #generous timeout for gov sites
-            h = requests.head(url, timeout = 300)
+            h = requests_retry_session().head(url, timeout = 300)
         except Exception as e:
             logger.error(f"Exception occurred getting file size with HEAD request from {url}. \
                            This means the file wasn't downloaded:  \
@@ -197,7 +200,7 @@ class FboAttachments():
                 redirect_url = url_domain + redirect_url
             try:
                 #generous timeout for gov sites
-                h = requests.head(redirect_url, timeout = 300)
+                h = requests_retry_session().head(redirect_url, timeout = 300)
             except Exception as e:
                 logger.error(f"Exception occurred getting file size with redirected HEAD request from {url}:  \
                                 {e}", exc_info=True)
@@ -425,7 +428,7 @@ class FboAttachments():
                             and the url used to request it.
         '''
         try:
-            h = requests.head(url, timeout = 300)
+            h = requests_retry_session().head(url, timeout = 300)
         except Exception as e:
             logger.error(f"Exception occurred making HEAD request to {url}:  \
                         {e}", exc_info=True)

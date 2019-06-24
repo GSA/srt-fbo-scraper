@@ -40,6 +40,12 @@ jobs:
             PR_NUMBER="${CIRCLE_PULL_REQUEST//[!0-9]/}"
             TARGET_BRANCH=$(curl -sS https://api.github.com/repos/GSA/${CIRCLE_PROJECT_REPONAME}/pulls/${PR_NUMBER} | jq '.base.ref')
             TARGET_BRANCH=$(echo $TARGET_BRANCH | tr -d '"')
+            if [ "$TARGET_BRANCH" = "master" ]
+            then
+                TARGET_BRANCH=prod
+            else
+                :
+            fi
             TAG=0.1.$CIRCLE_BUILD_NUM
             #docker build, login and push
             docker build -t $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG .     
@@ -52,6 +58,12 @@ jobs:
             PR_NUMBER="${CIRCLE_PULL_REQUEST//[!0-9]/}"
             TARGET_BRANCH=$(curl -sS https://api.github.com/repos/GSA/${CIRCLE_PROJECT_REPONAME}/pulls/${PR_NUMBER} | jq '.base.ref')
             TARGET_BRANCH=$(echo $TARGET_BRANCH | tr -d '"')
+            if [ "$TARGET_BRANCH" = "master" ]
+            then
+                TARGET_BRANCH=prod
+            else
+                :
+            fi
             #download CF CLI, login and push
             curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
             sudo dpkg -i cf-cli_amd64.deb

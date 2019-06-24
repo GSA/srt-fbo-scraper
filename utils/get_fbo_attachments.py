@@ -293,6 +293,10 @@ class FboAttachments():
         try:
             #generous timeout for gov sites
             r = requests_retry_session().get(attachment_href, timeout = 300)
+        except requests.exceptions.SSLError:
+            #This attachment source consistenly has NET::ERR_CERT_INVALID
+            attachment_urls = []
+            return attachment_urls
         except Exception as e:
             logger.error(f"Exception occurred making GET request to {attachment_href}:  \
                             {e}", exc_info=True)

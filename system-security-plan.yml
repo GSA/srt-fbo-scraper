@@ -1,0 +1,67 @@
+name: srt
+uniqueID: 
+version: 1.0
+phase: beta
+# `D26 Civilian Operations` is most common for GSA projects
+# http://csrc.nist.gov/publications/nistpubs/800-60-rev1/SP800-60_Vol1-Rev1.pdf#page=23
+information-types:
+- D26 Civilian Operations
+confidentiality: moderate
+integrity: moderate
+availability: low
+security-baseline: open data
+system-type: minor
+level-of-identity-assurance: 0
+staff:
+  authorizing-official:
+    name: tbd
+    title: tbd
+    org: General Services Administration
+    unit: tbd
+    email: tbd
+  application-admin:
+    name: Arthur Brunson
+    title: 18F Infrastructure Director
+    org: General Services Administration
+    unit: Office of Government-wide Policy
+    email: arthur.brunson@gsa.gov
+  system-admin:
+    name: Arthur Brunson
+    title: tbd
+    org: General Services Administration
+    unit: Office of Government-wide Policy
+    email: arthur.brunson@gsa.gov
+  system-security-officer:
+    name: tbd
+    title: tbd
+    org: General Services Administration
+    unit: tbd
+    email: tbd
+  technical-lead:
+    name: Scott McAllister
+    title: Technical Lead
+    org: General Services Administration
+    unit: Office of Government-wide Policy
+    email: scott.mcallister@gsa.gov
+leveraged-authorizations:
+- https://www.fedramp.gov/marketplace/compliant-systems/amazon-web-services-aws-eastwest-us-public-cloud/
+purpose: https://github.com/GSA/srt-fbo-scraper/blob/master/README.md
+components:
+- https://github.com/GSA/srt-fbo-scraper
+- https://github.com/GSA/srt-ui
+- https://github.com/GSA/srt-api
+
+# these will be the same unless your architecture is especially complex
+system-diagram: <link>
+network-diagram: <link>
+
+environments:
+- Cloud Foundry
+- Amazon Web Services (GovCloud region)
+user-types:
+  developer:
+    functions:
+    - deployment
+    - engineering
+controls:
+- <link to SSP>

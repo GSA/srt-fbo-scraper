@@ -311,7 +311,7 @@ class FboAttachmentsTestCase(unittest.TestCase):
                target="_blank" title="Download/View FD2060-17-33119_FORM_158_00.pdf"\
                class="file">FD2060-17-33119_FORM_158_00.pdf</a>'
         div = BeautifulSoup(div, "html.parser")
-        result, is_neco_navy_mil = self.fboa.get_attachment_url_from_div(div)
+        result, is_neco_navy_mil = self.fboa.get_attachment_url_from_div(div, 'https://test.gov')
         expected = ['https://www.fbo.gov/utils/view?id=798e26de983ca76f9075de687047445a']
         with self.subTest():
             self.assertListEqual(result, expected)
@@ -326,7 +326,7 @@ class FboAttachmentsTestCase(unittest.TestCase):
                target="_blank" title="Download/View FD2060-17-33119_FORM_158_00.pdf"\
                class="file">FD2060-17-33119_FORM_158_00.pdf</a>'
         div = BeautifulSoup(div, "html.parser")
-        result, is_neco_navy_mil = self.fboa.get_attachment_url_from_div(div)
+        result, is_neco_navy_mil = self.fboa.get_attachment_url_from_div(div, 'https://test.gov')
         expected = ['https://www.thisisalinktoanattachment.docx']
         with self.subTest():
             self.assertListEqual(result, expected)
@@ -346,7 +346,7 @@ class FboAttachmentsTestCase(unittest.TestCase):
                          '''
         soup = BeautifulSoup(body_with_div, "html.parser")
         attachment_divs = soup.find_all('div', {"class": "notice_attachment_ro"})
-        result = self.fboa.write_attachments(attachment_divs)
+        result = self.fboa.write_attachments(attachment_divs, 'https://test.gov')
         attachment_path = os.path.join(os.getcwd(),'attachments','FA852618Q0033_______0001.pdf')
         expected = [(attachment_path, 
                      'https://www.fbo.gov/utils/view?id=d95550fb782f53357ed65db571ef9186')]

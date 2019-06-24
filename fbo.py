@@ -69,9 +69,10 @@ def main():
         insert_updated_nightly_file(session, updated_nightly_data_with_predictions)
     logger.info("Smartie is done inserting data into database!")
     
-    logger.info("Smartie is performing the retrain check...")
-    with session_scope(dal) as session:
-        retrain(session)
+    #commenting out as we don't actually want to train a model witin cloud.gov
+    #logger.info("Smartie is performing the retrain check...")
+    #with session_scope(dal) as session:
+        #retrain(session)
     logger.info("*"*80)
 
 if __name__ == '__main__':

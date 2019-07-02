@@ -1,4 +1,8 @@
 version: 2
+
+orbs:
+  twistcli: twistlock/twistcli-scan@1.0.3
+
 jobs:
   
   build:
@@ -25,6 +29,18 @@ jobs:
           environment:
             TEST_DB_URL: "postgres://circleci@localhost:5432/smartie-test?sslmode=disable"
           command: python -W ignore -m unittest discover tests -p '*_test.py'
+  
+  docker-build-and-save:
+    executor: twistcli/default
+    steps:
+      - checkout
+      - run: docker build -t csmcallister/srt-fbo-scraper:OGP-LOW-SRT .
+      - run: mkdir -p workspace
+      - run: docker save csmcallister/srt-fbo-scraper:OGP-LOW-SRT -o workspace/image.tar
+      - persist_to_workspace:
+          root: workspace
+          paths:
+              - image.tar
   
   deploy:
     docker:
@@ -79,7 +95,18 @@ workflows:
       - hold:
           type: approval # requires in-app button be clicked to continue.
           requires:
-           - build
-      - deploy:
+            - build
+      - docker-build-and-save:
           requires:
             - hold
+      - twistcli/scan-image:
+          requires:
+            - docker-build-and-save
+          context: tl_scan_context
+          image: csmcallister/srt-fbo-scraper:OGP-LOW-SRT
+          image-tar: image.tar
+          vuln-thresh: high
+          comp-thresh: critical
+      - deploy:
+          requires:
+            - twistcli/scan-image

@@ -90,23 +90,23 @@ jobs:
 workflows:
   version: 2
   build-and-deploy: 
-    jobs:
+    jobs: 
       - build
-      - hold:
+      - hold: 
           type: approval # requires in-app button be clicked to continue.
-          requires:
+          requires: 
             - build
-      - docker-build-and-save:
-          requires:
+      - docker-build-and-save: 
+          requires: 
             - hold
-      - twistcli/scan-image:
-          requires:
+      - twistcli/scan-image: 
+          requires: 
             - docker-build-and-save
           context: tl_scan_context
           image: csmcallister/srt-fbo-scraper:OGP-LOW-SRT
           image-tar: image.tar
           vuln-thresh: high
           comp-thresh: critical
-      - deploy:
-          requires:
+      - deploy: 
+          requires: 
             - twistcli/scan-image

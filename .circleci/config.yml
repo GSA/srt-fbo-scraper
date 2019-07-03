@@ -102,7 +102,7 @@ workflows:
       - twistcli/scan-image: 
           requires: 
             - docker-build-and-save
-          context: tl_scan_context
+          context: tw_scan_context
           image: csmcallister/srt-fbo-scraper:OGP-LOW-SRT
           image-tar: image.tar
           vuln-thresh: high

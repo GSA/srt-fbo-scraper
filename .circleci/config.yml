@@ -34,6 +34,7 @@ jobs:
     executor: twistcli/default
     steps:
       - checkout
+      - run: echo $TW_URL
       - run: docker build -t csmcallister/srt-fbo-scraper:OGP-LOW-SRT .
       - run: mkdir -p workspace
       - run: docker save csmcallister/srt-fbo-scraper:OGP-LOW-SRT -o workspace/image.tar

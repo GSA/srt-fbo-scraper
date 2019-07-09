@@ -48,8 +48,8 @@ jobs:
             fi
             TAG=0.1.$CIRCLE_BUILD_NUM
             #docker build, login and push
-            docker build -t $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG .     
-            docker login -u $DOCKER_USER -p $DOCKER_PASS
+            docker build -t $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG . 
+            echo "$DOCKER_PASS" | docker login --username $DOCKER_USER --password-stdin    
             docker push $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG
       - run:
           name: Download cf CLI and deploy
@@ -69,7 +69,9 @@ jobs:
             sudo dpkg -i cf-cli_amd64.deb
             cf -v
             cf login -a https://api.fr.cloud.gov -u $CF_SERVICE_ACCOUNT -p $CF_SERVICE_PW -o gsa-ogp-srt -s $TARGET_BRANCH
-            cf push srt-fbo-scraper-$TARGET_BRANCH --docker-image $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH
+
+            TAG=0.1.$CIRCLE_BUILD_NUM
+            cf push srt-fbo-scraper-$TARGET_BRANCH --docker-image $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG -k 4G
 
 workflows:
   version: 2

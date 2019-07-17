@@ -57,6 +57,18 @@ Before opening an issue to request access, follow these steps:
  
 6. The issue history will document the role that was assigned.
 
+### SRT Web Application Access
+
+Individuals wanting to use the SRT Web Application will be approved by the SRT Product Owner (PO). During this approval, the PO will make a determination on the proper role to assign the new user. New users will be assigned roles that have the minimum permissions necessary to carry out their responsibilities. 
+
+The PO is able to add users to SRT by assigning them to roles on MAX.gov. The following links will take the PO to the correct MAX page for making the role assignments **on the test server**:
+
+* [SRT Administrators](https://portal.test.max.gov/home/sa/group/viewGroupUsers?groupId=AGY-GSA-SRT-ADMINISTRATORS.ROLEMANAGEMENT)
+* [508 Coordinators](https://portal.test.max.gov/home/sa/group/viewGroupUsers?groupId=AGY-GSA-SRT-508-COORDINATOR)
+* [Contracting Officers](https://portal.test.max.gov/home/sa/group/viewGroupUsers?groupId=AGY-GSA-SRT-CONTRACTINGOFFICERS)
+* [SRT Program Managers](https://portal.test.max.gov/home/sa/group/viewGroupUsers?groupId=AGY-GSA-SRT-PROGRAM-MANAGERS.ROLEMANAGEMENT)
+* [SRT Users](https://portal.test.max.gov/home/sa/group/viewGroupUsers?groupId=AGY-GSA-SRT-USERS)
+
 ### Remote Access
 The SRT application can only be accessed through the cloudfoundry CLI. This requires a cloud.gov account as well as appropriate user roles, which were outlined above.
 

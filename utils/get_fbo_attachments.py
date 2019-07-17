@@ -101,10 +101,12 @@ class FboAttachments():
         #This can be raised when a pdf is incorrectly saved as a .docx (GH183)
         except BadZipfile as e:
             if file_name.endswith('.docx'):
-                b_text = textract.process(file_name, 
+                new_name = file_name.replace('.docx','.pdf')
+                os.rename(file_name, new_name)
+                b_text = textract.process(new_name, 
                                           encoding='utf-8', 
                                           method='pdftotext', 
-                                          errors = 'ignore')
+                                          errors='ignore')
             else:
                 b_text = None
                 logger.error(f"Exception occurred textracting {file_name} from {url}:  \

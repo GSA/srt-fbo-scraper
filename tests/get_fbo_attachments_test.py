@@ -53,6 +53,15 @@ class FboAttachmentsTestCase(unittest.TestCase):
         self.temp_outfile_path_docx = temp_outfile_path_docx
         self.temp_outfile_path_doc = temp_outfile_path_doc
 
+        fake_docx = FPDF()
+        fake_docx.add_page()
+        fake_docx.set_xy(0, 0)
+        fake_docx.set_font('arial', 'B', 13.0)
+        fake_docx.cell(ln=0, h=5.0, align='L', w=0, txt="This is a test", border=0)
+        temp_outfile_path_fake_docx = os.path.join(root_path, 'fake_docx.docx')
+        fake_docx.output(temp_outfile_path_fake_docx, 'F')
+        self.temp_outfile_path_fake_docx = temp_outfile_path_fake_docx
+
 
     def tearDown(self):
         self.fboa = None
@@ -65,6 +74,8 @@ class FboAttachmentsTestCase(unittest.TestCase):
             os.remove(self.temp_outfile_path_pdf)
         if os.path.exists(self.temp_outfile_path_docx):
             os.remove(self.temp_outfile_path_docx)
+        if os.path.exists(self.temp_outfile_path_fake_docx):
+            os.remove(self.temp_outfile_path_fake_docx)
 
 
     @requests_mock.Mocker()
@@ -303,6 +314,12 @@ class FboAttachmentsTestCase(unittest.TestCase):
 
     def test_get_attachment_text_doc(self):
         result = self.fboa.get_attachment_text(self.temp_outfile_path_doc, 'url')
+        expected = "This is a test"
+        self.assertEqual(result, expected)
+
+    def test_get_attachment_text_fake_docx(self):
+        # see GH183
+        result = self.fboa.get_attachment_text(self.temp_outfile_path_fake_docx, 'url')
         expected = "This is a test"
         self.assertEqual(result, expected)
 

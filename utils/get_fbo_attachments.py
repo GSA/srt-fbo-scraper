@@ -451,6 +451,9 @@ class FboAttachments():
         soup = BeautifulSoup(r.content, 'html.parser')
         try:
             attachments_div = soup.find('div',{'id':'div_attachments'})
+            if not attachments_div:
+                # No attachments to find here
+                return
             attachment_tables = attachments_div.find_all('table')
             attachment_rows = []
             for table in attachment_tables:
@@ -542,6 +545,9 @@ class FboAttachments():
                         file_list_fc = FboAttachments.write_fedconnect_docs(attachment_url, 
                                                                             out_path, 
                                                                             textract_extensions)
+                        if not file_list_fc:
+                            # No FedConnect documents found so continue
+                            continue
                         file_list.extend(file_list_fc)
                     #some are ftp and we can get the file now
                     elif 'ftp://' in attachment_url:

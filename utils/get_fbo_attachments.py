@@ -98,6 +98,17 @@ class FboAttachments():
             b_text = None
             logger.error(f"Couldn't textract {file_name} from {url} since the file couldn't be found:  \
                            {e}", exc_info=True)
+        #This can be raised when a pdf is incorrectly saved as a .docx (GH183)
+        except BadZipfile as e:
+            if file_name.endswith('.docx'):
+                b_text = textract.process(file_name, 
+                                          encoding='utf-8', 
+                                          method='pdftotext', 
+                                          errors = 'ignore')
+            else:
+                b_text = None
+                logger.error(f"Exception occurred textracting {file_name} from {url}:  \
+                             {e}", exc_info=True)
         except TypeError:
             b_text = None
         except Exception as e:

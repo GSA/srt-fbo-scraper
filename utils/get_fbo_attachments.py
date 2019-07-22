@@ -334,7 +334,7 @@ class FboAttachments():
     @staticmethod
     def get_attachment_url_from_div(div, fbo_url):
         '''
-        Extract the attachment url from the href attribute of the attachmen div's anchor tag
+        Extract the attachment url from the href attribute of the attachment div's anchor tag
 
         Arguments:
             div: (an element within the bs4 object returned by soup.find_all())
@@ -344,14 +344,17 @@ class FboAttachments():
             attachment_url (list): a list of the attachment urls as strings
             bool: whether or not the urls were taken from neco.navy.mil source
         '''
+        a = div.find('a')
+        if not a:
+            return [], False
         try:
-            attachment_href = div.find('a')['href'].strip()
-        except TypeError:
-            #for NoneType is not subscriptable
-            div_text = attachment_href.get_text()
+            attachment_href = a.get('href','').strip()
+        except:
+            #for errors in getting the href
+            div_text = a.get_text()
+            #regex for a url
             match = re.search(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', div_text)
             if not match:
-                logger.error(f"Error extracting attachment url from {fbo_url} with this div: {div_text}")
                 return [], False
             else:
                 attachment_href = match.group(0)

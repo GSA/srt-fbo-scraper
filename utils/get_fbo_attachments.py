@@ -454,10 +454,12 @@ class FboAttachments():
                         {e}", exc_info=True)
             return
         redirect_location = h.headers.get('location')
-        if 'https://www.fedconnect.net' not in redirect_location and redirect_location:
-            redirect_location = f'https://www.fedconnect.net{redirect_location}'
+        if not redirect_location:
+            redirect_location = url
+        else:
+            if 'https://www.fedconnect.net' not in redirect_location:
+                redirect_location = f'https://www.fedconnect.net{redirect_location}'
         try:
-            redirect_location = redirect_location if redirect_location else url
             r = requests_retry_session().get(redirect_location, timeout = 300)
         except Exception as e:
             logger.error(f"Exception occurred making GET request to {redirect_location}:  \

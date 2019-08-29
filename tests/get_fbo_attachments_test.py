@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 import sys
 import os
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
-from .utils.get_fbo_attachments import FboAttachments
+from ..utils.get_fbo_attachments import FboAttachments
 from .fixtures import nightly_data, fedconnect
 
 def get_root_path():

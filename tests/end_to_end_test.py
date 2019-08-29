@@ -4,8 +4,8 @@ import sys
 import os
 from scipy import stats
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
-from .fbo import main
-from .utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, \
+from ..fbo import main
+from ..utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, \
                               DataAccessLayer, clear_data
 
 class EndToEndTest(unittest.TestCase):

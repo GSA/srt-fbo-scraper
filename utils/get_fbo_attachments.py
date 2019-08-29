@@ -30,7 +30,11 @@ def requests_retry_session(retries=3,
     Use/Create an http(s) requests session that will retry a request.
     '''
     session = session or requests.Session()
-    retry = Retry(total = retries, read = retries, connect = retries, backoff_factor = backoff_factor, status_forcelist = status_forcelist)
+    retry = Retry(total = retries, 
+                  read = retries, 
+                  connect = retries, 
+                  backoff_factor = backoff_factor, 
+                  status_forcelist = status_forcelist)
     adapter = HTTPAdapter(max_retries = retry)
     session.mount('http://', adapter)
     session.mount('https://', adapter)
@@ -92,6 +96,15 @@ class FboAttachments():
         '''
         try:
             b_text = textract.process(file_name, encoding='utf-8', errors = 'ignore')
+        #ShellError with antiword occurs when an rtf is saved with a doc extension
+        except textract.exceptions.ShellError as e:
+            err_message = str(e)
+            if 'antiword' in err_message and file_name.endswith('.doc'):
+                new_name = file_name.replace('.doc','.pdf')
+                os.rename(file_name, new_name)
+                b_text = textract.process(new_name, 
+                                          encoding='utf-8', 
+                                          errors='ignore')
         #TypeError is raised when None is passed to str.decode()
         #This happens when textract can't extract text from scanned documents
         except textract.exceptions.MissingFileError as e:

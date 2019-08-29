@@ -11,42 +11,47 @@ sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) )
 from utils.get_fbo_attachments import FboAttachments
 from fixtures import nightly_data, fedconnect
 
+def get_root_path():
+    cwd = os.getcwd()
+    if 'fbo-scraper' in cwd:
+        i = cwd.find('fbo-scraper')
+        root_path = cwd[:i+len('fbo-scraper')]
+    else:
+        i = cwd.find('root')
+        root_path = cwd
+    
+    return root_path
+
 class FboAttachmentsTestCase(unittest.TestCase):
 
     def setUp(self):
         self.maxDiff = None
         self.fake_fbo_url = 'https://www.fbo.gov/fake'
         self.fboa = FboAttachments(nightly_data = nightly_data.nightly_data)
+        
         text = "This is a test"
-        cwd = os.getcwd()
-        if 'fbo-scraper' in cwd:
-            i = cwd.find('fbo-scraper')
-            root_path = cwd[:i+len('fbo-scraper')]
-        else:
-            i = cwd.find('root')
-            root_path = cwd
+        root_path = get_root_path()
         temp_outfile_path = os.path.join(root_path, 'temp_test_file')
         with open(temp_outfile_path, 'w') as f:
             f.write(text)
         self.temp_outfile_path = temp_outfile_path
 
-        txt_text = "This is a test"
         temp_outfile_path_txt = os.path.join(root_path, 'temp_test_file_txt.txt')
         with open(temp_outfile_path_txt, 'w') as f:
-            f.write(txt_text)
+            f.write(text)
         self.temp_outfile_path_txt = temp_outfile_path_txt
 
         pdf = FPDF()
         pdf.add_page()
         pdf.set_xy(0, 0)
         pdf.set_font('arial', 'B', 13.0)
-        pdf.cell(ln=0, h=5.0, align='L', w=0, txt="This is a test", border=0)
+        pdf.cell(ln=0, h=5.0, align='L', w=0, txt=text, border=0)
         temp_outfile_path_pdf  = os.path.join(root_path, 'test.pdf')
         pdf.output(temp_outfile_path_pdf, 'F')
         self.temp_outfile_path_pdf = temp_outfile_path_pdf
 
         document_docx = Document()
-        document_docx.add_heading("This is a test", 0)
+        document_docx.add_heading(text, 0)
         document_docx.save('test.docx')
         temp_outfile_path_docx = os.path.join(root_path, 'test.docx')
         temp_outfile_path_doc = os.path.join(root_path, 'tests/fixtures/test.doc')
@@ -57,13 +62,21 @@ class FboAttachmentsTestCase(unittest.TestCase):
         fake_docx.add_page()
         fake_docx.set_xy(0, 0)
         fake_docx.set_font('arial', 'B', 13.0)
-        fake_docx.cell(ln=0, h=5.0, align='L', w=0, txt="This is a test", border=0)
+        fake_docx.cell(ln=0, h=5.0, align='L', w=0, txt=text, border=0)
         temp_outfile_path_fake_docx = os.path.join(root_path, 'fake_docx.docx')
         fake_docx.output(temp_outfile_path_fake_docx, 'F')
         self.temp_outfile_path_fake_docx = temp_outfile_path_fake_docx
 
+        temp_outfile_path_fake_doc = os.path.join(root_path, 'fake_doc.doc')
+        #write in rtf format but save as doc
+        rtf_text = r'{\rtf{\fonttbl {\f0 Times New Roman;}}\f0\fs60 This is a test}'
+        with open(temp_outfile_path_fake_doc, 'w') as f:
+            f.write(rtf_text)
+        self.temp_outfile_path_fake_doc = temp_outfile_path_fake_doc
+
 
     def tearDown(self):
+        root_path = get_root_path()
         self.fboa = None
         self.fake_fbo_url = None
         if os.path.exists(self.temp_outfile_path):
@@ -76,6 +89,13 @@ class FboAttachmentsTestCase(unittest.TestCase):
             os.remove(self.temp_outfile_path_docx)
         if os.path.exists(self.temp_outfile_path_fake_docx):
             os.remove(self.temp_outfile_path_fake_docx)
+        # These two files are programmatically created outside the test suite
+        temp_outfile_path_fake_docx_as_pdf = os.path.join(root_path, 'fake_docx.pdf')
+        if os.path.exists(temp_outfile_path_fake_docx_as_pdf):
+            os.remove(temp_outfile_path_fake_docx_as_pdf)
+        temp_outfile_path_fake_doc_as_rtf = os.path.join(root_path, 'fake_doc.rtf')
+        if os.path.exists(temp_outfile_path_fake_doc_as_rtf):
+            os.remove(temp_outfile_path_fake_doc_as_rtf)
 
 
     @requests_mock.Mocker()
@@ -320,6 +340,12 @@ class FboAttachmentsTestCase(unittest.TestCase):
     def test_get_attachment_text_fake_docx(self):
         # see GH183
         result = self.fboa.get_attachment_text(self.temp_outfile_path_fake_docx, 'url')
+        expected = "This is a test"
+        self.assertEqual(result, expected)
+
+    def test_get_attachment_text_fake_doc(self):
+        # see GH194
+        result = self.fboa.get_attachment_text(self.temp_outfile_path_fake_doc, 'url')
         expected = "This is a test"
         self.assertEqual(result, expected)
 

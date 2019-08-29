@@ -4,9 +4,9 @@ import sys
 import os
 from scipy import stats
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
-from ..utils.train import prepare_samples, train, get_param_distribution, log_uniform
-from ..utils.db.db import Notice, NoticeType, Attachment, Model, now_minus_two
-from ..utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, \
+from utils.train import prepare_samples, train, get_param_distribution, log_uniform
+from utils.db.db import Notice, NoticeType, Attachment, Model, now_minus_two
+from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, \
                               DataAccessLayer, clear_data, object_as_dict, fetch_notice_type_id, \
                               insert_model, insert_notice_types, retrain_check, \
                               get_validation_count, get_trained_count, \

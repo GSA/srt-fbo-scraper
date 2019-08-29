@@ -8,7 +8,7 @@ import requests_mock
 import sys
 from os import path
 sys.path.append( path.dirname( path.dirname( path.abspath(__file__) ) ) )
-from .utils.fbo_nightly_scraper import clean_line_text, get_email_from_url, extract_emails, \
+from utils.fbo_nightly_scraper import clean_line_text, get_email_from_url, extract_emails, \
     get_redirect_url, handle_archive_redirect, get_notice_url_from_archive_list, handle_dla_url, \
     merge_dicts, id_and_count_notice_tags, pseudo_xml_to_json, filter_json, get_nightly_data
 from .fixtures.nightly_file import nightly_file

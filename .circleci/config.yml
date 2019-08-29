@@ -8,6 +8,9 @@ jobs:
         environment:
           - POSTGRES_USER: circleci
           - POSTGRES_DB: smartie-test
+    
+    parallelism: 4
+    
     steps:
       - checkout
       - run:
@@ -24,7 +27,7 @@ jobs:
           name: Run tests
           environment:
             TEST_DB_URL: "postgres://circleci@localhost:5432/smartie-test?sslmode=disable"
-          command: python -W ignore -m unittest discover tests -p '*_test.py'
+          command: circleci tests glob **/tests/*_test.py | circleci tests split --split-by=timings --timings-type=classname | xargs python3 -m unittest
   
   deploy:
     docker:

@@ -3,7 +3,7 @@ import sys
 import os
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from utils.predict import Predict
-from fixtures import updated_nightly_data
+from .fixtures import updated_nightly_data
 
 class PredictTestCase(unittest.TestCase):
 

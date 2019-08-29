@@ -100,7 +100,7 @@ class FboAttachments():
         except textract.exceptions.ShellError as e:
             err_message = str(e)
             if 'antiword' in err_message and file_name.endswith('.doc'):
-                new_name = file_name.replace('.doc','.pdf')
+                new_name = file_name.replace('.doc','.rtf')
                 os.rename(file_name, new_name)
                 b_text = textract.process(new_name, 
                                           encoding='utf-8', 

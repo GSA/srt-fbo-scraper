@@ -57,6 +57,20 @@ Before opening an issue to request access, follow these steps:
  
 6. The issue history will document the role that was assigned.
 
+#### Cloud.gov Service Account
+
+Within the application's cloud.gov organization, there's a [service account](https://cloud.gov/docs/services/cloud-gov-service-account/) with the Space Developer role in each space. CircleCI uses this service account to deploy the application after PR merges. However, **service account passwords expire after 90 days**, so it's necessary to periodically delete the existing service key, recreate it, and then update the CircleCI environment variables that contain the username/password.
+
+After logging in with your own account, you can do this with:
+
+```bash
+cf delete-service-key srt-fbo-scraper-service-account srt-fbo-scraper-service-account-key
+cf create-service-key srt-fbo-scraper-service-account srt-fbo-scraper-service-account-key
+cf service-key srt-fbo-scraper-service-account srt-fbo-scraper-service-account-key
+```
+
+The last command will return the service account username/password pair. Once you have those, navigate to CircleCI to update the respective environment variables.
+
 ### SRT Web Application Access
 
 Individuals wanting to use the SRT Web Application will be approved by the SRT Product Owner (PO). During this approval, the PO will make a determination on the proper role to assign the new user. New users will be assigned roles that have the minimum permissions necessary to carry out their responsibilities. 

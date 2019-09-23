@@ -105,33 +105,6 @@ class DBTestCase(unittest.TestCase):
                                       'compliant': 0}],
                'Solicitation': [],
                'Presolicitation': []}
-        self.predicted_nightly_data_day_two = {'Combined Synopsis/Solicitation': [{'date': '0506',
-                                                           'year': '17',
-                                                           'agency': 'defense logistics agency',
-                                                           'office': 'dla acquisition locations',
-                                                           'location': 'dla aviation - bsm',
-                                                           'zip': '23297',
-                                                           'classcod': '66',
-                                                           'naics': '334511',
-                                                           'offadd': '334511',
-                                                           'subject': 'subject',
-                                                           'solnbr': 'spe4a618t934n',
-                                                           'respdate': '051418',
-                                                           'archdate': '06132018',
-                                                           'contact': 'bob.dylan@aol.com',
-                                                           'desc': 'test123',
-                                                           'url': 'test_url',
-                                                           'setaside': 'n/a  ',
-                                                           'attachments': [{'filename':'test.txt',
-                                                                            'machine_readable': True,
-                                                                            'text': 'test_text_0',
-                                                                            'url': 'test_url_0',
-                                                                            'prediction': 1,
-                                                                            'decision_boundary': 0,
-                                                                            'validation': None,
-                                                                            'trained': False}],
-                                                           'compliant': 0}]
-                                            }
         self.dal = DataAccessLayer(conn_string = conn_string)
         self.dal.create_test_postgres_db()
         self.dal.connect()
@@ -145,7 +118,6 @@ class DBTestCase(unittest.TestCase):
         self.dal.drop_test_postgres_db()
         self.dal = None
         self.predicted_nightly_data = None
-        self.predicted_nightly_data_day_two = None
     
     def test_insert_notice_types(self):
         with session_scope(self.dal) as session:
@@ -259,105 +231,6 @@ class DBTestCase(unittest.TestCase):
             score = fetch_last_score(session)
         result = score
         expected = .99
-        self.assertEqual(result, expected)
-
-    def test_insert_updated_nightly_file_day_two(self):
-        '''
-        Simulate a second batch entry with a repeating solnbr that now has attachments
-        '''
-        with session_scope(self.dal) as session:
-            insert_updated_nightly_file(session, 
-                                        self.predicted_nightly_data)
-        with session_scope(self.dal) as session:
-            insert_updated_nightly_file(session, 
-                                        self.predicted_nightly_data_day_two)
-        result = []
-        with session_scope(self.dal) as session:
-            notices = session.query(Notice).all()
-            for n in notices:
-                notice = object_as_dict(n)
-                #pop the date and createdAt attributes since they're constructed programmatically
-                notice.pop('date')
-                notice.pop('createdAt')
-                if notice['history']:
-                    notice['history'][0]['date'] = "test date"
-                notice.pop('notice_type_id')
-                notice.pop('id')
-
-                result.append(notice)
-        expected = [{'solicitation_number': 'rfp-e-bpm-djf-18-0800-pr-0000828',
-                     'agency': 'department of justice',
-                     'notice_data': {'url': 'url',
-                                     'zip': '20535',
-                                     'date': '0506',
-                                     'desc': '  link to document',
-                                     'year': '18',
-                                     'naics': '511210',
-                                     'ntype': 'combine',
-                                     'offadd': '935 pennsylvania avenue, n.w. washington dc 20535',
-                                     'office': 'federal bureau of investigation',
-                                     'popzip': '20535',
-                                     'contact': 'clark kent, contracting officer, phone 5555555555, email clark.kent@daily-planet.com',
-                                     'subject': 'enterprise business process management software tool',
-                                     'classcod': '70',
-                                     'location': 'procurement section',
-                                     'setaside': 'n/a',
-                                     'popaddress': '935 pennsylvania ave. n.w. washington, dc  ',
-                                     'popcountry': 'us'},
-                     'compliant': 0,
-                     'feedback': None,
-                     'history': None,
-                     'action': None,
-                     'updatedAt': None},
-                     {'solicitation_number': 'spe4a618t934n',
-                     'agency': 'defense logistics agency',
-                     'notice_data': {'url': 'test_url',
-                                     'zip': '23297',
-                                     'date': '0506',
-                                     'desc': 'test123',
-                                     'year': '18',
-                                     'naics': '334511',
-                                     'offadd': '334511',
-                                     'office': 'dla acquisition locations',
-                                     'contact': 'bob.dylan@aol.com',
-                                     'subject': 'subject',
-                                     'archdate': '06132018',
-                                     'classcod': '66',
-                                     'location': 'dla aviation - bsm',
-                                     'respdate': '051418',
-                                     'setaside': 'n/a  '},
-                     'compliant': 0,
-                     'feedback': None,
-                     'history': None,
-                     'action': None,
-                     'updatedAt': None},
-                     {'solicitation_number': 'spe4a618t934n',
-                     'agency': 'defense logistics agency',
-                     'notice_data': {'url': 'test_url',
-                                     'zip': '23297',
-                                     'date': '0506',
-                                     'desc': 'test123',
-                                     'year': '17',
-                                     'naics': '334511',
-                                     'offadd': '334511',
-                                     'office': 'dla acquisition locations',
-                                     'contact': 'bob.dylan@aol.com',
-                                     'subject': 'subject',
-                                     'archdate': '06132018',
-                                     'classcod': '66',
-                                     'location': 'dla aviation - bsm',
-                                     'respdate': '051418',
-                                     'setaside': 'n/a  '},
-                     'compliant': 0,
-                     'feedback': None,
-                     'history': [{
-                                  "date":"test date",
-                                  "user":"",
-                                  "action":"Solicitation Updated on FBO.gov",
-                                  "status":""
-                                  }],
-                     'action': None,
-                     'updatedAt': None}]
         self.assertEqual(result, expected)
 
     def test_get_validation_count(self):

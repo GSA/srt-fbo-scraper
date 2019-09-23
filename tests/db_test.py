@@ -174,7 +174,7 @@ class DBTestCase(unittest.TestCase):
                 #pop this as it'll vary
                 notice.pop('notice_type_id')
                 result.append(notice)
-        expected = [{'id': 1,
+        expected = [{'id': 2,
                      'solicitation_number': 'rfp-e-bpm-djf-18-0800-pr-0000828',
                      'agency': 'department of justice',
                      'notice_data': {'url': 'url',
@@ -199,7 +199,7 @@ class DBTestCase(unittest.TestCase):
                      'history': None,
                      'action': None,
                      'updatedAt': None},
-                     {'id': 2,
+                     {'id': 1,
                      'solicitation_number': 'spe4a618t934n',
                      'agency': 'defense logistics agency',
                      'notice_data': {'url': 'test_url',

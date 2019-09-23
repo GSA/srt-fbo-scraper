@@ -282,9 +282,10 @@ class DBTestCase(unittest.TestCase):
                 if notice['history']:
                     notice['history'][0]['date'] = "test date"
                 notice.pop('notice_type_id')
+                notice.pop('id')
+
                 result.append(notice)
-        expected = [{'id': 1,
-                     'solicitation_number': 'rfp-e-bpm-djf-18-0800-pr-0000828',
+        expected = [{'solicitation_number': 'rfp-e-bpm-djf-18-0800-pr-0000828',
                      'agency': 'department of justice',
                      'notice_data': {'url': 'url',
                                      'zip': '20535',
@@ -308,8 +309,7 @@ class DBTestCase(unittest.TestCase):
                      'history': None,
                      'action': None,
                      'updatedAt': None},
-                     {'id': 2,
-                     'solicitation_number': 'spe4a618t934n',
+                     {'solicitation_number': 'spe4a618t934n',
                      'agency': 'defense logistics agency',
                      'notice_data': {'url': 'test_url',
                                      'zip': '23297',
@@ -331,8 +331,7 @@ class DBTestCase(unittest.TestCase):
                      'history': None,
                      'action': None,
                      'updatedAt': None},
-                     {'id': 3,
-                     'solicitation_number': 'spe4a618t934n',
+                     {'solicitation_number': 'spe4a618t934n',
                      'agency': 'defense logistics agency',
                      'notice_data': {'url': 'test_url',
                                      'zip': '23297',

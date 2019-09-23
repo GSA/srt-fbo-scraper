@@ -446,9 +446,39 @@ def pseudo_xml_to_json(file_lines):
                 merge_notices_dict[k].append(merged_dict)
         else:
             pass
-    merge_notices_dict
-
+    
     return merge_notices_dict
+
+def scrape_notice_type(correct_notice_url):
+
+    r = requests.get(correct_notice_url)
+    soup = BeautifulSoup(r.content, 'html.parser')
+    notice_type_div = soup.find('div', {'id':'dnf_class_values_procurement_notice__procurement_type__widget'})
+    if not notice_type_div:
+        return
+    fbo_notice_type = notice_type_div.get_text().strip()
+    sam_notice_types = ['solicitation', 'presolicitation', 'combined synopsis/solicitation']
+    if fbo_notice_type.lower() not in sam_notice_types:
+        notice_type_ems = soup.find_all('em')
+        notice_type_ems_text = [i.get_text().strip() for i in notice_type_ems]
+        for nt in notice_type_ems_text:
+            if nt.lower() in sam_notice_types:
+                return nt
+        return False
+    else:
+        return fbo_notice_type
+    
+
+def map_notice_type_to_sam(correct_notice_url, notice_type):
+    if notice_type == 'PRESOL':
+        return 'Presolicitation'
+    elif notice_type == 'AMDCSS' or notice_type == 'COMBINE':
+        return 'Combined Synopsis/Solicitation'
+    elif notice_type == 'MOD':
+        return scrape_notice_type(correct_notice_url)
+    else:
+        return
+
 
 
 def filter_json(merge_notices_dict, notice_types, naics):
@@ -466,6 +496,7 @@ def filter_json(merge_notices_dict, notice_types, naics):
         filtered_data (dict): a dictionary with keys for desired notice type and arrays of notice
                               dicts that match the NACIS as values.
     '''
+    sam_notices = {k:[] for k in ['Solicitation', 'Presolicitation', 'Combined Synopsis/Solicitation']}
     filtered_data = {k:[] for k in notice_types}
     for notice_type in merge_notices_dict:
         if notice_type not in notice_types:
@@ -487,6 +518,12 @@ def filter_json(merge_notices_dict, notice_types, naics):
                 except KeyError:
                     continue
                 correct_notice_url = handle_dla_url(notice_url, notice_date, notice_type)
+
+                ### Convert notice type to SAM notice type for forward compatibility
+                sam_notice_type = map_notice_type_to_sam(correct_notice_url, notice_type)
+                if not sam_notice_type:
+                    continue
+                ####
                 notice['URL'] = correct_notice_url
                 notice['EMAILS'] = extract_emails(notice)
                 notice = {k.lower():v for k,v in notice.items()}
@@ -498,9 +535,10 @@ def filter_json(merge_notices_dict, notice_types, naics):
                         stripped_notice[k] = v
                     else:
                         stripped_notice[k] = v
-                filtered_data[notice_type].append(stripped_notice)
+                sam_notices[sam_notice_type].append(stripped_notice)
+                #filtered_data[notice_type].append(stripped_notice)
 
-    return filtered_data
+    return sam_notices
 
 
 def get_nightly_data(date = None,
@@ -536,3 +574,4 @@ def get_nightly_data(date = None,
 if __name__ == '__main__':
     #sample usage
     nightly_data = get_nightly_data()
+

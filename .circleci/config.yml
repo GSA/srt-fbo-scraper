@@ -6,13 +6,32 @@ jobs:
       - image: csmcallister/fbo-scraper-test
       - image: circleci/postgres:9.6.8
         environment:
-          - POSTGRES_USER: circleci
-          - POSTGRES_DB: smartie-test
+            - POSTGRES_USER: circleci
+            - POSTGRES_DB: smartie-test
     
     parallelism: 4
     
     steps:
       - checkout
+      
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "requirements-test.txt" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+      
+      - run:
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install -r requirements-test.txt
+      
+      - save_cache:
+          paths:
+            - ./venv
+          key: v1-dependencies-{{ checksum "requirements-test.txt" }}
+
       - run:
           name: Waiting for Postgres to be ready
           command: |
@@ -23,11 +42,14 @@ jobs:
               sleep 1
             done
             echo Failed waiting for Postgres && exit 1
+      
       - run:
           name: Run tests
           environment:
             TEST_DB_URL: "postgres://circleci@localhost:5432/smartie-test?sslmode=disable"
-          command: circleci tests glob **/tests/*_test.py | circleci tests split --split-by=timings --timings-type=classname | xargs python3 -m unittest
+          command: |
+            . venv/bin/activate
+            circleci tests glob **/tests/*_test.py | circleci tests split --split-by=timings --timings-type=classname | xargs python3 -m unittest
   
   deploy:
     docker:

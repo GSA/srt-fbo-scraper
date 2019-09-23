@@ -617,7 +617,13 @@ class FboAttachments():
                                 file_name = FboAttachments.get_file_name(attachment_url, content_type)
                             if '.zip' in file_name:
                                 z = ZipFile(io.BytesIO(r.content))
-                                z.extractall(out_path)
+                                try:
+                                    z.extractall(out_path)
+                                except RuntimeError as e:
+                                    if 'password required' in str(e):
+                                        continue
+                                    else:
+                                        logger.error('{e}', exc_info = True)
                                 zip_file_list = z.filelist
                                 for zip_file in zip_file_list:
                                     try:

@@ -1,5 +1,5 @@
-nightly_data = {'MOD': [],
- 'PRESOL': [{'date': '0302',
+nightly_data = {'Solicitation': [],
+ 'Presolicitation': [{'date': '0302',
    'year': '18',
    'agency': 'Department of the Air Force',
    'office': 'Air Force Materiel Command',
@@ -16,5 +16,4 @@ nightly_data = {'MOD': [],
    'url': 'https://www.fbo.gov/spg/USAF/AFMC/WRALC/FA8526-18-Q-0033/listing.html',
    'setaside': 'Total Small Business',
    'emails': ['alexander.comportie@us.af.mil','johnene.mcconnell@us.af.mil']}],
- 'COMBINE': [],
- 'AMDCSS': []}
+ 'Combined Synopsis/Solicitation': []}

@@ -46,8 +46,4 @@ RUN apt-get update && apt-get install -y \
     #clean up the apt cache
     && rm -rf /var/lib/apt/lists/*
 
-ADD requirements-test.txt /
-
-RUN pip install -r requirements-test.txt
-
 CMD ["/bin/sh"]

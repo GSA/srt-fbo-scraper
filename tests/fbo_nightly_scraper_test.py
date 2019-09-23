@@ -22,11 +22,11 @@ class FboNightlyScraperTestCase(unittest.TestCase):
     '''
     
     def setUp(self):
-        self.notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS']
+        self.notice_types = ['MOD','PRESOL','COMBINE', 'AMDCSS']
         self.naics = ['334111', '334118', '3343', '33451', '334516', '334614', '5112',
                  '518', '54169', '54121', '5415', '54169', '61142']
         self.file_lines = nightly_file
-        self.maxDiff = None
+        #self.maxDiff = None
 
     def tearDown(self):
         self.notice_types = None

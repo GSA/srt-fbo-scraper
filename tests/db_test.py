@@ -14,7 +14,26 @@ class DBTestCase(unittest.TestCase):
     
     def setUp(self):
         conn_string = get_db_url()
-        self.predicted_nightly_data = {'AMDCSS': [{'date': '0506',
+        self.predicted_nightly_data = {'Combined Synopsis/Solicitation': [{'date': '0506',
+                                                                           'year': '18',
+                                                                           'agency': 'defense logistics agency',
+                                                                           'office': 'dla acquisition locations',
+                                                                           'location': 'dla aviation - bsm',
+                                                                           'zip': '23297',
+                                                                           'classcod': '66',
+                                                                           'naics': '334511',
+                                                                           'offadd': '334511',
+                                                                           'subject': 'subject',
+                                                                           'solnbr': 'spe4a618t934n',
+                                                                           'respdate': '051418',
+                                                                           'archdate': '06132018',
+                                                                           'contact': 'bob.dylan@aol.com',
+                                                                           'desc': 'test123',
+                                                                           'url': 'test_url',
+                                                                           'setaside': 'n/a  ',
+                                                                           'attachments': [],
+                                                                           'compliant': 0},
+                                      {'date': '0506',
                                       'year': '18',
                                       'agency': 'department of justice',
                                       'office': 'federal bureau of investigation',
@@ -84,28 +103,9 @@ class DBTestCase(unittest.TestCase):
                                                        'validation': None,
                                                        'trained': False}],
                                       'compliant': 0}],
-               'MOD': [],
-               'COMBINE': [{'date': '0506',
-                            'year': '18',
-                            'agency': 'defense logistics agency',
-                            'office': 'dla acquisition locations',
-                            'location': 'dla aviation - bsm',
-                            'zip': '23297',
-                            'classcod': '66',
-                            'naics': '334511',
-                            'offadd': '334511',
-                            'subject': 'subject',
-                            'solnbr': 'spe4a618t934n',
-                            'respdate': '051418',
-                            'archdate': '06132018',
-                            'contact': 'bob.dylan@aol.com',
-                            'desc': 'test123',
-                            'url': 'test_url',
-                            'setaside': 'n/a  ',
-                            'attachments': [],
-                            'compliant': 0}],
-               'PRESOL': []}
-        self.predicted_nightly_data_day_two = {'AMDCSS': [{'date': '0506',
+               'Solicitation': [],
+               'Presolicitation': []}
+        self.predicted_nightly_data_day_two = {'Combined Synopsis/Solicitation': [{'date': '0506',
                                                            'year': '17',
                                                            'agency': 'defense logistics agency',
                                                            'office': 'dla acquisition locations',
@@ -150,7 +150,7 @@ class DBTestCase(unittest.TestCase):
     def test_insert_notice_types(self):
         with session_scope(self.dal) as session:
             insert_notice_types(session)
-            notice_types= ['MOD','PRESOL','COMBINE', 'AMDCSS', 'TRAIN']
+            notice_types= ['Presolicitation','Solicitation','Combined Synopsis/Solicitation', 'TRAIN']
             notice_type_ids = []
             for notice_type in notice_types:
                 notice_type_id = session.query(NoticeType.id).filter(NoticeType.notice_type==notice_type).first().id

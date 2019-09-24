@@ -98,8 +98,10 @@ jobs:
             else
                 :
             fi          
-            
-            cf login -a https://api.fr.cloud.gov -u $CF_SERVICE_ACCOUNT_$TARGET_BRANCH -p $CF_SERVICE_PW_$TARGET_BRANCH -o gsa-ogp-srt -s $TARGET_BRANCH
+            CF_SERVICE_ACCOUNT="CF_SERVICE_ACCOUNT_$TARGET_BRANCH"
+            CF_SERVICE_PW="CF_SERVICE_PW_$TARGET_BRANCH"
+
+            cf login -a https://api.fr.cloud.gov -u $CF_SERVICE_ACCOUNT -p $CF_SERVICE_PW -o gsa-ogp-srt -s $TARGET_BRANCH
             TAG=0.1.$CIRCLE_BUILD_NUM
             cf push srt-fbo-scraper-$TARGET_BRANCH --docker-image $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG -k 4G
 

@@ -88,7 +88,17 @@ jobs:
       
       - run:
           name: Download cf CLI and deploy
-          command: |            
+          command: |  
+            PR_NUMBER="${CIRCLE_PULL_REQUEST//[!0-9]/}"
+            TARGET_BRANCH=$(curl -sS https://api.github.com/repos/GSA/${CIRCLE_PROJECT_REPONAME}/pulls/${PR_NUMBER} | jq '.base.ref')
+            TARGET_BRANCH=$(echo $TARGET_BRANCH | tr -d '"')
+            if [ "$TARGET_BRANCH" = "master" ]
+            then
+                TARGET_BRANCH=prod
+            else
+                :
+            fi          
+            
             cf login -a https://api.fr.cloud.gov -u $CF_SERVICE_ACCOUNT_$TARGET_BRANCH -p $CF_SERVICE_PW_$TARGET_BRANCH -o gsa-ogp-srt -s $TARGET_BRANCH
             TAG=0.1.$CIRCLE_BUILD_NUM
             cf push srt-fbo-scraper-$TARGET_BRANCH --docker-image $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG -k 4G

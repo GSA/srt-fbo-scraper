@@ -95,13 +95,21 @@ jobs:
             if [ "$TARGET_BRANCH" = "master" ]
             then
                 TARGET_BRANCH=prod
+                CF_ACC=$CF_SERVICE_ACCOUNT_prod
+                CF_PW=$CF_SERVICE_PW_prod
+            elif [ "$TARGET_BRANCH" = "dev" ]
+            then
+                CF_ACC=$CF_SERVICE_ACCOUNT_dev
+                CF_PW=$CF_SERVICE_PW_dev
+            elif [ "$TARGET_BRANCH" = "staging" ]
+            then
+                CF_ACC=$CF_SERVICE_ACCOUNT_staging
+                CF_PW=$CF_SERVICE_PW_staging
             else
                 :
             fi          
-            CF_SERVICE_ACCOUNT="CF_SERVICE_ACCOUNT_$TARGET_BRANCH"
-            CF_SERVICE_PW="CF_SERVICE_PW_$TARGET_BRANCH"
-
-            cf login -a https://api.fr.cloud.gov -u $CF_SERVICE_ACCOUNT -p $CF_SERVICE_PW -o gsa-ogp-srt -s $TARGET_BRANCH
+            
+            cf login -a https://api.fr.cloud.gov -u $CF_ACC -p $CF_PW -o gsa-ogp-srt -s $TARGET_BRANCH
             TAG=0.1.$CIRCLE_BUILD_NUM
             cf push srt-fbo-scraper-$TARGET_BRANCH --docker-image $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG -k 4G
 

@@ -446,9 +446,57 @@ def pseudo_xml_to_json(file_lines):
                 merge_notices_dict[k].append(merged_dict)
         else:
             pass
-    merge_notices_dict
-
+    
     return merge_notices_dict
+
+def scrape_notice_type(correct_notice_url):
+
+    r = requests.get(correct_notice_url)
+    soup = BeautifulSoup(r.content, 'html.parser')
+    notice_type_div = soup.find('div', {'id':'dnf_class_values_procurement_notice__procurement_type__widget'})
+
+    if notice_type_div:
+        fbo_notice_type = notice_type_div.get_text().strip()
+        sam_notice_types = ['solicitation', 'presolicitation', 'combined synopsis/solicitation']
+        if fbo_notice_type.lower() in sam_notice_types:
+            return fbo_notice_type
+        else:
+            notice_type_ems = soup.find_all('em')
+            notice_type_ems_text = [i.get_text().strip() for i in notice_type_ems]
+            for n in notice_type_ems_text:
+                if n.lower() in sam_notice_types:
+                    return n
+    else:
+        # might be listing table
+        tds = soup.find_all('td', {'headers': 'lh_base_type'})
+        if not tds:
+            return
+        td_text = [t.get_text().strip() for t in tds]
+        for t in td_text:
+            t_lower = t.lower()
+            if 'presolicitation' in t_lower:
+                return 'Presolicitation'
+            elif 'solicitation' in t_lower and 'combined' not in t_lower:
+                return 'Solicitation'
+            elif 'combined synopsis/solicitation' in t_lower:
+                return 'Combined Synopsis/Solicitation'
+            else:
+                return
+    
+
+def map_notice_type_to_sam(correct_notice_url, notice_type, embedded_notice_type):
+    if notice_type == 'PRESOL' or embedded_notice_type == 'PRESOL':
+        return 'Presolicitation'
+    elif notice_type == 'AMDCSS' or notice_type == 'COMBINE':
+        return 'Combined Synopsis/Solicitation'
+    elif embedded_notice_type == 'COMBINE' or embedded_notice_type == 'AMDCSS':
+            return 'Combined Synopsis/Solicitation'
+    elif notice_type == 'MOD':
+        fbo_notice_type = scrape_notice_type(correct_notice_url)
+        return fbo_notice_type
+    else:
+        return
+
 
 
 def filter_json(merge_notices_dict, notice_types, naics):
@@ -466,6 +514,7 @@ def filter_json(merge_notices_dict, notice_types, naics):
         filtered_data (dict): a dictionary with keys for desired notice type and arrays of notice
                               dicts that match the NACIS as values.
     '''
+    sam_notices = {k:[] for k in ['Solicitation', 'Presolicitation', 'Combined Synopsis/Solicitation']}
     filtered_data = {k:[] for k in notice_types}
     for notice_type in merge_notices_dict:
         if notice_type not in notice_types:
@@ -487,6 +536,13 @@ def filter_json(merge_notices_dict, notice_types, naics):
                 except KeyError:
                     continue
                 correct_notice_url = handle_dla_url(notice_url, notice_date, notice_type)
+
+                ### Convert notice type to SAM notice type for forward compatibility
+                embedded_notice_type = notice.get('NTYPE')   
+                sam_notice_type = map_notice_type_to_sam(correct_notice_url, notice_type, embedded_notice_type)
+                if not sam_notice_type:
+                    continue
+                ####
                 notice['URL'] = correct_notice_url
                 notice['EMAILS'] = extract_emails(notice)
                 notice = {k.lower():v for k,v in notice.items()}
@@ -498,9 +554,10 @@ def filter_json(merge_notices_dict, notice_types, naics):
                         stripped_notice[k] = v
                     else:
                         stripped_notice[k] = v
-                filtered_data[notice_type].append(stripped_notice)
+                sam_notices[sam_notice_type].append(stripped_notice)
+                #filtered_data[notice_type].append(stripped_notice)
 
-    return filtered_data
+    return sam_notices
 
 
 def get_nightly_data(date = None,
@@ -536,3 +593,4 @@ def get_nightly_data(date = None,
 if __name__ == '__main__':
     #sample usage
     nightly_data = get_nightly_data()
+

@@ -113,6 +113,7 @@ def fetch_notice_type_id(notice_type, session):
 
     Parameters:
         notice_type (str): a notice type. One of ['MOD','COMBINE','PRESOL','AMDCSS','TRAIN']
+        or one of the new SAM types ['Presolicitation, Solicitation, Combined Synopsis/Solicitation]
 
     Returns:
         None or notice_type_id (int): if notice_type_id, this is the PK for the notice_type
@@ -131,7 +132,10 @@ def insert_notice_types(session):
     notice_types = ['PRESOL','SRCSGT','SNOTE','SSALE','COMBINE','AMDCSS',
                     'MOD','AWARD','JA','FAIROPP','ARCHIVE','UNARCHIVE',
                     'ITB','FSTD','EPSUPLOAD','DELETE','TRAIN']
-    for notice_type in notice_types:
+
+    sam_notice_types = ['Combined Synopsis/Solicitation', 'Presolicitation', 'Solicitation']
+    nts = sam_notice_types + notice_types
+    for notice_type in nts:
         notice_type_id = fetch_notice_type_id(notice_type, session)
         if not notice_type_id:
             nt = db.NoticeType(notice_type = notice_type)

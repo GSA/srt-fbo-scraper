@@ -454,28 +454,46 @@ def scrape_notice_type(correct_notice_url):
     r = requests.get(correct_notice_url)
     soup = BeautifulSoup(r.content, 'html.parser')
     notice_type_div = soup.find('div', {'id':'dnf_class_values_procurement_notice__procurement_type__widget'})
-    if not notice_type_div:
-        return
-    fbo_notice_type = notice_type_div.get_text().strip()
-    sam_notice_types = ['solicitation', 'presolicitation', 'combined synopsis/solicitation']
-    if fbo_notice_type.lower() not in sam_notice_types:
-        notice_type_ems = soup.find_all('em')
-        notice_type_ems_text = [i.get_text().strip() for i in notice_type_ems]
-        for nt in notice_type_ems_text:
-            if nt.lower() in sam_notice_types:
-                return nt
-        return False
+
+    if notice_type_div:
+        fbo_notice_type = notice_type_div.get_text().strip()
+        sam_notice_types = ['solicitation', 'presolicitation', 'combined synopsis/solicitation']
+        if fbo_notice_type.lower() in sam_notice_types:
+            return fbo_notice_type
+        else:
+            notice_type_ems = soup.find_all('em')
+            notice_type_ems_text = [i.get_text().strip() for i in notice_type_ems]
+            for n in notice_type_ems_text:
+                if n.lower() in sam_notice_types:
+                    return n
     else:
-        return fbo_notice_type
+        # might be listing table
+        tds = soup.find_all('td', {'headers': 'lh_base_type'})
+        if not tds:
+            return
+        td_text = [t.get_text().strip() for t in tds]
+        for t in td_text:
+            t_lower = t.lower()
+            if 'presolicitation' in t_lower:
+                return 'Presolicitation'
+            elif 'solicitation' in t_lower and 'combined' not in t_lower:
+                return 'Solicitation'
+            elif 'combined synopsis/solicitation' in t_lower:
+                return 'Combined Synopsis/Solicitation'
+            else:
+                return
     
 
-def map_notice_type_to_sam(correct_notice_url, notice_type):
-    if notice_type == 'PRESOL':
+def map_notice_type_to_sam(correct_notice_url, notice_type, embedded_notice_type):
+    if notice_type == 'PRESOL' or embedded_notice_type == 'PRESOL':
         return 'Presolicitation'
     elif notice_type == 'AMDCSS' or notice_type == 'COMBINE':
         return 'Combined Synopsis/Solicitation'
+    elif embedded_notice_type == 'COMBINE' or embedded_notice_type == 'AMDCSS':
+            return 'Combined Synopsis/Solicitation'
     elif notice_type == 'MOD':
-        return scrape_notice_type(correct_notice_url)
+        fbo_notice_type = scrape_notice_type(correct_notice_url)
+        return fbo_notice_type
     else:
         return
 
@@ -520,7 +538,8 @@ def filter_json(merge_notices_dict, notice_types, naics):
                 correct_notice_url = handle_dla_url(notice_url, notice_date, notice_type)
 
                 ### Convert notice type to SAM notice type for forward compatibility
-                sam_notice_type = map_notice_type_to_sam(correct_notice_url, notice_type)
+                embedded_notice_type = notice.get('NTYPE')   
+                sam_notice_type = map_notice_type_to_sam(correct_notice_url, notice_type, embedded_notice_type)
                 if not sam_notice_type:
                     continue
                 ####

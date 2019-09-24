@@ -88,6 +88,41 @@ The SRT application can only be accessed through the cloudfoundry CLI. This requ
 
 Instructions for installing the cloudfoundry CLI can be found [here](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html). Documentation can be found [here](https://docs.cloudfoundry.org/cf-cli/cf-help.html). We've also enabled SSH access via the CLI tool, and you can read more about that [here](https://docs.cloudfoundry.org/devguide/deploy-apps/ssh-apps.html).
 
+### Database Updates & Migrations
+
+We use [SQLAlchemy](https://docs.sqlalchemy.org/en/13/) to model our PostgreSQL database's schema and [alembic](https://alembic.sqlalchemy.org/en/latest/) to handle migrations. Although the client-side of the SRT also uses a tool similar to SQLAlchemy to model the database, migrations and updates should occur through this application.
+
+#### Updates
+
+Although you *could* use alembic to update stored data values, that can sometimes be impractical. In those cases, you can develop a script locally and use `cf ssh` piped with `cat` to transfer a local file into the app's space. Assuming you've already logged in via the cf CLI and have targeted a space, you could accomplish this with:  
+
+```bash
+cat local_file_path.py | cf ssh MY-AWESOME-APP -c “cat > remote_file_path.py”
+```
+
+With the file piped into your app, you can then use `cf ssh MY-AWESOME-APP` to get in. From there, you'll need to update your `PATH` to use a version of Python that has access to the project's dependencies. You can do that with:
+
+```bash
+PATH=/usr/local/bin:$PATH
+```
+
+From there, you can execute your update script:
+
+```bash
+python3 remote_file_path.py
+```
+
+And cleanup after:
+
+```bash
+rm remote_file_path.py
+```
+
+#### Migrations
+
+For schema updates, you need to use `alembic` to perform a migration. This project already has a configured alembic environment, so you can follow the directions [here](https://alembic.sqlalchemy.org/en/latest/tutorial.html#create-a-migration-script) to create a migration script.
+
+Once you've tested your migration, you can then prepend the [crontab](https://github.com/GSA/srt-fbo-scraper/blob/master/crontab) command with `alembic upgrade head` so that the migration occurs with the next cron job before the script is itself executed.
 
 ## Weekly Monitoring Checklist
 

@@ -24,12 +24,10 @@ def upgrade():
     if alembic_helpers.table_has_column('notice', 'na_flag'):
         op.drop_column('notice', 'na_flag')
     op.add_column('notice', sa.Column('na_flag', 
-                                      sa.BOOLEAN, 
-                                      nullable = False, 
+                                      sa.Boolean, 
                                       default = False))
 
 
 def downgrade():
-    if alembic_helpers.table_has_column('notice', 'na_flag'):
-        op.drop_column('notice', 'na_flag')
+    op.drop_column('notice', 'na_flag')
     

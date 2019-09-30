@@ -41,8 +41,8 @@ def get_org_request_details():
 def get_doc_request_details(opp_id):
     # see https://open.gsa.gov/api/opportunities-api/#
     # download-all-attachments-as-zip-for-an-opportunity
-    BETA_SAM_API_KEY = os.getenv('BETA_SAM_API_KEY')
-    ALPHA_SAM_API_KEY = os.getenv('ALPHA_SAM_API_KEY')
+    BETA_SAM_DOC_KEY = os.getenv('BETA_SAM_DOC_KEY')
+    ALPHA_SAM_DOC_KEY = os.getenv('ALPHA_SAM_DOC_KEY')
     #SAM_AUTHORIZER = os.getenv('SAM_AUTHORIZER')
     #params = {}
     #if ALPHA_SAM_API_KEY and SAM_AUTHORIZER:
@@ -55,10 +55,10 @@ def get_doc_request_details(opp_id):
         #logger.critical("Unable to determine SAM API endpoint. Check env vars: {os.environ}")
         #sys.exit(1)
     #headers = {'Authorization': SAM_AUTHORIZER}
-    if ALPHA_SAM_API_KEY:
-        uri = f'https://alpha.sam.gov/api/prodlike/opps/v3/opportunities/{opp_id}/resources/download/zip?api_key=6CxpsnZf1Jfh3iBwKr3kyAW7Oe71QzZp1popCQsT'
-    elif BETA_SAM_API_KEY:
-        uri = f'https://api.sam.gov/prod/opps/v3/opportunities/{opp_id}/resources/download/zip?api_key=O4kzViWGVYNumPqhAzUhYGiZZZwW3RKUEYJOI6ii'
+    if ALPHA_SAM_DOC_KEY:
+        uri = f'https://alpha.sam.gov/api/prodlike/opps/v3/opportunities/{opp_id}/resources/download/zip?api_key={ALPHA_SAM_DOC_KEY}'
+    elif BETA_SAM_DOC_KEY:
+        uri = f'https://api.sam.gov/prod/opps/v3/opportunities/{opp_id}/resources/download/zip?api_key={BETA_SAM_DOC_KEY}'
     else:
         logger.critical("Unable to determine SAM API endpoint. Check env vars: {os.environ}")
         sys.exit(1)

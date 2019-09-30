@@ -170,7 +170,8 @@ class DBTestCase(unittest.TestCase):
                      'feedback': None,
                      'history': None,
                      'action': None,
-                     'updatedAt': None},
+                     'updatedAt': None,
+                     'na_flag': False},
                      {'id': 1,
                      'solicitation_number': 'spe4a618t934n',
                      'agency': 'defense logistics agency',
@@ -193,7 +194,8 @@ class DBTestCase(unittest.TestCase):
                      'feedback':None,
                      'history':None,
                      'action': None,
-                     'updatedAt': None}]
+                     'updatedAt': None,
+                     'na_flag': False}]
         self.assertCountEqual(result, expected)
 
     def test_insert_model(self):

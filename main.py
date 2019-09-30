@@ -1,4 +1,5 @@
 import logging
+import sys
 
 from utils import get_opps
 from utils.predict import Predict 
@@ -15,6 +16,9 @@ def main():
 
     logger.info("Smartie is fetching opportunties from SAM...")
     data = get_opps.main()
+    if not data:
+        logger.info("Smartie didn't find any opportunities!")
+        sys.exit(0)
     logger.info("Smartie is done fetching opportunties from SAM!")
 
     logger.info("Smartie is making predictions for each notice attachment...")

@@ -17,6 +17,9 @@ logger = logging.getLogger(__name__)
 def get_yesterdays_opps(filter_naics = True):
     uri, params, headers = get_opp_request_details()
     opps, total_pages = get_opps(uri, params, headers)
+    if not opps and not total_pages:
+        # no opps or maybe a request error
+        return
     # use yesterday's since today's might not be complete at time of running the script
     opps, is_more_opps = find_yesterdays_opps(opps)
         
@@ -108,6 +111,8 @@ def main():
     if not os.path.exists(out_path):
         os.makedirs(out_path)
     opps = get_yesterdays_opps()
+    if not opps:
+        return []
     transformed_opps = transform_opps(opps, out_path)
 
     return transformed_opps

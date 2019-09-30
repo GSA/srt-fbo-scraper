@@ -1,3 +1,4 @@
+import json
 import logging
 import os
 import sys
@@ -98,8 +99,10 @@ def get_opps(uri, params, headers):
         opps = data['_embedded']['opportunity']
         total_pages = data['page']['totalPages']
     except KeyError as e:
-        # no data from our request
-        return
+        data_str = json.dumps(data)
+        logger.warning(f"Confirm API stability:\n{data_str}")
+        # might be no data from our request, or an API change
+        return None, None
     
     return opps, total_pages
 

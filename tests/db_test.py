@@ -59,7 +59,6 @@ class DBTestCase(unittest.TestCase):
                 notice.pop('notice_type_id')
                 result.append(notice)
         expected = [{'id': 1,
-                     'notice_type_id': 2,
                      'solicitation_number': 'test',
                      'agency': 'agency',
                      'notice_data': {'url': 'url',

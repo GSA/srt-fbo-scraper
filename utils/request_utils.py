@@ -96,12 +96,13 @@ def get_opps(uri, params, headers):
         sys.exit(1)
     data = r.json()
     try:
-        opps = data['_embedded']['opportunity']
+        opps = data['_embedded']['results']
         total_pages = data['page']['totalPages']
     except KeyError as e:
-        data_str = json.dumps(data)
-        logger.warning(f"Confirm API stability:\n{data_str}")
-        # might be no data from our request, or an API change
+        error_message = data.get('errormessage','')
+        if not "request's IP does not match any pattern" in error_message:
+            data_str = json.dumps(data)
+            logger.warning(f"Confirm API stability:\n{data_str}")
         return None, None
     
     return opps, total_pages

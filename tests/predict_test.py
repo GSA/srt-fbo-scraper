@@ -3,13 +3,12 @@ import sys
 import os
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from utils.predict import Predict
-from fixtures import updated_nightly_data
+from tests.mock_opps import mock_transformed_opp_one
 
 class PredictTestCase(unittest.TestCase):
 
     def setUp(self):
-        json_data = updated_nightly_data.updated_nightly_data
-        self.predict = Predict(json_data = json_data)
+        self.predict = Predict(data = [mock_transformed_opp_one])
 
     def tearDown(self):
         self.predict = None
@@ -32,31 +31,19 @@ class PredictTestCase(unittest.TestCase):
         expected = '123'
         self.assertEqual(result, expected)
 
-    def test_insert_predictions_top_level_keys(self):
-        json_data = self.predict.insert_predictions()
-        result_keys = set(json_data.keys())
-        expected_keys = {'COMBINE', 'PRESOL', 'AMDCSS', 'MOD'}
-        self.assertEqual(result_keys, expected_keys)
-
-    def test_insert_predictions_bottom_level_keys(self):
-        json_data = self.predict.insert_predictions()
-        result_keys = set(json_data['PRESOL'][0]['attachments'][0].keys())
-        expected_keys = {'trained', 'decision_boundary', 'prediction', 'text', 'validation', 'url'}
-        self.assertEqual(result_keys, expected_keys)
-
     def test_insert_predictions_value_types(self):
-        json_data = self.predict.insert_predictions()
-        decision_boundary = json_data['PRESOL'][0]['attachments'][0]['decision_boundary']
+        data = self.predict.insert_predictions()
+        decision_boundary = data[0]['attachments'][0]['decision_boundary']
         with self.subTest():
             self.assertIsInstance(decision_boundary, float)
-        prediction = json_data['PRESOL'][0]['attachments'][0]['prediction']
+        prediction = data[0]['attachments'][0]['prediction']
         with self.subTest():
             self.assertIsInstance(prediction, int)
 
     def test_insert_predictions_compliant_insert(self):
-        json_data = self.predict.insert_predictions()
-        notice = json_data['PRESOL'][0]
-        compliant_value = notice['compliant']
+        data = self.predict.insert_predictions()
+        opp = data[0]
+        compliant_value = opp['compliant']
         self.assertIsInstance(compliant_value, int)
 
 if __name__ == '__main__':

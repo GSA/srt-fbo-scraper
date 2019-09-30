@@ -12,15 +12,14 @@ logger = logging.getLogger(__name__)
 
 class Predict():
     '''
-    Make 508 accessibility predictions based on fbo notice attachment texts.
+    Make 508 accessibility predictions solicitation document text.
 
     Parameters:
-        json_data (dict): The JSON of a nightly fbo file, where each notice
-                          has its attachments and their text.
+        data (list): a list of dicts, with each dict representing an opportunity.
     '''
 
-    def __init__(self, json_data, best_model_path='utils/binaries/estimator.pkl'):
-        self.json_data = json_data
+    def __init__(self, data, best_model_path='utils/binaries/estimator.pkl'):
+        self.data = data
         cwd = os.getcwd()
         if 'fbo-scraper' in cwd:
             i = cwd.find('fbo-scraper')
@@ -89,26 +88,21 @@ class Predict():
 
         with open(self.best_model_path, 'rb') as f:
             pickled_model = pickle.load(f)
-        json_data = self.json_data
-        for notice_type in json_data:
-            notices = json_data[notice_type]
-            if not notices:
-                continue
-            else:
-                for notice in notices:
-                    notice['compliant'] = 0 #noncompliant until proven otherwise
-                    if 'attachments' in notice:
-                        attachments = notice['attachments']
-                        compliant_counter = 0
-                        for attachment in attachments:
-                            text = attachment['text']
-                            normalized_text = [Predict.transform_text(text)]
-                            pred = int(pickled_model.predict(normalized_text)[0])
-                            compliant_counter += 1 if pred == 1 else 0
-                            dec_func = pickled_model.decision_function(normalized_text)[0]
-                            decision_boundary = float(abs(dec_func))
-                            attachment['prediction'] = pred
-                            attachment['decision_boundary'] = decision_boundary
-                        notice['compliant'] = 0 if compliant_counter == 0 else 1
+        data = self.data
+        for opp in data:
+            opp['compliant'] = 0 #noncompliant until proven otherwise
+            if 'attachments' in opp:
+                attachments = opp['attachments']
+                compliant_counter = 0
+                for attachment in attachments:
+                    text = attachment['text']
+                    normalized_text = [Predict.transform_text(text)]
+                    pred = int(pickled_model.predict(normalized_text)[0])
+                    compliant_counter += 1 if pred == 1 else 0
+                    dec_func = pickled_model.decision_function(normalized_text)[0]
+                    decision_boundary = float(abs(dec_func))
+                    attachment['prediction'] = pred
+                    attachment['decision_boundary'] = decision_boundary
+                opp['compliant'] = 0 if compliant_counter == 0 else 1
 
-        return json_data
+        return data

@@ -55,6 +55,8 @@ class DBTestCase(unittest.TestCase):
                 #pop the date and createdAt attributes since they're constructed programmatically
                 notice.pop('date')
                 notice.pop('createdAt')
+                #pop this as it'll vary
+                notice.pop('notice_type_id')
                 result.append(notice)
         expected = [{'id': 1,
                      'notice_type_id': 2,

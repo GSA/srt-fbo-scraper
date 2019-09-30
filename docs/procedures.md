@@ -24,7 +24,6 @@ These accounts are created for developers that need access to contribute code an
 4. The system owner will confirm the GSA identity of the applicant, and signal approval in the ticket. 
 5. The system owner will then add the GitHub handle for the new member to the GSA GitHub team and close the ticket.
 
-
 ### Cloud.gov Access 
 
 The SRT System Administrator posseses the following three roles at the organization level:
@@ -57,11 +56,73 @@ Before opening an issue to request access, follow these steps:
  
 6. The issue history will document the role that was assigned.
 
+#### Cloud.gov Service Account
+
+Within the application's cloud.gov organization, there's a [service account](https://cloud.gov/docs/services/cloud-gov-service-account/) with the Space Developer role in each space. CircleCI uses these service accounts to deploy the application after PR merges. However, **service account passwords expire after 90 days**, so it's necessary to periodically delete the existing service key, recreate it, and then update the CircleCI environment variables that contain the username/password.
+
+After logging into cloud.gov with your own account and targeting the appropriate space, you can  delete and recreate service keys for a service account with the following:
+
+```bash
+cf delete-service-key srt-fbo-scraper-service-account srt-fbo-scraper-service-account-key
+cf create-service-key srt-fbo-scraper-service-account srt-fbo-scraper-service-account-key
+cf service-key srt-fbo-scraper-service-account srt-fbo-scraper-service-account-key
+```
+
+The last command will return the service account username/password pair. Once you have those, navigate to CircleCI to update the environment variables.
+
+### SRT Web Application Access
+
+Individuals wanting to use the SRT Web Application will be approved by the SRT Product Owner (PO). During this approval, the PO will make a determination on the proper role to assign the new user. New users will be assigned roles that have the minimum permissions necessary to carry out their responsibilities. 
+
+The PO is able to add users to SRT by assigning them to roles on MAX.gov. The following links will take the PO to the correct MAX page for making the role assignments **on the test server**:
+
+* [SRT Administrators](https://portal.test.max.gov/home/sa/group/viewGroupUsers?groupId=AGY-GSA-SRT-ADMINISTRATORS.ROLEMANAGEMENT)
+* [508 Coordinators](https://portal.test.max.gov/home/sa/group/viewGroupUsers?groupId=AGY-GSA-SRT-508-COORDINATOR)
+* [Contracting Officers](https://portal.test.max.gov/home/sa/group/viewGroupUsers?groupId=AGY-GSA-SRT-CONTRACTINGOFFICERS)
+* [SRT Program Managers](https://portal.test.max.gov/home/sa/group/viewGroupUsers?groupId=AGY-GSA-SRT-PROGRAM-MANAGERS.ROLEMANAGEMENT)
+* [SRT Users](https://portal.test.max.gov/home/sa/group/viewGroupUsers?groupId=AGY-GSA-SRT-USERS)
+
 ### Remote Access
+
 The SRT application can only be accessed through the cloudfoundry CLI. This requires a cloud.gov account as well as appropriate user roles, which were outlined above.
 
 Instructions for installing the cloudfoundry CLI can be found [here](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html). Documentation can be found [here](https://docs.cloudfoundry.org/cf-cli/cf-help.html). We've also enabled SSH access via the CLI tool, and you can read more about that [here](https://docs.cloudfoundry.org/devguide/deploy-apps/ssh-apps.html).
 
+### Database Updates & Migrations
+
+We use [SQLAlchemy](https://docs.sqlalchemy.org/en/13/) to model our PostgreSQL database's schema and [alembic](https://alembic.sqlalchemy.org/en/latest/) to handle migrations. Although the client-side of the SRT also uses a tool similar to SQLAlchemy to model the database, migrations and updates should occur through this application.
+
+#### Updates
+
+Although you *could* use alembic to update stored data values, that can sometimes be impractical. In those cases, you can develop a script locally and use `cf ssh` piped with `cat` to transfer a local file into the app's space. Assuming you've already logged in via the cf CLI and have targeted a space, you could accomplish this with:  
+
+```bash
+cat local_file_path.py | cf ssh MY-AWESOME-APP -c “cat > remote_file_path.py”
+```
+
+With the file piped into your app, you can then use `cf ssh MY-AWESOME-APP` to get in. From there, you'll need to update your `PATH` to use a version of Python that has access to the project's dependencies. You can do that with:
+
+```bash
+PATH=/usr/local/bin:$PATH
+```
+
+From there, you can execute your update script:
+
+```bash
+python3 remote_file_path.py
+```
+
+And cleanup after:
+
+```bash
+rm remote_file_path.py
+```
+
+#### Migrations
+
+For schema updates, you need to use `alembic` to perform a migration. This project already has a configured alembic environment, so you can follow the directions [here](https://alembic.sqlalchemy.org/en/latest/tutorial.html#create-a-migration-script) to create a migration script.
+
+Once you've tested your migration, you can then prepend the [crontab](https://github.com/GSA/srt-fbo-scraper/blob/master/crontab) command with `alembic upgrade head` so that the migration occurs with the next cron job before the script is itself executed.
 
 ## Weekly Monitoring Checklist
 
@@ -81,9 +142,11 @@ Checklist:
 We rely on cloud.gov’s [audit tool](https://logs.fr.cloud.gov).  In the event of an audit processing failure, their [contingency plan](https://cloud.gov/docs/ops/contingency-plan/) stipulates that they’ll notify the SRT system owners. If we receive a notification from cloud.gov about an temporarily irremediable issue with the audit tool, we'll  shutdown SRT until the issue has been resolved. 
 
 ## Unsupported System Components Policy
+
 At present, there are no unsupported components in the SRT system. If currently-used components become deprecated and/or unsupported, we will bump their versions to the most recent stable release. If we're unable to make those bumps, then we will provide justification and document approval for the continued use of the unsupported system components within the relevant GitHub issue.
 
 ## GSA Solutions Life Cycle (SLC)
+
 The primary objectives of an SLC are to deliver quality systems that: meet or exceed customer expectations when promised and within cost estimates; work effectively and efficiently within the current and planned information technology (IT) infrastructure; and are inexpensive to maintain and cost-effective to enhance.
 
 The SRT System Administrator assumes all information security roles and responsibilities throughout the SLC.
@@ -93,28 +156,37 @@ The SRT Team integrates the organizational information security risk management 
 The SLC is comprised of nine phases. Here we documented how the Solicitation Review Tool (SRT) is managed via SLC.
 
 ### Phase One – Solution Concept Development
+
 The initiation of a solution (system or application) project begins when a business need or opportunity is identified. In this phase, we identified a need for increase the number of Federal ICT solicitations being checked for compliance with accessibility requirements as defined in Section 508 of the Rehabilitation Act.
 
 ### Phase Two - Planning
+
 This phase is concerned with how the business will operate once the approved solution (i.e. SRT) is implemented, and to assess how the solution will impact employees and customers, including impacts on their privacy. Our team has engaged with section-508 coordinators accross the 24 CFO-Act agencies in order to collect user stories, conduct user acceptance testing, and to validate the accuracy of the compliance classifications rendered by the machine learning algorithms.
 
 ### Phase Three – Requirements Analysis
+
 In this phase, the SRT team collected functional user requirements and formally defined them in terms of data, solution performance, security, and maintainability in light of resource contraints.
 
 ### Phase Four – Design
+
 In this phase, our team designed the physical characteristics of the SRT system given the requirements delineated in the previous phase.
 
 ### Phase Five – Development
+
 In this phase, the SRT Team produced translated the detailed specifications enumerated in the design phase into executable software created through incremental development techniques in intervals that were not to exceed six months. All software components were unit tested, integrated, and re-tested in a systematic manner using CircleCI in conjuction with GitFlow.
 
 ### Phase Six – Integration and Testing
+
 In this phase, the various components of the solution were integrated and systematically tested in a development environment within cloud.gov. Prospective users also began to test the solution to ensure that the functional requirements are satisfied. Prior to operating in a production environment, the solution will undergo certification and accreditation activities that include system testing, regression testing, test plan, test scripts, and user acceptance testing.
 
 ### Phase Seven – Implementation
+
 In this phase, SRT will be pushed to a production environment in cloud.gov. This phase is initiated only after the SRT has been tested and accepted by the test users and received an Authority to Operate (ATO) from GSAIT.
 
 ### Phase Eight – Operations and Maintenance
+
 We intend SRT operations to be ongoing. As such, SRT will be monitored for continual performance in accordance with user requirements. Needed solution modifications will be requested through GitHub issues made if deemed appropriate by the SRT Team. The operational solution is also periodically assessed through in-process reviews and post implementation reviews to determine how the solution can be made more efficient and effective. The continuation or ongoing investment of the solution will be reviewed during the annual IT budget formulation (zero-based budget) process. During this time, governance groups (senior agency leaders) have the option to continue or halt funding, based on performance. Investments or projects can also be reviewed periodically (outside of budget formulation) as risks arise or other trigger factors require leadership escalation. Operations will continue as long as the solution can be effectively adapted to respond to an organization’s needs. Lastly, when necessary modifications or changes are identified, the solution may re-enter the planning phase.
 
 ### Phase Nine – Disposition
+
 Disposition activities ensure the orderly termination of the solution and preserve the vital information about the solution so that some or all of the information may be reactivated in the future, if necessary. Particular emphasis is given to proper preservation of the data processed by the solution, so that the data is effectively migrated to another solution or archived, in accordance with applicable records management regulations and policies, for potential future access. We use GitHub to archive the codebase and will backup the database (if deemed necessary) as a separate AWS RDS instance.

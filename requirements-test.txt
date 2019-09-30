@@ -2,7 +2,7 @@ alembic==1.0.8
 argcomplete==1.8.2
 backports-datetime-fromisoformat==1.0.0
 beautifulsoup4==4.5.3
-certifi==2018.11.29
+certifi>=2018.11.29
 chardet==2.3.0
 dill==0.2.9
 docx2txt==0.6
@@ -12,7 +12,7 @@ idna==2.8
 imbalanced-learn==0.3.3
 lxml==4.3.0
 https://github.com/mattgwwalker/msg-extractor/zipball/master
-nltk==3.4
+nltk>=3.4.5
 numpy==1.16.2
 #pdfminer.six <-- go back to this after the shebang fix is released (see https://github.com/goulu/pdfminer/issues/27)
 https://github.com/goulu/pdfminer/zipball/e6ad15af79a26c31f4e384d8427b375c93b03533#egg=pdfminer.six

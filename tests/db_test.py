@@ -72,7 +72,8 @@ class DBTestCase(unittest.TestCase):
                      'feedback': None,
                      'history': None,
                      'action': None,
-                     'updatedAt': None}]
+                     'updatedAt': None,
+                     'na_flag': False}]
         self.assertCountEqual(result, expected)
 
     def test_insert_model(self):

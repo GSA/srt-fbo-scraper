@@ -41,6 +41,7 @@ class Notice(Base):
     action = Column(JSONB)
     createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = True)
+    na_flag = Column(Boolean, default = False)
     attachments = relationship("Attachment", back_populates = "notice", cascade = "all, delete-orphan")
 
 class NoticeType(Base):
@@ -63,7 +64,6 @@ class Attachment(Base):
     trained = Column(Boolean, nullable = True)
     createdAt = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = True)
-    na_flag = Column(Boolean, default = False)
     notice = relationship("Notice", back_populates = "attachments")
 
 class Model(Base):

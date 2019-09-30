@@ -18,7 +18,7 @@ def main():
     data = get_opps.main()
     if not data:
         logger.info("Smartie didn't find any opportunities!")
-        sys.exit(0)
+        return
     logger.info("Smartie is done fetching opportunties from SAM!")
 
     logger.info("Smartie is making predictions for each notice attachment...")

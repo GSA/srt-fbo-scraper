@@ -85,7 +85,7 @@ class RequestUtilsTestCase(unittest.TestCase):
     @requests_mock.Mocker()
     def test_get_opps(self, mock_request):
         uri = 'https://www.example.com'
-        response = {'_embedded': {'opportunity': 'test'},
+        response = {'_embedded': {'results': 'test'},
                     'page': {'totalPages': '1'}}
         mock_request.register_uri('GET',
                                   url = uri,

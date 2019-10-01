@@ -98,7 +98,7 @@ mock_opp_two = {'data': {'link': {'href': 'testy.com',
 
 mock_opps = [mock_opp_one, mock_opp_two]
 
-mock_data = {'_embedded': {'opportunity': mock_opps}}
+mock_data = {'_embedded': {'results': mock_opps}}
 
 mock_schematized_opp_one = {'notice type': 'test', 'solnbr': 'test', 'agency': 'agency', 'compliant': 0, 'office': 'office', 'opp_id': 'test', 'attachments': [], 'classcod': 'test', 'naics': 'test', 'subject': 'test', 'url': 'https://beta.sam.gov/opp/123/view', 'setaside': 'test', 'emails': ['test@test.gov']}
 

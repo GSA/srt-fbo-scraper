@@ -100,9 +100,11 @@ def get_opps(uri, params, headers):
         total_pages = data['page']['totalPages']
     except KeyError as e:
         error_message = data.get('errormessage','')
+        data_str = json.dumps(data)
         if not "request's IP does not match any pattern" in error_message:
-            data_str = json.dumps(data)
-            logger.warning(f"Confirm API stability:\n{data_str}")
+            logger.error(f"Confirm API stability:\n{data_str}")
+        else:
+            logger.error(f"{e}: making request to {uri}:\n{data_str}")
         return None, None
     
     return opps, total_pages

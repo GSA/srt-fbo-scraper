@@ -11,18 +11,29 @@ This application is designed to be run as a cron daemon within a Docker image on
 
 Here's what happens every time the job is triggered:
  1. Fetches yesterday's updated/posted solicitations from beta.sam.gov using the [Opportunity Management API](https://open.gsa.gov/api/opportunities-api/#get-list-of-opportunities), filtering out solictations that don't possess an IT-related [NAICS](https://www.census.gov/eos/www/naics/) code.
- 2. Uses the [Federal Hierachy API](https://open.gsa.gov/api/fh-fouo-api/) to lookup canonical agency and office names. 
+ 2. Uses the [Federal Hierachy API](https://open.gsa.gov/api/fh-public-api/) to lookup canonical agency and office names. 
  3. For each solicitation, downloads a zip archive containing all the solicitation's relevant documents using the [Opportunity Management API](https://open.gsa.gov/api/opportunities-api/#download-all-attachments-as-zip-for-an-opportunity)
  4. Extracts the text from each of those documents using [textract](https://github.com/deanmalmgren/textract).
  5. Restructures the data and inserts it into a PostgreSQL database.
  6. In a future release, the script will poll the database for the number of user-validated predictions on document compliance. If there's a significant increase, those newly validated documents will be sent to the [machine learning component](https://github.com/GSA/srt-ml) of the application to train a new and improved model.
-    
 
 ## Getting Started
 
-This application is designed to work as a dockerized daemon in cloud.gov. As a cloud.gov app, it's bound with a postgres database that's provided as a brokered service. See the **Deployment** section below if you wish to get started that way.
+This application is designed to work as a dockerized daemon in cloud.gov. As a cloud.gov app, it's bound with a postgres database that's provided as a brokered service. See the **Deployment** section below if you're interested in pushing the application to cloud.gov.
 
 If you wish to run the application locally, you'll need to perform some setup as we haven't yet configured a docker image that gets this up an running locally.
+
+### Create a sam.gov account
+
+No matter how you plan on running this application, you'll need to create both a personal (i.e. Public) and System Account in either beta.sam.gov or alpha.sam.gov (the latter is their dev version, so you should opt for an account with the former). Instructions for getting those accounts set up can be found [here](https://open.gsa.gov/api/opportunities-api/#getting-started). 
+
+> Note: the system account will require you to specify the ip address(es) from which you plan to access the APIs. If you only plan on accessing the APIs from within cloud.gov, you can list the [external IP address ranges that cloud.gov uses](https://cloud.gov/docs/apps/static-egress/#cloud-gov-egress-ranges). For local access, you'll need to add your own external ip address.
+
+#### Set Environment Variables
+
+Assuming you're using beta.sam.gov's APIs, after you've set up your personal account, generate a public API key (this is for the [Federal Hierachy API](https://open.gsa.gov/api/fh-public-api/)) and set it as an environment variable (locally and/or in cloud.gov) as `BETA_SAM_API_KEY_PUB`.
+
+Again, assuming you're using beta.sam.gov's APIs, after you've set up your system account, generate a system account API key and set it as `BETA_SAM_API_KEY`. Set another environment variab;e called `SAM_AUTHORIZER` and set its value to the email address you associated with the system account.
 
 ### Local Setup
 
@@ -63,23 +74,38 @@ If you notice any errors, please open an issue.
 
 ### Cloud.gov Deployment
 
-To push to cloud.gov or interact with the app there, you'll need a [cloud.gov account](https://cloud.gov/docs/getting-started/accounts/).
+#### Build the Docker Image
 
-Assuming you've got a cloud.gov account and access to either the application's org or an org of your own, you can login with:
+Before pushing to cloud.gov, you need to build the Docker image and push it to DockerHub.
+
+To build and push the image:
+
+```bash
+DOCKER_USER=<your user name>
+DOCKER_PASS=<your password>
+TARGET_SPACE=<dev, staging or prod> #choose one
+docker build -t $DOCKER_USER/srt-opportunity-gatherer-$TARGET_SPACE . 
+echo "$DOCKER_PASS" | docker login --username $DOCKER_USER --password-stdin    
+docker push $DOCKER_USER/srt-opportunity-gatherer-$TARGET_SPACE
+```
+
+#### Push to cloud.gov
+
+Log into cloud.gov with:
 
 ```bash
 cf login -a api.fr.cloud.gov --sso
 ```
 
-Once you're logged in, target the appropriate org and space by following the prompts.
+Target the appropriate org and space (i.e.`TARGET_SPACE` from above) by following the prompts.
 
-Once you're in the correct space, you can push the app. We do so below, assuming that you haven't already created a postgres service:
+If this is your first time pushing the application, you need to first create and bind a postgres service instance to the application:
 
 ```bash
 cf create-service <service> <service-tag>
 #wait a few minutes for the service to be provisioned
 cf create-service-key <service-tag> <service-key-name>    #if this returns an OK, then your service has been provisioned  
-cf push srt-opportunity-gatherer --docker-image <your-dockerhub-username>/srt-opportunity-gatherer
+cf push srt-opportunity-gatherer --docker-image $DOCKER_USER/srt-opportunity-gatherer-$TARGET_SPACE
 cf bind-service srt-opportunity-gatherer <service-tag>  
 cf restage srt-opportunity-gatherer
 ```  
@@ -87,6 +113,13 @@ cf restage srt-opportunity-gatherer
 Above, `<service>` is the name of a postgres service (e.g. `aws-rds shared-psql`) while `<service-tag>` is whatever you want to call this service.
 
 >Since services can sometimes take up to 60 minutes to be provisioned, we use `cf create-service-key` to ensure the service has been provisioned. See [this](https://cloud.gov/docs/services/relational-database/) for more details.
+
+
+Every subsequent time you can merely use:
+
+```bash
+cf push srt-opportunity-gatherer --docker-image $DOCKER_USER/srt-opportunity-gatherer-$TARGET_SPACE
+```
 
 ### Logs
 

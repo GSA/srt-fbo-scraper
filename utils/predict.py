@@ -7,6 +7,7 @@ import string
 import sys
 from nltk.stem.porter import PorterStemmer
 import logging
+import functools
 
 logger = logging.getLogger(__name__)
 
@@ -29,6 +30,22 @@ class Predict():
             i = cwd.find('root')
             root_path = cwd
         self.best_model_path = os.path.join(root_path, best_model_path)
+
+
+    _porter = PorterStemmer()
+    @staticmethod
+    @functools.lru_cache(maxsize=65536)
+    def stem(w):
+        """
+        Provides a memoized version of the nltk.PrderStemmer.stem() function
+
+        Parameters:
+            word (str): the word to be stemmed
+
+        Returns:
+            stem (str): the stemmed word
+        """
+        return Predict._porter.stem(w)
 
 
     @staticmethod
@@ -71,8 +88,7 @@ class Predict():
                 else:
                     match_len = len(match)
                     if match_len <= 17 and match_len >= 3:
-                        porter = PorterStemmer()
-                        stemmed = porter.stem(match)
+                        stemmed = Predict.stem(match)
                         words += stemmed + ' '
         words = words.strip()
 

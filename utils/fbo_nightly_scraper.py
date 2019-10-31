@@ -560,10 +560,7 @@ def filter_json(merge_notices_dict, notice_types, naics):
     return sam_notices
 
 
-def get_nightly_data(date = None,
-                     notice_types = ['MOD','PRESOL','COMBINE', 'AMDCSS'],
-                     naics = ['334111', '334118', '3343', '33451', '334516', '334614', 
-                              '5112', '518', '54169', '54121', '5415', '54169', '61142']):
+def get_nightly_data(date = None, notice_types = None, naics = None):
     '''
     Exectutes methods in fbo_nightly_scraper module.
 
@@ -580,13 +577,24 @@ def get_nightly_data(date = None,
         #get day before yesterday to give FBO time to update their FTP
         now_minus_two = datetime.utcnow() - timedelta(2)
         date = now_minus_two.strftime("%Y%m%d")
+    if not notice_types:
+        temp_notice_types = ['MOD','PRESOL','COMBINE', 'AMDCSS']
+    else:
+        temp_notice_types = notice_types
+
+    if not naics:
+        temp_naics = ['334111', '334118', '3343', '33451', '334516', '334614',
+                              '5112', '518', '54169', '54121', '5415', '54169', '61142']
+    else:
+        temp_naics = naics
+
     fbo_ftp_url = f'ftp://ftp.fbo.gov/FBOFeed{date}'
     file_lines = download_from_ftp(date, fbo_ftp_url)
     if not file_lines:
         #exit program if download_from_ftp() failed (this is logged by the module)
         sys.exit(1)
     merge_notices_dict = pseudo_xml_to_json(file_lines)
-    filtered_data = filter_json(merge_notices_dict, notice_types, naics)
+    filtered_data = filter_json(merge_notices_dict, temp_notice_types, temp_naics)
     
     return filtered_data
 

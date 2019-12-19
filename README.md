@@ -54,7 +54,7 @@ To run the scan locally, do the following:
 ```bash
 cd path/to/this/locally/cloned/repo
 python3 -m venv env
-source env/bin/activate
+source venv/bin/activate
 pip install -r requirements.txt
 #now you can run the scan
 python main.py

@@ -70,14 +70,16 @@ def write_zip_content(content, out_path):
 
 def get_notice_data(opp_data, opp_id):
     poc = opp_data['pointOfContact']
+    #poc = opp_data['pointOfContact']['email']
     if not poc:
         emails = []
     else:
         emails = [p.get('email') for p in poc if p.get('email')]
     classification_code = opp_data.get('classificationCode','')
-    naics = max([i for naics_list in 
-                [i.get('code') for i in opp_data.get('naics',{})] 
-                for i in naics_list], key = len)
+    #naics = max([i for naics_list in 
+    #            [i.get('code') for i in opp_data.get('naicsCode',{})] #changed 'naics'
+    #            for i in naics_list], key = len)
+    naics = opp_data.get('naicsCode')
     subject = opp_data.get('title','').title()
     url = f'https://beta.sam.gov/opp/{opp_id}/view'
     set_aside = opp_data.get('solicitation',{}).get('setAside','')
@@ -110,17 +112,23 @@ def get_notice_type(notice_type_code):
     return sam_notice_type
 
 def schematize_opp(opp):
-    opp_id = opp.get('opportunityId')
+    #opp_id = opp.get('opportunityId')
+    opp_id = opp.get('noticeId')
     if not opp_id:
         logger.warning(f"No opp_id for {opp}")
         return
 
-    opp_data = opp.get('data')
-    if not opp_data:
-        return
-    
-    notice_type_code = opp_data.get('type')
-    notice_type = get_notice_type(notice_type_code)
+    #opp_data = opp.get('data')
+    #opp_data = opp.get('opportunitiesData')
+    #if not opp_data:
+    #    return
+    opp_data = opp
+    #notice_type_code = opp_data.get('type')
+    notice_type_code = opp_data.get('baseType')
+
+    #notice_type = get_notice_type(notice_type_code)
+    #edited this since the code is not given
+    notice_type = notice_type_code
     if not notice_type:
         return
     
@@ -135,11 +143,11 @@ def schematize_opp(opp):
                      'office': office,
                      'attachments': []}
     
-    notice_data = get_notice_data(opp_data, opp_id)
+    #notice_data = get_notice_data(opp_data, opp_id)
+    notice_data = get_notice_data(opp, opp_id)
 
     schematized_opp = {**required_data, **notice_data}
     schematized_opp['opp_id'] = opp_id
-    
     return schematized_opp
 
 def naics_filter(opps):
@@ -152,20 +160,27 @@ def naics_filter(opps):
     Returns:
         [list] -- a subset of results with matching naics
     """
+    #take 561790 out after
     naics = ('334111', '334118', '3343', '33451', '334516', '334614', 
              '5112', '518', '54169', '54121', '5415', '54169', '61142')
     filtered_opps = []
     for opp in opps:
-        naics_array = opp.get('data',{}).get('naics')
+        #naics_array = opp.get('data',{}).get('naics')
+        naics_array = opp.get('naicsCode')
         if not naics_array:
             continue
-        nested_naics_codes = [c for c in [d.get('code',[]) for d in naics_array]]
-        opp_naics = [i for sublist in nested_naics_codes for i in sublist]
-        for c in opp_naics:
-            if any(c.startswith(n) for n in naics):
-                filtered_opps.append(opp)
-                break
-            
+        #nested_naics_codes = [c for c in [d.get('code',[]) for d in naics_array]]
+        #opp_naics = [i for sublist in nested_naics_codes for i in sublist]
+        #for c in opp_naics:
+        #    if any(c.startswith(n) for n in naics):
+        #        filtered_opps.append(opp)
+        #        break
+        #for c in naics_array: 
+        #    if any(c.startswith(n) for n in naics):
+        #        filtered_opps.append(opp)
+        #        #break
+        if any(naics_array.startswith(n) for n in naics):
+            filtered_opps.append(opp)
     return filtered_opps
 
 def get_dates_from_opp(opp):
@@ -175,6 +190,7 @@ def get_dates_from_opp(opp):
     else:
         modified_date = mod_date.split(' ')[0]
     post_date = opp.get('postedDate','')
+    #post_date = opp.get('publishDate','')
     if "T" in post_date:
         posted_date = post_date.split('T')[0]
     else:
@@ -189,7 +205,6 @@ def get_dates_from_opp(opp):
         posted_date_dt = dt.strptime(posted_date, "%Y-%m-%d")
     except ValueError:
         pass
-            
     return modified_date_dt, posted_date_dt
 
 def get_day(today_or_yesterday):
@@ -223,10 +238,8 @@ def find_yesterdays_opps(opps):
             pass
     n_today_opps = len(todays_opps)
     n_yesterday_opps = len(yesterdays_opps)
-
     is_today_and_yesterday_opps = (n_today_opps + n_yesterday_opps) == len(opps)
     is_only_todays_opps = True if n_today_opps == len(opps) else False
     is_only_yesterdays_opps = True if n_yesterday_opps == len(opps) else False
     is_more_opps = is_only_todays_opps or is_only_yesterdays_opps or is_today_and_yesterday_opps
-    
     return yesterdays_opps, is_more_opps

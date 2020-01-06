@@ -1,6 +1,7 @@
 import logging
 import os
 import sys
+import json
 
 import requests
 
@@ -16,13 +17,15 @@ logger = logging.getLogger(__name__)
 
 def get_yesterdays_opps(filter_naics = True):
     uri, params, headers = get_opp_request_details()
+    #dict of opportunites
     opps, total_pages = get_opps(uri, params, headers)
     if not opps and not total_pages:
         # no opps or maybe a request error
         return
     # use yesterday's since today's might not be complete at time of running the script
     opps, is_more_opps = find_yesterdays_opps(opps)
-        
+
+
     if not is_more_opps:
         # Our results included opps beyond today and yesterday. Since the results are 
         # sorted in descending order by modifiedDate, there's no need to make another request
@@ -32,7 +35,7 @@ def get_yesterdays_opps(filter_naics = True):
         return opps
 
     page = 1
-    while page <= total_pages:
+    while page < total_pages:
         params.update({'page': str(page)})
         _opps, _ = get_opps(uri, params, headers)
         _opps, _is_more_opps = find_yesterdays_opps(_opps)
@@ -44,7 +47,6 @@ def get_yesterdays_opps(filter_naics = True):
     if filter_naics:
         filtered_opps = naics_filter(opps)
         return filtered_opps
-    
     return opps
 
 def get_docs(opp_id, out_path):
@@ -67,7 +69,6 @@ def get_docs(opp_id, out_path):
         file_list = write_zip_content(r.content, out_path)
     else:
         logger.error(f"Non-200 status code of {r.status_code} from {uri}")
-
     return file_list
 
 def get_attachment_data(file_name, url):
@@ -96,14 +97,14 @@ def transform_opps(opps, out_path):
         schematized_opp = schematize_opp(opp)
         if not schematized_opp:
             continue
-        url = schematized_opp.get('url','')
+        #url = schematized_opp.get('url','')
+        url = schematized_opp.get('uiLink','')
         opp_id = schematized_opp.pop('opp_id')
         file_list = get_docs(opp_id, out_path)
         if file_list:
             attachment_data = [get_attachment_data(f, url) for f in file_list]
             schematized_opp['attachments'].extend(attachment_data)
         transformed_opps.append(schematized_opp)
-
     return transformed_opps
 
 def main():

@@ -57,9 +57,9 @@ class DBTestCase(unittest.TestCase):
                 notice.pop('createdAt')
                 #pop this as it'll vary
                 notice.pop('notice_type_id')
+                notice.pop('id') # pop ID for situation where you have existing data in the DB when you run this test
                 result.append(notice)
-        expected = [{'id': 1,
-                     'solicitation_number': 'test',
+        expected = [{'solicitation_number': 'test',
                      'agency': 'agency',
                      'notice_data': {'url': 'url',
                                      'naics': 'test',
@@ -91,9 +91,9 @@ class DBTestCase(unittest.TestCase):
             for m in models:
                 model = object_as_dict(m)
                 model.pop('create_date')
+                model.pop('id') # pop ID for situation where you have existing data in the DB when you run this test
                 result.append(model)   
-        expected = [{'id': 1,
-                     'results': results,
+        expected = [{'results': results,
                      'params': params,
                      'score': score}]
         self.assertCountEqual(result, expected)

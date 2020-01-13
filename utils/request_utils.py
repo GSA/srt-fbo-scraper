@@ -67,7 +67,7 @@ def get_doc_request_details(opp_id):
     #    logger.critical("Unable to determine SAM API endpoint. Check env vars: {os.environ}")
     #    sys.exit(1)
     #open api key
-    uri = f'https://beta.sam.gov/api/prod/opps/v3/opportunities/{opp_id}/resources/download/zip?api_key=undefined&token=56b883ff-c79f-4394-be1a-cd18cfae9a95'
+    uri = f'https://beta.sam.gov/api/prod/opps/v3/opportunities/{opp_id}/resources/download/zip?api_key=undefined&token=7f8c1d0d-bccc-4cf7-affd-6b3ef1ffd405'
     #system api
     #uri = f'https://api.sam.gov/prod/opps/v3/opportunities/{opp_id}/resources/download/zip?api_key={BETA_SAM_DOC_KEY}'
 

@@ -134,8 +134,9 @@ def schematize_opp(opp):
     
     org_id = opp_data.get('organizationId')
     solicitation_number = opp_data.get('solicitationNumber','')
-    agency, office = get_org_info(org_id)
-    
+    #agency, office = get_org_info(org_id)
+    agency =opp_data.get('department')
+    office = opp_data.get('subTier')
     required_data = {'notice type': notice_type,
                      'solnbr': solicitation_number,
                      'agency': agency,

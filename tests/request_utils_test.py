@@ -87,14 +87,14 @@ class RequestUtilsTestCase(unittest.TestCase):
         uri = 'https://www.example.com'
         #response = {'_embedded': {'results': 'test'},
         #            'page': {'totalPages': '1'}}
-        response = {'opportunitiesData': {'test'},
+        response = {'opportunitiesData': [{'test':'data'}],
                     'totalRecords': 1}
         mock_request.register_uri('GET',
                                   url = uri,
                                   json = response,
                                   status_code = 200)
         expected = get_opps(uri, {}, {})
-        result = ({'test'},1)
+        result = ([{'test':'data'}],1)
         self.assertEqual(result, expected)
 
     def test_get_org_request_details(self):

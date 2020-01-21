@@ -1,9 +1,11 @@
+import datetime
+
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey, Table, Text, \
                        DateTime, Boolean, Float, MetaData, inspect
 from sqlalchemy.orm import relationship
 from sqlalchemy.dialects.postgresql import JSONB, ARRAY
-import datetime
+
 
 
 def now_minus_two():

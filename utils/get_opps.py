@@ -34,7 +34,7 @@ def get_yesterdays_opps(filter_naics = True):
         return opps
 
     page = 1
-    while page < total_pages:
+    while page < int(total_pages):
         params.update({'page': str(page)})
         _opps, _ = get_opps(uri, params, headers)
         _opps, _is_more_opps = find_yesterdays_opps(_opps)

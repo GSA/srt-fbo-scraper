@@ -75,7 +75,7 @@ def get_doc_request_details(opp_id):
 
 def get_opp_request_details():
     # see https://open.gsa.gov/api/opportunities-api/#get-list-of-opportunities
-    BETA_SAM_API_KEY = os.getenv('BETA_SAM_API_KEY_PUB')
+    BETA_SAM_API_KEY = '4xG4EceN0QVQj2vjtsldvH4VbKk1TcQubsdgdHQ6'
     SAM_AUTHORIZER = os.getenv("SAM_AUTHORIZER")
 
     def random_N_digits(n):
@@ -156,7 +156,7 @@ def get_opps(uri, params, headers):
         sys.exit(1)
     data = r.json()
     opps = data['opportunitiesData']
-    total_pages = str(int(int(data['totalRecords'])/100 + 1))
+    total_pages = int(int(data['totalRecords'])/100 + 1)
 
     #with open('data.json','r') as myfile:
     #    data = myfile.read()

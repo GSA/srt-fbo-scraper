@@ -67,7 +67,7 @@ def get_doc_request_details(opp_id):
     #    logger.critical("Unable to determine SAM API endpoint. Check env vars: {os.environ}")
     #    sys.exit(1)
     #open api key
-    uri = f'https://beta.sam.gov/api/prod/opps/v3/opportunities/{opp_id}/resources/download/zip?api_key=undefined&token=7f8c1d0d-bccc-4cf7-affd-6b3ef1ffd405'
+    uri = f'https://beta.sam.gov/api/prod/opps/v3/opportunities/{opp_id}/resources/download/zip'
     #system api
     #uri = f'https://api.sam.gov/prod/opps/v3/opportunities/{opp_id}/resources/download/zip?api_key={BETA_SAM_DOC_KEY}'
 
@@ -101,8 +101,8 @@ def get_opp_request_details():
 
     params = {'ptype': 'k',
         'api_key':BETA_SAM_API_KEY,
-        'postedFrom':str(yesterday),
-        'postedTo':str(today),
+        'postedFrom':yesterday,
+        'postedTo':today,
         'limit':100}
 
     #if ALPHA_SAM_API_KEY and SAM_AUTHORIZER:
@@ -156,7 +156,7 @@ def get_opps(uri, params, headers):
         sys.exit(1)
     data = r.json()
     opps = data['opportunitiesData']
-    total_pages = data['totalRecords']/100 + 1
+    total_pages = str(int(int(data['totalRecords'])/100 + 1))
 
     #with open('data.json','r') as myfile:
     #    data = myfile.read()

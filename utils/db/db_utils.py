@@ -1,15 +1,17 @@
-import os
-import json
-import sys
-import datetime
 from contextlib import contextmanager
+import datetime
+import json
+import logging
+import os
+import sys
+
+import dill as pickle
 from sqlalchemy import create_engine, func, case, inspect
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import NullPool
 from sqlalchemy_utils import database_exists, create_database, drop_database
-import logging
+
 import utils.db.db as db
-import dill as pickle
 
 logger = logging.getLogger(__name__)
 
@@ -89,9 +91,6 @@ class DataAccessLayer:
         if not database_exists(self.conn_string) and is_test:
             create_database(self.conn_string )
 
-
-dal = DataAccessLayer(conn_string = get_db_url())
-
 @contextmanager
 def session_scope(dal):
     """Provide a transactional scope around a series of operations."""
@@ -102,7 +101,7 @@ def session_scope(dal):
     except Exception as e:
         session.rollback()
         logger.critical(f"Exception occurred during database session, causing a rollback:  \
-                           {e}", exc_info=True)
+                        {e}", exc_info=True)
     finally:
         session.close()
 
@@ -112,8 +111,11 @@ def fetch_notice_type_id(notice_type, session):
     Fetch the notice_type_id for a given notice_type.
 
     Parameters:
-        notice_type (str): a notice type. One of ['MOD','COMBINE','PRESOL','AMDCSS','TRAIN']
-        or one of the new SAM types ['Presolicitation, Solicitation, Combined Synopsis/Solicitation]
+        notice_type (str): a notice type. One of the following:
+            'Combined Synopsis/Solicitation'
+            'Presolicitation'
+            'Solicitation'
+            'TRAIN'
 
     Returns:
         None or notice_type_id (int): if notice_type_id, this is the PK for the notice_type
@@ -129,13 +131,10 @@ def insert_notice_types(session):
     '''
     Insert each of the notice types into the notice_type table if it isn't already there.
     '''
-    notice_types = ['PRESOL','SRCSGT','SNOTE','SSALE','COMBINE','AMDCSS',
-                    'MOD','AWARD','JA','FAIROPP','ARCHIVE','UNARCHIVE',
-                    'ITB','FSTD','EPSUPLOAD','DELETE','TRAIN']
-
-    sam_notice_types = ['Combined Synopsis/Solicitation', 'Presolicitation', 'Solicitation']
-    nts = sam_notice_types + notice_types
-    for notice_type in nts:
+    sam_notice_types = ['Combined Synopsis/Solicitation', 
+                        'Presolicitation', 'Solicitation', 'TRAIN']
+    
+    for notice_type in sam_notice_types:
         notice_type_id = fetch_notice_type_id(notice_type, session)
         if not notice_type_id:
             nt = db.NoticeType(notice_type = notice_type)
@@ -150,7 +149,7 @@ def fetch_notice_type_by_id(notice_type_id, session):
         notice_type_id (int): the PK id for a notice_type
 
     Returns:
-        None or notice_type (str): If not None, the notice type as a string (e.g. 'MOD')
+        None or notice_type (str): If not None, the notice type as a str (e.g. 'Solicitation')
     '''
     try:
         notice_type_obj = session.query(db.NoticeType).get(notice_type_id)
@@ -174,60 +173,61 @@ def insert_model(session, results, params, score):
                      score = score)
     session.add(model)
 
-def insert_updated_nightly_file(session, updated_nightly_data_with_predictions):
+def insert_data(session, data):
     '''
-    Insert a night's worth of FBO data into the database.
+    Insert yesterday's SAM data into the database.
 
     Parameters:
-        updated_nightly_data_with_predictions (dict): a dict representing a night's worth of FBO data
+        data (list): a list of dicts, each representing a single opportunity
 
     Returns:
         None
     '''
     insert_notice_types(session)
-    for notice_type in updated_nightly_data_with_predictions:
+    for opp in data:
+        notice_type = opp.pop('notice type')
         notice_type_id = fetch_notice_type_id(notice_type, session)
-        for notice_data in updated_nightly_data_with_predictions[notice_type]:
-            if not notice_data:
-                continue
-            attachments = notice_data.pop('attachments')
-            agency = notice_data.pop('agency')
-            compliant = notice_data.pop('compliant')
-            solicitation_number = notice_data.pop('solnbr')
-            matching_notices = fetch_notices_by_solnbr(solicitation_number, session)
-            is_solnbr_in_db = True if matching_notices else False
-            if is_solnbr_in_db:
-                history_date = datetime.datetime.utcnow().strftime("%m/%d/%Y")
-                history = [{
-                            "date":history_date,
-                            "user":"",
-                            "action":"Solicitation Updated on FBO.gov",
-                            "status":""
-                            }]
-                notice = db.Notice(notice_type_id = notice_type_id,
-                                   solicitation_number = solicitation_number,
-                                   agency = agency,
-                                   notice_data = notice_data,
-                                   compliant = compliant,
-                                   history = history)
-            else:
-                notice = db.Notice(notice_type_id = notice_type_id,
-                                   solicitation_number = solicitation_number,
-                                   agency = agency,
-                                   notice_data = notice_data,
-                                   compliant = compliant)
-            for doc in attachments:
-                attachment =  db.Attachment(notice_type_id = notice_type_id,
-                                            filename = doc['filename'],
-                                            machine_readable = doc['machine_readable'],
-                                            attachment_text = doc['text'],
-                                            prediction = doc['prediction'],
-                                            decision_boundary = doc['decision_boundary'],
-                                            validation = doc['validation'],
-                                            attachment_url = doc['url'],
-                                            trained = doc['trained'])
-                notice.attachments.append(attachment)
-            session.add(notice)
+
+        attachments = opp.pop('attachments')
+        agency = opp.pop('agency')
+        compliant = opp.pop('compliant')
+        solicitation_number = opp.pop('solnbr')
+        
+        matching_notices = fetch_notices_by_solnbr(solicitation_number, session)
+        is_solnbr_in_db = True if matching_notices else False
+        
+        if is_solnbr_in_db:
+            history_date = datetime.datetime.utcnow().strftime("%m/%d/%Y")
+            history = [{
+                        "date":history_date,
+                        "user":"",
+                        "action":"Solicitation Updated on SAM",
+                        "status":""
+                        }]
+            notice = db.Notice(notice_type_id = notice_type_id,
+                               solicitation_number = solicitation_number,
+                               agency = agency,
+                               notice_data = opp,
+                               compliant = compliant,
+                               history = history)
+        else:
+            notice = db.Notice(notice_type_id = notice_type_id,
+                               solicitation_number = solicitation_number,
+                               agency = agency,
+                               notice_data = opp,
+                               compliant = compliant)
+        for doc in attachments:
+            attachment =  db.Attachment(notice_type_id = notice_type_id,
+                                        filename = doc['filename'],
+                                        machine_readable = doc['machine_readable'],
+                                        attachment_text = doc['text'],
+                                        prediction = doc['prediction'],
+                                        decision_boundary = doc['decision_boundary'],
+                                        validation = doc['validation'],
+                                        attachment_url = doc['url'],
+                                        trained = doc['trained'])
+            notice.attachments.append(attachment)
+        session.add(notice)
 
 def get_validation_count(session):
     '''
@@ -360,11 +360,11 @@ def fetch_notices_by_solnbr_and_ntype(solnbr, notice_type, session):
 
     Parameters:
         solnbr (str): a solicitation number (e.g. fa860418p1022)
-        notice_type (str): a notice type, e.g AMDCSS
+        notice_type (str): a notice type, e.g Presolicitation
 
     Returns:
-        matching_notices (list): a list of matching notices, with each row-object as a dict within
-                                 that list
+        matching_notices (list): a list of matching notices, with each row-object 
+            as a dict within that list.
     '''
     notices = fetch_notices_by_solnbr(solnbr, session)
     notice_type_id = fetch_notice_type_id(notice_type, session)

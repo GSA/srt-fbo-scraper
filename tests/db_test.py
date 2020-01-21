@@ -2,8 +2,9 @@ import unittest
 import sys
 import os
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
+from tests.mock_opps import mock_data_for_db
 from utils.db.db import Notice, NoticeType, Attachment, Model, now_minus_two
-from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_file, \
+from utils.db.db_utils import get_db_url, session_scope, insert_data, \
                               DataAccessLayer, clear_data, object_as_dict, fetch_notice_type_id, \
                               insert_model, insert_notice_types, retrain_check, \
                               get_validation_count, get_trained_count, \
@@ -13,99 +14,8 @@ from utils.db.db_utils import get_db_url, session_scope, insert_updated_nightly_
 class DBTestCase(unittest.TestCase):
     
     def setUp(self):
-        conn_string = get_db_url()
-        self.predicted_nightly_data = {'Combined Synopsis/Solicitation': [{'date': '0506',
-                                                                           'year': '18',
-                                                                           'agency': 'defense logistics agency',
-                                                                           'office': 'dla acquisition locations',
-                                                                           'location': 'dla aviation - bsm',
-                                                                           'zip': '23297',
-                                                                           'classcod': '66',
-                                                                           'naics': '334511',
-                                                                           'offadd': '334511',
-                                                                           'subject': 'subject',
-                                                                           'solnbr': 'spe4a618t934n',
-                                                                           'respdate': '051418',
-                                                                           'archdate': '06132018',
-                                                                           'contact': 'bob.dylan@aol.com',
-                                                                           'desc': 'test123',
-                                                                           'url': 'test_url',
-                                                                           'setaside': 'n/a  ',
-                                                                           'attachments': [],
-                                                                           'compliant': 0},
-                                      {'date': '0506',
-                                      'year': '18',
-                                      'agency': 'department of justice',
-                                      'office': 'federal bureau of investigation',
-                                      'location': 'procurement section',
-                                      'zip': '20535',
-                                      'classcod': '70',
-                                      'naics': '511210',
-                                      'offadd': '935 pennsylvania avenue, n.w. washington dc 20535',
-                                      'subject': 'enterprise business process management software tool',
-                                      'solnbr': 'rfp-e-bpm-djf-18-0800-pr-0000828',
-                                      'ntype': 'combine',
-                                      'contact': 'clark kent, contracting officer, phone 5555555555, email clark.kent@daily-planet.com',
-                                      'desc': '  link to document',
-                                      'url': 'url',
-                                      'setaside': 'n/a',
-                                      'popcountry': 'us',
-                                      'popzip': '20535',
-                                      'popaddress': '935 pennsylvania ave. n.w. washington, dc  ',
-                                      'attachments': [{'filename':'test.txt',
-                                                       'machine_readable': True,
-                                                       'text': 'test_text_0',
-                                                       'url': 'test_url_0',
-                                                       'prediction': 1,
-                                                       'decision_boundary': 0,
-                                                       'validation': None,
-                                                       'trained': False},
-                                                      {'filename':'test.txt',
-                                                       'machine_readable': True,'text': 'test_text_1',
-                                                       'url': 'test_url_1',
-                                                       'prediction': 1,
-                                                       'decision_boundary': 0,
-                                                       'validation': None,
-                                                       'trained': False},
-                                                      {'filename':'test.txt',
-                                                       'machine_readable': True,'text': 'test_text_2',
-                                                       'url': 'test_url_2',
-                                                       'prediction': 1,
-                                                       'decision_boundary': 0,
-                                                       'validation': None,
-                                                       'trained': False},
-                                                      {'filename':'test.txt',
-                                                       'machine_readable': True,'text': 'test_text_3',
-                                                       'url': 'test_url_3',
-                                                       'prediction': 1,
-                                                       'decision_boundary': 0,
-                                                       'validation': None,
-                                                       'trained': False},
-                                                      {'filename':'test.txt',
-                                                       'machine_readable': True,'text': 'test_text_4',
-                                                       'url': 'test_url_4',
-                                                       'prediction': 1,
-                                                       'decision_boundary': 0,
-                                                       'validation': None,
-                                                       'trained': False},
-                                                      {'filename':'test.txt',
-                                                       'machine_readable': True,'text': 'test_text_5',
-                                                       'url': 'test_url_5',
-                                                       'prediction': 1,
-                                                       'decision_boundary': 0,
-                                                       'validation': None,
-                                                       'trained': False},
-                                                      {'filename':'test.txt',
-                                                       'machine_readable': True,'text': 'test_text_6',
-                                                       'url': 'test_url_6',
-                                                       'prediction': 1,
-                                                       'decision_boundary': 0,
-                                                       'validation': None,
-                                                       'trained': False}],
-                                      'compliant': 0}],
-               'Solicitation': [],
-               'Presolicitation': []}
-        self.dal = DataAccessLayer(conn_string = conn_string)
+        self.data = [mock_data_for_db.copy()]
+        self.dal = DataAccessLayer(conn_string = get_db_url())
         self.dal.create_test_postgres_db()
         self.dal.connect()
         self.maxDiff = None
@@ -117,24 +27,26 @@ class DBTestCase(unittest.TestCase):
             session.close_all()
         self.dal.drop_test_postgres_db()
         self.dal = None
-        self.predicted_nightly_data = None
+        self.data = None
     
     def test_insert_notice_types(self):
         with session_scope(self.dal) as session:
             insert_notice_types(session)
-            notice_types= ['Presolicitation','Solicitation','Combined Synopsis/Solicitation', 'TRAIN']
-            notice_type_ids = []
-            for notice_type in notice_types:
+        
+        types= ['Presolicitation','Solicitation','Combined Synopsis/Solicitation','TRAIN']
+        notice_type_ids = []
+        for notice_type in types:
+            with session_scope(self.dal) as session:
                 notice_type_id = session.query(NoticeType.id).filter(NoticeType.notice_type==notice_type).first().id
                 notice_type_ids.append(notice_type_id)
-            notice_type_ids = set(notice_type_ids)
+        notice_type_ids = set(notice_type_ids)
         result = len(notice_type_ids)
-        expected = len(notice_types)
+        expected = len(types)
         self.assertEqual(result, expected)
         
-    def test_insert_updated_nightly_file(self):
+    def test_insert_data(self):
         with session_scope(self.dal) as session:
-            insert_updated_nightly_file(session, self.predicted_nightly_data)
+            insert_data(session, self.data)
         result = []
         with session_scope(self.dal) as session:
             notices = session.query(Notice).all()
@@ -146,61 +58,27 @@ class DBTestCase(unittest.TestCase):
                 #pop this as it'll vary
                 notice.pop('notice_type_id')
                 result.append(notice)
-        expected = [{'id': 2,
-                     'solicitation_number': 'rfp-e-bpm-djf-18-0800-pr-0000828',
-                     'agency': 'department of justice',
+        expected = [{'id': 1,
+                     'solicitation_number': 'test',
+                     'agency': 'agency',
                      'notice_data': {'url': 'url',
-                                     'zip': '20535',
-                                     'date': '0506',
-                                     'desc': '  link to document',
-                                     'year': '18',
-                                     'naics': '511210',
-                                     'ntype': 'combine',
-                                     'offadd': '935 pennsylvania avenue, n.w. washington dc 20535',
-                                     'office': 'federal bureau of investigation',
-                                     'popzip': '20535',
-                                     'contact': 'clark kent, contracting officer, phone 5555555555, email clark.kent@daily-planet.com',
-                                     'subject': 'enterprise business process management software tool',
-                                     'classcod': '70',
-                                     'location': 'procurement section',
-                                     'setaside': 'n/a',
-                                     'popaddress': '935 pennsylvania ave. n.w. washington, dc  ',
-                                     'popcountry': 'us'},
+                                     'naics': 'test',
+                                     'office': 'office',
+                                     'subject': 'test',
+                                     'classcod': 'test',
+                                     'setaside': 'test',
+                                     'emails': ['test@test.gov']},
                      'compliant': 0,
                      'feedback': None,
                      'history': None,
-                     'action': None,
-                     'updatedAt': None,
-                     'na_flag': False},
-                     {'id': 1,
-                     'solicitation_number': 'spe4a618t934n',
-                     'agency': 'defense logistics agency',
-                     'notice_data': {'url': 'test_url',
-                                     'zip': '23297',
-                                     'date': '0506',
-                                     'desc': 'test123',
-                                     'year': '18',
-                                     'naics': '334511',
-                                     'offadd': '334511',
-                                     'office': 'dla acquisition locations',
-                                     'contact': 'bob.dylan@aol.com',
-                                     'subject': 'subject',
-                                     'archdate': '06132018',
-                                     'classcod': '66',
-                                     'location': 'dla aviation - bsm',
-                                     'respdate': '051418',
-                                     'setaside': 'n/a  '},
-                     'compliant': 0,
-                     'feedback':None,
-                     'history':None,
                      'action': None,
                      'updatedAt': None,
                      'na_flag': False}]
         self.assertCountEqual(result, expected)
 
     def test_insert_model(self):
-        results = {'c':'d'}
-        params = {'a':'b'}
+        results = {'c': 'd'}
+        params = {'a': 'b'}
         score = .99
         with session_scope(self.dal) as session:
             insert_model(session, 
@@ -237,7 +115,7 @@ class DBTestCase(unittest.TestCase):
 
     def test_get_validation_count(self):
         with session_scope(self.dal) as session:
-            insert_updated_nightly_file(session, self.predicted_nightly_data)
+            insert_data(session, self.data)
         with session_scope(self.dal) as session:
             result = get_validation_count(session)
         expected = 0
@@ -245,7 +123,7 @@ class DBTestCase(unittest.TestCase):
 
     def test_get_trained_count(self):
         with session_scope(self.dal) as session:
-            insert_updated_nightly_file(session, self.predicted_nightly_data)
+            insert_data(session, self.data)
         with session_scope(self.dal) as session:
             result = get_trained_count(session)
         expected = 0
@@ -253,7 +131,7 @@ class DBTestCase(unittest.TestCase):
 
     def test_get_validated_untrained_count(self):
         with session_scope(self.dal) as session:
-            insert_updated_nightly_file(session, self.predicted_nightly_data)
+            insert_data(session, self.data)
         with session_scope(self.dal) as session:
             result = get_validated_untrained_count(session)
         expected = 0
@@ -261,7 +139,7 @@ class DBTestCase(unittest.TestCase):
 
     def test_retrain_check(self):
         with session_scope(self.dal) as session:
-            insert_updated_nightly_file(session, self.predicted_nightly_data)
+            insert_data(session, self.data)
         with session_scope(self.dal) as session:
             result = retrain_check(session)
         expected = False
@@ -269,27 +147,28 @@ class DBTestCase(unittest.TestCase):
 
     def test_fetch_validated_attachments(self):
         with session_scope(self.dal) as session:
-            insert_updated_nightly_file(session, self.predicted_nightly_data)
+            insert_data(session, self.data)
         with session_scope(self.dal) as session:
             attachments = fetch_validated_attachments(session)
         result = len(attachments)
+        # 993 since that's how many docs were initially labeled
         expected = 993
         self.assertEqual(result, expected)
 
     def test_fetch_notices_by_solnbr(self):
         with session_scope(self.dal) as session:
-            insert_updated_nightly_file(session, self.predicted_nightly_data)
+            insert_data(session, self.data)
         with session_scope(self.dal) as session:
-            notices = fetch_notices_by_solnbr('rfp-e-bpm-djf-18-0800-pr-0000828', session)
+            notices = fetch_notices_by_solnbr('test', session)
         result = len(notices)
         expected = 1
         self.assertEqual(result, expected)
 
     def test_fetch_notices_by_solnbr_bogus_solnbr(self):
         with session_scope(self.dal) as session:
-            insert_updated_nightly_file(session, self.predicted_nightly_data)
+            insert_data(session, self.data)
         with session_scope(self.dal) as session:
-            notices = fetch_notices_by_solnbr('test123', session)
+            notices = fetch_notices_by_solnbr('notexist', session)
         result = len(notices)
         expected = 0
         self.assertEqual(result, expected)

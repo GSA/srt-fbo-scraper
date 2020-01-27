@@ -82,7 +82,8 @@ def get_notice_data(opp_data, opp_id):
     naics = opp_data.get('naicsCode')
     subject = opp_data.get('title','').title()
     url = f'https://beta.sam.gov/opp/{opp_id}/view'
-    set_aside = opp_data.get('solicitation',{}).get('setAside','')
+    #set_aside = opp_data.get('solicitation',{}).get('setAside','')
+    set_aside = opp_data.get('typeOfSetAside','')
 
     notice_data = {'classcod': classification_code,
                    'naics': naics,

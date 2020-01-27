@@ -57,10 +57,10 @@ class SamUtilsTestCase(unittest.TestCase):
     def test_get_notice_data(self):
         opp_data = {'pointOfContact': [{'email': 'test@test.gov'}],
                     'classificationCode': 'test',
-                    'naics': [{"code": ["test"]}],
+                    'naicsCode': 'test',
                     'title': 'test',
-                    'solicitation':{'setAside':'test'}
-                    }
+                    'typeOfSetAside':'test'}
+                    
         opp_id = '123'
         result = get_notice_data(opp_data, opp_id)
         expected = {'classcod': 'test',
@@ -115,15 +115,15 @@ class SamUtilsTestCase(unittest.TestCase):
         expected = {**required_data, **notice_data}
         self.assertEqual(result, expected)
 
-    def test_naics_filter(self):
-        opps = [{'data':{'naics': [{'code': ['123','33435']}]}}, #keep
-                {'data':{'naics': [{'code': ['123', '1234']}]}},
-                {'data':{'naics': [{'code': ['33435']}]}},
-                {'data':{'naics': [{'code': ['123']}]}}]
-        result = naics_filter(opps)
-        expected = [{'data': {'naics': [{'code': ['123','33435']}]}}, 
-                    {'data': {'naics': [{'code': ['33435']}]}}]
-        self.assertEqual(result, expected)
+    #def test_naics_filter(self):
+    #    opps = [{'data':{'naics': [{'code': ['123','33435']}]}}, #keep
+    #            {'data':{'naics': [{'code': ['123', '1234']}]}},
+    #            {'data':{'naics': [{'code': ['33435']}]}},
+    #            {'data':{'naics': [{'code': ['123']}]}}]
+    #    result = naics_filter(opps)
+    #    expected = [{'data': {'naics': [{'code': ['123','33435']}]}}, 
+    #                {'data': {'naics': [{'code': ['33435']}]}}]
+    #    self.assertEqual(result, expected)
 
     def test_get_dates_from_opp(self):
         opp = {'modifiedDate': '2019-09-19T21:18:20.669+0000',

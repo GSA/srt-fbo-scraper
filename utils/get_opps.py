@@ -25,7 +25,6 @@ def get_yesterdays_opps(filter_naics = True):
     # use yesterday's since today's might not be complete at time of running the script
     opps, is_more_opps = find_yesterdays_opps(opps)
 
-
     if not is_more_opps:
         # Our results included opps beyond today and yesterday. Since the results are 
         # sorted in descending order by modifiedDate, there's no need to make another request
@@ -35,7 +34,7 @@ def get_yesterdays_opps(filter_naics = True):
         return opps
 
     page = 1
-    while page < total_pages:
+    while page < int(total_pages):
         params.update({'page': str(page)})
         _opps, _ = get_opps(uri, params, headers)
         _opps, _is_more_opps = find_yesterdays_opps(_opps)

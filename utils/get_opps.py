@@ -59,6 +59,7 @@ def get_docs(opp_id, out_path):
     try:
         with requests_retry_session() as session:
             r = session.get(uri, timeout = 200)
+
     except Exception as e:
         logger.error(f"Exception {e} getting opps from {uri}", exc_info=True)
         #sys.exit(1)
@@ -101,6 +102,7 @@ def transform_opps(opps, out_path):
     """
     transformed_opps = []
     for opp in opps:
+        logger.info("transforming notice {}".format(opp['noticeId']))
         schematized_opp = schematize_opp(opp)
         if not schematized_opp:
             continue

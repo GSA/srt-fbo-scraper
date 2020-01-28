@@ -20,11 +20,13 @@ class GetDocTextTestCase(unittest.TestCase):
         if not os.path.exists(out_path):
             os.mkdir(out_path)
         self.abs_out_path = os.path.abspath(out_path)
-        
+
         # refer to fixture
-        if 'tests' not in os.getcwd():
-            self.temp_outfile_path_doc = os.path.join('tests', 'fixtures', 'test.doc')
-        else:
+        if 'fixtures' in os.getcwd():
+            self.temp_outfile_path_doc = os.path.join('test.doc')
+        elif '_trial_temp' in os.getcwd():  # running in pycharm
+            self.temp_outfile_path_doc = os.path.join('..', 'fixtures', 'test.doc')
+        elif 'tests' in os.getcwd():
             self.temp_outfile_path_doc = os.path.join('fixtures', 'test.doc')
 
         # create a mock file w/o extension

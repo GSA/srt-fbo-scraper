@@ -61,9 +61,12 @@ def get_docs(opp_id, out_path):
     try:
         with requests_retry_session() as session:
             r = session.get(uri, timeout = 200)
+
     except Exception as e:
         logger.error(f"Exception {e} getting opps from {uri}", exc_info=True)
-        sys.exit(1)
+        # don't exit....would be better to keep going so we can process the other opportunities in this batch.
+        # sys.exit(1)
+        return []
     if r.ok:
         file_list = write_zip_content(r.content, out_path)
     else:
@@ -93,6 +96,7 @@ def transform_opps(opps, out_path):
     """
     transformed_opps = []
     for opp in opps:
+        logger.info("transforming notice {}".format(opp['noticeId']))
         schematized_opp = schematize_opp(opp)
         if not schematized_opp:
             continue

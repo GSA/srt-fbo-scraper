@@ -34,5 +34,8 @@ def main():
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO,
-                        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s') 
+                        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    fh = logging.FileHandler(r'smartie-logger.log')
+    fh.setFormatter( logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+    logger.addHandler(fh)
     main()

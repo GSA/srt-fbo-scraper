@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  
+
   build:
     docker:
       - image: csmcallister/fbo-scraper-test
@@ -8,25 +8,25 @@ jobs:
         environment:
             - POSTGRES_USER: circleci
             - POSTGRES_DB: smartie-test
-    
+
     parallelism: 4
-    
+
     steps:
       - checkout
-      
+
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "requirements-test.txt" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-      
+
       - run:
           name: install dependencies
           command: |
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements-test.txt
-      
+
       - save_cache:
           paths:
             - ./venv
@@ -42,7 +42,7 @@ jobs:
               sleep 1
             done
             echo Failed waiting for Postgres && exit 1
-      
+
       - run:
           name: Run tests
           environment:
@@ -50,17 +50,17 @@ jobs:
           command: |
             . venv/bin/activate
             circleci tests glob **/tests/*_test.py | circleci tests split --split-by=timings --timings-type=classname | xargs python3 -m unittest
-  
+
   deploy:
     docker:
       - image: circleci/buildpack-deps:jessie-curl
     steps:
       - checkout
-      
-      - setup_remote_docker:   
+
+      - setup_remote_docker:
           docker_layer_caching: true
-      
-      - run: 
+
+      - run:
           name: Build and Push Docker Image
           command: |
             #use GitHub API to get name of PR's target branch
@@ -75,20 +75,20 @@ jobs:
             fi
             TAG=0.1.$CIRCLE_BUILD_NUM
             #docker build, login and push
-            docker build -t $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG . 
-            echo "$DOCKER_PASS" | docker login --username $DOCKER_USER --password-stdin    
+            docker build -t $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG .
+            echo "$DOCKER_PASS" | docker login --username $DOCKER_USER --password-stdin
             docker push $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG
-      
+
       - run:
           name: Download CF CLI
           command: |
             curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
             sudo dpkg -i cf-cli_amd64.deb
             cf -v
-      
+
       - run:
           name: Download cf CLI and deploy
-          command: |  
+          command: |
             PR_NUMBER="${CIRCLE_PULL_REQUEST//[!0-9]/}"
             TARGET_BRANCH=$(curl -sS https://api.github.com/repos/GSA/${CIRCLE_PROJECT_REPONAME}/pulls/${PR_NUMBER} | jq '.base.ref')
             TARGET_BRANCH=$(echo $TARGET_BRANCH | tr -d '"')
@@ -107,15 +107,15 @@ jobs:
                 CF_PW=$CF_SERVICE_PW_staging
             else
                 :
-            fi          
-            
+            fi
+
             cf login -a https://api.fr.cloud.gov -u $CF_ACC -p $CF_PW -o gsa-ogp-srt -s $TARGET_BRANCH
             TAG=0.1.$CIRCLE_BUILD_NUM
             cf push srt-fbo-scraper-$TARGET_BRANCH --docker-image $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG -k 4G
 
 workflows:
   version: 2
-  build-and-deploy: 
+  build-and-deploy:
     jobs:
       - build
       - hold:

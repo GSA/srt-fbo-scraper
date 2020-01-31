@@ -17,12 +17,15 @@ def get_doc_text(file_name, rm = True):
     #ShellError with antiword occurs when an rtf is saved with a doc extension
     except textract.exceptions.ShellError as e:
         err_message = str(e)
-        if 'antiword' in err_message and file_name.endswith('.doc'):
-            new_name = file_name.replace('.doc','.rtf')
-            os.rename(file_name, new_name)
-            b_text = textract.process(new_name, 
-                                      encoding = 'utf-8', 
-                                      errors = 'ignore')
+        try:
+            if 'antiword' in err_message and file_name.endswith('.doc'):
+                new_name = file_name.replace('.doc','.rtf')
+                os.rename(file_name, new_name)
+                b_text = textract.process(new_name,
+                                          encoding = 'utf-8',
+                                          errors = 'ignore')
+        except textract.exceptions.ShellError as ex:
+            logger.error("Error extracting text from a DOC file. Check that all dependencies of textract are installed.\n{}".format(ex))
     except textract.exceptions.MissingFileError as e:
         b_text = None
         logger.error(f"Couldn't textract {file_name} since the file couldn't be found: \

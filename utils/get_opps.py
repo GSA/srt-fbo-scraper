@@ -64,7 +64,7 @@ def get_docs(opp_id, out_path):
             r = session.get(uri, timeout = 200)
 
     except Exception as e:
-        logger.error(f"Exception {e} getting opps from {uri}", exc_info=True)
+        logger.error("Exception {e} getting opps from {uri}", exc_info=True)
         logger.warning("Falling back to wget for {}".format(uri))
         fname  = wget.download(uri)
         f = open(fname, mode='rb')

@@ -1,7 +1,10 @@
 import logging
 import os
 import sys
+import json
 import wget
+
+import requests
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from utils.get_doc_text import get_doc_text

@@ -14,6 +14,7 @@ dal.connect()
 
 def main():    
 
+    logger.info("Connecting with database at {}".format(conn_string))
     logger.info("Smartie is fetching opportunties from SAM...")
     data = get_opps.main()
     if not data:

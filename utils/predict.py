@@ -107,7 +107,7 @@ class Predict():
                     decision_boundary = float(abs(dec_func))
                     attachment['prediction'] = pred
                     attachment['decision_boundary'] = decision_boundary
-                    stats['chars'].append(len(attachment))
+                    stats['chars'].append(len(attachment['text']))
                     stats['prediction'].append(pred)
                     stats['decision boundry'].append(decision_boundary)
                     stats['raw prediction'].append(int(raw_prediction))
@@ -118,7 +118,7 @@ class Predict():
                         opp['agency'],
                         opp['solnbr'],
                         len(attachments),
-                        sum( [len(x) for x in attachments] ),
+                        sum( stats['chars'] ),
                         json.dumps(stats['prediction']),
                         json.dumps(stats['decision boundry']),
                         json.dumps(stats['raw prediction']),

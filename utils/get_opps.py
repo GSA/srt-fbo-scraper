@@ -2,6 +2,7 @@ import logging
 import os
 import sys
 import json
+import wget
 
 import requests
 
@@ -64,9 +65,15 @@ def get_docs(opp_id, out_path):
 
     except Exception as e:
         logger.error(f"Exception {e} getting opps from {uri}", exc_info=True)
-        # don't exit....would be better to keep going so we can process the other opportunities in this batch.
-        # sys.exit(1)
-        return []
+        logger.warning("Falling back to wget for {}".format(uri))
+        fname  = wget.download(uri)
+        f = open(fname, mode='rb')
+        content = f.read()
+        f.close()
+        os.unlink(fname)
+        file_list = write_zip_content(content, out_path)
+        return file_list
+
     if r.ok:
         file_list = write_zip_content(r.content, out_path)
     else:

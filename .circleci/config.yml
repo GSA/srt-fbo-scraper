@@ -109,6 +109,11 @@ jobs:
                 CF_ACC=$CF_SERVICE_ACCOUNT_staging
                 CF_PW=$CF_SERVICE_PW_staging
                 echo "Using staging credentials"
+            elif [ "$CIRCLE_BRANCH" = "dev" ]
+            then
+                CF_ACC=$CF_SERVICE_ACCOUNT_dev
+                CF_PW=$CF_SERVICE_PW_dev
+                echo "Using dev credentials"
             else
                 :
             fi

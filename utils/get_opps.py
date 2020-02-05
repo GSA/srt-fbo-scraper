@@ -3,6 +3,7 @@ import os
 import sys
 
 import requests
+import wget
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from utils.get_doc_text import get_doc_text
@@ -22,7 +23,6 @@ def get_yesterdays_opps(filter_naics = True):
         return
     # use yesterday's since today's might not be complete at time of running the script
     opps, is_more_opps = find_yesterdays_opps(opps)
-        
     if not is_more_opps:
         # Our results included opps beyond today and yesterday. Since the results are 
         # sorted in descending order by modifiedDate, there's no need to make another request
@@ -41,7 +41,7 @@ def get_yesterdays_opps(filter_naics = True):
             break
         page += 1
     
-    if filter_naics:
+    if filter_naics:  
         filtered_opps = naics_filter(opps)
         return filtered_opps
     
@@ -62,7 +62,16 @@ def get_docs(opp_id, out_path):
             r = session.get(uri, timeout = 200)
     except Exception as e:
         logger.error(f"Exception {e} getting opps from {uri}", exc_info=True)
-        sys.exit(1)
+        #sys.exit(1)
+        logger.warning("Falling back to wget for {}".format(uri))
+        fname  = wget.download(uri)
+        f = open(fname, mode='rb')
+        content = f.read()
+        f.close()
+        os.unlink(fname)
+        file_list = write_zip_content(content, out_path)
+        return file_list
+
     if r.ok:
         file_list = write_zip_content(r.content, out_path)
     else:
@@ -103,7 +112,6 @@ def transform_opps(opps, out_path):
             attachment_data = [get_attachment_data(f, url) for f in file_list]
             schematized_opp['attachments'].extend(attachment_data)
         transformed_opps.append(schematized_opp)
-
     return transformed_opps
 
 def main():

@@ -1,12 +1,12 @@
 import logging
-import sys
 
 from utils import get_opps
 from utils.predict import Predict 
 from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_data
+from utils.json_log_formatter import CustomJsonFormatter, configureLogger
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
+logger = logging.getLogger()
+configureLogger(logger)
 
 conn_string = get_db_url()
 dal = DataAccessLayer(conn_string)
@@ -34,9 +34,4 @@ def main():
     
 
 if __name__ == '__main__':
-    logging.basicConfig(level=logging.INFO,
-                        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    fh = logging.FileHandler(r'smartie-logger.log')
-    fh.setFormatter( logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
-    logger.addHandler(fh)
     main()

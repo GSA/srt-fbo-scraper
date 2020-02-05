@@ -1,15 +1,14 @@
 import os
 import sys
 import unittest
-from unittest.mock import patch
-
-import responses
 import requests_mock
+import re
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from utils.request_utils import requests_retry_session, get_opp_request_details, get_opps, \
     get_doc_request_details, get_org_request_details
-import tests.mock_opps
+from utils.predict import Predict
+from tests.mock_opps import mock_transformed_opp_bad_attachment, mock_transformed_opp_one
 
 class RequestUtilsTestCase(unittest.TestCase):
 
@@ -107,6 +106,24 @@ class RequestUtilsTestCase(unittest.TestCase):
             self.assertTrue(result, expected)
         finally:
             del os.environ["BETA_SAM_API_KEY_PUB"]
+
+
+    def test_bad_attachment_detection(self):
+        # bad data should get an ERROR log message
+        predict = Predict(data = [mock_transformed_opp_bad_attachment])
+        with self.assertLogs( level='ERROR') as a:
+            predict.insert_predictions()
+            msgFound = False
+            for msg in a.output:
+                if re.match(".*suspicious attachment.*", msg):
+                    msgFound = True
+            assert msgFound
+
+        # good data should just have INFO logging
+        predict = Predict(data = [mock_transformed_opp_one])
+        with self.assertLogs(level='INFO'):
+            predict.insert_predictions()
+
 
 if __name__ == '__main__':
     unittest.main()

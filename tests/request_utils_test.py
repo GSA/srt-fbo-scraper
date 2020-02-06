@@ -9,6 +9,7 @@ from utils.request_utils import requests_retry_session, get_opp_request_details,
     get_doc_request_details, get_org_request_details
 from utils.predict import Predict
 from tests.mock_opps import mock_transformed_opp_bad_attachment, mock_transformed_opp_one
+from unittest.mock import MagicMock, Mock
 
 class RequestUtilsTestCase(unittest.TestCase):
 
@@ -83,16 +84,16 @@ class RequestUtilsTestCase(unittest.TestCase):
 
     @requests_mock.Mocker()
     def test_get_opps(self, mock_request):
+
         uri = 'https://www.example.com'
-        #response = {'_embedded': {'results': 'test'},
-        #            'page': {'totalPages': '1'}}
-        response = {'opportunitiesData': [{'test':'data'}],
-                    'totalRecords': 1}
-        mock_request.register_uri('GET',
-                                  url = uri,
-                                  json = response,
-                                  status_code = 200)
-        expected = get_opps(uri, {}, {})
+        response_json = {'_embedded': { 'results' :[{'test':'data'}]},
+                    'page': {'totalPages':1}}
+        response_mock = MagicMock()
+        response_mock.json = Mock(return_value =response_json)
+        session_mock = MagicMock()
+        session_mock.get = Mock(return_value = response_mock )
+
+        expected = get_opps(uri, {}, {},session_mock)
         result = ([{'test':'data'}],1)
         self.assertEqual(result, expected)
 

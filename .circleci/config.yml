@@ -92,23 +92,33 @@ jobs:
             PR_NUMBER="${CIRCLE_PULL_REQUEST//[!0-9]/}"
             TARGET_BRANCH=$(curl -sS https://api.github.com/repos/GSA/${CIRCLE_PROJECT_REPONAME}/pulls/${PR_NUMBER} | jq '.base.ref')
             TARGET_BRANCH=$(echo $TARGET_BRANCH | tr -d '"')
+            echo "Target branch is $TARGET_BRANCH"
             if [ "$TARGET_BRANCH" = "master" ]
             then
                 TARGET_BRANCH=prod
                 CF_ACC=$CF_SERVICE_ACCOUNT_prod
                 CF_PW=$CF_SERVICE_PW_prod
+                echo "Using prod credentials"
             elif [ "$TARGET_BRANCH" = "dev" ]
             then
                 CF_ACC=$CF_SERVICE_ACCOUNT_dev
                 CF_PW=$CF_SERVICE_PW_dev
+                echo "Using dev credentials"
             elif [ "$TARGET_BRANCH" = "staging" ]
             then
                 CF_ACC=$CF_SERVICE_ACCOUNT_staging
                 CF_PW=$CF_SERVICE_PW_staging
+                echo "Using staging credentials"
+            elif [ "$CIRCLE_BRANCH" = "dev" ]
+            then
+                CF_ACC=$CF_SERVICE_ACCOUNT_dev
+                CF_PW=$CF_SERVICE_PW_dev
+                echo "Using dev credentials"
             else
                 :
             fi
 
+            echo "user is $CF_ACC"
             cf login -a https://api.fr.cloud.gov -u $CF_ACC -p $CF_PW -o gsa-ogp-srt -s $TARGET_BRANCH
             TAG=0.1.$CIRCLE_BUILD_NUM
             cf push srt-fbo-scraper-$TARGET_BRANCH --docker-image $DOCKER_USER/srt-fbo-scraper-$TARGET_BRANCH:$TAG -k 4G

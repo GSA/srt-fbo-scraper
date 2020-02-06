@@ -182,3 +182,23 @@ def get_opps(uri, params, headers):
     #    return None, None
     return opps, total_pages
 
+
+def get_opp_by_sol_num(solNum):
+    span_days = 364
+
+    for i in range(4):
+
+        start = (date.today() - timedelta(days= (span_days*i) )).strftime('%m/%d/%Y')
+        end = (date.today() - timedelta(days= (span_days * (i+1)) )).strftime('%m/%d/%Y')
+
+        uri, params, headers = get_opp_request_details()
+        params['solnum'] = solNum
+        params['postedFrom'] = end
+        params['postedTo'] = start
+        opps, total_pages = get_opps(uri, params, headers)
+        if len(opps) > 0:
+            opp = opps[0]
+            break
+
+    return opp
+

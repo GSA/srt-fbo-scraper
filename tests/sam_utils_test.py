@@ -55,8 +55,8 @@ class SamUtilsTestCase(unittest.TestCase):
                 shutil.rmtree('temp_archive')
 
     def test_get_notice_data(self):
-        opp_data = {'pointOfContact': [{'email': 'test@test.gov'}],
-                    'classificationCode': 'test',
+        opp_data = {'pointOfContacts': [{'email': 'test@test.gov'}],
+                    'psc':[{'code':'test'}],
                     'naics': [{"code": ["test"]}],
                     'title': 'test',
                     'solicitation':{'setAside':'test'}
@@ -116,18 +116,31 @@ class SamUtilsTestCase(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_naics_filter(self):
-        opps = [{'data':{'naics': [{'code': ['123','33435']}]}}, #keep
-                {'data':{'naics': [{'code': ['123', '1234']}]}},
-                {'data':{'naics': [{'code': ['33435']}]}},
-                {'data':{'naics': [{'code': ['123']}]}}]
+        #opps = [{'data':{'naics': [{'code': ['123','33435']}]}}, #keep
+        #        {'data':{'naics': [{'code': ['123', '1234']}]}},
+        #        {'data':{'naics': [{'code': ['33435']}]}},
+        #        {'data':{'naics': [{'code': ['123']}]}}]
+
+        #opps = [{'naics': [{'code': ['123','33435']}]}, #keep
+        #        {'naics': [{'code': ['123', '1234']}]},
+        #        {'naics': [{'code': ['33435']}]},
+        #        {'naics': [{'code': ['123']}]}]
+
+        opps = [{'naics': [{'code': '33435'}]},
+                {'naics': [{'code': '123'}]}]
+
         result = naics_filter(opps)
-        expected = [{'data': {'naics': [{'code': ['123','33435']}]}}, 
-                    {'data': {'naics': [{'code': ['33435']}]}}]
+        #expected = [{'data': {'naics': [{'code': ['123','33435']}]}}, 
+        #            {'data': {'naics': [{'code': ['33435']}]}}]
+
+        expected = [{'naics': [{'code': '33435'}]}, 
+                    {'naics': [{'code': '123'}]}]
+
         self.assertEqual(result, expected)
 
     def test_get_dates_from_opp(self):
         opp = {'modifiedDate': '2019-09-19T21:18:20.669+0000',
-               'postedDate': '2019-09-19T21:18:20.669+0000'}
+               'publishDate': '2019-09-19T21:18:20.669+0000'}
         result = get_dates_from_opp(opp)
         expected = (dt.strptime('2019-09-19', "%Y-%m-%d"),
                     dt.strptime('2019-09-19', "%Y-%m-%d"))
@@ -135,7 +148,7 @@ class SamUtilsTestCase(unittest.TestCase):
     
     def test_get_dates_from_opp_diff_fmt(self):
         opp = {'modifiedDate': '2019-09-19 00:00:00',
-               'postedDate': '2019-09-19 00:00:00'}
+               'publishDate': '2019-09-19 00:00:00'}
         result = get_dates_from_opp(opp)
         expected = (dt.strptime('2019-09-19', "%Y-%m-%d"),
                     dt.strptime('2019-09-19', "%Y-%m-%d"))
@@ -155,41 +168,41 @@ class SamUtilsTestCase(unittest.TestCase):
     @patch('utils.sam_utils.get_day')
     def test_find_yesterdays_opps_mod_and_post(self, mock_get_day):
         mock_get_day.side_effect = get_day_side_effect
-        opps = [{'modifiedDate': '2019-09-19 00:00:00', 'postedDate':'2019-09-19 00:00:00'},
-                {'modifiedDate': '2019-09-18 00:00:00', 'postedDate':'2019-09-19 00:00:00'},
-                {'modifiedDate': '2019-09-17 00:00:00', 'postedDate':'2019-09-17 00:00:00'}]
+        opps = [{'modifiedDate': '2019-09-19 00:00:00', 'publishDate':'2019-09-19 00:00:00'},
+                {'modifiedDate': '2019-09-18 00:00:00', 'publishDate':'2019-09-19 00:00:00'},
+                {'modifiedDate': '2019-09-17 00:00:00', 'publishDate':'2019-09-17 00:00:00'}]
         result = find_yesterdays_opps(opps)
-        expected = ([{'modifiedDate': '2019-09-18 00:00:00', 'postedDate':'2019-09-19 00:00:00'}],
+        expected = ([{'modifiedDate': '2019-09-18 00:00:00', 'publishDate':'2019-09-19 00:00:00'}],
                     False)
         self.assertEqual(result, expected)
 
     @patch('utils.sam_utils.get_day')
     def test_find_yesterdays_opps_mod_and_post(self, mock_get_day):
         mock_get_day.side_effect = get_day_side_effect
-        opps = [{'modifiedDate': '2019-09-19 00:00:00', 'postedDate':'2019-09-19 00:00:00'},
-                {'modifiedDate': '2019-09-18 00:00:00', 'postedDate':'2019-09-19 00:00:00'},
-                {'modifiedDate': '2019-09-17 00:00:00', 'postedDate':'2019-09-17 00:00:00'}]
+        opps = [{'modifiedDate': '2019-09-19 00:00:00', 'publishDate':'2019-09-19 00:00:00'},
+                {'modifiedDate': '2019-09-18 00:00:00', 'publishDate':'2019-09-19 00:00:00'},
+                {'modifiedDate': '2019-09-17 00:00:00', 'publishDate':'2019-09-17 00:00:00'}]
         result = find_yesterdays_opps(opps)
-        expected = ([{'modifiedDate': '2019-09-18 00:00:00', 'postedDate':'2019-09-19 00:00:00'}],
+        expected = ([{'modifiedDate': '2019-09-18 00:00:00', 'publishDate':'2019-09-19 00:00:00'}],
                     False)
         self.assertEqual(result, expected)
 
     @patch('utils.sam_utils.get_day')
     def test_find_yesterdays_opps_post_only(self, mock_get_day):
         mock_get_day.side_effect = get_day_side_effect
-        opps = [{'modifiedDate': '2019-09-19 00:00:00', 'postedDate':'2019-09-19 00:00:00'},
-                {'modifiedDate': '2019-09-19 00:00:00', 'postedDate':'2019-09-18 00:00:00'},
-                {'modifiedDate': '2019-09-17 00:00:00', 'postedDate':'2019-09-17 00:00:00'}]
+        opps = [{'modifiedDate': '2019-09-19 00:00:00', 'publishDate':'2019-09-19 00:00:00'},
+                {'modifiedDate': '2019-09-19 00:00:00', 'publishDate':'2019-09-18 00:00:00'},
+                {'modifiedDate': '2019-09-17 00:00:00', 'publishDate':'2019-09-17 00:00:00'}]
         result = find_yesterdays_opps(opps)
-        expected = ([{'modifiedDate': '2019-09-19 00:00:00', 'postedDate':'2019-09-18 00:00:00'}],
+        expected = ([{'modifiedDate': '2019-09-19 00:00:00', 'publishDate':'2019-09-18 00:00:00'}],
                     False)
         self.assertEqual(result, expected)
 
     @patch('utils.sam_utils.get_day')
     def test_find_yesterdays_opps_only_today(self, mock_get_day):
         mock_get_day.side_effect = get_day_side_effect
-        opps = [{'modifiedDate': '2019-09-19 00:00:00', 'postedDate':'2019-09-19 00:00:00'},
-                {'modifiedDate': '2019-09-19 00:00:00', 'postedDate':'2019-09-14 00:00:00'}]
+        opps = [{'modifiedDate': '2019-09-19 00:00:00', 'publishDate':'2019-09-19 00:00:00'},
+                {'modifiedDate': '2019-09-19 00:00:00', 'publishDate':'2019-09-14 00:00:00'}]
         result = find_yesterdays_opps(opps)
         expected = ([],
                     True)
@@ -198,21 +211,21 @@ class SamUtilsTestCase(unittest.TestCase):
     @patch('utils.sam_utils.get_day')
     def test_find_yesterdays_opps_more(self, mock_get_day):
         mock_get_day.side_effect = get_day_side_effect
-        opps = [{'modifiedDate': '2019-09-19 00:00:00', 'postedDate':'2019-09-19 00:00:00'},
-                {'modifiedDate': '2019-09-18 00:00:00', 'postedDate':'2019-09-14 00:00:00'},
-                {'modifiedDate': '2019-09-18 00:00:00', 'postedDate':'2019-09-13 00:00:00'}]
+        opps = [{'modifiedDate': '2019-09-19 00:00:00', 'publishDate':'2019-09-19 00:00:00'},
+                {'modifiedDate': '2019-09-18 00:00:00', 'publishDate':'2019-09-14 00:00:00'},
+                {'modifiedDate': '2019-09-18 00:00:00', 'publishDate':'2019-09-13 00:00:00'}]
         result = find_yesterdays_opps(opps)
-        expected = ([{'modifiedDate': '2019-09-18 00:00:00', 'postedDate':'2019-09-14 00:00:00'},
-                     {'modifiedDate': '2019-09-18 00:00:00', 'postedDate':'2019-09-13 00:00:00'}],
+        expected = ([{'modifiedDate': '2019-09-18 00:00:00', 'publishDate':'2019-09-14 00:00:00'},
+                     {'modifiedDate': '2019-09-18 00:00:00', 'publishDate':'2019-09-13 00:00:00'}],
                     True)
         self.assertEqual(result, expected)
 
     @patch('utils.sam_utils.get_day')
     def test_find_yesterdays_opps_no_more(self, mock_get_day):
         mock_get_day.side_effect = get_day_side_effect
-        opps = [{'modifiedDate': '2019-09-17 00:00:00', 'postedDate':'2019-09-17 00:00:00'},
-                {'modifiedDate': '2019-09-14 00:00:00', 'postedDate':'2019-09-14 00:00:00'},
-                {'modifiedDate': '2019-09-12 00:00:00', 'postedDate':'2019-09-11 00:00:00'}]
+        opps = [{'modifiedDate': '2019-09-17 00:00:00', 'publishDate':'2019-09-17 00:00:00'},
+                {'modifiedDate': '2019-09-14 00:00:00', 'publishDate':'2019-09-14 00:00:00'},
+                {'modifiedDate': '2019-09-12 00:00:00', 'publishDate':'2019-09-11 00:00:00'}]
         result = find_yesterdays_opps(opps)
         expected = ([],
                     False)

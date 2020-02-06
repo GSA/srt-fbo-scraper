@@ -32,7 +32,8 @@ def get_yesterdays_opps(filter_naics = True):
             return filtered_opps
         return opps
 
-    page = 1
+    # the sgs/v1/search API starts at page 0
+    page = 0
     while page <= total_pages:
         params.update({'page': str(page)})
         _opps, _ = get_opps(uri, params, headers)
@@ -103,7 +104,7 @@ def transform_opps(opps, out_path):
     """
     transformed_opps = []
     for opp in opps:
-        logger.debug("transforming notice {}".format(opp['noticeId']))
+        logger.debug("transforming notice {}".format(opp[0]['_id']))
         schematized_opp = schematize_opp(opp)
         if not schematized_opp:
             continue

@@ -239,17 +239,17 @@ class SamUtilsTestCase(unittest.TestCase):
         params['postedFrom'] = '01/26/2020'
         params['postedTo'] = '01/26/2020'
         params['limit'] = 10
+        params['page'] = 0
 
         # dict of opportunites - Page 1
         opps, total_pages = get_opps(uri, params, headers)
         self.assertGreater(total_pages, 1)
 
         # dict of opportunites - Page 2
-        page = 2
-        params.update({'offset': str( page * params['limit'] )})
+        params.update({'page': 1})
         opps_2, total_pages_2 = get_opps(uri, params, headers)
         self.assertGreater(total_pages_2, 1)
-        self.assertNotEqual(opps[0]['noticeId'], opps_2[0]['noticeId'], "We should get different notice IDs on different pages, instead got {} and {}".format(opps[0]['noticeId'], opps_2[0]['noticeId']) )
+        self.assertNotEqual(opps[0]['_id'], opps_2[0]['_id'], "We should get different notice IDs on different pages, instead got {} and {}".format(opps[0]['_id'], opps_2[0]['_id']) )
 
 
 

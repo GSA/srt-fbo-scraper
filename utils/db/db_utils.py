@@ -122,7 +122,8 @@ def fetch_notice_type_id(notice_type, session):
     '''
     try:
         notice_type_id = session.query(db.NoticeType.id).filter(db.NoticeType.notice_type==notice_type).first().id
-    except AttributeError:
+    except AttributeError as e:
+        logger.error("Requested notice type {} was not found.".format(notice_type))
         return
     
     return notice_type_id
@@ -187,6 +188,10 @@ def insert_data(session, data):
     for opp in data:
         notice_type = opp.pop('notice type')
         notice_type_id = fetch_notice_type_id(notice_type, session)
+
+        if notice_type_id == None:
+            logger.error("Notice type was not found when inserting record into the notice table.")
+            continue
 
         attachments = opp.pop('attachments')
         agency = opp.pop('agency')

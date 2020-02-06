@@ -11,6 +11,9 @@ from utils.db.db_utils import get_db_url, session_scope, insert_data, \
                               get_validated_untrained_count, fetch_validated_attachments, \
                               fetch_last_score, fetch_notices_by_solnbr                         
 
+from unittest import mock
+
+
 class DBTestCase(unittest.TestCase):
     
     def setUp(self):
@@ -18,6 +21,10 @@ class DBTestCase(unittest.TestCase):
         self.dal = DataAccessLayer(conn_string = get_db_url())
         self.dal.create_test_postgres_db()
         self.dal.connect()
+
+        with session_scope(self.dal) as session:
+            insert_notice_types(session)
+
         self.maxDiff = None
     
     def tearDown(self):
@@ -28,7 +35,21 @@ class DBTestCase(unittest.TestCase):
         self.dal.drop_test_postgres_db()
         self.dal = None
         self.data = None
-    
+
+    def test_insert_bad_notice(self):
+
+        with session_scope(self.dal) as session:
+            # intentionally bad notice type
+            data = mock_data_for_db.copy()
+            data['notice type'] = "not to be found"
+            self.assertNotEqual(mock_data_for_db['notice type'], data['notice type'])
+
+            with mock.patch.object(session, 'add', wraps=session.add) as monkey:
+                insert_data(session, [ data ])
+                called = monkey.called
+
+        self.assertFalse (called, "notice add operation should not be called by insert_data when notice type is invalid!")
+
     def test_insert_notice_types(self):
         with session_scope(self.dal) as session:
             insert_notice_types(session)

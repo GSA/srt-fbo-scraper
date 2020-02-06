@@ -14,6 +14,8 @@ from tests import mock_opps
 from utils.sam_utils import get_org_info, write_zip_content, get_notice_data, get_notice_type,\
                             schematize_opp, naics_filter, get_dates_from_opp, find_yesterdays_opps
 
+from utils.request_utils import  get_opp_request_details, get_opps
+
 
 class SamUtilsTestCase(unittest.TestCase):
 
@@ -59,8 +61,8 @@ class SamUtilsTestCase(unittest.TestCase):
                     'psc':[{'code':'test'}],
                     'naics': [{"code": ["test"]}],
                     'title': 'test',
-                    'solicitation':{'setAside':'test'}
-                    }
+                    'typeOfSetAside':'test'}
+
         opp_id = '123'
         result = get_notice_data(opp_data, opp_id)
         expected = {'classcod': 'test',
@@ -130,10 +132,10 @@ class SamUtilsTestCase(unittest.TestCase):
                 {'naics': [{'code': '123'}]}]
 
         result = naics_filter(opps)
-        #expected = [{'data': {'naics': [{'code': ['123','33435']}]}}, 
+        #expected = [{'data': {'naics': [{'code': ['123','33435']}]}},
         #            {'data': {'naics': [{'code': ['33435']}]}}]
 
-        expected = [{'naics': [{'code': '33435'}]}, 
+        expected = [{'naics': [{'code': '33435'}]},
                     {'naics': [{'code': '123'}]}]
 
         self.assertEqual(result, expected)
@@ -230,6 +232,26 @@ class SamUtilsTestCase(unittest.TestCase):
         expected = ([],
                     False)
         self.assertEqual(result, expected)
+
+
+    def test_api_pagination(self):
+        uri, params, headers = get_opp_request_details()
+        params['postedFrom'] = '01/26/2020'
+        params['postedTo'] = '01/26/2020'
+        params['limit'] = 10
+
+        # dict of opportunites - Page 1
+        opps, total_pages = get_opps(uri, params, headers)
+        self.assertGreater(total_pages, 1)
+
+        # dict of opportunites - Page 2
+        page = 2
+        params.update({'offset': str( page * params['limit'] )})
+        opps_2, total_pages_2 = get_opps(uri, params, headers)
+        self.assertGreater(total_pages_2, 1)
+        self.assertNotEqual(opps[0]['noticeId'], opps_2[0]['noticeId'], "We should get different notice IDs on different pages, instead got {} and {}".format(opps[0]['noticeId'], opps_2[0]['noticeId']) )
+
+
 
 
 if __name__ == '__main__':

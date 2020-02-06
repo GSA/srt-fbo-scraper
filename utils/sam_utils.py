@@ -125,7 +125,7 @@ def schematize_opp(opp):
     opp_data = opp
     if not opp_data:
         return
-    
+
     #notice_type_code = opp_data.get('type')
     notice_type_code = opp_data.get('type')['value']
 
@@ -137,7 +137,7 @@ def schematize_opp(opp):
     
     #org_id = opp_data.get('organizationId')
 
-    
+
     agency =opp_data.get('organizationHierarchy','')[0].get('name','')
     office =opp_data.get('organizationHierarchy','')[1].get('name','')
 
@@ -248,4 +248,5 @@ def find_yesterdays_opps(opps):
     is_only_todays_opps = True if n_today_opps == len(opps) else False
     is_only_yesterdays_opps = True if n_yesterday_opps == len(opps) else False
     is_more_opps = is_only_todays_opps or is_only_yesterdays_opps or is_today_and_yesterday_opps
+    
     return yesterdays_opps, is_more_opps

@@ -105,15 +105,15 @@ class SamUtilsTestCase(unittest.TestCase):
                        'url': 'https://beta.sam.gov/opp/123/view',
                        'setaside': 'test',
                        'emails': ['test@test.gov']}
-        required_data = {'notice type':'test',
-                         'solnbr': 'test',
-                         'agency': 'agency',
+        required_data = {'notice type':'Award Notice',
+                         'solnbr': 'FY1912306',
+                         'agency': 'DEPARTMENT OF DEFENSE',
                          'compliant': 0,
-                         'office': 'office',
-                         'opp_id': 'test',
+                         'office': 'DEPT OF THE NAVY',
+                         'opp_id': '532e8551391a4ba784e1e186656b6a39',
                          'attachments':[]}
         m_get_notice_data.return_value = notice_data
-        result = schematize_opp(self.opp)
+        result = schematize_opp(self.opp[0])
         expected = {**required_data, **notice_data}
         self.assertEqual(result, expected)
 
@@ -135,8 +135,7 @@ class SamUtilsTestCase(unittest.TestCase):
         #expected = [{'data': {'naics': [{'code': ['123','33435']}]}},
         #            {'data': {'naics': [{'code': ['33435']}]}}]
 
-        expected = [{'naics': [{'code': '33435'}]},
-                    {'naics': [{'code': '123'}]}]
+        expected = [{'naics': [{'code': '33435'}]}]
 
         self.assertEqual(result, expected)
 

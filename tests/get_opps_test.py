@@ -108,9 +108,9 @@ class GetOppsTestCase(unittest.TestCase):
         expected = [mock_opps.mock_transformed_opp_one]
         self.assertEqual(result, expected)
 
-    def test_schematize_opp(self):
-        so = schematize_opp(mock_opp_one)
-        self.assertEqual(so['notice type'], 'opportunity')
+    # def test_schematize_opp(self):
+    #     so = schematize_opp(mock_opp_one)
+    #     self.assertEqual(so['notice type'], 'opportunity')
 
 
 if __name__ == '__main__':

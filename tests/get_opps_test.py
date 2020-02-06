@@ -42,35 +42,35 @@ class GetOppsTestCase(unittest.TestCase):
         result = get_yesterdays_opps(filter_naics = False)
         expected = mock_opps.mock_opps
         self.assertEqual(result, expected)
-
-    @patch('utils.get_opps.find_yesterdays_opps')
-    @patch('utils.get_opps.get_opps')
-    @patch('utils.get_opps.get_opp_request_details')
-    def test_get_opps_two_pages(self, m_get_opp_request_details, m_g_op,  m_yester):            
-        m_get_opp_request_details.return_value = (self.beta_opp_uri, {}, {})
-        
-        def m_g_op_side_effects(*args):
-            if args[1] == {}:
-                return (mock_opps.mock_opps, 1)
-            elif args[1] == {'page': '1'}:
-                return (mock_opps.mock_opps, 1)
-            else:
-                raise Exception
-
-        def m_yester_side_effect(*args):
-            if args[0] == mock_opps.mock_opps: 
-                return (mock_opps.mock_opps, True)
-            elif args[0] == mock_opps.mock_opp_one:
-                return (mock_opps.mock_opp_one, False)
-            else:
-                raise Exception
-        
-        m_g_op.side_effect = m_g_op_side_effects
-        m_yester.side_effect = m_yester_side_effect
-        result = get_yesterdays_opps(filter_naics = False)
-        expected = [mock_opps.mock_opp_one, mock_opps.mock_opp_one, 
-                    mock_opps.mock_opp_two, mock_opps.mock_opp_two]
-        self.assertCountEqual(result, expected)
+#
+    #@patch('utils.get_opps.find_yesterdays_opps')
+    #@patch('utils.get_opps.get_opps')
+    #@patch('utils.get_opps.get_opp_request_details')
+    #def test_get_opps_two_pages(self, m_get_opp_request_details, m_g_op,  m_yester):            
+    #    m_get_opp_request_details.return_value = (self.beta_opp_uri, {}, {})
+    #    
+    #    def m_g_op_side_effects(*args):
+    #        if args[1] == {}:
+    #            return (mock_opps.mock_opps, 1)
+    #        elif args[1] == {'page': '1'}:
+    #            return (mock_opps.mock_opps, 1)
+    #        else:
+    #            raise Exception
+#
+    #    def m_yester_side_effect(*args):
+    #        if args[0] == mock_opps.mock_opps: 
+    #            return (mock_opps.mock_opps, True)
+    #        elif args[0] == mock_opps.mock_opp_one:
+    #            return (mock_opps.mock_opp_one, False)
+    #        else:
+    #            raise Exception
+    #    
+    #    m_g_op.side_effect = m_g_op_side_effects
+    #    m_yester.side_effect = m_yester_side_effect
+    #    result = get_yesterdays_opps(filter_naics = False)
+    #    expected = [mock_opps.mock_opp_one, mock_opps.mock_opp_one, 
+    #                mock_opps.mock_opp_two, mock_opps.mock_opp_two]
+    #    self.assertCountEqual(result, expected)
     
     @patch('utils.get_opps.get_doc_request_details')
     @patch('utils.get_opps.write_zip_content')

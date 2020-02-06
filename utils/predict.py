@@ -94,15 +94,36 @@ class Predict():
             if 'attachments' in opp:
                 attachments = opp['attachments']
                 compliant_counter = 0
+                stats = {"chars": [], "prediction": [], "decision boundry": [], "raw prediction": [] }
                 for attachment in attachments:
                     text = attachment['text']
+                    if re.match('^.?This notice contains link\(s\)',text):
+                        logger.error("Notice {} has suspicious attachment text. Text begins with: {}".format(opp['solnbr'], text[:60] ))
                     normalized_text = [Predict.transform_text(text)]
-                    pred = int(pickled_model.predict(normalized_text)[0])
+                    raw_prediction = pickled_model.predict(normalized_text)[0]
+                    pred = int(raw_prediction)
                     compliant_counter += 1 if pred == 1 else 0
                     dec_func = pickled_model.decision_function(normalized_text)[0]
                     decision_boundary = float(abs(dec_func))
                     attachment['prediction'] = pred
                     attachment['decision_boundary'] = decision_boundary
+                    stats['chars'].append(len(attachment['text']))
+                    stats['prediction'].append(pred)
+                    stats['decision boundry'].append(decision_boundary)
+                    stats['raw prediction'].append(int(raw_prediction))
                 opp['compliant'] = 0 if compliant_counter == 0 else 1
+
+                logger.info(
+                    "Statistics for notice {} {}:  # attachments: {} , chars in all attachments: {} , predictions: {} , decision boundries: {} , raw predictions: {}".format(
+                        opp['agency'],
+                        opp['solnbr'],
+                        len(attachments),
+                        sum( stats['chars'] ),
+                        json.dumps(stats['prediction']),
+                        json.dumps(stats['decision boundry']),
+                        json.dumps(stats['raw prediction']),
+
+                    ))
+
 
         return data

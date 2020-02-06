@@ -1,9 +1,10 @@
 import logging
 import os
 import sys
+import json
+import wget
 
 import requests
-import wget
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from utils.get_doc_text import get_doc_text
@@ -41,7 +42,7 @@ def get_yesterdays_opps(filter_naics = True):
             break
         page += 1
     
-    if filter_naics:  
+    if filter_naics:
         filtered_opps = naics_filter(opps)
         return filtered_opps
     
@@ -102,6 +103,7 @@ def transform_opps(opps, out_path):
     """
     transformed_opps = []
     for opp in opps:
+        logger.debug("transforming notice {}".format(opp['noticeId']))
         schematized_opp = schematize_opp(opp)
         if not schematized_opp:
             continue

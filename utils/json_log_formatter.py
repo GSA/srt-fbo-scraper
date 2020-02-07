@@ -16,20 +16,25 @@ class CustomJsonFormatter(jsonlogger.JsonFormatter):
             log_record['level'] = record.levelname
 
 
-def configureLogger(logger, level = logging.INFO):
+def configureLogger(logger, log_file_level = logging.INFO, stdout_level = 11):
 
-    logger.setLevel(level)
+    # stdout_level defaults to 11 so we get everything even a tiny bit more critical than DEBUG in the cloud.gov logs
+    logger.setLevel(stdout_level)
 
     # json output setup
     logHandler = logging.StreamHandler()
-    formatter = CustomJsonFormatter('(timestamp) (level) (name) (message)') # jsonlogger.JsonFormatter()
+    formatter = CustomJsonFormatter('(timestamp) (level) (name) (message) (filename) (funcName) (lineno)') # jsonlogger.JsonFormatter()
     logHandler.setFormatter(formatter)
+    logHandler.setLevel(stdout_level)
     logger.addHandler(logHandler)
 
     # file handler
     fh = logging.FileHandler(r'smartie-logger.log')
     fh.setFormatter( logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+    fh.setLevel(log_file_level)
     logger.addHandler(fh)
+
+    logger.info('set log levels to {} and {}'.format(log_file_level, stdout_level))
 
     return logger
 

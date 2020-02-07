@@ -101,7 +101,6 @@ def transform_opps(opps, out_path):
     """
     transformed_opps = []
     for opp in opps:
-        # logger.debug("transforming notice {}".format(opp[0]['_id']))
         schematized_opp = schematize_opp(opp)
         if not schematized_opp:
             continue

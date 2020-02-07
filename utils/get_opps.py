@@ -1,10 +1,7 @@
 import logging
 import os
 import sys
-import json
 import wget
-
-import requests
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from utils.get_doc_text import get_doc_text
@@ -65,7 +62,7 @@ def get_docs(opp_id, out_path):
     except Exception as e:
         logger.error(f"Exception {e} getting opps from {uri}", exc_info=True)
         #sys.exit(1)
-        logger.warning("Falling back to wget for {}".format(uri))
+        logger.warning("Falling back to wget for {}".format(uri), extra={'opportunity ID': opp_id})
         fname  = wget.download(uri)
         f = open(fname, mode='rb')
         content = f.read()
@@ -104,7 +101,6 @@ def transform_opps(opps, out_path):
     """
     transformed_opps = []
     for opp in opps:
-        # logger.debug("transforming notice {}".format(opp[0]['_id']))
         schematized_opp = schematize_opp(opp)
         if not schematized_opp:
             continue

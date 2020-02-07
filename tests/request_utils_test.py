@@ -116,12 +116,18 @@ class RequestUtilsTestCase(unittest.TestCase):
             for msg in a.output:
                 if re.match(".*suspicious attachment.*", msg):
                     msgFound = True
-            assert msgFound
+            self.assertTrue(msgFound)
 
         # good data should just have INFO logging
         predict = Predict(data = [mock_transformed_opp_one])
-        with self.assertLogs(level='INFO'):
+        with self.assertLogs(level=15) as a:
             predict.insert_predictions()
+            msgFound = False
+            for msg in a.output:
+                if re.match(".*suspicious attachment.*", msg):
+                    msgFound = True
+            self.assertFalse(msgFound)
+
 
 
 if __name__ == '__main__':

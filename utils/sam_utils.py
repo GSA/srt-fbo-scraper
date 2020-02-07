@@ -126,6 +126,7 @@ def schematize_opp(opp):
     opp_data = opp
     if not opp_data:
         return
+
     #notice_type_code = opp_data.get('type')
     notice_type_code = opp_data.get('type')['value']
 

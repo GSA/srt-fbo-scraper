@@ -25,6 +25,8 @@ class CustomJsonFormatter(jsonlogger.JsonFormatter):
             if (l_int >=10) and (l_int < 20): # greater than DEBUG but less then INFO gets marked as debug for log searching
                 log_record['level'] = 'debug'
 
+
+
 def configureLogger(logger, log_file_level = logging.INFO, stdout_level = 11):
 
     # stdout_level defaults to 11 so we get everything even a tiny bit more critical than DEBUG in the cloud.gov logs

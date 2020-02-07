@@ -26,6 +26,7 @@ class CustomJsonFormatter(jsonlogger.JsonFormatter):
                 log_record['level'] = 'debug'
 
 def configureLogger(logger, log_file_level = logging.INFO, stdout_level = 11):
+
     # stdout_level defaults to 11 so we get everything even a tiny bit more critical than DEBUG in the cloud.gov logs
     logger.setLevel(stdout_level)
 

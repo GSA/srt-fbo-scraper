@@ -244,7 +244,7 @@ def find_yesterdays_opps(opps):
             pass
 
     # the entries are ordered by date so once it gets past yesterday we can stop
-    dateStr = opps[0]['modifiedDate'][0:10]
+    dateStr = opps[-1:][0]['modifiedDate'][0:10]
     modDate = dt.strptime(dateStr, '%Y-%m-%d')
     if modDate < get_day('yesterday'):
         is_more_opps = False

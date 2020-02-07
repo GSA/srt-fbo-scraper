@@ -122,7 +122,8 @@ def fetch_notice_type_id(notice_type, session):
     '''
     try:
         notice_type_id = session.query(db.NoticeType.id).filter(db.NoticeType.notice_type==notice_type).first().id
-    except AttributeError:
+    except AttributeError as e:
+        logger.debug("Requested notice type {} was not found.".format(notice_type))
         return
     
     return notice_type_id
@@ -184,9 +185,21 @@ def insert_data(session, data):
         None
     '''
     insert_notice_types(session)
+    opp_count = 0
+    skip_count = 0
     for opp in data:
         notice_type = opp.pop('notice type')
         notice_type_id = fetch_notice_type_id(notice_type, session)
+
+        if notice_type_id == None:
+            logger.error("Notice {} was not inserted into the database because the notice type '{}' was not found".format(opp.get('solnbr', ''), notice_type),
+                         extra= {
+                             'notice type': notice_type,
+                             'soliciation number': opp.get('solnbr', ''),
+                             'agency': opp.get('agency', '')
+                         })
+            skip_count += 1
+            continue
 
         attachments = opp.pop('attachments')
         agency = opp.pop('agency')
@@ -228,6 +241,9 @@ def insert_data(session, data):
                                         trained = doc['trained'])
             notice.attachments.append(attachment)
         session.add(notice)
+        opp_count += 1
+
+    logger.info("Added {} notice records to the database. {} were skipped.".format(opp_count, skip_count))
 
 def get_validation_count(session):
     '''

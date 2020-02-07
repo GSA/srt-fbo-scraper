@@ -242,12 +242,13 @@ def find_yesterdays_opps(opps):
             todays_opps.append(opp)
         else:
             pass
-    n_today_opps = len(todays_opps)
-    n_yesterday_opps = len(yesterdays_opps)
 
-    is_today_and_yesterday_opps = (n_today_opps + n_yesterday_opps) == len(opps)
-    is_only_todays_opps = True if n_today_opps == len(opps) else False
-    is_only_yesterdays_opps = True if n_yesterday_opps == len(opps) else False
-    is_more_opps = is_only_todays_opps or is_only_yesterdays_opps or is_today_and_yesterday_opps
-    
+    # the entries are ordered by date so once it gets past yesterday we can stop
+    dateStr = opps[0]['modifiedDate'][0:10]
+    modDate = dt.strptime(dateStr, '%Y-%m-%d')
+    if modDate < get_day('yesterday'):
+        is_more_opps = False
+    else:
+        is_more_opps = True
+
     return yesterdays_opps, is_more_opps

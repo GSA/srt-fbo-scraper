@@ -126,7 +126,6 @@ def schematize_opp(opp):
     opp_data = opp
     if not opp_data:
         return
-
     #notice_type_code = opp_data.get('type')
     notice_type_code = opp_data.get('type')['value']
 
@@ -142,7 +141,7 @@ def schematize_opp(opp):
     agency =opp_data.get('organizationHierarchy','')[0].get('name','')
     office =opp_data.get('organizationHierarchy','')[1].get('name','')
 
-    solicitation_number = opp_data.get('cleanSolicitationNumber','')
+    solicitation_number = opp_data.get('solicitationNumber','')
     #agency, office = get_org_info(org_id)
     #agency = opp_data
     

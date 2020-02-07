@@ -3,7 +3,6 @@ import logging
 import os
 import sys
 from random import randint
-from datetime import datetime,timedelta,date
 
 
 
@@ -67,7 +66,6 @@ def get_doc_request_details(opp_id):
 def get_opp_request_details():
     # see https://open.gsa.gov/api/opportunities-api/#get-list-of-opportunities
     BETA_SAM_API_KEY = os.getenv('BETA_SAM_API_KEY_PUB')
-
     ALPHA_SAM_API_KEY = os.getenv('ALPHA_SAM_API_KEY')
     SAM_AUTHORIZER = os.getenv('SAM_AUTHORIZER')
 
@@ -87,7 +85,6 @@ def get_opp_request_details():
               'index':'opp'}
 
     uri = os.getenv('API_URL')
-
     headers = {'Authorization': SAM_AUTHORIZER}
     
     return uri, params, headers

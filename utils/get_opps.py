@@ -40,7 +40,7 @@ def get_yesterdays_opps(filter_naics = True, limit = None):
             break
         page += 1
     
-    if filter_naics:
+    if filter_naics:  
         filtered_opps = naics_filter(opps)
         return filtered_opps
     

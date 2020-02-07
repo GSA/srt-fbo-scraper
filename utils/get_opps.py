@@ -13,7 +13,7 @@ from utils.request_utils import requests_retry_session, get_opps, get_opp_reques
 logger = logging.getLogger(__name__)
 
 
-def get_yesterdays_opps(filter_naics = True):
+def get_yesterdays_opps(filter_naics = True, limit = None):
     uri, params, headers = get_opp_request_details()
     opps, total_pages = get_opps(uri, params, headers)
     if not opps and not total_pages:
@@ -36,7 +36,7 @@ def get_yesterdays_opps(filter_naics = True):
         _opps, _ = get_opps(uri, params, headers)
         _opps, _is_more_opps = find_yesterdays_opps(_opps)
         opps.extend(_opps)
-        if not _is_more_opps:
+        if (not _is_more_opps) or (limit and len(opps) > limit):
             break
         page += 1
     
@@ -113,11 +113,11 @@ def transform_opps(opps, out_path):
         transformed_opps.append(schematized_opp)
     return transformed_opps
 
-def main():
+def main(limit=None):
     out_path = os.path.join(os.getcwd(), 'attachments')
     if not os.path.exists(out_path):
         os.makedirs(out_path)
-    opps = get_yesterdays_opps()
+    opps = get_yesterdays_opps(limit=limit)
     if not opps:
         return []
     transformed_opps = transform_opps(opps, out_path)

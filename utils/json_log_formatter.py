@@ -1,6 +1,7 @@
 import logging
 from pythonjsonlogger import jsonlogger
 from datetime import datetime
+import re
 
 class CustomJsonFormatter(jsonlogger.JsonFormatter):
 
@@ -11,9 +12,19 @@ class CustomJsonFormatter(jsonlogger.JsonFormatter):
             now = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%fZ')
             log_record['timestamp'] = now
         if log_record.get('level'):
-            log_record['level'] = log_record['level'].upper()
+            log_record['level'] = log_record['level'].lower()
+            if (log_record['level'] == 'level 12'):
+                log_record['level'] = 'found it top'
         else:
-            log_record['level'] = record.levelname
+            log_record['level'] = record.levelname.lower()
+
+        # did we set the level numerically?
+        matches = re.match("level ([0-9]*)", log_record['level'])
+        if matches:
+            l_int = int( matches.group(1) )
+            if (l_int >=10) and (l_int < 20): # greater than DEBUG but less then INFO gets marked as debug for log searching
+                log_record['level'] = 'debug'
+
 
 
 def configureLogger(logger, log_file_level = logging.INFO, stdout_level = 11):

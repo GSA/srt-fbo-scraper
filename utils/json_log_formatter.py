@@ -2,6 +2,7 @@ import logging
 from pythonjsonlogger import jsonlogger
 from datetime import datetime
 import re
+from sys import stdout
 
 class CustomJsonFormatter(jsonlogger.JsonFormatter):
 
@@ -33,7 +34,7 @@ def configureLogger(logger, log_file_level = logging.INFO, stdout_level = 11):
     logger.setLevel(stdout_level)
 
     # json output setup
-    logHandler = logging.StreamHandler()
+    logHandler = logging.StreamHandler(stdout)
     formatter = CustomJsonFormatter('(timestamp) (level) (name) (message) (filename) (funcName) (lineno)') # jsonlogger.JsonFormatter()
     logHandler.setFormatter(formatter)
     logHandler.setLevel(stdout_level)

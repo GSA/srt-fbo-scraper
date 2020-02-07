@@ -82,9 +82,7 @@ class RequestUtilsTestCase(unittest.TestCase):
         finally:
             del os.environ["BETA_SAM_API_KEY"]
 
-    @requests_mock.Mocker()
-    def test_get_opps(self, mock_request):
-
+    def test_get_opps(self):
         uri = 'https://www.example.com'
         response_json = {'_embedded': { 'results' :[{'test':'data'}]},
                     'page': {'totalPages':1}}

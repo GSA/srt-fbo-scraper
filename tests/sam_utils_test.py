@@ -106,7 +106,7 @@ class SamUtilsTestCase(unittest.TestCase):
                        'setaside': 'test',
                        'emails': ['test@test.gov']}
         required_data = {'notice type':'Award Notice',
-                         'solnbr': 'FY19-12306',
+                         'solnbr': 'FY1912306',
                          'agency': 'DEPARTMENT OF DEFENSE',
                          'compliant': 0,
                          'office': 'DEPT OF THE NAVY',

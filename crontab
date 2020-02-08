@@ -1,2 +1,2 @@
-# Run every day at 4am 
-0 6 * * * python main.py
+# Run every day at 3:15 PM 
+15 18 * * * python main.py

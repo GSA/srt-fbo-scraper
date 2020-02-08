@@ -4,15 +4,14 @@ import sys
 import unittest
 from unittest.mock import patch
 
-import responses
 import requests_mock
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from tests import mock_opps
 from tests.test_utils import get_zip_in_memory
 from utils.get_opps import get_yesterdays_opps, get_docs, get_attachment_data, \
-                           transform_opps, main
-
+                           transform_opps, schematize_opp
+from tests.mock_opps import mock_opp_one
 
 class GetOppsTestCase(unittest.TestCase):
 
@@ -108,6 +107,11 @@ class GetOppsTestCase(unittest.TestCase):
         # repeat 3 times since opps has three records
         expected = [mock_opps.mock_transformed_opp_one]
         self.assertEqual(result, expected)
+
+    # def test_schematize_opp(self):
+    #     so = schematize_opp(mock_opp_one)
+    #     self.assertEqual(so['notice type'], 'opportunity')
+
 
 if __name__ == '__main__':
     unittest.main()

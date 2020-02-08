@@ -42,7 +42,11 @@ Local setup requires:
  - PostgreSQL 9.6.8 (newer versions are likely fine)
 
  Once you've got the above prerequisites met, you'll need to install several OS-specific dependencies to get Python's `textract` library to work. This library is responsible for extracting the text from the myriad solicitation documents. It does so by calling several different OS-specific packages. See their [documentation](https://textract.readthedocs.io/en/stable/installation.html) for more details on the packages you'll need to install given your OS.
-
+ As of January 28, the Linux/Debian prerequisites for textract are:
+ ```bash
+apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext \
+                            tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig
+ ```
 #### Local Implementation
 
 Now that you have Python, PostgreSQL, and the textract dependencies, you can run the scan locally within a virtual environment (using [venv](https://docs.python.org/3.6/library/venv.html)). Doing so will create a database with the following connection string: `postgresql+psycopg2://localhost/test`. Make sure postgres is already running in the background and accepting connections on localhost.

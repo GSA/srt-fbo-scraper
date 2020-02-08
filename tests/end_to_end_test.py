@@ -25,7 +25,7 @@ class EndToEndTest(unittest.TestCase):
 
     def test_main(self):
         with self.subTest():
-            main()
+            main(limit = 20)
             self.assertTrue(True)
 
 if __name__ == '__main__':

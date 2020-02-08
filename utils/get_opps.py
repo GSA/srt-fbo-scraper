@@ -1,9 +1,7 @@
 import logging
 import os
 import sys
-import json
-
-import requests
+import wget
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from utils.get_doc_text import get_doc_text
@@ -15,16 +13,14 @@ from utils.request_utils import requests_retry_session, get_opps, get_opp_reques
 logger = logging.getLogger(__name__)
 
 
-def get_yesterdays_opps(filter_naics = True):
+def get_yesterdays_opps(filter_naics = True, limit = None):
     uri, params, headers = get_opp_request_details()
-    #dict of opportunites
     opps, total_pages = get_opps(uri, params, headers)
     if not opps and not total_pages:
         # no opps or maybe a request error
         return
     # use yesterday's since today's might not be complete at time of running the script
     opps, is_more_opps = find_yesterdays_opps(opps)
-
     if not is_more_opps:
         # Our results included opps beyond today and yesterday. Since the results are 
         # sorted in descending order by modifiedDate, there's no need to make another request
@@ -33,19 +29,21 @@ def get_yesterdays_opps(filter_naics = True):
             return filtered_opps
         return opps
 
-    page = 1
-    while page < int(total_pages):
+    # the sgs/v1/search API starts at page 0
+    page = 0
+    while page <= total_pages:
         params.update({'page': str(page)})
         _opps, _ = get_opps(uri, params, headers)
         _opps, _is_more_opps = find_yesterdays_opps(_opps)
         opps.extend(_opps)
-        if not _is_more_opps:
+        if (not _is_more_opps) or (limit and len(opps) > limit):
             break
         page += 1
     
-    if filter_naics:
+    if filter_naics:  
         filtered_opps = naics_filter(opps)
         return filtered_opps
+    
     return opps
 
 def get_docs(opp_id, out_path):
@@ -61,13 +59,24 @@ def get_docs(opp_id, out_path):
     try:
         with requests_retry_session() as session:
             r = session.get(uri, timeout = 200)
+
     except Exception as e:
         logger.error(f"Exception {e} getting opps from {uri}", exc_info=True)
-        sys.exit(1)
+        #sys.exit(1)
+        logger.warning("Falling back to wget for {}".format(uri), extra={'opportunity ID': opp_id})
+        fname  = wget.download(uri)
+        f = open(fname, mode='rb')
+        content = f.read()
+        f.close()
+        os.unlink(fname)
+        file_list = write_zip_content(content, out_path)
+        return file_list
+
     if r.ok:
         file_list = write_zip_content(r.content, out_path)
     else:
         logger.error(f"Non-200 status code of {r.status_code} from {uri}")
+
     return file_list
 
 def get_attachment_data(file_name, url):
@@ -96,8 +105,7 @@ def transform_opps(opps, out_path):
         schematized_opp = schematize_opp(opp)
         if not schematized_opp:
             continue
-        #url = schematized_opp.get('url','')
-        url = schematized_opp.get('uiLink','')
+        url = schematized_opp.get('url','')
         opp_id = schematized_opp.pop('opp_id')
         file_list = get_docs(opp_id, out_path)
         if file_list:
@@ -106,11 +114,11 @@ def transform_opps(opps, out_path):
         transformed_opps.append(schematized_opp)
     return transformed_opps
 
-def main():
+def main(limit=None):
     out_path = os.path.join(os.getcwd(), 'attachments')
     if not os.path.exists(out_path):
         os.makedirs(out_path)
-    opps = get_yesterdays_opps()
+    opps = get_yesterdays_opps(limit=limit)
     if not opps:
         return []
     transformed_opps = transform_opps(opps, out_path)
@@ -121,3 +129,4 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO,
                         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     transformed_opps = main()
+    

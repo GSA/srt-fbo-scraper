@@ -94,15 +94,45 @@ class Predict():
             if 'attachments' in opp:
                 attachments = opp['attachments']
                 compliant_counter = 0
+                stats = {"chars": [], "prediction": [], "decision boundry": [], "raw prediction": [] }
                 for attachment in attachments:
                     text = attachment['text']
+                    if re.match('^.?This notice contains link\(s\)',text):
+                        logger.error("Notice {} - {} has suspicious attachment text.".format(opp['solnbr'], opp.get('agency', '') ),
+                                     extra={
+                                         'text': text[:1024],
+                                         'solNum': opp.get('solnbr', ''),
+                                         'agency': opp.get('agency', ''),
+                                         'notice type': opp.get('notice type', '')
+                                     })
                     normalized_text = [Predict.transform_text(text)]
-                    pred = int(pickled_model.predict(normalized_text)[0])
+                    raw_prediction = pickled_model.predict(normalized_text)[0]
+                    pred = int(raw_prediction)
                     compliant_counter += 1 if pred == 1 else 0
                     dec_func = pickled_model.decision_function(normalized_text)[0]
                     decision_boundary = float(abs(dec_func))
                     attachment['prediction'] = pred
                     attachment['decision_boundary'] = decision_boundary
+                    stats['chars'].append(len(attachment['text']))
+                    stats['prediction'].append(pred)
+                    stats['decision boundry'].append(decision_boundary)
+                    stats['raw prediction'].append(int(raw_prediction))
                 opp['compliant'] = 0 if compliant_counter == 0 else 1
+
+                logger.log(
+                    level= 15,
+                    msg="Statistics for notice {} {}".format(opp['agency'],opp['solnbr']),
+                    extra={
+                        'attachments': len(attachments) ,
+                        'chars': sum(stats['chars']),
+                        'predictions':stats['prediction'],
+                        'decision boundries': stats['decision boundry'],
+                        'raw predictions': stats['raw prediction']}
+                    )
+
+                if opp['compliant'] == 1:
+                    logger.log(level=16, msg="Notice {} {} is predectied to be COMPLIANT".format(opp['agency'], opp['solnbr']) )
+                else:
+                    logger.log(level=16, msg="Notice {} {} is predectied to be not compliant".format(opp['agency'], opp['solnbr']) )
 
         return data

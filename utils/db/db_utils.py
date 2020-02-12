@@ -128,12 +128,30 @@ def fetch_notice_type_id(notice_type, session):
     
     return notice_type_id
 
-def insert_notice_types(session):
+
+def fetch_notice_type_by_id(notice_type_id, session):
+    '''
+    Fetch the notice_type for a given notice_type_id.
+
+    Parameters:
+        notice_type_id (int): a notice type_id
+
+    Returns:
+        None or notice_type object
+    '''
+    try:
+        notice_type = session.query(db.NoticeType).filter(db.NoticeType.id == notice_type_id).first()
+    except AttributeError as e:
+        logger.warn("Requested notice type ID {} was not found.".format(notice_type_id))
+        return
+
+    return notice_type
+
+
+def insert_notice_types(session, sam_notice_types= ['Combined Synopsis/Solicitation', 'Presolicitation', 'Solicitation', 'TRAIN'] ):
     '''
     Insert each of the notice types into the notice_type table if it isn't already there.
     '''
-    sam_notice_types = ['Combined Synopsis/Solicitation', 
-                        'Presolicitation', 'Solicitation', 'TRAIN']
     
     for notice_type in sam_notice_types:
         notice_type_id = fetch_notice_type_id(notice_type, session)
@@ -154,11 +172,10 @@ def fetch_notice_type_by_id(notice_type_id, session):
     '''
     try:
         notice_type_obj = session.query(db.NoticeType).get(notice_type_id)
-        notice_type = notice_type_obj.notice_type
     except AttributeError:
-        return
+        return None
     
-    return notice_type
+    return notice_type_obj
 
 def insert_model(session, results, params, score):
     '''
@@ -192,14 +209,14 @@ def insert_data(session, data):
         notice_type_id = fetch_notice_type_id(notice_type, session)
 
         if notice_type_id == None:
-            logger.error("Notice {} was not inserted into the database because the notice type '{}' was not found".format(opp.get('solnbr', ''), notice_type),
+            logger.warning("Notice type '{}' found in Notice {} was not in the database".format(notice_type, opp.get('solnbr', '')),
                          extra= {
                              'notice type': notice_type,
                              'soliciation number': opp.get('solnbr', ''),
                              'agency': opp.get('agency', '')
                          })
-            skip_count += 1
-            continue
+            insert_notice_types(session, [notice_type])
+            notice_type_id = fetch_notice_type_id(notice_type, session)
 
         attachments = opp.pop('attachments')
         agency = opp.pop('agency')

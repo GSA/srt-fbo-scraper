@@ -1,8 +1,8 @@
 FROM python:3.6.6
 
-ENV SUPERCRONIC_URL=https://github.com/albertcrowley/supercronic/releases/download/cloud-1/supercronic-linux-x86 \
+ENV SUPERCRONIC_URL=https://github.com/albertcrowley/supercronic/releases/download/cloud-2/supercronic-linux-x86 \
     SUPERCRONIC=supercronic-linux-x86 \
-    SUPERCRONIC_SHA1SUM=5aca6da8b870d42177dfa7917cc735c7cadedf64
+    SUPERCRONIC_SHA1SUM=2b5144dee1af0dc07c372c3c45026dd42af81226
 
 RUN apt-get update && apt-get install -y \
     antiword \

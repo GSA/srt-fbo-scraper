@@ -1,8 +1,8 @@
 FROM python:3.6.6
 
-ENV SUPERCRONIC_URL=https://github.com/aptible/supercronic/releases/download/v0.1.6/supercronic-linux-amd64 \
-    SUPERCRONIC=supercronic-linux-amd64 \
-    SUPERCRONIC_SHA1SUM=c3b78d342e5413ad39092fd3cfc083a85f5e2b75
+ENV SUPERCRONIC_URL=https://github.com/albertcrowley/supercronic/releases/download/cloud-2/supercronic-linux-x86 \
+    SUPERCRONIC=supercronic-linux-x86 \
+    SUPERCRONIC_SHA1SUM=2b5144dee1af0dc07c372c3c45026dd42af81226
 
 RUN apt-get update && apt-get install -y \
     antiword \
@@ -49,4 +49,4 @@ RUN pip install -r requirements.txt
 
 ENTRYPOINT ["supercronic"]
 
-CMD ["crontab"]
+CMD ["-raw","crontab"]

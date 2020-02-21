@@ -1,6 +1,7 @@
 import unittest
 import sys
 import os
+import logging
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from tests.mock_opps import mock_data_for_db
 from utils.db.db import Notice, NoticeType, Attachment, Model, now_minus_two
@@ -9,7 +10,10 @@ from utils.db.db_utils import get_db_url, session_scope, insert_data, \
                               insert_model, insert_notice_types, retrain_check, \
                               get_validation_count, get_trained_count, \
                               get_validated_untrained_count, fetch_validated_attachments, \
-                              fetch_last_score, fetch_notices_by_solnbr                         
+                              fetch_last_score, fetch_notices_by_solnbr, fetch_notice_type_by_id
+
+from unittest import mock
+
 
 from unittest import mock
 
@@ -38,17 +42,20 @@ class DBTestCase(unittest.TestCase):
 
     def test_insert_bad_notice(self):
 
+        call_count = 0
         with session_scope(self.dal) as session:
             # intentionally bad notice type
             data = mock_data_for_db.copy()
             data['notice type'] = "not to be found"
             self.assertNotEqual(mock_data_for_db['notice type'], data['notice type'])
 
-            with mock.patch.object(session, 'add', wraps=session.add) as monkey:
-                insert_data(session, [ data ])
-                called = monkey.called
+            logger = logging.getLogger("utils.db.db_utils")
+            print (logger)
 
-        self.assertFalse (called, "notice add operation should not be called by insert_data when notice type is invalid!")
+            with mock.patch.object(logger, 'warning', wraps=logger.warning):
+                insert_data(session, [ data ])
+                call_count = logger.warning.call_count
+        self.assertEqual (1, call_count, "We should get one warning when adding a notice with a new notice type.")
 
     def test_insert_notice_types(self):
         with session_scope(self.dal) as session:
@@ -96,6 +103,22 @@ class DBTestCase(unittest.TestCase):
                      'updatedAt': None,
                      'na_flag': False}]
         self.assertCountEqual(result, expected)
+
+    def test_insert_data_with_new_notice_type(self):
+        opp = self.data[0].copy()
+        nnt = "new notice type"
+        opp['notice type'] = nnt
+        with session_scope(self.dal) as session:
+            insert_data(session, [opp])
+        result = []
+        with session_scope(self.dal) as session:
+            notices = session.query(Notice).all()
+            for n in notices:
+                notice = object_as_dict(n)
+                notice_type_id = int(notice['notice_type_id'])
+                notice_type = fetch_notice_type_by_id(notice_type_id, session)
+                self.assertCountEqual(notice_type.notice_type, nnt)
+
 
     def test_insert_model(self):
         results = {'c': 'd'}

@@ -13,7 +13,7 @@ from urllib3.util.retry import Retry
 logger = logging.getLogger(__name__)
 
 def requests_retry_session(retries=3, 
-                           backoff_factor=0.3, 
+                           backoff_factor=0.3,
                            status_forcelist=(500, 502, 503, 504), 
                            session=None):
     '''
@@ -86,6 +86,7 @@ def get_opp_request_details():
               'index':'opp'}
 
     uri = os.getenv('API_URL')
+
     headers = {'Authorization': SAM_AUTHORIZER}
     
     return uri, params, headers
@@ -108,7 +109,7 @@ def get_opps(uri, params, headers, session = None):
         else:
             logger.error(f"{e}: making request to {uri}:\n{data_str}")
         return None, None
-    
+
     return opps, total_pages
 
 

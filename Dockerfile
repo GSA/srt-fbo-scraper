@@ -4,6 +4,10 @@ ENV SUPERCRONIC_URL=https://github.com/albertcrowley/supercronic/releases/downlo
     SUPERCRONIC=supercronic-linux-x86 \
     SUPERCRONIC_SHA1SUM=2b5144dee1af0dc07c372c3c45026dd42af81226
 
+ADD requirements.txt .
+
+RUN pip install -r requirements.txt
+
 RUN apt-get update && apt-get install -y \
     antiword \
     build-essential \
@@ -44,8 +48,6 @@ ADD . .
 
 #see https://docs.cloudfoundry.org/devguide/deploy-apps/push-docker.html
 COPY ./conf/passwd /etc/passwd
-
-RUN pip install -r requirements.txt
 
 ENTRYPOINT ["supercronic"]
 

@@ -24,8 +24,8 @@ class GetDocTextTestCase(unittest.TestCase):
         # refer to fixture
         if 'fixtures' in os.getcwd():
             self.temp_outfile_path_doc = os.path.join('test.doc')
-        elif '_trial_temp' in os.getcwd():  # running in pycharm
-            self.temp_outfile_path_doc = os.path.join('..', 'fixtures', 'test.doc')
+        elif os.path.exists(os.path.join(os.getcwd(), "tests", "fixtures")):  # running in pycharm
+            self.temp_outfile_path_doc = os.path.join(os.getcwd(), "tests", 'fixtures', 'test.doc')
         else:
             self.temp_outfile_path_doc = os.path.join('fixtures', 'test.doc')
 

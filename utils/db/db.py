@@ -113,3 +113,38 @@ class Surveys(Base):
     createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = False)
 
+class Predictions(Base):
+    __tablename__ = 'Predictions'
+    id = Column(Integer, primary_key=True)
+    title = Column(String)
+    url = Column(String)
+    agency = Column(String)
+    numDocs = Column(Integer)
+    solNum = Column(String)
+    noticeType = Column(String)
+    date = Column(DateTime)
+    office = Column(String)
+    na_flag = Column(Boolean)
+    eitLikelihood = Column(JSONB)
+    undetermined = Column(Boolean)
+    action = Column(JSONB)
+    actionStatus= Column(String)
+    actionDate = Column(DateTime)
+    feedback = Column(JSONB)
+    history = Column(JSONB)
+    contactInfo = Column(JSONB)
+    parseStatus = Column(JSONB)
+    predictions = Column(JSONB)
+    reviewRec = Column(String)
+    searchText = Column(String)
+    createdAt = Column(DateTime)
+    updatedAt = Column(DateTime)
+
+class Solicitations(Base):
+    __tablename__ = 'solicitations'
+    id = Column(Integer, primary_key=True)
+    solNum = Column(String)
+    active = Column(Boolean)
+    updatedAt = Column(DateTime)
+    createdAt = Column(DateTime)
+

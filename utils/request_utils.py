@@ -93,6 +93,7 @@ def get_opp_request_details():
 
 def get_opps(uri, params, headers, session = None):
     try:
+        logger.info("Fetching {} with params {} and headers {}".format(uri, params, headers))
         r = requests_retry_session(session=session).get(uri, params = params, timeout = 100, headers = headers)
     except Exception as e:
         logger.critical(f"Exception {e} getting opps from {uri}", exc_info=True)

@@ -6,6 +6,7 @@ import unittest
 from unittest.mock import patch
 import copy
 
+import responses
 import requests_mock
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
@@ -118,8 +119,9 @@ class SamUtilsTestCase(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_schematize_opp_with_errors(self):
-
         opp = copy.deepcopy(self.opp[0])
+        # use only one level of hierarchy to make sure the schematize function can handle it
+        opp['organizationHierarchy'] = [ {"name": "test"}]
         result = schematize_opp(opp)
         self.assertEqual(result['agency'], "test")
         self.assertEqual(result['office'], "")

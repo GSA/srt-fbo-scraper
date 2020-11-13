@@ -139,8 +139,12 @@ def schematize_opp(opp):
     #org_id = opp_data.get('organizationId')
 
 
-    agency =opp_data.get('organizationHierarchy','')[0].get('name','')
-    office =opp_data.get('organizationHierarchy','')[1].get('name','')
+    organizationHierarchy = opp_data.get('organizationHierarchy')
+    agency = office = ""
+    if organizationHierarchy and isinstance(organizationHierarchy, list) and len(organizationHierarchy) > 0:
+        agency =organizationHierarchy[0].get('name','')
+        if len(organizationHierarchy) > 1:
+            office = organizationHierarchy[1].get('name','')
 
     solicitation_number = opp_data.get('cleanSolicitationNumber','')
     #agency, office = get_org_info(org_id)

@@ -12,6 +12,7 @@ def get_doc_text(file_name, rm = True):
     Arguments:
         file_name {str} -- path to a doc
     """
+    b_text = None
     try:
         b_text = textract.process(file_name, encoding = 'utf-8', errors = 'ignore')
     #ShellError with antiword occurs when an rtf is saved with a doc extension

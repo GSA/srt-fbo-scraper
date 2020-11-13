@@ -1,6 +1,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/GSA/srt-opportunity-gatherer/badge.svg)](https://snyk.io/test/github/GSA/opportunity-gatherer)
 [![Maintainability](https://api.codeclimate.com/v1/badges/08f7d22760fe258970d3/maintainability)](https://codeclimate.com/github/GSA/opportunity-gatherer/maintainability)
 
+
 # srt-opportunity-gatherer (AKA Smartie)
 
 This project gathers Information Technology (IT) solicitations that are posted by the US Federal Government on beta.sam.gov. For each solicitation, we extract the text of each document and feed it to a [supervised machine learning model](https://github.com/GSA/srt-ml) in order to determine whether or not the document contains appropriate [setion 508 accessibility](https://www.section508.gov/) language.

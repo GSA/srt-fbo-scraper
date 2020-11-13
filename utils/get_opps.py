@@ -40,7 +40,7 @@ def get_yesterdays_opps(filter_naics = True, limit = None):
             break
         page += 1
     
-    if filter_naics:
+    if filter_naics:  
         filtered_opps = naics_filter(opps)
         return filtered_opps
     
@@ -59,6 +59,7 @@ def get_docs(opp_id, out_path):
     try:
         with requests_retry_session() as session:
             r = session.get(uri, timeout = 200)
+
     except Exception as e:
         logger.error(f"Exception {e} getting opps from {uri}", exc_info=True)
         #sys.exit(1)

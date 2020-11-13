@@ -96,7 +96,7 @@ jobs:
             PR_NUMBER="${CIRCLE_PULL_REQUEST//[!0-9]/}"
             TARGET_BRANCH=$(curl -sS https://api.github.com/repos/GSA/${CIRCLE_PROJECT_REPONAME}/pulls/${PR_NUMBER} | jq '.base.ref')
             TARGET_BRANCH=$(echo $TARGET_BRANCH | tr -d '"')
-
+            echo "Target branch is $TARGET_BRANCH"
             if [ "$TARGET_BRANCH" = "master" ]
             then
                 TARGET_BRANCH=prod

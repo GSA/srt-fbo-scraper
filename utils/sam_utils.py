@@ -80,8 +80,8 @@ def get_notice_data(opp_data, opp_id):
         classification_code = opp_data.get('psc','')[0].get('code','')
     except IndexError:
         classification_code = 0
-    naics = max([i for naics_list in 
-                [i.get('code') for i in opp_data.get('naics',{})] 
+    naics = max([i for naics_list in
+                [i.get('code') for i in opp_data.get('naics',{})]
                 for i in naics_list], key = len)
     subject = opp_data.get('title','').title()
     url = f'https://beta.sam.gov/opp/{opp_id}/view'
@@ -149,7 +149,7 @@ def schematize_opp(opp):
     solicitation_number = opp_data.get('cleanSolicitationNumber','')
     #agency, office = get_org_info(org_id)
     #agency = opp_data
-    
+
     required_data = {'notice type': notice_type,
                      'solnbr': solicitation_number,
                      'agency': agency,
@@ -161,7 +161,7 @@ def schematize_opp(opp):
 
     schematized_opp = {**required_data, **notice_data}
     schematized_opp['opp_id'] = opp_id
-    
+
     return schematized_opp
 
 def naics_filter(opps):
@@ -214,7 +214,7 @@ def get_dates_from_opp(opp):
         posted_date_dt = dt.strptime(posted_date, "%Y-%m-%d")
     except ValueError:
         pass
-            
+
     return modified_date_dt, posted_date_dt
 
 def get_day(today_or_yesterday):

@@ -3,7 +3,6 @@ import logging
 import os
 import sys
 from random import randint
-from datetime import datetime,timedelta,date
 
 
 
@@ -14,7 +13,7 @@ from urllib3.util.retry import Retry
 logger = logging.getLogger(__name__)
 
 def requests_retry_session(retries=3, 
-                           backoff_factor=0.3, 
+                           backoff_factor=0.3,
                            status_forcelist=(500, 502, 503, 504), 
                            session=None):
     '''
@@ -110,6 +109,26 @@ def get_opps(uri, params, headers, session = None):
         else:
             logger.error(f"{e}: making request to {uri}:\n{data_str}")
         return None, None
-    
+
     return opps, total_pages
+
+
+def get_opp_by_sol_num(solNum):
+    span_days = 364
+
+    for i in range(4):
+
+        start = (date.today() - timedelta(days= (span_days*i) )).strftime('%m/%d/%Y')
+        end = (date.today() - timedelta(days= (span_days * (i+1)) )).strftime('%m/%d/%Y')
+
+        uri, params, headers = get_opp_request_details()
+        params['solnum'] = solNum
+        params['postedFrom'] = end
+        params['postedTo'] = start
+        opps, total_pages = get_opps(uri, params, headers)
+        if len(opps) > 0:
+            opp = opps[0]
+            break
+
+    return opp
 

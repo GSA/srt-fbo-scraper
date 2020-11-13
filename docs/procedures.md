@@ -72,15 +72,16 @@ The last command will return the service account username/password pair. Once yo
 
 ### SRT Web Application Access
 
-Individuals wanting to use the SRT Web Application will be approved by the SRT Product Owner (PO). During this approval, the PO will make a determination on the proper role to assign the new user. New users will be assigned roles that have the minimum permissions necessary to carry out their responsibilities. 
+Individuals wanting to use the SRT Web Application will be approved by the SRT Product Owner (PO). During this approval, the PO will make a determination on the proper role to assign the new user. New users will be assigned roles that have the minimum permissions necessary to carry out their responsibilities. The PO is able to add users to SRT by assigning them to groups on MAX.gov. 
 
-The PO is able to add users to SRT by assigning them to roles on MAX.gov. The following links will take the PO to the correct MAX page for making the role assignments **on the test server**:
+Here is the step-by-step for adding a user to one of the SRT access groups:
+* Log into MAX.gov: https://max.gov
+* On your MAX user home page you should see a section labeled Collaboration Groups. In that section, find the group you want to put the new user in. This will typically be SRT-508-COORDINATOR for 'regular' SRT users. In the associated dropdown list, choose the "Manage Group" action
+* On the manage group page you can see the list of current members. If the user is not listed already, click the "Add Users" button.
+* On this page you can search fro the appropriate user by name or email address. Click Check Email Addresses when done.
+* When the email addresses have been verfified, the confirmation page will show the invitation text that will be sent by email. You can either modifiy the text or uncheck the Notify Users with MAX Accounts check box.
+* Click the Send Invitations button to finish the process.
 
-* [SRT Administrators](https://portal.test.max.gov/home/sa/group/viewGroupUsers?groupId=AGY-GSA-SRT-ADMINISTRATORS.ROLEMANAGEMENT)
-* [508 Coordinators](https://portal.test.max.gov/home/sa/group/viewGroupUsers?groupId=AGY-GSA-SRT-508-COORDINATOR)
-* [Contracting Officers](https://portal.test.max.gov/home/sa/group/viewGroupUsers?groupId=AGY-GSA-SRT-CONTRACTINGOFFICERS)
-* [SRT Program Managers](https://portal.test.max.gov/home/sa/group/viewGroupUsers?groupId=AGY-GSA-SRT-PROGRAM-MANAGERS.ROLEMANAGEMENT)
-* [SRT Users](https://portal.test.max.gov/home/sa/group/viewGroupUsers?groupId=AGY-GSA-SRT-USERS)
 
 ### Remote Access
 

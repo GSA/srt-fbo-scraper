@@ -15,6 +15,9 @@ from utils.db.db_utils import get_db_url, session_scope, insert_data, \
 from unittest import mock
 
 
+from unittest import mock
+
+
 class DBTestCase(unittest.TestCase):
     
     def setUp(self):

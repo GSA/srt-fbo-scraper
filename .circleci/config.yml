@@ -9,7 +9,7 @@ jobs:
             - POSTGRES_USER: circleci
             - POSTGRES_DB: smartie-test
 
-    parallelism: 4
+    parallelism: 1
 
     steps:
       - checkout

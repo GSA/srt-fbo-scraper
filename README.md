@@ -89,9 +89,9 @@ To build and push the image:
 DOCKER_USER=<your user name>
 DOCKER_PASS=<your password>
 TARGET_SPACE=<dev, staging or prod> #choose one
-docker build -t $DOCKER_USER/srt-opportunity-gatherer-$TARGET_SPACE . 
+docker build -t $DOCKER_USER/srt-fbo-scraper-$TARGET_SPACE . 
 echo "$DOCKER_PASS" | docker login --username $DOCKER_USER --password-stdin    
-docker push $DOCKER_USER/srt-opportunity-gatherer-$TARGET_SPACE
+docker push $DOCKER_USER/srt-fbo-scraper-$TARGET_SPACE
 ```
 
 #### Push to cloud.gov
@@ -110,7 +110,7 @@ If this is your first time pushing the application, you need to first create and
 cf create-service <service> <service-tag>
 #wait a few minutes for the service to be provisioned
 cf create-service-key <service-tag> <service-key-name>    #if this returns an OK, then your service has been provisioned  
-cf push srt-opportunity-gatherer --docker-image $DOCKER_USER/srt-opportunity-gatherer-$TARGET_SPACE
+cf push srt-opportunity-gatherer --docker-image $DOCKER_USER/srt-fbo-scraper-$TARGET_SPACE
 cf bind-service srt-opportunity-gatherer <service-tag>  
 cf restage srt-opportunity-gatherer
 ```  
@@ -123,7 +123,7 @@ Above, `<service>` is the name of a postgres service (e.g. `aws-rds shared-psql`
 Every subsequent time you can merely use:
 
 ```bash
-cf push srt-opportunity-gatherer --docker-image $DOCKER_USER/srt-opportunity-gatherer-$TARGET_SPACE
+cf push srt-opportunity-gatherer --docker-image $DOCKER_USER/srt-fbo-scraper-$TARGET_SPACE
 ```
 
 ### Logs

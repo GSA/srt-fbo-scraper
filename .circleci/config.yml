@@ -9,7 +9,7 @@ jobs:
             - POSTGRES_USER: circleci
             - POSTGRES_DB: smartie-test
 
-    parallelism: 4
+    parallelism: 1
 
     steps:
       - checkout
@@ -94,6 +94,8 @@ jobs:
           name: Download cf CLI and deploy
           command: |
             PR_NUMBER="${CIRCLE_PULL_REQUEST//[!0-9]/}"
+            echo "Pull Request Number is ${PR_NUMBER}"
+            echo "Reponame is ${CIRCLE_PROJECT_REPONAME}"
             TARGET_BRANCH=$(curl -sS https://api.github.com/repos/GSA/${CIRCLE_PROJECT_REPONAME}/pulls/${PR_NUMBER} | jq '.base.ref')
             TARGET_BRANCH=$(echo $TARGET_BRANCH | tr -d '"')
             echo "Target branch is $TARGET_BRANCH"

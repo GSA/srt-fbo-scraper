@@ -57,7 +57,7 @@ jobs:
             TARGET_BRANCH=$(echo $TARGET_BRANCH | tr -d '"')
             echo "Target branch is $TARGET_BRANCH"
 
-	    . venv/bin/activate
+            . venv/bin/activate
             circleci tests glob **/tests/*_test.py | circleci tests split --split-by=timings --timings-type=classname | xargs python3 -m unittest
 
   deploy:

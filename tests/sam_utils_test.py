@@ -4,6 +4,7 @@ import shutil
 import sys
 import unittest
 from unittest.mock import patch
+import copy
 
 import responses
 import requests_mock
@@ -116,6 +117,17 @@ class SamUtilsTestCase(unittest.TestCase):
         result = schematize_opp(self.opp[0])
         expected = {**required_data, **notice_data}
         self.assertEqual(result, expected)
+
+    def test_schematize_opp_with_errors(self):
+        opp = copy.deepcopy(self.opp[0])
+        # use only one level of hierarchy to make sure the schematize function can handle it
+        opp['organizationHierarchy'] = [ {"name": "test"}]
+        result = schematize_opp(opp)
+        self.assertEqual(result['agency'], "test")
+        self.assertEqual(result['office'], "")
+        self.assertEqual(result['solnbr'], opp.get('cleanSolicitationNumber',''))
+
+
 
     def test_naics_filter(self):
         #opps = [{'data':{'naics': [{'code': ['123','33435']}]}}, #keep

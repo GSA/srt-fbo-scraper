@@ -48,8 +48,8 @@ jobs:
           environment:
             TEST_DB_URL: "postgres://circleci@localhost:5432/smartie-test?sslmode=disable"
           command: |
-	    echo "Circle PR number is ${CIRCLE_PULL_REQUEST}"
-	    echo "Circle PR number is ${CIRCLE_PULL_REQUEST//[!0-9]}"
+            echo "Circle PR number is ${CIRCLE_PULL_REQUEST}"
+            echo "Circle PR number is ${CIRCLE_PULL_REQUEST//[!0-9]}"
             PR_NUMBER="${CIRCLE_PULL_REQUEST//[!0-9]/}"
             echo "Pull Request Number is ${PR_NUMBER}"
             echo "Reponame is ${CIRCLE_PROJECT_REPONAME}"

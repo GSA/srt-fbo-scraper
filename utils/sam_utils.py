@@ -355,16 +355,21 @@ def update_sam_data_feed(filename=SAM_DATA_FEED_DEFAULT_FILENAME, force=False):
         seconds = 0
         while seconds < timeout:
             time.sleep(1)
+            seconds += 1
             if os.path.isfile(path_to_downloads):
                 break
-            seconds += 1
         if seconds == timeout:
             return False
         return seconds
 
-    download_location = os.environ.get("HOME") + "/Downloads/ContractOpportunitiesFullCSV.csv"
+    home = os.environ.get("HOME")
+    if home == "/":
+        home = "/root"
+    if not os.path.exists(home + "/Downloads"):
+        os.makedirs(home + "/Downloads")
+    download_location = home + "/Downloads/ContractOpportunitiesFullCSV.csv"
 
-    if os.path.isfile(filename) :
+    if os.path.isfile(filename):
         age_of_file = time.time() - os.stat(filename)[stat.ST_MTIME]
         if age_of_file < 24 * 60 * 60:
             return SAM_DATA_FEED_EXISTED
@@ -400,9 +405,11 @@ def update_sam_data_feed(filename=SAM_DATA_FEED_DEFAULT_FILENAME, force=False):
 
         print("Clicked submit")
 
-        result = download_wait("/root/Downloads/ContractOpportunitiesFullCSV.csv")
+        result = download_wait(download_location)
 
-        print("result was {}".format(result))
+
+
+        print("File downloaded in {} seconds".format(result))
 
         if result:
             if os.path.isfile(filename):

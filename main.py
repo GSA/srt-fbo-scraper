@@ -40,6 +40,8 @@ def main(limit=None):
 
             update_old_solicitations(session)
 
+        logger.info("Run complete without major errors.")
+
     except:
         logger.error("Unhandled error. Data for the day may be lost.")
         logger.error("Unexpected error: {}".format(str(sys.exc_info()[0])))

@@ -15,6 +15,7 @@ from selenium.webdriver.common.by import By
 import time
 import stat
 from utils.db.db import Notice, Predictions, Solicitations
+from utils.db.db_utils import fetch_notice_type_by_id
 from sqlalchemy.sql.expression import func
 
 import requests
@@ -278,7 +279,7 @@ def find_yesterdays_opps(opps):
     return yesterdays_opps, is_more_opps
 
 
-def update_old_solicitations(session, age_cutoff=90, max_updates=100000):
+def update_old_solicitations(session, age_cutoff=90):
     stats = {'examined': 0, 'updated': 0, 'total': 0}
     sql = '''
     select "Predictions"."solNum", greatest("Predictions"."createdAt", "Predictions"."updatedAt") as last_touch
@@ -287,8 +288,7 @@ from "Predictions"
 where greatest("Predictions"."createdAt", "Predictions"."updatedAt") > CURRENT_DATE - interval '{}' day and
    (solicitations.active)
 order by last_touch desc
-    limit {}
-    '''.format(age_cutoff, max_updates)
+    '''.format(age_cutoff)
     logger.info("Updating old solicitations that match SQL: {}".format(sql))
     result = session.execute(sql)
     solNumArray = [ x.solNum for x in result]
@@ -306,6 +306,32 @@ order by last_touch desc
                 update({"active": False, "updatedAt": func.current_timestamp()}, synchronize_session='fetch')
             stats['updated'] += 1
             logger.info("Marking solicitation {} as inactive".format(solNum))
+        else:
+            # check if we need to update the notice type
+            n = session.query(Notice).\
+                filter(Notice.solicitation_number == solNum).\
+                order_by(Notice.date.desc()).\
+                limit(1).\
+                first()
+            current_notice_type = fetch_notice_type_by_id(n.notice_type_id, session).notice_type
+            if (current_notice_type != data["Type"]):
+                # create a new notice record with the updated type
+                insert_sql = f'''
+                    insert into notice (notice_type_id, solicitation_number, agency,
+                           date, notice_data, compliant, "createdAt", "updatedAt", na_flag)
+                    select notice_type.id, solicitation_number, agency, NOW(), notice_data,
+                           compliant, NOW(), NOW(), na_flag
+                    from notice
+                    join notice_type on notice_type.notice_type = '{data["Type"]}'
+                    where solicitation_number = '{solNum}'
+                    order by date desc
+                    limit 1
+    '''
+                session.execute(insert_sql)
+                stats['updated'] += 1
+                logger.info(f"Updated notice type for {solNum}. It was {current_notice_type} and was changed to {data['Type']}")
+                session.execute(f"delete from \"Predictions\" where \"solNum\" = '{solNum}' ")
+                logger.info(f"Deleted Prediction table entry from {solNum}.")
 
     logger.info("Scan for inactive solicitations complete. {} solicitations examined and {} marked inactive ".format(stats['examined'], stats['updated']))
     return stats

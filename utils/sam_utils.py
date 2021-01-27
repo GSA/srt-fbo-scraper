@@ -278,22 +278,63 @@ def find_yesterdays_opps(opps):
 
     return yesterdays_opps, is_more_opps
 
+def get_all_solNum_from_prediction_table(session, age_cutoff=90):
+    sql = '''
+        select "Predictions"."solNum", greatest("Predictions"."createdAt", "Predictions"."updatedAt") as last_touch
+    from "Predictions"
+             join solicitations on "Predictions"."solNum" = solicitations."solNum"
+    where greatest("Predictions"."createdAt", "Predictions"."updatedAt") > CURRENT_DATE - interval '{}' day and
+       (solicitations.active)
+    order by last_touch desc
+        '''.format(age_cutoff)
+    logger.debug("Gathering solicitation numbers that match SQL: {}".format(sql))
+    result = session.execute(sql)
+    solNumArray = [x.solNum for x in result]
+    return solNumArray
+
+def mark_solNum_as_inactive(session, solNum):
+    session.query(Solicitations). \
+        filter(Solicitations.solNum == solNum). \
+        update({"active": False, "updatedAt": func.current_timestamp()}, synchronize_session='fetch')
+    logger.info("Marking solicitation {} as inactive".format(solNum))
+    session.execute(f"delete from \"Predictions\" where \"solNum\" = '{solNum}' ")
+    logger.info(f"Deleted Prediction table entry from {solNum}.")
+
+
+def update_notice_type_if_necessary(session, solNum, notice_type_string):
+    n = session.query(Notice).\
+        filter(Notice.solicitation_number == solNum).\
+        order_by(Notice.date.desc()).\
+        limit(1).\
+        first()
+    current_notice_type = fetch_notice_type_by_id(n.notice_type_id, session).notice_type
+    if (current_notice_type != notice_type_string):
+        # create a new notice record with the updated type
+        insert_sql = f'''
+            insert into notice (notice_type_id, solicitation_number, agency,
+                   date, notice_data, compliant, "createdAt", "updatedAt", na_flag)
+            select notice_type.id, solicitation_number, agency, NOW(), notice_data,
+                   compliant, NOW(), NOW(), na_flag
+            from notice
+            join notice_type on notice_type.notice_type = '{notice_type_string}'
+            where solicitation_number = '{solNum}'
+            order by date desc
+            limit 1
+'''
+        session.execute(insert_sql)
+        logger.info(f"Updated notice type for {solNum}. It was {current_notice_type} and was changed to {notice_type_string}")
+        session.execute(f"delete from \"Predictions\" where \"solNum\" = '{solNum}' ")
+        logger.info(f"Deleted Prediction table entry from {solNum}.")
+        return 1
+    return 0 # did not update anything
+
+
 
 def update_old_solicitations(session, age_cutoff=90):
     stats = {'examined': 0, 'updated': 0, 'total': 0}
-    sql = '''
-    select "Predictions"."solNum", greatest("Predictions"."createdAt", "Predictions"."updatedAt") as last_touch
-from "Predictions"
-         join solicitations on "Predictions"."solNum" = solicitations."solNum"
-where greatest("Predictions"."createdAt", "Predictions"."updatedAt") > CURRENT_DATE - interval '{}' day and
-   (solicitations.active)
-order by last_touch desc
-    '''.format(age_cutoff)
-    logger.info("Updating old solicitations that match SQL: {}".format(sql))
-    result = session.execute(sql)
-    solNumArray = [ x.solNum for x in result]
+    solNumArray = get_all_solNum_from_prediction_table(session, age_cutoff)
     stats['total'] = len(solNumArray)
-    logger.info("Found {} solicitations to check".format(stats['total']))
+    logger.info(f"Found {stats['total']} solicitations to update")
 
 
     for solNum in solNumArray:
@@ -301,37 +342,10 @@ order by last_touch desc
         data = get_sol_data_from_feed(solNum)
         stats['examined'] += 1
         if data == False:
-            session.query(Solicitations).\
-                filter(Solicitations.solNum == solNum).\
-                update({"active": False, "updatedAt": func.current_timestamp()}, synchronize_session='fetch')
+            mark_solNum_as_inactive(session, solNum)
             stats['updated'] += 1
-            logger.info("Marking solicitation {} as inactive".format(solNum))
         else:
-            # check if we need to update the notice type
-            n = session.query(Notice).\
-                filter(Notice.solicitation_number == solNum).\
-                order_by(Notice.date.desc()).\
-                limit(1).\
-                first()
-            current_notice_type = fetch_notice_type_by_id(n.notice_type_id, session).notice_type
-            if (current_notice_type != data["Type"]):
-                # create a new notice record with the updated type
-                insert_sql = f'''
-                    insert into notice (notice_type_id, solicitation_number, agency,
-                           date, notice_data, compliant, "createdAt", "updatedAt", na_flag)
-                    select notice_type.id, solicitation_number, agency, NOW(), notice_data,
-                           compliant, NOW(), NOW(), na_flag
-                    from notice
-                    join notice_type on notice_type.notice_type = '{data["Type"]}'
-                    where solicitation_number = '{solNum}'
-                    order by date desc
-                    limit 1
-    '''
-                session.execute(insert_sql)
-                stats['updated'] += 1
-                logger.info(f"Updated notice type for {solNum}. It was {current_notice_type} and was changed to {data['Type']}")
-                session.execute(f"delete from \"Predictions\" where \"solNum\" = '{solNum}' ")
-                logger.info(f"Deleted Prediction table entry from {solNum}.")
+            stats['updated'] += update_notice_type_if_necessary(session, solNum, data["Type"])
 
     logger.info("Scan for inactive solicitations complete. {} solicitations examined and {} marked inactive ".format(stats['examined'], stats['updated']))
     return stats

@@ -58,6 +58,12 @@ jobs:
           environment:
             TEST_DB_URL: "postgres://circleci@localhost:5432/smartie-test?sslmode=disable"
           command: |
+            echo "Circle PR number is ${CIRCLE_PULL_REQUEST}"
+            echo "Circle PR number is ${CIRCLE_PULL_REQUEST//[!0-9]}"
+            PR_NUMBER="${CIRCLE_PULL_REQUEST//[!0-9]/}"
+            echo "Pull Request Number is ${PR_NUMBER}"
+            echo "Reponame is ${CIRCLE_PROJECT_REPONAME}"
+
             . venv/bin/activate
             circleci tests glob **/tests/*_test.py | circleci tests split --split-by=timings --timings-type=classname | xargs python3 -m unittest
 
@@ -104,6 +110,8 @@ jobs:
           name: Download cf CLI and deploy
           command: |
             PR_NUMBER="${CIRCLE_PULL_REQUEST//[!0-9]/}"
+            echo "Pull Request Number is ${PR_NUMBER}"
+            echo "Reponame is ${CIRCLE_PROJECT_REPONAME}"
             TARGET_BRANCH=$(curl -sS https://api.github.com/repos/GSA/${CIRCLE_PROJECT_REPONAME}/pulls/${PR_NUMBER} | jq '.base.ref')
             TARGET_BRANCH=$(echo $TARGET_BRANCH | tr -d '"')
             echo "Target branch is $TARGET_BRANCH"

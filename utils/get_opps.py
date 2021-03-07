@@ -2,6 +2,7 @@ import logging
 import os
 import sys
 import wget
+import pprint
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from utils.get_doc_text import get_doc_text
@@ -35,6 +36,9 @@ def get_yesterdays_opps(filter_naics = True, limit = None):
         params.update({'page': str(page)})
         _opps, _ = get_opps(uri, params, headers)
         _opps, _is_more_opps = find_yesterdays_opps(_opps)
+        pp = pprint.PrettyPrinter()
+        pp.pprint(_opps)
+
         opps.extend(_opps)
         if (not _is_more_opps) or (limit and len(opps) > limit):
             break

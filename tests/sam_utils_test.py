@@ -22,7 +22,7 @@ class SamUtilsTestCase(unittest.TestCase):
 
     def setUp(self):
         self.zip_in_memory = get_zip_in_memory()
-        self.opp = mock_opps.mock_opp_one
+        self.opp = mock_opps.mock_opp_one[0]
         self.maxDiff = None
         
     def tearDown(self):
@@ -114,12 +114,12 @@ class SamUtilsTestCase(unittest.TestCase):
                          'opp_id': '532e8551391a4ba784e1e186656b6a39',
                          'attachments':[]}
         m_get_notice_data.return_value = notice_data
-        result = schematize_opp(self.opp[0])
+        result = schematize_opp(self.opp)
         expected = {**required_data, **notice_data}
         self.assertEqual(result, expected)
 
     def test_schematize_opp_with_errors(self):
-        opp = copy.deepcopy(self.opp[0])
+        opp = copy.deepcopy(self.opp)
         # use only one level of hierarchy to make sure the schematize function can handle it
         opp['organizationHierarchy'] = [ {"name": "test"}]
         result = schematize_opp(opp)

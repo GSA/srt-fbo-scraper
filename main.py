@@ -25,18 +25,20 @@ def main(limit=None):
         data = get_opps.main(limit)
         if not data:
             logger.info("Smartie didn't find any opportunities!")
-            return
-        logger.info("Smartie is done fetching opportunties from SAM!")
+        else:
+            logger.info("Smartie is done fetching opportunties from SAM!")
 
-        logger.info("Smartie is making predictions for each notice attachment...")
-        predict = Predict(data)
-        data = predict.insert_predictions()
-        logger.info("Smartie is done making predictions for each notice attachment!")
+            logger.info("Smartie is making predictions for each notice attachment...")
+            predict = Predict(data)
+            data = predict.insert_predictions()
+            logger.info("Smartie is done making predictions for each notice attachment!")
 
-        logger.info("Smartie is inserting data into the database...")
+            logger.info("Smartie is inserting data into the database...")
+
         with session_scope(dal) as session:
-            insert_data(session, data)
-            logger.info("Smartie is done inserting data into database!")
+            if data:
+                insert_data(session, data)
+                logger.info("Smartie is done inserting data into database!")
 
             update_old_solicitations(session)
 

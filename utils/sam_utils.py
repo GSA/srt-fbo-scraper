@@ -330,7 +330,7 @@ def update_notice_type_if_necessary(session, solNum, notice_type_string):
 
 
 
-def update_old_solicitations(session, age_cutoff=90):
+def update_old_solicitations(session, age_cutoff=365):
     stats = {'examined': 0, 'updated': 0, 'total': 0}
     solNumArray = get_all_solNum_from_prediction_table(session, age_cutoff)
     stats['total'] = len(solNumArray)

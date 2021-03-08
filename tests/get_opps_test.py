@@ -103,14 +103,14 @@ class GetOppsTestCase(unittest.TestCase):
         m_g_docs.return_value = ['test.pdf']
         m_g_doc_text.return_value = 'test'
         m_g_attachment_data.return_value = mock_opps.mock_attachment_data
-        result = transform_opps([mock_opps.mock_opp_one], self.out_path)
+        result = transform_opps([mock_opps.mock_opp_one[0]], self.out_path)
         # repeat 3 times since opps has three records
         expected = [mock_opps.mock_transformed_opp_one]
         self.assertEqual(result, expected)
 
-    # def test_schematize_opp(self):
-    #     so = schematize_opp(mock_opp_one)
-    #     self.assertEqual(so['notice type'], 'opportunity')
+    def test_schematize_opp(self):
+        so = schematize_opp(mock_opp_one[0])
+        self.assertEqual(so['notice type'], 'Award Notice')
 
 
 if __name__ == '__main__':

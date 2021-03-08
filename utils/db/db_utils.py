@@ -12,6 +12,8 @@ from sqlalchemy.pool import NullPool
 from sqlalchemy_utils import database_exists, create_database, drop_database
 
 import utils.db.db as db
+import functools
+CACHE_SIZE=256
 
 logger = logging.getLogger(__name__)
 
@@ -105,7 +107,7 @@ def session_scope(dal):
     finally:
         session.close()
 
-
+@functools.lru_cache(CACHE_SIZE)
 def fetch_notice_type_id(notice_type, session):
     '''
     Fetch the notice_type_id for a given notice_type.
@@ -129,6 +131,7 @@ def fetch_notice_type_id(notice_type, session):
     return notice_type_id
 
 
+@functools.lru_cache(CACHE_SIZE)
 def fetch_notice_type_by_id(notice_type_id, session):
     '''
     Fetch the notice_type for a given notice_type_id.
@@ -159,23 +162,6 @@ def insert_notice_types(session, sam_notice_types= ['Combined Synopsis/Solicitat
             nt = db.NoticeType(notice_type = notice_type)
             session.add(nt)
 
-
-def fetch_notice_type_by_id(notice_type_id, session):
-    '''
-    Fetch a Notice Type name given a notice_type_id.
-
-    Parameters:
-        notice_type_id (int): the PK id for a notice_type
-
-    Returns:
-        None or notice_type (str): If not None, the notice type as a str (e.g. 'Solicitation')
-    '''
-    try:
-        notice_type_obj = session.query(db.NoticeType).get(notice_type_id)
-    except AttributeError:
-        return None
-    
-    return notice_type_obj
 
 def insert_model(session, results, params, score):
     '''

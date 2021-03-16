@@ -44,8 +44,9 @@ def main(limit=None):
 
         logger.info("Run complete without major errors.")
 
-    except:
+    except Exception as e:
         logger.error("Unhandled error. Data for the day may be lost.")
+        logger.errro(f"Exception: {e}", exc_info=True)
         logger.error("Unexpected error: {}".format(str(sys.exc_info()[0])))
 
 

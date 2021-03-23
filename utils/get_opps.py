@@ -65,16 +65,20 @@ def get_docs(opp_id, out_path):
             r = session.get(uri, timeout = 200)
 
     except Exception as e:
-        logger.error(f"Exception {e} getting opps from {uri}", exc_info=True)
-        #sys.exit(1)
-        logger.warning("Falling back to wget for {}".format(uri), extra={'opportunity ID': opp_id})
-        fname  = wget.download(uri)
-        f = open(fname, mode='rb')
-        content = f.read()
-        f.close()
-        os.unlink(fname)
-        file_list = write_zip_content(content, out_path)
-        return file_list
+        try:
+            logger.error(f"Exception {e} getting opps from {uri}", exc_info=True)
+            #sys.exit(1)
+            logger.warning("Falling back to wget for {}".format(uri), extra={'opportunity ID': opp_id})
+            fname  = wget.download(uri)
+            f = open(fname, mode='rb')
+            content = f.read()
+            f.close()
+            os.unlink(fname)
+            file_list = write_zip_content(content, out_path)
+            return file_list
+        except Exception as e:
+            logger.error(f"Exception using wget: {e}", exc_info=True)
+            return None
 
     if r.ok:
         file_list = write_zip_content(r.content, out_path)
@@ -106,6 +110,8 @@ def transform_opps(opps, out_path):
     """
     transformed_opps = []
     for opp in opps:
+        id = opp.get('cleanSolicitationNumber', '')
+        logger.debug(f"transforming opp {id}")
         schematized_opp = schematize_opp(opp)
         if not schematized_opp:
             continue

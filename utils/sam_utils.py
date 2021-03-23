@@ -278,6 +278,19 @@ def find_yesterdays_opps(opps):
 
     return yesterdays_opps, is_more_opps
 
+def get_all_inactive_solicitation_numbers(session, age_cutoff=365):
+    sql = '''
+        select "solNum" from "solicitations"
+    where not active and
+         greatest("createdAt", "updatedAt") > CURRENT_DATE - interval '{}' day
+    order by "updatedAt" desc
+        '''.format(age_cutoff)
+    logger.debug("Gathering solicitation numbers that match SQL: {}".format(sql))
+    result = session.execute(sql)
+    solNumArray = [x.solNum for x in result]
+    return solNumArray
+
+
 def get_all_solNum_from_prediction_table(session, age_cutoff=90):
     sql = '''
         select "Predictions"."solNum", greatest("Predictions"."createdAt", "Predictions"."updatedAt") as last_touch
@@ -293,13 +306,26 @@ def get_all_solNum_from_prediction_table(session, age_cutoff=90):
     return solNumArray
 
 def mark_solNum_as_inactive(session, solNum):
-    session.query(Solicitations). \
-        filter(Solicitations.solNum == solNum). \
-        update({"active": False, "updatedAt": func.current_timestamp()}, synchronize_session='fetch')
-    logger.info("Marking solicitation {} as inactive".format(solNum))
-    session.execute(f"delete from \"Predictions\" where \"solNum\" = '{solNum}' ")
-    logger.info(f"Deleted Prediction table entry from {solNum}.")
+    try:
+        session.query(Solicitations). \
+            filter(Solicitations.solNum == solNum). \
+            update({"active": False, "updatedAt": func.current_timestamp()}, synchronize_session='fetch')
+        logger.info("Marking solicitation {} as inactive".format(solNum))
+        session.execute(f"delete from \"Predictions\" where \"solNum\" = '{solNum}' ")
+        logger.info(f"Deleted Prediction table entry from {solNum}.")
+    except Exception as e:
+        logger.error(f"Error: marking {solNum} as inactive. Exception: {e}", exc_info=True)
 
+def mark_solNum_as_active(session, solNum):
+    try:
+        session.query(Solicitations). \
+            filter(Solicitations.solNum == solNum). \
+            update({"active": True, "updatedAt": func.current_timestamp()}, synchronize_session='fetch')
+        logger.info("Marking solicitation {} as active".format(solNum))
+        sql = '''update solicitations set active = True where "solNum" = '{}' '''.format(solNum)
+        session.execute(sql)
+    except Exception as e:
+        logger.error(f"Error: marking {solNum} as active. Exception: {e}", exc_info=True)
 
 def update_notice_type_if_necessary(session, solNum, notice_type_string):
     n = session.query(Notice).\
@@ -329,25 +355,52 @@ def update_notice_type_if_necessary(session, solNum, notice_type_string):
     return 0 # did not update anything
 
 
-
-def update_old_solicitations(session, age_cutoff=365):
-    stats = {'examined': 0, 'updated': 0, 'total': 0}
+def update_old_active_solicitations(session, stats, age_cutoff):
     solNumArray = get_all_solNum_from_prediction_table(session, age_cutoff)
     stats['total'] = len(solNumArray)
     logger.info(f"Found {stats['total']} solicitations to update")
 
 
     for solNum in solNumArray:
-        logger.debug(" updated {}.  {}/{} done --  looking at {} next ".format(stats['updated'], stats["examined"], stats["total"], solNum))
+        logger.debug(" updated {}.  {}/{} done --  looking at (active) {} next ".format(stats['updated'], stats["examined"], stats["total"], solNum))
         data = get_sol_data_from_feed(solNum)
         stats['examined'] += 1
-        if data == False:
+        if data == SAM_DATA_FEED_NO_MATCH:
             mark_solNum_as_inactive(session, solNum)
             stats['updated'] += 1
         else:
-            stats['updated'] += update_notice_type_if_necessary(session, solNum, data["Type"])
+            if (data != False):
+                stats['updated'] += update_notice_type_if_necessary(session, solNum, data["Type"])
 
     logger.info("Scan for inactive solicitations complete. {} solicitations examined and {} marked inactive ".format(stats['examined'], stats['updated']))
+
+# Make sure that our old inactive solicitations are still inactive.  May be an edge case
+# where a solNum pops back up in sam and we want to makes sure it is activated
+def check_inactive_solicitations(session, stats, age_cutoff):
+    solNumArray = get_all_inactive_solicitation_numbers(session, age_cutoff)
+    stats['total'] += len(solNumArray)
+    logger.info(f"Found {stats['total']} solicitations to update")
+
+    for solNum in solNumArray:
+        logger.debug(" updated {}.  {}/{} done --  looking at (inactive) {} next ".format(stats['updated'], stats["examined"], stats["total"], solNum))
+        data = get_sol_data_from_feed(solNum)
+        stats['examined'] += 1
+        if data != SAM_DATA_FEED_NO_MATCH and data != False:
+            mark_solNum_as_active(session, solNum)
+            stats['updated'] += 1
+
+    logger.info("Recheck of inactive solicitations complete. {} solicitations examined (total all scans) and {} updatd (total all scans) ".format(stats['examined'], stats['updated']))
+
+
+def update_old_solicitations(session, age_cutoff=365):
+    try:
+        stats = {'examined': 0, 'updated': 0, 'total': 0}
+        check_inactive_solicitations(session, stats, age_cutoff)
+        update_old_active_solicitations(session, stats, age_cutoff)
+        logger.info("Recheck of inactive solicitations complete. {} solicitations examined (total all scans) and {} updatd (total all scans) ".format(stats['examined'], stats['updated']))
+    except Exception as e:
+        logger.error(f"Exception: {e}", exc_info=True)
+
     return stats
 
 
@@ -355,6 +408,7 @@ SAM_DATA_FEED_ERROR = 0
 SAM_DATA_FEED_DOWNLOADED = 1
 SAM_DATA_FEED_EXISTED = 2
 SAM_DATA_FEED_DEFAULT_FILENAME = '/tmp/ContractOpportunitiesFullCSV.csv'
+SAM_DATA_FEED_NO_MATCH = 3
 sam_df = None
 def get_sol_data_from_feed(sol_number):
     import pandas as pd
@@ -373,7 +427,7 @@ def get_sol_data_from_feed(sol_number):
     # print (match_df)
     max_date_index = 0
     if len(match_df) == 0:
-        return False
+        return SAM_DATA_FEED_NO_MATCH
     if len(match_df) > 1:
         max_date = None
         for i in range(0, len(match_df)):
@@ -430,16 +484,21 @@ def update_sam_data_feed(filename=SAM_DATA_FEED_DEFAULT_FILENAME, force=False):
         print("opening page")
         driver.get('https://beta.sam.gov/data-services/Contract%20Opportunities/datagov?privacy=Public')
 
+        print("Waiting for page load")
+
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, "//a[contains(text(),'ContractOp')]")))
 
+        print ("following link")
         link = driver.find_element_by_xpath("//a[contains(text(),'ContractOp')]")
         link.click()
 
+        print ("checking agreement boxes")
         checkboxes = driver.find_elements_by_xpath("//input[@type='checkbox']")
         for el in checkboxes:
             el.click()
 
+        print("ready for submission")
         submit_button = driver.find_element_by_xpath("//button[contains(.,'Submit')]")
         submit_button.click()
 

@@ -318,11 +318,10 @@ def mark_solNum_as_inactive(session, solNum):
 
 def mark_solNum_as_active(session, solNum):
     try:
-        session.query(Solicitations). \
-            filter(Solicitations.solNum == solNum). \
-            update({"active": True, "updatedAt": func.current_timestamp()}, synchronize_session='fetch')
         logger.info("Marking solicitation {} as active".format(solNum))
         sql = '''update solicitations set active = True where "solNum" = '{}' '''.format(solNum)
+        session.execute(sql)
+        sql = '''update "Predictions" set active = True where "solNum" = '{}' '''.format(solNum)
         session.execute(sql)
     except Exception as e:
         logger.error(f"Error: marking {solNum} as active. Exception: {e}", exc_info=True)

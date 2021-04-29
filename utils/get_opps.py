@@ -36,8 +36,8 @@ def get_yesterdays_opps(filter_naics = True, limit = None):
         params.update({'page': str(page)})
         _opps, _ = get_opps(uri, params, headers)
         _opps, _is_more_opps = find_yesterdays_opps(_opps)
-        pp = pprint.PrettyPrinter()
-        pp.pprint(_opps)
+        for o in _opps:
+            print ("Processing sol#: " + o['solicitationNumber'])
 
         opps.extend(_opps)
         if (not _is_more_opps) or (limit and len(opps) > limit):

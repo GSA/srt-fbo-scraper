@@ -485,6 +485,16 @@ def update_sam_data_feed(filename=SAM_DATA_FEED_DEFAULT_FILENAME, force=False):
 
         print("Waiting for page load")
 
+        # if they put up a "we have refreshed the design" then click the OK button
+        try:
+            WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//button[contains(text(),'OK')]")))
+            button = driver.find_element_by_xpath("//button[contains(text(),'OK')]")
+            button.click()
+        except:
+            pass
+
+
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, "//a[contains(text(),'ContractOp')]")))
 

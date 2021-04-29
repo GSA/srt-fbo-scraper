@@ -24,6 +24,7 @@ function parse_args() {
     TAG=`date +%Y.%m.%d.%H.%M`
     EXISTING_BUILD=false
   fi
+  LOG_FILE="${CWD}/deploy-log-${TAG}.log"
 }
 
 
@@ -69,7 +70,7 @@ function gatherDockerhubCreds() {
     echo "(You can avoid this prompt by setting DOCKER_USER env variable)"
     log "Enter your dockerhub login:"
     read input
-    DOCKER_USER="$input"
+    export DOCKER_USER="$input"
   else
     log "Docker user taken from environment variable."
   fi
@@ -78,7 +79,7 @@ function gatherDockerhubCreds() {
     echo "(You can avoid this prompt by setting DOCKER_PASS env variable)"
     log "Enter your dockerhub password:"
     read input
-    DOCKER_PASS="$input"
+    export DOCKER_PASS="$input"
   else
     log "Docker password taken from environment variable."
   fi
@@ -104,9 +105,9 @@ fi
 while true; do
     read -p "About to install build $TAG to $SPACE.  Are you sure you want to do that? (Y/N)" yn
     case $yn in
-        [Yy]* ) break ;;
-        [Nn]* ) log "Skipping deployment"; exit;;
-        * ) echo "Please answer yes or no.";;
+        [yY]* ) break ;;
+        [nN]* ) log "Skipping deployment"; exit;;
+        * ) echo "Please answer y or n";;
     esac
 done
 

@@ -2,7 +2,7 @@ import logging
 
 from utils import get_opps
 from utils.predict import Predict
-from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_data
+from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_data, insert_data_into_solicitations_table
 from utils.json_log_formatter import CustomJsonFormatter, configureLogger
 from utils.sam_utils import update_old_solicitations
 import sys
@@ -37,10 +37,11 @@ def main(limit=None):
 
         with session_scope(dal) as session:
             if data:
-                insert_data(session, data)
+                # insert_data(session, data)
+                insert_data_into_solicitations_table(session, data)
                 logger.info("Smartie is done inserting data into database!")
 
-            update_old_solicitations(session)
+            # update_old_solicitations(session)
 
         logger.info("Run complete without major errors.")
 
@@ -51,4 +52,4 @@ def main(limit=None):
 
 
 if __name__ == '__main__':
-    main()
+    main(30)

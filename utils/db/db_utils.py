@@ -1,5 +1,5 @@
 from contextlib import contextmanager
-import datetime
+from datetime import datetime
 import json
 import logging
 import os
@@ -7,9 +7,10 @@ import sys
 
 import dill as pickle
 from sqlalchemy import create_engine, func, case, inspect
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, make_transient
 from sqlalchemy.pool import NullPool
 from sqlalchemy_utils import database_exists, create_database, drop_database
+from utils.db.db import Notice, NoticeType, Solicitations, Attachment, Model, now_minus_two
 
 import utils.db.db as db
 import functools
@@ -191,7 +192,7 @@ def insert_data(session, data):
     opp_count = 0
     skip_count = 0
     for opp in data:
-        notice_type = opp.pop('notice type')
+        notice_type = opp['notice type']
         notice_type_id = fetch_notice_type_id(notice_type, session)
 
         if notice_type_id == None:
@@ -205,9 +206,9 @@ def insert_data(session, data):
             notice_type_id = fetch_notice_type_id(notice_type, session)
 
         attachments = opp.pop('attachments')
-        agency = opp.pop('agency')
-        compliant = opp.pop('compliant')
-        solicitation_number = opp.pop('solnbr')
+        agency = opp['agency']
+        compliant = opp['compliant']
+        solicitation_number = opp['solnbr']
         
         matching_notices = fetch_notices_by_solnbr(solicitation_number, session)
         is_solnbr_in_db = True if matching_notices else False
@@ -247,6 +248,91 @@ def insert_data(session, data):
         opp_count += 1
 
     logger.info("Added {} notice records to the database. {} were skipped.".format(opp_count, skip_count))
+
+
+def insert_data_into_solicitations_table(session, data):
+    '''
+    Insert opportunities data into the database.
+
+    Parameters:
+        data (list): a list of dicts, each representing a single opportunity
+
+    Returns:
+        None
+    '''
+    insert_notice_types(session)
+    opp_count = 0
+    skip_count = 0
+    for opp in data:
+        notice_type = opp['notice type']
+        notice_type_id = fetch_notice_type_id(notice_type, session)
+
+        if notice_type_id == None:
+            logger.warning("Notice type '{}' found in Notice {} was not in the database".format(notice_type,
+                                                                                                opp.get('solnbr', '')),
+                           extra={
+                               'notice type': notice_type,
+                               'soliciation number': opp.get('solnbr', ''),
+                               'agency': opp.get('agency', '')
+                           })
+            insert_notice_types(session, [notice_type])
+            notice_type_id = fetch_notice_type_id(notice_type, session)
+
+        attachments = opp.pop('attachments')
+
+        sol = None
+        sol_existed_in_db = False
+        results = session.query(db.Solicitations).filter(db.Solicitations.solNum == opp['solnbr'])
+        for s in results:
+            # make a duplicate
+            sol = s
+            sol_existed_in_db = True
+        if sol == None:
+            sol = Solicitations()
+
+        sol.noticeData = opp
+        sol.noticeType = notice_type_id
+        sol.solNum = opp['solnbr']
+        sol.agency = opp['agency']
+        sol.date = datetime.utcnow()
+        sol.compliant = opp['compliant']
+        sol.numDocs = len(attachments)
+        sol.office = opp['office']
+        sol.eitLikelihood = {"value": "yes"}
+        sol.undetermined = False
+        sol.title = opp['subject']
+        sol.url = opp['url']
+        sol.contactInfo = opp['emails']
+
+        if (sol_existed_in_db):
+            if ( not sol.history):
+                sol.history = []
+            sol.history.append({ "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "user": "", "action": "Solicitation Updated on SAM", "status": "" })
+        else:
+            if ( not sol.action ):
+                sol.action = []
+            sol.action.append({"date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "user": "", "action": "Solicitaiton Posted", "status": "complete"})
+
+
+
+
+
+        for doc in attachments:
+            attachment = db.Attachment(notice_type_id=notice_type_id,
+                                       filename=doc['filename'],
+                                       machine_readable=doc['machine_readable'],
+                                       attachment_text=doc['text'],
+                                       prediction=doc['prediction'],
+                                       decision_boundary=doc['decision_boundary'],
+                                       validation=doc['validation'],
+                                       attachment_url=doc['url'],
+                                       trained=doc['trained'])
+            sol.attachments.append(attachment)
+        session.add(sol)
+        opp_count += 1
+
+    logger.info("Added {} notice records to the database. {} were skipped.".format(opp_count, skip_count))
+
 
 def get_validation_count(session):
     '''

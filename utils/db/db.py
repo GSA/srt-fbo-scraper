@@ -42,7 +42,6 @@ class Notice(Base):
     createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = True)
     na_flag = Column(Boolean, default = False)
-    attachments = relationship("Attachment", back_populates = "notice", cascade = "all, delete-orphan")
 
 class NoticeType(Base):
     __tablename__ = 'notice_type'
@@ -64,7 +63,7 @@ class Attachment(Base):
     trained = Column(Boolean, nullable = True)
     createdAt = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = True)
-    notice = relationship("Notice", back_populates = "attachments")
+    solicitaiton_id = relationship("Solicitations", back_populates = "attachments")
 
 class Model(Base):
     __tablename__ = 'model'
@@ -145,6 +144,28 @@ class Solicitations(Base):
     id = Column(Integer, primary_key=True)
     solNum = Column(String)
     active = Column(Boolean)
-    updatedAt = Column(DateTime)
-    createdAt = Column(DateTime)
+    createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
+    updatedAt = Column(DateTime, nullable = False)
+    title = Column(String)
+    url = Column(String)
+    agency = Column(String)
+    numDocs = Column(Integer)
+    noticeType = Column(Integer)
+    date = Column(DateTime)
+    office = Column(String)
+    na_flag = Column(Boolean)
+    eitLikelihood = Column(JSONB)
+    undetermined = Column(Boolean)
+    history = Column(JSONB)
+    action = Column(JSONB)
+    actionStatus = Column(String)
+    contactInfo= Column(JSONB)
+    parseStatus = Column(JSONB)
+    predictions = Column(JSONB)
+    reviewRec = Column(String)
+    searchText = Column(String)
+    compliant = Column (Integer),
+    noticeData = Column(JSONB)
+    attachments = relationship("Attachment", back_populates="solicitaitons", cascade="all, delete-orphan");
+
 

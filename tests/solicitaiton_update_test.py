@@ -23,22 +23,22 @@ class SamUtilsTestCase(unittest.TestCase):
     def tearDown(self):
         pass
 
-#    @pytest.mark.skip(reason="intermittent fails downloading file")
-#    def test_update_sam_data_feed(self):
-#        existing_filename = '/tmp/sam_data_feed.tmp'
-#        Path(existing_filename).touch()
-#
-#        new_filename = '/tmp/ContractOpportunitiesFullCSV.csv'
-#        if os.path.isfile(new_filename):
-#            os.remove(new_filename)
-#
-#        assert update_sam_data_feed(existing_filename) == SAM_DATA_FEED_EXISTED
-#
-#        assert update_sam_data_feed(new_filename, 30) == SAM_DATA_FEED_DOWNLOADED
-#        assert os.path.isfile(new_filename)
-#        assert os.path.getsize(new_filename) > 400 * 1000 * 1000  # larger than 400 MB
-#
-#        assert update_sam_data_feed(new_filename, 30) == SAM_DATA_FEED_EXISTED
+   # @pytest.mark.skip(reason="intermittent fails downloading file")
+   def test_update_sam_data_feed(self):
+       existing_filename = '/tmp/sam_data_feed.tmp'
+       Path(existing_filename).touch()
+
+       new_filename = '/tmp/ContractOpportunitiesFullCSV.csv'
+       if os.path.isfile(new_filename):
+           os.remove(new_filename)
+
+       assert update_sam_data_feed(existing_filename) == SAM_DATA_FEED_EXISTED
+
+       assert update_sam_data_feed(new_filename, 30) == SAM_DATA_FEED_DOWNLOADED
+       assert os.path.isfile(new_filename)
+       assert os.path.getsize(new_filename) > 400 * 1000 * 1000  # larger than 400 MB
+
+       assert update_sam_data_feed(new_filename, 30) == SAM_DATA_FEED_EXISTED
 
 #    @pytest.mark.skip(reason="intermittent fails downloading file")
 #    def test_update_old_solicitations(self):

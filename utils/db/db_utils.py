@@ -10,7 +10,7 @@ from sqlalchemy import create_engine, func, case, inspect
 from sqlalchemy.orm import sessionmaker, make_transient
 from sqlalchemy.pool import NullPool
 from sqlalchemy_utils import database_exists, create_database, drop_database
-from utils.db.db import Notice, NoticeType, Solicitations, Attachment, Model, now_minus_two
+from utils.db.db import Notice, NoticeType, Solicitation, Attachment, Model, now_minus_two
 
 import utils.db.db as db
 import functools
@@ -282,13 +282,15 @@ def insert_data_into_solicitations_table(session, data):
 
         sol = None
         sol_existed_in_db = False
-        results = session.query(db.Solicitations).filter(db.Solicitations.solNum == opp['solnbr'])
+        results = session.query(db.Solicitation).filter(db.Solicitation.solNum == opp['solnbr'])
         for s in results:
             # make a duplicate
             sol = s
             sol_existed_in_db = True
         if sol == None:
-            sol = Solicitations()
+            sol = Solicitation()
+            sol.active = True
+            sol.na_flag = False
 
         sol.noticeData = opp
         sol.noticeType = notice_type_id
@@ -308,12 +310,19 @@ def insert_data_into_solicitations_table(session, data):
             if ( not sol.history):
                 sol.history = []
             sol.history.append({ "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "user": "", "action": "Solicitation Updated on SAM", "status": "" })
+            sol.updatedAt = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
         else:
             if ( not sol.action ):
                 sol.action = []
             sol.action.append({"date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "user": "", "action": "Solicitaiton Posted", "status": "complete"})
 
-
+        if (sol.na_flag):
+            sol.reviewRec = "Not Applicable"
+        else:
+            if (sol.compliant):
+                sol.reviewRec = 'Compliant'
+            else:
+                sol.reviewRec = 'Non-compliant (Action Required)'
 
 
 

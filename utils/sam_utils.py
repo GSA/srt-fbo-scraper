@@ -14,7 +14,7 @@ from selenium.webdriver.common.by import By
 
 import time
 import stat
-from utils.db.db import Notice, Predictions, Solicitations
+from utils.db.db import Notice, Predictions, Solicitation
 from utils.db.db_utils import fetch_notice_type_by_id
 from sqlalchemy.sql.expression import func
 
@@ -307,8 +307,8 @@ def get_all_solNum_from_prediction_table(session, age_cutoff=90):
 
 def mark_solNum_as_inactive(session, solNum):
     try:
-        session.query(Solicitations). \
-            filter(Solicitations.solNum == solNum). \
+        session.query(Solicitation). \
+            filter(Solicitation.solNum == solNum). \
             update({"active": False, "updatedAt": func.current_timestamp()}, synchronize_session='fetch')
         logger.info("Marking solicitation {} as inactive".format(solNum))
         session.execute(f"delete from \"Predictions\" where \"solNum\" = '{solNum}' ")

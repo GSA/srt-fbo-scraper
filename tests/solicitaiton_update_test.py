@@ -12,7 +12,7 @@ from utils.sam_utils import get_sol_data_from_feed, update_sam_data_feed, update
                             SAM_DATA_FEED_EXISTED, SAM_DATA_FEED_DOWNLOADED, SAM_DATA_FEED_ERROR
 
 import utils.db.db_utils
-from utils.db.db import Notice, Predictions, Solicitations
+from utils.db.db import Notice, Predictions, Solicitation
 
 
 class SamUtilsTestCase(unittest.TestCase):

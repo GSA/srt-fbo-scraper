@@ -51,7 +51,7 @@ class NoticeType(Base):
 class Attachment(Base):
     __tablename__ = 'attachment'
     id = Column(Integer, primary_key = True)
-    notice_id = Column(Integer, ForeignKey('notice.id'))
+    notice_id = Column(Integer)  #Column(Integer, ForeignKey('notice.id'))
     notice_type_id = Column(Integer, ForeignKey('notice_type.id'))
     filename = Column(Text, nullable = False)
     machine_readable = Column(Boolean)
@@ -63,7 +63,8 @@ class Attachment(Base):
     trained = Column(Boolean, nullable = True)
     createdAt = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = True)
-    solicitaiton_id = relationship("Solicitations", back_populates = "attachments")
+    solicitation_id = Column(Integer, ForeignKey('solicitations.id'))
+    solicitaiton = relationship("Solicitation", back_populates = "attachments")
 
 class Model(Base):
     __tablename__ = 'model'
@@ -139,7 +140,7 @@ class Predictions(Base):
     createdAt = Column(DateTime)
     updatedAt = Column(DateTime)
 
-class Solicitations(Base):
+class Solicitation(Base):
     __tablename__ = 'solicitations'
     id = Column(Integer, primary_key=True)
     solNum = Column(String)
@@ -166,6 +167,6 @@ class Solicitations(Base):
     searchText = Column(String)
     compliant = Column (Integer),
     noticeData = Column(JSONB)
-    attachments = relationship("Attachment", back_populates="solicitaitons", cascade="all, delete-orphan");
+    attachments = relationship("Attachment", back_populates="solicitaiton", cascade="all, delete-orphan");
 
 

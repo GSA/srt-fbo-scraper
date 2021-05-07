@@ -293,7 +293,7 @@ def insert_data_into_solicitations_table(session, data):
             sol.na_flag = False
 
         sol.noticeData = opp
-        sol.noticeType = notice_type_id
+        sol.notice_type_id = notice_type_id
         sol.solNum = opp['solnbr']
         sol.agency = opp['agency']
         sol.date = datetime.utcnow()
@@ -315,6 +315,8 @@ def insert_data_into_solicitations_table(session, data):
             if ( not sol.action ):
                 sol.action = []
             sol.action.append({"date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "user": "", "action": "Solicitaiton Posted", "status": "complete"})
+            sol.actionDate = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+            sol.actionStatus = "Solicitaiton Posted"
 
         if (sol.na_flag):
             sol.reviewRec = "Not Applicable"

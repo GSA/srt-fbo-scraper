@@ -37,7 +37,8 @@ def get_yesterdays_opps(filter_naics = True, limit = None):
         _opps, _ = get_opps(uri, params, headers)
         _opps, _is_more_opps = find_yesterdays_opps(_opps)
         for o in _opps:
-            print ("Processing sol#: " + o['solicitationNumber'])
+            if ('solicitationNumber' in o):
+                print ("Processing sol#: " + o['solicitationNumber'])
 
         opps.extend(_opps)
         if (not _is_more_opps) or (limit and len(opps) > limit):
@@ -66,7 +67,7 @@ def get_docs(opp_id, out_path):
 
     except Exception as e:
         try:
-            logger.error(f"Exception {e} getting opps from {uri}", exc_info=True)
+            logger.warning(f"Exception {e} getting opps from {uri}", exc_info=True)
             #sys.exit(1)
             logger.warning("Falling back to wget for {}".format(uri), extra={'opportunity ID': opp_id})
             fname  = wget.download(uri)

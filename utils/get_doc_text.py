@@ -42,14 +42,14 @@ def get_doc_text(file_name, rm = True):
                                       errors = 'ignore')
         else:
             b_text = None
-            logger.error(f"Exception occurred textracting {file_name}:  \
+            logger.warning(f"Exception occurred textracting {file_name}:  \
                          {e}", exc_info=True)
     #TypeError is raised when None is passed to str.decode()
     #This happens when textract can't extract text from scanned documents
     except TypeError:
         b_text = None
     except Exception as e:
-        logger.error(f"Exception occurred textracting {file_name}:  \
+        logger.warning(f"Exception occurred textracting {file_name}:  \
                      {e}", exc_info=True)
         b_text = None
     text = b_text.decode('utf8', errors = 'ignore').strip() if b_text else ''

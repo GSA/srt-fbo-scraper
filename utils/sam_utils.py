@@ -332,7 +332,14 @@ def update_notice_type_if_necessary(session, solNum, notice_type_string):
         order_by(Notice.date.desc()).\
         limit(1).\
         first()
-    current_notice_type = fetch_notice_type_by_id(n.notice_type_id, session).notice_type
+
+    notice_info = fetch_notice_type_by_id(n.notice_type_id, session)
+    if (notice_info and 'NoticeType' in str(type(notice_info))):
+        current_notice_type = notice_info.notice_type
+    else:
+        current_notice_type = ''
+
+    # current_notice_type = fetch_notice_type_by_id(n.notice_type_id, session).notice_type
     if (current_notice_type != notice_type_string):
         # create a new notice record with the updated type
         insert_sql = f'''

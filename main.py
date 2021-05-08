@@ -20,7 +20,7 @@ def main(limit=None):
         logger.info("Connecting with database at {}".format(conn_string))
         logger.info("Smartie is fetching opportunties from SAM...")
         if limit:
-            logger.warning("Artifical limit of {} placed on the number of opportunities processed".format(limit))
+            logger.error("Artifical limit of {} placed on the number of opportunities processed".format(limit))
 
         data = get_opps.main(limit)
         if not data:
@@ -41,7 +41,7 @@ def main(limit=None):
                 insert_data_into_solicitations_table(session, data)
                 logger.info("Smartie is done inserting data into database!")
 
-            # update_old_solicitations(session)
+            update_old_solicitations(session)
 
         logger.info("Run complete without major errors.")
 

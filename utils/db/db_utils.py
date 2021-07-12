@@ -354,6 +354,9 @@ def insert_data_into_solicitations_table(session, data):
         new_prediction['history'].append( { "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "value": sol.predictions['value']}  )
         sol.predictions = new_prediction
 
+        # now set the search text column so that we can easily do a full text search in the API
+        sol.searchText = (sol.solNum, notice_type, sol.title, sol.date, sol.reviewRec, sol.actionStatus, sol.actionDate, sol.agency, sol.office)
+
         if (sol_existed_in_db):
             session.add(sol);
         opp_count += 1

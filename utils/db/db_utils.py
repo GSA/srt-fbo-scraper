@@ -266,6 +266,8 @@ def insert_data_into_solicitations_table(session, data):
     opp_count = 0
     skip_count = 0
     for opp in data:
+        now_datetime = datetime.utcnow()
+        now_datetime_string = now_datetime.strftime("%Y-%m-%dT%H:%M:%SZ")
         notice_type = opp['notice type']
         notice_type_id = fetch_notice_type_id(notice_type, session)
 
@@ -289,7 +291,7 @@ def insert_data_into_solicitations_table(session, data):
             # make a duplicate
             sol = s
             sol_existed_in_db = True
-            sol.updatedAt = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+            sol.updatedAt = now_datetime
         if sol == None:
             sol = Solicitation()
             sol.active = True
@@ -299,7 +301,7 @@ def insert_data_into_solicitations_table(session, data):
         sol.notice_type_id = notice_type_id
         sol.solNum = opp['solnbr']
         sol.agency = opp['agency']
-        sol.date = datetime.utcnow()
+        sol.date = now_datetime
         sol.compliant = opp['compliant']
         sol.numDocs = len(attachments)
         sol.office = opp['office']
@@ -312,13 +314,13 @@ def insert_data_into_solicitations_table(session, data):
         if (sol_existed_in_db):
             if ( not sol.history):
                 sol.history = []
-            sol.history.append({ "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "user": "", "action": "Solicitation Updated on SAM", "status": "" })
-            sol.updatedAt = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+            sol.history.append({ "date": now_datetime_string, "user": "", "action": "Solicitation Updated on SAM", "status": "" })
+            sol.updatedAt = now_datetime_string
         else:
             if ( not sol.action ):
                 sol.action = []
-            sol.action.append({"date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "user": "", "action": "Solicitaiton Posted", "status": "complete"})
-            sol.actionDate = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+            sol.action.append({"date": now_datetime_string, "user": "", "action": "Solicitaiton Posted", "status": "complete"})
+            sol.actionDate = now_datetime_string
             sol.actionStatus = "Solicitaiton Posted"
             sol.predictions = { "value": "red", "history" : [] }
 
@@ -333,6 +335,7 @@ def insert_data_into_solicitations_table(session, data):
 
 
         sol_prediction = 0
+        parseStatus = deepcopy(sol.parseStatus) or []
         for doc in attachments:
             attachment = db.Attachment(notice_type_id=notice_type_id,
                                        filename=doc['filename'],
@@ -345,7 +348,10 @@ def insert_data_into_solicitations_table(session, data):
                                        trained=doc['trained'])
             sol_prediction += doc['prediction'] # this should be a 0/1 boolean and if any 1 then it's enough to make the total result true
             sol.attachments.append(attachment)
+            parse_status_text = "successfully parsed" if doc['machine_readable'] else "processing error"
+            parseStatus.append({"id": attachment.id, "name": doc['filename'], "status": parse_status_text, "postedDate": now_datetime_string, "attachment_url": doc['url'] })
 
+        sol.parseStatus = parseStatus
         new_prediction = deepcopy(sol.predictions)  # make a copy - if you only chagne the props then SQAlchamy won't know the object changed
         if sol_prediction != 0:
             new_prediction['value'] = "green";

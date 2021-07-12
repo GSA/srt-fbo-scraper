@@ -4,6 +4,7 @@ import json
 import logging
 import os
 import sys
+from copy import deepcopy
 
 import dill as pickle
 from sqlalchemy import create_engine, func, case, inspect
@@ -100,6 +101,7 @@ def session_scope(dal):
     session = dal.Session()
     try:
         yield session
+        print ("*******\nCommiting session\n********\n")
         session.commit()
     except Exception as e:
         session.rollback()
@@ -287,6 +289,7 @@ def insert_data_into_solicitations_table(session, data):
             # make a duplicate
             sol = s
             sol_existed_in_db = True
+            sol.updatedAt = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
         if sol == None:
             sol = Solicitation()
             sol.active = True
@@ -317,6 +320,7 @@ def insert_data_into_solicitations_table(session, data):
             sol.action.append({"date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "user": "", "action": "Solicitaiton Posted", "status": "complete"})
             sol.actionDate = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
             sol.actionStatus = "Solicitaiton Posted"
+            sol.predictions = { "value": "red", "history" : [] }
 
         if (sol.na_flag):
             sol.reviewRec = "Not Applicable"
@@ -328,6 +332,7 @@ def insert_data_into_solicitations_table(session, data):
 
 
 
+        sol_prediction = 0
         for doc in attachments:
             attachment = db.Attachment(notice_type_id=notice_type_id,
                                        filename=doc['filename'],
@@ -338,8 +343,19 @@ def insert_data_into_solicitations_table(session, data):
                                        validation=doc['validation'],
                                        attachment_url=doc['url'],
                                        trained=doc['trained'])
+            sol_prediction += doc['prediction'] # this should be a 0/1 boolean and if any 1 then it's enough to make the total result true
             sol.attachments.append(attachment)
-        session.add(sol)
+
+        new_prediction = deepcopy(sol.predictions)  # make a copy - if you only chagne the props then SQAlchamy won't know the object changed
+        if sol_prediction != 0:
+            new_prediction['value'] = "green";
+        else:
+            new_prediction['value'] = "red";
+        new_prediction['history'].append( { "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "value": sol.predictions['value']}  )
+        sol.predictions = new_prediction
+
+        if (sol_existed_in_db):
+            session.add(sol);
         opp_count += 1
 
     logger.info("Added {} notice records to the database. {} were skipped.".format(opp_count, skip_count))

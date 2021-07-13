@@ -266,106 +266,115 @@ def insert_data_into_solicitations_table(session, data):
     opp_count = 0
     skip_count = 0
     for opp in data:
-        now_datetime = datetime.utcnow()
-        now_datetime_string = now_datetime.strftime("%Y-%m-%dT%H:%M:%SZ")
-        notice_type = opp['notice type']
-        notice_type_id = fetch_notice_type_id(notice_type, session)
-
-        if notice_type_id == None:
-            logger.warning("Notice type '{}' found in Notice {} was not in the database".format(notice_type,
-                                                                                                opp.get('solnbr', '')),
-                           extra={
-                               'notice type': notice_type,
-                               'soliciation number': opp.get('solnbr', ''),
-                               'agency': opp.get('agency', '')
-                           })
-            insert_notice_types(session, [notice_type])
+        try:
+            now_datetime = datetime.utcnow()
+            now_datetime_string = now_datetime.strftime("%Y-%m-%dT%H:%M:%SZ")
+            notice_type = opp['notice type']
             notice_type_id = fetch_notice_type_id(notice_type, session)
 
-        attachments = opp.pop('attachments')
+            if notice_type_id == None:
+                logger.warning("Notice type '{}' found in Notice {} was not in the database".format(notice_type,
+                                                                                                    opp.get('solnbr', '')),
+                               extra={
+                                   'notice type': notice_type,
+                                   'soliciation number': opp.get('solnbr', ''),
+                                   'agency': opp.get('agency', '')
+                               })
+                insert_notice_types(session, [notice_type])
+                notice_type_id = fetch_notice_type_id(notice_type, session)
 
-        sol = None
-        sol_existed_in_db = False
-        results = session.query(db.Solicitation).filter(db.Solicitation.solNum == opp['solnbr'])
-        for s in results:
-            # make a duplicate
-            sol = s
-            sol_existed_in_db = True
-            sol.updatedAt = now_datetime
-        if sol == None:
-            sol = Solicitation()
-            sol.active = True
-            sol.na_flag = False
+            attachments = opp.pop('attachments')
 
-        sol.noticeData = opp
-        sol.notice_type_id = notice_type_id
-        sol.solNum = opp['solnbr']
-        sol.agency = opp['agency']
-        sol.date = now_datetime
-        sol.compliant = opp['compliant']
-        sol.numDocs = len(attachments)
-        sol.office = opp['office']
-        sol.eitLikelihood = {"value": "yes"}
-        sol.undetermined = False
-        sol.title = opp['subject']
-        sol.url = opp['url']
-        sol.contactInfo = opp['emails']
+            sol = None
+            sol_existed_in_db = False
+            results = session.query(db.Solicitation).filter(db.Solicitation.solNum == opp['solnbr'])
+            for s in results:
+                # make a duplicate
+                sol = s
+                sol_existed_in_db = True
+                sol.updatedAt = now_datetime
+            if sol == None:
+                sol = Solicitation()
+                sol.active = True
+                sol.na_flag = False
 
-        if (sol_existed_in_db):
-            if ( not sol.history):
-                sol.history = []
-            sol.history.append({ "date": now_datetime_string, "user": "", "action": "Solicitation Updated on SAM", "status": "" })
-            sol.updatedAt = now_datetime_string
-        else:
-            if ( not sol.action ):
-                sol.action = []
-            sol.action.append({"date": now_datetime_string, "user": "", "action": "Solicitaiton Posted", "status": "complete"})
-            sol.actionDate = now_datetime_string
-            sol.actionStatus = "Solicitaiton Posted"
-            sol.predictions = { "value": "red", "history" : [] }
+            sol.noticeData = opp
+            sol.notice_type_id = notice_type_id
+            sol.solNum = opp['solnbr']
+            sol.agency = opp['agency']
+            sol.date = now_datetime
+            sol.compliant = opp['compliant']
+            sol.numDocs = len(attachments)
+            sol.office = opp['office']
+            sol.eitLikelihood = {"value": "yes"}
+            sol.undetermined = False
+            sol.title = opp['subject']
+            sol.url = opp['url']
+            sol.contactInfo = opp['emails']
 
-        if (sol.na_flag):
-            sol.reviewRec = "Not Applicable"
-        else:
-            if (sol.compliant):
-                sol.reviewRec = 'Compliant'
+            if (sol_existed_in_db):
+                if ( not sol.history):
+                    sol.history = []
+                sol.history.append({ "date": now_datetime_string, "user": "", "action": "Solicitation Updated on SAM", "status": "" })
+                sol.updatedAt = now_datetime_string
             else:
-                sol.reviewRec = 'Non-compliant (Action Required)'
+                if ( not sol.action ):
+                    sol.action = []
+                sol.action.append({"date": now_datetime_string, "user": "", "action": "Solicitaiton Posted", "status": "complete"})
+                sol.actionDate = now_datetime
+                sol.actionStatus = "Solicitaiton Posted"
+                sol.predictions = { "value": "red", "history" : [] }
+
+            if (sol.na_flag):
+                sol.reviewRec = "Not Applicable"
+            else:
+                if (sol.compliant):
+                    sol.reviewRec = 'Compliant'
+                else:
+                    sol.reviewRec = 'Non-compliant (Action Required)'
 
 
 
-        sol_prediction = 0
-        parseStatus = deepcopy(sol.parseStatus) or []
-        for doc in attachments:
-            attachment = db.Attachment(notice_type_id=notice_type_id,
-                                       filename=doc['filename'],
-                                       machine_readable=doc['machine_readable'],
-                                       attachment_text=doc['text'],
-                                       prediction=doc['prediction'],
-                                       decision_boundary=doc['decision_boundary'],
-                                       validation=doc['validation'],
-                                       attachment_url=doc['url'],
-                                       trained=doc['trained'])
-            sol_prediction += doc['prediction'] # this should be a 0/1 boolean and if any 1 then it's enough to make the total result true
-            sol.attachments.append(attachment)
-            parse_status_text = "successfully parsed" if doc['machine_readable'] else "processing error"
-            parseStatus.append({"id": attachment.id, "name": doc['filename'], "status": parse_status_text, "postedDate": now_datetime_string, "attachment_url": doc['url'] })
+            sol_prediction = 0
+            parseStatus = deepcopy(sol.parseStatus) or []
+            for doc in attachments:
+                attachment = db.Attachment(notice_type_id=notice_type_id,
+                                           filename=doc['filename'],
+                                           machine_readable=doc['machine_readable'],
+                                           attachment_text=doc['text'],
+                                           prediction=doc['prediction'],
+                                           decision_boundary=doc['decision_boundary'],
+                                           validation=doc['validation'],
+                                           attachment_url=doc['url'],
+                                           trained=doc['trained'])
+                sol_prediction += doc['prediction'] # this should be a 0/1 boolean and if any 1 then it's enough to make the total result true
+                sol.attachments.append(attachment)
+                parse_status_text = "successfully parsed" if doc['machine_readable'] else "processing error"
+                parseStatus.append({"id": attachment.id, "name": doc['filename'], "status": parse_status_text, "postedDate": now_datetime_string, "attachment_url": doc['url'] })
 
-        sol.parseStatus = parseStatus
-        new_prediction = deepcopy(sol.predictions)  # make a copy - if you only chagne the props then SQAlchamy won't know the object changed
-        if sol_prediction != 0:
-            new_prediction['value'] = "green";
-        else:
-            new_prediction['value'] = "red";
-        new_prediction['history'].append( { "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "value": sol.predictions['value']}  )
-        sol.predictions = new_prediction
+            sol.parseStatus = parseStatus
+            new_prediction = deepcopy(sol.predictions)  # make a copy - if you only chagne the props then SQAlchamy won't know the object changed
+            if sol_prediction != 0:
+                new_prediction['value'] = "green";
+            else:
+                new_prediction['value'] = "red";
+            new_prediction['history'].append( { "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "value": sol.predictions['value']}  )
+            sol.predictions = new_prediction
 
-        # now set the search text column so that we can easily do a full text search in the API
-        sol.searchText = (sol.solNum, notice_type, sol.title, sol.date, sol.reviewRec, sol.actionStatus, sol.actionDate, sol.agency, sol.office)
+            # now set the search text column so that we can easily do a full text search in the API
+            sol.searchText = " ".join((sol.solNum, notice_type, sol.title, sol.date.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                                       sol.reviewRec, sol.actionStatus, sol.actionDate.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                                       sol.agency, sol.office)).lower()
 
-        if (sol_existed_in_db):
-            session.add(sol);
-        opp_count += 1
+            if (sol_existed_in_db):
+                session.add(sol);
+            opp_count += 1
+
+        except Exception as e:
+            logger.error("Unhandled error. Data for solictation " + opp.get('solnbr', '') + " may be lost.")
+            logger.error(f"Exception: {e}", exc_info=True)
+            logger.error("Unexpected error: {}".format(str(sys.exc_info()[0])))
+
 
     logger.info("Added {} notice records to the database. {} were skipped.".format(opp_count, skip_count))
 

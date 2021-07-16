@@ -181,6 +181,29 @@ def schematize_opp(opp):
 
     return schematized_opp
 
+_total_skipped = 0
+_total_kept = 0
+def sol_type_filter(opps, types):
+    """
+    Filter out any solicitaitons that aren't the correct type.  We are only interested in
+    Args:
+        opps list of solicitations
+        types list of allows sol types
+
+    Returns:
+        list of solicitations that have the correct type.
+    """
+    global _total_skipped, _total_kept
+    filtered_opps = []
+    for opp in opps:
+        if opp['type']['value'] in types:
+            filtered_opps.append(opp)
+            _total_kept += 1
+        else:
+            _total_skipped += 1
+
+    logger.debug("Total skip stats so far: Skipping {} out of {} due to solicitation type".format(_total_skipped, _total_kept + _total_skipped))
+    return filtered_opps
 
 def naics_filter(opps):
     """Filter out opps without desired naics

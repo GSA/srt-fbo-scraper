@@ -15,14 +15,21 @@ dal = DataAccessLayer(conn_string)
 dal.connect()
 
 
-def main(limit=None):
+def main(limit=None, updateOld=True, filter_naics = True, target_sol_types=("Combined Synopsis/Solicitation", "Solicitation")):
     try:
+        if limit:
+            logger.error("Artifical limit of {} placed on the number of opportunities processed.  Should not happen in production.".format(limit))
+
+        if not updateOld:
+            logger.error("Set to NOT update old solicitations. Should not happen in production.".format(limit))
+
+
+
         logger.info("Connecting with database at {}".format(conn_string))
         logger.info("Smartie is fetching opportunties from SAM...")
-        if limit:
-            logger.error("Artifical limit of {} placed on the number of opportunities processed".format(limit))
 
-        data = get_opps.main(limit)
+
+        data = get_opps.main(limit, filter_naics=filter_naics, target_sol_types=target_sol_types)
         if not data:
             logger.info("Smartie didn't find any opportunities!")
         else:
@@ -41,7 +48,8 @@ def main(limit=None):
                 insert_data_into_solicitations_table(session, data)
                 logger.info("Smartie is done inserting data into database!")
 
-            update_old_solicitations(session)
+            if updateOld:
+                update_old_solicitations(session)
 
         logger.info("Run complete without major errors.")
 
@@ -52,4 +60,4 @@ def main(limit=None):
 
 
 if __name__ == '__main__':
-    main()
+    main(limit=None, updateOld=True, filter_naics = True, target_sol_types=("Combined Synopsis/Solicitation", "Solicitation"))

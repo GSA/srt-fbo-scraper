@@ -76,7 +76,7 @@ class DataAccessLayer:
             # per each connection open/close.
             self.engine = create_engine(self.conn_string, poolclass = NullPool)
         else:
-            self.engine = create_engine(self.conn_string)
+            self.engine = create_engine(self.conn_string)  # use echo=True to log SQL
         try:
             db.Base.metadata.create_all(self.engine)
         except Exception as e:
@@ -317,6 +317,13 @@ def insert_data_into_solicitations_table(session, data):
                     sol.history = []
                 sol.history.append({ "date": now_datetime_string, "user": "", "action": "Solicitation Updated on SAM", "status": "" })
                 sol.updatedAt = now_datetime_string
+                if (sol.na_flag):
+                    sol.reviewRec = "Not Applicable"
+                else:
+                    if (sol.compliant):
+                        sol.reviewRec = 'Compliant'
+                    else:
+                        sol.reviewRec = 'Non-compliant (Action Required)'
             else:
                 if ( not sol.action ):
                     sol.action = []
@@ -325,13 +332,6 @@ def insert_data_into_solicitations_table(session, data):
                 sol.actionStatus = "Solicitaiton Posted"
                 sol.predictions = { "value": "red", "history" : [] }
 
-            if (sol.na_flag):
-                sol.reviewRec = "Not Applicable"
-            else:
-                if (sol.compliant):
-                    sol.reviewRec = 'Compliant'
-                else:
-                    sol.reviewRec = 'Non-compliant (Action Required)'
 
 
 
@@ -358,15 +358,28 @@ def insert_data_into_solicitations_table(session, data):
                 new_prediction['value'] = "green";
             else:
                 new_prediction['value'] = "red";
-            new_prediction['history'].append( { "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "value": sol.predictions['value']}  )
+            new_prediction['history'].append( { "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "value": new_prediction['value']}  )
             sol.predictions = new_prediction
+
+
+            if (sol.na_flag):
+                sol.reviewRec = "Not Applicable"
+            else:
+                if new_prediction['value'] == "green":
+                    sol.reviewRec = "Compliant"
+                    sol.compliant = 1
+                else:
+                    sol.reviewRec = "Non-compliant (Action Required)"
+                    sol.compliant = 0
+
+
 
             # now set the search text column so that we can easily do a full text search in the API
             sol.searchText = " ".join((sol.solNum, notice_type, sol.title, sol.date.strftime("%Y-%m-%dT%H:%M:%SZ"),
                                        sol.reviewRec, sol.actionStatus, sol.actionDate.strftime("%Y-%m-%dT%H:%M:%SZ"),
                                        sol.agency, sol.office)).lower()
 
-            if (sol_existed_in_db):
+            if (not sol_existed_in_db):
                 session.add(sol);
             opp_count += 1
 

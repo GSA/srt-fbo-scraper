@@ -166,7 +166,7 @@ class Solicitation(Base):
     predictions = Column(JSONB)
     reviewRec = Column(String)
     searchText = Column(String)
-    compliant = Column (Integer),
+    compliant = Column (Integer)
     noticeData = Column(JSONB)
     attachments = relationship("Attachment", back_populates="solicitaiton", cascade="all, delete-orphan");
 

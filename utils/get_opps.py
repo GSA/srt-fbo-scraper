@@ -7,14 +7,14 @@ import pprint
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from utils.get_doc_text import get_doc_text
 from utils.sam_utils import get_org_info, write_zip_content, get_notice_data, schematize_opp, \
-    naics_filter, find_yesterdays_opps
+    naics_filter, find_yesterdays_opps, sol_type_filter
 from utils.request_utils import requests_retry_session, get_opps, get_opp_request_details, \
     get_doc_request_details
 
 logger = logging.getLogger(__name__)
 
 
-def get_yesterdays_opps(filter_naics = True, limit = None):
+def get_yesterdays_opps(filter_naics = True, limit = None, target_sol_types=("Combined Synopsis/Solicitation", "Solicitation")):
     uri, params, headers = get_opp_request_details()
     opps, total_pages = get_opps(uri, params, headers)
     if not opps and not total_pages:
@@ -26,8 +26,9 @@ def get_yesterdays_opps(filter_naics = True, limit = None):
         # Our results included opps beyond today and yesterday. Since the results are 
         # sorted in descending order by modifiedDate, there's no need to make another request
         if filter_naics:
-            filtered_opps = naics_filter(opps)
-            return filtered_opps
+            correct_naics_ops = naics_filter(opps)
+            correct_naics_and_type = sol_type_filter(correct_naics_ops, target_sol_types)
+            return correct_naics_and_type
         return opps
 
     # the sgs/v1/search API starts at page 0
@@ -45,10 +46,11 @@ def get_yesterdays_opps(filter_naics = True, limit = None):
             break
         page += 1
     
-    if filter_naics:  
-        filtered_opps = naics_filter(opps)
-        return filtered_opps
-    
+    if filter_naics:
+        correct_naics_ops = naics_filter(opps)
+        correct_naics_and_type = sol_type_filter(correct_naics_ops, ("Combined Synopsis/Solicitation", "Solicitation"))
+        return correct_naics_and_type
+
     return opps
 
 def get_docs(opp_id, out_path):
@@ -125,11 +127,11 @@ def transform_opps(opps, out_path):
         transformed_opps.append(schematized_opp)
     return transformed_opps
 
-def main(limit=None):
+def main(limit=None, filter_naics = True, target_sol_types=("Combined Synopsis/Solicitation", "Solicitation")):
     out_path = os.path.join(os.getcwd(), 'attachments')
     if not os.path.exists(out_path):
         os.makedirs(out_path)
-    opps = get_yesterdays_opps(limit=limit)
+    opps = get_yesterdays_opps(limit=limit, filter_naics=filter_naics, target_sol_types=target_sol_types)
     if not opps:
         return []
     transformed_opps = transform_opps(opps, out_path)

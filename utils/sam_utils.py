@@ -387,11 +387,12 @@ def update_notice_type_if_necessary(session, solNum, notice_type_string):
 def update_old_active_solicitations(session, stats, age_cutoff):
     solNumArray = get_all_solNum_from_prediction_table(session, age_cutoff)
     stats['total'] = len(solNumArray)
-    logger.info(f"Found {stats['total']} solicitations to update")
+    logger.info(f"Found {stats['total']} solicitations to examine. Will print one dot as each is processed.")
 
 
     for solNum in solNumArray:
-        logger.debug(" updated {}.  {}/{} done --  looking at (active) {} next ".format(stats['updated'], stats["examined"], stats["total"], solNum))
+        if stats["examined"] % 250 == 0:
+            logger.debug(" updated {}.  {}/{} done --  looking at (active) {} next ".format(stats['updated'], stats["examined"], stats["total"], solNum))
         data = get_sol_data_from_feed(solNum)
         stats['examined'] += 1
         if data == SAM_DATA_FEED_NO_MATCH:
@@ -408,10 +409,12 @@ def update_old_active_solicitations(session, stats, age_cutoff):
 def check_inactive_solicitations(session, stats, age_cutoff):
     solNumArray = get_all_inactive_solicitation_numbers(session, age_cutoff)
     stats['total'] += len(solNumArray)
-    logger.info(f"Found {stats['total']} solicitations to update")
+    logger.info(f"Found {stats['total']} solicitations to examine")
+    logger.info(f"Found {stats['total']} solicitations to examine. Will print one dot as each is processed.")
 
     for solNum in solNumArray:
-        logger.debug(" updated {}.  {}/{} done --  looking at (inactive) {} next ".format(stats['updated'], stats["examined"], stats["total"], solNum))
+        if stats["examined"] % 250 == 0:
+            logger.debug(" updated {}.  {}/{} done --  looking at (inactive) {} next ".format(stats['updated'], stats["examined"], stats["total"], solNum))
         data = get_sol_data_from_feed(solNum)
         stats['examined'] += 1
         if data != SAM_DATA_FEED_NO_MATCH and data != False:

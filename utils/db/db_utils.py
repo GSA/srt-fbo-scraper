@@ -380,7 +380,10 @@ def insert_data_into_solicitations_table(session, data):
                                        sol.agency, sol.office)).lower()
 
             if (not sol_existed_in_db):
+                logger.warning("Inserting {}".format(sol.solNum))
                 session.add(sol);
+            else:
+                logger.warning("Updating {}".format(sol.solNum))
             opp_count += 1
 
         except Exception as e:

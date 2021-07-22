@@ -251,6 +251,27 @@ def insert_data(session, data):
 
     logger.info("Added {} notice records to the database. {} were skipped.".format(opp_count, skip_count))
 
+def posted_date_to_datetime(posted_date_string):
+    # double check we didn't pass in a datetime already
+    if isinstance(posted_date_string, datetime):
+        return posted_date_string
+
+    parts = posted_date_string.split("-")
+    if len(parts) < 2:
+        parts = posted_date_string.split("/")
+
+    if len(parts) < 2:
+        logger.error("Unable to parse posted date")
+        return datetime.utcnow()
+
+    return datetime(int(parts[0]), int(parts[1]), int(parts[2]))
+
+
+def is_opp_update(existing_date, posted_date, sol_existed_in_db):
+    if sol_existed_in_db and existing_date < posted_date_to_datetime(posted_date):
+        return True
+    return False
+
 
 def insert_data_into_solicitations_table(session, data):
     '''
@@ -300,9 +321,10 @@ def insert_data_into_solicitations_table(session, data):
 
             sol.noticeData = opp
             sol.notice_type_id = notice_type_id
+            sol.noticeType = notice_type
             sol.solNum = opp['solnbr']
             sol.agency = opp['agency']
-            sol.date = now_datetime
+            sol.date = posted_date_to_datetime(opp['postedDate'])
             sol.compliant = opp['compliant']
             sol.numDocs = len(attachments)
             sol.office = opp['office']
@@ -315,7 +337,8 @@ def insert_data_into_solicitations_table(session, data):
             if (sol_existed_in_db):
                 if ( not sol.history):
                     sol.history = []
-                sol.history.append({ "date": now_datetime_string, "user": "", "action": "Solicitation Updated on SAM", "status": "" })
+                if is_opp_update(existing_date=sol.date, posted_date=opp['postedDate'], sol_existed_in_db=sol_existed_in_db):
+                    sol.history.append({ "date": now_datetime_string, "user": "", "action": "Solicitation Updated on SAM", "status": "" })
                 sol.updatedAt = now_datetime_string
                 if (sol.na_flag):
                     sol.reviewRec = "Not Applicable"
@@ -380,10 +403,10 @@ def insert_data_into_solicitations_table(session, data):
                                        sol.agency, sol.office)).lower()
 
             if (not sol_existed_in_db):
-                logger.warning("Inserting {}".format(sol.solNum))
+                logger.info("Inserting {}".format(sol.solNum))
                 session.add(sol);
             else:
-                logger.warning("Updating {}".format(sol.solNum))
+                logger.info("Updating {}".format(sol.solNum))
             opp_count += 1
 
         except Exception as e:

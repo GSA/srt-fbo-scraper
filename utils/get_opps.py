@@ -1,8 +1,12 @@
 import logging
 import os
 import sys
-import wget
-import pprint
+import re
+import datetime
+import urllib3
+import shutil
+import hashlib
+import urllib
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from utils.get_doc_text import get_doc_text
@@ -13,82 +17,75 @@ from utils.request_utils import requests_retry_session, get_opps, get_opp_reques
 
 logger = logging.getLogger(__name__)
 
+def get_opportunities_search_url(api_key=None, page_size=500, postedFrom=None, postedTo=None, target_sol_types="o,k"):
+    yesterday = datetime.date.today() - datetime.timedelta(days=1)
+    yesterday_string = datetime.datetime.strftime(yesterday, '%m/%d/%Y')
+    base_uri = os.getenv('SAM_API_URI') or "https://api.sam.gov/opportunities/v2/search"
+    params = (
+        ("api_key", os.getenv('SAM_API_KEY')),
+        ("limit", page_size),
+        ("postedFrom", postedFrom or yesterday_string),
+        ("postedTo", postedTo or yesterday_string),
+        ("ptype", target_sol_types)
+    )
+    get_string = "&".join([ "{}={}".format(item[0], item[1]) for item in params  ])
+    return "{}?{}".format(base_uri, get_string)
 
-def get_yesterdays_opps(filter_naics = True, limit = None, target_sol_types=("Combined Synopsis/Solicitation", "Solicitation")):
-    uri, params, headers = get_opp_request_details()
-    opps, total_pages = get_opps(uri, params, headers)
-    if not opps and not total_pages:
-        # no opps or maybe a request error
-        return
-    # use yesterday's since today's might not be complete at time of running the script
-    opps, is_more_opps = find_yesterdays_opps(opps)
-    if not is_more_opps:
-        # Our results included opps beyond today and yesterday. Since the results are 
-        # sorted in descending order by modifiedDate, there's no need to make another request
+def get_yesterdays_opps(filter_naics = True, limit = None, target_sol_types="o,k"):
+    api_key = os.getenv('SAM_API_KEY')
+    if not api_key:
+        logger.error("No API key set. Please set the SAM_API_KEY environemnt variable.")
+        logger.critical("No API key - Exiting .")
+        exit(1)
+
+    uri = get_opportunities_search_url(api_key=os.getenv('SAM_API_KEY'), target_sol_types=target_sol_types)
+    logger.debug("Fetching yesterday's opps from {}".format(uri))
+
+    totalRecords = 9999999
+    offset = 0
+    opps = []
+
+    session = requests_retry_session()
+    while offset < totalRecords and (not limit or len(opps) < limit):
+        uri_with_offset = f'{uri}&offset={offset}'
+        r = session.get(uri_with_offset, timeout = 100)
+        data = r.json()
+        totalRecords = data['totalRecords']
+        offset += len(data['opportunitiesData'])
+
+        opportunities_data = data['opportunitiesData']
         if filter_naics:
-            correct_naics_ops = naics_filter(opps)
-            correct_naics_and_type = sol_type_filter(correct_naics_ops, target_sol_types)
-            return correct_naics_and_type
-        return opps
+             opportunities_data = naics_filter(opportunities_data)
+        opps.extend(opportunities_data)
 
-    # the sgs/v1/search API starts at page 0
-    page = 0
-    while page <= total_pages:
-        params.update({'page': str(page)})
-        _opps, _ = get_opps(uri, params, headers)
-        _opps, _is_more_opps = find_yesterdays_opps(_opps)
-        for o in _opps:
-            if ('solicitationNumber' in o):
-                print ("Processing sol#: " + o['solicitationNumber'])
+    session.close()
 
-        opps.extend(_opps)
-        if (not _is_more_opps) or (limit and len(opps) > limit):
-            break
-        page += 1
-    
-    if filter_naics:
-        correct_naics_ops = naics_filter(opps)
-        correct_naics_and_type = sol_type_filter(correct_naics_ops, ("Combined Synopsis/Solicitation", "Solicitation"))
-        return correct_naics_and_type
+    if limit and len(opps) > limit:
+        opps = opps[:limit]
 
     return opps
 
-def get_docs(opp_id, out_path):
-    """Download a zip archive of an opportunity's documents
-    
-    Arguments:
-        opp_id {str} -- an opportunity id 
-    """
-    # see https://open.gsa.gov/api/opportunities-api
-    # /#download-all-attachments-as-zip-for-an-opportunity
 
-    uri = get_doc_request_details(opp_id)
-    try:
-        with requests_retry_session() as session:
-            r = session.get(uri, timeout = 200)
 
-    except Exception as e:
-        try:
-            logger.warning(f"Exception {e} getting opps from {uri}", exc_info=True)
-            #sys.exit(1)
-            logger.warning("Falling back to wget for {}".format(uri), extra={'opportunity ID': opp_id})
-            fname  = wget.download(uri)
-            f = open(fname, mode='rb')
-            content = f.read()
-            f.close()
-            os.unlink(fname)
-            file_list = write_zip_content(content, out_path)
-            return file_list
-        except Exception as e:
-            logger.error(f"Exception using wget: {e}", exc_info=True)
-            return None
-
-    if r.ok:
-        file_list = write_zip_content(r.content, out_path)
-    else:
-        logger.error(f"Non-200 status code of {r.status_code} from {uri}")
-
-    return file_list
+def get_docs(opp, out_path):
+    filelist = []
+    http = urllib3.PoolManager()
+    for file_url in (opp['resourceLinks'] or []):
+        filename = os.path.join(out_path, hashlib.sha1(file_url.encode('utf-8')).hexdigest())
+        with open(filename, 'wb') as out:
+            r = http.request('GET', file_url, preload_content=False)
+            shutil.copyfileobj(r,out)
+            if 'Content-Disposition' in r.headers:
+                content_disposition = r.headers['Content-Disposition'] # should be in the form "attachment; filename=Attachment+5+Non-Disclosure+Agreement.docx"
+                match = re.search('filename=(.*)',content_disposition)
+                if match and len(match.groups()) > 0:
+                    real_filename = urllib.parse.unquote(match.group(1)).replace("+", " ")  # have to replace + with space because parse doesn't do that
+                    real_filename_with_path = os.path.join(out_path, real_filename)
+                    os.rename(filename, real_filename_with_path)
+                    logger.info("Downloaded file {}".format(real_filename_with_path))
+                    filelist.append( (real_filename_with_path, file_url) )
+    http.clear()
+    return filelist
 
 def get_attachment_data(file_name, url):
     text = get_doc_text(file_name)
@@ -105,7 +102,7 @@ def get_attachment_data(file_name, url):
     
     return attachment_data
 
-def transform_opps(opps, out_path):
+def transform_opps(opps, out_path, skip_attachments=False):
     """Transform the opportunity data to fit the SRT's schema
     
     Arguments:
@@ -113,28 +110,31 @@ def transform_opps(opps, out_path):
     """
     transformed_opps = []
     for opp in opps:
-        id = opp.get('cleanSolicitationNumber', '')
-        logger.debug(f"transforming opp {id}")
         schematized_opp = schematize_opp(opp)
         if not schematized_opp:
             continue
-        url = schematized_opp.get('url','')
-        opp_id = schematized_opp.pop('opp_id')
-        file_list = get_docs(opp_id, out_path)
-        if file_list:
-            attachment_data = [get_attachment_data(f, url) for f in file_list]
-            schematized_opp['attachments'].extend(attachment_data)
+        if not skip_attachments:
+            file_list = get_docs(schematized_opp, out_path=out_path)
+            if file_list:
+                attachment_data = [ get_attachment_data(file_and_url_tuple[0], file_and_url_tuple[1]) for file_and_url_tuple in file_list ]
+                schematized_opp['attachments'].extend(attachment_data)
         transformed_opps.append(schematized_opp)
     return transformed_opps
 
-def main(limit=None, filter_naics = True, target_sol_types=("Combined Synopsis/Solicitation", "Solicitation")):
-    out_path = os.path.join(os.getcwd(), 'attachments')
-    if not os.path.exists(out_path):
-        os.makedirs(out_path)
-    opps = get_yesterdays_opps(limit=limit, filter_naics=filter_naics, target_sol_types=target_sol_types)
-    if not opps:
-        return []
-    transformed_opps = transform_opps(opps, out_path)
+def main(limit=None, filter_naics = True, target_sol_types=("k","o"), skip_attachments=False):
+    try:
+        out_path = os.path.join(os.getcwd(), 'attachments')
+        if not os.path.exists(out_path):
+            os.makedirs(out_path)
+        # opps = get_yesterdays_opps(limit=limit, filter_naics=filter_naics, target_sol_types=target_sol_types)
+        opps = get_yesterdays_opps(limit=limit, filter_naics=filter_naics, target_sol_types=target_sol_types)
+        if not opps:
+            return []
+        transformed_opps = transform_opps(opps, out_path, skip_attachments=skip_attachments)
+
+    except Exception as e:
+        logger.critical(f"Exception {e} getting solicitations", exc_info=True)
+        sys.exit(1)
 
     return transformed_opps
 

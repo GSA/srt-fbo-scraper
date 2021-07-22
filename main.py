@@ -8,14 +8,14 @@ from utils.sam_utils import update_old_solicitations
 import sys
 
 logger = logging.getLogger()
-configureLogger(logger, stdout_level=0)
+configureLogger(logger, stdout_level=logging.INFO)
 
 conn_string = get_db_url()
 dal = DataAccessLayer(conn_string)
 dal.connect()
 
 
-def main(limit=None, updateOld=True, filter_naics = True, target_sol_types=("Combined Synopsis/Solicitation", "Solicitation")):
+def main(limit=None, updateOld=True, filter_naics = True, target_sol_types="o,k", skip_attachments=False):
     try:
         if limit:
             logger.error("Artifical limit of {} placed on the number of opportunities processed.  Should not happen in production.".format(limit))
@@ -29,7 +29,7 @@ def main(limit=None, updateOld=True, filter_naics = True, target_sol_types=("Com
         logger.info("Smartie is fetching opportunties from SAM...")
 
 
-        data = get_opps.main(limit, filter_naics=filter_naics, target_sol_types=target_sol_types)
+        data = get_opps.main(limit, filter_naics=filter_naics, target_sol_types=target_sol_types, skip_attachments=skip_attachments)
         if not data:
             logger.info("Smartie didn't find any opportunities!")
         else:
@@ -40,13 +40,15 @@ def main(limit=None, updateOld=True, filter_naics = True, target_sol_types=("Com
             data = predict.insert_predictions()
             logger.info("Smartie is done making predictions for each notice attachment!")
 
-            logger.info("Smartie is inserting data into the database...")
 
         with session_scope(dal) as session:
             if data:
                 # insert_data(session, data)
+                logger.info("Smartie is inserting data into the database...")
                 insert_data_into_solicitations_table(session, data)
                 logger.info("Smartie is done inserting data into database!")
+            else:
+                logger.error("No data to insert. Something went wrong.")
 
             if updateOld:
                 update_old_solicitations(session)
@@ -60,4 +62,17 @@ def main(limit=None, updateOld=True, filter_naics = True, target_sol_types=("Com
 
 
 if __name__ == '__main__':
-    main(limit=None, updateOld=True, filter_naics = True, target_sol_types=("Combined Synopsis/Solicitation", "Solicitation"))
+    # set defaults
+    limit = None
+    updateOld = True
+    filter_naics = True
+    target_sol_types = "o,k"
+    skip_attachemnts = False
+
+
+    #fast mode
+    limit=100
+    updateOld=False
+    skip_attachemnts=True
+
+    main(limit=limit, updateOld=updateOld, filter_naics = filter_naics, target_sol_types=target_sol_types, skip_attachments=skip_attachemnts)

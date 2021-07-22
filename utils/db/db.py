@@ -152,6 +152,7 @@ class Solicitation(Base):
     agency = Column(String)
     numDocs = Column(Integer)
     notice_type_id = Column(Integer)
+    noticeType = Column(String)
     date = Column(DateTime)
     office = Column(String)
     na_flag = Column(Boolean)

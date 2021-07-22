@@ -17,12 +17,16 @@ import stat
 from utils.db.db import Notice, Predictions, Solicitation
 from utils.db.db_utils import fetch_notice_type_by_id
 from sqlalchemy.sql.expression import func
+import copy
 
 import requests
 
 from .request_utils import requests_retry_session, get_org_request_details
 
 logger = logging.getLogger(__name__)
+
+naics_code_prefixes = ('334111', '334118', '3343', '33451', '334516', '334614',
+         '5112', '518', '54169', '54121', '5415', '54169', '61142')
 
 
 def get_org_info(org_id):
@@ -84,26 +88,20 @@ def write_zip_content(content, out_path):
 
 
 def get_notice_data(opp_data, opp_id):
-    poc = opp_data.get('pointOfContacts')
-    if not poc:
-        emails = []
-    else:
-        emails = [p.get('email') for p in poc if p.get('email')]
-    # classification_code = opp_data.get('classificationCode','')
-    # will revisit to document missing "classification code"
-    try:
-        classification_code = opp_data.get('psc', '')[0].get('code', '')
-    except IndexError:
-        classification_code = 0
-    naics = max([i for naics_list in
-                 [i.get('code') for i in opp_data.get('naics', {})]
-                 for i in naics_list], key=len)
+    poc = opp_data.get('pointOfContact', [])
+    emails = [p.get('email') for p in poc if p.get('email')]
+
+
+    classification_code = opp_data.get('classificationCode', '')
+
+
+    naics = opp_data.get('naicsCode', '')
     subject = opp_data.get('title', '').title()
-    url = f'https://beta.sam.gov/opp/{opp_id}/view'
-    # set_aside = opp_data.get('solicitation',{}).get('setAside','')
+    url = opp_data.get('uiLink', '')
     set_aside = opp_data.get('typeOfSetAside', '')
 
     notice_data = {'classcod': classification_code,
+                   'psc': classification_code,
                    'naics': naics,
                    'subject': subject,
                    'url': url,
@@ -133,37 +131,35 @@ def get_notice_type(notice_type_code):
 
 
 def schematize_opp(opp):
-    # opp_id = opp.get('opportunityId')
-    opp_id = opp.get('_id')
+    opp_id = opp['solicitationNumber']
     if not opp_id:
-        logger.warning(f"No opp_id for {opp}")
+        logger.warning(f"No solicitation number for {opp}")
         return
 
-    # opp_data = opp.get('data')
-    opp_data = opp
+    opp_data = copy.deepcopy(opp)
     if not opp_data:
         return
 
     # notice_type_code = opp_data.get('type')
-    notice_type_code = opp_data.get('type')['value']
+#    notice_type_code = opp_data.get('type')['value']
 
     # notice_type = get_notice_type(notice_type_code)
-    notice_type = notice_type_code
+    notice_type = opp_data['type']
 
     if not notice_type:
         return
 
     # org_id = opp_data.get('organizationId')
 
-
-    organizationHierarchy = opp_data.get('organizationHierarchy')
+    # opp_data['fullParentPathName'] is a . separated list. First is the agency, second is the office, and then it goes down from there.
+    organizationHierarchy = opp_data['fullParentPathName'].split(".")
     agency = office = ""
     if organizationHierarchy and isinstance(organizationHierarchy, list) and len(organizationHierarchy) > 0:
-        agency =organizationHierarchy[0].get('name','')
+        agency =organizationHierarchy[0]
         if len(organizationHierarchy) > 1:
-            office = organizationHierarchy[1].get('name','')
+            office = organizationHierarchy[1]
 
-    solicitation_number = opp_data.get('cleanSolicitationNumber', '')
+    solicitation_number = opp['solicitationNumber']
     # agency, office = get_org_info(org_id)
     # agency = opp_data
 
@@ -176,7 +172,7 @@ def schematize_opp(opp):
 
     notice_data = get_notice_data(opp_data, opp_id)
 
-    schematized_opp = {**required_data, **notice_data}
+    schematized_opp = {**opp_data, **required_data, **notice_data}
     schematized_opp['opp_id'] = opp_id
 
     return schematized_opp
@@ -215,13 +211,16 @@ def naics_filter(opps):
     Returns:
         [list] -- a subset of results with matching naics
     """
-    naics = ('334111', '334118', '3343', '33451', '334516', '334614',
-             '5112', '518', '54169', '54121', '5415', '54169', '61142')
+    naics = naics_code_prefixes
     filtered_opps = []
     for opp in opps:
 
         # naics_array = opp.get('data',{}).get('naics')
-        naics_array = opp.get('naics', {})
+        if 'naics' in opp:
+            naics_array = opp.get('naics', {})
+        elif 'naicsCode' in opp:
+            naics_array = [ {'code': opp['naicsCode']} ]
+
         if not naics_array:
             continue
         nested_naics_codes = [c for c in [d.get('code', []) for d in naics_array]]

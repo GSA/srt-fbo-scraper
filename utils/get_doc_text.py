@@ -1,6 +1,7 @@
 import logging
 import os
 from zipfile import ZipFile, BadZipfile
+import re
 
 import textract
 
@@ -29,8 +30,7 @@ def get_doc_text(file_name, rm = True):
             logger.error("Error extracting text from a DOC file. Check that all dependencies of textract are installed.\n{}".format(ex))
     except textract.exceptions.MissingFileError as e:
         b_text = None
-        logger.error(f"Couldn't textract {file_name} since the file couldn't be found: \
-                     {e}", exc_info=True)
+        logger.error(f"Couldn't textract {file_name} since the file couldn't be found: {e}", exc_info=True)
     #This can be raised when a pdf is incorrectly saved as a .docx (GH183)
     except BadZipfile as e:
         if file_name.endswith('.docx'):
@@ -42,15 +42,18 @@ def get_doc_text(file_name, rm = True):
                                       errors = 'ignore')
         else:
             b_text = None
-            logger.warning(f"Exception occurred textracting {file_name}:  \
-                         {e}", exc_info=True)
+            logger.warning(f"Exception occurred textracting {file_name}: {e}", exc_info=True)
     #TypeError is raised when None is passed to str.decode()
     #This happens when textract can't extract text from scanned documents
     except TypeError:
         b_text = None
     except Exception as e:
-        logger.warning(f"Exception occurred textracting {file_name}:  \
-                     {e}", exc_info=True)
+        if re.match("^(.*) file; not supported", str(e)):
+            logger.warning(f"'{file_name}' is type {str(e)}")
+        elif re.match("^The filename extension .zip is not yet supported", str(e)):
+            logger.warning(f"'{file_name}' is type zip and not supported by textract")
+        else:
+            logger.warning(f"Exception occurred textracting {file_name}: {e}", exc_info=True)
         b_text = None
     text = b_text.decode('utf8', errors = 'ignore').strip() if b_text else ''
     if rm:

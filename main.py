@@ -2,7 +2,7 @@ import logging
 
 from utils import get_opps
 from utils.predict import Predict
-from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_data, insert_data_into_solicitations_table
+from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_data, insert_data_into_solicitations_table, insert_notice_types
 from utils.json_log_formatter import CustomJsonFormatter, configureLogger
 from utils.sam_utils import update_old_solicitations
 import sys
@@ -23,7 +23,9 @@ def main(limit=None, updateOld=True, filter_naics = True, target_sol_types="o,k"
         if not updateOld:
             logger.error("Set to NOT update old solicitations. Should not happen in production.".format(limit))
 
-
+        with session_scope(dal) as session:
+            # make sure that the notice types are configured and committed before going further
+            insert_notice_types(session)
 
         logger.info("Connecting with database at {}".format(conn_string))
         logger.info("Smartie is fetching opportunties from SAM...")
@@ -71,7 +73,7 @@ if __name__ == '__main__':
 
 
     # fast mode
-    # limit=100
+    # limit=10
     # updateOld=False
     # skip_attachemnts=True
 

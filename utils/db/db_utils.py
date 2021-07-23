@@ -198,7 +198,7 @@ def insert_data(session, data):
         notice_type_id = fetch_notice_type_id(notice_type, session)
 
         if notice_type_id == None:
-            logger.warning("Notice type '{}' found in Notice {} was not in the database".format(notice_type, opp.get('solnbr', '')),
+            logger.warning("Notice type '{}' found in solnum {} was not in the database".format(notice_type, opp.get('solnbr', '')),
                          extra= {
                              'notice type': notice_type,
                              'soliciation number': opp.get('solnbr', ''),

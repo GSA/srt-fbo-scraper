@@ -5,19 +5,12 @@ import logging
 import os
 import sys
 import zipfile
-import csv
-from selenium.webdriver.chrome.options import Options
-from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
+import utils.db.db as db
 
-import time
-import stat
-from utils.db.db import Notice, Predictions, Solicitation
 from utils.db.db_utils import fetch_notice_type_by_id
-from sqlalchemy.sql.expression import func
 import copy
+from utils import get_opps
+import utils.db.db_utils
 
 import requests
 
@@ -327,236 +320,76 @@ def get_all_solNum_from_prediction_table(session, age_cutoff=90):
     solNumArray = [x.solNum for x in result]
     return solNumArray
 
-def mark_solNum_as_inactive(session, solNum):
-    try:
-        session.query(Solicitation). \
-            filter(Solicitation.solNum == solNum). \
-            update({"active": False, "updatedAt": func.current_timestamp()}, synchronize_session='fetch')
-        logger.info("Marking solicitation {} as inactive".format(solNum))
-        session.execute(f"delete from \"Predictions\" where \"solNum\" = '{solNum}' ")
-        logger.info(f"Deleted Prediction table entry from {solNum}.")
-    except Exception as e:
-        logger.error(f"Error: marking {solNum} as inactive. Exception: {e}", exc_info=True)
 
-def mark_solNum_as_active(session, solNum):
-    try:
-        logger.info("Marking solicitation {} as active".format(solNum))
-        sql = '''update solicitations set active = True, "updatedAt" = NOW() where "solNum" = '{}' '''.format(solNum)
-        session.execute(sql)
-        sql = '''update "Predictions" set active = True, "updatedAt" = NOW() where "solNum" = '{}' '''.format(solNum)
-        session.execute(sql)
-    except Exception as e:
-        logger.error(f"Error: marking {solNum} as active. Exception: {e}", exc_info=True)
 
-def update_notice_type_if_necessary(session, solNum, notice_type_string):
-    n = session.query(Notice).\
-        filter(Notice.solicitation_number == solNum).\
-        order_by(Notice.date.desc()).\
-        limit(1).\
-        first()
 
-    notice_info = fetch_notice_type_by_id(n.notice_type_id, session)
-    if (notice_info and 'NoticeType' in str(type(notice_info))):
-        current_notice_type = notice_info.notice_type
-    else:
-        current_notice_type = ''
 
-    # current_notice_type = fetch_notice_type_by_id(n.notice_type_id, session).notice_type
-    if (current_notice_type != notice_type_string):
-        # create a new notice record with the updated type
-        insert_sql = f'''
-            insert into notice (notice_type_id, solicitation_number, agency,
-                   date, notice_data, compliant, "createdAt", "updatedAt", na_flag)
-            select notice_type.id, solicitation_number, agency, NOW(), notice_data,
-                   compliant, NOW(), NOW(), na_flag
-            from notice
-            join notice_type on notice_type.notice_type = '{notice_type_string}'
-            where solicitation_number = '{solNum}'
-            order by date desc
-            limit 1
-'''
-        session.execute(insert_sql)
-        logger.info(f"Updated notice type for {solNum}. It was {current_notice_type} and was changed to {notice_type_string}")
-        session.execute(f"delete from \"Predictions\" where \"solNum\" = '{solNum}' ")
-        logger.info(f"Deleted Prediction table entry from {solNum}.")
+
+def update_notice_type_if_necessary(sol, sam_data,session):
+    '''
+    Looks at the notice type in the solicitation and updates it to the sam_data value if necesary
+    Args:
+        sol: sqlalchemy Solicitation
+        sam_data: sam data from the sam.gov API
+        session: open db session
+
+    Returns: the number of solicitations updated. (so either 1 or 0)
+    '''
+    if sol.noticeType != sam_data['type']:
+        logger.info(f"Updating the notice type for {sol.solNum} to be {sam_data['type']}")
+        sol.noticeType = sam_data['type']
+        sol.notice_type_id = utils.db.db_utils.fetch_notice_type_id(sam_data['type'], session)
         return 1
-    return 0 # did not update anything
+    return 0
 
+def update_old_solicitations(session, age_cutoff=365, max_tests=100, fraction=14, noticeTypes=("Solicitation", "Combined Synopsis/Solicitation")):
+    '''
+    Examines a fraction of the existing solicitations newer than the age cutoff to see if there
+    are any changes in sam.gov. If you call this function every day and you don't hit the max_tests
+    limit, you will re-check each solicitiaton every $fraction days.
 
-def update_old_active_solicitations(session, stats, age_cutoff):
-    solNumArray = get_all_solNum_from_prediction_table(session, age_cutoff)
-    stats['total'] = len(solNumArray)
-    logger.info(f"Found {stats['total']} solicitations to examine. Will print one dot as each is processed.")
+    Args:
+        session: open db session
+        age_cutoff: how many days to look back
+        max_tests: at most test this many solicitaitons so we don't go over our api call limit
 
+    Returns:
 
-    for solNum in solNumArray:
-        if stats["examined"] % 250 == 0:
-            logger.debug(" updated {}.  {}/{} done --  looking at (active) {} next ".format(stats['updated'], stats["examined"], stats["total"], solNum))
-        data = get_sol_data_from_feed(solNum)
-        stats['examined'] += 1
-        if data == SAM_DATA_FEED_NO_MATCH:
-            mark_solNum_as_inactive(session, solNum)
-            stats['updated'] += 1
-        else:
-            if (data != False):
-                stats['updated'] += update_notice_type_if_necessary(session, solNum, data["Type"])
-
-    logger.info("Scan for inactive solicitations complete. {} solicitations examined and {} marked inactive ".format(stats['examined'], stats['updated']))
-
-# Make sure that our old inactive solicitations are still inactive.  May be an edge case
-# where a solNum pops back up in sam and we want to makes sure it is activated
-def check_inactive_solicitations(session, stats, age_cutoff):
-    solNumArray = get_all_inactive_solicitation_numbers(session, age_cutoff)
-    stats['total'] += len(solNumArray)
-    logger.info(f"Found {stats['total']} solicitations to examine")
-    logger.info(f"Found {stats['total']} solicitations to examine. Will print one dot as each is processed.")
-
-    for solNum in solNumArray:
-        if stats["examined"] % 250 == 0:
-            logger.debug(" updated {}.  {}/{} done --  looking at (inactive) {} next ".format(stats['updated'], stats["examined"], stats["total"], solNum))
-        data = get_sol_data_from_feed(solNum)
-        stats['examined'] += 1
-        if data != SAM_DATA_FEED_NO_MATCH and data != False:
-            mark_solNum_as_active(session, solNum)
-            stats['updated'] += 1
-
-    logger.info("Recheck of inactive solicitations complete. {} solicitations examined (total all scans) and {} updatd (total all scans) ".format(stats['examined'], stats['updated']))
-
-
-def update_old_solicitations(session, age_cutoff=365):
+    '''
     try:
         stats = {'examined': 0, 'updated': 0, 'total': 0}
-        check_inactive_solicitations(session, stats, age_cutoff)
-        update_old_active_solicitations(session, stats, age_cutoff)
-        logger.info("Recheck of inactive solicitations complete. {} solicitations examined (total all scans) and {} updatd (total all scans) ".format(stats['examined'], stats['updated']))
+
+        solicitations = session.query(db.Solicitation).filter(db.Solicitation.active == True).filter(db.Solicitation.date > dt.today() - timedelta(age_cutoff)).order_by(db.Solicitation.date.desc())
+        candidate_solicitations = []
+        for sol in solicitations:
+            if sol.id % fraction == 0:
+                if sol.noticeType in noticeTypes:
+                    candidate_solicitations.append(sol)
+
+        for sol in candidate_solicitations:
+            stats['examined'] += 1
+            if stats['examined'] > max_tests:
+                logger.warning("Max test count hit when trying to examine old solicitations")
+                break;
+
+            sam_sol_data = get_opps.get_opp_from_sam(sol.solNum)
+            if sam_sol_data == None:
+                logger.info(f"could not find {sol.solNum} in the sam.gov API - I will assume that means it is inactive")
+                sol.active = False
+                stats['updated'] += 1
+                continue
+
+            if sol.active != ( sam_sol_data['active'].lower() == "yes") :
+                sol.active = sam_sol_data['active']
+                logger.info(f"Updating the active state for {sol.solNum} - setting it inactive")
+                stats['updated'] += 1
+            else:
+                logger.debug(f"Performed check on {sam_sol_data['solicitationNumber']} but no updates were necessary")
+
+            stats['updated'] += update_notice_type_if_necessary(sol, sam_sol_data, session)
+
+        logger.info("Recheck of old solicitations complete. {} solicitations examined and {} updated ".format(stats['examined'], stats['updated']))
     except Exception as e:
         logger.error(f"Exception: {e}", exc_info=True)
 
     return stats
-
-
-SAM_DATA_FEED_ERROR = 0
-SAM_DATA_FEED_DOWNLOADED = 1
-SAM_DATA_FEED_EXISTED = 2
-SAM_DATA_FEED_DEFAULT_FILENAME = '/tmp/ContractOpportunitiesFullCSV.csv'
-SAM_DATA_FEED_NO_MATCH = 3
-sam_df = None
-def get_sol_data_from_feed(sol_number):
-    import pandas as pd
-    global sam_df
-    if update_sam_data_feed() == SAM_DATA_FEED_ERROR:
-        return False
-
-    if sam_df is None:
-        sam_df = pd.read_csv(SAM_DATA_FEED_DEFAULT_FILENAME, encoding='latin1')
-        sam_df.columns = sam_df.columns.str.replace('#', 'Num')
-        sam_df.columns = sam_df.columns.str.replace('$', 'Dollars')
-        sam_df['ShortSolNum'] = sam_df.SolNum.apply(lambda x: str(x).replace("-", ""))
-
-
-    match_df = sam_df[sam_df.ShortSolNum == sol_number]
-    # print (match_df)
-    max_date_index = 0
-    if len(match_df) == 0:
-        return SAM_DATA_FEED_NO_MATCH
-    if len(match_df) > 1:
-        max_date = None
-        for i in range(0, len(match_df)):
-            # date is in format 2020-10-20 03:04:05.123-4 - we don't care about fractional seconds
-            d = str(match_df.iloc[i].PostedDate)[:19]
-            d_obj = dt.strptime( d, '%Y-%m-%d %H:%M:%S')
-            if (max_date is None or d_obj > max_date):
-                max_date = d_obj
-                max_date_index = i
-        # print ("I got {} rows for {}.  The max index is {}".format(len(match_df), sol_number, max_date_index))
-
-
-    match_dictionary = match_df.to_dict('records')[max_date_index]
-
-    return match_dictionary
-
-def update_sam_data_feed(filename=SAM_DATA_FEED_DEFAULT_FILENAME, force=False):
-    def download_wait(path_to_downloads, timeout=60):
-        seconds = 0
-        while seconds < timeout:
-            time.sleep(1)
-            seconds += 1
-            if os.path.isfile(path_to_downloads):
-                break
-        if seconds == timeout:
-            return False
-        return seconds
-
-    home = os.environ.get("HOME")
-    if home == "/":
-        home = "/root"
-    if not os.path.exists(home + "/Downloads"):
-        os.makedirs(home + "/Downloads")
-    download_location = home + "/Downloads/ContractOpportunitiesFullCSV.csv"
-
-    if os.path.isfile(filename):
-        age_of_file = time.time() - os.stat(filename)[stat.ST_MTIME]
-        if age_of_file < 24 * 60 * 60:
-            return SAM_DATA_FEED_EXISTED
-
-    try:
-        chrome_options = Options()
-        chrome_options.add_argument("--headless")
-        chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--disable-dev-shm-usage")
-
-        chrome_prefs = {"download.default_directory": "/root/Downloads"}
-        chrome_options.experimental_options["prefs"] = chrome_prefs
-        chrome_prefs["profile.default_content_settings"] = {"images": 2}
-
-        print("getting driver")
-
-        driver = webdriver.Chrome(options=chrome_options)
-        print("opening page")
-        driver.get('https://beta.sam.gov/data-services/Contract%20Opportunities/datagov?privacy=Public')
-
-        print("Waiting for page load")
-
-        # if they put up a "we have refreshed the design" then click the OK button
-        try:
-            WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//button[contains(text(),'OK')]")))
-            button = driver.find_element_by_xpath("//button[contains(text(),'OK')]")
-            button.click()
-        except:
-            pass
-
-
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//a[contains(text(),'ContractOp')]")))
-
-        print ("following link")
-        link = driver.find_element_by_xpath("//a[contains(text(),'ContractOp')]")
-        link.click()
-
-        print ("checking agreement boxes")
-        checkboxes = driver.find_elements_by_xpath("//input[@type='checkbox']")
-        for el in checkboxes:
-            el.click()
-
-        print("ready for submission")
-        submit_button = driver.find_element_by_xpath("//button[contains(.,'Submit')]")
-        submit_button.click()
-
-        print("Clicked submit")
-
-        result = download_wait(download_location)
-
-
-
-        print("File downloaded in {} seconds".format(result))
-
-        if result:
-            if os.path.isfile(filename):
-                os.remove(filename)
-            os.rename(download_location, filename)
-            return SAM_DATA_FEED_DOWNLOADED
-
-    except Exception as e:
-        print(e)
-        return SAM_DATA_FEED_ERROR

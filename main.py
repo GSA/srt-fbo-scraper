@@ -51,7 +51,7 @@ def main(limit=None, updateOld=True, filter_naics = True, target_sol_types="o,k"
                 logger.error("No data to insert. Something went wrong.")
 
             if updateOld:
-                update_old_solicitations(session)
+                update_old_solicitations(session, max_tests=10)
 
         logger.info("Run complete without major errors.")
 
@@ -70,9 +70,9 @@ if __name__ == '__main__':
     skip_attachemnts = False
 
 
-    #fast mode
-    limit=100
-    updateOld=False
-    skip_attachemnts=True
+    # fast mode
+    # limit=100
+    # updateOld=False
+    # skip_attachemnts=True
 
     main(limit=limit, updateOld=updateOld, filter_naics = filter_naics, target_sol_types=target_sol_types, skip_attachments=skip_attachemnts)

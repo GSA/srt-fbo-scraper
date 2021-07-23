@@ -17,28 +17,47 @@ from utils.request_utils import requests_retry_session, get_opps, get_opp_reques
 
 logger = logging.getLogger(__name__)
 
-def get_opportunities_search_url(api_key=None, page_size=500, postedFrom=None, postedTo=None, target_sol_types="o,k"):
-    yesterday = datetime.date.today() - datetime.timedelta(days=1)
-    yesterday_string = datetime.datetime.strftime(yesterday, '%m/%d/%Y')
+def get_opportunities_search_url(api_key=None, page_size=500, postedFrom=None, postedTo=None, target_sol_types="o,k", from_date="yesterday", to_date="yesterday"):
+    if from_date=="yesterday":
+        yesterday = datetime.date.today() - datetime.timedelta(days=1)
+        from_date = datetime.datetime.strftime(yesterday, '%m/%d/%Y')
+
+    if to_date=="yesterday":
+        yesterday = datetime.date.today() - datetime.timedelta(days=1)
+        to_date = datetime.datetime.strftime(yesterday, '%m/%d/%Y')
+
     base_uri = os.getenv('SAM_API_URI') or "https://api.sam.gov/opportunities/v2/search"
     params = (
         ("api_key", os.getenv('SAM_API_KEY')),
         ("limit", page_size),
-        ("postedFrom", postedFrom or yesterday_string),
-        ("postedTo", postedTo or yesterday_string),
+        ("postedFrom", postedFrom or from_date),
+        ("postedTo", postedTo or to_date),
         ("ptype", target_sol_types)
     )
     get_string = "&".join([ "{}={}".format(item[0], item[1]) for item in params  ])
     return "{}?{}".format(base_uri, get_string)
 
-def get_yesterdays_opps(filter_naics = True, limit = None, target_sol_types="o,k"):
+def get_opp_from_sam(solNum):
+    base_uri = os.getenv('SAM_API_URI') or "https://api.sam.gov/opportunities/v2/search"
+    uri = base_uri + f"?solnum={solNum}&api_key={os.getenv('SAM_API_KEY')}&limit=1"
+    session = requests_retry_session()
+    r = session.get(uri, timeout = 100)
+    data = r.json()
+    if data['totalRecords'] == 0:
+        return None
+    session.close()
+    return data['opportunitiesData'][0]
+
+def get_opps_for_day(filter_naics = True, limit = None, target_sol_types="o,k", from_date="yesterday", to_date="yesterday", filter=None):
     api_key = os.getenv('SAM_API_KEY')
     if not api_key:
         logger.error("No API key set. Please set the SAM_API_KEY environemnt variable.")
         logger.critical("No API key - Exiting .")
         exit(1)
 
-    uri = get_opportunities_search_url(api_key=os.getenv('SAM_API_KEY'), target_sol_types=target_sol_types)
+    uri = get_opportunities_search_url(api_key=os.getenv('SAM_API_KEY'), target_sol_types=target_sol_types,from_date=from_date, to_date=to_date)
+    if filter:
+        uri += "&" + filter
     logger.debug("Fetching yesterday's opps from {}".format(uri))
 
     totalRecords = 9999999
@@ -127,7 +146,7 @@ def main(limit=None, filter_naics = True, target_sol_types=("k","o"), skip_attac
         if not os.path.exists(out_path):
             os.makedirs(out_path)
         # opps = get_yesterdays_opps(limit=limit, filter_naics=filter_naics, target_sol_types=target_sol_types)
-        opps = get_yesterdays_opps(limit=limit, filter_naics=filter_naics, target_sol_types=target_sol_types)
+        opps = get_opps_for_day(limit=limit, filter_naics=filter_naics, target_sol_types=target_sol_types, from_date="yesterday", to_date="yesterday")
         if not opps:
             return []
         transformed_opps = transform_opps(opps, out_path, skip_attachments=skip_attachments)

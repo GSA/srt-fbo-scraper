@@ -76,7 +76,7 @@ class DataAccessLayer:
             # per each connection open/close.
             self.engine = create_engine(self.conn_string, poolclass = NullPool)
         else:
-            self.engine = create_engine(self.conn_string)  # use echo=True to log SQL
+            self.engine = create_engine(self.conn_string, echo=False)  # use echo=True to log SQL
         try:
             db.Base.metadata.create_all(self.engine)
         except Exception as e:
@@ -101,7 +101,7 @@ def session_scope(dal):
     session = dal.Session()
     try:
         yield session
-        print ("*******\nCommiting session\n********\n")
+        logger.info ("Commiting DB session")
         session.commit()
     except Exception as e:
         session.rollback()

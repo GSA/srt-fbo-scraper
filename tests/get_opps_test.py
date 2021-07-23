@@ -9,7 +9,7 @@ import requests_mock
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from tests import mock_opps
 from tests.test_utils import get_zip_in_memory
-from utils.get_opps import get_yesterdays_opps, get_docs, get_attachment_data, \
+from utils.get_opps import get_opps_for_day, get_docs, get_attachment_data, \
                            transform_opps, schematize_opp
 from tests.mock_opps import mock_opp_one
 
@@ -38,7 +38,7 @@ class GetOppsTestCase(unittest.TestCase):
         m_yester.return_value = (mock_opps.mock_opps, False)
         m_get_opp_request_details.return_value = (self.beta_opp_uri, {}, {})
         
-        result = get_yesterdays_opps(filter_naics = False)
+        result = get_opps_for_day(filter_naics = False)
         expected = mock_opps.mock_opps
         self.assertEqual(result, expected)
 #

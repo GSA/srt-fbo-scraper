@@ -18,6 +18,20 @@ from utils.request_utils import requests_retry_session, get_opps, get_opp_reques
 logger = logging.getLogger(__name__)
 
 def get_opportunities_search_url(api_key=None, page_size=500, postedFrom=None, postedTo=None, target_sol_types="o,k", from_date="yesterday", to_date="yesterday"):
+    '''
+
+    Args:
+        api_key:
+        page_size:
+        postedFrom: formatted mm/dd/yyyy or the default string "yesterday" if you want the function to use yesterday
+        postedTo:  formatted mm/dd/yyyy or the default string "yesterday" if you want the function to use yesterday
+        target_sol_types:
+        from_date:
+        to_date:
+
+    Returns:
+
+    '''
     if from_date=="yesterday":
         yesterday = datetime.date.today() - datetime.timedelta(days=1)
         from_date = datetime.datetime.strftime(yesterday, '%m/%d/%Y')
@@ -49,6 +63,19 @@ def get_opp_from_sam(solNum):
     return data['opportunitiesData'][0]
 
 def get_opps_for_day(filter_naics = True, limit = None, target_sol_types="o,k", from_date="yesterday", to_date="yesterday", filter=None):
+    '''
+
+    Args:
+        filter_naics: Filter out non-IT solicitiation. Default true.
+        limit: Number of opportunities to pull
+        target_sol_types: Use the sam.gov API type codes. Defaults to Solicitiation and Combined Sol/Synopsys
+        from_date: formatted mm/dd/yyyy or the default string "yesterday" if you want the function to use yesterday
+        to_date: formatted mm/dd/yyyy or the default string "yesterday" if you want the function to use yesterday
+        filter: Additional query string arguments for the SAM.gov api call
+
+    Returns:
+
+    '''
     api_key = os.getenv('SAM_API_KEY')
     if not api_key:
         logger.error("No API key set. Please set the SAM_API_KEY environemnt variable.")
@@ -140,13 +167,26 @@ def transform_opps(opps, out_path, skip_attachments=False):
         transformed_opps.append(schematized_opp)
     return transformed_opps
 
-def main(limit=None, filter_naics = True, target_sol_types=("k","o"), skip_attachments=False):
+def main(limit=None, filter_naics = True, target_sol_types=("k","o"), skip_attachments=False, from_date="yesterday", to_date="yesterday"):
+    '''
+
+    Args:
+        limit:
+        filter_naics:
+        target_sol_types:
+        skip_attachments: Will skip downloading attachments if true. Default to false.
+        from_date: formatted mm/dd/yyyy or the default string "yesterday" if you want the function to use yesterday
+        to_date: formatted mm/dd/yyyy or the default string "yesterday" if you want the function to use yesterday
+
+    Returns:
+
+    '''
     try:
         out_path = os.path.join(os.getcwd(), 'attachments')
         if not os.path.exists(out_path):
             os.makedirs(out_path)
         # opps = get_yesterdays_opps(limit=limit, filter_naics=filter_naics, target_sol_types=target_sol_types)
-        opps = get_opps_for_day(limit=limit, filter_naics=filter_naics, target_sol_types=target_sol_types, from_date="yesterday", to_date="yesterday")
+        opps = get_opps_for_day(limit=limit, filter_naics=filter_naics, target_sol_types=target_sol_types, from_date=from_date, to_date=to_date)
         if not opps:
             return []
         transformed_opps = transform_opps(opps, out_path, skip_attachments=skip_attachments)

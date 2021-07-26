@@ -2,7 +2,7 @@ import logging
 
 from utils import get_opps
 from utils.predict import Predict
-from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_data, insert_data_into_solicitations_table, insert_notice_types
+from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_data_into_solicitations_table, insert_notice_types
 from utils.json_log_formatter import CustomJsonFormatter, configureLogger
 from utils.sam_utils import update_old_solicitations
 import sys
@@ -31,7 +31,7 @@ def main(limit=None, updateOld=True, filter_naics = True, target_sol_types="o,k"
         logger.info("Smartie is fetching opportunties from SAM...")
 
 
-        data = get_opps.main(limit, filter_naics=filter_naics, target_sol_types=target_sol_types, skip_attachments=skip_attachments)
+        data = get_opps.main(limit, filter_naics=filter_naics, target_sol_types=target_sol_types, skip_attachments=skip_attachments, from_date="07/21/2021")
         if not data:
             logger.info("Smartie didn't find any opportunities!")
         else:
@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
     # fast mode
     # limit=10
-    # updateOld=False
+    updateOld=False
     # skip_attachemnts=True
 
     main(limit=limit, updateOld=updateOld, filter_naics = filter_naics, target_sol_types=target_sol_types, skip_attachments=skip_attachemnts)

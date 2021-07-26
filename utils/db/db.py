@@ -100,6 +100,14 @@ class Agencies(Base):
     createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = False)
 
+class AgencyAlias(Base):
+    __tablename__ = "agency_alias"
+    id = Column(Integer, primary_key = True)
+    agency_id = Column(Integer)
+    alias = Column(String)
+    createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
+    updatedAt = Column(DateTime, nullable = False)
+
 class Surveys(Base):
     __tablename__ = 'Surveys'
     id = Column(Integer, primary_key = True)
@@ -150,6 +158,7 @@ class Solicitation(Base):
     title = Column(String)
     url = Column(String)
     agency = Column(String)
+    agency_id = Column(Integer)
     numDocs = Column(Integer)
     notice_type_id = Column(Integer)
     noticeType = Column(String)

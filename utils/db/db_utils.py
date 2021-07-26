@@ -11,7 +11,7 @@ from sqlalchemy import create_engine, func, case, inspect
 from sqlalchemy.orm import sessionmaker, make_transient
 from sqlalchemy.pool import NullPool
 from sqlalchemy_utils import database_exists, create_database, drop_database
-from utils.db.db import Notice, NoticeType, Solicitation, Attachment, Model, now_minus_two
+from utils.db.db import  Solicitation, AgencyAlias, Agencies
 
 import utils.db.db as db
 import functools
@@ -180,76 +180,6 @@ def insert_model(session, results, params, score):
                      score = score)
     session.add(model)
 
-def insert_data(session, data):
-    '''
-    Insert yesterday's SAM data into the database.
-
-    Parameters:
-        data (list): a list of dicts, each representing a single opportunity
-
-    Returns:
-        None
-    '''
-    insert_notice_types(session)
-    opp_count = 0
-    skip_count = 0
-    for opp in data:
-        notice_type = opp['notice type']
-        notice_type_id = fetch_notice_type_id(notice_type, session)
-
-        if notice_type_id == None:
-            logger.warning("Notice type '{}' found in solnum {} was not in the database".format(notice_type, opp.get('solnbr', '')),
-                         extra= {
-                             'notice type': notice_type,
-                             'soliciation number': opp.get('solnbr', ''),
-                             'agency': opp.get('agency', '')
-                         })
-            insert_notice_types(session, [notice_type])
-            notice_type_id = fetch_notice_type_id(notice_type, session)
-
-        attachments = opp.pop('attachments')
-        agency = opp['agency']
-        compliant = opp['compliant']
-        solicitation_number = opp['solnbr']
-        
-        matching_notices = fetch_notices_by_solnbr(solicitation_number, session)
-        is_solnbr_in_db = True if matching_notices else False
-        
-        if is_solnbr_in_db:
-            history_date = datetime.datetime.utcnow().strftime("%m/%d/%Y")
-            history = [{
-                        "date":history_date,
-                        "user":"",
-                        "action":"Solicitation Updated on SAM",
-                        "status":""
-                        }]
-            notice = db.Notice(notice_type_id = notice_type_id,
-                               solicitation_number = solicitation_number,
-                               agency = agency,
-                               notice_data = opp,
-                               compliant = compliant,
-                               history = history)
-        else:
-            notice = db.Notice(notice_type_id = notice_type_id,
-                               solicitation_number = solicitation_number,
-                               agency = agency,
-                               notice_data = opp,
-                               compliant = compliant)
-        for doc in attachments:
-            attachment =  db.Attachment(notice_type_id = notice_type_id,
-                                        filename = doc['filename'],
-                                        machine_readable = doc['machine_readable'],
-                                        attachment_text = doc['text'],
-                                        prediction = doc['prediction'],
-                                        decision_boundary = doc['decision_boundary'],
-                                        validation = doc['validation'],
-                                        attachment_url = doc['url'],
-                                        trained = doc['trained'])
-            notice.attachments.append(attachment)
-        session.add(notice)
-        opp_count += 1
-
-    logger.info("Added {} notice records to the database. {} were skipped.".format(opp_count, skip_count))
 
 def posted_date_to_datetime(posted_date_string):
     # double check we didn't pass in a datetime already
@@ -333,6 +263,12 @@ def insert_data_into_solicitations_table(session, data):
             sol.title = opp['subject']
             sol.url = opp['url']
             sol.contactInfo = opp['emails']
+            agency_alias = session.query(db.AgencyAlias).filter(db.AgencyAlias.alias == opp['agency']).one()
+            sol.agency_id = agency_alias.agency_id
+            if (agency_alias.agency_id):
+                agency = session.query(db.Agencies).filter(db.Agencies.id == agency_alias.agency_id).one()
+                sol.agency = agency.agency
+
 
             if (sol_existed_in_db):
                 if ( not sol.history):

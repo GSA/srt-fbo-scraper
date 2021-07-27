@@ -5,6 +5,7 @@ import logging
 import os
 import sys
 from copy import deepcopy
+from random import random
 
 import dill as pickle
 from sqlalchemy import create_engine, func, case, inspect
@@ -258,7 +259,9 @@ def insert_data_into_solicitations_table(session, data):
             sol.compliant = opp['compliant']
             sol.numDocs = len(attachments)
             sol.office = opp['office']
-            sol.eitLikelihood = {"value": "yes"}
+            # TODO: properly set estar category
+            estar = "yes" if random() < .5 else "no"
+            sol.category_list = {"value": "yes", "it": "yes", "estar": estar }
             sol.undetermined = False
             sol.title = opp['subject']
             sol.url = opp['url']
@@ -289,7 +292,7 @@ def insert_data_into_solicitations_table(session, data):
                 sol.action.append({"date": now_datetime_string, "user": "", "action": "Solicitaiton Posted", "status": "complete"})
                 sol.actionDate = now_datetime
                 sol.actionStatus = "Solicitaiton Posted"
-                sol.predictions = { "value": "red", "history" : [] }
+                sol.predictions = { "value": "red", "508": "red", "estar": "red", "history" : [] }
 
 
 
@@ -315,9 +318,17 @@ def insert_data_into_solicitations_table(session, data):
             new_prediction = deepcopy(sol.predictions)  # make a copy - if you only chagne the props then SQAlchamy won't know the object changed
             if sol_prediction != 0:
                 new_prediction['value'] = "green";
+                new_prediction['508'] = "green";
             else:
                 new_prediction['value'] = "red";
-            new_prediction['history'].append( { "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "value": new_prediction['value']}  )
+                new_prediction['508'] = "red";
+
+            # add a random estar prediction
+            # TODO: properly compute estar prediction
+            estar = "red" if random() < .5 else "green"
+            new_prediction['estar'] = estar
+
+            new_prediction['history'].append( { "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "value": new_prediction['value'], "508": new_prediction['value'], "estar": estar}  )
             sol.predictions = new_prediction
 
 

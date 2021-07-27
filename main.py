@@ -6,6 +6,7 @@ from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert
 from utils.json_log_formatter import CustomJsonFormatter, configureLogger
 from utils.sam_utils import update_old_solicitations
 import sys
+import datetime
 
 logger = logging.getLogger()
 configureLogger(logger, stdout_level=logging.INFO)
@@ -15,7 +16,7 @@ dal = DataAccessLayer(conn_string)
 dal.connect()
 
 
-def main(limit=None, updateOld=True, filter_naics = True, target_sol_types="o,k", skip_attachments=False):
+def main(limit=None, updateOld=True, filter_naics = True, target_sol_types="o,k", skip_attachments=False, from_date = 'yesterday', to_date='yesterday'):
     try:
         if limit:
             logger.error("Artifical limit of {} placed on the number of opportunities processed.  Should not happen in production.".format(limit))
@@ -31,7 +32,7 @@ def main(limit=None, updateOld=True, filter_naics = True, target_sol_types="o,k"
         logger.info("Smartie is fetching opportunties from SAM...")
 
 
-        data = get_opps.main(limit, filter_naics=filter_naics, target_sol_types=target_sol_types, skip_attachments=skip_attachments, from_date="07/21/2021")
+        data = get_opps.main(limit, filter_naics=filter_naics, target_sol_types=target_sol_types, skip_attachments=skip_attachments, from_date=from_date, to_date=to_date)
         if not data:
             logger.info("Smartie didn't find any opportunities!")
         else:
@@ -73,8 +74,14 @@ if __name__ == '__main__':
 
 
     # fast mode
-    # limit=10
+    # limit=40
     updateOld=False
     # skip_attachemnts=True
+
+    #db reload for last week
+    # from_date = datetime.date.today() - datetime.timedelta(days=8)
+    # to_date = datetime.date.today() - datetime.timedelta(days=1)
+    # updateOld=False
+
 
     main(limit=limit, updateOld=updateOld, filter_naics = filter_naics, target_sol_types=target_sol_types, skip_attachments=skip_attachemnts)

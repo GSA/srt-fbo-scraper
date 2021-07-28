@@ -35,10 +35,14 @@ def get_opportunities_search_url(api_key=None, page_size=500, postedFrom=None, p
     if from_date=="yesterday":
         yesterday = datetime.date.today() - datetime.timedelta(days=1)
         from_date = datetime.datetime.strftime(yesterday, '%m/%d/%Y')
+    else:
+        from_date = sam_format_date(from_date)
 
     if to_date=="yesterday":
         yesterday = datetime.date.today() - datetime.timedelta(days=1)
         to_date = datetime.datetime.strftime(yesterday, '%m/%d/%Y')
+    else:
+        to_date = sam_format_date(to_date)
 
     base_uri = os.getenv('SAM_API_URI') or "https://api.sam.gov/opportunities/v2/search"
     params = (
@@ -61,6 +65,28 @@ def get_opp_from_sam(solNum):
         return None
     session.close()
     return data['opportunitiesData'][0]
+
+def sam_format_date(input_date):
+    '''
+    Try to format a date as mm/dd/yyyy.  It isn't too smart tho.
+    Only works for dates in mm-dd-yyyy, a datetime, or a string already formatted as mm/dd/yyyy
+    Args:
+        input_date: date in various formats. Will do our best to fix it
+
+    Returns: string with date in format mm/dd/yyyy
+
+    '''
+
+    if isinstance(input_date, datetime.date):
+        return input_date.strftime("%m/%d/%Y")
+
+    parts = input_date.split("-")
+    if len(parts) > 2:
+        # assume mm-dd-yyyy
+        return parts[0]+"/"+parts[1]+"/"+parts[2]
+
+    # for now assume we got it in the right format
+    return input_date
 
 def get_opps_for_day(filter_naics = True, limit = None, target_sol_types="o,k", from_date="yesterday", to_date="yesterday", filter=None):
     '''

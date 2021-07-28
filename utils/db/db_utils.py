@@ -195,7 +195,7 @@ def posted_date_to_datetime(posted_date_string):
         logger.error("Unable to parse posted date")
         return datetime.utcnow()
 
-    return datetime(int(parts[0]), int(parts[1]), int(parts[2]))
+    return datetime(int(parts[0]), int(parts[1]), int(parts[2]), 12) # use noon on the day so that timezone issues don't move it a day earlier/later
 
 
 def is_opp_update(existing_date, posted_date, sol_existed_in_db):
@@ -271,6 +271,9 @@ def insert_data_into_solicitations_table(session, data):
             if (agency_alias.agency_id):
                 agency = session.query(db.Agencies).filter(db.Agencies.id == agency_alias.agency_id).one()
                 sol.agency = agency.agency
+                logger.debug("{} mapped to {} for solnum {}".format(opp['agency'], sol.agency, sol.solNum))
+            else:
+                logger.warning("unable to map agency {} for solnum {}".format(opp['agency'], sol.solNum))
 
 
             if (sol_existed_in_db):

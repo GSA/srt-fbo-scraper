@@ -71,6 +71,8 @@ if __name__ == '__main__':
     filter_naics = True
     target_sol_types = "o,k"
     skip_attachemnts = False
+    from_date = "yesterday"
+    to_date = "yesterday"
 
 
     # fast mode
@@ -79,9 +81,9 @@ if __name__ == '__main__':
     # skip_attachemnts=True
 
     #db reload for last week
-    # from_date = datetime.date.today() - datetime.timedelta(days=8)
-    # to_date = datetime.date.today() - datetime.timedelta(days=1)
+    #from_date = datetime.date.today() - datetime.timedelta(days=8)
+    #to_date = datetime.date.today() - datetime.timedelta(days=1)
     # updateOld=False
 
 
-    main(limit=limit, updateOld=updateOld, filter_naics = filter_naics, target_sol_types=target_sol_types, skip_attachments=skip_attachemnts)
+    main(limit=limit, updateOld=updateOld, filter_naics = filter_naics, target_sol_types=target_sol_types, skip_attachments=skip_attachemnts, from_date=from_date, to_date=to_date)

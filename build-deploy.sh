@@ -11,6 +11,9 @@ function usage() {
   echo "Usage:"
   echo "build-deploy.sh SPACE [dockerhub tag]"
   echo
+  echo "If you provide a dockerhub tag, that will be used in deployment. If you"
+  echo "do not provide a tag, a new docker image will be created from the code in"
+  echo "the current directory and named with a yyyy.mm.dd.hh.mm timestamp."
   echo "examples:"
   echo "   ./build-deploy.sh dev"
   echo
@@ -102,7 +105,7 @@ else
   log "Using an existing tag so no new docker build or docker push stage"
 fi
 
-while true; do
+while [ "$SPACE" = "prod" ]; do
     read -p "About to install build $TAG to $SPACE.  Are you sure you want to do that? (Y/N)" yn
     case $yn in
         [yY]* ) break ;;

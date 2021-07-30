@@ -38,7 +38,7 @@ class GetOppsTestCase(unittest.TestCase):
         m_yester.return_value = (mock_opps.mock_opps, False)
         m_get_opp_request_details.return_value = (self.beta_opp_uri, {}, {})
         
-        result = get_opps_for_day(filter_naics = False)
+        result = get_opps_for_day()
         expected = mock_opps.mock_opps
         self.assertEqual(result, expected)
 #

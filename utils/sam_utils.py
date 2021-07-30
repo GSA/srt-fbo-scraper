@@ -3,6 +3,7 @@ from datetime import timedelta
 from io import BytesIO
 import logging
 import os
+import re
 import sys
 import zipfile
 import utils.db.db as db
@@ -20,6 +21,23 @@ logger = logging.getLogger(__name__)
 
 naics_code_prefixes = ('334111', '334118', '3343', '33451', '334516', '334614',
          '5112', '518', '54169', '54121', '5415', '54169', '61142')
+
+psc_codes = (
+"61", "6117", "6125", "6130", "6135", "6140", "6150", "7", "7A", "7A20", "7A21", "7B", "7B20", "7B21", "7B22", "7C",
+"7C20", "7C21", "7D", "7D20", "7E", "7E20", "7E21", "7F", "7F20", "7G", "7G20", "7G21", "7G22", "7H", "7H20", "7J",
+"7J20", "7K" "7K20", "7730", "D", "DA", "DA01", "DA10", "DB", "DB01", "DB02", "DB10", "DC", "DC01", "DC10", "DD",
+"DD01", "DE", "DE01", "DE02", "DE10", "DE11", "DF", "DF01", "DF10", "DG", "DG01", "DG10", "DG11", "DH", "DH01", "DH10",
+"DJ", "DJ01", "DJ10", "DK", "DK01", "DK10")
+
+
+def opportunity_filter_function(opp):
+    psc_match = opp['classificationCode'] in psc_codes
+    naics_match = any(opp['naicsCode'].startswith(n) for n in naics_code_prefixes)
+
+    opp['epa_psc_match'] = psc_match
+    opp['naics_match'] = naics_match
+
+    return psc_match or naics_match
 
 
 def get_org_info(org_id):

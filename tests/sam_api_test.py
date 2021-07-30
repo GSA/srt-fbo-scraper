@@ -13,7 +13,7 @@ class SAMAPITestCase(unittest.TestCase):
         pass
 
     def test_requests_retry_session(self):
-        ops = get_opps.get_opps_for_day(limit=100, filter_naics=True)
+        ops = get_opps.get_opps_for_day(limit=100, opportunity_filter_function=sam_utils.opportunity_filter_function)
         self.assertGreater(len(ops), 10)
 
         for opp in ops:
@@ -22,7 +22,7 @@ class SAMAPITestCase(unittest.TestCase):
 
 
     def test_schematize_opps(self):
-        opps = get_opps.get_opps_for_day(limit=100, filter_naics=True)
+        opps = get_opps.get_opps_for_day(limit=100, opportunity_filter_function=sam_utils.opportunity_filter_function)
         op = opps[0]
         schematized_opp = get_opps.schematize_opp(op)
 
@@ -31,6 +31,6 @@ class SAMAPITestCase(unittest.TestCase):
             self.assertIn(k, schematized_opp)
 
     def test_transform(self):
-        opps = get_opps.get_opps_for_day(limit=10, filter_naics=True)
+        opps = get_opps.get_opps_for_day(limit=10, opportunity_filter_function=sam_utils.opportunity_filter_function)
         get_opps.transform_opps(opps, "/tmp/")
 

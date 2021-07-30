@@ -255,6 +255,7 @@ def insert_data_into_solicitations_table(session, data):
             sol.noticeType = notice_type
             sol.solNum = opp['solnbr']
             sol.agency = opp['agency']
+            original_sol_date = sol.date # need this later to see if this is an update or not
             sol.date = posted_date_to_datetime(opp['postedDate'])
             sol.compliant = opp['compliant']
             sol.numDocs = len(attachments)
@@ -266,12 +267,14 @@ def insert_data_into_solicitations_table(session, data):
             sol.title = opp['subject']
             sol.url = opp['url']
             sol.contactInfo = opp['emails']
-            agency_alias = session.query(db.AgencyAlias).filter(db.AgencyAlias.alias == opp['agency']).one()
-            sol.agency_id = agency_alias.agency_id
-            if (agency_alias.agency_id):
-                agency = session.query(db.Agencies).filter(db.Agencies.id == agency_alias.agency_id).one()
-                sol.agency = agency.agency
-                logger.debug("{} mapped to {} for solnum {}".format(opp['agency'], sol.agency, sol.solNum))
+            agency_alias_query = session.query(db.AgencyAlias).filter(db.AgencyAlias.alias == opp['agency'])
+            if agency_alias_query.count() > 0:
+                agency_alias = agency_alias_query.one()
+                sol.agency_id = agency_alias.agency_id
+                if (agency_alias.agency_id):
+                    agency = session.query(db.Agencies).filter(db.Agencies.id == agency_alias.agency_id).one()
+                    sol.agency = agency.agency
+                    logger.debug("{} mapped to {} for solnum {}".format(opp['agency'], sol.agency, sol.solNum))
             else:
                 logger.warning("unable to map agency {} for solnum {}".format(opp['agency'], sol.solNum))
 
@@ -279,7 +282,7 @@ def insert_data_into_solicitations_table(session, data):
             if (sol_existed_in_db):
                 if ( not sol.history):
                     sol.history = []
-                if is_opp_update(existing_date=sol.date, posted_date=opp['postedDate'], sol_existed_in_db=sol_existed_in_db):
+                if is_opp_update(existing_date=original_sol_date, posted_date=opp['postedDate'], sol_existed_in_db=sol_existed_in_db):
                     sol.history.append({ "date": now_datetime_string, "user": "", "action": "Solicitation Updated on SAM", "status": "" })
                 sol.updatedAt = now_datetime_string
                 if (sol.na_flag):
@@ -328,7 +331,10 @@ def insert_data_into_solicitations_table(session, data):
 
             # add a random estar prediction
             # TODO: properly compute estar prediction
-            estar = "red" if random() < .5 else "green"
+            if sol.noticeData.get('epa_psc_match', False):
+                estar = "red" if random() < .5 else "green"
+            else:
+                estar = "Not Applicable"
             new_prediction['estar'] = estar
 
             new_prediction['history'].append( { "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "value": new_prediction['value'], "508": new_prediction['value'], "estar": estar}  )

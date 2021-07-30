@@ -4,7 +4,7 @@ from utils import get_opps
 from utils.predict import Predict
 from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_data_into_solicitations_table, insert_notice_types
 from utils.json_log_formatter import CustomJsonFormatter, configureLogger
-from utils.sam_utils import update_old_solicitations
+from utils.sam_utils import update_old_solicitations, opportunity_filter_function
 import sys
 import datetime
 
@@ -16,7 +16,7 @@ dal = DataAccessLayer(conn_string)
 dal.connect()
 
 
-def main(limit=None, updateOld=True, filter_naics = True, target_sol_types="o,k", skip_attachments=False, from_date = 'yesterday', to_date='yesterday'):
+def main(limit=None, updateOld=True, opportunity_filter_function=None, target_sol_types="o,k", skip_attachments=False, from_date = 'yesterday', to_date='yesterday'):
     try:
         if limit:
             logger.error("Artifical limit of {} placed on the number of opportunities processed.  Should not happen in production.".format(limit))
@@ -32,7 +32,7 @@ def main(limit=None, updateOld=True, filter_naics = True, target_sol_types="o,k"
         logger.info("Smartie is fetching opportunties from SAM...")
 
 
-        data = get_opps.main(limit, filter_naics=filter_naics, target_sol_types=target_sol_types, skip_attachments=skip_attachments, from_date=from_date, to_date=to_date)
+        data = get_opps.main(limit, opportunity_filter_function=opportunity_filter_function, target_sol_types=target_sol_types, skip_attachments=skip_attachments, from_date=from_date, to_date=to_date)
         if not data:
             logger.info("Smartie didn't find any opportunities!")
         else:
@@ -68,7 +68,6 @@ if __name__ == '__main__':
     # set defaults
     limit = None
     updateOld = True
-    filter_naics = True
     target_sol_types = "o,k"
     skip_attachemnts = False
     from_date = "yesterday"
@@ -86,4 +85,4 @@ if __name__ == '__main__':
     # updateOld=False
 
 
-    main(limit=limit, updateOld=updateOld, filter_naics = filter_naics, target_sol_types=target_sol_types, skip_attachments=skip_attachemnts, from_date=from_date, to_date=to_date)
+    main(limit=limit, updateOld=updateOld, opportunity_filter_function=opportunity_filter_function, target_sol_types=target_sol_types, skip_attachments=skip_attachemnts, from_date=from_date, to_date=to_date)

@@ -88,11 +88,11 @@ def sam_format_date(input_date):
     # for now assume we got it in the right format
     return input_date
 
-def get_opps_for_day(filter_naics = True, limit = None, target_sol_types="o,k", from_date="yesterday", to_date="yesterday", filter=None):
+def get_opps_for_day(opportunity_filter_function = None, limit = None, target_sol_types="o,k", from_date="yesterday", to_date="yesterday", filter=None):
     '''
 
     Args:
-        filter_naics: Filter out non-IT solicitiation. Default true.
+        opportunity_filter_function: function that returns true for opportunites we want to process
         limit: Number of opportunities to pull
         target_sol_types: Use the sam.gov API type codes. Defaults to Solicitiation and Combined Sol/Synopsys
         from_date: formatted mm/dd/yyyy or the default string "yesterday" if you want the function to use yesterday
@@ -114,6 +114,7 @@ def get_opps_for_day(filter_naics = True, limit = None, target_sol_types="o,k", 
     logger.debug("Fetching yesterday's opps from {}".format(uri))
 
     totalRecords = 9999999
+    final_opp_data = []
     offset = 0
     opps = []
 
@@ -126,9 +127,13 @@ def get_opps_for_day(filter_naics = True, limit = None, target_sol_types="o,k", 
         offset += len(data['opportunitiesData'])
 
         opportunities_data = data['opportunitiesData']
-        if filter_naics:
-             opportunities_data = naics_filter(opportunities_data)
+
+        if opportunity_filter_function:
+            opportunities_data = [o for o in opportunities_data if opportunity_filter_function(o) ]
+
         opps.extend(opportunities_data)
+
+        logger.info(f"{len(opportunities_data)} opportunities matched the filter out of {len(data['opportunitiesData'])} total opps in this round")
 
     session.close()
 
@@ -193,12 +198,12 @@ def transform_opps(opps, out_path, skip_attachments=False):
         transformed_opps.append(schematized_opp)
     return transformed_opps
 
-def main(limit=None, filter_naics = True, target_sol_types=("k","o"), skip_attachments=False, from_date="yesterday", to_date="yesterday"):
+def main(limit=None, opportunity_filter_function=None, target_sol_types=("k","o"), skip_attachments=False, from_date="yesterday", to_date="yesterday"):
     '''
 
     Args:
         limit:
-        filter_naics:
+        opportunity_filter_function: A function that returns true if we are interested in the opportuntiy
         target_sol_types:
         skip_attachments: Will skip downloading attachments if true. Default to false.
         from_date: formatted mm/dd/yyyy or the default string "yesterday" if you want the function to use yesterday
@@ -212,7 +217,7 @@ def main(limit=None, filter_naics = True, target_sol_types=("k","o"), skip_attac
         if not os.path.exists(out_path):
             os.makedirs(out_path)
         # opps = get_yesterdays_opps(limit=limit, filter_naics=filter_naics, target_sol_types=target_sol_types)
-        opps = get_opps_for_day(limit=limit, filter_naics=filter_naics, target_sol_types=target_sol_types, from_date=from_date, to_date=to_date)
+        opps = get_opps_for_day(limit=limit, opportunity_filter_function=opportunity_filter_function, target_sol_types=target_sol_types, from_date=from_date, to_date=to_date)
         if not opps:
             return []
         transformed_opps = transform_opps(opps, out_path, skip_attachments=skip_attachments)

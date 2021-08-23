@@ -98,7 +98,7 @@ class Predict():
                 for attachment in attachments:
                     text = attachment['text']
                     if re.match('^.?This notice contains link\(s\)',text):
-                        logger.error("Notice {} - {} has suspicious attachment text.".format(opp['solnbr'], opp.get('agency', '') ),
+                        logger.warning("Notice {} - {} has suspicious attachment text.".format(opp['solnbr'], opp.get('agency', '') ),
                                      extra={
                                          'text': text[:1024],
                                          'solNum': opp.get('solnbr', ''),

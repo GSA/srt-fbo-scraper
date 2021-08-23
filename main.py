@@ -4,7 +4,7 @@ from utils import get_opps
 from utils.predict import Predict
 from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_data_into_solicitations_table, insert_notice_types
 from utils.json_log_formatter import CustomJsonFormatter, configureLogger
-from utils.sam_utils import update_old_solicitations, opportunity_filter_function
+from utils.sam_utils import update_old_solicitations, opportunity_filter_function, set_psc_code_download_list
 import sys
 import datetime
 
@@ -72,6 +72,10 @@ if __name__ == '__main__':
     skip_attachemnts = False
     from_date = "yesterday"
     to_date = "yesterday"
+
+
+    # set these PSC codes for EPA demo mode
+    # set_psc_code_download_list(["61", "6117", "6125", "6130", "6135", "6140", "6150", "7", "7A", "7A20", "7A21", "7B", "7B20", "7B21", "7B22", "7C", "7C20", "7C21", "7D", "7D20", "7E", "7E20", "7E21", "7F", "7F20", "7G", "7G20", "7G21", "7G22", "7H", "7H20", "7J", "7J20", "7K" "7K20", "7730", "D", "DA", "DA01", "DA10", "DB", "DB01", "DB02", "DB10", "DC", "DC01", "DC10", "DD", "DD01", "DE", "DE01", "DE02", "DE10", "DE11", "DF", "DF01", "DF10", "DG", "DG01", "DG10", "DG11", "DH", "DH01", "DH10", "DJ", "DJ01", "DJ10", "DK", "DK01", "DK10"] )
 
 
     # fast mode

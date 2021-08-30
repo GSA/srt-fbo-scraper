@@ -15,7 +15,7 @@ import utils.db.db_utils
 
 import requests
 
-from .request_utils import requests_retry_session, get_org_request_details
+from .request_utils import requests_retry_session
 
 logger = logging.getLogger(__name__)
 
@@ -26,6 +26,7 @@ naics_code_prefixes = ('334111', '334118', '3343', '33451', '334516', '334614',
 psc_codes = []
 
 def opportunity_filter_function(opp):
+    logger.debug(f"Considering {opp['solicitationNumber']}  from {opp['postedDate']}")
     psc_match = opp['classificationCode'] in psc_codes
     naics_match = any(opp['naicsCode'].startswith(n) for n in naics_code_prefixes)
 
@@ -37,27 +38,6 @@ def opportunity_filter_function(opp):
 def set_psc_code_download_list( codes ):
     psc_codes.clear()
     psc_codes.extend(codes)
-
-def get_org_info(org_id):
-    uri, params = get_org_request_details()
-    params.update({'fhorgid': org_id})
-    try:
-        with requests_retry_session() as session:
-            r = session.get(uri, params=params, timeout=100)
-    except Exception as e:
-        logger.error(f"Exception {e} getting org info from {uri} with these params:\n\
-                     {params}", exc_info=True)
-        sys.exit(1)
-    data = r.json()
-    org_list = data['orglist']
-    try:
-        first_org_record = org_list[0]
-    except IndexError:
-        return '', ''
-    agency = first_org_record.get('fhagencyorgname', '')
-    office = first_org_record.get('fhorgname', '')
-
-    return agency, office
 
 
 def write_zip_content(content, out_path):

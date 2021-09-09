@@ -42,7 +42,6 @@ class Notice(Base):
     createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = True)
     na_flag = Column(Boolean, default = False)
-    attachments = relationship("Attachment", back_populates = "notice", cascade = "all, delete-orphan")
 
 class NoticeType(Base):
     __tablename__ = 'notice_type'
@@ -52,7 +51,7 @@ class NoticeType(Base):
 class Attachment(Base):
     __tablename__ = 'attachment'
     id = Column(Integer, primary_key = True)
-    notice_id = Column(Integer, ForeignKey('notice.id'))
+    notice_id = Column(Integer)  #Column(Integer, ForeignKey('notice.id'))
     notice_type_id = Column(Integer, ForeignKey('notice_type.id'))
     filename = Column(Text, nullable = False)
     machine_readable = Column(Boolean)
@@ -64,7 +63,8 @@ class Attachment(Base):
     trained = Column(Boolean, nullable = True)
     createdAt = Column(DateTime, nullable = False, default=datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = True)
-    notice = relationship("Notice", back_populates = "attachments")
+    solicitation_id = Column(Integer, ForeignKey('solicitations.id'))
+    solicitaiton = relationship("Solicitation", back_populates = "attachments")
 
 class Model(Base):
     __tablename__ = 'model'
@@ -100,6 +100,14 @@ class Agencies(Base):
     createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
     updatedAt = Column(DateTime, nullable = False)
 
+class AgencyAlias(Base):
+    __tablename__ = "agency_alias"
+    id = Column(Integer, primary_key = True)
+    agency_id = Column(Integer)
+    alias = Column(String)
+    createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
+    updatedAt = Column(DateTime, nullable = False)
+
 class Surveys(Base):
     __tablename__ = 'Surveys'
     id = Column(Integer, primary_key = True)
@@ -125,7 +133,7 @@ class Predictions(Base):
     date = Column(DateTime)
     office = Column(String)
     na_flag = Column(Boolean)
-    eitLikelihood = Column(JSONB)
+    category_list = Column(JSONB)
     undetermined = Column(Boolean)
     action = Column(JSONB)
     actionStatus= Column(String)
@@ -140,11 +148,36 @@ class Predictions(Base):
     createdAt = Column(DateTime)
     updatedAt = Column(DateTime)
 
-class Solicitations(Base):
+class Solicitation(Base):
     __tablename__ = 'solicitations'
     id = Column(Integer, primary_key=True)
     solNum = Column(String)
     active = Column(Boolean)
-    updatedAt = Column(DateTime)
-    createdAt = Column(DateTime)
+    createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
+    updatedAt = Column(DateTime, nullable = False)
+    title = Column(String)
+    url = Column(String)
+    agency = Column(String)
+    agency_id = Column(Integer)
+    numDocs = Column(Integer)
+    notice_type_id = Column(Integer)
+    noticeType = Column(String)
+    date = Column(DateTime)
+    office = Column(String)
+    na_flag = Column(Boolean)
+    category_list = Column(JSONB)
+    undetermined = Column(Boolean)
+    history = Column(JSONB)
+    action = Column(JSONB)
+    actionStatus = Column(String)
+    actionDate = Column(DateTime)
+    contactInfo= Column(JSONB)
+    parseStatus = Column(JSONB)
+    predictions = Column(JSONB)
+    reviewRec = Column(String)
+    searchText = Column(String)
+    compliant = Column (Integer)
+    noticeData = Column(JSONB)
+    attachments = relationship("Attachment", back_populates="solicitaiton", cascade="all, delete-orphan");
+
 

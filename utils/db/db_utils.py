@@ -199,7 +199,7 @@ def posted_date_to_datetime(posted_date_string):
 
 
 def is_opp_update(existing_date, posted_date, sol_existed_in_db):
-    if sol_existed_in_db and existing_date < posted_date_to_datetime(posted_date):
+    if sol_existed_in_db and existing_date and posted_date and existing_date < posted_date_to_datetime(posted_date):
         return True
     return False
 
@@ -255,7 +255,7 @@ def insert_data_into_solicitations_table(session, data):
             sol.noticeType = notice_type
             sol.solNum = opp['solnbr']
             sol.agency = opp['agency']
-            original_sol_date = sol.date # need this later to see if this is an update or not
+            original_sol_date = sol.date or datetime.utcnow() # need this later to see if this is an update or not
             sol.date = posted_date_to_datetime(opp['postedDate'])
             sol.compliant = opp['compliant']
             sol.numDocs = len(attachments)
@@ -353,9 +353,20 @@ def insert_data_into_solicitations_table(session, data):
 
 
 
+
             # now set the search text column so that we can easily do a full text search in the API
-            sol.searchText = " ".join((sol.solNum, notice_type, sol.title, sol.date.strftime("%Y-%m-%dT%H:%M:%SZ"),
-                                       sol.reviewRec, sol.actionStatus, sol.actionDate.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            if sol.date:
+                safe_date = sol.date.strftime("%Y-%m-%dT%H:%M:%SZ")
+            else:
+                safe_date = " "
+
+            if sol.actionDate:
+                safe_action_date = sol.actionDate.strftime("%Y-%m-%dT%H:%M:%SZ")
+            else:
+                safe_action_date = " "
+
+            sol.searchText = " ".join((sol.solNum, notice_type, sol.title, safe_date,
+                                       sol.reviewRec, sol.actionStatus or "", safe_action_date,
                                        sol.agency, sol.office)).lower()
 
             if (not sol_existed_in_db):

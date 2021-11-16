@@ -10,10 +10,8 @@ import urllib
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from utils.get_doc_text import get_doc_text
-from utils.sam_utils import get_org_info, write_zip_content, get_notice_data, schematize_opp, \
-    naics_filter, find_yesterdays_opps, sol_type_filter
-from utils.request_utils import requests_retry_session, get_opps, get_opp_request_details, \
-    get_doc_request_details
+from utils.sam_utils import schematize_opp
+from utils.request_utils import requests_retry_session
 
 logger = logging.getLogger(__name__)
 

@@ -7,6 +7,7 @@ from utils.json_log_formatter import CustomJsonFormatter, configureLogger
 from utils.sam_utils import update_old_solicitations, opportunity_filter_function, set_psc_code_download_list
 import sys
 import datetime
+import os
 
 logger = logging.getLogger()
 configureLogger(logger, stdout_level=logging.INFO)
@@ -64,6 +65,27 @@ def main(limit=None, updateOld=True, opportunity_filter_function=None, target_so
         logger.error("Unexpected error: {}".format(str(sys.exc_info()[0])))
 
 
+def check_environment():
+    '''
+    Tests to make sure any needed env vars have been set
+    Exits application with error if anything isn't found.
+    Returns:
+    '''
+
+    if not os.getenv('SAM_API_URI'):
+        os.environ['SAM_API_URI'] = "https://api.sam.gov/opportunities/v2/search"
+        logger.warning(f"SAM_API_URI environment variable not set, using default {os.getenv('SAM_API_URI')}")
+    else:
+        logger.info(f"Found SAM_API_URI in the environment: {os.environ['SAM_API_URI']}")
+
+    if not os.getenv('SAM_API_KEY'):
+        logger.error("SAM_API_KEY not found in the environment.")
+        logger.critical("Exiting")
+        exit(7)
+    else:
+        logger.info(f"Found SAM_API_KEY in the environment: { os.environ['SAM_API_KEY'][:4] }...{ os.environ['SAM_API_KEY'][-4:] }")
+
+
 if __name__ == '__main__':
     # set defaults
     limit = None
@@ -88,5 +110,6 @@ if __name__ == '__main__':
     #to_date = datetime.date.today() - datetime.timedelta(days=1)
     # updateOld=False
 
-
+    
+    check_environment()
     main(limit=limit, updateOld=updateOld, opportunity_filter_function=opportunity_filter_function, target_sol_types=target_sol_types, skip_attachments=skip_attachemnts, from_date=from_date, to_date=to_date)

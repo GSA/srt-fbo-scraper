@@ -15,8 +15,6 @@ from tests import mock_opps
 from utils.sam_utils import get_org_info, write_zip_content, get_notice_data, get_notice_type,\
                             schematize_opp, naics_filter, get_dates_from_opp, find_yesterdays_opps
 
-from utils.request_utils import  get_opp_request_details, get_opps
-
 
 class SamUtilsTestCase(unittest.TestCase):
 
@@ -244,23 +242,6 @@ class SamUtilsTestCase(unittest.TestCase):
                     False)
         self.assertEqual(result, expected)
 
-
-    def test_api_pagination(self):
-        uri, params, headers = get_opp_request_details()
-        params['postedFrom'] = '01/26/2020'
-        params['postedTo'] = '01/26/2020'
-        params['limit'] = 10
-        params['page'] = 0
-
-        # dict of opportunites - Page 1
-        opps, total_pages = get_opps(uri, params, headers)
-        self.assertGreater(total_pages, 1)
-
-        # dict of opportunites - Page 2
-        params.update({'page': 1})
-        opps_2, total_pages_2 = get_opps(uri, params, headers)
-        self.assertGreater(total_pages_2, 1)
-        self.assertNotEqual(opps[0]['_id'], opps_2[0]['_id'], "We should get different notice IDs on different pages, instead got {} and {}".format(opps[0]['_id'], opps_2[0]['_id']) )
 
 
 

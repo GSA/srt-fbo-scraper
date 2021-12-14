@@ -10,10 +10,8 @@ import urllib
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from utils.get_doc_text import get_doc_text
-from utils.sam_utils import get_org_info, write_zip_content, get_notice_data, schematize_opp, \
-    naics_filter, find_yesterdays_opps, sol_type_filter
-from utils.request_utils import requests_retry_session, get_opps, get_opp_request_details, \
-    get_doc_request_details
+from utils.sam_utils import schematize_opp
+from utils.request_utils import requests_retry_session
 
 logger = logging.getLogger(__name__)
 
@@ -128,6 +126,9 @@ def get_opps_for_day(opportunity_filter_function = None, limit = None, target_so
 
         opportunities_data = data['opportunitiesData']
 
+        for o in opportunities_data:
+            logger.debug(o['postedDate'] + " " + o['solicitationNumber'] + " " + o['title'] + ' ' + o['active'])
+
         if opportunity_filter_function:
             opportunities_data = [o for o in opportunities_data if opportunity_filter_function(o) ]
 
@@ -143,6 +144,23 @@ def get_opps_for_day(opportunity_filter_function = None, limit = None, target_so
     return opps
 
 
+def make_attachement_request(file_url, http):
+    r = None
+    try:
+        r = http.request('GET', file_url, preload_content=False)
+    except Exception as e:
+        logger.error(f"{type(e)} encountered when trying to download an attachement from {file_url}")
+        # some URLs are malformed and use beta.sam.gov when they should be sam.gov, so try that
+        if re.search('beta.sam.gov', file_url):
+            new_file_url = file_url.replace('beta.sam.gov', 'sam.gov')
+            logger.info(f"rewriting attachment url from {file_url} to {new_file_url} ")
+            try:
+                r = http.request('GET', new_file_url, preload_content=False)
+                shutil.copyfileobj(r, out)
+            except Exception as e2:
+                logger.error(f"{type(e)} encountered when trying to download fixed attachment URL {file_url}")
+    return r
+
 
 def get_docs(opp, out_path):
     filelist = []
@@ -150,9 +168,9 @@ def get_docs(opp, out_path):
     for file_url in (opp['resourceLinks'] or []):
         filename = os.path.join(out_path, hashlib.sha1(file_url.encode('utf-8')).hexdigest())
         with open(filename, 'wb') as out:
-            r = http.request('GET', file_url, preload_content=False)
-            shutil.copyfileobj(r,out)
-            if 'Content-Disposition' in r.headers:
+            r = make_attachement_request(file_url, http)
+            if r and 'Content-Disposition' in r.headers:
+                shutil.copyfileobj(r, out)
                 content_disposition = r.headers['Content-Disposition'] # should be in the form "attachment; filename=Attachment+5+Non-Disclosure+Agreement.docx"
                 match = re.search('filename=(.*)',content_disposition)
                 if match and len(match.groups()) > 0:

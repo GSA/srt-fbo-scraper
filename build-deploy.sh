@@ -5,26 +5,34 @@ LOG_FILE="${CWD}/deploy-log-${TAG}.log"
 CF_CLI=cf
 SPACE=$1
 TAG=$2
+BUILD=$3
 EXISTING_BUILD=true
 
 function usage() {
   echo "Usage:"
-  echo "build-deploy.sh SPACE [dockerhub tag]"
+  echo "build-deploy.sh SPACE [dockerhub tag] [build y/n]"
   echo
   echo "If you provide a dockerhub tag, that will be used in deployment. If you"
   echo "do not provide a tag, a new docker image will be created from the code in"
   echo "the current directory and named with a yyyy.mm.dd.hh.mm timestamp."
+  echo "If a thrid arg is listed at all, then the docker image will be built and saved"
+  echo "as the tag provided in arg 2"
   echo "examples:"
   echo "   ./build-deploy.sh dev"
   echo
   echo "   ./build-deploy.sh dev 2021.03.23.10.05"
   echo
+  echo "   ./build-deploy.sh dev S10.1 build"
   echo
 }
 
 function parse_args() {
   if [[ -z "${TAG}" ]]; then
     TAG=`date +%Y.%m.%d.%H.%M`
+    EXISTING_BUILD=false
+  fi
+  if [[ ! -z "${BUILD}" ]]; then
+    echo "making a new build"
     EXISTING_BUILD=false
   fi
   LOG_FILE="${CWD}/deploy-log-${TAG}.log"

@@ -1,0 +1,2284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FSECHQ1-10-R-0004.doc%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us"/><script type="text/javascript">url="http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FSECHQ1-10-R-0004.doc%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>
+RFP Reference |Functional Description for ‘Repository’ |Required |Preferred |Offeror’s solution Does Currently/Is Capable Of/ or Does Not
+Currently support this function | |
+|C.3.2.1.1.1(1)          |Receive XBRL and other interactive data filings including from the EDGAR data stream |X              |                |                                                                                                                                   |
+|                        |and load that data into a database                                                   |               |                |Offeror – for each description, fill in one of the above choices.  You may add applicable comments also in this column.            |
+|C.3.2.1.1.1(1)          |Perform the above action in an automated manner                                      |X              |                |                                                                                                                                   |
+|C.3.2.1.1.1(2)          |Load, store and process all associated metadata and, when retrieving data from       |X              |                |                                                                                                                                   |
+|                        |previous periods, utilize the appropriate taxonomy                                   |               |                |                                                                                                                                   |
+|C.3.2.1.1.1(2)          |Perform the above action in an automated manner                                      |X              |                |                                                                                                                                   |
+|C.3.2.1.1.1(3)          |Make the data processed and stored in the Repository accessible to other applications|X              |                |                                                                                                                                   |
+|                        |through standard interfaces                                                          |               |                |                                                                                                                                   |
+|C.3.2.1.1.1(4)          |Make the data processed and stored available for analysis and reports                |X              |                |                                                                                                                                   |
+|C.3.2.1.1.2(1)          |Permit connection to and access of multiple data sources (indicate if solution       |               |X               |                                                                                                                                   |
+|                        |requires additional data subscriptions and/or any other third party products or      |               |                |                                                                                                                                   |
+|                        |services)                                                                            |               |                |                                                                                                                                   |
+|C.3.2.1.1.2(2)          |Be able to perform time sensitive functions within seconds of a triggering condition |               |X               |                                                                                                                                   |
+|C.3.2.1.2.1(1)          |Capture, store, and manage business rules and analyses that detect anomalies such as |X              |                |                                                                                                                                   |
+|                        |those defined in the Use Cases                                                       |               |                |                                                                                                                                   |
+|C.3.2.1.2.1(1)          |Perform the above action in an automated manner                                      |X              |                |                                                                                                                                   |
+|C.3.2.1.2.1(2)          |Process data according to the business rules and trigger defined actions through a   |X              |                |                                                                                                                                   |
+|                        |business rules engine                                                                |               |                |                                                                                                                                   |
+|C.3.2.1.2.1(3)          |Restrict access to business rules to authorized users                                |X              |                |                                                                                                                                   |
+|C.3.2.1.2.1(4)          |Schedule the execution of the analyses and business rules                            |X              |                |                                                                                                                                   |
+|C.3.2.1.2.2(1)          |Permit the Repository administrator, an in-house SEC staff member, to define and     |               |X               |                                                                                                                                   |
+|                        |implement business rules and analyses that detect situations that require further    |               |                |                                                                                                                                   |
+|                        |action                                                                               |               |                |                                                                                                                                   |
+|C.3.2.1.2.2(2)          |Have a programming language for business rules that the Repository administrator,    |               |X               |                                                                                                                                   |
+|                        |described above, could use to configure business rules and analyses flexibly         |               |                |                                                                                                                                   |
+|C.3.2.1.2.2(3)          |Permit the Repository administrator to configure and execute ad hoc logical,         |               |X               |                                                                                                                                   |
+|                        |mathematical, and text operations and procedures on one or more instance documents,  |               |                |                                                                                                                                   |
+|                        |data, and metadata located in the Repository                                         |               |                |                                                                                                                                   |
+|C.3.2.1.2.2(4)          |Permit the set up of a range of statistical calculations to be performed on the data |               |X               |                                                                                                                                   |
+|                        |and metadata                                                                         |               |                |                                                                                                                                   |
+|C.3.2.1.3(1)            |Support automated processes that notify designated staff of specific conditions      |               |X               |                                                                                                                                   |
+|                        |(e.g., a filing is ready for review, a threshold has been crossed)                   |               |                |                                                                                                                                   |
+|C.3.2.1.3(2)            |Generate alerts and notifications within seconds of a triggering condition           |               |X               |                                                                                                                                   |
+|C.3.2.1.3(3)            |Integrate with Microsoft Active Directory for purposes such as access control,       |               |X               |                                                                                                                                   |
+|                        |setting up profiles, and selecting staff to receive notifications, alerts, and email |               |                |                                                                                                                                   |
+|C.3.2.1.4(1)            |Generate administrator-defined and predefined reports about its configuration,       |X              |                |                                                                                                                                   |
+|                        |contents, compiled data, and related systems for purposes of evaluating how the      |               |                |                                                                                                                                   |
+|                        |Repository is used                                                                   |               |                |                                                                                                                                   |
+|C.3.2.1.4(2)            |Calculate and compile metrics about filings and their use                            |X              |                |                                                                                                                                   |
+|C.3.2.1.5(1)            |The Repository has a user facility to support drill down                             |               |X               |                                                                                                                                   |
+|C.3.2.1.5(2)            |The Repository has a user facility to support audit                                  |               |X               |                                                                                                                                   |
+|C.3.2.1.5(3)            |The Repository has a user facility to support linking back to source data            |               |X               |                                                                                                                                   |
+|C.3.2.1.5(4)            |The Repository has a user facility to support reporting                              |               |X               |                                                                                                                                   |
+
+
+|RFP Reference           |Functional Description for ‘Product’                                                 |Required       |Preferred       |Offeror’s solution Does Currently/Is Capable Of/ or Does Not Currently support this function                                       |
+|C.3.2.2.1.1(1)          |Capture, store, and manage user-defined business rules and analyses both to detect   |X              |                |                                                                                                                                   |
+|                        |situations that require further action and to trigger user-defined actions (see 1) a.|               |                |Offeror – for each description, fill in one of the above choices.  You may add applicable comments also in this column.            |
+|                        |and b.)                                                                              |               |                |                                                                                                                                   |
+|C.3.2.2.1.1(2)          |Permit the user to run the business rules in a user-specified manner                 |X              |                |                                                                                                                                   |
+|C.3.2.2.1.2(1)          |Permit business rules to be created by end users who are not technology professionals|               |X               |                                                                                                                                   |
+|                        |using either natural language or syntax similar to that found in Microsoft Excel     |               |                |                                                                                                                                   |
+|C.3.2.2.2.1(1)          |Enable users to create reports using the data in the repository to which the Product |X              |                |                                                                                                                                   |
+|                        |is connected                                                                         |               |                |                                                                                                                                   |
+|C.3.2.2.2.1(2)          |Enable users to export reports in a variety of commonly used file formats that are   |X              |                |                                                                                                                                   |
+|                        |either native to, or can be opened by, Microsoft Office products                     |               |                |                                                                                                                                   |
+|C.3.2.2.2.2(1)          |Permit users to configure and execute ad hoc logical and mathematical operations on  |               |X               |                                                                                                                                   |
+|                        |one or more instance documents, data, and metadata                                   |               |                |                                                                                                                                   |
+|C.3.2.2.2.2(2)          |Permit users to create reports using the following criteria:                         |               |X               |                                                                                                                                   |
+|                        |Metadata – reports on the tags that are used, including but not limited to custom    |               |                |                                                                                                                                   |
+|                        |elements, extension taxonomies, and industry use.  Examples of such reports can be   |               |                |                                                                                                                                   |
+|                        |found in Appendix A-2.                                                               |               |                |                                                                                                                                   |
+|                        |Performance measurements – reports on the number of filings analyzed, including those|               |                |                                                                                                                                   |
+|                        |in progress.                                                                         |               |                |                                                                                                                                   |
+|                        |Time series reporting – reports on changes in attributes of entities over time.      |               |                |                                                                                                                                   |
+|                        |Comparisons – reports on entity attributes with results displayed side–by-side.      |               |                |                                                                                                                                   |
+|                        |Comparison reports may incorporate monetary, statistical, and text data (e.g.,       |               |                |                                                                                                                                   |
+|                        |footnotes), and/or the respective metadata for those data.                           |               |                |                                                                                                                                   |
+|                        |Filers – reports on filing entities with their contact information and filing        |               |                |                                                                                                                                   |
+|                        |history; also a sorting function to sort by industry                                 |               |                |                                                                                                                                   |
+|C.3.2.2.2.2(3)          |Enable users to create reusable reporting and analysis templates                     |               |X               |                                                                                                                                   |
+|C.3.2.2.2.2(4)          |Enable users to share reports and report templates with other users and to contribute|               |X               |                                                                                                                                   |
+|                        |templates to a centrally accessible library                                          |               |                |                                                                                                                                   |
+|C.3.2.2.2.2(5)          |Permit the user to join multiple data types from multiple sources to create reports  |               |X               |                                                                                                                                   |
+|C.3.2.2.2.2(6)          |When a user exports a report, permit the exported file to retain embedded formulas   |               |X               |                                                                                                                                   |
+|                        |where appropriate                                                                    |               |                |                                                                                                                                   |
+|C.3.2.2.3(1)            |Perform free-text searches, which would include a search using Boolean criteria and  |               |X               |                                                                                                                                   |
+|                        |filters based on metadata and other specified attributes                             |               |                |                                                                                                                                   |
+|C.3.2.2.3(2)            |Perform text mining: extract text from filings and imported data and assign rank,    |               |X               |                                                                                                                                   |
+|                        |relevance, and priority to results to gain insights                                  |               |                |                                                                                                                                   |
+|C.3.2.2.4(1)            |Support automated processes that notify designated staff of specific conditions; the |               |X               |                                                                                                                                   |
+|                        |Product should not copy and distribute the file or data that triggered the alert;    |               |                |                                                                                                                                   |
+|                        |rather, it should provide a link to it.                                              |               |                |                                                                                                                                   |
+|C.3.2.2.4(2)            |Integrate with Microsoft Active Directory for selecting staff to receive             |               |X               |                                                                                                                                   |
+|                        |notifications, alerts, and email                                                     |               |                |                                                                                                                                   |
+|C.3.2.2.5(1)            |Enable users to drill into (that is, examine supporting data and derived             |               |X               |                                                                                                                                   |
+|                        |computations) any fact or data element to view its composition and source, including |               |                |                                                                                                                                   |
+|                        |metadata. Where the data is a statistic, the user should be able to view the data    |               |                |                                                                                                                                   |
+|                        |that comprise it.                                                                    |               |                |                                                                                                                                   |
+|C.3.2.2.5(2)            |Enable users to create individualized multi-tab information dashboards with drill    |               |X               |                                                                                                                                   |
+|                        |down capability                                                                      |               |                |                                                                                                                                   |
+|C.3.2.2.6               |Where a user is accessing data about one or more entities, prefer the Product to     |               |X               |                                                                                                                                   |
+|                        |provide a mechanism to easily access the official source document or file of record  |               |                |                                                                                                                                   |
+|                        |relating to the data                                                                 |               |                |                                                                                                                                   |
+|C.3.2.2.7(1)            |Record, store, and retrieve work performed on data for purposes of internal          |               |X               |                                                                                                                                   |
+|                        |documentation, litigation support, and auditing                                      |               |                |                                                                                                                                   |
+|C.3.2.2.7(2)            |Store audit reports in a centrally accessible location for backup, restore, and      |               |X               |                                                                                                                                   |
+|                        |archiving purposes                                                                   |               |                |                                                                                                                                   |
+|C.3.2.2.7(3)            |Enable users to add comments to audit reports                                        |               |X               |                                                                                                                                   |
+|C.3.2.2.7(4)            |Indicate if the data used in an end user application has been modified from the      |               |X               |                                                                                                                                   |
+|                        |original                                                                             |               |                |                                                                                                                                   |
+|C.3.2.2.8(1)            |Explicitly identify custom elements (e.g., by highlighting them) for easy            |               |X               |                                                                                                                                   |
+|                        |identification by an end user                                                        |               |                |                                                                                                                                   |
+|C.3.2.2.8(2)            |Support mapping of custom elements to standard tags.  The Product should retain these|               |X               |                                                                                                                                   |
+|                        |mappings for future use, potentially storing them in the data repository to which the|               |                |                                                                                                                                   |
+|                        |Product is connected.                                                                |               |                |                                                                                                                                   |
+|C.3.2.2.9(1)            |Provide online end user help functions.  Please indicate if the help files would be  |               |X               |                                                                                                                                   |
+|                        |available when the user is not connected to an internal network or the internet.     |               |                |                                                                                                                                   |
+|C.3.2.2.9(2)            |Provide assistance in performing some tasks such as creating reports, business rules,|               |X               |                                                                                                                                   |
+|                        |and analyses                                                                         |               |                |                                                                                                                                   |
+|C.3.2.2.9(3)            |Document and explain user-generated errors.  Input errors should not result in       |               |X               |                                                                                                                                   |
+|                        |application termination or loss of data.                                             |               |                |                                                                                                                                   |
+|C.3.2.2.10.1(1)         |Permit the implementation of application level controls that will prevent            |X              |                |                                                                                                                                   |
+|                        |unauthenticated users from having access to the Product                              |               |                |                                                                                                                                   |
+|C.3.2.2.10.1(2)         |Permit the configuration of access controls for both individual Product functions and|X              |                |                                                                                                                                   |
+|                        |specific data according to roles of individual users                                 |               |                |                                                                                                                                   |
+|C.3.2.2.10.1(3)         |Comply with the Federal Desktop Core Configuration (FDCC) for security on the desktop|X              |                |                                                                                                                                   |
+|C.3.2.2.10.1(4)         |Comply with Section 508 requirements for desktop or browser-based applications, as   |X              |                |                                                                                                                                   |
+|                        |appropriate                                                                          |               |                |                                                                                                                                   |
+|C.3.2.2.11              |If the Product has a centrally administered or controlled component (e.g., a hosted  |X              |                |                                                                                                                                   |
+|                        |service, a subscription service, a product with a variable usage fee), then the SEC  |               |                |                                                                                                                                   |
+|                        |requires that the system shall generate administrator-defined and predefined reports |               |                |                                                                                                                                   |
+|                        |about its configuration, usage, user activities, contents, compiled data, and related|               |                |                                                                                                                                   |
+|                        |systems for purposes of evaluating how the system is used.  This includes a mechanism|               |                |                                                                                                                                   |
+|                        |to determine usage fees, if any.                                                     |               |                |                                                                                                                                   |
+
+
+SECTION C – STATEMENT OF WORK
+C.1.0 Scope
+
+The U.S. Securities and Exchange Commission (“SEC”) requires commercially available software that will serve as tools for SEC staff enabling
+them to use interactive data in their regulatory work.  The SEC also requires technical services to install and deploy such software in the
+SEC’s information systems environment.
+
+The software tools must comport with the following guidelines:
+
+ • Commercially Available/Off the Shelf – Software must currently exist in substantially the same form that would be used by SEC staff and would
+   require no or only minor modifications to be useful to staff.
+
+ • Capable of accommodating Interactive Data in multiple formats – Software must be flexible to accommodate data from multiple sources that staff
+   may want to use, whether it is in XBRL, XML, or other interactive data formats.
+
+ • SEC Rights in Custom Code – the SEC will have unlimited rights in any minor modifications, custom, or ad hoc software created under this
+   contract.  Contractors may integrate such work into an existing “off the shelf” software product and offer it to the commercial market.  See
+   the intellectual property rights clauses in Section I.
+
+The software acquired by this solicitation/contract will serve as a system for processing and using interactive data filings that will
+complement EDGAR and the Public Dissemination System (PDS).  This system is not meant to replace EDGAR.  It will access publicly disseminated
+filings from EDGAR, process them on a platform separate from the EDGAR system, and provide enhanced analysis and reporting capabilities separate
+from EDGAR for SEC staff.
+
+Please be aware that the scope of this solicitation/contract excludes:
+
+ • Validation tools – software that validates XBRL filings prior to their storage on the EDGAR system.  Contractors should assume their proposed
+   solution accesses validated and accepted filings,
+
+ • XBRL instance document creation and tagging tools, and
+
+ • External rendering tools – this solution is not intended to render public filings for use by the public.
+
+C.1.1 Background
+
+The SEC is pursuing interactive data as a tool to improve the timeliness and accessibility of information contained in filings.  In 2009, the
+SEC established binding schedules for operating companies to file financial statements in XBRL format and investment companies to file
+risk/return summaries in XBRL format.  Previously, the SEC mandated that stock ownership forms filed by insiders (Forms 3, 4, and 5) be filed in
+an interactive data format called XML.  The SEC continues to look for other forms and data systems into which interactive data could be
+incorporated to help the SEC fulfill its responsibilities.
+
+Investors, businesses, rating agencies, and other market participants benefit from data filed in interactive data format because no time
+consuming steps are needed to put the data in a machine-readable format conducive to analytical applications.  Additionally, data-driven
+disclosure allows computers that process the data to quickly and automatically perform calculations, filter, and apply business rules on data,
+which processes would otherwise require time-consuming human effort.  Such automation is not possible if data is trapped in documents.
+
+Data in interactive format is intended to benefit not only market participants but also SEC staff in their review, reporting, and analysis
+activities.   Accordingly, the SEC seeks software designed to process, query, report on, and analyze interactive data.
+
+C.1.2 Objectives
+
+The SEC seeks one or more commercially available software products designed to utilize XBRL and other interactive data.  These products must fit
+into one or both of the categories listed below.
+
+NOTE: The SEC seeks to acquire at least one product for each category.  Offerors may submit proposals for either of these functionality groups
+or integrated proposals for both of them.  Offerors may also submit joint proposals with business partners covering one or both groups.
+
+   A) Interactive Data Repository (See Section C.3.2.1) – a centrally accessible repository for interactive data where filings are processed and
+      made available to SEC staff for review, reporting, and analysis.  This system will store and execute analyses and business rules against
+      the stored data and will perform actions based on the results.  This repository is likely to be used for additional types of interactive
+      data in the future.
+
+   B) End User Product (See Section C.3.2.2) – desktop application(s), which may be delivered in multiple ways; for example, a plug-in to
+      existing desktop applications, a software application, or a browser interface.  These applications will use interactive data from a
+      repository, such as the repository described above, to facilitate review, reporting, and analysis by SEC staff.
+
+C.1.3 Operational Environment
+
+To the extent possible, the Contractor must utilize the current SEC technology environment, providing system interoperability, reducing
+complexity, and maximizing reuse of previous investments.  The SEC does not want to introduce new technology platforms into its environment
+unless, in the sole judgment of the SEC, the benefits of such new technology platforms far outweigh the cost and inconvenience of their
+introduction.
+
+The SEC's current software development and production environment includes the following:
+
+ • Existing SEC desktop applications such as Internet Explorer 6, Office 2003 or higher, and EDGAR workstation;
+
+ • The Microsoft suite of tools (Access, Word, Excel, Outlook, PowerPoint, Project, Visio);
+
+ • Development tools and technology such as Java 2 Enterprise Edition (J2EE), HyperText Markup Language (HTML), Universal Modeling Language
+   (UML), XML, eXtensible Stylesheet Language Transformation (XSLT), Java Server Page (JSP), SPRING, Java Server Face (JSF), Java Server Pages
+   (JSP), IceFaces, ieSpell, iBATIS, JBoss;
+
+ • Development tools such as Eclipse, JBuilder, ER-Studio, Rapid SQL;
+
+ • Database systems such as Oracle, and Sybase IQ, data modeling, database programming;
+
+ • Oracle Fusion: Oracle Application Server, Oracle Service Oriented Application (SOA) Suite, Oracle WebCenter, and Oracle Universal Content
+   Manager (UCM);
+
+ • Reporting tools such as Business Objects and Crystal Reports;
+
+ • Web services technologies such as Enterprise Service Bus (ESB), Service Oriented Architecture Protocol (SOAP), Web Services Definition
+   Languages (WSDL), and Universal Description Discovery and Integration (UDDI);
+
+ • Testing tools such as Test Director, Load Runner, Bobby 508 testing;
+
+ • Version control and defect tracking tools such as Serena Version Manager (VM) and TeamTrack; and
+
+ • Software for integration into Enterprise Portal; support for JSR 168 and other relevant portal standards.
+
+
+C.1.4 Definitions
+
+ • Interactive Data – Data that has been labeled using a computer markup language that can be processed by software for viewing and analysis. Two
+   types of interactive data are XBRL and XML.
+
+    o XBRL – eXtensible Business Reporting Language; A language for labeling data that has been developed specifically for business and financial
+      reporting.  The terms below relate to XBRL:
+
+         ▪ Linkbase - components of an XBRL taxonomy that provide information about relationships between elements and link them with
+           specified external resources (e.g., providing human readable labels, links to external resources).
+
+         ▪ Extension – A user-created addition to an XBRL taxonomy that defines new (“custom”) elements or changes element labels or
+           relationships  (such as presentation, calculation, or dimension) without altering the original element.
+
+    o XML – eXtensible Markup Language; a language for labeling data.  XBRL is an XML based language.
+
+    o Tags/Elements - a business concept (such as Assets, Liabilities, Income) presented in computer readable format
+
+    o Metadata – data attributes that are attached to and describe data facts.
+
+ • Commercially Available/Off the Shelf (COTS) – Ready-made products that can be implemented in substantially the same form as they are currently
+   commercially available.
+
+ • Instance Document – An XML file that contains XBRL elements. The financial statements of a company or any part thereof, expressed in XBRL,
+   would be an instance document as would an HTML file that had various XBRL items embedded in it. An instance document contains the “code” for
+   the tags and the structure that belongs to the tagged data. Instance documents are built from a combination of XML specifications and XBRL.  A
+   number of XBRL taxonomies are in use, including US Generally Accepted Accounting Principles (GAAP).
+
+ • Business Rule – A set of instructions programmed into the Interactive Data Repository and the End User Product to be performed when a
+   condition is present in processed data.  These conditions may be in the form of logical and mathematical computations, thresholds,
+   constraints, and/or field definitions that run against individual or combined instance documents, data, metadata, and statistics.
+
+ • Filer – an entity that submits information to the SEC pursuant to statutory requirements.  Examples of submitted information include financial
+   statements in XBRL format.
+
+ • EDGAR – the Electronic Data Gathering, Analysis, and Retrieval System; currently, filers use this system to submit documents to the SEC in
+   HTML, ASCII, and XML  format.
+
+
+C.2.0 Applicable Documents
+
+C.2.1 Federal Requirements and Industry Standards
+
+   Title III of the E-Government Act of 2002 (Pub. L. 107-347, 44 U.S.C. Chapter 36), Federal Information Security Management Act of 2002 (FISMA)
+
+
+
+
+   Privacy Act of 1974, Public Law 93-579, 5 U.S.C. § 552a as amended
+
+1. Section 508 of the Rehabilitation Act of 1973, as amended (29 U.S.C. 794d) for system accessibility requirements
+2. Office of Management and Budget (OMB) Memorandum M-09-29, FY 2009 Reporting Instructions for the Federal Information Security Management Act
+   and Agency Privacy Management
+3. OMB Memorandum M-03-22, OMB Guidance for Implementing the Privacy Provisions[1] of the E-Government Act of 2002, September 30, 2003
+4. OMB Memorandum M-00-13, Privacy Policies and Data Collection on Federal Web Sites, June 22, 2000
+5. OMB Memorandum M-99-18, Privacy Policies on Federal Web Sites, June 2, 1999
+6. OMB Circular A-130, Appendix III, Security of Federal Automated Information Systems, http://csrc.ncsl.nist.gov/secplcy/a130app3.txt
+7. National Institute for Standards and Technology (NIST), DRAFT Guide to Protecting the Confidentiality of Personally Identifiable Information
+   (PII), SP 800-122, Jan. 13, 2009
+8. NIST, Technical Guide to Information Security Testing and Assessment, SP 800-115, Sept 2008
+9. NIST, Information Security Handbook: A Guide for Managers, SP 800-100, Oct 2006
+10. NIST, Guide to Secure Web Services, SP 800-95, Aug 2007
+11. NIST, Guide to Computer Security Log Management, SP 800-92, Sep 2006
+12. NIST, Guidelines for Media Sanitization, SP 800-88, Sep 2006
+13. NIST, Computer Security Incident Handling Guide, SP 800-61 Rev. 1, Mar 2008
+14. NIST, DRAFT Recommended Security Controls for Federal Information Systems and Organizations, SP 800-53 Rev. 3, Aug 2009
+15. NIST, Recommended Security Controls for Federal Information Systems, SP 800-53 Rev. 2, Dec 2007
+16. NIST, Guide for Assessing the Security Controls in Federal Information Systems, SP 800-53 A, Jul 2008
+17. NIST, Guidelines on Securing Public Web Servers, SP 800-44 Version 2, Sep 2007
+18. NIST, Risk Management Guide for Information Technology Systems, SP 800-30, Jul 2002
+19. OMB Memorandum M-08-22, Guidance on the Federal Desktop Core Configuration (FDCC), August 11, 2008
+
+C.2.2 SEC Rulemakings
+
+1. Interactive Data to Improve Financial Reporting, Securities Act Release No. 33-9002
+
+2. Interactive Data for Mutual Fund Risk/Return Summary, Securities Act Release No. 33-9006
+
+3. Amendments to Rules for Nationally Recognized Statistical Ratings Organizations, Exchange Act Release No. 34-59342
+
+C.2.3 SEC Administrative Regulations – Located under SEC Office of Information Technology (“OIT”) Policies at http://wapps.sec.gov/oitintranet.
+
+|              |SECR No.            |Title                                                                     |Date               |
+|C.2.3.1       |24-1.2              |Introduction of New Technology Into the Agency                            |04/15/2004         |
+|C.2.3.2       |24-1.6              |Enterprise Architecture                                                   |11/25/2002         |
+|C.2.3.3       |24-2.2              |Technical Bulletin: Virus and Malicious Software Detection and Prevention |05/15/2003         |
+|C.2.3.4       |24-2.3              |Technical Bulletin: Incident Response, Information Security               |05/15/2003         |
+|C.2.3.5       |24-2.6              |Enterprise Backup of Electronic Data                                      |05/15/2003         |
+|C.2.3.6       |24-2.7              |Technical Bulletin - Network Security                                     |05/15/2003         |
+|C.2.3.7       |24-04               |Information Technology Security Program                                   |10/04/2005         |
+|C.2.3.8       |24-04.A01           |Rules of the Road                                                         |07/29/2009         |
+|C.2.3.9       |24-04.T01           |Rules of the Road Compliance Agreement                                    |07/30/2009         |
+
+C.2.4 Other Relevant Security Policies and Procedures – Located under OIT Policies at http://wapps.sec.gov/oitintranet.
+
+|              |Document No.              |Title                                                               |Date               |
+|C.2.4.1       |OD 24-04.01               |Security Policy, Program Management, and Organizational Security    |12/14/2005         |
+|C.2.4.2       |II 24-04.01.01            |System Security Planning                                            |12/29/2005         |
+|C.2.4.3       |II 24-04.01.01.T01        |System Security Plan Template                                       |03/09/2006         |
+|C.2.4.4       |OD 24-04.02               |IT Security Asset Management and FISMA Inventory Management Program |04/07/2006         |
+|C.2.4.5       |OD 24-04.02.T01           |SEC Information System Security Categorization Worksheet            |04/10/2006         |
+|C.2.4.6       |OD 24-04.02.T02           |SEC Information System Inventory Form                               |04/10/2006         |
+|C.2.4.7       |II 24-04.02.01            |Sensitive Data Protection                                           |04/06/2006         |
+|C.2.4.8       |OD 24-04.04               |IT Security Operations and Communications Security Management       |03/20/2006         |
+|              |                          |Program                                                             |                   |
+|C.2.4.9       |II 24-04.04.01            |Vulnerability Management                                            |12/29/2005         |
+|C.2.4.10      |II 24-04.04.02            |IT Security Configuration Management                                |03/13/2007         |
+|C.2.4.11      |II 24-04.04.03            |Information Technology Security Requirements and Standards          |12/29/2005         |
+|C.2.4.12      |II 24-04.04.04            |Network and Telecommunications Security Management                  |08/04/2006         |
+|C.2.4.13      |OD 24-04.06               |IT Security Access Management Program                               |12/12/2005         |
+|C.2.4.14      |II 24-04.06.01            |Identification and Authentication                                   |07/09/2008         |
+|C.2.4.15      |II 24-04.06.02            |Personal Identity Verification Program                              |04/10/2006         |
+|C.2.4.16      |II 24-04.06.03            |Access Control                                                      |04/06/2006         |
+|C.2.4.17      |II 24-04.06.04            |Personally Identifiable Information (PII)                           |04/20/2007         |
+|C.2.4.18      |OD 24-04.07               |Information Security Incident Management                            |05/30/2006         |
+|C.2.4.19      |II 24-04.07.01            |Computer Security Incident Response Capability                      |08/09/2007         |
+|C.2.4.20      |II 24-04.07.01.A01        |SEC Incident Response Capability Handbook                           |03/06/2007         |
+|C.2.4.21      |OD 24-04.08               |IT Security Activities for Information System Acquisition,          |05/02/2006         |
+|              |                          |Development, and Maintenance                                        |                   |
+|C.2.4.23      |II 24-04.08.01            |Security System Development Life Cycle                              |09/09/2009         |
+|C.2.4.24      |OP 24-04.08.01.01         |Security Configuration of Database Management Systems (DBMS)        |07/03/2006         |
+|C.2.4.25      |OP 24-04.08.01.01.T01     |DBMS Checklist                                                      |07/03/2006         |
+|C.2.4.26      |OP 24-04.08.01.02         |Software Development Security Requirements                          |05/31/2006         |
+|C.2.4.27      |OP 24-04.08.01.03         |Information Security Impact Analysis                                |09/09/2009         |
+|C.2.4.28      |OP 24-04.08.01.03.T01     |Information Security Impact Analysis Questionnaire                  |09/09/2009         |
+|C.2.4.29      |OD 24-04.09               |IT Security Business Continuity Management Program                  |12/12/2005         |
+|C.2.4.30      |OD 24-04.10               |IT Security Compliance Program                                      |04/12/2006         |
+|C.2.4.31      |II 24-04.10.01            |IT Security Certification and Accreditation                         |06/29/2005         |
+|C.2.4.32      |II 24-04.10.02            |IT Security Risk Management                                         |12/22/2005         |
+|C.2.4.33      |II 24-04.10.03            |IT Security Assessments                                             |04/28/2006         |
+|C.2.4.34      |OP 24-04.10.03.01         |IT Security Assessment Procedures                                   |04/28/2006         |
+|C.2.4.35      |OP 24-04.10.03.02         |IT Security Auditing and Logging Procedures                         |04/28/2006         |
+
+
+C.2.5 OIT Section 508 Policies and Procedures – Located under OIT Policies at http://wapps.sec.gov/oitintranet.
+
+|              |Document No.                 |Title                                                             |Date               |
+|C.2.5.1       |00-35-010-001.0              |Access to Electronic and Information Technology                   |10/09/2001         |
+|C.2.5.2       |00-35-011-001.0              |OIT Section 508/Rehabilitation Act Compliance Standards and       |10/09/2001         |
+|              |                             |Guidelines                                                        |                   |
+|C.2.5.3       |00-35-012-001.0              |Section 508/Rehabilitation Act Design Guidelines                  |10/09/2001         |
+|C.2.5.4       |00-35-015-001.0              |Section 508/Rehabilitation Project Management Checklist           |10/09/2001         |
+|C.2.5.5       |OIT-00020-001.1              |OIT Section 508/Rehabilitation Act Technical Testing Reference    |10/31/2002         |
+|              |                             |Guide                                                             |                   |
+|C.2.5.6       |II 24- 06.06.03.T01          |Section 508/Rehabilitation Act Compliance Certification           |07/30/2008         |
+
+
+C.2.6 OIT Project Control Policies and Procedures – Located under OIT Policies at http://wapps.sec.gov/oitintranet.
+
+|              |Document No.                |Title                                                             |Date               |
+|C.2.6.1       |80-27-007-001.0             |Quality Assurance Independent Verification and Validation (IV&V)  |12/04/2001         |
+|              |                            |Procedures                                                        |                   |
+|C.2.6.2       |OIT-00005.002.0             |Standard Operating Procedures (SOP)                               |08/20/2002         |
+|C.2.6.3       |OD 24-02.02                 |Information Technology Project Management                         |08/29/2007         |
+|C.2.6.4       |OD 24-02.03                 |Life Cycle Management                                             |12/07/2004         |
+|C.2.6.5       |OD 24-02.03.A01             |Standard Life-Cycle Phases                                        |12/07/2004         |
+|C.2.6.6       |II 24-02.03.02              |System Development Life Cycle Phase Reviews                       |08/06/2008         |
+|C.2.6.7       |OP 24-02.03.02.01.T01       |Planning Phase Deliverables and Exit Criteria                     |08/06/2008         |
+|C.2.6.8       |OP 24-02.03.02.01.T02       |Planning Phase Employee Relations Information                     |08/06/2008         |
+|C.2.6.9       |OP 24-02.03.02.01.T03       |Planning Phase Review Presentation Form                           |08/06/2008         |
+|C.2.6.10      |OP 24-02.03.02.01.T04       |Planning Phase Review Signoff                                     |08/06/2008         |
+|C.2.6.11      |OP 24-02.03.02.03.T01       |Design Phase Deliverables and Exit Criteria                       |08/06/2008         |
+|C.2.6.12      |OP 24-02.03.02.03.T03       |Design Phase Review Signoff                                       |08/06/2008         |
+|C.2.6.13      |OP 24-02.03.02.03.T04       |Standard Operating Procedures (SOP) Desktop Application Template  |01/03/2006         |
+|C.2.6.14      |OP 24-02.03.02.03.T05       |Standard Operating Procedures (SOP) for Enterprise Application    |01/03/2006         |
+|              |                            |Template                                                          |                   |
+|C.2.6.15      |OP 24-02.03.02.03.T08       |Standard Operating Procedures (SOP) Utility or Appliance Template |01/03/2006         |
+|C.2.6.16      |OP 24-02.03.02.04.T01       |Technical Solution Phase Deliverables and Exit Criteria           |09/05/2008         |
+|C.2.6.17      |OP 24-02.03.02.05.T01       |Test Phase Deliverables and Exit Criteria                         |08/06/2008         |
+|C.2.6.18      |OP 24-02.03.02.05.T02       |Test Phase Product Assurance Testing Signoff                      |08/06/2008         |
+|C.2.6.20      |OP 24-02.03.02.06.T01       |Deployment Phase Deliverables and Exit Criteria                   |08/06/2008         |
+|C.2.6.21      |OP 24-02.03.02.06.T02       |Deployment Phase Production Readiness Review Signoff              |08/06/2008         |
+|C.2.6.22      |OD 24-03.01                 |Process and Product Assurance Management                          |09/17/2009         |
+|C.2.6.23      |II 24-03.01.01              |Process and Product Assurance Management: Quality Management      |12/21/2005         |
+|C.2.6.24      |OP 24-03.01.01.01.T01       |Quality Assurance Plan                                            |08/06/2008         |
+|C.2.6.25      |OP 24-03.01.01.04           |Quality Management: Quality Assurance                             |07/26/2006         |
+|C.2.6.26      |II 24-03.01.02              |Process and Product Assurance Management: Configuration Management|09/17/2009         |
+|C.2.6.27      |OP 24-03.01.02.01           |Configuration Management Planning                                 |09/17/2009         |
+|              |OP 24-03.01.02.01.T01       |Configuration Management Plan Template                            |09/17/2009         |
+|              |OP 24-03.01.02.06           |Configuration Control: Release Management                         |06/13/2006         |
+|              |OP 24-03.01.02.06.T01       |Configuration Control Version Description Document (VDD)          |08/06/2008         |
+
+
+C.2.7 Document Updates
+
+The Contractor shall refer to the websites listed and use any documents and standards that supersede the above-cited documents during the course
+of work under this contract.
+
+C.3.0 Requirements
+
+C.3.1 Policies and Procedures
+
+The Contractor shall comply with applicable laws, regulations, and federal mandates including OMB Memoranda and Circulars and National Institute
+for Standards and Technology (NIST) standards in performing the Contract work. The Contractor shall also comply with the SEC policies and
+procedures included in sections C.2.3 through C.2.6 above.
+
+C.3.1.1 Security for Internal Systems
+
+Any software housed entirely within the SEC for the Interactive Data Repository, End User Product, and the Contractor’s work shall conform to
+SEC security requirements defined in the above referenced C.2.3 and C.2.4 documents.
+
+C.3.1.2 Security for Hosted Systems
+
+If the Contractor is proposing a hosted system for either the Interactive Data Repository or the End User Product, then that system must meet
+the requirements below.
+
+C.3.1.2.1 The Contractor’s work, site, personnel, and service shall adhere to the security requirements defined in the documents referenced in
+section C.2.3 and C.2.4.  See also section H.5. The Contractor shall provide the SEC with the access and information necessary to assess the
+ability of the Contractor to meet these requirements.
+
+C.3.1.2.2 The Contractor shall provide for real-time intrusion detection and active security monitoring of the hosted system’s Internet site.
+The security mechanisms built into the hosted system shall meet or exceed current best practices, described in documents referenced in section
+C.2.1 for electronic commerce.
+
+C.3.1.2.3 The hosted system shall protect all communications conducted over the Internet or other public network between remote SEC users and
+the hosted system. The hosted system shall initiate and control a secured session with a remote user’s computer and shall maintain a secure
+interface until the session ends.
+
+C.3.1.2.4 The Contractor shall establish individual user accounts that the SEC will maintain to provide access to the hosted system. The
+Contractor shall provide the SEC with the ability to add SEC users, remove users, and perform basic account administration.
+
+C.3.1.2.5 The Contractor shall maintain system-wide security logs and access audits (including the service’s Internet site) and shall make them
+available to the SEC.  The Contractor shall provide the SEC with the access and information necessary to conduct periodic security audits on the
+hosted system to ensure that the proper safeguards are being maintained and potential security threats are minimized.
+
+C.3.1.2.6 The Contractor shall not access data, metadata, data logs, backup media, or any other data stored on the hosted system without the
+prior written permission of the COTR.
+
+C.3.1.3 Training
+The Contractor shall provide training to SEC staff to help them learn how to use Contractor’s software.  This training must include
+administrator and end user functionality as appropriate.  Training should also cover operation and maintenance functionality for OIT staff.
+Training shall be delivered at SEC Station Place Headquarters in Washington, DC and at the Operations Center in Alexandria, VA.  SEC regional
+offices may also be included as training locations.  The SEC has eleven (11) regional offices located throughout the continental United States.
+
+Training services shall take one or more of several forms, including classroom training for groups of end users, one-on-one training for
+specific end users and system administrators, computer- based training, and remote training via the Internet.  System and technical training for
+OIT staff shall be delivered by appropriately trained Contractor experts.  For software relating to the End User Product, the Contractor should
+expect to train between 20-50 end users.
+
+The Contractor shall prepare all training materials and exercises and, as approved by the Contracting Officer’s Technical Representative (COTR),
+deliver these in SEC-provided classrooms.
+
+
+The Contractor shall provide up to 100 hours of the training described above.  This training may take place during the period before user
+acceptance testing and up to 60 days after the software is fully implemented.  After the 60 day period, the Contractor should have training
+services available for subsequently added SEC end users who need training on the software.
+
+C.3.1.4 Installation and Configuration
+
+The Contractor shall license and install the software for the Interactive Data Repository and/or End User Product and configure them for use in
+the SEC’s operating environment.
+
+C.3.2 Functional Requirements
+
+C.3.2.1 INTERACTIVE Data Repository  (“Repository”)
+
+C.3.2.1.1 Processing
+
+C.3.2.1.1.1  The SEC requires that the Repository shall –
+
+   1) receive XBRL and other interactive data filings, including from the EDGAR data stream and load that data into a database.  Files from the
+      EDGAR system include instance documents and one or more extension schema, presentation, calculation, reference and definition linkbases.
+      Once configured, the Repository must perform this work in an automated manner.
+
+   2) load, store, and process all associated metadata, including metadata in the taxonomy and linkbases that accompany the filing, in the
+      database. Metadata includes but is not limited to descriptions of elements, parent/child relationships between elements defined in the US
+      GAAP Taxonomy, and calculations defined in the US GAAP Taxonomy and in filers’ calculation linkbases.  The SEC considers the appropriate
+      use of metadata in its systems to be of high importance. When retrieving data from previous periods, the Repository must utilize the
+      appropriate taxonomy.  Once configured, the Repository must perform this work in an automated manner.
+
+   3) make the data it processes and stores accessible to other applications, particularly the End User Product described below, through standard
+      interfaces.
+
+   4) make the metadata it processes and stores available to SEC staff for analysis and reports.
+
+      For example, using parent/child or calculation relationships and calculation linkbases relevant to each filer will allow ratios to be
+      calculated across a wide range of industries.
+
+C.3.2.1.1.2  The SEC prefers, but does not require, that the Repository -
+
+   1) permit connection and access to multiple data sources.  Such data may include, when the data becomes available, interactive data on
+      Nationally Recognized Statistical Rating Organization websites.  The Contractor should indicate if the Repository can upload data from
+      external sources, including XBRL and other interactive data files, and how the uploaded data can be segregated.  The Contractor must
+      indicate if its solution requires additional data subscriptions and/or any other third party products or services that are not included
+      within their proposal.
+
+   2) perform time sensitive functions, such as generating alerts and calculating statistics, within seconds of a triggering condition.
+
+C.3.2.1.2 Business Rules and Analyses
+
+C.3.2.1.2.1  The SEC requires that the Repository shall –
+
+   1) capture, store, and manage business rules and analyses that detect anomalies such as those defined in the Use Cases (see Appendix A-1).
+      Once configured, the Repository must perform this work in an automated manner.  If the Contractor writes such business rules on the SEC’s
+      behalf, the Contractor must keep information relating to the business rules confidential.
+
+   2) process data according to the business rules and trigger defined actions through a business rules engine.
+
+   3) restrict access to business rules to authorized users.
+
+   4) schedule the execution of the analyses and business rules (e.g., continuously, periodically, event-triggered, and ad-hoc).
+
+C.3.2.1.2.2  The SEC prefers, but does not require, that the Repository –
+
+   1) permit the Repository administrator, an in-house SEC staff member, to define and implement business rules and analyses that detect
+      situations that require further action (as opposed to requiring that the Contractor write and implement business rules on behalf of the
+      SEC).
+
+   2) have a programming language for business rules that the Repository administrator described above could use to configure business rules and
+      analyses flexibly.  The Repository administrator is not expected to be a technology professional.  Such a language may include, but is not
+      restricted to, natural language programming, familiar syntax (e.g., Microsoft Excel), and a command line interface.
+
+   3) permit the Repository administrator to configure and execute ad hoc logical, mathematical, and text operations and procedures on one or
+      more instance documents, data, and metadata located in the Repository.  These may include, but are not limited to, company and industry
+      data compilation, metadata (custom element, tag) analyses, statistical data generation, the attachment of ticker symbols and other
+      externally-sourced data, and report generation.  Examples are contained in Appendices A-1 and A-2.
+
+   4) permit the set up of a range of statistical calculations to be performed on the data and metadata ((e.g., average Total Revenues for a
+      specific SIC (Standard Industrial Classification), as used by the Division of Corporation Finance)).
+
+C.3.2.1.3 Notifications and Alerts
+
+The SEC prefers, but does not require that the Repository -
+
+   1) support automated processes that notify designated staff of specific conditions (e.g., a filing is ready for review, a threshold has been
+      crossed).  The means of notification may be email, SMS, or online notifications and alerts.  The content of the notifications may take the
+      form of hyperlinks, text, or graphical information.  The Repository should not copy and distribute the file or data that triggered the
+      alert; rather, it should link to it.
+
+   2) generate alerts and notifications within seconds of a triggering condition.
+
+   3) integrate with Microsoft Active Directory for purposes such as access control, setting up profiles, and selecting staff to receive
+      notifications, alerts, and email.
+
+NOTE: If the Repository does not have a built in alert and notification service, it is acceptable if the Repository seamlessly interfaces with
+an external one.
+
+C.3.2.1.4 Administrator Reporting
+
+The SEC requires that the Repository shall –
+
+   1) generate administrator-defined and predefined reports about its configuration, contents, compiled data, and related systems for purposes of
+      evaluating how the Repository is used.
+
+   2) calculate and compile metrics about filings and their use.  These may include the number of filings processed, a report on Level One
+      business rules triggered (Level One rule is defined as a rule triggered as a result of a critical threshold crossed), and metadata reports
+      (refer to Appendix A-2 of this document for examples of metadata reports and metrics).
+
+C.3.2.1.5 User Facility
+
+The SEC prefers, but does not require, that the Repository have a user facility to support the following tasks that are described more fully in
+the End User Product section:
+
+   1) drill down (see C.3.2.2.5),
+
+   2) audit (see C.3.2.2.7),
+
+   3) linking back to source data (see C.3.2.2.6),
+
+   4) reporting (see C.3.2.2.2).
+
+                                                                  *     *     *
+
+C.3.2.2 End User Product (“Product”)
+
+C.3.2.2.1 Business Rules and Analysis
+
+C.3.2.2.1.1  The SEC requires that the Product shall -
+
+   1) capture, store, and manage user-defined business rules and analyses both to detect situations that require further action and to trigger
+      user-defined actions.  These business rules will be executed against –
+
+        a. the data repository to which the Product is connected, and
+
+        b. any data the user has imported into the Product for analysis and reporting.
+
+   2) permit the user to run the business rules in a user-specified manner (e.g., real-time, periodically, event triggered, and ad-hoc).
+
+C.3.2.2.1.2  The SEC prefers, but does not require, that the Product –
+
+   1) permit business rules to be created by end users who are not technology professionals using either natural language or syntax similar to
+      that found in Microsoft Excel.  Basic functions should require little or no instruction while more complex functions should require no more
+      than a single training course.
+
+C.3.2.2.2 Reports and Analytics
+
+C.3.2.2.2.1  The SEC requires that the Product shall -
+
+   1) enable users to create reports using the data in the repository to which the Product is connected.
+
+   2) enable users to export reports in a variety of commonly used file formats that are either native to, or can be opened by, Microsoft Office
+      products.
+
+C.3.2.2.2.2  The SEC prefers, but does not require, that the Product –
+
+   1) permit users to configure and execute ad hoc logical and mathematical operations on one or more instance documents, data, and metadata.
+
+   2) permit users to create reports using the following criteria:
+
+     a) Metadata – reports on the tags that are used, including but not limited to custom elements, extension taxonomies, and industry use.
+        Examples of such reports can be found in Appendix A-2.
+
+     b) Performance measurements – reports on the number of filings analyzed, including those in progress.
+
+     c) Time series reporting – reports on changes in attributes of entities over time.
+
+     d) Comparisons – reports on entity attributes with results displayed side–by-side. Comparison reports may incorporate monetary,
+        statistical, and text data (e.g., footnotes), and/or the respective metadata for those data.
+
+     e) Filers – reports on filing entities with their contact information and filing history; also a sorting function to sort by industry.
+
+    3 enable users to create reusable reporting and analysis templates.
+
+   4) enable users to share reports and report templates with other users and to contribute templates to a centrally accessible library.
+
+   5) permit the user to join multiple data types from multiple sources to create reports.
+
+   6) when a user exports a report, permit the exported file to retain embedded formulas where appropriate.
+
+C.3.2.2.3 Text Analysis
+
+The SEC prefers, but does not require, that the Product –
+
+   1) perform free-text searches, which would include a search using Boolean criteria and filters based on metadata and other specified
+      attributes.  Wildcards, regular expressions, and English stemming searches are preferred methods.
+
+   2) perform text mining: extract text from filings and imported data and assign rank, relevance, and priority to results to gain insights.
+
+C.3.2.2.4 Notifications and Alerts
+
+The SEC prefers, but does not require, that the Product -
+
+   1) support automated processes that notify designated staff of specific conditions (e.g., a filing is ready for review, a threshold has been
+      crossed).  The means of notification may be email, SMS, and online notifications and alerts.  The content of the notifications may take the
+      form of hyperlinks, text, and graphical information.  The Product should not copy and distribute the file or data that triggered the alert;
+      rather, it should provide a link to it.
+
+   2) integrate with Microsoft Active Directory for selecting staff to receive notifications, alerts, and email.
+
+NOTE: If the Product does not have a built-in alert and notification service then it is acceptable if the Product seamlessly interfaces with an
+external one.
+
+C.3.2.2.5 Drill Down Capability
+
+The SEC prefers, but does not require that the Product –
+
+   1) enable users to drill into (that is, examine supporting data and derived computations) any fact or data element to view its composition and
+      source, including metadata. Where the data is a statistic, the user should be able to view the data that comprise it (e.g., where the
+      current ratio is displayed the user can easily view current assets and current liabilities and their underlying data).
+
+   2) enable users to create individualized multi-tab information dashboards with drill down capability.
+
+C.3.2.2.6 Link to Original Filing
+
+Where a user is accessing data about one or more entities, the SEC prefers but does not require the Product to provide a mechanism to easily
+access the official source document or file of record relating to the data (e.g., provide a hyperlink to the company 10-K stored in EDGAR in
+HTML format).  Such links should be present in reports and other analyses created by the user.
+
+C.3.2.2.7 Auditing Function
+
+The SEC prefers, but does not require, that the Product -
+
+   1) record, store, and retrieve work performed on data for purposes of internal documentation, litigation support, and auditing.
+
+   2) store audit reports in a centrally accessible location for backup, restore, and archiving purposes.
+
+   3) enable users to add comments to audit reports.
+
+   4) indicate if the data used in an end user application has been modified from the original (e.g., if the amount in a spreadsheet has been
+      edited from the original amount in the database to which the Product is connected, the cell changes color).
+
+C.3.2.2.8 Custom Element Handling
+
+The SEC prefers, but does not require, that the Product –
+
+   1) explicitly identify custom elements (e.g., by highlighting them) for easy identification by an end user.
+
+   2) support mapping of custom elements to standard tags.  The Product should retain these mappings for future use, potentially storing them in
+      the data repository to which the Product is connected.
+
+C.3.2.2.9 Help and User Support
+
+The SEC prefers, but does not require, that the Product –
+
+   1) provide online end user help functions.  Examples of online help functions include context-sensitive help, searchable topic files, and end
+      user documentation.  Please indicate if the help files would be available when the user is not connected to an internal network or the
+      internet.
+
+   2) provide assistance in performing some tasks such as creating reports, business rules, and analyses.  For example, assistance may take the
+      form of a wizard (step-by-step guidance) function.
+
+   3) document and explain user-generated errors.  Input errors should not result in application termination or loss of data.
+
+C.3.2.2.10 Security Measures and Access Control
+
+C.3.2.2.10.1 The SEC requires that the Product shall -
+
+   1) permit the implementation of application level controls that will prevent unauthenticated users from having access to the Product.
+
+   2) permit the configuration of access controls for both individual Product functions and specific data according to roles of individual users.
+
+
+
+   3) comply with the Federal Desktop Core Configuration (FDCC) for security on the desktop.
+
+   4) comply with Section 508 requirements for desktop or browser-based applications, as appropriate (see C.2.5 and H.6 of this document above
+      for more information on Section 508).
+
+C.3.2.2.10.2  The SEC prefers, but does not require, that the Product -
+
+   1) integrate with existing authorization and authentication systems including the use of Active Directory.
+
+C.3.2.2.11 Product Usage Reports
+
+If the Product has a centrally administered or controlled component (e.g., a hosted service, a subscription service, a product with a variable
+usage fee), then the SEC requires that the system shall generate administrator-defined and predefined reports about its configuration, usage,
+user activities, contents, compiled data, and related systems for purposes of evaluating how the system is used.  This includes a mechanism to
+determine usage fees, if any.
+
+                                                                  *     *     *
+
+C.3.2.3 USE CASEs
+The use cases in Appendix A-1 are an integral part of this solicitation and illustrate some of the functionality sought for both the Interactive
+Data Repository and the End User Product. Contractor(s) must respond to the use cases applicable to their proposal.  The Use Case response
+exhibit to the Proposal should not exceed 15 pages.  Responses to the Useful Metadata Reports in Appendix A-2 are encouraged, but not required.
+Limit such responses to five (5) pages.
+
+                                                                  *     *     *
+
+C.3.3. Project Management
+
+C.3.3.1 Resources
+
+The Contractor shall provide experienced, competent, and fully qualified administrative, financial, managerial, and technical personnel as
+needed to support this contract. For a hosted system, the Contractor shall provide the personnel, facilities, utilities, hardware, software,
+telecommunications and other products and services necessary to successfully implement the hosted system.
+
+C.3.3.2 Project Manager
+
+The Contractor shall designate a Project Manager with the skills, knowledge, responsibility, and authority to satisfactorily respond to and
+resolve any problems, issues, concerns, resolutions, or plans with the COTR. The Project Manager shall maintain project communications and
+proactively alert the COTR to potential contractual and performance concerns or issues.
+
+The SEC shall itself appoint two (2) project managers: one from the Office of Interactive Disclosure (OID) and one from OIT to assist and
+support the implementation.  These individuals and the COTR will be the points of contact for the Contractor.
+
+C.3.3.3 Project Management Plan and Schedule
+
+
+The Contractor shall develop a Project Plan and Schedule that provides the necessary information for the successful implementation of its
+software.  The Plan and Schedule shall include policies, procedures, standards, instructions, or checklists that the Contractor intends to use
+to deploy its software.  The Plan shall include test plans and processes for quality assurance.  The Plan and Schedule shall also contain
+detailed information on tasks (e.g., task schedules, duration, and timing), major milestones and deliverables, and staffing and other resource
+requirements.  The Contractor shall deliver the Plan and Schedule to the COTR for review and approval.  Any changes requested by the COTR will
+be incorporated by the Contractor.  Once approved, the COTR will establish the approved Plan and Schedule as the baseline; thereafter, the
+Contractor shall draft changes to the baselined Plan and Schedule and shall provide it to the COTR for review and approval. The COTR will submit
+changes to the baseline as a System Change Request (SCR). The baselined Plan and Schedule shall be incorporated into the contract as a
+modification by the Contracting Officer.
+
+C.3.3.4 Kick-Off Meeting
+
+Within two weeks of contract award, the Contractor’s Key Personnel under this contract shall participate in a Kick-Off meeting to review the
+Project Plan and Schedule and to ensure a common understanding of project goals and expectations.  After the meeting, the Contractor shall
+prepare and submit to the COTR the minutes of the meeting, which should include action items and planned completion dates for actions items
+identified. The COTR will notify the Contractor of any areas of disagreement in the submitted minutes. The Contractor shall work with the COTR
+to resolve any areas of disagreement and shall resubmit the revised minutes to the COTR for review and approval.
+
+C.3.3.5 Status Reports
+
+
+The Contractor shall provide weekly written Status Reports to the COTR that include information on (a) the current status of the project
+implementation against the Project Plan and Schedule, (b) major deliverables and activities for the coming reporting period, and (c) any
+significant risks and issues to the successful completion of the project.  The Contractor shall provide Reports until successful completion of
+acceptance testing.
+
+C.3.3.6 Status Meetings
+
+The Contractor shall convene weekly Status Meetings to discuss the findings of the Status Reports and convene timely Status Meetings to discuss
+other issues as necessary.  The Contractor shall prepare and submit to the COTR the minutes of each meeting, which should include action items
+and planned completion dates for action items identified. The COTR will notify the Contractor of any areas of disagreement in the minutes. The
+Contractor shall work with the COTR to resolve the areas of disagreement and shall resubmit the revised minutes to the COTR for review and
+approval.
+
+
+C.3.3.7 Software Documentation
+
+
+C.3.3.7.1 In General
+
+
+C.3.3.7.1.1  The Contractor shall document all system functions for the Interactive Data Repository and/or End User Product. The Contractor
+shall provide documentation showing how its software fulfills the functional requirements of Section C.3.2.  The documentation shall be written
+in clear, precise, and correct technical language. The documentation shall be complete, accurate, and thorough. The Contractor shall keep the
+documentation of the Interactive Data Repository and/or End User Product current throughout the term of this contract.
+
+
+C.3.3.7.1.2  Prior to implementation, the Contractor shall provide documentation of installation, upgrades, and improvements to the Interactive
+Data Repository and/or End User Product to the COTR for review by OIT.  This documentation may include information on functionality that could
+be added to the software subsequent to implementation.  The Contractor shall address any issues that are discovered during this review to the
+satisfaction of the OIT Information Security Group.
+
+C.3.3.7.1.3  The Contractor shall provide both end user and administrator guides to be used as a reference for using the software.  This
+documentation may be online, in hard copy form, or both.  These guides could complement or be incorporated into the Help and Support
+functionality described above in C.3.2.2.9.
+
+C.3.3.7.2 System Lifecycle Management Documentation
+
+
+The Contractor shall develop all associated documentation required to support the implementation of the software into the SEC environment to
+comply with SEC and Federal rules concerning technical projects. These include but are not limited to documents for the lifecycle phases:
+Planning Phase Presentation/Review, Design Phase Presentation/Review, Technical Solution Phase, and Deployment Phase.  Not all are required;
+required implementation documents will be determined during the Planning Phase.
+
+|Phase            |Document                                                       |Required for                 |Reference                    |
+|Planning         |Employee Relations Product Information (Union approval         |Interactive Data Repository  |OP 24-02.03.02.01.T02        |
+|                 |confirmation)                                                  |End User Product             |                             |
+|                 |Planning phase review presentation form – provide to CM/QA two |Interactive Data Repository  |OP 24-02.03.02.01.T03        |
+|                 |weeks prior to L-CCB (Lifecycle Change Control Board)          |End User Product             |                             |
+|                 |scheduled presentation                                         |                             |                             |
+|                 |Quality Assurance Plan (QAP)                                   |Interactive Data Repository  |OP 24-03.01.01.01.T01        |
+|                 |Voluntary Product Accessibility Template (VPAT) or Government  |Interactive Data Repository  |II 24-06.06.03.T01           |
+|                 |Product/Service Accessibility Template (GPAT), obtained via    |End User Product             |                             |
+|                 |www.buyaccessible.gov, for Commercial Off-The-Shelf (COTS)     |                             |                             |
+|                 |products Section 508/Rehabilitation Act Compliance             |                             |                             |
+|                 |Certification                                                  |                             |                             |
+|                 |SEC Information System Security Categorization Worksheet, as   |Interactive Data Repository  |OD 24-04.02.T01              |
+|                 |required by the Information Security Group, which will         |                             |                             |
+|                 |determine if the following deliverables are required:          |                             |                             |
+|                 |•  Draft System Security Plan (SSP)                            |                             |                             |
+|                 |•  Draft Business Impact Assessment (BIA)                      |                             |                             |
+|                 |•  Draft Disaster Recovery Plan (DRP)                          |                             |24-04.01.01.T01              |
+|                 |•  Privacy Analysis Worksheet (PAW)                            |                             |24-04.09.01                  |
+|                 |                                                               |                             |00003-001.0                  |
+|Design Review    |System Design/Architecture Document (SDD)                      |Interactive Data Repository  |                             |
+|                 |Database Model and Associated Documentation                    |Interactive Data Repository  |                             |
+|                 |Draft Standard Operating Procedure (SOP) document using one of |                             |                             |
+|                 |the approved templates:                                        |                             |                             |
+|                 |•  Desktop applications                                        |End User product             |OP 24-02.03.02.03.T0         |
+|                 |•  External Services                                           |Interactive Data Repository  |OP 24-02.03.02.03T06         |
+|                 |•  Utility or Appliance                                        |Interactive Data Repository  |OP 24-02.03.02.03.T08        |
+|Technical        |Configuration Control Version Description Document (VDD)       |Interactive Data Repository  |OP 24-03.01.02.06.T01        |
+|Solution         |                                                               |                             |                             |
+|                 |Test Scripts and Test Results                                  |Interactive Data Repository  |04.10.03.01.a04              |
+|                 |                                                               |End User product             |                             |
+|Deploy-          |Final of all Project Documentation                             |Interactive Data Repository  |                             |
+|ment             |                                                               |End User Product             |                             |
+
+
+C.3.4 Operational Support and Maintenance
+
+C.3.4.1 Overview
+
+The Contractor shall keep the Interactive Data Repository and/or End User Product operational and maintain functionality throughout the term of
+this contract.  The Contractor shall respond to production issues, provide for escalated user inquiries, and provide disaster recovery support
+and software bug fixes.  In addition to these services, the Contractor shall provide software updates to accommodate updated versions of
+standard taxonomies, which can be located at  http://www.sec.gov/info/edgar/edgar taxonomies.shtml.  The SEC regards cyclical updates that
+enable Contractor’s software to accommodate new taxonomies to be a part of ordinary maintenance.
+
+C.3.4.2 Enhancements to COTS Product
+
+Any enhancements (including new or changed functionality) made by the Contractor to its software which, as stated previously, is expected to be
+a COTS product, shall be fully supported and maintained, whether the enhancements result in a new version or not.  This support and maintenance
+shall extend into the option periods described in Section F.
+
+
+C.3.4.3 Service Level Agreement
+
+
+Once the software is fully implemented, Contractor support services may be required.  If required, the Contractor shall provide a Service Level
+Agreement (SLA) for the Interactive Data Repository and/or End User Product to the COTR for review.  The SLA shall include the Contractor’s
+guaranteed time to respond to user and system-wide problems, how problems will be fixed, and how planned enhancements are to be deployed.
+
+
+The Contractor shall incorporate feedback from the COTR and shall provide a revised version of the SLA to the COTR for review and approval. The
+approved SLA will be incorporated into the contract as a modification.  Once the software is operating under the SLA, the Contractor shall
+provide SLA reports each quarter detailing support calls, the work performed, and time to resolve problems.
+
+C.3.4.4 Software Upgrades
+
+
+The SEC prefers, but does not require, that the Contractor monitor changes to interactive data specifications, changes to interactive data
+standards, and changes to the regulatory requirements concerning interactive data. The Contractor shall, on request, assess the impact of these
+changes on the Contractor’s software.  The Contractor shall state its ability to upgrade its software in a timely manner to accommodate changes
+to the specifications, standards, and regulations. It shall also state if the work would be included under the software maintenance contract.
+Additionally, the Contractor shall inform the SEC if and how its software could accommodate the possible changes listed below under the expected
+software maintenance contract:
+      o   Formula specification;
+      o   Inline specification;
+      o   Versioning specification; and
+      o   Rendering specification.
+
+C.3.5 Travel
+
+Travel shall be pre-approved by the COTR by submitting travel plans with names, dates, locations and estimated expenses at least two weeks in
+advance of the planned travel.  Reimbursement is subject to the following limitations: (1) any subsistence allowance (i.e., meals and lodging)
+is limited by a per diem allowance prescribed by the Federal per diem schedule
+(http://www.gsa.gov/Portal/gsa/ep/contentView.do?contentId=17943&contentType= GSA_BASIC); (2) expenses incurred as a result of travel using a
+personal automobile are reimbursed as prescribed on the link above; (3) reimbursement of air and train travel is limited to the most economical
+rate and reasonably traveled route; and (4) each out-of-pocket travel and allowable miscellaneous administrative expense exceeding $75 requires
+a receipt that is to be attached to the invoice. The Contractor shall submit the required documentation to the COTR no later than ten (10)
+business days after completion of each trip.
+
+C.3.6  Contract Termination
+
+Upon termination of the SEC’s relationship with the Contractor for the services required under this contract, regardless of the cause or timing,
+the Contractor shall:
+
+     1. prepare a Data Migration Plan and provide a copy to the COTR;
+     2. migrate all data to another system or database designated by the COTR;
+     3. complete an orderly transition of the production database, including all necessary data, files, forms and any other documentation
+        maintained under the contract;
+     4. act in good faith and use its best efforts to facilitate a smooth transition to the follow-on system and/or contractor; and
+     5. prepare and provide to the COTR a data map of the migrated data.
+
+
+
+                                                                 END OF SECTION C
+SECTION D - PACKAGING AND MARKING
+
+All deliverables shall be packaged and marked in accordance with commercial best practices to ensure safe arrival at destination.  The
+Contractor shall properly mark and protect stored data and reports as confidential information.  All information submitted to the Contracting
+Officer or the COTR shall clearly indicate the contract number
+
+SECTION E – INSPECTION AND ACCEPTANCE
+
+
+E.1  The COTR will inspect, approve, and accept all final deliverables. Services shall conform to the requirements set forth in this contract
+and accepted by the COTR.
+
+E.2  Inspection and acceptance will take place at the SEC Headquarters, 100 F Street NE, Washington, DC 20549.
+
+SECTION F – DELIVERIES OR PERFORMANCE
+
+F.1 Period of Performance
+
+The period of performance is from date of award through one year.  This award has four (4) one-year options periods which may be unilaterally
+exercised by the SEC.  If all options are exercised, the period of performance will not exceed a total of five (5) years and six (6) months (see
+Section I – 52.217-8 and 52.217-9).  If exercised, the period of performance for each successive annual option will begin the day after the
+expiration of the previous year and continue for one year.  Exercise of any option requires a modification signed by the Contracting Officer.
+
+F.2 Place of Performance
+
+Work under this award will take place at the Contractor's site on Government business days excluding Federal holidays or other days the SEC is
+closed. The SEC will organize onsite meetings with the Contractor and SEC staff when required and approved in advance.  The SEC may require
+services outside of regular business hours, which are 8:00 AM to 5:00 PM ET, Monday through Friday, and will identify these special occurrences
+in advance.
+
+F.3 Deliverables and Schedule
+
+The contractor shall prepare deliverables using Microsoft Office Suite 2003 or compatible formats, as approved by the COTR.  The COTR will
+review all deliverables and provide comments and/or approvals/disapprovals in a timely manner so as not to adversely impact the project
+schedule.
+
+|Section             |Deliverable                                               |Schedule                                                      |
+|C.3.1.3             |Training plan and materials including a user guide - draft|Per project plan                                              |
+|C.3.1.3             |Training plan and materials including a user guide - final|Within 5 business days after receiving feedback from the COTR |
+|C.3.3.3             |Project Plan and Schedule                                 |Within 20 business days after award with revisions as needed  |
+|                    |                                                          |per COTR                                                      |
+|C.3.3.4             |Kick-off meeting minutes - draft                          |Within 2 business days after the kick-off meeting             |
+|C.3.3.4             |Kick-off meeting minutes - final                          |Within 5 business days after receiving feedback from the COTR |
+|C.3.3.5             |Status reports                                            |Weekly per project plan                                       |
+|C.3.3.6             |Minutes of status meetings - draft                        |Within 2 business days after the status meeting               |
+|C.3.3.6             |Minutes of status meetings - final                        |Within 2 business days after receiving feedback from the COTR |
+|C.3.3.7             |System Life-Cycle Documentation (for each applicable      |Per project plan                                              |
+|                    |document) - draft                                         |                                                              |
+|C.3.3.7             |System Life-Cycle Documentation (for each applicable      |Per project plan                                              |
+|                    |document) - final                                         |                                                              |
+|C.3.4.3             |Service Level Agreement – draft                           |If required, within 30 business days of system acceptance by  |
+|                    |                                                          |the COTR                                                      |
+|C.3.4.3             |Service Level Agreement – final                           |Within 5 business days after receiving feedback from the COTR |
+
+
+F.4  Place of Delivery.  The Contractor shall deliver all deliverables to the COTR at the SEC Headquarters in Washington, DC.
+
+
+
+                                                                 END OF SECTION F
+
+
+SECTION G – CONTRACT ADMINISTRATIVE DATA
+
+G.1   Appointment of Contracting Officer’s Technical Representative (COTR)
+
+            a.   The Contracting Officer shall appoint, in writing, a Contracting Officer’s Technical Representative (COTR) for this contract.
+COTRs do NOT have authority regarding changes to the terms and conditions of the Contract.  The Contractor shall be provided a copy of the
+appointment letter for each official that is appointed to the Contract award.  The COTR may not re-delegate his or her authority.
+
+      b.   Only the Contracting Officer has the authority to change the terms and conditions of this contract.  COTRs may not agree to or issue
+a change to the contract terms and conditions.  In the event the Contractor effects changes to the contract at the direction of any person other
+than the Contracting Officer, the changes will be considered to have been made without any authority and no adjustments will be made to the
+contract.
+
+G.2  Submission of Invoices
+
+ELECTRONIC INVOICING
+Contractors may submit invoices via email instead of hardcopy. In order to expedite receipt and payment of invoices, SEC recommends that all
+invoices and required supporting documentation be submitted via e-mail.  If this option is selected, then no duplicate copies should be sent via
+the US Postal Service or courier.
+
+1.    Invoice Instructions (Paper or Electronic):  Invoices must contain the following information or they will be rejected:
+      a.    Company logo or letterhead
+      b.    Company name and payment address
+      c.    Company point of contact (POC) for the invoice with phone and email
+      d.    Invoice Number
+      e.    SEC award number
+      f.    SEC COTR, IAO or other POC name
+      g.    For supplies: contract line item number, item description, quantity delivered, and unit and extended price, per Section B CLIN
+           (Contract Line Item Number) structure
+      h.    For services: contract line item number, item description, period of performance and associated costs, per Section B CLIN structure
+      i.    Shipping and handling charges, if applicable
+      j.    Clearly mark duplicates of previous invoice submissions with "DUPLICATE"
+      k.    Clearly mark the final invoice with “FINAL INVOICE”
+
+2.    E-Mail Message Instructions: If the contractor chooses to submit an invoice via email, the following information must be in the email.
+      a.    Subject Line: Company name and the invoice number
+      b.    E-Mail Message:
+            i)   Company POC with contact information
+            ii)  Invoice number
+            iii) Contract or Order number
+            iv)  SEC COTR, IAO or other POC name
+      c.    Attach the invoice and any supporting documents in a secure tamper-proof or    tamper-resistant format compatible with Adobe Acrobat.
+      d.    Electronic signatures are acceptable in scanned documents. Each page of a document must be clearly marked with information
+        identifying it with the company, the contract, the invoice, and any other information required by the contract.
+      e.    E-mail invoices to the following address:  SEC_Vendor_Invoices@sec.gov
+3.    If you opt not to participate in electronic invoicing, send paper invoices to:
+      U.S. Securities and Exchange Commission
+      Office of Financial Management  (OFM)
+      6432 General Green Way, Mail Stop 0-3
+      Alexandria, VA 22312
+      OFM: (202) 551-7860
+4.    The Prompt Payment Act clock starts when a proper invoice is received at this office.
+
+G.3  Payment Information
+
+Payments will be made within 30 days after receipt of a valid invoice.
+
+
+                                                                 END OF SECTION G
+
+
+
+
+SECTION H – SPECIAL CONTRACT REQUIREMENTS
+
+
+H.1  Type of Award
+
+
+The SEC anticipates Fixed Price Award(s) with Labor Hour CLINs.
+
+
+H.2  Compliance With Regulations
+
+The Contractor shall comply with all statutes, regulations, directives, instructions, and references applicable to the conduct of this
+acquisition as imposed by the Federal Government and the SEC, including, without limitation, those specified or referred to in this contract.
+
+The Contractor and its employees shall become acquainted with and shall comply with the rules and regulations of the SEC’s facilities,
+including, but not limited to security, controlled access, personnel clearances, and conduct with respect to health and safety at the site,
+regardless of whether or not title to the facility is vested in the SEC.
+
+H.3  Approval of Subcontracts
+
+The Government reserves the right to approve or disapprove any subcontract and any subcontractor selected.  Therefore, the Contractor shall
+obtain the Contracting Officer’s approval of all subcontractors and provide copies of subcontracts for any work required by this contract.
+
+H.4  Non-Disclosure Requirements
+
+Required non-disclosure forms are attached and must be completed and returned to the Contracting Officer before starting work under this
+contract.
+
+H.4.1 Restrictions On Use, Disclosure, And Duplication Of Confidential And Non-Public Information
+
+Confidential and non-public information, for purposes of this clause but  is  not  limited  to,  all  financial,  statistical,  personnel  and/or
+technical data which is furnished, produced, generated, or otherwise available to the Contractor, during the performance of this contract.   Non-
+public information means information in the possession of SEC that would qualify for exemption from disclosure under the Freedom  of  Information
+Act, including, but not limited to, “Official Use Only” information and records protected by the Privacy Act (5 U.S.C. 552(a)). Unless  otherwise
+specified, confidential and non-public information shall not be used for purposes other than performance of work under this contract without  the
+prior written consent of the Contracting Officer.  The Contractor, and its employees, agents, subcontractors,  and  subcontractor  personnel  are
+restricted from duplicating or disclosing confidential or non-public information, in whole or  in  part,  outside  the  Securities  and  Exchange
+Commission (SEC) for purposes other than fulfillment of the requirements set forth in this contract.  Any presentation  of  any  confidential  or
+non-public information, or any reports or material derived from confidential or  non-public  information  shall  be  subject  to  review  of  the
+Contracting Officer prior to publication or dissemination.  Any questions about whether  information  is  confidential  or  non-public  shall  be
+referred to the Contracting Officer prior to use disclosure or duplication.
+
+H.4.2 Non-Disclosure Agreement For Confidential And Non-Public Information
+
+Rules 3(b)(1) and 3(b)(7) of the SEC's conduct regulation (17 C.F.R. 200.735-3(b)(1) and (7))  expressly  prohibit  unauthorized  disclosure  and
+improper use of confidential  or  non-public  information  or  documents.   The  Contractor,  and  its  employees,  agents,  subcontractors,  and
+subcontractor personnel who will have access to confidential or non-public information or documents in the performance of the contract, agree  to
+be bound by the provisions of rules 3(b)(1) and 3(b)(7) of the SEC's conduct regulation and the terms set forth in  the  attached  non-disclosure
+agreements (Attachments 1 & 2).  The Contractor and all personnel assigned to the contract agree not to divulge to any unauthorized  person  non-
+public or confidential information obtained from the SEC in performance of their duties under the contract.
+
+The Contractor and all employees, agents, subcontractors and  subcontractor  personnel  who  will  have  access  to  confidential  or  non-public
+information or documents during the performance of their  duties  under  the  contract  shall  execute  the  attached  NON-DISCLOSURE  AGREEMENTS
+(Attachments 1 & 2) as applicable and return it to the Contracting Officer before being given access to such information or documents.
+
+Violation of this clause by the Contractor, its employees, agents, subcontractors, or subcontractor personnel may result in default of the
+contract and/or civil suits and/or criminal prosecution.
+
+H.4.3 SEC Non-Disclosure Agreement
+
+The Contractor shall submit to the Contracting Officer a list of its employees, agents, and subcontractors that will have authorized access to
+SEC information by virtue of performing the requirements set forth in this contract.  Each person identified on the list shall then sign a non-
+disclosure agreement (Attachment 1) and submit it to the Contracting Officer before starting work at the SEC.  The Contractor shall also ensure
+that all of its employees, agents, and subcontractors assigned to perform the requirements set forth in this contract adhere to the terms of the
+non-disclosure agreement, protecting all confidential or non-public information.  Assignment of staff who has not executed the non-disclosure
+agreement or failure to adhere to this statement shall result in action by the Contracting Officer, as deemed appropriate.
+
+
+H.5 Security and Privacy Act Matters
+
+
+H.5.1 Security Policy
+
+SEC security standards and policies apply to systems or applications, whether they are internally or externally hosted and whether they are
+internally developed or COTS / GOTS packages.  In addition to the requirements set forth within the Federal Acquisition Regulation (FAR), the
+Contractor agrees to comply with the IT security and/or privacy guidance applicable to the SEC.  Such guidance includes, but is not limited to:
+the Federal Information Security Management Act (FISMA) of 2002; Office of Management and Budget (OMB) Circular A-130, Appendix III, Security of
+Federal Automated Information Systems, and the applicable SEC IT security-related SEC Regulations (SECR), Operating Directives (OD),
+Implementing Instructions (II) and Operating Procedures (OP).  This guidance may be found at the following websites:
+ • FISMA: http://csrc.ncsl.nist.gov/secplcy
+ • OMB Circular A-130, Appendix III:  http://csrc.ncsl.nist.gov/secplcy/a130app3.txt
+ • SEC IT Security Policy Guidance:  available on request from the Security Officer
+
+The SEC will, at its discretion, provide supplemental guidance to the Contractor to ensure that security requirements are commensurate with cost-
+effective risk management as required by FISMA, or as defined in OMB documents and/or NIST Special Publications.
+
+SEC information systems designated as sensitive include any information system that contains information that is subject to the Privacy Act or
+other regulations, or information systems that if modified could adversely affect the performance of Federal programs.
+
+The Contractor agrees to include this provision in any subcontract awarded pursuant to this contract.  Failure to comply with these requirements
+will constitute cause for termination.
+
+The Contractor shall properly protect all information used, gathered, or developed to carry out work under the Contract.  The Contractor shall
+establish and implement appropriate administrative, technical, and physical safeguards to ensure the security and confidentiality of sensitive
+Government information, data, and/or equipment.
+
+H.5.2 Security Classification
+
+The security classification for work performed under this Contract is Confidential.  The documents and information that will be reviewed and
+produced are confidential in nature and shall be protected from unauthorized disclosure.  Work on this project requires that personnel may have
+access to Privacy Act information.  Personnel shall adhere to the Privacy Act, 5 U.S.C. Section 552a and applicable agency rules and
+regulations.
+
+H.6  Electronic and Information Technology (EIT)
+
+All electronic and information technology (EIT) procured through this award must meet the applicable accessibility standards at 36 CFR 1194.  36
+CFR 1194 implements Section 508 of the Rehabilitation Act of 1973, as amended, and is viewable at http://www/access-board.gov.
+
+For contracts issued on or after June 25, 2001, Subsection 508(a)(30) of the Rehabilitation Act of 1973 requires that: When federal departments
+or agencies develop, procure, maintain or use Electronic and Information Technology (EIT) they must ensure that the EIT allows Federal employees
+with disabilities to have access to and use of information and that data is comparable to the access to and use of information and data by other
+Federal employees; and, that individuals with disabilities who are members of the public seeking information or services from a Federal
+Department or agency, have access to and use of information and data that is comparable to that provided to the public without disabilities.
+The Contractor agrees to abide by this law and to ensure that all information created or used under this contract conforms to the above
+requirements.
+
+In order to comply with the Functional Performance Criteria (36 CFR 1194.31) and Information Documentation and Support (36 CFR 1194.41) aspects
+of Section of 508, the Contractor shall submit all soft copies in a format that will be readable by SEC’s standard screen reader.  All imbedded
+charts, graphs, pictures, etc., must be accessible and understandable through a screen reader.  To view the entire text on 36 CFR Part 1194, go
+to www.section508.gov or www.access-board.gov and for 48 CFR Subpart 39.2, go to www.arnet.gov/far.
+
+All web sites and applications have to be compliant with Section 508.  See also section C.2.5.
+
+H.7 Organizational Conflicts Of Interest (OCOI)
+
+The Contractor warrants that, to the best of the Contractor’s knowledge and belief, there are no relevant facts or circumstances which could
+give rise to an Organizational Conflict of Interest (OCOI), as defined in FAR Subpart 9.5.  The Contractor further warrants that it has
+disclosed all such relevant information to the Contracting Officer.
+
+The Contractor agrees that if it discovers an actual, apparent, or potential OCOI after award, the Contractor shall make a full disclosure, in
+writing, to the Contracting Officer.  This disclosure shall include a description of actions which the Contractor has taken or proposes to take,
+after consultation with the Contracting Officer, to avoid, mitigate, or neutralize the actual, apparent or potential conflict.
+
+If the SEC discovers an actual or potential conflict after award, it may terminate this contract for convenience, in whole or in part.  If the
+OCOI is discovered prior to award and the SEC concludes, in its sole discretion, that the OCOI cannot be mitigated, no award will be made.  If
+the Contractor did not disclose relevant information or misrepresented relevant information to the Contracting Officer, the SEC may terminate
+the contract for default, debar the Contractor from SEC contracting, or pursue other remedies as may be permitted by law or by this contract.
+
+In protecting the SEC’s integrity, the Contracting Officer is vested with the broadest possible discretion as to determining whether an OCOI
+exists and what remedy is appropriate.  For this contracting action, all that is required in finding such a conflict is some evidence that facts
+exist which could be alleged to constitute an actual or apparent conflict of interest.  Accordingly, it is in each Contractor’s best interest to
+fully inform the Contracting Officer as early as possible to allow the Contracting Officer the maximum opportunity to find ways to mitigate or
+resolve such potential conflicts of interest.
+
+H.8  Contractor Personnel
+
+H.8.1  Contractor Responsibilities/Standards Of Conduct
+
+
+The Contractor shall furnish all managerial, supervisory, and personnel to successfully, effectively, and efficiently accomplish the work
+required under this contract.
+
+Contractor personnel are employees of the Contractor and under its administrative control and supervision.  The Contractor shall select,
+supervise and exercise control and direction over its employees under this contract.  The SEC will not exercise any supervision over the
+Contractor’s employees.  The Contractor is accountable to the SEC for the actions of Contractor’s personnel.
+The Contractor’s employees, when on-site at SEC facilities under this contract, shall only engage in duties specified in Section C, and not in
+other business, or political, charitable or other duties.
+The Contractor shall not recruit on SEC premises or otherwise act to disrupt official SEC business.
+
+The Contractor shall be responsible for maintaining satisfactory standards of employee competency, conduct, appearance, and integrity, and shall
+be responsible for taking such disciplinary action with respect to its employees as may be necessary.  Contractor employees are expected to
+adhere to standards of conduct that reflect credit on themselves, their employer, the SEC and the Federal Government.
+
+The SEC reserves the right to review all resumes of all personnel assigned to this contract and the results of the background investigations
+conducted by the Contractor. The SEC has the right to require the removal of any Contractor personnel assigned to this contract, at any time,
+for any reason.
+
+
+H.8.2  Key Personnel
+
+
+The Contractor shall designate specific key personnel who are essential to the successful performance of this Contract.  Key personnel shall be
+available for full-time assignment as necessary to efficiently manage the Contract work and shall be available on the effective date of award.
+
+
+
+H.8.2.1  Contractor Substitution Of Key Personnel
+
+
+Following award, and throughout the life of this Contract, the Contractor shall permit no substitution of key personnel without the written
+consent of the Contracting Officer, unless such substitutions are necessitated by an individual’s sudden illness, death or termination of
+employment.  In the event that substitution of personnel is desired, the Contractor shall notify the Contracting Officer in writing at least
+thirty (30) calendar days before any key personnel substitution is made, if possible.  The Contractor shall submit a justification in sufficient
+detail to permit evaluation of the impact on the contract or its performance, with the resume of the proposed replacement personnel. The
+Contractor shall obtain the Contracting Officer’s written approval prior to any changes in the contract participation of the personnel named as
+key personnel.  Proposed substitute personnel shall have experience and education at least substantially equal to those of the personnel being
+replaced.  Requests for substitutions shall provide a detailed explanation of the circumstances necessitating such changes, a resume for each
+proposed substitute, and any other information as requested by the Contracting Officer.  The Contracting Officer will evaluate such requests and
+promptly notify the Contractor of approval or disapproval thereof.
+
+H.8.3     Background Check for Contractor Personnel
+
+H.8.3.1  Pre-Employment Check
+
+The Contractor shall be subject to a complete pre-employment check, which will be completed by the SEC.  The pre-employment check shall include
+a background investigation of each proposed employee under this contract to determine suitability for employment on the basis of qualifications
+for the job.  The Contractor shall submit U.S. Office of Personnel Management (OPM) Standard Form 85P for each prospective employee.  OPM
+Standard Form 85P is available at http://www.opm.gov/forms.  The Government reserves the right of final approval for prospective employees.  The
+pre-employment check shall include, but not be limited to the checks identified below.  The Contractor shall make its best efforts to provide
+employees that pass the SEC’s security screening.  Failure of employee(s) to pass the security screening is not a justifiable cause for schedule
+slippages.  The SEC is currently revising its security processes and there may be a change to this process by time of award.
+
+H.8.3.2  Criminal History Check
+
+The SEC may contact local law enforcement authorities and the Federal Bureau of Investigation (FBI) to determine the criminal history of each
+prospective contract employee.
+
+H.8.3.3  Credit History Check
+
+Credit history shall evidence the Contract employee to be responsible with credit obligations. A Contract employee receiving an unfavorable
+credit rating must be approved by the COTR prior to acceptance to this Contract. In the event of an unsatisfactory credit rating, the Contractor
+shall submit an explanation of the circumstances and the employee shall not be assigned to the contract prior to Contracting Officer approval.
+
+H.8.3.4  Background Checks
+
+Due to the sensitive nature of this work, the SEC may conduct background checks of proposed key personnel in addition to reference checks.  It
+shall be the responsibility of the Contractor throughout the life of this contract to inform the SEC of any changes in its key personnel so that
+the appropriate background and reference checks may be conducted.  The Contractor also agrees to include the substance of this clause in any of
+its subcontracts.
+
+The Contractor shall conduct a background investigation regarding the criminal record and credit history of all employees who will be assigned
+to work on the contract.  The Contractor shall not assign to work on the contract and shall immediately remove from work on the contract any
+employee who has been convicted within the past ten years of fraud or any other felony.
+
+The Contractor shall certify to the SEC that a background investigation has been conducted on each employee who is assigned to work on the
+contract.  The Contractor shall conduct follow-up background investigations every twelve months on each employee assigned to the contract,
+unless the SEC directs otherwise.
+
+H.9 Intellectual Property Rights
+
+The SEC is buying commercial items under this Contract, and the parties’ intellectual property rights are governed generally by Section I,
+clauses 52.227-14, Alt. III, and 52.227-15.  Under clause 52.227-14, the SEC shall have unlimited rights in any data first produced in
+performance of this Contract.
+
+
+H.10  Status Of Proposal In Award
+
+
+Unless directed otherwise by the Contracting Officer at her/his sole discretion, some or all of the successful Offeror’s technical and price
+proposal may be a part of the award resulting from this solicitation.  The technical and price proposal will be given a precedence in order
+following (e) The specifications.
+
+(a) The Schedule (excluding the specifications).
+(b) Representations and other instructions.
+(c) Contract clauses.
+(d) Other documents, exhibits, and attachments.
+(e) The specifications.
+(f) The proposal.
+
+
+
+SECTION I – CONTRACT CLAUSES
+
+52.252-2 Clauses Incorporated by Reference. (FEB 1998)
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request,
+the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at this/these
+address(es): www.arnet.gov
+
+52.204-4 Printed or Copied Double-Sided on Recycled Paper. (AUG 2000)
+
+52.204-7 Central Contractor Registration. (APR 2008)
+
+52.212-5 Contract Terms and Conditions Required to Implement Statutes or Executive Orders--Commercial Items. (SEP 2009) -- Alternate II (MAY
+2009)
+
+(a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract by
+reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items:
+(1) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)).  Alternate I (Aug 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+(2) 52.233-3, Protest After Award (AUG 1996) (31 U.S.C. 3553).
+(3) 52.233-4, Applicable Law for Breach of Contract Claim (OCT 2004) (Pub. L. 108-77, 108-78).
+(b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being incorporated in
+this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: Contracting
+Officer check as appropriate.
+[X] (1) 52.203-6, Restrictions on Subcontractor Sales to the Government (SEP 2006), with Alternate I (OCT 1995) (41 U.S.C. 253g and 10 U.S.C.
+2402).
+[X] (2) 52.203-13, Contractor Code of Business Ethics and Conduct (DEC 2008)(Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note)).
+[X] (3) 52.203-15, Whistleblower Protections under the American Recovery and Reinvestment Act of 2009 (MAR 2009) (Section 1553 of Pub. L. 111-
+5).
+[ ] (4) 52.204-11, American Recovery and Reinvestment Act--Reporting Requirements (MAR 2009) (Pub. L. 111-5).
+[ ] (5) 52.219-3, Notice of Total HUBZone Set-Aside (JAN 1999) (15 U.S.C. 657a).
+[ ] (6) 52.219-4, Notice of Price Evaluation Preference for HUBZone Small Business Concerns (JUL 2005) (if the offeror elects to waive the
+preference, it shall so indicate in its offer) (15 U.S.C. 657a).
+[ ] (7) Reserved.
+[ ] (8)(i) 52.219-6, Notice of Total Small Business Set-Aside (JUN 2003) (15 U.S.C. 644).
+[ ] (9)(i) 52.219-7, Notice of Partial Small Business Set-Aside (JUN 2003) (15 U.S.C. 644).
+[X] (10) 52.219-8, Utilization of Small Business Concerns (MAY 2004) (15 U.S.C. 637 (d)(2) and (3)).
+[X] (11)(i) 52.219-9, Small Business Subcontracting Plan (APR 2008) (15 U.S.C. 637(d)(4).
+[X] (11)(iii) Alternate II (OCT 2001) of 52.219-9.
+[X] (12) 52.219-14, Limitations on Subcontracting (DEC 1996) (15 U.S.C. 637(a)(14)).
+[X] (13) 52.219-16, Liquidated Damages--Subcontracting Plan (JAN 1999) (15 U.S.C. 637(d)(4)(F)(i)).
+[ ] (14)(i) 52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns (OCT 2008) (10 U.S.C. 2323)(if the
+offeror elects to waive the adjustment, it shall so indicate in its offer.)
+[ ] (15) 52.219-25, Small Disadvantaged Business Participation Program--Disadvantaged Status and Reporting (APR 2008) (Pub. L. 103-355, section
+7102, and 10 U.S.C. 2323).
+[ ] (16) 52.219-26, Small Disadvantaged Business Participation Program--Incentive Subcontracting (OCT 2000) (Pub. L. 103-355, section 7102, and
+10 U.S.C. 2323).
+[ ] (17) 52.219-27, Notice of Total Service-Disabled Veteran-Owned Small Business Set-Aside (May 2004)(15 U.S.C. 657 f).
+[X] (18) 52.219-28, Post Award Small Business Program Rerepresentation (APR 2009) (15 U.S.C. 632(a)(2)).
+[X] (19) 52.222-3, Convict Labor (JUN 2003) (E.O. 11755).
+[X] (20) 52.222-19, Child Labor--Cooperation with Authorities and Remedies (AUG 2009) (E.O. 13126).
+[X] (21) 52.222-21, Prohibition of Segregated Facilities (FEB 1999).
+[X] (22) 52.222-26, Equal Opportunity (MAR 2007) (E.O. 11246).
+[X] (23) 52.222-35, Equal Opportunity for Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans (SEP 2006) (38
+U.S.C. 4212).
+[X] (24) 52.222-36, Affirmative Action for Workers with Disabilities (JUN 1998) (29 U.S.C. 793).
+[ ] (25) 52.222-37, Employment Reports on Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans (SEP 2006) (38
+U.S.C. 4212).
+[X] (26) 52.222-39, Notification of Employee Rights Concerning Payment of Union Dues or Fees (DEC 2004) (E.O. 13201).
+[ ] (27) 52.222-54, Employment Eligibility Verification (Jan 2009). (Executive Order 12989). (Not applicable to the acquisition of commercially
+available off-the-shelf items or certain other types of commercial items as prescribed in 22.1803.)
+[ ] (28)(i) 52.223-9, Estimate of Percentage of Recovered Material Content for EPA-Designated Items (May 2008) (42 U.S.C. 6962(c)(3)(A)(ii)).
+(Not applicable to the acquisition of commercially available off-the-shelf items.)
+[ ] (29) 52.223-15, Energy Efficiency in Energy-Consuming Products (DEC 2007) (42 U.S.C. 8259b).
+[ ] (30)(i) 52.223-16, IEEE 1680 Standard for the Environmental Assessment of Personal Computer Products (DEC 2007) (E.O. 13423).
+[ ] (31) 52.225-1, Buy American Act - Supplies (FEB 2009) (41 U.S.C. 10a-10d).
+[ ] (32)(i) 52.225-3, Buy American Act--Free Trade Agreements--Israeli Trade Act (JUN 2009) (41 U.S.C. 10a-10d, 19 U.S.C. 3301 note, 19 U.S.C.
+2112 note, 19 U.S.C. 3805 note, Pub. L. 108-77, 108-78, 108-286, 108-302, 109-53, 109-169, 109-283, and 110-138).
+[ ] (33) 52.225-5, Trade Agreements (AUG 2009) (19 U.S.C. 2501, et seq., 19 U.S.C. 3301 note).
+[X] (34) 52.225-13, Restrictions on Certain Foreign Purchases (JUN 2008) (E.O.'s, proclamations, and statutes administered by the Office of
+Foreign Assets Control of the Department of the Treasury).
+[ ] (35) 52.226-4, Notice of Disaster or Emergency Area Set-Aside (Nov 2007) (42 U.S.C. 5150).
+[ ] (36) 52.226-5, Restrictions on Subcontracting Outside Disaster or Emergency Area (Nov 2007) (42 U.S.C. 5150).
+[ ] (37) 52.232-29, Terms for Financing of Purchases of Commercial Items (FEB 2002) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+[ ] (38) 52.232-30, Installment Payments for Commercial Items (OCT 1995) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+[ ] (39) 52.232-33, Payment by Electronic Funds Transfer - Central Contractor Registration (OCT 2003) (31 U.S.C. 3332).
+[X] (40) 52.232-34, Payment by Electronic Funds Transfer - Other than Central Contractor Registration (MAY 1999) (31 U.S.C. 3332).
+[ ] (41) 52.232-36, Payment by Third Party (MAY 1999) (31 U.S.C. 3332).
+[X] (42) 52.239-1, Privacy or Security Safeguards (AUG 1996) (5 U.S.C. 552a).
+[ ] (43)(i) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (FEB 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C. 2631).
+
+(c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer has
+indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of
+commercial items:
+[ ] (1) 52.222-41, Service Contract Act of 1965 (NOV 2007) (41 U.S.C. 351, et seq.).
+[ ] (2) 52.222-42, Statement of Equivalent Rates for Federal Hires (MAY 1989) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+[ ] (3) 52.222-43, Fair Labor Standards Act and Service Contract Act--Price Adjustment (Multiple Year and Option Contracts) (SEP 2009) (29
+U.S.C. 206 and 41 U.S.C. 351, et seq.).
+[ ] (4) 52.222-44, Fair Labor Standards Act and Service Contract Act--Price Adjustment (SEP 2009) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+[ ] (5) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain
+Equipment--Requirements (NOV 2007) (41 U.S.C. 351, et seq.).
+[ ] (6) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services--Requirements (FEB 2009) (41 U.S.C.
+351, et seq.).
+[ ] (7) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations. (MAR 2009) (Pub. L. 110-247).
+[ ] (8) 52.237-11, Accepting and Dispensing of $1 Coin (SEP 2008) (31 U.S.C. 5112(p)(1)).
+
+(d)(1) The Comptroller General of the United States, an appropriate Inspector General appointed under section 3 or 8G of the Inspector General
+Act of 1978 (5 U.S.C. App.), or an authorized representative of either of the foregoing officials shall have access to and right to--
+(i) Examine any of the Contractor's or any subcontractors' records that pertain to, and involve transactions relating to, this contract; and
+(ii) Interview any officer or employee regarding such transactions.
+(2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination,
+audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in  FAR Subpart 4.7,
+Contractor Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records
+relating to the work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to
+appeals under the disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made
+available until such appeals, litigation, or claims are finally resolved.
+(3) As used in this clause, records include  books, documents, accounting procedures and practices, and other data, regardless of type and
+regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary
+course of business or pursuant to a provision of law.
+(e)(1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), and (c), of this clause, the Contractor is not required to flow
+down any FAR clause in a subcontract for commercial
+items, other than--
+(i) Paragraph (d) of this clause. This paragraph flows down to all subcontracts, except the authority of the Inspector General under paragraph
+(d)(1)(ii) does not flow down; and
+(ii) Those clauses listed in this paragraph (e)(1). Unless otherwise indicated below, the extent of the flow down shall be as required by the
+clause--
+(A) 52.203-13, Contractor Code of Business Ethics and Conduct (Dec 2008) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note)).
+(B) 52.203-15, Whistleblower Protections Under the American Recovery and Reinvestment Act of 2009 (MAR 2009) (Section 1553 of Pub. L. 111-5).
+(C) 52.219-8, Utilization of Small Business Concerns (May 2004) (15 U.S.C. 637(d)(2) and (3)), in all subcontracts that offer further
+subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $550,000 ($1,000,000 for construction
+of any public facility), the subcontractor must include 52.219-8 in lower tier subcontracts that offer subcontracting opportunities.
+(D) 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246).
+(E) 52.222-35, Equal Opportunity for Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans (Sept 2006) (38 U.S.C.
+4212).
+(F) 52.222-36, Affirmative Action for Workers with Disabilities (June 1998) (29 U.S.C. 793).
+(G) 52.222-39, Notification of Employee Rights Concerning Payment of Union Dues or Fees (Dec 2004) (E.O. 13201).
+(H) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.).
+(I) 52.222-50, Combating Trafficking in Persons (Feb 2009) (22 U.S.C. 7104(g)).
+(J) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment-
+Requirements (Nov 2007) (41 U.S.C. 351, et seq.).
+(K) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services-Requirements (Feb 2009) (41 U.S.C. 351,
+et seq.).
+(L) 52.222-54, Employment Eligibility Verification (Jan 2009).
+(M) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations. (Mar 2009) (Pub. L. 110-247). Flow down required in accordance with
+paragraph (e) of FAR clause 52.226-6.
+(N) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) (46 U.S.C. Appx. 1241(b) and 10 U.S.C. 2631). Flow down
+required in accordance with paragraph (d) of FAR clause 52.247-64.
+
+52.216-31 Time-and-Materials/Labor-Hour Proposal Requirements--Commercial Item Acquisition.  (FEB 2007)
+
+52.217-5 Evaluation of Options (JUL 1990)
+
+52.217-8 Option to Extend Services. (NOV 1999)
+The Government may require continued performance of any services within the limits and at the rates specified in the contract. These rates may
+be adjusted only as a result of revisions to prevailing labor rates provided by the Secretary of Labor. The option provision may be exercised
+more than once, but the total extension of performance hereunder shall not exceed 6 months. The Contracting Officer may exercise the option by
+written notice to the Contractor within 30 days of option period commencement.
+
+52.217-9 Option to Extend the Term of the Contract (MAR 2000)
+(a) The Government may extend the term of this contract by written notice to the Contractor within 30 days prior to exercise of an option;
+provided that the Government gives the Contractor a preliminary written notice of its intent to extend at least 60 days before the contract term
+expires.  The preliminary notice does not commit the Government to an extension.
+(b)  If the Government exercise this option, the extended contract shall be considered to include this option clause.
+(c)  The total duration of this contract, including the exercise of any options under this clause shall not exceed five (5) years and six (6)
+months.
+
+        52.227-14  Rights in Data—General (DEC 2007) with Alternate III, Restricted Rights (DEC 2007)
+
+        52.227-15  Representation of Limited Rights Data and Restricted Computer Software (DEC 2007)
+
+
+
+
+
+
+SECTION K – REPRESENTATIONS, CERTIFICATIONS, AND OTHER STATEMENTS OF OFFERORS
+
+The contractor shall have current, accurate and complete Offeror Representations and Certifications registered in the Online Representations and
+Certifications Application (ORCA) database.  See Section L.3.
+
+SECTION J – LIST OF ATTACHMENTS, EXHIBITS AND OTHER DOCUMENTS
+
+Appendix A-1           Use Cases
+Appendix A-2           Useful Metadata Reports
+Attachment 1           Non-Disclosure Agreement (Contractor)
+Attachment 2           Non-Disclosure Agreement (Employee)
+Attachment 3           Conflicts of Interest
+Attachment 4           Functional Requirements Matrix for Section C.3.2
+SECTION L – INSTRUCTIONS TO OFFERORS
+
+L.1 General RFP Information
+
+The SEC is conducting this RFP in accordance with FAR Parts 12 and 15.  Proposals will only be considered for this award if they have the
+requisite functionality detailed in Section C.3.
+The SEC anticipates awarding multiple contracts to the Offeror or Offerors whose responses present the best value to the SEC, technical, price,
+and other factors considered.  The SEC may have separate awards for the Interactive Data Repository and for the End User Product.
+
+This is a time-sensitive procurement.  Implementation of the system must begin within 30 days from the date of contract award unless otherwise
+stipulated in the contract.
+
+Offerors must present a detailed timeline for implementation based on SEC and Federal Government acceptance testing criteria in accordance with
+Section 3.3 of this document.
+
+L.2 RFP Questions
+
+All questions regarding this RFP must be sent in writing to baierl@sec.gov by no later than 2:00 p.m. ET on January 19, 2010.  Questions
+received by the due date, and the SEC's response to each question, will be posted as an amendment to the solicitation on FBO.
+
+L.3 Required Registration in Federal Contractor Databases
+
+The Offeror must be actively registered in the Central Contractor Registration (CCR) database and must also have current, accurate and complete
+Representations and Certifications registered in the Online Representations and Certifications Application (ORCA) database.  Both the CCR and
+the ORCA registrations must be complete and active in order to receive an award.
+
+L.4 Proposal Guidelines
+
+You must provide a Technical proposal and a separate Price proposal.  The first page of your Technical and your Price proposal shall have the
+following information:
+                 A. Complete Business Name and Mailing Address
+                 B. Contact Name, phone number, and email address
+      C.  DUNS of company providing the services
+
+L.5 Proposal Submittal
+
+Proposals be may be submitted by mail, other carrier, hand delivery, or through email.  If submitting a paper copy, you must submit one original
+and one copy of each proposal, and a soft copy on a CD or USB flash drive device in Microsoft Office compatible software.   If submitting the
+proposal by email, submit one readable and printable copy of each proposal; a paper copy is not necessary.
+
+Proposals must be delivered to the designated government office listed below by no later than the 2:00 p.m. ET on February 5, 2010.
+
+           Securities and Exchange Commission
+           Attn: Linda Baier
+           Office of Acquisitions
+           6432 General Green Way, MS O-20
+           Alexandria, VA 22312
+           E-mail: baierl@sec.gov
+
+L.6  Proposal Preparation
+
+L.6.1 Exceptions, Deviations, Assumptions
+
+Within the first two (2) pages of each proposal the Offeror shall identify and explain any exceptions, deviations taken, or conditional
+assumptions made with respect to its proposal versus the requirements of the RFP.  Any such items shall contain sufficient explanation and
+justification to permit evaluation.  All benefits to the SEC shall be explained for each item.  Such items may not make a proposal unacceptable
+unless they fail to provide sufficient benefits to the SEC, or result in material deviations from the requirements of the contract as stated in
+Section C.  The SEC maintains the right to determine if any exceptions, deviations or conditional assumptions constitute a material deviation.
+Therefore, Offerors are cautioned that any exceptions or deviations to the RFP may render its proposal to be non-compliant and ineligible for
+award.
+
+L.6.2 Price Proposal
+
+The Price Proposal containing pricing information shall be submitted in a separate volume from the Technical Proposal
+
+L.6.2.1  Offerors are encouraged to propose fixed prices to the extent that fixed pricing is appropriate.  If the Offeror proposes labor hours,
+the Offeror must propose one or more labor categories with hourly rates and the estimated number of hours.  The proposed pricing shall be for
+working off-site (not at SEC facilities).
+
+L.6.2.2  The Price Proposal shall include a total price for Contract Line Item Numbers (CLINs) 0001 through 0006, including a breakdown of all
+pricing for each CLIN in Section B except Travel.  Do not propose cost for Travel which is reimbursable per the Federal Travel Regulation.  All
+pricing must be preferred customer commercial pricing or better.
+
+L.6.2.3  Price Proposals shall include:
+
+      a.  A copy of the company’s most recent financial statement or an up-to-date Dun & Bradstreet report validating your company's ability to
+financially support and fulfill the requirements.
+      b.  A copy of the company’s current CCR registration to confirm that the data is accurate and up to date.
+      c.  A statement that the company has a current, accurate and complete Offeror Representations and Certifications registered in the ORCA
+database.
+      d.  A certification from the Contractor that it will comply with the Conflict-of-Interest instructions in Section H.7.
+
+
+L.6.2.4  Offeror shall identify any sub-contractors they intend to use to perform this work and specify their experience. Offeror shall also
+include a certification from an officer of each proposed sub-contractor that the sub-contractor understands and will comply with the terms of
+the solicitation and the prime contractor's proposal as submitted.
+
+L.6.3  Technical Proposal
+
+L.6.3.1 Instructions
+
+   a. Technical Proposals shall address the requirements of the RFP and the evaluation factors presented in this RFP in a straightforward,
+      complete and concise manner.
+
+   b. The Offeror shall demonstrate its ability to comply with the applicable requirements and explain how such compliance is achieved.
+      Statements such as “the Offeror understands,” or “the Offeror will comply” and statements that paraphrase the Statement of Work or other
+      contract requirements are inadequate.
+
+   c. The Technical Proposal shall not refer to price.  However, information concerning resources such as labor hours, materials, and
+      subcontracts, if applicable, shall be included in the Technical Proposal so that the SEC can evaluate the Offeror’s understanding of the
+      scope of the required work.
+
+   d. The SEC welcomes Offerors to partner with other firms that may have software products or particular expertise in XBRL to improve the
+      overall product quality.
+
+L.6.3.2 Technical Proposal Requirements:
+
+   a. Page limit for Technical Proposal is thirty (30) letter-size (8.5” x 11”) pages total, in normal font size (normally 11 or 12).  Page limit
+      excludes Use Case exhibits (see C.3.2.3, Appendix A-1).   The Use Case response exhibit to the Proposal should not exceed 15 pages.
+      Responses to the Useful Metadata Reports in Appendix A-2 are encouraged, but not required.  Limit such responses to five (5) pages.
+
+   b. The Contractor shall indicate for each line item in the schedule whether each product or service is compliant or non-compliant with the
+      accessibility standards at 36 CFR 1194.  Further, the proposal must indicate where full details of compliance can be found (e.g., vendor’s
+      website or other exact locations).
+
+L.6.4  Instructions for Addressing Technical Factors
+
+Factor 1: Functional and Technical Requirements
+
+The Offeror shall indicate to what extent their COTS solution meets the applicable functional requirements and preferences and to what extent it
+would require customization to meet those functional requirements and preferences.  The proposed solution must also demonstrate understanding of
+XBRL 2.1 and Dimensions 1.0.  The Offeror must fill in Attachment 4, Functional Requirements Matrix, indicating which of the functionalities its
+solution currently meets, is capable of meeting (could be met with no or very minor change), or does not currently meet (and would require
+additional time and effort).  Submit the completed matrix with the Technical Proposal.
+
+The Offeror shall indicate the extent to which it will partner with another firm that will provide hardware, software, or services to meet the
+functional requirements and the percentage of the supplies and/or services that each partner will support.
+
+Offerors shall indicate if their solution requires additional data subscriptions and/or any other third party products or services that are not
+included within their proposal.
+
+Factor 2: User Sessions – Script and Performance
+
+Offeror shall submit a script, or set of instructions, of how it would demonstrate its software to SEC staff if the Offeror were invited to do
+so.  The User Session scripts from all proposals will be evaluated based on the extent to which they display the Functional Requirements
+described in C.3.2.
+
+Actual User Sessions will be held at the SEC’s discretion after evaluating submitted proposals in their entirety, and either before or after
+establishment of a competitive range.
+
+If invited to perform a User Session, the Offeror can expect that the User Session –
+
+   1) will be held at an SEC premises,
+
+   2) will involve up to five SEC staff members,
+
+   3) must demonstrate the full range of the software’s functionality to simulate what the software can do in real conditions, including (1) the
+      ease of moving through the functions, including the degree of user-friendliness and the flow from one screen to another; (2) the ability to
+      integrate with standard SEC desktop applications such as Microsoft Excel and Word; (3) the ability to write scripts and make other small
+      programmatic changes to the core system; (4) ease of use when building, saving, and applying business rules; (5) the degree to which the
+      system facilitates review, analysis, and reporting across elements, entities, and industries; (6) the ability to incorporate external data
+      sources; and (7) the overall look and feel of the software, and
+
+   4) must show the software’s ability to perform the Use Cases described in Appendix A-1.
+
+
+Factor 3: Past Performance
+
+The Offeror shall provide any Past Performance experience that is directly related to the requirements of this solicitation.  The Offeror shall
+provide at least two (2) but not more than three (3) Past Performance examples of projects/contracts that required at least 200 work hours for
+successful performance and are similar in scope to the requirements contained in Section C.  All must have been performed within the past three
+(3) years.  Past Performance information will be used to assess the risk of the Offeror not successfully performing the requirements of this
+solicitation.  Provide the following information, if applicable, for each directly-related experience:
+
+•     Type of client (federal or commercial);
+
+•     Total contract dollar amount by year;
+
+•     Type of contract (for example, cost reimbursement, fixed price);
+
+•     Contract number and date of contract start and expiration;
+
+•     Name of contracting organization, telephone, and fax number;
+
+•     Contracting Officer and telephone number;
+
+•     Contracting Officer’s Technical Representative, program manager, or similar official and telephone number;
+
+•     A description of the contract work/implementation and the tasks/subtasks involved;
+
+•     A general timeline from award to full production (system implemented and fully functioning in the production environment of the agency);
+
+•     Problems encountered that slowed implementation and how they were resolved;
+
+•     A list of all disputes associated with the contract;
+
+•     A list of the contract options that were not exercised and the reason(s) why they were not exercised; and
+
+•     Best practices or lessons learned that will be applied to this implementation.
+
+In demonstrating Past Performance, the Offeror shall describe the relevance of the work experience listed above to the requirements contained in
+Section C, and should provide any other information that would serve to establish the Offeror’s proven technical experience in fulfilling the
+requirements contained in the scope of the Section C.  Offerors having specific experience with the U.S. Financial Reporting Taxonomy and
+working knowledge of the XBRL specifications Inline, Rendering, Versioning, and Formula are preferred.
+
+NOTE: Offerors without a record of relevant Past Performance will not be evaluated favorably or unfavorably on Past Performance.  While the SEC
+may consider data from other sources, the burden of providing thorough and complete Past Performance information rests with the Offeror.
+
+Factor 4: Management Approach
+
+The Offeror shall describe in detail how it will attain the objectives and accomplish the specific tasks in Section C.  At a minimum, the
+Offeror shall discuss:
+
+    1.      Risk Management - The Offeror shall discuss risks associated with its work towards achieving the objectives of Section C and how it
+        plans to mitigate those risks;
+
+    2.      Change Management - The Offeror shall describe in detail its approach to change management.
+
+    3.      Service Level Agreements (SLA) - The Offeror shall describe in detail its proposed SLA.
+
+Factor 5: Key Personnel
+
+The Offeror shall demonstrate that it possesses staff with the expertise and experience of implementing XBRL applications.
+
+Offerors shall clearly substantiate the qualifications (experience, expertise, and availability) of proposed Key Personnel (including
+subcontractors, if any) who shall perform the tasks contained in Section C.  The Offeror shall provide only personnel with expertise, skills,
+and experience in performing the requirements set forth in this solicitation.  For a Key Person, the Offeror shall provide a brief description
+(no more than one page) of the Key Person’s education, technical training, certifications, employment background, and specific experience
+related to the tasks outlined in Section C.  Information provided for Key Personnel shall be linked to the projected role(s) and task(s) the
+individual(s) will perform in fulfilling the requirements outlined in Section C.  Provide letters of intent if the proposed Key Personnel are
+not currently employed by the Offeror.
+
+
+SECTION M – EVALUATION OF PROPOSALS FOR AWARD
+
+
+
+M.1 Evaluation of Proposals
+
+    a.      The SEC reserves the right to award the contract based on initial Proposals received without discussions or negotiations of such
+       Proposals.  Therefore, it is critically important that each Proposal be fully responsive to the RFP, without exception to any provision.
+       The SEC reserves the right to make a competitive range determination and select the evaluated proposals to receive further consideration.
+        The SEC also reserves the right to conduct discussions, if later determined to be necessary, with Offerors making the competitive range
+       (i.e. the most highly rated proposals, unless the range is further reduced for purposes of efficiency).
+
+    b.      To be accepted and eligible for evaluation, proposals must be prepared in accordance with this solicitation and must comply with the
+       instructions given in this solicitation document and must meet all the solicitation requirements.
+
+    c.      The SEC anticipates awarding a contract to the Offeror(s) whose proposal is the best value to the SEC, based upon an analysis of the
+       factors below.  Note that proposals will be evaluated on all factors and no one factor is determinative.  For instance, the SEC may award
+       an Offeror that does not offer the lowest price or an Offeror that has the highest technically rated proposal.  Offerors will be awarded
+       when in the best interest of the SEC.  The SEC reserves the right to make no award pursuant to this solicitation.
+
+    d.      The Functional and Technical Requirements factor is more important than User Session and Past Performance factors, which in turn are
+       of more importance than Management Approach and Key Personnel factors.  Technical factors combined are more important than Price.
+
+
+M.2 Technical Evaluation Factors for Award
+
+Proposals will be evaluated on the following factors:
+
+Factor 1: Functional and Technical Requirements
+The SEC will evaluate the extent to which the Offeror’s COTS solution meets the applicable functional and technical requirements, either
+individually or jointly with a partner.  Attachment 4, Functional Requirements Matrix, will be included in the evaluation of this Factor.  The
+Offeror’s proposal will also be evaluated on its demonstrated understanding of relevant technology, such as XBRL 2.1 and Dimensions 1.0.
+
+Factor 2: User Sessions
+The evaluation of Offeror’s software based on its proposed User Session script and its actual performance at a User Session, if invited to
+perform.
+
+
+
+After evaluating submitted proposals, the SEC reserves the option to establish a competitive range.  Those Offerors making the competitive range
+may be invited to perform the User Session.  If no competitive range is established, the SEC may invite all Offerors to perform User Sessions.
+
+Factor 3: Past Performance
+The SEC will evaluate the Offeror’s record of Past Performance in similar projects. Specific criteria for evaluating Past Performance include
+the Offeror’s ability to conform to contract requirements, to adhere to contract schedules, and Offeror’s commitment to customer satisfaction.
+If no direct or similar experience is provided, this factor will receive a neutral rating.
+
+Factor 4: Management Approach
+The SEC will evaluate the degree to which the Offeror’s overall management solution demonstrates an understanding of, and meets the management
+requirements of, this solicitation.
+
+Factor 5: Key Personnel
+The SEC will evaluate the documentation/resume of Key Personnel provided pursuant to the instructions in Section L in order to determine the
+qualifications of the Key Personnel being proposed by the Offeror.
+
+
+M.3 Price Evaluation
+
+Price evaluation will be based on comparison of the proposed prices and price reasonableness.   The SEC may compare Offerors' pricing to the
+following:
+      1. Pricing from other Government contracts for work of a similar nature.
+      2. Government Cost Estimates.
+      3. Pricing from other Offerors for this competition.
+      4. Market prices.
+
+
+
+                                                             Appendix A-1: Use Cases
+
+The use cases in this section are specific examples of how SEC staff may use the Interactive Data Repository and End User Product.  Offerors are
+encouraged to respond to the use cases that can be executed by their proposed solution.  Responses should indicate the extent to which the goals
+in each use case can be fulfilled and should include supporting evidence, such as reports, analyses, system walk through/screenshots, diagrams,
+and other presentation methods.  If a solution cannot perform all the functions in the use case, please clearly explain what it can and cannot
+do.
+
+The SEC has provided sample data below for Offerors to use in preparing their use case responses. The SEC prefers that Offerors use this data.
+
+Data from Forms 3, 4, and 5 filed on EDGAR:
+
+http://www.sec.gov/nb/oid_demonstration/ownership-20090929.pdf
+
+http://www.sec.gov/nb/oid_demonstration/ownership-20090929.zip
+
+http://www.sec.gov/nb/oid_demonstration/xml-20090929.zip
+
+Data from XBRL Filings filed on EDGAR:
+
+http://www.sec.gov/nb/softwaretools/data-20091215.zip
+
+Forms 3, 4, and 5 refer to ownership related filings and may be used to demonstrate the data repository’s capability to process and store data
+in additional formats, or the End User Product’s ability to connect to and use data in additional formats.
+
+
+
+Use Case 1
+
+A.  Use Case Goal: Using the End User Product, create a report containing text block elements from multiple filings that relate to a particular
+disclosure.
+
+Step 1: Set Criteria
+Using the set of XBRL filings, apply the following criteria to create reports:
+1) Identify a group of companies by selecting one or multiple Standard Industrial Classification (SIC) Codes from all SIC Codes, as used by the
+   Division of Corporation Finance, or uploading a list of CIK codes from Excel,
+2) Enter the filing date range for the documents from which information is sought,
+3) Select the Form type (10-K, 10-Q, etc)
+4) Select whether to show original and amended filings, or only the most recent amended filing of a given type and period.
+
+Step 2: Create Reports
+Report One – Text blocks across companies in SIC codes selected above:
+1) Select text block element (for example, Revenue Recognition Policy Text Block),
+2) Create a report with all the Revenue Recognition Policy Text Blocks from selected SIC codes that met the criteria, displayed adjacent to one
+   another for easy comparison.
+
+Report Two – Text block for same company from multiple reports:
+1) Select Company by Name or CIK,
+2) Specify “Last 4 Quarters,”
+3) Select Form 10-Q,
+4) Select whether to show the original or the most recently amended filings, if any,
+5) Select one of the same text block elements as above,
+6) Report will have text blocks for all four quarters displayed side-by-side for easy comparison.
+
+B.  Use Case Goal: Create a report showing the ratio of Impairments divided by Total Assets for all or a selection of SIC codes from filings
+filed between February 2009 and April 2009.  The report should permit drill down into the report results.  Explain how the End User Product
+retrieved the source set of filings from the sample data.
+
+Step 1: Set Criteria
+Using the set of XBRL filings, apply the following criteria to create reports:
+1) Select one or multiple SIC Codes from all SIC codes (or upload list of CIK codes).
+2) Enter the filing date range for the documents,
+3) Select the Form type (10-K, 10-Q, etc)
+4) Select whether to show original and amended filings, or only the most recent amended filing of a given type and period.
+
+Step 2: Create Formula and Apply to Report
+1) Create the following formula and use as a report metric: Goodwill Restructuring Charges (US GAAP Taxonomy tagged item) divided by Assets,
+   Total (US GAAP Taxonomy tagged item).
+
+   NOTE: Preferably, the user will be able to select tags within a formula building application from a taxonomy listing within the program; user
+   should not have to enter tags from memory or manually.
+
+2) Report is displayed, showing ratios for the instance documents from companies that fit the criteria in step 1.  Report should display the
+   results adjacent to one another for easy comparison.
+
+
+Step 3: Demonstrate the End User Product’s Ability to Drill Down Into Detail Elements
+1) From the created report, user should be able to view underlying data facts and tags that went into the ratio calculation,
+2) From the created report, user should be able to access and view the original filing (10-K, 10-Q) of a displayed company from which the
+   underlying data originated,
+3) User should be able to export the created report to Excel.  Once exported, the report should retain any formulas used to calculate results,
+   which formulas may be used in subsequent analysis.
+
+   NOTE: the Product should also have a comprehensive range of accounting ratios defined in the software for use in reporting and analysis.  One
+   example of a ratio would be the quick ratio, which can be calculated by dividing current assets by current liabilities.  The Product should
+   also permit the user to set up ad hoc formulas for custom XBRL tags.  The Product should also support the ability to automate report
+   generation in addition to creating reports manually.
+
+
+Use Case 2
+
+A.  Use Case Goal: Generate reports of filings that meet certain financial criteria. This will require that the Interactive Data Repository
+process filer XBRL financial statements to generate statistics that can be used to flag filings in a subsequent period.
+
+Write business rules for the data repository to perform the following calculations and actions.
+
+1) Calculate return on assets (ROA) and return on sales (ROS) for each filing as it arrives:
+     a) Example: ROA = Net Income + Interest Expense / Total Assets [US GAAP elements = Net Income (Loss) Available to Common Stockholders,
+        Basic + Interest Expense, Total / Assets, Total]
+     b) Example: ROS = Net Income / Sales [US GAAP elements = Net Income (Loss) Available to Common Stockholders, Basic / Revenues, Total]
+
+
+      NOTE: We expect that the ratios will utilize the metadata in  the  calculation  linkbase  and  the  standard  US  GAAP  taxonomy  to  bring
+      comparability across a wide range of industries. For example, we expect that Revenues,  Total  will  include  ALL  the  child  elements  of
+      Revenues, Total.  This would include, for example, (1) Advertising Revenue, Total and (2) Financial Services Revenue,  Total.  Using  these
+      parent-child relationships in the standard taxonomy will allow the ratio to be calculated across a range of industries.
+
+2) Within the calendar quarter, aggregate ROA and ROS across all firms, calculating in real-time:
+     a) Mean, median, and standard deviation of all filings,
+     b) Mean, median, and standard deviation of industries by individual or multiple SIC codes.
+
+3) Create a report summarizing these statistics at the end of each quarter.
+
+B.  Use Case Goal: Flag filings based on the calculations contained in the report, notifying staff of their existence via email, with a  link  to
+the filing in the email.
+
+1) Based on the previous calculations, flag all subsequent filings whose ROA is two standard deviations above or below the mean from a set of
+   companies:
+   a) Subset – the mean for all companies in one or more SIC codes in a particular time period,
+   b) Global – the mean for all companies that filed in a particular time period
+
+   NOTE: Please indicate if this processing would be performed in near real time.
+
+2) Based on the previous calculations, flag a filing based on potential changes that may take place from one quarter to the next.  One such flag
+   should be placed through the following process:
+   a) Calculate the difference between each filer’s current ROS and what it reported the previous quarter (e.g., if 10% in Q1 filing and 5% in Q2
+      filing, then the difference is -5%)
+   b) Calculate the percent increase or decrease in each filer’s accounts receivable from what it reported in the prior quarter (e.g., $100M in
+      Q1 filing and $50M in Q2 filing is a change of -50%)
+   c) Flag all filings that, based on the above calculations, have both of the following characteristics:
+        i. Report a change in ROS that is one standard deviation below the mean for a set of filers in the same quarter, and
+       ii. Report a change in accounts receivable that is one standard deviation above the mean for a set of filers in the same quarter.
+
+
+Use Case 3
+
+Use Case Goal: Alert staff that data in a filing has exceeded several user-defined thresholds that are calculated by comparing one reporting
+period to the next.
+
+Example:  A user wants to alert two staff members if a filing contains data indicating that a filer has a decline in reserves from one quarter
+to another greater than 10%, but also has increasing net income and increasing income from operations during that same period.
+
+Please demonstrate the following functions:
+1) Create the business rule(s) for the Interactive Data Repository setting up these conditions.
+2) Create a report showing this condition.
+3) Alert two staff members via email and link to the report within the email.
+
+
+
+                                                      Appendix A-2 – Useful Metadata Reports
+
+
+These reports, created using the End User Product, should provide analysis, statistics, and reporting on the metadata provided to the SEC in
+Exhibit 101 filings.  Exhibit 101 refers to the interactive data filing attached to the HTML file transmitted to EDGAR.
+
+Please note that the SEC prefers, but does not require, that the End User Product be able to create these reports.  It is anticipated that the
+End User Product will access processed metadata from the data repository to which it is connected.
+
+1) Provide an open report-builder application that can constrain the report examples below in Item 2 by some or all of the following criteria:
+   a) Date from, date to, or as at a particular date,
+   b) Type of filing (10-Q, 10-K, etc),
+   c) Amended or original filing,
+   d) SIC code or multiple SIC codes,
+   e) Report of filings by A/D group or multiple A/D groups (SEC staff would provide detail of the entities in each group),
+
+
+        NOTE - Assistant Director (A/D) Group – One of eleven groups within the Operations subdivision of the SEC’s Division of Corporation
+        Finance, each focusing on particular industries that have been assigned to an Assistant Director’s office.
+
+   f) Base taxonomy version,
+   g) Filing agent,
+   h) By financial statement (e.g., Balance Sheet, Income Statement, Cash Flow, Other Comprehensive Income and Notes – data would only be drawn
+      from the selected type of financial statement),
+   i) Accession number, and,
+   j) Name of filer.
+
+2) The system should be able to produce the following reports:
+   a) Elements used – A report on the number and type of the elements used in each instance document or across multiple instance documents. It is
+      preferable that the system categorize information in this report by type of financial statement, element metadata, and other criteria.
+
+   b) Custom Elements used –
+       i. Custom Element Listing - A report listing all custom elements used. The product should be able to further sort and constrain this
+          report by XBRL and US GAAP data type: monetary, string, text block, etc.
+          1. The report should contain information on the custom elements including attributes such as data type, xbrli:periodType,
+             xbrli:balance, and preferred documentation label (if it exists).
+          2. The report should group these custom elements by parent element defined in the calculation or presentation linkbases so SEC staff
+             can determine where filers are extending.  NOTE: SEC staff may run this report across one filer or multiple filers.
+      ii. Extension rate – A report that shows the use of custom elements in a filing or set of filings.  Measurements can include a percentage
+          amount of custom elements, which would be calculated by dividing custom elements over total elements used (Extension rate = custom
+          elements used divided by total elements used).
+          1. This report could show extension rates in multiple ways (e.g., individual filer, an average for all filers that use the 2009 US GAAP
+             taxonomy, or all filers for a Form 10-Q from a particular period).
+          2. The report should have full details of the filer name, date and form type and a live link to the source documents.
+
+   c) Negative facts –
+       i. A report of all monetary facts with a numeric value less than zero for one or more filings. For example, a report of all facts less
+          than zero in filings submitted during the period from September 30, 2009 to November 15, 2009.  The report should contain full details
+          of the filer name, date and form type of the filing, and a live link to the documents.
+      ii. The End User Product should be able to further constrain the report by interactive data type - monetary, string, text block, etc.
+     iii. The report should contain information on the custom elements, including attributes such as data type, xbrli:periodType, xbrli:balance,
+          and preferred documentation label (if it exists).
+      iv. The Product should be able to group these custom elements by parent element defined in the calculation or presentation linkbases so
+          staff can determine where filers are extending.
+
+
+          NOTE: Staff may run this report across one filer or multiple filers for particular financial statements (e.g., Balance Sheet).
+
+   d) Negated items –
+       i. A report of all negated items for one or multiple filings. The system should break this data into categories by Balance Sheet, P&L,
+          Cash Flow, Shareholders’ Equity, and notes to the financial statements.
+      ii. Staff may want to search for filings with a particular number of negated items; for example, they may want a report of filings with no
+          negated items or a report of filings with more than 20 negated items. This report should have full details of the filer name, date and
+          form type, and a live link to the documents.
+
+   e) Calculations  – A report on how well the calculations contained in a calculation linkbase match items reported in an instance document.
+      The calculations written into the linkbase may yield facts that differ from those tagged by the filer.
+       i. Instance document – based on a single instance document, a report comparing facts tagged by the filer in the instance document to the
+          calculations defined by the filer in the calculation linkbase.  The report should highlight differences between the facts, if any, that
+          could be errors.
+
+      ii. Multiple instance documents – a report comparing two or more filings and identifying calculation inconsistencies across them.
+
+     iii. Compare calculations to another XBRL filing – a report comparing calculations from multiple filers over time.  For example, compare a
+          filer’s current 10-Q to the filer’s 10-Q from a previous period, or compare 10-Qs across industries for the same period.
+
+      iv. Reports should be capable of separating information into financial statement categories, such as Balance Sheet, P&L, Cash Flow,
+          Stockholders’ Equity, and Statement of Other Comprehensive Income.
+
+
+   f) Public Float – A report containing information relating to the public float of one or more filers, extracted from one or more Form 10-Ks.
+      The report should include information on amount, when reported, and the measurement date.  The report should draw attention to (i.e. flag)
+      any listed figures that are more than a year old.  The report should also flag any filings where public float or common shares are reported
+      for separate share classes (A, B, etc.).
+
+   g) Label search – a search for a text string against all filer determined labels used for standard and custom elements.  Searches would allow
+      the user to specify exact matches, wildcards, regular expressions, and English stemming matches.
+       i. Individual – Based on a search of one filer, a report that lists labels,  the associated standard or custom elements, and the filings
+          they were from, sorted by relevance.   The report should identify the label that was used in the search and the same/similar labels
+          identified in other filings.  The report should present the standard element or custom element name, filing name, filing type, filing
+          date and a live link to the filings identified.
+
+      ii. Group – A report that lists labels based on a search of multiple filers, similar to the search described above.  .
+   h) Element report – A report that would provide information on an element selected by a user from the US GAAP Taxonomy.  For example, a report
+      on all filers who use Advertising Revenue as a tag.
+
+
+3) General Functionality for Reports
+
+   a) Statistics - All reports should permit inclusion of standard statistical measures and calculations (e.g., mean, median, mode, standard
+      deviation).  All reports should reference and link to filings that meet the criteria.
+
+   b) Data conversion requirement - The data from all reports must be generated as, or easily opened from, Microsoft Office applications for
+      further analysis.  Reports should seamlessly integrate with Microsoft Office applications, such as permitting users to save data into an
+      Excel spreadsheet and re-run their queries after changing the parameters in Excel.
+
+                                                                 c) ATTACHMENT 1
+                                                      NON-DISCLOSURE AGREEMENT (CONTRACTOR)
+
+A.  Intending to be legally bound, _________________, (the “Contractor”) hereby accepts the obligations contained in this Agreement in
+consideration of being granted conditional access to SEC confidential and non-public information.  For purposes of this Agreement, “confidential
+or non-public information,” is defined as information generated by or in the possession of the SEC that is commercially valuable, trade secret,
+market sensitive, proprietary, related to an SEC enforcement or examination matter, subject to privilege, protected by the Privacy Act (5 U.S.C.
+§ 552a), or otherwise deemed confidential or non-public by an SEC division director or office head, and is not otherwise available to the
+public.  This definition applies to confidential or non-public information in any form, including documents, electronic mail, computer files,
+conversations, and audio or video recordings.  For purposes of this Agreement, examples of confidential or non-public information include
+corporate financial data provided to the SEC that has not been made public; SEC planned or contemplated courses of action regarding SEC
+examinations, investigations, and enforcement actions; and SEC personnel information covered by the Privacy Act, 5 U.S.C. § 552a.
+
+B.  The Contractor acknowledges that any conditional access to SEC confidential and non-public information is granted to Contractor for the sole
+purpose of performing its obligations under SEC Contract SECHQ1-_______ (the “underlying Contract”).  This Agreement does not grant Contractor
+access to information or materials that the SEC determines in its sole discretion is inappropriate for disclosure to Contractor.
+
+C.  Contractor acknowledges that the SEC Regulation Concerning Conduct of Members and Employees and Former Members and Employees of the
+Commission expressly prohibits the improper use and unauthorized disclosure of confidential or non-public information or documents.  See 17
+C.F.R. § 200.735-3(b)(1) & (b)(7) available at http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=17:2.0.1.1.1
+&idno=17.  Contractor, for itself and its employees, agents, and subcontractors, agrees to be bound by the prohibitions of § 200.735-3(b)(1) &
+(b)(7) and the terms set forth herein.  Contractor, for itself and its employees, agents, and subcontractors, agrees not to disclose to any
+unauthorized person any confidential or non-public documents or information to which Contractor or its employees, agents, or subcontractors have
+access in the performance of duties under the underlying Contract.
+
+D.  In accordance with the SEC Regulation at 17 C.F.R. § 200.735-3(b)(1), the Contractor, for itself and its employees, agents, and
+subcontractors, agrees not to engage, directly or indirectly, in any personal business transaction or private arrangement for personal profit
+the opportunity for which arises because of performance under the Contract, or that is based upon confidential or non-public information which
+the Contractor and its employees, agents, and subcontractors gain in the course of performance under the Contract.
+
+E.  In accordance with the SEC Regulation at 17 C.F.R. § 200.735-3(b)(7)(i), the Contractor, for itself and its employees, agents, and
+subcontractors, agrees not to disclose to any unauthorized person or release in advance of authorization for its release, any confidential or
+non-public document or information : (1) protected from disclosure under 5 U.S.C. §§ 552, 552a, and 552b or any rules or regulations of the SEC;
+or (2) in circumstances where the SEC has determined to accord such information confidential treatment, unless the SEC authorizes the disclosure
+of such information as provided for under 17 C.F.R. § 200.735-3(b)(7)(ii).  Confidential and non-public information shall be shared with
+authorized persons only on a need-to-know basis.
+
+F.  For purposes of this Agreement, an "unauthorized person" is anyone other than (1) an officer or employee of the SEC, (2) an employee of the
+Contractor who has executed a non-disclosure agreement with the SEC under the Contract, (3) an employee of a subcontractor of the Contractor who
+has executed a non-disclosure agreement with the SEC under the Contract, and whose employer advises Contractor as such, or (4) any individual
+that the Contracting Officer expressly designates as a person authorized to receive the confidential or non-public information at issue.
+
+G.  Contractor acknowledges that other federal laws and regulations, including but not limited to the following, may also prohibit the
+disclosure of confidential and non-public information received pursuant to the Contract:  the Government Trade Secrets Act (18 U.S.C. § 1905)
+(available at http://assembler.law.cornell.edu/ uscode/html/uscode18/usc_sec_18_00001905----000-.html); 18 U.S.C. § 641 (theft of public
+property or records) (available at http://assembler.law.cornell.edu/ uscode/html/uscode18/usc_sec_18_00000641----000-.html); Rule 122 (17 C.F.R.
+§ 230.122) under the Securities Act of 1933 (available at http://frwebgate.access.gpo.gov/cgi-bin/get-
+fr.cgi?TITLE=17&PART=230&SECTION=122&TYPE=PDF); Section 24(b) of the Securities Exchange Act of 1934 (15 U.S.C. § 78x) (available at
+http://www.sec.gov/about/laws/sea34.pdf) and Rules 0-4 (17 C.F.R. § 240.0-4) (available at http://frwebgate.access.gpo.gov/cgi-bin/get-
+cfr.cgi?TITLE=17&PART=240&SECTION=0-4&TYPE=PDF), 10b-5 (17 C.F.R. § 240.10b-5) (available at http://frwebgate.access.gpo.gov/cgi-bin/get-
+cfr.cgi?TITLE=17&PART =240&SECTION=10b-5&TYPE=PDF), and 24b-2 (17 C.F.R. § 240.24b-2) (available at http://frwebgate.access.gpo.gov/cgi-bin/get-
+cfr.cgi?TITLE=17&PART=240&SECTION=24b-2&TYPE=PDF), thereunder; Section 22(c) of the Public Utility Holding Company Act of 1935 (15 U.S.C. § 79y)
+(available at http://www.sec.gov/about/laws/puhca35.pdf) and Rule 104 thereunder (17 C.F.R. § 250.104) (available at
+http://frwebgate.access.gpo.gov/cgi-bin/get-cfr.cgi?TITLE=17&PART=250&SECTION=104&TYPE=PDF); Section 45(a) of the Investment Company Act (15
+U.S.C. § 80a-44) (available at http://www.sec.gov/about/ laws/ica40.pdf); and Section 210(b) of the Investment Advisers Act of 1940 (15 U.S.C. §
+80b-10) (available at http://www.sec.gov/about/laws/iaa40.pdf).  Contractor is aware of such laws and regulations and agrees to comply with the
+standards for protecting confidential and non-public information in accordance with the laws and regulations applicable to the specific
+information to which it has access.
+
+H.  If there is doubt as to whether a document or information is confidential or non-public, or whether a proposed recipient of a document or
+information is an unauthorized person, the Contractor shall request clarification from the Contracting Officer.
+
+I.  The Contractor acknowledges that it has received and read the SEC Regulations 17 C.F.R. § 200.735-3(b)(1) & (b)(7) and has referred any
+questions regarding those Regulations or this Agreement to the Contracting Officer.
+
+J.  The Contractor acknowledges that disclosure of confidential or non-public information in violation of this agreement could subject the
+Contractor to administrative, civil, or criminal action, as appropriate, under the laws and regulations applicable to the information involved.
+Violation of this Agreement may also constitute a ground for termination of the Contractor’s underlying Contract with the SEC, and/or suspension
+and debarment from receiving future federal contracts.  Contractor understands that the United States Government may seek any remedy available
+to it to enforce this Agreement, including but not limited to application for a court order prohibiting disclosure of information in violation
+of this Agreement.
+
+K.  Contractor hereby assigns to the United States Government all royalties, remunerations, and emoluments that have resulted, will result, or
+may result from any personal business transaction inconsistent with the terms of this Agreement or any disclosure, publication, or revelation of
+confidential or non-public information inconsistent with the terms of this Agreement.
+
+L.  Each provision of this Agreement is severable.  If a court should hold any provision of this Agreement unenforceable, all other provisions
+shall remain in full force and effect.
+
+M.  Contractor acknowledges that all conditions and obligations created by this Agreement apply during the performance of the underlying SEC
+Contract and thereafter with respect to information accessed by Contractor that remains confidential or non-public.
+
+N.  The person signing this Agreement on behalf of Contractor warrants that he or she has the authority to enter into this Agreement on behalf
+of Contractor.
+
+
+Contractor Name:                                         by
+
+Signature & Title:
+
+Date:
+This Agreement was accepted by the undersigned on behalf of the SEC as a prior condition of conditional access to confidential and non-public
+information.
+
+_________________________________     ________________________
+SEC Representative                           Date
+
+PROVIDE A SIGNED COPY TO LINDA BAIER PRIOR TO COMMENCEMENT OF WORK
+                                                                   ATTACHMENT 2
+                                                       NON-DISCLOSURE AGREEMENT (EMPLOYEE)
+
+A.  Intending to be legally bound, I, ______________________________, hereby accept the obligations contained in this Agreement in consideration
+of being granted conditional access to SEC confidential and non-public information.  For purposes of this Agreement, “confidential or non-public
+information,” is defined as information generated by or in the possession of the SEC that is commercially valuable, trade secret, market
+sensitive, proprietary, related to an SEC enforcement or examination matter, subject to privilege, protected by the Privacy Act (5 U.S.C. §
+552a), or otherwise deemed confidential or non-public by an SEC division director or office head, and is not otherwise available to the public.
+This definition applies to confidential or non-public information in any form, including documents, electronic mail, computer files,
+conversations, and audio or video recordings.  For purposes of this Agreement, examples of confidential or non-public information include
+corporate financial data provided to the SEC that has not been made public; SEC planned or contemplated courses of action regarding SEC
+examinations, investigations, and enforcement actions; and SEC personnel information covered by the Privacy Act, 5 U.S.C. § 552a.
+
+B.  I acknowledge that any conditional access to SEC confidential and non-public information granted to me is for the sole purpose of performing
+obligations under SEC Contract SECHQ1-_____________ (the “underlying Contract”).  This Agreement does not grant me access to information or
+materials that the SEC determines in its sole discretion is inappropriate for disclosure.
+
+C.  I acknowledge that the SEC Regulation Concerning Conduct of Members and Employees and Former Members and Employees of the Commission
+expressly prohibits the improper use and unauthorized disclosure of confidential or non-public information or documents.  See 17 C.F.R. §
+200.735-3(b)(1) & (b)(7) available at http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node= 17:2.0.1.1.1&idno=17.  I
+agree to be bound by the prohibitions of § 200.735-3(b)(1) & (b)(7) and the terms set forth herein.  I agree not to disclose to any unauthorized
+person any confidential or non-public documents or information to which I have access in the performance of duties under the underlying
+Contract.
+
+D.  In accordance with the SEC Regulation at 17 C.F.R. § 200.735-3(b)(1), I agree not to engage, directly or indirectly, in any personal
+business transaction or private arrangement for personal profit the opportunity for which arises because of my performance under the Contract,
+or that is based upon confidential or non-public information which I gain in the course of my performance under the Contract.
+
+E.  In accordance with the SEC Regulation at 17 C.F.R. § 200.735-3(b)(7)(i), I agree not to disclose to any unauthorized person or release in
+advance of authorization for its release, any confidential or non-public document or information:  (1) protected from disclosure under 5 U.S.C.
+§§ 552, 552a, and 552b or any rules or regulations of the SEC; or (2) in circumstances where the SEC has determined to accord such information
+confidential treatment, unless the SEC authorizes the disclosure of such information as provided for under 17 C.F.R. § 200.735-3(b)(7)(ii).
+Confidential and non-public information shall be shared with authorized persons only on a need-to-know basis.
+
+F.  For purposes of this Agreement, an "unauthorized person" is anyone other than (1) an officer or employee of the SEC, (2) an employee of the
+prime contractor who has executed a non-disclosure agreement with the SEC under the Contract, (3) an employee of a subcontractor who has
+executed a non-disclosure agreement with the SEC under the Contract, and whose employer advises the prime contractor as such, or (4) any
+individual that the Contracting Officer expressly designates as a person authorized to receive the confidential or non-public information at
+issue.
+
+G.  I acknowledge that other federal laws and regulations, including but not limited to the following, may also prohibit the disclosure of
+confidential and non-public information received pursuant to the Contract:  the Government Trade Secrets Act (18 U.S.C. § 1905) (available at
+http://assembler.law.cornell.edu/ uscode/html/uscode18/usc_sec_18_00001905----000-.html); 18 U.S.C. § 641 (theft of public property or records)
+(available at http://assembler.law.cornell.edu/uscode/html/uscode18/usc_sec_18_00000641----000-.html); Rule 122 (17 C.F.R. § 230.122) under the
+Securities Act of 1933 (available at http://frwebgate.access.gpo.gov/cgi-bin/get-cfr.cgi?TITLE=17&PART=230&SECTION=122&TYPE=PDF); Section 24(b)
+of the Securities Exchange Act of 1934 (15 U.S.C. § 78x) (available at http://www.sec.gov/about/laws/sea34.pdf)and Rules 0-4 (17 C.F.R. § 240.0-
+4) (available at http://frwebgate.access.gpo.gov/cgi-bin/get-cfr.cgi?TITLE=17&PART=240&SECTION=0-4&TYPE=PDF), 10b-5 (17 C.F.R. § 240.10b-5)
+(available at http://frwebgate.access.gpo.gov/cgi-bin/get-cfr.cgi?TITLE=17&PART=240&SECTION=10b-5&TYPE=PDF), and 24b-2 (17 C.F.R. § 240.24b-2)
+(available at http://frwebgate.access.gpo.gov/cgi-bin/get-cfr.cgi?TITLE=17&PART=240&SECTION=24b-2&TYPE=PDF), thereunder; Section 22(c) of the
+Public Utility Holding Company Act of 1935 (15 U.S.C. § 79y) (available at http://www.sec.gov/about/laws/puhca35.pdf) and Rule 104 thereunder
+(17 C.F.R. § 250.104) (available at http://frwebgate.access.gpo.gov/cgi-bin/get-cfr.cgi?TITLE=17&PART=250& SECTION=104&TYPE=PDF); Section 45(a)
+of the Investment Company Act (15 U.S.C. § 80a-44) (available at http://www.sec.gov/about/laws/ica40.pdf); and Section 210(b) of the Investment
+Advisers Act of 1940 (15 U.S.C. § 80b-10) (available at http://www.sec.gov/about/laws/iaa40.pdf).  I am aware of such laws and regulations and
+agree to comply with the standards for protecting confidential and non-public information in accordance with the laws and regulations applicable
+to the specific information to which I have access.
+
+H.  If there is doubt as to whether a document or information is confidential or non-public, or whether a proposed recipient of a document or
+information is an unauthorized person, I shall request clarification from the Contracting Officer.
+
+I.  I acknowledge that I have read the SEC Regulations 17 C.F.R. § 200.735-3(b)(1) & (b)(7) and have referred any questions regarding those
+Regulations or this Agreement to the Contracting Officer.
+
+J.  I acknowledge that disclosure of confidential or non-public information in violation of this agreement could subject me to administrative,
+civil, or criminal action, as appropriate, under the laws and regulations applicable to the information involved.  Violation of this Agreement
+may also constitute a ground for termination of the Contractor’s underlying Contract with the SEC, and/or suspension and debarment from
+receiving future federal contracts.  I understand that the United States Government may seek any remedy available to it to enforce this
+Agreement, including but not limited to application for a court order prohibiting disclosure of information in violation of this Agreement.
+
+K.  I hereby assign to the United States Government all royalties, remunerations, and emoluments that have resulted, will result, or may result
+from any personal business transaction inconsistent with the terms of this Agreement or any disclosure, publication, or revelation of
+confidential or non-public information inconsistent with the terms of this Agreement.
+
+L.  Each provision of this Agreement is severable.  If a court should hold any provision of this Agreement unenforceable, all other provisions
+shall remain in full force and effect.
+
+M.  I acknowledge that all conditions and obligations created by this Agreement apply during the performance of the underlying SEC Contract and
+thereafter with respect to information that remains confidential or non-public.
+
+
+Employee Name:
+
+
+Signature:
+
+
+Date:
+
+
+This Agreement was accepted by the undersigned on behalf of the SEC as a prior condition of conditional access to confidential and non-public
+information.
+
+
+_________________________________     ________________________
+SEC Representative                           Date
+
+PROVIDE A SIGNED COPY TO LINDA BAIER PRIOR TO COMMENCEMENT OF WORK
+                                                                   ATTACHMENT 3
+
+                                                              Conflicts Of Interest
+
+
+As part of its review, the SEC will consider each Offeror for actual or potential conflicts of interest between the Offeror and the SEC’s
+regulatory mission.  Should actual or potential conflicts impair the prospect of successful work by the Offeror, or acceptance of their work
+under this contract, the Offeror may not be eligible for award.  To that end, Offerors are asked to provide the following information about the
+business unit of your firm that you propose to work on this contract, the employees proposed to work on the contract, and any subcontractors and
+their employees you propose to assist in the work:
+
+Note: companies and entities registered with the Public Company Accounting Oversight Board (PCAOB) are excluded from this acquisition.
+
+      A.    Identify if you are registered with the PCAOB.
+
+
+      B.    Identify any pending civil or criminal investigations of which you are aware by any Federal, State or foreign entities.  Identify
+pending civil or criminal investigations by such entities of clients on matters audited or consulted on of which you are aware.
+
+      C.    Identify any disciplinary, civil or criminal proceedings or actions during the last three years by any Federal, State or foreign
+entities and the results of those proceedings of which you are aware.
+
+      D.    Disclose whether any audits that you have performed over the last three years have been revised after issuance, or whether any
+restatements of your audit results have occurred.
+
+      E.    Provide a copy of your most recent peer review report and Comment Letter (if any).
+
+
+      F.    Identify any actual or potential conflicts of which you are aware that are not addressed or identified in response to paragraphs A
+through E above.
+
+
+If any of the information provided in this section you believe is non-public or confidential, each Offeror may request confidential treatment by
+the Commission pursuant to the procedures set forth at 17 C.F.R § 200.83.
+
+
+
+
+
+
+-----------------------
+[1] That is, Section 208
+

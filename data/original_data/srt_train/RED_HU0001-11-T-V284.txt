@@ -1,0 +1,420 @@
+
+
+The Uniformed Services University of the Health Sciences (USUHS) located on the National Naval Medical Center (NNMC) in Bethesda, MD intends to procure, on a competitive basis, Server Virtualization Software Licenses as required by our Academic Technology Department (ATD).  This is a combined synopsis/solicitation for commercial items in accordance with the format in FAR Subpart 12.6, as supplemented with additional information included in this notice. This announcement constitutes the only solicitation; quotes are being requested and a written solicitation will not be issued. This is a request for quotes (RFQ) for commercial items in accordance with the procedures of FAR Part 12 – Acquisition of Commercial Items and FAR Part 13 – Simplified Acquisition Procedures.  It is the responsibility of the contractor to monitor FedBizOpps () for the issuance of any amendments to the solicitation. This RFQ incorporates all provisions and clauses in effect through Federal Acquisition Circular (FAC) 05-53 (August 4, 2011)
+
+USU requests a quote for the following:
+
+Server Virtualization Licenses
+
+
+
+Introduction:
+
+ATD operates IBM HS-22 blade servers in support of Oracle 11, Sakai, Kuali Rice, Kuali COEUS, UPortal, UMobile, JASIG CAS, research applications and Red Hat Directory.  Applications are operated on Red Hat and Windows operating systems.  The USU seeks to increase the efficiency of its available hardware platforms to support its mission while minimizing future procurements of hardware.
+
+
+
+The USU requests pricing for software to support the server virtualization of 8, 12, 15 and 20 servers.  See Quote Format below for additional information.
+
+
+
+Specification Requirements:
+
+The offeror must address in a technical proposal how the software supports the following requirements:  
+
+Management and Allocation
+
+Must be capable of managing resources (processor, memory, storage, and network connectivity) across system enclosures and across physical locations within a single resource pool.
+
+Must be capable of creating and managing multiple resource pools from a single interface.
+
+Must be capable of managing and utilizing differing blade and enclosure configurations within the same resource pool (see Compatibility & Redundancy below).
+
+Must offer a management platform for creation of virtual machines and allocation of hardware resources, including priority-based 'surge' capacity for high-demand situations.
+
+Must offer a graphical interface for management of all virtual machines / servers / virtualized hardware.
+
+Must offer hardware status reporting, including at a minimum:
+
+Graphical display of hardware status (up / down).
+
+Overall and per-virtual machine processor load / utilization.
+
+Overall and per-virtual machine memory load / utilization.
+
+Overall and per-virtual machine storage load / utilization.
+
+Overall and per-virtual machine network load / utilization.
+
+SNMP reporting of system utilization / state information.
+
+Email notification of hardware and virtual machine outage.
+
+Must offer a command line interface allowing for scripting of system operations (including the deployment of new virtual instances).
+
+Must offer the ability to automatically deploy new machine instances when the virtual machines within a pool are under heavy load.
+
+Must be capable of dynamic resource reallocation (up to the degree supported by the hosted operating system) to reapportion hardware resources as needed by existing virtual machines.
+
+Storage Management
+
+Must be capable of managing and allocating storage area network (SAN) space across a range of systems, including the pooling of systems from different vendors.
+
+Must not interfere with virtual machines' ability to connect to / attach / mount (at normal speeds) SAN systems which are not managed by the virtualization solution.
+
+Hosted Virtual Machines
+
+Must work transparently and simultaneously with various flavors of Linux and Windows, to at a minimum include:
+
+Windows Server 2008 (x32 and x64)
+
+Windows Server 2008 R2 (x32 and x64)
+
+Windows Server 2003 x32
+
+Red Hat Enterprise Linux 5.6
+
+Red Hat Enterprise Linux 6.1
+
+Must be able to deploy new virtual machines / instances from a template or image.
+
+Must provide a tool for physical to virtual machine migration.
+
+Compatibility & Redundancy
+
+Must fully support IBM BladeCenter S storage and networking systems.
+
+Must fully support IBM HS22 blade servers.
+
+Must fully support resource pooling with existing offsite datacenter(s) managed by VMWare vSphere and allow for a unified management interface.
+
+Must offer automated notification of hardware failure within the resource pool.
+
+Must offer automated notification of virtual machine failure including the ability to automatically start a new instance of the machine.
+
+Priority will be given to a platform which efficiently supports a wide range of hardware configurations.
+
+Quote Format:
+
+
+
+Based on the availability of funds USU will award a single firm fixed price contract to an offeror for one of the quantities of licenses listed above.
+
+
+
+
+
+
+
+Evaluation Factors:
+
+The government will award one firm-fixed-price (FFP) contract resulting from this solicitation to the responsible offeror whose offer, conforming to this announcement, will be most advantageous and represent the best value to the government considering the combination of technical capabilities and price.  For evaluation purposes the software’s ability to meet the technical requirements is more important than price.
+
+
+
+Requirements:
+
+
+
+To be eligible for contract award, a contractor must be registered with the Central Contractor Registration (CCR) database. For instructions on registering with CCR please see the CCR website at .
+
+Deadlines:
+
+Quotes are due by 5:00 PM EST, August 24, 2011.  Quotes must be submitted via email to .   All questions must be emailed by 17 August 2011 at 5:00 pm EST.  All answers to questions will be posted as an amendment to this RFQ.
+
+
+
+PROVISIONS AND CLAUSES
+
+Provisions:
+
+52.252-1 Solicitation Provisions Incorporated by Reference 
+
+Solicitation Provisions Incorporated by Reference (Feb 1998) 
+
+This solicitation incorporates one or more solicitation provisions by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. The offeror is cautioned that the listed provisions may include blocks that must be completed by the offeror and submitted with its quotation or offer. In lieu of submitting the full text of those provisions, the offeror may identify the provision by paragraph identifier and provide the appropriate information with its quotation or offer. Also, the full text of a solicitation provision may be accessed electronically at this/these address(es): 
+
+https://www.acquisition.gov/Far/
+http://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html
+_____________________________________________
+[Insert one or more Internet addresses] 
+
+(End of provision) 
+
+52.212-1  Instructions to Offerors—Commercial Items
+
+52.212-3  Offeror Representations and Certifications—Commercial Items
+
+52.212-2  Evaluation—Commercial Items
+
+Evaluation—Commercial Items (Jan 1999) 
+
+(a) The Government will award a contract resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation will be most advantageous to the Government, price and other factors considered. The following factors shall be used to evaluate offers: 
+
+Technical Specifications
+
+Price
+
+
+
+(b) Options. The Government will evaluate offers for award purposes by adding the total price for all options to the total price for the basic requirement. The Government may determine that an offer is unacceptable if the option prices are significantly unbalanced. Evaluation of options shall not obligate the Government to exercise the option(s).
+
+
+
+ (End of provision) 
+
+Clauses:
+
+52.252-2  Clauses Incorporated by Reference
+
+Clauses Incorporated By Reference (Feb 1998) 
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at this/these address(es): 
+
+https://www.acquisition.gov/Far/
+http://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html
+_____________________________________________
+[Insert one or more Internet addresses] 
+
+(End of clause) 
+
+52.204-7  Central Contractor Registration
+
+252.204-7004  Alternate A, Central Contractor Registration
+
+52.212-4  Contract Terms and Conditions—Commercial Items
+
+52.212-5  Contract Terms and Conditions Required to Implement Statutes or Executive Orders—Commercial Items
+
+Contract Terms and Conditions Required to Implement Statutes or Executive Orders—Commercial Items (Dec 2010) 
+
+(a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract by reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items: 
+
+(1) , Combating Trafficking in Persons (Feb 2009) (). 
+
+___Alternate I (Aug 2007) of  (). 
+
+(2) , Protest After Award (Aug 1996) (). 
+
+(3) , Applicable Law for Breach of Contract Claim (Oct 2004) (Pub. L. 108-77, 108-78). 
+
+(b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: 
+
+[Contracting Officer check as appropriate.] 
+
+__ (1) , Restrictions on Subcontractor Sales to the Government (Sept 2006), with Alternate I (Oct 1995) ( and ). 
+
+__ (2) , Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 ()). 
+
+__ (3) , Whistleblower Protections under the American Recovery and Reinvestment Act of 2009 (June 2010) (Section 1553 of Pub. L. 111-5). (Applies to contracts funded by the American Recovery and Reinvestment Act of 2009.) 
+
+_X_ (4) , Reporting Executive Compensation and First-Tier Subcontract Awards (Jul 2010) (Pub. L. 109-282) (). 
+
+__ (5) , American Recovery and Reinvestment Act—Reporting Requirements (Jul 2010) (Pub. L. 111-5). 
+
+__ (6) , Protecting the Government’s Interest When Subcontracting with Contractors Debarred, Suspended, or Proposed for Debarment (DEC 2010) ( note). (Applies to contracts over $30,000). (Not applicable to subcontracts for the acquisition of commercially available off-the-shelf items). 
+
+__ (7) , Notice of Total HUBZone Set-Aside (Jan 1999) (). 
+
+_X_ (8) , Notice of Price Evaluation Preference for HUBZone Small Business Concerns (July 2005) (if the offeror elects to waive the preference, it shall so indicate in its offer) (). 
+
+__ (9) [Reserved] 
+
+__ (10)(i)  , Notice of Total Small Business Set-Aside (June 2003) (). 
+
+__ (ii) Alternate I (Oct 1995) of . 
+
+__ (iii) Alternate II (Mar 2004) of . 
+
+__ (11)(i)  , Notice of Partial Small Business Set-Aside (June 2003) (). 
+
+__ (ii) Alternate I (Oct 1995) of . 
+
+__ (iii) Alternate II (Mar 2004) of . 
+
+__ (12) , Utilization of Small Business Concerns (Dec 2010) ( and (3)). 
+
+__ (13)(i)  , Small Business Subcontracting Plan (Oct 2010) (). 
+
+__ (ii) Alternate I (Oct 2001) of . 
+
+__ (iii) Alternate II (Oct 2001) of . 
+
+__ (iv) Alternate III (Jul 2010) of . 
+
+__ (14) , Limitations on Subcontracting (Dec 1996) (). 
+
+__ (15) , Liquidated Damages—Subcon-tracting Plan (Jan 1999) (). 
+
+__ (16)(i)  , Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns (Oct 2008) () (if the offeror elects to waive the adjustment, it shall so indicate in its offer). 
+
+__ (ii) Alternate I (June 2003) of . 
+
+__ (17) , Small Disadvantaged Business Participation Program—Disadvantaged Status and Reporting (Apr 2008) (Pub. L. 103-355, section 7102, and ). 
+
+__ (18) , Small Disadvantaged Business Participation Program— Incentive Subcontracting (Oct 2000) (Pub. L. 103-355, section 7102, and ). 
+
+__ (19) , Notice of Total Service-Disabled Veteran-Owned Small Business Set-Aside (May 2004) (). 
+
+_X_ (20)  , Post Award Small Business Program Rerepresentation (Apr 2009) (). 
+
+_X_ (21) , Convict Labor (June 2003) (E.O. 11755). 
+
+_X_ (22) , Child Labor—Cooperation with Authorities and Remedies (Jul 2010) (E.O. 13126). 
+
+_X_ (23) , Prohibition of Segregated Facilities (Feb 1999). 
+
+_X_ (24) , Equal Opportunity (Mar 2007) (E.O. 11246). 
+
+__ (25) , Equal Opportunity for Veterans (Sep 2010)(). 
+
+_X_ (26) , Affirmative Action for Workers with Disabilities (Oct 2010) (). 
+
+__ (27) , Employment Reports on Veterans, (Sep 2010) (). 
+
+__ (28) , Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496). 
+
+__ (29) , Employment Eligibility Verification (Jan 2009). (Executive Order 12989). (Not applicable to the acquisition of commercially available off-the-shelf items or certain other types of commercial items as prescribed in .) 
+
+__ (30)(i)  , Estimate of Percentage of Recovered Material Content for EPA–Designated Items (May 2008) (). (Not applicable to the acquisition of commercially available off-the-shelf items.) 
+
+__ (ii) Alternate I (May 2008) of  (). (Not applicable to the acquisition of commercially available off-the-shelf items.) 
+
+__ (31) , Energy Efficiency in Energy-Consuming Products (Dec 2007) (). 
+
+__ (32)(i)  , IEEE 1680 Standard for the Environmental Assessment of Personal Computer Products (Dec 2007) (E.O. 13423). 
+
+__ (ii) Alternate I (Dec 2007) of . 
+
+_X_ (33) , Contractor Policy to Ban Text Messaging While Driving (Sep 2010) (E.O. 13513). 
+
+__ (34) , Buy American Act—Supplies (Feb 2009) (). 
+
+__ (35)(i)  , Buy American Act—Free Trade Agreements—Israeli Trade Act (June 2009) (,  note,  note,  note, Pub. L. 108-77, 108-78, 108-286, 108-302, 109-53, 109-169, 109-283, and 110-138). 
+
+__ (ii) Alternate I (Jan 2004) of . 
+
+__ (iii) Alternate II (Jan 2004) of . 
+
+__ (36) , Trade Agreements (Aug 2009) (, et seq.,  note). 
+
+_X_ (37) , Restrictions on Certain Foreign Purchases (June 2008) (E.O.’s, proclamations, and statutes administered by the Office of Foreign Assets Control of the Department of the Treasury). 
+
+__ (38) , Notice of Disaster or Emergency Area Set-Aside (Nov 2007) (). 
+
+__ (39) , Restrictions on Subcontracting Outside Disaster or Emergency Area (Nov 2007) (). 
+
+__ (40) , Terms for Financing of Purchases of Commercial Items (Feb 2002) (, ). 
+
+__ (41) , Installment Payments for Commercial Items (Oct 1995) (, ). 
+
+__ (42) , Payment by Electronic Funds Transfer—Central Contractor Registration (Oct 2003) (). 
+
+__ (43) , Payment by Electronic Funds Transfer—Other than Central Contractor Registration (May 1999) (). 
+
+__ (44) , Payment by Third Party (Feb 2010) (). 
+
+__ (45) , Privacy or Security Safeguards (Aug 1996) (). 
+
+__ (46)(i)  , Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) ( and ). 
+
+__ (ii) Alternate I (Apr 2003) of . 
+
+(c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: 
+
+[Contracting Officer check as appropriate.] 
+
+__ (1) , Service Contract Act of 1965 (Nov 2007) (, et seq.). 
+
+__ (2) , Statement of Equivalent Rates for Federal Hires (May 1989) ( and , et seq.). 
+
+__ (3) , Fair Labor Standards Act and Service Contract Act—Price Adjustment (Multiple Year and Option Contracts) (Sep 2009) ( and , et seq.). 
+
+__ (4) , Fair Labor Standards Act and Service Contract Act—Price Adjustment (Sep 2009) ( and , et seq.). 
+
+__ (5) , Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment—Requirements (Nov 2007) (, et seq.). 
+
+__ (6) , Exemption from Application of the Service Contract Act to Contracts for Certain Services—Requirements (Feb 2009) (, et seq.). 
+
+__ (7) , Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247). 
+
+__ (8) , Accepting and Dispensing of $1 Coin (Sept 2008) (). 
+
+(d)  Comptroller General Examination of Record. The Contractor shall comply with the provisions of this paragraph (d) if this contract was awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at , Audit and Records—Negotiation. 
+
+(1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right to examine any of the Contractor’s directly pertinent records involving transactions related to this contract. 
+
+(2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination, audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR , Contractor Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records relating to the work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such appeals, litigation, or claims are finally resolved. 
+
+(3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary course of business or pursuant to a provision of law. 
+
+(e)(1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c), and (d) of this clause, the Contractor is not required to flow down any FAR clause, other than those in this paragraph (e)(1) in a subcontract for commercial items. Unless otherwise indicated below, the extent of the flow down shall be as required by the clause— 
+
+(i) , Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 ()). 
+
+(ii) , Utilization of Small Business Concerns (Dec 2010) ( and (3)), in all subcontracts that offer further subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $650,000 ($1.5 million for construction of any public facility), the subcontractor must include  in lower tier subcontracts that offer subcontracting opportunities. 
+
+(iii) [Reserved] 
+
+(iv) , Equal Opportunity (Mar 2007) (E.O. 11246). 
+
+(v) , Equal Opportunity for Veterans (Sep 2010) (). 
+
+(vi) , Affirmative Action for Workers with Disabilities (Oct 2010) (). 
+
+(vii) , Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496). Flow down required in accordance with paragraph (f) of FAR clause . 
+
+(viii) , Service Contract Act of 1965 (Nov 2007) (, et seq.). 
+
+(ix) , Combating Trafficking in Persons (Feb 2009) (). 
+
+___Alternate I (Aug 2007) of  (). 
+
+(x) , Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment-Requirements (Nov 2007) (, et seq.). 
+
+(xi) , Exemption from Application of the Service Contract Act to Contracts for Certain Services-Requirements (Feb 2009) (, et seq.). 
+
+(xii) , Employment Eligibility Verification (Jan 2009). 
+
+(xiii) , Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247). Flow down required in accordance with paragraph (e) of FAR clause . 
+
+(xiv) , Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) ( and ). Flow down required in accordance with paragraph (d) of FAR clause . 
+
+(2) While not required, the contractor may include in its subcontracts for commercial items a minimal number of additional clauses necessary to satisfy its contractual obligations. 
+
+52.217-6   Option for Increased Quantity: The Government may increase the quantity of supplies called for in the Schedule at the unit price specified. The Contracting Officer may exercise the option by written notice to the Contractor within [insert in the clause the period of time in which the Contracting Officer has to exercise the option]. Delivery of the added items shall continue at the same rate as the like items called for under the contract, unless the parties otherwise agree.
+
+(End of clause) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Number of Servers
+
+Price per server
+
+Extended Price
+
+8
+
+
+
+
+
+*Option to add up to 12 additional licenses 
+
+
+

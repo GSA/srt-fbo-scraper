@@ -1,0 +1,1184 @@
+
+
+DRAFT
+
+PERFORMANCE WORK STATEMENT (PWS)
+
+
+
+For
+
+
+
+MAINTENANCE AND DEVELOPMENT
+
+
+
+Of
+
+
+
+Hazardous Communication/Alexandria
+
+
+
+
+
+14 March 2011
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		       AIR FORCE MATERIEL COMMAND (AFMC)
+
+75TH AIR BASE WING (75 ABW)
+
+COMMUNICATIONS AND INFORMATION DIRECTORATE 
+
+(75 ABW/SC)
+
+
+
+						
+
+PERFORMANCE-BASED WORK STATEMENT
+
+TABLE OF CONTENTS 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Description of Services
+
+The objective of this effort is to provide the most up-to-date regulations and guidance to comply with the Environmental Protection Agency (EPA), Occupational Safety & Health Administration (OSHA), Federal, State, local, and union standards and to provide production managers/supervisors/employees with a repository of information necessary to perform their day-to-day responsibilities at Hill Air Force Base (HAFB), Tinker AFB, Robins AFB, and other AFMC and Air Force locations.  This effort capitalizes upon the development work already accomplished in previous phases of the below listed capabilities that are operating at Hill AFB and other AFMC locations.  This PWS identifies and describes the requirements for the software sustainment, maintenance, and development activities, database administration, and system administration as identified in the tasks below.  
+
+
+
+ The contractor shall have expertise as defined in appendix B.  Contractor personnel may be required to work with government employee(s) and/or on their own.  Contractor services shall require a physical presence at HAFB.  The government shall determine the actual work location of each individual or group.  A designated Quality Assurance Personnel (QAP) will evaluate all contracted efforts.   
+
+Overview
+
+Hazardous Communication/Alexandria is a web-based interface that supplies workers with information about the hazardous materials they come in contact with while maintaining the various aircraft. It also supplies various managers and supervisors with the information they need to know to protect employees from exposure to materials that they have not been trained to handle. The interface for HazCom/Alexandria is written in C# using a the ASP.Net platform. It utilizes HTML and CSS for formatting. Portions of the site also utilize Extensible Markup Language (XML) and Ajax. The interface is supported by a SQL Server database. 
+
+
+
+The contractor shall provide 75 ABW/SCP and its associated subordinate units with Information Technology (IT) solution services, including, but not limited to, physical and virtual security of network and associated systems, labor, material, expertise, management, transportation, and facilities, as required, to perform tasks in accordance with (IAW) this Performance Work Statement (PWS).  In addition, common requirements associated with network management and standard IT practices and IT systems upgrade and/or maintenance shall be required.
+
+
+
+The goal of this effort is to support the mission of the Department of Defense, the Air Force, Air Force Materiel Command (AFMC), and HAFB by applying information technology components to meet present and future knowledge-management requirements.  This goal is driven by the increasing reliance on computer information systems to provide linkage between all elements of the work force, work processes, information content, and decision-making, as well as, the requirement to manage, store, retrieve, manipulate, and process key data necessary to the efficient and effective execution of operations.  75 ABW/SC’s mission is to be a technology, architecture, and development agent for Information Technology and is directly involved with the initial analysis and design, rapid prototype programming, implementation, testing, maintenance, and sustainment of automated business solutions at HAFB. The contractor shall ensure that all analysis design, development and maintenance tasks shall be completed on time in accordance with normal business hours.  
+
+
+
+  Objective
+
+The objective of the Maintenance and Development of HazCom/Alexandria is to define the IT services required by the 75 ABW/SC to accomplish their mission.  Services required under this effort. The contractor shall provide all personnel, supervision, and other items and services necessary to perform the services as defined in the PWS.  Responsibilities will focus on activities beyond the capability of the 75 ABW/SC.
+
+
+
+The objective of this effort is to provide contract personnel to perform a specific function outside the capabilities of existing organic technical support at all locations identified by the government.  This is a comprehensive Performance Work Statement, encompassing requirements for the majority of the non-organic technical workers necessary to accomplish the mission and goals of Air Force IT.  
+
+  Scope
+
+The contractor shall work with 75 ABW/SC to support the functional capabilities of the specific services in the listed tasks including software sustainment, maintenance, and development (possible enhancement of existing HazCom/Alexandria) activities associated with HazCom/Alexandria.  This shall include updates as required to any technical documents and any new documentation.  
+
+
+
+75 ABW/SC provides database administration, software development, and system administration support.  The nature of the work requires skilled individuals with knowledge of Air Force standard IT technologies, data systems, advanced programming expertise in state of the art development technologies and concepts.  
+
+
+
+  General Requirements:
+
+The contractor shall possess and perform with expertise, as defined in Appendix B, in the performance and completion of all requirements of this PWS.
+
+
+
+  Hazardous Communication/Alexandria
+
+HazCom allows users to personalize and tailor required information to meet specific needs, such as: worker access to work area hazards, 	emergency response, personal protection information, safety, environmental  requirements, spill requirements, and all future requirements that OSHA, EPA, federal, state, local, and union deem necessary and mandatory.  Alexandria Handbook provides information concerning administration, labor, personnel, safety and work related issues, concerns, and resolutions; it also serves as liaison between employee and upper management. It provides supervisors and employees with the regulations, technical data, process orders (POs), and operating instructions (OIs), as well as, corresponding policy letters for all the weapon systems A-10, C-130, F-16, F-22 and any future systems.
+
+
+
+The contractor shall provide systems functionality expertise, as defined in Appendix B, to meet the user requirements.  This shall include the continued deployment of the HazCom/Alexandria to the various depots in AFMC as well as other Air Force bases as requested by the Air Force.  The contractor shall work with 75 ABW/SC to support the functional capabilities of the HazCom/Alexandria including software sustainment, maintenance and development activities, database administration, and system administration. The Contractor shall also convert data from either electronic or paper versions into required output in compliance with given direction  
+
+
+
+This effort capitalizes upon the development work already accomplished in previous phases of the below listed capabilities.  The Government will provide copies of existing documentation (i.e. User Manuals, Programmers Manual, Test Evaluation Master Plan, etc) and source code developed during previous phases to the contractor. HazCom/Alexandria is a locally managed system hosted at Hill AFB with the Program Manager belonging to 75 ABW/SC.  
+
+
+
+The contractor shall provide the following specific services to 75 ABW/SC for each of the following efforts as required by the program manager.
+
+ 1.5.1 Software Development
+
+The contractor shall perform and document explicit and implicit functional and technical requirements, create analysis and design documentation, create program specifications, and unit test criteria, code and test program units, and produce program documentation. The contractor shall use applicable structured software development and object-oriented principles and tool suites and adhere to established software development standards and guidelines as prescribed by Capability Maturity Model (CMM), Capability Maturity Model Integration (CMMI), Institute of Electrical and Electronics Engineers (IEEE), and International Organization for Standardization (ISO).  The contractor shall develop, test and integrate software utilizing CMMI practices, processes and services. The contractor shall follow applicable 75 ABW/SC Configuration and Change Management policies developed in accordance with CMMI, IEEE and ISO; including source code management utilizing the 75 ABW/SC standard software repositories. This includes working with limited direction on complex assignments; the contractor is typically responsible for independently defining approach to tasks and solutions to problems.
+
+
+
+The contractor shall perform in accordance with DOD, Air Force, and AFMC architectures, policies and standards, including the Global Combat Support Systems (GCSS) architecture.  The contractor shall perform in accordance with integrating Hypertext Markup Language (HTML), Cascading Style Sheets (CSS), Extensible Markup Language (XML), Ajax, C #, Visual Basic code, and Structured Query Language (SQL) within the Microsoft.NET environment. Contractor shall administer assigned database(s) in accordance with industry standards.  Security measures must be implemented in accordance with industry standards.
+
+1.5.2  Requirements Management
+
+The contractor shall perform requirements management to include gathering requirements and maintaining requirements traceability. The contractor shall use Information System Management Tool (ISMT), an AFMC requirements management tool.  This will be the single tracking point for requirements documentation, approval to work, testing, and deployment (CDRL A002). The contractor shall perform configuration management by gathering and tracking requirements, and conducting analysis, design, and engineering of new requirements. The contractor shall translate project requirements to design modifications maintaining the integrity of the product’s design.  The contractor shall develop user scenarios, user interfaces, and provide oversight of development activities.  The contractor shall provide the technical expertise required to understand the business processes of HazCom/Alexandria to enhance the functional capabilities of support for the operations, maintenance, and sustainment of the system.
+
+
+
+The contractor shall provide business process-improvement support that includes all activities involved in helping improve customer data systems through business processes including rethinking program design and aligning information technology infrastructures with business missions, goals, and objectives.  The contractor shall use Microsoft Sharepoint in recording and distributing business process-improvement processes and information. 
+
+
+
+1.5.3  Database
+
+The contractor shall use the most current version of “Microsoft SQL Server” Enterprise Manager, and shall be proficient in Windows Server platforms, be proficient in SQL and Transact SQL development, debugging, and performance tuning activities.  The contractor shall use the most current version of “Microsoft SQL Server” database. The contractor shall properly document all designing, modification and additions made to any code through ISTM. The contractor shall ensure that all SQL code is optimized for performance and written according to industry standards (CDRL A003). Downtime and and failure rates must not exceed one statistical standard deviation from industry standard.
+
+
+
+1.5.4 Web Development
+
+The contractor shall perform planning, design, development, test and implementation of various static and dynamic content web sites for web services technologies.  The contractor shall maintain expertise, as defined in Appendix B, in computer information systems to provide linkage between all elements of the work forces, control work processes, and manage, store, retrieve, manipulate, and process key web data elements.
+
+
+
+The contractor shall maintain and, as required, expand existing web pages upon government need.  The contractor shall develop interactive solutions that integrate with back-end legacy systems and databases with web optimization, when directed.  These work products shall comply with established DoD/AF/AFMC standards regarding web development. The number of project deadlines exceeded shall not be more than one statistical standard deviation from industry standard.
+
+
+
+The contractor shall perform Microsoft .NET web development, integrating HTML, CSS, XML, Ajax, C# and/or Visual Basic code, and SQL within the Microsoft.NET environment.  The contractor shall create and implement Web Services, data access and data manipulation techniques in the Microsoft.Net environment.  The contractor shall develop applications using the Microsoft Office Web Components.
+
+1.5.5 Content Management
+
+The contractor shall format content using text editors and electronic content management software to create, update, obtain, verify, format, convert, organize, and manage hyperlinks in various content.  The contractor shall use Microsoft Office Suite for working with documents, spreadsheets, presentations, and structured/non-structured data.  The contractor shall work with data format conversion techniques required to change content from one format to another. Conversion failure rates must not exceed one statistical standard deviation from industry standard.
+
+
+
+1.5.6 Software Engineering
+
+The contractor shall provide engineering support and technical expertise, as defined in appendix B,  for the development of enterprise-wide system architecture.  The contractor shall perform as the technical lead for development of solutions for engineering studies and internet/intranet applications, systems engineering, systems integration, software engineering, architectural design, structured analysis, and object-oriented principles and tool suites. The contractor shall perform all phases of software development with emphasis on analysis, coding, testing, documentation, acceptance and maintenance/sustainment phases.  The contractor shall define and analyze system requirements, develop design specifications, translate specifications into programming logic, test and debug software, correct any deficiencies prior to implementation, and determine user-training requirements.  The contractor shall design, document, and develop automated data structure(s) to fulfill client requirements. Design and documentation must meet industry standards.
+
+
+
+The contractor shall provide the technical expertise, as defined in appendix B,  required for 75 ABW/SC to produce management reports (as needed), interpret business rules, and evaluate potential system improvements. 
+
+
+
+1.5.6.1 Software Validation & Testing
+
+The contractor shall perform the validation and testing of software to verify the system satisfies functional and operational requirements.  The contractor shall coordinate with the customer throughout the software project to ensure thorough testing before any software is migrated to the production environment.  Testing is required before each software release and will be conducted at Hill AFB.  The contractor shall coordinate preparation of test cases, test scripts and test reports with the Software Engineering Group (SEG) and customer.  The contractor shall execute test cases, evaluate results, prepare a Software Test Report, generate and resolve Software Problem Reports in conjunction with the SEG and customer.  The contractor shall adhere to organizational test requirements and test group coordination.  The contractor shall obtain customer acceptance before each software release.  The contractor shall update ISMT within two days following test completion to reflect test status and results. 
+
+
+
+1.5.6.2 Systems Architecture
+
+The contractor shall perform system design and architecture as it relates to areas of hardware, software, and communications; including cost/benefit analysis, data formats, and communications using heterogeneous platforms and technologies.  The contractor shall maintain expertise, as defined in appendix B, in system architecture of SQL Server and .Net application implementation and strategic vision.  The contractor shall maintain “Reach-Back” capability to Microsoft problem resolution resources.  The contractor shall analyze business requirements and design architectures to support HazCom/Alexandria mission needs. Contractor shall administer assigned database(s) ensuring efficiency and increasing productivity while maintaining accuracy and timeliness.
+
+
+
+1.5.6.3  Configuration Management
+
+The contractor shall adhere to established software development standards and guidelines as prescribed by a minimum level 3 Capability Maturity Model (CMM), a minimum level 3  Capability Maturity Model Integration (CMMI), Institute of Electrical and Electronics Engineers (IEEE), and International Organization for Standardization (ISO).  The contractor shall follow applicable 75 ABW/SC Configuration and Change Management policies developed in accordance with CMMI, IEEE and ISO; including creating and managing the project software, and managing baseline libraries (CDRL A007).   
+
+
+
+The contractor shall develop, test and integrate software utilizing CMMI practices, processes and services. The contractor shall maintain and track the status of each requirement using ISMT through release, updating software baselines after reviews and/or testing and releasing updated baselines to the field.  
+
+
+
+The contractor shall create/update/maintain release packages including the System Release Transmittal Letter (SRTL) in accordance with 75 ABW/SC Configuration Management policies and procedures.  The contractor shall perform or participate in periodic and scheduled audits of the software baselines to verify that they conform to the documentation that defines them.  The contractor will use the standard 75 ABW/SC source code repository (currently using Subversion) for source code management. The contractor shall also provide notification of implemented changes to the initiator of the change request/problem report and to the users of the system.
+
+
+
+1.5.7  Point of Contact
+
+The contractor shall provide a point of contact for official communication from the Government. The contractor shall provide monthly status reports of task progress and completion.  The reports shall cover monthly project activities, developmental results, projected schedule of projects, risk identification/ mitigation, and the progress toward individual project milestones (CDRL A008).  The point of contact shall be responsible for the following duties:
+
+
+
+1.5.7.1 Program Records
+
+The contractor shall maintain program records, such as preparation, update, coordination, and maintaining system, user, and process documentation. The contractor shall provide support to 75 ABW/SC project personnel to meet their process and documentation needs in accordance with organizational policies and standards.  The contractor shall provide support in the development of templates for all required process support documentation including charts and reports as required.
+
+
+
+1.5.7.2 Technical Support
+
+The contractor shall provide application technical support for users at multiple locations while maintaining customer focus to elicit and define problems. The contractor shall monitor and identify sources and trends of application and/or technical problems and recommend measures that would minimize or eliminate future reoccurrence.  The contractor shall provide HazCom/Alexandria helpdesk application support for users both internally and at remote sites.  The contractor shall consult with users and technical and functional people to help determine and resolve hardware and software problems.  The contractor shall provide tech support to application users and customer follow-up. The help tickets shall be resolved in accordance with industry standard including a maximum 4 hour response time.
+
+
+
+1.5.7.3  Recruitment & Retention Plan
+
+The contractor shall provide and retain a technically capable.  The contractor shall identify their methodology for recruiting and retaining professional personnel throughout the duration of the program in a recruitment and retention plan (CDRL A011). The plan shall address hiring, obtaining security clearances, maintaining commercial certifications, training, an education and training program for evolving technologies such as Information Technology Infrastructure Library (ITIL), retention, organizational structure and any cross-utilization approach.  The plan shall also address training and certifications as specified in DoD 8570.1-M, Information Assurance Workforce Improvement Program, and the ability to maintain the required certifications.  The Contractor shall address managing customer expectations, obtaining customer survey results, reporting metrics and lines of communications within the contractor’s own team.  The Contractor shall provide the recruitment and retention plan no later than the first day of contract start date. All changes to personnel and management assigned to the contract shall be reported in writing or via email to the Government Program Manager within three (3) business days.
+
+
+
+1.5.7.4 Other Responsibilities
+
+The contractor is responsible for network activities and system security compliance activities. This includes all certification and accredidation  package  management activities. The program manager is also responsible for interfacing with the customer. The contractor is responsible to ensure that periodic changes to Hazcom are completed within customer specifications. 
+
+1.6   Requirements 
+
+The contractor shall create/maintain/update the requirements in the performance of this PWS as indicated in Appendix A of this PWS.  
+
+
+
+1.6.1   User’s Guide 
+
+The user guide is a technical communication document intended to give assistance to people using a particular system.  It contains both a written guide and the associated images, including screenshots of how the program should appear.  The contractor shall create/maintain/update the user’s guide to include all modifications/upgrades impacting the user experience (CDRL A006).
+
+1.6.2  Test Evaluation Master Plan (TEMP)/Test Cases
+
+The contractor shall create and maintain a TEMP. A TEMP identifies the tasks and activities to be performed so that all aspects of the system are adequately tested and the system can be successfully implemented.  It documents the scope, content, methodology, sequence, management of, and responsibilities for test activities, including development, system, Customer Acceptance Test, and security. The TEMP provides guidance for the management of test activities, including organization, relationships, and responsibilities.  
+
+
+
+The contractor shall ensure that tests at each level include the verification of access control and system standards, data security, functionality, and error processing.  The validation process ensures that the system conforms to the functional requirements and that the system is not adversely affected. The contractor shall ensure that the TEMP is up to date and complete. 
+
+
+
+The contractor shall also create test cases/scripts/procedures and a Test Report for each block release (CDRL A004).  The contractor shall update the report at each level of testing to record the results of testing and certify readiness for system implementation.  The contractor shall track problems, deficiencies, modifications, and refinements identified during testing or implementation and shall be tracked under configuration control (via ISMT) and tested using the same test procedures as those described in the TEMP.  
+
+
+
+1.6.3  Programmer’s Guide
+
+The contractor shall comply with accepted programmer standards and guidelines.  Standards are rules that programmers shall follow.  Guidelines can be viewed as suggestions that can help programmers write more effective software and are optional, but highly recommended.  A programmer’s guide details the general software development standards and guidelines.  The use of standards will be enforced through software peer reviews.  HazCom/Alexandria is developed using documented programmer standards and guidelines.  The contractor shall comply with the accepted 75 ABW/SCP programmer standards and guidelines.  It is important to note that standards are not fixed, but will evolve over time.  All updates/modifications to the programmer’s guide will be approved by the Government.
+
+
+
+1.6.4  Source Code
+
+The contractor shall use the standard 75 ABW/SC source code repository (currently using Subversion) for source code management.  All source code remains the property of the government.  Upon completion of all source code updates, the contractor shall return the source code to the repository (CDRL A001).
+
+
+
+1.6.5 Source Code Ownership
+
+All source code written will be the property of the United States Air Force. Under no circumstances shall any contractors retain in whole or part any amount of source code. The Contractor shall surrender all source code and complete documentation to the government whenever a request is made. The Contractor shall take steps to ensure that the code is retained on Government  property and is not removed. The contractor shall ensure that all employees are aware of this requirement. 
+
+
+
+1.6.6 System Release Packages
+
+The contractor shall create, update, and maintain release packages for each block release, including the System Release Transmittal Letter (SRTL) in accordance with 75 ABW/SC Configuration Management policies and procedures. The SRTL shall be provided to the Government two weeks prior to the scheduled implementation date to ensure release approval is received from 75 ABW/SC Configuration Control Board (CCB). 
+
+
+
+1.7    Service Delivery Summary (SDS)
+
+All surveillance observations will be recorded by the Quality Assurance Personnel (QAP).
+
+
+
+
+
+
+
+Government Furnished Property & Services 
+
+2.1  General
+
+The Government will provide contractor personnel with use of workspace, furniture, and computer equipment within Hill AFB.  The Contractor shall supply all office supplies.  The Contractor shall safeguard Government property provided for Contractor use.  At the close of each work period, Government facilities, property, and materials shall be secured.  The Contractor shall conform to the provisions of Hill Air Force Base Instructions for safeguarding the Government Furnished facilities and material contained therein.  The Contractor shall develop and establish procedures for securing facilities provided under this TO. 
+
+
+
+All documentation provided as part of this contract shall remain government property and shall be returned to the government at the end of each task order period of performance.  The task order point of contact (POC)/Quality Assurance Personnel (QAP) will periodically inspect and inventory government property in relation to this PWS, and provide information and results to the PM and/or Contracting Officer.
+
+
+
+Access to either the Hill AFB Local Area Network (LAN) or the use of the internet from Hill AFB, or Hill AFB email services will be provided.  Government personnel will assist in the accomplishment of said service and will forward any contractor’s request to the appropriate government organization.  Government furnished instrumentation, hardware, or software may also be provided to the contractor as required.  The Contractor shall obtain approval from the Government to use facilities, equipment, or services not identified elsewhere in the contract or PWS.  
+
+
+
+2.2  Government-Furnished Property
+
+The Government will provide to the contractor equipment to support the task order as long as the equipment is serviceable. The equipment is provided with the provision that the Government will replace the property when deemed necessary by the government.  If the equipment fails to function, the contractor should return this equipment to the government for replacement.  The Contractor shall maintain accountability of the equipment.
+
+
+
+The Contractor and a Government Representative shall conduct a joint inventory of Government Furnished Equipment listed in this section not later than 5 calendar days prior to start of the first operational performance period and not later than 10 calendar days before completion of the contract period including any option periods.  The Contractor shall sign a receipt for equipment provided by the Government.  The Contractor and a Government Representative shall jointly determine the working order and condition of equipment.  Items of equipment missing or not in working order shall be recorded and provided to the CO notified in writing.  Except for those items identified in this section as being furnished “as is”, the Government will replace missing items and repair items not in working order or the CO will direct the Contractor to replace the missing item(s) or accomplish the repair and the Contractor will be compensated by negotiated modification to this contract.  The Government Representative will give disposition instructions for items beyond economical repair.  The Contractor and the Government Representative shall certify their agreement as to the working order of the equipment.  
+
+2.3  Government Furnished Buildings
+
+The Contractor shall conform to the provisions of AFI 31-101 for safeguarding Government buildings and the equipment in these buildings.  Contractor employee access to some buildings or rooms in buildings may require a security clearance.  All Contractor employees not possessing the required clearance level must be escorted by cleared personnel while performing under the contract in these buildings.
+
+
+
+2.4  Government Furnished Services
+
+The Government may furnish the Contractor reasonable access to Government personnel and management data required for support of the work effort.  In addition, the Government will provide telephone service consisting of Class 3 (formerly referred to as Class C) and Class 1 (formerly referred to as Class A) service, to include DSN service. Telephone service classes are defined in AFI 33-111.  The Contractor shall ensure that usage of Government provided telephones is limited to only official Government business related to performance of this contract.
+
+General Information
+
+3.1  Transition Period/Orientation
+
+Up To 30 days
+
+The Contractor shall ensure a seamless transition.  The Contractor’s orientation plan shall demonstrate how personnel, materials and equipment will be utilized through the orientation period and a method to ensure performance and to include phase-in timelines.  The plan shall also include the number and position titles of personnel to be on site for the orientation period. The Contractor shall begin the orientation and provide a written transition plan as required by CDRL A010, Contracts Data Requirements List.  The purpose of the transition plan is to demonstrate how the Contractor shall meet the intent of the following:
+
+
+
+For 10 business days observe work accomplished by current employees and become thoroughly familiar with work requirements.
+
+
+
+As specified in Appendix B complete personnel requirements (work force), including the hiring of personnel to assure satisfactory performance.  Soliciting Government or Contractor personnel for employment during their duty hours is prohibited unless interview arrangements are made through the CO and personnel offices at this installation.
+
+
+
+Complete Security requirements as identified by the PWS Para 3.4.  
+
+
+
+Complete documentation and requests during the orientation period for all applicable security clearances or NACs, NACIs (if required by HSPD-12), or acceptable local files checks.
+
+
+
+Complete transition of necessary tasks and activities from the incumbent.  The plan shall identify transition planning strategy, schedule, risks, roles, and responsibilities.  Gain copies of existing documentation (i.e. User Guides/Manuals, Programmers Coding Standards, Development Processes and Procedures Guides, etc). 
+
+
+
+Complete the development of necessary work plans and procedures based on PWS requirements.
+
+
+
+
+
+The Contractor will be allowed access to the facilities to familiarize supervisors, key personnel and staff with equipment, reporting, work scheduling and procedures.  However, such access will not interfere with the production efforts of current work force.  To preclude such interference, arrangements for access to the Government facilities will be made with the CO.
+
+
+
+3.2   Software Transition Plan 
+
+The contractor shall provide a software transition plan for transferring life cycle support of the deliverable to the support agency (CDRL A009). 
+
+
+
+3.3 Transition 
+
+If there is a change in Contractor, the incumbent Contractor shall provide familiarization and allow the follow-on Contractor to observe monthly operations, facilities, work, equipment locations and reporting procedures on a non-interference basis.  During the phase-out familiarization period, the incumbent shall be fully responsible for operation of the Hazcom/Alexandria System.
+
+
+
+The Government reserves the right to conduct site visits in Contractor operated facilities in conjunction with the solicitation of offers for the follow-on contract.  In the event the follow-on contract is awarded to other than the incumbent, the incumbent Contractor shall cooperate to the extent required to permit an orderly change over to the successful Contractor.  With regard to the successor Contractor’ access to incumbent employees, a recruitment notice may be placed in each facility.
+
+
+
+The incumbent Contractor shall ensure network access is removed for those employees who do not provide documented proof that they intend to work for the new Contractor.
+
+
+
+3.4  Travel Requirements
+
+The contractor may be required to travel to support the objectives of this PWS.  The contractor shall obtain approval from the government Program Manager before traveling in support of this PWS.  Airfare for travel shall be billed IAW FAR 31.205-46.  Per Diem rates shall be billed IAW JTR.  The contractor is responsible for making all necessary travel and billeting arrangements. Travel location may include, but not limited to OC-ALC, WR-ALC, and HQ AFMC.  Travel will be dictated by mission requirements in support of the customer as directed by the program manager.  
+
+
+
+
+
+3.5  Security Requirements
+
+
+
+3.5.1  Information Assurance (IA) Technical Considerations
+
+Personnel providing System Administration services under the basic contract shall be required to have the DoD 8570.1-M, IA Workforce Improvement Program, certifications (Security +) no later than six months after contract award.  Costs associated with these certifications (i.e. courseware, tests) are the responsibility of the contractor and shall not be passed on to the Government.  
+
+3.5.2  Access to Hill AFB
+
+The Contracting Officer/QAP shall complete a “Request for Identification Credential (AFMC Form 496)” for each employee requiring entry to Hill AFB.  The request shall be submitted to Pass and Registration (South or West Gate Visitors Center).  Common Access Cards (CAC) will be required for all on-site Contractor personnel.  The Contractor’s Program Manager will ensure completion of DD Form 1172 for each on-site employee.  Each employee must then take the DD Form 1172 to 75 MSS (Military Personnel Flight) located in Building 430 to receive their CAC.  The Government will provide appropriate identification cards which shall be issued, displayed, and surrendered as directed in HAFBI 31-101, Installation Security Program. The Contractor Program Manager shall ensure that all employees have the proper identification credentials prior to entering Hill AFB.  Contractor employees shall fulfill all mandatory safety and security training required for work on a government installation.
+
+3.5.3  Access to the Base Network
+
+Network access is a privilege that may be extended to contractor employees.  It may be granted only after all criteria have been met and may be suspended for cause as defined in AFI 33-115 Vol. 2.  Network access will be approved IAW AFI 31-601, AFI 33-115 Vol. I and II, AFI 33-202, AFMAN 33-223, AFSSI 5027, and DoD 5200.40.  Per AFI 33-115V2, “every individual who has access to the Air Force network (af.mil) domain, specialized systems and mission systems is a network user.”  Every AF network user must possess a completed and favorable National Agency Check (NAC) or an interim network access waiver package.  Any costs associated with obtaining the NAC shall be the responsibility of the Contractor.
+
+
+
+3.5.4  Access to Controlled Areas
+
+The QAP will complete an “Unescorted Entry Authorization Certificate (AF Form 2586)” for each employee requiring entry into controlled areas.  The request shall be submitted to Pass and Registration (South or West Gate Visitors Center).  The Contractor shall request restricted area badges for employees according to HAFBI 31-101, Installation Security Program. 
+
+3.5.5  Security Clearances
+
+Contractor personnel performing system administration will be required to obtain and maintain a Secret Clearance at task order award and through the duration of the task order.  All Contractor personnel must meet the terms of this PWS and must be a United States citizen.  Applicable directives include DOD 5200.2-R and AFI 31-501.  Any costs associated with obtaining the SECRET clearance shall be the responsibility of the Contractor. DD254 is applicable.
+
+3.5.6  Non-Disclosure
+
+The contractor shall not divulge any information about files, data, processing activities or functions, user ID’s, passwords, or other knowledge that may be gained, to anyone who is not authorized to have access to such information.  The contractor personnel shall abide by all agency rules, procedures, and standards of conduct. The contractor personnel shall be in compliance with the Federal Information Processing Standards (FIPS) 201 Personal Identity Verification (PIV) of Contractor Employees. 
+
+
+
+The contractor shall comply with agency personal identity verification procedures identified in the contract that implement Homeland Security Presidential Directive-12 (HSPD-12), Office of Management and Budget (OMB) guidance M-05-24, and Federal Information Processing Standards Publication (FIPS PUB) Number 201.
+
+
+
+The contractor shall insert the above two paragraphs in all subcontracts when the sub-contractor is required to have physical access to a federally controlled facility or access to a Federal information system.
+
+3.6  Quality Control
+
+5.3.1. Quality Control Program. In compliance with the clause entitled “Inspection of Services”, 52.246-4, the contractor shall establish a complete Quality Control Plan to ensure the requirements of this contract are provided as specified; Contractor format is acceptable. The contracting officer will notify the contractor of acceptance or required modifications to the plan before the contract start date. The contractor shall make appropriate modifications (at no additional costs to the government) and obtain acceptance of the plan by the contracting officer before the start of the first operational performance period.
+
+3.7  Quality Assurance
+
+The government’s Quality Assurance Personnel (QAP) and Technical Representative for this PWS will periodically evaluate the contractor’s performance to ensure services are received.  The government representative will evaluate the contractor’s performance through intermittent on-site inspections of the contractor’s quality control program and receipt of complaints from base personnel.  The government may inspect each task as completed or increase the number of quality control inspections if deemed appropriate because of repeated failures discovered during quality control inspections or because of repeated customer complaints.  Likewise, the government may decrease the number of quality control inspections if merited by performance.  The government will also investigate complaints received from various customers located on the installation.  The contractor shall be responsible for initially validating customer complaints.  However, the government representative shall make final determination of the validity of customer complaint(s) in cases of disagreement with customer(s) and provide for resolution.
+
+3.8  Quality Assurance Personnel (QAP)
+
+The QAP is a representative(s) of the Contracting Officer and will participate in the administration of this contract.  Subsequent to contract award, the identity of the QAP(s), with a brief list of their duties and authority will be promptly furnished to the successful bidder/offeror.
+
+
+
+The QAP(s) or alternate(s) will inform the contractor when discrepancies occur and will request corrective action.  The QAP(s) or alternate(s) will make a notation of the discrepancy on their tally/surveillance report with the date and time the discrepancy was noted and will request the contractor to initial the entry on the report.
+
+
+
+Any matter concerning a change to the scope, price, terms or conditions of this contract shall be referred to the Contracting Officer and not to the QAP(s).
+
+
+
+The services to be performed by the contractor during the period of this contract at all times and places shall be subject to review by the Contracting Officer or authorized representative(s). 
+
+3.9 Physical Security 
+
+The contractor shall be responsible for safeguarding all government property provided for contractor use.  At the close of each work period, government facilities, property, and materials shall be secured as required.
+
+3.9.1 Key card control  The contractor shall establish and implement methods of ensuring that no key cards issued to the contractor by the government are lost or misplaced and are not used by unauthorized persons.  No key cards issued to the contractor by the government shall be duplicated.  The contractor shall develop procedures covering key card control that shall be included in the Quality Assurance Program Plan.  Such procedures shall include turn-in of any issued key cards by personnel who no longer require access to locked areas.
+
+The contractor shall immediately report the occurrences of a lost key card to the division/building monitor who is responsible for the security of that facility.
+
+The contractor shall prohibit the use of key cards issued by the government by any persons other than the contractor’s employees.  The contractor shall prohibit the opening of locked areas by contractor employees to permit entrance of persons other than contractor’s employees engaged in the performance of assigned work in those areas, or personnel authorized entrance by the Contracting Officer.
+
+3.10  Hours of Operation
+
+The contractor shall perform the services required under this contract during normal business hours or after hours as may be necessary so that access to the systems may not be interrupted during normal business hours.  The normal business hours window is between 6:00 AM and 6:00 PM, Monday through Friday, except for Federal holidays (New Year’s Day, Martin Luther King Day, President’s Day, Memorial Day, July 4th, Labor Day, Columbus Day, Veteran’s Day, Thanksgiving and Christmas).  The contractor shall work on all other days and shall provide development services at off site locations if they are unable to enter closed government facilities.
+
+
+
+3.11  Non-Personal Services
+
+The Government will neither supervise contractor employees nor control the method by which the contractor performs the required tasks.  Under no circumstances shall the Government assign tasks to, or prepare work schedules for individual contractor employees.  The contractor shall manage its employees and guard against any actions that are of the nature of personal services, or give the perception of personal services.  If the contractor believes any actions constitute, or are perceived to constitute personal services, it shall be the contractor’s responsibility to notify the contracting officer immediately.  These services shall not be used to perform work of a policy/decision making or management nature, i.e., inherently Governmental functions.  All decisions relative to programs supported by the contractor shall be the sole responsibility of the Government.
+
+3.12  Conservation of Utilities
+
+When working at Hill AFB, the contractor shall be responsible for operating under conditions that prevent the waste of utilities.  The contractor shall instruct employees in utilities conservation practices.  This includes following the Normal Conservation Actions stipulated by Hill AFB and posted in building 1211.  The contractor shall be responsible for operating under conditions that prevent the waste of utilities, which include the following:
+
+
+
+Lights shall be used only in areas where and when work is actually being performed.
+
+Mechanical equipment controls for heating, ventilation, and air conditioning systems shall not be adjusted by the contractor or by contractor employees unless authorized.
+
+Water faucets or valves shall be turned off after the required use has been accomplished.
+
+Government telephones shall be used only for official government business.
+
+Government telephones, computer equipment, printers and e-mail shall be used only for official government business and authorized purposes.
+
+3.13 Government Observations
+
+Government personnel, other than COs and QAP/s may from time-to-time, with PM coordination, observe contractor operations.  However, these personnel may not interfere with contractor performance.
+
+3.14  Safety Requirements
+
+In performing work under this contract, the contractor shall conform to the safety requirements contained in the contract for all activities related to the accomplishment of the work and provide a safe work environment for the company personnel.
+
+3.15  Publications
+
+Compliance with all publications, regulations, and operating instructions provided by the Government is required when:  
+
+These procedures pertain to the materials expedited herein and where the contractor is authorized by the PWS to accomplish the work specified in the publication, regulation or operating instructions.  
+
+The publications prescribe USAF policies, use of materials, procedures, and processes applicable to the work requirements. 
+
+The contractor is required to acquire and work on the latest version of the publication(s).
+
+
+ APPENDICES 
+
+Appendix A – CDRLS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Appendix B – Expertise
+
+
+
+HazCom/Alexandria
+
+
+
+
+
+Requried Expertise: 
+
+ 
+
+Communication skills; oral and written
+
+CompTia Security + Certification
+
+Bachelor Degree in Computer Science,  Engineering or Information Systems
+
+Experience including:  
+
+.Net
+
+SQL
+
+HTML
+
+XML
+
+UNIX
+
+Web development
+
+Microsoft SQL Server
+
+Software Validation and Testing 
+
+Technical Writing 
+
+Systems Architect 
+
+Business Process Engineering 
+
+Configuration Management
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Appendix C - Acronyms
+
+
+
+
+
+Acronym/Abbreviation		Definition
+
+
+
+AF					Air Force
+
+AFB 					Air Force Base  
+
+AFMC 				Air Force Material Command 
+
+ALC					Air Logistics Command
+
+CCB					Configuration Control Board
+
+CFR					Code Federal Regulation 
+
+CMM					Capability Maturity Model 
+
+CMMI					Capability Maturity Model Integration
+
+CO 					Contracting Officer
+
+CSS					Cascading Style Sheets 
+
+DEPT					Department 
+
+DoD					Department of Defense
+
+EAI                                                   	Enterprise Application Integration
+
+EPA					Environmental Protection Agency
+
+FAR					Federal Acquisition Regulation
+
+GCSS                                            	Global Combat Support Systems
+
+GR 					Government Representative 
+
+HAFB					Hill AFB
+
+HTML					Hypertext Markup Language
+
+IAW					In Accordance With
+
+IEEE					Institute of Electrical and Electronics Engineers
+
+ISO					International Organization for Standardization
+
+OSHA					Occupational Safety & Health Administration
+
+PBSA					Performance Based Service Acquisition 
+
+PEG					Potential Exposure Group
+
+PWS					Performance-Based Work Statement 
+
+QA 					Quality Assurance
+
+QAP 					Quality Assurance Personnel
+
+QCP 					Quality Control Program 
+
+SDS					Service Delivery Summary
+
+SS					Services Summary
+
+SRTL					System Release Transmittal Letter 
+
+HazCom				Hazardous Communication
+
+USAF 					United States Air Force 
+
+XML                                              	Extensible Markup Language
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+References
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ID
+
+Performance Objective
+
+PWS Paragraph
+
+Performance Threshold
+
+1
+
+Administer assigned database(s) ensuring efficiency and increasing productivity
+
+1.5.3
+
+Downtime and failure rates must not exceed one statistical standard deviation from industry standard. 
+
+2
+
+Design, document and develop automated data structure(s) to fulfill client requirements
+
+1.5.6
+
+Design and documentation must meet industry standards.
+
+3
+
+Convert data from either electronic or paper versions into required output
+
+1.5.5
+
+Conversion failure rates must not exceed one statistical standard deviation from industry standard. 
+
+4
+
+Provide sound Information Technology security services
+
+1.5.1
+
+Security measures must be implemented in accordance with industry standards.
+
+6
+
+Work, with limited direction on complex assignments; typically responsible for independently defining approach to tasks and solutions to problems
+
+1.5.6
+
+100% of the time, project solutions shall be designed in accordance with industry standards.
+
+7
+
+Analysis, design, development and maintenance tasks shall be completed on time in accordance with approved project schedule  
+
+1.5.4
+
+The number of project deadlines exceeded shall not be more than one statistical standard deviation from industry standard.
+
+8
+
+Helpdesk support to application users, customer follow-up, 4 hour response time to customers.
+
+1.5.7.2
+
+100% of the time, help tickets shall be resolved in accordance with industry standard including a maximum four  (4) hour response time.
+
+
+
+CDRL No.
+
+CDRL No.
+
+Category
+
+Item
+
+PWS Para Reference
+
+A001
+
+Software Application Media 
+
+Software Application Media 
+
+Computer Software Product
+
+1.6.4
+
+A002
+
+Configuration Management 
+
+Configuration Management 
+
+Information System Management Tool (ISMT)
+
+1.5.2
+
+A003
+
+Configuration Management 
+
+Configuration Management 
+
+Database Management
+
+1.5.3
+
+A004
+
+Software Documentation
+
+Software Documentation
+
+Software Test Report (STR)
+
+1.6.2
+
+A005 
+
+Safety Documentation
+
+Safety Documentation
+
+System Safety Program Plan
+
+3.14
+
+A006
+
+Software Documentation
+
+Software Documentation
+
+Software User Manual (SUM)
+
+1.6.1
+
+A007
+
+Configuration Management 
+
+Configuration Management 
+
+Engineering Change Proposal (ECP)
+
+1.5.6.3
+
+A008
+
+Project Management 
+
+Project Management 
+
+Contractor's Progress, Status and Management Report
+
+1.5.7
+
+A009
+
+Software Documentation
+
+Software Documentation
+
+Software Transition Plan (STrP)
+
+3.2
+
+A010
+
+Transition/Orientation
+
+Transition/Orientation
+
+Transition Plan
+
+3.1
+
+A011
+
+Recruitment/Retention 
+
+Recruitment/Retention 
+
+Recruitment/Retention Plan
+
+1.5.7.3

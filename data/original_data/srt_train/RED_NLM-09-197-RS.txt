@@ -1,0 +1,1113 @@
+
+                                  BHEPP Radio Frequency Identification (RFID)/ Real Time Location System (RTLS)
+
+                                                                Statement of Work
+
+
+       BACKGROUND
+
+
+       The National Library of Medicine (NLM) provides efficient, cost-effective information technology services in support of the research and
+       management programs offered through the National Institutes of Health.  The National Library of Medicine is a partner of the Bethesda
+       Hospitals’ Emergency Preparedness Partnership (BHEPP), whose other members are the National Naval Medical Center (NNMC), National
+       Institutes of Health Clinical Center (NIH/CC), and Suburban Hospital Healthcare System.
+
+
+
+
+
+
+       BHEPP’s main goals include:
+
+        I. Respond rapidly and successfully to any emergency situation;
+       II. Integrate the collaborative response with other community, regional, and national responses and
+      III. Create collaborative structures and process to serve as an exportable model for other similar centers in the Nation
+
+
+
+       The National Library of Medicine is spearheading the planning, procurement and implementation of a Radio Frequency Identification (RFID)
+       / Real Time Location System (RTLS) for the Bethesda Hospitals’ Emergency Preparedness Partnership (BHEPP).
+
+
+
+
+
+
+       OBJECTIVES
+
+
+       This Statement of Work (SOW) outlines the goals and requirements that the selected Contractor(s) shall meet to provide an RFID/RTLS that
+       aligns with the BHEPP requirements. The Contractor(s) shall furnish the necessary personnel, products, materials and other services
+       required to accomplish the services requested in this SOW.  At all times, the Contractor(s) shall ensure that the RFID/RTLS
+       implementations are in compliance with the corresponding BHEPP Partner policies, guidelines, and standards, as well as industry best
+       practices.
+
+
+       The BHEPP has identified a critical need for the acquisition of a Radio Frequency Identification (RFID) / Real Time Location System
+       (RTLS) to directly support the current emergency preparedness initiatives of three of its members, namely, the National Naval Medical
+       Center, National Institutes of Health Clinical Center, and Suburban Hospital Healthcare System.  The BHEPP requires a system that will
+       operate on a stand-alone network, separate from BHEPP partner production networks, and a scalable system that can be implemented
+       incrementally as more requirements are requested by the Partnership.   The RFID/RTLS solution shall incorporate role-based access so as
+       to provide BHEPP the ability to track patients and assets across all three hospitals, while at the same time providing each of the
+       hospitals the ability to track their own patients and assets.
+
+
+       Initial RFID/RTLS requirements will focus on patient tracking, inventory management, disaster exercise support, and systems integration
+       as outlined below:
+
+
+
+
+
+        I. Patient Tracking: Tracking of disaster victims within each of the Partnership facilities, and of stable medical/surgical patients
+           being transported among facilities during mass casualty situations.
+
+
+       II. Critical Asset Management: Managing/tracking critical assets to ensure easy location and mobilization during mass casualty
+           situations.
+
+
+
+
+      III. Systems Integration: Providing necessary application program interfaces (APIs) to facilitate the integration of the RFID/RTLS system
+           with other BHEPP disaster response applications through open standards.
+
+       IV. Disaster Exercise Support: Support collaborative multi-agency disaster exercises to demonstrate the effectiveness of RFID/RTLS
+           technology in patient tracking and inventory management during mass casualty situations.
+
+
+
+
+
+       Information gathered under this SOW is the property of National Library of Medicine, BHEPP and its partners and no aspect of this
+       information shall be divulged in any fashion to any party without the express written approval from National Library Medicine Contracting
+       Officer’s Technical Representative (COTR).
+
+
+
+
+
+
+       Tasking will be performed primarily at the facilities of the Suburban Hospital, National Naval Medical Center, and National Institutes of
+       Health Clinical Center.  Meetings and coordination activities will be conducted at National Library Medicine Buildings 38 and 38A,
+       National Institutes of Health main campus, located in Bethesda, Maryland, in addition to the other BHEPP partner locations.
+
+
+
+
+
+
+       The NLM reserves the right to make multiple awards for the initial Base Task described in Article C.5.  At the discretion of the NLM, the
+       deliverables for the Base Task will be further evaluated to determine which Contractor(s) will be awarded the Optional Tasks described in
+       Article C.6.
+
+
+
+
+
+
+       Mandatory Requirements
+
+
+       Listed below are mandatory requirements that the Offeror shall meet to be considered eligible to provide services to NLM under this
+       Statement of Work.  The Offeror, in the proposal response to this Statement of Work, shall describe how the Offeror satisfies the
+       mandatory requirements described below:
+
+
+
+     o The Offeror shall be able to provide a Real-time Location System that offers visual 2-D mapping of patients and equipment using RFID
+       technology.
+
+     o The Offeror shall have the ability to provide a Mobile RFID/RTLS Triage Tent Kit for each of the three BHEPP hospitals.  The kit shall be
+       easily deployable to support outdoor mobile triage activities during disaster response. The detailed requirements of the Triage Tent Kit
+       for each of the BHEPP Partner Hospitals will be determined during the Base Task – Site Assessment (described in Article C.5).
+
+
+     o The Offeror shall provide a total solution, in which the Offeror chosen will help the Partnership to design a proper system to meet BHEPP
+       requirements; procure all required hardware (tags, readers, monitors, servers, etc.); acquire, develop and customize required software
+       applications (location and tracking applications, database tools, etc); deploy and test all RFID/RTLS hardware and software applications;
+       transfer the deployed RFID/RTLS to the Partnership and provide proper training for Partnership’s users.
+
+
+     o The Offeror shall have a minimum of 5 years continuous experience in providing RFID/RTLS solutions.
+
+
+
+
+     o The Offeror shall have a minimum of FIVE active customer hospitals at which the Offeror’s RFID/RTLS solutions have been implemented.
+
+
+
+
+     o The Offeror’s shall meet all requirements listed in this SOW, and have the ability to perform the Base and Optional Tasks described in
+       this SOW.
+
+
+
+
+
+       TECHNICAL SPECIFICATIONS AND REQUIREMENTS
+
+
+       hardware specifications
+
+
+       The hardware specifications will consist of the following:
+
+
+
+     o Active Tags for tracking patients, personnel and critical Partnership assets (specific quantities to be determined during Site Assessment
+       – see Article C.6.1).
+
+
+     o RFID/RTLS equipment to locate and track active tags in each partnership facility (specific quantities to be determined during Site
+       Assessment – see Section C.6.1).
+
+
+     o Servers and other equipment to operate and maintain the RFID/RTLS system separate from the existing network infrastructure in all three
+       Partnership facilities. Servers must be properly sized to facilitate the effective operations and maintenance of RFID/RTLS system
+       including: hosting RFID/RTLS software applications; storing, managing and providing access to patient location and asset inventory data.
+       Servers must be scalable either horizontally or vertically to anticipate and accommodate future growth in complexity, volume, and usage.
+
+
+
+     o Computer systems and Mobile devices (Laptops, tablet PC, etc) to use as tracking consoles and to enter, retrieve, update, or delete
+       patient and inventory information (specific amount to be determined during Site Assessment – see Article C.6.1).
+
+
+
+       Software specifications
+
+
+       The software specification will consist of the following:
+
+
+
+     o A web-based, real-time, patient tracking application to track and view the location of mass casualty patients within the designated
+       disaster response areas in each partnership facility and to track their movements within the designated areas. The patient tracking
+       application should be open to facilitate integration and platform independent to support portability.
+
+
+     o A web-based asset management application to track and view the location of critical assets and equipment within the designated disaster
+       response areas in each partnership facility and to track their movements either within or between the designated areas. The asset
+       tracking application should be open to facilitate integration with third-party applications, and be platform independent to support
+       portability.
+
+
+     o A configurable, rule-based mapping application that can generate alerts and alarms based on BHEPP-specified events, such as: the movement
+       of patients and assets into or out of a specified area, the state of a tag, etc.  The system should be capable of event history playback
+       or look-up.
+
+
+     o A robust database and associated applications and tools to store, manage, and retrieve patient tracking and inventory management data.
+       The database should be made accessible to staff from all partnership command centers. Database applications and tools should be open to
+       facilitate integration and migration.
+
+
+     o Application program interfaces (APIs) to facilitate the integration of the RFID/RTLS solution and other BHEPP disaster response
+       applications through open standards.
+
+
+
+       performance Requirements
+
+
+       The performance requirements will consist of the following:
+
+
+
+     o A calibrated RFID/RTLS to balance performance along three important criteria: latency, precision and accuracy.  Latency measures how
+       quickly after a change in location the system can accurately locate the tag.  Precision indicates the radius of measurement to which the
+       technology can accurately locate the tag.  Accuracy measures how often the system gets it right, or achieves the desired precision; to
+       what percentage of the time and over what percentage of area.
+
+
+     o A system with a minimum accuracy and precision of room-level or better. The system shall be able to locate and track a patient, personnel
+       or asset correctly within a room, a sectioned space, hallway or lobby at any given time, and shall do so with a 95% accuracy or better.
+
+
+
+       security Requirements
+
+
+       The security requirements will consist of the following:
+
+
+
+     o A practical security mechanism to support role-based security access and control. Facilitate discriminatory security controls over the
+       assignment of roles and responsibilities to users and stakeholders.
+
+
+     o A data communication and transmission security mechanism that meets established security requirements of the Federal Government.
+
+
+     o A secured Wireless Local Area Network, (WLAN) data communication and transmission mechanisms certified to operate in a Department of
+       Defense (DoD) environment as defined in https://acc.dau.mil/GetAttachment.aspx?id=103529&pname=file&aid=23517&lang=en-US.  The system
+       must be certified for installation and operation at the National Naval Medical Center under DoD requirements.
+
+
+
+
+
+       Training Requirements
+
+
+
+
+       The training requirements will consist of the following:
+
+
+
+     o On-site hands-on training for BHEPP technical support staff and end users.  Technical support staff training should include the design,
+       implementation, operations, and maintenance of RFID/RTLS hardware equipment and software applications. End user training should include
+       RFID/RTLS application functionalities, application usages and reporting mechanisms.
+
+
+
+       Support requirements
+
+
+
+      Support requirements will consist of the following:
+
+
+     o Provide consultant services to design, procure, integrate, test, and deploy a proper RFID/RTLS solution to meet BHEPP requirements.
+
+
+     o Provide technical support services to maintain the operations and upgrades of the RFID/RTLS solution including hardware, software
+       applications, and processes.
+
+
+     o Provide 24x7x365 post-implementation support with a maximum of 2-hour call-back for Tech Support.
+
+
+
+
+       BASE TASKS & ACTIVITIES
+
+
+       This section details the base tasks and activities to be awarded as the initial task on the contract.  The Offeror, in the proposal
+       response to this Statement of Work, shall provide detailed cost to satisfy the Site Assessment Task described in C.5.1 and the
+       corresponding deliverables described in C.7.1.
+
+
+    0. SITE ASSESSMENT
+
+
+       The Contractor(s) shall provide the following and all necessary assessment needed to implement an RFID/RTLS that meets BHEPP
+       requirements. These tasks shall be carried out at the designated BHEPP area at all BHEPP sites namely Suburban Hospital, National Naval
+       Medical Center, and National Institutes of Health Clinical Research Center.
+
+
+       The approximate square footage at each of the partner locations where RFID/RTLS will be implemented is as follows:
+
+     o National Naval Medical Center = 92,000 sq ft
+     o Suburban Hospital = 26,000 sq ft
+     o NIH Clinical Center = 4,000 sq ft
+     o The triage tents at each of the three locations will be approximately 4,000 sq ft.
+
+
+
+       The Contractor shall, minimally, perform the following tasks:
+
+
+        I. Develop & Perform Site Survey. The Contractor(s) shall perform a site survey of the three BHEPP Partner facilities,  and, at a
+           minimum, provide the following:
+
+
+           1. RF Penetration & Propagation
+
+
+           2. RF Spectrum Sweep
+
+
+           3. Risk/Interference
+
+
+           4. Existing networks
+
+
+           5. Coverage area & roaming requirements
+
+
+           6. Business requirements for each of the Optional Tasks listed in C.6.
+
+
+           7. Security  requirements
+
+
+       II. Analyze Site Survey Results
+
+
+      III. Provide design and estimated timeline for each of the OPTIONAL TASKS detailed below
+
+
+       IV. Provide costing for each of the OPTIONAL TASKS detailed below
+
+
+
+
+
+
+       OPTIONAL TASKS & ACTIVITIES
+
+
+       This section details the optional tasks and activities to be awarded at the sole discretion of the National Library of Medicine.  The NLM
+       will evaluate the Base Task deliverables of the Contractors(s) and determine whether to make a single award or multiple awards for the
+       Optional Tasks described below.
+
+
+    1. Optional task 1: RFID/RTLS implementation for suburban hospital
+
+
+       THE CONTRACTOR SHALL PERFORM THE FOLLOWING TASKS TO IMPLEMENT AN RFID/RTLS THAT MEETS BHEPP REQUIREMENTS. THESE TASKS SHALL BE CARRIED
+       OUT AT THE DESIGNATED BHEPP AREAS OF SUBURBAN HOSPITAL.
+
+
+    I. The Contractor shall provide the professional services and support required to procure, install, test and deploy RFID/RTLS hardware,
+       software and any supporting infrastructure needed to fulfill all BHEPP RFID/RTLS requirements.
+
+
+   II. The Contractor shall provide integration services for vendor RFID/RTLS specific application as well as support for third-party or BHEPP
+       application support.
+
+
+  III. The Contractor shall be required to inventory all installed equipment, hardware and software procured through this SOW.
+
+
+   IV. The Contractor shall test and certify that RFID/RTLS solution at Suburban Hospital fully meets all BHEPP requirements.
+
+
+    V. The Contractor shall schedule a live demonstration to successfully demonstrate how the RFID/RTLS solution meets BHEPP requirements.
+
+
+   VI. The Contractor shall conduct a post deployment Site Survey for the deployed BHEPP site at Suburban Hospital.
+
+
+  VII. The Contractor shall provide documented processes and procedures for carrying out the various tasks related to the use of the RFID/RTLS
+       solution.  The documentation should be specific to the implementation at Suburban Hospital.
+
+
+ VIII. The Contractor shall provide training for technical staff who will administer and support the RFID/RTLS, and for users of the RFID/RTLS
+       at Suburban Hospital. The training should be a combination of informal training during the product installation process and formal
+       training with related instruction manuals.
+
+
+   IX. The Contractor shall provide ongoing technical support and product maintenance for a period of 1-year after NLM has accepted the
+       installation to be successfully completed.  NLM shall, at its discretion, have the right to renew technical support and product
+       maintenance for ensuing years.
+
+
+
+
+
+    2. optional task 2: RFID/RTLS implementation for national Naval medical center
+
+
+       THE CONTRACTOR SHALL PERFORM THE FOLLOWING TASKS TO IMPLEMENT AN RFID/RTLS THAT MEETS BHEPP REQUIREMENTS. THESE TASKS SHALL BE CARRIED
+       OUT AT THE DESIGNATED BHEPP AREAS OF THE NATIONAL NAVAL MEDICAL CENTER.
+
+
+    I. The Contractor shall provide the professional services and support required to procure, install, test and deploy RFID/RTLS hardware,
+       software and any supporting infrastructure needed to fulfill all BHEPP RFID/RTLS requirements.
+
+
+   II. The Contractor shall provide integration services for vendor RFID/RTLS specific application as well as support for third-party or BHEPP
+       application support.
+
+
+  III. The Contractor shall be required to inventory all installed equipment, hardware and software procured through this SOW.
+
+
+   IV. The Contractor shall test and certify that RFID/RTLS solution at the National Naval Medical Center fully meets all BHEPP requirements.
+
+
+    V. The Contractor shall schedule a live demonstration to successfully demonstrate how the RFID/RTLS solution meets BHEPP requirements.
+
+
+   VI. The Contractor shall conduct a post deployment Site Survey for the deployed BHEPP site at the National Naval Medical Center.
+
+
+  VII. The Contractor shall provide documented processes and procedures for carrying out the various tasks related to the use of the RFID/RTLS
+       solution.  The documentation should be specific to the implementation at the National Naval Medical Center.
+
+
+ VIII. The Contractor shall provide training for technical staff who will administer and support the RFID/RTLS, and for users of the RFID/RTLS
+       at the National Naval Medical Center. The training should be a combination of informal training during the product installation process
+       and formal training with related instruction manuals.
+
+
+   IX. The Contractor shall provide ongoing technical support and product maintenance for a period of 1-year after NLM has accepted the
+       installation to be successfully completed.  NLM shall, at its discretion, have the right to renew technical support and product
+       maintenance for ensuing years.
+
+
+    3. optional task 3: RFID/RTLS implementation for national institutes of health clinical center
+
+
+       THE CONTRACTOR SHALL PERFORM THE FOLLOWING TASKS TO IMPLEMENT AN RFID/RTLS THAT MEETS BHEPP REQUIREMENTS. THESE TASKS SHALL BE CARRIED
+       OUT AT THE DESIGNATED BHEPP AREAS OF THE NATIONAL INSTITUTES OF HEALTH CLINICAL CENTER (NIH/CC).
+
+
+    I. The Contractor shall provide the professional services and support required to procure, install, test and deploy RFID/RTLS hardware,
+       software and any supporting infrastructure needed to fulfill all BHEPP RFID/RTLS requirements.
+
+
+   II. The Contractor shall provide integration services for RFID/RTLS specific application as well as support for third-party or BHEPP
+       application support.
+
+
+  III. The Contractor shall be required to inventory all installed equipment, hardware and software procured through this SOW.
+
+
+   IV. The Contractor shall test and certify that RFID/RTLS solution at the NIH/CC fully meets all BHEPP requirements.
+
+
+    V. The Contractor shall schedule a live demonstration to successfully demonstrate how the RFID/RTLS solution meets BHEPP requirements.
+
+
+   VI. The Contractor shall conduct a post deployment Site Survey for the deployed BHEPP site at the NIH/CC.
+
+
+  VII. The Contractor shall provide documented processes and procedures for carrying out the various tasks related to the use of the RFID/RTLS
+       solution.  The documentation should be specific to the implementation at the NIH/CC.
+
+
+ VIII. The Contractor shall provide training for technical staff who will administer and support the RFID/RTLS, and for users of the RFID/RTLS
+       at the NIH/CC. The training should be a combination of informal training during the product installation process and formal training with
+       related instruction manuals.
+
+
+   IX. The Contractor shall provide ongoing technical support and product maintenance for a period of 1-year after NLM has accepted the
+       installation to be successfully completed.  NLM shall, at its discretion, have the right to renew technical support and product
+       maintenance for ensuing years.
+
+
+    4. optional task 4: RFID/RTLS integration of three partner systems
+
+
+       THE CONTRACTOR SHALL INTEGRATE THE THREE HOSPITAL RFID/RTLS IMPLEMENTATIONS INTO A SINGLE, COMPREHENSIVE VIEW FROM WHICH BHEPP SHALL HAVE
+       THE ABILITY TO TRACK PATIENTS AND ASSETS, FROM ALL THREE HOSPITALS, IN REAL-TIME.  ACCESS TO THIS INTEGRATED, REAL-TIME APPLICATION SHALL
+       BE CONTROLLED USING ROLE-BASED SECURITY.
+
+
+
+
+
+
+    5. optional task 5: Disaster exercise Drill suppOrt
+
+
+       THE CONTRACTOR SHALL PROVIDE SUPPORT FOR A MAJOR BHEPP DISASTER EXERCISE DRILL TO DEMONSTRATE THE EFFECTIVENESS OF RFID/RTLS TECHNOLOGY
+       IN PATIENT TRACKING AND INVENTORY MANAGEMENT IN MASS CASUALTY SITUATIONS. THE CONTRACTOR SHALL BE GIVEN PRIOR NOTICE OF WHEN AND WHERE
+       THESE EXERCISES SHALL BE CARRIED OUT.  THE CONTRACTOR SHALL PROVIDE THE FOLLOWING:
+
+
+    I. Technical support for the integration of BHEPP applications with the Contractor’s RFID/RTLS solution.
+
+
+   II. Preparatory planning for the use of the RFID/RTLS solution during the BHEPP Disaster Exercise.
+
+
+  III. Testing of the RFID/RTLS Disaster Exercise scenario prior to the live Disaster Exercise Drill.
+
+
+   IV. Onsite participation to ensure the smooth functioning of the RFID/RTLS solution during the live Disaster Exercise Drill.
+
+
+
+
+
+
+
+
+       DELIVERABLES
+
+
+    1. deliverables for base task:
+
+
+
+
+    I. SITE SURVEY REPORT: THE CONTRACTOR(S) SHALL SUBMIT ELECTRONIC COPIES OF COMPLETED SITE SURVEYS FOR THE BHEPP DESIGNATED AREAS AT SUBURBAN
+       HOSPITAL, NATIONAL NAVAL MEDICAL CENTER, AND THE NATIONAL INSTITUTES OF HEALTH CLINICAL CENTER.  THE REPORT SHALL CONTAIN APPROPRIATE
+       RECOMMENDATIONS FOR THE PERFORMANCE OF THE OPTIONAL TASKS.  THE REPORT SHALL MINIMALLY CONTAIN THE FOLLOWING INFORMATION:
+
+
+    a. RF Penetration & Propagation
+
+
+    b. RF Spectrum Sweep
+
+
+    c. Risk/Interference
+
+
+    d. Existing networks
+
+
+    e. Coverage area & roaming requirements
+
+
+    f. Business requirements
+
+
+    g. Security  requirements
+
+
+
+
+
+
+   II. Design Document: The Contractor(s) shall submit a completed design document detailing but not limited to the following for Optional Tasks
+       C.4.1, C.4.2 and C.4.3:
+
+
+
+
+    a. Floor Plans with location of RFID/RTLS Readers, Sensors or Access Points
+
+
+    b. Description and purpose of each RFID/RTLS infrastructure component
+
+
+    c. RFID/RTLS Physical Network diagrams
+
+
+    d. RFID/RTLS Logical Network diagrams
+
+
+    e. RFID/RTLS RF Network diagrams
+
+
+    f. Purpose and location of additional network infrastructure
+
+
+    g. Locations and specifications of RFID/RTLS Server hardware and software
+
+
+    h. Locations and specifications of RFID/RTLS mapping application consoles
+
+
+    i. RFID/RTLS cabling, power requirements and specification
+
+
+    j. Detailed Bill of Material (BOM)
+
+
+
+
+
+
+  III. Detailed Pricing for each of the OPTIONAL TASKS: The Contractor(s) shall submit a detailed pricing for each of the optional tasks
+       specified in this SOW.   It shall include itemized cost of labor associated with implementation of RFID/RTLS Evaluation Model, with
+       breakdown of labor categories, hours, unit price and total price.
+
+
+
+
+   IV. Implementation Plan: The Contractor(s) shall submit an implementation plan & schedule for each of the optional tasks specified in this
+       SOW.
+
+
+
+
+    2. deliverables for optional task 1:
+
+
+
+
+    I. DEMONSTRATION OF RFID/RTLS SOLUTION:  THE CONTRACTOR SHALL CONDUCT A LIVE DEMONSTRATION OF THE RFID/RTLS SOLUTION AT SUBURBAN HOSPITAL
+       THAT FULLY MEETS BHEPP REQUIREMENTS.  THE CONTRACTOR SHALL CONDUCT A SUCCESSFUL LIVE, OUTDOOR DEMONSTRATION OF THE MOBILE RFID/RTLS
+       TRIAGE TENT KIT, IF ONE WAS REQUESTED BY THE HOSPITAL DURING THE BASE TASK – SITE ASSESSMENT.  THE DATE AND TIME OF THE DEMONSTRATION
+       SHALL BE COORDINATED WITH THE NLM COTR.
+
+
+
+
+   II. Post Deployment Site Survey Report and Analysis: The Contractor shall submit a post deployment Site Survey and Analysis report for
+       deployed BHEPP site at Suburban Hospital.
+
+
+
+
+  III. A Final Detailed Network Design & Build Document: The Contractor shall submit a final detailed network design and build document showing
+       but not limited to the following for the BHEPP designated areas at Suburban Hospital:
+
+
+
+
+           a. Floor Plans with location of RFID/RTLS Readers, Sensors or Access Points
+
+
+           b. Description and purpose of each RFID/RTLS infrastructure component.
+
+
+           c. RFID/RTLS Physical Network diagrams
+
+
+           d. RFID/RTLS Logical Network diagrams
+
+
+           e. RFID/RTLS RF Network diagrams
+
+
+           f. Purpose and locations of additional network infrastructure
+
+
+           g. Installed locations and specifications of RFID/RTLS Server hardware and software
+
+
+           h. Installed locations and specifications of RFID/RTLS mapping application consoles
+
+
+           i. Detailed Inventory of RFID/RTLS equipment
+
+
+           j. Training for administrators and users of the RFID/RTLS system
+
+
+           k. Service Level Agreement for 1-year of technical support and product maintenance.
+
+
+
+
+   IV. Product, Training and Professional Services:  The Contractor shall furnish product, training and professional services as specified in
+       Optional Task 1.
+
+
+    3. deliverables for optional task 2:
+
+
+
+
+    I. DEMONSTRATION OF RFID/RTLS SOLUTION:  THE CONTRACTOR SHALL CONDUCT A LIVE DEMONSTRATION OF THE RFID/RTLS SOLUTION AT THE NATIONAL NAVAL
+       MEDICAL CENTER THAT FULLY MEETS BHEPP REQUIREMENTS.  THE CONTRACTOR SHALL CONDUCT A SUCCESSFUL LIVE, OUTDOOR DEMONSTRATION OF THE MOBILE
+       RFID/RTLS TRIAGE TENT KIT, IF ONE WAS REQUESTED BY THE HOSPITAL DURING THE BASE TASK – SITE ASSESSMENT.  THE DATE AND TIME OF THE
+       DEMONSTRATION SHALL BE COORDINATED WITH THE NLM COTR.
+
+
+
+
+   II. Post Deployment Site Survey Report and Analysis: The Contractor shall submit a post deployment Site Survey and Analysis report for
+       deployed BHEPP site at the National Naval Medical Hospital.
+
+
+
+
+  III. A Final Detailed Network Design & Build Document: The Contractor shall submit a final detailed network design and build document showing
+       but not limited to the following for the BHEPP designated areas at the National Naval Medical Center:
+
+
+
+
+    a. Floor Plans with location of RFID/RTLS Readers, Sensors or Access Points
+
+
+    b. Description and purpose of each RFID/RTLS infrastructure component.
+
+
+    c. RFID/RTLS Physical Network diagrams
+
+
+    d. RFID/RTLS Logical Network diagrams
+
+
+    e. RFID/RTLS RF Network diagrams
+
+
+    f. Purpose and location of additional network infrastructure
+
+
+    g. Installed locations and specifications of RFID/RTLS Server hardware and software
+
+
+    h. Installed locations and specifications of RFID/RTLS mapping application consoles
+
+
+    i. Detailed Inventory of RFID/RTLS equipment
+
+
+    j. Training for administrators and users of the RFID/RTLS system
+
+
+    k. Service Level Agreement for 1-year of technical support and product maintenance.
+
+
+
+
+   IV. Product, Training and Professional Services:  The Contractor shall furnish product, training and professional services as specified in
+       Optional Task 2.
+
+
+
+
+    4. deliverables for optional task 3:
+
+
+
+
+    I. DEMONSTRATION OF RFID/RTLS SOLUTION:  THE CONTRACTOR SHALL CONDUCT A LIVE DEMONSTRATION OF THE RFID/RTLS SOLUTION AT NIH/CC THAT FULLY
+       MEETS BHEPP REQUIREMENTS.  THE CONTRACTOR SHALL CONDUCT A SUCCESSFUL LIVE, OUTDOOR DEMONSTRATION OF THE MOBILE RFID/RTLS TRIAGE TENT KIT,
+       IF ONE WAS REQUESTED BY THE HOSPITAL DURING THE BASE TASK – SITE ASSESSMENT.  THE DATE AND TIME OF THE DEMONSTRATION SHALL BE COORDINATED
+       WITH THE NLM COTR.
+
+
+
+
+   II. Post Deployment Site Survey Report and Analysis: The Contractor shall submit a post deployment Site Survey and Analysis report for
+       deployed BHEPP site at NIH/CC.
+
+
+
+
+  III. A Final Detailed Network Design & Build Document: The Contractor shall submit a final detailed network design and build document showing
+       but not limited to the following for the BHEPP designated areas at NIH/CC:
+
+
+
+
+    l. Floor Plans with location of RFID/RTLS Readers, Sensors or Access Points
+
+
+    m. Description and purpose of each RFID/RTLS infrastructure component.
+
+
+    n. RFID/RTLS Physical Network diagrams
+
+
+    o. RFID/RTLS Logical Network diagrams
+
+
+    p. RFID/RTLS RF Network diagrams
+
+
+    q. Purpose and location of additional network infrastructure
+
+
+    r. Installed location and specifications of RFID/RTLS Server hardware and software
+
+
+    s. Installed location and specifications of RFID/RTLS mapping application consoles
+
+
+    t. Detailed Inventory of RFID/RTLS equipment
+
+
+    u. Training for administrators and users of the RFID/RTLS system
+
+
+    v. Service Level Agreement for 1-year of technical support and product maintenance.
+
+
+
+
+   IV. Product, Training and Professional Services:  The Contractor shall furnish product, training and professional services as specified in
+       Optional Task 3.
+
+
+
+
+    5. deliverables for optional task 4:
+
+
+
+
+    I. DEMONSTRATION OF INTEGRATED RFID/RTLS SOLUTION:  THE CONTRACTOR SHALL CONDUCT A LIVE DEMONSTRATION OF THE RFID/RTLS SOLUTION THAT SHOWS
+       THE SUCCESSFUL INTEGRATION OF THE INDIVIDUAL HOSPITAL RFID/RTLS IMPLEMENTATIONS INTO ONE, COMPREHENSIVE BHEPP RFID/RTLS SYSTEM.
+
+
+
+
+   II. Role-based Access to Patients and Critical Assets:  The Contractor shall conduct a live demonstration to show how role-based security has
+       been implemented to manage access to patient and critical asset locations at the three BHEPP partner Hospitals.
+
+
+    6. deliverables for optional task 5:
+
+
+    I. PLAN:  THE CONTRACTOR SHALL SUBMIT A PLAN FOR IMPLEMENTING RFID/RTLS FOR THE SCENARIO PROVIDED BY BHEPP FOR THE DISASTER EXERCISE DRILL.
+
+
+
+
+   II. Metrics: The Contractor shall develop a set of metrics to be used and collected during the Disaster Exercise Drill, which will be used to
+       track effectiveness and efficiency gained out of the use of the RFID/RTLS system.
+
+
+
+
+
+
+  III. Lessons-Learned:  The Contractor shall deliver lessons learned from the Disaster Exercise Drill to improve RFID/RTLS use in future
+       Disaster Exercise Drills.
+
+
+
+
+
+
+    7. Project management
+
+
+
+
+    I. KICK-OFF MEETING:  THE CONTRACTOR SHALL ATTEND A KICK-OFF MEETING AT A BHEPP PARTNER LOCATION WITH NLM STAFF WITHIN 15 WORK DAYS AFTER
+       THE NOTICE TO PROCEED DATE.  AT THIS MEETING, THE CONTRACTOR AND NLM WILL SHARE POINT OF CONTACT INFORMATION AND DETERMINE PROJECT
+       PROGRESS REPORTING FREQUENCY AND MECHANISMS.  AT THIS MEETING, THE CONTRACTOR SHALL SUBMIT A DRAFT SITE ASSESSMENT PLAN FOR THE BHEPP
+       PARTNERSHIP TO REVIEW.
+
+
+
+
+   II. Management Meetings: the Contractor shall meet periodically as agreed to in the Kick-off Meeting to update the NLM Project Officer and
+       the BHEPP partnership on the status of services provided under this SOW.
+
+
+
+
+
+
+       EVALUATION FACTORS FOR AWARD
+
+
+    1. GENERAL
+
+
+       THE MAJOR EVALUATION FACTORS FOR THIS REQUEST FOR QUOTATION INCLUDE TECHNICAL EVALUATION FACTORS AND BUSINESS EVALUATION FACTORS.
+       ALTHOUGH TECHNICAL FACTORS ARE OF PARAMOUNT CONSIDERATION IN THE AWARD OF THE CONTRACT, COST/PRICE IS ALSO IMPORTANT TO THE OVERALL
+       CONTRACT AWARD DECISION.  ALL EVALUATION FACTORS OTHER THAN COST OR PRICE, WHEN COMBINED, ARE SIGNIFICANTLY MORE IMPORTANT THAN COST OR
+       PRICE.
+
+
+       Offerors are advised that award will be made to that Offeror whose quotation provides the best overall value to the Government.
+
+
+       The evaluation will be based on the demonstrated capabilities of the prospective Contractors in relation to the needs of the project as
+       set forth in the Statement of Work.  The merits of each quotation will be evaluated carefully.  Each quotation must document the
+       feasibility of successful implementation of the requirements of the Statement of Work.  Offeror must submit information sufficient to
+       evaluate their quotation based on the detailed criteria listed below.  Failure to provide the information required may result in
+       rejection of the quotation without further consideration.
+
+
+       Offerors merely proposing to provide a service in accordance with the statement of work will not be eligible for award.  The quotation
+       must include a comprehensive plan for meeting the needs of the Government, addressing each of the requirements of the Statement of Work,
+       and explaining the technical approach to be used.
+
+
+
+
+    2. TECHNICAL Evaluation  (125 POINTS)
+
+
+       THE TECHNICAL EVALUATION COMMITTEE (TEP) USES THE EVALUATION CRITERIA DESCRIBED BELOW WHEN REVIEWING THE PROPOSALS.  THE CRITERIA BELOW
+       ARE LISTED IN THE ORDER OF RELATIVE IMPORTANCE WITH WEIGHTS ASSIGNED FOR EVALUATION PURPOSES.
+
+
+    1. TECHNICAL APPROACH FOR IMPLEMENTATION OF BASE TASK (25 POINTS)
+
+
+       In the Offeror’s proposal response to the SOW, the Offeror shall provide a technical approach for performing the Base Task described in
+       Article C.5 and its corresponding deliverables described in Article C.7.1.
+
+
+       The Offeror's technical approach for implementation of the Base Task shall be evaluated based on the Offeror's demonstrated understanding
+       of the specific objectives, intent, and requirements of the work; the soundness, practicality, and feasibility of the proposed approach
+       and work plans; and recognition of potential difficulties in performance.  Missing or incomplete responses to required plan elements may
+       result in a significantly reduced score for this factor.  All criteria also apply to any subcontractors whose function and staff shall be
+       identified and described in detail.  The Offeror's understanding of the nature of the technical tasks will be evaluated for completeness,
+       thoroughness, and validity.  The Offeror's specific methodologies and procedures to be utilized in accomplishing the activities reflected
+       in the SOW will be evaluated.
+
+
+
+
+    2. TECHNICAL APPROACH FOR RFID/RTLS IMPLEMENTATION FOR EVALUATION MODEL (80 POINTS)
+
+
+       The Offeror shall provide a complete design for the evaluation model floor plan shown in APPENDIX A: RFID/RTLS EVALUATION MODEL.  Note
+       that the floor plan used in the evaluation model is for the purpose of evaluating Offerors only.
+
+
+       In the Offeror’s technical proposal, the following information, at a minimum, shall be provided:
+
+
+           a. A detailed design document detailing the Offeror’s RFID/RTLS solution to provide room-level precision/accuracy for the RFID/RTLS
+              Evaluation Model shown in Appendix A.
+
+
+           b. Floor Plans with location of RFID/RTLS readers, sensors, bridges or access points.
+
+
+           c. Description and purpose of each RFID/RTLS infrastructure component.
+
+
+           d. RFID/RTLS Physical Network diagrams
+
+
+           e. RFID/RTLS Logical Network diagrams
+
+
+           f. RFID/RTLS RF Network diagrams
+
+
+           g. Network and electrical infrastructure required (switches, cable runs, power outlets, etc.)
+
+
+           h. RFID/RTLS Server hardware and software specifications
+
+
+           i. RFID/RTLS cabling, power requirements and specification
+
+
+           j. Detailed Bill of Material (BOM)
+
+
+
+
+
+
+       The Offeror shall list all assumptions made in responding to Article C.8.2.1.
+
+
+       The Technical Approach for RFID/RTLS implementation for the RFID/RTLS Evaluation Model (Appendix A) will be evaluated using the criteria
+       described below. The criteria are listed in the order of their relative importance.
+
+
+    1. SOUNDNESS OF TECHNICAL APPROACH
+
+
+       The technical approach and understanding of the requirement as defined in the Statement of Work (SOW), and discussed in the Offeror's
+       proposal shall be evaluated based on the Offeror's demonstrated understanding of the specific objectives, intent, and requirements of the
+       work; the soundness, practicality, and feasibility of the proposed approach and work plans; and recognition of potential difficulties in
+       performance.  Missing or incomplete responses to required plan elements may result in a significantly reduced score for this factor.  All
+       criteria also apply to any subcontractors whose function and staff shall be identified and described in detail.  The Offeror's
+       understanding of the nature of the technical tasks will be evaluated for completeness, thoroughness, and validity.  The Offeror's
+       specific methodologies and procedures to be utilized in accomplishing the activities reflected in the SOW will be evaluated.
+
+
+     2. PRODUCT SUITABILITY TO BHEPP REQUIREMENTS
+
+
+       The Offeror’s Technical Approach for the RFID/RTLS Evaluation Model will be evaluated for Product Suitability to BHEPP Requirements by
+       considering the following factors:
+
+     o Ability to precisely track patients and critical assets
+     o Flexibility of active tags available for tagging patients and critical assets
+     o Support for mobile triage configuration
+     o Security compliance of Federal, DoD and Commercial hospital facilities
+     o Ability to track location history of tags
+     o Ability to detect tags in motion
+     o Ability to detect tags in a specified area
+     o API support for BHEPP applications
+     o Workflow integration capability
+     o Event management capability
+
+     3. EASE OF IMPLEMENTATION
+
+
+       The Offeror’s Technical Approach for the RFID/RTLS Evaluation Model will be evaluated for Ease of Implementation by considering the
+       following factors:
+
+     o Potential for disruption to Business
+     o Time to deploy solution
+
+     4. ONGOING MAINTAINABILITY
+
+
+       The Offeror’s Technical Approach for the RFID/RTLS Evaluation Model will be evaluated for Product Suitability to BHEPP Requirements by
+       considering the following factors:
+
+     o Re-calibration needed on an ongoing basis to maintain effectiveness of the RFID/RTLS system
+     o 24x7x365 tech support
+     o Service level agreements offered for ongoing technical support and product maintenance
+     o Ease of extending RFID/RTLS to new areas
+     o Ease of upgrading tags
+     o Ease of upgrading software
+
+
+
+
+    3. CORPORATE RELATED EXPERIENCE (20 POINTS)
+
+
+       The Offeror’s shall provide information to substantiate its experience and capabilities in the RFID/RTLS industry.  The Offeror’s
+       corporate related experience shall be evaluated as follows:
+
+     o Whether or not RFID/RTLS offerings are a core competency of the Offeror
+     o The period of time that the Offeror has been in the RFID/RTLS business
+     o The extent of experience the Offeror has in providing RFID/RTLS solutions to hospitals
+     o Three references from the Offeror’s current customer base, where RFID/RTLS has been implemented in hospitals, to track patients and
+       assets, that are similar in size and scope to this SOW
+     o Visit to customer site to witness an RFID/RTLS deployment similar in scope and size to this SOW.  A visit may be requested at the
+       discretion of the NLM.
+
+
+
+
+                    Total Possible Technical Score = 125 PTS.
+
+
+
+
+
+
+    3. Business Evaluation
+
+
+       THE OFFEROR SHALL PROVIDE DETAILED COSTING FOR PRODUCT AND SERVICES THAT WOULD BE REQUIRED TO IMPLEMENT A FULLY FUNCTIONAL RFID/RTLS
+       SOLUTION FOR THE EVALUATION RFID/RTLS MODEL DESCRIBED IN SECTION 6.2.1.  THE COST BREAKDOWN SHALL INCLUDE THE FOLLOWING:
+
+     o Itemized cost of product associated with implementation of RFID/RTLS Evaluation Model
+     o Itemized cost of labor associated with implementation of RFID/RTLS Evaluation Model, with breakdown of labor categories, hours, unit
+       price and total price
+     o Base Task Pricing for performing the Base Task described in Article C.5, and its corresponding deliverables described in Article C.7.1.
+
+
+
+       Proposed costs/prices will not be point scored, but will be analyzed and examined for the purpose of determining the reasonableness of
+       the proposed price and whether the Offeror understands of the nature and extent of the work to be performed.
+
+
+
+
+
+
+       Advanced Understanding
+
+
+       I. The Offeror’s shall meet all requirements listed in this SOW, and have the ability to perform the Base and Optional Tasks described in
+          this SOW.
+
+
+      II. The Offeror’s response shall not exceed TWENTY-FIVE pages.   Text must be prepared using a minimum 12 font size and Times New Roman
+          font style.  Graphs, tables, drawings and spreadsheets only, if used, must be prepared using a minimum of 8pts font size and Times New
+          Roman or Arial font style.
+
+
+     III. The requirements are subject to change after award.  The Contractor(s) will be notified of such changes in writing.
+
+
+
+
+
+
+       OFFERS
+
+ All proposals must be submitted electronically by 3:00 p.m. (local prevailing time) on September 24, 2009. All responses must be in writing and
+ must include pricing information and meet the criteria requirement. All responses from responsible sources will be considered. All proposals
+ and inquiries regarding this procurement must be submitted via e-mail to ryan.singletary@nih.gov. All questions regarding the combined
+ synopsis/solicitation must be received by Friday, September 18, 2009. Please reference the solicitation number "NLM-09-197-RS" on your proposal
+ and/or inquiries. Facsimile submissions are not authorized and collect calls with NOT be accepted.
+
+
+
+
+
+                                                                 [End of Article]
+
+
+AUTOCAD ATTACHMENT OF RFID/RTLS EVALUATION MODEL
+
+[pic]
+[pic]

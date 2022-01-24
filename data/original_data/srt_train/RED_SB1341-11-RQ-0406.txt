@@ -1,0 +1,485 @@
+
+Amendment A001 to Solicitation SB1341-11-RQ-0406 for a High Performance Computer (HPC) Linux Cluster.
+
+The above referenced solicitation is hereby amended to attach a new revised statement of work, respond to technical questions submitted, and
+extend the due date for quotations.
+
+1.)  A revised statement of work (Attachment 1) has been uploaded to the solicitation per the questions received.  The new minimum
+specifications for this requirement are as stated in Attachment 1.
+
+
+
+2.)  Technical questions and responses are hereby provided:
+
+
+
+QUESTION #1:     Group 1 & 2 Requirements:  What CPU speeds are you looking for? 2.0 – 2.6?
+
+RESPONSE #1:     NIST has no preference.
+
+
+
+QUESTION #2:     Group 1 & 2 Requirements:  What memory setup to obtain 24GB (12x 2GB) or (6x 4GB)?
+
+RESPONSE #2:     NIST has no preference.
+
+
+
+QUESTION #3:     Group 1 Requirements:  Hard drive setup 4x 1TB drive need to configure RAID? Or just install OS on one (1) of the 1TB drive?
+
+RESPONSE #3:     Do not need to configure RAID.  Single drive OS install is acceptable.
+
+
+
+QUESTION #4:     Group 1 & 2 Requirements:  Must provide two (2) multimode 10 Gigabit Ethernet uplinks ports per network switch:
+
+   1. Are you looking to install additional 2-port 10 Gigabit Ethernet Controller Card (AOC-EXPX9502FXSR)?
+
+   2. Or is this connected to the InfiniBand?
+
+RESPONSE #4:     Responses are as follows:
+
+   1. Yes, if the card is needed to provide 10GB Ethernet links.
+
+   2. No, it is not connected to the InfiniBand.
+
+
+
+QUESTION #5:     Group 1 & 2 Requirements:  Must be compatible with existing NIST network composed of SuperMicro SSE-G48-TG4 network switches:
+
+   1. Is this connected from the 1GB Ethernet network?
+
+RESPONSE #5:     No, the connection is from a 10GB Ethernet network.
+
+
+
+QUESTION #6:     Group 1 & 2 Requirements:  Must provide enough ports to support equipment provided by Contractor plus nine (9) ports for
+           integration into existing NIST InfiniBand fabric:
+
+   1. Can you explain in more detail?
+
+RESPONSE #6:     The offeror must provide as many ports needed to provide a 6 to 1 oversubscription to NIST existing cluster.
+
+
+
+QUESTION #7:  Please provide minimum processor requirements (speed, etc.) and information on the type of applications that would be tested on
+           the cluster.
+
+RESPONSE #7:  Must have at least two (2) AMD64 or Intel EM64T (or binary compatible) quad core processor chips.  Each processor must utilize no
+           more than 80 watts when running a copy of High Performance Linpack Benchmark (HPL) on every core and have a published Standard
+           Performance Evaluation Corporation (SPEC) SPECfp_rate2006 base metric benchmark result of 82 or better when using four (4) cores.
+           HPL can be found at www.netlib.org/benchmark/hpl/
+
+
+
+QUESTION #8:  Does NIST currently have specific ‘twin 2U’ servers installed/in-use?
+
+RESPONSE #8:  NIST has no preference.
+
+
+
+QUESTION #9:  Ethernet Network:  All nodes must be connected via a 1 Gigabit Ethernet network:
+
+   1. Can we use a 48-port gigabit switch and a 24-port gigabit switch for the 58 nodes?
+
+RESPONSE #9:  Yes, this is acceptable.
+
+
+
+QUESTION #10:  Ethernet Network:  Must provide two (2) multimode 10 Gigabit Ethernet uplinks ports per network switch:
+
+   1. Do we need to add transceivers and/or MM Fiber cables?
+
+RESPONSE #10:  Offeror must provide transceivers, not MM Fiber cables.
+
+
+
+QUESTION #11:  InfiniBand Interconnect:  Must include nine (9) 10 meter QSFP to QSFP cables for spine:
+
+   1. Is there a preference between Copper and Fiber cables for these?
+
+   2. Can the 3M cables be Copper and the 10M be fiber?
+
+RESPONSE #11:  Responses are as follows:
+
+   1. NIST has no preference between copper and fiber for 10 meter InfiniBand cables.
+
+   2. Copper for 3M cables and fiber for 10M is acceptable.
+
+
+
+QUESTION #12:  The solicitation calls for nine (9) InfiniBand cables for the spine switch, but a 36-port switch will not fit all 58 nodes.  Can
+           we use a larger 96-port switch, or can we use multiple 36-port switches with 9 cables per switch?
+
+RESPONSE #12:  NIST has no preference.  A single switch or multiple switches are acceptable.
+
+
+QUESTION #13:  Group 1 & 2 Requirements:  Each node must have at least two (2) AMD64 or Intel EM64T (or binary compatible) quad core processor
+           chips.
+   1. Please provide the processor frequency
+RESPONSE #13:  NIST has no frequency preference.  See response #7.
+
+QUESTION #14:  Ethernet Network:  Please confirm that the offeror is providing the Ethernet switch.
+RESPONSE #14:  Yes, the offeror must provide switch(es).
+
+QUESTION #15:  InfiniBand Interconnect:  QLogic 12300-BS01 is a 36-port InfiniBand switch, 58 nodes with 9 uplink.  Please provide the network
+           topology.
+RESPONSE #15:  The offeror must provide as many InfiniBand switches as needed.  NIST requires a 6 to 1 oversubscription to NIST existing
+           cluster.
+
+QUESTION #16:  Group 2 Requirements:  Each node must have integrated or add-on remote management card (Baseboard Management Controller or BMC)
+           that is compatible with Intelligent Platform Management Interface (IPMI) 2.0 and supports at least the following remote management
+           functions via an Ethernet LAN interface:  f.) Viewing serial console boot and runtime input/output from a remote management location.
+   1. Does the offeror need to provide a serial console server?  If so, is there an existing or preferred brand of console?
+RESPONSE #16:  No.
+
+QUESTION #17:  Is the solicitation just for hardware, or does NIST want integration (LabVIEW development) done as well?
+RESPONSE #17:  This solicitation is just for hardware.  LabVIEW integration is not required.
+
+QUESTION #18:  The specifications require a certain configuration of Intel or AMD processors.  Would NIST be open to “equivalent performance”
+           utilizing a different technology?
+RESPONSE #18:  NIST uses an in-house modified Red Hat-based Linux operating system and other x86-64 applications that are only compatible with
+           processors that supports x86-64 instruction set.
+
+QUESTION #19:  What is the meaning of twin 2U servers?  Does it mean 2 identical 2U servers?
+RESPONSE #19:  NIST requires two (2) servers (blades) in a single 2U chassis.
+
+QUESTION #20:  Group 1 & 2 Requirements:  Each server must contain two (2) hot-swappable motherboard blades and mounting rails.
+   1. Are terms blades and nodes used interchangeably?
+   2. Do the blades have to have mounting rails attached to them?
+RESPONSE #20:  Responses are as follows:
+   1. Yes, blades and nodes are interchangeable.
+   2. Blades should be enclosed in a 2U chassis.
+
+QUESTION #21:  Group 1 & 2 Requirements:  Each node must have at least two (2) AMD64 or Intel EM64T (or binary compatible) quad core processor
+           chips.
+   1. Can a clock speed for the processors be provided?
+RESPONSE #21:  NIST has no speed preference.  See response #7.
+
+QUESTION #22:  For the server equipment; does NIST have commercial part, model number, or similar model it can provide?
+RESPONSE #22:  NIST has no preference.
+
+QUESTION #23:  For the Network and InfiniBand interconnect; does NIST have commercial model numbers it can provide?
+RESPONSE #23:  NIST has no preference.  See specification #3 under the “Ethernet Network” section and specification #7 under the “InfiniBand
+           Interconnect” section.
+
+
+3.)  The due date for quotations is hereby extended:
+
+
+
+From:  3:00 PM Eastern Time, on July 26, 2011
+
+
+
+To:  3:00 PM Eastern Time, on August 2, 2011
+
+
+FBO ANNOUNCEMENT: PRESOLICITATION NOTICE
+
+ACTION CODE: <PRESOL>
+
+CLASSIFICATION CODE:  66- Laboratory Equipment and Supplies
+
+SUBJECT:  High Performance Computer (HPC) Linux Cluster
+
+SOLICITATION NUMBER:  SB1341-11-RQ-0406
+
+RESPONSE DATE:  August 2, 2011
+
+CONTACT POINTS: Joshua Holliday, Contract Specialist (301) 975-8497
+                                    Janine Kerns, Contracting Officer, (301) 975-4267
+
+DESCRIPTION:
+
+THIS IS A COMBINED SYNOPSIS/SOLICITATION FOR COMMERCIAL
+ITEMS PREPARED IN ACCORDANCE WITH THE FORMAT IN FAR SUBPART 12.6-STREAMLINED PROCEDURES FOR EVALUATION AND SOLICITATION
+FOR COMMERCIAL ITEMS-AS SUPPLEMENTED WITH ADDITIONAL INFORMATION INCLUDED IN THIS NOTICE. THIS ANNOUNCEMENT CONSTITUTES THE ONLY SOLICITATION;
+QUOTATIONS ARE BEING REQUESTED, AND A WRITTEN SOLICITATION DOCUMENT WILL NOT BE ISSUED.
+
+This solicitation is being issued using Simplified Acquisition Procedures.
+
+This solicitation is a Request for Quotation (RFQ). The solicitation document and incorporated provisions and clauses are those in effect
+through Federal Acquisition Circular (FAC) 2005-50.
+
+The associated North American Industrial Classification System (NAICS) code for this procurement is 334111 with a small business size standard
+of 1000 employees. This requirement is 100% set-aside for small business.
+
+Background:
+
+The Enterprise Systems Division (ESD) at the National Institute of Standards and Technology (NIST) require a large Linux cluster in order to
+perform meaningful algorithm scaling studies and for the testing and debugging of large scale computer simulations in preparation for production
+runs on external supercomputers of 10,000+ nodes.  NIST scientists also require additional computing power to perform scientific computing for a
+range of research, including atmospheric transmittance, molecular surface interactions of interest for battery materials, simulation of light
+matter interactions for quantum computing, the development of nanoscale measurement techniques, and modeling of fire phenomena, concrete, and
+cement.
+
+For the past several years, NIST has invested significant efforts in the development of high-performance computing (HPC) Linux clusters to
+provide scientific computing resources to NIST-scientific programs.  After deploying a modest-sized cluster (688 nodes), NIST has the need to
+expand the HPC Linux clusters.
+
+NIST is seeking to procure commercially-available High Performance Computing (HPC) Linux cluster upgrades.  The upgrades obtained in this
+acquisition will be installed into an existing NIST-owned HPC Linux cluster.
+
+All interested Contractors may provide a quote for the following:
+
+The Government reserves the right to increase the quantity of supplies called for at time of award.  Therefore, the Contractor shall quote the
+best price with their offer.
+
+General Requirements:
+
+The Contractor shall provide fifty eight (58) compute nodes built from commodity AMD64 or Intel EM64T (or binary equivalent) rack mounted server
+computers.  Eighteen (18) of the compute nodes (Group 1) must be housed in nine (9) twin 2U servers and forty (40) of the compute nodes (Group
+2) must be housed in ten (10) twin 2U servers.
+
+Line Item 0001:  Quantity Nine (9) Twin 2U Servers, which shall meet or exceed the following minimum specifications:
+
+Group 1 Requirements:
+
+   1. Must have eighteen (18) nodes enclosed in nine (9) twin 2U servers.
+   2. Each server must contain two (2) nodes in a 2U server chassis.
+   3. Each server must contain two (2) hot-swappable dual motherboard blades and mounting rails.
+   4. Power supply must be an 80 PLUS certified power supply having a minimum efficiency of 88% or greater when tested at the following load
+      conditions:  20%, 50%, and 100%.
+   5. Each node must have at least two (2) AMD64 or Intel EM64T (or binary compatible) quad core processor chips.
+   6. Each processor chip must utilize no more than 80 watts when running a copy of High Performance Linpack Benchmark (HPL) on every core and
+      have a published Standard Performance Evaluation Corporation (SPEC) SPECfp_rate2006 base metric benchmark result of 82 or better when using
+      four (4) cores.
+   7. Each node must have basic input/output system (BIOS) set to preboot execution environment (PXE) boot as the first boot option.  The
+      following BIOS settings will be set to off or disabled if supported:  Intel TurboBoost, Intel Simultaneous, and Intel Multithreading.
+   8. Each node must have 24 GB 1066 MHz or faster double-data-rate three (DDR3) synchronous dynamic random access (SDRAM) memory with error-
+      correcting code (ECC).
+   9. Each node must have quad date rate (QDR) or faster InfiniBand connection built into the motherboard.
+  10. Each node must have four 1 terabyte (TB) or larger SATA drives.  The disk(s) must be installed in hot-swappable disk bays and must be
+      accessible for replacement without removing node from the rack.  The disk(s) must have a spin rate of at least 7200 revolutions per minute
+      (RPM) with at least 32 MB cache memory.
+  11. Each node must be capable of running 64 bit Red Hat Enterprise Linux 6.0 or later.  The cluster will be configured with CentOS Linux 5 or
+      later during acceptance testing.
+  12. Each node must have dual gigabit Ethernet with the first interface set to PXE boot.
+  13. Each node must have integrated or add-on remote management card (Baseboard Management Controller or BMC) that is compatible with
+      Intelligent Platform Management Interface (IPMI) 2.0 and supports at least the following remote management functions via an Ethernet LAN
+      interface:
+        a. Remote power off
+        b. Remote power on
+        c. Remote system (re)boot
+        d. Remote motherboard bios setting
+        e. Remote motherboard bios upgrade/update/flashing
+        f. Viewing serial console boot and runtime input/output from a remote management location
+  14. Each node must have power, disk storage, and network indicators.
+
+Line Item 0002:  Quantity Ten (10) Twin 2U Servers, which shall meet or exceed the following minimum specifications:
+
+Group 2 Requirements:
+
+   1. Must have forty (40) nodes enclosed in ten (10) twin 2U servers.
+   2. Each server must contain four (4) nodes in a 2U server chassis.
+   3. Each server must contain four (4) hot-swappable dual motherboard blades and mounting rails.
+   4. Power supply must be an 80 PLUS certified power supply having a minimum efficiency of 88% or greater when tested at the following load
+      conditions:  20%, 50%, and 100%.
+   5. Each node must have at least two (2) AMD64 or Intel EM64T (or binary compatible) quad core processor chips.
+   6. Each processor chip must utilize no more than 80 watts when running a copy of High Performance Linpack Benchmark (HPL) on every core and
+      have a published Standard Performance Evaluation Corporation (SPEC) SPECfp_rate2006 base metric benchmark result of 82 or better when using
+      four (4) cores.
+   7. Each node must have basic input/output system (BIOS) set to preboot execution environment (PXE) boot as the first boot option.  The
+      following BIOS settings will be set to off or disabled if supported:  Intel TurboBoost, Intel Simultaneous, and Intel Multithreading.
+   8. Each node must have 24 GB 1066 MHz or faster double-data-rate three (DDR3) synchronous dynamic random access (SDRAM) memory with error-
+      correcting code (ECC).
+   9. Each node must have quad date rate (QDR) or faster InfiniBand connection built into the motherboard.
+  10. Each node must have at least 500 GB of local disk storage.  The disk(s) must be accessible for replacement without removing node from the
+      rack.  The disk(s) must have a spin rate of at least 7200 revolutions per minute (RPM) with at least 16 MB cache memory.
+  11. Each node must be capable of running 64 bit Red Hat Enterprise Linux 6.0 or later.  The cluster will be configured with CentOS Linux 5 or
+      later during acceptance testing.
+  12. Each node must have dual gigabit Ethernet with the first interface set to PXE boot.
+  13. Each node must have integrated or add-on remote management card (Baseboard Management Controller or BMC) that is compatible with
+      Intelligent Platform Management Interface (IPMI) 2.0 and supports at least the following remote management functions via an Ethernet LAN
+      interface:
+        a. Remote power off
+        b. Remote power on
+        c. Remote system (re)boot
+        d. Remote motherboard bios setting
+        e. Remote motherboard bios upgrade/update/flashing
+        f. Viewing serial console boot and runtime input/output from a remote management location
+  14. Each node must have power, disk storage, and network indicators.
+
+Both Line Items 0001-0002 shall meet or exceed the following minimum specifications:
+
+Identical Parts:
+
+   1. Each node group must contain identical parts, including identical firmware revisions/versions and board-level hardware revision numbers.
+
+Ethernet Network:
+
+All nodes must be connected via a 1 Gigabit Ethernet network:
+
+   1. Must support Secure Shell (SSH), Hypertext Transfer Protocol Secure (HTTPS), Simple Network Management Protocol Version 3 (SNMPv3), and
+      nine (9) kilobyte jumbo frames.
+   2. Must provide two (2) multimode 10 Gigabit Ethernet uplinks ports (including transceivers) per network switch.  NIST will provide fiber
+      cabling connections between network switches.
+   3. Must be compatible with existing NIST network composed of SuperMicro SSE-G48-TG4 network switches.
+   4. Must include rack mounting kit.
+   5. Must include 3 meter Category 6 (Cat6) cables for each node.
+   6. Must include support documentation (user guide, CLI reference, etc.)
+
+InfiniBand Interconnect:
+
+All nodes must be connected via an InfiniBand fabric:
+
+   1. Must have two (2) redundant and field-replaceable power supplies.
+   2. Must support 40/20/10 Gigabit per second auto-negotiation links.
+   3. Must support quad small form factor pluggable (QSFP) optical and copper cables.
+   4. Must support Simple Network Management Protocol (SNMP).
+   5. Must support OpenIB’s OpenSM subnet manager.
+   6. Must have a command line interface accessible via 10/100 Ethernet.
+   7. Must be compatible with existing NIST InfiniBand fabric composed of QLogic 12300-BS01 InfiniBand switches.
+   8. Must provide enough ports and 10 meters InfiniBand cables to support a 6 to 1 oversubscription integration into existing NIST InfiniBand
+      QSFP fabric.
+   9. Must include rack mounting kit.
+  10. Must include 3 meter QSFP to QSFP InfiniBand cables for each node.
+  11. Must include support documentation (user guide, CLI reference, etc.)
+
+Operating System:
+
+No operating system required.  NIST will install an in-house Red Hat-based Linux operating system.
+
+Login and Gateway Nodes:
+
+No ancillary nodes (login, gateway, etc.) required.
+
+Warranty:
+
+The Contractor shall provide, at a minimum, a three (3) year return to depot warranty for all proposed hardware and cables. The warranty must
+cover all defects in materials and workmanship for a period of three (3) years from the date of final acceptance by the Government.
+
+Delivery:
+
+Delivery shall be made to NIST, 100 Bureau Drive, Gaithersburg, MD 20899. Delivery shall be completed no later than two (2) months after
+acceptance of the purchase order.
+
+Delivery terms shall be FOB Destination. FOB Destination means: The contractor shall pack and mark the shipment in conformance with carrier
+requirements, deliver the shipment in good order and condition to the point of delivery specified in the purchase order, be responsible for any
+loss of and/or damage to the goods occurring before receipt and acceptance of the shipment by the consignee at the delivery point specified in
+the purchase order; and pay all charges to the specified point of delivery.
+
+Inspection and Acceptance Criteria (see FAR 52.212-4(a)):
+
+The Government will inspect and accept the equipment within one (1) week of arrival at NIST.  Upon delivery, and again during unpacking, NIST
+will inspect for shipping damage and lost or missing equipment.
+
+In addition to the inspection and acceptance terms articulated in 52.212-4, the Government reserves the right to perform such performance tests
+and evaluations as defined below to verify specified system performance.  Such tests and evaluations, if performed, shall be conducted within
+the environment that the system is to be operated.  The Contractor has the right to be present during the test and evaluations, if performed, at
+the Contractor’s expense.
+
+
+Acceptance Testing:
+
+   1. Physical verification of equipment ordered
+        a. Verify quantities and specifications
+   2. Bring system online
+        a. Verify CPU speed
+        b. Verify RAM total and speed
+        c. Verify BIOS settings
+        d. Verify PXE enabled Ethernet interface
+        e. Verify IPMI interface exists, is enabled, and receives IP address by DHCP
+   3. Performance and reliability testing
+        a. Boot nodes with memtest86 via PXE and run for 8 hours
+        b. Run “HPL” benchmark test for 24 hours
+
+Provisions and Clauses:
+
+The following provisions and clauses apply to this acquisition and are hereby incorporated by reference.  All FAR clauses may be viewed at
+http://acquisition.gov/comp/far/index.html.
+
+Provisions:
+
+52.212-1, Instructions to Offerors – Commercial Items
+52.212-3, Offeror Representations and Certifications – Commercial Items
+52.217-4, Evaluation of Options Exercised at Time of Contract Award
+
+Offerors shall complete annual representations and certifications on-line at http://orca.bpn.gov in accordance with FAR 52.212-3 Offerors
+Representations and Certifications – Commercial Items.  If paragraph (j) of the provision is applicable, a written submission is required.
+
+Clauses:
+
+52.212-4 Contract Terms and Conditions—Commercial Items;
+52.212-5 Contract Terms and Conditions Required to Implement Statutes or Executive Orders—Commercial Items including subparagraphs:
+
+
+      52.204-10  Reporting Subcontract Awards
+      52.219-4    Notice of Price Evaluation Preference for HUBZone Small Business         Concerns
+      52.219-6    Notice of Total Small Business Set Aside
+      52.219-28  Post Award Small Business Program Rerepresentation
+      52.222-3    Convict Labor
+      52.222-19   Child Labor – Cooperation with Authorities and Remedies
+      52.222-21  Prohibition of Segregated Facilities
+      52.222-26  Equal Opportunity
+      52.222-35  Equal Opportunity for Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans
+      52.222-36  Affirmative Action for Workers with Disabilities
+      52.222-37  Employment Reports on Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans
+      52.223-18  Contractor Policy to Ban Text Messaging While Driving
+      52.225-3    Buy American Act – Free Trade Agreements – Israeli Trade Act
+      52.225-13  Restrictions on Certain Foreign Purchases
+      52.232-33  Payment by Electronic Funds Transfer – CCR.
+
+52.217-6 Option for Increased Quantity – The Government may increase the quantity of supplies called for in the Schedule at the unit price
+specified.  The Contracting Officer may exercise the option by written notice to the Contractor within 1 day of the expiration of the option.
+Delivery of the added items shall continue at the same rate as the like items called for under the contract, unless the parties otherwise agree.
+
+Department of Commerce Agency-Level Protest Procedures Level above the Contracting Officer is also incorporated.  It can be downloaded at
+www.nist.gov/admin/od/contract/agency.htm.
+
+Instructions to Offerors:
+
+Central Contractor Registration:
+
+In accordance with FAR 52.204-7, the awardee must be registered in the Central Contractor Registration (www.ccr.gov) prior to award.  Refusal to
+register shall forfeit award.
+
+Due Date for Quotations:
+
+Offerors shall submit their quotations so that NIST receives them not later than 03:00 p.m. Eastern Time on Tuesday, August 2, 2011.  FAX
+quotations shall not be accepted.  E-mail quotations shall be accepted at joshua.holliday@nist.gov.  Offerors’ quotations shall not be deemed
+received by the Government until the quotation is entered into the e-mail address inbox set forth above.
+
+Quotations shall be sent to the National Institute of Standards and Technology, Acquisition Management Division, Attn: Joshua Holliday, 100
+Bureau Drive, Stop 1640, Gaithersburg, MD 20899-1640.  All offerors should ensure the RFQ number is visible on the outermost packaging.
+
+Because of heightened security, FED-EX, UPS, or similar delivery methods are the preferred method of delivery of quotes.  If quotes are hand
+delivered, delivery shall be made on the actual due date through Gate A, and a 48 hour (excluding weekends and holidays) prior notice shall be
+provided to Joshua Holliday, Contract Specialist on 301-975-8497.
+
+Quotation Instructions:
+
+The Offeror shall submit the following:
+
+Technical Acceptability:
+
+The Offeror shall submit the following:
+
+1) An original and one (1) copy of a quotation which addresses Line Items 0001-0002
+2) An original and one (1) copy of the technical description and/or product literature
+3) Description of warranty
+4) An original and one (1) copy of the most recent published price list(s)
+5) Country of Origin information for each line item
+
+Price:
+
+The Offeror shall submit a firm-fixed price.
+
+Basis for Award Determination/Evaluation Criteria:
+
+Award shall be made to the firm that provides the lowest priced, technically acceptable quote.  Technical acceptability means that the quote
+meets all of the stated minimum specifications. The Government will evaluate information based on the following evaluation criteria: 1)
+Technical Capability factor "Meeting or Exceeding the Requirement," and 2) Price.
+
+Technical Capability:
+
+Evaluation of Technical Capability will be based on the information provided in the quotation.  NIST will evaluate whether the offeror has
+demonstrated that its proposed equipment meets or exceeds all minimum requirements. Quotations that do not demonstrate the proposed equipment
+meets all requirements will not be considered further for award.  If an offeror does not indicate whether its proposed equipment meets a certain
+minimum requirement, NIST will determine that it does not.
+
+Price:
+
+Quoted price will be evaluated for reasonableness.
+

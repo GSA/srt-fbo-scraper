@@ -1,0 +1,155 @@
+Performance Work Statement for Document Automation and Production Service (DAPS) FY10 Information Technology and Information Assurance Support
+1. Background
+The Document Automation & Production Service (DAPS) continues to refine its programs, policies and techniques for providing the information technology tools and maintaining an acceptable level of information assurance as it meets its mission for the DOD and the Federal Government. Further, the market in the area of document automation and automated printing services continue to change rapidly as technology and services evolve to meet the demands of e-Business consumers. Information Assurance, specifically computer and network security, has become an ever growing task. With the hostile traffic on DAPS' networks increasing daily, network monitoring and security has become an immediate need. Platform security and organizational security infrastructure are also ongoing initiatives that are of utmost importance.
+
+2. Scope
+DAPS requires Contractor support services to aid the organization in managing and assisting in the DAPS Information Technology and Assurance efforts. Support Services under this contract will cover the period from 1 October 2010 to 30 September 2011. The Contractor shall provide project management, project oversight and technical services for system problem resolution, system upgrades, system monitoring, operating system patches, system security management, system administration support, firewall maintenance, information assurance, desktop support and configuration management efforts as described in Section 3, Performance Requirements.
+
+3. Performance Requirements
+3.1 Network Infrastructure Support The Contractor shall provide Network Infrastructure Support to DAPS Headquarters (HQ) to maintain the operational capabilities and security posture of DAPS' networks. Support of the network infrastructure includes manning a network helpdesk with in house support weekdays (0730 ­ 1700 Eastern) and oncall support 24x7. The Contractor shall provide a minimum of two cell phones for after hour coverage. 3.1.1 Support of the DAPS Firewall Platform The Contractor shall provide support of the DAPS Firewall Platform which is currently Checkpoint Provider-1. This support includes maintenance, monitoring and configuration of DAPS' firewalls, rule base, log servers and backups. A centralized configuration and monitoring solution for the firewall infrastructure shall be maintained. Firewalls shall be configured according to the DISA STIG requirements in coordination with the DAPS Information Assurance Manager (IAM). This task also includes building replacement firewalls, establishing Virtual Private Networks (VPNs), troubleshooting issues and creating/maintaining rule bases. The contractor shall also support (maintenance, monitoring and configuration) the DLA Provider-1 high availability backup server located at DAPS HQ.
+
+S:\DAPS CONTRACTING\Jacksonville\Jama's Files\New Action\IT and IA support for HQ\SA4705-10-R-0141\IT and IA Support for HQ FY11 - draft (2) (2).docx
+
+1
+
+3.1.2 Support of the DAPS Network Switches The Contractor shall provide support of the DAPS Network Switches which are currently Cisco Layer 2 and 3 devices. This support includes maintenance, monitoring and configuration of the DAPS managed switches. Switches shall be configured according to the DISA STIG requirements in coordination with the DAPS IAM. The Contractor will maintain the DAPS IP site allocations in coordination with DLA NeMO. Performance Performance Acceptable Quality Method of Surveillance Requirements Standards Level (AQL) 3.1.1 Support of the DAPS Firewall Platform Firewalls should be operational including backups and logging, and should be configured according to the DISA STIG requirements. Contractor shall perform all requests, answering all help desk calls on a timely basis. Network switches should be operational, and should be configured according to the DISA STIG requirements. Firewalls remain operational. Issues are resolved in a timely manner. There is STIG compliance. Status reports. Government review of logs and trouble tickets.
+
+3.1.2 Support of the DAPS Network Switches
+
+Switches remain operational. Issues are resolved in a timely manner. There is STIG compliance.
+
+Status reports. Government review of logs and trouble tickets.
+
+3.2 Local Area Network (LAN) and System Administration Support The Contractor shall provide LAN support to include User Help Desk Support and System Administration of servers and workstations. The Contractor will be responsible for asset life-cycle support and maintenance. 3.2.1 User Help Desk Support The Contractor shall provide User Help Desk Support for the DAPS HQ personnel. This support includes troubleshooting issues at local and remote sites. Support shall be available weekdays (0700 ­ 1630 Eastern). The Contractor should be well versed in Windows XP and common software used on DOD Desktops to include but not limited to: MS Office Suite, Tumbleweed, Active Identity, Adobe Acrobat, Java, Adobe Flash and Checkpoint Pointsec. 3.2.2 System Administration Support The Contractor shall provide System Administration Support for desktops and servers under the DAPS HQ purview to include Windows (XP and 7), Windows Server (2003, 2008) and Solaris (8, 9, 10). All systems shall be installed and configured based on the available DISA STIG's. Systems shall be maintained using automated means when available. System Administration Support/Maintenance includes patching, licensing, account management, troubleshooting, log review, backups, clean-up, vulnerability review, responding to taskings and maintaining/documenting STIG compliance. The
+
+S:\DAPS CONTRACTING\Jacksonville\Jama's Files\New Action\IT and IA support for HQ\SA4705-10-R-0141\IT and IA Support for HQ FY11 - draft (2) (2).docx
+
+2
+
+Contractor shall be responsible for the asset lifecycle tasks including tracking end-of-life, recommending replacement equipment and installation of equipment received. The Contractor shall be responsible for providing System Administration support of the following: Citrix ­ DAPS uses Citrix for application virtualization. The current Citrix setup includes clustered Secure Gateways, Web Interfaces and Presentation Servers. DNS, DHCP ­ DAPS currently utilizes an Infoblox appliance as part of the larger DLA infrastructure to maintain external DNS and intends to further utilize the appliance for internal DNS and DHCP requests. HP Openview ­ DAPS uses an HP Openview server to track assets within the organization. In addition to the System Administration duties of the server the Contractor will also support the Openview application. ISA Proxy ­ A single proxy server is used by DAPS to proxy the outbound user traffic from the Juniper VPN. This proxy utilizes Microsoft ISA. The Contractor shall maintain the server and the software used to proxy the network traffic. Network Attached Storage (NAS) ­ DAPS utilizes a NAS for storage of user documents, VM instances, databases, etc. Pointsec Management Server ­ Checkpoint's Pointsec disk/media encryption product is currently deployed to all DAPS desktops and laptops. The Contractor shall be familiar with the products operation and support the main DAPS Pointsec Management Server. Retina/REM ­ The Retina/REM servers are used to monitor vulnerabilities within the DAPS networks. SCCM ­ DAPS utilizes an SCCM server for monitoring and reporting, deploying images, patch management, executing scripts and general server/desktop maintenance. Solarwinds Network Monitoring Server ­ DAPS utilizes the Solarwinds server to monitor the network via SNMP. The Solarwinds toolset can identify when servers and/or devices become unusable or meet predefined thresholds. VMWare ­ DAPS utilizes virtualization techniques to reduce the overall physical infrastructure and increase reliability. DAPS currently has two VMWare instances with multiple servers located on each system. Vontu ­ DAPS uses the Vontu application to search for unprotected sensitive information such as Personally Identifiable Information (PII) on DAPS equipment. Websense ­ DAPS utilizes Websense web content filtering software to restrict and monitor DAPS user traffic. The Contractor shall provide System Administration support for the devices and ensure the application is running as expected. There are approximately 12 servers associated with Websense. DAPS personnel will be responsible for using the application to adjust policy and provide reports. WSUS ­ DAPS currently maintains a single WSUS server covering DAPS HQ, Washington Office Group (OG) and San Diego OG with all other OG's maintaining their own WSUS servers. DAPS intends to migrate to a single WSUS server model for all of DAPS plus a COOP (replica) system.
+
+S:\DAPS CONTRACTING\Jacksonville\Jama's Files\New Action\IT and IA support for HQ\SA4705-10-R-0141\IT and IA Support for HQ FY11 - draft (2) (2).docx
+
+3
+
+Desktops shall be installed with the DAPS/DLA standard image. All desktops/laptops will be maintained to preserve a common install/settings between the desktops/laptops thus eliminating uniqueness between systems. 3.2.3 Philadelphia Technical Support The Contractor shall provide desktop, printer and server support for Philadelphia office group sites including: Mechanicsburg bldg 410, Carlisle War College, Letterkenny Depot, New Cumberland Depot and Tobyhanna Depot. In addition, the Contractor shall provide technical support of the Server systems supporting electronic document management solutions located at the Mechanicsburg 410 computing facility. Performance Requirements 3.2.1 User Help Desk Support Performance Standards Contractor shall provide DAPS HQ personnel with User Help Desk Support, and be able to troubleshoot issues with Windows XP and common software used on DOD Desktops. Contractor shall provide effective support services in all aspects of deploying approved applications and systems. Contractor shall provide effective desktop, printer, and server support for the Philadelphia office group sites. In addition, Contractor will provide effective technical support of the server system supporting electronic document management solutions. Acceptable Quality Level (AQL) DAPS HQ personnel are able to use necessary software. Windows XP is up and running with minimal downtime. DAPS HQ receives timely and effective User Help Desk Support. Desktops, servers and systems are operational. All systems are up and running with minimal downtime. There is STIG compliance. Desktops, servers, and printers are operational. The server system supporting electronic document management solutions is operational. Method of Surveillance Routine inspection of deliverable products and services.
+
+3.2.2 System Administration Support
+
+Routine inspection of deliverable products and services.
+
+3.2.3 Philadelphia Technical Support
+
+Routine inspection of deliverable products and services.
+
+3.3 Information Assurance The Contractor shall provide engineering and technical support to ensure the Information Systems within DAPS are running securely and in compliance with DAPS, Defense Logistics Agency (DLA) and DOD policies.
+
+S:\DAPS CONTRACTING\Jacksonville\Jama's Files\New Action\IT and IA support for HQ\SA4705-10-R-0141\IT and IA Support for HQ FY11 - draft (2) (2).docx
+
+4
+
+3.3.1 Threats and Vulnerabilities The Contractor shall develop and implement procedures for the prevention, identification and remediation of threats and vulnerabilities. Vulnerability assessments shall be performed continuously due to evolving technologies and the contractor will provide solutions for maintaining appropriate security levels. 3.3.1.1 Vulnerability Scanning and Remediation The Contractor shall scan all DAPS assets on the DLA network each month using the DLA approved EEye Retina scanning solution. The Contractor shall be responsible for remediating any findings on assets that the Contractor is the registered System Administrator. The Contractor shall coordinate a DAPS response to DLA CERT in reporting the number of assets scanned, an accounting of each vulnerability found and any applicable POAM's for remaining vulnerabilities. 3.3.1.2 DLA Computer Emergency Response Team (CERT) Taskings, Advisories, Bulletins The Contractor shall advise, implement and respond to DLA CERT Taskings, Advisories and Bulletins. The Contractor will lead the effort to notify DAPS System Administrators of new Taskings, track progress and provide details to DLA CERT on status. The Contractor will coordinate POAM submissions to DLA CERT by combining multiple requests into a coherent document. The Contractor will monitor POAM milestone dates to ensure the System Administrators are meeting the due dates. 3.3.1.3 Host Based Security System (HBSS) The Contractor shall lead, implement and maintain the DAPS HBSS system which is a custom install of the McAfee E-Policy Orchestrator product. The Contractor will assist DAPS System Administrators with loading of the appropriate modules, apply the necessary exceptions and monitor the appropriate logs. There are several high level requirements for the HBSS project which include: ˇ Antivirus ­ Work with HBSS and the System Administrator to ensure each system has the McAfee Antivirus product loaded and the latest virus signatures are being utilized. The Contractor will monitor the systems and notify DAPS IA staff if/when a virus is found. ˇ ˇ ˇ ˇ Host Intrusion Prevention ­ Ensure all High, Medium and Low level HIPS events are investigated and either allowed or brought to the attention of the DAPS IA staff. Firewall ­ Ensure all desktops/laptops are utilizing the McAfee firewall. The Contractor will manage the overall firewall policy within HBSS. Application Hooking/Whitelisting ­ Ensure all servers utilize the application hooking/whitelisting. The Contractor shall manage the overall configuration within HBSS. Baselines ­ The Contractor shall ensure all baseline events within the reporting period (time length dependant on the current Infocon level) are investigated appropriately. Changes in the baseline will occur when new software is installed, new users are added to the system and registry keys are changed.
+
+3.3.2 Information Assurance Manager (IAM) Support The Contractor will serve as backup to the DAPS IAM. Typical duties include Incident monitoring/support, establishing IA policy, account approval and technical reviews. DAPS currently supports contracts for over 44,000 Multi-Function Devices. The Contractor will provide assistance in
+
+S:\DAPS CONTRACTING\Jacksonville\Jama's Files\New Action\IT and IA support for HQ\SA4705-10-R-0141\IT and IA Support for HQ FY11 - draft (2) (2).docx
+
+5
+
+reviewing technical requirements from customers and support the Multi-Function Device team in adjusting the requirements to meet advances in technology. 3.3.3 Production Printing Support One of DAPS' primary support functions to the Dept of Defense is providing production printing facilities where customers can request print jobs from small black and white copies to large printings of color manuals. DAPS is required to procure and distribute production printing equipment that meets the DISA STIG requirements. The Contractor shall assist DAPS in reviewing potential products for IA concerns. In addition, the Contractor will work with the vendor to establish a "clean" configuration based on the DISA STIG's. The Contractor will also provide ongoing support of the systems by notifying the vendor of new patches that have been released and assisting the vendor in ensuring a STIG compliant configuration is in place. The Contractor will provide general troubleshooting and system support for the vendor and DAPS production sites. The print production equipment currently being supported includes, but is not limited to: Xerox, Konica Minolta, Kodak and OCE. Performance Requirements 3.3.1 Threats and Vulnerabilities Performance Standards Appropriate security levels will be continuously maintained. The Information Assurance Manager and the Multi-Function Device team will receive effective backup as needed. DAPS receives effective assistance from the contractor with reviewing potential products for IA concerns. Vendors and DAPS production sites are provided with effective troubleshooting and system support. Acceptable Quality Level (AQL) Network integrity is continuously maintained and DLA timelines for implementation and reporting are met. The Information Assurance Manager and Multi-Function Device team receives effective and knowledgeable support. DAPS government personnel receive effective Contractor support. Method of Surveillance
+
+Government review.
+
+3.3.2 Information Assurance Manager (IAM) Support
+
+Government review.
+
+3.3.3 Production Printing Support
+
+Government review.
+
+3.4 Government Furnished Equipment (GFE), Facilities and Services The Government shall provide the Contractor the appropriate access to the following resources in performance of this task order:
+
+S:\DAPS CONTRACTING\Jacksonville\Jama's Files\New Action\IT and IA support for HQ\SA4705-10-R-0141\IT and IA Support for HQ FY11 - draft (2) (2).docx
+
+6
+
+ˇ ˇ
+
+All hardware, servers and communications equipment (excluding cell phones for on-call support); Access to all required databases, servers, network components, workstations and other hardware as appropriate to enable the Contractor to perform any installation and configuration tasks; Software licenses for Microsoft products and other GFE; Any third-party products discussed in section 3; Applicable regulations, manuals and other materials associated with the project, as required.
+
+ˇ ˇ ˇ
+
+3.5 Supervision The Contractor shall assign a Task Manager and staff with the expertise to successfully complete the task. The Contractor shall provide all supervision of Contractor personnel and perform all related administrative functions. The Contractor is responsible for all management of Contractor staff. The Contractor shall be capable of providing project management expertise to ensure smooth project execution and completion.
+
+5. Deliverables
+The Contractor shall deliver a monthly progress report describing services provided to the Government during the previous month. A monthly report shall consist of, but is not limited to, work activities and accomplishments, hours charged, and costs. Written status reports can be requested by DAPS at any time and on any frequency.
+
+Task No. All
+3.2 Local Area Network (LAN) and System Administration Support 3.3 Information Assurance
+
+Deliverable Monthly Status Report Monthly status reports and, as required, provide site surveys and site installation plans Monthly status reports and as required, provide administration procedures
+
+Data Item Description (DID) Contractor Format Contractor Format
+
+Calendar Days After Start 5th working day each month 5th working day each month
+
+Contractor Format
+
+5th working day each month
+
+S:\DAPS CONTRACTING\Jacksonville\Jama's Files\New Action\IT and IA support for HQ\SA4705-10-R-0141\IT and IA Support for HQ FY11 - draft (2) (2).docx
+
+7
+
+6. Travel
+The performance location for all tasks is DAPS HQ, Mechanicsburg, PA. There may be travel required to support DAPS' mission. Travel is expected to Washington DC including surrounding suburbs and DAPS Office Group location throughout the continental U.S. Anticipate twelve two-man trips of 4 day duration to DAPS CONUS Office Group locations. Actual expenses are limited by the Government Travel Regulations and per diem rates. Travel will be limited to the requirements identified under the associated tasks.
+
+7. Labor Estimates
+Offerors must provide resumes of individuals who will provide the technical support services which address the tasks specified in this Performance Work Statement. Each task's estimated labor hours by GSA Labor Categories are as follows: Task 3.1 Information Systems Security Support Labor Hours 384 4032 0 3.2 Integration Strategies Support 384 5376 3072 3.3 Information Systems Administration Support 1152 4032 768 GSA Labor Category Senior Security Engineer Information Security Monitor Security Analyst Senior Security Engineer Information Security Monitor Security Analyst Senior Security Engineer Information Security Monitor Security Analyst
+
+Descriptions of the GSA Labor Categories are: Senior Security Engineer ­ Minimum/General Experience: implementation and development of multilevel security. Ten (10) years experience with
+
+Functional Responsibility: Engineers, designs, develops, and implements solutions to multilevel security requirements. Gathers and organizes technical information about an organization's mission goals and needs, existing security products and ongoing programs in the multilevel security arena. Minimum Education: Bachelor's Degree in related scientific or technical discipline or minimum fifteen (15) years experience in the field without a degree. Information Security Monitor - Minimum/General Experience: Five (5) years experience in defining computer security requirements for high-level applications, evaluation of approved security product capabilities and developing solutions to multilevel security problems.
+
+S:\DAPS CONTRACTING\Jacksonville\Jama's Files\New Action\IT and IA support for HQ\SA4705-10-R-0141\IT and IA Support for HQ FY11 - draft (2) (2).docx
+
+8
+
+Functional Responsibility: Analyzes and defines security requirements for multilevel security issues. Network monitoring and detecting of malicious activities. Performs risk analysts, which also includes risk assessment. Minimum Education: Bachelor's Degree in related scientific or technical discipline or minimum seven (7) years experience in field without a degree. Security Analyst - Minimum/General Experience: Three (3) years of technical experience which applies to operation and monitoring of computer equipment and operational security issues. Requires competence in all areas of computer equipment maintenance and their peripherals; also requires knowledge of computer troubleshooting. Functional Responsibility: Provides computer operations support and performs tasks to maintain computer equipment and their peripherals. Guides and supports end-users by phone and in-person in the areas of e-mail, directories, and standard desktop applications. Identifies, researches and resolves technical problems and security issues in a timely manner. Minimum Education: Associate's Degree in related scientific or technical discipline or minimum five (5) years experience in field without a degree.
+
+8. Security Requirement
+All positions are critical sensitive and all contractors must have a favorably adjudicated NACLC (National Agency Check, Local Checks and Credit Checks) prior to performing under this contract. All contractors must be able to obtain a satisfactory SSBI (Single Scope Background Investigation) investigation and ADP I designation when required by the COR. Additionally, if the COR identifies a position as requiring access to classified information at the secret level, the contractor must have a clearance granted by the Defense Industrial Security Clearance Office (DISCO) prior to being given access.
+
+9. Certification Requirements Per DOD directive 8570.1M, all contractors must meet the minimum DAPS baseline IA certification requirement of Security+ in order to satisfy the DOD 8570 IA baseline certification requirement. Additionally, contractors must obtain appropriate Computing Environment (CE) certification(s) for the operating system(s) and/or security related tools/devices they support as required by DAPS. This requirement ensures they can effectively apply IA requirements to their hardware and software systems. 10. Contract Type
+This is a firm, fixed price contract.
+
+11. Period of Performance
+The period of performance for this contract shall be from 1 October 2010 through 30 September 2011 and will include 4, one year options at the discretion of the Government.
+
+S:\DAPS CONTRACTING\Jacksonville\Jama's Files\New Action\IT and IA support for HQ\SA4705-10-R-0141\IT and IA Support for HQ FY11 - draft (2) (2).docx
+
+9
+
+12. Inspection and Acceptance Authority
+The Inspection Authority (IA) identified below shall be responsible for review and inspection of the goods and services. The IA may utilize other Government representatives, or qualified contractors to provide assistance. Name: Organization: Address: Mr. Bill Gibbons Acting Director, Information Technology DAPS HQ 5450 Carlisle Pike, Bldg 09 P.O. Box 2020 Mechanicsburg, PA 17055-0788 (717) 605-2681 (717) 605-3977 Bill.Gibbons@dla.mil
+
+Phone: Fax: Email:
+
+The Acceptance Authority/Contracting Officer's Representative (COR) identified below shall be responsible for accepting goods and services on behalf of the Government. Name: Organization: Address: Phone: Fax: Email: Ms. Helen Oltheten DAPS-I 5450 Carlisle Pike, Bldg 09 P.O. Box 2020 Mechanicsburg, PA 17055-0788 (717) 605-1284 (717) 605-3977 Helen.Oltheten@dla.mil
+
+13. Government Point of Contact
+During the performance of this order, Bill Gibbons or his appointed technical staff, acting as the Government point of contact, will provide technical direction. Name: Organization: Address: Phone: Fax: Email: Mr. Bill Gibbons DAPS-I 5450 Carlisle Pike, Bldg 09 P.O. Box 2020 Mechanicsburg, PA 17055-0788 (717) 605-2681 (717) 605-3977 Bill.Gibbons@dla.mil
+
+14. Invoicing
+Invoicing against this Delivery Order shall be supported with backup data including Period of Performance, Labor Categories/Hours and Other Direct Cost supporting documentation.
+
+S:\DAPS CONTRACTING\Jacksonville\Jama's Files\New Action\IT and IA support for HQ\SA4705-10-R-0141\IT and IA Support for HQ FY11 - draft (2) (2).docx
+
+10
+
+S:\DAPS CONTRACTING\Jacksonville\Jama's Files\New Action\IT and IA support for HQ\SA4705-10-R-0141\IT and IA Support for HQ FY11 - draft (2) (2).docx
+
+11
+
+

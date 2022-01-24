@@ -1,0 +1,3003 @@
+STATEMENT OF WORK
+
+(11-02-2010)
+
+
+
+Mainframe Software Support
+
+
+
+INTRODUCTION
+
+
+
+This Statement of Work (SOW) is for professional Information Technology (IT) services to provide mainframe software support services for SSA’s National Computing Center (NCC), Second Support Center (SSC), and National Support Center (NSC).
+
+
+
+BACKGROUND
+
+
+
+The Social Security Administration (SSA) currently operates eight IBM zSeries mainframes at the National Computer Center (NCC) and at the Second Support Center (SSC) including zSeries Application Assistant Processors (zAAP) and zSeries Integrated Information Processor (zIIP) engines, and in the future, consideration of the National Support Center (NSC).  The Agency runs hundreds of mainframe software products from multiple vendors on approximately 35 LPARS.  Since 2007, the Agency has pursued a comprehensive program that has allowed the Agency to manage better mainframe software business decisions in support of the overall mission of the SSA.  
+
+
+
+The program has provided the Agency with specific information to improve best practices and allow SSA to better manage the life cycle of mainframe software assets.  The results of the program have allowed the Agency to cut costs, reduce liability exposure, improve mainframe software compliance and better match mainframe software use with contract terms.  The program is helping the Agency to mature as an organization in capturing and integrating physical, financial, and contractual data that supports the functions needed to manage mainframe software assets effectively and optimize SSA’s performance.
+
+
+
+Of vital importance to the program has been the assistance of independent outside Contractors with expert knowledge of best practices in mainframe software asset management.  The Agency continues to have a requirement for services from a Contractor that is independent from the software products running on its mainframe environment to continue software pricing model assessments and assist in determining the best licensing structures for software products.
+
+
+
+OBJECTIVE
+
+
+
+The Agency will continue to evaluate the economic feasibility of changing some software licensing structures to zSeries New Application License Charges (zNALC), workload license charges (WLC), sub-capacity pricing, or other software pricing models where it is in the best interest of the Government.  
+
+The Agency has specifically targeted IBM software because it presented the clearest advantage in terms of implementation in terms of overall saving.  The outcome of these consulting efforts shall allow SSA to leverage new knowledge of software pricing models that allow for additional savings to the Government.
+
+SCOPE
+
+ 
+
+Independently, and not as an agent of the Government, the Contractor shall furnish a comprehensive set of professional IT support services to support SSA in maturing a strategic path to recognizing software cost savings to SSA; and to help SSA staff  to make more effective business decisions relating to software licensing activities in the Agency’s mainframe environment.  
+
+
+
+The Agency requires services from a Contractor that is independent from the software products running on its mainframe environment to continue software pricing model assessments and assist in determining the best licensing structures for software products.  The Contractor shall possess and expert understanding of IBM’s zSeries mainframes and software, Logical Partition (LPAR) configuration, alternative workload structures and current software pricing alternatives. 
+
+
+
+Contractor support will specifically involve: 
+
+
+
+Market Survey, Information and Recommendations 
+
+
+
+Sub capacity reporting tool (SCRT) activities 
+
+
+
+Alternative-Pricing Structures 
+
+
+
+Analysis of Software 
+
+
+
+Monthly Assessment status reports.
+
+
+
+TASKS
+
+
+
+Task 1 – Market Survey, Information and Recommendations 
+
+
+
+The Contractor shall keep SSA informed of any newly announced, changed or modified terms, conditions and or policies from IBM and with respect to the mainframe z/OS operating environment software.  
+
+
+
+The Contractor shall initiate this task to survey all available sources of information and provide the most current recommendation concerning the mainframe z/OS operating environment as it relates to SSA’s use of IBM software in size, scope and complexity. 
+
+
+
+The Contractor shall deliver a written report by email to SSA that will detail any newly announced or modified terms, conditions and or policies from IBM respect to SSA’s mainframe z/OS operating environment (changes) that have occurred in the prior calendar month.
+
+
+
+
+
+
+
+
+
+The Contractor shall deliver a written report which at a minimum will include the following elements concerning each affected product: Product name, Product ID, Function ID, License entitlement Primary product/maintenance, A description of the scope and magnitude of the newly announced, changed or modified terms, conditions and or policies from IBM as they relate to SSA’s environment, An analysis by product(s) of the actual or potential changes to SSA’s current software licensing structures, and Recommendations. 
+
+
+
+The Contractor shall provide an offsite/onsite presentation within 15 business days of the delivery of the report.
+
+
+
+
+
+Task 2 – Sub Capacity Reporting Tool (SCRT) Activities
+
+
+
+Each month, SSA runs SCRT reports on the mainframe z/OS operating environment to determine usage of IBM software products.  SSA transmits these SCRT reports to IBM for billing purposes (due the 9th of each month). SSA will provide the SCRT reports to the Contractor by the 4th of each month. 
+
+
+
+The Contractor shall provide SSA with reconciliation support of these reports for accuracy 
+
+by the 8th  of each month.  
+
+
+
+The Contractor shall deliver by email a written report to SSA that details any SCRT reconciliation variance by email.
+
+
+
+The Contractor shall recommend and/or assist SSA with any SCRT parameter changes that are required to insure accurate reports are generated for billing purposes
+
+
+
+The Contractor shall independently estimate OTC entitlements and shortfalls
+
+
+
+The Contractor shall incorporate any recommendations into the Monthly Report 
+
+
+
+The Contractor shall, if  required,  assist SSA and IBM in offsite/onsite reconciling of the SCRT reports.
+
+
+
+The Contractor shall deliver a written report which at a minimum will include the following elements concerning each affected product:
+
+
+
+Product name
+
+Product ID, Function ID
+
+License entitlement 
+
+Primary product/maintenance
+
+Analysis of SCRT
+
+Product license type 
+
+International Program License Agreement (IPLA)
+
+Monthly License Charge (MLC)
+
+zSeries New Application License Charge  (zNALC)
+
+Sub-Capacity (Sub-Cap)
+
+Full cap Millions of Service Units (MSU)
+
+Full Cap Value Units (VU)
+
+Sub Cap MSU/VU
+
+IPLA Type
+
+VUE
+
+Reference Parent
+
+$ / Value Unit
+
+Multiple Growth Scenarios
+
+Full Cap MSU with growth
+
+Full Cap VU with growth
+
+Sub Cap MSU / VU with growth
+
+Additional One Time Charge (OTC) and Subscription and Support (S&S) with growth
+
+Machine and Product Cross Reference within the mainframe z/OS operating environment
+
+
+
+
+
+Task 3 – Alternative-Pricing Structures
+
+
+
+The Contractor shall assist SSA in evaluations of alternate software pricing structures in the Agency's mainframe z/OS operating environment when SSA publishes new capacity projections or when unplanned capacity increases occur.  
+
+
+
+The Contractor shall search for optimization opportunities and assist in planning and migration to alternative pricing structures including sub-capacity.
+
+
+
+The Contractor shall conduct an offsite/onsite presentation session to provide SSA with an understanding of alternative pricing structures when SSA publishes new capacity projections or when unplanned capacity increases occur.  
+
+
+
+The Contractor shall participate in offsite/onsite discussions with IBM, other vendors and SSA to review alternative pricing structures.
+
+
+
+The Contractor shall deliver a written report which at a minimum will include the following elements:
+
+Product name
+
+Product ID, Function ID
+
+License entitlement
+
+Primary product/maintenance
+
+The Contractor shall provide SSA with projected cost changes that result for upgrades or movement of workloads within the environment.  
+
+Analysis of SCRT
+
+Product license type (IPLA, MLC, zNALC, Sub-Cap)
+
+Full cap MSU
+
+Full Cap VU
+
+Sub Cap MSU/VU
+
+IPLA Type
+
+VUE
+
+Reference Parent
+
+$ / Value Unit
+
+Multiple Growth Scenarios
+
+Full Cap MSU with growth
+
+Full Cap VU with growth
+
+Sub Cap MSU / VU with growth
+
+Additional OTC and Subscription and Support with growth
+
+Machine and Product Cross Reference within the mainframe z/OS operating environment
+
+
+
+
+
+Task 4 – Analysis of Software
+
+
+
+The Contractor shall assist the Agency in maintaining a comprehensive inventory of software products on the Agency’s zSeries mainframes.  
+
+
+
+The Contractor shall assist in validating the installed inventory vs. the licensed inventory of IBM software within the mainframe z/OS operating environment. 
+
+
+
+The Contractor shall provide the inventory report within 30 days of award of this Purchase Order, and shall provide monthly updates to the report until the completion of this work order.  
+
+
+
+The Contractor shall deliver a written report which at a minimum will include the following elements:
+
+
+
+Product name
+
+Product ID, Function ID
+
+License entitlement
+
+Primary product
+
+Machine and Product Cross Reference within the mainframe z/OS operating environment
+
+Product license type (IPLA, MLC, zNALC, Sub-Cap)
+
+Cost metrics
+
+
+
+Task 5 – Monthly Assessment Status Reports
+
+
+
+The Contractor shall provide by email monthly reports outlining consulting activities.  
+
+The Contractor shall provide an assessment status report detailing opportunities that exist for mainframe software savings.  
+
+
+
+The Contractor shall provide the assessment status report within 30 days of award of this Purchase Order, and shall provide updates to the report every 30 days until the completion of this work order. 
+
+The Contractor shall provide SSA with information detailing the findings, results, recommendations related to the objectives listed above.  
+
+
+
+The Contractor may use reports, diagrams, presentations or any other vehicle available to convey this information.  
+
+
+
+The Contractor shall present a set of options, weighted for priority, cost and benefit, and defined such that SSA may implement them in increments and such that the increments stand independently.  
+
+
+
+The Contractor shall provide a detailed report containing the following elements:
+
+Period of performance
+
+Executive summary
+
+Past Achievements
+
+Current Status
+
+Updates on prior reports
+
+Opportunities
+
+Recommendations
+
+Summary
+
+
+
+DELIVERABLES
+
+
+
+All reports or other written documentation shall be submitted by hard paper copy or electronic copy as requested by the COTR. The Contractor shall provide the following deliverables for review and acceptance by the Project Officer:
+
+
+
+
+
+
+
+
+
+INSPECTION AND ACCEPTANCE OF DELIVERABLES
+
+
+
+The contractor shall provide SSA with information detailing the findings, results, recommendations related to the listed objectives.  The contractor may use reports, diagrams, presentations, or any other vehicle available to convey this information.  The contractor will present a set of options, weighted for priority, cost, and benefit and defined such that SSA may implement them in increments and so that the increments stand independently.  That is, successful implementation of one phase should not be dependent on completion of a later phase. 
+
+
+
+SSA reserves the right to perform testing on a contractor’s EIT solution in order to validate that the contractor has installed, configured or integrated the EIT solution in a way that does not reduce the level of conformance with SSA’s Accessibility Requirements.   
+
+SSA reserves the right to test replacements or maintenance upgrades to ensure this requirement is met throughout the life of the contract.
+
+
+
+The contractor shall provide SSA with information detailing the findings, results, recommendations related to the listed objectives.  The contractor may use reports, diagrams, presentations, or any other vehicle available to convey this information.  The contractor will present a set of options, weighted for priority, cost, and benefit and defined such that SSA may implement them in increments and so that the increments stand independently.  That is, successful implementation of one phase should not be dependent on completion of a later phase. 
+
+
+
+Reporting information on subject matter areas relating to project management (identifying requirements, establishing clear and achievable objectives, balancing competing demands for quality, scope, time and cost, and adapting plans and approaches to the concerns of stakeholders, including OTSO and DCS management), will conform to the minimum information standards contained in A Guide to the Project Management Body of Knowledge (PMBOK Guide), Third Edition, 2004 PMI Institute.
+
+
+
+The contractor will submit and maintain project management information using standard project management tools in use throughout SSA (including Microsoft Project and Microsoft Office Suite or compatible formats).
+
+
+
+For any form of documentation (i.e. training manual, user guides, etc.), SSA requires the contractor to provide documentation in an electronic, accessible format, such as Text, RTF, Adobe Acrobat PDF, Microsoft Word or HTML. 
+
+
+
+The contractor will provide supporting documentation in approved formats upon request, at no additional charge. Supporting documentation includes, but is not limited to:
+
+
+
+Project plans in Microsoft Project format at the onset of the project and when updated.
+
+Technical diagrams in MS Visio format when submitted for updates or final deliverables.
+
+Draft and final study results in MS Word and MS Power Point formats when submitted for updates or final deliverables.
+
+Statistical data in MS Excel or comparable format when submitted for updates or final deliverables.
+
+Written progress reports on a monthly basis or when updates are requested.
+
+
+
+
+
+PLACE OF PERFORMANCE
+
+
+
+Onsite Activities shall most likely be conducted at SSA Headquarter facility located at the National Computer Center (NCC), the Second Support Center (SSC) in Durham, NC, the Operations building, the Meadows East building or at the anticipated National Support Center (NSC).  SSA and the contractor shall schedule the exact work location in advance of onsite activities.  
+
+
+
+
+
+PERIOD OF PERFORMANCE
+
+
+
+The period of performance of this delivery order shall be for the 12-month period of December 1, 2010 through November 30, 2011, with four (4) successive 12-month option periods:
+
+
+
+Basic Period:			December 1, 2010 through November 30, 2011
+
+Option Year 1:			December 1, 2011 through November 30, 2012
+
+Option Year 2:			December 1, 2012 through November 30, 2013
+
+Option Year 3:			December 1, 2013 through November 30, 2014
+
+Option Year 4:			December 1, 2014 through November 30, 2015
+
+
+
+ 
+
+GOVERNMENT FURNISHED INFORMATION, WORKSPACE, AND EQUIPMENT
+
+
+
+The Contractor shall ensure that personnel working on this order shall have the equipment, software and tools routinely used in industry to accomplish their assigned tasks.  No government furnished equipment is required for this order.
+
+
+
+DELIVERY ORDER TYPE
+
+
+
+This Delivery Order is Firm-Fixed-Price, Level-of-Effort [reference the Federal Acquisition Regulation (FAR) 16.207]
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Firm-Fixed-Price, Level-of-Effort
+
+
+
+The Contractor shall provide the following resources in the performance of this SOW:
+
+
+
+Total Price (Base plus Four Options) $________________
+
+
+
+Modifications: Subsequent to the issuance of the Purchase Order, the COTR or the Contractor may recommend a change to the approved work plan.  Such a change shall be required if there is a change in the projected level-of-effort, including both increases and/or decreases to the projected level-of-effort.  
+
+
+
+Any such change shall be discussed by the COTR and the Contractor.  The Contracting Officer will then request the Contractor to provide a revised work plan/price quotation based on the recommended changes.  The COTR will review the work plan modification quotation and submit it to the Contracting Officer for approval.  The Contracting Officer will then issue a Purchase Order modification to the Contractor via a Standard Form (SF 30), Amendment of Solicitation/Modification of Contract.  
+
+
+
+
+
+
+
+Each rate set out above is a fully burdened Direct Labor Hour Rate, including
+
+profit. The term "direct labor hour" means an actual hour of direct labor as determined by generally accepted accounting practice which can be readily identified as being definitely and specifically chargeable to the work authorized by the Purchase order.
+
+
+
+Contractor agrees that all amounts for travel are in accordance with FAR 31.205-46
+
+and are allowable and allocable as defined thereunder. Contractor agrees that claims
+
+for travel reimbursement will be in accordance with Contractor's policies, as may be
+
+approved by the Government, and will not exceed Federal Travel Regulations where applicable.
+
+
+
+If necessary for the proper performance of this task, Contractor may increase or decrease the direct labor hours within each direct labor category as set forth above but in no event shall such variance(s) result in Contractor exceeding the firm fixed price of the Purchase Order.
+
+Nothing in this Purchase Order shall obligate the Contractor to take any action which
+
+would cause the amount for which the government would be obligated hereunder to
+
+exceed the firm fixed price of this Purchase Order and the government shall not be
+
+obligated to pay the Contractor on account of any work performed hereunder any
+
+amount in excess of such sum.
+
+
+
+PROJECT MANGEMENT AND CONTROL REQUIREMENTS
+
+
+
+The Contractor shall appoint a single project manager who has the responsibility for all services provided under this purchase order and full management authority for all Contractor personnel assigned to work on this project.  The project manager shall serve as the primary point of contact for the Government's COTR in matters concerning this purchase order and will interact with other Government Employees as appropriate. 
+
+
+
+At least 30 days prior to diverting any of the specified individuals from their assignment on this project, the Contractor shall notify the COTR and Contracting Officer and submit justification (including proposed substitutions) in sufficient detail to permit an evaluation of the impact of the change upon the services provided under this purchase order.  No diversion shall be made by the Contractor without the written consent of the Contracting Officer.  In cases of removal for misconduct or transfer for health or other personal problems, where a 30 day warning may be impossible, the COTR and Contracting Officer shall be notified as soon as the condition requiring removal or diversion is recognized.
+
+
+
+
+
+BILLING AND INVOICES
+
+
+
+Each invoice shall identify hours, labor category, other direct costs and travel.  Contractor shall submit invoices monthly in arrears for services performed under this Purchase Order.
+
+
+
+
+
+
+
+
+
+
+
+CONTRACTING OFFICER TECHNICAL REPRESENTATIVE (COTR)
+
+
+
+The following COTR will represent the Government for the purpose of this delivery order:
+
+
+
+Project Officer:		TBD
+
+		
+
+The COTR is responsible for: (1) monitoring the Contractor’s technical progress, including the surveillance and assessment of performance and recommending to the Contracting Officer changes in requirements; (2) interpreting the Statement of Work and any other technical performance requirements; (3) performing technical evaluations as required; (4) performing technical inspections and acceptance required by this delivery order; and (5) assisting in the resolution of technical problems encountered during performance.
+
+
+
+The Contracting Officer is the only person with authority to act as agent of the Government under this delivery order.  Only the Contracting Officer has authority to: (1) direct or negotiate any changes in the Statement of Work; (2) modify or extend the period of performance; (3) change the delivery schedule; (4) authorize reimbursement to the Contractor of any costs incurred during the performance of this delivery order; or (5) otherwise change any terms and conditions of this delivery order.
+
+
+
+The Government may unilaterally change its Project Officer designation.
+
+
+
+
+
+CONTRACTOR PERFORMANCE EVALUATIONS
+
+
+
+Interim and final evaluations of contractor performance will be prepared on this task order in accordance with FAR 42.15.  The final performance evaluation will be prepared at the time of completion of work.  In addition to the final evaluation, interim evaluations will be prepared annually to coincide with the anniversary date of the contract.
+
+
+
+Interim and final evaluations will be provided to the Contractor as soon as practicable after completion of the evaluation.  The Contractor will be permitted thirty days to review the document and to submit additional information or a rebutting statement.  If agreement cannot be reached between the parties, the matter will be referred to an individual one level above the Contracting Officer, whose decision will be final.
+
+
+
+Copies of the evaluations, contractor responses, and review comments, if any, will be retained as part of the contract file, and may be used to support future award decisions.
+
+
+
+SSA shall measure the Contractor on the following factors:
+
+
+
+(1) 	Quality of product/service delivered (i.e., compliance with contract requirements; accuracy of reports; appropriateness of personnel; and technical excellence);
+
+
+
+(2)	Cost Control (i.e., within budget, current and accurate billings, relationship of negotiated costs to actual costs incurred, cost efficiencies, change orders issued);
+
+
+
+(3)	Timeliness of Performance (i.e., met interim milestones, reliable, responsiveness to technical direction, completed on time, including wrap-up and contract administration, no liquidation damages assessed);
+
+
+
+(4)	Business Relations (i.e., effective management; business-like correspondence, responsive to contract requirements, prompt notification of problems; flexible; reasonable and cooperative, pro-active, effective contractor-recommended solutions; and effective subcontracting programs); and
+
+
+
+(5)	Customer Satisfaction (i.e., both internal and external customers (end users) are satisfied with the products or services rendered by the contractor).
+
+
+
+SECTION 508 COMPLIANCE
+
+
+
+Applicability of SSA’s Accessibility Requirements to EIT Solutions
+
+The Social Security Administration considers accessibility to Electronic and Information Technology, hereafter referred to as “EIT”, a priority for all employees and external customers, including people with disabilities.  
+
+SSA requires that EIT procured, developed, maintained, or utilized meets the accessibility requirements under Section 508 of the Rehabilitation Act of 1973, as amended, 29 U.S.C. § 794d and additional agency specific accessibility requirements, hereafter referred to in total as “SSA’s Accessibility Requirements”.  This is to ensure the accessibility of its programs and activities to people with disabilities, specifically its obligation to acquire accessible EIT.  The EIT deliverables covered under SSA’s Accessibility Requirements include: 
+
+Any equipment or interconnected system or subsystems of equipment used in the creation, conversion, or duplication of data or information.  The term EIT includes, but is not limited to, software applications and operating systems, telecommunications products, worldwide websites, video, multimedia, information kiosks, office equipment (e.g., desktops, copiers, fax machines, printers, and notebook computers), and electronic content.  
+
+Any EIT deliverables developed, procured, maintained, or used by agencies directly or used by a contractor under a contract with an agency that requires the use of such product, or requires the use to a significant extent, of such product in the performance of a service or the furnishing of a product.   
+
+The final delivered EIT products provided through custom development, installation, configuration, integration, and maintenance services.  
+
+The contractor’s response may include a single EIT product or service, or be comprised of multiple EIT products and services bundled together (i.e. solution).   Within this document, the term “EIT solution” shall refer to both.  All technical requirements and functional performance criteria that are associated with the checked sections below must be addressed. At a minimum, the contractor’s EIT solution shall conform to the following checked requirements:
+
+Applicable Section 508 Standards
+
+
+
+
+
+Applicable additional agency specific accessibility requirements
+
+
+
+   
+
+Definitions of additional agency specific accessibility requirements
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Deliverable
+
+SOW Task
+
+Due Date
+
+ Monthly Report (written) 
+
+1
+
+By the 15th of each month
+
+Offsite/Onsite Presentation
+
+1
+
+Within 15 business days of delivery of the monthly report
+
+Monthly Report (written)
+
+2
+
+By the 8th of each month
+
+Reconciliation Support
+
+2
+
+As specified in the task
+
+ Report (written)
+
+3
+
+As required
+
+Offsite/Onsite Presentation
+
+3
+
+As specified in the task
+
+Offsite/Onsite Review and Discussions
+
+3
+
+As specified in the task
+
+Monthly Report (written)
+
+4
+
+Within 30 days of award; and each month until completion of this order
+
+Assessment Status Report
+
+5
+
+Within 30 days of award; and each month until completion of this order
+
+
+
+                                 Firmed Fixed Price, Level-of-Effort
+
+                                 Firmed Fixed Price, Level-of-Effort
+
+                                 Firmed Fixed Price, Level-of-Effort
+
+ 
+
+ 
+
+ 
+
+ 
+
+Base Year
+
+Labor Category
+
+Hourly Rate
+
+Number of Hours
+
+Price
+
+Project Manager
+
+$ 
+
+
+
+$ 
+
+TBD
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Total Labor (Not to Exceed)
+
+ 
+
+250
+
+ 
+
+Travel (Not to Exceed)
+
+ 
+
+ 
+
+ 
+
+Base Year Total Price
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+                                 Firmed Fixed Price, Level-of-Effort
+
+                                 Firmed Fixed Price, Level-of-Effort
+
+                                 Firmed Fixed Price, Level-of-Effort
+
+ 
+
+ 
+
+ 
+
+ 
+
+Option Year 1
+
+Labor Category
+
+Hourly Rate
+
+Number of Hours
+
+Price
+
+Project Manager
+
+$ 
+
+
+
+$ 
+
+TBD
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Total Labor (Not to Exceed)
+
+ 
+
+250
+
+ 
+
+Travel (Not to Exceed)
+
+ 
+
+ 
+
+ 
+
+Base Year Total Price
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+                                 Firmed Fixed Price, Level-of-Effort
+
+                                 Firmed Fixed Price, Level-of-Effort
+
+                                 Firmed Fixed Price, Level-of-Effort
+
+ 
+
+ 
+
+ 
+
+ 
+
+Option Year 2
+
+Labor Category
+
+Hourly Rate
+
+Number of Hours
+
+Price
+
+Project Manager
+
+$ 
+
+
+
+$ 
+
+TBD
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Total Labor (Not to Exceed)
+
+ 
+
+250
+
+ 
+
+Travel (Not to Exceed)
+
+ 
+
+ 
+
+ 
+
+Base Year Total Price
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+                                 Firmed Fixed Price, Level-of-Effort
+
+                                 Firmed Fixed Price, Level-of-Effort
+
+                                 Firmed Fixed Price, Level-of-Effort
+
+ 
+
+ 
+
+ 
+
+ 
+
+Option Year 3
+
+Labor Category
+
+Hourly Rate
+
+Number of Hours
+
+Price
+
+Project Manager
+
+$ 
+
+
+
+$ 
+
+TBD
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Total Labor (Not to Exceed)
+
+ 
+
+250
+
+ 
+
+Travel (Not to Exceed)
+
+ 
+
+ 
+
+ 
+
+Base Year Total Price
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+                                 Firmed Fixed Price, Level-of-Effort
+
+                                 Firmed Fixed Price, Level-of-Effort
+
+                                 Firmed Fixed Price, Level-of-Effort
+
+ 
+
+ 
+
+ 
+
+ 
+
+Option Year 4
+
+Labor Category
+
+Hourly Rate
+
+Number of Hours
+
+Price
+
+Project Manager
+
+$ 
+
+
+
+$ 
+
+TBD
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Total Labor (Not to Exceed)
+
+ 
+
+250
+
+ 
+
+Travel (Not to Exceed)
+
+ 
+
+ 
+
+ 
+
+Base Year Total Price
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+1194.21	Software Applications and Operating Systems
+
+
+
+1194.22	Web Information and Applications
+
+
+
+1194.23	Telecommunications 
+
+
+
+1194.24	Video and Multimedia
+
+
+
+1194.25	Self-contained, Closed Products
+
+
+
+1194.26	Desktop and Personal Computers
+
+
+
+1194.31	Functional Performance Criteria
+
+
+
+1194.41	Information and Documentation Support
+
+
+
+
+
+1.1	Software Compatibility with Assistive Technology
+
+X
+
+1.2	Documentation in Accessible Formats
+
+
+
+1.3	Video and sound card compatibility with assistive technology
+
+
+
+1.4  	Hardware Devices that Contain Digital Windows
+
+
+
+1.5	Technical Support and Assistance (Hotline)\
+
+X
+
+1.6	Training
+
+
+
+1.7  	Installation, Configuration & Integration Services
+
+
+
+1.8	Maintenance and replacements
+
+
+
+1.9	Labor Hours
+
+
+
+1.10	Equivalent Facilitation 
+
+
+
+1.1	
+
+Software Compatibility with Assistive Technology
+
+All IT software deliverables provided as part of the contractor’s solution must be compatible with:
+
+JAWS screen reading software (Version 9.0);
+
+MAGIC screen magnification software (Version 11); and
+
+Dragon Naturally Speaking Professional voice recognition software (Version 9.5).
+
+ “Software” includes, but is not limited to, any of the following which contain a user interface:  websites, interactive web based applications, client server applications, desktop applications, mainframe applications, applets, middleware, and drivers. 
+
+
+
+“Compatible” means that the software shall fully conform to the applicable Section 508 standards when used with the assistive technology referenced above.  Alternative assistive technologies embedded within the software to achieve accessibility (i.e. screen reader, screen magnifier, voice recognition) 
+
+shall not be accepted as a substitute for compatibility with SSA’s assistive technology environment.  
+
+If the contractor’s solution includes installing the product in the SSA environment, the contractor shall explicitly state that the software shall be installed in a manner that shall not reduce the level of conformance with SSA accessibility requirements that currently exists.
+
+For a complete description on the JAWS and MAGIC software packages, please refer to Freedom Scientific’s web site at .  To obtain a 30/60 day version of the JAWS/MAGIC software for development and testing, please send contact information and the SSA procurement number (for verification) to Charles Madsen at: . 
+
+
+
+For a complete description on the Dragon Naturally Speaking software package, please refer to Nuance’s web site at .  To obtain a trial version of the Dragon Naturally Speaking software for development and testing, please send contact information and the SSA procurement number (for verification) to Tom Derrico at: . 
+
+
+
+1.2     
+
+Documentation in Accessible Formats
+
+Any form of documentation provided (i.e. training manual, user guides, embedded documents etc.), including any documentation deliverables required in the statement of work, shall be provided in a fully accessible format.  
+
+The documents shall be provided in one of the following formats:  Text, RTF, Microsoft Word or HTML format , or properly “tagged” PDF,. Properly tagged PDF’s can be verified by using Adobe Acrobat’s Accessibility Checker.
+
+Documentation delivered in a manner that is interactive (e.g., table of contents, Index, Search, etc.) shall be keyboard navigable, move focus to selected items (or have a keyboard alternative) and be comparable in keyboard access to mouse usage.  All images (especially screenshots and technical diagrams (which are the sole means for conveying instructions) should include alternative text explaining the image so that a person who is blind would understand the screenshot, chart, figure, etc.  Documentation shall include information on the accessibility features of the product.  If keyboard shortcuts are provided to allow access to program functionality, a list of the keyboard shortcuts shall be provided.
+
+Documentation that is delivered in a video or multimedia publication shall comply with the Section 508 requirements detailed in 36 CFR part 1194.24 and the functional performance criteria detailed in 36 CFR 1194 Subpart C.   In addition, SSA requires conformance to SSA’s Accessibility Requirements for all video and multi-media deliverables.  SSA does not accept text equivalents used to replace speech, and requires captions to be synchronized with speech.
+
+
+
+1.3
+
+Video and Sound Card Compatibility with Assistive Technology
+
+Video and sound cards purchased separately for, or included with, any desktop or portable computer systems shall be compatible with the following Assistive Technologies:
+
+JAWS screen reading software (Version 9.0);
+
+MAGIC screen magnification software (Version 11); and
+
+Dragon Naturally Speaking Professional voice recognition software (Version 9.5).
+
+Compatibility shall be determined based on the video/and or sound card’s ability to function with all three assistive technology in a manner that does not degrade either the core functionality of the AT or the performance of the AT.
+
+
+
+For a listing of video and sound cards that are compatible with the JAWS and MAGIC software packages, please refer to Freedom Scientific’s web site at .
+
+For a listing of video and sound cards that are compatible with Dragon Naturally Speaking Professional, please refer to Nuance’s web site at .
+
+
+
+1.4  
+
+Hardware Devices that Contain Digital Windows
+
+Any hardware device shall provide an audible response for information displayed in a visual only format (i.e. digital message window) either through software or firmware. 
+
+Any hardware digital window that has the capability to magnify text shall do so for all screens either through software or firmware. 
+
+Any hardware digital window that has the capability to adjust contrast settings shall provide a range of contrast levels either through software or firmware. 
+
+Any hardware digital window that has the capability to be tilted for better viewing angles shall provide a range of settings.
+
+If digital windows meet the above requirements through software residing on a computer workstation, the software must be “compatible” with 
+
+JAWS screen reading software (Version 9.0);
+
+MAGIC screen magnification software (Version 11); and
+
+Dragon Naturally Speaking Professional voice recognition software (Version 9.5).
+
+Compatibility shall be determined based on the video/and or sound card’s ability
+
+to function with all three assistive technology in a manner that does not degrade either the core functionality of the AT or the performance of the AT.
+
+
+
+1.5     
+
+Technical Support and Assistance (Hotline)
+
+Any technical support, help desks, or other support services provided to SSA shall accommodate the communication needs of end users with disabilities, and shall be provided in one or both of the following options.  If both options are provided, each must conform to the accessibility requirements.
+
+A toll-free telephone number that is accessible to all Government help desk personnel.  This shall include the availability of TTY access for help desk personnel who may require assistance for the hearing-impaired. When this option is provided, it must be available during SSA working hours (i.e. between 6am Eastern and 6pm Pacific time).
+
+An internet-based web page that is accessible to all Government help desk personnel.  This web site shall meet all of the requirements of Section 508 1194.22.
+
+
+
+1.6     
+
+Training 
+
+All training materials provided to SSA must be in an accessible format.  In addition, training materials on the use of the accessibility features of a product or service shall be provided.
+
+
+
+1.7  
+
+Installation, Configuration & Integration Services
+
+If the contractor provides installation, configuration and integration services for commercial EIT solutions or EIT solutions previously developed for other government entities, the contractor shall not install, configure or integrate the EIT solution in a way that reduces the existing EIT solution’s level of conformance with SSA’s accessibility requirements at the time the contract is awarded.
+
+
+
+1.8  
+
+Maintenance & Replacements
+
+Any updates or replacements to EIT products provided to SSA pursuant to this contract shall be fully accessible with all applicable SSA’s accessibility requirements as described above.  At a minimum, any updates or replacements to any IT deliverables shall not result in a decrease in accessibility from the EIT solution being maintained or replaced.
+
+
+
+
+
+
+
+1.9  
+
+Labor Hours
+
+If the anticipated labor hour deliverable is expected to involve tasks that relate to or require the use of E&IT, delivered labor hours shall include knowledge and capabilities necessary to conform to SSA’s Accessibility Requirements.
+
+
+
+1.10  
+
+Equivalent Facilitation
+
+When a deliverable does not directly conform to the SSA Accessibility Requirements, but provides substantially equivalent or greater access by meeting the functional performance criteria in Subpart C of the Section 508 Standards, per Section 1194.31, then it is said to have provided Equivalent Facilitation.  
+
+Any approach providing Equivalent Facilitation that serves as a replacement to the Assistive Technologies SSA employs (e.g. an external speech engine) shall NOT be considered as an acceptable approach to Equivalent Facilitation.  For any approach meeting Section 508 Standards using Equivalent Facilitation, the contractor shall be held accountable for maintaining and updating the approach.
+
+
+|                                                         |                                                                        |                |
+|REQUEST FOR QUOTATIONS                                   |THIS RFQ ( IS  ?  IS NOT A SMALL BUSINESS-SMALL PURCHASE SET-ASIDE      |PAGE  1  OF 14  |
+|(THIS IS NOT AN ORDER)                                   |(52.219-4)                                                              |PAGES           |
+|                                             |                 |                                   |                               |                |
+|1. REQUEST NO.                               |2. DATE ISSUED   |3. REQUISITION/PURCHASE  REQUEST   |4. CERT. FOR NAT. DEF.         |RATING          |
+|SSA-RFQ-11-1100                              |11/02/10         |NO.                                |UNDER BDSA REG.2               |                |
+|                                             |                 |                                   |AND/OR DMS REG.1         <     |                |
+|                                                                                                   |                                                |
+|5A. ISSUED BY                                                                                      |6. DELIVER BY (Date)                            |
+|Office of Acquisitions & Grants (OAG)                                                              |                                                |
+|Social Security Administration (SSA)                                                               |                                                |
+|7111 Security Blvd                                                                                 |                                                |
+|1st Flr                                                                                            |                                                |
+|Baltimore, Maryland 21244                                                                          |                                                |
+|                                                                                                   |        |                                       |
+|                                                                                                   |                                                |
+|                                                                                                   |7. DELIVERY                                     |
+|                                                                                                   |■ FOB DESTINATION     G OTHER (See Schedule)    |
+|                                                                                                   |                                                |
+|5B. FOR INFORMATION CALL: (Name and telephone no.) (No collect calls)                              |                                                |
+|Rico Batte (410) 965-9541                                                                          |                                                |
+|                                                                                                   |                                                |
+|8. TO: NAME AND ADDRESS, INCLUDING ZIP CODE                                                        |9. DESTINATION (Consignee and address, including|
+|                                                                                                   |ZIP Code)                                       |
+|                                                                                                   |                                                |
+|                                                                                                   |                                                |
+|                                                                                                   |                                                |
+|                                                                                                   |                                                |
+|                                                                                                   |                                                |
+|                                                         |                                                                                         |
+|10. PLEASE FURNISH QUOTATIONS TO THE ISSUING OFFICE ON   |11. BUSINESS CLASSIFICATION (Check appropriate boxes)                                    |
+|OR BEFORE CLOSE OF BUSINESS (Date)                       |a.  STANDARD INDUSTRIAL b.  SMALL BUSINESS                                               |
+|11/16/2010 12:00 P.M.,                                   |CLASSIFICATION CODE  541511             SIZE STANDARD                                    |
+|Eastern Standard Time                                    |                                                                                         |
+|                                                         |□ SMALL      □ OTHER THAN SMALL      G DISADVANTAGED       G WOMEN-OWNED                 |
+|                                                                                                                                                    |
+|IMPORTANT: This is a request for information, and quotations furnished are not offers. If you are unable to quote, please so indicate on this form  |
+|and return it to the address in Block 5A.  This request does not commit the Government to pay any costs incurred in the preparation of the          |
+|submission of this quotation or to contract for supplies or services. Supplies are of domestic origin unless otherwise indicated by quoter. Any     |
+|representations and/or certifications attached to this Request for Quotations must be completed by the quoter.                                      |
+|                                                                                                                                                    |
+|12. SCHEDULE (Include applicable Federal, State and local taxes)                                                                                    |
+|                        |                                              |             |            |        |                                       |
+|ITEM NO.                |SUPPLIES/SERVICES                             |QUANTITY     |UNIT        |UNIT    |AMOUNT                                 |
+|(a)                     |(b)                                           |8            |(d)         |PRICE   |(f)                                    |
+|                        |                                              |             |            |(e)     |                                       |
+|                        |                                              |             |            |        |                                       |
+|                        |                                              |             |            |        |                                       |
+|                        |PROFESSIONAL SERVICES:                        |             |            |        |                                       |
+|                        |                                              |             |            |        |                                       |
+|                        |The Social Security Administration (SSA) has a|             |            |        |                                       |
+|                        |requirement for Mainframe Software Support.   |             |            |        |                                       |
+|                        |See attached Statement of Work.               |             |            |        |                                       |
+|                        |                                              |             |            |        |                                       |
+|                        |Period of Performance:                        |             |            |        |                                       |
+|                        |                                              |             |            |        |                                       |
+|                        |It is anticipated that the award from this    |             |            |        |                                       |
+|                        |solicitation will be for the period of        |             |            |        |                                       |
+|                        |performance December 1, 2010 through November |             |            |        |                                       |
+|                        |30,2011, with the options to extend the term  |             |            |        |                                       |
+|                        |for four(04) successive one-year periods and  |             |            |        |                                       |
+|                        |options for additional quantities during the  |             |            |        |                                       |
+|                        |Base period and option years.                 |             |            |        |                                       |
+|                        |                                              |             |            |        |                                       |
+|                                                                                                                                                    |
+|NOTE: Additional provisions and representations ? are ∼ are not attached.                                                                           |
+|                                                                        |                                                       |                   |
+|14. NAME AND ADDRESS OF QUOTER (Street, city,  county, State and ZIP    |15. SIGNATURE OF PERSON AUTHORIZED TO SIGN QUOTATION   |16. DATE OF        |
+|Code)                                                                   |                                                       |QUOTATION          |
+|                                                                        |                                                       |                   |
+|                                                                        |17. NAME AND TITLE OF SIGNER (Type or print)           |18. TELEPHONE NO.  |
+|                                                                        |                                                       |(Include area code)|
+
+
+NSN 7540-01-152-8084   18-120           STANDARD FORM 18(REV. 5-93) Prescribed by GSA
+                                                       Social Security Administration (SSA)
+                                                 REQUEST FOR QUOTATION (RFQ) NO.  SSA-RFQ-11-1100
+
+                                                                   (11/1/2010)
+
+
+                                                                  PROJECT TITLE
+
+                                                            Mainframe Software Support
+
+
+                                                 INSTRUCTIONS, CONDITIONS, AND NOTICES TO QUOTERS
+
+
+A.    GENERAL INFORMATION
+
+            1.   PURPOSE
+
+
+           The purpose of this RFQ is to solicit a quotation for mainframe software support services for SSA’s National Computing Center (NCC),
+           Second Support Center (SSC), and National Support Center (NSC).
+
+            2.   BACKGROUND
+
+           See Statement of Work (Attached).
+
+            3.   METHOD OF ACQUISITION
+
+           The Government contemplates award of a firm-fixed-price, level-of-effort term purchase order resulting from this solicitation in
+           accordance with acquisition procedures FAR 12.6 (Streamlined Procedures for Evaluation and Solicitation for Commercial Items); and
+           FAR 13.5 (Test Program for Certain Commercial Items).
+
+
+            4.   NUMBER OF AWARDS
+
+           It is anticipated that one (1) award will be made from this solicitation.
+
+            5.   DATE OF AWARD
+
+           It is anticipated that award will be made on or about November 29, 2010.
+
+
+            6.   PERIOD OF PERFORMANCE
+
+           It is anticipated that the award from this solicitation will be for a Base Period of 12 months from December 1, 2010 through November
+           30, 2011 with four (4) successive 12-month option periods and options for additional quantities during the base and option years.
+
+            7.    COMMITMENT OF PUBLIC FUNDS
+
+           The Contracting Officer is the only individual who can legally commit the Government to the expenditure of public funds in connection
+           with the proposed acquisition.  Any other commitment, either explicit or implied, is invalid.
+
+                 8.    COMMUNICATIONS PRIOR TO AWARD
+
+           Quoter shall direct all communications to the attention of:
+
+                       Rico Batte, Contract Specialist
+                       Office of Acquisitions & Grants (OAG)
+                       Social Security Administration
+                       7111 Security Blvd
+                       1st Flr Rear
+                       Baltimore, Maryland  21244
+                       410-965-5941
+                       Fax: 410-965-9560
+                       Email: Rico.batte@ssa.gov
+
+            9.   PREPARATION COSTS
+
+           This RFQ does not commit the Government to pay for the preparation and submission of a quotation.
+
+
+
+B.    GENERAL INSTRUCTIONS TO QUOTER
+
+      INTRODUCTION
+
+      The following instructions will establish the acceptable minimum requirements for the format and contents of the quotation/proposal.
+      Special attention is directed to the requirements for the technical and business proposals to be submitted in accordance with these
+      instructions.
+
+            1.   INSTRUCTIONS TO QUOTER
+
+
+                 (1)   Restriction on disclosure and use of data.  The quotation/proposal submitted in response to this request may contain data
+                 (trade secrets; business data, e.g., commercial information, financial information, and cost and pricing data; and technical
+                 data) which the offeror, including its prospective subcontractor(s), does not want used or disclosed for any purpose other than
+                 for evaluation of the quotation/proposal. The use and disclosure of any data may be so restricted; provided, that the Government
+                 determines that the data is not required to be disclosed under the Freedom of Information Act, 5 U.S.C. 552, as amended, and the
+                 offeror marks the cover sheet of the quotation/proposal with the following legend, specifying the particular portions of the
+                 quotation/proposal which are to be restricted in accordance with the conditions of the legend. The Government's determination to
+                 withhold or disclose a record will be based upon the particular circumstances involving the record in question and whether the
+                 record may be exempted from disclosure under the Freedom of Information Act. The legend reads:
+
+                             Unless disclosure is required by the Freedom of Information Act, 5 U.S.C. 552, as amended, (the Act) as determined
+                            by Freedom of Information (FOI) officials of the Social Security Administration, data contained in the portions of
+                            this quotation/proposal which have been specifically identified by page number, paragraph, etc. by the offeror as
+                            containing restricted information shall not be used or disclosed except for evaluation purposes.
+
+                             The offeror acknowledges that the Agency may not be able to withhold a record (data, document, etc.) nor deny access
+                            to a record requested pursuant to the Act and that the Agency's FOI officials must make that determination. The
+                            offeror hereby agrees that the Government is not liable for disclosure if the Agency has determined that disclosure
+                            is required by the Act.
+
+                             If a contract is awarded to the offeror as a result of, or in connection with, the submission of this
+                            quotation/proposal, the Government shall have right to use or disclose the data to the extent provided in the
+                            contract. Quotations/Proposals not resulting in a contract remain subject to the Act.
+
+                             The offeror also agrees that the Government is not liable for disclosure or use of unmarked data and may use or
+                            disclose the data for any purpose, including the release of the information pursuant to requests under the Act. The
+                            data subject to this restriction are contained in pages (insert page numbers, paragraph designations, etc. or other
+                            identification).
+
+
+                 (2)   In addition, the offeror should mark each page of data it wishes to restrict with the following statement:
+
+                             “Use or disclosure of data contained on this page is subject to the restriction on the cover sheet of this proposal
+                            or quotation.”
+
+                 (3)   The offeror is cautioned that a quotation/proposal submitted with restrictive legends or statements differing in
+                       substance from the above legend may not be considered for award. The Government reserves the right to reject any proposal
+                       submitted with a nonconforming legend.
+
+                 4)    Purchase Order Award. The Government intends to award a  purchase order resulting from this solicitation to the
+                    responsible    quoter(s) whose quotation(s) represents the best value after       evaluation in accordance with the factors
+                    and subfactors in the     solicitation.
+
+
+                      a. The Government may reject any or all quotations if such action is in the Government’s interest.
+
+
+                      b. The Government may waive informalities and minor irregularities in quotations received.
+
+                      c. The Government shall evaluate quotations and may award a purchase order without discussions with quoters (except
+                         clarifications as described in FAR 15.306(a). Therefore, the quoter’s initial quotation should contain the quoter’s
+                         best terms from a cost or price and technical standpoint. The Government reserves the right to conduct discussions if
+                         the Contracting Officer later determines them to be necessary.
+
+
+
+
+
+
+        2. POTENTIAL AWARD WITHOUT DISCUSSIONS
+
+
+            The Government reserves the right to award a purchase order without discussions     if the Contracting Officer determines that the
+      initial prices are fair and reasonable  and that discussions are not necessary.
+
+
+
+            3.   ORDERING TERMS AND CONDITIONS
+
+           The Quoter must specify the proposed labor category, hourly rate, hours, unit price and total price for each Item Number quoted in
+           response to this solicitation.
+
+
+           Prices quoted shall be loaded fixed unit prices (per labor hour) per labor category.
+
+
+           The Quoter must indicate the Quantity, Item, and Trade Discounts being quoted for each line item.
+
+
+            The Quoter must indicate a period of delivery, citing the number of days after receipt of a delivery order document in which delivery
+           will be performed.
+
+
+            Failure to submit a response on any of these line items may result in your response being deemed ineligible for award.
+
+            4.   DELIVERY ORDER TERMS AND CONDITIONS
+
+           Any purchase order awarded as a result of this solicitation shall be subject to the terms and conditions of FAR 52.212-4 and 52.212-5
+           which shall be incorporated by reference in the purchase order.
+
+      5.    AUTHORIZED OFFICIAL AND SUBMISSION OF QUOTATION/PROPOSAL
+
+           The proposal must be signed by an official authorized to bind your organization and must stipulate that it is predicated upon all the
+           terms and conditions of this RFQ.  Your proposal shall be submitted by electronic mail to the following:
+
+                             Rico Batte, Contract Specialist
+                             Office of Acquisitions & Grants (OAG)
+                             Social Security Administration
+                             7111 Security Blvd
+                             1st Flr Rear
+                             Baltimore, Maryland  21244
+                             E-mail:  Rico.Batte@ssa.gov
+
+
+           In addition to the electronic copy, one (1) original hard copy shall be provided to the address below:
+
+
+                             Rico Batte, Contract Specialist
+                             Office of Acquisitions & Grants (OAG)
+                             Social Security Administration
+                             7111 Security Blvd
+                             1st Flr Rear
+                             Baltimore, Maryland  21244
+
+
+           The hard copy must be received within two (2) business days from the time designated for receipt of the electronic copy.
+
+
+           Your quotation shall be organized as specified in Section B., GENERAL INSTRUCTIONS TO OFFERORS; Section C., INSTRUCTIONS FOR
+           PREPARING THE TECHNICAL PORTION OF THE QUOTATION; and Section D., INSTRUCTIONS FOR PREPARING THE BUSINESS PORTION OF THE QUOTATION;
+           and submitted electronically by 12:00 p.m., Eastern Standard Time (EST), on  November 16, 2010.
+
+
+      6.    SOLICITATION PROVISIONS INCORPORATED BY REFERENCE, FAR 52.252-1 (February 1998)
+
+           This Solicitation incorporates one or more solicitation provisions by reference, with the same force and effect as if they were given
+           in full text.  Upon request, the Contracting Officer will make their full text available.  The offeror is cautioned that the listed
+           provisions may include blocks that must be completed by the offeror and submitted with its quotation or offer.  In lieu of submitting
+           the full text provisions, the offeror may identify the provision by paragraph identifier and provide the appropriate information with
+           its quotation or offer.  Also, the full text of a solicitation provision may be accessed electronically at this address:
+           http://www.acquisition.gov/far/index.html
+
+                             FEDERAL ACQUISITION REGULATION (48 CFR, CHAPTER 1):
+
+                 a)    FAR 52.204-6, Data Universal Numbering System (DUNS) Number (April 2008)
+                 b)    FAR 52.204-7, Central Contractor Registration (April 2008)
+                 c)    FAR 52.215-8, Order of Precedence-Uniform Contract Format (October 1997)
+                 d)    FAR 52.217-5, Evaluation of Options (July 1990)
+                 e)    FAR 52.212-1, Instructions to Offerors- Commercial Items (June 2008)
+                 f)    FAR 52.212-3, Offeror Representations and Certifications (Oct 2010)
+                 g)    FAR 52.212-4, Contract Terms and Conditions- Commercial Items (June 2010)
+                 h)    FAR 52.212-5, Contract Terms and Conditions Required to Implement Statutes (Oct 2010)
+                 i)    FAR 52.209-6, Protecting the Government’s Interest (Sept 2006)
+                 j)    FAR 52.237-2, Protection of Government Buildings (Jan 1991)
+
+
+      7.    ADDENDUM TO FAR CLAUSE 52.212-4 CONTRACT TERMS AND CONDITIONS- COMMERCIAL ITEMS
+
+           In accordance with FAR 12.301 and 12.302, the clause at 52.212-4 is hereby tailored by this addendum as follows:
+
+
+           Paragraph (a), Inspection/Acceptance, is tailored as follows:
+
+           The Contractor shall only tender for acceptance those items that conform to the requirements of this purchase order.
+
+
+           If any of the services do not conform to contract requirements, the Government will require the Contractor to take necessary
+           action to ensure that future performance conforms to purchase order requirements.
+           If the Contractor fails to take the necessary action to ensure future performance in conformity with purchase order
+           requirements, the Government may by contract or otherwise, reduce the Order price to reflect the reduced value of the services
+           performed or terminate the Order for cause.
+
+
+           Paragraph (g), Invoice, is supplemented as follows:
+
+
+
+
+           INVOICE SUBMISSION AND PAYMENT RELATED INFORMATION (MAR 2009)
+
+           You may submit your invoice, electronically via email, by regular mail, or by hand carrying it to the Office of Finance at the
+           addresses below.  Your invoice must include all of the elements of a proper invoice as defined in the invoice or payment clause used
+           in this award as well as any other information required below or in the contract.
+
+           SENDING THE INVOICE ELECTRONICALLY:
+
+           Submit your invoice either as an attachment to an email message, or within the message itself, to:   OFPO.OF.DAP.INVOICES@ssa.gov.
+
+           FOR INVOICES NOT SUBMITTED ELECTRONICALLY:
+
+           Submit an original and three (3) copies of the invoice to:
+
+           If sent by mail:
+
+           Social Security Administration
+           Office of Finance
+           Post Office Box 47
+           Baltimore, Maryland 21235-0047
+
+           If Hand Carried:
+
+           Social Security Administration
+           Office of Finance
+           Customer Service Help Desk
+           2-B-4 East Low Rise Building
+           6401 Security Boulevard
+           Baltimore, Maryland 21235-0047
+
+           The telephone number of the customer service help desk is (410) 965-0607.
+
+           TAXPAYER IDENTIFICATION NUMBER (TIN) AND DUN&BRADSTREET NUMBER (DUNS):
+
+           In order to assist the government in making timely payments, please include your TIN, your DUNS#, and the Order Number on each
+           invoice.
+
+           SUBMISSION OF ELECTRONIC FUNDS TRANSFER (EFT) INFORMATION AND REMITTANCE INFORMATION:
+
+
+           The Government shall make payment to the Contractor using the EFT information contained in the Central Contractor Registration (CCR)
+           database.  In the event that the EFT information changes, the Contractor shall be responsible for providing the updated information
+           to the CCR database.
+
+           Remittance information associated with EFT payments is now available via the Internet Payment Platform (IPP) on the Department of
+           Treasury’s Internet site at http://www.ipp.gov.  The IPP site provides an explanation of how the system works, security and access
+           information, a user demonstration, and registration information.  There is no charge to use the IPP system.
+
+           You may also direct payment inquiries to SSA's Office of Finance by:
+
+            ■ Using its Financial Interactive Voice Response System (FIVR).  FIVR is an automated self-service telephone system available 24
+              hours a day that allows direct electronic access to administrative payment information using the telephone keypad.  You can access
+              FIVR by calling (410) 965-0607.  The services available through FIVR will be available through a Telecommunications Device for the
+              Deaf (TDD) Line at 410-597-1395.  Customer Service Representatives will be available to answer vendor payment inquiries Monday -
+              Friday, between 8 a.m. and 4:30 p.m. Eastern Time.
+
+            ■ By sending an email to payment.inquiries@ssa.gov, or visiting its internet site at
+              http://www.socialsecurity.gov/vendor/contact.htm.  You can also access the IPP system through a link on this site.
+
+
+
+      8.    FAR CLAUSE 52.212-5 CONTRACT TERMS AND CONDITIONS REQUIRED TO IMPLEMENT STATUTES OR EXECUTIVE ORDERS
+
+
+
+
+            The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract
+           by reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items:
+
+
+           FAR 52.222-50, Combating Trafficking in Persons (Feb 2009)
+           FAR 52-233-3, Protest After Award (Aug 1996)
+           FAR 52-233-4, Applicable Law for Breach of Contract Claim (Oct 2004)
+
+
+           The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being
+           incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of
+           commercial items:
+
+
+           FAR 52.219-28, Post Award Small Business Program Representation (Apr 2009)
+           FAR 52.222-3, Convict Labor (June 2003)
+           FAR 52.222-19, Child Labor—Cooperation with Authorities (Jul 2010)
+           FAR 52.222-21, Prohibition of Segregated Facilities (Feb 1999)
+           FAR 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246)
+           FAR 52.222-36, Affirmative Action for Workers with Disabilities (Jun 1998)
+           FAR 52.225-13, Restrictions on Certain Foreign Purchases (June 2008)
+           FAR 52.239-1, Privacy or Security Safeguards (Aug 1996)
+
+
+           Comptroller General Examination of Record The Contractor shall comply with the provisions of this paragraph (d) if this contract was
+           awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at 52.215-
+           2, Audit and Records -- Negotiation.
+           (1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to
+           and right to examine any of the Contractor’s directly pertinent records involving transactions related to this contract.
+           (2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for
+           examination, audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR
+           Subpart 4.7, Contractor Records Retention, of the other clauses of this contract. If this contract is completely or partially
+           terminated, the records relating to the work terminated shall be made available for 3 years after any resulting final termination
+           settlement. Records relating to appeals under the disputes clause or to litigation or the settlement of claims arising under or
+           relating to this contract shall be made available until such appeals, litigation, or claims are finally resolved.
+           (3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type
+           and regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain
+           in the ordinary course of business or pursuant to a provision of law.
+           (e)
+           (1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c) and (d) of this clause, the Contractor is not
+           required to flow down any FAR clause, other than those in this paragraph (e)(1) in a subcontract for commercial items. Unless
+           otherwise indicated below, the extent of the flow down shall be as required by the clause—
+                 (i) 52.203-13, Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251
+                 note)).
+
+
+                 (ii) 52.219-8, Utilization of Small Business Concerns (May 2004) (15 U.S.C. 637(d)(2) and (3)), in all subcontracts that offer
+                 further subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $650,000 ($1.5
+                 million for construction of any public facility), the subcontractor must include 52.219-8 in lower tier subcontracts that offer
+                 subcontracting opportunities.
+                 (iii) [Reserved]
+                 (iv) 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246).
+                 (v) 52.222-35, Equal Opportunity Veterans (Sep 2010) (38 U.S.C. 4212).
+                 (vi) 52.222-36, Affirmative Action for Workers with Disabilities (Oct 2010) (29 U.S.C. 793).
+                 (vii) [Reserved]
+                 (viii) 52.222-41, Service Contract Act of 1965, (Nov 2007), (41 U.S.C. 351, et seq.)
+                 (ix) 52.222-50, Combating Trafficking in Persons (Feb 2009) (22 U.S.C. 7104(g)).
+                       ___ Alternate I (Aug 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+                 (x) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of
+                 Certain Equipment--Requirements (Nov 2007) (41 U.S.C. 351, et seq.)
+                 (xi) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services--Requirements (Feb
+                 2009) (41 U.S.C. 351, et seq.)
+                 (xii) 52.222-54, Employment Eligibility Verification (Jan 2009).
+                 (xiii) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations. (Mar 2009) (Pub. L. 110-247). Flow down required in
+                 accordance with paragraph (e) of FAR clause 52.226-6.
+                 (xiv) 52.247-64, Preference for Privately-Owned U.S. Flag Commercial Vessels (Feb 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C.
+                 2631). Flow down required in accordance with paragraph (d) of FAR clause 52.247-64.
+           (2) While not required, the contractor may include in its subcontracts for commercial items a minimal number of additional clauses
+           necessary to satisfy its contractual obligations.
+
+
+      9.    FAR CLAUSE 52.217-9- OPTION TO EXTEND THE TERM OF THE CONTRACT (Mar 2000)
+
+
+
+           The Government may extend the term of this contract by written notice to the Contractor within 30 days; provided that the Government
+           gives the Contractor a preliminary written notice of its intent to extend at least 60 days before the contract expires. The
+           preliminary notice does not commit the Government to an extension.
+
+
+           If the Government exercises this option, the extended contract shall be considered to include this option clause.
+
+
+           The total duration of this contract, including the exercise of any options under this clause, shall not exceed 5 years.
+
+
+
+
+
+      10.   SECURITY AND CONFIDENTIALITY OF INFORMATION
+
+           All contract personnel must sign nondisclosure agreements with SSA that shall be kept on file by the SSA Contract Officer’s Technical
+           Representative (COTR).
+
+
+           Contractor shall consider all information provided by SSA or obtained for use under this contract as sensitive and confidential,
+           limiting access to only authorized contractor personnel.
+
+
+           Contractor shall disclose other business relationships that may be considered to present a conflict of interest.  The COTR will
+           decide if the relationship necessitates a change in the work assignment.
+
+      11.   SECURITY AND SUITABLITY REQUIREMENTS
+
+           a. Acronyms and Definitions
+
+
+            • Access to a facility, site, system or information means physical access to any Social Security Administration (SSA) facility or
+              site, logical access to any of SSA’s information systems, or access to programmatic or sensitive information.
+
+
+            • CO - Contracting Officer
+
+
+
+            • CPSPM – Center for Personnel Security and Project Management
+
+
+
+            • COTR – Contracting Officer’s Technical Representative
+
+            • PIV –    Personal Identity Verification
+
+
+
+
+
+
+
+
+
+           b. Purpose 
+           This clause provides information regarding the Social Security Administration’s (SSA) policies and procedures regarding the conduct
+           of background investigations.  The purpose of these investigations is to determine the suitability of contractor employees needing
+           access to an SSA facility, site, system, or information.  The clause also describes the process to obtain a PIV credential to gain
+           access.
+
+
+           The successful contractor will be required to follow the procedures set forth in this clause commencing at the time of award.
+
+
+           SSA requires all contractor employees to visit an SSA facility to obtain a credential after SSA has conducted and favorably
+           adjudicated a background investigation.  The COTR will inform the contractor of the location and time to obtain a credential.
+
+
+           This clause must be included in all subcontracts awarded by the contractor wherein subcontractor employees will have access to a
+           facility, site, system, or information.
+
+           c. Authorities
+                  • Homeland Security Presidential Directive 12 (HSPD-12)
+
+
+                  • Office of Management and Budget Memorandum M-05-24
+
+
+                  • The Crime Control Act of 1990, Public Law 101-647, subtitle E, as amended by Public Law 102-190 (for childcare center
+                    security requirements)
+
+
+                  • Executive Orders 10450 and 12968 and Title 5, Code of Federal Regulations (CFR), Parts 731, 732 and 736 (for positions
+                    assigned a “National Security” designation)
+
+
+           d. Background Investigation and Adjudication Process
+              The background investigation and adjudication processes are compliant with 5 CFR 731.
+
+           e. Required Forms
+              All contractor employees who will have access to a facility, site, system, or information must complete and submit to SSA the
+              following forms.  Some of the forms are available electronically (see website addresses below):
+
+                  • 2 Forms FD-258, Applicant Fingerprint Chart (The CO will provide the FD-258 forms at the time of the contract award.)
+                 NOTE: The contractor will be responsible for obtaining and providing acceptable fingerprints for use by SSA.  Regardless of the
+                 method used to fingerprint employees (electronic capture or ink) the only acceptable fingerprint card is the FD-258.
+
+
+                  • Optional Form 306, Declaration for Federal Employment
+                     http://www.opm.gov/forms/html/of.asp
+
+                  • Fair Credit Reporting Act (FCRA)  Authorization Form
+                    http://www.opm.gov/extra/investigate/fin-1998/fin9802.asp
+
+
+                  • If the employee is not a U.S. Citizen, the employee must provide SSA with a legible photocopy of his or her work
+                    authorization permit and social security card.
+
+
+           In addition to the forms above, every employee who will have access to a facility, site, system, or information must complete and
+           submit ONE of the following forms:
+
+                  • Standard Form (SF) 85 for risk level 1 (Public Trust, Low Risk/Non-Sensitive), http://www.opm.gov/forms/html/sf.asp
+
+
+                  • Standard Form (SF) 85P for sensitivity levels 5 or 6  (Public Trust, Moderate or High Risk),
+                    http://www.opm.gov/forms/html/sf.asp
+
+
+                  • Standard Form (SF) 86 for sensitivity levels 2,  3 or  4  (National Security, Non-Critical, Critical –Sensitive or Special
+                    Sensitive), http://www.opm.gov/forms/html/sf.asp
+
+           The risk designation associated with the work that the particular individual will be performing will determine which form the
+           individual must complete.  For this contract, the following risk designation(s) apply:
+
+
+
+
+           Labor Category                                                          Risk Designation
+                  TDB                                               1C, Low Risk
+
+
+           f. Forms Completion 
+           The contractor must ensure that all forms are fully completed and signed prior to submission to SSA. 
+
+
+           The contractor must ensure that the fingerprint charts and all forms are printed legibly or typed in black ink and all signatures are
+           in black ink.  The contractor must also ensure there are no “breaks” in residences or employment.  SSA requires complete addresses,
+           including zip codes and phone numbers.
+
+
+           g. Forms Submission
+           The contractor shall submit a cover sheet, including the contract number, name, and social security number of all contract employees
+           for whom they are requesting a suitability determination, along with completed forms and one FD-258 fingerprint chart to:
+
+
+           SSA
+           CPSPM Security and Suitability Team
+           6401 Security Boulevard
+           Room 1260 Dunleavy Building
+           Baltimore, MD  21235
+
+
+           Simultaneously, the contractor must submit a copy of the cover sheet to the COTR.
+
+
+           The contractor must submit these forms at least 15 days prior to the date work is to begin.
+           For new contract employees who will need access to an SSA facility, site, information, or system, the contractor must submit these
+           forms at least 15 days prior to beginning work under the contract.
+
+
+           h. Preliminary Suitability Determination
+           A Federal Bureau of Investigation fingerprint check will be used as part of the basis for making a preliminary suitability
+           determination.  If SSA makes a favorable preliminary suitability determination, the individual may perform under the contract pending
+           SSA’s final suitability determination.  CPSPM will notify contractors, with carbon copy (cc) notifications sent to both the COTR and
+           CO, of the results of these determinations.
+
+
+           SSA requires each contractor employee who will have access to a facility, site, system, or information to present two forms of
+           identification after the contractor employee receives notification of a preliminary suitability determination but prior to beginning
+           work under the contract.  In order for SSA to continue the background investigation process and enroll the contractor employee in the
+           PIV credentialing process, at least one of the forms of identification must be a Government-issued photo ID (please see Employment
+           Eligibility Verification, I-9, for acceptable forms of ID).
+
+
+           i. Final Suitability Determination
+           Final suitability determinations are made in approximately 45-90 business days after submittal of the completed forms to CPSPM.  If
+           CPSPM determines that any employee is unsuitable, the COTR, CO, and contractor will be notified and SSA will revoke the employee’s
+           physical and logical access.  The contractor must confirm receipt of the revocation within one business day.
+
+
+           A contractor is not entitled to an equitable adjustment of the contract as a result of SSA making an unfavorable suitability
+           determination on contractor employees.  Additionally, if SSA determines that the number or percentage of unfavorable determinations
+           make successful contract performance unlikely, SSA may terminate the contract for cause or default.
+
+           j. Exceptions
+           The COTR may request an exception to the normal background investigation process for emergency situations when access to a facility
+           or site is needed, but where access to information systems or programmatic information is not required.  This request must be
+           directed to CPSPM.  COTRs may request an exception by sending an email to dchr.ope.hspd12appeals@ssa.gov.  If CPSPM grants temporary
+           access, that temporary access will apply only for the period specified by CPSPM and only for the specific contract employee(s)
+           identified by the COTR.  CPSPM expects that it will rarely grant exceptions.
+
+           k. Contractor Notification to Government
+           The contractor shall notify the COTR (who will notify CPSPM and the CO) within one business day if an employee is arrested or charged
+           with a crime during the term of this contract, or if there is any other change in the employee’s status (e.g., the employee leaves
+           the company; the employee no longer works under the contract; the employee’s alien status changes) that could impact the suitability
+           determination for that individual.  The contractor must provide in that notification as much detail as possible, including, but not
+           limited to:  employee name(s), contract number, the type of charge(s), if applicable, the court date, and, if available, the
+           disposition of the charge(s).
+
+           l. Government Control
+           The Government has full control over and may grant, deny, or withhold access to a facility, site, system, or information and may
+           require the COTR and contractor to remove personnel from performing under the contract for reasons related to conduct even after the
+           individual has been found suitable to work on the contract (see paragraph n., below).
+
+           m. Appeals Process for Unsuitable Determinations
+           The contractor must notify the employee of any unsuitable determinations as soon as possible after receipt of such a determination. 
+           If the employee would like clarification or wish to appeal an unsuitable determination, his/her request must be in writing and
+           submitted within 30 days of the date of the unsuitable determination.  The request can be emailed to SSA at
+           dchr.ope.hspd 12 appeals@ssa.gov, or mailed to:
+
+            Social Security Administration
+           Attn:  CPSPM Suitability Program Officer
+           6401 Security Boulevard
+           Room 1260 Dunleavy Building
+           Baltimore, MD  21235
+
+
+           n. Removal From Duty
+
+           SSA may request that the contractor immediately remove any contractor employee(s) from working under the contract based on conduct
+           that occurs after a pre-screening approval or favorable suitability determination.  The contractor must comply with these requests.
+           The Government's determination may be made based on, but not limited to, incidents involving the misconduct or delinquency as set
+           forth below:
+
+            i. Violation of the Rules and Regulations Governing Public Buildings and Grounds, 41 Code of Federal Regulations 101-20.3.  This
+               includes any local badging requirements.
+
+           ii. Neglect of duty, including sleeping while on duty, unreasonable delays or failure to carry out assigned tasks; conducting
+               personal affairs while on duty; and refusing to cooperate in upholding the integrity of SSA's security program.
+
+          iii. Falsification or unlawful concealment, removal, mutilation, or destruction of any official documents or records, or concealment
+               of material facts by willful omissions from official documents or records.
+
+           iv. Disorderly conduct, use of abusive or offensive language, quarreling, intimidation by words or actions, or fighting.  Also,
+               participating in disruptive activities, which interfere with the normal and efficient operations of the Government.
+
+            v. Theft, vandalism, or any other criminal actions.
+
+           vi. Selling, consuming, possession of, or being under the influence of intoxicants, drugs, or substances which produce similar
+               effects.
+
+          vii. Improper use of official authority or credentials.
+
+         viii. Unauthorized use of communications equipment or Government property.
+
+           ix. Misuse of weapon(s) or tools used in the performance of this contract.
+
+            x. Unauthorized access to areas not required for the performance of the contract.
+
+           xi. Unauthorized access to employees' personal property.
+
+          xii. Violation of security procedures or regulations.
+
+         xiii. Prior determination by SSA or other Federal agency that a contractor's employee was unsuitable.
+
+          xiv. Unauthorized access to, or disclosure of, agency programmatic or sensitive information, or IRS Tax Return information.
+
+           xv. Unauthorized access to an agency Automated Information System.
+
+          xvi. Unauthorized access of information for personal gain (including, but not limited to, monetary gain), or with malicious intent.
+
+         xvii. Not providing for the confidentiality of and protection from disclosure of information entrusted to them.  Contractor personnel
+               are considered the same as Federal employees for the purposes of applying certain provisions of:
+
+               The Privacy Act of 1974;
+
+
+               The Tax Reform Act of 1976 and the Taxpayer Browsing Protection Act of 1997;
+
+
+               SSA regulation 1;
+
+
+               The Computer Fraud and Abuse Act of 1986; and
+
+
+               Section 1106 of the Social Security Act.
+
+      12.   FEDERAL INFORMATION SECURITY MANAGEMENT ACT (FISMA) AND AGENCY PRIVACY MANAGEMENT (OCT 2008)
+
+
+           1.    Definitions
+
+           The following terms are defined for the purposes of this clause:
+
+           “Agency” means the Social Security Administration (SSA).
+
+           “OAG” means the Office of Acquisition and Grants at SSA.
+
+           2. Agency Responsibility related to FISMA Training Requirements
+
+           The Federal Information Security Management Act of 2002 (FISMA) (Title III, Pub. L. No. 107-347) and the Office of Management and
+           Budget (OMB) policy (through Circular A-130, Appendix III) require that all Agency employees, as well as contractor and subcontractor
+           employees working under Agency service contacts, receive periodic training in computer security awareness and accepted computer
+           security practice of all employees, including contractors.  This includes training for contractor personnel who do not have access to
+           electronic information systems. The training level is tailored to the risk and magnitude of harm related to the required activities.
+
+
+
+           SSA’s Security Awareness bulletin adequately covers the required IT security and privacy awareness training for this contract.  The
+           bulletin is located on OAG’s internet site (see information in Paragraph 3 below).
+           This training does not preclude any additional training specified elsewhere in this contract.
+
+           3. Contractor Responsibilities related to FISMA Training Requirements
+
+                 a. Following contract award, the contractor shall ensure that all contractor employees performing under this contract have
+                    signed the security bulletin entitled “SSA Security Awareness: Contractor Personnel Security Certification.”  This
+                    requirement also applies to contractor employees added to the contract after contract performance has commenced.  A copy of
+                    this form is located on OAG's Internet website.
+                 b. The contractor must receive signed copies of the bulletin from each employee working under the contract within 45 days
+                    following contract award, or within 45 days after a contractor employee begins working under the contract.
+                 c. The contractor shall send an email to security.awareness.training@ssa.gov, with a copy to the contracting officer, within 60
+                    days following contract award and anytime a new contractor employee is added to perform work under the contract.  The
+                    contractor will include in the email the number of employees who have signed the security awareness bulletin.
+                 d. The contractor shall retain copies of these signed bulletins for potential future SSA audits for a period of three years
+                    after final payment (per FAR 4.703).
+                 e. For each successive year the contract is in operation, the contractor shall repeat the processes described in items 3. a. –
+                    d., above, on an annual basis.
+
+
+           The contractor must submit the information in 3.c, above, within 60 days of: (i) the date the option was renewed, or (ii) the
+           anniversary of the contract award date.
+
+           4. Applicability of this Clause to contractor/subcontractor employees
+
+           The contractor is required to include a clause substantially the same as this in all subcontracts awarded for technical or support
+           services under the prime contract.  This clause shall require the subcontractors to report the information listed in Paragraph 3 of
+           this clause to the contractor and the contractor will be responsible for reporting all applicable numbers to SSA.  The subcontractor
+           shall be responsible for maintaining its signed forms as detailed in Paragraph 3.d.
+
+
+      13.   PROTECTION OF CONFIDENTIAL INFORMATION
+
+
+           (a)  Confidential information, as used in this clause, means information or data, or copies or extracts of information or data, that
+           is:  (1) provided by the Social Security Administration (SSA) to the contractor for, or otherwise obtained by the contractor in, the
+           performance of this contract; and (2) of a personal nature about an individual, such as name, home address, and social security
+           number, or proprietary information or data submitted by or pertaining to an institution or organization, such as employee pay scales
+           and indirect cost rates.
+
+           (b)  The Contracting Officer and the Contractor may, by mutual consent, identify elsewhere in this contract specific information or
+           categories of information that the Government will furnish to the Contractor or that the Contractor is expected to generate which are
+           confidential.  Similarly, the Contracting Officer and the Contractor may, by mutual consent, identify such confidential information
+           from time to time during the performance of the contract.
+           The confidential information will be used only for purposes delineated in the contract; any other use of the confidential information
+           will require the Contracting Officer’s express written authorization.  The Contracting Officer and the Contractor will settle any
+           disagreements regarding the identification pursuant to the "Disputes" clause.
+
+           (c)  The Contractor shall restrict access to all confidential information to the minimum number of employees and officials who need
+           it to perform the contract.  Employees and officials who need access to confidential information for performance of the contract will
+           be determined in conference between SSA's Contracting Officer, Contracting Officer’s Technical Representative, and the responsible
+           Contractor official.  Upon request, the Contractor will provide SSA with a list of “authorized personnel,” that is, all persons who
+           have or will have access to confidential information covered by this clause.
+
+           (d)  The Contractor shall process all confidential information under the immediate supervision and control of authorized personnel in
+           a manner that will:  protect the confidentiality of the records; prevent the unauthorized use of confidential information; and
+           prevent access to the records by unauthorized persons.
+
+           (e)  The Contractor shall inform all authorized personnel with access to confidential information of the confidential nature of the
+           information and the administrative, technical and physical safeguards required to protect the information from improper disclosure.
+           All confidential information shall, at all times, be stored in an area that is physically safe from unauthorized access.  See
+           paragraph (f) below regarding the minimum standards which the safeguards must meet.
+
+           (f)   Whenever the Contractor is storing, viewing, transmitting, or otherwise handling confidential information, the Contractor shall
+           comply with the applicable standards for security controls that are established in the Federal Information Security and Management
+           Act (FISMA).  (These standards include those set by the National Institute of Standards and Technology (NIST) via the Federal
+           Information Processing Standards (FIPS) publications and NIST Special Publications, particularly FIPS 199, FIPS 200, and NIST Special
+           Publications - 800 series.)
+
+
+
+
+           (g)  If the Contractor, in the performance of the contract, uses any information subject to the Privacy Act of 1974, 5 U.S.C. 552a,
+           and/or section 1106 of the Social Security Act, 42 U.S.C. 1306, the Contractor must follow the rules and procedures governing proper
+           use and disclosure set forth in the Privacy Act, section 1106 of the Social Security Act, and the Commissioner's regulations at 20
+           C.F.R. Part 401 with respect to that information.
+
+           For knowingly disclosing information in violation of the Privacy Act, the Contractor and Contractor employees may be subject to the
+           criminal penalties as set forth in 5 U.S.C. Section 552(i)(1) to the same extent as employees of SSA.
+
+
+
+
+           For knowingly disclosing confidential information as described in section 1106 of the Social Security Act (42 U.S.C. 1306), the
+           Contractor and Contractor employees may be subject to the criminal penalties as set forth in that provision.
+
+           (h)  The Contractor shall assure that each Contractor employee with access to confidential information is made aware of the
+           prescribed rules of conduct, and the criminal penalties for violations of the Privacy Act and/or the Social Security Act.
+
+           (i)  Whenever the Contractor is uncertain how to handle properly any material under the contract, the Contractor must obtain written
+           instructions from the Contracting Officer addressing this question.  If the material in question is subject to the Privacy Act and/or
+           section 1106 of the Social Security Act or is otherwise confidential information subject to the provisions of this clause, the
+           Contractor must obtain a written determination from the Contracting Officer prior to any release, disclosure, dissemination, or
+           publication.  Contracting Officer instructions and determinations will reflect the result of internal coordination with appropriate
+           program and legal officials.
+
+           (j)   Performance of this contract may involve access to tax return information as defined in 26 U.S.C. Section 6103(b) of the
+           Internal Revenue Code (IRC).  All such information shall be confidential and may not be disclosed without the written permission of
+           the SSA Contracting Officer.  For willfully disclosing confidential tax return information in violation of the IRC, the Contractor
+           and Contractor employees may be subject to the criminal penalties set forth in 26 U.S.C. Section 7213.
+
+           (k)  The Government reserves the right to conduct on-site visits to review the Contractor's documentation and in-house procedures for
+           protection of and security arrangements for confidential information and adherence to the terms of this clause.
+
+           (l)  The Contractor must include this clause in all resulting subcontracts whenever there is any indication that the
+           subcontractor(s), engaged by the contractor, and their employees or successor subcontractor(s) and their employees might have access
+           to SSA's confidential information.
+
+
+           (m)  The Contractor must assure that its subcontractor(s) and their employees or any successor subcontractor(s) and their employees
+           with access to SSA confidential information are made aware of the prescribed rules of conduct.  For knowingly disclosing SSA's
+           confidential information, any subcontractor(s) and their employees or successor subcontractor(s) and their employees may be subject
+           to criminal penalties as described in section 1106 of the Social Security Act (42 U.S.C. 1306) and the Privacy Act (5 U.S.C. 552a).
+
+
+
+      14.   Selection of Vendor
+
+           The Government intends to award a single delivery order to the vendor that the Government determines to represent the best value and
+           results in the lowest overall cost alternative (considering price, special features, administrative costs, etc.) to meet the
+           Government’s needs. The evaluation criteria to be used by the Government are described later in this RFQ.
+
+           FAR 9.103(b) requires that the Contracting Officer make an affirmative determination of responsibility for a prospective contractor
+           with respect to any proposed contract award.  Therefore, due consideration shall also be given to those general standards for
+           responsible prospective contractors and subcontractors as set forth in FAR 9.104-1, including (but not necessarily limited to)
+           whether the vendor is otherwise qualified and eligible to receive an award under applicable laws and regulations.
+
+
+C.    INSTRUCTIONS FOR PREPARING THE TECHNICAL PORTION OF THE QUOTATION
+
+            1.   PREPARING THE TECHNICAL PORTION OF THE QUOTATION
+
+           The offeror shall include in its quotation a discussion of the offeror's proposed technical approach to respond to the requirements
+           in the Statement of Work.  The offeror must propose to provide all the requirements specified in the Statement of Work. The technical
+           portion shall not exceed 25 pages in length.
+
+
+                 Technical Approach
+                 Sequentially address each task in the statement of work (SOW) and discuss what methods the Contractor will employ to meet each
+                 related set of deliverables.  The Contractor shall list each item exactly how it appears in the SOW and immediately follow with
+                 the vendor’s response.  Resumes of the Contractor's project manager and those persons who the Contractor identified as
+                 considered essential for the successful performance of this purchase order shall also be included in the Contractor’s Technical
+                 Response.
+
+
+
+
+
+
+
+
+                 Corporate Experience
+                 SSA defines Relevant Experience as the knowledge and skills a vendor has obtained by participating in a contract similar to that
+                 described in this solicitation.
+
+
+                 Past Performance
+                 Past Performance is a measure of how well a vendor has satisfied customers; adhered to the applicable Federal, state, and local
+                 laws and regulations; and conducted its business in an ethical manner.
+
+
+                 To facilitate the Government's evaluation of past performance and corporate experience, the contractor shall provide information
+                 for three relevant contracts for similar services, which the contractor completed within the past 5 years or are still ongoing.
+                 The Contractor’s past performance information should document corporate successes in providing services of a similar size,
+                 scope, and complexity to those stated in the Government’s SOW.
+
+
+                 The Contractor’s past performance information must provide sufficient detail to demonstrate that the Contractor has previously
+                 performed all aspects of the work detailed in the SOW, and that the Contractor has previously provided the necessary quantity
+                 and quality of products and workforce to perform all requirements described in the SOW.
+
+                 Each party (prime contractor, teaming partners and/or proposed sub-contractors) to the response must provide specific past
+                 performance reference information for three prior and/or existing contracts that are similar in size, scope and complexity to
+                 the role they are proposed to fulfill under the response.
+
+
+
+                 All past performance references, both for Government and commercial contracts, shall include the following information:
+                        • Contract/Project Title.
+                        • Contract/Project Number (if applicable).
+                        • Client Name.
+                        • Client Address.
+                        • Contracting Officer Point-of-Contact (POC):
+                        • Name of the Contracting Officer POC;
+                        • Contract Officer POC’s Telephone Number (including  area      code and extension, if appropriate); and
+                        • Contracting Officer POC’s e-mail address.
+
+                 Technical Project Officer (PO)/Contracting Officer’s Technical Representative (COTR) POC:
+                          • Name of the PO/COTR POC;
+                          • PO/COTR POC’s Telephone Number (including area code and extension, if appropriate); and
+                          • PO/COTR POC’s e-mail address.
+
+                   The following information on the contract:
+                                • Dollar value of contract at time of award; (For commercial  contract references “exceeding $xxx” is
+                                  acceptable.)
+                                • Cumulative dollar value of contract to date; (For commercial contract references “exceeding $xxx” is
+                                  acceptable.)
+                                • Period of performance;
+                                • A narrative description of each cited contract’s major performance objectives, as well as descriptions of the
+                                  supplies and/or services provided, and how those supplies and/or services were/are similar and relevant to the
+                                  requirements as set forth in this solicitation to include:
+                             o Number of sites supported
+                             o Number of mainframe systems
+                             o Number of millions of instructions per second (MIPS),supported over the life of the contract
+                             o Number of mainframe systems in use
+                             o Number of logical partitions (LPARs)
+                             o Number of system complexes (sysplexes)
+                             o Infrastructure configuration, specifically, was it configured to allow LPARs and workloads to move within
+                               sysplexes and across locations,
+                             o z/OS Briefing and training topics,
+                             o SCRT reporting support,
+                             o Software pricing recommendations,
+                             o Alternative pricing recommendations,
+                             o Validation of reported and installed software inventory,
+                             o Number of software products by vendor, and
+
+
+                                     • Disaster Recovery requirements;
+                                     • Describe any significant performance problems that the Contractor encountered on the cited/referenced
+                                       project, and explain how they were solved/ corrected by the Contractor/contractor.
+
+
+
+           Contractors are advised that past performance information may be obtained from other sources known to the Government; and, therefore,
+           the Government may evaluate information from such other sources, even though the Contractor does not include such information in its
+           response.  Nevertheless, in evaluating the Contractor’s past performance and experience, the Government intends to rely heavily
+           (though not necessarily exclusively) upon the information furnished by the Contractor in its Past Performance and experience
+           information.
+
+
+
+
+
+
+           Therefore, the Contractor is responsible for verifying and ensuring that the information provided in support of its cited/referenced
+           past performance is complete, comprehensive, accurate and current as of the month of issuance of this solicitation.
+
+
+           SSA may verify with the reference that the information is accurate and correct.  If, after two attempts, the cited reference is not
+           locatable, then the past performance information will automatically be eliminated from consideration and a rating of Neutral will be
+           assigned for that reference.
+
+
+
+      2.    EVALUATION OF THE TECHNICAL PORTION OF QUOTATIONS
+
+            The technical portion of the quotations will be evaluated in accordance with the               factors, weights, and order of
+relative importance as described in the                       EVALUATION FACTORS FOR AWARD.
+
+
+      3.    ADDITIONAL INSTRUCTIONS FOR PREPARING THE TECHNICAL PORTION OF THE QUOTATION
+
+           A. Quotations which merely offer to conduct the work in accordance with the requirements of the Government’s scope of work will be
+              considered non-responsive. The quoter must submit an explanation of the proposed technical approach in conjunction with the tasks
+              to be performed in achieving the project objectives.
+
+
+           B. Evaluation of the technical portion of quotations will be conducted by a technical review committee in accordance with the
+              weighted technical evaluation criteria stated the EVALUATION FACTORS FOR AWARD.
+
+
+D.    INSTRUCTIONS FOR PREPARING THE BUSINESS PORTION OF THE QUOTATION
+
+      1.    PREPARING THE BUSINESS PORTION OF THE QUOTATION
+
+
+           The business portion of the offeror’s submission should follow the format listed in the Statement of Work.
+
+
+
+
+      2.    PRICE INFORMATION
+
+
+           The offeror’s quotation shall be valid for 120 calendar days after the close of the solicitation.
+
+
+
+
+            3.   INFORMATION OTHER THAN PRICING DATA
+
+           The offeror shall submit sufficiently detailed information to permit the Contracting Officer and authorized representatives to
+           evaluate the offer.
+
+
+      4.    Travel
+
+           Some travel may be required for this contract for onsite consultations, presentations, and meetings.  All travel conditions shall
+           adhere to Federal Travel regulation guidelines; and are subject to COTR approval. Travel expenses shall be reimbursed based on actual
+           receipts to be included with invoice submission in accordance with Federal Travel Regulations.
+
+           Receipts are required for ALL expenses greater than $75. Travel amounts estimated by the Contractor in accordance with this statement
+           of work are considered to be a not to exceed amount.  If a Contractor believes that they will exceed the original, estimated travel
+           amount, advanced approval must be obtained from the SSA Contracting Officer before the excessive travel can occur or be invoiced.
+
+E.    EVALUATION FACTORS FOR AWARD
+
+             1.  EVALUATION OF OPTIONS
+
+           It is anticipated that any delivery order awarded from this RFQ will contain option provision(s) and period(s).
+
+           In accordance with FAR Clause 52.217-5, Evaluation of Options (July 1990), the Government will evaluate quotes for award purposes by
+           adding the total price for all options to the total price for the basic requirement, except when it is determined in accordance with
+           FAR 17.206(b) not to be in the Government’s best interests.  Evaluation of options will not obligate the Government to exercise the
+           option(s).
+
+
+      2.    EVALUATION CRITERIA
+
+           In determining best value, The Government shall evaluate quotations using the following evaluation criteria. The following factors
+           shall be used to evaluate responses:
+
+
+            • Technical Approach
+            • Price
+            • Corporate Experience
+            • Past Performance
+
+           Factors are listed in descending order of importance.  Technical Approach is the most important evaluation factor followed by price.
+           After price, corporate experience and past performance are equal in importance.
+
+
+           Technical and Business Evaluation Process
+
+           SSA will evaluate the Contractors response in the following order:
+
+            ▪ Technical Response
+
+
+                  o Technical Approach
+                  o Corporate Experience
+                  o Past Performance
+
+
+            ▪ Price Response
+
+           A contractor must indicate that they can perform each task and provide all deliverables listed in the solicitation.
+
+            Technical Approach Evaluation Factor
+
+           The Government will evaluate the degree to which the technical approach of the Contractor demonstrated the ability to fulfill each
+           type of service specified in the statement of work. The Government will evaluate the Technical Approach narrative for consistency,
+           completeness, and accuracy to determine the stated Approach’s likelihood of successfully providing services associated with the major
+           tasks stated in the statement of work.
+
+      The following adjectival ratings will be used to evaluate the technical approach factor:
+
+
+           |Excellent            |Demonstrates an excellent understanding of the requirements and approach.  Significantly exceeds |
+|                     |performance or capability standards.  Possesses exceptional strengths. Indicates very high       |
+|                     |probability for success in meeting the Government’s performance objectives and delivery          |
+|                     |schedules.                                                                                       |
+|Good                 |Demonstrates a good understanding of the requirements and approach.  Exceeds performance or      |
+|                     |capability standards. Strengths more than offset any minor weaknesses. high probability for      |
+|                     |success in meeting the Government’s performance objectives and delivery schedules.               |
+|Acceptable           |Demonstrates an acceptable understanding of the requirements and approach.  Meets performance or |
+|                     |capability standards.   Strengths generally offset weaknesses. May be successful in meeting the  |
+|                     |Government’s performance objectives and delivery schedules.                                      |
+|Marginal             |Demonstrates little understanding of the requirements and approach.  Marginally meets performance|
+|                     |or capability standards. Weaknesses are not offset by strengths.  Expect minimal but acceptable  |
+|                     |contract performance.                                                                            |
+|Unsatisfactory       |Fails to demonstrate an understanding of the requirements and approach.  Fails to meet           |
+|                     |performance or capability standards.  Numerous weaknesses exist.  Requirements can only be met   |
+|                     |with major changes to the proposal.                                                              |
+
+
+
+           Corporate Experience Evaluation Factors
+
+
+           Experience is the opportunity to learn by doing at the corporate level.  At the corporate level, previous experiences indicate the
+           breadth, depth and relevance of a company’s abilities.
+
+
+           SSA will evaluate the contractor’s corporate experience performing contracts containing requirements similar in size, scope, and
+           complexity to the requirement contained in this solicitation.  The contractor’s corporate experience documentation should
+           substantiate its proven corporate experience and clearly demonstrate how the Contractor’s experience is relevant to the work detailed
+           in the solicitation as well as describe how the experience will reduce any performance risks.
+
+           The Government will seek to determine whether a Contractor has proven corporate experience to reduce contract performance risk and
+           ensure performance success over the life of the contract.  Each cited example of corporate experience will be evaluated separately,
+           and an overall rating as described below will be given to the Contractor based upon their demonstrated corporate and key personnel
+           experience.  In assessing a Contractor’s Corporate Experience, the Government will consider the Questionnaire results submitted by
+           the Contractor’s references and may consider information from other sources.
+
+           The Government will specifically evaluate of the following criteria:
+
+
+               • Size – SSA will conduct a comparison of the  infrastructure configuration relative to SSA’s data centers according to the
+                 following criteria:
+                          ▪ Number of sites supported/delivered to
+                          ▪ Number of mainframe systems
+                          ▪ Number of MIPS supported over the life of the contract
+                          ▪ Number of mainframe systems in use
+                          ▪ Number of LPARs, and
+                          ▪ Number of sysplexes.
+
+
+               • Scope – SSA will conduct a comparison to determine the range of activities performed by the offeror relative to SSA’s
+                 requirements as listed here.
+
+                          • Infrastructure configuration, specifically, was it configured to allow LPARs and workloads to move within sysplexes
+                            and across locations,
+                          • z/OS Briefing and training topics,
+                          • SCRT reporting support,
+                          • Software pricing recommendations,
+
+                 Complexity – SSA will conduct a comparison of  activities supported by the offeror relative to SSA’s capacity according to the
+                 following criteria:
+
+                          • Alternative pricing recommendations,
+                          • Validation of reported and installed software inventory,
+                          • Number of software products by vendor, and
+                          • Disaster Recovery requirements;
+
+
+      The following adjectival ratings will be used to evaluate the corporate experience factor:
+
+|Excellent            |Contractor has demonstrated extensive corporate experience in performing contracts that are      |
+|                     |extremely similar in size, scope and complexity to the stated requirements.  Experience          |
+|                     |information indicates low performance risk to the Government.  There are no weaknesses or        |
+|                     |deficiencies.                                                                                    |
+|Good                 |Contractor has demonstrated corporate experience in performing contracts that are similar in     |
+|                     |size, scope and complexity to the stated requirements.  Experience information indicates low     |
+|                     |performance risk to the Government.  Weaknesses, if any, are minor and are more than offset by   |
+|                     |strengths.                                                                                       |
+|Acceptable           |Contractor has demonstrated corporate experience in performing contracts that are somewhat       |
+|                     |similar in size, scope and complexity to the stated requirements.  Experience information        |
+|                     |indicates low to moderate performance risk to the Government.  Experience has few or no          |
+|                     |strengths.  Weaknesses are generally offset by strengths.                                        |
+|Marginal             |Contractor has demonstrated corporate experience in performing contracts that are slightly       |
+|                     |similar in size, scope and complexity to the stated requirements.  Experience information        |
+|                     |indicates moderate performance risk to the Government.  Experience information has weaknesses    |
+|                     |that are not offset by strengths.                                                                |
+|Unsatisfactory       |Contractor has not demonstrated corporate experience in performing contracts that are similar in |
+|                     |size, scope and complexity to the stated requirements.  Experience information indicates high    |
+|                     |performance risk to the Government.  Experience information has numerous weaknesses.             |
+
+
+
+      Past Performance Evaluation Factors
+
+      As specified in the Instructions to Contractors, each Contractor shall provide past performance references for existing and prior contracts
+      of similar size, scope and complexity.  The evaluation of past performance will consist of a qualitative assessment of the Contractor’s
+      demonstrated success in the performance of previous and/or ongoing contracts of similar size, scope and complexity to the requirement of
+      this solicitation.  Evaluation of past performance will be based upon consideration of all relevant facts and circumstances.  The
+      Government will evaluate the relevance of the cited past performance reference information to the requirements stated in this solicitation
+      as well as the quality of the Contractor’s past performance and determine each Contractor’s probability of success on the proposed contract
+      based upon this record of past performance.  The Government will seek to determine whether a Contractor has consistently demonstrated a
+      commitment to customer satisfaction and timely delivery of services at fair and reasonable cost/prices.  The Government shall make an
+      assessment of the Contractor’s past performance, taking into account (but not limited to) such aspects as: Quality of Service, Cost
+      Control, Timeliness of Performance, Business Relations, Personnel Management and Subcontractor Management.
+
+
+      Past Performance Evaluation Factors
+
+      • Quality of service – How well was the service delivered; ability to resolve problems; efficiency of personnel.
+      • Cost control – How well did estimates match up with actual costs of operations, tasks or projects.
+
+
+      • Timeliness of performance – Ability to meet delivery schedules; ability to satisfy response time, responsiveness to emergency
+        situations.
+
+
+      • Business relations – Efficiency/effectiveness of vendor management; ability to conduct business in a flexible, proactive, cooperative
+        manner; overall customer satisfaction.
+1.
+
+      • Personnel and Subcontractor Management – How well did the contracted personnel contribute to the objectives of the contract.  How did
+        the contractor staff, utilize and maintain personnel to achieve the contractual requirement.
+
+In assessing a Contractor’s Past performance, the Government will consider the Questionnaire results submitted by the Contractor’s references
+and may consider information from other sources including the contractor, and may consider information from other sources such as, but not
+limited to information contained in Government past performance databases.  Each reference Questionnaire will be evaluated separately, as
+described above, and an overall (as described below) will be given to the Contractor based upon the trends their past performance has
+demonstrated and the Contractor’s probability of success on the proposed contract based upon their record of past performance.
+
+
+
+
+The following adjectival ratings will be used to evaluate the past performance factor:
+
+|Excellent          |Past performance is highly similar and relevant to the stated requirements in size, scope and    |
+|                   |complexity.  Past performance, record is entirely favorable and there are no unfavorable comments|
+|                   |from references.  The past performance record possesses exceptional strengths.                   |
+|Good               |Past performance is similar and relevant to the stated requirements in size, scope and           |
+|                   |complexity.  Past performance record is more favorable than unfavorable.  Unfavorable references,|
+|                   |if any, are minor and are more than offset by favorable references.                              |
+|Acceptable         |Past performance is somewhat similar and relevant to the stated requirements in size, scope and  |
+|                   |complexity.  Has favorable and unfavorable references.  Unfavorable references are generally     |
+|                   |offset by favorable references.                                                                  |
+|Marginal           |Past performance is not similar and relevant to the stated requirements in size, scope, and      |
+|                   |complexity. More unfavorable than favorable past performance record.  Unfavorable references are |
+|                   |not offset by favorable references.                                                              |
+|Not Applicable     |No relevant past performance information is available for evaluation; or, Contractor has no      |
+|                   |relevant experience.                                                                             |
+|                   |Quotation is neither rated favorably or unfavorably.                                             |
+
+(NOTE: In the case of a Contractor without a record of relevant experience, or for whom information on past performance is not available, the
+Contractor will not be evaluated favorably or unfavorably on past performance, as per the guidance established at FAR 15.305.)
+
+
+  F.  ATTACHMENTS TO THE RFQ
+
+      1.    Statement of Work (SOW)
+
+
+
+
+
+
+
+                                                                      [pic]
+
+
+
+Dear Sir or Madam,
+
+The Social Security Administration is soliciting quotations for the acquisition of consulting services that support best practices in mainframe
+software asset management.  You have been designated as a reference and the Government requests your assistance in the past performance
+evaluation of __________________________________.
+                                        (Vendor)
+
+By submitting this information, you are assisting the Federal Government in determining which vendor is offering the best value.  Please note
+that there are two parts, which include Corporate Experience and Past Performance.
+
+
+ We appreciate your guidance and value your judgment in this matter.
+
+Please submit your responses to the following address:
+
+Social Security Administration
+Office of Acquisition and Grants
+Attention: Rico Batte
+1st Floor, Rear Entrance
+7111 Security Blvd.
+Baltimore, Maryland 21244
+
+Or electronically to Rico.Batte@SSA.gov
+
+Responses must be received by 12:00 pm, EST,11/16/2010.  We appreciate your timeliness in this matter.
+
+
+Thank you in advance for your assistance,
+Social Security Administration
+
+                                                                      [pic]
+
+Date: ________________
+
+Prime Contractor Name: _________________________________________
+
+Sub-Contractor Name: ___________________________________________
+
+Contact Name:  _________________________________
+
+Contact Phone:  _____________________
+
+   What was your involvement with the contract?
+      Contracts/Purchasing
+      Project Management
+
+                                                               Corporate Experience
+
+Size – SSA will conduct a comparison of your infrastructure configuration relative to SSA’s data centers according to the following criteria:
+
+How many data centers did the contractor support?
+
+ _______
+
+How many z/OS mainframe systems did the contractor support?
+
+ _______
+
+How many aggregate MIPS did the contractor support?
+
+ _______
+
+How many z/OS mainframe Sysplexes did the contractor support?
+
+_______
+
+How many LPARs did the contractor support?
+
+ _______
+
+
+
+
+Other Comments on the size of the infrastructure that the contractor provided services for:
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+
+
+Scope – SSA will conduct a comparison to determine the range of activities performed by the offeror relative to SSA’s requirements.
+
+At the time of the contract, were your z/OS mainframes configured to allow LPARs and workloads to move within sysplexes and across locations?
+
+Yes ____ No   ____
+
+How often did the contractor provide z/OS Software alternative pricing briefings?
+
+Weekly ____ Monthly ____ Quarterly ____ Other ____ Never ____
+
+How often did the contractor provide alternative software pricing training?
+
+Weekly ____ Monthly ____ Quarterly ____ Other ____ Never ____
+
+How often did the contractor provide SCRT report training?
+
+Weekly ____ Monthly ____ Quarterly ____ Other ____ Never ____
+
+How often did the contractor review SCRT reports?
+
+Weekly ____ Monthly ____ Quarterly ____ Other ____ Never ____
+
+Did the contractor validate SCRT reports for accuracy?
+
+Yes ____ No   ____
+
+Did the contractor provide an automated method of validating SCRT reports for accuracy?
+
+Yes ____ No   ____
+
+
+
+
+Other Comments on the range of services provided: ________________________________________________________________________
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+
+Complexity – SSA will conduct a comparison of activities supported by the offeror relative to SSA’s capacity according to the following
+criteria:
+
+Did the contractor provide alternative pricing recommendations?
+
+Yes ____ No   ____
+
+Did the contractor actively assist in implementing alternative pricing recommendations?
+
+Yes ____ No   ____
+
+Did the contractor’s alternative pricing recommendations, if implemented, reduce actual software cost, or provide projected savings?
+
+Reduced actual software cost ____ Provide projected savings ____
+
+Did the contractor assist in the validation and reconciliation of contractual and installed software inventory?
+
+Yes ____ No   ____
+
+What was the number of software products that the contractor provided support for?  ____
+
+Did the contractor consult on alternative software pricing models for Disaster Recovery requirements?
+
+Yes ____ No   ____
+
+Other Comments on the contractor’s activities: ________________________________________________________________________
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+
+
+Please provide any additional comments relative to the prime vendor or its sub-contractor relative to Corporate Experience:
+
+Comments: ________________________________________________________________________
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+
+                                                             PERFORMANCE INFORMATION
+
+Instructions: Please rate the contractor on a scale of 1 to 10, 10 being the highest ranking and 1 being the lowest.  The following information
+should be considered when rating the identified factors:
+
+Excellent (9 to 10 Points) – Performance met all contract requirements and exceeded many to the customer’s benefit.  Problems, if applicable,
+were negligible and were resolved in a timely, highly effective manner.
+
+Very Good (7 to 8 Points) – Performance met all contract requirements and exceeded some to the customer’s benefit.  There were a few minor
+problems, which the contractor resolved in a timely, effective manner.
+
+Neutral (5 to 6 Points) – Performance met contract requirements.  There were some minor problems and corrective actions taken by the contractor
+were satisfactory.  This rating is also assigned when there is no record of past performance or the record is inconclusive.
+
+Marginal (3 to 4 Points) – Performance did not meet some contractual requirements.  There were problems, some of a serious nature, for which
+corrective action was only marginally effective.
+
+Unsatisfactory (1 to 2 Points) – Performance did not meet most contractual requirements.  There were serious problems and the contractor’s
+corrective actions were ineffective.
+
+Please enter a numeric value in the space provided for each item or N/A if you consider it non-applicable.
+
+Quality of Service:
+
+
+1. Quality of deliverables.  Score____
+
+
+2. Ability to solve problems.  Score____
+
+
+3. Overall efficiency.  Score____
+
+Other Comments on Quality of Service: ________________________________________________________________________
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+Cost Control:
+
+
+4. Ability to match contractor’s estimates with actual costs for tasks or projects.  Score____
+
+
+5. Ability of bring in projects under budget.  Score____
+
+
+Other Comments on Cost Control: ________________________________________________________________________
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+Timeliness of Performance:
+
+
+6. Ability to meet delivery schedules.  Score____
+
+
+7. Ability to satisfy response time.  Score____
+
+
+8. Response time to emergencies.  Score____
+
+Other Comments on Timeliness of Performance: ________________________________________________________________________
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+Business Relations:
+
+
+9. Efficiency and effectiveness of the contractor’s management.  Score____
+
+
+10. Ability to interact with your staff in a flexible, proactive manner.  Score____
+
+
+11. Overall customer satisfaction of contractor.  Score____
+
+
+Other Comments on Business Relations: ________________________________________________________________________
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+
+
+Personnel Management:
+
+12. Ability of the contracted personnel to meet the objectives of the contact.  Score____
+
+13. Ability of the contracted personnel to achieve requirements.  Score____
+
+
+Other Comments on Personnel Management:
+________________________________________________________________________
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+
+Please provide any additional comments relative to the prime vendor or its sub-contractor relative to overall performance:
+
+
+Additional Comments: ________________________________________________________________________
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+
+                                                             Thank you for your time.

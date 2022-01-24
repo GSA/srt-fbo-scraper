@@ -1,0 +1,1203 @@
+SAS Programmer for PubliclPopulation
+
+Health-Related Data PWS (11124/2009)
+
+PERFORMANCE WORK STATEMENT INDIAN HEALTH SERVICE: SAS Programmer for Public/Population Health-Related Data SECTION 1 GENERAL INFORMATION
+1.1 SCOPE OF WORK. The Contractor must provide all personnel, equipment, tools, materials, supervision, and other items and services necessary to perform the work and provide support as defined in this Performance Work Statement (PWS) for the Indian Health Service (IHS) Division of Epidemiology and Disease Prevention (DEDP). The Contractor shall work onsite at the IHS DEDP office, 5300 Homestead Road NE, Albuquerque, NM 87110. The Contractor shall perform to the standards in this PWS. The estimated quantities of work are listed under Section 5 and Technical Exhibit 2 - Workload Estimates. 1.1.1 Background Information.
+
+1.1.2 History. The IHS Division of Epidemiology and Disease Prevention (DEDP) provides epidemiological services in the form of outbreak investigations, development of surveillance systems, infectious and chronic disease control interventions, and special applied research projects to American Indians and Alaska Natives throughout the United States. The DEDP is also the national coordinating center and collaborates with the 12 Tribal Epidemiology Centers to collect, analyze, interpret, and disseminate health information critical to identifying diseases to target, suggesting strategies for successful interventions and testing the effectiveness of health interventions that have been implemented. 1.1.3 Mission. Epidemiology provides the foundation for all public health activities. Tribal governments and health facilities as well as IHS direct-service sites already deliver public health services such as immunization and cancer prevention and control programs to American Indian and Alaska Native communities throughout the country. More efficient service delivery and development of effective interventions to improve health requires in-depth knowledge of the causes of illness and mortality among the population and epidemiology provides that knowledge. 1.2
+
+CONTRACTOR PERSONNEL
+
+1.2.1 Contract Manager. The Contractor must provide a contract manager who must be responsible for the performances of the work. The name of this person, and an alternate who must act for the contractor when the manager is absent, must be designated in writing to the contracting officer. 1.2.1.1. The contract manager or alternate must have full authority to act for the contractor on all contract matters relating to daily operations of this contract. 1.2.1.2. The contract manager or alternate must be available during normal duty hours within 120 minutes by phone to discuss with government personnel any problem areas.
+
+- 1-
+
+SAS Programmer for Public/Population
+
+Health-Related Data PWS (11/24/2009)
+
+1.2.2
+
+Contractor Employees.The Contractor must not employ persons for work on
+
+this contract if such employee is considered by the contracting officer to be a potential threat to the health, safety, security, general well-being, or operational mission ofthe office and its population. 1.2.2.1. Contractor personnel must easily be recognized as contractor employees, if onsite. Government site badge must be obtained, Sec. 1.5.1 1.2.2.2. The contractor must make sure employees have the following current and valid professional certifications before starting work under this contract. No substitutes of personnel without notification and approval by the Project Officer. 1.2.2.3. The Contractor must not employ any person who is an employee of the U.S. Government if employing that person would create a conflict of interest. Additionally, the Contractor must not employ any person who is an employee of the Indian Health Service, unless such person seeks and receives approval according to IHS regulations. 1.2.2.4. All Contractor employees must maintain satisfactory standards of competence, conduct, appearance, integrity, and ethics. 1.2.2.5. All Contractor employees shall comply with Headquarters at Albuquerque time and attendance policies and reporting requirements.
+
+1.3
+
+QUALITY CONTROL.
+
+1.3.1 Quality Control Program. The Contractor must provide a quality control plan that contains, at a minimum, the items listed below to the Contracting Officer for acceptance not later than the postaward conference. The Contracting Officer will notify the contractor of acceptance or required modifications to the plan before the contract start date. The Contractor must make appropriate modifications. The plan shall include, but not be limited to, the following:
+Contain procedures for written and verbal communication with the Government regarding performance of the contract Contain clear, measurable, and acceptable levels of performance Contain procedures for preventing defects and deficiencies, early detection of problems, and handling corrective actions without dependence upon Government intervention Include a system to investigate and resolve customer complaints forwarded by the Government. Provide a record of all Contractor QC checks and corrective actions. These files shall be maintained by the Contractor and shall be available upon request to the CO or PO during the performance period. QUALITY ASSURANCE. According to the Inspection of Service clause, the Government will evaluate the Contractor's performance under this contract. For those tasks listed on the PRS (Technical Exhibit 1), the COR will follow the methods or surveillance observations. When an observation indicates defective performance, the COR will require the Contract Manager or alternative(s) to initial the
+
+1.4
+
+-2-
+
+SAS Programmer for Public/Population
+
+Health-Related Data PWS (11124/2009)
+
+observation. The initialing ofthe observations does not necessarily constitute concurrence with the observation, only acknowledgement that he or she has been made aware of the defective performance. Government surveillance of tasks not listed in the PRS or by methods other than those listed in the PRS (such as provided for by the Inspection of Services clause) may occur during the performance period of this contract. Such surveillance will be done according to standard inspection procedures or other contract provisions. Any action taken by the CO as a result of surveillance will be in accordance with the terms of the contract. 1.4.1 Performance Evaluation Meetings. The CO may require the Contract Manager to meet with the CO, COR and other Indian Health Service personnel as deemed necessary. The Contractor may request a meeting with the CO when he or she believes such a meeting is necessary. Written minutes of any such meetings must be recorded in the contract and signed by the Contract Manager and the CO. If the Contractor does not concur with any portion of the minutes, such nonconcurrence must be provided in writing to the CO within 15 calendar days following receipt of the minutes. 1.5 SECURITY. Appropriate Facility Security Clearance shall be addressed when reporting for the first day of duty. The Contractor must be responsible for safeguarding all government property provided for contractor use. At the end of each work period, all government property, equipment and materials must be secured. 1.5.1 Identification Badges. The Contractor shall ensure that each Contractor employee acquire a Government identification badge in accordance with IHS DEDP procedure. DEDP, through the Security Office, will furnish badges. Contractor personnel shall wear the badge conspicuously displayed at all times while performing required services at DEDP. Should a badge be lost, damaged, or destroyed, it shall be replaced immediately. 1.5.2 Key ControllPassword. The Contractor must establish and implement methods of making sure all keys or passwords issued to the Contractor by the IHS are not lost or misplaced and are not used by unauthorized persons. The Contractor must not duplicate any keys issued by the government. 1.5.2.1. The Contractor must immediately report to the COR or CO any occurrences of lost or duplicated keys. 1.5.2.2. In the event keys, other than master keys, are lost or duplicated, the Contractor may be required, upon written direction of the CO, to rekey or replace the affected lock or locks without cost to the IHS. The IHS may, however, at its option, replace the affected lock or locks or perform rekeying and deduct the cost of such from the payment due the Contractor. If the master key is lost or duplicated, all locks and keys for that system must be replaced by the IHS and the total cost deducted from the payment due the Contractor. 1.5.2.3. The Contractor must prohibit the use of keys issued by the IHS by any person other than the Contractor's employees. Opening of locked areas by Contractor employees to permit entrance of persons other than Contractor employees engaged in performance of contract work requirement in those areas is prohibited. 1.5.2.4. Lock Combinations - The contractor must control access to all IHS provided lock combination to preclude unauthorized entry.
+
+-3-
+
+SAS Programmer for PubliclPopulation
+
+Health-Related Data PWS (11/2412009)
+
+1.6 HOURS OF OPERATION. With the exception of work approved off-site, all work shall be performed during normal working hours of 6:00 am to 4:30 pm, Mountain Time, Monday through Friday, excluding Federal holidays at 5300 Homestead Road NE, Albuquerque, NM. The Contractor is responsible for notifying the PO of he/she will be late, or is ill and unable to work for other reasons. 1.6.1 Legal Public Holidays. Holidays are in accordance with the U.S. Government Office of Personnel Management website: http://www.opm.gov. The basic workweek is Monday through Friday. If a holiday falls on a Saturday, the preceding Friday is the holiday. If a holiday falls on a Sunday, the following Monday is the holiday. 1.7 CONSERVATION OF UTILITIES. The Contractor must make sure employees practice utilities conservation. The Contractor must be responsible for operating under conditions that prevent the waste of utilities. 1.7.1 1.7.2 Lights must be used only in areas where work is actually being performed. Employees must not adjust mechanical equipment controls for heating, ventilation, and air conditioning systems. Water faucets or valves must be turned off when not in use.
+
+1.7.3
+
+1.8 RECORDS. The Contractor must be responsible for creating, maintaining, and disposing of only those government required records that are specifically cited in this PWS or required by the provisions of a mandatory directive listed in section 6, Applicable Publications and Forms. If requested by the government, the Contractor must provide the original record, or a reproducible copy of any such record within five (5) working days of receipt of the request. The Contractor shall not keep any records or make use of any data derived from the performance under this contract and shall be available for inspection by the Government upon request at any time during the performance period. 1.8.1 Final Disposition of Records, Reports, Charts, Logs, and Maps. All reports, charts, logs, and maps shall become the property of the Government upon completion or termination of the contract and shall be available for inspection by the Government upon request at any time during the performance period. Any Government publications provided to the Contractor during its performance under this contract shall be returned to the Government. Disposition of all records shall be the responsibility of the Government.
+
+-4 -
+
+SAS Programmer for PubliclPopulation
+
+Health-Related Data PWS (11/24/2009)
+
+SECTION 2 ACRONYMS AND DEFINITIONS
+2.1 ACRONYMS
+
+AliANs - American Indians and Alaska Natives CO - Contracting Officer COR - Contracting Officer Representative DEDP - Division of Epidemiology and Disease Prevention EPI - Epidemiology
+I1T/U - IHS, Tribal, and Urban
+
+IHS - Indian Health Service NDW - National Data Warehouse PO - Project Officer PWS - Performance Work Statement SAS - Statistical Analysis Software SOW - Scope of Work SQL - Structured Query Language TEC - Tribal Epidemiology Center 2.2 DEFINITIONS
+
+ACCEPTANCE - An acknowledgement by an authorized U.S. Government representative that the supplies or services conform with applicable contract quantity and quality requirements. Acceptance of supplies or services is the contracting officer's responsibility, which may be delegated to another official. Acceptance is usually evidenced by an acceptance certificate on an inspection or receiving report. The preferred method of transmission of acceptance reports is via electronic means. Acceptance reports need two dates, the date of delivery and the date of acceptance. The acceptance date is one of the factors used to establish a payment due date. ADMINISTRATIVE APPROVAL - An approval officer's signature on a payment voucher to indicate the voucher is correct. Or, a statement by an approval officer that indicates the proposed payment is approved. The approval officer must sign and date the statement. CALENDAR DAYS - Consecutive days without regard to weekends or holidays. CONTINENTAL UNITED STATES (CONUS) - The 48 contiguous states and the District of Columbia.
+
+-5-
+
+SAS Programmer for Public/Population
+
+Health-Related Data PWS (11124/2009)
+
+CONTRACT - Any enforceable agreement or order to buy supplies or services. A subsequent modification becomes part of the contract. In this regulation, the term is expanded to include delivery and purchase orders and other procurement documents. CONTRACT MODIFICATION - Any written change in the terms of a contract. Only contracting officers acting within the scope of their authority are empowered to execute contract modifications. CONTRACTOR-ACQIDRED PROPERTY - Property procured or otherwise provided by a contractor for the performance of a contract. It does not include Government furnished materiel or equipment. COST - Refers to the financial measurement of resources used in accomplishing a specified purpose, such as performing a service, carrying out an activity acquiring an asset, or completing a unit of work or a specific project. Accounting for activities on a cost basis means that all significant elements should be included in the amounts reported as total costs. Cost, in this context, is the value of goods and services used by a Government agency within a given period, regardless of when they were ordered, received, or paid for. CURRENT YEAR - The fiscal year in progress. October to September. CUSTOMER - Any person or entity authorized to be provided services or utilize services under the contract. DEFECTIVE SERVICE - A service output that does not meet the standard of performance requirement specified in the contract for that service. GOVERNMENT FURNISHED EQUIPMENT (GFE) - Property provided to a contractor by the government. It is used in producing an end product or service. It is not consumed, but is returned in the same form at the end of the contract. INSPECTION - The process of determining compliance with standards through formal and informal surveys of workplaces, operations, and facilities. ON-SITE - The office known as Division of Epidemiology and Disease Prevention, Albuquerque, NM. PERFORMANCE REQIDREMENT - The point that divides acceptable and unacceptable performance of a task according to the PRS and the Inspection of Services clause. It is the number of defects or maximum percentage of defects in the lot that is acceptable. PERFORMANCE REQIDREMENTS SUMMARY - A listing of the services outputs under the contract that are to be evaluated by the COR on a regular basis, the surveillance methods to be used for these outputs, and the performance requirements of the listed outputs.
+
+-6-
+
+SAS Programmer for PubliclPopulation
+
+Health-Related Data PWS (11/24/2009)
+
+QUALITY ASSURANCE - A planned and systematic pattern of all government actions necessary to provide confidence that adequate technical requirements are established; products and services conform to established technical requirements; and satisfactory performance is achieved. Quality assurance refers to actions by the government assurance functions for a contracted service. QUALITY CONTROL - Those actions taken by a contractor to control the production of outputs to ensure that they conform to the contract requirements. SURVEILLANCE - Surveillance is the process of monitoring either by direct evaluation, observation, or other information sources, contractor performance.
+
+SECTION 3 GOVERNMENT FURNISHED PROPERTY AND SERVICES
+General Onsite: Desk, chair, office, supplies, access to laptop and other equipment if needed.
+
+SECTION 4 CONTRACTOR FURNISHED ITEMS AND SERVICES
+4.1 GENERAL INFORMATION. The Contractor shall furnish everything needed to perform required services of this PWS according to all its terms. 4.2 PURCHASE OF EQUIPMENT. lfthe Contractor purchases equipment for the purpose of performing the contract, the Government shall have the unilateral option to purchase such equipment at a fair and reasonable price to ensure the continuous and uninterrupted operations of the services required under the contract.
+
+-7-
+
+SAS Programmer for PubliclPopulation
+
+Health-Related Data PWS (11124/2009)
+
+SECTION 5 PROGRAMMER FOR PUBLIC/POPULATION HEALTH-RELATED DATA TASKS
+5.1 Provide assistance to the Indian Health Service Division of Epidemiology and Disease Prevention staff with programming activities within different data sources to better the surveillance and reporting of infectious and chronic diseases in American Indians and Alaska Natives (AIlANs). 5.2 CONTRACTOR RESPONSIBILITIES. The Contractor's work and responsibility shall be comprised of, but not be limited to planning, administration, and management necessary to assure all services, functions and operations are conducted in accordance with the terms and conditions ofthis PWS. The Contractor shall comply with all Federal, State and local applicable laws, regulations, and any changes or revisions thereto. The Contractor shall adhere to such laws and regulations including when they are changed or revised during the performance of this PWS. The Contractor shall ensure that all work meets or exceeds the specifications in this PWS and all applicable regulations. The Contractor shall perform its own administrative services necessary to accomplish the work, i.e., internal payroll documents, internal administrative document handling. 5.3 SUMMARY OF FUNCTIONAL SERVICES TO BE PROVIDED. The following major functional areas are included in this PWS: SAS Programming activities include but are not limited to the following: Write stored procedures and code to implement, extract, transform, and load methodologies; design, implement, test, debug database stored procedures and complex queries to extract, calculate, or manipulate information. These SAS programming activities will be applied to DEDP staff projects such as disease outbreaks, Epi Data Mart projects involving DEDP staff and/or TEC staff, NDW data projects, and other data sources available to the DEDP all based on the programming logic provided by or in consultation with DEDP staff. The specific services to be provided for the execution of this PWS are detailed in Section C-5 of this PWS. The Contractor is expected to provide all required services at the acceptable level of performance as determined by TE-l, Performance Requirements Summary (PRS). 5.4 SAS PROGRAMMER FOR PUBLICIPOPULATION DATA TABLE. The tasks will apply to Base Year and subsequent Option Years.
+TASKS Task 1 - Meet with DEDP staff to discuss SOW and outline tentative requirements of SAS Programming activities Task 2 - Perform SAS programming activities, statistical calculations and develop general programming logic based on requirements provided by DEDP staff on projects such as: disease outbreaks, Epi Data Mart, General Data Mart from the IHS National Data Warehouse (NDW), and other data sources available to theDEDP Task 3 - Monthly Reports and Summary Report
+
+HEALTH-RELATED
+
+PERFORMANCE INDICATORS 1. Identify minimum requirements of Programming activities 1. Develop programming logic for DEDP projects/assignments 2. Meet timelines of project 3. Be customer service friendly
+
+1. Monthly report on activities to-date for review and
+
+-8-
+
+SAS Programmer for PubliclPopulation
+
+Health-Related Data PWS (1112412009)
+
+approval by PO 2. Summary report for year's activities for review and approval by PO
+
+5.5 INTERFACING REQillREMENTS. The Contractor shall maintain cooperative and businesslike relations with other IIT!U health facilities and personnel with whom it comes in contact. Any difficulties or disagreements shall be brought to the attention of the Contracting Officer (CO). 5.6 CONTRACTOR PERSONNEL IDENTIFICATION. The Contractor shall furnish in writing to the CO, not later than (NLT) 30 calendar days prior to start of contract performance, a list of employees who will perform under this PWS. The Contractor shall notify the CO, in writing, of any addition, deletion, or change within 5 working days of such change. This list shall include each employee's name, work assignment, certification, qualifications, and expenence. 5.7 PERFORMANCE. The Contractor shall meet performance standards listed in this PWS and shall not be relieved of any performance requirements because of waiting for approvals. The Contractor shall comply with the time schedule to perform the monthly, quarterly, semiannual, and annual requirements ofthis PWS. The Contractor shall propose a time schedule to the COR for approval that identifies the date for each requirement. This time schedule shall be provided NLT 30 days prior to the start of the contract performance date and annually thereafter. The time requirement to update plans, regulations, reports, and other deliverables shall be from the date the item was last completed. The Contractor shall use the following time frame unless a specific time is stated in the PWS: Weekly - Once every 7 days Monthly - Once every 30 days Quarterly - Once every 3 months Semi-Annually - Once every 6 months Annually - Once every 12 months
+
+SECTION 6 APPLICABLE PUBLICATIONS AND FORMS
+Technical Exhibit #1 - Performance Requirements Summary Technical Exhibit #2 - Workload Estimates Technical Exhibit #3 - Required Reports
+
+-9-
+
+SAS Programmer for PubliclPopulation
+
+Health-Related Data PWS (11/24/2009)
+
+Technical Exhibit #1 - Performance Requirements Summary
+The tasks will apply to. Base Year and subsequent Option Years.
+REQUIRED SERVICE
+Task 1 - Discuss SOW and outline tentative requirements of SAS Programming activities
+
+GOVERNMENT SURVEILLANCE
+
+METHOD
+
+PAYMENT % FOR MEETING INDICATOR
+Meets deadline - 100 % Within 1 wk of deadline - Minus 1% W/in 2 wks of deadline - Minus 5% W/in 4 wks of deadline - Minus 25% After 4 wks - Minus 100% Meets deadline - 100 % Within 1 wk of deadline - Minus 1% Wfin 2 wks of deadline - Minus 5% W/in 4 wks of deadline - Minus 25% After 4 wks - Minus 100%
+
+Planning meeting to identify minimum requirements within two weeks of contract start date
+
+Task 2 - Perform SAS programming activities, statistical calculations and develop general programming logic based on requirements provided by DEDP staff on projects such as: disease outbreaks, Epi Data Mart, General Data Mart from the IHS National Data Warehouse (NDW), and other data sources available to the DEDP Task 3 - Monthly and Summary Reports
+
+Completion of assignments/projects according to specified deadlines
+
+Monthly reports summarize monthly activities and Summary report summarizes the year's activity and these reports should be submitted with the invoice at the end of the month or year, respectively
+
+Meets deadline - 100 % Within 1 wk of deadline - Minus 1% W/in 2 wks of deadline - Minus 5% W/in 4 wks of deadline - Minus 10% After 4 wks - Minus 100%
+
+TEl-l
+
+SAS Programmer for Public/Population
+
+Health-Related Data PWS (11/24/2009)
+
+Technical Exhibit #2 - Workload Estimates
+The tasks will apply to Base Year and subsequent Option Years.
+% of Time
+2%
+
+TASKS Task 1
+Discuss SOW and outline tentative requirements of SAS Programming activities, discuss activities/projects with DEDP team
+
+Hours
+
+38
+
+95%
+
+Task 2
+Perform SAS programming activities, statistical calculations and general programming based on programming logic and requirements provided by DEDP staff
+
+1786
+
+3%
+
+Task 6
+Monthly Reports and Summary Report
+
+56
+1880
+
+TOTAL HOURS
+
+TE2 -1
+
+SAS Programmer for PubliclPopulation
+
+Health-Related Data PWS (11/24/2009)
+
+Technical Exhibit #3 - Required Reports and Deliverables
+The tasks will apply to Base Year and subsequent Option Years. I Task 3 I ~ Monthly report of activities and Summary report of year's activities
+
+TE3 -1
+
+SOLICITATION #10-236-S0L-00004 illS - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 3 of31
+B. B.1. CONTINUATIONOF SF 1449 Block 20: General Purpose of Contract
+
+The contractor shall provide SAS Programmer services for the Indian Health Service, Division of Epidemiology and Disease Prevention (DEDP) at Albuquerque, New Mexico in accordance with the Performance Work Statement (See D.l). B.2. Block 19-24 DESCRIPTION Base Year CLlN OOOIA CLlN OOOlB CLlN OOOIC CLlNOOOlD (labor categorv) (labor category) (labor category) Travel
+02/0112009 to 0113 112010
+
+ITEM NO.
+
+QTY
+
+UNIT
+
+UNITPRlCE
+
+AMOUNT
+
+Hours Hours Hours NTE
+
+$ $ $
+
+$ $ $ $ $
+
+TOTAL Base Year 151 Option Year CLlN OOOIA CLlN OOOlB CLlN OOOIC CLlNOOOlD (labor cat~QŁYL_ (labor categorv) (labor category) Travel
+02/0112010 to 0113112011
+
+Hours Hours Hours NTE
+
+$ $ $
+
+$ $ $ $ $
+
+TOTAL 1st Opt Yr
+
+2ND Option Year 02/0112011 to 01/31/2012 CLlN OOOIA CLlN 0001B CLIN OOOIC CLlNOOOlD (labor catezorv) (labor categorv) (labor category) Travel Hours Hours Hours NTE TOTAL 2ND Opt Yr $ $ $ $ $ $ $ $
+
+GRAND TOTAL (BASE + ALL OPTION YEARS)
+
+$
+
+SOLICITATION NOTE: If additional labor categories are needed, please provide the same format on a separate sheet of paper. Mark it "Section B.2".
+
+SOLICITATION #10-236-S0L-00004 IRS - Division of Epidemiology and Disease Prevention SASPROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 4 of31
+B.3. Travel and Per Diem
+
+Travel costs shall be allowed to the extent that they are reasonable, allocable, and determined to be allowable under FAR 31.205-46. Travel by air will be reimbursed at the actual cost incurred and will not exceed the lowest customary standard coach, or equivalent fare offered during normal business hours. Pursuant to FAR 31.20546(a)(2)(i), travel cost for lodging, meals, and incidental expenses are limited to the maximum per diem rates in effect at the time of travel set forth in the Federal Travel Regulation (FTR);. The per diem allowance shall not be allowed when the period of official travel is 10 hours or less during the same calendar day. Travel by privately owned vehicle will be reimbursed at the current GSA approved mileage rate. Current travel policy and per diem rates may be obtained at the following Internet site: http://www.gsa.gov/Portal/gsa/ep/contentView.do?contentType=GSA_BASIC&contentId= 17943&noc=T.
+B.4. Contract Administration Data
+
+A. Contracting Officer
+
+a. The Contracting Officer (CO) is the only individual who can legally commit or obligate the Government to the expenditure of public funds. b. The CO is the only person authorized to make and changes or approve any changes in any of the requirements of the contract, and notwithstanding any provision contained elsewhere in this contract, the said authority remains solely with the CO. In the event the contractor makes any changes at the direction of any person other than the CO, the changes will be considered to have been made without authority and no adjustments will be made in the contract price to cover any increase in costs incurred as a result thereof c. The CO whose name is shown below will affect all contract administration. Communications pertaining to contract administration matters will be addressed to the CO. No changes in, or deviations from, the scope of work shall be effect without a supplemental (modification) executed by the CO authorizing such changes. d. The contract will be administered by Contract Officer: Sonia Nelson, IRS-Division of Acquisition Policy, 5300 Homestead Road NE, Albuquerque, NM 87110. Phone: 505-248-4164; Fax: 505-248-4393. e. Copies of all correspondence concerning this contract must be provided to the CO at the above address and shall reference to the contract number. f The CO reserves the right to appoint a COR.
+B. Contracting Officer's Representative (COR)
+
+The Contracting Officer will designate a representative in dealing with the Contractor at the site, to administer the technical aspects of the contract ~d to assure compliance. The representative has no authority to issue change orders or otherwise authorize changes, which would affect the contract price, specifications, conditions or period of performance. Designation of a COR will be issued when the contract is awarded.
+C. Contractor's Representatives
+
+The following Contractor's representatives are 1) the individual with whom the Government may contact during the period of the contract for prompt action on matters pertaining to the administration of the contract and 2) the individual authorized to sign the contract: 1) NAME: TITLE: PHONE: FAX: E-MAIL: 2) NAME: TITLE: PHONE: FAX: E-MAIL:
+
+SOLICITATION #10-236-S0L-00004 illS - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 5 of31 B.S. Special Contract Requirements
+
+A. Confidentiality of Information All materials furnished or produced by the Contractor, relating to work performed, researched, or derived under this contract, including but not limited to documents, software, reports and correspondence will remain confidential. The contractor shall not release information to any persons, groups of persons, or organization other than the illS. Breach of confidentiality may be grounds for rescission of this contract. Any presentation of any statistical or analytical material or reports based on information obtained from the studies or services covered by this contract will be subject to review the CORIPO before publication or dissemination for accuracy of factual data and interpretation. B. Division of Labor Wage Determination The Service Contract Act mandates that all Federal Government service contracts over $2,500 must contain the appropriate Service Contract wage determinations. The Act requires the contractor to pay its employees at least the minimum wages and fringe benefits as established by the Department of Labor. The wage rates for Option Years shall be incorporated into the contract by modification when the option to extend the services is exercised. (Attachment D.2) C. Information Security The contractor shall comply with all applicable illS information technology security requirements and procedures. D. Business Associate Agreement Pursuant to the Health Insurance Portability and Accountability Act {HIPAA) of 1996 and its implementing regulation, the Standards of Privacy of Individual Identifiable Health Information at 45 C.F.R. Part 160 and 164, Subpart A and E ("Privacy Rule"), the Indian Health Service is required to enter into an agreement with the Business Associate, pursuant to which the Business Associate shall comply with and appropriately safeguard Protected Health Information ("PHI") that it will use and disclose when performing functions, activities or services ("Services") for the Indian Health Service. The Business Associate by signing the contract shall comply with the following terms in addition to other applicable contract terms and conditions relating to the safekeeping, use and disclosure of PHI. Definitions Terms used in this Agreement, but not otherwise defined, shall have the same meaning as those terms contained within the Privacy Rule. (1) Agreement: "Agreement" shall mean this clause and any other provisions of this contract that are incorporated by reference (2) (3) Business Associate: "Business Associate" shall mean the Contractor Covered Entity: "Covered Entity" shall mean the Indian Health Service
+
+(4) Designated Record Set: "Designated Record Set" shall mean (1) a group of records maintained by or for a covered entity that is: (i) The medical records and billing records about individuals maintained by or for a covered health care provider, (ii) The enrollment, payment, claims adjudication, and case or medical management record systems maintained by or for a health plan, or (iii) Used, in whole or in part, by or for the covered entity to make decisions about individuals. (2) For purposes of this paragraph, the term record means any item, collection, or grouping of information that includes protected health information and is maintained, collected, used, or disseminated by or for a covered entity. (45 C.F.R. § 164.501)
+
+SOLICITATION #10-236-S0L-00004 ms - Division of Epidemiology SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA
+
+and Disease Prevention Page 6 of31
+
+(5) Individual: "Individual" shall have the same meaning as the term "individual" in 45 C.F.R. § 164.501 and shall include a person who qualifies as a personal representative in accordance with 45 C.F.R. § 164.502(g) (6) Privacy Rule: "Privacy Rule" shall mean the Standards for Privacy of Individually Identifiable Health Information at 45 C.F.R. Parts 160 and 164, Subparts A and E (7) Protected Health Information: "Protected Health Information" shall have the same meaning as the term "protected health information" in 45 C.F.R. § 164.501, limited to the information created or received by the Contractor from or on behalf of the IHS; Required By Law: "Required By Law" shall have the same meaning as the term "required by law" in 45 C.F.R. § 164.501 (8) Required By Law: "Required By Law" shall have the same meaning as the term "required by law" in 45 C.F.R. §164.501 (9) Secretary: "Secretary" shall mean the Secretary of the United States Department of Health and Human Services or his designee. Section 1 - Privacy Rule Compliance The Business Associate agrees to comply with the Business Associate Agreement requirements under the Privacy Rule and the provisions of this Agreement throughout the term of this Agreement. The Business Associate agrees that it will require all of its agents, employees, subsidiaries, affiliates and subcontractors, to whom the Business Associate provides PHI, or who create or: receive PHI on behalf of the Business Associate for the IHS, to comply with the Privacy Rule and to enter into a written agreement with the Business Associate that provides the same restrictions, terms and conditions as set forth in this Agreement. Any subcontracts shall be let as provided for in this contract but, notwithstanding any exemption from any requirement for written consent contained in the subcontracting clause, the Business Associate shall nonetheless obtain the Contracting Officer's written consent before placing any subcontract pursuant to which the contractor discloses PHI to the subcontractor. Section 2 - Permitted Uses and Disclosures The Business Associate shall not use or disclose PHI except as provided for in this Agreement, the Privacy Rule or other applicable law, to perform functions, activities or services for or on behalf of the $S as specified herein. The Business Associate agrees that it may use or disclose PHI on behalf of the IHS only; {I) upon obtaining the authorization of the patient to whom the PHI pertains (45C.F.R. §§ 164.502(a)(I)(iv) and 164.508(bť; (2) for the purpose of treatment, payment or health care operations (45 C.F.R. §§ 164.502(a)(I)(ii) and 164.506); or (3) without an authorization or consent, if in accordance with 45 C.F.R. §§ 164.506, 164.510, 164.512, 164.514(e), 164.514(t) or 164.514(g). Except as otherwise limited in this Agreement, the Business Associate may use PHI for the management and administration of the Business Associate or to carry out responsibilities ofthe Contractor required by law. Section 3 - Safeguards The Business Associate shall develop and use appropriate procedural, physical and electronic safeguards to protect against the use or disclosure of PHI or the Privacy Rule. The Business Associate will limit any use, disclosure or request for use or disclosure of PHI to the minimum amount necessary to accomplish the intended purpose of the use, disclosure or request in accordance with the requirements of the Privacy Rule. Section 4 - Safeguards for Electronic PHI The Business Associate shall implement administrative, physical, and technical safeguards that reasonably and appropriately protect the confidentiality, integrity and availability of any electronic PHI that it creates, receives,
+
+SOLICITATION
+
+#lO-236-S0L-OOOO4
+
+ms - Division
+
+of Epidemiology
+
+and Disease Prevention
+
+SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA
+
+Page 70f31
+
+maintains, or transmits on behalf of the IRS as required by 45 C.F.R. part 164, subpart C, Security Standards for the Protection of Electronic Health Information. Section 5- Reporting of Disclosure The Business Associate shall promptly report to the IRS any knowledge of uses or disclosures of PHI that are not in accordance with this Agreement or applicable law. In addition, the Business Associate shall mitigate, to the extent practicable, any harmful effect that is known to the Business Associate of a use or disclosure of PHI by the Business Associate in violation of the requirements of the Privacy Rule. Section 6 - Records: IRS Access The Business Associate shall maintain records of PHI received from or created or received on behalf of the IRS and shall document subsequent uses and disclosures of such information by the Business Associate. The Business Associate shall promptly make available to the IRS, such information as the lHS may require to fulfill its obligations to provide access to, provides a copy of, and account for disclosures with respect to PHI pursuant to the Privacy Rule (e.g .. 45 C.F.R. § 164.528 (individual request for an accounting of PHI disclosuresť and other applicable law. Section 7 - Records; Individual Access The Business Associate shall maintain a designated record set, as defined by the Privacy Rule (45 C.F.R. § 164.501), for each patient for which it has PHI. In accordance with a patient's right to access his PHI under the Privacy Rule, the Business Associate shall make available all PHI in the patient's designated record set to the patient to whom that information pertains, or to the patient'S authorized representative, upon request by the patient or his authorized representative to meet the requirements under 45 C.F.R. § 164.524. The Business Associate shall document all disclosures under this section and shall promptly make such information available to the IRS pursuant to section 6 above. Section 8 - Disclosure Upon request, the Business Associate shall make available to the IRS or to the Secretary, PHI and the Business Associate's internal practices, books and records, including its policies and procedures, including any agreements required by Section 1 with subcontractors, vendors and other agents relating to the use and disclosure of PHI received from the IRS, or created or received by the Business Associate on behalf of the IRS, for purposes of determining the IRS' compliance with the Privacy Rule. The Business Associate shall not disclose PHI to any requesting party other than as provided for in this section and sections 2 and 7 above. The Business Associate shall forward all other requests to the IRS for handling. Section 9 - Amendments of Information The Business Associate shall make PHI available to the IHS for the IRS to fulfill its obligations pursuant to the Privacy Rule to amend PHI and shall, as directed by the IHS, incorporate any amendments into PHI held by the Business Associate and ensure incorporation of any such amendments into PHI held by its agents or subcontractors. The Business Associate shall not make any amendments to PHI and shall forward all amendment requests to the IRS Contracting Officer for approval. Section 10 - Obligations of the lHS
+
+SOLICITATION #lO-236-S0L-00004 illS - Division of Epidemiology SAS PROGRAMMER FOR PUBLIC REALm RELATED DATA
+
+and Disease Prevention Page 8 of31
+
+The illS Contracting Officer shall provide the Business Associate with its notice of privacy practices, produced under 45 C.F.R. § 164.520 and any changes to the notice. The illS Contracting Officer shall also provide the Business Associate with any changes in, or revocation of, individuals' authorizations to use or disclose PHI, if such changes affect the Business Associate's permitted or required uses or disclosures of PHI. The illS Contracting Officer shall notify the Business Associate of any restrictions to the use or disclosure of PHI that the illS has agreed to pursuant to an individual's request under 45 C.F.R. § 164.522. The illS shall not request that the Business Associate use or disclose pm in any manner that would violate the Privacy Rule if done by the illS. Section 11 - Material Breach: Termination If the Business Associate breaches a material obligation of this Agreement or fails to comply with the Privacy Rule, the illS will give the Contractor an opportunity to cure the breach, but if the Contractor fails to cure the breach, the lHS will terminate the Agreement, as provided in contract termination for default clause. If, at the determination of the illS Contracting Officer, neither cure nor termination is feasible, illS shall report the material breach to the Secretary. Termination of this Agreement shall not affect any provision of this Agreement which, by its wording or nature, is intended to remain in effect and to continue to operate in the event of termination. Termination of the underlying contract between the parties will result in the termination of this Agreement. Section 12 - Return or Destruction ofInformation When this Agreement/contract terminates, the Business Associate, at the illS's option, shall return to the illS, or destroy, all PHI in its possession, and keep no copies of PHI except as requested by the illS or required by law. The illS Contracting Officer shall notify the Business Associate whether the Business Associate must return or destroy any pm in its possession. If the Business Associate or its agent or subcontractor destroys any PHI, then the Business Associate will provide the illS with documentation evidencing such destruction. Any PHI maintained by the Business Associate shall continue to be extended the same protections set forth in this Agreement for as long as it is maintained. Section 13 - Term The tern of this Agreement shall begin on the effective date of this modification and or contract award and end with the completion of the contract, except as provided in Section 12. Section 14 - Amendment of Agreement After the date of execution of this Agreement and after learning that material changes have been made to the Privacy Rule, the parties agree to amend this Agreement to ensure that it complies with the Privacy Rule and that illS can continue to comply with the Privacy Rule. Section 15 - Miscellaneous Provisions (l) All notices under this Agreement shall be as provided in this contract;
+
+(2) This Agreement shall be binding upon, inure to the benefit of and be enforceable by and against the Parties and their successors and assigns. Any novation, assignment, or other transfer of rights, interests, or duties under this Agreement by the Contractor shall be as provided in this contract;
+
+SOLICITATION #10-236-S01,-00004 illS - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 9 of31
+(3) Any ambiguity in this Agreement shall be resolved to bring the Agreement into compliance with the most current version of the Privacy Rule; if a court of competent jurisdiction deems any provision of this Agreement unenforceable, such provision shall be severed from this Agreement and every other provision of the Agreement shall remain in full force and effect. If a court of competent jurisdiction deems any provision of this Agreement unenforceable, such provision shall be severed from this Agreement and ever other provision of the Agreement shall remain in full force and effect. E. Common Security Configurations Security Requirements and Department of Health and Human Services (HHS) Information
+
+1. Contractor computers containing HHS data shall be configured with the applicable Federal Desktop Core Configuration (FDCC) (http://nvd.nist.gov/fdcc/index.cfrn),i and shall have and maintain the latest operating system patch level and anti-virus software level. 2. The Contractor shall apply approved security configurations to information technology that is used to process information on behalf of the Department, its Operating Divisions (OPDIVs) and Staff Divisions (STAFFDIVs). Such approved security configurations shall be identified jointly by the OPDIV/STAFFDIV Contracting Officer's Technical Representative (COTR) and ChiefInformation Security Officer (CISO). Approved security configurations include, but are not limited to, those published by the Department," by the OPDIV/STAFFDIV, and by the National Institute of Standards and Technology (NIST) at http://checklists.nist.gov. OPDIVs/STAFFDIVs may have security configurations that are more stringent than the minimum baseline set by the Department or NIST. When incorporating such security configuration requirements in solicitations and contracts, the OPDIV CISO shall be consulted to determine the appropriate configuration reference for a particular system or services acquisition. 3. The Contractor shall ensure applications operated on behalf ofthe Department or OPDIV/STAFFDIV are fully functional and operate correctly on systems configured in accordance with the above configuration requirements. The Contractor shall use Security Content Automation Protocol (SCAP)-validated tools with FDCC Scanner capability to ensure its products operate correctly with FDCC configurations and do not alter FDCC settings. iii The Contractor shall test applicable product versions with all relevant and current updates and patches installed. The contractor shall ensure currently supported versions of information technology (IT) products meet the latest FDCC major version and subsequent major versions." 4. The Contractor shall ensure applications designed for end users run in the standard user context without requiring elevated administrative privileges. 5. The Contractor shall ensure hardware and software installation, operation, maintenance, update, and patching will not alter the configuration settings or requirements specified above 6. Federal Information Processing Standard 201 (FIPS-201f compliant, Homeland Security Presidential Directive 12 (HSPD-12) card readers shall: (a) be included with the purchase of servers, desktops, and laptops; and (b) comply with FAR Subpart 4.13, Personal Identity Verification. 7. The Contractor shall ensure all its subcontractors which perform work under this contract (at all tiers) comply with the above requirements. F. The Use Of Desktop Or Laptop Computers, Mobile Devices, Or Portable Media To Store Or Process HHS Sensitive Information That Is Categorized As Moderate Or High Under Federal Information Processing Standard 199 (FIPS 199) Requirements 1. The Contractor shall use FIPS 140-2 (as amended) compliant encryption" to protect all instances ofHHS sensitive information viiduring storage and transmission.
+
+SOLICITATION #10-236-S0L-00004 illS - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALm RELATED DATA Page 10 of31
+2. The Contractor shall verify that the selected encryption product has been validated under the Cryptographic Module Validation Program (http://csrc.nist.gov/cryptvaIl) to confirm compliance with FIPS 140-2 (as amended). The Contractor shall provide a written copy of the validation documentation to both the Contracting Officer and the Contracting Officer's Technical Representative (COTR). 3. The Contractor shall use the Key Management Key on the HHS personal identification verification (PIV) card; or alternatively, the Contractor shall establish and use a key recovery mechanism to ensure the ability for authorized personnel to decrypt and recover all encrypted information. 4. The Contractor shall securely generate and manage encryption keys to prevent unauthorized decryption of information, in accordance withFIPS 140-2 (as amended). 5. The Contractor shall: ensure that this standard is incorporated into the Contractor's property management/control system; or establish a procedure to account for all laptop computers, desktop computers, and other mobile devices and portable media that store or process sensitive HHS information. 6. The Contractor shall ensure that all of its employees, subcontractors (at all tiers), and employees of each subcontractor, who perform work under this contract/subcontract, comply with the above requirements.
+
+SOLICITATION #10-236-S0L-00004 ms - Division of Epidemiology and Disease Prevention SASPROGRAMMERFORPUBLICHEALTHRELATEDDATA Page 11 of31
+C. c.1. CONTRACT CLAUSES 52.252-2 Clauses Incorporated by Reference (FEB 1998)
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. Also, full text of a clause may be accessed electronically at this address: http://www.arnet.gov/far/index.html FEDERAL ACQUISITION REGULATIONS (FAR) CLAUSES FARCLAUSE CLAUSE TITLE 52.204-9 Personal Identity Verification of Contractor Personnel 52.212-4 Contract Terms and Conditions-Commercial Items 52.237-2 Protection of Government Buildings, Equipment, and Vegetation 52.246-25 Limitation of Liability-Services
+
+CLAUSE DATE Sept 2007 Mar 2009 Apr 1984 Feb 1997
+
+C.2. 52.212-5 Contract Terms and Conditions Required to Implement Statutes or Executive OrdersCommercial Items (JUN 2009) (a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract by reference, to implement provisions oflaw or Executive orders applicable to acquisitions of commercial items: (1) 52.222-50, Combating Trafficking in Persons (Feb 2009) (22 U.S.C. 7104(gť. _Alternate I (Aug 2007) of 52.222-50 (22 U.S.C. 7104(gť. (2) 52.233-3, Protest After Award (AuG 1996) (31 U.S.c. 3553). (3) 52.233-4, Applicable Law for Breach of Contract Claim (OCT 2004) (Pub. L. 108-77, 108-78). (b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: _ (1) 52.203-6, Restrictions on Subcontractor Sales to the Government (Sept 2006), with Alternate I (Oct 1995) (41 U.S.C. 253g and 10 U.S.C. 2402). _ (2)'52.203-13, Contractor Code of Business Ethics and Conduct (Dee 2008) (Pub. L.. 110-252, Title VI, Chapter 1 (41 U.S.c. 251 noteť. _ (3) 52.203-15, Whistleblower Protections under the American Recovery and Reinvestment Act of2009 (MAR 2009) (Section 1553 of Pub. L. 111-5). (Applies to contracts funded by the American Recovery and Reinvestment Act of2009.) _ (4) 52.204-11, American Recovery and Reinvestment Act-Reporting 111-5). _ (5) 52.219-3, Notice of Total HUBZone Set-Aside (Jan 1999) (15 U.S.C. 657a). _ (6) 52.219-4, Notice of Price Evaluation Preference for HUBZone Small Business Concerns (if the offeror elects to waive the preference, it shall so indicate in its offer) (15 U.S.c. 657a). _ (7) [Reserved] _X_ (8)(i) 52.219-6, Notice of Total Small Business Set-Aside (June 2003) (15 U.S.C. 644). _ (ii) Alternate I (Oct 1995) of52.219-6. _ (iii) Alternate II (Mar 2004) of 52.219-6. _ (9)(i) 52.219-7, Notice of Partial Small Business Set-Aside (June 2003) (15 U.S.C. 644). _ (ii) Alternate I (Oct 1995) of52.219-7. _ (iii) Alternate II (Mar 2004) of52.219-7. _ (10) 52.219-8, Utilization of Small Business Concerns (May 2004) (15 U.S.C. 637(d)(2) and (3ť. _ (ll)(i) 52.219-9, Small Business Subcontracting Plan (Apr 2008) (15 U.S.C. 637(d)(4ť.
+(JULY
+
+Requirements (Mar 2009) (Pub. L.
+
+2005)
+
+SOLICITATION #10-236-S0L-OOOO4 illS - Division of Epidemiology SAS PROGRAMMER FOR PUBLIC HEAL m RELATED DATA
+_ (ii) Alternate I (Oct 2001) of52.219-9. _ (iii) Alternate II (Oct 2001) of 52.219-9.
+
+and Disease Prevention
+
+Page 12 of31
+
+_ (12) 52.219-14, Limitations on Subcontracting (Dee 1996) (15 U.S.C. 637(a)(14ť. _ (13) 52.219-16, Liquidated Damages-Subcontracting Plan (Jan 1999) (15 U.S.C. 637(d)(4)(F)(iť. _ (14)(i) 52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns (OCT 2008) (10 U.S.C. 2323) (if the offeror elects to waive the adjustment, it shall so indicate in its offer). _ (ii) Alternate I (June 2003) of52.219-23. _ (15) 52.219-25, Small Disadvantaged Business Participation Program-Disadvantaged Reporting (Apr 2008) (Pub. L. 103-355, section 7102, and 10 U.S.c. 2323). _ (16) 52.219-26, Small Disadvantaged Business Participation Program(Oct 2000) (Pub. L. 103-355, section 7102, and 10 U.S.C. 2323). _ (17) 52.219-27, Notice of Total Service-Disabled (15 U.S.c. 657 t). Veteran-Owned Small Business Set -Aside (May 2004) Incentive Subcontracting Status and
+
+_ (18) 52.219-28, Post Award Small Business Program Representation (Apr 2009) (15 U.S.C. 632(a)(2ť. _X _ (19) 52.222-3, Convict Labor (June 2003) (E.O. 11755). _X _ (20) 52.222-19, Child Labor-Cooperation with Authorities and Remedies (Feb 2008) (E.O. 13126). _X _ (21) 52.222-21, Prohibition of Segregated Facilities (Feb 1999). _X_ (22) 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246). _ (23) 52.222-35, Equal Opportunity for Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans (Sept 2006) (38 U.S.C. 4212). _X_ (24) 52.222-36, Affirmative Action for Workers with Disabilities (Jun 1998) (29 U.S.C. 793). _ (25) 52.222-37, Employment Reports on Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans (Sept 2006) (38 U.S.C. 4212). _ (26) 52.222-39, Notification of Employee Rights Concerning Payment of Union Dues or Fees (Dee 2004) (E.O. 13201). _ (27) 52.222-54, Employment Eligibility Verification (JAN 2009). (Executive Order 12989). (Not applicable to the acquisition of commercially available off-the-shelf items or certain other types of commercial items as prescribed in 22.1803.) _ (28)(i) 52.223-9, Estimate of Percentage of Recovered Material Content for EPA-Designated items.) _ (ii) Alternate I (May 2008) of 52.223-9 (42 U.S.C. 6962(i)(2)(C). commercially available off-the-shelf items.) _ (29) 52.223-15, Energy Efficiency in Energy-Consuming (DEC 2007) (E.O. 13423). _ (ii) Alternate I (DEC 2007) of 52.223-16. _ (31) 52.225-1, Buy American Act-Supplies _ (32)(i) 52.225-3, Buy American Act-Free 286,108-302,109-53,109-169,109-283, (Feb 2009) (41 U.S.c. 10a-10d). Trade Agreements-Israeli Trade Act (June 2009) (Not applicable to the acquisition of Items
+
+(May 2008) (42 U.S.c. 6962( c)(3)(A)(iiť. (Not applicable to the acquisition of commercially available off-the-shelf
+
+Products (DEC2007) (42 U.S.C. 8259b).
+
+_ (30)(i) 52.223-16, IEEE 1680 Standard for the Environmental Assessment of Personal Computer Products
+
+(41 U.S.C. lOa-lOd, 19 U.S.C. 3301 note, 19 U.S.c. 2112 note, 19 U.S.C. 3805 note, Pub. L. 108-77, 108-78, 108and 110-138). _ (ii) Alternate I (Jan 2004) of52.225-3. _ (iii) Alternate II (Jan 2004) of 52.225-3. _ (33) 52.225-5, Trade Agreements (JUNE 2009) (19 U.S.C. 2501, et seq., 19 U.S.C. 3301 note). _ (34) 52.225-13, Restrictions on Certain Foreign Purchases (June 2008) (E.O.'s, proclamations, and statutes administered by the Office of Foreign Assets Control of the Department of the Treasury).
+
+SOLICITATION #10-236-S0L-00004 IHS - Division of Epidemiology and Disease Prevention SASPROGRAMMERFORPUBLICHEALTHRELATEDDATA Page 13 of31
+_ (35) 52.226-4, Notice of Disaster or Emergency Area Set-Aside (Nov 2007) (42 U.S.C. 5150). _ (36) 52.226-5, Restrictions on Subcontracting Outside Disaster or Emergency Area (Nov 2007) (42 U.S.C. 5150). _ (37) 52.232-29, Terms for Financing of Purchases of Commercial Items (Feb 2002) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)). _ (38) 52.232-30, Installment Payments for Commercial Items (Oct 1995) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)). _ (39) 52.232-33, Payment by Electronic Funds Transfer-Central (31 U.S.c. 3332). _X _ (40) 52.232-34, Payment by Electronic Funds Transfer-Other (May 1999) (31 U.S.c. 3332). Contractor Registration (Oct 2003) than Central Contractor Registration
+
+_ (41) 52.232-36, Payment by Third Party (May 1999) (31 U.S.c. 3332). _X_ (42) 52.239-1, Privacy or Security Safeguards (Aug 1996) (5 U.S.C. 552a). _ (43)(i) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) (46 U.S.c. Appx. 1241(b) and 10 U.S.C. 2631). _ (ii) Alternate I (Apr 2003) of 52.247-64. (c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: _X _ (1) 52.222-41, Service Contract Act of 1965 (Nov 2007)(41 U.S.c. 351, et seq.). _ (2) 52.222-42, Statement of Equivalent Rates for Federal Hires (May 1989) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.). _X _ (3) 52.222-43, Fair Labor Standards Act and Service Contract Act-Price Option Contracts) (Nov 2006) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.). _ (4) 52.222-44, Fair Labor Standards Act and Service Contract Act-Price (29 U.S.C. 206 and 41 U.S.C. 351, et seq.). _ (5) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment-Requirements (Nov 2007) (41351, et seq.). _ (6) 52.222-53, Exemption from Application ofthe Service Contract Act to Contracts for Certain ServicesRequirements (Feb 2009) (41 U.S.C. 351, et seq.). _ (7) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247). _ (8) 52.237-11, Accepting and Dispensing of$1 Coin (Sept 2008) (31 U.S.C. 5112(P)(1)). (d) Comptroller General Examination of Record. The Contractor shall comply with the provisions of this paragraph (d) if this contract was awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at 52.215-2, Audit and Records-Negotiation. (1) The Comptroller General ofthe United States, or an authorized representative of the Comptroller General, shall have access to and right to examine any of the Contractor's directly pertinent records involving transactions related to this contract. (2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination, audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR Subpart 4.7, Contractor Records Retention, of the other clauses ofthis contract. If this contract is completely or partially terminated, the records relating to the work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such appeals, litigation, or claims are finally resolved. Adjustment (Multiple Year and Adjustment (Feb 2002)
+
+SOLICITATION #10-236-S0L-00004 ms - Division of Epidemiology SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA
+
+and Disease Prevention
+Page 14 of31
+
+(3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary course of business or pursuant to a provision oflaw. , (e)(I) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c), and (d) of this clause, the Contractor is not required to flow down any FAR clause, other than those in this paragraph (e)(1) in a subcontract for commercial items. Unless otherwise indicated below, the extent ofthe flow down shall be as required by the clause(i) 52.203-13, Contractor Code of Business Ethics and Conduct (Dec 2008) (pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 noteť. (ii) 52.219-8, Utilization of Small Business Concerns (May 2004) (15 U.S.C. 637(d)(2) and (3ť, in all subcontracts that offer further subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $550,000 ($1,000,000 for construction of any public facility), the subcontractor must include 52.219-8 in lower tier subcontracts that offer subcontracting opportunities. (iii) [Reserved] (iv) 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246). (v) 52.222-35, Equal Opportunity for Special Disabled Veterans, Veterans ofthe Vietnam Era, and Other Eligible Veterans (Sept 2006) (38 U.S.C. 4212). (vi) 52.222-36, Affirmative Action for Workers with Disabilities (June 1998) (29 U.S.C. 793). (vii) 52.222-39, Notification of Employee Rights Concerning Payment of Union Dues or Fees (Dee 2004) (E.O. 13201). (viii) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.). (ix) 52.222-50, Combating Trafficking in Persons (Feb 2009) (22 U.S.C. 7104(gť. _Alternate I (Aug 2007) of52.222-50 (22 U.S.C. 7104(gť. (x) 52.222-51, Exemption from Application ofthe Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment-Requirements Requirements (Feb 2009) (41 U.S.C. 351, et seq.). (xii) 52.222-54, Employment Eligibility Verification (JAN 2009). (xiii) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (pub. L. 110247). Flow down required in accordance with paragraph (e) ofF AR clause 52.226-6. (xiv) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) (46 U.S.C. Appx. 124l(b) and 10 U.S.C. 2631). Flow down required in accordance with paragraph (d) ofFAR clause 52.24764. (2) While not required, the contractor may include in its subcontracts for commercial items a minimal number of additional clauses necessary to satisfy its contractual obligations. C.3. 52.217-8 Option to Extend Services (NOV 1999) (Nov 2007) (41 U.S.c. 351, et seq.). (xi) 52.222-53, Exemption from Application ofthe Service Contract Act to Contracts for Certain Services-
+
+The Government may require continued performance of any services within the limits and at the rates specified in the contract. These rates may be adjusted only as a result of revisions to prevailing labor rates provided by the Secretary of Labor. The option provision may be exercised more than once, but the total extension of performance hereunder shall not exceed three (3) years. The Contracting Officer may exercise the option by written notice to the Contractor within 30 days. C.4. 52.217-9 Option to Extend the Term of the Contract (MAR 2000)
+
+SOLICITATION #10-236-S0L-00004 ms - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 15 of31
+(a) The Government may extend the term of this contract by written notice to the Contractor within 30 days; provided that the Government gives the Contractor a preliminary written notice of its intent to extend at least 60 days before the contract expires. The preliminary notice does not commit the Government to an extension. (b) If the Government exercises this option, the extended contract shall be considered to include this option clause. (c) The total duration of this contract, including the exercise of any options under this clause, shall not exceed 3 years.
+
+c.s.
+
+352.202-1 Definitions (JAN 2006)
+
+(a) In accordance with 52.202-1(a)(l), substitute the following as paragraph (a): "(a) The term "Secretary" or "Head of the Agency" (also called "Agency Head") means the Secretary, Deputy Secretary, or any Assistant Secretary, Administrator or Commissioner of the Department of Health and Human Services; and the term "his/her duly authorized representative" means any person, persons, or board authorized to act for the Secretary." (b) In accordance with 52.202-1(a)(1), add the following paragraph (h): "(h) The term "Project Officer" means the person who monitors the technical aspects of contract performance. The Project Officer is not authorized to issue any instructions or directions which cause any increase or decrease in the scope of work which would result in the increase or decrease in the price of this contract, or changes in the delivery schedule or period of performance of this contract. If applicable, the Project Officer is not authorized to receive or act upon any notification or revised cost estimate provided by the Contractor in accordance with the Limitation of Cost or Limitation of Funds clauses ofthis contract."
+C.6. 352.224-70 Confidentiality of Information (JAN 2006)
+
+(a) Confidential information, as used in this clause, means information or data of a personal nature about an individual, or proprietary information or data submitted by or pertaining to an institution or organization. (b) The Contracting Officer and the Contractor may, by mutual consent, identify elsewhere in this contract specific information and/or categories of information which the Government will furnish to the Contractor or that the Contractor is expected to generate which is confidential. Similarly, the Contracting Officer and the Contractor may, by mutual consent, identify such confidential information from time to time during the performance of the contract. Failure to agree will be settled pursuant to the "Disputes" clause. (c) If it is established elsewhere in this contract that information to be utilized under this contract, or a portion thereof, is subject to the Privacy Act, the Contractor will follow the rules and procedures of disclosure set forth in the Privacy Act of 1974, 5 V.S.C. 552a, and implementing regulations and policies, with respect to systems of records determined to be subject to the Privacy Act. (d) Confidential information, as defined in paragraph (a) of this clause, shall not be disclosed without the prior written consent of the individual, institution, or organization. (e) Whenever the Contractor is uncertain with regard to the proper handling of material under the contract, or if the material in question is subject to the Privacy Act or is confidential information subject to the provisions of this clause, the Contractor should obtain a written determination from the Contracting Officer prior to any release, disclosure, dissemination, or publication. (f) Contracting Officer determinations will reflect the result of internal coordination with appropriate program and legal officials. (g) The provisions of paragraph (d) of this clause shall not apply to conflicting or overlapping provisions in other Federal, State, or local laws.
+C.7. 352.232-9 Withholding of Contract Payments (JAN 2006)
+
+Notwithstanding any other payment provisions of this contract, failure of the Contractor to submit required reports when due or failure to perform or deliver required work, supplies, or services, may result in the withholding of payments under this contract unless such failure arises out of causes beyond the control, and without the fault or negligence of the Contractor as defined by the clause entitled "Excusable Delays" or "Default", as applicable. The Government shall immediately notify the Contractor of its intention to withhold payment of any invoice or voucher submitted.
+
+SOLICITATION #10-236-S01.-00004 illS - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 16 of31
+
+c.s,
+
+352.249-14 Excusable Delays (JAN 2006)
+
+(a) Except with respect to failures of subcontractors, the Contractor shall not be considered to have failed in performance of this contract if such failure arises out of causes beyond the control and without the fault or negligence of the Contractor. (b) Such causes may include, but are not restricted to, acts of God or of the public enemy, acts of the Government in either its sovereign or contractual capacity, fires, floods, epidemics, quarantine restrictions, strikes, freight embargoes, and unusually severe weather, but in every case the failure to perform must be beyond the control and without the fault or negligence of the Contractor. If the failure to perform is caused by the failure of a subcontractor to perform, and if such failure arises out of causes beyond the control of both the Contractor and subcontractor, and without the fault or negligence of either ofthem, the Contractor shall not be deemed to have failed in performance of the contract, unless: (1) The supplies or services to be furnished by the subcontractor were obtainable from other sources, (2) The Contracting Officer ordered the Contractor in writing to procure such supplies or services from such other sources, and (3) The Contractor failed to comply with such order. Upon request of the Contractor, the Contracting Officer shall ascertain the facts and extent of such failure and if the Contracting Officer determines that any failure to perform was caused by circumstances beyond the control and without the fault or negligence of the Contractor, the delivery schedule shall be revised accordingly, subject to the rights of the Government under the termination clause contained in this contract. (As used in this clause, the terms "subcontractor" and "subcontractors" mean subcontractor(s) at any tier.)
+
+c.s,
+
+352.270-2 Indian Preference
+
+(APR 1984)
+
+(a) The Contractor agrees to give preference in employment opportunities under this contract to Indians who can perform required work, regardless of age (subject to existing laws and regulations), sex, religion, or tribal affiliation. To the extent feasible and consistent with the efficient performance of this contract, the Contractor further agrees to give preference in employment and training opportunities under this contract to Indians who are not fully qualified to perform regardless of age (subject to existing laws and regulations), sex, religion, or tribal affiliation. The Contractor also agrees to give preference to Indian organizations and Indian-owned economic enterprises in the awarding of any subcontracts to the extent feasible and consistent with the efficient performance of this contract. The Contractor shall maintain statistical records as are necessary to indicate compliance with this paragraph. (b) In connection with the Indian employment preference requirements of this clause, the Contractor shall provide opportunities for training incident to such employment Such training shall include on-the-job, classroom or apprenticeship training which is designed to increase the vocational effectiveness of an Indian employee. (c) If the Contractor is unable to fill its employment and training opportunities after giving full consideration to Indians as required by this clause, those needs may be satisfied by selection of persons other than Indians in accordance with the clause of this contract entitled "Equal Opportunity." (d) If no Indian organizations or Indian-owned economic enterprises are available under reasonable terms and conditions, including price, for awarding of subcontracts in connection with the work performed under this contract, the Contractor agrees to comply with the provisions of this contract involving utilization of small business concerns, small disadvantaged business concerns, and women-owned small business concerns. (e) As used in this clause: (1) "Indian" means a person who is a member of an Indian Tribe. If the Contractor has reason to doubt that a person seeking employment preference is an Indian, the Contractor shall grant the preference but shall require the individual to provide evidence within thirty (30) days from the Tribe concerned that the person is a member of the Tribe. (2) "Indian Tribe" means an Indian Tribe, pueblo, band, nation, or other organized group or community, including Alaska Native village or regional or village corporation as defined in or established pursuant to the Alaska Native Claims Settlement Act (85 Stat. 688; 43 U.S.C. 1601) which is recognized as eligible for the special programs and services provided by the United States to Indians because of their status as Indians. (3) "Indian organization" means the governing body of any Indian Tribe or entity established or recognized by such governing body in accordance with the Indian Financing Act of 1974 (88 Stat. 77; 25 U.S.C. 1451); and
+
+SOLICITATION #10-236-S0L-00004 illS - Division of Epidemiology SAS PROGRAMMER FOR PUBLIC BEALm RELATED DATA
+
+and Disease Prevention Page 17 of31
+
+(4) "Indian-owned economic enterprise" means any Indian-owned commercial, industrial, or business activity established or organized for the purpose of profit, provided that such Indian ownership shall constitute not less than 51 percent of the enterprise, and that ownership shall encompass active operation and control of the enterprise. (f) The Contractor agrees to include the provisions of this clause, including this paragraph (f) of this clause, in each subcontract awarded at any tier under this contract. (g) In the event of noncompliance with this clause, the Contracting Officer may terminate the contract in whole or in part or may impose any other sanctions authorized by law or by other provisions of the contract.
+C.lO. 352.270-5 Key Personnel (JAN 2006)
+
+The key personnel specified in this contract are considered to be essential to work performance. At least 30 days prior to diverting any of the specified individuals to other programs or contracts (or as soon as possible, if an individual must be replaced, for example, as a result of leaving the employ of the Contractor), the Contractor shall notify the Contracting Officer and shall submit comprehensive justification for the diversion or replacement request (including proposed substitutions for key personnel) to permit evaluation by the Government of the impact on performance under this contract. The Contractor shall not divert or otherwise replace any key personnel without the written consent of the Contracting Officer. The Government may modify the contract to add or delete key personnel at the request of the contractor or Government.
+C.ll. 352.270-7 Paperwork Reduction Act (JAN 2006)
+
+(a) This contract involves a requirement to collect or record information calling either for answers to identical questions from 10 or more persons other than Federal employees, or information from Federal employees which is outside the scope of their employment, for use by the Federal government or disclosure to third parties; therefore, the Paperwork Reduction Act of 1995 (pub. L. 104-13) shall apply to this contract. No plan, questionnaire, interview guide or other similar device for collecting information (whether repetitive or single time) may be used without first obtaining clearance from the Office of Management and Budget (OMB). Contractors and Project Officers should be guided by the provisions of 5 CFR Part 1320, Controlling Paperwork Burdens on the Public, and seek the advice of the HHS operating division or Office of the Secretary Reports Clearance Officer to determine the procedures for acquiring OMB clearance. (b) The Contractor shall not expend any funds or begin any data collection until OMB Clearance is received. Once OMB Clearance is received from the Project Officer, the Contracting Officer shall provide the Contractor with written notification authorizing the expenditure of funds and the collection of data. The Contractor must allow at least 120 days for OMB clearance. Excessive delays caused by the Government which arise out of causes beyond the control and without the fault or negligence of the Contractor will be considered in accordance with the Excusable Delays or Default clause of this contract.
+C.12. 352.270-10 Anti-Lobbying (JAN 2006)
+
+Pursuant to the current HHS annual appropriations act, except for normal and recognized executive-legislative relationships, the Contractor shall not use any HHS contract funds for (i) publicity or propaganda purposes; (ii) the preparation, distribution, or use of any kit, pamphlet, booklet, publication, radio, television or video presentation designed to support or defeat legislation pending before the Congress or any State legislature, except in presentation to the Congress or any State legislature itself; or (iii) payment of salary or expenses of the Contractor, or any agent acting for the Contractor, related to any activity designed to influence legislation or appropriations pending before the Congress or any State legislature.
+C.13. 352.270-11 Privacy Act (JAN 2006)
+
+This contract requires the Contractor to perform one or more of the following: (a) Design; (b) develop; or (c) operate a Federal agency system of records to accomplish an agency function in accordance with the Privacy Act of 1974 (Act) (5 U.S.C. 552a(m)(l)) and applicable agency regulations. The term "system of records" means a group of any records under the control of any agency from which information is retrieved by the name of the individual or by some identifying number, symbol, or other identifying particular assigned to the individual. Violations of the Act by the Contractor and/or its employees may result in the imposition of criminal penalties (5 U.S.c. 552a(i)). The
+
+SOLICITATION #10-236-S0L-00004 illS - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 18 of 31 Contractor shall ensure that each of its employees knows the prescribed rules of conduct and that each employee is aware that he/she is subject to criminal penalties for violation of the Act to the same extent as HHS employees. These provisions also apply to all subcontracts awarded under this contract which require the design, development or operation of the designated system(s) of records (5 U.S.C. 552a(m)(1)). The contract work statement: (a) identifies the system(s) of records and the design, development, or operation work to be performed by the Contractor; and (b) specifies the disposition to be made of such records upon completion of contract performance.
+C.14. 352.270-19 Electronic and Information Technology Accessibility (JAN 2006)
+
+Section 508 of the Rehabilitation Act of 1973 (29 U.S.C. 794d), as amended by Public Law 105-220 under Title IV (Rehabilitation Act Amendments of 1998) and the Architectural and Transportation Barriers Compliance Board Electronic and Information (EIT) Accessibility Standards (36 CFR part 1194), require that all EIT acquired must ensure that: (1) Federal employees with disabilities have access to and use of information and data that is comparable to the access and use by Federal employees who are not individuals with disabilities; and (2) Members ofthe public with disabilities seeking information or services from an agency have access to and use of information and data that is comparable to the access to and use of information and data by members of the public who are not individuals with disabilities. This requirement includes the development, procurement, maintenance, and/or use of EIT products/services; therefore, any proposal submitted in response to this solicitation must demonstrate compliance with the established EIT Accessibility Standards. Information about Section 508 is available at http://www.section508.govl.
+
+SOLICITATION #10-236-S0L-00004 illS - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 19 of31 D. D.l. D.2. CONTRACT DOCUMENTS, EXHmrrS OR ATTACHMENTS Performance Work Statement (PWS), 12 pgs, dated 11/24/2009 Wage Determination 2005-2361,Rev. 9, 9 pgs, dated 10/29/2009
+
+SOLICITATION #10-236-S0L-00004 illS - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 20 1
+
+on
+
+E. E.!.
+
+SOLICITATION PROVISIONS 52.252-1 Solicitation Provisions Incorporated By Reference (FEB 1998)
+
+This solicitation incorporates one or more solicitation provisions by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. The offeror is cautioned that the listed provisions may include blocks that must be completed by the offeror and submitted with its quotation or offer. In lieu of submitting the full text ofthose provisions, the offeror may identify the provision by paragraph identifier and provide the appropriate information with its quotation or offer. Also, the full text of a solicitation provision may be accessed electronically at this/these address( es): http://www .arnet.gov /far/index.html FEDERAL ACQUISITION REGULATIONS FAR CLAUSE 52.212-1 E.2. CLAUSE TITLE Instructions to Offerors-Commercialltems Items (Jan 1999) (FAR) CLAUSES CLAUSE DATE June 2008
+
+52.212-2 Evaluation-Commercial
+
+(a) The Government will award a contract resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation will be most advantageous to the Government, price and other factors considered. The following factors shall be used to evaluate offers: (1) The BUSINESS PROPOSAL, in response to this solicitation, must include the following: (i) The completed Standard Form 1449 - "Solicitation/Contract/Order for Commercial Item" (Items # 17a-17b and #30a-30c) (ii) Section B.2. of this solicitation. Fill in the pricing for each performance year. (iii) A cost breakdown of the hourly labor rate for each labor category proposed. A breakdown showing all components of the estimated costs for each performance year. i.e. base $0, taxes $0, fringe $0, etc .... total hourly rate $0. (iv) Completed Section E.3. - "52.212-3 Offeror Representations and Certifications-Commercial (JuI2009). Alternate I (Apr 2002), Alternate II (Oct 2000). (v) Registration in CCR (www.ccr.gov). (vi) Data Universal Numbering System (DUNS) Number in Section 17a of Standard Form 1449. (2) Under a separate cover: TECHNICAL PLAN (i) A narrative description of the management and technical plan proposed for accomplishing the work, including experience with SAS Program, and resumes of those individuals identified in the management plan. Include the following: (A) Experience in SAS programming with SAS Base and SAS macro facility (B) Capability to carry out the project deliverables (C) Experience in working independently to manage many multi-task projects simultaneously (D) Knowledge of epidemiologic surveillance and past success in designing and conducting similar programming projects (E) Capability to initiate projects immediately following the contract award (F) Demonstrate adequate organizational support in terms of project management and staffmg with the experience and expertise required to carry out project objectives (G) Experience working with HIS data systems including Resource Patient Management System (RPMS), National Data Warehouse (NDW), etc (ii) Minimum qualifications of each labor category listed in the Pricing Schedule. Items
+
+SOLICITATION #10-236-S0L-00004 ms - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 21 of31
+(iii) Past Performance is one indicator of an offeror's ability to perform the contract successfully. The currency and relevance of the information, source of the information, context of the data, and general trends in the contractor's performance shall be considered. Offeror shall provide a list (at least 3) of successful projects that are equal or greater in capacity of the Government's requirement stated in this solicitation, stating location, completion date, contact names and telephone number of each project. The basis for award will be on price and the proposed management and technical approach. Particulars that will be considered are: the reasonableness of the labor hour rates; whether the labor categories proposed for each group of tasks are appropriate; the minimum qualifications identified for each labor category; and the management staffing plan proposed. Technical and past performance, when combined, are less important than price. (b) Options. The Government will evaluate offers for award purposes by adding the total price for all options to the total price for the basic requirement. The Government may determine that an offer is unacceptable if the option prices are significantly unbalanced. Evaluation of options shall not obligate the Government to exercise the option(s). (c) A written notice of award or acceptance of an offer, mailed or otherwise furnished to the successful offeror within the time for acceptance specified in the offer, shall result in a binding contract without further action by either party. Before the offer's specified expiration time, the Government may accept an offer (or part of an offer), whether or not there are negotiations after its receipt, unless a written notice of withdrawal is received before award. E.3. 52.212-3 Offeror Representations and Certifications-Commercial Items (Jul 2009). Alternate I
+
+(ApT 2002), Alternate II (Oct 2000)
+
+An offeror shall complete onlyparagraph
+
+(b) of this provision if the offeror has completed the annual If an offeror has not completed the annual
+
+representations and certifications electronically at http://orca.bpn.gov. through (m) ofthis provision. (a) Definitions. As used in this provision-
+
+representations and certifications electronically at the ORCA website, the offeror shall complete only paragraphs (c)
+
+"Emerging small business" means a small business concern whose size is no greater than 50 percent of the numerical size standard for the NAICS code designated. "Forced or indentured child labor" means all work or service(1) Exacted from any person under the age of 18 under the menace of any penalty for its nonperformance for which the worker does not offer himself voluntarily; or (2) Performed by any person under the age of 18 pursuant to a contract the enforcement of which can be accomplished by process or penalties. "Inverted domestic corporation" means a foreign incorporated entity which is treated as an inverted domestic corporation under 6 U.S.C. 395(b), i.e., a corporation that used to be incorporated in the United States, or used to be a partnership in the United States, but now is incorporated in a foreign country, or is a subsidiary whose parent corporation is incorporated in a foreign country, that meets the criteria specified in 6 U.s.C. 395(b), applied in accordance with the rules and definitions of6 U.S.C. 395(c). "Manufactured end product" means any end product in Federal Supply Classes (FSC) 1000-9999, except(1) FSC 5510, Lumber and Related Basic Wood Materials; (2) Federal Supply Group (FSG) 87, Agricultural Supplies; (3) FSG 88, Live Animals; (4) FSG 89, Food and Related Consumables; and
+
+SOLICITATION #10-236-S0L-00004 illS - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 22 of3l
+(5) FSC 9410, Crude Grades of Plant Materials; (6) FSC 9430, Miscellaneous Crude Animal Products, Inedible; (7) FSC 9440, Miscellaneous Crude Agricultural and Forestry Products; (8) FSC 9610, Ores; (9) FSC 9620, Minerals, Natural and Synthetic; and (10) FSC 9630, Additive Metal Materials. "Place of manufacture" means the place where an end product is assembled out of components, or otherwise made or processed from raw materials into the finished product that is to be provided to the Government. If a product is disassembled and reassembled, the place of reassembly is not the place of manufacture. "Restricted business operations" means business operations in Sudan that include power production activities, mineral extraction activities, oil-related activities, or the production of military equipment, as those terms are defmed in the Sudan Accountability and Divestment Act of2007 (Pub. L. 110-174). Restricted business operations do not include business operations that the person conducting the business can demonstrate(1) Are conducted under contract directly and exclusively with the regional government of southern Sudan; (2) Are conducted pursuant to specific authorization from the Office of Foreign Assets Control in the Department of the Treasury, or are expressly exempted under Federal law from the requirement to be conducted under such authorization; (3) Consist of providing goods or services to marginalized populations of Sudan; (4) Consist of providing goods or services to an internationally recognized peacekeeping force or humanitarian organization; (5) Consist of providing goods or services that are used only to promote health or education; or (6) Have been voluntarily suspended. "Service-disabled veteran-owned small business concem"(1) Means a small business concern(i) Not less than 51 percent of which is owned by one or more service-disabled veterans or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more servicedisabled veterans; and (ii) The management and daily business operations of which are controlled by one or more service-disabled veterans or, in the case of a service-disabled veteran with permanent and severe disability, the spouse or permanent caregiver of such veteran. (2) Service-disabled veteran means a veteran, as defined in 38 U.S.C. 101(2), with a disability that is serviceconnected, as defmed in 38 V.S.C. 101(16). "Small business concern" means a concern, including its affiliates, that is independently owned and operated, not dominant in the field of operation in which it is bidding on Government contracts, and qualified as a small business under the criteria in 13 CFR Part 121 and size standards in this solicitation. "Veteran-owned small business concern" means a small business concern(1) Not less than 51 percent of which is owned by one or more veterans (as defined at 38 U.S.c. 101(2)) or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more veterans; and (2) The management and daily business operations of which are controlled by one or more veterans. "Women-owned business concern" means ~ concern which is at least 51 percent owned by one or more women; or in the case of any publicly owned business, at least 51 percent of its stock is owned by one or more women; and whose management and daily business operations are controlled by one or more women. "Women-owned small business concern" means a small business concern(1) That is at least 51 percent owned by one or more women; or, in the case of any publicly owned business, at least 51 percent of the stock of which is owned by one or more women; and
+
+SOLICITATION #10-236-S0L-00004 IHS - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 23 of31
+(2) Whose management and daily business operations are controlled by one or more women. (b) (1) Annual Representations and Certifications. Any changes provided by the offeror in paragraph (b)(2) of this provision do not automatically change the representations and certifications posted on the Online Representations and Certifications Application (ORCA) website. (2) The offeror has completed the annual representations and certifications electronically via the ORCA website at http://orca.bpn.gov. After reviewing the ORCA database information, the offeror verifies by submission Items, have been entered or updated in the last 12 months, are of this offer that the representations and certifications currently posted electronically at FAR 52.212-3, Offeror Representations and Certifications-Commercial current, accurate, complete, and applicable to this solicitation (including the business size standard applicable to the NAICS code referenced for this solicitation), as of the date ofthis offer and are incorporated in this offer by reference (see FAR 4.1201), except for paragraphs _ [Offeror to identify the applicable paragraphs at (c) through (n) of this provision that the offeror has completed for the purposes of this solicitation only, These amended representation(s)
+
+if any.
+
+and/or certification(s) are also incorporated in this offer and are current,
+
+accurate, and complete as of the date of this offer. Any changes provided by the offeror are applicable to this solicitation only, and do not result in an update to the representations and certifications posted on ORCA.] (c) Offerors must complete the following representations when the resulting contract will be performed in the United States or its outlying areas. Check all that apply. (1) Small business concern. The offeror represents as part of its offer that it [ ] is, [ ] is not a small business concern. (2) Veteran-owned small business concern. [Complete only
+
+if the offeror represented itself as a small business
+
+concern in paragraph (c)(i) of this provision.] The offeror represents as part of its offer that it [ ] is, [ ] is not a veteran-owned small business concern. (3) Service-disabled veteran-owned small business concern. [Complete only
+
+if the offeror represented itself as
+
+a veteran-owned small business concern in paragraph (c)(2) of this provision.] The offeror represents as part of its offer that it [ ] is, [ ] is not a service-disabled veteran-owned small business concern. (4) Small disadvantaged business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(i) of this provision.] The offeror represents, for general statistical purposes, that it [ ] is, [ ] is not a small disadvantaged business concern as defmed in 13 CFR 124.1002. (5) Women-owned small business concern. [Complete only business concern. Note: Complete paragraphs (c)(6) and (c)(7) only if this solicitation is expected to exceed the simplified acquisition threshold. (6) Women-owned business concern (other than small business concern). [Complete only
+
+if the offeror represented itself as a small business
+
+concern in paragraph (c)(i) of this provision.] The offeror represents that it [ ] is, [ ] is not a women-owned small
+
+if the offeror is a
+
+women-owned business concern and did not represent itself as a small business concern in paragraph (c)(J) of this provision.] The offeror represents that it [ ] is a women-owned business concern. (7) Tie bid priority for labor surplus area concerns. If this is an invitation for bid, small business offerors may identify the labor surplus areas in which costs to be incurred on account of manufacturing or production (by offeror or first-tier subcontractors) amount to more than 50 percent ofthe contract price: _ (8) Small Business Size for the Small Business Competitiveness Demonstration Program and for the Targeted Industry Categories under the Small Business Competitiveness Demonstration Program. [Complete only
+
+if the
+
+offeror has represented itself to be a small business concern under the size standards for this solicitation.]
+
+SOLICITATION #10-236-S0L-00004 illS - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 24 1
+
+on
+
+(i) [Complete only for solicitations indicated in an addendum as being set-aside for emerging small businesses in one of the designated industry groups (DIGs).] The offeror represents as part of its offer that it [ ] is, [ ] is not an emerging small business. (ii) [Complete only for solicitations indicated in an addendum as being for one of the targeted industry categories (TICs) or designated industry groups (DIGs).] Offeror represents as follows: (A) Offeror's number of employees for the past 12 months (check the Employees column if size standard stated in the solicitation is expressed in terms of number of employees); or (B) Offeror's average annual gross revenue for the last 3 fiscal years (check the Average Annual Gross Number of Revenues column if size standard stated in the solicitation is expressed in terms of annual receipts). (Check one of the following): Number of Employees 50 or fewer 51-100 101-250 251-500 501-750 751-1,000 Over 1,000 (9) [Complete only Average Annual Gross Revenues $1 million or less $1,000,001-$2 $2,000,001-$3.5 $3,500,001-$5 $5,000,001-$10 _ $10,000,00]-$17 Over $17 million million million million million million
+
+if the solicitation contains the clause at FAR 52.219-23, Notice of Price Evaluation
+Status and Reporting, and the offeror desires a benefit based on its
+
+Adjustment for Small Disadvantaged Business Concerns, or FAR 52.219-25, Small Disadvantaged Business Participation Program-Disadvantaged disadvantaged status.] (i) General. The offeror represents that either(A) It [ ] is, [ ] is not certified by the Small Business Administration as a small disadvantaged business concern and identified, on the date of this representation, as a certified small disadvantaged business concern in the database maintained by the Small Business Administration (PRO-Net), and that no material change in disadvantaged ownership and control has occurred since its certification, and, where the concern is owned by one or more individuals claiming disadvantaged status, the net worth of each individual upon whom the certification is based does not exceed $750,000 after taking into account the applicable exclusions set forth at 13 CFR 124.104(c)(2); or (B) It [ ] has, [ ] has not submitted a completed application to the Small Business Administration or a Private Certifier to be certified as a small disadvantaged business concern in accordance with 13 CFR 124, Subpart B, and a decision on that application is pending, and that no material change in disadvantaged ownership and control has occurred since its application was submitted. (ii) [ ] Joint Ventures under the Price Evaluation Adjustment for Small Disadvantaged Business Concerns. The offerorrepresents, as part of its offer, that it is a joint venture that complies with the requirements in 13 CFR 124.1002(f) and that the representation in paragraph (c)(9)(i) of this provision is accurate for the small disadvantaged business concern that is participating in the joint venture. [The offeror shall enter the name of the small disadvantaged business concern that is participating in the joint venture: .] (iii) Address. The offeror represents that its address [ ] is, [ ] is not in a region for which a small disadvantaged business procurement mechanism is authorized and its address has not changed since its certification as a small disadvantaged business concern or submission of its application for certification. The list of authorized small disadvantaged business procurement mechanisms and regions is posted at http://www.arnet.govlReferences/sdbadjustments.htm. The offeror shall use the list in effect on the date of this solicitation. "Address," as used in this provision, means the address of the offeror as listed on the Small Business
+
+SOLICITATION #10-236-S0L-00004 IHS - Division of Epidemiology SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA
+Administration's
+
+and Disease Prevention Page 25 of31
+
+register of small disadvantaged business concerns or the address on the completed application that
+
+the concern has submitted to the Small Business Administration or a Private Certifier in accordance with 13 CFR Part 124, subpart B. For joint ventures, "address" refers to the address of the small disadvantaged business concern that is participating in the joint venture. (10) HUBZone small business concern. [Complete only
+
+if the offeror represented itself as a small business
+
+concern in paragraph (c)(I) of this provision.] The offeror represents, as part of its offer, that(i) It [ ] is, [ ] is not a HUBZone small business concern listed, on the date ofthis representation, on the List of Qualified HUBZone Small Business Concerns maintained by the Small Business Administration, and no material change in ownership and control, principal office, or HUB Zone employee percentage has occurred since it was certified by the Small Business Administration in accordance with 13 CFR Part 126; and (ii) It [ ] is, [ ] is not a joint venture that complies with the requirements of 13 CFR Part 126, and the representation in paragraph (c)(lO)(i) of this provision is accurate for the HUBZone small business concern or concerns that are participating in the joint venture. [The offeror shall enter the name or names of the HUBZone small business concern or concerns that are participating representation. (11) (Complete if the offeror has represented itself as disadvantaged in paragraph (c)(4) or (c)(9) of this provision.) [The offeror shall check the category in which its ownership falls]: __ __ __ Black American. Hispanic American. Native American (American Indians, Eskimos, Aleuts, or Native Hawaiians). Asian-Pacific American (persons with origins from Burma, Thailand, Malaysia, Indonesia, Singapore, in the joint venture: .] Each HUB Zone small business concern participating in the joint venture shall submit a separate signed copy ofthe HUBZone
+
+Brunei, Japan, China, Taiwan, Laos, Cambodia (Kampuchea), Vietnam, Korea, The Philippines, U.S. Trust Territory of the Pacific Islands (Republic of Palau), Republic of the Marshall Islands, Federated States of Micronesia, the Commonwealth of the Northern Mariana Islands, Guam, Samoa, Macao, Hong Kong, Fiji, Tonga, Kiribati, Tuvalu, or Nauru). __ Subcontinent Asian (Asian-Indian) American (persons with origins from India, Pakistan, Bangladesh, Sri Lanka, Bhutan, the Maldives Islands, or Nepal). __ Individual/concern, other than one ofthe preceding. (d) Representations required to implement provisions of Executive Order 11246(1) Previous contracts and compliance. The offeror represents that(i) It [ ] has, [ ] has not participated in a previous contract or subcontract subject to the Equal Opportunity clause of this solicitation; and (ii) It [ ] has, [ ] has not filed all required compliance reports. (2) Affirmative Action Compliance. The offeror represents that(i) It [ ] has developed and has on file, [ ] has not developed and does not have on file, at each establishment, affirmative action programs required by rules and regulations of the Secretary of Labor (41 CFR parts 60-1 and 60-2), or (ii) It [ ] has not previously had contracts subject to the written affirmative action programs requirement of the rules and regulations ofthe Secretary of Labor. (e) Certification Regarding Payments to Influence Federal Transactions Q.LU.S.C. 1352). (Applies only if the contract is expected to exceed $100,000.) By submission of its offer, the offeror certifies to the best of its knowledge and belief that no Federal appropriated funds have been paid or will be paid to any person for influencing or attempting to influence an officer or employee of any agency, a Member of Congress, an officer or employee of Congress or an employee of a Member of Congress on his or her behalf in connection with the award of any
+
+SOLICITATION #10-236-S0L-00004 ms - Division of Epidemiology SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA
+
+and Disease Prevention Page 26 of 31
+
+resultant contract. If any registrants under the Lobbying Disclosure Act of 1995 have made a lobbying contact on behalf of the offeror with respect to this contract, the offeror shall complete and submit, with its offer, OMB Standard Form LLL, Disclosure of Lobbying Activities, to provide the name of the registrants. The offeror need not report regularly employed officers or employees ofthe offeror to whom payments of reasonable compensation were made. (f) Buy American Act Certificate. (Applies only if the clause at Federal Acquisition Regulation (FAR) 52.225-1, Buy American Act-Supplies, is included in this solicitation.) (1) The offeror certifies that each end product, except those listed in paragraph (f)(2) of this provision, is a domestic end product and that for other than COTS items, the offeror has considered components of unknown origin to have been mined, produced, or manufactured outside the United States. The offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as domestic end products, i.e., an end product that is not a COTS item and does not meet the component test in paragraph (2) of the definition of "domestic end product." The terms "commercially available off-the-shelf (COTS) item" "component," "domestic end product," "end product," "foreign end product," and "United States" are defined in the clause ofthis solicitation entitled "Buy American Act-Supplies." (2) Foreign End Products: Line Item No. Country of Origin
+
+[List as necessary] (3) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25. (g)(l) Buy American Act-Free Trade Agreements-Israeli Trade Act Certificate. (Applies only if the clause at Trade Act, is included in this solicitation.) FAR 52.225-3, Buy American Act-Free Trade Agreements-Israeli
+
+(i) The offeror certifies that each end product, except those listed in paragraph (g)(1 )(ii) or (g)(l )(iii) ofthis provision, is a domestic end product and that for other than COTS items, the offeror has considered components of unknown origin to have been mined, produced, or manufactured outside the United States. The terms "Bahrainian, Moroccan, Omani, or Peruvian end product," "commercially available off-the-shelf (COTS) item," "component," "domestic end product," "end product," "foreign end product," "Free Trade Agreement country," "Free Trade Agreement country end product," "Israeli end product," and "United States" are defined in the clause of this solicitation entitled "Buy American Act-Free Trade Agreements-Israeli Trade Act." (ii) The offeror certifies that the following supplies are Free Trade Agreement country end products (other than Bahrainian, Moroccan, Omani, or Peruvian end products) or Israeli end products as defined in the clause ofthis solicitation entitled "Buy American Act-Free Products) or Israeli End Products: Line Item No. Country of Origin Trade Agreements-Israeli Trade Act": Free Trade Agreement Country End Products (Other than Bahrainian, Moroccan,
+
+am ani,
+
+or Peruvian End
+
+[List as necessary]
+
+SOLICITATION #10-236-S0L-00004 illS - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 27 of31
+(iii) The offeror shall list those supplies that are foreign end products (other than those listed in paragraph (g)(l)(ii) of this provision) as defined in the clause of this solicitation entitled "Buy American Act-Free Trade Agreements-Israeli Trade Act." The offeror shall list as other foreign end products those end products manufactured in the United States that do not qualify as domestic end products, i.e., an end product that is not a COTS item and does not meet the component test in paragraph (2) of the defInition of "domestic end product." Other Foreign End Products: Line Item No. Country of Origin
+
+[List as necessary] (iv) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25. (2) Buy American Act-Free Trade Agreements-Israeli Trade Act Certificate, Alternate I. If Alternate I to the clause at FAR 52.225-3 is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(l)(ii) of the basic provision: (g)(1)(ii) The offeror certifies that the following supplies are Canadian end products as defmed in the clause of this solicitation entitled "Buy American Act-Free Trade Agreements-Israeli Trade Act": Canadian End Products: Line Item No.
+
+[List as necessary] (3) Buy American Act-Free Trade Agreements-Israeli Trade Act Certificate, Alternate II. If Alternate II to the clause at FAR 52.225-3 is included in this solicitation, substitute the following paragraph (g)(1 )(ii) for paragraph (g)(1)(ii) of the basic provision: (g)(1 )(ii) The offeror certifies that the following supplies are Canadian end products or Israeli end products as defined in the clause ofthis solicitation entitled "Buy American Act-Free Trade Act": Canadian or Israeli End Products: Line Item No. Country of Origin Trade Agreements-Israeli
+
+[List as necessary] (4) Trade Agreements Certificate. (Applies only ifthe clause at FAR 52.225-5, Trade Agreements, is included in this solicitation.)
+
+SOLICITATION #10-236-S0L-00004 ms - Division of Epidemiology SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA
+
+and Disease Prevention
+
+Page 28 of31
+
+(i) The offeror certifies that each end product, except those listed in paragraph (g)(4)(ii) of this provision, is a U.S.-made or designated country end product, as defined in the clause of this solicitation entitled "Trade Agreements." (ii) The offeror shall list as other end products those end products that are not U.S.-made or designated country end products. Other End Products:
+
+Line Item No.
+
+Country of Origin
+
+[List as necessary] (iii) The Government will evaluate offers in accordance with the policies and procedures ofF AR Part 25. For line items covered by the WTO GPA, the Government will evaluate offers of U.S.-made or designated country end products without regard to the restrictions of the Buy American Act. The Government will consider for award only offers of U.S.-made or designated country end products unless the Contracting Officer determines that there are no offers for such products or that the offers for such products are insufficient to fulfill the requirements of the solicitation. (h) Certification Regarding Responsibility Matters (Executive Order 12689). (Applies only if the contract value is expected to exceed the simplified acquisition threshold.) The offeror certifies, to the best of its knowledge and belief, that the offeror and/or any of its principals(1) [ ] Are, [ ] are not presently debarred, suspended, proposed for debarment, or declared ineligible for the award of contracts by any Federal agency; (2) [ ] Have, [ ] have not, within a three-year period preceding this offer, been convicted of or had a civil judgment rendered against them for: commission of fraud or a criminal offense in connection with obtaining, attempting to obtain, or performing a Federal, state or local government contract or subcontract; violation of Federal or state antitrust statutes relating to the submission of offers; or commission of embezzlement, theft, forgery, bribery, falsification or destruction of records, making false statements, tax evasion, violating Federal criminal tax laws, or receiving stolen property; (3) [ ] Are, [ ] are not presently indicted for, or otherwise criminally or civilly charged by a Government entity with, commission of any ofthese offenses enumerated in paragraph (h)(2) ofthis clause; and (4) [ ] Have, [ ] have not, within a three-year period preceding this offer, been notified of any delinquent Federal taxes in an amount that exceeds $3,000 for which the liability remains unsatisfied. (i) Taxes are considered delinquent if both of the following criteria apply: (A) The tax liability isfinally determined. The liability is finally determined if it has been assessed. A liability is not finally determined if there is a pending administrative or judicial challenge. In the case of a judicial challenge to the liability, the liability is not finally determined until all judicial appeal rights have been exhausted. (B) The taxpayer is delinquent in making payment. A taxpayer is delinquent ifthe taxpayer has failed to pay the tax liability when full payment was due and required. A taxpayer is not delinquent in cases where enforced collection action is precluded. (ii) Examples. (A) The taxpayer has received a statutory notice of deficiency, under LR.C. §6212, which entitles the taxpayer to seek Tax Court review of a proposed tax deficiency. This is not a delinquent tax because it is not a final
+
+SOLICITATION #10-236-S0L-00004 illS - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 29 001
+tax liability. Should the taxpayer seek Tax Court review, this will not be a final tax liability until the taxpayer has exercised all judicial appeal rights. (B) The IRS has filed a notice of Federal tax lien with respect to an assessed tax liability, and the taxpayer has been issued a notice under LR.C. §6320 entitling the taxpayer to request a hearing with the IRS Office of Appeals contesting the lien filing, and to further appeal to the Tax Court ifthe IRS determines to sustain the lien filing. In the course of the hearing, the taxpayer is entitled to contest the underlying tax liability because the taxpayer has had no prior opportunity to contest the liability. This is not a delinquent tax because it is not a final tax liability. Should the taxpayer seek tax court review, this will not be a final tax liability until the taxpayer has exercised all judicial appeal rights. (C) The taxpayer has entered into an installment agreement pursuant to LR.C. §6159. The taxpayer is making timely payments and is in full compliance with the agreement terms. The taxpayer is not delinquent because the taxpayer is not currently required to make full payment. (D) The taxpayer has filed for bankruptcy protection. The taxpayer is not delinquent because enforced collection action is stayed under 11 U.S.C. §362 (the Bankruptcy Code). (i) Certification Regarding Knowledge of Child Labor for Listed End Products (Executive Order 13126). [The Contracting Officer must list in paragraph (i)(I) any end products being acquired under this solicitation that are included in the List of Products Requiring Contractor Certification as to Forced or Indentured Child Labor, unless excluded at 22.1503(b).] (1) Listed end products.
+
+Listed End Product
+
+Listed Countries of Origin
+
+(2) Certification. [if the Contracting Officer has identified end products and countries of origin in paragraph (i)(J) of this provision, then the offeror must certify to either (i)(2)(i) or (i)(2)(ii) by checking the appropriate block.] [ ] (i) The offeror will not supply any end product listed in paragraph (i)(1) of this provision that was mined, produced, or manufactured in the corresponding country as listed for that product. [ ] (ii) The offeror may supply an end product listed in paragraph (i)(l) of this provision that was mined, produced, or manufactured in the corresponding country as listed for that product. The offeror certifies that it has made a good faith effort to determine whether forced or indentured child labor was used to mine, produce, or manufacture any such end product furnished under this contract. On the basis of those efforts, the offeror certifies that it is not aware of any such use of child labor.
+
+G) Place
+
+of manufacture. (Does not apply unless the solicitation is predominantly for the acquisition of
+
+manufactured end products.) For statistical purposes only, the offeror shall indicate whether the place of manufacture of the end products it expects to provide in response to this solicitation is predominantly(1) [ ] In the United States (Check this box if the total anticipated price of offered end products manufactured in the United States exceeds the total anticipated price of offered end products manufactured outside the United States); or (2) [ ] Outside the United States. (k) Certificates regarding exemptions from the application of the Service Contract Act. (Certification by the offeror as to its compliance with respect to the contract also constitutes its certification as to compliance by its subcontractor if it subcontracts out the exempt services.) [The contracting officer is to check a box to indicate
+
+if
+
+paragraph (k)(I) or (k)(2) applies.] [ ] (1) Maintenance, calibration, or repair of certain equipment as described in FAR 22.1 003-4( c)(1). The offeror [ ] does [ ] does not certify that-
+
+SOLICITATION #10-236-S0L-00004 ms - Division of Epidemiology SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA
+
+and Disease Prevention
+
+Page 30 of31
+
+(i) The items of equipment to be serviced under this contract are used regularly for other than Governmental purposes and are sold or traded by the offeror (or subcontractor in the case of an exempt subcontract) in substantial quantities to the general public in the course of normal business operations; (ii) The services will be furnished at prices which are, or are based on, established catalog or market prices (see FAR 22.1003-4(c)(2)(iiť for the maintenance, calibration, or repair of such equipment; and (iii) The compensation (wage and fringe benefits) plan for all service employees performing work under the contract will be the same as that used for these employees and equivalent employees servicing the same equipment of commercial customers. [ ] (2) Certain services as described in FAR 22.1 003-4( d)(l). The offeror [ ] does [ ] does not certify that(i) The services under the contract are offered and sold regularly to non-Governmental quantities in the course of normal business operations; (ii) The contract services will be furnished at prices that are, or are based on, established catalog or market prices (see FAR 22.1003-4( d)(2)(iii); (iii) Each service employee who will perform the services under the contract will spend only a small portion of his or her time (a monthly average ofless than 20 percent of the available hours on an annualized basis, or less than 20 percent of available hours during the contract period if the contract period is less than a month) servicing the Government contract; and (iv) The compensation (wage and fringe benefits) plan for all service employees performing work under the contract is the same as that used for these employees and equivalent employees servicing commercial customers. (3) Ifparagraph (k)(1) or (k)(2) of this clause applies(i) lfthe offeror does not certify to the conditions in paragraph (k)(1) or (k)(2) and the Contracting Officer did not attach a Service Contract Act wage determination to the solicitation, the offeror shall notify the Contracting Officer as soon as possible; and (ii) The Contracting Officer may not make an award to the offeror if the offeror fails to execute the certification in paragraph (k)(l) or (k)(2) of this clause or to contact the Contracting Officer as required in paragraph (k)(3)(i) of this clause. (1) Taxpayer JdentificationNumber (TIN) (26 US.C. 6109,31 Us.e 7701). (Not applicable if the offeror is required to provide this information to a central contractor registration database to be eligible for award.) (1) All offerors must submit the information required in paragraphs (1)(3) through (1)(5) of this provision to comply with debt collection requirements of 31 US.c. 770 1(c) and 3325( d), reporting requirements of26 U.S.C. 6041, 6041A, and 6050M, and implementing regulations issued by the Internal Revenue Service (IRS). (2) The TIN may be used by the Government to collect and report on any delinquent amounts arising out of the offeror's relationship with the Government (31 US.c. records to verify the accuracy of the offeror's TIN. (3) Taxpayer JdentificationNumber [ ] TIN: [ ] TIN has been applied for. [ ] TIN is not required because: [ ] Offeror is a nonresident alien, foreign corporation, or foreign partnership that does not have income effectively connected with the conduct of a trade or business in the United States and does not have an office or place of business or a fiscal paying agent in the United States; [ ] Offeror is an agency or instrumentality of a foreign government; [ ] Offeror is an agency or instrumentality of the Federal Government. (4) Type of organization. (TIN). _ 7701(c)(3ť. lfthe resulting contract is subject to the payment reporting requirements described in FAR 4.904, the TIN provided hereunder may be matched with IRS customers, and are provided by the offeror (or subcontractor in the case of an exempt subcontract) to the general public in substantial
+
+SOLICITATION #10-236-S0L-00004 illS - Division of Epidemiology and Disease Prevention SAS PROGRAMMER FOR PUBLIC HEALTH RELATED DATA Page 31 of31
+] Sole proprietorship; ] Partnership; ] Corporate entity (not tax-exempt); ] Corporate entity (tax-exempt); ] Government entity (Federal, State, or local); ] Foreign government; ] International organization per 26 CFR 1.6049-4; [ ]Oili~ _ (5) Common parent. [ ] Offeror is not owned or controlled by a common parent; [ ] Name and TIN of common parent: Nmne TIN conduct any restricted business operations in Sudan. (n) Prohibition on Contracting with Inverted Domestic Corporations. (1) Relation to Internal Revenue Code. A foreign entity that is treated as an inverted domestic corporation for purposes of the Internal Revenue Code at 26 U.S.c. 7874 (or would be except that the inversion transactions were completed on or before March 4, 2003), is also an inverted domestic corporation for purposes of 6 U.S.C. 395 and for this solicitation provision (see FAR 9.108). (2) Representation. By submission of its offer, the offeror represents that it is not an inverted domestic corporation and is not a subsidiary of one. E.4. 52.216-1Type of Contract (APR 1984) The Government contemplates award of a Firm-Fixed Price contract resulting from this solicitation. _ _
+
+(m) Restricted business operations in Sudan. By submission of its offer, the offeror certifies that it does not
+
+i FDCC is applicable to all computing systems using Windows xpTM and Windows Vista'>', including desktops and laptopsregardless of function-but not including servers. The Department has developed an HHS version ofFDCC (henceforth HHS FDCC) for Windows XpTM and Vista" to accommodate business and operational needs in the HHS environment. These settings are available at http://intranet.hhs.gov/infosec/guidance.html. When there is a compelling business or operational need to deviate from the FDCC, Operating Divisions (OPDIVs) and Staff Divisions (ST AFFDIVs) may use the HHS FDCC settings instead of the government-wide FDCC settings.
+
+ii See HHS Minimum Security Configuration Standards for Departmental http://intranet.hhs.gov/infosec/guidance.html.
+
+Operating Systems and Applications
+
+(as amended) at
+
+111 See http://nvd.nist.gov/validation.cfm, as required by the Office of Management and Budget (OMB) Memorandum (M) 08-22, Guidance on the Federal Desktop Core Configuration (FDCC), released August II, 2008.
+
+iv This meets the self-assertion requirement under OMB M-08-22. Future FDCC changes having minimal security impact may be released as minor versions to FDCC. Self-assertion is not required for minor releases.
+v
+
+http://csrc.nist.gov/publications/fips/fips20
+
+1-1IFIPS-20 1-1-chngl.pdf
+
+vi The Office of Management and Budget (OMB) Memorandum (M) 07-16, Safeguarding Against and Responding to the Breach of Personally Identifiable Information (released May 22,2007) requires the use ofFIPS 140-2, Security Requirements for Cryptographic Module, compliant encryption technologies on laptop computers and all other mobile computers and devices containing sensitive information. The HHS memorandum Mandatory Protection of Sensitive Information on Computers, Mobile Devices, and Portable Media (henceforth called the Protection of Sensitive Information Memo), signed by the HHS Chief of Staff on May 19,2008, directs expansion of the current HHS Encryption Standard for Mobile Devices and Portable Media to "all government and non-government-furnished desktops used on behalf of the government that store sensitive information."
+
+For the purposes ofthis contract, information is considered sensitive ifthe FIPS 199 Confidentiality or Integrity security objective is rated Moderate or High by the OPDrv Chief Information Security Officer (CISO) or HHS Chief Information Security Officer (CISO), as appropriate.
+vii
+
+OMS No. 0990-0115
+
+SOLICITATION/CONTRACT/ORDER
+OFFEROR 2. CONTRACT NO.
+
+TO COMPLETE
+
+BLOCKS
+
+I~
+
+FOR COMMERCIAL ITEM
+12. 17. 23. 24. & 30
+ORDER NUMBER
+
+AWARDI EFFECTIVE DATE
+
+r
+
+r'
+
+REQUISITION NUMBER
+
+OF IPAG~
+
+IHS1078743
+15. SOLICITATION NUMBER
+
+1
+
+31
+
+7.
+
+FOR SOLICITATION INFORMATION CALL:
+
+I~ NAME
+
+~
+
+SONIA NELSON
+CODE
+
+r
+NAICS:
+
+10-236-S0L-00004
+(No collect calls)
+
+TELEPHONE NUMBER
+
+505-248-4109
+[l!I SET ASIDE:
+100.00
+BUSINESS
+
+I~'
+
+I~'
+
+SOLICITATION ISSUE DATE
+
+12/29/2009 1630 MS
+
+OFFER nUE DATE/LOCAL TIME
+
+01/15/2010
+% FOR:
+
+9. ISSUED BY
+
+1196
+
+10. THIS ACQUISITION IS
+
+o UNRESTRICTED OR
+541512
+
+Indian Health Service 801 Thompson Ave Rockville MD 20852
+
+00 SMALL
+
+DEMERGING SMALL BUSINESS OSOLE SOURCE
+
+o HUBZONE SMALL
+BUSINESS
+
+SIZE STANDARD:
+
+$25.0
+11. DELIVERY FOR FOB DESTINATION UNLESS BLOCK IS MARKED OSEE SCHEDULE 15. DELIVER TO CODE 12. DISCOUNT TERMS
+
+o SERVICE-DISABLED
+13b. RATING
+
+VETERANOWNED SMALL BUSINESS
+
+OB(A)
+
+o 13a.
+IIHSHQ
+
+THIS CONTRACT IS A RATED ORDER UNDER DPAS (15 CFR 700)
+
+14. METHOD OF SOLICITATION DRFQ DIFB CODE ~ RFP
+
+16. ADMINISTERED BY
+
+1196
+
+HEADQUARTER THE REYES BUILDING 801 THOMPSON AVENUE ROCKVILLE MD 20852
+
+Indian Health Service 801 Thompson Ave Rockville MD 20852
+
+170. CONTRACTORI OFFEROR
+
+CODE
+
+1 FACILITY 1
+CODE
+
+lBa. PAYMENT WILL BE MADE BY
+
+CODE
+
+1
+
+.
+
+TELEPHONE NO. 017b. CHECK IF REMITTANCE IS DIFFERENT AND PUT SUCH ADDRESS IN OFFER lBb. SUBMIT INVOICES TO ADDRESS SHOWN IN BLOCK lBa UNLESS BLOCK BELOW IS CHECKED 19. ITEM NO. 20. SCHEDULE OF SUPPLIEs/SERVICES 21. QUANTITY OSEE ADDENDUM 22. UNIT 23. UNIT PRICE 24. AMOUNT
+
+Contractor to Provide Service to IHS EPI on SAS Programmer for Public Population Health Related Data 02/01/2010 to 01/31/2011 Period of Performance:
+
+1
+
+BASE YEAR
+
+- LABOR
+
+- SAS Programmer
+
+Continued
+25. ACCOUNTING
+
+...
+Sheets as Necessary)
+DATA
+
+(Use Reverse and/or Attach Additional
+AND APPROPRIATION
+
+re.
+AND 52.212-5 ARE ATTACHED. IS ATTACHED. ADDENDA
+
+TOTAL
+
+AWARD
+
+AMOUNT
+
+(For Govt. Use
+
+Only)
+
+1Zl27a. SOLICITATION
+
+INCORPORATES ORDER
+
+BY REFERENCE INCORPORATES
+
+FAR 52.212-1,
+
+52.212-4.
+
+FAR 52.212-3
+
+ADDEND
+
+o 27b.
+~2B.
+
+DARE DARE REF. . YOUR OFFER
+
+IZl ARE NOT ATTACHED. 0 ARE NOT ATTACHED OFFER
+
+CONTRACT/PURCHASE
+
+BY REFERENCE
+
+FAR 52.212-4.
+
+FAR 52.212-5
+
+CONTRACTOR
+
+IS REQUIRED OFFICE.
+
+TO SIGN THIS DOCUMENT CONTRACTOR AGREES
+
+AND RETURN AND DELIVER
+
+2
+
+o 29. AWARD
+DATED INCLUDING HEREIN.
+
+OF CONTRACT
+
+COPIES
+
+TO ISSUING
+
+TO FURNISH
+
+ON SOLICITATION
+
+(BLOCK
+
+5),
+
+ALL ITEMS SET FORTH SHEETS SUBJECT
+
+OR OTHERWISE
+
+IDENTIFIED
+
+ABOVE
+
+AND ON ANY ADDITIONAL HEREIN.
+
+ANY ADDITIONS
+
+OR CHANGES
+
+WHICH
+
+ARE SET FORTH
+
+TO THE TERMS
+
+AND CONDITIONS
+
+SPECIFIED
+
+IS ACCEPTED
+
+AS TO ITEMS:
+
+30a. SIGNATURE OF OFFERORICONTRACTOR
+
+31a. UNITED STATES OF AMERICA (SIGNATURE OF CONTRACTING OFFICER)
+
+30b. NAME AND TITLE OF SIGNER
+
+(Type or print)
+
+roc,
+
+DATE SIGNED
+
+31b. NAME OF CONTRACTING
+
+OFFICER
+
+(Type or print)
+
+131C. DATE SIGNED
+
+DALE M. BURSON
+AUTHORIZED PREVIOUS FOR LOCAL REPRODUCTION EDITION IS NOT USABLE STANDARD Prescribed
+
+1
+FORM 1449 (REV. 3/2005) by GSA - FAR (48 CFR) 53.212
+
+2 of
+19. ITEM NO. 20. SCHEDULE OF SUPPLIES/SERVICES 21. QUANTITY 22. UNIT 23. UNIT PRICE
+
+31
+24. AMOUNT
+
+2
+
+BASE YEAR
+
+- TRAVEL
+
+- SAS Programmer
+
+3
+
+1ST OPTION
+
+YEAR
+
+- LABOR
+
+- SAS Programmer
+
+(Option Line 01/01/2011 Period
+
+Item)
+
+of Performance:
+
+02/01/2011
+
+to 01/31/2012
+
+4
+
+1ST OPTION
+
+YEAR
+
+- TRAVEL
+
+-
+
+SAS Programmer
+
+(Option Line 01/01/2011 Period
+
+Item)
+
+of Performance:
+
+02/01/2011
+
+to 01/31/2012
+
+5
+
+2ND OPTION
+
+YEAR
+
+- LABOR
+
+- SAS Programmer
+
+(Option Line 01/01/2012 Period
+
+Item)
+
+of Performance:
+
+02/01/2012
+
+to 01/31/2013
+
+6
+
+2ND OPTION
+
+YEAR
+
+- TRAVEL
+
+- SAS Programmer
+
+(Option Line 01/01/2012 Period
+
+Item)
+
+of Performance:
+
+02/01/2012
+
+to 01/31/2013
+
+32a. QUANTITY
+
+IN COLUMN
+
+21 HAS BEEN
+
+o
+
+RECEIVED
+
+o
+
+INSPECTED GOVERNMENT
+
+o
+GOVERNMENT
+
+ACCEPTED, NOTED
+
+AND CONFORMS
+
+TO THE CONTRACT,
+
+EXCEPT
+
+AS
+
+32b. SIGNATURE
+
+OF AUTHORIZED
+
+REPRESENTATIVE
+
+I
+
+32c. DATE
+
+32d. PRINTED
+
+NAME AND TITLE OF AUTHORIZED
+
+GOVERNMENT
+
+REPRESENTATIVE
+
+32e. MAILING
+
+ADDRESS
+
+OF AUTHORIZED
+
+REPRESENTATIVE
+
+321. TELEPHONE
+
+NUMBER
+
+OF AUTHORIZED
+
+GOVERNMENT
+
+REPRESENTATIVE
+
+329. E-MAIL
+
+OF AUTHORIZED
+
+GOVERNMENT
+
+REPRESENTATIVE
+
+33. SHIP NUMBER
+
+134. VOUCHER
+
+NUMBER
+
+35. AMOUNT CORRECT
+
+VERIFIED FOR
+
+36. PAYMENT
+
+37. CHECK
+
+NUMBER
+
+o
+
+PARTIAL
+
+o
+
+o
+FINAL 39. SIR VOUCHER NUMBER 40. PAID BY
+
+COMPLETE
+
+o
+
+PARTIAL
+
+o
+
+FINAL
+
+38. SIR ACCOUNT
+
+NUMBER
+
+41a. I CERTIFY 41 b. SIGNATURE
+
+THIS ACCOUNT
+
+IS CORRECT
+
+AND PROPER OFFICER
+
+FOR PAYMENT 41c. DATE
+
+42a. RECEIVED
+
+BY (Print)
+
+AND TITLE OF CERTIFYING
+
+42b. RECEIVED
+
+AT (Location)
+
+42c. DATE REC'D (YY/MM/DD)
+
+I
+
+42d. TOTAL
+
+CONTAINERS
+
+STANDARD
+
+FORM
+
+1449 (REV. 3/2005)
+
+BACK
+
+WD 05-2361 (Rev.-9) was first posted on www.wdol.gov on 11/03/2009 ************************************************************************************ REGISTER OF WAGE DETERMINATIONS UNDER U.S. DEPARTMENT OF LABOR 1 THE SERVICE CONTRACT ACT EMPLOYMENT STANDARDS ADMINISTRATION 1 WAGE AND HOUR DIVISION By direction of the Secretary of Labor 1 WASHINGTON D.C. 20210 1
+1
+1
+
+1
+
+1
+
+Shirley F. Ebbesen Director
+_______________________________________
+
+Division of Wage Determinations
+
+1 1 1
+
+Wage Determination No.: 2005-2361 Revision No.: 9 Date Of Revision: 10/29/2009
+_
+
+State: New Mexico Area: New Mexico Counties of Bernalillo, Catron, Cibola, Colfax, De Baca, Guadalupe, Harding, Los Alamos, McKinley, Mora, Rio Arriba, San Juan, San Miguel, Sandoval, Santa Fe, Socorro, Taos, Torrance, Valencia **Fringe Benefits Required Follow the Occupational Listing** OCCUPATION CODE - TITLE FOOTNOTE 01000 - Administrative Support And Clerical Occupations 01011 - Accounting Clerk I 01012 - Accounting Clerk II 01013 - Accounting Clerk III 01020 - Administrative Assistant 01040 - Court Reporter 01051 - Data Entry Operator I 01052 - Data Entry Operator II 01060 - Dispatcher, Motor Vehicle 01070 - Document Preparation Clerk 01090 - Duplicating Machine Operator 01111 - General Clerk I 01112 - General Clerk II 01113 - General Clerk III 01120 - Housing Referral Assistant 01141 - Messenger Courier 01191 - Order Clerk I 01192 - Order Clerk II 01261 - Personnel Assistant (Employment) I 01262 - Personnel Assistant (Employment) II 01263 - Personnel Assistant (Employment) III 01270 - Production Control Clerk 01280 - Receptionist 01290 - Rental Clerk 01300 - Scheduler, Maintenance 01311 - Secretary I 01312 - Secretary II 01313 - Secretary III 01320 - Service Order Dispatcher 01410 - Supply Technician 01420 - Survey Worker 01531 - Travel Clerk I 01532 - Travel Clerk II 01533 - Travel Clerk III 01611 - Word Processor I 01612 - Word Processor II 01613 - Word Processor III 05000 - Automotive Service Occupations 05005 - Automobile Body Repairer, Fiberglass 05010 - Automotive Electrician 05040 - Automotive Glass Installer 05070 - Automotive Worker
+
+RATE 12.88 14.47 16.18 17.59 18.61 10.83 13.44 14.89 13.86 13.86 10.83 11.82 13.26 16.36 9.51 11.33 12.91 13.67 15.13 16.89 21.04 10.91 12.25 13.04 13.04 14.58 16.36 13.47 17.59 13.50 11.58 12.50 13.29 11.91 13.37 14.95 18.06 18.12 15.82 15.82
+
+05110 05130 05160 05190 05220 05250 05280 05310 05340 05370 05400 07000 07010 07041 07042 07070 07130 07210 07260 09000 09010 09040 09080 09090 09110 09130 11000 11030 11060 11090 11122 11150 11210 11240 11260 11270 11330 11360 12000 12010 12011 12012 12015 12020 12025 12030 12035 12040 12071 12072 12073 12100 12130 12160 12190 12195 12210 12221 12222 12223 12224 12235 12236
+
+- Mobile Equipment Servicer - Motor Equipment Metal Mechanic - Motor Equipment Metal Worker Motor Vehicle Mechanic - Motor Vehicle Mechanic Helper - Motor Vehicle Upholstery Worker - Motor Vehicle Wrecker - Painter, Automotive - Radiator Repair Specialist - Tire Repairer - Transmission Repair Specialist Food Preparation And Service Occupations - Baker - Cook I - Cook II - Dishwasher - Food Service Worker - Meat Cutter - Waiter/Waitress Furniture Maintenance And Repair Occupations - Electrostatic Spray Painter - Furniture Handler - Furniture Refinisher - Furniture Refinisher Helper - Furniture Repairer, Minor - Upholsterer General Services And Support Occupations - Cleaner, Vehicles - Elevator Operator - Gardener - Housekeeping Aide - Janitor - Laborer, Grounds Maintenance - Maid or Houseman - Pruner - Tractor Operator - Trail Maintenance Worker - Window Cleaner Health Occupations - Ambulance Driver - Breath Alcohol Technician - Certified Occupational Therapist Assistant - Certified Physical Therapist Assistant - Dental Assistant - Dental Hygienist - EKG Technician - Electroneurodiagnostic Technologist - Emergency Medical Technician - Licensed Practical Nurse I - Licensed Practical Nurse II - Licensed Practical Nurse III - Medical Assistant - Medical Laboratory Technician - Medical Record Clerk - Medical Record Technician - Medical Transcriptionist - Nuclear Medicine Technologist - Nursing Assistant I - Nursing Assistant II - Nursing Assistant III - Nursing Assistant IV - Optical Dispenser - Optical Technician
+
+13.50 17.99 15.82 18.12 13.62 15.82 15.82 17 .19 15.82 10.94 17.99 11. 60 9.75 11.12 7.41 8.77 16.07 7.25 14.65 11. 44 14.65 12.45 13.85 14.65 8.96 8.96 13.12 9.09 9.31 9.54 7.91 8.15 12.02 9.54 10.72 15.94 18.04 23.02 19.11 14.72 36.30 26.19 26.19 15.94 17.03 19.02 21. 20 13.10 18.44 12.38 14.89 13.60 36.03 9.93 11.17 12.19 13.67 13.85 13.86
+
+12250 - Pharmacy Technician 12280 - Phlebotomist 12305 - Radiologic Technologist 12311 - Registered Nurse I 12312 - Registered Nurse II 12313 - Registered Nurse II, Specialist 12314 - Registered Nurse III 12315 - Registered Nurse III, Anesthetist 12316 - Registered Nurse IV 12317 - Scheduler (Drug and Alcohol Testing) 13000 - Information And Arts Occupations 13011 - Exhibits Specialist I 13012 - Exhibits Specialist II 13013 - Exhibits Specialist III 13041 - Illustrator I 13042 - Illustrator II 13043 - Illustrator III 13047 - Librarian 13050 - Library Aide/Clerk 13054 - Library Information Technology Systems Administrator 13058 - Library Technician 13061 - Media Specialist I 13062 - Media Specialist II 13063 - Media Specialist III 13071 - Photographer I 13072 - Photographer II 13073 - Photographer III 13074 - Photographer IV 13075 - Photographer V 13110 - Video Teleconference Technician 14000 - Information Technology Occupations 14041 - Computer Operator I 14042 - Computer Operator II 14043 - Computer Operator III 14044 - Computer Operator IV 14045 - Computer Operator V (see 1) 14071 - Computer Programmer I (see 1) 14072 Computer Programmer II 14073 - Computer Programmer III (see 1) (see 1) 14074 - Computer Programmer IV 14101 - Computer Systems Analyst I (see 1) 14102 - Computer Systems Analyst II (see 1) 14103 - Computer Systems Analyst III (see 1) 14150 - Peripheral Equipment Operator 14160 - Personal Computer Support Technician 15000 - Instructional Occupations 15010 - Aircrew Training Devices Instructor (Non-Rated) 15020 - Aircrew Training Devices Instructor (Rated) 15030 - Air Crew Training Devices Instructor (Pilot) 15050 - Computer Based Training Specialist / Instructor 15060 - Educational Technologist 15070 - Flight Instructor (Pilot) 15080 - Graphic Artist 15090 - Technical Instructor 15095 - Technical Instructor/Course Developer 15110 - Test Proctor 15120 - Tutor 16000 - Laundry, Dry-Cleaning, Pressing And Related Occupations 16010 - Assembler 16030 - Counter Attendant 16040 - Dry Cleaner 16070 - Finisher, Flatwork, Machine
+
+13.39 13.67 24.43 24.15 29.56 29.56 35.74 35.74 42.86 20.31 15.97 19.25 23.03 15.97 19.25 23.03 20.83 9.11 18.79 12.48 13.92 15.62 17 .34 14.44 16.03 19.73 22.09 26.72 18.57 14.95 16.71 19.12 21.26 24.34 20.37 23.76
+
+27.62
+
+14.95 21. 52 27.62 33.39 40.05 27.62 25.93 40.05 20.37 18.61 22.78 15.01 15.01 8.64 8.64 10.39 8.64
+
+16090 - Presser, Hand 16110 - Presser, Machine, Drycleaning 16130 - Presser, Machine, Shirts 16160 - Presser, Machine, Wearing Apparel, Laundry 16190 - Sewing Machine Operator 16220 - Tailor 16250 - Washer, Machine 19000 - Machine Tool Operation And Repair Occupations 19010 - Machine-Tool Operator (Tool Room) 19040 - Tool And Die Maker 21000 - Materials Handling And Packing Occupations 21020 - Forklift Operator 21030 - Material Coordinator 21040 - Material Expediter 21050 - Material Handling Laborer 21071 - Order Filler 21080 - Production Line Worker (Food Processing) 21110 - Shipping Packer 21130 - Shipping/Receiving Clerk 21140 - Store Worker I 21150 - Stock Clerk 21210 - Tools And Parts Attendant 21410 - Warehouse Specialist 23000 - Mechanics And Maintenance And Repair Occupations 23010 - Aerospace Structural Welder 23021 - Aircraft Mechanic I 23022 - Aircraft Mechanic II 23023 - Aircraft Mechanic III 23040 - Aircraft Mechanic Helper 23050 - Aircraft, Painter 23060 - Aircraft Servicer 23080 - Aircraft Worker 23110 - Appliance Mechanic 23120 - Bicycle Repairer 23125 - Cable Splicer 23130 - Carpenter, Maintenance 23140 - Carpet Layer 23160 - Electrician, Maintenance 23181 - Electronics Technician Maintenance I 23182 - Electronics Technician Maintenance II 23183 - Electronics Technician Maintenance III 23260 - Fabric Worker 23290 - Fire Alarm System Mechanic 23310 - Fire Extinguisher Repairer 23311 - Fuel Distribution System Mechanic 23312 - Fuel Distribution System Operator 23370 - General Maintenance Worker 23380 - Ground Support Equipment Mechanic 23381 - Ground Support Equipment Servicer 23382 - Ground Support Equipment Worker 23391 - Gunsmith I 23392 - Gunsmith II 23393 - Gunsmith III 23410 - Heating, Ventilation And Air-Conditioning Mechanic 23411 - Heating, Ventilation And Air Contditioning Mechanic (Research Facility) 23430 - Heavy Equipment Mechanic 23440 - Heavy Equipment Operator 23460 - Instrument Mechanic 23465 - Laboratory/Shelter Mechanic 23470 - Laborer 23510 - Locksmith
+
+8.64 8.64 8.64 8.64 10.95 11. 52 9.22 19.95 24.09 12.92 21. 04 21. 04 10.05 10.48 12.92 12.29 12.29 8.78 13 .54 12.92 12.92 22.80 21. 43 22.80 23.97 15.84 19.60 17.91 19.17 14.70 10.94 19.70 16.12 17.06 19.56 25.03 27.21 29.33 14.83 18.76 14.06 21.10 16.38 13.95 21. 43 17.91 19.17 14.06 16.91 19.77 19.25 21. 26 19.37 17.25 24.97 18.33 10.05 18.21
+
+23530 - Machinery Maintenance Mechanic 23550 - Machinist, Maintenance 23580 - Maintenance Trades Helper 23591 - Metrology Technician I 23592 - Metrology Technician II 23593 - Metrology Technician III 23640 - Millwright 23710 - Office Appliance Repairer 23760 - Painter, Maintenance 23790 - Pipefitter, Maintenance 23810 - Plumber, Maintenance 23820 - Pneudraulic Systems Mechanic 23850 - Rigger 23870 - Scale Mechanic 23890 - Sheet-Metal Worker, Maintenance 23910 - Small Engine Mechanic 23931 - Telecommunications Mechanic I 23932 - Telecommunications Mechanic II 23950 - Telephone Lineman 23960 - Welder, Combination, Maintenance 23965 - Well Driller 23970 - Woodcraft Worker 23980 - Woodworker 24000 - Personal Needs Occupations 24570 - Child Care Attendant 24580 - Child Care Center Clerk 24610 - Chore Aide 24620 - Family Readiness And Support Services Coordinator 24630 - Homemaker 25000 - Plant And System Operations Occupations 25010 - Boiler Tender 25040 - Sewage Plant Operator 25070 - Stationary Engineer 25190 - Ventilation Equipment Tender 25210 - Water Treatment Plant Operator 27000 - Protective Service Occupations 27004 - Alarm Monitor 27007 - Baggage Inspector 27008 - Corrections Officer 27010 - Court Security Officer 27030 - Detection Dog Handler 27040 - Detention Officer 27070 - Firefighter 27101 - Guard I 27102 - Guard II 27131 - Police Officer I 27132 - Police Officer II 28000 - Recreation Occupations 28041 - Carnival Equipment Operator 28042 - Carnival Equipment Repairer 28043 - Carnival Equpment Worker 28210 - Gate Attendant/Gate Tender 28310 - Lifeguard 28350 - Park Attendant (Aide) 28510 - Recreation Aide/Health Facility Attendant 28515 - Recreation Specialist 28630 - Sports Official 28690 - Swimming Pool Operator 29000 - Stevedoring/Longshoremen Occupational Services 29010 - Blocker And Bracer 29020 - Hatch Tender 29030 - Line Handler
+
+22.60 21.25 12.56 24.97 26.67 28.02 19.77 19.21 15.94 21. 44 20.05 19.77 19.77 16.87 18.39 15.07 24.06 25.7l 21. 26 18.39 19.77 19.77 16.61 10.31 14.77 9.07 13.49 17.49 19.77 18.32 19.77 12.56 17.38 13.21 11. 23 15.36 16.86 13.16 15.36 16.86 11. 23 12.56 17.79 19.76 12.61 13.74 8.69 12.73 11. 34 14.25 10.39 16.42 11.34 16.69 18.56 18.56 18.56
+
+29041 - Stevedore I 29042 - Stevedore II 30000 - Technical Occupations 30010 - Air Traffic Control Specialist, Center (HFO) (see 30011 - Air Traffic Control Specialist, Station (HFO) (see 30012 - Air Traffic Control Specialist, Terminal (HFO) (see 30021 - Archeological Technician I 30022 - Archeological Technician II 30023 - Archeological Technician III 30030 - Cartographic Technician 30040 - Civil Engineering Technician 30061 - Drafter/CAD Operator I 30062 - Drafter/CAD Operator II 30063 - Drafter/CAD Operator III 30064 - Drafter/CAD Operator IV 30081 - Engineering Technician I 30082 - Engineering Technician II 30083 - Engineering Technician III 30084 - Engineering Technician IV 30085 - Engineering Technician V 30086 - Engineering Technician VI 30090 - Environmental Technician 30210 - Laboratory Technician 30240 - Mathematical Technician 30361 - Paralegal/Legal Assistant I 30362 - Paralegal/Legal Assistant II 30363 - Paralegal/Legal Assistant III 30364 - Paralegal/Legal Assistant IV 30390 - Photo-Optics Technician 30461 - Technical Writer I 30462 - Technical Writer II 30463 - Technical Writer III 30491 - Unexploded Ordnance (UXO) Technician I 30492 - Unexploded Ordnance (UXO) Technician II 30493 - Unexploded Ordnance (UXO) Technician III 30494 - Unexploded (UXO) Safety Escort 30495 - Unexploded (UXO) Sweep Personnel 30620 - Weather Observer, Combined Upper Air Or (see Surface Programs 30621 - Weather Observer, Senior (see 31000 - Transportation/Mobile Equipment Operation Occupations 31020 - Bus Aide 31030 - Bus Driver 31043 - Driver Courier 31260 - Parking and Lot Attendant 31290 - Shuttle Bus Driver 31310 - Taxi Driver 31361 - Truckdriver, Light 31362 - Truckdriver, Medium 31363 - Truckdriver, Heavy 31364 - Truckdriver, Tractor-Trailer 99000 - Miscellaneous Occupations 99030 - Cashier 99050 - Desk Clerk 99095 - Embalmer 99251 - Laboratory Animal Caretaker I 99252 - Laboratory Animal Caretaker II 99310 - Mortician 99410 - Pest Controller 99510 - Photofinishing Worker 99710 - Recycling Laborer 99711 - Recycling Specialist 99730 - Refuse Collector
+
+17.70 20.15 2) 2) 2) 35.15 24.24 26.69 15.81 18.94 21. 70 23.09 22.85 15.81 18.94 20.86 23.55 14.61 16.05 17.95 21. 89 26.36 31. 89 20.36 22.61 23.09 15.40 19.08 23.34 28.24 23.09 20.87 25.54 30.92 22.34 27.03 32.40 22.34 22.34 20.86 22.83 10.73 17.17 13.34 8.99 13.34 9.57 13.34 16.66 18.79 18.79 8.30 8.52 21. 58 10.94 12.20 23.30 17.07 12.14 11. 41 14.76 10.99
+
+2) 2)
+
+99810 99820 99830 99831 99832 99840 99841 99842
+
+-
+
+Sales Clerk School Crossing Guard Survey Party Chief Surveying Aide Surveying Technician Vending Machine Attendant Vending Machine Repairer Vending Machine Repairer Helper
+
+11.68 10.10 18.20 16.56 16.70 11.72 14.59 10.51
+
+ALL OCCUPATIONS
+
+LISTED ABOVE RECEIVE THE FOLLOWING
+
+BENEFITS:
+
+HEALTH & WELFARE:
+
+$3.35 per hour or $134.00 per week or $580.66 per month
+
+VACATION: 2 weeks paid vacation after 1 year of service with a contractor or successor; 3 weeks after 10 years, and 4 after 15 years. Length of service includes the whole span of continuous service with the present contractor or successor, wherever employed, and with the predecessor contractors in the performance of similar work at the same Federal facility. (Reg. 29 CFR 4.173) HOLIDAYS: A minimum of ten paid holidays per year: New Year's Day, Martin Luther King Jr. 's Birthday, Washington's Birthday, Memorial Day, Independence Day, Labor Day, Columbus Day, Veterans' Day, Thanksgiving Day, and Christmas Day. (A contractor may substitute for any of the named holidays another day off with pay in accordance with a plan communicated to the employees involved.) (See 29 CFR 4.174)
+
+THE OCCUPATIONS
+
+WHICH HAVE NUMBERED
+
+FOOTNOTES
+
+IN PARENTHESES
+
+RECEIVE THE FOLLOWING:
+
+1) COMPUTER EMPLOYEES: Under the SCA at section B(b), this wage determination does not apply to any employee who individually qualifies as a bona fide executive, administrative, or professional employee as defined in 29 C.F.R. Part 541. Because most Computer System Analysts and Computer Programmers who are compensated at a rate not less than $27.63 (or on a salary or fee basis at a rate not less than $455 per week) an hour would likely qualify as exempt computer professionals, (29 C.F.R. 541. 400) wage rates may not be listed on this wage determination for all occupations within those job families. In addition, because this wage determination may not list a wage rate for some or all occupations within those job families if the survey data indicates that the prevailing wage rate for the occupation equals or exceeds $27.63 per hour conformances may be necessary for certain nonexempt employees. For example, if an individual employee is nonexempt but nevertheless performs duties within the scope of one of the Computer Systems Analyst or Computer Programmer occupations for which this wage determination does not specify an SCA wage rate, then the wage rate for that employee must be conformed in accordance with the conformance procedures described in the conformance note included on this wage determination. Additionally, because job titles vary widely and change quickly in the computer industry, job titles are not determinative of the application of the computer professional exemption. Therefore, the exemption applies only to computer employees who satisfy the compensation requirements and whose primary duty consists of: (1) The application of systems analysis techniques and procedures, including consulting with users, to determine hardware, software or system functional specifications; (2) The design, development, documentation, analysis, creation, testing or modification of computer systems or programs, including prototypes, based on and related to user or system design specifications; (3) The design, documentation, testing, creation or modification of computer
+
+programs related to machine operating systems; or (4) A combination of the aforementioned duties, the performance requires the same level of skills. (29 C.F.R. 541.400).
+
+of which
+
+2) AIR TRAFFIC CONTROLLERS AND WEATHER OBSERVERS - NIGHT PAY & SUNDAY PAY: If you work at night as part of a regular tour of duty, you will earn a night differential and receive an additional 10% of basic pay for any hours worked between 6pm and 6am. If you are a full-time employed (40 hours a week) and Sunday is part of your regularly scheduled workweek, you are paid at your rate of basic pay plus a Sunday premium of 25% of your basic rate for each hour of Sunday work which is not overtime (i.e. occasional work on Sunday outside the normal tour of duty is considered overtime work).
+
+HAZARDOUS PAY DIFFERENTIAL: An 8 percent differential is applicable to employees employed in a position that represents a high degree of hazard when working with or in close proximity to ordinance, explosives, and incendiary materials. This includes work such as screening, blending, dying, mixing, and pressing of sensitive ordance, explosives, and pyrotechnic compositions such as lead azide, black powder and photoflash powder. All dry-house activities involving propellants or explosives. Demilitarization, modification, renovation, demolition, and maintenance operations on sensitive ordnance, explosives and incendiary materials. All operations involving regrading and cleaning of artillery ranges. A 4 percent differential is applicable to employees employed in a position that represents a low degree of hazard when working with, or in close proximity to ordance, (or employees possibly adjacent to) explosives and incendiary materials which involves potential injury such as laceration of hands, face, or arms of the employee engaged in the operation, irritation of the skin, minor burns and the like; minimal damage to immediate or adjacent work area or equipment being used. All operations involving, unloading, storage, and hauling of ordance, explosive, and incendiary ordnance material other than small arms ammunition. These differentials are only applicable to work that has been specifically designated by the agency for ordance, explosives, and incendiary material differential pay.
+
+** UNIFORM ALLOWANCE **
+If employees are required to wear uniforms in the performance of this contract (either by the terms of the Government contract, by the employer, by the state or local law, etc.), the cost of furnishing such uniforms and maintaining (by laundering or dry cleaning) such uniforms is an expense that may not be borne by an employee where such cost reduces the hourly rate below that required by the wage determination. The Department of Labor will accept payment in accordance with the following standards as compliance: The contractor or subcontractor is required to furnish all employees with an adequate number of uniforms without cost or to reimburse employees for the actual cost of the uniforms. In addition, where uniform cleaning and maintenance is made the responsibility of the employee, all contractors and subcontractors subject to this wage determination shall (in the absence of a bona fide collective bargaining agreement providing for a different amount, or the furnishing of contrary affirmative proof as to the actual cost), reimburse all employees for such cleaning and maintenance at a rate of $3.35 per week (or $.67 cents per day). However, in those instances where the uniforms furnished are made of "wash and wear" materials, may be routinely washed and dried with other personal garments, and do not require any special treatment such as dry cleaning, daily washing, or commercial laundering in order to meet the cleanliness or appearance standards set by the terms of the Government contract, by the contractor, by law, or by the nature of the work, there is no requirement that employees be reimbursed for uniform maintenance costs. The duties of employees under job titles listed are those described in the "Service Contract Act Directory of Occupations", Fifth Edition, April 2006, unless otherwise indicated. Copies of the Directory are available on the Internet. A
+
+links to the Directory may be found on the WHO home page at http://www.dol. gov/esa/whd/ or through the Wage Determinations On-Line (WOOL) Web site at http://wdol.gov/. REQUEST FOR AUTHORIZATION 1444 (SF 1444)} Conformance Process: OF ADDITIONAL CLASSIFICATION AND WAGE RATE {Standard Form
+
+The contracting officer shall require that any class of service employee which is not listed herein and which is to be employed under the contract (i.e., the work to be performed is not performed by any classification listed in the wage determination), be classified by the contractor so as to provide a reasonable relationship (i.e., appropriate level of skill comparison) between such unlisted classifications and the classifications listed in the wage determination. Such conformed classes of employees shall be paid the monetary wages and furnished the fringe benefits as are determined. Such conforming process shall be initiated by the contractor prior to the performance of contract work by such unlisted class(es) of employees. The conformed classification, wage rate, and/or fringe benefits shall be retroactive to the commencement date of the contract. {See Section 4.6 (C) (vi)} When multiple wage determinations are included in a contract, a separate SF 1444 should be prepared for each wage determination to which a class(es) is to be conformed. The process for preparing a conformance request is as follows: the need for a conformed
+
+1) When preparing the bid, the contractor identifies occupation(s) and computes a proposed rate(s).
+
+2) After contract award, the contractor prepares a written report listing in order proposed classification title(s), a Federal grade equivalency (FGE) for each proposed classification(s), job description(s), and rationale for proposed wage rate(s), including information regarding the agreement or disagreement of the authorized representative of the employees involved, or where there is no authorized representative, the employees themselves. This report should be submitted to the contracting officer no later than 30 days after such unlisted class(es) of employees performs any contract work. 3) The contracting officer reviews the proposed action and promptly submits a report of the action, together with the agency's recommendations and pertinent information including the position of the contractor and the employees, to the Wage and Hour Division, Employment Standards Administration, U.S. Department of Labor, for review. (See section 4.6 (b) (2) of Regulations 29 CFR Part 4). 4) Within 30 days of receipt, the Wage and Hour Division approves, modifies, or disapproves the action via transmittal to the agency contracting officer, or notifies the contracting officer that additional time will be required to process the request. 5) The contracting 6) The contractor Information officer transmits the Wage and Hour decision employees. must be submitted on SF 1444 or bond paper. to the contractor.
+
+informs the affected
+
+required by the Regulations
+
+When preparing a conformance request, the "Service Contract Act Directory of Occupations" (the Directory) should be used to compare job definitions to insure that duties requested are not performed by a classification already listed in the wage determination. Remember, it is not the job title, but the required tasks that determine whether a class is included in an established wage determination. Conformances may not be used to artificially split, combine, or subdivide classifications listed in the wage determination.
+
+

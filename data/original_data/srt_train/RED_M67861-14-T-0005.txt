@@ -1,0 +1,1853 @@
+
+|PROCUREMENT:  Time Reporting Software (SaaS) for TSO                                                                                                                                           |
+|Outcome                    |Performance                                                                    |Inspection                           |Incentive                                    |
+|                           |PWS/              |                                         |                   |                                     |Performance                                  |
+|Stakeholder                |SOO Para. #       |Performance standard and Acceptable      |Inspector          |Method and Frequency                 |Incentive                                    |
+|Outcome                    |                  |Quality Level (AQL)                      |                   |                                     |                                             |
+|Set-up Time                |N/A               |Implementation of the requirement shall  |COR                |01 JAN 2014, one-time evaluation     |Option exercise                              |
+|                           |                  |be complete and the vendor's             |                   |                                     |                                             |
+|                           |                  |website/server shall be fully functional |                   |                                     |                                             |
+|                           |                  |NLT 01 JAN 2014                          |                   |                                     |                                             |
+|Availability               |PWS               |Application will be available at a       |COR                |Random sampling from customer        |Option exercise                              |
+|                           |para 4(B)(1)      |minimum of 99% of the time.              |                   |location; individual complaints from |                                             |
+|                           |                  |                                         |                   |users                                |                                             |
+|Support                    |PWS               |Incident response available 24/7         |COR                |Random sampling from customer        |Option exercise                              |
+|                           |para 4(B)(4)      |                                         |                   |location; individual complaints from |                                             |
+|                           |                  |                                         |                   |users                                |                                             |
+|                           |                  |Provider will perform full back up of the|COR                |Random quarterly restore procedures  |Option exercise                              |
+|Data Backup                |PWS               |database each week and incremental back  |                   |performed to verify validity of      |                                             |
+|                           |Para 4(B)(6)      |up of changes each day.                  |                   |backup process.                      |                                             |
+|Deliverables               |PWS               |Monthly burn report; monthly incident    |COR                |Customer feedback on timely receipt  |Option exercise                              |
+|                           |Para 5            |report; and,  monthly uptime report      |                   |of reports                           |                                             |
+|                           |                  |provided.                                |                   |                                     |                                             |
+
+
+
+1.  Purpose.  This Quality Assurance Surveillance Plan (QASP) has been developed to provide the standard of surveillance for monitoring the Time
+Reporting Software as a Service (SaaS) contract for Technology Services Organization.  This QASP will provide a systematic approach for
+conducting contract surveillance.
+
+The Contracting Officer (CO) will appoint      TBD      as his/her Contracting Officer’s Representative (COR) for this contract. COR Contact
+information:  (XXX-XXX-XXXX)    __@usmc.mil.  As the COR,       TBD     will also serve as the Quality Assurance Evaluator (QAE) and will use
+this QASP to ensure the standards of the contract are being met.
+
+2.  Performance Standards.  The QASP provides a systematic method to evaluate the service the Contractor is required to furnish.  The COR will
+assess the Contractor’s performance to ensure the Contractor is performing up to the specified standards.  The performance standards for this
+Performance Work Statement (PWS) are stated in the Performance Requirements Summary (PRS) included in this QASP.
+
+3.  Management and Oversight.  The QASP is based on the premise that the Contractor and not the Government, is responsible for the management
+and any Quality Control action required to meet the terms of the contract.  The performance requirements recognize that the Contractor is not a
+perfect manager and that unforeseen requirements and uncontrollable problems do occur.  Good management and use of an adequate Quality Control
+Plan will allow the Contractor to operate within specific performance requirements.  QASPs are designed to be objective, fair and consistent in
+evaluating Contractor performance against the provided standards.
+
+4.  Acceptable Quality Levels (AQLs).  AQLs have been established in the PRS and provide performance standards that the Contractor will meet in
+performing the contract.  In the event the Contractor does not meet the established AQLs, the Contracting Officer has the right to exercise the
+negative incentives stated in this QASP.
+
+5.  Primary Method of Surveillance/Evaluation. Customer feedback (provided to the COR) will be the primary method of surveillance.  If the SaaS
+is not available or not working correctly, customers will report the issue to the vendor helpdesk, and the COR. The COR will follow-up with the
+vendor, and MARFORRES RCO.  The COR will also perform evaluation based random inspection (a sampling method where each unit of a population
+(e.g. trouble tickets, application availability, etc.) has an equal chance of being selected).  These two surveillance methods are anticipated
+to successfully mitigate technical performance risk associated with this contract.
+
+6.  Negative Incentives.  If any of the performance requirements do not meet the AQL identified  in the PRS table, the COR shall document the
+discrepancy (or discrepancies) and shall notify the Contractor, and the Contracting Officer, promptly.  When the performance is below the AQL
+standard, the Government may implement a negative incentive in not exercising the option.
+
+7.  Notification.  The COR will notify the Contracting Officer, in writing, of unacceptable quality levels.  The Contracting Officer will
+promptly provide written notification of discrepancies on a monthly basis, or immediately if the situation significantly affects the well-being
+of the project.  In the event services rendered are determined not to conform to the terms of the contract, the MARFORRES Contracting Officer
+may issue the contractor a corrective action request, and require identification of actions taken to correct the specific nonconformity.
+8.  Response.  The Contractor shall provide a written response to the cause and the corrective action to prevent recurrence within 10 working
+days after receipt of Contracting Officer’s notification.  The Contractor should cite specific quality assurance program procedures or new
+procedures instituted to prevent recurrence.
+
+9.  Records.  The COR will maintain contract surveillance files as directed by the Contracting Officer. Surveillance files will include, in
+part, the following documentation for this Firm-Fixed-Price contract:
+
+      a. COR designation and appointment letters
+
+
+      b. A copy of the contract and all contract modifications
+
+
+      c. QASP and any other tools, checklists, etc.
+
+      d. All correspondence including Contracting Officer notifications and the Contractor’s responses
+
+
+      e. Evidence of satisfactory performance provided by random sampling from customer location.
+
+
+      f. Evidence that all materials/equipment obtained under this contract are accounted for and remain in Government possession.
+
+      g. Quarterly technical reviews
+
+
+
+      h. Surveillance reports may be submitted in support of unacceptable performance identified during the performance period by the COR, or
+         when there is a significant change in performance that alters the assessment in one or more evaluation areas.
+
+
+
+
+10.  Ratings.  The following criteria will be used for performance evaluations:  Exceptional, Satisfactory, Marginal, or Unsatisfactory.  Upward
+or downward arrows may be used to indicate an improving or worsening trend insufficient to change to the assessment status.
+
+      a. Exceptional.  Indicates performance clearly exceeds contractual requirements.  The area of evaluation may contain a few minor problems
+      for which corrective action appears highly effective.
+
+      b. Satisfactory.  Indicates performance clearly meets contractual requirements.  The area of evaluation contains some minor problems for
+      which the corrective actions appear satisfactory.
+
+      c. Marginal.  Indicates performance meets contractual requirements.  The area of evaluation contains one or more serious problems for which
+      corrective actions have not yet been identified, appear only marginally effective, or have not been fully implemented.
+
+
+      d. Unsatisfactory.  Indicates the Contractor is in danger of not being able to satisfy contractual requirements and recovery is not likely
+      in a timely manner.  The area of evaluation contains one or more serious problems for which the corrective actions appear ineffective.
+
+
+11.   Documentation.  Documentation used and referenced to perform surveillance will consist of monthly reports, random sampling, and individual
+customer complaints.
+
+      a. Recording Observations.  Use a Surveillance Log(s) to record information on scheduled observations and deficiencies noted.  Each
+      observation is recorded on the log.  The documents then become a formal record for reference.  The Contractor is to be told each time a
+      deficiency is found during scheduled observations.  The COR makes a notation on the Surveillance Log of the date and time the deficiency
+      was discovered.
+
+
+      b. Potential Unacceptable Performance.  The COR must identify the specific service that is unacceptable and the possible causes, and ask a
+      number of questions which if answered, will probably pinpoint the source of the problem.
+
+
+      c. Documenting Unacceptable Performance.  The COR must attempt to resolve the problem with the Contractor.  The original log and the
+      attempted solution (along with an evaluation of results) are forwarded to the Contracting Officer by the COR.
+
+
+Based on the severity of the discrepancy and the success of the solution, the COR will notify the Contracting Officer.  The Contractor shall
+complete a response to the unacceptable evaluation if requested by the Contracting Officer or by its own choice.
+
+12.  Taking Action.
+
+
+      a. The COR may evaluate the Contractor’s performance and document any non-compliance, but only the Contracting Officer may take action
+      against the Contractor for an unacceptable rating.
+
+
+      b. When the Contractor’s performance is unacceptable and a formal action is required, the COR will evaluate the specific circumstances and
+      make a recommendation to the Contracting Officer as to what action shall be taken.
+
+
+
+13.  Documentation.  The COR retains a copy of all inspection schedules and surveillance activity logs during the course of the contract, and
+forwards them for inclusion in the contract file at the end of each year of performance.  Notwithstanding, when a specific service becomes
+unsatisfactory during a surveillance period, the inspection documentation supporting the contract discrepancy report is promptly forwarded to
+the Contracting Officer.
+
+14.  Performance Requirements Summary (PRS).  The performance standards for this PWS are stated in the PRS below.
+
+
+
+
+|PROCUREMENT:  Time Reporting Software (SaaS) for TSO                                                                                                        |
+|Outcome                |Performance                                                                  |Inspection                        |Incentive          |
+|                       |PWS/               |                                       |                |                                  |Performance        |
+|Stakeholder            |SOO Para. #        |Performance standard and Acceptable    |Inspector       |Method and Frequency              |Incentive          |
+|Outcome                |                   |Quality Level (AQL)                    |                |                                  |                   |
+|Set-up Time            |N/A                |Implementation of the requirement shall|COR             |01 JAN 2014, one-time evaluation  |Option exercise    |
+|                       |                   |be complete and the vendor's           |                |                                  |                   |
+|                       |                   |website/server shall be fully          |                |                                  |                   |
+|                       |                   |functional                             |                |                                  |                   |
+|                       |                   |NLT 01 JAN 2014                        |                |                                  |                   |
+|Availability           |PWS                |Application will be available at a     |COR             |Random sampling from customer     |Option exercise    |
+|                       |para 4(B)(1)       |minimum of 99% of the time.            |                |location; individual complaints   |                   |
+|                       |                   |                                       |                |from users                        |                   |
+|Support                |PWS                |Incident response available 24/7       |COR             |Random sampling from customer     |Option exercise    |
+|                       |para 4(B)(4)       |                                       |                |location; individual complaints   |                   |
+|                       |                   |                                       |                |from users                        |                   |
+|                       |                   |Provider will perform full back up of  |COR             |Random quarterly restore          |Option exercise    |
+|Data Backup            |PWS                |the database each week and incremental |                |procedures performed to verify    |                   |
+|                       |Para 4(B)(6)       |back up of changes each day.           |                |validity of backup process.       |                   |
+|Deliverables           |PWS                |Monthly burn report; monthly incident  |COR             |Customer feedback on timely       |Option exercise    |
+|                       |Para 5             |report; and,  monthly uptime report    |                |receipt of reports                |                   |
+|                       |                   |provided.                              |                |                                  |                   |
+
+
+
+
+
+Section SF 1449 - CONTINUATION SHEET
+
+ADDENDA
+
+
+This is a Request for Quotes for commercial Software as a Service Project Time Reporting System for the Marine Corps in accordance with the
+Performace Work Statement incorporated herein.  The government will solicit and award a single Firm-Fixed-Price contract using Simplified
+Acquisition Procedures in accordance with FAR Part 12, Acquisition of Commercial Items, and FAR Subpart 13.5, Test Program for Certain
+Commercial Items.
+
+
+INSTRUCTIONS TO OFFERORS
+      Addendum to FAR Clause 52.212-1
+
+       1. The Government will consider GSA schedules under FAR 8.4 should vendors submit GSA pricing in response to the synopsis.  Any conflicts
+          between this solicitation and the terms and conditions of the GSA contract shall be clearly identified in the Offeror’s quote.
+
+       2. Incumbent: Replicon, Inc.
+
+       3. Government is seeking quotes on brand name or equal products. Descriptive literature required with all offers quoting equal products.
+          Firms offering equal products must submit sufficient descriptive literature to permit the contracting agency to assess whether the
+          equal product meets all the salient characteristics specified in the solicitation.  The Government is not responsible for locating or
+          obtaining any information not identified in the offeror's response to the solicitation.
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0001           |                               |12                   |Months          |                               |                                       |
+|               |Replicon TimeBill - Brand name or equal                                                               |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |Time Keeping System                                                                                   |                                       |
+|               |550 seats required                                                                                    |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|               |MILSTRIP: M0009414RC00025                                                                             |                                       |
+|               |PURCHASE REQUEST NUMBER: M0009414RC00025                                                              |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0002           |                               |12                   |Months          |                               |                                       |
+|OPTION         |Option Year 1 - Replicon TimeBill                                                                     |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |Option Year - Brand name or equal                                                                     |                                       |
+|               |550 seats required                                                                                    |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|               |MILSTRIP: M0009414RC00025                                                                             |                                       |
+|               |PURCHASE REQUEST NUMBER: M0009414RC00025                                                              |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0003           |                               |12                   |Months          |                               |                                       |
+|OPTION         |Option Year 2 - Replicon TimeBill                                                                     |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |Option Year 2 - Brand name or equal                                                                   |                                       |
+|               |550 seats required                                                                                    |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|               |MILSTRIP: M0009414RC00025                                                                             |                                       |
+|               |PURCHASE REQUEST NUMBER: M0009414RC00025                                                              |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0004           |                               |1                    |Each            |                               |                                       |
+|               |Initial Configuration/Implementation                                                                  |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |Offerors shall include an itemized breakdown of all costs associated with setup, configuration, and   |                                       |
+|               |implementation.                                                                                       |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+STATEMENT OF WORK
+                                                                Statement of Work
+
+PROJECT TITLE:  SOFTWARE AS A SERVICE PROJECT TIME REPORTING SYSTEM FOR THE MARINE CORPS TECHNICAL SERVICES ORGANIZATION
+
+1.  background
+
+The Marine Corps Technology Services Organization develops and maintains Human Resource (HR) and Payroll applications that service both active
+and reserve Marines.  These critical applications are developed within strict CMMI level 3 standards.  All application changes are estimated for
+effort in all phases of the software development lifecycle (SDLC).  Actual hours are tracked per application change and compared against the
+estimated effort to provide burn reports to software development managers. Non-billable hours are also tracked to include training time, holiday
+hours, vacation and administrative time off.
+
+Project time reporting systems development is not a key competency of the TSO and is therefore not best suited to develop or maintain such a
+system.  Additionally, the accreditation and certification process timeline for software installed on Marine Corps hosted systems exceeds the
+cost of procuring a labor hours tracking system.    Procuring a Project Time Reporting system as a service is the most cost effective solution
+for the Marine Corps TSO project time reporting needs.
+
+A future requirement will be to utilize the Project Time Reporting System SaaS to track time off requests and overtime authorizations for the
+employees within the TSO.  The Project Time Reporting System SaaS will also be utilized to provide a payroll ready file to the DoD’s Civilian
+Payroll System (DCPS).
+
+2. OBJECTIVES AND SCOPE
+
+Objective.   Project Time Reporting Software as a Service (SaaS) will be a software service used by the Marine Corps TSO to report actual hours
+worked against SDLC tasks within software application changes and application support tasks.  The SaaS is hosted by a vendor where the Marine
+Corps TSO does not take ownership of the application and is instead purchasing access to the application via the internet.   The SaaS system
+will replace the features of the existing functionality.
+
+        1. Report Sustainment, Operational Support and Maintenance hours by SDLC and predefined tasks for  each  project,  by  AIS  and  funding
+           source and customer.
+
+
+        2. Provide the capability for supervisors to approve the hours input into the projects and  to  retrieve  burn  rate  reports  by  task,
+           project, AIS, funding source and customer.
+
+        3. Provide administrative functions to customize the tasks, projects, AIS, funding source, customers and TSO organization.
+
+
+        4. Provide the administrative functions to restrict user access to only specified task, projects or AIS.
+
+
+        5. Provide an adhoc data reporting function to allow supervisors and financial personnel to create custom reports.
+
+
+        6. Provide the administrative function to create approval and notification workflows for task, project and AIS hours.
+
+
+        7. Provide user capability to request leave (annual, sick, credit, etc) and overtime.
+
+
+        8. Provide capability for supervisors to approve leave and overtime requests.
+
+
+        9. Provide capability for users and supervisors to input or approve time from a mobile computing device.
+
+
+Scope.  The scope of this statement of work is to provide the requirements for a Project Time Reporting system with a SaaS time reporting system
+for the organization.
+
+3.  GENERAL REQUIREMENTS
+
+-  All deliverable will include the contractors name, address, and contract number.
+
+-  The Project Time Reporting SaaS will be accessed via a standard web browser.  For example,  Microsoft Internet Explorer version 7 or higher,
+Google Chrome or Firefox.  The systems will also be accessible via mobile computing devices using standard operating systems, such as Apple,
+Android or Blackberry devices.
+
+- All data in the SaaS must meet the minimum safeguards as directed by the Department of Defense (DoD) and Department of the Navy (DoN) data
+  security regulations.
+
+
+- All data in the SaaS environment must be backed up daily.  Any reported data corruption must be reconciled within 2 hours.
+
+
+- The SaaS must meet the government’s standards for handicap accessibility as outline in Section 508 of the Rehabilitation Act.
+
+
+- The SaaS must comply with Fair Labor Standards Act regulations for hours , overtime and time off recording and auditing.
+
+
+4.  SPECIFIC TASKS
+
+The service provider will meet the following specific tasks in the form of a Project Time Reporting System.
+
+   A. A summary of the products and services the vendor shall provide follows.
+
+
+        1)   Mechanism to securely transfer and load existing labor hours and related data elements into the Project Time Reporting SaaS.
+
+
+        2)   Mechanism to securely transfer and load existing leave balances and related data elements into a Project Time Reporting System SaaS
+
+
+        3)  Provide the Marine Corps with a configured Project Time Reporting SaaS and that is capable of meeting the reporting and  adhoc  query
+           needs outlined in the enumerated Functional and Technical requirements, Data Model and Use Cases.
+
+
+        4) Provide an administrative function to allow the Marine Corps to quickly add, edit and delete user profiles.
+
+
+        5) Provide an administrative function to assign users to teams, sections, branches, divisions, and organizations with the labor reporting
+           system.
+
+
+        6) Provide an administrative function to allow the assignment of users to their supervisor and alternate supervisor.
+
+
+        7) Provide the administrative function to control access to the views of data by task, project, AIS, funding source, customer or employee
+           type.
+
+
+        8) Provide the user the ability to report labor hours against a specific task, project, AIS, funding source and customer.
+
+
+        9) Provide the user the ability to replicate projects from previous time sheets.
+
+
+       10) Provide the user the ability to select from a customized list of their assigned tasks, projects, AIS, funding sources, and customers.
+
+
+       11) Provide the user the ability to assign a proxy user to complete their time sheet if they are unavailable.
+
+
+       12) Provide an administrative function to create an interface file in the format specified in the LRS Labor File layout which is  included
+           as an attachment.  The file must be in a comma-delimited or Excel format.
+
+
+       13) Provide an administrative function to categorize labor hours in chargeable and non-chargeable category.
+
+
+       14) Provide an administrative function to prevent modification of labor hours after the end of reporting period.
+
+       15) Provide the workflow to allow user to submit labor hours reported against a specific task, project, AIS, funding source  and  customer
+           for approval by the supervisor. The submitted labor report will prevent user modification of hours once submitted.
+
+
+       16) Provide the workflow to allow supervisors to approve labor hours reported against a specific task, project, AIS,  funding  source  and
+           customer. This approval will prevent user modification of hours during the reporting period.
+
+
+       17) Provide the workflow to allow supervisors to reject labor hours reported by a user against a  specific  task,  project,  AIS,  funding
+           source and customer. This rejected labor hours submission will be returned to the user for corrections.
+
+
+       18) Provide the ability to capture and create adhoc burn rate reports  by  task,  project,  AIS,  funding  source  and  customer  to  show
+           chargeable, non-chargeable labor categories detailed in the ERD data model.
+
+
+       19) Provide the capability to display burn rates as spreadsheets reports or in graphical charts.
+
+
+       20) Provide the capability to customize data fields to accommodate user defined data collection and reporting requirements.   For  example
+           specialized funding requirements.
+
+
+       21) Provide an administrative function to capture salary rates and create labor rates for each employee and the organization.
+
+
+       22) Provide a function to request and approve/reject off time requests and/or overtime authorizations.
+
+
+       23) Provide the ability to input time into the labor reporting system via a mobile computing device, for example a Blackberry Z10 phone or
+           Blackberry Playbook tablet.
+
+
+   B. Systems Requirements – The service provider will meet the following minimum system requirements.
+        1) Availability – The application will be available at a minimum of 99%.  Agreed upon maintenance windows and connectivity issues outside
+           of the service providers control will be excluded from availability calculation.  The application will have redundant equipment or
+           load balancing to increase survivability from equipment failures or natural disasters.  The service provider will have a document COOP
+           plan that will restore access to the application and data within 72 hours of a disruption.
+        2)  Upgrades – All application and database changes must be published with at least 30 days notice prior to implementing upgrades.  All
+           upgrades must tracked through a documented and disciplined change management and release management process which include regression
+           testing to minimize application disruption or data corruption.
+        3) Performance – The service provider will meet the agreed upon application response times of no more than 3 seconds between screen
+           refreshes.  The database will provide adhoc queries within the agreed upon response time of no more than 30 seconds response time for
+           adhoc queries.
+        4)  Support – Application support will be available 24 hours a day 7 days a week.  Incident response will also be available 24 hours a
+           day 7 days a week.  The service provider will use an incident reporting systems to track reported incidents.  The service provider
+           will provide escalation procedures for reported incidents to the customer.  The service provider will have a automated system to
+           notify the customer of service degradation or interruption.
+        5) Security – The application website will use SSL for both login and data transfer between the customer and the application.  The data
+           base will be encrypted.  The data center housing the customer’s data will have 24 hour a day 7 days a week secure access with fire
+           protection and suppression systems.  The data center will be monitored 24 hours a day 7 days a week and a log of all personnel
+           accessing the data center will be provide to the customer upon request.  All personnel with access to the customer’s data will sign a
+           non-disclosure statement. 
+        6)  Data backup – The service provider will perform a full back up of the database each week.  The service provider will perform an
+           incremental back up of that day’s changes to the database each day.  The current weekly and daily back up will be stored at least 30
+           miles away from the data center.  Restore procedures will be performed quarterly to verify the validity of the back up process and
+           media.
+
+5.  DELIVERABLES- The service provider will provide the following items prior to the implementation of the application.
+      (1)  Transfer of Marine Corps data via a secure file transfer to the service provider
+      (2)  Application configuration to meet the needs of the Marine Corps for data field names, approval work flows, and adhoc reporting.
+      (3) Application Administrator training to assist the administrators with the tasks of loading employees roles and permissions,
+establishing tasks, projects, AIS, funding source and customers.
+      (4) The training requirements are an online user and system administrator getting started guide that the users can access and become
+familiar with the system at their own pace.  The training should also include advanced topics such as how to create reports.
+            (a) Employee training to assist the user with accessing the application inputting hours and setting up tasks.
+           (b) Supervisor training to assist the supervisor with assigning tasks, approving reported hours and creating adhoc reports.
+
+Post implementation deliverables.
+     1) Monthly burn rate reports with the number of users, cost per seat and total monthly charges.
+     2) Monthly incident report that outlines incidents reported by the customer and their resolution.
+     3) Changes or updates to incident reporting procedures or points of contact.
+     4) 30-day notice of any software upgrades or database changes.
+     5) Monthly up time report.
+
+6.  RESERVED.
+
+7.  PERIOD OF PERFORMANCE
+
+One base year and two one-year option periods.
+
+8.  See attachment number (1) for the applicable Performance Requirements Summary.
+
+9.  See attachment number (2) for the applicable Quality Assurance Surveillance Plan.
+
+
+
+
+
+
+
+INSPECTION AND ACCEPTANCE TERMS
+
+Supplies/services will be inspected/accepted at:
+
+|CLIN      |INSPECT AT                                  |INSPECT BY           |ACCEPT AT                                   |ACCEPT BY            |
+|0001      |Destination                                 |Government           |Destination                                 |Government           |
+|0002      |Destination                                 |Government           |Destination                                 |Government           |
+|0003      |Destination                                 |Government           |Destination                                 |Government           |
+|0004      |Destination                                 |Government           |Destination                                 |Government           |
+
+
+
+
+
+DELIVERY INFORMATION
+
+|CLIN      |DELIVERY DATE                    |QUANTITY               |SHIP TO ADDRESS                                         |UIC           |
+|          |                                 |                       |                                                        |              |
+|0001      |POP 01-APR-2014 TO               |N/A                    |M00094 TSO                                              |M00094        |
+|          |31-MAR-2015                      |                       |ROLLAND FOX                                             |              |
+|          |                                 |                       |135 N PENNSYLVANIA ST.                                  |              |
+|          |                                 |                       |SUITE 2215                                              |              |
+|          |                                 |                       |INDIANAPOLIS IN 46204                                   |              |
+|          |                                 |                       |317-200-3315                                            |              |
+|          |                                 |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|0002      |POP 01-APR-2015 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |M00094        |
+|          |31-MAR-2016                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|0003      |POP 01-APR-2016 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |M00094        |
+|          |31-MAR-2017                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|0004      |01-APR-2014                      |1                      |(SAME AS PREVIOUS LOCATION)                             |M00094        |
+|          |                                 |                       |FOB:  Destination                                       |              |
+
+
+
+
+CLAUSES INCORPORATED BY REFERENCE
+
+
+|52.203-3                |Gratuities                                                                |APR 1984         |                       |
+|52.203-12               |Limitation On Payments To Influence Certain Federal Transactions          |OCT 2010         |                       |
+|52.204-2                |Security Requirements                                                     |AUG 1996         |                       |
+|52.204-4                |Printed or Copied Double-Sided on Postconsumer Fiber Content Paper        |MAY 2011         |                       |
+|52.204-7                |System for Award Management                                               |JUL 2013         |                       |
+|52.204-13               |System for Award Management Maintenance                                   |JUL 2013         |                       |
+|52.211-6                |Brand Name or Equal                                                       |AUG 1999         |                       |
+|52.212-1                |Instructions to Offerors--Commercial Items                                |JUL 2013         |                       |
+|52.212-4                |Contract Terms and Conditions--Commercial Items                           |SEP 2013         |                       |
+|52.214-21               |Descriptive Literature                                                    |APR 2002         |                       |
+|52.224-1                |Privacy Act Notification                                                  |APR 1984         |                       |
+|52.224-2                |Privacy Act                                                               |APR 1984         |                       |
+|52.233-2                |Service Of Protest                                                        |SEP 2006         |                       |
+|52.233-3                |Protest After Award                                                       |AUG 1996         |                       |
+|52.239-1                |Privacy or Security Safeguards                                            |AUG 1996         |                       |
+|52.242-17               |Government Delay Of Work                                                  |APR 1984         |                       |
+|52.247-34               |F.O.B. Destination                                                        |NOV 1991         |                       |
+|252.203-7000            |Requirements Relating to Compensation of Former DoD Officials             |SEP 2011         |                       |
+|252.203-7002            |Requirement to Inform Employees of Whistleblower Rights                   |SEP 2013         |                       |
+|252.204-7000            |Disclosure Of Information                                                 |AUG 2013         |                       |
+|252.204-7003            |Control Of Government Personnel Work Product                              |APR 1992         |                       |
+|252.204-7004 Alt A      |System for Award Management Alternate A                                   |MAY 2013         |                       |
+|252.204-7011            |Alternative Line Item Structure                                           |SEP 2011         |                       |
+|252.209-7001            |Disclosure of Ownership or Control by the Government of a Terrorist       |JAN 2009         |                       |
+|                        |Country                                                                   |                 |                       |
+|252.209-7004            |Subcontracting With Firms That Are Owned or Controlled By The Government  |DEC 2006         |                       |
+|                        |of a Terrorist Country                                                    |                 |                       |
+|252.225-7002            |Qualifying Country Sources As Subcontractors                              |DEC 2012         |                       |
+|252.232-7003            |Electronic Submission of Payment Requests and Receiving Reports           |JUN 2012         |                       |
+|252.232-7010            |Levies on Contract Payments                                               |DEC 2006         |                       |
+|252.243-7001            |Pricing Of Contract Modifications                                         |DEC 1991         |                       |
+|252.243-7002            |Requests for Equitable Adjustment                                         |DEC 2012         |                       |
+|252.244-7000            |Subcontracts for Commercial Items                                         |JUN 2013         |                       |
+|252.247-7023            |Transportation of Supplies by Sea                                         |JUN 2013         |                       |
+
+
+
+
+CLAUSES INCORPORATED BY FULL TEXT
+
+
+52.203-11     CERTIFICATION AND DISCLOSURE REGARDING PAYMENTS TO INFLUENCE CERTAIN FEDERAL TRANSACTIONS (SEP 2007)
+
+(a) Definitions. As used in this provision--``Lobbying contact'' has the meaning provided at 2 U.S.C. 1602(8). The terms ``agency,''
+``influencing or attempting to influence,'' ``officer or employee of an agency,'' ``person,'' ``reasonable compensation,'' and ``regularly
+employed'' are defined in the FAR clause of this solicitation entitled ``Limitation on Payments to Influence Certain Federal Transactions''
+(52.203-12).
+
+(b) Prohibition. The prohibition and exceptions contained in the FAR clause of this solicitation entitled ``Limitation on Payments to Influence
+Certain Federal Transactions'' (52.203-12) are hereby incorporated by reference in this provision.
+
+(c) Certification. The offeror, by signing its offer, hereby certifies to the best of its knowledge and belief that no Federal appropriated
+funds have been paid or will be paid to any person for influencing or attempting to influence an officer or employee of any agency, a Member of
+Congress, an officer or employee of Congress, or an employee of a Member of Congress on its behalf in connection with the awarding of this
+contract.
+
+(d) Disclosure. If any registrants under the Lobbying Disclosure Act of 1995 have made a lobbying contact on behalf of the offeror with respect
+to this contract, the offeror shall complete and submit, with its offer, OMB Standard Form LLL, Disclosure of Lobbying Activities, to provide
+the name of the registrants. The offeror need not report regularly employed officers or employees of the offeror to whom payments of reasonable
+compensation were made.
+
+(e) Penalty. Submission of this certification and disclosure is a prerequisite for making or entering into this contract imposed by 31 U.S.C.
+1352. Any person who makes an expenditure prohibited under this provision or who fails to file or amend the disclosure required to be filed or
+amended by this provision, shall be subject to a civil penalty of not less than $10,000, and not more than $100,000, for each such failure.
+
+(End of provision)
+
+
+
+52.212-2     EVALUATION--COMMERCIAL ITEMS (JAN 1999)
+
+
+(a) The Government will award a contract resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation
+will be most advantageous to the Government, price and other factors considered. The following factors, in descending order of importance, shall
+be used to evaluate offers:
+
+(i)   Technical Evaluation
+(ii)  Ability to meet delivery schedule
+(iii) Past Performance
+(iv) Price    
+
+Technical, ability to meet delivery schedule and past performance, when combined, are more important than price.
+
+
+(b) Options. The Government will evaluate offers for award purposes by adding the total price for all options to the total price for the basic
+requirement. The Government may determine that an offer is unacceptable if the option prices are significantly unbalanced. Evaluation of options
+shall not obligate the Government to exercise the option(s).
+
+(c) A written notice of award or acceptance of an offer, mailed or otherwise furnished to the successful offeror within the time for acceptance
+specified in the offer, shall result in a binding contract without further action by either party. Before the offer's specified expiration time,
+the Government may accept an offer (or part of an offer), whether or not there are negotiations after its receipt, unless a written notice of
+withdrawal is received before award.
+
+(End of provision)
+
+
+
+52.212-3     OFFEROR REPRESENTATIONS AND CERTIFICATIONS--COMMERCIAL ITEMS (NOV 2013)
+
+An offeror shall complete only paragraph (b) of this provision if the offeror has completed the annual representations and certifications
+electronically via http://www.acquisition.gov. If an offeror has not completed  the annual representations and certifications electronically at
+the System for Award Management (SAM) website, the offeror shall complete only paragraphs (c) through (o) of this provision.
+
+(a) Definitions. As used in this provision --
+
+“Economically disadvantaged women-owned small business (EDWOSB) Concern” means a small business concern that is at least 51 percent directly and
+unconditionally owned by, and the management and daily
+business operations of which are controlled by, one or more women who are citizens of the United States and who are economically disadvantaged
+in accordance with 13 CFR part 127. It automatically qualifies as a women-owned small business eligible under the WOSB Program.
+
+"Forced or indentured child labor" means all work or service-
+
+(1) Exacted from any person under the age of 18 under the menace of any penalty for its nonperformance and for which the worker does not offer
+himself voluntarily; or
+
+(2) Performed by any person under the age of 18 pursuant to a contract the enforcement of which can be accomplished by process or penalties.
+
+Inverted domestic corporation, as used in this section, means a foreign incorporated entity which is treated as an inverted domestic corporation
+under 6 U.S.C. 395(b), i.e., a corporation that used to be incorporated in the United States, or used to be a partnership in the United States,
+but now is incorporated in a foreign country, or is a subsidiary whose parent corporation is incorporated in a foreign country, that meets the
+criteria specified in 6 U.S.C. 395(b), applied in accordance with the rules and definitions of 6 U.S.C. 395(c). An inverted domestic corporation
+as herein defined does not meet the definition of an inverted domestic corporation as defined by the Internal Revenue Code at 26 U.S.C. 7874.
+
+Manufactured end product means any end product in Federal Supply Classes (FSC) 1000-9999, except--
+
+(1) FSC 5510, Lumber and Related Basic Wood Materials;
+
+(2) Federal Supply Group (FSG) 87, Agricultural Supplies;
+
+(3) FSG 88, Live Animals;
+
+(4) FSG 89, Food and Related Consumables;
+
+(5) FSC 9410, Crude Grades of Plant Materials;
+
+(6) FSC 9430, Miscellaneous Crude Animal Products, Inedible;
+
+(7) FSC 9440, Miscellaneous Crude Agricultural and Forestry Products;
+
+(8) FSC 9610, Ores;
+
+(9) FSC 9620, Minerals, Natural and Synthetic; and
+
+(10) FSC 9630, Additive Metal Materials.
+
+Place of manufacture means the place where an end product is assembled out of components, or otherwise made or processed from raw materials into
+the finished product that is to be provided to the Government. If a product is disassembled and reassembled, the place of reassembly is not the
+place of manufacture.
+
+Restricted business operations means business operations in Sudan that include power production activities, mineral extraction activities, oil-
+related activities, or the production of military equipment, as those terms are defined in the Sudan Accountability and Divestment Act of 2007
+(Pub. L. 110-174). Restricted business operations do not include business operations that the person (as that term is defined in Section 2 of
+the Sudan Accountability and Divestment Act of 2007) conducting the business can demonstrate--
+
+(1) Are conducted under contract directly and exclusively with the regional government of southern Sudan;
+
+(2) Are conducted pursuant to specific authorization from the Office of Foreign Assets Control in the Department of the Treasury, or are
+expressly exempted under Federal law from the requirement to be conducted under such authorization;
+
+(3) Consist of providing goods or services to marginalized populations of Sudan;
+
+(4) Consist of providing goods or services to an internationally recognized peacekeeping force or humanitarian organization;
+
+(5) Consist of providing goods or services that are used only to promote health or education; or
+
+(6) Have been voluntarily suspended.
+
+Sensitive technology--
+
+(1) Means hardware, software, telecommunications equipment, or any other technology that is to be used specifically--
+
+(i) To restrict the free flow of unbiased information in Iran; or
+
+(ii) To disrupt, monitor, or otherwise restrict speech of the people of Iran; and
+
+(2) Does not include information or informational materials the export of which the President does not have the authority to regulate or
+prohibit pursuant to section 203(b)(3) of the International Emergency Economic Powers Act (50 U.S.C. 1702(b)(3)).
+
+Service-disabled veteran-owned small business concern--
+
+(1) Means a small business concern--
+
+(i) Not less than 51 percent of which is owned by one or more service-disabled veterans or, in the case of any publicly owned business, not less
+than 51 percent of the stock of which is owned by one or more service-disabled veterans; and
+
+(ii) The management and daily business operations of which are controlled by one or more service-disabled veterans or, in the case of a service-
+disabled veteran with permanent and severe disability, the spouse or permanent caregiver of such veteran.
+
+(2) Service-disabled veteran means a veteran, as defined in 38 U.S.C. 101(2), with a disability that is service-connected, as defined in 38
+U.S.C. 101(16).
+
+"Small business concern" means a concern, including its affiliates, that is independently owned and operated, not dominant in the field of
+operation in which it is bidding on Government contracts, and qualified as a small business under the criteria in 13 CFR Part 121 and size
+standards in this solicitation.
+
+Subsidiary means an entity in which more than 50 percent of the entity is owned--
+
+(1) Directly by a parent corporation; or
+
+(2) Through another subsidiary of a parent corporation.
+
+Veteran-owned small business concern means a small business concern--
+
+(1) Not less than 51 percent of which is owned by one or more veterans (as defined at 38 U.S.C. 101(2)) or, in the case of any publicly owned
+business, not less than 51 percent of the stock of which is owned by one or more veterans; and
+
+(2) The management and daily business operations of which are controlled by one or more veterans.
+
+"Women-owned business concern" means a concern which is at least 51 percent owned by one or more women; or in the case of any publicly owned
+business, at least 51 percent of the stock of which is owned by one or more women; and whose management and daily business operations are
+controlled by one or more women.
+
+"Women-owned small business concern" means a small business concern--
+
+(1) That is at least 51 percent owned by one or more women or, in the case of any publicly owned business, at least 51 percent of its stock is
+owned by one or more women; or
+
+(2) Whose management and daily business operations are controlled by one or more women.
+
+Women-owned small business (WOSB) concern eligible under the WOSB Program (in accordance with 13 CFR part 127)”, means a small business concern
+that is at least 51 percent directly and unconditionally owned by, and the management and daily business operations of which are controlled by,
+one or more women who are citizens of the United States.
+
+(b) (1) Annual Representations and Certifications. Any changes provided by the offeror in paragraph (b)(2) of this provision do not
+automatically change the representations and certifications posted electronically on the SAM website.
+
+(2) The offeror has completed the annual representations and certifications electronically via the SAM website accessed through
+https://www.acquisition.gov. After reviewing the SAM database information, the offeror verifies by submission of this offer that the
+representations and certifications currently posted electronically at FAR 52.212-3, Offeror Representations and Certifications--Commercial
+Items, have been entered or updated in the last 12 months, are current, accurate, complete, and applicable to this solicitation (including the
+business size standard applicable to the NAICS code referenced for this solicitation), as of the date of this offer and are incorporated in this
+offer by reference (see FAR 4.1201), except for paragraphs ----------.
+
+[Offeror to identify the applicable paragraphs at (c) through (o) of this provision that the offeror has completed for the purposes of this
+solicitation only, if any.) These amended representation(s) and/or certification(s) are also incorporated in this offer and are current,
+accurate, and complete as of the date of this offer. Any changes provided by the offeror are applicable to this solicitation only, and do not
+result in an update to the representations and certifications posted electronically on ORCA.]
+
+(c) Offerors must complete the following representations when the resulting contract will be performed in the United States or its outlying
+areas. Check all that apply.
+
+(1) Small business concern. The offeror represents as part of its offer that it (  ) is, (  ) is not a small business concern.
+
+(2) Veteran-owned small business concern. (Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of
+this provision.) The offeror represents as part of its offer that it ( ___   ) is, ( ___   ) is not a veteran-owned small business concern.
+
+(3) Service-disabled veteran-owned small business concern. (Complete only if the offeror represented itself as a veteran-owned small business
+concern in paragraph (c)(2) of this provision.) The offeror represents as part of its offer that it ( ___    ) is, (   ___  ) is not a service-
+disabled veteran-owned small business concern.
+
+(4) Small disadvantaged business concern. (Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of
+this provision.) The offeror represents, for general statistical purposes, that it ( ___   ) is, ( ___   )  is not a small disadvantaged
+business concern as defined in 13 CFR 124.1002.
+
+(5) Women-owned small business concern. (Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this
+provision.) The offeror represents that it (  ) is, (  )  is not a women-owned small business concern.
+
+Note to paragraphs (c)(8) and (9): Complete paragraphs (c)(8) and (c)(9) only if this solicitation is expected to exceed the simplified
+acquisition threshold.
+
+(6) WOSB concern eligible under the WOSB Program. [Complete only if the offeror represented itself as a women-owned small business concern in
+paragraph (c)(5) of this provision.] The offeror represents that--
+
+(i) It [ ___  ] is, [ ___   ] is not a WOSB concern eligible under the WOSB Program, has provided all the required documents to the WOSB
+Repository, and no change in circumstances or adverse decisions have
+been issued that affects its eligibility; and
+
+(ii) It [ ___  ballot] is, [ ___  ballot] is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation
+in paragraph (c)(6)(i) of this provision is accurate for each WOSB concern eligible under the WOSB Program participating in the joint venture.
+[The offeror shall enter the name or names of the WOSB concern eligible under the WOSB Program and other small businesses that are participating
+in the joint venture: ----------.] Each WOSB concern eligible under the WOSB Program participating in the joint venture shall submit a separate
+signed copy of the WOSB representation.
+
+(7) Economically disadvantaged women-owned small business (EDWOSB) concern. [Complete only if the offeror represented itself as a WOSB concern
+eligible under the WOSB Program in (c)(6) of this provision.] The offeror represents that--
+
+(i) It [ ___  ballot] is, [ ___  ballot] is not an EDWOSB concern, has provided all the required documents to the WOSB Repository, and no change
+in circumstances or adverse decisions have been issued that affects its eligibility; and
+
+(ii) It [ ___  ballot] is, [ ___  ballot] is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation
+in paragraph (c)(7)(i) of this provision is accurate for each EDWOSB concern participating in the joint venture. [The offeror shall enter the
+name or names of the EDWOSB concern and
+other small businesses that are participating in the joint venture: ----------.] Each EDWOSB concern participating in the joint venture shall
+submit a separate signed copy of the EDWOSB representation.
+
+(8) Women-owned business concern (other than small business concern). (Complete only if the offeror is a women-owned business concern and did
+not represent itself as a small business concern in paragraph (c)(1) of this provision.) The offeror represents that it ( ___   ) is, a women-
+owned business concern.
+
+(9) Tie bid priority for labor surplus area concerns. If this is an invitation for bid, small business offerors may identify the labor surplus
+areas in which costs to be incurred on account of manufacturing or production (by offeror or first-tier subcontractors) amount to more than 50
+percent of the contract price:
+
+_____________________________________________
+
+
+(10) (Complete only if the solicitation contains the clause at FAR 52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged
+Business Concerns or FAR 52.219-25, Small Disadvantaged Business Participation Program-Disadvantaged Status and Reporting, and the offeror
+desires a benefit based on its disadvantaged status.)
+
+(i) General. The offeror represents that either--
+
+(A) It ( ___   ) is, ( ___   ) is not certified by the Small Business Administration as a small disadvantaged business concern and identified,
+on the date of this representation, as a certified small disadvantaged business concern in the SAM Dynamic Small Business Search database
+maintained by the Small Business Administration, and that no material change in disadvantaged ownership and control has occurred since its
+certification, and, where the concern is owned by one or more individuals claiming disadvantaged status, the net worth of each individual upon
+whom the certification is based does not exceed $750,000 after taking into account the applicable exclusions set forth at 13 CFR 124.104(c)(2);
+or
+
+(B) It ( ___   ) has, ( ___   ) has not submitted a completed application to the Small Business Administration or a Private Certifier to be
+certified as a small disadvantaged business concern in accordance with 13 CFR 124, Subpart B, and a decision on that application is pending, and
+that no material change in disadvantaged ownership and control has occurred since its application was submitted.
+
+(ii) Joint Ventures under the Price Evaluation Adjustment for Small Disadvantaged Business Concerns. The offeror represents, as part of its
+offer, that it is a joint venture that complies with the requirements in 13 CFR 124.1002(f) and that the representation in paragraph (c)(10)(i)
+of this provision is accurate for the small disadvantaged business concern that is participating in the joint venture. (The offeror shall enter
+the name of the small disadvantaged business concern that is participating in the joint venture: ____________.)
+
+(11) HUBZone small business concern. (Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this
+provision.) The offeror represents, as part of its offer, that--
+
+(i) It [ ___   ] is, [ ___   ] is not a HUBZone small business concern listed, on the date of this representation, on the List of Qualified
+HUBZone Small Business Concerns maintained by the Small Business Administration, and no material changes in ownership and control, principal
+office, or HUBZone employee percentage have occurred since it was certified in accordance with 13 CFR Part 126; and
+
+(ii) It [ ___   ] is, [ ___   ] is not a HUBZone joint venture that complies with the requirements of 13 CFR Part 126, and the representation in
+paragraph (c)(11)(i) of this provision is accurate for each HUBZone small business concern participating in the HUBZone joint venture. [The
+offeror shall enter the names of each of the HUBZone small business concerns participating in the HUBZone joint venture: _______.] Each HUBZone
+small business concern participating in the HUBZone joint venture shall submit a separate
+signed copy of the HUBZone representation.
+
+(d) Certifications and representations required to implement provisions of Executive Order 11246--
+
+(1) Previous Contracts and Compliance. The offeror represents that--
+
+(i) It ( ___   ) has, ( ___   ) has not, participated in a previous contract or subcontract subject either to the Equal Opportunity clause of
+this solicitation, the and
+
+(ii) It ( ___    ) has, ( ___   ) has not, filed all required compliance reports.
+
+(2) Affirmative Action Compliance. The offeror represents that--
+
+(i) It ( ___   ) has developed and has on file, ( ___   ) has not developed and does not have on file, at each establishment, affirmative action
+programs required by rules and regulations of the Secretary of Labor (41 CFR Subparts 60-1 and 60-2), or
+
+(ii) It ( ___   ) has not previously had contracts subject to the written affirmative action programs requirement of the rules and regulations
+of the Secretary of Labor.
+
+(e) Certification Regarding Payments to Influence Federal Transactions (31 U.S.C. 1352). (Applies only if the contract is expected to exceed
+$150,000.) By submission of its offer, the offeror certifies to the best of its knowledge and belief that no Federal appropriated funds have
+been paid or will be paid to any person for influencing or attempting to influence an officer or employee of any agency, a Member of Congress,
+an officer or employee of Congress or an employee of a Member of Congress on his or her behalf in connection with the award of any resultant
+contract. If any registrants under the Lobbying Disclosure Act of 1995 have made a lobbying contact on behalf of the offeror with respect to
+this contract, the offeror shall complete and submit, with its offer, OMB Standard Form LLL, Disclosure of Lobbying Activities, to provide the
+name of the registrants. The offeror need not report regularly employed officers or employees of the offeror to whom payments of reasonable
+compensation were made.
+
+(f) Buy American Act Certificate. (Applies only if the clause at Federal Acquisition Regulation (FAR) 52.225-1, Buy American Act --Supplies, is
+included in this solicitation.)
+
+(1) The offeror certifies that each end product, except those listed in paragraph (f)(2) of this provision, is a domestic end product and that
+for other than COTS items, the offeror has considered components of unknown origin to have been mined, produced, or manufactured outside the
+United States. The offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as
+domestic end products, i.e., an end product that is not a COTS item and does not meet the component test in paragraph (2) of the definition of
+“domestic end product.” The terms “commercially available off-the-shelf (COTS) item,” “component,” “domestic end product,” “end product,”
+“foreign end product,” and “United States” are defined in the clause of this solicitation entitled “Buy American Act--Supplies.”
+(2) Foreign End Products:
+
+|Line Item No.      |Country of Origin        |
+| ___               | ___                     |
+| ___               | ___                     |
+| ___               | ___                     |
+
+(List as necessary)
+
+(3) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25.
+
+(g)(1) Buy American Act--Free Trade Agreements--Israeli Trade Act Certificate. (Applies only if the clause at FAR 52.225-3, Buy American Act--
+Free Trade Agreements--Israeli Trade Act, is included in this solicitation.)
+
+(i) The offeror certifies that each end product, except those listed in paragraph (g)(1)(ii) or (g)(1)(iii) of this provision, is a domestic end
+product and that for other than COTS items, the offeror has considered components of unknown origin to have been mined, produced, or
+manufactured outside the United States. The terms ``Bahrainian, Moroccan, Omani, Panamanian, or Peruvian end product,'' ``commercially available
+off-the-shelf (COTS) item,'' ``component,'' ``domestic end product,'' ``end product,'' ``foreign end product,'' ``Free Trade Agreement
+country,'' ``Free Trade Agreement country end product,'' ``Israeli end product,'' and ``United States'' are defined in the clause of this
+solicitation entitled ``Buy American Act--Free Trade Agreements--Israeli Trade Act.''
+
+(ii) The offeror certifies that the following supplies are Free Trade Agreement country end products (other than Bahrainian, Moroccan, Omani,
+Panamanian, or Peruvian end products) or Israeli end products as defined in the clause of this solicitation entitled ``Buy American Act--Free
+Trade Agreements--Israeli Trade Act'':
+
+Free Trade Agreement Country End Products (Other than Bahrainian, Moroccan, Omani, Panamanian, or Peruvian End Products) or Israeli End
+Products:
+
+|Line Item No.      |Country of Origin        |
+| ___               | ___                     |
+| ___               | ___                     |
+| ___               | ___                     |
+
+[List as necessary]
+
+(iii) The offeror shall list those supplies that are foreign end products (other than those listed in paragraph (g)(1)(ii) of this provision) as
+defined in the clause of this solicitation entitled "Buy American Act-Free Trade Agreements-Israeli Trade Act." The offeror shall list as other
+foreign end products those end products manufactured in the United States that do not qualify as domestic end products, i.e., an end product
+that is not a COTS item and does not meet the component test in paragraph (2) of the definition of “domestic end product.”
+Other Foreign End Products:
+|Line Item No.      |Country of Origin        |
+| ___               | ___                     |
+| ___               | ___                     |
+| ___               | ___                     |
+
+
+[List as necessary]
+
+(iv) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25.
+(2) Buy American Act-Free Trade Agreements-Israeli Trade Act Certificate, Alternate I (Jan 2004). If Alternate I to the clause at FAR 52.225-3
+is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision:
+
+(g)(1)(ii) The offeror certifies that the following supplies are Canadian end products as defined in the clause of this solicitation entitled
+"Buy American Act-Free Trade Agreements-Israeli Trade Act":
+Canadian End Products:
+|Line Item No.     |
+| ___              |
+| ___              |
+| ___              |
+
+
+[List as necessary]
+
+(3) Buy American Act-Free Trade Agreements-Israeli Trade Act Certificate, Alternate II (Jan 2004). If Alternate II to the clause at FAR 52.225-3
+is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision:
+
+(g)(1)(ii) The offeror certifies that the following supplies are Canadian end products or Israeli end products as defined in the clause of this
+solicitation entitled "Buy American Act-Free Trade Agreements-Israeli Trade Act":
+Canadian or Israeli End Products:
+|Line Item No.      |Country of Origin        |
+| ___               | ___                     |
+| ___               | ___                     |
+| ___               | ___                     |
+
+
+[List as necessary]
+
+(4) Buy American Act--Free Trade Agreements--Israeli Trade Act Certificate, Alternate III. If Alternate III to the clause at FAR 52.225-3 is
+included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision:
+
+ (g)(1)(ii) The offeror certifies that the following supplies are Free Trade Agreement country end products (other than Bahrainian, Korean,
+Moroccan, Omani, Panamanian, or Peruvian end products) or Israeli end products as defined in the clause of this solicitation entitled ``Buy
+American Act--Free Trade Agreements--Israeli Trade Act'':
+
+Free Trade Agreement Country End Products (Other than Bahrainian, Korean, Moroccan, Omani, Panamanian, or Peruvian End Products) or Israeli End
+Products:
+
+
+|Line Item No.      |Country of Origin        |
+| ___               | ___                     |
+| ___               | ___                     |
+| ___               | ___                     |
+
+
+[List as necessary]
+
+(5) Trade Agreements Certificate. (Applies only if the clause at FAR 52.225-5, Trade Agreements, is included in this solicitation.)
+
+(i) The offeror certifies that each end product, except those listed in paragraph (g)(5)(ii) of this provision, is a U.S.-made or designated
+country end product, as defined in the clause of this solicitation entitled ``Trade Agreements''.
+
+(ii) The offeror shall list as other end products those end products that are not U.S.-made or designated country end products.
+
+ Other End Products:
+
+
+|Line Item No.      |Country of Origin        |
+| ___               | ___                     |
+| ___               | ___                     |
+| ___               | ___                     |
+
+
+                           [List as necessary]
+
+
+(iii) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25. For line items covered by the WTO GPA,
+the Government will evaluate offers of U.S.-made or designated
+country end products without regard to the restrictions of the Buy American Act. The Government will consider for award only offers of U.S.-made
+or designated country end products unless the Contracting
+Officer determines that there are no offers for such products or that the offers for such products are insufficient to fulfill the requirements
+of the solicitation.
+
+(h) Certification Regarding Responsibility Matters (Executive Order 12689). (Applies only if the contract value is expected to exceed the
+simplified acquisition threshold.) The offeror certifies, to the best of its knowledge and belief, that --
+
+(1) The offeror and/or any of its principals ( ___    ) are, ( ___   ) are not presently debarred, suspended, proposed for debarment, or
+declared ineligible for the award of contracts by any Federal agency,
+
+(2) ( ___   ) Have, ( ___   ) have not, within a three-year period preceding this offer, been convicted of or had a civil judgment rendered
+against them for: commission of fraud or a criminal offense in connection with obtaining, attempting to obtain, or performing a Federal, state
+or local government contract or subcontract; violation of Federal or state antitrust statutes relating to the submission of offers; or
+commission of embezzlement, theft, forgery, bribery, falsification or destruction of records, making false statements, tax evasion, violating
+Federal criminal tax laws, or receiving stolen property; and
+
+(3) ( ___   ) Are, ( ___   ) are not presently indicted for, or otherwise criminally or civilly charged by a Government entity with, commission
+of any of these offenses enumerated in paragraph (h)(2) of this clause; and
+
+(4) (   ___  ) Have, ( ___   ) have not, within a three-year period preceding this offer, been notified of any delinquent Federal taxes in an
+amount that exceeds $3,000 for which the liability remains unsatisfied.
+
+(i) Taxes are considered delinquent if both of the following criteria apply:
+
+(A) The tax liability is finally determined. The liability is finally determined if it has been assessed. A liability is not finally determined
+if there is a pending administrative or judicial challenge. In the case of a judicial challenge to the liability, the liability is not finally
+determined until all judicial appeal rights have been exhausted.
+
+(B) The taxpayer is delinquent in making payment. A taxpayer is delinquent if the taxpayer has failed to pay the tax liability when full payment
+was due and required. A taxpayer is not delinquent in cases where enforced collection action is precluded.
+
+(ii) Examples.
+
+(A) The taxpayer has received a statutory notice of deficiency, under I.R.C. Sec.  6212, which entitles the taxpayer to seek Tax Court review of
+a proposed tax deficiency. This is not a delinquent tax because it is not a final tax liability. Should the taxpayer seek Tax Court review, this
+will not be a final tax liability until the taxpayer has exercised all judicial appeal rights.
+
+(B) The IRS has filed a notice of Federal tax lien with respect to an assessed tax liability, and the taxpayer has been issued a notice under
+I.R.C. Sec.  6320 entitling the taxpayer to request a hearing with the IRS Office of Appeals contesting the lien filing, and to further appeal
+to the Tax Court if the IRS determines to sustain the lien filing. In the course of the hearing, the taxpayer is entitled to contest the
+underlying tax liability because the taxpayer has had no prior opportunity to contest the liability. This is not a delinquent tax because it is
+not a final tax liability. Should the taxpayer seek tax court review, this will not be a final tax liability until the taxpayer has exercised
+all judicial appeal rights.
+
+(C) The taxpayer has entered into an installment agreement pursuant to I.R.C. Sec.  6159. The taxpayer is making timely payments and is in full
+compliance with the agreement terms. The taxpayer is not delinquent because the taxpayer is not currently required to make full payment.
+
+(D) The taxpayer has filed for bankruptcy protection. The taxpayer is not delinquent because enforced collection action is stayed under 11
+U.S.C. 362 (the Bankruptcy Code).
+
+
+(i) Certification Regarding Knowledge of Child Labor for Listed End Products (Executive Order 13126). [The Contracting Officer must list in
+paragraph (i)(1) any end products being acquired under this solicitation that are included in the List of Products Requiring Contractor
+Certification as to Forced or Indentured Child Labor, unless excluded at 22.1503(b).]
+
+(1) Listed end products.
+
+
+|Listed End Product                         |Listed Countriesof Origin                                         |
+| ___                                       | ___                                                              |
+| ___                                       | ___                                                              |
+| ___                                       | ___                                                              |
+
+(2) Certification. [If the Contracting Officer has identified end products and countries of origin in paragraph (i)(1) of this provision, then
+the offeror must certify to either (i)(2)(i) or (i)(2)(ii) by checking the appropriate block.]
+
+[  ___   ] (i) The offeror will not supply any end product listed in paragraph (i)(1) of this provision that was mined, produced, or
+manufactured in the corresponding country as listed for that product.
+
+[  ___   ] (ii) The offeror may supply an end product listed in paragraph (i)(1) of this provision that was mined, produced, or manufactured in
+the corresponding country as listed for that product. The offeror certifies that it has made a good faith effort to determine whether forced or
+indentured child labor was used to mine, produce, or manufacture any such end product furnished under this contract. On the basis of those
+efforts, the offeror certifies that it is not aware of any such use of child labor.
+(j) Place of manufacture. (Does not apply unless the solicitation is predominantly for the acquisition of manufactured end products.) For
+statistical purposes only, the offeror shall indicate whether the place of manufacture of the end products it expects to provide in response to
+this solicitation is predominantly—
+
+(1) ( ___   ) In the United States (Check this box if the total anticipated price of offered end products manufactured in the United States
+exceeds the total anticipated price of offered end products manufactured outside the United States); or
+
+(2) ( ___   ) Outside the United States.
+
+
+(j) Place of manufacture. (Does not apply unless the solicitation is predominantly for the acquisition of manufactured end products.) For
+statistical purposes only, the offeror shall indicate whether the place of manufacture of the end products it expects to provide in response to
+this solicitation is predominantly--
+
+(1) ( ___   ) In the United States (Check this box if the total anticipated price of offered end products manufactured in the United States
+exceeds the total anticipated price of offered end products manufactured outside the United States); or
+
+(2) ( ___   ) Outside the United States.
+
+(k) Certificates regarding exemptions from the application of the Service Contract Act. (Certification by the offeror as to its compliance with
+respect to the contract also constitutes its certification as to compliance by its subcontractor if it subcontracts out the exempt services.)
+
+
+[The contracting officer is to check a box to indicate if paragraph (k)(1) or (k)(2) applies.]
+
+[  ___   ] (1) Maintenance, calibration, or repair of certain equipment as described in FAR 22.1003-4(c)(1). The offeror ( ___   ) does ( ___
+) does not certify that—
+
+(i) The items of equipment to be serviced under this contract are used regularly for other than Governmental purposes and are sold or traded by
+the offeror (or subcontractor in the case of an exempt subcontract) in substantial quantities to the general public in the course of normal
+business operations;
+
+(ii) The services will be furnished at prices which are, or are based on, established catalog or market prices (see FAR 22.1003-4(c)(2)(ii)) for
+the maintenance, calibration, or repair of such equipment; and
+
+(iii) The compensation (wage and fringe benefits) plan for all service employees performing work under the contract will be the same as that
+used for these employees and equivalent employees servicing the same equipment of commercial customers.
+
+[  ___   ] (2) Certain services as described in FAR 22.1003-4(d)(1). The offeror ( ___   ) does ( ___   ) does not certify that—
+
+(i) The services under the contract are offered and sold regularly to non-Governmental customers, and are provided by the offeror (or
+subcontractor in the case of an exempt subcontract) to the general public in substantial quantities in the course of normal business operations;
+
+
+(ii) The contract services will be furnished at prices that are, or are based on, established catalog or market prices (see FAR 22.1003-
+4(d)(2)(iii));
+
+(iii) Each service employee who will perform the services under the contract will spend only a small portion of his or her time (a monthly
+average of less than 20 percent of the available hours on an annualized basis, or less than 20 percent of available hours during the contract
+period if the contract period is less than a month) servicing the Government contract; and
+(iv) The compensation (wage and fringe benefits) plan for all service employees performing work under the contract is the same as that used for
+these employees and equivalent employees servicing commercial customers.
+
+
+(3) If paragraph (k)(1) or (k)(2) of this clause applies—
+
+(i) If the offeror does not certify to the conditions in paragraph (k)(1) or (k)(2) and the Contracting Officer did not attach a Service
+Contract Act wage determination to the solicitation, the offeror shall notify the Contracting Officer as soon as possible; and
+
+(ii) The Contracting Officer may not make an award to the offeror if the offeror fails to execute the certification in paragraph (k)(1) or
+(k)(2) of this clause or to contact the Contracting Officer as required in paragraph (k)(3)(i) of this clause.
+
+(l) Taxpayer Identification Number (TIN) (26 U.S.C. 6109, 31 U.S.C. 7701). (Not applicable if the offeror is required to provide this
+information to the SAM database to be eligible for award.)
+
+(1) All offerors must submit the information required in paragraphs (l)(3) through (l)(5) of this provision to comply with debt collection
+requirements of 31 U.S.C. 7701(c) and 3325(d), reporting requirements of 26 U.S.C. 6041, 6041A, and 6050M, and implementing regulations issued
+by the Internal Revenue Service (IRS).
+
+(2) The TIN may be used by the Government to collect and report on any delinquent amounts arising out of the offeror's relationship with the
+Government (31 U.S.C. 7701(c)(3)). If the resulting contract is subject to the payment reporting requirements described in FAR 4.904, the TIN
+provided hereunder may be matched with IRS records to verify the accuracy of the offeror's TIN.
+
+(3) Taxpayer Identification Number (TIN).
+
+( ___   ) TIN: --------------------.
+
+( ___   ) TIN has been applied for.
+
+( ___   ) TIN is not required because:
+
+( ___   ) Offeror is a nonresident alien, foreign corporation, or foreign partnership that does not have income effectively connected with the
+conduct of a trade or business in the United States and does not have an office or place of business or a fiscal paying agent in the United
+States;
+
+( ___   ) Offeror is an agency or instrumentality of a foreign government;
+
+( ___    ) Offeror is an agency or instrumentality of the Federal Government.
+
+(4) Type of organization.
+
+( ___   ) Sole proprietorship;
+
+(   ___  ) Partnership;
+
+( ___   ) Corporate entity (not tax-exempt);
+
+( ___    ) Corporate entity (tax-exempt);
+
+( ___    ) Government entity (Federal, State, or local);
+
+(   ___  ) Foreign government;
+
+( ___   ) International organization per 26 CFR 1.6049-4;
+
+( ___   ) Other ----------.
+
+(5) Common parent.
+
+(   ___  ) Offeror is not owned or controlled by a common parent;
+
+( ___   ) Name and TIN of common parent:
+
+Name - ___  .
+TIN - ___  .
+
+(m) Restricted business operations in Sudan. By submission of its offer, the offeror certifies that the offeror does not conduct any restricted
+business operations in Sudan.
+
+(n) Prohibition on Contracting with Inverted Domestic Corporations—
+
+(1) Relation to Internal Revenue Code. An inverted domestic corporation as herein defined does not meet the definition of an inverted domestic
+corporation as defined by the Internal Revenue Code 25 U.S.C. 7874.
+
+(2) Representation. By submission of its offer, the offeror represents that--
+
+(i) It is not an inverted domestic corporation; and
+
+(ii) It is not a subsidiary of an inverted domestic corporation.
+
+(o) Prohibition on contracting with entities engaging in certain activities or transactions relating to Iran.
+
+(1) The offeror shall email questions concerning sensitive technology to the Department of State at CISADA106@state.gov.
+
+(2) Representation and certifications. Unless a waiver is granted or an exception applies as provided in paragraph (o)(3) of this provision, by
+submission of its offer, the offeror--
+
+(i) Represents, to the best of its knowledge and belief, that the offeror does not export any sensitive technology to the government of Iran or
+any entities or individuals owned or controlled by, or acting on behalf or at the direction of, the government of Iran;
+
+(ii) Certifies that the offeror, or any person owned or controlled by the offeror, does not engage in any activities for which sanctions may be
+imposed under section 5 of the Iran Sanctions Act; and
+
+(iii) Certifies that the offeror, and any person owned or controlled by the offeror, does not knowingly engage in any transaction that exceeds
+$3,000 with Iran's Revolutionary Guard Corps or any of its officials, agents, or affiliates, the property and interests in property of which are
+blocked pursuant to the
+International Emergency Economic Powers Act (50 U.S.C. 1701 et seq.) (see OFAC's Specially Designated Nationals and Blocked Persons List at
+http://www.treasury.gov/ofac/downloads/t11sdn.pdf).
+
+(3) The representation and certification requirements of paragraph (o)(2) of this provision do not apply if—
+
+(i) This solicitation includes a trade agreements certification (e.g., 52.212-3(g) or a comparable agency provision); and
+
+(ii) The offeror has certified that all the offered products to be supplied are designated country end products.
+
+(End of provision)
+
+
+
+
+
+52.212-5     CONTRACT TERMS AND CONDITIONS REQUIRED TO IMPLEMENT STATUTES OR EXECUTIVE ORDERS--COMMERCIAL ITEMS (NOV 2013)
+
+(a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract by
+reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items:
+
+(1) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)).
+
+ ___    Alternate I (Aug 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+
+(2) 52.233-3, Protest After Award (AUG 1996) (31 U.S.C. 3553).
+
+(3) 52.233-4, Applicable Law for Breach of Contract Claim (OCT 2004) (Pub. L. 108-77, 108-78).
+
+(b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being incorporated in
+this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: (Contracting
+Officer check as appropriate.)
+
+ _ X_   (1) 52.203-6, Restrictions on Subcontractor Sales to the Government (Sept 2006), with Alternate I (Oct 1995) (41 U.S.C. 253g and 10
+U.S.C. 2402).
+
+
+____ (2) 52.203-13, Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note)).
+
+____  (3) 52.203-15, Whistleblower Protections under the American Recovery and Reinvestment Act of 2009 (June 2010) (Section 1553 of Pub. L. 111-
+5). (Applies to contracts funded by the American Recovery and Reinvestment Act of 2009.)
+
+__X_ (4) 52.204-10, Reporting Executive Compensation and First-Tier Subcontract Awards (July 2013) (Pub. L. 109-282) (31 U.S.C. 6101 note).
+
+___  (5) 52.204-11, American Recovery and Reinvestment Act—Reporting Requirements (Jul 2010) (Pub. L. 111-5).
+
+__X_  (6) 52.209-6, Protecting the Government's Interest When Subcontracting with Contractors Debarred, Suspended, or Proposed for Debarment.
+(Aug, 2013) (31 U.S.C. 6101 note).
+
+____ (7) 52.209-9, Updates of Publicly Available Information Regarding Responsibility Matters (July 2013) (41 U.S.C. 2313).
+
+____ (8) 52.209-10, Prohibition on Contracting with Inverted Domestic Corporations (MAY 2012) (section 738 of Division C of Pub. L. 112-74,
+section 740 of Division C of Pub. L. 111-117, section 743 of Division D of Pub. L. 111-8, and section 745 of Division D of Pub. L. 110-161).
+
+____ (9) 52.219-3, Notice of HUBZone Set-Aside or Sole-Source Award (NOV 2011) (15 U.S.C. 657a).
+
+____ (10) 52.219-4, Notice of Price Evaluation Preference for HUBZone Small Business Concerns (Jan 2011) (if the offeror elects to waive the
+preference, it shall so indicate in its offer) (15 U.S.C. 657a).
+
+
+____ (11) [Reserved]
+
+
+__X__ (12)(i)  52.219-6, Notice of Total Small Business Set-Aside (NOV 2011) (15 U.S.C. 644).
+
+
+____ (ii) Alternate I (NOV 2011).
+
+
+____ (iii) Alternate II (NOV 2011).
+
+____ (13)(i)  52.219-7, Notice of Partial Small Business Set-Aside (June 2003) (15 U.S.C. 644).
+
+
+____ (ii) Alternate I (Oct 1995) of 52.219-7.
+
+
+____ (iii) Alternate II (Mar 2004) of 52.219-7.
+
+
+_ X__ (14) 52.219-8, Utilization of Small Business Concerns (July 2013) (15 U.S.C. 637(d)(2) and (3)).
+
+
+____ (15)(i)  52.219-9, Small Business Subcontracting Plan (July 2013) (15 U.S.C. 637(d)(4)).
+
+
+____ (ii) Alternate I (Oct 2001) of 52.219-9.
+
+
+____ (iii) Alternate II (Oct 2001) of 52.219-9.
+
+
+____ (iv) Alternate III (Jul 2010) of 52.219-9.
+
+____ (16) 52.219-13, Notice of Set-Aside of Orders (NOV 2011) (15 U.S.C. 644(r)).
+
+_ X__ (17) 52.219-14, Limitations on Subcontracting (NOV 2011) (15 U.S.C. 637(a)(14)).
+
+____ (18) 52.219-16, Liquidated Damages—Subcon-tracting Plan (Jan 1999) (15 U.S.C. 637(d)(4)(F)(i)).
+
+____ (19)(i)  52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns (Oct 2008) (10 U.S.C. 2323) (if the
+offeror elects to waive the adjustment, it shall so indicate in its offer).
+
+____ (ii) Alternate I (June 2003) of 52.219-23.
+
+____ (20) 52.219-25, Small Disadvantaged Business Participation Program—Disadvantaged Status and Reporting (July 2013) (Pub. L. 103-355, section
+7102, and 10 U.S.C. 2323).
+
+
+____ (21) 52.219-26, Small Disadvantaged Business Participation Program— Incentive Subcontracting (Oct 2000) (Pub. L. 103-355, section 7102, and
+10 U.S.C. 2323).
+
+
+____ (22) 52.219-27, Notice of Service-Disabled Veteran-Owned Small Business Set-Aside (NOV 2011) (15 U.S.C. 657f).
+
+
+____ (23)  52.219-28, Post Award Small Business Program Rerepresentation (July 2013) (15 U.S.C. 632(a)(2)).
+
+____ (24) 52.219-29, Notice of Set-Aside for Economically Disadvantaged Women-Owned Small Business (EDWOSB) Concerns (July 2013) (15 U.S.C.
+637(m)).
+
+____ (25) 52.219-30, Notice of Set-Aside for Women-Owned Small Business (WOSB) Concerns Eligible Under the WOSB Program (July 2013) (15 U.S.C.
+637(m)).
+
+__X__ (26) 52.222-3, Convict Labor (June 2003) (E.O. 11755).
+
+__X__ (27) 52.222-19, Child Labor—Cooperation with Authorities and Remedies (NOV 2013) (E.O. 3126).
+
+__X__ (28) 52.222-21, Prohibition of Segregated Facilities (Feb 1999).
+
+__X__ (29) 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246).
+
+__X__ (30) 52.222-35, Equal Opportunity for Veterans (Sep 2010)(38 U.S.C. 4212).
+
+__X__ (31) 52.222-36, Affirmative Action for Workers with Disabilities (Oct 2010) (29 U.S.C. 793).
+
+__X__ (32) 52.222-37, Employment Reports on Veterans (Sep 2010) (38 U.S.C. 4212).
+
+__X__ (33) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496).
+
+____ (34) 52.222-54, Employment Eligibility Verification (Aug 2013). (Executive Order 12989). (Not applicable to the acquisition of commercially
+available off-the-shelf items or certain other types of
+commercial items as prescribed in 22.1803.)
+
+____ (35)(i)  52.223-9, Estimate of Percentage of Recovered Material Content for EPA–Designated Items (May 2008) (42 U.S.C. 6962(c)(3)(A)(ii)).
+(Not applicable to the acquisition of commercially available off-the-shelf items.)
+
+
+____ (ii) Alternate I (May 2008) of 52.223-9 (42 U.S.C. 6962(i)(2)(C)). (Not applicable to the acquisition of commercially available off-the-
+shelf items.)
+
+____ (36) 52.223-15, Energy Efficiency in Energy-Consuming Products (Dec 2007) (42 U.S.C. 8259b).
+
+____ (37)(i)  52.223-16, IEEE 1680 Standard for the Environmental Assessment of Personal Computer Products (Dec 2007) (E.O. 13423).
+
+____ (ii) Alternate I (Dec 2007) of 52.223-16.
+
+__X__ (38) 52.223-18, Encouraging Contractor Policies to Ban Text Messaging While Driving (Aug 2011) (E.O. 13513).
+
+____ (39) 52.225-1, Buy American Act—Supplies (Feb 2009) (41 U.S.C. 10a-10d).
+
+____(40)(i) 52.225-3, Buy American Act--Free Trade Agreements--Israeli Trade Act (NOV 2012) (41 U.S.C. chapter 83, 19 U.S.C. 3301 note, 19
+U.S.C. 2112 note, 19 U.S.C. 3805 note, 19 U.S.C. 4001 note, Pub. L. 103-182, 108-77, 108-78, 108-286, 108-302, 109-53, 109-169, 109-283, 110-
+138, 112-41, 112-42, and 112-43).
+
+ (ii) Alternate I (MAR 2012) of 52.225-3.
+
+ (iii) Alternate II (MAR 2012) of 52.225-3.
+
+ (iv) Alternate III (NOV 2012) of 52.225-3.
+
+____ (41) 52.225-5, Trade Agreements (NOV 2013) (19 U.S.C. 2501, et seq., 19 U.S.C. 3301 note).
+
+__X__ (42) 52.225-13, Restrictions on Certain Foreign Purchases (June 2008) (E.O.’s, proclamations, and statutes administered by the Office of
+Foreign Assets Control of the Department of the Treasury).
+
+____ (43) 52.225-26, Contractors Performing Private Security Functions Outside the United States (Jul 2013) (Section 862, as amended, of the
+National Defense Authorization Act for Fiscal Year 2008; 10 U.S.C. 2302 Note).
+
+____ (44) 52.226-4, Notice of Disaster or Emergency Area Set-Aside (Nov 2007) (42 U.S.C. 5150
+
+____ (45) 52.226-5, Restrictions on Subcontracting Outside Disaster or Emergency Area (Nov 2007) (42 U.S.C. 5150).
+
+____ (46) 52.232-29, Terms for Financing of Purchases of Commercial Items (Feb 2002) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+
+____ (47) 52.232-30, Installment Payments for Commercial Items (Oct 1995) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+
+__X__ (48) 52.232-33, Payment by Electronic Funds Transfer—System for Award Management (July 2013) (31 U.S.C. 3332).
+
+____ (49) 52.232-34, Payment by Electronic Funds Transfer—Other than System for Award Management (July 2013) (31 U.S.C. 3332).
+
+____ (50) 52.232-36, Payment by Third Party (July 2013) (31 U.S.C. 3332).
+
+____  (51) 52.239-1, Privacy or Security Safeguards (Aug 1996) (5 U.S.C. 552a).
+
+____ (52)(i)  52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) (46 U.S.C. Appx. 1241(b) and 10 U.S.C. 2631).
+
+____ (ii) Alternate I (Apr 2003) of 52.247-64.
+
+(c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer has
+indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of
+commercial items: (Contracting Officer check as appropriate.)
+
+____ (1) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.).
+
+
+____ (2) 52.222-42, Statement of Equivalent Rates for Federal Hires (May 1989) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+
+
+____ (3) 52.222-43, Fair Labor Standards Act and Service Contract Act—Price Adjustment (Multiple Year and Option Contracts) (Sep 2009) (29
+U.S.C. 206 and 41 U.S.C. 351, et seq.).
+
+_____ (4) 52.222-44, Fair Labor Standards Act and Service Contract Act—Price Adjustment (Sep 2009) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+
+_____ (5) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain
+Equipment—Requirements (Nov 2007) (41 351, et seq.).
+
+_____ (6) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services—Requirements (Feb 2009) (41 U.S.C.
+351, et seq.).
+
+_____ (7) 52.222-17, Nondisplacement of Qualified Workers (JAN 2013) (E.O.13495).
+
+____ (8) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247).
+
+_____ (9) 52.237-11, Accepting and Dispensing of $1 Coin (Sept 2008) (31 U.S.C. 5112(p)(1)).
+
+(d) Comptroller General Examination of Record. The Contractor shall comply with the provisions of this paragraph (d) if this contract was
+awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at 52.215-2, Audit
+and Records--Negotiation.
+
+(1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right to
+examine any of the Contractor's directly pertinent records involving transactions related to this contract.
+
+(2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination,
+audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR Subpart 4.7, Contractor
+Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records relating to the
+work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the
+disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such
+appeals, litigation, or claims are finally resolved.
+
+(3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and
+regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary
+course of business or pursuant to a provision of law.
+
+(e) (1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c), and (d) of this clause, the Contractor is not required to
+flow down any FAR clause, other than those in this paragraph (e)(1)in a subcontract for commercial items. Unless otherwise indicated below, the
+extent of the flow down shall be as required by the clause—
+
+(i) 52.203-13, Contractor Code of Business Ethics and Conduct (APR 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note).
+
+(ii) 52.219-8, Utilization of Small Business Concerns (Jul 2013) (15 U.S.C. 637(d)(2) and (3)), in all subcontracts that offer further
+subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $650,000 ($1.5 million for
+construction of any public facility), the subcontractor must include 52.219-8 in lower tier subcontracts that offer subcontracting
+opportunities.
+
+(iii) 52.222-17, Nondisplacement of Qualified Workers (JAN 2013) (E.O. 13495). Flow down required in accordance with paragraph (l) of FAR clause
+52.222-17.
+
+(iv) 52.222-26, Equal Opportunity (MAR 2007) (E.O. 11246).
+
+(v) 52.222-35, Equal Opportunity for Veterans (SEP 2010) (38 U.S.C. 4212).
+
+(vi) 52.222-36, Affirmative Action for Workers with Disabilities (OCT 1998) (29 U.S.C. 793).
+
+(vii) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (DEC 2010) (E.O. 13496). Flow down required in
+accordance with paragraph (f) of FAR clause 52.222-40.
+
+(viii) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.).
+
+(ix) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)).
+
+Alternate I (AUG 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+
+(x) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment--
+Requirements (Nov 2007) (41 U.S.C. 351, et seq.).
+
+(xi) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services--Requirements (FEB 2009) (41 U.S.C.
+351, et seq.).
+
+(xii) 52.222-54, Employment Eligibility Verification (Aug 2013).
+
+(xiii) 52.225-26, Contractors Performing Private Security Functions Outside the United States (Jul 2013) (Section 862, as amended, of the
+National Defense Authorization Act for Fiscal Year 2008; 10 U.S.C. 2302 Note).
+
+(xiv) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations. (MAR 2009) (Pub. L. 110-247). Flow down required in accordance with
+paragraph (e) of FAR clause 52.226-6.
+
+(xv) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (FEB 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C. 2631). Flow down
+required in accordance with paragraph (d) of FAR clause 52.247-64.
+
+(2) While not required, the contractor May include in its subcontracts for commercial items a minimal number of additional clauses necessary to
+satisfy its contractual obligations.
+
+(End of clause)
+
+
+
+
+
+
+52.217-9     OPTION TO EXTEND THE TERM OF THE CONTRACT (MAR 2000)
+
+(a) The Government may extend the term of this contract by written notice to the Contractor within 15 days (the period of time within which the
+Contracting Officer may exercise the option); provided that the Government gives the Contractor a preliminary written notice of its intent to
+extend at least 30 before the contract expires. The preliminary notice does not commit the Government to an extension.
+
+(b) If the Government exercises this option, the extended contract shall be considered to include this option clause.
+
+(c) The total duration of this contract, including the exercise of any options under this clause, shall not exceed 36 months.
+(End of clause)
+
+
+
+52.222-22      PREVIOUS CONTRACTS AND COMPLIANCE REPORTS (FEB 1999)
+
+The offeror represents that --
+
+(a) (  ) It has, (  ) has not participated in a previous contract or subcontract subject to the Equal Opportunity clause of this solicitation;
+
+(b) (  ) It has, (  ) has not, filed all required compliance reports; and
+
+(c) Representations indicating submission of required compliance reports, signed by proposed subcontractors, will be obtained before subcontract
+awards.
+
+(End of provision)
+
+
+
+52.252-1     SOLICITATION PROVISIONS INCORPORATED BY REFERENCE (FEB 1998)
+
+This solicitation incorporates one or more solicitation provisions by reference, with the same force and effect as if they were given in full
+text. Upon request, the Contracting Officer will make their full text available. The offeror is cautioned that the listed provisions may include
+blocks that must be completed by the offeror and submitted with its quotation or offer. In lieu of submitting the full text of those provisions,
+the offeror may identify the provision by paragraph identifier and provide the appropriate information with its quotation or offer. Also, the
+full text of a solicitation provision may be accessed electronically at this/these address(es):
+
+ http://farsite.hill.af.mil/    
+
+(End of provision
+
+
+
+52.252-2      CLAUSES INCORPORATED BY REFERENCE (FEB 1998)
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request,
+the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at this/these
+address(es):
+
+http://farsite.hill.af.mil/
+
+(End of clause)
+
+
+
+252.201-7000     CONTRACTING OFFICER'S REPRESENTATIVE (DEC 1991)
+
+(a) "Definition.  Contracting officer's representative" means an individual designated in accordance with subsection 201.602-2 of the Defense
+Federal Acquisition Regulation Supplement and authorized in writing by the contracting officer to perform specific technical or administrative
+functions.
+
+(b) If the Contracting Officer designates a contracting officer's representative (COR), the Contractor will receive a copy of the written
+designation.  It will specify the extent of the COR's authority to act on behalf of the contracting officer.  The COR is not authorized to make
+any commitments or changes that will affect price, quality, quantity, delivery, or any other term or condition of the contract.
+
+(End of clause)
+
+
+
+252.203-7005  REPRESENTATION RELATING TO COMPENSATION OF FORMER DOD OFFICIALS (NOV
+2011)
+
+(a) Definition. Covered DoD official is defined in the clause at 252.203-7000, Requirements Relating to Compensation of Former DoD Officials.
+
+(b) By submission of this offer, the offeror represents, to the best of its knowledge and belief, that all covered DoD officials employed by or
+otherwise receiving compensation from the offeror, and who are expected to undertake activities on behalf of the offeror for any resulting
+contract, are presently in compliance with all post-employment restrictions covered by 18 U.S.C. 207, 41 U.S.C. 2101-2107, and 5 CFR parts 2637
+and 2641, including Federal
+Acquisition Regulation 3.104-2.
+
+(End of provision)
+
+
+
+
+
+252.215-7007  NOTICE OF INTENT TO RESOLICIT (JUN 2012)
+
+This solicitation provides offerors fewer than 30 days to submit proposals. In the event that only one offer is received in response to this
+solicitation, the Contracting Officer may cancel the solicitation and resolicit for an additional period of at least 30 days in accordance with
+215.371-2.
+
+(End of provision)
+
+
+
+
+252.215-7008  ONLY ONE OFFER (OCT 2013)
+
+(a) After initial submission of offers, the Offeror agrees to submit any subsequently requested additional cost or pricing data if the
+Contracting Officer notifies the Offeror that--
+
+(1) Only one offer was received; and
+
+(2) Additional cost or pricing data is required in order to determine whether the price is fair and reasonable or to comply with the statutory
+requirement for certified cost or pricing data (10 U.S.C. 2306a and FAR 15.403-3).
+
+(b) Requirement for submission of additional cost or pricing data. Except as provided in paragraph (c) of this provision, the Offeror shall
+submit additional cost or pricing data as follows:
+
+(1) If the Contracting Officer notifies the Offeror that additional cost or pricing data are required in accordance with
+paragraph (a) of this clause, the data shall be certified unless an exception applies (FAR 15.403-1(b)).
+
+(2) Exceptions from certified cost or pricing data. In lieu of submitting certified cost or pricing data, the Offeror may submit a written
+request for exception by submitting the information described in the following paragraphs. The Contracting Officer may require additional
+supporting information, but only to the extent necessary to determine whether an exception should be granted, and whether the price is fair and
+reasonable.
+
+(i) Identification of the law or regulation establishing the price offered. If the price is controlled under law by periodic rulings, reviews,
+or similar actions of a governmental body, attach a copy of the controlling document, unless it was previously submitted to the contracting
+office.
+
+(ii) Commercial item exception. For a commercial item exception, the Offeror shall submit, at a minimum, information on prices at which the same
+item or/similar items have previously been sold in the commercial market that is adequate for evaluating the reasonableness of the price for
+this acquisition. Such information may include—
+
+(A) For catalog items, a copy of or identification of the catalog and its date, or the appropriate pages for the offered
+items, or a statement that the catalog is on file in the buying office to which the proposal is being submitted. Provide a copy or describe
+current discount policies and price lists (published or unpublished), e.g., wholesale, original equipment manufacturer, or reseller. Also
+explain the basis of each offered price and its relationship to the established catalog price, including how the proposed price relates to the
+price of recent sales in quantities similar to the proposed quantities;
+
+(B) For market-priced items, the source and date or period of the market quotation or other basis for market price, the base amount, and
+applicable discounts. In addition, describe the nature of the market; or
+
+(C) For items included on an active Federal Supply Service Multiple Award Schedule contract, proof that an exception has been granted for the
+schedule item.
+
+(3) The Offeror grants the Contracting Officer or an authorized representative the right to examine, at any time before award, books, records,
+documents, or other directly pertinent records to verify any request for an exception under this provision, and the reasonableness of price. For
+items priced using catalog or market prices, or law or regulation, access does not extend to cost or profit information or other data relevant
+solely to the Offeror's
+determination of the prices to be offered in the catalog or marketplace.
+
+(4) Requirements for certified cost or pricing data. If the Offeror is not granted an exception from the requirement to submit certified cost or
+pricing data, the following applies:
+
+(i) The Offeror shall prepare and submit certified cost or pricing data and supporting attachments in accordance with the instructions contained
+in Table 15-2 of FAR 15.408, which is incorporated by reference with the same force and effect as though it were inserted here in full text. The
+instructions in Table 15-2 are incorporated as a mandatory format to be used, unless the Contracting Officer and the Offeror agree to a
+different format.
+
+(ii) As soon as practicable after agreement on price, but before contract award (except for unpriced actions such as letter contracts), the
+offeror shall submit a Certificate of Current Cost or Pricing Data, as prescribed by FAR 15.406-2.
+
+(c) If the Offeror is the Canadian Commercial Corporation, certified cost or pricing data are not required. If the Contracting Officer notifies
+the Canadian Commercial Corporation that additional data other than certified cost or pricing data are required in accordance with 225.870-4(c),
+the Canadian Commercial Corporation shall obtain and provide the following:
+
+(1) Profit rate or fee (as applicable).
+
+(2) Analysis provided by Public Works and Government Services Canada to the Canadian Commercial Corporation to determine a fair and reasonable
+price (comparable to the analysis required at FAR
+15.404-1).
+
+(3) Data other than certified cost or pricing data necessary to permit a determination by the U.S. Contracting Officer that the proposed price
+is fair and reasonable [U.S. Contracting Officer to provide description of the data required in accordance with FAR 15.403-3(a)(1) with the
+notification].
+
+(4) As specified in FAR 15.403-3(a)(4), an offeror who does not comply with a requirement to submit data that the U.S. Contracting Officer has
+deemed necessary to determine price reasonableness or cost realism is ineligible for award unless the head of the contracting activity
+determines that it is in the best interest of the Government to make the award to that offeror.
+
+(d) If negotiations are conducted, the negotiated price should not exceed the offered price.
+
+(End of provision)
+
+
+
+
+252.232-7006 WIDE AREA WORKFLOW PAYMENT INSTRUCTIONS (MAY 2013)
+
+(a) Definitions. As used in this clause--
+
+Department of Defense Activity Address Code (DoDAAC) is a six position code that uniquely identifies a unit, activity, or organization.
+
+Document type means the type of payment request or receiving report available for creation in Wide Area WorkFlow (WAWF).
+
+Local processing office (LPO) is the office responsible for payment certification when payment certification is done external to the entitlement
+system.
+
+(b) Electronic invoicing. The WAWF system is the method to electronically process vendor payment requests and receiving reports, as authorized
+by DFARS 252.232-7003, Electronic Submission
+of Payment Requests and Receiving Reports.
+
+(c) WAWF access. To access WAWF, the Contractor shall--
+
+(1) Have a designated electronic business point of contact in the System for Award Management at https://www.acquisition.gov; and
+
+(2) Be registered to use WAWF at https://wawf.eb.mil/ following the step-by-step procedures for self-registration available at this Web site.
+
+(d) WAWF training. The Contractor should follow the training instructions of the WAWF Web-Based Training Course and use the Practice Training
+Site before submitting payment requests through
+WAWF. Both can be accessed by selecting the “Web Based Training” link on the WAWF home page at https://wawf.eb.mil/.
+
+(e) WAWF methods of document submission. Document submissions may be via Web entry, Electronic Data Interchange, or File Transfer Protocol.
+
+(f) WAWF payment instructions. The Contractor must use the following information when submitting payment requests and receiving reports in WAWF
+for this contract/order:
+
+(1) Document type. The Contractor shall use the following document type(s).
+
+COMBO
+
+(Contracting Officer: Insert applicable document type(s). Note: If a “Combo” document type is identified but not supportable by the Contractor's
+business systems, an “Invoice” (stand-alone) and
+“Receiving Report” (stand-alone) document type may be used instead.)
+
+(2) Inspection/acceptance location. The Contractor shall select the following inspection/acceptance location(s) in WAWF, as specified by the
+contracting officer.
+
+Contracting Officer: Not Applicable
+
+(Contracting Officer: Insert inspection and acceptance locations or “Not applicable”.)
+
+(3) Document routing. The Contractor shall use the information in the Routing Data Table below only to fill in applicable fields in WAWF when
+creating payment requests and receiving reports in the
+system.
+
+Routing Data Table*
+--------------------------------------------------------------------------------------------
+Field Name in WAWF                Data to be entered in WAWF
+--------------------------------------------------------------------------------------------
+Pay Official DoDAAC               M67861
+Issue By DoDAAC              M67861
+Admin DoDAAC                      M67861
+Inspect By DoDAAC                 ____
+Ship To Code                      M00094
+Ship From Code                    ____
+Mark For Code                     ____
+Service Approver (DoDAAC)         ____
+Service Acceptor (DoDAAC)         ____
+Accept at Other DoDAAC       ____
+LPO DoDAAC                   ____
+DCAA Auditor DoDAAC               ____
+Other DoDAAC(s)              ____
+--------------------------------------------------------------------------------------------
+
+(*Contracting Officer: Insert applicable DoDAAC information or “See schedule” if multiple ship to/acceptance locations apply, or “Not
+applicable.”)
+
+(4) Payment request and supporting documentation. The Contractor shall ensure a payment request includes appropriate contract line item and
+subline item descriptions of the work performed or supplies delivered, unit price/cost per unit, fee (if applicable), and all relevant back-up
+documentation, as defined in DFARS Appendix F, (e.g. timesheets) in support of each payment request.
+
+(5) WAWF email notifications. The Contractor shall enter the email address identified below in the “Send Additional Email Notifications” field
+of WAWF once a document is submitted in the system.
+____
+
+(Contracting Officer: Insert applicable email addresses or “Not applicable.”)
+
+(g) WAWF point of contact. (1) The Contractor may obtain clarification regarding invoicing in WAWF from the following contracting activity's
+WAWF point of contact.
+
+____
+
+(Contracting Officer: Insert applicable information or “Not applicable.”)
+
+(2) For technical WAWF help, contact the WAWF helpdesk at 866-618-5988.
+
+(End of clause)
+
+
+
+
+252.247-7022     REPRESENTATION OF EXTENT OF TRANSPORTATION BY SEA (AUG 1992)
+
+(a) The Offeror shall indicate by checking the appropriate blank in paragraph (b) of this provision whether transportation of supplies by sea is
+anticipated under the resultant contract. The term supplies is defined in the Transportation of Supplies by Sea clause of this solicitation.
+
+(b) Representation. The Offeror represents that it:
+
+____ (1) Does anticipate that supplies will be transported by sea in the performance of any contract or subcontract resulting from this
+solicitation.
+
+____ (2) Does not anticipate that supplies will be transported by sea in the performance of any contract or subcontract resulting from this
+solicitation.
+
+(c) Any contract resulting from this solicitation will include the Transportation of Supplies by Sea clause. If the Offeror represents that it
+will not use ocean transportation, the resulting contract will also include the Defense FAR Supplement clause at 252.247-7024, Notification of
+Transportation of Supplies by Sea.
+
+(End of provision)
+

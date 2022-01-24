@@ -1,0 +1,1687 @@
+
+                                                            Draft Request for Proposal
+                                                   DOTGOV Internet Domain Registration Service
+                                              Statement of Objectives including Other Contract Terms
+
+1. History and Background
+
+The GSA-FAS Office of Infrastructure Optimization provides, as one of its business lines, a Registration Service for Federal, State and Local
+Governments, and Native Sovereign Nations (NSNs).  Domain registrations (DOTGOV and .FED.US) were delegated to the GSA by the National Science
+Foundation through consensus of the Federal Networking Counsel and Department of Commerce on October 1, 1997.  Registration requests are
+serviced by way of web-enabled applications hosted at www.dotgov.gov.  Registrations are approved based on established criteria, detailed in
+Federal Networking Council Request For Comments (RFC) 2146, May 1997 available at www.rfc-archive.org/getrfc.php?rfc=2146 and the “Final Rule” -
+41 CFR Part §102-173 (available at www.dotgov.gov/final_rule_102.html).
+
+
+2. General Contract Requirements
+
+The General Services Administration (GSA), Federal Acquisition Service (FAS) is seeking a solution to perform all aspects of a Domain Name
+Registration Service for Federal, State and Local Governments, and Native Sovereign Nations (NSNs) under the unique domain names of DOTGOV and
+.FED.US.  This includes the maintenance of a secure Website for registration requests; the electronic processing
+(acceptance/denial/modification) of those requests; an electronic payment processing mechanism for collection of customer fees and periodic
+reporting to GSA, helpdesk support, Domain Name Service Security (DNSSEC); and a database capable of securely storing and managing the critical
+data retrieved through the registration process.  The contractor shall also be responsible for the secure electronic propagation of credible
+zone data to the authoritative DOTGOV top level domain name servers on a minimum twice daily basis, and provide help desk support for problem
+resolution.  The contractor shall maintain a redundant failover/backup site.  In the event of a catastrophic failure or other service disruption
+at the primary site, this site shall automatically continue all operations without interruption.
+
+The contractor shall be responsible for all hardware, software, and ancillary equipment required to receive, process, and maintain the integrity
+of the registration data and ensure system availability at all times (24 hours a day, 7 days a week, and holidays).  The FIPS 199 Security
+Categorization of this system shall be at a High Impact Level.  A secondary backup site shall be established in the event of a catastrophic
+failure or other service disruption to the primary site.  A greater than 99.9% software confidence factor is required.    All components of the
+DOTGOV system, to include accounting/billing, customer support/trouble ticketing, reporting, helpdesk, DOTGOV TLD servers, etc. are within the
+C&A boundaries and must be certified at FIPS 199 High.
+
+The end-to-end system shall be sufficient to process the zone data file of approximately 5,000 active domain registrations and must be scalable
+for an anticipated annual growth of approximately 15% annually (base and option years inclusive).  There is a possibility for annual growth that
+exceeds the above, however, GSA gives no guarantees as to growth over the life of the contract.  The contractor is encouraged to independently
+pursue additional DOTGOV accounts (particularly State and Local Government accounts), in order to grow the service (although GSA approval is
+necessary before any new domain name is initiated).
+
+The Government requires a seamless transition between the current contractor and the follow-on awardee to provide a fully functional domain
+registration system.  The current DOTGOV contractor may remain operational with complete functionality and continuity of services until the
+transition phase is completed.
+
+It is the Government’s intent that operational costs for this service will be recovered through annual collection of fees from individual
+Federal, State and Local Governments, and Native Sovereign Nations (NSNs) authorized to order initial domain name registrations and annual
+renewals (the fee will be collected before an agency can access the Domain name).  Customer agencies are responsible for payment of fees, during
+the approval process, to the contractor.  The contractor shall be responsible for collecting and retaining those fees.  There will be no cost or
+administrative burden to GSA, conveyed in the form of invoices for payment, etc.
+
+The contractor shall be responsible for ensuring that the system’s functional needs satisfies Federal security mandates for the processing of
+sensitive but unclassified (SBU) information and protection of financial transaction data.  C&A support documentation shall be completed on
+demand within each C&A segment as outlined in the deliverables section and/or C&A guidance and delivered to the COTR for review and forwarding
+to the GSA Authorizing Official for the accreditation decision.  The contractor shall ensure that the documentation remains current throughout
+the system life-cycle.  Recertification is required every three (3) years or any time that sufficient changes to the system’s software,
+hardware, or firmware have occurred (as determined by the authorizing official).  The contractor must be fully capable to assume full
+operational responsibility of the DOTGOV system, at both the primary and back-up server locations, as soon as the C&A derived Authority to
+Operate (ATO) is secured.   In addition, the contractor shall comply with all the documents referenced in “GSA CIO IT Security 09-48 Security
+Language for IT Acquisition Efforts,” as well as NIST 800-81 revision 1  (Secure Domain Name System (DNS) Deployment Guide).
+
+GSA has determined that there exists in the commercial domain registration marketplace excess capacity for existing providers to process the
+DOTGOV data, and GSA intends to use it.  If a potential offeror does not have a domain registration system operating, it may not be cost
+effective for the contractor to build a system to meet this requirement.
+
+A process flow diagram of the DOTGOV registration service entitled, “DOTGOV Process Flow” is provided (as Attachment 4) for clarity.  The GSA
+Program Manager is responsible for issuing final DOTGOV domain registration approvals.
+
+All critical functions (such as domain registrations) will be performed at the prime not at the sub-contractor level.  In addition, all DOTGOV
+operations must be performed in the Continental U.S. only (CONUS).   This includes DNS nodes and the DNS distribution servers must be located
+within CONUS.  Outside CONUS DNS distribution servers will not be allowed for DOTGOV.
+
+Escalation procedures and Change Management/Change Control procedures must be clearly identified for this program.
+
+The .FED.US domain names are grandfathered in and the DOTGOV system is responsible for maintaining these domain names, but no new registrations
+are being accepted.
+
+
+
+3. Tasks (Functionality)
+
+
+  Task 1:  Website Management and Administration
+
+  The Website (www.dotgov.gov) is the entry point for DOTGOV Internet domain management and registration services.  The contractor shall host
+  the Website and provide the requisite network management services as appropriate for the level of mission criticality and information
+  sensitivity.  The contractor shall also be proactive and make recommendations for improving the level of service and/or value to Government.
+
+
+  At a minimum, the contractor shall perform the following work requirements:
+
+
+      • Operation and maintenance of the http://www.dotgov.gov registration Website and supporting infrastructure. A redundant failover/backup
+        site shall also be provided.  In the event of a catastrophic failure or other service disruption at the primary site, the failover/backup
+        site shall continue all operations without interruption.
+
+     •     Operation and maintenance of the WHOIS directory service.
+
+
+
+
+  Task 2: DOTGOV Help Desk Support and Domain Management Services
+
+  Currently the DOTGOV program (Government personnel) has staffed a help desk during normal working hours to respond to customer questions and
+  comments.  In this re-compete, the help desk will be staffed at the contractor’s site 8 AM-6PM Eastern Time (and DST when applicable) by
+  contractor personnel and on-call with qualified staff 24/7/365 days a year in the event there are emergency situations.  GSA/ITS may consider
+  bringing the help desk back into the Government facility at some point in the future.
+
+
+  DOTGOV help desk and domain management major duties - customer service, data entry and website navigation, DNSSEC, technical solution
+  development, and records maintenance in support of the DOTGOV program.
+
+
+   Help Desk:  The contractor shall provide the necessary support to assist in resolving customer issues.  The contractor will staff a live
+            program help desk and provide customer service via a toll-free number and e-mail.  The contractor must initiate either a return
+            phone call or an e-mail reply to the customer within two business hours of initial contact by the customer.  At present, an average
+            of six hundred (600) helpdesk calls/emails are serviced each month and the customer database consists of approximately 13,000
+            customers.   The contractor shall keep an electronic log of all calls/emails received by the DOTGOV helpdesk.
+
+
+   Domain Management Services:  The contractor shall provide services including, but not limited to: 24/7/365 technical assistance to registered
+                            points of contact, auditing and reporting, modifying, filing/archiving, and securely submitting the DOTGOV zone file
+                            to the respective root-name-servers.  Data input by contractor shall be checked for validity to insure the correct
+                            DOTGOV domain name is activated for the customer.
+
+  The zone file updates shall be submitted at a minimum twice daily, to include all DNSSEC records.  The COTR may request an additional zone
+  file update as a result of an emergent, high priority domain name request, which must be pushed out to the Internet upon notification by the
+  Government.
+
+
+
+
+  Task 3:  System Security
+
+                                                        INFORMATION SECURITY REQUIREMENTS
+
+    • The contractor shall be responsible for adhering to all National Institute of Standards and Technology (NIST) Special Publications and
+      Standards, Office of Management and Budget (OMB) circulars & memorandums, the Federal Information Security Management Act (FISMA), and all
+      revisions and updates thereof.
+
+    • The contractor shall provide all Certification and Accreditation (C&A) support documentation to support the testing of the security
+      controls of the system at the FIPS 199 High Impact level; as well as to ensure the system’s functional needs satisfies Federal security
+      mandates for the processing of Controlled Unclassified Information (CUI) and protection of sensitive data.
+
+    • All medium and high findings/vulnerabilities shall be remediated prior to the Accreditation decision by the Authorizing Official.
+
+    • The contractor shall ensure that the documentation remains current throughout the system life-cycle.  Re-certification is required every
+      three (3) years or any time that sufficient changes to the system’s software, hardware, or firmware has occurred.
+
+    • The contractor shall support the testing of the security controls in the system in accordance with the most current version of NIST 800-53
+      (currently revision 3) and NIST 800-53A.
+
+    • The contractor shall initiate work on this C&A requirement by meeting with key client agency representatives, to include the FAS C&A
+      contractor, to ensure that a common understanding of the requirements, expectations, and ultimate end products exists between all parties.
+      The FAS OCIO C&A contractor shall conduct all the security testing required for accreditation.
+
+    • The contractor shall comply with all the requirements referenced in the GSA publication: “Security Language for IT Acquisition Efforts –
+      CIO IT Security 09-48”,
+
+    • The contractor shall provide personnel who have either a Limited Background Investigation (LBI) or a United States Secret clearance.
+
+    • The contractor shall provide and support overall Infrastructure Security efforts which include all aspects of Technical, Operational, &
+      Management Security.  This task requires the contractor to manage the current and future security efforts without compromising security.
+
+    • The awarded contractor shall assist GSA in the compilation and documentation of the potential risks, and assist in the development of a
+      Risk Management Plan.
+
+    • This plan shall identify the potential risks and probability of occurrence consistent with the environment proposed.
+
+    • All data shall be protected against unauthorized disclosure, modification, theft, and destruction in accordance with all applicable
+      National Institute of Science and Technology (NIST) guidelines, but in particular NIST 800-81 revision 1.
+
+    • The contractor shall be responsible for providing documentation that demonstrates that the system has been certified to be in compliance
+      with all federal regulations and guidance throughout the life of the contract. The contractor shall maintain the documentation and ensure
+      that the documentation remains current throughout the system life-cycle.
+
+    • All requisite C&A support documentation shall be completed on demand within the timeline of each C&A segment as outlined in the C&A
+      deliverables list and delivered to the COTR for review and forwarding to the GSA Approving Authority (AO) for the accreditation decision.
+      The contractor shall be responsible for correcting any identified security short-falls within the time specified by the FAS OCIO,
+      Information Security Office.  The AO is the GSA-FAS Chief Information Officer (CIO).
+
+    • The contractor shall be responsible for reporting cyber security incidents to the US –CERT, through the FAS OCIO Information Security
+      Office
+
+C&A DELIVERABLES:
+In completing and documenting the various C&A-related tasks, the contractor shall be required to develop and maintain the following C&A required
+documents in accordance with applicable National Institute of Science and Technology (NIST) Special Publications and/or GSA guidelines:
+
+1.  The System Security Plan shall be prepared in accordance with the most current version of NIST Special Publication 800-18, Guide for
+Developing Security Plans for Information Technology Systems.  The SSP shall include as appendices:
+  -- a completed GSA 800–53 Control Tailoring worksheet included in Appendix A of GSA Procedural Guide  - CIO IT Security 09-48 "Security
+Language for IT Acquisition Efforts".  Column E of the worksheet titled “Contractor Implemented Settings” shall document all contractor
+implemented settings that are different from the GSA defined setting and where the GSA defined setting allows a contractor determined setting).
+  -- Required policies and procedures across 18 control families mandated per FIPS 200,
+  -- Rules of Behavior,
+  -- Interconnection Agreements (in accordance with NIST Special Publication 800–47),
+  -- System architecture documentation,
+  -- Network architecture diagram including IP addresses and subnets for individual devices,
+  -- List of web applications and web services, including descriptions and corresponding URLs
+  -- List of servers, including descriptions of the applications and information residing on each server
+  -- List of database management systems (e.g. Oracle, SQL Server, Sybase) including descriptions.
+  -- Vulnerability scanning practices
+  -- Patch Management process
+
+2.  Contingency Plan (including a Disaster Recovery Plan) – The contingency plan shall be prepared in accordance with NIST 800-34.
+
+3.  Contingency Test, Test Plan, and Contingency Test Report shall be be prepared in accordance with the most current version of GSA CIO IT
+Security Procedural Guide CIO-IT Security-06-29 (Contingency Plan Testing)
+
+4.  Configuration Management Plan - The configuration Management Plan shall be prepared in accordance with the most current version of GSA CIO-
+IT Security Procedural Guide:  01-05 (Developing a Configuration Management).
+
+5.  List of names of employees and contractors who support the system or system data
+      -- Type of Govt background investigation and date requested for each individual
+      -- Documentation of status of background investigation for each individual
+      -- Start date for each individual
+
+6.  Business Impact Analysis – Identify key business processes affected by different levels of disaster or service interruption and impact these
+services would have to GSA and its customers in the case of each scenario.
+
+7.  Authentication Risk assessment
+
+8.  Privacy Impact Assessment
+
+9.  Business Continuity Plan – Identify key processes, personnel and relying systems that must be available in the case of a major disaster.
+Provide planning and recommendations for continuing service.
+
+10.  Plan of Actions & Milestones – Provide methodology for identifying, tracking and remediating POAMs.
+
+
+            11.  Lessons Learned Report – This report shall contain any information including GSA’s methodology that could improve the process.
+
+
+
+
+The contractor should provide in the proposal, at a minimum, plans, approximate timeframes and methodologies for accomplishing each of the
+following milestones and components of a High Impact system.
+
+      I. FIPS 199 High - [confidentiality, integrity, availability] at highest level of interoperable agency customer are the driver
+         (multifactor authentication for access and changes)
+     II. Continuous monitoring by contractor - at multiple levels (ie full packet capture, I/E points from the accreditation boundary of the
+         system)
+    III. Root cause evaluation capability within a few hours
+     IV. Access granted for IV&V by customer
+      V. Isolated and controlled environments
+     VI. Publication controls and release controls limited to government approval only
+ VII. Recategorization  of system based on FIPS 199 High Impact Level
+VIII. Dedicated ISSO at contractor
+  IX. Full and complete DNSSEC tested implementation
+   X. CONUS deployment only
+  XI. Automated logging - (ie NIST controls - CM family and AU Family)
+ XII. Tiered admin override checks and balances
+XIII. Automated process controls/not manual
+ XIV. Software integrity controls and SCRM
+  XV. Government owned system on dedicated hardware, software installation and in secured enclosure
+ XVI. Full test suite capabilities
+XVII. Regular reports on security spending to improve, maintain or modify the system
+XVIII. 24/7 On Call technical support
+
+
+
+
+  Task 4:  Integration, Implementation, and Management of the Fee Invoicing, Processing, and Collection Processes.
+
+  The contractor shall provide a system for collecting fees for services. Activities include, but are not limited to: assessing fees from
+  customer agencies; issuing notifications of delinquent accounts; resolving credit card disputes; and coordinating financial transactions.
+
+
+  Collection of fees for domain registration applies only to new and annual renewals.  Note: The Contractor shall be responsible for management
+  of the root DOTGOV domain and registration of 2nd level domains only (for example,  gsa.gov).  Fees must only be assessed on 2nd level
+  domains; 3rd and 4th level domains and lower shall not incur fees. The contractor will collect the fee from the entities directly. Monies
+  collected shall be recorded for review during government domain approval process, tracked and reported to the government quarterly (see
+  “Quarterly Revenue Reports” and attachment 5). For reporting purposes, fees from entities of the federal government (legislative, executive
+  and judicial, Native Sovereign Nations) will be flagged with a marker which is distinct from the non-federal entities (State and Local
+  offices).  The contractor shall be responsible for collecting and processing fees for payment when registering a new domain name or renewing
+  an existing domain name. Payments have typically been collected via credit card.
+
+
+  The Per-Registration price shall comply with the designated authority Final Rule 41 CFR Part 102-173 Federal Management Regulations; Internet
+  DOTGOV Domain as a rule and fee cap (for the base year and any option periods).
+
+
+  The per-registration price proposed shall not exceed $125.00 (for the base year and any option periods).
+
+
+
+  Task 5:  Contingency Planning Implementation and Testing
+
+  The awarded contractor shall develop a Contingency Plan which documents the strategy and testing focusing on service restoration and data
+  recovery in the event of unforeseen circumstances (See 7a - C&A Guidance).  The Contingency Plan shall be prepared in accordance with NIST 800-
+  34 & GSA CIO-17 Security -06-29 (available from GSA-FAS-CIO via CD).  Identify frequency and type of testing to be provided.  For example,
+  once a year a table top exercise will be conducted followed by a true system test six months later.
+
+
+
+
+
+
+  Task 6:  Domain Name System Security (DNSSEC)
+
+  The government’s preference is for any incoming contractor  to follow the current DNSSEC security measures solution for the DOTGOV Top Level
+  Domain (TLD) system. Current DOTGOV DNSSEC implementation information is available at www.dotgov.gov under the DNSSEC tab. However, other
+  solutions will be considered if they meet the DNSSEC standard, but any agencies current implementation should not be interrupted. There are
+  approximately 400 agency domains which have implemented DNSSEC. The Department of Homeland Security (DHS) will be advising GSA concerning DNS
+  Security on the DOTGOV Contract.
+
+
+  Delegation holders may require limited technical assistance implementing DNSSEC in accordance with the Office of Management and Budget (OMB)
+  policy.  The current OMB policy is found at:  http://www.whitehouse.gov/omb/assets/omb/memoranda/fy2008/m08-23.pdf.
+
+
+  The DOTGOV Domain Name Registration Services shall include procedures for record signing and managing zone updates using a validated FIPS 140-
+  3 level 3 solution to distribute and manage the DOTGOV DNSSEC key infrastructure to the DNS administrator.   The service should include, but
+  not be limited to: key management system for the root DOTGOV domain, maintaining security delegation information for second level domains;
+  automation distribution; support of incremental updates to the zone and an automated rollover management; acquire additional bandwidth to
+  support zone clearing; and key archiving for the top-level DOTGOV domain (i.e. DOTGOV only and NOT the approximately 5,000 second-level DOTGOV
+  domains). The service shall assist in maintaining the chain of trust by adding the ability to securely track and verify DOTGOV domains and to
+  allow the domain administrator to upload secure delegation material (DNSKEY RRs) to their parent zone.  The automated support services should
+  consist of: testing; reporting; signing; release management; and notifications of configuration errors and expired signatures.
+
+
+  The contractor shall maintain and update the current written procedures and develop sample agency implementation requirements for posting on
+  the DOTGOV Website www.dotgov.gov under the tab entitled DNSSEC implementation.  These written procedures must explain in detail the new
+  DNSSEC implementation with detailed procedures on exactly what the current DOTGOV registrants must do in order to comply with the DNSSEC
+  implementation.
+
+  The DNSSEC solution was implemented by GSA in the DOTGOV top-level domain in February 2009. The contractor shall provide automated and manual
+  technical support services to Federal Agencies, State, County, Local and NSN Government Technical IT Staff to implement the DNSSEC Secure
+  Naming Infrastructure for second level DOTGOV domains.  The support will be provided under the same time frame perimeters as Task 2 above.
+  This will provide support for end user rollouts, upgrades, troubleshooting, and configuration with Federal, State, Local and NSN technical IT
+  staff implementing the U.S. Government Secure Naming Infrastructure policies and procedures.  The manual technical support services should
+  consist of telephone support, signed name server configuration testing, troubleshooting, and rollout support as requested by end users through
+  the GSA DOTGOV Helpdesk.
+
+
+The DNSSEC service must adhere to the guidance and/or standards outlined in the following publications:
+
+National Institutes of Standards and Technology’s (NIST) Special Publication 800-53 revision 3, and 800-81 revision 1
+(http://csrc.nist.gov/publications/PubsSPs.html)
+
+NIST Special Publication 800-57 (parts 1, 2 and 3), Recommendation for Key Management – Part 1 : General, Part 2: Best Practices for Key
+Management Organization, and Part 3, Application-Specific Key Management Guidance (http://csrc.nist.gov/publications/PubsSPs.html)
+
+
+RFC 4033 R. Arends, R. Austein, M. Larson, D. Massey, S. Rose. DNS Security Introduction and Requirements. October 10, 2004.
+(http://www.ietf.org/rfc/rfc4033.txt)
+
+RFC 4034 R. Arends, R. Austein, M. Larson, D. Massey, S. Rose. Resource Records for the DNS Security Extensions. March, 2005.
+(http://www.ietf.org/rfc/rfc4034.txt ).
+
+RFC 4045 R. Arends, R. Austein, M. Larson, D. Massey, S. Rose. Protocol Modifications for the DNS Security Extensions . March, 2005.
+(http://www.ietf.org/rfc/rfc4045.txt)
+
+In addition, the contractor shall implement a DNSSEC deployment solution that:
+
+     Supports RFC5155 (http://www.ietf.org/rfc/rfc5155.txt).
+
+     Supports RFC5011 for trust anchor rollover procedures (http://www.ietf.org/rfc/rfc5011.txt).
+
+     Supports interoperability testing for DNSSEC-aware recursive and stub resolver.
+
+     Supports existing encryption algorithms and migration to newly specified algorithms.
+
+     Supports DNSSEC-aware Utilities.
+
+     Complies with FIPS 140-3 level 3 (www.csrc.nist.gov/publications/PubsFIPS.html).
+
+     Supports IPv6 (http://www.ietf.org/rfc/rfc2460.txt).
+
+     Ensures interoperability with IETF specified Internet protocols
+
+     Supports Dynamic DNS updates that complies with NIST Special Publication 800-81 revision 1.
+
+
+
+
+
+
+4. Type and Term of Contract
+
+The term of the contract is a base period of one (1) year with four (4) one year options.
+
+The government intends to make award under this solicitation in first quarter FY2011.
+
+The General Services Administration anticipates awarding a Firm Fixed Price contract (per registration fee and transition cost, see attachment 2
+Page 4) for providing the DOTGOV domain registrations and renewals.
+
+
+
+
+5. Migration/Transition Of Operations For The New DOTGOV System
+
+     The Contractor shall, prior to the operational start date, work with the incumbent Contractor to ensure continuity of services and to
+     provide system migration/transition services in order to meet the imposed operational start date.  System transition from the current DOTGOV
+     system to the Contractor’s DOTGOV system shall be provided in accordance with the Contractor’s approved Transition Plan.
+
+6. Deliverables, Reports, Acceptance and Points of Contact
+
+Deliverables/Due Dates
+
+|Deliverable                                       |Delivery Due Dates (On or Before)                                              |
+|DOTGOV Transition Plan                            |Due with offer submission                                                      |
+|Preaward C&A Plan                                 |Due with offer submission                                                      |
+|System Security Plan                              |-Initial - 30 days after award                                                 |
+|                                                  |-Revision - 60 calendar days after award                                       |
+|                                                  |-Final - 120 calendar days after award                                         |
+|                                                  |-Updated annually or as system/environmental changes occur                     |
+|Security Test and Evaluation Plan                 |-Initial - 30 days after award                                                 |
+|                                                  |-Revision - 60 calendar days after award                                       |
+|                                                  |-Final - 120 calendar days after award                                         |
+|                                                  |-Updated annually                                                              |
+|Contingency Plan, Contingency Plan Test, and Test |-Initial - 30 days after award                                                 |
+|Report                                            |-Revision - 60 calendar days after award                                       |
+|                                                  |-Final - 120 calendar days after award                                         |
+|                                                  |-Updated annually                                                              |
+|Configuration Management Plan                     |-Initial - 30 days after award                                                 |
+|                                                  |-Revision - 60 calendar days after award                                       |
+|                                                  |-Final - 120 calendar days after award                                         |
+|                                                  |-Updated annually                                                              |
+|Lessons Learned Report (LLR)                      |LLR for Transition - 120 calendar days after award LLR for System Operations - |
+|                                                  |annually                                                                       |
+|Security Test/Scanning Report                     |Due in accordance with the dates in the GSA IT Security Program Management     |
+|                                                  |Implementation Plan                                                            |
+|Authority to Operate/Letter of Approval           |Due NLT 120 calendar days after submission of C&A documentation                |
+|(granted by the CIO Office after successful C&A   |                                                                               |
+|completion by the awardee)                        |                                                                               |
+|Quarterly POA&M Reports and submissions           |Due in accordance with the dates in the GSA IT Security Program Management     |
+|                                                  |Implementation Plan                                                            |
+|Any other reports/documents                       |As directed or as prescribed in the GSA IT Security Program Management         |
+|                                                  |Implementation Plan                                                            |
+|Annual FISMA Assessments                          |As prescribed in the GSA IT Security Program Management Implementation Plan    |
+|DOTGOV In-Progress Review                         |Quarterly                                                                      |
+
+After contract award, each deliverable, with the exception of the DOTGOV Transition Plan and the preaward C&A Plan, shall first be submitted in
+a draft format for review and approval by the COTR.  Upon approval by the COTR of the draft document, the contractor shall incorporate any
+comments and resubmit it within five (5) business days as a final document which shall be delivered in final form.  For each deliverable (draft
+or final), the contractor shall provide one (1) electronic version of the deliverable to the COTR.  All deliverables shall be compatible with
+one of the following:  Microsoft Office Word, PowerPoint, Visio and/or Excel.
+
+The COTR reserves the right to accept/reject the deliverables.  The COTR also has the right to reject or require correction of any deficiency(s)
+found in any deliverable that is contrary to the information contained in this Statement of Objectives (SOO).  If a deliverable is rejected by
+the COTR, the contractor will be notified in writing by the COTR as to the specific reason(s) why the deliverable is being rejected.
+Deficiencies of a minor technical nature will be evaluated by the COTR to determine their significance, and the appropriate course of action to
+take in the circumstances. In cases other than minor technical problems the contractor shall make the appropriate corrections within 10 days of
+notification.
+
+Access Rights
+
+The Contractor shall make books, materials, or other records available to the Government on a 24-48 hours notice, to enable verifying of domain
+registration sales under this contract.  Facilitation shall apply to the GSA Supplier Management Division (QV0C) office, as well as any agency
+who has procured services under this contract.  Access is anticipated on at least an annual basis by GSA Supplier Management Division (QV0C).
+
+GSA Procuring Contracting Officer (PCO)
+
+The GSA PCO has overall responsibility for administering the contract. All contract administration shall be performed by the GSA PCO:
+
+Mr. Ben A. Reed
+Phone: (703) 306-6626
+E-mail: ben.reed@gsa.gov
+
+
+GSA Program Manager
+
+The GSA Program Manager provides central technical oversight, and management (and final domain registration approvals) regarding this contract
+to the contractor, GSA, and agency customers.  The name and address of the GSA Program Manager is:
+
+To Be Determined
+
+Quarterly Revenue Reports - As a requirement under this contract, the contractor shall submit a Quarterly Revenue Report.  This report shall be
+submitted to the COTR by the 15th of the month following the last business day of the quarter. (See Attachment 5 for format)
+
+Special Reports -  The COTR may request a special report on DOTGOV data and/or activities such as, but not limited to:  database queries
+relating to how many total domains are supported by the system; how many domains does a particular agency or state/county/local or NSN
+government have; how many approved domain names are there in the database or for a particular agency or state/county/local or NSN government; or
+to back-up or recover a record or records that was inadvertently deleted.
+
+Briefings - Upon request, the contractor shall prepare and present briefings to the GSA-FAS DOTGOV Program Management including the COTR and/or
+CO.  The Department of Homeland Security, (DHS) may attend the briefings.  Details of this briefing shall be on the results of efforts
+undertaken under this contract.  In addition, the contractor shall provide a quarterly formal program review briefing, known as the DOTGOV In-
+Progress Review (IPR) which will include pertinent performance statistics and DNSSEC activity.
+
+Meetings - The contractor shall attend meetings and briefings with Government/Non-Government entities as requested by the Government.  Generally
+all meetings and briefings will be conducted at the DOTGOV Program Office located in Fairfax, VA, but the Government may stipulate other meeting
+and briefing locations, or may request teleconferences as appropriate.
+
+
+7a. Technical Specifications
+
+Exclusive Certification and Accreditation (C&A) Guidance
+
+This document describes the Information Technology (IT) systems security support services required by the Office of the Chief Information
+Officer (CIO) and Office of Integrated Technology Services within the U.S. General Services Administration (GSA) Federal Acquisition Service
+(FAS).  The contractor shall comply with all the requirements of the document titled “Security Language for IT Acquisition Efforts – CIO IT
+Security 09-48,” to include all referenced documents.
+
+BACKGROUND AND METHODOLOGY:
+
+ITS is responsible for managing the IT systems security management of the DOTGOV System.  The Statement of Objectives details the components and
+specific requirements of the DOTGOV system.
+
+            This C&A guidance describes the professional IT system security technical support services to be completed by the awarded contractor
+            for the DOTGOV system.
+
+
+            Since this system is a Major Information System categorized at a FIPS 199 High Impact, a Security Test & Evaluation (also known as a
+            Security Assessment) will be required as part of the C&A process
+The Government requires that the various C&A tasks be performed as part of three key processes: Certification Preparation; Certification; and
+Accreditation.
+The completion of the above C&A-related activities will help ensure that appropriate combinations of security measures are identified and
+implemented to counter relevant threats and vulnerabilities to the DOTGOV system.  More specifically, the government’s expectation is that the
+completion of the above tasks will:
+
+    • Validate the security requirements established for the DOTGOV system
+    • Examine system safeguards and controls to assess their adequacy
+    • Support management approval to authorize continued operation of the DOTGOV system
+
+
+
+
+            All Certification tasks to be performed by the contractor shall be consistent with GSA guidelines pertaining to certification
+            activities and related documentation.
+
+            All Accreditation tasks to be performed by the contractor shall be consistent with GSA guidelines pertaining to accreditation
+            activities and related documentation.
+
+The completion/approval of the C&A derived Authority to Operate shall be on or before 120 days following the submission of initial draft
+documentation.  The initial draft documentation shall be submitted not later than 30 calendar days after date of award.
+
+The contractor shall support the testing of the security controls in the system in accordance with the most current version of NIST 800-53
+(currently revision 3). In addition, The contractor will need to be prepared for penetration testing, the time of which they may not be informed
+about.  The contractor shall include their Primary and backup/failover sites as both will be reviewed and tested. FAS OCIO will schedule the C&A
+kick-off meeting when the C&A documentation is received.
+
+Contractors entering into an agreement for services to the General Services Administration (GSA) and/or its Federal customers shall be
+contractually subject to all GSA and Federal IT Security standards, policies, and reporting requirements.  The contractor shall meet and comply
+with all GSA IT Security Policies and all applicable GSA and NIST standards and guidelines, other Government-wide laws and regulations for
+protection and security of Information Technology.
+
+All GSA contractors must comply with the GSA policies below (these documents are all referenced within the GSA IT Security Policy).
+    • GSA Information Technology (IT) Security Policy, CIO P 2100.1E.
+
+    • GSA Order CIO P 2181.1 “GSA HSPD-12 Personal Identity Verification and Credentialing Handbook”, dated October 20, 2008.
+
+    • GSA Order CIO 2104.1, “GSA Information Technology (IT) General Rules of Behavior”, dated July 3, 2003.
+
+    • GSA Order CPO 1878.1, “GSA Privacy Act Program”, dated October 27, 2003.
+
+    • GSA IT Security Procedural Guide 04-26, “FISMA Implementation”.”
+
+    • GSA IT Security Procedural Guide 06-29, “Contingency Plan Testing”.”
+
+    • GSA IT Security Procedural Guide 06-30, “Managing Enterprise Risk.”
+
+    • GSA IT Security Procedural Guide 08-39, “FY 2009 IT Security Program Management Implementation Plan.”
+
+    • GSA IT Security Procedural Guide 09-44, “Plan of Action and Milestones (POA&M).”
+
+
+
+    • Contractors are also required to comply with Federal Information Processing Standards (FIPS), the “Special Publications 800 series”
+      guidelines published by NIST, and the requirements of FISMA.
+
+
+
+    • Federal Information Security Management Act (FISMA) of 2002.
+
+    • Clinger-Cohen Act of 1996 also known as the “Information Technology Management Reform Act of 1996.”
+
+    • Privacy Act of 1974 (5 U.S.C. § 552a).
+
+    • Homeland Security Presidential Directive (HSPD-12), “Policy for a Common Identification Standard for Federal Employees and Contractors”,
+      August 27, 2004.
+
+    • Office of Management and Budget (OMB) Circular A-130, “Management of Federal Information Resources”, and Appendix III, “Security of Federal
+      Automated Information Systems”, as amended.
+
+    • OMB Memorandum M-04-04, “E-Authentication Guidance for Federal Agencies.”
+
+    • FIPS PUB 199, “Standards for Security Categorization of Federal Information and Information Systems.”
+
+    • FIPS PUB 200, “Minimum Security Requirements for Federal Information and Information Systems.”
+
+    • FIPS PUB 140-2, “Security Requirements for Cryptographic Modules.”
+
+    • NIST Special Publication 800-18 Rev 1, “Guide for Developing Security Plans for Federal Information Systems.”
+
+    • NIST Special Publication 800-30, “Risk Management Guide for Information Technology Security Risk Assessment Procedures for Information
+      Technology Systems.”
+
+    • NIST Special Publication 800-34, “Contingency Planning Guide for Information Technology Systems.”
+
+    • NIST SP 800-37, Revision 1, “Guide for the Security Certification and Accreditation of Federal Information Systems.”
+
+    • NIST Special Publication 800-47, “Security Guide for Interconnecting Information Technology Systems.”
+
+    • NIST Special Publication 800-53 Revision 3, “Recommended Security Controls for Federal Information Systems.”
+
+    • NIST Special Publication 800-53A, “Guide for Assessing the Security Controls in Federal Information Systems.”
+
+
+
+
+
+   2 GSA Security Compliance Requirements
+
+FIPS 200, “Minimum Security Requirements for Federal Information and Information Systems”, is a mandatory federal standard that defines the
+minimum security requirements for federal information and information systems in seventeen security-related areas.  Contractor systems
+supporting GSA must meet the minimum security requirements through the use of the security controls in accordance with NIST Special Publication
+800-53, Revision 3 (hereafter described as NIST 800-53), and “Recommended Security Controls for Federal Information Systems.
+
+To comply with the federal standard, GSA must determine the security category of the information and information system in accordance with FIPS
+199, “Standards for Security Categorization of Federal Information and Information Systems”, and then the contractor shall apply the
+appropriately tailored set of Low, Moderate, or High impact baseline security controls in NIST 800-53, as determined by GSA.  It has been
+determined that this system will be a High Impact system.
+NIST 800-53 controls requiring organization-defined parameters (i.e., password change frequency) shall be consistent with GSA specifications.
+The GSA-specified control parameters and supplemental guidance defining more specifically the requirements per FIPS 199 impact level are
+provided in Appendix A, of this document.
+
+The Contractor shall use GSA technical guidelines, NIST guidelines, Center for Internet Security (CIS) guidelines (Level 1), or industry best
+practice guidelines in hardening their systems, as deemed appropriate by the Authorizing Official.
+
+
+3 Certification and Accreditation (C&A) Activities
+
+The implementation of a new Federal Government IT system requires a formal approval process known as Certification and Accreditation (C&A).
+NIST Special Publication 800-37, Revision 1 (hereafter described as NIST 800-37) and GSA IT Security Procedural Guide 06-30, “Managing
+Enterprise Risk”, give guidelines for performing the C&A process.  The Contractor system/application must have a valid certification and
+accreditation (signed off by the Federal government) before going into operation and processing GSA information.  The failure to obtain and
+maintain a valid certification and accreditation will be grounds for termination of the contract.  The system must have a new C&A conducted (and
+signed off on by the Federal government) at least every three (3) years or at the discretion of the Authorizing Official when there is a
+significant change to the system’s security posture.   All NIST 800-53 controls must be tested/assessed no less than every 3 years.
+
+
+Certification of System
+
+
+   1. The Contractor shall comply with Certification and Accreditation (C&A) requirements as mandated by Federal laws and policies, including
+      making available any documentation, physical access, and logical access needed to support this requirement.  The Level of Effort for the
+      C&A is based on the System’s NIST Federal Information Processing Standard (FIPS) Publication 199 categorization.  The contractor shall
+      create, maintain and update the following C&A documentation:
+
+         • System Security Plan (SSP) completed in agreement with NIST Special Publication 800-18, Revision 1. The SSP shall include as
+           appendices required policies and procedures across 18 control families mandated per FIPS 200, Rules of Behavior, and Interconnection
+           Agreements (in agreement with NIST Special Publication 800-47).  The SSP shall include as an appendix, a completed GSA 800-53 Control
+           Tailoring worksheet included in Appendix A of this guide.  Column E of the worksheet titled “Contractor Implemented Settings” shall
+           document all contractor implemented settings that are different from the GSA defined setting and where the GSA defined setting allows
+           a contractor determined setting).
+
+         • Contingency Plan (including Disaster Recovery Plan) completed in agreement with NIST Special Publication 800-34.
+
+         • Contingency Plan Test Report completed in agreement with GSA IT Security Procedural Guide 06-29, “Contingency Plan Testing.”
+
+         • Plan of Actions & Milestones completed in agreement with GSA IT Security Procedural Guide 09-44, “Plan of Action and Milestones
+           (POA&M).”
+
+         • Independent Penetration Test Report documenting the results of vulnerability analysis and exploitability of identified
+           vulnerabilities.
+
+In addition to the above documentation, GSA recommends (not a requirement) the contractor employ code analysis tools to examine the software for
+common flaws and document results in a Code Review Report.  The Code Review Report should be submitted as part of the C&A package.  Reference
+NIST 800-53 control SA-11, Enhancement 1 for additional details.
+
+   2. Information systems must be certified and accredited at least every three (3) years or whenever there is a significant change to the
+      system’s security posture in accordance with NIST Special Publication 800-37 Revision 1, “Guide for the Security Certification and
+      Accreditation of Federal Information Systems”, and CIO IT Security 06-30, “Managing Enterprise Risk .”
+
+   3. At the Moderate impact level and higher, the contractor or Government (as determined in the contract) will be responsible for providing an
+      independent Security Assessment/Risk Assessment in accordance with GSA IT Security Procedural Guide 06-30, “Managing Enterprise Risk.”
+   4. If the Government is responsible for providing a Security Assessment/Risk Assessment and Penetration Test, the Contractor shall allow GSA
+      employees (or GSA designated third party contractors) to conduct certification and accreditation (C&A) activities to include control
+      reviews in accordance with NIST 800-53/NIST 800-53A and GSA IT Security Procedural Guide 06-30, “Managing Enterprise Risk”.  Review
+      activities include but are not limited to operating system vulnerability scanning, web application scanning, and database scanning of
+      applicable systems that support the processing, transportation, storage, or security of GSA information.  This includes the general support
+      system infrastructure.
+   5. Identified gaps between required 800-53 controls and the contractor’s implementation as documented in the Security Assessment/Risk
+      Assessment report shall be tracked for mitigation in a Plan of Action and Milestones (POA&M) document completed in accordance with GSA IT
+      Security Procedural Guide 09-44, “Plan of Action and Milestones (POA&M).”  Depending on the severity of the gaps, the Government may
+      require them to be remediated before an Authorization To Operate is issued.
+   6. The Contractor is responsible for mitigating all security risks found during C&A and continuous monitoring activities.  All high-risk
+      vulnerabilities must be mitigated within 30 days and all moderate risk vulnerabilities must be mitigated within 90 days from the date
+      vulnerabilities are formally identified.  The Government will determine the risk rating of vulnerabilities.
+
+
+Accreditation of System
+
+   1. Upon receipt of the documentation (Certification Package) described in GSA IT Security Procedural Guide 06-30, “Managing Enterprise Risk”
+      and NIST Special Publication 800-37 as documented above, the GSA Authorizing Official (AO) for the system (in coordination with the GSA
+      Senior Agency Information Security Officer (SAISO), system Program Manager, Information System Security Manager (ISSM), and Information
+      System Security Officer (ISSO)) will render an accreditation decision to:
+         o Authorize system operation w/out any restrictions or limitations on it operation;
+         o Authorize system operation w/ restriction or limitation on its operation, or;
+         o Not authorize for operation.
+
+   2. The Contractor shall provide access to the Federal Government, or their designee acting as their agent, when requested, in order to verify
+      compliance with the requirements for an Information Technology security program.  At its option, the Government may choose to conduct on
+      site surveys.  The Contractor shall make appropriate personnel available for interviews and documentation during this review.  If
+      documentation is considered proprietary or sensitive, these documents may be reviewed on-site under the hosting Contractor’s supervision.
+
+
+4 Reporting and Continuous Monitoring
+
+Maintenance of the security authorization to operate will be through continuous monitoring of security controls of the contractors system and
+its environment of operation to determine if the security controls in the information system continue to be effective over time in light of
+changes that occur in the system and environment.  Through continuous monitoring, security controls and supporting deliverables are updated and
+submitted to GSA per the schedules below.  The submitted deliverables (or lack thereof) provide a current understanding of the security state
+and risk posture of the information systems.  They allow GSA authorizing officials to make credible risk-based decisions regarding the continued
+operations of the information systems and initiate appropriate responses as needed when changes occur.
+
+
+Deliverables to be provided to the GSA COTR/ISSO/ISSM Quarterly
+
+     1. Plan of Action & Milestones  (POA&M) Update
+
+Reference: NIST 800-53 control CA-5
+
+Contractor shall provide POA&M updates in accordance with requirements and the schedule set forth in GSA CIO IT Security Procedural Guide 09-44,
+“Plan of Action and Milestones.”
+
+
+
+     2. Vulnerability Scanning
+
+Reference: NIST 800-53 control RA-5
+
+Contractor shall provide vulnerability scan reports from Web Application, Database, and Operating System Scans.  Scan results shall be managed
+and mitigated in Plans of Action and Milestones (POA&Ms) and submitted together with the quarterly POA&M submission.
+
+
+Deliverables to be provided to the GSA COTR/ISSO/ISSM Annually
+
+     1. Updated  C&A documentation including the System Security Plan and Contingency Plan
+
+   i. System Security Plan
+      Reference: NIST 800-53 control PL-2
+      Contractor shall review and update the System Security Plan annually to ensure the plan is current and accurately described implemented
+      system controls and reflects changes to the contractor system and its environment of operation. The System Security Plan must be in
+      accordance with NIST 800-18, Revision 1, Guide for Developing Security Plans.
+
+  ii. Contingency Plan
+
+      Reference: NIST 800-53 control CP-2
+      Contractor shall provide an annual update to the contingency plan completed in accordance with NIST 800-34, Contingency Planning Guide.
+
+     2. User Certification/Authorization Review Documents
+Reference: NIST 800-53 control AC-2
+Contractor shall provide the results of the annual review and validation of system users’ accounts to ensure the continued need for system
+access.  The user certification and authorization documents will illustrate the organization establishes, activates, modifies, reviews,
+disables, and removes information system accounts in accordance with documented account management procedures.
+
+     3. Separation of Duties Matrix
+Reference: NIST 800-53 control AC-5
+Contractor shall develop and furnish a separation of duties matrix reflecting proper segregation of duties for IT system maintenance,
+management, and development processes.  The separation of duties matrix will be updated or reviewed on an annual basis.
+
+     4. Information Security Awareness and Training Records
+Reference: NIST 800-53 control AT-4
+Contractor shall provide the results of security awareness (AT-2) and role-based information security technical training (AT-3).  AT-2 requires
+basic security awareness training for employees and contractors that support the operation of the contractor system.  AT-3 requires information
+security technical training to information system security roles.  Training shall be consistent with the requirements contained in C.F.R. Part 5
+Subpart C (5 C.F.R 930.301) and conducted at least annually.
+
+     5. Annual FISMA Assessment
+Reference: NIST 800-53 control CA-2
+Contractor shall deliver the results of the annual FISMA assessment conducted per GSA CIO IT Security Procedural Guide 04-26, “FISMA
+Implementation”.  The assessment is completed using the GSA on-line assessment tool.
+
+     6. System(s) Baseline Configuration Standard Document
+Reference: NIST 800-53 control CM-2
+Contractor shall provide a well defined, documented, and up-to-date specification to which the information system is built.
+
+     7. System Configuration Settings
+Reference: NIST 800-53 control CM-6
+Contractor shall establish and document mandatory configuration settings for information technology products employed within the information
+system that reflect the most restrictive mode consistent with operational requirements.
+Configuration settings are the configurable security-related parameters of information technology products that compose the information system.
+Systems should be configured in agreement with GSA technical guidelines, NIST guidelines, Center for Internet Security guidelines (Level 1), or
+industry best practice guidelines in hardening their systems, as deemed appropriate by the Authorizing Official.  System configuration settings
+will be updated or reviewed on an annual basis.
+
+     8. Configuration Management Plan
+Reference: NIST 800-53 control CM-9
+Contractor shall provide an annual update to the Configuration Management Plan for the information system.
+
+     9. Contingency Plan Test Report
+Reference: NIST 800-53 control CP-4
+Contractor shall provide a contingency plan test report completed in accordance with GSA IT Security Procedural Guide 06-29, “Contingency Plan
+Testing.”  A continuity test shall be conducted annually prior to mid-July of each year. The continuity test can be a table top test while the
+system is at the “Low Impact” level.  The table top test must include Federal and hosting Contractor representatives.  Moderate and High impact
+systems must complete a functional exercise at least once every three years.
+
+    10. Incident Response Test Report
+Reference: NIST 800-53 control IR-3
+Contractor shall provide an incident response plan test report documenting results of incident reporting process per GSA IT Security Procedural
+Guide 01-02, “Incident Handling.”
+
+    11. Results of Physical Security User Certification/Authorization Review
+Reference: NIST 800-53 control PE-2
+Contractor shall provide the results of annual reviews and validations of physical access authorizations to facilities supporting the contractor
+system to ensure the continued need for physical access.
+
+    12. Results of Review of Physical Access Records
+Reference: NIST 800-53 control PE-8
+Contractor shall provide the results of annual reviews and validations of visitor access records to ensure the accuracy and fidelity of
+collected data.
+
+    13. Information System Interconnection Agreements
+Reference: NIST 800-53 control CA-3
+The contractor shall provide updated Interconnection Security Agreements (ISA) and supporting Memorandum of Agreement/Understanding (MOA/U),
+completed in accordance with NIST 800-47, “Security Guide for Connecting Information Technology Systems”, for existing and new interconnections.
+ Per NIST 800-47, an interconnection is the direct connection of two or more IT systems for the purpose of sharing data and other information
+resources through a pipe, such as ISDN, T1, T3, DS3, VPN, etc.  Interconnections agreements shall be submitted as appendices to the System
+Security Plan.
+
+    14. Rules of Behavior
+Reference: NIST 800-53 control PL-4
+Contractor shall define and establish Rules of Behavior for information system users.  Rules of Behavior shall be submitted as an appendix to
+the System Security Plan.
+
+    15. Personnel Screening and Security
+Reference: NIST 800-53 control PS-3, NIST 800-53 control PS-7
+Contractor shall furnish documentation reflecting favorable adjudication of background investigations for all personnel (including
+subcontractors) supporting the system.  Contractors shall comply with GSA order 2100.1 – IT Security Policy and GSA Order CIO P 2181 – HSPD-12
+Personal Identity Verification and Credentialing Handbook.  GSA separates the risk levels for personnel working on Federal computer systems into
+three categories:  Low Risk, Moderate Risk, and High Risk.
+
+    • Those contract personnel (hereafter known as “Applicant”) determined to be in a Low Risk position will require a National Agency Check with
+      Written Inquiries (NACI) investigation.
+
+    • Those Applicants determined to be in a Moderate Risk position will require either a Limited Background Investigation (LBI) or a Minimum
+      Background Investigation (MBI) based on the Contracting Officer’s (CO) determination.
+
+    • Those Applicants determined to be in a High Risk position will require a Background Investigation (BI).
+
+The Contracting Officer, through the Contracting Officer’s Technical Representative or Program Manager will ensure that a completed Contractor
+Information Worksheet (CIW) for each Applicant is forwarded to the Federal Protective Service (FPS) in accordance with the GSA/FPS Contractor
+Suitability and Adjudication Program Implementation Plan dated 20 February 2007.  FPS will then contact each Applicant with instructions for
+completing required forms and releases for the particular type of personnel investigation requested.
+
+Applicants will not be reinvestigated if a prior favorable adjudication is on file with FPS or GSA, there has been less than a one year break in
+service, and the position is identified at the same or lower risk level.
+
+Once a favorable FBI Criminal History Check (Fingerprint Check) has been returned, Applicants may receive a GSA identity credential (if
+required) and initial access to GSA information systems.  The HSPD-12 Handbook contains procedures for obtaining identity credentials and access
+to GSA information systems as well as procedures to be followed in case of unfavorable adjudications.
+
+
+Deliverables to be provided to the GSA COTR/ISSO/ISSM Biennially
+
+     1. Policies and Procedures
+Contractor shall develop and maintain current the following policies and procedures:
+
+   i. Access Control Policy and Procedures (NIST 800-53 AC-1)
+  ii. Security Awareness and Training Policy and Procedures (NIST 800-53 AT-1)
+ iii. Audit and Accountability Policy and Procedures (NIST 800-53 AU-1)
+  iv. Identification and Authentication Policy and Procedures (NIST 800-53 IA-1)
+   v. Incident Response Policy and Procedures (NIST 800-53 IR-1, reporting timeframes are documented in GSA CIO IT Security Procedural Guide 01-
+      02, Incident Handling
+  vi. System Maintenance Policy and Procedures (NIST 800-53 MA-1)
+ vii. Media Protection Policy and Procedures (NIST 800-53 MP-1)
+viii. Physical and Environmental Policy and Procedures (NIST 800-53 PE-1)
+  ix. Personnel Security Policy and Procedures (NIST 800-53 PS-1)
+   x. System and Information Integrity Policy and Procedures (NIST 800-53 SI-1)
+  xi. System and Communication Protection Policy and Procedures (NIST 800-53 SC-1)
+ xii. Key Management Policy (NIST 800-53 SC-12)
+
+
+5 Additional Stipulations (as applicable)
+
+      1. The deliverables identified in section 1.4 shall be labeled “CONTROLLED UNCLASSIFIED INFORMATION” (CUI) or contractor selected
+         designation per document sensitivity.  External transmission/dissemination of FOUO and CUI to or from a GSA computer must be encrypted.
+          Certified encryption modules must be used in accordance with FIPS PUB 140-2, “Security requirements for Cryptographic Modules.”
+
+      2. Federal Desktop Core Configuration
+The Contractor shall certify applications are fully functional and operate correctly as intended on systems using the Federal Desktop Core
+Configuration (FDCC). This includes Internet Explorer 7 configured to operate on Windows. The standard installation, operation, maintenance,
+update, and/or patching of software shall not alter the configuration settings from the approved FDCC configuration. The information technology
+should also use the Windows Installer Service for installation to the default “program files” directory and should be able to silently install
+and uninstall.  Applications designed for normal end users shall run in the standard user context without elevated system administration
+privileges.  The contractor shall use Security Content Automation Protocol (SCAP) validated tools with FDCC Scanner capability to certify their
+products operate correctly with FDCC configurations and do not alter FDCC settings.
+
+      3. As prescribed in the Federal Acquisition Regulation (FAR) clause 24.104, if the system involves the design, development, or operation
+         of a system of records on individuals, the contractor shall implement requirements in FAR clause 52.224-1, “Privacy Act Notification”
+         and FAR clause 52.224-2, “Privacy Act.”
+
+      4. The Contractor shall cooperate in good faith in defining non-disclosure agreements that other third parties must sign when acting as
+         the Federal government’s agent.
+
+      5. The Government has the right to perform manual or automated audits, scans, reviews, or other inspections of the vendor’s IT environment
+         being used to provide or facilitate services for the Government.  In accordance with the Federal Acquisitions Regulations (FAR) clause
+         52.239-1, the Contractor shall be responsible for the following privacy and security safeguards:
+
+   i. The Contractor shall not publish or disclose in any manner, without the Task Ordering Officer’s written consent, the details of any
+      safeguards either designed or developed by the Contractor under this Task Order or otherwise provided by the Government.  Exception -
+      Disclosure to a Consumer Agency for purposes of C&A verification.   <List any other exceptions as necessary>
+
+
+  ii. To the extent required to carry out a program of inspection to safeguard against threats and hazards to the security, integrity, and
+      confidentiality of any non-public Government data collected and stored by the Contractor, the Contractor shall afford the Government
+      logical and physical access to the Contractor’s facilities, installations, technical capabilities, operations, documentation, records, and
+      databases within 72 hours of the request.  Automated audits shall include, but are not limited to, the following methods:
+
+      • Authenticated and unauthenticated operating system/network vulnerability scans
+
+      • Authenticated and unauthenticated web application vulnerability scans
+
+      • Authenticated and unauthenticated database application vulnerability scans
+
+
+
+      Automated scans can be performed by Government personnel, or agents acting on behalf of the Government, using Government operated
+      equipment, and Government specified tools.  If the vendor chooses to run its own automated scans or audits, results from these scans may,
+      at the Government’s discretion, be accepted in lieu of Government performed vulnerability scans.  In these cases, scanning tools and their
+      configuration shall be approved by the Government.  In addition, the results of vendor-conducted scans shall be provided, in full, to the
+      Government.
+
+
+ iii. If new or unanticipated threats or hazards are discovered by either the Government or the Contractor, or if existing safeguards have ceased
+      to function, the discoverer shall immediately bring the situation to the attention of the other party.
+
+
+
+C&A PROJECT KICK-OFF MEETING
+
+The contractor shall initiate work on this C&A requirement by meeting with key client agency representatives, to include the FAS C&A contractor,
+to ensure that a common understanding of the requirements, expectations, and ultimate end products exists between all Parties.  The FAS C&A
+contractor shall conduct all the security testing required for accreditation.  The contractor shall discuss their understanding of the project,
+and review the background information and materials provided by the Government.  Discussion shall also include the scope of work to be
+performed, the deliverables to be produced, how contractor work efforts will be planned and organized, what assumptions are being made by the
+Contractor/Government in proceeding to complete the work, and contract deliverables.  A concerted effort shall be made by the contractor to gain
+a thorough understanding of the Government’s expectations.  However, nothing discussed in this or in any other subsequent meetings or
+discussions between the client and the contractor will be construed as adding, deleting, or modifying any contract requirements, including
+deliverables and due dates without a written modification issued by the Contracting Officer.  All members will agree upon the data that shall be
+collected to complete the process and will identify personnel who will be interviewed to collect the data.  A draft C&A plan shall be reviewed.
+It shall include a schedule of all identified project activities, milestones, and meetings.
+
+GENERAL COMPLIANCE REQUIREMENTS
+
+GSA information systems are the property of the Government.  The contractor shall be responsible for adhering to all aspects of the Privacy Act
+and is prohibited from removing from the worksite any programs, documentation, or data without the knowledge AND written approval of the COTR.
+
+PERSONNEL REQUIREMENTS
+
+All contractor personnel performing the certification and accreditation shall be Certified Information Systems Security Professionals (CISSP).
+Equivalent professional certifications may be acceptable under certain circumstances.
+
+
+Sensitive Information Storage
+
+Sensitive But Unclassified (SBU) information, data, and/or equipment will only be disclosed to authorized personnel on a Need-To-Know basis.
+The contractor shall ensure that appropriate administrative, technical, and physical safeguards are established to ensure the security and
+confidentiality of this information, data, and/or equipment is properly protected.  When no longer required, this information, data, and/or
+equipment will be returned to Government control, destroyed, or held until otherwise directed.  Destruction of items shall be accomplished by
+tearing into small parts, burning, shredding, or any other method that precludes the reconstruction of the material.  All sensitive information
+contained on contractor computers shall be either degaussed or shall use the Department of Defense method of a three time overwrite of the
+sensitive data.
+
+The Contractor shall archive the DOTGOV Registration data and provide a copy to the COTR in January and June of each calendar year.  The archive
+copy shall be delivered on compact disk (CD).
+
+The disposition of all data will be at the written direction of the COTR, this may include documents returned to Government control; destroyed;
+or held as specified until otherwise directed.  Items returned to the Government shall be hand carried or sent by certified mail to the COTR.
+
+Protection of Information
+
+The contractor shall be responsible for properly protecting all information used, gathered, or developed as a result of work under this
+contract.  The contractor shall also protect all Government data, equipment, etc. by treating the information as sensitive.  All information
+about the systems gathered or created under this contract should be considered as SBU information.  It is anticipated that this information will
+be gathered, created, and stored within the primary work location.  If contractor personnel must remove any information from the primary work
+area they should protect it to the same extent they would their proprietary data and/or company trade secrets.  The use of any information that
+is subject to the Privacy Act will be utilized in full accordance with all rules of conduct as applicable to Privacy Act Information.
+
+The government will retain unrestricted rights to government data.  The ordering activity retains ownership of any user created/loaded data and
+applications hosted on vendor’s infrastructure, as well as maintains the right to request full copies of these at any time.
+
+The data that is processed and stored by the various applications within the network infrastructure contains financial data as well as
+personally identifiable information (PII).  This data and PII shall be protected against unauthorized access, disclosure or modification, theft,
+or destruction.  The contractor shall ensure that the facilities that house the network infrastructure are physically secure.
+
+The data must be available to the Government upon request within one business day or within the timeframe specified otherwise, and shall not be
+used for any other purpose other than that specified herein.  The contractor shall provide requested data at no additional cost to the
+government.
+
+No data shall be released by the Contractor without the consent of the Government in writing.  All requests for release must be submitted in
+writing to the COTR/CO.
+
+
+
+Security Classification
+
+The preparation of the deliverables in this contract will be completed at a Sensitive but Unclassified level.
+
+Confidentiality and Nondisclosure
+
+The preliminary and final deliverables and all associated working papers and other material deemed relevant by the agency that have been
+generated by the contractor in the performance of this contract, are the property of the U.S. Government and must be submitted to the COTR at
+the conclusion of the contract.
+
+All documents produced for this project are the property of the U.S. Government and cannot be reproduced, or retained by the contractor.  All
+appropriate project documentation will be given to the agency during and at the end of this contract.  The contractor shall not release any
+information without the written consent of the Contracting Officer.
+
+Personnel working on any of the described tasks may, at Government request, be required to sign formal non-disclosure and/or conflict of
+interest agreements to guarantee the protection and integrity of Government information and documents.
+
+
+Privacy Act
+
+The use of any information that is subject to the Privacy Act shall be utilized in complete accordance with all rules of conduct as applicable
+to Privacy Act Information.
+
+7b. Standards and Measures
+
+Standards
+The contractor shall adhere to all information security requirements below:
+
+|Standard                          |Description                                                   |Website or Alternative Availability                  |
+|OMB Circular A-130                |Guidance for the management of Federal Information Resources  |http://www.whitehouse.gov/omb/circulars/a130/a130tran|
+|                                  |                                                              |s4.html                                              |
+|Federal Information Security      |Information Security for Federal Government Systems           |www.csrc.nist.gov/drivers/documents/FISMA-final.pdf  |
+|Management Act of 2002 (FISMA)    |                                                              |                                                     |
+|Rehabilitation Management Act of  |Web site accessibility for persons with disabilities          |http://www.section508.gov/index.cfm?FuseAction=conten|
+|1973 §508                         |                                                              |t&ID=12                                              |
+|36 CFR §1194                      |Accessibility standards                                       |http://www.access.gpo.gov/nara/cfr/waisidx_03/36cfr11|
+|                                  |                                                              |94_03.html                                           |
+|41 CFR §102-173                   |“Final Rule”  Federal Management Regulation; Internet GOV     |http://www.access.gpo.gov/nara/cfr/waisidx_01/41cfrv3|
+|                                  |Domain                                                        |_01.html                                             |
+|NIST Special Publication 800-81   |Secure Domain Name System (DNS) Deployment Guide              |www.csrc.nist.gov/publications/nistpubs/800-81/SP800-|
+|revision 1                        |                                                              |81.pdf                                               |
+|All applicable NIST Standards and |Various                                                       |Various                                              |
+|Guidelines                        |                                                              |                                                     |
+|GSA Order CIO IT Security 01-02   |Incident Handling Guide and Reporting Form                    |Available on request                                 |
+|GSA Order CIO IT Security 01-05   |Developing a Configuration Management Plan                    |Available on request                                 |
+|GSA Order CIO IT Security 01-07   |Access Control                                                |Available on request                                 |
+|GSA Order CIO IT Security 01-08   |Auditing and Monitoring                                       |Available on request                                 |
+|GSA Order CIO IT Security 01-09   |IT Security Procedural Guide:  Certification and Accreditation|Available on request                                 |
+|GSA Order CPO IL-03-1             |Guide for Developing Security Plans for Information Technology|Available on request                                 |
+|                                  |Systems – Ensuring Privacy and Security of Personal           |                                                     |
+|                                  |Information                                                   |                                                     |
+|GSA Order CIO IT Security -09-48  |Security Language for IT Acquisition Efforts                  |Available on request                                 |
+
+
+The DNSSEC service must adhere to the guidance and/or standards outlined in the following publications:
+
+|Description                                                                 |Website                                                                    |
+|National Institutes of Standards and Technology’s (NIST) Special            |http://csrc.nist.gov/publications/PubsSPs.html                             |
+|Publications 800-53 r3, and 800-81 r1                                       |                                                                           |
+|NIST Special Publication 800-57 (Parts 1, 2 and 3), Recommendation for Key  |http://csrc.nist.gov/publications/PubsSPs.html                             |
+|Management – Part 1: General, Part 2: Best Practices for Key Management     |                                                                           |
+|Organization                                                                |                                                                           |
+|RFC 4033 DNS Security Introduction and                                      |http://www.ietf.org/rfc/rfc4033.txt                                        |
+|Requirements (October 10, 2004)                                             |                                                                           |
+|RFC 4034 Resource Records for the DNS Security Extensions (March, 2005)     |http://www.ietf.org/rfc/rfc4034.txt                                        |
+|RFC 4045 Protocol Modifications for the DNS Security Extensions (March,     |http://www.ietf.org/rfc/rfc4045.txt                                        |
+|2005)                                                                       |                                                                           |
+|RFC RFC5155 DNS Security (DNSSEC) Hashed Authenticated Denial of Existence  |http://www.ietf.org/rfc/rfc5155.txt                                        |
+|(March, 2008)                                                               |                                                                           |
+|RFC RFC5011 Automated Updates of DNS Security (DNSSEC) Trust Anchors        |http://www.ietf.org/rfc/rfc5011.txt                                        |
+|(September 2007)                                                            |                                                                           |
+
+All work and deliverables must conform to the standards for correctness and completeness referenced in the SOO.
+
+The contractor shall ensure that any information subject to the Privacy Act of 1974 will be managed in accordance with the provisions of the
+act. (http://www.usdoj.gov/oip/privstat.htm )
+
+The criteria of The IT Security Procedural Guide:  Certification and Accreditation (C&A) CIO-IT Security 01-09 ensure compliance with the GSA
+Information Technology (IT) Security Policy, CIO P 2100.1E and Federal Regulations .
+
+The Configuration Management Guidance Document includes information and guidance for the Systems Development Life Cycle (SDLC) Standard.  All
+later revisions shall be implemented as approved and within the allowable timeframe established.
+
+The Systems Development Life Cycle (SDLC) Standard is designed to improve control, management, and reporting of developmental as well as
+operational information technology (IT) applications and projects for compliance of the Clinger-Cohen Act.
+
+The DOTGOV support systems shall also comply with the Federal Standards listed above.
+
+
+8. Performance Measures
+
+Through various means the Government will be conducting quality assurance to ensure the contractor is providing the requisite level of service
+to the Government.  The means may be through customer surveys, inquiries made to other Government offices, and/or through customer comments.
+Below is a list of the areas that will be reviewed, at a minimum, for contract effectiveness.  The Contractor must meet the following
+Performance Measures at all times during the performance of the contract:
+
+
+|Performance Measure              |Goal                                                                   |Monitor                 |
+|All deliverables                 |Received on or ahead of schedule                                       |PM/COTR                 |
+|                                 |All deliverables shall be presented in professional format             |                        |
+|Erroneous data input             |Does not exceed .5% per month of all data inputs                       |PM/COTR                 |
+|                                 |Erroneously activated domain names shall be corrected within 1 business|                        |
+|                                 |hour.                                                                  |                        |
+|Service Availability             |99.9%. The system will be available for domain registrations 99.9% of  |PM/COTR                 |
+|                                 |the time per year.  This will be measured by uptime.                   |                        |
+|                                 |The COTR is to be notified with the cause of the problem and estimated |                        |
+|                                 |time to restoration.                                                   |                        |
+|Unauthorized access              |Sufficient safeguards shall be in effect to monitor and protect against|PM/COTR                 |
+|                                 |unauthorized activity.                                                 |                        |
+|                                 |Any unauthorized access/activity will be reported to the COTR and the  |                        |
+|                                 |Department of Homeland Security’s United States-Computer Emergency     |                        |
+|                                 |Readiness Team (US-CERT) via the FAS OCIO Information Security Office  |                        |
+|                                 |within 1 business hour.                                                |                        |
+|Help Desk Support                |Answering and response of phone call and emails made to the DOTGOV     |PM/Agency customers     |
+|                                 |Helpdesk within 2 hours, or by next business day if after hours.       |                        |
+|                                 |Response call back time to customers  within 1/2 hour after receipt of |                        |
+|                                 |message, for emergency situations.                                     |                        |
+|                                 |Mean time to resolve-resolution of technical issue within 4 hours      |                        |
+|Infrastructure & Resolution      |Infrastructure can compensate for a variety of single points of failure|PM/Agency customers     |
+|Availability                     |without the client base experiencing noticeable impact.                |                        |
+|                                 |Network shall be available to all clientele 24 hours per day, 7 days a |                        |
+|                                 |week.                                                                  |                        |
+|                                 |Ability to resolve .Gov DNS inquiries 100% of the time.                |                        |
+|Domain Name Registrations        |Users are registered and activated within 48 hours after receipt of all|PM/Agency customers     |
+|                                 |required user information.                                             |                        |
+|                                 |Inquiries are addressed within one business day.                       |                        |
+
+The Quality Assurance reviews will consist of quarterly performance reviews.  The contractor shall provide data to support the above performance
+measures on a quarterly basis.  Performance measures are reported quarterly by the DOTGOV Program Office to the GSA Administrator.
+
+
+9. Miscellaneous Provisions
+
+
+
+KEY PERSONNEL
+
+(a) The Contractor shall assign and identify the following key personnel who will provide management,  administrative,  and  technical  interface
+  with Government personnel in the day-to-day performance of the contract:
+
+|1              |ISSO                                        |
+|2              |DBA                                         |
+|3              |Operations                                  |
+|4              |Customer Response                           |
+
+
+(b) Individuals assigned to these labor categories shall be designated as key personnel upon ordering of services and approval  of  the  position
+  by the COR/COTR.  Replacement of these individuals must be approved by the COR/COTR.
+
+(c) All key personnel are subject to the following:
+
+  1. Replacement is subject to the prior written approval of the COR/COTR.
+
+  2. Requests for replacement shall include a detailed resume containing a description of position duties and qualifications,  information  about
+     the qualifications of the individual(s) proposed, and any additional information requested by the Contracting Officer in  sufficient  detail
+     to permit the Contracting Officer to evaluate the impact on the work the Contractor is obligated to perform hereunder.
+
+  3. Contractor proposals to move any key personnel off the contract shall be submitted in writing at least  fifteen  (15)  days  in  advance  of
+     proposed moves, and are subject to the approval of the COR/COTR, including approval of proposed replacements.  No diversion shall be made by
+     the Contractor without the written consent of the COR/COTR.
+
+  4. The Government reserves the right to review the qualifications of key personnel  selected  to  work  on  this  contract  before  assignment,
+     including the individuals proposed (in the Contractor's proposal) and any replacements for these individuals, and to reject individuals whom
+     it determines are not suitable for the program.  The Government also reserves this right in  certain  circumstances  when  specific  non-key
+     personnel are required for specific tasks.
+
+(d) The list of key personnel set forth may be amended from time to time during the course of the contract to either add or delete personnel,  as
+  appropriate.
+
+
+Facilities
+
+Performance will be at the Contractor’s facilities.
+
+The Contractor shall be: (a) incorporated in one of the fifty states of the United States or the District of Columbia; or (b) organized under a
+law of a state of the United States or the District of Columbia.
+
+The Contractor shall possess and maintain through the performance of this procurement a physical address within the United States. All critical
+functions will be performed at the prime, such as domain registrations, not at the sub-contractor level.  In addition, all DOTGOV operations
+must be performed in the Continental U.S. only (CONUS).   This includes DNS nodes and the DNS distribution servers must be located within CONUS.
+ Outside CONUS DNS distribution servers will not be allowed for DOTGOV. The contractor shall provide the primary location for performance below,
+as well as the location for the redundant backup site.
+
+Place of Performance:
+|Place of Performance (Street Address, City, State, ZIP Code)                                  |
+|________________________________                                                              |
+|________________________________                                                              |
+|________________________________                                                              |
+|________________________________                                                              |
+|________________________________                                                              |
+|________________________________                                                              |
+
+
+|Redundant Backup Site:  (Street Address, City, State, ZIP Code)                                    |
+|________________________________                                                                   |
+|________________________________                                                                   |
+|________________________________                                                                   |
+|________________________________                                                                   |
+|________________________________                                                                   |
+|________________________________                                                                   |
+
+Transition
+
+Transition is the process for the coordinated transfer of service from the incumbent Contractor to the incoming Contractor. DOTGOV is providing
+domain registration services to approximately 5,000 Federal, State and Local Governments and Native Sovereign Nations (NSN’s), therefore it is
+imperative that all services continue without lapse.  A Transition Plan is required to be submitted as a part of the technical proposal.
+
+Personnel Requirements
+
+The Contractor shall provide staff to ensure all work is performed on schedule in accordance with the SOO. All staff interfacing with Government
+clients (federal, state, county, local and Native Sovereign Nation (NSN) shall be fluent in the English language both verbal and written.
+
+GOV Contracting Officer’s Technical Representative (COTR) Responsibilities
+
+The COTR is designated by the Contracting Officer to perform technical liaison between the Contractor’s management and the Contracting Officer
+in routine technical matters constituting general program direction within the scope of the contract.
+
+The responsibilities and limitations of the COTR are as follows:
+    (1) The COTR is responsible for the technical aspects of the project and serves as technical liaison with the Contractor.  The COTR is also
+responsible for the final inspection and acceptance of all reports and such other responsibilities as may be specified in the contract.
+    (2) The COTR is not authorized to make any commitments or otherwise obligate the Government or authorize any changes which affect the
+contract price, terms or conditions.  Any Contractor request for changes shall be referred to the Contracting Officer directly or through the
+COTR.  No such changes shall be made without the expressed prior authorization of the Contracting Officer.  The Contracting Officer may consider
+one designated person to act as an alternate COTR, if required by the Program Office.  The designation will be limited to the specific person
+requested by the Program Office, in writing with specified duties and responsibilities assigned.  The alternate must have training and the
+technical background to fulfill this duty, as determined by the Contracting Officer.
+
+Technical Direction
+
+The Government Contracting Officer’s Technical Representative (COTR) may provide technical direction and general guidance to the Contractor and
+key resource personnel.
+
+As used herein, “Technical Direction” is direction to the Contractor that fills in details, suggests possible lines of inquiry, or otherwise
+completes the general scope of the work.  “Technical Direction” must be within the terms of this contract, shall not change or modify the
+contract in any way, and shall not constitute changes (as described in the IBR clause of this contract entitled “52.243-1 Changes – Fixed Price
+Alternate I (April 1984), which may only be accomplished by written direction from the Contracting Officer (CO).
+
+Direct Order/Direct Bill
+
+Under direct-order/direct bill, agencies may go directly to the DOTGOV Contractor to place the order.  The billing for these services is
+directly between the DOTGOV Contractor and the ordering agency.
+
+Contracting Officer’s Authority
+
+The Contracting Officer is the only person authorized to approve changes in any of the requirements of the contract.
+
+Central Contractor Registration (CCR)
+
+The Contractor shall register in the Central Contractor Registration (CCR) system, which is a central database of data in support of Agency
+missions, prior to being awarded a contract (FAR 52.204-7). The registration form is at www.ccr.gov and requires the Contractor’s Data Universal
+Numbering System (DUNS) number.
+
+Government Furnished Property
+
+Government furnished property will not be provided.
+
+Government Furnished Information
+
+An SQL database containing zone files for all DOTGOV domain names will be provided as Government-Furnished-Information (GFI) to the contractor
+at award.
+
+
+Disclosure of Information
+
+Any information made available to the Contractor by the Government shall be used only for the purpose of carrying out the provisions of this
+contract and shall not be divulged or made known in any manner to any persons except as may be necessary in the performance of the contract.  In
+performance of this contract, the Contractor assumes responsibility for protection of the confidentiality of Government records and shall ensure
+that all work performed by its subcontractors shall be under the supervision of the Contractor or the Contractor’s responsible employees.  Each
+officer or employee of the Contractor or any of its subcontractors to whom any Government record may be made available or disclosed shall be
+notified in writing by the Contractor that information disclosed to such officer or employee can be used only for that purpose and to the extent
+authorized herein. Further disclosure of any such information, by any means, for a purpose or to an extent unauthorized herein, may subject the
+offender to criminal sanctions imposed by 18 U.S.C. §§ 1030.
+
+
+Representations and Certifications (ORCA)
+
+Contractors shall use the ORCA electronic systems for the submission of Representations and Certifications https://orca.bpn.gov/ .
+Dun and Bradstreet Number and Tax Identification Number (TIN) shall be provided in the proposal
+
+Cancellation
+
+The GSA CIO, Program and Contracting Offices will work with the awarded Contractor to assist the Contractor in passing the C&A. In the case
+whereby a C&A cannot be accomplished within reasonable time, the Government reserves the right to cancel this contract by providing written
+notice.
+
+The cancellation shall be effective (5) calendar days after Contractor receives the notice of cancellation.  This cancellation is NOT a
+termination for the convenience of the Government, and Contractor will not be entitled to submit a claim for termination costs.
+
+52.217-8  Option to Extend Services (NOV 1999)
+
+The Government may require continued performance of any services within the limits and at the rates specified in the contract. These rates may
+be adjusted only as a result of revisions to prevailing labor rates provided by the Secretary of Labor.  The option provision may be exercised
+more than once, but the total extension of performance hereunder shall not exceed 6 months.  The Contracting Officer may exercise the option by
+written notice to the Contractor within 30 days prior to expiration of the contract.
+
+52.217-9  Option to Extend the Term of the Contract (Mar 2000)
+
+(a) The Government may extend the term of this contract by written notice to the Contractor within 30 days prior to the end of the contract
+period of performance; provided that the Government gives the Contractor a preliminary written notice of its intent to extend at least 60 days
+before the contract expires.  The preliminary notice does not commit the Government to an extension.
+
+(b) If the Government exercises this option, the extended contract shall be considered to include this option clause.
+
+(c) The total duration of this contract, including the exercise of any options under this clause, shall not exceed 5 years.
+
+52.237-3  Continuity of Services (Jan 1991)
+(a) The Contractor recognizes that the services under this contract are vital to the Government and must be continued without interruption and
+that, upon contract expiration, a successor, either the Government or another contractor, may continue them.  The Contractor agrees to—
+(1) Furnish phase-in training; and
+(2) Exercise its best efforts and cooperation to effect an orderly and efficient transition to a successor.
+(b) The Contractor shall, upon the Contracting Officer’s written notice, (1) furnish phase-in, phase-out services for up to 90 days after this
+contract expires and (2) negotiate in good faith a plan with a successor to determine the nature and extent of phase-in, phase-out services
+required. The plan shall specify a training program and a date for transferring responsibilities for each division of work described in the
+plan, and shall be subject to the Contracting Officer’s approval. The Contractor shall provide sufficient experienced personnel during the phase-
+in, phase-out period to ensure that the services called for by this contract are maintained at the required level of proficiency.
+(c) The Contractor shall allow as many personnel as practicable to remain on the job to help the successor maintain the continuity and
+consistency of the services required by this contract. The Contractor also shall disclose necessary personnel records and allow the successor to
+conduct on-site interviews with these employees. If selected employees are agreeable to the change, the Contractor shall release them at a
+mutually agreeable date and negotiate transfer of their earned fringe benefits to the successor.
+(d) The Contractor shall be reimbursed for all reasonable phase-in, phase-out costs (i.e., costs incurred within the agreed period after
+contract expiration that result from phase-in, phase-out operations) and a fee (profit) not to exceed a pro rata portion of the fee (profit)
+under this contract.
+
+Draft Instructions to Offerors and Evaluation Factors
+
+Proposal Format and Submission Instructions
+
+Each proposal shall consist of two separate volumes.
+
+    • Volume 1, Technical  Approach shall be organized as follows and include:
+
+               Factor 1 - Technical/Management Approach
+
+               Factor 2 - Transition Approach (including DNS & DNSSEC)
+
+               Factor 3 - Past Performance (including DNS)
+
+
+               Volume 1 is limited to 25 total pages (excluding resumes, pre-award C&A Plan and Transition Plan).
+
+
+    • Volume 2, Price Proposal, shall provide a fee to be charged per-registration, and transition period price.
+
+      Factor 4  Price
+
+        Section 1 - Per-registration fee (includes new and annual renewal registrations)
+
+        Section 2 - Transition price
+
+
+        Volume 2 has no page limit, but shall be limited to pricing related information.
+
+The proposal shall not simply rephrase or state the Government requirements, but rather, shall provide convincing rationale or information to
+address how the offerer meets and or exceeds the requirements outlined above. Statements that your company “understands the requirement and will
+comply,” are not satisfactory. In addition, the offerer shall assume that the Government has no prior knowledge of their facilities, personnel,
+or experience, and evaluation will be based on the information presented in the offerer proposal.
+
+Each volume shall be in English and marked with the solicitation number, title and offerer's name. Pages shall be numbered. The typewritten or
+printed letters shall be no smaller than 11 point Times New Roman. The proposal submissions shall be in Microsoft Word or electronic PDF format
+only.
+
+
+Evaluation Criteria for Award
+
+This acquisition is being conducted under FAR Part 12, Acquisition of Commercial Items and Part 13.5 Test Program for Certain Commercial Items.
+The Government will evaluate proposals submitted in response to this acquisition for services and will award a contract to the technically
+acceptable, responsible offeror whose offer represents the best value to the Government. The GSA CIO, Program and Contracting Offices will work
+with the awarded Contractor to assist the Contractor in passing the C&A. However, it should be noted that a positive review of the pre-award C&A
+plan required under Factor 2 below can result in an award determination, but is not, in itself, a guarantee that the contractor will ultimately
+obtain C&A Authority To Operate and begin performance.
+
+All evaluation factors other than price, when combined, are considered significantly more important than price, but as non-price scores become
+closer the price becomes more important.  Non-price factors 1, 2, and 3 are in descending order of importance.
+
+All subfactors under each factor are considered of equal importance.
+
+
+Factor 1 - Technical/Management Approach
+
+At a minimum, the proposal must reflect a thorough demonstration and understanding of the DOTGOV system, business requirements, functionality,
+and complexities and provide a system solution to accomplish all aspects of the program.  The proposal must provide a plan with clear, concise,
+and specific solutions.
+
+Performance Work Statement (PWS):  The offeror must include a PWS to describe its technical approach indicating exactly what will be done for
+the Government.  These include, at a minimum:
+
+      Subfactor 1  Quality Assurance Plan (QAP):
+
+         The offeror must include a Quality Assurance Plan which addresses accomplishment of contract performance and program goals supported by
+         a quality assurance program:
+
+         1. Provides definition and implementation procedures for the performance standards and/or specifications offered.
+
+                   2. Clearly demonstrates policies and procedures for operation and maintenance of the system. Indicate the speed and
+           methodologies employed for fixing problems with DNS and DNSSEC. Escalation procedures and Change Management/Change Control procedures
+           must be clearly identified.
+
+          3. Provides documentation of current system certifications.
+
+         4. Provides a clearly demonstrated process for obtaining customer feedback addressing all aspects of customer interface and translating
+           that feedback to appropriate process improvement and verifying the effectiveness of the process improvement.
+
+         5. Clearly demonstrates a system of performance metrics, inspections, and record keeping.
+
+      Subfactor 2  Technical –
+
+          • Website management.
+
+          • Approach to Contract Administration, including a list of specific deliverables that will be provided and a proposed delivery
+            schedule.
+
+          • Contingency planning.
+
+          • Approach to provide domain name services that push registration, zone files, domain request to the Internet as required.
+
+          • Testing and Certification at FIPS 199 High Impact Level.
+
+          • Domain registration management.
+
+          • Helpdesk services.
+
+          • Management of fee processing.
+
+          • The collections process.
+
+          • Monthly status reports.
+
+
+
+   Subfactor 3  Staffing –
+
+
+
+
+          • The Contractor shall identify and provide resumes for the following key personnel who will provide  management,  administrative,  and
+            technical interface with Government personnel in the day-to-day performance of the contract:
+
+|1            |ISSO                                  |
+|2            |DBA                                   |
+|3            |Operations                            |
+|4            |Customer Response                     |
+
+
+
+          • Key Personnel staffing and experience. Training and technical certifications (e.g. CMM, CMMI, etc), and security clearances required
+            for each staff position, and the Contractor’s approach to ensuring personnel are current in training and certifications.
+
+          • Help desk support staff, customer service staff, records maintenance staff, domain registration processing staff.
+
+
+   Subfactor 4  Security –
+
+          • Domain registration system security including physical, technical and administrative security
+
+          • Domain Name System Security (DNSSEC). Include specific details and steps to meet DNSSEC requirements. Demonstrate that the product
+            offered will meet the requirements. Alternate approaches must enable proper cutover from current approach. Show that agency (other
+            than GSA) DNSSEC services will not be interrupted.
+
+          • System data storage and handling security.
+
+
+
+
+Factor 2 - Transition Approach and DNSSEC Implementation
+
+The Government requires a seamless transition between the current contractor and the offeror, and from the current DOTGOV system (to include
+DNSSEC) to the offeror’s proposed DOTGOV system ensuring a complete database transfer and synchronization of data, DNSSEC management of keys and
+uninterrupted service of DOTGOV as the single provider for Federal, State, and Local DOTGOV domain registration activities.  This requirement
+applies to all functionality, risk, and all operations and services.  The DOTGOV system, under the operations and management of the current
+incumbent, will remain operational with complete functionality and continuity of services during the transition phase from the current system to
+any new system. The awardee’s system shall also provide operational functionality and continuity of services during and after the transition
+phase. Service cutover shall not impact the customer agencies’ DNS and DNSSEC.
+
+Preaward C&A Plan: A Preaward C&A Plan must be submitted with the proposal, demonstrating that all required C&A documentation will be provided
+for within the 120 day time frame set forth below. However, a positive review of the preaward C&A plan is not, in itself, a guarantee that the
+contractor will obtain final C&A Authority To Operate.
+
+
+The offeror shall demonstrate that the solution proposed will meet DNS and DNSSEC requirements, implement the high impact security level, and
+indicate, if any, potential impact on agency customers. Draft documentation shall be submitted to the COTR to start the C&A process not later
+than 30 days after date of award (see attachment 1 – section 6 Deliverables).
+
+At a minimum: the Transition Plan should demonstrate a time-phased process for:
+
+   1. Transition of DOTGOV system operations including procedures for operation and maintenance during the transition.
+
+   2. Implementing new connections and application upgrades, including, but not limited to, system implementation, data migration, and IV&V.
+
+   3. Preaward C&A Plan: The offeror’s approach and time schedule for obtaining the required C&A compliance for DOTGOV system.
+
+           Note: If the selected firm fails to receive C&A adjudication within 120 days after submission of documentation (150 days after
+           contract award), the government reserves the right to cancel the contract, and the process (award & C&A) will recommence with the
+           next highest ranked firm.
+
+   4. Evidence of the ability to provide no hardware failures and a system availability of greater than ninety-nine point nine per cent (>99.9%)
+      must be demonstrated for transition acceptance.
+
+
+
+
+Factor 3 - Past Performance
+
+The offeror shall submit relevant performance within the past three (3) years on a minimum of three (3) contracts or delivery/task orders,
+similar in size, scale, scope, and nature to this requirement, to include experience with domain registration, and provide references and
+contact information from these sources. Show how the offeror has implemented a similar system. The Government may contact references to verify
+information submitted to include type of work performed and level of performance.  The offeror must connect the relevance of the offeror’s past
+experience on similar projects to this project and demonstrate a comprehensive understanding of the Government’s requirements. An offeror with
+no relevant past performance history shall receive a neutral rating. In addition, the offeror will follow the instructions in Attachment 3, Past
+Performance Information Sheet, to obtain information for submission directly from previous or current customers.
+
+
+
+
+Factor 4 – Price (Domain Per-Registration Fee and Transition Cost) (price will not be a rated factor).
+
+This factor includes the fee for DOTGOV registrations and annual renewals, and transition price:
+
+Assumptions or Conditions:. Offerors shall submit any assumptions and/or conditions upon which the Price Proposal is based. The Government
+reserves the right to reject any proposal that includes any assumption(s) or conditions that impacts or affects satisfying the Government’s
+requirements.
+
+
+
+Per-registration fee and transition cost will be evaluated separately. The per-registration fee is more important than the transition price.
+
+
+The offer must include a proposed domain per-registration fee (new and annual renewal) per the sample below. The proposed fee must include
+implementation of all tasks and requirements outlined in this solicitation for the DOTGOV program. The contractor shall be responsible for
+collecting and retaining those fees.  There will be no cost or administrative burden to GSA (aside from Transition expenses), conveyed in the
+form of invoices for payment, etc.
+
+The per-registration price proposed shall not exceed $125.00 (for the base year and any option periods).
+
+The below formula will be used to determine the total registration costs to the Government (base plus options) for new annual  and renewal per-
+registration fees:
+
+
+$__________________ X 5,000* =  $________________________ (Base year)
+  Per-registration price                        1st year total annual revenue
+
+
+$__________________ X 5,750* =  $________________________(Option year 1)
+  Per-registration price                        2nd year total annual revenue
+
+
+$__________________ X 6,613* =  $________________________(Option year 2)
+  Per registration price                        3rd year total annual revenue
+
+
+$__________________ X 7,604* =  $________________________(Option year 3)
+  Per registration price                        4th year total annual revenue
+
+
+$__________________ X 8.745* =  $________________________(Option year 4)
+  Per registration price                        5th  year total annual revenue
+
+
+*Denotes current estimated DOTGOV 2nd level domain registrations times a 15% growth factor. Historical growth indicates a probability of 15%
+growth in new and annual registrations per year (This criteria is ONLY for evaluation purposes, and GSA gives no guarantees as to growth, if
+any, over the life of the contract. The Contractor may also create additional growth).
+
+Note: The Contractor shall be responsible for management of the root DOTGOV domain and registration of 2nd level domains only (for example,
+gsa.gov).  Fees must only be assessed on 2nd level domains (for example gsa.gov); 3rd and 4th level domains and lower shall not incur fees. The
+contractor will collect the fee from the entities directly.
+
+There shall be no claims made to GSA as a result of sums owed to the Contractor by domain registering requiring activities. All collections
+efforts shall be focused on the domain registering requiring activities.
+
+
+Fixed Transition Price (one-time cost)
+
+The offeror’s proposed transition period price (firm fixed price, per the criteria below) shall be clearly indicated in the offer. The
+transition period runs from date of submission of C&A documentation (30 days after award) to receipt of C&A Authority To Operate (approximately
+120 days). Transition price must only include those costs incurred while meeting the requirements of Attachment 1, 7a – Exclusive Certification
+and Accreditation (C&A) Guidance and Attachment 2, Factor 2 – Transition Approach and DNSSEC Implementation. No additional costs will be
+negotiated/allowed.
+
+Offeror’s fixed transition price (in U.S. dollars)
+
+
+
+
+$______________________.
+
+The basis for determining transition price reasonableness will include vendor comparison and any other information that the government has
+available.
+
+
+The offeror should take into consideration when developing its transition price that the transition price will be paid in 3 monthly
+installments, at 30, 60 and 90 days after submission of C&A documentation. Reimbursement will be limited to the price proposed. Billing address
+will be provided after contract award.
+
+
+
+
+
+
+
+Signed Cover Letter/Statement
+
+The proposal shall be accompanied by a cover letter statement bearing company logo, signed by an individual authorized to commit the company.
+
+The cover letter must also state that the offered system shall be at a FIPS 199 High Impact Security Categorization.
+
+The cover letter must also state that the proposal is being submitted by an organization that is (a) incorporated within one of the fifty states
+of the United States of America or the District of Columbia, or (b) organized under a law of a state of the United States of America.
+
+In addition the Offeror must have a physical address within the United States of America or the District of Columbia. All critical functions
+will be performed at the prime, such as domain registrations, not at the sub-contractor level.  In addition, all DOTGOV operations must be
+performed in the Continental U.S. only (CONUS).   This includes DNS nodes and the DNS distribution servers must be located within CONUS.
+Outside CONUS DNS distribution servers will not be allowed for DOTGOV.  Provide the Place of Performance and Redundant backup site address in
+the box provided under the “Facilities” provision in the SOO.
+
+
+BASIS FOR AWARD
+
+All assumptions will be evaluated as part of the individual factor or subfactor to which they apply. The Government reserves the right to reject
+any proposal that includes any assumption(s) or conditions that impacts or affects satisfying the Government’s requirements.
+
+The Government intends to award based on initial proposals without discussions, unless discussions are deemed necessary by the Contracting
+Officer. The Government intends to award based on initial offers conforming to the solicitation that will be most advantageous to the
+Government, considering price and other factors.
+
+As technical proposals become equal, price increases in importance.
+
+The Government reserves the right to make an award to other than the lowest priced offeror or to the offeror with other than the highest rating
+in non-price factors if the Contracting Officer determines that to do so would result in the best value to the Government.
+
+For the purposes of this solicitation, “best value” means the expected outcome of an acquisition that, in the Government’s evaluation, provides
+the greatest overall benefit to the Government in response to the solicitation.
+
+
+Past Performance Information Sheet
+The Offeror shall complete items 1 through 16 of each form and forward the form to each responsible official of the reference projects for
+completion. Offerors shall solicit one (and only one) response for each project/customer.
+
+This individual shall complete the “Past Performance Information Sheet” and insert the signed document into a sealed envelope.  The individual
+shall also sign the closure flap of the envelope, adhere clear tape over the signature and return it directly to the contractor.  The Offeror
+shall forward all sealed envelopes into one sealed envelope and submit them with its proposal in Volume I – Technical Proposal.
+
+Provide frank, concise comments regarding performance on the contract identified.
+
+|1        |1. Offeror Name                                               |                                                              |
+|         |(Company/Division)                                            |                                                              |
+|2        |2. Contract Number                                            |                                                              |
+|3        |3. Task Order Number                                          |                                                              |
+|4        |4. Award Date                                                 |                                                              |
+|5        |5. Program/Project Title                                      |                                                              |
+|6        |6. Customer/Agency                                            |                                                              |
+|7        |7. Customer Point of Contact                                  |                                                              |
+|         |8. Address                                                    |                                                              |
+|         |9. Telephone Number                                           |                                                              |
+|         |10. Fax Number                                                |                                                              |
+|         |11. E-mail Address                                            |                                                              |
+|8        |12. Contract Value                                            |                                                              |
+|9        |13. Brief Description of Project                              |                                                              |
+|10       |14. Period of Performance                                     |                                                              |
+|11       |15. Completion Date                                           |                                                              |
+|12       |16. Identify deliverables                                     |                                                              |
+|13       |17. How would you rate quality of work?                       |                                                              |
+|14       |18. How would you rate management of work?                    |                                                              |
+|15       |19. How would you rate responsiveness to work related issues? |                                                              |
+|16       |20. How well did they manage cost?                            |                                                              |
+|17       |21. Did they meet socioeconomic /subcontracting goals?  If not|                                                              |
+|         |why?                                                          |                                                              |
+|18       |22. How well did they meet mission requirements?              |                                                              |
+|19       |23. How efficiently did they handle trouble calls and         |                                                              |
+|         |complaints?                                                   |                                                              |
+|20       |24. Were there any invoicing issues?                          |                                                              |
+|21       |25. How did they manage quality control?                      |                                                              |
+|22       |26. How many times has the schedule changed?                  |                                                              |
+|23       |27. Briefly state the cause for the schedule changes?         |                                                              |
+|24       |28. Was the effort performed as a Prime or Subcontractor?     |                                                              |
+
+
+ATTACHMENT 5 - Quarterly Revenue Report
+
+|       Contractor Name                                                                                                                                                                                                                                                                                                                                                                                                       |
+|     |               |                            |                                                                                   |                                                   |           |              |                        |                        |                                                                                                                                                      |
+|                                                                              GSA Contract Number: QTA010BRA0002                                                                                                                                                                                                                                                                                                             |
+|                                                                                          Quarterly Revenue Report                                                                                                                                                                                                                                                                                                           |
+|                                                                          Reporting Period: July 1, 2010 â€“ September 30, 2010                                                                                                                                                                                                                                                                                                |
+|       |            |                            |          |                                                  |                          |                  |                    |                                                               |                                                                                                                                                                         |
+|       |            |                            |          |                                                  |                          |                  |                    |                                                               |                                                                                                                                                                         |
+|       |Date Payment|Agency Name / Ordering      |FED/      |Description of Services                           |                          |Total             |Amount Received     |GSA Registration Fee Collected                                 |GSA Per Registration                                                                                                                                                     |
+|       |Received    |Activity                    |S&L       |                                                  |                          |Registrations     |                    |                                                               |Charge Remitted                                                                                                                                                          |
+|       |            |                            |          |                                                  |Delivery Order Number     |Ordered           |                    |                                                               |Charge Remitted                                                                                                                                                          |
+|2      |            |                            |          |                                                  |                          |                  |$                   |$                                                              |$                                                                                                                                                                        |
+|3      |            |                            |          |                                                  |                          |                  |$                   |$                                                              |$                                                                                                                                                                        |
+|4      |            |                            |          |                                                  |                          |                  |$                   |$                                                              |$                                                                                                                                                                        |
+|5      |            |                            |          |                                                  |                          |                  |$                   |$                                                              |$                                                                                                                                                                        |
+|6      |            |                            |          |                                                  |                          |                  |$                   |$                                                              |$                                                                                                                                                                        |
+|7      |            |                            |          |                                                  |                          |                  |$                   |$                                                              |$                                                                                                                                                                        |
+|8      |            |                            |          |                                                  |                          |                  |                    |                                                               |                                                                                                                                                                         |
+|       |            |                            |          |TOTALS                                            |                          |                  |$                   |$                                                              |$                                                                                                                                                                        |
+
+
+
+
+    EFT Number: ______________________       Amount: ______________

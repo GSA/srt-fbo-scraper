@@ -1,0 +1,150 @@
+
+STATEMENT OF WORK
+                                                        For Conversion of COGNOS reports,
+                                                          cubes and database procedures
+                                                          Type Task:  Time and Materials
+                                                              DATE: 17 February 2009
+
+
+
+Work is to be accomplished for the US Coast Guard, Aviation Logistics Center, Information Services Division
+
+1.0  INTRODUCTION
+
+1.1 Organization.
+
+1.1.1  Identification.  U.S. Coast Guard
+                     Aviation Logistics Center (ALC)
+                     Information Services Division (ISD)
+                     1664 Weeksville Road
+                     Elizabeth City, North Carolina 27909
+
+1.1.2  Mission.  The mission of ISD systems is to support the USCG with accounting, procurement, engineering, mission operations, supply and
+asset maintenance software support.  ISD systems collect, analyze, model, and disseminate data and related products to customers in real-time.
+
+1.2     Project Background and Objectives.
+
+1.2.1  Background.  The Electronic Asset Logbook (EAL) is a web based application accessed thru a COGNOS portal. EAL data is manipulated to run
+reports and develop cubes for analytical use. COGNOS is being upgraded from 7.3 to 8.4 because 7.3 will no longer be supported. The database
+scripts are being ported from Ingres to Oracle because Oracle is designed to natively connect to COGNOS 8.4 and Ingres does not have this
+important design feature.
+
+1.2.2  Objectives.  The objective is for the contractor to perform COGNOS report and cube conversion and db script port. The reports shall be
+consolidated and optimized for best performance except where the nature of the report is such that the LOE would be greater than the LOE for
+developing a database procedure. Such procedure will be created in lieu of using Impromptu to develop the report. Anytime a report says
+aircraft, aviation, or flight it must be changed to Asset, unit or mission. All SSN shall be removed from reports and replace with employee id.
+Any MDL (Maintenance Due List) that were split out into multiple reports and database procedures shall be consolidated back into one set of
+prompts for multiple reports.  Analysts shall report directly to the ISD Applications Branch Chief and Decision Support team lead.
+
+1.3 Performance.  Results are to be delivered to the ISD Applications Branch Chief.  Certification of satisfactory services is performed by the
+Government.  The certification of these services is contingent upon the contractor's compliance with the term/conditions of the prospective
+contract, this document, and all amendments.
+
+2.0 TECHNICAL SERVICE REQUIRED.
+
+2.1 Task Description.   This project is to be performed as a single Work Request task order.
+
+   1. Scope of Work.  Convert COGNOS reports and Cubes and port database scripts form Ingres to Oracle.
+
+2.1.2.  Statement of Work.
+
+Task Profile:
+   1. Conversion of 308 COGNOS reports from 7.3 to 8.4
+   2. Conversion of 61 Cubes from 7.3 to 8.4
+   3. Porting of db scripts from Ingres to Oracle
+
+   Government Furnished Information (GFI).  The contractor shall review and understand the ALMIS business process and consult with Decision
+      Support Team application developers on work flow and system logic. The contractor will be given access to the old COGNOS 7.3 reports and
+      IQD catalog as well as user account access. Due to security concerns concerning the sensitive nature of the data, account access is
+      extremely difficult to grant to foreign nationals. The associated Government Furnished Information specified in the contract will be made
+      available to the contractor as needed.
+
+2.2  Deliverables.
+
+The final deliverable will be converted Reports, Cubes, and database procedures in written and electronic form.
+
+Only the Chief, Software Support Branch or Chief, Software Development Section have the authority to inspect and accept deliverables.
+
+The contractor shall be responsible for delivering all end items specified in this statement of work.
+
+2.2.1  Criteria for Acceptance.
+
+All deliverables shall meet with best commercial practices. The contractor shall incorporate the comments/corrections from each deliverable, as
+applicable, into the submission of the final document(s).
+
+2.3  Expertise.  The contractor is responsible for providing personnel with expertise in the following areas.
+
+   1. ADP/Managerial Skills.  All contractor personnel assigned to this task shall have sufficient experience to perform their assigned duties at
+      industry standards of timeliness, professional knowledge, and customer relations.
+
+2.3.2  Software/Languages.
+
+    a.  Mid level experience with Oracle (SQL) required.
+
+    b.  Senior level experience with COGNOS 8 is required.
+
+
+2.4 Unique Services.
+
+2.4.1  Travel and Per Diem.  None
+
+2.4.2  Contractor Furnished Facilities.  None
+
+The contractor shall provide all supervision of contractor personnel and perform all contractor related administrative functions.  All task
+related requests of the contractor shall be communicated to the Chief, Software Support Branch or the Software Development Section Chief.
+
+3.0  GOVERNMENT FURNISHED RESOURCES
+
+The contractor shall identify in the task proposal, the type, amount and time frame for any required Government resources, including those
+listed below.  The following resources will be provided by the Government.
+
+3.1  Facilities, Supplies and Services.
+
+    a.  While the contractor is at ALC, the Government will supply necessary office space, computer hardware and operating system, office
+automation equipment, and necessary software licenses as determined by ISD.
+
+    b.  The contractor is to specifically identify in the task proposal the type, amount, and time-frames for any required Government resources,
+including those listed above.
+
+    c.  Full-time on-site services are not required.  Document reviews may be performed off-site at no additional expense to the Government.
+Contractor is required to be present at ALC for the testing of the ALMIS system.
+
+3.2  Information Services.  None are anticipated.
+
+3.3  Documentation.  The Government will make available copies of existing documentation as required.  Any additional related documentation will
+be made available, if possible.
+
+4.0  ADMINISTRATIVE CONSIDERATIONS.
+
+4.1  Points of Contact.
+
+4.1.1  COTR for this effort is : Will be determined at the time of award.
+
+4.1.2 Contracting Officer:
+
+       Ms. Judith A. Knotts
+       USCG  ALC Aviation Logistics Division
+       1664 Weeksville Road
+       Elizabeth City, NC 27909
+       Phone:  (252)384-7181
+
+4.2 Duration of Task.
+
+4.2.1  Period of Performance.  The performance of this task shall commence no later than 30 days after award.  The Government reserves the right
+to terminate the task at any time, for reasons of its own convenience, without payment of any unperformed hours remaining on the contract.  The
+work must be completed NLT 30 January 2010.
+
+4.3  Security and Privacy.
+
+4.3.1  Privacy Act.  Information included in this task is protected by the provisions of the Privacy Act of 1974; therefore, all personnel
+assigned to this task shall take the proper precautions to protect the information from disclosure.
+
+5.0  SPECIAL INSTRUCTIONS
+
+5.1  General/Miscellaneous.  All software, documentation, and development tools used by the contractor become sole property of the United States
+Government.  The contractor retains no proprietary rights to these materials, regardless of whether the Government characterizes them as
+accepted or rejected.
+
+5.2 Unique Reporting Requirements.  The contractor shall deliver final versions of any documents to the Government.  The COTR or Alternate will
+provide a primary point of contact for use in clarifying requirements, obtaining detailed information, or voicing any concerns.
+

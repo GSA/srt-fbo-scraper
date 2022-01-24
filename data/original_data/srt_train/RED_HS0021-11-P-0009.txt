@@ -1,0 +1,304 @@
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+Defense Security Service (DSS), intends to issue a fixed price, purchase order to the responsible Contractor that submits a best value quotation for a phone system installation, maintenance, local dial tone and long distance service. The service address is 17177 200 E. Palm Valley Dr., 1st Floor, Orlando Florida 32765. Contained herein: B. Shedule of Supplies or Services C. SOW D. Marking & Packaging E. Inspections & Acceptance F. Period of Performance/Place of Performance G. Contract Administration Data H. Special Contract Requirements I. J. Clauses Attachments
+
+K. Reps & Certs L. Instructions to Offeror M. Evaluation Factors
+
+1
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+B. Schedule of Supplies or Services Cost of Equipment (Phones, Wiring, System Components, etc..) Installation Training Shipping Costs (If any) Local Phone Service--Base Period Maintenance Base Period Base Period Long Distance Total Base Period Charges Maintenance Option Period One Local Phone Service--Option Period One Long Distance--Option Period Maintenance Option Period Two Local Phone Service--Option Period Two Long Distance--Option Period Two Total Cost $ $ $ $ $ $ $ $ $ $ $ $ $ $ $
+
+C.
+
+SOW
+
+C.1 Installation Specifications:
+
+The contracting vendor will provide a quote for the purchase, installation and yearly service cost of the telecommunication services required to run the offered phone system solution. The phone system solution and or telecommunication services must be able to support fourteen (14) digital telephone sets, one (1) conference telephone set, two (2) fax machines and two (2) ISDN BRI voice telephone lines. The ISDN BRI lines will have the following configuration:
+
+2
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+ˇ
+
+ISDN Ordering Codes (IOC): P, U, V, EZ ISDN-1, or EZ ISDN-1a.
+
+If the phone company is not able to program the phone using the preceding IOCs than these lines will be installed using the following guidelines. ˇ BRI with 2B+D (Basic Rate Interface with two 64 kbps Bearer channels and a 16 kbps Data channel) Line Type. ˇ CSV (Circuit Switched Voice) and CSD (Circuit Switched Data) must be enabled on both B channels. ˇ One or two SPIDS, only one is necessary. Two (2) NT1 cards and NT1 card power supplies will must be purchased and installed in the LAN room in accordance with the LAN room site diagram. These cards will be used to provide power and signaling to secure ISDN telephone sets that will be located on the premises. The BRI lines coming from the extended Demarc will be patched into the U interface port on this card. The contracting Vendor will then patch from the ST interface on the NT1 card to the voice patch panel and out to the appropriate workstation in the office. In addition to these requirements, one (1) analog telephone line must be ordered and installed at the extended point of demarcation for an alarm system. The alarm system line pair must be tagged "Alarm."
+
+The phone system must be capable of supporting at least twenty-four (24) phone/fax subscribers. The phone system must configure or support up to thirteen (13) call appearances on each line. The system will be capable of providing simultaneous voicemail access to twenty five (25) percent of all possible phone subscribers. The phone system will be capable of providing simultaneous public switched telephone network access to each phone subscriber. If the phone lines are to be configured with internal extensions, each phone line must have a unique direct inward dial telephone number assigned. The phone system and or phones for the system must have the capability to place phone calls on hold, conduct 3-way conference calls, drop phone calls and transfer phone calls. The phone system and or phones for the system must have the capability of sending and displaying Caller ID
+
+3
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+The phone system must send the correct voltage to the phone sets from the central office or centrally located Power Supply/Phone Equipment that will be purchased and installed by the contracting Vendor in the LAN room. The phone solution must be able to patch phone service over an RJ 45 patch panel. The phone system must be capable of supporting commercial off the shelf fax and conference telephone machines. Enough power to run the phone solution and phones for two hours, in the event of power loss, will be installed as backup power. If the offered phone solution is PBX based, it can not be a VoIP solution but must be capable of being upgraded or converted into a VoIP solution. The following features must be present on the phones running on the suggested phone solution.
+
+ˇ ˇ ˇ ˇ ˇ ˇ ˇ
+
+call forward caller id call pick-up conference calling hold transfer voicemail
+
+C.1.1 Office Cabling and Connectivity Requirements C.1.1.1 Patch Panels
+C.1.1.1.1 LAN Room Extended Point of Demarcation
+
+An extended point of demarcation will be installed from the buildings point of demarcation to the new LAN Room. The extended point of demarcation must have enough cable pairs and punch down blocks to accommodate phone service for the entire suite. An additional fifty percent (50%) port capacity must be available on the extended point of demarcation for future growth. At a minimum an RJ21x and 25 pair cable will be run from the buildings point of demarcation to the LAN room. All telecommunication lines (PRI, DSL, BRI and or Analog POTS) for this office will be installed on the extended point of demarcation.
+
+4
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+C.1.1.1.2 T1 Line Relocation
+
+Two T1 lines exist in the DSS suite directly across the hall from the new office suite. The lines from the old suite will be uninstalled and new Category 5e shielded twisted pair Ethernet cabling will be run from the buildings point of demarcation to the new suites LAN Room for each T1 line. The T1 lines will be terminated in the LAN room on one (1) two port modular faceplate with two (2) RJ45 Cat5e Modular jack ports. The faceplate will be located immediately to the left of the Data Patch Panel in accordance with the LAN room Site Diagram. These T1 Lines must be clearly labeled "T1" on the faceplate along with their CCSD Identification numbers.
+C.1.1.1.3 Spare Patch Cables
+
+ˇ
+
+Fifty-Six (56) blue, cat5e, 7 foot, RJ 45, straight through Ethernet patch cables will be purchased and delivered to the field office. These patch cables will be used by DSS personnel to patch network services throughout the office. Twenty-Eight (28) white or grey, cat5e, seven foot patch cables will be patched into the empty ports on each respective voice patch panel. The cable termination type will be determined by the phone system solution but it must be able to patch over an existing RJ45 patch panel. The workstations requiring phone service will be patched to the appropriate service equipment in accordance with the phone service solution.
+
+ˇ
+
+C.3 Testing Checklist The following checklist is to be used to verify that the work listed in this document is complete. Each test will receive a status of "GO' when the associated test is complete, or "NO GO" when the task has not met the standard laid out in the test. The contractor and DSS POC will confirm that all test merit a status of "GO." Once all items on the checklist merit a "GO", the installation work requested is complete.
+
+Test#
+
+Test All phone system telephone lines are patched and labeled in the LAN room to the appropriate location All telephone company analog phone and ISDN lines are patched to the correct location in the office in accordance with the site diagram.
+
+GO
+
+NO GO
+
+1
+
+2
+
+5
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+3
+
+All telephone sets are set up and installed to the phone system at its designated workstation in accordance with the site diagram. Two NT1 cards are installed at the correct locations in the office.
+
+4
+
+C.2
+
+Phone Set Requirements
+
+A total of sixteen (16) phone sets will be ordered for this phone system. Thirteen (13) of these phones must have at least ten feature buttons. One (1) of the telephone sets will be a conference telephone. The remaining two (2) telephone sets must have at least twenty (20) feature buttons. All phone sets must have speakerphone capability. All phone sets must have the capability to store a user created phone book with at least 10 entries. All phone sets must have an LCD screen that is capable of displaying status messages that indicate the presence of voicemail, caller ID and electronic phone book. The phones must have dedicated or programmable buttons that will provide the phone user push button capabilities to drop phone calls, transfer phone calls, create conference phone calls, mute phone calls and hold phone calls. The phones must be powered remotely by voltage provided from the LAN room and or Central Office. Under no circumstance will these phones be powered by individual power supplies located at the workstations. One conference telephone must be ordered and installed on the conference room table in accordance with the site diagram. This telephone must be capable of providing clear voice communications to each person sitting at the conference table (approximately 150 square feet).
+
+C.3 Maintenance Maintenance shall provide the following services: 1. Two (2) hour emergency response time 24/7/365 (An emergency is considered as the
+
+6
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+inability to place or receive telephone calls from the site.) 2. 24 hour standard response time for other system and handsets issues (For all Service Agreements: standard response time is during normal business hours Monday through Friday, excluding Regular Holidays. Regular holidays shall include New Year's Day, Good Friday, Memorial Day, Independence Day, Labor Day, Veteran's Day, Thanksgiving Day, the day after Thanksgiving, Christmas Day, and New Years Eve. 3. Software & Firmware Updates (This cannot be done remotely) 4. Error correct (Clear alarm codes) 5. Free Refresher course(s) upon request (Monday thru Friday 8-5) . Limit of one Retraining onsite everysix months 6. Vendor will assist with up to three MACS per month included in this agreement at no additional charge. This includes phone support and site visits. MACs cannot be done remotely. 7. Add up to three drops/ jacks per year at no additional charge. (The drops will be standard CAT 5e with RJ-45 or RJ-11 inserts as requested. Cables will be terminated to new inserts at station location. Cables will also be terminated at the existing 66-M150 66-Block or Patch Panel at system location. Cable will be run in existing "stubbed out" conduit to existing "gang box" for faceplate and inserts. Cable runs will be completed in offices with standard "drop ceiling" not exceeding 100 ft) 8. Office Moves--Move and re-install PBX and related equipment for office moves. This includes Removal and reinstallation of PBX, Voice Mail System and the cross-connect to the existing CO Lines, PRI-T-1 Voice Smart Jack and station cabling. This is estimated to be one move every five years. 9. Repairs must be completed within 24 hours. This covers all parts and labor. (Repairs necessitated as a result of alteration, adjustment, or repair by anyone other than the contractor (or its representative) are not included. The contractor is not obligated to repair any System or System component which has been damaged as a result of (i) accident, misuse, or abuse ofthe System or component (such as, but not limited to, use of incorrect voltages, use of incorrect fuses, use of incompatible devices or accessories, improper or
+
+7
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+insufficientventilation, or failure to follow operating instructions) by anyone other than the contractor (or it's representative), (ii) an act of God such as, but not limited to, lightening, flooding, tornado, earthquakes, and hurricanes, or (iii) the moving of the System from one geographical location to another or from one entity to another. With regard to any servicesthat are not within the coverage of this Agreement, it may incur an additional charge.)
+
+C.4 Training C.4.1 Handset Training Demonstration of basic features of the handset, programming and voicemail access. C.4.2 System Training Basic system functionality such as password reset and on off switch C.4.3 Training Manual Manual shall include instruction for basic handset and system function, contact information for the company performing the maintenance, and a response time that the caller can expect for each issue.
+
+D. Marking & Packaging
+Any Deliverable Received under this contract must be marked with the Contract Number and performance address. E. Inspection & Acceptance See Clause 52.212-4
+
+F. F.1
+
+Period & Place of Performance Install Date
+
+NLT November 18, 2010
+
+F.2
+
+Period of Performance
+
+8
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010 Base Period: Date of Contract Award thru 6 months Option Period One: Date of Option Exercise thru 3 months Option Period Two: Date of Option Exercise thru 3 months
+
+F.3
+
+Place of Performance
+
+17177 200 E. Palm Valley Dr., 1st Floor, Orlando Florida 32765.
+G. Contract Administration Data
+
+G.1
+
+SUBMISSION OF INVOICES
+
+(a) The contractor must all submit invoices in accordance with the "Wide Area WorkFlow" (WAWF) clause, DFAR 252.232-7003. Invoices must have the payment address identified in the solicitation/contract award form, unless delivery orders are applicable, in which case invoices will be segregated by individual order and submitted to the address specified in the order. Invoices must be attached in WAWF to be accepted by the Acceptor/Inspector office. If an invoice is not attached, it will be rejected. Invoices must be submitted as an "Invoice 2 in 1" for service or "Combo" for supplies. (b) In addition to the requirements of the Prompt Payment clause, the contractor must cite on each invoice the contract line item number (CLIN); the contract subline item number (SLIN), if applicable as identified in the contract/order; and invoices must reflect how the CLIN(s) and SLIN(s) are structured in Section B of the contract/order. The contractor will need the following information to input invoices into WAWF: Administered by: HS0021 (DSS Contracting and Acquisition) Acceptor/Inspector: HS0001 (DSS Headquarters) Payment Official: F03000 (DFAS ­ Columbus, OH)
+
+G.2
+
+POINTS OF CONTACT
+
+TECHNICAL:
+
+Omar Zakour 703.325-5814 Omar.Zakour@dss.mil
+
+COR
+
+Adriane McGregor 972-580-1200 X 230 Adriane.McGregor@dss.mil
+9
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+CONTRACTS:
+
+Chris Harris 703-325-0538 Christopher.Harris@dss.mil
+
+G.3 CO REPRESENTATIVE (COR)
+
+(a) The Contracting Officer hereby appoints Adriane McGregor as the Contracting Officer's Representative for contract HS-0021-11-F-XXXX. Her contact informaiton is 972-580-1200 X 230 or Adriane.McGregor@dss.mil . (b) Performance of the work under this contract is subject to the technical direction of the Contracting Officer Representative (COR), who shall be specifically appointed by the Contracting Officer in writing. "Technical direction" means a directive to the Contractor that approves approaches, solutions, designs, or refinements; fills in details or otherwise completes the general description of work or documentation items; shifts emphasis among work areas or tasks; or furnishes similar instruction to the Contractor. Technical direction includes requiring studies and pursuit of certain lines of inquiry regarding matters within the general tasks and requirements in Section C of this contract. (c) The COR does not have the authority to, and shall not, issue any instruction purporting to be technical direction that-(1) Constitutes an assignment of additional work outside the statement of work; (2) Constitutes a change as defined in the changes clause; (3) Constitutes a basis for any increase or decrease in the total estimated contract cost or the time required for contract performance; (4) Changes any of the expressed terms, conditions, or specifications of the contract; or interferes with the Contractor's rights to perform the terms and conditions of the contract. (End of clause)
+
+G.4 CONTRACTING OFFICER AUTHORITY The Contracting Officer is the only person authorized to make or approve any changes in any of the requirements of the contract and notwithstanding any provisions contained
+
+10
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+elsewhere in the contract, the said authority remains solely in the Contracting Officer. In the event the Contractor makes any changes at the direction of any person other than the Contracting Officer, the change will be considered to have been made without authority and no adjustment will be made in the contract terms and conditions, including price. The Contracting Officer will effect all contract administration. The Contracting Officer is the only person with the authority to act as an agent of the Government under the contract. In the event the Contractor makes any changes at the direction of any person other than the Contracting Officer, the change will be considered to have been made without authority and no adjustment will be made in the contract price to cover any increase in costs incurred as a result thereof. Only the Contracting Officer has the authority to: (1) direct or negotiate any changes in the SOW; (2) modify or extend the period of performance; (3) change the delivery schedule, (4) authorize reimbursement to the Contractor for any costs incurred during the performance of this contract; or (5) otherwise change any terms and conditions of the contract. H. Special Contract Requirements H.1 Product Warranty  All equipment shall have an industry standard one-year limited warranty. H.2 Installation  Protect walls and floors of all corridors, building areas, staging areas, and rooms where the equipment is to be installed. Damage will be repaired at no additional cost to the government.  Remove and dispose of all packing materials, debris and cartons from the job site daily. No trash or packing material may be left at DSS facilities or discarded in the building's trash containers or dumpsters.
+
+H.3 Codes and Regulations  The Contractor is responsible for ensuring that all installations shall comply with all applicable ADA, state, local, and federal building codes, local ordinances and regulations.
+
+H.4 Post Installation Deliverables  Replace all damaged and incorrect products, and add all missing product within a reasonable period of time post-installation.
+
+H.5 Cooperation during outages Contractor shall full cooperate with the local phone service provider in resolving outages.
+
+11
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+I. Clauses I.1 Clauses Incorporated By Reference
+     Electronic Invoices Item Unique Identification Instructions to Offerors--Commercial Items Contract Terms & Conditions for Commercial Items Offeror Representations & Certifications DFARS 252.232-7003 DFARS 252.211-7007 FAR 52.212-1 FAR 52.212-4 FAR 52.212-3
+
+I.2 Clauses--Full Text
+52.217-9 OPTION TO EXTEND THE TERM OF THE CONTRACT (MAR 2000)
+
+(a) The Government may extend the term of this contract by written notice to the Contractor within 1 day provided that the Government gives the Contractor a preliminary written notice of its intent to extend at least 2 days before the contract expires. The preliminary notice does not commit the Government to an extension. (b) If the Government exercises this option, the extended contract shall be considered to include this option clause. (c) The total duration of this contract, including the exercise of any options under this clause, shall not exceed 60 months. (End of clause)
+
+52.212-5 CONTRACT TERMS AND CONDITIONS REQUIRED TO IMPLEMENT STATUTES OR EXECUTIVE ORDERS--COMMERCIAL ITEMS (SEP 2009) (a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract by reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items: (1) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)). Alternate I (Aug 2007) of 52.222-50 (22 U.S.C. 7104(g)). (2) 52.233-3, Protest After Award (AUG 1996) (31 U.S.C. 3553). (3) 52.233-4, Applicable Law for Breach of Contract Claim (OCT 2004) (Pub. L. 108-77, 108-78).
+
+12
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010 (b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: (Contracting Officer check as appropriate.) x ___ (1) 52.203-6, Restrictions on Subcontractor Sales to the Government (SEP 2006), with Alternate I (OCT 1995) (41 U.S.C. 253g and 10 U.S.C. 2402). x ___ (2) 52.203-13, Contractor Code of Business Ethics and Conduct (DEC 2008)(Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note)). ___ (3) 52.203-15, Whistleblower Protections under the American Recovery and Reinvestment Act of 2009 (MAR 2009) (Section 1553 of Pub. L. 111-5). (Applies to contracts funded by the American Recovery and Reinvestment Act of 2009.) __(4) 52.204-11, American Recovery and Reinvestment Act--Reporting Requirements (MAR 2009) (Pub. L. 111-5). ___ (5) 52.219-3, Notice of Total HUBZone Set-Aside (Jan 1999) (15 U.S.C. 657a). ___ (6) 52.219-4, Notice of Price Evaluation Preference for HUBZone Small Business Concerns (JUL 2005) (if the offeror elects to waive the preference, it shall so indicate in its offer) (15 U.S.C. 657a). ___ (7) [Reserved]. x ___ (8)(i) 52.219-6, Notice of Total Small Business Set-Aside (JUNE 2003) (15 U.S.C. 644). ___ (ii) Alternate I (OCT 1995) of 52.219-6. ___ (iii) Alternate II (MAR 2004) of 52.219-6. ___ (9)(i) 52.219-7, Notice of Partial Small Business Set-Aside (JUNE 2003) (15 U.S.C. 644). ___ (ii) Alternate I (OCT 1995) of 52.219-7. ___ (iii) Alternate II (MAR 2004) of 52.219-7. ___ (10) 52.219-8, Utilization of Small Business Concerns (MAY 2004) (15 U.S.C. 637 (d)(2) and (3)). ___ (11)(i) 52.219-9, Small Business Subcontracting Plan (APR 2008) (15 U.S.C. 637(d)(4)). ___ (ii) Alternate I (OCT 2001) of 52.219-9
+
+13
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+___ (iii) Alternate II (OCT 2001) of 52.219-9. ___ (12) 52.219-14, Limitations on Subcontracting (DEC 1996) (15 U.S.C. 637(a)(14)). ___ (13) 52.219-16, Liquidated Damages--Subcontracting Plan (JAN 1999) (15 U.S.C. 637(d)(4)(F)(i)). ___ (14)(i) 52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns (OCT 2008) (10 U.S.C. 2323) (if the offeror elects to waive the adjustment, it shall so indicate in its offer). ___ (ii) Alternate I (JUNE 2003) of 52.219-23. ___ (15) 52.219-25, Small Disadvantaged Business Participation Program--Disadvantaged Status and Reporting (APR 2008) (Pub. L. 103-355, section 7102, and 10 U.S.C. 2323). ___ (16) 52.219-26, Small Disadvantaged Business Participation Program--Incentive Subcontracting (OCT 2000) (Pub. L. 103-355, section 7102, and 10 U.S.C. 2323). ___ (17) 52.219-27, Notice of Total Service-Disabled Veteran-Owned Small Business Set-Aside (MAY 2004) (U.S.C. 657 f). ___ (18) 52.219-28, Post Award Small Business Program Rerepresentation (APR 2009) (15 U.S.C. 632(a)(2)). x ___ (19) 52.222-3, Convict Labor (JUNE 2003) (E.O. 11755). x ___ (20) 52.222-19, Child Labor--Cooperation with Authorities and Remedies (AUG 2009) (E.O. 13126). x ___ (21) 52.222-21, Prohibition of Segregated Facilities (FEB 1999). x ___ (22) 52.222-26, Equal Opportunity (MAR 2007) (E.O. 11246). x ___ (23) 52.222-35, Equal Opportunity for Special Disabled Veterans, Veterans of theVietnam Era, and Other Eligible Veterans (SEP 2006) (38 U.S.C. 4212). ___ (24) 52.222-36, Affirmative Action for Workers with Disabilities (JUN 1998) (29 U.S.C. 793).
+
+14
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010 ___ (25) 52.222-37, Employment Reports on Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans (SEP 2006) (38 U.S.C. 4212). x ___ (26) 52.222-39, Notification of Employee Rights Concerning Payment of Union Dues or Fees (DEC 2004) (E.O. 13201). x ___ (27) 52.222-54, Employment Eligibility Verification (JAN 2009). (Executive Order 12989). (Not applicable to the acquisition of commercially available off-the-shelf items or certain other types of commercial items as prescribed in 22.1803.) ___ (28)(i) 52.223-9, Estimate of Percentage of Recovered Material Content for EPA-Designated Items (MAY 2008) (42 U.S.C. 6962(c)(3)(A)(ii)). (Not applicable to the acquisition of commercially available off-the-shelf items.) ___ (ii) Alternate I (MAY 2008) of 52.223-9 (42 U.S.C. 6962(i)(2)(c)). (Not applicable to the acquisition of commercially available off-the-shelf items.) ___ (29) 52.223-15, Energy Efficiency in Energy-Consuming Products (DEC 2007) (42 U.S.C. 8259b) .
+
+___ (30)(i) 52.223-16, IEEE 1680 Standard for the Environmental Assessment of Personal Computer Products (DEC 2007) (E.O. 13423). ___ (ii) Alternate I (DEC 2007) of 52.223-16. ___ (31) 52.225-1, Buy American Act--Supplies (JUNE 2003) (41 U.S.C. 10a-10d). ___ (32)(i) 52.225-3, Buy American Act--Free Trade Agreements--Israeli Trade Act (JUN 2009) (41 U.S.C. 10a-10d, 19 U.S.C. 3301 note, 19 U.S.C. 2112 note, 19 U.S.C. 3805 note, Pub. L. 108-77, 108-78, 108-286, 108-302, 109-53, 109-169, 109-283, and 110-138). ___ (ii) Alternate I (JAN 2004) of 52.225-3. ___ (iii) Alternate II (JAN 2004) of 52.225-3. x ___ (33) 52.225-5, Trade Agreements (AUG 2009) (19 U.S.C. 2501, et seq., 19 U.S.C. 3301 note). x ___ (34) 52.225-13, Restrictions on Certain Foreign Purchases (JUN 2008) (E.O.'s, proclamations, and statutes administered by the Office of Foreign Assets Control of the Department of the Treasury).
+
+15
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010 ___ (35) 52.226-4, Notice of Disaster or Emergency Area Set-Aside (Nov 2007) (42 U.S.C. 5150). ___ (36) 52.226-5, Restrictions on Subcontracting Outside Disaster or Emergency Area (Nov 2007) (42 U.S.C. 5150). ___ (37) 52.232-29, Terms for Financing of Purchases of Commercial Items (FEB 2002) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)) ___ (38) 52.232-30, Installment Payments for Commercial Items (OCT 1995) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)). x ___ (39) 52.232-33, Payment by Electronic Funds Transfer--Central Contractor Registration (OCT 2003) (31 U.S.C. 3332). ___ (40) 52.232-34, Payment by Electronic Funds Transfer--Other than Central Contractor Registration (MAY 1999) (31 U.S.C. 3332) ___ (41) 52.232-36, Payment by Third Party (MAY 1999) (31 U.S.C. 3332). ___ (42) 52.239-1, Privacy or Security Safeguards (AUG 1996) (5 U.S.C. 552a). ___ (43)(i) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (FEB 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C. 2631). ____ (ii) Alternate I (APR 2003) of 52.247-64. (c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: (Contracting Officer check as appropriate.) ____ (1) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.). ____ (2) 52.222-42, Statement of Equivalent Rates for Federal Hires (MAY 1989) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.). ____ (3) 52.222-43, Fair Labor Standards Act and Service Contract Act--Price Adjustment (Multiple Year and Option Contracts) (SEP 2009) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+
+16
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010 ____ (4) 52.222-44, Fair Labor Standards Act and Service Contract Act--Price Adjustment (SEP 2009) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.) x ____ (5) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment--Requirements (Nov 2007) (41 U.S.C. 351, et seq.). ____ (6) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services--Requirements (FEB 2009) (41 U.S.C. 351, et seq.). ____ (7) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247). ____ (8) 52.237-11, Accepting and Dispensing of $1 Coin (SEP 2008)(31 U.S.C. 5112(p)(1)). (d) Comptroller General Examination of Record. The Contractor shall comply with the provisions of this paragraph (d) if this contract was awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at 52.215-2, Audit and Records--Negotiation. (1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right to examine any of the Contractor's directly pertinent records involving transactions related to this contract. (2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination, audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR Subpart 4.7, Contractor Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records relating to the work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such appeals, litigation, or claims are finally resolved. (3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary course of business or pursuant to a provision of law. (e) (1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c), and (d) of this clause, the Contractor is not required to flow down any FAR clause, other than those in this paragraph (e)(1)in a subcontract for commercial items. Unless otherwise indicated below, the extent of the flow down shall be as required by the clause-- (i) 52.203-13, Contractor Code of Business Ethics and Conduct (DEC 2008) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note). (ii) 52.219-8, Utilization of Small Business Concerns (May 2004) (15 U.S.C. 637(d)(2) and (3)), in all subcontracts that offer further subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $550,000 ($1,000,000 for construction of any public facility), the subcontractor must include 52.219-8 in lower tier subcontracts that offer subcontracting opportunities.
+
+17
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+(iii) Reserved. (iv) 52.222-26, Equal Opportunity (MAR 2007) (E.O. 11246). (v) 52.222-35, Equal Opportunity for Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans (SEP 2006) (38 U.S.C. 4212). (vi) 52.222-36, Affirmative Action for Workers with Disabilities (June 1998) (29 U.S.C. 793). (vii) 52.222-39, Notification of Employee Rights Concerning Payment of Union Dues or Fees (DEC 2004) (E.O. 13201). (viii) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.). (ix) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)). Alternate I (AUG 2007) of 52.222-50 (22 U.S.C. 7104(g)). (x) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment--Requirements (Nov 2007) (41 U.S.C. 351, et seq.). (xi) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services-Requirements (FEB 2009) (41 U.S.C. 351, et seq.). (xii) 52.222-54, Employment Eligibility Verification (JAN 2009). (xiii) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations. (MAR 2009) (Pub. L. 110247). Flow down required in accordance with paragraph (e) of FAR clause 52.226-6. (xiv) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (FEB 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C. 2631). Flow down required in accordance with paragraph (d) of FAR clause 52.247-64. (2) While not required, the contractor May include in its subcontracts for commercial items a minimal number of additional clauses necessary to satisfy its contractual obligations. (End of clause)
+
+18
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+J. Attachments A-1: A-2: A-3: Land Room Site Diagram Physical Site Diagram Phone Service Site Diagram
+
+K. Representations & Certifications See Clause 52.212-3 L. Instructions Conditions & Notices to Offerors
+L.1 See 52.212-1 for Other Instructions However, sections (f)(1), sections (f)(2), sections (f)(2)(i)(A), and sections (f)(2)(i) (B) are deleted. L.2: Quotes are due by November 12, 2010 at 5:00 p.m. EST. L.3: Sections of the Quote: L.3.1 Title Page/Executive Summary--One Page L.3.2 Experience/Past Performance--Three Pages Experience/Past Performance shall be no more than 3 pages. DSS may contact references that relate to the experience listed. Therefore, list the name, telephone number and email address of the point of contact for the experience referenced in the quote. L.3.3 Specifications of Solution--2 Pages Submit Information on the solution offered L.3.4 Price: Submit Pricing in the same format as section B Total Quote should be a maximum of seven pages. L.3.5 Questions All questions shall be directed to Christopher Harris at 703-325-0538 or Christopher.Harris@dss.mil.
+
+L.3.6 Site Visit P.O.C. The P.O.C. for a site visit appointment is Ed Wheeler 321-255-1244.
+
+19
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+M. Evaluation Criteria Quoters are advised that award of this purchase order will be made based upon a best value determination wherein submissions on Conformance to Specifications, Experience, and Past Performance are considered more important than price. However, price is always evaluated.
+
+M.1
+
+Conformance with Specifications
+
+Conformance to all specifications is required. The Government will evaluate each offeror's offering to determine if the quote is fully compliant. This is a go/ no go evaluation factor.
+
+M.2 Experience The quoter shall identify at least one (with a maximum of three) contract/order example(s) for work relevant to that identified in the SOWwithin the last three (3) years. Relevant experience is considered workexperience in which the requirements were similar to those detailed in theSOW. The quoter shall provide a brief explanation demonstrating the relevance ofthe contractor's experience to the requirements in the SOW. The Governmentwill place greater value on experience that is directly related to the SOW.
+
+M.3
+
+Past Performance
+
+The Government will also evaluate how well the contractor performed under each relevant work experience example(s) per client feedback. Therefore,for the quoted relevant work experience example(s), the quoter shall include the following information for Past Performance evaluating purposes. 1. Contract/order number 2. Name, organization, email address and telephone number of a verifiedcustomer point of contact familiar with the contract/order 3. Dollar value of the contract/order 4. Period of Performance
+
+20
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+In the absence of past performance information the vendor will receive a nuetral rating.DSS may obtain and consider past performance information other than that provided by the Contractor.
+
+M.4
+
+Price
+
+The evaluated price will be the sum of the equipment, shipping, installation, training, base year maintenance, and four one year optional maintenance periods. The DSS long distance charge estimate for this location is $50 per month. Vendor may offer a fixed price line item that includes local and long distance service or Vendors may offer a fixed price for local service and a separate CLIN for long distance. However, the number used to calculate the evaluated price of each vendor will be the Government's Monthly Estimate for Long Distance Service.
+
+21
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010
+
+5. APPENDIX
+A-1 LAN Room Site Diagram
+
+22
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010 A-2 Physical Site Diagram
+
+23
+
+Defense Security Services (DSS) RFQ ­ Phone System for Orlando HS0021-11-P-0006
+November 1, 2010 A-3 Phone Service Site Diagram
+
+24
+
+

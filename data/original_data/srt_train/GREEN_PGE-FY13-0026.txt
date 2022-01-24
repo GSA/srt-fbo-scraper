@@ -1,0 +1,2332 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+General Services Administration
+
+Public Buildings Service
+Office of the PBS Chief Information Officer
+
+
+
+
+
+8 (a) Small Business Program  Set Aside Procurement
+
+for 
+
+Independent Verification and Validation (IV&V)
+
+
+
+
+
+
+
+Statement of Work 
+
+and 
+
+Request for Proposals 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+October 25, 2012
+
+
+
+
+
+
+Statement of Work (SOW)
+
+
+
+INTRODUCTION
+
+The General Services Administration (GSA) intends to award one contract, firm fixed price under the 8A Small Business Program.  This acquisition is set aside for competition under the 8A Small Business Program.  The period of performance will be one base year, with four one year option periods.
+
+ 
+
+1.1.            Organization
+
+ 
+
+The GSA, Public Buildings Service (PBS), Office of the PBS Chief Information Officer (PGA), Enterprise Quality Program (EQP), 1800 F Street, NW, Washington, DC 20405.
+
+ 
+
+1.2.            Background
+
+ 
+
+The Office of the PBS CIO’s mission is to strategically acquire information and technology designed to improve the quality, timeliness, and cost effectiveness of PBS service delivery to its customers.  The PBS CIO manages the design, development, implementation, and maintenance of all National PBS software applications, as well as the relationships between the PBS CIO’s office and PBS Central Office business lines, regional customers, and stakeholders. 
+
+ 
+
+The Enterprise Quality Program (EQP) provides the foundation for continuously improving, managing, and evaluating the quality of PBS applications.  The EQP has developed processes and procedures based on the principles and practices of the Software Engineering Institute’s (SEI) Capability Maturity Model Integration (CMMI).  The EQP also incorporates the concepts of the ISO 9000 quality management processes.  The EQP focuses on the areas of Quality Assurance, Configuration Management, Project Management and Independent Verification and Validation (IV&V).  Support for the IV&V function, to include quality assurance of software testing services and continuous improvement of team processes, is the focus of this RFP.  Quality Assurance, Configuration Management and overall EQP Project Management are outside the scope of this RFP.
+
+ 
+
+These IV&V services have been provided currently at a level of support consisting of 8 individuals in project management, quality assurance, and information systems and application areas of specialty. However, for purposes of evaluation the vendor’s response should reflect their staffing and pricing based on the current working environment.  Option years shall be priced based on the initial baseline established by the contractor.  Any discussion of proposed innovations should project possible cost savings in terms of full time employee (FTE) reductions within the technical proposal.  However, in order to evaluate consistently GSA expects the option year price proposals to be reflective of the staffing level established for the base year.
+
+
+
+
+
+2.0              SCOPE
+
+ 
+
+The contractor shall provide all labor, administration and management necessary to provide for IV&V evaluation and testing support services relative to PBS applications as required by the EQP.  This statement of work establishes the requirements for services to provide project management, technical services, Concept of Operations and personnel requirements for the system/application evaluation and testing support services specific to the IV&V project area of the EQP.  Details of these support requirements associated with this task are in the Task Description and Requirements section (3) provided herein.
+
+
+
+The level of effort proposed shall be based on the current environment and remain consistent for the base year and all option years.  If contractor or GSA directed automation result in level of effort efficiencies the contractor will be expected to reduce costs based on the process improvements.  These levels of effort efficiencies could occur at any time during the contract but are not expected to occur during the base year.  
+
+
+
+The PBS Application Portfolio includes over 60 GOTS/COTS intra/interdependent business critical applications that share data, processes and a virtualized infrastructure.  Testing of these applications is critical to the ongoing change management process of PBS CIO’s Office.
+
+
+
+The IV&V team will need to have familiarity with the basic building blocks of operating systems, databases and middleware technologies and testing experience in all of them to successfully perform the assigned tasks.
+
+
+
+Current Operating Systems consist of:
+
+ 
+
+Windows 2003 (Standard and Enterprise Editions)
+
+Windows 2008 (Standard and Enterprise Editions)
+
+Windows 2008 R2 (Standard and Enterprise Editions)
+
+Linux RedHat versions 4 and 5
+
+Solaris 10 and 11
+
+ 
+
+Databases and Middleware technologies currently in use:
+
+ 
+
+·                	Oracle 9i
+
+·                	Oracle 10G
+
+·                	Oracle 11G
+
+·                	Oracle Weblogic
+
+·                	IBM Websphere
+
+·                	Microsoft SQL Server2000
+
+·                	Microsoft SQL Server2003
+
+·                	Microsoft SQL Server2005
+
+·                	Microsoft SQL Server2008
+
+·                	Microsoft SQL Express -All current versions
+
+ 
+
+These applications form the core technological basis of the work described in this SOW.  Current staffing to support this work is 8 full time personnel, performing the level of service for each deliverable as described in the chart below.
+
+
+
+
+
+ 
+
+  
+
+3.0              TASK DESCRIPTION AND REQUIREMENTS
+
+ 
+
+3.1 General Requirements    
+
+
+
+3.1.1. Staffing:  The contractor will maintain the staffing plan for the duration of the contract, unless it is reduced by the government, and will ensure compliance with all requirements of this statement of work as well as the explicit personnel requirements and coverage as specified in paragraph 3.6 Personnel Requirements.  The contractor shall provide the staffing plan updates including work schedule and contact information details to the COR immediately following changes in schedules of staff or contact information.
+
+        
+
+3.1.2        Standard Operating Procedures Development and Maintenance
+
+ 
+
+3.1.2.1     If necessary, the contractor shall coordinate and execute the development of standard operating procedures (SOP) sufficient for supporting applicable work activities described in this SOW.  There are currently 15 SOP’s associated with the IV&V function at PBS with no specific immediate plans to add more.  This does not preclude the addition of more in the future.
+
+ 
+
+3.1.2.2    The contractor shall ensure all new and existing SOPs are updated, maintained and
+
+access is provided to the COR immediately upon completion.  This is a common occurrence as policy and procedures change. 
+
+
+
+ 3.1.3       Quality Assurance:  The contractor shall monitor the quality of all work performed as part of this task.  This includes both the content of the products produced (e.g. test cases) and the documents specified in section 4.  Deliverables of this SOW.  The contractor will ensure the quality, completeness, and timeliness of all deliverables and work performed.  The contractor shall ensure that all deliverables comply with all applicable EQP and PBS CIO standards, policies, and procedures.
+
+ 
+
+ 3.1.5        Status/Progress Meetings: The contractor shall hold status/progress meetings with the COR and provide a status report to review current issues, status of current activities, pending action items, upcoming activities, etc.  The contractor shall maintain meeting minutes documenting the results of these status/progress meetings and provide them within three (3) workdays of the meeting.  Status/progress meetings will occur bi-weekly or as needed as defined by the COR.
+
+
+
+3.2  Project Management Support Requirements
+
+ 
+
+The contractor shall provide project management for the following functions:
+
+ 
+
+3.2.1        Personnel/Staffing Plan
+
+ 
+
+The contractor shall provide the personnel required to meet the specific technical, operational, and support requirements as detailed in this statement of work.  
+
+ 
+
+3.2.2        Project Plan Development and Schedules
+
+ 
+
+Within PBS major and minor upgrades, configuration changes, patches, etc. are tracked in a “master schedule” tool. This tool is used for planning and management purposes to facilitate the orderly installation and maintenance of IT software and infrastructure upgrades, configuration changes, and patches.  The contractor shall provide input into master schedules and project plans as it applies to the specific activities and resources associated with IV&V Support and tasking.  If necessary, project plans of work associated with this task will be developed and maintained to ensure compliance with program schedules and objectives.  Project plans created will be provided to the COR upon creation with updates provided at progress meetings held every two (2) weeks or at an interval requested by the Government.
+
+
+
+3.2.3       The contractor shall provide a monthly, written summary of all IV&V-related activities.
+
+
+
+3.2.4	Planning, Scheduling and Project specific Coordination for Integrated Project Teams
+
+
+
+        The contractor shall participate in Integrated Project Team (IPT) meetings, organizational meetings, or systems/software development, testing, and implementation meetings as required.  These meetings are for information sharing and requirements gathering to allow the organization to keep all planned activities within scope and on schedule.  There is an IPT for each application that has active upgrades planned or ongoing activities requiring IV&V support. Generally these IPT meetings are one to two hours in length and there are typically around 3 per week.  
+
+
+
+3.3      Testing Services 
+
+ 
+
+The contractor shall provide IV&V testing support for the PBS Enterprise Quality Program (EQP).  This support includes, but is not limited to, the following activities:
+
+ 
+
+
+
+3.3.1 Application, Configuration, and Patch Release Testing
+
+
+
+All changes to applications, databases and servers are tested in our IV&V environment.  Level of testing is dependent on the types of releases, i.e. enhancement, patching, or configuration changes and the impact of those changes on the application.   The contractor shall propose appropriate levels and types of testing that will best ensure the types of releases identified in this section (3.3.1) are adequately tested to provide an acceptable level of risk that the changes may be applied in production without impacting uptime. Contractor shall propose an Operational Level Agreement (OLA) that includes the maximum duration for the testing services work identified in this section (3.3.1) of the SOW.   Contractor is expected to meet their proposed OLA duration targets for 95% of the software upgrades, configuration changes, patches and any application deliverables that require testing.  Contractor shall provide OLA duration metrics in each monthly report to cover all IV&V testing actions that are completed in that month by the IV&V team.  Every IV&V testing action will be evaluated for compliance with the contractor provided OLA duration for the specific type of testing action.  Any exceptions to the OLA maximum duration must be preapproved by the COR.  The COR will perform random verification of the reported metrics by comparing what is in the monthly report to what is captured in the EQP workflow tool (currently Serena Business Manager [SBM]).  The COR will perform quarterly evaluations of contractor OLA performance to determine that the goal of 95% of testing actions are completed within the contractor provided metrics.  
+
+
+
+
+
+3.3.1.1       TBRR -- Minor Enhancement -- The contractor shall review all application deliverables to design and prepare test plans/scripts/cases, and perform testing of application systems based on these deliverables.  The contractor shall ensure the application functionality is in accordance with the requirements and that the requirements, as defined in the deliverables, have been fully satisfied including the following activities;
+
+  
+
+The contractor shall coordinate IV&V testing activities with other teams and individuals, both internal and external, (e.g. project managers, business lines, developers, IT security, CM, system integration) and provide input and/or feedback as required.
+
+The maximum duration for these activities will not exceed 5 business days.
+
+The duration metric starts when the assignment is transferred to the IV&V team through our workflow tool (currently Serena Business Manager).
+
+
+
+
+
+3.3.1.2       TBRR -- Major Release -- The contractor shall review all application deliverables to design and prepare test plans/scripts/cases, and perform testing of application systems based on these deliverables.  The contractor shall ensure the application functionality is in accordance with the requirements and that the requirements, as defined in the deliverables, have been fully satisfied including the following activities;
+
+  
+
+The contractor shall coordinate IV&V testing activities with other teams and individuals, both internal and external, (e.g. project managers, business lines, developers, IT security, EPQ, system integration) and provide input and/or feedback as required.
+
+The maximum duration for these activities will not exceed 10 Business Days. 
+
+The duration metric starts when the assignment is transferred to the IV&V team through our workflow tool (currently Serena Business Manager).
+
+
+
+
+
+3.3.1.3      Systems Upgrade requiring Application Upgrade (Operating System, Database or Middleware) --  The contractor shall review all applications deliverables to design and prepare test plans/scripts/cases, and perform testing of application systems based on these deliverables.  The contractor shall ensure the application functionality is in accordance with the requirements and that the requirements, as defined in the deliverables, have been fully satisfied including the following activities;
+
+  
+
+The contractor shall coordinate IV&V testing activities with other teams and individuals, both internal and external, (e.g. project managers, business lines, developers, IT security, EPQ, system integration) and provide input and/or feedback as required.  The contractor does not need to provide staff with skills focused in all of these areas.
+
+These activities are normally performed quarterly by the PBS CIO, and therefore will be grouped into 4 working periods.
+
+The maximum duration for these activities will not exceed 20 business Days.
+
+The duration metric starts when the assignment is transferred to the IV&V team through our workflow tool (currently Serena Business Manager).
+
+
+
+
+
+3.3.1.4      Systems Upgrade NOT requiring Application Upgrade (Operating System, Database or Middleware) --  The contractor shall review all application deliverables to design and prepare test plans/scripts/cases, and perform testing of application systems based on these deliverables.  The contractor shall ensure the application functionality is in accordance with the requirements and that the requirements, as defined in the deliverables, have been fully satisfied including the following activities;
+
+  
+
+The contractor shall coordinate IV&V testing activities with other teams and individuals, both internal and external, (e.g. project managers, business lines, developers, IT security, EPQ, system integration) and provide input and/or feedback as required.
+
+These activities are normally performed quarterly by the PBS CIO, and therefore will be grouped into 4 working periods.
+
+The maximum duration for these activities will not exceed 20 business Days.
+
+The duration metric starts when the assignment is transferred to the IV&V team through our workflow tool (currently Serena Business Manager).
+
+
+
+3.3.2  	General Testing Requirements
+
+
+
+3.3.2.1        The contractor shall prepare a written report (Product Evaluation Report) of all test results from the executed test cases. This report should document and include any discrepancies, inconsistencies, or deficiencies identified during the evaluation and testing of the delivered application and its associated documentation.  Production of the test report is expected to be completed within the timeline defined in the duration metric of the contractor’s proposed OLA for each type of testing described in section 3.3.1.
+
+    
+
+3.3.2.2 	 The contractor shall post all reports and applicable testing documentation in the PBS configuration management workflow tool, Serena Business Manager, or whichever repository or replacement tool may be implemented for this purpose.  The PBS CIO encourages all our industry partners to make recommendations for alternative technology solutions where they will provide greater benefit to the government.  The contractor may propose a suite of tools as part of their offering or they may propose that they continue to use the technology that is in place.  If a new tool is proposed, the contractor shall address how a transition to the new tools would be accomplished.
+
+
+
+3.3.2.3        The contractor shall coordinate with the Enterprise Service Center (ESC) and assist with maintaining the test environment, including scheduling installation of software for testing, as required.  The contractor is not responsible for installing application software or for system administration of the servers, however, the contractor will coordinate as necessary with the developers and ESC personnel to ensure the installation and configuration settings are correct. Contractor will document install issues in the Product Evaluation Report (PER).
+
+ 
+
+3.3.2.4        The contractor shall participate, as required, in system/application reviews, requirements and design reviews, upgrade strategy sessions, program or process reviews, etc. and provide feedback and recommendations related to the IV&V function or associated activities.
+
+ 
+
+3.3.2.5        The contractor shall comply with all applicable GSA and PBS standards, policies, processes, procedures, and guidance as it relates to performing IV&V tasking and including but not limited to the use of the GSA environment, applications, network, systems, and workstations.
+
+ 
+
+3.4 Concept of Operations    
+
+
+
+The concept of operations shall include the processes and procedures for meeting the objectives of this SOW.  This shall include integrated operational protocols and practices to meet the mission objective of the PBS CIO.  The contractor’s proposed Concept of Operations shall be used to evaluate the quality and effectiveness of their offering.
+
+
+
+3.4.1	The contractor shall propose practices and protocols for the implementation of innovative testing and evaluation solutions, with particular emphasis on providing automated test tools and integration with the PBS Software Development Life Cycle (SDLC) processes.   This shall include process diagrams, communications and integration concepts to be evaluated by PBS CIO.  PBS currently has a few licenses of Jazz.net and intends to implement technologies that provide cost and process efficiencies.   These licenses will be available for use by the contractor if PBS elects to develop this solution.  
+
+
+
+3.4.2	The contractor shall propose practices and protocols for process improvement and technical advancement regarding the methodologies and tools used in support of this task.  This shall include automated testing tools/suites to be used to improve the quality of PBS applications in support of IV&V testing efforts to improve test results and reduce testing cycle times, and provide reporting capabilities and defect tracking.  Recommendations shall be provided to the COR for consideration.  The contractor will be required to use the tools should PBS elect to purchase and deploy them.  The contractor should provide expertise and insight into tools and propose solutions that improve productivity and efficiencies within the IV&V functional area.
+
+
+
+3.4.2	The contractor shall optimize the utilization of IV&V contractor personnel across
+
+multiple projects and ensure effective, efficient, and thorough testing of PBS applications.
+
+
+
+3.4.3	PBS does understand that a small percentage of software releases may be problematic and require a longer test cycle.  The OLA should identify the testing strategy for each type of release and the strategy and timeline to complete each task from the date it is formally assigned to the IV&V team through completion.  The contractor shall address integration testing and identify the types of testing they propose to perform to adequately provide assurance that enhancements and upgrades can be safely applied in our production environment based on the test results.  The contractor does not have any install responsibilities in the IV&V Support and production environment.  Contractor should describe how their staffing plan will meet the workload requirements for testing.
+
+
+
+3.4.4 The contractor shall provide recommendations regarding the acceptability of the delivered application, OS, database and patch submissions.  These recommendations should be included in the written report documenting the test results.  As described in the “Scope” section (2.0) of this document, there are 6 basic types of deliverables generally tested:
+
+
+
+TBRR: Approximately 200 TBRRs (Test Baseline Release Reports) per year:   These include Minor or Major releases of software functionality.  For GOTS (Government off the Shelf) or custom developed applications this could include adding or altering major functionality that would require full testing of the new functionality in addition to basic assurance that the release does not break existing functionality.  For COTS (Commercial off the Shelf) applications this might be a major version or maintenance upgrade.  
+
+ 
+
+Server Software requiring Application Upgrades: The IV&V team also receives around 25 releases per year based on operating system and database (Oracle and SQL Server) upgrades that require modifications to the applications.  These would require a testing plan similar to the TBRR. These types of releases might be based on a functional change due to maintenance or version upgrades of the OS or database or security patches that affect system or database functions.
+
+
+
+Server Software:  PBS performs approximately 250 security patching activities per year that do not require application code changes.  These will require a basic test of major application functionality to validate that the patch does not introduce issues to the application or database.  This generally includes Microsoft, Solaris or Oracle security patches.
+
+
+
+Configuration Changes Only: PBS performs approximately 75 configuration changes to either the operating system or the database settings each year.  These will require a basic test of major application functionality to validate that the update does not introduce issues to the application or database.  These configuration changes are usually at the OS level or an adjustment to a database parameter.
+
+
+
+Emergency Fixes:  Emergency Fixes (e-fixes) occur when a change in the production environment manifests an error that affects the operability of the application or the data.  These are applied in production and then the IV&V environment.  Historically PBS has processed 125 E-fixes annually and they require a basic functional testing in IV&V. 
+
+
+
+Data Refreshes:  Data Refreshes occur when scripts are delivered to provide widespread data updates.  A good example of a data refresh is the annual adjustments to rent appraisal rates.  Data refreshes are most common around year end (fiscal) and represent a light workload. PBS processes approximately 110 data refreshes each year but they may not be applied in IV&V depending on the content of the changes.  
+
+
+
+3.5 Personnel Requirements
+
+ 
+
+The contractor shall provide personnel with the knowledge, skills, and abilities to complete all requirements described in this statement of work.  In addition, the contractor shall provide personnel that meet the following requirements:
+
+ 
+
+3.5.1        The contractor shall provide personnel that are skilled in and able to effectively communicate by verbal and written means, including but not limited to the use of e-mail, word processing, and spreadsheet applications. 
+
+ 
+
+3.5.2        The contractor shall provide personnel that are able to work well in a team environment and demonstrate an ability to work with individuals of all skill levels including members of other teams in effectively meeting the requirements of this statement of work.
+
+ 
+
+3.5.3        The contractor shall provide personnel who have a working knowledge, experience, skills, and abilities for the following, where applicable, to successfully complete their duties, in support of the requirements of this statement of work.
+
+ 
+
+·         Solaris 10 and 11
+
+·         Microsoft Windows 2003 R2 Enterprise Edition or later
+
+·         Oracle Application Server 10g
+
+·         Oracle Application Server 11g
+
+·         Oracle Database 11g or later
+
+·         Oracle 10g Portal or later
+
+·         Oracle Clients used in conjunction with the above
+
+·         Oracle Weblogic
+
+·         IBM Websphere
+
+·         Linux RedHat versions 4 and 5
+
+·         Microsoft SQL Server 200. 2003.2005 and 2008 or later
+
+·         Microsoft IIS 6 or later
+
+·         Serena Business Manager 2009.R4 or later
+
+·         MS Office 2007 (Word, Excel, Powerpoint, Access) or later
+
+·         MS Project Professional 2007 or later
+
+·         MS Internet Explorer (IE) 8.0 or later
+
+·         Hummingbird
+
+·         PuTTY
+
+·         WinSCP
+
+·         Remote Desktop
+
+·         Oracle Enterprise Manager
+
+·         Cygwin
+
+·         SQL+
+
+·         ODBC
+
+ 
+
+3.5.4         HSPD12 Compliance:  All contract personnel must be HSPD12 cleared with a minimum MBI background clearance.  Personnel will NOT be allowed to work until they have completed the initial clearance portion of the HSPD12 background investigation.  All proposed personnel must initiate their clearance process and complete all required documentation within 5 business days of contract award.  Contractor must address how they will meet and maintain this requirement in their staffing plan.
+
+ 
+
+3.5.5        Key Personnel:  In order to ensure continuity throughout the period of performance, the contractor shall identify a minimum of three (3) key positions among the staff for this award.   Critical to performance of this award are both the proposed positions identified by the contractor in their technical proposal as key and the experience of the people in those positions.  The proposed key positions as well as proposed staff will show experience in the different skill sets necessary and the different functions to be performed.
+
+ 
+
+The Contractor shall ensure a stable workforce during the performance of this contract. The Contractor shall designate a minimum of three (3) key personnel, one with managerial oversight responsibilities, and sufficient technical staff to ensure success and continuity for the duration of the contract.  Key personnel shall remain responsible for each of the tasks until point of completion.  Proposed changes of key personnel shall be provided in writing to the GSA CO and the COR for approval. This should describe the proposed action (including resignation if applicable), any corresponding transition plan, and assessment of the anticipated impact to the program efforts.
+
+
+
+The Contractor shall notify the GSA CO and COR, in writing, of a proposed substitution of any key personnel.  This notification shall be submitted at least twenty (20) calendar days in
+
+advance of the proposed substitution.  All proposed substitutes should have qualifications
+
+Equal to, or greater than, the person to be replaced.
+
+ 
+
+The GSA CO, in consultation with the COR, will evaluate such requests and promptly notify the Contractor, in writing, of his/her approval or disapproval thereof.  At the discretion of the GSA CO, an interview with the proposed key individual may be   required to verify that the proposed substitute has qualifications equal to, or greater than, the person to be replaced.  The GSA CO will notify the Contractor ten (10) working days in advance of the proposed substitution date if the government chooses to conduct an interview to review the qualifications of the proposed individual.
+
+ 
+
+The GSA CO, in consultation with the COR, has the right to request removal of, or approval of, any contractor or subcontractor personnel assigned to accomplish this Award.  Any personnel replacement shall be performed within 30 calendar days from date
+
+of the vacancy. 
+
+ 
+
+3.5.6        Contractor must provide a resume for all proposed key personnel.  For non-key positions contractor must either provide a resume or a list of qualifications and skills including education level for each position to allow assessment of the proposed personnel.
+
+ 
+
+4.0            DELIVERABLES
+
+ 
+
+4.1      Identification and Schedule
+
+ 
+
+All deliverables shall be provided to the COR according to the scheduled identified for each in the table below.  An electronic media copy of each written deliverable shall be delivered in the applicable Microsoft Office format in conformance with approved GSA standards unless otherwise specified or agreed to by the COR.
+
+ 
+
+ 
+
+4.2      Delivery Instructions
+
+ 
+
+All deliverables shall be submitted to the Government COR.
+
+ 
+
+4.3      Acceptance of Deliverables
+
+ 
+
+The Government shall have five (5) working days to complete the review of each deliverable and accept or reject the deliverable by giving written notice to the contractor.  When the Government fails to complete the review within the review period, the deliverable will be deemed acceptable, unless an extension of the review period is requested.  The contractor shall have five (5) working days to correct the rejected deliverable and return it to the Government COR.  An extension of this correction period may be approved by the COR only under special circumstances.  The contractor shall be allowed one re-submission of deliverables.
+
+ 
+
+Written documents (including the response to this proposal) delivered to the Government in draft and final form will be evaluated against the following acceptance criteria:
+
+ 
+
+Standards:  The document conforms to the prescribed standard, where applicable.
+
+Completeness:  The document covers all aspects of the subject matter.
+
+Clarity:  The document is understandable by the intended user/recipient of the document.
+
+Consistency  The document is logically coherent both internally and in conjunction with other related documentation.
+
+Accuracy:  The document is functionally and technically accurate.
+
+Editorial Accuracy:  The document is free of typographical and grammatical errors, logically organized, and follows consistent formatting styles.
+
+ 
+
+
+
+
+4.4   	FAR Clauses for this Award
+
+ 
+
+4.4.1    The following FAR Clauses are made part of this procurement.
+
+
+
+
+
+52.212-2   Evaluation—Commercial Items.  (Jan 1999)
+
+ 
+
+(a)         The Government will award a contract resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation will be most advantageous to the Government, price and other factors considered. The following factors shall be used to evaluate offers:
+
+(i)                 Technical Approach and Understanding of the Requirements
+
+(ii)               Professional Staff
+
+(iii)             Past Performance
+
+(iv)             Corporate Capability
+
+(v)	       Proven ability to implement Innovative Solutions
+
+Technical and past performance, when combined, are significantly more important than cost or
+
+price
+
+(b)         Options. The Government will evaluate offers for award purposes by adding the total price for all options to the total price for the basic requirement. The Government may determine that an offer is unacceptable if the option prices are significantly unbalanced. Evaluation of options shall not obligate the Government to exercise the option(s). 
+
+(c)         A written notice of award or acceptance of an offer mailed or otherwise furnished to the successful offeror within the time for acceptance specified in the offer, shall result in a binding contract without further action by either party. Before the offer’s specified expiration time, the Government may accept an offer (or part of an offer), whether or not there are negotiations after its receipt, unless a written notice of withdrawal is received before award.
+
+(End of provision)
+
+ 
+
+
+
+52.212-3  Offeror Representations and Certifications—Commercial Items. 
+
+Offeror Representations and Certifications—Commercial Items (Apr 2012) 
+
+An offeror shall complete only paragraph (b) of this provision if the offeror has completed the annual representations and certifications electronically via . If an offeror has not completed the annual representations and certifications electronically at the ORCA website, the offeror shall complete only paragraphs (c) through (o) of this provision. 
+
+(a) Definitions. As used in this provision— 
+
+“Economically disadvantaged women-owned small business (EDWOSB) concern” means a small business concern that is at least 51 percent directly and unconditionally owned by, and the management and daily business operations of which are controlled by, one or more women who are citizens of the United States and who are economically disadvantaged in accordance with 13 CFR part 127. It automatically qualifies as a women-owned small business eligible under the WOSB Program. 
+
+“Forced or indentured child labor” means all work or service— 
+
+(1) Exacted from any person under the age of 18 under the menace of any penalty for its nonperformance and for which the worker does not offer himself voluntarily; or 
+
+(2) Performed by any person under the age of 18 pursuant to a contract the enforcement of which can be accomplished by process or penalties. 
+
+“Inverted domestic corporation”, as used in this section, means a foreign incorporated entity which is treated as an inverted domestic corporation under , i.e., a corporation that used to be incorporated in the United States, or used to be a partnership in the United States, but now is incorporated in  a foreign country, or is a subsidiary whose parent corporation is incorporated in a foreign country, that meets the criteria specified in , applied in accordance with the rules and definitions of . An inverted domestic corporation as herein defined does not meet the definition of an inverted domestic corporation as defined by the Internal Revenue Code at . 
+
+“Manufactured end product” means any end product in Federal Supply Classes (FSC) 1000-9999, except— 
+
+(1) FSC 5510, Lumber and Related Basic Wood Materials; 
+
+(2) Federal Supply Group (FSG) 87, Agricultural Supplies; 
+
+(3) FSG 88, Live Animals; 
+
+(4) FSG 89, Food and Related Consumables; 
+
+(5) FSC 9410, Crude Grades of Plant Materials; 
+
+(6) FSC 9430, Miscellaneous Crude Animal Products, Inedible; 
+
+(7) FSC 9440, Miscellaneous Crude Agricultural and Forestry Products; 
+
+(8) FSC 9610, Ores; 
+
+(9) FSC 9620, Minerals, Natural and Synthetic; and 
+
+(10) FSC 9630, Additive Metal Materials. 
+
+“Place of manufacture” means the place where an end product is assembled out of components, or otherwise made or processed from raw materials into the finished product that is to be provided to the Government. If a product is disassembled and reassembled, the place of reassembly is not the place of manufacture. 
+
+“Restricted business operations” means business operations in Sudan that include power production activities, mineral extraction activities, oil-related activities, or the production of military equipment, as those terms are defined in the Sudan Accountability and Divestment Act of 2007 (Pub. L. 110-174). Restricted business operations do not include business operations that the person (as that term is defined in Section 2 of the Sudan Accountability and Divestment Act of 2007) conducting the business can demonstrate— 
+
+(1) Are conducted under contract directly and exclusively with the regional government of southern Sudan; 
+
+(2) Are conducted pursuant to specific authorization from the Office of Foreign Assets Control in the Department of the Treasury, or are expressly exempted under Federal law from the requirement to be conducted under such authorization; 
+
+(3) Consist of providing goods or services to marginalized populations of Sudan; 
+
+(4) Consist of providing goods or services to an internationally recognized peacekeeping force or humanitarian organization; 
+
+(5) Consist of providing goods or services that are used only to promote health or education; or 
+
+(6) Have been voluntarily suspended. 
+
+“Sensitive technology”— 
+
+(1) Means hardware, software, telecommunications equipment, or any other technology that is to be used specifically— 
+
+(i) To restrict the free flow of unbiased information in Iran; or 
+
+(ii) To disrupt, monitor, or otherwise restrict speech of the people of Iran; and 
+
+(2) Does not include information or informational materials the export of which the President does not have the authority to regulate or prohibit pursuant to section 203(b)(3) of the International Emergency Economic Powers Act (). 
+
+“Service-disabled veteran-owned small business concern”— 
+
+(1) Means a small business concern— 
+
+(i) Not less than 51 percent of which is owned by one or more service-disabled veterans or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more service-disabled veterans; and 
+
+(ii) The management and daily business operations of which are controlled by one or more service-disabled veterans or, in the case of a service-disabled veteran with permanent and severe disability, the spouse or permanent caregiver of such veteran. 
+
+(2) Service-disabled veteran means a veteran, as defined in , with a disability that is service-connected, as defined in . 
+
+“Small business concern” means a concern, including its affiliates, that is independently owned and operated, not dominant in the field of operation in which it is bidding on Government contracts, and qualified as a small business under the criteria in 13 CFR Part 121 and size standards in this solicitation. 
+
+“Subsidiary” means an entity in which more than 50 percent of the entity is owned— 
+
+(1) Directly by a parent corporation; or 
+
+(2) Through another subsidiary of a parent corporation. 
+
+“Veteran-owned small business concern” means a small business concern— 
+
+(1) Not less than 51 percent of which is owned by one or more veterans (as defined at ) or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more veterans; and 
+
+(2) The management and daily business operations of which are controlled by one or more veterans. 
+
+“Women-owned business concern” means a concern which is at least 51 percent owned by one or more women; or in the case of any publicly owned business, at least 51 percent of its stock is owned by one or more women; and whose management and daily business operations are controlled by one or more women. 
+
+“Women-owned small business concern” means a small business concern— 
+
+(1) That is at least 51 percent owned by one or more women; or, in the case of any publicly owned business, at least 51 percent of the stock of which is owned by one or more women; and 
+
+(2) Whose management and daily business operations are controlled by one or more women. 
+
+“Women-owned small business (WOSB) concern eligible under the WOSB Program” (in accordance with 13 CFR part 127), means a small business concern that is at least 51 percent directly and unconditionally owned by, and the management and daily business operations of which are controlled by, one or more women who are citizens of the United States. 
+
+(b) 
+
+(1) Annual Representations and Certifications. Any changes provided by the offeror in paragraph (b)(2) of this provision do not automatically change the representations and certifications posted on the Online Representations and Certifications Application (ORCA) website. 
+
+(2) The offeror has completed the annual representations and certifications electronically via the ORCA website accessed through . After reviewing the ORCA database information, the offeror verifies by submission of this offer that the representations and certifications currently posted electronically at FAR 52.212-3, Offeror Representations and Certifications—Commercial Items, have been entered or updated in the last 12 months, are current, accurate, complete, and applicable to this solicitation (including the business size standard applicable to the NAICS code referenced for this solicitation), as of the date of this offer and are incorporated in this offer by reference (see FAR ), except for paragraphs ______________. 
+
+[Offeror to identify the applicable paragraphs at (c) through (o) of this provision that the offeror has completed for the purposes of this solicitation only, if any. 
+
+These amended representation(s) and/or certification(s) are also incorporated in this offer and are current, accurate, and complete as of the date of this offer. 
+
+Any changes provided by the offeror are applicable to this solicitation only, and do not result in an update to the representations and certifications posted electronically on ORCA.] 
+
+(c) Offerors must complete the following representations when the resulting contract will be performed in the United States or its outlying areas. Check all that apply. 
+
+(1) Small business concern. The offeror represents as part of its offer that it o is, o is not a small business concern. 
+
+(2) Veteran-owned small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this provision.] The offeror represents as part of its offer that it o is, o is not a veteran-owned small business concern. 
+
+(3) Service-disabled veteran-owned small business concern. [Complete only if the offeror represented itself as a veteran-owned small business concern in paragraph (c)(2) of this provision.] The offeror represents as part of its offer that it o is, o is not a service-disabled veteran-owned small business concern. 
+
+(4) Small disadvantaged business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this provision.] The offeror represents, for general statistical purposes, that it o is, o is not a small disadvantaged business concern as defined in 13 CFR 124.1002. 
+
+(5) Women-owned small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this provision.] The offeror represents that it o is, o is not a women-owned small business concern. 
+
+(6) WOSB concern eligible under the WOSB Program. [Complete only if the offeror represented itself as a women-owned small business concern in paragraph (c)(5) of this provision.] The offeror represents that— 
+
+(i) It o is,o is not a WOSB concern eligible under the WOSB Program, has provided all the required documents to the WOSB Repository, and no change in circumstances or adverse decisions have been issued that affects its eligibility; and 
+
+(ii) It o is, o is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation in paragraph (c)(6)(i) of this provision is accurate for each WOSB concern eligible under the WOSB Program participating in the joint venture. [The offeror shall enter the name or names of the WOSB concern eligible under the WOSB Program and other small businesses that are participating in the joint venture: __________.] Each WOSB concern eligible under the WOSB Program participating in the joint venture shall submit a separate signed copy of the WOSB representation. 
+
+(7) Economically disadvantaged women-owned small business (EDWOSB) concern. [Complete only if the offeror represented itself as a WOSB concern eligible under the WOSB Program in (c)(6) of this provision.] The offeror represents that— 
+
+(i) It o is, o is not an EDWOSB concern, has provided all the required documents to the WOSB Repository, and no change in circumstances or adverse decisions have been issued that affects its eligibility; and 
+
+(ii) It o is, o is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation in paragraph (c)(7)(i) of this provision is accurate for each EDWOSB concern participating in the joint venture. [The offeror shall enter the name or names of the EDWOSB concern and other small businesses that are participating in the joint venture: __________.] Each EDWOSB concern participating in the joint venture shall submit a separate signed copy of the EDWOSB representation. 
+
+Note: Complete paragraphs (c)(8) and (c)(9) only if this solicitation is expected to exceed the simplified acquisition threshold. 
+
+(8) Women-owned business concern (other than small business concern). [Complete only if the offeror is a women-owned business concern and did not represent itself as a small business concern in paragraph (c)(1) of this provision.] The offeror represents that it o is a women-owned business concern. 
+
+(9) Tie bid priority for labor surplus area concerns. If this is an invitation for bid, small business offerors may identify the labor surplus areas in which costs to be incurred on account of manufacturing or production (by offeror or first-tier subcontractors) amount to more than 50 percent of the contract price:____________________________________ 
+
+(10) [Complete only if the solicitation contains the clause at FAR , Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns, or FAR , Small Disadvantaged Business Participation Program—Disadvantaged Status and Reporting, and the offeror desires a benefit based on its disadvantaged status.] 
+
+(i) General. The offeror represents that either— 
+
+(A) It o is, o is not certified by the Small Business Administration as a small disadvantaged business concern and identified, on the date of this representation, as a certified small disadvantaged business concern in the CCR Dynamic Small Business Search database maintained by the Small Business Administration, and that no material change in disadvantaged ownership and control has occurred since its certification, and, where the concern is owned by one or more individuals claiming disadvantaged status, the net worth of each individual upon whom the certification is based does not exceed $750,000 after taking into account the applicable exclusions set forth at 13 CFR 124.104(c)(2); or 
+
+(B) It o has, o has not submitted a completed application to the Small Business Administration or a Private Certifier to be certified as a small disadvantaged business concern in accordance with 13 CFR 124, Subpart B, and a decision on that application is pending, and that no material change in disadvantaged ownership and control has occurred since its application was submitted. 
+
+(ii) o Joint Ventures under the Price Evaluation Adjustment for Small Disadvantaged Business Concerns. The offeror represents, as part of its offer, that it is a joint venture that complies with the requirements in 13 CFR 124.1002(f) and that the representation in paragraph (c)(10)(i) of this provision is accurate for the small disadvantaged business concern that is participating in the joint venture. [The offeror shall enter the name of the small disadvantaged business concern that is participating in the joint venture: ________________.] 
+
+(11) HUBZone small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this provision.] The offeror represents, as part of its offer, that— 
+
+(i) It o is, o is not a HUBZone small business concern listed, on the date of this representation, on the List of Qualified HUBZone Small Business Concerns maintained by the Small Business Administration, and no material changes in ownership and control, principal office, or HUBZone employee percentage have occurred since it was certified in accordance with 13 CFR Part 126; and 
+
+(ii) It o is, o is not a HUBZone joint venture that complies with the requirements of 13 CFR Part 126, and the representation in paragraph (c)(11)(i) of this provision is accurate for each HUBZone small business concern participating in the HUBZone joint venture. [The offeror shall enter the names of each of the HUBZone small business concerns participating in the HUBZone joint venture: __________.] Each HUBZone small business concern participating in the HUBZone joint venture shall submit a separate signed copy of the HUBZone representation. 
+
+(d) Representations required to implement provisions of Executive Order 11246— 
+
+(1) Previous contracts and compliance. The offeror represents that— 
+
+(i) It o has, o has not participated in a previous contract or subcontract subject to the Equal Opportunity clause of this solicitation; and 
+
+(ii) It o has, o has not filed all required compliance reports. 
+
+(2) Affirmative Action Compliance. The offeror represents that— 
+
+(i) It o has developed and has on file, o has not developed and does not have on file, at each establishment, affirmative action programs required by rules and regulations of the Secretary of Labor (41 cfr parts 60-1 and 60-2), or 
+
+(ii) It o has not previously had contracts subject to the written affirmative action programs requirement of the rules and regulations of the Secretary of Labor. 
+
+(e) Certification Regarding Payments to Influence Federal Transactions (31 U.S.C. 1352). (Applies only if the contract is expected to exceed $150,000.) By submission of its offer, the offeror certifies to the best of its knowledge and belief that no Federal appropriated funds have been paid or will be paid to any person for influencing or attempting to influence an officer or employee of any agency, a Member of Congress, an officer or employee of Congress or an employee of a Member of Congress on his or her behalf in connection with the award of any resultant contract. If any registrants under the Lobbying Disclosure Act of 1995 have made a lobbying contact on behalf of the offeror with respect to this contract, the offeror shall complete and submit, with its offer, OMB Standard Form LLL, Disclosure of Lobbying Activities, to provide the name of the registrants. The offeror need not report regularly employed officers or employees of the offeror to whom payments of reasonable compensation were made. 
+
+(f) Buy American Act Certificate. (Applies only if the clause at Federal Acquisition Regulation (FAR) , Buy American Act—Supplies, is included in this solicitation.) 
+
+(1) The offeror certifies that each end product, except those listed in paragraph (f)(2) of this provision, is a domestic end product and that for other than COTS items, the offeror has considered components of unknown origin to have been mined, produced, or manufactured outside the United States. The offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as domestic end products, i.e., an end product that is not a COTS item and does not meet the component test in paragraph (2) of the definition of “domestic end product.” The terms “commercially available off-the-shelf (COTS) item” “component,” “domestic end product,” “end product,” “foreign end product,” and “United States” are defined in the clause of this solicitation entitled “Buy American Act—Supplies.” 
+
+(2) Foreign End Products:
+
+[List as necessary] 
+
+(3) The Government will evaluate offers in accordance with the policies and procedures of FAR . 
+
+(g)(1) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate. (Applies only if the clause at FAR , Buy American Act—Free Trade Agreements—Israeli Trade Act, is included in this solicitation.) 
+
+(i) The offeror certifies that each end product, except those listed in paragraph (g)(1)(ii) or (g)(1)(iii) of this provision, is a domestic end product and that for other than COTS items, the offeror has considered components of unknown origin to have been mined, produced, or manufactured outside the United States. The terms “Bahrainian, Moroccan, Omani, or Peruvian end product,” “commercially available off-the-shelf (COTS) item,” “component,” “domestic end product,” “end product,” “foreign end product,” “Free Trade Agreement country,” “Free Trade Agreement country end product,” “Israeli end product,” and “United States” are defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements–Israeli Trade Act.” 
+
+(ii) The offeror certifies that the following supplies are Free Trade Agreement country end products (other than Bahrainian, Moroccan, Omani, or Peruvian end products) or Israeli end products as defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli Trade Act”: 
+
+Free Trade Agreement Country End Products (Other than Bahrainian, Moroccan, Omani, or Peruvian End Products) or Israeli End Products:
+
+[List as necessary] 
+
+(iii) The offeror shall list those supplies that are foreign end products (other than those listed in paragraph (g)(1)(ii) of this provision) as defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli Trade Act.” The offeror shall list as other foreign end products those end products manufactured in the United States that do not qualify as domestic end products, i.e., an end product that is not a COTS item and does not meet the component test in paragraph (2) of the definition of “domestic end product.” 
+
+Other Foreign End Products:
+
+[List as necessary] 
+
+(iv) The Government will evaluate offers in accordance with the policies and procedures of FAR . 
+
+(2) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate, Alternate I. If Alternate I to the clause at FAR  is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision: 
+
+(g)(1)(ii) The offeror certifies that the following supplies are Canadian end products as defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli Trade Act”: 
+
+Canadian End Products:
+
+[List as necessary] 
+
+(3) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate, Alternate II. If Alternate II to the clause at FAR  is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision: 
+
+(g)(1)(ii) The offeror certifies that the following supplies are Canadian end products or Israeli end products as defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli Trade Act”: 
+
+Canadian or Israeli End Products:
+
+[List as necessary] 
+
+(4) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate, Alternate III. If Alternate III to the clause at  is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision: 
+
+(g)(1)(ii) The offeror certifies that the following supplies are Free Trade Agreement country end products (other than Bahrainian, Korean, Moroccan, Omani, or Peruvian end products) or Israeli end products as defined in the clause of this solicitation entitled “Buy American Act-Free Trade Agreements-Israeli Trade Act”: 
+
+Free Trade Agreement Country End Products (Other than Bahrainian, Korean, Moroccan, Omani, or Peruvian End Products) or Israeli End Products: 
+
+[List as necessary] 
+
+(5) Trade Agreements Certificate. (Applies only if the clause at FAR , Trade Agreements, is included in this solicitation.) 
+
+(i) The offeror certifies that each end product, except those listed in paragraph (g)(5)(ii) of this provision, is a U.S.-made or designated country end product, as defined in the clause of this solicitation entitled “Trade Agreements.” 
+
+(ii) The offeror shall list as other end products those end products that are not U.S.-made or designated country end products. 
+
+Other End Products:
+
+[List as necessary] 
+
+(iii) The Government will evaluate offers in accordance with the policies and procedures of FAR . For line items covered by the WTO GPA, the Government will evaluate offers of U.S.-made or designated country end products without regard to the restrictions of the Buy American Act. The Government will consider for award only offers of U.S.-made or designated country end products unless the Contracting Officer determines that there are no offers for such products or that the offers for such products are insufficient to fulfill the requirements of the solicitation. 
+
+(h) Certification Regarding Responsibility Matters (Executive Order 12689). (Applies only if the contract value is expected to exceed the simplified acquisition threshold.) The offeror certifies, to the best of its knowledge and belief, that the offeror and/or any of its principals— 
+
+(1) o Are, o are not presently debarred, suspended, proposed for debarment, or declared ineligible for the award of contracts by any Federal agency; 
+
+(2) o Have, o have not, within a three-year period preceding this offer, been convicted of or had a civil judgment rendered against them for: commission of fraud or a criminal offense in connection with obtaining, attempting to obtain, or performing a Federal, state or local government contract or subcontract; violation of Federal or state antitrust statutes relating to the submission of offers; or commission of embezzlement, theft, forgery, bribery, falsification or destruction of records, making false statements, tax evasion, violating Federal criminal tax laws, or receiving stolen property; 
+
+(3) o Are, o are not presently indicted for, or otherwise criminally or civilly charged by a Government entity with, commission of any of these offenses enumerated in paragraph (h)(2) of this clause; and 
+
+(4) o Have, o have not, within a three-year period preceding this offer, been notified of any delinquent Federal taxes in an amount that exceeds $3,000 for which the liability remains unsatisfied. 
+
+(i) Taxes are considered delinquent if both of the following criteria apply: 
+
+(A) The tax liability is finally determined. The liability is finally determined if it has been assessed. A liability is not finally determined if there is a pending administrative or judicial challenge. In the case of a judicial challenge to the liability, the liability is not finally determined until all judicial appeal rights have been exhausted. 
+
+(B) The taxpayer is delinquent in making payment. A taxpayer is delinquent if the taxpayer has failed to pay the tax liability when full payment was due and required. A taxpayer is not delinquent in cases where enforced collection action is precluded. 
+
+(ii) Examples. 
+
+(A) The taxpayer has received a statutory notice of deficiency, under I.R.C. §6212, which entitles the taxpayer to seek Tax Court review of a proposed tax deficiency. This is not a delinquent tax because it is not a final tax liability. Should the taxpayer seek Tax Court review, this will not be a final tax liability until the taxpayer has exercised all judicial appeal rights. 
+
+(B) The IRS has filed a notice of Federal tax lien with respect to an assessed tax liability, and the taxpayer has been issued a notice under I.R.C. §6320 entitling the taxpayer to request a hearing with the IRS Office of Appeals contesting the lien filing, and to further appeal to the Tax Court if the IRS determines to sustain the lien filing. In the course of the hearing, the taxpayer is entitled to contest the underlying tax liability because the taxpayer has had no prior opportunity to contest the liability. This is not a delinquent tax because it is not a final tax liability. Should the taxpayer seek tax court review, this will not be a final tax liability until the taxpayer has exercised all judicial appeal rights. 
+
+(C) The taxpayer has entered into an installment agreement pursuant to I.R.C. §6159. The taxpayer is making timely payments and is in full compliance with the agreement terms. The taxpayer is not delinquent because the taxpayer is not currently required to make full payment. 
+
+(D) The taxpayer has filed for bankruptcy protection. The taxpayer is not delinquent because enforced collection action is stayed under 11 U.S.C. §362 (the Bankruptcy Code). 
+
+(i) Certification Regarding Knowledge of Child Labor for Listed End Products (Executive Order 13126). [The Contracting Officer must list in paragraph (i)(1) any end products being acquired under this solicitation that are included in the List of Products Requiring Contractor Certification as to Forced or Indentured Child Labor, unless excluded at (b).] 
+
+(1) Listed end products.
+
+(2) Certification. [If the Contracting Officer has identified end products and countries of origin in paragraph (i)(1) of this provision, then the offeror must certify to either (i)(2)(i) or (i)(2)(ii) by checking the appropriate block.] 
+
+[  ] (i) The offeror will not supply any end product listed in paragraph (i)(1) of this provision that was mined, produced, or manufactured in the corresponding country as listed for that product. 
+
+[  ] (ii) The offeror may supply an end product listed in paragraph (i)(1) of this provision that was mined, produced, or manufactured in the corresponding country as listed for that product. The offeror certifies that it has made a good faith effort to determine whether forced or indentured child labor was used to mine, produce, or manufacture any such end product furnished under this contract. On the basis of those efforts, the offeror certifies that it is not aware of any such use of child labor. 
+
+(j) Place of manufacture. (Does not apply unless the solicitation is predominantly for the acquisition of manufactured end products.) For statistical purposes only, the offeror shall indicate whether the place of manufacture of the end products it expects to provide in response to this solicitation is predominantly— 
+
+(1) o In the United States (Check this box if the total anticipated price of offered end products manufactured in the United States exceeds the total anticipated price of offered end products manufactured outside the United States); or 
+
+(2) o Outside the United States. 
+
+(k) Certificates regarding exemptions from the application of the Service Contract Act. (Certification by the offeror as to its compliance with respect to the contract also constitutes its certification as to compliance by its subcontractor if it subcontracts out the exempt services.) [The contracting officer is to check a box to indicate if paragraph (k)(1) or (k)(2) applies.] 
+
+[  ] (1) Maintenance, calibration, or repair of certain equipment as described in FAR (c)(1). The offeror o does o does not certify that— 
+
+(i) The items of equipment to be serviced under this contract are used regularly for other than Governmental purposes and are sold or traded by the offeror (or subcontractor in the case of an exempt subcontract) in substantial quantities to the general public in the course of normal business operations; 
+
+(ii) The services will be furnished at prices which are, or are based on, established catalog or market prices (see FAR (c)(2)(ii)) for the maintenance, calibration, or repair of such equipment; and 
+
+(iii) The compensation (wage and fringe benefits) plan for all service employees performing work under the contract will be the same as that used for these employees and equivalent employees servicing the same equipment of commercial customers. 
+
+[  ] (2) Certain services as described in FAR (d)(1). The offeror o does o does not certify that— 
+
+(i) The services under the contract are offered and sold regularly to non-Governmental customers, and are provided by the offeror (or subcontractor in the case of an exempt subcontract) to the general public in substantial quantities in the course of normal business operations; 
+
+(ii) The contract services will be furnished at prices that are, or are based on, established catalog or market prices (see FAR (d)(2)(iii)); 
+
+(iii) Each service employee who will perform the services under the contract will spend only a small portion of his or her time (a monthly average of less than 20 percent of the available hours on an annualized basis, or less than 20 percent of available hours during the contract period if the contract period is less than a month) servicing the Government contract; and 
+
+(iv) The compensation (wage and fringe benefits) plan for all service employees performing work under the contract is the same as that used for these employees and equivalent employees servicing commercial customers. 
+
+(3) If paragraph (k)(1) or (k)(2) of this clause applies— 
+
+(i) If the offeror does not certify to the conditions in paragraph (k)(1) or (k)(2) and the Contracting Officer did not attach a Service Contract Act wage determination to the solicitation, the offeror shall notify the Contracting Officer as soon as possible; and 
+
+(ii) The Contracting Officer may not make an award to the offeror if the offeror fails to execute the certification in paragraph (k)(1) or (k)(2) of this clause or to contact the Contracting Officer as required in paragraph (k)(3)(i) of this clause. 
+
+(l) Taxpayer Identification Number (TIN) (, ). (Not applicable if the offeror is required to provide this information to a central contractor registration database to be eligible for award.) 
+
+(1) All offerors must submit the information required in paragraphs (l)(3) through (l)(5) of this provision to comply with debt collection requirements of , reporting requirements of , and implementing regulations issued by the Internal Revenue Service (IRS). 
+
+(2) The TIN may be used by the Government to collect and report on any delinquent amounts arising out of the offeror’s relationship with the Government (). If the resulting contract is subject to the payment reporting requirements described in FAR , the TIN provided hereunder may be matched with IRS records to verify the accuracy of the offeror’s TIN. 
+
+(3) Taxpayer Identification Number (TIN). 
+
+o  TIN: ________________________________. 
+
+o  TIN has been applied for. 
+
+o  TIN is not required because: 
+
+o  Offeror is a nonresident alien, foreign corporation, or foreign partnership that does not have income effectively connected with the conduct of a trade or business in the United States and does not have an office or place of business or a fiscal paying agent in the United States; 
+
+o  Offeror is an agency or instrumentality of a foreign government; 
+
+o  Offeror is an agency or instrumentality of the Federal Government. 
+
+(4) Type of organization. 
+
+o  Sole proprietorship; 
+
+o  Partnership; 
+
+o  Corporate entity (not tax-exempt); 
+
+o  Corporate entity (tax-exempt); 
+
+o  Government entity (Federal, State, or local); 
+
+o  Foreign government; 
+
+o  International organization per 26 CFR 1.6049-4; 
+
+o  Other ________________________________. 
+
+(5) Common parent. 
+
+o  Offeror is not owned or controlled by a common parent; 
+
+o  Name and TIN of common parent: 
+
+Name ________________________________. 
+
+TIN _________________________________. 
+
+(m) Restricted business operations in Sudan. By submission of its offer, the offeror certifies that the offeror does not conduct any restricted business operations in Sudan. 
+
+(n) Prohibition on Contracting with Inverted Domestic Corporations. 
+
+(1) Relation to Internal Revenue Code. An inverted domestic corporation as herein defined does not meet the definition of an inverted domestic corporation as defined by the Internal Revenue Code . 
+
+(2) Representation. By submission of its offer, the offeror represents that— 
+
+(i) It is not an inverted domestic corporation; and 
+
+(ii) It is not a subsidiary of an inverted domestic corporation. 
+
+(o) Sanctioned activities relating to Iran. 
+
+(1) The offeror shall e-mail questions concerning sensitive technology to the Department of State at . 
+
+(2) Representation and Certification. Unless a waiver is granted or an exception applies as provided in paragraph (o)(3) of this provision, by submission of its offer, the offeror— 
+
+(i) Represents, to the best of its knowledge and belief, that the offeror does not export any sensitive technology to the government of Iran or any entities or individuals owned or controlled by, or acting on behalf or at the direction of, the government of Iran; and 
+
+(ii) Certifies that the offeror, or any person owned or controlled by the offeror, does not engage in any activities for which sanctions may be imposed under section 5 of the Iran Sanctions Act. 
+
+(3) The representation and certification requirements of paragraph (o)(2) of this provision do not apply if— 
+
+(i) This solicitation includes a trade agreements certification (e.g., (g) or a comparable agency provision); and 
+
+(ii) The offeror has certified that all the offered products to be supplied are designated country end products. 
+
+(End of provision) 
+
+
+
+52.212-5  Contract Terms and Conditions Required to Implement Statutes or Executive Orders—Commercial Items. 
+
+Contract Terms and Conditions Required to Implement Statutes or Executive Orders—Commercial Items (Aug 2012) 
+
+(a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract by reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items: 
+
+(1) , Combating Trafficking in Persons (Feb 2009) (). 
+
+_X__Alternate I (Aug 2007) of  (). 
+
+(2) , Protest After Award (Aug 1996) (). 
+
+(3) , Applicable Law for Breach of Contract Claim (Oct 2004) (Pub. L. 108-77, 108-78). 
+
+(b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: 
+
+[Contracting Officer check as appropriate.] 
+
+_X_ (1) , Restrictions on Subcontractor Sales to the Government (Sept 2006), with Alternate I (Oct 1995) ( and ). 
+
+_X_ (2) , Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 ()). 
+
+_X_ (3) , Whistleblower Protections under the American Recovery and Reinvestment Act of 2009 (June 2010) (Section 1553 of Pub. L. 111-5). (Applies to contracts funded by the American Recovery and Reinvestment Act of 2009.) 
+
+__X (4) , Reporting Executive Compensation and First-Tier Subcontract Awards (Aug 2012) (Pub. L. 109-282) (). 
+
+__ (5) , American Recovery and Reinvestment Act—Reporting Requirements (Jul 2010) (Pub. L. 111-5). 
+
+_X_ (6) , Protecting the Government’s Interest When Subcontracting with Contractors Debarred, Suspended, or Proposed for Debarment. (Dec 2010) (31 U.S.C. 6101 note). 
+
+_X_ (7) , Updates of Publicly Available Information Regarding Responsibility Matters (Feb 2012) (41 U.S.C. 2313). 
+
+__ (8) , Prohibition on Contracting with Inverted Domestic Corporations (May 2012) (section 738 of Division C of Pub. L. 112-74, section 740 of Division C of Pub. L. 111-117, section 743 of Division D of Pub. L. 111-8, and section 745 of Division D of Pub. L. 110-161). 
+
+__ (9) , Notice of HUBZone Set-Aside or Sole-Source Award (Nov 2011) (). 
+
+__ (10) , Notice of Price Evaluation Preference for HUBZone Small Business Concerns (Jan 2011) (if the offeror elects to waive the preference, it shall so indicate in its offer) (). 
+
+__ (11) [Reserved] 
+
+__ (12)(i)  , Notice of Total Small Business Set-Aside (Nov 2011) (). 
+
+__ (ii) Alternate I (Nov 2011). 
+
+__ (iii) Alternate II (Nov 2011). 
+
+__ (13)(i)  , Notice of Partial Small Business Set-Aside (June 2003) (). 
+
+__ (ii) Alternate I (Oct 1995) of . 
+
+__ (iii) Alternate II (Mar 2004) of . 
+
+__ (14) , Utilization of Small Business Concerns (Jan 2011) ( and (3)). 
+
+__ (15)(i)  , Small Business Subcontracting Plan (Jan 2011) (). 
+
+__ (ii) Alternate I (Oct 2001) of . 
+
+__ (iii) Alternate II (Oct 2001) of . 
+
+__ (iv) Alternate III (Jul 2010) of . 
+
+__ (16) , Notice of Set-Aside of Orders (Nov 2011)(). 
+
+_X_ (17) , Limitations on Subcontracting (Nov 2011) (). 
+
+__ (18) , Liquidated Damages—Subcon-tracting Plan (Jan 1999) (). 
+
+__ (19)(i)  , Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns (Oct 2008) () (if the offeror elects to waive the adjustment, it shall so indicate in its offer). 
+
+__ (ii) Alternate I (June 2003) of . 
+
+__ (20) , Small Disadvantaged Business Participation Program—Disadvantaged Status and Reporting (Dec 2010) (Pub. L. 103-355, section 7102, and ). 
+
+__ (21) , Small Disadvantaged Business Participation Program— Incentive Subcontracting (Oct 2000) (Pub. L. 103-355, section 7102, and ). 
+
+__ (22) , Notice of Service-Disabled Veteran-Owned Small Business Set-Aside (Nov 2011) (). 
+
+__ (23)  , Post Award Small Business Program Rerepresentation (Apr 2012) (). 
+
+__ (24) , Notice of Set-Aside for Economically Disadvantaged Women-Owned Small Business (EDWOSB) Concerns (Apr 2012) (). 
+
+__ (25) , Notice of Set-Aside for Women-Owned Small Business (WOSB) Concerns Eligible Under the WOSB Program (Apr 2012) (). 
+
+_X_ (26) , Convict Labor (June 2003) (E.O. 11755). 
+
+__ (27) , Child Labor—Cooperation with Authorities and Remedies (Mar 2012) (E.O. 13126). 
+
+_X_ (28) , Prohibition of Segregated Facilities (Feb 1999). 
+
+_X_ (29) , Equal Opportunity (Mar 2007) (E.O. 11246). 
+
+_X_ (30) , Equal Opportunity for Veterans (Sep 2010)(). 
+
+_X_ (31) , Affirmative Action for Workers with Disabilities (Oct 2010) (). 
+
+_X_ (32) , Employment Reports on Veterans (Sep 2010) (38 U.S.C. 4212). 
+
+_X_ (33) , Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496). 
+
+_X_ (34) , Employment Eligibility Verification (Jul 2012). (Executive Order 12989). (Not applicable to the acquisition of commercially available off-the-shelf items or certain other types of commercial items as prescribed in .) 
+
+__ (35)(i)  , Estimate of Percentage of Recovered Material Content for EPA–Designated Items (May 2008) (). (Not applicable to the acquisition of commercially available off-the-shelf items.) 
+
+__ (ii) Alternate I (May 2008) of  (). (Not applicable to the acquisition of commercially available off-the-shelf items.) 
+
+__ (36) , Energy Efficiency in Energy-Consuming Products (Dec 2007) (). 
+
+__ (37)(i)  , IEEE 1680 Standard for the Environmental Assessment of Personal Computer Products (Dec 2007) (E.O. 13423). 
+
+__ (ii) Alternate I (Dec 2007) of . 
+
+_X_ (38) , Encouraging Contractor Policies to Ban Text Messaging While Driving (Aug 2011) (E.O. 13513). 
+
+__ (39) , Buy American Act—Supplies (Feb 2009) (). 
+
+__ (40)(i)  , Buy American Act—Free Trade Agreements—Israeli Trade Act (May 2012) (,  note,  note,  note,  note, Pub. L. 103-182, 108-77, 108-78, 108-286, 108-302, 109-53, 109-169, 109-283, 110-138, 112-41, and 112-42). 
+
+__ (ii) Alternate I (Mar 2012) of . 
+
+__ (iii) Alternate II (Mar 2012) of . 
+
+__ (iv) Alternate III (Mar 2012) of . 
+
+__ (41) , Trade Agreements (May 2012) (, et seq.,  note). 
+
+__ (42) , Restrictions on Certain Foreign Purchases (June 2008) (E.O.’s, proclamations, and statutes administered by the Office of Foreign Assets Control of the Department of the Treasury). 
+
+__ (43) , Notice of Disaster or Emergency Area Set-Aside (Nov 2007) (). 
+
+__ (44) , Restrictions on Subcontracting Outside Disaster or Emergency Area (Nov 2007) (). 
+
+__ (45) , Terms for Financing of Purchases of Commercial Items (Feb 2002) (, ). 
+
+__ (46) , Installment Payments for Commercial Items (Oct 1995) (, ). 
+
+_X_ (47) , Payment by Electronic Funds Transfer—Central Contractor Registration (Oct 2003) (). 
+
+__ (48) , Payment by Electronic Funds Transfer—Other than Central Contractor Registration (May 1999) (). 
+
+_X_ (49) , Payment by Third Party (Feb 2010) (). 
+
+__ (50) , Privacy or Security Safeguards (Aug 1996) (). 
+
+__ (51)(i)  , Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) ( and ). 
+
+__ (ii) Alternate I (Apr 2003) of . 
+
+(c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: 
+
+[Contracting Officer check as appropriate.] 
+
+__X (1) , Service Contract Act of 1965 (Nov 2007) (, et seq.). 
+
+X__ (2) , Statement of Equivalent Rates for Federal Hires (May 1989) ( and , et seq.). 
+
+__ (3) , Fair Labor Standards Act and Service Contract Act—Price Adjustment (Multiple Year and Option Contracts) (Sep 2009) ( and , et seq.). 
+
+__ (4) , Fair Labor Standards Act and Service Contract Act—Price Adjustment (Sep 2009) ( and , et seq.). 
+
+__ (5) , Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment—Requirements (Nov 2007) (, et seq.). 
+
+__ (6) , Exemption from Application of the Service Contract Act to Contracts for Certain Services—Requirements (Feb 2009) (, et seq.). 
+
+__ (7) , Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247). 
+
+__ (8) , Accepting and Dispensing of $1 Coin (Sept 2008) (). 
+
+(d)  Comptroller General Examination of Record. The Contractor shall comply with the provisions of this paragraph (d) if this contract was awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at , Audit and Records—Negotiation. 
+
+(1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right to examine any of the Contractor’s directly pertinent records involving transactions related to this contract. 
+
+(2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination, audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR , Contractor Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records relating to the work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such appeals, litigation, or claims are finally resolved. 
+
+(3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary course of business or pursuant to a provision of law. 
+
+(e)(1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c), and (d) of this clause, the Contractor is not required to flow down any FAR clause, other than those in this paragraph (e)(1) in a subcontract for commercial items. Unless otherwise indicated below, the extent of the flow down shall be as required by the clause— 
+
+(i) , Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 ()). 
+
+(ii) , Utilization of Small Business Concerns (Dec 2010) ( and (3)), in all subcontracts that offer further subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $650,000 ($1.5 million for construction of any public facility), the subcontractor must include  in lower tier subcontracts that offer subcontracting opportunities. 
+
+(iii) [Reserved] 
+
+(iv) , Equal Opportunity (Mar 2007) (E.O. 11246). 
+
+(v) , Equal Opportunity for Veterans (Sep 2010) (). 
+
+(vi) , Affirmative Action for Workers with Disabilities (Oct 2010) (). 
+
+(vii) , Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496). Flow down required in accordance with paragraph (f) of FAR clause . 
+
+(viii) , Service Contract Act of 1965 (Nov 2007) (, et seq.). 
+
+(ix) , Combating Trafficking in Persons (Feb 2009) (). 
+
+___Alternate I (Aug 2007) of  (). 
+
+(x) , Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment-Requirements (Nov 2007) (, et seq.). 
+
+(xi) , Exemption from Application of the Service Contract Act to Contracts for Certain Services-Requirements (Feb 2009) (, et seq.). 
+
+(xii) , Employment Eligibility Verification (Jul 2012). 
+
+(xiii) , Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247). Flow down required in accordance with paragraph (e) of FAR clause . 
+
+(xiv) , Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) ( and ). Flow down required in accordance with paragraph (d) of FAR clause . 
+
+(2) While not required, the contractor may include in its subcontracts for commercial items a minimal number of additional clauses necessary to satisfy its contractual obligations. 
+
+(End of clause) 
+
+52.217-5  Evaluation of Options. 
+
+As prescribed in (c), insert a provision substantially the same as the following: 
+
+Evaluation of Options (July 1990)
+
+Except when it is determined in accordance with FAR (b) not to be in the Government’s best interests, the Government will evaluate offers for award purposes by adding the total price for all options to the total price for the basic requirement. Evaluation of options will not obligate the Government to exercise the option(s). 
+
+(End of provision)
+
+52.217-8 Option to Extend Services. (NOV 1999)
+
+The Government may require continued performance of any services within the limits and at the rates specified in the contract. These rates may be adjusted only as a result of revisions to prevailing labor rates provided by the Secretary of Labor. The option provision may be exercised more than once, but the total extension of performance hereunder shall not exceed 6 months. The Contracting Officer may exercise the option by written notice to the Contractor within 30 days.
+
+(End of clause)
+
+ 
+
+52.217-9   Option to Extend the Term of the Contract. (MAR 2000)
+
+(a) The Government may extend the term of this contract by written notice to the Contractor within 30 days; provided that the Government gives the Contractor a preliminary written notice of its intent to extend at least 30 days before the contract expires. The preliminary notice does not commit the Government to an extension.
+
+(b) If the Government exercises this option, the extended contract shall be considered to include this option clause.
+
+(c) The total duration of this contract, including the exercise of any options under this clause, shall not exceed 5 years.
+
+(End of clause)
+
+
+
+
+
+
+
+
+
+52.219-18  Notification of Competition Limited to Eligible 8(a) Concerns. 
+
+ 
+
+Notification of Competition Limited to Eligible 8(a) Concerns (June 2003) (DEVIATION)
+
+(a) Offers are solicited only from small business concerns expressly certified by the Small Business Administration (SBA) for participation in the SBA’s 8(a) Program and which meet the following criteria at the time of submission of offer— 
+
+(1) The Offeror is in conformance with the 8(a) support limitation set forth in its approved business plan; and 
+
+(2) The Offeror is in conformance with the Business Activity Targets set forth in its approved business plan or any remedial action directed by the SBA. 
+
+(b) By submission of its offer, the Offeror represents that it meets all of the criteria set forth in paragraph (a) of this clause. 
+
+(c) Any award resulting from this solicitation will be made directly by the Contracting Officer to the successful 8(a) offeror selected through the evaluation criteria set forth in this solicitation  
+
+(d)(1) Agreement. A small business concern submitting an offer in its own name shall furnish, in performing the contract, only end items manufactured or produced by small business concerns in the United States or its outlying areas. If this procurement is processed under simplified acquisition procedures and the total amount of this contract does not exceed $25,000, a small business concern may furnish the product of any domestic firm. This paragraph does not apply to construction or service contracts. 
+
+(2) The ____________ [insert name of SBA's contractor] will notify the ____________ [insert name of contracting agency] Contracting Officer in writing immediately upon entering an agreement (either oral or written) to transfer all or part of its stock or other ownership interest to any other party. (End of clause) 
+
+
+
+4.4.2	FAR 52.252-2 CLAUSES INCORPORATED BY REFERENCE (FEB 1998)
+
+ 
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if given in full text.  Upon request, the Contracting Officer will make their full text available.  In addition, the full text of a clause accessed electronically at this address:      
+
+ 
+
+52.212-1    Instructions to Offerors—Commercial Items (FEB 2012)  
+
+52.212-4    Contract Terms and Conditions—Commercial Items (FEB 2012)
+
+52.204-4  Printed or Copied Double-Sided on Postconsumer Fiber Content Paper (MAY 2011)
+
+
+
+52.204-6 Data Universal Numbering System (DUNS) Number (Apr 2008)
+
+52.204-9 Personal Identity Verification of Contractor Personnel (Jan 2011) 
+
+52.204-7  Central Contractor Registration. (AUGUST 2012)
+
+52.209-7 Information Regarding Responsibility Matters (Feb 2012) 
+
+52.222-40  Notification of Employee Rights Under the National Labor Relations Act. (DECEMBER 2010)
+
+52.225-25  Prohibition on Contracting with Entities Engaging in Sanctioned Activities Relating to Iran—Representation and Certification. (NOVEMBER 2011)
+
+52.233-4  Applicable Law for Breach of Contract Claim. (OCTOBER 2004)
+
+
+
+
+
+ 5.0            GOVERNMENT RESPONSIBILITIES AND POINTS OF CONTACT
+
+ 
+
+5.1      Government Furnished Equipment (GFE)
+
+ 
+
+The Government shall furnish the following:
+
+ 
+
+Use of Government equipment necessary for contractor personnel to complete task requirements and deliverables.  Generally this equipment is limited to include laptop computers and smart-phones or blackberry devices for each member of the proposed staff.  Contractor will be expected to provide any additional hardware that they deem necessary to support the work.  All Government furnished property shall be issued upon receipt of the appropriate Government forms and property passes and shall be returned to the issuing office upon termination of the task(s) and/or the responsible contractor personnel.
+
+ 
+
+Licenses for all application software packages GSA requires to perform the IV&V services, such as Jazz.net, and the Serena tools.
+
+
+
+All available functional and technical documentation associated with the IV&V support services
+
+
+
+Access to GSA networks and resources once security access has been successfully adjudicated.
+
+
+
+The contractor shall provide an accounting of all GFE issued by the Government to the contractor.  This is to be performed quarterly and provided to the COR.
+
+
+
+5.2      Points of Contact
+
+ 
+
+5.2.1	The GSA COR assigned to the EQP will also perform management of this award and will approve of changes to: reports, documentation, and deliverables. The GSA COR will provide  direction, and receive product deliverables.  The COR shall be capable of providing all technical assistance and clarification required during the performance of this tasking.
+
+
+
+The GSA COR will make recommendations to the CO on any changes that affect the scope or content of the award.
+
+ 
+
+Program Manager/Contracting Officer Representative (COR)
+
+ 
+
+TBD
+
+ 
+
+All contract-specific issues shall be directed to the GSA Contracting Officer and Contract Specialist.
+
+ 
+
+  5.2.2     The GSA Contracting Officer (CO) under this Order is:
+
+ 
+
+Ms. Laurie Schimmel
+
+Contract Officer
+
+PBS, Contracting and Facilities Division (PGE)
+
+Email:  laurie.schimmel@gsa.gov
+
+ 
+
+U.S. General Services Administration (GSA)
+
+Public Buildings Service (PBS)
+
+Acquisition Services (PG)
+
+1800 F Streets, NW - Room 3029
+
+Washington, DC  20405
+
+ 
+
+ 
+
+5.2.3    For Contractual questions, please contact the Contract Specialist:
+
+ 
+
+Ms. Doris D. Williams
+
+Support Contractor (Integrity Management Consulting)
+
+PBS, Contracting and Facilities Division (PGE)
+
+Email:  doris.williams@gsa.gov
+
+ 
+
+U.S. General Services Administration (GSA)
+
+Public Buildings Service (PBS)
+
+Acquisition Services (PG)
+
+1800 F Streets, NW – Room 3029
+
+Washington, DC  20405
+
+ 
+
+5.2.4   Changes and Revisions.
+
+The Contracting Officer is the only authorized official authorized to issue modifications to this Award and resulting contract.  The GSA, PBS shall not be liable for any costs due to changes or revisions not originally negotiated under this contract.  Requests for changes or revisions received from the contractor shall be referred to the Contracting Officer and COR for review.  Upon approval, the Contracting Officer will issue a formal modification to this Contract on a Standard Form 30 (SF30). 
+
+5.2.5   Government Property Rights
+
+The preliminary/draft and final deliverables and all associated working papers and other material deemed relevant by GSA that have been generated by the contractor in the performance of this task order are the property of the U.S. Government and must be submitted to the COR at the conclusion of the period of performance.
+
+ 
+
+All documents produced for this contract are the property of the U.S. Government and cannot be reproduced, or retained by the contractor.  All appropriate contract documentation will be given to the agency during, and at the completion of this contract.  
+
+ 
+
+6.0            PERIOD OF PERFORMANCE
+
+ 
+
+This award will include a base year and four one-year options periods as follows:
+
+ 
+
+Base Year:     13 December 2012 – 12 December 2013 
+
+Option One:   13 December 2013 – 12 December 2014
+
+Option Two:   13 December 2014 – 12 December 2015
+
+Option Three: 13 December 2015 –  12 December 2016
+
+Option Four:   13 December 2016 –  12 December 2017
+
+ 
+
+ 6.1      Place of Performance
+
+ 
+
+Contractor should provide optional pricing proposals for working in GSA furnished space or working at a contractor provided location.  If the second option is selected by the government the work on this award will be performed predominately at the Contractor's IV&V facility which shall be located no more than 25 miles from the GSA Central Office Building, at 1800 F St, NW, Washington, DC. 
+
+ 
+
+Occasional in-person attendance at meetings will be required at the Government offices located at 1800 F Street, NW, Washington, DC 20405 and the PBS Enterprise Service Center (ESC) located at Building #3, 14426 Albemarle Point Place Suite 120 Chantilly, VA 20151.  This is considered local travel and is not reimbursable under this award.
+
+ 
+
+6.4      Work Schedule
+
+ 
+
+The contractor shall provide and ensure support of these requirements during the core hours of 7:00 AM to 5:00 PM, Monday through Friday, excluding Government holidays and other official Government closures.
+
+ 
+
+6.5      Travel
+
+ 
+
+There is no travel beyond the Washington, DC metropolitan area expected with this award.  Local travel will not be reimbursed.  Local travel is defined as performing support at any location within 50 miles of the GSA Central Office Building. 
+
+ 
+
+
+
+ 
+
+7.0            TRANSITION REQUIREMENTS
+
+ 
+
+The Contractor shall provide a phase-in/phase-out transition plan that, as a minimum, addresses:
+
+ 
+
+7.1  	Phase-In:  This includes the receipt of the applications, inventory of all outstanding maintenance requests/modifications/issues, personnel staff-up to full staff, hand-off with the incumbent Contractor, and service levels during phase-in, etc.  The offeror shall propose a transition timeline and process for any phase-in activities as required.
+
+ 
+
+The Contractor shall use the time between award and start date (30 calendar days) to prepare for and achieve fully operational status on the first day of required services.  To accomplish this level of operational readiness, the Contractor shall implement its proposed phase-in plan, which should be submitted as part of the technical proposal in response to the solicitation.  Site access shall be permitted during phase-in to the extent that it does not interfere with the operation of the Incumbent Contractor.  The Contractor shall coordinate with the COR for site access permission.  The Phase-In Plan shall address no less than the following:
+
+ 
+
+Manpower requirements
+
+HSPD12 compliance
+
+Personnel recruitment
+
+Personnel orientation
+
+Site familiarization
+
+Material equipment on-hand levels verification and validation
+
+Assumption of responsibility and accountability of Government furnished property
+
+Telephone services
+
+Initiation of a Point to Point network connection (if not located in PBS furnished space) between the contractor site and the GSA WLAN.
+
+Contractor provided supplies and equipment
+
+Timelines
+
+ 
+
+7.2  	Phase-Out:  The turnover of the application to the successor Contractor, inventory of all outstanding requests/modifications/issues, hand-off with the successor Contractor, and service levels during phase-out, etc. The offeror shall propose a transition timeline and process any phase-out activities required.
+
+ 
+
+The Incumbent Contractor shall maintain full compliance during the period of time leading up to award expiration or termination.  The Incumbent Contractor shall submit to the COR a Phase-Out Plan 30-60 calendar days before the period of performance  completion or termination.  The Phase-Out Plan shall address no less than the following:
+
+ 
+
+Procedures for retaining the staffing levels necessary to maintain required services through the day of expiration or termination.
+
+Procedures and responsibilities for performing physical inventory and reconciliation of Government Furnished Property.
+
+Procedures and responsibility for reconciling and certifying material and equipment on-hand levels and accuracy.
+
+ The Incumbent Contractor shall coordinate its phase-out activities with the incoming Contractor to produce a smooth transition at the end of the award period.  The Incumbent Contractor shall remove all Contractor-owned property from the Government spaces or facilities by close of business on the last day of the award.
+
+ 
+
+ 8            ADDITIONAL TERMS AND CONDITIONS
+
+ 
+
+8.1      Section 508 Compliance
+
+ 
+
+In accordance with Federal Register, 25 APR 01, FAC 97-27, Executive Order 12866, FAR Part 2.101, FAR Part 7.103, FAR Part 10.001, FAR Part 11.002, FAR Part 12.202, FAR Part 39.000 & 39.2, access to electronic and information technology (EIT) by individuals with disabilities must be compliant with the accessibility standards at 36 CFR 1194, unless it falls under one of the exceptions noted in FAR 39.204.  For further information see.  The terms of this award do not include any development work but testing of section 508 compliance is a required function for the testing of applications and websites.
+
+ 
+
+8.2      Security
+
+ 
+
+In performance of this award, the Contractor shall follow and as applicable in the performance of tasks, reference the applicable security laws and regulations.  Contractors who design, operate, test, maintain, and/or monitor GSA systems must have background investigations completed in accordance with GSA order 2100.1 – IT Security Policy and GSA Order CIO P 2181 – HSPD-12 Personal Identity Verification and Credentialing Handbook requirements prior to being able to conduct business.   Applicants will not be reinvestigated if a prior favorable adjudication is on file with the Federal Protective Service (FPS) or GSA, there has been less than a one year break in service, and the position is identified at the same or lower risk level.
+
+ 
+
+Contractors entering into an agreement for services to GSA and/or its Federal customers shall be contractually subject to all GSA and Federal IT Security standards, policies, and reporting requirements.  The contractor shall meet and comply with all GSA IT Security Policies and all applicable GSA and National Institute of Standards and Technology (NIST) standards and guidelines, and other Government-wide laws and regulations for protection and security of Information Technology.  This includes the Federal Information Processing Standards (FIPS), the “Special Publications 800 series” guidelines published by NIST, and the requirements of the Federal Information Security Management Act (FISMA). 
+
+ 
+
+8.3      Protection of Information
+
+ 
+
+The contractor shall be responsible for properly protecting all information used, gathered, or developed as a result of work under this award.  In addition, the contractor shall protect all government data, equipment, etc by treating the information as sensitive.
+
+ 
+
+Sensitive but unclassified information, data, and/or equipment will only be disclosed to authorized personnel as described in this SOW/RFQ.  The contractor shall ensure that appropriate administrative, technical, and physical safeguards are established to ensure the security and confidentiality of this information, data, and/or equipment is properly protected.  When no longer required, this information, data, and/or equipment shall be returned to Government control; destroyed; or held until otherwise directed.  Items returned to the Government shall be hand carried or mailed to COR.  The contractor shall destroy unneeded items shall by burning, shredding or any other method that precludes the reconstruction of the material.
+
+ 
+
+8.4      Privacy Act
+
+ 
+
+Work on this project may require personnel to have access to Privacy Information.  Personnel shall adhere to the Privacy Act, Title 5 of the U.S. code, Section 552a and applicable agency rules and regulations.
+
+ 
+
+8.5      Confidentiality and Nondisclosure
+
+ 
+
+The contractor shall not release any information without the written consent of the Contracting Officer.  Any request for information relating to the award that is presented to the contractor must be submitted to the Contracting Officer for approval.  Personnel working on any of the described tasks may, at the Government’s request, be required to sign formal non-disclosure and/or conflict of interest agreements to guarantee the protection and integrity of Government information and documents.
+
+ 
+
+8.6      GSA Electronic Invoicing
+
+ 
+
+All invoicing will be done electronically.  Password and electronic invoice access may be obtained through GSA web site http://www.finance.gsa.gov.
+
+ 
+
+Billing and payment shall be accomplished in accordance with this clause. The contractor’s invoice will be for no less than one month.  The contractor may invoice only for the hours, travel, and/or unique services ordered by GSA and actually used in direct support of the client representative’s project.  A copy of the invoice will be submitted to the COR along with the monthly status report, at the same time that it is submitted for payment.  Failure to comply with the procedures outlined above may result in your payment being delayed.
+
+
+
+8.7   Organizational Conflict Of Interest
+
+ 
+
+FAR Subpart 9.5, Organizational Conflicts of Interest, shall apply, if necessary.
+
+
+
+8.8   Optional Services
+
+
+
+At the option of the government the contractor may be tasked to perform services of a similar scope for other organizations within the GSA.  These services will be billed at a fixed labor rate and will have a not to exceed total value for this option of $4,000,000 over the life of this contract award.  Contractor shall provide optional labor categories and rates for these additional services  as part of their price proposal and shall address their ability to meet this requirement as part of their professional staffing plan.
+
+Request for Proposals (RFP)
+
+9.0	Instruction to Offerors
+
+
+
+ Technical and price proposals are due 9:00 A.M., Wednesday, November 14, 2012.    All proposals shall be submitted via email to  and . The price proposal shall be a separate volume from the technical proposal.  Large email attachments can be delayed during regular business hours.  If this may be a problem, submit the statement of qualification as multiple emails with small attachments, or with enough time to clear the server delays.
+
+  
+
+All Offerors are advised that all submissions and related materials become the property of the U.S. Government and will not be returned. 
+
+ 
+
+Contractors are required to limit their technical proposal to fifty-five (55) letter (8.5 x 11) pages, single-sided. The technical proposal font shall be Times New Roman, size 12.  The Government’s evaluation shall not consider any information on pages exceeding the page limitation. Appendixes shall not be held to the font type and size requirement, but are required to be following the 8.5 x 11 page size; otherwise, there shall be no exception (this includes tables and graphs) to the font type and size or page size. Appendixes shall be reviewed for evaluation purposes provided that they fit within the page limitations listed below.  
+
+  
+
+
+
+The Offeror’s proposal(s) shall be submitted in two volumes as set forth below.
+
+ 
+
+
+
+ 
+
+Offerors shall specifically address, at a minimum, all of the elements listed in this section. 
+
+Each technical proposal will be evaluated and rated as “Excellent”, “Satisfactory”, “Poor”, or “Unacceptable”.  If any individual technical factor is rated “Unacceptable” then the entire proposal will be eliminated from consideration.  
+
+
+
+Volume I:  Technical Proposal
+
+ 
+
+9.1.1  Proposal Transmittal Letter
+
+ 
+
+The technical proposal shall be submitted with a Transmittal Cover Letter.  This cover letter is not included in the fifty-five (55)-page limit for the technical quote, but is limited to no more than five (5) pages. The Transmittal Cover Letter shall include the following items:
+
+
+
+Offeror’s DUNS Number;
+
+Offeror’s Federal Tax Identification Number;
+
+Offeror’s GSA Schedule Contract Number, if applicable; 
+
+Offeror’s CMMI or ISO Level, if applicable; and
+
+ Offeror’s point of contact email address, phone number, and fax number.
+
+If applicable,for each Subcontractor include:
+
+Subcontractor’s  DUNS Number;
+
+Subcontractor’s  GSA Schedule Contract Number, if applicable; 
+
+Subcontractor’s  CMMI or ISO Level, if applicable; and
+
+Subcontractor’s  point of contact email address, phone number, and fax number.
+
+
+
+The Technical Proposal shall be composed of the following:
+
+ 
+
+9.1.2         Technical Approach and Understanding of the Requirements – Offerors shall describe their technical approach and understanding of the requirements for supporting the IV&V evaluation and testing support services of the Enterprise Quality Program in support of PBS application development and maintenance efforts. Offerors shall demonstrate their:
+
+ 
+
+Understanding and experience in the area of independent system/software testing and evaluation, along with applying these concepts to supporting software application development and maintenance efforts in realizing quality systems in today’s dynamic web environments. 
+
+Technical understanding of the program requirements
+
+Understanding and approach to IV&V testing and evaluation in support of integrated software development efforts
+
+Understanding and knowledge of Oracle, SQL, SBM, and other tools in a Solaris and Windows environment
+
+Understanding of ISO 9000 quality management processes
+
+Understanding and approach regarding project management concepts and practices
+
+
+
+The Technical Approach and Understanding of Requirements section is limited to 20 single-sided pages.
+
+ 
+
+9.1.3        Professional Staff / Staffing Plan – The resumes submitted by the Offeror will be evaluated to assess the availability and qualifications of the proposed staff, their experience in similar projects and their capability to fully and professionally accomplish the objectives stated herein.  If the Offeror does not have a resume for every position they are proposing then the Offeror must have clearly describe the role, qualifications, and skills for each position where they have not provided a resume.  The Professional Staff section is limited to 20 single-sided pages.        
+
+ 
+
+9.1.4	    Past Performance 
+
+
+
+Offerors shall submit two (2) past performance references with respect to projects undertaken within the past three (3) years that are similar in scope, size, and complexity to the work described herein. In addition, Offerors shall submit one (1) past performance reference for each sub-contractor that will perform at least 30% of the work associated with this award.  Sub-contractor past performance must also be similar in scope and size to the work described herein and within the past three (3) years.  In order to be similar in scope and size, the contract amount for Offerors must have been at least $300,000 per year and for subcontractors at least $150,000 per year.  All past performance references must be from unique awards; any past performance reference with a repeated contract number will not be considered.
+
+
+
+In addition, Offerors and their subcontractors that meet the criteria above shall disclose any past experience working with GSA in the past 5 years.  This disclosure shall include the office and a point of contact for that work.
+
+ 
+
+Work must clearly be relevant IV&V services to meet the scope requirements.
+
+
+
+Sufficient information shall be provided to allow the Government to contact the agencies/organizations served and assess the quality of the services provided.  The minimal acceptable information, for both Offerors and subcontractors includes:
+
+ 
+
+1.     Name, Address, Telephone Number and Customer Point of Contact;
+
+2.  	Type of Customer (i.e., Federal Government, State/Local Government, or Commercial/Private Organization).
+
+3.     Contract Number (if applicable).
+
+4.    Total value of the Contract at time of Contract Award and Total Value of the Contract at time of Completion (value to date if an active contract).  Provide a brief summary of the causes for any increase/decrease in contract value.
+
+5.	Size of contract in terms of staffing
+
+6.     Required Delivery Schedule/Period of Performance and Actual Delivery Schedule/Period of Performance.
+
+7.     Description of services offered
+
+8.     Description of the type of system (i.e., financial management, or other type of system).
+
+9.    Description of the Offeror’s or subcontractor’s self evaluation of its performance.
+
+ 
+
+If the Offeror proposes to use subcontractors, the Offeror also shall include a description of the Offeror’s past experience and relationship with the proposed subcontractor.  The Past Performance section is limited to 4 single-sided pages.
+
+
+
+9.1.5	    Corporate Capability 
+
+
+
+Offerors shall submit a Statement of Qualifications outlining their firm’s capabilities and experience with respect to the effort described herein.  The Statement of Qualifications should clearly articulate the core capability within the Offeror’s business to meet the requirements.  The Corporate Capability section is limited to 6 single-sided pages.
+
+
+
+ 9.1.6         Proven ability to implement Innovative Solutions 
+
+Offerors shall demonstrate their ability to provide innovative solutions that will increase the efficiency and effectiveness of IV&V operations.  Offerors shall submit a Statement of Qualifications outlining their firm’s capabilities and experience in developing and implementing innovative solutions in the area of IV&V.  This shall include proposed tools and methodologies and clearly defined benefits that have been achieved.  The Innovative Solutions section is limited to 5 single-sided pages. 
+
+ 
+
+
+
+
+
+10.  QUESTIONS 
+
+All questions must be submitted in writing via email ONLY to  and  no later than 11:00 a.m., Friday, 11/2/2012.  All questions must be in writing and no questions will be accepted by telephone.   The Government has targeted, but cannot guarantee a consolidated response to all offerors on or about 11/5/2012.
+
+
+
+11.0	Technical Evaluation Factors and Evaluation Methodology
+
+The factors are in descending order of importance.  
+
+
+
+
+
+Factor 1 - Technical Approach and Understanding of the Requirements
+
+ 
+
+Offerors shall describe their technical approach for supporting the IV&V evaluation and testing support services of the Enterprise Quality Program in support of PBS application development and maintenance efforts.  Offerors will be evaluated to determine the soundness of the technical approach most suitable to this effort and the ability to deliver within the required timeframes. Specific areas to be evaluated are knowledge in:
+
+
+
+Technical understanding of the program requirements
+
+Understanding and approach to IV&V testing and evaluation in support of integrated software development efforts
+
+Understanding and knowledge of Oracle, SQL, SBM, and other tools in a Solaris and Windows environment
+
+Understanding of ISO 9000 quality management processes
+
+Understanding and approach regarding project management concepts and practices
+
+Innovative propositions to improve quality and efficiency within the PBS IV&V program.
+
+Demonstrate their understanding and experience in the area of independent system/software testing and evaluation, along with applying these concepts to supporting software application development and maintenance efforts in realizing quality systems in today’s dynamic web environments. 
+
+Demonstrate their understanding and conformance to the ISO 9000 quality management processes.
+
+Demonstrate their experience in project management planning as it relates to evaluation and independent testing in support of software development and maintenance efforts.
+
+Ability to generate a project plan and to conform to the schedule
+
+Ability to support all the technologies described in the scope section (2.0) and  in section 3.3.3
+
+Ability to ensure Quality Assurance is engrained as an ongoing function within their proposed methodology
+
+Ability to manually generate and execute test plans
+
+Thoroughly defined OLA for meeting the workload of testing activities with the proposed staffing levels.  This includes development of test cases, functional and integration testing (as needed) and creation of the Product Evaluation Report..  OLA should address:
+
+Application TBRR’s
+
+OS/DB upgrade TBRR’s
+
+OS/DB patching (non-TBRR)
+
+Configuration updates
+
+Emergency Fixes
+
+Data Refreshes
+
+Clearly defined testing strategy (types of tests they will run are clearly articulated and defined for each type of deliverable defined in section 3.3.1).
+
+Ability to work with production support, the development community , project managers, Configuration Management team, PBS CIO management, and PBS business line personnel in a professional and beneficial manner to :
+
+Perform operational/testing support
+
+Participate in IPTs
+
+Perform system reviews, requirements reviews, strategy session, program and process reviews, etc.
+
+·          
+
+ 
+
+ Factor 2 - Professional Staff / Staffing Plans
+
+ 
+
+Offerors shall provide a concise staffing plan and resumes of all proposed personnel along with their proposed position identified on the resume.  All personnel proposed must work on this award as proposed.  A signed letter of contingency for employment must be included for non-employees.  Resumes for all proposed personnel must be included..
+
+The resumes submitted by the Offeror will be evaluated to assess the availability and qualifications of the proposed staff, their experience in similar projects and their capability to fully and professionally accomplish the objectives stated herein. 
+
+For all positions that do not have resumes, the Offeror has provided a clearly defined role, qualifications and skills required for each position.
+
+Offeror’s  proposal shall include/ demonstrate:
+
+o   A fully developed staffing plan
+
+o   Sufficient staff to perform the work
+
+o   Ability to multi-task, work on multiple projects with overlapping schedules
+
+o   Resumes for all proposed staff
+
+o   Qualified personnel as demonstrated through proposed resumes (experience and education) or through well defined minimum position requirements.
+
+o   Well defined roles and responsibilities for each position
+
+o   Identification of at least 3 key personnel.
+
+o   Ability to provide fully staffed, HSPD12-cleared (fingerprint cleared through GSA) personnel by the first day of the period of performance.
+
+o   Phase in /Phase out transition plans that address all the requirements described in section 7 and provide reasonable assurance that both transitions will be successful and supportive.
+
+o   Understanding of the requirement to comply with all GSA  and PBS security policies
+
+o   Agreement to comply with GSA policies and standards and laws
+
+ 
+
+ 
+
+ Factor 3 - Past Performance 
+
+ 
+
+Past Performance:  Past Performance information is intended to describe the Offeror’s most recent experience with projects of similar size, scope, and complexity and highlight any recognition received from Government or industry for quality, innovation, and cost savings.  Federal experience is preferred.  Past performance should very explicitly relate to the type of work GSA is seeking (IV&V).  This includes the core concept of independence in terms of evaluating and testing the application development work performed by a third party.  Per the IEEE standard 1012-2004:
+
+ 
+
+ “Technical independence requires the IV&V effort to utilize personnel who are not involved in the development of the software. The IV&V effort should formulate its own understanding of the problem and how the proposed system is solving the problem. Technical independence (“fresh viewpoint”) is an important method to detect subtle errors overlooked by those too close to the solution.”
+
+ 
+
+For more information on this approach, please reference Annex C of IEEE Std 1012-2004, particularly the sections on technical, managerial, and financial independence.  GSA currently employs the “Classical IV&V” approach as defined in section C.4.1 of the aforementioned standard and will evaluate the Offeror’s past performance based on how closely it conforms to this standard.
+
+
+
+Quality Control and/or testing of an Offeror’s products is not the equivalent of IV&V.  In order to meet the requirement for IV&V the past performance reference must clearly demonstrate independence of the testing entity from the development and implementation efforts.
+
+ 
+
+Each past performance must be from a different contract.  If the contract number for more than one reference is the same the subsequent reference(s) will be ignored in the rating for this factor.
+
+ 
+
+Offeror’s references should be available to provide feedback within a week of being requested.  Positive reference feedback will enhance the rating for this technical factor. Offerors shall note that the Government may consider all information available on the Offeror’s experience and past performance.  This may include information that is in addition to that which is provided to the Offeror.  For example, the Government may also consider information available to it through Government records, industry databases (e.g., Dunn and Bradstreet), and other sources. 
+
+
+
+Factor 4 -  Corporate Capability 
+
+Offerors shall submit a narrative discussion of their Corporate Capability. The discussion should provide a thoughtful description and examples of their corporate abilities to include, but not limited to:
+
+Meeting the required capabilities
+
+Recent relevant experience within the Federal and private sectors
+
+Knowledge of  key issues and problems relevant to IV&V and how they propose to address them
+
+Use of specialized tools and new technologies
+
+Proactive and creative methodologies
+
+ 
+
+ Factor 5 -  Proven ability to implement Innovative Solutions
+
+ 
+
+Offerors shall submit a narrative discussion of their proven ability to provide innovative solutions in implementing or improving an IV&V program that currently performs manual testing. The discussion should provide a thoughtful description and examples of their corporate abilities and experiences to include, but not limited to:
+
+Experience with specific automated tools used to produce repeatable and reusable testing and reporting
+
+Demonstrated process improvement upon implementation of automated testing tools.
+
+Description of types of testing that improved upon implementation of automated testing tools.
+
+Workflows that allow the IV&V team to integrate into a larger Systems Development Life-Cycle (SDLC) process.
+
+Ability to provide value to other components of an organization’s office through IPT’s and team meetings.
+
+Processes and methodologies that the offeror has successfully implemented within the federal (preferred) and/or private sector that resulted in enhanced or improved IV&V functionality.
+
+Any additional innovative ideas, process, or tools that the Offeror has implemented and how they added value to a specific project or program area.
+
+ 
+
+
+
+11.1  Volume II:  Price
+
+ 
+
+Offerors shall provide a detailed price proposal identifying the fixed unit price for each labor category.  Price proposals shall be submitted on a firm-fixed price basis.  Pricing proposals for the base and option years should be based on performing the work under the current environment, not on any proposed efficiencies that may be gained through innovations.  If offeror or GSA directed automation result in efficiencies offeror will be expected to reduce costs based on the process improvements.  This could occur at any time during the period of performance that the government deems advantageous but is not expected to occur during the base year.
+
+ 
+
+Price will be evaluated based upon realism, reasonableness, and consistency with the offeror’s proposed Technical Approach.  Offeror should specify as a separate line item costs for hosting the services at a offeror provided location.  The government will determine if this option is accepted or if the services will be supported in government provided space.
+
+ 
+
+11.2 Best Value Evaluation Methodology 
+
+Best value evaluation is, in and of itself, a subjective assessment by the Government of the proposed solution that provides the optimal results to the Government, price and other factors considered.  Subjectivity is inherent in the process and is the cornerstone of the source selection decision.  In an effort to provide insight to the Offerors as to the decision making process of the Government, the following information is provided:
+
+ 
+
+Evaluation will be made on two factors – Technical and Price.  In the evaluation, technical is significantly more important than price.  While price is not as important as Technical, it does have significance to the Government.  In rating the technical proposals,
+
+ 
+
+The five factors (Technical Approach and Understanding the Requirements, Professional Staff / Staffing Plan, Past Performance, Corporate Capability, and Proven ability to implement Innovative Solutions) are in order of importance. 
+
+Technical Approach and Understanding the Requirements is more important than Professional Staff / Staffing Plan, Past Performance, Corporate Capability, and Proven Ability to provide Innovative Solutions.  Professional Staff, Past Performance,  Corporate Capability, and Proven ability to implement Innovative Solutions are equally important.
+
+Each factor will be evaluated and rated as “Excellent”, “Satisfactory”, “Poor”, or “Unacceptable”.  If any individual factor is rated “Unacceptable” then the entire proposal will be eliminated from consideration.  
+
+The Government will perform a price/technical trade-off analysis in accordance with the above methodology and select the offer that provides the best value.
+
+ 
+
+11.3   Basis  Of Award
+
+Award will be based on the best value to the Government, price and other factors considered.
+
+ 
+
+
+
+Testing Type
+
+
+
+Estimated Quantity per Year
+
+TBRR (Test Baseline Release Report)
+
+
+
+200
+
+Server Software requiring Application Upgrades (Operating System, Database and Middleware)
+
+
+
+25
+
+Server Software Quarterly Patching (Operating System, Database, and Middleware)
+
+
+
+250
+
+Configuration Changes Only
+
+
+
+75
+
+Emergency Fixes
+
+
+
+125
+
+Data Refreshes
+
+
+
+100
+
+
+
+Para.
+
+Deliverable Description
+
+Delivery Schedule
+
+3.1.1
+
+Staffing Plan
+
+Within 10 work days
+
+3.1.2
+
+Project Plans and Updates
+
+Within 10 work days
+
+and then every two (2) week
+
+3.1.3
+
+Standard Operating Procedures and Updates
+
+Within 10 work days
+
+and then every two (2) week
+
+3.1.5
+
+Status Report and Progress Meeting Minutes
+
+Every two (2) week
+
+3.2.2
+
+IV&V Activity Summary Report
+
+Monthly
+
+3.2.2
+
+Test Plans/Cases
+
+Within 10 work days upon initiation of the evaluation and testing of each application build 
+
+3.2.3
+
+Product Evaluation Report (PER)
+
+Within 10 work days upon completion of each application build evaluation and test
+
+3.3.7
+
+Research Tools and Provide Recommendations
+
+Within 10 work days of request
+
+5.1
+
+Inventory of Government Furnished Equipment (GFE)
+
+Annually
+
+7.1
+
+Phase-In Transition Plan
+
+Draft due with proposal, final due 5 work days after award
+
+7.2
+
+Phase-Out Transition Plan
+
+Due 30-60 calendar days before completion of period of performance or termination
+
+
+
+Line Item No. 
+
+Country of Origin 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+
+
+Line Item No. 
+
+Country of Origin 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+
+
+Line Item No. 
+
+Country of Origin 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+
+
+Line Item No. 
+
+_______________________________________ 
+
+_______________________________________ 
+
+_______________________________________ 
+
+
+
+Line Item No. 
+
+Country of Origin 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+
+
+Line Item No. 
+
+Country of Origin 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+
+
+Line Item No. 
+
+Country of Origin 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+
+
+Listed End Product 
+
+Listed Countries of Origin 
+
+___________________ 
+
+___________________ 
+
+___________________ 
+
+___________________ 
+
+
+
+
+
+
+
+VOLUME
+
+ 
+
+TITLE
+
+MAXIMUM NUMBER OF PAGES
+
+NUMBER OF COPIES
+
+TECHNICAL PROPOSAL
+
+
+
+8.5 x 11 inches
+
+ Times New Roman Font size 12
+
+Electronic
+
+1
+
+Technical Approach and Understanding of the Requirements
+
+20
+
+1
+
+1
+
+Professional Staff and Staffing plan
+
+20
+
+1
+
+1
+
+Past Performance
+
+4
+
+1
+
+1
+
+Corporate Capability
+
+6
+
+1
+
+1
+
+Proven ability to implement Innovative Solutions
+
+5
+
+1
+
+PRICE PROPOSAL
+
+ 
+
+
+
+ 
+
+ 
+
+2
+
+Price
+
+5
+
+1

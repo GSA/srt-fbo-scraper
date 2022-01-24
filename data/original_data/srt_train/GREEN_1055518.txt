@@ -1,0 +1,145 @@
+
+Statement of Work -
+                                                             Collaborative workspace
+                                                                   APPLICATION
+
+
+1.0   Background
+FDA's Center for Devices and Radiological Health (CDRH) is responsible for ensuring the safety and effectiveness of medical devices and
+eliminating unnecessary human exposure to man-made radiation from medical, occupational and consumer products. There are thousands of types of
+medical devices, from heart pacemakers to contact lenses. Radiation-emitting products regulated by FDA include microwave ovens, video display
+terminals, and medical ultrasound and x-ray machines. The center accomplishes its mission by:
+    • reviewing requests to research or market medical devices
+    • collecting, analyzing, and acting on information about injuries and other experiences in the use of medical devices and radiation-emitting
+      electronic products
+    • setting and enforcing good manufacturing practice regulations and performance standards for radiation-emitting electronic products and
+      medical devices
+    • monitoring compliance and surveillance programs for medical devices and radiation-emitting electronic products
+    • providing technical and other nonfinancial assistance to small manufacturers of medical devices.
+CDRH is taking steps to increase its ability to identify, analyze, and act on postmarket information in order to improve the safety and
+effectiveness of medical devices and radiation-emitting products. In January, 2006 the Center convened a senior leadership team (the Postmarket
+Transformation Leadership Team-PTLT) which included external medical device experts.  The team’s charge was to "evaluate the recommendations in
+the CDRH document, “Ensuring the Safety of Marketed Medical Devices – Executive Synopsis and Recommendations,” (January ’06), collect additional
+data as necessary, supplement the recommendations, if needed, and propose a prioritized implementation plan for a transformed postmarket
+process".
+
+The report recommendations elaborated the four areas designated for improvement in the previous postmarket reports.  They are:
+
+    • Create a Culture of Collaboration
+    • Develop World Class Data Systems
+    • Enhance Risk/Benefit Communication Efforts
+    • Collaborate on Enforcement Strategies and Outcomes
+
+
+1.1   Create a Culture of Collaboration
+The Center’s goal in creating a culture of collaboration is to operate CDRH as a coordinated whole, rather than a collection of pieces.  The
+Center is transforming its operations by adding a permanent matrix of cross-cutting product-related groups over the current functionally-based
+organizational structure to foster information sharing, collaboration and, ultimately, more effective public health promotion and protection.
+The cross-cutting matrix is designed to ensure that collaboration occurs not just in crisis situations, but also as a part of routine, day-to-
+day operations.
+Additionally, the Center must ensure that everyone understands the value and meaning of true collaboration.  We are establishing an
+organizational culture in which it is expected that communication is open and honest, that all key stakeholders are consulted early in a
+decision so that the right decision can be made the first time, and that people are empowered to lead effectively and efficiently.  A matrix
+structure that overlays “horizontal” product-focused Networks over our “vertical” regulatory Office systems can, with strong leadership,
+facilitate our transformation to a collaborative organization. 
+The matrix overlay and the establishment and fostering of an organizational culture that encourages collaboration are key initiatives of
+postmarket transformation.  However, these initiatives depend on a supporting technology environment that enables, among other things, the flow
+of information, the identification of expertise, social (professional) networking, the ability to connect disparate information sources and
+“findability”.  Such an environment does not currently exist at FDA/CDRH, and it is this environment that is the focus of the scope section
+below.
+CDRH is looking for capabilities in two broad areas, and this statement of work covers one of those – collaborative workspace.
+2.0   Scope
+CDRH is seeking a commercial-off-the-shelf (COTS) collaborative workspace application as one of the key enablers for its matrix structure and in
+support of developing a culture of collaboration.  The actual software is a very small, but critical piece, of these efforts.  CDRH has
+identified the mandatory and desirable requirements of a collaborative workspace that will be of the greatest value to the Center.  These are
+listed in the table in section 2.1.
+
+
+
+
+2.1   Mandatory and Desirable Features
+|Requirement/Feature (Description)                                                    |Mandatory or Desirable                    |
+|100% Web browser based (IE 6.x and 7.x supported)                                    |Mandatory                                 |
+|Rich text editor supporting tables, justification, bold, italics, item bulleting,    |Mandatory                                 |
+|item numbering, indenting, text colors, and text sizing                              |                                          |
+|Support for file attachments, including support for check-out, check-in and          |Mandatory                                 |
+|versioning                                                                           |                                          |
+|eMail in                                                                             |Mandatory                                 |
+|eMail out                                                                            |Mandatory                                 |
+|RSS in (ability to consume RSS feeds)                                                |Desirable                                 |
+|RSS out (ability to generate RSS feeds)                                              |Desirable                                 |
+|Provide ability for content drafter and publisher (approver) roles/workflow          |Mandatory                                 |
+|Ability to create secure workspaces for individuals and groups with their own        |Mandatory                                 |
+|permissions/ACL sets                                                                 |                                          |
+|Support for wiki style pages/page editing                                            |Mandatory                                 |
+|Support for blogging (unique rights for authoring and commenting)                    |Desirable                                 |
+|User defined tags                                                                    |Mandatory                                 |
+|Support multiple tags on posted content                                              |Mandatory                                 |
+|Personal profile pages for each user that allow the user to create customized views  |Mandatory                                 |
+|of content                                                                           |                                          |
+|Views/pages which are dynamic and can be based on search criteria, tags or user      |Mandatory                                 |
+|defined collections of content                                                       |                                          |
+|Search indexes all content and attachments (list attachments supported)              |Mandatory                                 |
+|Search filters and/or clusters results using metadata and/or extracted entities      |Desirable                                 |
+|Search supports entity extraction and custom entity dictionaries                     |Desirable                                 |
+|Search does not violate the security ACL (permissions) of the system                 |Mandatory                                 |
+|Active Directory support for single sign-on/authentication                           |Mandatory                                 |
+|Active Directory support for outbound eMail lookup/addressing                        |Desirable                                 |
+|Active Directory support for existing groups to establish permissions                |Mandatory                                 |
+|Support custom forms for controlling content entry                                   |Mandatory                                 |
+|Ability to export content to Microsoft Word or Adobe PDF                             |Mandatory                                 |
+|User customizable eMail based update (newsletter)                                    |Mandatory                                 |
+|The product shall operate on one of the Agency Operating system standards- Windows   |Mandatory                                 |
+|Server or Solaris.                                                                   |                                          |
+|Event auditing.  Include auditing of the following events, at a minimum – add        |Mandatory                                 |
+|content, delete content, edit content.  Allow viewing and archiving of event logs.   |                                          |
+|Support for bi-directional linking between content and automatic logging of          |Desirable                                 |
+|references and referenced by                                                         |                                          |
+|Date-based views of information to view content as of a particular date or timeframe |Desirable                                 |
+|Granular, in-context commenting - the ability to comment on and at specific sections |Mandatory                                 |
+|of a page/content                                                                    |                                          |
+|Granular tagging - the ability to tag specific sections of a page/content            |Mandatory                                 |
+|Support for product extensions or plug-ins to the core product                       |Desirable                                 |
+|Support for batch processing – the ability to perform actions against multiple       |Mandatory                                 |
+|entries (batches) at the same time                                                   |                                          |
+|Provide capability to identify content individually or collectively with relevant    |Mandatory                                 |
+|records identification and/or retention schedule information                         |                                          |
+|eMail notifications of changes to content                                            |Desirable                                 |
+|Track and provide viewed-by information on pages/content                             |Desirable                                 |
+|Support for viewing content on the FDA standard PDA - RIM Blackberry                 |Desirable                                 |
+|Support for Section 508 Standards.  The software must be in compliance with the      |Mandatory                                 |
+|following parts of the Section 508 Technical Standards:                              |                                          |
+|1194.21 Software applications and operating systems.                                 |                                          |
+|1194.22 Web-based intranet and internet information and applications. 16 rules.      |                                          |
+
+2.2   Application Software and License(s)
+This service includes the application and/or any related software.  The anticipated user base is as follows:
+    • Base year- min 1200 users  up to 2000 users
+    • Option year 1- 1200 users up to 2000 users
+    • Option year 2- 1200 users up to 2000 users
+
+License(s) for the base year shall include maintenance, upgrades and support necessary to maintain and operate the product during that first
+year.  In addition, any and all documentation necessary to operate and use the application shall be provided. Contractor shall provide the
+ability of adding users up to the maximum quantity on a prorated basis throughout the year or option year.  Government will consider an
+unlimited user version (e.g. enterprise license) if it is determined to be in the best interest of the Government.
+
+2.3   Maintenance, Support & Upgrades
+CDRH requires the vendor/contractor to provide the following for all option years under the scope of this contract.  As noted in section 2.2,
+this shall be included with the license cost for the base year.
+    • Maintenance – access and right to install any and all maintenance releases
+    • Upgrades – access and right to install any and all application upgrades or enhancements
+    • Support - Maintenance and Help Desk/technical support shall provide standard support services to ensure the software is functioning as
+      expected and include phone access to technical expertise.  Minimal required services shall include telephone or email support for
+      application failure/system down between the hours of 8:00 a.m. and 5:00 p.m. eastern time.  These services should be described in a service
+      level agreement to be included as part of the proposal.
+
+
+2.4         Consulting Services
+
+CDRH desires to use the software application “out of the box” to the extent possible.  However, as with any software application, some training
+or assistance in optimizing the installation, configuring the system and/or applying application best practices may be required or appropriate.
+Therefore, an IDIQ line item for 160 hours for consulting support should be included in your quote.
+
+
+
+

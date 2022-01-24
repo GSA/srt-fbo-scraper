@@ -1,0 +1,185 @@
+US Environmental Protection Agency, Region 7 Fleet Management Software Statement of Work
+
+1
+
+Scope of Work
+
+The US Environmental Protection Agency (EPA) seeks a system contractor to provide an off-the-shelf software package that shall be web-based and have redundant hosting capabilities. The Contractor shall provide software and support services to effectively manage the EPA fleet to include the tracking, scheduling, and reporting of Government vehicles. Background The EPA has an urgent need to procure a Fleet Management Software system to manage the day-to-day logistics of our fleet. The EPA needs to acquire software with the ability to be expanded and enhanced without having to make major changes to the system infrastructure and to aid in controlling future costs to the government. The EPA requires standard features including the ability to gather, store, process, monitor and report on driver management, fleet maintenance, fleet reservations. 3 General Software Requirements
+
+The fleet management system contractor shall provide the ability to reserve a vehicle on-line. The system shall be able to display real time fleet availability and allow requester to Check-Out and Check-In Vehicle automatically or manually. The system shall provide a layered access control mechanism configurable by the EPA system administrators. The system shall provide user friendly ways to track, manage and report; Driver Information, Vehicle Information, Reservations and their related data elements. Paragraphs 4-18 detail the minimum software and service requirements. 4 Driver Information Requirements 4-1 a) b) c) d) e) f) g) h) i) j) The system shall have a method for managing user profiles, including but not limited to: An automated user registration process A method for manually adding users A method for viewing, editing, and deleting user profiles A method for retrieving deleted user profiles A method for requiring users to update their profiles at scheduled intervals Ability to store information about a user's certification and training Ability to maintain information about a user's driving infractions Ability to determine fields which are viewable by users Ability to determine fields which are editable by users Ability to add custom fields
+
+4-2
+
+The system shall maintain data about our drivers, including, but not limited to:
+1
+
+a) Last name, first name b) Contact information (phone numbers, email addresses, mailing address) c) Organizational affiliations including supervisor information (phone numbers, email addresses, mailing address) d) Ability to attach driver's training certification to the drivers file as well as any other attachments as needed. 4-3 a) b) c) d) e) f) g) 4-4 a) b) c) d) e) 4-5 The system shall maintain system permissions for each user relative to use of fleet vehicles, including but not limited to: Which user is eligible to request vehicles from (e.g. Regional pools, emergency response, regional lab, assigned vehicles) Groups of vehicles which user is eligible to request How vehicles can be used (e.g. Daily use, assigned, emergency response) How the system assigns vehicles to a reservation request (automatic or manual) How the system approves vehicles (automatic or manual) Information the user is able to view as part of the vehicle reservation process Whether the user is able to use a self-service vehicle check out process The system shall maintain system access information for each user, including but not limited to: Permissions that determine whether the user is "enabled" or "disabled" from use of the system Permissions which define which system functions the user can access, including, but not limited to: Administrative permissions Dispatching capabilities Inspection and prep and certification at check-in
+
+The system shall maintain information for each user, including, but not limited to: a) System user name b) Password (password strength established by the system administrators using configurable password strength rules) c) Supervisor's name and contact information d) Complete travel history The system shall include tools to communicate and enforce fleet policy, including, but not limited to: a) Ability to require users to acknowledge fleet policies upon the initial login b) Ability to require users to acknowledge fleet policies upon any change in policy
+
+4-6
+
+5
+
+Fleet Information Requirements 5-1 The system shall have a method for managing fleet profiles, including but not limited to: a) A method for manually adding vehicles b) A method for viewing, editing, and deleting vehicle profiles c) A method for retrieving deleted vehicle profiles
+2
+
+d) Ability to add custom fields e) Ability to attach documents to vehicle data 5-2 a) b) c) d) e) f) g) h) 5-3 The system shall maintain demographic data about our vehicles, including, but not limited to: A method to maintain vehicle name A method to maintain multiple VIN and related serial numbers on the same vehicle A method to maintain year, make, model, color A method to maintain odometer value and associated dates A method to maintain vehicle type and fuel type A method to maintain to log last oil change or other administrator defined tracking by mileage/ hours and date A method to maintain storage location A method to maintain correlate fleet locations with users locations
+
+The system shall maintain system permissions for each vehicle relative to use of fleet vehicles, including but not limited to: a) A method to maintain to group of vehicles- what vehicles belong to what fleet b) A method to maintain to how vehicles can be used including daily use, maintenance assigned and the ability to hybrid there usage c) A method to maintain to how the system assigns vehicles to a reservation request (automatic or manual) d) A method to maintain to how the system approves vehicles (automatic or manual) e) A method to maintain to know whether the vehicle is able to be used as part of the selfservice vehicle check out process or needs prior approval
+
+6
+
+Reservation Requirements 6-1 The system shall have a method for managing reservations, including but not limited to: a) A method for manually adding reservations b) A method for viewing, editing, and deleting reservations c) A method for retrieving deleted reservations d) Ability to add custom fields e) Ability to require verification from drivers acknowledging fleet policy f) Ability to link to the US Department of Energy's fuel finder web page without logging out of the fleet management host site. The system shall have a configurable navigation system that provides fleet drivers with access to general fleet information related to reservations including, but not limited to: Access to fleet policies Access to fleet locations Access to fleet rates Access to route planning to include linking to external web pages Access to documents
+3
+
+6-2 a) b) c) d) e)
+
+6-3 a) b) c) d) e) f) g) h) i)
+
+The system shall have a method for users to request vehicles. The process shall include, but not be limited to the following capabilities: The ability to make a reservation for him/herself or on behalf of another user The ability to identify how the vehicle will be used The ability to identify the site from which the vehicle will be used The ability to modify the reservation form contents based on how the vehicle will be used The ability to modify the reservation form contents based on which site the vehicle will be picked up from The ability to include custom, administrator-defined fields on reservation forms The ability for the system to automatically validate data that appears on forms The ability for authorized users to select specific vehicles as part of the reservation process The ability for users to clone reservations in order to increase the speed with which "like" reservations can be made The system shall have a method for administrators to request vehicles. The process shall include, but not be limited to the following capabilities: The ability to make a reservation for him/herself or on behalf of another user The ability to identify how the vehicle will be used The ability to identify the site from which the vehicle will be used The ability to modify the reservation form contents based on how the vehicle will be used The ability to modify the reservation form contents based on which site the vehicle will be picked up from The ability to include custom, Administrator-defined fields on reservation forms The ability for the system to automatically validate data that appears on forms The ability for authorized users to select specific vehicles as part of the reservation process The ability for users to clone reservations in order to increase the speed with which "like" reservations can be made The ability to manually assign a vehicle and approve the request as part of the reservation process Ability to gather travel related data: Destination, Site Name, EPA Fleet Administrator defined fields The system shall have a method for EPA Fleet Administrators to assign rules to vehicles that shall consider items including, but not limited to: Which vehicle was least recently used Which vehicle has the highest or lowest mileage Which vehicles are currently in use Class of vehicle needed to meet the driver needs
+
+6-4 a) b) c) d) e) f) g) h) i) j) k)
+
+6-5 a) b) c) d) 6-6
+
+The system shall possess reservation rules capabilities including but not limited to: a) Prevent the user from making a reservation for more than X hours. b) Prevent the user from making a reservation more than X days in the future. c) Prevent the user from canceling a reservation within X hours of the start of the reservation
+4
+
+d) Provide the ability for the administrator to assign charges to a canceled reservation e) Provide the ability for the administrator to define the reservation cancellation reasons f) Provide the ability for the administrator to define weekday, weekend, and holiday operating hours in order to preclude users from making reservations outside of the defined operating hours 6-7 a) b) c) d) e) The system shall have a method for communicating reservation status to affected users, including but not limited to: The ability to send a configurable email upon submittal of a reservation to the person making the request, the driver, the driver's supervisor and others. The ability to send a configurable email upon approval of a reservation to the person making the request, the driver, the driver's supervisor and others. The ability to send a configurable email upon cancellation of a reservation to the person making the request, the driver, the driver's supervisor and others. The ability to send a configurable email upon modification of a reservation to the person making the request, the driver, the driver's supervisor and others. The ability to accommodate overlapping reservations, with the capability to allow for a long duration reservation for a vehicle as well as shorter-duration reservations that may overlap the same time period with EPA Fleet Administrator approval The system shall have the ability to automatically calculate charges for use of a vehicle, including, but not limited to the following considerations: The ability to include site codes, activity codes, and other user-entered codes as part of the billing process for inclusion in software generated monthly reports. The ability to define hourly, daily, monthly, and annual rates for vehicles. The ability to define mileage rates for vehicles The ability to define overhead rates for vehicles The ability to consider duration of a reservation as part of the billing calculation. The ability to consider distance traveled as part of the billing calculation
+
+6-8 a) b) c) d) e) f)
+
+7
+
+Fuel Management
+7-1
+
+a) b) c) d)
+
+The system shall have fuel management capabilities including but not limited to: The ability to require at check-out that users enter fuel related data; date, mileage, gallons purchased, cost of purchase and type of fuel purchased The ability to track fuel purchases by travel location The ability to add comments about other charges (e.g. oil, other maintenance) made on that vehicles fuel card The ability to notify Administrators on out of service fleet vehicles'
+
+8
+
+Maintenance Management
+5
+
+8-1
+
+a) b) c) d) e) f) g)
+9
+
+The system shall have vehicle maintenance and repair management capabilities including but not limited to: The ability to track vehicle recalls. The ability to track warranty The ability to automatic reminders for services The ability to provide a Comments section The ability to retain maintenance schedules The ability to retain check-in and check-out lists that correlate with driver check-out and driver check-in The ability to attach files to maintenance files
+
+Reports
+9-1
+
+a) b) c) d) e) f) g) h) i) j) k) l) m) n) o) p) q) r)
+
+The system shall have list form reporting capabilities including, but not limited to: The ability to provide User/Driver Reports The ability to provide Summary reports The ability to provide Details reports that shows all details for each user The ability to provide driver eligibility reports that highlights driver's training The ability to provide Summary report that provides vehicle information in list form The ability to provide details report that shows all details for each vehicle The ability to provide all vehicle data in Excel column format The ability to provide listings of vehicles leaving and returning for a given time period or site The ability to provide summary of reservations in list form by date, The ability to provide details report that shows all details for each reservation The ability to provide summary list of completed reservations The ability to provide detailed billing The ability to provide Summation of reservation data by usage by department The ability to provide summaries of abuses such as late returns The ability to provide utilization report by site location The ability to provide utilization report by vehicle type The ability to provide utilization report by capacity versus demand The ability to provide Report which identifies over/under-utilized vehicles based on miles and days used
+
+10
+
+Extensibility
+10-1
+
+The system shall be capable of being modified to accommodate future fleet needs, including, but not limited to: a) The ability to add, update and modify data requirements and report outputs b) The ability to Import and/or export data from/ to the database
+
+11
+
+Licensing & Hosting
+
+6
+
+11-1
+
+The system shall have perpetual licensing of the fleet vehicles, trailers and vessels being managed by the software, to include, but not limited to: a) The ability to add driver and administrator access without additional licensing cost. b) The ability to be hosted by or through the software company
+
+12
+
+Technical Support 12-1 a) b) c) d) The system contractor shall provide technical support available for administrators to include, but not limited to: The ability to provide toll free technical support and advice The ability to coordinate the solution of problems; control, manage and trouble-shoot the software systems and conduct logical operating system fault monitoring. The ability to provide customer service and support of new or existing customer information. The ability to provide annual maintenance of the installed systems to include routine maintenance and urgent repair
+
+13
+
+Software Set-up 13-1 a) b) c) The system contractor shall set-up the software including but not limited to: The ability to set-up the EPA vendor hosted fleet management web site The ability to upload current MS Excel data to set-up fleet and initial user profiles The ability to ensure that the EPA Administrators have adequate training to efficiently utilize the software and its features and provide printed administration reference
+
+14
+
+Quality Assurance/Testing The system contractor shall implement an overall Quality Assurance (QA) plan for the project lifecycle. The software contractor shall provide adequate confidence that the software implementation process and the maintenance process of the software conforms to established functional and technical requirements. The system contractor shall conduct testing of the system in a realistic environment similar to the production environment. The system contractor shall develop a schedule for testing, test methodology; conduct internal and external testing, bug reporting, tracking, and a confirmation of fixes.
+
+15
+
+Operational Support The system contractor shall provide maintenance and support of the fleet management system. Maintenance includes, but is not limited to, operations, monitoring of application/system software operations, routine/high priority system problem identification and high priority corrective action. The system contractor shall ensure 24/7/365 available access to the system hosted on their servers.
+
+7
+
+16
+
+Software Support The system contractor shall provide support for software to include, but not limited to, evaluating current operational software for enhancements, installing and maintaining software upgrades or modifications. The software contractor shall ensure that upgrade/modifications of the software are stable and backup is maintained.
+
+17
+
+Data Rights The system software provider shall guarantee that the Government data is secure and never shared or sold to anyone outside of the EPA without written authorization from the Contracting Officer. The EPA's rights include the right to use, disclose, reproduce, prepare derivative works, distribute copies to the public, and perform and display publicly, in any manner and for any purpose, and to have or permit others to do so, but not limited to permissible uses including providing data to another agency, contractor, general public and may post and or repost data to public Internet and government Intranet sites. The US EPA retains unlimited data rights.
+
+18
+
+Administrator Training The system contractor shall provide comprehensive administrator training. This training shall any training needed for EPA Administrators to efficiently operate the fleet software. Off-site administrator support shall be available to administrators' for the life of the system software. The system contractor shall ensure that EPA administrators are provided with printed instruction on how to utilize, troubleshoot and maintain the administrator functions within the system. The Contractor shall also notify the EPA contracting Officer and Project Officer prior to any software changes or modifications to include providing printed notification of changes.
+
+8
+
+
+OFF-THE-SHELF VENDOR HOSTED FLEET MANAGEMENT SOFTWARE BASE YEAR & OPTION YEARS:
+
+|CLIN     |DESCRIPTION                             |BASE YEAR       |OPTION YEAR 1     |OPTION YEAR2   |OPTION YEAR 3 |OPTION YEAR 4  |
+|0001     |Initial Setup (vehicles, users and      |$               |ONE TIME COST                                                    |
+|         |Administrators)                         |                |                                                                 |
+|0002     |Assigned Vehicle Module (25 Vehicles)   |$               |PERPETUAL LICENSES                                               |
+|0003     |Fuel Module (100 Vehicles)              |$               |PERPETUAL LICENSES                                               |
+|0004     |Motor Pool Module (100 Vehicles)        |$               |PERPETUAL LICENSES                                               |
+|0005     |Maintenance Module (100 Vehicles)       |$               |PERPETUAL LICENSES                                               |
+|0006     |Administrator Training                  |$               |ONE TIME COST                                                    |
+|0007     |System Maintenance                      |$               |INCLUDED WITH ANNUAL HOSTING                                     |
+|0008     |System Technical Support                |$               |INCLUDED WITH ANNUAL HOSTING                                     |
+|0009     |Annual Hosting Fee                      |$               |$                 |$              |$             |$              |
+|         |TOTALS                                  |$               |$                 |$              |$             |$              |
+
+
+
+
+                                                              GENERAL QUESTION SHEET
+
+Please remember to complete all questions
+
+   1. DUNS #     _______________________________________
+
+
+   2. Tax Identification Number ___________________________
+
+   3. Business Type_____________________________ Ex. (small, or large, college,  non-profit)
+
+   4. If Minority Owned (ETHNICITY) Ex. (African-American, Hispanic, Native- American, Other)  _________________________________________________
+
+   5. Business Classification  Ex. (8A, SDB, Women-Owned, Veteran-Owned, Other)  ________________________
+
+   6. Will Company accept government purchase card? (circle one)
+      YES              NO
+   7. Will Company accept verbal order/fax order? (circle one)
+      YES              NO
+   8. Will Company accept e-mail of signed Purchase Order? (circle one)
+      YES              NO
+   9. Has Company registered in Central Contractor Registration (CCR) Database*? (circle one)
+      YES              NO
+      * In order to be awarded a Government Purchase Order/Contract, Contractors must be registered.  Go to www.ccr.gov and complete
+      requirements.
+
+  10. Are requested items on GSA Schedule- If yes, GSA Schedule # # GS- ___________________
+
+  11. Delivery (circle one)
+      FOB Destination      or      FOB Origin  Expected Delivery Date_____________
+
+   12. Terms of Payment?  ____________________________(ex net 30, 1% net 15)
+   13. Business/Company Name and Address:
+   14. Point of Contact Name, Phone #, and E-mail:
+
+
+

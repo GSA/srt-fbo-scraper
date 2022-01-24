@@ -1,0 +1,591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FFA8224-12-T-0030.pdf%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us"/><script type="text/javascript">url="http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FFA8224-12-T-0030.pdf%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>
+
+DEPARTMENT OF THE AIR FORCE
+
+HEADQUARTERS OGDEN AIR LOGISTICS CENTER (AFMC)
+
+HILL AIR FORCE BASE, UTAH
+
+
+
+
+
+
+
+
+
+
+
+
+
+PURCHASE DESCPRITION/SPECIFICATION FOR
+
+CNC Machine Simulation Software
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Scope:
+
+
+
+This purchase specification covers the design requirements and acceptance criteria for procurement of Computer Numerical Control (CNC) Machine Simulation Software. This Simulation Software shall verify CNC Programs by simulating the actual machine motion and controllers of the CNC Machines on the shop floor. It shall detect errors, potential collisions, areas of inefficiency, and compare and measure machined parts to the design model. The CNC Machine Simulation Software shall enable CNC programmers to identify any errors and correct them before the program is loaded into the CNC machine console.
+
+
+
+
+
+2. Software for CNC Machines:
+
+One floating license shall be provided for installation on a server, and shall be available to be accessed by 5 CNC Programmer’s desktop computers running Windows 7 64 bit operating system connected to the Private Network and CNC machines. (1 user checks out the software at a time.)
+
+
+
+3. Applicable Documents:
+
+The software described in this Purchase Specification shall be written in accordance with the exact Machines listed below:
+
+
+
+OKUMA MCR-BII 20E [20x40] Twin Column 3, & 5-Axis Mill with “OSP-P200M/P20M” Machine Controller. (Note: This machining center has (2) interchangeable Spindles: 1 each 3-Axis spindle, and 1 each 5-Axis spindle).
+
+MAZAK HCN-5000-II, 4-Axis Horizontal Mill with “Matrix” Machine Controller.
+
+MAZAK Integrex e420H-II [Horizontal] Mill-Turn, Multi-Task Machine (5-Axis Mill,   with Turning Capabilities) with “Matrix” Machine Controller.
+
+
+
+
+
+LOCAL INSTRUCTIONS
+
+
+
+Order of Precedence:
+
+In the event of a conflict between the text of this Purchase Specification and the references cited herein, the text of this Purchase Specification shall take precedence. Nothing in this Purchase Specification shall supersede applicable laws and regulations unless a specific exemption has been obtained.
+
+
+
+5. Design:
+
+The system software shall be new and shall be composed of the manufacturer's current production revisions. A current production revisions is defined as the manufacturer's current product, which on the date this solicitation is issued, has been designed, engineered, sold, or is being offered for sale through advertisements or manufacturer's published catalogs or brochures. Products such as a prototype, pre-production revisions or an experimental unit do not qualify as meeting the requirements of this Purchase Specification. The software shall include all components and functions necessary to meet the performance requirements specified herein.
+
+
+
+
+
+5.1 Use of Americanized English:
+
+Wording on all informational instructions shall be written in Americanized English. All installation diagrams, operator/users manuals, brochures, performance evaluation reports and any other data supplied, as part of this Purchase Specification shall also be written in Americanized English and use English units of measure.
+
+
+
+
+
+5.2 Equipment Design & Installation:
+
+The software shall correctly simulate the machine features of the controllers and CNC machines listed above.
+
+
+
+
+
+6. System Components & Features:
+
+The bid must address each of the following 19 parameters. If the bid does not adequately address 6.1-6.18. The item will be considered an insufficient characteristic. The characteristics of the software must meet, and may exceed any of the minimums, but must not exceed specifications listed as maximums. The CNC Verification Software shall verify CNC Programs using only the actual “G-Code” text file (CNC program file) created from our currently owned post-processor software (Post Processors.net and ICAM). The simulation software shall not require new post processors in order for the CNC verification software to work properly.
+
+The CNC verification software shall run on Windows® 7 or later operating system, and Windows® based computers and networks.  
+
+The CNC verification software shall verify a CNC program file completely independent of any post processor and Computer Aided Design/Computer Aided Machining (CAD/CAM) software. The verification software shall not rely on internal CAD/CAM commands or functionality, or depend on “APT” or “.cls” files in order to verify a program. The CNC verification software shall be able to verify a G-Code CNC program file regardless of where it came from and cannot rely on any software other than the CNC verification software itself in order to verify a CNC program.
+
+Shall work with our current CAD/CAM programming software, which is: Siemens™ Unigraphics NX, version 7.5.2 or later, using a software interface that automatically aligns the stock, and design models in the correct location within the machine model using pre-specified coordinate systems. 
+
+During simulation, the CNC verification software shall have an exact replication of the CNC Machines listed in section 3, and its controller; using accurate CAD models of each machine. It shall duplicate the exact movement, operating limits and controller behavior of each CNC machine and its components; Enabling the programmer to visualize the machining process exactly as it will occur on the actual CNC machine on the shop floor.
+
+The software shall have the ability to upload the machine controller’s internal macros, bit parameters, and system variables (provided by the government) into the CNC verification software to duplicate the exact movements and behavior of the CNC Machine during program execution. The goverment shall provide all related machine macros and files.
+
+During simulation, the verification software shall use the universal CAD Data Exchange File Format of “.STEP” or “.STP” files for all simulation process.
+
+Verify dimensional accuracy. The software shall include comprehensive analysis tools such as measuring, cross-sectioning, and comparison tools to compare the machined part to the design model to make sure the machined part will exactly match the design model.
+
+The verification software shall scan through the entire program, detect any program or syntax errors, AND provide a preview the tool path BEFORE any simulation.
+
+The verification software shall have the ability for BOTH the CNC programmer and machine operator (on the shop floor) to have an interactive view of the program and verification process. Being able to step forward, or backward in the program and see each motion dynamically update the tool path with each step, and to have complete control of the playback process. Material shall be removed when playing forward, and added back on when played backward. In addition, when machined surfaces are clicked on, it shall take you to that place in the program that created it.
+
+The G-code program, detected errors display, and tool path display shall all be displayed   simultaneously with the ability to dynamically jump to various parts of the program using each. When text in the G-Code program is clicked on, it shall take you to that place in the tool path display, or vice-versa; if a place in the tool path is clicked on, it shall take you to that place in the G-Code program. If an error in the program has been detected, you shall click on the error and it shall take you to that place in the program where the error is.
+
+The CNC verification software must be easy set-up and use. The user interface must be intuitive, with the look and feel of familiar Windows™ environment and use features such as drag and drop™.
+
+Simulation shall display visually, and color-coded, in the tool path display when the tool has cutter compensation active. Example: When G41 or G42 is active in the tool path, that portion of the tool path shall be color coded to show exactly where is it active or not.
+
+All 3D CAD models of the CNC Machines and their components listed in section 3 shall be provided by the CNC Verification Software Company.
+
+Speed; the simulation software shall perform all simulations quickly, in addition; zoom in, zoom out, pan, rotate, changing views, adding views and multiple windows shall not slow, or delay the simulation.
+
+The simulation software shall be compatible with “3DConnexion” Spaceballs (3D mouse).
+
+The software shall simulate all Renishaw® machine probe cycles. The simulation shall include both positioning, and advanced probe simulation, which includes complete simulation of all Renishaw® probe cycles. The goverment shall provide Renishaw® macro files associated with each machine probe.
+
+The software shall work with the Postprocessors currently installed on the CNC Programmers workstations. (These postprocessors are proven, and owned by the USAF installed at HAFB.)
+
+The contractor shall ensure all software is installed and functioning correctly between Government owned CAM Software and CNC Simulation software.
+
+Maintenance Contract: Software must come with a 2-year maintenance contract, which will include tech support, along with any software upgrades, enhancements, and new versions of software.
+
+
+
+
+
+7.  Requirements of the Proposal:
+
+Offers shall submit (in duplicate) as part of their proposal brochures, photographs, illustrations, drawings, and narratives which clearly show that the design, construction, capacities, and operation of the software being offered will meet all of the requirements set forth in this Purchase Specification.
+
+
+
+Proposals shall include a response to each numbered paragraph of this Purchase Specification indicating compliance or non-compliance with the paragraph's particular requirements. Each paragraph shall be numbered using the Purchase Specification paragraph numbers. Response to each paragraph shall state “exceeds requirements”, “will comply” or “exception taken” followed by an explanation of how it will be exceeded, how compliance will be met, or the rationale for the exception taken. Bid submittals shall provide specific information about how those requirements will, or will not be met so the impact of the over-compliance or exceptions can be evaluated. Offers that do not include sufficient information to permit a complete compliance review by Air Force personnel shall be rejected.
+
+
+
+
+8. Requirements After the Award of the Contract:
+
+NOTE - Engineering and technical support for installation requirements shall be furnished by the 309th Commodities Maintenance Group Manager. The support office at Hill AFB may be contacted at:
+
+
+
+
+
+8.1 The contractor shall ship to, install, and test the software at Hill AFB, Utah. The software shall remain the property of the contractor until the Government at Hill AFB accepts it. All costs associated with the manufacture, shipping, installation, testing and preparation of the software for final acceptance at Hill AFB shall be the responsibility of the contractor.
+
+
+
+8.2 The contractor shall be responsible to furnish all tools and equipment required to install the system and perform the tests required by this specification and shall remain the property of the contractor. The Government shall furnish no tools or equipment except the network computer, and the CNC Machines it is attached to. 
+
+
+
+System Operator Training.
+
+
+
+9. Training Requirements:
+
+The contractor shall provide training as specified for each of the skills listed below (to include tuition and all training materials required). 
+
+
+
+9.1 Software Training: Minimum of 26 hours of onsite training required for up to six persons to include Simulation, Verification, and Analysis.
+
+
+
+10. Inspection and Run-off Test Requirements:
+
+The software shall be fully installed, fully connected, and operational at the time of the run-off. The system shall demonstrate performance and accuracy as specified in this document. All aspects of the system and its’ performance shall be verified to the manufacturers specifications. The Government reserves the right to request specific test routines to validate machine parameters, beyond the manufacturers’ standard verification. Any deficiencies shall be corrected by the manufacturer or contractor prior to government acceptance. If the software does not pass the required tests, it shall be rejected. These tests shall be limited to the machines listed in section 3 of this document. The contractor shall furnish all software, materials required to perform and evaluate these tests. 
+
+
+
+
+
+11. Acceptance of the System:
+
+Prior to final acceptance, the software requires a full demonstration that ALL requirements listed herein have been met, onsite (Hill Air Force Base). The government shall provide Part Model, Part Stock, CNC Program, and all related “Siemens Unigraphics™ NX” CAD/CAM files for the demonstration. If the software fails to pass any test in the requirements of this Purchase Specification, it shall be rejected. After the software has passed all of the tests required by this Purchase Specification, the system will be accepted by the Group Manager. The Group Manager will sign the test report indicating that the tests were witnessed by a representative of the using activity and that all of the tests were performed satisfactorily. Acceptance shall be acknowledged by a signature sheet, including at a minimum, signatures of a Process Engineer, Production Supervisor, and two CNC Programmers.
+
+
+
+
+
+12. Warranty:
+
+Items proposed shall be warranted as is customary in the trade, but shall not be less than 12 months.  The standard commercial warranty, if applicable, shall apply to items offered in response to this solicitation.  Offerors are requested to include a copy of each applicable warranty with their response to this solicitation. Warranty is to start when the Group Manager makes the final buy off.
+
+
+
+13.1 Physical Copies: Software shall be kept on DVD, or CD with the Program Manager as property of the USAF.
+
+SOLICITATION/CONTRACT/ORDER FOR COMMERCIAL ITEMS
+OFFEROR TO COMPLETE BLOCKS 12, 17, 23, 24, AND 30
+2. CONTRACT NO. 3. AWARD/EFFECTIVE DATE 4. ORDER NUMBER
+
+1. REQUISITION NUMBER
+
+PAGE 1 OF
+
+31
+
+5. SOLICITATION NUMBER
+
+6. SOLICITATION ISSUE DATE
+
+FA8224-12-T-0030
+7. FOR SOLICITATION INFORMATION CALL: a. NAME b. TELEPHONE NUMBER (No Collect Calls)
+
+12-Apr-2012
+8. OFFER DUE DATE/LOCAL TIME
+
+CAMERON KORTH
+CODE
+
+801-586-8603
+10. THIS ACQUISITION IS UNRESTRICTED 11. DELIVERY FOR FOB DESTINATION UNLESS 100 % FOR BLOCK IS MARKED SEE SCHEDULE
+
+02:00 PM 26 Apr 2012
+12. DISCOUNT TERMS
+
+9. ISSUED BY
+
+FA8224
+
+OO-ALC/PKEA CAMERON KORTH 6038 ASPEN AVE B1289 UPSTAI HILL AFB UT 84056-5805
+
+X SET ASIDE: X SB
+
+HUBZONE SB 8(A) SVC-DISABLED VET-OWNED SB
+
+13a. THIS CONTRACT IS A RATED ORDER UNDER DPAS (15 CFR 700) 13b. RATING 14. METHOD OF SOLICITATION NAICS:
+
+TEL: 801-586-8603 FAX:
+15. DELIVER TO
+309 CMXG CARRIE YATES 309 CMXG 5816 D AVE, BLDG 238 HILL AFB UT 84056-5015 TEL: 801-775-6442 FAX:
+
+EMERGING SB SIZE STD: CODE
+F2DCBU
+
+$25M
+
+511210
+
+X RFQ
+
+IFB CODE
+
+RFP
+
+16. ADMINISTERED BY
+
+17a.CONTRACTOR/ OFFEROR
+
+CODE
+
+18a. PAY MENT WILL BE MADE BY
+
+CODE
+
+TEL.
+
+FACILITY CODE
+
+17b. CHECK IF REMITTANCE IS DIFFERENT AND PUT SUCH ADDRESS IN OFFER 19. ITEM NO.
+
+18b. SUBMIT INVOICES TO ADDRESS SHOWN IN BLOCK 18a. UNLESS BLOCK BELOW IS CHECKED SEE ADDENDUM 21. QUANTITY 22. UNIT 23. UNIT PRICE 24. AMOUNT
+
+20. SCHEDULE OF SUPPLIES/ SERVICES
+
+SEE SCHEDULE
+25. ACCOUNTING AND APPROPRIATION DATA 26. TOTAL AWARD AMOUNT (For Gov t. Use Only )
+
+27a. SOLICITATION INCORPORATES BY REFERENCE FAR 52.212-1. 52.212-4. FAR 52.212-3. 52.212-5 ARE ATTACHED. X 1 27b. CONTRACT/PURCHASE ORDER INCORPORATES BY REFERENCE FAR 52.212-4. FAR 52.212-5 IS ATTACHED. 28. CONTRACTOR IS REQUIRED TO SIGN THIS DOCUMENT AND RETURN 1 COPIES
+
+ADDENDA ADDENDA
+
+X ARE
+ARE
+
+ARE NOT ATTACHED ARE NOT ATTACHED
+
+29. AWARD OF CONTRACT: REFERENCE OFFER DATED . Y OUR OFFER ON SOLICITATION (BLOCK 5), INCLUDING ANY ADDITIONS OR CHANGES WHICH ARE SET FORTH HEREIN, IS ACCEPTED AS TO ITEMS:
+
+X
+
+TO ISSUING OFFICE. CONTRACTOR AGREES TO FURNISH AND DELIVER ALL ITEMS SET FORTH OR OTHERWISE IDENTIFIED ABOVE AND ON ANY ADDITIONAL SHEETS SUBJECT TO THE TERMS AND CONDITIONS SPECIFIED HEREIN.
+
+30a. SIGNATURE OF OFFEROR/CONTRACTOR
+
+31a.UNITED STATES OF AMERICA
+
+(SIGNATURE OF CONTRACTING OFFICER) 31c. DATE SIGNED
+
+30b. NAME AND TITLE OF SIGNER
+(TYPE OR PRINT)
+
+30c. DATE SIGNED
+
+31b. NAME OF CONTRACTING OFFICER
+
+(TYPE OR PRINT)
+
+TEL:
+
+EMAIL:
+
+AUTHORIZED FOR LOCAL REPRODUCTION PREVIOUS EDITION IS NOT USABLE
+
+STANDARD FORM 1449 (REV 3/2005) Prescribed by GSA FAR (48 CFR) 53.212
+
+SOLICITATION/CONTRACT/ORDER FOR COMMERCIAL ITEMS (CONTINUED)
+19. ITEM NO. 20. SCHEDULE OF SUPPLIES/ SERVICES 21. QUANTITY 22. UNIT 23. UNIT PRICE
+
+PAGE 2 OF 31 24. AMOUNT
+
+SEE SCHEDULE
+
+32a. QUANTITY IN COLUMN 21 HAS BEEN RECEIVED INSPECTED ACCEPTED, AND CONFORMS TO THE CONTRACT, EXCEPT AS NOTED: ______________________________________________________ 32b. SIGNATURE OF AUTHORIZED GOVERNMENT REPRESENTATIVE 32c. DATE 32d. PRINTED NAME AND TITLE OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32e. MAILING ADDRESS OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32f . TELEPHONE NUMBER OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32g. E-MAIL OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+33. SHIP NUMBER
+
+34. VOUCHER NUMBER
+
+35. AMOUNT VERIFIED CORRECT FOR
+
+36. PAY MENT COMPLETE PARTIAL FINAL
+
+37. CHECK NUMBER
+
+PARTIAL
+
+FINAL 39. S/R VOUCHER NUMBER 40. PAID BY
+
+38. S/R ACCOUNT NUMBER
+
+41a. I CERTIFY THIS ACCOUNT IS CORRECT AND PROPER FOR PAY MENT 42a. RECEIVED BY (Print) 41c. DATE 41b. SIGNATURE AND TITLE OF CERTIFY ING OFFICER 42b. RECEIVED AT (Location) 42c. DATE REC'D (YY/MM/DD) 42d. TOTAL CONTAINERS
+
+AUTHORIZED FOR LOCAL REPRODUCTION PREVIOUS EDITION IS NOT USABLE
+
+STANDARD FORM 1449 (REV 3/2005) BACK Prescribed by GSA FAR (48 CFR) 53.212
+
+FA8224-12-T-0030 Page 3 of 31 Section SF 1449 - CONTINUATION SHEET
+
+ITEM NO 0001
+
+QUANTITY UNIT UNIT PRICE 1 Each CNC Machine Simulation Software FFP CNC Machine Simulation Software that meets the requirements of the Purchase Specification FOB: Destination SIGNAL CODE: A
+
+SUPPLIES/SERVICES
+
+AMOUNT
+
+NET AMT
+
+INSPECTION AND ACCEPTANCE TERMS Supplies/services will be inspected/accepted at:
+CLIN 0001 INSPECT AT Destination INSPECT BY Government ACCEPT AT Destination ACCEPT BY Government
+
+DELIVERY INFORMATION
+CLIN 0001 DELIVERY DATE 60 dys. ADC QUANTITY 1 SHIP TO ADDRESS 309 CMXG CARRIE YATES 309 CMXG 5816 D AVE, BLDG 238 HILL AFB UT 84056-5015 801-775-6442 FOB: Destination UIC F2DCBU
+
+CLAUSES INCORPORATED BY REFERENCE
+
+FA8224-12-T-0030 Page 4 of 31
+
+52.204-10
+
+Reporting Executive Compensation and First-Tier SubcontractFEB 2012 Awards 52.209-2 Prohibition on Contracting with Inverted Domestic MAY 2011 Corporations--Representation 52.209-6 Protecting the Government's Interest When Subcontracting DEC 2010 With Contractors Debarred, Suspended, or Proposed for Debarment 52.209-10 Prohibition on Contracting With Inverted Domestic MAY 2011 Corporations 52.211-17 Delivery of Excess Quantities SEP 1989 52.212-1 Instructions to Offerors--Commercial Items FEB 2012 52.212-4 Contract Terms and Conditions--Commercial Items FEB 2012 52.219-4 Notice of Price Evaluation Preference for HUBZone Small JAN 2011 Business Concerns 52.222-3 Convict Labor JUN 2003 52.222-19 Child Labor -- Cooperation with Authorities and Remedies MAR 2012 52.222-21 Prohibition Of Segregated Facilities FEB 1999 52.222-26 Equal Opportunity MAR 2007 52.222-36 Affirmative Action For Workers With Disabilities OCT 2010 52.222-50 Combating Trafficking in Persons FEB 2009 52.223-16 Alt I IEEE 1680 Standard for the Environmental Assessment of DEC 2007 Personal Computer Products (Dec 200&0 Alternate I 52.223-18 Encouraging Contractor Policies To Ban Text Messaging AUG 2011 While Driving 52.225-13 Restrictions on Certain Foreign Purchases JUN 2008 52.225-18 Place of Manufacture SEP 2006 52.233-3 Protest After Award AUG 1996 52.247-34 F.O.B. Destination NOV 1991 52.253-1 Computer Generated Forms JAN 1991 252.203-7000 Requirements Relating to Compensation of Former DoD SEP 2011 Officials 252.203-7002 Requirement to Inform Employees of Whistleblower Rights JAN 2009 252.204-7003 Control Of Government Personnel Work Product APR 1992 252.211-7003 Item Identification and Valuation JUN 2011 252.212-7001 (Dev) Contract Terms and Conditions Required to Implement DEC 2010 Statutes or Executive Orders Applicable to Defense Acquisitions of Commercial Items (Deviation) 252.225-7001 Buy American Act And Balance Of Payments Program OCT 2011 252.225-7002 Qualifying Country Sources As Subcontractors APR 2003 252.232-7003 Electronic Submission of Payment Requests and Receiving MAR 2008 Reports 252.232-7010 Levies on Contract Payments DEC 2006
+
+CLAUSES INCORPORATED BY FULL TEXT
+
+52.212-2
+
+EVALUATION--COMMERCIAL ITEMS (JAN 1999)
+
+(a) The Government will award a contract resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation will be most advantageous to the Government, price and other factors considered. The following factors shall be used to evaluate offers:
+
+FA8224-12-T-0030 Page 5 of 31 1. 2. Price Technical Acceptability
+
+Price will be evaluated on the basis of the total price of the offer. The total prices will be ranked from lowest to highest. Technical evaluations will be done in order of price starting with the lowest. In order to receive award the offer must have an acceptable technical proposal. In order to receive an acceptable rating, all requirements in the purchase specification must be met. They will be evaluated on a pass/fail basis. Evaluations of the technical proposals will cease when an acceptable technical proposal is found. The Government does not intend to hold discussions but reserves the right to do so. (b) A written notice of award or acceptance of an offer, mailed or otherwise furnished to the successful offeror within the time for acceptance specified in the offer, shall result in a binding contract without further action by either party. Before the offer's specified expiration time, the Government may accept an offer (or part of an offer), whether or not there are negotiations after its receipt, unless a written notice of withdrawal is received before award. (End of provision)
+
+52.212-3 OFFEROR REPRESENTATIONS AND CERTIFICATIONS--COMMERCIAL ITEMS (DEB 2012) ALTERNATE I (APR 2011)
+
+An offeror shall complete only paragraph (b) of this provision if the offeror has completed the annual representations and certifications electronically via https://www.acquisition.gov. If an offeror has not completed the annual representations and certifications electronically at the ORCA website, the offeror shall complete only paragraphs (b) through (i) of this provision. (a) Definitions. As used in this provision: "Emerging small business" means a small business concern whose size is no greater than 50 percent of the numerical size standard for the NAICS code designated. "Forced or indentured child labor" means all work or service(1) Exacted from any person under the age of 18 under the menace of any penalty for its nonperformance and for which the worker does not offer himself voluntarily; or (2) Performed by any person under the age of 18 pursuant to a contract the enforcement of which can be accomplished by process or penalties. Inverted domestic corporation, as used in this section, means a foreign incorporated entity which is treated as an inverted domestic corporation under 6 U.S.C. 395(b), i.e., a corporation that used to be incorporated in the United States, or used to be a partnership in the United States, but now is incorporated in a foreign country, or is a subsidiary whose parent corporation is incorporated in a foreign country, that meets the criteria specified in 6 U.S.C. 395(b), applied in accordance with the rules and definitions of 6 U.S.C. 395(c). An inverted domestic corporation as herein defined does not meet the definition of an inverted domestic corporation as defined by the Internal Revenue Code at 26 U.S.C. 7874. "Manufactured end product" means any end product in Federal Supply Classes (FSC) 1000 -9999, except--
+
+FA8224-12-T-0030 Page 6 of 31
+
+(1) FSC 5510, Lumber and Related Basic Wood Materials; (2) Federal Supply Group (FSG) 87, Agricultural Supplies; (3) FSG 88, Live Animals; (4) FSG 89, Food and Related Consumables; (5) FSC 9410, Crude Grades of Plant Materials; (6) FSC 9430, Miscellaneous Crude Animal Products, Inedible; (7) FSC 9440, Miscellaneous Crude Agricultural and Forestry Products; (8) FSC 9610, Ores; (9) FSC 9620, Minerals, Natural and Synthetic; and (10) FSC 9630, Additive Metal Materials. "Place of manufacture" means the place where an end product is assembled out of component s, or otherwise made or processed from raw materials into the finished product that is to be provided to the Government. If a product is disassembled and reassembled, the place of reassembly is not the place of manufacture. Restricted business operations means business operations in Sudan that include power production activities, mineral extraction activities, oil-related activities, or the production of military equipment, as those terms are defined in the Sudan Accountability and Divestment Act of 2007 (Pub. L. 110-174). Restricted business operations do not include business operations that the person (as that term is defined in Section 2 of the Sudan Accountability and Divestment Act of 2007) conducting the business can demonstrate-(1) Are conducted under contract directly and exclusively with the regional government of southern Sudan; (2) Are conducted pursuant to specific authorization from the Office of Foreign Assets Control in the Department of the Treasury, or are expressly exempted under Federal law from the requirement to be conducted under such authorization; (3) Consist of providing goods or services to marginalized populations of Sudan; (4) Consist of providing goods or services to an internationally recognized peacekeeping force or humanitarian organization; (5) Consist of providing goods or services that are used only to promote health or education; or (6) Have been voluntarily suspended. Sensitive technology-(1) Means hardware, software, telecommunications equipment, or any other technology that is to be used specifically-(i) To restrict the free flow of unbiased information in Iran; or
+
+FA8224-12-T-0030 Page 7 of 31 (ii) To disrupt, monitor, or otherwise restrict speech of the people of Iran; and (2) Does not include information or informational materials the export of which the President does not have the authority to regulate or prohibit pursuant to section 203(b)(3) of the International Emergency Economic Powers Act (50 U.S.C. 1702(b)(3)). Service-disabled veteran-owned small business concern-(1) Means a small business concern-(i) Not less than 51 percent of which is owned by one or more service-disabled veterans or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more service-disabled veterans; and (ii) The management and daily business operations of which are controlled by one or more service-disabled veterans or, in the case of a service-disabled veteran with permanent and severe disability, the spouse or permanent caregiver of such veteran. (2) Service-disabled veteran means a veteran, as defined in 38 U.S.C. 101(2), with a disability that is serviceconnected, as defined in 38 U.S.C. 101(16). "Small business concern" means a concern, including its affiliates, that is independently owned and operated, not dominant in the field of operation in which it is bidding on Government contracts, and qualified as a small business under the criteria in 13 CFR Part 121 and size standards in this solicitation. Subsidiary means an entity in which more than 50 percent of the entity is owned-(1) Directly by a parent corporation; or (2) Through another subsidiary of a parent corporation. Veteran-owned small business concern means a small business concern-(1) Not less than 51 percent of which is owned by one or more veterans (as defined at 38 U.S.C. 101(2)) or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more veterans; and (2) The management and daily business operations of which are controlled by one or more veterans. "Women-owned small business concern" means a small business concern-(1) That is at least 51 percent owned by one or more women or, in the case of any publicly owned business, at least 51 percent of its stock is owned by one or more women; or (2) Whose management and daily business operations are controlled by one or more women. "Women-owned business concern" means a concern which is at least 51 percent owned by one or more women; or in the case of any publicly owned business, at least 51 percent of the stock of which is owned by one or more women; and whose management and daily business operations are controlled by one or more women. (b) (1) Annual Representations and Certifications. Any changes provided by the offeror in paragraph (b)(2) of this provision do not automatically change the representations and certifications posted electronically on the Online Representations and Certifications Application (ORCA) website.
+
+FA8224-12-T-0030 Page 8 of 31 (2) The offeror has completed the annual representations and certifications electronically via the ORCA website accessed through https://www.acquisition.gov. After reviewing the ORCA database information, the offeror verifies by submission of this offer that the representations and certifications currently posted electronically at FAR 52.2123, Offeror Representations and Certifications--Commercial Items, have been entered or updated in the last 12 months, are current, accurate, complete, and applicable to this solicitation (including the business size standard applicable to the NAICS code referenced for this solicitation), as of the date of this offer and are incorporated in this offer by reference (see FAR 4.1201), except for paragraphs ----------. (Offeror to identify the applicable paragraphs at (c) through (n) of this provision that the offeror has completed for the purposes of this solicitation only, if any.) These amended representation(s) and/or certification(s) are also incorporated in this offer and are current, accurate, and complete as of the date of this offer. Any changes provided by the offeror are applicable to this solicitation only, and do not result in an update to the representations and certifications posted on ORCA.]
+
+(c) Offerors must complete the following representations when the resulting contract will be performed in the United States or its outlying areas. Check all that apply. (1) Small business concern. The offeror represents as part of its offer that it ( ) is, ( ) is not a small business concern. (2) Veteran-owned small business concern. (Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this provision.) The offeror represents as part of its offer that it ( ) is, ( ) is not a veteran-owned small business concern. (3) Service-disabled veteran-owned small business concern. (Complete only if the offeror represented itself as a veteran-owned small business concern in paragraph (c)(2) of this provision.) The offeror represents as part of its offer that it ( ) is, ( ) is not a service-disabled veteran-owned small business concern. (4) Small disadvantaged business concern. (Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this provision.) The offeror represents, for general statistical purposes, that it ( ) is, ( ) is not a small disadvantaged business concern as defined in 13 CFR 124.1002. (5) Women-owned small business concern. (Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this provision.) The offeror represents that it ( ) is, ( ) is not a women-owned small business concern. Note to paragraphs (c)(8) and (9): Complete paragraphs (c)(8) and (c)(9) only if this solicitation is expected to exceed the simplified acquisition threshold. (6) WOSB concern eligible under the WOSB Program. [Complete only if the offeror represented itself as a womenowned small business concern in paragraph (c)(5) of this provision.] The offeror represents that-(i) It * is, * is not a WOSB concern eligible under the WOSB Program, has provided all the required documents to the WOSB Repository, and no change in circumstances or adverse decisions have been issued that affects its eligibility; and (ii) It ( ) is, ( ) is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation in paragraph (c)(6)(i) of this provision is accurate in reference to the WOSB concern or concerns that are participating in the joint venture. [The offeror shall enter the name or names of the WOSB concern or concerns that are participating in the joint venture: .] Each WOSB concern participating in the joint venture shall submit a separate
+
+FA8224-12-T-0030 Page 9 of 31 signed copy of the WOSB representation. (7) Economically disadvantaged women-owned small business (EDWOSB) concern. [Complete only if the offeror represented itself as a WOSB concern eligible under the WOSB Program in (c)(6) of this provision.] The offeror represents that-(i) It ( ) is, ( ) is not an EDWOSB concern eligible under the WOSB Program, has provided all the required documents to the WOSB Repository, and no change in circumstances or adverse decisions have been issued that affects its eligibility; and (ii) It ( ) is, ( ) is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation in paragraph (c)(7)(ii) of this provision is accurate in reference to the EDWOSB concern or concerns that are participating in the joint venture. The offeror shall enter the name or names of the EDWOSB concern or concerns that are participating in the joint venture: ------------. Each EDWOSB concern participating in the joint venture shall submit a separate signed copy of the EDWOSB representation. (8) Women-owned business concern (other than small business concern). (Complete only if the offeror is a womenowned business concern and did not represent itself as a small business concern in paragraph (c)(1) of this provision.) The offeror represents that it ( ) is, a women-owned business concern. (9) Tie bid priority for labor surplus area concerns. If this is an invitation for bid, small business offerors may identify the labor surplus areas in which costs to be incurred on account of manufacturing or production (by offeror or first-tier subcontractors) amount to more than 50 percent of the contract price: _____________________________________________ (10) Small Business Size for the Small Business Competitiveness Demonstration Program and for the Targeted Industry Categories under the Small Business Competitiveness Demonstration Program. (Complete only if the offeror has represented itself to be a small business concern under the size standards for this solicitation.) (i) (Complete only for solicitations indicated in an addendum as being set-aside for emerging small businesses in one of the designated industry groups (DIGs).) The offeror represents as part of its offer that it ( ) is, ( ) is not an emerging small business. (ii) (Complete only for solicitations indicated in an addendum as being for one of the targeted industry categories (TICs) or designated industry groups (DIGs).) Offeror represents as follows: (A) Offeror's number of employees for the past 12 months (check the Employees column if size standard stated in the solicitation is expressed in terms of number of employees); or (B) Offeror's average annual gross revenue for the last 3 fiscal years (check the Average Annual Gross Number of Revenues column if size standard stated in the solicitation is expressed in terms of annual receipts). (Check one of the following): Average Annual Number of Employees Gross Revenues ___ 50 or fewer ___ $1 million or less ___ 51 - 100 ___ $1,000,001 - $2 million ___ 101 - 250 ___ $2,000,001 - $3.5 million
+
+FA8224-12-T-0030 Page 10 of 31
+
+___ 251 - 500 ___ $3,500,001 - $5 million ___ 501 - 750 ___ $5,000,001 - $10 million ___ 751 - 1,000 ___ $10,000,001 - $17 million ___ Over 1,000 ___ Over $17 million (11) (Complete only if the solicitation contains the clause at FAR 52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns or FAR 52.219-25, Small Disadvantaged Business Participation Program-Disadvantaged Status and Reporting, and the offeror desires a benefit based on its disadvantaged status.) (i) General. The offeror represents that either-(A) It ( ) is, ( ) is not certified by the Small Business Administration as a small disadvantaged business concern and identified, on the date of this representation, as a certified small disadvantaged business concern in the CCR Dynamic Small Business Search Database maintained by the Small Business Administration, and that no material change in disadvantaged ownership and control has occurred since its certification, and, where the concern is owned by one or more individuals claiming disadvantaged status, the net worth of each individual upon whom the certification is based does not exceed $750,000 after taking into account the applicable exclusions set forth at 13 CFR 124.104(c)(2); or (B) It ( ) has, ( )( has not submitted a completed application to the Small Business Administration or a Private Certifier to be certified as a small disadvantaged business concern in accordance with 13 CFR 124, Subpart B, and a decision on that application is pending, and that no material change in disadvantaged ownership and control has occurred since its application was submitted. (ii) Joint Ventures under the Price Evaluation Adjustment for Small Disadvantaged Business Concerns. The offeror represents, as part of its offer, that it is a joint venture that complies with the requirements in 13 CFR 124.1002(f) and that the representation in paragraph (c)(9)(i) of this provision is accurate for the small disadvantaged business concern that is participating in the joint venture. (The offeror shall enter the name of the small disadvantaged business concern that is participating in the joint venture: ____________.)
+
+(12) Complete if the offeror has represented itself as disadvantaged in paragraph (c)(4) or (c)(10) of this provision.) (The offeror shall check the category in which its ownership falls): ____Black American. ____Hispanic American. ____Native American (American Indians, Eskimos, Aleuts, or Native Hawaiians). ____Asian-Pacific American (persons with origins from Burma, Thailand, Malaysia, Indonesia, Singapore, Brunei, Japan, China, Taiwan, Laos, Cambodia (Kampuchea), Vietnam, Korea, The Philippines, U.S. Trust Territory of the Pacific Islands (Republic of Palau), Republic of the Marshall Islands, Federated States of Micronesia, the Commonwealth of the Northern Mariana Islands, Guam, Samoa, Macao, Hong Kong, Fiji, Tonga, Kiribati, Tuvalu, or Nauru). ____Subcontinent Asian (Asian-Indian) American (persons with origins from India, Pakistan, Bangladesh, Sri Lanka, Bhutan, the Maldives Islands, or Nepal).
+
+FA8224-12-T-0030 Page 11 of 31 ____Individual/concern, other than one of the preceding. (d) Certifications and representations required to implement provisions of Executive Order 11246-(1) Previous Contracts and Compliance. The offeror represents that-(i) It ( ) has, ( ) has not, participated in a previous contract or subcontract subject either to the Equal Opportunity clause of this solicitation, the and (ii) It ( ) has, ( ) has not, filed all required compliance reports. (2) Affirmative Action Compliance. The offeror represents that-(i) It ( ) has developed and has on file, ( ) has not developed and does not have on file, at each establishment, affirmative action programs required by rules and regulations of the Secretary of Labor (41 CFR Subparts 60-1 and 60-2), or (ii) It ( ) has not previously had contracts subject to the written affirmative action programs requirement of the rules and regulations of the Secretary of Labor. (e) Certification Regarding Payments to Influence Federal Transactions (31 U.S.C. 1352). (Applies only if the contract is expected to exceed $100,000.) By submission of its offer, the offeror certifies to the best of its knowledge and belief that no Federal appropriated funds have been paid or will be paid to any person for influencing or attempting to influence an officer or employee of any agency, a Member of Congress, an officer or employee of Congress or an employee of a Member of Congress on his or her behalf in connection with the award of any resultant contract. If any registrants under the Lobbying Disclosure Act of 1995 have made a lobbying contact on behalf of the offeror with respect to this contract, the offeror shall complete and submit, with its offer, OMB Standard Form LLL, Disclosure of Lobbying Activities, to provide the name of the registrants. The offeror need not report regularly employed officers or employees of the offeror to whom payments of reasonable compensation were made. (f) Buy American Act--Balance of Payments Program Certificate. (Applies only if the clause at Federal Acquisition Regulation (FAR) 52.225-1, Buy American Act--Balance of Payments Program--Supplies, is included in this solicitation.) (1) The offeror certifies that each end product, except those listed in paragraph (f)(2) of this provision, is a domestic end product and that for other than COTS items, the offeror has considered components of unknown origin to have been mined, produced, or manufactured outside the United States. The offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as domestic end products, i.e., an end product that is not a COTS item and does not meet the component test in paragraph (2) of the definition of "domestic end product." The terms "commercially available off-the-shelf (COTS) item," "component," "domestic end product," "end product," "foreign end product," and "United States" are defined in the clause of this solicitation entitled "Buy American Act--Supplies." (2) Foreign End Products: LINE ITEM NO. COUNTRY OF ORIGIN
+
+(List as necessary)
+
+FA8224-12-T-0030 Page 12 of 31 (3) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25. (g) (1) Buy American Act -- Free Trade Agreements -- Israeli Trade Act Certificate. (Applies only if the clause at FAR 52.225-3, Buy American Act -- Free Trade Agreements -- Israeli Trade Act, is included in this solicitation.) The offeror certifies that each end product, except those listed in paragraph (g)(1)(ii) or (g)(1)(iii) of this provision, is a domestic end product and that for other than COTS items, the offeror has considered components of unknown origin to have been mined, produced, or manufactured outside the United States. The terms "Bahrainian, Moroccan, Omani, or Peruvian end product," "commercially available off-the-shelf (COTS) item," "component," "domestic end product," "end product," "foreign end product," "Free Trade Agreement country," "Free Trade Agreement country end product," "Israeli end product," and "United States" are defined in the clause of this solicitation entitled "Buy American Act-Free Trade Agreements-Israeli Trade Act." (ii) ) The offeror certifies that the following supplies are Free Trade Agreement country end products (other than Bahrainian, Moroccan, Omani, or Peruvian end products) or Israeli end products as defined in the clause of this solicitation entitled ``Buy American Act--Free Trade Agreements--Israeli Trade Act'': Free Trade Agreement Country End Products (Other than Bahrainian, Moroccan, Omani, or Peruvian End Products) or Israeli End Products: LINE ITEM NO. COUNTRY OF ORIGIN
+
+[List as necessary] (iii) The offeror shall list those supplies that are foreign end products (other than those listed in paragraph (g)(1)(ii) or this provision) as defined in the clause of this solicitation entitled "Buy American Act--Free Trade Agreements-- Israeli Trade Act." The offeror shall list as other foreign end products those end products manufactured in the United States that do not qualify as domestic end products, i.e., an end product that is not a COTS item and does not meet the component test in paragraph (2) of the definition of "domestic end product." Other Foreign End Products: LINE ITEM NO. COUNTRY OF ORIGIN
+
+[List as necessary] (iv) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25. (2) Buy American Act--Free Trade Agreements--Israeli Trade Act Certificate, Alternate I (Jan 2004). If Alternate I to the clause at FAR 52.225-3 is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision: (g)(1)(ii) The offeror certifies that the following supplies are Canadian end products as defined in the clause of this solicitation entitled "Buy American Act--Free Trade Agreements--Israeli Trade Act":
+
+FA8224-12-T-0030 Page 13 of 31 Canadian End Products: Line Item No.: ___________________________________________ [List as necessary] (3) Buy American Act--Free Trade Agreements--Israeli Trade Act Certificate, Alternate II (Jan 2004). If Alternate II to the clause at FAR 52.225-3 is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision: (g)(1)(ii) The offeror certifies that the following supplies are Canadian end products or Israeli end products as defined in the clause of this solicitation entitled ``Buy American Act--Free Trade Agreements--Israeli Trade Act'': Canadian or Israeli End Products: Line Item No.: Country of Origin:
+
+[List as necessary] (4) Trade Agreements Certificate. (Applies only if the clause at FAR 52.225-5, Trade Agreements, is included in this solicitation.) (i) The offeror certifies that each end product, except those listed in paragraph (g)(4)(ii) of this provision, is a U.S.made or designated country end product as defined in the clause of this solicitation entitled "Trade Agreements." (ii) The offeror shall list as other end products those end products that are not U.S.-made or designated country end products. Other End Products Line Item No.: Country of Origin:
+
+[List as necessary] (iii) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25. For line items covered by the WTO GPA, the Government will evaluate offers of U.S.-made or designated country end products without regard to the restrictions of the Buy American Act. The Government will consider for award only offers of U.S.-made or designated country end products unless the Contracting Officer determines that there are no offers for such products or that the offers for such products are insufficient to fulfill the requirements of the solicitation. (h) Certification Regarding Responsibility Matters (Executive Order 12689). (Applies only if the contract value is expected to exceed the simplified acquisition threshold.) The offeror certifies, to the best of its knowledge and belief, that the offeror and/or any of its principals-(1) ( ) Are, ( ) are not presently debarred, suspended, proposed for debarment, or declared ineligible for the award of contracts by any Federal agency; and (2) ( ) Have, ( ) have not, within a three-year period preceding this offer, been convicted of or had a civil judgment rendered against them for: Commission of fraud or a criminal offense in connection with obtaining, attempting to
+
+FA8224-12-T-0030 Page 14 of 31 obtain, or performing a Federal, state or local government contract or subcontract; violation of Federal or state antitrust statutes relating to the submission of offers; or Commission of embezzlement, theft, forgery, bribery, falsification or destruction of records, making false statements, tax evasion, violating Federal criminal tax laws, or receiving stolen property; and (3) ( ) Are, ( ) are not presently indicted for, or otherwise criminally or civilly charged by a Government entity with, commission of any of these offenses enumerated in paragraph (h)(2) of this clause; and (4) [ballot] Have, [ballot] have not, within a three-year period preceding this offer, been notified of any delinquent Federal taxes in an amount that exceeds $3,000 for which the liability remains unsatisfied. (i) Taxes are considered delinquent if both of the following criteria apply: (A) The tax liability is finally determined. The liability is finally determined if it has been assessed. A liability is not finally determined if there is a pending administrative or judicial challenge. In the case of a judicial challenge to the liability, the liability is not finally determined until all judicial appeal rights have been exhausted. (B) The taxpayer is delinquent in making payment. A taxpayer is delinquent if the taxpayer has failed to pay the tax liability when full payment was due and required. A taxpayer is not delinquent in cases where enforced collection action is precluded. (ii) Examples. (A) The taxpayer has received a statutory notice of deficiency, under I.R.C. Sec. 6212, which entitles the taxpayer to seek Tax Court review of a proposed tax deficiency. This is not a delinquent tax because it is not a final tax liability. Should the taxpayer seek Tax Court review, this will not be a final tax liability until the taxpayer has exercised all judicial appeal rights. (B) The IRS has filed a notice of Federal tax lien with respect to an assessed tax liability, and the taxpayer has been issued a notice under I.R.C. Sec. 6320 entitling the taxpayer to request a hearing with the IRS Office of Appeals contesting the lien filing, and to further appeal to the Tax Court if the IRS determines to sustain the lien filing. In the course of the hearing, the taxpayer is entitled to contest the underlying tax liability because the taxpayer has had no prior opportunity to contest the liability. This is not a delinquent tax because it is not a final tax liability. Should the taxpayer seek tax court review, this will not be a final tax liability until the taxpayer has exercised all judicial appeal rights. (C) The taxpayer has entered into an installment agreement pursuant to I.R.C. Sec. 6159. The taxpayer is making timely payments and is in full compliance with the agreement terms. The taxpayer is not delinquent because the taxpayer is not currently required to make full payment. (D) The taxpayer has filed for bankruptcy protection. The taxpayer is not delinquent because enforced collection action is stayed under 11 U.S.C. 362 (the Bankruptcy Code). (i) Certification Regarding Knowledge of Child Labor for Listed End Products (Executive Order 13126). (2) Certification. (j) Place of manufacture. (Does not apply unless the solicitation is predominantly for the acquisition of manufactured end products.) For statistical purposes only, the offeror shall indicate whether the place of manufacture of the end products it expects to provide in response to this solicitation is predominantly-- (1) ( )In the United States (Check this box if the total anticipated price of offered end products manufactured in the United States exceeds the total anticipated price of offered end products manufactured outside the United States); or (2) ( ) Outside the United States.
+
+FA8224-12-T-0030 Page 15 of 31
+
+(k) Certificates regarding exemptions from the application of the Service Contract Act. (Certification by the offeror as to its compliance with respect to the contract also constitutes its certification as to compliance by its subcontractor if it subcontracts out the exempt services.) (l) Taxpayer Identification Number (TIN) (26 U.S.C. 6109, 31 U.S.C. 7701). (Not applicable if the offeror is required to provide this information to a central contractor registration database to be eligible for award.) (1) All offerors must submit the information required in paragraphs (l)(3) through (l)(5) of this provision to comply with debt collection requirements of 31 U.S.C. 7701(c) and 3325(d), reporting requirements of 26 U.S.C. 6041, 6041A, and 6050M, and implementing regulations issued by the Internal Revenue Service (IRS). (2) The TIN may be used by the Government to collect and report on any delinquent amounts arising out of the offeror's relationship with the Government (31 U.S.C. 7701(c)(3)). If the resulting contract is subject to the payment reporting requirements described in FAR 4.904, the TIN provided hereunder may be matched with IRS records to verify the accuracy of the offeror's TIN. (3) Taxpayer Identification Number (TIN). ( ) TIN: --------------------. ( ) TIN has been applied for. ( ) TIN is not required because: ( ) Offeror is a nonresident alien, foreign corporation, or foreign partnership that does not have income effectively connected with the conduct of a trade or business in the United States and does not have an office or place of business or a fiscal paying agent in the United States; ( ) Offeror is an agency or instrumentality of a foreign government; ( ) Offeror is an agency or instrumentality of the Federal Government. (4) Type of organization. ( ) Sole proprietorship; ( ) Partnership; ( ) Corporate entity (not tax-exempt); ( ) Corporate entity (tax-exempt); ( ) Government entity (Federal, State, or local); ( ) Foreign government; ( ) International organization per 26 CFR 1.6049-4; ( ) Other ----------. (5) Common parent. ( ) Offeror is not owned or controlled by a common parent;
+
+FA8224-12-T-0030 Page 16 of 31
+
+( ) Name and TIN of common parent: Name --------------------. TIN --------------------. (m) Restricted business operations in Sudan. By submission of its offer, the offeror certifies that the offeror does not conduct any restricted business operations in Sudan. (n) Prohibition on Contracting with Inverted Domestic Corporations -- (1) Relation to Internal Revenue Code. An inverted domestic corporation as herein defined does not meet the definition of an inverted domestic corporation as defined by the Internal Revenue Code 25 U.S.C. 7874. (2) Representation. By submission of its offer, the offeror represents that-(i) It is not an inverted domestic corporation; and (ii) It is not a subsidiary of an inverted domestic corporation. (o) Sanctioned activities relating to Iran. (1) Unless a waiver is granted or an exception applies as provided in paragraph (o)(2) of this provision, by submission of its offer, the offeror certifies that the offeror, or any person owned or controlled by the offeror, does not engage in any activities for which sanctions may be imposed under section 5 of the Iran Sanctions Act of 1996. (2) The certification requirement of paragraph (o)(1) of this provision does not apply if -- (i) This solicitation includes a trade agreements certification (e.g., 52.212-3(g) or a comparable agency provision); and (ii) The offeror has certified that all the offered products to be supplied are designated country end products. (End of provision)
+
+52.212-5 CONTRACT TERMS AND CONDITIONS REQUIRED TO IMPLEMENT STATUTES OR EXECUTIVE ORDERS--COMMERCIAL ITEMS (MAR 2012) (DEVIATION) (a) Comptroller General Examination of Record. The Contractor shall comply with the provisions of this paragraph (a) if this contract was awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at 52.215-2, Audit and Records-Negotiation. (1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right to examine any of the Contractor's directly pertinent records involving transactions related to this contract. (2) The Contractor shall make available at its offices at all reasonable times, the records, materials, and other evidence for examination, audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR Subpart 4.7, Contractor Records Retention, of the other clauses of this contract. If
+
+FA8224-12-T-0030 Page 17 of 31 this contract is completely or partially terminated, the records relating to the work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such appeals, litigation, or claims are finally resolved. (3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary course of business or pursuant to a provision of law. (b)(1) Notwithstanding the requirements of any other clause in this contract, the Contractor is not required to flow down any FAR clause, other than those in this paragraph (b)(i) in a subcontract for commercial items. Unless otherwise indicated below, the extent of the flow down shall be as required by the clause(i) 52.203-13, Contractor Code of Business Ethics and Conduct (APR 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note). (ii) 52.219-8, Utilization of Small Business Concerns (DEC 2010) (15 U.S.C. 637(d)(2) and (3)), in all subcontracts that offer further subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $650,000 ($1.5 million for construction of any public facility), the subcontractor must include 52.219-8 in lower tier subcontracts that offer subcontracting opportunities. (iii) Reserved. (iv) 52.222-26, Equal Opportunity (MAR 2007) (E.O. 11246). (v) 52.222-35, Equal Opportunity for Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans (SEP 2006) (38 U.S.C. 4212). (vi) 52.222-36, Affirmative Action for Workers with Disabilities (JUN 1998) (29 U.S.C. 793). (vii) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (DEC 2010) (E.O. 13496). Flow down required in accordance with paragraph (f) of FAR clause 52.222-40. (viii) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.). (ix) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)). ___ Alternate I (AUG 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+
+(x) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment--Requirements (Nov 2007) (41 U.S.C. 351, et seq.). (xi) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services-Requirements (FEB 2009) (41 U.S.C. 351, et seq.). (xii) 52.222-54, Employment Eligibility Verification (JAN 2009). (xiii) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations. (MAR 2009) (Pub. L. 110-247). Flow down required in accordance with paragraph (e) of FAR clause 52.226-6. (xiv) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (FEB 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C. 2631). Flow down required in accordance with paragraph (d) of FAR clause 52.247-64.
+
+FA8224-12-T-0030 Page 18 of 31 (2) While not required, the contractor may include in its subcontracts for commercial items a minimal number of additional clauses necessary to satisfy its contractual obligations. (End of clause)
+
+52.219-1
+
+SMALL BUSINESS PROGRAM REPRESENTATIONS (APR 2011) - ALTERNATE I (APR 2011)
+
+(a)(1) The North American Industry Classification System (NAICS) code for this acquisition is (511210 ) (insert NAICS code). (2) The small business size standard is ($25,000,000 ) (insert size standard).
+
+(3) The small business size standard for a concern which submits an offer in its own name, other than on a construction or service contract, but which proposes to furnish a product which it did not itself manufacture, is 500 employees. (b) Representations. (1) The offeror represents as part of its offer that it ( ) is, ( ) is not a small business concern. (2) (Complete only if the offeror represented itself as a small business concern in paragraph (b)(1) of this provision.) The offeror represents, for general statistical purposes, that it ( ) is, ( ) is not a small disadvantaged business concern as defined in 13 CFR 124.1002. (3) (Complete only if the offeror represented itself as a small business concern in paragraph (b)(1) of this provision.) The offeror represents as part of its offer that it ( ) is, ( ) is not a women-owned small business concern. (4) Women-owned small business (WOSB) concern eligible under the WOSB Program. [Complete only if the offeror represented itself as a women-owned small business concern in paragraph (b)(3) of this provision.] The offeror represents as part of its offer that-(i) It * is, * is not a WOSB concern eligible under the WOSB Program, has provided all the required documents to the WOSB Repository, and no change in circumstances or adverse decisions have been issued that affects its eligibility; and (ii) It * is, * is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation in paragraph (b)(4)(i) of this provision is accurate in reference to the WOSB concern or concerns that are participating in the joint venture. [The offeror shall enter the name or names of the WOSB concern or concerns that are participating in the joint venture: ----.] Each WOSB concern participating in the joint venture shall submit a separate signed copy of the WOSB representation. (5) Economically disadvantaged women-owned small business (EDWOSB) concern. [Complete only if the offeror represented itself as a women-owned small business concern eligible under the WOSB Program in (b)(4) of this provision.] The offeror represents as part of its offer that-(i) It * is, * is not an EDWOSB concern eligible under the WOSB Program, has provided all the required documents to the WOSB Repository, and no change in circumstances or adverse decisions have been issued that affects its eligibility; and (ii) It * is, * is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation in paragraph (b)(5)(i) of this provision is accurate in reference to the EDWOSB concern or concerns that are participating in the joint venture. [The offeror shall enter the name or names of the EDWOSB concern or concerns
+
+FA8224-12-T-0030 Page 19 of 31 that are participating in the joint venture: ------------------.] Each EDWOSB concern participating in the joint venture shall submit a separate signed copy of the EDWOSB representation. (6) (Complete only if the offeror represented itself as a small business concern in paragraph (b)(1) of this provision.) The offeror represents as part of its offer that it ( ) is, ( ) is not a veteran-owned small business concern. (7) (Complete only if the offeror represented itself as a veteran-owned small business concern in paragraph (b)(6) of this provision.) The offeror represents as part of its offer that it ( ) is, ( ) is not a service-disabled veteran-owned small business concern. (8) [Complete only if the offeror represented itself as a small business concern in paragraph (b)(1) of this provision.] The offeror represents, as part of its offer, that-(i) It ( ) is, ( ) is not a HUBZone small business concern listed, on the date of this representation, on the List of Qualified HUBZone Small Business Concerns maintained by the Small Business Administration, and no material change in ownership and control, principal office, or HUBZone employee percentage has occurred since it was certified by the Small Business Administration in accordance with 13 CFR part 126; and (ii) It ( ) is, ( ) is not a joint venture that complies with the requirements of 13 CFR part 126, and the representation in paragraph (b)(8)(i) of this provision is accurate for the HUBZone small business concern or concerns that are participating in the joint venture. (The offeror shall enter the name or names of the HUBZone small business concern or concerns that are participating in the joint venture:____________.) Each HUBZone small business concern participating in the joint venture shall submit a separate signed copy of the HUBZone representation. (9) (Complete if offeror represented itself as disadvantaged in paragraph (b)(2) of this provision.) The offeror shall check the category in which its ownership falls: ____ Black American. ____ Hispanic American. ____ Native American (American Indians, Eskimos, Aleuts, or Native Hawaiians). ____ Asian-Pacific American (persons with origins from Burma, Thailand, Malaysia, Indonesia, Singapore, Brunei, Japan, China, Taiwan, Laos, Cambodia (Kampuchea), Vietnam, Korea, The Philippines, U.S. Trust Territory of the Pacific Islands (Republic of Palau), Republic of the Marshall Islands, Federated States of Micronesia, the Commonwealth of the Northern Mariana Islands, Guam, Samoa, Macao, Hong Kong, Fiji, Tonga, Kiribati, Tuvalu, or Nauru). ____ Subcontinent Asian (Asian-Indian) American (persons with origins from India, Pakistan, Bangladesh, Sri Lanka, Bhutan, the Maldives Islands, or Nepal). ____ Individual/concern, other than one of the preceding. (c) Definitions. As used in this provision-Service-disabled veteran-owned small business concern-(1) Means a small business concern-(i) Not less than 51 percent of which is owned by one or more service-disabled veterans or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more service-disabled veterans; and
+
+FA8224-12-T-0030 Page 20 of 31 (ii) The management and daily business operations of which are controlled by one or more service-disabled veterans or, in the case of a service-disabled veteran with permanent and severe disability, the spouse or permanent caregiver of such veteran. (2) Service-disabled veteran means a veteran, as defined in 38 U.S.C. 101(2), with a disability that is serviceconnected, as defined in 38 U.S.C. 101(16). "Small business concern," means a concern, including its affiliates, that is independently owned and operated, not dominant in the field of operation in which it is bidding on Government contracts, and qualified as a small business under the criteria in 13 CFR Part 121 and the size standard in paragraph (a) of this provision. Veteran-owned small business concern means a small business concern-(1) Not less than 51 percent of which is owned by one or more veterans (as defined at 38 U.S.C. 101(2)) or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more veterans; and (2) The management and daily business operations of which are controlled by one or more veterans. "Women-owned small business concern," means a small business concern -(1) That is at least 51 percent owned by one or more women or, in the case of any publicly owned business, at least 51 percent of the stock of which is owned by one or more women; or (2) Whose management and daily business operations are controlled by one or more women. (d) Notice. (1) If this solicitation is for supplies and has been set aside, in whole or in part, for small business concerns, then the clause in this solicitation providing notice of the set-aside contains restrictions on the source of the end items to be furnished. (2) Under 15 U.S.C. 645(d), any person who misrepresents a firm's status as a small, HUBZone small, small disadvantaged, or women-owned small business concern in order to obtain a contract to be awarded under the preference programs established pursuant to section 8(a), 8(d), 9, or 15 of the Small Business Act or any other provision of Federal law that specifically references section 8(d) for a definition of program eligibility, shall-(i) Be punished by imposition of fine, imprisonment, or both; (ii) Be subject to administrative remedies, including suspension and debarment; and (iii) Be ineligible for participation in programs conducted under the authority of the Act. (End of provision)
+
+52.219-22
+
+SMALL DISADVANTAGED BUSINESS STATUS (OCT 1999)
+
+(a) General. This provision is used to assess an offeror's small disadvantaged business status for the purpose of obtaining a benefit on this solicitation. Status as a small business and status as a small disadvantaged business for general statistical purposes is covered by the provision at FAR 52.219-1, Small Business Program Representation. (b) Representations.
+
+FA8224-12-T-0030 Page 21 of 31
+
+(1) General. The offeror represents, as part of its offer, that it is a small business under the size standard applicable to this acquisition; and either-___ (i) It has received certification by the Small Business Administration as a small disadvantaged business concern consistent with 13 CFR 124, Subpart B; and (A) No material change in disadvantaged ownership and control has occurred since its certification; (B) Where the concern is owned by one or more disadvantaged individuals, the net worth of each individual upon whom the certification is based does not exceed $750,000 after taking into account the applicable exclusions set forth at 13 CFR 124.104(c)(2); and (C) It is identified, on the date of this representation, as a certified small disadvantaged business concern in the database maintained by the Small Business Administration(PRO0Net); or ___ (ii) It has submitted a completed application to the Small Business Administration or a Private Certifier to be certified as a small disadvantaged business concern in accordance with 13 CFR 124, Subpart B, and a decision on that application is pending, and that no material change in disadvantaged ownership and control has occurred since its application was submitted. (2)___ For Joint Ventures. The offeror represents, as part of its offer, that it is a joint venture that complies with the requirements at 13 CFR 124.1002(f) and that the representation in paragraph (b)(1) of this provision is accurate for the small disadvantaged business concern that is participating in the joint venture. [The offeror shall enter the name of the small disadvantaged business concern that is participating in the joint venture: ____________.] (c) Penalties and Remedies. Anyone who misrepresents any aspects of the disadvantaged status of a concern for the purposes of securing a contract or subcontract shall: (1) Be punished by imposition of a fine, imprisonment, or both; (2) Be subject to administrative remedies, including suspension and debarment; and (3) Be ineligible for participation in programs conducted under the authority of the Small Business Act. (End of provision)
+
+52.219-28
+
+POST-AWARD SMALL BUSINESS PROGRAM REREPRESENTATION (APR 2009)
+
+(a) Definitions. As used in this clause-Long-term contract means a contract of more than five years in duration, including options. However, the term does not include contracts that exceed five years in duration because the period of performance has been extended for a cumulative period not to exceed six months under the clause at 52.217-8, Option to Extend Services, or other appropriate authority. Small business concern means a concern, including its affiliates, that is independently owned and operated, not dominant in the field of operation in which it is bidding on Government contracts, and qualified as a small business under the criteria in 13 CFR part 121 and the size standard in paragraph (c) of this clause. Such a concern is ``not dominant in its field of operation'' when it does not exercise a controlling or major influence on a national basis in a kind of business activity in which a number of business concerns are primarily engaged. In determining whether dominance exists, consideration shall be given to all appropriate factors, including volume of business, number of
+
+FA8224-12-T-0030 Page 22 of 31 employees, financial resources, competitive status or position, ownership or control of materials, processes, patents, license agreements, facilities, sales territory, and nature of business activity. (b) If the Contractor represented that it was a small business concern prior to award of this contract, the Contractor shall rerepresent its size status according to paragraph (e) of this clause or, if applicable, paragraph (g) of this clause, upon the occurrence of any of the following: (1) Within 30 days after execution of a novation agreement or within 30 days after modification of the contract to include this clause, if the novation agreement was executed prior to inclusion of this clause in the contract. (2) Within 30 days after a merger or acquisition that does not require a novation or within 30 days after modification of the contract to include this clause, if the merger or acquisition occurred prior to inclusion of this clause in the contract. (3) For long-term contracts-(i) Within 60 to 120 days prior to the end of the fifth year of the contract; and (ii) Within 60 to 120 days prior to the date specified in the contract for exercising any option thereafter. (c) The Contractor shall rerepresent its size status in accordance with the size standard in effect at the time of this rerepresentation that corresponds to the North American Industry Classification System (NAICS) code assigned to this contract. The small business size standard corresponding to this NAICS code can be found at http://www.sba.gov/services/contractingopportunities/sizestandardstopics/. (d) The small business size standard for a Contractor providing a product which it does not manufacture itself, for a contract other than a construction or service contract, is 500 employees. (e) Except as provided in paragraph (g) of this clause, the Contractor shall make the rerepresentation required by paragraph (b) of this clause by validating or updating all its representations in the Online Representations and Certifications Application and its data in the Central Contractor Registration, as necessary, to ensure that they reflect the Contractor's current status. The Contractor shall notify the contracting office in writing within the timeframes specified in paragraph (b) of this clause that the data have been validated or updated, and provide the date of the validation or update. (f) If the Contractor represented that it was other than a small business concern prior to award of this contract, the Contractor may, but is not required to, take the actions required by paragraphs (e) or (g) of this clause. (g) If the Contractor does not have representations and certifications in ORCA, or does not have a representation in ORCA for the NAICS code applicable to this contract, the Contractor is required to complete the following rerepresentation and submit it to the contracting office, along with the contract number and the date on which the rerepresentation was completed: The Contractor represents that it ( ) is, ( ) is not a small business concern under NAICS Code 511210- assigned to contract number TBA . (Contractor to sign and date and insert authorized signer's name and title). (End of clause)
+
+FA8224-12-T-0030 Page 23 of 31 52.222-18 CERTIFICATION REGARDING KNOWLEDGE OF CHILD LABOR FOR LISTED END PRODUCTS (FEBRUARY 2001) (a) Definition. Forced or indentured child labor means all work or service-(1) Exacted from any person under the age of 18 under the menace of any penalty for its nonperformance and for which the worker does not offer himself voluntarily; or (2) Performed by any person under the age of 18 pursuant to a contract the enforcement of which can be accomplished by process or penalties. (b) Listed end products. The following end product(s) being acquired under this solicitation is (are) included in the List of Products Requiring Contractor Certification as to Forced or Indentured Child Labor, identified by their country of origin. There is a reasonable basis to believe that listed endproducts from the listed countries of origin may have been mined, produced, or manufactured by forced or indentured child labor. Listed End Product ------------------------------------------------------------------------------------------------------------------------------------------Listed Countries of Origin ------------------------------------------------------------------------------------------------------------------------------------------(c) Certification. The Government will not make award to an offeror unless the offeror, by checking the appropriate block, certifies to either paragraph (c)(1) or paragraph (c)(2) of this provision. ( ) (1) The offeror will not supply any end product listed in paragraph (b) of this provision that was mined, produced, or manufactured in a corresponding country as listed for that end product. ( ) (2) The offeror may supply an end product listed in paragraph (b) of this provision that was mined, produced, or manufactured in the corresponding country as listed for that product. The offeror certifies that it has made a good faith effort to determine whether forced or indentured child labor was used to mine, produce, or manufacture such end product. On the basis of those efforts, the offeror certifies that it is not aware of any such use of child labor. (End of provision)
+
+52.222-22
+
+PREVIOUS CONTRACTS AND COMPLIANCE REPORTS (FEB 1999)
+
+The offeror represents that -(a) ( ) It has, ( ) has not participated in a previous contract or subcontract subject to the Equal Opportunity clause of this solicitation; (b) ( ) It has, ( ) has not, filed all required compliance reports; and (c) Representations indicating submission of required compliance reports, signed by proposed subcontractors, will be obtained before subcontract awards.
+
+FA8224-12-T-0030 Page 24 of 31 (End of provision)
+
+52.222-25
+
+AFFIRMATIVE ACTION COMPLIANCE (APR 1984)
+
+The offeror represents that (a) [ ] it has developed and has on file, [ ] has not developed and does not have on file, at each establishment, affirmative action programs required by the rules and regulations of the Secretary of Labor (41 CFR 60-1 and 60-2), or (b) [ ] has not previously had contracts subject to the written affirmative action programs requirement of the rules and regulations of the Secretary of Labor. (End of provision)
+
+52.225-25 Prohibition on Contracting with Entities Engaging in Sanctioned Activities Relating to Iran-Representation and Certification. (NOV 2011) (a) Definitions. As used in this provision-Person-(1) Means-(i) A natural person; (ii) A corporation, business association, partnership, society, trust, financial institution, insurer, underwriter, guarantor, and any other business organization, any other nongovernmental entity, organization, or group, and any governmental entity operating as a business enterprise; and (iii) Any successor to any entity described in paragraph (1)(ii) of this definition; and (2) Does not include a government or governmental entity that is not operating as a business enterprise. Sensitive technology-(1) Means hardware, software, telecommunications equipment, or any other technology that is to be used specifically-(i) To restrict the free flow of unbiased information in Iran; or (ii) To disrupt, monitor, or otherwise restrict speech of the people of Iran; and (2) Does not include information or informational materials the export of which the President does not have the authority to regulate or prohibit pursuant to section 203(b)(3) of the International Emergency Economic Powers Act (50 U.S.C. 1702(b)(3)). (b) The offeror shall email questions concerning sensitive technology to the Department of State at CISADA106@state.gov.
+
+FA8224-12-T-0030 Page 25 of 31 (c) Except as provided in paragraph (d) of this provision or if a waiver has been granted in accordance with 25.7034, by submission of its offer, the offeror-(1) Represents, to the best of its knowledge and belief, that the offeror does not export any sensitive technology to the government of Iran or any entities or individuals owned or controlled by, or acting on behalf or at the direction of, the government of Iran; and (2) Certifies that the offeror, or any person owned or controlled by the offeror, does not engage in any activities for which sanctions may be imposed under section 5 of the Iran Sanctions Act. These sanctioned activities are in the areas of development of the petroleum resources of Iran, production of refined petroleum products in Iran, sale and provision of refined petroleum products to Iran, and contributing to Iran's ability to acquire or develop certain weapons or technologies. (d) Exception for trade agreements. The representation requirement of paragraph (c)(1) and the certification requirement of paragraph (c)(2) of this provision do not apply if-(1) This solicitation includes a trade agreements notice or certification (e.g., 52.225-4, 52.225-6, 52.225-12, 52.22524, or comparable agency provision); and (2) The offeror has certified that all the offered products to be supplied are designated country end products or designated country construction material. (End of provision)
+
+52.233-4
+
+APPLICABLE LAW FOR BREACH OF CONTRACT CLAIM (OCT 2004)
+
+United States law will apply to resolve any claim of breach of this contract. (End of clause)
+
+52.252-1
+
+SOLICITATION PROVISIONS INCORPORATED BY REFERENCE (FEB 1998)
+
+This solicitation incorporates one or more solicitation provisions by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. The offeror is cautioned that the listed provisions may include blocks that must be completed by the offeror and submitted with its quotation or offer. In lieu of submitting the full text of those provisions, the offeror may identify the provision by paragraph identifier and provide the appropriate information with its quotation or offer. Also, the full text of a solicitation provision may be accessed electronically at this/these address(es): http://farsite.hill.af.mil/VFFARA.HTM http://farsite.hill.af.mil/VFDFARA.HTM http://farsite.hill.af.mil/vfafmca.htm http://farsite.hill.af.mil/vfaffara.htm (End of provision
+
+52.252-2
+
+CLAUSES INCORPORATED BY REFERENCE (FEB 1998)
+
+FA8224-12-T-0030 Page 26 of 31
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at this/these address(es): http://farsite.hill.af.mil/VFFARA.HTM http://farsite.hill.af.mil/VFDFARA.HTM http://farsite.hill.af.mil/vfafmca.htm http://farsite.hill.af.mil/vfaffara.htm (End of clause)
+
+52.252-5
+
+AUTHORIZED DEVIATIONS IN PROVISIONS (APR 1984)
+
+(a) The use in this solicitation of any Federal Acquisition Regulation (48 CFR Chapter 1) provision with an authorized deviation is indicated by the addition of"(DEVIATION)" after the date of the provision. (b) The use in this solicitation of any DEFENSE FEDERAL ACQUISITION REGULATION (48 CFR Chapter 2 ) provision with an authorized deviation is indicated by the addition of "(DEVIATION)" after the name of the regulation.(End of provision)
+
+52.252-6
+
+AUTHORIZED DEVIATIONS IN CLAUSES (APR 1984)
+
+(a) The use in this solicitation or contract of any Federal Acquisition Regulation (48 CFR Chapter 1) clause with an authorized deviation is indicated by the addition of "(DEVIATION)" after the date of the clause. (b) The use in this solicitation or contract of any Defense Federal Acquisition Requisition Supplement (48 CFR Chapter 2 clause with an authorized deviation is indicated by the addition of "(DEVIATION)" after the name of the regulation. (End of clause)
+
+252.203-7005 REPRESENTATION RELATING TO COMPENSATION OF FORMER DOD OFFICIALS (NOV 2011) (a) Definition. Covered DoD official is defined in the clause at 252.203-7000, Requirements Relating to Compensation of Former DoD Officials. (b) By submission of this offer, the offeror represents, to the best of its knowledge and belief, that all covered DoD officials employed by or otherwise receiving compensation from the offeror, and who are expected to undertake activities on behalf of the offeror for any resulting contract, are presently in compliance with all post-employment restrictions covered by 18 U.S.C. 207, 41 U.S.C. 2101-2107, and 5 CFR parts 2637 and 2641, including Federal Acquisition Regulation 3.104-2. (End of provision)
+
+FA8224-12-T-0030 Page 27 of 31
+
+252.204-7006 BILLING INSTRUCTIONS (OCT 2005) When submitting a request for payment, the Contractor shall-(a) Identify the contract line item(s) on the payment request that reasonably reflect contract work performance; and (b) Separately identify a payment amount for each contract line item included in the payment request. (End of clause)
+
+252.204-7008
+
+EXPORT-CONTROLLED ITEMS (APR 2010)
+
+(a) Definition. Export-controlled items, as used in this clause, means items subject to the Export Administration Regulations (EAR) (15 CFR parts 730-774) or the International Traffic in Arms Regulations (ITAR) (22 CFR parts 120-130). The term includes: (1) Defense items, defined in the Arms Export Control Act, 22 U.S.C. 2778(j)(4)(A), as defense articles, defense services, and related technical data, and further defined in the ITAR, 22 CFR part 120. (2) Items, defined in the EAR as ``commodities, software, and technology,'' terms that are also defined in the EAR, 15 CFR 772.1. (b) The Contractor shall comply with all applicable laws and regulations regarding export-controlled items, including, but not limited to, the requirement for Contractors to register with the Department of State in accordance with the ITAR. The Contractor shall consult with the Department of State regarding any questions relating to compliance with the ITAR and shall consult with the Department of Commerce regarding any questions relating to compliance with the EAR. (c) The Contractor's responsibility to comply with all applicable laws and regulations regarding export-controlled items exists independent of, and is not established or limited by, the information provided by this clause. (d) Nothing in the terms of this contract adds to, changes, supersedes, or waives any of the requirements of applicable Federal laws, Executive orders, and regulations, including but not limited to-(1) The Export Administration Act of 1979, as amended (50 U.S.C. App. 2401, et seq.); (2) The Arms Export Control Act (22 U.S.C. 2751, et seq.); (3) The International Emergency Economic Powers Act (50 U.S.C. 1701, et seq.); (4) The Export Administration Regulations (15 CFR parts 730-774); (5) The International Traffic in Arms Regulations (22 CFR parts 120-130); and (6) Executive Order 13222, as extended. (e) The Contractor shall include the substance of this clause, including this paragraph (e), in all subcontracts. (End of clause)
+
+FA8224-12-T-0030 Page 28 of 31
+
+252.204-7011 ALTERNATIVE LINE-ITEM STRUCTURE (SEP 2011) (a) Line items are the basic structural elements in a solicitation or contract that provide for the organization of contract requirements to facilitate pricing, delivery, inspection, acceptance and payment. Line items are organized into contract line items, subline items, and exhibit line items. Separate line items should be established to account for separate pricing, identification (see section 211.274 of the Defense Federal Acquisition Regulation Supplement), deliveries, or funding. The Government recognizes that the line item structure in this solicitation may not conform to every offeror's practices. Failure to correct these issues can result in difficulties in accounting for deliveries and processing payments. Therefore, offerors are invited to propose an alternative line item structure for items on which bids, proposals, or quotes are requested in this solicitation to ensure that the resulting contract structure is economically and administratively advantageous to the Government and the Contractor. (b) If an alternative line item structure is proposed, the structure must be consistent with subpart 204.71 of the Defense Federal Acquisition Regulation Supplement and PGI 204.71. A sample solicitation line-item structure and a corresponding offer of a proposed alternative line-item structure follow. Solicitation: ---------------------------------------------------------------------------------------------------------------Item No. Supplies/Service Quantity Unit Unit price Amount ---------------------------------------------------------------------------------------------------------------0001............................ Computer, Desktop with 20 EA ............ ........... CPU, Monitor, Keyboard and Mouse. ---------------------------------------------------------------------------------------------------------------Alternative line-item structure offer where monitors are shipped separately:
+
+---------------------------------------------------------------------------------------------------------------Item No. Supplies/Service Quantity Unit Unit Price Amount ---------------------------------------------------------------------------------------------------------------0001............................ Computer, Desktop with 20 EA ............ ........... CPU, Keyboard and Mouse. 0002............................ Monitor................. 20 EA ............ ........... ---------------------------------------------------------------------------------------------------------------(End of provision)
+
+252.209-7999 REPRESENTATION BY CORPORATIONS REGARDING AN UNPAID DELINQUENT TAX LIABILITY OR A FELONY CONVICTION UNDER ANY FEDERAL LAW (DEVIATION 2012-O0004) (JAN 2012) (a) In accordance with sections 8124 and 8125 of Division A of the Consolidated Appropriations Act, 2012,(Pub. L. 112-74) none of the funds made available by that Act may be used to enter into a contract with any corporation that--
+
+FA8224-12-T-0030 Page 29 of 31 (1) Has any unpaid Federal tax liability that has been assessed, for which all judicial and administrative remedies have been exhausted or have lapsed, and that is not being paid in a timely manner pursuant to an agreement with the authority responsible for collecting the tax liability, where the awarding agency is aware of the unpaid tax liability, unless the agency has considered suspension or debarment of the corporation and made a determination that this further action is not necessary to protect the interests of the Government. (2) Was convicted of a felony criminal violation under any Federal law within the preceding 24 months, where the awarding agency is aware of the conviction, unless the agency has considered suspension or debarment of the corporation and made a determination that this action is not necessary to protect the interests of the Government. (b) The Offeror represents that-- (1) It is [ ___ ] is not [ ___ ] a corporation that has any unpaid Federal tax liability that has been assessed, for which all judicial and administrative remedies have been exhausted or have lapsed, and that is not being paid in a timely manner pursuant to an agreement with the authority responsible for collecting the tax liability, (2) It is [ ___ ] is not [ ___ ] a corporation that was convicted of a felony criminal violation under a Federal law within the preceding 24 months. (End of provision)
+
+252.247-7023
+
+TRANSPORTATION OF SUPPLIES BY SEA (MAY 2002) ALTERNATE III (MAY 2002)
+
+(a) Definitions. As used in this clause -(1) "Components" means articles, materials, and supplies incorporated directly into end products at any level of manufacture, fabrication, or assembly by the Contractor or any subcontractor. (2) "Department of Defense" (DoD) means the Army, Navy, Air Force, Marine Corps, and defense agencies. (3) "Foreign flag vessel" means any vessel that is not a U.S.-flag vessel. (4) "Ocean transportation" means any transportation aboard a ship, vessel, boat, barge, or ferry through international waters. (5) "Subcontractor" means a supplier, materialman, distributor, or vendor at any level below the prime contractor whose contractual obligation to perform results from, or is conditioned upon, award of the prime contract and who is performing any part of the work or other requirement of the prime contract. (6) "Supplies" means all property, except land and interests in land, that is clearly identifiable for eventual use by or owned by the DoD at the time of transportation by sea. (i) An item is clearly identifiable for eventual use by the DoD if, for example, the contract documentation contains a reference to a DoD contract number or a military destination. (ii) "Supplies" includes (but is not limited to) public works; buildings and facilities; ships; floating equipment and vessels of every character, type, and description, with parts, subassemblies, accessories, and equipment; machine tools; material; equipment; stores of all kinds; end items; construction materials; and components of the foregoing. (7) "U.S.-flag vessel" means a vessel of the United States or belonging to the United States, including any vessel registered or having national status under the laws of the United States.
+
+FA8224-12-T-0030 Page 30 of 31 (b)(1) The Contractor shall use U.S.-flag vessels when transporting any supplies by sea under this contract. (2) A subcontractor transporting supplies by sea under this contract shall use U.S.-flag vessels if-(i) This contract is a construction contract; or (ii) The supplies being transported are-(A) Noncommercial items; or (B) Commercial items that-(1) The Contractor is reselling or distributing to the Government without adding value (generally, the Contractor does not add value to items that it contracts for f.o.b. destination shipment); (2) Are shipped in direct support of U.S. military contingency operations, exercises, or forces deployed in humanitarian or peacekeeping operations; or (3) Are commissary or exchange cargoes transported outside of the Defense Transportation System in accordance with 10 U.S.C. 2643. (c) The Contractor and its subcontractors may request that the Contracting Officer authorize shipment in foreign-flag vessels, or designate available U.S.-flag vessels, if the Contractor or a subcontractor believes that -(1) U.S.-flag vessels are not available for timely shipment; (2) The freight charges are inordinately excessive or unreasonable; or (3) Freight charges are higher than charges to private persons for transportation of like goods. (d) The Contractor must submit any request for use of other than U.S.-flag vessels in writing to the Contracting Officer at least 45 days prior to the sailing date necessary to meet its delivery schedules. The Contracting Officer will process requests submitted after such date(s) as expeditiously as possible, but the Contracting Officer's failure to grant approvals to meet the shipper's sailing date will not of itself constitute a compensable delay under this or any other clause of this contract. Requests shall contain at a minimum -(1) Type, weight, and cube of cargo; (2) Required shipping date; (3) Special handling and discharge requirements; (4) Loading and discharge points; (5) Name of shipper and consignee; (6) Prime contract number; and (7) A documented description of efforts made to secure U.S.-flag vessels, including points of contact (with names and telephone numbers) with at least two U.S.-flag carriers contacted. Copies of telephone notes, telegraphic and facsimile message or letters will be sufficient for this purpose. (e) The Contractor shall, within 30 days after each shipment covered by this clause, provide the Contracting Officer and the Maritime Administration, Office of Cargo Preference, U.S. Department of Transportation, 400 Seventh
+
+FA8224-12-T-0030 Page 31 of 31 Street SW., Washington, DC 20590, one copy of the rated on board vessel operating carrier's ocean bill of lading, which shall contain the following information: (1) Prime contract number; (2) Name of vessel; (3) Vessel flag of registry; (4) Date of loading; (5) Port of loading; (6) Port of final discharge; (7) Description of commodity; (8) Gross weight in pounds and cubic feet if available; (9) Total ocean freight in U.S. dollars; and (10) Name of the steamship company. (f) The Contractor shall insert the substance of this clause, including this paragraph (f), in subcontracts that are for a type of supplies described in paragraph (b)(2) of this clause. (End of clause)
+
+

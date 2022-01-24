@@ -1,0 +1,2693 @@
+
+
+Computer Simulation Development and Training Support 
+
+Statement of Work
+
+
+
+
+
+Table of Contents
+
+
+
+Glossary	2
+
+1	General Information	3
+
+1.1   General Contract Statement	3
+
+1.2	BACKGROUND/HISTORY	3
+
+1.2.1 Concept of Operations	5
+
+1.2.1a Crime scene training simulation	5
+
+1.2.1b TACSIM (JSS)	7
+
+1.2.1c VIRTSIM	7
+
+1.3	 Scope of Work	8
+
+1.3.1 Overall Performance Objective	8
+
+1.3.2   Requirements for Services to be provided:	9
+
+2 	ADMINISTRATIVE Requirements	16
+
+2.1  	Contract Program Controls	17
+
+2.1.1	PROGRAM Management	17
+
+2.1.2	Contractor Security Program	17
+
+2.2	Contract Personnel Requirements	17
+
+3	Tasks/Deliverables	19
+
+3.1	Management	19
+
+3.1.2	Project Planning	19
+
+4 	Travel/Contractor Training	20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Glossary
+
+
+
+
+
+
+1   General Information
+
+This Performance-based Statement of Work (SOW) defines the types of work to be performed in association with the design and development of training simulation software and 3D art asset development, and operational support of training simulation activities at the .  Section 1 contains general information and overview of the work. Section 2 contains administrative requirements, including personnel security requirements.  Section 3 describes how the project plan will be developed and evolve over the lifetime of the project.  Section 4 describes local and non-local travel that will be required to complete the project.
+
+1.1   General Contract Statement
+
+This SOW describes the work to be performed, the deliverables to be provided by the contractor, and the performance measures to be used for acceptance of the work and deliverables.  
+
+1.2	BACKGROUND/HISTORY
+
+This section describes the background and provides an overview of the type of work that will be performed under this statement of work.  It describes three major programs that will be supported: 
+
+Development of a crime scene training simulation.
+
+Support and development for an arrest planning simulation.
+
+Support and development for an immersive virtual reality tactical simulation.
+
+
+
+Approximately 85% of the contractor's personnel time will be dedicated to Program 1, development of a crime scene training simulation.  The other 15% will be divided between the other two programs (subject to change, and based on funding).
+
+
+
+Program 1, Crime Scene Training:
+
+The personnel of the FBI Laboratory Division provide initial and advanced specialized law enforcement training to Special Agents and to state and local law enforcement personnel.  This training consists of both traditional classroom instruction and practical exercises in real-world and controlled-environment settings.  One of the goals of this training program is to prepare law enforcement officers to properly manage a crime scene and recover physical evidence in a safe manner that will best preserve the evidence, permit forensic analysis in a laboratory, and be admissible in court. 
+
+
+
+The training program currently in place consists of classroom instruction (lecture) followed by practical exercises in a mock crime scene in which students must put into practice all the techniques they learned in order to successfully find, document and recover all the physical evidence that is present in the scenario.  The mock crime scene practical exercise is an extremely important tool for students to learn crime scene management and evidence recovery techniques. Due to the time and effort required to set up a mock crime scene and the number of instructor hours that must be devoted to monitoring the practical exercise, there are limited opportunities for students to practice in this way.
+
+
+
+The Laboratory Division and FBI Training Division wish to implement a new type of training tool to enhance the students’ performance through better classroom demonstrations and richer, measurable feedback on students’ performance.  The new tool will use commercially-available gaming technology, specifically Unreal Engine 3 (which is already licensed by the Government) to provide students with both a single-user and a multi-user networked environment to practice crime scene management and evidence recovery skills, and provide automatic recording, scoring and feedback on students’ actions.  The new training tool will essentially allow students to get close to the same experience as the mock crime scene provides, but at any time and place – allowing the students to review and practice any time they need refresher training.  The new training tool will not replace any of the current mock crime scene training; it will be used to supplement and enhance that training.
+
+
+
+The new software tool will also be widely distributed and made available to law enforcement personnel at city, state and tribal law enforcement agencies so that many first responders will have the opportunity to learn and practice crime scene management, who may not otherwise have had a chance to attend a specialized training class. 
+
+
+
+The FBI Training Division has successfully applied simulation and 3D visualization technology to law enforcement training with success in the past.  It is the intent of the FBI Training Division to design and develop the software for this project using a team consisting of two FBI employees (software developers) and six on-site contractor personnel (3 software engineers and 3 artists) who will work in FBI space (at Hogan's Alley, FBI Academy, Quantico, Virginia) using FBI-provided equipment/resources, and report directly to the FBI team lead on a daily basis.  
+
+
+
+Program 2, TACSIM Program (using JSS software):
+
+The FBI Training Division currently uses computer-based simulation to teach New Agent Trainees skills related to planning and conducting a high-risk arrest of an Armed and Dangerous fugitive in an urban environment (TACSIM - Tactical Simulation).  Approximately once every two weeks (depending on the schedule of the New Agent Training classes), instructors from the Practical Applications Unit and technical personnel from the Simulation Team conduct one full day of training with New Agent Trainees (divided into four 2-hour blocks of instruction).  The technical personnel are responsible for setting up the computers for operation, helping the trainees learn how to use the Xbox 360 controller and keyboard to interact with the system, hosting the multi-user sessions, and playing the roles of the fugitive and other related subjects in the simulation.  It is the intent of the Training Division to supplement the FBI technical personnel with contractor support to help run this simulation training for New Agent Trainees.
+
+
+
+The simulation software used to run the TACSIM training program (the software is called "JSS" for Judgmental Shooting Simulator) allows technical personnel to modify, customize and add to the scenarios through scripting, control input mapping changes and complete level design / import of 3D art assets.  Personnel working under this contract will design and develop new content and improvements to the JSS program and scenarios that will be used as part of the TACSIM training.  Since the same personnel will be helping to run the TACSIM training days, it is anticipated that they will be in an excellent position to identify needed improvements, develop those improvements, and evaluate the impact of the changes on the training value of the program.
+
+
+
+Program 3, VIRTSIM:
+
+The Training Division is currently building new space to house a fully immersive virtual reality training system (known as VIRTSIM) to enhance the New Agent Training curriculum.  Completion of the facility is estimated at August 2011 at the time of this writing.  Acquisition of the technical equipment has already been completed. When the facility is ready, the VIRTSIM system is expected to be integrated into the New Agent Training curriculum in a similar fashion to TACSIM (one day of training broken into four 2-hour blocks of instruction occurring approximately once every two weeks).  Technical personnel will be needed both to operate/maintain the VIRTSIM equipment and to develop new 3D environments and scenarios for VIRTSIM.  Details of the work required of the contractor to support this program are included below in the requirements section. More information about VIRTSIM can be found at the manufacturer's web site: http://forcesimulation.motionrealityinc.com/ 
+
+
+
+
+
+
+
+1.2.1 Concept of Operations
+
+This section describes how the Software Development Engineering Team (hereafter known as the “development team”) and the 3D Art Development Team (hereafter known as the "art team") will be integrated into the overall development and support efforts for these projects.
+
+
+
+All personnel under this contract will work directly with FBI software developers and the FBI program manager, in FBI studio space.  It is not the intention of the FBI to award a contract for a company to build a simulation to contract specifications, because it is not possible to clearly know and describe ahead of time exactly how the simulation should be built.  Rather, it is an iterative process of prototyping, user testing and rapid refinement of design over time that will most likely result in a successful finished product.
+
+
+
+1.2.1a Crime scene training simulation
+
+	The interactive crime scene training product will be developed iteratively.  That is, in each phase of the project, a simple, clearly defined goal with a short deadline will be identified and worked on.  For example, the first goal may be to implement a small, standalone scene consisting of just the interior of a three-room hotel suite with some furniture that allows students to practice applying powder to develop latent fingerprints.  As soon as that small goal has been met, law enforcement students will test the software and provide feedback about its usability.  That feedback will directly drive the next iteration of design and development.  Although the project will start with a detailed design and storyboards, the design will likely change several times as users provide feedback about the product.  This may involve changes to the 3D art assets or programming changes or both.
+
+
+
+	FBI Simulation Team personnel have already begun working on prototypes (using Unity 3D to quickly develop ideas into working software).  Prototypes will be tested with users from the FBI's National Academy for state, local and international law enforcement officers and with subject matter experts in crime scene investigation from the FBI and Fairfax County Police Department.
+
+
+
+	At the beginning of the project, the FBI development team will train the art team and the development team on the fundamental skills and techniques of crime scene management. That training will be useful for the team to develop an understanding of the type of interactivity and user interfaces that are best suited to instructing students in forensic techniques.
+
+
+
+	The project development is scheduled to take two to three years, with software development continuing throughout the entire period of time.  The FBI development team has already started developing prototypes and paper designs, and has conducted initial design meetings with subject matter experts in crime scene investigation and instruction. 
+
+
+
+	Several different crime scenes will be created digitally in the development of this simulation.  The first crime scene will be in a hotel room and involve the hotel and surrounding area (including parking lot with cars).  It is anticipated that most of the difficult software engineering tasks will be tackled near the beginning of the project, and will consist of establishing the user interfaces, establishing a working set of multiplayer network code, implementing specialized shaders and techniques for viewing the scene under alternate light sources (ALS) and reflected ultraviolet light imaging systems (RUVIS).  Another early challenge will be to develop tools and procedures for the art development team to use as they begin to produce the 3D models and textures for the scenes.
+
+
+
+	The FBI team lead will provide the development team with specific programming assignments, guidance and deadlines as appropriate.  The FBI team will also count on the development team to suggest new ideas for user interfaces and assist with the design of the overall product.  Development activities will be organized within an "Agile" development framework using scrum, with some modifications as necessary to adapt for the needs of the team and the project.
+
+
+
+	Because it is important for the FBI software developers and the development team to work closely together on the same code base with shared storage and a version control system, the development team and art team will be required to work together on site at the FBI Academy.  The facilities, office furniture, computers, software and network will be provided by the FBI. The FBI development team is located on the Quantico Marine Corps Base in Virginia.   It is important to note that only those quotations that describe the place of work to be at the FBI Academy will be considered.
+
+
+
+	The FBI will license and provide a sufficient number of seats for the Unreal Engine 3 development environment, Scaleform GFX and Illuminate Labs Beast, as well as Visual Studio 2010, 3ds Max 2011, MotionBuilder and other required software.
+
+
+
+1.2.1b TACSIM (JSS)
+
+	The Contractor will support TACSIM training days by facilitating the actual training with New Agent Trainees and by designing and developing new scenarios and improvements to the JSS program.  
+
+
+
+	The office / working space that will be used by the development team and art team also serves as the simulation classroom for New Agent Trainees to use JSS on TACSIM training days.  The training dates occur approximately once every two weeks, according to the schedule of the training classes (it should not ever be more than 23 days per fiscal year and will usually be less than that).  On the days when TACSIM training is scheduled, two or three personnel will be assigned to help run the training by setting up hosted sessions, troubleshooting technical problems on the fly, assisting trainees with the controls, and playing the roles of fugitives / other subjects in the simulated scenarios.  When VIRTSIM is completed, two or three personnel will be required to support that system.  Until that time, the remaining personnel may either assist with TACSIM or develop art assets / scenarios / improvements to JSS while the class is underway.
+
+
+
+	In addition to directly supporting training days and developing new content for JSS, contractor personnel may also be required to perform some classroom computer administration tasks (such as installing new software, troubleshooting hardware problems, troubleshooting network connectivity problems, etc.)  The classroom is already set up and has been stable with little need of administration so far, so it is not anticipated that IT admin tasks will take up much of the Contractor's time.
+
+
+
+	JSS allows new buildings, terrains, sounds, scripts, characters, animations, etc. to be developed and imported for use in training scenarios.  The Contractor will assist FBI personnel in identifying needs for improvements, modifications or additional new scenarios to be developed and will be responsible for developing and testing those new assets for the classroom.
+
+
+
+NOTE: When VIRTSIM is operational, TACSIM and VIRTSIM will both happen on the same day (New Agent Trainees rotate between TACSIM, VIRTSIM and a physical surveillance practical).
+
+
+
+1.2.1c VIRTSIM
+
+	The Contractor will be responsible for both operational support (running the system) and development of new art assets and scenarios for VIRTSIM once it is operational. 
+
+
+
+	Running the VIRTSIM system involves initializing computer programs on several machines, helping to get trainees outfitted with computers, displays, optical markers, etc. and keeping batteries for trainee systems on a cycle of charging to be ready for the next group.  As each session starts, technical personnel must assist with calibrating the system for each trainee ("measurement" phase) and loading different scenarios at the request of the tactical instructors who are teaching at that time.  After scenarios are finished, technical personnel may be required to help the tactical instructor play back the recorded actions of the trainees using the After Action Review (AAR) capability of the system.
+
+
+
+	Developing content for the VIRTSIM system involves interacting with tactical instructors and observing class sessions to determine gaps in the training provided by the current system capabilities and scenarios.  Once needs have been identified, new content (environmental/character art assets, animations, sound effects, scenarios, etc.) will need to be developed.  VIRTSIM uses the Torque game engine as a base, so developing for VIRTSIM should be similar to developing for Torque.
+
+
+
+
+
+1.3	 Scope of Work
+
+The following sections describe in detail the scope of work covered under the terms of this contract.  The Contractor is responsible for fulfilling all requirements listed under the scope of work.  Wherever possible, details of acceptance testing for objectives are clearly stated to avoid confusion.
+
+1.3.1 Overall Performance Objective
+
+The overall performance objective describes the main objective that the service provided must achieve to be considered acceptable.  All other requirements and specifications are derived from and support this overall performance objective.  This objective defines the method for determining whether the services provided are worth the government’s investment of taxpayer dollars or not.
+
+Objective 1:  Clear progress (according to a schedule designed and revised by the FBI and Contractor personnel) must be made toward the development of the interactive crime scene training simulation.
+
+Objective Measurement: A reasonable schedule of feature development will be created and frequently updated jointly by FBI and Contractor personnel.  The schedule will specify dates for certain features to be complete.  To meet this objective, Contractor personnel must meet the dates specified in the schedule (tasks should be delivered no later than the schedule date + 10% of the scheduled length of that task).  TACSIM / VIRTSIM training days are NOT counted as work days in the schedule of development for crime scene training.
+
+Objective 2: TACSIM and VIRTSIM training days will be fully supported so that tactical instructors only have to be responsible for instruction and class logistics, and do not have to worry about technical details or troubleshooting system malfunctions.
+
+Objective Measurement: Tactical instructors in the Practical Applications Unit will be periodically surveyed to determine whether their classes are positively or negatively affected by the technical support provided under this contract.  Any identified deficiencies must be immediately addressed and remedied by the Contractor.
+
+1.3.2   Requirements for Services to be provided:
+
+1.3.2.1 Requirement
+
+	Requirement: The Contractor shall integrate the Scaleform GFx middleware with the Unreal Engine 3 code.
+
+	Reasoning: Scaleform GFx allows developers and artists to create interactive graphical user interfaces (GUI’s) in the Flash development environment using ActionScript 2, and integrate those GUI assets with the 3D user experience.  GFx is an integrated partner with Unreal Engine 3, but actually integrating the code will require some minor software engineering work.  The FBI has already licensed and obtained the GFx SDK for this project.  
+
+	Testing: After the GFx SDK has been integrated with the Unreal Engine 3 code by the contractor, the FBI team will create a user interface in Flash that calls a C++ native function from ActionScript and verify that it works properly with an Unreal Engine 3 scene.
+
+
+
+1.3.2.2 Requirement
+
+	Requirement: The Contractor shall integrate the BINK video middleware with the Unreal Engine 3 code to play video files.
+
+	Reasoning: BINK allows high quality videos to be played inside a 3D game engine.  The design of the interactive training simulation calls for videos that demonstrate proper techniques to be played at the user’s command.  The videos will be played in a rectangular video window on top of the 3D graphics, not necessarily rendered onto textures within the 3D scene. The FBI has already licensed and obtained the BINK SDK for this project.  Some software engineering work will be necessary to integrate the BINK code into the Unreal Engine 3 code.
+
+	Testing: The FBI team will compress a standard definition (640 x 480 pixels) and a high definition (1280 x 720 pixels) video file with the BINK video tools.  The FBI team will create a user interaction in a 3D scene using the UE3 tools that will play back a video on user input.  The FBI will verify that both of the video files play back properly in the 3D scene. 
+
+
+
+1.3.2.3 Requirement
+
+	Requirement: The Contractor shall integrate the BEAST Global Illumination middleware product with the Unreal Engine 3 code.
+
+	Reasoning: The design of the simulation calls for high quality lighting and shadows in the finished product, as well as some advanced lighting / visual effects that will allow the user to view the scene under alternate light sources (causing biological fluids to fluoresce) and reflected ultraviolet light (revealing latent prints on smooth surfaces).  The BEAST code from Illuminate Labs provides advanced global illumination simulation, baking lights into a scene, and other advanced lighting techniques.  The FBI has already licensed and obtained BEAST for this project.  Some software engineering work will be necessary to integrate the code with the Unreal Engine 3 code.
+
+	Testing: The FBI will set up a scene using the BEAST tools to create lights, emissive materials and transparent objects and will verify that the scene renders correctly.  
+
+1.3.2.4 Requirement
+
+Requirement: The Contractor shall supply the FBI with résumé with references for the proposed software engineering personnel, and the software engineering personnel must pass a practical knowledge and skills test to demonstrate relevant technical competence for this project prior to final selection.  
+
+	Reasoning: FBI personnel need to be assured that Contractor personnel have the appropriate skills needed to support the objectives of the projects described in this document.
+
+	Testing: The FBI team lead and development team will confirm that the proposed individuals have the necessary experience and contact references if necessary. Prior to final selection, all software engineering personnel will be required to pass a practical test demonstrating proficiency in relevant software engineering and programming skills.  The test will be conducted at the FBI Academy site by FBI personnel.  During testing, software engineering personnel must demonstrate that they can design algorithms, write code, debug errors and accomplish given tasks proficiently in Unreal Development Kit (UDK) or Unity 3D.  If the contractor needs to make any personnel substitutions after testing is complete, the government will require the new personnel to pass the same or similar test before acceptance.
+
+
+
+1.3.2.5 Requirement
+
+	Requirement: The Contractor shall adhere to good software engineering practices and coding standards for developing software as a team. At a minimum, this requires that software engineers comment all code, adhere to class, method and property naming conventions as agreed to by the group, check for and trap exceptions, and log detailed information about all crashing bugs.  Other requirements will be decided upon by the team and documented as appropriate.
+
+	Reasoning: Software developed by one engineer will likely have to be updated or fixed by another engineer.  The only way this is possible is if every software engineer follows best practices for file naming conventions, folder hierarchies, class naming conventions, commenting, etc.
+
+	Testing: Standards will be agreed upon by the team (final approval authority rests with the FBI team lead) and will be checked and enforced by peer reviews of code.
+
+
+
+
+
+1.3.2.6 Requirement
+
+	Requirement: The Contractor shall develop paper designs and usable prototypes and conduct frequent user tests to ensure that ideas for features and user interfaces work as expected to produce the desired training outcome.
+
+	Reasoning: The key to good game design or game-based training design is to prototype and test often with a wide variety of users.  To neglect this aspect is to risk wasting work time developing the wrong thing.
+
+	Testing: Prototyping and user testing will be built into the schedule.  The FBI team lead will ensure that there are sufficient days allocated to testing and sufficient days planned for revisions based on the outcome of user tests.
+
+
+
+1.3.2.7 Requirement
+
+	Requirement: The Contractor shall maintain appropriate records of the billable hours and expenditures of the development team and submit proper invoices in a timely manner.  Contractor’s administrative personnel will be assigned as needed to complete required reports and submit documentation.  The Contractor shall separately track hours of labor on the Crime Scene Simulation, and VIRTSIM / JSS support and bill these hours separately.
+
+	Reasoning: The development of the Crime Scene Simulation is being funded through an interagency agreement with another government agency, while the VIRTSIM And JSS work is being funded directly by the FBI.  It is necessary to bill work on these projects separately so that they can be paid out of the correct sources of funding. 
+
+	Testing: The FBI Contracting Officer (CO) and/or Contracting Officer Technical Representative (COTR) will provide detailed invoicing and reporting instructions to the Contractor, and will ensure that proper invoices and required reports are received on time.
+
+
+
+1.3.2.8 Requirement
+
+	Requirement: The Contractor shall create 2D art for Graphical User Interfaces (GUI’s) using Adobe Flash and ActionScript 2.0 for Scaleform GFx.  Source files (.fla) including all image/audio files contained in the Flash file’s “Library” and compiled files (.swf) shall be delivered to the FBI by the Contractor as they are completed.
+
+	Reasoning: Part of the design for the interactive crime scene training simulation calls for highly interactive graphical user interfaces that allow the user to interact with the simulation.  The FBI has licensed Scaleform GFx, which allows artists and developers to create GUI’s in Adobe Flash, script interactivity with ActionScript 2.0, call native functions in the game/simulation through ExternalInterface in AS2, and run in an embedded flash player within the game/simulation program.  The art team will need to create 2D vector and raster artwork and possibly create some minimal ActionScript code, although any major programming will be handled by the FBI development team.  For each GUI to be developed, the FBI team lead and the art team lead will decide who will write the ActionScript code.  The FBI needs to have the source files so that minor changes to the GUI can be made by the FBI team without having to send a request back to the artist.
+
+	Testing: For each GUI created by the art team, the FBI team lead will verify that the GUI works as designed when integrated into the rest of the project and will verify that the source files (.fla) including all files contained in the library are received.
+
+
+
+
+
+1.3.2.9 Requirement
+
+	Requirement: The Contractor shall assist the FBI team with the overall design, user interface design, and usability testing of the interactive crime scene training simulation.
+
+	Reasoning: Although primary responsibility for the design of the simulation product lies with the FBI, it is anticipated that the art team personnel will have excellent input and new ideas that could substantially improve the design and usability of the finished product.  Art team personnel will be expected to participate in occasional brainstorming and design meetings (to be held at the art team’s work site) and to suggest ideas to the FBI development team for improving the user interface or overall design of the product via email message, wiki document or in person.  Occasionally, the art team personnel will be expected to test the general usability of the product as it is being developed and report any bugs or points of confusion in the product.
+
+	No testing required
+
+
+
+1.3.2.10 Requirement
+
+	Requirement: The Contractor shall provide two or three (at government's option) full-time (40 hr/week) 3D digital artists who have at least the appropriate level of experience (listed in section 2.2 Contract Personnel Requirements) creating and animating characters, vehicles, buildings, props and 2D textures for use in real-time game engines such as Unreal Engine 3, using 3ds Max.  Artists must have experience must be using Unreal Engine and its material editor or a similar 3D game engine.  Contractor shall quote cost for each artist separately and at government's option, based on budget, either two or three artists will be selected. 
+
+	Reasoning: Some of the most difficult art work in this project will be creating characters to represent the instructor, police officers, the players and other human beings in the scenarios.  There will be a significant amount of animation work needed for walk cycles, evidence packaging, dusting for fingerprints, etc. as well as many voice recordings that will require lip-synch and facial animation.  Stand-in models and animations must be created quickly to allow for early prototyping, and then refined over the course of the project to be of high visual quality while maintaining polygon count and texture budgets.  Many vehicles will also need to be modeled for users to practice vehicle search techniques on.  Both of these modeling tasks require experienced artists.
+
+	Testing: The Contractor shall supply the FBI with résumés and demo reels (work samples) with references for each of the experienced artists who will be assigned to develop characters and vehicles, environments and props.  The FBI team lead and development team will confirm that the proposed individuals have the necessary experience and contact references if necessary.  Prior to final selection, all artist personnel will be required to pass a practical test demonstrating proficiency in developing art assets using 3ds Max 2011 and UDK.  The test will be conducted at the FBI Academy site by FBI personnel. If the contractor needs to make any personnel substitutions after testing is complete, the government will require the new personnel to pass the same or similar test before acceptance.
+
+
+
+
+
+1.3.2.11 Requirement
+
+No longer required
+
+
+
+1.3.2.12 Requirement
+
+No longer required
+
+
+
+1.3.2.13 Requirement
+
+	Requirement: The Contractor shall upload all art asset files (including DCC source files, original texture files and compiled game-ready files) to the Wiki or other secure file-sharing system provided by the Contractor in file formats and with organization as agreed to by the FBI team lead and the art team lead.
+
+	Reasoning: As the art team creates and updates art assets, the FBI development team must be able to download these files and integrate them into the project.  The Wiki server may be used to organize and store files, or another system (e.g. secure ftp, Perforce, AlienBrain, etc.) may be used for this purpose.  Authenticated user access is required to keep unauthorized individuals on the Internet from modifying or deleting project files.
+
+	Testing: The FBI development team will verify that the system implemented by the Contractor works properly to search, find and download art asset files.  The Contractor will upload art assets by the first deadline agreed to, and notify the FBI team lead that the files are available.  The FBI development team will download the files and verify they work properly.
+
+
+
+1.3.2.14 Requirement
+
+	Requirement: The Contractor shall design and implement a system of organization that provides easy access to all the files needed to support a given art asset or software development asset.
+
+	Reasoning: When a level designer needs to place an art asset into a scene, for example, a coffee table, it is necessary for the designer to make use of multiple files: a file that defines the geometry (vertices and faces), one or more files defining texture and other image maps, possibly an animation file, and possibly some extended information files specifying materials or fingerprint locations.  With thousands of files in a project, it can be difficult to locate all the correct files needed by a given art asset.  A system of organization, using a folder hierarchy or tagging system with a search function, is necessary for quick and efficient use of those assets.  Any organization system requires at least some level of effort and input from the artists creating the assets, so it is appropriate for the Contractor to design and implement the system that requires work by their personnel to maintain.
+
+	Testing: After the Contractor has had a reasonable amount of time to implement a system of organization (no more than two months after the start of the period of performance), the FBI development team will test the system by searching for a particular art asset and judging how easy or difficult it is to find all the files required by that asset.  It must be reasonably easy to locate all the associated files for an asset for this test to be considered a pass.  Testing will continue for the duration of the project to verify that the requirement continues to be met.
+
+
+
+1.3.2.15 Requirement
+
+	Requirement: The Contractor’s art team and software engineering personnel shall attend FBI training in crime scene techniques as required to gain familiarity with equipment and techniques.
+
+	Reasoning: In order to create models and animations representing crime scenes and law enforcement techniques for preserving evidence, it is necessary for the artists to see first-hand what a mock crime scene looks like and how the tools and techniques are actually used.  The FBI will provide some training, as needed, for the art team personnel within driving distance (less than 40 miles) of the art team work site.  The training will be provided during normal working hours and scheduled in cooperation with the art team lead, as much as possible.
+
+	No testing required
+
+	
+
+1.3.2.16 Requirement
+
+Requirement: At least one of the Contractor's personnel shall attend consultation meetings with Subject Matter Experts (SME’s) in crime scene management at other agencies as required, up to four meetings per year, if required.  Travel costs will be paid by the government as outlined in the travel cost section.
+
+	Reasoning: A core team of representatives from the FBI development team and Contractor’s art and software engineering team will take the project at key milestones in development to experts in crime scene management training at the Federal Law Enforcement Training Center in Glynco, Georgia and the Alabama State Department of Forensic Sciences in Huntsville, Alabama.  Local meetings will also be held with the Fairfax County Police Department crime scene detectives.  The SME’s will review the training simulation so far and provide feedback for improvement.  Much of the feedback may involve the visual representations of scenes, tools or techniques (including animation).  It is important that some Contractor personnel be present to ask questions and clarify suggestions from the experts in order to properly make the changes to art assets that they suggest.
+
+	No testing required
+
+
+
+1.3.2.17 Requirement
+
+	Requirement: The Contractor shall create 2D art for the CD/DVD label, packaging and user’s manual of the finished product and deliver the finished design in the digital file format specified by the company selected to provide printing and media duplication services.
+
+	Reasoning: The finished product will require a design for the CD’s or DVD’s and associated packaging that will be delivered to end users.  The finished product will also require a user’s manual.  The art team will not be responsible for writing the user’s manual, but will be responsible for creating the graphics and layout of the User’s Manual.  A printing company or internal FBI resources will be used to produce copies of the finished product, packaging and manuals.  The art team will be responsible for delivering files in the format to the specifications supplied by the printing company. This task will likely take place near the end of the period of performance, before mass production of the finished product is scheduled to start.
+
+	Testing:  The FBI team lead will approve the design or work with the art team lead to change/improve the design for the CD/DVD label and packaging, as well as the art/layout design of the user’s manual.  Once approved, the layout files will be delivered to the printing company to verify that the format of the files is usable.
+
+
+
+1.3.2.18 Requirement
+
+	Requirement: The Contractor shall create and maintain an “Art Bible”, or set of reference art assets including an example of a standard character, standard terrain, standard prop, standard flash-based user interface.  The art team lead shall ensure that all art assets produced by the art team are of equal or greater quality as the standard reference assets in the “Art Bible.” 
+
+	Reasoning: As artists come and go from the team, it is important for new artists to have a concrete set of example files that they know represent the quality of work expected from them.  The reference art assets in the “Art Bible” will inform the art team personnel about the approximate number of polygons their models should contain, the size and formats of textures, the proper shader files to use, etc. so that the assets look good and work in the game engine.  The “Art Bible” must contain, to the extent possible, every piece of information that an artist needs to know in order to successfully complete an assignment to create an art asset.
+
+	Testing: At the beginning of the period of performance, the art team lead and the FBI team lead will mutually agree on a date for completion of the “Art Bible,” which should be as soon as practicable after the beginning of the period of performance.  On that date, the FBI team lead will verify that the “Art Bible” has been created and is available to the artists, and that it contains the information artists need to know to complete their work and produce usable art assets.
+
+
+
+1.3.2.19 Requirement
+
+	Requirement: The Contractor shall assemble art assets into scenes and create lighting set-ups for the 3D scenes using the game engine authoring tools and/or 3rd party lighting tools such as Illuminate Labs “Beast” Global Illumination tool.
+
+	Reasoning: Lighting plays a key role in the realistic look and believability of the finished simulation.  Creating good lighting setups requires the skill of an artist, rather than a programmer.  It is expected that the art team will not just deliver stand-alone art asset files, but will also put those assets together to create scenes (for example: terrain, vegetation, cars, buildings and many props go together to form the hotel room crime scene) and then set up real-time lighting or “baked-in” lighting using the authoring tools supplied with the game engine or another product.  The FBI intends to license the Beast Global Illumination tool from Illuminate Labs to enhance the realism of lighting and shadows in the finished product.
+
+	Testing: The FBI team lead will verify that properly-constructed scenes with appropriate lighting setups are delivered by the Contractor.
+
+
+
+1.3.2.20 Requirement
+
+	Requirement: The Contractor shall assist FBI personnel to facilitate the technical aspects of running TACSIM (JSS) and VIRTSIM training with New Agent Trainees on days that this training is scheduled.
+
+	Reasoning: Primary responsibility for tactical instruction of New Agent Trainees rests with instructors from the Practical Applications Unit.  However, since technology now plays a vital role in simulation-based training, technical support is required to facilitate virtual training days. 
+
+	Testing: The FBI team lead will ensure that there is always a minimum of two personnel scheduled to support TACSIM and two personnel scheduled to support VIRTSIM on every day that training is scheduled involving these programs.  The FBI team lead will regularly check with tactical instructors to verify that the technical aspects of these programs are being handled correctly and professionally.
+
+
+
+1.3.2.21 Requirement
+
+	Requirement: The Contractor shall develop new assets (3D art, scenarios, scripts, modified control schemes, etc.) to enhance TACSIM and VIRTSIM as required to improve training.
+
+	Reasoning: As these simulation tools continue to be used in an operational training setting, enhancements and additions to the stock scenarios will surely be identified by the tactical instructors and technical personnel.  Whenever it is possible (permitted by the simulation software) appropriate changes or additions should be made to improve the training for New Agents.	
+
+	Testing: The FBI team lead will review requirements for modifications or additions to TACSIM and VIRTSIM that are identified by instructors and technical personnel, and will schedule time for Contractor personnel to work on those enhancements deemed most valuable.
+
+
+
+
+
+The work associated with this requirement will be performed at the direction of the FBI Program Manager and/or the FBI Contracting Officer’s Technical Representative (COTR) and/or FBI Project Manager and/or FBI Technical Task Leader.  See Section 2.4 of this document for more specific information.  The work performed under this contract shall require the contractor to be proficient in the following technical areas:
+
+
+
+3D Game Engine technologies such as Unreal Engine, Gamebryo, CryEngine, Id Tech, etc.
+
+C++ coding, UnrealScript coding.
+
+User testing methodologies.
+
+Software Engineering documentation.
+
+Debugging.
+
+3D Modeling, texturing, animating in 3D Studio Max or Maya.
+
+Character animation, including facial animation and lip-synch.
+
+User Interface design using Adobe Flash and ActionScript 2 or 3.
+
+Creating a large library of art assets and organizing them for optimal efficiency.
+
+Custom scripting of supporting tools in MaxScript, MEL or Python.
+
+Global Illumination simulation and lightmapping using Illuminate Labs Beast or similar software.
+
+Microsoft Windows 98, NT, NT, 2000, XP, Vista, 2003 and Windows 7 operating systems
+
+
+
+2 	ADMINISTRATIVE Requirements
+
+This section presents the contractor requirements for security, property, availability, travel, training, process assessment, program controls, and personnel as they relate to the requested services.	
+
+   	
+
+   	
+
+2.1  	Contract Program Controls
+
+2.1.1	PROGRAM Management
+
+The contractor shall be responsible for the management and oversight of all personnel and financial resources utilized in the performance of this SOW.  The contractor shall designate a Program Manager, who shall be the primary point of contact for the FBI.  The Program Manager shall act as the authorized representative for technical and administrative performance of all services required in accordance with this SOW.
+
+Contractor Security Program
+
+The contractor shall establish and maintain a security program that addresses all aspects of contract performance including personnel, facilities, software, hardware, and equipment security as well as subcontractor security and surveillance plans if applicable.
+
+
+
+
+
+Contract Personnel Requirements
+
+All individuals assigned to this task are designated as key personnel and as such shall be full time employees of the contractor at the time of contract award.  If the quotation includes using any individuals to fulfill key positions who are not current employees, the contractor shall furnish a letter of commitment signed by the individual.
+
+
+
+	It is anticipated this effort will require five (5) or six (6) full-time equivalent contract employees (3 software engineers and 2 or 3 artists) to perform the technical requirements of this statement of work, and 25% of the time of a Game Designer / Producer, for a total of 5.25 – 6.25 contract employees in each fiscal year.
+
+
+
+	Quotations must provide the hourly rate for each proposed contract employee and the number of total hours per year for each (1,920 hours per full time employee, 480 hours for 25% time employee).  One artist position is considered optional, and will be included in the final team at the government's sole discretion.
+
+
+
+2.2.1 Software Engineers
+
+The Software Engineers are designated as key personnel and are considered essential to the work performed for this SOW. The following position description defines the duties and provides the minimum requirements for these positions in terms of experience and education.  All key personnel shall have a minimum of three (3) years* professional experience, and at least one personnel shall have a minimum of five (5) in:
+
+Writing interactive game or simulation programs using object-oriented methods in a non memory-managed language such as C++. 
+
+Writing UnrealScript files for game or simulation projects in the Unreal Engine 3 or Unreal Development Kit (UDK).
+
+Experience working with Unreal Engine 3 source code is highly desirable.
+
+Experience writing scripts for the Unity 3D game development tool is highly desirable. 
+
+User testing.
+
+Debugging.
+
+*Note: Evidence of outstanding technical ability (for example, developing a commercially successful game) that can be satisfactorily demonstrated to the government may be substituted for the requirement for 3 years of professional experience.  
+
+
+
+2.2.2 3D Digital Artists
+
+The 3D Digital Artists shall be designated as key personnel and are considered essential to the work performed for this SOW.  The following position description defines the duties and provides the minimum requirements for these positions in terms of experience and education.  All key personnel shall have a minimum of five* (5) years professional experience in:
+
+Character Modeling and Rigging using Autodesk 3ds Max or Autodesk Maya
+
+Character Animation using Autodesk 3ds Max, Autodesk Maya, Autodesk Motionbuilder, or similar character animation tool
+
+Specifically facial animation and lip-synch animation
+
+Environment modeling and texturing
+
+Image editing and creating tiling textures using Photoshop
+
+Modeling and texturing vehicles
+
+Creating 3D art assets for real-time game engines
+
+Creating textures and image maps for 3D models
+
+Level Design and Layout using the content editor tool appropriate for the specific game engine technology used
+
+Creating 2D art and animation in Adobe Flash
+
+*Note: Evidence of outstanding skill and ability (for example, a portfolio full of extremely high quality 3D modeling and animation work) that can be satisfactorily demonstrated to the government may be substituted for the requirement of 5 years of professional experience.
+
+
+
+2.2.3 Game Designer / Producer
+
+	The Game Designer / Producer shall be designated as key personnel and is considered essential to the work performed for this SOW.  The primary job of the Game Designer / Producer (GD/P) is to bring to the project a wealth of knowledge and experience in designing games and educational interactions, in order to increase the quality of the final project.  The secondary task of the Game Designer / Producer is to manage the schedule, and lead and inspire the team of developers and artists to achieve the best results possible through mentoring, guiding and consulting on design issues related to developing an educationally sound training product.  The GD/P shall be responsible for dealing with personnel performance shortcomings or lack of appropriate skills among the Contractor's Software Engineers and Artists by counseling, encouraging, or replacing personnel as needed.  The GD/P shall also attend all key design meetings and user tests for the Crime Scene training product's development in order to offer guidance and advice on design decisions based on the GD/P's extensive past experience designing simulations and/or games for education.  The GD/P must have at least ten (10) years professional experience in the following areas:
+
+Designing simulations or games; at least two projects/titles must have been educational or training games/simulations, and must have served as lead designer on at least two projects/titles that actually shipped.
+
+Managing a schedule for a technical project of approximately the same scope as the Crime Scene Training (2-3 year project involving a team of 5 to10 developers).
+
+Leading, mentoring and managing personnel; must have led a team of at least 4 creative technical personnel (artists, engineers, etc.) through a project of at least one year duration.
+
+Worked in design and/or production on at least one major software product recently (within the last three years), preferably using Unity or Unreal Engine; understand issues related to designing a software solution using modern 3D game engines and middleware.
+
+Recruiting and hiring talented artists and software engineers; this person shall demonstrate an ability to use their connections and resources within the game development industry to find, evaluate and hire personnel with the skills appropriate for this project as the need arises (e.g. replacing poorly-performing personnel if necessary).
+
+It is not acceptable to propose a person for this role if their primary experience is in managing personnel, but they have weak experience in game design.  Quotations must reflect the Game Designer / Producer's depth of experience in education/game design.  The Game Designer / Producer must satisfactorily complete a "design challenge" exercise in which the designer will be required to propose workable game/interaction design ideas to meet a set of given learning objectives (simulating the type of work that will be required of the designer in the Crime Scene training project).
+
+
+
+Tasks/Deliverables
+
+The contractor shall perform the tasks and deliver the work products detailed within this section as appropriate based upon work assignments associated with this task.
+
+Management
+
+Project Planning
+
+Task Description:
+
+The objective of this task is to develop a detailed plan for organization and management of the art team and software development team, develop an initial schedule of project planning meetings, define an initial list of assignments for the art team to start developing assets, define a detailed plan to perform the work.
+
+The planning for this project will consist of two distinct phases.  In phase I, many concepts and possible design ideas will be explored through rapid prototyping (mostly using Unity engine, Flash, or simple image-based prototypes).  Planning during this phase will consist of weekly stand-up meetings during which the prototyping tasks for the current week are assigned to personnel and the results of the most recent user tests are evaluated.  As this phase progresses, more and more features and design decisions will be solidified and agreed upon as being a necessary part of the final product.  The Contractor shall write and continue to refine a detailed project plan that includes all the features and design decisions as they are identified during phase I.
+
+At the conclusion of phase I (tentatively scheduled as 4 months after project start date but subject to change) the Contractor shall deliver a detailed project plan that describes all the development tasks that must be completed to create the final product.  The project plan shall be reviewed by the entire team and approved or modified as necessary by the FBI.
+
+The detailed project plan will guide the team's efforts through development of the final product (mostly using Unreal Engine 3) and must be able to be used by the team to track progress toward the final product delivery and variance from schedule.
+
+
+
+4 	Travel/Contractor Training
+
+Local travel to one or more of the FBI Academy, other FBI off-site location or local training venue (hotel) may be required during execution of this contract.  Additionally, the Lead Artist may be required to travel to meet with Subject Matter Experts in forensic science for project reviews and critiques. Any travel deemed necessary will be authorized by the FBI and reimbursed in accordance with the Federal Travel Regulations.  All travel must be authorized in writing by the Contracting Officer prior to commencing travel.  Actual allowable expenses will be reimbursed at an amount not to exceed the rate authorized in the Federal Travel Regulations (FTR).  The following is an estimate of travel plans for performance of tasks under this SOW.
+
+	4.1 ESTIMATED NUMBER OF LOCAL TRIPS: 10
+
+	4.2 ESTIMATED NON-LOCAL TRAVEL:
+
+
+
+
+
+
+
+
+
+3ds Max
+
+3D Studio Max
+
+CO
+
+Contracting Officer
+
+COTR
+
+Contracting Officer Technical Representative
+
+ERT
+
+Evidence Response Team
+
+FBI
+
+Federal Bureau of Investigation
+
+GUI
+
+Graphical User Interface
+
+IDE
+
+Integrated Development Environment
+
+MOCAP
+
+Motion Capture
+
+MOU
+
+Memorandum of Understanding
+
+PD
+
+Police Department
+
+SO
+
+Sheriff’s Office
+
+SOW
+
+Statement of Work
+
+TACSIM
+
+Tactical Simulation, used in New Agent Training to practice arrest operations in a virtual environment
+
+UE3
+
+Unreal Engine 3, created by Epic Games, Inc.
+
+VIRTSIM
+
+Virtual Reality Simulator: A motion-capture based multi-user simulation allowing New Agent Trainees to practice physical techniques of tactical operations in a virtual environment.
+
+
+
+Origin
+
+Destination
+
+No. of Trips
+
+No. of Travelers
+
+No. of Days
+
+TBD
+
+Glynco, GA
+
+2
+
+1
+
+3
+
+TBD
+
+Huntsville, AL
+
+2
+
+1
+
+3Table of Contents  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+PART A – Standard Form 1449 Order for Commercial Items
+
+Not applicable per FAR 12.603(b)
+
+PART B – Services and prices
+
+B.1 – Description of services
+
+This is a simplified acquisition for commercial services conducted under the policies and procedures of the Federal Acquisition Regulation (FAR) Parts 12 and 13.  PART E contains evaluation criteria and instructions for the preparation and submission of quotations. 
+
+The Federal Bureau of Investigation (FBI) has a requirement for Computer Simulation Development and Training Support as described in Attachment 1 – Statement of Work (SOW).      
+
+The Government anticipates the award of a fixed price contract for a base year and two (2) one-year option periods.  The options may be awarded at the Government’s discretion based on its requirements.  The anticipated base year period of performance is July 01, 2011 through June 30, 2012.  The total period of performance will end on June 30, 2014 if all option periods are awarded.  
+
+Most of the work performed by the Contractor will take place at the   in .  The Contractor personnel shall perform work during normal business hours ( time window, 8 hours per day).  Infrequent weekend work may be required to perform operations which cannot be accomplished during normal working hours.  In those rare cases, work schedules will be adjusted to compensate.  All Contractor personnel shall be punctual at the start of the workday and for scheduled meetings.  Contractor personnel working hours should be consistent from day to day, unless authorized by the FBI Program Manager or FBI COTR or other FBI Task Representative.
+
+B.2 – Pricing
+
+Provide fixed prices for each Contract Line Item Number (CLIN) for the three (3) programs listed in the following base year schedule, and a total price for all three programs.  
+
+Provide option year pricing in the same format as the base year schedule below.  Quotations must list detailed expenses for each year separately, not as one lump sum for all years. 
+
+Schedule of Services and Prices
+
+BASE YEAR
+
+
+
+OPTION YEAR 1
+
+
+
+
+
+OPTION YEAR 2
+
+
+
+1 The fixed price for each program includes all labor and deliverables required by the Statement of Work.  
+
+2 Other costs, including travel, operational, and training expenses require prior approval of the Contracting Officer’s Technical Representative (COTR) or Program Manager (PM).  The Government will reimburse the Contractor’s actual incurred costs.  Travel will be reimbursed in accordance with the rates and guidelines established in the Federal Travel Regulations (FTR) available at .  Refer to C.3.8– Travel.
+
+PART C – Contract Clauses
+
+C.1 – Federal Acquisition Regulation (FAR) Clauses 
+
+C.1.1 – 52.252-2 -- Clauses Incorporated by Reference (Feb 1998)
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at this/these address(es): . 
+
+	
+
+C.1.2 – 52.212-5 Contract Terms and Conditions Required to Implement Statutes or Executive Orders—Commercial Items (July 2010) 
+
+(a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract by reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items:
+
+(1) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)).
+
+____ Alternate I (AUG 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+
+(2) 52.233-3, Protest After Award (AUG 1996) (31 U.S.C. 3553).
+
+(3) 52.233-4, Applicable Law for Breach of Contract Claim (OCT 2004) (Pub. L. 108-77, 108-78).
+
+ (b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items:
+
+[Contracting Officer check as appropriate.]
+
+___ (1) 52.203-6, Restrictions on Subcontractor Sales to the Government (Sept 2006), with Alternate I (Oct 1995) (41 U.S.C. 253g and 10 U.S.C. 2402).
+
+___ (2) 52.203-13, Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note)).
+
+___ (3) 52.203-15, Whistleblower Protections under the American Recovery and Reinvestment Act of 2009 (Jun 2010) (Section 1553 of Pub L. 111-5) (Applies to contracts funded by the American Recovery and Reinvestment Act of 2009).
+
+___ (4) 52.204-10, Reporting Executive compensation and First-Tier Subcontract Awards (Jul 2010) (Pub. L. 109-282) (31 U.S.C. 6101 note).
+
+___ (5) 52.204-11, American Recovery and Reinvestment Act—Reporting Requirements (Mar 2009) (Pub. L. 111-5).
+
+___ (6) 52.219-3, Notice of Total HUBZone Set-Aside (Jan 1999) (15 U.S.C. 657a).
+
+___ (7) 52.219-4, Notice of Price Evaluation Preference for HUBZone Small Business Concerns (Jul 2005) (if the offeror elects to waive the preference, it shall so indicate in its offer)(15 U.S.C. 657a).
+
+___ (8) [Reserved]
+
+___ (9) (i) 52.219-6, Notice of Total Small Business Aside (June 2003) (15 U.S.C. 644).
+
+___ (ii) Alternate I (Oct 1995) of 52.219-6.
+
+___ (iii) Alternate II (Mar 2004) of 52.219-6.
+
+___ (10) (i) 52.219-7, Notice of Partial Small Business Set-Aside (June 2003) (15 U.S.C. 644).
+
+___ (ii) Alternate I (Oct 1995) of 52.219-7.
+
+___ (iii) Alternate II (Mar 2004) of 52.219-7.
+
+___ (11) 52.219-8, Utilization of Small Business Concerns (May 2004) (15 U.S.C. 637(d)(2) and (3)).
+
+___ (12) (i) 52.219-9, Small Business Subcontracting Plan (July 2010) (15 U.S.C. 637 (d)(4).)
+
+___ (ii) Alternate I (Oct 2001) of 52.219-9.
+
+___ (iii) Alternate II (Oct 2001) of 52.219-9.
+
+___ (iv) Alternate III (July 2010) of 52.219-9.
+
+___ (13) 52.219-14, Limitations on Subcontracting (Dec 1996) (15 U.S.C. 637(a)(14)).
+
+___ (14) 52.219-16, Liquidated Damages—Subcontracting Plan (Jan 1999) (15 U.S.C. 637(d)(4)(F)(i)).
+
+___ (15) (i) 52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns (Oct 2008) (10 U.S.C. 2323) (if the offeror elects to waive the adjustment, it shall so indicate in its offer).
+
+___ (ii) Alternate I (June 2003) of 52.219-23.
+
+___ (16) 52.219-25, Small Disadvantaged Business Participation Program—Disadvantaged Status and Reporting (Apr 2008) (Pub. L. 103-355, section 7102, and 10 U.S.C. 2323).
+
+___ (17) 52.219-26, Small Disadvantaged Business Participation Program—Incentive Subcontracting (Oct 2000) (Pub. L. 103-355, section 7102, and 10 U.S.C. 2323).
+
+___ (18) 52.219-27, Notice of Total Service-Disabled Veteran-Owned Small Business Set-Aside (May 2004) (15 U.S.C. 657 f).
+
+___ (19) 52.219-28, Post Award Small Business Program Rerepresentation (Apr 2009) (15 U.S.C. 632(a)(2)).
+
+__ (20) 52.222-3, Convict Labor (June 2003) (E.O. 11755).
+
+___ (21) 52.222-19, Child Labor—Cooperation with Authorities and Remedies (Jul 2010) (E.O. 13126).
+
+__ (22) 52.222-21, Prohibition of Segregated Facilities (Feb 1999).
+
+__ (23) 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246).
+
+__ (24) 52.222-35, Equal Opportunity for Veterans (Sep 2010) (38 U.S.C. 4212).
+
+__ (25) 52.222-36, Affirmative Action for Workers with Disabilities (Oct 2010) (29 U.S.C. 793).
+
+__ (26) 52.222-37, Employment Reports on Veterans (Sep 2010) (38 U.S.C. 4212).
+
+__ (27) 52.222-54, Employment Eligibility Verification (Jan 2009). (Executive Order 12989). (Not applicable to the acquisition of commercially available off-the-shelf items or certain other types of commercial items as prescribed in 22.1803.)
+
+___ (28) (i) 52.223-9, Estimate of Percentage of Recovered Material Content for EPA-Designated Items (May 2008) (42 U.S.C. 6962(c)(3)(A)(ii)). (Not applicable to the acquisition of commercially available off-the-shelf items.)
+
+___ (ii) Alternate I (May 2008) of 52.223-9 (42 U.S.C. 6962(i)(2)(C)). (Not applicable to the acquisition of commercially available off-the-shelf items.)
+
+___ (29) 52.223-15, Energy Efficiency in Energy-Consuming Products (Dec 2007) (42 U.S.C. 8259b).
+
+___ (30) (i) 52.223-16, IEEE 1680 Standard for the Environmental Assessment of Personal Computer Products (Dec 2007) (E.O. 13423).
+
+___ (ii) Alternate I (Dec 2007) of 52.223-16.
+
+___ (31) 52.223-18, Contractor Policy to Ban Text Messaging while Driving (Sep 2010) (E.O. 13513).
+
+___ (32) 52.225-1, Buy American Act--Supplies (Feb 2009) (41 U.S.C. 10a-10d).
+
+___ (33) (i) 52.225-3, Buy American Act –Free Trade Agreements – Israeli Trade Act (Jun 2009) (41 U.S.C. 10a-10d, 19 U.S.C. 3301 note, 19 U.S.C. 2112 note, 19 U.S.C. 3805 note, Pub. L. 108-77, 108-78, 108-286, 108-301, 109-53, 109-169, 109-283, and 110-138).
+
+___ (ii) Alternate I (Jan 2004) of 52.225-3.
+
+___ (iii) Alternate II (Jan 2004) of 52.225-3.
+
+___ (34) 52.225-5, Trade Agreements (Aug 2009) (19 U.S.C. 2501, et seq., 19 U.S.C. 3301 note).
+
+__ (35) 52.225-13, Restrictions on Certain Foreign Purchases (Jun 2008) (E.O.’s, proclamations, and statutes administered by the Office of Foreign Assets Control of the Department of the Treasury).
+
+___ (36) 52.226-4, Notice of Disaster or Emergency Area Set-Aside (Nov 2007) (42 U.S.C. 5150).
+
+___ (37) 52.226-5, Restrictions on Subcontracting Outside Disaster or Emergency Area (Nov 2007) (42 U.S.C. 5150).
+
+___ (38) 52.232-29, Terms for Financing of Purchases of Commercial Items (Feb 2002) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+
+___ (39) 52.232.30, Installment Payments for Commercial Items (Oct 1995) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+
+__ (40) 52.232-33, Payment by Electronic Funds Transfer—Central Contractor Registration (Oct. 2003) (31 U.S.C. 3332).
+
+___ (41) 52.232-34, Payment by Electronic Funds Transfer—Other Than Central Contractor Registration (May 1999) (31 U.S.C. 3332).
+
+___ (42) 52.232-36, Payment by Third Party (Feb 2010) (31 U.S.C. 3332).
+
+___ (43) 52.239-1, Privacy or Security Safeguards (Aug 1996) (5 U.S.C. 552a).
+
+___ (44) (i) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C. 2631).
+
+___ (ii) Alternate I (Apr 2003) of 52.247-64.
+
+
+
+(c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or executive orders applicable to acquisitions of commercial items:  [Contracting Officer check as appropriate.] N/A
+
+
+
+___ (1) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.).
+
+___ (2) 52.222-42, Statement of Equivalent Rates for Federal Hires (May 1989) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+
+___ (3) 52.222-43, Fair Labor Standards Act and Service Contract Act -- Price Adjustment (Multiple Year and Option Contracts) (Sep 2009) (29 U.S.C.206 and 41 U.S.C. 351, et seq.).
+
+___ (4) 52.222-44, Fair Labor Standards Act and Service Contract Act -- Price Adjustment (Sep 2009) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+
+___ (5) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment--Requirements (Nov 2007) (41 U.S.C. 351, et seq.).
+
+___ (6) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services--Requirements (Feb 2009) (41 U.S.C. 351, et seq.).
+
+___ (7) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations. (Mar 2009) (Pub. L. 110-247).
+
+___ (8) 52.237-11, Accepting and Dispensing of $1 Coin (Sep 2008) (31 U.S.C. 5112(p)(1)).
+
+(d) Comptroller General Examination of Record The Contractor shall comply with the provisions of this paragraph (d) if this contract was awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at 52.215-2, Audit and Records -- Negotiation.
+
+(1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right to examine any of the Contractor’s directly pertinent records involving transactions related to this contract.
+
+(2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination, audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR Subpart 4.7, Contractor Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records relating to the work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such appeals, litigation, or claims are finally resolved.
+
+(3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary course of business or pursuant to a provision of law.
+
+
+
+(e) 
+
+(1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c) and (d) of this clause, the Contractor is not required to flow down any FAR clause, other than those in this paragraph (e)(1) in a subcontract for commercial items. Unless otherwise indicated below, the extent of the flow down shall be as required by the clause—
+
+(i) 52.203-13, Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note)).
+
+(ii) 52.219-8, Utilization of Small Business Concerns (May 2004) (15 U.S.C. 637(d)(2) and (3)), in all subcontracts that offer further subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $550,000 ($1,000,000 for construction of any public facility), the Subcontractor must include 52.219-8 in lower tier subcontracts that offer subcontracting opportunities.
+
+(iii) [Reserved]
+
+(iv) 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246).
+
+(v) 52.222-35, Equal Opportunity for Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans (Sep 2006) (38 U.S.C. 4212).
+
+(vi) 52.222-36, Affirmative Action for Workers with Disabilities (June 1998) (29 U.S.C. 793).
+
+(vii) [Reserved]
+
+(viii) 52.222-41, Service Contract Act of 1965, (Nov 2007), (41 U.S.C. 351, et seq.)
+
+(ix) 52.222-50, Combating Trafficking in Persons (Feb 2009) (22 U.S.C. 7104(g)).
+
+___ Alternate I (Aug 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+
+(x) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment--Requirements (Nov 2007) (41 U.S.C. 351, et seq.)
+
+(xi) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services--Requirements (Feb 2009) (41 U.S.C. 351, et seq.)
+
+(xii) 52.222-54, Employment Eligibility Verification (Jan 2009).
+
+(xiii) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations. (Mar 2009) (Pub. L. 110-247). Flow down required in accordance with paragraph (e) of FAR clause 52.226-6.
+
+(xiv) 52.247-64, Preference for Privately-Owned U.S. Flag Commercial Vessels (Feb 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C. 2631). Flow down required in accordance with paragraph (d) of FAR clause 52.247-64.
+
+(2) While not required, the Contractor may include in its subcontracts for commercial items a minimal number of additional clauses necessary to satisfy its contractual obligations.
+
+(End of Clause)
+
+C.1.3 – 52.217-9 Option to Extend the Term of the Contract (Mar 2000) 
+
+(a) The Government may extend the term of this contract by written notice to the Contractor within 30 days; provided that the Government gives the Contractor a preliminary written notice of its intent to extend at least 45 days before the contract expires. The preliminary notice does not commit the Government to an extension. 
+
+(b) If the Government exercises this option, the extended contract shall be considered to include this option clause. 
+
+(c) The total duration of this contract, including the exercise of any options under this clause, shall not exceed three years – Base period plus two (2) one-year options.     
+
+
+
+(End of Clause)
+
+
+
+C.2– Security Requirements
+
+C.2.1 – Access to Federal Bureau of Investigation (FBI) Locations
+
+Performance under this contract may require access to FBI locations to provide some service, product, or perform some other official function of interest to the FBI.  Requirements, as identified below, to include approval by the FBI's Security Division, must be satisfied prior to access. 
+
+
+
+Contractors who will require escorted access, to include short-term, intermittent, or infrequent access, to an FBI facility must complete an "Access of Non-FBI Personnel to FBI Facilities, Background Data Information Form," (FD 816), a "Privacy Act of 1974 Acknowledgment Form" (FD 484) and two Fingerprint Cards (FD 258).  Completed forms should be provided to the assigned Contracting Officer's Technical Representative (COTR) at least 10 days prior to required access.
+
+
+
+Individuals requiring unescorted access to an FBI facility must complete the Standard Form 86 (SF-86), Questionnaire for National Security Positions, using the Office of Personnel Management’s Electronic Questionnaires for Investigations Processing (e-QIP) and provide two Fingerprint Cards (FD 258).  e-QIP is a secure website that can be accessed from any computer system which has an Internet connection.  Only the signed release forms and FD 258 will need to be mailed to the identified Chief Security Officer, the SF-86 itself will be transmitted to the FBI electronically. 
+
+
+
+To complete the SF-86 using e-QIP, the individual requiring unescorted access to the FBI facility must contact (insert Chief Security Officer, Division, and telephone number) in order to be initiated into e-QIP.  Once this action has been accomplished, the individual should be able to access e-QIP at the following link in order to initiate and complete the electronic process:  http://www.opm.gov/e-qip/browser-check.asp.  Thoroughly read and follow the instructions for completing the SF-86.  NOTE:  To fully address suitability/security issues, the FBI requires individuals to provide responses to questions on the SF-86 for the last ten years.  Failure to complete the application as instructed may lead to significant delays in processing the required investigation and approval for unescorted access.  
+
+Upon logging onto e-QIP, there will be a prompt to answer three “Golden” security questions to establish the user account.   After completing the electronic SF-86, please print and sign the (1) Certification Form (CER) - Certify Completeness and Accuracy of your Investigation Request; (2) Medical Release Form (MEL) - Authorization for Release of Medical Information; and (3) Release Form (REL) - Authorization for Release of Information.  In addition to these SF 86 release forms, the completion of a Non-Personnel Consent to Release Information (FD-979a), the United States Department of Justice Disclosure and Authorization Pertaining to Consumer Reports (DOJ 555) are required.  Annotation of the assigned e-QIP Investigation Request Number on the upper right corner of each document transmitted to the identified Chief Security Officer is required for coordination with the electronic transmission and to facilitate the investigative process.  The e-QIP Investigation Request Number, automatically generated by e-QIP, is located on both the header and footer of the signature forms.  These release forms (five total) and FD 258 should be mailed via Federal Express or UPS Express mail directly to the following address:  Joann V. Saunders | 1001 Pennsylvania Ave., NW | Room 555 | Washington, DC 20004 | Phone 202-220-9225.  The use of regular U.S. mail channels may cause significant delays in processing the unescorted access request. 
+
+
+
+Upon completion of processing the facility access request, the individual will be required to execute a non-disclosure agreement suitable for their approved access.
+
+
+
+(End of Clause)
+
+
+
+C.2.2 – Security Requirements Applicable to Contractor Personnel Assigned to FBI Locations
+
+
+
+Requirements are applicable to all individuals to be assigned to FBI locations, to include those identified as "Key Personnel", if specified in the contract.  The Contractor shall plan for expected attrition through advanced preparation and submission of required information. Award of this contract is anticipated to result in assignment of Contractor personnel to FBI controlled or occupied space.    Security and ethical conduct requirements, specific to the contract, to include a copy of the "Contractor & FBI Employees Ethics Standards Fact sheet" are provided.   Any questions that the Contractor or Contractor personnel may have on the applicability of these requirements shall be addressed to the Contracting Officer's Security Representative, Joann Saunders, Chief Security Officer, at (202) 220-9230. As such, all Contractor personnel assigned to such space must be briefed, in advance of arrival, by the Contractor on the provided FBI policies and procedures, as identified in the contract, regarding ethical conduct and security requirements.  A list of assigned Contractor personnel and verification of their briefing shall be provided to the appropriate Contractor security officer for subsequent transmittal to the proper FBI Security Officer assigned oversight of this contract.   This list must be provided no later than seven (7) days in advance of the individual's scheduled date of initial performance at an FBI location.  Failure to provide the required verification of briefing will result in a delay of the individual's access to the facility.
+
+
+
+Additionally, within 15 business days from assignment to FBI space, the employee must attend an FBI Security Awareness Briefing, which will further address FBI policies and procedures, as identified in FBI's Policy and Guidance Library.  This training is currently satisfied through the Contractor employee's attendance at the Security Division's Career Services Management Unit's quarterly Contractor's training offered at FBI, 935 Pennsylvania Avenue, NW, Washington, DC.  The assigned FBI Chief Security Officer will contact the employee with the date and time of their scheduled briefing.  Failure to attend this briefing or make arrangements to attend a subsequent briefing will result in immediate removal of the employee from FBI space.  If contract performance is impacted as a result of removal of the employee, the Contractor may be found in default of the contract.  In the event that the development of information or material is not clearly covered by the contract or regulations, the Contractor is required to seek FBI guidance regarding its handling of classified and/or unclassified information.
+
+
+
+Only such persons who have been authorized by the Contracting Officer and/or the Chief Security Officer/Contracting Officer's Security Representative, if the work is for other than specified personnel, shall be assigned to this work.  In this connection, for identification purposes, the Contractor will be required to submit the name, address, place and date of birth of all personnel who will be involved in the work hereunder.  Said information will be required to be provided to the identified Chief Security Officer not later than seven (7) days in advance of the scheduled date of such work.  Information relating to an individual(s) identified as "Key Personnel" should be reported to the Chief Security Officer after the written consent of the Contracting Officer has been received.  
+
+
+
+All Contractor personnel who receive a security clearance or access approval under the terms of this contract will be required to execute a FBI specified nondisclosure agreement.
+
+
+
+The Contractor agrees to abide by all applicable FBI security regulations governing personnel, facilities, technical, information systems, communications and protective programs.
+
+
+
+The following reporting requirements are to be reported to the identified Chief Security Officer as promptly as possible, but no later than two (2) business days after receipt of such knowledge.
+
+
+
+Adverse Information.  Contractors shall report any adverse information coming to their attention concerning any of their employees supporting this contract.  Adverse information is defined as any information that adversely reflect on the integrity or character of an employee that suggests that his or her ability to safeguard FBI Sensitive But Unclassified (SBU)/Law Enforcement Sensitive (LES) and/or classified information may be impaired, or that his or her access to the information clearly may not be in the interest of the FBI and/or National Security.
+
+
+
+Suspicious Contacts.  Contractors shall report efforts by any individual, regardless of nationality, to obtain illegal or unauthorized access to FBI SBU/LES or classified information or to compromise an employee.  
+
+
+
+Change in Employee Status.  Contractors shall report (1) the death, (2) a name change, (3) change in marital status, (4) change to performance which alters their originally assigned location and FBI Division to which they report, (5) termination of employment.
+
+
+
+Employees Desiring Not to Perform on the Contract.  Evidence that an employee no longer wishes to support the contract.
+
+
+
+Official or Unofficial Foreign Travel, to include Canada and Mexico.  
+
+
+
+(End of Clause)
+
+
+
+C.2.3 – Contractor Suitability SSR
+
+
+
+Access to FBI facilities and information is subject to specific security and suitability requirements.  The FBI reserves the right and prerogative to deny and/or restrict  facility and information access of any Contractor employee determined by the FBI, at any time during performance, to be unsuitable for access and/or present a risk of compromising sensitive Government information to which he or she would have access to under this contract.  Contractors will be allotted a reasonable amount of time, determined by the Government, to replace the employee found not suitable for continued contract performance.  Failure to replace the employee may result in a termination by the Government 
+
+(End of Clause)
+
+
+
+C.2.4 – Non U. S. Citizens 
+
+
+
+The Department of Justice (DOJ), Federal Bureau of Investigation (FBI) will no longer permit the use of Non-US citizens in the performance of  any contract or commitment for any position that involves access to or development of any FBI  Information Technology (IT) system.  By signing the contract or commitment document, the Contractor agrees to this restriction with respect to all new employees utilized directly to perform duties on the contract.		
+
+Information technology (IT)  means any equipment, or interconnected system(s) or subsystem(s) of equipment, that is used in the automatic acquisition, storage, manipulation, management, movement, control, display, switching, interchange, transmission, or reception of data or information by the agency.  The term "information technology" includes computers, ancillary equipment, software, firmware and similar procedures, services (including support services), and related resources.
+
+(End of Clause)
+
+
+
+C.2.5 – Department of Justice (DOJ) Residency Requirement
+
+
+
+The DOJ Residency Requirement is amended to apply to all DOJ Contractors employed within the United States, both U. S. citizens and non U.S. Citizens.  As a result of the events of September 11th and the enhanced security posture within the DOJ a determination has been made to apply to all Contractors.  
+
+
+
+The residency requirement states that, for three of the five years immediately prior to applying for a position, the individual must have 1) resided in the US; 2) worked for the US overseas in a Federal or military capacity; or 3) be a dependent of a Federal or military employee serving overseas.  
+
+
+
+This requirement can be waived for short-term Contractors (those performing duties for a cumulative of 14 days or less), if there is a critical need for their specialized and unique skills.  These individuals must be a US citizen or Permanent Resident Aliens.  A waiver request from the Head of the Component outlining the extenuating circumstances along with the requisite Contractor clearances security package should be submitted for approval to the Security Officer listed in C.6.2 above. 
+
+
+
+Additionally, any individual whether employee or Contractor, who is not a US citizen must be from a country allied with the US.  For updated information go to: . 
+
+(End of Clause)
+
+
+
+
+
+
+
+C.2.6 – Confidentiality of Data  
+
+
+
+Duplication or disclosure of the data and other information, to which the Contractor may have access as a result of this contract, is prohibited by Public Law.  It is understood that throughout performance of the Contract, the Contractor may have access to data which is the sole property of the FBI as well as access to proprietary data which is the sole property of other than the contracting parties.  The Contractor hereby agrees to maintain the confidentiality of all such data to which access may be gained throughout contract performance, whether title thereto vests in the FBI or otherwise. The Contractor hereby agrees not to disclose said data, any interpretations thereof, or data derivative therefore, to unauthorized parties whether real or artificial, in contravention of these provisions, without the prior written approval of the FBI Contracting Officer.  The Contractor shall ensure that this clause is incorporated in any agreements reached with any Subcontractors, consultants, agents, or representatives employed by the Contractor in contract performance or otherwise.  Additionally, Contractor's personnel will be required to sign Non Disclosure Agreements (NDA) with Epic Games and other entities providing access to proprietary software or information.
+
+(End of Clause)
+
+
+
+C.2.7 – Disclosure of Data 
+
+
+
+All information and data produced, developed, and/or delivered as a result of this contract, including all reports, work papers, internal memoranda, notes, source code, compiled object code, scripts, art (including but not limited to mesh data, image data, and animation data), audio recordings, wiki pages, or any other documents produced by the Contractor shall be the sole property of the FBI for its exclusive use as official FBI documentation to be released by the FBI only.  Duplication or disclosure of the data and other information produced by the Contractor hereunder is prohibited.  Accordingly, the Contractor shall not disclose, publish, or disseminate said data, findings, recommendations, work products, or any other information, or any interpretations or derivations thereof, to third parties whether real or artificial in contravention of these provisions, without the prior written approval of the FBI Contracting Officer.  The Contractor shall ensure that this clause is incorporated in any agreements reached with any Subcontractors, consultants, agents, or representatives employed by the Contractor in contract performance or otherwise.  Prior to commencing work, all Contractor personnel working on this contract shall be required to sign a Non-Disclosure Form (FD-857), which will be provided by the COTR. 
+
+(End of Clause)
+
+
+
+C.2.8 – Disclosure of Data under the Freedom of Information Act (FOIA) 
+
+
+
+If a request for information contained in a quotation is requested under the FOIA, the Government shall have the right to disclose any information or data contained in a quotation that results in a contract to the extend provided under the FOIA, notwithstanding any restrictive legends that may have been placed upon it in accordance with the instructions to the offeror.  The Government will, before disclosure, make an administrative determination on a case by case basis as to whether the information requested is exempt from disclosure by one of the established exceptions to the act.  In making this determination the procedures outlined in 28 CFR, paragraph 16.7 shall be followed which, in part, affords the submitter of a quotation an opportunity to object to disclosure.  
+
+
+
+(End of Clause)
+
+
+
+C.2.9 – Release of Information by Contractor Personnel
+
+
+
+The FBI specifically requires that Contractors shall not divulge, publish, or disclose information or produce material acquired as or derived from the performance of their duties. 
+
+
+
+For purposes of this Clause, "Information" shall include but not be limited to: any media or all media including on the web or web sites; publications, studies, books, theses, photographs, films or public announcements, press releases describing any part of the subject matter of this contract or any phase of any program hereunder, except to the extent such is:
+
+
+
+already known to the Contractor prior to the commencement of the contract; and
+
+(ii) required by law, regulation, subpoena or Government or judicial order to be disclosed, including the Freedom of Information Act.
+
+
+
+No release of information shall be made without the prior written consent of the Office of Public Affairs and the Contracting Officer.  The Contractor and author are warned that disclosure is not without potential consequences.  The FBI will make every effort to review proposed publications in a timely manner to accommodate these and other publications.
+
+
+
+Where appropriate, in accordance with established academic publishing practices, the FBI reserves the right to author/co-author any publication derived from this contract.
+
+
+
+The Contractor shall not:
+
+Use or allow to be used any aspect of this contract, including both the Contractor’s relationship with the FBI and the work performed under the contract, for publicity. “Publicity” means, but is not limited to, advertising (e.g. trade magazines, newspapers, Internet, radio, television, etc.), communications with the media, marketing, or a reference for new business. It is further understood that this obligation does not expire upon completion or termination of this contract, but continues indefinitely excepted as allowed by law. 
+
+Have any communication with the media, whether initiated by the Contractor or in response to media inquiries, related to the activities of the FBI, activities of other members of the intelligence community, or intelligence matters in general.  Such media inquires include but are not limited to requests for live interviews, telephone interviews, internet inquires, newspaper, television, radio or book interviews, etc. 
+
+Discuss such matters as a speaker or panel member at academic, professional, or any other public forum.  
+
+Discuss techniques and methods used outside of the contract.
+
+Using techniques and methods used outside of the contract.
+
+
+
+These obligations do not cease upon completion of the contract.	
+
+	
+
+(End of Clause)
+
+
+
+C.3– Other Special Requirements
+
+C.3.1 – JAR 2852.201-70 Contracting Officer’s Technical Representative (COTR) (Jan 1985)
+
+(a) TBD is hereby designated to act as Contracting Officer's Technical Representative (COTR) under this contract.
+
+(b) The COTR is responsible, as applicable, for: receiving all deliverables, inspecting and accepting the supplies or services provided hereunder in accordance with the terms and conditions of this contract; providing direction to the Contractor which clarifies the contract effort, fills in details or otherwise serves to accomplish the contractual Scope of Work; evaluating performance; and certifying all invoices/vouchers for acceptance of the supplies or services furnished for payment.
+
+(c) The COTR does not have the authority to alter the Contractor's obligations under the contract, and/or modify any of the expressed terms, conditions, specifications, or cost of the agreement. If as a result of technical discussions it is desirable to alter/change contractual obligations or the Scope of Work, the Contracting Officer shall issue such changes.
+
+(End of Clause)
+
+C.3.2 – Government Technical Representatives 
+
+TBD
+
+(End of Clause)
+
+
+
+C.3.3 – Technical Direction 
+
+The performance of work required herein shall be subject to the technical direction of the COTR, Program Manager, or other Government technical representatives named in this contract with respect to technical matters.  The COTR is the primary representative of the Contracting Officer authorized to provide technical direction on contract performance.
+
+As used herein, "Technical Direction" is direction to and/or consultation with the Contractor which fills in details, suggests possible lines of inquiry, or otherwise provides technical interpretation or clarification necessary to accomplish the work described in the SOW.  "Technical Direction" must be confined to the general scope of work set forth herein and shall not constitute a new assignment, nor supersede or modify any other clause of this contract.  To be valid, technical direction:
+
+Must be issued in writing consistent with the general scope of work set forth in the contract;
+
+Shall not change the expressed terms, conditions, or specifications incorporated into this contract, and
+
+Shall not constitute a basis for extension to the contract delivery schedule or contract price.
+
+The COTR and the Program Manager are authorized to perform the following functions: Act as liaison for Contractor and Government activities; issue written interpretations of technical requirements; monitor and inspect contract performance and notify the Contractor of any deficiencies; review and approve progress reports, invoices and final reports; and coordinate availability of Government furnished property. The COTR and other technical representatives do not have the authority to issue technical direction that: 
+
+(1) institutes additional work outside the scope of the contract;
+
+(2) constitutes a change as defined in the changes clause;
+
+(3) causes an increase or decrease in the estimated cost of the contract;
+
+(4) alters the period of performance; or 
+
+(5) changes any of the other express terms or conditions of the contract.
+
+
+
+(End of Clause)
+
+C.3.4 – DOJ Procurement Guidance 
+
+
+
+A – Department of Justice (DOJ) Procurement Guidance for Security of Systems & Data, Including Personally Identifiable Information
+
+
+
+a. Systems Security
+
+
+
+The work to be performed under this contract requires the handling of data that originated within the Department of Justice, data that the Contractor manages or acquires for the Department, and/or data that is acquired in order to perform the contract and concerns Department programs or personnel.
+
+
+
+For all systems handling such data, the Contractor shall comply with all security requirements applicable to Department of Justice systems, including but not limited to all Executive Branch system security requirements (e.g. requirements imposed by OMB and NIST), DOJ IT Security Standards, and DOJ Order 2640.2E.  The Contractor shall provide DOJ access to and information regarding the Contractor's systems when requested by the Department in connection with its efforts to ensure compliance with all such security requirements, and shall otherwise cooperate with the Department in such efforts.  DOJ access shall include independent validation testing of controls, system penetration testing by DOJ, FISMA data reviews and access by the DOJ Office of the Inspector General for its reviews.
+
+
+
+The use of Contractor-owned laptops or other media storage devices to process or store data covered by this clause is prohibited until the Contractor provides a letter to the Contracting Officer (CO) certifying the following requirements:
+
+
+
+Laptops must employ encryption using a NIST Federal Information Processing Standard (FIPS) 140-2 approved product;
+
+The Contractor must develop and implement a process to ensure that security and other applications software is kept up-to-date;
+
+Mobile computing devices will utilize anti-viral software and a host-based firewall mechanism;
+
+The Contractor shall log all computer-readable data extracts from databases holding sensitive information and verify each extract including sensitive data has been erased within 90 days or its use is still required.  All DOJ information is sensitive information unless designated as non-sensitive by the Department;
+
+Contractor-owned removable media, such as removable hard drives, flash drives, CDs, and floppy disks, containing DOJ data, shall not be removed from DOJ facilities unless encrypted using a NIST FIPS 140-2 approved product;
+
+When no longer needed, all removable media and laptop hard drives shall be processed (sanitized, degaussed or destroyed) in accordance with security requirements applicable to DOJ;
+
+Contracting firms shall keep an accurate inventory of devices used on DOJ contracts;
+
+Rules of behavior must be signed by users.  These rules shall address at a minimum:  authorized and official use; prohibition against unauthorized users; and protection of sensitive data and personally identifiable information;
+
+All DOJ data will be removed from Contractor-owned laptops upon termination of Contractor work.  This removal must be accomplished in accordance with DOJ IT Security Standard requirements.  Certification of data removal will be performed by the Contractor's project management and a letter confirming certification will be delivered to the CO within 15 days of termination of Contractor work;
+
+
+
+b. Data Security
+
+
+
+By acceptance of, or performance on, this contract, the Contractor agrees that with respect to the data identified in paragraph a, in the event of an actual or suspected breach of such data (i.e., loss of control, compromise, unauthorized disclosure, access for an unauthorized purpose, or other unauthorized access, whether physical or electronic), the Contractor will immediately (and in no event later than within one hour or discovery) report the breach to the CO and COTR.
+
+
+
+If the data breach occurs outside of regular business hours and/or neither the CO nor the COTR can be reached, the Contractor shall call the DOJ Computer Emergency Readiness Team (DOJCERT) at 1-866-US4-CERT (1-866-874-2378) within one hour of discovery of the breach.  The Contractor shall also notify the CO as soon as possible during regular business hours.
+
+
+
+c. Personally Identifiable Information Notification Requirement
+
+
+
+The Contractor further certifies that it has a security policy in place that contains procedures to promptly notify any individual whose personally identification information (as defined by OMB) was, or is reasonably believed to have been, breached.  Any notification shall be coordinated with the Department, and shall not proceed until the Department has made a determination that notification would not impede a law enforcement investigation or jeopardize national security.  The method and content of any notification by the contract shall be coordinated with, and be subject to the approval of, the Department.  The Contractor assumes full responsibility for taking corrective action consistent with the Department's Data Breach Notification Procedures, which may include offering credit monitoring when appropriate.
+
+
+
+d. Pass-through of Security Requirements to Subcontractors
+
+
+
+The requirements set forth in Paragraphs a through c above, apply to all Subcontractors who perform work in connection with this contract.  For each Subcontractor, the Contractor must certify that it has required the Subcontractor to adhere to all such requirements.  Any breach by a Subcontractor of any of the provisions set forth in this clause will be attributed to the Contractor.
+
+
+
+B.  Information Resellers or Data Brokers
+
+
+
+Under this contract, the DOJ may obtain personally identifiable information about individuals from the Contractor.  The Contractor hereby certifies that it has a security policy in place which contains procedures to promptly notify any individual whose personally identifiable information (as defined by OMB) was, or is reasonably believed to have been, lost or acquired by an unauthorized person while the data is under the control of the Contractor.  In any case in which the data that was lost or improperly acquired reflects or consists of data that originated with the DOJ, or reflects sensitive law enforcement or national security interest in the data, the Contractor shall notify the Contracting Officer so that the DOJ may determine whether notification would impede a law enforcement investigation or jeopardize national security.  In such cases, the Contractor shall notify the individuals until it receives further instruction from the DOJ.
+
+
+
+(End of Clause)
+
+
+
+C.3.5 – Organizational Conflicts of Interest  
+
+
+
+The Contractor warrants that, to the best of its knowledge and belief, and except as otherwise set forth in this contract –  
+
+It does not have any organizational conflict of interest as defined in paragraph (b) below.
+
+The term "organizational conflict of interest" means a situation where a Contractor has interest, either due to its other activities or its relationship with other organizations, which place it in a position that may be unsatisfactory or unfavorable (1) from the Government 's standpoint in being able to secure impartial, technically sound, objective assistance and advise from the Contractor, or in securing the advantages of adequate competition in its procurement; or (2) from industry's standpoint in that unfair competitive advantages may accrue to the Contractor in question.
+
+The Contractor agrees that, if after award it discovers an organizational conflict of interest with respect to this contract, it shall make an immediate and full disclosure in writing to the Contracting Officer which shall include a description of the action which the Contractor has taken or proposes to take to avoid, eliminate, or neutralize the conflict.  The Government may, however, terminate the contract for the convenience of the Government at no cost.
+
+In the event that the Contractor was aware of an organization conflict of interest prior to the award of this contract and intentionally did not disclose the conflict to the Contracting Officer, the Government may terminate the contract at no cost to the Government.
+
+(End of Clause)
+
+C.3.6 – Notice to the Government of Delays 
+
+
+
+In the event the Contractor encounters difficulty in meeting performance requirements, or when the Contractor anticipates difficulty in complying with the contract delivery schedule or completion date, or whenever the Contractor has knowledge that any actual or potential situation is delaying or threatens to delay the timely performance of this contract, the Contractor shall immediately notify the Contracting Officer and the Contracting Officers Technical Representative (COTR) or Point of Contact (POC), in writing, giving pertinent details; provided, however, that this data shall be informational only in character and that this provision shall not be construed as a waiver by the Government of any delivery schedule or date, or any rights or remedies provided by law or under this contract.  
+
+(End of Clause)
+
+
+
+C.3.7 – Key Personnel 
+
+
+
+a. Due to the complexity, sensitivity, and high-level visibility of this effort, all personnel assigned to this task will be considered Key Personnel.  The Contractor has the sole responsibility to interview, hire, and terminate employees. The Government will not discuss salaries or benefits with any Contractor or potential hire.  
+
+
+
+b. During the first ninety (90) calendar days of performance, the Contractor shall make no substitutions of Key Personnel unless the substitution is necessitated by illness, death, or termination of employment.  After the initial ninety (90) calendar day period, the Contractor shall notify the FBI Contracting Officer and COTR in writing at least fifteen (15) calendar days in advance before removing or substituting any Key Personnel or Subcontractor(s) (if applicable) utilized for the performance of this contract.  In the event that any Key Personnel are unable to perform their duties due to death, illness, resignation or similar reasons, the Contractor shall notify the Contracting Officer and COTR in writing within fifteen (15) calendar days after the occurrence.  All information required by paragraph (c) below must be provided for any substitution or removal of Key Personnel.   
+
+
+
+c. The Contractor shall provide a detailed explanation of the circumstances necessitating the proposed substitutions, complete resumes for the proposed substitutes, and any additional information requested by the Contracting Officer.  Any proposed substitute(s) shall have qualifications that are equal to or better than those of the person(s) being replaced.  The Contracting Officer will notify the Contractor within fifteen (15) calendar days after receipt of all required information of the decision on substitutions.  This clause will be modified to reflect any approved changes of key personnel
+
+
+
+d. The Government reserves the right to request the removal of key personnel or Subcontractor(s), if any, at any time during the life of the contract.  The Contractor shall provide an acceptable replacement or replacements within ten (10) calendar days unless otherwise extended by the FBI Contracting Officer.
+
+
+
+e. The Contractor shall appoint a Program Manager who will be the Contractor’s Authorized Representative for technical and administrative performance of all services required hereunder.  The Program Manager shall provide the single point of contact through which all Contractor/Government communications, work, and technical direction shall flow.  The Program Manager shall receive and execute, on behalf of the Contractor, such technical direction as the COTR may issue within the terms and conditions of the contract.  All administrative support of Contractor technical personnel required to fulfill the tasks assigned under this contract shall be the responsibility of the Contractor.
+
+
+
+f. The Contractor shall also provide the names, title, telephone number, facsimile number and e-mail addresses for the following individuals:
+
+
+
+Contractor's Administrative Manager
+
+Contractor's Financial Manager
+
+Contractor's Program Manager
+
+Contractor’s Security Officer
+
+
+
+(End of Clause)
+
+
+
+C.3.7.1 – Key Personnel Qualifications 
+
+The Contractor's quotation shall provide resumes for all Key Personnel.  The resumes shall include details relevant to this project, and must contain the following information at minimum:  
+
+Education;
+
+Professional training;
+
+Professional registration/certification;
+
+Current Security Clearance Level, if any; 
+
+Work experience;
+
+For artist personnel, examples of work products listed as URLs to online portfolios.
+
+
+
+The Contractor shall be required to interact closely with FBI staff at various FBI facilities.  The Contractor's staff shall be available to attend meetings, discuss specific requirements and/or technical issues.  
+
+ (End of Clause)
+
+
+
+C.3.8– Travel
+
+
+
+Travel must be directly related to and required for performance of this contract, and authorized in advance and in writing by the COTR or her/his designee.  The Contractor shall be responsible for obtaining all travel tickets and per diem payments in advance.  The Government will not make advance payments of transportation, per diem, or other expanses.  The Contractor is responsible for making all travel arrangements to support its personnel under this contract.  The Contractor shall provide the COTR with receipts for all expenses incurred for Government approved travel.  Only actual expenses will be paid with no markup for overhead or profit.  Travel reimbursements will be limited to the amount funded each fiscal year unless otherwise modified.
+
+
+
+When local travel between the Contractor employee’s regular place of performance and other locations is specifically authorized by the CO in advance and in writing, transportation expenses shall be allowable under this contract. For the purposes of this clause, local travel means travel outside a 50 mile radius of the Contractor employee’s regular place of performance and does not include daily commuting or associated costs.  Contractor shall minimize local travel and encourage cost saving means of attending meetings, e.g. teleconferencing.  
+
+
+
+No costs associated with commuting to and from one’s domicile to work locations will be authorized. 
+
+
+
+The Contractor shall separately invoice the Government for all travel costs within 15 calendar days of travel.  The Government will not reimburse any invoice or claim not accompanied by a valid receipt for all charges.  
+
+(End of Clause)
+
+
+
+C.3.9 – Government Furnished Equipment, Property, or Information 
+
+The Government will provide all equipment (GFE), property (GFP), or information (GFI) to support activities for onsite work within the scope of this requirement. GFE, GFP and GFI will include: 
+
+All secure telephone and communication devices and any non-standard communication devices. 
+
+All communications equipment and interfaces to outside communications vendors, including installation to meet the conditions required by the security classification. 
+
+All furniture, computers and other associated office equipment and supplies. 
+
+3D Digital Content Creation Software.
+
+Integrated Development Environment for software engineering.
+
+Game Engine software and editing tools. 
+
+Any equipment that may be furnished by the FBI or purchased under this contract will remain the property of the FBI, which is to be for official use only.  
+
+All documents produced during the performance of this contract are the property of the FBI.  All produced documents shall be turned over to the FBI.   Contractor shall not retain any documents, whether paper based or in electronic format, for personal use, use on other Government contracts, or for historical record keeping.  
+
+Government Furnished Material
+
+Any Government Furnished Materials required for performance of the contract shall be stated in the quotation, together with the requested cost and date for delivery of such materials to the offeror.
+
+Failure of the Government to furnish the data/materials identified in the quotation within the stipulated time frame shall automatically extend the required time for delivery/performance as set forth in the contract by one day for each day of delay.
+
+Examination of Government Furnished Material (GFM)
+
+The Contractor shall carefully perform a complete inspection upon receipt of GFM for adequacy with respect to quality as well as quantity, to ascertain that all material required has been provided.  Materials found to be damaged or missing will be replaced by the Government, if reported by the Contractor within ten (10) calendar days after receipt of the GFM.  Upon acceptance by the Contractor, the Contractor assumes full responsibility for the care and safekeeping of the GFM. 
+
+Return and Shipment of Government Furnished Material
+
+All inconsumable and/or unused consumable GFM shall be returned no later than thirty (30) calendar days after contract completion.
+
+The Contractor shall be responsible for the proper care and safety of all Government property in the Contractor's possession until properly relieved of the responsibility by the Contracting Officer.
+
+The Contractor shall utilize the Government property only for those purposes authorized by this contract.
+
+The Contractor shall, immediately upon acceptance of the Government property, furnish the Contracting Officer a written receipt, itemizing all property within the Contractor's possession. Insurance coverage against theft and loss shall be immediately secured by the Contractor in amounts sufficient to guarantee benefits to the Government consistent with the value and shall continue until such time as notification of final acceptance by the Government . A Certificate of Insurance shall be furnished to the Contracting Officer together with a commitment by the insurance carrier to provide a thirty (30) calendar day advance written notice to the Contracting Officer of any material change, expiration, or cancellation in the policy.
+
+Government Property Reports – The Contractor shall submit to the Contracting Officer an annual report of Government property. The report shall include either Government furnished or Contractor acquired property for which the Contractor is accountable at its facility, any Subcontractor facility or any alternate location.  The report shall specify the contract number, item description, Serial and/or Part Number, where applicable.
+
+The Contractor shall establish and maintain an adequate control system to protect, preserve and maintain all loaned Government property. The system shall contain a technique to permit the location of any item of Government property within a reasonable period of time after request therefore.
+
+The Contractor shall report all cases of loss, damage, or destruction of Government property in the Contractor's possession or control to the Contracting Officer at the address specified in SECTION G as soon as such facts become known. The report shall contain all factual data as to the circumstances surrounding such loss or damage.
+
+Returned Government loaned property shall be inspected at destination by the Government within ten (l0) days of receipt thereof and written notification of acceptance/rejection shall be forwarded to the Contractor.
+
+The Contractor may be required to reimburse the Government for any lost or stolen equipment, or equipment that is found to be damaged due to Contractor’s negligence.   
+
+(End of Clause)
+
+
+
+
+
+C.3.10 – Government’s Right to Products of the Work 
+
+
+
+The FBI shall have full rights to the data, reports, deliverables, source code (including all project files), digital art source files (including mesh data, image data, and animation data) and all other products of this contract.  
+
+(End of Clause)
+
+
+
+C.3.11 – Drug Free Workplace 
+
+
+
+The Contractor shall take measures to prevent the introduction and utilization of illegal drugs and related paraphernalia into Government work areas.  
+
+
+
+The Contractor is responsible for the conduct of employees performing work under this contract and is responsible to assure that employees are notified of provisions relative to Drug free Workplace prior to assignment.  The removal of Contractor personnel as a result of drug offenses shall not be cause for excusable delay, nor shall such action be deemed a basis for equitable adjustment to price, delivery, or the provisions of this contract.
+
+(End of Clause)
+
+
+
+C.3.12 – Conduct 
+
+
+
+The Contractor's employees shall observe and comply with all FBI policies, regulations, and procedures concerning ethics, fire safety, security, and possession of drugs, alcohol, and firearms, or other lethal weapons.   Refer to Attachment 2 – Ethics Standards Fact sheet.
+
+
+
+(End of Clause)
+
+
+
+C.3.13 – Indemnification 
+
+Responsibility for Government Property
+
+The Contractor assumes full responsibility for and shall indemnify the Government against any and all losses or damage of whatsoever kind and nature to any and all Government property, including any equipment, supplies, accessories, or parts furnished, while in his custody and care for storage, repairs, or service to be performed under the terms of this contract, resulting in whole or in part from the negligent acts or omissions of the Contractor, any Subcontractor, or any employee, agent or representative of the Contractor or Subcontractor.
+
+If, due to the fault, negligent acts (whether of commission or omission) and/or dishonesty of the Contractor or its employees, any Government -owned or controlled property is lost or damaged as a result of the Contractor's performance of this contract, the Contractor shall be responsible to the Government for such loss or damage, and the Government, at its option, may in lieu of payment thereof, require the Contractor to replace at his own expense, all property lost or damaged.
+
+Hold Harmless and Indemnification Agreement.  The Contractor shall save and hold harmless and indemnify the Government against any and all liability claims, and cost of whatsoever kind and nature for injury to or death of any person or persons and for loss or damage to any Contractor property or property owned by a third party occurring in connection with or in any way incident to or arising out of the occupancy, use, service, operation, or performance of work under the terms of this contract, resulting in whole or in part from the acts or omissions of the Contractor, any Subcontractor, or any employee, agent, or representative of the Contractor or Subcontractor.
+
+Government’s Right of Recovery.  Nothing in the above paragraphs shall be considered to preclude the Government from receiving the benefits of any insurance the Contractor may carry which provided for the indemnification of any loss or destruction of, or damages to property in the custody and care of the Contractor where such loss, destruction or damage is to Government property.  The Contractor shall do nothing to prejudice the Government’s right to recover against third parties for any loss, destruction of, or damage to Government property, and upon the request of the Contracting Officer shall, at the Government’s expense, furnish to the Government all reasonable assistance and cooperation (including assistance in the prosecution of suit and the execution of instruments of assignment in favor of the Government) in obtaining recovery.
+
+Government Liability.  The Government shall not be liable for any injury to the Contractor's personnel or damage to the Contractor's property unless such injury or damage is due to negligence on the part of the Government and is recoverable under the Federal Torts Claims Act, or pursuant to other Federal statutory authority.
+
+
+
+(End of Clause)
+
+
+
+C.3.14 – Inherently Government al Functions
+
+
+
+The Contractor shall not perform any Inherently Government al Functions (IGF) under this contract in accordance with OMB Policy Letter 92-1, Inherently Government al Functions and FAR Subpart 7.5.  Whenever the Contractor is participating in any situation where it may be assumed that he or she is an FBI employee, the Contractor shall identify himself/herself as a Contractor employee.  If, during the course of work, through receipt of technical direction, or in carrying out the Statement of Work (SOW), any portion of the work appears to be an IGF, the Contractor shall immediately notify the Contracting Officer.  
+
+
+
+(End of Clause)
+
+
+
+C.3.15 – Continuing Contract Performance during a Pandemic Influenza or Other National Emergency
+
+During a Pandemic or other emergency we understand that our Contractor workforce will experience the same high levels of absenteeism as our federal employees.  Although the Excusable Delays and Termination for Default clauses used in Government contracts list epidemics and quarantine restrictions among the reasons to excuse delays in contract performance, we expect our Contractors to make a reasonable effort to keep performance at an acceptable level during emergency periods.
+
+The Office of Personnel Management (OPM) has provided guidance to federal managers and employees on the kinds of actions to be taken to ensure the continuity of operations during emergency periods.  This guidance is also applicable to our contract workforce.  Contractors are expected to have reasonable policies in place for continuing work performance, particularly those performing mission critical services, during a pandemic influenza, or other emergency situation.
+
+The types of actions a federal Contractor should reasonably take to help ensure performance are:
+
+Encourage employees to get inoculations or follow other preventive measures as advised by the public health service.
+
+Contractors should cross-train workers as backup for all positions performing critical services.  This is particularly important for work such as guard services where telework is not an option.
+
+Implement telework to the greatest extent possible in the workgroup so systems are in place to support successful remote work in an emergency.
+
+Communicate expectations to all employees regarding their roles and responsibilities in relation to remote work in the event of a pandemic health crisis or other emergency.
+
+Establish communication processes to notify employees of activation of this plan.
+
+Integrate pandemic health crisis response expectations into telework agreements.
+
+With the employee, assess requirements for working at home (supplies and equipment needed for an extended telework period).  Security concerns should be considered in making equipment choices; agencies or Contractors may wish to avoid use of employees' personal computers and provide them with PCs or laptops as appropriate.
+
+Determine how all employees who may telework will communicate with one another and with management to accomplish work.
+
+Practice telework regularly to ensure effectiveness.
+
+Make it clear that in emergency situations, employees must perform all duties assigned by management, even if they are outside usual or customary duties.
+
+Identify how time and attendance will be maintained.
+
+It is the Contractor's responsibility to advise the Government Contracting Officer if it anticipates not being able to perform and to work with the Government to fill gaps as necessary.  This means direct communication with the Contracting Officer or in his/her absence, another responsible person in the contracting office via telephone or email messages acknowledging the Contractors notification.  The incumbent Contractor is responsible for assisting the Government in estimating the adverse impacts of nonperformance and to work diligently with the Government to develop a strategy for maintaining the continuity of operations.
+
+The Government does reserve the right in such emergency situations to use federal employees, employees of other agencies, contract support from other existing Contractors, or to enter into new contracts for critical support services.  Any new contracting efforts would be acquired following the guidance in the Office of Federal Procurement Policy issuance "Emergency Acquisitions", May, 2007 and Subpart 18.2 Emergency Acquisition Flexibilities of the FAR. 
+
+(End of Clause)
+
+
+
+
+
+
+
+
+
+C.3.16 – JAR 2852.223-70 Unsafe Conditions Due to the Presence of Hazardous Material (June 1996)
+
+
+
+“Unsafe conditions” as used in this clause means the actual or potential exposure of Contractor or Government employees to a hazardous material as defined in Federal Standard No. 313 and any revisions thereto during the term of this contract, or any material or working conditions designated by the COTR as potentially hazardous and requiring safety controls. 
+
+The Occupational Safety and Health Administration (OSHA) is responsible for issuing and administering regulations that require Contractors to apprise its employees of all hazards to which they may be exposed in the course of their employment; proper conditions and precautions of safe use and exposure; and related symptoms and emergency treatment in the event of exposure.
+
+Prior to commencement of work, Contractors are required to inspect for and report to the CO or COTR suspected presence of any unsafe condition including asbestos or other hazardous materials or working conditions in areas in which they will be working. 
+
+If during the performance of the work under this contract, the Contractor or any of its employees or Subcontractor employees discovers the existence of an unsafe condition, the Contractor shall immediately notify the CO and COTR in writing not later than three (3) working days thereafter.  Such notice shall include the Contractor’s recommendations for the protection and safety of Government, Contractor and Subcontractor personnel and property that may be exposed. 
+
+When the Government receives notice of an unsafe condition from the Contractor, the parties will agree on a course of action to mitigate the effects of that condition, and if necessary, the contract will be amended.  Failure to agree on a course of action will constitutes a dispute under the Disputes Clause of this contract.  
+
+Nothing contained in this clause shall relieve the Contractor or Subcontractors from complying with applicable Federal, State and local laws, codes, ordinances and regulations in connection with hazardous material including but not limited to the use, disturbance or disposal of such material.  
+
+(End of Clause)
+
+
+
+C.3.17 – Subcontracting Restriction 
+
+Except as specifically approved in writing and in advance by the Contracting Officer, the Contractor shall not subcontract any work procured hereunder, unless otherwise noted in its quotation.    It is contemplated that approval will be given for subcontracting when, in the opinion of the COTR and the Contracting Officer, such subcontracting will not adversely affect the quality or delivery of the final product or the difficulty or cost of inspection and testing.  Requests for approval to subcontract shall be submitted, in writing, to the Contracting Officer.  All subcontracts shall meet all requirements as set forth for the prime.
+
+(End of Clause)
+
+
+
+PART D – Attachments
+
+Attachment 1	Statement of Work
+
+Attachment 2	Ethics Standard Fact Sheet
+
+PART E – Solicitation Provisions
+
+E.1 – Federal Acquisition Regulation (FAR) Provisions 
+
+E.1.1 – 52.252-1 -- Solicitation Provisions Incorporated by Reference (Feb 1998)
+
+This solicitation incorporates one or more solicitation provisions by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. The offeror is cautioned that the listed provisions may include blocks that must be completed by the offeror and submitted with its quotation or offer. In lieu of submitting the full text of those provisions, the offeror may identify the provision by paragraph identifier and provide the appropriate information with its quotation or offer. Also, the full text of a solicitation provision may be accessed electronically at this/these address(es): . 
+
+E.1.2 – 52.209-7 – Information Regarding Responsibility Matters (Jan 2011)
+
+(a) Definitions. As used in this provision—
+
+“Administrative proceeding” means a non-judicial process that is adjudicatory in nature in order to make a determination of fault or liability (e.g., Securities and Exchange Commission Administrative Proceedings, Civilian Board of Contract Appeals Proceedings, and Armed Services Board of Contract Appeals Proceedings). This includes administrative proceeding at the Federal and State level but only in connection with performance of a Federal contract or grant. It does not include agency actions such as contract audits, site visits, corrective plans, or inspection of deliverables.
+
+“Federal contracts and grants with total value greater than $10,000,000” means—
+
+(1) The total value of all current, active contracts and grants, including all priced options; and
+
+(2) The total value of all current, active orders including all priced options under indefinite-delivery, indefinite-quantity, 8(a), or requirements contracts (including task and delivery and multiple-award Schedules).
+
+“Principal” means an officer, director, owner, partner, or a person having primary management or supervisory responsibilities within a business entity (e.g., general manager; plant manager; head of a division or business segment; and similar positions).
+
+(b) The offeror [_] has [_] does not have current active Federal contracts and grants with total value greater than $10,000,000.
+
+(c) If the offeror checked “has” in paragraph (b) of this provision, the offeror represents, by submission of this offer, that the information it has entered in the Federal Awardee Performance and Integrity Information System (FAPIIS) is current, accurate, and complete as of the date of submission of this offer with regard to the following information:
+
+(1) Whether the offeror, and/or any of its principals, has or has not, within the last five years, in connection with the award to or performance by the offeror of a Federal contract or grant, been the subject of a proceeding, at the Federal or State level that resulted in any of the following dispositions: 
+
+(i) In a criminal proceeding, a conviction.
+
+(ii) In a civil proceeding, a finding of fault and liability that results in the payment of a monetary fine, penalty, reimbursement, restitution, or damages of $5,000 or more.
+
+(iii) In an administrative proceeding, a finding of fault and liability that results in—
+
+(A) The payment of a monetary fine or penalty of $5,000 or more; or 
+
+(B) The payment of a reimbursement, restitution, or damages in excess of $100,000.
+
+(iv) In a criminal, civil, or administrative proceeding, a disposition of the matter by consent or compromise with an acknowledgment of fault by the Contractor if the proceeding could have led to any of the outcomes specified in paragraphs (c)(1)(i), (c)(1)(ii), or (c)(1)(iii) of this provision.
+
+(2) If the offeror has been involved in the last five years in any of the occurrences listed in (c)(1) of this provision, whether the offeror has provided the requested information with regard to each occurrence.
+
+(d) The offeror shall post the information in paragraphs (c)(1)(i) through (c)(1)(iv) of this provision in FAPIIS as required through maintaining an active registration in the Central Contractor Registration database at  (see 52.204-7).
+
+(End of provision)
+
+
+
+E.1.3 – Addenda to FAR 52.212-1(b) and (g)
+
+(b) 	Submission of offers.  
+
+(1) Questions – Submit questions regarding this solicitation to Dave Smith at  no later than 1:00 pm EST, Monday, May 16, 2011.
+
+(2) Due Date for Quotations – Submit quotations to Dave Smith at  no later than 1:00 pm EST, Monday, June 6, 2011. 
+
+(g) Contract award.  The Government reserves the right to discuss with offerors all aspects of their quotations at any point throughout the evaluation process, or to make award without discussions.  Include your best terms with the initial quotation.  Quotations that are unrealistic in terms of technical commitment or priced unreasonably low or high may be rejected based on a lack of technical capability or failure to demonstrate a comprehensive understanding of the Government’s requirements.
+
+E.1.4 – 52.212-2 -- Evaluation -- Commercial Items (Jan 1999)
+
+(a) The Government will award a contract resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation will be most advantageous to the Government, price and other factors considered. The following factors, listed in descending order of importance, shall be used to evaluate offers:
+
+Price/Cost
+
+Technical capability
+
+Experience and skill of technical personnel
+
+Experience and skill of game designer / producer
+
+Staffing approach
+
+Past performance
+
+
+
+Technical capability, staffing approach, and past performance, when combined, are approximately equal in importance to price/cost.
+
+
+
+(b) Options. The Government will evaluate offers for award purposes by adding the total price for all options to the total price for the basic requirement. The Government may determine that an offer is unacceptable if the option prices are significantly unbalanced. Evaluation of options shall not obligate the Government to exercise the option(s).
+
+
+
+(c) A written notice of award or acceptance of an offer mailed or otherwise furnished to the successful offeror within the time for acceptance specified in the offer, shall result in a binding contract without further action by either party. Before the offer’s specified expiration time, the Government may accept an offer (or part of an offer), whether or not there are negotiations after its receipt, unless a written notice of withdrawal is received before award.
+
+(End of provision)
+
+E.1.5 – 52.2123 -- Offeror Representations and Certifications—Commercial Items (Oct 2010) 
+
+An offeror shall complete only paragraph (b) of this provision if the offeror has completed the annual representations and certificates electronically at . If an offeror has not completed the annual representations and certifications electronically at the ORCA website, the offeror shall complete only paragraphs (c) through (o) of this provision.
+
+(a) Definitions. As used in this provision--
+
+“Emerging small business” means a small business concern whose size is no greater than 50 percent of the numerical size standard for the NAICS code designated.
+
+“Forced or indentured child labor” means all work or service—
+
+(1) Exacted from any person under the age of 18 under the menace of any penalty for its nonperformance and for which the worker does not offer himself voluntarily; or
+
+(2) Performed by any person under the age of 18 pursuant to a contract the enforcement of which can be accomplished by process or penalties.
+
+“Inverted domestic corporation” means a foreign incorporated entity which is treated as an inverted domestic corporation under 6 U.S.C. 395(b), i.e., a corporation that used to be incorporated in the United States, or used to be a partnership in the United States, but now is incorporated in a foreign country, or is a subsidiary whose parent corporation is incorporated in a foreign country, that meets the criteria specified in 6 U.S.C. 395(b), applied in accordance with the rules and definitions of 6 U.S.C. 395(c).
+
+“Manufactured end product” means any end product in Federal Supply Classes (FSC) 1000-9999, except—
+
+(1) FSC 5510, Lumber and Related Basic Wood Materials;
+
+(2) Federal Supply Group (FSG) 87, Agricultural Supplies;
+
+(3) FSG 88, Live Animals;
+
+(4) FSG 89, Food and Related Consumables;
+
+(5) FSC 9410, Crude Grades of Plant Materials;
+
+(6) FSC 9430, Miscellaneous Crude Animal Products, Inedible;
+
+(7) FSC 9440, Miscellaneous Crude Agricultural and Forestry Products;
+
+(8) FSC 9610, Ores;
+
+(9) FSC 9620, Minerals, Natural and Synthetic; and
+
+(10) FSC 9630, Additive Metal Materials.
+
+“Place of manufacture” means the place where an end product is assembled out of components, or otherwise made or processed from raw materials into the finished product that is to be provided to the Government. If a product is disassembled and reassembled, the place of reassembly is not the place of manufacture.
+
+“Restricted business operations” means business operations in Sudan that include power production activities, mineral extraction activities, oil-related activities, or the production of military equipment, as those terms are defined in the Sudan Accountability and Divestment Act of 2007 (Pub. L. 110-174). Restricted business operations do not include business operations that the person (as that term is defined in Section 2 of the Sudan Accountability and Divestment Act of 2007) conducting the business can demonstrate—
+
+(1) Are conducted under contract directly and exclusively with the regional government of southern ;
+
+(2) Are conducted pursuant to specific authorization from the Office of Foreign Assets Control in the Department of the Treasury, or are expressly exempted under Federal law from the requirement to be conducted under such authorization;
+
+(3) Consist of providing goods or services to marginalized populations of ;
+
+(4) Consist of providing goods or services to an internationally recognized peacekeeping force or humanitarian organization;
+
+(5) Consist of providing goods or services that are used only to promote health or education; or
+
+(6) Have been voluntarily suspended.
+
+“Service-disabled veteran-owned small business concern”—
+
+(1) Means a small business concern—
+
+(i) Not less than 51 percent of which is owned by one or more service-disabled veterans or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more service-disabled veterans; and
+
+(ii) The management and daily business operations of which are controlled by one or more service-disabled veterans or, in the case of a service-disabled veteran with permanent and severe disability, the spouse or permanent caregiver of such veteran.
+
+(2) Service-disabled veteran means a veteran, as defined in 38 U.S.C. 101(2), with a disability that is service-connected, as defined in 38 U.S.C. 101(16).
+
+“Small business concern” means a concern, including its affiliates, that is independently owned and operated, not dominant in the field of operation in which it is bidding on Government contracts, and qualified as a small business under the criteria in 13  Part 121 and size standards in this solicitation.
+
+“Veteran-owned small business concern” means a small business concern—
+
+(1) Not less than 51 percent of which is owned by one or more veterans(as defined at 38 U.S.C. 101(2)) or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more veterans; and
+
+(2) The management and daily business operations of which are controlled by one or more veterans.
+
+“Women-owned business concern” means a concern which is at least 51 percent owned by one or more women; or in the case of any publicly owned business, at least 51 percent of the its stock is owned by one or more women; and whose management and daily business operations are controlled by one or more women. 
+
+“Women-owned small business concern” means a small business concern --
+
+(1) That is at least 51 percent owned by one or more women or, in the case of any publicly owned business, at least 51 percent of the stock of which is owned by one or more women; and
+
+(2) Whose management and daily business operations are controlled by one or more women.
+
+(b) 
+
+(1) Annual Representations and Certifications. Any changes provided by the offeror in paragraph (b)(2) of this provision do not automatically change the representations and certifications posted on the Online Representations and Certifications Application (ORCA) website.
+
+(2) The offeror has completed the annual representations and certifications electronically via the ORCA website at  .After reviewing the ORCA database information, the offeror verifies by submission of this offer that the representation and certifications currently posted electronically at FAR 52.212-3, Offeror Representations and Certifications—Commercial Items, have been entered or updated in the last 12 months, are current, accurate, complete, and applicable to this solicitation (including the business size standard applicable to the NAICS code referenced for this solicitation), as of the date of this offer and are incorporated in this offer by reference (see FAR 4.1201), except for paragraphs ____________. [Offeror to identify the applicable paragraphs at (c) through (o) of this provision that the offeror has completed for the purposes of this solicitation only, if any. These amended representation(s) and/or certification(s) are also incorporated in this offer and are current, accurate, and complete as of the date of this offer. Any changes provided by the offeror are applicable to this solicitation only, and do not result in an update to the representations and certifications posted on ORCA.]
+
+
+
+(c) Offerors must complete the following representations when the resulting contract is to be performed in the  or its outlying areas. Check all that apply.
+
+(1) Small business concern. The offeror represents as part of its offer that it [_] is, [_] is not a small business concern.
+
+(2) Veteran-owned small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this provision.] The offeror represents as part of its offer that it [_] is, [_] is not a veteran-owned small business concern.
+
+(3) Service-disabled veteran-owned small business concern. [Complete only if the offeror represented itself as a veteran-owned small business concern in paragraph (c)(2) of this provision.] The offeror represents as part of its offer that it [_] is, [_] is not a service-disabled veteran-owned small business concern.
+
+(4) Small disadvantaged business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this provision.] The offeror represents, for general statistical purposes, that it [_] is, [_] is not, a small disadvantaged business concern as defined in 13  .
+
+(5) Women-owned small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this provision.] The offeror represents that it [_] is, [_] is not a women-owned small business concern.
+
+Note: Complete paragraphs (c)(6) and (c)(7) only if this solicitation is expected to exceed the simplified acquisition threshold.
+
+(6) Women-owned business concern (other than small business concern). [Complete only if the offeror is a women-owned business concern and did not represent itself as a small business concern in paragraph (c)(1) of this provision.]. The offeror represents that it [_] is, a women-owned business concern.
+
+(7) Tie bid priority for labor surplus area concerns. If this is an invitation for bid, small business offerors may identify the labor surplus areas in which costs to be incurred on account of manufacturing or production (by offeror or first-tier subcontractors) amount to more than 50 percent of the contract price:
+
+___________________________________________
+
+(8) Small Business Size for the Small Business Competitiveness Demonstration Program and for the Targeted Industry Categories under the Small Business Competitiveness Demonstration Program. [Complete only if the offeror has represented itself to be a small business concern under the size standards for this solicitation.]
+
+(i) [Complete only for solicitations indicated in an addendum as being set-aside for emerging small businesses in one of the designated industry groups (DIGs).] The offeror represents as part of its offer that it [_] is, [_] is not an emerging small business.
+
+(ii) [Complete only for solicitations indicated in an addendum as being for one of the targeted industry categories (TICs) or designated industry groups (DIGs).] Offeror represents as follows:
+
+(A) Offeror’s number of employees for the past 12 months (check the Employees column if size standard stated in the solicitation is expressed in terms of number of employees); or
+
+(B) Offeror’s average annual gross revenue for the last 3 fiscal years (check the Average Annual Gross Number of Revenues column if size standard stated in the solicitation is expressed in terms of annual receipts).
+
+(Check one of the following):
+
+
+(9) [Complete only if the solicitation contains the clause at FAR 52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns, or FAR 52.219-25, Small Disadvantaged Business Participation Program—Disadvantaged Status and Reporting, and the offeror desires a benefit based on its disadvantaged status.]
+
+(i) General. The offeror represents that either—
+
+(A) It [_] is, [_] is not certified by the Small Business Administration as a small disadvantaged business concern and identified, on the date of this representation, as a certified small disadvantaged business concern in the database maintained by the Small Business Administration (PRO-Net), and that no material change in disadvantaged ownership and control has occurred since its certification, and, where the concern is owned by one or more individuals claiming disadvantaged status, the net worth of each individual upon whom the certification is based does not exceed $750,000 after taking into account the applicable exclusions set forth at 13  124.104(c)(2); or
+
+(B) It [_] has, [_] has not submitted a completed application to the Small Business Administration or a Private Certifier to be certified as a small disadvantaged business concern in accordance with 13  124, Subpart B, and a decision on that application is pending, and that no material change in disadvantaged ownership and control has occurred since its application was submitted.
+
+(ii) Joint Ventures under the Price Evaluation Adjustment for Small Disadvantaged Business Concerns. The offeror represents, as part of its offer, that it is a joint venture that complies with the requirements in 13  (f) and that the representation in paragraph (c)(9)(i) of this provision is accurate for the small disadvantaged business concern that is participating in the joint venture. [The offeror shall enter the name of the small disadvantaged business concern that is participating in the joint venture: ________________.]
+
+(10) HUBZone small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this provision.] The offeror represents, as part of its offer, that--
+
+(i) It [_] is, [_] is not a HUBZone small business concern listed, on the date of this representation, on the List of Qualified HUBZone Small Business Concerns maintained by the Small Business Administration, and no material change in ownership and control, principal office, or HUBZone employee percentage has occurred since it was certified by the Small Business Administration in accordance with 13  part 126; and
+
+(ii) It [_] is, [_] not a joint venture that complies with the requirements of 13  part 126, and the representation in paragraph (c)(10)(i) of this provision is accurate for the HUBZone small business concern or concerns that are participating in the joint venture. [The offeror shall enter the name or names of the HUBZone small business concern or concerns that are participating in the joint venture: __________.] Each HUBZone small business concern participating in the joint venture shall submit a separate signed copy of the HUBZone representation.
+
+
+
+(d) Representations required to implement provisions of Executive Order 11246 --
+
+(1) Previous contracts and compliance. The offeror represents that --
+
+(i) It [_] has, [_] has not, participated in a previous contract or subcontract subject to the Equal Opportunity clause of this solicitation; and
+
+(ii) It [_] has, [_] has not, filed all required compliance reports.
+
+(2) Affirmative Action Compliance. The offeror represents that --
+
+(i) It [_] has developed and has on file, [_] has not developed and does not have on file, at each establishment, affirmative action programs required by rules and regulations of the Secretary of Labor (41  parts 60-1 and 60-2), or
+
+(ii) It [_] has not previously had contracts subject to the written affirmative action programs requirement of the rules and regulations of the Secretary of Labor.
+
+
+
+(e) Certification Regarding Payments to Influence Federal Transactions (31 U.S.C. 1352). (Applies only if the contract is expected to exceed $150,000.) By submission of its offer, the offeror certifies to the best of its knowledge and belief that no Federal appropriated funds have been paid or will be paid to any person for influencing or attempting to influence an officer or employee of any agency, a Member of Congress, an officer or employee of Congress or an employee of a Member of Congress on his or her behalf in connection with the award of any resultant contract. If any registrants under the Lobbying Disclosure Act of 1995 have made a lobbying contact on behalf of the offeror with respect to this contract, the offeror shall complete and submit, with its offer, OMB Standard Form , Disclosure of Lobbying Activities, to provide the name of the registrants. The offeror need not report regularly employed officers or employees of the offeror to whom payments of reasonable compensation were made.
+
+(f) Buy American Act Certificate. (Applies only if the clause at Federal Acquisition Regulation (FAR) 52.225-1, Buy American Act – Supplies, is included in this solicitation.)
+
+(1) The offeror certifies that each end product, except those listed in paragraph (f)(2) of this provision, is a domestic end product and that for other than COTS items, the offeror has considered components of unknown origin to have been mined, produced, or manufactured outside the United States. The offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as domestic end products, i.e., an end product that is not a COTS item and does not meet the component test in paragraph (2) of the definition of “domestic end product.” The terms “commercially available off-the-shelf (COTS) item,” “component,” “domestic end product,” “end product,” “foreign end product,” and “” are defined in the clause of this solicitation entitled “Buy American Act—Supplies.”
+
+(2) Foreign End Products:
+
+[List as necessary]
+
+(3) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25.
+
+(g)
+
+(1) Buy American Act -- Free Trade Agreements -- Israeli Trade Act Certificate. (Applies only if the clause at FAR 52.225-3, Buy American Act -- Free Trade Agreements -- Israeli Trade Act, is included in this solicitation.)
+
+(i) The offeror certifies that each end product, except those listed in paragraph (g)(1)(ii) or (g)(1)(iii) of this provision, is a domestic end product and that for other than COTS items, the offeror has considered components of unknown origin to have been mined, produced, or manufactured outside the United States. The terms “Bahrainian, Moroccan, Omani, or Peruvian end product,” “commercially available off-the-shelf (COTS) item,” “component,” “domestic end product,” “end product,” “foreign end product,” “Free Trade Agreement country,” “Free Trade Agreement country end product,” “Israeli end product,” and ‘United States’ are defined in the clause of this solicitation entitled “Buy American Act--Free Trade Agreements--Israeli Trade Act.”
+
+(ii) The offeror certifies that the following supplies are Free Trade Agreement country end products (other than Bahrainian, Moroccan, Omani, or Peruvian end products) or Israeli end products as defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli Trade Act”:
+
+Free Trade Agreement Country End Products (Other than Bahrainian or Moroccan End Products) or Israeli End Products:
+
+[List as necessary]
+
+(iii) The offeror shall list those supplies that are foreign end products (other than those listed in paragraph (g)(1)(ii) or this provision) as defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli Trade Act.” The offeror shall list as other foreign end products those end products manufactured in the United States that do not qualify as domestic end products, i.e., an end product that is not a COTS item and does not meet the component test in paragraph (2) of the definition of “domestic end product.”
+
+Other Foreign End Products:
+
+[List as necessary]
+
+(iv) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25.
+
+(2) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate, Alternate I. If Alternate I to the clause at FAR 52.225-3 is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision:
+
+(g)(1)(ii) The offeror certifies that the following supplies are Canadian end products as defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli Trade Act”:
+
+Canadian End Products:
+
+Line Item No.:
+
+___________________________________________
+
+[List as necessary]
+
+(3) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate, Alternate II. If Alternate II to the clause at FAR 52.225-3 is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision:
+
+(g)(1)(ii) The offeror certifies that the following supplies are Canadian end products or Israeli end products as defined in the clause of this solicitation entitled ``Buy American Act--Free Trade Agreements--Israeli Trade Act'':
+
+Canadian or Israeli End Products:
+
+[List as necessary]
+
+(4) Trade Agreements Certificate. (Applies only if the clause at FAR 52.225-5, Trade Agreements, is included in this solicitation.)
+
+(i) The offeror certifies that each end product, except those listed in paragraph (g)(4)(ii) of this provision, is a U.S.-made or designated country end product as defined in the clause of this solicitation entitled “Trade Agreements.”
+
+(ii) The offeror shall list as other end products those end products that are not U.S.-made or designated country end products.
+
+Other End Products
+
+[List as necessary]
+
+(iii) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25. For line items covered by the WTO GPA, the Government will evaluate offers of U.S.-made or designated country end products without regard to the restrictions of the Buy American Act. The Government will consider for award only offers of U.S.-made or designated country end products unless the Contracting Officer determines that there are no offers for such products or that the offers for such products are insufficient to fulfill the requirements of the solicitation.
+
+(h) Certification Regarding Responsibility Matters (Executive Order 12689). (Applies only if the contract value is expected to exceed the simplified acquisition threshold.) The offeror certifies, to the best of its knowledge and belief, that the offeror and/or any of its principals--
+
+(1) [_] Are, [_] are not presently debarred, suspended, proposed for debarment, or declared ineligible for the award of contracts by any Federal agency; 
+
+(2) [_] Have, [_] have not, within a three-year period preceding this offer, been convicted of or had a civil judgment rendered against them for: commission of fraud or a criminal offense in connection with obtaining, attempting to obtain, or performing a Federal, state or local government contract or subcontract; violation of Federal or state antitrust statutes relating to the submission of offers; or commission of embezzlement, theft, forgery, bribery, falsification or destruction of records, making false statements, tax evasion, violating Federal criminal tax laws, or receiving stolen property; and
+
+(3) [_] Are, [_] are not presently indicted for, or otherwise criminally or civilly charged by a Government entity with, commission of any of these offenses enumerated in paragraph (h)(2) of this clause; and
+
+(4) [_] Have, [_] have not, within a three-year period preceding this offer, been notified of any delinquent Federal taxes in an amount that exceeds $3,000 for which the liability remains unsatisfied.
+
+(i) Taxes are considered delinquent if both of the following criteria apply:
+
+(A) The tax liability is finally determined. The liability is finally determined if it has been assessed. A liability is not finally determined if there is a pending administrative or judicial challenge. In the case of a judicial challenge to the liability, the liability is not finally determined until all judicial appeal rights have been exhausted.
+
+(B) The taxpayer is delinquent in making payment. A taxpayer is delinquent if the taxpayer has failed to pay the tax liability when full payment was due and required. A taxpayer is not delinquent in cases where enforced collection action is precluded.
+
+(ii) Examples.
+
+(A) The taxpayer has received a statutory notice of deficiency, under I.R.C. §6212, which entitles the taxpayer to seek Tax Court review of a proposed tax deficiency. This is not a delinquent tax because it is not a final tax liability. Should the taxpayer seek Tax Court review, this will not be a final tax liability until the taxpayer has exercised all judicial appear rights.
+
+(B) The  has filed a notice of Federal tax lien with respect to an assessed tax liability, and the taxpayer has been issued a notice under I.R.C. §6320 entitling the taxpayer to request a hearing with the  Office of Appeals Contesting the lien filing, and to further appeal to the Tax Court if the  determines to sustain the lien filing. In the course of the hearing, the taxpayer is entitled to contest the underlying tax liability because the taxpayer has had no prior opportunity to contest the liability. This is not a delinquent tax because it is not a final tax liability. Should the taxpayer seek tax court review, this will not be a final tax liability until the taxpayer has exercised all judicial appeal rights.
+
+(C) The taxpayer has entered into an installment agreement pursuant to I.R.C. §6159. The taxpayer is making timely payments and is in full compliance with the agreement terms. The taxpayer is not delinquent because the taxpayer is not currently required to make full payment.
+
+(D) The taxpayer has filed for bankruptcy protection. The taxpayer is not delinquent because enforced collection action is stayed under 11 U.S.C. §362 (the Bankruptcy Code).
+
+(i) Certification Regarding Knowledge of Child Labor for Listed End Products (Executive Order 13126). [The Contracting Officer must list in paragraph (i)(1) any end products being acquired under this solicitation that are included in the List of Products Requiring Contractor Certification as to Forced or Indentured Child Labor, unless excluded at 22.1503(b).]
+
+(1) Listed End Product
+
+(2) Certification. [If the Contracting Officer has identified end products and countries of origin in paragraph (i)(1) of this provision, then the offeror must certify to either (i)(2)(i) or (i)(2)(ii) by checking the appropriate block.]
+
+[_] (i) The offeror will not supply any end product listed in paragraph (i)(1) of this provision that was mined, produced, or manufactured in the corresponding country as listed for that product.
+
+[_] (ii) The offeror may supply an end product listed in paragraph (i)(1) of this provision that was mined, produced, or manufactured in the corresponding country as listed for that product. The offeror certifies that is has made a good faith effort to determine whether forced or indentured child labor was used to mine, produce, or manufacture any such end product furnished under this contract. On the basis of those efforts, the offeror certifies that it is not aware of any such use of child labor.
+
+(j) Place of manufacture. (Does not apply unless the solicitation is predominantly for the acquisition of manufactured end products.) For statistical purposes only, the offeror shall indicate whether the place of manufacture of the end products it expects to provide in response to this solicitation is predominantly—
+
+(1) [_] In the United States (Check this box if the total anticipated price of offered end products manufactured in the United States exceeds the total anticipated price of offered end products manufactured outside the United States); or 
+
+(2) [_] Outside the .
+
+(k) Certificates regarding exemptions from the application of the Service Contract Act. (Certification by the offeror as to its compliance with respect to the contract also constitutes its certification as to compliance by its subcontractor if it subcontracts out the exempt services.) [The contracting officer is to check a box to indicate if paragraph (k)(1) or (k)(2) applies.]
+
+(1) [_] Maintenance, calibration, or repair of certain equipment as described in FAR 22.1003-4(c)(1). The offeror [_] does [_] does not certify that—
+
+(i) The items of equipment to be serviced under this contract are used regularly for other than Governmental purposes and are sold or traded by the offeror (or subcontractor in the case of an exempt subcontract) in substantial quantities to the general public in the course of normal business operations;
+
+(ii) The services will be furnished at prices which are, or are based on, established catalog or market prices (see FAR 22.1003-4(c)(2)(ii)) for the maintenance, calibration, or repair of such equipment; and
+
+(iii) The compensation (wage and fringe benefits) plan for all service employees performing work under the contract will be the same as that used for these employees and equivalent employees servicing the same equipment of commercial customers.
+
+(2) [_] Certain services as described in FAR 22.1003-4(d)(1). The offeror [_] does [_] does not certify that—
+
+(i) The services under the contract are offered and sold regularly to non-Governmental customers, and are provided by the offeror (or subcontractor in the case of an exempt subcontract) to the general public in substantial quantities in the course of normal business operations;
+
+(ii) The contract services will be furnished at prices that are, or are based on, established catalog or market prices (see FAR 22.1003-4(d)(2)(iii));
+
+(iii) Each service employee who will perform the services under the contract will spend only a small portion of his or her time (a monthly average of less than 20 percent of the available hours on an annualized basis, or less than 20 percent of available hours during the contract period if the contract period is less than a month) servicing the Government contract; and
+
+(iv) The compensation (wage and fringe benefits) plan for all service employees performing work under the contract is the same as that used for these employees and equivalent employees servicing commercial customers.
+
+(3) If paragraph (k)(1) or (k)(2) of this clause applies—
+
+(i) If the offeror does not certify to the conditions in paragraph (k)(1) or (k)(2) and the Contracting Officer did not attach a Service Contract Act wage determination to the solicitation, the offeror shall notify the Contracting Officer as soon as possible; and
+
+(ii) The Contracting Officer may not make an award to the offeror if the offeror fails to execute the certification in paragraph (k)(1) or (k)(2) of this clause or to contact the Contracting Officer as required in paragraph (k)(3)(i) of this clause.
+
+(l) Taxpayer identification number () (26 U.S.C. 6109, 31 U.S.C. 7701). (Not applicable if the offeror is required to provide this information to a central contractor registration database to be eligible for award.)
+
+(1) All offerors must submit the information required in paragraphs (l)(3) through (l)(5) of this provision to comply with debt collection requirements of 31 U.S.C. 7701(c) and 3325(d), reporting requirements of 26 U.S.C. 6041, 6041A, and 6050M, and implementing regulations issued by the Internal Revenue Service ().
+
+(2) The  may be used by the government to collect and report on any delinquent amounts arising out of the offeror’s relationship with the Government (31 U.S.C. 7701(c)(3)). If the resulting contract is subject to the payment reporting requirements described in FAR 4.904, the  provided hereunder may be matched with  records to verify the accuracy of the offeror’s .]
+
+(3) Taxpayer Identification Number ().
+
+[_] :_____________________.
+
+[_]  has been applied for.
+
+[_]  is not required because:
+
+[_] Offeror is a nonresident alien, foreign corporation, or foreign partnership that does not have income effectively connected with the conduct of a trade or business in the United States and does not have an office or place of business or a fiscal paying agent in the United States;
+
+[_] Offeror is an agency or instrumentality of a foreign government;
+
+[_] Offeror is an agency or instrumentality of the Federal Government;
+
+(4) Type of organization.
+
+[_] Sole proprietorship;
+
+[_] Partnership;
+
+[_] Corporate entity (not tax-exempt);
+
+[_] Corporate entity (tax-exempt);
+
+[_] Government entity (Federal, State, or local);
+
+[_] Foreign government;
+
+[_] International organization per 26  1.6049-4;
+
+[_] Other ____________________.
+
+(5) Common parent.
+
+[_] Offeror is not owned or controlled by a common parent:
+
+[_] Name and  of common parent:
+
+Name ____________________________________
+
+ ______________________________________
+
+(m) Restricted business operations in . By submission of its offer, the offeror certifies that the offeror does not conduct any restricted business operations in .
+
+(n) Prohibition on Contracting with Inverted Domestic Corporations.
+
+(1) Relation to Internal Revenue Code. A foreign entity that is treated as an inverted domestic corporation for purposes of the Internal Revenue Code at 26 U.S.C. 7874 (or would be except that the inversion transactions were completed on or before ), is also an inverted domestic corporation for purposes of 6 U.S.C. 395 and for this solicitation provision (see FAR 9.108).
+
+(2) Representation. By submission of its offer, the offeror represents that it is not an inverted domestic corporation and is not a subsidiary of one.
+
+(o) Sanctioned activities relating to . 
+
+(1) Unless a waiver is granted or an exception applies as provided in paragraph (o)(2) of this provision, by submission of its offer, the offeror certifies that the offeror, or any person owned or controlled by the offeror, does not engage in any activities for which sanctions may be imposed under section 5 of the Iran Sanctions Act of 1996.
+
+(2) The certification requirement of paragraph (o)(1) of this provision does not apply if--
+
+(i) This solicitation includes a trade agreements certification (e.g., 52.212-3(g) or a comparable agency provision); and
+
+(ii) The offeror has certified that all the offered products to be supplied are designated country end products.			
+
+(End of provision) 
+
+E.1.6 – 52.233-2 -- Service of Protest (Aug 1996)
+
+(a) Protests, as defined in section 33.101 of the Federal Acquisition Regulation, that are filed directly with an agency, and copies of any protests that are filed with the General Accounting Office (GAO), shall be served on the  Chief Contracting Officer (addressed as follows) by obtaining written and dated acknowledgment of receipt from:
+
+
+
+Deborah Broderick
+
+Federal Bureau of Investigation
+
+935 Pennsylvania Avenue NW, Room 6823
+
+Washington DC 20535-0001
+
+(b) The copy of any protest shall be received in the office designated above within one day of filing a protest with the GAO.
+
+(End of provision)
+
+E.2 – Composition of Quotations
+
+Clearly and specifically describe your approach to achieving the requirements of the solicitation.  Provide sufficient detail to enable a thorough Government evaluation.  It is unacceptable to use general, ambiguous, or vague statements such as will use standard procedures, established industry practice, or comply with specifications.  Quotations received with inadequate information may be determined unacceptable.  
+
+Fully address each evaluation factor in the appropriate section of the quotation, but do not repeat information in multiple sections.  Where the same information is necessary in other sections, refer to the initial discussion and identify its location within the quotation.  Include assumptions, conditions, or exceptions to any of the terms and conditions of this solicitation including the SOW. Cross-reference the quotation as appropriate to facilitate traceability.  
+
+Submit quotations using an 8 ½ by 11 inch page format with a minimum 12-point font, single-spaced, one-inch margins, and pages numbered consecutively.  Page limitations for each section appear in the following table.  Pages exceeding the limits will not be accepted nor evaluated.  
+
+
+
+
+
+
+
+E.2.1 – Section 1 – Administrative
+
+Follow the instructions in 52.212-1(b).	
+
+E.2.2 – Section 2 – Technical Capability
+
+When addressing technical capabilities, it is more important to describe the capabilities and experience of the technical personnel, rather than the company's general approach to achieving results.
+
+Use concise, unambiguous descriptions of technical knowledge and capability of technical personnel, relevant experience, and specifically the proposed personnel's experience developing interactive projects using modern game engines such as Unreal Engine 3 (or UDK) or Unity.  
+
+Provide specific labor categories and the number of hours required to staff and deliver all tasks.  Address all relevant qualifications, experience, and the availability of proposed staff.  Detail the actions that will be taken to ensure coverage when Key Personnel are absent (illness, vacation, etc.).  Include letters of commitment for any Key Personnel who are not currently on staff.  
+
+E.2.2.1 – Subfactor: Experience and skill of technical personnel
+
+The experience and skill of technical personnel subfactor assesses the present technical capabilities of the Offeror's proposed staff.  Each of the below subfactors are of equal importance.  Subfactors  ratings will be made based on only the Offeror’s proposed staff’s experience, NOT on the general capabilities of the Offeror's company at-large (except for Staffing Approach Factor).  Ratings will be based on the proposed staff's resumes (for experience) and on the results of testing the skills of the technical personnel in the following areas (different tests for software engineers and artists):
+
+
+
+1.  Expertise in 3D Modeling and Animating for real-time game engines (artists). This subfactor assesses the Offeror's ability to propose a staff with the necessary expertise to create the 3D digital art assets for the interactive crime scene training simulation project that will be required to support this task.  The personnel assigned to this task should be adequately trained to fulfill the requirements of this task.
+
+
+
+2.  Experience working with Unreal Engine 3 content creation tools (artists & engineers). This subfactor assesses the Offeror's demonstrated ability to create content that works with the Unreal Engine 3 set of design tools.
+
+
+
+3.  Expertise in 2D art and GUI development using Flash (artists). This subfactor assesses the Offeror's experience in creating graphical user interfaces for games or simulations using Adobe Flash.
+
+
+
+4.  Concept Art Design (artists). This subfactor assesses the Offeror's ability to design effective concept art to visually communicate a design prior to implementation within agreed upon deadlines.
+
+
+
+5. Expertise in software engineering, specifically for games or interactive training simulations. (engineers). This subfactor assesses the Offeror's ability to design and develop professional software, of high quality and free of bugs, using Unity 3D and the Unreal Engine 3 or Unreal Development Kit environment.
+
+
+
+6. Experience in designing simulation and game software for educational or training products. (engineers). This subfactor assesses the Offeror's ability to design high quality training products using sound educational design and elements of game design to create an innovative, engaging and valuable learning experience for students through software.
+
+
+
+E.2.2.3 – Subfactor: Experience and skill of game designer/producer
+
+The experience and skill of game designer/producer subfactor assesses the present technical capabilities of the Offeror's proposed staff.   See requirements in SOW 2.5.3.
+
+
+
+E.2.3 – Section 3 – Staffing Approach
+
+The Staffing Approach Factor assesses the Offeror’s ability to efficiently and effectively staff the project.   The Contractor's quotation will be evaluated by the Government to determine the extent to which the Contractor has proven experience recruiting, evaluating, hiring and retaining artists and software engineers with appropriate levels of technical skill to satisfy these requirements and produce a high quality product.
+
+
+
+Provide current resumes (updated within the past year) not exceeding 3 pages each.  Use the same format for all resumes and include information on education, background, recent & relevant work experience, and specific technical accomplishments.  Indicate experience with the FBI and/or previous or current experience on similar projects.  Also notate possession of any current or past security clearance including information regarding issuer and current status.  It is not required that personnel possess a security clearance at time of contract award, but since a Secret clearance must be obtained for access to the work location, it is preferable for personnel to already possess or have previously possessed a clearance.
+
+E.2.4 – Section 4 – Past Performance
+
+See 52.212-1(b)(10).  
+
+E.2.5 – Section 5 – Price/Cost 
+
+Do not include pricing information in any other section of the quotation.  
+
+
+
+Submit fixed prices for each CLIN in the format provided in Part B.2 – Pricing.  Quote labor categories that best match the skills and experience required by the solicitation, providing quantity of hours for each category, hourly rates, extended amounts, total amount for each CLIN, and a grand total for the base and each optional period of performance.  
+
+
+
+Provide backup pricing information in a MS Excel workbook, using one worksheet for each CLIN and a separate worksheet for Other Direct Costs (ODCs).   Provide the breakdown of hourly rates to include the direct and indirect cost elements, overhead, and profit.   Use explanatory notes as necessary.  Include the company name and the RFQ number in all file names.
+
+
+
+The price/cost evaluation will be based on price and cost analysis to determine whether price quotations are complete, reasonable, and realistic. Pricing should reflect a clear understanding of the requirements and consistency with the technical quotation.   
+
+E.3 – Evaluation Rating Methodology	
+
+The Offeror whose quotation is most advantageous to the Government (based solely on the written information provided in the quotation) will be offered the opportunity to submit their proposed personnel for testing at the FBI Academy (different tests for the artists and engineers as defined in the Requirements section of the SOW).  Provided that all the Offeror's personnel achieve a passing score on their test, the contract will be awarded to that Offeror.  If some but not all of the personnel achieve a passing score, the Offeror will be given one opportunity to submit substitute personnel to testing, no later than 15 business days after the initial test.  If the substitute personnel do not pass testing, the Government will proceed to test additional Offerors in the order that is most advantageous to the Government.
+
+
+
+The FBI intends to award this contract to one vendor. 
+
+
+
+Contract Line Item No. (CLIN)
+
+Program
+
+Location 
+
+Price 1
+
+0001a
+
+Crime Scene Training Simulation
+
+FBI Academy
+
+ $ 
+
+0001b
+
+TACSIM (JSS)
+
+FBI Academy
+
+ $ 
+
+0001c
+
+VIRTSIM
+
+FBI Academy
+
+ $ 
+
+Total Price for all labor and deliverables1
+
+Total Price for all labor and deliverables1
+
+Total Price for all labor and deliverables1
+
+ $ 
+
+0001d
+
+Other Direct Costs (ODC), estimated 2
+
+Other Direct Costs (ODC), estimated 2
+
+ $ 
+
+
+
+Contract Line Item No. (CLIN)
+
+Program
+
+Location 
+
+Price 1
+
+0002a
+
+Crime Scene Training
+
+FBI Academy
+
+ $ 
+
+0002b
+
+TACSIM
+
+FBI Academy
+
+ $ 
+
+0002c
+
+VIRTSIM
+
+FBI Academy
+
+ $ 
+
+Total Price for all labor and deliverables1
+
+Total Price for all labor and deliverables1
+
+Total Price for all labor and deliverables1
+
+ $ 
+
+0002d
+
+Other Direct Costs (ODC), estimated 2
+
+Other Direct Costs (ODC), estimated 2
+
+ $ 
+
+
+
+Contract Line Item No. (CLIN)
+
+Program
+
+Location 
+
+Price 1
+
+0003a
+
+Crime Scene Training
+
+FBI Academy
+
+ $ 
+
+0003b
+
+TACSIM
+
+FBI Academy
+
+ $ 
+
+0003c
+
+VIRTSIM
+
+FBI Academy
+
+ $ 
+
+Total Price for all labor and deliverables1
+
+Total Price for all labor and deliverables1
+
+Total Price for all labor and deliverables1
+
+ $ 
+
+0003d
+
+Other Direct Costs (ODC), estimated 2
+
+Other Direct Costs (ODC), estimated 2
+
+ $ 
+
+
+
+52.204-9
+
+Personal Identity Verification of Contractor Personnel (Jan 2011)
+
+52.204-10
+
+Reporting Executive Compensation and First-Tier Subcontract Awards (Jul 2010)
+
+52.212-4
+
+Contract Terms and Conditions -- Commercial Items (Jun 2010)
+
+52.219-9
+
+Small Business Subcontracting Plan (Jan 2011)
+
+
+
+52.212-1
+
+Instructions to Offerors -- Commercial Items (Jun 2008)
+
+52.225-25
+
+Prohibition on Engaging in Sanctioned Activities Relating to Iran—Certification (Sep 2010)
+
+
+
+Number of Employees
+
+Average Annual Gross Revenues
+
+50 or fewer
+
+$1 million or less
+
+51-100
+
+$1,000,001-$2 million
+
+101-250
+
+$2,000,001-$3.5 million
+
+251-500
+
+$3,500,001-$5 million
+
+501-750
+
+$5,000,001-$10 million
+
+751-1,000
+
+$10,000,001-$17 million
+
+Over 1,000
+
+Over $17 million
+
+
+
+LINE ITEM NO.
+
+COUNTRY OF ORIGIN
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+LINE ITEM NO.
+
+COUNTRY OF ORIGIN
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+LINE ITEM NO.
+
+COUNTRY OF ORIGIN
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+Line Item No.:
+
+Country of Origin:
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+Line Item No.:
+
+Country of Origin:
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+Listed End Product:
+
+Listed Countries of Origin:
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+Section 
+
+Section Title
+
+Page Limit
+
+File type
+
+1
+
+Administrative
+
+2
+
+MS Word
+
+2
+
+Technical Capability
+
+5
+
+MS Word
+
+3
+
+Staffing Approach
+
+20
+
+MS Word
+
+4
+
+Past Performance
+
+3
+
+MS Word
+
+5
+
+Price/Cost 
+
+N/A
+
+MS Excel & Word

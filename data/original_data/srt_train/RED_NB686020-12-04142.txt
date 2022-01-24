@@ -1,0 +1,118 @@
+
+                                                                STATEMENT OF WORK
+
+                                                                NB686020-12-04142
+
+
+
+PURPOSE:
+
+
+
+      The Quantum Calorimeter Project (QCP) in the Quantum Devices Group of NIST Division 686 in the  Physical  Measurement  Laboratory  conducts
+research on cryogenic sensors and amplifiers.  The QCP is presently developing  cryogenic  X-ray  spectrometers  for  use  at  the  NIST  Boulder
+laboratories and elsewhere.  These spectrometers provide a unique  combination  of  spectral  resolving  power  and  quantum  efficiency.   These
+spectrometers also generate very high volumes of output data that must be transferred from custom multiplexing electronics into computer  memory.
+  NIST is currently working to increase the data rates that can be transferred.
+      The NIST PCIe Data-handling Card transfers data from the NIST multiplexing crate electronics using up to 16 data fibers into  memory  on  a
+Linux PC. The vendor is to deliver specialized firmware to serialize and transfer the specified data over a PCIe x8 bus to a PC host and a  Linux
+driver to make this data available to user applications.
+
+TECHNICAL SPECIFICATIONS:
+
+   I. Background:
+      a. NIST Multiplexed Electronics
+           The NIST multiplexing electronics implements a number of different multiplexing schemes for the readout of cryogenic sensors.  From  a
+      data stream standpoint, each column of the multiplexed readout transfers 32 bits of  data  for  every  measurement.  The  measurements  are
+      repeated at set intervals and synchronized by a line synchronization signal (Lsync). The period of this line  synchronization  (LP)  is  an
+      integer number of data clock cycles. The current data clock will run at 50, 100, and 200 MHz depending on the configuration of the  system.
+      The multiplexing scheme is designed so a user-defined number of measurements, one for each row, are performed per frame.  Each  measurement
+      consists of two numbers that need to be recorded; a 14-bit feedback signal and a 16-bit error signal. When all the measurements  have  been
+      performed, a new frame starts and repeats the same sequence of measurements. This data is packaged with two extra bits, a frame  bit  which
+      tells the software when a new frame has started, and an over-range bit which can be used by the user. The 32-bit data from each  column  is
+      sent to the PCI express card on a separate fiber every Lysnc. Two additional fibers contain the data clock and Lsync signals.
+      b. Development Platform
+           The Arria II GX development board from Altera is the foundation for the development of the PCIe  x8  multiplexed  data-handling  card.
+      NIST has built a daughter card to receive the signals from the optical fibers and route them as LVDS signals to the HSMC connector  on  the
+      development board. The data will be transferred to suitable PC computer running a modern Linux distribution. Testing of  the  firmware  and
+      driver will occur using a PC with Intel core i5 2500k on an Asus p8z68-v motherboard, with 8 GB of RAM or an equivalent system. For writing
+      data to disk, there will be 1TB SATA 6.0 GB/s drive. The operating system will be  the  Ubuntu  12.04  distribution  of  Linux  running  an
+      appropriate stable Linux kernel.
+      c. Input Data Format
+           The input to the FPGA consists of 16 data channels (a data channel corresponds to the data from a given fiber)  along  with  the  data
+      clock and Lsync signals. The data clock runs at 50, 100 and 200 MHz depending on the system configuration. The LP can range from  32  clock
+      cycles up to 1023 clock cycles.
+           Each data channel will send 32 bits of data synchronous with the clock after every Lsync. Since the minimum LP  is  32  clock  cycles,
+      there will always be enough clock cycles to send the data. The format of the data:
+                                            feedback[13..0], over-range bit , frame bit , error[15..0]
+           The maximum data rate occurs for the fastest clock, 200 MHz, and the shortest LP, 32 clock cycles, giving a total  data  rate  of  200
+      Mbits/s per channel. Assuming all 16 data channels are active, the total maximum data transfer rate will be 400 MB/s.
+  II. Vendor Deliverables
+      a. Firmware for data serialization and transfer
+           The firmware provided by the vendor will take data in the specified format up to the specified maximum data rate and  transfer  it  to
+      the PC.
+           The user software will provide to the driver/firmware a mask that will list which channels are active. The mask will translate to a 16-
+      bit number where 1âs indicate active channels. The firmware should expect data on every channel that is active.  The  data  is  synchronous
+      with the data clock but can be delayed from the Lysnc by hardware data delay (DD). The user software will provide  to  the  driver/firmware
+      the hardware delay in number of data clock cycles [0-31].
+           After an Lsync, the firmware should wait for the hardware delay before latching the data from the data channels. Then  the  data  will
+     arrive on each active data channel in the next 32 clock cycles. The latching of the 32 bits should take precedence  over  any  new  delayed
+     Lsync (Lsync delayed by DD) that arrives before the data has been received. The data should be serialized starting from the  lowest  active
+     channel in the mask to the highest active channel in the mask.
+                                                                      [pic]
+Figure 1: Timing diagram for 2 example cases; LP=34, DD=3 and a mask of 0x0009 and LP=39, DD=3 and a mask of 0x0108
+
+      b. Driver: Interface to User Applications on PC
+           A Linux driver will allow access to the data transferred to the PC. The driver will assume that user software requires access  to  the
+      data stream for many days at a time without loss of any data. If the data is only accessible in discrete amounts, the size of these amounts
+      will be a parameter that is controlled by the user without reinstalling the driver. As much of the CPU as possible should be available  for
+      data processing by user application.  Therefore, architectures (i.e. direct IO) that avoid large amounts of copying data  into  user  space
+      are preferred. The driver will not require large amounts of contiguous memory at initialization (i.e. scatter gather DMA is  an  attractive
+      architecture). The preferred Linux driver interface is an IEEE POSIX interface. The firmware or driver will allow synchronization  so  that
+      the data available to the user starts with the first row (frame bit row). However the user should be able to disable this feature to stream
+      test patterns that do not have a frame bit.
+      c. Evaluation and Demonstration
+         Additional firmware and software are necessary to test and verify the primary deliverables and to provide examples of how to access  the
+      data in user applications.
+            i. Data simulator
+                The data simulator will provide firmware that simulates the data stream that comes from the NIST  multiplexing  electronics.  The
+           data simulator will be used to check that the firmware and driver meet the required specifications. It will also be  used  to  aid  in
+           debugging user software. A bit passed to the driver / firmware will switch the inputs from the data simulator to the pins that connect
+           to the data channels so that the user can switch between simulated data mode and actual data without reprogramming the FPGA.
+                The user will specify a data clock frequency (50, 100, and 200 MHz) a valid LP (32-1204) and a valid DD  (0-31).  The  user  will
+           also specify which channels will be sent data using a mask and the number of Lsyncs in a frame (# of rows to multiplex).
+                The data simulator will increment the simulated error signal, starting from a zero index. The error signal is  a  16  bit  signed
+           integer number.  The same number will be sent at all of the Lsyncs during a frame. Once the frame is done the counter will  increment.
+           For the first Lsync of the next frame, the frame bit will be set high. When the counters reach their maximum value they will wrap back
+           to zero. The 14 bits that are normally the feedback signal will be used to label the data channel and number of Lsyncs past the  frame
+           bit, aka the row index. The data simulator will leave the over-range bit low at all times.
+           ii. Performance Evaluation Software
+                Evaluation of the performance of the firmware and driver will be accomplished by software running on the PC.  Software  will  be
+           provided by the vendor that accesses the data in user space and verifies the accuracy and data transfer rate of  the  simulated  data
+           stream.
+          iii. User application demonstration
+                Software will be provided by the vendor that demonstrates how the user applications will achieve sustained access  to  the  data
+           made available in user space by the driver.
+      d. Dissemination of Firmware and Software
+         In order to disseminate systems to scientific collaborators, we require that the following conditions,  or  less  stringent  conditions,
+      apply to the dissemination of the firmware and software.
+            i. Firmware
+                NIST is able to program additional FPGA devices and disseminate the FPGA devices at no additional cost per FPGA. The licenses to
+           use the FPGA cores are perpetual.  Receipt of the full firmware source is not required but preference will be given to proposals that
+           provide access to NIST-specific data handling modules such as data serialization.
+           ii. Driver Binaries
+                NIST is able to program and disseminate computers with executable object files for the driver at no additional cost per machine.
+           This does not include the driver source code. The licenses to use the executable driver are perpetual.
+          iii. Driver Source Code
+                 NIST is able to modify, compile, assemble, and link the driver source code  to  produce  executable  object  files  and  program
+           computers with these files. NIST will not distribute the driver source code. The licenses to use  the  driver  source  code  will  be
+           perpetual.
+           iv. User application demonstration
+                 NIST is able to disseminate the user application demonstration code to customers as examples of how to interface to the  driver.
+           The license to use and disseminate the user application demonstration will be perpetual.
+      e. Options
+            i. Yearly Maintenance and Support Contract
+
+
+
+

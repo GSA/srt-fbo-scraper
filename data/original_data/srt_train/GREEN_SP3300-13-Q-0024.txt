@@ -1,0 +1,1143 @@
+SP3300-13-Q-0024 Attachment 1
+
+SP3300-13-Q-0024 Attachment 1
+
+Attachment 2 GPAT
+
+Government Product Accessibility Template for production print system
+Summary
+Column one includes all the Sections of the Standard that may apply to any deliverable. The total number of provisions within each Section of the Standard is shown in parentheses. ˇ Column two identifies the total number of provisions that typically apply to a deliverable of this type. Some of these may not be features of the vendor's deliverable. Conversely, others not noted may be features of the vendor's deliverable. If the deliverable includes additional features, the accessibility of these features must also be considered. ˇ Column three is for general notes about the Sections of the Standard. Some apply to all deliverables and some are specific to the deliverable. ˇ Column four is a summary of the vendor's response to applicable provisions and additional deliverable features from the Sections of the Standard. ˇ Column five is where the vendor can note explanations for any of the preceding columns, e.g. there are differences between expected applicable provisions and actual product features. Total Number of Total CFR 1194 Supported Number of Notes Please explain Standard Provisions Applicable Sections Provisions Fully Partial Not
+Section 1194.21 Software Applications and Operating Systems (12 provisions) 0 Multifunction machines typically come with Driver Software. Requirements from the Driver Software GPAT apply. GPAT for Driver Software is included in this documentation
+
+ˇ
+
+Section 1194.22 Web-based Internet and Intranet Information and Applications (16 provisions)
+
+0
+
+Attachment 2 GPAT
+
+CFR 1194 Standard Sections
+Section 1194.23 Telecommunications Products (14 provisions)
+
+Total Number of Applicable Provisions
+
+Notes
+These four provisions apply to input devices such as integral parts of printers (keypads, touchscreens and contact sensitive controls) as referenced in 1194.25(c), Multifunction machines generally do not include telephones that can be used for voice communication. Additional provisions from this Section would apply if the multifunction machine does include a telephone that can be used for voice communication.
+
+Total Number of Supported Provisions Fully Partial Not
+
+Please explain
+
+4
+
+Section 1194.24 Video and Multimedia Products (5 provisions) Section 1194.25 Self-Contained, Closed Products (13 provisions)
+
+0
+
+13
+
+Attachment 2 GPAT
+
+CFR 1194 Standard Sections
+Section 1194.26 Desktop and Portable Computers (4 provisions)
+
+Total Number of Applicable Provisions
+
+Notes
+Multifunction machines do not typically have computer functions, but they often link to computers. Functional performance criteria always apply. If information, documentation, and support are to be provided by the vendor, then this Section applies.
+
+Total Number of Supported Provisions Fully Partial Not
+
+Please explain
+
+1
+
+Section 1194.31 Functional Performance Criteria (6 provisions) Section 1194.41 Information, Documentation and Support (3 provisions)
+
+6
+
+3
+
+Subpart B -- Technical Standards
+Note: If there is a possibility that the provision applies, the default value is "Yes". ˇ ˇ Column one is the full text of the provision from the Standard. Column two documents the agency's accessibility requirement based on common characteristics of the EIT deliverable. Place a Yes or No in this column based on program need and actual characteristics of your expected deliverable (i.e., Is this provision seen as applicable to the expected deliverable?) Column three provides explanatory information about the provision to help both the agency in determining applicability and the vendor in providing accessibility information. Column four is for the vendor to check off whether the deliverable meets, partially meets or does not meet the specific provision. Column five is for the vendor to provide an explanation of how the deliverable meets or does not meet the specific provision. It is also an opportunity to explain why a deliverable does not have an applicable feature or why it has a feature that was not identified as applicable.
+
+ˇ ˇ ˇ
+
+Section 1194.21 Software applications and operating systems
+
+Attachment 2 GPAT
+
+Provision Text
+(a) When software is designed to run on a system that has a keyboard, product functions shall be executable from a keyboard where the function itself or the result of performing a function can be discerned textually. (b) Applications shall not disrupt or disable activated features of other products that are identified as accessibility features, where those features are developed and documented according to industry standards. Applications also shall not disrupt or disable activated features of any operating system that are identified as accessibility features where the application programming interface for those accessibility features has been documented by the manufacturer of the operating system and is available to the product developer. (c) A well-defined on-screen indication of the current focus shall be provided that moves among interactive interface elements as the input focus changes. The focus shall be programmatically exposed so that Assistive Technology can track focus and focus changes. (d) Sufficient information about a user interface element including the identity, operation and state of the element shall be available to Assistive Technology. When an image represents a program element, the information conveyed by the image must also be available in text. (e) When bitmap images are used to identify controls, status indicators, or other programmatic elements, the meaning assigned to those images shall be consistent throughout an application's performance.
+
+Applicable
+
+Notes
+This applies if the multifunction machine uses a QWERTY keyboard.
+
+How does the EIT meet this requirement?
+__Fully __Partially __No
+
+Pleas
+
+No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+In this requirement, the term "bitmap" refers to a broad number of image formats, such as .bmp, .gif, .jpeg, .tif and .svg.
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Provision Text
+(f) Textual information shall be provided through operating system functions for displaying text. The minimum information that shall be made available is text content, text input caret location, and text attributes. (g) Applications shall not override user selected contrast and color selections and other individual display attributes. (h) When animation is displayed, the information shall be displayable in at least one non-animated presentation mode at the option of the user. (i) Color coding shall not be used as the only means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (j) When a product permits a user to adjust color and contrast settings, a variety of color selections capable of producing a range of contrast levels shall be provided.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No
+
+Pleas
+
+No
+
+No Self-scrolling and moving text are considered animation.
+
+__Fully __Partially __No __Fully __Partially __No
+
+No
+
+No
+
+This requirement is also addressed in provision 1194.25(g).
+
+__Fully __Partially __No
+
+See www.lighthouse.org/color _contrast.htm No This requirement is also addressed in provision 1194.25(h). Other elements include turning graphics on and off or changing between images. This requirement is also addressed in provisions 1194.22(j) and 1194.25(i). This requirement is also addressed in provision 1194.22(n). No
+
+__Fully __Partially __No
+
+(k) Software shall not use flashing or blinking text, objects, or other elements having a flash or blink frequency greater than 2 Hz and lower than 55 Hz.
+
+No
+
+__Fully __Partially __No
+
+(l) When electronic forms are used, the form shall allow people using Assistive Technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues.
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Section 1194.22 Web-based intranet and internet information and applications
+Provision Text
+(a) A text equivalent for every nontext element shall be provided (e.g., via "alt", "longdesc", or in element content). (b) Equivalent alternatives for any multimedia presentation shall be synchronized with the presentation. (c) Web pages shall be designed so that all information conveyed with color is also available without color, for example from context or markup. (d) Documents shall be organized so they are readable without requiring an associated style sheet. (e) Redundant text links shall be provided for each active region of a server-side image map. (f) Client-side image maps shall be provided instead of server-side image maps except where the regions cannot be defined with an available geometric shape. (g) Row and column headers shall be identified for data tables. (h) Markup shall be used to associate data cells and header cells for data tables that have two or more logical levels of row or column headers. (i) Frames shall be titled with text that facilitates frame identification and navigation (j) Pages shall be designed to avoid causing the screen to flicker with a frequency greater than 2 Hz and lower than 55 Hz.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No __Fully __Partially __No __Fully __Partially __No __Fully __Partially __No __Fully __Partially __No
+
+Pleas
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+__Fully __Partially __No __Fully __Partially __No __Fully __Partially __No __Fully __Partially __No __Fully __Partially __No
+
+No
+
+No
+
+No
+
+No
+
+Attachment 2 GPAT
+
+Provision Text
+(k) A text-only page, with equivalent information or functionality, shall be provided to make a web site comply with the provisions of this part, when compliance cannot be accomplished in any other way. The content of the text-only page shall be updated whenever the primary page changes. (l) When pages utilize scripting languages to display content, or to create interface elements, the information provided by the script shall be identified with functional text that can be read by Assistive Technology. (m) When a web page requires that an applet, plug-in or other application be present on the client system to interpret page content, the page must provide a link to a plug-in or applet that complies with Section1194.21(a) through (l). (n) When electronic forms are designed to be completed on-line, the form shall allow people using Assistive Technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues. (o) A method shall be provided that permits users to skip repetitive navigation links. (p) When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No __Fully __Partially __No
+
+No
+
+Attachment 2 GPAT
+
+Section 1194.23 Telecommunications products
+Provision Text
+(a) Telecommunications products or systems which provide a function allowing voice communication and which do not themselves provide a TTY functionality shall provide a standard non-acoustic connection point for TTYs. Microphones shall be capable of being turned on and off to allow the user to intermix speech with TTY use. (b) Telecommunications products which include voice communication functionality shall support all commonly used cross-manufacturer non-proprietary standard TTY signal protocols. (c) Voice mail, auto-attendant, and interactive voice response telecommunications systems shall be usable by TTY users with their TTYs. (d) Voice mail, messaging, autoattendant, and interactive voice response telecommunications systems that require a response from a user within a time interval, shall give an alert when the time interval is about to run out, and shall provide sufficient time for the user to indicate more time is required. (e) Where provided, caller identification and similar telecommunications functions shall also be available for users of TTYs, and for users who cannot see displays. (f) For transmitted voice signals, telecommunications products shall provide a gain adjustable up to a minimum of 20 dB. For incremental volume control, at least one intermediate step of 12 dB of gain shall be provided.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Provision Text
+(g) If the telecommunications product allows a user to adjust the receive volume, a function shall be provided to automatically reset the volume to the default level after every use. (h) Where a telecommunications product delivers output by an audio transducer which is normally held up to the ear, a means for effective magnetic wireless coupling to hearing technologies shall be provided. (i) Interference to hearing technologies (including hearing aids, cochlear implants, and assistive listening devices) shall be reduced to the lowest possible level that allows a user of hearing technologies to utilize the telecommunications product. (j) Products that transmit or conduct information or communication, shall pass through cross-manufacturer, non-proprietary, industry-standard codes, translation protocols, formats or other information necessary to provide the information or communication in a usable format. Technologies which use encoding, signal compression, format transformation, or similar techniques shall not remove information needed for access or shall restore it upon delivery. (k)(1) Products which have mechanically operated controls or keys shall comply with the following: Controls and Keys shall be tactilely discernible without activating the controls or keys.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No
+
+Pleas
+
+No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Provision Text
+(k)(2) Products which have mechanically operated controls or keys shall comply with the following: Controls and Keys shall be operable with one hand and shall not require tight grasping, pinching, twisting of the wrist. The force required to activate controls and keys shall be 5 lbs. (22.2N) maximum. (k)(3) Products which have mechanically operated controls or keys shall comply with the following: If key repeat is supported, the delay before repeat shall be adjustable to at least 2 seconds. Key repeat rate shall be adjustable to 2 seconds per character. (k)(4) Products which have mechanically operated controls or keys shall comply with the following: The status of all locking or toggle controls or keys shall be visually discernible, and discernible either through touch or sound.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Section 1194.24 Video and multimedia products
+Provision Text
+(a) All analog television displays 13 inches and larger, and computer equipment that includes analog television receiver or display circuitry, shall be equipped with caption decoder circuitry which appropriately receives, decodes, and displays closed captions from broadcast, cable, video-tape, and DVD signals. As soon as practicable, but not later than July 1, 2002, widescreen digital television (DTV) displays measuring at least 7.8 inches vertically, DTV sets with conventional displays measuring at least 13 inches vertically, and stand-alone DTV tuners, whether or not they are marketed with display screens, and computer equipment that includes DTV receiver or display circuitry, shall be equipped with caption decoder circuitry which appropriately receives, decodes, and displays closed captions from broadcast, cable, videotape, and DVD signals. (b) Television tuners, including tuner cards for use in computers, shall be equipped with secondary audio program playback circuitry. (c) All training and informational video and multimedia productions which support the agency's mission, regardless of format, that contain speech or other audio information necessary for the comprehension of the content, shall be open or closed captioned.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Provision Text
+(d) All training and informational video and multimedia productions which support the agency's mission, regardless of format, that contain visual information necessary for the comprehension of the content, shall be audio described. (e) Display or presentation of alternate text presentation or audio descriptions shall be userselectable unless permanent.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Section 1194.25 Self-contained, closed products
+Provision Text
+(a) Self contained products shall be usable by people with disabilities without requiring an end-user to attach Assistive Technology to the product. Personal headsets for private listening are not Assistive Technology. (b) When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+This requirement is also addressed in provision 1194.22(p).
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Provision Text
+(c) Where a product utilizes touchscreens or contact-sensitive controls, an input method shall be provided that complies with Section1194.23 (k) (1) through (4).
+
+Applicable
+
+Notes
+Many multifunction machines have either mechanically operated controls and/or touchscreens. This requirement includes touchscreens and contact-sensitive controls that can be touched in any way; by the human body, a mouthstick, stylus, pencil, etc. This requirement is addressed in provisions 1194.25(c), 1194.26(a), and 1194.26(b). This requirement is also addressed in provision 1194.26(c).
+
+How does the EIT meet this requirement?
+
+Pleas
+
+Yes
+
+__Fully __Partially __No
+
+(d) When biometric forms of user identification or control are used, an alternative form of identification or activation, which does not require the user to possess particular biological characteristics, shall also be provided. (e) When products provide auditory output, the audio signal shall be provided at a standard signal level through an industry standard connector that will allow for private listening. The product must provide the ability to interrupt, pause, and restart the audio at anytime. (f) When products deliver voice output in a public area, incremental volume control shall be provided with output amplification up to a level of at least 65 dB. Where the ambient noise level of the environment is above 45 dB, a volume gain of at least 20 dB above the ambient level shall be user selectable. A function shall be provided to automatically reset the volume to the default level after every use.
+
+Yes
+
+__Fully __Partially __No
+
+This requirement applies, if auditory instructions are provided to the operator. Yes Auditory output includes audio voice output, not audible tones such as beeps. This provision applies, if auditory output is provided through a speaker rather than a personal headset.
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Provision Text
+(g) Color coding shall not be used as the only means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.
+
+Applicable
+
+Notes
+This requirement applies, if color is used in the display, touchpad or keypad. If the touchpad or keypad conforms to Section 1194.25(c) this requirement would not apply. This requirement is also addressed in provision 1194.21(i). See www.lighthouse.org/color _contrast.htm
+
+How does the EIT meet this requirement?
+
+Pleas
+
+Yes
+
+__Fully __Partially __No
+
+(h) When a product permits a user to adjust color and contrast settings, a range of color selections capable of producing a variety of contrast levels shall be provided.
+
+Yes This requirement is also addressed in provision 1194.21(j). LED's and illuminated buttons are not covered by this requirement. Yes This requirement is also addressed in provisions 1194.21(k) and 1194.22(j).
+
+__Fully __Partially __No
+
+(i) Products shall be designed to avoid causing the screen to flicker with a frequency greater than 2 Hz and lower than 55 Hz.
+
+__Fully __Partially __No
+
+(j) (1) Products which are freestanding, nonportable, and intended to be used in one location and which have operable controls shall comply with the following: The position of any operable control shall be determined with respect to a vertical plane, which is 48 inches in length, centered on the operable control, and at the maximum protrusion of the product within the 48 inch length on products which are freestanding, non-portable, and intended to be used in one location and which have operable controls.
+
+Yes
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Provision Text
+(j)(2) Products which are freestanding, nonportable, and intended to be used in one location and which have operable controls shall comply with the following: Where any operable control is 10 inches or less behind the reference plane, the height shall be 54 inches maximum and 15 inches minimum above the floor. (j)(3) Products which are freestanding, nonportable, and intended to be used in one location and which have operable controls shall comply with the following: Where any operable control is more than 10 inches and not more than 24 inches behind the reference plane, the height shall be 40 inches maximum and 15 inches minimum above the floor. (j)(4) Products which are freestanding, nonportable, and intended to be used in one location and which have operable controls shall comply with the following: Operable controls shall not be more than 24 inches behind the reference plane.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Section 1194.26 Desktop and portable computers
+Provision Text
+a) All mechanically operated controls and keys shall comply with Section1194.23 (k) (1) through (4). (b) If a product utilizes touchscreens or touch-operated controls, an input method shall be provided that complies with Section1194.23 (k) (1) through (4).
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No __Fully __Partially __No
+
+Pleas
+
+No
+
+No
+
+Attachment 2 GPAT
+
+Provision Text
+(c) When biometric forms of user identification or control are used, an alternative form of identification or activation, which does not require the user to possess particular biological characteristics, shall also be provided. (d) Where provided, at least one of each type of expansion slots, ports and connectors shall comply with publicly available industry standards.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+No
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Subpart C -- Functional Performance Criteria
+Section 1194.31 Functional performance criteria
+Provision Text
+(a) At least one mode of operation and information retrieval that does not require user vision shall be provided, or support for Assistive Technology used by people who are blind or visually impaired shall be provided. (b) At least one mode of operation and information retrieval that does not require visual acuity greater than 20/70 shall be provided in audio and enlarged print output working together or independently, or support for Assistive Technology used by people who are visually impaired shall be provided. (c) At least one mode of operation and information retrieval that does not require user hearing shall be provided, or support for Assistive Technology used by people who are deaf or hard of hearing shall be provided.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Provision Text
+(d) Where audio information is important for the use of a product, at least one mode of operation and information retrieval shall be provided in an enhanced auditory fashion, or support for assistive hearing devices shall be provided. (e) At least one mode of operation and information retrieval that does not require user speech shall be provided, or support for Assistive Technology used by people with disabilities shall be provided. (f) At least one mode of operation and information retrieval that does not require fine motor control or simultaneous actions and that is operable with limited reach and strength shall be provided.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Subpart D -- Information, Documentation, and Support
+Section 1194.41 Information, documentation, and support
+Provision Text
+(a) Product support documentation provided to end-users shall be made available in alternate formats upon request, at no additional charge. (b) End-users shall have access to a description of the accessibility and compatibility features of products in alternate formats or alternate methods upon request, at no additional charge. (c) Support services for products shall accommodate the communication needs of end-users with disabilities.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No
+
+Pleas
+
+Yes
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Government Product/Service Accessibility Template for Driver Software Summary
+ˇ ˇ Column one includes all the Sections of the Standard that may apply to any deliverable. The total number of provisions within each Section of the Standard is shown in parentheses. Column two identifies the total number of provisions that typically apply to a deliverable of this type. Some of these may not be features of the vendor's deliverable. Conversely, others not noted may be features of the vendor's deliverable. If the deliverable includes additional features, the accessibility of these features must also be considered. Column three is for general notes about the Sections of the Standard. Some apply to all deliverables and some are specific to the deliverable. Column four is a summary of the vendor's response to applicable provisions and additional deliverable features from the Sections of the Standard. Column five is where the vendor can note explanations for any of the preceding columns, e.g. there are differences between expected applicable provisions and actual product features. Total Number of Total Supported Number of Notes Provisions Applicable Provisions Fully Partial Not
+12
+
+ˇ ˇ ˇ
+
+CFR 1194 Standard Sections
+Section 1194.21 Software Applications and Operating Systems (12 provisions) Section 1194.22 Web-based Internet and Intranet Information and Applications (16 provisions) Section 1194.23 Telecommunications Products (14 provisions) Section 1194.24 Video and Multimedia Products (5 provisions) Section 1194.25 Self-Contained, Closed Products (13 provisions)
+
+Please explain
+
+0
+
+0
+
+0
+
+0
+
+Attachment 2 GPAT
+
+CFR 1194 Standard Sections
+Section 1194.26 Desktop and Portable Computers (4 provisions) Section 1194.31 Functional Performance Criteria (6 provisions) Section 1194.41 Information, Documentation and Support (3 provisions)
+
+Total Number of Total Supported Number of Notes Provisions Applicable Provisions Fully Partial Not
+0
+
+Please explain
+
+6
+
+3
+
+Subpart B -- Technical Standards
+Note: If there is a possibility that the provision applies, the default value is "Yes". ˇ ˇ Column one is the full text of the provision from the Standard. Column two documents the agency's accessibility requirement based on common characteristics of the EIT deliverable. Place a Yes or No in this column based on program need and actual characteristics of your expected deliverable (i.e., Is this provision seen as applicable to the expected deliverable?) Column three provides explanatory information about the provision to help both the agency in determining applicability and the vendor in providing accessibility information. Column four is for the vendor to check off whether the deliverable meets, partially meets or does not meet the specific provision. Column five is for the vendor to provide an explanation of how the deliverable meets or does not meet the specific provision. It is also an opportunity to explain why a deliverable does not have an applicable feature or why it has a feature that was not identified as applicable.
+
+ˇ ˇ ˇ
+
+Section 1194.21 Software applications and operating systems
+Provision Text Applicable Notes How does the EIT meet this requirement?
+
+Pleas
+
+Attachment 2 GPAT
+
+Provision Text
+(a) When software is designed to run on a system that has a keyboard, product functions shall be executable from a keyboard where the function itself or the result of performing a function can be discerned textually. (b) Applications shall not disrupt or disable activated features of other products that are identified as accessibility features, where those features are developed and documented according to industry standards. Applications also shall not disrupt or disable activated features of any operating system that are identified as accessibility features where the application programming interface for those accessibility features has been documented by the manufacturer of the operating system and is available to the product developer. (c) A well-defined on-screen indication of the current focus shall be provided that moves among interactive interface elements as the input focus changes. The focus shall be programmatically exposed so that Assistive Technology can track focus and focus changes. (d) Sufficient information about a user interface element including the identity, operation and state of the element shall be available to Assistive Technology. When an image represents a program element, the information conveyed by the image must also be available in text. (e) When bitmap images are used to identify controls, status indicators, or other programmatic elements, the meaning assigned to those images shall be consistent throughout an application's performance.
+
+Applicable
+
+Notes
+This applies to QWERTY keyboards.
+
+How does the EIT meet this requirement?
+__Fully __Partially __No
+
+Pleas
+
+Yes
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+In this requirement, the term "bitmap" refers to a broad number of image formats, such as .bmp, .gif, .jpeg, .tif and .svg.
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Provision Text
+(f) Textual information shall be provided through operating system functions for displaying text. The minimum information that shall be made available is text content, text input caret location, and text attributes. (g) Applications shall not override user selected contrast and color selections and other individual display attributes. (h) When animation is displayed, the information shall be displayable in at least one non-animated presentation mode at the option of the user. (i) Color coding shall not be used as the only means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (j) When a product permits a user to adjust color and contrast settings, a variety of color selections capable of producing a range of contrast levels shall be provided.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No
+
+Pleas
+
+Yes
+
+Yes Self-scrolling and moving text are considered animation.
+
+__Fully __Partially __No __Fully __Partially __No
+
+Yes
+
+Yes
+
+This requirement is also addressed in provision 1194.25(g).
+
+__Fully __Partially __No
+
+See www.lighthouse.org/color _contrast.htm Yes This requirement is also addressed in provision 1194.25(h). Other elements include turning graphics on and off or changing between images. This requirement is also addressed in provisions 1194.22(j) and 1194.25(i). This requirement is also addressed in provision 1194.22(n). Yes
+
+__Fully __Partially __No
+
+(k) Software shall not use flashing or blinking text, objects, or other elements having a flash or blink frequency greater than 2 Hz and lower than 55 Hz.
+
+Yes
+
+__Fully __Partially __No
+
+(l) When electronic forms are used, the form shall allow people using Assistive Technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues.
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Section 1194.22 Web-based intranet and Internet information and applications
+Provision Text
+(a) A text equivalent for every nontext element shall be provided (e.g., via "alt", "longdesc", or in element content). (b) Equivalent alternatives for any multimedia presentation shall be synchronized with the presentation. (c) Web pages shall be designed so that all information conveyed with color is also available without color, for example from context or markup. (d) Documents shall be organized so they are readable without requiring an associated style sheet. (e) Redundant text links shall be provided for each active region of a server-side image map. (f) Client-side image maps shall be provided instead of server-side image maps except where the regions cannot be defined with an available geometric shape. (g) Row and column headers shall be identified for data tables. (h) Markup shall be used to associate data cells and header cells for data tables that have two or more logical levels of row or column headers. (i) Frames shall be titled with text that facilitates frame identification and navigation (j) Pages shall be designed to avoid causing the screen to flicker with a frequency greater than 2 Hz and lower than 55 Hz.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No __Fully __Partially __No __Fully __Partially __No __Fully __Partially __No __Fully __Partially __No
+
+Pleas
+
+No
+
+No
+
+No
+
+No
+
+No
+
+No
+
+__Fully __Partially __No __Fully __Partially __No __Fully __Partially __No __Fully __Partially __No __Fully __Partially __No
+
+No
+
+No
+
+No
+
+No
+
+Attachment 2 GPAT
+
+Provision Text
+(k) A text-only page, with equivalent information or functionality, shall be provided to make a web site comply with the provisions of this part, when compliance cannot be accomplished in any other way. The content of the text-only page shall be updated whenever the primary page changes. (l) When pages utilize scripting languages to display content, or to create interface elements, the information provided by the script shall be identified with functional text that can be read by Assistive Technology. (m) When a web page requires that an applet, plug-in or other application be present on the client system to interpret page content, the page must provide a link to a plug-in or applet that complies with Section1194.21(a) through (l). (n) When electronic forms are designed to be completed on-line, the form shall allow people using Assistive Technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues. (o) A method shall be provided that permits users to skip repetitive navigation links. (p) When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No __Fully __Partially __No
+
+No
+
+Attachment 2 GPAT
+
+Section 1194.23 Telecommunications products
+Provision Text
+(a) Telecommunications products or systems which provide a function allowing voice communication and which do not themselves provide a TTY functionality shall provide a standard non-acoustic connection point for TTYs. Microphones shall be capable of being turned on and off to allow the user to intermix speech with TTY use. (b) Telecommunications products which include voice communication functionality shall support all commonly used cross-manufacturer non-proprietary standard TTY signal protocols. (c) Voice mail, auto-attendant, and interactive voice response telecommunications systems shall be usable by TTY users with their TTYs. (d) Voice mail, messaging, autoattendant, and interactive voice response telecommunications systems that require a response from a user within a time interval, shall give an alert when the time interval is about to run out, and shall provide sufficient time for the user to indicate more time is required. (e) Where provided, caller identification and similar telecommunications functions shall also be available for users of TTYs, and for users who cannot see displays. (f) For transmitted voice signals, telecommunications products shall provide a gain adjustable up to a minimum of 20 dB. For incremental volume control, at least one intermediate step of 12 dB of gain shall be provided.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Provision Text
+(g) If the telecommunications product allows a user to adjust the receive volume, a function shall be provided to automatically reset the volume to the default level after every use. (h) Where a telecommunications product delivers output by an audio transducer which is normally held up to the ear, a means for effective magnetic wireless coupling to hearing technologies shall be provided. (i) Interference to hearing technologies (including hearing aids, cochlear implants, and assistive listening devices) shall be reduced to the lowest possible level that allows a user of hearing technologies to utilize the telecommunications product. (j) Products that transmit or conduct information or communication, shall pass through cross-manufacturer, non-proprietary, industry-standard codes, translation protocols, formats or other information necessary to provide the information or communication in a usable format. Technologies which use encoding, signal compression, format transformation, or similar techniques shall not remove information needed for access or shall restore it upon delivery. (k)(1) Products which have mechanically operated controls or keys shall comply with the following: Controls and Keys shall be tactilely discernible without activating the controls or keys.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No
+
+Pleas
+
+No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Provision Text
+(k)(2) Products which have mechanically operated controls or keys shall comply with the following: Controls and Keys shall be operable with one hand and shall not require tight grasping, pinching, twisting of the wrist. The force required to activate controls and keys shall be 5 lbs. (22.2N) maximum. (k)(3) Products which have mechanically operated controls or keys shall comply with the following: If key repeat is supported, the delay before repeat shall be adjustable to at least 2 seconds. Key repeat rate shall be adjustable to 2 seconds per character. (k)(4) Products which have mechanically operated controls or keys shall comply with the following: The status of all locking or toggle controls or keys shall be visually discernible, and discernible either through touch or sound.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Section 1194.24 Video and multimedia products
+Provision Text
+(a) All analog television displays 13 inches and larger, and computer equipment that includes analog television receiver or display circuitry, shall be equipped with caption decoder circuitry which appropriately receives, decodes, and displays closed captions from broadcast, cable, video-tape, and DVD signals. As soon as practicable, but not later than July 1, 2002, widescreen digital television (DTV) displays measuring at least 7.8 inches vertically, DTV sets with conventional displays measuring at least 13 inches vertically, and stand-alone DTV tuners, whether or not they are marketed with display screens, and computer equipment that includes DTV receiver or display circuitry, shall be equipped with caption decoder circuitry which appropriately receives, decodes, and displays closed captions from broadcast, cable, videotape, and DVD signals. (b) Television tuners, including tuner cards for use in computers, shall be equipped with secondary audio program playback circuitry. (c) All training and informational video and multimedia productions which support the agency's mission, regardless of format, that contain speech or other audio information necessary for the comprehension of the content, shall be open or closed captioned.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Provision Text
+(d) All training and informational video and multimedia productions which support the agency's mission, regardless of format, that contain visual information necessary for the comprehension of the content, shall be audio described. (e) Display or presentation of alternate text presentation or audio descriptions shall be userselectable unless permanent.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Section 1194.25 Self-contained, closed products
+Provision Text
+(a) Self contained products shall be usable by people with disabilities without requiring an end-user to attach Assistive Technology to the product. Personal headsets for private listening are not Assistive Technology. (b) When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required. (c) Where a product utilizes touchscreens or contact-sensitive controls, an input method shall be provided that complies with Section1194.23 (k) (1) through (4). (d) When biometric forms of user identification or control are used, an alternative form of identification or activation, which does not require the user to possess particular biological characteristics, shall also be provided.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No __Fully __Partially __No
+
+No
+
+No
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Provision Text
+(e) When products provide auditory output, the audio signal shall be provided at a standard signal level through an industry standard connector that will allow for private listening. The product must provide the ability to interrupt, pause, and restart the audio at anytime. (f) When products deliver voice output in a public area, incremental volume control shall be provided with output amplification up to a level of at least 65 dB. Where the ambient noise level of the environment is above 45 dB, a volume gain of at least 20 dB above the ambient level shall be user selectable. A function shall be provided to automatically reset the volume to the default level after every use. (g) Color coding shall not be used as the only means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (h) When a product permits a user to adjust color and contrast settings, a range of color selections capable of producing a variety of contrast levels shall be provided. (i) Products shall be designed to avoid causing the screen to flicker with a frequency greater than 2 Hz and lower than 55 Hz.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No __Fully __Partially __No
+
+No
+
+Attachment 2 GPAT
+
+Provision Text
+(j) (1) Products which are freestanding, nonportable, and intended to be used in one location and which have operable controls shall comply with the following: The position of any operable control shall be determined with respect to a vertical plane, which is 48 inches in length, centered on the operable control, and at the maximum protrusion of the product within the 48 inch length on products which are freestanding, non-portable, and intended to be used in one location and which have operable controls. (j)(2) Products which are freestanding, nonportable, and intended to be used in one location and which have operable controls shall comply with the following: Where any operable control is 10 inches or less behind the reference plane, the height shall be 54 inches maximum and 15 inches minimum above the floor. (j)(3) Products which are freestanding, nonportable, and intended to be used in one location and which have operable controls shall comply with the following: Where any operable control is more than 10 inches and not more than 24 inches behind the reference plane, the height shall be 40 inches maximum and 15 inches minimum above the floor. (j)(4) Products which are freestanding, nonportable, and intended to be used in one location and which have operable controls shall comply with the following: Operable controls shall not be more than 24 inches behind the reference plane.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Section 1194.26 Desktop and portable computers
+Provision Text
+a) All mechanically operated controls and keys shall comply with Section1194.23 (k) (1) through (4). (b) If a product utilizes touchscreens or touch-operated controls, an input method shall be provided that complies with Section1194.23 (k) (1) through (4). (c) When biometric forms of user identification or control are used, an alternative form of identification or activation, which does not require the user to possess particular biological characteristics, shall also be provided. (d) Where provided, at least one of each type of expansion slots, ports and connectors shall comply with publicly available industry standards.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No __Fully __Partially __No
+
+Pleas
+
+No
+
+No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Subpart C -- Functional Performance Criteria
+Section 1194.31 Functional performance criteria
+Provision Text
+(a) At least one mode of operation and information retrieval that does not require user vision shall be provided, or support for Assistive Technology used by people who are blind or visually impaired shall be provided.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+Yes
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Provision Text
+(b) At least one mode of operation and information retrieval that does not require visual acuity greater than 20/70 shall be provided in audio and enlarged print output working together or independently, or support for Assistive Technology used by people who are visually impaired shall be provided. (c) At least one mode of operation and information retrieval that does not require user hearing shall be provided, or support for Assistive Technology used by people who are deaf or hard of hearing shall be provided. (d) Where audio information is important for the use of a product, at least one mode of operation and information retrieval shall be provided in an enhanced auditory fashion, or support for assistive hearing devices shall be provided. (e) At least one mode of operation and information retrieval that does not require user speech shall be provided, or support for Assistive Technology used by people with disabilities shall be provided. (f) At least one mode of operation and information retrieval that does not require fine motor control or simultaneous actions and that is operable with limited reach and strength shall be provided.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Pleas
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Attachment 2 GPAT
+
+Subpart D -- Information, Documentation, and Support
+Section 1194.41 Information, documentation, and support
+Provision Text
+(a) Product support documentation provided to end-users shall be made available in alternate formats upon request, at no additional charge. (b) End-users shall have access to a description of the accessibility and compatibility features of products in alternate formats or alternate methods upon request, at no additional charge. (c) Support services for products shall accommodate the communication needs of end-users with disabilities.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No
+
+Pleas
+
+Yes
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+RFQ SP3300-13-Q-0024 This is a combined synopsis/solicitation for commercial items prepared in accordance with the format in Subpart 12.6 as supplemented with additional information included in this notice. This announcement constitutes the only solicitation; quotes are being requested and a written solicitation will not be issued. The solicitation number for this notice is SP3300-13-Q-0024. This is a small business set-aside acquisition for vendors that can provide the brand name (Kyocera) or equal production print system (see Attachment 1 for a description of the salient characteristics). The NAICS code is 334118. The size standard is 1,000 employees. This notice incorporates provisions and clauses in effect through Federal Acquisition Circular (FAC) 2005-66 effective 01 April 2013 and Defense Federal Acquisition Regulation Supplement (DFARS) DPN 20130522 edition and Defense Logistics Acquisition Directive (DLAD) Current to Revision 5 and PROCLTR 2013-53. The complete text of any of the clauses and provisions may be accessed in full text at http://farsite.hill.af.mil. This procurement is for the purchase of brand name Kyocera production print system or equal for DLA Distribution New Cumberland, PA. Production print system must conform to the attached salient characteristics (Attachment 1). All proposed equipment must be in "NEW" condition. No refurbished or other condition of equipment will be accepted. The table below serves as the schedule of supplies to include: a list of contract line item numbers (CLINs); item descriptions; quantities; the unit of measure(s); unit price; and total price for each CLIN. Schedule of Supplies
+Item No. 0001 Description Kyocera C7800 Production Print System OR EQUAL with optional KIP 720 scanner and KIP 720 stacking rack OR EQUAL. This is a brand name or equal line item. See Attachment 1for the salient characteristics. Required Delivery Date: 30 Days ARO *Delivery Point: DLA Installation Support Susquehanna. 0002 24 Months Service/Maintenance/Warranty Total 1 EA $ $ $ Qty 1 U/I EA Unit Price $ $ Total Price
+
+*Actual Shipping Address DLA Installation Support Susquehanna Bldg 750, Engineering, S Ave & 3rd St New Cumberland, PA 17070 Attn: Adam Hergenrother (DES)
+
+**Shipping instructions for DLA Information Operations at New Cumberland, PA: 1. All deliveries to DLA Information Operations at New Cumberland, PA will need to follow these instructions: To schedule an appointment contact the following: Primary POC: Tom Walker: (717) 770-5354 or (717) 877-5998 Alternate POC: Adrian Pescatore: (717) 770-4951 Please be prepared to provide the appropriate return point of contact (POC) information and a desired delivery date and time. Appointment will be made for the first available time slot. Deliveries must be made between the hours of 0800-1500. Please note, we cannot guarantee the warehouse can meet the requested time/date. Also note, it is very important that all cargo is clearly identified on the request, so that we can ensure quick and accurate scheduling. 2. DLA Information Operations at New Cumberland, PA- Delivery Address DLA Information Operations J6N DDSP SAve. Bldg. 1 Bay 8.5 New Cumberland, Pennsylvania 17070 **Angled Dock located Rear of Bldg. Offerors shall provide the unit price for each component and the total amount, inclusive of shipping costs (FOB Destination). Note: The required delivery schedule date is 30 days after receipt of award. Any award resulting from this solicitation will be issued on a Standard Form (SF) 1449. The method of payment for supplies under this order is Wide Area Work Flow (WAWF). See DFARS clauses 252.232-7003 and 252.232-7006 below in the Contract Clause section. The following FAR, DFARS, and DLAD clauses and provisions apply to this acquisition. The full text version of these clauses and provisions may be viewed at http://farsite.hill.af.mil/. Contract Clauses FAR 52.212-4 CONTRACT TERMS AND CONDITIONS­COMMERCIAL ITEMS (FEB 2012), ADDENDA TO 52.212-4; the following clauses apply: Clauses Incorporated by Reference FAR CLAUSE 52.333-1 52.233-3 52.247-34 TITLE Disputes Protest After Award F.o.b. Destination DATE Jul 2002 Aug 1996 Nov 1991
+
+Clauses Incorporated in full text FAR 52.252-2 ­ (Feb 1998) This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at this/these address(es): https://www.acquisition.gov/far/ (End of Clause) DFARS 252.232-7003 ­ (Jun 2012) (a) Definitions. As used in this clause-- (1) "Contract financing payment" and "invoice payment" have the meanings given in section 32.001 of the Federal Acquisition Regulation. (2) "Electronic form" means any automated system that transmits information electronically from the initiating system to all affected systems. Facsimile, e-mail, and scanned documents are not acceptable electronic forms for submission of payment requests. However, scanned documents are acceptable when they are part of a submission of a payment request made using Wide Area WorkFlow (WAWF) or another electronic form authorized by the Contracting Officer. (3) "Payment request" means any request for contract financing payment or invoice payment submitted by the Contractor under this contract. (4) "Receiving report" means the data required by the clause at 252.246-7000, Material Inspection and Receiving Report. (b) Except as provided in paragraph (c) of this clause, the Contractor shall submit payment requests and receiving reports using WAWF, in one of the following electronic formats that WAWF accepts: Electronic Data Interchange, Secure File Transfer Protocol, or World Wide Web input. Information regarding WAWF is available on the Internet at https://wawf.eb.mil/. (c) The Contractor may submit a payment request and receiving report using other than WAWF only when-- (1) The Contracting Officer administering the contract for payment has determined, in writing, that electronic submission would be unduly burdensome to the Contractor. In such cases, the Contractor shall include a copy of the Contracting Officer's determination with each request for payment; (2) DoD makes payment for commercial transportation services provided under a Government rate tender or a contract for transportation services using a DoD-approved
+
+electronic third party payment system or other exempted vendor payment/invoicing system (e.g., PowerTrack, Transportation Financial Management System, and Cargo and Billing System); (3) DoD makes payment for rendered health care services using the TRICARE Encounter Data System (TEDS) as the electronic format; or (4) When the Governmentwide commercial purchase card is used as the method of payment, only submission of the receiving report in electronic form is required. (d) The Contractor shall submit any non-electronic payment requests using the method or methods specified in Section G of the contract. (e) In addition to the requirements of this clause, the Contractor shall meet the requirements of the appropriate payment clauses in this contract when submitting payment requests. (End of clause) DFARS 252.232-7006 WIDE AREA WORKFLOW PAYMENT INSTRUCTIONS (JUN 2012) (a) Definitions. As used in this clause-- "Department of Defense Activity Address Code (DoDAAC)" is a six position code that uniquely identifies a unit, activity, or organization. "Document type" means the type of payment request or receiving report available for creation in Wide Area WorkFlow (WAWF). "Local processing office (LPO)" is the office responsible for payment certification when payment certification is done external to the entitlement system. (b) Electronic invoicing. The WAWF system is the method to electronically process vendor payment requests and receiving reports, as authorized by DFARS 252.232-7003, Electronic Submission of Payment Requests and Receiving Reports. (c) WAWF access. To access WAWF, the Contractor shall-- (1) Have a designated electronic business point of contact in the Central Contractor Registration at https://www.acquisition.gov; and (2) Be registered to use WAWF at https://wawf.eb.mil/ following the step-by-step procedures for self-registration available at this web site. (d) WAWF training. The Contractor should follow the training instructions of the WAWF WebBased Training Course and use the Practice Training Site before submitting payment requests through WAWF. Both can be accessed by selecting the "Web Based Training" link on the WAWF home page at https://wawf.eb.mil/
+
+(e) WAWF methods of document submission. Document submissions may be via web entry, Electronic Data Interchange, or File Transfer Protocol. (f) WAWF payment instructions. The Contractor must use the following information when submitting payment requests and receiving reports in WAWF for this contract/order: (1) Document type. The Contractor shall use the following document type(s). Invoice only (2) Inspection/acceptance location. The Contractor shall select the following inspection/acceptance location(s) in WAWF, as specified by the contracting officer. SB3300 (3) Document routing. The Contractor shall use the information in the Routing Data Table below only to fill in applicable fields in WAWF when creating payment requests and receiving reports in the system. Routing Data Table* Field Name in WAWF Pay Official DoDAAC Issue By DoDAAC Admin DoDAAC Inspect By DoDAAC Ship To Code Ship From Code Mark For Code Service Approver (DoDAAC) Service Acceptor (DoDAAC) Accept at Other DoDAAC LPO DoDAAC DCAA Auditor DoDAAC Other DoDAAC(s) (4) Payment request and supporting documentation. The Contractor shall ensure a payment request includes appropriate contract line item and subline item descriptions of the work performed or supplies delivered, unit price/cost per unit, fee (if applicable), and all relevant back-up documentation, as defined in DFARS Appendix F, (e.g. timesheets) in support of each payment request. Data to be entered in WAWF SL4701 SP3300 SP3300 SB3300 SB3300 (New Cumberland)
+
+(5) WAWF email notifications. The Contractor shall enter the e-mail address identified below in the "Send Additional Email Notifications" field of WAWF once a document is submitted in the system. linda.chapman@dla.mil: joshua.l.woodworth@dla.mil (g) WAWF point of contact. (1) The Contractor may obtain clarification regarding invoicing in WAWF from the following contracting activity's WAWF point of contact. kenneth.decker@dla.mil (2) For technical WAWF help, contact the WAWF helpdesk at 866-618-5988. (End of clause) DLAD 52.247-9012 REQUIREMENTS FOR TREATMENT OF WOOD PACKAGING MATERIAL (WPM) (FEB 2007) (a) This clause only applies when wood packaging material (WPM) will be used to make shipments under this contract and/or when WPM is being acquired under this contract. (b) Definition. Wood packaging material (WPM) means wood pallets, skids, load boards, pallet collars, wooden boxes, reels, dunnage, crates, frame and cleats. The definition excludes materials that have undergone a manufacturing process, such as corrugated fiberboard, plywood, particleboard, veneer, and oriented strand board (OSD). (c) All Wood Packaging Material(WPM) used to make shipments under DOD contracts and/or acquired by DOD must meet requirements of International Standards for Phytosanitary Measures (ISPM) 15, "Guidelines for Regulating Wood Packaging Materials in International Trade." DOD shipments inside and outside of the United States must meet ISPM 15 whenever WPM is used to ship DOD cargo. (1) All WPM shall comply with the official quality control program for heat treatment (HT) or kiln dried heat treatment (KD HT) in accordance with American Lumber Standard Committee, Incorporated (ALSC) Wood Packaging Material Program and WPM Enforcement Regulations (see http://www.alsc.org/). (2) All WPM shall include certification/quality markings in accordance with the ALSC standard. Markings shall be placed in an unobstructed area that will be readily visible to inspectors. Pallet markings shall be applied to the stringer or block on diagonally opposite sides of the pallet and be contrasting and clearly visible. All containers shall be marked on a side other than the top or bottom, contrasting and clearly visible. All dunnage used in configuring and/or securing the load shall also comply with ISPM 15 and be marked with an ASLC approved DUNNAGE stamp.
+
+(d) Failure to comply with the requirements of this restriction may result in refusal, destruction, or treatment of materials at the point of entry. The Agency reserves the right to recoup from the Contractor any remediation costs incurred by the Government. (End of Clause) MARK CONTRACT NUMBER ON ALL CORRESPONDENCE Contractor must mark the contract or purchase order number on all paperwork and shipments. The order number must appear on the exterior of the shipment. Failure to follow these instructions will hold up payment to you and could result in the return of merchandise at your expense. FAR 52.212-5 (Jan 2013)(in paragraph (b)) the following clauses apply: FAR 52.204-10 Reporting Executive Compensation and First-Tier Subcontract Awards FAR 52.209-6 Protecting the Government's Interest When Subcontracting with Contractors Debarred, Suspended, or Proposed for Debarment FAR 52.209-9 Updates of Publicly Available Information Regarding Responsibility Matters FAR 52.219-6 Notice of Total Small Business Set-Aside FAR 52.219-8 Utilization of Small Business Concerns FAR 52.222-3 Convict Labor FAR 52.222-19 Child Labor­Cooperation with Authorities and Remedies FAR 52.222-21 Prohibition of Segregated Facilities FAR 52.222-22 Previous Contracts and Compliance Reports FAR 52.222-25 Affirmative Action Compliance FAR 52.222-26 Equal Opportunity FAR 52.222-36 Affirmative Action for Workers with Disabilities FAR 52.222-37 Employment Reports on Disabled Veterans and Veterans of the Vietnam Era, and Other Eligible Veterans FAR 52.222-50 Combating Trafficking in Persons FAR 52.223-18 Encouraging Contractor Policies to Ban Text Messaging While Driving FAR 52.225-13 Restriction on Certain Foreign Purchases FAR 52.232-33 Payment by Electric Funds transfer Central Contractor Registration FAR 52.247-64 Preference for Privately Owned U.S.-Flag Commercial Vessels Contract Provisions Provisions Incorporated by Reference FAR CLAUSE FAR 52.204-7 FAR 52.212-3 FAR 52.219-1 FAR 52.252-1 TITLE Central Contractor Registration Offeror Representations and Certifications -- Commercial Items with Alternate I (Apr 2011) Small Business Program Representations Clauses Incorporated by Reference DATE Dec 2012 Dec 2012 Apr 2012 Feb 1998
+
+DFARS CLAUSE 252.204-7004 252.212-7000
+
+TITLE Alternate A, System for Award Management Offeror Representations and Certifications--Commercial Items
+
+DATE May 2013 Jun 2005
+
+Provisions Incorporated in full text DLAD 52.233-9000 AGENCY PROTESTS (NOV 2011) (a) Companies protesting this procurement may file a protest (1) with the Contracting Officer, (2) with the Government Accountability Office (GAO), or (3) pursuant to Executive Order Number 12979, with the Agency for a decision by the Activity's Chief of the Contracting Office. (b) Protests filed with the agency should clearly state that they are an "Agency Level Protest under Executive Order Number 12979." (c) Defense Logistics Agency (DLA) procedures for Agency Level Protests filed under Executive Order Number 12979 allow for a higher level decision on the initial protest than would occur with a protest to the Contracting Officer; this process is not an appellate review of a Contracting Officer's decision on a protest previously filed with the Contracting Officer. Absent a clear indication of the intent to file an agency level protest, protests will be presumed to be protests to the Contracting Officer. (End of Provision) DLAD 52.233-9001 Disputes Agreement to Use Alternative Dispute Resolution (ADR) (NOV 2011) (a) The parties agree to negotiate with each other to try to resolve any disputes that may arise. If unassisted negotiations are unsuccessful, the parties will use alternative dispute resolution (ADR) techniques to try to resolve the dispute. Litigation will only be considered as a last resort when ADR is unsuccessful or has been documented by the party rejecting ADR to be inappropriate for resolving the dispute. (b) Before either party determines ADR inappropriate, that party must discuss the use of ADR with the other party. The documentation rejecting ADR must be signed by an official authorized to bind the Contractor (see Federal Acquisition Regulation (FAR) clause 52.233-1), or, for the Agency, by the Contracting Officer, and approved at a level above the Contracting Officer after consultation with the ADR Specialist and with legal. Contractor personnel are also encouraged to
+
+include the ADR Specialist in their discussions with the Contracting Officer before determining ADR to be inappropriate. (c) The offeror should check here to opt out of this clause: [ ] Alternate wording may be negotiated with the Contracting Officer. (End of provision)
+
+FAR 52.212-1 Addenda to 52.212-1; the following paragraphs are hereby deleted from this provision: (e) multiple offers and (h) multiple awards. NOTE: To receive an award resulting from this solicitation, offerors MUST be registered in the System for Award Management Registration (SAM) database IAW FAR 52.212-1(k). Contractors may obtain information on registration and annual confirmation requirements via the SAM accessed through https://www.acquisition.gov or by calling 866-606-8220, or 334-2067828 for international calls. OFFER SUBMISSION INSTRUCTIONS­Quotes must include the following items. Submission of a quote that does not contain all items requested below may result in elimination from consideration for award. 1. Quotations may be submitted in contractor format and shall include: (1) Company name, address, telephone number, e-mail address, and FAX number (2) Solicitation number (3) Unit Price and extended prices for all CLINS. Offerors shall use the table on page 1 to complete their pricing. (4) Contractor DUNS Number and Commercial and Government Entity (CAGE) Code (5) Signed acknowledgements of amendments (applicable only if any amendments are issued against this solicitation) (6) Offerors providing an item other than the brand name (Kyocera) should include product literature as specified in FAR 52.211-6 that demonstrates the ability of the item to meet all the salient characteristics (See Attachment 1).
+
+2. Section 508 Program Need Requirements for accessibility based on Section 508 of the Rehabilitation Act of 1973 (29 U.S.C. 794d) are determined to be relevant for the following program need: production print system. Section 508 Deliverable Requirements Technical standards from 36 CFR part 1194 Subpart B have been determined to apply to this acquisition. Solicitation respondents must describe how their proposed production print system deliverables meet at least those technical provisions identified as applicable in the attached Government Product/Service Accessibility Templates (GPATs) attachment 2. Functional performance criteria from 36 CFR part 1194 Subpart C have been determined to apply to this acquisition. Solicitation respondents must describe how their proposed production
+
+print system deliverables meet at least those functional performance criteria identified as applicable in the GPAT. Information, documentation, and support requirements from 36 CFR part 1194 Subpart D have been determined to apply to this acquisition. Solicitation respondents must describe how the information, documentation, and support proposed for Computer Production print system and Driver Software deliverables meet at least those information, documentation, and support requirements identified as applicable in the attached GPAT(attachment 2). Section 508 Evaluation Factors Responses to this solicitation will only be considered for award after it has been determined that the proposal adequately addresses the requirements for Section 508. Only proposals which contain adequate information to document their responsiveness to the Section 508 requirements (e.g. completed GPATs, VPATs or equivalent and supporting documentation) will be eligible for any additional merit consideration. 3. Contractors are required to include a copy of the FAR provision 52.212-3-Offeror Representations and Certifications-Commercial Items and DFAR 252.212-7000-Offeror Representation and Certification-Commercial Items with its quote or may indicate completion of the representations and certifications on the internet at http://orca.bpn.gov. Failure to include the certifications along with the price quote or to complete the certifications on the internet may result in elimination from consideration for award. FAR 13.106-2 Quotes will be evaluated in accordance with FAR 13.106. The Government intends to award a Firm-Fixed Price commercial contract resulting from this notice on an all or none basis to the responsible offeror whose offer is the lowest price and has demonstrated compliance with the stated salient characteristics and can meet the stated delivery requirements. To demonstrate compliance with the stated minimum requirements offerors must submit the information required by FAR 52.211-6(b). Offerors providing an item other than the brand name should include product literature as specified in FAR 52.211-6 that demonstrates the ability of the item to meet all the salient characteristics (See Attachment 1). Submission of a quote in which an item other than brand name is proposed and that does not contain sufficient descriptive literature as requested above may result in elimination from consideration for award. All questions and inquiries should be addressed via email to joshua.woodworth@dla.mil with subject line `RFQ SP3300-13-Q-0024". Questions must be submitted by 1pm on 3 July 2013. Pricing, GPAT or VPAT, and representations/certifications shall be submitted to the above email address NLT 3:00 PM EDT ON 23 JULY 2013.
+
+

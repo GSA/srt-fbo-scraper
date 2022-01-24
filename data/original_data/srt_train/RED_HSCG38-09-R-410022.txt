@@ -1,0 +1,388 @@
+
+U.S. Coast Guard
+                                                        Aircraft Engine Test Cell Upgrade
+                                                             Statement of Objectives
+
+1.    BACKGROUND
+
+      The U.S. Coast Guard Aviation Logistics Center, (ALC), operates one (1) T-700-GE-401 Engine Turboshaft Test Cell at its facility in
+      Elizabeth City, NC. This facility was established in 1986. This Test Cell was designed to operate the General Electric T-700-GE (series)
+      engine through its entire operational range. The Test Cell is of a basic “U” shape and utilizes an Air Dynamometer P/N 1314AS100-1. The
+      Test Cell was adapted from a Portable Outdoor configuration that was modified to fit in an Indoor facility. The Air Dynamometer is attached
+      to a Portable Trailer, P/N 1289AS101-1 and the engine to be tested is mounted to the trailer. The Controls and Monitoring system are fixed
+      to the facility in a Control room attached to the Test Cell. The T-700-GE-401 Engine Turboshaft Test Cell currently uses a proprietary data
+      reduction program from CMR Technologies Inc to verify engine performance.
+
+      The U.S. Coast Guard Aviation Logistics Center, (ALC), operates one (1) ATF3-6-4C Jet Engine Test Cell at its facility in Elizabeth City,
+      NC. This facility was established in 1986. This Test Cell was designed to operate the Honeywell ATF3-6-4C engine through its entire
+      operational range. The Test Cell is of a basic “U” shape with the engine installed into an ATF3-6 engine adapter, P/N ASE/501445-001. The
+      adapter secures and positions the engine into the ASE 50K thrust stand, P/N ASE/501327-001. The thrust stand provides services to the
+      engine through a coupling plate and measures engine thrust utilizing a load cell P/N 206209, type U3G1 from BLH Electronics, Inc. The
+      Controls and Monitoring system are fixed to the facility in a Control room attached to the Test Cell. The ATF3 Test Cell currently uses a
+      proprietary data reduction program from Honeywell to verify engine performance.
+
+
+
+2.    SCOPE
+
+      The U.S. Coast Guard Aviation Logistics Center’s objective is to:
+         1. Obtain services for the Design, Upgrade, Modification, and Sustainment of the ATF3 Jet Test Cell.
+         2. Obtain services for the Design, Upgrade, Modification, and Sustainment of the T-700-GE-401 Engine Turboshaft Test Cell to included T-
+            700-701c, and the CT7-9C3
+
+
+      This specification defines the minimum requirements for the upgrade of the Automatic Data Acquisition System (ADAS), Data Reduction System,
+      Display and Control System (DADCS) for both Test Cells located in Building 100 at Coast Guard Aviation Logistics Center, Elizabeth City,
+      NC. The ADAS is used to acquire, display and record all physical parameters required for depot testing of the ATF3 and T-700 engines. This
+      upgrade shall consist of replacement of the existing antiquated computer hardware, software, and equipment as well as replacement of
+      existing sensory sub-systems such as:
+
+
+            • ATF3 System:
+                  o Neff Data Acquisition System
+                  o Data General CPU and Printer
+                  o Data Reduction Computer and Printer
+                  o Throttle Control System
+                  o Engine Monitoring Sensor System
+                       ▪ Temperature
+                       ▪ Pressure (Hydraulic and Pneumatic)
+                       ▪ Vibration
+                       ▪ Displays/Controls
+                       ▪ Video Monitoring/Camera System
+                  o Repositioning of the control console.
+                  o Upgrade System Power
+
+            • T-700 System:
+                  o CMR ADAS System
+                  o Mistic Controller System
+                  o OPTO 22 Interface System
+                  o Throttle Control System
+                  o Air Dynamometer System
+                  o Engine Mounting
+                  o Engine Monitoring Sensor System
+                       ▪ Temperature
+                       ▪ Pressure (Hydraulic and Pneumatic)
+                       ▪ Vibration
+                       ▪ Displays/Controls
+                       ▪ Video Monitoring/Camera System
+                  o Repositioning of the control console.
+                  o Replace T700 CPU and Printer Systems
+                  o Upgrade System Power
+
+      The objective is to enable ALC to have a modernized test cell facility to meet OEM Standards and support the United States Coast Guard
+      engines for the next decade. Our goal is to utilize the latest versions of sustainable "Commercial-off-the-shelf" (COTS) technology. Award
+      recipient should project sustainability of selected equipment, hardware, software, and spare parts for a term of at least 5 years from Test
+      Cell Upgrade Acceptance.
+
+
+      Test Cell component Inter-Changeability between the two Test Cells is required.
+
+
+3.0      GOVERNMENT DOCUMENTS
+
+
+      ORDER OF PRECEDENCE: In the event of a conflict between the text of this document and the references cited herein, the text of this
+      document takes precedence. Nothing in this document, however, supersedes applicable laws and regulations unless a specific exemption has
+      been obtained.
+
+
+      Specifications, standards, and handbooks. The following specifications, standards and handbooks form a portion of this document to the
+      extent specified herein. Unless otherwise specified, the issues of these documents are those listed in the issue of the Department of
+      Defense Index of Specifications and Standards (DODISS) and supplement thereto, cited in the solicitation.
+      FEDERAL
+
+
+            Code of Federal Regulations (CFR): Federal Communications Commission
+            Title 47, Parts 15.101 to 15.109
+
+
+            Code of Federal Regulations (CFR): Occupational Safety and Health Standards
+           Title 29, Parts 1910.301 to 1910.399.
+
+
+            (Copies of the above standard may be obtained from the U.S. Government Printing Office Superintendent of Documents, Mail Stop: SSOP,
+      Washington DC 20402-9328)
+
+
+      FAA Advisory Circular AC 43-207 Correlation, Operation, and Modification of turbofan/jet engine test cells.
+
+
+      (Copies of FAA publications are available from the Federal Aviation Administration, 800 Independence Avenue, S.W., Washington, D.C., 20591
+      or www1.airweb.faa.gov)
+
+
+      MILITARY OVERHAUL PUBLICATIONS
+
+
+      AFT3 Jet Test Cell Publications
+
+
+      2J-ATF3-10             POWER PLANT BUILD-UP MANUAL
+      2J-ATF3-2-1            TURBOFAN AIRCRAFT ENGINE – LIGHT ENGINE MAINTENANCE MANUAL
+      2J-ATF3-2-2            TURBOFAN AIRCRAFT ENGINE – HEAVY ENGINE MAINTENANCE MANUAL
+      2J-ATF3-2-3            TURBOFAN AIRCRAFT ENGINE - REPAIR MANUAL
+      2J-ATF3-4              TURBOFAN AIRCRAFT ENGINE - REPAIR MANUAL
+      TI-8084H               Test Instructions for Model ATF3-6 Engines
+
+      T-700-GE-401 Engine Turboshaft Test Cell Publications
+
+
+      A1-T700A-MMI-200       TURBOSHAFT ENGINE MODELS T-700- GE-401 & 401C
+      A1-T700A-MMI-210       TURBOSHAFT ENGINE MODELS T-700- GE-401 & 401C
+      AG-240AC-OMP-000 TURBOSHAFT ENGINE TEST SYS – ORGAN & INTERMEDIATE MAINTENANCE MANUAL w/IPB
+      AG-240AC-OMP-100       TURBOSHAFT ENGINE TEST SYS – ORGAN & INTERMEDIATE MAINTENANCE MANUAL w/IPB
+      AG-502BA-MDB-000 AIR DYNAMOMETER T58/T700 – INTERMEDIATE MAINTENANCE & DEPOT INSTRUCTIONS w/IPB
+      03-1-641               TURBOSHAFT ENGINE TEST SYS, A/F3– ORGAN & INTERMEDIATE MAINTENANCE MANUAL w/IPB
+      03-01-642              T700 ENGINE TEST SYS, A/F37T-16(V)3 – ORGAN & INTERMEDIATE MAINTENANCE MANUAL w/IPB
+      CT7-93C TEST CELL PUBLICATIONS
+      SEI- 576  GE-Aircraft CT7 Turboprop engine maintenance Manual
+      SEI-578 Aircraft CT7 turboprop engine shop manual
+
+
+            All GE and Honeywell technical manuals are proprietary to the OEM.
+           Contractor must be able to obtain independently.
+      (Requests for more information will be sent to the Contracting Officer at the address below)
+
+
+      Contracting Officer
+      USCG Aviation Logistics Center
+      Industrial Operations Division (IOD) Contracting Section
+      Ginger Woodington, Building 63
+      Elizabeth City, NC     27909
+
+
+      DRAWINGS
+
+
+      Copies of the Facilities Drawings will be provided to the contractor through the Contracting Officer
+
+
+
+4.      DISTRIBUTION STATEMENT
+
+      Approved for public release; distribution is unlimited.
+      Beneficial comments (recommendations, additions, deletions) and any pertinent data which may be of use in improving this document should be
+      addressed to:
+
+
+      Contracting Officer
+      USCG Aviation Logistics Center
+      Industrial Operations Division (IOD) Contracting Section
+      Ginger Woodington, Building 63
+      Elizabeth City, NC     27909
+
+
+      Commercial Phone (252) 334-5051
+
+
+5.    REQUIREMENTS
+
+
+      This Up-grade will require the Test Cell to be capable of testing repaired engines in compliance with the Original Equipment Manufacture’s,
+      (OEM), specifications of the engines. The Upgrade shall improve the Test Cell to meet or exceed Industry Standards In-Accordance-With,
+      (IAW); Federal Aviation Administration Advisory Circular AC 43-207, the National Electrical Code (NEC) and federal regulations. This
+      upgrade should include, but is not limited to, the following systems:
+
+
+           1. Structural changes required for  the installation of  upgrades
+           2. Load or Dynamometer System
+           3. Electrical: (Test Cell and Adapters)
+           4. Fuel
+           5. Pneumatic: (Test Cell and Adapters)
+           6. Hydraulic: (Test Cell and Adapters)
+           7. Sensor: (RTD’s, Pressure, and Temperature)
+           8. Control
+           9. Display
+          10. Data Acquisition
+          11. Data Reduction
+          12. Alarm, Warning, Annunciation, and Indicators
+          13. Data Recording, Playback, and Storage
+          14. CCTV, Video Recording, Playback, and Storage
+          15. Computers and Peripherals
+          16. Intercom and Communications
+          17. FOD Screens
+          18. Bypass Ducting
+          19. Hot Shrouds
+          20. Test Bed (T-700 & CT7 use same test bed interchangeably)
+          21. Vibration and Trim Balance Analyzer
+
+
+      The Test Cells will be required to correlate a USCG jet engine to the OEM specifications and FAA Document AC 43-207.
+
+
+         1. The T-700 Test Cell utilizing the USCG “Gold Engine” that has been baselined by General Electric.
+         2. The ATF3 Test Cell utilizing an ATF3-6-4C engine provided by the USCG.
+         3. The CT7-9C3 engine will be provided by the USCG.
+
+5.1   DATA COLLECTION
+
+
+      The system must fully integrate the test system component equipment, software, and Automatic Data Acquisition System to collect and
+      distribute channel data. This includes, but is not limited to, temperatures, pressures, humidity, altitude, speeds, rated horsepower,
+      thrust, air flows, fluid flows, and engine cycles. Collectively, these data points determine the operational performance of the Jet or
+      Turboshaft engine being tested. The software must provide the capability to consolidate this data, present them to the operator in various
+      display formats, and automatically compare them against adjustable limits for automated error control sequences and/or error annunciation.
+
+
+5.2   GRAPHICAL USER INTERFACE (GUI)
+
+
+      The system must provide on-screen guidance and instructions for the operator to run a series of predefined tests to verify the operations
+      and performance of the engines and their components. Visual displays must be in color, and capable of displaying selected data in various
+      forms to include, but not limited to, Text, Raw Data, bar graph, simulated dials, simulated cockpit indicators, video, caution, warning
+      indicators, and overspeed protection. User input will be via Touch screen, keyboard, and mouse driven menus.
+
+
+5.3   DATA RECORDING AND STORAGE
+
+
+      The integrated system must be capable of recording continuous selected parameters and snapshots of the channel data on to the system hard
+      drive, and utilize this data to generate specialized printed reports in color and Black and White for the completed tests, in electronic
+      and hard copy formats. Selected Tests parameters and snapshots should be re-settable to allow for multiple snapshots of the same test for
+      system troubleshooting.
+
+
+      The selected parameters, snapshot points, and reports must be adaptable and changeable to meet the changing and challenging documentation
+      requirements. Reports must be generated and stored in Microsoft compatible formats.
+
+
+      The system must include means of voice communication between operator and mechanic during engine set-up, motoring checks, leak checks and
+      low-power runs.
+
+5.4   TEST CELL CAPABILITIES
+
+
+      The capabilities of the Test Cells are required to test the following engine types:
+
+
+                                                                     JET CELL
+
+
+         • USCG ATF3 engine
+               o ATF3-6-4C
+
+      All software must have the ability to be reprogrammed to accommodate a new engine type in the event the USCG re-engines the HU-25 Falcon.
+
+
+                                                                 TURBOSHAFT CELL
+
+
+         • USCG GE T-700 engines
+               o T-700-401C
+         • USAF, Navy, Marine, Army (JDLM)
+               o T-700-401C
+               o T-700-701C
+         • USCG CASA series General Electric CT7-9
+               o CT7-9C3
+
+      The T-700 Test Cell will be required to operate with both the 24-pin and 31-pin Digital Engine Control Unit, (DECU/ECU).
+
+
+      Inter-Service operability is highly desirable with Air Force, Navy, Army, and USMC systems and facilities.
+
+
+5.5   DESIGN
+
+
+      Both Test cells are required to have interchangeable current versions of operating systems, hardware, software, peripherals and electronic
+      devices.  Interchangeable parts and components should be used wherever possible between the two test cells.   They are also required to
+      provide identical user interface and console set-up.  All wiring used in the installation should be of aircraft grade whenever possible.
+      Quick connects/disconnects shall be used wherever possible to allow for ease of maintenance and operation.
+
+
+      The Government reserves the right to perform pre-award on-site visits of contractor’s production facility to gain insight of manufacturing
+      capabilities.
+
+
+      All software must have the capability to be reprogrammed in the event of a re-engine project of the HU-25 ATF3 engine package.
+
+      The vibration and trim balance analyzer must have the ability to archive the vibration data.
+
+
+6.       WARRANTY
+
+      Upon Project completion, provide the designated Government personnel with the required training in system operation and maintenance.
+
+      The Contractor shall provide a minimum one (1) year warranty on all parts and labor from the day of Government acceptance with a desired 24-
+      hour response time.  This warranty shall cover ALL of the Test Cell System components specified in this document.
+
+
+7.0   TECHNICAL documentation
+
+
+      Upon completion the contractor will provide manuals on electronic media and hard copy that cover Layout, Design, Maintenance, Testing,
+      Troubleshooting, Operation, Calibration, and Illustrated Parts Breakdown (IPB’s). These manuals must contain design and wiring schematics,
+      installation drawings, and must include component part numbers and OEM part numbers with manufacturer for installed equipment. Wiring
+      diagrams must include wire type, size, connector ID number and Connector Part Numbers. The contractor shall provide written permissions
+      that allow the USCG to reproduce these manuals and software/firmware either partially, or in their entirety for USCG use.
+
+
+      The system must include software programs, instructions with user interface and manuals to calibrate, troubleshoot, and maintain the test
+      system and all system components.
+
+
+      The T700/CT7 and ATF3 systems shall include Test Procedures, Parameters, and Test Points IAW Appropriate Technical Publications.
+
+
+      The contractor shall provide Acceptance Data Sheets for each phase of the Up-grade to be inspected and accepted by ALC IOD Quality
+      Assurance Personnel.
+
+
+      ANY EQUIPMENT, PROCESSES, SOFTWARE, DOCUMENTATION, AND EQUIPMENT DEVELOPED FOR THIS PROJECT WILL BECOME THE PROPERTY OF THE COAST GUARD.
+
+
+7.1   TRAINING
+
+      The Contractor shall provide sufficient personnel on site for Installation and Assistance, Start-up/Acceptance, Operator Training
+      (Equipment Operation), Maintenance Training.  A priced line item is requested for additional training on an as needed basis for new
+      employees.  The Government requires the contractor to perform an initial maintenance checks process with USCG employees prior to final
+      acceptance.
+
+2.      SERVICE AGREEMENT
+
+      The contractor will agree to a service agreement to properly calibrate and service the complete test cell system on-site, once per year.
+      The Government desires the contractor to provide a 24 hour response time for on-site service for any emergency situation designated by the
+      Coast Guard.
+
+   3. SERVICE BULLETINS
+
+      All service bulletins if not previously accomplished, shall be identified to the contracting officer. All future Service Bulletins for
+      equipment and software installed pursuant to this contract shall be made available to the Contracting Officer for possible incorporation in
+      to the Coast Guards’ test cell. Incorporation of these Service Bulletins will be at the discretion of the USCG, and will be negotiated on a
+      case-by-case basis.
+
+
+
+8.0   DELIVERABLES
+
+      Contractor shall provide system designs, manuals, and schematics in an electronic media format that allows for one copy to be locked, to
+      preserve original design, and format; the other copy to be unlocked to allow for future system upgrades, modification, and expansion.
+
+
+      All illustrations will be originated in “Autotrol Technical Illustrator” software and delivered as a “.dg” and “.cgm” file. The existing
+      ALC illustration database will be utilized to generate and store filenames and metadata for these graphics. The generated filename will be
+      placed in 6 pt font in the lower right hand corner of the illustration and shall also be used as the electronic filename for the graphic.
+
+
+      All technical drawings will be originated in “CoCreate One Space Designer” or “ProEngineer” and delivered in the native  format  for  each.
+      The existing ALC drawing database will be utilized to generate and store filenames and metadata for these drawings.
+
+9.0   PERIOD OF PERFORMANCE
+
+      The upgrade to the test cell system should be completed within 12 months of contract award. This will include design, purchase and
+      modification of all hardware, software, and manuals. Shutdown, disassembly of the existing system, upgrades, and correlation is desired to
+      be completed within 90 days to avoid serious production delays.
+
+
+      All efforts shall be made by the Contractor to complete the installation as soon as possible after the start of the contract.
+      Installation, as long as it does not interfere with the U.S. Coast Guard production operations, can begin as soon as the Government program
+      manager has approved the proposed design and received approval from the Government.  Any Contractor tasks that will require extensive
+      interruption of the U.S. Coast Guard utilities or facility/equipment access must be scheduled with the Government prior to implementation.
+
+
+10.0  GOVERNMENT FURNISHED PROPERTY
+
+      The USCG will make an engine T700-GE-401C and CT7 available for use in correlating the test cell following installation of the upgrade.
+
+
+      The USCG will also make available an ATF3-6-4C engine for correlating the test cell following installation of the upgrade.

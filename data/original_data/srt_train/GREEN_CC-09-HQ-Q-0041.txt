@@ -1,0 +1,478 @@
+
+OCC ACCESSIBILITY REQUIREMENTS Reference: Details and Deliverables
+ACCESSIBILITY
+This document outlines the accessibility requirements that is required for OCC Electronic and Information Technology (EIT) deliveries.   29 USC 794(d)
+FAR 39.2
+36 CFR 1194 All results shall be fully explained by the vendor prior OCC acceptance.  All documents and deliverables are subject to OCC review prior to acceptance.  Details shall include:
+1) How the product met each requirement
+2) Method used to test and the results
+3) N/A for items that do not apply to the deliverable
+1.0 Functional Performance Criteria 
+
+(APPLIES TO ALL EIT PRODUCT AND SERVICE DELIVERABLES)
+1.01 The EIT deliverables shall provide at least one mode of operation and information retrieval that does not require user vision, or support for assistive technology used by people who are blind or visually impaired. This includes full keyboard-only access for all functions of the system and controls that are readable with assistive technologies. 36 CFR 1194.31(a)
+1.02 The EIT deliverables shall provide at least one mode of operation and information retrieval that does not require visual acuity greater than 20/70 that must be in audio and enlarged print output working together or independently, or support for assistive technology used by people who are visually impaired.  This includes users with color blindness disabilities.  It is recommended that support for assistive technology be used to satisfy this requirement. 36 CFR 1194.31(b)
+1.03 The EIT deliverables shall provide at least one mode of operation and information retrieval that does not require user hearing, or support for assistive technology used by people who are deaf or hard of hearing. 36 CFR 1194.31(c)
+1.04 The EIT deliverables, where audio information is important for the use of a product, shall provide at least one mode of operation and information retrieval in an enhanced auditory fashion, or support for assistive hearing devices. 36 CFR 1194.31(d)
+1.05 The EIT deliverables shall provide at least one mode of operation and information retrieval that does not require user speech, or support for assistive technology used by people with disabilities. 36 CFR 1194.31(e)
+1.06 The EIT deliverables shall provide at least one mode of operation and information retrieval that does not require fine motor control or simultaneous actions and that is operable with limited reach and strength. 36 CFR 1194.31(f)
+1.07 If the system utilizes dynamic updates or features within any user interface, including a Web-based interface, the system must provide support for assistive technology such as tracking focus, providing user-controlled keyboard or automatic navigation (focus control) to updated content to ensure the updated information is available to users who are blind or have low vision disabilities compariable to access by users without disabilities.  When this type of dynamic functionality exist within a Web site, such as but not limited to the use of Asynchronous JavaScript and XML (AJAX), Macromedia Flash, or similar approach or technology, the Web interface is required to comply with item 4 "Software Applications" as OCC has identified these emerging technologies as not being accessible by using "Web" standards alone.  The use of "Software" standards in these instances satisfy compliance by supporting the Functional Performance Criteria as required. 36 CFR 1194.5
+2.0 Web-based Technical Requirements 
+
+Applies to all Web-based deliverables, including documentation and reports procured or developed under this work statement. When any Web application uses a dynamic (non-static) interface, embeds custom user control(s), embeds video or multimedia, uses proprietary or technical approaches such as, but not limited to, Flash or Asynchronous Javascript and XML (AJAX) then “1194.21 Software” standards also apply to fulfill functional performance criteria.
+2.01 A text equivalent for every non-text element shall be provided (e.g., via "alt", "longdesc", or in element content).  This includes but not limited to all input fields, images, objects, links included on the Web (browser) interface. 36 CFR 1194.22(a)
+2.02 Equivalent alternatives (audio and visual content) for any multimedia presentation shall be synchronized with the presentation.  All Web-based multimedia must also comply with item 4 (Software Applications) and item 5 (Video and Multimedia Technical Requirements) of this matrix. 36 CFR 1194.22(b)
+2.03 All Web pages shall be designed so that all information conveyed with color is also available without color, for example from context or markup. 36 CFR 1194.22(c)
+2.04 Documents shall be organized so they are readable without requiring an associated style sheet. 36 CFR 1194.22(d)
+2.05 No server-side image maps are to be used without OCC Contracting Officer or COTR approval after consultation with OCC Section 508 Program Office. 36 CFR 1194.22(e)
+2.06 Client-side image maps shall be provided instead of server-side image maps 36 CFR 1194.22(f)
+2.07 Row and column headers shall be identified for data tables. 36 CFR 1194.22(g)
+2.08 Markup shall be used to associate data cells and header cells for data tables that have two or more logical levels of row or column headers.  When using tables for the display of form fields, table headers shall not substitute for the use of explicit labels as identified in 2.14 36 CFR 1194.22(h)
+36 CFR 1194.22(n)
+2.09 Frames shall be titled with text that facilitates frame identification and navigation. 36 CFR 1194.22(i)
+2.1 Pages shall be designed to avoid causing the screen to flicker with a frequency greater than 2 Hz and lower than 55 Hz.  To measure this for compliance, OCC will focus on the existence of flashing items that are recognizable with the naked eye and if noticable, the blink rate shall be flashing slower than 2 "blinks" per second.  Any noticable flash exceeding this threshold will be considered a violation of this requirement.  No use of marquee or scrolling content is permitted without prior approval from the OCC Contracting Officer or COTR with consultation with OCC Section 508 Program Office. 36 CFR 1194.22(j)
+2.11 The system shall use a standard (single) interface that is accessible to both users with and without disabilites with rare exception.  Upon rare exception with OCC Contracting Officer or COTR approval in accordance with instructions below, providing a text-only page with equivalent information or functionality may be permitted to make a web site accessible, when accessibility and conformance of this requirement cannot be accomplished in any other way. The content of the text-only page shall be updated whenever the primary page changes.  All request for approval will need to clearly identify that it is technically impossible to provide the page in an accessible format based on OCC business needs, not design choice or preferred technical approach, with an operational plan showing that safeguards are in place that will update the text-only page whenever the primary page changes.  NOTE: This system is intended to be a "one system accessible to all end-users" design, regardless of disability. 36 CFR 1194.22(k)
+2.12 When pages utilize scripting languages to display content, or to create interface elements, the information provided by the script shall be identified with functional text that can be read by assistive technology.  This does not prohibit the use of scripting but does require that when scripting is used, the information is readily accessible to assistive technology, has appropriate functional text, and is fully functional via the keyboard. 36 CFR 1194.22(l)
+36 CFR 1194.31
+36 CFR 1194.21(a)
+2.13 When a web page requires that an applet, plug-in, or other application be present on the client system to interpret page content, the page shall provide a link to the plug-in or applet that complies with item 4 (Software Applications) of this matrix.  For the purposes of applications intended to be limited to internal OCC use (Intranet), OCC will not require a link be present on each page.  OCC internal policies prohibit users from loading applications on their workstations without approval.  If plug-ins are necessary, this does not exempt the vendor from ensuring that the plug-in complies with item 4 (Software Applications of this matrix).  OCC will satisfy the "link availability" through it's internal process for installation of software on OCC workstations. 36 CFR 1194.22(m)
+2.14 When electronic forms are designed to be completed on-line, the form shall allow people using assistive technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues.  OCC requires the use of explicit labels in all instances.  Explicit labels include but not limit the proper use of the HTML <label> tag when applicable.  For non-HTML technical approaches, the measurement of compliance will be evaluated based on item 4 (Sofware Applications). 36 CFR 1194.22(n)
+2.15 A method shall be provided that permits users to skip repetitive navigation links. 36 CFR 1194.22(o)
+2.16 When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required.  For the purpose of measuring "sufficient time", OCC has determined that 30 seconds for end-of-session or inactivity log-out based on security requirements is acceptable. 36 CFR 1194.22(p)
+3.0 Information, Documentation and Support
+
+Information Documentation and Support, applies to all documents, reports, as well as help and support services. To ensure that documents and reports fulfill the required “1194.31 Functional Performance Criteria”, they shall comply with the technical standard associated with Web-based Intranet and Internet Information and Applications at a minimum. In addition, any help or support provided in this work statement that offer telephone support, such as, but not limited to, a help desk shall have the ability to transmit and receive messages using TTY.
+3.01 Product training, support and help documentation provided must be made available in electronic format that is accessible to end users identified in item 1 (Functional Performance Criteria). All documents and reports shall comply with the technical standards of item 2 (Web-based technical requirements) regardless of intended delivery method.  For spreadsheets, documents and reports that contain interactive content they shall comply with standards in item 4 (Software Applications) in addtion to item 2 (Web-based technical requirements).   36 CFR 1194.41
+36 CFR 1194.31
+36 CFR 1194.21
+36 CFR 1194.22
+3.02 The contractor shall provide a description of the accessibility and compatibility features used to comply with the accessibility requirements within any help or support feature provided as part of the system.  If the system contains a help feature within the application, the feature shall be compliant with the applicable standards within this matrix and have a help section that identifies accessibility and compatability features.  If accessibility was achieved by following the specific technical standards and no "vendor created" short-cut or features were added to make compliant, this can be marked not applicable.  36 CFR 1194.41
+3.03 Support services for products shall accommodate the communication needs of end-users with disabilities.  Any help-desk must include Teletypewriter (TTY) support for users with hearing and speech disabilities when the service has telephone support available. 36 CFR 1194.41
+4.0 Software Applications (Applies to Software applications, some Web applications and some interactive documents)
+
+Certain "Web" based applications: Applies to all Web-based deliverables, including documentation and reports procured or developed under this work statement. When any Web application uses a dynamic (non-static) interface, embeds custom user control(s), embeds video or multimedia, uses proprietary or technical approaches such as, but not limited to, Flash or Asynchronous Javascript and XML (AJAX) then “1194.21 Software” standards also apply to fulfill functional performance criteria.
+4.01 When software is designed to run on a system that has a keyboard, product functions shall be executable from a keyboard where the function itself, or the result of performing a function can be discerned textually. 36 CFR 1194.21(a)
+4.02 Applications shall not disrupt or disable activated features of other products that are identified as accessibility features, where those features are developed and documented according to industry standards. Applications also shall not disrupt or disable activated features of any operating system that are identified as accessibility features where the application programming interface for those accessibility features has been documented by the manufacturer of the operating system and is available to the product developer. 36 CFR 1194.21(b)
+4.03 A well-defined on-screen indication of the current focus shall be provided that moves among interactive interface elements as the input focus changes. The focus shall be programmatically exposed so that assistive technology can track focus and focus changes. 36 CFR 1194.21(c)
+4.04 Sufficient information about a user interface element including the identity, operation and state of the element shall be available to assistive technology. When an image represents a program element, the information conveyed by the image shall also be available in text. 36 CFR 1194.21(d)
+4.05 When bitmap images are used to identify controls, status indicators, or other programmatic elements, the meaning assigned to those images shall be consistent throughout an application's performance. 36 CFR 1194.21(e)
+4.06 Textual information shall be provided through operating system functions for displaying text. The minimum information that shall be made available is text content, text input caret location, and text attributes. 36 CFR 1194.21(f)
+4.07 Applications shall not override user selected contrast and color selections and other individual display attributes. 36 CFR 1194.21(g)
+4.08 Animation is not permitted in this system unless approved by the OCC Contracting Officer or COTR. 36 CFR 1194.21(h)
+4.09 Color coding shall not be used as the only means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. 36 CFR 1194.21(i)
+4.1 When a product permits a user to adjust color and contrast settings, a variety of color selections capable of producing a range of contrast levels shall be provided. 36 CFR 1194.21(j)
+4.11 Software shall not use flashing or blinking text, objects, or other elements having a flash or blink frequency greater than 2 Hz and lower than 55 Hz. To measure this for compliance, OCC will focus on the existence of flashing items that are recognizable with the naked eye and if noticable, the blink rate shall be flashing slower than 2 "blinks" per second.  Any noticable flash exceeding this threshold will be considered a violation of this requirement.  No use of marquee or scrolling content is permitted without prior approval from the OCC Contracting Officer or COTR with consultation with OCC Section 508 Program Office. 36 CFR 1194.21(k)
+4.12 When electronic forms are used, the form shall allow people using assistive technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues.  When displaying form fields in HTML, explicit labels through the proper use of the <label> tag shall be provided.  For non-HTML based forms, the fields are required to programmically assign labels, cues and directions that are recognized by assistive technologies. 36 CFR 1194.21(l)
+5.0 Video and Multimedia Technical Requirements
+
+Applies to all video and multimedia products that are procured or developed under this work statement. Any video or multimedia presentation shall also comply with the software standards (1194.21) when the presentation is through the use of a Web or Software application interface having user controls available.
+5.01 All training and informational video and multimedia productions, regardless of format, that contain speech or other audio information necessary for the comprehension of the content, shall be open or closed captioned.  For the purposes of this requirement, closed or open captioning will mean the inclusion of syncronized equivalent text embedded within a presentation that permits user selectable controls to turn the feature on-off unless permanent.  The captioning shall be consistently positioned within the screen with a font-size of no less than 12 point and have a contrast that is a black back drop with white text. 36 CFR 1194.24(c)
+5.02 All training and informational video and multimedia productions, regardless of format, that contain visual information necessary for the comprehension of the content, shall be audio described within the production.  The audio descriptions shall be sequenced to avoid two audio tracks overriding the other. 36 CFR 1194.24(d)
+5.03 Display or presentation of alternate text presentation or audio descriptions shall be user-selectable unless permanent. 36 CFR 1194.21(e)
+5.04 Any software that is used in the display of video or multimedia presentations, such as but not limited to Media Player, Realplayer and Quicktime shall also comply with item 4 ("Software Applications".) 36 CFR 1194.21
+6.0 Testing, Research and Acceptance
+6.01 The contractor shall have testing methodologies and process using assistive technologies such as screen readers, speech-to-text, and magnification software, automated scans (for Web pages) and manual verification to ensure compliance with these accessibility requirements described within this attachment. Applies to all EIT acquisitions Deliverables: 
+1- List of applicable Section 508 standards
+2- Test Plan
+6.02 The contractor shall execute tests for all EIT deliverables to ensure that all technical standards and functional performance criteria of Section 508 is met. The test results for the three methods identified in the planning stage (item 6.01 of this document) must be executed, documented and submitted by the contractor prior to OCC acceptance. All test methods or processes used must be repeatable and verifiable for OCC review.  Testing must include functional testing using assistive technologies applied to the defined user requirements.   Applies to all EIT acquisitions Deliverables:
+1- Scanned Test Results, when applicable
+2- Functional Performance Test results
+3- Working version of the deliverables
+6.03 Commercially Off The Shelf (COTS) products or Government Off the Shelf products (GOTS).  All acquisitions or delivery of COTS products aquired by the vendor under this work statement shall only be selected and acquired after performing market research, identifying all products that meet the defined business needs, determining which product is the "most compliant" with a primary focus being on meeting the Functional Performance Criteria identified in Item 1 of this document.  Only the "most compliant" item shall be permitted for acquisition.  Any deviation from this requires OCC CO or COTR approval with consultation with the OCC Section 508 Program Office. Applies to non-customized COTS acquisitions  Deliverables (when applicable):
+1- Market Research documenation
+2- Product Selection determination documentation
+6.05 The contractor shall have testing tools available to meet the requirements of this contract that include assistive technologies and automated scan tools.  The contractor shall ensure that the personnel assigned to perform the accessibillity tests possess the skills and knowledge required to assess Web based applications, documents, multimedia, software applications and the functional performance criteria outlined in this attachment.  The contractor may perform their own tests for accessibility requirements or use a third party vendor at their option.
+6.06 All reference to the use of "Assistive Technologies" within this attachment include a broad range or tools and technologies. OCC does not endorse any particular product or service but has identified a set of products that OCC may use to verfiy compliance relating to the use of Assistive Technology as claimed by the vendor system deliverables: 1) Freedom Scientific, JAWS version 6.2 and greater, 2) Scansoft, Dragon Naturally Speaking version 8.0 and greater, 3) Ai Squared, Zoomtext version 9.0 and greater, and 4) Microsoft XP Operating System accessibility feature "Narrator". The contractor shall perform test with a variety of assistive technologies that are used by individuals with disabilities described in item 1 (Functional Performance Criteria) such as blind, deaf, hard of hearing, low vision acuity, speech and motor-skills.
+Comptroller of the Currency Administrator of National Banks US Department of the Treasury
+
+INFORMATION RISK MANAGEMENT
+Communicate. Integrate. Deliver.
+
+Service Provider
+Build IT:
+Integrate information security into business functions and processes.
+
+O
+Self Assessment
+
+Verify IT:
+Guide the examination of security controls and define the approach to risk management activities.
+
+Make IT Better:
+Provide stewardship of OCC information resources by improving institutional capacity and maintaining a sound governance system.
+
+ii
+
+| Information RISK MANAGEMENT
+
+O
+
+Operational Procedures
+
+Table of Contents
+1. EXECUTIVE SUMMARY 2. INSTRUCTIONS 1 2
+
+3. INFORMAtion Security control Questionnaire3
+   3.1 ACCESS CONTROL (AC).   .   .   .   .   .   .   .   .   .   . 3 3.2 AWARENESS AND TRAINING (AT) .  .  .  .  .  .  . 4 3.3 AUDIT AND ACCOUNTABILITY (AU) .   .   .   .   .   .   .  5
+
+ 3.4 CERTIFICATION, ACCREDITATION, AND  SECURITY ASSESSMENTS (CA).   .   .   .   .   .   .   . 6       3.5 CONFIGURATION MANAGEMENT (CM). . . . . . 8 3.6 CONTINGENCY PLANNING (CP) .   .   .   .   .   .   .   . 9 3.7 IDENTIFICATION AND AUTHENTICATION (IA).  .  . 10 3.8 INCIDENT RESPONSE (IR) .   .   .   .   .   .   .   .   .   . 11 3.9 MAINTENANCE (MA) .   .   .   .   .   .   .   .   .   .   .   . 12 3.10 MEDIA PROTECTION (MP) .   .   .   .   .   .   .   .   .   . 13
+
+ 3.11 PHYSICAL AND ENVIRONMENTAL  PROTECTION (PE).  .  .  .  .  .  .  .  .  .  .  .  . 14     3.12 PLANNING (PL).  .  .  .  .  .  .  .  .  .  .  .  .  . 15 3.13 PERSONNEL SECURITY (PS).  .  .  .  .  .  .  .  . 16 3.14 RISK ASSESSMENT (RA).   .   .   .   .   .   .   .   .   .  17 3.15 SYSTEM AND SERVICES ACQUISITION (SA). . . 18
+
+ 3.16 SYSTEM AND COMMUNICATIONS  PROTECTION (SC).  .  .  .  .  .  .  .  .  .  .  .  . 19  3.17 SYSTEM AND INFORMATION INTEGRITY (SI) .   .   . 20
+
+4. FREQUENTLY ASKED QUESTIONS 5. ATTESTATION LETTER
+Version  1.0
+
+21 23
+CC 9070-02 (REV 10/08) | iii
+
+iv
+
+| Information RISK MANAGEMENT
+
+O
+
+Operational Procedures
+
+1. EXECUTIVE SUMMARY
+The Office of the Comptroller of the Currency (OCC) requires all service providers to have an information se curity program that provides management, operational, and technical safeguards designed to protect OCC data. This publication is based on security control requirements established by Federal Information Process ing Standard (FIPS) Publication 200, "Minimum Security Requirements for Federal Information and Information Systems." Once completed, this self assessment will be analyzed by OCC information Risk Management personnel to provide the OCC's contracting officer with a preliminary assessment of the respondents' security program. OCC's analysis will rely on the quality and completeness of the information provided. OCC Risk Management person nel will conduct further analyses, review, and testing of the apparent winning bidder's security control environment based on a full set of control requirements. Explanation of terms, concepts, and other items related to federal information security requirements can be found in the "Frequently Asked Questions" section of this publication.
+
+Version  1.0
+
+CC 9070-02 (REV 10/08) |
+
+1
+
+2. INSTRUCTIONS
+The self assessment questionnaire must be filled out by staff responsible for, and knowledgeable of, the security control environment that will be utilized to protect the confidentiality, integrity, and availability of Office of the Comptroller of the Currency (OCC) data. The OCC requires attestations for all self assessments made by its service providers. Once completed, the questionnaire must be reviewed and approved by a senior officer of the organization. The formal attestation letter (appendix A) should be submitted as part of any official response to the request for proposal, statement of work, and/or other contracting document. Terms used in this document are based on "Glossary of Key Information Security Terms," NIST Interagency Reports (NIST IR 7298), dated April 2006. Please review the checklist in table 1 below to ensure completeness prior to final submission.
+
+All questions within the self assessment have been completed. Self assessment has been reviewed and approved by knowledgeable staff. Detailed comments have been provided where applicable. Attestation letter has been reviewed and signed by a senior officer of the organization. Table 1: Completion Checklist
+
+2
+
+| Information RISK MANAGEMENT
+
+O
+
+Operational Procedures
+
+3. INFORMAtion Security control Questionnaire
+3.1 ACCESS CONTROL (AC)
+Organizations must limit information system access to authorized users, processes acting on behalf of authorized users, or devices (including other information systems) and to the types of transactions and functions that authorized users are permitted to exercise.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider limit information system access to authorized users, processes acting on behalf of authorized users, or devices (including other information systems)? Yes No Does the service provider limit information system access to the types of transactions and functions that authorized users are permitted to exercise? Yes No
+
+ Version 1.0
+
+CC 9070-02 (REV 10/08) |
+
+3
+
+3.2 AWARENESS AND TRAINING (AT)
+Organizations must: (i) ensure that managers and users of organizational information systems are made aware of the security risks associated with their activities and of the applicable laws, directives, policies, standards, instructions, regulations, or procedures related to the security of organizational information systems; and (ii) ensure that organizational personnel are adequately trained to carry out their assigned information securityrelated duties and responsiblities.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider ensure that managers and users of organizational information systems are made aware of the security risks associated with their activities and of the applicable laws, directives, policies, standards, instructions, regulations, or procedures related to the security of the service provider's information systems? Yes No Does the service provider ensure that personnel are adequately trained to carry out their assigned information security-related duties and responsibilities? Yes No
+
+4
+
+| Information RISK MANAGEMENT
+
+O
+
+Operational Procedures
+
+3.3 AUDIT AND ACCOUNTABILITY (AU)
+Organizations must: (i) create, protect, and retain information system audit records to the extent needed to enable the monitoring, analysis, investigation, and reporting of unlawful, unauthorized, or inappropriate information system activity; and (ii) ensure that the actions of individual information system users can be uniquely traced to those users so they can be held accountable for their actions.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider create, protect, and retain information system audit records to the extent needed to enable the monitoring, analysis, investigation, and reporting of unlawful, unauthorized, or inappropriate information system activity? Yes No Does the service provider ensure that the actions of individual information system users can be uniquely traced to those users so they can be held accountable for their actions? Yes No
+
+ Version 1.0
+
+CC 9070-02 (REV 10/08) |
+
+5
+
+3.3 CERTIFICATION, ACCREDITATION, AND SECURITY ASSESSMENTS (CA)
+Organizations must: (i) periodically assess the security controls in organizational information systems to determine if the controls are effective in their application; (ii) develop and implement plans of action designed to correct deficiencies and reduce or eliminate vulnerabilities in organization informaion systems; (iii) authorize the operation of organizational information systems or any associated information system connections; and (iv) monitor information system security controls on an ongoing basis to ensure the continued effectiveness of the controls.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider periodically assess the security controls in organizational information systems to determine if the security controls are effective? Yes No Does the service provider develop and implement plans of action designed to correct deficiencies and reduce or eliminate vulnerabilities in organizational information systems? Yes No Does the service provider authorize the operation of organizational information systems and any associated information system connections? Yes No Does the service provider monitor information system security controls on an ongoing basis to ensure the continued effectiveness of the security controls? Yes No
+
+6
+
+| Information RISK MANAGEMENT
+
+O
+
+Operational Procedures
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider have a corporate information security division to ensure that the organization implements the appropriate guidance to protect information resources? Yes No Does the service provider subscribe to either mandatory or voluntary information security frameworks and guidelines [e.g., COSO, CoBIT, ITIL, ISO/IEC 27001, ISO/IEC 17799 (BS7799), NSA IAM], or is the service provider required to report on its internal controls under the GBLA, SOX, HIPAA, FISMA, PCI, California Security Breach Information Act (SB-1386), Safe Harbor, Basel II Accord, or a framework/ regulatory requirement not mentioned here? (Please note in the comment section below what framework is utilized and which regulatory requirements govern your information security practices.) Yes No
+
+ Version 1.0
+
+CC 9070-02 (REV 10/08) |
+
+7
+
+3.5 CONFIGURATION MANAGEMENT (CM)
+Organizations must: (i) establish and maintain baseline configurations and inventories of organizational information systems (including hardware, software, firmware, and documentation) throughout the respective system development life cycles; and (ii) establish and enforce security configuration settings for information technology products employed in organizational information systems.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider establish and maintain baseline configurations and inventories of organizational information systems (including hardware, software, firmware, and documentation) throughout the respective system development life cycles? Yes No Does the service provider establish and enforce security configuration settings for information technology products employed in organizational information systems? Yes No
+
+8
+
+| Information RISK MANAGEMENT
+
+O
+
+Operational Procedures
+
+3.6 CONTINGENCY PLANNING (CP)
+Organizations must: establish, maintain, and effectively implement plans for emergency response, backup operations, and post-disaster recovery for organizational information systems to ensure the availability of critical information resources and continuity of operations in emergency situations.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider establish, maintain, and effectively implement plans for emergency response, backup operations, and post-disaster recovery for organizational information systems to ensure the availability of critical information resources and continuity of operations in emergency situations? Yes No
+
+ Version 1.0
+
+CC 9070-02 (REV 10/08) |
+
+9
+
+3.7 IDENTIFICATION AND AUTHENTICATION (IA)
+Organizations must identify information system users, processes acting on behalf of users, or devices and authenticate (or verify) the identities of those users, processes, or devices, as a prerequisite to allowing access to organizational information systems.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider identify information system users, processes acting on behalf of users, or devices; and does it authenticate (or verify) the identities of those users, processes, or devices, as a prerequisite to allowing access to organizational information systems? Yes No Are the encryption technologies that the service provider uses to safeguard workstations, laptops, servers, portable media/devices, and backup tapes compliant with Federal Information Processing Standards (FIPS) Publication 140-2; and does the service provider allow remote access to its information technology resources only via encrypted, two-factor authentication technologies? Yes No
+
+10 | Information RISK MANAGEMENT
+
+O
+
+Operational Procedures
+
+3.8 INCIDENT RESPONSE (IR)
+Organizations must: (i) establish an operational incident handling capability for organizational information systems that includes adequate preparation, detection, analysis, containment, recovery, and user response activities; and (ii) track, document, and report incidents to appropriate organizational officials and/or authorities.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider establish an operational information/computer security incident handling capability for organizational information systems that includes adequate preparation, detection, analysis, containment, recovery, and response activities? Yes No Does the service provider track, document, and report information/computer security incidents to appropriate organizational officials and/or authorities? Yes No Does the service provider have policy, procedures, and regularly tested breach notification practices, to include additional provisions for sensitive data?1 Yes No Does the service provider have publicly available materials on its breach notification practices? Yes No
+
+1
+
+"Sensitive data" includes personally identifiable information (PII) that can be used to distinguish or trace an individual's identity. Such information, which includes a person's name, social security number, and biometric records, can be used alone or in combination with other personal or identifying information that is linked or linkable to a specific individual, such as date of birth, place of birth, mother's maiden name, etc.
+
+ Version 1.0
+
+CC 9070-02 (REV 10/08) | 11
+
+3.9 MAINTENANCE (MA)
+Organizations must: (i) perform periodic and timely maintenance on organizational information systems; and (ii) provide effective controls on the tools, techniques, mechanisms, and personnel used to conduct information system maintenance.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider perform periodic and timely maintenance on organizational information systems? Yes No Does the service provider provide effective controls on the tools, techniques, mechanisms, and personnel used to conduct information system maintenance? Yes No
+
+12 | Information RISK MANAGEMENT
+
+O
+
+Operational Procedures
+
+3.10 MEDIA PROTECTION (MP)
+Organizations must: (i) protect information system media, both paper and digital; (ii) limit access to information on information system media to authorized users; and (iii) sanitize or destroy information system media before disposal or release for reuse.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider protect information system media, both paper and digital? Yes No Does the service provider limit access to information on information system media to authorized users? Yes No Does the service provider sanitize or destroy information system media before disposal or release for reuse? Yes No
+
+ Version 1.0
+
+CC 9070-02 (REV 10/08) | 13
+
+3.11 PHYSICAL AND ENVIRONMENTAL PROTECTION (PE)
+Organizations must: (i) limit physical access to information systems, equipment, and the respective operating environments to authorized individuals; (ii) protect the physical plant and support infrastructure for information systems; (iii) provide supporting utilities for information systems; (iv) protect information systems against environmental hazards; and (v) provide appropriate environmental controls in facilities containing information systems.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider limit physical access to information systems, equipment, and the different operating environments to authorized individuals? Yes No Does the service provider protect the physical plant and support infrastructure for information systems? Yes No Does the service provider provide supporting utilities for information systems? Yes No Does the service provider protect information systems against environmental hazards? Yes No Does the service provider provide appropriate environmental controls in facilities containing information systems? Yes No
+
+14 | Information RISK MANAGEMENT
+
+O
+
+Operational Procedures
+
+3.12 PLANNING (PL)
+Organizations must develop, document, periodically update, and implement security plans for organizational information systems that describe the security controls in place or planned for the information systems and the rules of behavior for individuals accessing the information systems.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider develop, document, periodically update, and implement security plans for organizational information systems that describe the security controls in place or planned for the information systems and the rules of behavior for individuals accessing information systems? Yes No
+
+ Version 1.0
+
+CC 9070-02 (REV 10/08) | 15
+
+3.13 PERSONNEL SECURITY (PS)
+Organizations must: (i) ensure that individuals occupying positions of responsibility within organizations (including third-party service providers) are trustworthy and meet established security criteria for those positions; (ii) ensure that organizational information and information systems are protected during and after personnel actions such as terminations and transfers; and (iii) employ formal sanctions for personnel failing to comply with organizational security policies and procedures.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider ensure that individuals occupying positions of responsibility within organizations (including third-party service providers) are trustworthy and meet established security criteria for those positions? Yes No Does the service provider ensure that organizational information and information systems are protected during and after personnel actions such as terminations and transfers? Yes No Does the service provider employ formal sanctions for personnel failing to comply with organizational security policies and procedures? Yes No
+
+16 | Information RISK MANAGEMENT
+
+O
+
+Operational Procedures
+
+3.14 RISK ASSESSMENT (RA)
+Organizations must periodically assess the risk to organizational operations (including mission, functions, image, or reputation), organizational assets, and individuals, resulting from the operation of organizational information systems and the associated processing, storage, or transmission of organizational information.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider periodically assess the risk to organizational operations (including mission, functions, image, or reputation), organizational assets, and individuals, resulting from the operation of organizational information systems and the associated processing, storage, or transmission of organizational information? Yes No
+
+ Version 1.0
+
+CC 9070-02 (REV 10/08) | 17
+
+3.15 SYSTEM AND SERVICES ACQUISITION (SA)
+Organizations must: (i) allocate sufficient resources to adequately protect organizational information systems; (ii) employ system development life cycle processes that incorporate information security considerations; (iii) employ software usage and installation restrictions; and (iv) ensure that third-party providers employ adequate security measures to protect information, applicatons, and/or services outsourced from the organization.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider allocate sufficient resources to adequately protect organizational information systems? Yes No Does the service provider employ system development life cycle processes that incorporate information security considerations? Yes No Does the service provider employ software usage and installation restrictions? Yes No Does the service provider ensure that other third-party providers employ adequate security measures to protect information, applications, and/or services outsourced from the organization? Yes No
+
+18 | Information RISK MANAGEMENT
+
+O
+
+Operational Procedures
+
+3.16 SYSTEM AND COMMUNICATIONS PROTECTION (SC)
+Organizations must: (i) monitor, control, and protect organizational communications (i.e., information transmitted or received by organizational information systems) at the external boundaries and key internal boundaries of the information systems; and (ii) employ architectural designs, software development techniques, and systems engineering principles that promote effective information security within organizational information systems.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider monitor, control, and protect organizational communications (i.e., information transmitted or received by organizational information systems) at the external boundaries and key internal boundaries of the information systems? Yes No Does the service provider employ architectural designs, software development techniques, and systems engineering principles that promote effective information security within organizational information systems? Yes No
+
+ Version 1.0
+
+CC 9070-02 (REV 10/08) | 19
+
+3.17 SYSTEM AND INFORMATION INTEGRITY (SI)
+Organizations must: (i) identify, report, and correct information and information system flaws in a timely manner; (ii) provide protection from malicious code at appropriate locations within organizational information systems; and (iii) monitor information system security alerts and advisories and take appropriate actions in response.
+
+RESPONSE
+
+COMMENTS
+
+Does the service provider identify, report, and correct information and information system flaws in a timely manner? Yes No Does the service provider provide protection from malicious code at appropriate locations within organizational information systems? Yes No Does the service provider monitor information system security alerts and advisories and take appropriate actions in response? Yes No
+
+20 | Information RISK MANAGEMENT
+
+O
+
+Operational Procedures
+
+4. Frequently Asked Questions
+(1)  Why does the OCC require its service providers to complete this self assessment questionnaire? (5)  How does the government define "security control"? The E-Government Act of 2002 and Office of Management and Budget (OMB) directives require that all information systems that process government information maintain adequate security. "Adequate security" is commensurate with the harm that would result from the loss, misuse, or unauthorized access to or modification of information. Adequate security ensures that systems and applications operate effectively and provide appropriate measures of confidentiality, integrity, and availability through the use of managerial, operational, and technical security controls. This requirement applies to all information and information systems that support the operations and assets of the government, including those provided or managed by another government agency, contractor, or other source. (2)  What does "information security" mean? "Information security" is protecting information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction. (3)  What does "information system" mean? An information system is a discrete set of information resources organized for the collection, processing, maintenance, transmission, and dissemination of information, in accordance with defined procedures, whether automated or manual. (4)  What do the terms "confidentiality, integrity and availability" mean? The OCC's information security controls are based on Federal Information Processing Standard (FIPS) Publication 200. Security controls are the management, operational, and technical safeguards or countermeasures prescribed for an information system to protect the confidentiality, integrity, and availability of a system and its information. Management controls focus on the management of risk and the management of information system security. Operational controls are those safeguards that are primarily implemented and executed by people (as opposed to systems). Technical controls are primarily implemented and executed by an information system through mechanisms in the hardware, software, or firmware components of the system. (6)  What is FIPS 200, "Minimum Security Requirements for Federal Information and Information Systems," and where can I find more information about it?
+
+That publication is a mandatory standard (it cannot be waived) developed in response to the Federal Information Security Management Act of 2002. The combination of FIPS 200 and NIST Special Publication 800-53 establishes the foundation for most federal information security practices and procedures. (7)  What is NIST Special Publication (SP) 80053, Revision II, "Recommended Security Controls for Federal Information Systems," December 2007 and where can I find more information on it?
+
+Confidentiality is preserving authorized restrictions on access and disclosure, including means for protecting personal privacy and proprietary information. Integrity is protecting information from improper modification or destruction, and includes ensuring that information is authentic and reliable. Availability is ensuring timely and reliable access to and use of information.
+
+That publication provides guidelines for selecting and specifying security controls for information systems supporting the executive agencies of the federal government. These guidelines apply to all components of an information system that process, store, or transmit federal information. The publication provides guidance to federal agencies implementing FIPS 200, "Minimum Security Requirements for Federal Information and Information Systems."
+
+ Version 1.0
+
+CC 9070-02 (REV 10/08) | 21
+
+(8) 
+
+What are the standards and guides used to create this preliminary self-assessment?
+
+This questionnaire is derived from FIPS publication 200, "Minimum Security Requirements for Federal Information and Information Systems." (9)  Can a service provider obtain the standards and guides?
+
+NIST information security-related publications can be obtained free of charge from the NIST public Web site located at http://csrc.nist.gov/publications/index.html. (10)  Where can I get assistance if I need help completing this assessment? If you have any questions concerning the completion of this form, please contact the OCC Information Risk Management Office at (202) 874-4480.
+
+22 | Information RISK MANAGEMENT
+
+O
+
+Operational Procedures
+
+5. Attestation Letter
+1. 2. To the best of my knowledge, statements made in response to the Office of the Comptroller of the Currency's "Service Provider Self Assessment" dated ____________________ are accurate; Statements made in response to the Office of the Comptroller of the Currency's "Service Provider Self Assessment" were made by knowledgeable and qualified professionals in the internal control structure of my organization; General Representations:
+
+3.
+
+There are no: a. Knowledge of fraud involving (1) management, (2) employees who have significant roles in the internal control structure, or (3) others where the fraud could have a material effect on the organization's ability to maintain operations, ensure adequate safeguards over client information, and/ or cause serious harm to the reputation of the organization and/or its clients; b.Communications from federal agencies concerning noncompliance with, or deficiencies in, financial reporting practices that could have a significant effect on the organization; or c. Knowledge of any allegations of fraud or suspected fraud affecting the organization received in communications from employees, former employees, analysts, regulators, or others. 4. 5. The undersigned attests to the completeness and accuracy of the applicable responses made in support of submitting Office of the Comptroller of the Currency's "Service Provider Self Assessment." The undersigned has authority to legally bind ____________________________ and has been authorized to do so.
+
+Corporate Officer (Signature)
+
+Witness (Signature)
+
+Printed Name/Title
+
+Printed Name/Title
+
+Date
+
+Date
+
+ Version 1.0
+
+CC 9070-02 (REV 10/08) | 23
+
+

@@ -1,0 +1,414 @@
+
+Attachment A- High availability equipment (Tier 1)
+|Server Name                    |FDA Bar Code        |Model                                 |Serial Number                 |
+|CAICOS                         |1019482             |280R                                  |206C0114                      |
+|MAUI                           |1019481             |280R                                  |246C57D9                      |
+|ST-VINCENT                     |1019458             |420R                                  |111C0442                      |
+|                               |                    |A1000                                 |229H2433                      |
+|                               |                    |A1000                                 |231H238A                      |
+|                               |                    |A1000                                 |309H2E6F                      |
+|                               |                    |CONTROLLER BOARD UPG FOR A1000        |229H2433-A1000                |
+|                               |                    |CONTROLLER BOARD UPG FOR A1000        |231H238A-A1000A               |
+|                               |                    |CONTROLLER BOARD UPG FOR A1000        |309H2E6F-BD                   |
+|                               |                    |CPU/MEM BD BNDL-4CPU@900/8GMEM        |203H28BD-4089                 |
+|                               |                    |CPU/MEM BD BNDL-4CPU@900/8GMEM        |203H28BD-4089A                |
+|                               |                    |CPU/MEM BD BNDL-4CPU@900/8GMEM        |203H28BD-4089B                |
+|AIMS450                        |5045269             |ENTERPRISE 450                        |126V009D                      |
+|                               |                    |L8 LTO 2 w/ NBU                       |1.7977E+308                   |
+|                               |                    |L8 LTO 2 w/EBS                        |1.7977E+308                   |
+|                               |                    |MediaTray HD2,DVD1,TP1                |150S4205                      |
+|                               |                    |MediaTray HD2,DVD1,TP1                |151C5D01                      |
+|                               |                    |MediaTray HD2,DVD1,TP1                |201C51A2                      |
+|                               |                    |MediaTray HD2,DVD1,TP1                |201S5932-D240                 |
+|                               |                    |MediaTray HD2,DVD1,TP1                |312SD50F                      |
+|                               |                    |MediaTray HD2,DVD1,TP1                |312SD510                      |
+|                               |                    |MediaTray HD2,DVD1,TP1                |312SD511                      |
+|                               |                    |MediaTray HD2,DVD1,TP1                |312SD512                      |
+|NS3                            |5092328             |NETRA T1                              |CF23801850                    |
+|celocanth                      |5092325             |Netra T1                              |CF23503005                    |
+|FURLSSAN01                     |5129125             |Netra X1                              |FV31140005                    |
+|IISSG1                         |5092330             |NETRA-T1                              |CF23801786                    |
+|                               |                    |SE3510-365GB-5x73-2RAID-AC-RR         |0000451-0335003D1D            |
+|                               |                    |SE3960 2x16Switch SP-RR 2x9x73        |0323HH22EF                    |
+|                               |                    |SE3960 2x16Switch SP-RR 2x9x73        |312H26FB                      |
+|                               |                    |SG-XLIBDLT8R-L1000 - 30 cart rack     |0150A00244                    |
+|                               |                    |lib-1 DLT8000 dr                      |                              |
+|                               |                    |SG-XLIBL100SDLV-BS - L100 SDLT LVD    |0304N00691                    |
+|                               |                    |Base                                  |                              |
+|                               |                    |StorEdge L9 Autoloader                |1.7977E+308                   |
+|                               |                    |StorEdge L9 Autoloader                |1.7977E+308                   |
+|Bimini                         |                    |Sun Fire 420R                         |052C079C                      |
+|GREATWHITE                     |5109294             |SUN FIRE V120                         |FF34350056                    |
+|manofwar                       |5114282             |Sun Fire V120                         |FF34350042                    |
+|morayeel                       |5114281             |Sun Fire V120                         |FF34350061                    |
+|OCSEPORTAPP8                   |5108264             |Sun Fire V240                         |HN33734595                    |
+|                               |5102222             |Sun Fire V240                         |HN33734445                    |
+|FDASFINPRD3                    |5090831             |Sun Fire V480                         |0344AM037D                    |
+|OCSDEVINFDB2                   |5096584             |Sun Fire V480                         |0338AM043F                    |
+|ORA480                         |512920              |Sun Fire V480                         |239V0278                      |
+|ssfw01                         |5090945             |Sun Fire V480                         |0329AM018E                    |
+|wall-landshark                 |5090946             |Sun Fire V480                         |0328AM03B2                    |
+|WALLRUS1                       |5090081             |Sun Fire V480                         |303V0258                      |
+|WALLRUS2                       |5090882             |Sun Fire V480                         |303V028F                      |
+|leucas1                        |5053100             |Sun Fire V480                         |0328AM016A                    |
+|LLNAPP05                       |5092338             |Sun Fire V880                         |306V0040                      |
+|LLNAPP06                       |5090884             |Sun Fire V880                         |312V02AE                      |
+|                               |5093614             |Sun Fire V880                         |231V0149                      |
+|Sun Microsystems StorEdge L8   |                    |SUN MICROSYSTEMS STOREDGE L8          |0001412-0310E01638            |
+|FDSSA001                       |5090885             |SUN V880                              |313V0103                      |
+|FDAWFIN02                      |5075284             |SUNBLADE 1000                         |114C098F                      |
+|ESG0                           |5090879             |SUNBLADE 150                          |FT31140331                    |
+|CDSUXAPP1                      |5130019             |SUN-FIRE 280R                         |236C5403                      |
+|CDSUXAPP2                      |5130018             |SUN-FIRE 280R                         |236C53EC                      |
+|CDSUXPA1                       |5090783             |SUN-FIRE 280R                         |248C516E                      |
+|AIMSINFRA                      |5090891             |SUN-FIRE V100                         |CV25201558                    |
+|AIMSTEST02                     |5090890             |SUN-FIRE V100                         |CV30402202                    |
+|LLNDB1                         |5112354             |SUNFIRE V1280                         |0443MM20FD                    |
+|LLNDB2                         |5112357             |SUNFIRE V1280                         |0439MM2225                    |
+|OCSEPORTAPP2                   |5108273             |SUN-FIRE V240R                        |HN33734615                    |
+|LLNTAP01                       |5112366             |SUNFIRE V480                          |0442AM0295                    |
+|LLNTAP02                       |5092339             |SUNFIRE V480                          |306V035B                      |
+|AIMSTEST01                     |5092341             |SUN-FIRE V480                         |308V01DC                      |
+|LLNAP01                        |5112352             |SUNFIRE V880                          |0434AM00EA                    |
+|LLNAP02                        |5112355             |SUNFIRE V880                          |0434AM00AF                    |
+|LLNAP03                        |5087526             |SUNFIRE V880                          |220V00007                     |
+|LLNAP04                        |5090883             |SUNFIRE V880                          |312V03A6                      |
+|LLNTDB1                        |5091095             |SUNFIRE V880                          |308V028D                      |
+|LLNTDB2                        |5091094             |SUNFIRE V880                          |308V00CA                      |
+|CDSUXDB2                       |5130017             |SUN-FIRE V880                         |233V009C                      |
+|OCSEPORTDB1                    |5108275             |SUN-FIRE V880                         |0335AM00A0                    |
+|BONAIRE                        |5129261             |SUN-FIRE-280R                         |221C50E5                      |
+|CDSUXDA1                       |5130007             |SUN-FIRE-280R                         |221C50E6                      |
+|CDSUXSA1                       |5130014             |SUN-FIRE-280R                         |236C53FF                      |
+|CDSUXSD1                       |5130015             |SUN-FIRE-280R                         |236C5402                      |
+|CDSUXTA1                       |5130010             |SUN-FIRE-280R                         |338AD1E81                     |
+|CDSUXTA2                       |5130011             |SUN-FIRE-280R                         |338AD1E83                     |
+|EDKB                           |4004765             |SUN-FIRE-280R                         |312AD1A0F                     |
+|OCSDEVTESTAPP1                 |5108297             |SUN-FIRE-280R                         |337AD2955                     |
+|OCSDEVTESTAPP2                 |5096583             |SUN-FIRE-280R                         |334AD241F                     |
+|OITSSUNIX                      |5129168             |SUN-FIRE-280R                         |338AD1E8D                     |
+|FDASFINAPP1                    |5075287             |SUN-FIRE-480R                         |235V00D8                      |
+|FDASFINAPP5                    |5090823             |SUN-FIRE-480R                         |320V0287                      |
+|FDASFINAPP6                    |5090822             |SUN-FIRE-480R                         |322V0418                      |
+|FDASFINAPP7                    |5090821             |SUN-FIRE-480R                         |323V0092                      |
+|FDASFINAPP8                    |5090820             |SUN-FIRE-480R                         |320V01E3                      |
+|FDASFINPRD3                    |5090831             |SUN-FIRE-480R                         |ASDF                          |
+|OCSDEVINFDB1                   |5055438             |SUN-FIRE-480R                         |0410AM0042                    |
+|OCSDEVINFDB2                   |5096584             |SUN-FIRE-480R                         |0328AM012D                    |
+|ORA480                         |5129019             |SUN-FIRE-480R                         |241V004E                      |
+|FDASFINDEV1                    |51290630            |SUN-FIRE-4810                         |207H29CB                      |
+|FDASFINPRD1                    |5129064             |SUN-FIRE-4810                         |128H332D                      |
+|APSRV03B                       |5129865             |SUN-FIRE-6800                         |145H3483                      |
+|APSRV03C                       |5129864             |SUN-FIRE-6800                         |202H278C                      |
+|APSRV03D                       |5129863             |SUN-FIRE-6800                         |151H2D12                      |
+|APSRV04B                       |5129862             |SUN-FIRE-6800                         |148H2462                      |
+|APSRV04D                       |5129860             |SUN-FIRE-6800                         |145H3669                      |
+|DBSRV03C                       |5129175             |SUN-FIRE-6800                         |313H3024                      |
+|DBSRV04C                       |5129176             |SUN-FIRE-6800                         |313H3025                      |
+|FDSSD122T                      |                    |SUN-FIRE-6800                         |                              |
+|FDSSD123T                      |                    |SUN-FIRE-6800                         |                              |
+|APSRV01                        |5091096             |SUN-FIRE-880                          |306V0181                      |
+|APSRV02                        |5097525             |SUN-FIRE-880                          |215V0145                      |
+|CDSUXDD1                       |5130008             |SUN-FIRE-880                          |219V011D                      |
+|CDSUXTD2                       |5080727             |SUN-FIRE-880                          |233V0107                      |
+|FDASFINAPP2                    |5090782             |SUN-FIRE-880                          |248V012F                      |
+|LLNTAP03                       |5092338             |SUN-FIRE-880                          |306VD040                      |
+|OCSEPORTDB2                    |5108276             |SUN-FIRE-880                          |0335AM0106                    |
+|PNAPP1                         |                    |SUN-FIRE-880                          |246V017F                      |
+|FDASFINPRD2                    |5090828             |SUN-FIRE-V1280                        |0337MM2280                    |
+|FDASFINAPP9                    |5129021             |SUN-FIRE-V240                         |FN40540159                    |
+|FDAWFIN01                      |5090829             |SUN-FIRE-V240                         |HN33734995                    |
+|OCSEPORTAPP5                   |5108267             |SUN-FIRE-V240                         |HN33734643                    |
+|OCSEPORTAPP1                   |5108274             |SUN-FIRE-V240R                        |HN33734633                    |
+|OCSEPORTAPP3                   |5108272             |SUN-FIRE-V240R                        |HN33734571                    |
+|OCSEPORTAPP4                   |5108271             |SUN-FIRE-V240R                        |HN33734659                    |
+|OCSEPORTAPP6                   |5108266             |SUN-FIRE-V240R                        |HN33734631                    |
+|OCSEPORTAPP7                   |5108265             |SUN-FIRE-V240R                        |HN33734637                    |
+|OCSEPORTAPP8                   |5108264             |SUN-FIRE-V240R                        |HN33734596                    |
+|AIMS440                        |5129859             |SUN-FIRE-V440                         |0411AD1EB4                    |
+|FDSSA161D                      |5114002             |SUN-FIRE-V440                         |0440AD1049                    |
+|FDSSA162D                      |5114000             |SUN-FIRE-V440                         |0436AD1021                    |
+|OCSGRID1                       |5112377             |SUN-FIRE-V440                         |0448A169E                     |
+|OCSGRID2                       |5112380             |SUN-FIRE-V440                         |0448AD1811                    |
+|OCSOIM1                        |5112378             |SUN-FIRE-V440                         |0446AD1053                    |
+|OCSOIM2                        |5112379             |SUN-FIRE-V440                         |0446AD1955                    |
+|SDEV2                          |5114001             |SUN-FIRE-V440                         |0435AD18A5                    |
+|AIMS480                        |5090889             |SUN-FIRE-V480                         |307V038C                      |
+|OCSOIM3                        |5077503             |SUN-FIRE-V480                         |0338AM0488                    |
+|WALLRUS3                       |5129188             |SUN-FIRE-V480                         |0438AM0282                    |
+|WALLRUS4                       |5129189             |SUN-FIRE-V480                         |0438AM03A3                    |
+|CDSUXDA2                       |5126049             |SUN-FIRE-V490                         |0513AM023F                    |
+|CDSUXDBV                       |5130016             |SUN-FIRE-V880                         |233V0028                      |
+|CDSUXTD1                       |5130013             |SUN-FIRE-V880                         |306V0407                      |
+|DRSM-SUN1                      |5102220             |SUN-FIRE-V880                         |0338AM034C                    |
+|DRSM-SUN2                      |5102221             |SUN-FIRE-V880                         |0338AM037A                    |
+|FDSSA006T                      |5091093             |SUN-FIRE-V880                         |306V0040                      |
+|FDSSA007T                      |5091092             |SUN-FIRE-V880                         |308V009                       |
+|LLNAP05                        |5092338             |SUN-FIRE-V880                         |312VC3A7                      |
+|LLNAP06                        |5090884             |SUN-FIRE-V880                         |312V03A7                      |
+|BARBUDA                        |5129888             |T2000                                 |0740BD01B1                    |
+|FDSSI063                       |5129577             |T2000                                 |0731BD04AF                    |
+|FDSSI064                       |5129535             |T2000                                 |0733BD04FA                    |
+|FDSSI065                       |5129574             |T2000                                 |0733BD0455                    |
+|FDSSI066                       |5129575             |T2000                                 |0733BD0484                    |
+|GUADELOUPE                     |5129887             |T2000                                 |0740BD01AC                    |
+|FDSSA100                       |5117414             |T-2000                                |0647NNN0SG                    |
+|FDSSA101                       |5117413             |T-2000                                |0647NNN116                    |
+|FDSSA119D                      |5129675             |T-2000                                |0735NNN0MW                    |
+|FDSSD001                       |5129178             |T-2000                                |0617NNN1WC                    |
+|FDSSD001D                      |5129184             |T-2000                                |0617NNN1VL                    |
+|FDSSD002                       |5129181             |T-2000                                |0617NNN12G                    |
+|FDSSD002D                      |5129180             |T-2000                                |0617NNN1WN                    |
+|FDSSD003                       |5129183             |T-2000                                |0617NNN1TT                    |
+|FDSSD003T                      |5129179             |T-2000                                |0617NNN1XE                    |
+|FDSSD004                       |5129264             |T-2000                                |0611NNN03A                    |
+|FDSSD004T                      |5129182             |T-2000                                |0617NNN1UM                    |
+|FDSSD103                       |5117415             |T-2000                                |0647NNN0XW                    |
+|FDSSD110D                      |5129663             |T-2000                                |0735NNN0XD                    |
+|FDSSD115T                      |5129660             |T-2000                                |0735NNN07P                    |
+|FDSSD117                       |5129672             |T-2000                                |0735NNN047                    |
+|FDSSD137                       |5129543             |T-2000                                |0735NNN0CF                    |
+|FDSSI067                       |5129571             |T-2000                                |0733BD05OC                    |
+|FDSSI068                       |5129576             |T-2000                                |0729BD03A7                    |
+|FDSSL151                       |5129614             |T-2000                                |0735NNN075                    |
+|FDSSZ083                       |5129674             |T-2000                                |0735NNN00T9                   |
+|FDSSZ084T                      |5129673             |T-2000                                |0735NNN0DJ                    |
+|                               |                    |T3BES 72" Rck 2x9x36G                 |151S0075                      |
+|                               |                    |T3BES 72" Rck 2x9x36G                 |151S0109                      |
+|                               |                    |T3BES 72" Rck 2x9x36G                 |203H2204                      |
+|                               |                    |T3BES 72` Rck 2x9x36G                 |201S0707                      |
+|                               |                    |T3BES 72` Rck 2x9x36G                 |201S0733                      |
+|                               |                    |T3BES 72` Rck 2x9x36G                 |203H28BA                      |
+|                               |                    |T3BWG RR 1x9x36G                      |201S5932                      |
+|                               |                    |T3ES Dual Rck 2x9x36.4GB              |231S5478                      |
+|                               |                    |T3ES Dual Rck 2x9x36.4GB              |234S6896                      |
+|                               |                    |T3ES Dual Rck 2x9x36.4GB              |234S7038                      |
+|                               |                    |T3ES Dual Rck 2x9x36.4GB              |234S7080                      |
+|                               |                    |TAPE 40-80GB DLT8000 FLEXIPACK        |226C6C44                      |
+|DP75                           |5129886             |U10                                   |FW14510044                    |
+|NS8                            |5063721             |ULTRA 10                              |FW94240403                    |
+|CDSUXDD2                       |5126048             |ULTRA ENTERPRISE 250                  |037H29BF                      |
+|FLORIDA                        |1019457             |V100                                  |CC22901045                    |
+|FARM-DEV                       |1019500             |V240                                  |FN43110154                    |
+|JAMAICA                        |5127026             |V240                                  |FN63450019                    |
+|CUBA                           |5129260             |V440                                  |0710BD078F                    |
+|CURACAO                        |5127023             |V440                                  |0710BD0796                    |
+|NEVIS                          |5129262             |V440                                  |0622BD013E                    |
+|TURKS                          |5127025             |V440                                  |0621BD010B                    |
+|FDSSA002                       |5090887             |V880                                  |313V02F5                      |
+|FDSVOIP42                      |5126099             |X2200M                                |0710Q0T00A                    |
+
+
+Attachment B- Infrastructure Equipment (Tier 2)
+|Server Name                     |FDA Bar Code        |Model                                    |Serial Number             |
+|CANCUN                          |1019460             |420R                                     |108C03D5                  |
+|DOMINICA                        |1019452             |420R                                     |017H416E                  |
+|MASTADON                        |5092329             |NETRA T1                                 |CF23700690                |
+|NS6                             |5092327             |NETRA-T1                                 |CF23801973                |
+|NS7                             |5092326             |NETRA-T1                                 |CF23801939                |
+|netman2                         |5090947             |Sun Fire V480                            |0328AM0161                |
+|CDSUXLAB1                       |5130009             |SUN-BLADE-150                            |FT40940449                |
+|CDSUXLAB2                       |                    |SUN-BLADE-150                            |                          |
+|AIMS280                         |5092243             |SUN-FIRE 280 R                           |210C02E3                  |
+|AIMSDBTEST                      |5091596             |SUN-FIRE V100                            |CC22700164                |
+|AIMS880                         |5092242             |SUN-FIRE V880                            |208V0107                  |
+|AIMSTEST                        |5091597             |SUN-FIRE-V100                            |CC22700133                |
+|FDSSI069                        |5129572             |T2000                                    |0731BD04A7                |
+|FDSSI070                        |5129573             |T2000                                    |0733BD04FE                |
+|TROOPER                         |5067975             |ULTRA 60                                 |813FC4ES                  |
+|ANTIGUA                         |5127022             |V100                                     |CC24200885                |
+|FARM                            |5127024             |V440                                     |0553BD020F                |
+|WALL3                           |5092342             |V480                                     |305V0167                  |
+
+
+
+Attachment C- High Availability Sun Clusters (Tier 1)
+
+|2-node Cluster:                                   |                       |                                                    |
+|Server Name                                       |Serial Number          |Part Number                                         |
+|FDSSD136                                          |0735NNN030             |T20Z-108B-32GA2G                                    |
+|FDSSD137                                          |0735NNN0CF             |T20Z-108B-32GA2G                                    |
+|                                                  |                       |                                                    |
+|2-Node Cluster:                                   |                       |                                                    |
+|FDSSD073D (Extranet)                              |0733nnn036             |T20Z-108B-32GA2G                                    |
+|FDSSD074D (Extranet)                              |0733nnn0ws             |T20Z-108B-32GA2G                                    |
+|                                                  |                       |                                                    |
+|2-node Cluster:                                   |                       |                                                    |
+|fdssd076                                          |0729NNN0SJ             |T20Z-108B-32GA2G                                    |
+|fdssd075                                          |0733NNN13W             |T20Z-108B-32GA2G                                    |
+
+
+Statement of Work (SOW)
+
+Task Order Title:  SUN Server and Storage Maintenance
+
+
+Background
+
+The FDA Office of Information Management (OIM) focuses on creating and maintaining resource light IT environments for FDA applications that
+support the increasing need for information sharing and collaboration.  Managing information in this new environment plays a critical role in
+enabling the FDA’s efforts to transform Agency operations and respond quickly and accurately to emerging scientific, technological, and economic
+trends affecting its regulatory mission.
+
+Objectives
+
+
+The FDA is looking at this action to procure on-going proactive maintenance support of their IT systems (as defined in Attachment A - C) to
+strengthen the availability of the systems. This support will allow FDA to achieve a modern, utility-based operating environment supported by
+standard operating procedures resulting in cost savings, operational efficiencies, and defined service levels. This program will allow FDA to:
+
+
+Dramatically reduce system failures that disrupt program operations and cause the loss of more than 100,000 person-hours of program work each
+year.
+
+
+Reduce system operation and maintenance costs by replacing or retiring outdated equipment that the manufacturer will no longer support with
+technical assistance, problem resolution, repair, and replacement parts.
+
+
+Notify system users quickly in the event of outages through system monitoring tools.
+
+
+Reduce labor and system support costs by using automated IT tools and techniques.
+
+
+Scope
+
+The scope of this action will be for on-going maintenance support of the hardware and operating support as detailed in attachments A, B and C.
+
+The scope of this solicitation will consist of: support services, documentation, reporting and inventory control.
+
+Specific Tasks/Deliverables
+
+4.1 Support Services – contractor shall provide predictive, preventative and corrective maintenance at the service level agreements (SLA) for
+the hardware outlined in Attachments A – C.  The contractor will be required to proactively repair/replace at risk hardware components and
+should be able to replace items before they actually fail.  The contract must have direct access to the OEM for support throughout the period of
+performance, provide dedicated toll free access and be able to meet the SLAs for support as identified below:
+
+      Tier 1 - High Availability - 4 hour on-site response, 24x7 (attachment A and C)
+      Tier 2 - Infrastructure – 4 hour on-site response, 12x5 6am-6pm (attachment B)
+
+
+      Contractor must be on-site within 4 hours of maintenance call.
+
+Support services also include the necessary hardware, software, tools, expertise in order to restore services to previously working conditions.
+In addition to hardware, there are likely software, including firmware changes and upgrades that may be warranted for repairs or protection and
+compatibility. FDA requires support for a multi-vendor environment (please see inventory in Evaluation Criteria).
+
+Prior to the contractor removing any media from an FDA facility, the contractor shall ensure that all media has been wiped of FDA data to the
+approval of the FDA CISO.
+
+4.2. Inventory Control – Contractor shall submit a semi-annual report (report should be provided in Excel 2003) of the active inventory of the
+infrastructure; from this report the contractor shall proactively update the inventory maintained under this contract.  For any new equipment
+identified the contractor shall provide a report to the FDA Project Officer for verification of the level of support needed for that equipment.
+
+
+4.3 SUN Cluster Support – Contractor shall provide support and maintenance for the three (2) node clusters in our environment as described in
+Attachment C.
+
+
+4.4 Deliverables
+See attachments A-C.
+
+
+Place of Performance
+
+All major program work will be performed at FDA offices in the DC Metro area.  Meetings and work sessions maybe conducted at other places as
+specified.
+
+Period of Performance
+
+The period of performance for this project would be Date of Award through June 30, 2010 with 1 option year.
+
+Reporting Requirement/Delivery Schedule
+
+Contractor shall provide monthly reporting on the number of outages and the actual uptime of systems.  The contractor shall also proactively
+arrange for quarterly reviews of the information contained in the reports, using the information to provide recommendations for replacement of
+end of life hardware.
+
+Security
+
+This Statement of Work (SOW) requires the contractor to (1) develop, (2) have the ability to access, or (3) host and/or maintain a Federal
+information system(s). Contractors must be escorted at all times while on the premises. Pursuant to Federal and HHS Information Security Program
+Policies, the contractor and any subcontractor performing under this task order shall comply with the following requirements:
+
+Federal Information Security Management Act of 2002 (FISMA), Title III, E-Government Act of 2002, Pub. L. No. 107-347 (Dec. 17, 2002);
+http://csrc.nist.gov/policies/FISMA-final.pdf.
+
+    • Information Type
+
+[x]   Administrative, Management and Support Information:
+            Information Management
+            Lifecycle/Change Management
+           Record Retention
+           Budget and Finance
+            Reporting and Information
+
+[x]   Mission Based Information:
+            Consumer Health and Safety
+
+
+      Security Categories and Levels
+
+
+           Confidentiality  Level:      [ ] Low    [x] Moderate     [ ] High
+           Integrity   Level:     [ ] Low    [x] Moderate     [ ] High
+           Availability     Level:      [x] Low    [ ] Moderate     [ ] High
+
+
+           Overall     Level:     [ ] Low    [x] Moderate     [ ] High
+
+    • Contractor-Employee Non-Disclosure Agreements
+          Each contractor/subcontractor employee who may have access to non-public Department information under this task order shall complete
+          the Commitment to Protect Non-Public Information - Contractor Agreement
+          (http://nitaac.nih.gov/downloads/ciosp2/Contractor_Employee_Non-Disclosure.doc).  A copy of each signed and witnessed Non-Disclosure
+          agreement shall be submitted to the Project Officer prior to performing any work under the contract.
+
+
+
+      Confidential Treatment of Sensitive Information
+
+      The Contractor shall guarantee strict confidentiality of the information/data that it is provided by the Government during the  performance
+      of the task order.  The Government has determined that the information/data that the Contractor will be provided during the performance  of
+      the task order is of a sensitive nature.
+
+      Disclosure of the information/data, in whole or in part, by the Contractor can only be made after the  Contractor  receives  prior  written
+      approval from the Contracting Officer.  Whenever the Contractor is uncertain with regard to the proper handling of  information/data  under
+      the contract, the Contractor shall obtain a written determination from the Contracting Officer.
+
+Government Furnished Equipment (GFE)/ Government Furnished Information (GFI)
+
+Government Furnished Equipment:  None Required
+
+
+Government Furnished Information:  The Government will work directly with the contractor to provide information required during the consulting.
+Project Plan will be provide at a later date.
+
+Inspection and Acceptance Criteria
+
+
+N/A
+
+
+
+
+
+
+
+
+Other Pertinent Information or Special Considerations
+
+The Contractor should be familiar with Section 508 requirements as described at http://www.section508.gov/ in order to ensure that documents
+generated as part of the tasks are fully Section 508-accessible using the available COTS tools.
+
+And then list out the portions applicable
+
+
+Post-Award Administration
+
+Completion of all deliverables, quality and timeliness of delivery, as well as incidents and types of defects, will be used to evaluate the
+Contractor’s progress and suitability.
+
+
+
+

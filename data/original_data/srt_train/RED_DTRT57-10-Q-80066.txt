@@ -1,0 +1,51 @@
+Attachment A Page 1 of 5 Input Parameters aerofoil-clmax aerofoil-cm0 air-condition-mass air-traffic-speed-limit airframe-$/mass airframe-fixed-price-$ amortization-years approach-method approach-time apu-mass aspect-ratio avionics-mass blades-per-propeller braking-friction buffet-cl-adjustment buffet-mach-adjustment buffet-mach-cl-curve bypass-ratio cabin-aisle-width cabin-altitude cabin-crew-$/hr cabin-in-front-fuse-fraction cabin-in-rear-fuse-fraction cabin-is-pressurised cabin-seat-pitch cabin-seat-width cargo-doors-area cargo-mass cd0-compress.start-mach cd0-compressibility-factor centersection-is-wet climb-schedule-switch-alt. compressibility-method cruise-cg-position delta-cd-due-to-gear delta-clmax-due-to-slat design-cruise-altitude design-cruise-mach design-dive-mach design-floor-loading design-n-limit dihedral-deg diversion-distance diversion-mach
+
+Attachment A Page 2 of 5 diversion-method dorsal-fin-height-fraction dorsal-fin-length-fraction dry-engine-mass-curve electric-systems-mass-fraction engine-$/thrust engine-failure-reaction-time engine-fixed-price-$ engine-pressure-ratio engine-type exist-2nd-deck exist-slats exist-winglets fairing-type fin-aspect-ratio fin-cl-limit-at-vmc fin-is-wet fin-sweep-deg fin-t/c fin-taper fixed-equipment-cg-fraction flap-chord-fraction flap-type flight-crew-$/hr front-fuse-length fuel-density fuel-price-$/vol fuel-systems-mass fuel-vol-adjustment furnishings-mass-per-pax fuselage-depth/width fuselage-mass-method fuselage-width fuselage-xsection-type hold-altitude hold-mach hold-time-mins hydraulic-systems-mass-fraction incidence-correction induced-drag-method insurance-rate interest-rate labor-$/hr landing-flap-deg landing-free-roll-time landing-rate
+
+Attachment A Page 3 of 5 landing-screen-height main-gear-wheels-per-a/c mass-per-crew mass-per-pax mass-per-powerplant max-operating-altitude max-payload/design-payload min-static-margin misc-systems-mass-fraction missed-approach-time maximum takeoff-mass mto-origin-mass nose-gear-wheels-per-a/c number-of-cabin-crew number-of-compressor-stages number-of-flight-crew number-of-pax number-of-engine-shafts number-of-windows operational-items-mass pax-doors-area powerplant-thrust/weight propeller-diameter ramp-fuel-allowance rear-fuselage-length rear-fuselage-name reference-thrust-per-engine required-fin-vol-coeff required-stab-vol-coeff reverse-thrust-fraction reverse-thrust-used-for-abort reverse-thrust-used-for-landing rolling-friction seats-abreast skin-friction-method slat-chord-fraction slat-exp-span-fraction span stab-aspect-ratio stab-is-wet stab-mounting stab-sweep-deg stab-t/c stab-taper surface-controls-mass sweep-deg
+
+Attachment A Page 4 of 5 t/c-break/root t/c-root t/c-tip/root tail-mass-method takeoff-flap-deg takeoff-screen-height takeoff-time taper taxi-in-time taxi-out-time thrust-factor-at-2nd-segment touchdown-speed-ratio twist-deg gear-length-below-fuse gear-mounted-on user-adjust-cl-cd-curve user-adjust-mach-cd-curve user-cds-increment user-factor-on-approach-fuel user-factor-on-asymmetric-drag user-factor-on-box-mass user-factor-on-climb-rating user-factor-on-continuous-rating user-factor-on-cruise-rating user-factor-on-divergence-mach user-factor-on-diversion-fuel user-factor-on-fin-drag user-factor-on-fin-mass user-factor-on-flap-mass user-factor-on-fuse-drag user-factor-on-fuse-mass user-factor-on-hold-fuel user-factor-on-induced-drag user-factor-on-landing-clmax user-factor-on-landing-l/d user-factor-on-nac-drag user-factor-on-sfc user-factor-on-stab-drag user-factor-on-stab-mass user-factor-on-takeoff-clmax user-factor-on-takeoff-fuel user-factor-on-takeoff-l/d user-factor-on-takeoff-rating user-factor-on-taxi-in-fuel user-factor-on-taxi-out-fuel user-factor-on-total-drag
+
+Attachment A Page 5 of 5 user-factor-on-gear-mass user-factor-on-windmill-drag user-factor-on-wing-drag utilization-coeffs v2-speed-ratio v3-v2-speed-increment window-depth window-width windscreen-depth windscreen-frontal-cd wing-area wing-mass-method wing-mounting wing-transition winglet-cant-deg winglet-root-chord/wing-tip-chord winglet-span/wing-halfspan
+
+Attachment B Page 1 of 2 Geometry and Balance Data (minimum) For wing (and Stab & Fin where available) Area, trapezoidal reference Area, piano gross Area, airbus gross Area, boeing wimpress Area, esdu Area, exposed Area, wetted Aspect Ratio, trapezoidal Aspect Ratio, piano gross Aspect Ratio, airbus gross Aspect Ratio, boeing wimpress Aspect Ratio, esdu Span (excluding winglets) Sweepback at 1/4-chord Taper Ratio (trapezoidal) t/c at root t/c at thickness break t/c at tip Volume Coefficient (V-bar) Mean Aerodynamic Chord Arm between MAC 1/4 chords Wing chord at tip Wing chord at planform break Wing chord at root (gross) Wing chord at c/line (gross) Wing chord at c/line (notional trapezoidal) Planform break location Thickness break location Wing location (station of extended leading edge at c/line)
+
+Spar locations (fractions of local trapez.chord)
+
+Attachment B Page 2 of 2 Fuel capacity (avail/reqrd ) ------------(US.gal.: wing, centre, tail) Total Available: (geometric capacity) Total Required : (at mtow & design payload) Fuselage geometry ----------------fuselage max. width fuselage max. depth length, total fuselage length, front section length, mid section length, rear section wetted area, total fuselage wetted area, front section wetted area, mid section wetted area, rear section Nacelle geometry ---------------nacelle length nacelle max. width nacelle max. depth wetted area per nac. Overall dimensions -----------------Span over winglets Overall aircraft length Height at top of fin Overall aircraft wetted area
+
+Attachment C Page 1 of 2 Mass Estimation Capability Specifications (minimum)
+Design Limits _____________ Design cruise point Design dive Mach MD Design cruise speed VC Design dive speed VD Limit load factor Ultimate load factor Cabin pressure differential (limit) Mass Report (mass and % of MTOW) ________________________________________ MTOW OEW MZFW MLW Mass Breakdown mass. % MTOW ________________________________________ wing group (struct.box ) (flaps ) (slats ) (spoilers ) (ailerons ) (winglets ) fuselage group stabiliser fin undercarriage _____________________ _______ _______ basic structure total dry engines total nacelles total pylons total _____________________ _______ _______ powerplants total furnishings surface controls fuel systems hydraulics electrics avionics APU
+
+Attachment C Page 2 of 2
+air conditioning misc. systems _____________________ _______ _______ fixed equipment total manufact. contingency _____________________ _______ _______ Manufact. Empty Mass MEW crew operational items _____________________ _______ _______ Operators Empty Mass OEW design payload design fuel _____________________ _______ _______ Maximum Takeoff Mass MTOW
+
+Attachment D Page 1 of 2 Aerodynamic Characteristics Data Specifications (minimum) AERODYNAMIC DRAG REPORT at: --------------------------MACH Altitude (pressure) KTAS KEAS KCAS Reynolds number Delta-ISA CL Reference Area
+
+(trapezoidal)
+
+Drag Coefficients based on ref.area ----------------------------------Cd Zero-Lift Cd Lift-Induced Cd Compressibility Cd Trim ------- -------Cd Total Aerodynamic Boundaries: ----------------------Divergence Mach {at the given CL } Initial Buffet Mach {at the given CL } Initial Buffet CL {at the given Mach } Zero-Lift Component Breakdown (Drag Areas,= Cd*S = D/q) ----------------------------Wing Winglets Fuselage & fairing Stabiliser Fin (incl.dorsal) Nacelles (total) User CdS Increment -------------Total Cd0*S Overall Lift / Drag Ratio
+
+Attachment D Page 2 of 2 ================================= Total Lift Force Total Drag Force
+
+Engine / Airframe Performance: -----------------------------Total Fuel Flow at Thrust=Drag: Specific Fuel Consumption (SFC) Specific Air Range (SAR) Available Total Thrust at MCR: Available Total Thrust at MCL: Instantaneous Performance Reserves at Weight=Lift: RoC at MCR, constant Mach: RoC at MCR, constant KCAS: RoC at MCL, constant Mach: RoC at MCL, constant KCAS:
+
+Attachment E Page 1 of 1 Range and Mission Design and Performance Specifications (minimum)
+{TOW / OEW Fuel Payload } Range mode Climb schedule Cruise at Mach {define FL 0} ICA alttiude, ktas, kcas, CL, lbf./eng FCA altitude, ktas, kcas, CL, lbf./eng% Generate Distance, Time,and Fuelburn Climb {S.L to ICA} Cruise {ICA to FCA} Descent {FCA to S.L} Trip total Block total
+
+Manoeuvre allowances (mass and time): taxi-out takeoff approach taxi-in Reserves {at landing mass }: Diversion distance Diversion mach Diversion altitude Diversion fuel Holding time Holding mach Holding altitude Holding fuel Contingency fuel Total Reserve fuel {% of mission fuel}
+
+Attachment F Page 1 of 1:
+
+Takeoff and Landing Field Length Design Capability Specifications (minimum)
+TAKEOFF PERFORMANCE {mass, altitude, Temperature re: ISA} ___________________ JAR25 Takeoff Field Length 115% Factored All-Eng.Dist. Balanced Field Length 2nd Segment Climb Gradient Takeoff CLmax Takeoff Vstall Takeoff Vmc Takeoff Vfail Takeoff V2 L/D at 2nd segment {trapezoidal ref.area}
+
+{incl.windmill & asymm.}
+
+Takeoff Wing Loading {trap.W/S} Takeoff Thrust/Weight Re: available static
+
+LANDING PERFORMANCE {mass, altitude, Temp. Re: ISA} ___________________ JAR25 Landing Field Length Landing Distance (LFL*0.6) Landing Ground Roll Landing CLmax Landing Vstall Approach Speed Approach L/D {trapezoidal ref.area}
+
+{gear down}
+
+

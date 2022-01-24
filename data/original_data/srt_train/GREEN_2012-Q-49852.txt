@@ -1,0 +1,927 @@
+RFQ 2012-Q-49852 
+
+Statement of Work
+
+Health Information Service Provider (HISP) Services to implement the Nationwide Health Information Network (NwHIN) Direct Transport Protocol for the National Healthcare Safety Network  (NHSN)
+
+
+
+
+
+BACKGROUND
+
+
+
+The National Healthcare Safety Network (NHSN) is a secure, internet-based surveillance system that integrates patient and healthcare personnel safety surveillance systems managed by the Division of Healthcare Quality Promotion (DHQP) at CDC. Enrollment in NHSN is open to all types of healthcare facilities in the United States, including acute care hospitals, long term acute care hospitals, psychiatric hospitals, rehabilitation hospitals, outpatient dialysis centers, ambulatory surgery centers, and long term care facilities.  Initially built to support 300 volunteer hospitals inputting data manually on a variety of healthcare associated infections, NHSN today is used for a multiplicity of purposes including infection control, healthcare worker safety, blood safety, process-of-care measurement and improvement, prevention research, mandatory public reporting, and public health surveillance.  Over 9000 healthcare facilities are currently enrolled and entering data into NHSN with substantially more facilities expected within the coming year.  In addition to manual data entry, NHSN is leading an effort to utilize pre-existing electronic data from Electronic Health Record (EHR) and other healthcare information systems using Health Level 7 (HL7) balloted and standardized Clinical Document Architecture (CDA) documents for automated data entry.   To that end, NHSN is seeking Health Information Service Provider (HISP) services to facilitate the secure transport of CDA documents from healthcare facilities to NHSN via  the NwHIN Direct Protocol.  
+
+(see  )
+
+
+
+Scope of Work
+
+The contractor shall provide all labor, expertise, equipment, materials, and supplies to perform all services required to carry out the work under this contract.  
+
+
+
+Contractor will deliver the following:
+
+Provide HISP services to NHSN allowing healthcare facilities either as members of the contractor’s HISP or facilities who affiliate with other HISPs to send data securely and reliably to NHSN using the NwHIN Direct protocol.  
+
+Support an infrastructure capable of managing up to 500 incoming messages per day with each MIME attachment less than one megabyte in size.  Also support transport level (read receipt) and/or processing level (processing errors) acknowledgements sent back to the sender for all incoming messages.
+
+Facilities wishing to send data to NHSN via Direct can be located anywhere in the US and belong to any HISP of their choosing.  As of mid-2012 there are 400 facilities in the US with the capability of creating CDA messages to NHSN specifications with another 300 in the process of getting ready to do so.  This does not mean that all 400 will convert over to sending their CDA data via Direct.  Any facility enrolled in NHSN can upload their CDA messages manually.  It is anticipated in the first year that 100 facilities will begin to use Direct and that this number will increase significantly in coming years.  What this number will be is not known at this time.
+
+Manage all trust relationships with other HISPs whose members wish to send data to NSHN and facilitate HISP to HISP communication in accordance with the Direct Project best practices. 
+
+(see  )
+
+Manage digital certificates on behalf of NHSN obtained from a Certificate Authority certified on the Federal Bridge.  (see http://idmanagement.gov/)
+
+Provide a secure edge protocol so as to allow NHSN to automatically in a machine to machine fashion retrieve data from the NHSN Direct account and send back processing level acknowledgements.
+
+Provide a web interface to CDC for manually sending and receiving Direct Messages for testing purposes
+
+Execute a contract/business agreement with CDC which includes privacy and security obligations and indemnifies CDC against a breach for which the HISP is solely responsible.
+
+Provide to NHSN a custom address domain (e.g. CDA@direct.NHSN.gov) 
+
+Complete a security audit and penetration test on HISP technology infrastructure and provide documented results back to CDC. The security audit and penetration test should be performed annually or when major changes occur to the infrastructure. Contractor will report these findings to the project officer within two weeks of testing along with any mitigation steps should the tests indicate a vulnerability.
+
+Provide a “White List” mechanism for NHSN to communicate to the HISP a list of direct email addresses from which NHSN will accept messages and block all others. NHSN users will register their Direct addresses inside the NHSN application.  Only registered Direct address associated with an NHSN user will be allowed to send messages to NHSN. The registration functionality of Direct addresses will be developed by the NHSN development team and is out of scope for this contract. The HISP’s role is to receive a periodic list of Direct addresses from NHSN and allow only those addresses to send files to the NHSN Direct account.
+
+Maintain a level of server reliability of greater than or equal to 99% including down time for maintenance.  This translates to approximately 7 hours of allowable down time per month.
+
+. 
+
+
+
+  
+
+The following are NOT requirements under this contract:
+
+
+
+Anything to do with format or content of the message.  
+
+CDC will not support Direct accounts for facilities wanting to send data to NHSN.  The contractor may in the course of normal business practice, provide HISP services to healthcare facilities wanting to send data to NHSN.  However it will be at the healthcare facility’s discretion and expense as to their choice of HISP services.  
+
+Any development in the CDC environment (behind CDC’s firewall)
+
+
+
+Any deployment of code in the CDC environment (behind CDC’s firewall)
+
+
+
+
+
+
+
+government furnished property
+
+Not applicable.
+
+
+
+PERIOD OF PERFORMANCE
+
+
+
+Base Period: 9/28/12 – 9/27/13
+
+Option 1: 9/28/13 – 9/27/14
+
+Option 2: 9/28/14 – 9/27/15
+
+
+
+
+
+
+DELIVERABLES 
+
+
+
+The vendor will provide the following deliverables to the Project Officer by the dates
+
+ required.  The deliverables are broken into two Contract Line Item Numbers (CLINs).  CLIN 001 is composed of startup activities and any development costs associated with the “White List”  (see Scope of Work Section #11), digital certificates etc.  CLIN 002 is an ongoing deliverable for Direct services and should be considered a monthly deliverable with the appropriate service level (see Scope of Work Section #12).  
+
+
+
+Base Year
+
+
+
+Option Year 1
+
+
+
+Option Year 2
+
+
+
+
+
+
+
+Payment Terms:
+
+
+
+This is a firm fixed price contract.   It is expected that the contractor will have some initial startup and possibly development costs in the base year plus ongoing Direct service costs.  In the subsequent option years, there should be maintenance costs for deliverables in base year plus ongoing service costs for support of the Direct Protocol.  
+
+
+
+
+
+Project Officer
+
+(to be announced at award)
+
+
+
+
+
+Special Considerations
+
+Section 508 of the Rehabilitation Act (29 USC 794d) 
+
+Section 508 of the Rehabilitation Act of 1973 (29 U.S.C. 794d) requires Federal agencies to purchase electronic and information technologies (EIT) that meet specific accessibility standards. All final deliverables must comply with applicable Section 508 accessibility standards, and CDC reserves the right to reject deliverables that fail to meet the standards. Remediation of any materials that do not comply with the applicable provisions of 36 CFR Part 1194 as set forth in the SOW or PWS, shall be the responsibility of the contractor or consultant retained to produce the Web-suitable content or communications material. Regardless of format, all electronic documents - including text, audio or video - must conform to applicable Section 508 standards to allow federal employees and members of the public with disabilities to access information that is comparable to information provided to persons without disabilities. 
+
+
+
+The following Section 508 provisions apply to the content or communications material identified in this SOW or PWS:
+
+36 CFR 1194.21, .22, .31, and .41
+
+Documents must be in unlocked form.  Acceptance checklists for various file formats are available at . 
+
+
+
+IT Security and Privacy
+
+Contractor performance and resulting deliverables must adhere to all Federal, HHS, and/or CDC IT security policies and procedures.  Specific HHSAR IT security clause statements apply, as necessary, to work conducted by the Contractor on behalf of the Government.
+
+
+
+The following HHS FAR IT security clauses may apply based on the Contractor’s technical proposal to support the stated requirements.  The clauses may be found at: .  
+
+352.239-70 Standard for security configurations.
+
+352.239-71 Standard for encryption language.  Note per OMB and CDC requirements, any/all portable media (CD, DVD, USB drives, etc.) and mobile devices (laptops, tablets, etc.) used for administration and data collection/transfer must be encrypted. 
+
+352.239-72 Security requirements for federal information technology resources.  Note contractor must support security authorization process as required by CDC in accordance with this HHS FAR clause.
+
+
+
+The contractor must protect the confidentiality of proprietary, sensitive, and Personally Identifiable Information (PII).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSTRUCTIONS TO OFFERORS
+
+Evaluation Criteria
+
+
+
+ The non-price/cost information shall address the following list in three main areas. There is a 25 page limit to responses not including any.  The information shall be presented 8-1/2” X 11” format with 12 point font Times New Roman.  
+
+
+
+Technical Plan.  
+
+Supported Edge Protocols
+
+Description of technical infrastructure
+
+Any service level agreements in place (as an appendix and not counted against the 25 page limit)
+
+Examples of any standard business agreements in place (as an appendix and not counted against the 25 page limit)
+
+Plans for addressing NHSN need for White List Services
+
+Security Overview including all controls in place both physical and digital  to safeguard the privacy and integrity of the message content and access to private keys
+
+Results of any vulnerability or penetration tests done on your system (as an appendix and not counted against the 25 page limit)
+
+Process of security screening of contractor’s employees
+
+
+
+
+
+Management Plan
+
+Staffing levels and expertise
+
+Management approach
+
+
+
+Similar Experience
+
+Number of current Direct accounts currently supported
+
+Participation in any Direct working groups, pilots or proof of concepts
+
+Any Direct Services provided to state or federal agencies
+
+A general history of contractor’s involvement with Direct
+
+
+
+TECHNICAL EVALUATION CRITERIA
+
+
+
+This task order will be awarded to the contractor whose proposal is considered to be the most advantageous, i.e. best value, to the government, price and other factors identified below considered. Technical factors will be more important in the evaluation than price.  The government will not make an award at a significantly higher overall cost to the government to achieve only slightly superior performance. 
+
+
+
+A proposal that has no weaknesses and no particular strengths above and beyond meeting the basic requirements defined in the solicitation for a particular evaluation criteria element will receive less than the full credit available on that element.  To achieve the full credit for an element, the Proposal must go well beyond the requirement by offering exceptionally innovative or particularly well thought out or insightful methods or procedures.  The technical evaluation will consist of a review of the following technical evaluation criteria and weighted point distribution:
+
+
+
+	
+
+
+
+Cost Proposal:   A cost analysis of the business cost proposal shall be conducted to determine the reasonableness of the proposal.   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Line Items
+
+
+
+
+
+Base Period Items:
+
+
+Total Price for Base Period:			______________
+
+
+
+
+
+
+
+
+
+Option Period 1 Items:
+
+
+Total Price for Option Period 1:			______________
+
+
+
+
+
+
+
+
+
+
+
+
+
+Option Period 2 Items:
+
+
+Total Price for Option Period 2:			______________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Total Price (Base + 2 Options Years):    		______________
+
+
+
+
+
+CLIN
+
+DELIVERABLE (to project officer)
+
+DELIVERY DATE
+
+001
+
+Startup meeting (via webinar or conference call) with appropriate CDC staff.
+
+Within 2 weeks of award
+
+001
+
+Technical documentation for edge protocol and general usage of the HISP
+
+Within two weeks of kick-off
+
+001
+
+Vulnerability and penetration test results
+
+Within one month of kick-off
+
+001
+
+Business agreement covering security and privacy issues and service level agreement
+
+Within one month of kick-off
+
+001
+
+Direct address(s)
+
+Within one month of kick-off
+
+001
+
+Mechanism for NHSN to communicate the Direct addresses of trusted partners (White List mechanism)
+
+Within three months of kick-off
+
+002
+
+Ongoing message delivery services using Direct protocol
+
+Within three months of kick-off and monthly ongoing
+
+
+
+
+
+
+
+
+
+CLIN
+
+DELIVERABLE (to project officer)
+
+DELIVERY DATE
+
+001
+
+Updates and maintenance of deliverables in Base year CLIN 1
+
+Within 1 month of the start of option year 1
+
+002
+
+Ongoing message delivery services using Direct protocol
+
+Monthly ongoing
+
+
+
+CLIN
+
+DELIVERABLE (to project officer)
+
+DELIVERY DATE
+
+001
+
+Updates and maintenance of deliverables from previous year in CLIN 1
+
+Within 1 month of the start of option year 2
+
+002
+
+Ongoing message delivery services using Direct protocol
+
+Monthly ongoing
+
+
+
+Criteria	
+
+Points or relative value of criteria
+
+Technical Plan
+
+40%
+
+Management Plan
+
+20%
+
+Similar Experience
+
+40%
+
+Total
+
+100%
+
+
+
+ITEM
+
+SUPPLIES / SERVICES
+
+QTY / UNIT
+
+UNIT PRICE
+
+EXTENDED PRICE
+
+
+
+
+
+
+
+0001
+
+
+
+
+
+
+
+0002
+
+
+
+
+
+
+
+Initial Start-up
+
+
+
+
+
+
+
+Monthly Direct Services
+
+  
+
+
+
+
+
+   1 Job
+
+
+
+
+
+
+
+ 12 Months
+
+
+
+
+
+
+
+
+
+___________
+
+
+
+
+
+
+
+__________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+___________________
+
+
+
+
+
+
+
+___________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_
+
+
+
+ITEM
+
+SUPPLIES / SERVICES
+
+QTY / UNIT
+
+UNIT PRICE
+
+EXTENDED PRICE
+
+
+
+
+
+
+
+1001
+
+
+
+
+
+
+
+1002
+
+
+
+
+
+
+
+Initial Start-up
+
+
+
+
+
+
+
+Monthly Direct Services
+
+  
+
+
+
+
+
+   1 Job
+
+
+
+
+
+
+
+ 12 Months
+
+
+
+
+
+
+
+
+
+___________
+
+
+
+
+
+
+
+__________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+___________________
+
+
+
+
+
+
+
+___________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_
+
+
+
+ITEM
+
+SUPPLIES / SERVICES
+
+QTY / UNIT
+
+UNIT PRICE
+
+EXTENDED PRICE
+
+
+
+
+
+
+
+2001
+
+
+
+
+
+
+
+2002
+
+
+
+
+
+
+
+Initial Start-up
+
+
+
+
+
+
+
+Monthly Direct Services
+
+  
+
+
+
+
+
+   1 Job
+
+
+
+
+
+
+
+ 12 Months
+
+
+
+
+
+
+
+
+
+___________
+
+
+
+
+
+
+
+__________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+___________________
+
+
+
+
+
+
+
+___________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_

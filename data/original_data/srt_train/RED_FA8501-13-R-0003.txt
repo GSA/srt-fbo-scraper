@@ -1,0 +1,238 @@
+ 
+
+PERFORMANCE WORK STATEMENT ROBINS ENTERPRISE DATA CENTER SUPPORT 14 Dec 2012 DRAFT 1.0 DESCRIPTION OF SERVICES. The contractor shall provide server, database, enterprise backup and enterprise storage related services to the Communications Directorate (78 ABW/SC), The provided personnel will be responsible for the day to day creation, sustainment and deletion of configurable items such as, but not limited to physical servers, virtual servers/desktops, User Home Directory (UHD) shares, organizational file shares and back up jobs. The contractor will provide sustainment support services consisting of the dayto-day activities necessary to ensure associated hardware and software are operational; including administration, management and troubleshooting break/fix issues. The contractor will also be responsible for formal configuration management, configuration documentation and periodic system health assessments/reporting. The Robins Enterprise Data Center (REDC) employs VMWare to provide virtual server capability; the environment is currently based on HP 7000 and HP 3000 blade enclosures. The REDC currently houses 166 virtual servers and 75 physical servers. These servers host 500 applications that are accessed by users worldwide. The REDC currently manages 7 MS/SQL, 25 Oracle and 12 MySQL/Sybase database server engines that control over 550 total database instances. The REDC storage environment is currently comprised of the following major components: NetApp 3020 (60 TB), NetApp 3070 (200 TB), NetApp 3170 (60 TB), NetApp 6280 (200 TB), EMC Data Domain DD860 (100 TB), EMC VNX 5700 ( 100 TB), EMC VNX 5500 ( 100 TB), 1.1 GENERAL SUPPORT REQUIREMENTS All support shall be provided in accordance with (IAW) applicable DISA Security Technical Implementation Guides (STIG), DoD, Air Force and local guidance. For all technologies, the contractor shall: 1.1.1 Provide/maintain standard documentation for configurable items to include topology, current configuration, change log and Standard Operating Procedures (SOP) for maintenance processes. Formally define/document/ and periodically validate processes to ensure system configuration management. Formally define/document/ and periodically validate continuity of operations and disaster recovery processes. Formally define/document/ and periodically validate Standard Operating Procedures (SOP) to govern everyday system operation. Respond in a timely manner to tickets generated in the established government ticketing system (currently ITSM) IAW DoD, Air Force, and local guidance. Provide interface with tech support personnel for repairs and scheduled maintenance. Ensure system backup jobs are established and periodic restores are tested/documented. Establish, track and audit all system level user accounts and passwords IAW DoD, Air Force, and local guidance. Tune systems to obtain/maintain optimum performance IAW DoD, Air force, local guidance and industry standards when possible.
+
+1.1.2 1.1.3 1.1.4 1.1.5 1.1.6 1.1.7 1.1.8 1.1.9
+
+ 
+
+Page 1 of 10
+
+ 
+
+1.1.10 Implement/validate/document Information Security directives (i.e. Time Compliance Network Orders (TCNOs), Notices to Airmen (NOTAMs), or Defense Information Systems Agency (DISA) Security Technical Information Guides (STIGs) and other directives) IAW DoD, Air force, and local guidance. 1.1.11 Provide technical solutions to user requirements. 1.1.12 Recommend, document, inventory upon receipt, move, install, and configure applicable hardware. 1.1.13 Recommend, document, inventory upon receipt, move, install, and configure applicable software. 1.1.14 Install/configure hosted applications in cooperation with functional system administrators, User POC or Government Program Manager. 1.1.15 Install authorized system software releases and security patches in coordination with functional system administrators (FSA) IAW DoD, Air force, and local guidance. 1.1.16 The contractor shall train Government personnel on requested processes. When new software or hardware is acquired, the contractor shall provide on-the-job training for government personnel as required. The objective of the on- the-job training is to ensure Government personnel are proficient on the acquired software/hardware. 1.1.17 The contractor shall ensure all service outages are reported IAW DoD, Air force, and local guidance. Situation Reports (SITREPs) will be created immediately detailing the specifics of the outage. A trouble ticket will be created immediately to formally document the issue, troubleshooting and resolution. 1.1.18 The contractor shall ensure uptime of 99.5% is maintained for all systems. 1.2 SERVER ADMINISTRATION SUPPORT. The contractor shall provide services related to the design, implementation, operation and maintenance of a Data Center class server hosting environment of physical and virtual servers. The contractor shall maintain the government system of record that details all servers hosted by the organization. Administration will be provided for the current version and two previous major releases of each of the following: Microsoft Windows server Operating System (OS) (i.e. Windows Server 2008, 2003, and 2000); Unix, HP-UX, and Red Hat Enterprise Linux. This includes the web server components of these OS's as well (i.e. IIS, Apache, ColdFusion, and Tomcat). The contractor shall maintain the government system of record that details all servers deployed and provide real-time monitoring of server health. 1.3 ENTERPRISE BACKUP SUPPORT The contractor shall provide services related to the design, implementation, operation and maintenance of a Data Center class Enterprise Backup environment sufficient to ensure a minimum of 1 weekly full backup and 6 weekly incremental backups of all SCOH hosted data. The contractor shall maintain the government system of record that details all back jobs performed and provide monitoring and daily reports of success/failure of all backup jobs. In the event additional Database Management Software (DBMS) is incorporated into the environment, the contractor will provide personnel sufficiently skilled to manage the added DBMS. 1.4 DATABASE ADMINISTRATION SUPPORT The contractor shall provide services related to the design, implementation, operation and maintenance of a Data Center class Enterprise Oracle, MS/SQL, Sybase, and MySQL hosting environment. 1.4.1 The contractor shall maintain the government system of record that details all databases hosted by the organization. 1.4.2 The contractor shall ensure seamless integration of production, Quality Assurance (QA) and Development (Dev) database instances for each application.
+ 
+
+Page 2 of 10
+
+ 
+
+1.4.3
+
+1.4.4
+
+In the event additional Database Management Software (DBMS) is incorporated into the environment, the contractor will provide personnel sufficiently skilled to manage the added DBMS. Database administration support includes creating, maintaining and deleting database instances, including software installation, hardware and software configuration, security administration, backup and recovery, data analysis, database design, and enterprise standards and environment documentation.
+
+1.5 ENTERPRISE STORAGE SUPPORT The contractor shall provide services related to the design, implementation, operation and maintenance of a Data Center class enterprise storage environment. The contractor shall maintain the government system of record that details all shares, file systems and other units of provisioned/un-provisioned storage hosted by the organization. 1.6 VIRTUAL ENVIRONMENT SUPPORT The contractor shall provide services related to the design, implementation, operation and maintenance of a Data Center class enterprise virtual server and desktop hosting environment. Contractor shall create, configure, and decommission virtual machines. Contractor shall ensure proactive monitoring of virtual machine storage, load balancing and usage. 1.7 PROGRAM MANAGEMENT SERVICES The Contractor shall maintain a single point of contact to coordinate program related issues and ensure Government requirements stated in this PWS are met. The contractor shall identify problems or potential problems affecting performance to the Government COR as soon as such problems or potential problems are identified. Verbal reports shall be followed up with written reports when directed by the Government COR. The contractor shall submit monthly status reports to include work planned, actual work accomplished, and issues or actions during the reporting period. CDRL A001. 2.0 SERVICES SUMMARY Performance Objectives Respond to user help/trouble tickets in a timely fashion PWS Para 1.1.5 Performance Threshold Acceptable response and resolution times are base upon Ticket priority as follows: Critical ­ (Immediate response with 2 hour restoration objective) Base wide outage Entire building outage SIPRNET ­ circuit/trunk or any core equipment outage Any WR-ALC Senior Staff network issue High ­ (2 duty hours response with 8 duty hours restoration objective) Any GM-15/O-6 or above "at work" problem Any AUTODIN outage Application Server (i.e. DMAPS, T.O., etc.)
+ 
+
+Page 3 of 10
+
+ 
+
+connectivity Any external circuit SIPRNET ­ all other SIPRNET issues Medium ­ (4 duty hours response with 2 duty days restoration objective) HomeNet (connectivity to VIP houses) Loss of connectivity/services for 1 workstation Recurring intermittent connectivity (for monitoring purposes) Low ­ (8 duty hours response with 8 duty days restoration objective) Network drop activation Any Remote Access Server Client issue (password reset, account creation, etc.) Perform Configuration Management NOTAMS and TCNO Compliance 1.0 Configuration changes updated within 10 business days. Compliance with all NOTAMS and TCNO's, or other DoD Directives will be met prior to the due date. If Compliance cannot be accomplished prior to due date, a Plan of Action and Milestones (POA&M) will be completed and submitted prior to due date. 99.5% uptime of all managed systems.
+
+1.1.10
+
+System Uptime Availability Mishap Notification and Reporting
+
+1.1.18
+
+4.8.2
+
+No more than one instance of late mishap notification per year
+
+4.8.4 Conduct acceptable Contractor Safety Program No more than two Class C mishaps per contract year. Zero Class A or B mishaps
+
+3.0 GOVERNMENT FURNISHED EQUIPMENT AND SERVICES The Government shall provide cubicle space, desk, chair, desktop computer, access to copier, fax and a networked printer. In addition, the Government shall provide telephone service consisting of Class 3 (formerly referred to as class C) and Class 1 (formerly referred to as Class A) service, to include the Defense Switched Network (DSN). Telephone service classes are defined in AFI 33111, 24 Mar 05, Voice Systems Management, Section B, Chap. 31. The contractor shall ensure use of all government provided equipment/facilities is limited to performance of contract related official
+ 
+
+Page 4 of 10
+
+ 
+
+Government business. Upon completion or termination of the contract or expiration of employee identification passes, the prime contractor shall ensure that all GFE to include base ID passes, desktop computer, laptop computers, peripherals, and other software/hardware is returned to the COR and each individual is processed through the directed Out-processing checklist. The government shall provide laptops to facilitate non-duty hour remote administration capability. All laptops will be brought in and connected to the Robins network for a 24 hour period at minimum, once every seven duty days. The contractor shall not alter the configuration of the laptop in any way to include, but not limited to the loading/removal of software, the loading/removal of accounts or the connection of devices that violate established DoD, Air Force or local security guidance. All laptops are subject to security scan upon COR request. Description Laptop Laptop Laptop Laptop Laptop Laptop Laptop Laptop Laptop Laptop Laptop Laptop Laptop
+S/N J002PD1 HPVC3L1 MXL84306X0 FXBDY1 55BT0F1 MXL0311HQ1 5JX8NH1 2QVC3L1 9ZXWMH1 MXL03401BX MXL0311HPX F06RZF1 7CNPTF1
+
+Acquisition Cost $1,200.00 $1,200.00 $1,200.00 $1,200.00 $1,200.00 $1,200.00 $1,200.00 $1,200.00 $1,200.00 $1,200.00 $1,200.00 $1,200.00 $1,200.00
+
+Quantity Model/Make 1 1 1 1 1 1 1 1 1 1 1 1 1
+Dell Latitude d630 Dell e6400 HP QEB0803 Dell Latitude d630 Dell Latitude d630 HP EliteBook 6930P Latitude D430 Latitude E 6400 Latitude D430 HP eliteBook 8440p HP EliteBook 6930P Latitude D630 Latitude D630
+
+3.1 REPORTING LOSS OF GOVERNMENT PROPERTY (FEB 2011) a. Definitions. As used in this clause-- "Government property" is defined in the clause at FAR 52.245-1(a), Government Property. "Loss of Government property" means unintended, unforeseen, or accidental loss, damage, or destruction of Government property that reduces the Government's expected economic benefits of the property. Loss of Government property does not include purposeful destructive testing, obsolescence, normal wear and tear, or manufacturing defects. Loss of Government property includes, but is not limited to-- (1) Items that cannot be found after a reasonable search; (2) Theft; (3) Damage resulting in unexpected harm to property requiring repair to restore the item to usable condition; or (4) Destruction resulting from incidents that render the item useless for its intended purpose or beyond economical repair. "Unit acquisition cost" means-- (1) For Government-furnished property, the dollar value assigned by the Government and identified in the contract; and
+ 
+
+Page 5 of 10
+
+ 
+
+(2) For Contractor-acquired property, the cost derived from the Contractor's records that reflect consistently applied, generally acceptable accounting principles. b. Reporting loss of Government property. (1) The Contractor shall use the Defense Contract Management Agency (DCMA) eTools software application for reporting loss of Government property. Reporting value shall be at unit acquisition cost. The eTools "LTDD of Government Property" toolset can be accessed from the DCMA home page External Web Access Management application at http://www.dcma.mil/aboutetools.cfm. (2) Unless otherwise provided for in this contract, the requirements of paragraph (b)(1) of this clause do not apply to normal and reasonable inventory adjustments, i.e., losses of low-risk consumable material such as common hardware, as agreed to by the Contractor and the Government Property Administrator. Such losses are typically a product of normal process variation. The Contractor shall ensure that its property management system provides adequate management control measures, e.g., statistical process controls, as a means of managing such variation. (3) The Contractor shall report losses of Government property outside normal process variation, e.g., losses due to Theft; Inadequate storage; Lack of physical security; or "Acts of God." (4) This reporting requirement does not change any liability provisions or other reporting requirements that may exist under this contract. 4.0 GENERAL INFORMATION. 4.1 HOURS OF OPERATION. The contractor shall schedule working hours to support the hours of 7:00am to 6:00pm., Monday through Friday. 4.1.1 Call Back/After Hours Support The contractor shall immediately respond to notification of all break/fix issues when notified by the Government. The contractor shall perform a thorough and complete analysis of the problem to include time to fix, any potential work around, and potential service downtime. The contractor shall respond to the Government within 30 minutes of notification and provide information and status. If the problem results in an extended downtime of the system, the contractor shall provide additional updates every hour until a workaround is established or the problem is resolved. Upon problem resolution, the contractor shall ensure the closure of the Helpdesk ticket and SITREP. Although the government provides laptop computers for remote access, if the problem warrants, the contractor is expected to report to work to fix the issue in the most efficient manner possible. 4.1.2 Alternate Hours. Work required to be performed outside of normal duty hours shall be coordinated/approved by the Government COR. 4.1.3 Federal Holidays and other Non-Work Periods. The contractor shall observe the following Federal Holidays: New Year's Day, Martin Luther King's Birthday, George Washington's Day, Memorial Day, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving Day, and Christmas Day. If the holiday falls on Sunday, it will be observed on the Monday immediately following the holiday. If the holiday falls on Saturday, it will be observed on the immediately preceding Friday. The contractor shall observe all energy days and/or other down days as directed by the COR's chain of command.
+ 
+
+Page 6 of 10
+
+ 
+
+4.2 CONTRACTOR TRAVEL. Travel may be required during the performance of this contract and shall be approved by the Government CO prior to travel. All travel shall be in accordance with the Joint Travel Regulations (JTR). Travel will be reimbursed at rates approved by the JTR. 4.3 NETWORK ACCESS. Network access is a privilege extended to contractor employees. It will be granted only after all criteria have been met and may be suspended for cause as defined in AFI 33-100, AFI 33-115 Vol 2, Section 5.6. Network access will be approved IAW AFI 31501, AFI 31-601, AFI 33-115 Vols I and II, AFI 33-202, AFSSI 5027, DoD 5200.40, and DoD 5220.22. Per AFI 33-115V2, "every individual who has access to the Air Force network (af.mil) domain, specialized systems and mission systems is a network user. Before becoming an AF network user, an individual must be trained and licensed. This process of training and licensing ensures that every Air Force network user is trained and aware of the basic principles of network security and their role in Information Assurance (IA)." Every AF network user must possess a current and favorable National Agency Check (NAC) and Local Files Check (LFC). The NAC is a requirement for working on Government installations and any costs associated with obtaining the NAC shall be the responsibility of the contractor. In addition, contractors performing in an IT-I position (DoD 5200.2R, Appendix K, Para 7) require a current and favorable Limited Background Investigation (LBI). Foreign Nationals must meet the requirements of AF 31-501 prior to access. Access by Foreign Nationals must be processed and approved by the Foreign Disclosure Office (FDO) in accordance with AFSSI 8522 Paragraphs 3.2.1 and 3.2.3. 4.4 CONTRACTOR IDENTIFICATION BADGES. The contractor shall complete all necessary documents for all contractor personnel requiring access to Robins AFB. Common Access Cards (CAC) will be required for all on-site contractor personnel. This documentation will be provided through the Contracting Officer to the organization Trusted Agent for entering into the Contractor Verification System (CVS). Additional instructions for applications will be sent to the e-mail address provided for the application. Prior to application approval, each individual will be reviewed for eligibility in the JPAS system and checked against the installation's barred individual roster. The contractor's POC or alternate shall complete an "Unescorted Entry Authorization Certificate" (AF 2586) for each employee requiring entry into controlled and/or restricted areas. The Contractor shall request restricted area badges for employees according to RAFBI 31-101, Installation Security Program. During performance of the contract, the contractor shall be responsible for obtaining required identification for newly assigned personnel and for prompt return of credentials and vehicle passes for any employee who no longer requires access to the work site. Upon completion or termination of the contract or expiration of the identification passes, the prime contractor shall ensure that all base identification passes issued to employees and subcontractor employees are returned to the issuing office. 4.5 SECURITY REQUIREMENTS (CLASSIFIED) 4.7.1 General: The contractor shall comply with the provisions of the National Industrial Security Program Operating Manual (DOD 5220.22-M). The contractor shall ensure requirements for safeguarding classified information and classified materials, for obtaining and verifying personnel security clearances, for verifying security clearances a, for protecting Government property, and for the security of automated and non-automated information systems (AIS) and data are fulfilled.
+ 
+
+Page 7 of 10
+
+ 
+
+The contractor's AIS shall be protected such that unauthorized disclosure of classified and or sensitive information is prevented. 4.7.2 Operations Security (OPSEC): Contractor personnel shall participate in the OPSEC program locally administered by the Air Force activity. 4.7.3 Employee Clearances: Contractor employees shall not be authorized access to classified information; access to classified materials, or permitted to perform work on classified projects without proper security clearances and a need to know. The contractor shall be responsible for obtaining security clearance to the level of Secret for proper accomplishment of contract requirements. Contractor employees whose clearance has been suspended or revoked shall immediately be denied access to classified information, sensitive but unclassified information and government computers. Contractor inability to obtain and/or maintain proper employee security clearance shall not constitute an excusable delay in contract performance. 4.7.4 Security Incidents and Violations: The contractor shall immediately notify the 78 ABW/SCXS Security Office of any actual security violation, security incident, or of any indication of a potential unauthorized disclosure or compromise of classified or sensitive but unclassified information. 4.7.5 Security Education: All full time contractor employees occupying physical space on Robins Air Force Base, shall comply with the 78 ABW/SC Security Education and Awareness program. The program consists of the following components: initial training, annual refresher training, and periodic tailored training. 4.7.6 Communications Security (COMSEC): The contractor shall use only secure communications methods and equipment to transmit or otherwise transfer classified and sensitive unclassified information or data. All such transmissions shall be in accordance with the appropriate Government security regulations. COMSEC equipment and materials shall be safeguarded, controlled, maintained, and operated under the provisions of DOD 5220.22-M. 4.8 SAFETY REQUIREMENTS: The contractor shall comply 100 percent of the time. 4.8.1 Contractor Compliance. Contractors shall comply with Occupational Safety and Health Act (OSHA) Public Law 91-596, OSHA Standard 29 CFR 1910, and OSHA Standard 29 CFR 1926 for the protection of their employees. To ensure the protection of Air Force personnel, assets and interests, the contractor shall be solely responsible for compliance with all federal, state and local laws, codes, ordinances, regulations, the Occupational, Safety and Health Act (Public Law 91-596) and the resulting OSHA Standards 29 CFR 1910 and OSHA Standards 29 CFR 1926, all Air Force Occupational Safety and Health (AFOSH) Standards, and any applicable local guidance. The contractor shall establish and maintain a safety and health program detailed in a written Contractor's Safety and Health Plan. The Air Force is part of the OSHA Voluntary Protection Program (VPP). All shall familiarize themselves with the requirements of VPP. Information on the VPP can be accessed at http://www.osha.gov/dcsp/vpp/index.html. Additionally, the contractor is responsible for the safety and health of all subcontractor employees. 4.8.2 Mishap Notification: The contractor shall telephonically notify the Safety office within four (4) hours of all mishaps or incidents to DoD property entrusted by this contract operation. No more than one instance of late mishap notification per calendar year is acceptable. Follow all
+ 
+
+Page 8 of 10
+
+ 
+
+other reporting requirements as identified on the DD1423, CDRL A002 for Accident/Incident Report (Mishap Notification & Reporting) Data Acquisition Document Number DI-SAFT-81563. 4.8.3 Mishap Investigation. If requested by the Government Procuring Contracting Officer (PCO) or Administrative Contracting Officer (ACO), the contractor shall immediately secure the mishap scene/damaged property and impound pertinent maintenances and training records until released by the investigating safety office. If the government investigates the mishap, the contractor and the subcontractors shall cooperate fully and assist the government personnel until the investigation is completed. 4.8.4 Contractor Safety Program. The contractor shall establish and maintain an acceptable safety program in accordance with their accepted Safety and Health Plan. No more than two Class C mishaps per contract year and Zero Class A or B mishaps will be tolerated. All changes to the plan must also be submitted in writing and approved by the government via the DD 1423 Data Item Number A003 Data Acquisition Document Number DI-ENVR-81375 for Contractor's Standard Operating Procedures (SOP) to receive the Contractor's Safety and Health Plan Update. 4.8.5 Total Case Injury Rate (TCIR) and Days Away, Restricted and/or Transferred (DART) Rates. The contractor shall provide to the government, on an annual basis, TCIR/DART rates or injury and illness rates for the Standard Industrial Classification (SIC) code or the North American Industrial Classification Systems (NAICS) code for the applicable industry. These rates shall be provided to the addressee(s) listed in block 14.a. of the DD1423 Data Item Number A004 Data Acquisition Document Number DI-MGMT-81563/T for Contractor's Progress, Status and Management Report (Annual TCIR/DART Rates). 4.8.6 Contract Safety Manager. As part of the Contractor Safety Program, the contractor shall assign in their plan, by name and phone number, a person who shall be the primary point of contact for safety and health issues for the on-site operation. The contractor shall keep the contract safety manager information current by notifying the contracting officer of any change in personnel or contact information. 4.8.7 Quality Control Plan (QCP). The contractor's QCP is the foundation upon which quality work is based. The QCP is submitted after award in accordance with DD1423 Data Item Number A005, Data Acquisition Document Number DI-QCIC-81722, Contractor's Progress Status & Management Report (Contractor's Quality Control Plan) and is approved by the Contracting Officer Representative (COR) before any work begins. The plan shall be comprehensive, detailed, and logical if the contractor's quality control program is to be effective and shall include a site safety checklist when applicable. The plan shall demonstrate that the contractor has fully considered the specific contract requirements and special factors peculiar to the project. The Government reserves the right to require necessary changes in the plan and in contractor operations to obtain the specified level of quality. If changes to the plan are necessary, the changes must be made and accepted by the Contracting Officer, prior to their implementation. 4.9 SECURITY CLEARANCES. For contractors requiring unescorted entry to restricted areas, access to sensitive unclassified information, access to Government automated information systems (AIS) and/or sensitive equipment, not involving access to classified information, the contractor's personnel security questionnaire is processed by the sponsoring AF activity per DOD 5200.2-R and AFI 31-501. Contractors performing in an IT-II position require a Secret Clearance. Contractors performing in an IT-I position require a Top Secret Clearance. 4.10 DOD 8570 TRAINING. Per Department of Defense Directive 8570 (DoD 8570.1),
+ 
+
+Page 9 of 10
+
+ 
+
+all personnel performing this contract shall be required to be CompTIA Security+ certified prior to beginning work. A copy of the certification will be maintained by both the COR and IA office. 4.11 MEETINGS AND TRAINING. Contractor personnel may be required to attend additional functions such as seminars, conferences, workshops, and educational courses. The contractor shall ensure personnel's skill sets remain relevant as applicable technology advances throughout the life of the contact. 4.11.1 If the COR determines attendance to be mandatory, the Government shall be responsible for all approved costs associated with the training. The Government shall provide technical training for new Government equipment, requirements, and or new technologies not addressed in the PWS. This training shall be provided only to an initial cadre of contractor personnel requiring specialized formal training, not to exceed 25 percent of the affected personnel. 4.12 RECORDS, FILES, DOCUMENTS AND WORK PAPERS. All official records (regardless of media) as defined in 44 U.S.C. Part 3301 / AFI 33-322, Para 2 are the property of the U.S. Government and shall remain so upon termination or completion of this contract. Creation and maintenance of Air Force documents must be in compliance with AFI 33-322, Para 10; AFI 37-138, Para 2.13; and AFMAN 37-123, Para 7.4. 4.13 PERFORMANCE OF SERVICE DURING CRISIS The Functional Commander/Director has determined, by placing in writing their decision, that this requirement is Mission Essential (M-E) in accordance with DoDI 1100.22, Policy and Procedures for Determining Workforce Mix and DFARS 237.76, Continuation of Essential Contractor Services. Mission Essential Functions: The Government has identified all or a portion of the Contractor service performed under the contract as essential contractor services in support of mission essential functions. The contractor-provided services that have been determined to be essential contractor services in support of mission essential functions are listed in attachment 1____. The contractor shall provide a written plan for continuing the performance of essential contractor services identified in the paragraph above. a. The contractor shall identify in the plan the provisions made for the acquisition of essential personnel and resources, if necessary, for continuity of operations for up to 30 days or until normal operations can be resumed. b. The plan must, at a minimum, address: (1) Challenges associated with maintaining essential contractor services during an extended event, such as a pandemic that occurs in repeated waves; (2) The time lapse associated with the initiation of acquisition of essentials personnel and resources and their actual availability on site; (3) The components, processes, and requirements for the identification, training, and preparedness of personnel who are capable of relocating to alternate facilities or performing work from home;
+ 
+
+Page 10 of 10
+
+ 
+
+(4) Any established alert and notification procedures for mobilizing identified "essential contractor service" personnel; and (5) The approach for communicating expectations to contractor employees regarding their roles and responsibilities during a crisis. The contractor shall maintain and update its plan as necessary and adhere to its requirements throughout the contract term. The contractor shall not materially alter the plan without the Contracting Officer's consent. As directed by the Contracting Officer, the contractor shall participate in training events, exercises, and drills associated with Government efforts to test the effectiveness of continuity of operations procedures and practices. In the event the contractor anticipates not being able to perform any of the essential contractor services identified on attachment _1______ during a crisis situation, the contractor shall notify the Contracting Officer or other designated representative as expeditiously as possible and use its best efforts to cooperation with the Government in the Government's efforts to maintain the continuity of operations. The Government reserves the right in such crisis situations to use Federal employees of other agencies or contract support from other contractors or to enter into new contracts for essential contractor services. The contractor shall segregate and separately identify all costs incurred in continuing performance of essential services in a crisis situation. The contractor shall notify the Contracting Officer of an increase or decrease in costs within ninety days after continued performance has been directed by the Contracting Officer, or within any additional period that the Contracting Officer approves in writing, but not later than the date of final payment under the contract. The contractor shall include the substance of mission essential information in subcontracts for the essential services.
+
+4.14 ENVIRONMENTAL MANAGEMENT SYSTEM (EMS): IAW 1 Aug 07, AFMC/CV Policy Letter, Conformance with Air Force Environmental Management System (EMS) Requirements for Contracts Performed on Air Force Installations and the 11 Dec 06, SAF Policy Letter, Conformance with Air Force Environmental Management System (EMS) Requirements for Contracts Performed on Air Force Installations All contractors who physically perform work on Robins Air Force Base (RAFB) must receive EMS General Awareness Training. ( All prime contractors must complete the training prior to beginning work on RAFB and must ensure that all subcontractors comply with this requirement. 78 CEG/CEV has already developed EMS training and it's a requirement for military and civilians working on Robins. The policy letter made it mandatory for contractors working on Robins to complete EMS Training. There are three ways contractors can complete EMS training:  With CAC, go to 78 CEG/CEV website and click on EMS General Awareness Training, choose Option 1 https://geobase.robins.af.mil/emstraining/EMSTrainingOptions.aspx
+ 
+
+Page 11 of 10
+
+ 
+
+ 
+
+Without a CAC, request a copy of EMS training from 78 CEG/CEV Workflow Mailbox. If a company is ISO 14000 certified, the contractor does not have to complete Robins AFB EMS General Awareness Training; however, the contractor must submit documentation to the Contracting Officer (CO) stating ISO 14000 Certification.
+
+4._.2 The prime Contractor shall ensure subcontractors comply with the EMS requirement 4.10 INSPECTION OF SERVICES CLAUSE: The Federal Acquisition Regulation (FAR) 52.246-4, gives the Government the right to inspect Contractor Performance. 4.11 GREEN PROCUREMENT PROGRAM (GPP): GPP is a mandatory federal acquisition program that focuses on the purchase and use of environmentally preferable products and services. GPP requirements apply to all acquisitions using U. S. Government appropriated funds, including services and new requirements. FAR 23.404(b), Agency Affirmative Procurement Program, applies and states the GPP requires 100% of EPA designated product purchases that are included in the Comprehensive Procurement Guidelines (CPG) list that contains recovered materials, unless the item cannot be acquired: (a) competitively within a reasonable timeframe; (b) meet appropriate performance standards, or (c) at a reasonable price. The prime contractor shall be responsible for ensuring that all subcontractors comply with this requirement.
+
+4.12 Contractor Manpower Reporting Requirements (tailor the following example language as necessary--this requirement is mandatory per SAF/AQ Memo, 13 Nov 12) Per reference SAF/AQ Memo, 13 Nov 12, "The contractor shall report ALL contractor labor hours (including subcontractor labor hours) required for performance of services provided under this contract for the USAF via a secure data collection site. The contractor is required to completely fill in all required data fields at http://www.ecmra.mil (select Dept of the Air Force option if you you're working an AF requirement). Reporting inputs will be for the labor executed during the period of performance for each Government fiscal year (FY), which runs 1 October through 30 September. While inputs may be reported any time during the FY, all data shall be reported no later than 31 October* of each calendar year. Contractors may direct questions to the CMRA help desk." 4.12.1 *Reporting Period: Contractors are required to input data by 31 October of each year. However, due to the delayed implementation, input of FY12 data is required by 31 Mar 13. 4.12.2 Uses and Safeguarding of Information: Information from the secure web site is considered to be proprietary in nature when the contract number and contractor identity are associated with the direct labor hours and direct labor dollars. At no time will any data be released to the public with the contractor name and contract number associated with the data. 4.12.3 User Manuals: Data for Air Force service requirements must be input at the Air Force CMRA link. However, user manuals for government personnel and contractors are
+ 
+
+Page 12 of 10
+
+ 
+
+available at the CMRA link at http://www.ecmra.mil (select Dept of the Air Force option if you you're working an AF requirement). 4.13 PROCEDURE FOR INVOICING/PAYMENT/ACCEPTANCE: The multi-functional team (MFT) can request that data items be attached to acceptance forms through Wide Area Work Flow (WAWF) or submitted to government personnel as spelled out in the data Contract Data Requirements List (CDRL). To allow for payment of separately priced data items, the MFT must use WAWF for acceptance. Data CDRL will determine submittal requirements; however, both separately priced and non-separately priced items must be accepted in WAWF in order for the line item to be closed out in the contract. Information regarding Wide Area Work Flow-Receipt and Acceptance is available on the Internet at https://wawf.ef.mil. 4.14 TECHNICAL SKILLS REQUIRED. The contractor shall provide expertise in the following areas: Server Administration:  Windows Server 2003/2008  Enterprise Red Hat Linux 5.X  HP UX  PKI (Public Key Infrastructure)  Print Server Web administration:  Microsoft IIS (Internet Information Services) 6.X/7.X  Apache Web Server  Microsoft ActiveX  Microsoft .NET  Adobe ColdFusion  IBM Websphere  Crystal Reports  ASP (Active Server Pages)  HTML (Hyper Text Markup Language)  XML (eXtensible Markup Language)  CGI (Common Gateway Interface) Database administration:  Oracle v9.x  Oracle v10.x  Oracle v11.x  Microsoft SQL Server 2000  Microsoft SQL Server 2005  Microsoft SQL Server 2008 Enterprise Backup administration  CommVault  EMC Data Domain Enterprise storage administration  EMC VNX 5700/5500  EMC RecoverPoint Appliance  NetAPP 6280
+ 
+
+Page 13 of 10
+
+ 
+
+     
+
+NetApp 3170 NetApp 3070 NetApp 3020 Data Domain Fibre Channel ISCSI
+
+Virtual machine administration  VMware vSphere 5.X  vCenter Operation (vCOP)  vCenter Configuration Management (vCM)  VMWare Site Recovery Manager (SRM) 4.15 TRANSITION. The basic contract will include two transition periods, an initial transition period at contract award and at contract expiration transition. The basic contract period includes a 45 day initial transition period based on the date of contract award. This will permit the successful offeror to hire, train, and obtain security clearances prior to actual performance. In the event the follow-on contract is awarded to other than the incumbent, the incumbent service provider shall cooperate to the extent required to permit an orderly change over to the successful service provider. The incumbent service provider shall provide familiarization with all projects currently under development to the follow-on service provider. All documentation, customer contact information, etc. shall be passed on to the follow-on service provider. During the transition familiarization period, the incumbent shall also be fully responsible for operation of all phases of this contract. 4.16 ENVIRONMENTAL TRAINING. Requirements for contracts performed on AF installation all contractors who physically perform work on Robins AFB must receive EMS awareness training. All prime contractors must complete the training prior to beginning work on RAFB and must ensure that all subcontractors comply with this requirement for 78 CEG/CEV developed EMS training. There are two avenues for contractors to complete EMS training: (1)With CAC, go to the 78 CEG/CEV website and click on EMS Awareness Training, choose Option (1)) https://geobase.robins.af.mil/emstraining/EMS_TRAINING_SLIDES/EMS_skin.swf (2) Without a CAC, request a copy of EMS training from 78 CEG/CEV Workflow Mailbox. 4.17 QUALITY ASSURANCE. Quality Assurance will be performed in accordance with the Quality Assurance Surveillance Plan (QASP). 4.18 CONTRACTOR SAFETY PROGRAM. The contractor shall establish and maintain a safety and health program in accordance with the elements listed in the Appendix C (Safety Requirements). The contractor shall submit a Safety and Health Plan 10 days after award for review and acceptance by the 78 ABW/SEG (Safety Office). The contractor shall ensure their Safety and Health Plan addresses, in detail, the items listed in the Appendix C. If task specific procedures are incorporated into a company local document, ensure those procedures are included/attached to the company's Safety and Health Plan. Referencing the company's local procedure/ document in the safety plan is not adequate. If the company's local procedure/document is not attached; Safety Plan will be returned "Not acceptable" (CDRL A003). 4.19 CONTRACTOR QUALITY CONTROL PROGRAM (QCP). The QCP shall be submitted within 30 days after award. The contractor shall develop and implement an internal
+ 
+
+Page 14 of 10
+
+ 
+
+quality control program that establishes tracking records for all measurable contract performance requirements listed within the contract. The contractor shall assess the level of quality control needed to ensure performance. The data shall identify trends, potential and actual problem areas, and any required corrective action by the contractor. CDRL A004 The QCP shall include the following provisions:  Address overall project management, administration, and support services. b. Present a comprehensive program to plan and deliver quality services.  Describe a method to identify and prevent deficiencies in the quality of service  performed before the level of performance becomes unacceptable and address processes for corrective actions.  Establish an inspection system covering all services specifying areas to be inspected on a scheduled or unscheduled basis and the title of the individual who responsible for the inspection.  Contain specific quality control techniques.  Required documentation of all contractor inspections and corrective actions be maintained by the contractor throughout the term of this contract. Inspection documents shall be made available to the COR and CO when requested.  Describe methods of direct or indirect communications with the COR regarding performance of the contract. The communications shall include regular and formal meetings with the COR. Informal communications shall be addressed.  Include weekly meetings with the COR to discuss workload or problems associated with contract performance, if needed.
+
+5.0 5.1
+
+APPENDIX.
+
+Name of Publication
+
+Sections that Date of Apply Publication
+
+Title of Publication
+
+MIL-STD-129P With Change 4 MIL-STD-130 DFARS 252.211­7003 MIL-STD-2073-1d DFARS 237.76 DoDI 1100.22
+ 
+
+Entire Entire Entire Entire Entire Entire
+
+19 Sep 07 17 Dec 07 Jun 2011 10 May 02 24 Nov 10 12 Apr 10
+
+Military Marking for Shipment and Storage DoD Standard Practice Identification Marking of US Military Property Item Identification and Valuation Standard Practice for Military Packaging Continuation of Essential Contractor Services Policy and Procedures for Determining Workforce Mi
+Page 15 of 10
+
+ 
+
+FAR 23.404
+
+Paragraph "b"
+
+18 May 12 1 Jan 04 1 Jan 04 1 Jan 04 May 2010 and Change Letter Oct 10 13 Nov 12
+
+Agency Affirmative Procurement Program Occupational Safety and Health Act (OSHA) of 1970 Occupational Safety and Health Act (OSHA) of 1970 Occupational Safety and Health Act (OSHA) of 1970 Federal Logistics Information System
+
+OSHA Public Entire Law 91-596 Occupational Safety Part 1910 And Health Standards Safety and Health Regulation Part 1926 for Construction
+
+DoD 4100.39-M
+
+Entire
+
+SAF/AQ Memo, 13 Nov 12 Entire Additional references For use as needed:
+
+Contractor Inventory Requirements If you use any of these references, check for the most updated version that is applicable for your need.
+
+FAR 52.245-1
+(For ALL repairs or if you have GFM/GFE)
+
+Entire Entire Entire Entire Document
+
+Aug 2010 Aug 1996 May 2001 1 May 07
+
+Government Property Inspection of Services-Fixed Price Inspection--Time-And-Material and Labor-Hour USAF Deficiency Reporting, Investigation, and Resolution
+
+FAR 52.246-4 FAR 52.246-6 T.O. 00-35D-54 (for Product Quality Deficiency Report (PQDRs)) DLAR 4155.24 (for Product Quality Deficiency Report (PQDRs)) AFMCI 21-113 (use for FAST repair effort) DOD 5220.22-M (for CLASSIFIED only) SAF Policy Letter (For contractors working on RAFB)
+
+Entire Section 5 Entire Entire
+
+20 Jul 93 4 Mar 09 28 Feb 06 11 Dec 06
+
+Product Quality Deficiency Report Program Fast Transportation National Industrial Security Program Operating Manu (NISPOM). Conformance with AF Environmental Management System (EMS) Requirements for Contract Performed on AF Installations.
+
+Publication Reference Table:
+
+ 
+
+Page 16 of 10
+
+ 
+
+Attachment 1 Mission Essential Services Performance Objectives Respond to user help/trouble tickets in a timely fashion PWS Para 1.1.5 Performance Threshold Acceptable response and resolution times are base upon Ticket priority as follows: Critical ­ (Immediate response with 2 hour restoration objective) Base wide outage Entire building outage SIPRNET ­ circuit/trunk or any core equipment outage Any WR-ALC Senior Staff network issue High ­ (2 duty hours response with 8 duty hours restoration objective) Any GM-15/O-6 or above "at work" problem Any AUTODIN outage Application Server (i.e. DMAPS, T.O., etc.) connectivity Any external circuit SIPRNET ­ all other SIPRNET issues Medium ­ (4 duty hours response with 2 duty days restoration objective) HomeNet (connectivity to VIP houses) Loss of connectivity/services for 1 workstation Recurring intermittent connectivity (for monitoring purposes) Low ­ (8 duty hours response with 8 duty days restoration objective) Network drop activation Any Remote Access Server Client issue (password reset, account creation, etc.) Perform Configuration Management NOTAMS and TCNO Compliance 1.0 Configuration changes updated within 10 business days. Compliance with all NOTAMS and TCNO's, or other DoD Directives will be met prior to the due date. If Compliance cannot be accomplished prior to due date, a Plan of Action and Milestones (POA&M) will be
+Page 17 of 10
+
+1.1.10
+
+ 
+
+ 
+
+completed and submitted prior to due date.
+
+System Uptime Availability Mishap Notification and Reporting
+
+1.1.18
+
+99.5% uptime of all managed systems.
+
+4.8.2
+
+No more than one instance of late mishap notification per year
+
+4.8.4 Conduct acceptable Contractor Safety Program No more than two Class C mishaps per contract year. Zero Class A or B mishaps
+
+ 
+
+Page 18 of 10
+
+

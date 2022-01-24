@@ -1,0 +1,426 @@
+
+
+BACKGROUND
+
+
+The core mission of the National Centers for Environmental Prediction is to save lives and protect property through the provision of weather analysis, forecasts, watches and warnings involving a wide range of atmospheric systems affecting the  and the surrounding oceans.  NCEP is part of the National Weather Service.  NCEP is composed of the following Service Centers: 
+
+(1)    (AWC)
+
+(2)    (CPC)
+
+(3)   Environmental  (EMC)
+
+(4)   Hydrometeorological  (HPC)
+
+(5)   NCEP Central Operations (NCO)	
+
+(6)    (OPC)
+
+(7)    (NHC)
+
+(8)   Space Weather Prediction Center (SWPC)
+
+(9)    (SPC) 
+
+Currently, AWC, SPC, NHC, and HPC receive WSR-88D data (mosaic imagery/products and single site imagery/products) from a vendor and single site imagery/products from NOAAport.  These Service Centers display the radar data using the National-Advanced Weather Interactive Processing System (N-AWIPS) software after the radar data are retrieved from the vendor’s system located at each .  In addition, radar data are displayed on a stand-alone government workstation which has vendor provided software, capable of acquiring and displaying single site imagery or mosaics.  
+
+
+
+NCEP meteorologists perform a more complete 'meteorological watch' using the many radars and National Mosaic products provided in real-time under the existing NCEP radar data contract.  
+
+
+OBJECTIVE
+
+
+The objective of this contract is to make the following types of radar data available to Government systems at each participating :
+
+
+National-scale, high resolution radar mosaics.  See section 3.10 for additional details.
+
+WSR-88D Product Data, including Dual Polarization (Dual Pol) fields as they come on line, and Terminal Doppler Weather Radar (TDWR) Product Data collected from the Radar Product Central Collection Dissemination Service (RPCCDS) / NOAAPORT to be a minimum of those data in section 3.10 except when a product is not created from the TDWR.         
+
+
+ACRONYMS 
+
+
+The following acronyms are used in this document:
+
+
+AP		Anomalous Propagation 
+
+AVSET	Automated Volume Scan Evaluation and Termination 
+
+AWC	 
+
+AWIPS-II	Advanced Weather Interactive Processing System II
+
+COTR	Contracting Officer’s Technical Representative 
+
+CPC		 
+
+EMC	Environmental Modeling Center
+
+FAA		Federal Aviation Administration
+
+FIPS	Federal Information Processing Standards
+
+FTP		File Transfer Protocol
+
+HPC	Hydrometeorological  
+
+IF		Intermediate Frequency
+
+LAN	Local Area Network
+
+NCO	NCEP Central Operations
+
+NCEP	National Centers for Environmental Prediction
+
+NFS		Network File System
+
+NIST	National Institute of Standards and Technology
+
+NOAA	National Oceanic and Atmospheric Administration
+
+NWS	National Weather Service
+
+N-AWIPS	National Advanced Weather Interactive Processing System
+
+NHC	
+
+OPC	 
+
+RF		Radio Frequency
+
+RPCCDS	Radar Product Central Collection Dissemination Service 
+
+SCP		Secure Copy
+
+SFTP	Secure File Transfer Protocol
+
+SPC		
+
+SWPC 	 
+
+TCP/IP	Transmission Control Protocol/Internet Protocol 
+
+TDWR	Terminal Doppler Weather Radar
+
+WSR-88D	Weather Surveillance Radars -1988, Doppler
+
+
+SCOPE
+
+
+NCEP’s Service Centers AWC, SPC, NHC, and HPC require access to real-time radar data sets to perform their respective missions, specifically, using data from the nationwide Weather Surveillance Radar-1988 Doppler (WSR-88D) network and from the FAA’s Terminal Doppler Weather Radar (TDWR) network.  
+
+
+STATEMENT OF WORK
+
+
+
+The contractor shall furnish the necessary personnel, material, equipment, services and facilities (except as otherwise specified), to perform the following Statement of Work/Specifications.
+
+
+NCEP Service Centers must have the ability to acquire and display, simultaneously, real-time data from WSR-88Ds in all 50 states.  The NCEP Service Centers are migrating from N-AWIPS hardware/software to the Advanced Weather Interactive Processing System II (AWIPS-II) and the radar data received from this contract will need to be used in the new system.  A critical requirement of the NCEP Service Centers is to be able to access in real time national radar mosaic products.  
+
+
+RADAR DATA
+
+
+The contractor shall provide real-time data from WSR-88Ds in all 50 states.
+
+The data shall be in a format compatible with N-AWIPS and AWIPS-II.
+
+The contractor shall provide a solution that is capable of providing 99.9% data availability per year.  The high data availability solution is required to ensure that data are available during significant weather events such as landfalling hurricanes and severe weather outbreaks.
+
+The data shall be ingested automatically without human intervention.
+
+The storage of the data shall be for at least 20 most recent data periods per site on the solution.  
+  
+
+TECHNICAL SUPPORT
+
+
+The contractor shall provide 24-hour per day customer support to solve data acquisition, software and hardware problems with a 2-hour (support personnel) response time after a trouble ticket is opened.
+
+The contractor shall provide a fully capable support staff providing responsive assistance to Government personnel in an event of data quality problems, data flow problems, or other questions about data formats, etc., that may arise.  A direct Government to Contractor customer support relationship is required when data acquisition problems occur or the quality of data received is in question.
+
+
+SOLUTION
+
+
+The contractor shall provide a solution with a backup data acquisition source if the primary data acquisition source such as a satellite data ingest at a Government site is down. 
+
+The backup acquisition source shall be functional and available to Government personnel to activate in the event of a primary data source outage. This activation may involve Government computers accessing a contractor’s server (e.g. FTP/SFTP/SCP over the Internet) at the contractor’s site.
+
+If the Contractor’s chooses to implement a solution which requires component installation at the Government sites, the solution shall provide dual copper gigabit Ethernet interfaces (1000 BaseT) for Government Local Area Network (LAN)/Private LAN connection.
+
+If the Contractor’s chooses to implement a solution which requires components installation at the Government sites, the Contractor’s solution located at the Government sites shall provide Network File System (NFS) version 3 and http access to allow Government computers access to the solution to obtain radar data.
+
+The contractor shall provide a solution capable of acquiring standard unaltered WSR-88D and TDWR Product Data in real time and in the various scan modes such as precipitation mode, including Automated Volume Scan Evaluation and Termination (AVSET) when used, clear air mode, and in Dual Pol data mode when it begins to be distributed. 
+
+The contractor shall provide a solution capable of acquiring high resolution, national-scale mosaics of reflectivity and other value-added mosaics. 
+
+If the contractor chooses to implement a solution that requires installation of components at the Service Centers, then each Service Center shall ingest data within 60 seconds, both to the contractor’s application software as well as to Government computer systems accessing the radar data.  The latency for data ingest shall not exceed 60 seconds from the time radar data become available from either NOAAPORT or the RPCCDS to the contractor until the data can be processed and made available to the Government computer systems for display.
+
+The contractor solution shall be capable of acquiring any combination or subset of standard, unaltered WSR-88D/TDWR product data from RPCCDS/NOAAPORT in real-time, where the minimum products are listed in section 3.10.  
+
+The contactor solution shall provide for methods of specifying which data sets should be routinely ingested, what product types, and into which storage locations.
+
+The contractor solution shall include a display to allow the Government staff to ensure the system is acquiring data correctly.  In other words, the solution shall have a quick look display capability to monitor data acquisition and processing.
+
+The contractor solution shall have an application display which will allow a forecaster to select products from WSR-88D/TDWR sites, or mosaics, stored on the contractor’s server system.
+
+The display shall allow a forecaster to select the WSR-88D sites or products to be acquired by the solution.
+
+The contractor solution shall be capable of acting as a server for making acquired data sets available to Government systems via each 's Local Area Network (LAN) utilizing TCP/IP protocol (Ethernet).  
+
+The contractor solution shall have the ability to provide real time Product Arrival Notification (event driven notifications) over the TCP/IP to facilitate the timely distribution of radar data to other Government systems from the vendor solution.  
+
+
+IT SECURITY
+
+In order to maintain a consistent security posture, the Contractor shall be required to provide an operating system (OS) that is secure, robust, and can be updated with the latest security patches and fixes.
+
+The contractor’s solutions shall be maintained in accordance with Federal Information Processing Standards (FIPS) 200 and NIST Special Publication (SP) 800-37 Rev 1.
+
+The contractor shall certify and approve, within 72 hours (beginning during regularly scheduled business hours), all vendor operating system patches and distribute any contractor updates within the same time period to the Government sites and designated Government contacts.  This includes testing and ensuring patches do not degrade the performance of the solution.
+
+The patch information shall also be provided to the Contracting Officer’s Technical Representative (COTR) and to designated Government Points-of-Contact at each .
+
+DOCUMENTATION
+
+The contractor shall provide one complete paper set of operational manuals available at each site and an electronic copy.  
+
+Manuals shall specify all setup functions necessary to operate the solution, and any routine procedures required by the solution.
+
+Manuals shall include trouble-shooting procedures to speed up solutions to common problems.
+
+Manuals shall include basic theory of operations, program logic flow, file structure descriptions, program documentation, development procedures and troubleshooting procedures.
+
+Manuals shall include documentation on the solution shall also include a block diagram of the hardware involved e.g. from a feed horn all the way to the workstation.
+
+Manuals shall include information on all frequencies from the RF (Radio Frequency) side down to the IF (Intermediate Frequency).
+
+
+ACCEPTANCE TESTING & SOLUTION CHECKOUT
+
+The contractor shall assist the Government in the checkout of the solutions with the on-site consultation and diagnostic service.  
+
+The solutions proposed shall be delivered separately to each site.
+
+The contractor shall work in concert with the Government to develop and execute plans for transitioning data feeds from the current vendor’s systems to the new solutions within 90-days of contract award.
+
+The contractor shall be able to adhere to Government’s transition schedule.
+
+
+EQUIPMENT MAINTENANCE
+
+The contractor shall be responsible for disposal of any extra materials during or after equipment maintenance, repairs, and other related work activities at a Government facility.  This shall include the disposal of damaged equipment that is subsequently replaced, e.g. damaged spider arms for a satellite dish, satellite dish, and mounting brackets, etc., within 2 business days.
+
+
+REPORTING
+
+The contractor shall submit to the Government a progress report every 10th day of each month after the effective date of the contract during the period of performance.  The contractor shall deliver progress reports that summarize the work completed during the performance period, the work forecast for the following period.  The report shall also include any additional information--including findings and recommendations -- that may assist the Government in evaluating progress under this contract. The first report shall include a detailed work outline of the project and the contractor’s planned phasing of work by reporting period. 
+
+The monthly report shall include data/service availability details and address the performance standards listed in Section 8.  
+
+
+TRAINING
+
+In conjunction with the installation and checkout of the solutions at each Service Center, the Contractor shall provide one (1) to three (3) days of on site training in integrating the various solutions into the present site environment, an operational environment, in the least disruptive manner possible.  
+
+This training shall be for two (2) to four (4) Government personnel at each Service .
+
+
+RADAR DATA PRODUCTS SPECIFICATIONS
+
+The Contractor shall supply mosaic reflectivity data products to participating Service Centers.  Three different geographical mosaic areas are required: a mosaic of radar imagery across the lower 48 contiguous , a mosaic of radar imagery across , and a mosaic of radar imagery across .  The mosaics shall have the following specifications:
+
+Mosaics of reflectivity shall be composed of data gathered from all commissioned WSR-88D and TDWR units located within the covered area.  
+
+Mosaics of reflectivity shall consist of radar data having valid times differing by no more than six (6) minutes.
+
+Mosaics of reflectivity shall be updated at a frequency that assures mosaic data residing at a participating Center to be composed of data not more than ten (10) minutes old.  If one or more WSR-88Ds/TDWRs are not generating radar data, mosaic imagery should continue to be produced.
+
+At a minimum, two mosaics of reflectivity shall be provided, one containing a horizontal resolution of two (2) kilometers and the second containing a horizontal resolution of one (1) kilometer.  Horizontal discontinuities shall be less than one (1) pixel.
+
+Mosaics of reflectivity shall contain 256 reflectivity data levels (i.e. from the 8-bit single site products) 
+
+Automated techniques and human intervention techniques shall be utilized when necessary to assure that mosaics of reflectivity do not contain excessive ground clutter and anomalous propagation (AP) caused by reflections from the ground, buildings, geographical and atmospheric features.  As Dual Pol radars become operational throughout the NWS, suppression of biological clutter (e.g. birds, bugs) shall also be included.
+
+The WSR-88D National Composite Mosaic Products shall include three different geographical mosaic areas (lower 48 states, , and ).  When 8-bit single site data is available then mosaics shall be 8-bit; when only 4-bit single site data is available then mosaics shall be 4-bit.  The horizontal resolution shall be at the highest possible level based on the level-III single site data product.
+
+A national-scale mosaic of Vertically Integrated Liquid (VIL) product with a horizontal resolution of four (4) kilometers.
+
+A national-scale mosaic of low dbz non-filtered (Clear Air Mode) reflectivity product, as well as a national-scale mosaic of non-filtered (Precipitation Mode) reflectivity. 
+
+Other National Composite mosaic products shall include Composite Reflectivity, Cumulative Rainfall (hourly, storm and daily) Totals and Echo Tops products with a horizontal resolution of four (4) kilometers.
+
+Examples include: mosaic of Mesocyclones (141/md) (e.g. color coded by mesocyclone strength index), mosaic of Tornado Vortex Signature (61/tvs) (e.g. color-coded by either low-level or maximum delta velocity [LLDV, MDF]), mosaic of Hail Index (59/hi), mosaic of Storm Tracking Information (58/sti) (e.g. extrapolated forward 60 minutes where tracks could be color-coded by storm speed).
+
+When Dual Pol Data are operational, high resolution mosaic base reflectivity at 1km horizontal resolution, and if available, composite reflectivity at 1km horizontal resolution.
+
+The contractor shall supply unaltered WSR-88D and TDWR product data to participating Service Centers with the following specifications along with RPG headers:
+
+Base Reflectivity (BR) at RPG HEADER:  20/R, 94/DR, 181/R, 186/DR
+
+Composite Reflectivity (CR) & the Combined Attribute Table at RPG HEADER:  37/CR
+
+Echo Tops (ET) at RPG HEADER:  41/ET
+
+Vertically Integrated Liquid (VIL) at RPG HEADER:  57/VIL
+
+Base Radial Velocity (BRV) at RPG HEADER:  99/DV, 182/DV
+
+The Storm Relative Mean Radial Velocity Map (SRM) at RPG HEADER:  56/SRM
+
+Velocity Azimuth Display (VAD) WInd Profile (VWP) at RPG HEADER:  48/VWP
+
+One Hour Total Precipitation (OHP) at RPG HEADER:  78/OHP
+
+Three Hour Total Precipitation (THP) at RPG HEADER:  79/THP
+
+Storm Total Precipitation (STP) at RPG HEADER:  80/STP
+
+Digital Precipitation Array (DPA) at RPG HEADER: 81/DPA
+
+Dual Polarization Data, when operational, at:
+
+Correlation Coefficient (CC)
+
+Differential Reflectivity (ZDR)
+
+Specific Differential Phase Shift (KDP)
+
+Dual Pol Precipitation Rate (DPR)
+
+Base Reflectivity for Horizontal Polarization (ZH)
+
+The WMO headers for the above mentioned products can be found at http://www.nws.noaa.gov/tg/noaaport_radar_products.pdf.  Also, some products may only be available from the Radar Product Central Collection Dissemination Service (RPCCDS).
+
+
+
+GENERAL INFORMATION
+
+PERIOD OF PERFORMANCE
+
+The period of performance for this SOW is as follows
+
+Base Period – 06/15/11 – 06/14/12
+
+Option Year 1 – 06/15/12 – 06/14/13
+
+Option Year 2 – 06/15/13 – 06/14/14
+
+Option Year 3 – 06/15/14 – 06/14/15
+
+Option Year 4 – 06/15/15 – 06/14/16
+
+SECURITY CONSIDERATIONS
+
+The contractor shall meet security requirements listed in Section 3.4.
+
+TASK ORDER/CONTRACT TRANSITION
+
+The contractor shall meet contract transition requirements listed in Section 3.6.
+
+QUALITY CONTROL
+
+The contractor provided radar data shall meet specification listed in Section 3.10.
+
+
+
+
+
+
+
+
+
+GOVERNMENT FURNISHED RESOURCES
+
+NCEP will provide access to physical space in its Service Centers for equipment installation if needed for the proposed solution.
+
+
+DELIVERABLES AND PERFORMANCE REQUIREMENTS SUMMARY
+
+
+
+
+
+
+
+
+Performance Objective
+
+Performance Standard
+
+Method of Performance Assessment
+
+Deliverable
+
+Radar mosaic and single site imagery are available for ingest at NCEP Service Centers
+
+99.9% data availability per year
+
+Review of the monthly report
+
+Monthly Report
+
+Technical support is provided on a 24 hour per day basis
+
+Response to support calls is provided within 2 hours of the call
+
+Review of the monthly report
+
+Monthly Report
+
+Solution is capable of ingesting radar data 
+
+Radar data is ingested within 60-seconds from the time it is available 
+
+Solution performance at each 
+
+Radar Data
+
+Patches are applied to the solution to maintain IT security standards
+
+Patches are applied within 72 hours 
+
+Patching activity identified in the monthly report
+
+Security Patches
+
+Operational manuals  are provided
+
+Paper and electronic operational manuals are provided within 5-business days of solution implementation
+
+Review of the monthly report
+
+Monthly report
+
+Operational data feeds are transitioned from current system to new solution
+
+Operational data feeds are transitioned from current system to new solution within 90-days of contract award
+
+Review of the monthly report
+
+Radar data ingest feeds
+
+Extra materials are removed after maintenance and repair work from Service Centers
+
+Extra materials are removed after maintenance and repair work from Service Centers within 2 business days
+
+Random site inspection by COTR or designee
+
+Clean Site
+
+Monthly report is delivered to COTR
+
+Monthly report is delivered to COTR on the 10th day of each month
+
+Verification of delivery date of monthly report
+
+Monthly Report

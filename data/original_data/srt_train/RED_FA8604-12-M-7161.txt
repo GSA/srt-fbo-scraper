@@ -1,0 +1,129 @@
+Specifications for Data Acquisition System
+
+
+
+The Air Force Packaging Technology & Engineering Facility (AFPTEF) requires a single-unit 8-channel Data Acquisition System (DAS) to be used for container, item and cushioning testing.  System shall combine all required computer and data acquisition hardware, computer & data acquisition/analysis software, display screen, and data entry capabilities into one portable, ruggedized unit for field and laboratory use.  Unit shall be able to withstand multiple transports & handlings without damage or diminished calibration.  Unit shall weigh less than 35 pounds.  The DAS shall consist of the following minimal requirements:
+
+
+
+I.  Full-featured PC & input hardware with the following minimum requirements: 
+
+	1.  3 GB RAM.
+
+		2.  Two hard-drives shall be provided, (one primarily for the operating system and one primarily for data storage), in one of the following configurations: 
+
+		a.  Two 320 GB hard-drives, or
+
+		b.  A single 320 GB (or greater) partitioned hard-drive, or
+
+			c.  A removable hard drive with capacity of at least 320 GB for data storage; an internal 			solid-state hard drive of at least 60 GB for system operations.
+
+	2.  One CD-RW/DVD drive.
+
+	3.  Three USB 2.0 ports.
+
+	4.  One standard printer port.
+
+	5.  A 15-inch touch-screen video display (no keyboard or mouse required to operate system); if video display is not a touch-screen, an integral keyboard and touchpad (that can be covered when not in use) shall be provided.
+
+	6.  Additional VGA video output for connection to second monitor.
+
+	7.  Additional keyboard and mouse ports.
+
+	8.  Eight data acquisition input channels (in plug-in modules) of 24-bit analog to digital converters (ADC).  Each channel shall have a dedicated ADC.  Each channel shall support IEPE/ICP  uni- & tri- axial TEDS accelerometers (transducers) for recording shock and vibration.  IEPE supply current with settings appropriate for use with AFPTEF accelerometers shall be supplied by each channel.
+
+	9.  All required signal conditioning shall be provided for input modules, including a 0.16 Hz high pass filter.
+
+	10.  Each channel shall have an analog anti-aliasing filter, prior to signal digitization to eliminate the possibility of aliasing.
+
+	11.  The system shall have a usable bandwidth of at least 70 KHz for all 8 channels.
+
+	12.  The system slew rate shall be, at a minimum, 2 V/microsecond.
+
+	13.  System shall be upgradeable to at least 16 input channels by use of additional user-installable plug-in modules.  
+
+	14.  System shall be capable of using other instrumentation types (charge-mode accelerometers, strain gauges, thermocouples, and pressure transducers) through manufacturer-supplied add-on modules. 
+
+	15.  System shall be capable of recording data from a video camera capable of 70 frames per sec to 250 frames per sec capture rate, and synchronize the video data with simultaneously collected sensor data.  Real-time and post-test operation shall be capable of showing the video and shock/vibration data from the transducer on the same screen with the data synchronized.  The post test data viewing shall provide a capability to slow the data stream down to view both video and data in slow motion with a variable speed adjustment. The system shall permit video data input through either a USB port, or an add-on module.
+
+	16.  Gross system weight shall be less than 35 pounds, and shall include a sturdy carrying handle.
+
+	17.   System shall run off of 110/120 volts AC; if an additional battery power is supplied, the AC power can run through the battery.
+
+	18.  System shall include an internal battery and a power conditioner capable of maintaining unit function for a minimum of 5 minutes to permit system shutdown and prevent data loss, and eliminate need for power backup/conditioner in remote locations.
+
+	19.  Operating temperature:  5°C to 45°C (41°F to 113°F).
+
+	20.  Operating relative humidity:  10% to 90% non-condensing.
+
+	21.  All electronics shall be throughput calibrated traceable to NIST, better than 1.5% full scale.
+
+	22.  System shall include all instruction manuals, cables, manufacturer calibration certificates/data and calibration verification instructions.
+
+	23.  System shall not require yearly calibration under normal use.
+
+	24.  System shall operate using Microsoft Windows 7.
+
+	25.  Annual calibration verification shall be performable by the Air Force Metrology & Calibration (AFMETCAL) unit located at WPAFB using standard Fluke multimeters and common materials.
+
+
+
+II.  DAS system/software shall provide the following minimum features and functions:
+
+	1.   DAS system software shall be Microsoft Windows-based, and shall include the latest version of Windows with which the DAS software can function.
+
+	2.   DAS software shall be usable on at least one (preferably two) additional computers without additional licensing.  A backup copy of all software shall be provided, in case of system loss; backup may be provided in any format (separate copy, copies in use on other computer(s), etc.).
+
+	3.  DAS software shall be capable of recording shock, vibration, temperature, pressure, and strain.
+
+	4.  DAS software shall support transducers with TEDS capability.  A system/software which can both read from and write to TEDS transducers is preferred.
+
+	5.  Software shall permit triggering (recording) from any active channel which exceeds user-defined threshold values.
+
+	6.  Software shall include 4 triggered recording base modes: single event, continuous, streamed recording & short memory.
+
+	7.  System shall perform sampling on all active channels when the trigger threshold is reached on any one channel, and ensure that data on all channels is synchronized.
+
+	8.  System shall perform real-time tri-axial resolution of shock/impact data recorded from any 3 channels, and shall present a resultant waveform that can be analyzed in the same manner as the waveform/data from the three recorded channels.
+
+	9.  System shall identify specified shock values recorded on any channel and automatically save this user-defined data (no hand copying or transfer to another computer required) without testing disruption into an exportable table in a standard format; these functions shall not require exiting recording mode to perform.  For example, the peak value from a wave form can be saved, either automatically or by simple drag-and-drop, into an exportable table in numerous formats such as Excel, comma-separated-value (CSV), or ASCII (as examples).
+
+	10.  Data analysis shall be possible interactively (not require exit from recording mode to perform).
+
+	11.  System shall provide trace shift & zoom, and variable waveform expansion.
+
+	12.  System shall be capable of performing deflection calculations and display.
+
+	13.  System shall provide selectable software filters (including, but not limited to, Butterworth and Chebyshev) for use in non-destructive post-processing data filtering (so that the original unfiltered data is not lost).  Users shall be able to optimize filtering for both time-domain (transient) and frequency-domain (spectral) data depending on test requirements.
+
+	14.  Software shall allow for the creation of additional user-defined functions/scripts for real-time data analysis (for all channels) and export into standard formats (e.g. Excel, CSV, ASCII), and all forms of data display shall be exportable into other Windows-based software (e.g. Excel, Word, PowerPoint).
+
+	15.  Software shall include math functions (macros) for arithmetic, statistics, calculus, FFT and spectral analysis (SRS).
+
+	16.  Macros shall be open-source software or DLL to permit use with other Windows-based software (e.g., Excel) and data analysis programs.
+
+	17.  Software shall allow creation of user-defined test report tags/labels on waveforms and other data displays.
+
+	18.  Wave form analysis shall be possible interactively without disruption of data acquisition.
+
+	
+
+III.  The DAS support shall include:
+
+	1.  System purchase shall include full software upgrades, and any hardware upgrades necessary for these, for 12 months.  
+
+	2.  Initial technical support shall consist of one day on-site (AFPTEF) training for 2 engineers and shall be directly oriented toward typical AFPTEF data acquisition uses.  Training shall include initial system set-up, software use, and service requirements; training shall also be provided at that time, for WPAFB PMEL personnel, if needed to perform system calibration verification.
+
+	3.   On-going technical support (e.g., assistance with trouble-shooting and setting up new/modified system functions using existing software) shall be free for the life of the system.  A user support phone service shall be provided.  On-going technical support shall also be provided to WPAFB PMEL personnel if needed. 
+
+	4.   At least one full hard-copy set of manuals shall be provided; at least one full digital version of the manuals shall also be provided.
+
+	5.  Procedures to have the system calibration, or calibration verification, shall be provided in detail.  Pricing for system calibration (not verification) shall be provided.
+
+	6.  A NIST traceable system calibration certificate shall be provided.
+
+	7.  Full warranty of all hardware & software for 12 months.  Warranty shall be renewable yearly, and pricing for this renewal shall be provided.
+
+
+
+IV.  A rugged, protective, hard-shell transport case with interior cushioning, wheels, and retractable handle, shall be provided for safely transporting the DAS unit to remote locations and general storage.  Cushioning materials used in the case shall not adhere to the unit over time, break down into dust that can enter and damage the unit, or the materials shall be isolated by use of a puncture-resistant liner, bag, or other method from the unit.

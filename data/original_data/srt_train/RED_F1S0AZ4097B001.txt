@@ -1,0 +1,168 @@
+RAILSS Requirements Document  
+
+RFID/RAILLS Requirements Documents 1.0 Electronic Hardware 1.1 RFID Reader 1.1.1 Radio Specifications Maximum Power output ­ 30dBm or greater Receive Sensitivity ­ -82dBm or less Air Protocol ­ EPC UHF Class 1 Gen 2 / ISO 18000-6C Frequency ­ 902 MHz to 928 MHz Regulatory Compliance ­ US, FCC Part 15
+
+Connectivity Antenna Ports ­ 4 or more Network Connectivity ­ 10/100 Base-T Ethernet (RJ-45) USB ­ 1.1 Device (Type B) and Host (Type A) ports General Purpose I/O (GPIO) ­ inputs and outputs, 4 or more each optically isolated Antenna hub available ­ Yes, ability to expand to 32 antennas Management Console ­ RS-232 (DB-9 to RJ-45) 1.1.3 Networking & Interfaces IP Addressing ­ DHCP & Static Time Synchronization ­ NTP Application Interface ­ Low Level Reader Protocol (LLRP) v1.0.1 or SDK ­ .NET 1.1.4 Power Supply Power over Ethernet ­ Required, (PoE) IEEE 802.2af Universal Power Supply ­ 24 VDC Physical/Operating Characteristics Environmental Sealing ­ IEC IP52 or better
+
+1.1.2
+
+newer
+
+1.1.5
+
+1.2
+
+Antenna 1.2.1 RF Power Front to back ratio ­ 20dB or greater Gain ­ 8.5dBi or greater Maximum Input Power ­ 10W or greater Maximum VSWR ­ 1.3:1 or lower 1.2.2 Connectivity Input impedance - 50 
+F1S0AZ4070B001 Attachment 2 Page 1 of 6 
+
+ 
+
+RAILSS Requirements Document  
+
+Connector type ­ BNC or SMA 1.2.3 Physical Characteristics Mount type ­ VESA 1.3 Antenna Hub 1.3.1 Power Supply Voltage ­ 5V Power consumption ­ 80mW max or less
+
+1.3.2 RF Power Insertion Loss ­ 1.3dBi or less Maximum Input Power ­ 34dBm or greater 1.3.3 Connectivity RF Input ­ SMA female RF Output ­ 8 or more SMA female Digital I/O ­ RJ45 Handheld RFID Reader Radio Specifications Power output ­ 4W or greater Frequency ­ 902 MHz to 928 MHz Regulatory Compliance ­ US, FCC Part 15 Networking & Interfaces Programming ­ API available Wireless connectivity (Wi-Fi, Bluetooth, etc.) ­ Must be capable of being
+
+1.4
+
+1.4.1
+
+1.4.2 disabled
+
+1.5
+
+1.4.3 Physical Characteristics Environmental Sealing ­ IEC IP 64 or better GPIO Hub Controller 1.3.1 Power Supply Voltage ­ 5V Power consumption ­ 20mW max or less
+
+1.6
+
+Connectivity GPIO Input ­ HD-15 Digital I/O ­ RJ45 x 4 Network Switch 1.6.1 Ports RJ45 ­ At least 24 or 48 Speed ­ 10/100 or faster
+F1S0AZ4070B001 Attachment 2 Page 2 of 6 
+
+1.3.2
+
+ 
+
+RAILSS Requirements Document  
+
+1.7
+
+Power Over Ethernet (POE) Ports ­ At least 24 POE ports Max Power ­ At least 15W Total power dedicated to POE ­ At least 180W Scan-Count Display 1.7.1 Display Type ­ LCD or three (3) x seven-segment displays, attachable via GPIO Viewable Size ­ One (1) inch tall or greater 1.7.3 Connectivity GPIO ­ 30 or more pins Ethernet ­ 1 x RJ45 RFID Label Writer/Printer Print Capability Maximum Print Width ­ 104mm or greater Printing Speed ­ 100mm/s or greater Print Resolution ­ 300dpi or greater Bar Codes ­ All major 1D and 2D symbologies Connectivity Interface to Host PC ­ Ethernet and/or USB
+
+1.6.2
+
+1.8
+
+1.8.1
+
+1.8.2 1.8.3 1.9
+
+RFID Write Capability Coding Standard ­ EPC Gen 2 (ISO 18000-06C) Frequency Range ­ 902MHz to 928MHz or wider Server Computer 1.9.1 CPU Clock Speed ­ 2.0GHz or greater Processor ­ One or Two Cores per Processor ­ Four or greater
+
+1.9.2 RAM DIMM Slots ­ 4 or more Quantity ­ 2 DIMMs Capacity ­ A total of 8GB or more Type ­ DDR3 Clock Speed ­ 1333 MHz or greater 1.9.3 Hard Disk RAID Level ­ 1 or 10 Capacity ­ 1 TB usable Network Connectivity Ports ­ One or more Ethernet ports
+F1S0AZ4070B001 Attachment 2 Page 3 of 6   
+
+1.9.4
+
+RAILSS Requirements Document  
+
+Data throughput ­ 1Gbs or greater 1.9.5 Physical Characteristics Height ­ 5U rack height or less Form ­ Tower (preferred) or rack mountable 1.9.6 Misc. Operating System ­ Windows Server 2008 or newer 2.0 Other Hardware 2.1 Antenna Wall Mount 2.1.1 Physical Characteristics Antenna hole pattern ­ VESA standard Position ­ Tool-less adjustment Arm length ­ Four (4) or six (6) inches Ethernet Cable 2.2.1 Physical Characteristics Conductors ­ Eight solid twisted pairs Category ­ 5 or 6 Misc. - Shielded RJ-45 Connector 2.3.1 Physical Characteristics Category ­ 5 or 6, must be same as Ethernet cable LMR 400 Cable 2.4.1 Physical Characteristics Center Conductor ­ Solid Electrical Characteristics Impedance ­ 50  Loss ­ 3.9db/100ft @ 900MHz SMA Connector 2.5.1 Physical Characteristics Type ­ Male Polarity ­ Normal RP TNC Connector 2.6.1 Physical Characteristics Type ­ Male Polarity ­ Reverse 2.4.2
+
+2.2
+
+2.3
+
+2.4
+
+2.5
+
+2.6
+
+F1S0AZ4070B001 Attachment 2 Page 4 of 6   
+
+RAILSS Requirements Document  
+
+2.7
+
+BNC Connector 2.7.1 Physical Characteristics Type ­ Male Polarity ­ Normal
+
+3.0
+
+RFID Tags 3.1 Durable On-Metal 3.1.1 Mounting Environment ­ On-metal Method ­ Zip-tie(i.e. tether hole), adhesive, rivet/screw 3.1.2 Capability Read range ­ At least 6 feet 3.1.3 Radio Specification Frequency ­ 902 MHz to 928 MHz Air Protocol ­ EPC UHF Class 1 Gen 2 3.1.4 Physical Characteristics Dimensions ­ At most 2 in x 1.5 in x 0.375 in Material ­ Durable Thermoplastic, ABS, or Polycarbonate 3.2 Durable Near- or Off-metal 3.2.1 Mounting Environment ­Near- or Off-metal Method ­ Zip-tie(ie tether hole), adhesive, rivet/screw 3.2.2 Capability Read range ­ At least 6 feet 3.2.3 Radio Specification Frequency ­ 902 MHz to 928 MHz Air Protocol ­ EPC UHF Class 1 Gen 2 3.2.4 Physical Characteristics Dimensions ­ Approximately 1.50 in x 0.51 in x 0.15 in Material ­ Durable Thermoplastic, ABS, or Polycarbonate
+
+F1S0AZ4070B001 Attachment 2 Page 5 of 6   
+
+RAILSS Requirements Document  
+
+3.3
+
+Paper On-metal Label 3.3.1 Mounting Environment ­ On-metal Method ­ Adhesive 3.3.2 Capability Read range ­ At least 6 feet Printer Compatibility ­ Must be compatible with printer specified in 1.8 3.3.3 Radio Specification Frequency ­ 902 MHz to 928 MHz Air Protocol ­ EPC UHF Class 1 Gen 2 3.3.4 Physical Characteristics Dimensions ­2 in x 4 in Material ­ Paper
+
+3.4
+
+Paper Near- or Off-metal Label 3.4.1 Mounting Environment ­Near-metal, documents Method ­ Adhesive 3.4.2 Capability Read range ­ At least 6 feet Printer Compatibility ­ Must be compatible with printer specified in 1.8 3.4.3 Radio Specification Frequency ­ 902 MHz to 928 MHz Air Protocol ­ EPC UHF Class 1 Gen 2 3.4.4 Physical Characteristics Dimensions ­ 2 in x 4 in Material ­ Paper
+
+F1S0AZ4070B001 Attachment 2 Page 6 of 6   
+
+ 
+
+ 
+
+ 
+
+Ref: F1S0AZ4070B001   
+
+The solicitation number is F1S0AZ4070B001. This is a combined synopsis/solicitation for commercial items prepared IAW the format in FAR 12.6 as supplemented with additional information included in this notice. This announcement constitutes the only solicitation for this requirement. This is a request for quotation (RFQ). The solicitation document and incorporated provisions and clauses are those in effect through Federal Acquisition Circular FAC-2005-69 and DFARs Change Notice DPN-201300808 AFFARS Parts AFAC-2013 Baseline. Federal Supply Class/Service (FSC) code is 5999. NAICS is 334419 and the size standard is 500 employees. This acquisition is a 100% Small Business set-aside. Air Force Test Center (AFTC) Contracting Directorate, Edwards Air Force Base, CA is seeking to purchase the following supply: The 412 RANS/Software Engineering Squadron of Edwards AFB, CA has a requirement to purchase new ITEM Quantity 1.1 RFID Readers 60 1.2 Antennas 270 1.3 Antenna Hubs 20 1.4 Handheld RFID Readers 3 1.5 GPIO Hub Controllers 10 1.6 Network Switches 6 1.7 Scan-Count Displays 60 1.8 RFID Label Writer/Printer 1 1.9 Server Computer 1 2.1 Antenna Wall Mounts 270 2.2 Ethernet Cable (feet) 10,000 2.3 RJ-45 Connectors 300 2.4 LMR-400 Cable (feet) 10,000 2.5 SMA Connectors 120 2.6 RP-TNC Connectors 1,000 2.7 BNC Connectors 1,000 3.1 RFID Tags, Durable On-Metal 100 3.2 RFID Tags, Paper Near- or Off-Metal Label 5,000 3.3 RFID Tags, Durable Near- or Off-metal 100 3.4 RFID Tags, Paper On-Metal Label 1,000
+
+Please see the attached Requirements Document for further detail.
+
+Page 1 of 5
+
+ 
+
+ 
+
+ 
+
+Ref: F1S0AZ4070B001   
+
+The government will be evaluating quotes IAW FAR 52.212-2 -- Evaluation -Commercial Items (Jan 1999). The Government will award a contract resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation will be most advantageous to the Government, price and other factors considered. The following factors shall be used to evaluate offers: (i) (ii) Price technical capability of the item offered to meet the Government requirement;
+
+Only the Lowest Priced, Technically Acceptable (LPTA) offeror will be requested to provide the RFID/RAILSS Equipment. Award will be made to the LPTA offer that is most advantageous to the Government. Interested parties who believe they can meet all the requirements for the items described in this synopsis are invited to submit in writing a complete quote including delivery FOB destination (Edwards AFB, CA 93524). Offerors are required to submit with their quote enough information for the Government to evaluate the minimum requirements detailed in this synopsis. Offerors shall propose in accordance with the following CLIN structure: UNIT EXTENDED CLIN DESCRIPTION QTY PRICE PRICE RFID Reader 0001 Lot Equipment 0002 Antenna Wall Mount Ea. 0003 RFID Tags Lot 0004 Shipping Ea.
+
+Grand Total: Offerors are required to submit with their quote enough information for the Government to evaluate the minimum requirements detailed in this synopsis, including Cage Code, DUNS number; Prompt Payment Terms, date offer expires, and warranty information. No partial quotes for the items listed above will be accepted. FOB destination Edwards AFB CA 93524. Government Delivery Requirement: The Government requires all equipment to be delivered no later than 31 Dec 2013. If the above day cannot be met, contractors must provide an accurate and realistic delivery schedule.
+
+INTERESTED CONTRACTORS CAN ACCESS THE CLAUSES BY INTERNET URL: http://farsite.hill.af.mil. Page 2 of 5
+
+ 
+
+ 
+
+ 
+
+Ref: F1S0AZ4070B001   
+
+ONLINE REPRESENTATIONS AND CERTIFICATIONS APPLICATION (ORCA) MUST BE COMPLETED. USE OF ONLINE REPRESENTATIONS AND CERTIFICATIONS APPLICATION (ORCA) BECAME MANDATORY 1 JANUARY 2005. CONTRACTORS CAN ACCESS ORCA THROUGH BUSINESS PARTNERING NETWORK BY INTERNET URL www.sam.gov. TO REGISTER WITH SAM, GO TO URL: www.sam.gov. The following provisions and clauses apply: 52.212-1--Instructions to Offerors 52.212-2 ­ Evaluation ­ Commercial Items 52.252-02 -- Clauses Incorporated by Reference. This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at this/these address (es): http://farsite.hill.af.mil/vffara.htm http://farsite.hill.af.mil/vfdfara.htm http://farsite.hill.af.mil/vfaffara.htm 52.204-10 -- Reporting Executive Compensation and First-Tier Subcontract Awards 52.209-06 -- Protecting the Governments Interest When Subcontracting with Contractors Debarred, Suspended, or Proposed for Debarment. 52.212-04 -- Contract Terms and Conditions- Commercial Items. 52.222-03 -- Convict Labor 52.222-19 -- Child Labor---Cooperation with Authorities and Remedies. 52.222-21 -- Prohibition of Segregated Facilities. 52.222-22 ­Previous Contracts and Compliance Reports 52.222-26 -- Equal Opportunity 52.222-36 -- Affirmative Action for Workers with Disabilities. 52.222-35 -- Equal Opportunity for Veterans 52.222-37 -- Employment Reports on Veterans 52.222-50 -- Combating Trafficking in Persons 52.223-18 -- Encouraging Contractor Policies to Ban Text Messaging While Driving 52.225-03 -- Buy American Act -- North American Free Trade Agreement -- Israeli Trade Act Certificate Alternate I (Mar 2012). 52.225-13 -- Restrictions on Certain Foreign Purchases. 52.232-33 -- Payment by Electronic Funds Transfer--Central Contractor Registration. 52.212-05 -- Contract Terms and Conditions to Implement Statutes or Executive OrdersCommercial Items. - To include clauses above checked as appropriate 52.204-08 -- Annual Representations and Certifications. 52.212-03 -- Offeror Representations and Certifications-Commercial Items. 52.225-05 -- Trade Agreements. 52.225-06 -- Trade Agreements Certificate. Page 3 of 5
+
+ 
+
+ 
+
+ 
+
+Ref: F1S0AZ4070B001   
+
+52.252-01 -- Solicitation Provisions Incorporated by Reference. 252.203-7000 -- Requirements Relating to Compensation of Former DoD Officials. 252.203-7002 -- Requirement to Inform Employees of Whistleblower Rights 252.203-7005 -- Representation Relating to Compensation of Former DoD Officials. 252.204-7003 ­ Control of Government Personnel Work Product 252.204-7004 -- Central Contractor Registration (FEB 2013) 252.204-7008 -- Export-Controlled Items 252.209-7995 Representation by Corporations Regarding an Unpaid Delinquent Tax Liability or Felony Conviction under any Federal Law Provision ` The full text of provision DFARS 252.209-7995 is attached. 252.211-7003--UID (JUN 2013) 252.223-7008--Prohibition of Hexavalent Chromium (Jun 2013) 252.225-7001 -- Buy American Act and Balance of Payments Program 252.225-7002 -- Qualifying Country Sources as Subcontractors 252.232-7003 -- Electronic Submission of Payment Requests 252.232-7010 -- Levies on Contract Payments 252.243-7001 -- Pricing of Contract Modifications 252.247-7023 -- Transportation of Supplies by Sea 252.247-7023 -- Transportation of Supplies by Sea, ALTERNATE III (MAY 2002) 252.204-7006 -- Billing Instructions. (Contractor shall bill electronically in Wide Area Work Flow (WAWF) at https://wawf.eb.mil/. To Register as a Vendor in WAWF you will need to register your CAGE Code in WAWF by calling 1-866-618-5988. Take the training provided. For further assistance, you may call the WAWF Customer Support at 1-866-618-5988)" 5352.201-9101 -- Ombudsman Air Force Test Center Vice Commander, 1 South Rosamond Blvd, EAFB CA 935241185, PH 661-277-2810, FAX 661-275-7593 5352.223-9000 -- Elimination of Ozone 5352.242-9000 -- Base Access Offerors are instructed to complete the provision DFARS 2552.209-7995, as attached, IN FULL TEXT. This must be returned with the offeror's quote
+
+Offers are due at the Air Force Test Center Contracting Squadron, 5 South Wolfe Avenue, Building 2800, Edwards AFB, CA 93524, not later than 2 June 2014 at 5 pm PST. E-mail address: thania. guillen-alexander@us.af.mil Point of Contact: Thania Guillen-Alexander, Contract Specialist, Phone 661-277-2537, E-mail thania.guillen-alexander@us.af.mil Jeffory Mohan, Contracting Officer, Phone 661-277-8801, E-mail jeffory.mohan@us.af.mil Attachment(s): 1. Minimum Requirements Page 4 of 5
+
+ 
+
+ 
+
+ 
+
+Ref: F1S0AZ4070B001   
+
+Page 5 of 5
+
+

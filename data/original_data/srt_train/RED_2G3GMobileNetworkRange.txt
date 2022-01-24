@@ -1,0 +1,367 @@
+2G-3G Mobile Network Range Requirements
+
+INTRODUCTION
+
+The 2G-3G Mobile Network Range (Mobile Network Range) will be a testing environment for third party applications.  The subjects under test are the third party applications not the network.  The testing environment must be configurable to emulate a carrier network. Instrumentation will be placed at various access and core network interfaces to collect data on application performance so all core and access network interfaces must be accessible.
+
+
+
+The 2G-3G Mobile Network Range high level capabilities are shown below to provide a better understanding of the specific system requirements. The remaining sections of this document define the specific system requirements.
+
+
+
+The Mobile Network Range shall support, as a minimum, the following:
+
+Incorporates the entire GSM/UMTS architecture (BTS, MSC, SMSC, etc)
+
+Mobile Originated (MO) and Mobile Terminated (MT) Short Message (SMS)
+
+MO and MT Multi Media Messages (MMS)
+
+MO and MT voice calls
+
+Push to Talk over Cellular (PoC)
+
+Mobile email – Simple Mail Transfer Protocol (SMTP)
+
+Postpaid Mobile Station (MS)/User Equipment (UE)
+
+Prepaid Mobile Station (MS)/User Equipment (UE)
+
+Ability to simulate mobile roaming
+
+Ability to configure Core and Access Network parameters to support test cases
+
+Ability to monitor all interfaces with either external protocol tools, network monitor tools, or system logging
+
+Ability to monitor MS/UE messages and call logs
+
+ACCESS NETWORK
+
+ RF Requirements: 
+
+The Mobile Network Range shall operate in the UMTS 2100 MHz RF band.
+
+The Mobile Network Range shall operate in the GSM 900/1800 MHz RF bands.
+
+The Mobile Network Range shall provide a minimum of 1 RF carrier. 
+
+The Mobile Network Range shall be delivered with a multi-band omni-directional antenna covering the frequencies of the delivered system.
+
+The antenna shall have a gain not exceeding 10 dBi.  (We’ll be covering <1000 sq ft)
+
+The antenna shall use an N-type female connector.
+
+The antenna input power shall not exceed 200 Watts.
+
+The antenna input impedance shall not exceed 50 Ohms
+
+Access Technology: 
+
+The Mobile Network Range shall support 3GPP 2G, 2.5G, and 3G (minimum 3GPP Rel 6) capabilities.
+
+The Mobile Network Range shall provide General Packet Radio Service (GPRS)/ Enhanced Data Rates for GSM Evolution (EDGE) (2.5G).
+
+The Mobile Network Range shall provide Universal Mobile Telecommunications System (UMTS) service.
+
+The Mobile Network Range shall allow access to configure network parameters for network optimization and configuration.
+
+Upgrade and Evolution
+
+The Mobile Network Range shall be upgradeable to 4G technology (3GPP Release 9).
+
+The Mobile Network Range shall be designed to integrate CDMA Access technology (3GPP2) at a future upgrade.
+
+The Mobile Network Range shall be designed to integrate Wi-MAX access technology at a future upgrade.
+
+Interfaces
+
+All UMTS Access Network Interfaces (including Iub, IuCS, IuPS, IuR, etc) shall support IP.
+
+All GSM Access Network Interfaces (including Abis, A, Gb, etc) shall support IP and/or T1/E1.
+
+Performance and Monitoring
+
+The Mobile Network Range shall allow monitoring of all network interfaces.  NOTE:  This includes air interfaces and cabled network interfaces.  
+
+The Mobile Network Range shall support the broadcast of not less than 16 simultaneous SMS messages.
+
+The Mobile Network Range shall support the broadcast of not less than 16 simultaneous MMS messages.  
+
+The Mobile Network Range shall support not less than 16 simultaneous outbound voice calls.
+
+The Mobile Network Range shall support not less than 4 simultaneous inbound voice calls. 
+
+The Mobile Network Range shall support the required outbound and inbound voice calls simultaneously.
+
+The Mobile Network Range shall provide logging of each segment of the access network.
+
+The Mobile Network Range shall provide access to each segment of the access network to enable full call flow analysis, to include call setup, transmission, and tear down and timing.
+
+CORE NETWORK
+
+The Mobile Network Range core network may be implemented as a single core network that supports 3GPP 2G, 2.5G, and 3G, or may be implemented as two separate core networks, one for 2 & 2.5G and one for 3G.  
+
+Access Network Support
+
+The Mobile Network Range core network shall support 3GPP 2G, 2.5G, and 3G access technologies.
+
+The Mobile Network Range 3G core network shall be backward compatible with 2G and 2.5G.
+
+Features and Functionality
+
+The Mobile Network Range shall support the following functions and features:
+
+Managed voice mail
+
+Caller ID settings (e.g. displayed, hidden)
+
+Call Forwarding
+
+Call Ignore
+
+International Calling
+
+Conference Calling
+
+Call hold
+
+Call waiting
+
+Inbound/Outbound Call priority setting
+
+Push to Talk over Cellular (PoC)
+
+Mobile Email – SMTP
+
+Over The Air (OTA) Provisioning 
+
+Java enabled SIMs
+
+Non-Java enabled SIMs
+
+Messaging
+
+The Mobile Network Range shall support MO SMS.
+
+The Mobile Network Range shall support MT SMS. 
+
+The Mobile Network Range shall support Binary SMS.
+
+The Mobile Network Range shall support allow/prohibit Binary SMS.
+
+The Mobile Network Range shall support MO MMS. 
+
+The Mobile Network Range shall support MT MMS.
+
+The Mobile Network Range shall support WAP v 1.0.
+
+The Mobile Network Range shall support WAP v 2.0.
+
+The Mobile Network Range shall support Web Browser initiated SMS.
+
+The Mobile Network Range shall support Web Browser initiated MMS.
+
+HLR/VLR Functions
+
+The Mobile Network Range shall support full provisioning of not less than 25 subscribers.
+
+The Mobile Network Range shall support at least 100 simultaneous handsets registered with the network.
+
+Network Timing
+
+The Mobile Network Range shall provide network based timing to all mobile subscriber MS/UEs.
+
+The Mobile Network Range shall be capable of receiving external clocking.
+
+The Mobile Network Range shall be capable of producing internal clocking if an external clock source is not available
+
+The Mobile Network Range shall include a rubidium-based clock source compatible with the delivered system.
+
+The Mobile Network Range shall be capable of accepting Network Time Protocol (NTP) timing for any packet switched network segments.  
+
+Prepaid Services
+
+The Mobile Network Range shall provide a prepaid management system.
+
+The Mobile Network Range shall allow for provisioning of user account credit amounts.
+
+Performance and Monitoring
+
+The Mobile Network Range shall provide logging of each segment of the core network.
+
+The Mobile Network Range shall provide access to each segment of the core network to enable full call flow analysis, to include call setup, transmission, and tear down.
+
+Physical
+
+The Mobile Network Range access network components shall be delivered in a ruggedized rack mount case.
+
+The Mobile Network Range access network components plus ruggedized case lifting requirement shall not exceed those of a 2 man lift. . 
+
+The core network may be mounted in either a ruggedized rack mount case or may be designed for a fixed installation capable of remote trunking.
+
+.  
+
+SUPPORT EQUIPMENT
+
+The Mobile Network Range shall provide an instrumentation suite to analyze mobile subscriber MS/UEs.
+
+The Mobile Network Range shall provide voice call traffic generation.
+
+The Mobile Network Range shall provide SMS traffic generation.
+
+The Mobile Network Range shall provide MMS traffic generation.
+
+The Mobile Network Range traffic generation shall simulate not more than 100 active subscribers in any combination of voice, MMS or SMS.
+
+Miscellaneous equipment:
+
+The vendor shall deliver 5 each 6 ft RF cables that are compatible with the delivered system.
+
+The vendor shall deliver 5 each 10 ft RF cables that are compatible with the delivered system.
+
+The vendor shall deliver 3 each 50 ft antenna cables that are compatible with the delivered system.
+
+The vendor shall deliver 4 each 3 dB attenuators.
+
+The vendor shall deliver 4 each 10 dB attenuators.
+
+The vendor shall deliver 2 each 20 dB attenuators.
+
+The vendor shall deliver 2 each 30 dB attenuators.
+
+The vendor shall deliver 2 each 40 dB attenuator.
+
+The vendor shall deliver 2 signal splitters.
+
+The vendor shall deliver 5 each 6 ft RJ-48 unshielded twisted pair (UTP) cables.
+
+The vendor shall deliver 5 each 10 ft RJ-48 UTP cables.
+
+The vendor shall deliver 2 each 10 ft RJ-48 UTP cross-over cables.  NOTE:  Cables shall be labeled Crossover Cable.  
+
+Training
+
+The vendor shall provide training on the configuration of the network for up to four personnel.
+
+The vendor shall provide training on the operation of the network for up to four personnel.
+
+The vendor shall provide all training at the purchaser’s facility.
+
+Support
+
+The vendor shall provide remote technical support (8a-5p, Mon-Fri) via email and/or telephone for a period of at least one year with an option for renewal upon expiration.
+
+
+2G-3G Mobile Network Range  Solicitation Number: 
+Offeror Technical Evaluation Checklist Meets Requirement Fails Requirement Comments
+I INTRODUCTION
+The Mobile Network Range shall support, as a minimum, the following:
+II ACCESS NETWORK
+1.0 RF Requirements: 
+a The Mobile Network Range shall operate in the UMTS 2100 MHz RF band.
+b The Mobile Network Range shall operate in the GSM 900/1800 MHz RF bands.
+c The Mobile Network Range shall provide a minimum of 1 RF carrier. 
+d The Mobile Network Range shall be delivered with a multi-band omni-directional antenna covering the frequencies of the delivered system.
+e The antenna shall have a gain not exceeding 10 dBi.  (We’ll be covering <1000 sq ft)
+f The antenna shall use an N-type female connector.
+g The antenna input power shall not exceed 200 Watts.
+h The antenna input impedance shall not exceed 50 Ohms
+2.0 Access Technology: 
+a The Mobile Network Range shall support 3GPP 2G, 2.5G, and 3G (minimum 3GPP Rel 6) capabilities.
+b The Mobile Network Range shall provide General Packet Radio Service (GPRS)/ Enhanced Data Rates for GSM Evolution (EDGE) (2.5G).
+c The Mobile Network Range shall provide Universal Mobile Telecommunications System (UMTS) service.
+d The Mobile Network Range shall allow access to configure network parameters for network optimization and configuration.
+3.0 Upgrade and Evolution
+a The Mobile Network Range shall be upgradeable to 4G technology (3GPP Release 9).
+b The Mobile Network Range shall be designed to integrate CDMA Access technology (3GPP2) at a future upgrade.
+c The Mobile Network Range shall be designed to integrate Wi-MAX access technology at a future upgrade.
+4.0 Interfaces
+a All UMTS Access Network Interfaces (including Iub, IuCS, IuPS, IuR, etc) shall support IP.
+b All GSM Access Network Interfaces (including Abis, A, Gb, etc) shall support IP and/or T1/E1.
+5.0 Performance and Monitoring
+a The Mobile Network Range shall allow monitoring of all network interfaces.  NOTE:  This includes air interfaces and cabled network interfaces.  
+b The Mobile Network Range shall support the broadcast of not less than 16 simultaneous SMS messages.
+c The Mobile Network Range shall support the broadcast of not less than 16 simultaneous MMS messages.  
+d The Mobile Network Range shall support not less than 16 simultaneous outbound voice calls.
+e The Mobile Network Range shall support not less than 4 simultaneous inbound voice calls. 
+f The Mobile Network Range shall support the required outbound and inbound voice calls simultaneously.
+g The Mobile Network Range shall provide logging of each segment of the access network.
+h The Mobile Network Range shall provide access to each segment of the access network to enable full call flow analysis, to include call setup, transmission, and tear down and timing.
+III CORE NETWORK
+The Mobile Network Range core network may be implemented as a single core network that supports 3GPP 2G, 2.5G, and 3G, or may be implemented as two separate core networks, one for 2 & 2.5G and one for 3G.  
+6.0 Access Network Support
+a The Mobile Network Range core network shall support 3GPP 2G, 2.5G, and 3G access technologies.
+b The Mobile Network Range 3G core network shall be backward compatible with 2G and 2.5G.
+7.0 Features and Functionality
+The Mobile Network Range shall support the following functions and features:
+a  Managed voice mail
+b Caller ID settings (e.g. displayed, hidden)
+c Call Forwarding
+d Call Ignore
+e International Calling
+f Conference Calling
+g Call hold
+h Call waiting
+i Inbound/Outbound Call priority setting
+j Push to Talk over Cellular (PoC)
+k Mobile Email – SMTP
+l Over The Air (OTA) Provisioning 
+m Java enabled SIMs
+n Non-Java enabled SIMs
+8.0 Messaging
+a The Mobile Network Range shall support MO SMS.
+b The Mobile Network Range shall support MT SMS. 
+c The Mobile Network Range shall support Binary SMS.
+d The Mobile Network Range shall support allow/prohibit Binary SMS.
+e The Mobile Network Range shall support MO MMS. 
+f The Mobile Network Range shall support MT MMS.
+g The Mobile Network Range shall support WAP v 1.0.
+h The Mobile Network Range shall support WAP v 2.0.
+i The Mobile Network Range shall support Web Browser initiated SMS.
+j The Mobile Network Range shall support Web Browser initiated MMS.
+9.0 HLR/VLR Functions
+a The Mobile Network Range shall support full provisioning of not less than 25 subscribers.
+b The Mobile Network Range shall support at least 100 simultaneous handsets registered with the network.
+10.0 Network Timing
+a The Mobile Network Range shall provide network based timing to all mobile subscriber MS/UEs.
+b The Mobile Network Range shall be capable of receiving external clocking.
+c The Mobile Network Range shall be capable of producing internal clocking if an external clock source is not available.
+d The Mobile Network Range shall include a rubidium-based clock source compatible with the delivered system.
+e The Mobile Network Range shall be capable of accepting Network Time Protocol (NTP) timing for any packet switched network segments.  
+11.0 Prepaid Services
+a The Mobile Network Range shall provide a prepaid management system.
+b The Mobile Network Range shall allow for provisioning of user account credit amounts.
+12.0 Performance and Monitoring
+a The Mobile Network Range shall provide logging of each segment of the core network.
+b The Mobile Network Range shall provide access to each segment of the core network to enable full call flow analysis, to include call setup, transmission, and tear down.
+IV Physical
+13.0 The Mobile Network Range access network components shall be delivered in a ruggedized rack mount case.
+14.0 The Mobile Network Range access network components plus ruggedized case lifting requirement shall not exceed those of a 2 man lift. . 
+15.0 The core network may be mounted in either a ruggedized rack mount case or may be designed for a fixed installation capable of remote trunking.
+16.0 NA
+V SUPPORT EQUIPMENT
+17.0 The Mobile Network Range shall provide an instrumentation suite to analyze mobile subscriber MS/UEs.
+18.0 The Mobile Network Range shall provide voice call traffic generation.
+19.0 The Mobile Network Range shall provide SMS traffic generation.
+20.0 The Mobile Network Range shall provide MMS traffic generation.
+21.0 The Mobile Network Range traffic generation shall simulate not more than 100 active subscribers in any combination of voice, MMS or SMS.
+22.0 Miscellaneous equipment:
+a The vendor shall deliver 5 each 6 ft RF cables that are compatible with the delivered system.
+b The vendor shall deliver 5 each 10 ft RF cables that are compatible with the delivered system.
+c The vendor shall deliver 3 each 50 ft antenna cables that are compatible with the delivered system.
+d The vendor shall deliver 4 each 3 dB attenuators.
+e The vendor shall deliver 4 each 10 dB attenuators.
+f The vendor shall deliver 2 each 20 dB attenuators.
+g The vendor shall deliver 2 each 30 dB attenuators.
+h The vendor shall deliver 2 each 40 dB attenuator.
+i The vendor shall deliver 2 signal splitters.
+j The vendor shall deliver 5 each 6 ft RJ-48 unshielded twisted pair (UTP) cables.
+k The vendor shall deliver 5 each 10 ft RJ-48 UTP cables.
+l The vendor shall deliver 2 each 10 ft RJ-48 UTP cross-over cables.  NOTE:  Cables shall be labeled Crossover Cable.  
+VI Training
+a The vendor shall provide training on the configuration of the network for up to four personnel.
+b The vendor shall provide training on the operation of the network for up to four personnel.
+c The vendor shall provide all training at the purchaser’s facility.
+VII. Support
+a The vendor shall provide remote technical support (8a-5p, Mon-Fri) via email and/or telephone for a period of at least one year with an option for renewal upon expiration.

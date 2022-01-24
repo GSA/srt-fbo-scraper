@@ -1,0 +1,1130 @@
+TITLE: Software Development, Maintenance and Enhancement Service
+
+
+
+STATEMENT OF WORK
+
+
+
+BACKGROUND INFORMATION
+
+The Office of Computer and Communications Systems (OCCS) provides efficient, cost-effective computing and networking services, application development, technical advice, and collaboration in informational sciences to support NLM’s research and management programs. 
+
+OCCS develops and provides the NLM backbone computer networking facilities, and assists other NLM components in local area networking. The organization provides professional programming services and computational and data processing to meet NLM program needs, operates and maintains the NLM Computer Center, develops software, and provides extensive customer support, training courses, and documentation for computer and network users. 
+
+OCCS helps to coordinate, integrate, and standardize the vast array of computer services available throughout all of the organizations comprising NLM. The organization also serves as a technological resource for other parts of the NLM and for other Federal organizations with biomedical, statistical, and administrative computing needs.
+
+The Application Branch and Medical Language Branch in the OCCS are responsible for providing technical support for many of NLM's national and international programs. Branches provide requirements definition services, recommend system architectures and implementation strategies, design and develop computer solutions including hardware and software, plan and implement database management solutions, maintain and enhance existing systems, provide consulting services to NLM related to information technology, and evaluate emerging technologies. 
+
+
+
+There are several time critical projects underway:
+
+
+
+Task Area 1- Bethesda Hospital Emergency Preparedness Partnership (BHEPP) Research Projects
+
+	
+
+BHEPP project contains several research projects. Patient Data Capture, Patient Tracking, and Patient Data Exchange are three research projects in the Application Branch. Major tasks are:
+
+
+
+Continue development and enhancement of Patient Data Capture (Digital Pen) project. There are a number of areas of research that would directly help move this technology out of the research phase and into real world use:
+
+
+
+Upgrade the prototype to use weather-resistant paper.
+
+Upgrade the prototype so that non-English languages can be used (Spanish, Hebrew, etc…)
+
+Implement additional form templates (such as admissions forms, consent forms, procedure-specific forms, and self-assessment forms).
+
+Expand digital pen use to daily hospital operations, instead of limited use only during a disaster.
+
+Expand use of the digital pen to other regional hospitals.
+
+Investigate and evaluate Emergency Operations Center (EOC) use of digital pen data roll-ups, such reports that show the number of disaster patients broken down my severity or type of injury.
+
+
+
+Continue development of Patient Data Exchange project. It includes 
+
+
+
+Expand the data model to include all laboratory/procedure results.
+
+Expand the prototype to support controlled medical vocabularies such as SNOMED CT, RxNorm, etc.
+
+Implement HL7 messaging protocol (i.e. Patient Registration, Patient Discharge, etc.).
+
+Expand the prototype to integrate with the National Health Information Network (NHIN) so that data can be shared within a wider region.
+
+Expand use of the data exchange system to other regional hospitals.
+
+Work with vendor to implement RFID/RTLS – Patient and Asset Tracking product to support BHEPP Project. Integrate NLM software with product to efficiently track and display patient locations, generate summary reports, etc. 
+
+
+
+Task Area 2-  UMLS/KSS
+
+
+
+Production Operation of the UMLS and its internal website, including maintenance, quality assurance and management for the periodic release and distribution of the UMLS data and tools. 
+
+Development and support UMLS MetamorphoSys.  MetamorphoSys is a utility program distributed with the UMLS knowledge sources that lets users extract, subset, customize and browse the content on their local installations. It is implemented as a platform-independent Java application and freely distributed with the UMLS data. The ongoing work on MetamorphoSys includes refactoring the code to make is more efficient and extensible while using the same common object model that underlies the editing environment and (potentially) the Knowledge Sources Server (KSS).  The goal is to create a MetamorphoSys SDK with a pluggable architecture that can be shared with the user community. Specific tasks objectives are:
+
+
+
+Continue work with refactoring the code and conversion to use the JPF (Java Plugin Framework) and the common UMLS object model. Optimize code for performance. 
+
+Work with NLM staff to improve the Graphical User Interface to be clear and consistent with other similar tools.
+
+Investigate the generation of load scripts for other standard DBMS’s. 
+
+Enhance the current batch model facility as directed and document the interface for the user community. 
+
+
+
+Create formal documentation using UML diagrams (use cases, sequence, class, etc.), which will be made publicly available as part of the distribution.  Also create high-level “how-to” documentation to illustrate typical use cases with examples.
+
+
+
+Formalize and document the testing and release process.  The testing shall be done on a variety of hardware and OS platforms (or emulators) provided at NLM.  Automated GUI testing should be investigated and used where possible.  Batch testing of a variety of scenarios for assessing the correctness of the output should be performed before each release.  This should be integrated with other Q/A processes in place for the UMLS system.
+
+
+
+Redesign and re-engineer UMLS Knowledge Source Server (KSS). 
+
+The UMLS Knowledge Sources Server (KSS) is an application that provides access to the Unified Medical Language System (UMLS) knowledge sources over the World-Wide Web.  These knowledge sources are:  the Metathesaurus - a very large multi-purpose and multi-lingual vocabulary knowledgebase of biomedical and health-related concepts, the Semantic Network – an inter-connected network of broad semantic types used to categorize concepts, the SPECIALIST lexicon – a lexicon of general English terms annotated with syntactic, morphologic and orthographic information suitable for use in a Natural Language Processing system.  Using the KSS, licensed and authenticated UMLS users can search, browse and display concept reports, download the knowledge sources and provide feedback to the NLM on how the UMLS and other components are being used. KSS uses a multi-tiered architecture to support interactive and programmatic accesses via Web Services, Remote Method Invocation, and a Socket and XML based APIs.  Currently, MLB initiated a re-engineering effort to address the various known issues with the KSS. The new system (KSS-II) is being architected to be more stable and scalable, and to have better performance, security and accessibility (section 508) profiles.  The new system leverages other work being done on the UMLS such as common object models, archival data repositories, etc.  The new system, tentatively code named KSS-II is designed to provide an architectural framework for hosting a variety of applications that share a terminology focus.  While this system will continue to provide access to the UMLS knowledge sources in better and more flexible ways, including the full archive from the inception of the project, our goal is make this a common terminology service, a reliable and scalable methodology for retrieving information about the individual terminologies in the UMLS as well as the integration of these artifacts in the Metathesaurus.  The service will also host other related applications that rely on the security and authentication infrastructure of the UMLS, such as the account creation system, the UMLS and SNOMED reporting requirements, the download of artifacts, etc.  Over time it is expected that other applications will be hosted in this environment that fulfill NLM’s growing role as a provider and curator of standard terminologies for use in the U.S.
+
+
+
+Task Area 3 -  Mobile Applications and/or Mobile Version of Web Sites
+
+
+
+From research, NLM learned that the mobile internet audience is large and growing fast. The growth is driven by three factors: the proliferation of smartphones, the expanded availability of unlimited data packages, and a better consumer experience thanks to 3G network speeds. In addition, these mobile internet users are, we found out, seeking health information.  Major tasks are:
+
+
+
+Continue enhancing mobile version of MedlinePlus by adding new features, such as linking to mobile version of dictionary, defaulting to the mobile view for mobile users with the option at the bottom to switch to the full version, etc.
+
+
+
+Design and implement new mobile applications such as MyMedicationList, and/or mobile versions of current critical applications. 
+
+Continue design and implement Mobile Emergency Triage System. The specific tasks are:
+
+
+
+Design, implement and test Triage Templates component and Management component on Blackberry. 
+
+Establish Dev, QA and Production environments for software enhancement. Package/document the software for deliverable and easy installation. 
+
+
+
+Task Area 4 – NLM Critical Applications
+
+
+
+Support and enhance MedlinePlus and Connect MedlinePlus projects by implementing new features and functions. MedlinePlus will direct users to information to help answer health questions. MedlinePlus brings together authoritative information from NLM, the National Institutes of Health (NIH), and other government agencies and health-related organizations. Pre-formulated MEDLINE searches are included in MedlinePlus and give easy access to medical journal articles. MedlinePlus also has extensive information about drugs, an illustrated medical encyclopedia, interactive patient tutorials, and latest health news. 
+
+
+
+Create new multimedia user documentations (tours) to demonstrate the new features of the redesigned MedlinePlus (both English and Spanish)
+
+Complete implementation of MedlinePlus redesign.
+
+Improve users’ ability to bookmark and share MedlinePlus pages by adding the ‘AddThis’ social bookmarking feature to the MedlinePlus health topic pages.
+
+Increase multimedia offerings on MedlinePlus with the additional of high quality anatomy videos from ADAM and improve user access to multimedia content by creating a dedicated landing page for this content.
+
+Improve the user experience on Mobile MedlinePlus with enhancements, such as adding the Merriam-Webster medical dictionary, improving the ‘find’ feature for drug and health topics or launching an XML site map for discoverability via external search engines.
+
+
+
+Effectively support the NLM collaboration with NIA, other ICs to ensure ongoing improvement in the NIHSeniorHealth user experience.
+
+Improve video experiences by providing enterprise technology for all videos in one format.
+
+ Research and investigate technologies for lengthening pages on	 NIHSeniorHealth topics in response to user feedback.
+
+
+
+Provide enterprise technical solutions for Data Creation and Maintenance System ongoing enhancements, Auto-Index implementation and daily operating functions. 
+
+
+
+Continue enhancing and supporting NLM critical applications such as Docline, DailyMed, NICHSR, Digital Repository, NLM Health Service Research projects which includes PHPartners and HSR Info Central, HSR Project database and Web Application, and HSRR Search Web Application and Maintenance System, etc. by investigating new technologies, adding new functions and improving performances. 
+
+
+
+Improve NLM Customer Services through upgrading and supporting Siebel. Improve speed and efficiency of NLM Customer Service staff by releasing new look and feel for 300+ NLM Stock Replies, using Teamsite templates, a suggest-a-change feature integrated with Siebel, and a custom search of ‘good answers’ including stock replies, and selected FAQs and Factsheets.
+
+
+
+Research and investigate best practice and tools in areas of application security, system accessibility, application development in virtual and/or cloud computing environment, multimedia and social networking, etc.
+
+Task Area 5 – NLM Outreach Activities/Business
+
+
+
+Enhance and provide technical solution for NLM Outreach business related systems. Those systems create and conduct outreach activities, exhibits, etc. to provide access to quality, and accurate health information in underserved and special populations. A variety of applications are used to achieve these tasks and digitize the forms used in conducting and reporting these activities.
+
+
+
+Design and integrate Outreach Activity Reporting Form,
+
+	Outreach Project database, and Web Exhibits.
+
+Design and implement a single portal for user access and 	management
+
+Develop NN/LM Online Reporting System for annual and quarterly 	reports to support Regional Medical Libraries, Centers, and Subcontractors.
+
+Design and implement Online Contract Report system. 
+
+Implement standard security and encryption for user registration and authentication. Implement SSL authorization with new NIH certification.  
+
+
+
+Provide technical solutions and work with multiple organizations and vendors to support and implement NLM upcoming exhibition on Native People’s Concepts of Health and Illness. 
+
+
+
+Continue supporting Mapping Application by adding new features and implementing change requests.  Make suggestions to end users regarding presenting data geographically.  
+
+Support NLM NOSC display including software upgrade, troubleshooting, and daily maintenance. Implement any ad-hoc special reports with National, Region and State maps at a timely manner.
+
+
+
+
+
+Task Area 6 – IT Operation and Maintenance 
+
+
+
+Continue supporting and implementing Offside Computer Center. While the NIH Community dependence on NIH Enterprise computer and communications capability increases daily, and is now “taken for granted”, the increasing complexities of providing that service and the increasing threat of a disastrous interruption of that IT capability has escalated the need for a backup capability for the 27 NIH Institutes and Centers (ICs). The widespread demand for disaster recovery capabilities by government and industry alike has resulted in commercially available “Co-location Sites”.  The NIH Consolidated Co-location Site (NCCS) is a joint effort by NLM and CIT, and consists of various phases including planning, procurement, deployment and maintenance.
+
+
+
+Supporting OCCS Facilities Management which provides 24-hour, 7 day-a-week, 365 days a year, staffing, system monitoring, immediate response and system support services to users within and outside OCCS and other NLM organizations. The major tasks are:
+
+
+
+Batch Process
+
+Batch scheduling
+
+System monitoring
+
+Problem and system analysis
+
+Problem and system reporting and system intervention
+
+Weekly running of complete system backups for secure, offsite 	storage, creating tape copies of the various NLM databases for 	shipment to NLM licensees and mass producing large printed 	materials for Scientific Review Panels.
+
+
+
+Task Area 7 – System Administration
+
+
+
+This full-time subtask covers planning, coordination, and performance of documentation, installation, configuration, testing, operation, troubleshooting, and maintenance of hardware and software operating systems. Functions may include analyzing, planning and scheduling the installation of new or modified hardware/software, allocating systems resources, managing accounts, network rights, and access to systems and equipment, administering passwords, monitoring the performance, capacity, availability, serviceability, and recoverability of installed systems, implementing approved security procedures and tools, resolving hardware/software interface and interoperability problems, ensuring systems functionality, integrity, and efficiency, maintaining systems configuration, managing the installation and integration of system patches, updates, and enhancements, and ensuring the rigorous application of information security/information assurance policies, principles, and practices. 
+
+
+
+  Operating Systems Administration/Unix – Perform or assist in the planning, coordination, and performance of the installation, configuration, testing, operation, troubleshooting, maintenance and monitoring of Unix Operating Systems including Sun Solaris, Linux, RedHat, etc. and their subsystems and related software such as Apache, etc. Supervise and manage the daily activities of configuration and operation of business systems which may be mainframe, mini, or client/server based. Optimize system operation and resource utilization, and perform system capacity analysis and planning. Provide assistance to authorized users in accessing and using business systems.
+
+
+
+  Operating Systems Administration/Windows – Perform or assist in the planning, coordination, and performance of the installation, configuration, testing, operation, troubleshooting, maintenance and monitoring of PC Operating Systems including Windows NT, Windows 2000, etc. Supervise and manage the daily activities of configuration and operation of business systems, which may be client/server based. Optimize system operation and resource utilization, and perform system capacity analysis and planning. Provide assistance to authorized users in accessing and using business systems.
+
+
+
+  Operating Systems Administration/Novell – Perform or assist in the planning, coordination, and performance of the installation, configuration, testing, operation, troubleshooting, maintenance and monitoring of Novell Operating Systems. Supervise and manage the daily activities of configuration and operation of business systems, which may be client/server based. Optimize system operation and resource utilization, and perform system capacity analysis and planning. Provide assistance to authorized users in accessing and using business systems.
+
+
+
+  Device and Equipment Administration - perform or assist in the planning, coordination, and performance of the installation, inventory, configuration, testing, operation, troubleshooting, maintenance and monitoring of devices including, but not limited to, various equipment models from vendors such as Dell, Sun, F5, Network Appliance, BoxHill, and ATL. Configure computers, communications devices, and peripheral equipment.
+
+
+
+  Other – (A) Assist the CIPIA team in the planning, installing, maintaining, and operating of security systems and devices, software, or mechanisms.  Perform or assist in meeting the objectives of providing confidentiality, integrity, availability, and access for legitimate government and public users of the NLM resources. This includes providing services to assist in prevention of internal and external system attacks, damage management- such as perform or assist in informing authorities, backup system data, remove intruder(s), and contain and monitor intruder(s), damage assessment – such as perform or assist in attack recovery (including: examine audit trails/records, identify stolen accounts and data, locate system modifications, and system restoration), and damage prevention (including: patch security vulnerabilities, lock user accounts, change passwords, and reduce services).  (B) Assist NLM DBA’s in the planning, coordination, and performance of the installation, configuration, testing, operation, troubleshooting, maintenance and monitoring of database management systems and products such as Oracle, MySQL, etc.
+
+
+
+  Systems Monitoring and Tuning - Perform or assist in the planning, coordination, and performance of the installation, configuration, testing, operation, troubleshooting, maintenance and monitoring of systems monitoring and performance software such as HP OpenView/ITO, HP OpenView, VantagePoint, Performance, etc. and the related  configuration of the monitored systems such that capacity and performance are optimized.
+
+
+
+PURPOSE AND OBJECTIVES OF THE PROCUREMENT
+
+The Applications Branch and Medical Language Branch of OCCS require immediate assistance in the development of software applications, system administration, and IT operation and maintenance. In general, applications use Apache Web server, with Oracle 10g or 11g/RAC, ColdFusion or JRUN application servers and ColdFusion, Java, Perl, Java Script, JSP, PL/SQL, MySQL, etc. computer languages. The XML, web services, API’s, and application security knowledge and technology are also used/applied to applications. In addition, following abilities are necessary: planning and scheduling the installation of new or modified hardware/software, allocating system resources, managing accounts, network rights, and access to systems and equipment, monitoring the performance, capacity, availability, serviceability, and recoverability of installed systems, implementing security procedures and tools,  resolving hardware/software interface and interoperability problems, etc.  
+
+In order to effectively respond to the varied and highly complex projects that require enhancements, new development and to provide for emergency maintenance and daily processing requirements, it is necessary to utilize contractor support to satisfy those requirements on a timely basis. A lot of projects require a specialized skill with extensive domain knowledge, good understanding of government application security policy and accessibility requirements, and knowledge of NLM infrastructure.  Those projects also require great knowledge of software development life cycle, best practice, etc. Both Branches’ mission will be aided by obtaining technical assistance to create additional software capability as required, or to manage all information systems.  
+
+
+
+CONTRACTOR REQUIREMENTS/SCOPE OF WORK
+
+Independently, and not as an agent for the government, the contractor will provide to the National Library of Medicine, qualified and experience personnel to perform:
+
+Technical support including system design and system engineering
+
+Software development, implementation, testing and documentation
+
+System Administration including resolving hardware/software interface and interoperability problems, ensuring systems functionality, integrity, and efficiency, maintaining systems configuration, managing the installation and integration of system patches, updates, and enhancements, ensuring their rigorous application of information security/information assurance policies, principles, and practices to the systems administration process.
+
+Specialized domain knowledge on following but not limited to: UMLS, KSS,  NLM Outreach related business/systems, NLM Consumer Health systems, Library workflow, DOCLINE, Bethesda Hospitals Emergency Preparedness Partnership, NLM Mobile projects/efforts, NLM distributed system architecture and Offside Computer Center, NLM application databases,  MeSH Browser, and MeSH and its sub-systems, NIH SeniorHealth, etc.  
+
+General Requirements
+
+The contractor will work various teams at NLM.  A solid working knowledge and experience of Oracle, MySQL, Java, JSP, Perl, TeamSite, Web Accessibility, Scripts, application security, and COTS/Tools and operating systems/Web servers mentioned in Section 2 (Specific Tasks) are needed. 
+
+Good working knowledge of industry best practices for Enterprise development/solution is required. 
+
+The candidates must possess very good communication and interpersonal skills, work well with others (including non-IT people) in an integrated team environment, and must be self-motivated. 
+
+Good understanding and working experience of Application Security and accessibility are required.
+
+The candidates must have very good understanding and domain knowledge about NLM critical applications and system infrastructures. 
+
+The candidates shall have capability to perform requirements analysis and component design and development for new application requirements, as well as enhancements to the existing system operations. 
+
+The candidates shall also have good knowledge of software development life-cycle, methodologies, etc. 
+
+
+
+KEY PERSONNEL
+
+
+
+Offerors should assure that all key personnel submitted and referenced are available on date of award. 
+
+
+
+Resumes of all key personnel are required.  Each must indicate educational background, recent experience, domain knowledge, specific or technical accomplishments, and a listing of relevant technical skills.  Offerors shall have good training program in order to provide up to date technology training for all key personnel. Offerors shall have standard certification such as CMMI Level 3 Appraisal, ISO 9001-2000 Certification, etc.
+
+Offerors shall seek the Project Officer’s authorization prior to any changes in key personnel.
+
+ 
+
+GOVERNMENT FURNISHED PROPERTY (GFP)
+
+OCCS shall provide the workspace, office equipment, PCs, Unix Workstations, server access, network connectivity and development tools required to perform software design, development and testing. The GFP will include the Unix/Lunix and /or Windows, and/or Macintosh programming environment, network programming environment and Coldfusion/Java or any project required development environments, and development add-ons. The contractor shall be granted access to NLM facilities during normal business hours as required and shall have necessary working facilities. The contractor shall be given access to OCCS knowledge sources throughout the period of the task.
+
+SECURITY REQUIREMENTS
+
+The contractor may be required to have access to user and system passwords, sensitive Government records, proprietary software, and patient medical data.  This information shall not be disclosed, altered, copied, recorded, or accessed unless required by the Project Officer as necessary for subtask completion. 
+
+
+
+      AUTOMATED INFORMATION SYSTEMS SECURITY
+
+ 
+
+The contractor agrees to comply with the ADP system security and/or privacy specifications set forth in the Statement of Work, applicable portions of the DHHS Automated Information Systems Security Program (AISSP) Handbook (Release 2.0, dated May 1994), NIH Information Technology General Rules of Behavior, OMB Circular A-130, and FIRMR 201-39.1001-1. These documents can be obtained at the hhs.gov or nih.gov web sites. The Contractor further agrees to include this provision in any subcontract awarded pursuant to this prime contract. 
+
+
+
+Security Policy Statement
+
+
+
+By accepting this contract, the Contractor providing technical support to the NLM, NIH, agrees to comply with the applicable AIS security requirements as outlined in the SOW. The Contractor agrees to establish and follow security precautions considered by NLM to be necessary (which are subject to change during the contract) to ensure proper and confidential handling of data and information. This information is more specifically addressed in the DHHS AISSP Handbook. 
+
+The Contractor agrees to have all contractor-assigned personnel participate in annual security awareness training as provided by NLM and NIH. 
+
+At the discretion of the Project Officer, Contractor employees may be subject to background investigations as follows: 
+
+
+
+	Level 6C (High Risk) 		Background Investigation 
+
+	Level 5C (Moderate Risk) 	National Agency Check and Inquiry Investigation Plus a Credit Check (NACIC) or Limited Background Investigation 
+
+	Level1C (Low Risk) 		National Agency Check and Inquiry Investigation (NACIC) Contractor employees who have previously met investigation requirements within the past five (5) years may only require updated investigations. 
+
+
+
+The contractor shall: (a) encrypt all of its laptop computers and other mobile devices and portable media which store or process sensitive HHS data using Federal Information Processing Standard (FIPS) 140-2 compliant encryption; (b) verify that encryption products have been validated under the Cryptographic Module Validation Program () to confirm compliance with FIPS 140-2; (c) establish key recovery mechanisms to ensure the ability to decrypt and recover sensitive information by authorized personnel; and (d) generate and manage encryption keys securely to prevent unauthorized decryption of information.
+
+
+
+For purposes of this contract, information is considered sensitive if the loss of confidentiality or integrity could be expected to have a serious, severe or catastrophic adverse effect on organizational operations, organizational assets, or individuals.
+
+
+
+Further, the loss of sensitive information confidentiality or integrity might: (i) cause a significant or severe degradation in mission capability to an extent and duration that the organization is unable to perform its primary functions or the effectiveness of the functions is significantly reduced; (ii) result in significant or major damage to organizational assets; (iii) result in significant or major financial loss; or (iv) result in significant, severe or catastrophic harm to individuals.
+
+
+
+The provider of information technology shall certify applications are fully functional and operate correctly as intended on systems using the HHS Core Configurations.  These standard configurations will be published and maintained at National Library of Medicine.  As standard configurations may change frequently, providers must ensure applications meet the most recent set of security configurations at the time of acquisition or contract initiation.
+
+The standard installation, operation, maintenance, updates, and/or patching of software shall not alter the configuration settings from the approved HHS Core Configurations.  
+
+Applications designed for normal end users shall run in the standard user context without elevated system administration privileges. 
+
+Exceptions to the HHS Core Configurations must be noted and approved by the HHS Chief Information Security Officer in advance of implementation.
+
+
+
+
+
+PERIOD OF PERFORMANCE
+
+It is anticipated that the award from this solicitation will be for the period of 12 month from the date of award, with the options to extend the term for two successive one-year period(s). Proposed hours and rates should be included for base year and the 2 option years.  Award of option year will be based on NLM’s requirements and Contractors’ past performance.
+
+
+
+PLACE OF PERFORMANCE
+
+Work will be performed at the NLM facilities located at 8600 Rockville Pike, Building 38A, Bethesda, Maryland 20894.
+
+
+
+ REPORTING AND DELIVERABLES
+
+The contractor shall provide to the Project Officer monthly reports for all activity performed under the scope of work enumerated above not two exceed two pages per activity/project on the 15th of each month. The reports shall describe progress achieved, problems encountered and strategies intended to deal with those problems, as well as hours worked under each task. The contractor shall also provide the Project Officer with a copy of the monthly invoice upon submission.
+
+ INSPECTION AND ACCEPTANCE REQUIREMENTS
+
+All deliverables will be inspected and approved by the NLM Project Officer.
+
+
+
+NON-PERSONAL SERVICES
+
+
+
+Pursuant to Subpart 7.5, Inherently Governmental Functions, of the Federal Acquisition regulation (FAR), no personal services shall be performed under this purchase order. All work requirements shall flow only from the Project Officer to the Contractor's Project Manager. No vendor employee will be directly supervised by the Government. All individual employee assignments, and daily work direction, shall be given by the applicable employee supervisor. If the vendor believes any Government action or communication has been given that would create a personal services relationship between the Government and any vendor employee, the vendor shall promptly notify the Contracting Officer of this communication or action.
+
+The vendor shall not perform any inherently governmental actions under this purchase order. No vendor employee shall hold him or herself out to be a Government employee, agent, or representative. No vendor employee shall state orally or in writing at any time that he or she is acting on behalf of the Government. In all communications with third parties in connection with this purchase order, vendor employees shall identify themselves as vendor employees and specify, the name of the company for which they work. In all communications with other Government vendors in connection with this purchase order, the vendor employees shall state that they have no authority to in any way change the purchase order and that if the other vendor believes this communication to be a direction to change their purchase order, they should notify the Contracting Officer for that purchase order and not carry out the direction until a clarification has been issued by the Contracting Officer. 
+
+The vendor shall insure that all its employees working on this purchase order are informed of the substance of this article. Nothing in this article shall limit the Government's rights in any way under the other provisions of the purchase order, including those related to the Government's right to inspect and accept the services to be performed under this purchase order. The substance of this article shall be included in all subcontracts at any tier.
+
+
+
+13.  DATA RIGHTS
+
+Data gathered as a result of performance shall exclusively be the property of the National Library of Medicine.  No aspect of this information shall be divulged in any fashion to any party without the express written approval from the National Library of Medicine’s Contracting Officer’s Technical Representative (COTR).
+
+14.  CORE BUSINESS HOURS
+
+
+
+The core business hours are 9 am – 5 pm. 
+
+
+
+SECTION 508 Requirement
+
+Section 508 of the Rehabilitation Act of 1973 (29 U.S.C. 794d) requires Federal agencies to purchase electronic and information technologies (EIT) that meet specific accessibility standards. This law helps to ensure that federal employees with disabilities have access to, and use of, the information and data they need to do their jobs. Furthermore, this law ensures that members of the public with disabilities have the ability to access government information and services.
+
+There are three regulations addressing the requirements detailed in Section 508. The Section 508 technical and functional standards are codified at 36 CFR Part 1194 and may be accessed through the Access Board’s Web site at  . The second regulation issued to implement Section 508 is the Federal Acquisition Regulation (FAR). FAR Part 39.2 requires that agency acquisitions of Electronic and Information Technology (EIT) comply with the Access Board’s standards. The entire FAR is found at Chapter 1 of the Code of Federal Register (CFR) Title 48, located at . The FAR rule implementing Section 508 can be found at  . The third applicable regulation is the HHS Acquisition Regulation (HHSAR).
+
+Regardless of format, all Web content or communications materials produced for publication on or delivery via HHS Web sites - including text, audio or video - must conform to applicable Section 508 standards to allow federal employees and members of the public with disabilities to access information that is comparable to information provided to persons without disabilities. All contractors (including subcontractors) or consultants responsible for preparing or posting content intended for use on an HHS-funded or HHS-managed Web site must comply with applicable Section 508 accessibility standards, and where applicable, those set forth in the referenced policy or standards documents below. Remediation of any materials that do not comply with the applicable provisions of 36 CFR Part 1194 as set forth in the SOW or PWS, shall be the responsibility of the contractor or consultant retained to produce the Web-suitable content or communications material.  
+
+Relevant technical standards that should be considered for this solicitation are:  1194.21 Software applications and operating systems, 1194.22 Web-based intranet and internet information and applications, and 1194.24 Video and multimedia products.  Functional performance criteria (1194.31 Functional performance criteria); as well as Information, Documentation, and Support (1194.41 Information, documentation, and support) should also be considered.  More detailed information on these standards may be found at  .  
+
+References:
+
+HHS Policy for Section 508 Electronic and Information Technology (E&IT) (January 2005): 
+
+HHS Section 508 General Information and Guidance Web site:  
+
+HHS ASPA Web Communications Division Web site: 
+
+US General Services Administration (GSA) Section 508 Web site: 
+
+EVALUATION CRITERIA
+
+
+
+In determining which offer represents the best value (i.e., labor hours, special features, administrative costs) to meet the Government’s needs, the Government shall evaluate responses using the following evaluation criteria that are listed in descending order of priority:
+
+
+
+The technical proposal will receive paramount consideration in the selection of the offerors for this acquisition.  In the event that the technical evaluation reveals that two or more offerors are approximately equal in the technical ability, then cost may become a significant factor in determining award.  In any event, the government reserves the right to make an award based on a best value determination, cost and other factors considered.
+
+
+
+Offerors merely proposing to provide a service in accordance with the statement of work will not be eligible for award.  The proposal must include a comprehensive plan for meeting the needs of the Government, addressing each of the requirements of the statement of work and explaining the proposed technical approach to be used.  Failure to provide the information required to evaluate the proposal may result in the rejection of the proposal without further consideration.
+
+
+
+Factors				Total Possible: 100 pts.
+
+
+
+Personnel:                                    Points:    50
+
+Past Performance	           Points:    30
+
+Corporate Experience                Points:    20
+
+
+
+1. Personnel 						
+
+
+
+The proposal must include detailed resumes with information regarding the type, background, experience, relevant academic preparation, knowledge/experiences of domain which indicated in SOW, training and availability of personnel being proposed for this contract.
+
+
+
+2.	Past Performance
+
+         	
+
+Offerors are required to demonstrate their ability to conform to project specifications and quality standards and adherence to delivery schedules, including those for administrative reporting. Offerors should illustrate their reputation for reasonable and cooperative behavior and commitment to customer satisfaction. References, with names of persons with knowledge of offerors' past performance and their current telephone number, should be provided in support of the offeror's past performance.
+
+
+
+3. Corporate Experience
+
+
+
+Evidence of related experience with projects of similar complexity and difficulty should be provided. Evidence should be provided to support the needed staffing levels for this project to assure adequate coverage and timely project deliveries and completion. 
+
+
+
+Offerors are required to demonstrate their organizational/Corporation training Support. This includes ensuring that all contractors take government required training such as annual security training, etc. supporting/arranging training/conference identified by customers/ project team as needed for project, and encouraging any new skill/technology training that will benefit to the project/task or improve the efficient.  Offerors are required to demonstrate their knowledge/experiences in following areas: Section 508 complaint, Software Development Life Cycle such as CMM level, etc. and industry best practice on application development and application security. 
+
+NATIONAL LIBRARY OF MEDICINE
+
+	REQUEST FOR QUOTATIONS (RFQ) NO.  NLM 10-137/RS
+
+
+
+(Dated: 08/17/10) 
+
+
+
+National Institutes of Health (NIH) 
+
+TITLE: Software Application Development, Maintenance and Enhancement Services
+
+
+
+INSTRUCTIONS, CONDITIONS, AND NOTICES TO QUOTERS
+
+
+
+A.  GENERAL INFORMATION
+
+
+
+PURPOSE
+
+This Request for Quotation, RFQ, solicits quotations to provide professional consulting services in the development of software applications, system administration, and IT operation and maintenance.
+
+
+
+The requirements are described in the attached Statement of Work.
+
+
+
+BACKGROUND
+
+See attached Statement of Work.
+
+
+
+ METHOD OF ACQUISITION 
+
+The Government intends to acquire the necessary services by awarding a contract to an 8(a) vendor (NAICS 541511).  This requirement is being competed amongst 8(a) vendors on the open market.
+
+
+
+NUMBER OF AWARDS
+
+It is anticipated that one (1) award will be made from this solicitation.  
+
+
+
+DATE OF AWARD
+
+It is anticipated that the award will be made on or about September 10, 2010.  Award will be subject to availability of funds.
+
+
+
+
+
+PERIOD OF PERFORMANCE
+
+It is anticipated that the award from this solicitation will be for a Base Period of 12 months from September 10, 2010 – September 9, 2011, with two successive 12-month Option Periods.
+
+
+
+COMMITMENT OF PUBLIC FUNDS 
+
+The Contracting Officer is the only individual who can legally commit the Government to the expenditure of public funds in connection with the proposed acquisition.  Any other commitment, either explicit or implied, is invalid.
+
+
+
+COMMUNICATIONS PRIOR TO AWARD 
+
+Quoters shall direct all communications to the attention of:
+
+
+
+Ryan Singletary
+
+Contract Specialist
+
+National Library of Medicine
+
+6707 Democracy Blvd., Ste. 105
+
+MSC 5488
+
+Bethesda, Maryland 20892-5488
+
+301-435-4391
+
+Fax: 301-402-0642
+
+Email address:
+
+
+
+
+
+Communications with other officials may compromise the competitiveness of this acquisition and result in cancellation of the requirement.
+
+
+
+PREPARATION COSTS
+
+This RFQ does not commit the Government to pay for the preparation and submission of a quotation. 
+
+
+
+B.  GENERAL INSTRUCTIONS TO OFFERORS
+
+
+
+INSTRUCTIONS TO VENDORS
+
+
+
+	(a)	Definitions. As used in this provision– 
+
+
+
+		Discussions are negotiations that occur that may, at the Contracting 			Officer's discretion, result in the quoter being allowed to revise its 				quotation.
+
+
+
+		In writing or written means any worded or numbered expression which 			can be read, reproduced, and later communicated, and includes 				electronically transmitted and stored information.
+
+
+
+		Quotation modification is a change made to a quotation before the 				solicitation's closing date and time, or made in response to an amendment, 			or made to correct a mistake at any time before award.
+
+
+
+		Quotation revision is a change to a quotation made after the solicitation 			closing date, at the request of or as allowed by a Contracting Officer as the 		result of negotiations.
+
+
+
+		Time, if stated as a number of days, is calculated using calendar days, 			unless otherwise specified, and will include Saturdays, Sundays, and legal 			holidays. However, if the last day falls on a Saturday, Sunday, or legal 			holiday, then the period shall include the next working day.
+
+
+
+	(b)	Amendments to solicitations. If this solicitation is amended, all terms and 			conditions that are not amended remain unchanged.  Quoters shall 				acknowledge receipt of any amendment to this solicitation by the date and 			time specified in the amendment(s).
+
+
+
+	(c)	Submission, modification, revision, and withdrawal of quotations. (1) 			Unless other methods (e.g., electronic commerce or facsimile) are 				permitted in the solicitation, quotations and modifications to quotations 			shall be submitted in paper media in sealed envelopes or packages (i) 			addressed to the office specified in the solicitation, and (ii) showing the 			time and date specified for receipt, the solicitation number, and the name 			and address of the quoter.  Quoters using commercial carriers should 			ensure that the quotation is marked on the outermost wrapper with the 			information in paragraphs (c)(1)(i) and (c)(1)(ii) of this provision.
+
+
+
+		(1) 	The first page of the quotation must show
+
+
+
+			(i)	The solicitation number;
+
+			(ii)	The name, address, and telephone and facsimile numbers of 				the quoter (and electronic address if available);
+
+ 			(iii)	A statement specifying the extent of agreement with all 					terms, conditions, and provisions included in the 						solicitation and agreement to furnish any or all items upon 					which prices are offered at the price set opposite each item;
+
+			(iv)	Names, titles, and telephone and facsimile numbers (and 					electronic addresses if available) of persons authorized to 					negotiate on the quoter's behalf with the Government in 					connection with this solicitation; and
+
+			(v)	Name, title, and signature of person authorized to sign the 					quotation. Quotations signed by an agent shall be 						accompanied by evidence of that agent's authority, unless 					that evidence has been previously furnished to the issuing 					office.
+
+
+
+		(2)	Late quotations and revisions. (i) Any quotation received at the 				office designated in the solicitation after the exact time specified 				for receipt of quotes will not be considered unless it is received 				before award is made and
+
+
+
+				(A)	It was sent by registered or certified mail not later 						than the fifth calendar day before the date specified 						for receipt of quotations (e.g., a quotation submitted 					in response to a solicitation requiring receipt of 						offers by the 20th of the month must have been 						mailed by the 15th);
+
+
+
+				(B)	It was sent by mail (or telegram or facsimile, if 						authorized) or handcarried (including delivery by a 					commercial carrier) if it is determined by the 						Government that the late receipt was due primarily 						to Government mishandling after receipt at the 						Government installation;
+
+
+
+				(C)	It was sent by U.S. Postal Service Express Mail 						Next Day ServicePost Office to Addressee, not 						later than 5:00 p.m. at the place of mailing two 						working days prior to the date specified for receipt 						of quotations. The term ``working days'' excludes 						weekends and U.S. Federal holidays; 
+
+
+
+				(D)	It was transmitted through an electronic commerce 						method authorized by the solicitation and was 						received at the initial point of entry to the 							Government infrastructure not later than 5:00 p.m. 						one working day prior to the date specified for 						receipt of quotations; or
+
+
+
+				(E)	There is acceptable evidence to establish that it was 						received at  the activity designated for receipt of 						quotations and was under the Government's control 						prior to the time set for receipt of quotations, and 						the Contracting Officer determines that accepting 						the late quotation would not unduly delay the 						procurement; or
+
+
+
+				(F)	It is the only quotation received.
+
+
+
+			(ii)	Any modification or revision of a quotation or response to 					request for information, including any final quotation 					revision, is subject to the same conditions as in 						subparagraphs (c)(3)(i)(A) through (c)(3)(i)(E) of this 					provision.
+
+
+
+			(iii)	The only acceptable evidence to establish the date of 					mailing of a late quotation or modification or revision sent 					either by registered or certified mail is the U.S. or Canadian 				Postal Service postmark both on the envelope or wrapper 					and on the original receipt from the U.S. or Canadian Postal 				Service.  Both postmarks must show a legible date or the 					quotation, response to a request for information, or 						modification or revision shall be processed as if mailed 					late. ``Postmark'' means a printed, stamped, or otherwise 					placed impression (exclusive of a postage meter machine 					impression) that is readily identifiable without further 					action as having been supplied and affixed by employees of 				the U.S. or Canadian Postal Service on the date of mailing.  				Therefore, quoters or respondents should request the postal 					clerk to place a legible hand cancellation bull's eye 						postmark on both the receipt and the envelope or wrapper.
+
+
+
+			(iv)	Acceptable evidence to establish the time of receipt at the 					Government installation includes the time/date stamp of 					that installation on the quotation wrapper, other 						documentary evidence of receipt maintained by the 						installation, or oral testimony or statements of Government 					personnel.
+
+
+
+			(v)	The only acceptable evidence to establish the date of 					mailing of a late quotation, modification or revision, or 					withdrawal sent by Express Mail Next Day ServicePost 					Office to Addressee is the date entered by the post office 					receiving clerk on the ``Express Mail Next Day 						ServicePost Office to Addressee'' label and the postmark 					on both the envelope or wrapper and on the original receipt 					from the U.S. Postal Service. ``Postmark'' has the same 					meaning as defined in paragraph (c)(3)(iii) of this 						provision, excluding postmarks of the Canadian Postal 					Service.  Therefore, quoters or respondents should request 					the postal clerk to place a legible hand cancellation bull's 					eye postmark on both the receipt and the envelope or 					wrapper. 
+
+
+
+			(vi)	Notwithstanding paragraph (c)(3)(i) of this provision, a late 				modification or revision of an otherwise successful 						quotation that makes its terms more favorable to the 					Government will be considered at any time it is received 					and may be accepted.
+
+
+
+			(vii) 	Quotations may be withdrawn by written notice or telegram 				(including mailgram) received at any time before award. If 					the solicitation authorizes facsimile quotations, quotations 					may be withdrawn via facsimile received at any time before 				award, subject to the conditions specified in the provision 					entitled "Facsimile Proposals."  Quotations may be 						withdrawn in person by a quoter or an authorized 						representative, if the representative's identity is made 					known and the representative signs a receipt for the 						quotation before award.
+
+
+
+			(viii)	If an emergency or unanticipated event interrupts normal 					Government processes so that quotations cannot be 						received at the office designated for receipt of quotations 					by the exact time specified in the solicitation, and urgent 					Government requirements preclude amendment of the 					solicitation or other notice of an extension of the closing 					date, the time specified for receipt of quotations will be 					deemed to be extended to the same time of day specified in 					the solicitation on the first work day on which normal 					Government processes resume. If no time is specified in the 				solicitation, the time for receipt is 4:30 p.m., local time, for 					the designated Government office.
+
+
+
+		(3)	Quotations submitted must be on an all-or-none basis, e.g., 					quotations that propose to provide any single item or combination 				of several items shall be determined to be nonresponsive.
+
+
+
+		(4)	Quotations submitted in response to this solicitation shall be in 				English and in U.S. dollars.
+
+
+
+		(5)	Quoters may submit modifications to their quotations at any time 				before the solicitation closing date and time, and may submit 				modifications in response to an amendment, or to correct a mistake 			at any time before award.
+
+
+
+		(6)	Quoters may submit revised quotations only if requested or 					allowed by the Contracting Officer.
+
+
+
+		(7)	Quotations may be withdrawn at any time before award. 					Withdrawals are effective upon receipt of notice by the 					Contracting Officer.
+
+
+
+	(d)	Quotation expiration date. Quotations in response to this solicitation will 			be valid for a period of 60 calendar days.
+
+
+
+	(e)	Restriction on disclosure and use of data. Quoters that include in their 			quotations data that they do not want disclosed to the public for any 			purpose, or used by the Government except for evaluation purposes, 			shall
+
+
+
+		(1)	Mark the title page with the following legend: This quotation 				includes data that shall not be disclosed outside the Government 				and shall not be duplicated, used, or disclosedin whole or in 				partfor any purpose other than to evaluate this quotation.  If, 				however, a purchase order is awarded to this quoter as a result 				ofor in connection with the submission of this data, the 					Government shall have the right to duplicate, use, or disclose the 				data to the extent provided in the resulting purchase order.  This 				restriction does not limit the Government's right to use information 			contained in this data if it is obtained from another source without 				restriction.  The data subject to this restriction are contained in 				sheets [insert numbers or other identification of sheets]; and
+
+
+
+		(2)	Mark each sheet of data it wishes to restrict with the following 				legend: Use or disclosure of data contained on this sheet is subject 				to the restriction on the title page of this quotation.
+
+
+
+(f)	Delivery order award.  (1) The Government intends to award a delivery order to 		the responsible quoter whose quotation represents the best value after an 	evaluation is conducted in accordance with the factors and subfactors in the 	solicitation. 
+
+
+
+	(2)	The Government may reject any or all quotations if such action is in the 			Government's interest.
+
+
+
+	(3)	The Government may waive informalities and minor irregularities in 			quotations received.
+
+
+
+	(4)	The Government shall evaluate quotations and may award a delivery order 		without discussions with quoters (except clarifications as described in 			FAR 15.306(a)).  Therefore, the quoter's initial quotation should contain 			the quoter's best terms from a cost or price and technical standpoint.  The 			Government reserves the right to conduct discussions if the Contracting 			Officer later determines them to be necessary.
+
+
+
+	(5)	The Government reserves the right to make an award on any item for a 			quantity less than the quantity quoted, at the unit cost or prices quoted, 			unless the quoter specifies otherwise in the quotation.
+
+
+
+	(6)	Exchanges with quoters after receipt of a quotation do not constitute a 			rejection or counteroffer by the Government.
+
+
+
+	(7)	The Government may determine that a quotation is unacceptable if the 			prices proposed are materially unbalanced between line items or subline 			items.  Unbalanced pricing exists when, despite an acceptable total 				evaluated price, the price of one or more line items is significantly 				overstated or understated as indicated by the application of cost or price 			analysis techniques.  A quotation may be rejected if the Contracting 			Officer determines that the lack of balance poses an unacceptable risk to 			the Government.
+
+
+
+POTENTIAL AWARD WITHOUT DISCUSSIONS
+
+The Government reserves the right to award a delivery order without discussions if the Contracting Officer determines that the initial offer is fair and reasonable and that discussions are not necessary.
+
+
+
+ORDERING TERMS AND CONDITIONS
+
+The quoter must specify the unit price for each position quoted in response to this solicitation.
+
+
+
+Prices quoted shall be fixed unit prices (per labor hour) per labor category.
+
+
+
+The quoter must indicate the Quantity, Item, and Trade Discounts being quoted for each line item.
+
+
+
+The quoter must indicate a period of delivery, citing the number of days after receipt of a delivery order document in which delivery will be performed. 
+
+
+
+PRIVACY ACT
+
+The Privacy Act of 1974 (P.L. 93-579) requires that a Federal agency advise each individual whom it asks to supply information, the authority which authorizes the solicitation, whether disclosure is voluntary or mandatory, the principal purpose for which the information is intended to be used, the uses outside the agency which may be made of the information, and the effects on the individual, if any, of not providing all or any part of the requested information.
+
+
+
+The NIH is requesting the information called for in this RFQ pursuant to the authority provided by Sec. 301(a)(7) of the Public Health Service Act, as amended, and P.L. 92-218, as amended.
+
+
+
+Providing the information requested is entirely voluntary.  The collection of this information is for the purpose of conducting an accurate, fair, and adequate review prior to a discussion as to whether to award a purchase order.
+
+
+
+Failure to provide any or all of the requested information may result in a less than adequate review.
+
+
+
+In addition, the Privacy Act of 1974 (P.L. 93-579, Section 7) requires that the following information be provided when individuals are requested to disclose their social security number.
+
+
+
+Provision of the social security number is voluntary.  Social security numbers are requested for the purpose of accurate and efficient identification, referral, review and management of NIH acquisition programs.  Authority for requesting this information is provided by Section 301 and Title IV of the PHS Act, as amended.
+
+
+
+The information provided by you may be routinely disclosed for the following purposes:
+
+
+
+to the cognizant audit agency and the General Accounting Office for auditing.
+
+to the Department of Justice as required for litigation.
+
+to respond to congressional inquiries.
+
+to qualified experts, not within the definition of Department employees, for opinions as a part of the review process.
+
+
+
+SELECTION OF VENDOR
+
+You are advised that an award of a delivery order will be made to the 8(a) vendor that the Government determines to represent the best value and results in the lowest overall cost alternative (considering price, special features, administrative costs, etc.) to meet the Government’s needs.  The evaluation criteria to be used by the Government are described in E., EVALUATION FACTORS FOR AWARD, below.
+
+
+
+ALTERNATE PROPOSALS 
+
+You may, at your discretion, submit alternate proposals, or proposals which deviate from the requirements; provided, that you also submit a proposal for performance of the work as specified in the statement of work.  Such proposals may be considered if overall performance would be improved or not compromised and if they are in the best interests of the Government.  Alternative proposals, or deviations from any requirements of this solicitation, shall be clearly identified.
+
+
+
+NUMBER OF COPIES OF QUOTATION
+
+Your quotation shall be organized as specified in Section B., GENERAL INSTRUCTIONS TO OFFERORS; Section C., INSTRUCTIONS FOR PREPARING THE TECHNICAL PORTION OF THE QUOTATION; and Section D., INSTRUCTIONS FOR PREPARING THE BUSINESS PORTION OF THE QUOTATION; and submitted by Tuesday, August 31, 2010 at 5:00 p.m. Eastern Standard Time, in paper format to the addresses below. Your organization must submit 1 original and 4 hard copies of your proposal. These copies must be received at the address listed below:
+
+
+
+Ryan Singletary
+
+Contract Specialist
+
+National Library of Medicine
+
+6707 Democracy Blvd., Ste. 105
+
+MSC 5488
+
+Bethesda, Maryland 20892-5488
+
+301-435-4391
+
+Fax: 301-402-0642
+
+
+
+
+
+In addition to hard-copies, the vendor shall provide a copy by electronic mail (e-mail) to the above contracting office at  by the due date and time stated above.
+
+
+
+DELIVERY ORDER TYPE
+
+The Government intends to award a single Indefinite Delivery/Indefinite Quantity (IDIQ) order as a result of this solicitation. 
+
+
+
+The awarded delivery order shall contain the attached Terms and Conditions Addendum.
+
+Ordering – Supplemental Language
+
+Task orders will be issued under this contract via contract modification.  The task order will be described in a contract line item and given a task order number.  The line item will include a period of performance, a description of the project, expected outcomes and deliverables.  In some cases, the contractor will be provided the description in advance of the issuance of the task order.
+
+The contractor, upon receipt of the description of work, shall prepare and submit a work plan demonstrating how the work will be performed, describing plans for subcontracting, estimating cost to complete the project, and confirming expected dates for completion or submission of deliverables.  The plan shall be submitted within ten (10) days of contract receipt of the description of work.  The Contracting Officer will review the submission with the Project Officer and discuss their findings with the contractor.  Following agreement to the work plan, the task order will be issued, or if the task order was already issued, the Contracting officer will notify the contractor of the acceptability of the plan.  If the task order was issued prior to the submission of a plan by the contractor, the contractor is limited to 10% of the obligated dollars for the task until such plan approval is given.
+
+The work plan may be modified later if priorities shift or changes in the plan will more effectively meet the program’s objectives.  The modified plan must be submitted to the contracting officer and the Project officer for review and approval.
+
+52.216-22  Indefinite Quantity. 
+
+(a) This is an indefinite-quantity contract for the supplies or services specified, and effective for the period stated, in the Schedule. The quantities of supplies and services specified in the Schedule are estimates only and are not purchased by this contract. 
+
+(b) Delivery or performance shall be made only as authorized by orders issued in accordance with the Ordering clause. The Contractor shall furnish to the Government, when and if ordered, the supplies or services specified in the Schedule up to and including the quantity designated in the Schedule as the “maximum.” The Government shall order at least the quantity of supplies or services designated in the Schedule as the “minimum.” 
+
+(c) Except for any limitations on quantities in the Order Limitations clause or in the Schedule, there is no limit on the number of orders that may be issued. The Government may issue orders requiring delivery to multiple destinations or performance at multiple locations. 
+
+(d) Any order issued during the effective period of this contract and not completed within that period shall be completed by the Contractor within the time specified in the order. The contract shall govern the Contractor’s and Government’s rights and obligations with respect to that order to the same extent as if the order were completed during the contract’s effective period; provided, that the Contractor shall not be required to make any deliveries under this contract after 12 months beyond the contract expiration date.
+
+52.216-18  Ordering. 
+
+
+
+ (a) Any supplies and services to be furnished under this contract shall be ordered by modification of this order via Standard Form 30 by the Contracting Officer.  Such orders may be issued from the contract award date through the expiration of the contract. 
+
+(b) All task orders are subject to the terms and conditions of this contract. In the event of conflict between a delivery order or task order and this contract, the contract shall control. 
+
+(c) If mailed, a task order is considered “issued” when the Government deposits the order in the mail. 
+
+52.216-19  Order Limitations. 
+
+(a) Minimum order. When the Government requires supplies or services covered by this contract in an amount of less than $1,000, the Government is not obligated to purchase, nor is the Contractor obligated to furnish, those supplies or services under the contract. 
+
+(b) Maximum order. The Contractor is not obligated to honor— 
+
+(1) Any order for a single item in excess of $1,000,000.00; 
+
+(2) Any order for a combination of items in excess of $$5,500,000.00; or 
+
+(3) A series of orders from the same ordering office within Ten (10) days that together call for quantities exceeding the limitation in paragraph (b)(1) or (2) of this section. 
+
+(c) If this is a requirements contract (i.e., includes the Requirements clause at subsection  of the Federal Acquisition Regulation (FAR)), the Government is not required to order a part of any one requirement from the Contractor if that requirement exceeds the maximum-order limitations in paragraph (b) of this section. 
+
+(d) Notwithstanding paragraphs (b) and (c) of this section, the Contractor shall honor any order exceeding the maximum order limitations in paragraph (b), unless that order (or orders) is returned to the ordering office within Ten (10) days after issuance, with written notice stating the Contractor’s intent not to ship the item (or items) called for and the reasons. Upon receiving this notice, the Government may acquire the supplies or services from another source. 
+
+
+
+ORAL PRESENTATIONS
+
+You are advised that offerors responding to this solicitation may be invited to provide oral presentations to the Government after the Government completes its initial evaluation of your proposal.  If oral presentations are required, they will occur within 10 business days of the proposal due date.
+
+
+
+
+
+C.  INSTRUCTIONS FOR PREPARING THE TECHNICAL PORTION OF THE QUOTATION
+
+
+
+PREPARING THE TECHNICAL PORTION OF THE QUOTATION
+
+The offeror shall include in its quotation a discussion of the offeror's proposed technical approach to respond to the requirements in the statement of work.  The discussion is expected not to exceed 20 typewritten pages (including subcontract information).  Submitted resumes (maximum 2 pages each) will not be included in the maximum page count.  A single printed copy of one appendix, not to exceed 50 pages, containing up to five examples of previous work may be submitted to support the offeror’s technical proposal.  The appendix is also due with the technical proposal on Tuesday, August 24, 2010 at 4:00 p.m., to Ryan Singletary (address as above). 
+
+
+
+The information presented shall be in sufficient detail to describe the previous experience and effectiveness of the offeror in similar or closely related work, and to demonstrate the offeror’s current ability to accomplish the tasking in this solicitation.  Include the following information for each contract and subcontract:
+
+
+
+Name of contract or project;
+
+Contract Number;
+
+Role (Prime or Subcontractor);
+
+Sponsoring Organization or Company;
+
+Contract type;
+
+Period of Performance;
+
+Total Contract Value;
+
+Contract Manager and telephone number;
+
+Program Manager and telephone number;
+
+Project description, scope of work preformed, services or products delivered;
+
+Major success or accomplishments, and 
+
+Major problems, lessons learned, and solution(s) applied if applicable.
+
+
+
+Resumes:  In addition to the above submission, but not included in the above maximum page count, the offeror shall include in its response to the statement of work a resume for each key person proposed for the project.  Resumes of management, technical, and support staff necessary to provide the services and support requested shall also be included.  Individual resumes shall be no more than two pages in length.
+
+
+
+Resumes shall include the following:
+
+Name of person;
+
+Proposed position, function, or role;
+
+Proposed labor category;
+
+Education (including, in reverse chronological order, colleges and/or technical schools attended (with dates), degree(s)/certification(s) received, major field(s) of study, and approximate number of total class hours);
+
+Experience (including, in reverse chronological order, area(s) of work in which a person is qualified, company and title of position, approximate starting and ending dates (month/year), concise descriptions of experience for each position held, and
+
+Certification that the information contained in the resume is correct and accurate.
+
+
+
+EVALUATION OF THE TECHNICAL PORTION OF QUOTATIONS
+
+The technical portion of quotations will be evaluated in accordance with the factors, weights, and order of relative importance as described in E.  EVALUATION FACTORS FOR AWARD below.
+
+
+
+
+
+ADDITIONAL INSTRUCTIONS FOR PREPARING THE TECHNICAL PORTION OF THE QUOTATION
+
+Quotations which merely offer to conduct the work in accordance with the requirements of the Government’s scope of work will be considered nonresponsive.  The quoter must submit an explanation of the proposed technical approach in conjunction with the tasks to be performed in achieving the project objectives.
+
+
+
+Evaluation of the technical portion of quotations will be conducted by a technical review committee in accordance with the evaluation criteria stated in E. EVALUATION FACTORS FOR AWARD below.
+
+
+
+D.  INSTRUCTIONS FOR PREPARING THE BUSINESS PORTION OF THE QUOTATION
+
+
+
+PRICE INFORMATION
+
+Quoters shall submit a detailed breakdown of estimated labor rates by tasks to be performed.  In addition, a summary total amount shall be furnished for the entire project.
+
+
+
+The business portion of the quotation must contain sufficient information to allow the Government to perform a basic analysis of the proposed price of the work.
+
+
+
+INFORMATION OTHER THAN PRICING DATA
+
+The vendor shall submit sufficiently detailed information to permit the Contracting Officer and authorized representatives to evaluate the offer.
+
+
+
+Unless otherwise stated in this solicitation, the information may be submitted in the quoter’s own format.
+
+
+
+PRICING
+
+The vendor shall clarify for each line item if the unit price represents the vendor’s negotiated   price.
+
+
+
+E.  EVALUATION FACTORS FOR AWARD
+
+
+
+GENERAL
+
+You are advised that an award of a delivery order will be made to the 8(a) vendor whose quotation is determined by the Government to represent the best value and results in the lowest overall cost alternative (considering price, special features, administrative costs, etc.) to meet the Government’s needs.	
+
+
+
+EVALUATION OF OPTIONS
+
+In accordance with FAR clause 52.217-5, Evaluation of Options (July 1990), the Government will evaluate quotations for award purposes by adding the total price for all options to the total price for the basic requirement, except when it is determined in accordance with FAR 17.206(b) not to be in the Government’s best interest.  Evaluation of options will not obligate the Government to exercise the option(s).  
+
+
+
+EVALUATION CRITERIA
+
+In determining which offer represents the best value to meet the Government’s needs, the Government shall evaluate responses using the following evaluation criteria that are listed in descending order of priority:
+
+
+
+The technical proposal will receive paramount consideration in the selection of the offerors for this acquisition.  In the event that the technical evaluation reveals that two or more offerors are approximately equal in the technical ability, then cost may become a significant factor in determining award.  In any event, the government reserves the right to make an award based on a best value determination, cost and other factors considered.
+
+
+
+Offerors merely proposing to provide a service in accordance with the statement of work will not be eligible for award.  The proposal must include a comprehensive plan for meeting the needs of the Government, addressing each of the requirements of the statement of work and explaining the proposed technical approach to be used.  Failure to provide the information required to evaluate the proposal may result in the rejection of the proposal without further consideration.
+
+
+
+Factors				Total Possible: 100 pts.
+
+
+
+Personnel:                                                                                 Points:    50
+
+Past Performance                                                                      Points:    30
+
+Corporate Experience                                                               Points:    20
+
+	
+
+Personnel         
+
+The proposal must include detailed resumes with information regarding the type, background, experience, relevant academic preparation, knowledge/experiences of domain which indicated in SOW, training and availability of personnel being proposed for this contract.
+
+
+
+ Past Performance         	
+
+Offerors are required to demonstrate their ability to conform to project specifications and quality standards and adherence to delivery schedules, including those for administrative reporting. Offerors should illustrate their reputation for reasonable and cooperative behavior and commitment to customer satisfaction. References, with names of persons with knowledge of offerors' past performance and their current telephone number, should be provided in support of the offeror's past performance.
+
+
+
+Corporate Experience
+
+	Evidence of related experience with projects of similar complexity and difficulty should be provided. Evidence should be provided to support the needed staffing levels for this project to assure adequate coverage and timely project deliveries and completion. 
+
+	
+
+Offerors are required to demonstrate their organizational/Corporation training Support. This includes ensuring that all contractors take government required training such as annual security training, etc. supporting/arranging training/conference identified by customers/project team as needed for project, and encouraging any new skill/technology training that will benefit to the project/task or improve the efficient.  Offerors are required to demonstrate their knowledge/experiences in following areas: Section 508 complaint, Software Development Life Cycle such as CMM level, etc. and industry best practice on application development and application security. 
+
+
+
+F.	ATTACHMENTS TO THE RFQ
+
+
+
+Statement of Work
+
+
+
+
+

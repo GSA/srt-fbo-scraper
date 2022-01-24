@@ -1,0 +1,304 @@
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                Statement of Work
+
+                                                                       For
+
+                                                 NEXTGEN Opportunity/Risk Management System Tool
+
+                                                              PR # DTRT-RVT-72-1006
+
+
+Table of Contents
+
+Background  1
+Scope 1
+Objectives  2
+Specifications   2
+  NextGen Opportunity/Risk Management Tool (RMT) Suite Requirements 2
+    Configuration:     2
+    Functionality:     3
+    Analysis:     4
+    User/Application Interfaces:  4
+    Outputs 5
+  Other support needed:      5
+Training and Documentation   6
+  Training  6
+  Documentation  6
+  Licenses  6
+Period of Performance  7
+
+
+
+
+
+Background
+
+NextGen is a widely distributed system-of-systems (SoS).  It is composed of multiple systems, including, but not limited to, communications and
+data-sharing, location determining, and flight planning to approach surveillance systems.  NextGen is also a critical component of a broader
+aviation enterprise, including airport authorities, airlines, general aviation, and other federal agencies.[1]  This complexity extends to the
+enterprise itself through “the diversity of stakeholders associated with NextGen.  Stakeholder groups will likely differ in viewpoint, which
+will be reflected in the needs and requirements. This diversity must be effectively managed, most likely through a governance process, in order
+for NextGen to be successful”.[2]
+
+Federal Aviation Administration, NextGen Integration & Implementation Office, Chief Systems Engineers Group (AJP-A2) has tasked the Volpe Center
+to provide resources and capabilities to develop, deploy, and implement a NextGen opportunity/risk management process for the NextGen
+Integration and Implementation (NextGen I&I) Office.  The Volpe Center will provide expertise in the Risk Management mitigation and remediation
+field, by participation in the NextGen expert panels and committees that will define the risks, opportunities and action plans associated with
+these.
+
+To support this effort, Volpe Center will procure a commercially available enterprise opportunity/risk management software tool based on
+requirements provided by NextGen I&I.  In addition the Volpe Center will provide resources with opportunity/risk management expertise to assist
+NextGen I&I with implementing the new capability.
+
+
+Scope
+
+The following elements and considerations are necessary for successful management of Opportunity/Risk in the NextGen context:
+
+      • Strategy – Statement of purpose and approach to managing opportunity/risk in the context of NextGen.
+      • Plan – Documentation to establish the operating scope, process, tools, documentation, and roles/responsibilities/authority (RAA).
+      • Process Framework – Overall process structure to systematically and consistently identify, analyze, and manage NextGen
+        opportunities/risks.
+      • Integration – Interaction with other key NextGen management systems/processes such as Performance Management and Management Visibility
+        systems.
+      • Governance – The policies and mechanisms to render decisions regarding NextGen level opportunities/risks are addressed at the NextGen
+        enterprise level.
+      • Products & Tools – A suite of products and tools is necessary to enable effective analysis and management of NextGen
+        opportunities/risks.  This includes software, data repository, and outputs to support the governance process.
+      • Training – Role based training is required for participants and interested parties spanning decision makers, practitioners, and affected
+        stakeholders.
+      • Deployment - The roll–out of a consistent NextGen risk management process will be staged to ensure that the participating organizations
+        and functions achieve an appropriate level of maturity to allow them to improve their overall performance.
+
+
+Objectives
+
+Risk management is often viewed as an impediment to achieving an organization’s goals.  Striking the proper balance between risk and performance
+turns risk management into a proactive decision tool, especially when coupled with pursuit of potential opportunities.  Investment in this
+capability directly supports the goals of effective communication across the NextGen community in the support of major
+operational/organizational decisions e.g. future strategic direction, program approval, or capital investment approval.
+
+
+Specifications
+
+A NextGen Enterprise Risk Management plan shall be developed and maintained by the NextGen Integration & Implementation (NII) organization.
+Risk information shall be integrated into a NextGen information portal via the approved NextGen tool suite (currently Primavera).  Baseline
+deployment will address a core capability to support the NextGen office, with expansion beyond the NextGen office.
+
+A central NextGen enterprise risk database shall be established and maintained by the NextGen risk executive function within the NII office.
+The database will reflect all active NextGen risks that are the responsibility of the FAA to include description, impacts, current status,
+history, decisions (including rationale) actions taken, and organizational responsibilities assigned.
+
+A historical archive of all risks considered during the life of the NextGen enterprise shall be maintained.  The single authoritative source for
+all FAA NextGen enterprise risk information shall be the NextGen Enterprise Risk Database.
+
+
+NextGen Opportunity/Risk Management Tool (RMT) Suite Requirements
+
+
+Configuration:
+
+|Requirement                                                           |Comments                                                              |
+|Web Based                                                             |Ability to interface with the system via customizable Web interfaces  |
+|Off-line client capability                                            |Ability to access local data while off-line from the data main        |
+|                                                                      |repository                                                            |
+|Fully configurable to FAA System Engineering Manual risk management   |Ability to adhere FAA NAS System Engineering Manual, version 3.1,     |
+|guidance                                                              |section 4.10: Risk Management                                         |
+|24/5 vendor support                                                   |24 hour business week access to support.                              |
+|Vendor support for installation & roll-out                            |The vendor shall install and support the first 12 months period of the|
+|                                                                      |roll out.                                                             |
+|A systems architecture that is scalable, robust, and capable of       |Ability to expand based on system capacity growth and number of users |
+|evolution - multiple concurrent users and locations                   |                                                                      |
+|Logically centralized data repository, independent of geographic or   |Central repository will be located at a secured Government facility,  |
+|physical constraints                                                  |and will be accessible via clients (Web based)                        |
+|An integrated solution, extendable through a portal, and offering     |The RMT will be installed on an Government owned server and network;  |
+|open-standard integration with common middleware technologies         |maintained and operated by the Government.                            |
+|Full user authentication                                              |Ability to provide user authentication that provides a high level of  |
+|                                                                      |security                                                              |
+
+
+Functionality:
+
+|Requirements                                                                  |Comments                                                       |
+|User role based security                                                      |See Table 1                                                    |
+|Supports – both the qualitative and quantitative assessment of risks and      |Availability for graphical/pictorial and numerical             |
+|responses                                                                     |representation of data/views                                   |
+|Life Cycle management of risks through NextGen phases                         |Ability to track systems from cradle to grave according to the |
+|                                                                              |FAA Systems Engineering Manual Life Cycle Management definition|
+|Unlimited mitigation actions                                                  |                                                               |
+|Risk owner assignment                                                         |                                                               |
+|Action/mitigation RAA assignment                                              |                                                               |
+|Create risk relationships where interdependencies exist over multiple projects|                                                               |
+|and/or business entities                                                      |                                                               |
+|Work Breakdown Structure (WBS) based (either cost or schedule)                |                                                               |
+|User defined categorization of risks                                          |                                                               |
+|Identifies, assesses, manages, controls and communicates risks, and issues    |The RMT Tool shall be configurable.  Risks should, at minimum, |
+|                                                                              |be:                                                            |
+|                                                                              |Identified                                                     |
+|                                                                              |Assessed - configurable criteria                               |
+|                                                                              |Controlled – access, editing, etc.                             |
+|                                                                              |Communicated to user base at the appropriate level and         |
+|                                                                              |authority and scope                                            |
+|Identifies, assesses, manages, controls and communicates opportunities and    |The RMT Tool shall be configurable.  Opportunities should, at a|
+|related risks                                                                 |minimum be:                                                    |
+|                                                                              |Identified                                                     |
+|                                                                              |Assessed - configurable criteria                               |
+|                                                                              |Controlled – configurable criteria                             |
+|                                                                              |Communicated to user base at the appropriate level and         |
+|                                                                              |authority and scope                                            |
+|Customized risk scoring schemes                                               |                                                               |
+|Encryption – SSL 128-bit encryption supported.                                |                                                               |
+|Automatic email alert notifications – enabling proactive risk mitigation.     |                                                               |
+
+|Role             |Description                                                                                                                |
+|Level 1          |Responsible for the Enterprise Resource Management Process itself and the configuration of the system to meet this process.|
+|                 |Has full access to administrative and user features – both centrally and locally ‐can setup scoring schemes,  screen       |
+|                 |configuration defaults, and configure default filters.                                                                     |
+|Level 2          |Responsible for managing the Risk data received from Level 3 users.  Approves/rejects Risks, converts Concerns ‐> Risks ‐> |
+|                 |Issues. Identifies and approves Risks and Mitigation Plans, allocates Scoring Schemes etc.) Has access to full quantitative|
+|                 |analysis (e.g. Monte Carlo and provision / contingency analysis).                                                          |
+|Level 3          |Identify, Review, Edit candidate Risk types (e.g. Risks, Causes, Issues, Concerns etc.); assess, mitigate / manage; action |
+|                 |/ control / fallback; evaluate and test                                                                                    |
+|Level 4          |Read‐only access to Risk Management Reporting Services / Portal‐ Application Programming Interface access into other       |
+|                 |systems, etc.  Receives outputs from the system in the form of Email alerts                                                |
+
+
+                                               Table 1 - Roles Description – From Highest to Lowest
+
+Analysis:
+
+|Requirement                                                                |Comments                                                         |
+|Risk adjusted Schedule analysis with confidence levels                     |                                                                 |
+|Cost risk modeling with confidence levels                                  |                                                                 |
+|Residual risk impact calculation                                           |                                                                 |
+|Full risk management audit trail                                           |                                                                 |
+
+
+User/Application Interfaces:
+
+|Requirements                                                                |Comments                                                         |
+|Historical information log for trending and traceability                    |                                                                 |
+|Real time Interface with Oracle’s Primavera V 6.0 and up                    |                                                                 |
+|Real time Interface with Telelogic DOORS                                    |                                                                 |
+|Simple user interface                                                       |                                                                 |
+|User customizable views                                                     |                                                                 |
+|User customizable input screens                                             |Ability to change any field name: on screen or printed           |
+|Support viewing at all levels of organization (role based)                  |Ability to integrate and roll-up information for different levels|
+|                                                                            |of management and scope                                          |
+|A user interface that delivers appropriate functionality across the NextGen |                                                                 |
+|organizations, capable of proactive escalation of risk (both up and down)   |                                                                 |
+|Interface with Earned Value Management (EVM) tools                          |Ability for real-time interface with EVM tools                   |
+
+
+Outputs
+
+|Requirement                                                                  |Comments                                                        |
+|Risk aggregation to user defined filters                                     |                                                                |
+|Comprehensive standard and custom reports – highly customizable, benefiting  |                                                                |
+|from the use of advanced filtering capabilities.                             |                                                                |
+|Import & export reports in different formats                                 |Examples:                                                       |
+|                                                                             |Ascii: comma or tab delimited                                   |
+|                                                                             |MS Excel                                                        |
+|Waterfall charts                                                             |                                                                |
+
+
+Other support needed:
+
+The Contractor must support the Volpe Center and the Chief Systems Engineer (CSE) to use the risk management tool suite in the performance of
+opportunity/risk management for future NAS Services and Systems and the analysis and definition of mitigations that are needed to address
+opportunities/risks in the mid term and far term leading to NextGen.  This support must take the form of:
+
+      ❖ Project Framework Definition
+        First meeting between NextGen Opportunity/Risk team & vendor to discuss and define project scope, requirements, roles and
+        responsibilities, communication plan, budget and schedule, deliverables and quality control measures.
+
+
+      ❖ Onsite Installation Workshop and Support
+        Installation and testing of the tool, completed installation checklist and installation report
+
+
+      ❖ Database setup and process review
+        Review of existing client Risk Management Process, risk registries, and risk procedures.
+
+
+      ❖ System tailoring and configuration reviews
+        Aligning and configuring the tool in support of a Client proposed usage.  Includes the Development of System Configuration Report
+
+Training and Documentation
+
+
+Training
+
+A comprehensive training program shall be established to provide role based training.  The training shall be organized into four (4) role based
+packages, which addresses each specific role, scope of management, and authority.
+
+This shall be a one-time training, and each role shall be trained separately.  Thereafter any new user will be trained by internal staff
+(Volpe/FAA).
+
+Each training package shall be quoted separately and per role.  The number of training packages or levels needed will be determined during
+implementation.
+
+
+Documentation
+
+The vendor shall provide user guides and manuals that indentify how to operate the software, and documentation such as the following (but not
+limited to):
+
+    ➢ Interfaces with DOORS and PRIMAVERA: fields, protocol(s), maintenance, etc.
+    ➢ Software maintenance activities
+    ➢ Data entry/upload procedures
+    ➢ Data files and dependencies
+    ➢ Database schema and data dictionary
+    ➢ Indexes creation and maintenance
+
+
+Licenses
+
+The vendor shall provide a quote for up to 6 user licenses, and at the following levels:
+
+|Qty      |User type/role           |
+|1        |Level 1                  |
+|2        |Level 2                  |
+|2        |Level 3                  |
+|1        |Level 4                  |
+
+The Government will purchase between one (1) and six (6) user licenses.  The need of any additional license will be assessed and determined at
+any point during first 12 months of the implementation stage.
+
+For a detailed description of each user type/role see Table 1.
+
+Period of Performance
+
+The deployment of NextGen enterprise risk management will be staged over a 24 to 36 months period to ensure that the participating organizations
+and functions achieve an appropriate level of maturity to allow them to improve their overall performance.
+
+The vendor shall install the software and assist during the first 12 months of the roll-out period.  Vendor assistance should include:
+      ❖ Support
+         ➢ Maintenance
+         ➢ Troubleshooting
+      ❖ Software updates/upgrades
+
+
+The period of performance will be one year from the award, with optional one year extension.  No additional support is foreseen from the vendor
+past the second year.
+[pic][pic][pic]
+-----------------------
+[1]
+-!"#7RTZjkmn€?‚™š›œ¸¹º»ÅöêæÝÑæÈ¼Èæ®æªæž’æŠæŠwi`iFwi2[2]?j[pic]h…)}h…)}>*[pic]B*U[pic]mHnHphÐ5u[pic]h…)}mHnHu[pic]hÉ
+üh…)}0JmHnHu[pic]$jhÉ
+üh…)}0JU[pic]mHnHu[pic]jh1hHU[pic]h1hHh¸-Õ5?CJaJh1hHh1hH5?CJaJh¸-Õh1hHB*[pic]OJQJ^J[3]phhÆzh$   F5?CJaJh$
+F5?CJaJhÆzh1hH5?CJaJh1hH5?CJaJh1hHhÆzh1hH5?CJ$aJ$h1hH Next Generation Air Transportation System, A report prepared by Stevens Institute of
+Technology (Aug 2009), Section 1.2
+[4] Ibid
+

@@ -1,0 +1,2774 @@
+
+
+
+
+PERFORMANCE WORK STATEMENT
+
+
+
+
+
+FOR
+
+
+
+APPLICATIONS, INFRASTRUCTURE AND SYSTEMS SUPPORT, INCREMENT 2 (AISS II)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Applications, Infrastructure and Systems Support, Increment 2 (AISS II)
+
+
+
+INTRODUCTION
+
+Background
+
+The Air Mobility Command (AMC) is responsible to the National Command Authority (NCA) through the Joint Chiefs of Staff (JCS) and the United States Transportation Command (USTRANSCOM) for the planning and execution of global airlift and aerial refueling missions during peace, crisis, and war.  AMC is also responsible for the coordination and exercise of airlift and air refueling strategy, doctrine, and plans under the direction of USTRANSCOM.  Crisis and wartime support are provided to the unified and specified commands.  As an Air Force (AF) Major Command (MAJCOM), AMC is responsible to the Secretary of the Air Force and the Chief of Staff, Headquarters (HQ) United States Air Force (USAF), for the accomplishment of peacetime airlift and air refueling services in a manner that will promote the emergency and wartime capability of assigned forces and ensure the support of all Department of Defense (DoD) components.  In addition, AMC is also responsible for aeromedical evacuation operation.
+
+
+
+AMC supports the Air Force Mobility mission--"Global Reach."  It is difficult, if not impossible, for United States military forces to deploy rapidly or be supported effectively during employment without the assets and expertise provided by AMC.  AMC Command and Control (C2) and In-Transit Visibility (ITV) processes, procedures, and services must be consistent and reliable in peacetime, during contingencies, and throughout the full spectrum of war.  Therefore, the Information Technology (IT) resources enabling the efficient and effective management of this C2/ITV capability must also provide these services at the highest levels of availability, integrity, and confidentiality.
+
+
+
+Applications, Infrastructure and Systems Support (AISS) is AMC’s answer in meeting these IT challenges by leveraging hardware, software, services, and support resource consolidation.  AISS Increment I consolidated 13 support contracts and enabled the first-ever cross-utilization of IT service and support resources in AMC history.  AISS II seeks to enhance the level, quality, and depth of services offered while continuing to streamline and improve process, procedure, and service standardization.
+
+Scope
+
+The contractor shall provide services and products described in the Performance Work Statement (PWS) in support of the Mobility Air Force (MAF) C2, ITV/ Business Systems listed below.   In this document the Mobility Air Force (MAF) C2, ITV/ Business Systems may be referred to as programs or systems.  These services and products in total are referred to as Applications, Infrastructure and Systems Support Increment 2 (AISS II). The services being provided are in the form of technical and support tasks associated with MAF C2, ITV/Business Systems, projects, applications, and infrastructures.  The contractor will have a direct working relationship with (but no authority over) other contractors. 
+
+
+
+The current programs under the purview of the existing AISS contract include: 
+
+Advanced Computer Flight Plan (ACFP)
+
+Consolidated Air Mobility Planning System (CAMPS)
+
+Commercial Operations Integrated System (COINS)
+
+Global Air Transportation Execution System (GATES)
+
+Global Command and Control System (GCCS)
+
+Global Decision Support System (GDSS)
+
+Systems Integration (SI)
+
+Enterprise Information Management (EIM)
+
+
+
+
+
+Along with Government developed applications the current software under the purview of the MAF C2, ITV/Business Systems includes: 
+
+Sybase Database Management Software
+
+Oracle Database Management Software
+
+Microsoft Structured Query Language (SQL)
+
+Sybase SQL and High Availability (HA)
+
+Windows Operating Systems
+
+UNIX / Red Hat Enterprise Linux Operating Systems
+
+VMWare
+
+SharePlex
+
+NetIQ
+
+SharePoint
+
+TCL
+
+
+
+
+
+Purpose
+
+This effort will be in the form of technical and support tasks required to enable the readiness state of the systems, infrastructure, and services that satisfies the HQ AMC/A6 mission for the identified programs.  This task is decomposed into the following segments:
+
+Contract Administration
+
+The contractor shall provide the contract administration and management oversight necessary in support of this contract.
+
+Enterprise Support Services
+
+The contractor shall perform the following tasks and will utilize industry best practices, processes and techniques, associated with various software development methodologies, e.g., Agile, Waterfall, and Spiral.  These tasks include three areas:
+
+
+
+Enterprise Services Management (ESM) – is the development of engineering solutions for the technologies, procedures, products and services that enable proactive, end-to-end Performance Monitoring, Systemic Configuration Management, Problem Detection & Resolution, and Information Technology Resource Accounting & Allocation.  
+
+Mobility Infrastructure Engineering (MIE) - is the engineering  of solutions for new and existing requirements relating to the  physical network, processing, storage, appliances, and security devices. 
+
+“No Service Interruption” (NSI) – is the engineering of solutions for ensuring there is no disruption to operational services as releases are fielded.
+
+Mobility Air Force (MAF) C2, ITV/ Business Systems Support Services
+
+The contractor shall provide support in the execution of the following tasks: 
+
+
+
+Program Management Office (PMO) Lifecycle Process Support
+
+Program Level Configuration and Asset Management
+
+Technical Support and Engineering Services
+
+Security and Information Assurance
+
+Client Support Administrator/Functional System Administrator (CSA/FSA) Support 
+
+Testing Services
+
+Training Services
+
+TECHNICAL REQUIREMENTS
+
+Process support services
+
+Contract Deliverable Documentation
+
+This section contains documents, products, and deliverables expected from the contractor.  Deliverables are directly traceable to the contract support services.
+
+
+
+The contractor shall accomplish the following tasks in the manner and schedule described in this PWS. The contractor shall provide process support and prepare, submit, and maintain the documents as outlined below.
+
+
+
+
+
+
+
+
+
+Contract and Task Support Meetings
+
+The contractor shall support meetings, processes, and any additional events required by the Government.  For example:
+
+
+
+Program Management Review (PMR)  
+
+Technical Working Group (TWG)
+
+Services Working Group (SWG)
+
+Engineering Status Review
+
+Task Management Review (TMR)
+
+Scheduling Meetings
+
+Support ad-hoc teams as directed by respective PMOs 
+
+
+
+The contractor shall not conduct any external meetings, conferences, presentations, whether planned or ad hoc, to discuss any program requirements, policies, etc., outside HQ AMC/A6 without first obtaining the permission of this contract’s Government lead and/or applicable PMO.  Meeting agendas and minutes are required (A004).  Trip Reports will be submitted for travel (A011).  
+
+Quality Assurance Program
+
+The contractor shall establish and maintain a contract Quality Assurance Program in compliance with the Government Quality Assurance Program (B010).
+
+
+
+Procedures and Practices:  Plan, develop, and implement procedures and practices to ensure full and consistent compliance with all requirements of the contract.  
+
+Reporting:  Include all Quality Assurance (QA) activities in the Monthly Status Report (A007).
+
+Risk Management
+
+The contractor shall describe in a Risk Management Plan, the procedures used for managing areas of risk to ensure successful project completion.  The following major risk areas shall be discussed in the Risk Management Plan (A013):
+
+
+
+Net Centric Warfare:  In an ever changing environment which is focused on the network and information use, the contractor must show a thorough knowledge of net centric tenets and how different aspects of net centric warfare induces or reduces risk.
+
+
+
+The contractor must show how they propose to mitigate risk associated with changes to the systems.
+
+
+
+Upon contract award, the contractor shall continuously monitor and report on the areas of potential risk and provide risk mitigation strategies to the Government as soon as the risk is identified.  Risks will be documented in the Monthly Status Report. 
+
+Enterprise SUPPORT SERVICES
+
+This section pertains to the tasks and work specific to engineering efforts defined by ESM, MIE and NSI.  The contractor shall provide the support necessary to maintain and mature the technical solutions via the Government’s approval process.  The contractor will apply, manage and maintain these solutions, as necessary, to all environments to include; Exercise, Testing, Training, Prototype, Engineering, and Operational.
+
+Contract Deliverable Documentation
+
+This section contains documents, products, and deliverables expected from the contractor.  Deliverables are directly traceable to the enterprise support services.
+
+
+
+The contractor shall accomplish the following tasks in the manner and schedule described in this PWS.  In the absence of specific contract or Government requirements, the contractor shall use software and hardware industry standards and industry best practices.  The contractor shall provide process support and prepare, submit, and maintain the documents as outlined below:
+
+
+
+Technical Proposals
+
+The contractor shall prepare technical proposals.
+
+Cost Proposal/Rough Order of Magnitudes (A014) 
+
+The contractor shall prepare cost proposals.
+
+Contractor Configuration Management Program
+
+The contractor shall implement Configuration Management (CM) actions across the entire life cycle for both products and services engineered, operated, and maintained by the contractor, following Government guidance and business best practices.   
+
+
+
+Following industry best practices, the contractor shall establish and maintain a Configuration Management Plan (CMP) (B011) for all products and services within the contractor’s responsibility.  The contractor shall provide evidence that the CMP’s processes are effective in controlling Government requirements, tasks, and resources; and that they are being followed.  For example, this could be provided by responding to a request by a program for a baseline configuration.    
+
+
+
+Following industry best practices, the contractor shall implement enterprise configuration management processes for hardware, software, baselines, and documentation.  CM shall establish a library for maintaining documentation, technical drawings and software/device configurations, and implement procedures for controlling the elements residing within the library.
+
+
+
+The contractor shall ensure their CM proactively controls system and software configurations.  The contractor shall deliver software/system products originated within this PWS to the Government for physical configuration audits, and shall take positive actions to ensure correction of any discrepancies noted.
+
+
+
+CM requirements pertaining to program support services are identified in paragraph 2.3.2 below.
+
+Product and Services Support 
+
+The contractor shall provide programmatic, engineering, modernization, and technical support services for all supported systems (A009).  Product and Services Support efforts shall fall under three general categories:  Enterprise Services Management, Mobility Infrastructure Engineering, and “No Service Interrupt.” Applicable Mobility Infrastructure Engineering services will be extended to the Exercise Environment.
+
+Enterprise Services Management 
+
+ESM is comprised of the technologies, procedures, products and services that enable proactive management, end-to-end performance monitoring, CM, problem detection and resolution, and information technology resource accounting and allocation.  ESM includes the following types of services:
+
+
+
+Network Infrastructure Management
+
+Appliance Management
+
+Component/System-level Configuration Management
+
+Operating Systems Management
+
+Database Management
+
+Government Off-the-Shelf/Commercial Off-the-Shelf (GOTS/COTS) Application Management
+
+Application Performance Management 
+
+Platform Management
+
+Uninterruptable Power Supply (UPS) Management
+
+Facility and Environmental Services Monitoring and Management
+
+Mobility Infrastructure Engineering 
+
+MIE is comprised of the actual physical network, processing, storage, appliance, and security devices which enable the systems to operate as intended.  MIE includes the following types of devices/services:
+
+
+
+Windows and UNIX based servers
+
+Network devices, such as switches and routers
+
+Security, Information Assurance, Authentication, Auditing, and Archiving 
+
+Automated Cross-Domain Solutions
+
+Firewalls and Proxies 
+
+Storage Area Networks (SANs) and Storage Arrays
+
+Administrative devices
+
+Wide area and local area load balancers
+
+Automated Backup Solutions
+
+
+
+“No Service Interruption” 
+
+NSI support is comprised of developing and delivering the scripts and procedures required to ensure there is no disruption to operational service as releases are fielded.  (A009, B009)
+
+Programmatic and System Architecture Support
+
+The contractor shall provide programmatic and system architecture support by accomplishing the following tasks (A009) (B016):
+
+
+
+Develop baseline description documentation for all products and services engineered (B012).
+
+Develop and update schedules to support all engineering activities (A005).
+
+Satisfy Air Force, Joint, and Federal Agency certifications.
+
+Ensure compliance with DoD Net-Centricity Strategy and USTRANSCOM Enterprise Architecture.
+
+Develop technology proof-of-concepts.
+
+Define and document system upgrades to the MIE environment.
+
+Participate in engineering and validating architecture components.
+
+Produce design and engineering documentation for all products engineered.
+
+Ensure the Configuration Management Database and/or Change Request Database is updated to reflect all approved changes.
+
+Upgrade and Modernization Support
+
+Following industry best practices, the contractor shall provide and follow its Technology Refresh Plan (A009) that includes the contractor’s approach to analyze, design, engineer, and test the technical releases, described in the following subtasks.  Version control will be maintained for all releases (B001, B005).  
+
+
+
+Releases will be delivered as needed by the Government.  Systems’ and projects’ requirements lists for each release are identified in the Release Specification Agreement (RSA).  The details for the individual requirements are maintained in the appropriate program database.   (Figure 1 depicts the lifecycle events.  The details are addressed in the PWS paragraphs).
+
+
+
+Based on guidance from the Government and in coordination with stakeholders, analyze, plan, and recommend system requirements and timing for the insertion of new technology via the RSA and baseline description (A009, B005, B006, B012).
+
+
+
+
+
+
+
+Figure 1
+
+Lifecycle
+
+
+
+Requirements Support
+
+Provide a specific list of requirements necessary to modify, expand, or correct operation of these capabilities by accomplishing the following tasks:
+
+
+
+Account for Security and Information Assurance (IA) requirements during this activity; applicable DoD standards must be subscribed and adhered to through this phase and all subsequent phases of the lifecycle.
+
+Based on guidance from the Government and in coordination with stakeholders, analyze, plan, and recommend system requirements and timing for the insertion of new technology via the Requirements Management process.
+
+Prepare formal change requests containing descriptions and specifications of recommended technological requirements or enhancements, to include scope, details, and system interfacing requirements (B007).
+
+Develop a cost projection for incorporating each requirement identified in the Requirements Specifications into the appropriate Missions System (to include engineering, testing, and fielding) and present to the Government for approval (A014).
+
+Participate in the RSA process.
+
+Project a schedule for each RSA within a time period agreed to by the Government.
+
+Where appropriate, and with Government approval, engineer solutions for problem reports identified in the RSA to correct noted deficiencies from previous releases.
+
+Support agile development methods. 
+
+Support DoD and AF Cloud and Virtualization Computing strategies.
+
+Analysis Support
+
+Provide analysis support by accomplishing the following tasks: 
+
+
+
+Prepare functional and technical use cases for each software and hardware requirement (C002).
+
+Analyze existing functional and technical use cases, and propose refinements to the same, and submit change requests or problem reports in accordance with business practices, processes, procedures, systems, and performance measures (B007).
+
+Provide recommended changes to RSAs.
+
+Analyze, define, and recommend system(s) enhancements, to include scope, details, interfaces, and timing of the technical insertions.  This activity requires working and coordinating with all stakeholders, staff, and Government contractors, to include hardware suppliers and third party application developers (B003, B014).
+
+Evaluate and recommend fixed and deployable network topologies and connectivity within existing Mobility C2, Transportation, and Air Operations family of systems to include Local Area Networks (LANs), Wide Area Network (WANs), communications systems, and related systems (B001, B014, B016 ).
+
+Support Joint Application Development (JAD) sessions when deemed necessary for refinement of requirements; provide minutes from all sessions with any proposed changes to business practices, processes, procedures, systems, performance measures, or changes to technical approach or content.  No further action is to be taken from a JAD session without written approval from the Government or designated representative (A004).
+
+Based on analysis, provide or recommend modifications to the test pass/fail criteria for each RSA requirement for insertion into the RSA and Enterprise test and evaluation plans.
+
+Conduct requirements review with Government or designated representatives to obtain approvals of techniques and decisions.
+
+Design
+
+Utilizing industry best practices, design and document solutions to meet requirements by completing the following tasks (A009, A014, B004, B005, B006, B002, B003, B014, B016): 
+
+
+
+Account for Security and IA requirements during this activity.  Applicable DoD standards must be satisfied by activities in this phase and all subsequent phases of the lifecycle.
+
+Design solutions to meet specifications and requirements approved by the Government for each RSA item.
+
+Design proposed system architectures to include all information flows and all applicable business rules (B016).
+
+Design, update, and provide Configuration Management of the Logical Data Model and Physical Data Model (LDM/PDM) products. 
+
+Use Government reference data source, currently provided by USTRANSCOM Reference Data Management (TRDM) System, as the authoritative source of system reference data.
+
+Participate in the Services Working Group to assist the Government with the sustainment and configuration management of the Government provided enterprise-level LDM and the Data Dictionary.
+
+Participate in the Architecture Data Integration Group (ADIG) to assist the Government with the sustainment and configuration management of the Government provided enterprise-level LDM and the Data Dictionary.
+
+Assist the Government in the identification, creation, update and/or deletion, and documentation of reference data, e.g., port names.
+
+Conduct functional and technical design reviews with Government or designated representatives using prepared design products to obtain approvals of direction and decisions.
+
+Engineering
+
+Engineer technical solutions to maintain the capabilities described in existing system or software documentation and to implement/transition downward-directed, mission-essential requirements to an operational state.  The scope/size of each release is based upon the Government requirements process that prioritizes the requirements to be included in the release based upon constraints such as time and funding.  The Program Management Office then formalizes what requirements are officially included in the release.  It should be understood that all requirements are not equal in level of effort required to implement and cost to implement.  Utilizing industry best practices, engineer solutions from designs accepted by the Government by completing the following tasks (A009, B009, B014, B016):
+
+
+
+Account for Security and IA requirements during this activity.  Applicable DoD standards must be satisfied by activities in this phase and proven in the remaining phases of the lifecycle.  Develop, test, and document solutions, including refinements of business rules, that do not interfere with currently-fielded systems and releases.
+
+For engineered solutions provide sustainment and CM of the LDM/PDM.
+
+Maintain the engineering environment to the most current operational environment configuration 
+
+Validate the intended release environment configuration prior to commencing engineering.
+
+Coordinate immediately with the Government designated representatives when deviations to the intended environment configurations are necessary to support the engineering effort (B008).
+
+Engineer, test, and document solutions, including implementation of business rules such that it performs satisfactorily on Government provided equipment.
+
+Ensure that engineered solution does not interfere with currently fielded hardware or Government accepted software.
+
+Ensure a schedule is maintained in conjunction with the Integrated Master Schedule to encompass all items approved for engineering and associates each item to a target release schedule.  Manage engineering of each item to ensure each item is ready to incorporate into its intended release (A005).
+
+Perform and validate all required Security and IA best practices during ALL subsets of solution engineered.
+
+Conduct design and technical reviews with Government or designated representatives to ensure the technical solution meets design specifications and is ready for testing.
+
+Testing
+
+Utilizing industry best practices, conduct the following testing tasks to ensure the engineered solution meets all prescribed requirements (C002):
+
+
+
+Procedures must account for validation and verification of Security and IA aspects of the technical solution.
+
+Produce and maintain test cases and test descriptions.  
+
+Prepare test pass/fail criteria for each RSA requirement.
+
+Perform testing (e.g. unit, system, interoperability, regression, security, performance, load, exception, and system degradation) to ensure the solution meets the RSA specifications and does not interfere with currently fielded Government-accepted software.  The contractor shall include use of automated regression testing techniques and utilities as part of a continuous software integration process.
+
+Conduct and participate with Government representative in verification and validation testing, to include regression testing, to ensure the capability is suitable for delivery to the Government as the test baseline (TBL).
+
+Provide to the Government all testing artifacts (e.g. simulators, models, test results, test descriptions, Test Readiness Review (TRR) documents, and data) and tools (manual/automated) required to complete all Government acceptance testing.
+
+Prepare and deliver test reports for each release to include summary of test results, including all required components and documentation (C001).
+
+During internal integration testing, allow Government representative to collaborate with test members to help determine if the solution is suitable for delivery to the Government.
+
+Participate with the Government to complete and document any DoD, Joint, Air Force or other governing body certification and accreditation testing for all security classification domains.
+
+Perform collaborative testing.
+
+Perform Government acceptance testing, with direct Government oversight, to demonstrate solutions meet criteria as identified in the RSA.
+
+Engineering Delivery Process
+
+The contractor will document in their CMP their Government approved process for packaging, storage, handling and delivery of baselines, technical solutions and all supporting documentation/configuration files, testing, fielding, installation plans, diagrams, system operators manuals, and turnover notices (B009, B011, B012,B014, B015, B016).  All artifacts shall be delivered to CM, approved through the Configuration Control Board (CCB) process, and stored in the CML.
+
+Enterprise Impact Mitigation
+
+Support the AMC Enterprise by ensuring the technical solution does not adversely affect the existing operational environment, as well as other in-coming technical solutions within their respective test phase of the lifecycle:
+
+Prepare and deliver the configuration of the intended system (B014).
+
+Prepare, document and deliver the TBL version and patches for the intended system (B012).
+
+Demonstrate the solution integrates successfully into the existing systems.
+
+Provide applicable training and documentation for key technical, functional, Help Desk/Support Center, Training, and Testing personnel, which will consist of both Government and contractor staff.  
+
+
+
+Security Practices
+
+Security practices shall be incorporated into all phases of the engineering lifecycle, including the initial planning activities, based on Government standards and industry best practices and guidance.
+
+Government approved security scanning and testing, provided by the 375th CSPTS (or its successor/designated agencies), shall be conducted against installed software and hardware within the contractor’s engineering environment.  
+
+Identified security vulnerabilities shall be corrected/mitigated.  Security testing results shall be available to the Government for review prior to delivery for inclusion in the DoD Information Assurance Certification and Accreditation Process (DIACAP) package.  
+
+The contractor shall use security analysis and testing and its results as an ongoing, integral part of the engineering process.  
+
+Assurance
+
+Best practices shall be employed to protect critical Government assets from cyber threats and to ensure the integrity of all engineered items and related materials:
+
+
+
+Engineering efforts shall incorporate practices to assure that engineered solutions and associated critical design information are protected from unauthorized access, manipulation, and exfiltration.  
+
+The contractor’s engineering environment and engineering plans and procedures will be evaluated by the Government prior to the start of engineering activities.  
+
+Engineered solutions will be placed under configuration management and version control.  
+
+Appropriate management processes, access controls, monitoring, and auditing shall be present within the environment to identify threats and vulnerabilities so they are not introduced into the environment. 
+
+Ensure access to/from the isolated engineering environment does not occur except through approved devices specifically allocated for engineering use.  
+
+Monitoring and auditing shall be of sufficient depth and detail, as detailed/performed by the designated Government security agency, using Government approved intrusion detection products and procedures (Network Intrusion Detection System - NIDS and Hardware Intrusion Detection Systems - HIDS) to actively detect inadvertent network traffic or unapproved changes to software, operating systems, or other components of the engineering environment.  
+
+The contractor shall assist the Government security Point of Contact (POC) to ensure appropriate monitoring and incident management procedures are present and continuously enforced within the environment and incidents are reported within 24 hours to the Government security POC.
+
+Necessary engineering and testing activities that must rely on external sources shall be controlled using strict configuration management practices to ensure security of the environment.  
+
+Any external access to the contractor’s isolated engineering environment shall be documented for review and approval by the Government prior to operation.  Industry firewall management best practices shall be employed to protect the environment, such as whitelisting, blacklisting, static IP addressing, etc.
+
+MAF C2, ITV/Business Systems SUPPORT SERVICES
+
+This section is dedicated to tasks and work specific to MAF C2, ITV/Business Systems support.  Effort is normally traceable to the requesting PMO and may include creation of support documents and artifacts, support of meetings and conferences, training, testing, fielding, CM, asset management, and engineering support for prototyping, testing, training, production and exercise environments (A012).
+
+
+
+The contractor shall provide the following services for all programs.
+
+Program Management Office Documentation Support
+
+The contractor shall provide support to the MAF C2, ITV/Business Systems in the following capacity.  Deliverables are directly traceable to the PMO documentation support services.  The contractor shall assist in development, coordination, and maintenance of program-level documents and artifacts, agreements/memos with outside agencies for allied support, system connectivity, and enterprise interfaces and information services.  The contractor shall provide input, coordination and tracking support for program agreements (A015).
+
+
+
+
+
+Configuration Management
+
+The contractor shall provide robust CM for all MAF C2, ITV/Business Systems, following Government guidance and business best practices, accomplishing the following:
+
+
+
+Be the source of truth for all programs’ test and production baselines (B012).  Provide program specific CM information to the PMO upon request.  Develop and implement a Government approved archive process for out-of-date baselines.
+
+Provide CM of all hardware, software, documentation, and configuration baselines from Government acceptance from the developer through operational fielding.  For non-production environments CM responsibility is through end-of-life.
+
+Provide, manage, and implement a Configuration Management Plan (CMP) (B011) that encompasses the contractor’s support efforts of the MAF C2, ITV/Business Systems as outlined in this PWS.  This plan shall address management and processes to assure control of test, training, production, exercise, and prototype system configurations as well as providing accurate tracking and reporting of all hardware, software, documentation, configurations, contract deliverables, materials, and Government property for all supported systems.  
+
+Ensure that CM proactively controls system and software configurations.  
+
+Ensure configuration control is implemented for all items identified by the Government for configuration control.  Recommend to the Government any additional items to be tracked.
+
+Maintain a CM database tracking all configuration items (CIs) for each of the supported environments, ensuring the status of all baseline CIs are kept current.
+
+Update the Change Request (CR) database with additions or changes for any CM items for the MAF C2, ITV/Business Systems.  
+
+Maintain a Configuration Management Library (CML), storing baseline software, configuration files, program environment documentation, Host Nation Agreements, release documentation, asset documents, records, and artifacts.  Maintenance of the CML includes ensuring the CML is up-to-date, maintains document control and software management (GOTS, COTS, configuration files and scripts), and maintaining a current backup.  CML services include controlling submission of items to the CML, tracking the items in the CML, obtaining the inventory list from the CML tracking system, comparing the inventory list to the CML, resolving configuration item discrepancies, and sending an annual inventory report to the PMO (A008).
+
+Following industry best practices, develop, implement, and maintain CM plans, processes, procedures, and tools required to provide CM for the systems.  Include processes and procedures for software turnover audits, management of the TBL through release of the production baseline (PBL), sustainment of the PBL, and formal turnover of the PBL to Operations and fielding (B011, B012).
+
+Perform a Physical Configuration Audit (PCA) on the delivered TBL prior to the fielding CCB to ensure the Government has received the documents, software updates, and all other subcomponents necessary to successfully field the release, patch, or hot fix.  Provide the appropriate PM a report stating the results of the audit and follow-up on all action items until closure (B017).
+
+At the completion of testing, conduct a configuration audit to verify the following:
+
+The necessary hardware upgrades/changes have taken place.
+
+The necessary COTS licenses have been purchased.
+
+The necessary infrastructure changes/improvements have been made.
+
+All Security and IA certifications are current.
+
+Coordination with relevant agencies and offices has taken place.
+
+Track the current status of fielded baselines, updating the PMO as requested.
+
+Develop, implement, and maintain configuration control processes for all testing, prototyping, engineering, exercise, and PBLs (B012).
+
+Perform software and hardware turnover audits to ensure all necessary items/documentation are received from the developer and engineers.  Document the results of these audits and notify PMO of all discrepancies.
+
+Coordinate and conduct TRRs (waiver required if not performed by CM). 
+
+Control, track and maintain documentation of the approved TBL and patches delivered during testing, ensuring the integrity of the approved baselines that are promoted to the PBL.
+
+Schedule and facilitate Fielding CCBs for approval to release.  Act as secretariat for the boards, update the appropriate databases reflecting the decisions of the boards and publish the minutes of the CCBs within five business days (A004).
+
+Prepare documentation identifying the PBL components (hardware, software, configurations and documentation) and formally turn the officially approved items over to the Operations and Maintenance (O&M) CM (currently the 375th CSPTS) and fielding teams.  Should any be identified, resolve all issues they identify in their audit of the delivery.
+
+Maintain a copy of the TBL and approved patches prior to it becoming PBL.
+
+Maintain the current PBL plus two previous in the CML.  Maintain an archive of older versions.
+
+The contractor will track distribution of baseline and AISS-owned software licenses or identify where the baseline software licenses are tracked.  
+
+Notify the PMOs monthly of licenses and maintenance agreements that will expire within one year.  If the agreements have not been renegotiated, notify the PMOs again at six months.  
+
+Provide Document Control services to ensure centralized management and version control for all systems’ documents.  Document Control services include filing documents in the configuration management library, logging the documents into the applicable databases and notifying affected functional areas of document delivery.
+
+Provide input to the PMO’s DIACAP, Department of Defense Instruction 8510.01.
+
+Perform CM Status Accounting:  Track and report on all CIs formally identified and controlled.  Gather, correlate, maintain, and provide the status on the CIs (hardware, documentation and software CIs), and on CM tasks.  This includes a listing of the approved configuration identification, the status of proposed changes to the configuration, and the implementation of approved changes.  This provides information/data for reporting the status of the baselines, CM metrics, CM activities, and CM audits.
+
+Conduct CM audits.  Document and communicate results with relevant stakeholders.  
+
+Store the results of all audits in the CML, notify the MAF C2, ITV/Business Systems PMO of the results in writing within 5 business days, noting any discrepancies and actions taken to mitigate them and track discrepancies to closure.  
+
+Ensure resolution of noncompliance issues, escalating any issues that cannot be resolved within area of responsibility.
+
+Collects, analyzes, and reports metrics.
+
+Provide training to members of the team on CM procedures according to the CMP.
+
+Release software and engineered solutions in accordance with (IAW) release instructions and/or PMO instructions.   
+
+Maintain a current listing of all approved baselines (B012).
+
+Asset Management
+
+The contractor shall provide maintenance and support to control the entire asset life-cycle, from procurement to retirement. Assets, which includes, applications, software, license agreements, infrastructure and hardware, as well as support equipment.   Provide asset inventory and asset tracking services that track the financial aspects of an asset to include cost and depreciation as well as contract management aspects including leases, maintenance agreements and service contracts. The contractor shall:
+
+
+
+Develop Asset Management Plan (B013).
+
+Provide robust asset management for all programs by accomplishing the following:
+
+
+
+Maintain an asset management system, ensuring the status of all program assets worldwide, are kept current.  All hardware/software received, including assets shipped to other locations, will be tracked, identifying their configurations, the destination location and POC, person receiving it, licenses/maintenance agreements, and date of shipment.  
+
+Maintain Government equipment accounts, Automated Data Processing Equipment (ADPE) in the Assets Inventory Management (AIM) IAW AFI 23-111 Management of Government Property in Possession of the Air Force and AFMAN 23-220 Reports of Survey for Air Force Property. Track and account for all Government equipment through the Air Force AIM system and in the asset management system (Access to Air Force AFIs and other official documents is available at ).
+
+Provide inventory control of hardware assets.  Inventory control includes appointment of equipment custodians (ECs), receiving hardware assets, performing an annual inventory, maintain accountability, properly disposing of hardware assets as directed, adding, deleting, and updating the asset management databases in a timely manner, and providing written documentation of completed inventory IAW AFI 33-112, Information Technology Hardware Asset Management.
+
+Support common practices for ordering assets, tracking orders and assets, and (for hardware/equipment), tagging the assets.  Interface at various organizational levels in order to support this task.  As the subject matter expert, provide Government with recommendations for improving processes and procedures.
+
+The contractor will maintain a current inventory of all assets and their locations and will provide the inventory to the Government (A008).
+
+Ensure the PMOs and Equipment Custodians have access to the asset management database to add or update all assets installed at other locations not supported by the contractor. 
+
+Function as a single point of contact for any equipment issues.
+
+Ensure O&M functions have access to the warrantee/maintenance information available in the asset management database.
+
+Manage hardware maintenance agreements by soliciting bids from qualified hardware maintenance vendors to determine the lowest maintenance cost while avoiding diminished support and/or productivity. 
+
+Provide local equipment custodial duties. (Local equipment custodial duties cover equipment within the 100 mile radius of Scott AFB).
+
+Support the disposition and disposal of assets to include the processing of lost/stolen/destroyed assets and lease expiration activities. 
+
+Maintain equipment; ship and receive equipment; maintain shipping, receiving and accounting documentation.  
+
+Ensure logistics support for other than North Atlantic Treaty Organization (NATO) countries comply with the International Agreement of the host nation.
+
+Ensure technical data submitted with limited rights, restricted rights, and copyrights shall be marked in accordance with DFARS 252.227-7013.   For other deliverable items, marking shall be in accordance with MIL-STD-129 current edition, “Marking for Shipment and Storage.”
+
+Preservation, packaging, and shipping of deliverable items shall be in accordance with the contractor’s best commercial methods to prevent deterioration and damage during shipment, handling, and storage and to ensure safe arrival at destination.
+
+Ensure distribution markings are in accordance with the latest edition of DoD Directive 5230.24. 
+
+One of the duties of the contractor is to move equipment (approximately twice per week), in the local area (within the 100  mile radius of Scott AFB).  A Government vehicle will not be provided.  The contractor accepts transfer liability when transporting the equipment.  
+
+Develop, implement, and maintain a Government approved process to be followed for delivery of items received.
+
+Develop, document, and maintain shipping processes.
+
+Coordinate, operate and maintain the local equipment storage facilities located on or around Scott AFB.  The operation of these facilities consists of storing, in an organized manner, tracking, delivery, and disposal of equipment for Scott AFB and the local area (100 mile radius around Scott AFB).
+
+Manage software license agreements optimizing software expenses, while remaining compliant with the agreements’ terms and conditions. Include the general terms and conditions, benefits, strategic and tactical directions, license ordering information, internal billing process, pricing and deployment and support of the products included in the agreement.  Respond to questions and issues from the Government and initiate the discussion of issues with the supplier.
+
+Support negotiation of software license agreements with suppliers to obtain quotes, favorable terms, conditions and pricing.
+
+Support procurement activities in the direction of software products identified as “approved” or “alternative” and advise which products have been identified as “avoid.”  Support programs with the responsibility for determining the strategic use of software products.
+
+Support application installation, application operations, customer support, training, application maintenance and sustainment and configuration control.  This includes the procurement of supporting hardware and software licenses
+
+Maintain familiarity with the current Information Technology Asset Management (ITAM) Handbook (AFI 33-112 and AFI 33-114).
+
+Technical Support and Engineering Services
+
+Provide Technical and Engineering Support Services to all MAF C2, ITV/Business Systems by performing the following: 
+
+Technical Administration and Environment Support
+
+Provide Technical Administration and Environment Support services to the Production Environment and Non-Production Environment.
+
+Production Environment Support
+
+The contractor shall provide production environment and infrastructure support by accomplishing the following tasks while observing Air Force, USTRANSCOM, and DoD Net Centric Environment standards for all designated security classifications.  
+
+Production Sustainment Activities
+
+Provide 24/7/365, on-call Level 3 Technical and Engineering Support of the production environment and infrastructure.  
+
+Coordinate all scheduled maintenance outages with appropriate agencies.
+
+Execute performance tuning. 
+
+For Global Command and Control System (GCCS), to enhance Active Duty Level 2 Journeymen technical proficiency and improve existing technical incident resolution performance, the contractor will augment Level 2 technical staff with GCCS System Administration Subject Matter Specialists.  Specialists must possess and maintain advanced, comprehensive knowledge of GCCS Systems and network operations.
+
+In observation of AF, USTRANSCOM and DoD policies, the contractor shall maintain, update, and exercise system Contingency Plans/Continuity of Operations Plans (COOPs) and environments according to the prescribed schedule mandated by the system’s Mission Assurance Category (MAC) Level (A010).
+
+Fielding Activities
+
+Verify the capability of existing hardware to accommodate the application changes; identifying the need to acquire/change/additional COTS software, hardware or software licenses, recommending any infrastructure changes necessary, i.e., facilities, heat, ventilation and air conditioning (HVAC), electrical; validating the fielding schedule and the type of training that will be necessary.
+
+
+
+Support Project Support Agreement efforts.
+
+Coordinate and execute installation and fielding of delivered products, hot fixes, and upgrades.
+
+Develop and provide detailed fielding plan for all fielding activities and identify / coordinate outages.
+
+Field only approved PBLs.
+
+Ensure all PBL software and documentation used in the fielding is obtained ONLY from Configuration Management.
+
+Coordinate installation and fielding activities with the 375th CSPTS (or its successor/designated agencies) 
+
+Coordinate installation and fielding activities with target installation site agencies.
+
+Production Response Activities
+
+Develop and provide to the Government operations and troubleshooting procedures suitable for Government’s Level 1 and 2 Support Entity. (A009)
+
+Monitor, respond to, and update Trouble Tickets, as appropriate.  Provide trend analysis of tickets.
+
+Recommend and assist in the analysis of production performance metrics.
+
+Coordinate all system problem and outage resolution activities with relevant agencies and offices and provide detailed documentation upon their resolution.
+
+Modernization and Upgrade
+
+The following subtasks, to be performed by the contractor, are associated with and define the typical modernization activities: (B001)
+
+
+
+Based on guidance from the Government and in coordination with stakeholders, analyze, plan, and recommend system requirements and timing for the insertion of new technology via the RSA and baseline description (B012).
+
+Prepare or modify architecture, updating the architectural and facilities drawings. (B014, B015)
+
+Perform technical software update, upgrade, or refresh in order to maintain environment currency.
+
+Non-Production Environment Support
+
+Non-Production Environments include the following:
+
+
+
+Engineering Environments –maintain contractor product engineering environments.
+
+Experimentation/Prototype Environments –maintain functional Experimentation suites in support of AMC/A6 obligations.
+
+Testing Environment –maintain all test and simulation labs used by MAF C2, ITV/Business Systems.  Environment shall be fully controlled and provide for the ability to test against PBLs and TBLs.
+
+Training Environments –maintain all classroom-bound training environments and mobile training “kits” (if required) for MAF C2, ITV/Business Systems.
+
+
+
+Contractor shall provide the following services for the Non-Production environments defined:
+
+Customer Support
+
+Provide all levels of technical support. Contractor shall perform all tasks required to maintain environment readiness and operational state.
+
+Use repeatable, documented processes to provide consistent customer support services for users of all environments and ensure optimal service performance for all system users and subscribers.
+
+Planning and Preparation
+
+In accordance with the Government schedule (A005), contractor shall prepare and coordinate environments and schedules, and ensure sufficient resources are planned and do not conflict.  All unresolved conflicts must be elevated to the Government.
+
+Ensure identified requirements for the environments are captured, documented, incorporated, and verified prior to the required event.
+
+Assess performance of new products in conjunction with stakeholders; provide analysis and recommendations in preparation for product/release fielding determination.
+
+Support and Maintenance
+
+Provide technical administration of environments utilizing Government authorized tools and methods.
+
+Monitor and maintain system backups and libraries.
+
+Maintain configuration control of all environments.
+
+Perform system and software monitoring, as well as performance tuning.  Ensure the environments are in operational state prior to the scheduled event requiring its availability.
+
+Modernization and Upgrade
+
+The following subtasks, to be performed by the contractor, are associated with and define the typical modernization activities:
+
+Prepare or modify architectural drawings (i.e. Network and Facility Diagrams, Communications Plans) (B014, B015).
+
+Perform technical update, upgrade, or refresh in order to maintain environment currency.
+
+These activities will be extended to the Exercise Environment.
+
+Technology Forecasting and Engineering Services
+
+The contractor shall provide Technology Forecasting and Insertion recommendation to all MAF C2, ITV/Business Systems environments:
+
+
+
+Annually or as directed, prepare 18-month forward-looking Technology Refresh Plan, to include hardware, software, infrastructure, and configuration changes; project impact to the systems (A009).
+
+Prepare, review, and update architectural diagrams, and facility and environmental service diagrams for all operating locations.  Diagrams must be reviewed annually to determine accuracy (B014, B015).
+
+Security and Information Assurance
+
+The contractor shall perform Security and IA activities for all MAF C2, ITV/Business Systems and programs.  The contractor must be cognizant of the dynamic nature of Security and IA activities and plan to support these efforts with the initiative and sense of urgency it demands.  The contractor must collaborate with the Government’s designated Information Assurance Office, currently designated as 375th CSPTS/SCCA, regarding test, operation, monitoring, and support of all Security and IA products, services, and controls. 
+
+  
+
+Acknowledge, evaluate, test, and provide course of action ensuring compliance with Information Assurance Vulnerability Alert (IAVA), Air Force Computer Emergency Response Team (AFCERT), Time Compliance Network Orders (TCNO), and other security vulnerabilities, assessments, and requirements.  Create compliance instructions for Level 2 Support Entity to execute on all supported environments.  Track Level 2 execution progress for reporting purposes.
+
+Support PMO actions to ensure that the MAF C2, ITV/Business Systems comply with Air Force and DIACAP regulations, procedures, and processes.
+
+Coordinate and support security assessments conducted by the Government.
+
+Develop and assist in implementing mitigation strategies for security vulnerabilities, assessments, and requirements as appropriate.  
+
+Recommend course of action for network security and system architecture changes to mitigate identified vulnerabilities (B016).
+
+Assist PMOs in ensuring MAF C2, ITV/Business Systems infrastructures comply with Government-mandated identity management policies, e.g., Public Key Infrastructure (PKI) and biometrics by making engineering recommendations and maintaining compliance within the environment.
+
+Support Government actions in the following security efforts:
+
+Authorization to Operate (ATO), Authorization to Connect (ATC) requests.
+
+Special network approval requests.
+
+Cross-Domain solution requests.
+
+Assume the following Host Based Security System (HBSS) (or its successor) responsibilities for all environments. 
+
+For Production environment, the contractor shall:
+
+Perform application administration in concert with Government’s designated Info Assurance Office.
+
+Perform System Production, Installation, Operation & Maintenance activities on approved HBSS Change Orders  while developing operations / troubleshooting procedures suitable for Government’s Level-2 support entity, 375th CSPTS (or its successor/designated agencies) (A009).
+
+The contractor shall prepare a Task Transition Plan outlining the tasks to be transitioned to Level-2 support entity and transition schedule (A009).
+
+For Non-Production environment, the contractor shall:
+
+Maintain and operate HBSS Management console.
+
+Validate HBSS Change Orders issued by Higher Headquarters against all systems in order to assess impact to C2/ITV Mission Readiness.
+
+If Change Order should not be applied, the contractor shall provide rationale to the Government to facilitate feedback to higher headquarters.
+
+CSA/FSA Support Work-Center Environment Administration Support (EAS)
+
+The contractor shall provide EAS assistance in support of the contract environments in accordance with AFI 33-115v1.  The EAS area of support consists of the testing, production, exercise, training, development, engineering, and prototype environments, which includes clients and servers.
+
+
+
+In order to ensure that contractor personnel have adequate permissions to provide the EAS, the contractor shall request access authorization in writing.  This request shall contain an explanation of the need for the permissions, the equipment requiring the permissions, the type of permissions required, and the name of the person (s) to include his or her email address, work phone number, and evidence that the individual(s) has the requisite DoD 8570.01-M certification.  The written request is to be delivered to the Contracting Officer Representative (COR) or appropriate Government agency.
+
+Testing Support Services
+
+The contractor shall perform testing, for example, collaborative, technical, security, functional, interoperability, verification, and validation, in support of the continuous operation of the fixed and deployed MAF C2, ITV/Business Systems. 
+
+
+
+The contractor shall participate with the Government stakeholders to complete and document any DoD, Joint, Air Force, or other governing body certification or accreditation testing for all environments and systems.  The contractor shall coordinate and schedule with the Government for appropriate Government oversight of the overall test functions and conduct interface testing for all interface partners, in conjunction with application support contractors, functional/customer testers, and other interface providers during test cycles (A005).
+
+
+
+The following documents and artifacts are required in satisfying this task.  Deliverables are directly traceable to the testing support services.
+
+
+
+
+
+Requirements Analysis
+
+The contractor shall provide requirements analysis by accomplishing the following tasks:
+
+
+
+Review requirements and available use cases to ensure requirements assigned to an RSA are clearly defined for testing purposes and that those requirements are quantifiable and testable.  Refer to the A6I Requirements Analysis Guide for further information on processing RSAs.
+
+Document, implement, and maintain a process to exploit automated test management.
+
+Update and maintain test databases.
+
+Test Planning
+
+The contractor shall conduct MAF C2, ITV/Business Systems test planning by accomplishing the following tasks (A005, C002): 
+
+
+
+Prepare a Master Test Plan (MTP) and a test procedure for each test incident to support functional and technical services testing, Joint Interoperability Test Command (JITC) Certification for all environments, and out-of-cycle test requirements. 
+
+Where applicable, prepare additional Test Plans (TPs) as needed to validate any unique or out-of-cycle requirements that are not previously identified.
+
+Validate entrance and exit criteria for each test to include pass/fail criteria for each requirement.
+
+Collaborate with developers / engineers to construct test descriptions/cases to ensure each test description/case validates the criteria.
+
+Create test scenarios
+
+Provide and maintain schedules to conduct testing, and incorporate into the Integrated Master Schedule (A005).
+
+Participate in TRRs.
+
+Collaborative Testing
+
+The contractor shall participate in collaborative testing services by accomplishing the following:
+
+
+
+Develop strategies and Memorandum of Agreements (MOAs) with developers to plan and execute collaborative testing, and submit the MOA for Government approval.
+
+Develop strategies with engineers to plan and execute collaborative testing for engineered solutions.
+
+Document the collaborative testing requirements in each applicable schedule. 
+
+Provide status reports and results to the Government. 
+
+On a weekly basis, update collaborative testing schedules with actual progress and incorporate into the Integrated Master Schedule (A005).
+
+Test Execution
+
+Upon successful completion of the Test Readiness Reviews, the contractor shall execute testing to validate requirements by completing the following tasks:
+
+
+
+Perform functional testing to include, as necessary, story acceptance and feature acceptance testing.
+
+Provide system acceptance testing to include exploratory testing, scenario testing, usability testing, and alpha/beta testing.
+
+Create and execute system quality tests to include performance and load testing.
+
+Devise, implement, and execute recovery tests, failover tests, and load balancing tests via automated or manual means as appropriate.
+
+Create reliability engineering models based on operational profiles from system users to ensure testing coverage is acceptable to meet quality control initiatives and goals.
+
+Perform technical, regression, and interoperability testing according to the approved TP.
+
+Track and report problems identified during testing using Government-approved tools.
+
+Facilitate and document the review of problem reports for resolution with the PMO, functional, technical and development communities.  
+
+Provide in-progress testing status as requested.  
+
+Publish test reports (C001).
+
+Update testing schedules with actual progress and incorporate into the Integrated Master Schedule (A005).
+
+Support Government actions for JITC Certification.
+
+“No Service Interruption” Testing
+
+The contractor shall coordinate and participate in NSI testing with all stakeholders for the MAF C2, ITV/Business Systems environment to ensure no disruption to operational service as releases are fielded by accomplishing the following tasks:
+
+
+
+Coordinate the planning, analysis, design, testing, and implementation for each Missions System NSI requirement.
+
+Conduct testing and performance analysis activities across the MAF C2, ITV/Business Systems to validate and ensure there is no service interruption during their deployment.
+
+Ensure all NSI activities are scheduled and updated in the Integrated Master Schedule (A005).
+
+Training Support Services
+
+This task provides training to the Functional and Technical help desks, technical support, testers, and field units.  This task applies to all programs within the AISS scope-of-effort, with the exception of GCCS.  As training tasks for GCCS become known in the future, they will be addressed as Future Negotiated Tasks.   
+
+
+
+Training tasks include:  creating and updating training materials, conducting formal classroom training sessions, providing formal or informal technical training, and providing functional assistance to users worldwide to include the functional and technical help desks, technical support, testers, and field units.    
+
+
+
+The following documents and artifacts are required in satisfying this task.  Deliverables are directly traceable to the training support services.
+
+
+
+
+
+
+
+Training Development
+
+The contractor shall plan and conduct functional, technical, and end-user training, accomplishing the following tasks as appropriate (D001, D003):
+
+
+
+Analyze enhancements as identified in RSAs for learning opportunities and determine the impact to training.
+
+Plan, organize, and coordinate training courses to support all systems within the AISS scope-of-effort (D002).
+
+Develop, identify enhancements to, update, and maintain all course materials, including lesson plans, difference guides, user manuals, CBTs and other training documents (D003).
+
+Develop classroom courses and related training materials.
+
+Assign version numbers to training media where appropriate.  Maintain all training documentation in the CML.
+
+Training Execution
+
+The contractor shall provide an adequate number of instructors and training materials to conduct training either at Scott AFB or remote training location:
+
+
+
+Coordinate and schedule training events with customers.
+
+Distribute training media as planned and coordinated with the Government.
+
+Provide just-in-time training at MAF C2, ITV/Business Systems-equipped units.
+
+Training Quality Assurance
+
+The contractor shall perform the following tasks to ensure highest quality of training:
+
+
+
+Course Exit Data Collection – after the completion of each course, the contractor shall:
+
+Solicit student and community feedback/assessment on training effectiveness.
+
+For classroom training and CBTs obtain written course assessments. 
+
+Maintain copies of all course assessments.
+
+Provide a monthly summary of the student course assessment. 
+
+Maintain a lessons learned file to be used for training course improvement.
+
+Formal Reviews – The contractor shall support the requested review activities.
+
+Support Curriculum Review Boards.
+
+Participate in Instructional System Design reviews as described in Air Force Manual (AFM) 36-2234 (Instructional System Development) and AMC supplements.
+
+Continuous Knowledge Update
+
+The contractor shall demonstrate to the Government its plan to maintain trainer and training material effectiveness with respect to customer’s actual usage and processes. 
+
+
+
+SERVICE SUMMARY
+
+Contractor performance will be evaluated against the following standards:
+
+
+
+FUNDING
+
+Funding will be provided in each individual task order.
+
+Surge Hours
+
+From time-to-time and solely at the discretion and approval of the COR and CO and subject to the availability of funds, the contractor may be reimbursed for special events requiring the contractor to provide additional resources for extended periods of time.  For the purpose of this clause, the extended period of time is any activity requiring work longer than normal duty hours and must be approved by the CO / COR prior to billing and normally exclude scheduled activities that can be planned for.  Examples of Surge Hour usage is Trainers being required to work 12 hour shifts in order to support  Unit Training, emergency situations that require 24 /7 on-site support (this does not include on-call support), testers working extra hours to support a release schedule.  The Surge Hours will be calculated and reimbursed for those COR/CO approved hours (material & travel will be reimbursed under the ODC and Travel CLINs).   All approved Surge Hours will reimbursed using the rates and labor categories provided in the last contractor’s proposal used in the award of the contract or as otherwise agreed to by the Government.  Surge Hours will be billed and reimbursed on a separate invoice.  The contract shall include with each invoice a written succinct explanation of the worked performed and the results obtained.  In addition, the contractor shall include a breakout of cost by labor category, labor rate and labor hours expended for each labor category and totaled to reflect the amount in the invoice.  A word of caution – the contractor shall not be reimbursed for Surge Hours unless it includes with its invoice, written approval by the COR to incur costs under the Surge Hour CLIN for a particular special event. The decision of whether work to be performed is chargeable to Surge Hours rests solely with the Government. The COR not approving Surge Hours shall not be construed by the contractor as being a reason for an excusable delay or providing the basis for failing to provide the services required by the contract. 
+
+GOVERNMENT FURNISHED PROPERTY, EQUIPMENT, FACILITIES
+
+General	
+
+The Government will be providing property for the contractor to use in the performance of the contract.  The contractor shall account for and maintain all the Government-provided materials, property, and equipment in accordance with the Government Property clause included in the contract (A008).
+
+Access
+
+The Government will provide access to all network, computer, automation, and telecommunication equipment (i.e., telephones, modems, faxes) necessary to meet the required work effort.  The Government will provide access to the Government office information systems.  The Government will provide working facilities equivalent to that provided to Government employees (e.g., workspace, desk, chair, telephone, and personal computer) if deemed necessary by the Government in the performance of this contract.  The contractor will ensure that its personnel comply with Air Force regulatory requirements governing the use of Government facilities and equipment to include facility management and facility security.
+
+Property Protection
+
+Property protection will be the responsibility of the local facility manager and local Government Security Manager, or their duly authorized representative IAW AFI 31-101, Integrated Defense.  The contractor shall safeguard all Government-owned equipment and materials in the contractor’s possession or used in the day-to-day performance of the contractor’s work.
+
+GENERAL INFORMATION
+
+PERIOD OF PERFORMANCE
+
+The period of performance for this contract will include a 3 month phase-in, 6 month base period, and three 1-year option periods.  It will also include an optional CLIN for a 3 month phase-out period. 
+
+
+
+Reviews And Approvals Of Reports, Data, And Deliverables
+
+General
+
+Documents and deliverables described in this PWS and amendments or modifications shall be submitted in a professional manner and on the prime contractor’s letterhead.
+
+List of Deliverables
+
+Data deliverables utilized during the performance of this contract are listed in Exhibit A - Contract Data Requirements Lists (CDRLs).
+
+Standard Distribution
+
+The contractor will produce all deliverables in contractor-recommended software tools/versions, as approved by the Government.  All test materials, training materials, documents, notes, models, records, and software produced by the contractor under this PWS shall become the property of the Government, which shall have unlimited rights to all materials and determine the scope of publication and distribution.  The contractor shall be required to deliver printed and electronic copies of all documents, notes, records, and software to the Government upon termination of the contract services or expiration of the contract period.  To the fullest extent possible, the contractor shall use processes that take full advantage of electronic storage, distribution, and manipulation of information.
+
+Delivery Schedule
+
+Delivery specifications, technical reports, and any other data shall be IAW the CDRLs.  Delivery schedules for other deliverables not specifically addressed, e.g., special reports, white papers, etc., shall be agreed to by the contractor and the appropriate program office and/or AISS Management Office.  Note, the number of days shown refers to work days unless otherwise specified.  When subsequent date of submissions is a weekend or holiday the submission due date is the next working day.
+
+Delivery Instructions
+
+All deliverables shall be delivered to the Government no later than the date specified in the CDRL.  Deliverables other than those required to be submitted with the proposal are to be uploaded into a contractor-provided automated deliverable management system and tracked using Microsoft Project, as directed by the Government.  Those deliverables that are to be provided outside the automated system must be transmitted to HQ AMC/A6IS, 203 West Losey Street, Room 3612, Scott Air Force Base, IL 62225-5523.  The contractor shall use Microsoft-compatible software, e.g., Microsoft Office Suite.  Electronic deliverables in the form of e-mail, CD/DVD, and/or collaborative website are acceptable.
+
+Document Management
+
+The contractor shall ensure proper control and coordination of all documents generated to fulfill the requirements of this contract, such that all data deliverables are on time, fulfilling routine requests for published documents within one working day, and urgent requests for published documents within four hours.
+
+Inspection, Acceptance, and Reviews
+
+Government Responsibility
+
+Inspection, acceptance, and reviews of all work (deliverables) performed by the contractor will be by the respective Program Management Office and/or AISS Management Office COR.
+
+Government Acceptance Time Period
+
+During the absence of other agreements negotiated with respect to time provided for Government review, the Government will review deliverables and notify the contractor of findings within 30 workdays of a normally-scheduled review.  Representatives of the contractor will meet with the COR and other members of the Government on at least a monthly basis to review status reports and other data deliverables.
+
+Comprehensive quarterly reviews
+
+Reviews will normally be held at a place identified by the Government, normally within Scott AFB commuting distance.  In the event that the contractor is excused from attending the final review, formal acceptance or rejection of deliverables will be accomplished by email or collaborative website (A002, A003).
+
+PERSONNEL REQUIREMENTS
+
+RETENTION OF CONTRACTOR PERSONNEL
+
+The contractor shall make every effort to retain personnel in order to ensure continuity until contract completion.  If it should become necessary to substitute or replace personnel, the contractor shall immediately notify the COR and CO in writing of any potential vacancies.  The contractor shall submit the resumes of all potential personnel selected to perform under this contract to the COR and CO for Government review and validation.  The contractor shall inform the Government of what projects or assignments might be affected with a change in personnel.
+
+Staffing Plan
+
+The staffing plan, with key positions identified, will be incorporated into the contract by reference and can only be changed with validation by the AISS Management office and with the concurrence of the Contracting Officer (CO) (A001).
+
+Key Position Vacancy
+
+The contractor shall notify the CO and the COR within one working day when a vacancy of a key position described in staffing plan takes place.
+
+Filling Vacancy
+
+The contractor shall maintain a list of qualified personnel to fill vacancies that may occur.  The contractor shall make every reasonable attempt to fill any vacancy of a position described in the staffing plan in a time period not longer than a single billing cycle. 
+
+Key Personnel
+
+The contractor must identify the following key personnel in the staffing plan.
+
+Contractor Program Manager
+
+The contractor shall provide the name of a Contractor Program Manager (CPM) to the COR in writing.  In the event the contractor’s primary program manager is unavailable, the contractor shall notify the COR of a point of contact (POC) to take on the primary CPM’s responsibility.  CPM certification is desirable.
+
+Contractor Deputy Program Manager
+
+The contractor shall provide the name of a Contractor Deputy Program Manager (CDPM) to the COR in writing.  In the event the Contractor Deputy Program Manager is unavailable, the contractor shall notify the COR of a point of contact (POC) to take on the primary CDPM’s responsibility.
+
+Contract/Business Manager
+
+The contractor shall provide the name of Contract/Business Manager, who shall be the POC for contracting issues, billing/payment, and related business matters, to the COR and the CO in writing.  In the event that the contractor Contract/Business Manager is unavailable, the COR and the CO shall be notified of the alternate POC.
+
+Chief Systems Engineer
+
+The contractor shall provide the name of a Chief Systems Engineer (CSE) to the COR in writing.  In the event the contractor’s primary CSE is unavailable, the contractor shall notify the COR of a POC to take on the primary CSE’s responsibility.
+
+Chief Quality Assurance Engineer
+
+The contractor shall provide the name of a Chief Quality Assurance Engineer (CQAE) to the COR in writing.  In the event the contractor’s primary CQAE is unavailable, the contractor shall notify the COR of a POC to take on the primary CQAE’s responsibility.
+
+Team Leads
+
+The contractor shall provide the names of all Team Leads for each specific task area to the COR in writing.
+
+GCCS System Administration Support staff
+
+The contractor shall provide the name of the System Administrators for the GCCS task in support of their training servers and thin client servers to the COR in writing.
+
+Organizational Conflict of Interest
+
+For general information on the handling of Organizational Conflict of Interest (OCI), reference Federal Acquisition Regulation (FAR) 9.5.
+
+Identification and Mitigation Plan
+
+The contractor must maintain an OCI Identification and Mitigation Plan (OIMP) acceptable to the CO.  The OIMP shall include, among other information, processes and internal controls necessary to identify, capture, and mitigate OCI activities at the subcontractor level. 
+
+Mitigation Plan Revision
+
+The contractor must provide a draft revision of its plan to the CO 30 days prior to any anticipated change, and such change must be negotiated and incorporated into the contract prior to implementation of a change.  
+
+Violation Reporting
+
+When the contractor discovers an OCI, potential OCI, or violation of the OIMP with respect to this contract, either by its own employee or that of one of its subcontractors, the contractor shall in writing report to the CO with prompt and full disclosure of the incident or incidents.  The report shall include a description of the OCI violation and proposed contractor actions to avoid, neutralize, or mitigate and/or preclude repetition of the violation.  After conducting necessary inquiries and discussions, the CO and the contractor shall agree on appropriate action, or the CO shall take such action afforded under the terms of the contact and statute, to include updating the OIMP.
+
+Waiver Request
+
+The contractor may request a waiver to the OCI restriction described in FAR Part 9.5.  Requests for waiver under this subpart shall be submitted in writing to the CO and shall include a full description of the requested waiver and justification.  The Head of the Contracting Activity (HCA) may grant waivers determined to be in the best interest of the Government.
+
+Notification of Possible Conflict Restriction
+
+The contractor is cautioned that there may be instances where actions it takes under this contract may preclude it from being awarded contracts in support of the MAF C2, ITV/ Business Systems activities or other related activities of AMC or USTRANSCOM.
+
+AMC SECURITY REQUIREMENTS 
+
+Access to Government Automated Information Systems
+
+Contractors requiring access to Government Automated Information Systems (AIS) shall have background investigations and security awareness training completed prior to the start of contract performance or immediately after being hired or transferred.  When the period of performance is complete or contractor personnel leave work on this project they will have five days to terminate all network user account and to return all access cards and base identification badges.  All contractor and subcontractor personnel must have the appropriate security clearance before being authorized access to Federal Government computers and networks.  "For access to unclassified AF networks, the contractor must have completed a verifiable National Agency Check and Written Inquiries (NACI) or higher level investigation."
+
+Security Management 
+
+The contractor shall oversee security concerns, identifying conflicts/concerns and solutions, and implement procedures to maintain control and auditing of security for its personnel, its data, and its computer system access.  The contractor shall ensure that all work remains compliant with all applicable Air Force Security instructions and security levels.
+
+Program Management Assistance
+
+The AISS Management Office, AMC/A6IS, or its successor organization, will assist contractor personnel in processing the necessary DoD forms to obtain base or area badges for access to Government facilities. 
+
+Handling and Safeguarding Classified Information
+
+The contractor shall provide for the handling and safeguarding of all classified information in accordance with AF standards for storing, processing, and handling classified information and systems.  The contractor personnel shall have the appropriate security clearance for the facilities in which the work is required.
+
+Contractor Access
+
+The contractor shall comply with Scott Air Force Base or other Federal Government facilities’ contractor identification procedures including identification of the contractor and identification of contractor status at meetings.  Contractor personnel shall comply with all Scott AFB instructions and security requirements, when entering, visiting or leaving the Air Base.  These rules, regulations and security requirements include the following:  presenting valid identification for base entrance, obeying all posted directives, and providing strict adherence to Security Forces direction in instances where Security Forces have been dispatched to a particular location.  The contractor is required to provide identification badges for their employees.  All contractor personnel shall wear these badges while on duty on the Government site.  Badges are required to identify (including photograph) the individual, company name, and be clearly and distinctly marked as contractor.  Size, color, style, etc. are to be mutually agreed to by contractor and Government.
+
+
+
+The Government, based on its assessment of the contractor’s need, will provide the contractor access to AISS program facilities from the commencement of the contract until contract completion.  Only contractor (or subcontractor) personnel possessing the proper clearance will be authorized entry to restricted areas.  All contractor personnel must either have the appropriate building access permissions and identification cards or otherwise must be continuously escorted by Government approved personnel.
+
+Highest Security Clearance 
+
+The MAF C2, ITV/Business Systems process unclassified, classified, and sensitive information.  The Government will provide access to facilities consistent with security clearances and a need-to-know.  
+
+
+
+With the exception of certain identified duty positions that are TOP SECRET, the highest security classification required by this contract is SECRET.  Required contractor personnel shall possess appropriate security clearances as of contract award date.  The contractor will be given access to applicable documentation to include requirements, plans, specifications, studies, and analyses up to and including SECRET classification. The contract and its attachments are unclassified.
+
+Network and Computer Security
+
+The contractor shall ensure that it is knowledgeable with the Air Force Instruction (AFI) 33-202 v1, as well as, AMC system security policies and ensure that the solutions it delivers to the Government are compliant with those policies.
+
+Enhanced Security Products
+
+The contractor shall provide enhanced security for software code in its possession by preparing maintaining, and following a Software/Product Protection Plan using AFP 63-1701 as a guide.  The plan and the contractor’s performance shall include the procedures and processes necessary to mitigate unauthorized access, tampering, and distribution of the application code.  In addition, the plan and the contractor’s performance shall include the processes and procedures the contractor shall use to reduce the possibility of unauthorized access, tampering, unauthorized modification, to its engineering  and testing apparatus, such that it can provide reasonable assurance that these systems do not otherwise jeopardize the security and functionality of the products/solutions delivered to the Government. 
+
+
+At the completion of the contract, the contractor shall obtain Government direction on the disposition of the Government provided software in its possession.  As a condition of satisfactorily performing the contract, the contractor shall forego any rights to distribute, sell, or use for internal purposes, the  engineering solutions developed, compiled  and otherwise maintained in the contractor’s or its employees’ possession. 
+
+
+
+Finally, the contractor’s senior management representative shall submit to the CO, as a condition for final payment, a written certification.  The certificate shall state that to the best of the signor’s ability, the signor certifies that the contractor has complied with the Government’s disposition instructions for the software in its possession and that the contractor foregoes any rights to distribute, sell, or use for internal purposes, the engineering solutions either provided by the Government or developed under this contract. 
+
+Information in the contractor Possession 
+
+Information given to the contractor during the life of this contract must only be used for the purpose of carrying out the provisions of this contract.  
+
+For Official Use Only Information
+
+Agency information marked “For Official Use Only” or bearing other sensitivity marking will be handled in accordance with agency information security program regulations and instructions provided on the DD Form 254.  This information will not be divulged or disclosed without agency permission.  Requests for disclosure will be addressed to the Government Task Monitor.  Contractor personnel will ensure information that is considered sensitive or proprietary is not compromised.  
+
+Privacy Act
+
+Work on this project may require that personnel have access to Privacy Information. Personnel shall adhere to the Privacy Act, Title 5 of the U.S. Code, Section 552a and applicable agency rules and regulations.
+
+Contractor Consent to Background Checks 
+
+All contractor and subcontractor personnel must consent to Law Enforcement Agency Data System (LEADS) background checks.  The contractor shall conduct the background checks on all of its employees and its subcontract employees working under this contract.  The contractor and, as applicable, subcontractor shall not employ persons for work on this contract if such employee is identified as a potential threat to the health, safety, security, general well being or operational mission of the installation and its population, nor shall the contractor or subcontractor employ persons under this contract who have an outstanding criminal warrant as identified by LEADS through the National Crime Information Center.  (LEADS checks will verify if a person is wanted by local, state, and federal agencies).  Information required to conduct a LEADS check includes: full name, driver’s license number, and/or social security number, date of birth, and completion of a background check questionnaire.  The contractor shall provide this information using the Scott AFB Form 21, contractors Consent for Background Check, and shall submit it in conjunction with the contractor’s request for either base or vehicle passes.  Completion of a successful LEADS check does not invalidate the requirement for having the appropriate level of security clearance and an escort when contractor or subcontractor personnel are working within controlled or restricted areas.  
+
+Proper Employee Credentials
+
+The contractor shall ensure its employees and those of its subcontractors have the proper credentials allowing them to work in the .  Persons later found to be undocumented or illegal aliens will be remanded to the proper authorities.  The contractor shall not be entitled to any compensation for delays or expenses associated with complying with the provisions of this clause.  Furthermore, nothing in this clause shall excuse the contractor from proceeding with the contract.
+
+Information Assurance 
+
+Contractor shall comply with all AMC security requirements pursuant to DODD 5200.2, Personnel Security Program, DODI 8500.2 Information Assurance Implementation, and DoD 8570.01-M Directive; Information Assurance Workforce Improvement Program.  Contractor must ensure that all personnel assigned to work on the contract requiring access to Government networks must complete Annual Information Assurance training by on-line CBT.  Training can be accessed at -https://golearn.csd.disa.mil/kc/main/kc_frame.asp.   Contractor is responsible for having the appropriate Information Assurance baseline certification.  As a minimum, the government requires Infromation Assurance Technical (IAT)  Level III certification for the Chief Systems Engineer and (IAT) Level II certification coverage for all other technical personnel (e.g. Systems Administration, Data Base Administration, Network Management, CSA) as defined in the DoD 8570.01-M Directive. 
+
+Antiterrorism Level I Training
+
+Within 30 days after individual contractors are provided a Common Access Card (CAC), the contractor shall complete Antiterrorism Level I training, in accordance with DODI 2000.16.  The same employees will update their training annually thereafter. New employees must complete the Antiterrorism Level I Training within the first 30 days of their employment.  The training is provided at https://atlevel1.dtic.mil/at/.
+
+Safety Requirements 
+
+The contractor shall comply with all safety provisions, e.g., technical specifications, technical publications, Federal Occupational Safety and Health Standards (Title 29 CFR Part 1910).  If there is no applicable Occupational Safety and Health Administration (OSHA) standard, the contractor shall use other applicable nationally or locally recognized sources of safety, health, and fire prevention standards.
+
+CONTRACTOR PERSONNEL TRAINING 
+
+Technical Currency
+
+The contractor shall supply and bear all the training costs (e.g., salary, tuition, course materials, travel, and per diem) to ensure the technical currency of its employees on commercially available applications in order to accomplish the tasks under this contract.  Some examples are operating systems, server applications, and office applications.
+
+Certification Training Expense 
+
+The contractor shall supply and bear all the costs (salary, tuition, course materials, travel, and per diem) for its employee certifications.
+
+Special Training Expense
+
+Any special training costs resulting from changes to technology or technical direction that are related to uniquely Government applications may be reimbursed by the Government and chargeable to Other Direct Costs (ODC), but require approval from the COR and confirmation of the availability of the funds by the CO prior to the contractor employee registering for the training course.
+
+PERSONAL SERVICE
+
+This contract is not being used to procure personal services, as defined by FAR Part 37.104, titled, “Personal Services Contract.”
+
+NON-DISCLOSURE AGREEMENTS
+
+All contractor personnel both on and off-site will be required to sign a non-disclosure agreement (See Attachment 2).  The contractor shall maintain the nondisclosure agreements and have these agreements available for Government review during the life of the contract.  At the end of the contract, the contractor shall turnover to the Government its personnel non-disclosure agreements.
+
+Identification of Non-Disclosure Requirements
+
+The contractor shall execute non-disclosure agreements when contractor personnel work with sensitive or proprietary information provided from the Government, other contractors, firms not having Government contracts, academic institutions, and other nonprofits.  The contractor agrees to enter into company-to-company agreements to (1) protect another company’s information from unauthorized use or disclosure for as long as it is considered proprietary by the other company and (2) to refrain from using the information for any purpose other than that for which it was furnished.  For informational purposes, the contractor shall furnish copies of these agreements to the COR.  These agreements are not intended to protect information available to the Government or to the contractor from other sources.  This restriction shall be included in all subcontracts, teaming arrangements, and other agreements calling for performance of work.
+
+Protecting Government Intellectual Property 
+
+At the completion of the contract or when turning-in Government IT equipment to the Government, the contractor shall not remove, change, or manipulate data, files, computer code, operating systems, and other information residing on any Government owned/provided storage media in the use and care of the contractor without the expressed written authorization by the CO or the COR. This requirement is invoked whether the data, files, etc. are placed there by the contractor employees in course of contractor performance or otherwise provided by the Government or the contractor.   Also, in no case shall the contractor use any method to destroy or remove data on a Government owned storage media to a point that it is not easily recoverable using OS data recovery tools, without expressed written permission of the Government.  Failure of the contractor to comply with this clause may subject the contractor to breach of contract, criminal civil penalties, criminal charges, or all three.
+
+
+
+Upon delivery of the final version release or other deliverable under this contract, the contractor shall deliver to the COR and/or at the direction of the Government transfer to another contractor, the following: 
+
+
+
+All framework, source code (fully compliable package), libraries, database tables, scripts, resources, modules, and all other related materials on the Government system and all software code.
+
+
+
+All procedures to move modules to test/production environments, maintenance procedures, reference materials, technical documentation, user manuals, training and/or classroom materials and all other related documentation.  
+
+
+
+Technical orientation of the Government system to include definition and description of all modules.
+
+
+Source code, object code, database applications, and permissions to access the source, and object code. 
+
+
+
+Documentation to include system architecture diagrams, configuration management procedures, (to include creating new modules, logging out existing modules, modifying code, testing, checking in modules, production releases, version control, etc.), system administrator procedures, database structure documentation, data dictionary, and batch job schedules.
+
+SYSTEM REQUIREMENTS
+
+Contractor personnel must be knowledgeable on the security requirements contained in the Air Force Instructions and Air Force network security policies, as well as AMC system security policies, and ensure that solutions being engineered are compliant with those policies.  Additionally, contractor personnel will ensure adherence with the AMC Information Assurance Architecture.
+
+CERTIFICATION AND ACCREDITATION
+
+Contractor personnel must be knowledgeable of Air Force Certification & Accreditation (C&A) requirements.  Contractor personnel will be required to support systems C&A efforts.
+
+TASKING
+
+All tasks will be accomplished within the contract scope, the requirements described in this PWS, and the capabilities described in the contract staffing plan.  The details for specific (sub) tasks, studies, technical support, etc. will be developed and agreed to during scheduled and unscheduled meetings as the Missions Systems develop, system problems arise, and system changes are made.  All specific (sub) tasks, etc. will be recorded in contractor-prepared minutes and agreed to by the appropriate Program Management Office and/or AISS Management Office and the contractor (A004).
+
+INSPECTION AND ACCEPTANCE
+
+QUALITY CONTROL PLAN
+
+
+
+The contractor shall develop and maintain an effective quality control program to ensure services are performed in accordance with this PWS.  The contractor shall develop and implement procedures to identify, prevent, and ensure non-recurrence of defective services.  
+
+GOVERNMENT QUALITY ASSURANCE
+
+
+
+The Government will evaluate the contractor’s performance for compliance with the requirements set forth in this PWS.  The Government will monitor the contractor’s performance under this contract by performing checks as contained in the Quality Assurance Surveillance Plan (QASP).  
+
+
+
+Inspection and acceptance by the Government of satisfactory services provided is contingent upon the contractor performing in accordance with the terms and conditions of this contract.  The COR or representative, the CO or representative, and the contractor’s representative(s) will meet periodically to review performance and inspect work.  The meeting may occur at the place of performance as determined by the Government.  This requirement is not in lieu of the FAR Inspection and Acceptance terms, but in addition to those terms.
+
+Performance Measurement
+
+The Government will periodically compare the contractor’s performance to the work accomplishments, schedule, and the Service Summary (SS) evaluations gathered during work accomplishment.  Work performed under the contract is subject to Government inspection and evaluation at all times.  
+
+PLACE OF PERFORMANCE
+
+Contractor activities will be conducted at Scott AFB and other sites designated by the Government.  All meetings, reviews, and audits will be held at Scott AFB or the local contractor facilities, except when alternate locations are agreed upon by the contractor and the Government.   
+
+Hours of Work
+
+Typical work hours for the Government are between the hours of 0730 and 1630, Monday through Friday.  Contractor personnel providing situational support may be required to support three-shift functions or as specified by the COR.  Certain PWS requirements, like the Level 3 on-call support of the production environment, may dictate additional duty hours to include 24/7/365 support.    
+
+Section 508 Compliance
+
+All deliverables shall comply with Section 508 of the Rehabilitation Act of 1973 (29 U.S.C. 794d) and the Architectural and Transportation Barriers Compliance Board Electronic and Information Technology (EIT) Accessibility Standards (36 CFR part 1194).
+
+SPECIAL INSTRUCTIONS
+
+Applicable Regulations, Specifications, and Standards
+
+The Government shall also provide the contractor with access to DoD, United States Air Force, Defense Information Systems Agency and 375th CSPTS (or its successor organization) publications, directives, and policy letters, and any changes to this information as they are received.
+
+Travel Expense and Other Direct Costs Reimbursement
+
+The contractor may be required to travel worldwide in the performance of this PWS.  All contractor travel shall be recommended to the Government COR and approved by the CO.  The CO shall confirm the availability of funds prior to the contractor incurring any travel expenses.  The Government shall reimburse the contractor for other than local travel expenses in accordance with the FAR 31.205-46.      
+
+Overnight Travel 
+
+Travel (other than local) and related lodging and meals, as well as special tools, and similar items are anticipated during the performance of this contract.  Overnight travel expenses will be reimbursed at cost and no fee.  Overnight travel costs shall be reimbursed IAW FAR 31.205-46.
+
+Travel Reimbursement. 
+
+Per Diem and travel rates shall be reimbursed on an actual cost basis.  Airfare shall be the prevailing rates for commercial airlines at economy class.  The most reasonable means of ground transportation (i.e. taxi, bus, rental car) shall also be used.  Should the contractor encounter extenuating circumstances warranting the need to purchase a fully refundable/fully reimbursable airfare, the contractor shall obtain written approval from the COR.  The contractor must be prepared to justify the more costly means of travel.  Travel costs shall be reimbursed IAW FAR 31.205-46.  
+
+
+
+Instances in which the non-refundable airfare is not used for the intended date and/or trip, the contractor should pursue changing the airfare with the air carrier upon Government approval.  The Government will pay the contractor for the change fees in an amount that is justified and reasonable. In circumstances where it is not possible or practical for the person initially named to travel to do so, and the contractor cannot reuse the ticket, the Government, upon providing the PMO and AISS Management Office (AMO) with documentation supporting the contractor’s due diligence in attempting to re-use the airfare, will reimburse the contractor the full price of the non-refundable airfare.
+
+
+
+At least five working days prior to the travel start date, the contractor shall submit a travel itinerary and estimated cost to the COR and CO.  The COR will confirm the need for travel, and the CO will confirm the availability of funds.     
+
+
+
+The Government will not reimburse local travel and related expenses to the contractor.  Local travel is defined as any travel 100 miles or less one-way.  
+
+OTHER DIRECT COSTS
+
+In accordance with existing Government guidelines for expenses, the contractor may submit charges supporting the delivery of requested services for the accomplishment of contract activities.  All contractor other direct costs shall be recommended to the Government COR and approved by the CO prior to the contractor incurring any expenses.  
+
+Consumables
+
+The contractor will provide all consumable materials.  These materials are those items that are not reusable by the Government after initial use.  Some materials that fall within this area include paper, pens, pencils, markers, tape, staples, tacks, toner cartridges, disks, binders, light bulbs, etc.
+
+Non-Consumables
+
+The Government will reimburse the contractor, as an ODC, those costs incurred by the contractor for the purchase of Government-approved equipment, maintenance support, licensing, and spare parts.  All non-consumable equipment and supplies billed to the Government as ODC shall be maintained, accounted for, and disposed of in accordance with paragraph 2.3.3, Asset Management.
+
+Work Break Down Structure And Performance-Based Management
+
+The contractor shall establish and integrate with the MAF C2, ITV/Business Systems Work Breakdown Structure (WBS) to Level 4 for the following Level 3 WBS.  The contractor shall maintain sufficient detail within the WBS to support Performance-Based Management and shall support MAF C2, ITV/Business Systems efforts in tracking and maintaining the Integrated Master Schedule (A005) within Microsoft Project.
+
+
+
+ADMINISTRATIVE CONSIDERATION
+
+Points of Contact
+
+Contracting Office
+
+Name, address, and phone number of the CO will be provided at time of award and as otherwise deemed necessary by the contracting office.
+
+Program Office
+
+Name, address, and phone numbers of the Program Office POCs will be provided at time of award and as otherwise deemed necessary by the Program Office.
+
+TRANSITION 
+
+Phase-in
+
+To minimize any decreases in productivity and to prevent possible negative impacts on additional services, the contractor shall have personnel on board, during the 90 day phase in period.  During the phase in period, the contractor shall become familiar with performance requirements in order to commence full performance of services on the contract start date.  During phase-in, the Government will physically transfer all Government-provided equipment, materials, property and COTS to the incoming contractor for which at this point forward, the contractor shall account for and maintain.  
+
+Phase-out
+
+When there is a change in contractor upon award of a new contract or at anytime the operation reverts to the DoD, there will be a phase-out period associated with the transfer of records/data by the incumbent.  Not later than 60 days prior to the end of the contract or as directed by the Government, the contractor will provide the Government with a phase-out/transition plan.  The phase-out plan will detail how all taskings will be transferred to the successor.  The incumbent and successor contractor shall cooperate during phase-out orientation that will begin immediately after follow-on contract award or whenever the CO directs the changeover.  During the phase-out period, the incumbent contractor shall be fully responsible for PWS performance requirements and cooperate to the extent required to permit an orderly changeover to the successor.  The incumbent contractor is responsible for protecting Government Intellectual Property.  The contractor shall provide a current inventory list, notate any discrepancies, complete all necessary documentation, and physically transfer all Government Furnished Equipment (GFE), materials, property, and COTS to the Government prior to end of contract.  The Government remains responsible for facilitating GFE transfer from the incumbent to the successor contractor (A006).
+
+
+
+Data Deliverables
+
+
+
+Contract Data Requirements are captured in Exhibit A – Contract Data Requirements Lists.  Note, the number of days shown in the CDRLs refers to work days unless otherwise specified.  When subsequent date of submissions is a weekend or holiday the submission due date is the day after.
+
+
+
+
+
+
+
+
+Exhibit A — Contract Data Requirements Lists
+
+
+
+RFP FA4452-12-R-0002
+
+_______________________________________________
+
+
+
+
+
+Prepared by
+
+Air Mobility Command (AMC)
+
+Moility Air Force (MAF) Programs Division
+
+
+
+
+
+January 17, 2012
+
+
+
+
+
+Ms. Gail VanWinkle, GS-15
+
+HQ AMC/A6I
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This page intentionally left blank.
+
+
+
+Index of CDRLs
+
+Data Item Numbers and Titles
+
+ADMINISTRATIVE
+
+
+
+A001	TECHNICAL & MANAGEMENT WORK PLAN	
+
+A002	CONTRACTOR PROGRESS, STATUS & MANAGEMENT REPORT	
+
+A003	FUNDS and LABOR HOUR EXPENDITURE REPORT	
+
+A004	AGENDA and MINUTES	
+
+A005	INTEGRATED MASTER SCHEDULE	
+
+A006	MANAGEMENT PLAN	
+
+A007	MONTHLY STATUS REPORT	
+
+A008	Monthly Activity Reports (Asset Management)	
+
+A009	SCIENTIFIC & TECHNICAL REPORTS	
+
+A010	CONTINUITY OF OPERATIONS PLAN	
+
+A011	TRIP REPORT	
+
+A012	Conference / Demo Support Plan
+
+A013	Risk Management Plan
+
+A014	Proposals and Estimates
+
+A015	Memorandums and Agreements
+
+
+
+ENGINEERING
+
+
+
+B001	Engineering PLAN	
+
+B002	INTERFACE REQUIREMENTS SPECIFICATION	
+
+B003	INTERFACE DESIGN DESCRIPTION	
+
+B004	DATABASE DESIGN DESCRIPTION	
+
+B005	Version DESCRIPTION	
+
+B006	SYSTEM/SUBSYSTEM DESIGN DESCRIPTION	
+
+B007	Change Requests/Problem Reports	
+
+B008	REQUEST FOR DEVIATION		
+
+B009	COMPUTER SOFTWARE END ITEMS	
+
+B010	QUALITY PLAN
+
+B011	CONFIGURATION MANAGEMENT PLAN	
+
+B012	BASELINE DESCRIPTION	
+
+B013	Asset Management Plan	
+
+B014	TOPOLOGY & CONNECTIVITY DIAGRAM	
+
+B015	FACILITY DRAWING
+
+B016	System Architecture Diagrams	
+
+B017	Physical Configuration Audit Report	
+
+
+
+TESTING
+
+
+
+C001	TEST/INSPECTION REPORT	
+
+C002	TEST PROCEDURES/PLAN	
+
+
+
+TRAINING
+
+D001	TRAINING SITUATION DOCUMENT	
+
+D002	TRAINING PROGRAM STRUCTURE DOCUMENT	
+
+D003	TRAINING CONDUCT SUPPORT DOCUMENT	
+
+
+
+ 
+
+
+
+Index of Data Item Descriptions
+
+
+
+ADMINISTRATIVE
+
+
+
+DI-MGMT-81117, TECHNICAL AND MANAGEMENT WORK PLAN	
+
+DI-MGMT-80227, CONTRACTOR'S PROGRESS, STATUS AND MANAGEMENT REPORT	
+
+DI-FNCL-81537, FUNDS AND LABOR HOUR EXPENDITURE REPORT	
+
+DI-ADMN-81249A, CONFERENCE AGENDA	
+
+DI-ADMN-81250A, CONFERENCE MINUTES	
+
+DI-MGMT-81650, INTEGRATED MASTER SCHEDULE	
+
+DI-MGMT-80004, MANAGEMENT PLAN	
+
+DI-ILSS-81251, EQUIPMENT INVENTORY RECORDS	
+
+ANSI-Z39.18, SCIENTIFIC & TECHNICAL REPORTS	
+
+AFI 10-208, CONTINUITY OF OPERATIONS PROGRAM	
+
+AFH 33-337, TONGUE & QUILL
+
+A6I Guide 63-102, Risk Management Guide	
+
+
+
+
+
+ENGINEERING
+
+
+
+DI-IPSC-81434A, INTERFACE REQUIREMENTS SPECIFICATION	
+
+DI-IPSC-81436A, INTERFACE DESIGN DESCRIPTION	
+
+DI-IPSC-81437A, DATABASE DESIGN DESCRIPTION		
+
+DI-IPSC-81432A, SYSTEM/SUBSYSTEM DESIGN DESCRIPTION	
+
+DI-CMAN-80640C, REQUEST FOR DEVIATION	
+
+ISO-10005, QUALITY MANAGEMENT – GUIDELINES FOR QUALITY PLANS	
+
+DI-CMAN-81121, BASELINE DESCRIPTION DOCUMENT	
+
+MIL-HDBK-61A(SE) Configuration Management Handbook 
+
+US NATIONAL CAD STANDARD VERSION 3.1, JANUARY 2005
+
+
+
+TESTING
+
+
+
+DI-NDTI-80809B, TEST/INSPECTION REPORT	
+
+DI-NDTI-80603, TEST PROCEDURE	
+
+DI-IPSC-81438A, SOFTWARE TEST PLAN	
+
+IEEE 12207/1, EIA GUIDE FOR INFORMATION TECHNOLOGY SOFTWARE LIFE CYCLE PROCESSES	
+
+
+
+TRAINING
+
+
+
+DI-SESS-81517B, TRAINING SITUATION DOCUMENT	
+
+DI-SESS-81521B, TRAINING PROGRAM STRUCTURE DOCUMENT	
+
+DI-SESS-81523B, TRAINING CONDUCT SUPPORT DOCUMENT	
+
+
+
+
+
+
+
+
+Attachment I – Acronym List
+
+
+
+
+
+
+
+NON-DISCLOSURE AGREEMENT FOR CONTRACTOR EMPLOYEES
+
+SUPPORTING AMC CONTRACTS
+
+
+
+NOTE: This Non-Disclosure Agreement is an agreement designed for use by contractor (including subcontractor) employees assigned to work on AMC contracts. Its use is designed to protect non-public Government information from disclosure and prevent violations of federal statutes/regulations. The restrictions contained in this agreement also serve contractors by promoting compliant behavior that keeps contractors eligible to compete for Government contracts. In addition to the potential impact on future business opportunities, failure to abide by this agreement could result in administrative, civil or criminal penalties specified by statute or regulation.
+
+
+
+"Non-public information," as used herein, includes trade secrets, confidential or proprietary business information (as defined for Government employees in 18 USC 1905); advance procurement information (future requirements, acquisition strategies, statements of work, budget/program/planning data, etc.); source selection information (proposal rankings, source selection plans, contractor bid or proposal information); information protected by the Privacy Act (social security numbers, home addresses, etc.); sensitive information protected from release under the Freedom of Information Act (pre-decisional deliberations, litigation materials, privileged material, etc.); and information that has not been released to the general public and has not been authorized for such release (as defined for Government employees in 5 CFR 2635.703).
+
+
+
+1. I, ____________________ currently an employee of ____________________________, hereby agree to the terms and conditions set forth below:
+
+
+
+2. I understand that I will have access to confidential business information (as defined by 18 USC 1905), contractor bid or proposal information (as defined by FAR 3.104-3), and/or source selection sensitive information (as defined by FAR 3.104-3) either for contract performance or as a result of working in a AMC facility or of working near AMC personnel, contractors, visitors, etc. I fully understand that such information is sensitive and must be protected in accordance with 41 U.S. Code Section 423 and 18 U.S. Code Section 1905 and FAR Part 3. I also certify that I do not have any real or apparent conflicts of interest with respect to the information disclosed. If any potential conflicts of interest, real or otherwise, do present themselves, then I shall immediately disclose the pertinent information that may be a potential conflict to an agency ethics official who shall review the circumstances.
+
+
+
+3. In the course of performing under contract/order # _________________________ or some other contract or subcontract for the AMC I agree to:
+
+a) Use only for Government purpose any and all confidential business information, contractor bid or proposal information, and/or source selection sensitive information to which I am given access. I agree not to disclose "nonpublic information" by any means (in whole or in part, alone or in combination with other information, directly or indirectly or derivatively) to any person except to a U.S. Government official with a need to know or to a non-Government person (including, for example, a person in my company, affiliated companies, subcontractors, etc.) who has a need to know related to the immediate contract/order, has executed a valid form of this non-disclosure agreement, and receives prior clearance by the contracting officer. All distribution of the documents will be controlled with the concurrence of the contracting officer.
+
+b) Not use such information for any non-Governmental purposes, including, for example, the preparation of bids or proposals, or the development or execution of other business or commercial ventures. 
+
+c) Store the information in such a manner as to prevent inadvertent disclosure or releases to individuals who has not been authorized access to it.
+
+4.  I understand that I must never make an unauthorized disclosure or use of confidential business information, contractor bid or proposal information, and/or source selection sensitive information unless:
+
+
+
+a) The information has otherwise been made available without restriction to the Government, to a competing contractor, or to the public;
+
+b) The contracting officer determines that such information is not subject to protection from release.
+
+
+
+5.  I agree that I shall not seek access to "non-public information" beyond what is required for the performance of the services I am contracted to perform. I agree that when I seek access to such information or attend meetings or communicate with other parties about such information, I will identify myself as a contractor. Should I become aware of any improper or unintentional release or disclosure of "non-public information," I will immediately report it to the contracting officer in writing. I agree that I will return all forms (including copies or reproduction of original documents) of any "non-public information" provided to me by the Government for use in performing my duties to the control of the Government when my duties no longer require this information. By signing below, I certify that I have read and understand the terms of this Non-Disclosure Agreement and voluntarily agree to be bound by its terms.
+
+
+
+________________________________________________________
+
+Signature of Employee/ Date
+
+
+
+________________________________________________________
+
+Printed Employee Name
+
+
+
+________________________________________________________
+
+Signature of Company Official/ Date
+
+
+
+________________________________________________________
+
+Printed Company Official Name
+
+
+
+
+
+
+
+Deliverables
+
+Monthly Status Report (A007)
+
+Technical and Management Work Plan (A001)
+
+Contractor’s Progress, Status and Management Report (A002)
+
+Management Plan (A006)
+
+Quality Plan (B010)
+
+Funds and Labor Expenditure Report (A003)
+
+Integrated Master Schedule (A005)
+
+Agenda and Minutes (A004)
+
+Staffing Plan (A001)
+
+Trip Reports (A011)
+
+Risk Management Plan (A013)
+
+
+
+Deliverables
+
+Configuration Management Plan (B011)
+
+Topology and Connectivity Diagram (B014)
+
+Facility Drawings  (B015)
+
+Scientific and Technical Report (Technology Refresh Plan) (A009)
+
+Computer Software End Items (Special Release Guide) (B009)
+
+Scientific and Technical Report (Post Installation Reports) (A009)
+
+Computer Software End Items (Installation Procedures)  (B009)
+
+Computer Software End Items (Operations Documentation)  (B009)
+
+Version Description (B005)
+
+Database Design Description (DBDD) (B004)
+
+Interface Design Description (IDD) (B003)
+
+Interface Requirements Specification (IRS) (B002)
+
+Engineering Plan  (B001)
+
+System/Subsystem Design Description (SSDD) (B006)
+
+System Architecture Diagrams (B016)
+
+Computer Software End Items (Version Release Kit) (B009)
+
+Change Requests /Problem Reports (B007)
+
+Request for Deviation (B008)
+
+Test Specifications/ Cases/ Recommendations (C002)
+
+Test Descriptions (C002)
+
+Rough Order of Magnitude (ROMs)/Cost Proposals (A014)
+
+Computer Software End Items (System Operator’s Manual)  (B009)
+
+Computer Software End Items (B009)
+
+Scientific and Technical Report (Technical Proposals)  (A009)
+
+Baseline Descriptions (B012)
+
+Test Reports (C001)
+
+
+
+Deliverables
+
+Memorandum of Agreements/Understanding (A015)
+
+Scientific and Technical Reports (Task Transition Plan) (A009)
+
+Scientific and Technical Reports (A009)
+
+Configuration Management Plan (B011)
+
+Scientific and Technical Reports (Technology Refresh Plan) (A009)
+
+Topology and Connectivity Diagram (B014)
+
+Service Level Agreements (SLAs) (A015)
+
+Project Support Agreements (PSAs) (A015)
+
+Scientific and Technical Reports (Fielding Plans) (A009)
+
+Monthly Activity Reports (Asset Management – Equipment Inventory Records) (A008)
+
+Asset Management Reports (Annual Inventory Report) (A008)
+
+Physical Configuration Audit Reports (B017)
+
+Baseline Descriptions (B012)
+
+Continuity of Operations Plan (COOP) (A010)
+
+Conference / Demo Support Plan (A012)
+
+Asset Management Plan (B013)
+
+Engineering Plan  (B001)
+
+Facility Drawings  (B015)
+
+System Architecture Diagrams (B016)
+
+
+
+Deliverables
+
+Test Procedures (C002)
+
+Test Reports (C001)
+
+Test Plans & Test Cases (C002)
+
+Test Contingency Plan (C002)
+
+Test Description (C002)
+
+
+
+Deliverables
+
+Differences Training Guide (D003)
+
+Training Plan (D002)
+
+Lesson Plans (D003)
+
+AISS Training Syllabus (D003)
+
+Training Needs Assessment (TNA) (D001)
+
+Computer Based Training (CBT) Course (D003)
+
+User Manuals (D003)
+
+All Other Training Materials (D003)
+
+
+
+Performance Objective
+
+Tasks
+
+Performance Threshold
+
+Technical Expertise
+
+2.1, 2.2, 2.3 
+
+The contractor shall provide level of expertise, coordination, and support necessary to accomplish the contract in a responsive, satisfactory, and timely manner.  The Government shall receive no more than one customer complaint per month in performance of required tasks, and all complaints shall be resolved not later than one working day beyond the agreed-to time period.
+
+Responsiveness to Noted Deficiencies
+
+2.1, 2.2, 2.3 
+
+The contractor shall establish a corrective action program that precludes the Government from having to follow-up with the contractor in order to ensure correction of a noted deficiency.  All deficiencies shall be corrected not later than one working day beyond the agreed-to time period.
+
+Contractor Response to Request 
+
+2.1, 2.2, 2.3
+
+When a Government request is received, the contractor will initially respond within one hour and provide a more detailed response within one day or a mutually agreed upon time.   
+
+Technical Writing and Reports
+
+2.1, 2.2, 2.3
+
+All data deliverables shall be produced using prescribed formats, software tools and software versions as agreed to by the Government.  All deliverables shall meet professional standards for technical writing and the requirements set forth in the contract.  All deliverables shall not have more than two inaccuracies for cross-referencing source and reference material content.  All deliverables shall clearly identify assumptions and personal opinions.  Technical writing and reports shall be delivered to the Government by the agreed to schedule or in accordance with the terms of the contract with no more than two deliverables per month not being delivered on time.  Late deliverables shall be submitted not later than one working day beyond the agreed-to time period. 
+
+Briefs, Point/Talking Papers, e-mails, and Staff Summary Sheets
+
+2.1, 2.2, 2.3
+
+All deliverables shall be produced using prescribed formats, software tools and software versions agreed to by the Government.  All deliverables shall conform to the tools and templates Air Force Tongue & Quill as well as standard business practices.  All deliverables shall not have more than one inaccuracy.  All deliverables shall be in accordance with an agreed schedule or in accordance with the terms of the contract with no more than two deliverables per month not being delivered on time.  Late deliverables shall be submitted not later than one working day beyond the agreed-to time period.
+
+Schedule
+
+2.1, 2.2, 2.3
+
+All schedules shall be published in the Project Server database; and updated weekly, with no more than one update per month not being updated on time.  Late updates shall be submitted not later than one working day beyond the agreed-to time period.
+
+Technical On-call Support (outside normal duty hours)
+
+2.3
+
+Upon notification of on-call support request, the contractor shall begin actions within one hour of notification 98% of the time, and within two hours, 100% of the time.  
+
+Configuration Management Support
+
+2.2, 2.3
+
+The contractor shall provide Configuration Management support in accordance with the PWS.  All deliverables (to include audit reports and CCB minutes) shall be in accordance with an agreed schedule or in accordance with the terms of the contract with no more than two deliverables per month not being delivered on time.  Late deliverables shall be submitted not later than one working day beyond the agreed-to time period. All requests for baseline information will be provided by the agreed-to time.  Late provision of information shall be provided no later than one working day beyond the agreed-to time period.   All deficiencies shall be corrected not later than one working day beyond the agreed-to time period.
+
+Asset Management Support
+
+2.2, 2.3
+
+The contractor shall provide Asset Management support in accordance with the PWS.  All deficiencies shall be corrected not later than one working day beyond the agree-to time period.
+
+Organizational Conflict of Interest (OCI)
+
+6.4
+
+The contractor shall ensure that all Organizational Conflict of Interest and information access concerns are resolved promptly.  Provide a daily update on status on the contractor handling of organizational conflict of interest until OCI is resolved.
+
+
+
+CLIN
+
+Level 2
+
+Level 3
+
+0001
+
+2.1 Process Support Services
+
+2.1.1 Contract Deliverable Documentation
+
+0001
+
+2.1 Process Support Services
+
+2.1.2  Contract and Task Support Meetings
+
+0001
+
+2.1 Process Support Services
+
+2.1.3  Quality Assurance Program
+
+0001
+
+2.1 Process Support Services
+
+2.1.4  Risk Management
+
+0002
+
+2.2 Enterprise Support Services 
+
+2.2.1  Contract Deliverable Documentation
+
+0002
+
+2.2 Enterprise Support Services 
+
+2.2.2  Contractor Configuration
+
+          Management Program
+
+0002
+
+2.2 Enterprise Support Services 
+
+2.2.3  Product and Services Support
+
+0002
+
+2.2 Enterprise Support Services 
+
+2.2.4  Programmatic and System
+
+          Architecture Support
+
+2.2.5  Upgrade and Modernization Support
+
+2.2.6  Security Practices
+
+2.2.7  Assurance
+
+0003
+
+2.3 MAF C2, ITV/Business Systems Support Services
+
+2.3.1  Program Management Office
+
+          Documentation Support
+
+0003
+
+2.3 MAF C2, ITV/Business Systems Support Services
+
+2.3.2  Configuration Management
+
+0003
+
+2.3 MAF C2, ITV/Business Systems Support Services
+
+2.3.3  Asset management
+
+0003
+
+2.3 MAF C2, ITV/Business Systems Support Services
+
+2.3.4  Technical Support and Engineering
+
+          Services
+
+0003
+
+2.3 MAF C2, ITV/Business Systems Support Services
+
+2.3.5  Security and Information Assurance
+
+0003
+
+2.3 MAF C2, ITV/Business Systems Support Services
+
+
+
+2.3.6  CSA/FSA Support Work Center
+
+          Environment Administration Support
+
+0004
+
+2.3.7 Testing Support Services
+
+
+
+2.3.7.1  Requirements Analysis
+
+0004
+
+2.3.7 Testing Support Services
+
+
+
+2.3.7.2  Test Planning
+
+0004
+
+2.3.7 Testing Support Services
+
+
+
+2.3.7.3  Collaborative Testing
+
+0004
+
+2.3.7 Testing Support Services
+
+
+
+2.3.7.4  Test Execution
+
+0004
+
+2.3.7 Testing Support Services
+
+
+
+2.3.7.5  No Service Interruption Testing
+
+0005
+
+2.3.8 Training Support Services
+
+
+
+2.3.8.1  Training Development
+
+0005
+
+2.3.8 Training Support Services
+
+
+
+2.3.8.2  Training Execution
+
+0005
+
+2.3.8 Training Support Services
+
+
+
+2.3.8.3  Training Quality Assurance
+
+
+
+Acronym
+
+Text
+
+ACFP
+
+Advanced Computer Flight Plan
+
+ADIG
+
+Architecture Data Integration Group
+
+AF
+
+Air Force
+
+AFCERT
+
+Air Force Computer Emergency Response Team
+
+AFI  
+
+Air Force Instruction
+
+AFM
+
+Air Force Manual
+
+AIS
+
+Automated Information System
+
+AISS
+
+Applications, Infrastructure and Systems Support
+
+AMC
+
+Air Mobility Command
+
+AMO
+
+AISS Management Office
+
+ATC  
+
+Authorization to Connect
+
+ATO  
+
+Authorization to Operate
+
+C2
+
+Command and Control
+
+C&A  
+
+Certification and Accreditation
+
+CAMPS  
+
+Consolidated Air Mobility Planning System
+
+CBT
+
+Computer Based Training
+
+CCB  
+
+Configuration Control Board
+
+CDPM
+
+Contractor Deputy Program Manager
+
+CDRL
+
+Contract Data Requirements Lists
+
+CGP
+
+Corporate Governance Process
+
+CI
+
+Configuration Items
+
+CM
+
+Configuration Management
+
+CMDB
+
+Configuration Management Database
+
+CML
+
+Configuration Management Library
+
+CMP
+
+Configuration Management Plan
+
+COINS
+
+Commercial Operations Integrated System
+
+COOP
+
+Continuity of Operations Plan
+
+COR
+
+Contracting Officer Representative
+
+COTS
+
+Commercial Off-the-Shelf 
+
+CPM
+
+Contractor Program Manager
+
+CQAE
+
+Chief Quality Assurance Engineer
+
+CR
+
+Change Request
+
+CRDB
+
+Change Request Database
+
+CSA
+
+Client Support Administrator
+
+CSE
+
+Chief Systems Engineer
+
+CSPTS
+
+Communications Support Squadron
+
+DBDD
+
+Database Design Document
+
+DIACAP
+
+DoD Information Assurance Certification and Accreditation Process
+
+DID
+
+Data Item Description
+
+DoD
+
+Department of Defense
+
+DoDI
+
+Department of Defense Instruction
+
+DP
+
+Development Plan
+
+EAS
+
+Environment Administration Support
+
+EIT
+
+Electronic and Information Technology
+
+ESM
+
+Enterprise Services Management
+
+FAR
+
+Federal Acquisition Regulation
+
+FFRDC
+
+Federally-Funded Research and Development Center
+
+FSA
+
+Functional System Administrator
+
+GATES
+
+Global Air Transportation Execution System
+
+GCCS
+
+Global Command and Control System
+
+GDSS
+
+Global Decision Support System
+
+GFE
+
+Government Furnished Equipment
+
+GOTS
+
+Government Off-the-Shelf 
+
+HBSS
+
+Host Based Security System
+
+HDD
+
+Hardware Design Description
+
+HQ
+
+Headquarters
+
+HVAC
+
+Heat, Ventilation and Air Conditioning
+
+HVD
+
+Hardware Version Description
+
+IA
+
+Information Assurance
+
+IAT
+
+Information Assurance Technician
+
+IAVA
+
+Information Assurance Vulnerability Alert
+
+IAW
+
+In Accordance With
+
+IDD
+
+Interface Design Document
+
+IRS
+
+Interface Requirements Specification
+
+ISP
+
+Interoperability Support Plan
+
+IT
+
+Information Technology
+
+ITV
+
+In-Transit Visibility
+
+JAD
+
+Joint Application Development
+
+JCS
+
+Joint Chiefs of Staff
+
+JITC
+
+Joint Interoperability Test Command
+
+JTR
+
+Joint Travel Regulation
+
+LAN
+
+Local Area Network
+
+LDM
+
+Logical Data Model
+
+LEADS
+
+Law Enforcement Agency Data System
+
+MAC
+
+Mission Assurance Category
+
+MAF`
+
+Mobility Air Force 
+
+MAJCOM
+
+Major Command
+
+MEIS  
+
+Mobility Enterprise Information Service
+
+MIE
+
+Mobility Infrastructure Engineering
+
+MIF  
+
+Mission Index Flying  
+
+MOA
+
+Memorandum of Agreement
+
+MSI
+
+Mission Systems Infrastructure
+
+MTP
+
+Master Test Plan
+
+NCA
+
+National Command Authority
+
+NCES
+
+Network Centric Enterprise Services
+
+NSI
+
+No Service Interruption
+
+OCI
+
+Organizational Conflict of Interest
+
+ODC
+
+Other Direct Costs
+
+OIMP
+
+OCI Identification and Mitigation Plan
+
+OSHA
+
+Occupational Safety and Health Administration
+
+PBL
+
+Production Baseline
+
+PCA
+
+Physical Configuration Audit
+
+PDM
+
+Physical Data Model
+
+PKI
+
+Public Key Infrastructure
+
+PMO
+
+Program Management Office
+
+PMR
+
+Program Management Review
+
+POC
+
+Point of Contact
+
+PSA
+
+Project Support Agreements
+
+PWS
+
+Performance Work Statement
+
+QA
+
+Quality Assurance
+
+QASP
+
+Quality Assurance Surveillance Plan 
+
+ROM
+
+Rough Order of Magnitude
+
+RSA
+
+Release Specification Agreement
+
+SAN
+
+Storage Area Network
+
+SDD
+
+Software Design Description
+
+SDF
+
+Service Definition Framework
+
+SDLC
+
+Systems Development Lifecycle
+
+SI
+
+Systems Integration
+
+SLA
+
+Service Level Agreement
+
+SRS
+
+Software Requirements Specification
+
+SSDD
+
+System/Subsystem Design Description
+
+SVD
+
+Software Version Description
+
+SWG
+
+Services Working Group
+
+TBL
+
+Test Baseline
+
+TBMCS
+
+Theater Battle Management Core System
+
+TCNO
+
+Time Compliance Network Order
+
+TISP
+
+Tailored Information Support Plan
+
+TMR
+
+Task Management Review
+
+TNA
+
+Training Needs Assessment
+
+TP
+
+Test Plan
+
+TRANSCOM
+
+Transportation Command (Abbreviated USTRANSCOM)
+
+TRDM
+
+TRANSCOM Reference Data Management
+
+TRR
+
+Test Readiness Review
+
+TWG
+
+Technical Working Group
+
+UPS
+
+Uninterruptable Power Supply
+
+USAF
+
+United States Air Force
+
+USTRANSCOM
+
+United States Transportation Command
+
+WAN
+
+Wide Area Network
+
+WBS
+
+Work Breakdown Structure
+
+
+

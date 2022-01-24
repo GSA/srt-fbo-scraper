@@ -1,0 +1,117 @@
+Minimum Requirements
+
+For
+
+Pressure Calibration System
+
+
+
+General Overview: The Pressure Calibration System will be used in the Combustion Optimization And Laser (COAL) Laboratory. An atmospheric pressure combustion test facility is suitable for demonstrations, evaluations and experiments on combustors and combustion systems.  The facility has two legs of independently controllable (0.07 kg/s & 0.2 kg/s), heated (500F) air.  A third leg of unheated air can provide flow up to 1 kg/s.  Two research rigs are currently in place.  First, an annular Ultra Compact Combustor facility for understanding how to combine the compressor, combustor, and turbine into an integrated system.  The UCC utilizes liquid and gaseous fuels which may be used with overall equivalence ratios up to one and cavity equivalence ratios as high as φcav = 4.  The second facility features a well stirred reactor which enables precise control of combustion species and high temperatures for use on various research topics such as fuel characterization.  Currently the facility is configured for the evaluation of secondary burning at film cooling holes for turbines.  Both facilities are fully instrumented for temperature, pressure and mass flows. The facilities will require frequent pressure/vacuum calibration to maintain data accuracies and flow rates required for this test facility. 
+
+
+
+Minimum requirements:
+
+Pressure ranges from 0 to 5 and 0 to 3 000 psi (0 to 35 kPa and 0 to 21 MPa)
+
+Precision of 0.005 % of reading
+
+Provide 0.003 % of full scale precision
+
+Stability: 0.0075 % of reading per year
+
+Time to setpoint: 20 seconds with no overshoot
+
+Control stability: 10 ppm
+
+Active matrix color screen with enhanced navigation menus
+
+Quartz Bourdon Tube reference pressure sensor with precision of +/- 0.003% FS and 1 year uncertainty of +/- (0.003% FS + 0.0075% Rdg)
+
+Single Reference Pressure Sensor operates in both absolute and gauge modes without a barometric reference.
+
+Pressure controller manufacturer offers a commercial off the shelf, comprehensive pressure calibration software to run automated pressure tests with the controller.  Calibration software interfaces with common test instrumentation like multi-meters, thermal chambers and programmable power supplies.  It also generates customized calibration certificates
+
+Vacuum Pump with auto-vent, 85 liter/minute, 50/60 Hz
+115/230 VAC selectable
+
+Instruments up to 2,500 psi (17.2 MPa) reach setpoint in 20 seconds or less into a 15 cubic inch (245 cc) volume, with no overshoot, to allow high-speed pressure test and calibration.
+
+Provides two user-selectable control modes: active and passive mode. In active mode, the system is continually maintaining the setpoint and can compensate for small leaks and pressure changes due to temperature. In passive mode, the user defines a control band and the system will turn off the controller once it achieves the setpoint within the control band. In a leak-free and temperature- stable system, passive mode contributes no additional uncertainty, providing optimum performance.
+
+For calibrations where the increments are fixed intervals, enter a user defined step value. The system increases or decreases the pressure by the step amount with the jog dial.
+
+The system will automatically exercise the device under test prior to the calibration run.
+
+For frequently used or lengthy calibrations, the system will store up to 20 user-defined programs/profiles with up to 1000 steps total in internal memory.
+
+The system will be provided with both an RS-232 and IEEE-488 interface, with syntax follows SCPI protocol for easy programming. LabVIEW® driver shall be available.
+
+The system will have the ability to select from over twelve standard units of measure, including inHg at 0 °C and 60 °F, kPa, bar, psi, inH2O at 4 °C, 20 °C and 60 °F, kg/cm2, mmHg at 0 °C, cmHg at 0 °C, and cmH2O at 4 °C, and two user defined units.
+
+The system will require vacuum pumps equipped with an auto-vent capability
+
+TRAINING AND DELIVERY
+
+Must also include acceptance testing data, instructions, and operational manual.
+
+WARRANTY
+
+Free from defects in material and workmanship, under normal and proper use in accordance with our instructions in the maintenance manual for a period of one year.
+
+It is the offeror's responsibility to be familiar with the applicable clauses and provisions. Clauses and provisions in full text may be accessed via the Internet at website  .
+
+The following FAR and DFARS provisions are incorporated by reference and apply to this acquisition: 
+FAR 52.212-1 Instructions to Offerors -- Commercial
+FAR 52.212-2 Evaluation Factors [the fill in portion of this clause is: technical and price]
+FAR 52.212-3 Representations and Certifications
+FAR 52.252-1 Solicitation Provisions Incorporated by Reference
+
+The following FAR and DFARS clauses are incorporated by reference and apply to this acquisition:
+FAR 52.212-4 Contract Terms and Conditions -- Commercial Items
+
+FAR 52.247-34 F.o.b. - Destination
+
+DFARS 252.203-7000 Requirements Relating to Compensation of Former DoD Officials
+
+DFARS 252.203-7002, Requirement to Inform Employees of Whistleblower Rights
+
+DFARS 252.211-7003 Item Identification and Valuation.
+
+DFARS 252.225-7002, Qualifying Country Sources as Subcontractors
+
+DFARS 252.232-7003 Electronic Submission of Payment Requests and Receiving Reports
+
+DFARS 252.232-7010 Levies on Contract Payments.
+
+DFARS 252.247-7023 Transportation of Supplies by Sea Alternate III 
+
+The following FAR and DFARS clauses are incorporated by full text and apply to this solicitation:
+
+FAR 52.212-5 Contract Terms and Conditions Required to Implement Statutes or Executive Orders -- Commercial Items:
+
+--FAR 52.204-10, Reporting Executive compensation and First-Tier Subcontract Awards
+
+--FAR  52.209-6, Protecting the Government’ Interest When Subcontracting with Contractors Debarred, Suspended, or Proposed for Debarment
+
+--FAR 52.219-4, Notice of Price Evaluation Preference for HUBZone Small Business Concerns
+
+--FAR 52.219-28 Post Award Small Business Program Representation
+--FAR 52.222-3 Convict Labor
+--FAR 52.222-19 Child Labor-Cooperation with Authorities and Remedies
+--FAR 52.222-21 Prohibition of Segregated Facilities
+--FAR 52.222-26 Equal Opportunity
+--FAR 52.222-36 Equal Opportunity  for Workers with Disabilities
+--FAR 52.223-18 Encouraging Contractor Policies to Ban Text Messaging while Driving
+--FAR 52.225-13 Restrictions on Certain Foreign Purchases
+--FAR 52.232-33 Payment by Electronic Funds Transfer-Central Contractor Registration –
+
+FAR 52.252-2, Clauses Incorporated by Reference
+
+FAR 52.252-4, Alterations in Contract “FAR 52.212-4(j) Reserved”
+
+DFARS 252.225-7000, Buy American Act and Balance of Payments Program
+
+DFARS 252.232-7006 Wide Area Workflow Payment Instructions
+AFFARS 5352.223-9000, Elimination of Use of Class I Ozone Depleting Substances
+

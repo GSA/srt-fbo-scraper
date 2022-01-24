@@ -1,0 +1,1671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FSOLICITATION.pdf%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us"/><script type="text/javascript">url="http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FSOLICITATION.pdf%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>
+                                                     Appendix A- OCIO Technical Requirements
+
+   1. The Contractor’s information systems shall be developed in accordance with the ED Lifecycle Management Framework (LCM), ACS-OCIO 1-106.
+
+
+   2. The Contractor shall ensure that the site complies with OMB Memorandum M-03-22
+      http://www.usa.gov/webcontent/regs_bestpractices/omb_policies/privacy.shtml which requires the posting of privacy policy.
+
+
+   3. A “.gov” hostname (typically hostname.ed.gov) is required for all government funded websites under OMB Memorandum M-05-04
+      (http://www.usa.gov/webcontent/regs_bestpractices/omb_policies/domains.shtml).
+
+
+   4. The Contractor shall ensure that any “ED-Sponsored “ content must should be  identified    prominently with Department of Education, and
+      the ED.gov logo should be displayed prominently and made a link to the ED.gov homepage. The compliance policy is described in the
+      http://www2.ed.gov/internal/wwwstds.html#sponsor.
+
+
+   5. The Contractor shall ensure that any non Federal sponsored websites or content (outside of .gov, .mil, .Fed.us, etc.) that is linked to
+      complies with “ED.gov” Management and Publishing Policies” at http://www2.ed.gov/internal/wwwstds.html#link and the OMB Memorandum
+      http://www.whitehouse.gov/sites/default/files/omb/memoranda/fy2005/m05-04.pdf .
+
+
+
+   1. The Contractor shall not employ a new webhosting service provider.  The Contractor shall host the website and its associated IT
+      infrastructure within the boundaries and classification level of a pre-existing FISMA certified boundary that has received Authorized To
+      Operate status by the U.S. Department of Education or the federal government’s FedRAMP program.
+
+
+
+   6. Internet Protocol version 6 (IPv6) The Contract shall provide COTS solutions that are IPv6 capable.  An IPv6 capable system or product
+      shall be capable of receiving, processing, transmitting and forwarding IPv6 packets and/or interfacing with other systems and protocols in
+      a manner similar to that of IPv4.  Specific criteria to be deemed IPv6 capable are:
+
+
+
+
+      An IPv6 Capable system must meet the IPv6 base requirements defined by the USGv6 Profile and Testing program as found here
+      “http://w3.antd.nist.gov/usgv6/testing.html”. Systems being developed, procured or acquired shall maintain interoperability with IPv4
+      systems/capabilities. Systems shall implement IPv4/IPv6dual-stack and shall also be built to determine which protocol layer to use
+      depending on the destination host it is attempting to communicate with or establish a socket with.  If either protocol is possible, systems
+      shall employ IPv6. The contractor shall provide IPv6 technical support for system development, implementation and management
+
+
+
+
+   7. IT Systems Security
+
+   The contractor, and all sub-contractors, shall comply with the Department of Education’s IT security policy requirements, specifically those
+   set forth in the ‘Handbook for Information Assurance Security Policy (OCIO-01)’, and other applicable procedures and guidance. The contractor,
+   and all sub-contractors, shall develop and implement management, operational and technical security controls to assure required levels of
+   protection for information systems.  The contractor, and all sub-contractors, shall further comply with all applicable Federal IT security
+   requirements including, but not limited to, the Federal Information Security Management Act (FISMA) of 2002, Office of Management and Budget
+   (OMB) Circular A-130 Appendix III, Homeland Security Presidential Directives (HSPD), and the National Institute of Standards and Technology
+   (NIST) standards and guidance.
+
+   These security requirements include, but are not limited to, the successful Certification and Accreditation (C&A) or Security Authorization
+   (SA) of the system (includes commercially owned and operated systems managed by the commercial vendor and its sub contractors, supporting
+   Department programs, contracts, and projects); obtaining a full Authority to Operate (ATO) before being granted operational status;
+   performance of annual self-assessments of security controls; annual Contingency Plan testing; performance of periodic vulnerability scans;
+   updating all information system security documentation as changes occur; and other continuous monitoring activities, which may include,
+   mapping, penetration and other intrusive scanning. Full and unfettered access for the Department’s third party Managed Security Services
+   Provider (MSSP)[1]  must be granted to access all computers and networks used for this system.  Additionally, when there is a significant
+   change to the system’s security posture, the system (Federal and commercial - prime and sub contractors included) must have a new C&A or SA,
+   with all required activities to obtain a new ATO, signed by the Authorizing Official (AO).
+
+   System security controls shall be designed and implemented consistent with NIST SP 800-53 Rev 3, ‘Recommended Security Controls for Federal
+   Information Systems and Organizations.’  All NIST SP 800‐53 controls must be tested / assessed no less than every 3 years, according to
+   federal and Department policy. The risk impact level of the system will be determined via the completion of the Department's inventory form
+   and shall meet the accurate depiction of security categorization as outlined in Federal Information Publishing Standards (FIPS) 199,
+   ‘Standards for Security Categorization of Federal Information and Information Systems.’
+
+   System security documentation shall be developed to record and support the implementation of the security controls for the system.  This
+   documentation shall be maintained for the life of the system.  The contractor, and all sub-contractors, shall review and update the system
+   security documentation at least annually and after significant changes to the system, to ensure the relevance and accurate depiction of the
+   implemented system controls and to reflect changes to the system and its environment of operation.  Security documentation must be developed
+   in accordance with the NIST 800 series and Department of Education policy and guidance.
+
+   The contractor, and all sub-contractors, shall allow Department employees (or Department designated third party contractors) access to the
+   hosting facility to conduct C&A/SA activities to include control reviews in accordance with NIST SP 800‐53, Rev. 3 and NIST SP 800‐53A.  The
+   contractor, and all sub-contractors, shall be available for interviews and demonstrations of security control compliance to support the C&A/SA
+   process and continuous monitoring of system security.   In addition, if the system is rated as ‘Moderate’ or ‘High’ for FIPS 199 risk impact,
+   vulnerability scanning and penetration testing shall be performed on the hosting facility and application as part of the C&A/SA process.
+   Appropriate access agreements will be reviewed and signed before any scanning or testing occurs.
+
+   Identified deficiencies between required NIST SP 800‐53 Rev. 3 controls and the contractor’s, and all sub-contractor’s implementation, as
+   documented in the Risk Assessment Report, System Security Plan (SSP) and Security Assessment Report (SAR), shall be tracked for mitigation
+   through the development of a Plan of Action and Milestones (POA&M) in accordance with the ‘Handbook for Information Assurance Security
+   Policy.’ Depending on the severity of the deficiencies, the Department may require remediation before an ATO is issued.
+
+   All awarded IT contracts shall ensure that:
+
+   1. Their IT product/system is monitored during all hours of operations using entrusted detective/preventive systems;
+   2. Their IT product/system has current antiviral products installed and operational;
+   3. Their IT product/system is scanned on a reoccurring basis;
+   4. Vulnerabilities are remediated in a timely manner on their IT product/system; and
+   5. Access/view for cyber security situational awareness on their IT product/system is made available to the Department CIRC (cyber incident
+      response capability).
+-----------------------
+[1] It is incumbent upon all offerors to incorporate anticipated costs into their proposals arising from these activities.  Any offeror
+submitting a proposal inherently accepts the burdens and expenses of these intrusive scans by the Department, third party MSSP vendors, as well
+as IV&V agents working on behalf of the Department’s interests.
+
+
+
+
+                                                         Appendix B- Database Development
+
+
+
+   i. Microsoft Office Suite
+
+
+        a. The Contractor shall have experience in developing databases in various formats including Microsoft Platforms (i.e. excel, word,
+           access) . The contractor will be required to extract reviewer data from Department of Education Grant Systems and use that
+           information to create databases for The Department staff.
+
+
+  ii. Web Based Data-Systems
+
+        a. The Contractor also shall have experience in creating Web-based system that collects key information about each pre- and full
+           application.
+
+
+      This system shall allow applicants to complete a Web form (similar in level of complexity to SurveyMonkey or other Web-based surveys) that
+      contains key project information.  Upon completion of the Web form, after an applicant presses “Submit,” the system shall generate a
+      summary page displaying the applicant’s responses and requesting confirmation that the applicant’s answers are correct.  Once confirmed,
+      the system shall generate a .PDF file containing the applicant’s responses to the questions, along with instructions to include that .PDF
+      form as an attachment to the pre- or full application in Grants.gov, as appropriate.
+
+
+      The Contractor shall prepare reports of information submitted on the system.  These reports shall include:
+
+
+    • A full extract of all information about each completed Web form, in spreadsheet form, one application per line
+    • A summary report of the complete Web forms, broken down as appropriate by:
+    o Total Web forms completed
+    o Type of grant requested
+    o Length of requested grant award
+    o Absolute Priority
+    o Competitive Preference Priority
+    o Total funding requested
+
+      After the closing date of each competition, the Contractor shall match each competed Web form with the corresponding submitted application
+      and shall deliver a crosswalk with the PR/Award number added as a column on the extract spreadsheet.
+
+
+      The Contractor shall confirm that the system meets all Department requirements for privacy, systems of records, accessibility, and any
+      other certifications that may be required, including that the system Web site also shows U.S. Department of Education sponsorship and the
+      appropriate disclaimers and OMB Notice.   The Contractor shall also confirm that the system is scalable to support sufficient concurrent
+      users.
+
+                                                  Logistical and Administrative Peer Review and
+                                     Conference Support Services for the Office of Innovation and Improvement
+
+                                                                Statement of Work
+
+I. Abbreviations and Definitions
+
+|Office of Innovation and Improvement                  |OII       |Department of Education                                             |ED      |
+|Contracting Officer                                   |CO       |Contracting Officer’s Representative                               |COR      |
+|Contract Specialist                                   |CS       |Competition Manager                                                |CM       |
+|Department of Education Grants Management System      |G5       |Elementary and Secondary Education Act                             |ESEA     |
+|Notice Inviting Applications                          |NIA      |Technical Review Form                                              |TRF      |
+
+
+II. Period of Performance
+
+One (1), twelve (12) month base year with two (2), twelve (12) month option years.
+
+III. Background
+
+OII is a strategically designed group of program offices, each serving specific education constituencies with grants, services and information.
+More than 20 competitive grant programs, as well as a number of congressionally directed grants, are administered by six program offices.
+Additionally, OII is home to services to non-public education and has an office that oversees its financial management and the performance
+measurement of its grant programs and services.  OII helps to develop guidance on provisions and programs related to its work under ESEA.  New
+programs authorized by Congress and Secretarial initiatives are often assigned to OII.  Information on OII and its programs are available on the
+following website: http://www.ed.gov/oii-news?src=oc.
+
+IV. Purpose
+
+The purpose of this procurement is to obtain logistical and administrative support for peer reviews of OII programs as well as Project Directors
+meetings.  The purpose of these reviews is to provide for a competitive and objective evaluation by well-qualified reviewers chosen for their
+expertise and ability to assess a proposed project’s quality.  These reviews are the foundation for higher-level funding decisions and help
+ensure that awards are made on a fair and impartial basis.  The Contractor shall provide administrative and logistical support, and report
+results for: activities associated with the recruitment, training, evaluation, and management of peer reviewers; conducting peer reviews (via
+teleconference, e-reader, and on-sight); reviewing and improving the current peer review system; and designing and reproducing guidance
+documents.  Also, the Contractor shall assist program staff throughout the planning and execution of Project Directors meeting.  This includes:
+securing conference venues, participant lodging, and guest speaker participation; coordinating registration of attendees and hotel logistics;
+working with program staff to develop the agenda, supporting materials, transcriptions, and presentations as necessary.
+
+V. Procurement Authority:
+
+ESEA of 1965, amended as the No Child Left Behind Act in 2002.
+
+VI. Scope of Work
+
+The Contractor shall provide logistical and administrative support for the OII reviews and Project Directors meetings.  The Contractor shall
+provide services to the Department that will ensure a rigorous and thorough peer review process, and well planned and executed meetings.  The
+proposed reviews for FY 2013 – 2015 are outlined in Task 3.  This estimate is based on anticipated funding for discretionary grant programs.
+The total number of peer reviews may be affected by the grant program’s final budget.
+
+Task 1: Kick off Meeting with ED.
+
+Within two (2) weeks of the effective date of award, the Contractor shall conduct a conference call with the COR, representatives from various
+programs in OII, and the CO or CS.  The purpose of the meeting is to review the goals and objectives of the procurement.  The meeting will also
+enable the Contractor’s staff to ask questions and clarify any potential issues related to the implementation of the contract.  The COR will
+provide the Contractor with copies of current peer review procedures, technical review forms, applicants’ and reviewers’ letters and all other
+documents relevant to the peer review process.  The Contractor shall, within one (1) week after the above-mentioned meeting, submit a summary of
+the meeting to the COR, and the CS.
+
+Task 2: Develop a Management Plan for the Implementation of Tasks
+
+Task 2.1: Management Plan
+
+Within four (4) weeks of the effective date of this contract, the Contractor shall submit to the COR, a draft management plan for review and
+approval.  This plan shall include a work breakdown structure that defines and organizes the contract.  The Contractor shall review and conduct
+an analysis of OII’s current peer review procedures and recommend changes for improvement.  The Contractor shall outline the procedures it plans
+to follow for:
+   1. Peer reviews conducted by teleconference, e-Reader, and/or on-sight reviews;
+   2. Collecting data and conducting data analysis;
+   3. Providing support for conference calls and to reviewers and OII staff throughout the duration of the competition;
+   4. Reimbursing reviewers for their expenses and honorarium.
+The plan shall also provide the format of monthly expenditure reports.  The COR will review and provide feedback on this plan within two (2)
+weeks of receipt.  A final plan will be submitted one (1) week after receipt of comments on the draft plan.
+
+
+
+Subtask 2.2: Arrange for a general orientation meeting with Program Representatives
+
+The Contractor shall set up a general orientation meeting with the COR and representatives from the various programs in OII within four (4)
+weeks of the effective date of the contract.  The purpose of the meeting is to introduce the Contractor’s key staff, discuss the proposed
+management plan, and review current documents (forms, instructions, letters) used for previous reviews.  OII staff shall provide these documents
+to the Contractor.  The Contractor shall make all revisions to forms, instructions, letters and any other documents or medium used in the peer
+review process and provide them to the COR for review within three (3) weeks after the general orientation meeting.
+
+Task 3: Provide Logistical and Administrative Support for Peer Reviews
+
+The Contractor shall contact and secure the services of peer reviewers; provide all the necessary training materials; facilitate teleconference,
+e-reader or on-sight panel reviews; report final scores; facilitate the evaluation of the peer review process; and reimburse peer reviewers and
+reviewer attendees for expenses and honoraria in a timely manner as outlined in the management plan approved in Task 2.
+
+This contract covers the review of applications and proposals submitted for FY 13-15 funding under OII’s discretionary grant programs.  See
+Chart 3.1 below for the estimated number of competitions during the performance period.
+
+Chart 3.1 OII Planned Competitions
+
+|Year                   |FY 2013                |FY 2014                |FY 2015                |
+|                       |Base Year              |Option Year 1          |Option Year 2          |
+|Competitions           |9                      |7                      |8                      |
+|Applications           |1350                   |1150                   |1200                   |
+|Peer Reviewers         |450                    |300                    |375                    |
+|Panels                 |150                    |100                    |125                    |
+
+
+Specific competition data shall be submitted by OII upon publication of the NIA for each competition in the Federal Register.  The deliverable
+timelines may be short due to the allotted timeframe to complete competitions.  The subtasks 3.1-3.24 detail what will be needed during a peer
+review for one of OII’s programs.
+
+Task 3.1: Hold a Planning Meeting for the Competition Review with the Competition Manager and Other Staff
+
+
+The Contractor shall arrange a planning meeting with the COR and the CM for each scheduled peer review.  Each meeting shall be held in a
+conference room at the Department.  During this meeting, information regarding the planned number of applications, reviewers and panels shall be
+discussed.  The Contractor shall prepare a draft work plan and agenda prior to this meeting and provide the draft work plan and agenda to the
+COR and CM 24 hours prior to the scheduled meeting. The purpose of the meeting shall be to review the draft work plan for the competition
+review, discuss the details of subtasks to be completed, adjustments to the work plan, and completion dates.  The draft work plan shall include
+the Contractor, COR and CM’s activities and their completion dates.  Items to be included in the draft work plan are the deliverables for each
+review, the dates of completion by the Contractor, and the dates of completion by OII staff.
+
+The Contractor shall submit written minutes of this meeting to the COR for review and approval within seven (7) calendar days after the meeting.
+ The Contractor shall submit the final work plan within seven (7) calendar days after the meeting.  Once the COR have approved and finalized the
+work plan, the finalized work plan shall be used by the Contractor to plan work, by the COR to track work, and by OII staff and management to
+monitor activities.  The final format of the work plan  shall include an online project management website, specifically SharePoint, with a
+shared calendar that delineates the following:  tasks, deadline for tasks, those assigned to work on tasks, a list of completed tasks, a list of
+outstanding tasks to be completed, and other relevant information required for the implementation of the work plan.
+
+The Contractor shall hold weekly status meetings by phone with the COR and OII representatives to discuss the progress of active competitions.
+
+Task 3.2: Secure Panel Reviewers for the Competitions Review
+
+
+ED requires logistical support for the review and evaluation of grant applications by a panel of peer reviewers.  Each program and each tier of
+a review shall require a differing number of reviewers and reviewers with specific skill sets.  OII staff currently solicits reviewers on their
+own and obtains reviewer resumes.  The Contractor shall assist program staff in the organization of reviewer resumes.
+
+For some high volume or high profile programs, OII staff shall require additional assistance organizing resumes.  In such a case, the Contractor
+shall be given access to the reviewer applications in order to print submitted reviewer resumes and information sheets, as needed.  The
+Contractor shall enter information sheet data into a secured database created by the Contractor.  The database shall include the name and
+contact information from the reviewer resume, identified areas of expertise, and the scoring information for the resumes.  The Contractor shall
+prepare reviewer scoring reports on a weekly basis to the COR and CM after the planning meeting.
+
+For all programs, OII staff shall then review the submitted resumes and identify which reviewers shall be used, and the Contractor shall secure
+those reviewers.  The Contractor shall contact individuals being considered as reviewers to confirm their written availability to serve.  The
+Contractor shall secure ten (10) percent more commitments from potential reviewers than anticipated for use in the competition.  The Contractor
+shall confirm that each reviewer meets the following requirements:
+      • Have unlimited access to a computer with Internet accessibility and a printer;
+      • Be able to navigate a WWW browser;
+      • Be able to complete and submit on-line forms;
+      • Be able to send and receive e-mail;
+      • Be able to commit to a performance based contract for services; and
+      • Have completed G5 training, or be able to complete the training by the beginning of the review.
+
+The Contractor shall provide ongoing updates via an Excel spreadsheet of reviewers to the COR and CM.  The Contractor shall deliver a final
+spreadsheet to the COR no later than seven (7) calendar days before the Closing Date of the competition.  The database shall detail the
+following information:
+    • Which reviewers are available;
+    • Which competition the reviewer shall be assigned to; and
+    • Whether or not the reviewer has an indirect conflict of interest.
+
+Task 3.3: Peer Reviewer Orientation
+
+The Contractor shall make arrangements for a maximum of four telephone conference webinar peer reviewer orientations for each competition.  Each
+orientation shall last approximately two (2) hours.  The Contractor shall be responsible for recording the conference and making it available
+for reviewers unable to attend one of the orientation sessions.  The audio and relevant materials shall be accessible on the Grant Competition
+Webpage[1] 48 hours after the last orientation and throughout the duration of the competition.  The Contractor shall confirm that all reviewers
+and alternates participated in an orientation session and provide this information to the COR and CM 48 hours after the last orientation
+session.
+
+Task 3.4: Grant Competition Webpage
+
+The Contractor shall develop and maintain a Grant Competition webpage for the duration of the review.  The Contractor shall confirm that the
+webpage meets all Department information technology requirements as stated in Appendix A.
+
+The webpage shall include, at a minimum, the following:
+      • The webinar recording of the peer reviewer orientation training;
+      • A downloadable version of the TRF;
+      • Links to application materials on the Department’s website; and
+      • All necessary documents needed by the Contractor.
+
+
+The webpage shall be submitted to the COR and CM for approval 30 calendar days prior to the application Closing Date.  The COR shall approve or
+provide edits to the webpage within seven (7) calendar days after receipt.  The Contractor shall make the edits and make the webpage live 24
+hours after receiving edits from the COR
+
+Task 3.5: Reviewer Assignments
+The Contractor shall also be responsible for assigning reviewers to panels in the Department’s grant system.  The Contractor shall complete all
+panel assignments no later than seven (7) calendar days prior to the start of the panel calls.  Panels shall be composed of a specified number
+of reviewers, who:
+   1. Are from a different geographical area than the area where the applications are located;
+   2. Have a background or expertise in the program content for which they are reviewing; and
+   3. Do not have a conflict of interest.
+
+If a reviewer finds a conflict of interest once they receive the application, the Contractor shall notify the COR and CM immediately.  If a
+reviewer needs to be replaced for any reason, the Contractor shall notify the COR and CM immediately.  Upon the CORs instruction, the Contractor
+shall contact alternate reviewers for availability.
+
+Task 3.6: Final Reviewer Data Extraction
+
+The Contractor shall generate a spreadsheet extract of all the database information that has been compiled, including the reviewers used during
+the competition and any information on all the candidates.  This extract includes all of the peer reviewer checklist information, including
+name, address, phone and email contact info, but also the identification of reviewer type, and self-identified areas of expertise.  The extract
+shall also include information that the Contractor collects during the reviewer screening of the peer reviewers, including the scores assigned
+for expertise and attributes, updated addresses, reviewers used and reviewers not used, and all other data points collected during the process
+and included in the Contractor’s reviewer database.  The Contractor shall provide the COR with the data extract for each competition within
+thirty (30) calendar days of each competition’s grant award date.
+
+
+Task 3.7: Handling of Applications
+
+The Contractor shall download all electronic applications from the Department’s grant system, after the closing date.  The Contractor shall, on
+an as needed basis following the application deadline, pick up applications mailed in hard copy received by the Application Control Center
+(ACC), located at Potomac Center Plaza, 550 12th St., SW., Washington, DC  20202.  The Contractor shall plan for one (1) trip to the ACC per
+competition.
+
+The Contractor shall print all applications double sided, including any attachments or electronic submissions that are not compatible with the
+Department’s software and shall make copies according to the program’s instructions. One copy shall be retained with the Contractor.  All
+applications shall be downloaded and copied within ten (10) calendar days of the closing date of the competition.
+
+
+Task 3.8: Screening of Applications
+
+The Contractor shall check the master list of applications generated from the Department’s grant system or by ACC (if applications are not
+submitted electronically) to ensure that each application has a PR Award number, DUNS, and Tax Identification number.  The Contractor shall
+inform the COR and CM of any discrepancies so that they may be resolved promptly, including identifying applications that may be duplicates,
+incomplete, or otherwise incorrectly submitted.  Also, the Contractor shall inform the COR and CM of any applications believed to be ineligible
+for further consideration by program reviewers.
+
+The Contractor shall screen applications received to ensure that all applications are for the particular program competition and any additional
+criteria specified by the program. Seven (7) calendar days prior to the closing date of the competition, the Contractor shall provide the COR
+and CM with a draft screening form to review.  The COR shall approve the form within 48 hours of receipt, and the Contractor shall develop the
+final screening form 24 hours after receiving the edits.   The Contractor shall complete the screening of all applications within fourteen (14)
+calendar days after the closing date of the competition.  Screened applications shall then be delivered to the program staff at the Department’s
+headquarters fourteen (14) days after the closing date.
+
+Task 3.9: Panel Assignments
+
+The Contractor shall be responsible for assigning applications to reviewers in the Department’s grant system, making sure that the Conflict of
+Interest rules are followed.  Once applications are assigned to panels and reviewers, the Contractor shall prepare and mail each reviewer a
+package of background materials and a set of applications to review.  The Contractor shall choose the method of shipment but must ensure that
+reviewers receive their packages no later than seven (7) calendar days prior to the start date of the panel calls.
+
+If a reviewer finds a Conflict of Interest once they receive the application, he/she shall notify the Contractor immediately.  If a reviewer
+needs to be replaced for any reason, the Contractor shall notify the COR and CM immediately.  Upon the CORs instruction, the Contractor shall
+contact alternate reviewers for availability.  The Contractor with the approval of the COR shall determine all panel replacements.
+
+Task 3.10: Reviewer Mailing
+
+Once panels are approved the Contractor shall prepare and email each reviewer a package of background materials including:
+   1. A letter from the Department regarding the program’s grant competition;
+   2. A letter from the Contractor regarding submission of required forms;
+   3. A technical review package, G5 instructions, and conflict of interest materials;
+   4. The PowerPoint for the orientation webinar; and
+   5. The Frequently Asked Questions document.
+
+Also, the Contractor shall be responsible for including the assigned printed applications to reviewers with the background materials.  The
+Contractor shall print and mail the complete applications (double sided).  The Contractor shall ensure that reviewers receive their materials no
+later than seven (7) calendar days prior to the start of the panel calls.  The Contractor shall email a postage label for the reviewer to use to
+mail the required honorarium forms to the Contractor.
+
+Task 3.11: Data Extraction
+
+Many of the OII programs post application information on the Department’s webpage of data.ed.gov.  The Contractor shall help program staff meet
+the demand of placing information on the site.  For all applicants, the Contractor shall, within thirty (30) calendar days of the competition
+results being made public, redact confidential, personally identifiable, or other non-public information from the applications and reviewer
+comments and make the redacted files available in a suitable format for publication on the Department’s website.  The COR and CM shall conduct a
+30 minute training session for the appropriate staff of the Contractor.
+
+For all applicants, the Contractor shall work with Department IT and program staff to compile application data on each applicant from the SF
+424.  Also, the Contractor shall, provide an Excel spreadsheet containing applicant information.   The Contractor shall deliver this data no
+later than two (2) weeks after the closing date.  An example of the type of information to be gathered is provided below:
+|Name of school                    |Amount requested                       |Grades served                    |Amount awarded                   |
+|Competitive and invitational      |Latitude and longitude for each school |National Center for Education    |EMO/CMO partnership and name     |
+|priorities applied for            |served by the grant or subgrants made  |Statistics identification of each|                                 |
+|                                  |through the grant                      |school                           |                                 |
+|Location and location type        |Charter application status             |Competitive  priorities awarded  |Proposed project location        |
+|                                  |                                       |                                 |                                 |
+|Extended date/year                |Replication/Expansion school           |Number of years in operation     |School opening date              |
+|                                  |                                       |                                 |                                 |
+|Type of award                     |Curriculum name                        |Authorizer                       |Theme                            |
+
+Task 3.12: Competition Review
+
+The COR and CM shall provide the Contractor with a list of individuals who shall serve as panel monitors and the Contractor shall assign them to
+panels.  The Contractor shall then contact each panel monitor and provide him or her with the contact information of the reviewers assigned to
+the panel, the time of the panel call, and the list of applications assigned to the panel.  The Contractor shall submit the complete panel list,
+consisting of reviewers assigned and applications assigned, no later than fourteen (14) calendar days prior to the onset of the peer review for
+the CORs approval.
+
+The Contractor shall be responsible for uploading necessary documents, such as the TRF, into G5.  The Contractor shall develop the TRF and
+receive approval from the program staff.  The TRF shall be uploaded by the Contractor into G5 along with any other necessary documents as
+determined by program staff.
+
+
+During the actual panel calls, the Contractor shall remain available to reassign applications and reviewers to panels if an unforeseen
+circumstance arises, such as a conflict of interest, or illness of a reviewer, for example.  The Contractor shall establish a conference call
+line for each panel for the duration of the review.
+
+
+
+
+Task 3.13: Creation of a Web-based Applicant Information Sheet System
+
+For competitions identified at the planning meeting, the Contractor shall create a Web-based system that collects key information about each
+application.  This system shall allow applicants to complete a Web form (similar in level of complexity to SurveyMonkey or other Web-based
+surveys) that contains key project information.  Upon completion of the Web form, after an applicant presses “Submit,” the system shall generate
+a summary page displaying the applicant’s responses and requesting confirmation that the applicant’s answers are correct.  Once confirmed, the
+system shall generate a .PDF file containing the applicant’s responses to the questions, along with instructions to include that .PDF form as an
+attachment to the application in Grants.gov, as appropriate.
+
+
+The Contractor shall prepare a report of information submitted on the system seven (7) calendar days after the closing date.  The report shall
+include:
+      • A full extract of all information about each completed Web form, in spreadsheet form, one application per line
+      • A summary report of the complete Web forms, broken down as appropriate by:
+    ▪ Total Web forms completed
+    ▪ Type of grant requested
+    ▪ Length of requested grant award
+    ▪ Absolute Priority
+    ▪ Competitive Preference Priority
+    ▪ Total funding requested
+
+After the closing date of each competition, the Contractor shall match each competed Web form with the corresponding submitted application and
+shall deliver a crosswalk with the PR/Award number added as a column on the extract spreadsheet and provide this to the COR and CM within seven
+(7)calendar  days after the closing date.
+
+
+The Contractor shall confirm that the system meets all Department requirements for information technology as it appears in Appendix A – OCIO
+Technical Requirements.
+
+
+The Contractor shall have the system ready for public use no later than ten (10) days before the publish date of the NIA for the competition.
+
+
+A final crosswalk from Grants.gov submitted applications to the spreadsheet within seven (7) days of the closing date of each competition.
+
+Task 3.14: On-Site Reviews - Applications
+
+A small number competition reviews conducted shall be on-site reviews, meaning that the reviewers are brought to Washington, DC to conduct the
+review in person.  On average, this is one review per year. The Contractor shall arrange for the applications to be transported from the
+reviewers’ original mailing location to the site of the review in Washington, DC.   Upon completion of the review, the Contractor shall
+transport remaining materials and applications back to the Department.  Contracting Officer approval is required for any on-site reviews.  The
+Contractor shall submit estimated costs for any on-site review to the Contracting Officer 60 days prior to the review.
+
+Task 3.15: On-Site Reviews – Hotel Location and Travel
+
+The Contractor shall arrange and pay for hotel accommodations including: guest rooms, breakout rooms for each panel meeting, a reading room for
+local reviewers, appropriate audio visual equipment, and a business center for the Contractor.  The Contractor shall select a hotel that is
+within walking distance of at least one Metro stop within the metropolitan area of Washington, D.C.  The Contractor shall secure the hotel at
+least 30 calendar days prior to the beginning of the review.
+
+The Contractor shall coordinate travel for peer reviewers, and additional alternates. Reviewers living less than 50 miles of the hotel shall not
+be compensated for travel and will be unable to stay at the hotel.  Program staff shall not be compensated for travel and shall not be permitted
+to stay at the hotel as well.  The Contractor shall cover all costs associated with travel including per diem, hotel, and other allowable travel
+costs.   The Contractor shall serve as a liaison with the hotel sites in response to Department staff requests.  The Contractor shall have at
+least one staff member with necessary technological skills available at all on-site reviews during working hours determined beforehand by the
+COR.
+
+Task 3.16: On-Site Reviews – Administrative Tasks
+
+The Contractor’s staff shall be responsible for record-keeping during the review process, including checking the scores, and logging in all
+applications and technical review forms before reviewers are cleared to leave.  The Contractor shall also serve as note taker at any debriefing
+session scheduled following the panel review process and provide typed or electronic copies of all notes to the Department no more than two (2)
+weeks after the conclusion of the review.  The Contractor shall develop, distribute and collect evaluation forms, and any additional forms as
+determined by COR, from all reviewers to solicit feedback on the quality of the review process and recommendations for improvement.  The
+evaluation of these surveys shall be submitted to the Department during the de-briefing meeting. The Contractor shall return to the Department
+all applications, scoring materials, and all unused materials and supplies on the last day of the panel review.
+
+Task 3.17: Reviewer Honorarium
+
+The Contractor shall pay each reviewer an honorarium amount specified by the program staff and approved by the CO for fully completing the work.
+ Once the COR and CM has notified the Contractor that a reviewer’s comments have been accepted, compensation shall be paid to the reviewer
+within 30 calendar days after the Contractor receives all necessary paperwork.
+
+
+Task 3.18: Successful Application TRFs
+
+Once the COR notifies the Contractor that the review has been completed and all comments and scores have been approved, the Contractor shall
+print the TRFs for the successful applications from each reviewer.  The Contractor shall ensure that the reviewer’s name does not appear on the
+TRF.   Successful applications shall require three (3) sets of copies of the TRFs for the Project Director, Authorized Representative, and
+Official File.  The Contractor shall deliver the copies of the TRFs no later than two (2) weeks prior to the results of the competition are made
+public.
+
+In addition to the copies of the TRFs, the Contractor shall provide one (1) PDF per application of each successful set of TRFs.  The Contractor
+shall save the PDFs onto a CD and they shall be delivered to the COR at the de-briefing meeting.
+
+Last, the Contractor shall save each application as a PDF on a CD and deliver the CD to the COR at the de-briefing meeting.
+
+Task 3.19: Unsuccessful Applications’ TRFs
+
+The Contractor shall make two (2) sets of copies of the unsuccessful applications’ TRFs for the Project Director and the Authorized
+Representative.  The Contractor shall provide one PDF per unsuccessful application that contains all of the TRFs.  The Contractor shall save the
+PDFs onto a CD and it shall be delivered to the COR at the de-briefing meeting.   In addition, the Contractor shall save each application as a
+PDF and then save the PDFs on a CD.  The Contractor shall deliver the application CD to the COR at the de-briefing meeting.
+
+The COR and CM shall provide the Contractor with a standard letter to inform applicants that their application was not selected for funding.
+The COR and CM shall provide the Contractor with government letterhead as well as appropriate envelopes for the packages.  The Contractor shall
+make copies of this letter on letterhead and provide the copies of this letter and a copy of the reviewer’s comments for each of the
+unsuccessful applicants’ appropriate personnel.  These copies shall be placed in government-franked envelopes and delivered to the COR no later
+than two (2) weeks prior to the results of the competition are made public.
+
+Task 3.20: Official Grant Files
+
+The Contractor shall prepare the official grant files in accordance with the guidance provided in the Discretionary Grant Handbook and follow
+additional instructions provided by the COR. The COR and CM shall provide a copy of the guidance to the Contractor to ensure that the grant
+files are done properly.  The COR and CM shall provide the file folders to the Contractor.  The Contractor shall print all applications double
+sided in a manner that they can be read continuously in the grants file folder.    The Contractor shall arrange for the official grant files to
+be delivered to the COR no later than two (2) weeks prior to the results of the competition are made public.
+
+Task 3.21: TRF Redaction
+
+The Contractor shall prepare the TRFs in the appropriate format for them to be placed on the Department’s website.  The Contractor shall turn
+the TRFs into 508 compliant PDFs and redact the document as well.  The Contractor shall deliver this version of the TRFs to the COR no later
+than two (2) weeks prior to the results of the competition are made public.  Prior to the redaction, the COR and CM shall train the Contractor
+on the redaction process, and this training shall take place four (4) weeks prior to obligation of the grants. This training shall last for
+thirty (30) minutes and shall be conducted by OII staff through a conference call.  OII staff shall provide a word document with instructions to
+the trainees.
+
+Task 3.22: Shredding
+
+The Contractor shall shred any confidential materials, including extra copies of applications, printed technical review forms, resumes, notes,
+and confidential reviewer materials, throughout the review process and as requested by the COR.
+
+
+Task 3.23: Reviewer Survey
+
+The Contractor shall survey the reviewers.  The survey shall be included with the materials distributed to reviewers.  The Contractor shall
+analyze the results, using summary statistics of the surveys and provide a written report of the findings with any necessary explanations and
+copies of all forms to the COR at the debriefing meeting which shall take place thirty (30) calendar days after the completion of the review.
+
+Task 3.24: Conduct De-Briefing Meeting
+
+The Contractor shall prepare a written report detailing the strengths and weaknesses noted in conducting the competition and shall provide
+recommendations for improving the peer review process.  The Contractor shall submit the report at the time of the de-briefing meeting with the
+COR, CM and additional staff to evaluate the process and make determinations on ways to improve future competitions.  After consultation with
+the Contractor, the COR shall determine the date of the final de-briefing meeting.
+
+Task 4: Provide Logistical Support for Project Director’s Meetings
+
+Pending funding approval each year, the Contractor shall work with the COR to plan meetings for the Project Directors and Evaluators of a grant
+program.  The specific details of each meeting shall be provided to the Contractor at an initial meeting.  This contract covers Project
+Directors Meetings for FY 13-15 funding under OII’s discretionary grant programs.  Contracting Officer approval is required for any meeting that
+will exceed $100,000.00. The Contractor shall submit estimated costs for any meeting expected to exceed $100,000.00 to the Contracting Officer
+60 days prior to the meeting.
+
+
+OII Planned Project Directors Meetings
+
+|Year                        |FY 2013                     |FY 2014 Option Year 1       |FY 2015 Option Year 2       |
+|                            |Base Year                   |                            |                            |
+|No. of Meetings             |2                           |3                           |3                           |
+|No. of Participants per     |300                         |300                         |300                         |
+|Meeting                     |                            |                            |                            |
+
+
+Task 4.1: Hold a Planning Meeting with the COR and Project Manager
+
+The Contractor, its designated Project Director/Manager, or both, shall attend a conference meeting with the COR and representatives from OII
+within 30 days after the conference is confirmed to discuss the scope of work, reporting requirements and clarify lines of communication and
+authority.  Department staff shall clarify work requirements, procedures, expectations, and discuss specifications and criteria.  The Contractor
+shall prepare written minutes of this meeting and submit them to the COR for review within five (5) calendar days of the meeting.
+
+The Contractor shall develop the agenda for the meeting and provide this to the COR 24 hours prior to the meeting.  With this, the Contractor
+shall deliver a draft work plan and budget proposal to the COR.  A revised final work plan shall be submitted with the meeting minutes five (5)
+calendar days after the meeting.
+
+Task 4.2: Secure Conference Location
+
+The Contractor shall arrange and pay for a conference location specified by the program staff.  Recently all conferences have taken place in the
+Washington, DC metro area.  The location must be near restaurants because meals shall not be provided in the conference.  The Contractor shall
+visit prospective conference space to ensure the accessibility of meeting rooms as well as overall building access, including restroom
+facilities, prior to signing a contract with the conference venue for space.  The conference facilities must be accessible to disabled
+individuals, consistent with Section 504 of the Rehabilitation Act of 1973, 29 U.S.C. 794.  The Contractor shall consult with the COR on
+conference locations.
+
+The Contractor shall ensure that the conference site meets the site parameters set forth by the program staff at the original planning meeting.
+Parameters include: the number of meeting rooms; size of rooms; internet connections; AV requirements; seating arrangements, etc.
+
+Task 4.3: Travel and Lodging
+
+The Contractor shall coordinate and pay the costs for travel, per diem and lodging for sponsored participants (i.e. speakers, panel moderators,
+panelists). The number of sponsored speakers and the amount of the honorarium for speakers shall be determined by program staff and communicated
+to the Contractor.  The payment for the travel shall be made at the conclusion of the conference before the traveler leaves the area or within
+30 days after the conclusion of the conference.
+
+The contractor shall only be financially responsible for the travel, per diem or lodging expenses or for making lodging or travel arrangements
+for approved travelers, and sponsored participants.  However, the Contractor shall inform the Department to ensure that accommodations shall be
+available for participants at the negotiated conference rate at the host site or nearby sites (within walking distance).  The Contractor shall
+clearly inform participants of the accommodation options.  After the conference, the Contractor shall reconcile all travel claims and
+reimbursements within 30 calendar days after the conference.  The Contractor shall include information regarding the payment of invoices as part
+of the monthly reports.
+
+The Contractor shall provide the Department with confirmation of travel and lodging arrangements for all sponsored participants no later than
+ten (10) calendar days prior to the conference.
+
+
+Task 4.4: Registration of Participants
+
+The Contractor shall design, develop, host and maintain the website for the conference registration.  The website shall host online registration
+and contain complete and up-to-date schedules, agendas, contact information, registration and conference information.  The website shall provide
+directions on making lodging reservations, including rates, at the conference location as well as other nearby hotels.  The Contractor shall
+house the website for the duration of the contract and one year from the end of the conference.  The Department shall ensure that the website is
+secure and Section 508 compliant before all content is posted.  The Contractor shall ensure that the website is online no later than ten (10)
+weeks prior to the conference.  The Contractor shall send out an email to registrants confirming their attendance and registration within 48
+hours of a registrant completing the registration.  The Contractor shall give direct access to designated Department personnel to view and print
+registration information from the online registration system.
+
+Task 4.5: Agenda and Content Development
+
+At times the program staff shall ask the Contractor to assist in the development of the agenda and topics to be discussed during the conference.
+ In such a case, the Contractor shall be able to find a content expert to work with the program staff to develop materials as necessary for the
+conference.  At other times, the program staff shall ask the Contractor to reach out to current grantees for the submission of proposals to
+present.  The Contractor shall be responsible for the submission of proposals and coordinating the approved presentations.
+
+The Contractor shall work with the Department on the logistics of the agenda, such as session times and locations, and format the agenda.  The
+Contractor shall send a draft copy of the agenda to the meeting manager for review and approval 30 calendar days prior to the meeting.
+
+Task 4.6: Materials Development
+
+In collaboration with the Department, the Contractor shall reproduce, assemble and ship meeting materials, as required, to the conference site.
+The contractor shall produce graphics, PowerPoint presentations, charts and slides related to the meeting.  Tentative graphic designs shall be
+submitted to the COR six (6) weeks prior to the conference.  The final products shall be produced in time with the work plan.  The Contractor
+shall be responsible for designing, formatting, and printing the following items:
+
+     • Themes, taglines, and logos
+     • Invitations and confirmations
+     • Finalized agenda
+     • Introduction Slides
+     • Meeting packets/ Conference Booklets
+     • Nametags
+     • Name tents
+     • Participant Biographies
+     • Banner
+
+
+Task 4.7: Post-Conference Services
+
+The Contractor shall design an evaluation survey to collect participant feedback regarding each breakout and plenary session.  The contractor
+shall distribute and collect completed paper evaluation forms about the breakout and plenary sessions during the conference.  The Department
+shall review and approve proposed forms no later than two (2) weeks prior to the conference.  The Contractor shall also design an evaluation
+survey encapsulating the conference overall.  The Department shall review and approve the proposed form no later than two (2) weeks prior to the
+conference.   Results of evaluations shall be reported back to the Department at the de-briefing meeting. 
+
+Task 4.8: Debriefing Meeting
+
+The Contractor shall participate in a debriefing meeting with Department staff at the earliest thirty (30) working days after the conference
+completion.  The Contractor shall prepare a post-conference analysis report of the work they provided to be delivered to the Department at the
+debriefing meeting.  The report shall include:
+
+   1. For each task and subtask a summary of accomplishments, the staff utilized, problems encountered, how they were addressed and the impact to
+      the project;
+   2. Participant evaluations for the conference; and
+   3. An electronic copy of all the documents produced for the conference.
+
+Task 5: Create a Quality Control Plan
+
+The Contractor shall establish a performance-based quality control plan to ensure that the requirements of the contract are met as specified.  A
+copy of the performance-based quality control plan shall be submitted to the COR, CS, and CO within four (4) weeks after the effective date of
+the contract and within one (1) week of any subsequent changes.  The Contractor shall include in this performance based quality control plan at
+a minimum the following:
+      • An inspection program addressing all of the services stated in the Performance Work Statement.  It shall specify the areas to be
+        inspected on a scheduled or unscheduled basis and the names, titles, and qualifications of the individuals performing inspections and
+        the extent of their authority.  Their functional roles shall be depicted in an organizational chart.
+      • Methods of identifying deficiencies in the quality of services performed before the level of performance becomes unacceptable and the
+        corrective actions to be taken; the procedures for notifying the COR when deficiencies are encountered; planned corrective actions and
+        descriptions of proposed sampling techniques.  In other words, a continuous improvement process (CIP) shall be in place.
+      • Methods of documenting and enforcing quality control operations of both the Contractor’s and Sub-Contractor’s (if any) work, including
+        inspection and testing.
+
+The Contractor shall maintain documentation of all Quality Control Inspections, inspection results, and any corrective action required and/or
+performed by the Contractor throughout the term of the contract.  This documentation shall be made available to the COR upon request.
+
+Task 6: Reporting
+
+The Contractor shall use a reporting system to report the contract status.  The Contractor shall provide supporting materials as needed for
+these reports and discussions.  Written reporting requirements shall include weekly competition status reports, monthly progress reports,
+expenditure reports, budget analysis reports, monthly manpower reports, and a final project report.  This list is not all-inclusive.  Additional
+reports may be needed for additional clarification of the contract status.
+
+All invoices and reports shall be organized by the specific program being serviced and submitted to the COR electronically.  All reports shall
+be submitted electronically to the COR and only final reports shall be submitted electronically to the CS.
+
+The Contractor shall submit monthly progress reports to the COR and CS for the duration of the contract.  The Contractor shall summarize the
+major activities and accomplishments during the reporting period and provide information for each project task and subtask regarding significant
+findings and events, problems encountered, suggested solutions, and staff utilization.  The Contractor shall specify in the reports the extent
+to which the project is on schedule.  The Contractor shall submit the reports by the 15th of each month for the preceding month and in
+conjunction with the monthly invoice.
+
+The Contractor shall provide monthly expenditure reports.  This report shall reflect all expenditures segregated by competition to include all
+direct and indirect costs.  The report shall reflect the budgeted amount, the current expenditures to date, and the expected completion costs
+for each competition or conference.  The expenditure report shall be submitted by the 15th of each month for the preceding month and in
+conjunction with the monthly invoice.
+
+
+
+
+|VI. Schedule of Deliverables                                                                                                       |
+|Task                                       |Deliverable(s)                             |Due Date                                   |
+|Deliverable  1 a                           |Summary of Kick-Off Meeting                |One (1) week after meeting                 |
+|Deliverable 2.1 a                          |Draft Management Plan                      |Four (4) weeks after award                 |
+|Deliverable 2.1 b                          |Final Management Plan                      |One (1) week after receipt of COR’s        |
+|                                           |                                           |comments                                   |
+|Deliverable 2.2 a                          |Revised Forms                              |Three (3) weeks after general orientation  |
+|                                           |                                           |meeting                                    |
+|Deliverable 3.1 a                          |Planning Meeting Agenda                    |24 hours prior to the meeting              |
+|Deliverable 3.1 b                          |Draft Work Plan                            |24 hours prior to the meeting              |
+|Deliverable 3.1 c                          |Meeting Minutes                            |Seven (7) calendar days after the meeting  |
+|Deliverable 3.1 d                          |Final Work Plan                            |Seven (7) calendar days after the meeting  |
+|Deliverable 3.2 a                          |Reviewer Scoring Reports                   |Weekly after the planning meeting          |
+|Deliverable 3.2 b                          |Final Reviewer Spreadsheet                 |Seven (7) calendar days before the Closing |
+|                                           |                                           |Date                                       |
+|Deliverable 3.3 a                          |Recording on webpage                       |48 hours after last orientation            |
+|Deliverable 3.3 b                          |Orientation Attendance                     |48 hours after last orientation            |
+|Deliverable 3.4 a                          |Draft webpage                              |30 calendar days before the Closing Date   |
+|Deliverable 3.4 b                          |Final webpage                              |24 hours after receipt of edits            |
+|Deliverable 3.5 a                          |Complete Panel Assignments                 |Seven (7) calendar days prior to panel     |
+|                                           |                                           |calls                                      |
+|Deliverable 3.6 a                          |Reviewer Data Extract                      |30 calendar days after award date          |
+|Deliverable 3.8 a                          |Applications downloaded and copied         |Ten (10) calendar days after the Closing   |
+|                                           |                                           |Date                                       |
+|Deliverable 3.9 a                          |Draft Screening Form                       |Seven (7) calendar days prior to the       |
+|                                           |                                           |Closing Date                               |
+|Deliverable 3.9 b                          |Final Screening Form                       |24 hours after receiving edits             |
+|Deliverable 3.9 c                          |Complete Application Screening             |14 calendar days after Closing Date        |
+|Deliverable 3.9 d                          |Delivery of Applications                   |14 calendar days after Closing Date        |
+|                                           |Ensure Reviewers Receive Packages          |Seven (7) calendar days prior to the start |
+|Deliverable 3.10 a                         |                                           |of panel calls                             |
+|Deliverable 3.12 a                         |Redact applications                        |Thirty (30) calendar days after awards     |
+|Deliverable 3.12 b                         |Application Data                           |Two (2) weeks after Closing Date           |
+|Deliverable 3.13 a                         |Complete Panels                            |14 calendar days prior to review           |
+|Deliverable 3.14 a                         |Report of Web Based System                 |Seven (7) calendar days after the Closing  |
+|                                           |                                           |Date                                       |
+|Deliverable 3.14 b                         |Web Based System                           |Ten (10) days before NIA publish date      |
+|Deliverable 3.16 a                         |Secure Hotel                               |30 calendar days before review             |
+|Deliverable 3.17 a                         |Panel Notes                                |Two (2) weeks after end of review          |
+|Deliverable 3.18 a                         |Pay Honorarium                             |30 calendar days after receipt of forms    |
+|Deliverable 3.19 a                         |Deliver Successful TRFs                    |Two (2) weeks prior to award               |
+|Deliverable 3.19 b                         |CD of TRFs                                 |At the De-Briefing Meeting                 |
+|Deliverable 3.19 c                         |CD of Successful Applications              |At the De-Briefing Meeting                 |
+|Deliverable 3.20 a                         |CD of Unsuccessful TRFs                    |At the De-Briefing Meeting                 |
+|Deliverable 3.20 b                         |CD of Unsuccessful Applications            |At the De-Briefing Meeting                 |
+|Deliverable 3.20 c                         |Unsuccessful Packages                      |Two (2) weeks prior to award               |
+|Deliverable 3.21 a                         |Official Grant Files                       |Two (2) weeks prior to award               |
+|Deliverable 3.22 a                         |Redact TRFs                                |Two (2) weeks prior to award               |
+|Deliverable 3.24 a                         |Reviewer Survey Report                     |At De-Briefing Meeting                     |
+|Deliverable 3.25 a                         |End of Review Report                       |At De-Briefing Meeting                     |
+|Deliverable 4.1 a                          |Written Minutes of Meeting                 |Five (5) calendar days after meeting       |
+|Deliverable 4.1 b                          |Agenda                                     |24 hours prior to meeting                  |
+|Deliverable 4.1 c                          |Draft Work Plan                            |24 hours prior to meeting                  |
+|Deliverable 4.1 d                          |Final Work Plan                            |Five (5) calendar days after meeting       |
+|Deliverable 4.2 a                          |Secure Hotel                               |30 calendar days prior to meeting          |
+|Deliverable 4.3 a                          |Travel Payment                             |30 calendar days after conference          |
+|Deliverable 4.3 b                          |Lodging Confirmation                       |Ten (10) calendar days prior to meeting    |
+|Deliverable 4.4 a                          |Website                                    |10 weeks prior to conference               |
+|Deliverable 4.5 a                          |Draft Agenda                               |30 calendar days prior to the meeting      |
+|Deliverable 4.6 a                          |Draft Graphic Designs                      |Six (6) weeks prior to conference          |
+|Deliverable 4.7 a                          |Results of Evaluation                      |De-Briefing Meeting                        |
+|Deliverable 4.8 a                          |Post-Conference Analysis                   |De-Briefing Meeting                        |
+|Deliverable 5 a                            |Quality Control Plan                       |Four (4) weeks after award of contract     |
+|Deliverable 6 a                            |Monthly Progress Reports                   |15th of each month                         |
+|Deliverable 6 b                            |Monthly Invoice                            |15th of each month                         |
+|Deliverable 6 c                            |Expenditure Reports                        |15th of each month                         |
+
+
+                                                             -----------------------
+[1] Please refer to Task 3.4 and Appendix A.
+
+
+
+
+
+
+                                                               BILLING INSTRUCTIONS
+
+
+
+We want all of our contractors to understand how the Department processes invoices (see Note at the bottom of this  page).   The  basic  rule  is
+this, we pay you within 15 days of receipt of a proper invoice.  There are two key terms that determine when the 15 day clock starts—receipt  and
+proper invoice.  Receipt occurs on the latter of:
+      1) For invoices transmitted electronically, we will look at the date a readable transmission is  received  by  our  office,  or  if  it  is
+received after normal working hours we will use the next business day.
+      2) The seventh day after the date on which the property is actually delivered or the performance of services is actually  completed.   This
+date may not be accurate if the contract calls for a longer acceptance period or if we actually accept goods or services before the seventh  day.
+ (5 CFR § 1315.4)
+      3) On the date of delivery, if specified in the contract.
+      4) On the date placed on the invoice by the contractor, if we fail to annotate the date of receipt in our office.
+
+Second, what makes an invoice a proper invoice?  An invoice is deemed proper through the following process.  We receive your  invoice,  and  then
+we review it for the following information, if the information is complete then we pay it:
+      1) Name of vendor
+      2) Invoice date
+      3) Government contract number (10 digits)
+      4) Vendor invoice number, account number, or other number identified in the contract
+      5) Description (including, for example, contract line/subline number), price, and quantity of goods or services rendered.
+      6) Shipping and payment terms (unless mutually agreed that this information is only required in the contract)
+      7) TIN (unless mutually agreed that this information is only required in the contract)
+      8) Banking information for payment by EFT (unless mutually agreed that this information is only required in the contract)
+      9) Contact name (where practicable), title and telephone number
+      10) Other substantiating documentation or information required by the contract.  This documentation should  include  information  regarding
+where the requested funds were spent. We need to see detailed labor hours per task, travel expenses (where travelers went, transportation  costs,
+etc.), supplies purchased, etc.
+      .
+If we determine that your invoice is not proper, we will return it to you and identify all defects that prevent payment. You should  correct  the
+invoice and return it to us for payment.  5 CFR § 1315.9
+
+Item # 10 above is, in our experience, the most problematic for our contractors.  The following explanation may  help  you  to  think  about  the
+types of information to include in your invoices/vouchers. According to the Federal Acquisition Regulations (FAR) 16.301-3, paragraph  (a)(2),  a
+cost-reimbursement contract requires, “Appropriate Government surveillance during the performance [that] will provide reasonable  assurance  that
+efficient methods and effective cost controls are used.”  This  “surveillance”  not  only  comes  in  the  form  of  monthly  reports,  but  more
+importantly, in invoicing. You have the responsibility to request reimbursement of your recorded costs; in other words, to submit an  invoice  on
+a regular basis. FAR 52.216-7, paragraph (b) defines the term costs to include the following: materials issued from  the  contractor's  inventory
+and placed in the production process for use on the contract;  direct  labor;  direct  travel;  other  direct  in-house  costs;  and  reasonable,
+allocable, and allowable indirect costs (see FAR 31), as shown in the records maintained by you for purposes of obtaining reimbursement  under  a
+Government contract.  The Government has the responsibility to pay the invoice, after determining which of the costs are  reasonable,  allocable,
+and allowable. To make this determination we must receive a detailed invoice with the costs broken out.
+
+***Please note*** Because of constraints surrounding how OII obligates grant funds, the Department cannot co-mingle funds from multiple  programs
+to cover the costs of administrative tasks that apply to the entire contract rather a specific grant program.  Therefore,  the  contract  awardee
+shall be required to bill expenses for administrative tasks such as monthly reports and quality control to each program separately.
+SOLICITATION, OFFER AND AWARD
+2. CONTRACT NUMBER
+
+1. THIS CONTRACT IS A RATED ORDER UNDER DPAS (15 CFR 700)
+3. SOLICITATION NUMBER 4. TYPE OF SOLICITATION SEALED BID (IFB) NEGOTIATED (RFP)
+
+RATING 5. DATE ISSUED
+
+PAGE
+
+1
+
+OF
+
+PAGES
+
+45
+
+6. REQUISITION/PURCHASE NUMBER
+
+ED-OII-13-R-0013
+7. ISSUED BY CODE
+
+EDOOII-13-000003 EDOOII-13-000003
+
+OII
+
+8. ADDRESS OFFER TO (If other than Item 7)
+
+US DEPARTMENT OF EDUCATION 400 Maryland Ave SW - Rm 4W300 Washington DC 20202
+NOTE: In sealed bid solicitations "offer" and "offeror" mean "bid" and "bidder".
+
+US Department of Education Contracts & Acq Mgt/Group B, 550 12th St SW - 7th Floor Washington DC USA
+
+SOLICITATION
+9. Sealed offers in original and handcarried, in the depository located in copies for furnishing the supplies or services in the Schedule will be received at the place specified in Item 8, or if
+until
+
+12:00 PM ET
+(Hour)
+
+local time
+
+MAR 21, 2013
+(Date)
+
+CAUTION - LATE Submissions, Modifications, and Withdrawls: See Section L, Provision No. 52.214-7 or 52.215-1. All offers are subject to all terms and conditions contained in this solicitation. 10. FOR INFORMATION CALL
+A. NAME B. TELEPHONE (NO COLLECT CALLS) C. E-MAIL ADDRESS
+
+Brigid Lochary
+DESCRIPTION PART 1 - THE SCHEDULE PAGES(S)
+
+202-245-6766
+11. TABLE OF CONTENTS
+(X) SEC.
+
+Brigid.Lochary@ed.gov
+DESCRIPTION PART II - CONTRACT CLAUSES PAGE(S)
+
+(X)
+
+SEC.
+
+X X X X X X X X
+
+A B C D E F G H
+
+SOLICITATION/CONTRACT FORM SUPPLIES OR SERVICES AND PRICES/COSTS DESCRIPTION/SPECS./WORK STATEMENT PACKAGING AND MARKING INSPECTION AND ACCEPTANCE DELIVERIES OR PERFORMANCE CONTRACT ADMINISTRATION DATA SPECIAL CONTRACT REQUIREMENTS
+
+1-1 2-7 8-8 9-9 10 - 10 11 - 11 12 - 13 14 - 16
+
+X
+
+I
+
+CONTRACT CLAUSES PART III - LIST OF DOCUMENTS, EXHIBITS AND OTHER ATTACH.
+
+17 - 25
+
+X
+
+J
+
+LIST OF ATTACHMENTS PART IV - PRESENTATIONS AND INSTRUCTIONS
+
+26 - 26
+
+X
+
+K
+
+REPRESENTATIONS, CERTIFICATIONS AND OTHER STATEMENTS OF OFFERORS
+
+27 - 36
+
+X X
+
+L M
+
+INSTRS., CONDS., AND NOTICES TO OFFERORS EVALUATION FACTORS FOR AWARD
+
+37 - 42 43 - 45
+
+OFFER
+NOTE: Item 12 does not apply if the solicitation includes the provisions at 52.214-16, Minimum Bid Acceptance Period. 12. In compliance with the above, the undersigned agrees, if this offer is accepted within calendar days (60 calendar days unless a different
+
+period is inserted by the offeror) from the date for receipt of offers specified above, to furnish any or all itmes upon which prices are offered at the price set opposite each item, delivered at the designated point(s), within the time specified in the schedule. 13. DISCOUNT FOR PROMPT PAYMENT
+(See Section I, Clause No. 52.232-8) 10 CALENDAR DAYS (%) AMENDMENT NO. 20 CALENDAR DAYS (%) DATE 30 CALENDAR DAYS (%) AMENDMENT NO. CALENDAR DAYS (%) DATE
+
+14. ACKNOWLEDGMENT OF AMENDMENTS
+(The offeror acknowledges receipt of amendments to the SOLICITATION for offerors and related documents numbered and dated): CODE 15A. NAME AND ADDRESS OF OFFEROR 15B. TELEPHONE NUMBER FACILITY
+
+16. NAME AND TITLE OF PERSON AUTHORIZED TO SIGN OFFER
+
+DUNS:
+
+(Type or print)
+
+15C. CHECK IF REMITTANCE ADDRESS IS DIFFERENT FROM 17. SIGNATURE ABOVE - ENTER SUCH ADDRESS IN SCHEDULE.
+
+18. OFFER DATE
+
+AWARD (To be completed by Government)
+19. ACCEPTED AS TO ITEMS NUMBERED 20. AMOUNT 21. ACCOUNTING AND APPROPRIATION
+
+See Schedule
+22. AUTHORITY FOR USING OTHER THAN FULL AND OPEN COMPETITION: 10 U.S.C 23004(c) ( 24. ADMINISTERED BY 26. NAME OF CONTRACTING OFFICER(Type or print) ) 41 U.S.C 253(c) ( CODE ) 23. SUBMIT INVOICES TO ADDRESS SHOWN IN (4 copies unless otherwise specified) 25. PAYMENT WILL BE MADE BY 27. UNITED STATES OF AMERICA (Signature of Contracting Officer) IMPORTANT - Award will be made on this Form, or on Standard Form 26, or by other authorized official written notice. (Must be fully completed by offeror) AUTHORIZED FOR LOCAL REPRODUCTION Previous edition is unusable CODE 28. AWARD DATE ITEM
+
+STANDARD FORM 33 (REV. 9-97) Prescribed by GSA - FAR (48 CFR) 53.214(c)
+
+PAGE 1 OF 45
+
+SCHEDULE Continued
+ITEM NO. SUPPLIES/SERVICES QUANTITY UNIT UNIT PRICE AMOUNT
+
+NTE 0001 Base Year - April 30, 2013 through April 29, 2014 0.00 EA NTE 0002 Option Year 1 - April 30, 2014 through April 29, 2015 0.00 EA NTE 0003 Option Year 2 - April 30, 2015 through April 29, 2016 0.00 EA
+
+NTE
+
+NTE
+
+NTE
+
+PAGE 2 OF 45 ED-OII-13-R-0013
+
+Table of Contents
+SECTION B B. 1 B. 2 SECTION C C. 1 SECTION D D. 1 SECTION E E. 1 E. 2 SECTION F F. 1 F. 2 SECTION G G. 1 G. 2 G. 3 G. 4 G. 5 SECTION H H. 1 H. 2 H. 3 H. 4 H. 5 H. 6 H. 7 H. 8 SECTION I I. 1 I. 2 I. 3 I. 4 I. 5 I. 6 I. 7 I. 8 I. 9 I. 10 I. 11 SUPPLIES OR SERVICES AND PRICES/COSTS.................................................... 2 301-4 ESTIMATED COST AND FIXED FEE (INCREMENTALLY FUNDED CONTRACTS) (FEBRUARY 1985)......... 7 301-22a CONTRACT DEFINITION (APRIL 1997)................................................... 7 DESCRIPTION/SPECIFICATIONS/WORK STATEMENT................................................. 8 302-2 SCOPE OF WORK (FEBRUARY 1985)....................................................... 8 PACKAGING AND MARKING.....................................................................9 303-1 SHIPMENT AND MARKING (MARCH 1986)................................................... 9 INSPECTION AND ACCEPTANCE................................................................10 52.246-5 INSPECTION OF SERVICES--COST-REIMBURSEMENT (APR 1984)........................... 10 304-1 INSPECTION AND ACCEPTANCE (FEBRUARY 1985)........................................... 10 DELIVERIES OR PERFORMANCE................................................................11 52.242-15 I STOP-WORK ORDER (AUG 1989)--ALTERNATE I (APR 1984)........................... 11 305-4 PERIOD OF PERFORMANCE (MARCH 1986)..................................................11 CONTRACT ADMINISTRATION DATA............................................................. 12 3452.201-70 CONTRACTING OFFICER`s REPRESENTATIVE (COR) (MAY 2011)........................ 12 306-1 INVOICE AND CONTRACT FINANCING REQUEST SUBMISSION (JAN 2007)........................ 12 306-2 ADDITIONAL REQUIREMENTS FOR CONTROL OF GOVERNMENT PROPERTY (JANUARY 1989)............ 12 306-8 CONTRACT ADMINISTRATOR (FEB 1985)................................................... 12 306-9 PROVISIONAL AND NEGOTIATED FINAL OVERHEAD RATES (OCTOBER 1993)...................... 13 SPECIAL CONTRACT REQUIREMENTS............................................................ 14 3452.243-70 KEY PERSONNEL (MAY 2011).................................................... 14 31.205.70 FOOD COSTS...................................................................... 14 31.205.71 TRAVEL COSTS.................................................................... 14 301-9 SECTION 8(a) DIRECT AWARDS (OCTOBER 2012)...........................................14 307-12 CONSENT TO SUBCONTRACT (AUGUST 1998)...............................................15 307-24 CONSULTANT SERVICES AND CONSENT (APRIL 1986)....................................... 15 313.237-72 CLEARANCE OF CONFERENCES/MEETINGS (DECEMBER 2012).............................. 15 Definition of Meetings....................................................................15 CONTRACT CLAUSES......................................................................... 17 52.202-1 52.203-3 52.203-5 52.203-6 52.203-7 52.203-8 52.203-10 52.203-12 52.204-4 52.204-7 52.204-10 DEFINITIONS (JAN 2012)......................................................... 17 GRATUITIES (APR 1984).......................................................... 17 COVENANT AGAINST CONTINGENT FEES (APR 1984).................................... 17 RESTRICTIONS ON SUBCONTRACTOR SALES TO THE GOVERNMENT (SEP 2006)................ 17 ANTI-KICKBACK PROCEDURES (OCT 2010).............................................17 CANCELLATION, RESCISSION, AND RECOVERY OF FUNDS FOR ILLEGAL OR IMPROPER ACTIVITY PRICE OR FEE ADJUSTMENT FOR ILLEGAL OR IMPROPER ACTIVITY (JAN 1997)............ 17 LIMITATION ON PAYMENTS TO INFLUENCE CERTAIN FEDERAL TRANSACTIONS (OCT 2010)..... 17 PRINTED OR COPIED DOUBLE-SIDED ON POSTCONSUMER FIBER CONTENT PAPER (MAY 2011).... 17 CENTRAL CONTRACTOR REGISTRATION (DEC 2012).....................................17 REPORTING EXECUTIVE COMPENSATION AND FIRST-TIER SUBCONTRACT AWARDS (AUG 2012) .. 17
+
+(JAN 1997)........................................................................................ 17
+
+PAGE 3 OF 45 ED-OII-13-R-0013
+
+Table of Contents
+I. 12 I. 13 I. 14 I. 15 I. 16 I. 17 I. 18 I. 19 I. 20 I. 21 I. 22 I. 23 I. 24 I. 25 I. 26 I. 27 I. 28 I. 29 I. 30 I. 31 I. 32 I. 33 I. 34 I. 35 I. 36 I. 37 I. 38 I. 39 I. 40 I. 41 I. 42 I. 43 I. 44 I. 45 I. 46 I. 47 I. 48 I. 49 I. 50 I. 51 I. 52 I. 53 I. 54 I. 55 I. 56 I. 57 52.209-6 PROTECTING THE GOVERNMENT`s INTEREST WHEN SUBCONTRACTING WITH CONTRACTORS AUDIT AND RECORDS--NEGOTIATION (OCT 2010)--ALTERNATE I (MAR 2009).............17 PRICE REDUCTION FOR DEFECTIVE CERTIFIED COST OR PRICING DATA (AUG 2011)........ 18 PRICE REDUCTION FOR DEFECTIVE CERTIFIED COST OR PRICING DATA--MODIFICATIONS (AUG PENSION ADJUSTMENTS AND ASSET REVERSIONS (OCT 2010)........................... 18 NOTIFICATION OF OWNERSHIP CHANGES (OCT 1997)..................................18 REQUIREMENTS FOR CERTIFIED COST OR PRICING DATA AND DATA OTHER THAN CERTIFIED ALLOWABLE COST AND PAYMENT (JUN 2011)......................................... 18 UTILIZATION OF SMALL BUSINESS CONCERNS (JAN 2011).............................. 18 LIMITATIONS ON SUBCONTRACTING (NOV 2011)......................................18 POST-AWARD SMALL BUSINESS PROGRAM REPRESENTATION (APR 2012)................... 18 CONVICT LABOR (JUN 2003)...................................................... 18 PROHIBITION OF SEGREGATED FACILITIES (FEB 1999)............................... 18 EQUAL OPPORTUNITY (MAR 2007)................................................. 18 EQUAL OPPORTUNITY FOR VETERANS. [SEP 2010]....................................18 AFFIRMATIVE ACTION FOR WORKERS WITH DISABILITIES (OCT 2010.................... 19 EMPLOYMENT REPORTS VETERANS (SEP 2010)........................................19 COMBATING TRAFFICKING IN PERSONS (FEB 2009)...................................19 EMPLOYMENT ELIGIBILITY VERIFICATION (JUL 2012)................................ 19 DRUG-FREE WORKPLACE (MAY 2001)................................................ 19 PRIVACY ACT NOTIFICATION (APR 1984)........................................... 19 PRIVACY ACT (APR 1984)........................................................ 19 BUY AMERICAN ACT--FREE TRADE AGREEMENTS--ISRAELI TRADE ACT (NOV 2012)...........19 RESTRICTIONS ON CERTAIN FOREIGN PURCHASES (JUN 2008).......................... 19 AUTHORIZATION AND CONSENT (DEC 2007).......................................... 19 NOTICE AND ASSISTANCE REGARDING PATENT AND COPYRIGHT INFRINGEMENT (DEC 2007).... 19 LIMITATION ON WITHHOLDING OF PAYMENTS (APR 1984)...............................19 INTEREST (OCT 2010).......................................................... 20 AVAILABILITY OF FUNDS (APR 1984)............................................. 20 LIMITATION OF COST (APR 1984)................................................ 20 LIMITATION OF FUNDS (APR 1984)............................................... 20 ASSIGNMENT OF CLAIMS (JAN 1986).............................................. 20 PROMPT PAYMENT (OCT 2008).................................................... 20 PAYMENT BY ELECTRONIC FUNDS TRANSFER--CENTRAL CONTRACTOR REGISTRATION (OCT DISPUTES (JUL 2002)--ALTERNATE I (DEC 1991)................................. 20 PROTEST AFTER AWARD (AUG 1996)................................................ 20 APPLICABLE LAW FOR BREACH OF CONTRACT CLAIM (OCT 2004)......................... 20 CONTINUITY OF SERVICES (JAN 1991)............................................. 20 PRIVACY OR SECURITY SAFEGUARDS (AUG 1996)..................................... 20 BANKRUPTCY (JUL 1995)........................................................ 20 CHANGES--COST-REIMBURSEMENT (AUG 1987)......................................... 20 COMPETITION IN SUBCONTRACTING (DEC 1996).......................................21 GOVERNMENT PROPERTY (APR 2012)................................................ 21 USE AND CHARGES (APR 2012).................................................... 21 LIMITATION OF LIABILITY (FEB 1997)........................................... 21 VALUE ENGINEERING (OCT 2010).................................................. 21
+PAGE 4 OF 45 ED-OII-13-R-0013
+
+DEBARRED, SUSPENDED, OR PROPOSED FOR DEBARMENT (DEC 2010)........................................ 17 52.215-2 I 52.215-10 52.215-11 52.215-15 52.215-19 52.215-21 52.216-7 52.219-8 52.219-14 52.219-28 52.222-3 52.222-21 52.222-26 52.222-35 52.222-36 52.222-37 52.222-50 52.222-54 52.223-6 52.224-1 52.224-2 52.225-3 52.225-13 52.227-1 52.227-2 52.232-9 52.232-17 52.232-18 52.232-20 52.232-22 52.232-23 52.232-25 52.232-33 52.233-1 I 52.233-3 52.233-4 52.237-3 52.239-1 52.242-13 52.243-2 52.244-5 52.245-1 52.245-9 52.246-23 52.248-1
+
+2011)..............................................................................................18
+
+COST OR PRICING DATA--MODIFICATIONS (OCT 2010)................................................... 18
+
+2003)..............................................................................................20
+
+Table of Contents
+I. 58 I. 59 I. 60 I. 61 I. 62 I. 63 I. 64 I. 65 I. 66 I. 67 I. 68 I. 69 I. 70 I. 71 I. 72 I. 73 I. 74 I. 75 I. 76 I. 77 I. 78 I. 79 I. 80 I. 81 I. 82 I. 83 I. 84 I. 85 I. 86 SECTION J J. 1 SECTION K K. 1 K. 2 K. 3 K. 4 K. 5 K. 6 K. 7 K. 8 K. 9 K. 10 K. 11 SECTION L L. 1 52.249-6 52.249-14 52.253-1 3452.202-1 3452.208-71 3452.208-72 3452.209-71 3452.215-33 3452.215-70 3452.216-70 3452.224-70 3452.227-70 3452.227-71 3452.227-72 3452.228-70 3452.232-70 3452.232-71 3452.237-70 3452.237-71 3452.239-72 3452.242-70 3452.242-71 3452.242-72 3452.242-73 3452.247-70 52.209-9 52.217-9 52.219-18 TERMINATION (COST-REIMBURSEMENT) (MAY 2004).................................... 21 EXCUSABLE DELAYS (APR 1984).................................................. 21 COMPUTER GENERATED FORMS (JAN 1991)........................................... 21 DEFINITIONS--DEPARTMENT OF EDUCATION (MAY 2011).............................. 21 PRINTING (MAY 2011)........................................................ 21 PAPERWORK REDUCTION ACT (MAY 2011)......................................... 21 CONFLICT OF INTEREST (MAY 2011)............................................ 21 ORDER OF PRECEDENCE (AUG 1987)............................................. 21 RELEASE OF RESTRICTED DATA (MAY 2011)...................................... 21 ADDITIONAL COST PRINCIPLES (MAY 2011).......................................22 RELEASE OF INFORMATION UNDER THE FREEDOM OF INFORMATION ACT (MAY 2011)....... 22 PUBLICATION AND PUBLICITY (MAY 2011)........................................22 ADVERTISING OF AWARDS (MAY 2011)........................................... 22 USE AND NON-DISCLOSURE AGREEMENT (MAY 2011)................................. 22 REQUIRED INSURANCE (MAY 2011).............................................. 22 LIMITATION OF COST OR FUNDS (MAY 2011)..................................... 22 INCREMENTAL FUNDING (MAY 2011)............................................. 22 SERVICES OF CONSULTANTS (MAY 2011)......................................... 22 OBSERVANCE OF ADMINISTRATIVE CLOSURES (MAY 2011)............................ 22 DEPARTMENT SECURITY REQUIREMENTS (MAY 2011)................................. 22 LITIGATION AND CLAIMS (MAY 2011)........................................... 23 NOTICE TO THE GOVERNMENT OF DELAYS (MAY 2011).............................. 23 WITHHOLDING OF CONTRACT PAYMENTS (AUG 1987)................................. 23 ACCESSIBILITY OF MEETINGS, CONFERENCES, AND SEMINARS TO PERSONS WITH FOREIGN TRAVEL (MAY 2011).................................................. 23
+
+DISABILITIES (MAY 2011)........................................................................... 23 UPDATES OF PUBLICLY AVAILABLE INFORMATION REGARDING RESPONSIBILITY MATTERS (FEB OPTION TO EXTEND THE TERM OF THE CONTRACT (MAR 2000).......................... 24 NOTIFICATION OF COMPETITION LIMITED TO ELIGIBLE 8(A) CONCERNS (JUN 2003)....... 24
+
+2012)..............................................................................................23
+
+52.252-2a CLAUSES INCORPORATED BY REFERENCE (MAY 2001)................................... 25 LIST OF ATTACHMENTS..................................................................... 26 309-1a LIST OF ATTACHMENTS (APRIL 1984)...................................................26 REPRESENTATIONS, CERTIFICATIONS AND OTHER STATEMENTS OF OFFERORS......................... 27 52.204-8 52.209-5 52.209-7 52.252-1 ANNUAL REPRESENTATIONS AND CERTIFICATIONS (DEC 2012)............................ 27 CERTIFICATION REGARDING RESPONSIBILITY MATTERS (APR 2010)....................... 29 INFORMATION REGARDING RESPONSIBILITY MATTERS (FEB 2012)......................... 30 SOLICITATION PROVISIONS INCORPORATED BY REFERENCE (FEB 1998).................... 31 CONFLICT OF INTEREST CERTIFICATION (MAY 2011)................................ 31 NOTICE TO OFFERORS OF DEPARTMENT SECURITY REQUIREMENTS (MAY 2011).............32
+
+3452.209-70 3452.239-71
+
+310-1 REPRESENTATION AUTHORITY (JANUARY 2005)............................................. 33 310-6 DUPLICATION OF COST (MARCH 1985)................................................... 34 310-10 GENERAL FINANCIAL AND ORGANIZATIONAL INFORMATION (APRIL 1984)...................... 34 310-16 POST EMPLOYMENT CONFLICT OF INTEREST (MARCH 1985)................................. 36 313-1 CERTIFICATION OF SUBCONTRACTING (AUGUST 1998)...................................... 36 INSTRUCTIONS, CONDITIONS, AND NOTICES TO OFFERORS........................................37 52.204-6 DATA UNIVERSAL NUMBERING SYSTEM NUMBER (DEC 2012)...............................37
+PAGE 5 OF 45 ED-OII-13-R-0013
+
+Table of Contents
+L. 2 L. 3 L. 4 L. 5 L. 6 L. 7 SECTION M M. 1 52.215-16 52.215-20 52.222-46 52.216-1 52.233-2 FACILITIES CAPITAL COST OF MONEY (JUN 2003)................................... 37 REQUIREMENTS FOR CERTIFIED COST OR PRICING DATA AND DATA OTHER THAN CERTIFIED COST EVALUATION OF COMPENSATION FOR PROFESSIONAL EMPLOYEES (FEB 1993)............... 37 TYPE OF CONTRACT (APR 1984).................................................... 37 SERVICE OF PROTEST (SEP 2006).................................................. 37
+
+OR PRICING DATA (OCT 2010)....................................................................... 37
+
+Proposal Instructions..................................................................... 37 EVALUATION FACTORS FOR AWARD............................................................ 43 Evaluation Criteria....................................................................... 43
+
+PAGE 6 OF 45 ED-OII-13-R-0013
+
+SECTION B SUPPLIES OR SERVICES AND PRICES/COSTS
+B. 1 301-4 ESTIMATED COST AND FIXED FEE (INCREMENTALLY FUNDED CONTRACTS) (FEBRUARY 1985)
+
+a) It is estimated that the total cost to the Government for full performance of this contract will be TBD , of which the sum of TBD represents the estimated reimbursable costs and TBD represents the fixed-fee (if any). b) Sufficient funds are not presently available to cover the total estimated cost of this contract; however, this contract will follow the concepts of incremental funding described in FAR Clause 52.232-22, "Limitation of Funds." Total funds currently available for payment and allotted to this contract are TBD , of which TBD represents the limitation for reimbursable costs and TBD represents the proration of fixed-fee (if any). c) If and when the contract is fully funded, as specified in paragraph (a) of this clause, the "Limitation of Cost" clause shall become applicable. d) The Contracting Officer may allot additional funds to the contract without the concurrence of the Contractor. B. 2 301-22a CONTRACT DEFINITION (APRIL 1997) contract, as defined under Subpart(s) 16.3 of the Federal
+
+(a) This is a cost plus fixed fee type Acquisition Regulation.
+
+PAGE 7 OF 45 ED-OII-13-R-0013
+
+SECTION C DESCRIPTION/SPECIFICATIONS/WORK STATEMENT
+C. 1 302-2 SCOPE OF WORK (FEBRUARY 1985)
+
+The contractor shall furnish all personnel, materials, services, and facilities necessary to perform the requirements set forth in the Statement of Work, Attachment A . This shall also be done in accordance with the specified General and Special Provisions and the contractor's final technical proposal, which are hereby incorporated by reference as a part of the contract.
+
+PAGE 8 OF 45 ED-OII-13-R-0013
+
+SECTION D PACKAGING AND MARKING
+D. 1 303-1 SHIPMENT AND MARKING (MARCH 1986)
+
+(a) The contract number shall be placed on or adjacent to all exterior mailing or shipping labels of deliverable items called for by the contract. (b) Ship deliverable items to:
+
+To be determined at time of award
+
+(c) Mark deliverables for: To be determined at time of award. All deliverables shall be shipped on an F.O.B. Destination basis. The point for that shall be the delivery point otherwise specified under this section.
+
+PAGE 9 OF 45 ED-OII-13-R-0013
+
+SECTION E INSPECTION AND ACCEPTANCE
+E. 1 52.246-5 INSPECTION OF SERVICES--COST-REIMBURSEMENT (APR 1984)
+
+(a) "Definition." "Services," as used in this clause, includes services performed, workmanship, and material furnished or used in performing services. (b) The Contractor shall provide and maintain an inspection system acceptable to the Government covering the services under this contract. Complete records of all inspection work performed by the Contractor shall be maintained and made available to the Government during contract performance and for as long afterwards as the contract requires. (c) The Government has the right to inspect and test all services called for by the contract, to the extent practicable at all places and times during the term of the contract. The Government shall perform inspections and tests in a manner that will not unduly delay the work. (d) If any of the services performed do not conform with contract requirements, the Government may require the Contractor to perform the services again in conformity with contract requirements, for no additional fee. When the defects in services cannot be corrected by reperformance, the Government may-(1) Require the Contractor to take necessary action to ensure that future performance conforms to contract requirements; and (2) Reduce any fee payable under the contract to reflect the reduced value of the services performed. (e) If the Contractor fails to promptly perform the services again or take the action necessary to ensure future performance in conformity with contract requirements, the Government may-(1) By contract or otherwise, perform the services and reduce any fee payable by an amount that is equitable under the circumstances; or (2) Terminate the contract for default.
+
+(End of Clause) E. 2 304-1 INSPECTION AND ACCEPTANCE (FEBRUARY 1985)
+
+Pursuant to the inspection clause, Section I, final inspection and acceptance of all contracted items shall be made by the Contracting Officer.
+
+PAGE 10 OF 45 ED-OII-13-R-0013
+
+SECTION F DELIVERIES OR PERFORMANCE
+F. 1 52.242-15 I STOP-WORK ORDER (AUG 1989)--ALTERNATE I (APR 1984)
+
+(Reference 52.242-15 I) F. 2 305-4 PERIOD OF PERFORMANCE (MARCH 1986) to April 29, 2014, with two 12-month option
+
+The period of performance shall be from April 30, 2013 periods , inclusive of all specified deliveries and/or task work.
+
+PAGE 11 OF 45 ED-OII-13-R-0013
+
+SECTION G CONTRACT ADMINISTRATION DATA
+G. 1 3452.201-70 CONTRACTING OFFICER`s REPRESENTATIVE (COR) (MAY 2011)
+
+(a) The Contracting Officer`s Representative (COR) is responsible for the technical aspects of the project, technical liaison with the contractor, and any other responsibilities that are specified in the contract. These responsibilities include inspecting all deliverables, including reports, and recommending acceptance or rejection to the contracting officer. (b) The COR is not authorized to make any commitments or otherwise obligate the Government or authorize any changes that affect the contract price, terms, or conditions. Any contractor requests for changes shall be submitted in writing directly to the contracting officer or through the COR. No such changes shall be made without the written authorization of the contracting officer. (c) The COR`s name and contact information: (d) The COR may be changed by the Government at any time, but notification of the change, including the name and address of the successor COR, will be provided to the contractor by the contracting officer in writing. (End of Clause)
+
+G. 2
+
+306-1 INVOICE AND CONTRACT FINANCING REQUEST SUBMISSION (JAN 2007)
+
+(A) The Government agrees to pay the Contractor, as complete compensation for all work and services performed and materials furnished under this contract those allowable costs defined in the contract clause entitled "ALLOWABLE COST AND PAYMENT" in an amount not to exceed the estimated costs specified in the contract. (B) The contractor shall submit invoices electronically as an attachment to a message to OCFOCAMINVOICING@ED.GOV. The subject area of the message shall contain the invoice number, contract number, and contract specialist's name. The electronic copy of the invoice shall be in a format that is supported by Microsoft Office (Microsoft Word or Excel), or Adobe Acrobat (.pdf). (C) The Contractor shall prepare invoices and contract financing requests in accordance with the attached billing instructions. (See Attachment B ) G. 3 306-2 ADDITIONAL REQUIREMENTS FOR CONTROL OF GOVERNMENT PROPERTY (JANUARY 1989)
+
+(A) The contractor shall request written authorization from the contracting officer before acquiring any contractually necessary property to which the Government will have title. The request shall include complete descriptions of all individual items which will exceed $1,000 in cost, including:
+
+(a) a brief statement of function; (b) manufacturer and manufacturer's brand name, model or part number; (c) vendor and its proposed price; (B) Management of government property in the possession of the contractor shall be in accordance with FAR Part 45. The contractor shall provide an annual report of total property acquisition cost, as required by FAR 45.505-14. G. 4 306-8 CONTRACT ADMINISTRATOR (FEB 1985)
+
+The Contractor shall designate one individual to be contacted during the period of the contract for prompt contract administration.
+
+To be submitted in contractor's proposal.
+
+PAGE 12 OF 45 ED-OII-13-R-0013
+
+G. 5
+
+306-9 PROVISIONAL AND NEGOTIATED FINAL OVERHEAD RATES (OCTOBER 1993)
+
+(a) Pending the establishment of final indirect cost rates, as required by the clause entitled "Allowable Cost and Payment" FAR 52.216-7, the Contractor shall be reimbursed for its indirect costs on the basis of the negotiated provisional, or billing, rates as set forth below. Those rates shall remain in effect until the contract is modified to incorporate either negotiated final indirect rates, as directed by either paragraph (d) or (f) of the same clause, as applicable, or revised provisional indirect cost rates, as explained in paragraph (e). (b) The provisional overhead rate(s) applicable to this contract:
+
+TBD
+
+PAGE 13 OF 45 ED-OII-13-R-0013
+
+SECTION H SPECIAL CONTRACT REQUIREMENTS
+H. 1 3452.243-70 KEY PERSONNEL (MAY 2011)
+
+(a) The personnel designated as key personnel in this contract are considered to be essential to the work being performed hereunder. Prior to diverting any of the specified individuals to other programs, or otherwise substituting any other personnel for specified personnel, the contractor shall notify the contracting officer reasonably in advance and shall submit justification (including proposed substitutions) in sufficient detail to permit evaluation of the impact on the contract effort. No diversion or substitution shall be made by the contractor without written consent of the contracting officer; provided, that the contracting officer may ratify a diversion or substitution in writing and that ratification shall constitute the consent of the contracting officer required by this clause. The contract shall be modified to reflect the addition or deletion of key personnel. (b) The following personnel have been identified as Key Personnel in the performance of this contract: Labor Category Name To be completed at time of award (End of Clause)
+
+H. 2
+
+31.205.70 FOOD COSTS
+
+No food may be provided under this contract or in association with this contract unless consent is provided below. The cost of food under this contract is unallowable unless the contractor receives written consent from the Contracting Officer prior to the incurrence of the cost. If the contractor wishes to be reimbursed for a food cost, it must make a request in writing at least 21 days prior to the day that costs would be incurred. The contractor shall include in its request the following: the purpose of the event at which the food will be served, why the food is integral to fulfill a government requirement in the contract, and the proposed costs. The lack of a timely response from the Contracting Officer shall not constitute constructive acceptance of the allowability of the proposed charge. Consent is hereby given to the contractor to NONE . H. 3 31.205.71 TRAVEL COSTS
+
+No invitational travel (defined as: Official government travel conducted by a non-federal employee in order to provide a #direct service# [i.e. presenting on a topic, serving as a facilitator, serving on a Federal Advisory Committee Act, or advising in an area of expertise] to the government) may be provided under this contract or in association with this contract unless consent is provided below. The cost of invitational travel under this contract is unallowable unless the contractor receives written consent from the Contracting Officer prior to the incurrence of the cost. If the contractor wishes to be reimbursed for a cost related to invitational travel, it must make a request in writing at least 21 days prior to the day that costs would be incurred. The contractor shall include in its request the following: why the invitational travel cost is integral to fulfill a government requirement in the contract, and the proposed cost that must be in accordance with federal travel regulations . The lack of a timely response from the Contracting Officer shall not constitute constructive acceptance of the allowability of the proposed charge. Consent is hereby given to the contractor to NONE.
+
+H. 4
+
+301-9 SECTION 8(a) DIRECT AWARDS (OCTOBER 2012)
+
+(a) This contract is issued as a direct award between the contracting activity and the 8(a) contractor pursuant to the Partnership Agreement between the Small Business Administration (SBA) and the U.S. Department of Education (ED). Accordingly, the SBA, even if not identified in Section A of this contract, is the prime contractor and retains responsibility for 8(a) certification, 8(a) eligibility determinations and related issues, and providing counseling and assistance to the 8(a) contractor under the 8(a) program. The cognizant SBA district is: Washington Metropolitan Area District Office, 740 15th Street, NW, 3rd Floor, Washington DC 20005. The point of contact is TBD , the SBA business development specialist for the firm TBD .
+
+PAGE 14 OF 45 ED-OII-13-R-0013
+
+(b) The contracting activity is responsible for administering the contact and taking any action on behalf of the Government under the terms and conditions of the contract. However, the contracting activity shall give advance notice to the SBA before it issues a final notice terminating performance, either in whole or in part, under the contract. The contracting activity shall also coordinate with SBA prior to processing any novation agreement. The contracting activity may assign contract administration functions to a contract administration office. (c) The contactor agrees: (1) to notify the contracting Officer, simultaneous with its notification to SBA (as required by SBA 8(a) regulations), when the owner or owners upon whom 8(a) eligibility is based plan to relinquish ownership or control of the concern. Consistent with 15 U.S.C. 637(a) (21), transfer of ownership or control shall result in termination of the contract for convenience, unless SBA waives the requirement for termination prior to the actual relinquishing of ownership and control. (2) it will adhere to the requirements of 52.219-14, Limitations on Subcontracting. H. 5 307-12 CONSENT TO SUBCONTRACT (AUGUST 1998) in the amount stated in its final
+
+Consent is hereby given to the contractor to subcontract with TBD proposal revision. H. 6 307-24 CONSULTANT SERVICES AND CONSENT (APRIL 1986)
+
+The Contractor shall obtain the consent of the Contracting Officer prior to using any consultant on this contract. The Contractor
+
+shall determine whether any consultant that is used has in effect an agreement with another Federal agency for similar or like services and, if so, shall notify the Contracting Officer.
+
+H. 7
+
+313.237-72 CLEARANCE OF CONFERENCES/MEETINGS (DECEMBER 2012)
+
+Any hotel/venue contract that the Contractor negotiates must be reviewed by and receive concurrence from an Event Services Team member prior to final agreement. The Event Services staff can be contacted at (202) 401-3679 or event.services@ed.gov. Comps: The Contractor does not have authority to negotiate or accept room upgrades for Department or Contractor staff. However, the Contractor is authorized to exercise its best efforts to obtain other Comps of necessary items/services that the Department would otherwise seek to procure in furtherance of the conference/meeting (i.e., meeting rooms, sleeping rooms, audio-visual equipment, etc.) Dual Compensation: Contractors are prohibited from receiving compensation from both the Department and any other source for conference planning performed pursuant to the terms of this Contract. If the vendor receives any compensation from another source as a result of conference services performed for the Department, the Contractor will report this compensation to the Contracting Officer and offset its invoice to the Department in an equal amount. H. 8 Definition of Meetings
+
+PAGE 15 OF 45 ED-OII-13-R-0013
+
+Meetings ­ Include, but are not limited to, non-routine formal conferences, congresses, conventions, seminars, symposiums, workshops, with a published and substantive agenda with scheduled speakers and concern matters of topical interest to participants from multiple agencies and/or non-governmental participants. As used in this directive, "meetings" do not include purely internal routine business meetings primarily involving discussions of day-to-day internal procedures or operations such as, but not limited to, ED-sponsored staff meetings, all-hands meetings, working groups, retreats, etc.
+
+PAGE 16 OF 45 ED-OII-13-R-0013
+
+SECTION I CONTRACT CLAUSES
+I. 1 52.202-1 DEFINITIONS (JAN 2012)
+
+(Reference 52.202-1) I. 2 52.203-3 GRATUITIES (APR 1984)
+
+(Reference 52.203-3) I. 3 52.203-5 COVENANT AGAINST CONTINGENT FEES (APR 1984)
+
+(Reference 52.203-5) I. 4 52.203-6 RESTRICTIONS ON SUBCONTRACTOR SALES TO THE GOVERNMENT (SEP 2006)
+
+(Reference 52.203-6) I. 5 52.203-7 ANTI-KICKBACK PROCEDURES (OCT 2010)
+
+(Reference 52.203-7) I. 6 1997) 52.203-8 CANCELLATION, RESCISSION, AND RECOVERY OF FUNDS FOR ILLEGAL OR IMPROPER ACTIVITY (JAN
+
+(Reference 52.203-8) I. 7 52.203-10 PRICE OR FEE ADJUSTMENT FOR ILLEGAL OR IMPROPER ACTIVITY (JAN 1997)
+
+(Reference 52.203-10) I. 8 52.203-12 LIMITATION ON PAYMENTS TO INFLUENCE CERTAIN FEDERAL TRANSACTIONS (OCT 2010)
+
+(Reference 52.203-12) I. 9 52.204-4 PRINTED OR COPIED DOUBLE-SIDED ON POSTCONSUMER FIBER CONTENT PAPER (MAY 2011)
+
+(Reference 52.204-4) I. 10 52.204-7 CENTRAL CONTRACTOR REGISTRATION (DEC 2012)
+
+(Reference 52.204-7) I. 11 52.204-10 REPORTING EXECUTIVE COMPENSATION AND FIRST-TIER SUBCONTRACT AWARDS (AUG 2012)
+
+(Reference 52.204-10) I. 12 52.209-6 PROTECTING THE GOVERNMENT`s INTEREST WHEN SUBCONTRACTING WITH CONTRACTORS DEBARRED, SUSPENDED, OR PROPOSED FOR DEBARMENT (DEC 2010) (Reference 52.209-6) I. 13 52.215-2 I AUDIT AND RECORDS--NEGOTIATION (OCT 2010)--ALTERNATE I (MAR 2009)
+
+(Reference 52.215-2 I)
+
+PAGE 17 OF 45 ED-OII-13-R-0013
+
+I. 14
+
+52.215-10
+
+PRICE REDUCTION FOR DEFECTIVE CERTIFIED COST OR PRICING DATA (AUG 2011)
+
+(Reference 52.215-10) I. 15 2011) 52.215-11 PRICE REDUCTION FOR DEFECTIVE CERTIFIED COST OR PRICING DATA--MODIFICATIONS (AUG
+
+(Reference 52.215-11) I. 16 52.215-15 PENSION ADJUSTMENTS AND ASSET REVERSIONS (OCT 2010)
+
+(Reference 52.215-15) I. 17 52.215-19 NOTIFICATION OF OWNERSHIP CHANGES (OCT 1997)
+
+(Reference 52.215-19) I. 18 52.215-21 REQUIREMENTS FOR CERTIFIED COST OR PRICING DATA AND DATA OTHER THAN CERTIFIED COST OR PRICING DATA--MODIFICATIONS (OCT 2010) (Reference 52.215-21) I. 19 52.216-7 ALLOWABLE COST AND PAYMENT (JUN 2011)
+
+(Reference 52.216-7) I. 20 52.219-8 UTILIZATION OF SMALL BUSINESS CONCERNS (JAN 2011)
+
+(Reference 52.219-8) I. 21 52.219-14 LIMITATIONS ON SUBCONTRACTING (NOV 2011)
+
+(Reference 52.219-14) I. 22 52.219-28 POST-AWARD SMALL BUSINESS PROGRAM REPRESENTATION (APR 2012)
+
+(Reference 52.219-28) (The following clause shall apply as prescribed in FAR 22.202.) I. 23 52.222-3 CONVICT LABOR (JUN 2003)
+
+(Reference 52.222-3) I. 24 52.222-21 PROHIBITION OF SEGREGATED FACILITIES (FEB 1999)
+
+(Reference 52.222-21) (The following clause shall apply as prescribed in FAR 22.8.) I. 25 52.222-26 EQUAL OPPORTUNITY (MAR 2007)
+
+(Reference 52.222-26) (The following clause shall apply as prescribed in FAR 22.1308.)
+
+PAGE 18 OF 45 ED-OII-13-R-0013
+
+I. 26
+
+52.222-35
+
+EQUAL OPPORTUNITY FOR VETERANS. [SEP 2010]
+
+(Reference 52.222-35) (The following clause shall apply as prescribed in FAR 22.1408.) I. 27 52.222-36 AFFIRMATIVE ACTION FOR WORKERS WITH DISABILITIES (OCT 2010
+
+(Reference 52.222-36) (The following clause shall apply as prescribed in FAR 22.1308(b). NOTE: the reports required by the following clause shall be submitted to OASVET (VETS-100); U.S. Department of Labor; 200 Constitution Ave., NW; Washington, DC 20210.) I. 28 52.222-37 EMPLOYMENT REPORTS VETERANS (SEP 2010)
+
+(Reference 52.222-37) I. 29 52.222-50 COMBATING TRAFFICKING IN PERSONS (FEB 2009)
+
+(Reference 52.222-50) I. 30 52.222-54 EMPLOYMENT ELIGIBILITY VERIFICATION (JUL 2012)
+
+(Reference 52.222-54) I. 31 52.223-6 DRUG-FREE WORKPLACE (MAY 2001)
+
+(Reference 52.223-6) I. 32 52.224-1 PRIVACY ACT NOTIFICATION (APR 1984)
+
+(Reference 52.224-1) I. 33 52.224-2 PRIVACY ACT (APR 1984)
+
+(Reference 52.224-2) (The following clause shall apply as prescribed in FAR 25.109.) I. 34 52.225-3 BUY AMERICAN ACT--FREE TRADE AGREEMENTS--ISRAELI TRADE ACT (NOV 2012)
+
+(Reference 52.225-3) I. 35 52.225-13 RESTRICTIONS ON CERTAIN FOREIGN PURCHASES (JUN 2008)
+
+(Reference 52.225-13) I. 36 52.227-1 AUTHORIZATION AND CONSENT (DEC 2007)
+
+(Reference 52.227-1) I. 37 52.227-2 NOTICE AND ASSISTANCE REGARDING PATENT AND COPYRIGHT INFRINGEMENT (DEC 2007)
+
+(Reference 52.227-2) (The following clause shall apply as prescribed in FAR 32.111(c)(2).)
+
+PAGE 19 OF 45 ED-OII-13-R-0013
+
+I. 38
+
+52.232-9
+
+LIMITATION ON WITHHOLDING OF PAYMENTS (APR 1984)
+
+(Reference 52.232-9) I. 39 52.232-17 INTEREST (OCT 2010)
+
+(Reference 52.232-17) I. 40 52.232-18 AVAILABILITY OF FUNDS (APR 1984)
+
+(Reference 52.232-18) I. 41 52.232-20 LIMITATION OF COST (APR 1984)
+
+(Reference 52.232-20) I. 42 52.232-22 LIMITATION OF FUNDS (APR 1984)
+
+(Reference 52.232-22) I. 43 52.232-23 ASSIGNMENT OF CLAIMS (JAN 1986)
+
+(Reference 52.232-23) I. 44 52.232-25 PROMPT PAYMENT (OCT 2008)
+
+(Reference 52.232-25) I. 45 52.232-33 PAYMENT BY ELECTRONIC FUNDS TRANSFER--CENTRAL CONTRACTOR REGISTRATION (OCT 2003)
+
+(Reference 52.232-33) I. 46 52.233-1 I DISPUTES (JUL 2002)--ALTERNATE I (DEC 1991)
+
+(Reference 52.233-1 I) I. 47 52.233-3 PROTEST AFTER AWARD (AUG 1996)
+
+(Reference 52.233-3) I. 48 52.233-4 APPLICABLE LAW FOR BREACH OF CONTRACT CLAIM (OCT 2004)
+
+(Reference 52.233-4) I. 49 52.237-3 CONTINUITY OF SERVICES (JAN 1991)
+
+(Reference 52.237-3) I. 50 52.239-1 PRIVACY OR SECURITY SAFEGUARDS (AUG 1996)
+
+(Reference 52.239-1) I. 51 52.242-13 BANKRUPTCY (JUL 1995)
+
+(Reference 52.242-13)
+
+PAGE 20 OF 45 ED-OII-13-R-0013
+
+I. 52
+
+52.243-2
+
+CHANGES--COST-REIMBURSEMENT (AUG 1987)
+
+(Reference 52.243-2) I. 53 52.244-5 COMPETITION IN SUBCONTRACTING (DEC 1996)
+
+(Reference 52.244-5) I. 54 52.245-1 GOVERNMENT PROPERTY (APR 2012)
+
+(Reference 52.245-1) I. 55 52.245-9 USE AND CHARGES (APR 2012)
+
+(Reference 52.245-9) I. 56 52.246-23 LIMITATION OF LIABILITY (FEB 1997)
+
+(Reference 52.246-23) I. 57 52.248-1 VALUE ENGINEERING (OCT 2010)
+
+(Reference 52.248-1) I. 58 52.249-6 TERMINATION (COST-REIMBURSEMENT) (MAY 2004)
+
+(Reference 52.249-6) I. 59 52.249-14 EXCUSABLE DELAYS (APR 1984)
+
+(Reference 52.249-14) I. 60 52.253-1 COMPUTER GENERATED FORMS (JAN 1991)
+
+(Reference 52.253-1) I. 61 3452.202-1 DEFINITIONS--DEPARTMENT OF EDUCATION (MAY 2011)
+
+(Reference 3452.202-1) I. 62 3452.208-71 PRINTING (MAY 2011)
+
+(Reference 3452.208-71) I. 63 3452.208-72 PAPERWORK REDUCTION ACT (MAY 2011)
+
+(Reference 3452.208-72) I. 64 3452.209-71 CONFLICT OF INTEREST (MAY 2011)
+
+(Reference 3452.209-71) I. 65 3452.215-33 ORDER OF PRECEDENCE (AUG 1987)
+
+(Reference 3452.215-33)
+
+PAGE 21 OF 45 ED-OII-13-R-0013
+
+I. 66
+
+3452.215-70
+
+RELEASE OF RESTRICTED DATA (MAY 2011)
+
+(Reference 3452.215-70) I. 67 3452.216-70 ADDITIONAL COST PRINCIPLES (MAY 2011)
+
+(Reference 3452.216-70) I. 68 3452.224-70 RELEASE OF INFORMATION UNDER THE FREEDOM OF INFORMATION ACT (MAY 2011)
+
+(Reference 3452.224-70) I. 69 3452.227-70 PUBLICATION AND PUBLICITY (MAY 2011)
+
+(Reference 3452.227-70) I. 70 3452.227-71 ADVERTISING OF AWARDS (MAY 2011)
+
+(Reference 3452.227-71) I. 71 3452.227-72 USE AND NON-DISCLOSURE AGREEMENT (MAY 2011)
+
+(Reference 3452.227-72) I. 72 3452.228-70 REQUIRED INSURANCE (MAY 2011)
+
+(Reference 3452.228-70) I. 73 3452.232-70 LIMITATION OF COST OR FUNDS (MAY 2011)
+
+(Reference 3452.232-70) I. 74 3452.232-71 INCREMENTAL FUNDING (MAY 2011)
+
+(Reference 3452.232-71) I. 75 3452.237-70 SERVICES OF CONSULTANTS (MAY 2011)
+
+(Reference 3452.237-70) I. 76 3452.237-71 OBSERVANCE OF ADMINISTRATIVE CLOSURES (MAY 2011)
+
+(Reference 3452.237-71) I. 77 3452.239-72 DEPARTMENT SECURITY REQUIREMENTS (MAY 2011)
+
+(a) The contractor and its subcontractors shall comply with Department security policy requirements as set forth in the "Bidder`s Security Package: Security Requirements for Contractors Doing Business with the Department of Education" at www.ed.gov/fund/contract/about/bsp.html. (b) The following are the contractor employee positions required under this contract and their designated risk levels: High Risk (HR): Moderate Risk (MR): Any employee who requires access to ED IT systems. Low Risk (LR): (c) All contractor employees must undergo personnel security screening if they will be employed for 30 days or more, in accordance with Departmental Directive OM:5-101, "Contractor Employee Personnel Security Screenings." The type of screening and the timing of the screening will depend upon the
+PAGE 22 OF 45 ED-OII-13-R-0013
+
+nature of the contractor position, the type of data to be accessed, and the type of information technology (IT) system access required. Personnel security screenings will be commensurate with the risk and magnitude of harm the individual could cause. (d) The contractor shall-(1) Ensure that all non-U.S. citizen contractor employees are lawful permanent residents of the United States or have appropriate work authorization documents as required by the Department of Homeland Security, Bureau of Immigration and Appeals, to work in the United States. (2) Ensure that no employees are assigned to high risk designated positions prior to a completed preliminary screening. (3) Submit all required personnel security forms to the contracting officer`s representative (COR) within 24 hours of an assignment to a Department contract and ensure that the forms are complete. (4) Ensure that no contractor employee is placed in a higher risk position than that for which he or she was previously approved, without the approval of the contracting officer or the COR, the Department personnel security officer, and the Department computer security officer. (5) Ensure that all contractor employees occupying high-risk designated positions submit forms for reinvestigation every five years for the duration of the contract or if there is a break in service to a Department contract of 365 days or more. (6) Report to the COR all instances of individuals seeking to obtain unauthorized access to any departmental IT system, or sensitive but unclassified and/or Privacy Act protected information. (7) Report to the COR any information that raises an issue as to whether a contractor employee`s eligibility for continued employment or access to Department IT systems, or sensitive but unclassified and/or Privacy Act protected information, promotes the efficiency of the service or violates the public trust. (8) Withdraw from consideration under the contract any employee receiving an unfavorable adjudication determination. (9) Officially notify each contractor employee if he or she will no longer work on a Department contract. (10) Abide by the requirements in Departmental Directive OM:5-101, "Contractor Employee Personnel Security Screenings." (e) Further information including definitions of terms used in this clause and a list of required investigative forms for each risk designation are contained in Departmental Directive OM:5-101, "Contractor Employee Personnel Security Screenings" available at the Web site listed in the first paragraph of this clause. (f) Failure to comply with the contractor personnel security requirements may result in a termination of the contract for default. (End of Clause)
+
+I. 78
+
+3452.242-70
+
+LITIGATION AND CLAIMS (MAY 2011)
+
+(Reference 3452.242-70) I. 79 3452.242-71 NOTICE TO THE GOVERNMENT OF DELAYS (MAY 2011)
+
+(Reference 3452.242-71) I. 80 3452.242-72 WITHHOLDING OF CONTRACT PAYMENTS (AUG 1987)
+
+(Reference 3452.242-72) I. 81 3452.242-73 (MAY 2011) ACCESSIBILITY OF MEETINGS, CONFERENCES, AND SEMINARS TO PERSONS WITH DISABILITIES
+
+(Reference 3452.242-73) I. 82 3452.247-70 FOREIGN TRAVEL (MAY 2011)
+
+(Reference 3452.247-70) I. 83 2012) 52.209-9 UPDATES OF PUBLICLY AVAILABLE INFORMATION REGARDING RESPONSIBILITY MATTERS (FEB
+
+PAGE 23 OF 45 ED-OII-13-R-0013
+
+(a) The Contractor shall update the information in the Federal Awardee Performance and Integrity Information System (FAPIIS) on a semi-annual basis, throughout the life of the contract, by posting the required information in the Central Contractor Registration database at https:// www.acquisitions.gov. (b) As required by section 3010 of the Supplemental Appropriations Act, 2010 (Pub. L. 111-212), all information posted in FAPIIS on or after April 15, 2011, except past performance reviews, will be publicly available. FAPIIS consists of two segments-(1) The non-public segment, into which Government officials and the Contractor post information, which can only be viewed by-(i) Government personnel and authorized users performing business on behalf of the Government; or (ii) The Contractor, when viewing data on itself; and (2) The publicly-available segment, to which all data in the non-public segment of FAPIIS is automatically transferred after a waiting period of 14 calendar days, except for-(i) Past performance reviews required by subpart 42.15; (ii) Information that was entered prior to April 15, 2011; or (iii) Information that is withdrawn during the 14-calendar-day waiting period by the Government official who posted it in accordance with paragraph (c)(1) of this clause. (c) The Contractor will receive notification when the Government posts new information to the Contractor`s record. (1) If the Contractor asserts in writing within 7 calendar days, to the Government official who posted the information, that some of the information posted to the non-public segment of FAPIIS is covered by a disclosure exemption under the Freedom of Information Act, the Government official who posted the information must within 7 calendar days remove the posting from FAPIIS and resolve the issue in accordance with agency Freedom of Information procedures, prior to reposting the releasable information. The contractor must cite 52.209-9 and request removal within 7 calendar days of the posting to FAPIIS. (2) The Contractor will also have an opportunity to post comments regarding information that has been posted by the Government. The comments will be retained as long as the associated information is retained, i.e., for a total period of 6 years. Contractor comments will remain a part of the record unless the Contractor revises them. (3) As required by section 3010 of Pub. L. 111-212, all information posted in FAPIIS on or after April 15, 2011, except past performance reviews, will be publicly available. (d) Public requests for system information posted prior to April 15, 2011, will be handled under Freedom of Information Act procedures, including, where appropriate, procedures promulgated under E.O. 12600. (End of clause) I. 84 52.217-9 OPTION TO EXTEND THE TERM OF THE CONTRACT (MAR 2000)
+
+(a) The Government may extend the term of this contract by written notice to the Contractor within 60 provided that the Government gives the Contractor a preliminary written notice of its intent to extend at least 60 days before the contract expires. The preliminary notice does not commit the Government to an extension. (b) If the Government exercises this option, the extended contract shall be considered to include this option clause. (c) The total duration of this contract, including the exercise of any options under this clause, shall not exceed 36 months. Base Year - April 30, 2013 through April 29, 2014 Option Year 1 - April 30, 2014 through April 29, 2015 Option Year 2 - April 30, 2015 through April 29, 2016
+
+(End of Clause) I. 85 52.219-18 NOTIFICATION OF COMPETITION LIMITED TO ELIGIBLE 8(A) CONCERNS (JUN 2003)
+
+PAGE 24 OF 45 ED-OII-13-R-0013
+
+(a) Offers are solicited only from small business concerns expressly certified by the Small Business Administration (SBA) for participation in the SBA`s 8(a) Program and which meet the following criteria at the time of submission of offer-(1) The Offeror is in conformance with the 8(a) support limitation set forth in its approved business plan; and (2) The Offeror is in conformance with the Business Activity Targets set forth in its approved business plan or any remedial action directed by the SBA. (b) By submission of its offer, the Offeror represents that it meets all of the criteria set forth in paragraph (a) of this clause. (c) Any award resulting from this solicitation will be made to the Small Business Administration, which will subcontract performance to the successful 8(a) offeror selected through the evaluation criteria set forth in this solicitation. (d) (1) "Agreement." A small business concern submitting an offer in its own name shall furnish, in performing the contract, only end items manufactured or produced by small business concerns in the United States or its outlying areas. If this procurement is processed under simplified acquisition procedures and the total amount of this contract does not exceed $25,000, a small business concern may furnish the product of any domestic firm. This paragraph does not apply to construction or service contracts. (2) The TBD will notify the Department of Education Contracting Officer in writing immediately upon entering an agreement (either oral or written) to transfer all or part of its stock or other ownership interest to any other party.
+
+(End of Clause) I. 86 52.252-2a CLAUSES INCORPORATED BY REFERENCE (MAY 2001)
+
+The addresses referred to in clause 52.252-2 for electronic access to the full text of clauses are: http://www.acquisition.gov/far/index.html for FAR clauses and http://www.ed.gov/policy/fund/reg/ clibrary/edar.html for EDAR clauses.
+
+PAGE 25 OF 45 ED-OII-13-R-0013
+
+SECTION J LIST OF ATTACHMENTS
+J. 1 309-1a LIST OF ATTACHMENTS (APRIL 1984)
+
+Attachment A = Statement of Work Attachment B = Billing Instructions
+
+PAGE 26 OF 45 ED-OII-13-R-0013
+
+SECTION K REPRESENTATIONS, CERTIFICATIONS AND OTHER STATEMENTS OF OFFERORS
+K. 1 52.204-8 ANNUAL REPRESENTATIONS AND CERTIFICATIONS (DEC 2012)
+
+(a) (1) The North American Industry Classification System (NAICS) code for
+
+this acquisition is 541611
+
+(2) The small business size standard is $14M (3) The small business size standard for a concern which submits an offer in its own name, other than on a construction or service contract, but which proposes to furnish a product which it did not itself manufacture, is 500 employees. (b) (1) If the clause at 52.204-7, Central Contractor Registration, is included in this solicitation, paragraph (d) of this provision applies. (2) If the clause at 52.204-7 is not included in this solicitation, and the offeror is currently registered in CCR, and has completed the ORCA electronic ally, the offeror may choose to use paragraph (d) of this provision instead of completing the corresponding individual representations and certifications in the solicitation. The offeror shall indicate which option applies by checking one of the following boxes: /_/ (i) Paragraph (d) applies. /_/ (ii) Paragraph (d) does not apply and the offeror has completed the individual representations and certifications in the solicitation. (c) (1) The following representations or certifications in ORCA are applicable to this solicitation as indicated: (i) 52.203-2, Certificate of Independent Price Determination. This provision applies to solicitations when a firm-fixed-price contract or fixed-price contract with economic price adjustment is contemplated, unless-(A) The acquisition is to be made under the simplified acquisition procedures in Part 13; (B) The solicitation is a request for technical proposals under two-step sealed bidding procedures; or (C) The solicitation is for utility services for which rates are set by law or regulation. (ii) 52.203-11, Certification and Disclosure Regarding Payments to Influence Certain Federal Transactions. This provision applies to solicitations expected to exceed $150,000. (iii) 52.204-3, Taxpayer Identification. This provision applies to solicitations that do not include the clause at 52.204-7, Central Contractor Registration. (iv) 52.204-5, Women-Owned Business (Other Than Small Business). This provision applies to solicitations that-(A) Are not set aside for small business concerns; (B) Exceed the simplified acquisition threshold; and (C) Are for contracts that will be performed in the United States or its outlying areas. (v) 52.209-2, Prohibition on Contracting with Inverted Domestic Corporations?Representation. This provision applies to solicitations using funds appropriated in fiscal years 2008, 2009, 2010, or 2012. (vi) 52.209-5, Certification Regarding Responsibility Matters. This provision applies to solicitations where the contract value is expected to exceed the simplified acquisition threshold. (vii) 52.214-14, Place of Performance-Sealed Bidding. This provision applies to invitations for bids except those in which the place of performance is specified by the Government. (viii) 52.215-6, Place of Performance. This provision applies to solicitations unless the place of performance is specified by the Government. (ix) 52.219-1, Small Business Program Representations (Basic & Alternate I). This provision applies to solicitations when the contract will be performed in the United States or its outlying areas. (A) The basic provision applies when the solicitations are issued by other than DoD, NASA, and the Coast Guard. (B) The provision with its Alternate I applies to solicitations issued by DoD, NASA, or the Coast Guard. (x) 52.219-2, Equal Low Bids. This provision applies to solicitations when contracting by sealed bidding and the contract will be performed in the United States or its outlying areas. (xi) 52.222-22, Previous Contracts and Compliance Reports. This provision applies to solicitations that include the clause at 52.222-26, Equal Opportunity.
+
+PAGE 27 OF 45 ED-OII-13-R-0013
+
+(xii) 52.222-25, Affirmative Action Compliance. This provision applies to solicitations, other than those for construction, when the solicitation includes the clause at 52.222-26, Equal Opportunity. (xiii) 52.222-38, Compliance with Veterans` Employment Reporting Requirements. This provision applies to solicitations when it is anticipated the contract award will exceed the simplified acquisition threshold and the contract is not for acquisition of commercial items. (xiv) 52.223-1, Biobased Product Certification. This provision applies to solicitations that require the delivery or specify the use of USDA-designated items; or include the clause at 52.223-2, Affirmative Procurement of Biobased Products Under Service and Construction Contracts. (xv) 52.223-4, Recovered Material Certification. This provision applies to solicitations that are for, or specify the use of, EPA-designated items. (xvi) 52.225-2, Buy American Act Certificate. This provision applies to solicitations containing the clause at 52.225-1. (xvii) 52.225-4, Buy American Act-Free Trade Agreements-Israeli Trade Act Certificate. (Basic, Alternates I, II, and III) This provision applies to solicitations containing the clause at 52.225-3. (A) If the acquisition value is less than $25,000, the basic provision applies. (B) If the acquisition value is $25,000 or more but is less than $50,000, the provision with its Alternate I applies. (C) If the acquisition value is $50,000 or more but is less than $77,494, the provision with its Alternate II applies. (D) If the acquisition value is $77,494 or more but is less than $100,000, the provision with its Alternate III applies. (xviii) 52.225-6, Trade Agreements Certificate. This provision applies to solicitations containing the clause at 52.225-5. (xvix) 52.225-20, Prohibition on Conducting Restricted Business Operations in SudanCertification. This provision applies to all solicitations. (xx) 52.225-25, Prohibition on Contracting with Entities Engaging in Certain Activities or Transactions Relating to Iran-- Representation and Certifications. This provision applies to all solicitations. (xxi) 52.226-2, Historically Black College or University and Minority Institution Representation. This provision applies to-(A) Solicitations for research, studies, supplies, or services of the type normally acquired from higher educational institutions; and (B) For DoD, NASA, and Coast Guard acquisitions, solicitations that contain the clause at 52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns. (2) The following certifications are applicable as indicated by the Contracting Officer: (i) 52.219-22, Small Disadvantaged Business Status. XX (A) Basic. (B) Alternate I. (ii) 52.222-18, Certification Regarding Knowledge of Child Labor for Listed End Products. (iii) 52.222-48, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment Certification. (iv) 52.222-52 Exemption from Application of the Service Contract Act to Contracts for Certain Services-Certification. (v) 52.223-9, with its Alternate I, Estimate of Percentage of Recovered Material Content for EPA-Designated Products (Alternate I only). (vi) 52.227-6, Royalty Information. (A) Basic. (B) Alternate I. (vii) 52.227-15, Representation of Limited Rights Data and Restricted Computer Software. (d) The offeror has completed the annual representations and certifications electronically via the Online Representations and Certifications Application (ORCA) website at https://www.acquisition.gov. After reviewing the ORCA database information, the offeror verifies by submission of the offer that the representations and certifications currently posted electronically that apply to this solicitation as indicated in paragraph (c) of this provision have been entered or updated within the last 12 months, are current, accurate, complete, and applicable to this solicitation (including the business size standard applicable to the NAICS code referenced for this solicitation), as of the date of this offer and are incorporated in this offer by reference (see FAR 4.1201); except for the changes identified below [offeror to insert changes, identifying change by clause number, title, date]. These amended representation(s) and/or certification(s) are also incorporated in this offer and are current, accurate, and complete as of the date of this offer.
+PAGE 28 OF 45 ED-OII-13-R-0013
+
+__________________________________________________________ | FAR | | | | | Clause | Title | Date | Change | | # | | | | |_____________________|_____________|________|_____________| | | | | | | _________________ | _________ | ______ | ___________ | |_____________________|_____________|________|_____________| Any changes provided by the offeror are applicable to this solicitation only, and do not result in an update to the representations and certifications posted on ORCA.
+
+(End of Provision) K. 2 52.209-5 CERTIFICATION REGARDING RESPONSIBILITY MATTERS (APR 2010)
+
+(a) (1) The Offeror certifies, to the best of its knowledge and belief, that-(i) The Offeror and/or any of its Principals-(A) Are /_/ are not /_/ presently debarred, suspended, proposed for debarment, or declared ineligible for the award of contracts by any Federal agency; (B) Have /_/ have not /_/, within a three-year period preceding this offer, been convicted of or had a civil judgment rendered against them for: commission of fraud or a criminal offense in connection with obtaining, attempting to obtain, or performing a public (Federal, State, or local) contract or subcontract; violation of Federal or State antitrust statutes relating to the submission of offers; or commission of embezzlement, theft, forgery, bribery, falsification or destruction of records, making false statements, tax evasion, violating Federal criminal tax laws, or receiving stolen property (if offeror checks "have", the offeror shall also see 52.209-7, if included in this solicitation); (C) Are /_/ are not /_/ presently indicted for, or otherwise criminally or civilly charged by a governmental entity with, commission of any of the offenses enumerated in paragraph (a)(1)(i)(B) of this provision. (D) Have /_/, have not /_/, within a three-year period preceding this offer, been notified of any delinquent Federal taxes in an amount that exceeds $3,000 for which the liability remains unsatisfied. (1) Federal taxes are considered delinquent if both of the following criteria apply: (i) The tax liability is finally determined. The liability is finally determined if it has been assessed. A liability is not finally determined if there is a pending administrative or judicial challenge. In the case of a judicial challenge to the liability, the liability is not finally determined until all judicial appeal rights have been exhausted. (ii) The taxpayer is delinquent in making payment. A taxpayer is delinquent if the taxpayer has failed to pay the tax liability when full payment was due and required. A taxpayer is not delinquent in cases where enforced collection action is precluded. (2) Examples. (i) The taxpayer has received a statutory notice of deficiency, under I.R.C. ?? 6212, which entitles the taxpayer to seek Tax Court review of a proposed tax deficiency. This is not a delinquent tax because it is not a final tax liability. Should the taxpayer seek Tax Court review, this will not be a final tax liability until the taxpayer has exercised all judicial appeal rights. (ii) The IRS has filed a notice of Federal tax lien with respect to an assessed tax liability, and the taxpayer has been issued a notice under I.R.C. ?? 6320 entitling the taxpayer to request a hearing with the IRS Office of Appeals contesting the lien filing, and to further appeal to the Tax Court if the IRS determines to sustain the lien filing. In the course of the hearing, the taxpayer is entitled to contest the underlying tax liability because the taxpayer has had no prior opportunity to contest the liability. This is not a delinquent tax because it is not a final tax liability. Should the taxpayer seek tax court review, this will not be a final tax liability until the taxpayer has exercised all judicial appeal rights. (iii) The taxpayer has entered into an installment agreement pursuant to I.R.C. ?? 6159. The taxpayer is making timely payments and is in full compliance with the agreement terms. The taxpayer is not delinquent because the taxpayer is not currently required to make full payment.
+
+PAGE 29 OF 45 ED-OII-13-R-0013
+
+(iv) The taxpayer has filed for bankruptcy protection. The taxpayer is not delinquent because enforced collection action is stayed under 11 U.S.C. 362 (the Bankruptcy Code). (ii) The Offeror has /_/ has not /_/, within a three-year period preceding this offer, had one or more contracts terminated for default by any Federal agency. (2) "Principal," for the purposes of this certification, means an officer, director, owner, partner, or a person having primary management or supervisory responsibilities within a business entity (e.g., general manager; plant manager; head of a division or business segment; and similar positions). This Certification Concerns a Matter Within the Jurisdiction of an Agency of the United States and the Making of a False, Fictitious, or Fraudulent Certification May Render the Maker Subject to Prosecution Under Section 1001, Title 18, United States Code. (b) The Offeror shall provide immediate written notice to the Contracting Officer if, at any time prior to contract award, the Offeror learns that its certification was erroneous when submitted or has become erroneous by reason of changed circumstances. (c) A certification that any of the items in paragraph (a) of this provision exists will not necessarily result in withholding of an award under this solicitation. However, the certification will be considered in connection with a determination of the Offeror`s responsibility. Failure of the Offeror to furnish a certification or provide such additional information as requested by the Contracting Officer may render the Offeror nonresponsible. (d) Nothing contained in the foregoing shall be construed to require establishment of a system of records in order to render, in good faith, the certification required by paragraph (a) of this provision. The knowledge and information of an Offeror is not required to exceed that which is normally possessed by a prudent person in the ordinary course of business dealings. (e) The certification in paragraph (a) of this provision is a material representation of fact upon which reliance was placed when making award. If it is later determined that the Offeror knowingly rendered an erroneous certification, in addition to other remedies available to the Government, the Contracting Officer may terminate the contract resulting from this solicitation for default.
+
+(End of Provision) K. 3 52.209-7 INFORMATION REGARDING RESPONSIBILITY MATTERS (FEB 2012)
+
+(a) Definitions. As used in this provision-"Administrative proceeding" means a non-judicial process that is adjudicatory in nature in order to make a determination of fault or liability (e.g., Securities and Exchange Commission Administrative Proceedings, Civilian Board of Contract Appeals Proceedings, and Armed Services Board of Contract Appeals Proceedings). This includes administrative proceedings at the Federal and State level but only in connection with performance of a Federal contract or grant. It does not include agency actions such as contract audits, site visits, corrective plans, or inspection of deliverables. "Federal contracts and grants with total value greater than $10,000,000" means-(1) The total value of all current, active contracts and grants, including all priced options; and (2) The total value of all current, active orders including all priced options under indefinitedelivery, indefinite-quantity, 8(a), or requirements contracts (including task and delivery and multiple-award Schedules). "Principal" means an officer, director, owner, partner, or a person having primary management or supervisory responsibilities within a business entity (e.g., general manager; plant manager; head of a division or business segment; and similar positions). (b) The offeror [ ] has [ ] does not have current active Federal contracts and grants with total value greater than $10,000,000. (c) If the offeror checked "has" in paragraph (b) of this provision, the offeror represents, by submission of this offer, that the information it has entered in the Federal Awardee Performance and Integrity Information System (FAPIIS) is current, accurate, and complete as of the date of submission of this offer with regard to the following information: (1) Whether the offeror, and/or any of its principals, has or has not, within the last five years, in connection with the award to or performance by the offeror of a Federal contract or grant, been the subject of a proceeding, at the Federal or State level that resulted in any of the following dispositions: (i) In a criminal proceeding, a conviction. (ii) In a civil proceeding, a finding of fault and liability that results in the payment of a monetary fine, penalty, reimbursement, restitution, or damages of $5,000 or more. (iii) In an administrative proceeding, a finding of fault and liability that results in-PAGE 30 OF 45 ED-OII-13-R-0013
+
+(A) The payment of a monetary fine or penalty of $5,000 or more; or (B) The payment of a reimbursement, restitution, or damages in excess of $100,000. (iv) In a criminal, civil, or administrative proceeding, a disposition of the matter by consent or compromise with an acknowledgment of fault by the Contractor if the proceeding could have led to any of the outcomes specified in paragraphs (c)(1)(i), (c)(1)(ii), or (c)(1)(iii) of this provision. (2) If the offeror has been involved in the last five years in any of the occurrences listed in (c)(1) of this provision, whether the offeror has provided the requested information with regard to each occurrence. (d) The offeror shall post the information in paragraphs (c)(1)(i) through (c)(1)(iv) of this provision in FAPIIS as required through maintaining an active registration in the Central Contractor Registration database at https://www.acquisition.gov (see 52.204-7). (End of provision)
+
+K. 4
+
+52.252-1
+
+SOLICITATION PROVISIONS INCORPORATED BY REFERENCE (FEB 1998)
+
+This solicitation incorporates one or more solicitation provisions by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. The offeror is cautioned that the listed provisions may include blocks that must be completed by the offeror and submitted with its quotation or offer. In lieu of submitting the full text of those provisions, the offeror may identify the provision by paragraph identifier and provide the appropriate information with its quotation or offer. Also, the full text of a solicitation provision may be accessed electronically at this/these address(es): http://www.acquisition.gov/far/index/html for FAR provisions and http://www.ed.gov/policy/fund/reg/ clibrary/edar.html for EDAR provisions.
+
+(End of Provision) K. 5 3452.209-70 CONFLICT OF INTEREST CERTIFICATION (MAY 2011)
+
+(a) (1) The contractor, subcontractor, employee, or consultant, by signing the form in this clause, certifies that, to the best of its knowledge and belief, there are no relevant facts or circumstances that could give rise to an organizational or personal conflict of interest, (see FAR Subpart 9.5 for organizational conflicts of interest) (or apparent conflict of interest), for the organization or any of its staff, and that the contractor, subcontractor, employee, or consultant has disclosed all such relevant information if such a conflict of interest appears to exist to a reasonable person with knowledge of the relevant facts (or if such a person would question the impartiality of the contractor, subcontractor, employee, or consultant). Conflicts may arise in the following situations: (i) Unequal access to information. A potential contractor, subcontractor, employee, or consultant has access to non-public information through its performance on a government contract. (ii) Biased ground rules. A potential contractor, subcontractor, employee, or consultant has worked, in one government contract, or program, on the basic structure or ground rules of another government contract. (iii) Impaired objectivity. A potential contractor, subcontractor, employee, or consultant, or member of their immediate family (spouse, parent, or child) has financial or other interests that would impair, or give the appearance of impairing, impartial judgment in the evaluation of government programs, in offering advice or recommendations to the government, or in providing technical assistance or other services to recipients of Federal funds as part of its contractual responsibility. "Impaired objectivity" includes but is not limited to the following situations that would cause a reasonable person with knowledge of the relevant facts to question a person`s objectivity: (A) Financial interests or reasonably foreseeable financial interests in or in connection with products, property, or services that may be purchased by an educational agency, a person,
+
+PAGE 31 OF 45 ED-OII-13-R-0013
+
+organization, or institution in the course of implementing any program administered by the Department; (B) Significant connections to teaching methodologies or approaches that might require or encourage the use of specific products, property, or services; or (C) Significant identification with pedagogical or philosophical viewpoints that might require or encourage the use of a specific curriculum, specific products, property, or services. (2) Offerors must provide the disclosure described above on any actual or potential conflict of interest (or apparent conflict of interest) regardless of their opinion that such a conflict or potential conflict (or apparent conflict of interest) would not impair their objectivity. (3) In a case in which an actual or potential conflict (or apparent conflict of interest) is disclosed, the Department will take appropriate actions to eliminate or address the actual or potential conflict, including but not limited to mitigating or neutralizing the conflict, when appropriate, through such means as ensuring a balance of views, disclosure with the appropriate disclaimers, or by restricting or modifying the work to be performed to avoid or reduce the conflict. In this clause, the term "potential conflict" means reasonably foreseeable conflict of interest. (b) The contractor, subcontractor, employee, or consultant agrees that if "impaired objectivity", or an actual or potential conflict of interest (or apparent conflict of interest) is discovered after the award is made, it will make a full disclosure in writing to the contracting officer. This disclosure shall include a description of actions that the contractor has taken or proposes to take to avoid, mitigate, or neutralize the actual or potential conflict (or apparent conflict of interest). (c) Remedies. The Government may terminate this contract for convenience, in whole or in part, if it deems such termination necessary to avoid the appearance of a conflict of interest. If the contractor was aware of a potential conflict of interest prior to award or discovered an actual or potential conflict after award and did not disclose or misrepresented relevant information to the contracting officer, the Government may terminate the contract for default, or pursue such other remedies as may be permitted by law or this contract. These remedies include imprisonment for up to five years for violation of 18 U.S.C. 1001 and fines of up to $5000 for violation of 31 U.S.C. 3802. Further remedies include suspension or debarment from contracting with the Federal government. The contractor may also be required to reimburse the Department for costs the Department incurs arising from activities related to conflicts of interest. An example of such costs would be those incurred in processing Freedom of Information Act requests related to a conflict of interest. (d) In cases where remedies short of termination have been applied, the contractor, subcontractor, employee, or consultant agrees to eliminate the organizational conflict of interest, or mitigate it to the satisfaction of the contracting officer. (e) The contractor further agrees to insert in any subcontract or consultant agreement hereunder, provisions that conform substantially to the language of this clause, including specific mention of potential remedies and this paragraph (e). (f) Conflict of Interest Certification. The offeror, ____________________, hereby certifies that, to the best of its knowledge and belief, there are no present or currently planned interests (financial, contractual, organizational, or otherwise) relating to the work to be performed under the contract or task order resulting from Request for Proposal No. __________ that would create any actual or potential conflict of interest (or apparent conflicts of interest) (including conflicts of interest for immediate family members: spouses, parents, children) that would impinge on its ability to render impartial, technically sound, and objective assistance or advice or result in it being given an unfair competitive advantage. In this clause, the term "potential conflict" means reasonably foreseeable conflict of interest. The offeror further certifies that it has and will continue to exercise due diligence in identifying and removing or mitigating, to the Government`s satisfaction, such conflict of interest (or apparent conflict of interest). Offeror`s Name __________________________________ RFP/Contract No. ________________________________ Signature _______________________________________ Title ___________________________________________ Date ____________________________________________ (End of Clause)
+
+K. 6
+
+3452.239-71
+
+NOTICE TO OFFERORS OF DEPARTMENT SECURITY REQUIREMENTS (MAY 2011)
+
+(a) The offeror and any of its future subcontractors will have to comply with Department security policy requirements as set forth in the "Bidder`s Security Package: Security Requirements for
+
+PAGE 32 OF 45 ED-OII-13-R-0013
+
+Contractors Doing Business with the Department of Education" at: www.ed.gov/fund/contract/about/ bsp.html. (b) All contractor employees must undergo personnel security screening if they will be employed for 30 days or more, in accordance with Departmental Directive OM:5-101, "Contractor Employee Personnel Security Screenings," available at: www.ed.gov/fund/contract/about/acs/acsom5101.doc. (c) The offeror shall indicate the following employee positions it anticipates to employ in performance of this contract and their proposed risk levels based on the guidance provided in Appendix I of Departmental Directive OM:5-101: High Risk (HR): Moderate Risk (MR): Any employee who requires access to ED IT Systems. Low Risk (LR): (d) In the event the Department disagrees with a proposed risk level assignment, the issue shall be subject to negotiation. However, if no agreement is reached, the Department`s risk level assignment shall be used. The type of screening and the timing of the screening will depend upon the nature of the contractor position, the type of data to be accessed, and the type of information technology (IT) system access required. Personnel security screenings will be commensurate with the risk and magnitude of harm the individual could cause. (End of Provision)
+
+K. 7
+
+310-1 REPRESENTATION AUTHORITY (JANUARY 2005)
+
+Based on a FAR change, specifically in reference to FAR clauses 52.204-8, Annual Representations and Certifications, and 52.212-3, Offeror Representations and Certifications - Commercial Items, vendors are required to use the Online Representations and Certifications Application (ORCA), a new, web-based, Federal Integrated Acquisition Environment (IAE) initiative that centralizes and standardizes the collection, storage and viewing of many of the representations and certifications required by the Federal Acquisition Regulations (FAR) and previously found in Section K. Vendors
+
+should go to http://orca.bpn.gov/ to complete the requirements of Section K of the solicitation. still be completed. However, all FAR and ED clauses NOT in ORCA should
+
+The offeror makes the following Representations and Certifications as part of its proposal (check or complete all appropriate boxes or blanks on the following pages).
+
+_________________________________ (Name of Offeror)
+
+____________________ (RFP No.)
+
+_________________________________ (Signature of Authorized Individual)
+
+____________________ (Date)
+
+PAGE 33 OF 45 ED-OII-13-R-0013
+
+____________________________________________________________________ (TYPED NAME OF AUTHORIZED INDIVIDUAL)
+
+Note:
+
+The penalty for making false statements in offers is
+
+prescribed in 18 U.S.C. 1001.
+
+The Representations and Certifications must be executed by an individual authorized to bind the offeror. K. 8 310-6 DUPLICATION OF COST (MARCH 1985)
+
+The offeror represents and certifies that any charges contemplated and included in its estimate of cost for performance are not duplicative of any charges against any other Government contract, subcontract, or other Government source. K. 9 310-10 GENERAL FINANCIAL AND ORGANIZATIONAL INFORMATION (APRIL 1984)
+
+Offerors or quoters are requested to provide information regarding the following items in sufficient detail to allow a full and complete business evaluation. If the question indicated is not If the
+
+applicable or the answer is none, it should be annotated. offeror has previously submitted the information, it should
+
+certify the validity of that data currently on file at ED or update all outdated information on file. (A) Contractor's Name: _________________________________________
+
+(B)
+
+Address (If financial records are maintained at some other location, show the address of the place where the records are kept): ____________________________________________________________ ____________________________________________________________ Telephone Number: __________________________________________ Individual(s) to contact re this proposal: _________________ ____________________________________________________________ Cognizant Government: Audit Agency: ______________________________________________ Address: ___________________________________________________ Auditor: ___________________________________________________ (1) Work Distribution for the Last Completed Fiscal Accounting Period:
+
+(C) (D)
+
+(E)
+
+(F)
+
+PAGE 34 OF 45 ED-OII-13-R-0013
+
+Sales: Government cost-reimbursement type prime contracts and subcontracts: $_________ Government fixed-price prime contracts and subcontracts: $_________ Commercial Sales: $_________ Total Sales: $_________ (2) Total Sales for first and second fiscal years immediately preceding last completed fiscal year. Total Sales for First Preceding Fiscal Year $_________ Total Sales for Second Preceding Fiscal Year $_________ (G) Is company an ED rate entity or division? ___________________________________________________________ If a division or subsidiary corporation, name parent company: ___________________________________________________________ (H) Date Company Organized: ___________________________________ (I) Manpower: Total Employees: __________________________________________ Direct: ___________________________________________________ Indirect: _________________________________________________ Standard Work Week (Hours): _______________________________ (J) Commercial Products: ______________________________________ ___________________________________________________________ (K) Attach a current organizational chart of the company. (L) Description of Contractor's system of estimating and accumulating costs under Government contracts. (Check appropriate blocks.) Estimated/ Standard Actual Cost Cost Estimating System Job Order ___________ ________ Process ___________ ________ Accumulating System Job Order ___________ ________ Process ___________ ________ Has your cost estimating system been approved by any Government agency? Yes __________ No __________ If yes, give name and location of agency: ________________ ____________________________________________________________ Has your cost accumulation system been approved by any Government agency? Yes __________ No __________ If yes, give name and address of agency: __________________ ____________________________________________________________ (M) What is your fiscal year period? (Give month-to-month dates): ____________________________________________________________ What were the indirect cost rates for your last completed fiscal year? Fiscal Indirect Basis Year Cost Rate Allocation Fringe Benefits _________ __________ Overhead _________ __________ G&A Expense _________ __________ Other _________ __________ (N) Have the proposed indirect cost rate(s) been evaluated and accepted by any Government agency? Yes _______ No_______ If yes, name and location of the Government agency: ______________________________________________________________ Date of last pre-award audit review by a Government agency: ________ (If the answer is no, data supporting the proposed rates must accompany the cost or price proposal. A breakdown of the items comprising overhead and G&A must be furnished.) (O) Cost estimating is performed by:
+PAGE 35 OF 45 ED-OII-13-R-0013
+
+(P)
+
+(Q)
+
+(R)
+
+Accounting Department: _________________________________ Contracting Department: _________________________________ Other (describe) ________________________________________ Has system of control of Government property been approved by a Government agency? Yes __________ No __________ If yes, name and location of the Government agency: ___________________________________________________________ Purchasing Procedures: Are purchasing procedures written? Yes _______ No_______ Has your purchasing system been approved by a Government agency? Yes __________ No __________ If yes, name and location of the Government agency: ___________________________________________________________ Does your firm have an established written incentive compensation or bonus plan? Yes __________ No __________ 310-16 POST EMPLOYMENT CONFLICT OF INTEREST (MARCH 1985)
+
+K. 10
+
+The contractor certifies that in developing a proposal in response to the solicitation for this contract, it has not utilized the services of any former Education Department (ED) employee who, while working for the Government, participated personally and substantially in, or was officially responsible for, the development or drafting of the solicitation for this contract. The contractor further certifies
+
+that it did not utilize the services of such an ED employee in assisting or representing the offeror at negotiations for this contract. K. 11 313-1 CERTIFICATION OF SUBCONTRACTING (AUGUST 1998)
+
+I certify that at least the percentage of work required by 13 CFR 124.314 shall be performed by employees of my firm and that SBA approval will be obtained prior to entering into a subcontract with any other concern. Those percentages are: [_] SERVICES (except construction) -- At least 50 percent of the cost o contract performance incurred for labor must be expended for employees of the 8(a) concern. [_] SUPPLIES (other than from regular dealer) -- At least 50 percent of the cost of manufacturing the supplies, not including the cost of materials. [_] GENERAL CONSTRUCTION -- At least 15 percent of the cost of the contract, not including the cost of materials, must be expended for employees of the 8(a) concern. [_] CONSTRUCTION BY SPECIAL TRADE CONTRACTORS -- At least 25 percent of the cost of contract, no including the cost of materials, must be expended form employees of the 8(a) concern.
+
+PAGE 36 OF 45 ED-OII-13-R-0013
+
+SECTION L INSTRUCTIONS, CONDITIONS, AND NOTICES TO OFFERORS
+L. 1 52.204-6 DATA UNIVERSAL NUMBERING SYSTEM NUMBER (DEC 2012)
+
+(Reference 52.204-6) L. 2 52.215-16 FACILITIES CAPITAL COST OF MONEY (JUN 2003)
+
+(Reference 52.215-16) L. 3 52.215-20 REQUIREMENTS FOR CERTIFIED COST OR PRICING DATA AND DATA OTHER THAN CERTIFIED COST OR PRICING DATA (OCT 2010) (Reference 52.215-20) L. 4 52.222-46 EVALUATION OF COMPENSATION FOR PROFESSIONAL EMPLOYEES (FEB 1993)
+
+(Reference 52.222-46) L. 5 52.216-1 TYPE OF CONTRACT (APR 1984)
+
+The Government contemplates award of a cost reimbursement type contract resulting solicitation.
+
+from this
+
+(End of Provision) L. 6 52.233-2 SERVICE OF PROTEST (SEP 2006)
+
+(a) Protests, as defined in section 33.101 of the Federal Acquisition Regulation, that are filed directly with an agency, and copies of any protests that are filed with the General Accountability Office (GAO), shall be served on the Contracting Officer (addressed as follows) by obtaining written and dated acknowledgment of receipt from Aimee Drewry at (202)245-6179 or Aimee.Drewry@ed.gov (b) The copy of any protest shall be received in the office filing a protest with the GAO. designated above within one day of
+
+(End of Provision) L. 7 Proposal Instructions
+
+PAGE 37 OF 45 ED-OII-13-R-0013
+
+While the intent of each task is spelled out in the Statement of Work (SOW), it is up to the offeror to propose the most effective method for carrying out these tasks. The task specifications contained in the SOW are a starting point; the proposal is expected to build on them, not simply repeat the language contained in the SOW. It is important that the offeror completely address all the tasks described in SOW. Where specific due dates for deliverables are listed in the schedule of deliverables, the offeror is expected to include these dates in the technical proposal. Any proposed changes to the scope of the work or to the deliverable dates shall be justified.
+
+Assured results in terms of obtaining and analyzing high quality data, analytical procedures, reporting results, and cost-effectiveness are all of the utmost importance. The technical proposal should be written in enough detail to allow a review panel to adequately judge its full merits. The panel will not make assumptions or guesses.
+
+Offerors are requested to use the proposal format described below:
+
+A. Organization of Proposal Each offer shall consist of two separately packaged proposals: (1) a technical proposal, and (2) a business proposal. All information necessary to judge the technical soundness and management capabilities of the offeror will be contained in the technical proposal. The business proposal will contain all information related to the determination of the costs associated with each of the project's tasks. The technical proposal will not contain any reference to specific costs, but resource information (e.g. staff hours) may be included so that the offeror's understanding of the scope of the work may be evaluated. Authors of each section will be clearly identified in the proposal's Table of Contents.
+
+B. Format/ Content of the Technical Proposal Technical proposals must be limited to a maximum of 30 double-spaced pages using font sizes no smaller than 12-point with 1 inch margins. Any pages over 30 will not be considered. The page limit excludes resumes and the letters of agreement from collaborators. No additional appendices are allowable. The technical proposal shall contain:
+
+1. Table of Contents. The proposal should include a Table of Contents as a means of quickly accessing important points of discussion in the proposal.
+
+PAGE 38 OF 45 ED-OII-13-R-0013
+
+2. Introduction. The Introduction should briefly describe the offeror's overall plan for achieving the objectives of this contract, the scope of work, intended products, and the applicability of these products to the objectives. Additionally, the introduction shall include a short summary of the offeror's qualifications and unique strengths relevant to this activity.
+
+3. Technical Approach. This section should fully describe the theoretical and technical approach the offeror shall employ in complying with the SOW. While a general statement of strategy is appropriate, procedures should be specific with regard to each task, and should reflect efficient utilization of the offeror's resources. Identify potential and/or anticipated problems, and suggest proposed variations in the design of the work that may facilitate successful completion of the scope of work's tasks and objectives. The offerors should demonstrate its organizational capacity and ability to carry out all phases of work associated with the major activities stated in the SOW.
+
+4. Organizational Capacity/Experience/Past Performance. This section should describe previous and current, successful experiences relevant to the tasks described in the SOW and demonstrate an understanding of designing and delivering technical assistance for logistical support for competition reviews, conference and meeting planning, and effective overall management of a federal contract. Additionally, this section should describe past experience in management and oversight of securing competition reviewers and monitoring their work to a successful conclusion. Brief summaries of such work should be submitted, including the names, current affiliations, current telephone numbers of the contact person/COR, plus 1) contract number and contract type, 2) contracting agency (FAA, NASA, etc.), 3) original contract dollar value and final contract dollar value (including options), 4) original completion date and final (or current) completion date, 5) description of the contract effort, 6) relevance of this work to specific tasks described in the SOW, 7) performance experience summary, 8) describe the scope of effort, 9) describe methodology and tools used, 10) describe the challenges in the effort and how they were overcome and 11) describe why the effort is considered "successful." The Government reserves the right to obtain and consider past performance information from other sources. 5. Related Experience of Proposed Staff. The Related Experience of Proposed Staff section shall contain a summary of the qualifications of each proposed key staff member. The summary shall indicate how his/her prior work experience and educational background relates to his/her proposed role on the project. Primary areas of expertise must be clearly specified. The summary should be limited to the three or four experiences that best qualify the staff member for the role that he/she will play on the contract. Offerors are encouraged to submit current vitae for each staff member proposed for the project. The vitae should document only directly related experience, educational background, publications, and professional activities. Each vitae must list: 1) each degree earned (along with the date when each was confirmed, the confirming institution, and the major field of study); and 2) no more than four prior/current work or project experiences. It is the responsibility of the Offeror to insure that telephone numbers and points of contact for references are current and accurate.
+
+PAGE 39 OF 45 ED-OII-13-R-0013
+
+ED, upon review of the vitae, shall have approval rights of the individuals selected by the contractor to staff the team, including the project director. Key personnel should have skills and past experiences conducting multi-year development projects. By listing key personnel as part of the proposal this represents a firm commitment by the offeror to use said personnel to carry out the activities in the SOW.
+
+6. Management Plan. The project requires that the contractor have in place an effective management system that enables tasks to be completed on schedule and within budget. This section shall provide a listing and description of each task. The tasks must be listed in order of substantive relationship or serially in order of chronological completion dates. Indicate the names of key personnel for each task as well as hours to be allocated for each person for each task, including any subcontractors. If the exact person is not known, include the job category and proposed commitment level of that category. Offerors shall list all subcontractors, or partners, and provide qualifications of the organization and individual personnel proposed. Offerors shall clearly describe the process that will be implemented to ensure that quality controls are established and maintained. For example, offerors shall describe the quality controls in place to ensure proper execution of competition reviews and accurate documentation of providing accurate information to reviewers and staff. As appropriate, the offeror shall indicate: (1) Significant non-personnel kinds of resources to be applied to each task;(2) Provide the expected end date for each task, preferably in calendar months from the effective date of the contract; (3) Provide milestones in calendar months from the effective date of the contract for such items as key events, deliverables, and for Department approval of performed work; (4) Provide time for any contractor internal review and clearance procedures; (5) Provide a schedule of delivery for each item, preferably in calendar months from the effective date of the contract; and (6) Provide a listing of materials or services the offeror expects the Department to make available (e.g., data, reports, etc.). Offerors should uniquely identify each deliverable with an alpha/numeric character. In summary, the management approach should provide assurance that all tasks can be completed on time, and with a high level of quality.
+
+This section also shall include a project management chart depicting the timelines for all major tasks and subtasks, including deliverables, meetings, development of major products, etc. Included in this chart shall be the start and completion dates for each task, as well as intermediate dates for precursor steps and draft deliverables, as appropriate. Staff responsible for each task shall also be included on the chart. Finally, this section shall describe the specific processes that will be implemented to ensure that the project is carried out in collaboration with the Department, as described throughout the SOW.
+
+C. Business Proposal: The business proposal shall contain:
+
+PAGE 40 OF 45 ED-OII-13-R-0013
+
+It is anticipated that this contract shall be awarded as a Cost-Reimbursement contract. The staff-loading chart included in the technical proposal shall be consistent with the information provided in the business proposal. Cost estimates shall be provided for individual tasks/subtasks as well as for the full project, and each task/subtask shall contain breakdowns of direct charges for personnel, materials, supplies, and all other major budget items as well as indirect cost rates used in preparing the cost estimate. A narrative shall be provided describing the basis for direct costs, including the use of any assumptions. Offerors shall provide separate charts to clearly exhibit a full breakdown of costs for 1) the anticipated cost of one 2013 Project Directors' meeting (Task 4), and 2) the anticipated costs for the planned 2013 competitions described in the chart below (Task 3):
+OII 2013 Competitions
+CFDA Number Estimated Page Limit Average Size Number of Number of per of Application Reviewers Applications Application w/appendices 90 50 200 300 80 15 75 780 150 50 50 50 50 50 25 30 7 25 200 pgs 200 pgs 150 pgs 75 pgs 75 pgs 250 pgs 200 pgs 40 pgs 150 pgs 30 15 54 30 24 10 40 195 105 Number of Alternate Reviewers 5 4 5 5 5 2 2 20 20 Number of Panels (3 Honoraria reviewers per panel) Notes 10 $200 per app. Each Reviewer will read 9 applications. 5 10 $200 per app. Each Reviewer will read 9-10 applications. $1200 flat rate per reviewers Each Reviewer will read 10 applications. $150 per app. Each Reviewer will read 10 applications . $150 per app. $2000 flat rate per $2000 flat rate per $2000 flat rate per reviewers $2000 flat rate per
+
+Program Name
+
+84.282B/C Charter Schools Non-SEA Charter Schools National 84.282N Leadership Arts in Education Model Development & 84.351D Dissemination 84.363A School Leadership Tier I School Leadership Tier II Investing in Innovation (I3) 84.411A Scale-up Investing in Innovation (I3) 84.411B Validation Investing in Innovation (I3) Development (Pre84.411C planning) Investing in Innovation (I3) Development
+
+8 2 8 65 15
+
+Offerors shall provide an estimate for the Option Years based upon the information in the graph above and the information for the Option Years in the PWS. Other Administrative Details: Please note - Because of constraints surrounding how OII obligates grant funds, the Department cannot co-mingle funds from multiple programs to cover the costs of administrative tasks that apply to the entire contract rather a specific grant program. Therefore, the contract awardee shall be required to bill expenses for administrative tasks such as monthly reports and quality control to each program separately. The proposal shall include:     A list of the names and telephones numbers of persons authorized to conduct negotiations; A statement to the effect that the offer is firm for a period of at least 90 calendar days from the date of receipt of offers specified by the Government; Certification that the Offerors has an adequate accounting system for billing costreimbursement; and A Conflict of Interest Plan and Certificate.
+
+PAGE 41 OF 45 ED-OII-13-R-0013
+
+Conflict of Interest Plan
+
+The offeror shall submit a Conflict of Interest Plan, providing details on its policies and procedures to identify and avoid potential organizational or personnel conflicts of interest (or apparent conflict of interest). The Plan should also address procedures taken to neutralize or mitigate such conflicts, if they have not been or cannot be avoided. The Plan should indicate that such policies and procedures are operative throughout the period of outside activities financial interests, or other significant connections or identifications that would establish, or give the appearance of establishing, a conflict of interest. A method for periodically reviewing financial interests of employees, subcontractors and consultants, and their immediate families, in order to assess actual or apparent conflicts of interest should be included in the plan. The term, "potential conflict" means reasonably foreseeable conflict of interest.
+
+The thoroughness, completeness and effectiveness of the Plan shall be evaluated as part of the offeror's overall proposal. The Plan will be incorporated into the contract or task order awarded to the successful offeror. Offerors and all proposed subcontractors/consultants shall complete the Conflict of Interest Certification from EDAR 3452.209-70, provided in the clause section, and include in their business proposal.
+
+Instructions for Submitting Proposals The two separately packaged propoals should be submitted electronically as separate documents (MS Word or PDF format) to Brigid.Lochary@ed.gov and Pamela.Bone@ed.gov no later than 12:00 P.M. EST, Thursday, March 21, 2013. Incoming electronic attachments have a file size limitation of 30 MB. Questions Clarification questions regarding this solicitation should be sent by e-mail to Brigid.Lochary@ed.gov, with a copy to Pamela.Bone@ed.gov, no later than 12:00 PM EST, Tuesday, February 26, 2013.
+
+PAGE 42 OF 45 ED-OII-13-R-0013
+
+SECTION M EVALUATION FACTORS FOR AWARD
+M. 1 Evaluation Criteria
+
+PAGE 43 OF 45 ED-OII-13-R-0013
+
+The Government will award a contract resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation will be most advantageous to the Government, price and other factors considered. Although price is an important factor, technical merit is significantly more important than price. As technical merit becomes more equal, price will become a more significant factor. The Contracting Officer will determine whether any difference in technical merit is worth the difference in price. The following factors shall be used to evaluate offers:
+
+The following elements will be considered when evaluating the technical proposal:
+
+I. Technical Approach ­ 40 points
+
+
+
+The extent to which the offeror demonstrates a comprehensive technical approach, as required by the SOW, to providing logistical support services for peer reviews. (20 points)
+
+
+
+The extent to which the offeror demonstrates a comprehensive technical approach, as required by the SOW, to meeting and conference planning. (10 points)
+
+
+
+The extent to which the offeror demonstrates a clear understanding of the goals, requirements and issues upon which the project will focus, and aligns those facts and vision to the purpose, scope and design of the project. (10 points)
+
+II. Management Approach ­ 40 points
+
+
+
+The quality of the proposed project personnel, and the extent to which the personnel have the appropriate qualifications, competencies, and experience in the areas mentioned above to the extent and breadth needed to effectively address and complete the project's tasks offeror demonstrates a comprehensive technical approach, as required by the SOW. (20 points)
+
+
+
+The extent to which the proposed management plan indicates that the work will be performed in a timely, effective, and cost-efficient manner. (10 points)
+
+
+
+The extent to which the proposed quality control processes and methods are logical, effective, and ensure only high quality materials and/or workmanship is accepted. (10 points)
+
+PAGE 44 OF 45 ED-OII-13-R-0013
+
+III. Past Performance Experience ­ 20 points
+
+
+
+The extent to which the offeror has previously worked with a range of federal programs and has demonstrated a clear understanding of logistical peer review support, conference and meeting planning, and effective overall management of a federal contract. (10 points)
+
+
+
+The extent to which the offeror demonstrates experience providing high quality work products, delivering timely work products, controlling costs effectively, maintaining healthy business relations, and successfully managing key personnel. (10 points)
+
+PAGE 45 OF 45 ED-OII-13-R-0013
+
+

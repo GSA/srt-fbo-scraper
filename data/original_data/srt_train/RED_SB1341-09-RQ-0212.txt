@@ -1,0 +1,133 @@
+
+
+
+
+Performance Work Statement (PWS)
+
+I.  Background Information
+
+The U. S. Department of Commerce, National Institute of Standards and Technology (NIST) Information Technology Laboratory (ITL) is working with the U.S. Department of Homeland Security National Cyber Security Division to improve the state of the practice in software assurance. SAMATE (Software Assurance Metrics and Tool Evaluation) project is dedicated to improving software assurance by developing methods to enable software tools evaluations, measuring the effectiveness of tools and techniques, and identifying gaps in tools and methods. 
+
+One methodology for evaluating software assurance tools is to develop tool specifications, test plans, and test sets. NIST has completed a specification for a class of tool, called Source Code Security Analyzers. This specification is published as NIST Specification 500-268. A draft test plan for source code security analyzers is published as NIST Special Publication 500-270. For additional background information, see 
+
+II. Objective of the Procurement
+
+The objective of this procurement is to determine which weaknesses identified in the Source Code Security Analyzer specification might occur in the SPARK subset of the ADA programming language, which might occur but can be proven to be absent, and which cannot possibly occur.  The weaknesses are identified by its Common Weakness Enumeration (CWE) number and currently appear in the MITRE web site . The deliverable will be the addition in Annex A – Source Code Weaknesses, in the Language(s) column, of “SPARK/ADA” as appropriate and report explaining why each weakness might or might not occur. If a weakness might occur but can be proven not to be present, that should be noted. 
+
+III. Contractor Tasks
+
+The contractor shall provide all labor, supervision, materials, equipment, and facilities (unless otherwise stated herein) to complete the following tasks.  
+
+The contractor shall:
+
+BASE PERIOD – CONTRACTOR TASKS
+
+Task 1:  Determine if the following weaknesses occur in the SPARK subset of the ADA programming language for CWE 89 and CWE 121.
+
+
+
+Meet with NIST Point of Contact/Order Contact (P/OC) to discuss project plan before starting work.
+
+Review and become knowledgeable of the SAMATE source code security analyzer specification particularly the associated weaknesses listed in Annex A.
+
+Review and become knowledgeable with the current SPARK subset of the ADA programming language.
+
+Determine if the following weaknesses occur in the SPARK subset of the ADA programming language.
+
+-  CWE 89: SQL injection
+
+-  CWE 121: Stack-based buffer overflow
+
+Task 2: Determine if the following weaknesses occur in the SPARK subset of the ADA programming language for the following:
+
+CWE 122: Heap-based buffer overflow
+
+CWE 134: Uncontrolled format string
+
+CWE 170: Improper null termination
+
+CWE 244: Heap inspection
+
+CWE 251: Often misused string management
+
+CWE 401: Memory leak
+
+CWE 415: Double free
+
+CWE 416: Use after free
+
+CWE 468: Incorrect pointer scaling
+
+CWE 476: Null  pointer dereference
+
+
+
+Task 3: Determine if the following weaknesses occur in the SPARK subset of the ADA programming language for the following:
+
+CWE 80: Basic XSS
+
+CWE 99: Resource injection
+
+CWE 78: OS Command injection
+
+CWE 259: Hard-coded password
+
+CWE 367: Time-of-check Time-of-use (TOCTOU) race condition
+
+CWE 391: Unchecked error condition
+
+CWE 412: Unrestricted lock on critical resource
+
+CWE 457:se of uninitialized variable
+
+CWE 489: Leftover debug code
+
+
+
+OPTION PERIOD ONE CONTRACTOR TASKS: 
+
+Task 4: The Contractor shall provide code examples in SPARK/ADA showing the problem for every weakness identified in Tasks 1 through 3.
+
+IV. Deliverables and Reports
+
+1. Determine if weaknesses could occur in the SPARK subset of ADA using Table entries in Annex A of the NIST Special Publication 500-268, in the Languages(s) column.
+
+2. A written report on Task 1 to be delivered via email to the COTR no later than 30 days from the initial meeting with NIST. The report shall include step-by-step explanation including a justification of the conclusion.
+
+A written report on Task 2 and Task 3 to be delivered via email to the COTR no later than 90 days after contract award. The report shall include step-by-step explanation including a justification of the conclusion.
+
+
+
+The Contractor shall report progress in the form of monthly summary reports, pending delivery of the complete task reports.
+
+
+
+Option Period One – Deliverable:
+
+ Provide a written report on Task 4 to be delivered via email to the P/OC no later than 30 days after effective day for option period. The report shall include code examples in SPARK/ADA showing the problem for every weakness mentioned in Tasks 1 to 3.
+
+
+
+V.  Performance 
+
+Period of Performance
+
+Base Period: Six months, beginning on date of Contractor acceptance of the purchase order.
+
+Option Period 1: Six weeks, beginning on day after expiration of Base Period.
+
+Place of Performance
+
+All work shall be performed at the Contractor’s facility.
+
+
+
+VI. Proposal Page Limitation
+
+   
+
+The proposal is limited to 4 pages. 
+
+
+
+

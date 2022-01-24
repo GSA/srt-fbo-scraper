@@ -1,0 +1,2326 @@
+
+Attachment 1
+
+                       Glossary
+
+Aggregated data – High-level summary data on groups that is composed of a collection of other more individual data
+
+Commercially available – The data resource, or access to it, is available for sale or has been sold to the general public as of January, 2009
+(Note: The FDA does not intend to use this solicitation to initiate or complete development of a resource.)
+
+Currently existing – The data chosen for this award must be a commercially available product at the time of the proposal.  The FDA does not
+intend to use this solicitation to initiate or complete development of a resource.
+
+Data dictionary – A document that describes the information available in the data resource.  This information shall minimally include field or
+variable name, description, definition (including business rules for computed fields and missing data), allowed values, and percentage of
+discharges or patients in the data resource where it is present.  All fields or variables in the data resource shall be included in this
+document.
+
+ De-Identified data – Data that has had key patient information removed, e.g., name, address, social security number, and date of birth, so that
+any user or audience shall not purposefully or inadvertently discover a patient’s identity.  However, the capability of tracking a single
+individual (e.g. patient A) across multiple encounters over time and of differentiating that individual from another individual (e.g. patient B)
+shall be required.
+
+Demographic – The age and gender of the patient shall be required. Information on race/ethnicity shall be included if available, accompanied by
+documentation of the origin of this data.
+
+Desktop – Authorized FDA personnel shall be able to access the data from their own FDA issued computers (i.e., no special or customized hardware
+shall be required for access)
+
+Direct – Authorized FDA personnel shall be able to access raw or sample numbers from the data source from their desktop (i.e., no intervention
+on the contractors part shall be necessary.  In addition, output that consists of formatted reports only will not be acceptable).
+
+Disclosure policy – The process of providing FDA written authorization to disclose information from this resource in public forums or sharing
+with third parties on collaborative projects initiated by FDA for public health safety and regulatory purposes.  This process shall ensure that
+the information or data disclosed is accurate and does not violate any of the Offeror’s existing agreements.
+
+Firewall-to-firewall virtual private network (VPN) – A Secure TCP/IP connection made between two firewalls that simulate a local area network.
+Encryption/decryption and authentication are mandatory for the VPN solution.
+
+Full disclosure of data collection– The FDA shall receive detailed information on how the sample is selected, how data are obtained and
+cleaned/edited for analysis, how the data was built how variables are defined, and the relationship between variables within the data structure.
+
+
+Immediate – Authorized FDA personnel shall be able to access the data whenever needed.
+
+Multi-user environment – Two or more authorized FDA users shall be able to access the data at the same time from different locations.
+
+
+Outpatient – Any place where health care is received without being admitted to the hospital as an inpatient. (NB: Day surgery, ambulatory care
+centers, and other outpatient services provided by hospitals may be considered to be within the outpatient setting.)
+
+Projection or other appropriate methodologies – Projection methodology is an algorithm that can be used to reliably and accurately estimate drug
+utilization for the U.S. population using the sample captured in the data.  Other appropriate methodologies may include, but are not limited to,
+gathering drug utilization data on the universe of OTC product sales and use (e.g., a “census” method), which may reduce or eliminate the need
+for projection.  Should a “census” method be chosen, the Offeror shall provide mutually acceptable evidence that the data are adequately
+representative of outpatient drug utilization in the U.S.
+
+Raw data- Data in the form obtained from the data access tool which is not further summarized or processed.
+
+Real-time – Real-time access refers to doing something while people are watching or waiting. FDA expects the Contractor to provide information
+on how readily available access to their data will be.
+
+Reliable – The projection method used must yield the same or similar results in the same or similar situations (e.g., must be reproducible and
+repeatable)
+
+Robust – in cases where the assumptions underlying the projection or other appropriate methodology are not all met, the results obtained should
+be the same as in similar situations where all assumptions and conditions are fully met.
+
+Secure – At no time will passwords, login, or data be open to inspection or intrusion by unauthorized parties.
+
+Unlimited – authorized FDA personnel shall have the ability to use any data element in the database in any combination or query that is
+necessary to address a specific issue
+
+Valid – an assessment of how well the projected values reflect what is actually happening in the entire population of interest.
+
+
+
+                                                                   Attachment 2
+
+
+
+                                                                  Census Regions
+
+
+Northeast:  Connecticut, Maine, Massachusetts, New Hampshire, New Jersey, New York, Pennsylvania, Rhode Island, Vermont
+
+Midwest:    Illinois, Indiana, Iowa, Kansas, Michigan, Minnesota, Missouri, Nebraska, North Dakota, Ohio, South Dakota, Wisconsin
+
+South:      Alabama, Arkansas, Delaware, District of Columbia, Florida, Georgia, Kentucky, Louisiana, Maryland, Mississippi, North Carolina,
+           Oklahoma, South Carolina, Tennessee, Texas, Virginia, West Virginia
+
+West: Alaska, Arizona, California, Colorado, Hawaii, Idaho, Montana, Nevada, New Mexico, Oregon, Utah, Washington, Wyoming
+
+
+
+
+                                                                   Attachment 3
+
+
+
+
+
+                                                              Section 508 Standards
+
+
+
+
+Section 508 of the Rehabilitation Act Amendments of 1998 (29 U.S.C. § 794 (d) was enacted in the Workforce Investment Act of 1998. Section 508
+requires that when Federal agencies develop, procure, maintain, or use electronic and information technology, Federal employees with
+disabilities have access to and use of information and data that is comparable to the access and use by Federal employees who are not
+individuals with disabilities. The Act required the Architectural and Transportation Barriers Compliance Board (Access Board) to create federal
+standards for electronic and information technology (EIT) products (goods and services) to make them more accessible by individuals with
+disabilities.
+
+Each Offeror will be evaluated on their conformance to the Section 508 Standards identified below as being applicable for this requirement. The
+conformance to these standards will be evaluated as follows:
+
+   1. Conformance at proposal submission
+
+
+   2. Conformance by scheduled delivery date, after insignificant or no contractor development
+
+
+   3. Conformance by scheduled delivery date, after significant contractor development
+
+No allowance is given here for partial performance as gradations are difficult to verify and add complexity.
+
+Using the following web site, Offerors can access resources for understanding and implementing the requirements of Section 508
+http://www.section508.gov (See Appendices C & D)
+
+The following applications standards have been identified as being applicable for this service:
+§ 1194.21 Software applications and operating systems.
+(a) When software is designed to run on a system that has a keyboard, product functions shall be executable from a keyboard where the function
+itself or the result of performing a function can be discerned textually.
+(b) Applications shall not disrupt or disable activated features of other products that are identified as accessibility features, where those
+features are developed and documented according to industry standards. Applications also shall not disrupt or disable activated features of any
+operating system that are identified as accessibility features where the application programming interface for those accessibility features has
+been documented by the manufacturer of the operating system and is available to the product developer.
+(c) A well-defined on-screen indication of the current focus shall be provided that moves among interactive interface elements as the input
+focus changes. The focus shall be programmatically exposed so that assistive technology can track focus and focus changes.
+(d) Sufficient information about a user interface element including the identity, operation and state of the element shall be available to
+assistive technology. When an image represents a program element, the information conveyed by the image must also be available in text.
+(e) When bitmap images are used to identify controls, status indicators, or other programmatic elements, the meaning assigned to those images
+shall be consistent throughout an application's performance.
+(f) Textual information shall be provided through operating system functions for displaying text. The minimum information that shall be made
+available is text content, text input caret location, and text attributes.
+(g) Applications shall not override user selected contrast and color selections and other individual display attributes.
+(h) When animation is displayed, the information shall be displayable in at least one non-animated presentation mode at the option of the user.
+(i) Color coding shall not be used as the only means of conveying information, indicating an action, prompting a response, or distinguishing a
+visual element.
+(j) When a product permits a user to adjust color and contrast settings, a variety of color selections capable of producing a range of contrast
+levels shall be provided.
+(k) Software shall not use flashing or blinking text, objects, or other elements having a flash or blink frequency greater than 2 Hz and lower
+than 55 Hz.
+
+(l) When electronic forms are used, the form shall allow people using assistive technology to access the information, field elements, and
+functionality required for completion and submission of the form, including all directions and cues.
+
+§ 1194.22 Web-based intranet and internet information and applications.
+a) A text equivalent for every non-text element shall be provided (e.g., via "alt", "longdesc", or in element content).
+(b) Equivalent alternatives for any multimedia presentation shall be synchronized with the presentation.
+(c) Web pages shall be designed so that all information conveyed with color is also available without color, for example from context or markup.
+
+(d) Documents shall be organized so they are readable without requiring an associated style sheet.
+(e) Redundant text links shall be provided for each active region of a server-side image map.
+(f) Client-side image maps shall be provided instead of server-side image maps except where the regions cannot be defined with an available
+geometric shape.
+(g) Row and column headers shall be identified for data tables.
+(h) Markup shall be used to associate data cells and header cells for data tables that have two or more logical levels of row or column headers.
+
+(i) Frames shall be titled with text that facilitates frame identification and navigation.
+(j) Pages shall be designed to avoid causing the screen to flicker with a frequency greater than 2 Hz and lower than 55 Hz.
+(k) A text-only page, with equivalent information or functionality, shall be provided to make a web site comply with the provisions of this
+part, when compliance cannot be accomplished in any other way. The content of the text-only page shall be updated whenever the primary page
+changes.
+(l) When pages utilize scripting languages to display content, or to create interface elements, the information provided by the script shall be
+identified with functional text that can be read by assistive technology.
+(m) When a web page requires that an applet, plug-in or other application be present on the client system to interpret page content, the page
+must provide a link to a plug-in or applet that complies with §1194.21(a) through (l).
+(n) When electronic forms are designed to be completed on-line, the form shall allow people using assistive technology to access the
+information, field elements, and functionality required for completion and submission of the form, including all directions and cues.
+(o) A method shall be provided that permits users to skip repetitive navigation links.
+(p) When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required.
+
+Note to §1194.22:
+1. The Board interprets paragraphs (a) through (k) of this section as consistent with the following priority 1 Checkpoints of the Web Content
+Accessibility Guidelines 1.0 (WCAG 1.0) (May 5, 1999) published by the Web Accessibility Initiative of the World Wide Web Consortium:
+
+
+|Section 1194.22 Paragraph                                                         |WCAG 1.0 Checkpoint                       |
+|(a)                                                                               |1.1                                       |
+|(b)                                                                               |1.4                                       |
+|(c)                                                                               |2.1                                       |
+|(d)                                                                               |6.1                                       |
+|(e)                                                                               |1.2                                       |
+|(f)                                                                               |9.1                                       |
+|(g)                                                                               |5.1                                       |
+|(h)                                                                               |5.2                                       |
+|(i)                                                                               |12.1                                      |
+|(j)                                                                               |7.1                                       |
+|(k)                                                                               |11.4                                      |
+
+2. Paragraphs (l), (m), (n), (o), and (p) of this section are different from WCAG 1.0. Web pages that conform to WCAG 1.0, level A (i.e., all
+priority 1 checkpoints) must also meet paragraphs (l), (m), (n), (o), and (p) of this section to comply with this section. WCAG 1.0 is available
+at http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505.
+
+§ 1194.31 Functional performance criteria.
+(a) At least one mode of operation and information retrieval that does not require user vision shall be provided, or support for assistive
+technology used by people who are blind or visually impaired shall be provided.
+(b) At least one mode of operation and information retrieval that does not require visual acuity greater than 20/70 shall be provided in audio
+and enlarged print output working together or independently, or support for assistive technology used by people who are visually impaired shall
+be provided.
+(c) At least one mode of operation and information retrieval that does not require user hearing shall be provided, or support for assistive
+technology used by people who are deaf or hard of hearing shall be provided.
+(d) Where audio information is important for the use of a product, at least one mode of operation and information retrieval shall be provided in
+an enhanced auditory fashion, or support for assistive hearing devices shall be provided.
+(e) At least one mode of operation and information retrieval that does not require user speech shall be provided, or support for assistive
+technology used by people with disabilities shall be provided.
+
+(f) At least one mode of operation and information retrieval that does not require fine motor control or simultaneous actions and that is
+operable with limited reach and strength shall be provided.
+
+
+§ 1194.41 Information, documentation, and support.
+(a) Product support documentation provided to end-users shall be made available in alternate formats upon request, at no additional charge.
+(b) End-users shall have access to a description of the accessibility and compatibility features of products in alternate formats or alternate
+methods upon request, at no additional charge.
+(c) Support services for products shall accommodate the communication needs of end-users with disabilities.
+
+
+The following applications standards have been determined to not be applicable for this service:
+
+§ 1194.23 Telecommunications products.
+§ 1194.24 Video and multimedia products.
+§ 1194.25 Self-contained, closed products.
+§ 1194.26 Desktop and portable computers.
+
+                                                                   Attachment 4
+
+
+                                                    Voluntary Product Accessibility Template™
+                                                                   Version 1.2
+The purpose of the Voluntary Product Accessibility Template, or VPAT™, is to assist Federal contracting officials and other buyers in making
+preliminary assessments regarding the availability of commercial "Electronic and Information Technology" products and services with features
+that support accessibility. It is assumed and recommended that offerers will provide additional contact information to facilitate more detailed
+inquiries.
+The first table of the Template provides a summary view of the section 508 Standards. The subsequent tables provide more detailed views of each
+subsection. There are three columns in each table. Column one of the Summary Table describes the subsections of subparts B and C of the
+Standards. The second column describes the supporting features of the product or refers you to the corresponding detailed table, "e.g.,
+equivalent facilitation." The third column contains any additional remarks and explanations regarding the product. In the subsequent tables, the
+first column contains the lettered paragraphs of the subsections. The second column describes the supporting features of the product with regard
+to that paragraph. The third column contains any additional remarks and explanations regarding the product.
+
+                                                                      [pic]
+Date:
+Name of Product:
+Company contact for more Information:
+
+|Summary Table                                                                                                                 |
+|Voluntary Product Accessibility Template                                                                                      |
+|Criteria                                                  |Supporting Features                    |Remarks and explanations  |
+|Section 1194.21 Software Applications and Operating       |                                       |                          |
+|Systems                                                   |                                       |                          |
+|Section 1194.22 Web-based Internet Information and        |                                       |                          |
+|Applications                                              |                                       |                          |
+|Section 1194.23 Telecommunications Products               |                                       |                          |
+|Section 1194.24 Video and Multi-media Products            |                                       |                          |
+|Section 1194.25 Self-Contained, Closed Products           |                                       |                          |
+|Section 1194.26 Desktop and Portable Computers            |                                       |                          |
+|Section 1194.31 Functional Performance Criteria           |                                       |                          |
+|Section 1194.41 Information, Documentation and Support    |                                       |                          |
+
+
+
+|Section 1194.21 Software Applications and Operating Systems – Detail                                                          |
+|Voluntary Product Accessibility Template™                                                                                     |
+|Criteria                                                  |Supporting Features                    |Remarks and explanations  |
+|(a) When software is designed to run on a system that has |                                       |                          |
+|a keyboard, product functions shall be executable from a  |                                       |                          |
+|keyboard where the function itself or the result of       |                                       |                          |
+|performing a function can be discerned textually.         |                                       |                          |
+|(b) Applications shall not disrupt or disable activated   |                                       |                          |
+|features of other products that are identified as         |                                       |                          |
+|accessibility features, where those features are developed|                                       |                          |
+|and documented according to industry standards.           |                                       |                          |
+|Applications also shall not disrupt or disable activated  |                                       |                          |
+|features of any operating system that are identified as   |                                       |                          |
+|accessibility features where the application programming  |                                       |                          |
+|interface for those accessibility features has been       |                                       |                          |
+|documented by the manufacturer of the operating system and|                                       |                          |
+|is available to the product developer.                    |                                       |                          |
+|(c) A well-defined on-screen indication of the current    |                                       |                          |
+|focus shall be provided that moves among interactive      |                                       |                          |
+|interface elements as the input focus changes. The focus  |                                       |                          |
+|shall be programmatically exposed so that Assistive       |                                       |                          |
+|Technology can track focus and focus changes.             |                                       |                          |
+|(d) Sufficient information about a user interface element |                                       |                          |
+|including the identity, operation and state of the element|                                       |                          |
+|shall be available to Assistive Technology. When an image |                                       |                          |
+|represents a program element, the information conveyed by |                                       |                          |
+|the image must also be available in text.                 |                                       |                          |
+|(e) When bitmap images are used to identify controls,     |                                       |                          |
+|status indicators, or other programmatic elements, the    |                                       |                          |
+|meaning assigned to those images shall be consistent      |                                       |                          |
+|throughout an application's performance.                  |                                       |                          |
+|(f) Textual information shall be provided through         |                                       |                          |
+|operating system functions for displaying text. The       |                                       |                          |
+|minimum information that shall be made available is text  |                                       |                          |
+|content, text input caret location, and text attributes.  |                                       |                          |
+|(g) Applications shall not override user selected contrast|                                       |                          |
+|and color selections and other individual display         |                                       |                          |
+|attributes.                                               |                                       |                          |
+|(h) When animation is displayed, the information shall be |                                       |                          |
+|displayable in at least one non-animated presentation mode|                                       |                          |
+|at the option of the user.                                |                                       |                          |
+|(i) Color coding shall not be used as the only means of   |                                       |                          |
+|conveying information, indicating an action, prompting a  |                                       |                          |
+|response, or distinguishing a visual element.             |                                       |                          |
+|(j) When a product permits a user to adjust color and     |                                       |                          |
+|contrast settings, a variety of color selections capable  |                                       |                          |
+|of producing a range of contrast levels shall be provided.|                                       |                          |
+|(k) Software shall not use flashing or blinking text,     |                                       |                          |
+|objects, or other elements having a flash or blink        |                                       |                          |
+|frequency greater than 2 Hz and lower than 55 Hz.         |                                       |                          |
+|(l) When electronic forms are used, the form shall allow  |                                       |                          |
+|people using Assistive Technology to access the           |                                       |                          |
+|information, field elements, and functionality required   |                                       |                          |
+|for completion and submission of the form, including all  |                                       |                          |
+|directions and cues.                                      |                                       |                          |
+
+
+|Section 1194.22 Web-based Internet information and applications – Detail                                                      |
+|Voluntary Product Accessibility Template™                                                                                     |
+|Criteria                                                  |Supporting Features                    |Remarks and explanations  |
+|(a) A text equivalent for every non-text element shall be |                                       |                          |
+|provided (e.g., via "alt", "longdesc", or in element      |                                       |                          |
+|content).                                                 |                                       |                          |
+|(b) Equivalent alternatives for any multimedia            |                                       |                          |
+|presentation shall be synchronized with the presentation. |                                       |                          |
+|(c) Web pages shall be designed so that all information   |                                       |                          |
+|conveyed with color is also available without color, for  |                                       |                          |
+|example from context or markup.                           |                                       |                          |
+|(d) Documents shall be organized so they are readable     |                                       |                          |
+|without requiring an associated style sheet.              |                                       |                          |
+|(e) Redundant text links shall be provided for each active|                                       |                          |
+|region of a server-side image map.                        |                                       |                          |
+|(f) Client-side image maps shall be provided instead of   |                                       |                          |
+|server-side image maps except where the regions cannot be |                                       |                          |
+|defined with an available geometric shape.                |                                       |                          |
+|(g) Row and column headers shall be identified for data   |                                       |                          |
+|tables.                                                   |                                       |                          |
+|(h) Markup shall be used to associate data cells and      |                                       |                          |
+|header cells for data tables that have two or more logical|                                       |                          |
+|levels of row or column headers.                          |                                       |                          |
+|(i) Frames shall be titled with text that facilitates     |                                       |                          |
+|frame identification and navigation                       |                                       |                          |
+|(j) Pages shall be designed to avoid causing the screen to|                                       |                          |
+|flicker with a frequency greater than 2 Hz and lower than |                                       |                          |
+|55 Hz.                                                    |                                       |                          |
+|(k) A text-only page, with equivalent information or      |                                       |                          |
+|functionality, shall be provided to make a web site comply|                                       |                          |
+|with the provisions of this part, when compliance cannot  |                                       |                          |
+|be accomplished in any other way. The content of the      |                                       |                          |
+|text-only page shall be updated whenever the primary page |                                       |                          |
+|changes.                                                  |                                       |                          |
+|(l) When pages utilize scripting languages to display     |                                       |                          |
+|content, or to create interface elements, the information |                                       |                          |
+|provided by the script shall be identified with functional|                                       |                          |
+|text that can be read by Assistive Technology.            |                                       |                          |
+|(m) When a web page requires that an applet, plug-in or   |                                       |                          |
+|other application be present on the client system to      |                                       |                          |
+|interpret page content, the page must provide a link to a |                                       |                          |
+|plug-in or applet that complies with §1194.21(a) through  |                                       |                          |
+|(l).                                                      |                                       |                          |
+|(n) When electronic forms are designed to be completed    |                                       |                          |
+|on-line, the form shall allow people using Assistive      |                                       |                          |
+|Technology to access the information, field elements, and |                                       |                          |
+|functionality required for completion and submission of   |                                       |                          |
+|the form, including all directions and cues.              |                                       |                          |
+|(o) A method shall be provided that permits users to skip |                                       |                          |
+|repetitive navigation links.                              |                                       |                          |
+|(p) When a timed response is required, the user shall be  |                                       |                          |
+|alerted and given sufficient time to indicate more time is|                                       |                          |
+|required.                                                 |                                       |                          |
+
+
+Note to 1194.22: The Board interprets paragraphs (a) through (k) of this section as consistent with the following priority 1 Checkpoints of the
+Web Content Accessibility Guidelines 1.0 (WCAG 1.0) (May 5 1999) published by the Web Accessibility Initiative of the World Wide Web Consortium:
+Paragraph (a) - 1.1, (b) - 1.4, (c) - 2.1, (d) - 6.1, (e) - 1.2, (f) - 9.1, (g) - 5.1, (h) - 5.2, (i) - 12.1, (j) - 7.1, (k) - 11.4.
+
+|Section 1194.31 Functional Performance Criteria - Detail                                                                      |
+|Voluntary Product Accessibility Template™                                                                                     |
+|Criteria                                 |Supporting Features                      |Remarks and explanations                 |
+|(a) At least one mode of operation and   |                                         |                                         |
+|information retrieval that does not      |                                         |                                         |
+|require user vision shall be provided, or|                                         |                                         |
+|support for Assistive Technology used by |                                         |                                         |
+|people who are blind or visually impaired|                                         |                                         |
+|shall be provided.                       |                                         |                                         |
+|(b) At least one mode of operation and   |                                         |                                         |
+|information retrieval that does not      |                                         |                                         |
+|require visual acuity greater than 20/70 |                                         |                                         |
+|shall be provided in audio and enlarged  |                                         |                                         |
+|print output working together or         |                                         |                                         |
+|independently, or support for Assistive  |                                         |                                         |
+|Technology used by people who are        |                                         |                                         |
+|visually impaired shall be provided.     |                                         |                                         |
+|(c) At least one mode of operation and   |                                         |                                         |
+|information retrieval that does not      |                                         |                                         |
+|require user hearing shall be provided,  |                                         |                                         |
+|or support for Assistive Technology used |                                         |                                         |
+|by people who are deaf or hard of hearing|                                         |                                         |
+|shall be provided                        |                                         |                                         |
+|(d) Where audio information is important |                                         |                                         |
+|for the use of a product, at least one   |                                         |                                         |
+|mode of operation and information        |                                         |                                         |
+|retrieval shall be provided in an        |                                         |                                         |
+|enhanced auditory fashion, or support for|                                         |                                         |
+|assistive hearing devices shall be       |                                         |                                         |
+|provided.                                |                                         |                                         |
+|(e) At least one mode of operation and   |                                         |                                         |
+|information retrieval that does not      |                                         |                                         |
+|require user speech shall be provided, or|                                         |                                         |
+|support for Assistive Technology used by |                                         |                                         |
+|people with disabilities shall be        |                                         |                                         |
+|provided.                                |                                         |                                         |
+|(f) At least one mode of operation and   |                                         |                                         |
+|information retrieval that does not      |                                         |                                         |
+|require fine motor control or            |                                         |                                         |
+|simultaneous actions and that is operable|                                         |                                         |
+|with limited reach and strength shall be |                                         |                                         |
+|provided.                                |                                         |                                         |
+
+
+|Section 1194.41 Information, Documentation and Support – Detail                                                               |
+|Voluntary Product Accessibility Template™                                                                                     |
+|Criteria                                 |Supporting Features                      |Remarks and explanations                 |
+|(a) Product support documentation        |                                         |                                         |
+|provided to end-users shall be made      |                                         |                                         |
+|available in alternate formats upon      |                                         |                                         |
+|request, at no additional charge         |                                         |                                         |
+|(b) End-users shall have access to a     |                                         |                                         |
+|description of the accessibility and     |                                         |                                         |
+|compatibility features of products in    |                                         |                                         |
+|alternate formats or alternate methods   |                                         |                                         |
+|upon request, at no additional charge.   |                                         |                                         |
+|(c) Support services for products shall  |                                         |                                         |
+|accommodate the communication needs of   |                                         |                                         |
+|end-users with disabilities.             |                                         |                                         |
+
+
+
+
+
+
+                                                                   Attachment 5
+
+
+
+
+
+                                                       DATA DISCLOSURE CLEARANCE PROCEDURES
+
+
+
+
+PURPOSE:
+
+As provided for at FAR 52.227-14 (Alt II), [Name of Contractor] (“Contractor”) has provided a Limited Rights Notice to FDA (Attachments 2)
+identifying Limited Rights Data (see definition below).  This Limited Rights Notice authorizes FDA to disclose these Limited Rights Data for
+public health, safety, and regulatory purposes, provided that the disclosures of these data are made subject to prohibition against their
+further disclosure.
+
+In accordance with the Limited Rights Notice, the purpose of this document is to establish timely clearance procedures for the FDA and
+Contractor to follow when FDA seeks either (1) to make Aggregated Limited Rights Data (see definition below) publicly available, or (2) to
+disclose actual Limited Rights Data to specific third parties subject to prohibition against their further disclosure.
+
+DEFINITIONS:
+
+Aggregated Limited Rights Data -- Any collective or summary presentation of Limited Rights Data that does not disclose any raw data accessed by
+FDA from [Name of Contractor] (Contractor) [Database System].
+
+De-identified Data – Data that have had patient, hospital, and physician information removed, e.g., names, addresses, social security numbers,
+and dates of birth, so that any user or audience cannot purposefully or inadvertently discover a patient’s identity.
+
+Limited Rights Data – For purposes of these data disclosure clearance procedures, the definition of Limited Rights Data provided at FAR 52.227-
+14 is understood to include raw data, accessed by FDA personnel through the [Database Systems].
+
+Public Release – Any communications, meetings, or interactions where FDA personnel  make information publicly available, including by disclosing
+it: to any private, public, or governmental entity other than in accordance with paragraph 5 of these procedures; at any public event, such as
+the public portion of an advisory committee meeting or a public presentation or demonstration; through any publication in any media, such as
+scientific and technical articles; or in any agency record that FDA makes available on a non-confidential basis to anyone outside FDA, including
+in accordance with the Freedom of Information Act.
+
+PROCEDURES:
+
+ These clearance procedures do not apply to disclosure of information, including of Limited Rights Data and/or Aggregated Limited Rights Data,
+made in response to an authorized request of Congress or any other government body of competent jurisdiction (see [section of primary agreement
+in which such disclosures are discussed]  [Database System]  (“Agreement”).
+
+1. FDA and Contractor shall complete the Clearance Procedure Cover Sheet (Attachment 2 is a blank copy) upon execution of the Agreement.  This
+   form provides the names and contact information for individuals who shall serve as the primary contact (Contact) for each party.  Each party
+   must update the Cover Sheet any time any of its contact information or its Contact changes.
+2. For each proposed disclosure, FDA shall submit a Clearance Request Form (Attachment 2 is a blank copy), a copy of the materials to be
+   disclosed, and a copy of the source data files cited in those materials.
+
+3. FDA shall identify Contractor as the data source when disclosing Aggregated Limited Rights Data or Limited Rights Data.
+
+
+4. Within 24 hours of receipt by the Contractor's Contact of the Clearance Request Form, Contractor shall provide a clearance decision for the
+   requested Public Release of Aggregated Limited Rights Data.
+
+5. Disclosure approval applies to the life of the materials as approved.  FDA shall notify the contractor of further release, at the
+   contractor’s request.
+
+6. Within 48 hours of receipt by the Contractor's Contact of the Clearance Request Form, the Contractor shall provide a clearance decision for
+   disclosure of Limited Rights Data to a third party in accordance with the following conditions:
+
+     a. The third party must be actively engaged in a project initiated by FDA;
+     b. Clearance to share the data with the third party shall be granted only for purposes of the FDA initiated project and shall not extend
+        beyond the duration of the third party's active engagement in that project;
+     c. The third party must execute in a timely manner the required Contractor Third Party Access agreement and agree in writing to return any
+        copies of the data provided to, or made by, that party when the third party is no longer actively engaged in such project or at such
+        earlier time as FDA may request in writing; and
+     d. The third party must agree in writing not to release the Limited Rights Data to any additional party.
+
+7. If a third party that received Limited Rights Data in accordance with paragraph 5 seeks to disclose materials that include Aggregated Limited
+   Rights Data, the third party must submit an electronic copy of those materials and of the source data files relied upon to FDA for submission
+   to Contractor for clearance approval.
+
+
+8. Clearance to use Limited Rights Data and/or Aggregated Limited Rights Data does not grant any third party rights to use the (Name of
+   Contractor) (Contractor) [Database Systems] software tools.
+
+ TERM:This policy shall be in effect for the calendar year for the length of the contract and thereafter until either party notifies the other of
+                                      its termination or Contractor provides to the FDA a different policy.
+                                                                   Attachment 6
+
+
+
+
+                                                         DATA DISCLOSURE CLEARANCE FORMS
+
+
+i. COVER SHEET
+
+Date: __________
+
+|Contractor's Address:                                                   |Client’s Address:                                    |
+|                                                                        |Food and Drug Administration                         |
+|                                                                        |10903 New Hampshire Avenue                           |
+|                                                                        |Silver Spring, MD 20993-0002                         |
+|Contact Name:                                                           |Contact Name:                                        |
+|Telephone:                                                              |Telephone:                                           |
+|E-mail:                                                                 |E-mail:                                              |
+
+
+
+                                                      FDA CLEARANCE/THIRD PARTY REQUEST FORM
+
+INSTRUCTIONS:
+- Review Data Disclosure Clearance Procedures before completing this form.
+- For all requests, complete "Clearance Type/Requestor Information" and "Project" sections.
+- For requests to publicly disclose Aggregated Limited Rights Data, complete "Section I."
+
+- For requests to share Limited Rights Data with specific third parties, complete "Section II."
+
+
+
+
+
+
+
+CLEARANCE TYPE/REQUESTOR INFORMATION:
+|Clearance requested for (check one):                                     |Date of this Clearance Request:                        |
+|( Public Release of Aggregated Limited Rights Data by FDA (complete      |Request form completed by:                             |
+|project description and Section I)                                       |                                                       |
+|( Disclosure of Limited Rights Data to a third party (complete project   |Phone number of requestor:                             |
+|description and Section II)                                              |                                                       |
+|                                                                         |E-mail address of requestor:                           |
+
+PROJECT DESCRIPTION:
+
+Name(s) and description(s) of FDA project associated with the use of the data:
+
+
+
+
+FDA contact(s) for the project(s):
+
+
+
+
+
+
+
+
+SECTION I: (Public Release of Aggregated Limited Rights Data by FDA)
+
+
+
+
+
+Purpose of Aggregated Limited Rights Data use:
+
+
+
+
+
+|( Publication                                       |( Research                                              |
+|( Presentation                                      |( Other, please specify:                                |
+
+Audience and name of publication(s), presentation(s), or forum(s):
+
+
+Date(s) of publication(s), presentation(s), or forum(s) (if known):
+
+
+The following items must be provided electronically by FDA with this Clearance Form (if practicable):
+
+      Drug file name:
+
+      Query file name (if applicable):
+
+Contractor shall provide clearance by e-mail for the release(s) identified in this Section I.
+SECTION II: (Disclosure of Limited Rights Data to a third party)
+
+Description of third party:
+
+      Company or Agency
+            Name:
+            Address:
+
+      Contact for project:
+
+
+Describe third party association with FDA (e.g., contractor, research partner, etc.):
+
+
+How will the limited rights data be used?
+
+
+
+Has the third party read and agreed to all the conditions set forth in the clearance?  ( Yes   (  No
+
+
+The requesting parties hereby agree to the terms and conditions set forth in the clearance procedure and submit this request to [Contractor].
+
+|FDA                                                              |THIRD PARTY                                                      |
+|Signature:                                                       |Signature:                                                       |
+|                                                                 |                                                                 |
+|Name (print):                                                    |Name (print):                                                    |
+|                                                                 |                                                                 |
+|Title:                                                           |Title:                                                           |
+|                                                                 |                                                                 |
+|Date:                                                            |Date:                                                            |
+
+[Contractor], hereby grants data disclosure clearance for the purpose(s) identified in this Section II.
+
+|CONTRACTOR                                                               |
+|Signature:                                                               |
+|Name (print):                                                            |
+|Title:                                                                   |
+|Date:                                                                    |
+
+                                        Note on obtaining copies of proprietary software from contractors
+
+If FDA may wish to receive from a data provider copies of associated proprietary software that was not developed with FDA funds:*
+
+   (1) In addition to cross-referencing FAR 52.227-14, the data access agreement should--
+
+        a. cross-reference FAR 52.227-14 Alt. III (1987) regarding access to "restricted computer software"; and
+
+
+        b. include the following statement, explaining that such software constitutes "restricted computer software" for purposes of the
+           agreement:
+
+           Restricted Computer Software -- For purposes of [Agreement], the definition of Restricted Computer Software provided at FAR 52.227-14
+           is understood to include any proprietary computer software the development of which FDA did not fund.
+
+   (2) The Contractor should provide a Restricted Rights Notice to FDA with the software as provided for at FAR 52.227-14 Alt. III (1987). The
+      content of the notice can be specified in the agreement. Contact legal counsel if the parties wish to use language in the notice that is
+      different from the model language provided at FAR 52.227-14 Alt. III (1987).
+
+
+      *If FDA paid for development of the software, the software would not be "restricted computer software" and these special provisions and
+      procedures would not apply.
+
+
+
+
+                                                                   Attachment 7
+
+                                           Exchanging Certificates with the External Individual and FDA
+
+                                                        FDA Secure Electronic Mail System
+
+1. The external user must obtain his or her own certificate from a Certificate Authority (CA) like Digital Signature Trust Co., Thawte
+   Consulting, (Pty) Ltd., or VeriSign, Inc.  (Instructions on how to obtain certificates are located at the end of this document.)
+
+
+2. After he or she has obtained a commercial grade U.S. Domestic 1024-bit key certificate, the user will need to send a signed message to the
+   address cert-query@fda.hhs.gov.  The message must have a subject of Lawrence.Lake@fda.hhs.gov.  The body of the E-mail may be blank because
+   the certificate exchange process ignores it.
+
+
+   By digitally signing this message, the user is providing his or her certificate to the Tumbleweed E-mail Firewall (EMF) system.  The address
+   in the “To” field directs the message to an auto-responder built into the Tumbleweed EMF system.  EMF responds to the cert-query@fda.hhs.gov
+   by returning the proxy certificate of the person specified in the “Subject” field, according to the alias name or username. Initially all
+   secure testing is completed with Lawrence.Lake@fda.hhs.gov. However, all external users will need to complete these same steps with each
+   person they need to correspond with at FDA to enable secure e-mail communications. Please make sure that you use the
+   firstname.lastname@fda.hhs.gov ONLY.
+
+
+A. The external user should simply double-click on Tumbleweed EMF’s certificate.  This will open the “Certificate” window.  Click on the
+   “Details” tab to view this certificate’s details.
+
+
+B. Click the “Install Certificate...” button at the bottom of this window’s “General” tab.  This will begin the Certificate Manager Import
+   Window.  Click the “Next” button to continue.
+
+
+C. Choose to “Automatically select the certificate store based on the type of certificate” when prompted.
+
+
+D. Click the “Finish” button to complete the wizard.  A warning will appear, asking if you want to add the certificate to the root store.  Click
+   “Yes” to add it.  A message saying that the certificate has been added should appear.  Close the “Certificate” window by clicking “OK.”
+
+
+1. By this time, the external user should have gotten a response to his or her certificate query.  The query response should appear to have come
+   from the user that was queried.  In Outlook, a reddish ribbon and a blue lock will appear on the e-mail message showing that the message has
+   been digitally signed and contains the sender’s certificate.  The user should right-click on the “From” address to add this sender (and his or
+   her certificate) to the contacts list.  The external user should make sure to EXPLICITLY TRUST the certificate. This is a very important
+   PROCEDURE.  If this step is not completed, any message sent to this user will not be readable.
+
+
+2. Now that the certificate exchange has been done, the external user must e-mail the Tumbleweed EMF administrator-- so he or she can verify the
+   external user’s certificate. The address is Lawrence.Lake@fda.hhs.gov. At this point the external user should be sending a SIGNED AND
+   ENCRYPTED message.
+
+
+3. Now that both the Tumbleweed EMF root certificate and the external user’s certificate have been exchanged and verified, the external user and
+   the EMF administrator (through the Lawrence.Lake@fda.hhs.gov account) will VERIFY that the exchange test messages are being signed/encrypted
+   and decrypted/verified.
+
+
+   When sending E-mail to Lawrence.Lake@fda.hhs.gov, the external user must click on the “To...” button and choose Lawrence.Lake@fda.hhs.gov from
+   the contacts list.  Outlook will not associate Lawrence.Lake@fda.hhs.gov proxy certificate with the E-mail if the external user just types
+   Lawrence.Lake@fda.hhs.gov address in the “To...” field.  E-mail addressed by typing the address in will not go out encrypted.  (A “Non-Secure
+   Recipients” alert will be displayed.)
+
+
+A. For the external user to view his or her certificate, he or she must select “Options...” from the Tools menu of Outlook main window.  He or
+   she will have to view the “Security” tab under the Options window.  Finally, he or she will click the button labeled “Encrypted e-mail...” in
+   this section the external user will need to select either “add digital signature or encrypt contents and attachments or both.”
+
+
+B. [pic]
+
+
+C. A new window titled “Change Security Settings” will appear.  A section called “Digital Signature” will be a little more than halfway down the
+   window.  In this section is a button labeled “Choose...”  The external user will have to click on this button to bring up a list of his or her
+   certificates.  (Note:  there is another section called “Encryption.”  This should contain the same certificate that the “Digital Signature”
+   section has.)
+
+
+D. In the new window, the external user must choose the certificate he or she is working with by double-clicking it.  This opens the
+   “Certificate” window.  The certificate’s thumbprint is under the “Details” tab.  (Note:  Microsoft products display the thumb/fingerprint
+   using the SHA1 algorithm while EMF uses the MD5 algorithm.  The external user should explicitly state to the EMF administrator that the
+   thumb/fingerprint being read is from SHA1.)
+
+
+How OUTLOOK Users Obtain Certificates
+
+
+External users of S/MIME clients must obtain a certificate from a CA and import it into their E-mail client.  This client must be configured for
+commercial grade 3DES encryption when communicating with FDA/HHS, as that is a specification mandated by FIPS 140-1.  Although a certificate may
+be obtained from any CA, these instructions show how to acquire one from VeriSign, Inc. and import it into Outlook with Internet Explorer.
+
+
+1. Open the Outlook client program.
+
+
+2. Pull down the “Tools” menu and select “Options.”
+
+
+3. Click on the “Security” tab in the “Options window.”
+
+
+4. Select “Get a Digital ID.”  This will automatically load VeriSign’s web page.
+
+
+5. From VeriSign’s web page, select “Class 1 Digital ID.”
+
+
+6. Fill out the form with payment information.  Press the “Submit” button.
+
+
+7. E-mail from VeriSign Inc. should shortly arrive.  This E-mail has embedded hypertext markup language so that it looks like a web page.  Links
+   in this E-mail will lead one through the final steps in importing the certificate.
+
+
+Lawrence Lake
+Lawrence.Lake@fda.hhs.gov
+
+FDA E-mail Administrator
+FDA/OITSS/DIO
+1. Phone: 301-796-4490
+
+|SPECIAL NOTE: FDA USERS ARE TO USE THE firstname.lastname@FDA.HHS.GOV E-MAIL ADDRESS FOR SECURE MESSAGING UNTIL FURTHER NOTICE.    |
+|PLEASE DO NOT ADDRESS A MESSAGE USING ANY OTHER E-MAIL ADDRESS.                                                                    |
+
+                                                                   Attachment 8
+
+                                                         EXAMPLE OF MONTHLY USAGE REPORT
+
+
+|Monthly Usage Report: Month/Year  |                               |                             |
+|                                  |                               |                             |
+|Oct 1 - Mar 31                    |ISR                            |4/30                         |
+|                                  |                               |                             |
+|Apr 1 - Sept 30                   |ISR                            |10/30                        |
+|                                  |                               |                             |
+|Oct 1 - Sept 30                   |SSR                            |10/30                        |
+|                                  |                               |                             |
+|Contract Completion               |Year End SDB Report            |30 days after completion     |
+
+
+Please refer to FAR Part 19.7 for instruction concerning the submission of a Commercial Plan:  SSR is due on 10/30 each year for the previous
+fiscal year ending 9/30.
+
+     a. Submit ISR (bi-annually) for the awarding Contracting Officer’s review and acceptance via the eSRS website.
+
+
+     b.   Currently, SSR (annually) must be submitted for the HHS eSRS Agency Coordinator review and acceptance via the eSRS website.  (Note:
+         Log onto the OSDBU website to view the HHS Agency Coordinator contact information
+         (http://www.hhs.gov/about/smallbusiness/osdbustaff.html).
+
+
+Note:  The Request for Proposal (RFP) will indicate whether a subcontracting plan is required.  Due to the nature and complexity of many HHS
+contracts, particularly the Centers for Medicare and Medicaid (CMS), the contractor may not be required to submit its subcontracting reports
+through the eSRS.   The Contracting Officer will confirm reporting requirements prior to the issuance of an award.  For more information,
+contact Teneshia Alston, Agency Coordinator-eSRS (Teneshia.Alston@HHS.GOV).
+
+7.  Record keeping
+
+FAR 19.704(a) (11) requires a list of the types of records your company will maintain to demonstrate the procedures adopted to comply with the
+requirements and goals in the subcontracting plan.  The following is a recitation of the types of records the contractor will maintain to
+demonstrate the procedures adopted to comply with the requirements and goals in the subcontracting plan.  These records will include, but not be
+limited to, the following:
+
+     a. SB, SDB, WOSB, HUBZone, VOSB and SDVOSB source lists, guides and other data identifying such vendors;
+
+     b. Organizations contacted in an attempt to locate SB, SDB, WOSB, HUBZone, VOSB and SDVOSB sources;
+
+     c. On a contract-by-contract basis, records on all subcontract solicitations over $100,000, which indicate for each solicitation (1)
+        whether SB, SDB, WOSB, HUBZone, VOSB and/or SDVOSB concerns were solicited, if not, why not and the reasons solicited concerns did not
+        receive subcontract awards;
+
+
+     d. Records to support other outreach efforts, e.g., contacts with minority and small business trade associations, attendance at small and
+        minority business procurement conferences and trade fairs;
+
+     e. Records to support internal guidance and encouragement provided to buyers through (1) workshops, seminars, training programs, incentive
+        awards; and (2) monitoring performance to evaluate compliance with the program and requirements; and
+
+     f. On a contract-by-contract basis, records to support subcontract award data including the name, address, and business type and size of
+        each subcontractor. (This is not required on a contract–by–contract basis for commercial plans.)
+     g. Other records to support your compliance with the subcontracting plan: (Please describe)
+        _____________________________________________________________
+
+
+        _____________________________________________________________
+
+
+        _____________________________________________________________
+
+
+8.  Timely Payments to Subcontractors
+
+FAR 19.702 requires your company to establish and use procedures to ensure the timely payment of amounts due pursuant to the terms of your
+subcontracts with SB concerns, SDB, WOSB, HUBZone, VOSB and SDVOSB concerns.
+
+Your company has established and used such procedures:  ________ yes _________ no
+
+
+9.  Description of Good Faith Effort
+
+Maximum practicable utilization of SB, SDB, WOSB, HUBZone, VOSB and SDVOSB concerns as subcontractors in Government contracts is a matter of
+national interest with both social and economic benefits.  When a contractor fails to make a good faith effort to comply with a subcontracting
+plan, these objectives are not achieved, and 15 U.S.C. 637(d) (4) (F) directs that liquidated damages shall be paid by the contractor.  In order
+to demonstrate your compliance with a good faith effort to achieve the SB, SDB, WOSB, HUBZone, VOSB and SDVOSB small business subcontracting
+goals, outline the steps your company plans to take.  These steps will be negotiated with the contracting official prior to approval of the
+plan.
+
+____________________________________________________________________
+
+
+
+____________________________________________________________________
+
+
+
+____________________________________________________________________
+
+                                                                  SIGNATURE PAGE
+
+Signatures Required:
+
+This subcontracting plan was submitted by:
+
+Signature:             __________________________________________________
+
+Typed/Print Name:      __________________________________________________
+
+Title:                 __________________________________________________
+
+Date:            __________________________________________________
+
+
+This plan was reviewed by:
+
+Signature:             __________________________________________________
+
+Typed/Print Name:      __________________________________________________
+
+Title:                 Contracting Officer                    Date: ______________
+
+
+This plan was reviewed by:
+
+Signature:             __________________________________________________
+
+Typed/Print Name:      __________________________________________________
+
+Title:                 HHS Small Business Specialist          Date:  ______________
+
+
+This plan was reviewed by:
+
+Signature:             __________________________________________________
+
+Typed/Print Name:      __________________________________________________
+
+Title:                 Small Business Administration Procurement Center Representative
+
+Date:            __________________________________________________
+
+This plan was approved by:
+
+Signature:             __________________________________________________
+
+Typed/Print Name:      __________________________________________________
+
+                            Title:                 Contracting Officer                             Date:   __________
+
+
+
+
+
+
+
+
+                                                                ATTACHMENT NO. 11
+
+                                      Commitment to Protect Non-Public Information Employee Agreement (NPI)
+
+                                                       TO BE PROVIDED AT THE TIME OF AWARD
+
+                                                                Attachment No. 12
+
+|Site Information and Data Characteristics Tables                                                                                                        |
+|Overall Population and Data Characteristics:                                                                                                            |
+|Month and year of when data collection began                                                                                                            |
+|Overall number of households and individuals represented in the entire database.                                                                        |
+|The number of households and individuals by calendar year (indicate trend breaks and major changes in data collection methodology)                      |
+|Characterization of households in terms of number of individuals in the household, income level, geographic region and U.S. Census region.              |
+|Number and percentages of each of the following populations in the database:                                                                            |
+|Children [0 – 17 years]                                                                                                                                 |
+|Women of childbearing age [12 – 45 years]                                                                                                               |
+|Adults [18 -64 years]                                                                                                                                   |
+|Older individuals [65 years and older]                                                                                                                  |
+|Number and percent of patients missing age                                                                                                              |
+|Availability of patient data by US Census region (listed in Appendix B) [Y/N]                                                                           |
+|Frequency of database updates                                                                                                                           |
+|Lag time between data collection and availability of data for analysis                                                                                  |
+|Generally accepted coding system(s) for drugs and medical products (e.g. NDC) used in data resource, if any. (Please list)                              |
+|Complete data dictionary (including percentage of missing data)                                                                                         |
+|Raw/sample numbers, as well as projected numbers, if available                                                                                          |
+|Availability of patient demographics and basic data (Provide percentage missing for each item):                                                         |
+|Age (Y/N) – Please specify method by which age obtained and how it is displayed in reports, i.e., standard age groups, customized age groups, single    |
+|years)                                                                                                                                                  |
+|Gender (Y/N)                                                                                                                                            |
+|Race/ethnicity (Y/N)                                                                                                                                    |
+|Income level (Y/N)                                                                                                                                      |
+|Occupation (Y/N)                                                                                                                                        |
+|Height (Y/N)                                                                                                                                            |
+|Weight (Y/N)                                                                                                                                            |
+|Clinical measures, i.e., blood pressure (Y/N)                                                                                                           |
+|Smoking status (Y/N)                                                                                                                                    |
+|Alcohol use (Y/N)                                                                                                                                       |
+|Availability of health insurance (Y/N)                                                                                                                  |
+|Geographic region (Y/N)                                                                                                                                 |
+|                                                                                                                                                        |
+|Availability of drug-specific data elements: (Specify the following and provide percentage missing for each item):                                      |
+|Drug product name  (Y/N)                                                                                                                                |
+|Drug active ingredients  (Y/N)                                                                                                                          |
+|Unit Price code (UPC) and/or national drug code (NDC) number  (Y/N)                                                                                     |
+|Strength of active ingredients  (Y/N)                                                                                                                   |
+|Drug formulation (Y/N)                                                                                                                                  |
+|Size of drug product by mL, number of tablets/capsules, and/or total doses available  (Y/N)                                                             |
+|Indication(s) for use or ailment(s) intended to treat  (Y/N)                                                                                            |
+|Manufacturer and/or re-packager  (Y/N)                                                                                                                  |
+|Date of purchase  (Y/N)                                                                                                                                 |
+|Total dose per day (Y/N)                                                                                                                                |
+|                                                                                                                                                        |
+|Availability of treatment-specific data elements: (Specify the following and provide percentage missing for each item):                                 |
+|Patient’s ailment treatment category  (Y/N)                                                                                                             |
+|ICD-9 diagnosis code  (Y/N)                                                                                                                             |
+|Concomitant use with other prescription or OTC drug products (Y/N)                                                                                      |
+|Source of drug (e.g., recommendation by healthcare professional, self purchase, sample provided)  (Y/N)                                                 |
+|Date of diagnosis  (Y/N)                                                                                                                                |
+|Total dose per day (Y/N)                                                                                                                                |
+|Duration of medication consumption (in days, months, years) (Y/N)                                                                                       |
+|                                                                                                                                                        |
+
+
+
+FDA Support Services:  Access to Over-the-Counter (OTC) Drug Utilization Data
+
+RFQ Number: 11-223-SOL-00108
+
+Part 1 – Description
+
+1.1   General
+
+This is a combined synopsis/solicitation for commercial items prepared in accordance with the format in FAR 12.6 and 13, streamlined procedures
+for evaluation and solicitation for commercial items-as supplemented with additional information included in this notice.  This announcement
+constitutes the only full and open competition solicitation; proposals are being requested, and a written solicitation document will not be
+issued.  This solicitation is a Request for Quotation (RFQ).  The solicitation document and incorporated provisions and clauses in effect
+through the Federal Acquisition Circular 05-53.
+
+The associated North American Industrial Classification System (NAICS) code for this procurement is 518210.
+
+This is RFQ is for Access to Over-the-Counter (OTC) Drug Utilization Data.
+
+1.2   Type of Contract
+
+The Government contemplates a hybrid Firm Fixed Price (FFP)  and Indefinite Delivery Indefinite Quantity (IDIQ) contract vehicle for three
+years. One (1) Base Year and Two (2) Option Years.
+
+Part 2 –Prices/Costs
+
+2.1   Prices
+
+The labor rates and firm fixed prices apply to all requirements under this contract.  The labor category rates specified shall be fixed hourly
+rates which include, as a minimum, the following:  wages, indirect costs (including overhead, local taxes, fringe benefits and general and
+administrative expenses), and profit.
+
+
+
+
+
+
+
+
+
+
+2.2   Pricing Schedule
+
+Provide pricing in an excel spreadsheets.
+
+The pricing schedules are as follows:
+
+Firm Fixed Price
+
+|                                                               Base Year                                                         |
+|Item No.   |Description of Supplies/Services                  |    Qty           |   Unit of     |Unit  Price    |Total Amount   |
+|           |                                                  |                  |Issue          |               |               |
+|0001       |Unlimited Access to Over-the-Counter (OTC) Drug   |    12            |Monthly        |$              |$              |
+|           |Utilization Data                                  |                  |               |               |               |
+|0002       |Projection or Other Appropriate Methodology       |      1           |Lot            |$              |$              |
+|0003       |Current and complete Data Dictionary, including   |      1           |Lot            |$              |$              |
+|           |updates                                           |                  |               |               |               |
+|0004       |On-site training programs and training materials  |      2           |Lot            |$              |$              |
+|0005       |Technical Support; to include Notification of and |     12           |               |$              |$              |
+|           |Access to Upgrades and/or New Releases of the Data|                  |Monthly        |               |               |
+|           |and Software (Unlimited)                          |                  |               |               |               |
+|0006       |Monthly Usage Reports                             |    12            |Lot            |$              |$              |
+|0007       |Disclosure Clearance Service (Unlimited)          |    12            |Monthly        |$              |$              |
+|0008       |*Ad hoc Analyses: custom reporting and product    |200 Hours*        |Lot            |$              |$              |
+|           |customization.                                    |                  |               |               |               |
+
+*Blended Labor Rates include: i.e. 50% of Computer Analyst, 20% of Senior Computer Analyst, 20% of Statistician, 10% of Pharmacist
+
+
+|                                                               Option Year 1                                                     |
+|Item No.   |Description of Supplies/Services                  |    Qty           |   Unit of     |Unit  Price    |Total Amount   |
+|           |                                                  |                  |Issue          |               |               |
+|1001       |Unlimited Access to Over-the-Counter (OTC) Drug   |    12            |Monthly        |$              |$              |
+|           |Utilization Data                                  |                  |               |               |               |
+|1002       |Projection or Other Appropriate Methodology       |      1           |Lot            |$              |$              |
+|1003       |Current and complete Data Dictionary, including   |      1           |Lot            |$              |$              |
+|           |updates                                           |                  |               |               |               |
+|1004       |On-site training programs and training materials  |      2           |Lot            |$              |$              |
+|1005       |Technical Support; to include Notification of and |     12           |               |$              |$              |
+|           |Access to Upgrades and/or New Releases of the Data|                  |Monthly        |               |               |
+|           |and Software (Unlimted)                           |                  |               |               |               |
+|1006       |Monthly Usage Reports                             |    12            |Lot            |$              |$              |
+|1007       |Disclosure Clearance Service (Unlimited)          |    12            |Monthly        |$              |$              |
+|1008       |Ad hoc Analyses: custom reporting and product     |200 Hours         |Lot            |$              |$              |
+|           |customization                                     |                  |               |               |               |
+
+
+* Blended Labor Rates include: i.e. 50% of Computer Analyst, 20% of Senior Computer Analyst, 20% of Statistician, 10% of Pharmacist
+
+
+|                                                               Option Year 2                                                     |
+|Item No.   |Description of Supplies/Services                  |    Qty           |   Unit of     |Unit Price     |Total Amount   |
+|           |                                                  |                  |Issue          |               |               |
+|2001       |Unlimited Access to Over-the-Counter (OTC) Drug   |    12            |Monthly        |$              |$              |
+|           |Utilization Data                                  |                  |               |               |               |
+|2002       |Projection or Other Appropriate Methodology       |      1           |Lot            |$              |$              |
+|2003       |Current and complete Data Dictionary, including   |      1           |Lot            |$              |$              |
+|           |updates                                           |                  |               |               |               |
+|2004       |On-site training programs and training materials  |      2           |Lot            |$              |$              |
+|2005       |Technical Support; to include Notification of and |                  |               |$              |$              |
+|           |Access to Upgrades and/or New Releases of the Data|12                |Month          |               |               |
+|           |and Software (Unlimited)                          |                  |               |               |               |
+|2006       |Monthly Usage Reports                             |    12            |Lot            |$              |$              |
+|2007       |Disclosure Clearance Service (Unlimited)          |    12            |Monthly        |$              |$              |
+|2008       |Ad hoc Analyses: custom reporting and product     |200 Hours*        |Lot            |$              |$              |
+|           |customization.                                    |                  |               |               |               |
+|           |TOTAL FIRM FIXED PRICE                            |                  |               |               |$              |
+
+* Blended Labor Rates include: i.e. 50% of Computer Analyst, 20% of Senior Computer Analyst, 20% of Statistician, 10% of Pharmacist
+
+
+
+
+IDIQ  Other Types of Services - Labor Categories and Estimated Hours for each type of IDIQ Service      (informational purposes only)
+
+
+|Labor Category       |Estimated Hours    |Hourly Rate        |Base Year          |Option Year One    |Option Year Two    |
+|Project Manager      |1920               |                   |                   |                   |                   |
+|Senior Computer      |1920               |                   |                   |                   |                   |
+|Analyst              |                   |                   |                   |                   |                   |
+|Statistician         |1920               |                   |                   |                   |                   |
+|Pharmacist           |1920               |                   |                   |                   |                   |
+
+
+
+|Labor Category                           |Functions                                                 |Suggested Years of        |
+|                                         |                                                          |Experience                |
+|Project Manager                          |Management and oversight of Contract/Project.  Serves as  |At least 10 years of      |
+|                                         |the Contractor counterpart to the Government              |project management        |
+|                                         |program/technical managers. Manages program/technical     |experience                |
+|                                         |support operations which could involve more than the base |                          |
+|                                         |contract services, i.e. access to OTC data, such as       |                          |
+|                                         |project/task orders and personnel. Organizes, directs, and|                          |
+|                                         |coordinates planning and execution of all                 |                          |
+|                                         |program/technical support activities. Has proven          |                          |
+|                                         |communications skills to be able to interface with all    |                          |
+|                                         |levels of management. Establishes, monitors, and adjusts  |                          |
+|                                         |management structure to direct program/technical support  |                          |
+|                                         |activities in a most effective manner. Uses project tools |                          |
+|                                         |to monitor the budget and schedule of various tasks and   |                          |
+|                                         |activities. Meets and confers with Government management  |                          |
+|                                         |officials regarding the status of specific                |                          |
+|                                         |program/technical activities and problems, issues or      |                          |
+|                                         |conflicts regarding resolution.                           |                          |
+|Senior Computer Analyst                  |Provides technical and administrative direction for       |At least 7 years          |
+|                                         |personnel performing software development tasks, including|experience including      |
+|                                         |the review of work products for correctness, adherence to |analyzing and designing   |
+|                                         |the design concept and to user standards, and for progress|business applications for |
+|                                         |in accordance with schedules.                             |large-scale computers.    |
+|Statistician                             |Subject matter expert in the area of statistics.          |At least 5 plus years     |
+|                                         |Develops, modifies, and analyzes statistical models in the|experience in public      |
+|                                         |areas of drug safety, pharmaco-vigilance, and             |health area               |
+|                                         |epidemiology.                                             |                          |
+|Pharmacist                               |Subject matter expert in the area of                      |At least 3 plus years with|
+|                                         |pharmaco-epidemiology, pharmaco-vigilance, and drug       |drug safety-related       |
+|                                         |safety.  Reviews and analyzes requests, technical         |experience                |
+|                                         |documents and reports. Analyzes statistical models in the |                          |
+|                                         |areas of drug safety, pharmcovigilance, and epidemiology. |                          |
+
+
+Part 3 – Description/Specifications/Work Statement
+
+3.1   Background
+
+A vital part of FDA and CDER’s mission is to protect the public health.  The mission of the Office of Surveillance and Epidemiology (OSE) is to
+evaluate drug risks and promote the safe use of drugs, prescription and over-the-counter (OTC), by the American people.  The statutory
+provisions of the Federal Food, Drug, and Cosmetic Act as amended by the Food and Drug Administration Modernization Act (FDAMA, Section 406),
+Title 21 Code of Federal Regulations, Section 310.305, and Title 21 Code of Federal Regulations, Section 314.80 require FDA to ensure the safety
+and effectiveness of regulated marketed products.
+
+In early 2005, FDA commissioned the Institute of Medicine (IOM) to conduct a study to examine the US drug safety system.  In September 2006, the
+Institute of Medicine Report entitled, “The Future of Drug Safety: Promoting and Protecting the Health of the Public” was released and outlined
+numerous ongoing and future activities designed to continue to strengthen the FDA’s drug safety program.  The Office of Surveillance and
+Epidemiology (OSE) contributes to this effort by evaluating drug risks and promoting the safe use of drugs by the American people.  Specific
+recommendations in the IOM report addressed modernizing the drug safety program including activities for the expansion of database resources.
+
+In addition, Title IX of the Food and Drug Administration Amendments Act of 2007 (FDAAA 2007) contains numerous provisions related to post-
+marketing safety and communication of safety information.  A subset of those provisions calls for enhanced authorities for accessing disparate
+data sources, establish and improve procedures to identify drug use data trends on a national level for prescription as well as OTC drugs in the
+outpatient setting.
+
+The ability of FDA to respond expeditiously to the increasing number of drug safety issues is of paramount importance to the overall public
+safety.  Access to OTC drug product use will complement and strengthen the utility of FDA's Adverse Event Reporting System (AERS) currently in
+place.  Access to these data will also increase the FDA’s ability to perform regulatory impact studies; in particular, those studies that assess
+the impact of prescription to OTC switches.  Finally, direct access to these data in real-time enhances and accelerates the pace of FDA's
+regulatory decision-making process.  The funding of "Access to Over-the-Counter (OTC) Drug Utilization Data" would serve as a mechanism for FDA
+to respond expeditiously to serious public health or regulatory issues related to OTC drug products.
+
+FDA is not interested in developing this database and expects any qualified organization to own the data as well as the means to access the
+data.
+
+FDA's authority to fund research projects is set out in section 301 of the Public Health Service Act (PHSA 42 U.S.C. 241).
+
+3.2   Program Research Goals and Objectives:
+
+The Contractor shall provide FDA personnel with direct access to a currently existing, commercially available data resource for Over-the-Counter
+drug utilization data that includes household demographics, drug treatment patterns, and indications or ailments intended for treatment in the
+outpatient setting using surveys and/or other methodologies. This data resource shall have the capability of providing national patterns of OTC
+drug use patterns in the outpatient setting through the use of projection or other appropriate methodologies that are scientifically sound and
+transparent to FDA personnel.
+
+
+3.3   Scope of Work
+
+The contractor shall provide the required personnel, materials, services, facilities, and otherwise do all things required for or incident to
+the performance of the work as described below:
+
+
+
+Database Requirements - Unlimited Access to OTC Drug Utilization Data; Projection or Other Appropriate Methodology, and Current and Complete
+Data Dictionary
+
+The Contractor shall provide continuous access to a de-identified HIPAA-compliant data resource on OTC drug product usage including, household
+demographics, drug treatment patterns, and indications or ailments intended for treatment in the outpatient setting throughout the length of the
+contract.  The source data can be obtained from a survey of household purchasing patterns or other electronic data sources.   FDA requires
+access to such data to obtain national patterns of OTC drug product utilization.
+
+FDA requires the ability to make national estimates of household-based and/or patient-based outpatient OTC drug utilization patterns using
+projection or other appropriate methodologies which shall be valid, reliable, and robust.
+The Contractor shall provide full disclosure of data collection and projection methodology and a complete data dictionary.  For survey data, the
+Contractor shall project the data to the national level using a FDA approved projection or other appropriate methodology.   Results from
+projections shall be comparable to estimates obtained from national benchmarks such as the U.S. National Census data.  The data resource shall
+have raw/sample and projected numbers throughout the length of the contract.  The data resource shall be accessible via a secure Internet or
+network-based method permitting simultaneous, multi-user access through a user friendly data query tool(s).
+
+The OTC drug utilization data shall include the number of households in the sample; characterization of households in the sample in terms of
+number of individuals in the household, income level, geographic region and U.S. Census region.  Where possible, the contractor shall provide a
+comparison to national figures.
+
+The household demographic data shall include the number and percent of patient populations of special interest to the FDA, including infants (<2
+years), children (≤ 17 years), women of childbearing age, and elderly (≥ 65 years) as well as the demographic distribution of patients (age and
+gender required; race, if available).
+
+The patient-specific basic data elements in the household shall include:  patient demographics of the intended user such as age (specify method
+by which age is obtained and how it is displayed in canned reports, i.e.,. standard age groups, customized age groups, single years, gender, and
+specify if other data elements are available, such as race/ethnicity; income level; occupation; height and weight; clinical measures, i.e.,
+blood pressure, if available, smoking status; alcohol use, availability of health insurance; and geographic region.
+
+The OTC drug-specific basic data elements shall include drug brand name; drug active ingredients; Unit Price code (UPC) and/or national drug
+code (NDC) number; strength of active ingredients; dosage form; size of drug product by mL, number of tablets/capsules, and/or total doses
+available; manufacturer and/or re-packager; indication(s) for use or ailment(s) intended to treat, and source of drug (e.g., recommendation by
+healthcare professional, self purchase, sample provided).
+
+The treatment-specific basic data element shall describe the patient’s ailment treatment category; date of purchase; concomitant use with other
+prescription or OTC drug products; duration of use; and the patient demographics of the intended user.
+
+The data resource shall include a coding system that consists of drug and ailment coding levels for FDA data analyses; and if available,
+quantify the amount, frequency, and duration of OTC drug products used in the outpatient setting. For examining data on treatment of specified
+ailment or medical conditions, the data resource shall capture the OTC drugs purchased as well as other drugs used for the treatment of the
+ailment.
+
+The Contractor shall participate in a kick-off meeting within two weeks of award and shall conduct an annual meeting on-site at the FDA campus
+in Silver Spring, MD.  The purpose of the annual meeting is to discuss scientific issues of interest to the Agency and relevant work that the
+contractor has performed, as well as discussing FDA satisfaction with all deliverables.
+
+Database Requirements – Technical Requirements
+
+Access to the data resource shall be via secure Internet or network-based methods and shall be in a multi-user environment. The network-based
+methods shall not necessitate any additions to the FDA communications infrastructure.  FDA shall not support modem-based or dial-up access.
+Additionally, FDA shall not support or maintain Contractor’s equipment or personnel on premises.
+
+Access to the data resource shall be immediate, unlimited, direct, desktop and in real-time where available.
+
+Access shall be through an interface and this interface shall be user-friendly, transparent and flexible enough to meet the FDA’s needs.
+Minimally, the interface shall provide both predefined (e.g., canned) and custom reports.
+
+The FDA shall have the ability to archive and analyze historical data.
+
+The FDA shall have the ability to download (or obtain in a timely manner using other means) and analyze patient level data, if available.
+Access to datasets shall be available on demand and without intervention by the Contractor.
+
+
+The Contractor shall provide a description of their business that specifically details the data acquisition process and the nature of cash or
+barter relationship with data panel members.
+
+To protect any sensitive data which may be transmitted electronically between the data vendor and the FDA, the data vendor shall participate in
+the CDER secure electronic mail system (Attachment 7).
+
+The Contractor shall document conformance or level of conformance with Section 508 standards by completing the required forms and submit with
+their proposal. (See Attachment 3)
+
+Training Requirements – Onsite Training Programs and Training Materials
+
+The Contractor shall provide training for users of the data, as well as training for FDA personnel who will support use of the data (e.g.,
+technical users).  Training shall include at least two annual training sessions per year offered on site at FDA campus in Silver Spring, MD.
+
+The Contractor shall provide options for additional “on-demand” sessions either in person or via web-based methods. The training shall be
+initiated within 30 days of awarding the contract.
+
+The Contractor shall provide course outlines and training materials for all levels of training and the number of sessions offered throughout the
+duration of contract.
+
+Technical Support Requirements – Support Package – Technical, Analytical, and Clinical, and Data and Software Upgrades and New Releases; Monthly
+Usage Reports
+
+The Contractor shall provide ongoing support package consisting of technical, analytical, and clinical support by phone or by e-mail for all
+certified trained users of the data during business hours (09:00 AM-5:00 PM EST) throughout the length of the contract in accordance with the
+service levels established in the contract.
+
+The support package shall include all upgrades, enhancements, and modifications to software and data.
+
+The Contractor shall provide Monthly Usage Reports detailing use of the resource by individual FDA users and type of use (if applicable) (See
+Attachment 8 Example of Monthly Usage Report).
+
+Disclosure Clearance Requirements
+
+
+Disclosure Clearance for Aggregated Data Outside the Agency:
+As part of its regulatory activities, FDA shall, at times, require disclosure of scientific and technical articles, study results,
+presentations, public health advisories, and similar works involving aggregated data to entities outside the Agency including the general
+public.  For activities that require disclosure of aggregated data the Contractor shall accept and adhere to the FDA Data Disclosure Clearance
+Procedures and form found in Attachments 5 and 6.
+
+Clearance for Third Party Collaborations:
+As part of its regulatory activities, FDA shall, at times engage in collaborative research projects with third parties outside of FDA for
+specific research projects of public health importance that are initiated by and for the benefit of FDA. These collaborations shall require FDA
+to have the ability to share project specific aggregated or raw data with third parties for collaborative research projects. For these
+collaborations that require sharing of aggregated or raw data, the Contractor shall accept and adhere to the Data Disclosure Clearance
+Procedures and form to be found in Attachments 5 and 6.  These Procedures include terms and conditions for third party collaborations.
+
+
+Ad Hoc Analyses: Custom Reporting and Product Customization
+
+
+The Contractor shall provide limited ad hoc data analyses or custom queries not available through the data tools. (Typically requiring less than
+10 man-hours for completion, and limited to no more than 200 man-hours per year).
+
+
+3.4   IDIQ Services Associated with the Scope of Work
+
+0. Customized analysis –Analysis of OTC drug utilization data that endeavor to answer a specific question that require additional tools beyond
+   the current interface tool that is provided by the database; does not include limited ad hoc services.
+1. Concomitant drug reports – reports on the concomitant use of an OTC product(s) or class of products with another product(s) or class of
+   products used to treat an ailment.
+2. Feasibility studies - studies that are conducted as initial pilot studies to determined if the scope of a study is practical, achievable and
+   likely to involve a large population size to determine a significant association or non-significance association between exposure and outcome.
+
+
+3. Risk management studies – studies that endeavored to ascertain if a specific risk management program is effective to ensure that the benefits
+   of the drug outweigh the risks.
+
+
+3.5   Performance Requirements Summary
+
+|Required Service                |Standard                  |Acceptable Quality   |Method of Surveillance  |Results for Not Meeting |
+|                                |                          |Level (AQL)          |                        |the AQL                 |
+|Provide Unlimited Access to OTC |Continual Access to the   |Standard shall be    |COTR and staff          |Failure to meet will    |
+|Drug Utilization Data           |data resource shall be    |fully met at 100%    |documenting continual   |result in documentation |
+|                                |provided                  |                     |access                  |in the  performance     |
+|                                |                          |                     |                        |evaluation of the       |
+|                                |                          |                     |                        |contract                |
+|Notify FDA about any            |Within one week of the    |Standard shall be    |Project Officer and     |Failure to meet will    |
+|circumstances resulting in loss |loss or lack of access to |fully met at 100%    |staff review of data    |result in documentation |
+|of or lack of access to data    |data from the database.   |                     |quality (i.e. variance  |in the  performance     |
+|from the database               |Notification shall include|                     |in data runs)           |evaluation of the       |
+|                                |details of the impact of  |                     |                        |contract                |
+|                                |these changes on data     |                     |                        |                        |
+|                                |quality, data quantity,   |                     |                        |                        |
+|                                |and overall data          |                     |                        |                        |
+|                                |characteristics           |                     |                        |                        |
+|Adhere to FDA’s disclosure      |The turnaround time for   |Standard shall be    |Project Officer  and    |Failure to meet will    |
+|policy                          |clearances is 24 hours and|fully met at 100%    |staff review of         |result in documentation |
+|                                |48 hours for third-party  |                     |turnaround times        |in the  performance     |
+|                                |agreements                |                     |                        |evaluation of the       |
+|                                |                          |                     |                        |contract                |
+|Notify FDA a minimum of 48 hours|48 hours in advance of    |Standard shall be    |Project Officer and     | Failure to meet will   |
+|in advance of planned downtime  |planned downtime          |fully met at 100%    |staff monitoring of     |result in documentation |
+|of the database                 |                          |                     |notification and        |in the  performance     |
+|                                |                          |                     |database access times   |evaluation of the       |
+|                                |                          |                     |                        |contract                |
+
+
+3.6           FDA TECHNICAL ENVIRONMENT
+
+
+
+      Internet Access
+
+
+   The preferred mechanism for data access is via internet.  The FDA has direct, desktop access to the Internet.  The standard browser package is
+   Microsoft Internet Explorer version 7.x.  The Offeror’s proposal shall specify any additional software and/or hardware (name and version)
+   necessary to access the data.
+
+
+
+      Number of Users
+
+
+   The FDA will purchase a site license that will not be dependent upon the exact number of users.  Individuals within the Office of Surveillance
+   and Epidemiology as well as other authorized users within the FDA will need to access these data as appropriate for their work.
+
+
+
+
+
+
+      Data Downloading
+
+
+   The FDA uses standard statistical and data management software, such as SAS, Access and Excel, and shall require the ability to download or
+   export data in formats that are compatible with these packages.  The FDA shall also require the ability to download data in ASCII format.
+
+
+
+      Local Area Network Configuration
+
+
+   The FDA uses a central-server network model.  The configuration is a wide area network with transmission control protocol/Internet protocol
+   (TCP/IP) running on a 10/1000 Mbs network.  The FDA shall not provide a diagram of the network.  FDA shall not support dial-in or modem-based
+   access.
+
+
+      Security
+
+
+
+   Any client software installed on FDA computers for the purposes of accessing the data shall not use key-logging and/or network capturing
+   functionality to transmit any data from the FDA system except for login information specific to the data and data (e.g. SQL queries or similar
+   methods) accessing the Contractor’s application data sets.
+
+
+
+
+      Virtual Private Network (VPN)
+
+
+   The FDA utilizes the virtual private network to establish a trusted, encrypted TCP/IP tunnel for accessing data from a remote location. The
+   VPN shall be a firewall-to-firewall encrypted tunnel utilizing commercially available software and industry.standard IPSEC protocols.
+
+
+
+
+Part 4-DELIVERABLES AND PERFORMANCE
+
+4.1   Deliverables (IDIQ) To be determined on each individual task order.
+4.2   Deliverables (Firm Fixed Price)
+
+|BASE YEAR PLUS (2) ONE YEAR OPTIONS                                                                                                        |
+|Item No.      |Description of Supplies/Service               |Qty                           |Unit            |Delivery Date                |
+|              |                                              |                              |                |                             |
+|1001          |Unlimited Access to Over-the-Counter (OTC)    |Unlimited                     |12 months       |At time of award of contract |
+|              |Drug Utilization Data                         |                              |                |                             |
+|              |                                              |                              |                |                             |
+|1002          |Projection or Other Appropriate Methodology   |1                             |Lot             |Within 30 days of award of   |
+|              |                                              |                              |                |contract                     |
+|1003          |Current and complete Data Dictionary,         |1                             |Lot             |At time of award of contract |
+|              |including updates                             |                              |                |                             |
+|1004          |On-site training programs and training        |2                             |Lot             |Initiated within 30 days of  |
+|              |materials                                     |                              |                |award of contract and        |
+|              |                                              |                              |                |continues through length of  |
+|              |                                              |                              |                |contract                     |
+|1005          |Technical Support; to include Notification of |                              |12 months       |Length of contract           |
+|              |and Access to Upgrades and/or New Releases of |Unlimited                     |                |                             |
+|              |the Data and Software                         |                              |                |                             |
+|1006          |Monthly Usage Reports                         |12                            |Lot             |Monthly                      |
+|1007          |Disclosure Clearance and Third Party Agreement|Unlimited                     |12 months       |Length of contract           |
+|              |Services                                      |                              |                |                             |
+|1008          |Ad hoc Analyses: custom reporting and product |200 Hours                     |Lot             |As needed                    |
+|              |customization.                                |                              |                |                             |
+
+
+
+4.3     Monthly Status Reports
+
+The contractor shall provide a monthly report describing changes in the overall size of the database, including changes in data contributors,
+quality, and/or the extent, type, and method of data collected.  The report shall assess the impact of these changes on the overall data
+quality, quantity and the demographic composition of the database.  If necessary, the contractor shall be available to discuss this report at
+quarterly meetings.  The monthly reports are due by 1st Monday of the month.
+
+Please submit reports to the following address:
+
+Department of Health and Human Services
+Food and Drug Administration
+Center for Drug Evaluation and Research
+Office of Surveillance and Epidemiology
+10903 New Hampshire Avenue, HFD-400
+Silver Spring, MD 20993
+
+4.4   Period of Performance
+
+The period of performance for this contract vehicle shall be the effective date of contract for a base year and two (2) option years.
+
+Part 5-CONTRACT ADMINSTRATION DATA
+
+5.1   Contracting Officer Technical Representative
+
+The following COTR will represent the Government for the purpose of this contract:  (To be determined at the time of contract award)
+
+The COTR is responsible for: (1) monitoring the Contractor's technical progress, including the surveillance and assessment of performance and
+recommending to the Contracting Officer changes in requirements; (2) interpreting the Statement of Work and any other technical performance
+requirements; (3) performing technical evaluation as required; (4) performing technical inspections and acceptances required by this contract;
+and (5) assisting in the resolution of technical problems encountered during performance.  The Government may unilaterally change its COTR
+designation.
+5.2   The contact information for the Contracting Specialist is:
+
+
+                            Tara Hobson
+                            5630 Fishers Lane
+                            Rockville, MD 20857
+                            Tara.Hobson@fda.hhs.gov
+                            Phone: (301) 827-9691
+                            Fax: (301) 827-7101
+
+5.3   The contact information for the Contracting Officer is:
+
+                            Department of Health and Human Services
+                            Food & Drug Administration, OAGS
+                            Attn:  Doreen Williams, Room 2099
+                            5630 Fishers Lane
+                            Rockville, MD  20857
+                            Phone: (301) 827-3366
+                            Email: Doreen.Williams@fda.hhs.gov
+
+
+5.4   HHSAR Clause 352.270-5 Key Personnel (APRIL 1984)
+
+
+The key personnel specified in this contract are considered to be essential to work performance. At least 30 days prior to diverting any of the
+specified individuals to other programs or contracts (or as soon as possible, if an individual must be replaced, for example, as a result of
+leaving the employ of the Contractor), the Contractor shall notify
+the Contracting Officer and shall submit comprehensive justification for the diversion or replacement request (including proposed substitutions
+for key personnel) to permit evaluation by the Government of the impact on performance under this contract. The Contractor shall not divert or
+otherwise replace any key personnel without the written consent of the Contracting Officer. The Government may modify the contract to add or
+delete key personnel at the request of the contractor or Government.
+
+The Contractor shall provide the names and qualifications of the key personnel assigned to this contract.  The individuals cited below are key
+personnel.
+
+
+Name                   Title
+
+Project Manager        _______________
+
+Contractor’s Point of Contact     _______________
+
+5.5   Invoice Submission
+
+
+A.    The Contractor shall submit all invoices to all addresses in the manner specified below:
+
+        I) One original and one copy to the approving official:
+
+
+
+           U.S. Food and Drug Administration
+
+           Office of Acquisitions and Grants Services
+
+           ATTN:  Tara Hobson, CO/CS
+
+           5630 Fishers Lane
+
+           Room 2142, HFA-500
+
+           Rockville, Maryland 20857
+
+           E-mail:  Tara.Hobson@FDA.HHS.GOV
+
+           *** Acceptable methods of delivery include:  mail, hand delivery and email
+
+
+
+       II) One copy to the contracting officer technical representative (COTR) or other program center/office designee, clearly marked “courtesy
+           copy only”:
+
+
+
+           U.S. Food and Drug Administration
+
+           ATTN:  (To Be Determined at the Award of the Contract)
+
+           WO22 RM2404 HFD-410
+
+           10903 New Hampshire Ave
+
+           Silver Spring, MD 20993
+
+           E-mail:  mailto:@FDA.HHS.GOV
+
+           *** Acceptable methods of delivery include: mail, hand delivery and email
+
+B.    Invoices submitted under this contract must comply with the requirements set forth in FAR Clauses 52.232-25 (PROMPT PAYMENT) and 52.232-33
+      (PAYMENT BY ELECTRONIC FUNDS TRANSFER – CENTRAL CONTRACTOR REGISTRATION) and/or other applicable FAR clauses specified herein.  To
+      constitute a proper invoice, the invoice must be submitted on company letterhead and include each of the following:
+      (I) Name and address of the contractor;
+
+      (II) Invoice date and Invoice Number;
+
+      (III) Purchase Order/Award Number/Task Order Number;
+
+      (IV) Description, quantity, unit of measure, unit price, and extended price supplies delivered or services performed, including:
+           (a) period of performance for which costs are claimed;
+           (b) itemized travel costs, including origin and destination;
+           (c) any other supporting information necessary to clarify questionable expenditures;
+
+      (V) Shipping number and date of shipment, including the bill of lading number and weight of shipment if shipped on government bill of
+      lading;
+
+
+      (VI) Terms of any discount for prompt payment offered;
+
+      (VII) Name and address of official to whom payment is to be sent (must be the same as that in the purchase order/award, or in a proper
+      notice of assignment);
+
+
+      (VIII) Name, title and phone number of person to notify in event of defective invoice;
+
+      (IX) Taxpayer Identification Number (TIN);
+
+      (X) Electronic funds transfer (EFT) Banking information, including routing transit number of the financial institution receiving payment
+      and the number of the account into which funds are to be deposited;
+
+      (XI) Name and telephone number of the FDA Contracting Officer Technical Representative (COTR) or other program center/office point of
+      contract, as referenced on the purchase order;
+
+
+      (XII) Any other information or documentation required by the purchase order/award.
+
+
+      (XIII) Contractor is □ is not □ required to attach an invoice log addendum to each invoice which shall include, at a minimum, the following
+      information for contract administration and reconciliation purposes:
+           (a) List of all invoices submitted to date under the subject award, including the following:
+                 (1) Invoice number, amount, and date submitted
+                 (2) Corresponding payment amount and date received
+           (b) Total amount of all payments received to date under the subject contract or order
+           (c) And, for definitized contracts or orders only, total estimated amounts yet to be invoices for the current, active period of
+           performance
+
+
+C.    An electronic invoice is acceptable if submitted in Adobe Acrobat (PDF) Format.  All items listed in (I) through (XII) of  this clause
+      must be included in the electronic invoice.  Electronic invoices must be on company letterhead and must contain no ink changes and be
+      legible for printing.
+
+D.    Questions regarding invoice payments should be directed to the FDA Payment Office at:
+
+
+                                                                FDA/OC/OA/OFO/OFS
+                                                       ATTN:  DIVISION OF PAYMENT SERVICES
+                                                          12345 PARKLAWN DRIVE, HFA-720
+                                                           301.827.3742 OR 866.807.3742
+                                                          fdavendorpaymentsteam@fda.gov
+                                                            ROCKVILLE, MARYLAND 20857
+
+
+SECTION 6-SPECIAL CONTRACT REQUIREMENTS
+
+6.1   Health and Human Services Acquisition (HHSAR) Regulation by Reference
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text.  The full text
+of a clause may be accessed electronically at http://www.access.gpo.gov/nara/cfr/waisidx_07/48cfr352_07.html
+
+
+|                                        |Definitions.                            |DEC 2006                                |
+|352.202-1                               |                                        |                                        |
+|352.270-4                               |Pricing Adjustments                     |JAN 2001                                |
+|352.224-70                              |Confidentiality of Information          |JAN 2006                                |
+|352.232-9                               |Withholding of Contract Payments        |JAN 2006                                |
+|                                        |Litigation and claims.                  |JAN 2006                                |
+|352.233-70                              |                                        |                                        |
+|                                        |Final decisions on audit findings.      |APR 1984                                |
+|352.242-71                              |                                        |                                        |
+|                                        |Excusable delays.                       |JAN 2006                                |
+|352.249-14                              |                                        |                                        |
+|352.270-8                               |Protection of Human Subjects            |JAN 2006                                |
+|352.270-6                               |Publications and Publicity              |JAN 2006                                |
+|352.270-10                              |Anti-Lobbying                           |JAN 2006                                |
+|352.270-11                              |Privacy Act                             |JAN 2006                                |
+|352.270–13                              |Tobacco-free facilities                 |JAN 2006                                |
+
+
+   2. Advance Understanding
+
+ Notwithstanding any of the above provisions, under certain circumstances, the Government may be required to share data or information it obtains
+ under this contract with Congress, with a Federal court, or with another governmental body of competent jurisdiction.  If it intends to share
+ data or information obtained under this contract with Congress, with a Federal court, or with another governmental body of competent
+ jurisdiction, the Government will take appropriate measures within its control in an effort to ensure that the information will be shared in a
+ manner intended to protect the information from public disclosure.
+
+
+ Contractors submitting proposals to perform work under this contract must assure the protection of the information and data they receive under
+ this contract from unauthorized use or disclosure, and must treat the information as confidential or otherwise privileged.
+
+
+   1. Notwithstanding any of the above provisions, under certain circumstances, the Government may be required to share data or information it
+      obtains under this contract with Congress, with a Federal court, or with another governmental body of competent jurisdiction.  If it
+      intends to share data or information obtained under this contract with Congress, with a Federal court, or with another governmental body of
+      competent jurisdiction, the Government will take appropriate measures within its control in an effort to ensure that the information will
+      be shared in a manner intended to protect the information from public disclosure.
+
+
+   2. Contractors submitting proposals to perform work under this contract shall assure the protection of the information and data they receive
+      under this contract from unauthorized use or disclosure, and must treat the information as confidential or otherwise privileged.
+
+
+   3. For data pulled during the contract period that requires clearance after Option Year 2, the FDA will notify the contractor of the
+      aggregated data release and accept contractors requested revisions, but will not require formal approval for release.  This provision
+      accounts for the time involved for the Agency to analyze the data, summarize findings and/or to formulate a regulatory position.
+
+
+6.3   Reporting Matters Involving Fraud, Waste and Abuse
+
+Anyone who becomes aware of the existence or apparent existence of fraud, waste and abuse in FDA funded programs is encouraged to report such
+matters to the HHS Inspector General’s Office in writing or on the Inspector General’s Hotline.  The toll free number is 1-800-HHS-TIPS (1-800-
+447-8477).   All telephone calls will be handled confidentially.  The e-mail address is Htips@os.dhhs.gov and the mailing address is:
+
+
+
+      Office of Inspector General
+      Department of Health and Human Services
+      TIPS HOTLINE
+      P.O. Box 23489
+      Washington, D.C.  20026
+
+6.4   Travel Policy
+
+The Government will reimburse the Contractor for the allowable travel costs incurred by the Contractor in performance of the contract and
+determined to be in accordance with FAR Part 15, subject to the following provisions:
+
+GENERAL.  Travel required for tasks assigned under this contract shall be governed in accordance with rules set forth for temporary duty travel
+in the Federal Travel Regulations and the Standardized Regulations (Government Civilians, Foreign Areas).  The Federal Travel Regulations are
+available on a subscription basis from the Superintendent of Documents, U.S. Government Pricing Office, Washington, DC. 20402, Stock No. 022-001-
+81003-7.  The Standardized Regulations (Government Civilians, Foreign Areas), Section 925 is available on a subscription basis from the
+Superintendent of Documents, U.S. Government Printing Office, Washington, DC. 20403, Stock No. 744-008-00000-0.  All Contractor travel shall be
+submitted in writing for review to the COTR and approved in advance by the Contracting Officer.
+
+TRAVEL.  Travel, subsistence, and associated labor charges for travel time are authorized for travel beyond a 50-mile radius of the Local Office
+or official duty station, whenever a task assignment requires work to be accomplished at a temporary alternate location.  The Government will
+not reimburse the Contractor for any travel within a 50-mile radius of the Contractor's Local Office or official duty station.
+
+PER DIEM.  Per diem for travel on tasks assigned under this contract will be reimbursed at a rate not to exceed the amount authorized in the
+Federal Travel Regulations and the Standardized Regulations (Government Civilians, Foreign Areas).
+
+LODGING.  Lodging will be reimbursed up to the limits established in the Government travel regulations for Federal Government personnel.
+
+MEALS AND INCIDENTALS.  Meals and Incidentals (M&IE) shall be reimbursed at the applicable rate allowable established by the Government
+regulations and published in the Per Diem Supplement 925 to the Standardized Regulations.
+
+AUTOMOBILES.  For travel where use of personal automobile has been specifically authorized, mileage reimbursement shall be computed on the basis
+of miles traveled from starting point to destination per the current Rand McNally Mileage Guide.  Other actual related miscellaneous expenses,
+such as toll and parking fees, accrued in conducting business associated with tasks assigned under this contract, will be reimbursed.  Car
+rentals require advance COTR approval in writing except under unusual circumstances and will be authorized only when consistent with good
+business practice and generally at a cost not to exceed actual cost of renting compact automobile (one for maximum of five (5) Contractor
+personnel), unless extenuating circumstances (e.g., excess baggage) requires other arrangements.
+
+TRAVEL ARRANGEMENTS.  The Contractor is responsible for making all travel arrangements during the conduct of tasks assigned under this contract.
+ All air travel shall be on Commercial Airlines Coach Class.  The Contractor shall not charge for direct labor hours during travel.
+
+
+
+
+
+
+
+
+PART 7 CONTRACT CLAUSES
+
+
+7.1   52.252-2 Clauses incorporated by reference (feb 1998)
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request,
+the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at:
+www.acquisition.gov/far/index.html
+
+52.212-4 Contract Terms and Conditions-Commercial Items (June 2010)
+52.212-1 Instructions to Offerors-Commercial Items (June 2008)
+
+
+7.2   FAR Clauses by Full Text
+
+
+52.212-3 Offeror Representations and Certifications—Commercial Items.    (MAY 2011)
+  An offeror shall complete only paragraph (b) of this provision if the offeror has completed the annual representations and certifications
+electronically at http://orca.bpn.gov. If an offeror has not completed the annual representations and certifications electronically at the ORCA
+website, the offeror shall complete only paragraphs (c) through (o) of this provision.
+  (a) Definitions. As used in this provision—
+  “Economically disadvantaged women-owned small business (EDWOSB) concern” means a small business concern that is at least 51 percent directly
+and unconditionally owned by, and the management and daily business operations of which are controlled by, one or more women who are citizens of
+the United States and who are economically disadvantaged in accordance with 13 CFR part 127. It automatically qualifies as a women-owned small
+business eligible under the WOSB Program.
+  “Forced or indentured child labor” means all work or service—
+    (1) Exacted from any person under the age of 18 under the menace of any penalty for its nonperformance and for which the worker does not
+offer himself voluntarily; or
+    (2) Performed by any person under the age of 18 pursuant to a contract the enforcement of which can be accomplished by process or penalties.
+  “Inverted domestic corporation”, as used in this section, means a foreign incorporated entity which is treated as an inverted domestic
+corporation under 6 U.S.C. 395(b), i.e., a corporation that used to be incorporated in the United States, or used to be a partnership in the
+United States, but now is incorporated in a foreign country, or is a subsidiary whose parent corporation is incorporated in a foreign country,
+that meets the criteria specified in 6 U.S.C. 395(b), applied in accordance with the rules and definitions of 6 U.S.C. 395(c). An inverted
+domestic corporation as herein defined does not meet the definition of an inverted domestic corporation as defined by the Internal Revenue Code
+at 26 U.S.C. 7874.
+  “Manufactured end product” means any end product in Federal Supply Classes (FSC) 1000-9999, except—
+    (1) FSC 5510, Lumber and Related Basic Wood Materials;
+    (2) Federal Supply Group (FSG) 87, Agricultural Supplies;
+    (3) FSG 88, Live Animals;
+    (4) FSG 89, Food and Related Consumables;
+    (5) FSC 9410, Crude Grades of Plant Materials;
+    (6) FSC 9430, Miscellaneous Crude Animal Products, Inedible;
+    (7) FSC 9440, Miscellaneous Crude Agricultural and Forestry Products;
+    (8) FSC 9610, Ores;
+    (9) FSC 9620, Minerals, Natural and Synthetic; and
+    (10) FSC 9630, Additive Metal Materials.
+  “Place of manufacture” means the place where an end product is assembled out of components, or otherwise made or processed from raw materials
+into the finished product that is to be provided to the Government. If a product is disassembled and reassembled, the place of reassembly is not
+the place of manufacture.
+  “Restricted business operations” means business operations in Sudan that include power production activities, mineral extraction activities,
+oil-related activities, or the production of military equipment, as those terms are defined in the Sudan Accountability and Divestment Act of
+2007 (Pub. L. 110-174). Restricted business operations do not include business operations that the person (as that term is defined in Section 2
+of the Sudan Accountability and Divestment Act of 2007) conducting the business can demonstrate—
+    (1) Are conducted under contract directly and exclusively with the regional government of southern Sudan;
+    (2) Are conducted pursuant to specific authorization from the Office of Foreign Assets Control in the Department of the Treasury, or are
+expressly exempted under Federal law from the requirement to be conducted under such authorization;
+    (3) Consist of providing goods or services to marginalized populations of Sudan;
+    (4) Consist of providing goods or services to an internationally recognized peacekeeping force or humanitarian organization;
+    (5) Consist of providing goods or services that are used only to promote health or education; or
+    (6) Have been voluntarily suspended.
+  “Service-disabled veteran-owned small business concern”—
+    (1) Means a small business concern—
+      (i) Not less than 51 percent of which is owned by one or more service-disabled veterans or, in the case of any publicly owned business, not
+less than 51 percent of the stock of which is owned by one or more service-disabled veterans; and
+      (ii) The management and daily business operations of which are controlled by one or more service-disabled veterans or, in the case of a
+service-disabled veteran with permanent and severe disability, the spouse or permanent caregiver of such veteran.
+    (2) Service-disabled veteran means a veteran, as defined in 38 U.S.C. 101(2), with a disability that is service-connected, as defined in
+38 U.S.C. 101(16).
+  “Small business concern” means a concern, including its affiliates, that is independently owned and operated, not dominant in the field of
+operation in which it is bidding on Government contracts, and qualified as a small business under the criteria in 13 CFR Part 121 and size
+standards in this solicitation.
+  “Subsidiary” means an entity in which more than 50 percent of the entity is owned—
+    (1) Directly by a parent corporation; or
+    (2) Through another subsidiary of a parent corporation.
+  “Veteran-owned small business concern” means a small business concern—
+    (1) Not less than 51 percent of which is owned by one or more veterans (as defined at 38 U.S.C. 101(2)) or, in the case of any publicly owned
+business, not less than 51 percent of the stock of which is owned by one or more veterans; and
+    (2) The management and daily business operations of which are controlled by one or more veterans.
+  “Women-owned business concern” means a concern which is at least 51 percent owned by one or more women; or in the case of any publicly owned
+business, at least 51 percent of its stock is owned by one or more women; and whose management and daily business operations are controlled by
+one or more women.
+  “Women-owned small business concern” means a small business concern—
+    (1) That is at least 51 percent owned by one or more women; or, in the case of any publicly owned business, at least 51 percent of the stock
+of which is owned by one or more women; and
+    (2) Whose management and daily business operations are controlled by one or more women.
+  “Women-owned small business (WOSB) concern eligible under the WOSB Program” (in accordance with 13 CFR part 127), means a small business
+concern that is at least 51 percent directly and unconditionally owned by, and the management and daily business operations of which are
+controlled by, one or more women who are citizens of the United States.
+  (b)
+    (1) Annual Representations and Certifications. Any changes provided by the offeror in paragraph (b)(2) of this provision do not automatically
+change the representations and certifications posted on the Online Representations and Certifications Application (ORCA) website.
+    (2) The offeror has completed the annual representations and certifications electronically via the ORCA website at http://orca.bpn.gov. After
+reviewing the ORCA database information, the offeror verifies by submission of this offer that the representations and certifications currently
+posted electronically at FAR 52.212-3, Offeror Representations and Certifications—Commercial Items, have been entered or updated in the last 12
+months, are current, accurate, complete, and applicable to this solicitation (including the business size standard applicable to the NAICS code
+referenced for this solicitation), as of the date of this offer and are incorporated in this offer by reference (see FAR 4.1201), except for
+paragraphs ______________.
+
+
+52.212-5, Contract Terms and Conditions Required to Implement Statutes or Executive Orders—Commercial Items.  (MAY 2011)
+
+  (a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract by
+reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items:
+    (1) 52.222-50, Combating Trafficking in Persons (Feb 2009) (22 U.S.C. 7104(g)).
+  ___Alternate I (Aug 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+    (2) 52.233-3, Protest After Award (Aug 1996) (31 U.S.C. 3553).
+    (3) 52.233-4, Applicable Law for Breach of Contract Claim (Oct 2004) (Pub. L. 108-77, 108-78).
+  (b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being incorporated in
+this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items:
+
+                                                   [Contracting Officer check as appropriate.]
+
+    __ (1) 52.203-6, Restrictions on Subcontractor Sales to the Government (Sept 2006), with Alternate I (Oct 1995) (41 U.S.C. 253g and
+10 U.S.C. 2402).
+    __ (2) 52.203-13, Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note)).
+    __ (3) 52.203-15, Whistleblower Protections under the American Recovery and Reinvestment Act of 2009 (June 2010) (Section 1553 of Pub. L. 111-
+5). (Applies to contracts funded by the American Recovery and Reinvestment Act of 2009.)
+    __ (4) 52.204-10, Reporting Executive Compensation and First-Tier Subcontract Awards (Jul 2010) (Pub. L. 109-282) (31 U.S.C. 6101 note).
+    __ (5) 52.204-11, American Recovery and Reinvestment Act—Reporting Requirements (Jul 2010) (Pub. L. 111-5).
+    __ (6) 52.209-6, Protecting the Government’s Interest When Subcontracting with Contractors Debarred, Suspended, or Proposed for Debarment
+(DEC 2010) (31 U.S.C. 6101 note). (Applies to contracts over $30,000). (Not applicable to subcontracts for the acquisition of commercially
+available off-the-shelf items).
+    __ (7) 52.209-10, Prohibition on Contracting with Inverted Domestic Corporations (section 740 of Division C of Pub. L. 111-117, section 743
+of Division D of Pub. L. 111-8, and section 745 of Division D of Pub. L. 110-161).
+    __ (8) 52.219-3, Notice of Total HUBZone Set-Aside or Sole-Source Award (Jan 2011) (15 U.S.C. 657a).
+    __ (9) 52.219-4, Notice of Price Evaluation Preference for HUBZone Small Business Concerns (Jan 2011) (if the offeror elects to waive the
+preference, it shall so indicate in its offer) (15 U.S.C. 657a).
+    __ (10) [Reserved]
+    __ (11)(i)  52.219-6, Notice of Total Small Business Set-Aside (June 2003) (15 U.S.C. 644).
+      __ (ii) Alternate I (Oct 1995) of 52.219-6.
+      __ (iii) Alternate II (Mar 2004) of 52.219-6.
+    __ (12)(i)  52.219-7, Notice of Partial Small Business Set-Aside (June 2003) (15 U.S.C. 644).
+      __ (ii) Alternate I (Oct 1995) of 52.219-7.
+      __ (iii) Alternate II (Mar 2004) of 52.219-7.
+    _X_ (13) 52.219-8, Utilization of Small Business Concerns (Jan 2011) (15 U.S.C. 637(d)(2) and (3)).
+    _X_ (14)(i)  52.219-9, Small Business Subcontracting Plan (Jan 2011) (15 U.S.C. 637(d)(4)).
+      __ (ii) Alternate I (Oct 2001) of 52.219-9.
+      __ (iii) Alternate II (Oct 2001) of 52.219-9.
+      __ (iv) Alternate III (Jul 2010) of 52.219-9.
+    __ (15) 52.219-14, Limitations on Subcontracting (Dec 1996) (15 U.S.C. 637(a)(14)).
+    _X_ (16) 52.219-16, Liquidated Damages—Subcon-tracting Plan (Jan 1999) (15 U.S.C. 637(d)(4)(F)(i)).
+    __ (17)(i)  52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns (Oct 2008) (10 U.S.C. 2323) (if the
+offeror elects to waive the adjustment, it shall so indicate in its offer).
+      __ (ii) Alternate I (June 2003) of 52.219-23.
+    __ (18) 52.219-25, Small Disadvantaged Business Participation Program—Disadvantaged Status and Reporting (Dec 2010) (Pub. L. 103-355,
+section 7102, and 10 U.S.C. 2323).
+    __ (19) 52.219-26, Small Disadvantaged Business Participation Program— Incentive Subcontracting (Oct 2000) (Pub. L. 103-355, section 7102,
+and 10 U.S.C. 2323).
+    __ (20) 52.219-27, Notice of Total Service-Disabled Veteran-Owned Small Business Set-Aside (May 2004) (15 U.S.C. 657 f).
+    __ (21)  52.219-28, Post Award Small Business Program Rerepresentation (Apr 2009) (15 U.S.C. 632(a)(2)).
+    __ (22) 52.219-29 Notice of Total Set-Aside for Economically Disadvantaged Women-Owned Small Business (EDWOSB) Concerns (Apr 2011).
+    __ (23) 52.219-30 Notice of Total Set-Aside for Women-Owned Small Business (WOSB) Concerns Eligible Under the WOSB Program (Apr 2011).
+    _X_ (24) 52.222-3, Convict Labor (June 2003) (E.O. 11755).
+    __ (25) 52.222-19, Child Labor—Cooperation with Authorities and Remedies (Jul 2010) (E.O. 13126).
+    _X_ (26) 52.222-21, Prohibition of Segregated Facilities (Feb 1999).
+    _X_ (27) 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246).
+    _X_ (28) 52.222-35, Equal Opportunity for Veterans (Sep 2010)(38 U.S.C. 4212).
+    _X_ (29) 52.222-36, Affirmative Action for Workers with Disabilities (Oct 2010) (29 U.S.C. 793).
+    _X_ (30) 52.222-37, Employment Reports on Veterans (Sep 2010) (38 U.S.C. 4212).
+    __ (31) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496).
+    _X_ (32) 52.222-54, Employment Eligibility Verification (Jan 2009). (Executive Order 12989). (Not applicable to the acquisition of
+commercially available off-the-shelf items or certain other types of commercial items as prescribed in 22.1803.)
+    __ (33)(i)  52.223-9, Estimate of Percentage of Recovered Material Content for EPA–Designated Items (May 2008) (42 U.S.C. 6962(c)(3)(A)(ii)).
+(Not applicable to the acquisition of commercially available off-the-shelf items.)
+      __ (ii) Alternate I (May 2008) of 52.223-9 (42 U.S.C. 6962(i)(2)(C)). (Not applicable to the acquisition of commercially available off-the-
+shelf items.)
+    __ (34) 52.223-15, Energy Efficiency in Energy-Consuming Products (Dec 2007) (42 U.S.C. 8259b).
+    __ (35)(i)  52.223-16, IEEE 1680 Standard for the Environmental Assessment of Personal Computer Products (Dec 2007) (E.O. 13423).
+      __ (ii) Alternate I (Dec 2007) of 52.223-16.
+    __ (36) 52.223-18, Contractor Policy to Ban Text Messaging While Driving (Sep 2010) (E.O. 13513).
+    __ (37) 52.225-1, Buy American Act—Supplies (Feb 2009) (41 U.S.C. 10a-10d).
+    __ (38)(i)  52.225-3, Buy American Act—Free Trade Agreements—Israeli Trade Act (June 2009) (41 U.S.C. 10a-10d, 19 U.S.C. 3301 note, 19 U.S.C.
+2112 note, 19 U.S.C. 3805 note, Pub. L. 108-77, 108-78, 108-286, 108-302, 109-53, 109-169, 109-283, and 110-138).
+      __ (ii) Alternate I (Jan 2004) of 52.225-3.
+      __ (iii) Alternate II (Jan 2004) of 52.225-3.
+    __ (39) 52.225-5, Trade Agreements (Aug 2009) (19 U.S.C. 2501, et seq., 19 U.S.C. 3301 note).
+    __ (40) 52.225-13, Restrictions on Certain Foreign Purchases (June 2008) (E.O.’s, proclamations, and statutes administered by the Office of
+Foreign Assets Control of the Department of the Treasury).
+    __ (41) 52.226-4, Notice of Disaster or Emergency Area Set-Aside (Nov 2007) (42 U.S.C. 5150).
+    __ (42) 52.226-5, Restrictions on Subcontracting Outside Disaster or Emergency Area (Nov 2007) (42 U.S.C. 5150).
+    __ (43) 52.232-29, Terms for Financing of Purchases of Commercial Items (Feb 2002) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+    __ (44) 52.232-30, Installment Payments for Commercial Items (Oct 1995) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+    __ (45) 52.232-33, Payment by Electronic Funds Transfer—Central Contractor Registration (Oct 2003) (31 U.S.C. 3332).
+    __ (46) 52.232-34, Payment by Electronic Funds Transfer—Other than Central Contractor Registration (May 1999) (31 U.S.C. 3332).
+    __ (47) 52.232-36, Payment by Third Party (Feb 2010) (31 U.S.C. 3332).
+    __ (48) 52.239-1, Privacy or Security Safeguards (Aug 1996) (5 U.S.C. 552a).
+    __ (49)(i)  52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) (46 U.S.C. Appx. 1241(b) and 10 U.S.C. 2631).
+      __ (ii) Alternate I (Apr 2003) of 52.247-64.
+  (c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer has
+indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of
+commercial items:
+  [Contracting Officer check as appropriate.]
+    __ (1) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.).
+    __ (2) 52.222-42, Statement of Equivalent Rates for Federal Hires (May 1989) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+    __ (3) 52.222-43, Fair Labor Standards Act and Service Contract Act—Price Adjustment (Multiple Year and Option Contracts) (Sep 2009)
+(29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+    __ (4) 52.222-44, Fair Labor Standards Act and Service Contract Act—Price Adjustment (Sep 2009) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+    __ (5) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain
+Equipment—Requirements (Nov 2007) (41 351, et seq.).
+    __ (6) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services—Requirements (Feb 2009) (41 U.S.C.
+351, et seq.).
+    __ (7) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247).
+    __ (8) 52.237-11, Accepting and Dispensing of $1 Coin (Sept 2008) (31 U.S.C. 5112(p)(1)).
+  (d)  Comptroller General Examination of Record. The Contractor shall comply with the provisions of this paragraph (d) if this contract was
+awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at 52.215-2, Audit
+and Records—Negotiation.
+    (1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right
+to examine any of the Contractor’s directly pertinent records involving transactions related to this contract.
+    (2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination,
+audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR Subpart 4.7, Contractor
+Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records relating to the
+work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the
+disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such
+appeals, litigation, or claims are finally resolved.
+    (3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and
+regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary
+course of business or pursuant to a provision of law.
+  (e)(1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c), and (d) of this clause, the Contractor is not required to
+flow down any FAR clause, other than those in this paragraph (e)(1) in a subcontract for commercial items. Unless otherwise indicated below, the
+extent of the flow down shall be as required by the clause—
+      (i) 52.203-13, Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note)).
+      (ii) 52.219-8, Utilization of Small Business Concerns (Dec 2010) (15 U.S.C. 637(d)(2) and (3)), in all subcontracts that offer further
+subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $650,000 ($1.5 million for
+construction of any public facility), the subcontractor must include 52.219-8 in lower tier subcontracts that offer subcontracting
+opportunities.
+      (iii) [Reserved]
+      (iv) 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246).
+      (v) 52.222-35, Equal Opportunity for Veterans (Sep 2010) (38 U.S.C. 4212).
+      (vi) 52.222-36, Affirmative Action for Workers with Disabilities (Oct 2010) (29 U.S.C. 793).
+      (vii) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496). Flow down required in
+accordance with paragraph (f) of FAR clause 52.222-40.
+      (viii) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.).
+      (ix) 52.222-50, Combating Trafficking in Persons (Feb 2009) (22 U.S.C. 7104(g)).
+  ___Alternate I (Aug 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+      (x) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain
+Equipment-Requirements (Nov 2007) (41 U.S.C. 351, et seq.).
+      (xi) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services-Requirements (Feb 2009) (41 U.S.C.
+351, et seq.).
+      (xii) 52.222-54, Employment Eligibility Verification (Jan 2009).
+      (xiii) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247). Flow down required in accordance
+with paragraph (e) of FAR clause 52.226-6.
+      (xiv) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) (46 U.S.C. Appx. 1241(b) and 10 U.S.C. 2631). Flow
+down required in accordance with paragraph (d) of FAR clause 52.247-64.
+    (2) While not required, the contractor may include in its subcontracts for commercial items a minimal number of additional clauses necessary
+to satisfy its contractual obligations.
+
+
+
+
+7.2   FAR Clauses in Full Text
+
+52.217-8    Option to Extend Services (NOV 1999)
+
+ The Government may require continued performance of any services within the limits and at the rates specified in the contract. These rates may
+be adjusted only as a result of revisions to prevailing labor rates provided by the Secretary of Labor. The option provision may be exercised
+more than once, but the total extension of performance hereunder shall not exceed 6 months. The Contracting Officer may exercise the option by
+written notice to the Contractor within the term of the contract.
+
+
+52.217-9    Option to Extend the Term of the Contract (MAR 2000)
+
+  (a) The Government may extend the term of this contract by written notice to the Contractor at any time within the term of the contract.
+  (b) If the Government exercises this option, the extended contract shall be considered to include this option clause.
+  (c) The total duration of this contract, including the exercise of any options under this clause, shall not exceed 3 years.
+
+52.217-7    Option for Increased Quantity-Separately Priced Line Item (MAR 1989)
+
+The Government may require the delivery of the numbered line item, identified in the Schedule as an option item, in the quantity and at the
+price stated in the Schedule. The Contracting Officer may exercise the option by written notice to the Contractor within 30 days.  Delivery of
+added items shall continue at the same rate that like items are called for under the contract, unless the parties otherwise agree.
+
+52.216-18   Ordering.  (OCT 1995)
+
+(a) Any supplies and services to be furnished under this contract shall be ordered by issuance of delivery orders or task orders by the
+individuals or activities designated in the Schedule. Such orders may be issued from date of award through as long as the contract is in effect.
+
+(b) All delivery orders or task orders are subject to the terms and conditions of this contract. In the event of conflict between a delivery
+order or task order and this contract, the contract shall control.
+
+(c) If mailed, a delivery order or task order is considered “issued” when the Government deposits the order in the mail. Orders may be issued
+orally, by facsimile, or by electronic commerce methods only if authorized in the Schedule.
+
+The Contractor shall respond to the RTOP (Request Task Order Proposal) within 15 business days of receiving the RTOP via email.  Task orders
+against this contract will be placed in writing, by means of a written task order.
+
+52.216-19 Order Limitations. (OCT 1995)
+
+(a) Minimum order. When the Government requires supplies or services covered by this contract in an amount of less than $2,500.00, the
+Government is not obligated to purchase, nor is the Contractor obligated to furnish, those supplies or services under the contract.
+
+(b) Maximum order. The Contractor is not obligated to honor—
+(1) Any order for a single item in excess of $2 million;
+(2) Any order for a combination of items in excess of $2 million; or
+(3) A series of orders from the same ordering office within two weeks that together call for quantities exceeding the limitation in
+paragraph (b)(1) or (2) of this section.
+(c) If this is a requirements contract (i.e., includes the Requirements clause at subsection 52.216-21 of the Federal Acquisition Regulation
+(FAR)), the Government is not required to order a part of any one requirement from the Contractor if that requirement exceeds the maximum-order
+limitations in paragraph (b) of this section.
+(d) Notwithstanding paragraphs (b) and (c) of this section, the Contractor shall honor any order exceeding the maximum order limitations in
+paragraph (b), unless that order (or orders) is returned to the ordering office within 7 days after issuance, with written notice stating the
+Contractor’s intent not to ship the item (or items) called for and the reasons. Upon receiving this notice, the Government may acquire the
+supplies or services from another source.
+
+
+52.216-22    Indefinite Quantity.  (OCT 1995)
+
+(a) This is an indefinite-quantity contract for the supplies or services specified, and effective for the period stated, in the Schedule. The
+quantities of supplies and services specified in the Schedule are estimates only and are not purchased by this contract.
+
+(b) Delivery or performance shall be made only as authorized by orders issued in accordance with the Ordering clause. The Contractor shall
+furnish to the Government, when and if ordered, the supplies or services specified in the Schedule up to and including the quantity designated
+in the Schedule as the “maximum.” The Government shall order at least the quantity of supplies or services designated in the Schedule as the
+“minimum.”
+
+(c) Except for any limitations on quantities in the Order Limitations clause or in the Schedule, there is no limit on the number of orders that
+may be issued. The Government may issue orders requiring delivery to multiple destinations or performance at multiple locations.
+
+(d) Any order issued during the effective period of this contract and not completed within that period shall be completed by the Contractor
+within the time specified in the order. The contract shall govern the Contractor’s and Government’s rights and obligations with respect to that
+order to the same extent as if the order were completed during the contract’s effective period; provided, that the Contractor shall not be
+required to make any deliveries under this contract after 60 months.
+
+
+
+.
+PART 8-ATTACHMENTS (provided at the end of this solicitation/contract)
+
+The following documents are attached and incorporated in this contract.
+
+
+
+   1. Glossary
+   2. Census Regions
+   3. Section 508 Standards
+   4. Voluntary Product Accessibility Template™-Version 1.2
+   5. Data Disclosure Clearance Procedures
+   6. Data Disclosure Clearance Forms
+   7. Exchanging Certificates with the External Individual and FDA
+   8. Example of Monthly Usage Report
+   9. Trial Subscription Form
+  10. Small Business Subcontracting Plan
+  11. Commitment to Protect Non-Public Information Employee Agreement (NPI)
+  12. Site Information and Data Characteristics Table
+
+
+PART 9-INSTRUCTIONS TO THE OFFERORS
+
+9.1   Response Dates
+
+Questions Deadline: All questions shall be received via email tara.hobson@fda.hhs.gov
+ before 4:30 pm (1630) EASTERN TIME on August 16, 2011.
+
+RFQ Due Date: All quotes and revisions shall be received via email tara.hobson@fda.hhs.gov before 1:30 PM Eastern Time on September 1, 2011.
+Offerors shall ensure the RFQ number is visible in the header of the email.
+
+Fax quotes shall not be accepted.
+
+All Vendors shall be registered in the Central Contractor Register (CCR) prior to the award of the contract.  You may register by going to
+www.ccr.gov.
+
+9.2 Proposal Instructions
+
+The Offeror shall provide proposals via email consisting of Volumes I (Contractual Document, Representations and Certifications), II (Price
+Proposal), III (Technical Proposal), and IV (Subcontracting Plan) labeled separately.  The volumes shall be in Microsoft Word and the pitch
+shall be twelve (12) and the font shall be Times New Roman.  However, responses including fonts used for tables and figures, graphics, including
+labeling and annotations of 6 point Arial Narrow, and “screen print”, images extracted as examples are exempt from the font restrictions.
+
+TO PRESERVE THE INTEGRITY OF THE EVALUATION PROCESS, THE ENTIRE TECHNICAL VOLUME "ONLY" SHALL NOT MAKE REFERENCE TO THE OFFEROR’S COMPANY NAME.
+
+
+Each volume shall be separate and complete in itself in order that evaluation of one may be accomplished independently of, and concurrently
+with, evaluation of the other.  In preparing the proposal, the Offeror is reminded that legibility, clarity and completeness are essential.  The
+use of matrices, charts or other graphic form are encouraged.
+
+
+
+
+
+
+
+
+
+
+
+|Volume                                     |Document                                   |Maximum Page Count                         |
+|I                                          |Contractual Document (SF 1449) and         |N/A                                        |
+|                                           |Representations and Certifications         |                                           |
+|II                                         |Price Proposal                             |See part 2 excel spreadsheets              |
+|III                                        |Technical Proposal                         |30 pages                                   |
+|IV                                         |Past Performance                           |3 pages                                    |
+|V                                          |Subcontracting Plan, if Applicable         |See Attachment 11                          |
+
+9.3   VOLUME I Contractual Documents
+
+The Offeror shall complete Standard Form 1449, and Representations and Certifications.
+
+9.4   VOLUME II Price Proposal
+
+The Offeror shall submit a Price Proposal in two separate excel spreadsheets (Section 2-Firm Fixed Price, IDIQ Other Types of Services) that
+provides:
+
+      -A fixed price for CLINS 0001-CLIN 2008.
+
+      -A list of labor categories and rates for the Base Year and for all two option periods.  The Offeror shall include fully loaded rates for
+      all labor categories anticipated work described in Part 3.  Upon award, these rates and prices shall apply to all subsequent Task Orders
+      issued.
+
+NOTE: The Offeror shall ensure that all pricing data is included only in the Price
+            Proposal and is not contained in the Technical Proposal for the initial
+            submission and for any subsequent revisions.
+
+
+9.5   VOLUME III Technical Proposal
+
+The technical proposal shall not exceed 30 pages, excluding key personnel information, Non-Public Information Agreements (NPI) for key
+personnel, cover sheets, table of contents, list of figures, list of exhibits, and tab dividers.  Any and all other pages, including charts,
+exhibits, unmarked pages and any other narrative and attachments to the quotation shall be included in the page calculation.
+
+Factor 1: Technical Approach
+
+In accordance with 52.212-1, the technical approach must include:
+
+1. A technical description/proposal of all the items/services being offered in sufficient detail to evaluate compliance with the requirements in
+   the SOW/solicitation.  This may include product literature, or other documents, if necessary.
+
+2. The Offeror shall provide a detailed description the existing OTC data resource in accordance with Data Resource Requirements in Part 3, type
+   of data and the collection methodology demonstrating that the resource can evaluate OTC drug utilization data at the national level.
+
+
+3. The Offeror shall complete the Site Information and Data Characteristics Tables (Attachment 11) utilizing actual information from the OTC
+   data resource where applicable, (as opposed to estimated or projected values).
+
+
+   4. Trial Subscription
+   a. The Offeror shall confirm the organization’s ability and willingness to provide a short term trial access for the duration of the
+      evaluation period and shall include direct access, documentation, and technical support.  Short-term trial access to the currently
+      existing, commercially available, data, via secure Internet or the Offeror’s laptop shall be provided to a maximum of four FDA researchers
+      from the technical review panel for evaluation of product performance, at no cost to the FDA.
+   b. The Offeror shall provide a maximum of 2 hours of training at the start of the trial subscription period with the required instruction
+      materials and technical support for a maximum of four individuals conducted via telecon or web-based methods. In-person or on-site training
+      shall be prohibited. During this short-term trial access period, the FDA shall only use the data for the purposes of evaluation of the
+      data. FDA shall not use the data, nor any analyses derived from the data, for public disclosure or regulatory decision-making
+   c. To facilitate timely implementation of the Trial Subscription, the Offeror shall provide a fully executed Trial Subscription Agreement
+      (Attachment 9) with the Offeror’s technical proposal. Mechanisms for Short-Term Trial Access to Data.
+   d. To provide FDA access to the data for the short-term trial period, the Contractor shall submit the following with their proposal depending
+      on their method of access.
+   i. On-line – Offeror shall provide maximum of four user names and four passwords as well as instructions for activating the accounts and
+      scheduling the maximum 2-hour training session including contact information for the Offeror’s representative.  The short-term trial access
+      shall be available for the duration of the evaluation period.
+  ii. Stand-Alone Access - Offeror shall provide a laptop with the full commercially available product installed and shall include instructions
+      on how to access and navigate the product.  Contact information for the Offeror’s representative for the purpose of scheduling the maximum
+      2-hour training session shall also be provided.
+
+TRIAL SUBSCRIPTION PERIOD SHALL BE FIVE (5) BUSINESS DAYS FROM THE END OF TRAINING PERIOD.
+
+
+5. The Offeror shall provide full disclosure of data collection and projection methodology and a complete data dictionary.  The Offeror shall
+   provide the following information relating to any projection or other appropriate methodology for providing national estimates of OTC drug
+   purchasing and utilization patterns (via survey data or other methods) and compare their data to the most recent U.S. national census data:  a
+   detailed description of the projection or other appropriate methodology used; the demographic distribution of participating households and
+   household panel members by number and percent of patient populations of special interest to the FDA, including infants (<2 years), children (<
+    17 years), women of childbearing age, and elderly (> 65 years), gender, income level, and the four census regions (Northeast, Midwest, South,
+   West); and the availability of confidence intervals around projected estimates and the method used to calculate. Offerors shall provide sample
+   and projected numbers from the data under consideration.  All information provided shall be the most recent date for which complete data are
+   available (please specify date).
+
+Factor 2: Management Plan/Staffing Plan
+
+   1. The Offer shall provide a management plan for organizing, staffing, and managing the tasks by this requirement documenting roles and
+      responsibilities and timeliness of services to include data access, training, technical support, monthly reports, disclosure clearance and
+      third party collaborations, and ad hoc analyses.
+
+
+   2. Offerors shall identify key personnel who will perform the work and submit the percentage of their time committed to the project and
+      current curriculum vita.  Previous experience of Offerors’ personnel in using the data in pharmacoeconomics, health services, or social
+      science research and in developing and using projection or other appropriate methodologies is required.
+
+
+
+
+
+Factor 3: Past Performance
+
+
+   1) Describe relevant organizational qualifications and experience providing a commercially available OTC drug utilization data resource using
+      surveys and/or methods of data collection.
+
+   2) Identify three projects performed within the last three years for the same or similar requirements along with contact information.  For the
+      projects include:
+   a) title/description of the contract plus contract number,
+   b) bulleted summary of SOW and deliverables, and
+   c) offerors must describe specific relevance of the project to this requirement.
+   3) For the contact information, include: a) point of contact (include position title), b) telephone number and c) e: mail address.
+9.6   VOLUME IV Subcontracting Plan
+
+As required by Federal Acquisition Regulation (FAR) clause 52.219-9, Alternate II, incorporated by reference in Section I, the Offeror shall
+submit its proposed Small Business Subcontracting Plan as part of its proposal, Attachment 10.
+
+Part 10-EVALUATION FACTORS FOR AWARD
+
+10.1  FAR Provisions Incorporated By Reference
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request,
+the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at:
+www.acquisition.gov/far/index.html.
+
+      52.212 Evaluation -Commercial Items (JAN 1999)
+
+The Government will award a contract resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation will
+be most advantageous to the Government, price and other factors considered. The following factors shall be used to evaluate offers: (All factors
+are of equal importance)
+
+   Factor #1:  Technical Approach
+   Factor #2:   Management Plan/Staffing
+   Factor #3:     Past Performance
+
+Technical and past performance, when combined, are significantly more important than price.  When all other factors are equal, price becomes the
+determining factor.
+
+
+The Government will evaluate offers for award purposes by adding the total price for all options to the total price for the basic requirement.
+The Government may determine that an offer is unacceptable if the option prices are significantly unbalanced. Evaluation of options shall not
+obligate the Government to exercise the option(s).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+
+                                                               Minimum Requirements
+
+
+The MSEL CTCMS has a new requirement for a number of highly parallel, high memory-capacity computer systems, along with amount of supporting
+equipment.  This requirement consists of six computer systems, three battery-backed uninterruptible power supplies, and spare components.
+
+
+Computer systems:
+-----------------
+
+Five highly parallel large-memory computer server systems.
+
+    Each of the five systems consists of:
+
+       - 8x quad-core CPUs, clocked at 2.6 GHz or faster, with 64-bit amd64/em64t
+         architecture (not ia64 architecture)
+       - 128 GB of DDR2-800 Reg ECC RAM (or faster)
+       - Motherboard capable of supporting the above
+       - VGA-capable video output (may be built-in to motherboard)
+       - Dual Gigabit ethernet ports (may be built-in to motherboard)
+       - Serial port (may be built in to motherboard)
+       - Dual USB 2.0 ports (may be built in to motherboard)
+       - externally accessible eSATA port (may be built in to motherboard)
+       - 2x 500GB SATA hard drives, 7200 RPM or faster
+       - 19-inch wide rack-mount chassis sufficient for the above, with rail
+         mounting kit.  Smallest available rack height.
+       - Dual-redundant power supplies sufficient to power the above.
+       - Optical drive capable of reading DVDs.
+
+     A sixth system is also required, with fewer CPUs and less memory:
+
+       - 2x quad-core CPUs, 2.6 GHz or faster
+       - 32GB of DDR2-800 Reg ECC RAM
+       - No redundancy requirement for the power supply
+       - All other specifications as above
+
+All provided components must operate correctly with device drivers provided in version 2.6.26 or later of the Linux kernel.
+
+No installed operating system is required, but if provided, it must be Debian Linux 5.0 ("lenny") for the amd64/em64t architecture.
+
+
+Battery backed Uninterruptible Power Supplies:
+----------------------------------------------
+3x 3000 VA-capacity 19-inch 120V rack-mount UPSs with NEMA L5-30P inputs and 120V NEMA 5-15R or 5-20R outputs.
+
+
+Spares:
+-------
+As part of this order, we also require two spare memory modules for the provided large-memory computer systems, and one set of spare batteries
+for the provided battery back-up power supply.
+
+
+
+
+

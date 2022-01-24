@@ -1,0 +1,780 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FRFP.pdf%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us"/><script type="text/javascript">url="http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FRFP.pdf%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>									
+
+STATEMENT OF WORK
+
+
+
+TRANSPORTATION MODELING TOOL DEVELOPMENT
+
+
+
+INTRODUCTION
+
+
+
+The        () is a Federal fee-for-service organization within the Research and Innovative Technology Administration (RITA) of the United States Department of Transportation (US DOT).  The ’s mission is to improve the nation’s transportation systems.  In partnership with sponsoring agencies, the  provides technical research and analysis services to the US DOT, other Federal agencies, state agencies, and other organizations in connection with the transportation-related components of their missions.
+
+
+
+BACKGROUND
+
+
+
+The Volpe Center and its sponsor, Federal Aviation Administration (FAA), require expertise on issues related to environmental concerns regarding noise, local and global air quality, and economic impact.  To support FAA, the Volpe Center has developed and continues to improve expertise in the measurement and modeling of airport noise, local and global emissions, and aviation economics.  FAA also has the additional responsibility of continuing to improve and develop new methodologies to assist in the analysis of aviation-related environmental impacts.  To assist in this effort, the Volpe Center is supporting development of a suite of analytical computer models, e.g., the FAA’s Aviation Environmental Design Tool (AEDT) and the Integrated Noise Model (INM) – both of which utilize Geographical Information System (GIS) capabilities to varying degrees.  Specifically, the FAA Air Tour Management Plan (ATMP) Program has immediate need for upgrades to the AEDT/INM GIS.
+
+
+
+The Volpe Center and its sponsor, FHWA’s Office of Natural and Human Environment (HEPN),  requires expertise on issues related to concerns regarding noise and local air quality in the vicinity of highways and communities near highway transportation.  The Volpe Center has supported the FHWA’s expertise in the analysis of highway-related environmental impacts through the development and use of a suite of analytical computer models, e.g., the FHWA Traffic Noise Model (TNM) and the Environmental Protection Agency (EPA) Motor Vehicle Emission Simulator (MOVES).  The Volpe Center also provides similar measurement and modeling assistance to transportation agencies in other modes, including rail and maritime.
+
+
+
+
+ DATA OBJECTIVES
+
+
+
+Geographical Information System (GIS)
+
+
+
+As part of the Volpe Center’s development of the FAA AEDT and FHWA TNM, a common Geographical Information System (GIS) import/export processor shall be developed to assist in both calculating potential impacts using the same population and geographical data, and also in presenting the results of noise and emissions analyses in a common format.  Producing common output will also be facilitated by the development of a common contouring module to generate reports in flexible, user-defined formats to facilitate these types of geographically-based assessments, rather than making users rely on a small number of standard report formats.  The use of common GIS input/output will easily facilitate integrated analyses.
+
+
+
+The Volpe Center is taking steps to maintain a customized ArcGIS framework (ESRI’s GIS objects library) of core GIS layers anticipated for use by all model users.  Also of interest is the use of Manifold’s GIS in C#.  User scenarios would minimally include airport-related analysis, highway traffic analyses, as well as analysis within and around National Parks.  Due to the extensive quantity of such information, data and technical support from a contractor will be needed to maintain the GIS database, convert data from different sources (e.g., global positioning system (GPS) and other formats), manipulate geospatial datasets, and write custom tools to automate GIS processes as described in this Statement of Work (SOW), as well as considerable integration support for its use in the transportation models in question, particularly AEDT and TNM.  Among the main tasks to be undertaken is the development of a database of core GIS layers for AEDT and TNM users, including:
+
+ 
+
+Boundaries,
+
+Base data (elevation, hydro, etc.), 
+
+Imagery (orthophotos, landsat),
+
+Census data,
+
+Meteorological data, and
+
+Analysis specific (acoustic zones).
+
+
+
+TASKS
+
+
+
+The requirements for this work are described in detail in the tasks listed below, including deliverables, travel requirements, and schedule. 
+
+Task 1: Implement unified environmental analysis application with graphical front end for park service use on ATMP projects
+
+
+
+Integrate the following series of modules into a Microsoft Windows ASP.NET and ArcGIS Server Application:
+
+FlightTrackGenerator – Generates ASCII text files of flight track coordinates and ground elevation, including the ability to view receptor to source lines of sight taking into consideration elevation profiles, as well as the ability to smooth elevation profiles based on use-input parameters
+
+AmbientGenerator – Generates ambient maps and AEDT/INM ambient files
+
+InmProcessor and InmReverseLegendProcessor – Generates AEDT/INM contour maps
+
+InmCumulativeProcessor – Generates cumulative equivalent noise level contour maps 
+
+Implement graphical input, display, and selection of user configuration and source data for scenario construction
+
+Input data for Airport, Fleet, and Movements information shall conform to AEDT definitions for any existing parameters and be coordinated with AEDT development on inclusion of new parameters. The application shall be compatible with and graphically render all data sources listed in the Data Objectives section of this SOW
+
+Participate in bi-weekly coordination meetings at the Volpe Center
+
+
+
+The deliverable for this task shall be an ATMP GIS software application, delivered to the Volpe Center Contracting Officer’s Technical Representative (COTR) by April 30, 2011, in DVD-ROM format.  This task shall require bi-weekly travel to the Volpe Center.
+
+
+
+Optional Task 2: Integrate AEDT output results into application from Task 1
+
+
+
+Implement ESRI ArcEngine controls for processing AEDT output results to be rendered as GIS layers
+
+Integrate controls to the park service application of Task 1
+
+Coordinate with ESRI to form prioritized computational performance improvements
+
+Participate in bi-weekly coordination meetings at the Volpe Center
+
+
+
+The deliverable for this task shall be an AEDT GIS software application, delivered to the Volpe Center COTR, in DVD-ROM format.  This task will require bi-weekly travel to the Volpe Center during the option period August 1-September 15, 2011.
+
+
+
+Optional Task 3: Review and extend AEDT test procedures under ISO 9000-3 guidelines 
+
+
+
+The contractor shall deliver the AEDT review support detailed below for Task 3AA (AEDT Review Phase 1), Task 3AB (AEDT Review Phase 2), and Task 3AC (AEDT Review Phase 3):
+
+
+
+Conduct a review of existing AEDT test plans and test outcomes
+
+Provide recommendations for improving coverage, completeness, and efficiency of the AEDT test batteries
+
+Design test battery construction (or refinement) process to facilitate implementation of recommendations
+
+Present modified AEDT test procedures at the Volpe Center (as part of bi-weekly visits)
+
+
+
+The deliverable for this task shall be AEDT review documents, delivered to the Volpe Center COTR, in MS Word format.  This task will require bi-weekly travel to the Volpe Center during the option periods listed below.
+
+
+
+
+
+Task 3AA: Phase 1 AEDT Review, June 1-30, 2011 
+
+Task 3AB: Phase 2 AEDT Review, September 15-October 15, 2011
+
+Task 3AC: Phase 3 AEDT Review, April 1-30, 2012
+
+
+
+Optional Task 4: AEDT GUI Module Support 
+
+
+
+The contractor shall deliver the AEDT GUI support detailed below for Task 4AA (AEDT GUI Phase 1), Task 4AB (AEDT GUI Phase 2), and Task 4AC (AEDT GUI Phase 3):
+
+
+
+Conduct a review of the existing AEDT Graphical User Interface (GUI) module
+
+Provide recommendations for improving the functionality, completeness, and efficiency of the AEDT GUI module
+
+Design, develop, and implement updated versions of the AEDT GUI module using GIS and the latest Microsoft Developer environment tools
+
+Present the modified AEDT GUI module at the Volpe Center (as part of bi-weekly visits)
+
+
+
+The deliverable for this task shall be AEDT GUI review documents in MS Word format and/or software applications in DVD-ROM format, delivered to the Volpe Center COTR by dates to be determined via exercised options.  This task will require bi-weekly travel to the Volpe Center during the option periods listed below.
+
+
+
+Task 4AA: Phase 1 AEDT GUI, July 1-31, 2011 
+
+Task 4AB: Phase 2 AEDT GUI, February 1-28, 2012
+
+Task 4AC: Phase 3 AEDT GUI, June 1-30, 2012
+
+
+
+Optional Task 5: Review Other AEDT Modules
+
+
+
+The contractor shall deliver the AEDT Module Review support detailed below for Task 5AA (AEDT Module Review Phase 1), Task 5AB (AEDT Module Review Phase 2), and Task 5AC (AEDT Module Review Phase 3):
+
+
+
+Conduct a review of existing AEDT modules provided by the Volpe Center
+
+Provide recommendations for improving the functionality, completeness, and efficiency of the AEDT modules
+
+Design, develop, and implement updated versions of the AEDT modules using the latest Microsoft Developer environment tools
+
+Present the modified AEDT modules at the Volpe Center (as part of bi-weekly visits)
+
+
+
+The deliverable for this task shall be review documents in MS Word format and software application in DVD-ROM format, delivered to the Volpe Center COTR.  This task will require bi-weekly travel to the Volpe Center during the option periods listed below.
+
+
+
+Task 5AA: Phase 1 AEDT, January 1-31, 2012
+
+Task 5AB: Phase 2 AEDT, March 1-31, 2012
+
+Task 5AC: Phase 3 AEDT, July 1-31, 2012
+
+
+
+Optional Task 6: Implement unified environmental analysis application with graphical front end for Volpe Center and FHWA use on highway projects
+
+
+
+The contractor shall deliver the TNM support detailed below for Task 6AA (TNM Phase 1), Task 6AB (TNM Phase 2), and Task 6AC (TNM Phase 3):
+
+.Integrate the following functions into a Microsoft Windows ASP.NET and ArcGIS Server Application:
+
+Generate ambient maps and TNM ambient files
+
+Generate TNM contour maps
+
+Generate cumulative equivalent noise level contour maps 
+
+Implement graphical input, display, and selection of user configuration and source data for scenario construction.
+
+Input data for TNM information shall conform to TNM definitions for any existing parameters and be coordinated with TNM development on inclusion of new parameters. The application shall be compatible with and graphically render all data sources listed in the Data Objectives section of this SOW.
+
+Participate in semi-annual coordination meetings at the Volpe Center
+
+
+
+The deliverable for this task shall be software applications and documentation, delivered to the Volpe Center COTR, in DVD-ROM format.  This task will require bi-weekly travel to the Volpe Center during the option periods listed below.
+
+
+
+Task 6AA: Phase 1 TNM, August 1-31, 2012 
+
+Task 6AB: Phase 2 TNM, November 1-30, 2012
+
+Task 6AC: Phase 3 TNM, February 1-28, 2013
+
+
+
+
+
+DELIVERABLES
+
+
+
+The Contractor shall provide the following deliverables in the following formats for each task:
+
+
+
+
+
+
+
+*Data media such as DVDs should be delivered to the COTR at:
+
+
+
+Contracting Officer's Technical Representative, RVT-41
+
+Volpe National Transportation Systems Center
+
+55 Broadway
+
+Cambridge, MA  02142-1001
+
+
+
+**Electronic documents should be emailed to the COTR.
+
+
+
+PERIOD OF PERFORMANCE
+
+
+
+The period of performance for all work is from date of award through February 28, 2013 if all options are exercised. .
+
+
+
+
+
+TASK NO.
+
+DESCRIPTION
+
+FORMAT
+
+PERIOD OF PERFORMANCE
+
+DELIVERY DUE DATE
+
+1
+
+ATMP GIS Software Application
+
+DVD-ROM*
+
+Date of Award through April 30, 2011
+
+April 30, 2011
+
+2 (optional)
+
+AEDT GIS Software Application
+
+DVD-ROM*
+
+August 1, 2011 through September 15, 2011
+
+45 days after exercise of option
+
+3 (optional)
+
+3AA (Phase 1)
+
+3AB (Phase 2)
+
+
+
+3AC (Phase 3)
+
+AEDT Review Documents
+
+MS Word**
+
+
+
+Phase 1: June 1-30, 2011 
+
+Phase 2: September 15-October 15, 2011
+
+Phase 3: April 1-30, 2012
+
+ 
+
+30 days after exercise of option
+
+30 days after exercise of option
+
+
+
+30 days after exercise of option
+
+4 (optional)
+
+4AA (Phase 1)
+
+4AB (Phase 2)
+
+4AC (Phase 3)
+
+AEDT GUI Review Documents; Software Application
+
+DVD-ROM*
+
+
+
+Phase 1: July 1-31, 2011 
+
+Phase 2: February 1-28, 2012
+
+Phase 3: June 1-30, 2012
+
+ 
+
+30 days after exercise of option
+
+30 days after exercise of option
+
+30 days after exercise of option
+
+5 (optional)
+
+5AA (Phase 1)
+
+5AB (Phase 2)
+
+5AC (Phase 3)
+
+AEDT Module Review Documents; Software Application
+
+DVD-ROM*
+
+
+
+Phase 1: January 1-31, 2012 
+
+Phase 2: March 1-31, 2012
+
+Phase 3: July 1-31, 2012
+
+ 
+
+30 days after exercise of option
+
+30 days after exercise of option
+
+30 days after exercise of option
+
+6 (optional)
+
+6AA (Phase 1)
+
+6AB (Phase 2)
+
+6AC (Phase 3)
+
+TNM Software Application
+
+MS Word**
+
+
+
+Phase 1: August 1-31, 2012 
+
+Phase 2: November 1-30, 2012
+
+Phase 3: February 1-28, 2013
+
+ 
+
+30 days after exercise of option
+
+30 days after exercise of option
+
+30 days after exercise of optionSOLICITATION/CONTRACT/ORDER FOR COMMERCIAL ITEM
+OFFEROR TO COMPLETE BLOCKS 12, 17, 23, 24, & 30
+2. CONTRACT NO. 3. AWARD/ EFFECTIVE DATE 4. ORDER NUMBER
+
+1. REQUISITION NUMBER
+
+PAGE
+
+OF
+
+DTRT-RVT-41-1151
+5. SOLICITATION NUMBER
+
+1
+
+5
+6. SOLICITATION ISSUE DATE
+
+DTRT57-11-R-20013
+b. TELEPHONE NUMBER (No collect calls)
+
+01/10/2011
+
+7.
+
+FOR SOLICITATION INFORMATION CALL:
+
+a. NAME
+
+8. OFFER DUE DATE/LOCAL TIME
+
+Rachelle Dorleans
+CODE
+
+617-494-2136
+10. THIS ACQUISITION IS UNRESTRICTED OR
+
+01/20/2011 1700 ET
+% FOR: EMERGING SMALL BUSINESS SOLE SOURCE
+
+9. ISSUED BY
+
+RVP-32
+
+USDOT/RITA/Volpe Center Contracts & Tech Support Services 55 Broadway RVP-32 Cambridge MA 02142-1001
+
+X SET ASIDE: X SMALL BUSINESS
+
+NAICS: SIZE STANDARD:
+
+HUBZONE SMALL BUSINESS SERVICE-DISABLED VETERANOWNED SMALL BUSINESS 13b. RATING
+
+8(A)
+
+11. DELIVERY FOR FOB DESTINATION UNLESS BLOCK IS MARKED SEE SCHEDULE 15. DELIVER TO
+
+12. DISCOUNT TERMS 13a. THIS CONTRACT IS A RATED ORDER UNDER DPAS (15 CFR 700) CODE
+
+14. METHOD OF SOLICITATION RFQ IFB CODE
+
+X RFP
+
+SAP
+
+16. ADMINISTERED BY
+
+RVP-32
+
+U.S. DOT/RITA/Volpe Center 125 Munroe Street Receiving Dock Cambridge MA 02142-1001
+
+USDOT/ RITA /Volpe Center 55 Broadway RVP-32 Cambridge MA 02142-1001
+
+17a. CONTRACTOR/ OFFEROR
+
+CODE
+
+FACILITY CODE
+
+18a. PAYMENT WILL BE MADE BY
+
+CODE
+
+TELEPHONE NO. 17b. CHECK IF REMITTANCE IS DIFFERENT AND PUT SUCH ADDRESS IN OFFER 19. ITEM NO. 20. SCHEDULE OF SUPPLIES/SERVICES 18b. SUBMIT INVOICES TO ADDRESS SHOWN IN BLOCK 18a UNLESS BLOCK BELOW IS CHECKED SEE ADDENDUM 21. QUANTITY 22. UNIT 23. UNIT PRICE 24. AMOUNT
+
+A firm fixed price contract is anticipated. Period of Performance: Date of award through February 28, 2013. Recovery:: NON-RECOVERY 0001 ATMP GIS Software Application (including travel) in accordance with the attached statement of work. Continued ...
+(Use Reverse and/or Attach Additional Sheets as Necessary)
+25. ACCOUNTING AND APPROPRIATION DATA X 27a. SOLICITATION INCORPORATES BY REFERENCE FAR 52.212-1, 52.212-4. FAR 52.212-3 AND 52.212-5 ARE ATTACHED. 27b. CONTRACT/PURCHASE ORDER INCORPORATES BY REFERENCE FAR 52.212-4. FAR 52.212-5 IS ATTACHED. 28. CONTRACTOR IS REQUIRED TO SIGN THIS DOCUMENT AND RETURN COPIES TO ISSUING OFFICE. CONTRACTOR AGREES TO FURNISH AND DELIVER ALL ITEMS SET FORTH OR OTHERWISE IDENTIFIED ABOVE AND ON ANY ADDITIONAL SHEETS SUBJECT TO THE TERMS AND CONDITIONS SPECIFIED HEREIN.
+30a. SIGNATURE OF OFFEROR/CONTRACTOR
+
+26. TOTAL AWARD AMOUNT (For Govt. Use Only)
+
+ADDENDA
+
+X ARE ARE
+
+ARE NOT ATTACHED. ARE NOT ATTACHED. OFFER
+
+ADDENDA
+
+29. AWARD OF CONTRACT REF.
+
+DATED . YOUR OFFER ON SOLICITATION (BLOCK 5), INCLUDING ANY ADDITIONS OR CHANGES WHICH ARE SET FORTH HEREIN, IS ACCEPTED AS TO ITEMS:
+31a. UNITED STATES OF AMERICA (SIGNATURE OF CONTRACTING OFFICER)
+
+30b. NAME AND TITLE OF SIGNER (Type or print)
+
+30c. DATE SIGNED
+
+31b. NAME OF CONTRACTING OFFICER (Type or print)
+
+31c. DATE SIGNED
+
+Rachelle Dorleans
+AUTHORIZED FOR LOCAL REPRODUCTION PREVIOUS EDITION IS NOT USABLE
+STANDARD FORM 1449 (REV. 3/2005) Prescribed by GSA - FAR (48 CFR) 53.212
+
+2 of
+19. ITEM NO. 20. SCHEDULE OF SUPPLIES/SERVICES 21. QUANTITY 22. UNIT 23. UNIT PRICE
+
+5
+24. AMOUNT
+
+0002
+
+AEDT GIS Software Application (including travel), August 1, 2011 - September 15, 2011 in accordance with the attached statement of work. (Option Line Item) 07/01/2011
+
+0003
+
+AEDT Review Documents (including travel) (Option Line Item) 05/01/2011 (Not Separately Priced)
+
+0003AA
+
+Phase 1 in accordance with the attached the statement of work (Option Line Item) 05/01/2011
+
+0003AB
+
+Phase 2 in accordance with the attached the statement of work. (Option Line Item) 08/15/2011
+
+0003AC
+
+Phase 3 in accordance with the attached statement of work. (Option Line Item) 03/01/2012 Continued ...
+
+32a. QUANTITY IN COLUMN 21 HAS BEEN RECEIVED INSPECTED ACCEPTED, AND CONFORMS TO THE CONTRACT, EXCEPT AS NOTED: 32c. DATE 32d. PRINTED NAME AND TITLE OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32b. SIGNATURE OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32e. MAILING ADDRESS OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32f. TELEPHONE NUMBER OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32g. E-MAIL OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+33. SHIP NUMBER
+
+34. VOUCHER NUMBER
+
+35. AMOUNT VERIFIED CORRECT FOR
+
+36. PAYMENT COMPLETE PARTIAL FINAL
+
+37. CHECK NUMBER
+
+PARTIAL
+
+FINAL 39. S/R VOUCHER NUMBER 40. PAID BY
+
+38. S/R ACCOUNT NUMBER
+
+41a. I CERTIFY THIS ACCOUNT IS CORRECT AND PROPER FOR PAYMENT 41b. SIGNATURE AND TITLE OF CERTIFYING OFFICER 41c. DATE
+
+42a. RECEIVED BY (Print)
+
+42b. RECEIVED AT (Location) 42c. DATE REC'D (YY/MM/DD) 42d. TOTAL CONTAINERS
+STANDARD FORM 1449 (REV. 3/2005) BACK
+
+CONTINUATION SHEET
+NAME OF OFFEROR OR CONTRACTOR
+
+REFERENCE NO. OF DOCUMENT BEING CONTINUED
+
+PAGE
+
+OF
+
+DTRT57-11-R-20013
+
+3
+
+5
+
+ITEM NO.
+
+(A)
+
+SUPPLIES/SERVICES
+
+(B)
+
+QUANTITY
+
+(C)
+
+(D)
+
+UNIT
+
+UNIT PRICE
+
+(E)
+
+AMOUNT
+
+(F)
+
+0004
+
+AEDT GUI Review Documents; Software Application (including travel) (Option Line Item) 06/01/2011 (Not Separately Priced)
+
+0004AA
+
+Phase 1: option period: July 1-31, 2011 in accordance with the attache statement of work. (Option Line Item) 06/01/2011
+
+0004AB
+
+Phase 2: option period: February 1-28, 2012 in accordance with the attached statement of work. (Option Line Item) 01/01/2012
+
+0004AC
+
+Phase 3: option period: June 1-30, 2012 in accordance with the attached statement of work. (Option Line Item) 05/01/2012
+
+0005
+
+AEDT Module Review Documents; Software Application (including travel) (Option Line Item) 12/01/2011 (Not Separately Priced)
+
+0005AA
+
+Phase 1: option period: January 1-31, 2012 in accordance with the attached statement of work. (Option Line Item) 12/01/2011
+
+0005AB
+
+Phase 2: option period: March 1-31, 2012 in accordance with the attached statement of work. (Option Line Item) 02/01/2012
+
+0005AC
+
+Phase 3: option period: July 1-31, 2012 in Continued ...
+
+NSN 7540-01-152-8067
+
+OPTIONAL FORM 336 (4-86) Sponsored by GSA FAR (48 CFR) 53.110
+
+CONTINUATION SHEET
+NAME OF OFFEROR OR CONTRACTOR
+
+REFERENCE NO. OF DOCUMENT BEING CONTINUED
+
+PAGE
+
+OF
+
+DTRT57-11-R-20013
+
+4
+
+5
+
+ITEM NO.
+
+(A)
+
+SUPPLIES/SERVICES
+
+(B)
+
+QUANTITY
+
+(C)
+
+(D)
+
+UNIT
+
+UNIT PRICE
+
+(E)
+
+AMOUNT
+
+(F)
+
+accordance with the attached statement of work. (Option Line Item) 06/01/2012
+
+0006
+
+TNM Software Application (including travel) (Option Line Item) 07/01/2012 (Not Separately Priced)
+
+0006AA
+
+Phase 1: option period: August 1-31, 2012 in accordance with the attached statement of work. (Option Line Item) 07/01/2012
+
+0006AB
+
+Phase 2: option period: November 1-30, 2012 in accordance with the attached statement of work. (Option Line Item) 10/01/2012
+
+0006AC
+
+Phase 3: option period: February 1-28, 2013 in accordance with the attached statement of work. (Option Line Item) 01/01/2013 In accordance with FAR Clause 52.217-1, entitled Option for Increased Quantity Separately Priced Line Items, the Government may require the delivery of the line items 0002 through 0006AC, identified in the Schedule as an optional item, in the quantity and at the price stated in the Schedule. The Contracting Officer may exercise the option by written notice to the Contractor within 7 calendar days prior to the date stated in the schedule. Delivery of added items shall continue at the same rate that like items are called for under the contract, unless the parties otherwise agree. All travel performed under this purchase order must be approved by the Contracting Officer or COTR and shall be performed in accordance with Federal Travel Regulations (FTR). The actual costs for lodging, meals, and incidental expenses Continued ...
+
+NSN 7540-01-152-8067
+
+OPTIONAL FORM 336 (4-86) Sponsored by GSA FAR (48 CFR) 53.110
+
+CONTINUATION SHEET
+NAME OF OFFEROR OR CONTRACTOR
+
+REFERENCE NO. OF DOCUMENT BEING CONTINUED
+
+PAGE
+
+OF
+
+DTRT57-11-R-20013
+
+5
+
+5
+
+ITEM NO.
+
+(A)
+
+SUPPLIES/SERVICES
+
+(B)
+
+QUANTITY
+
+(C)
+
+(D)
+
+UNIT
+
+UNIT PRICE
+
+(E)
+
+AMOUNT
+
+(F)
+
+will be considered reasonable and allowable if they do not exceed the maximum per diem rates in effect at the time of travel as set forth in the FTR. In accordance with FAR Subpart 31.205-46, a written justification must be provided to the COTR for amounts higher than the FTR maximum amounts. Travel will be reimbursed at actual costs (with a copy of the receipts for expenses)in the following categories: 1.) Airline Tickets (commercial rates) 2.) Hotel Expenses (Government rates unless pre-approved by the COTR) 3.) All Other Modes of Transportation (Taxi receipts are not required if less than $75.00) Food and other miscellaneous expenses will be reimbursed at the prevailing FTR reimbursement rates.
+
+NSN 7540-01-152-8067
+
+OPTIONAL FORM 336 (4-86) Sponsored by GSA FAR (48 CFR) 53.110
+
+

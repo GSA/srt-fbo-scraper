@@ -1,0 +1,1066 @@
+Statement of Work/Requirements
+
+for the
+
+Universal Actuator Controller Software Package
+
+for use at the
+
+US Consumer Product Safety Commission
+
+National Product Testing and Evaluation Center
+
+5 Research Place, Rockville, MD 20850
+
+
+
+General Requirements:
+
+The Consumer Product Safety Commission has a need to control multiple existing servo motors with drivers simultaneously during the evaluation and testing of a wide range of consumer products.  The Specific Requirements listed below are the minimum requirements for the universal Controller Software Package
+
+
+
+Requirements:
+
+
+
+The system shall control all the parameters available on the actuators listed below.  Any limiting factor shall be the physical motor, and never the controller hardware and / or software. 
+
+Baldor Motor and Motor Driver
+
+Motor Driver # MintDrive II. 
+
+Motor # TBD Baldor Iron Core Brushless Servo Motor, page 11 
+
+Control Techniques Motor and Motor Driver
+
+Motor Driver #EP209-B00-EN00                                
+
+Motor # NTE-355-CONS-0000                     
+
+Motor # 095E2D300BACAA1, page 24.
+
+
+
+
+
+The system may, but is not required, to interface and control a separate quasi-static tension compression machine.  
+
+MTS QTest 25 LP
+
+Computers and Network Hardware
+
+The quote shall include two computers and all the necessary cables and network hardware to connect to the actuators and motor drivers listed in Section A, and the electrical utility power. 
+
+The computers shall have the following minimum specifications.  Processor:  Intel Core 2 Duo E8400, 3GHz, RAM: 4 Gb, Hard drive: 500 Gb, Operating System: Windows 7, Monitor: 22” LCD
+
+Actuators
+
+The supplier shall include a procedure to add a new/different actuator to the system. Adding a new actuator’s characteristics to the software shall take less than 1 hour by a single trained employee.  Swapping between known actuators in software shall take less than 5 minutes. The times listed above shall not include the time required to change the physical fixtures and the physical actuator.
+
+The system shall be able to control 4 synchronized or non-synchronized actuators simultaneously through a single computer, running a single test method.  
+
+The system shall be able to control the same synchronized or non-synchronized 4 actuators simultaneously through 2 computers, running 2 independent test methods.  
+
+As an example, computer #1 runs a test method requiring a single actuator.  Computer #1 controls actuator #1, while computer #2 runs a second test method and controls actuator #2, #3, and #4.
+
+The system shall be upgradable to 8 actuators at a minimum.
+
+The system shall be upgradable to 4 computers at a minimum.
+
+The system shall have a lock-out feature so that if a program is utilizing a given actuator, that actuator is unavailable to subsequent control from other programs until the actuator is released by the original program.
+
+Transducer Electronic Data Sheet (TEDS)
+
+The system shall recognize TEDS-compliant sensors and automatically update correction factors.
+
+Hot-swapping (machine is on and software is running) of sensors is required.  The system shall not require that the computer or the software be turned-off prior to switching sensors.  When a sensor is swapped, the system shall automatically update all correction factors.
+
+An automatic loadcell shunt-calibration routine is required.  The system shall be able to conduct a loadcell shunt-calibration routine and identify loadcells that are out of calibration.  If the shunt calibration identifies a loadcell outside of specification, then the software shall notify the user on the computer screen.    
+
+The system must track all TEDS-compliant sensor’s calibration dates and notify the user on the computer screen when those sensors are no longer within the calibration date.  If the system does not come with a supplier-installed script, then a second acceptable method is to allow a user-created script.  The user-created script shall be able to be programmed within 30 minutes by an individual who attended the on-site training at the CPSC lab.
+
+All sensors’ calibration status variables shall be available for import into a user-defined report template.
+
+Sample rate
+
+The sample rate shall be adjustable.  The sample rate range shall cover at least 1 Hz – 1 kHz.    
+
+Signal Processing
+
+The system shall be able to filter the sensor signals via Bessel, Butterworth, and Elliptical filters.
+
+Inputs / Outputs
+
+Analog.  Minimum Range 4 – 20 mA and +/- 10 V.  
+
+Minimum 8 Analog inputs.  System shall be upgradable to a minimum of 16 analog inputs.
+
+Minimum 8 Analog outputs.  System shall be upgradable to a minimum of 16 analog outputs.
+
+Digital.  5V transistor-to-transistor logic (TTL) to 24V TTL minimum range.  
+
+Minimum 8 digital inputs.  System shall be upgradable to a minimum of 16 digital inputs.
+
+Minimum 8 digital outputs.  System shall be upgradable to a minimum of 16 digital outputs.
+
+There shall be at least two emergency stops.
+
+One emergency stop shall be at the computer.  
+
+If the computer emergency stop is in software, it must be visible at all times while a test is running.  Any screensaver must be disabled while the test is running.
+
+The computer emergency stop may also be a physical button located within 3 feet of the computer.
+
+Each computer shall have an additional physical emergency stop button on 20 ft cable.
+
+All inputs and outputs shall use strain-relief connectors.  The supplier shall provide the connector’s part number and the standard id number of all industry, governmental, and military standards that the connector meets.
+
+All analog and digital inputs and outputs shall have a pin-out diagram.
+
+Commands
+
+The system shall be able to create user-generated waveforms that would apply a cyclical or non-cyclical load and/or deflection to the sample.  The software shall include sine waves, ramps, dwell, square, and random waveform segments.
+
+The system shall allow the user to create new variables based on calculations from known variables.  Known variables are sensor inputs, other calculated variables, user input, or constants.
+
+The calculations shall include at a minimum, addition, subtraction, multiplication, division, sine, cosine, tangent, exponential, logarithmic, natural log, power, and time.
+
+The system shall be able to automatically identify specimen state changes via various parameters, like fractures, and deflections above a certain limit.  
+
+The state change variable shall be able to stop the test and place the actuator in ‘safe mode.’
+
+The state change variable shall also be able to be used to create a 24 volt DC output that will turn-on a warning light.
+
+The system shall be able to use If / Then statements to allow parallel paths within the test, based on a variety of sensor, calculated, and/or user-defined inputs.
+
+As an example, a test method may require a cyclic test be applied for a specific time for a specific number of cycles at a frequency within a certain tolerance.  All mechanical systems have small sources of error that may be compounded over time that would extend the length of the test past the tolerance on the test overall length.  An If / Then loop may be used to slightly adjust the frequency of each cycle so that the test completes within the test’s time’s tolerance.
+
+The system shall also have the ability to continue cycling through a specific portion of the test method until certain user-defined, calculated, and/or measured parameters are met.  This is normally called a While loop.  
+
+As an example, a fatigue life test method may require that the sample be exercised until the sample breaks.  In this case, the test method would continue until a sensor measured a fracture.
+
+The system shall be able to create user-defined prompts that interrupt a test until the user enters a value to the pop-up window.
+
+The system shall be able to stop the test and enter a ‘safe’ mode based on a variety of inputs.  The inputs may be digital or analog sensor-measured signals, calculated values, or user-inputs.
+
+The ‘safe mode’ shall be defined by the test method author.  Possible ‘safe modes’ shall include returning the actuator to a predefined load or position or stopping the motion of the actuator.
+
+The system shall be user-friendly.  Each quote shall come with step-by-step instructions with screenshots of how a user would develop two simple test methods.  
+
+In the example test method #1, the actuator’s force shall oscillate between -25 lbf and 25 lbf at 0.5 Hz along a sinusoidal waveform for 100 cycles.
+
+In example test method #2, the actuator shall quasi-statically pull a sample at 1 inch per minute in tension.  The test completes when the sample breaks or when the force reaches 200 lbf.  Then, the actuator shall return to a position 0.5 inches above the start position.
+
+Access Controls
+
+The software shall have at least 2 levels of access control.
+
+Level 1 shall be able to modify the magnitude of test variables within test methods and run tests.  Level 1 shall not be able to create new tests, add operations to a test method, delete operations from a test method, add actuators to the system, or alter existing actuator constants.
+
+Level 2 shall have full control over the software.  Level 2 shall be able to create new tests, run tests, and update current test methods by modifying, adding / deleting the operations, and add new actuators to the system.
+
+Data Export and Reports
+
+It shall also have a report generation function.  All user-defined variables, sensor data, and calculated values shall be available to be imported into a report generation template.  
+
+The report shall be readable in a Microsoft Office software package, like Word or Excel.
+
+All user-defined variables, sensor data and calculated values must be exportable into *.txt and *.csv formats.
+
+Connectivity
+
+The system must be able to send an email automatically when a test meets a certain user-defined criteria.  
+
+As an example, the system could send an email when a specimen has fractured to notify the test engineer that the system has entered ‘safe mode’ as the system waits for user input.
+
+Utilities
+
+Single phase 120 volt 20 amp electrical service is required.  CPSC will provide a dedicated circuit for the controller.
+
+If the controller hardware requires a specialized circuit breaker, filter, or different electrical service, those items shall be listed on the quote.
+
+Service
+
+Set-up
+
+The supplier shall provide on-site set-up and functional verification using the actuators listed above.
+
+Technical Service
+
+Technical service agents shall be available via phone between 10AM – 3PM EST Monday – Friday.  The technical service agents shall be able to troubleshoot hardware and software problems.  All customer service questions answered via the phone shall be at no-charge.  
+
+
+
+Verification Testing
+
+Static
+
+Connect a TEDS-compliant loadcell to the actuator.  Attach a calibrated mass to the actuator / loadcell.  Measure the weight.  The measured weight shall be within the tolerance of the loadcell.  The CPSC shall supply the calibrated mass.
+
+Measure the initial position of the actuator using calibrated calipers.  Request the actuator move 4 inches at 1 inch per minute using the control software.  Measure the final position.  The final position shall be within 1% of the nominal.  The CPSC shall supply the calibrated calipers or comparable length measurement device.
+
+Measure the initial position of the actuator using calibrated calipers.  Request the actuator move 1 inch at 16 inch per minute using the control software.  Measure the final position.  The final position shall be within 1% of the nominal.  The CPSC shall supply the calibrated calipers or comparable length measurement device.
+
+Dynamic
+
+Set the actuator to conduct a 0 to 4 inch stroke at 1 Hz for 500 cycles.  The test shall complete at 500 +/- 2 seconds.  
+
+Set the actuator to conduct -25 – 25 lbf sine wave at a 0.5 Hz for 100 cycles. The sensor output must remain within 1.5 times of the sensor’s tolerance.  As an example, if the loadcell has a tolerance of 1%, then the system must output forces within 1.5% of the loadcell’s tolerance.
+
+Synchronization
+
+The test method shall use 2 actuators.  Actuator #1 shall displace 0 – 4 inches at 1 Hz for 100 cycles.  Actuator #2 shall displace 0 – 4 inches at 4 Hz for 400 cycles.  The actuators must end at 0 inches within 0.25 seconds of each other.
+
+Training
+
+The supplier shall train at least 2 people to use the hardware and software.
+
+The training shall be at least 1 full day, and it shall cover test method creation, test method updating, how to add a new actuator the system, how to add a new TEDS and non-TEDS sensors to the system, how to create IF/Then loops, how to create While loops, actuator swapping, sensor swapping, loadcell shunt calibration, report template creation, and automatic email notifications.
+
+Timing
+
+The system shall be installed and completely operational no later than 4 months after the contract is awarded.  
+
+The on-site training class at the CPSC lab shall be scheduled to start within 4 months after the contract is awarded.
+
+
+
+
+
+
+
+
+ Format and information for submitting an offer:
+
+
+
+Please email your quote to  no later than July 24, 2012 9AM EST. 
+
+
+
+Please include the following with your quotation: 
+
+
+
+1.  Signed 1449 (page 1, blocks 30a, 30b and 30c) - Firmed Fixed Pricing for each line item - (to include all costs associated with meeting the Statement of work)
+
+2. Proposal.  Each proposal shall include: 
+
+Your proposed system that addresses ALL the requirements and services/specifications listed in the Statement of Work.
+
+Instructions and screenshots listed above in Section I.h.i, I.h.ii, and the verification tests listed in Section O.
+
+System cost, including all hardware and software.
+
+Calibration and maintenance pricing for base year and 4 one-year options.  
+
+Instructions and screenshots detailing the loadcell shunt calibration feature and the report generation feature.
+
+A block diagram showing the data and power interfaces for all components of the system, including all sensors, controllers, computers, drivers, and actuators.  The block diagram shall include all pin-outs and connector specifications.
+
+If the equipment requires a specialized circuit breaker, filter, or different electrical service, the quote shall identify the specifications of the required equipment. 
+
+
+
+Optional items attached to the proposal.
+
+Please include an option for amplitude phase control software feature or software add-on to correct the command signal for amplitude and phase errors.
+
+
+
+BASIS FOR AWARD: Award will be made subject to available funding and quoter responsibility, to the lowest price technically acceptable quoter (price will include base plus all option years). 
+
+
+
+In an effort to determine acceptability, the quoter shall submit a quote for the services specified in this RFQ that conforms to ALL specifications and requirements as indicated.  These requirements are mandatory. 
+
+
+
+Compliance with and no exceptions to the Government Clauses, terms and conditions is necessary for award.
+
+
+
+CCR registration is mandatory. CCR is a self-service database.  Vendors register and maintain their own secure information through the CCR web site.  To register and/or receive additional information please visit:  . or call 1-888-227-2423.
+
+
+
+All quotes and proposals that are submitted in response to this RFQ shall be at the expense of the contractor. 
+
+
+
+
+
+
+LC 1B   CONTRACTOR’S NOTE - DELIVERIES TO THE CPSC NATIONAL PRODUCT TESTING LABORATORY SITE, ROCKVILLE, MARYLAND
+
+
+
+Delivery Address:
+
+U.S. Consumer Product Safety Commission
+
+National Product Testing Laboratory
+
+5 Research Place
+
+Rockville, MD 20850
+
+
+
+The Consumer Product Safety Commission (CPSC) Laboratory facility is located in Rockville, MD.   Deliveries are to be made to the loading dock area which is accessible from the parking area entrance on Research Place on the east side of the building. Do not enter the parking area from Research Court on the North side of the facility as there may not be sufficient room to maneuver and back up to the loading dock area on the east side of the building.
+
+
+
+Deliveries may not be left outside the building or loading dock, unless specifically directed by appropriate CPSC staff.  All deliveries shall be considered "inside deliveries" in accordance with the instructions below.  When scheduling deliveries, the purchase order number shall always be referenced and all packages shall clearly display the Purchase Order Number on the outside of the cartons and/or packages and include the packing slip.
+
+
+
+ATTENTION GOVERNMENT VENDOR:
+
+
+
+A.  DELIVERY INSTRUCTIONS
+
+
+
+1.  DELIVERY INSTRUCTION FOR SMALL ITEMS
+
+
+
+Deliveries should be made between 9:00 a.m. and 4:00 p.m. on Monday through Friday (except holidays).  Deliveries outside these hours require prior arrangements.  
+
+
+
+Contacts:  
+
+Andrew Stadnik, Lab Director, 301-987-2037 x1 OR 301-706-6902
+
+James Hyatt, 301-987-2240
+
+Ed Krawiec, 301-987-2209 
+
+Joel Recht, 301-987-2036
+
+
+
+For the Furniture, Chair, Exercise Equipment, and IT Equipment
+
+Contacts:
+
+Jim Shupe – 301-424-6421 x156 (Jim 240-882-6775) 
+
+Douglas Brown – 301-504-7846
+
+Andy Stadnik – 301-706-6902
+
+
+
+
+
+
+
+2.  DELIVERY INSTRUCTIONS FOR LARGE OR HEAVY ITEMS:
+
+
+
+Large or heavy items must be delivered directly to the loading dock. If  delivery cannot be made to the loading dock directly or via the leveling device and requires off-loading the item from the delivery vehicle to the ground, then  deliveries of such large or heavy items should be scheduled 24 hours in advance and should be made between 9:00 a.m. and 3:00 p.m. on Monday through Friday (except holidays).  Contact information is the same as above to arrange for CPSC lift truck operators or other lifting and handling support needs for the delivery. 
+
+
+
+
+
+B.  BILLING INSTRUCTIONS
+
+   
+
+       Pursuant to the Prompt Payment Act (P.L. 97-177) and the Prompt Payment Act Amendments of 1988 (P.L. 100-496) all Federal agencies are required to pay their bills on time, pay interest penalties when payments are made late, and to take discounts only when payments are made within the discount period.  To assure compliance with the Act, vouchers and/or invoices shall be submitted on any acceptable invoice form which meets the criteria listed below.  Examples of government vouchers that may be used are the Public Vouchers for Purchase and Services Other Than Personal, SF 1034, and Continuation Sheet, SF 1035.  At a minimum, each invoice shall include:
+
+
+
+1.  The name and address of the business concern (and separate remittance address, if applicable).
+
+
+
+2.  Do NOT include Taxpayer Identification Number (TIN) on invoices sent via e-mail.
+
+
+
+3.  Invoice date.
+
+
+
+4.  Invoice number. 
+
+
+
+5.  The contract or purchase order number (see block 2 of OF347 and block 4 of SF1449 on page 1 of this order), or other authorization for delivery of goods of services.
+
+
+
+6.  Description, price and quantity of goods or services actually delivered or rendered.
+
+
+
+7.  Shipping cost terms (if applicable).
+
+
+
+8.  Payment terms.
+
+
+
+9.  Other substantiating documentation or information as specified in the contract or purchase order.
+
+
+
+10.  Name, title, phone number and mailing address of responsible official to be notified in the event of a deficient invoice.
+
+
+
+ORIGINAL VOUCHERS/INVOICES SHALL BE SENT TO:
+
+
+
+U.S. Mail
+
+CPSC Accounts Payable Branch, AMZ-160
+
+PO Box 25710
+
+Oklahoma City, Ok.  73125
+
+
+
+FEDEX
+
+CPSC Accounts Payable Branch, AMZ-160
+
+6500 MacArthur Blvd.
+
+Oklahoma City, Ok.  73169
+
+
+
+OR
+
+
+
+Via email to:
+
+
+
+
+
+
+
+Invoices not submitted in accordance with the above stated minimum requirements will not be processed for payment.  Deficient invoices will be returned to the vendor within seven days or sooner.  Standard forms 1034 and 1035 will be furnished by CPSC upon request of the contractor.
+
+
+
+Inquiries regarding payment should be directed to the Enterprise Service Center (ESC), Office of Financial Operations, Federal Aviation Administration (FAA) in Oklahoma City, 405-954-7467.
+
+
+
+C.  PAYMENT
+
+
+
+Payment will be made as close as possible to, but not later than, the 30th day after receipt of a proper invoice as defined in “Billing Instructions,” except as follows:
+
+
+
+When a time discount is taken, payment will be made as close as possible to, but not later than, the discount date.  Discounts will be taken whenever economically justified.  Otherwise, late payments will include interest penalty payments.  Inquiries regarding payment should be directed to Debbie Young at 405-954-7467 or at the U.S Mail and Fedex addresses listed above:
+
+           
+
+Complaints related to the late payment of an invoice should be directed to Eldona Canterbury at the same the same address (above) or 405-954-5351.
+
+
+
+Customer Service inquiries may be directed to Adriane Clark at AClark@cpsc.gov.
+
+
+
+
+
+
+
+
+
+D.  INSPECTION & ACCEPTANCE PERIOD
+
+
+
+Unless otherwise stated in the Statement of Work or Description, the Commission will ordinarily inspect all materials/services within seven (7) working days after the date of receipt. The CPSC representative responsible for inspecting the materials/services will transmit disapproval, if appropriate, to the contractor and the contract specialist listed below.  If other inspection information is provided in the Statement of Work or Description, it is controlling.
+
+
+
+E.  ALL OTHER INFORMATION RELATING TO THE PURCHASE ORDER
+
+
+
+Contact:    Contract Specialist – Eddie Ahmad  at  (301) 504-7884
+
+
+
+F.  PROCESSING INSTRUCTIONS FOR REQUESTING OFFICES              
+
+ 
+
+The Purchase Order/Receiving Report (Optional Form 347 or Standard Form 1449) must be completed at the time the ordered goods or services are received.  Upon receipt of the goods or services ordered, each item should be inspected, accepted (partial or final) or rejected.  The Purchase Order/Receiving Report must be appropriately completed, signed and dated by the authorized receiving official.  In addition, the acceptance block shall be completed (Blocks 32 a, b & c on the SF 1449 and column G and page 2 of the OF 347). 
+
+The receiving report shall be retained by the requesting office for confirmation when certifying invoices.
+
+
+
+G.  PROPERTY/EQUIPMENT PURCHASES
+
+
+
+In the case of Purchase Orders/Receiving Reports involving the purchase and receipt of property/equipment, a copy of the Purchase Order/Receiving Report must also be immediately forwarded directly to the Property Management Officer (Rey Garcia) in the Facilities Management Support Services Branch (Room 520).  The transmittal of Purchase Orders/Receiving Reports to the property management officer is critical to the integrity and operation of CPSC’s Property Management System.  Receiving officials should also forward copies to their local property officer/property custodian consistent with local office procedures.   
+
+
+
+
+
+52.212-1  Instructions to Offerors—Commercial Items. 
+
+ (Feb 2012) 
+
+(a) North American Industry Classification System (NAICS) code and small business size standard. The NAICS code and small business size standard for this acquisition appear in Block 10 of the solicitation cover sheet (). However, the small business size standard for a concern which submits an offer in its own name, but which proposes to furnish an item which it did not itself manufacture, is 500 employees. 
+
+(b) Submission of offers. Submit signed and dated offers to the office specified in this solicitation at or before the exact time specified in this solicitation. Offers may be submitted on the , letterhead stationery, or as otherwise specified in the solicitation. As a minimum, offers must show— 
+
+(1) The solicitation number; 
+
+(2) The time specified in the solicitation for receipt of offers; 
+
+(3) The name, address, and telephone number of the offeror; 
+
+(4) A technical description of the items being offered in sufficient detail to evaluate compliance with the requirements in the solicitation. This may include product literature, or other documents, if necessary; 
+
+(5) Terms of any express warranty; 
+
+(6) Price and any discount terms; 
+
+(7) “Remit to” address, if different than mailing address; 
+
+(8) A completed copy of the representations and certifications at FAR  (see FAR (b) for those representations and certifications that the offeror shall complete electronically); 
+
+(9) Acknowledgment of Solicitation Amendments; 
+
+(10) Past performance information, when included as an evaluation factor, to include recent and relevant contracts for the same or similar items and other references (including contract numbers, points of contact with telephone numbers and other relevant information); and 
+
+(11) If the offer is not submitted on the , include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation. Offers that fail to furnish required representations or information, or reject the terms and conditions of the solicitation may be excluded from consideration. 
+
+(c) Period for acceptance of offers. The offeror agrees to hold the prices in its offer firm for 30 calendar days from the date specified for receipt of offers, unless another time period is specified in an addendum to the solicitation. 
+
+(d) Product samples. When required by the solicitation, product samples shall be submitted at or prior to the time specified for receipt of offers. Unless otherwise specified in this solicitation, these samples shall be submitted at no expense to the Government, and returned at the sender’s request and expense, unless they are destroyed during preaward testing. 
+
+(e) Multiple offers. Offerors are encouraged to submit multiple offers presenting alternative terms and conditions or commercial items for satisfying the requirements of this solicitation. Each offer submitted will be evaluated separately. 
+
+(f) Late submissions, modifications, revisions, and withdrawals of offers. 
+
+(1) Offerors are responsible for submitting offers, and any modifications, revisions, or withdrawals, so as to reach the Government office designated in the solicitation by the time specified in the solicitation. If no time is specified in the solicitation, the time for receipt is 4:30 p.m., local time, for the designated Government office on the date that offers or revisions are due. 
+
+(2)(i) Any offer, modification, revision, or withdrawal of an offer received at the Government office designated in the solicitation after the exact time specified for receipt of offers is “late” and will not be considered unless it is received before award is made, the Contracting Officer determines that accepting the late offer would not unduly delay the acquisition; and— 
+
+(A) If it was transmitted through an electronic commerce method authorized by the solicitation, it was received at the initial point of entry to the Government infrastructure not later than 5:00 p.m. one working day prior to the date specified for receipt of offers; or 
+
+(B) There is acceptable evidence to establish that it was received at the Government installation designated for receipt of offers and was under the Government’s control prior to the time set for receipt of offers; or 
+
+(C) If this solicitation is a request for proposals, it was the only proposal received. 
+
+(ii) However, a late modification of an otherwise successful offer, that makes its terms more favorable to the Government, will be considered at any time it is received and may be accepted. 
+
+(3) Acceptable evidence to establish the time of receipt at the Government installation includes the time/date stamp of that installation on the offer wrapper, other documentary evidence of receipt maintained by the installation, or oral testimony or statements of Government personnel. 
+
+(4) If an emergency or unanticipated event interrupts normal Government processes so that offers cannot be received at the Government office designated for receipt of offers by the exact time specified in the solicitation, and urgent Government requirements preclude amendment of the solicitation or other notice of an extension of the closing date, the time specified for receipt of offers will be deemed to be extended to the same time of day specified in the solicitation on the first work day on which normal Government processes resume. 
+
+(5) Offers may be withdrawn by written notice received at any time before the exact time set for receipt of offers. Oral offers in response to oral solicitations may be withdrawn orally. If the solicitation authorizes facsimile offers, offers may be withdrawn via facsimile received at any time before the exact time set for receipt of offers, subject to the conditions specified in the solicitation concerning facsimile offers. An offer may be withdrawn in person by an offeror or its authorized representative if, before the exact time set for receipt of offers, the identity of the person requesting withdrawal is established and the person signs a receipt for the offer. 
+
+(g) Contract award (not applicable to Invitation for Bids). The Government intends to evaluate offers and award a contract without discussions with offerors. Therefore, the offeror’s initial offer should contain the offeror’s best terms from a price and technical standpoint. However, the Government reserves the right to conduct discussions if later determined by the Contracting Officer to be necessary. The Government may reject any or all offers if such action is in the public interest; accept other than the lowest offer; and waive informalities and minor irregularities in offers received. 
+
+(h) Multiple awards. The Government may accept any item or group of items of an offer, unless the offeror qualifies the offer by specific limitations. Unless otherwise provided in the Schedule, offers may not be submitted for quantities less than those specified. The Government reserves the right to make an award on any item for a quantity less than the quantity offered, at the unit prices offered, unless the offeror specifies otherwise in the offer. 
+
+(i) Availability of requirements documents cited in the solicitation.  
+
+(1)(i) The GSA Index of Federal Specifications, Standards and Commercial Item Descriptions, FPMR Part 101-29, and copies of specifications, standards, and commercial item descriptions cited in this solicitation may be obtained for a fee by submitting a request to— 
+
+GSA Federal Supply Service Specifications Section
+Suite 8100
+470 East L’Enfant Plaza, SW
+Washington, DC 20407 
+
+Telephone (202) 619-8925
+Facsimile (202) 619-8978. 
+
+(ii) If the General Services Administration, Department of Agriculture, or Department of Veterans Affairs issued this solicitation, a single copy of specifications, standards, and commercial item descriptions cited in this solicitation may be obtained free of charge by submitting a request to the addressee in paragraph (i)(1)(i) of this provision. Additional copies will be issued for a fee. 
+
+(2) Most unclassified Defense specifications and standards may be downloaded from the following ASSIST websites: 
+
+(i) ASSIST (). 
+
+(ii) Quick Search (). 
+
+(iii) ASSISTdocs.com (). 
+
+(3) Documents not available from ASSIST may be ordered from the Department of Defense Single Stock Point (DoDSSP) by— 
+
+(i) Using the ASSIST Shopping Wizard (); 
+
+(ii) Phoning the DoDSSP Customer Service Desk (215) 697-2179, Mon-Fri, 0730 to 1600 EST; or 
+
+(iii) Ordering from DoDSSP, Building 4, Section D, 700 Robbins Avenue, Philadelphia, PA 19111-5094, Telephone (215) 697-2667/2179, Facsimile (215) 697-1462. 
+
+(4) Nongovernment (voluntary) standards must be obtained from the organization responsible for their preparation, publication, or maintenance. 
+
+(j) Data Universal Numbering System (DUNS) Number. (Applies to all offers exceeding $3,000, and offers of $3,000 or less if the solicitation requires the Contractor to be registered in the Central Contractor Registration (CCR) database.) The offeror shall enter, in the block with its name and address on the cover page of its offer, the annotation “DUNS” or “DUNS+4” followed by the DUNS or DUNS+4 number that identifies the offeror’s name and address. The DUNS+4 is the DUNS number plus a 4-character suffix that may be assigned at the discretion of the offeror to establish additional CCR records for identifying alternative Electronic Funds Transfer (EFT) accounts (see FAR ) for the same concern. If the offeror does not have a DUNS number, it should contact Dun and Bradstreet directly to obtain one. An offeror within the United States may contact Dun and Bradstreet by calling 1-866-705-5711 or via the internet at . An offeror located outside the United States must contact the local Dun and Bradstreet office for a DUNS number. The offeror should indicate that it is an offeror for a Government contract when contacting the local Dun and Bradstreet office. 
+
+(k) Central Contractor Registration. Unless exempted by an addendum to this solicitation, by submission of an offer, the offeror acknowledges the requirement that a prospective awardee shall be registered in the CCR database prior to award, during performance and through final payment of any contract resulting from this solicitation. If the Offeror does not become registered in the CCR database in the time prescribed by the Contracting Officer, the Contracting Officer will proceed to award to the next otherwise successful registered Offeror. Offerors may obtain information on registration and annual confirmation requirements via the CCR database accessed through  or by calling 1-888-227-2423 or 269-961-5757. 
+
+(l) Debriefing. If a post-award debriefing is given to requesting offerors, the Government shall disclose the following information, if applicable: 
+
+(1) The agency’s evaluation of the significant weak or deficient factors in the debriefed offeror’s offer. 
+
+(2) The overall evaluated cost or price and technical rating of the successful and the debriefed offeror and past performance information on the debriefed offeror. 
+
+(3) The overall ranking of all offerors, when any ranking was developed by the agency during source selection. 
+
+(4) A summary of the rationale for award; 
+
+(5) For acquisitions of commercial items, the make and model of the item to be delivered by the successful offeror. 
+
+(6) Reasonable responses to relevant questions posed by the debriefed offeror as to whether source-selection procedures set forth in the solicitation, applicable regulations, and other applicable authorities were followed by the agency. 
+
+(End of provision) 
+
+52.212-3  Offeror Representations and Certifications—Commercial Items is hereby incorporated by reference.
+
+
+
+52.212-4  Contract Terms and Conditions—Commercial Items. 
+
+ (Feb 2012) 
+
+(a) Inspection/Acceptance. The Contractor shall only tender for acceptance those items that conform to the requirements of this contract. The Government reserves the right to inspect or test any supplies or services that have been tendered for acceptance. The Government may require repair or replacement of nonconforming supplies or reperformance of nonconforming services at no increase in contract price. If repair/replacement or reperformance will not correct the defects or is not possible, the Government may seek an equitable price reduction or adequate consideration for acceptance of nonconforming supplies or services. The Government must exercise its post-acceptance rights— 
+
+(1) Within a reasonable time after the defect was discovered or should have been discovered; and 
+
+(2) Before any substantial change occurs in the condition of the item, unless the change is due to the defect in the item. 
+
+(b) Assignment. The Contractor or its assignee may assign its rights to receive payment due as a result of performance of this contract to a bank, trust company, or other financing institution, including any Federal lending agency in accordance with the Assignment of Claims Act (). However, when a third party makes payment (e.g., use of the Governmentwide commercial purchase card), the Contractor may not assign its rights to receive payment under this contract. 
+
+(c) Changes. Changes in the terms and conditions of this contract may be made only by written agreement of the parties. 
+
+(d) Disputes. This contract is subject to the Contract Disputes Act of 1978, as amended (). Failure of the parties to this contract to reach agreement on any request for equitable adjustment, claim, appeal or action arising under or relating to this contract shall be a dispute to be resolved in accordance with the clause at FAR , Disputes, which is incorporated herein by reference. The Contractor shall proceed diligently with performance of this contract, pending final resolution of any dispute arising under the contract. 
+
+(e) Definitions. The clause at FAR , Definitions, is incorporated herein by reference. 
+
+(f) Excusable delays. The Contractor shall be liable for default unless nonperformance is caused by an occurrence beyond the reasonable control of the Contractor and without its fault or negligence such as, acts of God or the public enemy, acts of the Government in either its sovereign or contractual capacity, fires, floods, epidemics, quarantine restrictions, strikes, unusually severe weather, and delays of common carriers. The Contractor shall notify the Contracting Officer in writing as soon as it is reasonably possible after the commencement of any excusable delay, setting forth the full particulars in connection therewith, shall remedy such occurrence with all reasonable dispatch, and shall promptly give written notice to the Contracting Officer of the cessation of such occurrence. 
+
+(g) Invoice. 
+
+(1) The Contractor shall submit an original invoice and three copies (or electronic invoice, if authorized) to the address designated in the contract to receive invoices. An invoice must include— 
+
+(i) Name and address of the Contractor; 
+
+(ii) Invoice date and number; 
+
+(iii) Contract number, contract line item number and, if applicable, the order number; 
+
+(iv) Description, quantity, unit of measure, unit price and extended price of the items delivered; 
+
+(v) Shipping number and date of shipment, including the bill of lading number and weight of shipment if shipped on Government bill of lading; 
+
+(vi) Terms of any discount for prompt payment offered; 
+
+(vii) Name and address of official to whom payment is to be sent; 
+
+(viii) Name, title, and phone number of person to notify in event of defective invoice; and 
+
+(ix) Taxpayer Identification Number (TIN). The Contractor shall include its TIN on the invoice only if required elsewhere in this contract. 
+
+(x) Electronic funds transfer (EFT) banking information. 
+
+(A) The Contractor shall include EFT banking information on the invoice only if required elsewhere in this contract. 
+
+(B) If EFT banking information is not required to be on the invoice, in order for the invoice to be a proper invoice, the Contractor shall have submitted correct EFT banking information in accordance with the applicable solicitation provision, contract clause (e.g., , Payment by Electronic Funds Transfer—Central Contractor Registration, or , Payment by Electronic Funds Transfer—Other Than Central Contractor Registration), or applicable agency procedures. 
+
+(C) EFT banking information is not required if the Government waived the requirement to pay by EFT. 
+
+(2) Invoices will be handled in accordance with the Prompt Payment Act () and Office of Management and Budget (OMB) prompt payment regulations at 5 CFR Part 1315. 
+
+(h) Patent indemnity. The Contractor shall indemnify the Government and its officers, employees and agents against liability, including costs, for actual or alleged direct or contributory infringement of, or inducement to infringe, any United States or foreign patent, trademark or copyright, arising out of the performance of this contract, provided the Contractor is reasonably notified of such claims and proceedings. 
+
+(i) Payment.— 
+
+(1) Items accepted. Payment shall be made for items accepted by the Government that have been delivered to the delivery destinations set forth in this contract. 
+
+(2) Prompt payment. The Government will make payment in accordance with the Prompt Payment Act () and prompt payment regulations at 5 CFR Part 1315. 
+
+(3) Electronic Funds Transfer (EFT). If the Government makes payment by EFT, see (b) for the appropriate EFT clause. 
+
+(4) Discount. In connection with any discount offered for early payment, time shall be computed from the date of the invoice. For the purpose of computing the discount earned, payment shall be considered to have been made on the date which appears on the payment check or the specified payment date if an electronic funds transfer payment is made. 
+
+(5) Overpayments. If the Contractor becomes aware of a duplicate contract financing or invoice payment or that the Government has otherwise overpaid on a contract financing or invoice payment, the Contractor shall— 
+
+(i) Remit the overpayment amount to the payment office cited in the contract along with a description of the overpayment including the— 
+
+(A) Circumstances of the overpayment (e.g., duplicate payment, erroneous payment, liquidation errors, date(s) of overpayment); 
+
+(B) Affected contract number and delivery order number, if applicable; 
+
+(C) Affected contract line item or subline item, if applicable; and 
+
+(D) Contractor point of contact. 
+
+(ii) Provide a copy of the remittance and supporting documentation to the Contracting Officer. 
+
+(6) Interest. 
+
+(i) All amounts that become payable by the Contractor to the Government under this contract shall bear simple interest from the date due until paid unless paid within 30 days of becoming due. The interest rate shall be the interest rate established by the Secretary of the Treasury as provided in Section 611 of the Contract Disputes Act of 1978 (Public Law 95-563), which is applicable to the period in which the amount becomes due, as provided in (i)(6)(v) of this clause, and then at the rate applicable for each six-month period as fixed by the Secretary until the amount is paid. 
+
+(ii) The Government may issue a demand for payment to the Contractor upon finding a debt is due under the contract. 
+
+(iii) Final decisions. The Contracting Officer will issue a final decision as required by  if— 
+
+(A) The Contracting Officer and the Contractor are unable to reach agreement on the existence or amount of a debt within 30 days; 
+
+(B) The Contractor fails to liquidate a debt previously demanded by the Contracting Officer within the timeline specified in the demand for payment unless the amounts were not repaid because the Contractor has requested an installment payment agreement; or 
+
+(C) The Contractor requests a deferment of collection on a debt previously demanded by the Contracting Officer (see ). 
+
+(iv) If a demand for payment was previously issued for the debt, the demand for payment included in the final decision shall identify the same due date as the original demand for payment. 
+
+(v) Amounts shall be due at the earliest of the following dates: 
+
+(A) The date fixed under this contract. 
+
+(B) The date of the first written demand for payment, including any demand for payment resulting from a default termination. 
+
+(vi) The interest charge shall be computed for the actual number of calendar days involved beginning on the due date and ending on— 
+
+(A) The date on which the designated office receives payment from the Contractor; 
+
+(B) The date of issuance of a Government check to the Contractor from which an amount otherwise payable has been withheld as a credit against the contract debt; or 
+
+(C) The date on which an amount withheld and applied to the contract debt would otherwise have become payable to the Contractor. 
+
+(vii) The interest charge made under this clause may be reduced under the procedures prescribed in  of the Federal Acquisition Regulation in effect on the date of this contract. 
+
+(j) Risk of loss. Unless the contract specifically provides otherwise, risk of loss or damage to the supplies provided under this contract shall remain with the Contractor until, and shall pass to the Government upon: 
+
+(1) Delivery of the supplies to a carrier, if transportation is f.o.b. origin; or 
+
+(2) Delivery of the supplies to the Government at the destination specified in the contract, if transportation is f.o.b. destination. 
+
+(k) Taxes. The contract price includes all applicable Federal, State, and local taxes and duties. 
+
+(l) Termination for the Government’s convenience. The Government reserves the right to terminate this contract, or any part hereof, for its sole convenience. In the event of such termination, the Contractor shall immediately stop all work hereunder and shall immediately cause any and all of its suppliers and subcontractors to cease work. Subject to the terms of this contract, the Contractor shall be paid a percentage of the contract price reflecting the percentage of the work performed prior to the notice of termination, plus reasonable charges the Contractor can demonstrate to the satisfaction of the Government using its standard record keeping system, have resulted from the termination. The Contractor shall not be required to comply with the cost accounting standards or contract cost principles for this purpose. This paragraph does not give the Government any right to audit the Contractor’s records. The Contractor shall not be paid for any work performed or costs incurred which reasonably could have been avoided. 
+
+(m) Termination for cause. The Government may terminate this contract, or any part hereof, for cause in the event of any default by the Contractor, or if the Contractor fails to comply with any contract terms and conditions, or fails to provide the Government, upon request, with adequate assurances of future performance. In the event of termination for cause, the Government shall not be liable to the Contractor for any amount for supplies or services not accepted, and the Contractor shall be liable to the Government for any and all rights and remedies provided by law. If it is determined that the Government improperly terminated this contract for default, such termination shall be deemed a termination for convenience. 
+
+(n) Title. Unless specified elsewhere in this contract, title to items furnished under this contract shall pass to the Government upon acceptance, regardless of when or where the Government takes physical possession. 
+
+(o) Warranty. The Contractor warrants and implies that the items delivered hereunder are merchantable and fit for use for the particular purpose described in this contract. 
+
+(p) Limitation of liability. Except as otherwise provided by an express warranty, the Contractor will not be liable to the Government for consequential damages resulting from any defect or deficiencies in accepted items. 
+
+(q) Other compliances. The Contractor shall comply with all applicable Federal, State and local laws, executive orders, rules and regulations applicable to its performance under this contract. 
+
+(r) Compliance with laws unique to Government contracts. The Contractor agrees to comply with  relating to limitations on the use of appropriated funds to influence certain Federal contracts;  relating to officials not to benefit; , et seq., Contract Work Hours and Safety Standards Act; , Anti-Kickback Act of 1986;  and  relating to whistleblower protections; , Fly American; and  relating to procurement integrity. 
+
+(s) Order of precedence. Any inconsistencies in this solicitation or contract shall be resolved by giving precedence in the following order: 
+
+(1) The schedule of supplies/services. 
+
+(2) The Assignments, Disputes, Payments, Invoice, Other Compliances, and Compliance with Laws Unique to Government Contracts paragraphs of this clause. 
+
+(3) The clause at . 
+
+(4) Addenda to this solicitation or contract, including any license agreements for computer software. 
+
+(5) Solicitation provisions if this is a solicitation. 
+
+(6) Other paragraphs of this clause. 
+
+(7) The . 
+
+(8) Other documents, exhibits, and attachments. 
+
+(9) The specification. 
+
+(t) Central Contractor Registration (CCR). 
+
+(1) Unless exempted by an addendum to this contract, the Contractor is responsible during performance and through final payment of any contract for the accuracy and completeness of the data within the CCR database, and for any liability resulting from the Government’s reliance on inaccurate or incomplete data. To remain registered in the CCR database after the initial registration, the Contractor is required to review and update on an annual basis from the date of initial registration or subsequent updates its information in the CCR database to ensure it is current, accurate and complete. Updating information in the CCR does not alter the terms and conditions of this contract and is not a substitute for a properly executed contractual document. 
+
+(2)(i) If a Contractor has legally changed its business name, “doing business as” name, or division name (whichever is shown on the contract), or has transferred the assets used in performing the contract, but has not completed the necessary requirements regarding novation and change-of-name agreements in FAR , the Contractor shall provide the responsible Contracting Officer a minimum of one business day’s written notification of its intention to (A) change the name in the CCR database; (B) comply with the requirements of ; and (C) agree in writing to the timeline and procedures specified by the responsible Contracting Officer. 
+
+The Contractor must provide with the notification sufficient documentation to support the legally changed name. 
+
+(ii) If the Contractor fails to comply with the requirements of paragraph (t)(2)(i) of this clause, or fails to perform the agreement at paragraph (t)(2)(i)(C) of this clause, and, in the absence of a properly executed novation or change-of-name agreement, the CCR information that shows the Contractor to be other than the Contractor indicated in the contract will be considered to be incorrect information within the meaning of the “Suspension of Payment” paragraph of the electronic funds transfer (EFT) clause of this contract. 
+
+(3) The Contractor shall not change the name or address for EFT payments or manual payments, as appropriate, in the CCR record to reflect an assignee for the purpose of assignment of claims (see , Assignment of Claims). Assignees shall be separately registered in the CCR database. Information provided to the Contractor’s CCR record that indicates payments, including those made by EFT, to an ultimate recipient other than that Contractor will be considered to be incorrect information within the meaning of the “Suspension of payment” paragraph of the EFT clause of this contract. 
+
+(4) Offerors and Contractors may obtain information on registration and annual confirmation requirements via CCR accessed through  or by calling 1-888-227-2423 or 269-961-5757. 
+
+(End of clause) 
+
+52.212-5  Contract Terms and Conditions Required to Implement Statutes or Executive Orders—Commercial Items. 
+
+(Apr 2011) 
+
+(a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract by reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items: 
+
+(1) , Combating Trafficking in Persons (Feb 2009) (). 
+
+___Alternate I (Aug 2007) of  (). 
+
+(2) , Protest After Award (Aug 1996) (). 
+
+(3) , Applicable Law for Breach of Contract Claim (Oct 2004) (Pub. L. 108-77, 108-78). 
+
+(b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: 
+
+__ (1) , Restrictions on Subcontractor Sales to the Government (Sept 2006), with Alternate I (Oct 1995) ( and ). 
+
+__ (2) , Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 ()). 
+
+__ (3) , Whistleblower Protections under the American Recovery and Reinvestment Act of 2009 (June 2010) (Section 1553 of Pub. L. 111-5). (Applies to contracts funded by the American Recovery and Reinvestment Act of 2009.) 
+
+__ (4) , Reporting Executive Compensation and First-Tier Subcontract Awards (Jul 2010) (Pub. L. 109-282) (). 
+
+__ (5) , American Recovery and Reinvestment Act—Reporting Requirements (Jul 2010) (Pub. L. 111-5). 
+
+__ (6) , Protecting the Government’s Interest When Subcontracting with Contractors Debarred, Suspended, or Proposed for Debarment (DEC 2010) ( note). (Applies to contracts over $30,000). (Not applicable to subcontracts for the acquisition of commercially available off-the-shelf items). 
+
+__ (7) , Notice of Total HUBZone Set-Aside or Sole-Source Award (Jan 2011) (). 
+
+__ (8) , Notice of Price Evaluation Preference for HUBZone Small Business Concerns (Jan 2011) (if the offeror elects to waive the preference, it shall so indicate in its offer) (). 
+
+__ (9) [Reserved] 
+
+__ (10)(i)  , Notice of Total Small Business Set-Aside (June 2003) (). 
+
+__ (ii) Alternate I (Oct 1995) of . 
+
+__ (iii) Alternate II (Mar 2004) of . 
+
+__ (11)(i)  , Notice of Partial Small Business Set-Aside (June 2003) (). 
+
+__ (ii) Alternate I (Oct 1995) of . 
+
+__ (iii) Alternate II (Mar 2004) of . 
+
+__ (12) , Utilization of Small Business Concerns (Jan 2011) ( and (3)). 
+
+__ (13)(i)  , Small Business Subcontracting Plan (Jan 2011) (). 
+
+__ (ii) Alternate I (Oct 2001) of . 
+
+__ (iii) Alternate II (Oct 2001) of . 
+
+__ (iv) Alternate III (Jul 2010) of . 
+
+__ (14) , Limitations on Subcontracting (Dec 1996) (). 
+
+__ (15) , Liquidated Damages—Subcon-tracting Plan (Jan 1999) (). 
+
+__ (16)(i)  , Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns (Oct 2008) () (if the offeror elects to waive the adjustment, it shall so indicate in its offer). 
+
+__ (ii) Alternate I (June 2003) of . 
+
+__ (17) , Small Disadvantaged Business Participation Program—Disadvantaged Status and Reporting (Dec 2010) (Pub. L. 103-355, section 7102, and ). 
+
+__ (18) , Small Disadvantaged Business Participation Program— Incentive Subcontracting (Oct 2000) (Pub. L. 103-355, section 7102, and ). 
+
+__ (19) , Notice of Total Service-Disabled Veteran-Owned Small Business Set-Aside (May 2004) (). 
+
+__ (20)  52.219-28, Post Award Small Business Program Rerepresentation (Apr 2009) (). 
+
+__ (21)  Notice of Total Set-Aside for Economically Disadvantaged Women-Owned Small Business (EDWOSB) Concerns (Apr 2011). 
+
+__ (22)  Notice of Total Set-Aside for Women-Owned Small Business (WOSB) Concerns Eligible Under the WOSB Program (Apr 2011). 
+
+__ (23) , Convict Labor (June 2003) (E.O. 11755). 
+
+_X_ (24) , Child Labor—Cooperation with Authorities and Remedies (Jul 2010) (E.O. 13126). 
+
+_X_ (25) , Prohibition of Segregated Facilities (Feb 1999). 
+
+_X_ (26) , Equal Opportunity (Mar 2007) (E.O. 11246). 
+
+_X_ (27) , Equal Opportunity for Veterans (Sep 2010)(38 U.S.C. 4212). 
+
+_X_ (28) , Affirmative Action for Workers with Disabilities (Oct 2010) (). 
+
+__ (29) , Employment Reports on Veterans (Sep 2010) (38 U.S.C. 4212). 
+
+__ (30) , Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496). 
+
+__ (31) , Employment Eligibility Verification (Jan 2009). (Executive Order 12989). (Not applicable to the acquisition of commercially available off-the-shelf items or certain other types of commercial items as prescribed in .) 
+
+__ (32)(i)  , Estimate of Percentage of Recovered Material Content for EPA–Designated Items (May 2008) (). (Not applicable to the acquisition of commercially available off-the-shelf items.) 
+
+__ (ii) Alternate I (May 2008) of  (). (Not applicable to the acquisition of commercially available off-the-shelf items.) 
+
+__ (33) , Energy Efficiency in Energy-Consuming Products (Dec 2007) (). 
+
+__ (34)(i)  , IEEE 1680 Standard for the Environmental Assessment of Personal Computer Products (Dec 2007) (E.O. 13423). 
+
+__ (ii) Alternate I (Dec 2007) of . 
+
+__ (35) , Contractor Policy to Ban Text Messaging While Driving (Sep 2010) (E.O. 13513). 
+
+__ (36) , Buy American Act—Supplies (Feb 2009) (). 
+
+__ (37)(i)  , Buy American Act—Free Trade Agreements—Israeli Trade Act (June 2009) (,  note,  note,  note, Pub. L. 108-77, 108-78, 108-286, 108-302, 109-53, 109-169, 109-283, and 110-138). 
+
+__ (ii) Alternate I (Jan 2004) of . 
+
+__ (iii) Alternate II (Jan 2004) of . 
+
+__ (38) , Trade Agreements (Aug 2009) (, et seq.,  note). 
+
+__ (39) , Restrictions on Certain Foreign Purchases (June 2008) (E.O.’s, proclamations, and statutes administered by the Office of Foreign Assets Control of the Department of the Treasury). 
+
+__ (40) , Notice of Disaster or Emergency Area Set-Aside (Nov 2007) (). 
+
+__ (41) , Restrictions on Subcontracting Outside Disaster or Emergency Area (Nov 2007) (). 
+
+__ (42) , Terms for Financing of Purchases of Commercial Items (Feb 2002) (, ). 
+
+__ (43) , Installment Payments for Commercial Items (Oct 1995) (, ). 
+
+_X_ (44) , Payment by Electronic Funds Transfer—Central Contractor Registration (Oct 2003) (). 
+
+__ (45) , Payment by Electronic Funds Transfer—Other than Central Contractor Registration (May 1999) (). 
+
+__ (46) , Payment by Third Party (Feb 2010) (). 
+
+__ (47) , Privacy or Security Safeguards (Aug 1996) (). 
+
+__ (48)(i)  , Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) ( and ). 
+
+__ (ii) Alternate I (Apr 2003) of . 
+
+(c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: 
+
+[Contracting Officer check as appropriate.] 
+
+_X_ (1) , Service Contract Act of 1965 (Nov 2007) (, et seq.). 
+
+__ (2) , Statement of Equivalent Rates for Federal Hires (May 1989) ( and , et seq.). 
+
+__ (3) , Fair Labor Standards Act and Service Contract Act—Price Adjustment (Multiple Year and Option Contracts) (Sep 2009) ( and , et seq.). 
+
+__ (4) , Fair Labor Standards Act and Service Contract Act—Price Adjustment (Sep 2009) ( and , et seq.). 
+
+__ (5) , Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment—Requirements (Nov 2007) (, et seq.). 
+
+__ (6) , Exemption from Application of the Service Contract Act to Contracts for Certain Services—Requirements (Feb 2009) (, et seq.). 
+
+__ (7) , Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247). 
+
+__ (8) , Accepting and Dispensing of $1 Coin (Sept 2008) (). 
+
+(d)  Comptroller General Examination of Record. The Contractor shall comply with the provisions of this paragraph (d) if this contract was awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at , Audit and Records—Negotiation. 
+
+(1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right to examine any of the Contractor’s directly pertinent records involving transactions related to this contract. 
+
+(2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination, audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR , Contractor Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records relating to the work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such appeals, litigation, or claims are finally resolved. 
+
+(3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary course of business or pursuant to a provision of law. 
+
+(e)(1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c), and (d) of this clause, the Contractor is not required to flow down any FAR clause, other than those in this paragraph (e)(1) in a subcontract for commercial items. Unless otherwise indicated below, the extent of the flow down shall be as required by the clause— 
+
+(i) , Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 ()). 
+
+(ii) , Utilization of Small Business Concerns (Dec 2010) ( and (3)), in all subcontracts that offer further subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $650,000 ($1.5 million for construction of any public facility), the subcontractor must include  in lower tier subcontracts that offer subcontracting opportunities. 
+
+(iii) [Reserved] 
+
+(iv) , Equal Opportunity (Mar 2007) (E.O. 11246). 
+
+(v) , Equal Opportunity for Veterans (Sep 2010) (). 
+
+(vi) , Affirmative Action for Workers with Disabilities (Oct 2010) (). 
+
+(vii) , Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496). Flow down required in accordance with paragraph (f) of FAR clause . 
+
+(viii) , Service Contract Act of 1965 (Nov 2007) (, et seq.). 
+
+(ix) , Combating Trafficking in Persons (Feb 2009) (). 
+
+___Alternate I (Aug 2007) of  (). 
+
+(x) , Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment-Requirements (Nov 2007) (, et seq.). 
+
+(xi) , Exemption from Application of the Service Contract Act to Contracts for Certain Services-Requirements (Feb 2009) (, et seq.). 
+
+(xii) , Employment Eligibility Verification (Jan 2009). 
+
+(xiii) , Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247). Flow down required in accordance with paragraph (e) of FAR clause . 
+
+(xiv) , Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) ( and ). Flow down required in accordance with paragraph (d) of FAR clause . 
+
+(2) While not required, the contractor may include in its subcontracts for commercial items a minimal number of additional clauses necessary to satisfy its contractual obligations. 
+
+
+
+
+
+LC 5 Contracting Officer's Representative (COR) Designation
+
+
+
+a.  The following individual has been designated at the Government’s COR for this contract:
+
+Name: Ian Hall
+
+Telephone: 301-987-2323
+
+
+
+b.  The CPSC COR is responsible for:
+
+
+
+(1) monitoring the Contractor's technical progress, including surveillance and assessment of performance, and notifying the Contracting Officer within one week when deliverables (including reports) are not received on schedule in accordance with the prescribed delivery schedule.
+
+
+
+(2) performing technical evaluation as required, assisting the Contractor in the resolution of technical problems encountered during performance; and
+
+
+
+(3) inspection and acceptance of all items required by the contract.
+
+
+
+c.  The COR is not authorized to and shall not:
+
+
+
+(1)  make changes in scope of work, contract schedules, and/or specifications to meet changes and requirements,
+
+
+
+(2)  direct or negotiate any change in the terms, conditions, or amounts cited in the contract; and
+
+
+
+(3)  take any action that commits the Government or could lead to a claim against the Government.
+
+
+
+d. A clear distinction is made between Government and Contractor personnel.  No employer-employee relationship will occur between government employees and contractor employees.  Contractor employees must report directly to their company (employer) and shall not report to Government personnel.  
+
+
+
+
+
+
+

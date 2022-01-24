@@ -1,0 +1,747 @@
+
+
+|REQUEST FOR QUOTATION             |This RFQ            |X                                               |is                                   |                        |
+|PIFSC-10-030                      |7/20/10             |NFFR7400-10-                                    |                                     |âââââ                   |
+|5a. ISSUED BY                                                                                            |6. DELIVERY BY (Date)                                         |
+|                  NOAA, NMFS, PIFSC                                                                      |                                                              |
+|                  2570 DOLE STREET                                                                       |7. DELIVERY                                                   |
+|                  HONOLULU, HI  96822                                                                    |                                                              |
+|                                                                                                         |X  |FOB Destination           |â  |Other (See Schedule)       |
+|5b. FOR MORE INFORMATION CALL (No Collect Calls)                                                         |9. DESTINATION    FT730031                                    |
+|NAME                                                                  |Area Code    |Telephone           |a. NAME OF CONSIGNEE                                          |
+|    Bonnie Oshiro                                          |BXO      |808          |983-5356            |NMFS ECOSYSTEM & OCEANOGRAPHY DIV                             |
+|8.    TO    âââââ                                                                                        |b. STREET ADDRESS                                             |
+|a. NAME                                             |b. COMPANY                                          |   F/PIC3 NAT'L MARINE FISHERIES SERVICE                      |
+|                                                    |                                                    |        2570 DOLE STREET                                      |
+|c. STREET ADDRESS                                                                                        |c. CITY                                                       |
+|                                                                                                         |    HONOLULU                                                  |
+|                                                                                                         |                                                              |
+|d. CITY                                                              |e. STATE     |f. ZIP CODE         |d. STATE             |e. ZIP CODE                             |
+|                                                                     |             |                    | HI                  |96822                                   |
+|10. PLEASE FURNISH QUOTATIONS TO THE      |IMPORTANT: This is a request for information and quotations furnished are not offers. If you are unable to quote, please so  |
+|ISSUING OFFICE IN BLOCK 5A ON OR BEFORE   |indicate on this form and return it to the address in Block 5A.  This request does not commit the Government to pay any costs|
+|CLOSE OF BUSINESS (DATE)                  |incurred in the the submission of this quotation or to contract for supplies or services.  Supplies are of domestic origin   |
+|                                          |unless otherwise indicated by Any representations and/or certifications to this Request for Quotations must be completed by  |
+|                                          |the quoter.                                                                                                                  |
+|                                          |                                                                                                                             |
+|                                          |                                                                                                                             |
+|                                          |                                                                                                                             |
+|August 3, 2010                            |                                                                                                                             |
+|11. SCHEDULE (Indicate applicable Federal, State and local taxes)                                                                                                       |
+|ITEM NO.        |SUPPLIES/SERVICES                                             |QUANTITY            |UNIT      |UNIT PRICE                 |AMOUNT                  |    |
+|(a)             |(b)                                                           |(c)                 |(d)       |(e)                        |(f)                     |    |
+|                |                                                              |                    |          |                           |                        |    |
+|0001            |Design, create and implement a website to disseminate         |1                   |JB        |______________             |______________          |    |
+|                |information for the PIFSC Kona area Integrated Ecosystem      |                    |          |                           |                        |    |
+|                |Assessment project.                                           |                    |          |                           |                        |    |
+|                |See Attached Statement of Work                                |                    |          |                           |                        |    |
+|                |                                                              |                    |          |                           |                        |    |
+|                |                                                              |                    |          |                           |                        |    |
+|                |                                                              |                    |          |                           |                        |    |
+|                |                                                              |                    |          |                           |                        |    |
+|                |                                                              |                    |          |                           |                        |    |
+|                |                                                              |                    |          |                           |                        |    |
+|                |                                                              |                    |          |                           |                        |    |
+|                |                                                              |                    |          |                           |                        |    |
+|                |                                                              |                    |          |                           |                        |    |
+|                |                                                              |                    |          |                           |                        |    |
+|                |                                                              |                    |          |                           |                        |    |
+|                |                                                              |                    |          |                           |                        |    |
+
+
+
+0
+                                        Design, create and implement a website to disseminate information
+                                                  NOAA/NATIONAL MARINE FISHERIES SERVICE (NMFS)
+                                                     Pacific Islands Fisheries Science Center
+
+                                                                STATEMENT OF WORK
+
+Work Requirements
+A contractor is required to design, create and implement a website to disseminate information for the PIFSC Kona area Integrated Ecosystem
+Assessment project. This site will serve as the front end to information about the project though static information, links to other sites of
+interest, and an interactive section. The site will be used to serve static information such as reports, documents, text, and presentations as
+well as link to other websites and data portals from partners. The interactive section is envisioned to have an interactive mapping component
+similar to the mapping component on sites such as http://www.soest.hawaii.edu/hioos/map/ or http://www.ndbc.noaa.gov/ yet initially smaller in
+scope. The existing data layers are in ArcGIS format yet may be served through the web in any government-approved format (e.g. KML) that
+facilitates delivery. The contractor will work to incorporate existing government-approved mapping technologies such as Google, Adobe, or ESRI
+APIs into the web design. A prototype for the static initial portions of this website are online at http://www.hawaiieod.com/kona_iea.
+
+This website will use current web technologies available (e.g. PHP, HTML, JavaScript (AJAX), CSS, XML/RSS) to produce an easy to navigate
+website while assuring compliance with government website standards (e.g. Section 508) and security protocols. The contractor will be supplied
+with text and imagery for the web, yet the contractor is expected to be able to provide basic image, text, and possible data manipulation.
+
+The contractor will develop the website for the target platform, which is currently: Centos 5.4, Apache 2.2.3, PHP 5.1.6 (preferably using
+CakePHP 1.3 framework), jQuery 1.3.2 javascript library, or if the prefered web framework is Rails, then Rails 2.3.5 (with Ruby 1.9.1) would
+likely be the minimum version.
+
+The contractor will deliver a preliminary working website by September 30, 2010. All aspects of the projects do not need to be completed by this
+point, yet most facets of the website must be usable by this date. The final website will be completed by the end of the contract period which
+is December 15, 2010. The final website must be easy to maintain and be able to easily incorporate new spatial information.
+
+Contractor will deliver bug-free commented code & will supply documentation on the structure, operation, and installation of the web application
+& any database code. The contractor will provide a simple wireframe of the site before starting work on the site.
+
+Key Personnel
+
+Key personnel shall have the following qualifications
+
+
+Proficient in development of web applications.
+
+
+Extensive knowledge and experience with web technologies required including but not limited to: Standards-compliant HTML/XHTML/CSS, PHP,
+JavaScript, XML/RSS
+
+
+Experience with Ruby on Rails a plus
+
+Experience with client side scripting of interactive site components using DHTML, JavaScript, AJAX or similar.
+
+
+Proficient in one or more standard mapping APIs (e.g. Google, ArcGIS)
+
+
+Experience in one or more open source scripting language like Perl, Python, PHP, Ruby which can run on Linux based servers.
+
+
+Familiar with *nix systems.
+
+
+Familiar with Adobe CS family.
+
+
+
+The technical proposal must include the following information:
+
+
+
+Names of key personnel who will work under this contract.
+
+
+For the key personnel, a summary of past experience working on projects/software/applications similar to those identified in the SOW.
+
+
+List of references (with contact information) for projects completed that were of a similar nature to the work described in the SOW.
+
+
+Resumes for key personnel.
+
+
+During the evaluation process, the government may require the key personnel to complete a series of  tests/questions designed to gauge the level
+of familiarity with programming skills necessary for the work. The responses to these evaluation test/questions will be considered part of the
+contractorâs proposal.
+
+
+Note that any and all costs associated with proposal preparation, including participating in the governmentâs evaluation process, is the
+responsibility of the contractor.
+
+
+Other
+
+
+In general, the contractor will provide any workstation (laptop computer), applications programs (ArcGIS, Adobe CS etc.), and facilities
+necessary to perform the work.
+
+
+Communication with the key personnel shall be via phone, email (or other electronic means), and in-person.
+
+
+Regular meetings either through video or in person at the clientâs site (Honolulu, Hawaii) will be required. During these meetings, the
+contractor shall provide a suitably equipped laptop computer and the capability to demonstrate features, prototype changes, and productively
+engage in other aspects of the work. During these meetings, the contractor shall be prepared to discuss issues and recommendations with end-
+users and other staff. Depending on the nature of the project, the frequency of these meeting may be weekly or less.
+
+
+Any software developed for this project is the property of the client (e.g. The source code, algorithms, formulae, flow charts, documentation,
+and related materials.)
+
+
+For any questions regarding this solicitation, the technical point of contact is Evan Howell. Email: Evan.Howell@noaa.gov Phone: (808) 983-5306
+
+
+
+Evaluation Criteria
+
+
+EVALUATION CRITERIA: "Best Value" Analysis
+
+In addition to cost or price, proposals will also be evaluated based on the following factors and subfactors with Factor A being the most
+important.
+
+Factor A -- APPROACH AND CAPABILITIES.
+Realism of technical approach and methods proposed and potential for attaining stated objectives and milestones on schedule using the techniques
+and resources described; corporate and individual qualifications for the work; adequacy of equipment, materials and facilities proposed;
+experience with similar projects.
+
+Factor B -- PAST PERFORMANCE
+Performance by the offeror and its subcontractor(s) as it relates to all solicitation requirements, including the quality of services and
+products, effectiveness of cost management/control, timeliness of performance, and customer satisfaction; and indication of ability to improve
+performance through proactive management.  Evaluation of this factor will be based on the information contained in the technical proposal and
+information provided by references.  The Government will evaluate past performance by contacting references and/or other sources. The Government
+may also consider other information available.
+
+Cost/Price Evaluation
+
+      1. The cost evaluation will determine whether the proposed costs are realistic, complete, and reasonable in relation to the solicitation
+      requirements. Proposed costs must be entirely compatible with the technical proposal.
+
+
+      2. The Government may use the results of cost/price realism analysis to adjust the offeror's proposal to a most probable cost to the
+      Government. This may include information from a government auditing agency, Government technical personnel, and other sources.
+
+
+      3. Although price/cost is the least important evaluation factor, it will not be ignored. The degree of importance of the proposed
+      price/cost will increase the degree of equality of the proposals in relation to the other factors on which selection is to be based.
+
+
+      4. The Government reserves the right to make an award to other than the lowest priced offeror or to the offeror with the highest technical
+      score if the Contracting Officer determines that to do so would result in the best value to the Government.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+52.212-4  CONTRACT TERMS AND CONDITIONS--COMMERCIAL ITEMS (MAR 2009)
+
+  (a) "Inspection/Acceptance." The Contractor shall only tender for acceptance those items that conform to the requirements of this contract.
+The Government reserves the right to inspect or test any supplies or services that have been tendered for acceptance. The Government may require
+repair or replacement of nonconforming supplies or reperformance of nonconforming services at no increase in contract price. If
+repair/replacement or reperformance will not correct the defects or is not possible, the Government may seek an equitable price reduction or
+adequate consideration for acceptance of nonconforming supplies or services. The Government must exercise its post-acceptance rights--
+    (1) Within a reasonable time after the defect was discovered or should have been discovered; and
+    (2) Before any substantial change occurs in the condition of the item, unless the change is due to the defect in the item.
+  (b) "Assignment." The Contractor or its assignee may assign its rights to receive payment due as a result of performance of this contract to a
+bank, trust company, or other financing institution, including any Federal lending agency in accordance with the Assignment of Claims Act (31
+U.S.C. 3727). However, when a third party makes payment (e.g., use of the Governmentwide commercial purchase card), the Contractor may not
+assign its rights to receive payment under this contract.
+  (c) "Changes." Changes in the terms and conditions of this contract may be made only by written agreement of the parties.
+  (d) "Disputes." This contract is subject to the Contract Disputes Act of 1978, as amended (41 U.S.C. 601-613). Failure of the parties to this
+contract to reach agreement on any request for equitable adjustment, claim, appeal or action arising under or relating to this contract shall be
+a dispute to be resolved in accordance with the clause at FAR 52.233-1, Disputes, which is incorporated herein by reference. The Contractor
+shall proceed diligently with performance of this contract, pending final resolution of any dispute arising under the contract.
+  (e) "Definitions." The clause at FAR 52.202-1, Definitions, is incorporated herein by reference.
+  (f) "Excusable delays." The Contractor shall be liable for default unless nonperformance is caused by an occurrence beyond the reasonable
+control of the Contractor and without its fault or negligence such as, acts of God or the public enemy, acts of the Government in either its
+sovereign or contractual capacity, fires, floods, epidemics, quarantine restrictions, strikes, unusually severe weather, and delays of common
+carriers. The Contractor shall notify the Contracting Officer in writing as soon as it is reasonably possible after the commencement of any
+excusable delay, setting forth the full particulars in connection therewith, shall remedy such occurrence with all reasonable dispatch, and
+shall promptly give written notice to the Contracting Officer of the cessation of such occurrence.
+  (g) "Invoice."
+    (1) The Contractor shall submit an original invoice and three copies (or electronic invoice, if authorized) to the address designated in the
+contract to receive invoices. An invoice must include--
+      (i) Name and address of the Contractor;
+      (ii) Invoice date and number;
+      (iii) Contract number, contract line item number and, if applicable, the order number;
+      (iv) Description, quantity, unit of measure, unit price and extended price of the items delivered;
+      (v) Shipping number and date of shipment, including the bill of lading number and weight of shipment if shipped on Government bill of
+lading;
+      (vi) Terms of any discount for prompt payment offered;
+      (vii) Name and address of official to whom payment is to be sent;
+      (viii) Name, title, and phone number of person to notify in event of defective invoice; and
+      (ix) Taxpayer Identification Number (TIN). The Contractor shall include its TIN on the invoice only if required elsewhere in this
+contract.
+      (x) Electronic funds transfer (EFT) banking information.
+        (A) The Contractor shall include EFT banking information on the invoice only if required elsewhere in this contract.
+        (B) If EFT banking information is not required to be on the invoice, in order for the invoice to be a proper invoice, the Contractor
+shall have submitted correct EFT banking information in accordance with the applicable solicitation provision, contract clause (e.g., 52.232-33,
+Payment by Electronic Funds Transfer-Central Contractor Registration, or 52.232-34, Payment by Electronic Funds Transfer-Other Than Central
+Contractor Registration), or applicable agency procedures.
+        (C) EFT banking information is not required if the Government waived the requirement to pay by EFT.
+    (2) Invoices will be handled in accordance with the Prompt Payment Act (31 U.S.C. 3903) and Office of Management and Budget (OMB) prompt
+payment regulations at 5 CFR part 1315.
+  (h) "Patent indemnity." The Contractor shall indemnify the Government and its officers, employees and agents against liability, including
+costs, for actual or alleged direct or contributory infringement of, or inducement to infringe, any United States or foreign patent, trademark
+or copyright, arising out of the performance of this contract, provided the Contractor is reasonably notified of such claims and proceedings.
+  (i) "Payment."--
+    (1) "Items accepted." Payment shall be made for items accepted by the Government that have been delivered to the delivery destinations set
+forth in this contract.
+    (2) "Prompt payment." The Government will make payment in accordance with the Prompt Payment Act (31 U.S.C. 3903) and prompt payment
+regulations at 5 CFR part 1315.
+    (3) "Electronic Funds Transfer (EFT)." If the Government makes payment by EFT, see 52.212-5(b) for the appropriate EFT clause.
+    (4) "Discount." In connection with any discount offered for early payment, time shall be computed from the date of the invoice. For the
+purpose of computing the discount earned, payment shall be considered to have been made on the date which appears on the payment check or the
+specified payment date if an electronic funds transfer payment is made.
+    (5) "Overpayments." If the Contractor becomes aware of a duplicate contract financing or invoice payment or that the Government has
+otherwise overpaid on a contract financing or invoice payment, the Contractor shall--
+      (i) Remit the overpayment amount to the payment office cited in the contract along with a description of the overpayment including the--
+        (A) Circumstances of the overpayment (e.g., duplicate payment, erroneous payment, liquidation errors, date(s) of overpayment);
+        (B) Affected contract number and delivery order number, if applicable;
+        (C) Affected contract line item or subline item, if applicable; and
+        (D) Contractor point of contact.
+      (ii) Provide a copy of the remittance and supporting documentation to the Contracting Officer.
+    (6) Interest.
+      (i) All amounts that become payable by the Contractor to the Government under this contract shall bear simple interest from the date due
+until paid unless paid within 30 days of becoming due. The interest rate shall be the interest rate established by the Secretary of the Treasury
+as provided in Section 611 of the Contract Disputes Act of 1978 (Public Law 95-563), which is applicable to the period in which the amount
+becomes due, as provided in (i)(6)(v) of this clause, and then at the rate applicable for each six-month period as fixed by the Secretary until
+the amount is paid.
+      (ii) The Government may issue a demand for payment to the Contractor upon finding a debt is due under the contract.
+      (iii) Final decisions. The Contracting Officer will issue a final decision as required by 33.211 if--
+        (A) The Contracting Officer and the Contractor are unable to reach agreement on the existence or amount of a debt within 30 days;
+        (B) The Contractor fails to liquidate a debt previously demanded by the Contracting Officer within the timeline specified in the demand
+for payment unless the amounts were not repaid because the Contractor has requested an installment payment agreement; or
+        (C) The Contractor requests a deferment of collection on a debt previously demanded by the Contracting Officer (see 32.607-2).
+      (iv) If a demand for payment was previously issued for the debt, the demand for payment included in the final decision shall identify the
+same due date as the original demand for payment.
+      (v) Amounts shall be due at the earliest of the following dates:
+        (A) The date fixed under this contract.
+        (B) The date of the first written demand for payment, including any demand for payment resulting from a default termination.
+      (vi) The interest charge shall be computed for the actual number of calendar days involved beginning on the due date and ending on--
+        (A) The date on which the designated office receives payment from the Contractor;
+        (B) The date of issuance of a Government check to the Contractor from which an amount otherwise payable has been withheld as a credit
+against the contract debt; or
+        (C) The date on which an amount withheld and applied to the contract debt would otherwise have become payable to the Contractor.
+      (vii) The interest charge made under this clause may be reduced under the procedures prescribed in 32.608-2 of the Federal Acquisition
+Regulation in effect on the date of this contract.
+  (j) "Risk of loss." Unless the contract specifically provides otherwise, risk of loss or damage to the supplies provided under this contract
+shall remain with the Contractor until, and shall pass to the Government upon:
+    (1) Delivery of the supplies to a carrier, if transportation is f.o.b. origin; or
+    (2) Delivery of the supplies to the Government at the destination specified in the contract, if transportation is f.o.b. destination.
+  (k) "Taxes." The contract price includes all applicable Federal, State, and local taxes and duties.
+  (l) "Termination for the Government's convenience." The Government reserves the right to terminate this contract, or any part hereof, for its
+sole convenience. In the event of such termination, the Contractor shall immediately stop all work hereunder and shall immediately cause any and
+all of its suppliers and subcontractors to cease work. Subject to the terms of this contract, the Contractor shall be paid a percentage of the
+contract price reflecting the percentage of the work performed prior to the notice of termination, plus reasonable charges the Contractor can
+demonstrate to the satisfaction of the Government using its standard record keeping system, have resulted from the termination. The Contractor
+shall not be required to comply with the cost accounting standards or contract cost principles for this purpose. This paragraph does not give
+the Government any right to audit the Contractor's records. The Contractor shall not be paid for any work performed or costs incurred which
+reasonably could have been avoided.
+  (m) "Termination for cause." The Government may terminate this contract, or any part hereof, for cause in the event of any default by the
+Contractor, or if the Contractor fails to comply with any contract terms and conditions, or fails to provide the Government, upon request, with
+adequate assurances of future performance. In the event of termination for cause, the Government shall not be liable to the Contractor for any
+amount for supplies or services not
+ accepted, and the Contractor shall be liable to the Government for any and all rights and remedies provided by law. If it is determined that
+the Government improperly terminated this contract for default, such termination shall be deemed a termination for convenience.
+  (n) "Title." Unless specified elsewhere in this contract, title to items furnished under this contract shall pass to the Government upon
+acceptance, regardless of when or where the Government takes physical possession.
+  (o) "Warranty." The Contractor warrants and implies that the items delivered hereunder are merchantable and fit for use for the particular
+purpose described in this contract.
+  (p) "Limitation of liability." Except as otherwise provided by an express warranty, the Contractor will not be liable to the Government for
+consequential damages resulting from any defect or deficiencies in accepted items.
+  (q) "Other compliances." The Contractor shall comply with all applicable Federal, State and local laws, executive orders, rules and
+regulations applicable to its performance under this contract.
+  (r) "Compliance with laws unique to Government contracts." The Contractor agrees to comply with 31 U.S.C. 1352 relating to limitations on the
+use of appropriated funds to influence certain Federal contracts; 18 U.S.C. 431 relating to officials not to benefit; 40 U.S.C. 3701, et seq.,
+Contract Work Hours and Safety Standards Act; 41 U.S.C. 51-58, Anti-Kickback Act of 1986; 41 U.S.C. 265 and 10 U.S.C. 2409 relating to
+whistleblower protections; Section 1553 of the American Recovery and Reinvestment Act of 2009 relating to whistleblower protections for
+contracts funded under that Act; 49 U.S.C. 40118, Fly American; and 41 U.S.C. 423  relating to procurement integrity.
+  (s) "Order of precedence." Any inconsistencies in this solicitation or contract shall be resolved by giving precedence in the following order:
+    (1) The schedule of supplies/services.
+    (2) The Assignments, Disputes, Payments, Invoice, Other Compliances, and Compliance with Laws Unique to Government Contracts paragraphs of
+this clause.
+    (3) The clause at 52.212-5.
+    (4) Addenda to this solicitation or contract, including any license agreements for computer software.
+    (5) Solicitation provisions if this is a solicitation.
+    (6) Other paragraphs of this clause.
+    (7) The Standard Form 1449.
+    (8) Other documents, exhibits, and attachments.
+    (9) The specification.
+  (t) "Central Contractor Registration (CCR)."
+    (1) Unless exempted by an addendum to this contract, the Contractor is responsible during performance and through final payment of any
+contract for the accuracy and completeness of the data within the CCR database, and for any liability resulting from the Government's reliance
+on inaccurate or incomplete data. To remain registered in the CCR database after the initial registration, the Contractor is required to review
+and update on an annual basis from the date of initial registration or subsequent updates its information in the CCR database to ensure it is
+current, accurate and complete. Updating information in the CCR does not alter the terms and conditions of this contract and is not a substitute
+for a properly executed contractual document.
+    (2)
+      (i) If a Contractor has legally changed its business name, "doing business as" name, or division name (whichever is shown on the
+contract), or has transferred the assets used in performing the contract, but has not completed the necessary requirements regarding novation
+and change-of-name agreements in FAR Subpart 42.12, the Contractor shall provide the responsible Contracting Officer a minimum of one business
+day's written notification of its intention to
+        (A) change the name in the CCR database;
+        (B) comply with the requirements of Subpart 42.12; and
+        (C) agree in writing to the timeline and procedures specified by the responsible Contracting Officer. The Contractor must provide with
+the notification sufficient documentation to support the legally changed name.
+      (ii) If the Contractor fails to comply with the requirements of paragraph (t)(2)(i) of this clause, or fails to perform the agreement at
+paragraph (t)(2)(i)(C) of this clause, and, in the absence of a properly executed novation or change-of-name agreement, the CCR information that
+shows the Contractor to be other than the Contractor indicated in the contract will be considered to be incorrect information within the meaning
+of the "Suspension of Payment" paragraph of the electronic funds transfer (EFT) clause of this contract.
+    (3) The Contractor shall not change the name or address for EFT payments or manual payments, as appropriate, in the CCR record to reflect an
+assignee for the purpose of assignment of claims (see Subpart 32.8, Assignment of Claims). Assignees shall be separately registered in the CCR
+database. Information provided to the Contractor's CCR record that indicates payments, including those made by EFT, to an ultimate recipient
+other than that Contractor will be considered to be incorrect information within the meaning of the "Suspension of payment" paragraph of the EFT
+clause of this contract.
+    (4) Offerors and Contractors may obtain information on registration and annual confirmation requirements via the internet at
+http://www.ccr.gov or by calling 1-888-227-2423 or 269-961-5757.
+          (End of Clause)
+
+2.  52.212-5  CONTRACT TERMS AND CONDITIONS REQUIRED TO IMPLEMENT STATUTES OR EXECUTIVE ORDERS--COMMERCIAL ITEMS (FEB 2010)
+
+  (a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clause, which is incorporated in this contract by
+reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items:
+      (1) 52.222-50, Combating Trafficking in Persons (Feb 2009)
+          (22 U.S.C. 7104(g)).
+        __________ Alternate I (Aug 2007) of 52.222-50 (22 U.S.C.7104(g)).
+      (2) 52.233-3, Protest after Award (Aug 1996) (31 U.S.C. 3553).
+      (3) 52.233-4, Applicable Law for Breach of Contract Claim (Oct 2004)
+          (Pub. L. 108-77, 108-78).
+  (b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being incorporated in
+this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items:
+      __________ (1) 52.203-6, Restrictions on Subcontractor Sales to the  Government
+                (Sep 2006), with Alternate I (Oct 1995)(41 U.S.C. 253g and
+                10 U.S.C. 2402).
+      __________ (2) 52.203-13, Contractor Code of Business Ethics and  Conduct (Dec
+                2008) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251
+                note)). (15 U.S.C. 657a).
+      __________ (3) 52.203-15, Whistleblower Protections Under the  American Recovery
+                and Reinvestment Act of 2009 (Section 1553 of Pub. L. 111-5).
+                (Applies to contracts funded by the American Recovery and
+                Reinvestment Act of 2009.)
+      __________ (4) 52.204-11, American Recovery and Reinvestment  Act--Reporting
+                Requirements (MAR 2009) (Pub. L. 111-5).
+      __________ (5) 52.219-3, Notice of Total HUBZone Set-Aside (Jan  1999)
+                (15 U.S.C. 657a).
+      __________ (6) 52.219-4, Notice of Price Evaluation Preference for  HUBZone
+                Small Business Concerns (July 2005) (if the offeror elects
+                to waive the preference, it shall so indicate in its offer)
+                (15 U.S.C. 657a).
+         (7) [Reserved]
+         (8)
+          __________ (i) 52.219-6, Notice of Total Small Business  Set-Aside (June
+                    2003) (15 U.S.C. 644).
+          __________ (ii) Alternate I (Oct 1995) of 52.219-6.
+          __________ (iii) Alternate II (Mar 2004) of 52.219-6.
+         (9)
+          __________ (i) 52.219-7, Notice of Partial Small Business  Set-Aside (June
+                    2003) (15 U.S.C. 644).
+          __________ (ii) Alternate I (Oct 1995) of 52.219-7.
+          __________ (iii) Alternate II (Mar 2004) of 52.219-7.
+      __________ (10) 52.219-8, Utilization of Small Business Concerns  (May 2004) (15
+                U.S.C. 637(d)(2) and (3)).
+         (11)
+          __________ (i) 52.219-9, Small Business Subcontracting Plan (Apr  2008)
+                    (15 U.S.C. 637(d)(4).
+          __________ (ii) Alternate I (Oct 2001) of 52.219-9.
+          __________ (iii) Alternate II (Oct 2001) of 52.219-9.
+      __________ (12) 52.219-14, Limitations on Subcontracting (Dec 1996)  (15 U.S.C.
+                637(a)(14)).
+      __________ (13) 52.219-16, Liquidated Damages--Subcontracting Plan  (Jan 1999)
+                 (15 U.S.C. 637(d)(4)(F)(i)).
+         (14)
+          __________ (i) 52.219-23, Notice of Price Evaluation Adjustment  for Small
+                    Disadvantaged Business Concerns (Oct 2008) (10 U.S.C. 2323)
+                    (if the offeror elects to waive the adjustment, it shall so
+                    indicate in its offer).
+          __________ (ii) Alternate I (June 2003) of 52.219-23.
+      __________ (15) 52.219-25, Small Disadvantaged Business  Participation Program-
+                 Disadvantaged Status and Reporting (Apr 2008) (Pub. L.
+                 103-355, section 7102, and 10 U.S.C. 2323).
+      __________ (16) 52.219-26, Small Disadvantaged Business  Participation Program--
+                 Incentive Subcontracting (Oct 2000) (Pub. L. 103-355, section
+                 7102, and 10 U.S.C. 2323).
+      __________ (17) 52.219-27, Notice of Total Service-Disabled  Veteran-Owned Small
+                 Business Set-Aside (May 2004) (15 U.S.C. 657 f).
+      __________ (18) 52.219-28, Post Award Small Business Program  Rerepresentation
+                 (Apr 2009) (15 U.S.C. 632(a)(2)).
+      _____X____ (19) 52.222-3, Convict Labor (June 2003) (E.O. 11755).
+      _____X____ (20) 52.222-19, Child Labor--Cooperation with Authorities  and
+                  Remedies (Aug 2009) (E.O. 13126).
+      ____X_____ (21) 52.222-21, Prohibition of Segregated Facilities (Feb  1999).
+      ____X_____ (22) 52.222-26, Equal Opportunity (Apr 2002) (E.O.  11246).
+      __________ (23) 52.222-35, Equal Opportunity for Special Disabled  Veterans,
+                 Veterans of the Vietnam Era, and Other Eligible Veterans
+                 (Sept 2006) (38 U.S.C. 4212).
+      ____X_____ (24) 52.222-36, Affirmative Action for Workers with  Disabilities
+                 (Jun 1998) (29 U.S.C. 793).
+      __________ (25) 52.222-37, Employment Reports on Special Disabled  Veterans,
+                 Veterans of the Vietnam Era, and Other Eligible Veterans (Sept
+                 2006) (38 U.S.C. 4212).
+      __________ (26) 52.222-54, Employment Eligibility Verification (Jan  2009).
+                 (Executive Order 12989).  (Not applicable to the acquisition of
+                 commercially available off-the-shelf items or certain other
+                 types of commercial items as prescribed in 22.1803.)
+         (27)
+          __________ (i) 52.223-9, Estimate of Percentage of Recovered  Material
+                    Content for EPA-Designated Items (May 2008) (42 U.S.C.
+                    6962(c)(3)(A)(ii)).
+          __________ (ii) Alternate I (May 2008) of 52.223-9 (42 U.S.C.
+                     6962(i)(2)(C)).
+      __________ (28) 52.223-15, Energy Efficiency in Energy-Consuming  Products
+                 (Dec 2007) (42 U.S.C. 8259b).
+         (29)
+          __________ (i) 52.223-16, IEEE 1680 Standard for the  Environmental
+                    Assessment of Personal Computer Products (Dec 2007)
+                    (E.O. 13423).
+          __________ (ii) Alternate I (Dec 2007) of 52.223-16.
+      ____X_____ (30) 52.225-1, Buy American Act-Supplies (June 2003)(41  U.S.C.
+                 10a-10d).
+         (31)
+          __________ (i) 52.225-3, Buy American Act-Free Trade  Agreements-Israeli
+                    Trade Act (June 2009) (41 U.S.C. 10a-10d, 19 U.S.C. 3301
+                    note, 19 U.S.C. 2112 note, 19 U.S.C. 3805 note, Pub. L.
+                    108-77, 108-78, 108-286, 108-302, 109-53, 109-169, 109-283,
+                    and 110-138.
+          __________ (ii) Alternate I (Jan 2004) of 52.225-3.
+          __________ (iii) Alternate II (Jan 2004) of 52.225-3.
+      __________ (32) 52.225-5, Trade Agreements (Aug 2009) (19 U.S.C.  2501, et seq.,
+                 19 U.S.C. 3301 note).
+      ____X_____ (33) 52.225-13, Restrictions on Certain Foreign Purchases  (Jun 2008)
+                 (E.O.'s, proclamations, and statutes administered by the Office
+                 of Foreign Assets Control of the Department of the Treasury).
+      __________ (34) 52.226-4, Notice of Disaster or Emergency Area  Set-Aside
+                 (Nov 2007) (42 U.S.C. 5150).
+      __________ (35) 52.226-5, Restrictions on Subcontracting Outside  Disaster or
+                 Emergency Area (Nov 2007) (42 U.S.C. 5150).
+      __________ (36) 52.232-29, Terms for Financing of Purchases of  Commercial Items
+                 (Feb 2002) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+      __________ (37) 52.232-30, Installment Payments for Commercial Items  (Oct 1995)
+                 (41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+      _____X____ (38) 52.232-33, Payment by Electronic Funds  Transfer-Central
+                 Contractor Registration (Oct 2003) (31 U.S.C. 3332).
+      __________ (39) 52.232-34, Payment by Electronic Funds  Transfer-Other than
+                 Central Contractor Registration (May 1999) (31 U.S.C. 3332).
+      ____X_____ (40) 52.232-36, Payment by Third Party (Feb 2010)(31  U.S.C. 3332).
+      __________ (41) 52.239-1, Privacy or Security Safeguards (Aug 1996)  (5 U.S.C.
+                 552a).
+         (42)
+          __________ (i) 52.247-64, Preference for Privately Owned  U.S.-Flag
+                    Commercial Vessels (Feb 2006) (46 U.S.C. Appx 1241(b) and
+                    10 U.S.C. 2631).
+          __________ (ii) Alternate I (Apr 1984) of 52.247-64.
+  (c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer
+has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions
+of commercial items:
+      ____X_____ (1) 52.222-41, Service Contract Act of 1965 (Nov 2007)
+                (41 U.S.C. 351, et seq.). Wage determination are available at www.dol.gov
+      ____X_____ (2) 52.222-42, Statement of Equivalent Rates for Federal  Hires (May
+                1989) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+      __________ (3) 52.222-43, Fair Labor Standards Act and Service  Contract Act-
+                Price Adjustment (Multiple Year and Option Contracts) (Sep 2009)
+                (29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+      __________ (4) 52.222-44, Fair Labor Standards Act and Service  Contract Act-
+                Price Adjustment (Sep 2009) (29 U.S.C. 206 and 41 U.S.C. 351,
+                et seq.).
+      __________ (5) 52.222-51, Exemption from Application of the Service  Contract
+                Act to Contracts for Maintenance, Calibration, or Repair of
+                Certain Equipment--Requirements (Nov 2007)
+                (41 U.S.C. 351, et seq.).
+      __________ (6) 52.222-53, Exemption from Application of the Service  Contract
+                Act to Contracts for Certain Services--Requirements (Feb 2009)
+                (41 U.S.C. 351, et seq.).
+      __________ (7) 52.226-6, Promoting Excess Food Donation to Nonprofit
+                Organizations (Mar 2009) (Pub. L. 110-247).
+      __________ (8) 52.237-11, Accepting and Dispensing of $1 Coin (Aug  2007)
+                (31 U.S.C. 5112(p)(1)).
+  (d) Comptroller General Examination of Record. The Contractor shall comply with the provisions of this paragraph (d) if this contract was
+awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at 52.215-2, Audit
+and Records-Negotiation.
+    (1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right
+to examine any of the Contractor's directly pertinent records involving transactions related to this contract.
+    (2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination,
+audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR Subpart 4.7, Contractor
+Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records relating to the
+work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the
+disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such
+appeals, litigation, or claims are finally resolved.
+    (3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and
+regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary
+course of business or pursuant to a provision of law.
+  (e )
+    (1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c), and (d) of this clause, the Contractor is not required to
+flow down any FAR clause, other than those in this paragraph (e)(1)in a subcontract for commercial items. Unless otherwise indicated below, the
+extent of the flow down shall be as required by the clause--
+      (i) 52.203-13, Contractor Code of Business Ethics and Conduct (DEC 2008) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note)).
+      (ii) 52.219-8, Utilization of Small Business Concerns (May 2004) (15 U.S.C. 637(d)(2) and (3)), in all subcontracts that offer further
+subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $550,000 ($1,000,000 for construction
+of any public facility), the subcontractor must include 52.219-8 in lower tier subcontracts that offer subcontracting opportunities.
+      (iii) 52.203-15, Whistleblower Protections Under the American Recovery and Reinvestment Act of 2009 (Section 1553 of Pub. L. 111-5).
+Applies to subcontracts funded under the Act.
+      (iv) 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246).
+      (v) 52.222-35, Equal Opportunity for Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans (Sept 2006) (38
+U.S.C. 4212).
+      (vi) 52.222-36, Affirmative Action for Workers with Disabilities (June 1998) (29 U.S.C. 793).
+      (vii) [Reserved].
+      (viii) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.).
+      (ix) 52.222-50, Combating Trafficking in Persons (Feb 2009) (22 U.S.C. 7104(g)).
+        __________ Alternate I (Aug 2007) of 52.222-50 (22 U.S.C.  7104(g)).
+      (x) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain
+Equipment--Requirements (Nov 2007) (41 U.S.C. 351, et seq.).
+      (xi) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services--Requirements (Feb 2009) (41
+U.S.C. 351, et seq.).
+      (xii) 52.222-54, Employment Eligibility Verification (Jan 2009).
+      (xiii) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247).  Flow down required in accordance
+with paragraph (e) of FAR clause 52.226-6.
+      (xiv) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) (46 U.S.C. Appx 1241 (b) and 10 U.S.C. 2631). Flow
+down required in accordance with paragraph (d) of FAR clause 52.247-64.
+    (2) While not required, the contractor may include in its subcontracts for commercial items a minimal number of additional clauses necessary
+to satisfy its contractual obligations.
+          (End of Clause)
+
+52.212-1Â Instructions to OfferorsâCommercial Items (JuneÂ 2008)
+
+52.212-3 OFFEROR REPRESENTATIONS AND CERTIFICATIONSâCOMMERCIAL ITEMS.
+As prescribed in 12.301(b)(2), insert the following provision:
+                                      OFFEROR REPRESENTATIONS AND CERTIFICATIONSâCOMMERCIAL ITEMS (AUG 2007)
+An offeror shall complete only paragraph (k) of this provision if the offeror has completed the annual representations and certifications
+electronically at http://orca.bpn.gov. If an offeror has not completed the annual representations and certifications electronically at the ORCA
+website, the offeror shall complete only paragraphs (b) through (j) of this provision.
+(a) Definitions. As used in this provisionâ
+âEmerging small businessâ means a small business concern whose size is no greater than 50 percent of the numerical size standard for the NAICS
+code designated.
+âForced or indentured child laborâ means all work or serviceâ
+(1) Exacted from any person under the age of 18 under the menace of any penalty for its nonperformance and for which the worker does not offer
+himself voluntarily; or
+(2) Performed by any person under the age of 18 pursuant to a contract the enforcement of which can be accomplished by process or penalties.
+âManufactured end productâ means any end product in Federal Supply Classes (FSC) 1000-9999, exceptâ
+(1) FSC 5510, Lumber and Related Basic Wood Materials;
+(2) Federal Supply Group (FSG) 87, Agricultural Supplies;
+(3) FSG 88, Live Animals;
+(4) FSG 89, Food and Related Consumables;
+(5) FSC 9410, Crude Grades of Plant Materials;
+(6) FSC 9430, Miscellaneous Crude Animal Products, Inedible;
+(7) FSC 9440, Miscellaneous Crude Agricultural and Forestry Products;
+(8) FSC 9610, Ores;
+(9) FSC 9620, Minerals, Natural and Synthetic; and
+(10) FSC 9630, Additive Metal Materials.
+âPlace of manufactureâ means the place where an end product is assembled out of components, or otherwise made or processed from raw materials
+into the finished product that is to be provided to the Government. If a product is disassembled and reassembled, the place of reassembly is not
+the place of manufacture.
+âService-disabled veteran-owned small business concernââ
+(1) Means a small business concernâ
+(i) Not less than 51 percent of which is owned by one or more service-disabled veterans or, in the case of any publicly owned business, not less
+than 51 percent of the stock of which is owned by one or more service-disabled veterans; and
+(ii) The management and daily business operations of which are controlled by one or more service-disabled veterans or, in the case of a service-
+disabled veteran with permanent and severe disability, the spouse or permanent caregiver of such veteran.
+(2) Service-disabled veteran means a veteran, as defined in 38 U.S.C. 101(2), with a disability that is service-connected, as defined in 38
+U.S.C. 101(16).
+âSmall business concernâ means a concern, including its affiliates, that is independently owned and operated, not dominant in the field of
+operation in which it is bidding on Government contracts, and qualified as a small business under the criteria in 13 CFR Part 121 and size
+standards in this solicitation.
+âVeteran-owned small business concernâ means a small business concernâ
+(1) Not less than 51 percent of which is owned by one or more veterans (as defined at 38 U.S.C. 101(2)) or, in the case of any publicly owned
+business, not less than 51 percent of the stock of which is owned by one or more veterans; and
+(2) The management and daily business operations of which are controlled by one or more veterans.
+âWomen-owned business concernâ means a concern which is at least 51 percent owned by one or more women; or in the case of any publicly owned
+business, at least 51 percent of its stock is owned by one or more women; and whose management and daily business operations are controlled by
+one or more women.
+âWomen-owned small business concernâ means a small business concernâ
+(1) That is at least 51 percent owned by one or more women; or, in the case of any publicly owned business, at least 51 percent of the stock of
+which is owned by one or more women; and
+(2) Whose management and daily business operations are controlled by one or more women.
+(b) Taxpayer Identification Number (TIN) (26 U.S.C. 6109, 31 U.S.C. 7701). (Not applicable if the offeror is required to provide this
+information to a central contractor registration database to be eligible for award.)
+(1) All offerors must submit the information required in paragraphs (b)(3) through (b)(5) of this provision to comply with debt collection
+requirements of 31 U.S.C. 7701(c) and 3325(d), reporting requirements of 26 U.S.C. 6041, 6041A, and 6050M, and implementing regulations issued
+by the Internal Revenue Service (IRS).
+(2) The TIN may be used by the Government to collect and report on any delinquent amounts arising out of the offerorâs relationship with the
+Government (31 U.S.C. 7701(c)(3)). If the resulting contract is subject to the payment reporting requirements described in FAR 4.904, the TIN
+provided hereunder may be matched with IRS records to verify the accuracy of the offerorâs TIN.
+(3) Taxpayer Identification Number (TIN).
+íŻí˛íŻí˛ TIN: ________________________________.
+íŻí˛íŻí˛ TIN has been applied for.
+íŻí˛íŻí˛ TIN is not required because:
+íŻí˛íŻí˛ Offeror is a nonresident alien, foreign corporation, or foreign partnership that does not have income effectively connected with the
+conduct of a trade or business in the United States and does not have an office or place of business or a fiscal paying agent in the United
+States;
+íŻí˛íŻí˛ Offeror is an agency or instrumentality of a foreign government;
+íŻí˛íŻí˛ Offeror is an agency or instrumentality of the Federal Government.
+(4) Type of organization.
+íŻí˛íŻí˛ Sole proprietorship;
+íŻí˛íŻí˛ Partnership;
+íŻí˛íŻí˛ Corporate entity (not tax-exempt);
+íŻí˛íŻí˛ Corporate entity (tax-exempt);
+íŻí˛íŻí˛ Government entity (Federal, State, or local);
+íŻí˛íŻí˛ Foreign government;
+íŻí˛íŻí˛ International organization per 26 CFR 1.6049-4;
+íŻí˛íŻí˛ Other ________________________________.
+(5) Common parent.
+íŻí˛  Offeror is not owned or controlled by a common parent;
+íŻí˛     Name and TIN of common parent:
+Name ________________________________.
+TIN _________________________________.
+(c) Offerors must complete the following representations when the resulting contract will be performed in the United States or its outlying
+areas. Check all that apply.
+(1) Small business concern. The offeror represents as part of its offer that it íŻí˛ is, íŻí˛ is not a small business concern.
+(2) Veteran-owned small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of
+this provision.] The offeror represents as part of its offer that it íŻí˛ is, íŻí˛ is not a veteran-owned small business concern.
+(3) Service-disabled veteran-owned small business concern. [Complete only if the offeror represented itself as a veteran-owned small business
+concern in paragraph (c)(2) of this provision.] The offeror represents as part of its offer that it íŻí˛  is, íŻí˛  is not a service-disabled
+veteran-owned small business concern.
+(4) Small disadvantaged business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of
+this provision.] The offeror represents, for general statistical purposes, that it íŻí˛  is, íŻí˛  is not a small disadvantaged business concern as
+defined in 13 CFR 124.1002.
+(5) Women-owned small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this
+provision.] The offeror represents that it íŻí˛ is, íŻí˛ is not a women-owned small business concern.
+Note: Complete paragraphs (c)(6) and (c)(7) only if this solicitation is expected to exceed the simplified acquisition threshold.
+(6) Women-owned business concern (other than small business concern). [Complete only if the offeror is a women-owned business concern and did
+not represent itself as a small business concern in paragraph (c)(1) of this provision.] The offeror represents that it íŻí˛ is a women-owned
+business concern.
+(7) Tie bid priority for labor surplus area concerns. If this is an invitation for bid, small business offerors may identify the labor surplus
+areas in which costs to be incurred on account of manufacturing or production (by offeror or first-tier subcontractors) amount to more than 50
+percent of the contract price:
+________________________________________________
+(8) Small Business Size for the Small Business Competitiveness Demonstration Program and for the Targeted Industry Categories under the Small
+Business Competitiveness Demonstration Program. [Complete only if the offeror has represented itself to be a small business concern under the
+size standards for this solicitation.]
+(i) [Complete only for solicitations indicated in an addendum as being set-aside for emerging small businesses in one of the designated industry
+groups (DIGs).] The offeror represents as part of its offer that it íŻí˛  is  íŻí˛  is not an emerging small business.
+(ii) [Complete only for solicitations indicated in an addendum as being for one of the targeted industry categories (TICs) or designated
+industry groups (DIGs).] Offeror represents as follows:
+(A) Offerorâs number of employees for the past 12 months (check the Employees column if size standard stated in the solicitation is expressed in
+terms of number of employees); or (B) Offerorâs average annual gross revenue for the last 3 fiscal years (check the Average Annual Gross Number
+of Revenues column if size standard stated in the solicitation is expressed in terms of annual receipts).
+(Check one of the following):
+
+Number of Employees               Average Annual Gross Revenues
+|                                   |                                               |
+|                                   |Average Annual Gross Revenues                  |
+|                                   |                                               |
+|__ 50 or fewer                     |__ $1 million or less                          |
+|__ 51â100                          |__ $1,000,001â$2 million                       |
+|__ 101â250                         |__ $2,000,001â$3.5 million                     |
+|__ 251â500                         |__ $3,500,001â$5 million                       |
+|__ 501â750                         |__ $5,000,001â$10 million                      |
+|__ 751â1,000                       |__ $10,000,001â$17 million                     |
+|__ Over 1,000                      |__ Over $17 million                            |
+
+

@@ -1,0 +1,245 @@
+
+GoLearn Portal and Customer Support BPA
+
+                                                                   9 April 2009
+
+
+
+1.0  Compliance Evaluation
+
+      Description of Services: Prior to content going live on government sites, the law requires that all content meet Section 508 compliance
+      requirements as documented at: http://section508.gov/. This task will support evaluating on-line content, training, PDF documents, and
+      other web-based materials to determine Section 508 compliance and identify any issues. While all interactions must have a keyboard
+      equivalent to be accessible to users that do not employ a pointing device there are multiple ways to accomplish this and automated tools
+      often fall short or are misleading.
+
+      Deliverables: A detailed Section 508 compliance report documenting any outstanding issues with recommended corrective actions and proposal
+      documenting the costs to take the corrective actions. Note that this in not an automated run from a software application, but rather an in-
+      depth analysis of the issues a user would encounter.
+
+      Costs_________________________.
+
+
+2.0  Develop a Knowledge-Object Repository
+
+      Description of Services: Build out an agency unique infrastructure to enable GoLearn client agencies to manage their own content using the
+      GoLearn simplified web-publishing toolset. This task will develop the back-end infrastructure for an agency to implement knowledge in the
+      GoLearn portal content management system. This infrastructure development will include a custom agency header, unique agency instance on
+      the shared server environment, Admin and public URLs, and the database meta-sites. Agencies will receive access to the back-end admin sites
+      to be able to create and edit on-line content that can be viewed in the associated public sites. The training for agencies to be able to
+      manage and use this environment to create and deliver their own courses is defined in Task 8.0
+
+      Deliverables: On-line Admin site with listing of user accounts so that client agency can access their instance of the GoLearn portal to
+      develop and edit on-line content in the knowledge-object repository. Public site URLs or each unique course. Training on how to work with
+      the sites to produce on-line courses is provided in Task 8.
+
+      Costs: ___________________.
+
+
+3.0 Convert Existing Content to On-Line Delivery:
+
+      Description of Services: This task will support conversion and deployment of agency knowledge from traditional classroom delivery to on-
+      line delivery that is Section 508 compliant. Each knowledge object such as a chart, diagram, photograph, block of text, audio file, video
+      file, animation, document, and interaction will be separately loaded into the knowledge repository to comprise various information transfer
+      modalities including Section 508 tags.
+
+      Deliverables: On-line course converted and available in the GoLearn content management portal running in the back-end infrastructure. The
+      course can also be exported and delivered as a stand-alone SCORM 1.2, or SCORM 2004 (releases 1-4) series of relative-path HTML files with
+      supporting JavaScript, cascading style sheets (CSS), graphic files, documents, and other resources.
+      Costs: Conversion of courses depends on the amount of material and duration of the training. To provide costing parameters, an hour of on-
+      line content is defined as 50 screens. Each hour of on-line courseware conversion (50 screens including interactions, case studies,
+      embedded interactions, proficiency evaluation questions, instructional content, graphics development and text, but no video, audio, or
+      animation) is:
+
+
+      3.1   $_________ to convert for each hour of on-line instruction. This level of effort allows for taking existing instructor-based or self-
+      study course materials and converting them to on-line delivery including developing learning objectives, on-line interactions, and
+      instructional content.
+
+
+      If existing materials are not available, the course can be audited and the instructional material documented for a cost of is:
+      3.2   $___________ per day of classroom delivery (rounded up to the whole day) plus any travel if required.
+
+
+4.0  User Registration and tracking:
+
+      Description of Services: This support item is to customize an on-line registration system for a GoLearn client agency.  This task will
+      support establishing the agency-unique registration site customized to an agency requirements, linking to the database, creating a custom
+      registration form to collect agency-unique fields, and providing a real-time dashboard showing reports of user progress and completions.
+      These sites interface to the on-line courses and will track student progress, bookmark location to the page, document completion, and
+      provide a course completion certificate that can be printed from a secure socket layer (SSL) encrypted environment. This task assumes that
+      GoLearn is hosting the registration site.
+
+      Deliverables: On-line registration site running in the GoLearn content management portal linked to the course, user database, and knowledge
+      repository to support user registration providing a real-time dashboard showing reports of user progress and completions.
+      Costs: Customizing the registration site to an agency and developing the agency-specific dashboard is: _______________.
+
+
+
+5.0 Host Courses and Infrastructure
+
+      Description of Services: Provide enterprise-level hosting services in support of the on-line development and knowledge delivery beginning
+      as the infrastructure is established and continuing throughout development and delivery. Provide Automatic on-site and off-site back-up
+      each day to a revolving series of back-up files to provide daily back-ups, a single weekly and a monthly back-up. Provide redundant
+      internet service providers, back-up power generator, and 24-hour access and security.
+
+      Deliverables: High-speed high-availability hosting services running in a shared or dedicated server with all the infrastructure, back-up,
+      monitoring, maintenance and patching to provide enterprise-level hosting on a server with a current certificate and authority to operate.
+      Costs: Costs for various levels of hosting are provided:
+
+   1.  Small-size Agency: defined as under 2,000 users such as FERC using a shared server environment: _____________.
+
+   2.  Medium-size Agency: defined as over 2,000 users but less than 20,000 using a shared server environment: $__________________.
+
+   3. Large-size Agency: defined as over 20,000 users but less than 200,000 using a dedicated server environment: $__________________.
+
+   4. Customized Server Environment: For massive agencies of more then 200,000, where load-balancing, multiple servers, and a custom
+      infrastructure is required, the first step would be to perform an infrastructure requirements analysis to develop a dedicated plan. This
+      analysis and plan is $_________________. Based on the plan, a cost proposal could be prepared.
+
+
+
+6.0 Provide Help Desk Support
+
+Description of Services: Provide the following help desk services in support of the GoLearn knowledge Portal environment for on-line course
+delivery in the GoLearn registration system:
+
+      □ Hours: 8:30am to 6:00pm EST Monday through Friday excluding holidays. Calls that go to voicemail  outside  of  normal  help  desk  hours
+        will be responded to the next business day morning.
+
+      □ Include on-line database-driven software that supports administrators  logging  calls  as  well  as  enabling  users  to  report  issues
+        themselves
+
+      □ Toll-free number as well as local Washington DC number
+
+      □ Help desk support includes assistance with registration, logging in, password resets, sending lost passwords to  users,  troubleshooting
+        course access, navigation, appropriate procedures to follow, and fielding general questions regarding the course.
+
+      □ Real-time on-line dashboard that provides reports of numbers of help desk calls, issues,  summary  by  issue,  and  detailed  calls  are
+        available real-time to authorized personnel with the secure access.
+
+.
+
+      Deliverables: Help desk support via phone or email by trained technical support personnel with access for authorized
+
+      Costs: Costs for various levels of Help desk support are provided below:
+
+           1. Small-size Agency: defined as under 2,000 users using a shared server environment for $____________ per month on a monthly basis
+              or: $_______________ for a year of help desk support plus $____________ per year for each course in the agency site.
+
+           2. Medium-size Agency: defined as over 2,000 users but less than 20,000 using a shared server environment: $_____________ per month
+              on a monthly basis or: $_____________ for a year of agency help desk support plus $_____________ per year for each course in the
+              agency site.
+
+           3. Large-size Agency: defined as over 20,000 users but less than 100,000 using a dedicated server environment: $____________ per
+              month on a monthly basis or: $___________ for a year of agency help desk support plus $______________ per year for each course in
+              the agency site.
+
+           4. Customized Server Environment: For massive agencies of more then 200,000, where courses could result in hundreds of users calling
+              in at the same time, the first step would be to perform a course delivery analysis to define the help desk requirements. This
+              analysis and plan is $______________. Based on the plan, a detailed cost proposal could be prepared.
+
+
+7.0 Technical Support
+
+Description of Services: Assist in researching and troubleshooting client agency issues with on-line content,  SCORM,  Section  508,  LMS,  LCMS,
+hosting, server, and registration to server as an expert resource.
+
+Deliverables: Technical support via phone or email by trained technical support personnel facile with Section 508 compliance, SCORM, and various
+on-line course development and delivery issues.
+Costs: Costs for various levels of technical support are provided below:
+
+           7.1 Small-size Agency: defined as under 2,000 using a shared server environment with up to ten courses: $__________ per month on a
+           monthly basis or: $___________ for a year of technical support.
+
+           7.2  Medium-size Agency: defined as over 2,000 users but less than 20,000 using a shared server environment with up to ten courses:
+           $___________ per month on a monthly basis or: $______________ for a year of agency technical support.
+
+           7.3  Large-size Agency: defined as over 20,000 users but less than 200,000 using a   dedicated server environment with up to 50
+           courses: $_____________ per month on a monthly basis or: $____________ for a year of agency technical support.
+
+           7.4  Customized Server Environment: For massive agencies of more then 200,000, where multiple courses could have issues, the first
+           step would be to perform a course analysis to define the technical desk requirements. This analysis and plan is $_______________.
+           Based on the plan, a detailed cost proposal could be prepared to provide technical support.
+
+
+8.0 Provide Instruction to Client agencies in using the Infrastructure
+
+
+Description of Services: Provide hands-on instruction, practice, and exercises to enable client agency personnel to use the knowledge repository
+to manage their own content. This will provide live instruction taught to content managers in a computer lab.
+
+Training sessions are typically 4-hours split from 10am –noon, a lunch break and then 1pm – 3pm. PowerTrain customizes the examples, URLs, and
+content to each agency and will provide the instructors (two for a class up to 12 agency personnel), and instructional materials. The client
+agency or GoLearn will provide the Internet-connected computer lab.
+
+Deliverables: Instructor-based training on how to work with the sites to produce on-line courses in a computer lab with each participant
+completing hands-on exercises and building/editing content in the on-line repository
+
+Costs: The 4-hour training session conducted on-site for up to 12 participants with 2 instructors is: $____________ per course.
+
+
+
+9.0 Develop New On-Line Course:
+
+Description of Services: This task will support new on-line course development starting from course objectives for when there is not an existing
+course through development in the GoLearn portal providing a course that is Section 508 compliant. Each knowledge object such as a chart,
+diagram, photograph, block of text, audio file, video file, animation, document, and interaction will be separately loaded into the knowledge
+repository to comprise various information transfer modalities. Work includes developing learning objectives, tests, embedded questions,
+graphics, instructional content and programming the instruction in the GoLearn portal to comprise a course. An hour of courseware is defined as
+50 on-line screens.
+
+Deliverables: On-line course converted and available in the GoLearn content management portal running in the back-end infrastructure. The course
+can also be exported and delivered as a stand-alone SCORM 1.2, or SCORM 2004 (releases 1-4) series of relative-path HTML files with supporting
+JavaScript, cascading style sheets (CSS), graphic files, documents, and other resources.
+Costs: Conversion of courses depend on the amount of material and duration of the training. To provide costing parameters, an hour of on-line
+content is defined as 50 screens. Each hour of on-line courseware development (50 screens including interactions, case studies, embedded
+interactions, proficiency evaluation questions, instructional content, graphics development and text, but no video, audio, or animation) is
+$_____________ per hour of on-line instruction. This level of effort allows for developing on-line courses including developing learning
+objectives, on-line interactions, and instructional content for cases when there are not existing courses and the only available materials
+consist of a PowerPoint or less.
+
+
+10.0 Implement Existing Course into Registration System:
+
+Description of Services: This task will support loading an existing on-line course into the registration system as one knowledge object. The
+task will support adding the bookmarking function, linking into the registration, and providing a completion certificate and ensuring the
+original course bookmarks and provides completion. This task is not to revise content or make the course Section 508 compliant; it just to add
+it to the registration, tracking, and completion system.
+
+Deliverables: On-line course linked in and available from the registration system supporting bookmarking and completion documentation and
+reporting.
+Costs: Implementing a course in the registration system depends on the amount of material and duration of the training. These costs are
+$________ to link a course up to four hours (200 screen) with each additional 100 screens adding $________.
+
+
+11.0 Knowledge Management Support:
+
+
+Description of Services: This task will provide for Knowledge Management Support on an hourly basis to assist GoLearn and client agencies in
+supporting client agencies conversion to the new GoLearn portal.
+
+Deliverables: Knowledge Management Support by labor category providing the hours of support.
+Costs: Knowledge Management Support labor categories include:
+
+
+
+
+
+
+
+
+
+|                   |                          |Fully Burdened Hourly Rate    |
+|Item Number        |Labor Category            |                              |
+|11.1               |Principle Investigator    |                              |
+|11.2               |Senior Analyst            |                              |
+|11.3               |Web Database Developer    |                              |
+|11.4               |Programmer Analyst        |                              |
+|11.5               |Instructional Designer    |                              |
+|11.6               |Graphic Artist            |                              |
+|11.7               |Technical Editor          |                              |
+|11.8               |Quality Assurance         |                              |
+|                   |Specialist                |                              |
+
+

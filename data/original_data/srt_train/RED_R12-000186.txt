@@ -1,0 +1,323 @@
+Smithsonian Enterprises Request for Proposal Stores Point of Sale Hardware Replacement March 23, 2012 RFP# R12-000186
+
+Smithsonian Institution
+
+Page 1
+
+I.
+
+Background
+
+A. About Smithsonian
+The Smithsonian Institution (the "Smithsonian" or "Institution") is a non-profit trust instrumentality created by act of Congress of the United States in 1846 with a mission for "the increase and diffusion of knowledge." As the world's largest museum and research complex, consisting of 19 museums and galleries, the National Zoological Park and nine research facilities, we are known globally as a leader in history, art, and scientific exploration. In 2008, more than 25 million people from around the world visited the museums and the National Zoo and there were nearly 173 million online visits to www.smithsonian.org. The total number of iconic objects, priceless works of art and rare specimens at the Smithsonian is estimated at more than 136 million, and serves as the basis for research, exhibitions and public programs in the arts, history, culture, and the sciences. As we shape the Institution for the 21st century, we build on our historic legacy, incomparable collection, and the passion and expertise of a dedicated and knowledgeable staff. With a significant world-wide reach, Smithsonian educators enlighten, inspire, and engage an audience of all ages on every continent. In 2008, over 30 million students were reached using Smithsonian educational publications, online tours, and downloaded lesson plans and activities. With over 17,000 teachers having participated in Smithsonian education or professional development programs and over 160 affiliate museums, the Smithsonian presence can be found locally in communities in every U.S. state. Using cutting edge technology, the Smithsonian Web 2.0 initiative has expanded our global reach. For example, over 81 million participants have used the Smithsonian Environmental Research Center's Interactive Electronic Field Trips since 2002. More recently, Smithsonian, via such portals as the Webby award winning SmithsonianEducation.org, is making more resources and collections accessible to the public, and we are a presence on social networking sites such as Facebook, Twitter, Flickr, and YouTube.
+
+B. About Smithsonian Enterprises
+Smithsonian Enterprises ("SE") is the revenue-generating unit of the Smithsonian, responsible for raising unrestricted funds to support the mission of the Smithsonian. SE is comprised of Smithsonian Media, Retail and Licensing business divisions. The Media division is comprised of Smithsonian and Air & Space magazines and their respective websites, Smithsonian Channel, Smithsonian Books, and goSmithsonian Visitors Guide. The Retail division consists of the Museum and airport stores, food and beverage services, theater operations and the Smithsonian Catalog. The Licensing division is comprised of Consumer product licensing, adult and student travel and tour programs and the Journeys Magazine. Additionally, SE houses the online retail site at SmithsonianStore.com and expert-led guided travel site at SmithsonianJourneys.org, which represent the e-commerce aspect of the organization. C. About Current SE Retail Store Operations SE Retail currently operates multiple retail stores throughout the Smithsonian Institution museums located in DC, NY, and VA. In addition, there is one store located at Union Station, DC and two stores located at airports ­ Reagan airport in DC, and Dulles airport in VA. Although admission to Smithsonian Institution Page 2
+
+most Smithsonian museums is free, the sales at the stores provide vital financial support to host museums and the Institution as a whole. Stores operations are open all days of the year except Dec 25. Stores ring about 2.4M transactions annually. Store POS hardware is operational at the 16 locations listed below. Typically, the larger museums hosts multiple stores (referred to as satellite stores) while the smaller museums usually have a single store.
+
+1.
+
+Retail Locations: a. b. c. d. e. f. g. h. i. j. k. l. m. n. o. p. African Art Museum (DC) American Indian Museum Heye Center (NY) Freer Gallery of Art (DC) Hirshhorn Museum and Sculpture Garden (DC) Portrait Gallery (DC) Postal Museum (DC) Renwick Gallery (DC) Air and Space Museum (DC) Udvar-Hazy Center Air and Space Museum (VA) American History Museum (DC) American Indian Museum (DC) Natural History Museum (DC) The Smithsonian Castle(DC) Dulles International Airport Store (VA) Ronald Reagan Airport Store (DC) Union Station (DC)
+
+Stores listed should not be taken as the sum limit of SE store operations as SE is constantly exploring addition of new locations, sales channels and latest industry trends to maximize potential return to the Institution. Additionally, the satellite stores within each location undergo frequent relocations, additions and closings to meet business demands. 2. Current Infrastructure a) Servers: Each location uses its own dedicated Dell server. All the 16 production servers reside in SE's centralized data center located in Herndon, VA. Each server runs OS MS Win Server 2003 Service Pack 2, SAP POS application software and MS SQL Server 2005 software. Additionally, SE has lab servers (2 physical and 1 virtual lab server) which are also located in the data center.
+
+Smithsonian Institution
+
+Page 3
+
+b) POS Registers & Peripherals: SE currently uses the NCR model NCR RealPOS 80 cash registers. SE has about 95 POS NCR registers dispersed at the different locations. The POS registers connect securely to the respective server residing in the data center over Smithsonian Metropolitan Area network (MAN). Additionally, there are three lab POS registers used for testing purposes. Two of these are located at the SE DC Cap Gallery Office and one is located at the Air & Space Museum onsite IT backroom to test connections from the different locations. Each registers runs OS Windows XP Service Pack 3 and has SAP POS client software. Each POS register unit is comprised of ­ ˇ ˇ ˇ ˇ ˇ ˇ ˇ The CPU unit with UPS A dynakey display with magnetic credit card swipe reader A cherry keyboard with embedded touch pad 2 cash drawers A scanner A customer display A receipts/ report printer
+
+Additionally, SE uses eight laptops configured as portable registers which are used for special events like book signings, tent sales during Cherry Blossoms, Independence Day, etc. These laptops are relatively new (deployed in year 2008) and run the SAP POS software application. These laptops will not be replaced. However, their SAP software application licenses will be included in the POS software maintenance and support services. c) POS Software: SE currently runs SAP POS V2.1 with Transnet software application in a PCI compliant configuration (also known as SAP Transactionware V10.1.0 Build 692) at all its Retail locations.
+
+d) Smithsonian MAN: The POS registers at the various locations connect to their
+
+3.
+
+respective server residing in the Herndon data center via secure Smithsonian MAN. All stores connect via the Smithsonian MAN except the two airports stores and the Union Station store which connect via 512K dedicated circuits. Current Equipment Listing
+
+The approximate POS hardware equipment quantities currently in place at each Smithsonian location are listed below:
+Location African Art *American Indian Museum Heye Center (NY) Freer Gallery of Art Hirshhorn *Portrait Gallery Main Store #of POS Register Units 3 2 2 2 3 # of Servers 1 1 1 1 1
+
+Smithsonian Institution
+
+Page 4
+
+Book Store Postal Museum Renwick Gallery Air & Space Main Store Basement Store Mezzanine Store Planetarium Dog Tag area Theatre area Hazy Air & Space American History Main Store Mall Store Price of Freedom Store American Indian (DC) Natural History Gallery Store Family Store Gems Store Mammals Store Tricera Store Smithsonian Castle Dulles Airport Reagan Airport Union Station Lab
+
+2 2 1 6 7 2 2 1 1 8 6 3 2 6 4 4 4 4 1 2 2 3 2 3
+
+1 1 1
+
+1 1
+
+1 1
+
+1 1 1 1 2 Physical and 1 Virtual Lab Server
+
+MIS Stock 5 Note: * Represents locations with total of 7 registers that may not be included in the POS equipment replacement.
+
+D. About this Project
+The sales at Smithsonian's stores provide income critical to supporting the Institution's mission. With an aging POS infrastructure, the Smithsonian stores cannot meet the demands required of a robust, multiple location, retail operation. In order to maximize financial return to the Institution through its retail operations, the Smithsonian is conducting a request for proposals ("RFP") to identify a vendor capable of providing, installing, integrating, and certifying a new NCR POS hardware system that will offer improved performance and processing capabilities. 1. POS Hardware Replacement: SE's current NCR POS RealPOS80 hardware is aging and requires replacement. SE seeks to replace its aging NCR POS hardware with new NCR POS hardware. Out of the 95 cash registers, SE will require the replacement of a minimum of 88 registers and a maximum of 95 registers (See * Note in the above equipment listing table).
+
+Smithsonian Institution
+
+Page 5
+
+2. POS Hardware Maintenance: SE seeks maintenance and support for the new NCR POS hardware.
+
+II.
+
+Scope of Work
+
+Lab Certification Contingency: SE will purchase one set of POS hardware that will be used in the lab. SE anticipates that the selected vendor will configure the SE lab in SE premises; will work with SAP to ensure that the new POS hardware works with SE's SAP POS software; and will test and ensure that the complete configuration passes a comprehensive test plan. SI's purchase of the rest of the POS hardware, and the final rollout will be contingent on successful test completion in the SE lab.
+4.
+
+3. POS Software Maintenance: SE will continue to use its current SAP POS software application SAP POS V2.1 with Transnet software application in a PCI compliant configuration (also known as SAP Transactionware V10.1.0 Build 692) at all its Retail locations. SE seeks maintenance and support services for its SAP POS software application.
+
+A. General Description
+Through this RFP, SE seeks to select the new NCR POS hardware and the vendor who will install, integrate and certify the selected new NCR POS hardware to work with SE's SAP POS software application. The selected vendor will be required to provide maintenance and support services for the new NCR POS hardware, and for SE's SAP POS software application as follows: 1. Procure Hardware: Provide the new NCR POS hardware that supports SE's requirements outlined below in Section II.B and any additional options agreed to by SE in Section II.F. The new NCR POS hardware should be configured to work with SE's SAP POS software application in a PCI compliant configuration. 2. Build a test lab: Establish a lab. Install and test the integration of the new NCR POS hardware with the SAP POS in a PCI compliant configuration. The selected vendor shall execute a test plan in a test lab production configuration. Provide baseline configuration documents to SE. Establish and provide a standard hardware image that will be utilized for the roll-out. 3. Develop project schedule: Develop a project schedule (in conjunction with SE users) which will provide a phased production roll-out plan for all SE Retail locations. The roll-out plan should accommodate two pilot roll-outs - one at a small site and one at a large site with a monitoring period before roll-out to the rest of the locations. 4. Execute roll-out plan: Install and roll-out the new NCR POS hardware/ SAP POS software configuration utilizing the approved hardware image at all Retail locations. 5. Maintain POS hardware: Provide maintenance and support services for the new POS hardware.
+
+Smithsonian Institution
+
+Page 6
+
+6. Maintain POS software: Provide maintenance and support services for SE's SAP POS software application. 7. Be an NCR and SAP Partner: The selected vendor will be required to support both the POS hardware and the POS software application.
+
+B. POS Hardware Requirements
+SE anticipates that the selected vendor will replace SE's old NCR POS cash registers and peripherals with new NCR POS hardware cash registers and peripherals. Out of the 95 cash registers, the vendor will be expected to replace a minimum of 88 registers and a maximum of 95 registers (See * Note in the equipment listing table). SE will purchase the DELL Production Servers and the Lab Servers independently of the contract resulting from this RFP. The selected vendor will not be responsible for the purchase of these servers.
+
+1.
+
+Base POS Hardware Requirements
+
+The selected vendor will be required to ensure that each new NCR POS register unit has the following peripherals ­ a) The CPU unit with UPS : The dimension and color requirements for the CPU Unit are as follows:
+DIMENSIONS ˇ Compact modular (W x D x H): - 13.36 x 15.5 x 4.56" - 33.93 x 39.37 x 11.58cm COLOR OPTIONS ˇ Charcoal gray The CPU unit shall meet the following requirements for the high volume processing environment of SE Retail Operations: PROCESSOR ˇ IntelŽ CoreTM2 Quad Q9000 Series processor (1066MHz FSB) MOTHERBOARD ˇ IntelŽ Q965 Express Chipset ˇ IntelŽ Graphics Media Accelerator 3000 ˇ IntelŽ Matrix Storage Technology (IntelŽ MST) ˇ Serial ATA (SATA) 3GB/s storage interface MEMORY ˇ 8GB system memory ˇ Dual-channel DDR2 (667MHz) ˇ 4 DIMM sockets ˇ Up to 256MB video memory (shared)
+
+Smithsonian Institution
+
+Page 7
+
+STORAGE MEDIA ˇ Hard disk drive: - 250GB SATA, 7200rpm - On-board RAID, with second hard drive option - Quick Swap SATA dock with secure, tool-free front access to both disk drives ˇ Internal 24x CD/DVD-ROM drive option OPERATING SYSTEMS (SE will purchase the Win XP/ Win 7 software licenses independently of the contract resulting from this RFP). ˇ WindowsŽ XP Professional ˇ Windows 7 Professional POWER MANAGEMENT ˇ 80 PLUS certified power supply (260 watt capacity) (select models) ˇ ACPI 3.0 compliant SYSTEM MANAGEMENT ˇ NCR Retail Systems Manager (RSM)
+
+b) c) d) e) f) g)
+
+A dynakey display with magnetic credit card swipe reader A cherry keyboard with embedded touch pad 2 cash drawers A merchandise scanner A customer display A receipts/ report printer
+
+The POS registers at the various Retail locations shall be configured to communicate with the respective store servers located in SE's Herndon data center over a secure Metropolitan Area Network (MAN). The existing cash wrap furniture at majority of SE stores is pre-designed to accept specific dimensions of the CPU unit. The stores are also pre-designed with specific color schemes. The selected vendor will be required maintain compatibility and consistency with the existing furniture and color schemes. The hardware model proposed by the vendor shall not be at the end of its what can reasonably be construed as its expected life cycle.
+
+C. POS Hardware Support Requirements
+The selected vendor will be required to provide maintenance and support services for the new NCR POS hardware that meets the following general criteria:
+
+Smithsonian Institution
+
+Page 8
+
+1. 2. 3. 4. 5.
+
+Single Point of Contact Response Time of 4 hours Coverage options - 7 days a week, 8AM to midnight Support contract for 5 years with option to extend 2 additional years Escalation procedures for major issues
+
+D. POS Software Application Support Requirements
+The selected vendor will be required to provide maintenance and support services for its SAP POS software application that meets the following general criteria: 1. 2. 3. 4. 5. Single Point of Contact Coverage options - 24*7 helpdesk Support contract for 5 years with option to extend 2 additional years Maintain PCI compliance throughout the life of contract Escalation procedures for major issues
+
+E. POS Cash Registers Operating System Software requirements
+The version of the Windows operating system software for the cash registers will be determined during the lab phase of the project based on hardware compatibility and SE IT requirements. SE will purchase the Win XP/ Win 7 software licenses for the cash registers independently of the contract resulting from this RFP. The selected vendor will not be responsible for the purchase of these Windows software licenses.
+
+F. OPTIONAL POS HARDWARE FEATURES
+In addition to the base POS hardware requirements listed in Section II.B, SE desires information detailing the following optional POS hardware features from potential vendors. SI, at its sole discretion, shall exercise the option to incorporate such additional features either at the time of contract award, or through the exercise of contract options for the features as set forth therein. 1. 2. 3. 4. Touch screen Wireless cash registers/ handheld devices Customer facing credit card swipe devices Other features which are available on the new NCR POS hardware
+
+III.
+
+Instructions and Conditions
+A. General Conditions 1. The Smithsonian intends to protect as confidential any proprietary information contained within each potential vendor's proposal to the extent that such proprietary information is clearly marked as confidential (the "Confidential Information") and the disclosure of such Confidential Information to a third party would cause the disclosing party substantial competitive harm. The Smithsonian will not disclose any Confidential Information to any third
+
+Smithsonian Institution
+
+Page 9
+
+parties except as required by federal laws, regulations, or the Smithsonian's records disclosure policy, which is based upon the Freedom of Information Act, 5 U.S.C. § 552. 2. The purpose of this RFP is to provide interested parties with sufficient information to enable them to prepare and submit proposals for consideration by the Smithsonian. 3. Proposals prepared in response to this RFP shall comply with the general instructions contained in this document. Proposals that deviate from these instructions may be disqualified at the Smithsonian's discretion. 4. The Smithsonian reserves the right to enter into negotiations with any or all potential vendors at its discretion and based upon the best interests of the Smithsonian. 5. The Smithsonian is not responsible for paying any proposal preparation costs or any other costs associated with a response to this request. This RFP does not obligate the Smithsonian to enter into any agreement, nor shall it be construed as authorization for potential vendors to proceed with any work directly or indirectly related hereto. 6. All information and materials submitted in response to this RFP for consideration by the Smithsonian and all work product created in the fulfillment of the successful Potential vendor's duties under the negotiated agreement will become the Smithsonian's property and will be returned only at the Smithsonian's discretion. 7. Smithsonian reserves the unconditional right to cancel this RFP or to terminate negotiations at any time without cost or liability of Smithsonian. Participation in this RFP or any resulting contract constitutes an affirmative waiver by participants of any claim to proposal preparation costs.
+
+B. Pre-submittal Requirements
+1. Potential vendors interested in participating in this RFP must provide notice of their intent to submit a proposal to Alyssa Reiner, Esq., in the Smithsonian's Office of Contracting by no later than 12:00 p.m., Eastern Time, April 9, 2012. Notification may be submitted by email to reinera@si.edu. The Smithsonian reserves the right to reject any proposal not preceded by a proper notification of intent. 2. You may submit both administrative and substantive questions about the RFP and the RFP process by email addressed to Alyssa Reiner at reinera@si.edu. Questions must be submitted by 12:00 p.m., Eastern Time on April 9, 2012 in order to ensure that you receive a response.
+
+C. Submission Process
+1. This RFP is being issued for potential vendors interested in entering into an agreement with Smithsonian for the procurement, installation and maintenance of, and support services Smithsonian Institution Page 10
+
+for, NCR POS hardware; and the installation and maintenance of, and support services for, Smithsonian's SAP POS software application as described in the attached cover letter and herein. Your proposal should only address the services described herein. Each potential vendor must submit six (6) copies of its proposal. Proposals and proposal modifications shall be submitted in sealed envelopes or packages, with the subject matter of the RFP and the name and address of the potential vendor clearly identified. Proposals and modifications sent via email, fax, or to any other address will not be considered. All proposals must be received at 2011 Crystal Drive, Suite 350, Arlington, VA, 22202 no later than 3:00 p.m. Eastern Time on April 18, 2012 in order to be considered. 2. Proposals and proposal modifications must be submitted in sealed envelopes or packages addressed to the office specified, with the subject matter of the RFP and the name and address of the potential vendor clearly identified. Proposals and modifications sent via email, fax, or to any other address will not be considered. 3. The Smithsonian reserves the right to reject any and all proposals received as a result of this request. Noncompliance with the conditions of this RFP may result in disqualification of your proposal. The Smithsonian may refuse to consider any proposal received after the exact date and time specified for receipt. 4. At Smithsonian's option, any or all of the potential vendors may be invited to meet with Smithsonian representatives in person in Washington D.C. to demo their recommended systems, discuss their proposals and answer questions. Travel and per diem for this meeting will be the responsibility of each potential vendor. In person demos will be conducted on April 24th and 25th, 2012, and potential vendors are advised to consider their availability during that week prior to submitting a proposal. 5. Authorized Points of Contact. Potential vendors are hereby placed on notice that the only persons authorized to conduct discussions and/or make commitments on behalf of the Smithsonian regarding this RFP and all matters incident hereto are the Smithsonian Contracting Officer and her designated representatives from the Office of Contracting.
+
+D. Submission Requirements
+Potential vendors shall provide detailed information in their proposals regarding company profile, past performances, location support and references, pricing, and project plan & deliverables, as indicated in this Section III.D: 1. Company Profile, Past Performances, Location Support and References
+
+The selected vendor shall staff this project with technical implementation consultants who have prior implementation experience to lead the technical, operational and logistical components of Smithsonian Institution Page 11
+
+this implementation. Proposals shall provide resumes of key personnel who will be assigned to this project. All proposals shall provide the following: a) Company Profile ­including history, size, location, financial strength of the company, and local presence in the Washington DC metro area, if any. Describe your partner relationship with NCR and SAP. b) Past Performance ­ Selected vendor shall provide (1) Listings of businesses currently using your proposed NCR POS hardware along with a brief description of projects completed. (2) Descriptions of your experience supporting NCR POS hardware of a major retail company. (3) Descriptions of your experience supporting SAP POS software application in a retail environment. c) Washington DC metro area and NY location support - Describe your ability to provide POS hardware and SAP POS software application support in Washington DC metro area and NY. d) References ­ Proposals shall provide three references from past business entities whose projects were comparable in size and scope to this implementation. 2. Pricing Potential vendors shall include in their proposals a detailed pricing plan incorporating all elements set forth below. Proposals shall provide detailed background information and detailed calculations supporting proposed system costs. a) Provide per lane price quote for 88 to 95 cash registers and associated peripherals which support the SE requirements listed under Section II.A and II.B. The price per lane should include set-up and installation costs. Out of the 95 cash registers, SE will replace a minimum of 88 registers and a maximum of 95 registers (See * Note in the equipment listing table). b) Provide pricing for maintenance and support services for the new NCR POS hardware as detailed under Section II.C
+
+Smithsonian Institution
+
+Page 12
+
+c) Provide pricing for maintenance and support services for SE's SAP POS software application as detailed under Section II.D. SE is current in their SAP POS software maintenance for all registers. e) Provide a price quote for the POS hardware options listed under Section II.F. Since these options will be purchased at the discretion of SE, the vendor should keep the pricing for these options separate from the base POS hardware requirements listed under Section II.B. 3. Project Plan
+
+Proposals shall include a detailed overall project plan that contains both an implementation plan and an overall schedule for implementation. a) Implementation Plan. The implementation plan shall contain and address the following: (1) A communication plan identifying dates for kick off meeting, discovery meetings, weekly project status meetings and status reports (2) Test lab certification for the new POS hardware to work with SE's SAP POS software application (3) (4) Test plans with key indicators that will ensure accurate implementation Proposed vendors plan to work with SE to establish production roll-out schedule
+
+b) Implementation schedule. All proposals shall contain a detailed implementation plan that takes into consideration the requirements that the selected vendor shall be fully responsible for the roll-out of the new POS hardware/ SAP POS software configuration to defined SE locations; the initial roll-out of the new POS hardware shall take place at two pilot stores in September 2012; the roll-out for the remaining stores shall occur during fiscal year 2013; and all roll-outs shall be completed before August 1, 2013. The implementation schedule shall incorporate the foregoing requirements, and address the following: (1) (2) (3) Test lab should be set up and in place in June 2012 Procurement estimated timeline Roll-out dates for defined locations
+
+4. Vendor Technical Capabilities
+
+Smithsonian Institution
+
+Page 13
+
+Proposals shall include narrative detailing the proposed vendor's technical capabilities with respect to the following: a) The proposed vendor's ability to provide all POS hardware requirements as set forth in Section II.B and POS hardware options as set forth in Section II.F, above b) The proposed vendor's ability to meet all POS hardware maintenance and support requirements as set forth in Section II.C, above c) The proposed vendor's ability to meet all SE's SAP POS application software maintenance and support requirements as set forth in Section II.D, above d) Architecture design for a PCI compliant and secure system implementation e) The proposed vendor's ability to create and provide baseline configuration documents 5. Key Terms and Sample Agreement Proposals shall include an explanation of any exceptions or deviations you will require with respect to the attached key contract terms document. In addition, proposals shall include a sample contract containing all key terms you anticipate being part of any contract resulting from the RFP. Exceptions and/or unfavorable terms will not automatically cause a proposal to be deemed unacceptable. However, exceptions and vendor terms not providing obvious benefit to the Smithsonian may result in rejection of a proposal as unacceptable.
+
+E. Evaluation Criteria
+1. 2. Demonstrated experience with installing NCR POS hardware. Demonstrated experience supporting NCR POS hardware of a major retail company.
+
+3. Demonstrated experience supporting SAP POS software application on NCR POS hardware in a major retail company. 4. Total price for replacement of POS hardware, maintenance and support of POS hardware, maintenance and support of POS software application, and consulting costs. 5. Proposed project schedule set forth in Section III.D.3 and vendor's technical capabilities set forth in Section III.D.4 6. 7. Financial strength of the company. Washington DC metro area and NY location support capabilities. Page 14
+
+Smithsonian Institution
+
+8.
+
+References from the Retail industry.
+
+9. Exceptions and deviations to the Smithsonian Key Terms and Conditions document, as well as vendor sample contract terms.
+
+IV.
+
+Deadlines
+A. Notification of Intent Due: Notification of your intent to submit a proposal must be received at the email address reinera@si.edu no later than 3:00 p.m. Eastern Time on April 9, 2012. B. Questions Due: All questions regarding the RFP and attachments must be received at the email address reinera@si.edu by no later than 3:00 p.m. Eastern Time on April 9, 2012. C. Proposals Due: All proposals must be received at 2011 Crystal Drive, Suite 350 Arlington, VA 22202 no later than 3:00 p.m. Eastern Time on April 18, 2012 in order to be considered. D. In Person Presentations/Demos: In person demos may be conducted at Smithsonian's option on April 24th and 25th, 2012, and potential vendors are advised to consider their availability during those days prior to submitting a proposal.
+
+V.
+
+Exhibits
+A. Smithsonian Key Terms and Conditions
+
+Smithsonian Institution
+
+Page 15
+
+EXHIBIT A
+Smithsonian Stores POS Hardware Replacement KEY TERMS AND CONDITIONS
+
+The Smithsonian anticipates incorporating the following clauses, which it considers material, in any agreement resulting from this RFP process. In addition to the clauses provided below, and based upon suggested business terms provided in the successful proposal, the Smithsonian may also require additional provisions. The Smithsonian reserves the right to make changes to the language below, and to incorporate additional provisions as it deems necessary. Per the requirements of the RFP, Companies are expected to indicate in their proposals any proposed clauses or language with which they take exception, or from which they propose to deviate. Final agreement between the selected Company and the Smithsonian shall be reflected in a negotiated agreement between the parties. A. DELIVERABLES
+
+3. The Smithsonian Institution Contracting Officer's Representative reserves the right to inspect services performed by the Contractor and may reject such work not meeting the requirements. 4.
+
+2. Neither the Smithsonian Institution's review, approval or acceptance of services, nor payment for any of the services required under this contract, shall be construed to operate as a waiver of any rights under this contract or of any cause of action arising out of the performance of this contract, and the Contractor shall be and remain liable to the Smithsonian Institution in accordance with applicable law for damages to the Smithsonian Institution caused by the Contractor's negligent performance of any of the services furnished under this contract.
+
+1. Inspection and acceptance will be made by the Contracting Officer or his designee (the Contracting Officer's Representative, or "COR") at the time services are performed.
+
+B. CONTRACT ADMINISTRATION DATA
+
+a. Successful test of all required and proposed functions. b. Delivery of the complete product and documentation set to Smithsonian, as required.
+
+Acceptance will be based on the following criteria, and to the Smithsonian's satisfaction:
+
+5. Contract Management. Notwithstanding the Contractor's responsibility for total management during the performance of this contract, the administration of the contract will require maximum coordination between the Smithsonian and the Contractor. The following individuals will be the Smithsonian points of contact during the performance of this contract: Smithsonian Institution Page 16
+
+6. Contracting Officer. The Contracting Officer will effect all contract administration. Communications pertaining to contractual administrative matters shall be addressed to the Contracting Officer. No changes in or deviation from the scope of work shall be undertaken without a written modification to the contract executed by the Contracting Officer and authorizing such changes.
+
+7. Contracting Officer's Representative. ___________________________, or his/her representative, shall act on behalf of the Contracting Officer in the administration of this contract with respect to the following: resolution of issues that may arise between the Contractor and the Smithsonian in connection with such matters as acceptability of workmanship and Contractor's compliance with technical requirements; and the approval and acceptance of work performed under this contract. 8. This delegation does not authorize the modification of any of this contract's provisions, terms or conditions. All authorities not herein delegated are reserved to the Contracting Officer. 9. The Contractor shall make available such records, reports, and facilities as may be required to carry out this assignment.
+
+10. The Contractor is advised that only the Contracting Officer may change or modify the terms of this contract, or take any other action that obligates the Smithsonian Institution, and then such action must be set forth in a formal modification to the contract. The authority of the COR is strictly limited to the specific duties set forth in her letter of appointment, a copy of which will be furnished to the Contractor. Contractors who rely on direction from persons other than the Contracting Officer (or a COR acting with the strict limits of her responsibilities, as set forth in her letter of appointment) do so at their own risk and expense, as such actions do not bind the Smithsonian contractually. All questions concerning the authority of a Smithsonian employee to direct the Contractor with regards to the contract should be referred to the Contracting Officer. a. The Smithsonian reserves the right to verify the amount of services rendered on any invoice by review of the Contractor's records. Such review may be made by appropriate Smithsonian personnel or an outside audit firm, at the election of the Contracting Officer. The Contractor shall make such records available to such audit personnel at any reasonable time. Invoices must reflect costs as shown in Contractor's proposal referenced herein. 11. Invoices.
+
+b. Progress Payments. The Contractor may submit invoice(s), for deliverables submitted and accepted in accordance with Section ___ herein, but shall not submit invoices more often than on a monthly basis. The Contractor shall submit invoices for payment identifying the Smithsonian Institution Contract Number, contract number, and summary of work. The Contractor may submit invoices only for work performed, completed, delivered, and accepted by the COR. All payments shall be made only upon Smithsonian's receipt and approval of said invoice submitted by Contractor. Invoices shall be sent to the following address: Smithsonian Institution
+
+Page 17
+
+ORIGINAL COPY TO:
+
+NOTE: The Prompt Payment Act, P.L. 97-177 (31 U.S.C. 3901), is not applicable to the Smithsonian Institution. The Smithsonian Institution shall take all reasonable measures to ensure that payment for invoice(s) properly documented and submitted will be paid within 30 days from receipt of an approved proper invoice by the COTR. a. The Contractor shall include among the personnel to be assigned under this contract those persons listed below: Name: Title: 12. Key Personnel.
+
+b. The persons named above are considered key personnel. The Contractor shall give at least fourteen (14) days advance written notice if any of these persons are to be removed or diverted from this contract. The Contractor shall supply written justification in said notice, and shall name the proposed substitute or replacement. The Contractor shall not remove or divert such person unless so authorized, in writing, but the Contracting Officer. c. Contractor personnel deemed unacceptable by the Smithsonian at any time shall be removed from performing under this contract within fourteen (14) calendar days of receipt of written notification of unacceptability. Such notification shall be in writing and delivered by the Contracting Officer to the Contractor. 13. C. SPECIAL CONTRACT REQUIREMENTS Right to Reproduce Documentation.
+
+The Smithsonian shall have the right to reproduce all documentation furnished under this contract, provided that such reproduction shall be solely for the use of the Smithsonian and that Page 18
+
+Smithsonian Institution
+
+such reproduction shall be subject to the same restrictions on use and disclosure as are contained in this contract with respect to the original documentation. 14. The prices contained in Section ___are the only charges to be made under this contract and no additional charges shall be claimed by the Contractor for the requirements under this contract, including source and documentation, training, copies of materials, implementation, error correction, upgrades, maintenance, or expenses for any other materials or service to be performed hereunder unless specified otherwise. 15. Quiet Enjoyment. Total Charges.
+
+The Smithsonian shall be entitled to use the hardware without disturbance, subject only to its obligation to make the required payments hereunder. The Contractor represents that this contract is not, nor will be, subject or subordinate to any right of the Contractor's creditors, or if such subordination exists, that the contract or instrument creating the same provides for nondisturbance of Smithsonian use. 16. Failure to deliver any of the requirements under this contract shall be deemed to be a total failure to deliver, and the supplies and services shall not be deemed delivered until all elements are delivered. If such delivery failure persists for more than thirty (30) days after the scheduled delivery date, the Smithsonian shall have the right to terminate the contract for default. 17. Guarantee of Ownership. Delivery Failure.
+
+The Contractor warrants that it has full power and authority to grant the rights herein granted without the consent of any other person and will indemnify and hold the Smithsonian harmless from and against any loss, cost liability and expense (including reasonable counsel fees) arising out of the breach or claimed breach of this warranty. Pending the resolution of any claim against the Contractor or the Smithsonian, with respect to the Contractor's ownership and/or authority, the Smithsonian may withhold payment of any sums otherwise required to be paid hereunder. The Contractor warrants that none of the deliverables under this contract nor the use thereof does or will violate or infringe upon any patent, copyright, trade secret or other property right of any other person, and the Contractor shall indemnify and hold the Smithsonian harmless from and against any loss, cost, liability and expenses (including reasonable counsel arising out of Smithsonian Institution Page 19 18. Infringement.
+
+any claim against the Contractor or the Smithsonian with respect to infringement, Smithsonian may withhold payment of any sums otherwise required to be paid hereunder. It is understood and agreed that the Contractor shall, in meeting the requirements of the contract, perform the work in accordance with its proposal to the Smithsonian Institution for services, dated_______________________; however, to the extent that any provisions set forth herein are in conflict or inconsistent with any provisions of said proposal, the of this contract shall be controlling and shall supersede the provisions of said proposal. 20. In order to be compliance with Smithsonian Institution security regulations, the Contractor shall make arrangements for access to Smithsonian premises through the COR. 21. Restriction Against Disclosure. Security on Smithsonian Institution Premises. 19. Incorporation of Contractor's Proposal(s).
+
+The Contractor agrees, in the performance of this Contract, to keep any information gathered or analyzed in the course of this contract in the strictest confidence, said information being the sole property of the Smithsonian Institution. The Contractor also agrees not to publish, reproduce or otherwise divulge such information in whole or in part, in any manner or form, nor to authorize or permit others to do so, unless expressly authorized by the Smithsonian. The Contractor shall take such reasonable measures as are necessary to restrict access to such information to perform the work provided herein, i.e., on a "need-to-know" basis, and shall immediately notify, in writing, the COR named herein, in the event that the Contractor determines or has reason to suspect a breach of this requirement. 22. a. Contractor is hereby put on notice that Smithsonian owns, controls, and/or has registered the trademarks/service marks "Smithsonian", "Smithsonian Institution", and the Smithsonian sunburst logo (the Names). Contractor further acknowledges the great value of the prestige, publicity, and goodwill associated with the Names, and in such connection, acknowledges that such goodwill belongs exclusively to Smithsonian and that the Names have acquired a secondary meaning in the mind of the purchasing public as a source of museum services and museum products (for Smithsonian). Contractor agrees that it shall not knowingly harm, misuse, or bring into disrepute the Names, and will assist Smithsonian as it may reasonably request in preserving the integrity and dignity of the Names and any trademark interest therein. Use of Smithsonian Names.
+
+Smithsonian Institution
+
+b. Restricted Uses. Except as may be otherwise provided herein, Contractor shall not without Smithsonian's prior, written approval refer to the Smithsonian Institution or to any of its museums, programs, organizations, or facilities in any manner or through any medium, whether
+
+Page 20
+
+c. Permitted Uses. Notwithstanding anything in the Contract to the contrary, Contractor may make casual or factual reference to the Names in a way that does not bear on Contractor's obligations herein or the service thereof. Contractor may make use of the Names in a client "resume" format, so long as Contractor lists Smithsonian among all or a significant portion of its other clients, without placing the Names in a prominent position, prominent or different typeface, or otherwise placing the Names so as to draw special attention to them among other client names. The preferred method is to arrange client names according to either alphabetical order or chronologically, according to number of years that Contractor has provided service to each client.
+
+written, oral, or visual for any purpose whatsoever, including, but not limited to, advertising, marketing, promotion, publicity, solicitation, or fund-raising. Contractor shall not have the Names printed on its letterhead stationery or brochures advertising non-Smithsonian sponsored activities.
+
+23.
+
+d. Smithsonian Approvals. Contractor's use of the Names shall maintain the dignity and integrity of the Smithsonian. All of the language, phrases, format, and/or layout concerning or referring to the Names pertaining to the subject matter of this Contract shall be submitted to Smithsonian for Smithsonian's prior written approval. Once Smithsonian has approved such materials, Contractor may continue to use such materials without further approval, provided that there are no significant changes in text, layout, content, or design. Contractor shall place an appropriate notice of trademark ownership or federal trademark registration next to all of the Names as they are displayed. Any inadvertent failure shall not constitute a breach of this Contract. The Contractor assumes full responsibility for and shall indemnify the Smithsonian for any and all loss or damage of whatsoever kind and nature to any and all Smithsonian property, including any equipment, supplies, accessories, or parts furnished, while in his custody and care for storage, repairs, or services to be performed under the terms of this contract resulting in whole or in part from the negligent acts or omissions of the contractor, any subcontractor, or any employee, agent, or representative of the contractor or subcontractor. 24. Return of Smithsonian Property . Responsibility for Smithsonian Property.
+
+All materials provided by the Smithsonian Institution shall be returned by the Contractor within thirty (30) calendar days to place of origin or other location as designated by Smithsonian. In the event that Contractor will be developing, acquiring, and/or producing products and/or systems pursuant to this Contract that will be connected to a network or that will interface with the World Wide Web, the following provisions shall apply: Smithsonian Institution Page 21 25. Internet Protocol Version 6 (IPv6) Compliance.
+
+a. The Contractor hereby warrants and represents that the products and/or systems to be developed, acquired, and/or produced pursuant to this Contract will be IPv6 compliant. These products and/or systems must be able to receive, process, and transmit or forward (as appropriate) IPv6 packets and must be able to interoperate with other systems and protocols in both IPv4 and IPv6 modes of operation. b. If the product or system will not be compliant initially, the Contractor shall provide a migration path and express commitment to upgrade to IPv6 for all application and product features by June 2008. Any such migration path and commitment shall be included in the Contract price. In addition, the Contractor shall have available contractor/vendor IPv6 technical support for development and implementation and fielded product management. 26. Rights in Data..
+
+The term "Subject Data" includes, but is not limited to, literary works; musical works, including any accompanying words; dramatic works, including any accompanying music; pantomimes and choreographic works; pictorial, graphic and sculptural works; motion pictures and other audiovisual works; and sound recordings, as each of those terms are used and defined by the Copyright Act of the United States (17 U.S.C. §101, et. seq.) and works of any similar nature (whether or not copyrighted) that are included in the material to be delivered under this Contract.
+
+b. Work for Hire. Contractor agrees that all Subject Data first produced in the performance of this Contract, where such Subject Data consists of: (i) a work specially ordered or commissioned for use as a contribution to a collective work, (ii) as part of a motion picture or other audiovisual work, (iii) as a translation, (iv) as a supplementary work, (v) as a compilation, (vi) as an instructional text, (vii) as a test, (viii) as answer material for a test, (ix) or as an atlas, as each of those terms are used and defined by the Copyright Act of the United States (17 U.S.C. §101, et. seq.), shall be considered a "work made for hire", as that term is defined under the Copyright Act, and the parties to this Contract hereby agree that the copyright thereto shall be the sole and exclusive property of SI and that copyright thereto may be registered by SI in its own name. Contractor further agrees that no right at common law or in equity shall be asserted, and no claim to copyright by statute shall be established by Contractor in any Subject Data first produced in the performance of this Contract without SI's prior written consent. Contractor shall secure SI's legal title and interests in and to all such work made for hire that is produced for Contractor by third parties, including but not limited to subcontractors. c. Other Copyrightable Works. Contractor agrees that all Subject Data first produced in the performance of this Contract, where such Subject Data consists of copyrightable materials that do not fall within the enumerated categories for work-for-hire, shall become the property of SI and Smithsonian Institution
+
+a. Contractor shall not include in its work product material for which the copyright has not been cleared or for which SI does not have copyright ownership without SI's prior consultation and written approval.
+
+Page 22
+
+Contractor hereby transfers to SI full legal title and all right, title, and interest in the copyright to all such Subject Data. Such Subject Data shall include all preliminary or conceptual renditions of the Subject Data, whether such renditions are handed over to SI or not. The parties to this Contract hereby agree that the copyright to such Subject Data shall be the sole and exclusive property of SI and that copyright thereto may be registered by SI in its own name. Contractor further agrees that no right at common law or in equity shall be asserted, and no claim to copyright by statute shall be established by the Contractor in any Subject Data first produced in the performance of this Contract without SI's prior written consent. d. License for Other Subject Data. Exclusive of Subject Data performance rights, which SI owns or has already obtained a license for, Contractor hereby grants to SI, a royalty-free, nonexclusive, perpetual, and irrevocable license in any and all copyrighted or copyrightable Subject Data (excluding any and all such Subject Data in which SI already owns copyright) not first produced, composed, or created in the performance of this Contract but which is incorporated in the material furnished under this Contract, such license to include, but not be limited to, the rights to publish, translate, reproduce, broadcast, distribute, transmit, use, sell, and dispose of Subject Data in any manner, and to authorize others to do so. For all such Subject Data for which the Contractor does not have the right to grant such license, Contractor shall inform SI of such fact as soon as practicable following the execution of this Contract, asking SI for its written permission to incorporate such Subject Data without granting the requisite license. Without such notification, SI shall be acting in reliance on this Contract and shall presume that it possesses all necessary rights and is free to make whatever use of the Subject Data that SI determines is in its best interests.
+
+e. Contractor hereby warrants to the best of its knowledge that the Subject Data produced in the performance of this Contract does not infringe statutory copyrights or common law literary rights of Contractor or others and contains no matter libelous or otherwise unlawful. Contractor agrees to indemnify and hold harmless the Smithsonian Institution, its Board of Regents, officers, agents, and employees against any liability, including costs and expenses, for (i) violations of copyright or any other property rights arising out of the use, reproduction, or disposition of any Subject Data furnished under this Contract; or (ii) based upon any libelous or other unlawful matter contained in said Subject Data. f. Contractor shall report in writing to SI's Office of General Counsel, promptly and in reasonable detail, any notice or claims of copyright infringement received by Contractor with respect to any Subject Data or other material delivered under this Contract. 27. Contractor-Owned Intellectual Property.
+
+a. Definition. The term "Contractor-Owned Intellectual Property" shall refer to such novel computer software and hardware pre-existing this Contract and created and/or owned by Contractor. "Contractor-Owned Intellectual Property" shall not apply to that novel computer software (including generalized or specialized code) and hardware that is created and/or developed by Contractor solely for incorporation in the Product or to facilitate the services Smithsonian Institution
+
+Page 23
+
+b. Ownership and Rights. Contractor shall retain all right, title, and interest in all Contractor-Owned Intellectual Property that is used in the services provided by Contractor hereunder and/or is incorporated by Contractor in the Product. With respect to the foregoing, Contractor hereby grants to SI in perpetuity a worldwide, non-exclusive royalty-free license to use the Contractor-Owned Intellectual Property in the form provided by Contractor; it being understood that SI shall not, under the term of the foregoing license and separately from the context of the Product and Website, have any right to modify, update, change, copy, publish, or distribute any element of the Contractor-Owned Intellectual Property. D. MISCELLANEOUS PROVISIONS 28. Termination.
+
+provided by Contractor under this Contract. Additionally, in order for intellectual property (e.g., novel computer software and hardware) to be deemed a Contractor-Owned Intellectual Property, Contractor shall identify the same to SI in writing at the time of the delivery of each phase of the Project Schedule.
+
+d. Excusable Delay. If by reason of the laws, regulations, acts, demands, orders, or interpositions of any government or any subdivision or agent thereof; or by acts of God, strike, fire, flood, weather, explosion, accidents, war, rebellion, insurrection, terrorism or any other cause Smithsonian Institution
+
+c. Transfer. Smithsonian may terminate this Contract effective immediately, at its sole option, if Contractor sells or otherwise disposes of substantially all of its business or assets to a third party, or control of Contractor is transferred, or present management of Contractor is changed, or no longer is involved directly in the day-to-day supervision of Contractor's performance under this Contract unless Contractor shall have first obtained Smithsonian's prior written permission to such transfer or changes.
+
+b. Bankruptcy/Cessation of Business. In the event Contractor enters into proceedings relating to bankruptcy, whether voluntary or involuntary, Contractor agrees to furnish, by certified mail, written notification of the bankruptcy to the Contracting Officer. This notification shall be furnished within five (5) days of the initiation of the proceedings relating to bankruptcy filing. This notification shall include the date on which the bankruptcy petition was filed, the name and location of the court where the petition was filed and the Smithsonian Institution Contract Number as it appears on the first page of this Contract. This obligation remains in effect until final delivery is made under this Contract.
+
+a. Material Breach. Smithsonian may terminate this Contract in the event of a material breach by Contractor provided that Contractor has been given thirty (30) days written notice of such breach, the nature of the breach has been identified, and Contractor has failed to cure, or to attempt to cure, the asserted breach to the satisfaction of Smithsonian within the notice period. Failure to meet deadlines in Schedules shall constitute a material breach.
+
+Page 24
+
+beyond the control of either party whether similar or dissimilar to the foregoing Contractor shall be delayed or prevented from performing this Contract, such delay or failure to perform shall be excused during the continuance of and to the extent of such cause, and the term for performance shall be extended for a period equal to the duration of such cause. If such delay exceeds ninety (90) days, either party hereto may terminate this Contract, and all rights and obligations hereunder shall cease, except that Contractor shall be responsible for all sums due and owing as of the date of delay. 29. Notices. All notices, invoices, and other hard-copy communications shall be delivered via a trackable delivery service requiring signature and receipt. All notices that shall be required to be sent by Smithsonian to Contractor shall be sent to the following address: _____ _____ _____ All notices that shall be required to be sent by Contractor to Smithsonian shall be sent to: For Contract Coordination and Daily Operation:
+
+30. No Partnership. This Contract does not constitute and shall not be construed as constituting a partnership or joint venture between Smithsonian and Contractor. Neither party shall have the right to obligate or bind the other in any manner whatsoever and nothing herein contained shall give or is intended to give any rights of any kind to any third persons.
+
+By providing notice pursuant to this paragraph, either party to this Contract may change the individuals or the address(es) for correspondence, notices, or royalties that are to be sent.
+
+31. No. Assignment. This Contract and all rights and obligations herein are personal to Contractor and shall not be assigned without Smithsonian's prior written consent. 32. Amendments. No amendments, modifications, or waivers to this Contract shall be valid unless in writing and signed by all parties to the Contract.
+
+Smithsonian Institution
+
+33. Disclaimer of Implied Waivers. The failure of Smithsonian to insist upon the strict performance by Contractor of any of the terms of this Contract, or the acceptance by Smithsonian of any payments, even partial payments, from Contractor with knowledge of any default or breach thereof, shall not be construed as a waiver by Smithsonian of its right to insist at any subsequent time upon the full performance of any of the terms of this Contract.
+
+Page 25
+
+37. Entire Contract. This Contract, including any exhibits attached hereto, constitute the entire legal contract between the parties relating to the subject matter hereof, and supersedes all prior negotiations, representations, contracts, and understandings that are hereby merged into, extinguished by, and completely expressed by this Contract.
+
+36. Recitals and Headings. The recitals herein constitute an integral part of the Contract reached and are to be considered as such. The Paragraph headings hereof are for the convenience of the parties only and shall not be used in the interpretation of this Contract.
+
+35. Severability. The terms of this Contract are severable. If any term or provision is declared invalid, it shall not affect the remaining terms which shall continue to be binding.
+
+34. Applicable Law. This Contract shall be construed in accordance with the applicable federal laws and laws of the District of Columbia, which shall also be the forum for any lawsuit under this Contract, regardless of its place of execution or performance.
+
+Smithsonian Institution
+
+Page 26
+
+

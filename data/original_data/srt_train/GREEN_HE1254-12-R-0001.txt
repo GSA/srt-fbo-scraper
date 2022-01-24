@@ -1,0 +1,2610 @@
+
+
+|EXHIBIT B – HE1254-12-R-0001                                                                                                     |
+|BuyAccessible Government Product / Service Accessibility Template (GPAT)                                                         |
+|                                                                                                                                 |
+|Section 508 (http://section508.gov/index.cfm?fuseAction=policies)requires that federal agencies electronic and information       |
+|technology is accessible to people with disabilities. The law applies to all Federal agencies when they develop, procure,        |
+|maintain, or use electronic and information technology.                                                                          |
+|                                                                                                                                 |
+|Requirements for accessibility based on Section 508 of the Rehabilitation Act of 1973 (29 U.S.C. 794d)                           |
+|(http://section508.gov/index.cfm?fuseAction=1998Amend) are determined as applicable to this acquisition based on the following   |
+|technical provisions: To understand the technical standards that apply to each provision, the respondent should refer to         |
+|http://Section 508.gov at http://section508.gov/index.cfm?fuseAction=stdsdoc.                                                    |
+|                                                                                                                                 |
+|This GPAT is a simple tool to assist Federal contracting and procurement officials in fulfilling the market research requirements|
+|associated with Section 508 regulations. The GPAT is intended as a form to be included with government solicitations, to be      |
+|filled out by solicitation respondents as a part of their proposal to indicate how their proposed solution addresses the         |
+|applicable Section 508 requirements.                                                                                             |
+|                                                                                                                                 |
+|NOTE: Section 508 provisions are determined to apply based in part on EIT requirements characterized using the BuyAccessible     |
+|Wizard. Provisions based on definite EIT requirements are identified by a "yes" in the Applicable column. Provisions based on    |
+|possible EIT requirements are identified by a "maybe" in the Applicable column. Provisions not identified with program           |
+|requirements for this acquisition have no entry in the Applicable column. However, if your product or service deliverable has    |
+|physical or functional characteristics corresponding to any of the listed EIT accessibility requirements, even those beyond      |
+|identified program requirements, then the requirement applies and you should provide appropriate accessibility information.      |
+|                                                                                                                                 |
+|The GPAT is organized as a series of ten tables. The first eight tables reflect accessibility information about EIT products,    |
+|corresponding to the six technical sections, the functional performance criteria, and the requirements for information,          |
+|documentation, and support as defined in the Access Board Standard for Section 508. The ninth and tenth tables correspond to     |
+|accessibility information about information content deliverables and labor hours, respectively.                                  |
+|                                                                                                                                 |
+|Please fill the information below as a part of request for accessibility information of your proposed deliverable.               |
+|                                                                                                                                 |
+|Product Name:_______________________________________                                                                             |
+|                                                                                                                                 |
+|Vendor Name:________________________________________                                                                             |
+|                                                                                                                                 |
+|Accessibility Information URL (if any):______________________________                                                            |
+
+|                                                                                                                                 |
+
+|1194.21 Software Applications and Operating Systems                                                                              |
+|Id  |Provision Text                            |Applicable     |Notes                         |How does the EIT    |Please       |
+|    |                                          |               |                              |meet this           |explain      |
+|    |                                          |               |                              |requirement?        |             |
+|b   |Applications shall not disrupt or disable |yes            |                              |[pic]Fully          |             |
+|    |activated features of other products that |               |                              |[pic]Partially      |             |
+|    |are identified as accessibility features, |               |                              |[pic]No             |             |
+|    |where those features are developed and    |               |                              |[pic]Don't know     |             |
+|    |documented according to industry          |               |                              |                    |             |
+|    |standards. Applications also shall not    |               |                              |                    |             |
+|    |disrupt or disable activated features of  |               |                              |                    |             |
+|    |any operating system that are identified  |               |                              |                    |             |
+|    |as accessibility features where the       |               |                              |                    |             |
+|    |application programming interface for     |               |                              |                    |             |
+|    |those accessibility features has been     |               |                              |                    |             |
+|    |documented by the manufacturer of the     |               |                              |                    |             |
+|    |operating system and is available to the  |               |                              |                    |             |
+|    |product developer.                        |               |                              |                    |             |
+|c   |A well-defined on-screen indication of the|yes            |                              |[pic]Fully          |             |
+|    |current focus shall be provided that moves|               |                              |[pic]Partially      |             |
+|    |among interactive interface elements as   |               |                              |[pic]No             |             |
+|    |the input focus changes. The focus shall  |               |                              |[pic]Don't know     |             |
+|    |be programmatically exposed so that       |               |                              |                    |             |
+|    |assistive technology can track focus and  |               |                              |                    |             |
+|    |focus changes.                            |               |                              |                    |             |
+|d   |Sufficient information about a user       |yes            |                              |[pic]Fully          |             |
+|    |interface element including the identity, |               |                              |[pic]Partially      |             |
+|    |operation and state of the element shall  |               |                              |[pic]No             |             |
+|    |be available to assistive technology. When|               |                              |[pic]Don't know     |             |
+|    |an image represents a program element, the|               |                              |                    |             |
+|    |information conveyed by the image must    |               |                              |                    |             |
+|    |also be available in text.                |               |                              |                    |             |
+
+PAGE 2
+
+|1194.21 Software Applications and Operating Systems(Cont’d)                                                                       |
+|E  |When bitmap images are used to identify         |yes  |                                    |[pic]Fully      |                 |
+|   |controls, status indicators, or other           |     |                                    |[pic]Partially  |                 |
+|   |programmatic elements, the meaning assigned to  |     |                                    |[pic]No         |                 |
+|   |those images shall be consistent throughout an  |     |                                    |[pic]Don't know |                 |
+|   |application's performance.                      |     |                                    |                |                 |
+|F  |Textual information shall be provided through   |yes  |                                    |[pic]Fully      |                 |
+|   |operating system functions for displaying text. |     |                                    |[pic]Partially  |                 |
+|   |The minimum information that shall be made      |     |                                    |[pic]No         |                 |
+|   |available is text content, text input caret     |     |                                    |[pic]Don't know |                 |
+|   |location, and text attributes.                  |     |                                    |                |                 |
+|G  |Applications shall not override user selected   |yes  |                                    |[pic]Fully      |                 |
+|   |contrast and color selections and other         |     |                                    |[pic]Partially  |                 |
+|   |individual display attributes.                  |     |                                    |[pic]No         |                 |
+|   |                                                |     |                                    |[pic]Don't know |                 |
+|H  |When animation is displayed, the information    |yes  |                                    |[pic]Fully      |                 |
+|   |shall be displayable in at least one            |     |                                    |[pic]Partially  |                 |
+|   |non-animated presentation mode at the option of |     |                                    |[pic]No         |                 |
+|   |the user.                                       |     |                                    |[pic]Don't know |                 |
+|I  |Color coding shall not be used as the only means|yes  |                                    |[pic]Fully      |                 |
+|   |of conveying information, indicating an action, |     |                                    |[pic]Partially  |                 |
+|   |prompting a response, or distinguishing a visual|     |                                    |[pic]No         |                 |
+|   |element.                                        |     |                                    |[pic]Don't know |                 |
+|J  |When a product permits a user to adjust color   |yes  |                                    |[pic]Fully      |                 |
+|   |and contrast settings, a variety of color       |     |                                    |[pic]Partially  |                 |
+|   |selections capable of producing a range of      |     |                                    |[pic]No         |                 |
+|   |contrast levels shall be provided.              |     |                                    |[pic]Don't know |                 |
+
+PAGE 3
+
+|1194.21 Software Applications and Operating Systems(Cont’d)                                                                       |
+|K  |Software shall not use flashing or blinking     |yes  |                                    |[pic]Fully      |                 |
+|   |text, objects, or other elements having a flash |     |                                    |[pic]Partially  |                 |
+|   |or blink frequency greater than 2 Hz and lower  |     |                                    |[pic]No         |                 |
+|   |than 55 Hz.                                     |     |                                    |[pic]Don't know |                 |
+|L  |When electronic forms are used, the form shall  |yes  |                                    |[pic]Fully      |                 |
+|   |allow people using Assistive Technology to      |     |                                    |[pic]Partially  |                 |
+|   |access the information, field elements, and     |     |                                    |[pic]No         |                 |
+|   |functionality required for completion and       |     |                                    |[pic]Don't know |                 |
+|   |submission of the form, including all directions|     |                                    |                |                 |
+|   |and cues.                                       |     |                                    |                |                 |
+
+
+PAGE 4
+
+
+
+
+|1194.22 Web-based Intranet and Internet Information and Applications                                                             |
+|Id  |Provision Text                            |Applicable     |Notes                         |How does the EIT    |Please       |
+|    |                                          |               |                              |meet this           |explain      |
+|    |                                          |               |                              |requirement?        |             |
+|B   |Equivalent alternatives for any multimedia|yes            |                              |[pic]Fully          |             |
+|    |presentation shall be synchronized with   |               |                              |[pic]Partially      |             |
+|    |the presentation.                         |               |                              |[pic]No             |             |
+|    |                                          |               |                              |[pic]Don't know     |             |
+|C   |Web pages shall be designed so that all   |yes            |                              |[pic]Fully          |             |
+|    |information conveyed with color is also   |               |                              |[pic]Partially      |             |
+|    |available without color, for example from |               |                              |[pic]No             |             |
+|    |context or markup.                        |               |                              |[pic]Don't know     |             |
+|D   |Documents shall be organized so they are  |yes            |                              |[pic]Fully          |             |
+|    |readable without requiring an associated  |               |                              |[pic]Partially      |             |
+|    |style sheet.                              |               |                              |[pic]No             |             |
+|    |                                          |               |                              |[pic]Don't know     |             |
+|E   |Redundant text links shall be provided for|yes            |                              |[pic]Fully          |             |
+|    |each active region of a server-side image |               |                              |[pic]Partially      |             |
+|    |map.                                      |               |                              |[pic]No             |             |
+|    |                                          |               |                              |[pic]Don't know     |             |
+
+PAGE 5
+
+|1194.22 Web-based Intranet and Internet Information and Applications(Cont’d)                                                      |
+|F  |Client-side image maps shall be provided       |yes  |                                   |[pic]Fully      |                  |
+|   |instead of server-side image maps except where |     |                                   |[pic]Partially  |                  |
+|   |the regions cannot be defined with an available|     |                                   |[pic]No         |                  |
+|   |geometric shape.                               |     |                                   |[pic]Don't know |                  |
+|G  |Row and column headers shall be identified for |yes  |                                   |[pic]Fully      |                  |
+|   |data tables.                                   |     |                                   |[pic]Partially  |                  |
+|   |                                               |     |                                   |[pic]No         |                  |
+|   |                                               |     |                                   |[pic]Don't know |                  |
+|H  |Markup shall be used to associate data cells   |yes  |                                   |[pic]Fully      |                  |
+|   |and header cells for data tables that have two |     |                                   |[pic]Partially  |                  |
+|   |or more logical levels of row or column        |     |                                   |[pic]No         |                  |
+|   |headers.                                       |     |                                   |[pic]Don't know |                  |
+|I  |Frames shall be titled with text that          |yes  |                                   |[pic]Fully      |                  |
+|   |facilitates frame identification and           |     |                                   |[pic]Partially  |                  |
+|   |navigation.                                    |     |                                   |[pic]No         |                  |
+|   |                                               |     |                                   |[pic]Don't know |                  |
+|J  |Pages shall be designed to avoid causing the   |yes  |                                   |[pic]Fully      |                  |
+|   |screen to flicker with a frequency greater than|     |                                   |[pic]Partially  |                  |
+|   |2 Hz and lower than 55 Hz.                     |     |                                   |[pic]No         |                  |
+|   |                                               |     |                                   |[pic]Don't know |                  |
+|K  |A text-only page, with equivalent information  |yes  |                                   |[pic]Fully      |                  |
+|   |or functionality, shall be provided to make a  |     |                                   |[pic]Partially  |                  |
+|   |web site comply with the provisions of this    |     |                                   |[pic]No         |                  |
+|   |part, when compliance cannot be accomplished in|     |                                   |[pic]Don't know |                  |
+|   |any other way. The content of the text-only    |     |                                   |                |                  |
+|   |page shall be updated whenever the primary page|     |                                   |                |                  |
+|   |changes.                                       |     |                                   |                |                  |
+
+PAGE 6
+
+|1194.22 Web-based Intranet and Internet Information and Applications(Cont’d)                                                      |
+|L  |When pages utilize scripting languages to      |yes  |                                   |[pic]Fully      |                  |
+|   |display content, or to create interface        |     |                                   |[pic]Partially  |                  |
+|   |elements, the information provided by the      |     |                                   |[pic]No         |                  |
+|   |script shall be identified with functional text|     |                                   |[pic]Don't know |                  |
+|   |that can be read by Assistive Technology.      |     |                                   |                |                  |
+|M  |When a web page requires that an applet,       |yes  |                                   |[pic]Fully      |                  |
+|   |plug-in or other application be present on the |     |                                   |[pic]Partially  |                  |
+|   |client system to interpret page content, the   |     |                                   |[pic]No         |                  |
+|   |page must provide a link to a plug-in or applet|     |                                   |[pic]Don't know |                  |
+|   |that complies with 1194.21(a) through (l).     |     |                                   |                |                  |
+|N  |When electronic forms are designed to be       |yes  |                                   |[pic]Fully      |                  |
+|   |completed on-line, the form shall allow people |     |                                   |[pic]Partially  |                  |
+|   |using Assistive Technology to access the       |     |                                   |[pic]No         |                  |
+|   |information, field elements, and functionality |     |                                   |[pic]Don't know |                  |
+|   |required for completion and submission of the  |     |                                   |                |                  |
+|   |form, including all directions and cues.       |     |                                   |                |                  |
+|O  |A method shall be provided that permits users  |yes  |                                   |[pic]Fully      |                  |
+|   |to skip repetitive navigation links.           |     |                                   |[pic]Partially  |                  |
+|   |                                               |     |                                   |[pic]No         |                  |
+|   |                                               |     |                                   |[pic]Don't know |                  |
+|P  |When a timed response is required, the user    |yes  |                                   |[pic]Fully      |                  |
+|   |shall be alerted and given sufficient time to  |     |                                   |[pic]Partially  |                  |
+|   |indicate more time is required.                |     |                                   |[pic]No         |                  |
+|   |                                               |     |                                   |[pic]Don't know |                  |
+
+
+PAGE 7
+
+
+
+
+
+
+|1194.24 Video and Multimedia Products                                                                                            |
+|Id  |Provision Text                            |Applicable     |Notes                         |How does the EIT    |Please       |
+|    |                                          |               |                              |meet this           |explain      |
+|    |                                          |               |                              |requirement?        |             |
+|b   |Television tuners, including tuner cards  |               |                              |[pic]Fully          |             |
+|    |for use in computers, shall be equipped   |               |                              |[pic]Partially      |             |
+|    |with secondary audio program playback     |               |                              |[pic]No             |             |
+|    |circuitry.                                |               |                              |[pic]Don't know     |             |
+|c   |All training and informational video and  |yes            |                              |[pic]Fully          |             |
+|    |multimedia productions which support the  |               |                              |[pic]Partially      |             |
+|    |agency's mission, regardless of format,   |               |                              |[pic]No             |             |
+|    |that contain speech or other audio        |               |                              |[pic]Don't know     |             |
+|    |information necessary for the             |               |                              |                    |             |
+|    |comprehension of the content, shall be    |               |                              |                    |             |
+|    |open or closed captioned.                 |               |                              |                    |             |
+
+Page 8
+
+|1194.24 Video and Multimedia Products(Cont’d)                                                                                     |
+|d |All training and informational video and      |yes     |                                   |[pic]Fully      |                 |
+|  |multimedia productions which support the      |        |                                   |[pic]Partially  |                 |
+|  |agency's mission, regardless of format, that  |        |                                   |[pic]No         |                 |
+|  |contain visual information necessary for the  |        |                                   |[pic]Don't know |                 |
+|  |comprehension of the content, shall be audio  |        |                                   |                |                 |
+|  |described.                                    |        |                                   |                |                 |
+|e |Display or presentation of alternate text     |maybe   |                                   |[pic]Fully      |                 |
+|  |presentation or audio descriptions shall be   |        |                                   |[pic]Partially  |                 |
+|  |user-selectable unless permanent.             |        |                                   |[pic]No         |                 |
+|  |                                              |        |                                   |[pic]Don't know |                 |
+
+
+PAGE 9
+
+
+
+
+|1194.31 Functional Performance Criteria                                                                                          |
+|Id  |Provision Text             |Applicable     |Notes         |How does the EIT meet this requirement?            |Please       |
+|    |                           |               |              |                                                   |explain      |
+|B   |At least one mode of       |yes            |              |[pic]Fully                                         |             |
+|    |operation and information  |               |              |[pic]Partially                                     |             |
+|    |retrieval that does not    |               |              |[pic]No                                            |             |
+|    |require visual acuity      |               |              |[pic]Don't know                                    |             |
+|    |greater than 20/70 shall be|               |              |                                                   |             |
+|    |provided in audio and      |               |              |                                                   |             |
+|    |enlarged print output      |               |              |                                                   |             |
+|    |working together or        |               |              |                                                   |             |
+|    |independently, or support  |               |              |                                                   |             |
+|    |for Assistive Technology   |               |              |                                                   |             |
+|    |used by people who are     |               |              |                                                   |             |
+|    |visually impaired shall be |               |              |                                                   |             |
+|    |provided.                  |               |              |                                                   |             |
+|C   |At least one mode of       |yes            |              |[pic]Fully[pic]Partially[pic]No[pic]Don't know     |             |
+|    |operation and information  |               |              |                                                   |             |
+|    |retrieval that does not    |               |              |                                                   |             |
+|    |require user hearing shall |               |              |                                                   |             |
+|    |be provided, or support for|               |              |                                                   |             |
+|    |Assistive Technology used  |               |              |                                                   |             |
+|    |by people who are deaf or  |               |              |                                                   |             |
+|    |hard of hearing shall be   |               |              |                                                   |             |
+|    |provided.                  |               |              |                                                   |             |
+
+PAGE 10
+
+|1194.31 Functional Performance Criteria(Cont’d)                                                                                   |
+|D  |Where audio information is        |yes |                      |[pic]Fully[pic]Partially[pic]No[pic]Don't know     |          |
+|   |important for the use of a        |    |                      |                                                   |          |
+|   |product, at least one mode of     |    |                      |                                                   |          |
+|   |operation and information         |    |                      |                                                   |          |
+|   |retrieval shall be provided in an |    |                      |                                                   |          |
+|   |enhanced auditory fashion, or     |    |                      |                                                   |          |
+|   |support for assistive hearing     |    |                      |                                                   |          |
+|   |devices shall be provided.        |    |                      |                                                   |          |
+|E  |At least one mode of operation and|yes |                      |[pic]Fully[pic]Partially[pic]No[pic]Don't know     |          |
+|   |information retrieval that does   |    |                      |                                                   |          |
+|   |not require user speech shall be  |    |                      |                                                   |          |
+|   |provided, or support for Assistive|    |                      |                                                   |          |
+|   |Technology used by people with    |    |                      |                                                   |          |
+|   |disabilities shall be provided.   |    |                      |                                                   |          |
+|F  |At least one mode of operation and|yes |                      |[pic]Fully[pic]Partially[pic]No[pic]Don't know     |          |
+|   |information retrieval that does   |    |                      |                                                   |          |
+|   |not require fine motor control or |    |                      |                                                   |          |
+|   |simultaneous actions and that is  |    |                      |                                                   |          |
+|   |operable with limited reach and   |    |                      |                                                   |          |
+|   |strength shall be provided.       |    |                      |                                                   |          |
+
+
+PAGE 11
+
+
+
+
+|1194.41 Information, Documentation, and Support                                                                                  |
+|Id  |Provision Text                            |Applicable     |Notes                         |How does the EIT    |Please       |
+|    |                                          |               |                              |meet this           |explain      |
+|    |                                          |               |                              |requirement?        |             |
+|b   |End-users shall have access to a          |yes            |If Web-based information,     |[pic]Fully          |             |
+|    |description of the accessibility and      |               |documentation, and support are|[pic]Partially      |             |
+|    |compatibility features of products in     |               |requested, then provisions    |[pic]No             |             |
+|    |alternate formats, or alternate methods   |               |from Section 1194.22 Web-based|[pic]Don't know     |             |
+|    |upon request, at no additional charge.    |               |intranet and internet         |                    |             |
+|    |                                          |               |information and applications  |                    |             |
+|    |                                          |               |would apply.If Web-based      |                    |             |
+|    |                                          |               |information, documentation,   |                    |             |
+|    |                                          |               |and support are requested via |                    |             |
+|    |                                          |               |video and multimedia, then    |                    |             |
+|    |                                          |               |provisions 1194.24c, 1194.24d,|                    |             |
+|    |                                          |               |1194.24e would apply.         |                    |             |
+
+PAGE 12
+
+|1194.41 Information, Documentation, and Support (Cont’d)                                                                          |
+|c |Support services for products shall accommodate |yes  |If Web-based information,           |[pic]Fully      |                  |
+|  |the communication needs of end-users with       |     |documentation, and support are      |[pic]Partially  |                  |
+|  |disabilities.                                   |     |requested, then provisions from     |[pic]No         |                  |
+|  |                                                |     |Section 1194.22 Web-based intranet  |[pic]Don't know |                  |
+|  |                                                |     |and internet information and        |                |                  |
+|  |                                                |     |applications would apply.If         |                |                  |
+|  |                                                |     |Web-based information,              |                |                  |
+|  |                                                |     |documentation, and support are      |                |                  |
+|  |                                                |     |requested via video and multimedia, |                |                  |
+|  |                                                |     |then provisions 1194.24c, 1194.24d, |                |                  |
+|  |                                                |     |1194.24e would apply.               |                |                  |
+
+
+PAGE 13
+|                                                                                                                                 |
+
+|Please fill the information below as a part of request for accessibility information of your service deliverable.                |
+|Vendor Name:________________________________________                                                                             |
+|Accessibility Information URL (if any):______________________________                                                            |
+|NOTE: Section 508 requirements are determined to apply based in part on EIT requirements characterized using the BuyAccessible   |
+|Wizard. Definite information content deliverable requirements are identified by a "yes" in the Applicable column. Possible       |
+|information content deliverable requirements are identified by a "maybe" in the Applicable column.                               |
+
+|Section 508 Service Requirements|Applicable       |How does the deliverable meet this requirement?        |Please explain         |
+|Information Content will include|yes              |[pic]Fully[pic]Partially[pic]No[pic]Don't know         |                       |
+|topics that address EIT products|                 |                                                       |                       |
+|and EIT-related services.       |                 |                                                       |                       |
+|Section 508 must be considered  |                 |                                                       |                       |
+|as a requirement on the         |                 |                                                       |                       |
+|delivered content to assure that|                 |                                                       |                       |
+|it includes data and/or         |                 |                                                       |                       |
+|knowledge appropriate to        |                 |                                                       |                       |
+|specific Section 508            |                 |                                                       |                       |
+|accessibility requirements. The |                 |                                                       |                       |
+|specific requirements that apply|                 |                                                       |                       |
+|depend upon the specific type of|                 |                                                       |                       |
+|EIT referred to in the          |                 |                                                       |                       |
+|information content as well as  |                 |                                                       |                       |
+|the functional performance      |                 |                                                       |                       |
+|criteria detailed in 1194.31.   |                 |                                                       |                       |
+|Information Content deliverable |yes              |[pic]Fully[pic]Partially[pic]No[pic]Don't know         |                       |
+|is intended to be posted on the |                 |                                                       |                       |
+|agency's a website. Section 508 |                 |                                                       |                       |
+|must be considered as a         |                 |                                                       |                       |
+|requirement on the delivered    |                 |                                                       |                       |
+|content to assure that it       |                 |                                                       |                       |
+|considers the specific Section  |                 |                                                       |                       |
+|508 accessibility requirements  |                 |                                                       |                       |
+|detailed in 1194.22 as well as  |                 |                                                       |                       |
+|the functional performance      |                 |                                                       |                       |
+|criteria detailed in 1194.31.   |                 |                                                       |                       |
+
+PAGE 14
+
+|Information Content deliverable is    |maybe       |[pic]Fully[pic]Partially[pic]No[pic]Don't know           |                   |
+|intended to be made available in a    |            |                                                         |                   |
+|multimedia format by the agency.      |            |                                                         |                   |
+|Section 508 must be considered as a   |            |                                                         |                   |
+|requirement on the delivered content  |            |                                                         |                   |
+|to assure that it considers the       |            |                                                         |                   |
+|specific Section 508 accessibility    |            |                                                         |                   |
+|requirements detailed in 1194.24 as   |            |                                                         |                   |
+|well as the functional performance    |            |                                                         |                   |
+|criteria detailed in 1194.31.         |            |                                                         |                   |
+
+|                                                                                                                                 |
+
+|Section 508 Service Requirements     |Applicable     |How does the deliverable meet this requirement?    |Please explain          |
+|The activity to be performed relates |yes            |[pic]Fully[pic]Partially[pic]No[pic]Don't know     |                        |
+|to or requires the use of EIT.       |               |                                                   |                        |
+|Section 508 must be considered as a  |               |                                                   |                        |
+|requirement for the EIT related labor|               |                                                   |                        |
+|hours activity to assure that it     |               |                                                   |                        |
+|considers specific Section 508       |               |                                                   |                        |
+|accessibility requirements. The      |               |                                                   |                        |
+|specific requirements that apply     |               |                                                   |                        |
+|depend upon the specific type of EIT |               |                                                   |                        |
+|related to performing the activity as|               |                                                   |                        |
+|well as the functional performance   |               |                                                   |                        |
+|criteria detailed in 1194.31         |               |                                                   |                        |
+
+PAGE 15
+
+
+
+Section SF 1449 - CONTINUATION SHEET
+
+GENERAL INFORMATION
+1.    This is a continuing, follow on requirement for services located at HQ DoD Education Activity (DoDEA), Arlington, VA 22203.   This
+requirement will be awarded based on full and open competition, NAICS Code 541519, Other Computer Related Services.
+
+2.    Anticipated Award Start Date:  30 SEPTEMBER 2012 for a base period of 12 months and includes four, 12-month options beyond the base year,
+for a total award period of 60 months.
+
+3.    RFP Closing Date. Proposal due date and time is in Block 8, page 1, of this SF1449 solicitation form.
+
+      a.    DoDEA will ensure personnel are present at the agency to accept proposals. No electronic or fax copies of any proposal will be
+accepted.  No exceptions.
+
+      b     Non-Responsive.  If you do NOT follow these instructions, your offer may be found non-responsive and you will not be considered for
+award.
+
+4.    Become familiar with the PERFORMANCE WORK STATEMENT (PWS) and all provisions included in the solicitation.
+
+5.    Questions to Solicitation.  Please see ADDENDUM TO FAR 52.212-1 – INSTRUCTION TO OFFERORS – COMMERCIAL ITEMS (JUNE 2008).  Questions to
+solicitation must be submitted by date stated in subject ADDENDUM.
+
+6.    Submittal instructions for proposals are provided at: ADDENDUM to FAR 52.212-1 (INSTRUCTIONS).
+
+7.    Become familiar with FAR 52.212-2, EVALUATION FACTORS.  These are factors proposals will be evaluated on.
+
+8.    Offerors must be registered in CCR and have a DUNS number.  See FAR 52.212-1 for explanation and web links.
+
+9.    Attachments included in the solicitation are:
+      c.    EXHIBIT A Subcontracting Plan
+      d.    EXHIBIT B 508 Compliance Access Standards
+
+10.   Point of contact, Ms. Nella Valdez, email:  nella.valdez@hq.dodea.edu.
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0001           |SOFTWARE LICENSE / MAINTENANCE |1                    |Lump Sum        |                               |                                       |
+|               |Contractor shall provide software licenses/maintenance for proposed software solution at minimum, up  |                                       |
+|               |to 8,000 active users to 25,000 full time equivalents (FTEs) in accordance with (IAW) PWS; Section 4.1|                                       |
+|               |and its subsections.                                                                                  |                                       |
+|                                                                                                                      |                                       |
+|PURCHASE REQUEST NUMBER: HE125420124440001                                            |NET AMT                        |                                       |
+|                                                                                      |FUNDED AMT                     |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0002           |TECHNICAL SUPPORT              |1                    |Lump Sum        |                               |                                       |
+|               |Contractor shall provide on-going support and related services IAW PWS Section 4.2B; Subsections: 2,  |                                       |
+|               |3, 4, 5, 6, 9, 10.                                                                                    |                                       |
+|                                                                                                                      |                                       |
+|PURCHASE REQUEST NUMBER: HE125420124440001                                            |NET AMT                        |                                       |
+|                                                                                      |FUNDED AMT                     |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0003           |INSTALLATION AND MIGRATION     |1                    |Lump Sum        |                               |                                       |
+|               |Contractor shall provide Installation, Migration, Validation, and other related                       |                                       |
+|               |services IAW PWS; Section 4.2A; Subsections: 1, 2, 3, 4, 5, & 6.                                      |                                       |
+|               |                                                                                                      |                                       |
+|                                                                                                                      |                                       |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                      |FUNDED AMT                     |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0004           |ADMINISTRATOR TRAINING         |1                    |Lump Sum        |                               |                                       |
+|               |Contractor shall provide minimum of three venues of electronic versions of administrator training IAW |                                       |
+|               |PWS 4.2B; Subsections 1 & 7.                                                                          |                                       |
+|               |                                                                                                      |                                       |
+|                                                                                                                      |                                       |
+|PURCHASE REQUEST NUMBER: HE125420124440001                                            |NET AMT                        |                                       |
+|                                                                                      |FUNDED AMT                     |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0005           |USER TRAINING                  |1                    |Lump Sum        |                               |                                       |
+|               |Contractor shall provide minimum of three venues of electronic versions of user training IAW PWS 4.2B;|                                       |
+|               |Subsections 1 & 7.                                                                                    |                                       |
+|                                                                                                                      |                                       |
+|PURCHASE REQUEST NUMBER: HE125420124440001                                            |NET AMT                        |                                       |
+|                                                                                      |FUNDED AMT                     |                                       |
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|1001           |SOFTWARE LICENSE / MAINTENANCE |1                    |Lump Sum        |                               |                                       |
+|OPTION         |Contractor shall provide software licenses/maintenance for proposed software solution at minimum, up  |                                       |
+|               |to 8,000 active users to 25,000 full time equivalents (FTEs) in accordance with (IAW) PWS; Section 4.1|                                       |
+|               |and its subsections.                                                                                  |                                       |
+|                                                                                                                      |                                       |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                      |FUNDED AMT                     |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|1002           |TECHNICAL SUPPORT              |1                    |Lump Sum        |                               |                                       |
+|OPTION         |Contractor shall provide on-going support and related services IAW PWS Section 4.2B; Subsections: 2,  |                                       |
+|               |3, 4, 5, 6, 9, 10.                                                                                    |                                       |
+|                                                                                                                      |                                       |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                      |FUNDED AMT                     |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|2001           |SOFTWARE LICENSE / MAINTENANCE |1                    |Lump Sum        |                               |                                       |
+|OPTION         |Contractor shall provide software licenses/maintenance for proposed software solution at minimum, up  |                                       |
+|               |to 8,000 active users to 25,000 full time equivalents (FTEs) in accordance with (IAW) PWS; Section 4.1|                                       |
+|               |and its subsections.                                                                                  |                                       |
+|                                                                                                                      |                                       |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                      |FUNDED AMT                     |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|2002           |TECHNICAL SUPPORT              |1                    |Lump Sum        |                               |                                       |
+|OPTION         |Contractor shall provide on-going support and related services IAW PWS Section 4.2B; Subsections: 2,  |                                       |
+|               |3, 4, 5, 6, 9, 10.                                                                                    |                                       |
+|                                                                                                                      |                                       |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                      |FUNDED AMT                     |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|3001           |SOFTWARE LICENSE / MAINTENANCE |1                    |Lump Sum        |                               |                                       |
+|OPTION         |Contractor shall provide software licenses/maintenance for proposed software solution at minimum, up  |                                       |
+|               |to 8,000 active users to 25,000 full time equivalents (FTEs) in accordance with (IAW) PWS; Section 4.1|                                       |
+|               |and its subsections.                                                                                  |                                       |
+|                                                                                                                      |                                       |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                      |FUNDED AMT                     |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|3002           |TECHNICAL SUPPORT              |1                    |Lump Sum        |                               |                                       |
+|OPTION         |Contractor shall provide on-going support and related services IAW PWS Section 4.2B; Subsections: 2,  |                                       |
+|               |3, 4, 5, 6, 9, 10.                                                                                    |                                       |
+|                                                                                                                      |                                       |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                      |FUNDED AMT                     |                                       |
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|4001           |SOFTWARE LICENSE / MAINTENANCE |1                    |Lump Sum        |                               |                                       |
+|OPTION         |Contractor shall provide software licenses/maintenance for proposed software solution at minimum, up  |                                       |
+|               |to 8,000 active users to 25,000 full time equivalents (FTEs) in accordance with (IAW) PWS; Section 4.1|                                       |
+|               |and its subsections.                                                                                  |                                       |
+|                                                                                                                      |                                       |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                      |FUNDED AMT                     |                                       |
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|4002           |TECHNICAL SUPPORT              |1                    |Lump Sum        |                               |                                       |
+|OPTION         |Contractor shall provide on-going support and related services IAW PWS Section 4.2B; Subsections: 2,  |                                       |
+|               |3, 4, 5, 6, 9, 10.                                                                                    |                                       |
+|                                                                                                                      |                                       |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                      |FUNDED AMT                     |                                       |
+
+
+
+
+
+
+TOTALS
+TOTALS
+
+Base Year Total:
+(CLINs 0001-0005)            $____________________
+
+Option Year One Total:
+(CLINs 1001-1002)            $____________________
+
+Option Year Two Total:
+(CLINs 2001-2002)            $____________________
+
+Option Year Three Total:
+(CLINs 3001-3002)            $____________________
+
+Option Year Four Total:
+(CLINs 4001-4002)            $____________________
+
+Base & All Option Years Total:    $____________________
+
+
+
+
+
+
+
+INSPECTION AND ACCEPTANCE TERMS
+
+Supplies/services will be inspected/accepted at:
+
+|CLIN      |INSPECT AT                                  |INSPECT BY           |ACCEPT AT                                   |ACCEPT BY            |
+|0001      |Destination                                 |Government           |Destination                                 |Government           |
+|0002      |Destination                                 |Government           |Destination                                 |Government           |
+|0003      |Destination                                 |Government           |Destination                                 |Government           |
+|0004      |Destination                                 |Government           |Destination                                 |Government           |
+|0005      |Destination                                 |Government           |Destination                                 |Government           |
+|1001      |Destination                                 |Government           |Destination                                 |Government           |
+|1002      |Destination                                 |Government           |Destination                                 |Government           |
+|2001      |Destination                                 |Government           |Destination                                 |Government           |
+|2002      |Destination                                 |Government           |Destination                                 |Government           |
+|3001      |Destination                                 |Government           |Destination                                 |Government           |
+|3002      |Destination                                 |Government           |Destination                                 |Government           |
+|4001      |Destination                                 |Government           |Destination                                 |Government           |
+|4002      |Destination                                 |Government           |Destination                                 |Government           |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DELIVERY INFORMATION
+
+|CLIN      |DELIVERY DATE                    |QUANTITY               |SHIP TO ADDRESS                                         |UIC           |
+|          |                                 |                       |                                                        |              |
+|0001      |POP 21-JUN-2012 TO               |N/A                    |DOD EDUCATION ACTIVITY                                  |HE1254        |
+|          |20-JUN-2013                      |                       |ATTN: INFORMATION TECHNOLOGY DIV                        |              |
+|          |                                 |                       |4040 NORTH FAIRFAX DRIVE                                |              |
+|          |                                 |                       |ARLINGTON VA 22203-1635                                 |              |
+|          |                                 |                       |703-588-3409                                            |              |
+|          |                                 |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|0002      |POP 21-JUN-2012 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |HE1254        |
+|          |20-JUN-2013                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|0003      |POP 21-JUN-2012 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |HE1254        |
+|          |20-JUN-2013                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|0004      |POP 21-JUN-2012 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |HE1254        |
+|          |20-JUN-2013                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|0005      |POP 21-JUN-2012 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |HE1254        |
+|          |20-JUN-2013                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|1001      |POP 21-JUN-2013 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |HE1254        |
+|          |20-JUN-2014                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|1002      |POP 21-JUN-2013 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |HE1254        |
+|          |20-JUN-2014                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|2001      |POP 21-JUN-2014 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |HE1254        |
+|          |20-JUN-2015                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|2002      |POP 21-JUN-2014 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |HE1254        |
+|          |20-JUN-2015                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|3001      |POP 21-JUN-2015 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |HE1254        |
+|          |20-JUN-2016                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|3002      |POP 21-JUN-2015 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |HE1254        |
+|          |20-JUN-2016                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|4001      |POP 21-JUN-2016 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |HE1254        |
+|          |20-JUN-2017                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|4002      |POP 21-JUN-2016 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |HE1254        |
+|          |20-JUN-2017                      |                       |FOB:  Destination                                       |              |
+
+
+
+
+
+
+
+CLAUSES INCORPORATED BY REFERENCE
+
+
+|52.203-3                |Gratuities                                                                |APR 1984         |                       |
+|52.203-6 Alt I          |Restrictions On Subcontractor Sales To The Government  (Sep 2006) --      |OCT 1995         |                       |
+|                        |Alternate I                                                               |                 |                       |
+|52.204-7                |Central Contractor Registration                                           |FEB 2012         |                       |
+|52.204-10               |Reporting Executive Compensation and First-Tier Subcontract Awards        |FEB 2012         |                       |
+|52.209-6                |Protecting the Government's Interest When Subcontracting With Contractors |DEC 2010         |                       |
+|                        |Debarred, Suspended, or Proposed for Debarment                            |                 |                       |
+|52.212-4                |Contract Terms and Conditions--Commercial Items                           |JUN 2010         |                       |
+|52.212-5 (Dev)          |Contract Terms and Conditions Required to Implement Statutes or Executive |APR 2012         |                       |
+|                        |Orders--Commercial Items (Deviation)                                      |                 |                       |
+|52.219-8                |Utilization of Small Business Concerns                                    |JAN 2011         |                       |
+|52.219-9 Alt II         |Small Business Subcontracting Plan (JAN 2011) Alternate II                |OCT 2001         |                       |
+|52.219-16               | Liquidated Damages-Subcontracting Plan                                   |JAN 1999         |                       |
+|52.222-50               |Combating Trafficking in Persons                                          |FEB 2009         |                       |
+|52.224-1                |Privacy Act Notification                                                  |APR 1984         |                       |
+|52.224-2                |Privacy Act                                                               |APR 1984         |                       |
+|52.232-33               |Payment by Electronic Funds Transfer--Central Contractor Registration     |OCT 2003         |                       |
+|52.233-3                |Protest After Award                                                       |AUG 1996         |                       |
+|252.201-7000            |Contracting Officer's Representative                                      |DEC 1991         |                       |
+|252.204-7004 Alt A      |Central Contractor Registration Alternate A                               |SEP 2007         |                       |
+|252.212-7001 (Dev)      |Contract Terms and Conditions Required to Implement Statutes or Executive |DEC 2010         |                       |
+|                        |Orders Applicable to Defense Acquisitions of Commercial Items (Deviation) |                 |                       |
+|252.226-7001            |Utilization of Indian Organizations and Indian-Owned Economic Enterprises,|SEP 2004         |                       |
+|                        |and Native Hawaiian Small Business Concerns                               |                 |                       |
+|252.232-7003            |Electronic Submission of Payment Requests and Receiving Reports           |MAR 2008         |                       |
+|252.232-7010            |Levies on Contract Payments                                               |DEC 2006         |                       |
+|252.243-7001            |Pricing Of Contract Modifications                                         |DEC 1991         |                       |
+|252.243-7002            |Requests for Equitable Adjustment                                         |MAR 1998         |                       |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CLAUSES INCORPORATED BY FULL TEXT
+
+
+52.209-9 UPDATES OF PUBLICLY AVAILABLE INFORMATION REGARDING RESPONSIBILITY MATTERS (FEB 2012)
+
+(a) The Contractor shall update the information in the Federal Awardee Performance and Integrity Information System (FAPIIS) on a semi-annual
+basis, throughout the life of the contract, by posting the required information in the Central Contractor Registration database via
+https://www.acquisition.gov.
+
+(b) As required by section 3010 of the Supplemental Appropriations Act, 2010 (Pub. L. 111-212), all information posted in FAPIIS on or after
+April 15, 2011, except past performance reviews, will be publicly available. FAPIIS consists of two segments--
+
+(1) The non-public segment, into which Government officials and the Contractor post information, which can only be viewed by--
+
+(i) Government personnel and authorized users performing business on behalf of the Government; or
+
+(ii) The Contractor, when viewing data on itself; and
+
+(2) The publicly-available segment, to which all data in the non-public segment of FAPIIS is automatically transferred after a waiting period of
+14 calendar days, except for--
+
+(i) Past performance reviews required by subpart 42.15;
+
+(ii) Information that was entered prior to April 15, 2011; or
+
+(iii) Information that is withdrawn during the 14-calendar-day waiting period by the Government official who posted it in accordance with
+paragraph (c)(1) of this clause.
+
+(c) The Contractor will receive notification when the Government posts new information to the Contractor's record.
+
+(1) If the Contractor asserts in writing within 7 calendar days, to the Government official who posted the information, that some of the
+information posted to the non-public segment of FAPIIS is covered by a disclosure exemption under the Freedom of Information Act, the Government
+official who posted the information must within 7 calendar days remove the posting from FAPIIS and resolve the issue in accordance with agency
+Freedom of Information procedures, prior to reposting the releasable information. The contractor must cite 52.209-9 and request removal within 7
+calendar days of the posting to FAPIIS.
+
+(2) The Contractor will also have an opportunity to post comments regarding information that has been posted by the Government. The comments
+will be retained as long as the associated information is retained, i.e., for a total period of 6 years. Contractor comments will remain a part
+of the record unless the Contractor revises them.
+
+(3) As required by section 3010 of Pub. L. 111-212, all information posted in FAPIIS on or after April 15, 2011, except past performance
+reviews, will be publicly available.
+
+(d) Public requests for system information posted prior to April 15, 2011, will be handled under Freedom of Information Act procedures,
+including, where appropriate, procedures promulgated under E.O. 12600.
+
+(End of clause)
+
+
+
+52.217-8     OPTION TO EXTEND SERVICES (NOV 1999)
+
+The Government may require continued performance of any services within the limits and at the rates specified in the contract.  These rates may
+be adjusted only as a result of revisions to prevailing labor rates provided by the Secretary of Labor.  The option provision may be exercised
+more than once, but the total extension of performance hereunder shall not exceed 6 months.  The Contracting Officer may exercise the option by
+written notice to the Contractor within 30 days of contract expiration.
+
+(End of clause)
+
+
+
+52.217-9     OPTION TO EXTEND THE TERM OF THE CONTRACT (MAR 2000)
+
+(a) The Government may extend the term of this contract by written notice to the Contractor within 30 days of contract expiration; provided that
+the Government gives the Contractor a preliminary written notice of its intent to extend at least 60 days before the contract expires. The
+preliminary notice does not commit the Government to an extension.
+
+(b) If the Government exercises this option, the extended contract shall be considered to include this option clause.
+
+(c) The total duration of this contract, including the exercise of any options under this clause, shall not exceed 5 years.
+
+(End of clause)
+
+
+
+52.252-2      CLAUSES INCORPORATED BY REFERENCE (FEB 1998)
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request,
+the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at this address:
+
+FAR and DFARS clauses/provisions:  http://farsite.hill.af.mil
+
+
+(End of clause)
+
+
+
+52.252-6     AUTHORIZED DEVIATIONS IN CLAUSES (APR 1984)
+
+(a) The use in this solicitation or contract of any Federal Acquisition Regulation (FAR) (48 CFR Chapter 1) clause with an authorized deviation
+is indicated by the addition of "(DEVIATION)" after the date of the clause.
+
+(b) The use in this solicitation of any Defense Federal Acquisition Regulation Supplement (DFARS) (48 CFR Chapter 2) provision with an
+authorized deviation is indicated by the addition of "(DEVIATION)" after the name of the regulation
+
+(End of clause)
+
+
+ADDENDUM TO FAR 52.212-4 --
+
+SECTION 508 COMPLIANCE
+
+a) This paragraph is an addendum to FAR 52.212-4.
+(b)  All electronic hardware and software procured under this contract/purchase order must comply with Section 508 of the Rehabilitation Act of
+1973 (29 U.S.C. 794d) and the Architectural and Transportation Barriers Compliance Board Electronic Information Technology (EIT) Accessibility
+Standards (36 CFR part 1194).
+(c)  Section 508, Rehabilitation Act of 1973 (as amended) Compliance. To be considered eligible for award, offerors must propose goods that meet
+the applicable provisions of Subparts B, C, and D of the Access Board’s standards. Alternatively, offerors may propose goods or services that
+provide equivalent facilitation.
+(d)  Such offers will be considered to have met the provisions of the Access Board’s standards for the feature or component providing equivalent
+facilitation.  If none of the offers that meet all applicable provisions of the Access Board’s standards could be accepted without imposing an
+undue burden upon the agency or component, or if none of the offerors propose goods or services that fully meet all of the applicable Access
+Board’s provisions, those offerors whose products or services meet some of the applicable provisions will be considered eligible for award.
+Award will not be made to an offeror meeting all or some of the applicable Access Board provisions if award would impose an undue burden upon
+the agency.
+(e)  further information is available via the Internet at http://www.section508.gov
+(f) If this contract is a type of indefinite-delivery contract (e.g., indefinite-delivery indefinite-quantity, requirements), this paragraph
+shall apply to each order issued under the contract on a case-by-case basis.
+(g) This paragraph shall be deemed to be written agreement of the parties as contemplated by the changes paragraph of the Contract Terms And
+Conditions – Commercial Items clause of this contract (FAR 52.212-4(c)).
+
+
+
+
+CONSENT TO DE-OBLIGATION OF EXCESS FUNDS AFTER FINAL PAYMENT
+
+(a) This paragraph is an addendum to FAR 52.212-4.
+(b) The Contractor agrees that, after final payment has been made, the Government may unilaterally, and without obtaining further approval from
+the Contractor, adjust the final quantities of goods and/or services delivered and accepted under this contract and adjust the final price of
+this contract to conform to the total amount paid as of the date final payment was made.
+(c) In accordance with FAR 4.804-3, the paying office shall close the contract file upon issuance of the final payment voucher.  No contract
+modification will be issued to de-obligate the excess funds.
+(d) If this contract is a type of indefinite-delivery contract (e.g., indefinite-delivery indefinite-quantity, requirements), this paragraph
+shall apply to each order issued under the contract on a case-by-case basis.
+(e) This paragraph shall be deemed to be written agreement of the parties as contemplated by the changes paragraph of the Contract Terms And
+Conditions – Commercial Items clause of this contract (FAR 52.212-4(c)).
+                                                        (End of Addendum to FAR 52.212-4)
+
+
+ADMINISTRATIVE INFORMATION
+
+A.    POINTS OF CONTACT:
+
+Contracting Officer:                    NELLA VALDEZ
+                                  Phone:  703-588-3610
+                                  Email:  xxx.xxxx@hq.dodea.edu
+
+Contract Specialist:                    TBD at contract award
+                                  Phone: 703-588-36XX
+                                  Email: XXX.XXX@hq.dodea.edu
+
+Contracting Officer's Representative:        TBA at contract award
+(COR) Phone:  703-588-XXXX
+                                  Email:  xxx.xxx@hq.dodea.edu
+
+Contractor Point of Contact:            TBA at contract award
+                                  Phone:
+                                  Email:
+
+
+B.    INVOICE SUBMISSION
+
+Electronic submission of invoices are required in accordance with Wide Area Workflow (WAWF), see DFARS Clause 252.232-7003 and WAWF
+Instructions, incorporated elsewhere in this document.
+
+
+C.    TAX EXEMPTION STATUS
+
+DoDEA is an activity of the Federal Government.  As such, state agencies are precluded from taxing them by reason of the Supreme Court decision
+in McCullough v. Maryland, 17 US 316 (1817).  In addition, the various states have codified this immunity by appropriate statutes.  DoDEA
+Federal Tax Identification Number:  26-2331642.
+
+
+D.    CONTRACT TYPE
+
+Contract award type shall be a Firm-Fixed Priced Contract.  The base year period of performance shall be from date of award through 12 months
+with the Government's option to extend the contract term for up to four consecutive, 12-month option periods.
+
+
+
+
+
+                                              WIDE AREA WORKFLOW – RECEIPT AND ACCEPTANCE (WAWF-RA)
+                                              ELECTRONIC RECEIVING REPORT AND INVOICING INSTRUCTIONS
+
+IN ACCORDANCE WITH DFARS 252.232-7003, USE OF ELECTRONIC PAYMENT REQUESTS, IS MANDATORY.  USE OF WAWF WILL SPEED UP YOUR PAYMENT PROCESSING TIME
+AND ALLOW YOU TO MONITOR YOUR PAYMENT STATUS ONLINE.  THERE ARE NO CHARGES OR FEES TO USE WAWF.
+
+Any payment request that is not submitted in electronic form through WAWF WILL BE REJECTED by the Defense Finance Accounting Service (DFAS).
+
+Requests for payments must be submitted electronically via the Internet through the Wide Area WorkFlow – Receipt and Acceptance (WAWF-RA) system
+at https://wawf.eb.mil.  The WAWF Vendor Instructions for Installation and Registration Guide is available online at:
+http://www.wawftraining.com
+
+
+THE FOLLOWING CODES WILL BE REQUIRED TO ROUTE YOUR RECEIVING REPORTS, INVOICES AND ADDITIONAL E-MAILS CORRECTLY THROUGH WAWF.
+
+NOTE:  DODEA WILL ONLY PROCESS 2 IN 1 SUBMISSIONS.
+
+|CONTRACT NO.                      |ISSUED BY/ADMIN DODAAC:           |CAGE CODE:                        |TYPE OF DOCUMENT:                 |
+|                                  |HE1254                            |                                  |2-IN-1                            |
+|DELIVERY ORDER NO.                |PAY OFFICE DODAAC:                |INSPECTED BY DODAAC:              |SERVICE ACCEPTOR/SHIP TO:         |
+|                                  |HQ0347                            |HE1254                            |HE1254                            |
+|PLEASE SEND ADDITIONAL E-MAIL NOTIFICATIONS TO:                                                                                             |
+|CONTRACT ADMINISTRATOR:                                               |E-MAIL:                                                               |
+|                                                                      |xxx.xxx@hq.dodea.edu                                                  |
+|contracting officer:                                                  |E-MAIL:                                                               |
+|Nella Valdez                                                          |Nella.valdez@hq.dodea.edu                                             |
+|contracting officer’s representative / Acceptor                       |E-MAIL:                                                               |
+|                                                                      |                                                                      |
+
+
+* NOTE TO CONTRACTOR:  The codes in these blocks identify the customer responsible for inspection and acceptance of goods or services provided
+under this contract.  In the event problems are encountered when using these codes to process invoices for payment, use the code cited in block
+9 of the SF 1449 or block 6 of the SF30 instead.
+
+Contract Number - Found in Block 2 of SF1449 Form or Block 1 of DD1155. GSA # goes in this block if a GSA order.
+Delivery Order - Found in Block 4 (Order Number) of SF1449 Form or Block 2 of DD1155 (e.g. HE1254-04-F-0001).
+Issue Date - Found in Block 6 (Solicitation Issue Date) of SF1449 Form and Block 3 of DD1155.
+Pay DODAAC - Found in block 16a (Payment will be made by) of SF1449 Form. Pay office code is used to route documents to the Defense Finance
+Accounting office responsible for payment to offered.  HQ DoDEA is usually HQ0347, DFAS Indianapolis.
+Issue DODAAC - Found in Block 9 (Issued by) of SF1449 Form or Block 6 of DD1155. Contracting office that issued your contract - WAWF uses the
+Code to route the document to the base.  HQ DoDEA will typically be HE1254.
+Admin DODAAC – Not required, same contract office that issued your contract.
+Ship To Code/Ext. – There may be a 6 digit code found in Block 15 “deliver to” with an associated address cited.  There may also be a “see
+schedule” remark in Block 15.
+Ship From / Ext Code - Not Required.
+LPO DoDAAC / Ext Code - Not Used - Leave Blank
+
+
+                                                                STATEMENT OF WORK
+
+1.0   INTRODUCTION
+
+1.1   The Department of Defense Education Activity (DoDEA) serves the educational needs of the dependents of military and civilian employees by
+providing PK-12 instruction to approximately 87,000 students in seven states, twelve foreign countries, Guam, and Puerto Rico.  The number of
+learners varies based on the deployment of military troops worldwide.  DoDEA has approximately 7,500 teachers worldwide.  DoDEA’s curriculum,
+resources, and student achievement scores on standardized assessments compare favorably to high-performing US public schools.
+
+1.2   DoDEA is divided into three administrative areas.  DDESS (Domestic Dependent Elementary and Secondary Schools) covers the schools in seven
+states and Puerto Rico, and for administrative purposes, Cuba.  DoDDS (Department of Defense Dependent Schools) is divided into DoDDS-Europe and
+DoDDS-Pacific.  The former administers the schools in England, Germany, Italy, Belgium, Netherlands, Spain, Portugal, Turkey, and Bahrain.  The
+latter covers the schools in Korea, Japan, and for administrative purposes, Guam.  DoDEA also operates a fully accredited Virtual High School
+with its main office in Virginia and with teaching hubs in Germany and Korea.
+
+
+2.0   BACKGROUND
+
+2.1   DoDEA currently uses the Blackboard 9.1 LMS to support a mix of approximately 25,000 student faculty and staff accounts  worldwide.   DoDEA
+intends to expand it’s LMS resources to additional students, faculty and staff in order to accommodate the growing number of requests for  online
+instructional tools.
+
+
+3.0   SCOPE
+
+3.1   DoDEA requires an enterprise-wide, K-12 focused LMS for its students and educators, which will replace the current DoDEA LMS for the
+development and tracking of online curricular content.  DoDEA requires a contractor-hosted production and test environment.
+
+3.2   The LMS will provide an online presence in classrooms in both its brick-and-mortar and virtual schools.  As the LMS is core to the
+classroom presence for teachers operating in the DoDEA Virtual High School, the adopted system will include a robust set of content creation,
+instruction and assessment tools to both replicate and extend modalities found in a traditional classroom environment.
+
+3.3   The Contractor will provide: (1) services to assist DoDEA Information Technology (IT) staff with the planning, migration, and
+implementation of all user accounts, roles, courses, and content currently contained in DoDEA’s LMS environment; and, (2) services and resources
+to train all faculty and above school level personnel in the technical, functional and administrative functions of the new LMS.
+
+
+4.0   REQUIREMENTS
+
+4.1   The LMS shall, at minimum, have the following features and operational functions.  The LMS will primarily serve DoDEA students, faculty
+and staff, with the potential of serving additional DoD dependents around the world.  Since pricing models may vary, DoDEA requests the system
+be able to accommodate a range of 8,000 to 25,000 active users.  The system should be robust enough to scale as the user population grows.
+
+   A. Registration and enrollment functions and workflow
+
+   1. Uses a straightforward, simple process for learner registration/enrollment.
+
+   2. Allows learner self-enrollment for courses.
+
+   3. Allows learners—as a configuration option (where courses are not mandatory)—to select, register and remove courses or curricula from their
+      course listing/learning track on their own with no supervisory or administrator intervention.
+
+   4. Incorporates clear navigation and search options within course catalogs to find and register for courses.
+
+   5. Manages recurring training so learners are auto-enrolled at the appropriate intervals.
+
+   6. Allows course instructors to enroll and/or approve enrollments for learners.
+
+   7. Routes enrollment requests to instructors automatically.
+
+   8. Links and/or enrolls learners in appropriate courses or curriculum automatically based on group or role memberships.
+
+   B.       Notifications
+
+   1. Notifies users when actions are taken in the system that affects them, both through system notification functions and by email. Examples of
+      such actions are:
+
+      o Change in user profile status
+         o Change in course status
+         o Confirm enrollment
+         o Confirm class cancellation
+         o Confirm being wait listed for a course
+         o Confirm learner dropped from class
+         o Provide periodic reminders to attend or finish courses
+         o Provide reminders to complete a survey
+
+   C. Batch administration workflow
+
+     1. Offers batch options for tasks involving groups of system objects.
+
+     2. Allows administrators to batch register and remove groups of learners.
+
+     3. Allows administrators to batch set permissions and roles for users.
+
+     4. Allows administrators to batch configure courses.
+
+   D. Prerequisite handling
+
+     1. Allows administrators to set prerequisites so that learners are evaluated for meeting prerequisites before being able to enroll in a
+        course.
+
+     2. Can be configured to deliver pre-assessments to allow learners to test out if they demonstrate mastery of course material.
+
+   E. Content creation, importing, and configuration
+
+     1. Provides an easy, powerful, and intuitive process to import and configure content.
+
+     2. Provides the ability to internally create and/or configure ancillary learning objects like glossaries that can be applied globally to
+        more than one course within the LMS.
+
+     3. Is interoperable with third-party content supported through the use of standards and specifications such as Shareable Content Object
+        Reference Model (SCORM) and IMS Common Cartridge.
+
+     4. Allows the import of course packages with no physical constraint on content or package size.
+
+     5. Allows elements of a course to be updated without creating a new version of the course (for instance, swapping out the SCORM manifest
+        file without having to upload an entire replacement course package).
+
+     6. Provides inline equation editing capabilities for writing complex mathematical formulas in LMS-created content.
+
+     7. Offers portfolio, journaling and science notebook capabilities for creation, import, export, interaction and showcasing of learner
+        content and achievements throughout their enrollment career in DoDEA schools.
+
+
+
+
+
+   F. System access
+
+     1. Allows users to self-register for an LMS account.
+
+     2. Provides a single sign-on so that users who have logged into the enterprise intranet (through a portal, etc.) can get into the LMS
+        without an additional login.
+
+     3. Can provide Central Authentication Services (CAS) to allow LMS login to transfer to other enterprise systems.
+
+     4. Requires user logon only once per LMS session.
+
+     5. Can be configured to allow faculty and staff to authenticate to the system using their Common Access Card (CAC).
+
+     6. Incorporates appropriate security certifications, standards, and features including Secure Sockets Layer (SSL) and Public Key
+        Infrastructure (PKI)
+
+     7. Allows configuration for the management of personally identifiable information (PII) in accordance with policy as outlined in the DoD
+        regulation 5400.11-R.
+
+   G. Permissions and roles
+
+     1. Defines a wide variety of permission and role levels that are applicable to a range of organizational structures and uses case scenarios
+        for the system.
+
+     2. Ability to restrict course enrollment to pre-authorized learners.
+
+     3. Uses templates to easily set group permissions.
+
+     4. Ability to restrict access to functions for individual courses based on membership on teams associated with that course.
+
+     5. Allows users to (1) delegate permissions to users at a lower permission level and (2) create subgroups which inherit their parent
+        group’s permissions.
+
+     6. Offers features that allow administration based on external data feeds concerning organization roles and permissions.
+
+     7. Features levels of permission corresponding to clearly defined levels of administrative responsibility including system administration,
+        course administration, user administration, content authoring etc.
+
+   H. System performance
+
+     1. Performs with minimal system latency under a variety of load conditions.  While this may be subjective depending on local network
+        conditions, the system should not take an extraordinary amount of time to refresh screens or load content.
+
+     2. Handles user load efficiently, provisioning and scaling resources to smoothly accommodate fluctuations in numbers of concurrent users.
+
+     3. Works equally well on all standard Internet browsers.
+
+   I. Course catalog
+
+     1. Contains a course catalog including many details of courses, especially:
+
+         o Objectives
+         o Credits
+         o Course #
+         o Prerequisites
+         o Functional area
+         o Location
+         o Subject
+         o Associated resources
+
+     2. Provides search capability, including by all of the above in addition to keyword.
+
+     3. Provides the ability to search for text within courses.
+
+     4. Can be linked dynamically to external catalogs.
+
+   J. Interface customization
+
+     1. Allows visual branding of the interface for all users in the enterprise.
+
+     2. Allows use of skins to visually brand the LMS dynamically according to the role, organizational membership, or other parameters
+        available to the individual user who is logged in.
+
+     3. Allows toggling display of the LMS Table of Contents (TOC) for a course (for SCORM objects)
+
+   K. Standards and language support
+
+     1. Supports the current and all required legacy versions of relevant standards such as SCORM.
+
+     2. For SCORM content:
+
+         o Retains visibility for the TOC when a Shareable Content Object (SCO) has been launched.
+         o Shows both ―attempted status as well as ―completion
+         o Is not proprietary in its implementation and handling of SCORM calls other than ―attempted and ―completion.
+         o Supports multi-byte (Unicode) fonts (especially Asian language characters).
+
+   L. Learning Object Management
+
+     1. Allows attaching, associating, and consolidating diverse content pieces into a single course (for example, core course content delivered
+        as e-learning with auxiliary PDF and video resources included separately).
+
+     2. Includes ways to link content and assignments in blended learning courses so that it is clear that the components are part of a single
+        course and can be assessed and tracked as such.
+
+     3. Is optimized for reusability in general.
+
+   M. Delivery architecture
+
+     1. Supports a wide variety of delivery architectures. For instance, an e-learning architecture involving a content repository that may be
+        on a different server than the LMS and is supplied by another contractor.
+
+     2. Can be configured (via proxy server, etc.) so that courses not residing in the LMS domain can be launched, that is, avoiding the cross-
+        domain scripting issue. This includes launching courses from content repositories in different locations within the corporate intranet,
+        as well as on the Internet.
+
+     3. Provides integration capabilities with social networking services.
+
+     4. Allows delivery of a wide variety of content in diverse file formats for delivery to learners as either embedded into the e-learning or
+        separate learning objects.
+
+     5. Includes configuration management and version control features for content.
+
+     6. Supports delivery to mobile devices.
+
+     7. Permits bookmarking locations in courses and other content and storing favorites to particular screens in the LMS.
+
+     8. Includes a system requirement checker that tests learner systems for appropriate plugins (and versions) before courses are launched.
+        The LMS should not allow users to launch content unless it passes the system requirement test.
+
+
+
+
+
+     9. Opens a minimum of windows to deliver course content to avoid the following problem:  Some LMS open chains of 3 or 4 browser windows
+        just to deliver a simple course. If the user inadvertently closes one of these windows, it can be possible for the course to stop
+        functioning.
+
+   N. Assessment authoring
+
+     1. Provides an internal function to create and deliver a wide variety of assessment types (with template options).
+
+     2. Assessments created in the system must be interoperable with other content packages and LMSs.
+
+     3. Provides a rating or assessment function for learners to assess the effectiveness of the course instructor.
+
+     4. Allows input/upload and management of essay questions.
+
+     5. Can be configured to remediate learners to particular content or locations in content based on assessment results.
+
+     6. Allows importing sets of questions that adhere to standard formats, such as Question and Test Interoperability (QTI).
+
+     7. Randomizes the order of questions within an assessment and the answers within a question.
+
+     8. Provides scoring of assessments within the system using an internal grade-book.
+
+   O. Collaboration and communication
+
+     1. Includes collaboration functions to enable users to communicate with each other, instructors, course administrators, system
+        administrators, etc.
+
+     2. These functions typically include email, white boarding, chat, file sharing, threaded discussion, desktop sharing.
+
+   P. Social networking
+
+     1. Provides specific functions that enable learners to provide feedback on the content.
+
+     2. Provides a variety of asynchronous distribution mechanisms for content, including email attachments, Really Simple Syndication (RSS)
+        feeds, and podcasts.
+
+     3. Includes online conferencing capability or integration with third-party web conferencing tools.
+
+     4. Includes logistical communication functions such as a course calendar and learning assignment pages. Calendars should filter items for
+        relevancy to the role of the person logged in.
+
+     5. Optionally provides social media learning functions that can be integrated into the curriculum to provide social media-based learning
+        assignments.
+
+   Q. Learner tracking
+
+     1. Capable of tracking, reporting and storing a wide range of learner performance data by individual or group.
+
+     2. Includes the ability to add custom fields to track additional learner information, so that they can be included in analyses and reports.
+
+     3. Provides the ability to print a variety of tracking-related items, including test scores.
+
+     4. Can track a wide variety of relevant items, such as:
+
+         o Enrollments
+         o Withdrawals
+         o Launches
+         o Completions
+         o Competencies
+         o Use of resources
+         o Evaluations
+         o Grades
+         o Assessment scores
+
+     5. Allows a learner to view their own online course results on a lesson by lesson basis as well as (i) time spent, (ii) date and time last
+        accessed, (iii) number of test tries and, (iv) course grade.
+
+
+
+   R. Certificates, forms, and surveys
+
+     1. Allows administrators to design and upload certificate templates.
+
+     2. Allows easy printing of certificates, surveys, and evaluations.
+
+     3. Provides survey functions as follows:
+
+          o Create and edit
+          o Copy
+          o Define properties
+          o Compilation/reporting of recorded data
+
+   S. Interfaces with external systems and applications
+
+     1. Compatible with School Interchange Format (SIF) and interfaces with a wide variety of Student Information Systems (SIS) including
+        identification, demographics, competencies, certifications, and IDPs (individual development plans).  DoDEA currently uses the X2 Aspen
+        SIS.
+
+     2. Enables add-ons and integration using open architecture.
+
+     3. Import and export of learner and course tracking data using standardized data interchange formats (e.g., XML, CSV) without writing high-
+        level-of-effort integration applications.
+
+     4. Interoperable with other systems that manage and deliver training, including Learning Content Management Systems (LCMS).
+
+     5. Can call external applications and code objects such as calculators and random number generators, and set up interfaces to read and
+        write from databases.
+
+     6. Can be interoperable with a variety of authoring tools, including direct import from the authoring tool into the LMS.
+
+     7. Includes widgets or add-ons that allow the learner to access search engines, maps, social media sites, etc.
+
+     8. Deletes IDs and training records associated with users upon record removal in the external system (SIS or other system of record).
+
+   T. Metadata support
+
+     1. Supports standard metadata formats (Learning Object Metadata, Dublin Core, etc.).
+
+     2. Includes a convenient mechanism for adding metadata or descriptive labeling to courses and other objects (SCOs and individual assets,
+        etc.).
+
+     3. Uses metadata to search course catalogs.
+
+     4. Presents options for display of metadata to learners and administrators at relevant nodes in their workflow.
+
+   U. User profiles
+
+     1. Has the ability to manage profiles for users and groups of users.
+
+     2. Can be searched on any field.
+
+   V. Reports
+
+     1. Offers a wide variety of predefined reports including user and content access statistics.
+
+     2. Offers flexible, robust abilities to create custom reports, both internally and by using third party tools such as iReports, Crystal
+        Reports or Business Intelligence Reporting Tool (BIRT).
+
+     3. Provides intuitive interface for users to define report options for export or print.
+
+     4. Provides capabilities to:
+
+         o Administer and maintain performance and evaluation metrics.
+         o Track individual and group usage statistics.
+         o Integrate evaluation forms internal and external to the courses.
+         o Perform statistical analysis on the database information.
+         o Report on learner performance data by individual and group.
+
+     5. Provides direct access to tables used within the LMS for developing queries and reports and shall include documentation for table and
+        data structure specifications.
+
+     6. Provides reporting on certification status of groups and individuals, including upcoming renewals, missed renewal deadlines, etc.
+
+   W. Usability
+
+     1. Displays interfaces that are consistent and can be standardized throughout all screens.
+
+     2. Uses straightforward, simple, and intuitive paths for performing administrator and learner job task functions.
+
+     3. Intuitive and user friendly, allowing users to choose from tiers of features according to their knowledge and expertise.
+
+     4. Provides user interface customization so all users can optimize screen views for their particular needs.
+
+     5. Administrative interfaces are clear, simple, and optimized for usability.
+
+     6. Provides clear, specific error messages that aid in troubleshooting. Messages should be understandable to LMS administrators, content
+        developers and end users.
+
+   X. Scalability
+
+     1. Includes a scalable architecture that allows the system to expand as the number of users increases.
+
+   Y. Media and content support
+
+     1. Provides support for industry-standard streaming protocols for audio and video.
+
+     2. Supports immersive learning content.
+
+     3. Supports a wide variety of media (see below) and media file formats including:
+
+         o MP3
+         o WAV
+         o MPEG-4
+         o Quicktime
+         o AVI
+         o Microsoft Office
+         o Adobe PDF
+         o JPEG
+         o PNG
+         o GIF
+         o SWF
+
+
+
+   2. The Contractor will provide a solution to address system installation and data migration services and user/administrator training:
+
+           1. Installation and migration services.
+
+     1. Provide installation/configuration planning and implementation services to systems administrators and ancillary IT support staff.
+
+     2. Provide data migration services to systems administrators including consolidation planning, staging and execution for all courses,
+        content, users, roles and additional system objects from DoDEA’s current LMS.
+
+     3. Provide consulting on migration implementation strategies including parallel system solutions, hard cut over, etc.
+
+     4. Assist with migration process development based on available use case scenarios.
+
+     5. Assist with data validation and regression testing upon successful migration.
+
+     6. Provide both production and test/staging LMS environments.
+
+           2. User and Administrator training, technical support, and documentation.
+
+     1. Provide support documentation in a wide variety of formats including tutorials, help, examples, references, and user manuals.
+
+     2. Provide a variety of Help Desk support options for administrators and support staff.  (telephone, chat, email, etc.).
+
+     3. Provide a Help Desk system that is structured and process driven via trouble call tracking and reporting.
+
+     4. Provide Help Desk support that coordinates problem resolution with the appropriate parties: contractors, subject-matter experts, etc.
+        for problem resolution.
+
+     5. Provide 24/7 support during DoDEA’s normal operating hours in each area around the globe.
+
+     6. Perform all scheduled system maintenance and upgrades during times least disruptive to DoDEA’s operations.
+
+   3. Training.  Provide at least three training venues, such as such as e-learning, video tutorials, and webinars to cover technical, functional
+      and administrative functions of the new LMS and:
+
+     1. Includes an orientation tutorial for new users.
+
+     2. a structured Service Level Agreement (SLA) including standard response times for helpdesk support on a variety of tiered functional and
+        technical issues.
+
+     3. technical consulting services for customizations, implementation, configuration, architecture design, needs analysis, change management
+        services, etc.
+
+
+5.0   TECHNICAL REQUIREMENTS
+
+5.1   Information Security.  All online resources and instructional software shall meet DoDEA information security requirements (as defined
+      below), such as not containing vulnerabilities posing risk to the network.  All software and websites shall undergo preliminary testing to
+      ensure that they pose no security risk to the DoDEA infrastructure.  Any IT component of the Contractor’s proposal that fails to meet
+      DoDEA’s information security and technology requirements shall be excluded from further evaluation.
+
+5.2   All software/Plugins/Add-ons shall meet DoDEA’s following requirements:
+
+5.2.1 DoD Information Assurance Certification and Accreditation Process (DIACAP) [Accreditation Process (DIACAP), 28 November 2007, which may be
+      found at the following URL: http://www.dtic.mil/whs/directives/corres/pdf/851001p.pdf].
+
+5.2.2 Security Technical Information Guidance (STIG), which may be found at the following URL: http://iase.disa.mil/stigs/stig/index.html.
+
+5.2.3 The Contractor shall provide security patches and upgrades, to include third-party applications, in response to public released
+      vulnerabilities associated with their software solution.  Any deviations from this requirement (paragraph 5.2) shall be approved in writing
+      by the DoDEA Chief Information Officer (CIO)/Designated Approving Authority (DAA).
+
+5.3   Software Upgrades.  Contractor software solutions shall not interfere with other installed software and shall not modify DoDEA’s
+      underlying system security configuration. The Contractor shall develop and provide software upgrades within 30 days of notification should
+      any of the software/plug-ins be found vulnerable and non-compliant with DISA standards.  Software upgrades and patches shall be included in
+      the licensing cost and performed at the least disruptive times.  Any additional software requirements may be subject to the DIACAP process
+      prior to contract award.
+
+5.4   In accordance with its testing criteria, DoDEA requires the use of software which may be installed and/or accessed in a stand-alone
+      environment, a network environment or web-based environment that is compatible with standards cited herein.  All software shall be
+      completely functional on a standard DoDEA desktop without the need for Administrative-level user rights or a requirement to insert media
+      (CD/DVD) to execute the software.  Software shall not require modifications to folder permissions while executing.  Additionally, all
+      software shall be compatible with the following hardware baseline:
+
+|    Specifications            |Minimum                       |
+|Memory                        |256 Mb                        |
+|Hard Drive                    |40 GB                         |
+|Processor                     |P4 – 2.4 GHz                  |
+|Operating System              |Windows XP                    |
+
+
+5.5   Pop-Up Windows.  All windows, fly-out menus, etc. shall work from within an environment that blocks popup windows.   Additionally, all web-
+      based software shall not require the use of streaming videos or downloads, such as Java Applets.
+
+5.6   All software packages shall support unattended installation methods used by enterprise software packaging and deployment systems, i.e.,
+      Microsoft Systems Management Server, Computer Associates Unicenter software delivery, and Symantec Altiris deployment solution.  Older 16-
+      bit software shall be closely analyzed against this requirement.
+
+5.7   Online Materials.  The Contractor shall deliver any online materials on a web-based platform and provide course or video files in
+      QuickTime v.6.0+ and Windows Media v.9+ formats, and /or Flash 6+ format that are compatible with the hardware and operating system
+      requirements listed in Section 5.4.  The software shall run successfully in the existing DoDEA environment.
+
+5.8   Scalability.  The Contractor’s solution shall be robust enough to serve the needs of a large community of learners dispersed across the
+      world using a variety of bandwidths.  The Contractor’s solution shall be scalable and able to expand to meet future growth, both in terms
+      of the volume of instruction and the size of the student body.
+
+5.8.1 Privacy Act Requirements.  Any portion of the Contractor’s solution that collects student personally identifiable information shall be
+      compliant with the Children's Online Privacy Protection Act (COPPA) and the Children's Internet Protection Act (CIPA), and the Privacy Act,
+      which is found at http://www.archives.gov/about/laws/privacy-act-1974.html.
+
+5.8.2 DoD Privacy Act Training.  Any opportunity for data integration of student or teacher accounts shall adhere to the DoD guidance for
+      security of personally identifiable information (appended).  All Contractor staff that has access to DoDEA student and/or teacher
+      personally identifiable information shall take the DoD Privacy Act/Personally Identifiable Information (PA and PPI/PII) training before
+      gaining access to the data and yearly thereafter.  DoDEA contractors who have a DoDEA username and password may access the training on
+      DoDEA's intranet.  All other contractors shall access the PA and PPI/PII slides, a link to which is found on DoDEA's homepage
+      (www.dodea.edu).  Contractors shall send written confirmation to the Contracting Officer's Representative listing the staff members that
+      have taken the mandatory PA and PPI/PII training.
+
+5.9   Maintenance and support shall be available for the duration of the contract. Maintenance is defined as automatic distribution of upgrades
+      and revisions that can be accomplished using a combination of Internet and or email.  Any upgrades to online digital materials shall
+      include compatibility with DoDEA school-level technology and Department of Defense’s (DoD) information technology requirements.  The
+      Contractor shall not contact schools directly but shall coordinate the dissemination of upgrades or revisions through the COR and shall
+      provide electronic access of the update and/or revision to the COR for testing.
+
+5.10  Non-Disclosure Agreements (NDA).  The Contractor may be required to sign Non-Disclosure Agreements (NDA), which prohibits the disclosure,
+      publishing, divulgence, or release of any information obtained during the performance of the contract.
+
+6.0.  DELIVERABLES
+
+      6.1   Post-Award Conference: The Contractor will tele- or videoconference with the COR to discuss contract details.
+
+      6.2   Software Delivery: Area IT Software Packages: Ship all instructional software to include CD-ROMs, DVDs, etc. to each Area IT office
+           provided post award.  In the option years, the Contractor will ship new or upgraded instructional software to each Area IT office.
+           All shipments to the DoDDS-Europe and DoDDS-Pacific office will be done by a commercial company like FEDEX or UPS.  Shipments to
+           sites in the US should be done by the US Postal Service.
+
+7.0   PERFORMANCE TIMELINE AND DELIVERABLES
+      The Contractor shall furnish all services to be performed and all items to be delivered in accordance with the following delivery  schedule
+      for the Base Year (June 2012).
+
+|Delivery Items                            |Ref.        |Timeline                                                   |
+|BASE YEAR                                                                                                          |
+|Post-Award Conference                     |6.1         |Seven days after award                                     |
+|Software Delivery                         |6.2         |Delivery of software NLT _________ days after the contract |
+|                                          |            |award date, approximately ____ October, 2012.              |
+|Administrator Training                    |4.2B        |Administrator training to occur 30 days after contract     |
+|                                          |            |award and ongoing as needed.                               |
+|User Training                             |4.2B        |Initial user training to occur 60 days after contract award|
+|                                          |            |and ongoing as necessary based on available online training|
+|                                          |            |resources.                                                 |
+|Migration and Validation                  |4.2A        |60-90 days after contract award                            |
+|Technical Support                         |4.2B        |Ongoing                                                    |
+|OPTION YEARS                                                                                                       |
+|Upgrade and Maintenance                   |4.2B        |As required                                                |
+|Technical Support                         |4.2B        |Ongoing                                                    |
+
+
+
+APPENDIX A TO SOW – ACRONYMS
+
+BIRT - Business Intelligence Reporting Tool
+CAC - Common Access Card
+CAS - Central Authentication Services
+CIO - Chief Information Officer
+CIPA - Children's Internet Protection Act
+COPPA - Children's Online Privacy Protection Act
+DAA - Designated Approving Authority
+DDESS - Domestic Dependent Elementary and Secondary Schools
+DIACAP - DoD Information Assurance Certification and Accreditation Process
+DoDDS - Department of Defense Dependent Schools
+DoDEA - Department of Defense Education Activity
+FTE - Full Time Equivalent
+IDP - Individual Development Plan
+IT - Information Technology
+LCMS - Learning Content Management System
+LMS - Learning Management System
+NDA - Non-Disclosure Agreement
+PII - Personally Identifiable Information
+PKI - Public Key Infrastructure
+QTI - Question and Test Interoperability
+RSS - Really Simple Syndication
+SCO - Shareable Content Object
+SCORM - Shareable Content Object Reference Model
+SIS - Student Information System
+SLA - Service Level Agreement
+SSL - Secure Sockets Layer
+STIG - Security Technical Information Guidance
+TOC - Table of Contents
+
+
+
+INSTRUCTIONS, CONDITIONS AND NOTICES TO OFFERORS
+
+
+CLAUSES INCORPORATED BY FULL TEXT
+
+
+52.252-1     SOLICITATION PROVISIONS INCORPORATED BY REFERENCE (FEB 1998)
+
+This solicitation incorporates one or more solicitation provisions by reference, with the same force and effect as if they were given in full
+text. Upon request, the Contracting Officer will make their full text available. The offeror is cautioned that the listed provisions may include
+blocks that must be completed by the offeror and submitted with its quotation or offer. In lieu of submitting the full text of those provisions,
+the offeror may identify the provision by paragraph identifier and provide the appropriate information with its quotation or offer. Also, the
+full text of a solicitation provision may be accessed electronically at this/these address(es):
+
+FAR and DFARS clauses/provisions:  http://farsite.hill.af.mil
+
+(End of provision)
+
+
+
+52.212-1      INSTRUCTIONS TO OFFERORS--COMMERCIAL ITEMS (FEB 2012)
+
+(a) North American Industry Classification System (NAICS) code and small business size standard. The NAICS code and small business size standard
+for this acquisition appear in Block 10 of the solicitation cover sheet (SF 1449). However, the small business size standard for a concern which
+submits an offer in its own name, but which proposes to furnish an item which it did not itself manufacture, is 500 employees.
+
+(b) Submission of offers. Submit signed and dated offers to the office specified in this solicitation at or before the exact time specified in
+this solicitation. Offers may be submitted on the SF 1449, letterhead stationery, or as otherwise specified in the solicitation. As a minimum,
+offers must show--
+
+(1) The solicitation number;
+
+(2) The time specified in the solicitation for receipt of offers;
+
+(3) The name, address, and telephone number of the offeror;
+
+(4) A technical description of the items being offered in sufficient detail to evaluate compliance with the requirements in the solicitation.
+This may include product literature, or other documents, if necessary;
+
+(5) Terms of any express warranty;
+
+(6) Price and any discount terms;
+
+(7) "Remit to" address, if different than mailing address;
+
+(8) A completed copy of the representations and certifications at FAR 52.212-3 (see FAR 52.212-3(b) for those representations and certifications
+that the offeror shall complete electronically);
+
+(9) Acknowledgment of Solicitation Amendments;
+
+(10) Past performance information, when included as an evaluation factor, to include recent and relevant contracts for the same or similar items
+and other references (including contract numbers, points of contact with telephone numbers and other relevant information); and
+
+(11) If the offer is not submitted on the SF 1449, include a statement specifying the extent of agreement with all terms, conditions, and
+provisions included in the solicitation. Offers that fail to furnish required representations or information, or reject the terms and conditions
+of the solicitation may be excluded from consideration.
+
+(c) Period for acceptance of offers. The offeror agrees to hold the prices in its offer firm for 30 calendar days from the date specified for
+receipt of offers, unless another time period is specified in an addendum to the solicitation.
+
+(d) Product samples. When required by the solicitation, product samples shall be submitted at or prior to the time specified for receipt of
+offers. Unless otherwise specified in this solicitation, these samples shall be submitted at no expense to the Government, and returned at the
+sender's request and expense, unless they are destroyed during preaward testing.
+
+(e) Multiple offers. Offerors are encouraged to submit multiple offers presenting alternative terms and conditions or commercial items for
+satisfying the requirements of this solicitation. Each offer submitted will be evaluated separately.
+
+(f) Late submissions, modifications, revisions, and withdrawals of offers:
+
+(1) Offerors are responsible for submitting offers, and any modifications, revisions, or withdrawals, so as to reach the Government office
+designated in the solicitation by the time specified in the solicitation. If no time is specified in the solicitation, the time for receipt is
+4:30 p.m., local time, for the designated Government office on the date that offers or revisions are due.
+
+(2)(i) Any offer, modification, revision, or withdrawal of an offer received at the Government office designated in the solicitation after the
+exact time specified for receipt of offers is “late” and will not be considered unless it is received before award is made, the Contracting
+Officer determines that accepting the late offer would not unduly delay the acquisition; and--
+
+(A) If it was transmitted through an electronic commerce method authorized by the solicitation, it was received at the initial point of entry to
+the Government infrastructure not later than 5:00 p.m. one working day prior to the date specified for receipt of offers; or
+
+(B) There is acceptable evidence to establish that it was received at the Government installation designated for receipt of offers and was under
+the Government's control prior to the time set for receipt of offers; or
+
+(C) If this solicitation is a request for proposals, it was the only proposal received.
+
+(ii) However, a late modification of an otherwise successful offer, that makes its terms more favorable to the Government, will be considered at
+any time it is received and may be accepted.
+
+(3) Acceptable evidence to establish the time of receipt at the Government installation includes the time/date stamp of that installation on the
+offer wrapper, other documentary evidence of receipt maintained by the installation, or oral testimony or statements of Government personnel.
+
+(4) If an emergency or unanticipated event interrupts normal Government processes so that offers cannot be received at the Government office
+designated for receipt of offers by the exact time specified in the solicitation, and urgent Government requirements preclude amendment of the
+solicitation or other notice of an extension of the closing date, the time specified for receipt of offers will be deemed to be extended to the
+same time of day specified in the solicitation on the first work day on which normal Government processes resume.
+
+(5) Offers may be withdrawn by written notice received at any time before the exact time set for receipt of offers. Oral offers in response to
+oral solicitations may be withdrawn orally. If the solicitation authorizes facsimile offers, offers may be withdrawn via facsimile received at
+any time before the exact time set for receipt of offers, subject to the conditions specified in the solicitation concerning facsimile offers.
+An offer may be withdrawn in person by an offeror or its authorized representative if, before the exact time set for receipt of offers, the
+identity of the person requesting withdrawal is established and the person signs a receipt for the offer.
+
+(g) Contract award (not applicable to Invitation for Bids). The Government intends to evaluate offers and award a contract without discussions
+with offerors. Therefore, the offeror's initial offer should contain the offeror's best terms from a price and technical standpoint. However,
+the Government reserves the right to conduct discussions if later determined by the Contracting Officer to be necessary. The Government may
+reject any or all offers if such action is in the public interest; accept other than the lowest offer; and waive informalities and minor
+irregularities in offers received.
+
+(h) Multiple awards. The Government may accept any item or group of items of an offer, unless the offeror qualifies the offer by specific
+limitations. Unless otherwise provided in the Schedule, offers may not be submitted for quantities less than those specified. The Government
+reserves the right to make an award on any item for a quantity less than the quantity offered, at the unit prices offered, unless the offeror
+specifies otherwise in the offer.
+
+(i) Availability of requirements documents cited in the solicitation. (1)(i) The GSA Index of Federal Specifications, Standards and Commercial
+Item Descriptions, FPMR Part 101-29, and copies of specifications, standards, and commercial item descriptions cited in this solicitation may be
+obtained for a fee by submitting a request to--GSA Federal Supply Service Specifications Section, Suite 8100, 470 East L'Enfant Plaza, SW,
+Washington, DC
+20407, Telephone (202) 619-8925, Facsimile (202) 619-8978.
+
+(ii) If the General Services Administration, Department of Agriculture, or Department of Veterans Affairs issued this solicitation, a single
+copy of specifications, standards, and commercial item descriptions cited in this solicitation may be obtained free of charge by submitting a
+request to the addressee in paragraph (i)(1)(i) of this provision. Additional copies will be issued for a fee.
+
+(2) Most unclassified Defense specifications and standards may be downloaded from the following ASSIST websites:
+
+(i) ASSIST (http://assist.daps.dla.mil).
+
+(ii) Quick Search (http://assist.daps.dla.mil/quicksearch).
+
+(iii) ASSISTdocs.com (http://assistdocs.com).
+
+(3) Documents not available from ASSIST may be ordered from the Department of Defense Single Stock Point (DoDSSP) by--
+
+(i) Using the ASSIST Shopping Wizard (http://assist.daps.dla.mil/wizard);
+
+(ii) Phoning the DoDSSP Customer Service Desk (215) 697-2179, Mon-Fri, 0730 to 1600 EST; or
+
+(iii) Ordering from DoDSSP, Building 4, Section D, 700 Robbins Avenue, Philadelphia, PA 19111-5094, Telephone (215) 697-2667/2179, Facsimile
+(215) 697-1462.
+
+(4) Nongovernment (voluntary) standards must be obtained from the organization responsible for their preparation, publication, or maintenance.
+
+
+
+(j) Data Universal Numbering System (DUNS) Number. (Applies to all offers exceeding $3,000, and offers of $3,000 or less if the solicitation
+requires the Contractor to be registered in the Central Contractor Registration (CCR) database. The offeror shall enter, in the block with its
+name and address on the cover page of its offer, the annotation “DUNS” or “DUNS +4” followed by the DUNS or DUNS +4 number that identifies the
+offeror's name and address. The DUNS +4 is the DUNS number plus a 4-character suffix that may be assigned at the discretion of the offeror to
+establish additional CCR records for identifying alternative Electronic Funds Transfer (EFT) accounts (see FAR Subpart 32.11) for the same
+concern. If the offeror does not have a DUNS number, it should contact Dun and Bradstreet directly to obtain one. An offeror within the United
+States may contact Dun and Bradstreet by calling 1-866-705-5711 or via the internet at http://fedgov.dnb.com/webform. An offeror located outside
+the United States must contact the local Dun and Bradstreet office for a DUNS number. The offeror should indicate that it is an offeror for a
+Government contract when contacting the local Dun and Bradstreet office.
+
+(k) Central Contractor Registration. Unless exempted by an addendum to this solicitation, by submission of an offer, the offeror acknowledges
+the requirement that a prospective awardee shall be registered in the CCR database prior to award, during performance and through final payment
+of any contract resulting from this solicitation. If the Offeror does not become registered in the CCR database in the time prescribed by the
+Contracting Officer, the Contracting Officer will proceed to award to the next otherwise successful registered Offeror. Offerors may obtain
+information on registration and annual confirmation requirements via the CCR database accessed through https://www.acquisition.gov or by calling
+1-888-227-2423 or 269-961-5757.
+
+(l) Debriefing. If a post-award debriefing is given to requesting offerors, the Government shall disclose the following information, if
+applicable:
+
+(1) The agency's evaluation of the significant weak or deficient factors in the debriefed offeror's offer.
+
+(2) The overall evaluated cost or price and technical rating of the successful and the debriefed offeror and past performance information on the
+debriefed offeror.
+
+(3) The overall ranking of all offerors, when any ranking was developed by the agency during source selection.
+
+(4) A summary of the rationale for award;
+
+(5) For acquisitions of commercial items, the make and model of the item to be delivered by the successful offeror.
+
+(6) Reasonable responses to relevant questions posed by the debriefed offeror as to whether source-selection procedures set forth in the
+solicitation, applicable regulations, and other applicable authorities were followed by the agency.
+
+(End of provision)
+
+
+
+ADDENDUM TO FAR 52.212-1 – INSTRUCTION TO OFFERORS – COMMERCIAL ITEMS (JUNE 2008)
+
+FAR 52.212-1 is hereby amended to reflect the changes shown below as to the specific paragraph revised.
+
+Para (a) (on small business size and identification).  This does not apply to this solicitation.
+
+Para (b) Submission of Offers.  The following amends this paragraph with respect to the information and documents required for submission in
+response to this solicitation and the procedures for the evaluation and award of contract.
+
+A.    GENERAL.
+
+1.    GENERAL INFORMATION:
+
+      a     Vendors are responsible to watch FEDBIZOPPS for postings of amendments, answers to questions, and other instructions / information,
+if any.  Any amendments posted to the solicitation must accompany your offer and be signed.
+
+      b.    Type Of Contract.  A firm-fixed priced contract will be awarded under the terms and conditions of this solicitation and vendor’s
+prices.  This contract will be awarded on an ALL OR NONE BASIS (basic plus option years) for all services within those line items.  Award will
+be pursuant to the award criteria stated in FAR 52.212-2 EVALUATION – COMMERCIAL ITEMS of this document.
+
+      c.    Packaging And Delivery.   Proposal submissions may be by any method available or preferable to you, such as U.S. Postal, UPS, FEDEX
+or hand delivered.  Submittals will be marked with the Solicitation Number, type of service, point of contact, and addressed and delivered
+directly to the fourth floor as follows:
+
+                       DoDEA Procurement Division
+                       4040 N. Fairfax Drive, 4th Floor
+                       ATTN: Nella Valdez
+                       Arlington, VA 22203-1635
+                       Phone:  703-588-3639/ 3608 / 3610
+                       SOLICITATION HE1254-12-R-0001
+                       Learning Management System
+
+3.    QUESTIONS.
+
+      a.    The cut-off date for all questions will be one week after the RFP has been posted, 30 MAY 2012. All questions will be in writing, by
+email, to the point of contact (POC), Nella.valdez@hq.dodea.edu, with the Subject Line “HE1254-12-R-0001 Questions.”  Telephone questions WILL
+NOT be accepted nor responded to.
+
+      b.    Responses to all questions will be in the form of an amendment to the RFP which will be posted on FEDBIZOPPS approximately five days
+after cut-off date for questions.
+
+      c.    Offerors will have an additional two days to submit questions after responses have been posted to clarify any responses not clear to
+them.  Responses will be posted within three business working days of close of receipt of final questions.  No questions will be accepted after
+the final posting of these questions.
+
+
+B.    SUBMISSION INSTRUCTIONS.
+
+1.    ORGANIZATION.  Proposals will be organized into four (4) separate sections:
+
+      PART I - TECHNICAL CAPABILITY
+      PART II - PAST PERFORMANCE
+      PART III – PRICE / CERTS-REPS
+      PART IV -SMALL BUSINESS SUBCONTRACTING PLAN.
+
+2     FORMAT.   To assure timely and equitable evaluation of proposals, all interested offerors must follow the instructions contained herein.
+Proposals must be complete, self-sufficient and respond directly to the requirements of this RFP.  Offerors shall assume that the Government has
+no prior knowledge of their experience, and will base its evaluation on the information presented in the offeror’s proposal.
+
+      (1)   All vendors must submit proposal materials as described below and in the stated quantities for each PART.  Types of binders used are
+at the discretion of the vendor, but each PART shall be separated.
+
+      (2)   Written and PDF  Submission.  Pricing information WILL BE separate from the technical information.   All original documents SHALL be
+HARD copy and labeled original.  In the case of a conflict between the electronic and the hard copy, the hard copy will be considered the
+correct version.
+
+      (3)   Glossary of Abbreviations and Acronyms.  Each SECTION shall contain a glossary of all abbreviations and acronyms used, with an
+explanation for each, if applicable.
+
+      d.    If sufficient quantities are not submitted, your proposal will be considered non-responsive and you will not be considered for
+award.
+
+      e.    Deviations will be fully explained; however, inclusion of price in documents other than the PRICE proposed IS NOT an acceptable
+deviation.  Any offer that states, includes or alludes to the proposed prices in the Technical Proposal or in the Past Performance
+Documentation, is unacceptable and will not be considered for award.
+
+
+C.    COMPOSITION REQUIREMENTS.  The following information is to be included in each SECTION.
+
+PART I – TECHNICAL CAPABILITY.   One original plus 3 copies and 2 PDF file copies.
+
+(1)   Response Limitation.  The Technical Capability Statement will consist of a document containing a maximum of 50 pages that outlines the
+understanding of the Government’s requirement and the Contractor’s approach to performing the work to include its skills and capability to meet
+the requirements of this acquisition.  The Contractor must address how its submitted materials meet the Statement of Work (SOW).   The Technical
+Evaluation Board will stop reviewing the Technical Capability Statement after the 50th page. In evaluating the technical statement, the
+Government will only consider information contained in the technical statement itself.
+
+(2)   Vendors must demonstrate capability and experience in the areas of understanding the Government’s requirement and approach to performing
+the work as described below.  Specifically, offerors shall address the following: Specifically, offerors shall, at minimum, address the
+following:
+
+            (i)  Contract Requirements.  Demonstrate familiarity and understanding of the SOW reuqirements.  As a minimum, Technical Approach
+should explain and address how their proposed LMS meets all the requirements set forth in the SOW.  At minimum, address:
+
+            Areas/Features/Functions. (Registration and enrollment; admin tools; content creation;
+                 collaboration and social networking, etc.)
+            508 Compliance.  See EXHIBIT D Access Standards and complete.  Discuss how your LM meets
+                       508 compliance standards.
+            Training / System Administration / Management / Reports. At minimum,
+            --USER TRAINING, SUPPORT AND DOCUMENTATION
+            --STUDENT TRACKING AND REPORTING
+      Proposed timelines / schedule.  Vendor’s proposed timeline is encouraged to be sooner than the
+            government’s latest required delivery date. (see SOW para 7.0)
+            Interface with External Systems
+            Installation And Migration Services
+
+      (ii)  Materials and Access.  Provide access to proposed LMS via on-line access with specific details about how to view a DEMO of the LMS
+and to try the LMS features and functionalities.  Also, explain
+            --Contractor-hosted Solution for both production and test environments,
+      --Type of Software: off-the-shelf or open source product and customization, if any, required.
+
+            (iii)      Relationships.  If offeror proposes to mee the SOW requirements through a relationship (i.e., teaming, partnering, joint
+venture), include all signed agreements and responsibilities.
+
+
+PART II – PAST PERFORMANCE.  One original plus 2 copies and 2 PDF file copies.
+
+1.    Submit information for all relevant contracts and subcontracts started or completed within the past three years (measured from the date of
+this solicitation) as follows:
+
+      a.    Vendors shall identify three projects with the Federal Government, agencies of state and local governments and/or commercial
+customers that demonstrate recent and relevant past performance.  Recent is defined as within the last three years.
+
+      (i)   Relevant is defined as work similar in complexity and magnitude to the work described in the SOW.
+      (ii)  Only include references for SAME or SIMILAR type contracts.
+                 -Scope is defined for this requirement as meaning same in size and cost of services.
+           -Similar means contracts, or a concurrent combination of contracts, for
+                 similar type or comparable in complexity.
+      b.    When citing each source of past performance, the Vendor shall include the following information:
+      - Contract number;
+      - period of performance:  indicated by month and year the start and completion (or “ongoing”) dates for the contract.
+      -Point of Contact name, phone number, and email.
+      - Description and relevancy of services to solicitation requirements.  This requirement is for K-12.
+      - A brief summary of performance provided; include information on any enhancement of services offered that expanded and/or supplemented
+LMS services.
+      -Firm's assessment of their performance, including any issues or challenges met and how they were resolved.
+      -vendor may attach certificates or indicate recognition or awards received
+
+2.    The Government reserves the right to also consider past performance information obtained through other sources.   The information provided
+will be used to verify past performance and the degree of performance risk under this contract.
+
+3.    Emphasis is placed on:
+      (1) quality of product or service: compliance with contract requirements, technical expertise,
+      (2) Customer service:  courteous interactions, satisfaction of end users, approaches and improvements
+      (3) Overall satisfaction of performance/service, training, large volume deliveries.
+
+4.    While the government may elect to consider data obtained from other sources, the burden of providing thorough and complete past
+performance information rests with the offeror.
+
+
+
+
+
+PART III – PRICE / CERTS / REPS / RESPONSIBILITY.  One original plus 1 copy and 1 PDF file copy.
+
+This PART consists of the following.
+
+            (a)  PRICE (Offer):  This will consist mainly of the documentation as filled-in, completed and signed by the offeror (to include any
+amendments).  Include a cover letter with this part for points of contact, with telephone numbers and email addresses.
+
+                 (i)   Standard Form 1449 [page 1], include CAGE Code, DUNS (in block 17a), and complete blocks 30a, 30b, 30c, and sign.  All
+issued Amendments (Standard Form 30) will be signed and included.
+
+            (ii) Prices.  Discuss and explain vendor’s pricing model in terms of licenses, users—active and full-time equivalent--any variables
+as fits the LMS industry pricing practice and which is a customary industry practice.  For example, is there is change in prices if users
+increase by a certain volume; importance of active and full-time equivalent users; concurrent users (DoDEA users are worldwide and on different
+time zones), etc.  Is there an advantage to the government in establishing the price schedule to industry practices, if so, what is it and how.
+
+            (b)  CERTIFICATIONS / REPRESENTATIONS.
+In lieu of submitting filled-in FAR 52.212-3, OFFEROR REPRESENTATIONS AND CERTIFICATIONS-COMMERCIAL ITEMS (AUG 2007) and DFARS 252.212-7000, the
+vendor may fill-in the annual certifications at https://orca.bpn.gov/ and just state in their quote, by separate letter, if this was done for
+the Government to verify.
+
+            (c)  INFORMATION REGARDING RESPONSIBILITY MATTERS.  FAR provision 52.209-7 found in full text in the solicitation document,
+completed.
+
+
+PART IV – SMALL BUSINESS SUBCONTRACTING PLAN.  One original plus 1 copy and 1 PDF file copy.
+
+The Subcontracting Plan is not a requirement for evaluation for award selection, but rather, a requirement for award to a Large Business and it
+will be incorporated into any resultant contract.  This plan must be determined acceptable by the Contracting Officer prior to award and will be
+evaluated in accordance with FAR Subpart 19.705-4.
+
+     1) Submit completed EXHIBIT A if offeror is not a small business as defined by the Small
+                   Business Administration (SBA) in accordance with FAR clause 52.219-9.
+
+        2) Offeror may include proven methods of involving small business concerns as subcontractors in similar acquisitions and relative
+           success of methods contractor intends to use to meet the goals and requirement of the plans.
+        3) If there are no opportunities for small business subcontracting for deliverables under this
+                   requirement, please give a brief explaination.
+
+
+Para (c) Period for acceptance of offers. This paragraph (c) is changed to read as follows:
+“The Vendor agrees to hold the prices in its offer firm for 120 calendar days from the date specified for receipt of offers, unless another time
+period is specified in an amendment to the solicitation.”
+
+(End of Addendum to FAR 52.212-1 Instructions to Offerors)
+
+
+
+
+EVALUATION CRITERIA
+
+52.212-2 EVALUATION-COMMERCIAL ITEMS (JAN 1999)
+
+(a) The Government will award a contract resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation
+will be most advantageous to the Government, price and other factors considered.  The following factors shall be used to evaluate offers:
+Technical, Past Performance; and  Price. The order of importance of these factors are: Technical, Past Performance and Price. When combined,
+Technical and Past Performance are significantly more important than Price, and Technical is more important than Past Performance.
+
+      1)    Only those offers determined to be Acceptable, Good, or Outstanding, as defined below, either initially or as a result of
+discussions, will be considered for award.
+
+      2)    Evaluation Criteria.  The following are the evaluation criteria for each factor :
+
+FACTOR 1 – TECHNICAL.
+
+Vendors will be evaluated on how well they demonstrate their ability to perform the requirement as set forth in the Statement of Work (SOW) as
+well as on the general quality of the proposed products and services. Further, emphasis will be placed on the proposed materials’ ease of usage
+and how well the proposed web-hosted environment functions.
+
+OUTSTANDING (O) – The proposal demonstrates a superior understanding of the requirements and a new or proven approach that significantly exceeds
+performance or capability standards.  The proposal has several exceptional strengths that will significantly benefit the government.  The
+proposal has no weaknesses.  Normal contractor effort and normal government monitoring will be sufficient to minimize risk.  The proposal is
+extensive, detailed, and exceeds all requirements and objectives; therefore, has a high probability of meeting the requirements with little or
+no risk to the government.
+
+GOOD (G) – The proposal demonstrates a considerable understanding of the requirements and the approach exceeds performance or capability
+standards.  The proposal has one or more strengths that will benefit the government.  Any proposal weakness has little potential to cause
+disruption of schedule, increase in cost, or degradation of performance.  Normal contractor effort and normal government monitoring will
+probably be able to overcome difficulties.  The proposal generally exceeds requirements in minor areas; therefore, has a strong probability of
+meeting the requirements with little risk to the government.
+
+ACCEPTABLE (A) – The proposal demonstrates an adequate understanding of the requirements and the approach meets all performance or capability
+standards.  The proposal has no strengths that exceed the requirement.  The proposal has no material weaknesses.  The proposal has some weakness
+that can potentially cause disruption of schedules, increase in cost, or degradation of performance.  Special contractor emphasis and close
+government monitoring will minimize any risk.  The proposal meets the minimum requirements; therefore, has an acceptable probability of meeting
+the requirements
+
+MARGINAL (M) – The proposal fails to meet performance requirements and capability standards in one or more areas.  The proposal has minor
+omissions and demonstrates a misunderstanding of the requirement that may be corrected or resolved through discussions without a complete
+revision of the entire proposal.  The proposal has weaknesses that can potentially cause some disruption of schedule, increase in cost, or
+degradation of performance even with special contractor emphasis, and close government monitoring.
+
+UNACCEPTABLE (U) – The proposal fails to demonstrate a basic understanding of the requirements and the approach fails to meet performance or
+capability standards.  The proposal has major omissions and inadequate details to assure the evaluators that the offeror has an understanding of
+the requirements.  The proposal presents an unacceptable risk and cannot meet the requirements without major revisions.
+
+
+FACTOR 2 - PAST PERFORMANCE.
+
+      (1)   Overview.  In determining past performance risk, the evaluators may employ the following approaches:  (ii) reviewing the present and
+ past performance documentation required by Addendum to FAR 52.212-1 and provided by the offeror as to the relevancy to the solicitation
+ requirements; and (ii) using data independently obtained from other government and commercial sources.  In determining risk, judgment will be
+ used in assessing the probability of success, problems on previous efforts, the impact of failure, and the alternatives available to meet the
+ requirements.
+
+      (2)   The purpose will be to identify and review relevant present and past performance, and then make an overall risk assessment of the
+Offeror's ability to perform this effort.  The tradeoff process will result in an overall risk rating of low, medium, high or neutral. This risk
+assessment represents the Government evaluation team's judgment of the probability of an Offeror successfully accomplishing the proposed effort
+based on the Offeror's demonstrated present and past performance.
+
+      (3)   Past performance will take into consideration past efforts similar in type and size to that stated in this solicitation.  In other
+words, in evaluating the proposal, strong emphasis will be placed on the record of past performance for jobs of comparable size and complexity
+and similar technical requirements.  Consideration will be given to the degree to which the offeror has met technical and response objectives on
+other efforts.
+
+      (4)   Performance Risk Definitions.     The following definitions will be used in the evaluation of the degree the offeror will
+satisfactorily perform the required services based on his past and current performance records.
+      High Risk (H) - Verification of past performance shows that offerors have consistently not met work schedules and other obligations, have
+defaulted on at least one contract within the past three years, or have chronically failed to meet contract terms.
+      Medium Risk (M) - Verification of past performance shows that offeror meets work schedules and specified services most of the time, meets
+contract terms without failure or resolves issues immediately, and has not been defaulted on any contract within the past three years.
+      Low Risk (L) - Verification of past performance shows that offeror consistently meets work schedules, provides specified services, meets
+contract terms without failure, and has not been defaulted on any contract within the past three years.
+      Neutral / Unknown Performance Risk (N).  No record of past performance.
+
+      (5)   The Government may reject a proposal if it is found that any information that has a negative impact on the offeror's past
+performance record has been deleted, misrepresented, or withheld.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FACTOR 3 - PRICE.
+
+      1)    Price may be traded off against the increased value of the other factors.  If the other factors are rated the same for two or more
+proposals, price may be the determining factor for the proposal representing the Best Value in accordance with the evaluation criteria contained
+in this acquisition, and award shall be made to the offeror, subject to a positive responsibility determination.
+
+      2)    Prices will be analyzed in accordance with FAR 15.404-1(b).  The proposed prices will be evaluated separately from technical and past
+performance factors for fairness and reasonableness for all years (base plus options) in terms of consistency with the technical approach.
+
+      3)    In determining reasonableness of price, evaluation will review prices and take into consideration that proposed prices reflect a
+clear understanding of work to be performed, consistency with the technical requirement for all years and indicates reasonableness of prices for
+services.
+
+      4)    The total evaluated price must be reasonable and any additional expense must be justified by a corresponding value of technical merit
+or an expectation of greater quality or performance.
+
+(b) Options. The Government will evaluate offers for award purposes by adding the total price for all options to the total price for the basic
+requirement. The Government may determine that an offer is unacceptable if the option prices are significantly unbalanced. Evaluation of options
+shall not obligate the Government to exercise the option(s).
+
+(c) A written notice of award or acceptance of an offer, mailed or otherwise furnished to the successful offeror within the time for acceptance
+specified in the offer, shall result in a binding contract without further action by either party. Before the offer's specified expiration time,
+the Government may accept an offer (or part of an offer), whether or not there are negotiations after its receipt, unless a written notice of
+withdrawal is received before award.
+
+(End of Provision)
+
+
+
+CERTIFICATIONS AND REPRESENTATIONS
+
+
+CLAUSES INCORPORATED BY REFERENCE
+
+
+|52.212-3 Alt I          |Offeror Representations and Certifications--Commercial Items (APR 2012)   |APR 2011         |                       |
+|                        |Alternate I                                                               |                 |                       |
+|252.212-7000            |Offeror Representations and Certifications--Commercial Items (JUN 2005)   |JUN2005          |                       |
+|                        |Alternate I                                                               |                 |                       |
+
+
+
+
+CLAUSES INCORPORATED BY FULL TEXT
+
+
+52.209-7   INFORMATION REGARDING RESPONSIBILITY MATTERS (FEB 2012)
+
+(a) Definitions. As used in this provision--
+
+Administrative proceeding means a non-judicial process that is adjudicatory in nature in order to make a determination of fault or liability
+(e.g., Securities and Exchange Commission Administrative Proceedings, Civilian Board of Contract Appeals Proceedings, and Armed Services Board
+of Contract Appeals Proceedings). This includes administrative proceedings at the Federal and State level but only in connection with
+performance of a Federal contract or grant. It does not include agency actions such as contract audits, site visits, corrective plans, or
+inspection of deliverables.
+
+Federal contracts and grants with total value greater than $10,000,000 means--
+
+(1) The total value of all current, active contracts and grants, including all priced options; and
+
+(2) The total value of all current, active orders including all priced options under indefinite-delivery, indefinite-quantity, 8(a), or
+requirements contracts (including task and delivery and multiple-award Schedules).
+
+Principal means an officer, director, owner, partner, or a person having primary management or supervisory responsibilities within a business
+entity (e.g., general manager; plant manager; head of a
+division or business segment; and similar positions).
+
+(b) The offeror ( ) has ( ) does not have current active Federal contracts and grants with total value greater than $10,000,000.
+
+(c) If the offeror checked “has” in paragraph (b) of this provision, the offeror represents, by submission of this offer, that the information
+it has entered in the Federal Awardee Performance and Integrity Information System (FAPIIS) is current, accurate, and complete as of the date of
+submission of this offer with regard to the following information:
+
+(1) Whether the offeror, and/or any of its principals, has or has not, within the last five years, in connection with the award to or
+performance by the offeror of a Federal contract or grant, been the subject of a proceeding, at the Federal or State level that resulted in any
+of the following dispositions:
+
+(i) In a criminal proceeding, a conviction.
+
+(ii) In a civil proceeding, a finding of fault and liability that results in the payment of a monetary fine, penalty, reimbursement,
+restitution, or damages of $5,000 or more.
+
+(iii) In an administrative proceeding, a finding of fault and liability that results in--
+
+
+
+(A) The payment of a monetary fine or penalty of $5,000 or more; or
+
+(B) The payment of a reimbursement, restitution, or damages in excess of $100,000.
+
+(iv) In a criminal, civil, or administrative proceeding, a disposition of the matter by consent or compromise with an acknowledgment of fault by
+the Contractor if the proceeding could have led to any of the outcomes specified in paragraphs (c)(1)(i), (c)(1)(ii), or (c)(1)(iii) of this
+provision.
+
+(2) If the offeror has been involved in the last five years in any of the occurrences listed in (c)(1) of this provision, whether the offeror
+has provided the requested information with regard to each occurrence.
+
+(d) The offeror shall post the information in paragraphs (c)(1)(i) through (c)(1)(iv) of this provision in FAPIIS as required through
+maintaining an active registration in the Central Contractor Registration database via https://www.acquisition.gov (see 52.204-7).
+
+(End of provision)
+
+
+
+
+252.209-7001    DISCLOSURE OF OWNERSHIP OR CONTROL BY THE GOVERNMENT OF A  TERRORIST COUNTRY (JAN 2009)
+
+(a) "Definitions."
+
+As used in this provision --
+
+(a) "Government of a terrorist country" includes the state and the government of a terrorist country, as well as any political subdivision,
+agency, or instrumentality thereof.
+
+(2) "Terrorist country" means a country determined by the Secretary of State, under section 6(j)(1)(A) of the Export Administration Act of 1979
+(50 U.S.C. App. 2405(j)(i)(A)), to be a country the government of which has repeatedly provided support for such acts of international
+terrorism. As of the date of this provision, terrorist countries subject to this provision include: Cuba, Iran, Sudan, and Syria.
+
+(3) "Significant interest" means --
+
+(i) Ownership of or beneficial interest in 5 percent or more of the firm's or subsidiary's securities.  Beneficial interest includes holding 5
+percent or more of any class of the firm's securities in "nominee shares," "street names," or some other method of holding securities that does
+not disclose the beneficial owner;
+
+(ii) Holding a management position in the firm, such as a director or officer;
+
+(iii) Ability to control or influence the election, appointment, or tenure of directors or officers in the firm;
+
+(iv) Ownership of 10 percent or more of the assets of a firm such as equipment, buildings, real estate, or other tangible assets of the firm; or
+
+(v) Holding 50 percent or more of the indebtness of a firm.
+
+
+
+
+
+(b) "Prohibition on award."
+
+In accordance with 10 U.S.C. 2327, no contract may be awarded to a firm or a subsidiary of a firm if the government of a terrorist country has a
+significant interest in the firm or subsidiary or, in the case of a subsidiary, the firm that owns the subsidiary, unless a waiver is granted by
+the Secretary of Defense.
+
+(c) "Disclosure."
+
+If the government of a terrorist country has a significant interest in the Offeror or a subsidiary of the Offeror, the Offeror shall disclosure
+such interest in an attachment to its offer.  If the Offeror is a subsidiary, it shall also disclose any significant interest the government of
+a terrorist country has in any firm that owns or controls the subsidiary.  The disclosure shall include --
+
+(1) Identification of each government holding a significant interest; and
+
+(2) A description of the significant interest held by each government.
+
+(End of provision)
+
+
+EXHIBIT A
+                                                               SUBCONTRACTING PLAN
+                                              INSTRUCTIONS FOR PROPOSING AN INITIAL COMMERCIAL ITEM
+
+
+
+TYPE OF PLAN -- Any large business that does not have an approved small business subcontracting plan must submit a proposed plan to the
+Contracting Officer.  This plan, when submitted, is a proposed Commercial Item Small Business Subcontracting Plan.  It is the preferred type of
+subcontracting plan for this procurement, though the quoter/offeror may use a noncommercial plan instead.  Commercial plans are good for the
+contractor's fiscal year, and do not have to be renegotiated for each contract requiring a plan.  Noncommercial plans are good for the life of
+the contract involved, but must be renegotiated for each contract requiring a plan.
+
+PLAN SUBMITTAL -- An offeror submitting a proposed commercial plan must submit it to the first Contracting Officer awarding a contract subject
+to the plan during the Contractor's fiscal year.  This proposed plan must be submitted as part of the offer.  If that Contracting Officer is a
+DoDEA Contracting Officer, the plan must have at least the information shown on the following pages.  Offerors submitting plans to DoDEA are
+requested to use the format shown on the following pages in their submittal.  Plans already approved must be included in the offer.  An approved
+commercial plan is generally valid for one year from the date of acceptance of the contract and is applicable to all other Government contracts.
+
+
+IDENTITY OF THE SUBCONTRACTING PROGRAM ADMINISTRATOR -- Before a plan is approved, the offeror is requested to provide the name of the
+individual employed by the offeror who will administer the contractor’s subcontracting program.   This identity information should include the
+name, title, address and telephone number (as well as e-mail address, if known) of the subcontracting program administrator.
+
+PLAN START AND END DATES -- The proposed plan must specify the first and last dates when this plan will apply.  If the format on the following
+pages is used, this is the "Period Covered By Plan."  The Contracting Officer will specify the starting date.  The offeror must specify the
+ending date.  The ending date must be the last day of the offeror's current fiscal year.  If that ending date is fewer than 30 federal
+government working days from the starting date, the offeror must either (a) fill in the ending date with the last date of the Contractor's next
+fiscal year, or (b) complete the Commercial Item Small Business Subcontracting Plan (Renegotiation/Renewal) in addition to the plan.  (Using the
+ending date of the offeror's next fiscal year is usually much simpler.)  Ensuing plans will coincide with the contractor's fiscal year.
+
+REASONABLE GOALS -- The offeror must select goals that are reasonable based on making good faith efforts (to be described in this plan) to use
+small, HUBZone small, small disadvantaged, service disabled veteran owned small business, and women-owned small business subcontractors to the
+maximum extent practicable.  Contracting Officers will reject plans with unreasonably low goals, or efforts described herein that are not good
+faith efforts.
+
+QUESTIONS -- Should offerors have any questions regarding subcontracting plans, they should contact the DoD Small Business Specialist for this
+solicitation/contract.
+                                                  TO CONSTRUCT THE PLAN USING THE FORMAT BELOW:
+Fill in all blanks where indicated.  Use additional sheets, if necessary.
+
+COMMERCIAL ITEM SMALL BUSINESS SUBCONTRACTING PLAN (INITIAL)
+
+
+PERIOD COVERED BY PLAN:  This plan is applicable from ___________ [Contracting Officer fill in the first date of contract performance.  For
+supply contracts, this is the date of contract award] to ______________.  [Contractor fill in the last date of their current fiscal year.  If
+there will be fewer than 30 federal government working days between the start date and the end of the Contractor's current fiscal year, the
+Contractor must either (a) fill in the date of the Contractor's next fiscal year, or (b) complete the Commercial Item Small Business
+Subcontracting Plan (Renegotiation/Renewal) in addition to this plan.  Contact the DoDEA Small Business Specialist for the renegotiation/renewal
+form.
+
+
+CONTRACTOR APPROVAL: __________________________________ Date: ____________
+                         Signature of authorized Contractor official
+
+NAME OF AUTHORIZED CONTRACTOR OFFICIAL: _______________________________
+TITLE: _______________________________
+CONTRACTOR:______________________________________________________________
+CONTRACTOR DIVISION (if applicable: _________________________________________
+ADDRESS:___________________________________________________________________
+          ___________________________________________________________________
+          ___________________________________________________________________
+
+
+
+GOVERNMENT APPROVAL: __________________________________ Date: ____________
+                       Signature of Contracting Officer
+
+NAME OF CONTRACTING OFFICER: _______________________________
+TITLE: ______________________________
+
+AGENCY: ____________________________
+ADDRESS: ___________________________________________________________________
+           ___________________________________________________________________
+           ____________________________________________________________________
+
+TELEPHONE: ____________________________________
+
+This plan is the Contractor's approved small business subcontracting plan.  The Contractor must submit this plan as their subcontracting plan
+for all Government contracts in effect during the "Period Covered By Plan" indicated above, whenever such a plan is required.  This plan applies
+to the entire "Period Covered By Plan" above.
+
+The Contractor must provide to all Contracting Officers responsible for a contract subject to this plan the name of the individual employed by
+the contractor wil will administer the contractor’s small business subcontracting program.  This identity information should include the name,
+title, address and telephone number (as well as e-mail address, if known) of the subcontracting program administrator.
+
+This subcontracting plan, with attachments as indicated, is hereby submitted to satisfy the requirements of the Small Business Act (P.L. 95-
+507), Federal Acquisition Regulation (FAR) Part 19, and Defense Federal Acquisition Regulation Supplement (DFARS) Part 219 concerning
+subcontracting with small businesses.
+
+REFERENCE EFFECTIVE DATES:  All references to anything in the Federal Acquisition Regulation (FAR) or the Defense FAR Supplement (DFARS) refer
+to the FAR or DFARS versions in effect on _________________.  [Contracting Officer must fill in the date the IFB, RFQ or RFP was released.]
+
+DEFINITION OF TERMS: For the purposes of this plan, the terms "Small Business Concern," "HUBZone Small Business Concern," and "Women-Owned Small
+Business Concern" are defined in FAR 19, Small Business Programs, Section 19.001, Definitions.  The term, "Small Disadvantaged Business
+Concern," is defined in DFARS 219, Small Business Programs, Section 219.001, Definitions.  The terms "Historically Black Colleges or
+Universities" and "Minority Institutions" are defined in the clause at DFARS 252.219-7003, Small Business and Small Disadvantaged Business
+Subcontracting Plan (DoD Contracts).  The FAR can be accessed at http://www.arnet.gov/far/ and the DFARS at
+http://www.acq.osd.mil/dpap/dars/dfars/index.htm .
+
+The Contractor hereby agrees to give small business (SB), HUBZone small business (Hubzone SB), small disadvantaged business (SDB), veteran-owned
+small business (VOSB) service disabled veteran-owned small business (SDVOSB) and women-owned small business (WOSB) concerns the maximum
+practicable opportunity to participate as subcontractors in the contracts awarded by any executive agency, consistent with efficient contract
+performance.
+
+The Contractor also agrees to establish procedures to ensure the timely payment of amounts due pursuant to the terms of the Contractor's
+subcontracts with small business, HUBZone small business, small disadvantaged business, veteran-owned small business, service disabled veteran-
+owned small business,  and women-owned small business concerns.
+
+1.    (a)  The following percentage goals apply to all contractor business (including, but not limited to, both Government and commercial
+business), for the period cited above:
+
+(i)  Small Business Concerns:____________% of total planned subcontracting dollars will be awarded to subcontractors who are Small Business
+Concerns (also includes SDB, HubZone SB, WOSB, HBCU/MI, VOSB, and SDVOSB)
+
+(ii)  Small Disadvantaged Business Concerns:____________% of total planned subcontracting dollars will be awarded to subcontractors who are
+Small Disadvantaged Business Concerns.  (The Contractor may include in this goal planned subcontracting dollars to be awarded to Historically
+Black Colleges or Universities or Minority Institutions.)  This percentage goal is included in the percentage shown under subparagraph 1 (a)
+(i), above.
+
+ (iii)   HUBZone Small Business Concerns:____________% of total planned subcontracting dollars will be awarded to subcontractors who are HUBZone
+Small Business Concerns.  This percentage goal is included in the percentage shown under subparagraph 1(a) (i), above.
+
+(iv)  Service Disabled Veteran-Owned Small Business (VOSB) Concerns:____________% of total planned subcontracting dollars will be awarded to
+subcontractors who are Service Disabled Veteran-owned Small Business Concerns.  This percentage goal is included in the percentage shown under
+subparagraph 1 (a) (i), above.
+
+(v)  Women-Owned Small Business Concerns:_________% of total planned subcontracting dollars will be awarded to subcontractors who are Women-
+Owned Small Business Concerns.  This percentage goal is included in the percentage shown under subparagraph 1 (a)(i), above.
+
+(iv)  Veteran-Owned Small Business (VOSB) Concerns:____________% of total planned subcontracting dollars will be awarded to subcontractors who
+are Veteran-Owned Small Business Concerns.  This percentage goal is included in the percentage shown under subparagraph 1(a) (i), above.
+
+
+ (b)  The following dollar values correspond to the percentage goals shown in subparagraph 1.(a), above:
+
+(i)  Total planned dollars to be subcontracted to Small Business Concerns: $____________. (Contractor may include SDB, WOSB, HBCU/MI, HubZone
+SB, VOSB, and SDVOSB concerns)
+
+(ii)  Total planned dollars to be subcontracted to Small Disadvantaged Business Concerns:  $______________.  (The Contractor may include in this
+goal planned subcontracting dollars to be awarded to Historically Black Colleges or Universities or Minority Institutions.)  This dollar amount
+is included in the planned dollars to be subcontracted to Small Business Concerns (subparagraph 1.(b)(i), above.
+
+(iii)  Total planned dollars to be subcontracted to Women-Owned Small Business Concerns: $_____________. This dollar amount is included in the
+total planned dollars to be subcontracted to Small Business Concerns (paragraph 1 (b)(i), above).
+
+(iv)  Total planned dollars to be subcontracted to HUBZone Small Business Concerns:  $______________.  This dollar amount is included in the
+planned dollars to be subcontracted to Small Business Concerns (subparagraph 1 (b)(i), above).
+
+(v)   Total planned dollars to be subcontracted to Veteran-Owned Small Business Concerns:  $______________.  This dollar amount is included in
+the planned dollars to be subcontracted to Small Business Concerns (subparagraph 1 (b)(i), above).
+
+(vi)  Total planned dollars to be subcontracted to Service-Disabled Veteran-Owned Small Business  Concerns:  $______________.  This dollar
+amount is included in the planned dollars to be subcontracted to Small Business Concerns (subparagraph 1 (b)(i), above).
+
+(c)  The total estimated dollar value of all planned subcontracts under this plan is $__________________.
+
+(d)  The total projected sales for the contractor during the period covered by this plan is $__________________.
+
+(e)  The following principal products and/or services to be subcontracted under this contract, and their distribution among Small Business
+Concerns, Small Disadvantaged Business Concerns, Woman-Owned Small Business Concerns , Historically Black Colleges and Universities and Minority
+Institutions, HUBZone Small Business Concerns, Veteran-Owned Small Business Concerns, and Service-Disabled Veteran-Owned  Small Business
+Concerns are as follows:
+
+_________________________________________________________________________
+
+_________________________________________________________________________
+
+_________________________________________________________________________
+
+_________________________________________________________________________
+
+(f)  Basis for Subcontracting Goals.  The methods used to determine the subcontracting goals established in subparagraphs 1(a) through 1(d),
+above, are as follows.
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+(g)  In accordance with FAR 52.219-9 (d) (5), the contractor will use the following methods to identify potential sources for solicitation
+purposes.
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+
+(h)  In accordance with FAR 19.704(a)(6), Indirect costs (check one below):
+
+_____have been _____have not been included in establishing the subcontracting goals specified in subparagraphs 1.(a) and 1.(b), above.
+
+Where indirect costs have been included, the methods used to determine the proportionate share of indirect costs to be incurred with (i) Small
+Business Concerns; (ii) Small Disadvantaged Business Concerns; (iii) Women-Owned Small Business Concerns; (iv) Historically Black Colleges and
+Minority Institutions, if applicable; (v) HUBZone Small Business Concerns; (vi) Veteran-Owned Small Business Concerns; and (vi)
+Service-Disabled Veteran-Owned Small Business Concern are as follows:
+
+(i)  Small Business Concerns:  ____________________________________________
+____________________________________________________________________
+____________________________________________________________________
+____________________________________________________________________.
+
+(ii)  Small Disadvantaged Business Concerns:  _______________________________
+____________________________________________________________________
+____________________________________________________________________
+____________________________________________________________________.
+
+
+(iii)  Women-Owned Small Business Concerns: ______________________________
+____________________________________________________________________
+____________________________________________________________________
+____________________________________________________________________.
+
+(iv)  Historically Black Colleges and Universities and Minority Institutions:  ________
+_____________________________________________________________________
+_____________________________________________________________________
+_____________________________________________________________________.
+
+(v)  Veteran-Owned Small Business Concerns:  _______________________________
+_____________________________________________________________________
+_____________________________________________________________________
+_____________________________________________________________________.
+
+(vi)  Service-Disabled Veteran-Owned Small Business Concerns:  ________________
+_____________________________________________________________________
+_____________________________________________________________________
+_____________________________________________________________________.
+
+
+2.  Pursuant to FAR 19.704(a) (7), the following contractor employee (small business liaison officer will administer this plan on behalf of the
+contractor:
+
+Name:_______________________________________________________________________
+
+Address:_____________________________________________________________________
+
+____________________________________________________________________________
+
+Telephone:___________________________________________________________________
+
+Title:________________________________________________________________________
+
+Per FAR 52.219-9(d)(7), the contractor employee has the following duties:
+
+(a) Overall responsibility for the implementation of the contractor's small business program.
+
+(b) Execute subcontracting plan(s).
+
+(c) Monitor performance against the plan(s).
+
+(d) Ensure that the contractor performs the duties described in FAR 52.219-9 (e).
+
+(e)  Develop and/or coordinate bidder lists of Small Business Concerns, Small Disadvantaged Businesses, Women-Owned Small Business Concerns,
+HubZone Small Business Concerns, Veteran-Owned Small Business Concerns, and Service-Disabled Veteran-Owned Small Business Concerns.
+
+(f)  Ensure that solicitation packages (either IFB, RFQ or RFP) are structured to permit maximum practicable participation of Small Business
+Concerns, HUBZone Small Business Concerns, Small Disadvantaged Business Concerns and Women Owned Small Business Concerns.
+
+(g) Conduct or facilitate training for purchasing and other company officials with source selection responsibility to create awareness and
+maintain current knowledge of the program.
+
+(h)  Monitor actual performance against subcontracting plan goals.
+
+(i)  Ensure timely submission of subcontracting reports, Standard Form 295.
+
+(j)  Ensure periodic rotation of potential small business subcontractors on bidders lists.
+
+(k)  Establish and maintain consistent, timely, accurate and complete records supporting small business subcontract award activity or provide
+sufficient reason award was not made to a small business concern.
+
+(l) Act as the focal point to prepare the contractor for any compliance reviews to be performed by the Government.
+
+3.  In accordance with FAR 19.704(a)(8) and FAR 52.219-9(d)(8), the contractor will do the following to ensure that Small, HUBZone Small, Small
+Disadvantaged, and Women-Owned Small Businesses have an equitable opportunity to compete for subcontracts.
+
+______________________________________________________________________________________
+
+______________________________________________________________________________________
+
+______________________________________________________________________________________
+
+______________________________________________________________________________________
+
+______________________________________________________________________________________
+
+
+4.  The clause at FAR 52.219-8, Utilization of Small Business Concerns, will be included in all subcontracts that offer further subcontracting
+opportunities.  In addition, the contractor will require all subcontractors (except small business concerns) who receive subcontracts in excess
+of $500,000 to adopt a subcontracting plan that complies with FAR 52.219-9, Small Business Subcontracting Plan and DFARS 252.219-7003, Small,
+Small Disadvantaged and Women-Owned Small Business Subcontracting Plan (DoD Contracts).
+
+5.  Pursuant to FAR 52.219-9(d)(10) the contractor will:
+
+(a)  Cooperate in any studies or surveys as may be required by the Government;
+
+(b)  Submit periodic reports as may be required to allow the Government to determine the extent of compliance by the contractor with the
+subcontracting plan;
+
+(c)  Submit Standard Form (SF) SF 295, Summary Subcontract Report, in accordance with the instructions on the form as well as FAR 52.219-9(j);
+and
+
+(d) Ensure that its subcontractors agree to submit Standard Form 295.
+
+6.  In accordance with FAR 52.219-9(d)(11), the contractor will maintain the following types of records to demonstrate compliance with the
+requirements and goals of this subcontracting plan.
+
+______________________________________________________________________________________
+
+______________________________________________________________________________________
+
+______________________________________________________________________________________
+
+______________________________________________________________________________________
+
+
+7.  In accordance with FAR 52.219-9(d)(11), the contractor will do the following to locate Small Business, HUBZone Small Business, Small
+Disadvantaged Business and Women Owned Small Business Concerns and award subcontracts to them.
+
+______________________________________________________________________________________
+
+______________________________________________________________________________________
+
+______________________________________________________________________________________
+
+______________________________________________________________________________________
+
+

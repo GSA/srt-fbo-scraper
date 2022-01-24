@@ -1,0 +1,906 @@
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              BuyAccessible Government Product /         Service Accessibility Template (GPAT) | 
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | 
+| The GPAT is a simple tool to assist Federal contracting and         procurement officials in fulfilling the market research requirements         associated with Section 508 regulations. The GPAT is intended as a form to         be included with government solicitations, to be filled out by         solicitation respondents as a part of their proposal to indicate how their         proposed solution addresses the applicable Section 508 requirements. The         GPAT is organized as a series of ten tables. The first eight tables         reflect accessibility information about EIT products, corresponding to the         six technical sections, the functional performance criteria, and the         requirements for information, documentation, and support as defined in the         Access Board Standard for Section 508. The ninth and tenth tables         correspond to accessibility information about information content         deliverables and labor hours, respectively. | 
+|                                                                                                                                                       NOTE: Section 508 provisions are determined to apply based in         part on EIT requirements characterized using the BuyAccessible Wizard.         Provisions based on definite EIT requirements are identified by a "yes" in         the Applicable column. Provisions based on possible EIT requirements are         identified by a "maybe" in the Applicable column. Provisions not         identified with program requirements for this acquisition have no entry in         the Applicable column. However, if your product or service deliverable has         physical or functional characteristics corresponding to any of the listed         EIT accessibility requirements, even those beyond identified program         requirements, then the requirement applies and you should provide         appropriate accessibility information. | 
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | 
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Please fill the information below as a part of request for         accessibility information of your proposed deliverable. | 
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | 
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Product Name:_______________________________________ | 
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | 
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Vendor Name:________________________________________ | 
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | 
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Accessibility Information URL (if         any):______________________________ | 
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Id |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Provision Text | Applicable | How does the EIT meet this requirement? | Please explain | 
+|  a |                                                                                                                                                                                                                                                                                                                                                             When software is designed to run on a system         that has a keyboard, product functions shall be executable from a keyboard         where the function itself or the result of performing a function can be         discerned textually. |            |              FullyPartiallyNoDon't know |                | 
+|  b | Applications shall not disrupt or disable         activated features of other products that are identified as accessibility         features, where those features are developed and documented according to         industry standards. Applications also shall not disrupt or disable         activated features of any operating system that are identified as         accessibility features where the application programming interface for         those accessibility features has been documented by the manufacturer of         the operating system and is available to the product developer. |            |              FullyPartiallyNoDon't know |                | 
+|  c |                                                                                                                                                                                                                                                                                                               A well-defined on-screen indication of the         current focus shall be provided that moves among interactive interface         elements as the input focus changes. The focus shall be programmatically         exposed so that assistive technology can track focus and focus changes. |            |              FullyPartiallyNoDon't know |                | 
+|  d |                                                                                                                                                                                                                                                                                           Sufficient information about a user interface         element including the identity, operation and state of the element shall         be available to assistive technology. When an image represents a program         element, the information conveyed by the image must also be available in         text. |            |              FullyPartiallyNoDon't know |                | 
+|  e |                                                                                                                                                                                                                                                                                                                                                                           When bitmap images are used to identify         controls, status indicators, or other programmatic elements, the meaning         assigned to those images shall be consistent throughout an application's         performance. |            |              FullyPartiallyNoDon't know |                | 
+|  f |                                                                                                                                                                                                                                                                                                                                                              Textual information shall be provided through         operating system functions for displaying text. The minimum information         that shall be made available is text content, text input caret location,         and text attributes. |            |              FullyPartiallyNoDon't know |                | 
+|  g |                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Applications shall not override user selected         contrast and color selections and other individual display attributes. |            |              FullyPartiallyNoDon't know |                | 
+|  h |                                                                                                                                                                                                                                                                                                                                                                                                                                              When animation is displayed, the information         shall be displayable in at least one non-animated presentation mode at the         option of the user. |            |              FullyPartiallyNoDon't know |                | 
+|  i |                                                                                                                                                                                                                                                                                                                                                                                                                               Color coding shall not be used as the only means         of conveying information, indicating an action, prompting a response, or         distinguishing a visual element. |            |              FullyPartiallyNoDon't know |                | 
+|  j |                                                                                                                                                                                                                                                                                                                                                                                                                    When a product permits a user to adjust color         and contrast settings, a variety of color selections capable of producing         a range of contrast levels shall be provided. |            |              FullyPartiallyNoDon't know |                | 
+|  k |                                                                                                                                                                                                                                                                                                                                                                                                                                   Software shall not use flashing or blinking         text, objects, or other elements having a flash or blink frequency greater         than 2 Hz and lower than 55 Hz. |            |              FullyPartiallyNoDon't know |                | 
+|  l |                                                                                                                                                                                                                                                                                                                                       When electronic forms are used, the form shall         allow people using Assistive Technology to access the information, field         elements, and functionality required for completion and submission of the         form, including all directions and cues. |            |              FullyPartiallyNoDon't know |                | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Id |                                                                                                                                                                                                                                                                                                               Provision Text | Applicable | How does the EIT meet this requirement? | Please explain | 
+|  a |                                                                                                                                                                                                 A text equivalent for every non-text element         shall be provided (e.g., via "alt", "longdesc", or in element content). |            |              FullyPartiallyNoDon't know |                | 
+|  b |                                                                                                                                                                                                                 Equivalent alternatives for any multimedia         presentation shall be synchronized with the presentation. |            |              FullyPartiallyNoDon't know |                | 
+|  c |                                                                                                                                                                 Web pages shall be designed so that all         information conveyed with color is also available without color, for         example from context or markup. |            |              FullyPartiallyNoDon't know |                | 
+|  d |                                                                                                                                                                                                                       Documents shall be organized so they are         readable without requiring an associated style sheet. |            |              FullyPartiallyNoDon't know |                | 
+|  e |                                                                                                                                                                                                                            Redundant text links shall be provided for each         active region of a server-side image map. |            |              FullyPartiallyNoDon't know |                | 
+|  f |                                                                                                                                                     Client-side image maps shall be provided instead         of server-side image maps except where the regions cannot be defined with         an available geometric shape. |            |              FullyPartiallyNoDon't know |                | 
+|  g |                                                                                                                                                                                                                                                          Row and column headers shall be identified for         data tables. |            |              FullyPartiallyNoDon't know |                | 
+|  h |                                                                                                                                                                 Markup shall be used to associate data cells and         header cells for data tables that have two or more logical levels of row         or column headers. |            |              FullyPartiallyNoDon't know |                | 
+|  i |                                                                                                                                                                                                                               Frames shall be titled with text that         facilitates frame identification and navigation. |            |              FullyPartiallyNoDon't know |                | 
+|  j |                                                                                                                                                                                        Pages shall be designed to avoid causing the         screen to flicker with a frequency greater than 2 Hz and lower than 55       Hz. |            |              FullyPartiallyNoDon't know |                | 
+|  k | A text-only page, with equivalent information or         functionality, shall be provided to make a web site comply with the         provisions of this part, when compliance cannot be accomplished in any         other way. The content of the text-only page shall be updated whenever the         primary page changes. |            |              FullyPartiallyNoDon't know |                | 
+|  l |                                                                                When pages utilize scripting languages to         display content, or to create interface elements, the information provided         by the script shall be identified with functional text that can be read by         Assistive Technology. |            |              FullyPartiallyNoDon't know |                | 
+|  m |                                                                      When a web page requires that an applet, plug-in         or other application be present on the client system to interpret page         content, the page must provide a link to a plug-in or applet that complies         with 1194.21(a) through (l). |            |              FullyPartiallyNoDon't know |                | 
+|  n |                         When electronic forms are designed to be         completed on-line, the form shall allow people using Assistive Technology         to access the information, field elements, and functionality required for         completion and submission of the form, including all directions and       cues. |            |              FullyPartiallyNoDon't know |                | 
+|  o |                                                                                                                                                                                                                                   A method shall be provided that permits users to         skip repetitive navigation links. |            |              FullyPartiallyNoDon't know |                | 
+|  p |                                                                                                                                                                                    When a timed response is required, the user         shall be alerted and given sufficient time to indicate more time is         required. |            |              FullyPartiallyNoDon't know |                | 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|   Id |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Provision Text | Applicable | How does the EIT meet this requirement? | Please explain | 
+|    a |                                                                                                                                             Telecommunications products or systems which         provide a function allowing voice communication and which do not         themselves provide a TTY functionality shall provide a standard         non-acoustic connection point for TTYs. Microphones shall be capable of         being turned on and off to allow the user to intermix speech with TTY       use. |            |              FullyPartiallyNoDon't know |                | 
+|    b |                                                                                                                                                                                                                                                                                                                      Telecommunications products which include voice         communication functionality shall support all commonly used         cross-manufacturer non-proprietary standard TTY signal protocols. |            |              FullyPartiallyNoDon't know |                | 
+|    c |                                                                                                                                                                                                                                                                                                                                                                Voice mail, auto-attendant, and interactive         voice response telecommunications systems shall be usable by TTY users         with their TTYs. |            |              FullyPartiallyNoDon't know |                | 
+|    d |                                                                                                                                                                     Voice mail, messaging, auto-attendant, and         interactive voice response telecommunications systems that require a         response from a user within a time interval, shall give an alert when the         time interval is about to run out, and shall provide sufficient time for         the user to indicate more time is required. |            |              FullyPartiallyNoDon't know |                | 
+|    e |                                                                                                                                                                                                                                                                                                                                   Where provided, caller identification and         similar telecommunications functions shall also be available for users of         TTYs, and for users who cannot see displays. |            |              FullyPartiallyNoDon't know |                | 
+|    f |                                                                                                                                                                                                                                                                    For transmitted voice signals,         telecommunications products shall provide a gain adjustable up to a         minimum of 20 dB. For incremental volume control, at least one         intermediate step of 12 dB of gain shall be provided. |            |              FullyPartiallyNoDon't know |                | 
+|    g |                                                                                                                                                                                                                                                                                                                 If the telecommunications product allows a user         to adjust the receive volume, a function shall be provided to         automatically reset the volume to the default level after every use. |            |              FullyPartiallyNoDon't know |                | 
+|    h |                                                                                                                                                                                                                                                                                Where a telecommunications product delivers         output by an audio transducer which is normally held up to the ear, a         means for effective magnetic wireless coupling to hearing technologies         shall be provided. |            |              FullyPartiallyNoDon't know |                | 
+|    i |                                                                                                                                                                                                                                      Interference to hearing technologies (including         hearing aids, cochlear implants, and assistive listening devices) shall be         reduced to the lowest possible level that allows a user of hearing         technologies to utilize the telecommunications product. |            |              FullyPartiallyNoDon't know |                | 
+|    j | Products that transmit or conduct information or         communication, shall pass through cross-manufacturer, non-proprietary,         industry-standard codes, translation protocols, formats or other         information necessary to provide the information or communication in a         usable format. Technologies which use encoding, signal compression, format         transformation, or similar techniques shall not remove information needed         for access or shall restore it upon delivery. |            |              FullyPartiallyNoDon't know |                | 
+| k[1] |                                                                                                                                                                                                                                                                                                              Products which have mechanically operated         controls or keys shall comply with the following: Controls and Keys shall         be tactilely discernible without activating the controls or keys. |            |              FullyPartiallyNoDon't know |                | 
+| k[2] |                                                                                                                                                                             Products which have mechanically operated         controls or keys shall comply with the following: Controls and Keys shall         be operable with one hand and shall not require tight grasping, pinching,         twisting of the wrist. The force required to activate controls and keys         shall be 5 lbs. (22.2N) maximum. |            |              FullyPartiallyNoDon't know |                | 
+| k[3] |                                                                                                                                                                                                                               Products which have mechanically operated         controls or keys shall comply with the following: If key repeat is         supported, the delay before repeat shall be adjustable to at least 2         seconds. Key repeat rate shall be adjustable to 2 seconds per   character. |            |              FullyPartiallyNoDon't know |                | 
+| k[4] |                                                                                                                                                                                                                                                             Products which have mechanically operated         controls or keys shall comply with the following: The status of all         locking or toggle controls or keys shall be visually discernible, and         discernible either through touch or sound. |            |              FullyPartiallyNoDon't know |                | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Id |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Provision Text | Applicable | How does the EIT meet this requirement? | Please explain | 
+|  a | All analog television displays 13 inches and         larger, and computer equipment that includes analog television receiver or         display circuitry, shall be equipped with caption decoder circuitry which         appropriately receives, decodes, and displays closed captions from         broadcast, cable, videotape, and DVD signals. As soon as practicable, but         not later than July 1, 2002, widescreen digital television (DTV) displays         measuring at least 7.8 inches vertically, DTV sets with conventional         displays measuring at least 13 inches vertically, and stand-alone DTV         tuners, whether or not they are marketed with display screens, and         computer equipment that includes DTV receiver or display circuitry, shall         be equipped with caption decoder circuitry which appropriately receives,         decodes, and displays closed captions from broadcast, cable, videotape,         and DVD signals. |            |              FullyPartiallyNoDon't know |                | 
+|  b |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Television tuners, including tuner cards for use         in computers, shall be equipped with secondary audio program playback         circuitry. |            |              FullyPartiallyNoDon't know |                | 
+|  c |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                All training and informational video and         multimedia productions which support the agency's mission, regardless of         format, that contain speech or other audio information necessary for the         comprehension of the content, shall be open or closed captioned. |            |              FullyPartiallyNoDon't know |                | 
+|  d |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        All training and informational video and         multimedia productions which support the agency's mission, regardless of         format, that contain visual information necessary for the comprehension of         the content, shall be audio described. |            |              FullyPartiallyNoDon't know |                | 
+|  e |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Display or presentation of alternate text         presentation or audio descriptions shall be user-selectable unless         permanent. |            |              FullyPartiallyNoDon't know |                | 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|   Id |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Provision Text | Applicable | How does the EIT meet this requirement? | Please explain | 
+|    a |                                                                                                                                                                                                                                                                                                                                 Self contained products shall be usable by         people with disabilities without requiring an end-user to attach Assistive         Technology to the product. Personal headsets for private listening are not         Assistive Technology. |            |              FullyPartiallyNoDon't know |                | 
+|    b |                                                                                                                                                                                                                                                                                                                                                                                                                                      When a timed response is required, the user         shall be alerted and given sufficient time to indicate more time is         required. |            |              FullyPartiallyNoDon't know |                | 
+|    c |                                                                                                                                                                                                                                                                                                                                                                                                         Where a product utilizes touchscreens or         contact-sensitive controls, an input method shall be provided that         complies with 1194.23 (k) (1) through (4). |            |              FullyPartiallyNoDon't know |                | 
+|    d |                                                                                                                                                                                                                                                                                                                        When biometric forms of user identification or         control are used, an alternative form of identification or activation,         which does not require the user to possess particular biological         characteristics, shall also be provided. |      maybe |              FullyPartiallyNoDon't know |                | 
+|    e |                                                                                                                                                                                                                                                                   When products provide auditory output, the audio         signal shall be provided at a standard signal level through an industry         standard connector that will allow for private listening. The product must         provide the ability to interrupt, pause, and restart the audio at       anytime. |            |              FullyPartiallyNoDon't know |                | 
+|    f |                                                                                                           When products deliver voice output in a public         area, incremental volume control shall be provided with output         amplification up to a level of at least 65 dB. Where the ambient noise         level of the environment is above 45 dB, a volume gain of at least 20 dB         above the ambient level shall be user selectable. A function shall be         provided to automatically reset the volume to the default level after         every use. |            |              FullyPartiallyNoDon't know |                | 
+|    g |                                                                                                                                                                                                                                                                                                                                                                                                     Color coding shall not be used as the only means         of conveying information, indicating an action, prompting a response, or         distinguishing a visual element. |            |              FullyPartiallyNoDon't know |                | 
+|    h |                                                                                                                                                                                                                                                                                                                                                                                          When a product permits a user to adjust color         and contrast settings, a range of color selections capable of producing a         variety of contrast levels shall be provided. |            |              FullyPartiallyNoDon't know |                | 
+|    i |                                                                                                                                                                                                                                                                                                                                                                                                                                       Products shall be designed to avoid causing the         screen to flicker with a frequency greater than 2 Hz and lower than 55       Hz. |            |              FullyPartiallyNoDon't know |                | 
+| j[1] | Products which are freestanding, non-portable,         and intended to be used in one location and which have operable controls         shall comply with the following: The position of any operable control         shall be determined with respect to a vertical plane, which is 48 inches         in length, centered on the operable control, and at the maximum protrusion         of the product within the 48 inch length on products which are         freestanding, non-portable, and intended to be used in one location and         which have operable controls. |            |              FullyPartiallyNoDon't know |                | 
+| j[2] |                                                                                                                                                                                                                              Products which are freestanding, non-portable,         and intended to be used in one location and which have operable controls         shall comply with the following: Where any operable control is 10 inches         or less behind the reference plane, the height shall be 54 inches maximum         and 15 inches minimum above the floor. |            |              FullyPartiallyNoDon't know |                | 
+| j[3] |                                                                                                                                                                                              Products which are freestanding, non-portable,         and intended to be used in one location and which have operable controls         shall comply with the following: Where any operable control is more than         10 inches and not more than 24 inches behind the reference plane, the         height shall be 46 inches maximum and 15 inches minimum above the   floor. |            |              FullyPartiallyNoDon't know |                | 
+| j[4] |                                                                                                                                                                                                                                                                                                                Products which are freestanding, non-portable,         and intended to be used in one location and which have operable controls         shall comply with the following: Operable controls shall not be more than         24 inches behind the reference plane. |            |              FullyPartiallyNoDon't know |                | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Id |                                                                                                                                                                                                                                          Provision Text | Applicable | How does the EIT meet this requirement? | Please explain | 
+|  a |                                                                                                                                                      All mechanically operated controls and keys         shall comply with 1194.23 (k) (1) through (4). |            |              FullyPartiallyNoDon't know |                | 
+|  b |                                                                                        If a product utilizes touchscreens or         touch-operated controls, an input method shall be provided that complies         with 1194.23 (k) (1) through (4). |            |              FullyPartiallyNoDon't know |                | 
+|  c | When biometric forms of user identification or         control are used, an alternative form of identification or activation,         which does not require the user to possess particular biological         characteristics, shall also be provided. |      maybe |              FullyPartiallyNoDon't know |                | 
+|  d |                                                                                             Where provided, at least one of each type of         expansion slots, ports and connectors shall comply with publicly available         industry standards. |      maybe |              FullyPartiallyNoDon't know |                | 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Id |                                                                                                                                                                                                                                                                                                                          Provision Text | Applicable | How does the EIT meet this requirement? | Please explain | 
+|  a |                                                                                          At least one mode of operation and information         retrieval that does not require user vision shall be provided, or support         for Assistive Technology used by people who are blind or visually impaired         shall be provided. |        yes |              FullyPartiallyNoDon't know |                | 
+|  b | At least one mode of operation and information         retrieval that does not require visual acuity greater than 20/70 shall be         provided in audio and enlarged print output working together or         independently, or support for Assistive Technology used by people who are         visually impaired shall be provided. |        yes |              FullyPartiallyNoDon't know |                | 
+|  c |                                                                                            At least one mode of operation and information         retrieval that does not require user hearing shall be provided, or support         for Assistive Technology used by people who are deaf or hard of hearing         shall be provided. |        yes |              FullyPartiallyNoDon't know |                | 
+|  d |                                                                          Where audio information is important for the use         of a product, at least one mode of operation and information retrieval         shall be provided in an enhanced auditory fashion, or support for         assistive hearing devices shall be provided. |        yes |              FullyPartiallyNoDon't know |                | 
+|  e |                                                                                                           At least one mode of operation and information         retrieval that does not require user speech shall be provided, or support         for Assistive Technology used by people with disabilities shall be         provided. |        yes |              FullyPartiallyNoDon't know |                | 
+|  f |                                                                                                                       At least one mode of operation and information         retrieval that does not require fine motor control or simultaneous actions         and that is operable with limited reach and strength shall be provided. |        yes |              FullyPartiallyNoDon't know |                | 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Id |                                                                                                                                                                                             Provision Text | Applicable | How does the EIT meet this requirement? | Please explain | 
+|  a |                                                   Product support documentation provided to         end-users shall be made available in alternate formats upon request, at no         additional charges. |        yes |              FullyPartiallyNoDon't know |                | 
+|  b | End-users shall have access to a description of         the accessibility and compatibility features of products in alternate         formats, or alternate methods upon request, at no additional charge. |        yes |              FullyPartiallyNoDon't know |                | 
+|  c |                                                                                            Support services for products shall accommodate         the communication needs of end-users with disabilities. |        yes |              FullyPartiallyNoDon't know |                | 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                                                                                                                                                                                                                                                                                                              | 
+|                                                                                                                                                                                                                                                                                                                                                                                              | 
+|                                                                                                                                                                                                                                                                                                                                                                                              | 
+|                                                                                                                                                                                                                                                                                                                               Information Content Deliverable         Accessibility Template | 
+|                                                                                                                                                                                                                                                                                                                                                                                              | 
+|                                                                                                                                                                                                                                                                    Please fill the information below as a part of request for         accessibility information of your service deliverable. | 
+|                                                                                                                                                                                                                                                                                                                                                                                              | 
+|                                                                                                                                                                                                                                                                                                                                         Vendor Name:________________________________________ | 
+|                                                                                                                                                                                                                                                                                                                                                                                              | 
+|                                                                                                                                                                                                                                                                                                                Accessibility Information URL (if         any):______________________________ | 
+|                                                                                                                                                                                                                                                                                                                                                                                              | 
+| NOTE: Section 508 requirements are determined to apply based in part         on EIT requirements characterized using the BuyAccessible Wizard. Definite         information content deliverable requirements are identified by a "yes" in         the Applicable column. Possible information content deliverable         requirements are identified by a "maybe" in the Applicable column. | 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Section 508 Service Requirements | Applicable | How does the deliverable meet this requirement? | Please explain | 
+| Information Content will include topics that         address EIT products and EIT-related services. Section 508 must be         considered as a requirement on the delivered content to assure that it         includes data and/or knowledge appropriate to specific Section 508         accessibility requirements. The specific requirements that apply depend         upon the specific type of EIT referred to in the information content as         well as the functional performance criteria detailed in 1194.31. |            |                      FullyPartiallyNoDon't know |                | 
+|                                                                                                                                                       Information Content deliverable is intended to         be posted on the agency's a website. Section 508 must be considered as a         requirement on the delivered content to assure that it considers the         specific Section 508 accessibility requirements detailed in 1194.22 as         well as the functional performance criteria detailed in 1194.31. |            |                      FullyPartiallyNoDon't know |                | 
+|                                                                                                                            Information Content deliverable is intended to         be made available in a multimedia format by the agency. Section 508 must         be considered as a requirement on the delivered content to assure that it         considers the specific Section 508 accessibility requirements detailed in         1194.24 as well as the functional performance criteria detailed in         1194.31. |            |                      FullyPartiallyNoDon't know |                | 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                                                                                                                                                                                                                                                                                                  | 
+|                                                                                                                                                                                                                                                                                                                                                                                  | 
+|                                                                                                                                                                                                                                                                                                                                                                                  | 
+|                                                                                                                                                                                                                                                                                                                           Labor Hours Deliverable         Accessibility Template | 
+|                                                                                                                                                                                                                                                                                                                                                                                  | 
+|                                                                                                                                                                                                                                                        Please fill the information below as a part of request for         accessibility information of your service deliverable. | 
+|                                                                                                                                                                                                                                                                                                                                                                                  | 
+|                                                                                                                                                                                                                                                                                                                             Vendor Name:________________________________________ | 
+|                                                                                                                                                                                                                                                                                                                                                                                  | 
+|                                                                                                                                                                                                                                                                                                    Accessibility Information URL (if         any):______________________________ | 
+|                                                                                                                                                                                                                                                                                                                                                                                  | 
+| NOTE: Section 508 requirements are determined to apply based in part         on EIT requirements characterized using the BuyAccessible Wizard. Definite         labor hour characteristic requirements are identified by a "yes" in the         Applicable column. Possible labor hour characteristic requirements are         identified by a "maybe" in the Applicable column. | 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                                                                                                                                                                                                                                                                                                                                                          Section 508 Service Requirements | Applicable | How does the deliverable meet this requirement? | Please explain | 
+| The activity to be performed relates to or         requires the use of EIT. Section 508 must be considered as a requirement         for the EIT related labor hours activity to assure that it considers         specific Section 508 accessibility requirements. The specific requirements         that apply depend upon the specific type of EIT related to performing the         activity as well as the functional performance criteria detailed in         1194.31 |            |                      FullyPartiallyNoDon't know |                | 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Final Specs
+CLIN 0001
+Optiplex 960
+Base Unit Optiplex 960 Minitower Base Up to 90 Percent Efficient PSU 
+PROCESSOR Intel® Core™ 2 Quad Q9650 with VT (3.0GHz, 12M, 1333MHz FSB) 
+OPERATING SYSTEM Windows 7 downgradeable to Windows XP™ Pro,SP3, with Windows Vista Business License, 64 bit, English
+MEMORY 16.0GB  Non-ECC, 800MHz,DDR2 ,4 DIMM 
+HARD DRIVE 500GB 7,200 RPM 3.5" SATA, 3.0Gb/s Hard Drive with NCQ and 16MB Cache 
+CD-Rom or DVD-Rom Drive: Cyberlink Power DVD 16X, no Media, Dell Optiplex
+VIDEO CARD 512MB NVIDIA Quadro NVS 450 Quad DVI Adapter, Full Height 
+MONITOR No Monitor
+FLOPPY & MEDIA READER No Floppy Drive
+SPEAKERS Internal Chassis Speaker Option, Dell Optiplex tower
+KEYBOARD No Keyboard 
+MOUSE No Mouse 
+Sound card: Heat Sink, Mainstream, Dell Optiplex  tower
+WARRANTY & SERVICE 3 Year Limited Warranty plus 3 Year NBD On-Site Service
+Documents  Diskette in English (330-1710) & Power cord
+Power Supply 90 Percent Efficient
+Thermal: Heat Sink for Core 2 Du0 processors
+No installation required
+Energy Star System Energy Star 5.0 Category B (<44.3W Idle), EPEAT Gold, Dell ESMART Settings [Included in Price]
+CLIN 0002
+PowerEdge T410 224-6305
+Processor: Intel Xeon 5560, 2.8 GHZ, 8M Cache, Turbo, HT 1333 MHZ memory
+Additional processor: Intel Xeon 5560, 2.8 GHZ, 8M Cache, Turbo, HT 1333 MHZ memory
+Memory: 32GB (8x4 GB0 1333MHZ Dual Ranked RDIMMs for 2 processors, Optimized
+Operating System: Windows Server 2008 R2, Enterprise Edition, Academic w/25CALs, 2008 license
+Hard Drive Config: 1TB 7.2 K RPM SATA 3 Gbps 3.2-in cabled hard drive
+Power supply Non Redundant 525 watts
+OS Partitions Max  partition size for Microsoft Operating System
+Embedded Management iDRAC6 Enterprise
+Network Adapter Broadcom 5709 Dual Port 1 GbE NIC w/TOE iSCSI, PCIe-4
+Internal Optical drive DVD_RW, SATA, internal
+System Docs Electronic system Documentation, OpenManager DVD kit with DMC
+Power Cord Nema 5-15P to C13 Wall Plug, 125 v, 15 amp, 10 feet (3m)
+System Management  Microsoft SCE/SVMM Server management license 20 clients
+hardware Support Services 3 year ProSupport for IT and Mission Critical 4 hr 7x24 Onsite Pack.
+VIDEO CARD  512MB NVIDIA Quadro NVS 450 Quad DVI Adapter, Full Height 
+CLIN 0003
+KVM Switch
+Browser Support Internet Explorer 6.0 and higher
+Type Console - IP based
+Expansion Dedicated Daisy-Chain Ports
+Humidity 0-80%RH, non-condensing
+Local Console VGA, PS/2
+Maximum Resolution 1600 X 1200 @ 75Hz
+Network Interface RJ45
+Number of ports 8 RJ45s
+Number of users supported 1 Remote or 1 Local
+Operating Temperature 32 to 104 F (0 to 40 C)
+Power Supply 100~240 VAC; 47~63 Hz; 1A
+Security Password Protection
+Serial Connections 1xRJ45
+Server Connections VGA, USB, PS/2
+
+                                                              REQUEST FOR QUOTATION
+                                                            SMALL BUSINESS REQUIREMENT
+
+Company Name: ______________________________ POC: ______________________
+Address: ________________________________________________________________
+Phone Number: ________________                               FAX Number: _______________
+TAX ID# _____________________________              Cage Code *: _____________
+DUNS # _____________________________
+Are you a small business? ____        If so, provide small business type: _________________________
+Quote Number: _________________    Date: _______________
+Are these items Open Market or under your GSA Schedule? _____________ GSA # ______________
+Is this a GSA quote: Yes/No             Is this a commercial quote: Yes/No
+
+Request Prices for the following:
+
+|Description                                                                                                 |Unit of  |Qty    |Unit Price     |Extended Price |
+|                                                                                                            |Issue    |       |               |               |
+| CLIN 001                                                                                                   |         |EA     |33             |               |
+|Optiplex 960 Workstation                                                                                    |CD-Rom or|       |               |               |
+|                                                                                                            |DVD-Rom  |       |               |               |
+|                                                                                                            |Drive:   |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |Cyberlink|       |               |               |
+|                                                                                                            |Power DVD|       |               |               |
+|                                                                                                            |16X, no  |       |               |               |
+|                                                                                                            |Media,   |       |               |               |
+|                                                                                                            |Dell     |       |               |               |
+|                                                                                                            |Optiplex |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Base Unit                                                                                                   |VIDEO    |       |               |               |
+|                                                                                                            |CARD     |       |               |               |
+|Optiplex 960 Minitower Base Up to 90 Percent Efficient PSU                                                  |         |       |               |               |
+|                                                                                                            |512MB    |       |               |               |
+|PROCESSOR                                                                                                   |NVIDIA   |       |               |               |
+|                                                                                                            |Quadro   |       |               |               |
+|Intel® Core™ 2 Quad Q9650 with VT (3.0GHz, 12M, 1333MHz FSB)                                                |NVS 450  |       |               |               |
+|                                                                                                            |Quad DVI |       |               |               |
+|OPERATING SYSTEM                                                                                            |Adapter, |       |               |               |
+|                                                                                                            |Full     |       |               |               |
+|Windows 7 downgradeable to Windows XP™ Pro,SP3, with Windows Vista Business License, 64 bit, English        |Height   |       |               |               |
+|                                                                                                            |         |       |               |               |
+|MEMORY                                                                                                      |MONITOR  |       |               |               |
+|                                                                                                            |         |       |               |               |
+|16.0GB  Non-ECC, 800MHz,DDR2 ,4 DIMM                                                                        |No       |       |               |               |
+|                                                                                                            |Monitor  |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|HARD DRIVE                                                                                                  |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|500GB 7,200 RPM 3.5" SATA, 3.0Gb/s Hard Drive with NCQ and 16MB Cache                                       |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |FLOPPY & |       |               |               |
+|                                                                                                            |MEDIA    |       |               |               |
+|                                                                                                            |READER   |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |No Floppy|       |               |               |
+|                                                                                                            |Drive    |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |SPEAKERS |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |Internal |       |               |               |
+|                                                                                                            |Chassis  |       |               |               |
+|                                                                                                            |Speaker  |       |               |               |
+|                                                                                                            |Option,  |       |               |               |
+|                                                                                                            |Dell     |       |               |               |
+|                                                                                                            |Optiplex |       |               |               |
+|                                                                                                            |tower    |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |KEYBOARD |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |No       |       |               |               |
+|                                                                                                            |Keyboard |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |MOUSE    |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |No Mouse |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |Sound    |       |               |               |
+|                                                                                                            |card:    |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |Heat     |       |               |               |
+|                                                                                                            |Sink,    |       |               |               |
+|                                                                                                            |Mainstrea|       |               |               |
+|                                                                                                            |m, Dell  |       |               |               |
+|                                                                                                            |Optiplex |       |               |               |
+|                                                                                                            |tower    |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |WARRANTY |       |               |               |
+|                                                                                                            |& SERVICE|       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |3 Year   |       |               |               |
+|                                                                                                            |Limited  |       |               |               |
+|                                                                                                            |Warranty |       |               |               |
+|                                                                                                            |plus 3   |       |               |               |
+|                                                                                                            |Year NBD |       |               |               |
+|                                                                                                            |On-Site  |       |               |               |
+|                                                                                                            |Service  |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |Documents|       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |Diskette |       |               |               |
+|                                                                                                            |in       |       |               |               |
+|                                                                                                            |English  |       |               |               |
+|                                                                                                            |(330-1710|       |               |               |
+|                                                                                                            |) & Power|       |               |               |
+|                                                                                                            |cord     |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |Power    |       |               |               |
+|                                                                                                            |Supply   |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |90       |       |               |               |
+|                                                                                                            |Percent  |       |               |               |
+|                                                                                                            |Efficient|       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |Thermal: |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |Heat Sink|       |               |               |
+|                                                                                                            |for Core |       |               |               |
+|                                                                                                            |2 Du0    |       |               |               |
+|                                                                                                            |processor|       |               |               |
+|                                                                                                            |s        |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |No       |       |               |               |
+|                                                                                                            |installat|       |               |               |
+|                                                                                                            |ion      |       |               |               |
+|                                                                                                            |required |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |Energy   |       |               |               |
+|                                                                                                            |Star     |       |               |               |
+|                                                                                                            |System   |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |Energy   |       |               |               |
+|                                                                                                            |Star 5.0 |       |               |               |
+|                                                                                                            |Category |       |               |               |
+|                                                                                                            |B (<44.3W|       |               |               |
+|                                                                                                            |Idle),   |       |               |               |
+|                                                                                                            |EPEAT    |       |               |               |
+|                                                                                                            |Gold,    |       |               |               |
+|                                                                                                            |Dell     |       |               |               |
+|                                                                                                            |ESMART   |       |               |               |
+|                                                                                                            |Settings |       |               |               |
+|                                                                                                            |[Included|       |               |               |
+|                                                                                                            | in Price|       |               |               |
+|                                                                                                            |]        |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|CLIN 002                                                                                                    |EA       |5      |               |               |
+|                                                                                                            |         |       |               |               |
+|PowerEdge T410                                                                                              |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|224-6305                                                                                                    |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Processor:                                                                                                  |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Intel Xeon 5560, 2.8 GHZ, 8M Cache, Turbo, HT 1333 MHZ memory                                               |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Additional processor:                                                                                       |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Intel Xeon 5560, 2.8 GHZ, 8M Cache, Turbo, HT 1333 MHZ memory                                               |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Memory:                                                                                                     |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|32GB (8x4 GB0 1333MHZ Dual Ranked RDIMMs for 2 processors, Optimized                                        |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Operating System:                                                                                           |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Windows Server 2008 R2, Enterprise Edition, Academic w/25CALs, 2008 license                                 |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Hard Drive Config:                                                                                          |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|1TB 7.2 K RPM SATA 3 Gbps 3.2-in cabled hard drive                                                          |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Power supply                                                                                                |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Non Redundant 525 watts                                                                                     |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|OS Partitions                                                                                               |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Max  partition size for Microsoft Operating System                                                          |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Embedded Management                                                                                         |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|iDRAC6 Enterprise                                                                                           |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Network Adapter                                                                                             |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Broadcom 5709 Dual Port 1 GbE NIC w/TOE iSCSI, PCIe-4                                                       |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Internal Optical drive                                                                                      |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|DVD_RW, SATA, internal                                                                                      |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|System Docs                                                                                                 |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Electronic system Documentation, OpenManager DVD kit with DMC                                               |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Power Cord                                                                                                  |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Nema 5-15P to C13 Wall Plug, 125 v, 15 amp, 10 feet (3m)                                                    |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|System Management                                                                                           |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Microsoft SCE/SVMM Server management license 20 clients                                                     |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|hardware Support Services                                                                                   |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|3 year ProSupport for IT and Mission Critical 4 hr 7x24 Onsite Pack.                                        |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|VIDEO CARD                                                                                                  |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|512MB NVIDIA Quadro NVS 450 Quad DVI Adapter, Full Height                                                   |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|CLIN 003:                                                                                                   |EA       |1      |               |               |
+|KVM Switch                                                                                                  |         |       |               |               |
+|Browser Support                                                                                             |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Internet Explorer 6.0 and higher                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Type                                                                                                        |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Console - IP based                                                                                          |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Expansion                                                                                                   |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Dedicated Daisy-Chain Ports                                                                                 |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Humidity                                                                                                    |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|0-80%RH, non-condensing                                                                                     |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Local Console                                                                                               |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|VGA, PS/2                                                                                                   |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Maximum Resolution                                                                                          |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|1600 X 1200 @ 75Hz                                                                                          |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Network Interface                                                                                           |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|RJ45                                                                                                        |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Number of ports                                                                                             |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|8 RJ45s                                                                                                     |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Number of users supported                                                                                   |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|1 Remote or 1 Local                                                                                         |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Operating Temperature                                                                                       |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|32 to 104 F (0 to 40 C)                                                                                     |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Power Supply                                                                                                |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|100~240 VAC; 47~63 Hz; 1A                                                                                   |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Security                                                                                                    |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Password Protection                                                                                         |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Serial Connections                                                                                          |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|1xRJ45                                                                                                      |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|Server Connections                                                                                          |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|VGA, USB, PS/2                                                                                              |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |               |               |
+|                                                                                                            |         |       |TOTAL=         |               |
+
+Quote is valid for ______days.
+
+FOB: Destination
+
+Estimated Delivery: 10 days after contract award
+Warranty Information: ______________________________________________________
+Discount: ______________(i.e. 2% 20 days, Net 30, etc) (must be at least Net 30)
+Delivery Address:
+Attention: Mr. Julio Figueroa
+Jardon & Howard Technologies Inc.
+2710 Discovery Drive, Suite 100
+Orlando, FL  32826
+
+*You must be CCR registered before you can be awarded a government contract. The quickest way to register is to go to the Internet address:
+http://www.ccr.gov and register on line. Registration by fax or mail is available.  The form is provided on line or by calling 888-227-2423.
+
+If your company is not registered with ORCA (http://orca.bpn.gov), please complete the attached Provision 52.212-3, Offeror Representations and
+Certifications-Commercial Items and return it with your quote. Thank you.
+
+If you have any questions you may contact Alana Nunez-Bennett  at 407-381-8741 or Email to: alana.nunez-bennett@navy.mil
+
+
+
+
+                              52.212-3 -- Offeror Representations and Certifications -- Commercial Items (Mar 2005)
+An offeror shall complete only paragraph (j) of this provision if the offeror has completed the annual representations and certificates
+electronically at http://orca.bpn.gov . If an offeror has not completed the annual representations and certifications electronically at the ORCA
+website, the offeror shall complete only paragraphs (b) through (i) of this provision.
+(a) Definitions. As used in this provision:
+           “Emerging small business” means a small business concern whose size is no greater than 50 percent of the numerical size standard for
+           the NAICS code designated.
+           “Forced or indentured child labor” means all work or service—
+                 (1) Exacted from any person under the age of 18 under the menace of any penalty for its nonperformance and for which the worker
+                 does not offer himself voluntarily; or
+                 (2) Performed by any person under the age of 18 pursuant to a contract the enforcement of which can be accomplished by process
+                 or penalties.
+           “Service-disabled veteran-owned small business concern”—
+                 (1) Means a small business concern—
+                       (i) Not less than 51 percent of which is owned by one or more service-disabled veterans or, in the case of any publicly
+                       owned business, not less than 51 percent of the stock of which is owned by one or more service-disabled veterans; and
+                       (ii) The management and daily business operations of which are controlled by one or more service-disabled veterans or, in
+                       the case of a service-disabled veteran with permanent and severe disability, the spouse or permanent caregiver of such
+                       veteran.
+                 (2) Service-disabled veteran means a veteran, as defined in 38 U.S.C. 101(2), with a disability that is service-connected, as
+                 defined in 38 U.S.C. 101(16).
+           “Small business concern” means a concern, including its affiliates, that is independently owned and operated, not dominant in the
+           field of operation in which it is bidding on Government contracts, and qualified as a small business under the criteria in 13 CFR
+           Part 121 and size standards in this solicitation.
+           “Veteran-owned small business concern” means a small business concern—
+                 (1) Not less than 51 percent of which is owned by one or more veterans(as defined at 38 U.S.C. 101(2)) or, in the case of any
+                 publicly owned business, not less than 51 percent of the stock of which is owned by one or more veterans; and
+                 (2) The management and daily business operations of which are controlled by one or more veterans.
+           “Women-owned business concern” means a concern which is at least 51 percent owned by one or more women; or in the case of any
+           publicly owned business, at least 51 percent of the its stock is owned by one or more women; and whose management and daily business
+           operations are controlled by one or more women.
+           “Women-owned small business concern” means a small business concern --
+           (1) That is at least 51 percent owned by one or more women or, in the case of any publicly owned business, at least 51 percent of the
+           stock of which is owned by one or more women; and
+           (2) Whose management and daily business operations are controlled by one or more women.
+(b) Taxpayer identification number (TIN) (26 U.S.C. 6109, 31 U.S.C. 7701). (Not applicable if the offeror is required to provide this
+information to a central contractor registration database to be eligible for award.)
+           (1) All offerors must submit the information required in paragraphs (b)(3) through (b)(5) of this provision to comply with debt
+           collection requirements of 31 U.S.C. 7701(c) and 3325(d), reporting requirements of 26 U.S.C. 6041, 6041A, and 6050M, and
+           implementing regulations issued by the Internal Revenue Service (IRS).
+           (2) The TIN may be used by the government to collect and report on any delinquent amounts arising out of the offeror’s relationship
+           with the Government (31 U.S.C. 7701(c)(3)). If the resulting contract is subject to the payment reporting requirements described in
+           FAR 4.904, the TIN provided hereunder may be matched with IRS records to verify the accuracy of the offeror’s TIN.]
+           (3) Taxpayer Identification Number (TIN).
+           * TIN:_____________________.
+
+           * TIN has been applied for.
+
+           * TIN is not required because:
+           * Offeror is a nonresident alien, foreign corporation, or foreign partnership that does not have income effectively connected with
+           the conduct of a trade or business in the United States and does not have an office or place of business or a fiscal paying agent in
+           the United States;
+           * Offeror is an agency or instrumentality of a foreign government;
+           * Offeror is an agency or instrumentality of the Federal Government;
+           (4) Type of organization.
+           * Sole proprietorship;
+           * Partnership;
+           * Corporate entity (not tax-exempt);
+           * Corporate entity (tax-exempt);
+           * Government entity (Federal, State, or local);
+           * Foreign government;
+           * International organization per 26 CFR 1.6049-4;
+           * Other ____________________.
+           (5) Common parent.
+           * Offeror is not owned or controlled by a common parent:
+           * Name and TIN of common parent:
+           Name ____________________________________
+           TIN ______________________________________
+(c) Offerors must complete the following representations when the resulting contract is to be performed in the United States or its outlying
+areas. Check all that apply.
+           (1) Small business concern. The offeror represents as part of its offer that it * is, * is not a small business concern.
+           (2) Veteran-owned small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph
+           (c)(1) of this provision.] The offeror represents as part of its offer that it * is, * is not a veteran-owned small business concern.
+           (3) Service-disabled veteran-owned small business concern. [Complete only if the offeror represented itself as a veteran-owned small
+           business concern in paragraph (c)(2) of this provision.] The offeror represents as part of its offer that it * is, * is not a service-
+           disabled veteran-owned small business concern.
+           (4) Small disadvantaged business concern. [Complete only if the offeror represented itself as a small business concern in paragraph
+           (c)(1) of this provision.] The offeror represents, for general statistical purposes, that it * is, * is not, a small disadvantaged
+           business concern as defined in 13 CFR 124.1002.
+           (5) Women-owned small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph
+           (c)(1) of this provision.] The offeror represents that it * is, * is not a women-owned small business concern.
+           Note: Complete paragraphs (c)(6) and (c)(7) only if this solicitation is expected to exceed the simplified acquisition threshold.
+           (6) Women-owned business concern (other than small business concern). [Complete only if the offeror is a women-owned business concern
+           and did not represent itself as a small business concern in paragraph (c)(1) of this provision.]. The offeror represents that it *
+           is, a women-owned business concern.
+           (7) Tie bid priority for labor surplus area concerns. If this is an invitation for bid, small business offerors may identify the
+           labor surplus areas in which costs to be incurred on account of manufacturing or production (by offeror or first-tier subcontractors)
+           amount to more than 50 percent of the contract price:
+           ___________________________________________
+           (8) Small Business Size for the Small Business Competitiveness Demonstration Program and for the Targeted Industry Categories under
+           the Small Business Competitiveness Demonstration Program. [Complete only if the offeror has represented itself to be a small business
+           concern under the size standards for this solicitation.]
+                 (i) [Complete only for solicitations indicated in an addendum as being set-aside for emerging small businesses in one of the
+                 designated industry groups (DIGs).] The offeror represents as part of its offer that it * is, * is not an emerging small
+                 business.
+                 (ii) [Complete only for solicitations indicated in an addendum as being for one of the targeted industry categories (TICs) or
+                 designated industry groups (DIGs).] Offeror represents as follows:
+                       (A) Offeror’s number of employees for the past 12 months (check the Employees column if size standard stated in the
+                       solicitation is expressed in terms of number of employees); or
+                       (B) Offeror’s average annual gross revenue for the last 3 fiscal years (check the Average Annual Gross Number of Revenues
+                       column if size standard stated in the solicitation is expressed in terms of annual receipts).
+                            (Check one of the following):
+|Number of Employees                                           |Average Annual Gross Revenues                                   |
+|50 or fewer                                                   |$1 million or less                                              |
+|51-100                                                        |$1,000,001-$2 million                                           |
+|101-250                                                       |$2,000,001-$3.5 million                                         |
+|251-500                                                       |$3,500,001-$5 million                                           |
+|501-750                                                       |$5,000,001-$10 million                                          |
+|751-1,000                                                     |$10,000,001-$17 million                                         |
+|Over 1,000                                                    |Over $17 million                                                |
+
+
+           (9) [Complete only if the solicitation contains the clause at FAR 52.219-23, Notice of Price Evaluation Adjustment for Small
+           Disadvantaged Business Concerns, or FAR 52.219-25, Small Disadvantaged Business Participation Program—Disadvantaged Status and
+           Reporting, and the offeror desires a benefit based on its disadvantaged status.]
+                 (i) General. The offeror represents that either—
+                       (A) It * is, * is not certified by the Small Business Administration as a small disadvantaged business concern and
+                       identified, on the date of this representation, as a certified small disadvantaged business concern in the database
+                       maintained by the Small Business Administration (PRO-Net), and that no material change in disadvantaged ownership and
+                       control has occurred since its certification, and, where the concern is owned by one or more individuals claiming
+                       disadvantaged status, the net worth of each individual upon whom the certification is based does not exceed $750,000 after
+                       taking into account the applicable exclusions set forth at 13 CFR 124.104(c)(2); or
+                       (B) It *has, * has not submitted a completed application to the Small Business Administration or a Private Certifier to be
+                       certified as a small disadvantaged business concern in accordance with 13 CFR 124, Subpart B, and a decision on that
+                       application is pending, and that no material change in disadvantaged ownership and control has occurred since its
+                       application was submitted.
+                 (ii) Joint Ventures under the Price Evaluation Adjustment for Small Disadvantaged Business Concerns. The offeror represents, as
+                 part of its offer, that it is a joint venture that complies with the requirements in 13 CFR 124.1002(f) and that the
+                 representation in paragraph (c)(9)(i) of this provision is accurate for the small disadvantaged business concern that is
+                 participating in the joint venture. [The offeror shall enter the name of the small disadvantaged business concern that is
+                 participating in the joint venture: ________________.]
+           (10) HUBZone small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1)
+           of this provision.] The offeror represents, as part of its offer, that--
+                 (i) It * is, * is not a HUBZone small business concern listed, on the date of this representation, on the List of Qualified
+                 HUBZone Small Business Concerns maintained by the Small Business Administration, and no material change in ownership and
+                 control, principal office, or HUBZone employee percentage has occurred since it was certified by the Small Business
+                 Administration in accordance with 13 CFR part 126; and
+                 (ii) It * is, * not a joint venture that complies with the requirements of 13 CFR part 126, and the representation in paragraph
+                 (c)(10)(i) of this provision is accurate for the HUBZone small business concern or concerns that are participating in the joint
+                 venture. [The offeror shall enter the name or names of the HUBZone small business concern or concerns that are participating in
+                 the joint venture: __________.] Each HUBZone small business concern participating in the joint venture shall submit a separate
+                 signed copy of the HUBZone representation.
+(d) Representations required to implement provisions of Executive Order 11246 --
+           (1) Previous contracts and compliance. The offeror represents that --
+                 (i) It * has, * has not, participated in a previous contract or subcontract subject to the Equal Opportunity clause of this
+                 solicitation; and
+                 (ii) It * has, * has not, filed all required compliance reports.
+           (2) Affirmative Action Compliance. The offeror represents that --
+                 (i) It * has developed and has on file, * has not developed and does not have on file, at each establishment, affirmative action
+                 programs required by rules and regulations of the Secretary of Labor (41 CFR parts 60-1 and 60-2), or
+                 (ii) It * has not previously had contracts subject to the written affirmative action programs requirement of the rules and
+                 regulations of the Secretary of Labor.
+(e) Certification Regarding Payments to Influence Federal Transactions (31 U.S.C. 1352). (Applies only if the contract is expected to exceed
+$100,000.) By submission of its offer, the offeror certifies to the best of its knowledge and belief that no Federal appropriated funds have
+been paid or will be paid to any person for influencing or attempting to influence an officer or employee of any agency, a Member of Congress,
+an officer or employee of Congress or an employee of a Member of Congress on his or her behalf in connection with the award of any resultant
+contract.
+(f) Buy American Act Certificate. (Applies only if the clause at Federal Acquisition Regulation (FAR) 52.225-1, Buy American Act – Supplies, is
+included in this solicitation.)
+           (1) The offeror certifies that each end product, except those listed in paragraph (f)(2) of this provision, is a domestic end product
+           and that the offeror has considered components of unknown origin to have been mined, produced, or manufactured outside the United
+           States. The offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as
+           domestic end products. The terms “component,” “domestic end product,” “end product,” “foreign end product,” and “United States” are
+           defined in the clause of this solicitation entitled “Buy American Act—Supplies.”
+           (2) Foreign End Products:
+|LINE ITEM NO.                                                 |COUNTRY OF ORIGIN                                               |
+|                                                              |                                                                |
+|                                                              |                                                                |
+|                                                              |                                                                |
+
+
+           [List as necessary]
+           (3) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25.
+(g)
+           (1) Buy American Act -- Free Trade Agreements -- Israeli Trade Act Certificate. (Applies only if the clause at FAR 52.225-3, Buy
+           American Act -- Free Trade Agreements -- Israeli Trade Act, is included in this solicitation.)
+                 (i) The offeror certifies that each end product, except those listed in paragraph (g)(1)(ii) or (g)(1)(iii) of this provision,
+                 is a domestic end product and that the offeror has considered components of unknown origin to have been mined, produced, or
+                 manufactured outside the United States. The terms “component,” “domestic end product,” “end product,” “foreign end product,” and
+                 “United States” are defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli Trade
+                 Act.”
+                 (ii) The offeror certifies that the following supplies are end products of Australia, Canada, Chile, Mexico, or Singapore or
+                 Israeli end products as defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli
+                 Trade Act”:
+                 End Products of Australia, Canada, Chile, Mexico, or Singapore, or Israeli End Products:
+|LINE ITEM NO.                                                 |COUNTRY OF ORIGIN                                               |
+|                                                              |                                                                |
+|                                                              |                                                                |
+|                                                              |                                                                |
+
+
+                 [List as necessary]
+                 (iii) The offeror shall list those supplies that are foreign end products (other than those listed in paragraph (g)(1)(ii) or
+                 this provision) as defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli Trade
+                 Act.” The offeror shall list as other foreign end products those end products manufactured in the United States that do not
+                 qualify as domestic end products.
+                 Other Foreign End Products:
+|LINE ITEM NO.                                                 |COUNTRY OF ORIGIN                                               |
+|                                                              |                                                                |
+|                                                              |                                                                |
+|                                                              |                                                                |
+
+
+                 [List as necessary]
+                 (iv) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25.
+           (2) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate, Alternate I (Jan 2004). If Alternate I to the clause at FAR
+           52.225-3 is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic
+           provision:
+           (g)(1)(ii) The offeror certifies that the following supplies are Canadian end products as defined in the clause of this solicitation
+           entitled “Buy American Act—Free Trade Agreements—Israeli Trade Act”:
+                 Canadian End Products:
+                                                                  Line Item No.:
+                                                   ___________________________________________
+                                                               [List as necessary]
+           (3) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate, Alternate II (Jan 2004). If Alternate II to the clause at
+           FAR 52.225-3 is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic
+           provision:
+           (g)(1)(ii) The offeror certifies that the following supplies are Canadian end products or Israeli end products as defined in the
+           clause of this solicitation entitled ``Buy American Act--Free Trade Agreements--Israeli Trade Act'':
+                 Canadian or Israeli End Products:
+|Line Item No.:                                                  |Country of Origin:                                                |
+|                                                                |                                                                  |
+|                                                                |                                                                  |
+|                                                                |                                                                  |
+
+
+                       [List as necessary]
+           (4) Trade Agreements Certificate. (Applies only if the clause at FAR 52.225-5, Trade Agreements, is included in this solicitation.)
+                 (i) The offeror certifies that each end product, except those listed in paragraph (g)(4)(ii) of this provision, is a U.S.-made
+                 or designated country end product as defined in the clause of this solicitation entitled “Trade Agreements.”
+                 (ii) The offeror shall list as other end products those end products that are not U.S.-made or designated country end products.
+                 Other End Products
+|Line Item No.:                                                    |Country of Origin:                                                |
+|                                                                  |                                                                  |
+|                                                                  |                                                                  |
+|                                                                  |                                                                  |
+
+
+                       [List as necessary]
+                 (iii) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25. For line items covered
+                 by the WTO GPA, the Government will evaluate offers of U.S.-made or designated country end products without regard to the
+                 restrictions of the Buy American Act. The Government will consider for award only offers of U.S.-made or designated country end
+                 products unless the Contracting Officer determines that there are no offers for such products or that the offers for such
+                 products are insufficient to fulfill the requirements of the solicitation.
+(h) Certification Regarding Debarment, Suspension or Ineligibility for Award (Executive Order 12549). (Applies only if the contract value is
+expected to exceed the simplified acquisition threshold.) The offeror certifies, to the best of its knowledge and belief, that the offeror
+and/or any of its principals--
+           (1) * Are, * are not presently debarred, suspended, proposed for debarment, or declared ineligible for the award of contracts by any
+           Federal agency; and
+           (2) * Have, * have not, within a three-year period preceding this offer, been convicted of or had a civil judgment rendered against
+           them for: commission of fraud or a criminal offense in connection with obtaining, attempting to obtain, or performing a Federal,
+           state or local government contract or subcontract; violation of Federal or state antitrust statutes relating to the submission of
+           offers; or commission of embezzlement, theft, forgery, bribery, falsification or destruction of records, making false statements, tax
+           evasion, or receiving stolen property; and
+           (3) * Are, * are not presently indicted for, or otherwise criminally or civilly charged by a Government entity with, commission of
+           any of these offenses.
+(i) Certification Regarding Knowledge of Child Labor for Listed End Products (Executive Order 13126). [The Contracting Officer must list in
+paragraph (i)(1) any end products being acquired under this solicitation that are included in the List of Products Requiring Contractor
+Certification as to Forced or Indentured Child Labor, unless excluded at 22.1503(b).]
+           (1) Listed End Product
+|Listed End Product                                              |Listed Countries of Origin:                                       |
+|                                                                |                                                                  |
+|                                                                |                                                                  |
+|                                                                |                                                                  |
+
+
+           (2) Certification. [If the Contracting Officer has identified end products and countries of origin in paragraph (i)(1) of this
+           provision, then the offeror must certify to either (i)(2)(i) or (i)(2)(ii) by checking the appropriate block.]
+                 [ ] (i) The offeror will not supply any end product listed in paragraph (i)(1) of this provision that was mined, produced, or
+                 manufactured in the corresponding country as listed for that product.
+                 [ ] (ii) The offeror may supply an end product listed in paragraph (i)(1) of this provision that was mined, produced, or
+                 manufactured in the corresponding country as listed for that product. The offeror certifies that is has made a good faith effort
+                 to determine whether forced or indentured child labor was used to mine, produce, or manufacture any such end product furnished
+                 under this contract. On the basis of those efforts, the offeror certifies that it is not aware of any such use of child labor.
+(j)
+           (1) Annual Representations and Certifications. Any changes provided by the offeror in paragraph (j) of this provision do not
+           automatically change the representations and certifications posted on the Online Representations and Certifications Application
+           (ORCA) webisite.
+           (2) The offeror has completed the annual representations and certification electronically via the ORCA website at http://orca.bpn.gov
+           .After reviewing the ORCA database information, the offeror verifies by submission of this offer that the representation and
+           certifications currently posted electronically at FAR 52.212-3, Offeror Representations and certifications—Commercial Items, have
+           been entered or updated in the last 12 months, are current, accurate, complete, and applicable to this solicitation (including the
+           business size standard applicable to the NAICS code referenced for this solicitation), as of the date of this offer and are
+           incorporated in this offer by reference (see FAR 4.1201), except for paragraphs ____________. [Offeror to identify the applicable
+           paragraphs at (b) through (i) of this provision that the offeror has completed for the purposes fo this solicitation only, if any.
+           These amended representation(s) and/or certification(s) are also incorporated int his offer and are current, accurate, and complete
+           as of the date of this offer. Any changes provided by the offeror are applicable to this solicitation only, and do not result in an
+           update to the representations and certifications posted on ORCA.]
+

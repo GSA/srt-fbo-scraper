@@ -1,0 +1,631 @@
+
+RFP-9531-09-R-0200 REQUIREMENT MET? (CONFIRM WITH 'X') PROPOSAL LOCATION WHERE THIS IS TO BE FOUND (PAGE ##)/OPTIONAL COMMENT(S)
+Functional and Content Requirements of CMS
+GUI is user-friendly, accessible, and intuitive for all users, novice to pro
+GUI is customizable based on user rights and roles
+separate administration module for the creation and maintenance of web content
+content-entry interfaces of admin. module are simple, intuitive, and able to be distinguished and preset by user roles/profiles
+able to manage multiple web properties, specifically including:
+www.ushmm.org
+worldiswitness.org
+secure.ushmm.org
+resources.ushmm.org
+online.ushmm.org
+blogs.ushmm.org
+podcasts.ushmm.org
+r3program.ushmm.org
+can integrate with search engine technologies so that managed content is easily indexed and findable by both commercial and Museum-specific search mechanisms
+supports Museum’s web production lifecycle with features for creating and customizing workflows for content editing, review, revision, approval, and publishing
+administrative module is designed to accomodate at least fifty (50) simultaneous active users
+able to create pages and write content using simple, modular, and versatile (highly configurable) WYSIWYG features
+allows formation of page “templates” to facilitate updates and publication of evergreen content
+provides multilingual support for content distribution in multiple languages including English, Arabic, Farsi, Urdu, Chinese, Italian, Russian, Greek, French, Turkish, Portuguese (BR), Indonesian, and Korean.
+allows version control for all content items, including HTML/XHTML, CSS, images, JavaScript, Flash, and other digital assets used in the creation, presentation, and display of the website
+allows for the creation and capture of metadata for both SEO and administrative purposes
+allows administrators to set dates and times for automated content publication
+includes detailed documentation/manual and usage training for key staff
+has administrative reporting capability that integrates or is designed to be integrated with web analytics software (like WebTrends)
+Technical Requirements of CMS
+compatible with Museum’s technical environment (as described in attachment J.1)
+publishes a GUI fully functional on both Mac and PC platforms and standard web browsers
+support the re-use of content elements through data standards (such as XML)
+CMS supports metadata creation and offers tagging capabilities based on thesauri or other controlled vocabularies 
+must be integrated with the Museum’s digital asset management (Interface Multimedia's iDAM) software to assure seamless delivery and management of digital assets via DAM
+will be compatible with and fully-integrated (by Offeror) with Offeror's proposed search engine technology(ies) to assure functionality stated above, in a nonproprietary and transparent manner that can be maintained in out years either in-house by Museum or by a third party vendor
+compatable with content delivery networks
+data storage relies on a non-proprietary format and data structure
+template architecture allows content to be separated from presentation
+provides and supports RSS and other means of syndicating content
+support entry and display of UNICODE-enabled fonts
+include APIs and/or SDK for integration with/development of third-party or custom web apps
+GUI is compliant with Section 508 and W3C accessibility guidelines
+RFP-9531-09-R-0200 REQUIREMENT MET? (CONFIRM WITH 'X') PROPOSAL LOCATION WHERE THIS IS TO BE FOUND (PAGE ##)/OPTIONAL COMMENT(S)
+Functional and Content Requirements of Search
+permits searches by theme/topic (Museum-defined and/or user-defined folksonomies)
+permits searches by (Museum-defined) category
+permits searches by format/media type
+permits searches by date (of assets and/or content items alike)
+displays searches by relevancy
+permits site visitors to customize their results in a manner that is unique and personalized to the visitor
+permits site visitors to refine their results (i.e., 'drill down' within a result set)
+Technical Requirements of Search
+implements a single search capability that accesses all Museum databases, repositories, and assets described in RFP attachment, including without limitation relational databases, flat files, and file systems
+implements a single search capability that accesses file types and formats, including without limitation GIF, JPEG, XML, TIFF, MARC, AVI, MPEG, Real Media (RM), Windows Media (WMV), PDF, X/HTML, TXT, Word (DOC, DOCX, etc.), and Excel (XLS, XLSX, etc.).
+RFP Location RFP-9531-09-R-0200 OFFEROR CHECKLIST MET? (CONFIRM WITH 'X') PROPOSAL LOCATION WHERE THIS IS TO BE FOUND (PAGE ##)/OPTIONAL COMMENT(S)
+L.7.1.1 Past Performance
+L.7.1.1(1) Description of 3 relevant projects undertaken within the last 5 years (a through f)
+L.7.1.1(2) Resumes of key personnel
+L.7.1.1(3) Summary of corporate qualifications
+L.7.1.1(4) Relevant portfolio examples
+L.7.1.1(5) Chronological list/info of contracts performed (for references)
+L.7.1.2 Staffing Plan/Capability (note each of 4 bullets)
+M.1.1.1 Past Performance/Capability Requirements (may/may not be repeats of above)
+M.1.1.1, bullet 1 miminum FIVE (5) years' experience deploying CMS's and search technologies using best-of-breed proprietary enterprise solutions as well as open-source (at least for CMS) solutions;
+M.1.1.1, bullet 2 minimum FIVE (5) implementations of enterprise-level CMS technology, of which at least TWO (2) were successfully completed implementations of the CMS technology proposed for Museum's redesign;
+M.1.1.1, bullet 3 minimum TWO (2) successfully completed implementations/website integrations of enterprise-level search engine technology, of which at least ONE (1) was of the search engine technology proposed for Museum's redesign;
+M.1.1.1, bullet 4 successfully completed implementations/deployments of other technology(ies) Offeror is proposing;
+M.1.1.1, bullet 5 proposed key personnel who have worked together on at least three (3) similar solutions to the one solicited pursuant to this RFP, including without limitation design, engineering, and implementation staff with at least five (5) years' experience deploying CMS and search technologies in websites of similar or greater depth and complexity to that anticipated for Museum;
+M.1.1.1, bullet 6 proposed key personnel with expertise analyzing and improving usability of websites and online applications similar to the Museum's;
+M.1.1.1, bullet 7 proposed key personnel with demonstrated skill and experience in: developing and evaluating federal and/or major museum websites and their respective online products and services; utilizing research-based web design and usability guidelines, developing comprehensive usability test plans; developing comprehensive, practical usability testing reports; setting and attaining usability performance metrics; and working with clients and others not familiar with usability engineering;
+M.1.1.1, bullet 8 creativity, knowledge, and experience in/with user experience design and information architecture, building W3C-compliant HTML templates and CSS stylesheets for large/complex web initiatives, and thoughtfulness about the relationship of content to structural design; 
+M.1.1.1, bullet 9 creativity, knowledge, and experience in graphic design, interaction/user interface design, and implementation for web and multimedia;
+M.1.1.1, bullet 10 extensive experience applying rigorous, research-based methodology to user experience strategy, interaction design, information architecture, and usability testing (Offerors must clearly identify their areas of technical expertise and past experience);
+M.1.1.1, bullet 11 skills and expertise in quality assurance testing and reporting;
+M.1.1.1, bullet 12 excellent skills in writing and editing of human factors/usability publications, plans, and reports;
+M.1.1.1, bullet 13 completion of projects of this type on budget and on schedule;
+M.1.1.1, bullet 14 viability (an assessment which may be based in part on independent assessment sources used regularly by Museum); and
+M.1.1.1, bullet 15 overall satisfaction/success of prior performance (e.g., quality of services, customer satisfaction, timeliness of performance, business relations, and cost control).
+L.7.1.3 Creative/Technical Brief
+L.7.1.3(1) Understanding of the requirements
+L.7.1.3(2) Description of proposed solution
+L.7.1.3(3) Manual, product documentation, and training
+L.7.1.3(4) Service/Support package
+L.7.1.3(5) Website installation schedule (includes all deliverables for CMS & Search)
+L.7.1.3(6) Quality assurance plan
+L.7.1.4 Requirements matrices (CMS & Search)
+L.7.2 Business Proposal (to be submitted as separate file(s) from Past Perf/Creative)
+SF1444 SF33 cover completed and signed Completed SF33
+L.7.2.1 Cost [location in response only, don't reiterate the amount here!]
+L.7.2.2 Proposed Payment Schedule
+L.7.2.3 Contract Administration Information
+L.7.2.4 Contract Exceptions
+L.7.2.5 Assumptions
+EXHIBIT B
+
+USHMM TECHNICAL BACKGROUND Networking and Storage Infrastructure:
+Museum's local area network encompasses three buildings all located within the Washington, DC metropolitan area. They are inter-connected using gigabit Ethernet networks. Museum's internet connectivity uses a 10 mbps fiber optic connectivity to its Internet Service Provider. Museum has at least one data center in each of the above three buildings with redundant links among the data centers. Museum's networking infrastructure entirely consists of Cisco Systems' hardware. Museum's storage systems are based on a Storage Area Networking architecture with Fibre Channel and iSCSI-based connectivity between servers and storage devices.
+
+Software and Applications:
+Museum's internal operations are consolidated to provide a unified architecture using Microsoft-based technologies. Enterprise data management and authentication are handled through a single active directory domain using redundant Microsoft Windows 2003 Enterprise servers. A representative sample of Museum's software infrastructure is presented in the following list:  Enterprise Applications Server operating system: Desktop operating systems: Database platform: Email infrastructure:
+
+Windows 2003 Windows XP Service Pack 3 Macintosh OS X (Apprx. 10% presence) Microsoft SQL Server 2005 Microsoft Exchange 2003 (Will be upgraded to Exchange 2007 by July 2009)
+
+
+
+Business Applications Productivity suite: Portable documents (PDF): Desktop publishing: Architecture and Design: Pictures and Photos
+
+Microsoft Office 2007 Adobe Reader QuarkExpress AutoCAD Microsoft Visio Adobe PhotoShop
+
+
+
+Security Applications Anti-virus platform:
+
+Sophos Anti-Virus Technology
+
+
+
+Web Technologies (mostly used for public web sites) Server operating system: RedHat Enterprise Linux Web platform: Apache
+
+Page B-1 of 4
+
+
+
+Special Application Platforms Collections Management System: Digital Asset Management Legacy database: Software platforms Enterprise Portal (Intranet):
+
+EMu (KE Software) iDAM by WebArchives/InterFlow FoxPro (Being migrated to other platforms)
+
+
+
+MOSS 2007
+
+Documents Makeup Business documents Microsoft Word Microsoft RTF Microsoft Excel Microsoft PowerPoint Microsoft Access Microsoft Publisher Microsoft Visio Microsoft Office documents (Macintosh-generated) Adobe PDF AutoCAD Drawings and other AutoCAD-generated files Graphics formats PNG Portable Network Graphics JPEG GIF TIFF (compressed and uncompressed) PICT (Macintosh) BMP RAW files from different vendors Adobe PostScript Adobe Photoshop Adobe Illustrator Compressed files ZIP TAR RAR Desktop publication formats Adobe InDesign Adobe PageMaker QuarkXPress
+
+Generic formats ASCII Text ANSI Text Multimedia Formats Motion JPEG-2000 AVI WMA WMV MP3 MOV WAV Flash video files
+
+Museum's various data repositories and applications currently used to access these data:
+US Holocaust Memorial Museum's web content (Several thousand pages and growing) The Museum's web site is currently running under Apache 2.x in a RedHat Enterprise Linux server on an Intel-based platform.
+
+Page B-2 of 4
+
+Images of text documents from World War II digitized by the International Tracing Service that are to be character recognized to facilitate search and retrieval (100 million documents) The document images are located in a Storage Area Network within the Museum's data center and accessed through a Windows 2003 Server using a Java-based client. Data in microfilms (64 million documents ­ an ongoing project 3.2 million digitized so far) The physical materials (Microfilms) are located in the Museum's storage facility and digitized materials are located with the Museum's data center and accessible through the Museum's local area network. Names List Project (about 3 million records of names) The list of names are currently cataloged and managed through a network of Microsoft SQL Server-based systems in the Museum's data center. The web interface currently used to access this data is located in the Museum's main web server. US Holocaust Memorial Museum's constituents and donors Information (600,000+) Information about the Museum's donors is managed through an outsourced application in a secure facility. A sub-set of the data that is made available for the public is currently located in a Microsoft SQL Server-based system in the Museum's data center. Resources from the museum's collections management system (60,000+ records) The Museum's Collections Management System, EMu, developed by KE Software, is currently housed in a RedHat Enterprise Linux and is accessible by the staff through a Windows-based desktop application. Library system (20,000+ records) The library cataloging system has been built around Oracle database and deployed by the company, Ex-Libris, using their proprietary application. The server and database are located within the Museum's data center and it is web -based application accessible both internally as well as externally from the Internet. Photo Archives System (20,000+ records) Currently the Department of Photo Archives uses a FoxPro-based application to catalog, index and access the photograph collection. The public-facing front end to access this collection is currently being facilitated through the Museum's digital asset management system, iDAM, using a web-based interface. Museum's Collection of Survivor Testimonies (40,000+ records) Limited amount of meta data is currently available and they are managed through a Microsoft SQL Server-based system. Building a more robust access to these testimonies with a web-based interface is currently being planned. Page B-3 of 4
+
+Film and Video Archives (4,000+ records) Currently this archival collection uses a FoxPro-based database to catalog, index and access this multi-media collection. User access is provided through a web-based interface. The back-end web server is running on the Museum's main web server. Content from the Holocaust Encyclopedia (5,700+ records) The English content of the Holocaust Encyclopedia is managed through a FoxPro database, while other language contents are managed through Microsoft SQL-Server database. Both contents are made available through the Museum's main web site.
+
+Page B-4 of 4
+
+SOLICITATION, OFFER AND AWARD
+2. Contract No. 3. Solicitation No.
+
+1.
+
+This Contract is a Rated Order Under DPAS (15 CFR 700) 4. Solicitation Type
+
+Rating
+
+5. Date Issued
+
+Page of pages 1 32 6. Requisition/Purchase No.
+
+USHMM RFP-9531-09-R-0200
+Code USHMM UNITED STATES HOLOCAUST MEMORIAL MUSEUM OFFICE OF FINANCE, DIV. OF PROCUREMENT 100 RAOUL WALLENBERG PLACE, SW WASHINGTON, DC 20024-2126 7. Issued By
+NOTE: In sealed bid solicitations "offer" and "offeror" mean "bid" and "bidder".
+
+Sealed Bid (IFB) 06/25/2009 X Negotiated (RFP) 8. Address Offer To (If other than item 7)
+
+0000011495
+Code
+
+SOLICITATION
+9. Sealed offers in original and 1 copies for furnishing the supplies or services in the Schedule will be received at the place specified in Item 8, or if handcarried, in the depository located in by e-mail to <BFalk@ushmm.org> until 12:00 noon ET (hour) local time Jul 31, 2009 (date).
+
+CAUTION ­ LATE Submissions, Modifications, and Withdrawals: See Section L, Provision No. 52.214-7 or 52.215-1. All offers are subject to all terms and conditions contained in this solicitation. 10. For Information Call: A. Name B. Telephone No. (NO COLLECT CALLS) C. E-Mail Address
+
+Bruce Falk Description
+
+202/314-7828 11. TABLE OF CONTENTS Page(s) (x) Sec Part II ­ Contract Clauses
+
+bfalk@ushmm.org Description Page(s)
+
+(x) Sec Part I ­ The Schedule
+
+X X X X X X X
+
+A B C D E F G H
+
+Solicitation/Contract Form Supplies or Services and Prices/Costs Description/Specs./Work Statement Packaging and Marking Inspection and Acceptance Deliveries or Performance Contract Administration Data Special Contract Requirements
+
+1 X I Contract Clauses Part III ­ List of Documents, Exhibits and Other Attachments 3 4-10 X J List of Attachments (Exhibits A, B, etc.) Part IV ­ Representations and Instructions -10 Representations, Certifications and Other Statements X K of Offerors 10-11 11-14 X L Instr., Conds., and Notices to Offerors 15-16 X M Evaluation Factors for Award OFFER (Must be fully completed by offeror)
+
+16-20 21 21 21-27 27-30
+
+NOTE: Item 12 does not apply if the solicitation includes the provisions at 52.214-16, Minimum Bid Acceptance Period.
+
+12. In compliance with the above, the undersigned agrees, if this offer is accepted within ____60__________ calendar days (60 calendar days unless a different period is inserted
+by the offeror) from the data for receipt of offers specified above, to furnish any or all items upon which prices are offered at the price set opposite each item, delivered at the designated point(s), within the time specified in the schedule. 10 Calendar Days 20 Calendar Days 30 Calendar Days _____ Calendar Days 13. Discount for Prompt Payment (See Section I, Clause No. 52.232-8)
+
+14. Acknowledgment of Amendments
+The offeror acknowledges receipt of amendments to the SOLICITATION for offerors and related documents numbered and dated.
+
+Amendment No.
+
+Date
+
+Amendment No.
+
+Date
+
+15A. Name Code and Address of Offeror 15B. Telephone No. (Include area code)
+
+Facility
+
+16.
+
+Name and Title of Person Authorized to Sign Offer (Type or print)
+
+15C. Check if Remittance Address is different from above. Enter such address in Schedule.
+
+17. Signature
+
+18. Offer Date
+
+AWARD (To be completed by Government)
+19. Accepted as to Items Numbered 20. Amount 21. Accounting and Appropriation 23. Submit Invoices to Address Shown in (4 copies unless otherwise specified) Payment Will be Made By Code Item
+
+22. Authority for Using Other Than Full and Open Competition: 10 U.S.C. 2304 (c)( ) 41 U.S.C. 253 (c)( 24. Administered By (If other than Item 7) Code
+
+)
+
+26. Name of Contracting Officer (Type or print)
+
+27. United States of America (Signature of Contracting Officer)
+
+28. Award Date
+
+IMPORTANT ­ Award will be made on this form, or on Standard Form 26, or by other authorized official written notice. AUTHORIZED FOR LOCAL REPRODUCTION Previous edition is unusable STANDARD FORM 33 (Rev. 9-97) Prescribed by GSA ­ FAR (48 CFR) 52.214 (c)
+
+Supplies or Services and Prices/Costs
+Item No. Supplies/Services Quantity Unit Unit Price Amount
+
+NOTE: Supplies (software), information architecture, design, development, configuration, installation, implementation, testing and certain maintenance and training services (as identified herein) shall be firm fixed price while additional supplies and services (including without limitation any option year license fees, maintenance, and upgrade assurance) may be provided on an IDIQ basis. The contract to be awarded shall extend through Website relaunch, completion, and a twelve (12) month warranty period, with option(s) to extend for an additional four (4) one-year periods for the purchase of IDIQ supplies and services. Museum may exercise any/all of the options for additional years solely at its discretion. If the Museum exercises the option(s) to extend this contract for additional one-year period(s), contract extensions for the option year(s) require WRITTEN AUTHORIZATION BY MUSEUM'S CONTRACTING OFFICER. The amount in Box 20 on page 1 represents the firm, fixed price for the Website (all services and deliverables hereto), which shall be inclusive of all direct labor, indirect costs (overhead and G&A expenses), other direct costs (materials, rental equipment, communication, reproduction, consultants, etc.), and profit for which Contractor expects payment. 0001 CMS as provided in C.2.1, below, minimum 50 simultaneous administrative module users (perpetual license, or else sub-itemize cost of out years) Search as provided in C.2.2, below (perpetual license, or else sub-itemize cost of out years) Phase I as provided in C.2.3.1, including all services and deliverables thereto Phase II as provided in C.2.3.2, including all services and deliverables thereto Phase III as provided in C.2.3.3, including all services and deliverables thereto Phase IV as provided in C.2.3.4, including all services and deliverables thereto Phase V as provided in C.2.3.5, including all services and deliverables thereto Phase VI as provided in C.2.3.6, including all services and deliverables thereto Phase VII as provided in C.2.3.7 (first year following launch), including all services and deliverables thereto OPTION YEAR 1 - IDIQ Services [Phase VII], including all services and deliverables thereto OPTION YEAR 2 - IDIQ Services [Phase VII], including all services and deliverables thereto OPTION YEAR 3 - IDIQ Services [Phase VII], including all services and deliverables thereto OPTION YEAR 4 - IDIQ Services [Phase VII], including all services and deliverables thereto
+
+0002 0003 0004 0005 0006 0007 0008 0009
+
+0100
+
+0200
+
+0300
+
+0400
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+Page - 2 of 32
+
+OTHER USHMM SOLICITATION REQUIREMENTS
+SECTION B (CONT'D) ­ SUPPLIES AND SERVICES AND PRICES/COSTS B.1 SUPPLIES AND SERVICES. The Contractor shall supply, install and implement Museum's Website Content Management System ("CMS") and search solutions ("Search") as described herein as part of Contractor's holistic analysis, redesign, and implementation of Museum's Website (front and back ends), including all derivative versions of Website content as delivered via internet-connected media platforms such as mobile devices, kiosks, and third party services (social networking sites, widgets, YouTube, etc.) as further described in Section C, below. Contractor shall provide additional licensing, consulting, maintenance, and Websiterelated implementation/programming services at Museum's sole option(s). B.2 GOVERNMENT-FURNISHED EQUIPMENT. All hardware necessary to support and maintain the Website, CMS, and Search shall be furnished by Museum. Offeror's proposal shall separately itemize and pre-price all required software and implementation costs (including labor, travel and other expenses) for this project and make recommendations to Museum for hardware requirements which pertain to the proposed CMS and Search functions. B.3 PRICING STRUCTURE. Offerors shall complete the pricing schedule provided on page 2 of this RFP, including all Offeror-defined sub-tasks for each major task. Please note that while Offerors are required to price out each Phase of services as summarized on page 2 of this RFP, Offerors are likewise encouraged to propose and justify an alternative pricing scheme which re-allocates, re-prioritizes, or otherwise modifies Museum's list based on Contractor's experience. B. 4 OPTIONAL SERVICES/IDIQ PRICING STRUCTURE
+
+B.4.1 Labor Categories and Rates. The Offeror/Contractor shall submit fully burdened hourly rates established for all relevant labor categories to be used to submit a firm fixed cost proposal for each future Task Order. B.4.2 Renewal rates for each of the prospective option years shall not exceed the previous year's labor rates plus the percentage increase for U.S. City Average for the most recent twelve month period (Consumer Price Index for All Urban Consumers: Selected Areas, all items index). B.5 PRICING WARRANTY. Contractor warrants that the prices for the supplies and services under this Contract are not greater than the prices charged the Contractor's most favorable customer under similar circumstances.
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+3 of 32
+
+SECTION C ­ DESCRIPTION, SPECIFICATIONS, STATEMENT OF WORK C.1 BACKGROUND
+
+C.1.1 History. In 1997, the Museum launched its first website. Over the past 12 years, a number of designs have been applied to the Museum's web properties and there have been many evolutions in information architecture, design, and development for the Internet and the World Wide Web. In addition to the adoption of Section 508 of the 1998 Rehabilitation Act and the eGov act of 2002, drastic changes in technology and design have significantly impacted the way visitors search for, access, engage/interact with, and utilize web content. These include: improved access to high speed internet bandwidth; adoption of user-centered design principles for web development; improvement of browser applications and technologies (Flash, XHTML, Ajax); the emergence of new broadcast models, immersive worlds and social networking environments (RSS, Podcasts, blogs, Facebook, MySpace, Second Life, Flickr, Twitter); and tthe rapid national and global adoption of mobile phones for internet access. C.1.2 The Website. The Museum's current website(s) at <http://www.ushmm.org> (collectively, including without limitation all Museum owned and controlled URLs, web domains, and subdomains, and as contemplated for the redesign, fully assimilating as well the CMS and Search, the "Website") by and large reflects an institutional, programmatic organizational structure, as opposed to a user approach to information access and design. Though the Museum has explored and implemented many of the technologies and methodologies cited in C.1.1, above, it has not done so in a comprehensive, holistic manner. Nonetheless, the Museum has identified the Web as the primary conduit for communicating to its many audiences around the world. C.1.3 Museum's Goals for the Website. As the Museum passes its 15th anniversary, we have rolled out a rebranding and identity initiative that has resulted in a revised visual identity, logo, type treatment, and associated messaging. Given the Museum's focus on the Web, we have decided to redesign our Website from the ground up. This comprehensive redesign project is rooted in the underlying objective to develop a unified presence for all Museum web properties that meets our institutional goals and mission as well the needs of our user communities and constituents. The Museum is therefore via this RFP engaging an interactive and web design contractor (the "Contractor") to research, develop, implement, test, manage, and maintain a new best-of-breed web presence for the Museum's Website redesign initiative to include acquisition, installation, and implementation of enterprise-level CMS and search technologies. C.1.4 Museum's Goals for the CMS. The Museum's current website is primarily composed of static HTML pages. To edit or add content onto an existing page, the file(s) must be manually updated. In order to effectively produce, develop, and maintain our web pages and to ensure a flexible and sustainable Website architecture, the Museum needs a formal, yet modular, system for managing content production and workflow. It is anticipated that implementation of the approved CMS solution shall occur as part of the integration phase of the Website redesign
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+4 of 32
+
+project. The Museum is open to a variety of CMS platforms, including open source technology solutions, provided they meet the meet the Museum's stated functional, content, and technical requirements. C.1.5 Museum's Goals for Search Technology. C.1.5.1 The Museum contains a wealth of digital information collected from a variety of resources over the past several years. A vast majority of this information currently exists in different databases and is disseminated through different applications throughout the Museum and our public-facing website. To date the Museum does not have a unified search mechanism that spans across our digital assets. Under the current system, accessing information requires users to discover multiple search silos and manually collect results thus making it very difficult for users to gain a comprehensive picture about a topic. Many searches are still performed inefficiently and often do not return the most relevant results. The Museum currently uses an outdated search system that is no longer supported by the vendor and that requires extensive efforts to operate and maintain. Although we have a wealth of data in our databases and on our website, we don't have coherent way to consolidate our search results using this antiquated technology for presentation to our internal staff, historians, scholars, researchers and the public who are visiting us over the internet. For example, if someone searches for the term "Antisemitism", the results presented is only retrieved from a selected set of data while a vast amount of additional data will have to be ignored due to the limitations of our current technology. Such challenges will have to be addressed systematically, to implement a universal and federated search mechanism that will traverse many databases to retrieve and present relevant information. It is anticipated that implementation of the approved search solution shall occur as part of the integration phase of the Website redesign project.
+
+C.1.5.2
+
+C.2 STATEMENT OF WORK. These specifications elaborate the top-level description of supplies and services for the Museum's Website redesign project provided in Section B.1, above. C.2.1 Content Management System (CMS). Contractor shall supply, install and implement a CMS strategy and solution that is fully compliant with Museum's functional and technical CMS specifications attached hereto. C.2.2 Search Technology. Contractor shall supply, install and implement a search strategy and solution that is fully compliant with Museum's functional and technical search technology specifications attached hereto. C.2.3 Phases. The Website redesign project will follow a phased project life-cycle that incorporates planning, analysis and evaluation, information architecture, design, site implementation and integration, quality assurance testing, and launch. It is understood and expected that the project as a whole will involve iteration and parallel development within and
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+5 of 32
+
+among each numbered Phase as further detailed in Contractor's Proposal and otherwise as mutually agreed upon in writing by the parties. C.2.3.1 Phase I - Analysis and Evaluation. Contractor will work with the division of Outreach Technology and other Museum staff to understand the Museum's mission, vision, and objectives for the redesign initiative. Contractor will work with Museum staff during the initial planning phases of the project to define the scope, requirements, and resources for all phases of the project and to develop a strategy or approach to information design and the end user experience. Contractor will identify the current users of the Museum's website in order to develop a thorough understanding of the target audience, their typical tasks, behavior, or constraints. Contractor will analyze and asses the purpose of the Website in achieving the Museum's goals. Contractor will conduct the activities, research, and evaluation in support of defining and understanding our audience(s). Contractor will perform user interviews, survey, focus groups, and develop personas, task list/matrices, and task/flow diagrams. Contractor will also review and document existing website content, architecture, and structure and will develop content inventories. Contractor will review and evaluate the results of existing web metrics from reports generated by the Museum's web analytics tools, surveys, customer service calls/emails, and usability results to better understand how our visitors are accessing and interacting with our site. Contractor will provide the Museum with documentation to support the analysis of the Museum's existing content and organizational architecture and audience(s) (both current and desired). Unless otherwise indicated below, deliverables for this phase of the project shall be based on on industry research, expert analysis, consultation with the Museum's CIO office, and conversation with project stakeholders and include: A project plan (hard copy as well as extranet-enabled) which identifies resources for the research, planning, IA, interaction design, implementation, usability, and quality assurance activities and finalizes the schedule/GANTT chart that will be used to manage and execute the entire project; A user experience strategy document detailing the objectives of the information architecture and usability services and the guiding principles/rationale underlying them; An inventory that assesses and documents the Museum's existing information architecture and catalogs the current contents of <http://www.ushmm.org> and its subdomains; A comprehensive written analysis of Museum's existing online user feedback data (online/in-person surveys, web server logs/metrics, usability studies, online comments through forums, emails, and other customers service vehicles);
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+6 of 32
+
+Recruit representative samples of user population and compensate participants for their participation in audio-visually recorded interviews, focus groups, and/or surveys (include participant recruitment and incentives costs in bid). Contractor will thereafter make a presentation to the Museum and provide raw footage along with a report which shall contain an abstract, findings, and complete transcripts; and A document, based on user identification and analysis, which includes detailed audience profiles and representative user characteristics of all Museum audiences (e.g., typical needs, behaviors, and information seeking traits and requirements) that documents the Museum's core audiences and constituencies. C.2.3.2 Phase II - IA Organization and Development. Contractor will develop the information architecture that will serve as the underlying structure for the Museum's new design and online user experience. In this context, based on industry best practices and the information and analysis completed in Phase 1, Contractor shall provide the following services each captured in written deliverable(s): Analyze the Museum's existing information architecture and make recommendations for improvements; Develop Website terminology, nomenclature, and labeling to ensure use of logical and intuitive terminology based on users' knowledge levels; Organize site content; Develop high-level categorization that is flexible, scalable, and modular; Develop wireframes, page schematics, and interface specifications for all content areas and properties to be included in the Website redesign; Develop a comprehensive IA style guide to include nomenclature and labeling requirements and strategies for the Website; Consult on user interface designs as requested by Museum to ensure layout, design, and organization is useful, usable, accessible, and otherwise consistent with the IA strategy and objectives established for the Website; Develop a content strategy plan and document; Create high-level and detailed site map and site navigation strategy; and Throughout all phases of the Website redesign initiative and as requested by Museum, provide ongoing consultation from an IA and user experience/interaction to ensure that Website design and presentation are useful, usable, accessible, and otherwise consistent with the approved IA designs and specifications and the overall IA strategy and objectives established for the Website. C.2.3.3 Phase III - Design. Contractor shall design the user interface and graphic design (look and feel) of the Website. Building upon and complementing the user experience strategy and information architecture phase, Contractor will develop a comprehensive visual design for the Website to be inclusive of all content areas and types defined in the earlier phase to implement a flexible, unified design based upon the approved information architecture. The design phase will be
+7 of 32
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+performed in an iterative fashion, providing multiple rounds of discussion, presentation, and review by Museum of design comp(osition)s, concepts, and models. In this context, Contractor shall provide a multitude of services and certain deliverables based on industry best practices including without limitation: Incorporation of Museum visual identity and brand into site design principles; Iterated rounds of development of multiple design comps, concepts, and models; Development of visual design templates for all major content areas, page types and interaction contexts based on Museum-approved comps; Development of a comprehensive style guide that includes Website graphic design, content style, and usage; and Generally, designs that are inclusive of all media types (text, image, audio, video, etc.) for publication through all Museum properties and media platforms (including mobile delivery). C.2.3.4 Phase IV - Website Implementation. Following the information architecture and design phases of the project, Contractor shall complete and implement the Website (including all CMS and search functionality) on a turn-key basis for Museum's public launch. In this context, Contractor shall provide a multitude of services and certain deliverables to based on industry best practices including without limitation: Development of XHTML templates / page types; Development of functional prototype(s) for testing and review; Assuring that all templates and final page displays (including multimedia components) are accessible and compliant with Section 508; Assuring full functionality, operationality, and freedom from conflicts and defects as described herein (see, e.g., attached technical compliance matrices for CMS and search technology performance); Integration within the implemented CMS; Final design and production inventory of all the text, graphics, audio, video, linkages, and other components of the Website including all software, files, and other work product produced pursuant to the Agreement that clearly distinguishes which components are Museum content and which (if any) have been provisioned from other sources; and Delivery and installation of the completed Website on a designated Museum server on or before September 30, 2011, and will provide Museum with all related materials and work product thereto (collectively including without limitation all original Photoshop, Illustrator or other graphics files, xml, xhtml, dhtml, CSS, cfm, kml, and html files as well as complete java or javascript code, flash, FLA, PSD, PHP, silverlight, director, animation, or other scripts, nonproprietary source code, and Website production files) on three (3) CD-ROM or DVD-ROM copies or other mutually agreed upon format.
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+8 of 32
+
+C.2.3.5
+
+Phase V - Usability Testing. Contractor shall facilitate and execute user testing of IA and implemented designs/Website in part and in whole, analyze the results of such testing, and make recommendations therefrom. In this context, Contractor shall provide a multitude of services and certain deliverables based on industry best practices as follows: Write a usability test plan to include measurable usability objectives set in conjunction with Museum stakeholders, usability test strategy and methodology, and that clearly defines and documents all test tasks, scenarios, and success criteria; Create paper and functional prototypes (based on IA recommendations); Recruit representative samples of user population from Museum audiences and compensate participants for their participation. (Include test participant recruitment and incentives costs in bid. Plan for 12 ­ 15 individual, audiovisually recorded performance tests.) Create and administer a usability test (e.g., prepare test documents, set-up testing environment, facilitate, and execute usability test) in accordance with the test plan; and Report findings ranked by severity/criticality/degree(s) of importance in an interactive, multimedia format that includes (a) screenshots and video clips of participants captured during the usability tests; (b) comparative data from baseline usability testing of original site, prototype testing, and redesigned site testing; and (c) Contractor's recommendations.
+
+C.2.3.6
+
+Phase VI - Quality Assurance. Contractor shall provide a multitude of services and certain deliverables as part of Contractor's pre-launch Website testing based on industry best practices, and in each case subject to Museum's final review and approval: Evaluate site requirements and specifications and develop and implement a comprehensive quality assurance test plan to ensure that the Website is completely operational, void of defects, and with all conflicts resolved upon launch by September 30, 2011 consistent with the stipulation(s) in section C.2.3.4, above; Develop manual and automated test cases/scenarios; Perform and execute the manual and automated QA test cases/scenarios; Document testing results, resolve all identified errors, conflicts, and bugs, and track/report the bug/defect resolution; Develop a maintenance plan that details expected maintenance tasks as well as detailed, written instructions for Museum staff to access, add content to, correct, repair, and/or otherwise modify the Website during the initial 12-month warranty period as well as the IDIQ period that follows; and Contractor shall conduct a CMS training session for Museum staff and document any adjustments and/or modifications anticipated to be made by Contractor as part of the present engagement.
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+9 of 32
+
+C.2.3.7
+
+Phase VII - Maintenance. Contractor shall provide consultation, make adjustments to the Website and/or its constituent components (e.g., CMS, Search) necessary to assure operationality and freedom from defect, and provide technical support for the product for a minimum of twelve (12) months following initial project completion and launch (and on an IDIQ/task order basis thereafter) in a manner consistent with the Museum-approved maintenance plan. Support shall be provided during standard business hours (e.g., from 8 AM to 5 PM, Washington, DC time, Monday through Friday). Such support shall not be construed as a replacement for or waiver of warranties provided hereto.
+
+C.3 REQUIRED SERVICES/LABOR CATEGORIES. Contractor shall provide the services, expertise and technical resources in all labor categories identified in Offeror's proposal.
+
+[SECTION D OMITTED]
+
+SECTION E - INSPECTION AND ACCEPTANCE E.1 FAR 52.246-4 INSPECTION OF SERVICES--FIXED-PRICE (AUG 1996) (Reference 46.304) E.2. It shall be the responsibility of the Contractor to ensure that all supplies and services provided hereunder conform to the specifications prior to delivery to the Museum. E.3 Inspection by Museum shall not relieve the Contractor of responsibility for any or all quality control aspects during the life of the contract. This shall include quality control for all items covered by this contract that may be subcontracted. E.4 Neither the Museum's reviews, approval, or acceptance of services and/or supplies, nor payment for any of the services or supplies required under this contract shall be construed to operate as a waiver of action arising out of the performance of this contract. Furthermore, the Contractor shall be and remain liable to the Museum in accordance with applicable law for all damages to the Museum caused by the Contractor's negligent performance of any of the services or supplies furnished under this contract. E.5 Acceptance by the Museum does not relieve the Contractor of responsibility for correction of errors or omissions that may arise after such acceptance of the errors and omissions are clearly at fault in Contractor's performance. SECTION F - DELIVERIES OR PERFORMANCE F.1 PERIOD OF PERFORMANCE. The period of performance of this Contract shall be until the project has successfully been completed followed by a twelve (12) month warranty period, with Contractor to publicly relaunch and complete the redesign (exclusive of the one-year
+USHMM RFP-9531-09-R-0200 [Web Redesign] 10 of 32
+
+warranty period) no later than September 30, 2011. Museum shall retain up to four (4) subsequent one-year options thereafter, each exercisable at Museum's sole discretion by written notice from Museum's Contracting Officer at any time prior to the expiration of the then-extant term. F.2 DELIVERABLES SCHEDULE.
+
+F.2.1 Project deliverables shall be those standard to Contractor's industry and otherwise defined by the COTR over the scope of the project. Any changes to the deliverables schedule provided in Contractor's Proposal or Project Plan shall be mutually determined by the parties over the course of the project. Contractor understands that retention of appropriate turn-around times and maintenance of overall project schedule are material terms of the Contract. F.2.2 Incomplete delivery of any deliverable as of its mutually agreed upon due date shall be unacceptable and considered a breach of this contract. F.2.3 Should Contractor fail to timely deliver any single deliverable, Museum's acceptance thereof shall not constitute a waiver of Museum's rights regarding the delivery date(s) of subsequent deliverable(s) under this Section.
+
+SECTION G - CONTRACT ADMINISTRATION DATA G.1 MUSEUM REPRESENTATIVES. Notwithstanding the Contractor's responsibility for total management during the performance of the contract, the administration of the Agreement will require maximum coordination between Museum and Contractor. Museum's designated representatives and points of contact for purposes of this Agreement shall be the Contracting Officer (CO) and the Contracting Officer's Technical Representative (COTR), as follows: G.1.1 CO Responsibilities. The CO has the authority to enter into, administer, and terminate the Agreement. Communications pertaining to contractual administrative matters shall be addressed to the CO. No changes in or deviation from any of the Agreement's provisions, terms, conditions, including without limitation the scope of work, cost, or term provided herein shall be effected without a written modification to the Agreement executed by the CO authorizing such changes. G.1.2 COTR Responsibilities. The Contracting Officer will designate, in writing, an authorized representative(s) to discharge such duties and responsibilities as may be delegated to him. The representative(s) will not have authority to change or alter any of the terms and conditions of the contract. The Contracting officer is the sole authority to make changes in the contract. The contractor will be furnished a copy of the COTR delegation.
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+11 of 32
+
+The COTR will provide technical direction on contract performance. Technical direction includes: (1) direction to the Contractor which assists him in accomplishing the statement of work; and (2) comments on and approval of reports or other deliverables. Technical direction must be within the contract's statement of work. The COTR does not have the authority to issue technical direction which: (1) institutes additional work outside the scope of the contract; (2) constitutes a change; (3) causes an increase or decrease in the estimated cost of the contract; (4) alters the period of performance; (5) changes any of the other express terms or conditions of the contract. Technical direction will be issued in writing by the COTR or confirmed by him/her in writing within five (5) calendar days after verbal issuance. G.1.3 Contractor is advised that any reliance on direction from other than the CO or a COTR acting within the strict limits of the responsibilities as set forth above is undertaken at Contractor's own risk and expense, as such actions do not bind the Museum contractually. All questions concerning the authority of a Museum employee to direct the Contractor contractually should be referred to the CO. G.2 CONTRACTOR REPRESENTATIVES. All Contractor personnel are provided below, specifically identified as "Key Personnel" or else as generally defined to meet the minimum qualifications provided below. (Offerors shall provide this information in their technical proposal, and such information shall be treated as though reproduced below.) G.2.1 General. The following person shall be contracted in the event of award for prompt Agreement notification and administration concerning specifications, schedules, and other necessary Agreement matters: (Name)____________________________________ (Title)____________________________________ (Street Address)____________________________ (City, State, Zip)____________________________ (Telephone & Facsimile No.)__________________ (E-mail address)____________________________ G.2.2 Key Personnel & Subcontractors. Contractor shall include the subcontractor(s) and key personnel to be assigned under this Agreement those persons listed below: (Offerors shall provide this information in their technical proposal, and such list shall be treated as though reproduced below.) NAME LABOR CATEGORIES
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+12 of 32
+
+Contractor shall not remove the Key Personnel assigned to this project without the consent of Museum. Contractor also will not remove such Key Personnel until he/she is replaced with a person/firm of equal or higher qualifications. Contractor shall not enter into any subcontracts other than those identified above for any of the work under this Agreement without obtaining the prior written approval of the CO. G.2.3 Qualifications of Contractor Personnel and Minimum Experience. Contractor shall ensure that staff and/or subcontractors dedicated to this project other than those Key Personnel defined above have the skills and experience level as described in Contractor's Proposal. The service categories provided by the Contractor in performance of this Agreement shall embrace all critical services described in this contract. All Contractor personnel assigned to this Agreement are subject to Museum review in accordance with the provided level of qualifications. Museum shall reserve the right to recommend dismissal of a Contractor's employee or subcontractor whose performance is detrimental to the satisfactory completion of contractual obligations. In addition, Contractor personnel found unacceptable by the Museum at any time shall be removed from performing under this Agreement. The CO shall deliver such notification in writing to the Contractor. G.3 SUBSTITUTION OF REPRESENTATIVES. The parties shall advise one another in writing of any substitution for said representatives. G.4 NOTICES. Any legal notices required hereunder shall be in writing and deemed delivered upon actual receipt of such notice when hand-delivered or sent by certified mail, postage prepaid, return receipt requested, or overnight express courier to the address first set forth above marked to the attention of the signatory of this Agreement for the party, or to such other address or person as a party may designate in writing from time to time. G.5 INVOICES
+
+G.5.1 Invoices shall be submitted monthly. Contractor shall submit invoice(s) to the COTR in accordance with the approved Project Plan or otherwise in a manner consistent with Contractor's Proposal for completed deliverables and services received and accepted by the COTR. Invoices shall be submitted in three originals to the United States Holocaust Memorial Museum, Attn: __________ 100 Raoul Wallenberg Place, SW, Washington, DC 20024-2150. To constitute a proper invoice, the invoices must include the following information and/or attached documentation:
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+13 of 32
+
+Name of Business Concern and invoice date Contract Number or other authorization for performance of service Description, price, and quantity of services delivered or rendered Name, title, phone number, and complete mailing address of responsible official to whom payment is to be sent. G.5.2 Withholding. Museum shall withhold a 10% retainage of the total project price pending satisfactory completion of the Agreement. G.5.3 Nonpayment for Additional Work. Any additional services or services representing a change to work specified herein or as defined in the applicable task order performed by Contractor, either at Contractor's own volition or at the request of an individual other than a duly appointed CO except as may be explicitly authorized in this Agreement are not authorized and will not be paid. Only a duly appointed CO is authorized to change the specifications, terms, and conditions in this Agreement. Any such change shall be through a written amendment(s) or modification(s) to this Agreement issued by the CO. G.6 TASK ORDER PROCEDURE
+
+G.6.1 From time to time, as the need for services covered by the IDIQ portion of this contract arise, Museum may issue to the Contractor(s) a Request for Proposal (RFP) or Statement of Work (SOW), with all the necessary documentation of project requirements, i.e., a reasonably descriptive statement of work for a proposal from the Contractor(s) to perform the required services. G.6.2 The Contractor(s) shall, within fifteen (15) calendar days of receipt of the Task Order requirement, submit a proposal which includes a firm fixed price for all effort and cost (which includes a detailed cost breakdown showing numbers of hours and applicable rates for each utilized labor category listed in this contract and other direct costs), a work plan which includes a detailed description of how the work is to be accomplished, and an estimated time frame for completion (or as otherwise directed). The Museum shall not pay any proposal preparation costs, nor make reimbursements for any of the costs associated with responses to these requests, nor is the Museum obligated to procure or contract for the services. G.6.3 When negotiations take place and agreement has been reached on services to be performed, cost, deliverables, and schedule, the Contractor and the Contracting Officer shall execute a Task Order reflecting all terms agreed upon. The Contractor is hereby notified that until the Task Order is signed by the Contracting Officer work shall not begin. G.6.4 If agreement cannot be reached, neither party will be under any obligation to the other with respect to the services covered by the particular draft Task Order.
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+14 of 32
+
+SECTION H - SPECIAL CONTRACT REQUIREMENTS H.1 CONTRACT TERMS & CONDITIONS. The terms and conditions provided herein and otherwise implicit to federal contracting shall apply to this Contract. H.2 USE OF MUSEUM NAME
+
+H.2.1 Contractor shall not use the name of the Museum in any news release, public announcement, advertisement, or any other form of publicity, or disclose any of the terms of this Agreement to any third party without the prior written consent of the Museum. H.2.2 Contractor shall not use the Museum's name, trademarks, or any other language, pictures, or symbols that could, in the Museum's judgment, imply the Museum's identity or endorsement by the Museum or any of its employees in any (1) written, electronic, or oral advertising or presentation or (2) brochure, newsletter, book, electronic database, or other written material of whatever nature, without the Museum's prior written consent. H.2.3 Inclusion of Section. Contractor shall include the terms of this Section ("Use of Museum Name") in any contracts with other parties providing services related to the performance of this Agreement, such as but not limited to subcontractors. H.3 IDIQ HOURLY CONSULTING SUPPORT. In accordance with Offeror's cited labor categories, Offeror shall provide system developer consulting on an IDIQ basis. The scope shall include but not be limited to pre-deployment analysis, requirements and design specifications, on-site training and general software configuration and implementation support. H.4 TRAVEL AND EXPENSE. Consistent with the support services defined in the RFP, the Contractor must have local support available on-site within 24 working hours. No travel or expense cost will be separately reimbursed. H.5 CCR DATABASE COMPLIANCE
+
+H.5.1 Contractor is responsible, during performance and through final payment, for the accuracy and completeness of the data within the CCR database, and for any liability resulting from the Museum's reliance on inaccurate or incomplete data. To remain registered in the CCR database after the initial registration, Contractor is required to review and update on an annual basis from the date of initial registration or subsequent updates its information in the CCR database to ensure it is current, accurate, and complete. Updating information in CCR does not alter the terms and conditions of this Agreement and is not a substitute for a properly executed contractual document. H.5.2 Contractor shall not change the name or address for electronic funds transfer (EFT) payments or manual payments as appropriate in the CCR record to reflect an assignee for
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+15 of 32
+
+the purpose of assignment of claims. Assignees shall be separately registered in the CCR database. Information provided to the Contractor's CCR record that indicates payments, including those made by EFT, to an ultimate recipient other than that Contractor shall be considered to be incorrect information. H.6 INTERNET PROTOCOL VERSION 6 (IPV6) COMPLIANCE. In the event that Contractor shall be developing, acquiring, and/or producing products and/or systems pursuant to this Agreement that will be connected to a network or that will interface with the World Wide Web, the following provisions shall apply: H.6.1 OMB Memo M-05-22, dated August 2, 2005, requires that all agencies' infrastructure must be using IPv6 and all agency networks must interface with this infrastructure by June 2009. H.6.2 The Website shall be IPv6 compliant and must be able to receive, process, and transmit or forward (as appropriate) IPv6 packets and must be able to interoperate with other systems and protocols in both IPv4 and IPv6 modes of operation. H.6.3 If the product or system shall not be compliant initially, Contractor shall provide a migration path and express commitment to upgrade to IPv6 for all application and product features by June 2009. Any such migration path and commitment shall be included in the Project Cost. In addition, Contractor shall have available contractor/vendor IPv6 technical support for development and Website implementation and fielded Website management. H.7 ELECTRONIC AND INFORMATION TECHNOLOGY ACCESSIBILITY STANDARDS. The Website and its output shall meet the accessibility standards set forth in Section 508 of the Rehabilitation Act and the W3C priority 1, 2, and 3 checkpoints for web content accessibility. Contractor shall document how the Website and its output meet 508 standards and, if applicable, exceptions that have been granted by Museum. Except as may be exempted by the Museum Contracting Officer in writing, the Website shall likewise conform to the Electronic and Information Technology Accessibility Standards (36 CFR 1194). SECTION I - CONTRACT CLAUSES CLAUSES INCORPORATED BY REFERENCE (FAR 52.252-2, FEB 1998, cited verbatim) This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at <www.arnet.gov/far>.
+FAR 52.202-1 FAR 52.203-3 FAR 52.203-5 DEFINITIONS (JUL 2004) (Reference 2.201) GRATUITIES (APR 1984) (Reference 3.202) COVENANT AGAINST CONTINGENT FEES (APR 1984) (Reference 3.404)
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+16 of 32
+
+FAR 52.203-6
+
+RESTRICTIONS ON SUBCONTRACTOR SALES TO THE GOVERNMENT (JUL 1995) (Reference 3.503-2) ANTI-KICKBACK PROCEDURES (JUL 1995) (Reference 3.502-3) CANCELLATION, RESCISSION, AND RECOVERY OF FUNDS FOR ILLEGAL OR IMPROPER ACTIVITY (JAN 1997) (Reference 3.104-9) PRICE OR FEE ADJUSTMENT FOR ILLEGAL OR IMPROPER ACTIVITY (JAN 1997) (Reference 3.104-9) CERTIFICATION AND DISCLOSURE REGARDING PAYMENTS TO INFLUENCE CERTAIN FEDERAL TRANSACTIONS (SEP 2005) LIMITATION ON PAYMENTS TO INFLUENCE CERTAIN FEDERAL TRANSACTIONS (SEP 2005) (Reference 3.808) PRINTED OR COPIED DOUBLE-SIDED ON RECYCLED PAPER (AUG 2000) (Reference 4.303) WOMEN-OWNED BUSINESS (OTHER THAN SMALL BUSINESS) (MAY 1999) (Reference 4.603) PROTECTING THE GOVERNMENT'S INTEREST WHEN SUBCONTRACTING WITH CONTRACTORS DEBARRED, SUSPENDED, OR PROPOSED FOR DEBARMENT (JAN 2005) (Reference 9.409) ORDER OF PRECEDENCE--UNIFORM CONTRACT FORMAT (OCT 1997) (Reference 15.209) PRICE REDUCTION FOR DEFECTIVE COST OR PRICING DATA (OCT 1997) (Reference 15.408) NOTIFICATION OF OWNERSHIP CHANGES (OCT 1997) (Reference 15.408) OPTION TO EXTEND SERVICES (NOV 1999) (Reference 17.208) OPTION TO EXTEND THE TERM OF THE CONTRACT (MAR 2000) (Reference 17.208) NOTICE OF PRICE EVALUATION PREFERENCE FOR HUBZONE SMALL BUSINESS CONCERNS (JUL 2005) (Reference 19.1308)
+
+FAR 52.203-7
+
+FAR 52.203-8
+
+FAR 52.203-10
+
+FAR 52.203-11
+
+FAR 52.203-12
+
+FAR 52.204-4
+
+FAR 52.204-5
+
+FAR 52.209-6
+
+FAR 52.215-8
+
+FAR 52.215-10
+
+FAR 52.215-19
+
+FAR 52.217-8
+
+FAR 52.217-9
+
+FAR 52.219-4
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+17 of 32
+
+FAR 52.219-8
+
+UTILIZATION OF SMALL BUSINESS CONCERNS (MAY 2004) (Reference 19.708) SMALL BUSINESS SUBCONTRACTING PLAN (JUL 2005) (Reference 19.708) NOTICE TO THE GOVERNMENT OF LABOR DISPUTES (FEB 1997) (Reference 22.103-5) CONVICT LABOR (JUN 2003) (Reference 22.202) CONTRACT WORK HOURS AND SAFETY STANDARDS ACT--OVERTIME COMPENSATION (JUL 2005) (Reference 22.305) WALSH-HEALEY PUBLIC CONTRACTS ACT (DEC 1996) (Reference 22.610) PROHIBITION OF SEGREGATED FACILITIES (FEB 1999) (Reference 22.810) AFFIRMATIVE ACTION COMPLIANCE (APR 1984) (Reference 22.810) EQUAL OPPORTUNITY (APR 2002)--ALTERNATE I (FEB 1999) (Reference 22.810) NOTIFICATION OF VISA DENIAL (JUN 2003) (Reference 22.810) EQUAL OPPORTUNITY FOR SPECIAL DISABLED VETERANS, VETERANS OF THE VIETNAM ERA, AND OTHER ELIGIBLE VETERANS (DEC 2001)--ALTERNATE I (DEC 2001) (Reference 22.1310) AFFIRMATIVE ACTION FOR WORKERS WITH DISABILITIES (JUN 1998)--ALTERNATE I (JUN 1998) (Reference 22.1408) EMPLOYMENT REPORTS ON SPECIAL DISABLED VETERANS, VETERANS OF THE VIETNAM ERA, AND OTHER ELIGIBLE VETERANS (DEC 2001) (Reference 22.1310) SERVICE CONTRACT ACT OF 1965, AS AMENDED (JUL 2005) (Reference 22.1006)
+
+FAR 52.219-9
+
+FAR 52.222-1
+
+FAR 52.222-3 FAR 52.222-4
+
+FAR 52.222-20
+
+FAR 52.222-21
+
+FAR 52.222-25
+
+FAR 52.222-26 I
+
+FAR 52.222-29
+
+FAR 52.222-35 I
+
+FAR 52.222-36 I
+
+FAR 52.222-37
+
+FAR 52.222-41
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+18 of 32
+
+FAR 52.222-44
+
+FAIR LABOR STANDARDS ACT AND SERVICE CONTRACT ACT--PRICE ADJUSTMENT (FEB 2002) (Reference 22.1006) COMBATING TRAFFICKING IN PERSONS (APR 2006) (Reference 22.1705) DRUG-FREE WORKPLACE (MAY 2001) (Reference 23.505) TOXIC CHEMICAL RELEASE REPORTING (AUG 2003) (Reference 23.906) PRIVACY ACT NOTIFICATION (APR 1984) (Reference 24.104) PRIVACY ACT (APR 1984) (Reference 24.104) BUY AMERICAN ACT--SUPPLIES (JUN 2003) (Reference 25.1101) RESTRICTIONS ON CERTAIN FOREIGN PURCHASES (FEB 2006) (Reference 25.1103) AUTHORIZATION AND CONSENT (JUL 1995) (Reference 27.201-2) NOTICE AND ASSISTANCE REGARDING PATENT AND COPYRIGHT INFRINGEMENT (AUG 1996) (Reference 27.202-2) PATENT INDEMNITY (APR 1984) (Reference 27.203-1) RIGHTS IN DATA--GENERAL (JUN 1987) (Reference 27.409) RIGHTS IN DATA--EXISTING WORKS (JUN 1987) (Reference 27.409) INSURANCE--WORK ON A GOVERNMENT INSTALLATION (JAN 1997) (Reference 28.310) FEDERAL, STATE, AND LOCAL TAXES (APR 2003) (Reference 29.401-3) PAYMENTS (APR 1984) (Reference 32.111) DISCOUNTS FOR PROMPT PAYMENT (FEB 2002) (Reference 32.111) LIMITATION ON WITHHOLDING OF PAYMENTS (APR 1984)
+
+FAR 52.222-50
+
+FAR 52.223-6 FAR 52.223-14
+
+FAR 52.224-1
+
+FAR 52.224-2 FAR 52.225-1
+
+FAR 52.225-13
+
+FAR 52.227-1
+
+FAR 52.227-2
+
+FAR 52.227-3 FAR 52.227-14
+
+FAR 52.227-18
+
+FAR 52.228-5
+
+FAR 52.229-3
+
+FAR 52.232-1 FAR 52.232-8
+
+FAR 52.232-9
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+19 of 32
+
+(Reference 32.111) FAR 52.232-17 FAR 52.232-23 FAR 52.232-25 FAR 52.232-33 INTEREST (JUN 1996) (Reference 32.617) ASSIGNMENT OF CLAIMS (JAN 1986) (Reference 32.806) PROMPT PAYMENT (OCT 2003) (Reference 32.908) PAYMENT BY ELECTRONIC FUNDS TRANSFER-CENTRAL CONTRACTOR REGISTRATION (OCT 2003) (Reference 32.1110) DISPUTES (JUL 2002) (Reference 33.215) PROTECTION OF GOVERNMENT BUILDINGS, EQUIPMENT, AND VEGETATION (APR 1984) (Reference 37.110) INDEMNIFICATION AND MEDICAL LIABILITY INSURANCE (JAN 1997) (Reference 37.403) PRIVACY OR SECURITY SAFEGUARDS (AUG 1996) (Reference 39.107) BANKRUPTCY (JUL 1995) (Reference 42.903) CHANGES--FIXED-PRICE (AUG 1987)--ALTERNATE I (APR 1984) (Reference 43.205) SUBCONTRACTS (AUG 1998) (Reference 44.204) GOVERNMENT PROPERTY (FIXED-PRICE CONTRACTS) (MAY 2004) (Reference 45.106) WARRANTY OF SUPPLIES OF A NONCOMPLEX NATURE (JUN 2003) (Reference 46.710) LIMITATION OF LIABILITY-- SERVICES (FEB 1997) (Reference 46.805) TERMINATION FOR CONVENIENCE OF THE GOVERNMENT (FIXED-PRICE) (MAY 2004) (Reference 49.502) DEFAULT (FIXED-PRICE SUPPLY AND SERVICE) (APR 1984) (Reference 49.504) SUBCONTRACTS FOR COMMERCIAL ITEMS (FEB 2006) COMPUTER GENERATED FORMS (JAN 1991) (Reference 53.111)
+
+FAR 52.233-1 FAR 52.237-2
+
+FAR 52.237-7
+
+FAR 52.239-1
+
+FAR 52.242-13 FAR 52.243-1 I
+
+FAR 52.244-2 FAR 52.245-2
+
+FAR 52.246-17
+
+FAR 52.246-25
+
+FAR 52.249-2
+
+FAR 52.249-8
+
+FAR 52.244-6 FAR 52.253-1
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+20 of 32
+
+SECTION J - LIST OF ATTACHMENTS J.1 EXHIBIT A - Q&A DOCUMENT/RFP MODIFICATIONS (VIA SF 30)* *anticipated, but not issued as of June 25, 2009 EXHIBIT B - MUSEUM TECHNICAL REFERENCE DOCUMENT EXHIBIT C - HIGH-LEVEL MUSEUM WEBSITE CONTENT INVENTORY
+
+J.2 J.3
+
+SECTION K - REPRESENTATIONS, CERTIFICATIONS AND OTHER STATEMENTS OF OFFERORS ANNUAL REPRESENTATIONS AND CERTIFICATIONS. Offerors certify that they have completed the annual representations and certifications electronically via the Online Representations and Certifications Application (ORCA) website at http://orca.bpn.gov. After reviewing the ORCA database information, Offerors verify by submission of their proposal and incorporation in their proposal by reference as of the date of the proposal that the representations and certifications currently posted electronically have been entered or updated within the last 12 months, are current, accurate, complete, and applicable to this RFP.
+
+SECTION L - REQUEST FOR PROPOSAL INSTRUCTIONS, CONDITIONS, AND NOTICE TO OFFERORS L.1 FAR 52.252-1 SOLICITATION PROVISIONS INCORPORATED BY REFERENCE (FEB 1998, cited verbatim). This solicitation incorporates one or more solicitation provisions by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. The Offeror is cautioned that the listed provisions may include blocks that must be completed by the Offeror and submitted with its quotation or offer. In lieu of submitting the full text of those provisions, the Offeror may identify the provision by paragraph identifier and provide the appropriate information with its quotation or offer. Also, the full text of a solicitation provision may be accessed electronically at this/these address(es): <www.arnet.gov/far>. L.2 FAR 52.215-1 INSTRUCTIONS TO OFFERORS--COMPETITIVE ACQUISITION (JAN 2004) (Reference 15.209) L.3 FAR 52.216-1 TYPE OF CONTRACT (APR 1984) (Reference 16.105). The Government contemplates award of a Firm Fixed Price and indefinite quantity contract resulting from this solicitation. Offerors must submit a firm fixed price business proposal and benchmark rates for optional indefinite deliverables to be considered responsive.
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+21 of 32
+
+L.4 FAR 52.216-25 CONTRACT DEFINITIZATION (OCT 1997, redacted albeit without revision) (b) The anticipated schedule for definitizing this contract is: June 26, 2009 July 31, 2009, 12:00 NOON ET August 14, 2009 August 21, 2009 September 1, 2009 RFP Released Proposals Due Proposal Evaluations Selection Contract Execution Date
+
+L.5 The Offeror's proposal in response to this RFP shall be prepared in accordance with the instructions in this Section L. Offerors whose proposals deviate from these instructions may be disqualified at the discretion of the Museum. L.6 Proposal Submission Required in Electronic Format
+
+L.6.1 The only acceptable evidence for establishing the time of receipt at Museum shall be the USHMM time/date stamp. L.6.2 Offerors shall submit their full proposal (Technical and Business as separate, distinct, and individuated files) in soft (electronic) copy, signed by Offeror's authorized signatory, and addressed to: <Bfalk@ushmm.org> Subject: RFP-9531-09-R-0200 ­ Proposal to Redesign Museum Website (including enterprise-level CMS and search functions) L.6.3 Museum expressly disclaims and neither guarantees nor warrants for e-mail security, the legibility of electronic format(s), and/or the corresponding accuracy of any printed submission to its electronic version. L.6.4 Offeror certifies that all of its electronic submissions have been verified as free of viruses using virus-check software that is standard in the industry and current to the present calendar month and year. L.7 PROPOSAL CONTENT
+
+L.7.1 Technical Proposal. The Technical Proposal should demonstrate that the Offeror clearly understands the objectives of the proposed project and that it has an effective manner in which to accomplish them. The Technical Proposal shall include: L.7.1.1 Past Performance [The Museum has not placed a word or page limit on responses to this section L.7.1.1 et seq., but notes that a bulleted, enumerated, or itemized list consistent with the format provided in the RFP is the preferred means of communication.] Past performance information shall include:
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+22 of 32
+
+(1) A description of three (3) contracts or task orders performed as a prime or major subcontractor in the last five (5) years. The contracts should be relevant (similar in size, complexity and nature) to the service type for which the Offeror is submitting a proposal. Offerors shall demonstrate this characteristic as well as professionalism by providing verifiable evidence of past experience in all Qualification requirements (as provided in FAR 52.246-17, above). Information provided shall include: (a) (b) (c) (d) Contract Number Contract Type (i.e., firm fixed price, time and materials, etc.) Awarded price/cost and final or projected final price/cost Period of Performance (dates of start and completion of work).
+
+(e) A current point of contact in the contracting agency ­ name, address, e-mail, and telephone number). If the work was performed as a subcontractor, also provide the name of the prime contractor and Point of Contact (POC) within the prime contractor organization (name, address, email, and telephone number). (f) Description of work performed and location. Offerors should provide information on problems encountered on the contracts and subcontracts identified, and corrective actions taken to resolve those problems. For contracts which did not/do not meet original cost, schedule or performance requirements provide a brief explanation of the reason(s) for the shortcomings and any corrective actions taken to avoid recurrence. (2) Resumes or similar statement of qualifications of the individuals proposed in key roles in the project, including project lead, functional lead(s), technical lead, etc. (3) A summary of Offeror's general qualifications to meet required qualifications and fulfill the statement of work. Include any other relevant experience and training that demonstrates the ability to perform the work as described. (4) (Relevant) Portfolio Examples: Further to item 1(f) of this section L.7.1.1, above, Offerors should provide examples taken from at least two (2), but no more than five (5) previous web design engagements of: User and/or usability test surveys; Quality assurance test plans; CMS/administration screen GUI layouts and designs; CMS and Search implementations; Wireframing and information architecture; and
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+23 of 32
+
+Visitor-facing GUI and graphic design. (5) Contract Information: List information performed on prime contracts first, followed by those performed on subcontracts in chronological order for either Offeror's last five (5) clients or all work undertaken in the last 18 (eighteen) months (whichever is greater). Offerors shall provide start and end dates (or an indication if project is ongoing as of the date of proposal submission) and a short description (i.e., no more than 75 words in length) for each contract listed. Museum reserves the right to request contract and contact information from Offerors on such contracts during its evaluation process as such is deemed relevant to Museum's due diligence. L.7.1.2 Staffing Plan/Capability. Subfactors that will be evaluated are Key Personnel and Subcontractors (if applicable). [The Museum has not placed a word or page limit on responses to this section L.7.1.2 et seq., but notes that a bulleted, enumerated, or itemized list consistent with the format provided in the RFP is the preferred means of communication.] In this section of their respective proposals, Offerors shall: Describe the subcontract management system to be used under this contract if significant subcontracting is contemplated. Particular emphasis should be placed on procedures for source selection and how performance status is determined, assessed, and projected through subcontract completion. Letters of commitment from major subcontractors must be provided. Define who reports to whom, when and in what form. If a joint venture, indicate if these firms have been associated in the past, or if it is contemplated for this project only. Large Business Firms selected for award shall be required to submit an acceptable Small Business Subcontract Plan, upon request from the Contracting Officer. Provide a list of personnel designated as "Key" in the performance of this contract. Key personnel may include subcontractors, subject matter experts, and consultants. Provide a description of the proposed organization and responsibilities of the key personnel, including name, title, organization, full or part-time, and whether they are a salaried employee of the organization, current or planned employee, subcontractor, or consultant. (See Section G.2."Key Personnel." Minimum qualifications of projected key personnel are listed in C.1, however proposed key personnel and project staffing are not limited to these categories or qualifications.) Submit resumes for key personnel which demonstrate their level of competency necessary to successfully complete the work in Section C. Resumes should be formatted as follows: 1. Name and title
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+24 of 32
+
+2.
+
+A brief description of proposed duties and responsibilities of the person for this contract and how the individual fits into the overall organization. Relevant work experience for the responsibilities described in (2) above demonstrated by: Employment history, present and previous employers: dates of employment, job title(s) and description of the specific duties for each position. Education including educational institutions attended, dates, and degrees or certificates obtained. Professional awards or association related to the current position Training related to current position and experience, especially in mature and emerging technologies. Do not include information that is not relevant to the person's designated role in this project.
+
+3.
+
+4.
+
+5. 6.
+
+L.7.1.3
+
+Creative/Technical Brief. This shall consist of the following components: (1) Understanding of the Requirements - Offerors shall affirm their intent to completely fulfill all stated project requirements, noting and justifying exceptions where relevant. Offerors may use or reference to the narrative description(s) below where necessary for clarification [as concise as possible and in a manner consistent with Museum's stated requirements, excluding illustrations which shall not count against the page limit, max. 1 page and 200 words]; (2) Description of Proposed Solution - A narrative description of the vendor's proposed solution [as concise as possible and in a manner consistent with Museum's stated requirements, excluding illustrations which shall not count against the page limit, max. 10 pages and 2,200 words]; (3) Manual, Website Documentation, and Training - A narrative description of Offeror's recommended training package for end-users and system administrators (if necessary), including alternative proposals, if any [as concise as possible, excluding illustrations which shall not count against the page limit, max. 1 page and 200 words]; (4) Service/Support Package - A narrative description of Offeror's annual recommended service/support package for end-users and system administrators, including respective response-time commitments, to cover (i) the first twelve months following completed delivery of the Website and (ii) each of the first four (4) option years thereafter. The description shall include alternative proposals, if any [as concise as possible, excluding illustrations which shall not count against the page limit, max. 1 page and 200 words];
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+25 of 32
+
+(5) Website Installation Schedule ­ Offerors shall include proposed delivery dates for all milestone deliverables and the critical path for overall Website development consistent with completion of installation, systems integration, testing, and full conflict resolution with go-live date no later than September 30, 2011 [no page limit, but note Museum's preference for proposed schedules to be submitted in the form of a table, chart, or index]; and (6) A quality assurance plan by which the quality of services and operationality of the Website will be observed and assured throughout the term of the contract. Offerors shall also propose means of promoting Museum staff use of the implemented Website (identifying successful past use cases, where relevant) [as concise as possible, max. 2 page and 400 words]. L.7.1.4 Requirements Matrices. See also RFP section M.3.2. Offerors shall recommend a strategy and corresponding technical solution for CMS and Search respectively as part of their proposals. Offerors shall separately complete and return each of the respectively attached matrices for the proposed CMS and Search software, certifying by checkbox that their proposal includes, addresses, and/or confirms (as applicable) all stated requirements in the RFP and indicating the page/paragraph location in their proposals in which such requirements are addressed. Please note that Museum has also included a proposal submission checklist for Offerors' (and Museum's) convenience, but this is advisory and not mandatory. L.7.2 Business Proposal. The following shall be provided within Offeror's Business Proposal: L.7.2.1 Cost. Fully itemized as fully-loaded, firm, fixed price billables in a manner appropriate to Offeror's proposed solution. See also sections L.3 and B.3 of this RFP; L.7.2.2 Proposed Payment Schedule. Consistent with RFP section G.5 ("Invoices") above, this shall be Offeror's proposed payment schedule; L.7.2.3 Contract Administration Information. Offerors shall complete all applicable blanks on the cover and throughout section G of this RFP and by signature to the RFP cover affirm all acceptable contractual language; L.7.2.4 Contract Exceptions. Offerors shall here specify their exception(s) (if any) to terms and conditions contained in this RFP in each instance citing the applicable section, clause, paragraph number, and page of the solicitation that they address; and L.7.2.5 Assumptions. Offerors shall here specify and explain any assumptions made in preparing their proposals. L.8 FAR 52.204-6 DATA UNIVERSAL NUMBERING SYSTEM (DUNS) NUMBER (OCT 2003) (Reference 4.603) L.9 FAR 52.207-2 NOTICE OF STREAMLINED COMPETITION (MAY 2006) (Reference 7.305)
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+26 of 32
+
+L.10 FAR 52.232-13 NOTICE OF PROGRESS PAYMENTS (APR 1984) (Reference 32.502-3) L.11 FAR 52.233-2 SERVICE OF PROTEST (AUG 1996, cited verbatim) Protests, as defined in section 33.101 of the Federal Acquisition Regulation, that are filed directly with an agency, and copies of any protests that are filed with the General Accounting Office (GAO), shall be served on the Contracting Officer (addressed as provided herein) by obtaining written and dated acknowledgment of receipt. The copy of any protest shall be received in the office designated above within one day of filing a protest with the GAO. SECTION M - EVALUATION FACTORS FOR AWARD M.1 EVALUATION FACTORS FOR AWARD. Museum shall evaluate all proposals by applying the following criteria against the information requested in section L of this RFP. Each member of the evaluation panel shall be accorded equal weight in his or her rating of proposals. Museum shall award the Agreement to the Offeror whose proposal best meets the requirements identified in this RFP and presents the best overall value to the Museum. Museum reserves the right in all cases to be the sole judge determining whether an Offeror meets the evaluation criteria. M.1.1 Technical Proposal. Selection of a most qualified vendor for this project depends on several criteria that will be carefully evaluated by the Museum's Technical Evaluation Review Panel. Museum considers vendors who have CMS and search engine integration and implementation, information architecture development, usability testing, and graphic user interface design among their core competencies are critical to the success of this project. Too, the Offeror should demonstrate experience in creating and developing websites that employ proven techniques, methodologies, and best practice for web interaction/usability, and demostrate the ability to work collaboratively with the Museum. The level of experience as evidenced by successful implementation of projects in other similar or larger agencies is one of the crucial elements of selection criteria. It is essential that the vendor has the ability to work well in a knowledge transfer mode in addition to actual hands on work. Therefore, Museum's evaluation of proposals shall conform to the factors published in Section M of the RFP and may or may not invoke summative ratings based on the following sets of questions. In general and by way of reference but without constraining or otherwise affecting Museum's reasonable exercise of discretion in evaluating proposals, Museum evaluators may ask: How successful (from a functional standpoint) were Offeror's prior (a) CMS, (b) search engine, and (c) overall redesign implementation for similar or larger agencies as evidenced through Offeror-provided case studies and references? As evidenced by the recommended implementation for Museum as described in Offeror's proposed approach?
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+27 of 32
+
+Were/will operational conflicts and implementation bugs (be) quickly resolved? Was/will implementation (be) managed within expected budget/schedule? How successful (from a user/website visitor standpoint) were Offeror's prior (a) CMS, (b) search engine, and (c) overall redesign implementation implementation for similar or larger agencies as evidenced through Offeror-provided case studies and references? As evidenced by the recommended implementation for Museum as described in Offeror's proposed approach? Were/will transitions (be) smooth? How were/will website usability (be) streamlined, online visitorship (be) increased (in terms of breadth/number of hits and depth/length of stay and engagement), and online participation (be) maximized (in terms of both breadth/number of hits and depth/length of stay and engagement)? How successful were Offeror's prior knowledge-transfer/training efforts as evidenced through Offeror-provided case studies and references? AND/OR How successful does Offeror's proposed approach as described appear to be? Does past performance/described approach provide adequate information to trainees in a way likely to be remembered and/or easily referenced? Does it minimize/address potential culture-shock? Did it/is it likely to allow IT staff to operate autonomously from external sources? Did it/is it likely to allow users able to operate autonomously of IT staff and external consultants? What's my overall confidence with this Offeror AND/OR with this Offeror's proposed approach? Does Offeror understand Museum's requirements? Does Offeror evince the knowledge, experience, and ability to lead Museum to a best-industry-practice approach with its proposed web software and redesign that is also a best fit for Museum? Other comments for TERP discussion/consideration? M.1.1.1 Past Performance/Capability - Museum will evaluate Offerors on performance under existing and prior contracts/subcontracts for work similar in nature and complexity to this requirement using the following specific factors. Museum will focus on information that demonstrates quality of performance relative to the size and complexity of the procurement under consideration. To this extent, Museum may use information obtained from the Offeror, from calling references, and from sources other than those provided by the Offeror. Too, each Offeror's past performance will be evaluated for the quality of services, customer satisfaction, timeliness of performance, business relations, and cost control. The successful Offeror will have demonstrated the following capabilities (note that these subcriteria are not necessarily prioritized in the order in which they appear: miminum FIVE (5) years' experience deploying CMS's and search technologies using best-of-breed proprietary enterprise solutions as well as open-source (at least for CMS) solutions; minimum FIVE (5) implementations of enterprise-level CMS technology, of which at least TWO (2) were successfully completed implementations of the CMS technology proposed for Museum's redesign; minimum TWO (2) successfully completed implementations/website integrations of enterprise-level search engine technology, of which at least ONE (1) was of the search engine technology proposed for Museum's redesign;
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+28 of 32
+
+successfully completed implementations/deployments of other technology(ies) Offeror is proposing; proposed key personnel who have worked together on at least three (3) similar solutions to the one solicited pursuant to this RFP, including without limitation design, engineering, and implementation staff with at least five (5) years' experience deploying CMS and search technologies in websites of similar or greater depth and complexity to that anticipated for Museum; proposed key personnel with expertise analyzing and improving usability of websites and online applications similar to the Museum's; proposed key personnel with demonstrated skill and experience in: developing and evaluating federal and/or major museum websites and their respective online products and services; utilizing research-based web design and usability guidelines, developing comprehensive usability test plans; developing comprehensive, practical usability testing reports; setting and attaining usability performance metrics; and working with clients and others not familiar with usability engineering; creativity, knowledge, and experience in/with user experience design and information architecture, building W3C-compliant HTML templates and CSS stylesheets for large/complex web initiatives, and thoughtfulness about the relationship of content to structural design; creativity, knowledge, and experience in graphic design, interaction/user interface design, and implementation for web and multimedia; extensive experience applying rigorous, research-based methodology to user experience strategy, interaction design, information architecture, and usability testing (Offerors must clearly identify their areas of technical expertise and past experience); skills and expertise in quality assurance testing and reporting; excellent skills in writing and editing of human factors/usability publications, plans, and reports; completion of projects of this type on budget and on schedule; viability (an assessment which may be based in part on independent assessment sources used regularly by Museum); and overall satisfaction/success of prior performance (e.g., quality of services, customer satisfaction, timeliness of performance, business relations, and cost control). M.1.1.2 Creative/Technical Brief - Museum will assess Offerors' technical and conceptual engagement as evidenced by Offeror's proposed solution using the following specific factors, which should reflect: completeness in meeting all the Museum's requirements and specifications as stated herein; creativity, knowledge of user experience design and information architecture, and thoughtfulness about the relationship of content to structural design; creativity, knowledge, and experience in graphic design, interaction/user interface design, and implementation for web and multimedia;
+USHMM RFP-9531-09-R-0200 [Web Redesign] 29 of 32
+
+expert knowledge and experience in the integration and deployment of content management and search solutions for the Web; applicability to Museum's target vision for the Website as described throughout this RFP and appropriateness to content; responsiveness and realism of Offeror's proposed schedule/implementation plan; and Offeror's commitment and capacity to start this project within 60 calendar days of submission of the proposal and keep the project adequately staffed until its completion. M.1.2 Pricing. Museum shall evaluate pricing consistently with inverse correlation to cost such that the lowest price yields the highest rating. Since the evaluation of cost will represent a portion of the total evaluation, it is possible that an Offeror might not be selected for award because of unreasonable, unrealistic, incomplete, inaccurate, or noncurrent cost proposal information. Offerors are solely responsible for assuring that pricing information is provided in a manner that allows Museum to make such a determination. Each Offeror's cost information will be evaluated for realism, completeness, and reasonableness to determine the Offeror's understanding of the work and ability to perform the contract. Realism is evaluated by assessing the compatibility of proposed costs with the technical/management/qualifications of the personnel. Completeness is evaluated by assessing the level of detail the Offeror provides in cost information for all requirements. Reasonableness is evaluated by assessing the acceptability of the Offeror's methodology used in developing the cost. The existence of adequate cost competition may support a determination of reasonableness. This includes both original submissions and final proposal revisions (if requested). M.2 WEIGHT. Subject to the caveats in section M.3, below, past performance/company profile and pricing are considered equally important and shall be given equivalent weight; the Offeror's description of technical/creative approach, while important, shall nonetheless receive less overall emphasis. Subcriteria are generally treated as equivalent and not necessarily prioritized in the order in which they appear. Museum intends, but is not obligated, to use a qualitative evaluation method for its review. M.3 COMPLETE INFORMATION & CONTRACTUAL COMPLIANCE.
+
+M.3.1 Failure to furnish complete information requested in the RFP may cause the Offeror to be deemed unacceptable and be removed from further consideration. M.3.2 Offers are solicited on an "all or none" basis and failure to submit offers for all line items listed may be cause for rejection of the offer. M.3.3 Offerors are hereby on notice that substantive and material and/or multitudinous exceptions taken to Museum's proposed contract language may result in a reduced Business Proposal rating.
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+30 of 32
+
+RFP-9531-09-R-0200
+
+VOLUNTARY OFFEROR PROPOSAL CHECKLIST
+MET? (CONFIRM WITH 'X')
+
+RFP Location L.7.1.1 L.7.1.1(1) L.7.1.1(2) L.7.1.1(3) L.7.1.1(4) L.7.1.1(5) L.7.1.2 M.1.1.1
+
+RFP-9531-09-R-0200 OFFEROR CHECKLIST Past Performance Description of 3 relevant projects undertaken within the last 5 years (a through f) Resumes of key personnel Summary of corporate qualifications Relevant portfolio examples Chronological list/info of contracts performed (for references) Staffing Plan/Capability (note each of 4 bullets) Past Performance/Capability Requirements (may/may not be repeats of above) miminum FIVE (5) years' experience deploying CMS's and search technologies using best-of-breed proprietary enterprise solutions as well as open-source (at least for CMS) solutions; minimum FIVE (5) implementations of enterprise-level CMS technology, of which at least TWO (2) were successfully completed implementations of the CMS technology proposed for Museum's redesign; minimum TWO (2) successfully completed implementations/website integrations of enterprise-level search engine technology, of which at least ONE (1) was of the search engine technology proposed for Museum's redesign; successfully completed implementations/deployments of other technology(ies) Offeror is proposing; proposed key personnel who have worked together on at least three (3) similar solutions to the one solicited pursuant to this RFP, including without limitation design, engineering, proposed key personnel with expertise analyzing and improving usability of websites and online applications similar to the Museum's; proposed key personnel with demonstrated skill and experience in: developing and evaluating federal and/or major museum websites and their respective online products and services; utilizing research-based web design and usability guidelines, developing creativity, knowledge, and experience in/with user experience design and information architecture, building W3C-compliant HTML templates and CSS stylesheets for creativity, knowledge, and experience in graphic design, interaction/user interface design, and implementation for web and multimedia; extensive experience applying rigorous, research-based methodology to user experience strategy, interaction design, information architecture, and usability testing (Offerors must clearly identify their areas of technical expertise and past experience); skills and expertise in quality assurance testing and reporting; excellent skills in writing and editing of human factors/usability publications, plans, and reports; completion of projects of this type on budget and on schedule; viability (an assessment which may be based in part on independent assessment sources used regularly by Museum); and overall satisfaction/success of prior performance (e.g., quality of services, customer satisfaction, timeliness of performance, business relations, and cost control). Creative/Technical Brief Understanding of the requirements Description of proposed solution Manual, product documentation, and training Service/Support package Website installation schedule (includes all deliverables for CMS & Search) Quality assurance plan Requirements matrices (CMS & Search) Business Proposal (to be submitted as separate file(s) from Past Perf/Creative) SF33 cover completed and signed Cost Proposed Payment Schedule Contract Administration Information Contract Exceptions Assumptions
+
+PROPOSAL LOCATION WHERE THIS IS TO BE FOUND (PAGE ##)/OPTIONAL COMMENT(S)
+
+M.1.1.1, bullet 1
+
+M.1.1.1, bullet 2
+
+M.1.1.1, bullet 3 M.1.1.1, bullet 4 M.1.1.1, bullet 5 M.1.1.1, bullet 6
+
+M.1.1.1, bullet 7 M.1.1.1, bullet 8 M.1.1.1, bullet 9
+
+M.1.1.1, bullet 10 M.1.1.1, bullet 11 M.1.1.1, bullet 12 M.1.1.1, bullet 13 M.1.1.1, bullet 14 M.1.1.1, bullet 15 L.7.1.3 L.7.1.3(1) L.7.1.3(2) L.7.1.3(3) L.7.1.3(4) L.7.1.3(5) L.7.1.3(6) L.7.1.4 L.7.2 SF1444 L.7.2.1 L.7.2.2 L.7.2.3 L.7.2.4 L.7.2.5
+
+Completed SF33 [location in response only, don't reiterate the amount here!]
+
+USHMM RFP-9531-09-R-0200
+
+CMS REQUIREMENTS MATRIX
+MET? (CONFIRM WITH 'X')
+
+RFP-9531-09-R-0200 REQUIREMENT Functional and Content Requirements of CMS GUI is user-friendly, accessible, and intuitive for all users, novice to pro GUI is customizable based on user rights and roles separate administration module for the creation and maintenance of web content content-entry interfaces of admin. module are simple, intuitive, and able to be distinguished and preset by user roles/profiles able to manage multiple web properties, specifically including: www.ushmm.org worldiswitness.org secure.ushmm.org resources.ushmm.org online.ushmm.org blogs.ushmm.org podcasts.ushmm.org r3program.ushmm.org can integrate with search engine technologies so that managed content is easily indexed and findable by both commercial and Museum-specific search mechanisms supports Museum's web production lifecycle with features for creating and customizing workflows for content editing, review, revision, approval, and publishing administrative module is designed to accomodate at least fifty (50) simultaneous active users able to create pages and write content using simple, modular, and versatile (highly configurable) WYSIWYG features allows formation of page "templates" to facilitate updates and publication of evergreen content provides multilingual support for content distribution in multiple languages including English, Arabic, Farsi, Urdu, Chinese, Italian, Russian, Greek, French, Turkish, Portuguese (BR), Indonesian, and Korean. allows version control for all content items, including HTML/XHTML, CSS, images, JavaScript, Flash, and other digital assets used in the creation, presentation, and display of the website allows for the creation and capture of metadata for both SEO and administrative purposes allows administrators to set dates and times for automated content publication includes detailed documentation/manual and usage training for key staff has administrative reporting capability that integrates or is designed to be integrated with web analytics software (like WebTrends) Technical Requirements of CMS compatible with Museum's technical environment (as described in attachment J.1) publishes a GUI fully functional on both Mac and PC platforms and standard web browsers support the re-use of content elements through data standards (such as XML) CMS supports metadata creation and offers tagging capabilities based on thesauri or other controlled vocabularies must be integrated with the Museum's digital asset management (Interface Multimedia's iDAM) software to assure seamless delivery and management of digital assets via DAM will be compatible with and fully-integrated (by Offeror) with Offeror's proposed search engine technology(ies) to assure functionality stated above, in a nonproprietary and transparent manner that can be maintained in out years either in-house by Museum or by a third party vendor compatable with content delivery networks data storage relies on a non-proprietary format and data structure template architecture allows content to be separated from presentation provides and supports RSS and other means of syndicating content support entry and display of UNICODE-enabled fonts include APIs and/or SDK for integration with/development of third-party or custom web apps GUI is compliant with Section 508 and W3C accessibility guidelines
+
+PROPOSAL LOCATION WHERE THIS IS TO BE FOUND (PAGE ##)/OPTIONAL COMMENT(S)
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+31 of 32
+
+RFP-9531-09-R-0200
+
+SEARCH REQUIREMENTS MATRIX
+MET? (CONFIRM PROPOSAL LOCATION WHERE THIS IS TO BE FOUND (PAGE ##)/OPTIONAL WITH 'X') COMMENT(S)
+
+RFP-9531-09-R-0200 REQUIREMENT Functional and Content Requirements of Search permits searches by theme/topic (Museum-defined and/or user-defined folksonomies) permits searches by (Museum-defined) category permits searches by format/media type permits searches by date (of assets and/or content items alike) displays searches by relevancy permits site visitors to customize their results in a manner that is unique and personalized to the visitor permits site visitors to refine their results (i.e., 'drill down' within a result set) Technical Requirements of Search implements a single search capability that accesses all Museum databases, repositories, and assets described in RFP attachment, including without limitation relational databases, flat files, and file systems implements a single search capability that accesses file types and formats, including without limitation GIF, JPEG, XML, TIFF, MARC, AVI, MPEG, Real Media (RM), Windows Media (WMV), PDF, X/HTML, TXT, Word (DOC, DOCX, etc.), and Excel (XLS, XLSX, etc.).
+
+USHMM RFP-9531-09-R-0200 [Web Redesign]
+
+32 of 32
+
+

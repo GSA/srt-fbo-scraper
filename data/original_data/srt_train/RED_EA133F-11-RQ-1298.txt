@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FFirstSetQuestionsRFQ111298SoftwareDevelopment.docx%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us"/><script type="text/javascript">url="http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FFirstSetQuestionsRFQ111298SoftwareDevelopment.docx%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>1. "Development of a computer application (IOS and Android platforms) integrating GPS and photographs using a tablet to enter data at-sea".
+
+Q1: Does integration of GPS and photographs mean associating a photo taken at a point in time with the GPS position at that time, or does this imply a more complex relationship between image and GPS data such as deriving a GPS position from features in a photograph?
+
+A1: Photographs only need to be associated with the time and GPS coordinates. There is no complex relationship
+
+2. " Development of data transfer protocol between at-sea observer data application and central MS Access/Oracle database using VMS or satellite email"
+
+Q2: Are there any specifications available that would help scope this particular task? 
+
+A2: We are currently planning to use Wideye Sabre I BGAN satellite terminals that can be connected to a tablet by bluetooth.
+
+
+Q3: Is the scope here to create the email backbone itself or to use existing infrastructure?
+
+A3: It is possible that existing infrastructure could be used (Ipad email client or Gmail on Android), but this might be too clumsy. An email backbone would be preferred within the application.
+
+
+Q4: Is the Access/Oracle database already written, or will this need to be developed?
+
+A4: There are currently Access databases in place. An Oracle database is being written by another contractor to replace the Access database.
+
+3. Generation of daily data summary for real-time quota monitoring capabilities
+
+Q5: Is this data summary to be submitted to the backend database or is it to be presented to the user on the tablet?
+
+A5: The answer to this question is dependent on the outcome of Q3. Presumably the user would have to receive the data to attach it and send it using the existing email infrastructure.
+
+
+5. "Synchronization of primary and foreign keys between systems"
+
+Q6: Which systems are to be synchronized?  Does this refer to the tablet and the central database?
+
+.
+
+A6: The data entered on the tablet is added to the existing central Access (or later Oracle) databases.
+

@@ -1,0 +1,1286 @@
+Performance Work Statement AFWA Global Lightning Data
+
+1.0 Description of requirement. Air Force Weather Agency (AFWA), Offutt Air Force Base, Nebraska requires delivery of global lightning observation data. 2.0 Scope of Requirement. AFWA has the following requirements for streaming lightning data: 2.0.1 Cloud to Ground (CG) and Cloud to Cloud (CF) lightning data. The United States Air Force has a base requirement for global lightning data that includes 26 zones (see Table 1). 2.0.2 AFWA requires that the vendor's lightning detection network operate and transmit data to AFWA 24 hours a day, seven days a week. Any failure of either the detection network or of the vendor's communication system that results in a loss of availability is defined as a system outage. Network availability is required to be at 98% or better in each zone. 2.0.3 AFWA requires that the vendor provide uninterrupted data flow, communications and data distribution. 2.0.4 AFWA requires the vendor to verify that lightning data it provides to the United States Air Force meets AF lightning data technical requirements. 2.0.5 AFWA requires the ability to freely distribute government-generated products that contain lightning data to any participating Federal agency, contractors supporting the agency on an active contract, and to cooperating state and local government agencies at no additional cost, as long as the vendor's raw data is not available to unauthorized users. 2.0.6 AFWA requires the ability to use the Internet to distribute lighting data and products to authorized users. Authorized users means any person/organization that the government has authorized to receive the data in question to include other government's agencies (for example, UK meteorological organizations), other military agencies (for example, US Navy, US Army), and research facilities to whom AFWA provides data. These data and products will be distributed in a secure manner to prevent unauthorized access; and the data will not be released outside of the authorized AFWA user community. Data products derived from the vendor's raw data will not allow the user community to view the raw data on which the product is based (ex. AFWA's JAAWIN will display where the lightning strike is located on a map, but anyone viewing that map will not be able to interrogate the plot point for the raw data used to make the map display).
+
+Page 1 of 22
+
+3.0
+
+Delivery Requirements (CDRLS)
+
+3.0.1 The Contractor shall deliver the lightning data in a streaming ASCII text or XML format. 3.0.2 Data Stream. 3.0.2.1 The data stream shall include date-time (UTC) to thousands of a second, latitude (deg) and longitude (deg) (to thousandths), signal strength (ka), polarity, multiplicity (#strokes/flash), and the number of sensors used to collect the data. 3.0.2.2 The data stream shall be provided in Stroke format. 3.0.2.3 Transition Plan--KTR shall provide a plan to demonstrate its ability to integrate the contractors's data feed with AFWA's software to ensure a seamless transition. The data stream shall be flowing within 30 days of contract award. 3.0.3 The data shall be encrypted as it is transmitted to prevent unauthorized receivers from using the data. 3.0.4 The data shall be delivered to AFWA through the internet as the primary transmission method. (CDRL A001) 3.0.5 The data shall be delivered to AFWA in four data feeds as follows: production primary, production backup, development primary, development backup. 3.0.6 The data shall be delivered to AFWA 24 hours a day, seven days a week. The Contractor shall notify AFWA when the data flow has been compromised (ex. sensors are down causing gaps in the data, network issues that prevent the delivery of data, etc). 3.0.7 Outages 3.0.7.1 Network availability shall be 98% or higher in each month of the period of performance. The network shall be down no more than 12 hours in any month. The calculations used are based on an average 28 day month and are listed below. 28 days/mon * 24 hours/day = 672 hours/month. 660 hours network up / 672 hours/mo = 98% uptime 672 hours/mo ­ 660 hours uptime = 12 hours downtime/month. 3.0.7.2 Data availability shall be 98% or higher in each month of the period of performance for each data zone. The data shall be unavailable no more than 12 hours in any month for any data zone. The calculations Page 2 of 22
+
+used are based on an average 28 day month and are listed below. 28 days/mon * 24 hours/day = 672 hours/month. 660 hours data flowing / 672 hours/mo = 98% uptime 672 hours/mo ­ 660 data flowing = 12 hours data unavailable/month. Data availability is only affected if there are not enough sensors to cover a given zone. Having one sensor unable to provide data in a given zone will not have an impact, if there are other sensors that adequately cover the zone and provide the data for that zone. 3.0.8 Help Desk The contractor shall provide troubleshooting/technical support for the global lightning data feeds. The Help Desk shall field service requests from operational squadrons made through the Customer Support Center (CSC) located at Offutt Air Force Base. The Help Desk shall respond to all service calls 365 days a year, 7 days a week, 24 hours a day and shall make an initial response to all service requests within ten (10) hours of receiving the service call from the CSC. The number of in-bound calls made for technical assistance will be unlimited. 4.0 Government Furnished Equipment and Information (GFE/GFI)
+
+4.0.1 Government furnished equipment and information shall not be provided. 4.0.2 Contractor performance will take place at contractor facility. 5.0 Services Summary
+
+PERFORMANCE OBJECTIVE Data Delivery Format Data Stream Elements Data Stream Delivery Type Encryption Data Delivery Method Multiple Data Feeds 24/7 Data
+
+PWS REFERENCE 3.0.1 3.0.2 3.0.2 3.0.3 3.0.4 3.0.5 3.0.6
+
+PERFORMANCE STANDARD Streaming ASCII text or XML format Required data elements in the data stream. Required Stroke data. Required for all data feeds. Provide data via the internet for all feeds. Provide four data feeds Provide the minimum data requirements specified in tables three thru five on a 24/7 basis Provide notification of issues causing the data feed to be compromised. Network uptime: 98% Data Availability: 98% Customer Complaint
+
+Service Issues Network Availability Data Availability by Zone Help Desk
+
+3.0.6 3.0.7 3.0.7 3.0.8
+
+Page 3 of 22
+
+Customer Feedback
+
+Table 1. Geographic Zones for Lightning Coverage. Zones 1-15 are defined as all land area and the adjacent marine areas around the land area within each zone. Zones 16-26 are defined as the marine area within each zone. There is very little land, aside from some small islands in these zones. See Appendix A for maps of each zone. ZONE Zone 1A Zone 1B Zone 2 Zone 3 Zone 4 Zone 5 Zone 6 Zone 7 Zone 8 Zone 9 Zone 10 Zone 11 Zone 12 Zone 13 Zone 14 Zone 15 Zone 16 Zone 17 Zone 18 Zone 19 Zone 20 Zone 21 Zone 22 Zone 23 Zone 24 Zone 25 Zone 26 AREA 48 Contiguous States and the Virgin Islands Puerto Rico Alaska Hawaii Canada Mexico Central and South America Europe Northern Asia Southern Asia Middle East Africa East Indies and the Philippines Australia and New Zealand Greenland and Iceland Antarctica Gulf of Mexico, Caribbean Sea and West Indies North Atlantic Ocean South Atlantic Ocean Mediterranean and Black Seas Northeast Pacific Ocean Northwest Pacific Ocean Southeast Pacific Ocean Southwest Pacific Ocean Indian Ocean Arctic Ocean Southern Ocean
+
+Page 4 of 22
+
+Table 2. Minimum Technical Specifications for CG Lightning LA, TA, Data Delivery Time, Probability of Detection (DE), False Detection, and False Flash Type Id by Geographic Zone. Zone Horizontal Location Accuracy Timing Accuracy Data Delivery Time Probability of Detection Probability of False Detection No more than 1% Probability of False Flash Type Id No more than 1%
+
+Zone 1A
+
+500 meters or better for 90% of the area within the zone
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 1B
+
+0.001 seconds or better
+
+Zone 2
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 3
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 4
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 5
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Total time from the time the flash occurs to the time that flash is reported shall be one (1) minute or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be two (2) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be two (2) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be two (2) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be two (2) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes
+
+90% or more of all flashes within the zone shall be reported 70% or more of all flashes within the zone shall be reported 70% or more of all flashes within the zone shall be reported 70% or more of all flashes within the zone shall be reported 70% or more of all flashes within the zone shall be reported 70% or more of all flashes within the zone shall be reported
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+Page 5 of 22
+
+Zone 6
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 7
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 8
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 9
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 10
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 11
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 12
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 13
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Total time from the time the flash occurs to the time that flash is reported shall be two (2) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be two (2) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be two (2) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be two (2) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three
+
+70% or more of all flashes within the zone shall be reported 70% or more of all flashes within the zone shall be reported 70% or more of all flashes within the zone shall be reported 70% or more of all flashes within the zone shall be reported 70% or more of all flashes within the zone shall be reported 70% or more of all flashes within the zone shall be reported 70% or more of all flashes within the zone shall be reported 50% or more of all flashes within the zone shall be reported
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+Page 6 of 22
+
+Zone 14
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 15
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 16
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 17
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 18
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 19
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 20
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 21
+
+10 km or better for
+
+0.001 seconds
+
+(3) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes Total time from the time the
+
+70% or more of all flashes within the zone shall be reported 10% or more of all flashes within the zone shall be reported 70% or more of all flashes within the zone shall be reported 70% or more of all flashes within the zone shall be reported 50% or more of all flashes within the zone shall be reported 70% or more of all flashes within the zone shall be reported 50% or more of all flashes within the zone shall be reported 70% or more of all flashes
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more
+
+No more
+
+Page 7 of 22
+
+70% of the land area within the zone
+
+or better
+
+Zone 22
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 23
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 24
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 25
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+Zone 26
+
+10 km or better for 70% of the land area within the zone
+
+0.001 seconds or better
+
+flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes
+
+within the zone shall be reported 50% or more of all flashes within the zone shall be reported 50% or more of all flashes within the zone shall be reported 50% or more of all flashes within the zone shall be reported 70% or more of all flashes within the zone shall be reported 10% or more of all flashes within the zone shall be reported
+
+than 1%
+
+than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+No more than 1%
+
+No more than 5%
+
+Table 3. Minimum Technical Specifications for Lightning Polarity, Estimated Peak Current, and Strokes/Flash by Geographic Zone for CG. Zones 1-26 Report for all CG flashes Page 8 of 22
+
+Polarity
+
+Estimated Peak Current Strokes per Flash
+
+Report for all CG flashes Report for all CG flashes
+
+Table 4. Minimum Technical Specifications for Cloud Flash (CF) Data by Location. Location Horizontal Location Accuracy 10 km or better for 90% of the area within the zone Timing Accuracy
+0.001 seconds or better
+
+Data Delivery Time
+Total time from the time the flash occurs to the time that flash is reported shall be one (1) minute or less for 99% of all flashes Total time from the time the flash occurs to the time that flash is reported shall be three (3) minutes or less for 99% of all flashes
+
+Probability of Detection 15% or more of all flashes within the zone shall be reported
+
+Zone 1A
+
+Probability of False Detection No more than 1%
+
+Zones 1B ­ 26
+
+10 km or better for 70% of the area within the zone
+
+0.001 seconds or better
+
+10% or more of all flashes within the zone shall be reported
+
+No more than 1%
+
+Page 9 of 22
+
+Appendix A: Coverage Area Maps by zone from Federal Lightning Data Requirements (FCMR27-2008)
+
+Page 10 of 22
+
+Page 11 of 22
+
+Page 12 of 22
+
+Page 13 of 22
+
+Page 14 of 22
+
+Page 15 of 22
+
+Page 16 of 22
+
+Page 17 of 22
+
+Page 18 of 22
+
+Page 19 of 22
+
+Page 20 of 22
+
+Page 21 of 22
+
+Page 22 of 22
+
+WD 05-2325 (Rev.-11) was first posted on www.wdol.gov on 06/17/2011 ************************************************************************************ REGISTER OF WAGE DETERMINATIONS UNDER | U.S. DEPARTMENT OF LABOR THE SERVICE CONTRACT ACT | EMPLOYMENT STANDARDS ADMINISTRATION By direction of the Secretary of Labor | WAGE AND HOUR DIVISION | WASHINGTON D.C. 20210 | | | | Wage Determination No.: 2005-2325 Diane C. Koplewski Division of | Revision No.: 11 Director Wage Determinations| Date Of Revision: 06/13/2011 _______________________________________|____________________________________________ States: Iowa, Nebraska Area: Iowa Counties of Adams, Buena Vista, Cass, Cherokee, Clay, Crawford, Dickinson, Fremont, Harrison, Ida, Lyon, Mills, Monona, Montgomery, Obrien, Osceola, Page, Plymouth, Pottawattamie, Sac, Shelby, Sioux, Woodbury Nebraska Counties of Burt, Butler, Cass, Cedar, Colfax, Cuming, Dakota, Dixon, Dodge, Douglas, Gage, Johnson, Lancaster, Madison, Nemaha, Otoe, Pawnee, Pierce, Richardson, Sarpy, Saunders, Stanton, Thurston, Washington, Wayne ____________________________________________________________________________________ **Fringe Benefits Required Follow the Occupational Listing** OCCUPATION CODE - TITLE FOOTNOTE RATE 01000 - Administrative Support And Clerical Occupations 01011 - Accounting Clerk I 13.31 01012 - Accounting Clerk II 14.94 01013 - Accounting Clerk III 18.73 01020 - Administrative Assistant 20.14 01040 - Court Reporter 19.61 01051 - Data Entry Operator I 11.53 01052 - Data Entry Operator II 12.58 01060 - Dispatcher, Motor Vehicle 17.90 01070 - Document Preparation Clerk 12.76 01090 - Duplicating Machine Operator 12.76 01111 - General Clerk I 12.53 01112 - General Clerk II 13.67 01113 - General Clerk III 17.51 01120 - Housing Referral Assistant 17.59 01141 - Messenger Courier 11.68 01191 - Order Clerk I 11.55 01192 - Order Clerk II 12.60 01261 - Personnel Assistant (Employment) I 14.81 01262 - Personnel Assistant (Employment) II 17.58 01263 - Personnel Assistant (Employment) III 19.55 01270 - Production Control Clerk 18.04 01280 - Receptionist 12.32 01290 - Rental Clerk 12.30 01300 - Scheduler, Maintenance 13.94 01311 - Secretary I 13.94 01312 - Secretary II 15.59 01313 - Secretary III 17.59 01320 - Service Order Dispatcher 15.74 01410 - Supply Technician 20.14 01420 - Survey Worker 12.93 01531 - Travel Clerk I 12.17 01532 - Travel Clerk II 12.94 01533 - Travel Clerk III 13.73 01611 - Word Processor I 13.07 01612 - Word Processor II 14.67 01613 - Word Processor III 16.41 05000 - Automotive Service Occupations 05005 - Automobile Body Repairer, Fiberglass 18.50
+
+05010 05040 05070 05110 05130 05160 05190 05220 05250 05280 05310 05340 05370 05400 07000 07010 07041 07042 07070 07130 07210 07260 09000 09010 09040 09080 09090 09110 09130 11000 11030 11060 11090 11122 11150 11210 11240 11260 11270 11330 11360 12000 12010 12011 12012 12015 12020 12025 12030 12035 12040 12071 12072 12073 12100 12130 12160 12190 12195 12210 12221 12222 12223
+
+- Automotive Electrician - Automotive Glass Installer - Automotive Worker - Mobile Equipment Servicer - Motor Equipment Metal Mechanic - Motor Equipment Metal Worker - Motor Vehicle Mechanic - Motor Vehicle Mechanic Helper - Motor Vehicle Upholstery Worker - Motor Vehicle Wrecker - Painter, Automotive - Radiator Repair Specialist - Tire Repairer - Transmission Repair Specialist Food Preparation And Service Occupations - Baker - Cook I - Cook II - Dishwasher - Food Service Worker - Meat Cutter - Waiter/Waitress Furniture Maintenance And Repair Occupations - Electrostatic Spray Painter - Furniture Handler - Furniture Refinisher - Furniture Refinisher Helper - Furniture Repairer, Minor - Upholsterer General Services And Support Occupations - Cleaner, Vehicles - Elevator Operator - Gardener - Housekeeping Aide - Janitor - Laborer, Grounds Maintenance - Maid or Houseman - Pruner - Tractor Operator - Trail Maintenance Worker - Window Cleaner Health Occupations - Ambulance Driver - Breath Alcohol Technician - Certified Occupational Therapist Assistant - Certified Physical Therapist Assistant - Dental Assistant - Dental Hygienist - EKG Technician - Electroneurodiagnostic Technologist - Emergency Medical Technician - Licensed Practical Nurse I - Licensed Practical Nurse II - Licensed Practical Nurse III - Medical Assistant - Medical Laboratory Technician - Medical Record Clerk - Medical Record Technician - Medical Transcriptionist - Nuclear Medicine Technologist - Nursing Assistant I - Nursing Assistant II - Nursing Assistant III
+
+18.93 18.38 18.38 16.99 19.53 18.38 17.96 16.21 18.08 18.38 18.93 17.13 13.49 19.53 11.54 10.87 12.11 8.33 9.03 12.74 7.74 16.35 12.31 16.35 13.99 15.17 16.35 9.63 9.63 14.37 10.67 10.39 11.65 9.05 11.11 13.44 11.65 11.27 15.76 15.75 22.31 19.08 15.10 33.94 23.41 23.41 14.46 14.68 16.43 18.32 14.00 16.42 14.21 15.90 15.22 31.93 10.49 11.79 12.87
+
+12224 - Nursing Assistant IV 12235 - Optical Dispenser 12236 - Optical Technician 12250 - Pharmacy Technician 12280 - Phlebotomist 12305 - Radiologic Technologist 12311 - Registered Nurse I 12312 - Registered Nurse II 12313 - Registered Nurse II, Specialist 12314 - Registered Nurse III 12315 - Registered Nurse III, Anesthetist 12316 - Registered Nurse IV 12317 - Scheduler (Drug and Alcohol Testing) 13000 - Information And Arts Occupations 13011 - Exhibits Specialist I 13012 - Exhibits Specialist II 13013 - Exhibits Specialist III 13041 - Illustrator I 13042 - Illustrator II 13043 - Illustrator III 13047 - Librarian 13050 - Library Aide/Clerk 13054 - Library Information Technology Systems Administrator 13058 - Library Technician 13061 - Media Specialist I 13062 - Media Specialist II 13063 - Media Specialist III 13071 - Photographer I 13072 - Photographer II 13073 - Photographer III 13074 - Photographer IV 13075 - Photographer V 13110 - Video Teleconference Technician 14000 - Information Technology Occupations 14041 - Computer Operator I 14042 - Computer Operator II 14043 - Computer Operator III 14044 - Computer Operator IV 14045 - Computer Operator V 14071 - Computer Programmer I (see 1) 14072 - Computer Programmer II (see 1) 14073 - Computer Programmer III (see 1) 14074 - Computer Programmer IV (see 1) 14101 - Computer Systems Analyst I (see 1) 14102 - Computer Systems Analyst II (see 1) 14103 - Computer Systems Analyst III (see 1) 14150 - Peripheral Equipment Operator 14160 - Personal Computer Support Technician 15000 - Instructional Occupations 15010 - Aircrew Training Devices Instructor (Non-Rated) 15020 - Aircrew Training Devices Instructor (Rated) 15030 - Air Crew Training Devices Instructor (Pilot) 15050 - Computer Based Training Specialist / Instructor 15060 - Educational Technologist 15070 - Flight Instructor (Pilot) 15080 - Graphic Artist 15090 - Technical Instructor 15095 - Technical Instructor/Course Developer 15110 - Test Proctor 15120 - Tutor 16000 - Laundry, Dry-Cleaning, Pressing And Related Occupations 16010 - Assembler
+
+14.44 13.87 11.74 13.17 14.44 23.06 22.24 27.20 27.20 32.91 32.91 39.44 19.95 17.43 21.58 26.39 19.13 23.71 29.00 23.91 9.09 21.59 15.09 15.58 17.42 19.42 13.89 15.54 19.17 22.54 27.27 14.95 15.26 17.08 20.69 22.16 24.58 24.18
+
+15.26 22.16 30.60 34.46 40.44 30.60 27.15 40.44 21.89 21.17 23.58 17.08 17.08 9.03
+
+16030 - Counter Attendant 16040 - Dry Cleaner 16070 - Finisher, Flatwork, Machine 16090 - Presser, Hand 16110 - Presser, Machine, Drycleaning 16130 - Presser, Machine, Shirts 16160 - Presser, Machine, Wearing Apparel, Laundry 16190 - Sewing Machine Operator 16220 - Tailor 16250 - Washer, Machine 19000 - Machine Tool Operation And Repair Occupations 19010 - Machine-Tool Operator (Tool Room) 19040 - Tool And Die Maker 21000 - Materials Handling And Packing Occupations 21020 - Forklift Operator 21030 - Material Coordinator 21040 - Material Expediter 21050 - Material Handling Laborer 21071 - Order Filler 21080 - Production Line Worker (Food Processing) 21110 - Shipping Packer 21130 - Shipping/Receiving Clerk 21140 - Store Worker I 21150 - Stock Clerk 21210 - Tools And Parts Attendant 21410 - Warehouse Specialist 23000 - Mechanics And Maintenance And Repair Occupations 23010 - Aerospace Structural Welder 23021 - Aircraft Mechanic I 23022 - Aircraft Mechanic II 23023 - Aircraft Mechanic III 23040 - Aircraft Mechanic Helper 23050 - Aircraft, Painter 23060 - Aircraft Servicer 23080 - Aircraft Worker 23110 - Appliance Mechanic 23120 - Bicycle Repairer 23125 - Cable Splicer 23130 - Carpenter, Maintenance 23140 - Carpet Layer 23160 - Electrician, Maintenance 23181 - Electronics Technician Maintenance I 23182 - Electronics Technician Maintenance II 23183 - Electronics Technician Maintenance III 23260 - Fabric Worker 23290 - Fire Alarm System Mechanic 23310 - Fire Extinguisher Repairer 23311 - Fuel Distribution System Mechanic 23312 - Fuel Distribution System Operator 23370 - General Maintenance Worker 23380 - Ground Support Equipment Mechanic 23381 - Ground Support Equipment Servicer 23382 - Ground Support Equipment Worker 23391 - Gunsmith I 23392 - Gunsmith II 23393 - Gunsmith III 23410 - Heating, Ventilation And Air-Conditioning Mechanic 23411 - Heating, Ventilation And Air Contditioning Mechanic (Research Facility) 23430 - Heavy Equipment Mechanic 23440 - Heavy Equipment Operator 23460 - Instrument Mechanic
+
+9.03 10.82 9.03 9.03 9.03 9.03 9.03 11.44 12.11 9.68 19.95 22.62 14.53 18.04 18.04 12.09 11.76 14.53 14.67 14.67 11.77 14.98 14.53 14.53 26.14 24.89 26.14 27.45 20.66 24.50 23.11 23.40 18.35 13.49 26.38 16.67 18.06 21.66 21.23 23.35 23.92 17.71 20.26 16.65 26.39 22.22 16.54 24.89 23.11 23.40 16.65 18.76 20.57 22.40 23.40 18.56 18.14 23.27
+
+23465 - Laboratory/Shelter Mechanic 23470 - Laborer 23510 - Locksmith 23530 - Machinery Maintenance Mechanic 23550 - Machinist, Maintenance 23580 - Maintenance Trades Helper 23591 - Metrology Technician I 23592 - Metrology Technician II 23593 - Metrology Technician III 23640 - Millwright 23710 - Office Appliance Repairer 23760 - Painter, Maintenance 23790 - Pipefitter, Maintenance 23810 - Plumber, Maintenance 23820 - Pneudraulic Systems Mechanic 23850 - Rigger 23870 - Scale Mechanic 23890 - Sheet-Metal Worker, Maintenance 23910 - Small Engine Mechanic 23931 - Telecommunications Mechanic I 23932 - Telecommunications Mechanic II 23950 - Telephone Lineman 23960 - Welder, Combination, Maintenance 23965 - Well Driller 23970 - Woodcraft Worker 23980 - Woodworker 24000 - Personal Needs Occupations 24570 - Child Care Attendant 24580 - Child Care Center Clerk 24610 - Chore Aide 24620 - Family Readiness And Support Services Coordinator 24630 - Homemaker 25000 - Plant And System Operations Occupations 25010 - Boiler Tender 25040 - Sewage Plant Operator 25070 - Stationary Engineer 25190 - Ventilation Equipment Tender 25210 - Water Treatment Plant Operator 27000 - Protective Service Occupations 27004 - Alarm Monitor 27007 - Baggage Inspector 27008 - Corrections Officer 27010 - Court Security Officer 27030 - Detection Dog Handler 27040 - Detention Officer 27070 - Firefighter 27101 - Guard I 27102 - Guard II 27131 - Police Officer I 27132 - Police Officer II 28000 - Recreation Occupations 28041 - Carnival Equipment Operator 28042 - Carnival Equipment Repairer 28043 - Carnival Equpment Worker 28210 - Gate Attendant/Gate Tender 28310 - Lifeguard 28350 - Park Attendant (Aide) 28510 - Recreation Aide/Health Facility Attendant 28515 - Recreation Specialist 28630 - Sports Official 28690 - Swimming Pool Operator 29000 - Stevedoring/Longshoremen Occupational Services
+
+19.75 12.09 19.51 19.36 18.26 14.65 22.91 23.34 24.08 20.83 20.16 15.61 26.10 25.32 20.57 20.57 18.76 22.73 16.69 23.54 26.07 19.67 16.05 18.93 20.57 15.36 9.72 13.42 10.04 14.31 15.60 19.95 20.76 19.95 14.84 20.76 15.14 13.01 17.79 22.20 16.42 17.79 22.36 13.01 16.42 22.90 25.45 11.27 11.72 8.15 14.00 11.34 15.66 11.43 13.43 12.47 17.03
+
+29010 - Blocker And Bracer 29020 - Hatch Tender 29030 - Line Handler 29041 - Stevedore I 29042 - Stevedore II 30000 - Technical Occupations 30010 - Air Traffic Control Specialist, Center (HFO) (see 30011 - Air Traffic Control Specialist, Station (HFO) (see 30012 - Air Traffic Control Specialist, Terminal (HFO) (see 30021 - Archeological Technician I 30022 - Archeological Technician II 30023 - Archeological Technician III 30030 - Cartographic Technician 30040 - Civil Engineering Technician 30061 - Drafter/CAD Operator I 30062 - Drafter/CAD Operator II 30063 - Drafter/CAD Operator III 30064 - Drafter/CAD Operator IV 30081 - Engineering Technician I 30082 - Engineering Technician II 30083 - Engineering Technician III 30084 - Engineering Technician IV 30085 - Engineering Technician V 30086 - Engineering Technician VI 30090 - Environmental Technician 30210 - Laboratory Technician 30240 - Mathematical Technician 30361 - Paralegal/Legal Assistant I 30362 - Paralegal/Legal Assistant II 30363 - Paralegal/Legal Assistant III 30364 - Paralegal/Legal Assistant IV 30390 - Photo-Optics Technician 30461 - Technical Writer I 30462 - Technical Writer II 30463 - Technical Writer III 30491 - Unexploded Ordnance (UXO) Technician I 30492 - Unexploded Ordnance (UXO) Technician II 30493 - Unexploded Ordnance (UXO) Technician III 30494 - Unexploded (UXO) Safety Escort 30495 - Unexploded (UXO) Sweep Personnel 30620 - Weather Observer, Combined Upper Air Or (see Surface Programs 30621 - Weather Observer, Senior (see 31000 - Transportation/Mobile Equipment Operation Occupations 31020 - Bus Aide 31030 - Bus Driver 31043 - Driver Courier 31260 - Parking and Lot Attendant 31290 - Shuttle Bus Driver 31310 - Taxi Driver 31361 - Truckdriver, Light 31362 - Truckdriver, Medium 31363 - Truckdriver, Heavy 31364 - Truckdriver, Tractor-Trailer 99000 - Miscellaneous Occupations 99030 - Cashier 99050 - Desk Clerk 99095 - Embalmer 99251 - Laboratory Animal Caretaker I 99252 - Laboratory Animal Caretaker II 99310 - Mortician 99410 - Pest Controller 99510 - Photofinishing Worker
+
+19.13 19.13 19.13 18.13 20.23 2) 2) 2) 35.77 24.66 27.16 18.46 20.64 25.57 25.57 20.26 18.46 20.64 23.02 27.98 16.00 17.95 20.08 24.89 30.45 36.83 21.47 22.74 25.41 17.58 21.80 26.65 32.25 25.37 19.99 24.46 29.39 22.74 27.51 32.97 22.74 22.74 23.02 25.27 11.66 15.35 13.50 8.57 14.43 9.88 14.43 21.01 19.94 19.94 8.71 10.58 29.68 10.85 11.13 34.13 16.74 11.95
+
+2) 2)
+
+99710 99711 99730 99810 99820 99830 99831 99832 99840 99841 99842
+
+-
+
+Recycling Laborer Recycling Specialist Refuse Collector Sales Clerk School Crossing Guard Survey Party Chief Surveying Aide Surveying Technician Vending Machine Attendant Vending Machine Repairer Vending Machine Repairer Helper
+
+13.67 15.77 12.60 12.39 12.83 26.90 14.56 18.47 13.19 14.70 13.19
+
+____________________________________________________________________________________ ALL OCCUPATIONS LISTED ABOVE RECEIVE THE FOLLOWING BENEFITS: HEALTH & WELFARE: $3.59 per hour or $143.60 per week or $622.27 per month VACATION: 2 weeks paid vacation after 1 year of service with a contractor or successor; 3 weeks after 8 years, 4 weeks after 15 years, and 5 weeks after 20 years. Length of service includes the whole span of continuous service with the present contractor or successor, wherever employed, and with the predecessor contractors in the performance of similar work at the same Federal facility. (Reg. 29 CFR 4.173) HOLIDAYS: A minimum of ten paid holidays per year, New Year's Day, Martin Luther King Jr's Birthday, Washington's Birthday, Memorial Day, Independence Day, Labor Day, Columbus Day, Veterans' Day, Thanksgiving Day, and Christmas Day. (A contractor may substitute for any of the named holidays another day off with pay in accordance with a plan communicated to the employees involved.) (See 29 CFR 4174)
+
+THE OCCUPATIONS WHICH HAVE NUMBERED FOOTNOTES IN PARENTHESES RECEIVE THE FOLLOWING: 1) COMPUTER EMPLOYEES: Under the SCA at section 8(b), this wage determination does not apply to any employee who individually qualifies as a bona fide executive, administrative, or professional employee as defined in 29 C.F.R. Part 541. Because most Computer System Analysts and Computer Programmers who are compensated at a rate not less than $27.63 (or on a salary or fee basis at a rate not less than $455 per week) an hour would likely qualify as exempt computer professionals, (29 C.F.R. 541. 400) wage rates may not be listed on this wage determination for all occupations within those job families. In addition, because this wage determination may not list a wage rate for some or all occupations within those job families if the survey data indicates that the prevailing wage rate for the occupation equals or exceeds $27.63 per hour conformances may be necessary for certain nonexempt employees. For example, if an individual employee is nonexempt but nevertheless performs duties within the scope of one of the Computer Systems Analyst or Computer Programmer occupations for which this wage determination does not specify an SCA wage rate, then the wage rate for that employee must be conformed in accordance with the conformance procedures described in the conformance note included on this wage determination. Additionally, because job titles vary widely and change quickly in the computer industry, job titles are not determinative of the application of the computer professional exemption. Therefore, the exemption applies only to computer employees who satisfy the compensation requirements and whose primary duty consists of: (1) The application of systems analysis techniques and procedures, including consulting with users, to determine hardware, software or system functional specifications; (2) The design, development, documentation, analysis, creation, testing or
+
+modification of computer systems or programs, including prototypes, based on and related to user or system design specifications; (3) The design, documentation, testing, creation or modification of computer programs related to machine operating systems; or (4) A combination of the aforementioned duties, the performance of which requires the same level of skills. (29 C.F.R. 541.400). 2) AIR TRAFFIC CONTROLLERS AND WEATHER OBSERVERS - NIGHT PAY & SUNDAY PAY: If you work at night as part of a regular tour of duty, you will earn a night differential and receive an additional 10% of basic pay for any hours worked between 6pm and 6am. If you are a full-time employed (40 hours a week) and Sunday is part of your regularly scheduled workweek, you are paid at your rate of basic pay plus a Sunday premium of 25% of your basic rate for each hour of Sunday work which is not overtime (i.e. occasional work on Sunday outside the normal tour of duty is considered overtime work). HAZARDOUS PAY DIFFERENTIAL: An 8 percent differential is applicable to employees employed in a position that represents a high degree of hazard when working with or in close proximity to ordinance, explosives, and incendiary materials. This includes work such as screening, blending, dying, mixing, and pressing of sensitive ordance, explosives, and pyrotechnic compositions such as lead azide, black powder and photoflash powder. All dry-house activities involving propellants or explosives. Demilitarization, modification, renovation, demolition, and maintenance operations on sensitive ordnance, explosives and incendiary materials. All operations involving regrading and cleaning of artillery ranges. A 4 percent differential is applicable to employees employed in a position that represents a low degree of hazard when working with, or in close proximity to ordance, (or employees possibly adjacent to) explosives and incendiary materials which involves potential injury such as laceration of hands, face, or arms of the employee engaged in the operation, irritation of the skin, minor burns and the like; minimal damage to immediate or adjacent work area or equipment being used. All operations involving, unloading, storage, and hauling of ordance, explosive, and incendiary ordnance material other than small arms ammunition. These differentials are only applicable to work that has been specifically designated by the agency for ordance, explosives, and incendiary material differential pay. ** UNIFORM ALLOWANCE ** If employees are required to wear uniforms in the performance of this contract (either by the terms of the Government contract, by the employer, by the state or local law, etc.), the cost of furnishing such uniforms and maintaining (by laundering or dry cleaning) such uniforms is an expense that may not be borne by an employee where such cost reduces the hourly rate below that required by the wage determination. The Department of Labor will accept payment in accordance with the following standards as compliance: The contractor or subcontractor is required to furnish all employees with an adequate number of uniforms without cost or to reimburse employees for the actual cost of the uniforms. In addition, where uniform cleaning and maintenance is made the responsibility of the employee, all contractors and subcontractors subject to this wage determination shall (in the absence of a bona fide collective bargaining agreement providing for a different amount, or the furnishing of contrary affirmative proof as to the actual cost), reimburse all employees for such cleaning and maintenance at a rate of $3.35 per week (or $.67 cents per day). However, in those instances where the uniforms furnished are made of "wash and wear" materials, may be routinely washed and dried with other personal garments, and do not require any special treatment such as dry cleaning, daily washing, or commercial laundering in order to meet the cleanliness or appearance standards set by the terms of the Government contract, by the contractor, by law, or by the nature of the work, there is no requirement that employees be reimbursed for uniform maintenance costs.
+
+The duties of employees under job titles listed are those described in the "Service Contract Act Directory of Occupations", Fifth Edition, April 2006, unless otherwise indicated. Copies of the Directory are available on the Internet. A links to the Directory may be found on the WHD home page at http://www.dol. gov/esa/whd/ or through the Wage Determinations On-Line (WDOL) Web site at http://wdol.gov/. REQUEST FOR AUTHORIZATION OF ADDITIONAL CLASSIFICATION AND WAGE RATE {Standard Form 1444 (SF 1444)} Conformance Process: The contracting officer shall require that any class of service employee which is not listed herein and which is to be employed under the contract (i.e., the work to be performed is not performed by any classification listed in the wage determination), be classified by the contractor so as to provide a reasonable relationship (i.e., appropriate level of skill comparison) between such unlisted classifications and the classifications listed in the wage determination. Such conformed classes of employees shall be paid the monetary wages and furnished the fringe benefits as are determined. Such conforming process shall be initiated by the contractor prior to the performance of contract work by such unlisted class(es) of employees. The conformed classification, wage rate, and/or fringe benefits shall be retroactive to the commencement date of the contract. {See Section 4.6 (C)(vi)} When multiple wage determinations are included in a contract, a separate SF 1444 should be prepared for each wage determination to which a class(es) is to be conformed. The process for preparing a conformance request is as follows: 1) When preparing the bid, the contractor identifies the need for a conformed occupation(s) and computes a proposed rate(s). 2) After contract award, the contractor prepares a written report listing in order proposed classification title(s), a Federal grade equivalency (FGE) for each proposed classification(s), job description(s), and rationale for proposed wage rate(s), including information regarding the agreement or disagreement of the authorized representative of the employees involved, or where there is no authorized representative, the employees themselves. This report should be submitted to the contracting officer no later than 30 days after such unlisted class(es) of employees performs any contract work. 3) The contracting officer reviews the proposed action and promptly submits a report of the action, together with the agency's recommendations and pertinent information including the position of the contractor and the employees, to the Wage and Hour Division, Employment Standards Administration, U.S. Department of Labor, for review. (See section 4.6(b)(2) of Regulations 29 CFR Part 4). 4) Within 30 days of receipt, the Wage and Hour Division approves, modifies, or disapproves the action via transmittal to the agency contracting officer, or notifies the contracting officer that additional time will be required to process the request. 5) The contracting officer transmits the Wage and Hour decision to the contractor. 6) The contractor informs the affected employees. Information required by the Regulations must be submitted on SF 1444 or bond paper. When preparing a conformance request, the "Service Contract Act Directory of Occupations" (the Directory) should be used to compare job definitions to insure that duties requested are not performed by a classification already listed in the wage determination. Remember, it is not the job title, but the required tasks that determine whether a class is included in an established wage determination.
+
+Conformances may not be used to artificially split, combine, or subdivide classifications listed in the wage determination.
+
+ATTACHMENT 3 VENDOR TECHNICAL SPECIFICATION TABLES Table 1. Vendor Technical Specifications for CG Lightning LA, TA, Data Delivery Time, Probability of Detection (DE), False Detection, and False Flash Type Id by Geographic Zone. Zone Horizontal Location Accuracy Timing Accuracy Data Delivery Time Probability of Detection Probability of False Detection Probability of False Flash Type Id
+
+Zone 1A Zone 1B Zone 2 Zone 3 Zone 4 Zone 5 Zone 6 Zone 7 Zone 8 Zone 9 Zone 10 Zone 11 Zone 12 Zone 13 Zone 14 Zone 15 Zone 16 Zone 17 Zone 18 Zone 19 Zone 20 Zone 21 Zone 22 Zone 23 Zone 24 Zone 25 Zone 26
+
+Table 2. Vendors Technical Specifications for Lightning Polarity, Estimated Peak Current, and Strokes/Flash by Geographic Zone for CG data only. Zones 1-26 Polarity Estimated Peak Current Strokes per Flash
+
+Table 3. Vendor's Technical Specifications for Cloud Flash Data by Location. Location Horizontal Location Accuracy Timing Accuracy Data Delivery Time Probability of Detection Probability of False Detection
+
+Zone 1A Zones 1B ­ 26
+
+ATTACHMENT 4 PAST/PRESENT PERFORMANCE QUESTIONAIRE COVER LETTER Corporate Letterhead Date The 55th Contracting Squadron of Air Combat Command (ACC) is in the process of selecting a contractor for the Global Lightning Data contract at Air Force Weather Agency, RFP FA4600-11-R-0053. One of the considerations in the evaluation process is the verification of past performance on contracts that are relevant to the proposed effort. The 55 th Contracting Squadron and (insert name of your corporation and division) are depending on information received from your agency, which has had first hand experience with our efforts. The areas of interest are summarized in the enclosed questionnaire. AFWA's schedule is extremely tight and the 55th Contracting Squadron appreciates your written response no later than 11 October 2011. To assist you in preparing your response and expediting your reply, the questionnaire may be filled out by hand and returned to the address below, via mail, e-mail (Melissa.Frans@offutt.af.mil), or faxed to (402) 294-0430. Please contact Ms. Frans at (402) 294-3862 prior to fax transmission. You may also contact Ms. Frans if you have any questions about this request. Your completed questionnaire will become part of the official Source Selection records. Mail to: 55 CONS/LGCZ ATTN: Melissa Frans 101 Washington Square Bldg. 40 Offutt AFB NE 68113-2107 If mailing, the outside of the envelope should be marked as follows: NOTE: TO BE OPENED BY ADDRESSEE ONLY SOURCE SELECTION INFORMATION - IAW FAR 3.104 FOR OFFICIAL USE ONLY
+
+Your help is greatly appreciated and your prompt response will be one of the keys to successful and timely completion of this Source Selection.
+
+Attachment: Past/Present Performance Questionnaire
+
+1
+
+ATTACHMENT 5 PAST/PRESENT PERFORMANCE QUESTIONAIRE
+
+A.
+
+GENERAL INFORMATION: Please correct any information below known to be inaccurate: Address: __________________________ __________________________ __________________________
+
+Contractor's Name: ____________________ Telephone Number: ____________________ Fax Number: ____________________ Point of Contact: ___________________________
+
+Project Title or Brief Description of Work: _________________________________________________* Contract Number Provided by Offeror: ____________________ Dollar Amount: $____________
+
+Contract Period or Dates of Performance Provided by Offeror: __________________________* *Note: If offeror holds or has held other contracts with your agency/organization in the last 3 years, please complete separate evaluation forms for those contracts as well. Contractor performed as the  Prime Contractor  Sub-Contractor  Key Personnel. B. RESPONDENT INFORMATION:
+
+Name of Respondent: ___________________________ Title: ____________________________ Address: _____________________ _____________________________ _____________________________ Telephone Number: ___________________ Fax Number: _____________________ Email Address: _____________________
+
+C. FAX COMPLETED SURVEY FORM TO THE GOVERNMENT AT: __________________ D. PERFORMANCE INFORMATION: Please indicate your satisfaction with the contractor's performance by placing an "X" in the appropriate block using the scale provided to the right of each question. This scale is defined as follows: CODE PERFORMANCE LEVEL B BLUE/EXCEPTIONAL - During the contract period, contractor performance is meeting (or met) all contract requirements and exceeding (or exceeded) many; consistently performed at a superior level. Performance was accomplished with very few minor problems, and the contractor took immediate and effective corrective actions for those problems that did occur. PURPLE/ GOOD - During the contract period, contractor performance is meeting (or met) all contract requirements and exceeding (or exceeded) some; consistently performed very well. Performance was accomplished with some minor problems, and the contractor took timely and effective corrective actions for those problems that did occur GREEN/ACCEPTABLE - During the contract period, contractor performance is meeting (or met) all contract requirements; consistently performed at an acceptable level. Performance was accomplished with some problems, and the contractor took effective corrective actions for those problems that did occur. YELLOW/MARGINAL - During the contract period, contractor performance is not meeting (or did not meet) some contract requirements. There were instances where performance was at a less than acceptable level; performance was accomplished with some problems and some corrective actions appeared only marginally effective or were not fully implemented. Customer involvement was required. RED/UNACCEPTABLE - During the contract period, contractor performance is failing (or failed) to meet most contract requirements and performance is (or was) at an unacceptable level. There were a number of serious problems and corrective actions were either ineffective or non-existent. Extensive customer oversight and involvement was required.
+
+P
+
+G
+
+Y
+
+R
+
+1
+
+N
+
+NOT APPLICABLE - Unable to provide a rating. Contract did not include performance on this aspect, or information was not available. Do not know.
+
+Please provide a narrative explanation of all Blue or Red ratings (what made them exceptional or unacceptable). The contractor: Demonstrated their knowledge, ability, and approach to preventative maintenance for their lightning data network. Provided a continuously manned emergency point of contact 24 hours a day, seven days a week. Was able to quickly obtain parts, as required for routine and emergency repairs, in a manner to meet performance standards for their lightning data network. Demonstrated ability to hire, maintain, and replace, if necessary, qualified personnel during the contract period. Delegated authority to local technician to repair or upgrade their lightning data network and/or sensor equipment. Home office participated in solving significant local problems. Provided timely resolution of contract discrepancies. Proactively preformed preventative maintenance, reducing the number of service calls. Diligently worked problems all the way to solution. Successfully repaired lightning data delivery and network availability problem(s) during initial service call. Responded to emergencies within time stated in contract. Provided upgrades to the lightning data network (ex. new partners, new sensors) and/or services (ex. more coverage, better data) according to contract or offer. How would you rate the contractor's overall performance?
+B G Y R N/A
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6. 7. 8.
+
+9. 10.
+
+11. 12.
+
+13.
+
+2
+
+14. 15. 16. 17. 18. 19. 20. 21.
+
+Was the contractor responsible for maintenance of the lightning network? Did the contractor provide lightning data in accordance with the contract? Did the contractor provide lightning data for the entire globe? Did the contractor provide encryption to secure the data? Did the contractor provide the data in STROKE format? Did the contractor provide the data in ASCII or XML format? Did the contractor provide the data via the internet? Did the lightning data stream contain the following fields: date-time (UTC) to thousands of a second, latitude (deg) and longitude (deg) (to thousandths), signal strength (ka), polarity, multiplicity (#strokes/flash), and the number of sensors used to collect the data? If no, please explain what data fields were provided. Was the contractor ever issued a cure or show cause notice? If yes, explain outcome in "remarks." Would you award another contract to this contractor? If not, explain in "remarks."
+
+YES / NO / NA YES / NO / NA YES / NO / NA YES / NO / NA YES / NO / NA YES / NO / NA YES / NO / NA YES / NO / NA
+
+22. 23.
+
+YES / NO / NA YES / NO / NA
+
+Remarks:_____________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________ _____________________________________________________________________________________________
+
+3
+
+ATTACHMENT 6 SAMPLE PAST/ PRESENT PERFORMANCE QUESTIONAIRE TRACKING RECORD Offeror's Company Name: Reference Address:
+
+Reference Contract Number and Program Name:
+
+Date of Action
+
+Type of Action (e.g., "sent questionnaire")
+
+Person contacted/phone number
+
+Position of person contacted
+
+Offeror contact
+
+Status of questionnaire
+
+1
+
+ATTACHMENT 7 SAMPLE CONSENT LETTER Corporate Letterhead Date Dear Mr. Stricker, We are currently participating as a (subcontractor, teaming partner, and/or joint venture partner) with (prime contractor or name of entity providing proposal), and are responding to the Government's Request for Proposal FA4600-11-R-0053 for the Air Force Weather Agency (AFWA) Global Lightning Data. We understand that the Government is placing increased emphasis on past performance in order to obtain best value in source selections. In order to facilitate the performance confidence assessment process, we are signing this consent form to allow you to discuss our past performance information with the prime contractor during the source selection process.
+
+Signature and title of individual authorized to sign for and legally bind the company
+
+1
+
+CONTRACT DATA REQUIREMENTS LIST
+(2 Data Items)
+
+Form Approved OMB No. 0704-0188
+
+The public reporting burden for this collection of information is estimated to average 220 hours per response, including the time for reviewing instructions, searching existing data sources, gathering and maintaining the data needed, and completing and reviewing the collection of information. Send comments regarding this burden estimate or any other aspect of this collection of information, including suggestions for reducing the burden, to the Department of Defense, Executive Services Directorate (0704-0188). Respondents should be aware that notwithstanding any other provision of law, no person shall be subject to any penalty for failing to comply with a collection of information if it does not display a currently valid OMB control number. Please do not return your form to the above organization. Send completed form to the Government Issuing Contracting Officer for the Contract/PR No. listed in Block E.
+
+A. CONTRACT LINE ITEM NO. D. SYSTEM/ITEM
+1. DATA ITEM NO. 2. TITLE OF DATA ITEM
+
+B. EXHIBIT
+
+C. CATEGORY:
+TDP ________ TM _______ OTHER _________________________
+
+E. CONTRACT/PR NO.
+
+F. CONTRACTOR
+3. SUBTITLE 17. PRICE GROUP
+
+A001
+
+Lightning Data Stream
+5. CONTRACT REFERENCE 6. REQUIRING OFFICE 18. ESTIMATED TOTAL PRICE
+
+4. AUTHORITY (Data Acquisition Document No.)
+
+FAA-SE-30
+7. DD 250 REQ 9. DIST STATEMENT REQUIRED 10. FREQUENCY
+
+PWS Paragraph 3.0
+12. DATE OF FIRST SUBMISSION
+
+HQAFWA/A8P
+14. DISTRIBUTION b. COPIES a. ADDRESSEE Draft Reg Final Repro
+
+ASGEN
+11. AS OF DATE
+
+See Remarks
+13. DATE OF SUBSEQUENT SUBMISSION
+
+8. APP CODE
+
+See Remarks
+16. REMARKS
+
+See Remarks
+
+See Remarks
+
+Block 4: See Paragraph 3.0 for specific formats Block 10: 24 hours per day, 7 days a week Block 11: First Day of Performance Block 12: First Lightning Strike after commencement of Performance. Block 14: See Paragraph 3.0 for specific internet formats and addresses.
+
+15. TOTAL 1. DATA ITEM NO. 2. TITLE OF DATA ITEM 3. SUBTITLE
+
+0
+
+0
+
+0
+
+17. PRICE GROUP
+
+4. AUTHORITY (Data Acquisition Document No.)
+
+5. CONTRACT REFERENCE
+
+6. REQUIRING OFFICE
+
+18. ESTIMATED TOTAL PRICE
+
+7. DD 250 REQ
+
+9. DIST STATEMENT REQUIRED
+
+10. FREQUENCY
+
+12. DATE OF FIRST SUBMISSION
+
+14.
+
+DISTRIBUTION b. COPIES
+
+8. APP CODE
+
+11. AS OF DATE
+
+13. DATE OF SUBSEQUENT SUBMISSION
+
+a. ADDRESSEE
+
+Draft
+
+Final Reg Repro
+
+16. REMARKS
+
+d
+
+15. TOTAL
+
+G. PREPARED BY
+
+Laura Marotz
+
+H. DATE
+
+I. APPROVED BY
+
+9/6/11
+
+Melissa Frans
+
+J. DATE
+
+0
+
+0
+
+0
+
+9/7/11 Reset
+Page ____ of ____ Pages
+Adobe Professional 7.0
+
+DD FORM 1423-2, AUG 96
+
+PREVIOUS EDITION MAY BE USED.
+
+INSTRUCTIONS FOR COMPLETING DD FORM 1423
+(See DoD 5010.12-M for detailed instructions.)
+
+FOR GOVERNMENT PERSONNEL Item A. Self-explanatory. Item B. Self-explanatory. Item C. Mark (X) appropriate category: TDP - Technical Data Package; TM - Technical Manual; Other - other category of data, such as "Provisioning,""Configuration Management," etc. Item D. Enter name of system/item being acquired that data will support. Item E. Self-explanatory (to be filled in after contract award). Item F. Self-explanatory (to be filled in after contract award). Item G. Signature of preparer of CDRL. Item H. Date CDRL was prepared. Item I. Signature of CDRL approval authority.
+
+FOR THE CONTRACTOR Item 17. Specify appropriate price group from one of the following groups of effort in developing estimated prices for each data item listed on the DD Form 1423. a. Group I. Definition - Data which is not otherwise essential to the contractor's performance of the primary contracted effort (production, development, testing, and administration) but which is required by DD Form 1423. Estimated Price - Costs to be included under Group I are those applicable to preparing and assembling the data item in conformance with Government requirements, and the administration and other expenses related to reproducing and delivering such data items to the Government. b. Group II. Definition - Data which is essential to the performance of the primary contracted effort but the contractor is required to perform additional work to conform to Government requirements with regard to depth of content, format, frequency of submittal, preparation, control, or quality of the data item. Estimated Price - Costs to be included under Group II are those incurred over and above the cost of the essential data item without conforming to Government requirements, and the administrative and other expenses related to reproducing and delivering such data item to the Government. c. Group III. Definition - Data which the contractor must develop for his internal use in performance of the primary contracted effort and does not require any substantial change to conform to Government requirements with regard to depth of content, format, frequency of submittal, preparation, control, and quality of the data item. Estimated Price - Costs to be included under Group III are the administrative and other expenses related to reproducing and delivering such data item to the Government. d. Group IV. Definition - Data which is developed by the contractor as part of his normal operating procedures and his effort in supplying these data to the Government is minimal. Estimated Price - Group IV items should normally be shown on the DD Form 1423 at no cost.
+
+Item J. Date CDRL was approved. Item 1. See DoD FAR Supplement Subpart 4.71 for proper numbering. Item 2. Enter title as it appears on data acquisition document cited in Item 4. Item 3. Enter subtitle of data item for further definition of data item (optional entry). Item 4. Enter Data Item Description (DID) number, military specification number, or military standard number listed in DoD 5010.12-L (AMSDL), or one-time DID number, that defines data content and format requirements. Item 5. Enter reference to tasking in contract that generates requirement for the data item (e.g., Statement of Work paragraph number). Item 6. Enter technical office responsible for ensuring adequacy of the data item. Item 7. Specify requirement for inspection/acceptance of the data item by the Government. Item 8. Specify requirement for approval of a draft before preparation of the final data item. Item 9. For technical data, specify requirement for contractor to mark the appropriate distribution statement on the data (ref. DoDD 5230.24). Item 10. Specify number of times data items are to be delivered. Item 11. Specify as-of date of data item, when applicable. Item 12. Specify when first submittal is required. Item 13. Specify when subsequent submittals are required, when applicable. Item 14. Enter addressees and number of draft/final copies to be delivered to each addressee. Explain reproducible copies in Item 16. Item 15. Enter total number of draft/final copies to be delivered. Item 16. Use for additional/clarifying information for Items 1 through 15. Examples are: Tailoring of documents cited in Item 4; Clarification of submittal dates in Items 12 and 13; Explanation of reproducible copies in Item 14.; Desired medium for delivery of the data item.
+
+Item 18. For each data item, enter an amount equal to that portion of the total price which is estimated to be attributable to the production or development for the Government of that item of data. These estimated data prices shall be developed only from those costs which will be incurred as a direct result of the requirement to supply the data, over and above those costs which would otherwise be incurred in performance of the contract if no data were required. The estimated data prices shall not include any amount for rights in data. The Government's right to use the data shall be governed by the pertinent provisions of the contract.
+
+DD FORM 1423-2 (BACK), AUG 96
+
+SOLICITATION/CONTRACT/ORDER FOR COMMERCIAL ITEMS
+OFFEROR TO COMPLETE BLOCKS 12, 17, 23, 24, AND 30
+2. CONTRACT NO. 3. AWARD/EFFECTIVE DATE 4. ORDER NUMBER
+
+1. REQUISITION NUMBER
+
+PAGE 1 OF
+
+43
+
+5. SOLICITATION NUMBER
+
+6. SOLICITATION ISSUE DATE
+
+FA 4600-11-R-0053 FA4600-11-T-0035
+7. FOR SOLICITATION INFORMATION CALL: a. NAME b. TELEPHONE NUMBER (No Collect Calls)
+
+23-Sep-2011
+8. OFFER DUE DATE/LOCAL TIME
+
+MELISSA A. FRANS
+CODE
+
+402-294-5206
+10. THIS ACQUISITION IS 11. DELIVERY FOR FOB DESTINATION UNLESS % FOR BLOCK IS MARKED SEE SCHEDULE
+
+12:00 PM 14 Oct 2011
+12. DISCOUNT TERMS
+
+9. ISSUED BY 55 CONTRACTING SQUADRON 101 WASHINGTON SQ BLDG 40 OFFUTT AFB NE 68113-2107
+
+FA4600
+
+X UNRESTRICTED
+SET ASIDE: SB HUBZONE SB 8(A) SVC-DISABLED VET-OWNED SB
+
+13a. THIS CONTRACT IS A RATED ORDER UNDER DPAS (15 CFR 700) 13b. RATING 14. METHOD OF SOLICITATION NAICS:
+
+TEL: 402-232-6356 FAX:
+15. DELIVER TO
+F3HRA1 - AFWA/SYO MAROTZ, LAURA 101 NELSON DRIVE OFFUTT AFB NE 68113 TEL: 232-4441 FAX:
+
+EMERGING SB SIZE STD: CODE
+F3HRA1
+
+$7 M
+
+541990
+
+X RFQ
+
+IFB CODE
+
+X RFP
+
+16. ADMINISTERED BY
+
+17a.CONTRACTOR/ OFFEROR
+
+CODE
+
+18a. PAY MENT WILL BE MADE BY
+
+CODE
+
+TEL.
+
+FACILITY CODE
+
+17b. CHECK IF REMITTANCE IS DIFFERENT AND PUT SUCH ADDRESS IN OFFER 19. ITEM NO.
+
+18b. SUBMIT INVOICES TO ADDRESS SHOWN IN BLOCK 18a. UNLESS BLOCK BELOW IS CHECKED SEE ADDENDUM 21. QUANTITY 22. UNIT 23. UNIT PRICE 24. AMOUNT
+
+20. SCHEDULE OF SUPPLIES/ SERVICES
+
+SEE SCHEDULE
+25. ACCOUNTING AND APPROPRIATION DATA 26. TOTAL AWARD AMOUNT (For Gov t. Use Only )
+
+0
+
+27a. SOLICITATION INCORPORATES BY REFERENCE FAR 52.212-1. 52.212-4. FAR 52.212-3. 52.212-5 ARE ATTACHED. 27b. CONTRACT/PURCHASE ORDER INCORPORATES BY REFERENCE FAR 52.212-4. FAR 52.212-5 IS ATTACHED.
+
+ADDENDA ADDENDA
+
+ARE ARE
+
+ARE NOT ATTACHED ARE NOT ATTACHED
+
+28. CONTRACTOR IS REQUIRED TO SIGN THIS DOCUMENT AND RETURN
+
+2
+
+COPIES
+
+29. AWARD OF CONTRACT: REFERENCE OFFER DATED . Y OUR OFFER ON SOLICITATION (BLOCK 5), INCLUDING ANY ADDITIONS OR CHANGES WHICH ARE SET FORTH HEREIN, IS ACCEPTED AS TO ITEMS:
+
+X
+
+TO ISSUING OFFICE. CONTRACTOR AGREES TO FURNISH AND DELIVER ALL ITEMS SET FORTH OR OTHERWISE IDENTIFIED ABOVE AND ON ANY ADDITIONAL SHEETS SUBJECT TO THE TERMS AND CONDITIONS SPECIFIED HEREIN.
+
+30a. SIGNATURE OF OFFEROR/CONTRACTOR
+
+31a.UNITED STATES OF AMERICA
+
+(SIGNATURE OF CONTRACTING OFFICER) 31c. DATE SIGNED
+
+30b. NAME AND TITLE OF SIGNER
+(TYPE OR PRINT)
+
+30c. DATE SIGNED
+
+31b. NAME OF CONTRACTING OFFICER
+
+(TYPE OR PRINT)
+
+TEL:
+
+EMAIL:
+
+AUTHORIZED FOR LOCAL REPRODUCTION PREVIOUS EDITION IS NOT USABLE
+
+STANDARD FORM 1449 (REV 3/2005) Prescribed by GSA FAR (48 CFR) 53.212
+
+FA4600-11-R-0053
+SOLICITATION/CONTRACT/ORDER FOR COMMERCIAL ITEMS (CONTINUED)
+19. ITEM NO. 20. SCHEDULE OF SUPPLIES/ SERVICES 21. QUANTITY 22. UNIT
+
+Page 2 of 42
+23. UNIT PRICE
+
+PAGE 2 OF 43 24. AMOUNT
+
+SEE SCHEDULE
+
+32a. QUANTITY IN COLUMN 21 HAS BEEN RECEIVED INSPECTED ACCEPTED, AND CONFORMS TO THE CONTRACT, EXCEPT AS NOTED: ______________________________________________________ 32b. SIGNATURE OF AUTHORIZED GOVERNMENT REPRESENTATIVE 32c. DATE 32d. PRINTED NAME AND TITLE OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32e. MAILING ADDRESS OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32f . TELEPHONE NUMBER OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32g. E-MAIL OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+33. SHIP NUMBER
+
+34. VOUCHER NUMBER
+
+35. AMOUNT VERIFIED CORRECT FOR
+
+36. PAY MENT COMPLETE PARTIAL FINAL
+
+37. CHECK NUMBER
+
+PARTIAL
+
+FINAL 39. S/R VOUCHER NUMBER 40. PAID BY
+
+38. S/R ACCOUNT NUMBER
+
+41a. I CERTIFY THIS ACCOUNT IS CORRECT AND PROPER FOR PAY MENT 42a. RECEIVED BY (Print) 41c. DATE 41b. SIGNATURE AND TITLE OF CERTIFY ING OFFICER 42b. RECEIVED AT (Location) 42c. DATE REC'D (YY/MM/DD) 42d. TOTAL CONTAINERS
+
+AUTHORIZED FOR LOCAL REPRODUCTION PREVIOUS EDITION IS NOT USABLE
+
+STANDARD FORM 1449 (REV 3/2005) BACK Prescribed by GSA FAR (48 CFR) 53.212
+
+FA4600-11-R-0053 Page 3 of 42 Section SF 1449 - CONTINUATION SHEET
+
+ITEM NO 0001
+
+SUPPLIES/SERVICES
+
+QUANTITY 12
+
+UNIT Months
+
+UNIT PRICE
+
+AMOUNT
+
+Global Lightning Data FFP Base Year - The contractor shall provide total lightning to include cloud to flash and cloud to ground for CONUS and OCONUS to the Air Force Weather Agency in accordance with the Performance Work Statement (PWS) for the period of 1 December 2011- 30 October 2012. FOB: Destination SIGNAL CODE: A
+
+NET AMT
+
+ITEM NO 0002
+
+SUPPLIES/SERVICES
+
+QUANTITY 1
+
+UNIT Months
+
+UNIT PRICE
+
+AMOUNT
+
+Transition Period FFP 1 month transition period to allow the contractor to integrate data feed with AFWA's software for a period of performance 1 November 2011 - 30 November 2011. FOB: Destination
+
+NET AMT
+
+FA4600-11-R-0053 Page 4 of 42 ITEM NO 1001
+OPTION
+
+SUPPLIES/SERVICES
+
+QUANTITY 12
+
+UNIT Months
+
+UNIT PRICE
+
+AMOUNT
+
+Global Lightning Data FFP Option Year 1 - The contractor shall provide total lightning to include cloud to flash and cloud to ground for CONUS and OCONUS to the Air Force Weather Agency in accordance with the Performance Work Statement (PWS) for the period of 1 November 2012- 31 October 2013. FOB: Destination
+
+NET AMT
+
+ITEM NO 2001
+OPTION
+
+SUPPLIES/SERVICES
+
+QUANTITY 12
+
+UNIT Months
+
+UNIT PRICE
+
+AMOUNT
+
+Global Lightning Data FFP Option Year 2 - The contractor shall provide total lightning to include cloud to flash and cloud to ground for CONUS and OCONUS to the Air Force Weather Agency in accordance with the Performance Work Statement (PWS) for the period of 1 November 2013 - 31 October 2014. FOB: Destination
+
+NET AMT
+
+FA4600-11-R-0053 Page 5 of 42 ITEM NO 3001
+OPTION
+
+SUPPLIES/SERVICES
+
+QUANTITY 12
+
+UNIT Months
+
+UNIT PRICE
+
+AMOUNT
+
+Global Lightning Data FFP Option Year 3 - The contractor shall provide total lightning to include cloud to flash and cloud to ground for CONUS and OCONUS to the Air Force Weather Agency in accordance with the Performance Work Statement (PWS) for the period of 1 November 2014 - 31 October 2015. FOB: Destination
+
+NET AMT
+
+ITEM NO 4001
+OPTION
+
+SUPPLIES/SERVICES
+
+QUANTITY 12
+
+UNIT Months
+
+UNIT PRICE
+
+AMOUNT
+
+Global Lightning Data FFP Option Year 4 - The contractor shall provide total lightning to include cloud to flash and cloud to ground for CONUS and OCONUS to the Air Force Weather Agency in accordance with the Performance Work Statement (PWS) for the period of 1 November 2015 - 31 October 2016. FOB: Destination
+
+NET AMT
+
+FA4600-11-R-0053 Page 6 of 42 ITEM NO 5001
+OPTION
+
+QUANTITY UNIT UNIT PRICE 6 Months Global Lightning Data 6 Month Extension FFP Option 6 Month Extension - IAW 52.217-8, pricing is to be within the limits and at the rates specified in CLIN 4001. FOB: Destination
+
+SUPPLIES/SERVICES
+
+AMOUNT
+
+NET AMT
+
+INSPECTION AND ACCEPTANCE TERMS Supplies/services will be inspected/accepted at:
+CLIN 0001 0002 1001 2001 3001 4001 5001 INSPECT AT Destination Destination Destination Destination Destination Destination Destination INSPECT BY Government Government Government Government Government Government Government ACCEPT AT Destination Destination Destination Destination Destination Destination Destination ACCEPT BY Government Government Government Government Government Government Government
+
+DELIVERY INFORMATION
+CLIN 0001 DELIVERY DATE POP 01-DEC-2011 TO 30-OCT-2012 QUANTITY N/A SHIP TO ADDRESS F3HRA1 - AFWA/SYO MAROTZ, LAURA 101 NELSON DRIVE OFFUTT AFB NE 68113 232-4441 FOB: Destination UIC F3HRA1
+
+FA4600-11-R-0053 Page 7 of 42 0002 POP 01-NOV-2011 TO 30-NOV-2011 POP 01-NOV-2012 TO 31-OCT-2013 POP 01-NOV-2013 TO 31-OCT-2014 POP 01-NOV-2014 TO 31-OCT-2015 POP 01-NOV-2015 TO 31-OCT-2016 POP 01-NOV-2016 TO 30-APR-2017 N/A (SAME AS PREVIOUS LOCATION) FOB: Destination (SAME AS PREVIOUS LOCATION) FOB: Destination (SAME AS PREVIOUS LOCATION) FOB: Destination (SAME AS PREVIOUS LOCATION) FOB: Destination (SAME AS PREVIOUS LOCATION) FOB: Destination (SAME AS PREVIOUS LOCATION) FOB: Destination F3HRA1
+
+1001
+
+N/A
+
+F3HRA1
+
+2001
+
+N/A
+
+F3HRA1
+
+3001
+
+N/A
+
+F3HRA1
+
+4001
+
+N/A
+
+F3HRA1
+
+5001
+
+N/A
+
+F3HRA1
+
+CLAUSES INCORPORATED BY REFERENCE
+
+Printed or Copied Double-Sided on Postconsumer Fiber MAY 2011 Content Paper 52.209-6 Protecting the Government's Interest When Subcontracting DEC 2010 With Contractors Debarred, Suspended, or Proposed for Debarment 52.209-7 Information Regarding Responsibility Matters JAN 2011 52.212-3 Offeror Representations and Certification--Commercial Items MAY 2011 52.212-3 Alt I Offeror Representations and Certifications--Commercial APR 2011 Items (May 2011) Alternate I 52.212-4 Contract Terms and Conditions--Commercial Items JUN 2010 52.217-5 Evaluation Of Options JUL 1990 52.219-1 Alt I Small Business Program Representations (Apr 2011) APR 2011 Alternate I 52.222-22 Previous Contracts And Compliance Reports FEB 1999 52.223-17 Affirmative Procurement of EPA-Designated Items in Service MAY 2008 and Construction Contracts 52.225-13 Restrictions on Certain Foreign Purchases JUN 2008 52.225-25 Prohibition on Engaging in Sanctioned Activities Relating to SEP 2010 Iran--Certification. 52.232-18 Availability Of Funds APR 1984 52.242-13 Bankruptcy JUL 1995 252.203-7002 Requirement to Inform Employees of Whistleblower Rights JAN 2009 252.204-7003 Control Of Government Personnel Work Product APR 1992 252.204-7004 Alt A Central Contractor Registration (52.204-7) Alternate A SEP 2007 252.204-7008 Export-Controlled Items APR 2010 252.209-7004 Subcontracting With Firms That Are Owned or Controlled By DEC 2006 The Government of a Terrorist Country 252.232-7010 Levies on Contract Payments DEC 2006 252.243-7001 Pricing Of Contract Modifications DEC 1991
+
+52.204-4
+
+FA4600-11-R-0053 Page 8 of 42 252.247-7022 Representation Of Extent Of Transportation Of Supplies By AUG 1992 Sea
+
+CLAUSES INCORPORATED BY FULL TEXT
+
+52.212-1
+
+INSTRUCTIONS TO OFFERORS--COMMERCIAL ITEMS (JUN 2008)
+
+(a) North American Industry Classification System (NAICS) code and small business size standard. The NAICS code and small business size standard for this acquisition appear in Block 10 of the solicitation cover sheet (SF 1449). However, the small business size standard for a concern which submits an offer in its own name, but which proposes to furnish an item which it did not itself manufacture, is 500 employees. (b) Submission of offers. Submit signed and dated offers to the office specified in this solicitation at or before the exact time specified in this solicitation. Offers may be submitted on the SF 1449, letterhead stationery, or as otherwise specified in the solicitation. As a minimum, offers must show-(1) The solicitation number; (2) The time specified in the solicitation for receipt of offers; (3) The name, address, and telephone number of the offeror; (4) A technical description of the items being offered in sufficient detail to evaluate compliance with the requirements in the solicitation. This may include product literature, or other documents, if necessary; (5) Terms of any express warranty; (6) Price and any discount terms; (7) "Remit to" address, if different than mailing address; (8) A completed copy of the representations and certifications at FAR 52.212-3 (see FAR 52.212-3(b) for those representations and certifications that the offeror shall complete electronically); (9) Acknowledgment of Solicitation Amendments; (10) Past performance information, when included as an evaluation factor, to include recent and relevant contracts for the same or similar items and other references (including contract numbers, points of contact with telephone numbers and other relevant information); and (11) If the offer is not submitted on the SF 1449, include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation. Offers that fail to furnish required representations or information, or reject the terms and conditions of the solicitation may be excluded from consideration. (c) Period for acceptance of offers. The offeror agrees to hold the prices in its offer firm for 30 calendar days from the date specified for receipt of offers, unless another time period is specified in an addendum to the solicitation. (d) Product samples. When required by the solicitation, product samples shall be submitted at or prior to the time specified for receipt of offers. Unless otherwise specified in this solicitation, these samples shall be submitted at no expense to the Government, and returned at the sender's request and expense, unless they are destroyed during preaward testing.
+
+FA4600-11-R-0053 Page 9 of 42
+
+(e) Multiple offers. Offerors are encouraged to submit multiple offers presenting alternative terms and conditions or commercial items for satisfying the requirements of this solicitation. Each offer submitted will be evaluated separately. (f) Late submissions, modifications, revisions, and withdrawals of offers: (1) Offerors are responsible for submitting offers, and any modifications, revisions, or withdrawals, so as to reach the Government office designated in the solicitation by the time specified in the solicitation. If no time is specified in the solicitation, the time for receipt is 4:30 p.m., local time, for the designated Government office on the date that offers or revisions are due. (2)(i) Any offer, modification, revision, or withdrawal of an offer received at the Government office designated in the solicitation after the exact time specified for receipt of offers is late and will not be considered unless it is received before award is made, the Contracting Officer determines that accepting the late offer would not unduly delay the acquisition; and-(A) If it was transmitted through an electronic commerce method authorized by the solicitation, it was received at the initial point of entry to the Government infrastructure not later than 5:00 p.m. one working day prior to the date specified for receipt of offers; or (B) There is acceptable evidence to establish that it was received at the Government installation designated for receipt of offers and was under the Government's control prior to the time set for receipt of offers; or (C) If this solicitation is a request for proposals, it was the only proposal received. (ii) However, a late modification of an otherwise successful offer, that makes its terms more favorable to the Government, will be considered at any time it is received and may be accepted. (3) Acceptable evidence to establish the time of receipt at the Government installation includes the time/date stamp of that installation on the offer wrapper, other documentary evidence of receipt maintained by the installation, or oral testimony or statements of Government personnel. (4) If an emergency or unanticipated event interrupts normal Government processes so that offers cannot be received at the Government office designated for receipt of offers by the exact time specified in the solicitation, and urgent Government requirements preclude amendment of the solicitation or other notice of an extension of the closing date, the time specified for receipt of offers will be deemed to be extended to the same time of day specified in the solicitation on the first work day on which normal Government processes resume. (5) Offers may be withdrawn by written notice received at any time before the exact time set for receipt of offers. Oral offers in response to oral solicitations may be withdrawn orally. If the solicitation authorizes facsimile offers, offers may be withdrawn via facsimile received at any time before the exact time set for receipt of offers, subject to the conditions specified in the solicitation concerning facsimile offers. An offer may be withdrawn in person by an offeror or its authorized representative if, before the exact time set for receipt of offers, the identity of the person requesting withdrawal is established and the person signs a receipt for the offer. (g) Contract award (not applicable to Invitation for Bids). The Government intends to evaluate offers and award a contract without discussions with offerors. Therefore, the offeror's initial offer should contain the offeror's best terms from a price and technical standpoint. However, the Government reserves the right to conduct discussions if later determined by the Contracting Officer to be necessary. The Government may reject any or all offers if such action is in the public interest; accept other than the lowest offer; and waive informalities and minor irregularities in offers received. (h) Multiple awards. The Government may accept any item or group of items of an offer, unless the offeror qualifies the offer by specific limitations. Unless otherwise provided in the Schedule, offers may not be submitted for
+
+FA4600-11-R-0053 Page 10 of 42 quantities less than those specified. The Government reserves the right to make an award on any item for a quantity less than the quantity offered, at the unit prices offered, unless the offeror specifies otherwise in the offer. (i) Availability of requirements documents cited in the solicitation. (1)(i) The GSA Index of Federal Specifications, Standards and Commercial Item Descriptions, FPMR Part 101-29, and copies of specifications, standards, and commercial item descriptions cited in this solicitation may be obtained for a fee by submitting a request to--GSA Federal Supply Service Specifications Section, Suite 8100, 470 East L'Enfant Plaza, SW, Washington, DC 20407, Telephone (202) 619-8925, Facsimile (202) 619-8978. (ii) If the General Services Administration, Department of Agriculture, or Department of Veterans Affairs issued this solicitation, a single copy of specifications, standards, and commercial item descriptions cited in this solicitation may be obtained free of charge by submitting a request to the addressee in paragraph (i)(1)(i) of this provision. Additional copies will be issued for a fee. (2) Most unclassified Defense specifications and standards may be downloaded from the following ASSIST websites: (i) ASSIST (http://assist.daps.dla.mil). (ii) Quick Search (http://assist.daps.dla.mil/quicksearch). (iii) ASSISTdocs.com (http://assistdocs.com). (3) Documents not available from ASSIST may be ordered from the Department of Defense Single Stock Point (DoDSSP) by-(i) Using the ASSIST Shopping Wizard (http://assist.daps.dla.mil/wizard); (ii) Phoning the DoDSSP Customer Service Desk (215) 697-2179, Mon-Fri, 0730 to 1600 EST; or (iii) Ordering from DoDSSP, Building 4, Section D, 700 Robbins Avenue, Philadelphia, PA 19111-5094, Telephone (215) 697-2667/2179, Facsimile (215) 697-1462. (4) Nongovernment (voluntary) standards must be obtained from the organization responsible for their preparation, publication, or maintenance. (j) Data Universal Numbering System (DUNS) Number. (Applies to all offers exceeding $3,000, and offers of $3,000 or less if the solicitation requires the Contractor to be registered in the Central Contractor Registration (CCR) database. The offeror shall enter, in the block with its name and address on the cover page of its offer, the annotation DUNS or DUNS +4 followed by the DUNS or DUNS +4 number that identifies the offeror's name and address. The DUNS +4 is the DUNS number plus a 4-character suffix that may be assigned at the discretion of the offeror to establish additional CCR records for identifying alternative Electronic Funds Transfer (EFT) accounts (see FAR Subpart 32.11) for the same concern. If the offeror does not have a DUNS number, it should contact Dun and Bradstreet directly to obtain one. An offeror within the United States may contact Dun and Bradstreet by calling 1866-705-5711 or via the internet at http://fedgov.dnb.com/webform. An offeror located outside the United States must contact the local Dun and Bradstreet office for a DUNS number. The offeror should indicate that it is an offeror for a Government contract when contacting the local Dun and Bradstreet office. (k) Central Contractor Registration. Unless exempted by an addendum to this solicitation, by submission of an offer, the offeror acknowledges the requirement that a prospective awardee shall be registered in the CCR database prior to award, during performance and through final payment of any contract resulting from this solicitation. If the Offeror does not become registered in the CCR database in the time prescribed by the Contracting Officer, the Contracting Officer will proceed to award to the next otherwise successful registered Offeror. Offerors may obtain information on registration and annual confirmation requirements via the Internet at http://www.ccr.gov or by calling 1-888-2272423 or 269-961-5757.
+
+FA4600-11-R-0053 Page 11 of 42
+
+(l) Debriefing. If a post-award debriefing is given to requesting offerors, the Government shall disclose the following information, if applicable: (1) The agency's evaluation of the significant weak or deficient factors in the debriefed offeror's offer. (2) The overall evaluated cost or price and technical rating of the successful and the debriefed offeror and past performance information on the debriefed offeror. (3) The overall ranking of all offerors, when any ranking was developed by the agency during source selection. (4) A summary of the rationale for award; (5) For acquisitions of commercial items, the make and model of the item to be delivered by the successful offeror. (6) Reasonable responses to relevant questions posed by the debriefed offeror as to whether source-selection procedures set forth in the solicitation, applicable regulations, and other applicable authorities were followed by the agency. ADDENDUM TO 52.212-1 Instructions to Offerors ­ Commercial Items 1.0 General Instructions This section of the ITO provides general guidance for preparing proposals as well as specific instructions on the format and content of the proposal. The offeror's proposal must include all data and information requested by the ITO and must be submitted in accordance with these instructions. The offer shall be compliant with the requirements as stated in the Performance Work Statement (PWS), and Solicitation. Non-conformance with the instructions provided in this ITO may result in an unfavorable proposal evaluation. The proposal shall be clear, concise, and shall include sufficient detail for effective evaluation and for substantiating the validity of stated claims. The proposal should not simply rephrase or restate the Government's requirements but rather shall provide convincing rationale to address how the offeror intends to meet these requirements. Proposals that rephrase or restate the Government's requirements shall be considered unresponsive and technically unacceptable. Offerors shall assume that the Government has no prior knowledge of their facilities and experience and will base its evaluation on the information presented in the offeror's proposal. Offerors are reminded that the Government reserves the right to award without discussions. Page limitations shall be treated as maximums. If exceeded, the excess pages will not be read or considered in the evaluation of the proposal and (for paper copies) will not be returned to the offeror. Excess pages shall be destroyed along with all unsuccessful proposals (see paragraph 3.0). Page limitations may also be placed on responses to Evaluation Notices (ENs). The page limitations for ENs, if any, will be identified in the correspondence forwarding the ENs to the offerors. When both sides of a sheet of paper display printed material, it shall be counted as two pages. Each page shall be counted except cover pages, tables of contents, cross reference matrix, tabs, and glossaries. Page size shall be 8.5 x 11 inches, not including foldouts. Pages shall be single-spaced. Except for the reproduced sections of the solicitation document, the text size shall be no less than 10 point. Use at least 1-inch margins on all sides of each page. Pages shall be numbered sequentially by volume. Page limitations apply to electronic proposals, as well. If there are discrepancies in page counts between paper and electronic volumes, the paper version shall take precedence (e.g., if the paper version of a volume is 51 pages, and the electronic version of the same volume is 48 pages, the Government will treat the volume as having 51 pages). Legible tables, charts, graphs and figures should be used wherever practical to depict organizations, systems and layout, implementation schedules, plans, etc. These displays should be uncomplicated, legible and shall not exceed 11 by 17 inches in size. Foldout pages shall fold entirely within the volume, and count as two pages. Foldout pages may only be used for large tables, charts, graphs, diagrams and schematics, and not for pages of
+
+FA4600-11-R-0053 Page 12 of 42 text. For tables, charts, graphs and figures, the text shall be no smaller than 8 point. These limitations shall apply to both electronic and paper proposals.
+
+2.0 Proposal Acceptance Period and Due Date Addendum to 52.212-1(c), Period for Acceptance of Offers. The paragraph is tailored as follows: The offeror agrees to hold the prices in its offer firm for 120 calendar days from the date specified for receipt of offers. The proposal due date/time is specified in the SF 1449, page 1, block 8. If the Offeror does not receive a proposal receipt confirmation, it is their responsibility to contact the POC. 3.0 Disposition of Proposals In accordance with FAR Subpart 4.8 (Government Contract Files), the Government will retain one original copy of all proposals and supplemental documents provided. Unless the Offeror requests otherwise, the Government will destroy all extra copies of proposals and additional documents submitted. 4.0 Point of Contact The Contracting Officer (CO) and Contract Specialist (CS) are the points of contact for this acquisition. Address any questions or concerns you may have for this acquisition to the individuals listed below: Contracting Officer: Mr. Brian Stricker 101 Washington Square, Bldg 40 OFFUTT AFB, NE 68113 Phone: (402) 232-6578 or DSN: 272-6578 Fax: 402-294-0430 E-Mail: Brian.Stricker@offutt.af.mil Contract Administrator: Ms. Melissa Frans 101 Washington Square, Bldg 40 OFFUTT AFB, NE 68113 Phone: (402) 294-3862 or DSN: 271-3862 Fax: 402-294-0430 E-Mail: Melissa.Frans@offutt.af.mil
+
+All inquires must be made in writing and submitted electronically to the above e-mail addresses. Offeror's will receive a notice of receipt. If they do not, it is their responsibility to follow-up by contacting the Contracting Officer (phone number above). Written inquiries (via e-mail) will be answered in writing and provided to all Offerors. 5.0 Debriefings The CO will notify unsuccessful offerors of the source selection decision in accordance with FAR 15.506. Upon such notification, unsuccessful offerors may request and receive a debriefing. Offerors desiring a debriefing must make their request in accordance with the requirements of FAR 15.505 or 15.506, as applicable. 6.0 Discrepancies If an offeror believes that the requirements in these instructions contain an error, omission, or are otherwise unsound, the offeror shall immediately notify the CO in writing with supporting rationale as well as the remedies the offeror is asking the CO to consider as related to the omission or error. The offeror is reminded that the Government reserves the right to award this effort based on the initial proposal, as received, without discussion. This reservation includes matters of additional or substitute pages of the initial proposal. 7.0 Communications Exchanges of source selection information between Government and offerors will be controlled by the Contracting Officer. Email may be used to transmit such information to offerors only if the email can be sent and received encrypted and includes Source Selection Information ­ See FAR 2.101 & 3.104 in the Subject line. Otherwise, source selection information will be transmitted via certified mail. 8.0 Organization/Number of Copies Proposal are due by the time and date specified in blk 8 of SF 1449. Any proposal submitted after this date/time will be considered nonresponsive and not accepted. The Offeror shall prepare the proposal as set forth in Table 1.0, Proposal Organization, below. The volumes identified may be consolidated into one three-ring, loose-leaf binder. The proposal organization should be as follows:
+
+FA4600-11-R-0053 Page 13 of 42
+
+Volume 1 2
+
+Volume Title Factor 1--Technical Factor 2--Past Performance Table of Contents Summary Page Past/Present Performance Information Sheet Past/Present Performance Questionnaire Tracking Record Past/Present Performance Assessment Report Consent Letters Organization Structure Change History Factor 3--Price
+
+Page Limit 20 See below 1 1 3 per contract reference (see also 13.2.1.3.3) No page limit
+
+Number of copies required 3-paper, 1 CD-ROM 3-paper, 1 CD-ROM
+
+No page limit
+
+No page limit 2
+
+3
+
+No page limit
+
+3 paper, 1 CD-ROM
+
+* All documents due Central Time on the date/time specified in blk 8 of SF 1449
+
+9.0 Binding And Labeling Volumes of the proposal may be separated with a divider within the same three-ring binder, which shall permit the volumes to lie flat when open. Staples shall not be used. A cover sheet should be bound in each book, clearly marked as to volume number, title, copy number, solicitation identification and the Offeror's name. The same identifying data should be placed on the spine of each binder. All unclassified document binders shall have a color other than red or other applicable security designation colors. Be sure to apply all appropriate markings including those prescribed in accordance with FAR 52.212-1, Instructions to Offerors, and FAR 3.104-4, Disclosure, Protection, and Marking of Contractor Bid or Proposal Information and Source Selection Information. 10.0 Electronic Media 10.1 On the CD-ROM indicate the volume number and title. Use separate files to permit rapid location of all portions, including exhibits, annexes, and attachments, if any. The Offeror shall submit all volumes in electronic format, using IBM-compatible, virus-free CD-ROM. Each volume may be combined on 1 CDROM. If files are compressed, the necessary decompression program must be included. 10.2 The electronic copies of the proposal shall be submitted in a format readable by Microsoft (MS) Word 2007, MS Excel 2007, or MS Power Point 2007, as applicable.
+
+FA4600-11-R-0053 Page 14 of 42 10.3 Read passwords on files shall not be used. In the event that there is a discrepancy between the content found in a paper copy and an electronic copy, the paper copy shall take precedence. 11.0 Distribution The original proposal shall be identified and delivered to 55 CONS. All copies of proposals shall be mailed or delivered to: 55th Contracting Squadron/LGCZ ATTN: Melissa Frans 101 Washington Square, Bldg. 40 Offutt AFB, NE 68113-2107 Offerors are cautioned that Offutt AFB, NE has visitor control procedures requiring individuals not affiliated with the installation to obtain a visitor pass prior to entrance. SOME DELAY SHOULD BE ANTICIPATED WHEN HANDCARRYING PROPOSALS. Offerors should allow sufficient time to obtain a visitor pass and arrive at the Contracting Office PRIOR to the time specified for receipt. Late proposals will be processed in accordance with FAR 52.212-1(f) Late submission, modifications, revisions, and withdrawals of offers.
+
+If mailing, the outside of the envelope or box(es) should be marked as follows: NOTE: TO BE OPENED BY ADDRESSEE ONLY SOURCE SELECTION INFORMATION ­ SEE FAR 3.104 FOR OFFICIAL USE ONLY 12.0 Volume 1 ­Technical Capability The Technical Capability Volume should be specific and complete. Legibility, clarity, and coherence are very important. Your responses will be evaluated against the Technical subfactors defined in 52.212-2 Evaluation ­ Commercial Items. The following are the subfactors in decending order of importance: 12.1 Subfactor 1: The contractor shall demonstrate its ability to provide cloud-to-ground (CG) and cloud-to-cloud (CF) global lightning data in accordance with the specifications in tables 2-4 of the PWS. The contractor shall also provide its statistical information on the Contractor's CG lightning data product by submitting Attachment 3, tables 1-3. In accordance with 1.0, the contractor shall not copy tables 2-4 from the PWS for this information and shall provide sufficient detail for effective evaluation and for substantiating the validity of stated claims. Copying information from tables 2-4 from the PWS shall cause the contractor to be considered nonresponsive and technically unacceptable. (NOTE: A contractor may indicate, in the table they fill out, that actual statistics on their systems are not available where applicable for the appropriate zones.) 12.2 Subfactor 2: The contractor shall demonstrate its approach to maintain network and data ability to 98% (IAW PWS 3.0.7.1) monthly or higher with no more than 12 hours of down time during any month in the event of network outage, data delivery problems, sensors down, etc and their plan to restore service during the down time in accordance with 3.0.7 of the PWS. 12.3 Subfactor 3: The contractor shall demonstrate its ability to deliver the data in accordance with the delivery specifications in section 3 of the PWS. 12.4 Subfactor 4: The contractor shall demonstrate its ability to provide Help Desk Support 24 hours a day, seven days a week in accordance with Section 3, paragraph 3.0.8 of the PWS. 12.5 Subfactor 5:
+
+FA4600-11-R-0053 Page 15 of 42 The contractor transition plan, in accordance with 3.0.2.3 of the PWS, shall demonstrate its ability to integrate the contractor's data feed with Air Force Weather Agency's software to ensure a seamless transition to the winning bidder within the Period of Performance specified in the Transition Period CLIN 0002. 12.6 Subfactor 6: The contractor shall provide global coverage charts for location accuracy and detection efficiency. IAW PWS Appendix A: Coverage Area Maps (NOTE: A contractor may indicate, on the coverage charts they provide, that actual statistics on their systems are not available and they are unable to provide the coverage maps; where applicable, for the appropriate zones.)
+
+13.0 Volume 2 - Past Performance 13.1General 13.2 Instructions The Offeror shall provide past performance information for evaluation. Failure to provide any information may result in the Offeror being removed from consideration for award. (NOTE: An Offeror with no past performance experience should submit the Past Performance Volume with explanation that it has no recent or relevant experience.) The Government will evaluate past performance through an integrated analysis of those risks and strengths the Government identifies in the Offeror's recent and relevant contract performance. For a description of the characteristics or aspects the Government will consider in determining relevance, see Addendum to 52.212-2. In evaluating the Offeror's past performance record, the Government will use present and past performance information gathered from various sources, which may include, but is not limited to, the past performance information documents submitted, Contractor Performance Assessment Report (CPARs), questionnaires, and interviews. The Government will place more weight and consideration on more relevant and recent past performance information. For the purposes of this evaluation, the term "Offeror" includes the prime contractor and/or team members and major subcontractors performing over 20% of effort. 13.2.1 Contents of Past Performance Volume I The Offeror's Past Performance Volume shall contain the following: 1. 2. 3. 4. 5. 6. 7. Table of Contents Summary Page Past/Present Performance Information Sheets Past/Present Performance Questionnaire Tracking Record Past/Present Performance Assessment Report Consent Letters Organization Structure Change History
+
+13.2.1.1 Table of Contents The Table of Contents shall list all documents contained in the Past Performance Volume. 13.2.1.2 Summary Page The Summary Page shall describe the role for the proposed global lightning data feeds of the Offeror and each subcontractor, teaming partner, and/or joint venture partner that the Offeror is required to provide Past Performance Information Sheets on in accordance with paragraph 13.2.1.3 below. 13.2.1.3 Past/Present Performance Information Sheets 13.2.1.3.1 Submit information on contracts you consider most relevant in demonstrating your ability to perform the proposed effort. For ID/IQ efforts with multiple points of performance or multiple points of contact, submit information on the specific Task/Delivery Order (e.g., if a contract is issued in one particular location, yet a task order is performed in a difference location, submit information specific to that task order and NOT to the main
+
+FA4600-11-R-0053 Page 16 of 42 contract). For those ID/IQ contracts with Delivery/Task Orders performed in multiple locations or with multiple points of contact, each Delivery/Task Order shall be counted as one contract. 13.2.1.3.2 Include rationale supporting your assertion of relevance; however, the Government is not bound by the Offeror's opinion of relevance. Offerors are required to explain what aspects of the contracts are deemed relevant to the proposed effort, and to what aspects of the proposed effort they relate. This may include a discussion of efforts accomplished by the Offeror to resolve problems encountered on prior contracts, as well as past efforts to identify and manage program risk. Where problems existed, clearly demonstrate management actions employed in overcoming these problems and the effects of those actions, in terms of improvements achieved or problems rectified. The evaluation of past performance information will take into account past performance information regarding predecessor companies, key personnel who have relevant experience, or subcontractors that will perform major or critical aspects of the requirement when such information is relevant to the instant acquisition. Furnish the following information for each contract referenced: 1. Company/Division name 2. Product/Service 3. Contracting Agency/Customer Contract Information 4. Contract Number 5. Contract Dollar Value 6. Period of Performance 7. Verified, up-to-date name, address, FAX and telephone number of contracting officer 8. Comments regarding compliance with contract terms and conditions 9. Comments regarding any known performance deemed unacceptable to the customer, or not in accordance with the contract terms and conditions. 13.2.1.3.3 This information is required on the prime Offeror, subcontractors, teaming partners, and/or joint venture partners proposed to perform at least 20% of the proposed effort based on the total proposed price, or performs aspects of the effort the Offeror considers critical to overall successful performance. The maximum number of Past/Present Performance Information sheets an Offeror may submit is three (3) for the prime and one (1) for the critical subcontractor. At a minimum, the Offeror shall submit at least two (2) Past/Present Performance Information sheets for the prime. Each past/present performance information sheet is limited to three pages. The Offeror's past/present performance information sheets must identify active or completed contracts, either Government (international, federal, state or local) or commercial, for the prime, subcontractors, teaming partner, and/or joint venture partner, and must be for the same type effort of providing global lightning data feeds. The Past/Present Performance Information Sheet must reflect the same division or cost center as that proposed. In determining recency, the Government will only consider work performed under an effort existing on or after 1 August 2008. Additionally, the Government will not consider any new contracts awarded or where performance began on or after 1 April 2011, due to the limited performance history of these efforts.
+
+13.2.1.4 Past/Present Performance Questionnaire Tracking Record The Offeror shall send out, and confirm receipt and submission of the Past/Present Performance Questionnaire (Attachment 5), to each of the Offeror's, critical subcontractors', teaming contractors' and/or joint venture partners' (i.e., each entity's) Points of Contact (POCs) identified in the Past/Present Performance Questionnaire Tracking Record (Attachment 6). The responsibility to send out and track the receipt and submission of the Past/Present Performance Questionnaires rests solely with the Offeror. For each questionnaire, complete and sign a letter containing substantially the same information as in the Sample Questionnaire Cover Letter (Attachment 4). Cover letters should be printed on company letterhead. The Offeror shall exert its best efforts to ensure that at least one current POC, per relevant contract, submit a completed Past/Present Performance Questionnaire directly to the Government not later than the due date for the past performance proposal volume. Each of the Offeror's POCs shall fax or e-mail his/her completed Past/Present Performance Questionnaire directly to Ms. Melissa Frans and Mr. Brian Stricker at fax number (402) 294-0430 or e-mail Melissa.Frans@offutt.af.mil and Brian.Stricker@offutt.af.mil. Please instruct points of contact to call Ms. Frans at 402-294-3862 or Mr. Stricker at 402-232-6578 before faxing their responses. Mailing the questionnaire(s) is an acceptable alternative method of transmission. The mailing address is:
+
+FA4600-11-R-0053 Page 17 of 42
+
+55 CONS/LGCZ ATTN: Melissa Frans & Brian Stricker 101 WASHINGTON SQ BLDG 40 OFFUTT AFB NE 68113-2107 If mailing, the outside envelope must be marked as follows: NOTE: TO BE OPENED BY ADDRESSEE ONLY SOURCE SELECTION INFORMATION - SEE FAR 3.104 FOR OFFICIAL USE ONLY Once the Past/Present Performance Questionnaires are completed by the points of contact, the information contained therein shall be considered sensitive and shall not be released to the Offeror. Questionnaires shall be sent to, and best efforts made to ensure completion and submission directly to the Government from at least two of the following: Procuring Contracting Officer/Contract Negotiator or equivalent Program/Project Manager, or equivalent Administrative Contracting Officer/Contract Administrator or equivalent 13.2.1.5 Past/Present Performance Assessment Report This information is required on the contracts/task orders submitted in accordance with paragraph 13.2.1.3 Past/Present Performance Information Sheets. If an evaluation form other than a Contractor Performance Assessment Report (CPAR) has been used in conducting performance assessments, such as an Award Fee notification letter, submit that form. If a CPAR or other evaluation form has been accomplished on the Offeror's existing work, but the contracting office for that requirement will not release the information, the Offeror shall immediately notify the Contracting Officer or Contract Administrator for this solicitation. Provide the contract number, point-of-contact and phone number from which the past/present performance information should be obtained. This information should be provided to the Contracting Officer or Contract Administrator for this solicitation as soon as any difficulty occurs and before the proposal due date. 13.2.1.6 Consent Letters Past/present performance information concerning subcontractors and teaming partners cannot be disclosed to a private party without the subcontractor's or teaming partner's consent. Because the Offeror is a private party, the Government will need that consent before disclosing subcontractor / teaming partner past/present performance information to the Offeror during exchanges. In an effort to assist the Government in assessing your past/present performance relevancy and confidence, request a Consent Letter (Attachment 6) be completed by the major subcontractors and teaming partners identified in the proposal. The completed consent letter should be submitted as part of the Past Performance Information Volume, but will not be considered in the page count of this Volume. Should the Offeror not submit a completed Consent Letter for major subcontractors or teaming partners, the Government will only discuss past/present performance information directly with the prospective subcontractor or teaming partner that is being reviewed. If there is a problem with the proposed subcontracto r's or teaming partner's past/present performance, the Offeror can be notified of a problem, but no details may be discussed without the subcontractor's / teaming partner's permission. 13.2.1.7 Organization Structure Change History Many companies have acquired, been acquired by, or otherwise merged with other companies, and/or reorganized their divisions, business groups, subsidiary companies, etc. In many cases, these changes have taken place during the time of performance of relevant past efforts or between conclusion of recent past efforts and this source selection. As a result, it is sometimes difficult to determine what past/present performance is relevant to this acquisition. To facilitate this relevancy determination, include in this proposal volume a "roadmap" describing all such changes in the organization of your company. As part of this explanation, show how these changes impact the relevance of any efforts you identify for past performance evaluation/performance confidence assessment. Since the Government intends to consider past performance information provided by other sources as well as that provided by
+
+FA4600-11-R-0053 Page 18 of 42 the Offeror(s), the "roadmap" shall be both specifically applicable to the efforts identified and general enough to apply to efforts on which the Government receives information from other sources. This information is required on the Offeror, subcontractors, teaming partners, and/or joint venture partners. 13.2.2 Determination of Responsibility Even though the assessment of Past Performance as a specific evaluation factor is separate and distinct from the Determination of Responsibility required by FAR 9.1, Responsible Prospective Contractors, past performance information obtained herein will be used to support the Determination of Responsibility for the successful Offeror. 14.0 Volume 3 ­ Price 14.1 Price will be assessed for reasonableness and affordability pursuant to FAR 15.305(a), 15.402(a), 15.404-1. 14.2 Complete blocks 12, 17a, and 30a, b, and c of the SF 1449. In doing so, the Offeror accedes to the contract terms and conditions as written in the SOLICITATION, with attachments. 14.3 Insert proposed unit and extended prices in the Pricing Schedule per CLIN on pages 3-5 of this RFP. The proposal(s) must be submitted for a base year plus four (4) Option Years. 14.4 Complete and return with proposal necessary fill-ins and certifications to include FAR 52.212-3 and DFARS 252.212-7000, and 252.225-7000. 14.5 Exceptions To Terms And Conditions Exceptions taken to terms and conditions of the solicitation, to any of its formal attachments, or to other parts of the solicitation shall be identified. Each exception shall reference the paragraph and/or specific part of the solicitation to which it is taken, the page and paragraph number, and justification for why the requirement will not be met. Provide rationale in support of the exception and fully explain its impact, if any, on the performance, schedule, price, and specific requirements of the solicitation. Failure to comply with the terms and conditions of the solicitation may result in the proposal being considered non-responsive and result in the Offeror being removed from consideration for award. (End of provision)
+
+52.212-2
+
+EVALUATION--COMMERCIAL ITEMS (JAN 1999)
+
+(a) The Government will award a contract resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation will be most advantageous to the Government, price and other factors considered. The following factors shall be used to evaluate offers: (i) (ii) (iii) Technical Capability/ Risk Past Performance Price
+
+Technical is equal to past performance in importance and combined is significantly more important than price. (b) Options. The Government will evaluate offers for award purposes by adding the total price for all options to the total price for the basic requirement. The Government may determine that an offer is unacceptable if the option
+
+FA4600-11-R-0053 Page 19 of 42 prices are significantly unbalanced. Evaluation of options shall not obligate the Government to exercise the option(s). (c) A written notice of award or acceptance of an offer, mailed or otherwise furnished to the successful offeror within the time for acceptance specified in the offer, shall result in a binding contract without further action by either party. Before the offer's specified expiration time, the Government may accept an offer (or part of an offer), whether or not there are negotiations after its receipt, unless a written notice of withdrawal is received before award. ADDENDUM TO FAR 52.212-2: Basis for Contract Award This is a competitive Full Trade Off source selection in which the Government will select for award the offeror deemed to provide the best overall value to the Government, based upon an integrated assessment of Technical Capability, Past Performance, and Price. This best value source selection will be conducted in accordance with the Federal Acquisition Regulation (FAR) 15.3, Defense Federal Acquisition Regulation Supplement (DFARS) 215.3, the Department of Defense (DoD) Source Selection Procedures, the Air Force Federal Acquisition Regulation Supplement (AFFARS) 5315.3, and the Air Force Mandatory Procedures (MP5315.3) for Source Selections. The contract may be awarded to the offeror who is deemed responsible in accordance with the FAR, as supplemented, whose proposal conforms to the solicitation's requirements (to include all stated terms, conditions, representations, and all other information required by this solicitation) and is judged, based on the evaluation factors and subfactors, to represent the best value to the Government. The Government seeks to award a single contract to the offeror who gives the Government the best value and assurance that it will best meet or exceed the requirements affordably. However, the Government reserves the right to not award a contract depending on the quality of proposals submitted and availability of funds. The Government may award to a higher rated, higher priced offeror, where the decision is consistent with the evaluation factors and the Source Selection Authority (SSA) reasonably determines that the technical superiority and/or overall business approach and/or superior past performance of the higher priced offeror outweighs the cost difference. To arrive at a source selection decision, the SSA will integrate the Source Selection Evaluation Board (SSEB) evaluation of the factors, subfactors (described below), past performance and proposed cost. While the SSEB and the SSA will strive for maximum objectivity, the source selection process, by its nature, is subjective and, therefore, professional judgment is implicit throughout the entire process. The evaluation process shall proceed as follows: Technical Capability will be evaluated using a separate technical/risk rating. Price will be evaluated for reasonableness and affordability. Past Performance is equal with technical and when combined significantly more important than price. A. Technical Capability: The Government technical evaluation team shall evaluate the technical capability proposals submitted by using a separate technical/risk rating in accordance with methodology 2 in the DOD Source Selection Procedures 3.1.2.2. Each subfactor shall receive a technical and risk rating The technical rating evaluates the quality of the offeror's technical solution for meeting the Governments Requirement. The risk rating considers the risk associated with the technical approach in meeting the Requirement. The evaluations shall use the following tables for ratings.
+
+DoD Source Selection Procedures Technical Color Blue Rating Outstanding Description Proposal meets requirements and indicates an exceptional approach and understanding of the requirements. The proposal contains multiple strengths and no deficiencies, Proposal meets requirements and indicates a thorough approach and
+
+Purple
+
+Good
+
+FA4600-11-R-0053 Page 20 of 42 understanding of the requirements. Proposal contains at least one strength and no deficiencies. Green Yellow Red Acceptable Marginal Unacceptable Proposal meets requirements and indicates an adequate approach and understanding of the requirements. Proposal has no strengths or deficiencies. Proposal does not clearly meet requirements and has not demonstrated an adequate approach and understanding of the requirements. Proposal does not meet requirements and contains one or more deficiencies and is unawardable.
+
+DoD Source Selection Procedures Technical Risk Ratings Rating Description Has little potential to cause disruption of schedule, or degradation of Low performance. Normal contractor effort and normal. Government monitoring will likely be able to overcome any difficulties. Moderate Can potentially cause disruption of schedule, or degradation of performance. Special contractor emphasis and close Government monitoring will likely be able to overcome difficulties. Is likely to cause significant disruption of schedule, or degradation of performance. Is unlikely to overcome any difficulties, even with special contractor emphasis and close Government monitoring.
+
+High
+
+The proposals shall be evaluated against the following subfactors in decending order of importance: Subfactor 1: The contractor shall demonstrate its ability to provide cloud-to-ground (CG) and cloud-to-cloud (CF) global lightning data in accordance with the specifications in tables 2-4 of the PWS. The contractor shall also provide its statistical information on the Contractor's CG lightning data product by submitting Attachment 3, tables 1 -3. In accordance with 1.0 of FAR 52.212-1 Instructions to Offerors ­ Commercial items, the contractor shall not copy tables 2-4 from the PWS for this information and shall provide sufficient detail for effective evaluation and for substantiating the validity of stated claims. Copying information from tables 2-4 from the PWS will cause the contractor to be considered nonresponsive technically unacceptable. (NOTE: A contractor may indicate, in the table they fill out, that actual statistics on their systems are not available where applicable for the appropriate zones.) Subfactor 2: The contractor shall demonstrate its approach to maintain network and data ability to 98% (IAW PWS 3.0.7.1) monthly or higher with no more than 12 hours of down time during any month in the event of network outage, data delivery problems, sensors down, etc and their plan to restore service during the down time in accordance with 3.0.7 of the PWS. Subfactor 3: The contractor shall demonstrate its ability to deliver the data in accordance with the delivery specifications in section 3 of the PWS. Subfactor 4: The contractor shall demonstrate its ability to provide Help Desk Support 24 hours a day, seven days a week in accordance with Section 3, paragraph 3.0.8 of the PWS.
+
+FA4600-11-R-0053 Page 21 of 42
+
+Subfactor 5: The contractor transition plan, in accordance with 3.0.2.3 of the PWS, shall demonstrate its ability to integrate the contractor's data feed with Air Force Weather Agency's software to ensure a seamless transition to the winning bidder within the Period of Performance specified in the Transition Period CLIN 0002. Subfactor 6: The contractor shall provide global coverage charts for location accuracy and detection efficiency. IAW PWS Appendix A: Coverage Area Maps (NOTE: A contractor may indicate, on the coverage charts they provide, that actual statistics on their systems are not available and they are unable to provide the coverage maps; where applicable, for the appropriate zones.)
+
+C. PAST PERFORMANCE Recency and Relevancy In evaluating past performance, the Government reserves the right to give greater consideration to information on those contracts deemed most relevant to the effort described in this solicitation. More recent and relevant performance will have a greater impact on the Performance Confidence Assessment than less recent or relevant effort. A strong record of relevant past performance may be considered more advantageous to the Government than a "Neutral/Unknown Confidence" rating. Likewise, a more relevant past performance record may receive a higher confidence rating and be considered more favorably than a less relevant record of favorable performance. Offerors are to note that, in conducting this assessment, the Government reserves the right to use both data provided by the Offeror and data obtained from other sources. Past performance information will be obtained through the Contractor Performance Assessment Reporting Systems (CPARS), similar systems of other Government departments and agencies, questionnaires tailored to the circumstances of this acquisition, Defense Contract Management Agency (DCMA) channels, interviews with program managers and contracting officers, and other sources known to the Government, including commercial sources. In order to be considered relevant, the effort must have been performed on or after 1 April 2008 with a performance start date before 1 April 2011, and must have been the same type effort. The Government may consider, for relevancy, efforts performed for agencies of the federal, state, or local Governments and commercial customers where the performance can be independently verified. Where relevant performance record indicates performance problems, the Government will consider the number and severity of the problems and the appropriateness and effectiveness of any corrective actions taken (not just planned or promised). The following relevancy definitions apply for past performance contracts submitted for Global Lightning Data services: PAST PERFORMANCE RELEVANCY RATINGS RATING VERY RELEVANT RELEVANT SOMEWHAT RELEVANT NOT RELEVANT Criteria:  Provided global lightning STROKE data in ASCII or XML format Definition Present/past performance effort involved essentially the same scope and magnitude of effort and complexities this solicitation requires. Present/past performance effort involved similar scope and magnitude of effort and complexities this solicitation requires. Present/past performance effort involved some of the scope and magnitude of effort and complexities this solicitation requires. Present/past performance effort involved little or none of the scope and magnitude of effort and complexities this solicitation requires.
+
+FA4600-11-R-0053 Page 22 of 42  Provided encrypted data feeds via the internet  Provided help desk services for global lightning data 24 hours a day 7 days a week  Provided emergency response time of 4 hours or less for their global lightning data and network services  Responsible for global lightning data network and data availability  Provided the following data fields in the global lightning data feeds: date-time (UTC) to thousands of a second, latitude (deg) and longitude (deg) (to thousandths), signal strength (ka), polarity, multiplicity (#strokes/flash), and the number of sensors used to collect the data In determining recency, the Government will only consider contracts in existence on or after 1 April 2008. This will allow Offerors to provide the most current past performance information for consideration. Additionally, the Government will not consider any new contracts awarded or where performance began on or after 1 April 2011, due to the limited performance history of these efforts. An offeror's past performance information will be evaluated and rated using the following qualitative performance ratings.
+
+Code Performance Quality Rating B BLUE (B)/EXCEPTIONAL
+
+P
+
+PURPLE (P)/VERY GOOD
+
+G
+
+GREEN (G)/SATISFACTORY
+
+Y
+
+YELLOW (Y)/MARGINAL
+
+R
+
+RED (R)/UNSATISFACTORY
+
+Description During the contract period, contractor performance is meeting (or met) all contract requirements and exceeding (or exceeded) many; consistently performed at a superior level. Performance was accomplished with very few minor problems, and the contractor took immediate and effective corrective actions for those problems that did occur. During the contract period, contractor performance is meeting (or met) all contract requirements and exceeding (or exceeded) some; consistently performed very well. Performance was accomplished with some minor problems, and the contractor took timely and effective corrective actions for those problems that did occur During the contract period, contractor performance is meeting (or met) all contract requirements; consistently performed at an acceptable level. Performance was accomplished with some problems, and the contractor took effective corrective actions for those problems that did occur. During the contract period, contractor performance is not meeting (or did not meet) some contract requirements. There were instances where performance was at a less than acceptable level; performance was accomplished with some problems and some corrective actions appeared only marginally effective or were not fully implemented. Customer involvement was required. During the contract period, contractor performance is failing (or failed) to meet most contract requirements and performance is (or was) at an unacceptable level. There were a number of serious problems and corrective actions were either ineffective or non-
+
+FA4600-11-R-0053 Page 23 of 42
+
+N
+
+NOT APPLICABLE (N)
+
+existent. Extensive customer oversight and involvement was required. Unable to provide a rating. Contract did not include performance on this aspect, or information was not available. Do not know.
+
+Performance Confidence Assessment Under the Past Performance factor, the Performance Confidence Assessment represents the evaluation of an Offeror's past work records to assess the Government's confidence in the Offeror's probability of successfully performing the contract requirements. The Government will evaluate the Offeror's demonstrated record of contract compliance in supplying products and services that meet user's needs, including performance and cost. The contracting officer shall seek relevant performance information on each offer based on (1) the references and information provided by the Offeror, (2) Past Performance Questionnaires, and (3) data independently obtained from other Government and commercial sources. Relevant performance includes performance of efforts involving gathering and distributing global lightning data. The assessment process will result in an overall performance confidence assessment rating of Substantial Confidence, Satisfactory Confidence, Limited Confidence, No Confidence, or Unknown Confidence as defined in DoD Mandatory Procedures, Table 5. Past performance regarding predecessor companies, key personnel who have relevant experience, or sub-contractors that will perform major or critical aspects of the requirement will be considered as highly as past performance information for the principal Offeror. Offerors with no relevant past or present performance history shall receive the rating Unknown Confidence, meaning the rating is treated neither favorably nor unfavorably. The performance ratings are:
+
+PERFORMANCE CONFIDENCE ASSESSMENTS Rating SUBSTANTIAL CONFIDENCE Description Based on the offeror's recent/relevant performance record, the Government has a high expectation that the offeror will successfully perform the required effort. Based on the offeror's recent/relevant performance record, the Government has a reasonable expectation that the offeror will successfully perform the required effort. Based on the offeror's recent/relevant performance record, the Government has a low expectation that the offeror will successfully perform the required effort. Based on the offeror's recent/relevant performance record, the Government has no expectation that the offeror will be able to successfully perform the required effort. No recent/relevant performance record is available or the offeror's performance record is so sparse that no meaningful confidence assessment rating can be reasonably assigned.
+
+SATISFACTORY CONFIDENCE
+
+LIMITED CONFIDENCE NO CONFIDENCE UNKNOWN CONFIDENCE (NEUTRAL)
+
+D. Analysis of Price: Price will be assessed for reasonableness and affordability pursuant to FAR 15.305(a), 15.402(a), and 15.404-1. There is no rating (e.g. color, risk, etc.) associated with the price factor. The total
+
+FA4600-11-R-0053 Page 24 of 42 evaluated price for award purposes will be the sum of all priced Contract Line Item Numbers (CLINS), including all option years (in accoradance with 52.217-9 Option to Extend the Term of the Contract) and six month extension (in accoradance with 52.217-8 Option to Extend Services). For a price to be reasonable, it must represent a price to the Government that a prudent person would pay in the conduct of competitive business. Price reasonableness will be determined based on a comparison of offeror's overall total evaluated price. Normally, price reasonableness is established through cost and/or price analysis techniques as described in FAR 15.404. For additional information see FAR 31.201-3. To assess affordability, the Government will review the contractor's proposed price against the Government's expected budget for each fiscal year. The government intends to award a contract without discussions with respective offerors. The government, however, reserves the right to conduct discussions if deemed in its best interest. (End of provision)
+
+52.212-5 CONTRACT TERMS AND CONDITIONS REQUIRED TO IMPLEMENT STATUTES OR EXECUTIVE ORDERS--COMMERCIAL ITEMS (AUG 2011) (a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract by reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items: (1) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)). ___ Alternate I (Aug 2007) of 52.222-50 (22 U.S.C. 7104(g)). (2) 52.233-3, Protest After Award (AUG 1996) (31 U.S.C. 3553). (3) 52.233-4, Applicable Law for Breach of Contract Claim (OCT 2004) (Pub. L. 108-77, 108-78). (b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: (Contracting Officer check as appropriate.) _x__ (1) 52.203-6, Restrictions on Subcontractor Sales to the Government (SEP 2006), with Alternate I (OCT 1995) (41 U.S.C. 253g and 10 U.S.C. 2402). ___ (2) 52.203-13, Contractor Code of Business Ethics and Conduct (APR 2010)(Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note)). ___ (3) 52.203-15, Whistleblower Protections under the American Recovery and Reinvestment Act of 2009 (JUN 2010) (Section 1553 of Pub. L. 111-5). (Applies to contracts funded by the American Recovery and Reinvestment Act of 2009.) _x__ (4) 52.204-10, Reporting Executive Compensation and First-Tier Subcontract Awards (JUL 2010) (Pub. L. 109-282) (31 U.S.C. 6101 note).
+
+FA4600-11-R-0053 Page 25 of 42 ___ (5) 52.204-11, American Recovery and Reinvestment Act --Reporting Requirements (JUL 2010) (Pub. L. 111-5). _x__ (6) 52.209-6, Protecting the Government's Interest When Subcontracting with Contractors Debarred, Suspended, or Proposed for Debarment (DEC 2010) (31 U.S.C. 6101 note). __x_ (7) 52.209-10, Prohibition on Contracting with Inverted Domestic Corporations (section 740 of Division C of Public Law 111-117, section 743 of Division D of Public Law 111-8, and section 745 of Division D of Public Law 110-161).
+
+___ (8) 52.219-3, Notice of Total HUBZone Set-Aside or Sole-Source Award (JAN 2011) (15 U.S.C. 657a). ___ (9) 52.219-4, Notice of Price Evaluation Preference for HUBZone Small Business Concerns (JAN 2011) (if the offeror elects to waive the preference, it shall so indicate in its offer) (15 U.S.C. 657a). ___ (10) [Reserved]. ___ (11)(i) 52.219-6, Notice of Total Small Business Set-Aside (JUNE 2003) (15 U.S.C. 644). ___ (ii) Alternate I (OCT 1995) of 52.219-6. ___ (iii) Alternate II (MAR 2004) of 52.219-6. ___ (12)(i) 52.219-7, Notice of Partial Small Business Set-Aside (JUNE 2003) (15 U.S.C. 644). ___ (ii) Alternate I (OCT 1995) of 52.219-7. ___ (iii) Alternate II (MAR 2004) of 52.219-7. _x__ (13) 52.219-8, Utilization of Small Business Concerns (JAN 2011) (15 U.S.C. 637 (d)(2) and (3)). ___ (14)(i) 52.219-9, Small Business Subcontracting Plan (JAN 2011) (15 U.S.C. 637(d)(4)). ___ (ii) Alternate I (OCT 2001) of 52.219-9 ___ (iii) Alternate II (OCT 2001) of 52.219-9. ___ (iv) Alternate III (JUL 2010) of 52.219-9. ___ (15) 52.219-14, Limitations on Subcontracting (DEC 1996) (15 U.S.C. 637(a)(14)). ___ (16) 52.219-16, Liquidated Damages--Subcontracting Plan (JAN 1999) (15 U.S.C. 637(d)(4)(F)(i)).
+
+FA4600-11-R-0053 Page 26 of 42 ___ (17)(i) 52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns (OCT 2008) (10 U.S.C. 2323) (if the offeror elects to waive the adjustment, it shall so indicate in its offer). ___ (ii) Alternate I (JUNE 2003) of 52.219-23. ___ (18) 52.219-25, Small Disadvantaged Business Participation Program--Disadvantaged Status and Reporting (DEC 2010) (Pub. L. 103-355, section 7102, and 10 U.S.C. 2323). ___ (19) 52.219-26, Small Disadvantaged Business Participation Program--Incentive Subcontracting (OCT 2000) (Pub. L. 103-355, section 7102, and 10 U.S.C. 2323). ___ (20) 52.219-27, Notice of Total Service-Disabled Veteran-Owned Small Business Set-Aside (MAY 2004) (U.S.C. 657 f). _x__ (21) 52.219-28, Post Award Small Business Program Rerepresentation (APR 2009) (15 U.S.C. 632(a)(2)). ___ (22) 52.219-29 Notice of Total Set-Aside for Economically Disadvantaged Women-Owned Small Business (EDWOSB) Concerns (APR 2011). ___ (23) 52.219-30 Notice of Total Set-Aside for Women-Owned Small Business (WOSB) Concerns Eligible Under the WOSB Program (APR 2011). _x__ (24) 52.222-3, Convict Labor (JUNE 2003) (E.O. 11755). _x__ (25) 52.222-19, Child Labor--Cooperation with Authorities and Remedies (JUL 2010) (E.O. 13126). _x__ (26) 52.222-21, Prohibition of Segregated Facilities (FEB 1999). _x__ (27) 52.222-26, Equal Opportunity (MAR 2007) (E.O. 11246). _x__ (28) 52.222-35, Equal Opportunity for Veterans (SEP 2010) (38 U.S.C. 4212).
+
+_x__ (29) 52.222-36, Affirmative Action for Workers with Disabilities (OCT 2010) (29 U.S.C. 793). _x___ (30) 52.222-37, Employment Reports on Veterans (Sep 2010) (38 U.S.C. 4212).
+
+____ (31) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (DEC 2010) (E.O. 13496).
+
+FA4600-11-R-0053 Page 27 of 42 ___ (32) 52.222-54, Employment Eligibility Verification (JAN 2009). (Executive Order 12989). (Not applicable to the acquisition of commercially available off-the-shelf items or certain other types of commercial items as prescribed in 22.1803.) ___ (33) (i) 52.223-9, Estimate of Percentage of Recovered Material Content for EPA-Designated Items (MAY 2008) (42 U.S.C. 6962(c)(3)(A)(ii)). (Not applicable to the acquisition of commercially available off-the-shelf items.) ___ (ii) Alternate I (MAY 2008) of 52.223-9 (42 U.S.C. 6962(i)(2)(c)). (Not applicable to the acquisition of commercially available off-the-shelf items.) ___ (34) 52.223-15, Energy Efficiency in Energy-Consuming Products (DEC 2007) (42 U.S.C. 8259b) ___ (35)(i) 52.223-16, IEEE 1680 Standard for the Environmental Assessment of Personal Computer Products (DEC 2007) (E.O. 13423) .
+
+___ (ii) Alternate I (DEC 2007) of 52.223-16. . ___ (36) 52.223-18, Encouraging Contractor Policies to Ban Text Messaging While Driving (AUG 2011). ___ (37) 52.225-1, Buy American Act--Supplies (JUNE 2003) (41 U.S.C. 10a-10d). ___ (38)(i) 52.225-3, Buy American Act--Free Trade Agreements--Israeli Trade Act (JUN 2009) (41 U.S.C. 10a10d, 19 U.S.C. 3301 note, 19 U.S.C. 2112 note, 19 U.S.C. 3805 note, Pub. L. 108-77, 108-78, 108-286, 108-302, 109-53, 109-169, 109-283, and 110-138). ___ (ii) Alternate I (JAN 2004) of 52.225-3. ___ (iii) Alternate II (JAN 2004) of 52.225-3. ___ (39) 52.225-5, Trade Agreements (AUG 2009) (19 U.S.C. 2501, et seq., 19 U.S.C. 3301 note). _x__ (40) 52.225-13, Restrictions on Certain Foreign Purchases (JUN 2008) (E.O.'s, proclamations, and statutes administered by the Office of Foreign Assets Control of the Department of the Treasury). ___ (41) 52.226-4, Notice of Disaster or Emergency Area Set-Aside (Nov 2007) (42 U.S.C. 5150). ___ (42) 52.226-5, Restrictions on Subcontracting Outside Disaster or Emergency Area (Nov 2007) (42 U.S.C. 5150). ___ (43) 52.232-29, Terms for Financing of Purchases of Commercial Items (FEB 2002) (41 U.S.C. 255(f), 10 U.S.C. 2307(f))
+
+FA4600-11-R-0053 Page 28 of 42 ___ (44) 52.232-30, Installment Payments for Commercial Items (OCT 1995) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)). ___ (45) 52.232-33, Payment by Electronic Funds Transfer--Central Contractor Registration (OCT 2003) (31 U.S.C. 3332). ___ (46) 52.232-34, Payment by Electronic Funds Transfer--Other than Central Contractor Registration (MAY 1999) (31 U.S.C. 3332) ___ (47) 52.232-36, Payment by Third Party (FEB 2010) (31 U.S.C. 3332). ___ (48) 52.239-1, Privacy or Security Safeguards (AUG 1996) (5 U.S.C. 552a). ___ (49)(i) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (FEB 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C. 2631). ___ (ii) Alternate I (APR 2003) of 52.247-64. ____ (c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: (Contracting Officer check as appropriate.) _x___ (1) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.). _x___ (2) 52.222-42, Statement of Equivalent Rates for Federal Hires (MAY 1989) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.). 14074 ­ Computer Programer at $20.58 per hour ____ (3) 52.222-43, Fair Labor Standards Act and Service Contract Act--Price Adjustment (Multiple Year and Option Contracts) (SEP 2009) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.). _x___ (4) 52.222-44, Fair Labor Standards Act and Service Contract Act--Price Adjustment (SEP 2009) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.) ____ (5) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment--Requirements (Nov 2007) (41 U.S.C. 351, et seq.). ____ (6) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services-Requirements (FEB 2009) (41 U.S.C. 351, et seq.).
+
+FA4600-11-R-0053 Page 29 of 42 ____ (7) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247).
+
+____ (8) 52.237-11, Accepting and Dispensing of $1 Coin (SEP 2008)(31 U.S.C. 5112(p)(1)). (d) Comptroller General Examination of Record. The Contractor shall comply with the provisions of this paragraph (d) if this contract was awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at 52.215-2, Audit and Records--Negotiation. (1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right to examine any of the Contractor's directly pertinent records involving transactions related to this contract. (2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination, audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR Subpart 4.7, Contractor Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records relating to the work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such appeals, litigation, or claims are finally resolved. (3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary course of business or pursuant to a provision of law. (e) (1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c), and (d) of this clause, the Contractor is not required to flow down any FAR clause, other than those in this paragraph (e)(1)in a subcontract for commercial items. Unless otherwise indicated below, the extent of the flow down shall be as required by the clause-- (i) 52.203-13, Contractor Code of Business Ethics and Conduct (APR 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note). (ii) 52.219-8, Utilization of Small Business Concerns (DEC 2010) (15 U.S.C. 637(d)(2) and (3)), in all subcontracts that offer further subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $650,000 ($1.5 million for construction of any public facility), the subcontractor must include 52.219-8 in lower tier subcontracts that offer subcontracting opportunities. (iii) Reserved. (iv) 52.222-26, Equal Opportunity (MAR 2007) (E.O. 11246). (v) 52.222-35, Equal Opportunity for Veterans (SEP 2010) (38 U.S.C. 4212). (vi) 52.222-36, Affirmative Action for Workers with Disabilities (OCT 1998) (29 U.S.C. 793). (vii) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (DEC 2010) (E.O. 13496). Flow down required in accordance with paragraph (f) of FAR clause 52.222-40. (viii) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.). (ix) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)).
+
+FA4600-11-R-0053 Page 30 of 42 Alternate I (AUG 2007) of 52.222-50 (22 U.S.C. 7104(g)). (x) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment--Requirements (Nov 2007) (41 U.S.C. 351, et seq.). (xi) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services-Requirements (FEB 2009) (41 U.S.C. 351, et seq.). (xii) 52.222-54, Employment Eligibility Verification (JAN 2009). (xiii) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations. (MAR 2009) (Pub. L. 110-247). Flow down required in accordance with paragraph (e) of FAR clause 52.226-6. (xiv) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (FEB 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C. 2631). Flow down required in accordance with paragraph (d) of FAR clause 52.247-64. (2) While not required, the contractor May include in its subcontracts for commercial items a minimal number of additional clauses necessary to satisfy its contractual obligations. (End of clause)
+
+52.217-8
+
+OPTION TO EXTEND SERVICES (NOV 1999)
+
+The Government may require continued performance of any services within the limits and at the rates specified in the contract. These rates may be adjusted only as a result of revisions to prevailing labor rates provided by the Secretary of Labor. The option provision may be exercised more than once, but the total extension of performance hereunder shall not exceed 6 months. The Contracting Officer may exercise the option by written notice to the Contractor within 30 days (insert the period of time within which the Contracting Officer may exercise the option). (End of clause)
+
+52.217-9
+
+OPTION TO EXTEND THE TERM OF THE CONTRACT (MAR 2000)
+
+(a) The Government may extend the term of this contract by written notice to the Contractor within 30 (insert the period of time within which the Contracting Officer may exercise the option); provided that the Government gives the Contractor a preliminary written notice of its intent to extend at least 60 days (60 days unless a different number of days is inserted) before the contract expires. The preliminary notice does not commit the Government to an extension. (b) If the Government exercises this option, the extended contract shall be considered to include this option clause. (c) The total duration of this contract, including the exercise of any options under this clause, shall not exceed 66 months. (End of clause)
+
+52.219-1
+
+SMALL BUSINESS PROGRAM REPRESENTATIONS (APR 2011)
+
+FA4600-11-R-0053 Page 31 of 42
+
+(a)(1) The North American Industry Classification System (NAICS) code for this acquisition is 541990. (2) The small business size standard is $7M. (3) The small business size standard for a concern which submits an offer in its own name, other than on a construction or service contract, but which proposes to furnish a product which it did not itself manufacture, is 500 employees. (b) Representations. (1) The offeror represents as part of its offer that it ( ) is, ( ) is not a small business concern. (2) (Complete only if the offeror represented itself as a small business concern in paragraph (b)(1) of this provision.) The offeror represents, for general statistical purposes, that it ( ) is, ( ) is not a small disadvantaged business concern as defined in 13 CFR 124.1002. (3) (Complete only if the offeror represented itself as a small business concern in paragraph (b)(1) of this provision.) The offeror represents as part of its offer that it ( ) is, ( ) is not a women-owned small business concern. (4) Women-owned small business (WOSB) concern eligible under the WOSB Program. [Complete only if the offeror represented itself as a women-owned small business concern in paragraph (b)(3) of this provision.] The offeror represents as part of its offer that-(i) It * is, * is not a WOSB concern eligible under the WOSB Program, has provided all the required documents to the WOSB Repository, and no change in circumstances or adverse decisions have been issued that affects its eligibility; and (ii) It * is, * is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation in paragraph (b)(4)(i) of this provision is accurate in reference to the WOSB concern or concerns that are participating in the joint venture. [The offeror shall enter the name or names of the WOSB concern or concerns that are participating in the joint venture: ----.] Each WOSB concern participating in the joint venture shall submit a separate signed copy of the WOSB representation. (5) Economically disadvantaged women-owned small business (EDWOSB) concern. [Complete only if the offeror represented itself as a women-owned small business concern eligible under the WOSB Program in (b)(4) of this provision.] The offeror represents as part of its offer that-(i) It * is, * is not an EDWOSB concern eligible under the WOSB Program, has provided all the required documents to the WOSB Repository, and no change in circumstances or adverse decisions have been issued that affects its eligibility; and (ii) It * is, * is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation in paragraph (b)(5)(i) of this provision is accurate in reference to the EDWOSB concern or concerns that are participating in the joint venture. [The offeror shall enter the name or names of the EDWOSB concern or concerns that are participating in the joint venture: ------------------.] Each EDWOSB concern participating in the joint venture shall submit a separate signed copy of the EDWOSB representation. (6) (Complete only if the offeror represented itself as a small business concern in paragraph (b)(1) of this provision.) The offeror represents as part of its offer that it ( ) is, ( ) is not a veteran-owned small business concern. (7) (Complete only if the offeror represented itself as a veteran-owned small business concern in paragraph (b)(6) of this provision.) The offeror represents as part of its offer that it ( ) is, ( ) is not a service-disabled veteran-owned small business concern.
+
+FA4600-11-R-0053 Page 32 of 42 (8) (Complete only if the offeror represented itself as a small business concern in paragraph (b)(1) of this provision.) The offeror represents, as part of its offer, that-(i) It [squ] is, [squ] is not a HUBZone small business concern listed, on the date of this representation, on the List of Qualified HUBZone Small Business Concerns maintained by the Small Business Administration, and no material changes in ownership and control, principal office, or HUBZone employee percentage have occurred since it was certified in accordance with 13 CFR Part 126; and (ii) It [squ] is, [squ] is not a HUBZone joint venture that complies with the requirements of 13 CFR Part 126, and the representation in paragraph (b)(8)(i) of this provision is accurate for each HUBZone small business concern participating in the HUBZone joint venture. [The offeror shall enter the names of each of the HUBZone small business concerns participating in the HUBZone joint venture: --------.] Each HUBZone small business concern participating in the HUBZone joint venture shall submit a separate signed copy of the HUBZone representation. (c) Definitions. As used in this provision-Economically disadvantaged women-owned small business (EDWOSB) concern means a small business concern that is at least 51 percent directly and unconditionally owned by, and the management and daily business operations of which are controlled by, one or more women who are citizens of the United States and who are economically disadvantaged in accordance with 13 CFR part 127. It automatically qualifies as a women-owned small business concern eligible under the WOSB Program. Service-disabled veteran-owned small business concern-(1) Means a small business concern-(i) Not less than 51 percent of which is owned by one or more service-disabled veterans or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more service-disabled veterans; and (ii) The management and daily business operations of which are controlled by one or more service-disabled veterans or, in the case of a service-disabled veteran with permanent and severe disability, the spouse or permanent caregiver of such veteran. (2) Service-disabled veteran means a veteran, as defined in 38 U.S.C. 101(2), with a disability that is serviceconnected, as defined in 38 U.S.C. 101(16). "Small business concern," means a concern, including its affiliates, that is independently owned and operated, not dominant in the field of operation in which it is bidding on Government contracts, and qualified as a small business under the criteria in 13 CFR Part 121 and the size standard in paragraph (a) of this provision. Veteran-owned small business concern means a small business concern-(1) Not less than 51 percent of which is owned by one or more veterans (as defined at 38 U.S.C. 101(2)) or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more veterans; and (2) The management and daily business operations of which are controlled by one or more veterans. "Women-owned small business concern," means a small business concern -(1) That is at least 51 percent owned by one or more women; in the case of any publicly owned business, at least 51 percent of the stock of which is owned by one or more women; and
+
+FA4600-11-R-0053 Page 33 of 42 (2) Whose management and daily business operations are controlled by one or more women. Women-owned small business (WOSB) concern eligible under the WOSB Program (in accordance with 13 CFR part 127), means a small business concern that is at least 51 percent directly and unconditionally owned by, and the management and daily business operations of which are controlled by, one or more women who are citizens of the United States. (d) Notice. (1) If this solicitation is for supplies and has been set aside, in whole or in part, for small business concerns, then the clause in this solicitation providing notice of the set-aside contains restrictions on the source of the end items to be furnished. (2) Under 15 U.S.C. 645(d), any person who misrepresents a firm's status as a business concern that is small, HUBZone small, small disadvantaged, service-disabled veteran-owned small, economically disadvantaged womenowned small, or women-owned small eligible under the WOSB Program in order to obtain a contract to be awarded under the preference programs established pursuant to section 8, 9, 15, 31, and 36 of the Small Business Act or any other provision of Federal law that specifically references section 8(d) for a definition of program eligibility, shall -- (i) Be punished by imposition of fine, imprisonment, or both; (ii) Be subject to administrative remedies, including suspension and debarment; and (iii) Be ineligible for participation in programs conducted under the authority of the Act.
+
+(End of provision)
+
+52.222-25
+
+AFFIRMATIVE ACTION COMPLIANCE (APR 1984)
+
+The offeror represents that (a) [ ] it has developed and has on file, [ ] has not developed and does not have on file, at each establishment, affirmative action programs required by the rules and regulations of the Secretary of Labor (41 CFR 60-1 and 60-2), or (b) [ ] has not previously had contracts subject to the written affirmative action programs requirement of the rules and regulations of the Secretary of Labor. (End of provision)
+
+52.252-1
+
+SOLICITATION PROVISIONS INCORPORATED BY REFERENCE (FEB 1998)
+
+This solicitation incorporates one or more solicitation provisions by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. The offeror is cautioned that the listed provisions may include blocks that must be completed by the offeror and submitted with its quotation or offer. In lieu of submitting the full text of those provisions, the offeror may identify the provision by paragraph identifier and provide the appropriate information with its quotation or offer. Also, the full text of a solicitation provision may be accessed electronically at this/these address(es): http://farsite.hill.af.mil/
+
+FA4600-11-R-0053 Page 34 of 42
+
+(End of provision
+
+52.252-2
+
+CLAUSES INCORPORATED BY REFERENCE (FEB 1998)
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at this/these address(es): http://farsite.hill.af.mil/ (End of clause)
+
+252.212-7000 2005) (a) Definitions.
+
+OFFEROR REPRESENTATIONS AND CERTIFICATIONS- COMMERCIAL ITEMS. (JUN
+
+As used in this clause(1) Foreign person means any person other than a United States person as defined in Section 16(2) of the Export Administration Act of 1979 (50 U.S.C. App. Sec. 2415). (2) United States means the 50 States, the District of Columbia, outlying areas, and the outer Continental Shelf as defined in 43 U.S.C. 1331. (3) United States person is defined in Section 16(2) of the Export Administration Act of 1979 and means any United States resident or national (other than an individual resident outside the United States and employed by other than a United States person), any domestic concern (including any permanent domestic establishment of any foreign concern), and any foreign subsidiary or affiliate (including any permanent foreign establishment) of any domestic concern which is controlled in fact by such domestic concern, as determined under regulations of the President. (b) Certification. By submitting this offer, the Offeror, if a foreign person, company or entity, certifies that it (1) Does not comply with the Secondary Arab Boycott of Israel; and (2) Is not taking or knowingly agreeing to take any action, with respect to the Secondary Boycott of Israel by Arab countries, which 50 U.S.C. App. Sec. 2407(a) prohibits a United States person from taking. (c) Representation of Extent of Transportation by Sea. (This representation does not apply to solicitations for the direct purchase of ocean transportation services). (1) The Offeror shall indicate by checking the appropriate blank in paragraph (c)(2) of this provision whether transportation of supplies by sea is anticipated under the resultant contract. The term "supplies" is defined in the Transportation of Supplies by Sea clause of this solicitation. (2) Representation. The Offeror represents that it-
+
+FA4600-11-R-0053 Page 35 of 42
+
+___Does anticipate that supplies will be transported by sea in the performance of any contract or subcontract resulting from this solicitation. ___Does not anticipate that supplies will be transported by sea in the performance of any contract or subcontract resulting from this solicitation. (3) Any contract resulting from this solicitation will include the Transportation of Supplies by Sea Clause. If the Offeror represents that it will not use ocean transportation, the resulting contract will also include the Defense Federal Acquisition Regulation Supplement clause at 252.247-7024, Notification of Transportation of Supplies by Sea. (End of provision)
+
+252.212-7001 CONTRACT TERMS AND CONDITIONS REQUIRED TO IMPLEMENT STATUTES OR EXECUTIVE ORDERS APPLICABLE TO DEFENSE ACQUISITIONS OF COMMERCIAL ITEMS (JUN 2011) (a) The Contractor agrees to comply with the following Federal Acquisition Regulation (FAR) clause which, if checked, is included in this contract by reference to implement a provision of law applicable to acquisitions of commercial items or components. _x__ 52.203-3, Gratuities (APR 1984) (10 U.S.C. 2207). (b) The Contractor agrees to comply with any clause that is checked on the following list of Defense FAR Supplement clauses which, if checked, is included in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items or components. (1) _x__252.203-7000, Requirements Relating to Compensation of Former DoD Officials (JAN 2009) (Section 847 of Pub. L. 110-181). (2) ___ 252.203-7003, Agency Office of the Inspector General (SEP 2010) (Section 6101 of Pub. L. 110-252, 41 U.S.C. 3509 note). (3) _x__ 252.205-7000, Provision of Information to Cooperative Agreement Holders (DEC 1991) (10 U.S.C. 2416). (4) ___ 252.219-7003, Small Business Subcontracting Plan (DoD Contracts) (OCT 2010) (15 U.S.C. 637). (5) ___ 252.219-7004, Small Business Subcontracting Plan (Test Program) (JAN 2011) (15 U.S.C. 637 note). (6)(i) ___ 252.225-7001, Buy American Act and Balance of Payments Program (JAN 2009) (41 U.S.C. 10a-10d, E.O. 10582). (ii) ____ Alternate I (DEC 2010) of 252.225-7001. (7) ____ 252.225-7008, Restriction on Acquisition of Specialty Metals (JUL 2009) (10 U.S.C. 2533b). (8) ____ 252.225-7009, Restriction on Acquisition of Certain Articles Containing Specialty Metals (JAN 2011) (10 U.S.C. 2533b). (9) _x___ 252.225-7012, Preference for Certain Domestic Commodities (JUN 2010) (10 U.S.C. 2533a).
+
+FA4600-11-R-0053 Page 36 of 42 (10) ____ 252.225-7015, Restriction on Acquisition of Hand or Measuring Tools (JUN 2005) (10 U.S.C. 2533a). (11) ____ 252.225-7016, Restriction on Acquisition of Ball and Roller Bearings (JUN 2011) (Section 8065 of Public Law 107-117 and the same restriction in subsequent DoD appropriations acts). (12) )(i) ___ 252.225-7021, Trade Agreements (JUN 2011) (19 U.S.C. 2501-2518 and 19 U.S.C. 3301 note). (ii) ___ Alternate I (SEP 2008) (iii) ___ Alternate II (DEC 2010) of 252.225-7021. (13) ____ 252.225-7027, Restriction on Contingent Fees for Foreign Military Sales (APR 2003) (22 U.S.C. 2779). (14) ____ 252.225-7028, Exclusionary Policies and Practices of Foreign Governments (APR 2003) (22 U.S.C. 2755). (15)(i) ____ 252.225-7036, Buy American Act--Free Trade Agreements--Balance of Payments Program (DEC 2010) (41 U.S.C. 10a-10d and 19 U.S.C. 3301 note). (ii) ___ Alternate I (JUL 2009) of 252.225-7036. (iii) ___ Alternate II (DEC 2010) of 252.225-7036. (iv) ___ Alternate III (DEC 2010) of 252.225-7036. (16) ____ 252.225-7038, Restriction on Acquisition of Air Circuit Breakers (JUN 2005) (10 U.S.C. 2534(a)(3)). (17) _x___ 252.226-7001, Utilization of Indian Organizations, Indian-Owned Economic Enterprises, and Native Hawaiian Small Business Concerns (SEP 2004) (Section 8021 of Public Law 107-248 and similar sections in subsequent DoD appropriations acts). (18) ____ 252.227-7015, Technical Data--Commercial Items (MAR 2011) (10 U.S.C. 2320). (19) ____ 252.227-7037, Validation of Restrictive Markings on Technical Data (SEP 1999) (10 U.S.C. 2321). (20) ____ 252.232-7003, Electronic Submission of Payment Requests and Receiving Reports (MAR 2008) (10 U.S.C. 2227). (21) ____252.237-7010, Prohibition on Interrogation of Detainees by Contractor Personnel (NOV 2010) (Section 1038 of Pub. L. 111-84). (22) ____ 252.237-7019, Training for Contractor Personnel Interacting with Detainees (SEP 2006) (Section 1092 of Public Law 108-375). (23) _x___ 252.243-7002, Requests for Equitable Adjustment (MAR 1998) (10 U.S.C. 2410). (24)____252.246-7004, Safety of Facilities, Infrastructure, and Equipment for Military Operations (OCT 2010) (Section 807 of Public Law 111-84). (25)____ 252.247-7003, Pass-Through of Motor Carrier Fuel Surcharge Adjustment to the Cost Bearer (SEP 2010) (Section 884 of Public Law 110-417).
+
+FA4600-11-R-0053 Page 37 of 42 (26)(i) _x___ 252.247-7023, Transportation of Supplies by Sea (MAY 2002) (10 U.S.C. 2631). (ii) ____ Alternate I (MAR 2000) of 252.247-7023. (iii) ____ Alternate II (MAR 2000) of 252.247-7023. (iv) ____ Alternate III (MAY 2002) of 252.247-7023. (27) ____ 252.247-7024, Notification of Transportation of Supplies by Sea (MAR 2000) (10 U.S.C. 2631). (c) In addition to the clauses listed in paragraph (e) of the Contract Terms and Conditions Required to Implement Statutes or Executive Orders--Commercial Items clause of this contract (FAR 52.212-5), the Contractor shall include the terms of the following clauses, if applicable, in subcontracts for commercial items or commercial components, awarded at any tier under this contract: (1) 252.237-7010, Prohibition on Interrogation of Detainees by Contractor Personnel (NOV 2010) (Section 1038 of Pub. L. 111-84). (2) 252.237-7019, Training for Contractor Personnel Interacting with Detainees (SEP 2006) (Section 1092 of Public Law 108-375). (3) 252.247-7003, Pass-Through of Motor Carrier Fuel Surcharge Adjustment to the Cost Bearer (SEP 2010) (Section 884 of Public Law 110-417). (4) 252.247-7023, Transportation of Supplies by Sea (MAY 2002) (10 U.S.C. 2631). (5) 252.247-7024, Notification of Transportation of Supplies by Sea (MAR 2000) (10 U.S.C. 2631). (End of clause)
+
+252.232-7007
+
+LIMITATION OF GOVERNMENT'S OBLIGATION (MAY 2006)
+
+(a) Contract line item(s) 0001 through 5001 are incrementally funded. For these item(s), the sum of $0.00 of the total price is presently available for payment and allotted to this contract. An allotment schedule is set forth in paragraph (j) of this clause. (b) For items(s) identified in paragraph (a) of this clause, the Contractor agrees to perform up to the point at which the total amount payable by the Government, including reimbursement in the event of termination of those item(s) for the Government's convenience, approximates the total amount currently allotted to the contract. The Contractor is not authorized to continue work on those item(s) beyond that point. The Government will not be obligated in any event to reimburse the Contractor in excess of the amount allotted to the contract for those item(s) regardless of anything to the contrary in the clause entitled "TERMINATION FOR THE CONVENIENCE OF THE GOVERNMENT." As used in this clause, the total amount payable by the Government in the event of termination of applicable contract line item(s) for convenience includes costs, profit and estimated termination settlement costs for those item(s). (c) Notwithstanding the dates specified in the allotment schedule in paragraph (j) of this clause, the Contractor will notify the Contracting Officer in writing at least ninety days prior to the date when, in the Contractor's best judgment, the work will reach the point at which the total amount payable by the Government, including any cost for termination for convenience, will approximate 85 percent of the total amount then allotted to the contract for performance of the applicable item(s). The notification will state (1) the estimated date when that point will be reached and (2) an estimate of additional funding, if any, needed to continue performance of applicable line items up
+
+FA4600-11-R-0053 Page 38 of 42 to the next scheduled date for allotment of funds identified in paragraph (j) of this clause, or to a mutually agreed upon substitute date. The notification will also advise the Contracting Officer of the estimated amount of additional funds that will be required for the timely performance of the item(s) funded pursuant to this clause, for subsequent period as may be specified in the allotment schedule in paragraph (j) of this clause, or otherwise agreed to by the parties. If after such notification additional funds are not allotted by the date identified in the Contractor's notification, or by an agreed substitute date, the Contracting Officer will terminate any item(s) for which additional funds have not been allotted, pursuant to the clause of this contract entitled "TERMINATION FOR THE CONVENIENCE OF THE GOVERNMENT". (d) When additional funds are allotted for continued performance of the contract line item(s) identified in paragraph (a) of this clause, the parties will agree as to the period of contract performance which will be covered by the funds. The provisions of paragraph (b) through (d) of this clause will apply in like manner to the additional allotted funds and agreed substitute date, and the contract will be modified accordingly. (e) If, solely by reason of failure of the Government to allot additional funds, by the dates indicated below, in amounts sufficient for timely performance of the contract line item(s) identified in paragraph (a) of this clause, the Contractor incurs additional costs or is delayed in the performance of the work under this contract and if additional funds are allotted, an equitable adjustment will be made in the price or prices (including appropriate target, billing, and ceiling prices where applicable) of the item(s), or in the time of delivery, or both. Failure to agree to any such equitable adjustment hereunder will be a dispute concerning a question of fact within the meaning of the clause entitled "disputes." (f) The Government may at any time prior to termination allot additional funds for the performance of the contract line item(s) identified in paragraph (a) of this clause. (g) The termination provisions of this clause do not limit the rights of the Government under the clause entitled "DEFAULT." The provisions of this clause are limited to work and allotment of funds for the contract line item(s) set forth in paragraph (a) of this clause. This clause no longer applies once the contract if fully funded except with regard to the rights or obligations of the parties concerning equitable adjustments negotiated under paragraphs (d) or (e) of this clause. (h) Nothing in this clause affects the right of the Government to this contract pursuant to the clause of this contract entitled "TERMINATION FOR CONVENIENCE OF THE GOVERNMENT." (i) Nothing in this clause shall be construed as authorization of voluntary services whose acceptance is otherwise prohibited under 31 U.S.C. 1342. (j) The parties contemplate that the Government will allot funds to this contract in accordance with the following schedule: On execution of contract $-(month) (day), (year) $---(month) (day), (year) $---(month) (day), (year) $---(End of clause)
+
+5352.201-9101 OMBUDSMAN (10 AUG 2005) (a) An ombudsman has been appointed to hear and facilitate the resolution of concerns from offerors, potential offerors, and others for this acquisition. When requested, the ombudsman will maintain strict confidentiality as to the source of the concern. The existence of the ombudsman does not affect the authority of the program manager,
+
+FA4600-11-R-0053 Page 39 of 42 contracting officer, or source selection official. Further, the ombudsman does not participate in the evaluation of proposals, the source selection process, or the adjudication of protests or formal contract disputes. The ombudsman may refer the party to another official who can resolve the concern. (b) Before consulting with an ombudsman, interested parties must first address their concerns, issues, disagreements, and/or recommendations to the contracting officer for resolution. Consulting an ombudsman does not alter or postpone the timelines for any other processes (e.g., agency level bid protests, GAO bid protests, requests for debriefings, employee-employer actions, contests of OMBC A-76 competition performance decisions). (c) If resolution cannot be made by the contracting officer, concerned parties may contact the Center/MAJCOM ombudsmen: Mr. Eric Thaxton 129 Andrews Street Langley AFB, VA 23665 Phone Number: (757)764-5372 Fax Number:(757)764-4400 Email Address: eric.thaxton@langley.af.mil Concerns, issues, disagreements, and recommendations that cannot be resolved at the MAJCOM/DRU level, may be brought by the concerned party for further consideration to the Air Force ombudsman, Associate Deputy Assistant Secretary (ADAS) (Contracting), SAF/AQC, 1060 Air Force Pentagon, Washington DC 20330-1060, phone number (703) 588-7004, facsimile number (703) 588-1067. (d) The ombudsman has no authority to render a decision that binds the agency. (e) Do not contact the ombudsman to request copies of the solicitation, verify offer due date, or clarify technical requirements. Such inquiries shall be directed to the Contracting Officer. (End of clause)
+
+5352.223-9000 ELIMINATION OF USE OF CLASS I OZONE DEPLETING SUBSTANCES (ODSs) (APR 2003) (a) Unless the requiring activity has obtained prior Senior Acquisition Official (SAO) approval, contractors may not: (1) Provide any service or product with any specification, standard, drawing, or other document that requires the use of a Class I ODS in the test, operation, or maintenance of any system, subsystem, item, component, or process; or (2) Provide any specification, standard, drawing, or other document that establishes a test, operation, or maintenance requirement that can only be met by use of a Class I ODS. [Note: This prohibition does not apply to manufacturing.] (b) For the purposes of Air Force policy, the following products that are pure (i.e., they meet the relevant product specification identified in AFI 32-7086) are Class I ODSs: (1) Halons: 1011, 1202, 1211, 1301, and 2402; (2) Chlorofluorocarbons (CFCs): CFC-11, CFC-12, CFC-13, CFC-111, CFC-112, CFC-113, CFC-114, CFC-115, CFC-211, CFC-212, CFC-213, CFC-214, CFC-215, CFC-216, and CFC-217, and the blends R-500, R-501, R-502, and R-503; and (3) Carbon Tetrachloride, Methyl Chloroform, and Methyl Bromide. [NOTE: Material that use one or more of these Class I ODSs as minor constituents do not meet the Air Force definition of a Class I ODS.] (c) The requiring activity has obtained SAO approval to permit the contractor to use the following Class I ODS(s): Class I ODS/ Application or Use/Quantity (lbs.) per contract period of performance
+
+FA4600-11-R-0053 Page 40 of 42 None (d) The offeror/contractor is required to notify the contracting officer if any Class I ODS that is not specifically listed above is required in the test, operation, or maintenance of any system, subsystem, item, component, or process.
+
+LOCAL REQUIREMENTS 06 Jun 11 A. INVOICE SUBMISSION AND PAYMENT
+
+ELECTRONIC SUBMISSION OF INVOICES AND RECEIVING REPORTS IS MANDATORY in accordance with DFARS 252.232-7003
+
+1. ELECTRONIC SUBMISSION VIA WIDE AREA WORKFLOW (WAWF): Contractors must register and begin submitting electronic invoices immediately through the Wide Area Workflow Receipt and Acceptance Internet site: https://wawf.eb.mil/. On line training is available at http://www.wawftraining.com unless unable to do so. Use the following data elements to invoice for services or supplies procured via this contract. The award document number is located in the lower right-hand corner. Invoice Type: Invoice and Receiving Report: Combo Description Contract Number Delivery Order Cage Code Paying Office Inspection Acceptance Issue Date IssueBy DoDAAC Admin DoDAAC Ship to Code Ship to Code Extension Services or Supplies Shipment Number SF1449 DD1155
+
+Located in Block 2 1 4 2 17a 9 18a 15 See Schedule: INSPECTION AND ACCEPTANCE See Schedule: INSPECTION AND ACCEPTANCE 3 3 9 6 16 7 16 7 15 14 Based on majority of requirement as determined by monetary value Contractor Shipment Number, Invoice Number (supplies) or period of performance (service). Limitation: 13 characters Changing "N" (no) to "Y" (yes) will terminate your ability to invoice against this contract and deobligated remaining funds. Change "N" to "Y" for the final invoice ONLY.
+
+Final Invoice?
+
+Send Additional Email Notification To: Alvin McCruel: mccruela@offutt.af.mil
+
+FA4600-11-R-0053 Page 41 of 42
+
+2. PAYMENT WILL BE MADE BY: Defense Finance and Accounting Service DFAS-FVB/LI 27 Arkansas Road Limestone, ME 04751-1500 Contact DFAS-FVB/LI to check payment status at (800) 390-5620 or (207) 328-5620 or via website www.dfas.mil: (Commercial Pay, then Vendor Pay Inquiry System (VPIS), then Non-MOCAS System: then Query by Contract Number, EFT Trace Number, DUNS Number or Cage Code)
+
+B. CHANGES TO THIS CONTRACT / PURCHASE ORDER / DELIVERY ORDER The Contracting Officer (CO) is the only person authorized to approve changes or modify any of the requirements under this contract and, notwithstanding any provisions contained elsewhere in this contract, the said authority remains solely with the CO. In the event the Contractor effects any such change at the direction of any person other than the CO, the change will be considered to have been made without authority and no adjustment will be made in the contract price to cover any increase in costs incurred as a result thereof. Contractual problems, of any nature, which might occur during the life of the contract must be handled in conformance with public laws and regulations and must be referred to the CO for resolution. Only the CO is authorized to formally resolve such problems. Therefore, the Contractor is hereby directed to bring all such contractual problems to the immediate attention of the CO. Any request for contract changes/modification shall be submitted to the CO.
+
+C. CCR REGISTRATION Invoice payment cannot be made if a contractor's Central Contractor Registration (CCR) is inactive. Invoices received from a contractor who fails to maintain active CCR registration are considered to be improper and may be returned. The contractor is responsible to maintain active CCR registration until final payment has been made. CCR registration must be updated and renewed annually.
+
+D. REQUIRED INSURANCE (IAW FAR 28-306(b)) Reference FAR clause entitled "Insurance . . .  the Contractor shall, at its own expense, procure and thereafter maintain the following kinds of insurance with respect to performance under the contract. (1) Workmen's Compensation and Employers Liability Insurance as required by law except that if this contract is to be performed in a State which does not require or permit private insurance, then compliance with the statutory or administrative requirements in any such State will be satisfactory. The required Workmen's Compensation insurance shall extend to cover employer's liability for accidental bodily injury or death and for occupational disease with a minimum liability limit of $100,000. (2) General Liability Insurance. Bodily injury liability insurance, in the minimum limits of $500,000 per occurrence shall be required on the comprehensive form of policy. (3) Automobile Liability Insurance. This insurance shall be required on the comprehensive form of policy and shall provide bodily injury liability and property damage liability covering the operation of all automobiles used in connection with the performance of the contract. At least the minimum limits of $200,000 per person and $500,000 per occurrence for bodily injury and $20,000 per occurrence for property damage shall be required.
+
+FA4600-11-R-0053 Page 42 of 42
+
+E. SALES TAX Offutt Air Force Base is exempt from paying state and local taxes on purchases that it makes per the United States Constitution. Nebraska Revised Statutes, Sec. 77-2704.02 and Nebraska Sales and Use Tax Regulations 1-12 and 1-72 implement this policy and are applicable to this purchase. The Nebraska Form 13, Nebraska Resale or Exempt Sale Certificate, is applicable to exempt taxes for contracts for services and commodities and labor on construction projects. 55 CONS can not provide signed Nebraska Forms 17, Purchasing Agent Appointment and Delegation of Authority for Sales and Use Tax, to exempt State taxes for construction contract materials. Therefore, for construction only, per FAR 52.229-3 or 52.229-4, applicable Nebraska State tax costs for materials should be included in the bid/proposal submitted by the offeror/contractor.
+
+LIST OF ATTACHMENTS DOCUMENT DESCRIPTION TYPE Attachment 1 Performance Work Statement (PWS) Attachment 2 Wage Determinations Attachment 3* Vendor Technical Specification Tables (1-3) Attachment 4* Sample - Past/Present Performance Questionnaire Cover Letter Attachment 5* Past/Present Performance Questionnaire Attachment 6* Sample ­ Past/Present Performance Questionnaire Tracking Record Attachment 7* Sample ­ Consent Letter Attachment 8 CDRL- A001 * NOTE: Will be removed at contract award.
+
+PAGES 6 12 2 1 3 1 1 1
+
+

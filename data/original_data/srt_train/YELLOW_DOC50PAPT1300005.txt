@@ -1,0 +1,749 @@
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+Section B ­ Supplies or Services B.1 Contract Type The USPTO intends to award one (1) no-cost contract. Evaluation will be on the Base and all Option Periods. B.2 Period of Performance This contract award will consist of a base period of one (1) year and four (4) one-year option periods. The period of performance for the contract will begin on the date of award. B.3 Schedule of Values Base Period Contract Line Item Number (CLIN) 0001
+
+Description
+
+Units
+
+Public Dissemination of Patent and Trademark Bulk Data
+
+1 Lot
+
+No cost to USPTO
+
+Option Period 1 Contract Line Description Item Number (CLIN) 1001 Public Dissemination of Patent and Trademark Bulk Data Option Period 2 Contract Line Description Item Number (CLIN) 2001 Public Dissemination of Patent and Trademark Bulk Data
+
+Units
+
+1 Lot
+
+No cost to USPTO
+
+Units
+
+1 Lot
+
+No cost to USPTO
+
+1
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+Option Period 3 Contract Line Description Item Number (CLIN) 3001 Public Dissemination of Patent and Trademark Bulk Data Option Period 4 Contract Line Description Item Number (CLIN) 4001 Public Dissemination of Patent and Trademark Bulk Data B.4 CLINs 0001- 4001
+
+Units
+
+1 Lot
+
+No cost to USPTO
+
+Units
+
+1 Lot
+
+No cost to USPTO
+
+The CLINs and their associated Option CLINs shall include all necessary labor, materials, equipment and other resources necessary to provide the specific deliverables identified in Section F.3. The Government will not reimburse, or provide for any expenses, including travel expenses.
+
+2
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+SECTION C -- DESCRIPTIONS AND SPECIFICATIONS C.1 GENERAL
+
+C.1.1 BACKGROUND The United States Patent and Trademark Office (USPTO) Office of the Chief Information Officer (OCIO) is the principal advisor to the Under Secretary and Director on the application of information technology (IT) to support and improve the USPTO's business processes. The Chief Information Officer (CIO) directs the development, implementation, maintenance, enhancement and operation of the USPTO's Automated Information Systems (AIS) and the development of supporting Strategic and Operational IT plans (SITP and OITP), operates the USPTO's computer facilities, equipment and telecommunications network, and develops, maintains, and disseminates patent and trademark information to the public. The CIO serves as the USPTO's Senior Information Resources Management (IRM) Official and provides executive leadership and administrative and policy direction to the organization with particular emphasis on the components responsible for strategic, programmatic, and IT governance affairs. The USPTO embraces the President's Open Government Initiative (OGI) to provide increased transparency of government operations and information by making bulk data available directly to the public for no charge. Recent efforts have focused on making virtually all publicly available patent and trademark bulk information from the USPTO accessible on the Internet. Datasets, estimated to be nearly eighty (80) terabytes (in raw form; includes some duplicates) and maintained by the USPTO include:       Patent Grants and Patent Application Publications, in both text and image formats; Trademark application, registration and Trademark Trial and Appeal Board data, in both text and image formats; Assignment data for both Patent and Trademark applications; Fee Data associated with patent applications; Patent Classification data; and Status data for published patent applications (Published Patent Application Data / Transaction History / Patent Term Adjustment / Patent Term Extension Foreign Priority / Attorney Address / Continuity Data / Published Documents / Image File Wrapper and associated meta data).
+
+Not all of this information is currently available in bulk or machine-readable format, nor are the data formats consistent across datasets. In addition, USPTO does not have the technical capability to unconditionally distribute the data. Further, the USPTO does not have the financial resources to rectify these limitations. C.1.2 OBJECTIVE The USPTO OCIO seeks to meet the President's Open Government Initiative to provide increased transparency of Government operations and information by making more 3
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+patent and trademark bulk data in machine-readable format available to the public via the Internet. The USPTO OCIO seeks an interested party (henceforth referred to as Contractor) capable of acquiring patent and trademark bulk data and providing such data to the public at no cost to the USPTO or the public. The Contractor shall crawl the USPTO's Public PAIR (Patent Application Information Retrieval) system and compile patent application status data in bulk, electronic form. The USPTO will define XML Schemas, Style sheets, data dictionary, containers, components and all artifacts necessary to define the data for the purposes of dissemination. The Contractor shall host, and provide to the public free of charge, bulk datasets provided by the USPTO and the Public PAIR bulk dataset compiled by the Contractor. The USPTO may define and provide additional datasets as they become available. Section C.3 (Requirements) lists datasets covered by this contract. C.1.3 DATA DISSEMINATION The USPTO envisions a cooperative, mutually beneficial relationship with the Contractor whereby patent and trademark bulk data is made easily accessible and at no cost to the public. Through this contract, the USPTO will be able to fulfill Open Government and transparency obligations and in exchange, the Contractor shall receive the opportunity to retrieve, enhance, and distribute USPTO patent and trademark bulk data. The data received by the Contractor shall be distributed in a USPTO defined format. Dataset enhancement of the free, publicly available data is not a requirement of this contract. However, the Contractor may choose to broaden the datasets and potentially gather a fee. Therefore, the Contractor is allowed to repackage (enhance), distribute, and sell any resulting enhanced data and retain any fees that are collected from such sales. The USPTO shall enter into a no cost contract where the Contractor shall: 1. Crawl the USPTO's Public PAIR system and compile patent application status data in bulk, electronic form. The USPTO will define XML Schemas, Style sheets, data dictionary, containers, components and all artifacts necessary to define the data for the purposes of dissemination. 2. Host, and provide to the public free of charge, bulk datasets provided by the USPTO and the Public PAIR bulk dataset compiled by the Contractor. 3. Determine, in conjunction with the USPTO, the categorization and standardization of the data with an emphasis on compactness and speed of transmission. The Contractor must be capable of providing the retrieval and distribution of patent and trademark bulk data in essentially unaltered form, modified only as necessary to organize or compress the data for ease of distribution or for security purposes, from the USPTO to the public at no cost to 4
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+the USPTO or to the public. 4. Devise a method to provide distribution of updated or changed data. Frequency can be daily, weekly, monthly, bimonthly, quarterly and/or annually. Data dissemination is a continuous system and the Contractor shall continuously monitor the datasets and shall retrieve and host updates and changes as they go forward. 5. Use a secure infrastructure, housed external to the USPTO, that performs Public PAIR crawling and all dissemination of data to the public at no cost to the public or the USPTO. Such infrastructure may be distributed. 6. As part of this agreement, the Contractor is granted the right to maintain, repackage (enhance or add value), distribute, and sell any resulting enhanced datasets and retain any fees collected therefrom. The data must first be made available to the public in an unaltered form at no charge to the public or the USPTO. 7. As a result of any award, any repackaging, value added content, or enhancements to the Licensed Content (see definition below) created by the Contractor shall not be considered to be official USPTO Licensed Content and the USPTO is neither responsible nor liable for the accuracy of such repackaged, value added, or enhanced products. 8. Provide usage statistics indicating the progress of Public PAIR dataset creation and hosting and the volume of public downloading for each dataset. C.2 DEFINITIONS
+
+1. "Licensed Content" means the content provided by USPTO to Contractor or
+
+retrieved by Contractor pursuant to the delivery mechanism described.
+2. "Distribution Partner" means a third party under an agreement with Contractor to
+
+use Contractor products or services internally or provide or display Contractor products or services to end users.
+3. "Confidential Information" is information disclosed by one party to the other party
+
+under this agreement that is marked as confidential or would normally under the circumstances be considered confidential information of the disclosing party. Confidential Information does not include information that the recipient has in its possession, and that becomes public through no fault of the recipient, that was independently developed by the recipient, or that was rightfully given to the recipient by another party.
+4. "Unauthorized activity" means an activity that is performed contrary to the terms of
+
+this agreement or any applicable Federal or state law, rule or regulation. 5
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+5. "Compromised" means that the data has been altered such that it cannot be relied
+
+upon as accurate or that a USPTO system has been accessed in a means that threatens the security of such data. C.3 REQUIREMENTS
+
+C.3.1 Data dissemination shall be free to the public and at no cost to the USPTO. C.3.2 Creation of Public PAIR Dataset Public PAIR data is currently not available in Bulk. Creation of this dataset requires crawling the USPTO's Public PAIR website in order to extract, compact, format and compile data to be disseminated to the Public at no cost to the USPTO or the Public. The bulleted list below provides the names of specific Public PAIR tabs or data that must be crawled and compiled by the Contractor.  Public Patent Application Information Retrieval (Public PAIR)  Application Data  Transaction History  Patent Term Adjustments  Patent Term Extension  Image File Wrapper  Continuity Data  Foreign Priority  Supplemental Content  Address & Attorney/Agent
+
+There may be additional tabs added to this list. The publication of PAIR data is anticipated to be daily for both USPTO and the Contractor. C.3.2.1 The Contractor shall consider the following when Crawling Public PAIR and creating Public PAIR bulk data: 1. Contractor shall not negatively impact the normal business activities of the USPTO. USPTO will provide a daily four (4) hour window of time for crawling activities and will facilitate crawling activities, such as by removing for the Contractor the reCaptcha data mining filter. 2. Under the specific direction of the USPTO, provide data cleanup where necessary, including but not limited to the identification and correction of data, elimination of duplicates and the correction of inconsistent data (data in multiple places that should agree, but does not agree.) 6
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+3. Contractor shall provide a monthly Public PAIR Progress Report indicating the daily progress of Public PAIR crawling and bulk data hosting. The content (number of patent applications crawled, size of data, etc.) and format of the statistics will be determined by mutual agreement. C.3.3 Hosting of bulk datasets provided by USPTO The following is the list of USPTO bulk electronic information products that will be provided to the Contractor for no charge for distribution (in unaltered form). The Contractor shall host the first batch of provided data within two months of receipt. Updates to the data shall be hosted according to each product's update schedule. In addition, each product has a set update and distribution schedule (e.g., daily at 02:00 AM U.S. Eastern Time for daily products; Tuesdays and Thursdays at 02:00AM for weekly products; bimonthly (the 15th of odd numbered months); annually (by January 31st)). The Contractor shall host updated data within three days of availability from USPTO. The USPTO may define additional datasets for publication as they become available: PATENT GRANT PRODUCTS:  Patent Grant Multi-Page TIFF Images (1790 ­ 2012 or Present)  Patent Grant Single-Page TIFF Images (1790 ­ 2012 or Present)  Patent Grant Full-Text with Embedded Images (2001 ­ 2012 or Present)  Patent Grant Full-Text (1976 ­ 2012 or Present)  Patent Grant Bibliographic (i.e., Front Page) Text (1976 ­ 2012 or Present)  Patent Grant Optical Character Recognition (OCR) Text (1920 ­ 1979)  Patent Official Gazettes (July 2002 ­ 2012 or Present) PATENT APPLICATION PUBLICATION PRODUCTS:  Patent Application Information Retrieval (PAIR) Data  Patent Application Publication Multi-Page TIFF Images (March 15, 2001 ­ 2012 or Present)  Patent Application Publication Single-Page TIFF Images (March 15, 2001 ­ 2012 or Present)  Patent Application Publication Full-Text with Embedded Images (March 15, 2001 ­ 2012 or Present)  Patent Application Publication Full-Text (March 15, 2001 ­ 2012 or Present)  Patent Application Publication Bibliographic (i.e., Front Page) Text (March 15, 2001 ­ 2012 or Present) ADDITIONAL PATENT RELATED DATA PRODUCTS:  Patent Assignment Text (August 1980 ­ 2012 or Present)  Patent Image File Wrapper (IFW) Petition Decisions  Patent Maintenance Fee Events (September 1981 ­ 2012 or Present)  Master Classification File (MCF) / Patent Grant (Patent Grant Sequence)  Master Classification File (MCF) / Patent Grant (Classification Sequence)
+
+7
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+     
+
+Master Classification File (MCF) / Patent Application (Patent Application Sequence) Manual of Classification (a.k.a., Classification Text Attribute File (CTAF)) Index to U.S. Patent Classification (a.k.a., Classification Index File) U.S. Classification Definitions U.S. Classification Orders Index U.S. Patent Classification (USPC) to International Patent Classification (IPC) Concordance
+
+TRADEMARK PRODUCTS:  Trademark Registration Images (1870 ­ 2012 or Present)  Trademark Application Images (2010 ­ 2012 or Present)  Trademark Application Text (1884 ­ 2012 or Present)  Trademark Assignment Text (1980 ­ 2012 or Present)  Trademark Trial and Appeal Board (TTAB) Text (1955 ­ 2012 or Present) C.3.4 Contractor shall provide a description of the preliminary plans for the enhancements/repackaging of the data for review, subject to Government review and approval, as well as notification of any further changes. C.3.5 Contractor's data dissemination infrastructure (hardware and software) shall be able to disseminate to the public 500,000+ files daily (500+ Gibabyte per day). C.3.6 Contractor shall create and host Public PAIR data at a rate of at least 2,000 patent applications per day. C.3.7 Contractor's data dissemination infrastructure shall be able to disseminate to the public at a rate of 3 Megabytes per second or faster. C.3.8 Contractor shall provide all public USPTO patent and trademark bulk information (in essentially unaltered form) at no cost to the USPTO or to the Public. C.3.9 Contractor shall publicize the location of all datasets made available by this agreement. The USPTO reserves the right to review the Contractor's means of publicizing the location and availability of all datasets. C.3.10 Contractor shall make all public USPTO patent and trademark bulk information available to the USPTO and the Public 24 hours daily. C.3.11 Contractor shall make all public USPTO patent and trademark bulk information available to the USPTO and the public according to each product's current distribution schedule. C.3.12 Contractor shall make all Public PAIR bulk information available to the USPTO and the public on an agreed upon distribution schedule (e.g., Monday ­ Sunday @ 06:00AM U.S. Eastern Time). 8
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+C.3.13 Contractor shall employ a process for obtaining and hosting corrected files for the patent and trademark bulk information. C.3.14 Contractor shall provide, where applicable, the date range, document range, or contents list of any given patent and trademark bulk dataset or database. C.3.15 Contractor shall host documentation for all formats of hosted data. C.3.16 Contractor shall protect the integrity of all public USPTO patent and trademark bulk data (i.e., the protection of information from unauthorized access or revision, to ensure that the information is not compromised through corruption or falsification). C.3.17 Contractor shall provide USPTO with a Monthly Statistical Usage Report of aggregated usage statistics indicating the daily volume of public downloading for each product. The content (number of files, downloaded, size of downloads, number of users, etc) and format of the statistics will be determined by mutual agreement. C.3.18 Contractor shall notify the USPTO within twenty four hours of any problems or potential problems (risks), and possible solutions or mitigation strategies with the retrieval and/or distribution of data. C.3.19 Within 90 days of contract completion, the Contractor shall return all data provided by USPTO on hard disk media. C.3.20 PTO-17 Contractor FOIA Requirement Upon award of any contract resulting from this solicitation, the contractor shall be required to submit in electronic (.pdf or .tif) format, a copy of the contract with any proposed redactions it believes are necessary and required by law. If the contractor is proposing any redactions to the contract, the basis for the redactions shall be submitted in writing and must accompany the electronic copy of the contract. This submission is due within 14 days of contract award. If the Contracting Officer agrees with the contractor's proposed redactions, the document will be forwarded to the USPTO FOIA Officer for posting to the agency's e-FOIA website. Submission of the contract document in the required format and any written justification for the proposed redactions shall be provided at no cost to the government. C.4 SECURITY, SURVEILLANCE, AND INSPECTIONS C.4.1 DATA SECURITY Control and security of USPTO data is a primary responsibility of the Contractor. Contractor must assure the integrity of the USPTO patent and trademark data and take no action that will cause or give the perception of a breach of USPTO data integrity. No USPTO data shall be withheld from the public unless otherwise provided by contract, or without written permission. The Contractor's hosting and dissemination system shall be 9
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+secured at a low security impact level according to FIPS 199 and 200 to insure data integrity of the information being processed, stored and transmitted.
+
+10
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+Section D - Packing and Marking D.1 Packaging
+
+All items shall be preserved, packaged, packed, and marked in accordance with best commercial practices to meet the packing requirements of the carrier and ensure safe and timely delivery at the destination, in accordance with applicable security requirements. D.2 Marking (a) The contractor shall ensure that all invoices, correspondence, and deliverables are identified with a document control number. The document control number shall identify the contractor and the calendar year, and provide a unique number as identification for the document. For example: XXAA-10-005. (b) All deliverables prepared and submitted by the contractor to the Government shall include the following information on the cover page of each document: (1) (2) (3) (4) (5) (6) Document control number Contract number Activity Number Deliverable Number Deliverable ID Date of document
+
+11
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+Section E ­ Inspection and Acceptance Contractor(s) work will be reviewed and inspected by the USPTO Contracting Officer's Technical Representative (COTR) who has final approval and acceptance.
+
+12
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+Section F - Deliveries or Performance F.1 Period of Performance The period of performance of this contract, excluding options, shall be from the effective date of the contract for one year. If an option is exercised, the period of performance shall be extended through the end of that option period. The option periods that may be exercised are outlined as follows (actual dates are subject to the date of award): Period Base Period Option I Option II Option III Option IV F.2 Place of Performance The place of performance shall be at the USPTO Headquarters, currently located at 600 Dulany Street, Alexandria, VA; the Contractor's facilities and/or other sites designated by the USPTO. Meetings will be held at the USPTO in Alexandria, Virginia. F.3 Contract Deliverables The table below lists the deliverables to be prepared and delivered by the contractor in support of this Public Dissemination of Data contract at the direction of the COTR.
+Deliverables Description Reference Section Due Date Delivery Mode
+
+Start Date February 2013 February 2014 February 2015 February 2016 February 2017
+
+End Date January 2014 January 2015 January 2016 January 2017 January 2018
+
+Project Plan
+
+Provide a Project Plan
+
+N/A
+
+ Draft five (5) business days from award  Draft Update 1 month from award  Baseline 2 months from award  Updates as required No later than five (5) business days after
+
+Electronic
+
+Kick-off Meeting
+
+Kick-off meeting to review draft project plan and the technical and contractual objectives
+
+N/A
+
+N/A
+
+13
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+contract award Repackaging/ Enhancement Plan Weekly Status Report (WSR) During the Development Phase Provide enhancements/repackaging plans and notifications as required Provide weekly status report during the development phase in order to identify early-on key requirements, expectations, and development paths C.3.4 Draft 1 month after award date Electronic
+
+N/A
+
+Every Monday
+
+Electronic
+
+Major Issues/ Risks Notification Report
+
+Provide a report in cases of emergency that threaten USPTO's mission-critical operations (Ex. system going down)
+
+C.3.18
+
+Determine what events will trigger this report during the kick-off meeting, then immediately each time when emergencies occur 5th business day of each month
+
+Electronic
+
+Monthly Status Report (MSR)
+
+The Monthly Status Report (MSR) addresses the progress of work completed, issues, risks and mitigation plans Provide a report on the progress of crawling and hosting the Public PAIR data (Format TBD) Provide a list of all the locations where datasets have been publicized Provide monthly reports to the USPTO with aggregate and daily usage statistics of any bulk datasets served through Contractor's servers Provide a Final Report at project conclusion which will outline work performed on this engagement
+
+N/A
+
+Electronic
+
+Public PAIR Progress Report Datasets Publication Locations List Monthly Statistical Usage Report
+
+C.3.2.1(3)
+
+5th business day of each month 5th business day of each month
+
+Electronic
+
+C.3.9
+
+Electronic
+
+C.3.17
+
+5th business day of each month
+
+Electronic
+
+Final Report
+
+N/A
+
+10 business days after completion
+
+Electronic
+
+In all cases of Public Dissemination of Data documentation, notification of completion or delivery of soft-copy artifacts will be required from the contractor. (a) For purposes of delivery, all deliverables shall be made by 2:00 P.M. Eastern Standard Time (EST) local time (Washington, DC) at destination, Monday through Friday. 14
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+(b) All deliverables submitted in electronic format shall be free of any known computer virus or defects. If a virus or defect is found, the deliverable will not be accepted. The replacement file shall be provided within two (2) business days after notification of the presence of a virus. (c) In the event the contractor anticipates difficulty in complying with any delivery schedule, the contractor shall immediately provide written notice to the Contracting Officer. For any deliverable, the contractor shall provide written notification immediately to the Contracting Officer and COTR. Each notification shall give pertinent details, including the date by which the contractor expects to make delivery; PROVIDED, that this data shall be informational only in character and that receipt thereof shall not be construed as a waiver by the Government of any contract delivery schedule, or any rights or remedies provided by law or under this contract. F.4 Format and Content Reporting Requirements (a) All deliverables, reports, analyses, etc., whether in draft or final, must be delivered by the Contractor directly to the designated COTR at USPTO, 600 Dulany Street, MDW 04A61, Alexandria, VA (b) The deliverables for this contract shall be provided in hardcopy form and on electronic media, using the current USPTO baseline products for Microsoft Office. At the present time the baseline is Microsoft Office 2010. (c) Government Furnished Equipment: All Government property, data, information, etc., used by the Contractor in conjunction with performance of this contract, whether furnished by the Government to the Contractor or acquired by the Contractor with Government funding shall be delivered/ transmitted to the COTR within 30 calendar days of completion of the contract or as instructed by the contracting officer (CO). Deliverables submitted in response to this RFP become the property of the United States Patent and Trademark Office (USPTO). F.5 Deliverable Medium The number of copies, specific instructions for the medium and format for electronic copies, and other instructions about these deliverables are specified below: (a) The contractor shall provide copies of all draft and final deliverables on electronic medium to the USPTO in the following format: (1) CD/DVD ­ Shall be labeled with contract, title and deliverable number. Monthly set on CD/DVD ­ otherwise provide via email as they are produced. Also provide a soft copy.
+
+15
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+(2)
+
+Narrative compatible with USPTO's Windows 7 for processing software applications.
+
+(b) Tables, files, graphics and other information not incorporated into word processed documents (e.g. that are generated by CASE or IDEF tools) shall be delivered on CD/DVD in a format compatible with USPTO's Windows 7 operating system office automation or system development application software, as appropriate. As of the release date of the RFP, USPTO office automation applications include: Microsoft Word 2010, Microsoft Excel 2010, Microsoft Outlook 2010, Microsoft Project Standard 2010, Microsoft Access 2010, and Microsoft PowerPoint 2010. Contractor shall be notified when these standards are upgraded. Contractor shall be capable of delivering documentation within 30 calendar days of the notification that USPTO has upgraded their office standards. F.6 Access Government Furnished Systems
+
+The USPTO will provide the following: (a) Access to appropriate USPTO personnel and program documentation as required. Appropriate level access will be determined by USPTO. Section G - Contract Administration Data G.1 CONTRACT ADMINISTRATION Notwithstanding the Contractor's responsibility for total management during the performance of the contract, the administration of the contract will require maximum coordination between the USPTO and the Contractor. The following individuals will be the USPTO points of contact during the performance of the contract. (a) Contracting Officer's Technical Representative A Contracting Officer's Technical Representative (COTR) will be designated on authority of the Contracting Officer to monitor all technical aspects and assist in administering the contract. The types of actions within the purview of the COTR's authority are to assure that the Contractor performs the technical requirements of the contract; to perform or cause to be performed inspections necessary in connection with performance of the contract; to maintain both written and oral communications with the Contractor concerning the aspects of the contract within his/her purview; to issue written interpretations of technical requirements of Government drawings, designs and specifications; to monitor the Contractor's performance under the contract and notify the Contractor and Contracting Officer of any deficiencies observed; and to coordinate Government-Furnished Property or Data availability and provide for site entry of Contractor personnel if required. A letter of designation will be issued to the COTR with a copy supplied to the Contractor, stating the responsibilities and limitations of the COTR. This letter will clarify to all parties to the contract the responsibilities of the 16
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+COTR. At no time may the scope of work, price, delivery dates, or other mutually agreed upon terms or provisions of the contract be changed without being executed in writing by the Contracting Officer authorizing such changes. (b) Contracting Officer All contract administration will be effected by the Contracting Officer, address as shown on the face page of the contract. Communications pertaining to contract administration matters will be addressed to the Contracting Officer. No changes in or deviation from the scope of work shall be effected without a Supplemental Agreement executed by the Contracting Officer authorizing such changes. G.2 CONTRACTING OFFICER'S AUTHORITY The Contracting Officer is the only person authorized to make or approve any changes in any of the requirements of the contract and notwithstanding any provisions contained elsewhere in the contract, the said authority remains solely in the Contracting Officer. In the event the Contractor makes any changes at the direction of any person other than the Contracting Officer, the change will be considered to have been made without authority and no adjustment will be made in the contract price to cover any increase in costs incurred as a result thereof.
+
+G.3
+
+CONTRACTING OFFICER'S TECHNICAL REPRESENTATIVE (COTR)
+
+(a) The Contracting Officer hereby designates the individual named below as the Contracting Officer's Technical Representative. NAME: ADDRESS: (to be designated at contract award) U.S. Patent and Trademark Office (to be designated at contract award) PHONE NO: (to be designated at contract award) The COTR may be changed at any time by the Government without prior notice to the Contractor but notification of the change, including the name and address of the successor COTR, will be promptly provided to the Contractor by the Contracting Officer in writing. (b) The responsibilities and limitations of the COTR are as follows: (1) The COTR is responsible for the technical aspects of the project and technical liaison with the Contractor. The COTR is also responsible for the final inspection and acceptance of all reports, and such other responsibilities as may be specified in the contract.
+
+17
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+(2) The COTR is not authorized to make any commitments or otherwise obligate the Government or authorize any changes, which affect the contract price, terms or conditions. Any Contractor request for changes shall be referred to the Contracting Officer directly or through the COTR. No such changes shall be made without the expressed prior authorization of the Contracting Officer. The COTR may designate assistant COTR(s) to act for him by naming such assistant in writing and transmitting a copy of such designation through the Contracting Officer to the Contractor.
+
+G.4
+
+Government-Furnished Data (If Applicable)
+
+The Government shall deliver to the contractor, as may be requested, GovernmentFurnished Data (GFD) during the performance of this contract. (a) Title to Government-furnished data and reference documents shall remain with the Government. (c) The contractor shall use the Government-furnished data and reference documents only in connection with this contract. (d) Government-furnished data and reference documents will be returned to the Government upon conclusion of the contract or as otherwise specified.
+
+18
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+Section H - Special Contract Requirements H.1 Organizational Conflict of Interest A. The Contractor warrants that, to the best of the Contractor's knowledge and belief, there are no relevant facts or circumstances which could give rise to an organizational conflict of interest, as defined in FAR Subpart 9.5 or that the Contractor has disclosed all such relevant information. B. The Contractor agrees that if an actual or potential organizational conflict of interest is discovered after award, the Contractor will make a full disclosure in writing to the Contracting Officer (CO). This disclosure shall include a description of actions, which the Contractor has taken or proposes to take, after consultation with the CO, to avoid, mitigate, or neutralize the actual or potential conflict. C. Remedies. The CO may terminate this contract for convenience, in whole or part, if it deems such termination necessary to avoid an organizational conflict of interest. If the Contractor was aware of a potential organizational conflict of interest prior to award or discovered an actual or potential conflict after award and did not disclose or misrepresented relevant information to the CO, the Government may terminate the contract for default, debar the Contractor from Government contracting, or pursue such other remedies as may be permitted by law or this contract. D. The Contractor further agrees to insert provisions which shall conform substantially to the language of this clause, including this paragraph (d), in any subcontractor or consultant agreement hereunder. H.2 Order of Precedence
+
+Any inconsistency in this solicitation or contract shall be resolved by giving precedence in the following order: (a) The Schedule (excluding the specifications) (b) Representations and other instructions (c) Contract clauses (d) Other documents, exhibits, and attachments (e) The specifications
+
+19
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+H.3
+
+Option to Extend the Term of the Contract
+
+The Government has the option to extend the term of this contract for four (4) additional periods (Option Periods 1-4, described below). If more than 30 days remain in the contract period of performance, the Government, without prior written notification, may exercise this option by issuing a contract modification. To exercise this option within the last 30 days of the period of performance, the Government must provide to the Contractor written notification prior to the expiration of that last 30-day period. This preliminary notification does not commit the Government to exercising the option. H.4 Section 508 of the Rehabilitation Act of 1973 Compliance
+
+In accordance with Section 508, Subsection 508 (a)(3), the USPTO requires that all Electronic Information Technology ("EIT"), as that term is defined at FAR 2.101, delivered under this contract comply with the applicable EIT technology accessibility standards issued by the Architectural and Transportation Barriers Compliance Board set forth at 36 CFR Part 1194. For additional information, the official Government Web page is: www.Section508.gov H.5 Limitation on Contractor Advertisements (PTO-06) (Apr 2006)
+
+The Contractor agrees not to refer to any contract awarded under this solicitation in commercial advertising so as to state or imply that the product or service is endorsed or preferred by the Federal Government or is considered by the Government to be superior to other products or services. Advertisements, press releases and publicity of the contract by a contractor (including applicable subcontractors) shall not be made without the prior written permission of the Contracting Officer. H.6 Federal Holidays
+
+The following legal holidays are observed by the USPTO. Holidays falling on Saturday are observed on the Friday preceding the holiday while those holidays falling on Sundays are observed on the Monday following the holiday. New Year's Day Martin Luther King's Birthday President's Day Memorial Day Independence Day Labor Day Columbus Day Veterans Day Thanksgiving Day Christmas Day Inauguration Day January 1 Third Monday in January Third Monday in February Last Monday in May July 4 First Monday in September Second Monday in October November 11 Fourth Thursday in November December 25 January 20 every fourth year
+
+20
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+(Any other day designated by Federal Statue, Executive Order or Presidential Proclamation)
+
+H.7
+
+Duplication and Disclosure of Confidential Data
+
+Duplication or disclosure of confidential data provided by the USPTO or to which the Contractor will have access as a result of this contract is prohibited. It is understood that throughout performance of the contract, the Contractor may have access to confidential data that is the sole property of the USPTO, as well as access to proprietary data which is the sole property of other than the contracting parties. The Contractor hereby agrees to maintain the confidentiality of all such data to which access may be gained throughout contract performance whether title thereto vests in the USPTO or otherwise. The Contractor hereby agrees not to disclose said data, any interpretations thereof, or data derivative there from, to unauthorized parties in contravention of these provisions without prior written approval of the Contracting Officer or the party in which title thereto is wholly vested. This clause also applies to any subcontractors and consultants used by the Contractor.
+
+21
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+PART II - CONTRACT CLAUSES Section I - Contract Clauses I.1 52.252-01 CLAUSES INCORPORATED BY REFERENCE (JUN 1998)
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at this/these address(es): http://www.acquisition.gov/far/. FEDERAL ACQUISITION REGULATION (48 CFR CHAPTER 1) CLAUSES
+Clause 52.202-01 52.203-03 52.203-05 52.203-06 52.203-07 52.203-08 52.203-10 52.203-11 Title Definitions Gratuities Covenant Against Contingent Fees Restrictions on Subcontractor Sales to the Government Anti-Kickback Procedures Cancellation, Rescission, and Recovery of Funds for Illegal or Improper Activity Price Or Fee Adjustment For Illegal Or Improper Activity Certification and Disclosure Regarding Payments to Influence Certain Federal Transactions Limitation On Payments To Influence Certain Federal Transactions Printed or Copied Double-Sided on Recycled Paper. Central Contractor Registration Protecting the Government's Interest When Subcontracting With Contractors Debarred, Suspended, or Proposed for Debarment Audit and Records--Negotiation Order of Precedence--Uniform Contract Format Integrity of Unit Prices. Indefinite Quantity Option to Extend Services Option To Extend The Term Of The Contract Utilization of Small Business Concerns Small Business Subcontracting Plan Convict Labor Date January 2012 April 1984 April 1984 September 2006 July 1995 April 2002 January 1997 September 2007
+
+52.203-12 52.204-04 52.204-07 52.209-06
+
+September 2007 August 2000 February 2009 January 2005
+
+52.215-02 52.215-08 52.215-14 52.216-22 52.217-08 52.217-09 52.219-08 52.219-09 52.222-3
+
+June 2007 October 1997 October 1997 October 1995 November 1999 March 2000 March 2005 April 2008 June 2003
+
+22
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+Clause 52.222-21 52.222-26 52.222-35
+
+52.222-36 52.222-37
+
+52.223-06 52.223-14 52.224-1 52.224-2 52.225-13 52.227-01 52.227-02 52-227-03 52-227-14 52.229-3 52.232-1 52-232-8 52.232-17 52.232-18 52.232-23 52.232-25 52.232-33 52.233-01 52.233-3 52.233-4 52.237-03 52.242-13 52.243-01 52.245-02 52.249-02 52.249-08 52.249-14 52.253-01
+
+Title Prohibition of Segregated Facilities Equal Opportunity Equal Opportunity for Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans Affirmative Action For Workers with Disabilities Employment Reports on Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans Drug Free Workplace Toxic Chemical Release Reporting Privacy Act Notification Privacy Act Restrictions on Certain Foreign Purchases Authorization and Consent Notice and Assistance Regarding Patent and Copyright Infringement. Patent Indemnity Rights in Data- General Federal, State and Local Taxes Payments Discounts for Prompt Payment Interest Availability of Funds Assignment Of Claims Prompt Payment Payment by Electronic Funds Transfer-Central Contractor Registration Disputes Protest after Award Applicable Law for Breach of Contract Claim Continuity of Services Bankruptcy Changes--Fixed price Government Furnished Property Termination For Convenience Of The Government (Fixed-Price) Termination For Default (Fixed Price Supply or Service) Excusable Delays Computer Generated Forms
+
+Date February 1999 December 2007 September 2006
+
+October 1998 September 2006
+
+May 2001 August 2003 October 1995 October 1995 June 2008 December 2007 December 2007 December 2007 December 2007 April 2003 October 1995 August 2005 October 2008 April 2002 October 1995 October 2008 October 2003 July 2002 February 1998 October 2004 June 1997 July 1995 October 1995 June 2007 May 2004 October 1995 June 2007 January 1991
+
+23
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+I.2
+
+52.217-8 Option to Extend Services (Nov 1999)
+
+The Government may require continued performance of any services within the limits and at the rates specified in the contract. These rates may be adjusted only as a result of revisions to prevailing labor rates provided by the Secretary of Labor. The option provision may be exercised more than once, but the total extension of performance hereunder shall not exceed 6 months. The Contracting Officer may exercise the option by written notice to the Contractor within 30 days of the expiration date. I.3 52.252.02 Clauses Incorporated By Reference This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at this/this address: http://www.acquisition.gov/far/. I.4 52.252-6 Authorized Deviations in Clauses (APR 1984) (a) The use in this solicitation or contract of any Federal Acquisition Regulation (48 CFR Chapter 1) clause with an authorized deviation is indicated by the addition of "(DEVIATION)" after the date of the clause. (b) The use in this solicitation or contract of any Commerce Acquisition Regulation clause with an authorized deviation is indicated by the addition of"(DEVIATION)" after the name of the regulation. I.5 52.243-7 Notification of Changes (FAR 52.243-7) (SEPTEMBER 2006)
+
+(a) Definitions. "Contracting Officer," as used in this clause, does not include any representative of the Contracting Officer. "Specifically Authorized Representative (SAR)," as used in this clause, means any person the Contracting Officer has so designated by written notice (a copy of which shall be provided to the Contractor) which shall refer to this paragraph and shall be issued to the designated representative before the SAR exercises such authority. (b) Notice. The primary purpose of this clause is to obtain prompt reporting of Government conduct that the Contractor considers to constitute a change to this contract. Except for changes identified as such in writing and signed by the Contracting Officer, the Contractor shall notify the Administrative Contracting Officer in writing promptly, within ______ (to be negotiated) calendar days from the date that the Contractor identifies any Government conduct (including actions, inactions, and written or oral communications) that the Contractor regards as a change to the contract terms and 24
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+conditions. On the basis of the most accurate information available to the Contractor, the notice shall state-- (5) The particular elements of contract performance for which the Contractor may seek an equitable adjustment under this clause, including-- a. What contract line items have been or may be affected by the alleged change; b. What labor or materials or both have been or may be added, deleted, or wasted by the alleged change; c. To the extent practicable, what delay and disruption in the manner and sequence of performance and effect on continued performance have been or may be caused by the alleged change; d. What adjustments to contract price, delivery schedule, and other provisions affected by the alleged change are estimated; and (6) The Contractor's estimate of the time by which the Government must respond to the Contractor's notice to minimize cost, delay or disruption of performance.
+
+(c) Continued performance. Following submission of the notice required by paragraph (b) of this clause, the Contractor shall diligently continue performance of this contract to the maximum extent possible in accordance with its terms and conditions as construed by the Contractor, unless the notice reports a direction of the Contracting Officer or a communication from a SAR of the Contracting Officer, in either of which events the Contractor shall continue performance; provided, however, that if the Contractor regards the direction or communication as a change as described in paragraph (b) of this clause, notice shall be given in the manner provided. All directions, communications, interpretations, orders and similar actions of the SAR shall be reduced to writing promptly and copies furnished to the Contractor and to the Contracting Officer. The Contracting Officer shall promptly countermand any action which exceeds the authority of the SAR. (d) Government response. The Contracting Officer shall promptly, within (to be negotiated) calendar days after receipt of notice, respond to the notice in writing. In responding, the Contracting Officer shall either--
+
+25
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+(1)
+
+Confirm that the conduct of which the Contractor gave notice constitutes a change and when necessary direct the mode of further performance;
+
+(2) Countermand any communication regarded as a change; (1) (2) The date, nature, and circumstances of the conduct regarded as a change; The name, function, and activity of each Government individual and Contractor official or employee involved in or knowledgeable about such conduct; The identification of any documents and the substance of any oral communication involved in such conduct;
+
+(3)
+
+In the instance of alleged acceleration of scheduled performance or delivery, the basis upon which it arose; (e) Equitable adjustments. (1) If the Contracting Officer confirms that Government conduct effected a change as alleged by the Contractor, and the conduct causes an increase or decrease in the Contractor's cost of, or the time required for, performance of any part of the work under this contract, whether changed or not changed by such conduct, an equitable adjustment shall be made-- a. In the contract price or delivery schedule or both; and b. In such other provisions of the contract as may be affected. (2) The contract shall be modified in writing accordingly. In the case of drawings, designs or specifications which are defective and for which the Government is responsible, the equitable adjustment shall include the cost and time extension for delay reasonably incurred by the Contractor in attempting to comply with the defective drawings, designs or specifications before the Contractor identified, or reasonably should have identified, such defect. When the cost of property made obsolete or excess as a result of a change confirmed by the Contracting Officer under this clause is included in the equitable adjustment, the Contracting Officer shall have the right to prescribe the manner of disposition of the property. The equitable adjustment shall not include increased costs or time extensions for delay resulting from the Contractor's failure to provide 26
+
+(4)
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+notice or to continue performance as provided, respectively, in paragraphs (b) and (c) of this clause. Note: The phrases "contract price" and "cost" wherever they appear in the clause, may be appropriately modified to apply to cost-reimbursement or incentive contracts, or to combinations thereof. The contractor shall notify the Contracting Officer in writing promptly, within five (5) calendar days from the date that the contractor identifies any Government conduct (including actions, inactions, and written or oral communications) that the contractor regards as a change to the contract terms and conditions. The Contracting Officer shall promptly, within 30 calendar days after receipt of notice, respond to the notice in writing. Agency-specific clauses are provided below. I.6 PTO-04 Security Clause 06/06/2007
+
+ACCESS TO GOVERNMENT FACLITIES During the life of the contract, the right of ingress and egress to and from the Government facility for contractor personnel shall be made available as required per each individual task order. During all operations on Government premises, contractor personnel shall comply with the rules and regulations governing the conduct of personnel and the operations of the facility. The Government reserves the right to require contractor personnel to sign in upon ingress or sign out upon egress to and from the Government facility. DUPLICATION AND DISCLOSURE OF CONFIDENTIAL DATA Duplication or disclosure of confidential data provided by the USPTO, or to which the contractor will have access as a result of this contract, is prohibited. It is understood that throughout performance of the contract, the contractor may have access to confidential data which is the sole property of the USPTO, as well as access to proprietary data which is the sole property of other than the contracting parties. The contractor hereby agrees to maintain the confidentiality of all such data to which access may be obtained throughout contract performance whether title thereto vests in the USPTO or otherwise. The contractor hereby agrees not to disclose said data, any interpretation thereof or data derivative therefrom, to unauthorized parties in contravention of these provisions, without prior written approval of the CO or the party in which title thereto is wholly vested. This clause also applies to any subcontractors and/or consultants used by the contractor.
+
+RIGHTS IN DATA (IF APPLICABLE) The Government shall have unlimited rights in software first produced in the performance of this contract. For the purposes of this clause, "software first produced in the performance of this contract" shall include, but not be limited to the following: non27
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+COTS computer program developed or previously developed and implemented by the contractor in the performance of this contract, related computer data bases and documentation thereof, source code, object code, algorithms, library code, library routine, and technical data of all software first produced in the performance of this contract. For the purpose of this clause, "unlimited rights" shall mean the right of the USPTO, at no extra cost to the USPTO or recipients, to use, disclose, reproduce unlimited copies, prepare derivative works, distribute unlimited copies to the public and foreign government patent offices, and perform publicly and display publicly, in any manner and for any purpose, and to have or permit others to do so. SECRECY AND USE OF PATENT INFORMATION Work under this contract does not affect the national security. However, patent applications are required by law (35 U.S.C. 122) to be kept in confidence. Information contained in any patent application file(s) is restricted to authorized contractor personnel on a need to-know basis. The contractor acquires no right or privilege to use or disclose any information contained in any patent application file (in any form whatsoever) except to perform the work under the contract. Further, the contractor shall not copyright or make any use or disclosure whatsoever of any patent information contained in any application or related copy or data furnished to the contractor by the Government, or obtained by the contractor from the Government, except performing the requirements of this contract. Security requirements of patent application file data maintained in a computer-accessible medium are an extension of the security requirements for the hard copy or of patent application folders. All processing, storage, or transmission of patent application file data by means of electronic communications systems is prohibited unless use of such systems is approved by the USPTO. All personnel having access to patent application files or data or information concerning the same, must take the following affirmation, signed in writing: "I do swear or affirm that I will preserve the applications for patents in secrecy, that I will not divulge any information concerning the same to unauthorized persons while employed in work under this contract or an any time thereafter, and that I take this obligation freely, and without mental reservation or purpose of evasion." Each employee's signed oath, or affirmation, shall be retained in the contractor's file, subject to inspection by authorized Government representatives. Without advance notice, the Government shall have the right to inspect the contractor's premises, records, and work in process pertaining to the secrecy of patent information (End of Clause) I.7 PTO-08 Physical Access 09/26/2006 The performance of this contract requires contractors to have physical access to Federal premises for more than 180 days or access to a Federal information system. Any items or services delivered under this contract shall comply with the Department of Commerce personal identity verification procedures that implement HSPD-12, FIPS PUB 201, and OMB Memorandum M-05-24. The Contractor shall insert this clause in all subcontracts when the subcontractor is required to have physical access to a federally controlled facility or access to a Federal information system.
+
+28
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+(End of Clause) I.8 PTO-10 Agency-Level Protest Procedures 05/18/2007
+
+AGENCY-LEVEL PROTEST PROCEDURES LEVEL ABOVE THE CONTRACTING OFFICER (DEC 1996) I. PURPOSE: To implement the requirements of Executive Order No. 12979 and Federal Acquisition Regulation (FAR 33.103). On October 25, 1995, President Clinton signed Executive Order No. 12979, which directs heads of executive agencies to develop administrative procedures for resolving protests to awards of procurement contracts within their agencies at a level above the Contracting Officer. Authority to administer procurement-related directives has been delegated within the Department of Commerce through the Chief Financial Officer and Assistant Secretary for Administration to the Director for Acquisition Management (Procurement Executive). The Department's goal is to encourage protesters to resolve their protests at the agency level, help build confidence in the Government's acquisition system, and reduce protests to the General Accounting Office and other external forums. Prior to submission of an agency protest, all parties shall use their best efforts to resolve concerns raised by an interested party at the Contracting Officer level through open and frank discussions. If concerns cannot be resolved, protesters may use these procedures when a resolution is requested from the agency at a level above the Contracting Officer. II. DEFINITIONS: An agency protest is one that may be filed with either the contracting officer or the protest decision authority but not both. When a protester decides to file a protest at the agency level with the protest decision authority, the guidelines set forth in these established agency level protest procedures above the contracting officer apply. These procedures are in addition to the existing protest procedures contained in the Federal Acquisition Regulation (FAR) Part 33.102. A day is a calendar day. In computing a period of time for the purpose of these procedures, the day from which the period begins to run is not counted. When the last day of the period is a Saturday, Sunday, or Federal holiday, the period extends to the next day that is not a Saturday, Sunday, or Federal holiday. Similarly, when the Washington, DC offices of the Department of Commerce are closed for all or part of the last day, the period extends to the next day on which the Department is open. III. PROCEDURES: a. Protesters using these procedures may protest to the protest decision authority who will make the final decision for the Department. Protests shall be addressed to: Protest Decision Authority U.S. Patent & Trademark Office P.O. Box 1450 29
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+Alexandria, VA 22313-1450 The outside of the envelope or beginning of the FAX transmission must be marked "Agency-level Protest". The protester shall also provide a copy of the protest within 1 day to the responsible contracting officer and a copy to the addressee indicated below: Office of the General Counsel General Law Office U.S. Patent & Trademark Office P.O. Box 1450 Alexandria, VA 22313-1450 (FAX Number 571-273-0099) b. Election of forum: While a protest is pending at the agency level with the protest decision authority, the protester agrees not to protest to the Government Accountability Office (GAO) or any other external forums. If the protester has already filed with the GAO or other external forums, the procedures described here may not be used. 1. Protests based upon alleged improprieties in a solicitation which are apparent prior to bid opening or time set for receipt of proposals shall be filed prior to bid opening or the time set for receipt of proposals. If the contract has been awarded, protests must be filed within 10 days after contract award or 5 days after the date the protester was given the opportunity to be debriefed, whichever date is later. In cases other than those covered in the preceding two sentences, protests shall be filed not later than 10 days after the basis of the protest is known or should have been known, whichever is earlier. 2. To be filed on a given day, protests must be received by 4:30 PM current local time. Any protests received after that time will be considered to be filed on the next day. Incomplete submissions will not be considered filed until all information is provided. 3. To be complete, protests must contain the following information: (i) The protester's name, address, telephone number, and fax number (ii) The solicitation or contract number, name of contracting office and the contracting officer (iii) A detailed statement of all factual and legal grounds for protests, and an explanation of how the protester was prejudiced (iv) Copies of relevant documents supporting protester's statement (v) A request for ruling by the agency (vi) Statement as to form of relief requested (vii) All information establishing that the protester is an interested party for the purpose of filing a protest (viii) All information establishing the timeliness of the protest All protests must be signed by an authorized representative of the protester. Within 14 days after the protest is filed, the Contracting Officer will prepare an administrative report that responds to the issues raised by the protester and addresses any other issues, which, even if not raised by the protester, have been identified by agency officials as being relevant to the fairness of the procurement process. For good cause shown, the 30
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+protest decision authority may grant an extension of time for filing the administrative report and for issuing the written decision. When an extension is granted, the protest decision authority will notify the protester and all interested parties within 1 day of the decision to grant the extension. Unless an extension is granted, the protest decision authority will issue a decision within 35 days of the protest. The protest decision authority's final decision will be binding on the Department of Commerce and not subject to further appeals. The protest decision authority shall send a written ruling and a summary of the reasons supporting the ruling to the protester by certified mail, return receipt requested with information copies to the applicable contracting office and Office of Acquisition Management. c. Effect of protest on award and performance: When a protest is filed prior to award, a contract may not be awarded unless authorized by the Head of the Contracting Activity (HCA) based on a written finding that: (i) The supplies or services are urgently required, (ii) Delivery or performance would be unduly delayed by failure to make the award promptly, or (iii) A prompt award will be in the best interest of the Government. When a protest is filed within 10 days after contract award or 5 days after a debriefing date was offered to the protester under a timely debriefing request in accordance with FAR 15.506, whichever is later, the Contracting Officer shall immediately suspend performance pending the resolution of the protest within the agency, including any review by an independent higher official, unless continued performance is justified. The HCA may authorize contract performance, notwithstanding the protest, based on a written finding that: (i) Contract performance would be in the best interest of the United States, or (ii) urgent and compelling circumstances that significantly affect the interests of the United States will not permit waiting for a decision. IV. REMEDIES: The protest decision authority may grant one or more of the following remedies: (1) terminate the contract, (2) re -compete the requirement, (3) issue a new solicitation, (4) refrain from exercising options under the contract, (5) award a contract consistent with statutes and regulations, (6) amend the solicitation provisions which gave rise to the protest and continue with the procurement, (7) such other remedies as the decision-maker may determine are necessary to correct a defect. (End of Clause) I.9 PTO-11 Security Requirements for Information Technology Resources (Sep 2007) CAR 1352.239-73 Security Requirements for Information Technology Resources October 2006
+
+31
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+(a) Applicability. This clause is applicable to all contracts that require Contractor electronic access to Department of Commerce/USPTO sensitive non-national security or national security information contained in systems, or administrative control of systems that process or store information, that directly support the mission of the Agency. (b) Definitions. For purposes of this clause the term "Sensitive" is defined by the guidance set forth in: The Computer Security Act of 1987 (P.L. 100-235) (http://www.nist.gov/cfo/legislation/Public%20Law%20100-235.pdf), including the following definition of the term (1) sensitive information "... any information, the loss, misuse, or unauthorized access, to or modification of which could adversely affect the national interest or the, conduct of federal programs, or the privacy to which individuals are entitled under section 552a of title 5, United States Code (The Privacy Act), but which has not been specifically authorized under criteria established by an Executive Order or an Act of Congress to be kept secret in the interest of national defense or foreign policy." (2) For purposes of this clause, the term "National Security" is defined by the guidance set forth in: The DOC IT Security Program Policy and Minimum Implementation Standards, Section 4.3 (http://ocio.os.doc.gov/ITPolicyandPrograms/IT_Security/index.htm). The DOC Security Manual, Chapter 18 (http://home.commerce.gov/osy/SecurityManual/Security%20Manual%20Chapters/Secur ity%20Manual.pdf). Executive Order 12958, as amended, Classified National Security Information. Classified or national security information is information that has been specifically authorized to be protected from unauthorized disclosure in the interest of national defense or foreign policy under an Executive Order or Act of Congress. (3) Information technology resources include, but are not limited to, hardware, application software, system software, and information (data). Information technology services include, but are not limited to, the management, operation (including input, processing, transmission, and output), maintenance, programming, and system administration of computer systems, networks, and telecommunications systems. (c) The contractor shall be responsible for implementing sufficient Information Technology security, to reasonably prevent the compromise of DOC/USPTO IT resources for all of the contractor's systems that are interconnected with a DOC/USPTO network or DOC/USPTO systems that are operated by the contractor.
+
+32
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+(d) All contractor personnel performing under this contract and contractor equipment used to process or store DOC/USPTO data, or to connect to DOC/USPTO networks, must comply with the requirements contained in the DOC Information Technology Management Handbook (http://ocio.os.doc.gov/index.htm), or equivalent/more specific agency or bureau guidance as specified immediately hereafter [insert agency or bureau specific guidance, if applicable]. (e) Contractor personnel requiring a user account for access to systems operated by the contractor for DOC/USPTO or interconnected to a DOC/USPTO network to perform contract services shall be screened at an appropriate level in accordance with Commerce Acquisition Manual 1337.70, Security Processing Requirements for Service Contracts. (f) Within 5 days after contract award, the contractor shall certify in writing to the COR that its current employees, in performance of the contract, have completed initial IT security orientation training in DOC IT Security policies, procedures, computer ethics, and best practices, in accordance with DOC IT Security Program Policy, chapter 15, section 15.3. The contractor shall provide this written certification to the COR within 30 days of a new employee beginning work under the contract. The COR will inform the contractor of any other available DOC training resources. Annually thereafter the contractor shall certify in writing to the COR that its employees, in performance of the contract, have completed annual refresher training as required by section 15.4 of the DOC IT Security Program Policy. (g) Within 5 days of contract award, the contractor shall provide the COR with signed acknowledgement of the provisions as contained in Commerce Acquisition Regulation (CAR), 1352.209-72, Restrictions Against Disclosures. (h) The contractor shall afford DOC/USPTO, including the Office of Inspector General, access to the contractors and subcontractor's facilities, installations, operations, documentation, databases, and personnel used in performance of the contract. Access shall be provided to the extent required to carry out a program of IT inspection, investigation, and audit to safeguard against threats and hazards to the integrity, availability, and confidentiality of DOC/USPTO data or to the function of computer systems operated on behalf of DOC/USPTO, and to preserve evidence of computer crime. (i) For all contractor-owned systems for which performance of the contract requires interconnection with a DOC/USPTO network or that DOC/USPTO data be stored or processed on them, the Contractor shall provide, implement, and maintain a System Accreditation Package in accordance with chapter 6 of the DOC IT Security Program Policy. Specifically, the Contractor shall: (1) Within 14 days after contract receipt of direction from the CACG, the contractor shall submit for USPTO approval a System Certification and Accreditation package, including the IT Security Plan and a system certification test plan, as outlined in USPTO Certification and Accreditation Standards and Guidelines. The Certification and Accreditation Package must be consistent with and provide further detail for the security 33
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+approach contained in the offeror's proposal or sealed bid that resulted in the award of this contract, and in compliance with the requirements stated in this clause. The Certification and Accreditation Package, as approved by the Contracting Officer in consultation with the USPTO Security Officer, shall be incorporated as part of the contract. USPTO will use the incorporated IT Security Plan as the basis for certification and accreditation of the contractor system that will process USPTO data or connect to USPTO networks. Failure to submit and receive approval of the Certification and Accreditation Package, as outlined above, may result in termination of the contract. (2) Upon approval, the contractor shall follow the work plan schedule to complete system certification activities in accordance with DOC IT Security Program Policy section 6.2, and provide the COR with the completed System Security Plan and Certification Documentation Package portions of the System Accreditation Package for approval and system accreditation by an appointed USPTO official. (3) Upon receipt of the Security Assessment Report and Authorizing Official's written accreditation decision from the COR, the Contractor shall maintain the approved level of system security as documented in the Security Accreditation Package, and assist the COR in annual assessments of control effectiveness in accordance with DOC IT Security Program Policy, section 6.3.1.2. (j) The contractor shall incorporate this clause in all subcontracts that meet the conditions in paragraph (a) of this clause. (End of clause)
+
+I.10 PTO-16 Contractor Notification Requirement The Contractor is required to notify the Contracting Officer's Representative (COR) within one (1) business day upon temporary or permanent termination of a Contractor employee, when that Contractor employee has USPTO system access right, and at any other time when a Contractor employee no longer requires USPTO IT system access permissions.
+
+34
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+PART III - LIST OF DOCUMENTS, EXHIBITS AND OTHER ATTACHMENTS Section J - List of Attachments J.1 List of Attachments The following attachments provide the forms and information that are required for the submission of proposals. The attachments are hereby made a part of this solicitation and any resultant contract.
+
+Attachment J-1
+
+Description CURRENT DATA SETS
+
+35
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+PART IV - REPRESENTATIONS AND INSTRUCTIONS Section K - Representations, Certifications, and Other Statements of Offerors K.1 52.252-1 Solicitation Provisions Incorporated by Reference (FEB 1998)
+
+This solicitation incorporates one or more solicitation provisions by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. The offeror is cautioned that the listed provisions may include blocks that must be completed by the offeror and submitted with its quotation or offer. In lieu of submitting the full text of those provisions, the offeror may identify the provision by paragraph identifier and provide the appropriate information with its quotation or offer. Also, the full text of a solicitation provision may be accessed electronically at this/these address(es): http://www.acquisition.gov/far/. FEDERAL ACQUISITION REGULATION (48 CFR CHAPTER 1) CLAUSES Clause 52.203-11 Title Certification and Disclosure Regarding Payments to Influence Certain Federal Transaction Deviation Compliance with Veterans' Employment Reporting Requirements Date Sep 2007
+
+52.222-38
+
+Dec 2001
+
+K.2 (a)
+
+52.204-8 Annual Representations and Certifications (Feb 2009) (1) The North American Industry Classification System (NAICS) code for this acquisition is ___519190. (2) (3) The small business size standard is _$7.0 Million. The small business size standard for a concern which submits an offer in its own name, other than on a construction or service contract, but which proposes to furnish a product which it did not itself manufacture, is 500 employees.
+
+(b)
+
+(1) If the clause at 52.204-7, Central Contractor Registration, is included in this solicitation, paragraph (c) of this provision applies.
+
+36
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+If the clause at 52.204-7 is not included in this solicitation, and the offeror is currently registered in CCR, and has completed the ORCA electronically, the offeror may choose to use paragraph (c) of this provision instead of completing the corresponding individual representations and certifications in the solicitation. The offeror shall indicate which option applies by checking one of the following boxes: [ ] (i) Paragraph (c) applies. [ ] (ii) Paragraph (c) does not apply and the offeror has completed the individual representations and certifications in the solicitation. (c) The offeror has completed the annual representations and certifications electronically via the System for Award Management (SAM) website at https://www.sam.gov/index.html. After reviewing the ORCA database information, the offeror verifies by submission of the offer that the representations and certifications currently posted electronically have been entered or updated within the last 12 months, are current, accurate, complete, and applicable to this solicitation (including the business size standard applicable to the NAICS code referenced for this solicitation), as of the date of this offer and are incorporated in this offer by reference (see FAR 4.1201); except for the changes identified below [offeror to insert changes, identifying change by clause number, title, date]. These amended representation(s) and/or certification(s) are also incorporated in this offer and are current, accurate, and complete as of the date of this offer. FAR CLAUSE # ____________ TITLE _________ DATE CHANGE _______ _____
+
+Any changes provided by the offeror are applicable to this solicitation only, and do not result in an update to the representations and certifications posted on ORCA. Note: Offeror is required to fill in Taxpayer Identification Number.
+
+K.3 52.204-3 Taxpayer Identification (1999) (a) Definitions (1) "Common parent," as used in this provision, means that corporate entity that owns or controls an affiliated group of corporations that files its Federal income tax returns on a consolidated basis, and of which the offeror is a member.
+
+37
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+(2)
+
+"Taxpayer Identification Number (TIN)," as used in this provision, means the number required by the Internal Revenue Service (IRS) to be used by the offeror in reporting income tax and other returns. The TIN may be either a Social Security Number or an Employer Identification Number.
+
+(b) All offerors must submit the information required in paragraphs D through F of this provision to comply with debt collection requirements of 31 U.S.C. 7701(c) and 3325(d), reporting requirements of 26 U.S.C. 6041, 6041A, and 6050M, and implementing regulations issued by the IRS. If the resulting contract is subject to the payment reporting requirements described in Federal Acquisition Regulation (FAR) 4.904, the failure or refusal by the offeror to furnish the information may result in a 31 percent reduction of payments otherwise due under the contract. (c) The TIN may be used by the Government to collect and report on any delinquent amounts arising out of the offeror's relationship with the Government (31 U.S.C. 7701(c)(3)). If the resulting contract is subject to the payment reporting requirements described in FAR 4.904, the TIN provided hereunder may be matched with IRS records to verify the accuracy of the offeror's TIN. (d) Taxpayer Identification Number (TIN) [ ] [ ] [ ] [ ] TIN:_____________________. TIN has been applied for. TIN is not required because: Offeror is a nonresident alien, foreign corporation, or foreign partnership that does not have income effectively connected with the conduct of a trade or business in the United States and does not have an office or place of business or a fiscal paying agent in the United States; Offeror is an agency or instrumentality of a foreign government;
+
+[ ]
+
+[ ] Offeror is an agency or instrumentality of the Federal Government. (e) Type of organization [ ] [ ] [ ] [ ] [ ] Sole proprietorship; Partnership; Corporate entity (not tax-exempt); Corporate entity (tax-exempt); Government entity (Federal, State, or local); 38
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+[ ] [ ] [ ]
+
+Foreign government; International organization per 26 CFR 1.6049-4; Other_______________________.
+
+(f) Common parent [ ] Offeror is not owned or controlled by a common parent as defined in paragraph (a) of this provision. [ ] Name and TIN of common parent: Name _______________________________ TIN ________________________________ Note: Offeror is required to provide DUNS # K.4 52.204-6 Data Universal Numbering System (DUNS) Number (FEB 2009) Company's DUNS#______________________ (a) The offeror shall enter, in the block with its name and address on the cover page of its offer, the annotation "DUNS" or "DUNS+4" followed by the DUNS number or "DUNS+4" that identifies the offeror's name and address exactly as stated in the offer. The DUNS number is a nine-digit number assigned by Dun and Bradstreet, Inc. The DUNS+4 is the DUNS number plus a 4-character suffix that may be assigned at the discretion of the offeror to establish additional CCR records for identifying alternative Electronic Funds Transfer (EFT) accounts (see Subpart 32.11) for the same parent concern. (b) If the offeror does not have a DUNS number, it should contact Dun and Bradstreet directly to obtain one. (1) An offeror may obtain a DUNS number-- a. If located within the United States, by calling Dun and Bradstreet at 1866-705-5711 or via the Internet at http://www.dnb.com; or b. If located outside the United States, by contacting the local Dun and Bradstreet office. 39
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+(2)
+
+The offeror should be prepared to provide the following information: a. Company legal business name. b. Tradestyle, doing business, or other name by which your entity is commonly recognized. c. Company physical street address, city, state and ZIP Code. d. Company mailing address, city, state and ZIP Code (if separate from physical). e. Company telephone number. f. Date the company was started. g. Number of employees at your location. h. Chief executive officer/key manager. i. Line of business (industry).
+
+K.5
+
+j. Company Headquarters name and address (reporting relationship within your entity). Certification
+
+I hereby certify that the responses to the above Representations, Certifications and other statements are accurate and complete. Printed Name: ______________________ Signature: Title: Date: ______________________ _______________________ _______________________
+
+40
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+Section L - Instructions, Conditions, and Notices to Offerors L.1 52.252-1 SOLICITATION PROVISIONS INCORPORATED BY REFERENCE (FEB 1998) This solicitation incorporates one or more solicitation provisions by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. The offeror is cautioned that the listed provisions may include blocks that must be completed by the offeror and submitted with its quotation or offer. In lieu of submitting the full text of those provisions, the offeror may identify the provision by paragraph identifier and provide the appropriate information with its quotation or offer. Also, the full text of a solicitation provision may be accessed electronically at this/these address(es): http://www.acquisition.gov/far/. Clause 52.204-6 52.222-24 52.232-38 52.237-10 Title Data Universal Numbering System (DUNS) Number Preaward On-Site Equal Opportunity Compliance Evaluation Submission of Electronic Funds Transfer Information with Offer Identification of Uncompensated Overtime Date FEB 2009 FEB 1999 MAY 1999 OCT 1997
+
+L.2
+
+52.215.1 Instructions to Offerors--Competitive Acquisition - Alt I (JAN 2004) (a) Definitions. As used in this provision--
+
+"Discussions" are negotiations that occur after establishment of the competitive range that may, at the Contracting Officer's discretion, result in the offeror being allowed to revise its proposal. "In writing," "writing," or "written" means any worded or numbered expression that can be read, reproduced, and later communicated, and includes electronically transmitted and stored information. "Proposal modification" is a change made to a proposal before the solicitation's closing date and time, or made in response to an amendment, or made to correct a mistake at any time before award. "Proposal revision" is a change to a proposal made after the solicitation closing date, at the request of or as allowed by a Contracting Officer as the result of negotiations. "Time," if stated as a number of days, is calculated using calendar days, unless otherwise specified, and will include Saturdays, Sundays, and legal holidays. However, if the last day falls on a Saturday, Sunday, or legal holiday, then the period shall include the next working day.
+
+41
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+(b) Amendments to solicitations. If this solicitation is amended, all terms and conditions that are not amended remain unchanged. Offerors shall acknowledge receipt of any amendment to this solicitation by the date and time specified in the amendment(s). (c) Submission, modification, revision, and withdrawal of proposals. (1) Unless other methods (e.g., electronic commerce or facsimile) are permitted in the solicitation, proposals and modifications to proposals shall be submitted in paper media in sealed envelopes or packages (i) addressed to the office specified in the solicitation, and (ii) showing the time and date specified for receipt, the solicitation number, and the name and address of the offeror. Offerors using commercial carriers should ensure that the proposal is marked on the outermost wrapper with the information in paragraphs (c)(1)(i) and (c)(1)(ii) of this provision. The first page of the proposal must show-- a. The solicitation number; b. The name, address, and telephone and facsimile numbers of the offeror (and electronic address if available); c. A statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation and agreement to furnish any or all items upon which prices are offered at the price set opposite each item; d. Names, titles, and telephone and facsimile numbers (and electronic addresses if available) of persons authorized to negotiate on the offeror's behalf with the Government in connection with this solicitation; and e. Name, title, and signature of person authorized to sign the proposal. Proposals signed by an agent shall be accompanied by evidence of that agent's authority, unless that evidence has been previously furnished to the issuing office. Submission, modification, revision, and withdrawal of proposals. a. Offerors are responsible for submitting proposals, and any modifications or revisions, so as to reach the Government office designated in the solicitation by the time specified in the solicitation. If no time is specified in the solicitation, the time for receipt is 4:30 p.m., local time, for the designated Government office on the date that proposal or revision is due.
+
+(2)
+
+(3)
+
+42
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+b.
+
+1. Any proposal, modification, or revision received at the Government office designated in the solicitation after the exact time specified for receipt of offers is "late" and will not be considered unless it is received before award is made, the Contracting Officer determines that accepting the late offer would not unduly delay the acquisition; and-- [a] If it was transmitted through an electronic commerce method authorized by the solicitation, it was received at the initial point of entry to the Government infrastructure not later than 5:00 p.m. one working day prior to the date specified for receipt of proposals; or [b] There is acceptable evidence to establish that it was received at the Government installation designated for receipt of offers and was under the Government's control prior to the time set for receipt of offers; or [c] It is the only proposal received. 2. However, a late modification of an otherwise successful proposal that makes its terms more favorable to the Government will be considered at any time it is received and may be accepted.
+
+c. Acceptable evidence to establish the time of receipt at the Government installation includes the time/date stamp of that installation on the proposal wrapper, other documentary evidence of receipt maintained by the installation, or oral testimony or statements of Government personnel. d. If an emergency or unanticipated event interrupts normal Government processes so that proposals cannot be received at the office designated for receipt of proposals by the exact time specified in the solicitation, and urgent Government requirements preclude amendment of the solicitation, the time specified for receipt of proposals will be deemed to be extended to the same time of day specified in the solicitation on the first work day on which normal Government processes resume. e. Proposals may be withdrawn by written notice received at any time before award. Oral proposals in response to oral solicitations may be withdrawn orally. If the solicitation authorizes facsimile proposals, proposals may be withdrawn via facsimile received at any time before award, subject to the conditions specified in the provision at 52.215-5, Facsimile Proposals. Proposals may be withdrawn in person by an offeror or an authorized representative, if the identity 43
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+of the person requesting withdrawal is established and the person signs a receipt for the proposal before award. (4) (5) Unless otherwise specified in the solicitation, the offeror may propose to provide any item or combination of items. Offerors shall submit proposals in response to this solicitation in English, unless otherwise permitted by the solicitation, and in U.S. dollars, unless the provision at FAR 52.225-17, Evaluation of Foreign Currency Offers, is included in the solicitation. Offerors may submit modifications to their proposals at any time before the solicitation closing date and time, and may submit modifications in response to an amendment, or to correct a mistake at any time before award. Offerors may submit revised proposals only if requested or allowed by the Contracting Officer. Proposals may be withdrawn at any time before award. Withdrawals are effective upon receipt of notice by the Contracting Officer.
+
+(6)
+
+(7)
+
+(8)
+
+(d) Offer expiration date. Proposals in response to this solicitation will be valid for the number of days specified on the solicitation cover sheet (unless a different period is proposed by the offeror). (e) Restriction on disclosure and use of data. Offerors that include in their proposals data that they do not want disclosed to the public for any purpose, or used by the Government except for evaluation purposes, shall-- (1) Mark the title page with the following legend: This proposal includes data that shall not be disclosed outside the Government and shall not be duplicated, used, or disclosed--in whole or in part--for any purpose other than to evaluate this proposal. If, however, a contract is awarded to this offeror as a result of--or in connection with--the submission of this data, the Government shall have the right to duplicate, use, or disclose the data to the extent provided in the resulting contract. This restriction does not limit the Government's right to use information contained in this data if it is obtained from another source without restriction. The data subject to this restriction are contained in sheets [insert numbers or other identification of sheets]; and (2) Mark each sheet of data it wishes to restrict with the following legend: 44
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+Use or disclosure of data contained on this sheet is subject to the restriction on the title page of this proposal. (f) Contract award. (1) The Government intends to award a contract or contracts resulting from this solicitation to the responsible offeror(s) whose proposal(s) represents the best value after evaluation in accordance with the factors and subfactors in the solicitation. (2) The Government may reject any or all proposals if such action is in the Government's interest. The Government may waive informalities and minor irregularities in proposals received.
+
+(3)
+
+(4) The Government intends to evaluate proposals and award a contract without discussions with offerors whose proposals have been determined to be within the competitive range. If the Contracting Officer determines that the number of proposals that would otherwise be in the competitive range exceeds the number at which an efficient competition can be conducted, the Contracting Officer may limit the number of proposals in the competitive range to the greatest number that will permit an efficient competition among the most highly rated proposals. Therefore, the offeror's initial proposal should contain the offeror's best terms from technical/ experience and price standpoint. (5) The Government reserves the right to make an award on any item for a quantity less than the quantity offered, at the unit cost or prices offered, unless the offeror specifies otherwise in the proposal. The Government reserves the right to make multiple awards if, after considering the additional administrative costs, it is in the Government's best interest to do so. Exchanges with offerors after receipt of a proposal do not constitute a rejection or counteroffer by the Government. The Government may determine that a proposal is unacceptable if the prices proposed are materially unbalanced between line items or subline items. Unbalanced pricing exists when, despite an acceptable total evaluated price, the price of one or more contract line items is significantly overstated or understated as indicated by the application of cost or price analysis techniques. A proposal may be 45
+
+(6)
+
+(7)
+
+(8)
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+(9)
+
+rejected if the Contracting Officer determines that the lack of balance poses an unacceptable risk to the Government. If a cost realism analysis is performed, cost realism may be considered by the source selection authority in evaluating performance or schedule risk.
+
+(10) A written award or acceptance of proposal mailed or otherwise furnished to the successful offeror within the time specified in the proposal shall result in a binding contract without further action by either party. (11) If a post-award debriefing is given to requesting offerors, the Government shall disclose the following information, if applicable: a. The agency's evaluation of the significant weak or deficient factors in the debriefed offeror's offer. b. The overall evaluated cost or price and technical rating of the successful and the debriefed offeror and past performance information on the debriefed offeror. c. The overall ranking of all offerors, when any ranking was developed by the agency during source selection. d. A summary of the rationale for award. e. For acquisitions of commercial items, the make and model of the item to be delivered by the successful offeror. f. Reasonable responses to relevant questions posed by the debriefed offeror as to whether source-selection procedures set forth in the solicitation, applicable regulations, and other applicable authorities were followed by the agency. L.3 52.216-1 Type of Contract (JULY 1995)
+
+The Government plans to award a no-cost contract resulting from this solicitation.
+
+L.4
+
+52.233-2 Service of Protests (DEVIATION FAR 52.233-2) (SEPT 2006)
+
+A. Protests, as defined in Section 33.101 of the Federal Acquisition Regulation, that are filed directly with an agency, and copies of any protests that are filed with the General
+
+46
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+Accountability Office (GAO), shall be served on the Contracting Officer (addressed as follows) by obtaining written and dated acknowledgment of receipt from: U.S. Dept. of Commerce, USPTO Office of Procurement Attn: V'Anne Tugbang P.O. Box 1450 Alexandria, VA 22313-1450 B. The copy of any protest shall be received in the office designated above within one day of filing a protest with the GAO. AGENCY-LEVEL PROTEST PROCEDURES LEVEL ABOVE THE CONTRACTING OFFICER (DEC 1996)
+
+I. PURPOSE: To implement the requirements of Executive Order No. 12979 and Federal Acquisition Regulation (FAR 33.103). On October 25, 1995, President Clinton signed Executive Order No. 12979, which directs heads of executive agencies to develop administrative procedures for resolving protests to awards of procurement contracts within their agencies at a level above the Contracting Officer. Authority to administer procurement-related directives has been delegated within the Department of Commerce through the Chief Financial Officer and Assistant Secretary for Administration to the Director for Acquisition Management (Procurement Executive). The Department's goal is to encourage protesters to resolve their protests at the agency level, help build confidence in the Government's acquisition system, and reduce protests to the General Accounting Office and other external fora. Prior to submission of an agency protest, all parties shall use their best efforts to resolve concerns raised by an interested party at the Contracting Officer level through open and frank discussions. If concerns cannot be resolved, protesters may use these procedures when a resolution is requested from the agency at a level above the Contracting Officer. II. DEFINITIONS: An agency protest is one that may be filed with either the contracting officer or the protest decision authority but not both. When a protester decides to file a protest at the agency level with the protest decision authority, the guidelines set forth in these established agency level protest procedures above the contracting officer apply. These procedures are in addition to the existing protest procedures contained in the Federal Acquisition Regulation (FAR) Part 33.102. A day is a calendar day. In computing a period of time for the purpose of these procedures, the day from which the period begins to run is not counted. When the last day of the period is a Saturday, Sunday, or Federal holiday, the period extends to the next day that is not a Saturday, Sunday, or Federal holiday. Similarly, when the Washington, DC offices of the Department of
+
+47
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+Commerce are closed for all or part of the last day, the period extends to the next day on which the Department is open. III. PROCEDURES: a. Protesters using these procedures may protest to the protest decision authority who will make the final decision for the Department. Protests shall be addressed to: Bill Weinberg Director, Office of Procurement U.S. Patent & Trademark Office P.O. Box 1450 Alexandria, VA 22313-1450 (FAX Number 571-273-6575) The outside of the envelope or beginning of the FAX transmission must be marked "Agencylevel Protest". The protester shall also provide a copy of the protest within 1 day to the responsible contracting officer and a copy to the addressee indicated below: Office of the General Counsel General Law Office U.S. Patent & Trademark Office P.O. Box 1450 Alexandria, VA 22313-1450 (FAX Number 571-273-0099) b. Election of forum: While a protest is pending at the agency level with the protest decision authority, the protester agrees not to protest to the Government Accountability Office (GAO) or any other external forums. If the protester has already filed with the GAO or other external forums, the procedures described here may not be used. 1. Protests based upon alleged improprieties in a solicitation which are apparent prior to bid opening or time set for receipt of proposals shall be filed prior to bid opening or the time set for receipt of proposals. If the contract has been awarded, protests must be filed within 10 days after contract award or 5 days after the date the protester was given the opportunity to be debriefed, whichever date is later. In cases other than those covered in the preceding two sentences, protests shall be filed not later than 10 days after the basis of the protest is known or should have been known, whichever is earlier. 2. To be filed on a given day, protests must be received by 4:30 PM current local time. Any protests received after that time will be considered to be filed on the next day. Incomplete submissions will not be considered filed until all information is provided. 3. To be complete, protests must contain the following information: (i) the protester's name, address, telephone number, and fax number 48
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+(ii) the solicitation or contract number, name of contracting office and the contracting officer (iii) a detailed statement of all factual and legal grounds for protests, and an explanation of how the protester was prejudiced (iv) copies of relevant documents supporting protester's statement (v) a request for ruling by the agency (vi) statement as to form of relief requested (vii) all information establishing that the protester is an interested party for the purpose of filing a protest (viii) all information establishing the timeliness of the protest All protests must be signed by an authorized representative of the protester. Within 14 days after the protest is filed, the Contracting Officer will prepare an administrative report that responds to the issues raised by the protester and addresses any other issues, which, even if not raised by the protester, have been identified by agency officials as being relevant to the fairness of the procurement process. For good cause shown, the protest decision authority may grant an extension of time for filing the administrative report and for issuing the written decision. When an extension is granted, the protest decision authority will notify the protester and all interested parties within I day of the decision to grant the extension. Unless an extension is granted, the protest decision authority will issue a decision within 35 days of the protest. The protest decision authority's final decision will be binding on the Department of Commerce and not subject to further appeals. The protest decision authority shall send a written ruling and a summary of the reasons supporting the ruling to the protester by certified mail, return receipt requested with information copies to the applicable contracting office and Office of Acquisition Management. c. Effect of protest on award and performance: When a protest is filed prior to award, a contract may not be awarded unless authorized by the Head of the Contracting Activity (HCA) based on a written finding that: (i) The supplies or services are urgently required, (ii) delivery or performance would be unduly delayed by failure to make the award promptly, or (iii) a prompt award will be in the best interest of the Government. When a protest is filed within 10 days after contract award or 5 days after a debriefing date was offered to the protester under a timely debriefing request in accordance with FAR 15.506, whichever is later, the Contracting Officer shall immediately suspend performance pending the resolution of the protest within the agency, including any review by an independent higher official, unless continued performance is justified. The HCA may authorize contract performance, notwithstanding the protest, based on a written finding that: (i) contract performance would be in the best interest of the United States, or (ii) urgent and compelling circumstances that significantly affect the interests of the United States will not permit waiting for a decision. IV. REMEDIES:
+
+49
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+The protest decision authority may grant one or more of the following remedies: (1) terminate the contract, (2) re -compete the requirement, (3) issue a new solicitation,(4) refrain from exercising options under the contract, (5) award a contract consistent with statutes and regulations, (6) amend the solicitation provisions which gave rise to the protest and continue with the procurement, (7) such other remedies as the decision-maker may determine are necessary to correct a defect. L.5 General Instruction of Proposal Submission
+
+The following instructions establish the acceptable minimum requirements for the format and content of proposals. a. Offerors are cautioned that the quality of their proposal and adherence to solicitation response requirements and/or restrictions are considered reflective of the manner in which the offeror intends to conduct contract performance. This will be taken into consideration throughout the evaluation process. b. Offerors shall submit all required information. Offerors are cautioned that failure to provide all the required information may result in elimination of the offeror from further consideration for award. 1. Any resultant contract shall include the general provisions applicable to the selected offeror's organization and type of contract awarded. Any additional clauses required by public law, executive order, or acquisition regulations in effect at the time of execution of the proposed contract will be included. 2. The proposal must be submitted in two parts as listed below . Each of the parts shall be separate and complete in itself so that evaluation of one may be accomplished independently from evaluation of the other.
+
+L.6
+
+The USPTO requests those responding to this solicitation to provide the following:
+
+(a) One electronically submitted proposal. Quotes are limited to no more than 50 pages, including: company background; experience; expertise in the functional area; company's performance work statement in response to the SOW; and past performance information. Resumes, cover letter, table of contents and acronym list are not included in the 50-page limit. Font size should be 12 point, Times New Roman, single sided, and prepared in Microsoft Word. Quoters should discuss their: proposed technical approach as part of their performance work statement; discussion of the proposed team including skill sets required; available resources; and capability to address all aspects of the Quoter's bid. Respondents must submit their responses in white paper/thesis format on 8.5"x11". The total page count does include all other information provided (i.e., graphs, technical, etc.). Fold out charts for tables or graphics are allowed with a limited size of 11"x17" and each foldout counts as a single page and also counts towards the total page limit. Charts and graphics must be in Microsoft Excel, Microsoft 50
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+Visio, or PDF format. Properly marked proprietary information submitted in response to this RFQ will be protected from unauthorized disclosure as required by the Federal Acquisition Regulation (FAR). All proprietary markings should be clearly delineated. The respondent shall identify where data is restricted by proprietary or other rights and mark it accordingly. (b) Performance Work Statement. Quoters shall provide a Performance Work Statement (PWS), detailing the specific steps to be taken to accomplish the performance objectives identified in this RFP. The PWS shall include procedural steps to be completed for each identified Performance Objective, along with an associated (time) schedule, staffing matrix and performance / operational details. The successful Quoter's Government-accepted PWS becomes part of the contract. (c) The offeror is required to submit in the following format: Volume I: - Technical Approach - Resources - Past Performance - Any applicable use license that may be required Volume II: - Price Proposal - A completed Section B of the RFP, entitled Supplies/ Services and Prices", with supporting detail - A signed RFP cover page, along with signed cover pages of all Amendments to the RFP - A completed Section K "Representations and Certifications" or reference that current reps and certs are on OCRA (a component of the proposal) Offerors shall submit all required information. Offerors are cautioned that failure to provide all the required information may result in elimination of the offeror from further consideration for award. Proposals that do not include the data necessary for a thorough evaluation may be determined to be unacceptable. Facsimile proposals and modifications of proposals are not permitted and will be disregarded if received. Proposals shall present an offeror's understanding of the scope of the procurement and an overall approach in providing the required products. General statements such as "the offeror understands", "the offeror can or will comply with the requirements", "standard procedures will be used", "well known techniques will be used", or that paraphrase the Statement of Work in whole or in part will not satisfy the requirements concerning the content of a technical proposal and may serve as the basis for rejecting that offeror's proposal. Failure to submit proposals in compliance with these minimum requirements may result in a determination that the proposal is noncompliant, which may eliminate the proposal from further consideration.
+
+51
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+L.7 Offerors responding to this RFP will be evaluated based upon the evaluation criteria contained in this RFP. The following information is emphasized and shall be included in the Offeror's proposal: (a) Experience (b) Technical Approach (c) Past Performance L.8 References
+
+The Government is seeking a maximum of three (3) contacts/references where the offeror has provided similar services in size, scope and complexity. Include the company/agency name, point of contact, telephone number, fax number and e-mail address. Rationale must be provided if at least two references cannot be provided. Include a brief description of the services performed and price magnitude. In the case of an offeror without a record of relevant past performance or for whom information on past performance is not available, the offeror will neither be evaluated favorably nor unfavorably on past performance. L.9 Proposal Responses
+
+All responses must be submitted electronically to the attention of the Contracting Officer via email at VAnne.Tugbang@uspto.gov no later than 2:00 PM Eastern Standard Time on Tuesday, January 22, 2013.. L.10 Questions
+
+Offerors must submit all questions concerning this RFP electronically to: VAnne.Tugbang@uspto.gov. Questions submitted must identify the author and company name. All questions pertaining to this solicitation must be submitted no later than 2:00 PM EST. Thursday, January 3, 2013. Questions received after this date and time may not be answered. All questions and responses will be posted electronically by an amendment to the RFP. The identity of the author and associated company name submitting the question will not be posted. Late questions may not be considered; nor will the proposal due date be extended due to late questions. The USPTO requires the e-mail address of each company and the representative who submits a proposal in response to this RFP. Most correspondence concerning this RFP will be conducted by e-mail. For purposes of proposal preparation, the Government anticipates award of this contract by February 22, 2013.
+
+52
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+Section M - Evaluation Factors for Award M.1 Evaluation of Proposals a. Proposals submitted in response to this solicitation will be evaluated in accordance with the criteria listed below. The objective of the evaluation is to determine which proposal offers the best prospect for attainment of the objectives of the solicitation. Those proposals found to be technically unacceptable and not reasonably subject to being made acceptable will be eliminated from further consideration. b. A major item and/or gross omission which precludes meeting program objectives which cannot be corrected prior to or during negotiations without major revision or complete resubmission of the proposal will cause a proposal to be found technically unacceptable. c. Those offerors whose proposal evaluations indicate that they do not have a reasonable chance of being awarded the contract will be excluded from the competitive range. M.2 Minimum Response Requirements To be considered acceptable and eligible for award, an offeror must address separately all the factors set forth in accordance with Section L of this solicitation. M.3 Evaluation of Individual Proposals Award of the no-cost contract will be made to the firm offering the best technical offer. Contractors will be evaluated based on the following criteria, listed in descending order of importance. M.3.1 Experience Approach Factor FACTOR 1: EXPERIENCE The USPTO will evaluate relevant experience, special training, and special skills in handling large scale data, along with learning existing systems, designing databases, extracting data, writing software, integrating new systems into existing systems, testing and to provide services to the general public. M.3.2 Technical Approach Factor FACTOR 2: TECHNICAL APPROACH The technical approach will be evaluated based on the contractor's proposed methodology and ability to demonstrate an understanding of the technical requirements set forth in the Statement of Work (SOW). The contractor's proposed technical approach will be evaluated on how effectively its proposal demonstrates achievement of the objectives and for successful performance of all requirements. The technical approach will also be evaluated on the 53
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+contractor's ability to provide resources with expertise in the following: Database, Network, Hardware, Software, Facility and Program Management.1 The USPTO will evaluate the contractor's proposed System Architecture with regards to design, adherence to standards, flexibility to upgrade, migrate, append, enhance, and integration into future systems and technologies. The USPTO will evaluate the contractor's ability to provide field services and technical assistance including helpdesk, hours of operation of helpdesk or customer service and technical support to handle large scale data that provides service to the general public. M.3.3 Past Performance Factor
+
+Vendors will be evaluated on the relevance and quality of past performance and experience of the vendors as it relates to the probability of successful accomplishment of work in accordance with the RFP. FACTOR 3: PAST PERFORMANCE Evaluation of past performance will be based on relevant information presented in the offeror's proposal (including past performance questionnaire(s)) and information obtained by contacting the offeror's supplied references. The offeror shall provide at least three (3) references to include specific points of contact and e-mail addresses for those contacts. In addition, the Contracting Officer has the discretion to retrieve information via the offeror's supplied references and federal sources to include the Past Performance Information Retrieval Systems and the Excluded Parties List System. Past performance information shall pertain to performance on work that is the same or similar in nature, size, and complexity to the SOW requirements of this solicitation and include demonstrating the offorer's ability to: host terabytes worth of data and allow thousands of user hits per day. In determining whether past performance information is relevant or not relevant, consideration will be given to contracts of same or similar project complexity, scope, and type. If past performance information is either not relevant or not available, then the offeror will be rated neutral (neither favorably nor unfavorably). Notes: *The USPTO reserves the right to determine which contracts submitted by the offeror is relevant to the requirements and to utilize only those references. *In the conduct of its past performance evaluation of offerors, the USPTO may use a variety of information sources in addition to information provided by the offeror. These sources may include, but are not limited to, technical reports, commercial or any available published information, and information derived from present or past Government or commercial customers
+1
+
+Program Management. The offeror's approach to the planning and control of resources will be evaluated including: management controls to provide early visibility for schedule problems, defining the contract work, assigning responsibility, and providing appropriate detailed schedule data to management and the government.
+
+54
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+of the offeror. The USPTO may use past performance information obtained from sources other than those identified by the offeror. Those offerors who have no relevant past performance history will not be evaluated either favorably or unfavorably on past performance. *By providing the USPTO the above contacts, the offeror is certifying that it has contacted the referenced individuals and given permission for the USPTO to contact said individuals. In the event that USPTO cannot contact the referenced individuals within a reasonable time frame, the past performance reference may not be considered. All contracts cited above will be considered to be potential references and may be contacted by the Government for a past performance evaluation/rating. Offerors shall insure that the individual listed for each contract as having day-to-day contract administration responsibility has been notified that the USPTO may contact them and has been authorized to respond to such inquiry. An inability to reach by phone the cited contact for contract administration may result in that project experience being excluded from the proposal evaluation. Relative Order of Importance: The evaluation factors are listed in descending order of importance. The Government will perform concurrent but separate evaluations of each part of the proposal. All parts (Experience, Technical Approach and Past Performance) of each proposal will be reviewed and analyzed. The USPTO may evaluate proposals without discussions. The USPTO reserves the right to hold oral presentations, if deemed necessary to determine best value. Should the Government chose to do so, oral presentations will be held with those offerors determined to be in the competitive range. Oral presentation instructions, if applicable and necessary, will be shared with those offerors in the competitive range. M.4 Award Determination The Government will evaluate all offerors' proposals to identify and rank those proposals that offer the greatest technical offer to the Government. Award will be made to that responsible offeror whose proposal contains the combination of those criteria offering the best overall offer to the Government. M.5 Responsibility An offeror must be determined responsible according to the standards set forth in FAR 9.1 to be eligible for award. M.6 Evaluation of Options (FAR 52.217-5) (OCT 2004)
+
+Except when it is determined in accordance with FAR 17.206(b) not to be in the Government's best interests, the Government will evaluate offers for award purposes by adding the total price 55
+
+United States Patent and Trademark Office (USPTO) Request for Proposal (RFP) Number: DOC50PAPT1300005 Public Dissemination of Data
+
+for all optons to the total price for the basic requirement. Evaluation of options will not obligate the Government to exercise the option(s).
+
+56
+
+
+USPTO’S PUBLIC DATA DISSEMINATION RFP                                          Attachment 1 – CURRENT DATA SETS
+                                               Data Set |Description |Issue Frequency |Distribution
+                                                              Format |Approx. Issue
+Size * |Collection Sizes | |Patent Bibliographic Data – Grants
+(2012->) |Contains the bibliographic text (i.e., front page) of each patent grant issued weekly (Tuesdays) for 2012 and later.   |Weekly |XML
+                                                                   |9 MB |468 MB
+(per year) | |Patent Bibliographic Data – Grants (2001->2011) |Contains the bibliographic text (i.e., front page) of each patent grant issued
+                              weekly (Tuesdays) for 2001-2011 in various formats.   |Single |SGML, XML |N/A |2.8 GB
+(2001-2011) | |Patent Bibliographic Data – Grants
+(1976->2011) |Contains the bibliographic text (i.e., front page) of each patent grant issued weekly (Tuesdays) for 1976-2011 in various formats.
+                                                      |Single |ASCII, SGML, XML  |N/A |5.8 GB
+(1976-2011) | |Patent Bibliographic Data – Applications
+(2012->) |Contains the bibliographic text (i.e., front page) of each patent published application issued weekly (Thursdays) for 2012 and later.
+                                                          |Weekly  |XML |2.8 MB |145 MB
+(per year) | |Patent Bibliographic Data – Applications
+(2001->2011) |Contains the bibliographic text (i.e., front page) of each patent published application published weekly (Thursdays) for March 15,
+                                             2001-2011 in various formats. |Single |XML |N/A |1.5 GB
+(2001-2011) | |Trademark Application Text
+(2012->) |Contains pending and registered trademark text data for 2012 and later.  |Daily
+                                                                |XML |17 MB |6.2 GB
+(per year) | |Trademark Application Text
+(1884->2011) |Contains pending and registered trademark text data for 1884-2011.  |Single
+                                                                 |XML |N/A |3.5 GB
+(1884-2011) | |Trademark Trial and Appeal Board (TTAB) text
+    (2012->) |Contains text data for proceedings of the Trademark Trial and Appeal Board (TTAB) for 2012 and later. |Daily |XML |240 KB |88 MB
+(per year) | |Trademark Trial and Appeal Board (TTAB) text
+    (1955->2011) |Contains text data for proceedings of the Trademark Trial and Appeal Board (TTAB) for 1955-2011.  |Single |XML |N/A |100 MB
+(1955-2011) | |Trademark Assignment Text
+  (2012->) |Contains trademark assignment text derived from assignment recordations made at the USPTO for 2012 and later.  |Daily |XML |46KB |17
+                                                                        MB
+(per year) | |Trademark Assignment Text
+(1980->2011) |Contains trademark assignment text derived from assignment recordations made at the USPTO for August 1980-2011.  |Single |XML |N/A
+                                                                     |128 MB
+(1980-2011) | |Trademark Application Images
+(2010->2012) |Contains images of Trademark applications in JPG (black and white, grey-scale, or color) and TIFF (black and white) format
+processed daily for 2010-2012 and later.  |Daily
+                                                         |XML, TIFF, JPEG |540 MB |420 GB
+(2010-2012) | |Trademark Registration Images
+(2012->) |Contains the images of each trademark registration published weekly (Tuesdays) for 2012 and later. |Monthly |Multi-page TIFF images |?
+                                                                        |?
+(per year) | |Trademark Registration Images
+(1870-2011) |Contains the images of each trademark registration published weekly (Tuesdays) for 1870-2011. |Single |Multi-page TIFF images |N/A
+                                                                        |?
+(1870-2011) | |Patent Assignment Text
+ (2012->) |Contains patent assignment text derived from assignment recordations made at the USPTO for 2012 and later.  |Daily  |XML |2 MB |730 MB
+(per year) | |Patent Assignment Text
+  (1980->2011) |Contains patent assignment text derived from assignment recordations made at the USPTO for August 1980-2011.  |Single |XML |N/A
+                                                                     |1.1 GB
+(1980-2011) | |Maintenance Fee Events
+(1981->2012) |Contains patent maintenance fee event information. Created Mondays and available Tuesdays for September 1981-2012. |Weekly |ASCII
+                                                                  |75 MB |3.9 GB
+(per year) | |Patent Master Classification Products
+(1790->2012) |Current U.S. classification information for all patent grants issued by the U.S. Patent and Trademark Office for 1790-2012.
+                                                        |Bimonthly |ASCII |350 MB  |2.1 GB
+(1790-2012) | |Patent Full Text – Grants
+(2012->) |Contains the full text of each patent grant issued weekly (Tuesdays) for 2012 and later; excludes images/drawings. |Weekly |XML |75 MB
+                                                                      |3.9 GB
+(per year) | |Patent Full Text – Grants
+(1976-> 2011) |Contains the full text of each patent grant issued weekly (Tuesdays) for 1976-2011; excludes images/drawings. |Single |ASCII,
+                                                              SGML, XML |N/A |100 GB
+(1976-2011) | |Patent Full Text, with images/drawings – Grants
+(2012->) |Contains the full text, images/drawings, and complex work units (tables, mathematical expressions, genetic sequence data, and chemical
+                    structures) of each patent grant issued weekly (Tuesdays) for 2012 and later. |Weekly |XML |1.4 GB |73 GB
+(per year) | |Patent Full Text, with images/drawings – Grants
+(2001->2011) |Contains the full text, images/drawings, and complex work units (tables, mathematical expressions, genetic sequence data, and
+                chemical structures) of each patent grant issued weekly (Tuesdays) for 2001-2011. |Single |SGML, XML |N/A |500 GB
+(2001-2011) | |Patent Full Text – Applications
+(2012->) |Contains the full text of each patent application (non-provisional utility and plant) published weekly (Thursdays) for 2012 and later;
+                                              excludes images/drawings. |Weekly |XML |104 MB |5.4 GB
+(per year) | |Patent Full Text – Applications
+(2001->2011) |Contains the full text of each patent application (non-provisional utility and plant) published weekly (Thursdays) for March 15,
+                                          2001-2011; excludes images/drawings. |Single |XML |N/A |45 GB
+(2001-2011) | |
+
+USPTO’S PUBLIC DATA DISSEMINATION RFP                                          Attachment 1 – CURRENT DATA SETS
+
+Data Set |Description |Update Frequency |Source
+Format |Approx. Update
+Size  |Collection Sizes | |Patent Full Text, with images/drawings – Applications (2012->) |Contains the full text, images/drawings, and complex
+work units (tables, mathematical expressions, genetic sequence data, and chemical structures) of each patent application (non-provisional
+                         utility and plant) published weekly (Thursdays) for 2012 and later. |Weekly |XML |1.5 GB |78 GB
+                                                                    (per year)
+ | |Patent Full Text, with images/drawings – Applications (2001->2011) |Contains the full text, images/drawings, and complex work units (tables,
+mathematical expressions, genetic sequence data, and chemical structures) of each patent application (non-provisional utility and plant)
+                                 published weekly (Thursdays) for March 15, 2001-2011. |Single |XML |N/A |550 GB
+(2001-2011) | |Patent Grant Data/OCR
+(1920-1979) |Contains patent grant text produced by an Optical Character Recognition (OCR) process using the U.S. Patent Grant Image data from
+                                        January 1920- December 1979 as input.  |Single |ASCII |N/A |63 GB
+(1920-1979) | |Patent Official Gazette (a.k.a., e-OG) (rolling 52 weeks) |Contains the bibliographic (i.e., front page) information, a
+representative claim, and an image/drawing (if applicable) of each patent grant issued weekly (Tuesdays) for a rolling 52 weeks. Includes U.S.
+Patent and Trademark Office Notices which provide important information and changes in rules concerning both patents and trademarks. |Weekly
+                                                               |HTML |250 MB |13 GB
+(rolling 52 weeks) | |Patent Images – Grants
+  (2012->) |Contains the images of each patent grant issued weekly (Tuesdays) for 2012 and later. |Weekly |Multi-page TIFF images |4 GB |208 GB
+(per year) | |Patent Images – Grants
+    (1790->2011) |Contains the images of each patent grant issued weekly (Tuesdays) for 1790-2011. |Single |Multi-page TIFF images |N/A |6 TB
+(1790-2011) | |Patent Images – Grants
+  (2012->) |Contains the images of each patent grant issued weekly (Tuesdays) for 2012 and later. |Weekly |Single-page TIFF images |6 GB |312 GB
+(per year) | |Patent Images – Grants
+    (1790->2011) |Contains the images of each patent grant issued weekly (Tuesdays) for 1790-2011. |Single |Single-page TIFF images |N/A |6 TB
+(1790-2011) | |Patent Images – Applications
+(2012->) |Contains the images of each patent application (non-provisional utility and plant) published weekly (Thursdays) for 2012 and later.
+                                                  |Weekly |Multi-page TIFF images |6 GB |312 GB
+(per year) | |Patent Images – Applications
+(2001->2011) |Contains the images of each patent application (non-provisional utility and plant) published weekly (Thursdays) for 2012 and
+                                               later. |Single |Multi-page TIFF images |N/A |400 GB
+(2001-2011) | |Patent Images – Applications
+(2012->) |Contains the images of each patent application (non-provisional utility and plant) published weekly (Thursdays) for 2012 and later.
+                                                  |Weekly |Single-page TIFF images |8 GB |416 GB
+(per year) | |Patent Images – Applications
+(2001->2011) |Contains the images of each patent application (non-provisional utility and plant) published weekly (Thursdays) for March 15, 2001-
+                                               2011. |Single |Single-page TIFF images |N/A |400 GB
+(2001-2011) | |Image File Wrapper (IFW) Petition Decisions |Contains the images of Petition Decisions from the USPTO Image File Wrapper (IFW)
+System, one of the components of the USPTO Public Patent Application Information Retrieval (PAIR) System. |Annually |Single-page TIFF images
+with XML metadata |50-100 MB |18 GB | |Published Patent Application Meta Data |Contains patent application meta data corresponding to the tabs
+in PAIR, including “Application Data”, “Transaction History”, “Patent Term Adjustments”, “Patent Term Extension History”, “Foreign Priority”,
+“Address & Attorney/Agent”, “Continuity Data” and “Published Documents”. |Daily |ASCII |11 MB |3 TB | |Published Patent Application Fee
+Transactions |Contains patent application fee transactions |Daily |ASCII |5 MB |30 GB | |Published Patent Application Document Meta Data
+(2003->) |Contains patent application document meta data corresponding to the “Image File Wrapper” tab in PAIR, including “Document
+Description”, “Mail Room Date” and “Page Count”. |Daily |ASCII |80 KB |96 MB | |Published Patent Application Documents
+(2003->) |Contains patent application documents corresponding to the documents available in the “Image File Wrapper” tab in PAIR, including
+Specification, Claims, Amendments, etc. |Daily |TIFF images |42 GB |80 TB | |

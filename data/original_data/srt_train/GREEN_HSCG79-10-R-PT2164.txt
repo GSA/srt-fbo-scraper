@@ -1,0 +1,1479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FDHSMgmtDir11042.1.pdf%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us"/><script type="text/javascript">url="http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FDHSMgmtDir11042.1.pdf%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>
+                                              DEPT OF HOMELAND SECURITY – UNITED STATES COAST GUARD
+
+                                                                STATEMENT OF WORK
+
+                   ENTERPRISE-MANAGED TELEPHONY AND UNIFIED COMMUNICATION SYSTEMS INSTALLATIONS AND EQUIPMENT RECAPITALIZATION
+
+
+1.0   GENERAL
+
+         1 PURPOSE
+
+This Statement of Work covers new installations, repairs, upgrades, expansions, and recapitalization of existing telephone and ancillary
+equipment, at USCG shore facilities and floating units throughout the Coast Guard. This includes locations at all US territories (CONUS and
+OCONUS), Europe and Asia. This SOW also includes the maintenance and upgrade services required to maintain legacy telephony systems until such
+time they are recapitalized.
+
+BACKGROUND
+
+The US Coast Guard relies upon telephony services to support the day-to-day business and operational functions that require voice
+communications. Similar to other government agencies and large commercial enterprises, the USCG owns and operates a large number of standalone
+Private Branch eXchange (PBX) systems that support internal and external communications, and provide connectivity to the Public Switched
+Telephone Network (PSTN).
+
+The Coast Guard currently has over 650 premise-based telephone system platforms deployed across its enterprise.  These telephone platforms are
+stand-alone systems, operating independently of each other, at over 400 Coast Guard shore and over 250 floating units.  The platforms are not
+standardized, with nine different telephone system manufacturers and at least 18 different variations in use throughout the Coast Guard.  These
+systems rely on voice trunk line connections to the local Public Switched Telephone Network (PSTN), or operating behind either a General
+Services Administration (GSA) telephone switching system or GSA Centrex.
+
+The limitations induced by the lack of standardization and distributed architecture have an impact on productivity, efficiency, and cost.  In
+addition, some of the PBX systems are at or near end of life, and will soon no longer be supportable by the manufacturer.
+
+To meet an ever changing and evolving technical environment, the target architecture is an enterprise solution based upon modern and mature
+commercial off-the-shelf (COTS) technology that allows for centralized telephony management, scalability, and leverages the existing data
+network infrastructure.
+
+1.3   STRATEGIC OBJECTIVES
+
+The US Coast Guard intends to establish a modern enterprise-wide telephony architecture that is designed to improve efficiency and
+functionality.  To accomplish this objective, our overall approach is to leverage existing information technology infrastructure to the greatest
+extent possible, to optimize resources and reduce costs.  Our technical and management strategic objectives for this contract include, but are
+not limited to the following:
+
+    • Incremental replacement and/or integration of Government-owned and separately managed PBX and key systems with an enterprise solution based
+      upon modern commercial-off-the-shelf (COTS) technology.
+
+
+    • Continuity of telephony services during the implementation of replacement systems and the migration to the enterprise solution - with
+      minimum service disruption, security risk exposure, and dial plan changes.
+
+
+    • Standardization and interoperability.
+
+
+    • Implement centralized telephony management in place of the existing distributed (stand-alone) PBX architecture.
+
+
+    • Scalability to accommodate future traffic growth and unplanned events requiring disaster recovery and continuity of operations.
+
+
+    • Ensure Joint Interoperability Testing Command (JITC) certification compliance for telephony installations.
+
+
+    • Ensure traffic on shared infrastructure is appropriately prioritized.
+
+
+    • Implement SIP, VoIP, and Unified Communications.
+
+
+    • Comply with all information system security and information assurance requirements.
+
+
+This initiative will transition the USCG from its current Time Division Multiplexing (TDM) and analog technologies to a current and forward-
+looking UC system architecture that provides greater functionality, interoperability, flexibility, survivability and a consolidated operational
+and management infrastructure.  This UC initiative intends to replace the USCG’s aging telephony systems with a robust, scalable, and flexible
+infrastructure that will provide significant business value in the near term, and will best position the USCG for the future.  The solution will
+deliver logical systems to provide telephone service, Automatic Call Distribution (ACD), Automated Attendant (AA), Interactive Voice Response
+(IVR), and voice mail for the USCG’s ashore and afloat units.  The end state enterprise network and technology architecture will also provide a
+flexible infrastructure for adopting new “integrated voice/-data” services in the future through a phased implementation approach.
+
+
+     4. SCOPE
+
+The rapidly evolving computer, telephony, and internet technologies coupled with the projected convergence of voice, video, and data networks
+require the USCG to implement an architecture that can easily adopt new technologies and services.  The enterprise solution must include a
+mature offering, which is expected to stay viable and current well beyond the contract period, and provides superior value over its life-cycle
+by enabling the USCG to migrate, as appropriate, to a converged services delivery platform.
+
+The scope of this contract is to procure services and/or equipment to standardize these telephony systems, peripherals, and installations with
+an Enterprise Managed System, including the ability to:
+
+    • Deploy technology refreshes and upgrades to new and existing telephony systems.
+
+
+    • Design, install, and integrate new telephony systems.
+
+
+    • Sustain legacy systems until replaced.
+
+
+    • Plan, implement, operate, and maintain an enterprise UC solution.
+
+
+    • Install and integrate peripheral or commercially-available next generation PBX capabilities.
+
+The following link identifies all USCG units: http://www.uscg.mil/top/units/.  While the majority of USCG facilities and floating units are
+located in the continental United States (CONUS), there are also facilities and floating units located outside the CONUS including, but not
+limited to: Puerto Rico, Alaska, Hawaii, American Samoa, Guam, Far East, and Europe. The Contractor shall be responsible for meeting the
+contract specifications for all USCG locations worldwide, ashore and afloat, CONUS and outside CONUS.
+
+
+
+
+
+      2 CONTRACTOR PERSONNEL
+
+
+              1. Project Manager
+
+The Contractor shall provide a Project Manager who shall be responsible for all work (Task Orders) performed under this contract.  The Project
+Manager is further designated as Key by the Government (refer to paragraph 1.6).
+
+The Project Manager shall be a single point of contact for the Contracting Officer and the Contracting Officer’s Technical Representative
+(COTR).  It is anticipated that the Project Manager shall be one of the senior level employees provided by the Contractor for this work effort.
+The name of Project Manager, and the name(s) of any alternate(s) who shall act for the Contractor in the absence of the Project Manager, shall
+be provided to the Government as part of the Contractor's proposal.  The Project Manager and all designated alternates shall be able to read,
+write, speak and understand English.  Additionally, the Contractor shall not replace the Project Manager without prior approval from the
+Contracting Officer.
+
+The Project Manager shall be available to the COTR via telephone between the hours of 0700 and 1700 EST, Monday through Friday, and shall
+respond to a request for discussion or resolution of technical problems within 1 hour of notification.
+
+              2. Qualified Personnel
+
+ The Contractor shall provide only qualified personnel to perform all requirements specified in task orders awarded under this contract.  The
+Contractor shall provide proof of these qualifications upon request by the USCG.
+
+The Contractor shall provide a sufficient number of well qualified personnel to meet the requirements, e.g., installer(s), tester(s), systems
+specialists/engineers, and technicians.
+
+Engineers shall be manufacturer-trained and certified to provide technical and system administrative support services, possess documented site
+management and performance capabilities for the tasks that are assigned.  Engineers shall be fully knowledgeable of the entire system and ensure
+the effective continued operation of the system.
+
+Technicians shall possess a minimum of two years documented specific experience, and manufacturer training and certification where applicable,
+in their respective area(s) of responsibility.  Contractor shall ensure that Technicians are not assigned tasks outside their area of expertise.
+
+The Contractor or (sub-Contractor) personnel who will install wire and cable ONLY are not required to complete Original Equipment Manufacturer
+(OEM) training and certification on the system; however, their work activities shall be  managed by an experienced Registered Communications
+Distribution Designer (RCDD) or equivalent.
+
+              3. Employee Identification and Access to USCG Facilities
+
+Contractor employees visiting Government facilities shall wear an identification badge that, at minimum, displays the Contractor name, the
+employee’s photo, name, and badge expiration date.  Visiting Contractor employees shall comply with all Government escort rules and
+requirements.  All Contractor employees shall identify themselves as Contractors when their status is not readily apparent, and display all
+identification and visitor badges in plain view above the waist at all times.
+
+In order to gain access to a Coast Guard facility, the Contractor must provide a list of personnel by name, at least one working day in advance,
+for any site visit, or one week in advance for performance of any scheduled (non-emergency) Task Order work.
+
+All Contractor personnel and vehicles may be subject to search upon entering any Coast Guard facility.
+
+All Contractor vehicles must have proof of current insurance and registration before gaining access on any Coast Guard shore facility.
+
+Additional physical security requirements may become necessary during this contract, and will be incorporated by modification, or as specified
+by individual Task Order.
+
+   4. Employee Conduct
+
+Contractor’s employees shall comply with all applicable Government regulations, policies and procedures (e.g., fire, safety, sanitation,
+environmental protection, security, “off limits” areas, wearing of parts of military uniforms, and possession of weapons) when visiting or
+working at Government facilities.  The Contractor shall ensure contractor employees present a professional appearance at all times and that
+their conduct shall not reflect discredit on the United States, the Department of Homeland Security or the U.S. Coast Guard.
+
+              5. Removing Employees for Misconduct or Security Reasons
+
+The Government may, at its sole discretion, direct the Contractor to remove any Contractor employee from U.S. Coast Guard facilities for
+misconduct or security reasons.  Removal does not relieve the Contractor of the responsibility to continue providing the services required under
+this contract.  The Contracting Officer will provide the Contractor with a written explanation to support any request to remove an employee.
+
+              6. Conflict of Interest
+
+The Contractor shall not employ any person who is an employee of the United States Government if that employment would, or would appear to
+cause, a conflict of interest.
+
+   5. KEY Personnel
+
+Before replacing any individual designated as Key by the Government, the Contractor shall notify the Contracting Officer no less than 15
+business days in advance, submit written justification for replacement, and provide the name and qualifications of any proposed substitute(s).
+All proposed substitutes shall possess qualifications equal to or superior to those of the Key person being replaced.  The Contractor shall not
+replace Key Contractor personnel without acknowledgement from the Contracting Officer.  The Government may designate additional Contractor
+personnel as Key in this contract.
+
+   6. SECURITY
+
+
+Access to Unclassified Facilities, Information Technology Resources, and Sensitive Information: The assurance of the security of unclassified
+facilities, Information Technology (IT) resources, and sensitive information during the acquisition process and contract performance are
+essential to the DHS mission. DHS Management Directive (MD) 11042.1 Safeguarding Sensitive But Unclassified (For Official Use Only) Information,
+describes how contractors must handle sensitive but unclassified information.  DHS MD 140-01 Information Technology Systems Security and the DHS
+Sensitive Systems Handbook prescribe policies and procedures on security for IT resources.  Contractors shall comply with these policies and
+procedures, any replacement publications, or any other current or future DHS policies and procedures covering contractors specifically for all
+Task Orders that require access to DHS facilities, IT resources or sensitive information.  Contractors shall not use or redistribute any DHS
+information processed, stored, or transmitted by the contractor except as specified in the task order.
+
+FIPS 140-2 and FIPS 197 Advanced Encryption Standard (AES) 256 encryption compliance:
+All hardware and software interfaces shall meet FIPS 140-2 and FIPS 197 Advanced Encryption Standard (AES) 256 encryption compliance.
+
+Security Certification/Accreditation:  USCG shall provide personnel with the appropriate clearance levels to support the security
+certification/accreditation processes under this Agreement in accordance with DHS MD 4300A, DHS Sensitive Systems Policy and Handbook.  During
+all SDLC phases of USCG systems, USCG personnel shall develop documentation and provide any required information for all levels of
+classification in support of the certification / accreditation process.  In addition, all security certification / accreditation will be
+performed using the DHS certification/accreditation process, methodology and tools.
+
+HSAR 3052.204-70 Security Requirements For Unclassified Information Technology Resources Clause: (a) The Contractor shall be responsible for
+Information Technology (IT) security for all systems connected to a DHS network or operated by the Contractor for DHS, regardless of location.
+This clause applies to all or any part of the contract that includes information technology resources or services for which the Contractor must
+have physical or electronic access to sensitive information contained in DHS unclassified systems that directly support the agency's mission.
+(b) The Contractor shall provide, implement, and maintain an IT Security Plan. This plan shall describe the processes and procedures that will
+be followed to ensure appropriate security of IT resources that are developed, processed, or used under this contract.
+(1) Within 30 days after contract award, the contractor shall submit for approval its IT Security Plan, which shall be consistent with and
+further detail the approach contained in the offeror's proposal. The plan, as approved by the Contracting Officer, shall be incorporated into
+the contract as a compliance document. (2) The Contractor's IT Security Plan shall comply with Federal laws that include, but are not limited
+to, the Computer Security Act of 1987 (40 U.S.C. 1441 et seq.); the Government Information Security Reform Act of 2000; and the Federal
+Information Security Management Act of 2002; and with Federal policies and procedures that include, but are not limited to, OMB Circular A-130.
+(3) The security plan shall specifically include instructions regarding handling and protecting sensitive information at the Contractor's site
+(including any information stored, processed, or transmitted using the Contractor's computer systems), and the secure management, operation,
+maintenance, programming, and system administration of computer systems, networks, and telecommunications systems. (c) Examples of tasks that
+require security provisions include--(1) Acquisition, transmission or analysis of data owned by DHS with significant replacement cost should the
+contractor's copy be corrupted; and
+(2) Access to DHS networks or computers at a level beyond that granted the general public (e.g., such as bypassing a firewall). (d) At the
+expiration of the contract, the contractor shall return all sensitive DHS information and IT resources provided to the contractor during the
+contract, and certify that all non-public DHS information has been purged from any contractor-owned system. Components shall conduct reviews to
+ensure that the security requirements in the contract are implemented and enforced. (e) Within 6 months after contract award, the contractor
+shall submit written proof of IT Security accreditation to DHS for approval by the DHS Contracting Officer. Accreditation will proceed according
+to the criteria of the DHS Sensitive System Policy Publication, 4300A (Version 5.5, September 30, 2007) or any replacement publication, which
+the Contracting Officer will provide upon request. This accreditation will include a final security plan, risk assessment, security test and
+evaluation, and disaster recovery plan/continuity of operations plan. This accreditation, when accepted by the Contracting Officer, shall be
+incorporated into the contract as a compliance document. The contractor shall comply with the approved accreditation documentation.
+
+HSAR 3052.204-71 Contractor Employee Access Clause: (a) Sensitive Information, as used in this Chapter, means any information, the loss, misuse,
+disclosure, or unauthorized access to or modification of which could adversely affect the national or homeland security interest, or the conduct
+of Federal programs, or the privacy to which individuals are entitled under section 552a of title 5, United States Code (the Privacy Act), but
+which has not been specifically authorized under criteria established by an Executive Order or an Act of Congress to be kept secret in the
+interest of national defense, homeland security or foreign policy. This definition includes the following categories of information: (1)
+Protected Critical Infrastructure Information (PCII) as set out in the Critical Infrastructure Information Act of 2002 (Title II, Subtitle B, of
+the Homeland Security Act, Public Law 107-296, 196 Stat. 2135), as amended, the implementing regulations thereto (Title 6, Code of Federal
+Regulations, Part 29) as amended, the applicable PCII Procedures Manual, as amended, and any supplementary guidance officially communicated by
+an authorized official of the Department of Homeland Security (including the PCII Program Manager or his/her designee); (2) Sensitive Security
+Information (SSI), as defined in Title 49, Code of Federal Regulations, Part 1520, as amended, “Policies and Procedures of Safeguarding and
+Control of SSI,” as amended, and any supplementary guidance officially communicated by an authorized official of the Department of Homeland
+Security (including the Assistant Secretary for the Transportation Security Administration or his/her designee);
+(3) Information designated as “For Official Use Only,” which is unclassified information of a sensitive nature and the unauthorized disclosure
+of which could adversely impact a person’s privacy or welfare, the conduct of Federal programs, or other programs or operations essential to the
+national or homeland security interest; and (4) Any information that is designated “sensitive” or subject to other controls, safeguards or
+protections in accordance with subsequently adopted homeland security information handling procedures. (b) Information Technology Resources”
+include, but are not limited to, computer equipment, networking equipment, telecommunications equipment, cabling, network drives, computer
+drives, network software, computer software, software programs, intranet sites, and internet sites.
+(c) Contractor employees working on this contract must complete such forms as may be necessary for security or other reasons, including the
+conduct of background investigations to determine suitability. Completed forms shall be submitted as directed by the Contracting Officer. Upon
+the Contracting Officer's request, the Contractor's employees shall be fingerprinted, or subject to other investigations as required. All
+contractor employees requiring recurring access to Government facilities or access to sensitive information or IT resources are required to have
+a favorably adjudicated background investigation prior to commencing work on this contract unless this requirement is waived under Departmental
+procedures. (d) The Contracting Officer may require the contractor to prohibit individuals from working on the contract if the government deems
+their initial or continued employment contrary to the public interest for any reason, including, but not limited to, carelessness,
+insubordination, incompetence, or security concerns.
+(e) Work under this contract may involve access to sensitive information. Therefore, the Contractor shall not disclose, orally or in writing,
+any sensitive information to any person unless authorized in writing by the Contracting Officer. For those contractor employees authorized
+access to sensitive information, the contractor shall ensure that these persons receive training concerning the protection and disclosure of
+sensitive information both during and after contract performance. (f) The Contractor shall include the substance of this clause in all
+subcontracts at any tier where the subcontractor may have access to Government facilities, sensitive information, or resources.
+
+   7. PERIOD of Performance
+
+Once awarded, this IDIQ contract will have a five year ordering period.
+
+   8. PLACE OF PERFORMANCE
+
+The place of performance will be specified in each order awarded under this contract. Attached is a link that identifies all Coast Guard units,
+http://www.uscg.mil/top/units/, that may require installations. Work may be performed a locations worldwide.
+
+   9. HOURS OF OPERATION
+
+The hours of operation will be specified and may vary in each Task Order awarded under this contract.
+
+  10. KICK-OFF MEETING
+
+After Contract Award and the Notice to proceed have been issued, the Contractor shall attend a Kick-Off Meeting with the Contracting Officer and
+the COTR not later than five business days after the date of award.  The Kick-Off Meeting will be held at the Government’s facility.
+
+
+
+
+  11. PROGRESS REPORTS
+
+The Project Manager shall provide a weekly progress report to the COTR and Contracting Officer via electronic means.  This report shall include
+a summary of all active Task Orders awarded under this contract. At a minimum the report shall include: The Task Order/Job Number, CG Unit or
+Site, Short Description of Task, Current Status, Local USCG POC, Start Date, Projected Completion Date, and Remarks (such as any Contractor
+concerns, risks, delays, or recommendations).
+
+  12. PROGRESS MEETINGS
+
+The Project Manager shall be available to meet with the COTR upon request to present deliverables, discuss progress, exchange information, and
+resolve emergent technical problems and issues.  These meetings shall take place at the Government's facility.
+
+  13. GENERAL REPORT REQUIREMENTS
+
+The Contractor shall provide all written reports in electronic format with read/write capability using applications that are compatible with
+Coast Guard Standard Workstation III (Windows and Microsoft Office Applications).
+
+  14. SECTION 508 COMPLIANCE
+
+Section 508 of the Rehabilitation Act, as amended by the Workforce Investment Act of 1998 (P.L. 105-220) requires that when Federal agencies
+develop, procure, maintain, or use electronic and information technology (EIT), they must ensure that it is accessible to people with
+disabilities. Federal employees and members of the public who have disabilities must have equal access to and use of information and data that
+is comparable to that enjoyed by non-disabled Federal employees and members of the public.
+
+All EIT deliverables within this work statement shall comply with the applicable technical and functional performance criteria of Section 508
+unless exempt. Specifically, the following applicable standards have been identified:
+
+36 CFR 1194.21 – Software Applications and Operating Systems, applies to all EIT software applications and operating systems procured or
+developed under this work statement including but not limited to GOTS and COTS software. In addition, this standard is to be applied to Web-
+based applications when needed to fulfill the functional performance criteria. This standard also applies to some Web based applications as
+described within 36 CFR 1194.22.
+
+36 CFR 1194.22 – Web-based Intranet and Internet Information and Applications, applies to all Web-based deliverables, including documentation
+and reports procured or developed under this work statement. When any Web application uses a dynamic (non-static) interface, embeds custom user
+control(s), embeds video or multimedia, uses proprietary or technical approaches such as, but not limited to, Flash or Asynchronous Javascript
+and XML (AJAX) then “1194.21 Software” standards also apply to fulfill functional performance criteria.
+
+36 CFR 1194.23 – Telecommunications Products, applies to all telecommunications products including end-user interfaces such as telephones and
+non end-user interfaces such as switches, circuits, etc. that are procured, developed or used by the Federal Government.
+
+36 CFR 1194.24 – Video and Multimedia Products, applies to all video and multimedia products that are procured or developed under this work
+statement. Any video or multimedia presentation shall also comply with the software standards (1194.21) when the presentation is through the use
+of a Web or Software application interface having user controls available.
+
+36 CFR 1194.25 – Self Contained, Closed Products, applies to all EIT products such as printers, copiers, fax machines, kiosks, etc. that are
+procured or developed under this work statement.
+
+36 CFR 1194.26 – Desktop and Portable Computers, applies to all desktop and portable computers, including but not limited to laptops and
+personal data assistants (PDA) that are procured or developed under this work statement.
+
+36 CFR 1194.31 – Functional Performance Criteria applies to all EIT deliverables regardless of delivery method. All EIT deliverable shall use
+technical standards, regardless of technology, to fulfill the functional performance criteria.
+
+36 CFR 1194.41 – Information Documentation and Support, applies to all documents, reports, as well as help and support services. To ensure that
+documents and reports fulfill the required “1194.31 Functional Performance Criteria”, they shall comply with the technical standard associated
+with Web-based Intranet and Internet Information and Applications at a minimum. In addition, any help or support provided in this work statement
+that offer telephone support, such as, but not limited to, a help desk shall have the ability to transmit and receive messages using TTY.
+
+Exceptions for this work statement have been determined by DHS and only the exceptions described herein may be applied. Any request for
+additional exceptions shall be sent to the COTR and determination will be made in accordance with DHS MD 4010.2. DHS has identified the
+following exceptions that may apply:
+
+36 CFR 1194.2(b) – (COTS/GOTS products), When procuring a product, each agency shall procure products which comply with the provisions in this
+part when such products are available in the commercial marketplace or when such products are developed in response to a Government
+solicitation. Agencies cannot claim a product as a whole is not commercially available because no product in the marketplace meets all the
+standards. If products are commercially available that meets some but not all of the standards, the agency must procure the product that best
+meets the standards.
+
+When applying this standard, all procurements of EIT shall have documentation of market research that identify a list of products or services
+that first meet the agency business needs, and from that list of products or services, an analysis that the selected product met more of the
+accessibility requirements than the non-selected products as required by FAR 39.2. Any selection of a product or service that meets less
+accessibility standards due to a significant difficulty or expense shall only be permitted under an undue burden claim and requires approval
+from the DHS Office of Accessible Systems and Technology (OAST) in accordance with DHS MD 4010.2.
+
+36 CFR 1194.3(b) – Incidental to Contract, all EIT that is exclusively owned and used by the contractor to fulfill this work statement does not
+require compliance with Section 508. This exception does not apply to any EIT deliverable, service or item that will be used by any Federal
+employee(s) or member(s) of the public. This exception only applies to those contractors assigned to fulfill the obligations of this work
+statement and for the purposes of this requirement, are not considered members of the public.
+
+2.0   REFERENCES
+
+The Contractor shall adhere to all policies and procedures established by the Government, Safety Code, or Industry Standard. Such policies and
+procedures are contained in the most current version of the documents listed below. Additional references or policies may be provided in
+individual Task Orders. This is not a complete list of all references; therefore the Contractor is required to meet all requirements cited in
+this SOW, whether or not the reference document is listed.
+
+      TIA/EIA 568 series
+      TIA/EIA 569A
+      TIA/EIA 606
+      TIA/EIA 607
+      TIA/EIA 758
+      TIA/EIA/IS-811
+      TIA/EIA-810-A
+      NFPA-70
+      ANSI/TIA/EIA-526-7
+      National Electric Code
+      Department Of Homeland Security (DHS) 4300A Sensitive Systems Handbook
+      Manufacturers Technical Manual
+      Federal Desktop Core Configuration (FDCC) Standards
+
+
+
+ACROMYMS
+
+
+      ACD   -      Automatic Call Distribution
+      CFR   -      Code of Federal Regulation
+      COTS  -      Commercial –Off-The-Shelf
+      DID   -      Direct Inward Dial
+      DOD   -      Direct Outward Dialing
+      EIT   -      Electronic and Information Technology
+      GOTS   -     Government off The Shelf
+      JITC  -      Joint Interoperability Test Command
+      PBX   -      Private Branch Exchange
+      POTS  -      Plain Old Telephone Service
+      PSTN  -      Public Switched Telephone Network
+      UC    -      Unified Communications
+
+
+
+
+
+GOVERNMENT FURNISHED
+
+
+Any Government furnished resources or information will be specified in each individual Task Order awarded under this contract.
+
+All telecommunications connectivity will be government-furnished. T-1/PRI/ISDN trunk lines will be obtained from the GSA Networx Contract, or
+the local service provider (LEC/CLEC), depending on availability and cost trade-offs.
+
+The USCG will use local service providers to obtain POTS (Plain Old Telephone Service) lines and DID/DOD blocks of telephone numbers. The USCG
+will use the GSA Networx provider (Verizon), or its successor, as its long distance (LD) service provider for off-network calls that are subject
+to toll charges.
+
+The USCG will also use the GSA Networx provider (Verizon), or its successor, to establish toll-free (800) numbers mapped to the USCG’s
+administrative voice enterprise. The USCG will provide MPLS WAN services to support the delivery of enterprise telephony services.  Government-
+provided WAN connectivity may be used as an element of the UC architecture for, but not limited to: on-net calling, and accessing Contractor-
+provided telephony/Unified Communications features and services.
+
+At facilities where VoIP technology is being implemented and where the existing network infrastructure is available, the USCG will provide the
+Contractor with access to Local Area Networks (LANs) for: (1) connectivity between user stations for intra-facility communications; and (2)
+connectivity between user station equipment and the Wide Area Network (WAN) for inter-facility communications. The types of LANs and the
+available capacity will vary between facilities.
+
+Unless specified by individual Task Order, the Government will provide the “inside wiring” to support telephony/UC systems at USCG facilities,
+and will perform all work necessary at Government facilities to prepare the sites for the receipt of Contractor provided and installed
+equipment.
+
+The Government will assist the Contractor with the cutover of new capabilities implemented under this contract. Unless otherwise specified in
+the individual Task Order, the USCG will:
+
+      • Provide connection or Contractor access to Government power panels and/or ground buses, WANs and LANs as required for Contractor-
+        provided equipment.
+
+
+      • Facilitate the scheduling and coordination required to cutover users from legacy systems to new Contractor-installed Telephony
+        equipment.
+
+
+     3. CONTRACTOR FURNISHED
+
+The Contractor shall furnish all materials, equipment, supervision, and services necessary to fulfill the requirements of each Task Order
+awarded under this contract, except for the Government Furnished resources specified in this work statement or by individual Task Order.
+
+
+REQUIREMENTS
+
+
+The USCG intends to standardize telephony systems, peripherals and installations with an Enterprise UC system, to support current and future
+requirements and the transition to Internet Protocol (IP). The System will be purchased to satisfy the USCG needs for digital/analog/VoIP/UC.
+The System shall encompass all common equipment and peripheral equipment as specified in the document and any attachments thereto, necessary to
+install a complete digital/analog/VoIP/IP/UC Voice and Voice Mail Telephone System, etc. The System shall be comprised of a wide range of
+configurations to include but not limited to, the option for installation by manufacturer certified technicians and will include all network
+analyses and hardware, cross connect requirements, software, programming, voice mail set-up including auto attendant menus and ACD programming
+to provide a ready to use Telecommunications system.
+
+All solutions and services shall meet DHS/USCG Enterprise Architecture policies, standards, and procedures. Specifically, the contractor shall
+comply with the following Homeland Security Enterprise Architecture (HLS EA) requirements:
+
+      • All developed solutions and requirements shall be compliant with the HLS EA and DOD Security Technical Implementation Guide (STIG).
+
+
+      • All IT hardware or software shall be compliant with the HLS EA Technical Reference Model (TRM) Standards and Products Profile and DOD
+        STIG’s.
+
+      • All data assets, information exchanges and data standards, whether adopted or developed, shall be submitted to the DHS Enterprise Data
+        Management Office (EDMO) for review and insertion into the DHS Data Reference Model.
+
+      • In compliance with Office of Management and Budget (OMB) mandates, all network hardware shall be IPv6 compatible without modification,
+        upgrade, or replacement.
+
+      • All Information Technology assets being developed, procured, or acquired shall be IPv6 capable.
+
+      • Telecommunications Industry Association/Electronics Industries Association/Information Science-811 (TIA/EIA/IS-811) and TIA/EIA-810-A
+        specifications.
+
+
+      • All solutions shall comply with the Federal Desktop Core Configuration (FDCC) as mandated by OMB.  The FDCC currently exists for
+        Microsoft Windows Vista and XP operating systems software.
+
+   1. SYSTEM-BASED TELEPHONY REQUIREMENTS
+
+All equipment shall be new.  No re-manufactured, refurbished, or grey-market power supplies, circuit cards, CPUs, hardware, electronic or other
+installation parts shall be utilized with system outfitting, including in the spare parts provided or used to perform warranty repairs. All
+systems proposed for each Task Order shall be of the same manufacturer.
+
+
+Only existing Commercial-Off-The-Shelf (COTS) systems should be included in the pricing package.  Systems under development or in planning shall
+not be considered nor submitted.
+
+   1. JITC Certification
+
+
+The Telephony System shall be JITC Certified for PBX 1, Information Assurance (IA), Information Operability (IO), Multi Level Protocol
+Preemption (MLPP) and Small Medium End Office (SMEO) to support ISDN PRI and BRI for CG-owned STE’s.
+
+6.1.2 Capabilities and Features
+
+
+The Telephony System shall be Internet Protocol version 6 (IPv6) compliant. Specifically:
+
+      • Interoperate with both IPv6 and IPv4 systems and products.
+
+      • Have available IPv6 technical support for development, implementation, and management of deployed products, components or systems.
+
+
+
+The System shall currently be - or be capable of evolving to - a fully IETF Session Initiation Protocol (SIP) compliant system (trusted and
+secure).
+
+Proprietary software of any integrated feature system must be totally integrated with the system.
+
+The equipment supplied shall have been granted a FCC registration number under part 68 of Title 47 of the Code of Federal Regulation (CFR).
+
+The System shall have the ability for an Auto Program Reload following a system or power failure.
+
+
+The System shall have the ability for an Auto-Program Back-Up.
+
+The System shall have the ability to disable any available options for the system.
+
+
+The System shall have the ability for Trunk Power Fail Transfer.
+
+The System shall provide for the use of ANI/CLID features as provided through the Public Switched Telephone Network (PSTN).
+
+The System shall be designed and constructed to give a 99.9 Mean Time between Failure Rate and VoIP/UC 99.999 grade of service.
+
+
+The System shall be fully compatible for use with North American and European DS1/T1/E1, ISDN PRI/BRI digital services utilizing either D4 or
+ESF framing formats and AMI or B8ZS line coding.
+
+
+The System shall allow for remote maintenance through dial up or IP access from off site locations. The use of remote connections must be
+controlled (only made available as needed in response to a particular problem), logged and will be supervised. These features must not be
+accessible via login ID’s and passwords held privately by the manufacturer. Proper passwords will be used and should have the ability to set
+expiration time frames or be single use.
+
+The System shall be ruggedized and capable of operating on board CG cutters in a marine environment, without special modifications.
+
+
+The System shall include a Telecommunications Management System (TMS).
+
+
+The System shall provide a toll control system that will restrict access to long distance line, or allow calls to only specific area codes and
+numbers. Different levels of restriction shall be available for each extension.
+
+
+The System shall have the ability to block or inhibit any direct external trunk to trunk transfer.
+
+
+The System shall have the flexibility to integrate with the Coast Guard’s existing telephony systems in order to begin the enterprise managed
+solution.
+
+
+The System shall provide for expansion to an enterprise solution to include IP/VoIP/CTI/UC.
+
+
+The System shall have the ability to integrate with Coast Guard data networks software and hardware systems and meet the necessary requirements
+which include all current and future Microsoft® Operating Systems, Exchange versions and hardware for UC integration.
+
+The System shall have Dual Common Controls and Redundancy of the main processing units to allow complete uninterrupted operation if one or the
+other fails.
+
+The System shall have the capability to add encryption on the VoIP signaling packets as well as the voice payload, so that this feature can be
+invoked in the future, if necessary.  Encryption employed shall meet acceptable standards designated by the National Institute of Standards and
+Technology (NIST).
+
+
+The System shall support the Nation’s Emergency Number and the E911 initiatives.  The system shall recognize (9) (1) (1), (9) (9) (1) (1), or
+(9) (1) (9) (1) (1) as a local PSTN emergency call for help.  Any 911 calls must access the local PSTN trunk to that office.
+
+
+The System shall provide access to the Government Emergency Telephone Service (GETS).
+
+The System shall be interoperable and compatible with the local telephone company’s central office (primarily overseas).
+
+6.1.3 Configuration and Administration
+
+
+The Contractor shall configure the system to duplicate existing trunk and numbering plan (recapitalizations) to the maximum extent possible. Any
+dial plan changes, if required, must be approved in advance by the USCG.
+
+
+The Contractor shall supply all associated passwords for installed system.
+
+
+The Contractor shall supply a complete back-up copy of each installed system.
+
+The Contractor may be required to provide remote alarms for fire, smoke, heat and humidity for each installation.  The alarm panel shall report
+status to a 24x7 manned support area to be designated by the Coast Guard.
+
+
+If applicable, all recapitalized equipment shall be removed and disposed of in accordance with USCG instructions.
+
+The Contractor shall supply a list of all model and serial numbers for installed hardware as required to satisfy USCG inventory requirements.
+
+The Contractor shall furnish the Coast Guard with a complete complement of spare parts in accordance with the manufacturers recommended spare
+parts allowance list. Spare part storage location shall be determined by the supporting unit at the time of installation. At a minimum, at least
+one of each major electronic/electrical component or the main printed circuit board that would cause the system to either fail completely, or
+cause a major service interruption (e.g. loss of a T-1/PRI/BRI Trunk) shall be provided based on the current inventory of system spare parts on
+hand as provided by the supporting unit.
+
+
+
+6.1.4 Warranty and Supportability
+
+The Contractor shall provide a full three year warranty for all equipment and workmanship commencing on the date of Government acceptance.
+
+The Contractor shall certify that the components provided shall be supportable (e.g., parts availability, manufacturer repair support) for a
+minimum period of five (5) years after final purchase.
+
+   2. Ancillary Devices
+
+Ancillary devices are considered any other equipment that may interface with the Telephony/UC System to ensure a complete and fully operational
+installation. In addition to the items discussed in more detail below, ancillary devices include but are not limited to: racks, cabinets, wall-
+mount “back-boards,” mounting hardware, LAN and WAN interface equipment, battery systems, power and ground cables, cables and connectors, Public
+Address systems and components, emergency on-Site notification devices, Call Detail Record (CDR) or call accounting devices, and wireless
+devices (if approved for use by USCG).
+
+                    1. Voice Mail
+
+The Voice Mail, whether centralized or distributed, shall be fully integrated with the supplied system without using compatibility packages or
+auxiliary devices and available for all users. Total system capacity shall equal the number of station sets utilized in the System configuration
+and provide a minimum of 16 ports capable of recording at least 70 hours of voice. Multiple System Greetings shall be separated by port or
+control group; separate by time of day and day of week; holiday greetings programmable in advance; special greeting toggle; various personal and
+standard greetings; user activated message greeting. The Voice Mail system shall also provide at least the following functions:
+
+
+      • Recording of two personalized greetings—employee selectable
+
+      • Caller can “Option out” of voice mail to an attendant or another phone number
+
+      • Support automatic attendant features
+
+      • Support 30 minutes of record time per mailbox
+
+      • Save heard messages for up to 15 days
+
+      • Time and day stamp each message
+
+      • Selectively delete or retain messages
+
+      • Define mailbox grouping (with concurrent membership in more than one group)
+
+      • Voice mail forwarding
+
+      • Group distribution of voice mail (e.g., one message sent to a defined group of mailboxes)
+
+
+      • Global Password change capability
+
+
+      • Automatic change password notification
+
+
+      • Users shall not have the ability to use their extension number as their password
+
+
+      • User activated and changeable password protection with the ability to establish strong passwords.
+
+
+   2.  Uninterruptible Power Supply (UPS)
+
+If required, the UPS system shall require four hours of uninterruptible power supply back up power.  This back up power shall be capable of
+running all phone system components for a minimum of four hours.  The vendor make of the UPS may be third party, but must be fully integrated
+and warranted by the installer.
+
+   3.  Video Teleconference (VTC)
+
+The Contractor shall provide a solution that allows one or more audio participants using the Contractor’s VoIP telephone sets to connect into a
+video teleconference over existing IP or SIP-based video conference systems e.g., Polycom and future H.323 endpoints, and desktop video systems.
+USCG System VoIP participants shall be able to participate in a point-to-point video conference, IP multipoint video conference, and mixed IP
+and ISDN video conference system. This feature shall allow VoIP audio participants to dial into the video call, or alternately allow a video
+caller to dial up the VoIP audio participant. Specific VTC requirements will be identified in individual Task Orders.
+
+
+   4. Automatic Call Distribution (ACD)
+
+The supplied system shall include an ACD software/hardware package. Peripheral hardware devices, if provided, should be digitally integrated
+with the main cabinet/carrier stack.  ACD will be identified in subsequent task orders.
+
+
+      • The initial ACD software and hardware sizing configuration shall be based on the minimum size accommodated within the main system
+        software package.
+
+
+      • Additional software should be provided in the price package to allow for expansion of the base software for more robust ACD
+        applications.
+
+      • The ACD system/software should provide for up to 24 simultaneous calls being held in Queue.
+
+
+The ACD package shall provide the capability of Recorded Announcement Devices (RAD) for voice recordings that will allow programmable wait times
+between announcements, and call transfer to a dedicated voice mail box for callers desiring to leave a voice message or calls exceeding maximum
+wait times. This capability may be built into the existing ACD software/hardware package or provided as standalone peripheral devices.
+
+
+       • Any peripheral devices utilized must provide for fully integrated, seamless call transfer and routing between PBX and Voice Mail
+         systems.
+
+
+       • The style or type of recording device provided must provide a minimum of 4 levels of recorded announcements.
+
+   5. Telephone Sets and Features
+
+The System shall support Analog/TDM, digital, IP telephone sets and soft phones with the following user call features as described below. The
+actual type and number of sets required for each site will vary according to the end user needs. The System shall be able to support soft phones
+with the integration of Unified Communications. Soft phones are a software program installed on a computer workstation used for making telephone
+calls across the data network.
+
+       • Softphone software shall be vendor specific, and interoperable with all current and future Microsoft® Operating Systems, Exchange
+         versions, and hardware.
+
+       • Speed Dialing/Speed Call - ability to program one digit and two digit codes to quickly dial telephone numbers.
+
+       • Call Waiting Indicator for a second incoming call by sending an audio tone(s) to the handset at regular intervals.
+
+    • Multiple line appearances.
+
+    • Choice of Audible indication (ringing) for incoming calls.
+
+    • Visual indication of line ringing.
+
+    • Message Waiting (Voice Mail) Indicator - Audible Indication.
+
+       • Message Waiting (Voice Mail) Indicator - Visual Indication.
+
+       • Do Not Disturb
+
+       • Intercom In-phone Paging- Zone paging shall be supported using the internal speaker of the phone.
+
+       • Intercom Overhead Paging - Station/System shall have the ability to interface with existing (Valcom and/or Bogen, ie) external intercom
+         paging systems to include multi zone paging.
+
+       • System shall be non-blocking (i.e., all stations can be off-hook simultaneously).
+
+       • Automatic Station Release - if the handset is removed from the cradle and dialing is not complete within a predetermined time period,
+         the line will automatically release the line from the system.
+
+       • Off-hook protection - shall be supported by one of the following means for stations placed off hook in an inactive state:
+
+       • System shall disconnect the off-hook station from the system.  The station shall be automatically reconnected to the system when the
+         station’s receiver is placed back on hook.
+
+       • System shall provide an alerting tone(s) through the station and subsequently disconnect the station from the System.  The station
+         shall be automatically reconnected to the System when the station’s receiver is placed back on hook.
+
+       • Contractor shall describe the type of off-hook protection that is supported.
+
+
+
+
+   6. Public Address Systems
+
+The Contractor shall ensure the Telephony/UC System interfaces with a new or existing overhead public address (PA) systems located at various
+locations throughout the USCG.  The specific PA functionality and features may be unique to the site.  The Contractor shall configure the PA
+system such that the voice payload is maintained within each location or zone. Additional PA system guidelines will be indentified in individual
+Task Orders
+
+   7. Cable and Wiring
+
+The Contractor shall reuse the existing Category 5/5e, Category 6 or Type 1-A station cable to the connector/termination jacks, and distribution
+frames/panels for IP voice, data, and voice/data workstations.  The Contractor shall label and test each associated cable at each transition
+through an intermediate distribution frame, main distribution frame, or patch panel.  In addition, the Contractor shall identify and label all
+new and existing circuits terminated at the LEC cross connects or termination blocks.  The labels shall be permanent, waterproof, and firmly
+attached to the cable.  Labeling shall be in accordance with ANSI/TIA/EIA-606A.  The site survey and test results shall be provided in
+electronic format to the USCG and the Government Project Officer/ COTR.
+
+If the Contractor determines the existing cable is insufficient or unacceptable, and needs replacement during the site survey, the Contractor
+shall state the deficiencies and quote a price to the USCG Project Manager.
+
+If the USCG Project Manager requests cabling work, for instance to repair a deficiency found in the site survey, the Contractor shall obtain the
+existing as-built drawings and verify that they are substantially correct so as to permit the cabling work needed.  If the drawings do not
+exist, or the survey finds them out-of-date, the Contractor shall produce a set of drawings of sufficient scope and accuracy to permit a cabling
+design.  The Contractor shall submit the drawings with a cable design to the USCG Project Manager for approval.
+
+   3. SERVICES
+
+The Contractor shall provide qualified personnel to perform any of the following services, as may be specified by individual Task Order.
+
+   1. Telephone and Remote Technical Support
+
+The Contractor shall be available to provide technical support by telephone and/or via remote access at all times, including weekends, holidays,
+and after-hours.
+
+                    2. On-Site Technical and Installation Support
+
+The Contractor shall provide qualified personnel to perform on-site technical and installation support services for warranty work or as
+specified by individual Task Order. On-site technical or installation support may be required for routine preventive or corrective maintenance,
+emergency corrective maintenance (including catastrophic failures, disaster recovery, Continuity of Operations, installation of patches or
+upgrades, or system administration.
+
+
+   3. Site Surveys
+
+Unless specified otherwise by COTR or by individual Task Order, site surveys shall be conducted prior to any new installation, recapitalization,
+or whenever necessary for planning and documentation purposes. A site survey may be initiated by funded task order, or as a no-cost service
+provided by the Contractor upon notification by the Government of a new requirement.
+
+Contractor shall visit a site, develop best technical solution based on USCG requirements, establish a quote for materials and services to be
+performed based on the strategic plan for implementing enterprise telephony and UC for the USCG.
+
+Prior to conducting any site surveys, the Contractor must prepare and submit for USCG approval a standardized “site survey checklist” that
+provides a comprehensive list of the information that the Contractor intends to collect during site surveys.  At a minimum, site survey
+checklists must identify site preparation work, space requirements and any other related issues, and any specific assistance that will be
+required from the Government prior to implementing new systems and upgrades to existing systems.
+
+As ordered by the Government, the Contractor must coordinate and conduct site surveys at USCG ship and shore facilities to collect the
+information identified on the Government-approved checklist.  During the site survey, the Contractor must address any preliminary data gathering
+(e.g., existing numbering plans, equipment locations, etc.) and coordination activities necessary to ensure the successful completion of the
+planned implementation activities.  Site surveys for individual sites and campus environments (consisting of multiple sites) will be as
+specified by individual Task Order.
+
+The Contractor shall be responsible for determining the accuracy of site documentation obtained during the site survey from the Government to
+the extent that it affects the implementation of systems and equipment obtained under the follow-on Task Order.  Any documentation
+inconsistencies or errors must be noted in the Site Survey Report.
+
+   4. User Training
+
+For all new installations and recapitalizations, the Contractor shall provide on-site training for all end-user equipment installed under this
+contract.  This includes training for all telephony system features, and the voicemail system. End user training shall occur the same week as
+the site cutover to new phone equipment. The depth of training and method of delivery will be dictated by the need, and will be tailored to the
+business operation and day-today activities of the site. Training shall be provided until all end-users are trained, or as specified by the
+individual Task Order.
+
+   5. Technician and Administrator Training
+
+
+The Contractor shall provide various levels of training for USCG technicians. The training shall cover architectural designs, familiarity with
+each component of the Telephony system, troubleshooting methodologies and techniques, and system administration functions. Training may be
+delivered in classroom, OJT, or via distance learning, depending on the depth and level of training required.
+
+
+The Contractor shall also provide input to USCG Training Center Petaluma for establishment of apprentice or journeyman level training curriculum
+for USCG instructors and Technicians.
+
+For all new installations and recapitalizations, the Contractor shall provide manufacturers’ formal technical training to two (2) designated CG
+technicians for each task order prior to installation (preferred) or as soon as possible after.  Any On the Job Training (OJT) shall coincide
+with user training to ensure installation specific information is provided to local technicians.
+
+   6. Enterprise Planning, Integration, and Telephony/UC Engineering
+
+
+The Contractor shall provide qualified personnel to provide enterprise planning, integration, and telephony/UC engineering support as specified
+by individual Task Order. These services include but are not limited to:
+
+      • Voice enterprise planning
+
+
+      • Voice enterprise system engineering
+
+
+      • Interfaces and services interoperability
+
+
+      • Bandwidth and capacity analysis
+
+   7. Information Assurance and Vulnerability Assessment Services
+
+The contractor shall provide qualified personnel to perform Telephony/UC System security audit, risk assessment, and/or mitigation services in
+accordance with current DHS and USCG policy, and provide written reports. These services will be specified by individual Task Orders.
+
+The Contractor shall provide qualified personnel to perform Certification and Accreditation activities as specified by individual Task Order.
+
+The Contractor shall provide qualified personnel to perform security audit services for telephony systems as specified by individual Task Order.
+
+
+   8. Legacy Telephone Equipment Support
+
+The Contractor shall provide a means (via teaming agreement or sub-contracting arrangement) for the maintenance and support by qualified
+personnel for all legacy PBX systems installed throughout the enterprise, until such time they are removed from service.
+
+   4. INSPECTIONS AND ACCEPTANCE
+
+The USCG COTR will accept all supplies and services provided by the Contractor, unless otherwise specified by the individual Task Order.
+
+The COTR will be certified in accordance with DHS Management Directive 0780.1.  The COTR will perform periodic inspections and evaluate
+deliverables under this contract to ensure all Contract and Task Order requirements are met.  The COTR will coordinate and monitor the
+contractor's performance on each Task Order, ensure compliance with technical requirements, evaluate the contractor’s performance, and maintain
+adequate records of all inspections or evaluations required to accept or reject the contractor’s work products and/or services.
+
+The Contractor is responsible to correct any compliance deficiencies noted as a result of the COTR inspection and acceptance activities.
+
+
+
+
+                                                        HSCG79-10-R-PT2164 PRICING TABLES
+
+Please Note:  the following CLIN structure is for evaluation of price proposals only.
+
+B.1.A Base Period Hardware, Materials, Software, and Travel:
+|CLIN #         |Description of Product or Service                                   |Qty/Unit of     |Price                        |
+|               |                                                                    |Issue           |                             |
+|00001          |PBX Telephony Equipment Installation Product/Services to include    |                |                             |
+|               |labor categories, fixed price labor, estimated number of labor hours|                |                             |
+|               |for installations per scenarios below, complete list of hardware    |                |                             |
+|               |equipment per scenarios, and complete list of software IAW Statement|                |                             |
+|               |of Work.                                                            |                |                             |
+|00001A         |Scenario One – Small Size                                           |1 JB            |Discount % off MSRP          |
+|00001B         |Scenario Two – Medium Size                                          |1 JB            |Discount % off MSRP          |
+|00001C         |Scenario Three – Large Size                                         |1 JB            |Discount % off MSRP          |
+|00001D         |Scenario Four - UC                                                  |1 JB            |Discount % off MSRP          |
+|00002          |Emergency Deployment Support                                        |1 JB            |                             |
+|00003          |PBX Telephony Help Desk Support/On-Call Support to include fixed    |12 MO           |                             |
+|               |price labor                                                         |                |                             |
+|00004          |PBX Telephony Equipment Services to include fixed price End-User    |12 MO           |                             |
+|               |Training and Technical Training prices                              |                |                             |
+|00005          |Legacy Equipment Maintenance and support for legacy installed       |12 MO           |                             |
+|               |equipment – fixed price                                             |                |                             |
+|00006          |Not To Exceed (NTE) Travel IAW SOW Sections                         |$               |$                            |
+|Total          |Firm-Fixed Price                                                    |$               |$                            |
+
+
+ B.1.B Option Period 1 Hardware, Materials, Software, and Travel:
+|CLIN #         |Description of Product or Service                                   |Qty/Unit of     |Price                        |
+|               |                                                                    |Issue           |                             |
+|00007          |PBX Telephony Equipment Installation Product/Services to include    |                |                             |
+|               |labor categories, fixed price labor, estimated number of labor hours|                |                             |
+|               |for installations per scenarios below, complete list of hardware    |                |                             |
+|               |equipment per scenarios, and complete list of software IAW Statement|                |                             |
+|               |of Work.                                                            |                |                             |
+|00007A         |Scenario One – Small Size                                           |1 JB            |Discount % off MSRP          |
+|00007B         |Scenario Two – Medium Size                                          |1 JB            |Discount % off MSRP          |
+|00007C         |Scenario Three – Large Size                                         |1 JB            |Discount % off MSRP          |
+|00007D         |Scenario Four - UC                                                  |1 JB            |Discount % off MSRP          |
+|00008          |Emergency Deployment Support                                        |1 JB            |                             |
+|00009          |PBX Telephony Help Desk Support/On-Call Support to include fixed    |12 MO           |                             |
+|               |price labor                                                         |                |                             |
+|00010          |PBX Telephony Equipment Services to include fixed price End-User    |12 MO           |                             |
+|               |Training and Technical Training prices                              |                |                             |
+|00011          |Legacy Equipment Maintenance and support for legacy installed       |12 MO           |                             |
+|               |equipment – fixed price                                             |                |                             |
+|00012          |Not To Exceed (NTE) Travel IAW SOW Sections                         |$               |$                            |
+|Total          |Firm-Fixed Price                                                    |$               |$                            |
+
+
+B.1.C Option Period 2 Hardware, Materials, Software, and Travel:
+|CLIN #         |Description of Product or Service                                   |Qty/Unit of     |Price                        |
+|               |                                                                    |Issue           |                             |
+|00013          |PBX Telephony Equipment Installation Product/Services to include    |                |                             |
+|               |labor categories, fixed price labor, estimated number of labor hours|                |                             |
+|               |for installations per scenarios below, complete list of hardware    |                |                             |
+|               |equipment per scenarios, and complete list of software IAW Statement|                |                             |
+|               |of Work.                                                            |                |                             |
+|00013A         |Scenario One – Small Size                                           |1 JB            |Discount % off MSRP          |
+|00013B         |Scenario Two – Medium Size                                          |1 JB            |Discount % off MSRP          |
+|00013C         |Scenario Three – Large Size                                         |1 JB            |Discount % off MSRP          |
+|00013D         |Scenario Four - UC                                                  |1 JB            |Discount % off MSRP          |
+|00014          |Emergency Deployment Support                                        |1 JB            |                             |
+|00015          |PBX Telephony Help Desk Support/On-Call Support to include fixed    |MO              |                             |
+|               |price labor                                                         |                |                             |
+|00016          |PBX Telephony Equipment Services to include fixed price End-User    |MO              |                             |
+|               |Training and Technical Training prices                              |                |                             |
+|00017          |Legacy Equipment Maintenance and support for legacy installed       |MO              |                             |
+|               |equipment – fixed price                                             |                |                             |
+|00018          |Not To Exceed (NTE) Travel IAW SOW Sections                         |$               |$                            |
+|Total          |Firm-Fixed Price                                                    |$               |$                            |
+
+
+B.1.D Option Period 3 Hardware, Materials, Software, and Travel:
+|CLIN #         |Description of Product or Service                                   |Qty/Unit of     |Price                        |
+|               |                                                                    |Issue           |                             |
+|00019          |PBX Telephony Equipment Installation Product/Services to include    |                |                             |
+|               |labor categories, fixed price labor, estimated number of labor hours|                |                             |
+|               |for installations per scenarios below, complete list of hardware    |                |                             |
+|               |equipment per scenarios, and complete list of software IAW Statement|                |                             |
+|               |of Work.                                                            |                |                             |
+|00019A         |Scenario One – Small Size                                           |1 JB            |Discount % off MSRP          |
+|00019B         |Scenario Two – Medium Size                                          |1 JB            |Discount % off MSRP          |
+|00019C         |Scenario Three – Large Size                                         |1 JB            |Discount % off MSRP          |
+|00019D         |Scenario Four - UC                                                  |1 JB            |Discount % off MSRP          |
+|00020          |Emergency Deployment Support                                        |1 JB            |                             |
+|00021          |PBX Telephony Help Desk Support/On-Call Support to include fixed    |12 MO           |                             |
+|               |price labor                                                         |                |                             |
+|00022          |PBX Telephony Equipment Services to include fixed price End-User    |12 MO           |                             |
+|               |Training and Technical Training prices                              |                |                             |
+|00023          |Legacy Equipment Maintenance and support for legacy installed       |12 MO           |                             |
+|               |equipment – fixed price                                             |                |                             |
+|00024          |Not To Exceed (NTE) Travel IAW SOW Sections                         |$               |$                            |
+|Total          |Firm-Fixed Price                                                    |$               |$                            |
+
+
+B.1.E Option Period 4 Hardware, Materials, Software, and Travel:
+|CLIN #         |Description of Product or Service                                   |Qty/Unit of     |Price                        |
+|               |                                                                    |Issue           |                             |
+|00025          |PBX Telephony Equipment Installation Product/Services to include    |                |                             |
+|               |labor categories, fixed price labor, estimated number of labor hours|                |                             |
+|               |for installations per scenarios below, complete list of hardware    |                |                             |
+|               |equipment per scenarios, and complete list of software IAW Statement|                |                             |
+|               |of Work.                                                            |                |                             |
+|00025A         |Scenario One – Small Size                                           |1 JB            |Discount % off MSRP          |
+|00025B         |Scenario Two – Medium Size                                          |1 JB            |Discount % off MSRP          |
+|00025C         |Scenario Three – Large Size                                         |1 JB            |Discount % off MSRP          |
+|00025D         |Scenario Four - UC                                                  |1 JB            |Discount % off MSRP          |
+|00026          |Emergency Deployment Support                                        |1 JB            |                             |
+|00027          |PBX Telephony Help Desk Support/On-Call Support to include fixed    |12 MO           |                             |
+|               |price labor                                                         |                |                             |
+|00028          |PBX Telephony Equipment Services to include fixed price End-User    |12 MO           |                             |
+|               |Training and Technical Training prices                              |                |                             |
+|00029          |Legacy Equipment Maintenance and support for legacy installed       |12 MO           |                             |
+|               |equipment – fixed price                                             |                |                             |
+|00030          |Not To Exceed (NTE) Travel IAW SOW Sections                         |$               |$                            |
+|Total          |Firm-Fixed Price                                                    |$               |$                            |
+|GRAND TOTAL    |                                                                    |$               |$                            |
+
+* Note: The government may order any combination of hardware, materials, software, and NTE travel from the above CLINS based on results of
+individual site surveys.  All Task Orders shall be issued on a Firm-Fixed Price basis.
+
+SOLICITATION/CONTRACT/ORDER FOR COMMERCIAL ITEM
+OFFEROR TO COMPLETE BLOCKS 12, 17, 23, 24, & 30
+2. CONTRACT NO. 3. AWARD/ EFFECTIVE DATE a. NAME 4. ORDER NUMBER
+
+1. REQUISITION NUMBER
+
+PAGE
+
+OF
+
+1
+5. SOLICITATION NUMBER
+
+8
+6. SOLICITATION ISSUE DATE
+
+HSCG79-10-R-PT2164
+b. TELEPHONE NUMBER (No collect calls)
+
+05/18/2010
+
+7.
+
+FOR SOLICITATION INFORMATION CALL:
+
+8. OFFER DUE DATE/LOCAL TIME
+
+Cherish Driver
+CODE
+
+2024753197 232
+10. THIS ACQUISITION IS UNRESTRICTED OR
+
+06/30/2010 1400 ET
+X SET ASIDE:
+
+9. ISSUED BY
+
+USCG Headquarters (CG-9122) 2100 2ND ST. SW, Suite 1100 WASHINGTON DC 205930001
+
+100.00 % FOR:
+EMERGING SMALL BUSINESS SOLE SOURCE
+
+X SMALL BUSINESS
+NAICS: SIZE STANDARD: HUBZONE SMALL BUSINESS SERVICE-DISABLED VETERANOWNED SMALL BUSINESS 13b. RATING 13a. THIS CONTRACT IS A RATED ORDER UNDER DPAS (15 CFR 700) 14. METHOD OF SOLICITATION RFQ IFB CODE
+
+8(A)
+
+11. DELIVERY FOR FOB DESTINATION UNLESS BLOCK IS MARKED SEE SCHEDULE 15. DELIVER TO
+
+12. DISCOUNT TERMS
+
+X RFP
+
+CODE
+
+16. ADMINISTERED BY
+
+232
+
+USCG Headquarters (CG-9122) 2100 2ND ST. SW, Suite 1100 WASHINGTON DC 205930001
+
+17a. CONTRACTOR/ OFFEROR
+
+CODE
+
+FACILITY CODE
+
+18a. PAYMENT WILL BE MADE BY
+
+CODE
+
+TELEPHONE NO. 17b. CHECK IF REMITTANCE IS DIFFERENT AND PUT SUCH ADDRESS IN OFFER 19. ITEM NO. 20. SCHEDULE OF SUPPLIES/SERVICES 18b. SUBMIT INVOICES TO ADDRESS SHOWN IN BLOCK 18a UNLESS BLOCK BELOW IS CHECKED SEE ADDENDUM 21. QUANTITY 22. UNIT 23. UNIT PRICE 24. AMOUNT
+
+This ID/IQ Contract is for Enterprise Managed Telephony and Unified Communications System Installations and Equipment Recapitalization Services to the US Coast Guard Command, Control, Communications, and Information Technology Service Center (C4IT) Telecommunications and Information Systems Command (TISCOM) Product Line Division, Enterprise Information Systems Infrastructure (EISI) Branch, Implementation Section, Telephony Group. This is a five-year [one-year base period with four one-year option
+(Use Reverse and/or Attach Additional Sheets as Necessary)
+25. ACCOUNTING AND APPROPRIATION DATA X 27a. SOLICITATION INCORPORATES BY REFERENCE FAR 52.212-1, 52.212-4. FAR 52.212-3 AND 52.212-5 ARE ATTACHED. 27b. CONTRACT/PURCHASE ORDER INCORPORATES BY REFERENCE FAR 52.212-4. FAR 52.212-5 IS ATTACHED. X 28. CONTRACTOR IS REQUIRED TO SIGN THIS DOCUMENT AND RETURN 4 COPIES TO ISSUING OFFICE. CONTRACTOR AGREES TO FURNISH AND DELIVER ALL ITEMS SET FORTH OR OTHERWISE IDENTIFIED ABOVE AND ON ANY ADDITIONAL SHEETS SUBJECT TO THE TERMS AND CONDITIONS SPECIFIED HEREIN.
+30a. SIGNATURE OF OFFEROR/CONTRACTOR
+
+26. TOTAL AWARD AMOUNT (For Govt. Use Only)
+
+ADDENDA
+
+X ARE ARE
+
+ARE NOT ATTACHED. ARE NOT ATTACHED. OFFER
+
+ADDENDA
+
+29. AWARD OF CONTRACT REF.
+
+DATED . YOUR OFFER ON SOLICITATION (BLOCK 5), INCLUDING ANY ADDITIONS OR CHANGES WHICH ARE SET FORTH HEREIN, IS ACCEPTED AS TO ITEMS:
+31a. UNITED STATES OF AMERICA (SIGNATURE OF CONTRACTING OFFICER)
+
+30b. NAME AND TITLE OF SIGNER (Type or print)
+
+30c. DATE SIGNED
+
+31b. NAME OF CONTRACTING OFFICER (Type or print)
+
+31c. DATE SIGNED
+
+Bruce D. Eades
+AUTHORIZED FOR LOCAL REPRODUCTION PREVIOUS EDITION IS NOT USABLE
+STANDARD FORM 1449 (REV. 3/2005) Prescribed by GSA - FAR (48 CFR) 53.212
+
+2 of
+19. ITEM NO. 20. SCHEDULE OF SUPPLIES/SERVICES 21. QUANTITY 22. UNIT 23. UNIT PRICE
+
+8
+24. AMOUNT
+
+periods] period of performance. firm-fixed price.
+
+This ID/IQ is
+
+All task orders issued under
+
+this ID/IQ will be on a firm-fixed price basis. See separately attached combined synopsis/solicitation and Statement of Work (SOW). All products/hardware and material prices shall include a discount % off the Manufactured Sales Retail Price (MSRP). The discounted MSRP price shall be incorporated into the contract terms and conditions and shall not be changed without contracting officer authority. Period of Performance: 08/01/2010 to 07/31/2015 00001 PBX Telephony Equipment Installation Product/Services to include labor categories, fixed price labor, estimated number of labor hours for installations per scenarios provided in the combined synopsis/solicitation, complete list of hardware equipment per scenarios, and complete list of software IAW Statement of Work. Period of Performance: 08/01/2010 to 07/31/2011 00002 Emergency Deployment Support. Period of Performance: 08/01/2010 to 07/31/2011 00003 PBX Telephony Help Desk Support/On-Call Support to include fixed price labor hours. Continued ...
+32a. QUANTITY IN COLUMN 21 HAS BEEN RECEIVED INSPECTED ACCEPTED, AND CONFORMS TO THE CONTRACT, EXCEPT AS NOTED: 32c. DATE 32d. PRINTED NAME AND TITLE OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+1 JB
+
+1 JB
+
+12 MO
+
+32b. SIGNATURE OF AUTHORIZED GOVERNMENT REPRESENTATIVE 32e. MAILING ADDRESS OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32f. TELEPHONE NUMBER OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32g. E-MAIL OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+33. SHIP NUMBER
+
+34. VOUCHER NUMBER
+
+35. AMOUNT VERIFIED CORRECT FOR
+
+36. PAYMENT COMPLETE PARTIAL FINAL
+
+37. CHECK NUMBER
+
+PARTIAL
+
+FINAL 39. S/R VOUCHER NUMBER 40. PAID BY
+
+38. S/R ACCOUNT NUMBER
+
+41a. I CERTIFY THIS ACCOUNT IS CORRECT AND PROPER FOR PAYMENT 41b. SIGNATURE AND TITLE OF CERTIFYING OFFICER 41c. DATE
+
+42a. RECEIVED BY (Print)
+
+42b. RECEIVED AT (Location) 42c. DATE REC'D (YY/MM/DD) 42d. TOTAL CONTAINERS
+STANDARD FORM 1449 (REV. 3/2005) BACK
+
+CONTINUATION SHEET
+NAME OF OFFEROR OR CONTRACTOR
+
+REFERENCE NO. OF DOCUMENT BEING CONTINUED
+
+PAGE
+
+OF
+
+HSCG79-10-R-PT2164
+
+3
+
+8
+
+ITEM NO.
+
+(A)
+
+SUPPLIES/SERVICES
+
+(B)
+
+QUANTITY
+
+(C)
+
+(D)
+
+UNIT
+
+UNIT PRICE
+
+(E)
+
+AMOUNT
+
+(F)
+
+Period of Performance: 08/01/2010 to 07/31/2011 00004 Equipment Services to include fixed price End-User Training and Technical Training prices. Period of Performance: 08/01/2010 to 07/31/2011 Legacy Equipment Maintenance and Support for legacy installed equipment - fixed price. Period of Performance: 08/01/2010 to 07/31/2011 Not to Exceed (NTE) Travel. Travel NTE as identified in the SOW . This is a not to exceed line item. The total shall not be exceeded without prior written Contracting Officer approval. Period of Performance: 08/01/2010 to 07/31/2011 Option Year One PBX Telephony Equipment Installation Product/Services to include labor categories, fixed price labor, estimated number of labor hours for installations, complete list of hardware equipment, and complete list of software IAW Statement of Work. (Option Line Item) 07/31/2011 Period of Performance: 08/01/2012 to 07/31/2013 00008 Option Year One Emergency Deployment Support. (Option Line Item) 07/31/2011 Period of Performance: 08/01/2011 to 07/31/2012 00009 Option Year One PBX Telephony Help Desk Support/On-Call Support to include fixed price labor hours. (Option Line Item) 07/31/2011 Period of Performance: 08/01/2011 to 07/31/2012 00010 Option Year One Continued ... 12 MO 12 MO 1 JB 1 JB 12 MO
+
+00005
+
+12 MO
+
+00006
+
+00007
+
+NSN 7540-01-152-8067
+
+OPTIONAL FORM 336 (4-86) Sponsored by GSA FAR (48 CFR) 53.110
+
+CONTINUATION SHEET
+NAME OF OFFEROR OR CONTRACTOR
+
+REFERENCE NO. OF DOCUMENT BEING CONTINUED
+
+PAGE
+
+OF
+
+HSCG79-10-R-PT2164
+
+4
+
+8
+
+ITEM NO.
+
+(A)
+
+SUPPLIES/SERVICES
+
+(B)
+
+QUANTITY
+
+(C)
+
+(D)
+
+UNIT
+
+UNIT PRICE
+
+(E)
+
+AMOUNT
+
+(F)
+
+PBX Telephony Equipment Services to include fixed price End-User Training and Technical Training prices.
+
+(Option Line Item) 07/31/2011 Period of Performance: 08/01/2011 to 07/31/2012 00011 Option Year One Legacy Equipment Maintenance and Support for legacy installed equipment - fixed price. (Option Line Item) 07/31/2011 Period of Performance: 08/01/2011 to 07/31/2012 00012 Option Year One Not to Exceed (NTE) Travel. Travel NTE as identified in the SOW . This is a not to exceed line item. The total shall not be exceeded without prior written Contracting Officer approval. (Option Line Item) 07/31/2011 Period of Performance: 08/01/2011 to 07/31/2013 00013 Option Year Two PBX Telephony Equipment Installation Product/Services to include labor categories, fixed price labor, estimated number of labor hours for installations, complete list of hardware equipment, and complete list of software IAW Statement of Work. (Option Line Item) 07/31/2012 Period of Performance: 08/01/2012 to 07/31/2013 00014 Option Year Two Emergency Deployment Support (Option Line Item) 07/31/2012 Period of Performance: 08/01/2012 to 07/31/2013 Continued ... 1 JB 1 JB 12 MO
+
+NSN 7540-01-152-8067
+
+OPTIONAL FORM 336 (4-86) Sponsored by GSA FAR (48 CFR) 53.110
+
+CONTINUATION SHEET
+NAME OF OFFEROR OR CONTRACTOR
+
+REFERENCE NO. OF DOCUMENT BEING CONTINUED
+
+PAGE
+
+OF
+
+HSCG79-10-R-PT2164
+
+5
+
+8
+
+ITEM NO.
+
+(A)
+
+SUPPLIES/SERVICES
+
+(B)
+
+QUANTITY
+
+(C)
+
+(D)
+
+UNIT
+
+UNIT PRICE
+
+(E)
+
+AMOUNT
+
+(F)
+
+00015
+
+Option Year Two PBX Telephony Help Desk Support/On-Call Support to include fixed price labor hours. (Option Line Item) 07/31/2012 Period of Performance: 08/01/2012 to 07/31/2013
+
+12 MO
+
+00016
+
+Option Year Two PBX Telephony Equipment Services to include fixed price End-User Training and Technical Training prices. (Option Line Item) 07/31/2012 Period of Performance: 08/01/2012 to 07/31/2013
+
+12 MO
+
+00017
+
+Option Year Two Legacy Equipment Maintenance and Support for legacy installed equipment - fixed price.
+
+12 MO
+
+(Option Line Item) 07/31/2012 Period of Performance: 08/01/2012 to 07/31/2013 00018 Option Year Two Not to Exceed (NTE) Travel. Travel NTE as identified in the SOW . This is a not to exceed line item. The total shall not be exceeded without prior written Contracting Officer approval. (Option Line Item) 07/31/2012 Period of Performance: 08/01/2012 to 07/31/2013 00019 Option Year Three PBX Telephony Equipment Installation Product/Services to include labor categories, fixed price labor, estimated number of labor hours for installations, complete list of Continued ... 1 JB
+
+NSN 7540-01-152-8067
+
+OPTIONAL FORM 336 (4-86) Sponsored by GSA FAR (48 CFR) 53.110
+
+CONTINUATION SHEET
+NAME OF OFFEROR OR CONTRACTOR
+
+REFERENCE NO. OF DOCUMENT BEING CONTINUED
+
+PAGE
+
+OF
+
+HSCG79-10-R-PT2164
+
+6
+
+8
+
+ITEM NO.
+
+(A)
+
+SUPPLIES/SERVICES
+
+(B)
+
+QUANTITY
+
+(C)
+
+(D)
+
+UNIT
+
+UNIT PRICE
+
+(E)
+
+AMOUNT
+
+(F)
+
+hardware equipment, and complete list of software IAW Statement of Work. (Option Line Item) 07/31/2013 Period of Performance: 08/01/2013 to 07/31/2014 00020 Option Year Three Emergency Deployment Support. (Option Line Item) 07/31/2013 Period of Performance: 08/01/2013 to 07/31/2014 00021 Option Year Three PBX Telephony Help Desk Support/On-Call Support to include fixed price labor hours. (Option Line Item) 07/31/2013 Period of Performance: 08/01/2013 to 07/31/2014 00022 Option Year Three PBX Telephony Equipment Services to include fixed price End-User Training and Technical Training prices. (Option Line Item) 07/31/2013 Period of Performance: 08/01/2013 to 07/31/2014 00023 Option Year Three Legacy Equipment Maintenance and Support for legacy installed equipment - fixed price. (Option Line Item) 07/31/2013 Period of Performance: 08/01/2013 to 07/31/2014 00024 Option Year Three Not to Exceed (NTE) Travel. Travel NTE as identified in the SOW . This is a not to exceed Continued ... 12 MO 12 MO 12 MO 1 JB
+
+NSN 7540-01-152-8067
+
+OPTIONAL FORM 336 (4-86) Sponsored by GSA FAR (48 CFR) 53.110
+
+CONTINUATION SHEET
+NAME OF OFFEROR OR CONTRACTOR
+
+REFERENCE NO. OF DOCUMENT BEING CONTINUED
+
+PAGE
+
+OF
+
+HSCG79-10-R-PT2164
+
+7
+
+8
+
+ITEM NO.
+
+(A)
+
+SUPPLIES/SERVICES
+
+(B)
+
+QUANTITY
+
+(C)
+
+(D)
+
+UNIT
+
+UNIT PRICE
+
+(E)
+
+AMOUNT
+
+(F)
+
+line item. The total shall not be exceeded without prior written Contracting Officer approval. (Option Line Item) 07/31/2013 Period of Performance: 08/01/2013 to 07/31/2014 00025 Option Year Four PBX Telephony Equipment Installation Product/Services to include labor categories, fixed price labor, estimated number of labor hours for installations, complete list of hardware equipment, and complete list of software IAW Statement of Work. (Option Line Item) 07/31/2014 Period of Performance: 08/01/2014 to 07/31/2015 00026 Option Year Four Emergency Deployment Support. (Option Line Item) 07/31/2014 Period of Performance: 08/01/2014 to 07/31/2015 00027 Option Year Four PBX Telephony Help Desk Support/On-Call Support to include fixed price labor hours. (Option Line Item) 07/31/2014 Period of Performance: 08/01/2014 to 07/31/2015 00028 Option Year Four PBX Telephony Equipment Services to include fixed price End-User Training and Technical Training prices. (Option Line Item) 07/31/2014 Period of Performance: 08/01/2014 to 07/31/2015 00029 Option Year Four Continued ... 12 MO 12 MO 12 MO 1 JB 1 JB
+
+NSN 7540-01-152-8067
+
+OPTIONAL FORM 336 (4-86) Sponsored by GSA FAR (48 CFR) 53.110
+
+CONTINUATION SHEET
+NAME OF OFFEROR OR CONTRACTOR
+
+REFERENCE NO. OF DOCUMENT BEING CONTINUED
+
+PAGE
+
+OF
+
+HSCG79-10-R-PT2164
+
+8
+
+8
+
+ITEM NO.
+
+(A)
+
+SUPPLIES/SERVICES
+
+(B)
+
+QUANTITY
+
+(C)
+
+(D)
+
+UNIT
+
+UNIT PRICE
+
+(E)
+
+AMOUNT
+
+(F)
+
+Legacy Equipment Maintenance and Support for legacy installed equipment - fixed price. (Option Line Item) 07/31/2014 Period of Performance: 08/01/2014 to 07/31/2015 00030 Option Year Four Not to Exceed (NTE) Travel. Travel NTE as identified in the SOW . This is a not to exceed line item. The total shall not be exceeded without prior written Contracting Officer approval. (Option Line Item) 07/31/2014 Period of Performance: 08/01/2014 to 07/31/2015
+
+NSN 7540-01-152-8067
+
+OPTIONAL FORM 336 (4-86) Sponsored by GSA FAR (48 CFR) 53.110
+
+

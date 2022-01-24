@@ -1,0 +1,3080 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FH92240-15-T-0021.doc%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us"/><script type="text/javascript">url="http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FH92240-15-T-0021.doc%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>
+                                                            PERFORMANCE WORK STATEMENT
+                                               NAVAL SPECIAL WARFARE (NSW) WARRIOR & FAMILY WEBSITE
+                                                           BUILD, HOST, AND MAINTENANCE
+
+1.  INTRODUCTION
+
+      1.1 Naval Special Warfare (NSW) Command, hereafter referred to as the Government, requires a new
+hosted secure .org website for purposes of information exchange between active duty members to include leadership and families of members.
+While content is not classified, due to the nature of the command mission, it is considered sensitive.  Examples of content include:  updates on
+NSW initiatives, information about NSW events and NSW-specific resources, testimonials about use of resources, and dialogues within the
+community on topics such as new spouse support and mentorship, dealing with stress, unmet needs, and attributes of top leadership.  In addition
+to NSW-specific information, the website provides Navy/Department of Defense (DoD) and civilian/local resource information.  Most of the
+information is accessed via links (to other websites) and documents (e.g., PDFs, JPEGs).  In addition to security elements, the website requires
+an automated registration and re-fresh process which validates a registrant’s affiliation with NSW.
+
+           1.1.1 The Contractor shall be responsible for all elements of the new website:  hosting to include
+identifying the location; build maximally utilizing SharePoint 2013 and the background/look and feel and user navigation basics associated with
+NSW’s existing website (www.nswfamily.org); website achievement and sustainment of security elements related to the DoD Risk Management
+Framework process; establishment of two real-time identification and authentication utilizing attributed-based access control with a tie-in to
+the  Defense Enrollment Eligibility Reporting System (DEERS) via the Defense Manpower Data Center (DMDC), and on-going maintenance of the site’s
+functions.
+
+      1.2  The NSW Warrior and Family Website’s primary purpose is to offer a secure, easy to navigate and cost effective means for obtaining and
+exchanging quality NSW and other pertinent information.  Quality vs. quantity is the intent.   As an example, the approximate size of the
+current NSW Family Website is as follows:  Web:  6GB;  File:  16 GB; DB:  11 GB.  While the current website has a handful of videos on it,
+expectation is that there will be more videos streaming from the new website within the SharePoint parameters,  however, most will stream from
+external sites.  Regarding registrant numbers, the new website registrant capacity is projected at a NTE high count of 10,000.  Average daily
+utilization is projected at a VERY high count of 500 registrants.
+
+      1.3  In order to keep costs down in the areas of security, design, and build,  the host location and security
+parameters shall meet, not exceed, those set forth in the DOD Risk Management Framework process;  design and functionalities shall be maximally
+built using SharePoint; and the website user navigation and layout shall replicate, in large part, that of the existing website.
+
+      1.4  Once the website is built and initial content copied over, the Government will have all administrative privileges regarding SharePoint
+and other functionalities and provide registrant, content, and analytics management.  This includes responding to customer queries, monitoring
+customer content, adding new content, changing configurations, and running reports identifying registrant traffic patterns (via Google
+Analytics).
+
+      1.5  Post-build, the Contractor shall provide on-going maintenance regarding the site’s Security status, tie-ins to DEERS via DMDC, and for
+access and functionalities, achieve a 99.5% up time.
+
+2.  SCOPE OF WORK
+
+      2.1  The Government has defined the description and requirements for this effort reducing, substantially,
+the need for analysis.  The Contractor shall adhere to the specifications provided in order to expedite the build and contain costs.
+
+           2.1.1 The Contractor shall provide all host and build requirements specified herein.
+
+           2.1.2 The Contractor shall configure the website in accordance with the Defense Information
+Security Agency (DISA) Web Server Security Requirements Guide (SRG),  SECNAVINST 5720.44 Department of the Navy Public Affairs Policy and
+Regulations, and meet security requirements outlined in DOD 8510.01 DoD Risk Management Framework enabling the Government Authorizing Official
+to issue an authority to operate decision on the system.
+
+           2.1.3 The Contractor shall configure the system to enable real-time identification and
+authentication utilizing attributed-based access control (tie-in) to Defense Enrollment Eligibility Reporting System (DEERS) via the Defense
+Manpower Data Center (DMDC).
+
+
+           2.1.4  The Contractor shall maximally use Microsoft SharePoint 2014 2013 for the website
+build to include video and chat room functionalities.
+
+
+           2.1.5   The Contractor shall establish connectivity between the website and Google Analytics
+(GA) website and configure the GA interface to enable subsequent pull of relevant analytics by Government Website Administrators.
+
+           2.1.6  The Contractor shall establish website accessibility from Government and non-
+Government computers and shall build it in a manner that allows effective viewing on almost any device as well as via current and future browser
+upgrades.
+
+           2.1.7  The Contractor shall configure the website for content display as follows:  Headquarters
+content accessible to all registrants; up to approximately 35 configurable Resource content accessible to all registrants; up to approximately
+40 configurable command or specialty content with restricted access; and up to 20 configurable chat rooms with restricted access.  For the
+restricted content, registrants gain access based on their affiliation with the specific command or chat room topic.  As part of the website
+build, the Contractor shall copy content specified by the Government from the existing NSW Family Website to the new NSW Warrior and Family
+website.
+
+
+           2.1.8  The Contractor shall establish mechanisms for communication from and between website
+users and the website to include the ability for the Government Administrators to send messages outward based on specific subscriber lists,
+e.g., communicating from the Headquarters location will reach all website registrants while communicating from command, specialty, or chat
+rooms, will only reach those who have approved access.
+
+      2.2  The Contractor shall achieve the following objectives.
+
+           2.2.1 Simple & Automated. Through the two tie-ins to the Defense Enrollment Eligibility
+Reporting System (DEERS) via the Defense Manpower Data Center (DMDC), registrants’ affiliation with NSW is validated/re-validated enabling
+automated and immediate access to the appropriate published command content.
+
+           2.2.2  Speed and Ease:  User Accessibility and Interface. Compliant with DoD Section 508 of the
+Rehabilitation Act of 1973 and mobile, registrants easily view and interact with content via mobile devices and are, maximally, able to access
+approved content on the website within 1-2 clicks (e.g., downloads, photos, command and resource content).
+
+
+           2.2.3 Simple Process:  Content Management & Registrant Management. Through establishment of
+templates and processes and via minimal clicks, Government Website Administrators are able to manage content and registrants. This includes the
+Administrators’ ability to provide a workaround for registering on the website where the DMDC tie-in will not work.
+
+
+           2.2.4  Simple Process:  Facilitating Communication.  Through establishment of template and
+processes and via minimal clicks, communication between customers/registrants and Government Website Administrators is achieved.  This includes
+a Contact Us option for customers (internal and external) to e-mail Government Website Administrators; the ability for Government Administrators
+to send messages from the website to subscribers and to set up registration for calendar events.
+
+   2.3  A summary of the Contractor-provided website functionalities are:
+
+           2.3.1  Custom:
+
+
+            • Secure Website:  Configured per DISA Web Server Security Requirements Guide,  and accredited per the DOD Risk Management Framework
+              (RMF) process.
+            • Two real-time identification and authentication tie-ins to the Defense Enrollment Eligibility
+              Reporting System (DEERS) via the Defense Manpower Data Center (DMDC).
+            • Usability:  Website shall offer complete user and administrator functionality from personal and U.S. Government-owned computers
+              and on mobile devices via mobile responsive design (e.g., smart phones and tablets), and be accessible through all modern desktop
+              and mobile web browsers.
+            • Disabled Accessibility: Website shall be compliant with Section 508 Amendment to the
+              Rehabilitation Act of 1973.
+            • Work Around for Government Website Administrators to use with those qualified to access the website but unable to do so via the
+              tie-in to DEERS.
+            • Event Registration.  Ability for Government Website Administrators to set up event registration from within the various content
+              calendars and based on their rights, i.e., multiple calendars may be selected so the registration results are linked.
+            • Automated New Content Notification Alerts.  Ability for Government Website Administrators to select, for a given subsite, options
+              for the subscribers to be automatically notified when new content has been posted.
+
+           2.3.2  Microsoft SharePoint 2013:
+
+
+            • User Management:  Government Website Administrators are able to manage users to include:   assignment of Website Administration
+              Rights to specific users for read/add/edit/delete of website content.
+            • Communication External:  Government Website Administrators are able to communicate with subscribers associated with Command,
+              Specialty, and Chat Room content, e.g., notify the content-specific subscribers, via the subscribers preferred contact settings,
+              that new content has been posted.
+            • Chatrooms.  Government Website Administrators are able to set up private threaded message "chat rooms" to support information
+              exchange, mentoring, and address some of the benefits associated with Facebook.
+            • Content:  Event Calendars with registration and link (to multiple page calendars) capability; Command Contacts; module that allows
+              Government Website Admins to choose what they want to display, e.g., link, upload, photo, videos; ability to manage content on
+              multiple locations simultaneously, e.g., upload the same document to a command and resource page.
+
+   3.  REQUIREMENTS
+
+      3.1. A Post-Award conference will be held within five work days of contract award. The Contractor shall provide a written record of the
+meeting minutes to the Contracting Officer.
+
+      3.2  Within 3 months of contract award, the Contractor shall:
+
+            3.2.1  Develop, host and maintain an HTTPS .org password-protected (secure) website which is configured In accordance with the
+Defense Information Security Agency (DISA) Web Server Security Requirements Guide (SRG) and SECNAVINST 5720.44 Department of the Navy Public
+Affairs Policy and Regulations, and meets the system categorization and applicable security controls outlined in DOD 8510.01, Risk Management
+Framework (RMF) for DoD Information Technology.  The Contractor shall manage all aspects of initial and sustained system compliance.
+
+                 3.2.1.1  The Contractor shall develop documentation sufficient for the NSW Authorizing
+Official to issue the information system an authority to operate decision per the guidelines outlined in the DOD Risk Management Framework.  The
+Government will work with the Contractor’s Information Security Manager to ensure the system is assessed and authorized in accordance with DOD
+8510.01.  The Government Information Security System Manager will recommend favorable authority to operate (ATO) once assurance is obtained that
+the system is secure and meets all required security guidelines.  The Contractor shall work with the Government to provide required
+documentation in support of the annual assessments required in DOD 8510.01.
+
+
+           3.2.2  Establish two Real-Time Broker Service (RBS) Connections to the Defense Enrollment
+Eligibility Reporting System (DEERS) via the Defense Manpower Data Center (DMDC), enabling automated validation and re-validation (initial
+registration and re-fresh approximately every 6 months) of registrant affiliation with NSW.  The Contractor shall configure, based on the
+results of the RBS tie-ins, automated and immediate registrant assignment/reassignment to the appropriate published command content.  DMDC, at
+no cost given the website is a Government requirement,  provides protocols for the RBS connections as well as RBS Web Service Definition
+Language (WSDL) to assist with coding required to send and receive data, and implement the tie ins.  A Website Process Flow Chart sample and
+DMDC Tie In document are contained as Appendix A.
+
+                 3.2.2.1  Initial Registration.  Through the first RBS tie-in, the Contractor shall achieve verification of the new registrant’s
+affiliation with NSW based on the Sponsor’s (military member) NSW Unit Identification Code (UIC).  Where affiliation is confirmed, the
+registrant shall be prompted to establish a user name and password after which they receive immediate and automatic access to the appropriate
+command content based on the approved UIC hierarchy.  The results of all registration attempts shall be displayed within the website.  For the
+UIC hierarchy and access to command content, registrants will automatically gain access to no more than 3 command contents, e.g., Headquarters
+(Echelon II command visible to all registrants), Echelon III command (if applicable), and Echelon IV command (if applicable).  As an example,
+someone validated as affiliated with SEAL TEAM TWO (ST-2), will gain access to all published pages in the ST-2 hierarchy:  ST-2 (Echelon IV),
+NSWG-2 (Echelon III), and Headquarters (Echelon II).
+
+
+                       3.2.2.1.1 The first RBS connection shall be based on the registrant selecting the
+NSW command for which they are affiliated and entering minimum personally identifiable information (PII) required by DMDC for the tie-in, e.g.,
+name, date of birth, last 4 of Social Security Number (SSN).  The Contractor shall display and implement, within the website, the results of the
+connections as follows:  Full Match (registrant gets immediate access to the published command content associated with the applicable UIC
+hierarchy); Partial Match (registrant gets immediate access to the Headquarters content and a message that further access is pending);   No
+Match (registrant is encouraged to use the Contact Us button to clarify their affiliation).  For the Full and Partial matches, the connection
+shall provide the website with the DoD Identification (ID) Numbers, unique DEERS record identifier numbers/non-PII, associated with the
+individuals’ DEERS records.  The website shall not retain registrant DOBs or last 4 of the SSNs.
+
+                       3.2.2.1.2  For registrants with Full or Partial Matches, the Contractor shall provide website prompts to assist with
+establishment of accounts.  The registrant shall be prompted to (1) Identify their status, e.g., Active Duty, Spouse, Reserve, Gold
+Star/Surviving Family Member, or Other,  (2) Establish a unique user name and password that meets required criteria, e.g., 4 digit User Login
+and 6-digit password with at least one upper and one lower case letter and one number, and (4) Provide up to two of their preferred method(s)
+for communications from the website.  Once the registrant has entered these fields, they shall immediately enter the website.  Future engagement
+will require Log-in using the Username and Password.
+
+                 3.2.2.2  Affiliation Re-fresh.  Through the second RBS tie-in, the Contractor shall achieve re-verification of the existing
+registrants’ affiliation with NSW and provide automated and revised access to command content, as applicable, e.g., individual will be
+automatically unsubscribed to command content no longer in their UIC hierarchy and subscribed to the new applicable content.
+
+                       3.2.2.2.1  The second RBS connection will utilize the DoD ID numbers which
+have been retained in the website via the initial RBS tie-in.  Through the second tie-in, they will be sent via DMDC to DEERS on a periodic
+basis, e.g., semi-annually.  The connection will return to the website the results related to the UIC match and the website will automatically
+update, where applicable, the registrant's profile (affiliated command name) and command content access.  For those who no longer show any
+affiliation, the website will identify the applicable records so the Government Website Administrators can delete or take alternative actions.
+The Contractor shall display and implement, within the website, the results of the second RBS connection as follows:   No Change (registrant’s
+current command content access matches the UIC on the sponsor’s DEERS record); Change (registrant is automatically unsubscribed and/or
+subscribed to applicable published command content based on the revised NSW UIC on the sponsor’s DEERS record, and registrants’ profile command
+name is updated);  No Match.
+
+      3.2.3  Establish a registration work-around to be used by Government Website Administrators with
+individuals authorized to enter the website but unable to do so via the automated method.  The Contractor shall provide a link which, when sent
+by Government Website Administrators, enables an individual to reach the account registration steps (establish Username and Password etc.) after
+which the Government Website Administrators receive an automated notification prompting them to go to the website to approve the individual’s
+registration and give manual access to applicable content. The website shall retain documentation of all users registered via the workaround,
+i.e., date registered, name, status, affiliated command (lowest approved command content).
+
+      3.2.4   Establish User Self-Help protocols.
+
+           3.2.4.1  User Profiles.  Registrants shall have access to their account Profile in order to revise their
+preferred communication settings, their status, and password when/if necessary.  Registrants shall have the option of identifying up to two
+preferred methods for communication both of which shall be acceptable for password re-set requests.
+
+            3.2.4.2  Password Re-Sets.  Registrants shall have access to an automated “Forgot your password?” option within the login section of
+the website.  Through this option, they will be prompted to enter an e-mail/text address which is affiliated with their account and, if they do
+so, the password re-set instructions will be automatically sent to the provided address in order for the registrant to re-gain access to the
+website.
+
+           3.2.4.3  Contact Us Option.  A Contact Us option shall be available to registrants/would-be
+registrants to address issues, concerns or suggestions.  When utilized, applicable Government Website Administrators will receive the messages
+in order to respond.  The website shall retain documentation of communications both received and sent via this feature.
+
+      3.2.5  Establish Registrant Management Options.  The Contractor shall implement the following capabilities for use by Government Website
+Administrators.
+
+
+              1. Registrant Log.  From within the website, the Contractor shall provide a registrant log,
+for viewing and export (excel), showing who have tried to register/registered on the website.  The log shall document all user interface with
+the automated website registration process to include the date, name, contact address, and selected command for each separate attempt, e.g., a
+person who tried to register 3 times will show up three times with the related information for each attempt.  The log shall also show the
+outcome for each attempt:  Full Match (includes name of command requested and the fact it was a match); Partial Match (includes name of command
+requested and name of command associated with the tie-in to DEERS), and No Match (includes name of command requested).
+
+                 3.2.5.1.1  From this log, Government Website Administrators shall be able to assign, in one click, those showing Partial
+Matches to the approved lowest level command content in the UIC hierarchy.  The website will subsequently give automated access to any
+additional published content in the hierarchy, e.g., if the Government Website Administrator selects ST-3, the registrant will automatically be
+given access to the published content within the ST-3 hierarchy:  ST-3, NSWG-1, and Headquarters.
+
+            3.2.5.2  User Management and Permissions.  The Contractor shall establish security access control mechanisms to enable Government
+Website Administrators to:   (1) Revise user profile information (affiliated command and preferred contact information),  (2) View the user’s
+initial registrant date and last log-in date, (3) Assign or remove user access to restricted content (Command, Specialty, and Chat Room), and
+(4) Assign Website Administrator permissions.   Government Website Administrator Permission options shall include:  Full Control (includes User
+Management) and Subsite (includes content-specific management and use of related subscriber lists).
+
+                 3.2.5.2.1 Subscriber Lists.  For Command/Specialty/Chat Room content to include the
+Headquarters content (all subscribers), approved Government Website Administrators shall have access to applicable subscriber list(s) which
+include the name, status (e.g., Active Duty or Spouse), and preferred contact information for each registrant able to view the particular
+content. The lists shall be exportable (Excel).
+
+      3.2.6  Establish Website Communication Options (External).  The Contractor shall provide manual and
+automated notification options enabling Government Website Administrators the ability to send messages from the website to approved content-
+specific registrants:  Headquarters  (all registrants);  Command (applicable registrants);  Specialty (applicable registrants); and Chat Rooms
+(applicable registrants).  As an example, utilizing this communication option from the Headquarters location will reach all website registrants
+while communicating from command, specialty, or chat room contents, will only reach those who have approved access to the particular content.
+
+            3.2.6.1  Manual Option.  Government Website Administrators, for applicable content, shall have the option of sending messages to
+subscribers and/or other addressees.  The format for these messages shall include a subject line, body for text, and optional attachment(s).
+Records of messages sent shall be retained within the website and viewable for tracking purposes.
+
+            3.2.6.2  Automated Option.  Applicable to all Command, Specialty, and Chat Room content to include Headquarters content, Government
+Website Administrators shall be able to select which web parts will trigger an automatic message to the respective registrants when new content
+has been posted.  Administrators will also have the option of choosing frequency of the messages (daily, every three days, weekly), and enter a
+configurable closing statement which will accompany each automated message.  Records of messages sent shall be retained within the website and
+viewable for tracking purposes.
+
+                 3.2.6.2.1 The automated option messages received by the registrants will have a subject
+line that alerts to new content tied to the Command/Specialty or Chat Room from which it was sent, e.g., NSW Family Website: New Content Posted
+(Naval Special Warfare Group TWO).  The new content visible on the message will include the name of the applicable web part(s) (e.g., Calendar,
+Videos, Announcements) and under each one, the related URL(s).  The URLs will open to the specific location within the website - after the
+registrant logs-in.
+
+      3.2.7 Establish Calendar and Event Registration Option.  The Calendar display for Command, Specialty, and Chat Rooms shall mirror an actual
+calendar and provide a configurable number of event postings which offer a brief summary for each event (e.g., title, description, date, time,
+location).  The registrant can then scroll to different months, as needed, and click on any of the specific events to view the additional
+detail.
+
+           3.2.7.1  The Contractor shall provide Government Website Administrators the ability to, based on
+their rights,  set up event registration from within the calendar functionality, i.e., based on the Administrator’s rights, multiple calendars
+may be selected so the registration results are linked and visible from all selected calendars.
+
+
+                  3.2.7.1.1 When opting for the event registration option, the Government Website Administrator(s) shall have access to fixed and
+configurable fields to choose from, e.g., Fixed fields: names of registrants, number of attendees, children ages, whether child care is needed;
+Configurable fields: up to ten open text fields enabling event-specific questions such as:  Willing to volunteer?
+
+                 3.2.7.1.2  For the registrants, they have the option to Register for an Event or, once
+registered, Cancel Registration which updates the registration information accordingly.  Registrants are also able to view the current total
+number of registrants (total number and break out for adults/children) from the applicable calendar(s).
+
+                 3.2.7.1.3  Registrant responses to the event registration option are captured, for
+Government Website Administrator viewing, in list format and are exportable (Excel).
+
+      3.2.8  Build the Website Navigation/Layout.  The Contractor shall build the website in a manner that will maximize the Government Website
+Administrators’ ability to utilize much of the existing SharePoint 2013 functionalities to manage the website.  The Contractor shall prepare the
+website in a manner which enables Government Administrators to, using minimal clicks, create or revise/reconfigure command, specialty, chat
+room, and resource content without requiring knowledge of HTML or complex coding,  e.g., add, upload and re-order content;  upload content to
+multiple subsites/webparts simultaneously;  revise the layout format; open links in new windows; stream videos from the website as well as
+external websites; manually send messages to subscribers; show the date items were posted;  set item release dates; access reports; add RSS
+Feeds; manage group permissions; set number of items to be viewed within a web part before user must click Read More;  send out automated alerts
+for action or notification of new content; and reconfigure, add or revise web parts to display different content.  The Contractor shall
+configure the website in a manner which enables registrants, maximally, to access approved content within 1-2 clicks (e.g., downloads, photos,
+videos, chat rooms, command and resource content.)
+
+           3.2.8.1  The Contractor shall configure the website for content display as follows:  Headquarters
+content accessible to all registrants; up to approximately 35 configurable Resource content accessible to all registrants; up to approximately
+40 configurable command or specialty content with restricted access; and up to 20 configurable chat rooms with restricted access.  For the
+restricted content, registrants gain access based on their affiliation with the specific command or chat room topic.  Access is achieved through
+the automated protocols (RBS tie-ins) or manually via Government Website Administrators. See Appendix B for sample website views.
+
+
+                 3.2.8.1.1  Public Facing Content.  The Contractor shall utilize flash photo to provide movement and personalize the site,
+however, minimum content is available, i.e., only a few links and disclaimers.  The purpose for this content is to provide a means to Register,
+Log-in, or utilize the Contact Us option. See Sections 3.2.4.2 and 3.2.4.3, Appendix A Flow Chart Sample, and Appendix B, Figure 1.
+
+                 3.2.8.1.2  Registration Process.  See Section 3.2.2.1, Appendix A Flow Chart Sample, and Appendix B, Figure 2.   Once the
+automated registration process has been completed, the individual gets immediate access to applicable content, i.e., he/she does not have to
+repeat entry of the User Name and Password for the initial registration.
+
+                 3.2.8.1.3  Log-in Landing.  Following initial automated registration and at each required
+log-in thereafter, registrants will land on the Headquarter content.  This is to maximize visibility of items posted for the entire community.
+See Appendix B, Figure 3 for sample content.
+
+                 3.2.8.1.4  Layout.  From the Headquarters as well as all other content/subsites within the
+website, registrants shall view a Menu Bar which provides, in drop down format, the individual’s approved Command/Specialty Content and/or Chat
+Room(s) (restricted content areas).   For the Resources and Featured Links on the Menu Bar (not restricted), all registrants shall have full
+access to the related drop-down content.  See Appendix B, Figure 3 for sample content.
+
+                 3.2.8.1.5  Command Subsite Content.  Command and Specialty content shall be
+formatted to accommodate minimum required content as follows:   (1) Configurable banner for the title, Command Logo, and/or other photo or
+background,  (2) Contact List for relevant points of contact:  title, name, phone number, e-mail address, (3) Calendar for event postings, and
+(4) Two configurable web parts enabling relevant Government Website Administrators to choose the type content to display, e.g.,  Announcement
+with a Link; Announcement with a Download and Link; Announcement with a Photo; Video with a Photo.  For items (2), (3), and (4), the template
+will default to display up to 5 items posted under each web part before displaying a See More option for the particular item.  See Appendix B,
+Figure 4 for sample content.
+
+                 3.2.8.1.6  Chat Rooms.  Chat Room content shall be formatted to accommodate minimum
+required fields as follows:  (1) Configurable banner for the title, Command Logo, and/or other photo or background,  (2) Chat Room dialogue box
+for posts, comments, and uploads such as photos, documents, or videos.  These restricted access Chat Rooms offer approved registrants access to
+topic/issue specific information and mentoring, and they provide some of the benefits associated with Facebook.
+
+                 3.2.8.1.7  Resources.  Topic-specific content shall be formatted to accommodate
+minimum required content as follows:  (1) Configurable banner for the title and photo or other background, (2) Three configurable web parts
+enabling relevant Government Website Administrators to choose type content to display, e.g.,  Announcement with a Link; Announcement with a
+Download and Link; Announcement with a Photo; Video with a Photo.  For the configurable web parts, each will default to display up to 5 items
+posted before displaying a See More option.  See Appendix B, Figure 5 for sample content.
+
+                 3.2.8.1.8  Featured Links. This drop down provides one click access to key resource
+links. See Appendix B, Figure 6 for sample content.
+
+           3.2.8.2  As part of the website build, the Contractor shall copy content specified by the
+Government from the existing NSW Family Website to the new NSW Warrior and Family website.  This will apply across contents described under
+section 3.2.8.1.
+
+      3.2.9   The Contractor shall configure the website and Google Analytics to track and measure all key attributes required by Government
+Website Administrators to monitor all or specific sections of the site, organizations, audiences, or content types. This shall include the
+configuration of security to only provide analytics for the respective Government Website Administrator’s area(s) of responsibility.  Full
+Control Government Website Administrators will have access to all analytics across sites, organizations, audiences, or content.  Subsite
+Government Website Administrators will only be given access to the analytics that fall within their area(s).  The contractor shall configure
+and/or build the necessary Dashboards and Reports in Google Analytics to support the measurement and optimization of the website.  While the
+Contractor will be responsible for maintenance of this configuration and revisions/growth of the configuration to handle future organizations or
+content, the Contractor shall configure and document the entire system in such a way that Government Personnel can take ownership and maintain
+it at any point in time.
+
+      3.2.10  The Contractor shall provide a SharePoint 2013 licensing solution for NTE 70 Government Website Administrators at any one point in
+time.  The solution shall accommodate the fact these Government Administrators will change over time hence the licenses will need to be
+transferrable.  The Government does not intend to provide SharePoint licenses for Contractor staff or Government Website Administrators.
+
+      3.2.11  Website Accessibility.  The Contractor shall maintain a Website availability rate at no less than
+99.5%  excluding scheduled maintenance. Availability includes access to the website and its functions. For maximal accessibility, the Contractor
+shall ensure implementation and maintenance of the following requirements.
+
+            3.2.11.1  The Website shall be compliant with DoD Section 508 of the Rehabilitation Act of 1973 and accessible from government and
+non-government computers, PCs and MACs. See Section 2.3.1 Usability.
+
+            3.2.11.2  The Website shall conform to standard web design and best practices enabling steady and enduring compatibility with the
+broadest number of browsers - present and future iterations, e.g., IE, Safari, Chrome, Firefox.
+
+
+       3.2.12  The Contractor shall patch IAW with the IAVM process and maintain up-to-date system (e.g., SharePoint and underlying server OS)
+patching. The Contractor shall document system information, including updates, operating procedures, code updates and patches.
+
+      3.2.13  The Contractor shall ensure Contractor personnel with access to the system comply with DoD 8570.01-M certification requirements
+for the Cybersecurity Workforce.
+
+      3.2.14  Rights to Data and Content.  All content and products adapted and developed and personal information gathered as a result of this
+contract shall be owned by the Government.  This includes the Government’s ability to move the entire website to a new location, supported
+solely by the Government or a different vendor, if deemed necessary.
+
+           3.2.14.1  All data visible and collected via this web site, Personally Identifiable Information (PII) and other information, shall
+belong to the Government and not be used by the Contractor for any other purpose without written prior approval from the Contracting Officer
+Representative (COR).  Regarding the automated registration process and initial tie-in to DEERS, no PII information shall be retained other than
+the individual’s name and preferred contact information.
+
+      3.2.15  The Contractor shall establish a Quality Control Program of monitoring and testing that ensures that all personnel assigned to
+this contract are consistently proficient in their assigned tasks, and that deliverables are met and in keeping with industry standards of
+quality, ease-of-use, and security.
+
+      3.2.16  Meetings.  The Contractor shall convene periodic meetings with the Government to address system design, technical reviews, audits
+and other related project discussions.  Meetings, in person or via webinar, shall convene bi-weekly during the build process and thereafter
+monthly or upon request by the Contractor or COR.
+
+      3.2.17  Project Plan of Action and Milestones (POA&M) and Issue Report.  The Contractor shall provide a Project POA&M and Issue Report
+with the first report due two working days after the Post Award Conference. Subsequent reports will be due every two weeks until live deployment
+of the website.  The reports shall include a POA&M for tracking of deliverables, issues raised from inception to completion, minutes for all
+meetings to include the Post Award Conference, and other pertinent plans and actions.  (CDRL 0001)
+
+            3.2.18  Website Testing.  After completion of website development tasks and no later than 3 months after contract award, the
+Contractor shall begin web performance and load testing to confirm that performance and stress abilities meet all requirements listed in
+paragraph 3.2 for functionality and performance. Testing will be accomplished using Visual Studio or a similar application and will be
+configured to emulate conditions such as user loads, browser types, and network types.  No later than four months after contract award, the
+Contractor shall provide a Website Performance and Functionality Report indicating acceptable pass rates in all requirements areas.  This report
+will be provided to the Government for acceptance prior to live deployment. (CDRL 0002)
+
+            3.2.18.1  Post-deployment of the website, the Contractor shall continue to measure the website’s accessibility rate across the
+performance period.  This cumulative data shall be gathered over the course of each contract year.
+
+      3.2.19  Website Status and Tracking Report. Following live deployment, the Contractor shall provide monthly Website Status and Tracking
+Reports addressing the results of accessibility covering system, functionalities, devices and browsers, patching and other updates, tracking of
+new and standing issues to completion, minutes for all meetings, and other pertinent plans and actions.  (CDRL 0003)
+
+      3.2.20  Contractor Manpower Reporting.   The contractor shall report ALL contractor labor hours (including subcontractor labor hours)
+required for performance of services provided under this contract for the Naval Special Warfare Command via a secure data collection site. The
+contractor is required to completely fill in all required data fields using the following web address: http://www.ecmra.mil/.  Reporting inputs
+will be for the labor executed during the period of performance during each Government fiscal year (FY), which runs October 1 through September
+30. While inputs may be reported any time during the FY, all data shall be reported no later than October 31 of each calendar year, beginning
+with the year of award. Contractors may direct questions to the help desk at: http://www.ecmra.mil  . (CDRL 0004)
+
+
+4.  DELIVERABLES
+
+|  Deliverable                                |CDRL          |PWS Ref.           |Delivery  Date                                   |
+|Project POA&M and Issue Report               |0001          |3.2.17             |First report due two working days after Post     |
+|                                             |              |                   |Award Conference. Subsequent reports due every   |
+|                                             |              |                   |two weeks until live deployment of the website.  |
+|Website Performance and Functionality Report |0002          |3.2.18             |Within four months of contract award.            |
+|Website Status and Tracking Report           |0003          |3.2.19             |The first day of each month after website        |
+|                                             |              |                   |deployment.                                      |
+|Contractor Manpower Reporting                |0004          |3.2.20             |NLT 31 October each year and at contract         |
+|                                             |              |                   |completion.                                      |
+
+
+5.  Government-Furnished Property
+
+Government furnished property under this contract is limited to providing access to the documents, links, videos and other information for
+initial copying/posting on the new web site; and providing  a list of NSW UICs and their related command hierarchy in support of the
+registration process involving the DMDC tie-in to DEERS.
+
+6.  Security
+
+Covered under previous sections.
+
+7.  Place of Performance
+
+The primary work will be accomplished at the Contractor’s facility.
+
+8.  APPLICABLE PUBLICATIONS AND DIRECTIVES
+
+      8.1  DoD Instruction 8510.01 Risk Management Framework (RMF) for DoD Information Technology (IT) dtd March 12, 2014
+
+      8.2  DISA Web Server Security Requirements Guide, Version 1, Release 1 dtd December 16, 2013
+
+      8.3 SECNAVINST 5720.44 DoN Public Affairs Policy and Regulation w/ch1 dtd October 14, 2014
+
+      8.4  DoD Manual 8400.01-M Procedures for Ensuring the Accessibility of Electronic and Information Technology (E&IT) Procured by DoD
+Organizations dtd June 3, 2011
+
+      8.5  DoD Manual 8470.01-M Information Assurance Workforce Improvement Program w/ch3 dtd January 24, 2012
+
+9.0  APPENDICES
+
+      9.1  Appendix A: Website Process Flow Chart Sample and DMDC Tie-In Documents
+
+      9.2  Appendix B: Sample Website Views
+
+
+
+
+
+
+                                     APPENDIX A:  Website Process Flow Chart Sample and DMDC Tie-In Documents
+
+                          Access: No restriction/all
+
+
+
+
+
+
+                                                        APPENDIX B:  Sample Website Views
+
+Figure 1.  Sample Website Public Facing Content
+
+[pic]
+
+Figure 2.  Sample Website Registration Screens
+
+[pic]
+[pic]
+
+Sample (when click on map: CA)
+[pic]
+
+Sample  of list when click on Show All Commands:
+[pic]
+
+
+
+
+
+
+
+
+
+
+Once a command is selected:
+
+[pic]
+
+Figure 3: Sample Headquarters Content (to include Menu bar)
+
+[pic]
+
+[pic]
+
+Figure 4:  Sample Website Command Content
+
+
+[pic]
+
+[pic]
+[pic]
+[pic]
+
+
+
+
+Figure 5. Sample Website Resource Content
+
+[pic]
+[pic]
+
+[pic]
+[pic]
+[pic]
+Figure 6.  Sample of Featured Links Content
+
+    • Featured Links
+         o Afterdeployment.org
+         o American Red Cross
+         o Armed Services YMCA
+         o Commander, Navy Installations Command
+         o Defense Centers of Excellence
+         o DefenseLink
+         o FOCUS
+         o Human Performance
+         o Military Homefront
+         o Military OneSource
+         o Navy SEAL Foundation
+         o TriCare
+         o USO
+         o USSOCOM Care Coalition
+
+
+-----------------------
+Website Public Facing View: https: .org
+Minimal content (links to Privacy Act, USSOCOM website (see www.nswfamily.org).  Options: Register, Login, Contact Us
+
+
+
+--Also available from inside the website, msgs are sent to NSW Website Admins who have highest level rights.
+--NSW Website Admins, once verify affiliation, are able to send website workaround for those unable to enter via the official Register option.
+
+
+
+Access:  Restricted to UIC Match (via DEERS tie-in results, individual automatically accesses all published content within the UIC hierarchy)
+and those provided manual access by NSW Website Admins.  User only views Command content for which they have been approved, e.g., if none, only
+option on the related drop-down will be:  Naval Special Warfare Command/Headquarters.
+
+
+
+Website Headqtrs Content
+--Includes configurable content:  announcements, videos, links etc.
+--Includes Menu Bar (see below) viewable from all content inside the website:
+
+Command Pages               Resources               Chat Rooms               Featured Links
+
+
+
+
+
+
+
+Access:  Restricted to UIC Match, Partial Match, or via the website workaround
+
+
+
+ Establish
+User Name & Password
+
+
+
+--Individual receives message he/she does not appear affiliated with NSW. If in error, use the Contact Us option.
+
+
+
+   No
+Match
+
+
+
+   UIC
+PartialMatch
+
+
+
+   UIC
+Match
+
+
+
+--Individual is prompted to enter minimum info required for tie-in to DEERS, e.g., Command, DOB, last 4 of SSN.
+--Log-in results in access to content approved via registration process and/or manually by NSW Website Admins.
+
+
+
+Contact
+    Us
+
+
+
+Log-In
+
+
+
+   Register
+
+
+
+Access:  Restricted to those provided manual access by NSW Website Admins.  User only views Chat Room options to which they have access.
+
+
+
+Access: All who have access to the Headqtrs Content.  Both drop-downs are configurable.
+
+Configurable Drop Downs Viewable by
+
+
+
+RBS Connection (#1) to DEERS via DMDC
+--Looks for NSW UIC on Sponsor’s DEERS
+record
+
+
+
+--Prompts for user to enter User Name & Password
+--Includes “Forgot Password” option
+--Log-in results in access to content approved via registration process and/or manually by NSW Website Admins.
+
+
+
+ RBS
+Tie-in
+
+
+
+
+
+
+
+Chat Rooms
+
+
+
+Resources
+
+
+
+Command Pages
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                    Attachment II
+| PAST PERFORMANCE INFORMATION FORM                                                                                   |Form ___ of ___                  |
+|Name of Offeror:                   |                                                                                                                  |
+|Contract Number, order number, or identifier: |                                                                                                        |
+|Customer Name & Location:                     |                                                                                                        |
+|Customer Point of Contact (Name & Title):                               |                                                                              |
+|Telephone Number and e-mail address (PLEASE VERIFY):                    |                                                                              |
+|Total dollar value for this effort broken into annual increments:       |(Show either fiscal year or calendar year and dollars):                       |
+|(For ordering vehicles, show both the annual estimated contract amount  |                                                                              |
+|and the amount of orders actually performed)                            |                                                                              |
+|Number of personnel (FTE) performing per year |                        |Period of Performance:                  |From:                                |
+|(avg.):                                       |                        |                                        |To:                                  |
+|Detailed description of the work performed sufficient to demonstrate the relevance of the reference to the scope of the solicitation:                  |
+|                                                                                                                                                       |
+|                                                                                                                                                       |
+|                                                                                                                                                       |
+|                                                                                                                                                       |
+|                                                                                                                                                       |
+|                                                                                                                                                       |
+|                                                                                                                                                       |
+|                                                                                                                                                       |
+|                                                                                                                                                       |
+|                                                                                                                                                       |
+|Subcontractor(s) Utilized in Performance of this contract, description of the extent of work performed by subcontractor(s), along with annual dollar   |
+|value of all subcontracts:                                                                                                                             |
+|                                                                                                                                                       |
+|                                                                                                                                                       |
+|                                                                                                                                                       |
+|                                                                                                                                                       |
+|                                                                                                                                                       |
+|                                                                                                                                                       |
+
+
+
+                                                                                                                                   Attachment III
+
+PAST PERFORMANCE REPORT FORM
+
+
+TO BE COMPLETED BY THE RESPONDENT AND RETURNED TO NAVAL SPECIAL WARFARE COMMAND
+
+
+(PLEASE DO NOT RETURN TO THE CONTRACTOR WHO ORIGINATED THIS REQUEST)
+
+
+A. The completion of this questionnaire is requested from ______________________ in order for the Naval Special Warfare Command to evaluate the
+aforementioned contractor’s past performance on previous contracts as it relates to the probability of successful accomplishment of the work
+required by the Government relative to the award of the contract resulting from the solicitation.
+
+Please provide concise comments regarding your overall assessment of the contractor’s performance on the contract identified below.  Please
+respond to each question in a narrative format.  Please mail, fax, or e-mail your completed questionnaire directly to the address below:
+
+
+Naval Special Warfare Command
+Contracting Department,
+Attn: Matthew Morelewski
+3632 Guadalcanal Rd. Bldg 401
+San Diego, CA  92155-5599
+Phone: (619) 537-1360
+Email:  matthew.morelewski@navsoc.socom.mil
+
+
+Company's Name _________________________________
+POC/Title/Position: ________________________________
+Email Address: ___________________________________
+Contract/Purchase Order No._______________________
+
+Contract Amount: _________________________________
+
+Contract Type: ___________________________________
+Period of Performance: ____________________________
+Business Address____________________________________________________
+             ____________________________________________________
+             ____________________________________________________
+Phone Number    __________________
+
+1. Quality:
+
+(i) Describe satisfaction with the Offeror
+
+_________________________________________________________________________________________________________________________________________________
+_______________________________________________________________________
+
+(ii) Describe instances of rework and/or deficiency reports
+
+_________________________________________________________________________________________________________________________________________________
+___________________________
+
+
+
+(iii) Describe effective and/or innovative work applications that were beneficial to you
+_________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________
+
+2. Timeliness:
+
+(i) Describe offorors demonstrated ability to comply with: delivery and/or performance schedules.  What were the causes of any delay?
+_________________________________________________________________________________________________________________________________________________
+_______________________________________________________________________
+
+(ii) Describe timeliness of submission of requested information, reports, and invoicing
+_________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________
+
+3. Responsiveness:
+
+(i) Describe Offeror’s demonstrated ability to respond to your concerns.
+
+_________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________
+
+(ii) Describe Offeror’s efforts to isolate and resolve problems and take systemic improvement action.
+
+_________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________
+
+
+D.  Identify the contractor's overall strengths and weaknesses.
+_________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________
+______________________________________________________
+
+
+E.  Given the choice, would you award to this contractor again?
+
+_________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________
+______________________________________________________
+
+
+
+F.  Are you aware of any other contracted efforts performed by this contractor similar in nature to this contract?  Please identify
+contract/program and point of contact.
+
+_________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________
+______________________________________________________
+
+G.  Is there anyone else we should send this questionnaire to?  Please identify by name, organization, and phone number.
+
+
+CONTRACT DATA REQUIREMENTS LIST
+
+Form Approved OMB No. 0704-0188
+
+The public reporting burden for this collection of information is estimated to average 440 hours per response, including the time for reviewing instructions, searching existing data sources, gathering and maintaining the data needed, and completing and reviewing the collection of information. Send comments regarding this burden estimate or any other aspect of this collection of information, including suggestions for reducing the burden, to the Department of Defense, Executive Services Directorate (0704-0188). Respondents should be aware that notwithstanding any other provision of law, no person shall be subject to any penalty for failing to comply with a collection of information if it does not display a currently valid OMB control number. Please do not return your form to the above organization. Send completed form to the Government Issuing Contracting Officer for the Contract/PR No. listed in Block E.
+
+A. CONTRACT LINE ITEM NO. D. SYSTEM/ITEM
+1. DATA ITEM NO. 2. TITLE OF DATA ITEM
+
+B. EXHIBIT
+
+C. CATEGORY:
+TDP ________ TM _______ OTHER _________________________
+
+E. CONTRACT/PR NO.
+
+F. CONTRACTOR
+3. SUBTITLE 17. PRICE GROUP
+
+H92240-15-XXXX
+0001 Project POA&M and Issue Report
+5. CONTRACT REFERENCE 6. REQUIRING OFFICE
+
+NSP
+
+4. AUTHORITY (Data Acquisition Document No.)
+
+PWS 3.2.17
+7. DD 250 REQ 9. DIST STATEMENT REQUIRED 10. FREQUENCY 12. DATE OF FIRST SUBMISSION 14.
+
+WARCOM Contracting
+DISTRIBUTION b. COPIES a. ADDRESSEE Draft Reg Final Repro
+
+18. ESTIMATED TOTAL PRICE
+
+0.00
+
+See Blk 16
+11. AS OF DATE
+
+See Blk 16
+13. DATE OF SUBSEQUENT SUBMISSION
+
+8. APP CODE
+
+Award Date
+16. REMARKS
+
+See Blk 16
+
+Contracting Officer COR
+15. TOTAL
+
+Initial report due 2 working days after Post Award Conference. Subsequent reports due every two weeks until website deployment.
+1. DATA ITEM NO. 2. TITLE OF DATA ITEM 3. SUBTITLE
+
+1 1
+
+0
+
+2
+
+0
+17. PRICE GROUP
+
+0002
+
+Website Performance and Functionality Report
+5. CONTRACT REFERENCE 6. REQUIRING OFFICE
+
+NSP
+WARCOM Contracting
+14. DISTRIBUTION b. COPIES a. ADDRESSEE Draft Reg Final Repro 18. ESTIMATED TOTAL PRICE
+
+4. AUTHORITY (Data Acquisition Document No.)
+
+PWS 3.2.18
+7. DD 250 REQ 9. DIST STATEMENT REQUIRED 10. FREQUENCY 12. DATE OF FIRST SUBMISSION
+
+0.00
+
+See Blk 16
+11. AS OF DATE
+
+See Blk 16
+13. DATE OF SUBSEQUENT SUBMISSION
+
+8. APP CODE
+
+Award Date
+16. REMARKS
+
+N/A
+
+Contracting Officer
+COR
+15. TOTAL
+
+Due after completion of website development and successful testing but NLT 4 months after contract award.
+1. DATA ITEM NO. 2. TITLE OF DATA ITEM
+
+1 1
+
+0
+
+2
+
+0
+17. PRICE GROUP
+
+3. SUBTITLE
+
+0003
+
+Website Status and Tracking Report
+5. CONTRACT REFERENCE 6. REQUIRING OFFICE
+
+NSP
+
+4. AUTHORITY (Data Acquisition Document No.)
+
+PWS 3.2.19
+7. DD 250 REQ 9. DIST STATEMENT REQUIRED 10. FREQUENCY 12. DATE OF FIRST SUBMISSION 14.
+
+WARCOM Contracting
+DISTRIBUTION b. COPIES a. ADDRESSEE Draft Reg Final Repro
+
+18. ESTIMATED TOTAL PRICE
+
+0.00
+
+Monthly
+11. AS OF DATE
+
+See Blk 16
+13. DATE OF SUBSEQUENT SUBMISSION
+
+8. APP CODE
+
+Award Date
+16. REMARKS
+
+Monthly
+
+Contracting Officer
+
+Due the first day of each month after website deployment.
+
+COR
+15. TOTAL
+
+1 1
+
+0
+
+2
+
+0
+17. PRICE GROUP
+
+1. DATA ITEM NO.
+
+2. TITLE OF DATA ITEM
+
+3. SUBTITLE
+
+0004
+
+Contractor Manpower Reporting
+5. CONTRACT REFERENCE 6. REQUIRING OFFICE
+
+NSP
+PWS 3.2.20 WARCOM Contracting
+14. DISTRIBUTION b. COPIES a. ADDRESSEE Draft Reg Final Repro 18. ESTIMATED TOTAL PRICE
+
+4. AUTHORITY (Data Acquisition Document No.)
+
+7. DD 250 REQ
+
+9. DIST STATEMENT REQUIRED
+
+10. FREQUENCY
+
+12. DATE OF FIRST SUBMISSION
+
+0.00
+
+Annual
+11. AS OF DATE
+
+NLT 31 Oct
+13. DATE OF SUBSEQUENT SUBMISSION
+
+8. APP CODE
+
+Award Date
+16. REMARKS
+
+Annually
+
+Contracting Officer
+
+Report all contractor labor hours (including subcontractor labor) executed during the period COR of performance during each Government fiscal year (FY). All data shall be reported no later than October 31 of each calendar year and at contract completion. 15. TOTAL
+G. PREPARED BY H. DATE I. APPROVED BY
+
+1 1
+0
+J. DATE
+
+2
+
+0
+
+DD FORM 1423, AUG 96
+
+PREVIOUS EDITION MAY BE USED.
+
+Reset
+
+Page ____ of ____ Pages
+Adobe Professional 8.0
+
+INSTRUCTIONS FOR COMPLETING DD FORM 1423
+(See DoD 5010.12-M for detailed instructions.)
+
+FOR GOVERNMENT PERSONNEL Item A. Self-explanatory. Item B. Self-explanatory. Item C. Mark (X) appropriate category: TDP - Technical Data Package; TM - Technical Manual; Other - other category of data, such as "Provisioning,""Configuration Management," etc. Item D. Enter name of system/item being acquired that data will support. Item E. Self-explanatory (to be filled in after contract award). Item F. Self-explanatory (to be filled in after contract award). Item G. Signature of preparer of CDRL. Item H. Date CDRL was prepared. Item I. Signature of CDRL approval authority.
+
+FOR THE CONTRACTOR Item 17. Specify appropriate price group from one of the following groups of effort in developing estimated prices for each data item listed on the DD Form 1423. a. Group I. Definition - Data which is not otherwise essential to the contractor's performance of the primary contracted effort (production, development, testing, and administration) but which is required by DD Form 1423. Estimated Price - Costs to be included under Group I are those applicable to preparing and assembling the data item in conformance with Government requirements, and the administration and other expenses related to reproducing and delivering such data items to the Government. b. Group II. Definition - Data which is essential to the performance of the primary contracted effort but the contractor is required to perform additional work to conform to Government requirements with regard to depth of content, format, frequency of submittal, preparation, control, or quality of the data item. Estimated Price - Costs to be included under Group II are those incurred over and above the cost of the essential data item without conforming to Government requirements, and the administrative and other expenses related to reproducing and delivering such data item to the Government. c. Group III. Definition - Data which the contractor must develop for his internal use in performance of the primary contracted effort and does not require any substantial change to conform to Government requirements with regard to depth of content, format, frequency of submittal, preparation, control, and quality of the data item. Estimated Price - Costs to be included under Group III are the administrative and other expenses related to reproducing and delivering such data item to the Government. d. Group IV. Definition - Data which is developed by the contractor as part of his normal operating procedures and his effort in supplying these data to the Government is minimal. Estimated Price - Group IV items should normally be shown on the DD Form 1423 at no cost.
+
+Item J. Date CDRL was approved. Item 1. See DoD FAR Supplement Subpart 4.71 for proper numbering. Item 2. Enter title as it appears on data acquisition document cited in Item 4. Item 3. Enter subtitle of data item for further definition of data item (optional entry). Item 4. Enter Data Item Description (DID) number, military specification number, or military standard number listed in DoD 5010.12-L (AMSDL), or one-time DID number, that defines data content and format requirements. Item 5. Enter reference to tasking in contract that generates requirement for the data item (e.g., Statement of Work paragraph number). Item 6. Enter technical office responsible for ensuring adequacy of the data item. Item 7. Specify requirement for inspection/acceptance of the data item by the Government. Item 8. Specify requirement for approval of a draft before preparation of the final data item. Item 9. For technical data, specify requirement for contractor to mark the appropriate distribution statement on the data (ref. DoDD 5230.24). Item 10. Specify number of times data items are to be delivered. Item 11. Specify as-of date of data item, when applicable. Item 12. Specify when first submittal is required. Item 13. Specify when subsequent submittals are required, when applicable. Item 14. Enter addressees and number of draft/final copies to be delivered to each addressee. Explain reproducible copies in Item 16. Item 15. Enter total number of draft/final copies to be delivered. Item 16. Use for additional/clarifying information for Items 1 through 15. Examples are: Tailoring of documents cited in Item 4; Clarification of submittal dates in Items 12 and 13; Explanation of reproducible copies in Item 14.; Desired medium for delivery of the data item.
+
+Item 18. For each data item, enter an amount equal to that portion of the total price which is estimated to be attributable to the production or development for the Government of that item of data. These estimated data prices shall be developed only from those costs which will be incurred as a direct result of the requirement to supply the data, over and above those costs which would otherwise be incurred in performance of the contract if no data were required. The estimated data prices shall not include any amount for rights in data. The Government's right to use the data shall be governed by the pertinent provisions of the contract.
+
+DD FORM 1423 (BACK), AUG 96
+
+
+
+                                                    QUALITY ASSURANCE SURVEILLANCE PLAN (QASP)
+                                               NSW Warrior and Family Website Build and Maintenance
+
+
+1.0   PURPOSE
+
+This Quality Assurance Surveillance Plan (QASP) is a Government developed and  applied  document  used  to  make  sure  that  systematic  quality
+assurance methods are used in the administration of the Performance Based Service Contract (PBSC) standards included  in  the  task  order.   The
+intent is to ensure that the Contractor performs in accordance with performance standards  set  forth  in  the  documents,  that  the  Government
+receives the quality of services called for in the task order and that the Government only pays for the acceptable level of services received.
+
+2.0   AUTHORITY
+
+Authority for issuance of this QASP is provided under FAR 52-212-4(a), Inspection/Acceptance, which provides for inspections  and  acceptance  of
+the articles, services, and documentation called for in the contract to be accomplished by the  Contracting  Officer  or  their  duly  authorized
+representative.
+
+3.0   SCOPE
+
+The Contractor, and not the Government, is responsible for management and quality control actions necessary to achieve the requirements set
+forth by the contract.
+
+The QASP is put in place to provide the Government’s surveillance approach for monitoring and managing the contractor’s performance to ensure
+the expected PWS outcomes and performance objectives are achieved.
+
+The QASP is not a part of the task order nor is it intended to duplicate the Contractor’s  Management  Plan.   The  Government  may  provide  the
+Contractor an information copy of the QASP as an Attachment to the solicitation to support the Contractor’s efforts in developing  its  own  plan
+for achieving the quality, timeliness, responsiveness, up-time, security status and other performance requirements in the PWS.
+
+4.0   RESPONSIBILITIES
+
+The Government resources shall have responsibilities for the implementation of this QASP as follows:
+
+    • Contracting Officer – The Contracting Officer ensures performance of all necessary actions for effective  contracting,  ensures  compliance
+      with the terms of the task order and safeguards the interests of the United States in the contractual relationship.  It is the  Contracting
+      Officer that assures the Contractor receives impartial, fair and equitable treatment under the task  order.   The  Contracting  Officer  is
+      ultimately responsible for the final determination of the adequacy of the Contractor’s performance.
+
+    • Contracting Officer’s Representative (COR) – An individual designated in writing by the Contracting Officer to act  as  his/her  authorized
+      representative to assist in administering the task order.  The  source  and  authority  for  the  COR  is  the  Contracting  Officer.   COR
+      limitations are contained in the written letter of appointment.
+
+    • Technical Assistant (TA) – A TA, when assigned, is an individual designated in writing by the COR to act as their authorized representative
+      to assist in administering a contract.  TA limitations are contained in the written letter of appointment.  While the TA  may  serve  as  a
+      direct conduit between the Contractor and the COR, he or she is not empowered to  provide  technical  direction  or  clarification  to  the
+      Contractor.
+
+
+5.0   METHODS OF QA SURVEILLANCE
+
+The below listed methods of surveillance shall be used in the administration of this QASP.
+
+    • Observation by the COR – The COR will have very frequent, almost daily, interface with the website resulting in on-going monitoring of  its
+      status and functions.
+
+    • Scheduled Audits and Validations. Applicable NSW Cybersecurity personnel will perform these audits and checks regarding compliance with the
+      DOD Risk Management Framework and other related security requirements within the PWS.
+
+    • Customer Feedback.  Customer feedback from website registrants and NSW Website Administrators will be documented and collected by the  COR.
+
+
+
+
+6.0    MONITORING DOCUMENTATION
+
+The government’s QA surveillance, accomplished by the COR and applicable NSW Cybersecurity personnel will be documented as follows:
+
+
+    • For COR random monitoring and customer feedback collection, issues raised shall be documented via e-mail to the Contractor.
+
+    • For DoD Risk Management Framework requirements achievement and sustainment of Authority to Operate (ATO) shall be documented in  accordance
+      with the DoD Risk Management Framework process and provided to the Contractor and COR.
+
+    • The COR will retain a copy of all correspondence pertaining to performance issues and official DoD Risk Management Framework  findings  and
+      documentation.
+
+
+
+
+
+
+7.0   PERFORMANCE COMMUNICATION
+
+
+     The Government will use the monitoring methods cited to identify any performance concerns.  The COR may require meetings with the Contractor
+     to discuss issues and concerns and will document those concerns, via e-mail, to the Contractor.   Where  applicable  and  per  the  contract
+     CDRLs, the Contractor will include the concerns in the applicable CDRL report for tracking to resolution.  If the  contractor  has  not  met
+     minimum requirements, they may be asked to develop a corrective action plan to show how and by what date they intend to bring performance up
+     to the required levels.
+
+
+
+                                                                  Attachment VI
+                                                Quality Assurance Surveillance Plan (QASP) MATRIX
+
+|Deliverable or Service|Measurement/ Metric   |Performance Standards                     |Method of Surveillance      |Frequency               |Maximum Error Rate  |Procedures to be taken when performance standards are   |
+|Requirement           |                      |                                          |                            |                        |                    |not met                                                 |
+|System Functionalities|                      |User and Website Administrators are able  |COR Observation             |On-going                |5%                  |Same as above.                                          |
+|                      |                      |to access the website functionalities for |                            |                        |                    |                                                        |
+|                      |Availability;         |which they have rights. Functionalities   |Customer Feedback           |                        |                    |                                                        |
+|                      |Working as intended   |perform as intended, re: PWS.             |                            |                        |                    |                                                        |
+|Confidentiality:      |                      |                                          |COR Observation             |On-going                |0%                  |Same as above.                                          |
+|Non-disclosure        |                      |                                          |                            |                        |                    |                                                        |
+|                      |                      |Compliance with DoD standards. No improper|Customer Feedback           |                        |                    |                                                        |
+|                      |Accuracy              |dissemination of  information  or PII.    |                            |                        |                    |                                                        |
+|CDRLâs                |                      |                                          |COR Observation             |Bi-Monthly/Monthly based|5%                  |Same as above.                                          |
+|                      |                      |                                          |                            |on due dates            |                    |                                                        |
+|                      |                      |                                          |                            |                        |                    |                                                        |
+|                      |Timeliness;           |Delivered on time and as required re:     |                            |                        |                    |                                                        |
+|                      |Accuracy              |PWS..                                     |                            |                        |                    |                                                        |
+|                      |                      |                                          |                            |                        |                    |                                                        |
+
+
+
+
+
+
+
+
+
+Section SF 1449 - CONTINUATION SHEET
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0001           |                               |1                    |Lot             |                               |                                       |
+|               |NSW Family Website Design Build                                                                       |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |Vendor shall provide a secure and fully operational NSW Family Website in accordance with the         |                                       |
+|               |Attachment I - Performance Work Statement.                                                            |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|               |PURCHASE REQUEST NUMBER: N0007415RCFF001                                                              |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0002           |                               |9                    |Months          |                               |                                       |
+|               |Maintenance and Support Services                                                                      |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |Vendor shall provide on-going system maintenance, upgrades and support services for the NSW Family    |                                       |
+|               |Website in accordance with the Attachment I - Performance Work Statement.                             |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0003           |                               |1                    |Lot             |                               |                                       |
+|               |CDRL's 0001 - 0004                                                                                    |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |Data shall be Not Seperately Priced (NSP).  In accordance with the Attachment I - Performance Work    |                                       |
+|               |Statement.                                                                                            |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|1001           |                               |12                   |Months          |                               |                                       |
+|OPTION         |Maintenance and Support Services                                                                      |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |Vendor shall provide on-going system maintenance, upgrades and support services for the NSW Family    |                                       |
+|               |Website in accordance with the Attachment I - Performance Work Statement.                             |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|1002           |                               |1                    |Lot             |                               |                                       |
+|OPTION         |CDRL's 0001 - 0004                                                                                    |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |Data shall be Not Seperately Priced (NSP).  In accordance with the Attachment I - Performance Work    |                                       |
+|               |Statement.                                                                                            |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|2001           |                               |12                   |Months          |                               |                                       |
+|OPTION         |Maintenance and Support Services                                                                      |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |Vendor shall provide on-going system maintenance, upgrades and support services for the NSW Family    |                                       |
+|               |Website in accordance with the Attachment I - Performance Work Statement.                             |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|2002           |                               |1                    |Lot             |                               |                                       |
+|OPTION         |CDRL's 0001 - 0004                                                                                    |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |Data shall be Not Seperately Priced (NSP).  In accordance with the Attachment I - Performance Work    |                                       |
+|               |Statement.                                                                                            |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|3001           |                               |12                   |Months          |                               |                                       |
+|OPTION         |Maintenance and Support Services                                                                      |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |Vendor shall provide on-going system maintenance, upgrades and support services for the NSW Family    |                                       |
+|               |Website in accordance with the Attachment I - Performance Work Statement.                             |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|3002           |                               |1                    |Lot             |                               |                                       |
+|OPTION         |CDRL's 0001 - 0004                                                                                    |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |Data shall be Not Seperately Priced (NSP).  In accordance with the Attachment I - Performance Work    |                                       |
+|               |Statement.                                                                                            |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|4001           |                               |12                   |Months          |                               |                                       |
+|OPTION         |Maintenance and Support Services                                                                      |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |Vendor shall provide on-going system maintenance, upgrades and support services for the NSW Family    |                                       |
+|               |Website in accordance with the Attachment I - Performance Work Statement.                             |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|4002           |                               |1                    |Lot             |                               |                                       |
+|OPTION         |CDRL's 0001 - 0004                                                                                    |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |Data shall be Not Seperately Priced (NSP).  In accordance with the Attachment I - Performance Work    |                                       |
+|               |Statement.                                                                                            |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+
+
+
+
+
+INSPECTION AND ACCEPTANCE TERMS
+
+
+
+Supplies/services will be inspected/accepted at:
+
+
+
+|CLIN      |INSPECT AT                                  |INSPECT BY           |ACCEPT AT                                   |ACCEPT BY            |
+|0001      |Destination                                 |Government           |Destination                                 |Government           |
+|0002      |Destination                                 |Government           |Destination                                 |Government           |
+|0003      |Destination                                 |Government           |Destination                                 |Government           |
+|1001      |Destination                                 |Government           |Destination                                 |Government           |
+|1002      |Destination                                 |Government           |Destination                                 |Government           |
+|2001      |Destination                                 |Government           |Destination                                 |Government           |
+|2002      |Destination                                 |Government           |Destination                                 |Government           |
+|3001      |Destination                                 |Government           |Destination                                 |Government           |
+|3002      |Destination                                 |Government           |Destination                                 |Government           |
+|4001      |Destination                                 |Government           |Destination                                 |Government           |
+|4002      |Destination                                 |Government           |Destination                                 |Government           |
+
+
+
+
+
+
+
+
+
+
+DELIVERY INFORMATION
+
+
+
+|CLIN      |DELIVERY DATE                    |QUANTITY               |SHIP TO ADDRESS                                         |UIC           |
+|          |                                 |                       |                                                        |              |
+|0001      |POP 01-MAY-2015 TO               |N/A                    |NAVAL SPECIAL WARFARE COMMAND - N00074                  |N00074        |
+|          |31-JUL-2015                      |                       |DAMARIS WILSON                                          |              |
+|          |                                 |                       |2000 TRIDENT WAY, BLDG 624                              |              |
+|          |                                 |                       |SAN DIEGO CA 92155-5599                                 |              |
+|          |                                 |                       |619 537-1131                                            |              |
+|          |                                 |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|0002      |POP 01-AUG-2015 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |N00074        |
+|          |30-APR-2016                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|0003      |POP 01-AUG-2015 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |N00074        |
+|          |30-APR-2016                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|1001      |POP 01-MAY-2016 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |N00074        |
+|          |30-APR-2017                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|1002      |POP 01-MAY-2016 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |N00074        |
+|          |30-APR-2017                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|2001      |POP 01-MAY-2017 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |N00074        |
+|          |30-APR-2018                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|2002      |POP 01-MAY-2017 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |N00074        |
+|          |30-APR-2018                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|3001      |POP 01-MAY-2018 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |N00074        |
+|          |30-APR-2019                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|3002      |POP 01-MAY-2018 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |N00074        |
+|          |30-APR-2019                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|4001      |POP 01-MAY-2019 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |N00074        |
+|          |30-APR-2020                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|4002      |POP 01-MAY-2019 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |N00074        |
+|          |30-APR-2020                      |                       |FOB:  Destination                                       |              |
+
+
+
+
+
+
+
+
+CLAUSES INCORPORATED BY REFERENCE
+
+
+
+
+
+|52.204-7                |System for Award Management                                               |JUL 2013         |                       |
+|52.204-13               |System for Award Management Maintenance                                   |JUL 2013         |                       |
+|52.212-3 Alt I          |Offeror Representations and Certifications--Commercial Items (NOV 2014)   |OCT 2014         |                       |
+|                        |Alternate I                                                               |                 |                       |
+|52.212-4                |Contract Terms and Conditions--Commercial Items                           |MAY 2014         |                       |
+|52.224-1                |Privacy Act Notification                                                  |APR 1984         |                       |
+|52.224-2                |Privacy Act                                                               |APR 1984         |                       |
+|52.232-1                |Payments                                                                  |APR 1984         |                       |
+|52.232-8                |Discounts For Prompt Payment                                              |FEB 2002         |                       |
+|52.232-9                |Limitation On Withholding Of Payments                                     |APR 1984         |                       |
+|52.232-39               |Unenforceability of Unauthorized Obligations                              |JUN 2013         |                       |
+|52.232-40               |Providing Accelerated Payments to Small Business Subcontractors           |DEC 2013         |                       |
+|52.239-1                |Privacy or Security Safeguards                                            |AUG 1996         |                       |
+|252.201-7000            |Contracting Officer's Representative                                      |DEC 1991         |                       |
+|252.203-7000            |Requirements Relating to Compensation of Former DoD Officials             |SEP 2011         |                       |
+|252.204-7003            |Control Of Government Personnel Work Product                              |APR 1992         |                       |
+|252.204-7004 Alt A      |System for Award Management Alternate A                                   |FEB 2014         |                       |
+|252.205-7000            |Provision Of Information To Cooperative Agreement Holders                 |DEC 1991         |                       |
+|252.209-7001            |Disclosure of Ownership or Control by the Government of a Terrorist       |JAN 2009         |                       |
+|                        |Country                                                                   |                 |                       |
+|252.209-7004            |Subcontracting With Firms That Are Owned or Controlled By The Government  |MAR 2014         |                       |
+|                        |of a Terrorist Country                                                    |                 |                       |
+|252.227-7015            |Technical Data--Commercial Items                                          |FEB 2014         |                       |
+|252.227-7025            |Limitations on the Use or Disclosure of Government-Furnished Information  |MAY 2013         |                       |
+|                        |Marked with Restrictive Legends                                           |                 |                       |
+|252.232-7003            |Electronic Submission of Payment Requests and Receiving Reports           |JUN 2012         |                       |
+|252.232-7010            |Levies on Contract Payments                                               |DEC 2006         |                       |
+|252.239-7017            |Notice of Supply Chain Risk                                               |NOV 2013         |                       |
+|252.239-7018            |Supply Chain Risk                                                         |NOV 2013         |                       |
+|252.243-7002            |Requests for Equitable Adjustment                                         |DEC 2012         |                       |
+
+
+
+
+
+
+CLAUSES INCORPORATED BY FULL TEXT
+
+
+
+
+
+52.212-1      INSTRUCTIONS TO OFFERORS--COMMERCIAL ITEMS (APR 2014)
+
+
+
+(a) North American Industry Classification System (NAICS) code and small business size standard. The NAICS code and small business size standard
+for this acquisition appear in Block 10 of the solicitation cover sheet (SF 1449). However, the small business size standard for a concern which
+submits an offer in its own name, but which proposes to furnish an item which it did not itself manufacture, is 500 employees.
+
+
+
+(b) Submission of offers. Submit signed and dated offers to the office specified in this solicitation at or before the exact time specified in
+this solicitation. Offers may be submitted on the SF 1449, letterhead stationery, or as otherwise specified in the solicitation. As a minimum,
+offers must show--
+
+
+
+(1) The solicitation number;
+
+
+
+(2) The time specified in the solicitation for receipt of offers;
+
+
+
+(3) The name, address, and telephone number of the offeror;
+
+
+
+(4) A technical description of the items being offered in sufficient detail to evaluate compliance with the requirements in the solicitation.
+This may include product literature, or other documents, if necessary;
+
+
+
+(5) Terms of any express warranty;
+
+
+
+(6) Price and any discount terms;
+
+
+
+(7) "Remit to" address, if different than mailing address;
+
+
+
+(8) A completed copy of the representations and certifications at FAR 52.212-3 (see FAR 52.212-3(b) for those representations and certifications
+that the offeror shall complete electronically);
+
+
+
+(9) Acknowledgment of Solicitation Amendments;
+
+
+
+(10) Past performance information, as described in the addendum to this provision.
+
+
+
+(11) If the offer is not submitted on the SF 1449, include a statement specifying the extent of agreement with all terms, conditions, and
+provisions included in the solicitation. Offers that fail to furnish required representations or information, or reject the terms and conditions
+of the solicitation may be excluded from consideration.
+
+
+
+(c) Period for acceptance of offers. The offeror agrees to hold the prices in its offer firm for 60 calendar days from the date specified for
+receipt of offers, unless another time period is specified in an addendum to the solicitation.
+
+
+
+(d) Product samples. When required by the solicitation, product samples shall be submitted at or prior to the time specified for receipt of
+offers. Unless otherwise specified in this solicitation, these samples shall be submitted at no expense to the Government, and returned at the
+sender's request and expense, unless they are destroyed during preaward testing.
+
+
+
+(e) Multiple offers shall not be accepted.
+
+
+
+(f) Late submissions, modifications, revisions, and withdrawals of offers:
+
+
+
+(1) Offerors are responsible for submitting offers, and any modifications, revisions, or withdrawals, so as to reach the Government office
+designated in the solicitation by the time specified in the solicitation.
+
+
+
+(2)(i) Any offer, modification, revision, or withdrawal of an offer received at the Government office designated in the solicitation after the
+exact time specified for receipt of offers is “late” and will not be considered unless it is received before award is made, the Contracting
+Officer determines that accepting the late offer would not unduly delay the acquisition; and--
+
+
+
+(A) If it was transmitted through an electronic commerce method authorized by the solicitation, it was received at the initial point of entry to
+the Government infrastructure not later than 5:00 p.m. one working day prior to the date specified for receipt of offers; or
+
+
+
+(B) There is acceptable evidence to establish that it was received at the Government installation designated for receipt of offers and was under
+the Government's control prior to the time set for receipt of offers; or
+
+
+
+(C) If this solicitation is a request for proposals, it was the only proposal received.
+
+
+
+(ii) However, a late modification of an otherwise successful offer, that makes its terms more favorable to the Government, will be considered at
+any time it is received and may be accepted.
+
+
+
+(3) Acceptable evidence to establish the time of receipt at the Government installation includes the time/date stamp of that installation on the
+offer wrapper, other documentary evidence of receipt maintained by the installation, or oral testimony or statements of Government personnel.
+
+
+
+(4) If an emergency or unanticipated event interrupts normal Government processes so that offers cannot be received at the Government office
+designated for receipt of offers by the exact time specified in the solicitation, and urgent Government requirements preclude amendment of the
+solicitation or other notice of an extension of the closing date, the time specified for receipt of offers will be deemed to be extended to the
+same time of day specified in the solicitation on the first work day on which normal Government processes resume.
+
+
+
+(5) Offers may be withdrawn by written notice received at any time before the exact time set for receipt of offers. Oral offers in response to
+oral solicitations may be withdrawn orally. If the solicitation authorizes facsimile offers, offers may be withdrawn via facsimile received at
+any time before the exact time set for receipt of offers, subject to the conditions specified in the solicitation concerning facsimile offers.
+An offer may be withdrawn in person by an offeror or its authorized representative if, before the exact time set for receipt of offers, the
+identity of the person requesting withdrawal is established and the person signs a receipt for the offer.
+
+
+
+(g) Contract award (not applicable to Invitation for Bids). The Government intends to evaluate offers and award a contract without discussions
+with offerors. Therefore, the offeror's initial offer should contain the offeror's best terms from a price and technical standpoint. However,
+the Government reserves the right to conduct discussions if later determined by the Contracting Officer to be necessary. The Government may
+reject any or all offers if such action is in the public interest; accept other than the lowest offer; and waive informalities and minor
+irregularities in offers received.
+
+
+
+(h) Multiple awards. The Government may accept any item or group of items of an offer, unless the offeror qualifies the offer by specific
+limitations. Unless otherwise provided in the Schedule, offers may not be submitted for quantities less than those specified. The Government
+reserves the right to make an award on any item for a quantity less than the quantity offered, at the unit prices offered, unless the offeror
+specifies otherwise in the offer.
+
+
+
+(i) Availability of requirements documents cited in the solicitation. (1)(i) The GSA Index of Federal Specifications, Standards and Commercial
+Item Descriptions, FPMR Part 101-29, and copies of specifications, standards, and commercial item descriptions cited in this solicitation may be
+obtained for a fee by submitting a request to--GSA Federal Supply Service Specifications Section, Suite 8100, 470 East L'Enfant Plaza, SW,
+Washington, DC
+
+20407, Telephone (202) 619-8925, Facsimile (202) 619-8978.
+
+
+
+(ii) If the General Services Administration, Department of Agriculture, or Department of Veterans Affairs issued this solicitation, a single
+copy of specifications, standards, and commercial item descriptions cited in this solicitation may be obtained free of charge by submitting a
+request to the addressee in paragraph (i)(1)(i) of this provision. Additional copies will be issued for a fee.
+
+
+
+(2) Most unclassified Defense specifications and standards may be downloaded from the following ASSIST websites:
+
+
+
+(i) ASSIST (https://assist.dla.mil/online/start/).
+
+
+
+(ii) Quick Search (http://quicksearch.dla.mil/).
+
+
+
+(iii) ASSISTdocs.com (http://assistdocs.com).
+
+
+
+(3) Documents not available from ASSIST may be ordered from the Department of Defense Single Stock Point (DoDSSP) by--
+
+
+
+(i) Using the ASSIST Shopping Wizard (https://assist.dla.mil/wizard/index.cfm);
+
+
+
+(ii) Phoning the DoDSSP Customer Service Desk (215) 697-2179, Mon-Fri, 0730 to 1600 EST; or
+
+
+
+(iii) Ordering from DoDSSP, Building 4, Section D, 700 Robbins Avenue, Philadelphia, PA 19111-5094, Telephone (215) 697-2667/2179, Facsimile
+(215) 697-1462.
+
+
+
+(4) Nongovernment (voluntary) standards must be obtained from the organization responsible for their preparation, publication, or maintenance.
+
+
+
+(j) Data Universal Numbering System (DUNS) Number. (Applies to all offers exceeding $3,000, and offers of $3,000 or less if the solicitation
+requires the Contractor to be registered in the System for Award Management (SAM) database. The offeror shall enter, in the block with its name
+and address on the cover page of its offer, the annotation “DUNS” or “DUNS +4” followed by the DUNS or DUNS +4 number that identifies the
+offeror's name and address. The DUNS +4 is the DUNS number plus a 4-character suffix that may be assigned at the discretion of the offeror to
+establish additional SAM records for identifying alternative Electronic Funds Transfer (EFT) accounts (see FAR Subpart 32.11) for the same
+concern. If the offeror does not have a DUNS number, it should contact Dun and Bradstreet directly to obtain one. An offeror within the United
+States may contact Dun and Bradstreet by calling 1-866-705-5711 or via the internet at http://fedgov.dnb.com/webform. An offeror located outside
+the United States must contact the local Dun and Bradstreet office for a DUNS number. The offeror should indicate that it is an offeror for a
+Government contract when contacting the local Dun and Bradstreet office.
+
+
+
+(k) System for Award Management. Unless exempted by an addendum to this solicitation, by submission of an offer, the offeror acknowledges the
+requirement that a prospective awardee shall be registered in the SAM database prior to award, during performance and through final payment of
+any contract resulting from this
+
+solicitation. If the Offeror does not become registered in the SAM database in the time prescribed by the Contracting Officer, the Contracting
+Officer will proceed to award to the next otherwise successful registered Offeror. Offerors may obtain information on registration and annual
+confirmation requirements via the SAM
+
+database accessed through https://www.acquisition.gov.
+
+
+
+
+
+(l) Debriefing. If a post-award debriefing is given to requesting offerors, the Government shall disclose the following information, if
+applicable:
+
+
+
+(1) The agency's evaluation of the significant weak or deficient factors in the debriefed offeror's offer.
+
+
+
+(2) The overall evaluated cost or price and technical rating of the successful and the debriefed offeror and past performance information on the
+debriefed offeror.
+
+
+
+(3) The overall ranking of all offerors, when any ranking was developed by the agency during source selection.
+
+
+
+(4) A summary of the rationale for award;
+
+
+
+(5) For acquisitions of commercial items, the make and model of the item to be delivered by the successful offeror.
+
+
+
+(6) Reasonable responses to relevant questions posed by the debriefed offeror as to whether source-selection procedures set forth in the
+solicitation, applicable regulations, and other applicable authorities were followed by the agency.
+
+
+
+(End of provision)
+
+
+
+FAR 52.212-1 Instructions to Offerors -  Commercial Items ADDENDUM
+
+
+
+Interested offerors shall send quotations by the date and time specified in Block 8 of the solicitation; and are to be submitted to the
+Contracting Officer (KO) at the e-mail address below:
+
+
+
+      Electronic Submission:
+
+
+
+
+      By e-mail:  matthew.morelewski@navsoc.socom.mil
+
+
+
+
+The offeror shall consist of three volumes: (1) Technical (2) Past Performance and (3) Price.  One electronic  version  of  the  offer  shall  be
+provided.
+
+
+
+Volume I  – Technical – The offerors submission shall address the following technical sub-factors:
+
+
+
+Sub Factor I: Technical Capability -   The offeror shall demonstrate a technical understanding of, and its technical approach to, providing all
+the requirements covered in the PWS and the solicitation.
+
+
+
+Sub Factor II:  Management Plan -  The offeror shall demonstrate a management plan that clearly describes the management techniques and
+procedures to ensure the work is performed in a timely, responsive and efficient manner.  The Management Plan shall include at a minimum the
+elements listed below:
+
+
+
+    • Demonstrate that the technical and managerial personnel to be assigned to the contract are capable of completing the efforts within the
+      timelines required by the PWS.
+    • Identify the  key personnel, as defined in 5652.237-9001 Key Personnel Requirements and demonstrate how their experience and background
+      supports the requirements identified in the PWS.
+
+
+The Technical volume shall not exceed 15 pages.
+
+
+
+GENERAL STATEMENTS THAT THE OFFEROR CAN OR WILL COMPLY WITH THE REQUIREMENTS OR PARAPHRASING THE RFQ’S PWS IN WHOLE OR IN PART WILL NOT
+CONSTITUTE COMPLIANCE AND MAY RESULT IN THE OFFER BEING REMOVED FROM CONSIDERATION.
+
+
+
+Volume II - Past Performance
+
+
+
+Offerors are required to provide information on no more than three of the firm’s most recently completed contracts (not to exceed three years
+since completion) that are relevant to the services being provided under this RFQ.  Relevance is defined as similarity in scope and magnitude.
+Offerors may submit past performance on less than three contracts or orders but no more than three.
+
+
+
+Offerors may submit performance data regarding current contract performance as long as a minimum of one year of performance has been completed
+as of the closing date of this solicitation.
+
+
+
+Offerors shall utilize Attachment II to  provide a detailed explanation demonstrating the relevance of the contract/order to the requirements of
+the RFQ.  Attachment III shall be forwarded by the offeror to each reference listed in Attachment II for completion.  The reference will then
+forward the completed questionnaires to Matthew Morelewski, e-mail Matthew.Morelewski@navsoc.socom.mil.  The due date for Past Performance
+Questionnaires is the closing date of the RFQ.
+
+
+
+Offerors lacking any relevant past performance shall indicate this on Attachment II.
+
+
+
+Volume III -  Price:  Price submission shall include a complete and detailed price breakdown with all supporting documentation, as follows:
+
+
+
+a) Completed Schedule of Services (All CLINs and SubCLINS)
+
+
+
+Offerors shall submit one original signed copy of the completed Standard Form (SF) 1449, and if applicable, executed copies of all Amendments,
+and executed Representations and Certifications.  Signed copies shall be submitted either as hard copies or via electronic submittal.  The
+address for electronic submittal via email is matthew.morelewski@navsoc.socom.mil.  Quotes shall be held firm for 60 days. The prices quoted
+shall be submitted in accordance with the Schedule of Services contained in the solicitation.
+
+
+
+IMPORTANT NOTES:
+
+
+
+   1) QUESTIONS:  In order to ensure all offerors questions concerning this solicitation are answered prior to the solicitation closing date,
+      offerors are to submit one consolidated set of questions via e-mail to the contracting point of contact no later than 1:00 PM Pacific Coast
+      Time (PCT), February 24, 2015.  The Government reserves the right not to respond to any questions received concerning this solicitation
+      after the question receipt date and time above.
+
+
+
+   2) The Government will host a “Webinar” on Thursday the 19th of February 2015, 12:00 – 1:00 PST to allow potential offerors to veiw the
+      current NSW Family website.  Prior to the event, offerors are encouraged to ensure conectivity, by testing the Defense Connect On-Line
+      (DCO)  link below.  When testing, offerors should get a message reading, “Host has Not Yet Entered the Meeting.”
+
+
+     1. Go to:  https://connect.dco.dod.mil/r4q5zy16knw/ and enter as a guest.
+     2. Call  US/CAN:  1-800-689-9374, Enter Participant Passcode:  742249#
+
+
+ ADDITIONAL WEBINARS WILL NOT BE ARRANGED FOR ANY PARTIES WHO ARRIVE AFTER THE ABOVE REFERENCED START DATE AND TIME.  ALL PARTIES ARE STRONGLY
+ENCOURAGED TO BE ON TIME.  NO SPECIAL ACCOMODATIONS WILL BE GRANTED TO OFFERORS.
+
+
+
+
+(End of provision)
+
+
+
+
+
+
+
+
+
+52.212-2     EVALUATION--COMMERCIAL ITEMS (OCT 2014)
+
+
+
+
+(a) The Government will award a contract resulting from this solicitation to the responsible offeror whose quote conforming to the solicitation
+will be most advantageous to the Government, price and other factors considered. The following factors shall be used to evaluate offers:
+
+
+
+Technical
+
+    • Sub Factor I – Technical Capability
+    • Sub Factor II – Management Plan
+Past Performance
+
+Price
+
+
+
+For the non-price factors, the Technical factor is considered more important than the Past Performance evaluation factor.  The Technical
+subfactor of Technical Capability and Mangement Plan are of equal importance.  All non-priced factors when combined are more important than
+price.
+
+
+
+(b) A written notice of award or acceptance of an offer, mailed or otherwise furnished to the successful offeror within the time for acceptance
+specified in the offer, shall result in a binding contract without further action by either party. Before the offer's specified expiration time,
+the Government may accept an offer (or part of an offer), whether or not there are negotiations after its receipt, unless a written notice of
+withdrawal is received before award.
+
+
+
+FAR 52.212-2 Evaluation  – Commercial Items ADDENDUM
+
+
+
+1. Technical Evaluation
+
+
+For the Technical Evaluation factor and sub-factors, the table identified below entitled “Technical Ratings Table” will be utilized for the
+assignment of ratings.  In the execution of the evaluation, both the offerors Technical Capability and Management Plan and the risk related to
+the proposed approach will be assessed.
+
+
+
+The purpose of the Technical Evaluation factor is to assess the offeror’s technical capability/understanding to perform the requirements and its
+management approach to accomplish the Government’s requirements.  The evaluation of risk is related to the assessment of the offeror’s quoted
+technical approach.  Risk assesses the degree to which the offeror’s quoted technical approach for the requirements of the solicitation may
+cause disruption of schedule, degradation of performance, the need for increased Government oversight and the likelihood of unsuccessful
+contract performance.  Risk will be considered in the evaluation of the respective sub-factors.
+
+
+
+A combined Technical/Risk Rating will be utilized in the evaluation of the Technical Evaluation and the combined technical/risk rating includes
+consideration of risk in conjunction with the strengths, weaknesses, and deficiencies in determining technical rating.  Combined technical/risk
+evaluations will utilize the combined technical/risk ratings listed below.
+
+
+
+Note:  A rating of “Marginal” means that the offeror’s submission is not awardable without a change or changes to the offeror’s submission.  A
+offer which receives a “Marginal” rating is not eligible for award if award is made on initial submissions.  Offerors that receive a “Marginal”
+rating will be considered to be susceptible to correction if discussions are determined to be in the best interest of the Government.
+
+
+
+A rating of “Unacceptable” for the Technical Evaluation Factor means that the offeror’s submission is not awardable and is not susceptible to
+correction without what would be tantamount to the submission of an entirely new submission.
+
+
+
+
+Technical Rating Table
+
+
+
+
+   |Colors                |Rating                |Description                                                                                    |
+|Blue                  |Outstanding           |Submission meets requirements and indicates an exceptional approach and understanding of the   |
+|                      |                      |requirements.  Strengths far outweigh any weaknesses.  Risk of unsuccessful performance is very|
+|                      |                      |low.                                                                                           |
+|Purple                |Good                  |Submission meets requirements and indicates a thorough approach and understanding of the       |
+|                      |                      |requirements.  Submission contains strengths which far outweigh any weaknesses.  Risk of       |
+|                      |                      |unsuccessful performance is low.                                                               |
+|Green                 |Acceptable            |Submission meets requirements and indicates an adequate approach and understanding of the      |
+|                      |                      |requirements.  Strengths and weaknesses are offsetting or will have little or no impact on     |
+|                      |                      |contract performance.  Risk of unsuccessful performance is no worse than moderate.             |
+|Yellow                |Marginal              |Submission does not clearly meet requirements and has not demonstrated an adequate approach and|
+|                      |                      |understanding of the requirements.  The proposal has one or more weaknesses which are not      |
+|                      |                      |offset by strengths.  Risk of unsuccessful performance is high.                                |
+|Red                   |Unacceptable          |Submission does not meet requirements and contains one or more deficiencies.  Submission is    |
+|                      |                      |un-awardable.                                                                                  |
+
+
+2. Past Performance Evaluation
+
+
+The Government may verify past performance information.  The Government may contact some or all of the references provided, as appropriate, and
+may collect information through telephone interviews and existing data sources to include but not limited to the Past Performance Information
+Retrieval System (PPIRS).  The Government reserves the right to obtain information for use in the evaluation of past performance from any and
+all sources including sources outside of the Government to be used for evaluation purposes.
+
+
+
+The Government reserves the right to consider questionnaires received after the due date of the solicitation and to contact references for
+verification of additional information.
+
+
+
+Past performance will be evaluated based on the relevance and quality of submitted contracts.
+
+
+
+Relevance will be determined by a contract's/task order's similarity to the current requirement, based on scope and magnitude.  For the purposes
+of the evaluation, scope and magnitude will be measured by the following:
+
+
+
+      Scope:  Experience in the areas defined in the Performance Work Statement (PWS).
+
+
+
+      Magnitude:  The measure of similarity of the dollar value and quantity of work actually performed work that exists between the PWS and the
+      offeror's contracts.
+
+
+
+In terms of relevancy the offeror's past performance submission will be rated in accordance with the below levels of relevancy:
+
+
+
+Past Performance Evaluation Ratings
+
+
+
+|Rating                       |Description                                                                                 |
+|Very Relevant                |Present/past performance effort involved essentially the                                    |
+|                             |same scope and magnitude of effort as this solicitation requires.                           |
+|Relevant                     |Present/past performance effort involved similar scope and                                  |
+|                             |magnitude of effort as this solicitation requires.                                          |
+|Somewhat Relevant            |Present/past performance effort involved some of the                                        |
+|                             |same scope and magnitude of effort as this solicitation requires.                           |
+|Not Relevant                 |Present/past performance effort involved little or none of                                  |
+|                             |the scope and magnitude of effort as this solicitation requires.                            |
+|Neutral                      |The offeror has no past performance history OR the KO has determined that the past          |
+|                             |performance information provided is not directly related or similar to the requirements in  |
+|                             |the RFP.                                                                                    |
+
+
+
+
+Offerors lacking relevant past performance history will receive a Neutral rating.
+
+
+
+Each past performance reference under an offeror's Past Performance submission that is determined to be at a minimum "Somewhat Relevant", will
+be evaluated to determine the quality of the offeror's performance under
+
+that reference.
+
+
+
+Following the quality evaluation, the KO will assign an overall confidence rating to each past performance reference, considering both the
+relevance and quality of the provided reference.  The KO will then assign a composite past performance confidence rating for the offeror's
+overall past performance, considering the confidence rating assigned to each individual reference.  The KO's confidence evaluation will be in
+accordance with the following table:
+
+
+
+Past Performance Confidence Assessment Ratings:
+
+
+
+|Rating                             |Description                                                                          |
+|Substantial Confidence             |Based on the offeror's recent/relevant performance record, the Government has a high |
+|                                   |expectation that the offeror will successfully perform the required effort.          |
+|Satisfactory Confidence            |Based on the offeror 's recent/relevant performance record, the Government has a     |
+|                                   |reasonable expectation that the offeror will                                         |
+|                                   |successfully perform the required effort.                                            |
+|Limited Confidence                 |Based on the offeror 's recent/relevant performance record, the Government has a low |
+|                                   |expectation that the offeror will successfully perform the required effort.          |
+|No Confidence                      |Based on the offeror 's recent/relevant performance record, the Government has no    |
+|                                   |expectation that the offeror will successfully perform the required effort.          |
+|Unknown Confidence (Neutral)       |No recent/relevant performance record is available or the offeror's performance      |
+|                                   |record is so sparse that no meaningful confidence assessment rating can be reasonably|
+|                                   |assigned.                                                                            |
+
+
+3.  Price Evaluation:  Price quotes will be evaluated on the basis of price reasonableness in accordance with FAR 13.106-3.  Offerors responding
+to this solicitation are advised that, prior to award, the government may request additional information/data to support price reasonableness
+such as copies of paid invoices for the same or similar services, sales history for the same or similar items, price list with effective date
+and/or copies of catalog pages along with any applicable discounts.  Failure to submit the requested information may result in disqualification
+of the submitted quote.
+
+
+
+The Government may evaluate any and all information submitted by the offeror to support the reasonableness of prices quoted. The method of
+evaluation used by the KO is solely within the discretion of the KO.
+
+
+
+Options. The Government will evaluate offerors for award purposes by adding the total price for all options to the total price for the basic
+requirement. The Government may determine that an offer is unacceptable if the option prices are significantly unbalanced. Evaluation of options
+shall not obligate the Government to exercise the option(s).
+
+
+
+(End of provision)
+
+
+
+
+
+
+
+52.212-5     CONTRACT TERMS AND CONDITIONS REQUIRED TO IMPLEMENT STATUTES OR EXECUTIVE ORDERS--COMMERCIAL ITEMS (OCT 2014)
+
+
+
+(a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract by
+reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items:
+
+
+
+(1) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)).
+
+
+
+ ___    Alternate I (Aug 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+
+
+
+(2) 52.233-3, Protest After Award (AUG 1996) (31 U.S.C. 3553).
+
+
+
+(3) 52.233-4, Applicable Law for Breach of Contract Claim (OCT 2004) (Public Laws 108-77 and 108-78 (19 U.S.C. 3805 note)).
+
+
+
+(b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being incorporated in
+this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: (Contracting
+Officer check as appropriate.)
+
+
+
+XX (1) 52.203-6, Restrictions on Subcontractor Sales to the Government (Sept 2006), with Alternate I (Oct 1995) (41 U.S.C. 4704 and 10 U.S.C.
+2402).
+
+
+
+
+
+____ (2) 52.203-13, Contractor Code of Business Ethics and Conduct (Apr 2010) (41 U.S.C. 3509).
+
+
+
+____  (3) 52.203-15, Whistleblower Protections under the American Recovery and Reinvestment Act of 2009 (June 2010) (Section 1553 of Pub. L. 111-
+5). (Applies to contracts funded by the American Recovery and Reinvestment Act of 2009.)
+
+
+
+XX (4) 52.204-10, Reporting Executive Compensation and First-Tier Subcontract Awards (July 2013) (Pub. L. 109-282) (31 U.S.C. 6101 note).
+
+
+
+___  (5) [Reserved]
+
+
+
+___  (6) 52.204-14, Service Contract Reporting Requirements (JAN 2014) (Pub. L. 111-117, section 743 of Div. C).
+
+
+
+___  (7) 52.204-15, Service Contract Reporting Requirements for Indefinite-Delivery Contracts (JAN 2014) (Pub. L. 111-117, section 743 of Div.
+C).
+
+
+
+
+
+XX (8) 52.209-6, Protecting the Government's Interest When Subcontracting with Contractors Debarred, Suspended, or Proposed for Debarment. (Aug,
+2013) (31 U.S.C. 6101 note).
+
+____ (9) 52.209-9, Updates of Publicly Available Information Regarding Responsibility Matters (July 2013) (41 U.S.C. 2313).
+
+
+____ (10) 52.209-10, Prohibition on Contracting with Inverted Domestic Corporations (MAY 2012) (section 738 of Division C of Pub. L. 112-74,
+section 740 of Division C of Pub. L. 111-117, section 743 of Division D of Pub. L. 111-8, and section 745 of Division D of Pub. L. 110-161).
+
+
+
+____ (11)(i) 52.219-3, Notice of HUBZone Set-Aside or Sole-Source Award (NOV 2011) (15 U.S.C. 657a).
+
+    _
+
+____  (ii) Alternate I (NOV 2011) of 52.219-3.
+
+
+
+____ (12) (i) 52.219-4, Notice of Price Evaluation Preference for HUBZone Small Business Concerns (OCT 2014) (if the offeror elects to waive the
+preference, it shall so indicate in its offer) (15 U.S.C. 657a).
+
+
+
+____ (ii) Alternate I (JAN 2011) of 52.219-4.
+
+
+
+____ (13) [Reserved]
+
+
+
+XX (14)(i)  52.219-6, Notice of Total Small Business Set-Aside (NOV 2011) (15 U.S.C. 644).
+
+
+
+____ (ii) Alternate I (NOV 2011).
+
+
+
+____ (iii) Alternate II (NOV 2011).
+
+
+
+____ (15)(i)  52.219-7, Notice of Partial Small Business Set-Aside (June 2003) (15 U.S.C. 644).
+
+
+
+____ (ii) Alternate I (Oct 1995) of 52.219-7.
+
+
+
+____ (iii) Alternate II (Mar 2004) of 52.219-7.
+
+
+
+X (16) 52.219-8, Utilization of Small Business Concerns (OCT 2014) (15 U.S.C. 637(d)(2) and (3)).
+
+
+
+____ (17)(i)  52.219-9, Small Business Subcontracting Plan (OCT 2014) (15 U.S.C. 637(d)(4)).
+
+
+
+____ (ii) Alternate I (Oct 2001) of 52.219-9.
+
+
+
+____ (iii) Alternate II (Oct 2001) of 52.219-9.
+
+
+
+____ (iv) Alternate III (OCT 2014) of 52.219-9.
+
+
+
+____ (18) 52.219-13, Notice of Set-Aside of Orders (NOV 2011) (15 U.S.C. 644(r)).
+
+
+
+____ (19) 52.219-14, Limitations on Subcontracting (NOV 2011) (15 U.S.C. 637(a)(14)).
+
+
+
+____ (20) 52.219-16, Liquidated Damages—Subcon-tracting Plan (Jan 1999) (15 U.S.C. 637(d)(4)(F)(i)).
+
+
+
+____ (21) 52.219-27, Notice of Service-Disabled Veteran-Owned Small Business Set-Aside (NOV 2011) (15 U.S.C. 657f).
+
+
+
+XX (22)  52.219-28, Post Award Small Business Program Rerepresentation (July 2013) (15 U.S.C. 632(a)(2)).
+
+
+
+____ (23) 52.219-29, Notice of Set-Aside for Economically Disadvantaged Women-Owned Small Business (EDWOSB) Concerns (July 2013) (15 U.S.C.
+637(m)).
+
+
+
+____ (24) 52.219-30, Notice of Set-Aside for Women-Owned Small Business (WOSB) Concerns Eligible Under the WOSB Program (July 2013) (15 U.S.C.
+637(m)).
+
+
+
+XX (25) 52.222-3, Convict Labor (June 2003) (E.O. 11755).
+
+
+
+XX (26) 52.222-19, Child Labor—Cooperation with Authorities and Remedies (JAN 2014) (E.O. 3126).
+
+
+
+XX (27) 52.222-21, Prohibition of Segregated Facilities (Feb 1999).
+
+
+
+XX (28) 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246).
+
+
+
+XX (29) 52.222-35, Equal Opportunity for Veterans (Jul 2014)(38 U.S.C. 4212).
+
+
+XX (30) 52.222-36, Equal Opportunity for Workers with Disabilities (July 2014) (29 U.S.C. 793).
+
+
+
+XX (31) 52.222-37, Employment Reports on Veterans (July 2014) (38 U.S.C. 4212).
+
+
+
+____ (32) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496).
+
+
+
+____ (33) 52.222-54, Employment Eligibility Verification (Aug 2013). (Executive Order 12989). (Not applicable to the acquisition of commercially
+available off-the-shelf items or certain other types of
+commercial items as prescribed in 22.1803.)
+
+
+____ (34)(i)  52.223-9, Estimate of Percentage of Recovered Material Content for EPA–Designated Items (May 2008) (42 U.S.C. 6962(c)(3)(A)(ii)).
+(Not applicable to the acquisition of commercially available off-the-shelf items.)
+
+
+
+____ (ii) Alternate I (May 2008) of 52.223-9 (42 U.S.C. 6962(i)(2)(C)). (Not applicable to the acquisition of commercially available off-the-
+shelf items.)
+
+
+
+____ (35) (i) 52.223-13, Acquisition of EPEAT® Registered Imaging Equipment (Jun 2014)+(E.O.s 13423 and 13514).
+
+ ____  (ii) Alternate I (Jun 2014) of 52.223-13.
+
+
+____ (36)(i) 52.223-14, Acquisition of EPEAT® Registered Televisions (Jun 2014) (E.O.s 13423 and 13514).
+
+ ____   (ii) Alternate I (Jun 2014) of 52.223-14.
+
+
+____ (37) 52.223-15, Energy Efficiency in Energy-Consuming Products (Dec 2007) (42 U.S.C. 8259b).
+
+
+
+____ (38)(i)  (i) 52.223-16, Acquisition of EPEAT® -Registered Personal Computer Products (Jun 2014) (E.O.s 13423 and 13514).
+
+
+
+____ (ii) Alternate I (Jun 2014) of 52.223-16.
+
+
+
+XX (39) 52.223-18, Encouraging Contractor Policies to Ban Text Messaging While Driving (Aug 2011) (E.O. 13513).
+
+
+
+____ (40) 52.225-1, Buy American--Supplies (May 2014) (41 U.S.C. chapter 83).
+
+
+
+____(41) (i) 52.225-3, Buy American--Free Trade Agreements--Israeli Trade Act (May 2014) (41 U.S.C. chapter 83, 19 U.S.C. 3301 note, 19 U.S.C.
+2112 note, 19 U.S.C. 3805 note, 19 U.S.C. 4001 note, Pub. L.
+
+103-182, 108-77, 108-78, 108-286, 108-302, 109-53, 109-169, 109-283, 110-138, 112-41, 112-42, and 112-43.
+
+
+____ (ii) Alternate I (May 2014) of 52.225-3.
+
+____ (iii) Alternate II (May 2014) of 52.225-3.
+
+____ (iv) Alternate III (May 2014) of 52.225-3.
+
+____ (42) 52.225-5, Trade Agreements (Nov 2013) (19 U.S.C. 2501, et seq., 19 U.S.C. 3301 note).
+
+
+XX (43) 52.225-13, Restrictions on Certain Foreign Purchases (June 2008) (E.O.’s, proclamations, and statutes administered by the Office of
+Foreign Assets Control of the Department of the Treasury).
+
+
+
+____ (44) 52.225-26, Contractors Performing Private Security Functions Outside the United States (Jul 2013) (Section 862, as amended, of the
+National Defense Authorization Act for Fiscal Year 2008; 10 U.S.C. 2302 Note).
+
+
+
+____ (45) 52.226-4, Notice of Disaster or Emergency Area Set-Aside (Nov 2007) (42 U.S.C. 5150
+
+
+
+____ (46) 52.226-5, Restrictions on Subcontracting Outside Disaster or Emergency Area (Nov 2007) (42 U.S.C. 5150).
+
+
+
+____ (47) 52.232-29, Terms for Financing of Purchases of Commercial Items (Feb 2002) (41 U.S.C. 4505, 10 U.S.C. 2307(f)).
+
+
+
+____ (48) 52.232-30, Installment Payments for Commercial Items (Oct 1995) (41 U.S.C. 4505, 10 U.S.C. 2307(f)).
+
+
+
+XX (49) 52.232-33, Payment by Electronic Funds Transfer—System for Award Management (July 2013) (31 U.S.C. 3332).
+
+
+
+____ (50) 52.232-34, Payment by Electronic Funds Transfer—Other than System for Award Management (July 2013) (31 U.S.C. 3332).
+
+
+
+____ (51) 52.232-36, Payment by Third Party (MAY 2014) (31 U.S.C. 3332).
+
+
+
+____  (52) 52.239-1, Privacy or Security Safeguards (Aug 1996) (5 U.S.C. 552a).
+
+
+
+____ (53)(i)  52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) (46 U.S.C. Appx. 1241(b) and 10 U.S.C. 2631).
+
+
+
+____ (ii) Alternate I (Apr 2003) of 52.247-64.
+
+
+
+(c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer has
+indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of
+commercial items: (Contracting Officer check as appropriate.)
+
+
+
+_____ (1) 52.222-41, Service Contract Labor Standards (MAY 2014) (41 U.S.C. chapter 67).
+
+
+
+_____ (2) 52.222-42, Statement of Equivalent Rates for Federal Hires (MAY 2014) (29 U.S.C. 206 and 41 U.S.C. chapter 67).
+
+
+
+_____ (3) 52.222-43, Fair Labor Standards Act and Service Contract Labor Standards--Price Adjustment (Multiple Year and Option Contracts) (MAY
+2014) (29 U.S.C. 206 and 41 U.S.C. chapter 67).
+
+
+
+_____ (4) 52.222-44, Fair Labor Standards Act and Service Contract Labor Standards--Price Adjustment (MAY 2014) (29 U.S.C 206 and 41 U.S.C.
+chapter 67).
+
+
+
+_____ (5) 52.222-51, Exemption from Application of the Service Contract Labor Standards to Contracts for Maintenance, Calibration, or Repair of
+Certain Equipment--Requirements (MAY 2014) (41 U.S.C. chapter 67).
+
+
+
+XX (6) 52.222-53, Exemption from Application of the Service Contract Labor Standards to Contracts for Certain Services--Requirements (MAY 2014)
+(41 U.S.C. chapter 67).
+
+
+
+_____ (7) 52.222-17, Nondisplacement of Qualified Workers (MAY 2014) (E.O. 13495).
+
+
+
+_____ (8) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations (MAY 2014) (42 U.S.C. 1792).
+
+
+
+_____ (9) 52.237-11, Accepting and Dispensing of $1 Coin (Sept 2008) (31 U.S.C. 5112(p)(1)).
+
+
+
+(d) Comptroller General Examination of Record. The Contractor shall comply with the provisions of this paragraph (d) if this contract was
+awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at 52.215-2, Audit
+and Records--Negotiation.
+
+
+
+(1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right to
+examine any of the Contractor's directly pertinent records involving transactions related to this contract.
+
+
+
+(2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination,
+audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR Subpart 4.7, Contractor
+Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records relating to the
+work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the
+disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such
+appeals, litigation, or claims are finally resolved.
+
+
+
+(3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and
+regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary
+course of business or pursuant to a provision of law.
+
+
+
+(e) (1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c), and (d) of this clause, the Contractor is not required to
+flow down any FAR clause, other than those in this paragraph (e)(1)in a subcontract for commercial items. Unless otherwise indicated below, the
+extent of the flow down shall be as required by the clause—
+
+
+
+(i) 52.203-13, Contractor Code of Business Ethics and Conduct (APR 2010) (41 U.S.C. 3509).
+
+
+
+(ii) 52.219-8, Utilization of Small Business Concerns (OCT 2014) (15 U.S.C. 637(d)(2) and (3)), in all subcontracts that offer further
+subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $650,000 ($1.5 million for
+construction of any public facility), the subcontractor must include 52.219-8 in lower tier subcontracts that offer subcontracting
+opportunities.
+
+
+
+(iii) 52.222-17, Nondisplacement of Qualified Workers (MAY 2014) (E.O. 13495). Flow down required in accordance with paragraph (l) of FAR clause
+52.222-17.
+
+
+
+(iv) 52.222-26, Equal Opportunity (MAR 2007) (E.O. 11246).
+
+
+
+(v) 52.222-35, Equal Opportunity for Veterans (JUL 2014) (38 U.S.C. 4212).
+
+
+(vi) 52.222-36, Equal Opportunity for Workers with Disabilities (Jul 2014) (29 U.S.C. 793).
+(vii) 52.222-37, Employment Reports on Veterans (Jul 2014) (38 U.S.C. 4212).
+(viii) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496). Flow down required in
+accordance with paragraph (f) of FAR clause 52.222-40.
+(ix) 52.222-41, Service Contract Labor Standards (May 2014), (41 U.S.C. chapter 67).
+(x) 52.222-50, Combating Trafficking in Persons (Feb 2009) (22 U.S.C. 7104(g)).
+_____Alternate I (Aug 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+(xi) 52.222-51, Exemption from Application of the Service Contract Labor Standards to Contracts for Maintenance, Calibration, or Repair of
+Certain Equipment--Requirements (May 2014) (41 U.S.C. chapter 67.)
+(xii) 52.222-53, Exemption from Application of the Service Contract Labor Standards to Contracts for Certain Services--Requirements (May 2014)
+(41 U.S.C. chapter 67)
+(xiii) 52.222-54, Employment Eligibility Verification (Aug 2013).
+(xiv) 52.225-26, Contractors Performing Private Security Functions Outside the United States (Jul 2013) (Section 862, as amended, of the
+National Defense Authorization Act for Fiscal Year 2008; 10 U.S.C. 2302 Note).
+(xv) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations. (May 2014) (42 U.S.C. 1792). Flow down required in accordance with
+paragraph (e) of FAR clause 52.226-6.
+(xvi) 52.247-64, Preference for Privately-Owned U.S. Flag Commercial Vessels (Feb 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C. 2631). Flow down
+required in accordance with paragraph (d) of FAR clause 52.247-64.
+(2) While not required, the contractor May include in its subcontracts for commercial items a minimal number of additional clauses necessary to
+satisfy its contractual obligations.
+
+
+
+(End of clause)
+
+
+
+
+
+
+
+
+
+
+
+
+
+52.217-5     EVALUATION OF OPTIONS (JUL 1990)
+
+
+
+Except when it is determined in accordance with FAR 17.206(b) not to be in the Government's best interests, the Government will evaluate offers
+for award purposes by adding the total price for all options to the total price for the basic requirement. Evaluation of options will not
+obligate the Government to exercise the option(s).
+
+
+
+(End of provision)
+
+
+
+
+
+
+
+52.217-8     OPTION TO EXTEND SERVICES (NOV 1999)
+
+
+
+The Government may require continued performance of any services within the limits and at the rates specified in the contract.  These rates may
+be adjusted only as a result of revisions to prevailing labor rates provided by the Secretary of Labor.  The option provision may be exercised
+more than once, but the total extension of performance hereunder shall not exceed 6 months.  The Contracting Officer may exercise the option by
+written notice to the Contractor within 1 day.
+
+
+
+(End of clause)
+
+
+
+
+
+
+
+52.217-9     OPTION TO EXTEND THE TERM OF THE CONTRACT (MAR 2000)
+
+
+
+(a) The Government may extend the term of this contract by written notice to the Contractor within 1 day; provided that the Government gives the
+Contractor a preliminary written notice of its intent to extend at least 30 days  before the contract expires. The preliminary notice does not
+commit the Government to an extension.
+
+
+
+(b) If the Government exercises this option, the extended contract shall be considered to include this option clause.
+
+
+
+(c) The total duration of this contract, including the exercise of any options under this clause, shall not exceed 60 months.
+
+(End of clause)
+
+
+
+
+
+
+
+52.222-52   EXEMPTION FROM APPLICATION OF THE SERVICE CONTRACT LABOR STANDARDS TO CONTRACTS FOR CERTAIN SERVICES--CERTIFICATION (MAY 2014)
+
+
+
+(a) The offeror shall check the following certification:
+
+
+
+CERTIFICATION
+
+
+
+The offeror ( ___   ) does ( ___   ) does not certify that--
+
+
+
+(1) The services under the contract are offered and sold regularly to non-Governmental customers, and are provided by the offeror (or
+subcontractor in the case of an exempt subcontract) to the general public in substantial quantities in the course of normal business operations;
+
+
+
+(2) The contract services are furnished at prices that are, or are based on, established catalog or market prices. An “established catalog
+price” is a price included in a catalog, price list, schedule, or other form that is regularly maintained by the manufacturer or the offeror, is
+either published or otherwise available for inspection by customers, and states prices at which sales currently, or were last, made to a
+significant number of buyers constituting the general public. An “established market price” is a current price, established in the usual course
+of ordinary and usual trade between buyers and sellers free to bargain, which can be substantiated from sources independent of the manufacturer
+or offeror;
+
+
+
+(3) Each service employee who will perform the services under the contract will spend only a small portion of his or her time (a monthly average
+of less than 20 percent of the available hours on an annualized basis, or less than 20 percent of available hours during the contract period if
+the contract period is less than a month) servicing the Government contract; and
+
+
+
+(4) The offeror uses the same compensation (wage and fringe benefits) plan for all service employees performing work under the contract as the
+offeror uses for these employees and for equivalent employees servicing commercial customers.
+
+
+
+(b) Certification by the offeror as to its compliance with respect to the contract also constitutes its certification as to compliance by its
+subcontractor if it subcontracts out the exempt services. If the offeror certifies to the conditions in paragraph (a) of this provision, and the
+Contracting Officer determines in accordance with FAR 22.1003-4(d)(3) that the Service Contract Labor Standards statute--
+
+
+
+(1) Will not apply to this offeror, then the Service Contract Labor Standards clause in this solicitation will not be included in any resultant
+contract to this offeror; or
+
+
+
+(2) Will apply to this offeror, then the clause at FAR 52.222-53, Exemption from Application of the Service Contract Labor Standards to
+Contracts for Certain Services--Requirements, in this solicitation will not be included in any resultant contract awarded to this offer, and the
+offeror may be provided an opportunity to submit a new offer on that basis.
+
+
+
+(c) If the offeror does not certify to the conditions in paragraph (a) of this provision--
+
+
+
+(1) The clause of this solicitation at 52.222-53, Exemption from Application of the Service Contract Labor Standards to Contracts for Certain
+Services--Requirements, will not be included in any resultant contract to this offeror; and
+
+
+
+(2) The offeror shall notify the Contracting Officer as soon as possible if the Contracting Officer did not attach a Service Contract Labor
+Standards wage determination to the solicitation.
+
+
+
+(d) The Contracting Officer may not make an award to the offeror, if the offeror fails to execute the certification in paragraph (a) of this
+provision or to contact the Contracting Officer as required in paragraph (c) of this provision.
+
+
+
+(End of provision)
+
+
+
+
+
+
+
+
+
+52.225-25  Prohibition on Contracting with Entities Engaging in Certain Activities or Transactions Relating to Iran--Representation and
+Certifications. (DEC 2012)
+
+(a) Definitions. As used in this provision--
+
+Person--
+
+(1) Means--
+
+(i) A natural person;
+
+(ii) A corporation, business association, partnership, society, trust, financial institution, insurer, underwriter, guarantor, and any other
+business organization, any other nongovernmental entity, organization, or group, and any governmental entity operating as a business enterprise;
+and
+
+(iii) Any successor to any entity described in paragraph (1)(ii) of this definition; and
+
+(2) Does not include a government or governmental entity that is not operating as a business enterprise.
+
+Sensitive technology--
+
+(1) Means hardware, software, telecommunications equipment, or any other technology that is to be used specifically--
+
+(i) To restrict the free flow of unbiased information in Iran; or
+
+(ii) To disrupt, monitor, or otherwise restrict speech of the people of Iran; and
+
+(2) Does not include information or informational materials the export of which the President does not have the authority to regulate or
+prohibit pursuant to section 203(b)(3) of the International Emergency Economic Powers Act (50 U.S.C. 1702(b)(3)).
+
+(b) The offeror shall email questions concerning sensitive technology to the Department of State at CISADA106@state.gov.
+
+(c) Except as provided in paragraph (d) of this provision or if a waiver has been granted in accordance with 25.703-4, by submission of its
+offer, the offeror—
+
+(1) Represents, to the best of its knowledge and belief, that the offeror does not export any sensitive technology to the government of Iran or
+any entities or individuals owned or controlled by, or acting on behalf or at the direction of, the government of Iran;
+
+(2) Certifies that the offeror, or any person owned or controlled by the offeror, does not engage in any activities for
+which sanctions may be imposed under section 5 of the Iran Sanctions Act. These sanctioned activities are in the areas of development of the
+petroleum resources of Iran, production of refined petroleum products in Iran, sale and provision of refined petroleum products to Iran, and
+contributing to Iran's ability to acquire or develop certain weapons or technologies; and
+
+(3) Certifies that the offeror, and any person owned or controlled by the offeror, does not knowingly engage in any
+transaction that exceeds $3,000 with Iran's Revolutionary Guard Corps or any of its officials, agents, or affiliates, the property and interests
+in property of which are blocked pursuant to the International Emergency Economic Powers Act (50 U.S.C. 1701 et seq.) (see OFAC's Specially
+Designated Nationals and Blocked Persons List
+at http://www.treasury.gov/ofac/downloads/t11sdn.pdf).
+
+(d) Exception for trade agreements. The representation requirement of paragraph (c)(1) and the certification requirements of paragraphs (c)(2)
+and (c)(3) of this provision do not apply if—
+
+(1) This solicitation includes a trade agreements notice or certification (e.g., 52.225-4, 52.225-6, 52.225-12, 52.225-24, or comparable agency
+provision); and
+
+(2) The offeror has certified that all the offered products to be supplied are designated country end products or designated country
+construction material.
+
+(End of provision)
+
+
+
+
+
+
+
+
+52.252-2      CLAUSES INCORPORATED BY REFERENCE (FEB 1998)
+
+
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request,
+the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at this/these
+address(es):
+
+
+
+http://farsite.hill.af.mil
+
+
+
+(End of clause)
+
+
+
+
+
+
+
+252.232-7006 WIDE AREA WORKFLOW PAYMENT INSTRUCTIONS (MAY 2013)
+
+(a) Definitions. As used in this clause--
+
+Department of Defense Activity Address Code (DoDAAC) is a six position code that uniquely identifies a unit, activity, or organization.
+
+Document type means the type of payment request or receiving report available for creation in Wide Area WorkFlow (WAWF).
+
+Local processing office (LPO) is the office responsible for payment certification when payment certification is done external to the entitlement
+system.
+
+(b) Electronic invoicing. The WAWF system is the method to electronically process vendor payment requests and receiving reports, as authorized
+by DFARS 252.232-7003, Electronic Submission
+of Payment Requests and Receiving Reports.
+
+(c) WAWF access. To access WAWF, the Contractor shall--
+
+(1) Have a designated electronic business point of contact in the System for Award Management at https://www.acquisition.gov; and
+
+(2) Be registered to use WAWF at https://wawf.eb.mil/ following the step-by-step procedures for self-registration available at this Web site.
+
+(d) WAWF training. The Contractor should follow the training instructions of the WAWF Web-Based Training Course and use the Practice Training
+Site before submitting payment requests through
+WAWF. Both can be accessed by selecting the “Web Based Training” link on the WAWF home page at https://wawf.eb.mil/.
+
+(e) WAWF methods of document submission. Document submissions may be via Web entry, Electronic Data Interchange, or File Transfer Protocol.
+
+(f) WAWF payment instructions. The Contractor must use the following information when submitting payment requests and receiving reports in WAWF
+for this contract/order:
+
+(1) Document type. The Contractor shall use the following document type(s).
+
+____
+
+(Contracting Officer: Insert applicable document type(s). Note: If a “Combo” document type is identified but not supportable by the Contractor's
+business systems, an “Invoice” (stand-alone) and
+“Receiving Report” (stand-alone) document type may be used instead.)
+
+(2) Inspection/acceptance location. The Contractor shall select the following inspection/acceptance location(s) in WAWF, as specified by the
+contracting officer.
+
+____
+
+(Contracting Officer: Insert inspection and acceptance locations or “Not applicable”.)
+
+(3) Document routing. The Contractor shall use the information in the Routing Data Table below only to fill in applicable fields in WAWF when
+creating payment requests and receiving reports in the
+system.
+
+Routing Data Table* TO BE COMPETED UPON AWARD
+--------------------------------------------------------------------------------------------
+Field Name in WAWF                Data to be entered in WAWF
+--------------------------------------------------------------------------------------------
+Pay Official DoDAAC               ____
+Issue By DoDAAC              ____
+Admin DoDAAC                      ____
+Inspect By DoDAAC                 ____
+Ship To Code                      ____
+Ship From Code                    ____
+Mark For Code                     ____
+Service Approver (DoDAAC)         ____
+Service Acceptor (DoDAAC)         ____
+Accept at Other DoDAAC                      ____
+LPO DoDAAC                   ____
+DCAA Auditor DoDAAC               ____
+Other DoDAAC(s)              ____
+--------------------------------------------------------------------------------------------
+
+(*Contracting Officer: Insert applicable DoDAAC information or “See schedule” if multiple ship to/acceptance locations apply, or “Not
+applicable.”)
+
+(4) Payment request and supporting documentation. The Contractor shall ensure a payment request includes appropriate contract line item and
+subline item descriptions of the work performed or supplies delivered, unit price/cost per unit, fee (if applicable), and all relevant back-up
+documentation, as defined in DFARS Appendix F, (e.g. timesheets) in support of each payment request.
+
+(5) WAWF email notifications. The Contractor shall enter the email address identified below in the “Send Additional Email Notifications” field
+of WAWF once a document is submitted in the system.
+____
+
+(Contracting Officer: Insert applicable email addresses or “Not applicable.”)
+
+(g) WAWF point of contact. (1) The Contractor may obtain clarification regarding invoicing in WAWF from the following contracting activity's
+WAWF point of contact.
+
+____
+
+(Contracting Officer: Insert applicable information or “Not applicable.”)
+
+(2) For technical WAWF help, contact the WAWF helpdesk at 866-618-5988.
+
+(End of clause)
+
+
+
+
+
+
+SOFAR CLAUSES
+
+5652.201-9002 Authorized Changes Only by Contracting Officer (JAN 2005)
+As prescribed in 5601.602-2-70(f), insert the following clause:  The Contractor shall not comply with any order, direction or request of
+Government personnel unless it is issued in writing and signed by the Contracting Officer, or is pursuant to specific authority otherwise
+included as part of this contract. Except as specified herein, no order, statement, or conduct of Government personnel who visit the
+contractor’s facilities or in any other manner communicates with Contractor personnel during the performance of this contract shall constitute a
+change under the Changes clause in Section I. In the event the Contractor effects any change at the direction of any person other the
+Contracting Officer, the change will be considered to have been made without authority and no adjustment will be made in the contract price to
+cover any increase in cost incurred as a result thereof. The address and telephone number of the Contracting Officer is identified below:
+
+Contracting Officer:   Matthew Morelewski
+Email:                 Matthew.Morelewski@navsoc.socom.mil
+Telephone:       619-537-1360
+Address:         Naval Special Warfare Command
+                 3632 Guadalcanal Rd. Bldg 401
+                 San Diego, CA 92155-5599
+
+5652.204-9003 Disclosure of Unclassified Information (NOV 2007) (IAW SOFARS 5604.403(b))
+As prescribed in 5604.403(b), insert the following clause,
+On September 21, 2001, the Department of Defense designated Headquarters US Special Operations Command (USSOCOM) a sensitive unit, as defined by
+Title 10 United States Code (USC) Section 130b (10 USC 130b).  In keeping with this designation, unclassified information related to USSOCOM
+military technology acquisitions managed by USSOCOM or any of its component commands, will be designated Controlled Unclassified Information
+(CUI). As such, the contractor hereby unequivocally agrees that it shall not release to anyone outside the Contractor’s organization any
+unclassified information, regardless of medium (e.g., film, tape, document, contractor’s external website, newspaper, magazine, journal,
+corporate annual report, etc.), pertaining to any part of this contract or any program related to this contract, unless the Contracting Officer
+has given prior written approval. Furthermore, any release of information which associates USSOCOM, Special Operation Forces (SOF), or any
+component command with an acquisition program, contractor, or this contract is prohibited unless specifically authorized by USSOCOM.
+Request for approval shall identify the specific information to be released, the medium to be used, and the purpose for the release. The
+contractor shall submit the request to the Contracting Officer at least 45 days before the propose date for release for approval. No release of
+any restricted information shall be made without specific written authorization by the Contracting Office.
+The Contractor shall include a similar requirement in each subcontract under this contract. Subcontractors shall submit request for
+authorization to release through the prime contractor to the Contracting Officer.
+The Contractor further understands that Title 18 USC Section 701 specifically prohibits the use of the USSOCOM emblem or logo in any medium
+(e.g., corporate website, marketing brochure, news paper, magazine, etc.) unless authorized in writing by USSOCOM. Forward any request to use
+the USSOCOM emblem or logo through the Contracting Officer.
+
+5652.215-9009 Personnel Changes before Award (2008)
+As prescribed in 5615.209(k), insert the following provision,
+Offerors shall verify and ensure the continuing availability of personnel for whom resumes are required and have been submitted. If personnel
+substitutions/changes occur prior to award, the offeror shall immediately notify the Contracting Officer. Failure to do so may render the
+proposal unacceptable.
+
+
+5652.215-9016 Technical and Contractual Questions Concerning This Solicitation
+All questions concerning this procurement, either technical or contractual must be submitted in writing to the Contracting Office. No direct
+discussion between the technical representative and a prospective offeror will be conducted unless it is deemed necessary by the Contracting
+Officer. Questions shall be sent to the following point of contact:
+
+Contracting Officer:   Matthew Morelewski
+Email:                 Matthew.Morelewski@navsoc.socom.mil
+Telephone:       619-537-1360
+Address:         Naval Special Warfare Command
+                 3632 Guadalcanal Rd. Bldg 401
+                 San Diego, CA 92155-5599
+5652.233-9000 Independent Review of Agency Protests (2011)
+All protests shall be submitted through the Contracting Officer. A request for an independent review of the protest decision shall be made
+through the Contracting Officer to the HCD/FCO. If the HCD/FCO is the Contracting Officer, submit the request in accordance with FAR
+33.103(d)(4) to: Chief, SORDAC-KA, 7701 Tampa Point Blvd., MacDill AFB, FL 33621, Fax (813) 826-7504.
+5652.237-9000 Contractor Personnel Changes (1998)
+(a) The contractor shall have the right to remove his personnel assigned to perform the tasks hereunder and to substitute other qualified
+personnel provided that the Contracting Officer is notified of such removal and replacement. The contractor shall notify the Contracting Officer
+prior to such change, giving the new employee's name, security clearance and technical qualifications.
+(b) Any removals or replacements for the convenience of the contractor shall be at no additional cost to the Government. Cost to be borne by the
+contractor include but are not limited to time of travel, travel and training costs for replacement personnel.
+(c) Removals or replacements of contractor personnel shall be considered for the convenience of the contractor except when such removal is for:
+(1) employees removed as a result of cancellation or completion of the contract,
+(2) employees replaced due to death or incapacitating illness or injury,
+(3) or employees removed or replaced at the Government's request.
+(a) If any employee removes him/herself from the employ of the contractor, such removal will be at no additional cost to the Government.
+5652.237-9001 Key Personnel Requirements (2003)
+As prescribed in 5637.110(b), insert the following clause,
+ (a) Certain experienced professional and/or technical personnel are essential for successful accomplishment of the work to be performed under
+this contract. Such personnel are defined as "Key Personnel" and are those persons whose resumes were submitted for evaluation of the proposal.
+The contractor agrees that such personnel shall not be removed from the contract work or replaced without compliance with the following:
+(1) If one or more of the key personnel, for any reason, becomes or is expected to become unavailable for work under this contract for a
+continuous period exceeding 30 work days, or is expected to devote substantially less effort to the work than indicated in the proposal or
+initially anticipated, the contractor shall, subject to the concurrence of the Contracting Officer or an authorized representative, promptly
+replace personnel with personnel of equal ability and qualifications.
+(2) All requests for approval of substitutions hereunder must be in writing and provide a detailed explanation of the circumstances
+necessitating the proposed substitutions. The request must contain a resume for the proposed substitute, and any other information requested by
+the Contracting Officer. The Contracting Officer shall promptly notify the contractor of approval or disapproval in writing.
+(a) If the Contracting Officer determines that suitable and timely replacement of Key Personnel who have been reassigned, terminated or have
+otherwise become unavailable for the contract work is not reasonably forthcoming or that the resultant reduction of productive effort would be
+so substantial as to impair successful completion of the contract, the Contracting Officer may terminate the contract for default or for the
+convenience of the Government, as appropriate, or make an equitable adjustment to the contract to compensate the Government for any resultant
+delay, loss or damage.
+(b) The follow positions are identified as Key Personnel:  Project/Program Manager
+
+
+
+
+
+ATTACHMENTS
+
+Attachment I – Performance Work Statement (PWS)
+Attachment II – Past Performance Information Form
+Attachment III – Past Performance Report Form
+Attachment IV – CDRL’s 0001 – 0004
+Attachment V – Quality Assurance Surveillance Plan (QASP)
+Attachment VI – QASP Matrix
+Attachment VII – DMDC Sample Tie In Document
+

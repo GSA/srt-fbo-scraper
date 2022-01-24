@@ -1,0 +1,47 @@
+SECTION C STATEMENT OF WORK Title: Division of Global Migration and Quarantine (DGMQ) Media Library Website Enhancements C.1 BACKGROUND
+
+DGMQ had a critical need to have a centralized system so that images and other media can be shared and used for internal and external presentations, health communication and educational materials, and other division-related documents, reports, and materials. This system enabled fast and easy access to media files to more efficiently disseminate health information to help further the division's mission of reducing morbidity and mortality among globally mobile populations to prevent the introduction, transmission, and spread of communicable diseases. C.2 PURPOSE/ SCOPE OF WORK To complete the enhancements to the DGMQ Media Library website. C.3
+Task# 1 2
+
+TASKS TO BE PERFORMED
+Task Description Regular maintenance and updates as needed including changing text on the site, fixing breaks, etc. To help the user easily refine their results, consider also adding "filters" to the Search Results page that mirror options available on the advanced search tab. Previous search selections should be displayed as filters on the search results tab, and the user should have the ability to modify these directly from the search results tab. Incorporate a sorting function on the search results tab, with a default setting of "relevance," based on strength of match with search terms used.
+
+The dropdown choices used in the initial search can be made available on the search results page. This will allow the user to refine their search directly from the search results page. Can allow user to rank their top five (5) keywords with each media submission. Also requires a way to add relevant keywords to existing media entries. This will require creating new functionality to track top keywords and allow searches to return more relevant results. The previous enhancement on the upload page the user must upload a ZIP file in order to upload more than one media file.
+
+3
+
+4
+
+5
+
+6
+
+7
+
+To upload multiple media files, use a "drag-and-drop" functionality from a file on to the website. Note: According to the 508 Help Desk - IE10 is CDC's standard browser; it does not support this type of interaction. Other options would need to be researched. Explore the ability to sort My Media using mechanisms that the user can select, such as: Date added to My Media (e.g., most recent first), Date added to Media Library, Branch/unit/OD, alphabetical. Explore options to create "albums" or "folders" within the My Media space similar to "playlist" feature developed by YouTube. Users can create playlists, label the lists, and add links to media files that fall within that playlist category. This would provide users with a way to organize their My Media files without establishing a built-in filing structure. On the form, create a box for people to enter in keywords and custom keywords that populate in the box as you type. Users were not separating individual keywords with commas or semicolons. There may be other solutions. Explore "drag-and-drop" or "right-click and copy" functionality from the search results tab and My Media space to desktop and other places that allow more flexible movement of media directly into project files. Note: According to the 508 Help Desk, a workaround would need to be added that provides the same functionality using only the keyboard. The work around possibilities would be a basic HTML form. Add "Deselect all items on this page" button to the Results page.
+
+Will require adding multiple tables to the database and developing functionality to allow the creation, deletion, and updating of albums (revised from original estimate). Potentially use one box with a submit button. Each time a keyword is entered and submit is pressed the key word is added to a read only list. Key words populate in the box as you type (like outlook remembering e-mail addresses) Develop drag and drop functionality using Jquery and integrate it with the existing Media Library functionality. This functionality is not provided by Portfolio 11 API. A custom solution will have to be designed.
+
+8
+
+9
+
+C.4 GOVERNMENT FURNISHED MATERIALS No government furnished materials will be provided.
+
+C.5
+
+PERIOD OF PERFORMANCE 12/08/2014 ­ 12/07/2015 PLACE OF PERFORMANCE Work will be performed at the Contractor's worksite. DELIVERABLES/REPORTING SCHEDULE 1) 2) 3) 4) Task 1 is expected to be conducted throughout the period of performance. Tasks 2 ­ 4 are expected to be completed in the first 6 months of the period of performance. Tasks 5 ­ 9 are expected to be completed in the second 6 months of the period of performance. A final report summarizing the work accomplished during the period of performance should be provided to the Project Officer in month 12 of the contract.
+
+C.6
+
+C.7
+
+C.8
+
+TRAVEL No travel is anticipated for this requirement. SPECIAL REQUIREMENTS
+
+C.9
+
+Section 508 of the Rehabilitation Act (29 USC 794d) Section 508 of the Rehabilitation Act of 1973 (29 U.S.C. 794d), as amended by the Workforce Investment Act of 1998, and the Architectural and Transportation Barriers Compliance Board Electronic and Information (EIT) Accessibility Provisions (36 CFR part 1194), require that, unless an exception applies, all EIT products and services developed, acquired, maintained, or used by any Federal department or agency permit: (1) Federal employees with disabilities to have access to and use information and data that is comparable to the access and use of information and data by Federal employees who are not individuals with disabilities; and (2) Members of the public with disabilities seeking information or services from a Federal agency to have access to and use of information and data that is comparable to the access and use of information and data by members of the public who are not individuals with disabilities. Accordingly, any vendor submitting a proposal/quotation/bid in response to this solicitation must demonstrate compliance with the established EIT accessibility provisions. Information about Section 508 provisions is available at http://www.section508.gov/. The complete text of Section 508 Final Provisions can be accessed at http://www.access- board.gov/sec508/provisions.htm. The Section 508 standards applicable to this solicitation are identified in the Statement of Work/Specification/Performance Work Statement. In order to facilitate the Government's evaluation to determine whether EIT products and services proposed meet applicable Section 508 accessibility standards, offerors must prepare an HHS Section 508 Product Assessment Template, in accordance with its completion instructions, and provide a binding statement of conformance. The purpose of the template is to assist HHS acquisition and program officials in determining that EIT products and services proposed support applicable Section 508 accessibility standards. The template allows vendors or developers to self-evaluate their products or services and document in detail how they do or do not conform to a specific Section 508 standard. Instructions for preparing the HHS Section 508 Product Assessment Template may be found at http://508.hhs.gov. Respondents to this solicitation must also provide any additional detailed information necessary for determining applicable Section 508 standards conformance, as well as for documenting EIT products and/or services that are incidental to the project, which would constitute an exception to Section 508 requirements. If a vendor claims its products and/or services, including EIT deliverables such as electronic documents and reports, meet applicable Section 508 standards in its completed HHS Section 508 Product Assessment Template, and it is later determined by the Government ­ i.e., after award of a contract/order, that products and/or services delivered do not conform to the described accessibility in the Product Assessment Template, remediation of the products and/or services to the level of conformance specified in the vendor's Product Assessment Template will be the responsibility of the Contractor at its expense. The Applicable provisions of this solicitation are: 1194.21, .22, .24, .31, and .41.
+
+

@@ -1,0 +1,752 @@
+Table of Contents
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introduction
+
+This Concept of Operations (CONOPS) document provides a high-level description of the operating environment for the systems developed, maintained, enhanced and supported by the Department of State (DoS) Bureau of Consular Affairs (CA) Office of Consular Systems and Technology (CST). It serves as a guide to Offerors to gain a better understanding of the covered systems applicable to the blanket purchasing agreement (BPA).
+
+
+
+The mission of CA is to protect the lives and interests of American citizens living or traveling abroad, and to enhance the national security of the U.S. through the proper adjudication of U.S. passports and visas and issue passports to eligible U.S. citizens both within the U.S. and in other parts of the world. CST provides full system development life cycle support of the automated systems that support the CA mission, including development, enhancement, maintenance (DME), and technical support. 
+
+
+
+Scope
+
+The DME BPA acquisition scope of services includes support for all phases of software development to ensure DoS/CST applications and databases will enable their users to meet their mission goals and objectives in the vital areas of American citizen support, passport systems support, and visa systems support. These efforts include all phases of the software development life cycle (SDLC):
+
+Concept development
+
+Requirements analysis
+
+Systems design
+
+Systems development
+
+Systems integration
+
+Data Conversion
+
+System testing
+
+Preparation for deployment
+
+Production support.
+
+
+
+The DME contract will primarily support the Citizen Systems and Non-Citizen Systems Branches of the Enterprise Systems Development Division of the Office of Consular Systems and Technology (CA/CST/ESD).  The support for Management Systems has been allocated to small business contracts.  Support for existing Citizen and Non-Citizen systems will be migrated to the DME contract as existing contracts/tasks expire.     
+
+
+
+Objective
+
+The primary objective of the DME effort is to obtain DME and technical support services for Consular Automated Systems that will provide, at a minimum, the following benefits:
+
+electronic person- centric citizen and visa services case processing to the extent feasible 
+
+increased functionality 
+
+high degree of flexibility and scalability in meeting new and changing requirements
+
+flexible access to the integrated Consular Consolidated Database (CCD) 
+
+enhanced data sharing capability and data visibility
+
+increased access to other governmental databases
+
+common user interfaces and functionality for all users
+
+on-line customer self service
+
+better fraud prevention support
+
+increased internal controls including protection of personally identifiable information (PII)
+
+comprehensive reporting and management tools
+
+workload balancing
+
+lower recurring costs of ownership (i.e., training, development, and operations and maintenance
+
+increased and effective interfaces with other systems and applications
+
+unified business processes (and supporting systems) and reduced redundancy, and
+
+improved decision-making processes.
+
+
+
+Stakeholders
+
+The following organizations represent the major DoS stakeholders affected by the DME project:
+
+
+
+CA Front Office (CA)
+
+CA Passport Office Directorate (CA/PPT) 
+
+CA Overseas Citizens Services (CA/OCS) Directorate
+
+CA Fraud Prevention Programs (CA/FPP)
+
+CA Office of the Executive Director (CA/EX)
+
+CA Office of the Comptroller (CA/C)
+
+CA Policy Coordination and Public Affairs (CA/P)
+
+National Visa Center (NVC)
+
+Kentucky Consular Center (KCC)
+
+Domestic Passport Agencies
+
+Overseas Post Consular Sections 
+
+Office of Consular Systems and Technology (CA/CST) 
+
+Bureau of Information Resources (IRM)
+
+Other Federal Agencies (the Department of Homeland Security (DHS), Department of Justice (DOJ), intelligence community, Secret Service Agency (SSA), etc.).
+
+
+
+Major Projects Overview
+
+5.1 Global Visa System (GVS)
+
+The Global Visa System (GVS) project is a strategic effort of the Bureau of Consular Affairs that will transform and modernize the systems supporting visa operations domestically at the Visa Office (VO), Kentucky Consular Center (KCC) and National Visa Center (NVC) and overseas at all visa processing posts.  The resulting unified visa processing software solution will provide consolidated person-centric rather than the current case-centric visa data of existing systems.  The System will seamlessly share data to all authorized visa system users domestically and overseas, while providing a consistent and intuitive user interface. 
+
+
+
+All aspects of the GVS project will be designed in such a manner to support both immigrant and non-immigrant visa processing, facilitate data transfers, ease data entry requirements, and facilitate reporting efforts.   Implementation of the GVS project is expected to lower risk, costs and complexity to both CST and VO while raising productivity and reliance.
+
+
+
+The project scope includes, at a minimum, consolidation of the business processes and system functions in the current primary visa case processing systems: 
+
+Immigrant Visa Information System (IVIS)
+
+Diversity Visa Information System (DVIS)
+
+Immigrant Visa Overseas System (IVO)
+
+Non-Immigrant Visa System (NIV)
+
+
+
+In addition, secondary systems such as Immigrant Visa Allocation Management System (IVAMS), Petition Information Management System (PIMS), Visa Opinion Information Service (VOIS), and others may be leveraged by, or consolidated into, GVS at a later time as decided by the Government. 
+
+
+
+The Office of Consular Systems and Technology (CST or CA/CST) and VO will jointly sponsor this project and will closely collaborate throughout the entire project life cycle.  The GVS project will follow CST’s standard software lifecycle implementation processes and the Managing State Projects (MSP) methodology, the Project Management Institute’s (PMI) Project Management Body of Knowledge (PMBOK), and the Software Engineering Institute’s (SEI) Capability Maturity Model Integration (CMMI) methodologies.
+
+
+
+It is CA’s goal that the first release of the System be deployed in summer 2011, with worldwide deployment completing by 2012.  CST will continue to support the existing systems until their functionalities are completely encapsulated by and transitioned to GVS.  GVS is expected to remain in operation through 2020 and beyond.   CA will first replace domestic immigrant visa processing with the earliest GVS release as IVIS is the legacy visa system that least effectively supports current-state visa operations and is the most challenging system to adapt to emerging business needs.  In addition, CA chose NVC as its first deployment site as NVC has a geographically collocated user base and the transition would be one-to-one system replacement, unlike Overseas Posts, which currently use both IVO and NIV for visa processing.   
+
+
+
+Current Status:  The design and development of GVS is currently being executed under a separate contract.  Once delivered, the on-going maintenance and support of the GVS system may be covered under the DME contract.
+
+
+
+5.2 Global Citizen Services (GCS)
+
+The Global Citizens Services (GCS) project is a strategic effort that will transform and modernize the systems supporting services to US Citizens both domestically and abroad.  
+
+
+
+The GCS project goal is to develop a unified system that will support functions of both the Passport and Overseas Citizens Services Directorates to the extent feasible.  The new system will be a person centric case management system that will facilitate case tracking, increase internal controls, facilitate data transfers, ease data entry requirements, provide access to CA and external databases, provide commonality among systems, and include appropriate management tools.   Implementation of the GCS project is expected to lower risk, costs and complexity to both CST and end users while raising productivity, fraud prevention and process integrity.
+
+
+
+The project scope includes, at a minimum, the current systems involving US Citizens (TDIS suite, ACS, ATS, CRIS, IBRS, IPCA, PIERS, PMIS, OTIS, PLOTS, OPLSS). The project will include a functionality review of all systems, and enhanced functionality will be incorporated as appropriate.   
+
+
+
+Current Status:  GCS is currently in the concept development stage.  The design and development of GCS may be executed under the DME contract.
+
+
+
+Existing Systems
+
+Existing consular systems that may be enhanced and/or maintained under the DME contract are broken down into two categories:  Citizen Systems and Non-Citizen Systems.  The lists provided below are intended to be as comprehensive as possible but some existing systems/services may not be listed.  The fact that a Citizen or Non-Citizen system is not listed below does not preclude it from being supported under the DME contract.
+
+
+
+6.1 Citizen Systems
+
+The purpose of Citizen Systems is to support the Passport and Overseas Citizen Services business process both domestically and overseas.  The systems defined below are those that are in production at the time of solicitation for DME services.  New Citizen Services systems may be added and existing systems deleted during the period of performance of the DME contract. 
+
+
+
+American Citizen Services (ACS) 
+
+The ACS system supports the CA in providing assistance to American citizens living or traveling abroad. The ACS system is a collection of automated services and support functions that facilitate delivery of services to citizens overseas. The services ACS supports are: 
+
+arrest
+
+citizenship
+
+death
+
+financial assistance
+
+loss of nationality
+
+lost and stolen passport tracking
+
+property
+
+registration, and
+
+welfare/whereabouts.
+
+
+
+Acceptance Facility Database (AFDB) (Internet AFDB) 
+
+The AFDB manages registration of all acceptance facilities open for public service within the continental U.S. The system tracks contact information for each facility, hours of operation, training, and potential fraud cases encountered at each facility. Used by passport customer service managers at all domestic passport agencies, the system is web-based and homed on the passport wide-area network (WAN) (Intranet).  
+
+
+
+Adoption Tracking Service (ATS)
+
+ATS provides OCS/CI users with the ability to perform their inter-country adoption-related duties by automatically collecting case data from various DoS systems. ATS also provides an Internet-based component that supports the electronic collection of inter-country adoption-related data from other organizations that provide these services. The service provides the automated support needed to maintain information about Adoptions Service Providers (ASP), Accrediting Entities (AE), Adoption Authorities (AA), and inquiries related to these organizations.
+
+
+
+Consular Task Force (CTF) Management Service (CCD – CTF)
+
+The CTF Management Service is a web based service that is used by crisis task force operations to record and track information collected regarding U.S citizens involved in crisis situations overseas.
+
+
+
+Front End Processor (FEP)
+
+The FEP is an application that provides a communications interface to various front-end PPT clients for executing queries and other transactions with a backend system and databases. The FEP is a multi-threaded real-time processor that provides a communications interface, primarily through CA XML, for front end web and client server applications to back end systems and databases such as CLASSE, PIERS, and IPDB. The FEP has no presentation layer.
+
+
+
+Internet Based Registration Service (IBRS) 
+
+The IBRS is a centralized service that allows U.S. citizens to register with DoS. Using IBRS, citizens are able to register themselves with overseas consular sections via the internet using a computer and web browser software. IBRS reduces post personnel's data entry effort, standardizes the collection of registration information, and increases the number of worldwide registrations, while providing better service to American citizens. IBRS is closely linked with ACS and supplements the ACS registration service.
+
+
+
+International Parental Child Abduction System (IPCA) 
+
+IPCA tracks information about child abductions, from the initial stage through final resolution by the courts. The application tracks all documents, correspondence, and legal proceedings, and allows journal entries to be tracked by caseworkers. The information collected in IPCA is shared with the Federal Bureau of Investigations (FBI), the National Center for Missing and Exploited Children (NCMEC), Interpol, and other federal agencies as required. The IPCA software is used by the Office of Children's Issues (CI) within the CA. CI is responsible for the management and tracking of information related to international abduction and potential abduction cases, including their related subjects, action items, legal proceedings, documents, and notes.
+
+
+
+Consular Lost and Stolen Passport Database (CLASP) 
+
+CLASP is PPT's system for recording Lost and Stolen passport and reporting those passports to US Customs.  Records are entered into CLASP from TDIS, ACS and the CLASP Unit's Web based CLASP system.
+
+
+
+Electronic Passport Application Form Web Site (2DPPT)
+
+This web based system is used to collect passport applicant data with the following goals: 
+
+reducing the data entry burden at passport production facilities 
+
+establishing consistency in data collection 
+
+improving data integrity 
+
+allowing for the processing and analysis of all application data, and 
+
+providing more efficient and effective services. 
+
+The 2DPPT system provides an online application form that allows Internet-based users to: 
+
+enter information required by the passport application (DS-11) and renewal (DS-82) form 
+
+generate a barcode that contains applicant information; and 
+
+print the passport application form with the data.
+
+
+
+Online Passport Lost & Stolen System (OPLSS)
+
+The OPLSS will permit citizens to report a lost or stolen passport using the Internet and a standard browser. The system will reside on two web servers and two database servers. The OPLSS is based on an n-tier architecture. 
+
+
+
+Online Passport Renewal System (OPRS)
+
+The OPRS is the passport renewal submission component of the Consular Electronic Application Center Portal (CEACP) that will provide internet public users with electronic passport renewal forms to complete and submit with the on-line fee payment component. The passport application and passport renewal submission components will also include a payment capability via a link to pay.gov.  
+
+
+
+Online Passport Status System (OPSS) 
+
+OPSS is a software application that allows the public to search for the status of their passport application.
+
+
+
+Original Tracking & Information System (OTIS) 
+
+OTIS is a software application used by Passport Records management staff to search various passport databases.
+
+
+
+Passport Information Electronic Records System (PIERS) 
+
+PIERS is a query tool that allows users to search and view passport application records and vital records. PIERS users can also view related information from the Passport Records Imaging Systems Management (PRISM) database. This is the database of imaged applications. PIERS Query can search the following databases: 
+
+Passport Application Records and Images (PIERS/PRISM) and
+
+Vital Records.
+
+
+
+Passport Lockbox Manifest Search (PLMS)
+
+PLMS is a web-based application that helps passport agencies quickly search and locate paper passport applications in the batches and crates in which they were shipped to an agency, either by the application numbers, applicant names, applicant dates of birth, or by the agency names. LMS is a .NET 2.0 web application running on an Internet Information Services (IIS) server. It is supported by a SQL Server 2000 database as well as a .NET 2.0 Windows Service.
+
+Passports Lookout Tracking System (PLOTS) 
+
+PLOTS is a 3-tier system used to track passport fraud and the issuance of lookouts: front end in ASP, middle in VB/COM, back end in SQL 2000 stored procedures.
+
+
+
+Passport Records Imaging Systems Management (PRISM) 
+
+PRISM is a digital imaging system used on-site at passport agencies that scans and stores information in an easily retrievable format. The primary purpose of PRISM is to scan passport applications quickly, efficiently, and reliably and store these records for immediate access from any authorized PC terminal. PRISM was developed to perform and track the application images attached to each application for a U.S. passport. Scanning is done only after the application has been completely processed, meaning that the passport must already have undergone adjudication, book printing, and customer delivery. By default, the PRISM system tracks applications after they have been shipped back to CA/PPT/IML/R for records processing. Components of PRISM include:
+
+PRISM Central to Vital Records Reporting System (VRRS) Update Component
+
+PRISM to Passport Database Update
+
+Passport Records Storage, and
+
+Passport Records Database Component.
+
+
+
+Travel Document Issuance System (TDIS)
+
+TDIS is the automated passport system for issuing machine-readable passports domestically in conformance with worldwide standards established by the International Civil Aviation Organization (ICAO). TDIS is a custom client/server system. It is comprised of an application installed on the PCs at all passport agencies. The client application presents the user interface to the issuing personnel and communicates relevant information to the TDIS server in the computer room. The TDIS server process posts data to a SQL server database, also located in the computer room. With this system, the passport information is entered from the application into the TDIS database checks are performed against a variety of data sources such as namecheck, PIERS, and the In Process Database (IPD) to assist the adjudicator in determining whether to issue a passport. After adjudication, a passport book is printed with the digital photo of the applicant along with the required text data. A subset of this text data is printed in the Machine Readable Zone (MRZ) of the passport. After the photo and printing are applied, a holographic film called a "crystogram" is added to protect the printed information from wear, weather, and tampering. This is followed by a quality-control inspection. Creating a passport also requires a cashiering function, to account for any fees submitted with the application. Components of TDIS include:
+
+TDIS – Correspondence and Records Management System (CRMS)  
+
+TDIS – Diplomatic and Official Passport Tracking System (DOTS)
+
+TDIS – In-Process Database (IPDB)
+
+TDIS – Multiple Issuance Database (MIV), and
+
+TDIS –VRRS.
+
+
+
+Tracking Responses and Inquiries for Passports (TRIP)
+
+The TRIP application is a commercial-off-the-shelf (COTS) product that has been modified to meet functional requirements for CA/CST. The TRIP system allows CA/CST to keep records on every contact with customers that call. TRIP allows personnel to bring up TDIS inquires on Passport Application records and view the information. Each phone representative is able to see a case history as well as generate notes on each case. Emails can be generated for each agency; it also enables each user to access the knowledge base, which contains DoS information that is referenced.
+
+
+
+User Manager Web Security (UMWS)
+
+UMWS is a single sign-on application that allows users to be assigned privileges to access passport systems to perform their tasks. User accounts for CA personnel, who are authorized to access PLOTS/PIERS/PIERS Query/MIS and PRISM systems, are created and assigned the appropriate privileges. The user can then perform the tasks associated with the privileges. As per the security categorization efforts, UMWS is considered a major application.
+
+
+
+Visa Request (VR)
+
+The Passport Special Issuance Agency (SIA) is responsible for producing diplomatic, official, and tourist passports for various governmental and no-fee passports. As a service to their customers, the agency obtains visas from embassies and consulates of foreign governments in the Washington DC area. In obtaining those visas, the agency tracks and monitors the letters and passport applications sent to and collected from the respective foreign offices.  To track those applications, the VR program is used by agency staff and couriers to track and monitor the status of each transfer, and schedule deliveries and pickups from the foreign offices back to the SIA office.
+
+
+
+6.2 Non-Citizen Systems
+
+The purpose of Non-Citizen Systems is to support the Office of Visa Services business process both domestically and overseas.  The systems defined below are those that are in production at the time of solicitation for DME services.  New Non-Citizen Systems may be added and existing systems deleted during the period of performance of the DME contract. 
+
+
+
+Admissibility Review Information Service (ARIS) (CCD – ARIS)
+
+ARIS is a CCD based web service that improves the nonimmigrant visa waiver request process by providing the ability for posts and ARO officers to create, submit, and review waiver requests in one central database via the CCD or directly through the NIV system.   
+
+
+
+Consular Electronic Application Center (CEAC) 
+
+The CEAC is an internet-based full service application service center whereby applicants for visa services complete and submit an application and if needed, make payments, schedule appointments, attach photos and documents, link to fingerprints and check the status. CEAC is a collection of .NET web forms that allow applicants to complete any array of visa services through the internet. The primary functions of the CEAC systems are to: 
+
+allow NIV and IV applicants to fill out and submit applications and supporting documents online via the internet 
+
+make payments if necessary and print invoices
+
+schedule appointments
+
+upload photos to ensure the photo will meet quality assurance requirements 5.) Link fingerprints captured remotely, and 
+
+check the status of their applications or appointments.
+
+Currently deployed components of CEAC include:
+
+CEAC A/G/NATO DS-1648 application (AGNATO) 
+
+CEAC General NIV DS-160 Application form (CEAC GENNIV)
+
+CEAC Image Quality Over the Web (CEAC IQOTW)
+
+CEAC Applicant Medical Forms (CEAC MED)
+
+CEAC Payment Processing Service (CEAC PPS)
+
+CEAC IV Application DS-260 Application Form (IVAPP)
+
+Consular Electronic Application Center Portal (CEACP)
+
+CEAC Web (CEACWeb)
+
+CEAC Case Tracking (CTRAC), and
+
+CEAC IV Choice of Address and Agent DS-261 form (IVAGENT).
+
+
+
+CEAC Remote Data Collection (RDC) 
+
+RDC is the custom-built data submission component that provides the ability to capture and associate biometric and image data collected at approved off-site/contractor sites. The data collected via RDC includes photo, documentation, and fingerprints. The CEAC RDC component serves as an off-site data submission component. RDC data is linked to NIV DS-160 applications submitted through the CEAC GENNIV component via barcode number. RDC has a client-side application used by approved contractors to collect biometric data. The biometric data is transmitted over the public internet to the State demilitarized zone (DMZ), where it is routed to the Post database. RDC uses the Ten Print Live Scan (TPLS) component to collect fingerprints, and the photo live capture component to take pictures of applicants. Other supported peripherals include a barcode scanner and a barcode printer for printing labels. Document scanning is enabled by either the barcode scanner or a separate document scanner. RDC has a web service in the public DMZ. The RDC web service accepts data from the RDC client for saving to the data DMZ, that relays the applicant’s given name, surname, photo (if available), place of birth (country), passport number, CEAC application completion date, CEAC application status, and date of birth for download to the RDC client. The barcode is the key to return the data, and is protected by use of SSL certificates.
+
+
+
+Diversity Immigrant Visa Information System (DVIS) 
+
+The DVIS is an information management system used at the KCC to manage the processing of Diversity Visa lottery applications. The system provides the recording of applicant information, the creation and recording of correspondence with the applicant, security checks, interview scheduling, and the transmittal of the data to the IVO system at post for final processing. In addition to the IVO system interface, DVIS interfaces with the electronic Diversity Visa (e-DV) system, the Consular Lookout and Support System (CLASS), and the FBI’s NCIC database. KCC uses DVIS to process approximately 6.5 million applications received each year for the Diversity Lottery. Upon completion of the registration process, all cases are assigned a random number by the DVIS lottery program. The random number is used to determine the winners of the yearly lottery. Since 2003, all persons registering for a chance to win the diversity lottery have had to apply through a web site designated by the DoS. Upon completion of facial recognition scans, the application data is electronically forwarded from e-DV to DVIS for normal application processing. KCC uses DVIS to perform: 
+
+data entry 
+
+mail receipt and tracking 
+
+document review and verification 
+
+fee collection 
+
+case qualification 
+
+case interview scheduling 
+
+preparation of case folders for posts 
+
+case problem resolution 
+
+correspondence 
+
+fraud prevention and duplicate case detection 
+
+clearances include NCIC, CLASS. and Security Advisory Opinion 
+
+report visa demand to the VO 
+
+verification of all stages of case processing with rigorous quality control procedures, and 
+
+communication with the general public and federal organizations.
+
+
+
+Electronic Diversity Visa (EDV) 
+
+The EDV system is a website application used by potential diversity visa applicants to enter information electronically for possible lottery selection for the diversity visa program. The EDV system eliminates the need for paper applications through the U.S. Postal Service, with subsequent manual data entry and helps reduce costly data entry errors. This information is collected, run through facial recognition software (currently IDENTIX), packaged and sent to DVIS via server or files stored in a directory made accessible to DVIS. The EDV functions will be provided by a combination of custom software, COTS software, and COTS hardware. The custom software supporting the applicant will consist of HTML and middleware for the web services, and stored procedures in the database. The custom software supporting the KCC technicians could consist of HTML and Jscript/VBscript, Visual Basic, or Oracle Forms. The COTS software will consist of the Microsoft Windows 2000 operating system, including IIS, the Oracle 9i Relational Database Management System, and most probably the Visage FaceTOOLS software development toolkit. The COTS hardware will consist of networking equipment such as routers and firewalls, and computing equipment such as web servers, database servers, and tape backup machines. The system will provide 24 hour availability for the 30 days of the lottery application window. It will be designed to process and store a minimum of nine million diversity visa applications. EDV is divided into two phases:
+
+EDV Phase 1
+
+The DoS’s Electronic Diversity Immigrant Visa Program is administered to make available 50,000 permanent resident visas annually to persons from countries with low rates of immigration to the United States via an annual lottery process.
+
+EDV Phase 2
+
+Used to clear the application entry data from EDV Phase 1 of duplicates and fraudulent data in preparation for transfer into DVIS.
+
+
+
+
+
+
+
+electronic SAO Portal (eSP)
+
+eSP is a web-based application designed to accept SAO name check requests as generated by the CCD (sensitive but unclassified (SBU)), upload IDs and SAO responses, and provide an interface for staff to view secret level SAO responses. The user can upload an SAO request file or upload an ID file or an SAO response file. The user can also search for SAO request or response files; generate or download an extract file (convert secret response to an SBU numeric value) for upload to the CCD; view upload IDs previously uploaded to eSP; and manage a list of the reference documents at L/C cited in SAO responses. Users designated as system administrators can assign eSP roles to users.
+
+
+
+Electronic Visa Application Form (EVAF) 
+
+This is a web-enabled version of the DS-156 and DS-1648 forms. Applicants can enter data directly into the forms, then generate and print the completed application for presentation to post. The printed forms contain a 1D (linear) identification barcode and a 2D barcode containing the applicant's data. Once the applicant presents the signed application form, the post can scan these barcodes to import the data into the remote data entry system (RDS) server NIV systems. The application form is available in English and several other languages.
+
+
+
+Independent Namecheck (INK) System
+
+The INK system allows posts to conduct CLASS namecheck queries and send lookouts to namecheck systems. It is a stand-alone windows application that does namechecks. It includes sending lookouts to CLASS, maintaining CAT-1 files, scanning documents for lookouts and CAT-1 files, and printing reports of INK transactions. Online help is available. Users are assigned "roles" for INK, which ensures proper access to INK records.
+
+Immigrant Visa Allocation Management System (IVAMS) – 
+
+IVAMS receives immigrant visa authorization requests from all immigrant visa processing posts (including the NVC) and from INS. It controls the allocation of immigrant visa numbers in accordance with the rules on foreign state chargeability, priority date, and preference category as specified in the Immigration and Nationality Act. This system automatically calculates visa quotas based on U.S. Government policies and sends qualifying dates and allocation information to the IVIS system at NVC and IV posts abroad. IVAMS is a decision support system from which calculations are derived which assist in the allocation of managing immigrant visa numbers to posts by foreign state chargeability, priority date, and preference category based on the posts' monthly reports of qualified applicants. The system also acts as a repository for worldwide visa statistics. 
+
+
+
+Immigrant Visa Allocation Management System Web (IVAMSWeb) 
+
+IVAMSWEB is an internet-based system used by the DHS’ Citizenship & Immigration Services (CIS) to request immigrant visa allocation numbers through a web interface to IVAMS. IVAMSWEB requires public key infrastructure (PKI) cards, and cannot be accessed on the internet without an authorized PKI card and card reader. IVAMSWEB transmits these requests securely and automatically over the internet, evaluates each request according to a set of user-defined business rules, and returns the results to DHS. IVAMS acts as a repository for worldwide visa statistics. It receives immigrant visa authorization requests from all immigrant visa processing posts (including NVC) and INS, and controls the allocation of immigrant visa numbers in accordance with the rules on foreign state chargeability, priority date, and preference category as specified in the Immigration and Nationality Act.
+
+
+
+Immigration Visa Information System (IVIS) 
+
+IVIS is an information management system designed to assist the NVC to track and process immigration visas based on local necessities and requirements established by the DoS. The NVC performs visa-processing activities that track immigration requests from initial NVC receipt (from the Immigration and Naturalization Service (INS)) through final disposition to the Posts. NVC processing include: 
+
+data entry 
+
+mail receipt and tracking 
+
+document review and verification 
+
+fee collection 
+
+case qualification 
+
+case interview scheduling 
+
+preparation of case folders for posts 
+
+case problem resolution 
+
+correspondence 
+
+fraud prevention 
+
+clearances include NCIC, CLASS and Security Advisory Opinion 
+
+report visa demand to the Visa Office 
+
+verification of all stages of case processing with rigorous quality control procedures, and 
+
+communication with the general public and federal organizations.
+
+
+
+Immigrant Visa Overseas (IVO) System 
+
+The IVO system provides the automated support needed to issue visas to individuals who wish to establish permanent residence in the United States. These visas must be issued in accordance with DoS regulations; the system helps to ensure compliance with those regulations. The primary functions of the IVO system are:
+
+case management 
+
+applicant management 
+
+visa allocation management 
+
+fingerprint and image capturing, and 
+
+transmission to IDENT.
+
+IVO handles the final processing of immigrant visas and diversity immigrant visas. It supports the maintenance of application records, performs CLASS name checks, processes clearances electronically or via clearance letters, handles quota control functions, permits queries by individual record, prepares correspondence, schedules appointments, generates statistic and management reports, records the officer's decision, and prints (and accounts for) visas and foils. IVO sends updated visa refusal information to CLASS, distributes issuance and refusal information to a domestic repository, scans application forms and supporting documents, and allows for the handling and tracking of visa inquiries received from government agencies and Congress. Information is shared from this system with many agencies and organizations, usually through CCD. 
+
+
+
+Non-Immigrant Visa (NIV) System 
+
+The NIV system is a core consular system that automates and streamlines the post's processing of non-immigrant visa applications. It is used to receive applications and documents, CLASS name checks, biometric checks, and other checks as required; record officer's decision; and print and account for visas and foils. NIV updates visa refusal and issuance information to CLASS, distributes issuance and refusal information to a domestic repository, scans application forms and supporting documents, and allows for the handling and tracking of visa inquiries received from government agencies and Congress. NIV utilizes the accountable items component to track and regulate visa foil inventory and usage at post.
+
+
+
+Petition Information Management Service (PIMS) (CCD – PIMS)
+
+PIMS is a CCD based web service used by the KCC to record and track NIV worker petitions received from DHS.   
+
+
+
+Remote Data Entry System (RDS) 
+
+The RDS system is used by posts to process the RDS client data from remote sites that handle large numbers of NIV applications. After being scanned for viruses, the data is downloaded to the NIV application for processing. The post then uses the RDS server software to read the flat file, verify the data, and transfer the data to NIV.
+
+
+
+Remote Data Entry System (RDS) Client 
+
+The RDS Client aids in collecting data from NIV applicants. The client software is distributed to remote sites outside of the consulates. It is a standalone program that can be installed on any PC meeting the software requirements. Once it is running, the RDS Client is used to take applications for several different U.S. visa types. A flat file is created by RDS Client software. The remote provider sends the file (usually on a disk) and, if applicable, the paper application forms and supporting documents, to the post.
+
+
+
+Ten Print Live Scan (TPLS) System 
+
+The TPLS system enables foreign service officers (FSOs) to electronically collect fingerprints of visa applicants. TPLS is a component that is called by the NIV and IVO systems.  
+
+
+
+Visa Opinion Information Service (VOIS) 
+
+VOIS is a .NET Web application with single sign-on authentication provided by the CCD DataMart. Feature and data access control is via role-based security using CCD controlled authorizations. All business logic is implemented in Oracle PL/SQL stored procedures provided by the CCD and all persistent data is stored in the CCD.
+
+
+
+Waiver Review System (WRS) 
+
+The WRS supports the CA VO Legal Waiver Division (CA/VO/L/W) and the Public Inquiries Division (CA/VO/P/I). WRS is used to track the application and adjudication process of exchange visitors with J Visas seeking to waive the two-year foreign residency requirement 212(e) of the Immigration and Nationality Act. 
+
+
+
+J Waiver Online (JWOL) and Internet Status Check System (ISCS) are internet-facing web sites that support WRS. JWOL allows users to generate a waiver application and ISCS allows users to check the status of that application.
+
+
+
+Operations Support
+
+Operations support may be required for one or more of the systems listed in Section 6.  This support may be required for operational systems that do not run on the Department’s OpenNet network and/or within the Departments Internet DMZ and/or are not currently supported by CST operations support groups.  An example would be the Electronic Diversity Visa Lottery System (eDV), which is currently hosted and administered outside of Department provided facilities.  Operations support activities would include, but would be not limited to:
+
+
+
+Host applications
+
+Administer users
+
+Update security patches
+
+Perform database backup
+
+Provide operational training
+
+
+
+
+
+
+                                                          DME INDUSTRY DAY Feb 11, 2010
+
+DESCRIPTION:
+
+The Office of Consular Systems and Technology (CST), Consular Affairs (CA), Department of State (DoS) will be conducting a Pre-Solicitation
+Industry Day for the Development, Modernization and Enhancement (DME) acquisition on Thursday February 11 , 2010. The meeting will provide
+interested companies with an overview of the DME Program and an opportunity to gather more information prior to the solicitation being issued. A
+question and answer session will also be held for interested parties to obtain information from the Government.
+
+The purpose of the procurement is to acquire software engineering DME, technical and operations support services under a blanket purchase
+agreement (BPA). The DoS intends to award BPAs to three to five contractors. DME work includes support for any and all phases of the software
+development life cycle. Technical support services include Level 3 support, analytical and research support, and installation of patches, and
+emergency and urgent releases.    Operations support may be required for operational systems that do not run on the Department’s OpenNet network
+and/or within the Departments Internet DMZ and/or are not currently supported by CST operations support groups.  The BPAs will support automated
+Visa, American Citizen and Passport systems that support the Bureau’s major business processes.  The contractor will perform work on this effort
+primarily for CA/ CST.
+
+Upon issuance of the BPAs, task orders will then be generated and competed based upon approved projects, and separate Government technical
+monitors will track, monitor, and approve invoices for the projects supported by the Contracting Officer’s Representative (COR).
+
+Development, Modernization, and Enhancement is defined as:
+
+Development of New Information Technology (IT) solutions—create and deliver a new IT solution to the production environment, to meet a business
+need or solve a business problem.
+
+    • Conduct full software development life cycle (SDLC) activities to provide new IT solutions including concept of operations, requirements
+      analysis, design, development, and quality assurance testing;
+    • Support system security;
+    • Support the training contractor;
+    • Support independent verification and validation (IV&V) and deployment activities, including all systems documentation and intellectual
+      property.
+Modernizing Existing IT Solutions—modernize or re-engineer IT solutions that are in production, to replace a legacy system or application with a
+modernized, re-engineered, or new-technology solution, potentially impacting existing business processes and operations. These requests
+typically apply to an IT solution that has:
+
+    • Reached end-of-life or is obsolete,
+    • Maintenance or enhancements will result in low return on investment,
+    • Maintenance or enhancements are no longer feasible, viable, or scalable to meet business needs.
+Modernization projects usually entail disposing of or decommissioning the IT solution being replaced.
+
+Enhancing Existing IT Solutions—changes to IT solutions that are in production, to provide new, revised, or deleted functionality, features, or
+capability. These requests typically result from changes in federal mandates, changed business processes, major version upgrades, or enhanced
+business needs, but there is no intent to replace an existing IT solution.
+
+Software Maintenance is a change or group of changes to IT solutions that are in production, to enable them to operate according to current
+approved requirements, and does not change functionality, features, or capabilities. These requests can result from defects or bug fixes;
+business system regression testing due to infrastructure changes, vendor patches or service pack releases; or minor version upgrades, but are
+not emergency or urgent, allowing for planned activities.
+
+Attached to this announcement is the Concept of Operations (CONOPS), for the envisioned Request for Quote, as this procurement will be solicited
+of the GSA IT 70 Schedules.
+
+Attendees are encouraged to submit written questions for the Q&A session prior to January 29, 2010 in word document format via e-mail at the
+following e-mail address: PASATIEMPOGA@STATE.GOV. Note: This is NOT a "bidders conference" and this announcement is not a contract, request for
+proposal, a promise to contract, or a commitment of any kind. The Government will not assume liability for costs incurred by any offeror for
+presentations, marketing efforts or data offered for examination; therefore the cost of preparing information in response to this notice is not
+considered an allowable direct charge to the government.
+
+Date: Thursday, February 11, 2010
+Location: Noblis, 3150 Fairview Park Drive South, Falls Church, VA 22042, Auditorium
+Time: Check-in 8:30 to 9:30; Industry Day Session, 9:30 to 11:45
+
+Registration:
+
+Please limit attendance from each company to two individuals.  Please register via email to the Government program manager, Gary Pasatiempo at
+the following e-mail address: PASATIEMPOGA@STATE.GOV.  Attendees must register by Friday January 29, 2010 to ensure access to the facility.
+Please include the following information for each registrant: (1) first and last name and (2) citizenship.
+
+Contact Information:
+Gary Pasatiempo, DME Program Manager
+(202) 663-1404
+Pasatiempoga@state.gov
+
+Alternate POC:
+Shelly Matte, Branch Chief Citizenship Systems
+(202)663-2407
+mattesa@state.gov
+
+Contracting Office Contact Information (AQM to provide)
+Primary Point of Contact:
+Secondary Point of Contact:
+
+Directions to the facility:
+Directions from Dulles Airport (IAD)
+Dulles Access Road to I-495 South (Richmond) to Exit 50B, Rte. 50 East to Fairview Park South. When taking Exit 50B, you will need to stay to
+the right and follow the exit marked Fairview Park South. Follow Fairview Park Dr. South and Noblis will be on the right.
+Estimated taxi fare: $30 (one way)
+Directions from Ronald Reagan Washington National Airport (DCA)
+Rte. 66 W to I-495 South Richmond to Exit 50B, Rte. 50 East to Fairview Park South. When taking exit 50B, you will need to stay to the right and
+follow the exit marked Fairview Park South. Follow Fairview Park Dr. South and Noblis will be on the right.
+Estimated taxi fare: $30 (one way)
+Directions from Baltimore-Washington International (BWI)
+I-95 South. Follow I-95 South to exit 27 (I-495 West) to Silver Spring and Rockville. Take I-495 West for approximately 20 miles and take exit
+50B (Rte 50E). When taking exit 50B, you will need to stay to the right and follow the exit marked Fairview Park South. Follow Fairview Park Dr.
+South and Noblis will be on the right.
+Estimated taxi fare: $80 (one way)
+Other Transportation
+Subway Station: Dunn Loring Metro (1 mi W)
+Train Station: Union Station/Amtrak (18 mi E)
+Parking and Guest Registration Information: Attendees are welcome to use the parking garage and then enter guest registration area via the south
+lobby. http://www.noblis.org/AboutNoblis/Locations/Pages/DirectionsToFairviewPark.aspx

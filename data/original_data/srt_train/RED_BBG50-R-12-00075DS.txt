@@ -1,0 +1,707 @@
+The U.S. Broadcasting Board of Governors, (BBG), International Broadcasting Bureau (IBB), pursuant to Federal Acquisition Regulation (FAR) Subpart 12.6 intends to issue a Combined Synopsis/Solicitation for commercial items in accordance with format of Subpart 12.6 as supplemented with additional information in this notice.  This announcement constitutes the only solicitation and proposals are being requested in accordance with below Statement of Work.   The North American Industry Classification System (NAICS) Code is 518210.  This Solicitation Number BBG50-R-12-00075DS is issued as a request for proposal (RFP) that will result in a single award of a Firm Fixed Price contract term of five years consisting a of Base Year with (4)  four one Year Options using FAR Part 15 (Contract by Negotiation) procedures to provide for Tag Management Tool. This is a single tag management tool to collect, analyze, report on and make agency-wide website usage information available across all USIM web properties.  
+
+SCHEDULE B - PRICE 
+
+
+
+ITEM									UNIT		FIXED
+
+NO.	DESCRIPTION					QTY	UNIT	PRICE		PRICE
+
+
+
+Period of Performance:  01 July 2012 – 30 June 2013
+
+
+
+01	Base Year					1	LT	$_______	$______
+
+	Tag Management Tool
+
+
+
+Period of Performance 01 July 2013 – 30 June 2014	1	LT	$_______	$______
+
+
+
+Option Year I
+
+Tag Management Tool
+
+
+
+Period of Performance 01 July 2014 – 30 June 2015	1	LT	$_______	$______
+
+
+
+Option Year II
+
+Tag Management Tool
+
+
+
+Period of Performance 01 July 2015 – 30 June 2016	1	LT	$_______	$______
+
+
+
+Option Year III
+
+Tag Management Tool
+
+
+
+Period of Performance 01 July 2016 – 30 June 2017	1	LT	$_______	$______
+
+
+
+Option Year IV
+
+Tag Management Tool
+
+
+
+
+
+The following clause is hereby applicable:
+
+
+
+52.217-9  Option to Extend the Term of the Contract
+
+
+
+The Government may extend the term of this contract by written notice to the Contractor with 60 days; provided that the Government gives the Contractor a preliminary written notice of its intent to extend at least 60 days before the contract expires.  The preliminary notice does not commit the Government to an extension.
+
+If the Government exercises this option, the extended contract shall be considered to include this option clause.
+
+The total duration of this contract, including exercise of any options under this clause, shall not exceed (5) years.
+
+
+
+STATEMENT OF WORK
+
+General Information
+The Broadcasting Board of Governors (BBG) is seeking a tag management tool to manage web analytics tags and to enable the BBG to easily and consistently roll out other javascript tag based products on specific websites for all of US International Media (USIM). The BBG’s initial purposes for this tag management tool are: 
+
+To aid in implementing a new web analytics tool and unified tagging structure across all BBG websites and to facilitate accurate and complete tagging.
+
+To decrease, where possible, the impact of web analytics and other tags on our page load time. 
+
+To be able to stand up new web analytics tools quickly and on whatever subset of sites is relevant, especially to try new tools or modify existing ones.
+
+To make it simple to customize tags on specific site sections or pages to get as much information as needed from online measurement and analysis tools.
+
+Problem Statement
+BBG is seeking a tag management tool to manage and optimize 3rd party code snippets across all USIM websites, mobile sites, and mobile applications. The tag management tool shall manage tags including, but not limited to: analytics, surveys, widgets, marketing campaigns, chat, conversion tracking, a/b testing, events.  The tag management tool shall make it easy specify a site section or page where certain tag or tag element should be placed. 
+
+
+Scope of USIM
+USIM has a growing digital media footprint across five international news networks which include 100+ news channels targeting audiences worldwide.  This includes 100+ public facing news websites in 60+ languages, with about 25 million page views weekly and about 1.25 billion page views annually.  These websites generated between 32 million and 45 million visits monthly over the past year. Mobile versions of the websites are also available, and account for an additional 1.5 million page views weekly and 60 million page views annually, and more than 3 million visits monthly.  USIM currently supports a few iOS and Android mobile applications, but we will have more in the future.
+
+
+USIM is comprised of five networks. Please visit the sites referred below for the most up-to-date list of websites and domains:
+
+
+
+Radio Free Europe/Radio Liberty (includes all sites listed here:  - click on “Sites by Language” on the top left corner of the page)
+
+Radio & TV Marti - 
+
+Radio Free Asia (includes all sites listed here:  - websites are linked in the grey nav bar across the top of the page)
+
+Alhurra /Radio Sawa –  and  
+
+Voice of America (includes all sites listed here: http://www.insidevoa.com/about/faqs/  - scroll down to “In 43 Languages”)
+
+
+
+USIM is currently in transition from 5 core content management systems to 1-3 core content management systems (CMS). Many USIM sites are moving to the same .NET based CMS that has been developed in-house and is supported fully by USIM.  Some sites may remain on .NET or Plone. Additionally, USIM uses self-hosted Wordpress for blogs and smaller websites. USIM uses one additional CMS for mobile optimized websites.
+
+
+Core users:
+USIM has several offices and individuals vested in tagging and analytics. There is one central technical office for all website management (based in Prague) and a group of web analysts spanning the organization (DC area and Prague) who will need access to the tag management tool and administrator-level training. There are also inbound marketing groups, developers, and content creators who may need to tag individual projects or to configure or add additional tools through the tag management tool.
+
+
+Initial use: 
+The initial setup of the tag management tool will be to apply a new web analytics (unknown) to all BBG sites. A detailed explanation of the setup requirements for the new web analytics tool can be found in Appendix A.  
+
+
+Additionally, this tool will be used to manage Facebook, Twitter, Google and Bing webmaster authentication tags on all websites.
+
+
+Future uses:
+Some future use cases for adding tags to the site include: 
+
+Onsite surveys or web-based usability testing.
+
+A/B or multivariate testing.
+
+Marketing campaign conversion tracking.
+
+Small-scale web analytics tool implementation or trials on certain sites.
+
+Small-scale launch of chat, poll, or other widget-based technology.
+
+Unique challenges:
+USIM’s digital audience comes through high-speed Internet connections in some countries and from dial-up connections in others. Many users access USIM content through mobile optimized websites using devices ranging from WAP flip phones to 4G smart phones. An ideal web analytics tool will be able to organize traffic by device (mobile, desktop, tablet – and their respective brands and models), and will have a rigorous method for tracking  or accounting for visits that come through less advanced technology, including dial-up, browsers that do not run javascript or do not accept cookies, WAP phones, etc.
+
+
+As an organization, the BBG works in 60 languages using UTF-8 fonts. USIM content is produced in all 60 of these languages, and a tag management tool shall support these languages used as elements of tags (the title of an article, the keyword that was searched, other tags, etc.) or input via the tag management tool.   It is not required that a tool have a user interface in these languages.  A complete list of our languages is in Appendix 2.
+
+
+Period and place of performance
+The tag management service will be a 12-month base period from the effective date of award (i.e. July 1, 2012 – June 30, 2013), with (4) one-year option periods. Kickoff meeting and technical training may be held at BBG headquarters in Washington, DC. All other work is to be performed at the Contractor’s facility unless specified and approved by the Contracting Officer.
+
+
+Deployment Schedule and Deliverables
+Within 7 days of award: 
+
+All licensing or provisioning of tool is complete and BBG technical implementation team has access to the tool and documentation. 
+
+A Kick-Off meeting with the Contractor bringing key personnel (Contractor’s project manager/representative, lead technical staff and lead translation manager) to a meeting at BBG. – To be scheduled with Contracting Officer.
+
+Within 10 days of contract award: 
+
+Delivery dates set with Contracting Officer. This tag management tool will be used in the initial deployment of a web analytics tool contracted at the same time. As such, initial setup, technical training, and tag configuration delivery deadlines will be coordinated with the web analytics deployment schedule. – To be scheduled with Contracting Officer, in coordination with Web Analytics tool provider, BBG implementation lead, and COR.
+
+Weekly, after Kick-Off meeting:
+
+During implementation – Weekly call with implementation lead and COR on the status of implementation and setup of tag management tool. To be scheduled with the COR each week
+
+After implementation – weekly call with COR on the status and performance of tool. To be scheduled with COR each week.
+
+Optional line items: 
+BBG’s initial deployment of a tag management tool will fulfill basic needs, as outlined in the problem statement above. However, over the lifetime of this project, the BBG may seek additional technical or professional services. As such, please provide any recommended services or add-ons as optional line items in the proposal, including, but not limited to, the following:
+
+Professional services and training for initial implementation
+
+Additional professional services and training
+
+Professional services and training for additional tools (ie. Adding a different type of tag after initial implementation)
+
+24/7 support
+
+Standard (business hours) support
+
+Auxiliary or add-on tools to supplement core proposed tool
+
+Since the BBG is in a period of flux, if elements of the proposal are based on a certain number of websites, users, page views, visits or domains, please provide proposal and Schedule B information for other quantities. For example: 
+
+Based on 80-100 websites, we recommend _____.
+
+For 101-125 websites, we recommend ____.
+
+For 79 or fewer websites, we recommend ___.
+
+The following information is required for all proposed solutions:
+
+Products and services provided
+
+Software as a service: Tag management tool
+
+Licensing, provisioning and access to hosted tag management solution for web analytics tagging and other javascript tags beginning 7 days after contract award with guaranteed availability throughout the Period of Performance.
+
+Enterprise user administration for tag management solution.
+
+Technical documentation for client developers who will be implementing and configuring the tool.
+
+Additional tools as recommended in proposal. Please include line-item pricing in Schedule B.
+
+Training, support and professional services
+
+Tag management tool implementation and initial setup support.
+
+Technical and administrative training for BBG technical team at time of implementation.
+
+Service level agreement for guaranteed uptime, support availability, and notifications of upgrades/changes to tag management tool throughout the Period of Performance.
+
+Assigned project manager for initial implementation and to be primary point of contact for regular status meetings throughout the Period of Performance. 
+
+Additional support, professional services, and training as recommended in proposal. Please include line-item pricing in Schedule B.
+
+Methodology
+
+General
+
+Describe your approach to tag management.
+
+How does your solution load tags onto a page? 
+
+How is this solution implemented, technically?
+
+How does this solution optimize page load time? Are there any particular approaches you take to minimizing the impact of JavaScript tags on page load time?  How does the solution impact performance of the host page?
+
+What is your approach to performance monitoring?
+
+How does your solution approach loading tags on websites accessed through dialup or other slow internet connections? 
+
+How does your solution deal with changing amounts of traffic to a tagged site? As a news website, we regularly see huge spikes in traffic over a very short period of time. How does your product adapt to extreme page views/minute? What are your tool’s bandwidth limitations?
+
+Out of the box, does your solution manage tags for one specific vendor or does it manage other tags, too? Is it vendor agnostic or is it optimized for a particular tag or suite of tags?  If it is vendor agnostic, please include a list of all vendors whose tags are supported.  If it is optimized for a particular tool, please specify which one.
+
+How do you approach adding new features to the tool?
+
+For Specific Media
+
+How does your solution approach mobile website tag management?	
+
+How does your solution approach tagging audio and video content? What methods do you use to tag each of these types of audio or video elements: Flash, HTML5, Silverlight, QuickTime, JavaScript players?
+
+Tag Management
+
+Describe the tasks a user can accomplish using the tag management tool, based on our problem statement and situation stated above.
+
+How user-friendly is the tool? 
+
+Can this tool manage A/B or multivariate testing campaigns? 
+
+How does the offering make tagging a website less technical for users? How does your tool make it easy for non-technical users (ie. marketing) to implement tags?
+
+Privacy and compliance
+
+How to you approach eprivacy and compliance with tracking laws, guidance and regulations? 
+
+How do you approach cookie opt-out and do not track requests?
+
+User Administration
+
+Permissions and Roles
+
+Describe how levels of access can be defined and managed? 
+
+What does each level of access provide? 
+
+In what instances could users read or alter each other’s tag configurations?
+
+How can solution usage be tracked among users?
+
+Please describe the tasks a client *cannot* perform on the system, i.e., requires account manager, professional services or tech support.
+
+Please describe licensing and costs related to permissions definition and access.
+
+Support
+
+What type of maintenance and support are available? Please include line-item pricing in Schedule B.
+
+What process is the customer expected to take to receive support for an issue?
+
+What is the availability and expected response time of web, phone, and e-mail based technical support options?
+
+How thorough is the support knowledge base and/or other self-service support options? How often are updates added?
+
+Is there a search feature within the UI of the tool?  Which, if any, of the following does it cover?
+
+Reports
+
+Help features
+
+Forums
+
+User Forums and User Groups
+
+Are there online user forums available? If so, how are they managed and facilitated?
+
+Are there user group conferences? If so, how often and where located?
+
+Documentation
+
+Is there a support knowledge base and/or other self-service support options? How often are updates added? Can customers access this directly?
+
+Are there user guides, manuals, videos, etc. available online?
+
+What technical documentation is available for client developers who will be implementing and configuring the tool?
+
+Maintenance
+
+What is included in the maintenance contract? Please include line-item pricing in Schedule B.
+
+What is the communication protocols regarding maintenance or downtime alerts?
+
+What is your approach to adding additional tags to the management tool after the initial implementation? 
+
+Professional Services
+
+What are the professional services offerings and costs?
+
+Training
+
+What courses are available? Where are the courses given? Can they be given on site? Online? Are there free educational seminars available? Please include line-item pricing in Schedule B. 
+
+
+Appendix 1: Plan for Configuration (including segments, custom reports, and dashboard components)
+
+Data Segmentation Requirements
+
+By Visitor Type
+
+To better serve our audiences, we need to be able to segment users based on multi-visit characteristics. These segments should be available by themselves and in boolean combination. For example, we must be able to make a segment of all visitors from Africa except visitors from Egypt who visited on a mobile device.
+
+New/Repeat visitors
+
+Visitors by Geo-location at continent, country, and city. Sub-continent and in-country region are desirable.
+
+Visitor domain and visitor top-level domain
+
+Visitor language
+
+Mobile visitors – mobile visits in general or further segmented by device
+
+Loyal Visitors –based on return frequency and method of reaching the site such as direct or branded search
+
+Engaged Visitors – visitors who exhibit a specific, defined behavior
+
+By Visit Type
+
+
+
+
+
+
+Report and Dashboard Components
+The following types of custom reports should be available at the individual website level, for groups of websites, and for all USIM web properties.
+
+
+
+
+
+
+
+Qualifications and Evaluation Criteria
+
+The following clauses and provisions are incorporated and are to remain in full force in any resultant firm-fixed price contract;  The provision at FAR Subpart 52.212-1 [Instructions to Offerors - Commercial Items] applies to this acquisition, with no addenda. The  provision at FAR Subpart 52.212-2 [Evaluation of Commercial Items] is hereby incorporated by reference into this combined synopsis/solicitation. The Written Technical Proposals will be evaluated in three equally-weighted areas (a) Technical Capability) (b) Soundness of Technical Approach and (c) Experience/ Past Performance .
+
+
+
+The Offerer must meet the following qualifications:
+
+Technical Capabilities: Offerer shall provide examples that demonstrate the required level of technical expertise to meet or exceed the requirements and scope of BBG tag management. Specific examples should demonstrate ability to create tag parameters using BBG languages (including double-byte and left-to-right fonts) and technical ability to provide tag management services to organizations of similar scale and scope as the BBG.
+
+
+
+Soundness of Technical Approach: Contractor shall demonstrate in writing or through examples the ability to provide the required level of expertise in tag management. Examples may include written responses, diagrams and designs of systems, screenshots of user interface, 5-minute demo of tool on CD or DVD. BBG will specifically evaluate:
+
+Soundness of approach to making tag management simple, reliable, and thorough. 
+
+Soundness of approach to handling tag management on high volume websites.
+
+Soundness of approach to minimally impacting website performance (page load time, holding up other javascript requests) when a high volume of requests are made for tags handled through tag management tool.
+
+
+
+Experience / Past Performance: The Offerer's experience/past performance with other enterprise-level organizations shall be assessed to determine the Offerer's ability to perform the requirements of the SOW. Offerers shall submit examples of no fewer than two (2) of their most recent or ongoing contracts relating to the work specified in the SOO. At least one example should be of providing services to an organization with similar or greater amount of traffic (in page views or visits). Experience can be government or commercial.
+
+
+
+When combined, technical evaluation factors are significantly more important than cost/price.
+
+Offerors shall submit a completed copy of the provision at FAR Subpart 52.212-3 [Offeror representations and certifications -- commercial items] with their proposal. This provision can be found at the following website:  if requested by an Offeror, a copy of FAR subpart 52.212-3 can be obtained by contacting the contracting officer.
+
+PRICE PROPOSAL AND TECHNICAL PROPOSAL MUST BE SUBMITTED ON SEPARATE DOCUMENTS.
+
+FAR Clause 52.212-4 [Contract Terms and Conditions -- Commercial Items] applies to this acquisition.
+
+FAR Clause 52.212-5 [Contract Terms and Conditions Required To Implement Statutes Or Executive Orders -- Commercial Items] applies to this acquisition and incorporates the following
+
+clauses: FAR Clause 52.203-6 [Restrictions on Subcontractor Sales to the Government]; FAR Clause 52.219-6 [Notice of Total Small Business Set-Aside]; FAR Clause 52.222-3 [Convict Labor]; FAR Clause 52.222-19 [Child Labor - Cooperation with Authorities and Remedies]; FAR Clause 52.222-21 [Prohibition of Segregated Facilities]; FAR Clause 52.222-26 [Equal Opportunity]; FAR Clause 52.222-35 [Equal Opportunity for Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans]; FAR Clause 52.222-36 [Affirmative Action for Workers with Disabilities]; FAR Clause 52.222-36 [Employment Reports on Special disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans]; FAR Clause 52.225-1 [Buy American Act - Supplies]; FAR Clause 52.225-13 [Restrictions on Certain Foreign Purchases]; FAR Clause 52.232-33 [Payment by Electronic Funds Transfer -- Central Contractor Registration] ; 52.213-2 Invoices; 52.216-18; Questions must be submitted in writing to the Contract Specialist at the email address or facsimile number provided at the end of this notice. Please note that the deadline for submission of questions by 12:00 p.m., Eastern Time on 29 May 2012. Questions must be submitted in writing by email to: dsturgis@bbg.gov.  Submission of proposal must be received by Closing Date of 21 June 2012 by 2:00 pm Eastern Time, Proposals shall be submitted as an original and two copies must be sent via courier or postal service prior to the deadline (20 Page limit for Technical Proposal).  (No electronic submissions will be accepted).  Proposals should be addressed to ATTN: Diane Sturgis, Broadcasting Board of Governors, International Broadcasting Bureau, Office of Contracts, 330 C St SW, Washington, DC 20237
+
+
+
+
+
+Type
+
+Description
+
+Calculation
+
+Marketing Channel Visit
+
+Visits that originate from marketing efforts such as paid search, email marketing, etc.
+
+Visit that is tagged with a campaign variable that can be attributed to a marketing effort
+
+Branded Search Visit
+
+Visits that originate from branded search terms
+
+Visit that comes from a search engine with the branded keywords that are defined
+
+Non Branded Search Visit
+
+Visits that originate from non-branded search terms
+
+Visit from a search engine that doesn’t include branded keywords
+
+Social Visit
+
+Visits that result from social media outreach or placement
+
+Visits from social media networks that are due to BBG social media efforts
+
+Viral Social Visit
+
+Visits that originate from social media networks (organic)
+
+Visits from social media networks that are not due to BBG social media efforts
+
+Heavy Content Consumed Visits
+
+Visit that includes multiple articles
+
+Visit that reads a minimum of 5 article pages
+
+Multimedia visits
+
+Visit that includes multimedia consumption on the website
+
+Any video or audio play
+
+Engaged Visit
+
+A visit that indicates engaged interest in website content.
+
+PVTS, VL, RV, BARV, VI
+(See Appendix)
+
+First Engaged Visit
+
+First time visit that indicates engaged interest in website content.
+
+New Visit that meets “engaged” visit criteria
+
+Interaction Visit
+
+Visits that contain an interaction with the site such as commenting, sharing, liking, etc.
+
+Any interaction with the site
+
+Specific Content Visit
+
+Visits that contain views of specific content such as news, blogs, etc
+
+Visits where page views of the specific content was consumed
+
+
+
+Description
+
+Calculation
+
+Report Frequency
+
+Content Traffic Comparison Summary
+
+# visits, unique visitors, page views to different content sections per website as % of total traffic to website - for areas of responsibility
+
+Daily, Weekly,  Trailing 4 weeks
+
+Rank of Articles Read
+
+Page views of content type “article”
+
+Hourly, Daily, Weekly,  Trailing 4 weeks
+
+Top pages
+
+Page Views of Top 10 pages for areas of responsibility
+
+Hourly, Daily, Weekly,  Trailing 4 weeks
+
+Top Site Sections
+
+Total page views by Site Section for areas of responsibility
+
+Hourly, Daily, Weekly,  Trailing 4 weeks
+
+Top Entry Pages with bounce rate
+
+Top 10 entry pages ranked by total entries and including bounce rate
+
+Hourly, Daily, Weekly,  Trailing 4 weeks
+
+Top Exit Pages with exit rate
+
+Top 10 exit pages with the exit rate
+
+Hourly, Daily, Weekly,  Trailing 4 weeks
+
+Content Engagement Ranking
+
+Top 10 articles based on total number of engagement actions
+
+Hourly, Daily, Weekly,  Trailing 4 weeks
+
+Top Referring Domains
+
+Referrals to all areas of responsibility
+
+Hourly, Daily, Weekly,  Trailing 4 weeks
+
+Top Videos Viewed
+
+Video views of top 10 videos of all areas of responsibility
+
+Hourly, Daily, Weekly,  Trailing 4 weeks
+
+Top Podcasts
+
+Podcast plays of top 10 podcasts of all areas of responsibility
+
+Hourly, Daily, Weekly,  Trailing 4 weeks
+
+Site Bounce Rate
+
+Single page visits
+
+Hourly, Daily, Weekly,  Trailing 4 weeks
+
+New Visitors/Return Visitors
+
+# and % of new visitors compared to return visitors, and page views per visit.
+
+Daily, Weekly,  Trailing 4 weeks
+
+Engaged Visitor Summary
+
+Number of newly engaged visitors by source and top engaged content
+
+Daily, Weekly,  Trailing 4 weeks
+
+Link Click Hierarchy
+
+Clicks from navigational pages (i.e. Homepage) as a % of overall clicks – allows quick understanding of how visitors are navigating the website
+
+Hourly, Daily, Weekly,  Trailing 4 weeks
+
+Visitor Geolocation
+
+State / Country breakout of new/returning site visitors
+
+Weekly, Trailing 4 weeks
+
+Acquisition Source Comparison
+
+Based on visits, visitors and page views to Site content from following sources:
+SEO, PPO: Source and keyword, brand and non-brand – Top 5
+Direct visits
+Referring sites: BBG and Top 5
+Ad campaigns
+Emails-Campaigns,
+Twitter
+Facebook
+
+Weekly, Trailing 4 weeks
+
+Domain Source Comparison
+
+Based on visits, visitors and page views to Site content from following sources:
+Top 10 .org
+Top 10 .com
+Top 10 .edu
+Top 10. gov
+
+Weekly, Trailing 4 weeks
+
+Referrals to BBG
+
+Referrals to all BBG properties  broken out by specific website
+
+Weekly, Trailing 4 weeks
+
+News Aggregator Source
+
+Based on visits, visitor and page views to site from news aggregator websites defined by BBG
+
+Weekly, Trailing 4 weeks
+
+Internal Search  Keyword Comparison
+
+Top 10 keywords used in Search and Advanced Search
+
+Weekly, Trailing 4 weeks
+
+Advanced Search Usage
+
+# of and percentage of searches started/submitted/click through from results page
+
+Weekly, Trailing 4 weeks
+
+Engaged Visitor Summary
+
+Number of newly engaged visitors by source and top engaged content
+
+Weekly, Trailing 4 weeks
+
+Social Media Summary*
+
+Sentiment, Mentions, Posts, Etc on Social Media Networks
+
+Weekly, Trailing 4 weeks
+
+Content Traffic Comparison Summary
+
+# visits, unique visitors, page views to different content sections per website as % of total traffic to website
+
+Daily, Weekly, Trailing 4 weeks
+
+Rank of Articles Read
+
+Page views of content type “article”
+
+Daily, Weekly,  Trailing 4 weeks
+
+Top pages
+
+Page Views of Top 10 pages for each BBG website
+
+Daily, Weekly,  Trailing 4 weeks
+
+Top Site Sections
+
+Total page views by Site Section for each BBG website
+
+Daily, Weekly,  Trailing 4 weeks
+
+Engaged Visitor Summary
+
+Number of newly engaged visitors by source and top engaged content
+
+Weekly, Trailing 4 weeks
+
+Mobile traffic summary
+
+Total page views, visits and devices for each mobile BBG website
+
+Trailing 4 weeks
+
+Social Media traffic Summary
+
+Page views, visits, unique visitors and engagement by social media source, both viral and BBG created.
+
+Trailing 4 weeks
+
+Geographical traffic breakdown
+
+% of page views, visits and unique visitors per specific site target geographical region
+
+Trailing 4 weeks
+
+New Media/Old Media Comparison Summary
+
+Visitors to BBG Sites/Radio Listeners
+
+Trailing 4 weeksAppendix2:BBGBroadcastingLanguages
+The BBG's broadcast entities produce content in 59 languages.  The list of languages follows.
+Global  English East Asia            Burmese Cantonese Indonesian Khmer Korean Lao Mandarin Thai Tibetan Uyghur Vietnamese
+
+Eastern & Central Europe          Eurasia             Armenian Avar Azerbaijani Bashkir Belarusian Chechen Circassian Crimean Tatar Georgian Russian Tatar Ukrainian Albanian Bosnian Croatian Greek Macedonian Montenegrin Romanian Serbian
+
+South Asia      Africa             Afaan Oromoo Amharic French to Africa Hausa Kinyarwanda Kirundi Ndebele Portuguese to Africa Shona Somali Swahili Tigrigna Bangla Dari Pashto Persian Urdu
+
+Central Asia       Kazakh Kyrgyz Tajik Turkmen Uzbek
+
+Latin America Middle East/North Africa    Arabic Kurdish Turkish   Creole Spanish
+
+ 
+
+

@@ -1,0 +1,780 @@
+
+
+                                                                STATEMENT OF WORK
+
+
+
+
+Section C - Description/Specification/Work Statement
+
+
+
+1.  BACKGROUND
+
+The Department of Health and Human Services (DHHS) Computer Security Incident Response Center (CSIRC) is responsible for the security of all
+networking devices resident on the HHS network.   As part of the Department’s Continuous Monitoring activities as mandated by NIST SP 800-137,
+there is a need to add additional threat and vulnerability reporting capabilities to the CSIRC to remain in compliance with this mandate.
+
+The CSIRC currently has Agiliance Risk Vision installed in their environment and the enhancement of that existing installation is the most
+expedient and cost effective path identified by the Department to achieve the required reporting mandates.
+
+
+2. PURPOSE
+
+The DHHS CSIRC is responsible for the security of all networking devices resident on the DHHS network.   In 2009, the DHHS purchased Agiliance
+Risk Vision as a framework for providing a security “dashboard” to provide the Department the capability of understanding their overall risk
+posture.  The initial purchase of Agiliance Risk Vision supported security trouble ticketing and since has been enhanced to include other
+capabilities.
+
+The Contractor will be responsible to develop and test the Incident Manager Web Services API to import flat file event data which includes all
+necessary fields that HHS will make available to RiskVision.  Event data will be made available as one file per malware event or as one file
+that contain all malware events.  The malware event text file will have a well defined structure and data fields in an XML, CSV or other
+structured data format so that no additional data transformation is required. Also, the malware event data will be mapped to available or new
+customer incident attributes. The event data is to be placed in a drop zone which has the required connectivity to the RiskVision server. Alert
+processing will occur as each event is placed on the server or on a regularly-scheduled basis.
+
+The Contractor will be responsible for the new web services Symantec Endpoint Manager (SEPM) connector which will pull event data from exported
+flat files dropped into a designated directory path and create new RiskVision incidents and tickets from the individual event detail. A ticket
+will be created by default – unless other criteria are specified.
+
+The RiskVision Web Services code will check for pre-existing tickets for a given machine to prevent duplicate incident-ticket pairs from being
+created for a given instance of malware in case it is reported twice.
+
+The import process will automatically create an incident review workflow based on the incident type and send out a notification for review.  The
+incident workflow will be initiated based on the selected type attribute once the incident is received and tied to one or more incident
+attributes.
+
+Based on the completion of an SEPM/Malware event incident workflow, the workflow completion action will automatically close the linked ticket to
+address the use case of closing both the incident and ticket at the same time.
+
+During incident and ticket creation, as well as incident and ticket closure, certain comment fields will be auto-populated by the new code, with
+comments specified by HHS from existing source content such as the event data file.
+
+The logic to link the incident and incident response ticket will be creating using the RiskVision Ticketing API’s calls to create, get and
+update will be used for the ticket creation and tracking logic.
+
+A design document deliverable will be provided before initiating the solution development process based on the sample event data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. SCOPE OF WORK
+
+The Contractor shall deliver the Agiliance enhancements described in this document to the CSIRC program.  The Contractor will be responsible for
+delivery and installation of the software as well as initial training on the new capabilities.  The Contractor will also be responsible for
+overall project and program management to ensure that the solution provided will achieve the objective, and deliver what we have requested, on
+time, and within budget.  The system is proprietaty to Agiliance; therefore, the vendor shall be an Agiliance authorized partner.
+
+
+3.1 Contractor Project Management
+
+The Prime Contractor’s role in the partnership is to ensure that the solution we provide to achieve the objective delivers what we have
+promised, on time, and within budget.  The Contractor shall provide disciplined program management as one of the keys to a successful engagement
+and shall have developed a Program and Project Management Methodology based upon respected industry quality programs such as the Software
+Engineering Institute (SEI) Capability Maturity Model Integration (CMMI) and the Project Management Institute’s (PMI) Project Management Body of
+Knowledge (PMBOK).  The Contractor shall apply these methodologies to the Customer’s Program.
+
+The Contractor’s Project Managers shall be PMI-certified Project Management Professionals (PMP), have extensive experience working with Federal
+Government customers, and are fully trained in Contractor’s Program and Project Management Methodology.  Immediately upon contract award, the
+Contractor shall assign a Project Manager to provide contract level program management and to be the single point-of-contact for the CO, COTR,
+and Government Program Manager throughout the period of performance.
+
+The Contractor Project Manager shall work closely in the implementation of the Agiliance Threat and Vulnerability Management offering to ensure
+the success of this engagement and full satisfaction of the DHHS CSIRC.
+
+
+3.2 Proposed Professional Services
+
+
+This project will be implemented within the Incident Manager application of HHS existing RiskVision environment and leveraging the deployed
+functionality.
+
+
+The Project will include the following deliverables:
+
+
+      • Solution Design Document – this document will describe in detail the relevant customizations as identified during the Requirements
+        Gathering portion of the project.
+      • Implementation of the Web Services API to import the malware event files
+      • Implementation of the Incident and sub-ticket creation workflow initiation
+      • Implementation of the single close action for both Incident and sub-ticket.
+      • Testing and Acceptance Support
+      • Production Handover Document
+      • Administrator and End User Documentation and Training
+
+
+4. Special Consideration
+
+4.1   Government Property
+The Government will provide access to and assist with appropriate databases and directories, to include passwords and account names as required
+for subcontractor personnel to perform the required tasks. The Government will provide access to electronic mail for all Contractor personnel on
+an as required basis. The Government will provide access to the Internet as required/necessary to complete the assigned tasks.
+
+2. Place of Performance
+Work shall be performed at Government facilities with travel to Atlanta GA
+
+4.3   Travel
+All travel shall be conducted in accordance with the Joint Travel Regulation (JTR) on a cost reimbursable basis. Travel costs shall be non-fee
+bearing, with only applicable indirect costs being allowable.
+
+
+
+-----------------------
+                                                       Parse Malware Event from flat file.
+
+                                                        Reconcile Incident by Type & Title
+
+                                                                 Incident Exists?
+
+                                                                 Create Incident
+
+                                                         Reconcile Ticket by Ticket Name
+
+                                                                  Ticket Exists?
+
+                                                                  Create Ticket
+
+No
+
+Yes
+
+Yes
+
+No
+
+
+
+352.239-70  Standard for Security Configurations.
+
+    As prescribed in [HHSAR] 339.101(d)(1), the Contracting Officer shall
+insert the following clause:
+
+Standard for Security Configurations (October 2009)
+
+    (a) The Contractor shall configure its computers that contain
+HHS data with the applicable Federal Desktop Core Configuration
+(FDCC) (see http://nvd.nist.gov/fdcc/index.cfm) and ensure that its
+computers have and maintain the latest operating system patch level
+and anti-virus software level.
+
+    Note: FDCC is applicable to all computing systems using Windows
+XPTM and Windows VistaTM, including desktops
+and laptops--regardless of function--but not including servers.
+
+    (b) The Contractor shall apply approved security configurations
+to information technology (IT) that is used to process information
+on behalf of HHS. The following security configuration requirements
+apply:
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+    Note: The Contracting Officer shall specify applicable security
+configuration requirements in solicitations and contracts based on
+information provided by the Project Officer, who shall consult with
+the OPDIV/STAFFDIV Chief Information Security Officer.
+
+    (c) The Contractor shall ensure IT applications operated on
+behalf of HHS are fully functional and operate correctly on systems
+configured in accordance with the above configuration requirements.
+The Contractor shall use Security Content Automation Protocol
+(SCAP)-validated tools with FDCC Scanner capability to ensure its
+products operate correctly with FDCC configurations and do not alter
+FDCC settings--see http://nvd.nist.gov/validation.cfm. The
+Contractor shall test applicable product versions with all relevant
+and current updates and patches installed. The Contractor shall
+ensure currently supported versions of information technology
+products meet the latest FDCC major version and subsequent major
+versions.
+
+    (d) The Contractor shall ensure IT applications designed for end
+users run in the standard user context without requiring elevated
+administrative privileges.
+
+    (e) The Contractor shall ensure hardware and software
+installation, operation, maintenance, update, and patching will not
+alter the configuration settings or requirements specified above.
+
+    (f) The Contractor shall (1) include Federal Information
+Processing Standard (FIPS) 201-compliant (see http://csrc.nist.gov/publications/fips/fips201-1/FIPS-201-1-chng1.pdf), Homeland Security
+Presidential Directive 12 (HSPD-12) card readers with the purchase
+of servers, desktops, and laptops; and (2) comply with FAR Subpart
+4.13, Personal Identity Verification.
+
+    (g) The Contractor shall ensure that its subcontractors (at all
+tiers) which perform work under this contract comply with the
+requirements contained in this clause.
+
+    (End of clause)
+
+
+352.239-71  Standard for Encryption Language.
+
+    As prescribed in [HHSAR]339.101(d)(2), the Contracting Officer shall
+insert the following clause:
+
+Standard for Encryption Language (October 2009)
+
+    (a) The Contractor shall use Federal Information Processing
+Standard (FIPS) 140-2-compliant encryption (Security Requirements
+for Cryptographic Module, as amended) to protect all instances of
+HHS sensitive information during storage and transmission. (Note:
+The Government has determined that HHS information under this
+contract is considered ``sensitive'' in accordance with FIPS 199,
+Standards for Security Categorization of Federal Information and
+Information Systems, dated February 2004.)
+
+    (b) The Contractor shall verify that the selected encryption
+product has been validated under the Cryptographic Module Validation
+Program (see http://csrc.nist.gov/cryptval/) to confirm compliance
+with FIPS 140-2 (as amended). The Contractor shall provide a written
+copy of the validation documentation to the Contracting Officer and
+the Contracting Officer's Technical Representative.
+
+    (c) The Contractor shall use the Key Management Key (see FIPS
+201, Chapter 4, as amended) on the HHS personal identification
+verification (PIV) card; or alternatively, the Contractor shall
+establish and use a key recovery mechanism to ensure the ability for
+authorized personnel to decrypt and recover all encrypted
+information (see http://csrc.nist.gov/drivers/documents/ombencryption-guidance.pdf). The Contractor shall notify the
+Contracting Officer and the Contracting Officer's Technical
+Representative of personnel authorized to decrypt and recover all
+encrypted information.
+
+    (d) The Contractor shall securely generate and manage encryption
+keys to prevent unauthorized decryption of information in accordance
+with FIPS 140-2 (as amended).
+
+    (e) The Contractor shall ensure that this standard is
+incorporated into the Contractor's property management/control
+system or establish a separate procedure to account for all laptop
+computers, desktop computers, and other mobile devices and portable
+media that store or process sensitive HHS information.
+
+    (f) The Contractor shall ensure that its subcontractors (at all
+tiers) which perform work under this contract comply with the
+requirements contained in this clause.
+
+    (End of clause)
+
+
+352.239-72  Security Requirements for Federal Information Technology Resources.
+
+    As prescribed in [HHSAR] 339.7103, the Contracting Officer shall insert the following clause:
+
+Security Requirements for Federal Information Technology Resources
+(October 2009)
+
+    (a) Applicability. This clause applies whether the entire
+contract or order (hereafter ``contract''), or portion thereof,
+includes information technology resources or services in which the
+Contractor has physical or logical (electronic) access to, or
+operates a Department of Health and Human Services (HHS) system
+containing, information that directly supports HHS' mission. The
+term ``information technology (IT)'', as used in this clause,
+includes computers, ancillary equipment (including imaging
+peripherals, input, output, and storage devices necessary for
+security and surveillance), peripheral equipment designed to be
+controlled by the central processing unit of a computer, software,
+firmware and similar procedures, services (including support
+services) and related resources. This clause does not apply to
+national security systems as defined in FISMA.
+
+    (b) Contractor responsibilities. The Contractor is responsible
+for the following:
+    (1) Protecting Federal information and Federal information
+systems in order to ensure their--
+    (i) Integrity, which means guarding against improper information
+modification or destruction, and includes ensuring information non-
+repudiation and authenticity;
+    (ii) Confidentiality, which means preserving authorized
+restrictions on access and disclosure, including means for
+protecting personal privacy and proprietary information; and.
+    (iii) Availability, which means ensuring timely and reliable
+access to and use of information.
+    (2) Providing security of any Contractor systems, and
+information contained therein, connected to an HHS network or
+operated by the Contractor, regardless of location, on behalf of
+HHS.
+    (3) Adopting, and implementing, at a minimum, the policies,
+procedures, controls, and standards of the HHS Information Security
+Program to ensure the integrity, confidentiality, and availability
+of Federal information and Federal information systems for which the
+Contractor is responsible under this contract or to which it may
+otherwise have access under this contract. The HHS Information
+Security Program is outlined in the HHS Information Security Program
+Policy, which is available on the HHS Office of the Chief
+Information Officer's (OCIO) Web site.
+
+    (c) Contractor security deliverables. In accordance with the
+timeframes specified, the Contractor shall prepare and submit the
+following security documents to the Contracting Officer for review,
+comment, and acceptance:
+    (1) IT Security Plan (IT-SP)--due within 30 days after contract
+award. The IT-SP shall be consistent with, and further detail the
+approach to, IT security contained in the Contractor's bid or
+proposal that resulted in the award of this contract. The IT-SP
+shall describe the processes and procedures that the Contractor will
+follow to ensure appropriate security of IT resources that are
+developed, processed, or used under this contract. If the IT-SP only
+applies to a portion of the contract, the Contractor shall specify
+those parts of the contract to which the IT-SP applies.
+    (i) The Contractor's IT-SP shall comply with applicable Federal
+laws that include, but are not limited to, the Federal Information
+Security Management Act (FISMA) of 2002 (Title III of the E-
+Government Act of 2002, Public Law 107-347), and the following
+Federal and HHS policies and procedures:
+    (A) Office of Management and Budget (OMB) Circular A-130,
+Management of Federal Information Resources, Appendix III, Security
+of Federal Automated Information Resources.
+    (B) National Institute of Standards and Technology (NIST)
+Special Publication (SP) 800-18, Guide for Developing Security Plans
+for Federal Information Systems, in form and content, and with any
+pertinent contract Statement of Work/Performance Work Statement
+(SOW/PWS) requirements. The IT-SP shall identify and document
+appropriate IT security controls consistent with the sensitivity of
+the information and the requirements of Federal Information
+Processing Standard (FIPS) 200, Recommended Security Controls for
+Federal Information Systems. The Contractor shall review and update
+the IT-SP in accordance with NIST SP 800-26, Security Self-
+Assessment Guide for Information Technology Systems and FIPS 200, on
+an annual basis.
+    (C) HHS-OCIO Information Systems Security and Privacy Policy.
+    (ii) After resolution of any comments provided by the Government
+on the draft IT-SP, the Contracting Officer shall accept the IT-SP
+and incorporate the Contractor's final version into the contract for
+Contractor implementation and maintenance. On an annual basis, the
+Contractor shall provide to the Contracting Officer verification
+that the IT-SP remains valid.
+    (2) IT Risk Assessment (IT-RA)--due within 30 days after
+contract award. The IT-RA shall be consistent, in form and content,
+with NIST SP 800-30, Risk Management Guide for Information
+Technology Systems, and any additions or augmentations described in
+the HHS-OCIO Information Systems Security and Privacy Policy. After
+resolution of any comments provided by the Government on the draft
+IT-RA, the Contracting Officer shall accept the IT-RA and
+incorporate the Contractor's final version into the contract for
+Contractor implementation and maintenance. The Contractor shall
+update the IT-RA on an annual basis.
+    (3) FIPS 199 Standards for Security Categorization of Federal
+Information and Information Systems Assessment (FIPS 199
+Assessment)--due within 30 days after contract award. The FIPS 199
+Assessment shall be consistent with the cited NIST standard. After
+resolution of any comments by the Government on the draft FIPS 199
+Assessment, the Contracting Officer shall accept the FIPS 199
+Assessment and incorporate the Contractor's final version into the
+contract.
+    (4) IT Security Certification and Accreditation (IT-SC&A)--due
+within 3 months after contract award. The Contractor shall submit
+written proof to the Contracting Officer that an IT-SC&A was
+performed for applicable information systems--see paragraph (a) of
+this clause. The Contractor shall perform the IT-SC&A in accordance
+with the HHS Chief Information Security Officer's Certification and
+Accreditation Checklist; NIST SP 800-37, Guide for the Security
+Certification and Accreditation of Federal Information Systems; and
+NIST SP 800-53, Recommended Security Controls for Federal
+Information Systems. An authorized senior management official shall
+sign the draft IT-SC&A and provide it to the Contracting Officer for
+review, comment, and acceptance.
+    (i) After resolution of any comments provided by the Government
+on the draft IT-SC&A, the Contracting Officer shall accept the IT-
+SC&A and incorporate the Contractor's final version into the
+contract as a compliance requirement.
+    (ii) The Contractor shall also perform an annual security
+control assessment and provide to the Contracting Officer
+verification that the IT-SC&A remains valid. Evidence of a valid
+system accreditation includes written results of:
+    (A) Annual testing of the system contingency plan; and
+    (B) The performance of security control testing and evaluation.
+
+    (d) Personal identity verification. The Contractor shall
+identify its employees with access to systems operated by the
+Contractor for HHS or connected to HHS systems and networks. The
+Contracting Officer's Technical Representative (COTR) shall
+identify, for those identified employees, position sensitivity
+levels that are commensurate with the responsibilities and risks
+associated with their assigned positions. The Contractor shall
+comply with the HSPD-12 requirements contained in ``HHS-Controlled
+Facilities and Information Systems Security'' requirements specified
+in the SOW/PWS of this contract.
+
+    (e) Contractor and subcontractor employee training. The
+Contractor shall ensure that its employees, and those of its
+subcontractors, performing under this contract complete HHS-
+furnished initial and refresher security and privacy education and
+awareness training before being granted access to systems operated
+by the Contractor on behalf of HHS or access to HHS systems and
+networks. The Contractor shall provide documentation to the COTR
+evidencing that Contractor employees have completed the required
+training.
+
+    (f) Government access for IT inspection. The Contractor shall
+afford the Government access to the Contractor's and subcontractors'
+facilities, installations, operations, documentation, databases, and
+personnel used in performance of this contract to the extent
+required to carry out a program of IT inspection (to include vulnerability testing), investigation, and audit to safeguard against threats and
+hazards to the integrity, confidentiality, and availability, of HHS data or to the protection of information systems operated on behalf of HHS.
+
+    (g) Subcontracts. The Contractor shall incorporate the substance
+of this clause in all subcontracts that require protection of
+Federal information and Federal information systems as described in
+paragraph (a) of this clause, including those subcontracts that--
+    (1) Have physical or electronic access to HHS' computer systems,
+networks, or IT infrastructure; or
+    (2) Use information systems to generate, store, process, or
+exchange data with HHS or on behalf of HHS, regardless of whether
+the data resides on a HHS or the Contractor's information system.
+
+    (h) Contractor employment notice. The Contractor shall
+immediately notify the Contracting Officer when an employee either
+begins or terminates employment (or is no longer assigned to the HHS
+project under this contract), if that employee has, or had, access
+to HHS information systems or data.
+
+    (i) Document information. The Contractor shall contact the
+Contracting Officer for any documents, information, or forms
+necessary to comply with the requirements of this clause.
+
+    (j) Contractor responsibilities upon physical completion of the
+contract. The Contractor shall return all HHS information and IT
+resources provided to the Contractor during contract performance and
+certify that all HHS information has been purged from Contractor-
+owned systems used in contract performance.
+
+    (k) Failure to comply. Failure on the part of the Contractor or
+its subcontractors to comply with the terms of this clause shall be
+grounds for the Contracting Officer to terminate this contract.
+
+    (End of clause)
+
+352.239-73  Electronic Information and Technology Accessibility.
+
+    (a) As prescribed in [HHSAR]339.201-70(a), the Contracting Officer shall
+insert the following provision:
+
+Electronic and Information Technology Accessibility (October 2009)
+
+    (a) Section 508 of the Rehabilitation Act of 1973 (29 U.S.C.
+794d), as amended by the Workforce Investment Act of 1998, and the
+Architectural and Transportation Barriers Compliance Board
+Electronic and Information (EIT) Accessibility Standards (36 CFR
+Part 1194), require that, unless an exception applies, all EIT
+products and services developed, acquired, maintained, or used by
+any Federal department or agency permit--
+    (1) Federal employees with disabilities to have access to and
+use information and data that is comparable to the access and use of
+information and data by Federal employees who are not individuals
+with disabilities; and
+    (2) Members of the public with disabilities seeking information
+or services from a Federal agency to have access to and use of
+information and data that is comparable to the access and use of
+information and data by members of the public who are not
+individuals with disabilities.
+
+    (b) Accordingly, any vendor submitting a proposal/quotation/bid
+in response to this solicitation must demonstrate compliance with
+the established EIT accessibility standards. Information about
+Section 508 is available at http://www.section508.gov/. The complete
+text of Section 508 Final Provisions can be accessed at http://www.access-board.gov/sec508/provisions.htm.
+
+    (c) The Section 508 accessibility standards applicable to this
+solicitation are identified in the Statement of Work/Specification/
+Performance Work Statement. In order to facilitate the Government's
+evaluation to determine whether EIT products and services proposed
+meet applicable Section 508 accessibility standards, offerors must
+prepare an HHS Section 508 Product Assessment Template, in
+accordance with its completion instructions, and provide a binding
+statement of conformance. The purpose of the template is to assist
+HHS acquisition and program officials in determining that EIT
+products and services proposed support applicable Section 508
+accessibility standards. The template allows vendors or developers
+to self-evaluate their products or services and document in detail
+how they do or do not conform to a specific Section 508
+accessibility standard. Instructions for preparing the HHS Section
+508 Evaluation Template may be found under Section 508 policy on the
+HHS Office on Disability Web site (http://www.hhs.gov/od).
+
+    (d) Respondents to this solicitation must also provide any
+additional detailed information necessary for determining applicable
+Section 508 accessibility standards conformance, as well as for
+documenting EIT products or services that are incidental to the
+project, which would constitute an exception to Section 508
+requirements. If a vendor claims its products or services, including
+EIT deliverables such as electronic documents and reports, meet
+applicable Section 508 accessibility standards in its completed HHS
+Section 508 Product Assessment Template, and it is later determined
+by the Government--i.e., after award of a contract/order, that
+products or services delivered do not conform to the described
+accessibility standards in the Product Assessment Template,
+remediation of the products or services to the level of conformance
+specified in the vendor's Product Assessment Template will be the
+responsibility of the Contractor and at its expense.
+    (End of provision)
+
+
+    (b) As prescribed in 339.201-70(b), the Contracting Officer shall
+insert the following clause:
+
+Electronic and Information Technology Accessibility (October 2009)
+
+    (a) Pursuant to Section 508 of the Rehabilitation Act of 1973
+(29 U.S.C. 794d), as amended by the Workforce Investment Act of
+1998, all electronic and information technology (EIT) products and
+services developed, acquired, maintained, or used under this
+contract/order must comply with the ``Electronic and Information
+Technology Accessibility Provisions'' set forth by the Architectural
+and Transportation Barriers Compliance Board (also referred to as
+the ``Access Board'') in 36 CFR part 1194. Information about Section
+508 is available at http://www.section508.gov/. The complete text of
+Section 508 Final Provisions can be accessed at http://www.access-board.gov/sec508/provisions.htm.
+
+    (b) The Section 508 accessibility standards applicable to this
+contract/order are identified in the Statement of Work/
+Specification/Performance Work Statement. The Contractor must
+provide a written Section 508 conformance certification due at the
+end of each contract/order exceeding $100,000 when the contract/
+order duration is one year or less. If it is determined by the
+Government that EIT products and services provided by the Contractor
+do not conform to the described accessibility standards in the
+Product Assessment Template, remediation of the products or services
+to the level of conformance specified in the Contractor's Product
+Assessment Template will be the responsibility of the Contractor at
+its own expense.
+
+    (c) In the event of a modification(s) to this contract/order,
+which adds new EIT products or services or revises the type of, or
+specifications for, products or services the Contractor is to
+provide, including EIT deliverables such as electronic documents and
+reports, the Contracting Officer may require that the contractor
+submit a completed HHS Section 508 Product Assessment Template to
+assist the Government in determining that the EIT products or
+services support Section 508 accessibility standards. Instructions
+for documenting accessibility via the HHS Section 508 Product
+Assessment Template may be found under Section 508 policy on the HHS
+Office on Disability Web site (http://www.hhs.gov/od).
+
+
+    (c) As prescribed in 339.201-70(c), the Contracting Officer shall
+add the following paragraph to the end of clause 352.239-73(b):
+
+    Prior to the Contracting Officer exercising an option for a
+subsequent performance period/additional quantity or adding funding
+for a subsequent performance period under this contract, as
+applicable, the Contractor must provide a Section 508 Annual Report
+to the Contracting Officer and Project Officer. Unless otherwise
+directed by the Contracting Officer in writing, the Contractor shall
+provide the cited report in accordance with the following schedule.
+Instructions for completing the report are available in the Section
+508 policy on the HHS Office on Disability Web site under the
+heading Vendor Information and Documents. The Contractor's failure
+to submit a timely and properly completed report may jeopardize the
+Contracting Officer's exercising an option or adding funding, as
+applicable.
+
+Schedule for Contractor Submission of Section 508 Annual Report
+
+    (To be completed by the Contracting Officer at time of contract/
+order award.)
+
+
+HHS-OCIO Standard for Security Configurations Language in HHS Contracts
+
+
+A.  HHS Standard 2009-0001.001S (January 30, 2009)
+
+To implement Federal Acquisition Regulation (FAR) 39.101(d) regarding Common Security Configurations, and Department of Health and Human
+Services (HHS) information security requirements, the following standard language shall be incorporated in solicitations and new contracts for
+the operation or acquisition of information technology systems.  This document supersedes HHS Standard 2008-0004.001S, HHS-OCIO Standard for
+Security Configurations Language in HHS Contracts (dated September 11, 2008), and is effective immediately.1  An approved HHS Department
+Information Security Policy/Standard Waiver2 is required to deviate from the technical standard set forth below. 
+1. Contractor computers containing HHS data shall be configured with the applicable Federal Desktop Core Configuration (FDCC)
+(http://nvd.nist.gov/fdcc/index.cfm),3 and shall have and maintain the latest operating system patch level and anti-virus software level.
+2.  The Contractor shall apply approved security configurations to information technology that is used to process information on behalf of the
+Department, its Operating Divisions (OPDIVs) and Staff Divisions (STAFFDIVs). 
+
+Such approved security configurations shall be identified jointly by the OPDIV/STAFFDIV Contracting Officer’s Technical Representative (COTR)
+and Chief Information Security Officer (CISO). Approved security configurations include, but are not limited to, those published by the
+Department,4 by the OPDIV/STAFFDIV, and by the National Institute of Standards and Technology (NIST) at http://checklist.nist.gov.
+OPDIVs/STAFFDIVs may have security configurations that are more stringent than the minimum baseline set by the Department or NIST.  When
+incorporating such security configuration requirements in solicitations and contracts, the OPDIV CISO shall be consulted to determine the
+appropriate configuration reference for a particular system or services acquisition.
+
+3.  The Contractor shall ensure applications operated on behalf of the Department or OPDIV/STAFFDIV are fully functional and operate correctly
+on systems configured in accordance with the above configuration requirements.  The Contractor shall use Security Content Automation Protocol
+(SCAP)-validated tools with FDCC Scanner capability to ensure its products operate correctly with FDCC configurations and do not alter FDCC
+settings.5 The Contractor shall test applicable product versions with all relevant and current updates and patches installed. The contractor
+shall ensure currently supported versions of information technology (IT) products meet the latest FDCC major version and subsequent major
+versions.6
+
+
+4. The Contractor shall ensure applications designed for end users run in the standard user context without requiring elevated administrative
+privileges.
+
+
+5. The Contractor shall ensure hardware and software installation, operation, maintenance, update, and patching shall not alter the
+configuration settings or requirements specified above
+
+
+6. Federal Information Processing Standard 201 (FIPS-201)7 compliant, Homeland Security Presidential Directive 12 (HSPD-12) card readers shall:
+(a) be included with the purchase of servers, desktops, and laptops; and (b) comply with FAR Subpart 4.13, Personal Identity Verification.
+
+7. The Contractor shall ensure all its subcontractors which perform work under this contract (at all tiers) comply with the above requirements.
+ APPROVED BY & EFFECTIVE ON:
+
+                              /s/                                            January 30, 2009           
+Michael W. Carleton                                                                   Date
+HHS Chief Information Officer and
+Deputy Assistant Secretary for Information Technology                
+
+ APPROVED BY & EFFECTIVE ON:
+
+                              /s/                                            January 30, 2009           
+Martin J. Brown                                                                    Date
+HHS Senior Procurement Executive and
+Deputy Assistant Secretary for Acquisition Management and Policy                
+
+ 1 This requirement shall be incorporated into the HHS Acquisition Regulation and the HHS Acquisition Plan.
+2 The HHS Departmental Information Security Policy/Standard Waiver form and process is available at
+http://intranet.hhs.gov/infosec/policies_memos.html.
+3 FDCC is applicable to all computing systems using Windows XP™ and Windows Vista™, including desktops and laptops—regardless of function—but
+not including servers. The Department has developed an HHS version of FDCC (henceforth HHS FDCC) for Windows XP™ and Vista™ to accommodate
+business and operational needs in the HHS environment.  These settings are available at http://intranet.hhs.gov/infosec/guidance.html.  When
+there is a compelling business or operational need to deviate from the FDCC, Operating Divisions (OPDIVs) and Staff Divisions (STAFFDIVs) may
+use the HHS FDCC settings instead of the government-wide FDCC settings.
+4 See HHS Minimum Security Configuration Standards for Departmental Operating Systems and Applications (as amended) at
+http://intranet.hhs.gov/infosec/guidance.html.
+5 See http://nvd.nist.gov/validation.cfm, as required by the Office of Management and Budget (OMB) Memorandum (M) 08-22, Guidance on the Federal
+Desktop Core Configuration (FDCC), released August 11, 2008.
+6 This meets the self-assertion requirement under OMB M-08-22. Future FDCC changes having minimal security impact may be released as minor
+versions to FDCC.  Self-assertion is not required for minor releases.
+7 http://csrc.nist.gov/publications/fips/fips201-1/FIPS-201-1-chng1.pdf
+
+
+
+
+
+B.  HHS Standard 2009-0002.001S (January 30, 2009)
+
+The Department of Health and Human Services (HHS) requires incorporation of the following standard language in solicitations and new contracts
+that either purchase or require the use of desktop or laptop computers, mobile devices, or portable media to store or process HHS sensitive
+information that is categorized as Moderate or High under Federal Information Processing Standard 199 (FIPS 199).1  An approved HHS Department
+Information Security Policy/Standard Waiver2 is required to deviate from these technical standards.  This standard is effective immediately.3
+
+   1. The Contractor shall use FIPS 140-2 (as amended) compliant encryption4 to protect all instances of HHS sensitive information5 during
+      storage and transmission.  
+   2. The Contractor shall verify that the selected encryption product has been validated under the Cryptographic Module Validation Program
+      (http://csrc.nist.gov/cryptval/) to confirm compliance with FIPS 140-2 (as amended).  The Contractor shall provide a written copy of the
+      validation documentation to both the Contracting Officer and the Contracting Officer’s Technical Representative (COTR).
+   3. The Contractor shall use the Key Management Key on the HHS personal identification verification (PIV) card; or alternatively, the
+      Contractor shall establish and use a key recovery mechanism to ensure the ability for authorized personnel to decrypt and recover all
+      encrypted information.6
+   4. The Contractor shall securely generate and manage encryption keys to prevent unauthorized decryption of information, in accordance with
+      FIPS 140-2 (as amended).
+   5. The Contractor shall: ensure that this standard is incorporated into the Contractor’s property management/control system; or establish a
+      procedure to account for all laptop computers, desktop computers, and other mobile devices and portable media that store or process
+      sensitive HHS information.
+   6. The Contractor shall ensure that all of its employees, subcontractors (at all tiers), and employees of each subcontractor, who perform work
+      under this contract/subcontract, comply with the above requirements.
+ APPROVED BY & EFFECTIVE ON:
+
+                              /s/                                            January 30, 2009           
+Michael W. Carleton                                                                   Date
+HHS Chief Information Officer and
+Deputy Assistant Secretary for Information Technology                
+
+APPROVED BY & EFFECTIVE ON:
+
+                              /s/                                            January 30, 2009           
+Martin J. Brown                                                                    Date
+HHS Senior Procurement Executive and
+Deputy Assistant Secretary for Acquisition Management and Policy                
+
+ 1 FIPS-199, Standards for Security Categorization of Federal Information and Information Systems, dated February 2004.
+
+2 The HHS Departmental Information Security Policy/Standard Waiver form and process is available at
+http://intranet.hhs.gov/infosec/policies_memos.html.
+
+3This requirement shall be incorporated into the HHS Acquisition Regulation and the HHS Acquisition Plan.
+
+4  The Office of Management and Budget (OMB) Memorandum (M) 07-16, Safeguarding Against and Responding to the Breach of Personally Identifiable
+Information (released May 22, 2007) requires the use of FIPS 140-2, Security Requirements for Cryptographic Module, compliant encryption
+technologies on laptop computers and all other mobile computers and devices containing sensitive information.  The HHS memorandum Mandatory
+Protection of Sensitive Information on Computers, Mobile Devices, and Portable Media (henceforth called the Protection of Sensitive Information
+Memo), signed by the HHS Chief of Staff on May 19, 2008, directs expansion of the current HHS Encryption Standard for Mobile Devices and
+Portable Media to “all government and non-government-furnished desktops used on behalf of the government that store sensitive information.”
+
+5 For the purposes of this contract, information is considered sensitive if the FIPS 199 Confidentiality or Integrity security objective is
+rated Moderate or High by the OPDIV Chief Information Security Officer (CISO) or HHS Chief Information Security Officer (CISO), as appropriate.
+
+6 Key recovery is required by OMB Guidance to Federal Agencies on Data Availability and Encryption, November 26, 2001,
+http://csrc.nist.gov/policies/ombencryption-guidance.pdf. Authorized personnel to decrypt and recover all encrypted information shall be
+identified by contract.
+
+
+

@@ -1,0 +1,114 @@
+DOL110RQ21145 ­ Requirements Matrix U.S. Department of Labor Security Information and Event Management (SIEM) solution Solicitation
+
+INTRODUCTION / BACKGROUND The OASAM IT Security Office under the direction of the Department of Labor (DOL), Office of the Assistance Secretary for the Administration and Management (OASAM) serves as the IT Security function to ensure the confidentiality, integrity, and availability of the Department of Labor's information and information systems. This is accomplished through the different facets of the OASAM IT Security program which directly supports the Department' s overall information security program. T h ea g e n c yh a sas e c u r i t yi n i t i a t i v et oe x p a n do nt h ea g e n c y ' ss e c u r i t yo p e r a t i o n s including threat and risk management, incident response capabilities, and to address regulatory compliance reporting requirements. OASAM would like to purchase and deploy a network-based Security Information and Event Management (SIEM) solution which incorporates SIM (security information management) and SEM (security event management) technologies. The solution will provide the agency with capabilities to address the identified requirements (see requirement section) in addition to providing real-time monitoring, analysis, and historical reporting of security events from network end points. The SIEM t o o lw i l la d d r e s st h ea g e n c y ' ss e c u r i t yw e a k n e s s e sf o rc o m p l i a n c er e p o r t i n g ,l o g management, and threat management.
+
+SCOPE The purpose of this request is to procure a SIEM solution to m e e tt h ea g e n c y ' s requirements. SIEM REQUIREMENTS
+
+Agency's SIEM Requirements
+Description Form Factor: Supports hardware appliance Supports a combination of hardware and software Service Based Management: Supports co-managed by customer Native Support for Devices / Normalization: Supports Apache 1|Page Weight Required Required
+
+1 2
+
+3
+
+Required
+
+4
+
+Required
+
+DOL110RQ21145 ­ Requirements Matrix 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 Supports Cisco Supports Foundry Supports HP Supports IronMail Supports IronPort Supports Linux Supports McAfee Supports Microsoft Windows Event Log Supports MS-SQL Supports NetFlow Supports ORACLE Supports RedHat Supports sFlow Supports SNMP Supports Solaris BSM Supports Sun Supports Syslog Supports Syslog-NG Supports Tripwire Supports McAfee IntruShield Network Security Manager (NSM) Supports nCircle IP360 General Features: Provides both SIM and SEM capabilities SIEM (SIM & SEM) as a point solution product Provides interoperable with third party reporting tools Provides automatic discovery of new log sources Provides extensive Active Incident Response Capabilities Provides flexible search interface Integrates with existing system management tools and platforms Integrates with other applications through SOAP and XML Provides interoperability with network management systems through SNMP Provides JDBC Connections Provides forensic capabilities Provides large built-in rule sets Provides capability for customization of rules and features Launches active response (Shielding Technology) 2|Page Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required
+
+26 27 28 29 30 31 32 33 34 35 36 37 38 39
+
+Required Required Required Required Required Required Required Required Required Required Required Required Required Required
+
+DOL110RQ21145 ­ Requirements Matrix
+
+40 41 42
+
+Log Collection Methodology (agent/agent-less): Provides agent-less capability Provides agent-based capability Supports existing agent (snare) Security Event/Information Management Features: Provides real-time alert management Analyzes log data Provides automated alerts to mitigate risks Collects raw log data from applications Collects raw log data from devices Collects raw log from devices and applications Correlates log data Creates asset profiles that tie incidents and threats to business impact Correlates user identity and maintains a stateful identity history for every asset in the network Provides cross-platform data collection Detects network anomalies Meets industry compliance initiatives Normalizes log data Provides real-time correlation and analysis of log data and security event and network activity data Reports on log data Provides role-based policy management Stores raw log data Accepts and forwards SNMP traps Monitors user activity Provides resources access monitoring Appliance utilizes event per second (EPS) Appliance supports event per second (EPS) + per device (agent) Ability to correlate natted / patted IP addresses to internal IP addresses Log Data Collected: Supports backup systems Supports commercial applications Supports custom applications 3|Page
+
+Required Required Required
+
+43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65
+
+Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required Required
+
+66 67 68
+
+Required Required Required
+
+DOL110RQ21145 ­ Requirements Matrix 69 70 71 72 73 74 75 76 77 78 79 80 81 82 Supports firewalls Supports homegrown applications Supports Intrusion Detection Systems (IDS) Supports Intrusion Prevention Systems (IPS) Supports Network Access Control systems (NAC) Supports various operating system platforms (servers) Supports routers Supports SSL VPNs Supports SQL logs Supports switches Supports Cisco VPN concentrators Supports web proxies Supports wireless gear Supports flat file ascii text log Captured Events per second: Offers 10000 + event per second (EPS) minimum expandable to 20,000 EPS without hardware replacement Clarify sustainability for optimal performance Log Data Storage Features: Offers online logs (6 months) Offers near-line logs (hashes that can be unhashed and viewed) Provides online and near-line storage up to 1 year at 10000 EPS ~ 864,000,000 events/day or 315,360,000,000/year. Provides dedicated event storage of greater that 5TB Provides the ability to correlate log data directly against network flow data Provides the ability to correlate log data directly against security alerts or other Provides the ability to correlate log data directly against security alerts or other data in real-time Provides the ability to manage logs in near real-time for rapid-response log data management Provides the ability to organize archive log files for long-term off-site storage Automates data archival Provides the ability to compressed on-board storage of raw log data Interacts with external SAN (HP EV4400) storage networks for centralized storage (near-line) 4|Page Required Required Required Required Required Required Required Required Required Required Required Required Required
+
+83 84
+
+Required Required
+
+85 86 87 88 89 90 91 92 93 94 95 96
+
+Required Required Required Required Required Required Required Required Required Required Required Required
+
+DOL110RQ21145 ­ Requirements Matrix 97 98 99 Processes metalog data for rapid analysis Provides tamper proof safeguards for log data transport and archive storage Long term storage in years (3 years) Required Required Required
+
+Databases Required to Store Log Data: 100 Self-maintaining database technology Log Encryption : 101 Logs are encrypted using NIST FIPS 140-2 Standard Long Term Storage in Terabytes: 102 Provides terabytes (TB) of physical space 103 Provides compression ratio (i.e., 63,000:1; 5:1) 104 Provides dedicated event storage of greater that 5TB (repeat) Risk Mitigation Features: Provides the ability to block access via NAC product configuration change Provides the ability to identify software security vulnerabilities Provides the ability to monitor change controls Provides the ability to monitor communication (flow) data Provides the ability to monitor database and application activity and correlate to other events as well as application host and server logs
+
+Required
+
+Required
+
+Required Required Required
+
+105 106 107 108 109
+
+Required Required Required Required Required Required Required Required Required Required Required Required
+
+110 Provides the ability to monitor disaster recovery testing 111 Provides the ability to monitor disparate data from the selected sources in near-real time 112 Provides the ability to monitor infrastructure data 113 Provides the ability to monitor successful or failed backups 114 Provides the ability to monitor user activity 115 Provides the ability to monitor users identities 116 Provides the ability to monitor what resources users access High Availability Features: Provides agent collector to engine failover Supports built on n-tier architecture for scalability and performance Provides self-healing database for raw log storage Provides engine to engine failover Provides external backup capabilities 5|Page
+
+117 118 119 120 121
+
+Required Required Required Required Required
+
+DOL110RQ21145 ­ Requirements Matrix 122 123 124 125 126 Provides hot standby and fail-over log message capture Provides hot swappable redundant power supplies No single point of failure Provides rolling buffer activated by auto-sensing technology Provides dual power supplies Required Required Required Required Required
+
+Log Data Report Features: 127 Provides the ability to base compliance reports on best practice frameworks such as ISO 17799 and NIST 800-53 standards 128 129 130 131 132 Provides the ability to correlate log data against compliance standards Provides the ability to correlate log data against security policies Provides the ability to create graphical reports Provides the ability to create text reports Provides the ability to deliver reports and alerts on all four areas of IT risk management as defined by COBIT 4.0 (Control Objectives for Information and Technology) Provides the ability to generate and ranks alerts based on security risk Provides the ability to report and alert security events in real time Provides the ability to search and analyze data for historical trends Provides the ability to search sort filter and analyze data in near real time Provides the ability to use reports for management audits network planning and policy validation
+
+Required Required Required Required Required Required
+
+133 134 135 136 137
+
+Required Required Required Required Required Required Required Required Required Required Required
+
+138 Provides the ability to view all logs associated with a particular IP address port or device 139 Provides extensive list of export/archive options 140 Reports accessible from any security web portal 141 Reports on application traffic traffic volume network anomalies 142 Supports custom report creation 143 Supports report templates that meet compliance regulations formats Administrative Management Features: 144 Provides the ability to align alerts to an organization's application priorities 145 Provides the ability to align alerts to an organization's security and access policies 146 Provides the ability to create user-friendly graphical interpretations of security assurance metrics 147 Provides the ability to identify controls violations and offer remediation strategies 148 Provides the ability to send reports/email to administrator showing system vulnerabilities 6|Page
+
+Required Required Required Required Required
+
+DOL110RQ21145 ­ Requirements Matrix 149 150 151 152 153 154 155 156 Provides built in central management station Provides console accessible via CLI Provides console accessible via secure web portal Available Graphical User Interface (GUI) for viewing sorting analyzing and reporting on log data Provides GUI for Complex Event Correlation Construction Supports SNMP Supports normalize the time stamping of logs. Integrates with AD for user authentication. Network/Security Management System Integration: Integrates with any network management systems that accept logs and SNMP traps Integrates with any network management system utilizing Windows WMI Integrates with ePO Integrates with Remedy Regulatory Compliance and Frameworks Reporting: Supports Federal Information Security Management Act (FISMA) Supports Health Insurance Portability and Accountability Act (HIPPA) Supports Payment Card Industry (PCI) Data Security Standard Supports NIST 800-53 Required Required Required Required Required Required Required Required
+
+157 158 159 160
+
+Required Required Required Required
+
+161 162 163 164
+
+Required Required Required Required
+
+Deployment: 165 Provides capability for separate appliance for individual function (distributed architecture) 166 Supports simplified of deployment and support (Turn Key) 167 Does not require extensive customization Support & Licensing: Offers professional services (PS) for initial deployment and tuning Provides training for 8 students 24/7 support options to ensure high availability Solution vendor must have top caliber support staff and vulnerability research team that actively identifies vulnerability before it is publicly know.
+
+Required Required Required
+
+168 169 170 171
+
+Required Required Required Required Required
+
+172 Solution vendor must provide installation support and consulting services to help with implementation and tuning
+
+7|Page
+
+DOL110RQ21145 ­ Requirements Matrix 173 Solution vendor must provide training services to assist in shortening the learning curve to understand operation of the solution 174 Vendor provides scheduled updates minimally on a weekly basis and within three days or sooner when a zero-day exploit is publicized Required Required
+
+PLACE OF PERFORMANCE The SIEM deployment, tuning, and training will be at the federal facility: US Department of Labor (DOL) Frances Perkins Building 200 Constitution AVE., NW, Washington, DC 20210 DELIVERABLE(S) A. A SIEM Solution that meets the agency requirements. B. Associated Licenses and support to operated and maintain the solution that meets the agency requirements. C. Detailed documentation that supports the architect, deployment, and tuning. SECURITY Unclassified TRAVEL No travel is involved. SERVICES WILL BE PROVIDED TO: U.S. Department of Labor OASAM/ITC/OTS RM- N1301 Attention: Louis Charlier (202-693-4147) 200 Constitution Ave. N.W. Washington DC 20210
+
+8|Page
+
+

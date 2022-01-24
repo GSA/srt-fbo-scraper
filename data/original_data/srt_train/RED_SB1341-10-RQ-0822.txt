@@ -1,0 +1,197 @@
+
+                                                                STATEMENT OF WORK
+Development of 3D Tip Shape Characterization and Reconstruction Software for CD-AFM Reference Metrology
+
+I. BACKGROUND
+
+
+
+The National Institute of Standards and Technology (NIST) seeks a contractor to design, develop, and write 3D tip shape characterization and
+reconstruction software for a project NIST is engaged in with Sematech. This Statement of Work describes this software development.  The
+objective of the work is to develop the capability to perform 3D tip shape reconstruction and tip characterization on critical dimension atomic
+force microscopy (CD-AFM) tools in general, and the Veeco InSight 3DAFM platforms operated by SEMATECH and its member companies in particular.
+The immediate product of the work will be software for 3D tip shape characterization and reconstruction.  This enables:
+
+     1. Qualification/rejection of worn/damaged tips in 3D
+
+
+     2.)  Acquisition of the 3D tip shape element to be used in reducing 3D feature distortion from tip-induced image “dilation”
+
+     3.)  Display 3D tip, export tip shape parameters and tip shape data.
+
+The primary goal of this project is the development of a system for 3D tip reconstruction which includes software to take image data from an AFM
+and reconstruct the tip shape, and may also include the development of data acquisition procedures for acquiring appropriate input data for the
+software.  The software may be based on the existing Dexel code already developed by NIST.  The Contractor shall carry out the design of the
+software in collaboration with NIST, implement, write, and test the software, and act as a consultant in the development of the overall theory
+and methodology of the characterization process including physical characterization samples.  NIST will supply the Contractor with necessary
+instrument data for testing the software. The capability to perform 3D tip shape characterization on CD-AFM will serve as a precursor to
+removing tip shape distortion from data obtained using the in-line tools (generally Veeco InSight and Veeco X3D automated AFMs) typically owned
+and operated by semiconductor electronics manufacturers.
+
+The CD-AFM is an in-line non-destructive dimensional reference metrology tool used to measure critical dimension and profile information by
+scanning the surface with a flared AFM probe.  Because the measurement of the surface is made at the effective point of contact between the
+probe and the surface, the shape of the probe distorts the measured image, leading to measurement inaccuracies.  CD-AFM systems used in-line
+today possess the ability to characterize the shape of the tip by obtaining a 2D cross-section image measured along the metrology axis.  In the
+InSight system, this is accomplished by scanning the tip across two commercial characterization standards (produced and sold by Team Nanotech
+GmbH):  the IVPS and the IFSR.  The 2D cross-section can in turn be extracted from the data using off-line Tip Shape Extraction analysis
+software included with Veeco’s Nanoscope software package.  This reproduces a much more accurate image of the object originally scanned.
+However, the entire system is currently limited to 2D, both for the tip shape image and for the extraction software.  This limits its utility on
+the 3D contours and gate structures which are increasingly important as measurement objects in modern manufacturing processes.
+
+The long-term goal is to create a system of physical characterization structures (analogous to the IPVS and IFSR) and software (analogous to
+Nanoscope’s Tip Qualification and Tip Shape Extraction analysis functions) that acquires the tip shape from the characterizer images, then
+removes the tip shape from the image file of the feature of interest, thus reducing image distortion in three dimensions.  The tip must be
+characterized as a 3D image, and the extraction software must remove the 3D image of the tip from the 3D image of the sample.  The completed
+system must be compatible with the Veeco InSight 3D AFM currently installed at many semiconductor electronics manufacturing facilities.
+Implementation of the completed system may require acquisition and installation of specific physical characterization artifacts, either by
+purchase or by fabrication.
+
+II. SCOPE OF WORK
+
+
+The Contractor shall develop the software necessary to reconstruct a 3D image of the tip using data acquired by scanning  one  or  more  physical
+characterization standards. This process entails 3D morphological erosion of the model-based shape of the characterizer  from  the  characterizer
+image in order to obtain the tip shape.   This 3D morphological erosion process can also be used to extract (i.e.,  “erode”)  the  3D  tip  shape
+from measurement data acquired by scanning features on 300 mm production wafers or other samples of interest.  Validation of the 3D tip shape  is
+also critical to reducing the measurement uncertainty of the feature of interest.  Consequently, 3D tip shape reconstructions  will  be  compared
+with orthogonal TEM micrographs acquired from Micro Star Technologies and/or SEMATECH.  Tip qualification parameters for the 3D  tip  shape  will
+be direct output  from  this  SOW.   Because  of  the  tight  connections  required  between  the  design  and  implementation  of  the  physical
+characterization artifacts, and the design and implementation of the software components, Contractor shall  also  act  as  a  consultant  on  the
+design of the overall system, specifically working with NIST to help design and implement the overall characterization methodology, and  to  help
+select or design any new characterization artifact(s) that are deemed to be required.
+
+III. SPECIFIC TASKS
+
+The Contractor shall provide all support for project oversight, equipment, administration and technical execution of this contract.  The
+Contractor is responsible for maintaining accurate records of project activities.
+
+Tasks:
+
+   1. NIST will furnish the Contractor with example tip characterization data of the kind for which tip reconstruction is desired. Initially  the
+      test data set will consist of 4 sets of 4 images as follows: The 4 images will be taken with the InSight AFM using a sample tip of interest
+      (most likely Veeco CDR50C re-entrant probe), the same tip for all 4 images. One of the images will be from a  line  on  a  IVPS  or  NanoCD
+      sample, with the line oriented along the y axis and fast-scan along the x axis (perpendicular to the line). The second will be of the  same
+      sample, oriented this time along the x axis with fast scan along the y axis (again perpendicular to the line). The remaining  two  will  be
+      from a MikroMasch TGX test sample oriented with its edges at approximately 45 degrees to the scan axis; one of these  two  images  will  be
+      scanned with fast-scan axis left to right and the other with fast-scan axis top to bottom. The four sets will  consist  of  a  total  of  4
+      repeats of this procedure, two repeats at each of two locations on the TGX test sample. These data will  be  used  by  the  Contractor  for
+      software development. If upon analysis the Contractor determines that the data have shortcomings for the intended purpose,  the  Contractor
+      shall consult with NIST concerning improved data acquisition procedures, and  the  above  iterated  with  agreed-upon  alterations  in  the
+      procedure.
+
+   2. Contractor shall produce a preliminary version of the software that reconstructs the 3D tip shape from the characterizer scan(s),  provides
+      the reconstructed tip shape and tip qualification parameters, and provides visualization of the tip shape. This version  will  be  suitable
+      for testing. The Contractor is expected to use the data from task 1 in testing and developing the software.  This software  is  anticipated
+      to be based on the existing Dexel approach.  The input for the software will be Nanoscope data (DT2 format or agreed  alternative)  created
+      by scanning the tip across the characterizer using the procedures defined in task 1.  The 3D tip shape reconstruction  and  its  extraction
+      algorithms must be capable of modeling re-entrant probes (e.g., Veeco CDR50).  The software will also be compatible  with  non-flared  tips
+      such as the Veeco CDP15.
+
+   3. The Contractor shall produce a PowerPoint presentation describing the preliminary software’s methods and instructions for use.
+
+   4. NIST expects Sematech to acquire new tip characterization data  sets  and  use  them  to  test  the  software.  Sematech  may  compare  the
+      reconstructed tip shape to TEM images of the tip. NIST will provide to the Contractor feedback concerning performance of the  software.  If
+      the software fails on any of these new data sets, the data sets will  be  provided  to  the  Contractor  who  will  correct  the  software.
+      Contractor shall deliver final software that reconstructs the 3D tip shape from the characterizer scan(s).  The input file format  for  the
+      software will be Nanoscope image files created by scanning the tip across the characterizer. The output file will be  in  an  ASCII  format
+      that can be readily imported into Matlab or Excel. The 3D tip shape reconstruction  and  its  extraction  algorithms  will  be  capable  of
+      modeling re-entrant probes from re-entrant characterizer profiles. The software will also be capable  of  modeling  conventional  tips  (no
+      reentrancy).  Additional tip shape parameters for export will be tip vertical edge height, maximum overhang and tip effective length.   The
+      data acquisition method is specified in task 1.
+
+   5. Contractor shall provide documentation to NIST and Sematech on the usage procedures of the 3D  tip  reconstruction  software.  Sematech  is
+      expected to use the Contractor’s documentation to write a full report on the project, which will include an  overview  of  the  development
+      project, usage procedures for the characterizer and software, testing results from the  project,  and  all  the  instructions  that  Member
+      Company staff would need to implement the finished system on their own CD-AFM platforms.  Contractor shall  review  Sematech’s  report  for
+      factual accuracy prior to publication.
+
+IV. DELIVERABLES AND DELIVERABLE DUE DATES
+
+
+   1. Contractor shall provide feedback when and as necessary on data acquisition procedures to NIST and Sematech. This is likely to  be  in  the
+      form of a series of dialogs (e.g., by e-mail or telephone) rather than as a discrete report. (When and as  requested  by  NIST  during  the
+      contract term. See task #1)
+
+   2. The Contractor shall provide NIST with a preliminary version of the software  (task  #2)  and  a  PowerPoint  presentation  describing  the
+      software’s methods and instructions for use. (December 1, 2010. See task #3.)
+
+   3. Contractor shall provide feedback on the usability of TGX scan data and suggest altered data acquisition procedures if required.  (December
+      1, 2010. See task #1.)
+
+   4. Contractor shall complete software for 3D tip shape reconstruction and qualification and provide the software and usage procedures to NIST,
+      which will distribute them to Sematech and other representatives of the semiconductor electronics industry. (January  21,  2011.  See  task
+      #4.)
+
+   5. Contractor shall furnish documentation on usage procedures and a review of Sematech’s report. (February 21, 2011. See task #5.)
+
+Standards for Acceptance of Deliverables:  The Technical Information Contact (TIC) will provide comments on each deliverable within 7 calendars
+days from receipt of a given deliverable.  The contractor shall make any needed changes to the deliverables within 7 calendar days from receipt
+of electronic or written comments from the TIC.
+
+
+
+V. PERIOD OF PERFORMANCE AND PLACE OF PERFORMANCE
+   The period of performance is from date of contract award until 02/21/2011. Work is not expected to be full time for the entire period of
+   performance. Work shall be performed at the contractor’s facilities.
+
+
+VI. GOVERNMENT-FURNISHED PROPERTY, DATA AND/OR INFORMATION
+
+All material provided by the Government in the performance of this task remains the property of the Government and shall be surrendered to the
+government upon completion or termination of this requirement.
+
+
+
+VII. CONTRACTOR’S MINIMUM QUALIFICATIONS
+
+The Contractor shall have at least a Masters degree in Physics, Mathematics, Computer Science, or Electrical Engineering. The Contractor shall
+also have at least 10 years of experience in atomic force microscopy-related analysis and instrumentation development. This experience shall
+include experience with development of algorithms for simulation or correction of tip effects in atomic force microscopy images.
+
+
+|PERFORMANCE REQUIREMENT SUMMARY                                                                                                                                |
+|Desired Output                |Required Service                  |Performance Standard                         |Task #    |Monitoring Method |Due Date          |
+|Image acquisition methods that|Contractor provides feedback      |This feedback may be by e-mail or            |1 & 3     |The Technical     |12/1/2010         |
+|produce images suitable for   |concerning data suitability and   |teleconference. Successful data acquisition  |          |Information       |                  |
+|tip shape reconstruction.     |advice for procedural changes     |procedures will provide data that is useable |          |Contact (TIC) will|                  |
+|                              |based upon the success (or lack of|for this projec                              |          |determine         |                  |
+|                              |it) in using the data for tip     |t’s purposes.                                |          |contractor        |                  |
+|                              |reconstruction.                   |                                             |          |responsiveness to |                  |
+|                              |                                  |                                             |          |requests for      |                  |
+|                              |                                  |                                             |          |feedback.         |                  |
+|A preliminary version of tip  |Contractor designs and writes the |At this stage the software need not be robust|2         |TIC will review   |12/1/2010         |
+|reconstruction software       |software, providing it to NIST and|or entirely error-free, but it should be in a|          |the software      |                  |
+|suitable for testing.         |designated semiconductor          |testable state. That is, it must be able to  |          |operation for     |                  |
+|                              |electronics industry              |read Veeco InSight images, process the data  |          |compliance.       |                  |
+|                              |representatives on or before the  |to produce an estimated tip shape, and output|          |                  |                  |
+|                              |September AMAG meeting.           |the result.                                  |          |                  |                  |
+|Report on the preliminary     |Supply a PowerPoint presentation  |The presentation should describe the tip     |3         |TIC will review   |12/1/2010         |
+|software.                     |to NIST TIC.                      |characterization procedure used by the       |          |the report.       |                  |
+|                              |                                  |preliminary software. It should provide      |          |                  |                  |
+|                              |                                  |instructions on how to use the preliminary   |          |                  |                  |
+|                              |                                  |version of the software. These instructions  |          |                  |                  |
+|                              |                                  |should be sufficiently detailed to permit    |          |                  |                  |
+|                              |                                  |testing of the software by NIST and Sematech.|          |                  |                  |
+|Feedback on TGX scan data.    |Contractor shall e-mail to TIC    |The report should evaluate whether the TGX   |1         |TIC will review   |12/1/2010         |
+|                              |feedback on the usability of TGX  |scan data is sufficient for tip              |          |the feedback.     |                  |
+|                              |scan data and suggest altered data|reconstruction. It should describe any       |          |                  |                  |
+|                              |acquisition procedures if         |observed shortcomings and suggest ways to    |          |                  |                  |
+|                              |required.                         |improve it if necessary.                     |          |                  |                  |
+|Software for 3D tip shape     |Contractor shall correct the      |The final version should have been debugged  |4         |TIC will review   |1/21/2011         |
+|reconstruction and            |preliminary software using        |and tested.                                  |          |the software.     |                  |
+|qualification.                |feedback from NIST and industry   |                                             |          |                  |                  |
+|                              |testing in order to produce a     |                                             |          |                  |                  |
+|                              |final working version of the      |                                             |          |                  |                  |
+|                              |software.                         |                                             |          |                  |                  |
+|Software documentation.       |Contractor provides documentation |The documentation should be sufficiently     |5         |TIC will review   |2/21/2011         |
+|                              |on usage procedures and methods   |detailed that an AFM operator who is not     |          |the documentation |                  |
+|                              |and reviews Sematech report to its|otherwise expert in data analysis methods use|          |                  |                  |
+|                              |members to insure accuracy.       |the software and generate its report on the  |          |                  |                  |
+|                              |                                  |tip. The review of Sematech’s report to its  |          |                  |                  |
+|                              |                                  |members should insure that the report is an  |          |                  |                  |
+|                              |                                  |accurate representation of the program’s     |          |                  |                  |
+|                              |                                  |capabilities and gives proper instructions   |          |                  |                  |
+|                              |                                  |for use.                                     |          |                  |                  |
+
+
+

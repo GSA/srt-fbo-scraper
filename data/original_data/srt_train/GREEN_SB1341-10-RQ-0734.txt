@@ -1,0 +1,1166 @@
+
+Attachment A: Minimum Requirements
+
+
+Introduction
+
+The purpose of this document is to provide offerors with a format to convey their solution’s compliance with the minimum requirements for the ID
+Management System.  Offerors are to complete this document and submit the completed version as part of their Technical Volume.  The right hand
+column of each of the tables that follow shall be completed by the offeror with a response that includes “Meets,” “Exceeds,” or ‘Does not Meet,”
+along with a brief explanation for their response.  An offeror’s response will be evaluated in accordance with the evaluation factors listed in
+the solicitation. The contractor shall provide architecture for the production environment which will support 6,500 users.  A reference overview
+of the association between the IDMS and core components of the NIST IT infrastructure are shown in diagram #1.
+
+
+
+
+
+[pic]
+
+      Diagram #1:  Identity Management System with the NIST Infrastructure
+
+
+Functional Requirements
+
+
+Architecture Considerations
+
+The Identity and Access Management System shall be the core infrastructure at NIST and therefore shall comply with the NIST Technical Reference
+Model which specifies the preferred Operating Systems, Databases, and technologies supported by NIST’s operational staff. In addition, it is
+anticipated that the system shall be required to be included in the NIST Continued Operations (COOP) plans which will require that it be able to
+be synchronized across sites.
+
+On the other hand, NIST has limited space and power capacity in its central computing facilities therefore the system shall support operations
+in a virtual machine environment for development and test.
+
+NIST currently maintains a heterogeneous information technology infrastructure to support national missions across geographically dispersed
+research centers that use non-windows operating systems.
+
+The proposal shall explicitly indicate any particular feature that is not supported via a web interface or in Firefox or Safari, if any.
+
+|Reference       |Requirement Criteria                                                                     |Meets, Exceeds or Does not Meet   |
+|AC-01           |The solution shall support deployment on following database management systems:          |                                  |
+|                |Oracle DBMS,                                                                             |                                  |
+|                |Microsoft SQL Server.                                                                    |                                  |
+|                |If so, please provide explanation which ones to support.                                 |                                  |
+|AC-02           |The solution shall run on Microsoft Windows or Red Hat Linux operating systems.          |                                  |
+|AC-03           |The solution shall enable integrations, such as web service via HTTP, JMS, etc. with     |                                  |
+|                |other infrastructure components residing on multiple network zones.                      |                                  |
+|AC-04           |The solution shall facilitate automated account linking and correlation across multiple  |                                  |
+|                |back-end repositories to provide a single repository thus a single view of the account   |                                  |
+|                |information.                                                                             |                                  |
+|AC-05           |The solution shall offer FIPS 140-2 validated encryption between systems communications. |                                  |
+|AC-06           |The solution shall offer FIPS 140-2 validated encrypted communications between managed   |                                  |
+|                |resources and the central account management server.                                     |                                  |
+|AC-07           |The solution shall accept PIV card as an authentication method alternative to            |                                  |
+|                |username/password logins.                                                                |                                  |
+|AC-08           |The solution shall provide high availability and failover capabilities to eliminate any  |                                  |
+|                |single point of failure.                                                                 |                                  |
+|AC-09           |The solution shall offer FIPS 140-2 validated encrypted accesses to all web based        |                                  |
+|                |interfaces.                                                                              |                                  |
+|AC-10           |The solution shall support managing accounts for a user who has multiple accounts on the |                                  |
+|                |same resource (for example, a user who has an administrative account and a test or       |                                  |
+|                |functional account on "Resource A").                                                     |                                  |
+|AC-11           |The solution shall support deployment on any of the following application servers:       |                                  |
+|                |WebLogic, Oracle, Microsoft IIS. If so, provide explanation on which ones are supported. |                                  |
+|AC-12           |The solution shall support deployment and operations in a virtualized environment.       |                                  |
+|AC-13           |The solution shall support at minimum Microsoft Internet Explorer, Mozilla Firefox, and  |                                  |
+|                |Safari whenever a web browser is required.                                               |                                  |
+|AC-14           |The solution shall accept the Centralized People Table (CPT) system (reference Appendix –|                                  |
+|                |Definition) as the NIST’s primary identity data source for the proposed solution. The    |                                  |
+|                |solution shall maintain its own data source for other aspects of identity and access     |                                  |
+|                |management.                                                                              |                                  |
+
+
+Identity Registration
+
+All NIST accounts are required to be reviewed and approved by resource owners and/or organizational supervisors before they are created.
+Accounts are required to be created prior to users’ arrival but only are activated until users are on site due to information security
+requirements. Search capability is essential to locate existing identity information to avoid duplicates and facilitate the process.
+
+|Reference       |Requirement Criteria                                                                     |Meets, Exceeds or Does not Meet   |
+|IR-01           |The solution shall provide account registration process with account approvals and       |                                  |
+|                |notifications.                                                                           |                                  |
+|IR-02           |The solution shall provide functions to register accounts associated with existing       |                                  |
+|                |accounts, i.e., alias accounts but with separate roles and responsibilities.             |                                  |
+|IR-03           |The solution shall allow custom search functions to locate identity information, such as |                                  |
+|                |roles, organizations, etc.                                                               |                                  |
+|IR-04           |The solution shall allow account to be created in pending mode.                          |                                  |
+
+
+
+Identity Administration
+
+ID system administrators need an interface to administrate all identity information, including but not limited to, accounts, roles,
+organizations, groups, access policies, etc. Search capability is essential to locate existing identity information to avoid duplicates and
+facilitate the process.
+
+|Reference       |Requirement Criteria                                                                     |Meets, Exceeds or Does not Meet   |
+|IA-01           |The solution shall allow searches against one or combinations of attributes to locate    |                                  |
+|                |interested identity profiles.                                                            |                                  |
+|IA-02           |The solution shall allow to un-provision accounts from systems and applications by       |                                  |
+|                |removing the appropriate business roles.                                                 |                                  |
+|IA-03           |The solution shall provide functions to define rules that allow automatic role           |                                  |
+|                |assignments based on the assignment of another role.                                     |                                  |
+|IA-04           |The solution shall provide functions to define rules that allow automatic role           |                                  |
+|                |assignments based on the user's attributes.                                              |                                  |
+|IA-05           |The solution shall provide functions to define rules that allow automatic role update    |                                  |
+|                |based on the changes of users' attributes.                                               |                                  |
+|IA-06           |The solution shall provide auditing capability for all administrative activities for     |                                  |
+|                |provisioning and role management.                                                        |                                  |
+|IA-07           |The solution shall allow for customized password policies and have the capability enforce|                                  |
+|                |the policies. (e.g. at least one characters, one number, one special character, minimal  |                                  |
+|                |length 12 non-blank characters, may not re-use old password, no dictionary words, no     |                                  |
+|                |common sequences, no control characters, and non-printable characters)                   |                                  |
+|IA-08           |The solution shall provide password reset or recovery functions for administrators.      |                                  |
+|IA-09           |The solution shall allow administrators to manually create a functional account and      |                                  |
+|                |assign specify roles.                                                                    |                                  |
+|IA-10           |The solution shall allow access to be assigned based on a user's business roles.         |                                  |
+|IA-11           |The solution shall allow approving managers to confirm the access described in terms of a|                                  |
+|                |user's business roles.                                                                   |                                  |
+
+
+Access Management
+
+Most of NIST’s applications or services require separation of duties.  User’s roles and accesses should be controlled by configurable rules
+within the proposed solution to ensure the requirement of separation of duty but still allow users to request for additional roles that do not
+conflict with existing roles.
+
+|Reference       |Requirement Criteria                                                                     |Meets, Exceeds or Does not Meet   |
+|AM-01           |The solution shall provide centralized security policy enforcement of user entitlements  |                                  |
+|                |by leveraging role and rule-based access control.                                        |                                  |
+|AM-02           |The solution shall provide secured APIs or web services to allow enterprise applications |                                  |
+|                |and platforms to integrate into the centralized authentication/authorization framework.  |                                  |
+|AM-03           |The solution shall allow the end users to request role assignments.                      |                                  |
+
+
+
+Identity Synchronization
+
+NIST has a Central People Table (CPT) that contains all NIST users and serves as NIST’s authoritative data source.  In an addition, NIST uses
+Microsoft Active Directory as the authentication and authorization source; therefore, the proposed solution needs to have capability to exchange
+user data with the NIST existing infrastructure.
+
+|Reference       |Requirement Criteria                                                                     |Meets, Exceeds or Does not Meet   |
+|IS-01           |The solution shall provide LDAPv3 Directory synchronization.                             |                                  |
+|IS-02           |The solution shall provide data transformation and validation rules during               |                                  |
+|                |synchronization.                                                                         |                                  |
+|IS-03           |The solution shall have an attribute mapping interface that allows the attributes mapping|                                  |
+|                |of one system to different attributes on another system.                                 |                                  |
+|IS-04           |The solution shall allow bidirectional data flow (including attribute mapping,           |                                  |
+|                |transformations, etc.) for example, the ability to configure detection of a telephone    |                                  |
+|                |attribute change on Directory A, transformation of telephone attribute, propagation of   |                                  |
+|                |telephone attribute to LDAP or other applications.                                       |                                  |
+|IS-05           |The solution shall provide Microsoft Active Directory synchronization.                   |                                  |
+
+
+Automated Provisioning
+
+In order for NIST to modernize identity account management, improve efficiency of account management process and address requests on user
+accesses and roles, it is essential that users’ accounts are created automatically across the applications or services in a timely manner and
+with minimal human effort.  Department of Commerce (DOC) policy mandates that user accounts must be locked within 24 hours upon separation of
+duty or reassignment, including organizational or functional changes.
+
+|Reference       |Requirement Criteria                                                                     |Meets, Exceeds or Does not Meet   |
+|AP-01           |The solution shall be able to create, update, and delete user accounts across the        |                                  |
+|                |enterprise environment, including legacy systems and apps.                               |                                  |
+|AP-02           |The solution shall support assignment of users to multiple roles.                        |                                  |
+|AP-03           |The solution shall have the capability to automatically assign user to appropriate groups|                                  |
+|                |based on the assigned role.                                                              |                                  |
+|AP-04           |The solution shall support the assignment of users to hierarchical or inherited roles.   |                                  |
+|AP-05           |The solution shall assign users' individual access rights in addition to a role.         |                                  |
+|AP-06           |The solution shall dynamically and automatically change access rights based on changes in|                                  |
+|                |user roles.                                                                              |                                  |
+|AP-07           |The solution shall support rule-based access controls that allow provisioning rules to be|                                  |
+|                |set and enforced on roles, users, agency, and resources as needed in order to align with |                                  |
+|                |agency's needs.                                                                          |                                  |
+|AP-08           |The solution shall be configured to automatically send out notification to the account   |                                  |
+|                |owner and administrator when an action has been taken on an account.                     |                                  |
+|AP-09           |The solution shall be extensible to adapt to growth in users, applications, and access   |                                  |
+|                |methods.                                                                                 |                                  |
+|AP-10           |The solution shall provide automatic approval routing to persons appropriate to the      |                                  |
+|                |system access requested (e.g., system/service owners) and organizational structure (e.g.,|                                  |
+|                |supervisor).                                                                             |                                  |
+|AP-11           |The solution shall have the ability to assign different status to an account.            |                                  |
+|AP-12           |The solution shall automatically update (activate, suspend, delete) an account based on  |                                  |
+|                |changes done on the authoritative data source.                                           |                                  |
+|AP-13           |The solution shall offer an automated approval mechanism with zero-client footprint.     |                                  |
+|AP-14           |The solution shall allow the administrator to re-route an access request to another      |                                  |
+|                |supervisor for approval.                                                                 |                                  |
+|AP-15           |The solution shall allow users to find a user or a group of users and view their access  |                                  |
+|                |privileges.  If so, list the number of ways it could be accomplished.                    |                                  |
+|AP-16           |The solution shall send out email notification to all the approvers.                     |                                  |
+|AP-17           |The solution shall allow changes to user status (e.g., job promotion captured in HR      |                                  |
+|                |System) or role to automatically drive changes in user access privileges.  If so, the    |                                  |
+|                |solution shall record the reason of the change.                                          |                                  |
+|AP-18           |The solution shall receive information from the data source (e.g., HR System marked      |                                  |
+|                |employee departing the agency) be used to completely and automate account and access     |                                  |
+|                |suspension within 24 hours upon departure.  If so, it shall be fully automated for large |                                  |
+|                |groups of users.                                                                         |                                  |
+|AP-19           |The solution shall allow you to instantly revoke all of a user's access privileges at a  |                                  |
+|                |specify time.  If so, The solution shall allow the user to select a reason for the       |                                  |
+|                |revocation.                                                                              |                                  |
+|AP-20           |The solution shall support role-based access control.                                    |                                  |
+
+
+
+Audit & Report
+
+Department of Commerce (DOC) policy mandates that user accounts must be locked within 24 hours upon separation of duty or reassignment,
+including organizational or functional changes.
+
+Department of Commerce (DOC) policy also mandates that financial records have to be auditable at least for 7 years. Hence, the proposed solution
+shall be required to support the mission to enable all identity and access information to be auditable at least for 7 years or longer.
+
+In order to meet DOC’s policy, all accounts’ status and access modifications shall be tracked in the audit log with timestamp of each change and
+provide capability to allow administrators to search for specific information.  Department of Commerce (DOC) policy also mandates that financial
+records have to be auditable at least for 7 years.
+
+The result of the search needs to be reportable so that it can be reviewed by information security officers and financial auditors.
+
+|Reference       |Requirement Criteria                                                                       |Meets, Exceeds or Does not Meet  |
+|AR-01           |The solution shall provide object-level security and auditing to track system change       |                                 |
+|                |configuration.  If so, the information shall be saved in the backend repository.           |                                 |
+|AR-02           |The solution shall provide a comprehensive view into who has access to which resources.    |                                 |
+|AR-03           |The solution shall provide the ability to find and report on a user's (or a group's) access|                                 |
+|                |privileges.                                                                                |                                 |
+|AR-04           |The solution shall allow users to run reports on demand.                                   |                                 |
+|AR-05           |The solution shall report by administrator (accounts created, accounts modified, accounts  |                                 |
+|                |deleted, password changes, complete audit history per administrator, administrative        |                                 |
+|                |capabilities per administrator).                                                           |                                 |
+|AR-06           |The solution shall report on workflow (requests made by user, requests approved by         |                                 |
+|                |approver, requests denied by approver, requests escalated, delegation of approvals         |                                 |
+|                |including to whom and for what period of time).                                            |                                 |
+|AR-07           |The solution shall provide a comprehensive audit log of all actions/modifications carried  |                                 |
+|                |out through the system.                                                                    |                                 |
+|AR-08           |The solution shall log all approvals in an audit log and saved in the backend repository.  |                                 |
+|AR-09           |The solution shall reconcile logical and actual access across applications.                |                                 |
+|AR-10           |The solution shall provide the ability to audit identity information (accounts, roles,     |                                 |
+|                |groups, etc.) even after the identity data is de-provisioned.                              |                                 |
+|AR-11           |The solution shall support the mission to enable all identity and access information to be |                                 |
+|                |auditable for at least for 7 years or longer.                                              |                                 |
+
+
+Miscellaneous
+
+NIST has a heterogeneous information technology infrastructure environment.  It is essential that a common feature that is intended for NIST end
+users are a web-based interface, so end users’ ability to access the feature is not depended on the information technology resources used by the
+end users.
+
+In order to meet NIST’s information security policy, all web-based technology is required to support SSL v3 or TLS v1.2, and is required to meet
+Section 508 Accessibility to support disability users.
+
+NIST is required to lock user account(s) when the user does not meet the information security requirements.  Custom attributes can be used to
+track NIST’s specific triggers that affect user account(s) status.
+
+NIST’s contractors can have multiple active agreements with different hosts at the same time.  It is essential that NIST has the capability to
+track all locations used by the contractors.
+
+|Reference       |Requirement Criteria                                                                        |Meets, Exceeds or Does not Meet|
+|MI-01           |The solution shall provide a Web-based interface for the end-users.                         |                               |
+|MI-02           |The solution shall allow the administrators to configure SSL v3 or TLS v1.2 to secure the   |                               |
+|                |Web-based interface.                                                                        |                               |
+|MI-03           |The solution shall allow administrators to create custom attributes for the account and     |                               |
+|                |ability to track changes or audit attribute values.                                         |                               |
+|MI-04           |The solution shall support multiple addresses and phone entries for each user.  For         |                               |
+|                |instance, 3 office addresses and phone numbers for a user.                                  |                               |
+|MI-05           |The solution shall offer the Web-Based interface that complies with Section 508             |                               |
+|                |Accessibility.                                                                              |                               |
+
+
+
+Appendix – Definitions
+
+|Term                                    |Definitions                                                                                          |
+|Account                                 |An identity assigned to a particular user for an application or system. In access management, an     |
+|                                        |account may associate with a set of capabilities to access and perform certain functions on a        |
+|                                        |particular application. This concept refers to the element in IDMS that may link to a user, i.e. in  |
+|                                        |the type of a user account or connect to an existing user account, i.e. in the type of a functional  |
+|                                        |account.                                                                                             |
+|Application                             |Software or an information application system that handles business processes.                       |
+|Application Administrator Account       |In addition to common account privileges, the owner of this account possesses the capability to      |
+|                                        |administrate identity policies and mappings to role/positions for one or more application            |
+|                                        |configurations. It is a type of an "Account" with administrative role.                               |
+|Authenticate/Authentication             |The action or process to verify and confirm the identity of an entity.                               |
+|Authorize/Authorization                 |The action or process to permit or deny the accessibility of an entity base on specified access      |
+|                                        |rights or policies to resources, which are related to information security and computer security in  |
+|                                        |general and to access control in particular.                                                         |
+|CPT                                     |is the Central People Table contains all NIST users and serves as NIST’s authoritative data source   |
+|                                        |that may trigger account creation, modification, deletion or request/approval processes in the IDMS. |
+|HRADS                                   |is NIST’s internal application that tracks NIST employees and provide data to the CPT.               |
+|IDMS Administrator Account              |In addition to common account privileges, the owner of this account possesses the capability to      |
+|                                        |create and administrate all or part of the lifecycle of identity accounts in IDMS.                   |
+|NAIS-Web                                |is NIST’s internal application that tracks NIST contractors, associates and other Federal employees, |
+|                                        |and provide data to the CPT.                                                                         |
+|Person                                  |A human being or any identifiable object in the system that does not have identity profile set up yet|
+|                                        |in the ID Management system, i.e., an unknown outsider.                                              |
+|Policy                                  |A permission or denial of access rights of a given application, based on a given account's identity  |
+|                                        |information.                                                                                         |
+|Position                                |is a combination of job description (an attribute in CPT) and person type (NIST employee or non-NIST |
+|                                        |employee, an attribute in CPT)                                                                       |
+|Register/Registration                   |The action or process to create an account in the solution for a new or an existing user and enter   |
+|                                        |his/her identity information to the system.                                                          |
+|Role                                    |A set of policies that grant or deny access or performance of duties on a particular application or a|
+|                                        |group of applications, given a user account and position.                                            |
+|Service                                 |Represents IT software package or an application hosted by NIST to provide specific feature.         |
+|Solution                                |Refer to the proposed product or a suite of products.                                                |
+|User or User Profile                    |An identifiable entity with its identity attributes that represents a Person and is used to          |
+|                                        |authenticate a Person, which already exists in CPT.                                                  |
+
+
+
+                                                      ATTACHMENT B:  BUSINESS CASE SCENARIOS
+
+*Offerors will not be evaluated on their response to this attachment.  This document is strictly for the offerors’ reference when composing
+their quotation.
+
+
+Introduction
+
+In addition to a minimal set of functional requirements to sustain current and future demands for identity and access management services under
+OPM mandate on FICAM roadmap implementation guidance, this section will demonstrate a minimal set of business case scenarios required to
+modernize existing identity and access management system. Based on studies from existing business processes and requirements gathered and
+prioritized from stakeholders, all illustrated cases have been optimized to streamline common services that will comply with the NIST business
+process on account management.
+
+
+Background
+
+This subsection provides some background information and examples that are used in descriptions under business case scenario subsection.
+
+
+Position to Role Mapping
+
+A new hired person should automatically be placed in the corresponding role(s) based on attributes of their position.
+
+    • Employee in Division 183  => 183_Employee, OCIO_Employee, NIST_Employee
+
+    • Employee in Division 182  => 182_Employee, OCIO_Employee, NIST_Employee
+
+    • Employee in Division 851  => 851_Employee, MEL_Employee, NIST_Employee
+
+    • Manager in Division 183 => 183_Manager, 183_Employee, OCIO_Employee, NIST_Employee
+
+    • Division Chief in 183 => OCIO_Manager, 183_Manager, 183_Employee, OCIO_Employee, NIST_Employee
+
+
+Requested Role Processing:
+
+Additional Roles should be available for request and approval within the ID Management System. Roles will have varying approvals as outlined
+below:
+
+    • Email_Calendar_User  => Immediate Supervisor (Employee’s supervisor or Associate’s host)
+
+    • Help_Desk_User => Immediate Supervisor (Employee’s supervisor or Associate’s host) AND Help_Desk_Owner
+
+    • DBA  => Manager (Employee’s supervisor or Associate’s host, if host is Manager if not host’s supervisor)
+
+
+Role and Services Mapping
+
+For the purpose of the scenarios, below are a number of NIST roles and services that a user should automatically receive when assigned to the
+role:
+
+|Roles/Services           |Email_ Calendar |HelpDesk App    |Business App   |Support Tool  |App Servers    |DB Servers    |OCIO Share         |
+|NIST_Employee            |Y               |                |               |              |               |              |                   |
+|OCIO_Employee            |Y               |Y               |               |              |               |              |                   |
+|MEL_Employee             |                |                |Y              |              |               |              |                   |
+|182_Employee             |Y               |Y               |               |              |               |              |                   |
+|183_Employee             |Y               |Y               |Y              |              |               |              |                   |
+|183_Manager              |Y               |                |               |              |               |              |Y                  |
+|851_Employee             |                |                |Y              |              |               |              |                   |
+|Email_Calendar_User      |*Y              |                |               |              |               |              |                   |
+|Help_Desk_User           |                |*Y              |*Y             |              |               |              |                   |
+|DBA                      |                |                |               |*Y            |*Y             |*Y            |                   |
+
+
+Table 1:  Role and Services Mapping
+
+*Users with the appropriate role should automatically receive the access to the service
+
+
+Account Definition
+
+The following types of account are used within NIST.
+
+    • User Account = this is a regular user account that’s always ties back to a person.  If the person leaves NIST or on longer holds the
+      position, the user account is deactivated.
+
+    • Root/Administrator Account = this account has full access to the root system or the complete application.  The account is unique to the
+      system or the application.  It does not tie back to a person.  Users would not use this account for daily activity.
+
+    • Privileged Account = same requirement as user account; in an addition, this account has higher access level or access to the complete
+      application or system just as a root or an administrator account.
+
+    • Functional Account = this is an application or service account.  It is not used by a user.  It has the same access level as a user account.
+       It always ties back to a person but it does not get deactivated when a person leaves NIST or the position, instead it gets assigned to the
+      person’s supervisor.
+
+
+Scenarios
+
+
+Scenario 1 – Configure/Setup a Role, Position, and Account Types
+
+   1. How the solution creates a position
+
+   2. How the solution creates the NIST_Employee and DBA role in Table 1 and how it ties back to a position.
+
+Note: all other roles shall be created before the demonstration
+
+   3. How each type of account is managed and how permissions/access level are assigned to
+
+        a. A regular User Account
+
+        b. Root/Administrator Account
+
+        c. Privileged Account
+
+        d. Functional Account
+
+   4. How the audit log tracks the activities for the above steps.
+
+
+Scenario 2 – Automatically Provision Users Based on the Position Hired
+
+Jean Chief has been hired as a Division Chief for organization 183.  The type of account Jean will receive is a User Account.
+
+   1. How the solution automatically provision Jean Chief in the 183_Manager role.
+
+   2. How the solution automatically placed Jean Chief in the corresponding services (reference Table 1: Role and Services Mapping) as the
+      Division Chief for 183 (User Account).
+
+Note:  create at least one user in each role before the demonstration.
+
+   3. How the audit log tracks the activities for the above steps.
+
+
+Scenario 3 – Request for a Role
+
+John Support is an existing user who has a Privileged Account in Business App.  He is also in the OCIO_Employee role.  (Assume John Support has
+already been created with the existing privilege and role)
+
+   1. How the solution allows John Support requests for a DBA Role when he is currently in the OCIO_Employee role.
+
+   2. How the approval process is created.
+
+   3. Who will receive the approval notification (could be multiple approvers: supervisor, service owner, etc…).
+
+   4. How the approver(s) receives the notification on John Support’s request.
+
+   5. How the approver(s) can approve the request.
+
+   6. How the solution assigns a DBA Role to John.
+
+   7. What happens if the request is rejected by one or all of the approvers.
+
+   8. What happens when a required approver is out-of-office and John Support’s request is urgent.
+
+   9. How the solution provision John Support’s access to the new services from the DBA Role.
+
+  10. How the audit log tracks the activities for the above steps.
+
+
+Scenario 4 – Request for a Functional Account in Email_Calendar and Help Desk App
+
+John Support needs a functional account to test the Email_Calendar, and Help Desk App as a normal user.
+
+   1. How the solution allows John Support requests for a functional account.
+
+   2. Repeat Scenario 3 from steps 3 to 8 if it is different from what was presented for scenario 3.
+
+   3. How the functional accounts get link to John Support.
+
+   4. How the account is automatically provisioned in the Email/Calendar, Help Desk App and Business App.
+
+   5. How the audit log tracks the activities for the above steps.
+
+
+Scenario 5 – Display and Report Information
+
+   1. How and who can search, display and report on what roles John Support has and all the attributes for John Support.
+
+   2. How and who can search, display and report on what services John Support has access to and all the entire attributes on the service(s).
+
+   3. How and who can search, display and report for all the members in the DBA role and all the members attributes.
+
+   4. How and who can search, display and report on all the user accounts in the Email_Calendar service.
+
+   5. How and who can search, display and report for the accounts approved/certified by Jean Chief.
+
+   6. How the audit log tracks the activities for the above steps.
+
+
+Scenario 6 – Lock and Unlock User Account
+
+All NIST IT users have to complete an hour of security training by the end of fiscal year.  If the training is not completed by the fiscal year,
+IT accounts have to be locked until the training is completed.
+
+   1. How the solution track if the user has completed the security training or not.
+
+   2. How the solution automatically locks a user’s Email/Calendar account when he/she did not complete the security training.
+
+   3. How the solution sends out notification to the user on the account status and changes made on the account.
+
+   4. How the solution automatically locks all the accounts belong to a user when he/she did not complete the security training.
+
+   5. How the solution allows an ID Management System Administrator to manually lock a user’s Email/Calendar account.
+
+   6. How the solution allows an ID Management System Administrator to manually lock all the accounts belong to a user.
+
+   7. How the solution sends out notification to the user on the account status and manually changes made on the account.
+
+   8. How the solution automatically unlocks a user’s Email/Calendar account when he/she complete the security training.
+
+   9. How the solution automatically unlocks all the accounts belong to a user when he/she complete the security training.
+
+  10. How the solution allows an ID Management System Administrator to manually unlock a user’s Email/Calendar account.
+
+  11. How the solution allows an ID Management System Administrator to manually unlock all the accounts belong to a user.
+
+  12. How the audit log tracks the activities for the above steps.
+
+
+Scenario 7 – Remove a Role
+
+182_Employee role is no longer needed.  It has been migrated into the OCIO_Employee role.
+
+   1. How and who can retire or remove the 182_Employee role.
+
+   2. What happens to the members in the 182_Employee role.
+
+   3. What happens to the OCIO_Employee role.
+
+   4. How the audit log tracks the activities for the above steps.
+
+
+Scenario 8 – User Leaves the Position
+
+John Support currently has a privileged account, a functional account, DBA Role and the OCIO_Employee Role.  John Support has been prompted to
+be the new Division Chief for MEL effect on 1st of the Month.  All access privileges except Email_Calendar shall be re-assigned based on the new
+position after 24 hours from departure of the current position.
+
+   1. What happens to John Support’s privileged account in Business App after 24 hours from departure.
+
+   2. What happens to John Support’s functional accounts after 24 hours from departure.
+
+   3. What happens to John Support’s role DBA and OCIO_Employee after 24 hours from departure.
+
+   4. What type or if any notification(s) is/are generated.
+
+   5. Who receives the notification(s).
+
+   6. How John Support is granted to the MEL_Employee Role.
+
+   7. How John Support is granted to the service accesses based on the MEL_Employee Role.
+
+   8. How the audit log tracks the activities for the above steps.
+
+
+Scenario 9 – User Leaves NIST and Comes Back as a Contractor
+
+John Support is now retiring from NIST.  John is no longer a government employee.  The last day is the end of the month.  John’s current access
+has to be terminated or locked within 24 hours of status change.  At the beginning of the month or the 1st business date, John becomes NIST’s
+contactor as a Database Administrator.  Therefore, John Support will be removed from the HRADS application but re-created in the NAIS-Web
+application.
+
+   1. What happens to John Support’s account after the 24 hours of status change.
+
+   2. What type or if any notification(s) is/are generated.
+
+   3. Who receives the notification.
+
+   4. How John Support’s accesses are revoked.
+
+   5. How John Support’s new account and accesses are granted.
+
+   6. How the audit log tracks the activities for the above steps.
+
+
+Appendix – Definitions
+
+|Term                                    |Definitions                                                                                          |
+|Account                                 |An identity assigned to a particular user for an application or system. In access management, an     |
+|                                        |account may associate with a set of capabilities to access and perform certain functions on a        |
+|                                        |particular application. This concept refers to the element in IDMS that may link to a user, i.e. in  |
+|                                        |the type of a user account or connect to an existing user account, i.e. in the type of a functional  |
+|                                        |account.                                                                                             |
+|Application                             |Software or an information application system that handles business processes.                       |
+|Application Administrator Account       |In addition to common account privileges, the owner of this account possesses the capability to      |
+|                                        |administrate identity policies and mappings to role/positions for one or more application            |
+|                                        |configurations. It is a type of an "Account" with administrative role.                               |
+|Authenticate/Authentication             |The action or process to verify and confirm the identity of an entity.                               |
+|Authorize/Authorization                 |The action or process to permit or deny the accessibility of an entity base on specified access      |
+|                                        |rights or policies to resources, which are related to information security and computer security in  |
+|                                        |general and to access control in particular.                                                         |
+|CPT                                     |is the Central People Table contains all NIST users and serves as NIST’s authoritative data source   |
+|                                        |that may trigger account creation, modification, deletion or request/approval processes in the IDMS. |
+|HRADS                                   |is NIST’s internal application that tracks NIST employees and provide data to the CPT.               |
+|IDMS Administrator Account              |In addition to common account privileges, the owner of this account possesses the capability to      |
+|                                        |create and administrate all or part of the lifecycle of identity accounts in IDMS.                   |
+|NAIS-Web                                |is NIST’s internal application that tracks NIST contractors, associates and other Federal employees, |
+|                                        |and provide data to the CPT.                                                                         |
+|Person                                  |A human being or any identifiable object in the system that does not have identity profile set up yet|
+|                                        |in the ID Management system, i.e., an unknown outsider.                                              |
+|Policy                                  |A permission or denial of access rights of a given application, based on a given account's identity  |
+|                                        |information.                                                                                         |
+|Position                                |is a combination of job description (an attribute in CPT) and person type (NIST employee or non-NIST |
+|                                        |employee, an attribute in CPT)                                                                       |
+|Register/Registration                   |The action or process to create an account in the solution for a new or an existing user and enter   |
+|                                        |his/her identity information to the system.                                                          |
+|Role                                    |A set of policies that grant or deny access or performance of duties on a particular application or a|
+|                                        |group of applications, given a user account and position.                                            |
+|Service                                 |Represents IT software package or an application hosted by NIST to provide specific feature.         |
+|Solution                                |Refer to the proposed product or a suite of products.                                                |
+|User or User Profile                    |An identifiable entity with its identity attributes that represents a Person and is used to          |
+|                                        |authenticate a Person, which already exists in CPT.                                                  |
+
+
+
+                                                  PAST PERFORMANCE INFORMATION QUESTIONNAIRE FOR
+                                                        SOLICITATION NO. SB1341-10-RQ-0734
+
+|PART I: FOR COMPLETION BY GSA FSS OFFEROR                                                                                                     |
+|                                                                                                                                              |
+|Instructions:                                                                                                                                 |
+|                                                                                                                                              |
+|The GSA FSS Offeror shall complete all items set forth in this Part I for each past performance information reference and return the completed|
+|forms with the GSA FSS quotation.                                                                                                             |
+|                                                                                                                                              |
+|The GSA FSS Offeror shall also coordinate with their identified reference(s), supplying them with the completed Part I and a blank Part II for|
+|completion, sufficiently in advance of the due date identified in Part II.  The Government may contact the GSA FSS Offeror’s references after |
+|quotations are received to obtain any Part II documents that are not submitted by the GSA FSS quotation due date and time and/or to discuss   |
+|their submissions to ensure a clear understanding of their evaluation.                                                                        |
+|Name and address of company being    |                                                                                                       |
+|evaluated:                           |                                                                                                       |
+|Name of customer firm/agency for     |                                                                                                       |
+|which the referenced work was        |                                                                                                       |
+|performed:                           |                                                                                                       |
+|Description of firm/agency (check    |Commercial (for Profit)        |Federal Government           |Local/State Government                    |
+|one):                                |                               |                             |                                          |
+|Address of customer firm/agency:     |                                                                                                       |
+|                                     |                                                                                                       |
+|                                     |                                                                                                       |
+|Name, title, employer, and contact   |                                                                                                       |
+|information for individual providing |                                                                                                       |
+|reference:                           |                                                                                                       |
+|Referenced contract/order number:    |                                                                                                       |
+|Period of performance for referenced |                                                                                                       |
+|contract/order:                      |                                                                                                       |
+|Contract/order award date:           |                                                                                                       |
+
+|Contract/order amount (including     |                                                                                                       |
+|options exercised):                  |                                                                                                       |
+|Contract type:                       |Fixed-Price                  |Cost Plus Incentive Fee             |Labor-Hour                          |
+|                                     |Cost Plus Award Fee          |Cost Plus Fixed Fee                 |Time-and-Materials                  |
+|Was the Offeror for which this       |Yes                                             |No                                                    |
+|reference is being provided the Prime|                                                |                                                      |
+|Contractor?                          |                                                |                                                      |
+|Description of the contract/order    |                                                                                                       |
+|work:                                |                                                                                                       |
+|                                     |                                                                                                       |
+|                                     |                                                                                                       |
+|                                     |                                                                                                       |
+|Relevance of the contract/order work |                                                                                                       |
+|to the work described in RFQ         |                                                                                                       |
+|SB1341-10-RQ-0734:                   |                                                                                                       |
+|                                     |                                                                                                       |
+|                                     |                                                                                                       |
+
+
+
+
+|PART II: FOR COMPLETION BY GSA FSS OFFEROR’S PAST PERFORMANCE INFORMATION REFERENCE                                                           |
+|                                                                                                                                              |
+|Instructions:                                                                                                                                 |
+|                                                                                                                                              |
+|References are asked to complete all items set forth in this Part II and should return the completed form no later than August 31, 2010 to:   |
+|                                                                                                                                              |
+|Fax: (301) 975-8904 (Attn: Keith Bubar)                                                                                                       |
+|                                                                                                                                              |
+|or                                                                                                                                            |
+|                                                                                                                                              |
+|Email: keith.bubar@nist.gov                                                                                                                   |
+|Background Information                                                                                                                        |
+|Name of respondent:                   |                                                                                                       |
+|Position and title:                   |                                                                                                       |
+|Employer name:                        |                                                                                                       |
+|Employer’s address:                   |                                                                                                       |
+|                                      |                                                                                                       |
+|Contact information:                  |Telephone:                     |Fax:                        |e-mail:                                   |
+|Referenced Contract/Order Number for  |                                                                                                       |
+|which information is being provided:  |                                                                                                       |
+|Basis of qualification to evaluate    |                                                                                                       |
+|Contractor’s past performance:        |                                                                                                       |
+|Names of key Contractor personnel:    |                                                                                                       |
+|                                      |                                                                                                       |
+|Evaluation                                                                                                                                    |
+|For each performance element identified below, references should evaluate performance of the firm or individual identified in Part 1 of this  |
+|form. Where the reference lacks sufficient information to provide an evaluation for a particular performance element, this should be noted.   |
+|Where any deficiency or unfavorable information is identified, the reference should identify any mitigating factors that may weigh in favor of|
+|the person/firm on whose behalf the reference is provided (i.e., problems due to causes outside the contractor’s control). An individual      |
+|within your organization who is knowledgeable of the Contractor’s day-to-day operations and overall performance should complete this          |
+|questionnaire. However, that individual is encouraged to supplement their own knowledge of the Contractor’s performance with the judgment of  |
+|others within their organization, as applicable.                                                                                              |
+|Date this questionnaire was completed:            |                                                                                           |
+
+|Please provide answers to the questions listed below. When responding to the questions listed, circle the letter that most accurately         |
+|describes the contractor’s performance or situation (see the “ratings” chart below for a description of each letter). Handwritten responses to|
+|this questionnaire are acceptable. However, if responses are handwritten, please print legibly.                                               |
+
+                                              Definitions of Potential Ratings for Questions Below:
+|Adjective                          |Description                                                                                                     |
+|Exceptional (E)                    |Possessing outstanding quality or merit, remarkably good.                                                       |
+|Good (G)                           |Possessing more than satisfactory quality or merit.                                                             |
+|Acceptable (A)                     |Possessing adequate quality or merit.                                                                           |
+|Marginal (M)                       |Possessing limited quality or merit.                                                                            |
+|Unacceptable (U)                   |Possessing inadequate quality or merit.                                                                         |
+|Not Applicable (N/A)               |Reference has no knowledge of Contractor’s past performance in this area, reference has insufficient information|
+|                                   |to provide a rating in this area, or question does not apply to the referenced contract.                        |
+
+
+
+1)QUALITY OF PRODUCT OR SERVICE
+
+Contractor’s ability to meet minimum quality requirements specified in contract
+
+
+E   G   A   M   U   N/A
+
+Contractor’s ability to effectively control the quality of products or services provided
+
+
+E   G   A   M   U   N/A
+
+2)DAY TO DAY MANAGEMENT
+
+Contractor’s ability to manage its financial and human resources to meet contract requirements
+
+
+E   G   A   M   U   N/A
+
+Contractor’s ability to effectively manage the contract/order from a contract administration standpoint
+
+
+E   G   A   M   U   N/A
+
+
+4)TIMELINESS
+
+Contractor’s ability to meet timeliness requirements for contract deliverables
+
+E   G   A   M   U   N/A
+
+
+5)COST CONTROL
+
+Contractor’s ability to manage its resources within cost limitations set forth in the contract (assuming no growth in requirements)
+
+
+E   G   A   M   U   N/A
+
+
+6)MEETING PROJECT DEADLINES
+
+Contractor’s ability to meet project deadlines in a multidisciplinary environment
+
+E   G   A   M   U   N/A
+
+
+OVERALL RATING:                                   E   G   A    M    U
+
+Remarks:
+
+
+                                                                STATEMENT OF WORK
+
+
+        Background
+
+
+
+The US Department of Commerce (DOC) National Institute of Standards and Technology (NIST) has a requirement to modernize identity account
+management and improve efficiency of account management processes by linking users’ logical accesses to assigned business roles. In response to
+security events, the ID management team has been frequently asked for roles of users as well as those who have access to particular resources.
+Under the current ID management system, it takes a couple of days to respond to the requests.
+
+To comply with HSPD-12 directive and according to the Office of Personnel Management (OPM) mandate on the Federal Identity, Credentialing and
+Access Management (FICAM) roadmap and implementation guidance, starting FY2010, all government agencies are required to implement and integrate
+new application systems that accept Personal Identification Verification (PIV) credentials. By the end of FY 2012, Federal Executive agencies
+will implement a coordinated approach to FICAM across E-Government interactions [Government-to-Government, Government-to-Business, Government-to-
+Citizen, and Internal Effectiveness and Efficiency (IEE)] at all levels of assurance as defined in OMB M-04-04. The aim of this project is to
+seek a standards-based solution for NIST-wide identity, credential and access management to ensure alignment, clarity, and interoperability.
+
+All NIST users’ information is stored on a single Oracle system, called the Centralized People Table (CPT).  CPT will serve as NIST’s
+authoritative data source for the ID Management software.
+
+CPT creates users from two applications, the NAIS-Web that tracks NIST Associates (contractors and guest researchers) and HRADS for NIST
+employees.
+
+While most people hold a single “position” at NIST, people in the CPT have a one-to-many relationship with positions. This will allow the CPT to
+support the following NIST situations:
+
+   1. A NIST Associate has relationships (agreements) with multiple NIST organizations.
+
+   2. A person changes from NIST Associate to Employee (Hire) or Employee to Associate (Retirement)
+
+   3. A NIST Employee fills several organizational positions usually additional roles are in an “Acting” capacity.
+
+The full ID Management Systems (IDMS) is intended to be procured in FY2011 contingent upon the availability of funds. This procurement is to
+provide NIST with development and test instances of the new IDMS supporting a minimum of 50 and maximum of 200 test users. The allocation of the
+total number of 50-200 end user licenses on each instance will be determined by NIST during the configuration of the two environments.
+
+
+
+
+
+   I. Scope of Work
+
+   The proposed solution shall include
+
+    • Licenses for all IDMS components required to meet NIST’s requirements in Development and Test environment, including maintenance.
+
+    • Professional services for installation and configuration of the development and test IDMS components.  Refer to Attachment A: Business Case
+      Scenarios document for the scope of professional services.
+
+    • Knowledge transfers to NIST staff on the installation, configuration and operation of the new IDMS.
+
+The vendor shall provide materials for all knowledge transfer topics.  The Government anticipates the award of a time & materials contract.  The
+Government also anticipates that a follow-on contract will follow in FY2011 if the awarded solution successfully performs when tested in the
+NIST infrastructure.
+
+  II. Specific Tasks
+
+   The contractor shall perform the following tasks listed below.  Attachment B to the solicitation describes business case scenarios that the
+   IDMS will be used for during the testing phase.
+
+   1. Provide a minimum of 50 and maximum of 200 end user licenses to an ID Management System (IDMS) that meets the minimum functional
+      requirement detailed in section V of this Statement of Work, along with maintenance for these licenses.
+
+   2. Provide Professional Services in accordance with the following:
+
+        a. The contractor shall review NIST’s requirements and Technical Reference Model and propose an architecture for a production
+           environment capable of supporting the NIST infrastructure and 6,500 users in two primary campuses (Gaithersburg, MD and Boulder, CO).
+
+   i. Review NIST’s current architecture and infrastructure to determine the best architecture for the new production IDMS that complies with the
+      NIST’s Technical Reference Model.
+
+             ii. It is the responsibility of the contactor to propose the hardware requirement and the infrastructure to support the production
+                 instance based on the information collected during the initial environment validation, user roles and requirements review.
+
+ iii. The contractor shall document all the activities completed with or without NIST personal present.  The contractor shall also document all
+      decisions made for the installation and configuration of the new ID Management tool.  At the last day of the service, the contactor shall
+      present the document to the NIST personal as the exit document.
+
+  iv. Identify and recommend hardware specifications for the production IDMS that complies with the NIST Technical Reference Model.
+
+   v. Propose the architecture for review by the NIST Architecture Review Board.
+
+  vi. Address issues brought up by the NIST Architecture Review Board.
+
+ vii. Test the connectivity between systems and integrated components.
+
+        b. The contractor shall install, configure and demonstrate development and test IDMS instances to meet NIST’s requirements.
+
+   i. Identify and propose architecture for the development and test instances of the IDMS that is representative of the proposed production
+      system and suitable given the maximum 200 user environment.
+
+  ii. Recommend best configuration procedures.
+
+ iii. Install the development and test instances of the IDMS.
+
+  iv. Perform the configuration to meet NIST’s requirements.
+
+   v. Demonstrate the compliance with NIST’s requirements by executing NIST specific scenarios.
+
+  vi. Prepare an exit document.
+
+        c. The contractor shall provide knowledge transfer trainings for NIST selected administrators.
+
+   i. Provide all training materials for all the attendees.
+
+  ii. Train the attendees using NIST test IDMS environment.
+
+
+
+
+ III. Deliverables and Due Dates
+
+The Contractor shall:
+
+   1. Provide NIST a hard (on DVD) and software (downloadable link) copy of all the software required for the installation and implementation on
+      the first day of the contract.
+
+   2. Provide a detail timeline for tasks involved in the installation, configuration and training.  Include the start date, end date and
+      duration required for each task.  The contractor shall provide this deliverable to NIST on the first day of the contract.
+
+   a. Provide NIST the architecture for the production instance that meets the NIST architecture committee requirement.
+
+   i. Provide NIST recommendation on hardware requirements for the production instance that meets the NIST architecture standard.
+
+   b. Provide NIST Administrator Guide of the new ID Management System.
+
+              i. Provide NIST User Guide of the new ID Management System.
+
+             ii. Provide NIST a document with definition of configuration items.
+
+            iii. Provide NIST a documented guidance on the configuration procedure.
+
+             iv. Install and configured ID Management System for the test and development instances.
+
+              v. Provide NIST an exit document which outlines all activities completed by the contractor, what was configured and integrated, as
+                 well as how the configuration and integration were done.
+
+   c. Provide NIST the training agenda, schedule and instructor led courses.
+
+   i. Provide NIST the all training material for the new ID Management Administrators.
+
+All the above shall be delivered by the contractor to the NIST TIC within the fixed length time of the contract.  The NIST TIC shall provide the
+contractor with written comments on each deliverable within 3 business days of receipt of deliverable.  Should revisions be requested, the
+contractor shall provide the request revisions within 3 business days of receipt of NIST TIC’s written comments.
+
+  IV. IDMS Minimum Requirements
+
+
+
+
+
+Architecture Considerations
+
+The Identity and Access Management System shall be the core infrastructure at NIST and therefore shall comply with the NIST Technical Reference
+Model which specifies the preferred Operating Systems, Databases, and technologies supported by NIST’s operational staff. In addition, it is
+anticipated that the system shall be required to be included in the NIST Continued Operations (COOP) plans which will require that it be able to
+be synchronized across sites.
+
+On the other hand, NIST has limited space and power capacity in its central computing facilities therefore the system shall support operations
+in a virtual machine environment for development and test.
+
+NIST currently maintains a heterogeneous information technology infrastructure to support national missions across geographically dispersed
+research centers that use non-windows operating systems.
+
+The proposal shall explicitly indicate any particular feature that is not supported via a web interface or in Firefox or Safari, if any.
+
+|Reference       |Requirement Criteria                                                                                                       |
+|AC-01           |The solution shall support deployment on following database management systems:                                            |
+|                |Oracle DBMS,                                                                                                               |
+|                |Microsoft SQL Server.                                                                                                      |
+|                |If so, please provide explanation which ones to support.                                                                   |
+|AC-02           |The solution shall run on Microsoft Windows or Red Hat Linux operating systems.                                            |
+|AC-03           |The solution shall enable integrations, such as web service via HTTP, JMS, etc. with other infrastructure components       |
+|                |residing on multiple network zones.                                                                                        |
+|AC-04           |The solution shall facilitate automated account linking and correlation across multiple back-end repositories to provide a |
+|                |single repository thus a single view of the account information.                                                           |
+|AC-05           |The solution shall offer FIPS 140-2 validated encryption between systems communications.                                   |
+|AC-06           |The solution shall offer FIPS 140-2 validated encrypted communications between managed resources and the central account   |
+|                |management server.                                                                                                         |
+|AC-07           |The solution shall accept PIV card as an authentication method alternative to username/password logins.                    |
+|AC-08           |The solution shall provide high availability and failover capabilities to eliminate any single point of failure.           |
+|AC-09           |The solution shall offer FIPS 140-2 validated encrypted accesses to all web based interfaces.                              |
+|AC-10           |The solution shall support managing accounts for a user who has multiple accounts on the same resource (for example, a user|
+|                |who has an administrative account and a test or functional account on "Resource A").                                       |
+|AC-11           |The solution shall support deployment on any of the following application servers: WebLogic, Oracle, Microsoft IIS. If so, |
+|                |provide explanation on which ones are supported.                                                                           |
+|AC-12           |The solution shall support deployment and operations in a virtualized environment.                                         |
+|AC-13           |The solution shall support at minimum Microsoft Internet Explorer, Mozilla Firefox, and Safari whenever a web browser is   |
+|                |required.                                                                                                                  |
+|AC-14           |The solution shall accept the Centralized People Table (CPT) system (reference Appendix – Definition) as the NIST’s primary|
+|                |identity data source for the proposed solution. The solution shall maintain its own data source for other aspects of       |
+|                |identity and access management.                                                                                            |
+
+
+Identity Registration
+
+All NIST accounts are required to be reviewed and approved by resource owners and/or organizational supervisors before they are created.
+Accounts are required to be created prior to users’ arrival but only are activated until users are on site due to information security
+requirements. Search capability is essential to locate existing identity information to avoid duplicates and facilitate the process.
+
+|Reference       |Requirement Criteria                                                                                                       |
+|IR-01           |The solution shall provide account registration process with account approvals and notifications.                          |
+|IR-02           |The solution shall provide functions to register accounts associated with existing accounts, i.e., alias accounts but with |
+|                |separate roles and responsibilities.                                                                                       |
+|IR-03           |The solution shall allow custom search functions to locate identity information, such as roles, organizations, etc.        |
+|IR-04           |The solution shall allow account to be created in pending mode.                                                            |
+
+
+
+Identity Administration
+
+ID system administrators need an interface to administrate all identity information, including but not limited to, accounts, roles,
+organizations, groups, access policies, etc. Search capability is essential to locate existing identity information to avoid duplicates and
+facilitate the process.
+
+|Reference       |Requirement Criteria                                                                                                       |
+|IA-01           |The solution shall allow searches against one or combinations of attributes to locate interested identity profiles.        |
+|IA-02           |The solution shall allow to un-provision accounts from systems and applications by removing the appropriate business roles.|
+|IA-03           |The solution shall provide functions to define rules that allow automatic role assignments based on the assignment of      |
+|                |another role.                                                                                                              |
+|IA-04           |The solution shall provide functions to define rules that allow automatic role assignments based on the user's attributes. |
+|IA-05           |The solution shall provide functions to define rules that allow automatic role update based on the changes of users'       |
+|                |attributes.                                                                                                                |
+|IA-06           |The solution shall provide auditing capability for all administrative activities for provisioning and role management.     |
+|IA-07           |The solution shall allow for customized password policies and have the capability enforce the policies. (e.g. at least one |
+|                |characters, one number, one special character, minimal length 12 non-blank characters, may not re-use old password, no     |
+|                |dictionary words, no common sequences, no control characters, and non-printable characters)                                |
+|IA-08           |The solution shall provide password reset or recovery functions for administrators.                                        |
+|IA-09           |The solution shall allow administrators to manually create a functional account and assign specify roles.                  |
+|IA-10           |The solution shall allow access to be assigned based on a user's business roles.                                           |
+|IA-11           |The solution shall allow approving managers to confirm the access described in terms of a user's business roles.           |
+
+
+Access Management
+
+Most of NIST’s applications or services require separation of duties.  User’s roles and accesses should be controlled by configurable rules
+within the proposed solution to ensure the requirement of separation of duty but still allow users to request for additional roles that do not
+conflict with existing roles.
+
+|Reference       |Requirement Criteria                                                                                                       |
+|AM-01           |The solution shall provide centralized security policy enforcement of user entitlements by leveraging role and rule-based  |
+|                |access control.                                                                                                            |
+|AM-02           |The solution shall provide secured APIs or web services to allow enterprise applications and platforms to integrate into   |
+|                |the centralized authentication/authorization framework.                                                                    |
+|AM-03           |The solution shall allow the end users to request role assignments.                                                        |
+
+
+
+Identity Synchronization
+
+NIST has a Central People Table (CPT) that contains all NIST users and serves as NIST’s authoritative data source.  In an addition, NIST uses
+Microsoft Active Directory as the authentication and authorization source; therefore, the proposed solution needs to have capability to exchange
+user data with the NIST existing infrastructure.
+
+|Reference       |Requirement Criteria                                                                                                       |
+|IS-01           |The solution shall provide LDAPv3 Directory synchronization.                                                               |
+|IS-02           |The solution shall provide data transformation and validation rules during synchronization.                                |
+|IS-03           |The solution shall have an attribute mapping interface that allows the attributes mapping of one system to different       |
+|                |attributes on another system.                                                                                              |
+|IS-04           |The solution shall allow bidirectional data flow (including attribute mapping, transformations, etc.) for example, the     |
+|                |ability to configure detection of a telephone attribute change on Directory A, transformation of telephone attribute,      |
+|                |propagation of telephone attribute to LDAP or other applications.                                                          |
+|IS-05           |The solution shall provide Microsoft Active Directory synchronization.                                                     |
+
+
+Automated Provisioning
+
+In order for NIST to modernize identity account management, improve efficiency of account management process and address requests on user
+accesses and roles, it is essential that users’ accounts are created automatically across the applications or services in a timely manner and
+with minimal human effort.  Department of Commerce (DOC) policy mandates that user accounts must be locked within 24 hours upon separation of
+duty or reassignment, including organizational or functional changes.
+
+|Reference       |Requirement Criteria                                                                                                       |
+|AP-01           |The solution shall be able to create, update, and delete user accounts across the enterprise environment, including legacy |
+|                |systems and apps.                                                                                                          |
+|AP-02           |The solution shall support assignment of users to multiple roles.                                                          |
+|AP-03           |The solution shall have the capability to automatically assign user to appropriate groups based on the assigned role.      |
+|AP-04           |The solution shall support the assignment of users to hierarchical or inherited roles.                                     |
+|AP-05           |The solution shall assign users' individual access rights in addition to a role.                                           |
+|AP-06           |The solution shall dynamically and automatically change access rights based on changes in user roles.                      |
+|AP-07           |The solution shall support rule-based access controls that allow provisioning rules to be set and enforced on roles, users,|
+|                |agency, and resources as needed in order to align with agency's needs.                                                     |
+|AP-08           |The solution shall be configured to automatically send out notification to the account owner and administrator when an     |
+|                |action has been taken on an account.                                                                                       |
+|AP-09           |The solution shall be extensible to adapt to growth in users, applications, and access methods.                            |
+|AP-10           |The solution shall provide automatic approval routing to persons appropriate to the system access requested (e.g.,         |
+|                |system/service owners) and organizational structure (e.g., supervisor).                                                    |
+|AP-11           |The solution shall have the ability to assign different status to an account.                                              |
+|AP-12           |The solution shall automatically update (activate, suspend, delete) an account based on changes done on the authoritative  |
+|                |data source.                                                                                                               |
+|AP-13           |The solution shall offer an automated approval mechanism with zero-client footprint.                                       |
+|AP-14           |The solution shall allow the administrator to re-route an access request to another supervisor for approval.               |
+|AP-15           |The solution shall allow users to find a user or a group of users and view their access privileges.  If so, list the number|
+|                |of ways it could be accomplished.                                                                                          |
+|AP-16           |The solution shall send out email notification to all the approvers.                                                       |
+|AP-17           |The solution shall allow changes to user status (e.g., job promotion captured in HR System) or role to automatically drive |
+|                |changes in user access privileges.  If so, the solution shall record the reason of the change.                             |
+|AP-18           |The solution shall receive information from the data source (e.g., HR System marked employee departing the agency) be used |
+|                |to completely and automate account and access suspension within 24 hours upon departure.  If so, it shall be fully         |
+|                |automated for large groups of users.                                                                                       |
+|AP-19           |The solution shall allow you to instantly revoke all of a user's access privileges at a specify time.  If so, The solution |
+|                |shall allow the user to select a reason for the revocation.                                                                |
+|AP-20           |The solution shall support role-based access control.                                                                      |
+
+
+
+Audit & Report
+
+Department of Commerce (DOC) policy mandates that user accounts must be locked within 24 hours upon separation of duty or reassignment,
+including organizational or functional changes.
+
+Department of Commerce (DOC) policy also mandates that financial records have to be auditable at least for 7 years. Hence, the proposed solution
+shall be required to support the mission to enable all identity and access information to be auditable at least for 7 years or longer.
+
+In order to meet DOC’s policy, all accounts’ status and access modifications shall be tracked in the audit log with timestamp of each change and
+provide capability to allow administrators to search for specific information.  Department of Commerce (DOC) policy also mandates that financial
+records have to be auditable at least for 7 years.
+
+The result of the search needs to be reportable so that it can be reviewed by information security officers and financial auditors.
+
+|Reference       |Requirement Criteria                                                                                                       |
+|AR-01           |The solution shall provide object-level security and auditing to track system change configuration.  If so, the information|
+|                |shall be saved in the backend repository.                                                                                  |
+|AR-02           |The solution shall provide a comprehensive view into who has access to which resources.                                    |
+|AR-03           |The solution shall provide the ability to find and report on a user's (or a group's) access privileges.                    |
+|AR-04           |The solution shall allow users to run reports on demand.                                                                   |
+|AR-05           |The solution shall report by administrator (accounts created, accounts modified, accounts deleted, password changes,       |
+|                |complete audit history per administrator, administrative capabilities per administrator).                                  |
+|AR-06           |The solution shall report on workflow (requests made by user, requests approved by approver, requests denied by approver,  |
+|                |requests escalated, delegation of approvals including to whom and for what period of time).                                |
+|AR-07           |The solution shall provide a comprehensive audit log of all actions/modifications carried out through the system.          |
+|AR-08           |The solution shall log all approvals in an audit log and saved in the backend repository.                                  |
+|AR-09           |The solution shall reconcile logical and actual access across applications.                                                |
+|AR-10           |The solution shall provide the ability to audit identity information (accounts, roles, groups, etc.) even after the        |
+|                |identity data is de-provisioned.                                                                                           |
+|AR-11           |The solution shall support the mission to enable all identity and access information to be auditable for at least for 7    |
+|                |years or longer.                                                                                                           |
+
+
+Miscellaneous
+
+NIST has a heterogeneous information technology infrastructure environment.  It is essential that a common feature that is intended for NIST end
+users are a web-based interface, so end users’ ability to access the feature is not depended on the information technology resources used by the
+end users.
+
+In order to meet NIST’s information security policy, all web-based technology is required to support SSL v3 or TLS v1.2, and is required to meet
+Section 508 Accessibility to support disability users.
+
+NIST is required to lock user account(s) when the user does not meet the information security requirements.  Custom attributes can be used to
+track NIST’s specific triggers that affect user account(s) status.
+
+NIST’s contractors can have multiple active agreements with different hosts at the same time.  It is essential that NIST has the capability to
+track all locations used by the contractors.
+
+|Reference       |Requirement Criteria                                                                                                       |
+|MI-01           |The solution shall provide a Web-based interface for the end-users.                                                        |
+|MI-02           |The solution shall allow the administrators to configure SSL v3 or TLS v1.2 to secure the Web-based interface.             |
+|MI-03           |The solution shall allow administrators to create custom attributes for the account and ability to track changes or audit  |
+|                |attribute values.                                                                                                          |
+|MI-04           |The solution shall support multiple addresses and phone entries for each user.  For instance, 3 office addresses and phone |
+|                |numbers for a user.                                                                                                        |
+|MI-05           |The solution shall offer the Web-Based interface that complies with Section 508 Accessibility.                             |
+
+
+   V. Period and Place of Performance
+
+   The period of performance of this requirement is for 12 months from the date of award.  All required Professional Services shall be completed
+   within this time period.  All work shall be performed at the NIST Gaithersburg, MD campus.
+
+  VI. Risk Level
+
+   The risk level for this requirement is Low Risk.
+
+ VII.  Government Furnished Property
+
+   The Government will provide to the contractor access to the NIST Gaithersburg, MD campus facilities necessary to perform the work required by
+   this SOW.
+
+
+
+
+
+
+
+
+
+
+
+
+

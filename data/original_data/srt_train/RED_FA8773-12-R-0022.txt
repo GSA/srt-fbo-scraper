@@ -1,0 +1,217 @@
+
+
+
+
+
+                                                                   APPENDIX 10
+
+                                                            FOR LARGE AND MEDIUM SITES
+
+                                                            REQUIRED LOCAL COMMERCIAL
+                                                         SERVICE AUTHORIZATION AT CUTOVER
+
+10.0  Local services, required from the Contractor, are initial installation and cutover service requirements for the Government under the scope
+of this contract.  The Contractor shall provide the following baseline of local commercial communications services for Wyoming ANG, Cheyenne WY
+at cutover.  The quantity of these initial service requirements will be incorporated into the Schedule B.  The installation service requirement
+will be identified here and the Schedule B.
+
+The base telephone switching system is identified as a Definity G3i upgrade to Avaya S8700 with the Release 11 software version, and where the
+switching system is located in Building 16, 217 Dell Range Blvd, Cheyenne, WY 82009.
+
+Cutover for this site is:  _120_ days.
+
+The base Communication Services Officer (CSO) is:
+
+Eric Green/Capt
+Comm Flight Commander
+217 Dell Range Blvd
+Wyoming ANG, WY. 82009
+307-772-6800
+307-772-6169
+Eric.green@ang.af.mil
+
+The base technical representative is:
+
+Zach Austin/TSgt
+Network Infrastructure Technician
+217 Dell Range Blvd
+Wyoming ANG, WY. 82009
+307-772-6162
+307-772-6169
+Zachary.austin@ang.af.mil
+
+
+
+
+
+
+
+10.1  Direct-In-Dial Directory Numbers.
+
+|NPA- NXX-XXXX                                                            |DID Directory Numbers                                              |
+|(307)772-6000 to 6499                                                    |500                                                                |
+|(307)772-6700 to 6999                                                    |300                                                                |
+|TOTAL                                                                    |800                                                                |
+
+10.2  Exchange and Access Lines.
+
+10.2.1  Commercial Subscriber Lines.
+
+|(NPA)-NXX-XXX            |Type            |Services and                   |Demarcation                    |Organization &                 |
+|                         |                |Optional                       |                               |End Demarcation Location       |
+|                         |                |Features                       |                               |                               |
+|(307)772-6110            |Analog          |Basic Services (BS), Flat Rate |Building 16 , 217 Dell Range   |Century Link, Cheyenne WY      |
+|                         |                |(FR), Non-Pub, Voice Mail      |Blvd, Cheyenne WY 82009        |                               |
+|                         |                |                               |                               |                               |
+
+
+10.2.2  Hot Lines.  N/A
+
+10.3  Local Exchange and Access Trunks.
+
+10.3.1  Local Exchange Access Analog Trunks.  N/A
+
+10.3.2  Local Exchange Access Digital Trunks.  N/A
+
+10.3.3  Local Exchange Digital (ISDN PRI) Trunks.
+
+|23ISDN PRI Circuit |D-Channel   |IC              |OG              |2 Way Channel                  |Demarcation                             |
+|ID                 |            |B-Channel       |B-Channel       |B-Channel                      |                                        |
+|                   |            |Quantity &      |Quantity &      |Quantity & Signaling           |                                        |
+|                   |            |Signaling:      |Signaling:      |(PRI Q.931):                   |                                        |
+|                   |            |(PRI Q.931)     |(PRI Q.931)     |Qty                            |                                        |
+|PRI #1 - VTC       |            |                |                |23                             |Building 16, , 217 Dell Range Blvd,     |
+|                   |            |                |                |                               |Cheyenne WY 82009                       |
+
+10.4  Foreign Exchange (FX) Lines/Trunks.  N/A
+
+10.4.1  Analog FX Line/Trunks.
+
+10.4.2  Foreign Exchange Digital Trunks.
+
+
+
+10.5  Transport Channels.
+
+|Circuit ID/Name               |Type          |Demarcation         |Destination        |Estimated Mileage|Circuit Description   |
+|79.UCNJ.158476..MS            |2 Wire        |217 Dell Range Blvd.|1100 Aviation Rd,  |4018 ft.         |Automatic Ringdown    |
+|                              |              |Cheyenne, WY        |Cheyenne, WY       |estimated cable  |Bridge Circuit,       |
+|                              |              |RM201.19            |                   |path             |Network Access Channel|
+|74.HCXX.806589..MS            |T-1           |217 Dell Range Blvd.|5500 Bishop Blvd,  |Unknown distance |InterLATA Access 1 to |
+|                              |              |Cheyenne, WY        |Cheyenne, WY       |– link goes      |5 Terminations        |
+|                              |              |B16                 |                   |through central  |                      |
+|                              |              |RM201.19            |                   |office           |                      |
+|79.PLNJ.159858..MS            |2 Wire        |217 Dell Range Blvd.|217 Dell Range     |2218 ft.         |Automatic Ringdown    |
+|                              |              |Cheyenne, WY        |Blvd.              |estimated cable  |Network Access Channel|
+|                              |              |B22                 |Cheyenne, WY       |path             |                      |
+|                              |              |MECH ROOM           |B33                |                 |                      |
+|                              |              |                    |ALARM RM           |                 |                      |
+|32H01                         |T-1           |217 Dell Range Blvd.|1919 Capitol Ave,  |Unknown distance |Exchange Services AIOD|
+|                              |              |Cheyenne, WY        |Cheyenne, WY       |– local trunks to|and OIOD Equipment    |
+|                              |              |B16                 |                   |central office   |                      |
+|                              |              |RM201.19            |                   |                 |                      |
+|79.FDDA.844673..MS            |2 Wire, Data  |217 Dell Range Blvd.|1301 Airport       |6278 ft.         |Data Stream Network   |
+|                              |              |Cheyenne, WY        |Parkway,  Cheyenne,|estimated cable  |Access Channel        |
+|                              |              |B16                 |WY                 |path             |                      |
+|                              |              |RM201.19            |                   |                 |                      |
+|79.PLNJ.819563..MS            |2 Wire        |217 Dell Range Blvd.|2020 Capital Ave,  |Unknown distance |Automatic Ringdown    |
+|                              |              |Cheyenne, WY        |Cheyenne, WY       |– 911 ringdown   |Network Access Channel|
+|                              |              |B16                 |                   |initiated in B33 |                      |
+|                              |              |RM201.19            |                   |on base to 911 at|                      |
+|                              |              |                    |                   |2020 Capital Ave |                      |
+
+
+10.6  Data Point-to-Point Circuits. N/A
+
+10.8.  911/E911 Services.  The Contractor shall provide configuration diagrams to show access to 911/E911 services, where available, through the
+local city or county emergency services organization.  All of the 911 calls generated on-base go to Emergency Center downtown then dispatched to
+Base Fire Department. Emergency service assistance shall be provided for the hearing impaired.
+
+10.9  Public Listings.
+
+|Description                                                                                             |Qty                                  |
+|Public Listing, Government Section                                                                      |14                                   |
+|Cross Reference Listing, Alphabetical Section                                                           |11                                   |
+
+10.10  Telephone Directories.
+
+|Description                                                                                             |Qty                                  |
+|Local Telephone Directories                                                                             |450                                  |
+
+
+10.11  Diversity/Diverse Routing. N/A
+
+
+
+10.12 Special Services
+
+
+10.13  Example of vendor circuit/trunk routing supporting Appendix 10 requirements. This example applies to ANG and sites with switches and or
+PBX configuration.
+
+
+
+
+
+
+
+[pic]
+
+40983.0
+WY ANG, Cheyenne WY
+CLIN 0002 CLIN 0003 CLIN 0004
+Services & Function Items CLIN 0001
+SLIN DESCRIPTION Unit of Issue Quantity Actual Unit Cutover Actual Total Cutover Charges Actual Non-Recurring Charges (NRC) Actual Total NRC Actual Monthly Recurring Charges (MRC) Actual Total MRC Actual Monthly Taxes/Fees/
+Surcharges (TS&F) Actual Total TS&F
+ 
+A Installation and Cutover
+A A Installation Plan EA 1.0
+A B Cutover Plan EA 1.0
+Customer Service Records
+A C Customer Services Record (CSR) EA 11.0
+Trunking Traffic Study/Analysis Report
+A D City Trunk Traffic Analysis Study with Report EA 5.0
+A E Higher Bandwidth Transport Circuit Traffic Analysis Study, DS1 and Higher with Report EA 5.0
+Invoice Reconciliation Report
+A F Invoice Reconciliation Report (IRR) EA 5.0
+A G  - AZ Reserved
+B Direct In Dial Directory Number 
+B A DID Directory Number HD 8.0
+B B Direct In Dial (DID) Directory Number Portability HD 8.0
+B C  - BZ Reserved
+C Commercial Subscriber Lines
+C A Flat Rate, Basic Services, Analog EA 1.0
+C B Local Number Portability Pool Fee EA 1.0
+C C  - CZ Reserved
+D Commercial Subscriber Line Features 
+D A Voice Mail, up to 20 Messages EA 1.0
+D B Non-Published Listing EA 1.0
+D C  - DZ Reserved
+E Local Exchange Digital ISDN (PRI)
+E A ISDN Primary Rate Interface EA 1.0
+E B PRI Individual D-Channel EA 1.0
+E C Flat Rate, Basic Services, PRI Individual B-Channel Incoming (IC) EA 23.0
+E D Static IP EA 1.0
+E E Local Number Portability Pool Fee EA 25.0
+E F  - EZ Reserved
+F Transport Channels
+F A 2-Wire Voice Circuit & Terminations EA 3.0
+F B 2-Wire Data Circuit & Terminations, 1.2 to 9.6 Kbps EA 1.0
+F C DS1 Circuit & Terminations EA 2.0
+F D  - FZ Reserved
+G Public Listings 
+G A Public Listings  EA 14.0
+G B Cross-Reference Listing EA 11.0
+G C  - GZ Reserved
+Total
+Date: 40983.0
+LOCAL COMMERCIAL COMMUNICATIONS SERVICE
+AT
+WY ANG, Cheyenne WY
+CLIN Services & Function Items Actual Monthly Actual Annually Actual 5 Year Total
+0001 CUTOVER
+0002 NON-RECURRING CHARGES (NRC)
+0003 MONTHLY RECURRING CHARGES (MRC)
+0004 MONTHLY TAXES, FEES, AND SURCHARGES
+Total 
+Grand Total - 5 Year CSA

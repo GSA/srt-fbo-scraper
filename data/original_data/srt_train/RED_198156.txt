@@ -1,0 +1,1873 @@
+HIGH PERFORMANCE COMPUTER SYSTEM NO. 4 (HPCS-4)
+ENVIRONMENTAL MOLECULAR SCIENCES LABORATORY (EMSL) PACIFIC NORTHWEST NATIONAL LABORATORY
+Operated by Battelle Memorial Institute Pacific Northwest Division for the U.S. Department of Energy (DOE Prime Contract No. DE-AC05-76RL01830)
+
+REQUEST FOR PROPOSAL NO. 198156
+
+PROPOSAL DUE DATE: May 09, 2012
+
+Andrea L Fernandez EMSL Contracting Phone: (509) 375-6534 Fax: (509) 375-3818 E-Mail: andrea.fernandez@pnnl.gov
+
+PAGE Executive Summary ......................................................................................... 1 Section A: Solicitation Provisions ...................................................................... 2 Section B: Instructions to Offerors .................................................................... 9 Section C: Evaluation Factors for Award .......................................................... 12 Section D: Organization of the Proposal ........................................................... 17 Section E: Delivery ....................................................................................... 20 Section F: Inspection and Acceptance ............................................................. 22 Section G: Price Proposal Form ....................................................................... 25 Section H: Special Provisions.......................................................................... 28 Section I: Section J: General Provisions ......................................................................... 34 List of Attachments ....................................................................... 35
+
+TABLE OF CONTENTS
+
+EXECUTIVE SUMMARY Developing the knowledge base needed to address the U.S. Department of Energy's (DOE) environmental restoration and research and development objectives requires a fundamental understanding of molecules and their interactions in isolation (gas phase), in liquids, on surfaces, at interfaces, and in condensed phases. To gain this understanding the W.R. Wiley Environmental Molecular Sciences Laboratory (EMSL) was established as a DOE national scientific user facility at Pacific Northwest National Laboratory (PNNL) in Richland, Washington, operated by Battelle Memorial Institute Pacific Northwest Division (Battelle) under DOE prime contract No. DE-AC0576RL01830. EMSL provides integrated experimental and computational resources for discovery and technological innovation in the environmental molecular sciences to support the needs of DOE and the nation. EMSL offers a comprehensive array of state-of-the-art expertise, capabilities, and facilities for research in the environmental molecular sciences, all at one location. A key EMSL user capability is the Molecular Sciences Computing capability (MSC). Part of the mission of the MSC is to provide a high-performance computing for a broad range of research in the molecular and environmental sciences. In addition, the President's proposed budget added the mission of computational structural genomics to the current MSC mission. The current EMSL high-performance computer system (HPCS-3) is aging and needs to be replaced. The primary mission of EMSL is to develop and refine state-of-the-art methods of investigating molecular processes that are key links in complex environmental processes. High-performance computational modeling is critical to fulfilling the EMSL mission and supporting EMSL research programs (go to http://www.emsl.pnnl.gov/capabilities/computing/docs/2010_greenbook_web.pdf to access the MSC 2010 Greenbook). Other supporting documentation regarding the current HPCS3 system performance is available at http://www.emsl.pnl.gov/capabilities/computing/. This request for proposal (RFP) is a solicitation contemplating a fully competitive acquisition of a large-scale, high-performance computer system, designated HPCS-4, with an expected purchase/ lease value not-to-exceed $12 million. This total includes the purchase or two-year lease price and a year of hardware and software maintenance and additional options for hardware and software maintenance for the next three (3) years. Additionally, one additional option year of hardware and software maintenance outside of the total is requested (see Section G, Price Proposal Form). The proposed competition will be based on a technical and financial evaluation of systems that best satisfy both mandatory requirements (MRs) and desirable features. It is a best-value acquisition in which contractor selection will involve discretionary trade-off analysis and not just the lowest priced acceptable proposal. To be awarded a contract from this solicitation, the Offeror must satisfy all of the MRs specified in this RFP. Failure to satisfy any of the specified MRs is grounds to be dismissed from the competition. After satisfying the MRs, Offerors will be evaluated on the basis of how well the value-related factors (VRFs) are achieved and/or the degree to which the MRs are exceeded. The MRs and VRFs are described within the RFP sections and in Attachment 1.
+
+_________________________________________________________________________________________________ Request for Proposal No. 198156, HPCS-4 Page 1
+
+SECTION A SOLICITATION PROVISIONS Type of Contract Battelle intends to award a firm-fixed-price contract/lease for this requirement. Each proposal submitted shall include a statement of acceptance of Battelle's Fixed-Price General Provisions provided in Section I and the Special Provisions provided in Section H. Offerors shall submit proposals on a firm-fixed-price basis in accordance with the provisions described below. Proposals that include estimates, budgetary pricing, or cost-reimbursement sections imbedded in the fixed price may be considered non-responsive. The attached Pricing Proposal Form (Section G) is for Offeror completion and certification to the fixed-price requirements for any resulting contract. Firm Fixed Price Contract /Lease A firm-fixed-price contract/lease provides for a price that is not subject to any adjustment on the basis of the contractor's cost experience in performing the contract. This contract type places maximum risk on the contractor and full responsibility for all costs and any resulting profit or loss. It provides maximum incentive for the contractor to control costs and perform effectively, and it imposes a minimum administrative burden on the contracting parties. SUBMISSION, MODIFICATION, REVISION, AND WITHDRAWAL OF PROPOSALS (CL 605
+OCT 2007)
+
+1. Offerors are responsible for submitting proposals, and any modifications or revisions, so as to reach the Battelle office designated in the solicitation by the time specified in the solicitation. If no time is specified in the solicitation, the time for receipt is 4:00 p.m., local time, for the designated Battelle office on the date that proposal or revision is due. 2. Any proposal, modification, or revision received at the Battelle office designated in the solicitation after the exact time specified for receipt of offers is "late" and will not be considered unless it is received before award is made, the Battelle Contracts Representative determines that accepting the late offer would not unduly delay the acquisition; and-- A. If it was transmitted through an electronic commerce method authorized by the solicitation, it was received at the initial point of entry to the Battelle, Pacific Northwest Division, infrastructure not later than 5:00 p.m. one working day prior to the date specified for receipt of proposals; or B. There is acceptable evidence to establish that it was received at the Battelle site designated for receipt of offers and was under Battelle's control prior to the time set for receipt of offers; or C. It is the only proposal received. 3. However, a late modification of an otherwise successful proposal that makes its terms more favorable to the Battelle, will be considered at any time it is received and may be accepted.
+
+RFP No. 198156, HPCS-4
+
+Page 2
+
+A. Acceptable evidence to establish the time of receipt at the Battelle site includes the time/date stamp of that installation on the proposal wrapper, other documentary evidence of receipt maintained by the installation, or oral testimony or statements of Battelle personnel. B. If an emergency or unanticipated event interrupts normal Battelle processes so that proposals cannot be received at the office designated for receipt of proposals by the exact time specified in the solicitation, and urgent Battelle requirements preclude amendment of the solicitation, the time specified for receipt of proposals will be deemed to be extended to the same time of day specified in the solicitation on the first work day on which normal Battelle processes resume. C. Proposals may be withdrawn by written notice received at any time before award. Oral proposals in response to oral solicitations may be withdrawn orally. If the solicitation authorizes facsimile proposals, proposals may be withdrawn via facsimile received at any time before award. Proposals may be withdrawn in person by an offeror or an authorized representative, if the identity of the person requesting withdrawal is established and the person signs a receipt for the proposal before award. D. Unless otherwise specified in the solicitation, the offeror may propose to provide any item or combination of items. E. Offerors shall submit proposals in response to this solicitation in English and in U.S. dollars unless otherwise permitted by the solicitation. F. Offerors may submit modifications to their proposals at any time before the solicitation closing date and time, and may submit modifications in response to an amendment, or to correct a mistake at any time before award. G. Offerors may submit revised proposals only if requested or allowed by the Battelle Contracts Representative. H. Proposals may be withdrawn at any time before award. Withdrawals are effective upon receipt of notice by the Battelle Contracts Representative 4. Offer expiration date. Proposals in response to this solicitation will be valid for the number of days specified on the solicitation cover sheet (unless a different period is proposed by the offeror). 5. Restriction on disclosure and use of data. Offerors that include in their proposals data that they do not want disclosed to the public for any purpose, or used by Battelle except for evaluation purposes, shall-- A. Mark the title page with the following legend: This proposal includes data that shall not be disclosed outside Battelle and shall not be duplicated, used, or disclosed--in whole or in part--for any purpose other than to evaluate this proposal. If, however, a contract is awarded to this offeror as a result of--or in connection with--the submission of this data, Battelle shall have the right to duplicate, use, or disclose the data to the extent provided in the resulting contract. This restriction does not limit Battelle's right to use information contained in this data if it is obtained from another source without restriction. The data subject to this restriction are contained in sheets [insert numbers or other identification of sheets]; and B. Mark each sheet of data it wishes to restrict with the following legend:
+
+RFP No. 198156, HPCS-4
+
+Page 3
+
+A. Use or disclosure of data contained on this sheet is subject to the restriction on the title page of this proposal. Treatment of Proposal Data A. Although not specifically requested by the RFP, the proposal may include technical data and other data, including trade secrets and/or privileged or confidential commercial or financial information that the Offeror does not want disclosed to the public or used by Battelle or the Government for any purpose other than proposal evaluation. To protect such data, the Offeror will specifically identify each page, including each line or paragraph thereof, containing the data to be protected and will mark the cover sheet of the proposal with the following notice: NOTICE The data contained in pages ____ of this proposal have been submitted in confidence and contain trade secrets and/or privileged or confidential commercial or financial information, and such data shall be used or disclosed only for evaluation purposes, Battelle and the Government shall have the right to use or disclose the data herein to the extent provided in the contract. This restriction does not limit Battelle's and the Government's right to use or disclose data obtained without restriction from any source, including the Offeror. Reference to this notice on the cover sheet should be placed on each page to which the notice applies. Battelle assumes no liability for disclosure or use of unmarked data and may use or disclose such data for any purpose. B. Should a contract be awarded based on a proposal, it is DOE policy, in consideration of the award, that Battelle obtain unlimited rights for the Government in technical data contained in the proposal unless the prospective sub-Offeror marks those portions of the technical information that he asserts as "proprietary data," or specifies those portions of such technical data that are not directly related to or will not be utilized in the work to be funded under this subcontract. "Proprietary data" are defined as technical data that embody trade secrets developed at private expense, such as design procedures or techniques, chemical compositions of materials, or manufacturing methods, processes, or treatments, including minor modifications thereof, provided that such data (1) are not generally known or available from other sources without obligation concerning their confidentiality, (2) have not been made available by the owner to others without obligation concerning their confidentiality, and (3) are not already available to the Government without obligation concerning their confidentiality. An Offeror who receives a contract award shall mark the data identified as proprietary by specifying the appropriate proposal page number to be inserted in the Rights to Proposal Data clause, which is stated below. Subject to the concurrence of Battelle, information unrelated to the subject may be deleted from the proposal by the Offeror. The responsibility, however, of identifying technical data as proprietary or deleting it as unrelated rests with the Offeror. The following clause shall be included in any contract based on a proposal. This clause is intended to apply only to technical data and not to other data, such as privileged or confidential commercial or financial information.
+
+C.
+
+RFP No. 198156, HPCS-4
+
+Page 4
+
+RIGHTS TO PROPOSAL DATA Except for technical data contained on pages ____ of the Offeror's proposal dated __________, which are asserted by the Offeror as being proprietary data, it is agreed that as a condition of the award of this contract, notwithstanding the provisions of any notice appearing on the proposal, the Government shall have the right to use, duplicate, and disclose and have others do so for any purpose whatsoever, the technical data contained in the proposal upon which this contract is based. Software License Agreements If software license agreements are required, they shall be submitted with the proposal. Software licenses require approval prior to award. The inability to negotiate license terms acceptable to Battelle may result in a proposal being deemed to be unacceptable. A. As a minimum, the following are examples of terms that will not be acceptable: 1. Any condition that makes the licensee a guarantor against theft or unauthorized copying or other improper handling of the software by employees or others. 2. Any condition that imposes on the licensee a greater degree of care for the protection of the software than Battelle's normal control procedures for licensed software. 3. Any condition that obligates the licensee to indemnify the licensor against liability to third parties. 4. Any conditions by which the licensor disclaims ownership of the rights to the program or responsibility that the program does not infringe the rights of others. 5. Any condition that restricts Battelle's right to assign the software to the DOE, its designee, or the program sponsor as long as that assignee agrees to honor the terms of the license agreement. B. In addition, following are examples of terms that shall be included. Any software proposed may be: 1. Used or copied for use in or with the computer or computers for which it was acquired, including use at any government installation to which such computer or computers may be transferred. 2. Used or copied for use in or with a backup computer if any computer for which it was acquired is inoperative. 3. Reproduced for safekeeping (archives) or backup purposes. 4. Modified, adapted, or combined with other computer software, provided that the modified, combined, or adapted portions of the derivative software incorporating any of the delivered, restricted computer software shall be subject to the same restrictions set forth in the contemplated contract.
+
+RFP No. 198156, HPCS-4
+
+Page 5
+
+5. Disclosed to and reproduced for use by support service Contractors or their subcontractors, subject to the same restrictions as set forth in the contemplated contract 6. Used or copied for use in or transferred to a replacement computer. 7. Destroyed at the end of its useful life rather than returned to licensor. C. Note: In the event that direct assignability of software to the DOE, its designee, or other program sponsor is not acceptable, the Offeror shall so state and costs of re-licensing the software shall be included in the total price proposed for evaluation.
+
+Contractor's Responsibilities for Access to Battelle or Government Facilities The systems purchased under this RFP will be installed or serviced by contractor personnel on Battelle or Government premises. The following Fixed Price General Provisions (Section I) and Special Provisions (Section J) clauses shall apply: ˇ ˇ ˇ ˇ Environment, Safety, and Health Requirements (3113a) Inspection of Services Warranty of Services Insurance.
+
+Export Controls and Badging of Foreign Nationals Compliance with U.S. Department of Commerce export control regulations is mandatory. DOE foreign national visit and assignment requirements must be satisfied prior to equipment access. Insurance Requirements ­ General The Contractor shall obtain and maintain the following additional insurance coverage during the time it is performing under any resulting contract: ˇ Comprehensive General Liability: Personal injury and property damage coverage of $1,000,000 minimum per occurrence (combined single limit). The Certificate shall indicate that coverage is afforded for completed operation and/or products liability. Comprehensive Automobile Liability: Personal injury and property damage coverage of $1,000,000 per occurrence (combined single limit). The Certificates shall indicate that coverage is afforded for all owned, non-owned, and hired automobiles.
+
+ˇ
+
+Certificates of Insurance Certificates of Insurance shall be required from the successful Offeror and shall be delivered to Battelle by the Offeror prior to award of the contract.
+
+RFP No. 198156, HPCS-4
+
+Page 6
+
+GSA CONTRACT PROPOSAL If an offeror has a GSA contract covering the supplies/services specified in this Solicitation, a copy shall be attached to its proposal. If not, its proposal shall so state. Proposals shall be evaluated in accordance with the criteria specified in this Solicitation. However, award may be made under the GSA contract if that would be more advantageous to Battelle. Proposal Due-Date / Source Selection Decision Written proposals shall be delivered to Battelle no later than the date specified on the cover of this RFP. There will be no public opening of the proposals. Offerors will be advised as soon as possible after a source selection decision has been made. Proposal Validity Period By submitting a proposal an Offeror represents that its proposal is firm for 120 days after the proposal due-date. Reservation of Rights Battelle reserves the rights to: ˇ ˇ ˇ ˇ Reject any or all proposals especially those which do not meet the specified MRs. Waive minor irregularities, informalities, or apparent clerical mistakes in proposals received. Request clarification of minor irregularities, informalities, or apparent clerical mistakes. Require oral presentations from any or all Offerors, who may be eligible for award. Offerors will be notified of the time and place for such presentation. At Battelle's request, the oral presentations may be video recorded. Conduct site visits to the home or field offices of Offerors who may be eligible for award. Offerors will be notified with the date and time of arrival and an outline of the duration of the visit and any assistance/information required. Conduct oral and/or written discussions. Negotiate with one or more offerors after initial evaluation of proposals to further reduce a price or prices and to establish a definitive statement of work and/or specifications prior to selection of an Offeror for award. Determine a competitive range, including all proposals that are judged to have a reasonable chance of being selected for award, and negotiate with all Offerors within the established range. (In the event a competitive range is determined, it will be based solely on Battelle's judgment).
+
+ˇ
+
+ˇ ˇ
+
+ˇ
+
+RFP No. 198156, HPCS-4
+
+Page 7
+
+ˇ
+
+Award a contract based on the initial proposals received without further discussions (Offerors are advised that initial proposals should contain the offeror's best price and technical terms). Award under a General Services Administration (GSA) contract or other Master Agreements if that would be more advantageous to Battelle. Note: Limitation of liability terms contained in GSA or Master Agreement terms and conditions will not apply to this agreement and must be deleted. In general, if GSA or Master Agreement terms are in conflict with the terms of the RFP or the contract terms, they will be deemed as unacceptable. Award an alternative lease/financing agreement wherein the successful offeror is paid in full by the alternative leasing firm upon system acceptance. Lease payments would then be made directly by Battelle to the alternative leasing firm. Notwithstanding, the successful offeror's obligations to perform as proposed would remain unchanged.
+
+ˇ
+
+ˇ
+
+Bid and Proposal Costs Battelle is not obligated to pay any costs incurred in the preparation and submission of a proposal, nor is it obligated to enter into a contract or any other arrangement with any Offeror. Multiple Proposals Battelle will accept more than one proposal from an Offeror that is responsive to this solicitation. If more than one proposal is submitted by the same Offeror, such proposal will be accepted providing the additional proposal satisfies all RFP requirements. Each proposal must be separately distinguished and must stand on its own. This means that the proposal will have its own technical section, financial section, etc., as described in Section D, Submission and Organization of Proposal. Additional proposal(s) will be evaluated on the same basis as the original proposal and as set forth in Section C of this RFP. Notice to Offerors Offerors are advised that an Offeror awarded this contract is required to demonstrate performance of the MRs and VRFs, specified in this RFP and must pass the acceptance tests specified in Section F. Offerors are advised that the MRs and any offered VRFs promised in the proposal will be inserted into the contract as a commitment by the Offeror and as a requirement of the contract. Offerors are also advised that MRs and VRFs are listed throughout this solicitation document as well as in Attachment 1. Availability of Funds* Funds are not presently available for this contract.* Battelle's obligation under this contract is contingent upon the availability of U.S. Government appropriated funds from which payment for contract purposes can be made. No legal liability on the part of Battelle for any payment may arise until funds are made available to Battelle for this contract and until the Contractor receives notice of such availability, to be confirmed in writing by the Battelle contracting representative. *Note: See Section H.
+
+RFP No. 198156, HPCS-4
+
+Page 8
+
+SECTION B INSTRUCTIONS TO OFFERORS Battelle Contracts Representative The Battelle Contracts Representative and sole point-of-contact for any communications or questions regarding this acquisition is Mrs. Andrea L. Fernandez. Requests for answers to either technical or contractual questions may be made by letter, e-mail, or fax to Mrs. Fernandez [contact information provided below], with a copy to Kim Massie at kim.massie@pnnl.gov. Battelle Address Battelle's address for the submission of proposals is: ˇ FederalExpress or other express delivery service Battelle, Pacific Northwest Division Attn: Andrea L. Fernandez 902 Battelle Blvd., MSIN: K9-15 Richland, WA 99354 ˇ U.S. Mail Battelle, Pacific Northwest Division Attn: Andrea L. Fernandez P.O. Box 999, MSIN K9-15 Richland, WA 99352-0999 ˇ Other point-of-contact information Voice: (509) 375-6534 Fax: (509) 375-3818 E-mail: andrea.fernandez@pnnl.gov Notice of Intent to Propose Offerors intending to submit a proposal are required to notify the Battelle Contracts Representative no later than April 19, 2012 via e-mail at andrea.fernandez@pnnl.gov. Also, the past performance management information described in Section C of this RFP should be submitted at this time. Pre-Bid Meeting and Site Visit An optional pre-bid meeting and site visit is planned for April 17, 2012 from 2:30 pm till 4:00 pm at EMSL, Conference Room GVL 1101. Battelle will provide a brief overview of the RFP Package and allow vendors to submit written questions at that time. A visit to the room that will house the HPCS-4 will follow.
+RFP No. 198156, HPCS-4 Page 9
+
+Vendors who send representatives that are U.S. Citizens must notify the Battelle Contracts Representative at minimum three (3) days prior to the pre-bid meeting and site visit (April 13, 2012) that they intend to be in attendance. Vendors who send representatives that are not U.S. citizens must notify the Battelle Contract Representative at minimum 10 days prior to the pre-bid meeting and site visit (April 6, 2012). This is required as there are badging requirements to enter the area of the EMSL building that will house the HPCS-4. Explanations to Prospective Offerors Any prospective Offeror desiring an explanation or interpretation of this RFP should request it in writing not later than April 23, 2012 in order to allow a reply to reach all prospective Offerors before the submission of their proposals. Oral explanations or instructions provided before the award of the contract will not be binding. Any information provided to a prospective Offeror concerning the RFP will be furnished promptly to all other prospective Offerors as an amendment to the solicitation, if that information is necessary in submitting proposals or if the lack of it would be prejudicial to any other prospective Offeror. Oral Presentations and Site Visits Oral presentations and site visits at the home or field offices of Offerors may be required from any or all of the Offerors that Battelle determines to be in the competitive range. Offerors will be notified of the need for such presentations or site visits. Agendas prepared by any Offeror should be coordinated with the Battelle Contracts Representative in advance. Benchmarking Agreements Each Offeror will be required to run benchmark programs provided by Battelle and provide the resulting performance data with each proposal. The panel will use these performance data to evaluate proposals. Offerors shall provide the performance data generated from running the benchmark tests with their proposal and fill in any tables attached to the Benchmark Requirements shown in Attachment 1. At Battelle's discretion, the Offeror may be required to run portions of the benchmark tests, selected and observed by Battelle staff members, during site visits to the Offeror's facilities. Also, the successful Offeror will be required to rerun all the benchmark tests at Battelle's facilities prior to system acceptance by Battelle (see Section F). All benchmark performance data shall be provided by Offerors via CD-ROM. This applies to all tests in response to requirements in any section of Attachment 1. The Offeror shall include the outputs for all tests, including any output to the terminal. The actual source code used and the actual scripts used to compile and execute the tests shall also be included on the CD-ROM. Reported benchmark performance shall be obtained from a system configured as closely as possible to the proposed system. In the event that a system identical to the one proposed is unavailable to run the tests, Battelle shall require actual benchmark results from a similar system and projected results for the proposed system. All performance projections shall require an easily understood and rigorous explanation of the methods used to arrive at the projected results. If performance projections are used, they shall be clearly identified as projections. The output on which the
+RFP No. 198156, HPCS-4 Page 10
+
+projections are based and a description of the projection method shall be included. The Offeror must describe all hardware and software used for the benchmark runs.
+
+SCHEDULE [All Dates are not later than 4:00 p.m. Pacific Time]
+Approximate Calendar Days from Release of RFP 26-Mar-12 22 24 24 45 165 255
+
+Event/Activity Release RFP to Vendors Pre-Bid Meeting/Site Visit Submit past performance management information Notification of Intent to Propose Proposals Due to Battelle Contract Award Delivery of Complete System
+
+RFP No. 198156, HPCS-4
+
+Page 11
+
+SECTION C EVALUATION CRITERIA FOR AWARD Proposals will be evaluated in accordance with this section of the solicitation using the criteria specified below to evaluate each proposal. "Evaluation" as used in this section means comprehensive scrutiny of every aspect (unless specifically excluded by the terms of this section) of the Offeror's proposal including written submissions, discussions, negotiations, and site visits, if necessary. The evaluation of proposals will be conducted by a source selection panel. The selection for award shall be made by a Source Selection Authority. Award will be made to that Offeror whose proposal contains the combination of those criteria offering the best overall value to Battelle and the Government and not necessarily to the Offeror who proposes the lowest price or whose proposal scores highest in the technical evaluation. Best value will be determined by a trade-off analysis of comparative differences in the Value Related Factors (VRFs) with differences in price/cost. Battelle is concerned with striking the most advantageous balance between technical merit (VRF's and price/cost. Battelle is interested in obtaining the best technical solution within the constraints of budget, space, power and cooling. The evaluation will focus on the strengths and weaknesses of the proposals within the categories of Feasibility, Applicability, Capability and Affordability. The bulleted categories noted below are intended to provide a general indication of the types of evaluation factors that will be considered during the evaluation process; however, the lists are not all inclusive. Evaluations will address: Feasibility: What is the likelihood of success for the proposed approach and timeline? Is the proposed solution part of an overall technologically balanced plan that provides a timely and straightforward manageable solution? Categories that will be considered include: ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ facility requirements (e.g., floor space, power, cooling) simplicity (from both the user and administrator perspectives) system balance: CPU/memory/disk/network system management delivery schedule deviations from baseline requirements technology roadmap performance sustenance.
+
+RFP No. 198156, HPCS-4
+
+Page 12
+
+Applicability: How well does the proposed approach satisfy HPCS-4 procurement goals, particularly its ability to provide significant improvement over the current EMSL computational capability while operating in a production, general-use environment? Categories that will be considered include: ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ benchmark results and projections software environment: robust/effective/integrated training curriculum reliability, availability, and serviceability compliance with standards scalability and expandability program development environment integration to existing environment performance tools availability of buildable source code.
+
+Capability: How well does the management plan and personnel contribute to successful and timely completion of the work? How committed and capable is the Offeror to high-end computing and working with high-end customers to advance the state of the art? Categories that will be considered include: ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ acceptance of Battelle's terms and conditions demonstrated capability to produce and test management/corporate capability demonstrated ability to meet schedule on similar efforts expertise and skill level of key personnel and subcontractors extent and adequacy of licenses openness of technical staff to new ideas quality of acceptance/test plans.
+
+Affordability: How cost effective is the proposed approach? How well does the proposed price meet the overall HPCS-4 budget constraints? Categories that will be considered include: ˇ ˇ ˇ ˇ ˇ ˇ price for initial and final systems balanced pricing warranty life-cycle costs to Battelle power/cooling utilization price/cost of options.
+
+In evaluating proposals, Battelle will be concerned with obtaining the most advantageous balance between expected performance and overall probable cost to Battelle, including life-cycle costs such as maintenance, power and cooling costs.
+
+RFP No. 198156, HPCS-4
+
+Page 13
+
+Technical Evaluation This solicitation contains Mandatory Requirements (MRs) that must be satisfied for any proposal to qualify for evaluation. Only those offerors that can meet all of the MRs need submit offers. An MR is defined as follows: Mandatory Requirement. An MR is defined as a Battelle-specified need for which compliance is absolutely required. Failure to demonstrate demanded performance/compliance with any MR will result in a proposal being declared unacceptable and non-responsive. Compliance with MRs places an Offeror's proposal in a position to qualify for and be considered for further evaluation. No scores/ratings are assigned to MR's. Many MRs, however, have an associated value. The degree to which these MRs are exceeded will be an important consideration during proposal evaluation. For example, exceeding the stated memory requirement in (Attachment 1) results in value. Benchmarks are a special case. Successfully running the benchmarks satisfies the MR; however, performance achieved in running the mandatory required benchmarks provides added value. Note: Mandatory Requirements may be satisfied by delivering the specified functionality and/or capability as specified by this solicitation or by Offerors proposing functionality and/or capability that is determined to be functionally equivalent to the specified requirement. Final interpretation as to whether or not an MR is met by an alternate technology is at Battelle's sole discretion. Statements by Offerors regarding performance of an offered system shall be obligatory. Consideration for failure to meet offered performance as stated in an Offeror's proposal shall be written into the subsequent contract. Offerors shall describe plans to achieve and maintain offered performance and availability over the life of the contract and may indicate what consideration will be offered if a system fails to perform as offered. Offerors should expect the following language to be included in any resulting contract, Sustained Performance: During the life of the contract, the HPCS-4 system must maintain the performance requirements outlined in the winning proposal. If performance or availability falls below the committed to value, consideration commensurate with the severity of the shortfall shall be required. A listing of the MRs is included in Attachment 1 with other MRs included solely in the RFP document. Please review both documents carefully in efforts to comply with all MRs. In addition to satisfying all MRs, the Offeror should provide VRFs that in Battelle's judgment will provide a system that enhances the accomplishment of tasks. A VRF is a desired feature or functionality with intrinsic value, and/or it is the portion of an MR that extends beyond the basic qualification standard. A listing of VRFs is included in Attachment 1. The VRFs and MRs are not listed in any order of importance. An Offeror can achieve an evaluation rating only by offering VRFs or MRs that have associated values beyond the minimum required MR qualification standard.
+
+RFP No. 198156, HPCS-4
+
+Page 14
+
+Price/Cost Price/cost is a substantial factor in this source selection but is less important than the sum of all the value related factors (technical rating). In the trade-off analysis, therefore, competing offers will be compared by evaluating technical features/management risk and price. Battelle will evaluate offers based on the Total Aggregate System Price (TASP) shown in Section G, Price Proposal Form. TASP is defined as: All hardware and software for the offered system, installation and testing, and hardware and software maintenance over a four year period (one (1) year initial term plus three (3) option years). The fifth option year is not included in the TASP but is provided separately. The foregoing is mandatory. All offerors must submit three priced proposals using the format provided in Section G, to include the following three pricing scenarios: ˇ ˇ ˇ Purchase with first year system maintenance included, plus four one-year options to extend system maintenance, Lease to own price with first year system maintenance included (a lease in which title passes at the conclusion of a two year lease period), plus four one-year options to extend system maintenance; and, An Operating lease price with first year system maintenance included (title does not pass at the conclusion of the lease period), plus four one-year options to extend the lease and the system maintenance.
+
+Note: In regards to the Lease-to-Own option, throughout the lease term, if sufficient funds are made available, Battelle reserves the right to purchase system components, reducing the outstanding principle amount without penalty. The remaining lease payments would be reduced proportionally to reflect the reduced remaining principle amount. The evaluation of proposal pricing will be based on a comparison of the three price proposal options described above. The pricing scenario deemed most advantageous to Battelle will be selected. The financial section of each proposal will be evaluated to determine if proposed prices provided by an Offeror are reasonable and realistic. If minor facility modifications are required to accommodate an Offeror's proposed system, Battelle's estimated cost will be added to the TASP. Battelle cannot reasonably consider a TASP beyond $12 million. This includes the purchase or lease price and all maintenance options price, including the optional maintenance for years 2 ­ 4. Year 5 is not included in the TASP and is provided separately. Past Performance Past performance will be evaluated in making a source selection decision. The source selection evaluation panel will survey the Offeror's customers to make a confidence level assessment based on the information received. This assessment will provide an indication of how well an Offeror delivers on its promises. The confidence level assessment could affect the overall best value decision by the source selection authority. Offerors shall provide the following business management information: ˇ The company names, addresses, point of contact, telephone numbers and email addresses of the Offeror's three most recent customers (different companies or Government activities) now using
+Page 15
+
+RFP No. 198156, HPCS-4
+
+a machine or machines having high-performance computing capabilities such as described within this solicitation. First line supervisors who continually work with the machine are considered customers. ˇ ˇ The names of the companies or government activities identified above as customers. The types of systems being used by the customers, the dates of delivery, and available statistics to indicate the mean times to repair (MTTR) and mean times between failure (MTBF).
+
+The information described above should be supplied at the same time an Offeror indicates an intent to provide a proposal; however, in no case should the information be supplied beyond the proposal due-date specified on the cover of this RFP. From these data, Battelle intends to gain knowledge of, as a minimum, the Offeror's: ˇ ability to deliver computers of the proposed type on schedule, successfully install these systems, pass system acceptance and reliability tests in a timely fashion, number of outstanding deviations at the time of acceptance, and maintain the systems over a period of time history of successfully and promptly resolving system hardware, software, operations, and integration problems history of successfully and promptly fulfilling technical queries adherence of supplied equipment to present standards and responsiveness of the company to new standards customer assessment of system reliability, ease of operation, documentation, time to repair, ease of repair, freedom from bugs, and customer support.
+
+ˇ ˇ ˇ ˇ
+
+Battelle may survey customers not provided by the Offeror who are known by Battelle to have a business relationship with the Offeror. Other Factors Considered Other factors that will be evaluated to determine Offeror responsibility are production capability, financial condition, and any other factors required by applicable statutes or regulations. A desired management feature of this acquisition would be to have a small/small disadvantaged business be made a part of any negotiated lease arrangement, i.e. alternative leasing. [VRF]. Summary Battelle's goal in this acquisition is to acquire a system that fulfills all the mandatory requirements and has the desired technical capabilities and features at the most reasonable price possible resulting in the best overall value to Battelle. There are a number of alternatives that an Offeror might propose/choose to accomplish Battelle's goal. Battelle is open to any reasonable alternative method of leasing or purchasing this system.
+
+RFP No. 198156, HPCS-4
+
+Page 16
+
+SECTION D ORGANIZATION OF THE PROPOSAL Submission of Proposals One (1) original hardcopy, two (2) copies of Volumes I and III, and ten (10) hardcopies of Volume II as described below shall be submitted as part of the Offeror's proposal. Additionally, one complete electronic copy of all three volumes must be provided on CD-ROM. The proposal shall be signed by a representative of the Offeror authorized to enter into legally binding commitments (see Section G). Proposals shall be submitted not later than 4:00 P.M. PST on the date specified on the cover of this RFP. Preparation of Proposals Proposals should be prepared simply and economically to be clear, legible, practical, specific, and complete. It should contain only pertinent information presented in a logical, coherent manner to provide a straightforward, concise delineation of capabilities to satisfactorily perform the contract being sought. The use of elaborate formats, color where black and white would suffice, or expensive exhibits is neither required nor desired. No samples or descriptive literature are to be prepared for submission with the proposal unless specifically called for by the RFP. The proposal should demonstrate a thorough understanding of the requirements and include statements of compliance for MRs and genuine commitments for VRFs. All statements made in the proposal must be substantiated. Ambiguous, unqualified, or unsubstantiated statements will be considered as sufficient grounds to find the proposal unacceptable. All proposals shall be prepared on U.S. letter-size (i.e., 8 ˝ X 11 inch) paper in a font size not less than 12 point and punched so as to be inserted into three ring binders. Double-sided printing is preferred. Maximum proposal page limitations (per side) are as follows: Volumes I and III: 50 pages (excluding the Certifications and Representations form and the Subcontracting Plan.) Volume II: 50 pages (excluding the benchmarking results submittal) All benchmark information shall be saved to CD-ROM. Structure of the Proposal Offerors shall prepare and organize their proposals as follows: VOLUME I ­ ADMINISTRATIVE Part A. Executive Summary The executive summary shall summarize the key points of the Offeror's proposal. It will be used to review the important aspects of the Offeror's approach. The executive summary shall demonstrate
+RFP No. 198156, HPCS-4 Page 17
+
+the Offeror's thorough understanding of this solicitation's requirements. The Offeror should explain the approach taken to phase in the recommended solution and to indicate the advantages of the proposed solution. Part B. Business Management Information In this part, the Offeror shall provide the following information: 1. An explanation of how the requirements of Section E, Delivery, will be satisfied 2. A statement of commitment to the Inspection/Quality Assurance requirements stated in Section F 3. The Representations and Certifications (Attachment 3) Completed Representation and Certification - Commercial Items form found at: http://www.pnl.gov/contracts/documents/solicitations.asp ˇ The NAICS code for section 2(a)(1) of the Representations and Certifications is 334111, ˇ The size standard for section 2(a)(2) is 1,000 employees. 4. The Offeror's Subcontracting Plan, applicable to large business Offerors only (see Attachment 4). This part may also be used for additional business management information, such as comments regarding delivery, acceptance testing, installation, quality assurance requirements, and options. VOLUME II ­ TECHNICAL PROPOSAL No financial or pricing information shall be included in this volume! The Offeror's proposal shall be organized to correspond to the parts in Attachment 1 as follows: 1. General Description of the System 2. General System Requirements 3. Availability 4. Documentation and Training 5. Cyber Security 6. Development Software 7. Interprocessor Communication 8. Networking 9. Physical 10. System Management Hardware and Software 11. Aggregate System Performance and Capacity 12. Benchmark Results (the tables in Attachment 1 must be completed to constitute a proposal).
+
+RFP No. 198156, HPCS-4
+
+Page 18
+
+VOLUME III ­ FINANCIAL PROPOSAL Part A. Price Proposal Form The Offeror shall prepare pricing information in accordance with Section G, Price Proposal Form. The information indicated as [MR] is required. Additional information or pricing considerations that enhance a proposal are encouraged. Attachment 6 is a Word version of the Price Proposal Form. Part B. Contractual/Pricing Issues This section shall be used to provide confirmation of Offeror's acceptance of the General Provisions (Section I) and Special Provisions (Section H). If the Offeror wishes to propose terms, conditions, and/or provisions, whether affecting price or not, this section shall be used. Taking any exception to the provisions in Section I, or any other terms and conditions of the RFP, could negatively impact Battelle's overall evaluation, to the extent that your proposal could be rendered non-responsive, removing your proposal from further award consideration.
+
+RFP No. 198156, HPCS-4
+
+Page 19
+
+SECTION E DELIVERY All requirements in this section are mandatory! [MR] This Section specifies the time, place of delivery, and other such performance requirements for contract line items listed in Section G. F.O.B. Destination (a) The term "f.o.b. destination," as used in this clause, is defined as follows: (1) Free of expense to Battelle, on board the carrier's conveyance, at a specified delivery point where the consignee's facility (plant, warehouse, store, lot, or other location to which shipment can be made) is located. (2) Supplies shall be delivered to the destination consignee's wharf (if destination is a port city and supplies are for export), warehouse unloading platform, or receiving dock, at the expense of the Contractor. Battelle shall not be liable for any delivery, storage, demurrage, accessorial, or other charges involved before the actual delivery (or "constructive placement" as defined in carrier tariffs) of the supplies to the destination unless such charges are caused by an act or order of the Government or Battelle. If rail carrier is used, supplies shall be delivered to the specified unloading platform of the consignee. If motor carrier (including "piggyback") is used, supplies shall be delivered to truck tailgate at the unloading platform of the consignee, except when the supplies delivered meet the requirements of Item 568 of the National Motor Freight Classification for "heavy or bulky freight." When supplies meeting the requirements of the referenced Item 568 are delivered, unloading (including movement to the tailgate) shall be performed by the consignee, with assistance from the truck driver, if requested. If the contractor uses rail carrier or freight forwarded for less than carload shipments, the contractor shall ensure that the carrier will furnish tailgate delivery, when required, if transfer to truck is required to complete delivery to consignee. (b) The Contractor shall: 1(i). 1(ii). Pack and mark the shipment to comply with contract specifications. In the absence of specifications, prepare the shipment in conformance with carrier requirements. Prepare and distribute commercial bills of lading. Deliver the shipment in good order and condition to the point of delivery specified in the contract. Be responsible for any loss of and/or damage to the goods occurring before receipt of the shipment by the consignee at the delivery point specified in the contract. Furnish a delivery schedule and designate the mode of delivering schedule and designate the mode of delivering carrier.
+Page 20
+
+2. 3.
+
+4.
+
+5.
+
+RFP No. 198156, HPCS-4
+
+6.
+
+Pay and bear all charges to the specified point of delivery. The specified point of delivery is the Molecular Science Computing Facility (MSC), a separate computing facility contained within the EMSL Building. Pay and bear all charges to install the system and return the facility to its original preinstallation condition.
+
+7.
+
+Delivery Requirement/Offeror's Delivery Proposal The Offeror's complete solution must be fully delivered 90 days from the date of contract award [MR] and the complete solution must be fully accepted, functional and operating 90 days from the delivery date [MR] (see Attachment 1, General System Requirements, M2.3). The Offeror shall provide a delivery date with its proposal [MR].
+
+RFP No. 198156, HPCS-4
+
+Page 21
+
+SECTION F INSPECTION AND ACCEPTANCE All Requirements of this Section are Mandatory! INSPECTION/QUALITY ASSURANCE Program Requirements [MR] The Offeror shall maintain a quality program/system that provides control of activities affecting quality of the products required by this contract. The identification, cause, and corrective action for significant conditions adverse to the quality of the product specified in the contract shall be documented and promptly reported to appropriate levels of the Offeror's management and to the Battelle Contract Representative. Follow-up action shall be taken and documented to verify implementation of corrective action. The Offeror shall tender for acceptance only those supplies or services that have been inspected and tested in accordance with its quality program/system and have been found to conform with contract requirements. The Offeror shall require, in writing, subcontractors of all tiers to comply with all applicable quality program/system requirements. The quality system and control of "Special Processes" of the Offeror and subcontractors of all tiers shall be subject to audit by Battelle to the extent practicable at all times and places. Note: An established quality assurance program/system that has been qualified to meet national or international standards and that ensures compliance to the requirements noted herein may be offered in response to all or part of these requirements. Control Requirements [MR]
+1. Control of Purchased Items and Services. Requirements necessary to ensure adequate quality
+
+shall be included or referenced in procurement documents for special processes (e.g., workmanship), complex items, storage devices, and calibration services. Such items and services shall be controlled to ensure conformance with the requirements of the contract. Controls shall provide for source evaluation and selection of prospective suppliers and evaluation for objective evidence of quality.
+2. Written Policies/Procedures/Instructions. Written policies, procedures, or instructions shall be
+
+developed and implemented to control activities that have an impact on the quality of the final product. The above stated documents shall cover activities such as procurement controls, configuration control, inspection and test controls, software control, packaging/shipping/ handling, control of measuring and test equipment, and records control. The policies, procedures, or instructions shall be reviewed and revised as needed.
+
+RFP No. 198156, HPCS-4
+
+Page 22
+
+3. Document Control. The preparation, issue, and changes to documents that specify quality
+
+requirements and activities affecting the quality of the end product shall be controlled to ensure that correct documents are being employed. Such documents, including changes thereto, shall be reviewed for adequacy and approved for release by authorized personnel.
+4. Handling, Storage, and Shipping. Handling, storage, cleaning, packaging, shipping, and
+
+preservation of items shall be controlled to prevent damage or loss and to minimize deterioration.
+5. Control of Nonconformance. Nonconforming items and materials and associated data shall be
+
+controlled in accordance with written procedures. Controls shall provide for identification, documentation, evaluation, segregation (when practical), disposition, and notification to affected organizations.
+6. Special Process Requirements. A Quality Assurance Program/System must be established that
+
+has been qualified to meet applicable ANSI/IPC standards and that ensures compliance to the requirements noted herein.
+7. Inspection/Test Control. Inspection and test requirements with acceptance criteria shall be based
+
+on specified requirements contained in design drawings and other associated technical documents.
+8. Control of Software. Configuration Management methods shall be established to ensure that
+
+changes to computer software that affect the quality of tests are properly controlled and approved. Test results shall be traceable to the version(s) of software used in the analysis, data collection, evaluation, and/or reporting of test results. The computer environment shall be controlled to allow the computer software to correctly operate. All deliverable software shall be tested for computer viruses and be computer virus free. Quality Assurance Records [MR] Records that furnish documentary evidence of the activities affecting quality of the product shall be identified, prepared, and maintained. All records shall be legible, traceable, and retrievable. All records shall be protected against damage, deterioration, or loss. Pre-Award Survey of Prospective Contractor/Subcontractor [MR] A pre-award survey will be conducted of a prospective Offeror's technical, quality assurance, production, and/or financial capability. Evaluation of documented quality assurance program(s)/system(s) applicable to materials to be produced or services to be performed by the prospective Offeror or subcontractor(s) may include but shall not be limited to inspection and software controls, test controls, calibration of measuring and test equipment, special process controls, material storage and handling, and drawing change controls. Submittal(s) Required Before Pre-Award Survey [MR] The prospective contractor(s) shall submit, prior to any Pre-Award Survey, a description of its quality program/system. The description shall specify the standard(s) upon which the system is based. Alternately, if a plan has been previously submitted, an Offeror may, provided its manual/plan has not since been revised, specify in its proposal the date and/or revision of its current
+RFP No. 198156, HPCS-4 Page 23
+
+plan. Also, the latest, annual audited financial statements shall be submitted if specifically requested. ACCEPTANCE TESTING Acceptance Tests ­ Completion Requirements [MR] Before shipment to Battelle, the Contractor shall demonstrate to Battelle's satisfaction that the actual system to be delivered will correctly execute all functionality measures, performance tests, and benchmarks used as part of the proposal, at the required and proposed performance levels. This demonstration will be observed by Battelle staff members, and Battelle may elect to carry out any or all of the tests themselves by remotely logging into the system at the Contractor's location. Remote internet access from a Linux based system will be required to carry out any tests by Battelle prior to shipment. After installation, the Contractor shall demonstrate to Battelle's satisfaction that the supplied system meets all criteria proposed by the Offeror as specified by Battelle. Acceptance testing shall commence the day following agreement by Battelle and the Contractor that installation is complete. If the system is not accepted within 90 calendar days from commencement, Battelle will determine whether to continue or to require the Contractor to remove the system. Acceptance tests shall be performed solely with the hardware and software provided for this acquisition. Any non-PNNL software used in acceptance testing shall be licensed to Battelle as part of this acquisition. The date of final acceptance shall be the last day of the acceptance period. The acceptance demonstration shall consist of the following acceptance tests:
+1. Completion of a checklist of system components (number of nodes, memory, etc.) and software. 2. Demonstration that the performance benchmarks have been achieved as proposed by the Offeror
+
+and in accordance with Battelle requirements.
+3. Demonstration that system software, compilers, and libraries function correctly as proposed by
+
+the Offeror and in accordance with Battelle requirements.
+4. Demonstration of a 30-day system availability of at least 98 percent is required. The workload
+
+during this 30-day period is completely at the discretion of Battelle. The proportion of configured resources available for use by Battelle will calculate system availability based on a 15-minute polling period. For this definition, a "configured node" is defined as the collection of hardware and software components running in a manner to support the benchmark codes used in Attachment 1. A node outage of any duration within the 15-minute period constitutes a 15minute outage for one-fourth (ź) of a node hour. For example on a 1000 node system, 14,400 node-hours of downtime are allowable. The Offeror may propose an alternate method for tracking system availability and provide an escalation plan for problem resolution.
+
+RFP No. 198156, HPCS-4
+
+Page 24
+
+SECTION G Price Proposal Form
+Also Attachment 6 in Word
+
+Contract Pricing Scenarios
+HPCS-4 System, including delivery, installation, acceptance Total Lease Payments (Months 1-12) Total Hardware Maintenance, Year 1 (Enter $0 if covered by 1 year warranty) Total Software Maintenance, Year 1 (Enter $0 if covered by 1 year warranty)
+
+Purchase
+
+Operating Lease*
+Submit Attached Monthly Payment Schedule (Months 112)
+
+Lease-to-Own*
+Submit Attached Monthly Payment Schedule (Months 1-12)
+
+OPTIONS YEAR 2
+Option 1: Hardware Maintenance (Months 13-24) (Enter $0 if covered by warranty) Option 2: Software Maintenance (Months 13-24) Option 3: Operating Lease Extension (Months 13-24)
+
+Purchase
+
+Operating Lease
+
+Lease-to-Own
+
+YEAR 3
+Option 4: Hardware Maintenance (Months 25-36) (Enter $0 if covered by warranty) Option 5: Software Maintenance (Months 25-36) Option 6: Operating Lease Extension (Months 25-36)
+
+Purchase
+
+Operating Lease
+
+Lease-to-Own
+
+RFP No. 198156, HPCS-4
+
+Page 25
+
+YEAR 4
+Option 7: Hardware Maintenance (Months 37-48) Option 8: Software Maintenance (Months 37-48) Option 9: Operating Lease Extension (Months 37-48)
+
+Purchase
+
+Operating Lease
+
+Lease-to-own
+
+TOTAL AGGREGATE SYSTEM PRICE (TASP) (Not to exceed $12 million) YEAR 5
+Option 10: Hardware Maintenance (Months 49-60) Option 11: Software Maintenance (Months 49-60) Option 12: Operating Lease Extension (Months 49-60) * Proposed lease payment schedules must be submitted in the formats shown in Attachment 5, Sample Lease Payment Schedules. (If the sample schedules are provided electronically by Battelle, Offerors should not rely on the accuracy of the formulas contained in the sample schedules when submitting proposals.) In addition to the above Price Proposal Form, you are required to provide a full price breakdown (items, descriptions, quantities, unit prices, etc.) for the HPCS-4 System you are offering. This breakdown will be used, among other things, to evaluate the affordability factors as listed in Section C, Evaluation Criteria for Award, to evaluate other pricing factors in the tradeoff process during evaluation and so forth. Specific areas of breakdown that are mandatory are as follows: ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ Price for the shared, high performance parallel file system (Technical Requirements Section 11. M-11.3, M-11.4, M-11.5, M-11.6, etc.), with detail including the cost of a single discrete server/storage unit Price per Compute Node (definition of "Compute Node" shall be provided by Offeror in Offeror's technical proposal) Price per Compute Node Memory Upgrade Price per Compute Node Processor Upgrade Price for interconnect, including costs/prices/quantities of switches and cabling (all components) Software Documentation and Training Price for delivery, installation and acceptance
+
+Purchase
+
+Operating Lease
+
+Lease-to-Own
+
+RFP No. 198156, HPCS-4
+
+Page 26
+
+OFFEROR'S SIGNATURE:
+
+Company Signature of Authorized Representative Typed/Printed Name Title Date
+
+Note: Taking any exception to the provisions in Section I, or any other terms and conditions of the RFP, could negatively impact Battelle's overall evaluation, to the extent that your proposal could be rendered non-responsive, removing your proposal from further award consideration.
+
+RFP No. 198156, HPCS-4
+
+Page 27
+
+SECTION H SPECIAL PROVISIONS
+
+AVAILABILITY OF FUNDS If lease is selected in this acquisition, the Lessor understands that funding of the Lease Agreement is subject to the future availability of annually appropriated, apportioned, and allotted funds, and that this contract must be made and administered consistent with 31 United Stated Code (U.S.C.) §1341 and 41 U.S.C. §1.1. Accordingly, funding of lease costs under this contract shall be provided on a fiscal year basis, subject to a determination by the Department of Energy that sufficient appropriated and apportioned funds are available to be allotted for such costs. Battelle agrees to give written notice not later than 30 days prior to the beginning of each successive fiscal year. This notice shall indicate that funds for the next fiscal year, which may be lawfully applied to this contract, are available. Such funds shall be applied to continue the contract subject to the availability of funds. In the event that no funds are appropriated and/or apportioned, or a determination is not made by the DOE that sufficient funds are available to continue this contract and no written notice of availability of funds is made within the time prescribed, then this contract shall end on the last day of the current fiscal year without penalty or expense of any kind to Battelle. If funding previously available for this contract is withdrawn during the current U.S. Government fiscal year as a result of budgetary action by the Office of Management and Budget or by Congress, Battelle will notify the Lessor of this occurrence and may cancel this contract upon two weeks written notice to the Lessor. Upon cancellation of this contract, and upon written direction from the Lessor, Battelle shall deliver the leased equipment to Lessor within the Continental Unites States consistent with the terms and conditions of the contract. OPTION TO EXTEND HARDWARE AND SOFTWARE MAINTENANCE If Battelle purchases this computer equipment, hardware and software will be acquired along with the system. Payment for such services shall be rendered monthly, at the beginning of each month. Following initial award, these services will be acquired on an annual, unilateral basis at the option of Battelle at the prices provided by the Contractor. Each year, 60 days prior to the anniversary date of the contract, Battelle shall have the unilateral right to exercise the appropriate line item for that particular year of hardware maintenance or software support at the prices indicated on the pricing form in Section G. If Battelle fails to exercise its option within this time period, Battelle may forfeit its right to continue the services at the prices provided in Section G at the discretion of the Contractor. PAYMENT The Contractor shall not receive payment for the delivery of any system until successful completion of acceptance testing. In the event of system purchase, the hardware and software maintenance will be paid monthly in arrears (i.e., at the end of month). USE OF BATTELLE NAME The Contractor agrees not to use Battelle's name or identifying characteristics for advertising, sales promotion, or other publicity purposes.
+RFP No. 198156, HPCS-4 Page 28
+
+ENVIRONMENT, SAFETY, AND HEALTH REQUIREMENTS ­ PNNL WORK SITES (cl.
+3113a ­ Sept 2010)
+
+A. In performing any work under this contract on property or facilities owned or controlled by Battelle that are identified as PNNL Work Sites (hereinafter "onsite"), the Contractor shall comply with all applicable federal, state and local environment, safety, and health laws and regulations. The Contractor shall also comply with 10 CFR 851, DOE Worker Safety and Health Program, and DEAR 970.5223-1, Integration of Environment, Safety and Health (ES&H) into Work Planning and Execution (Dec. 2000). In order to comply with the requirements of 10 CFR 851 and DEAR 970.5223-1, the Contractor shall be guided by the principles set forth below. B. The Contractor shall perform work safely and in a manner that ensures adequate protection for employees, the public, and the environment, and shall be accountable for the safe performance of work. The Contractor shall exercise a degree of care commensurate with the work and the associated hazards. The Contractor shall ensure that management of ES&H functions and activities becomes an integral but visible part of the Contractor's work planning and execution processes. The Contractor shall, in the performance of work, ensure that-- 1. Line management is responsible for the protection of employees, public, and the environment. Line management includes those contractor and subcontractor employees managing and supervising employees performing work. 2. Clear and unambiguous lines of authority and responsibility for ensuring (ES&H) are established and maintained at all organizational levels. 3. Personnel possess the experience, knowledge, skills, and abilities that are necessary to discharge their responsibilities, and shall retain records respecting such competency and qualifications, making them available upon request. 4. Resources are effectively allocated to address ES&H, programmatic, and operational considerations. Protecting employees, the public, and the environment is a priority whenever activities are planned and performed. 5. Before work is performed, the associated hazards are evaluated and a set of ES&H standards and requirements are established which, if properly implemented, provide adequate assurance that employees, the public, and the environment are protected from adverse consequences. 6. Administrative and engineering controls to prevent and mitigate hazards are tailored to the work being performed and associated hazards. Emphasis should be on designing the work and/or controls to reduce or eliminate the hazards and to prevent accidents and unplanned releases and exposures. C. The Contractor, relative to the Statement of Work and contract specifications, shall be able to demonstrate through documentation and work practices that its performance of work under this contract-- 1. Fulfilled the scope of work as outlined in this contract
+
+RFP No. 198156, HPCS-4
+
+Page 29
+
+2. Identified and analyzed specific, task-level hazards associated with the work 3. Developed and implemented hazard controls related to the hazards 4. Allowed the performance of work within the controls 5. Provided feedback to Battelle and Contractor employees on adequacy of hazard controls D. The Contractor shall perform work in accordance with a DOE-approved Worker Safety and Health Program (also referred to in the DEAR as a Safety Management Plan) as described below: 1. The Contractor shall demonstrate well-established safety protocols applicable to the scope of work and consistent with the required elements stated in this clause. Prior to the initiation of any onsite work, the Contractor shall either-- a. Accept and incorporate Battelle's PNNL Contractor Environment Safety and Health Manual (http://www.pnl.gov/contracts/esh-procedures/) as its own. The Battelle Contracts Representative can provide a hard copy of the manual upon request. In those cases where the Contractor's onsite activities are limited to an office or meeting environment, with no additional or unusual hazards, the CES&H Manual requirements can be met through review of the Visitor Orientation Pamphlet, available on-line at http://www.pnl.gov/contracts/esh-procedures/. b. Submit its own 10 CFR 851 and DEAR 970.5223-1 compliant Worker Safety and Health Program (WSHP) document to the Battelle Contracts Representative. The Battelle Contracts Representative will coordinate the review and approval of the program document by DOE. The Contractor will be notified by the Battelle Contracts Representative of the program document's approval by DOE. Acceptance of the Contractor's program document will be at the sole discretion of DOE. 2. The Contractor will be provided a completed Acquisition Hazard Assessment (AHA) checklist by the Battelle Technical Administrator prior to initiation of Contractor's onsite work. The AHA incorporates elements of effective job planning. Elements include identifying: the scope of work to be performed; potential hazards to Battelle and Contractor staff the public and environment created by the work performed; hazard control methods and mitigation; and mechanism to evaluate the adequacy of those controls. The AHA is a key control process in the safe conduct of work at Battelle. The Contractor is expected to possess the completed AHA in order to access Battelle property or facilities and initiate work. E. The Contractor shall perform the following additional hazard identification tasks consistent with an approved WSHP: 1. The Contractor shall be responsible for identifying all potential occupational exposures that its employees and the employees of its lower-tier subcontractors will be exposed to while performing any work under this contract.
+
+RFP No. 198156, HPCS-4
+
+Page 30
+
+2. The Contractor shall assure that its employees and those of any lower-tiered subcontractor are medically qualified to perform work associated with any potential occupational exposures that have been identified. Medical qualification and medical surveillance programs are the sole responsibility of the Contractor. In addition, the Contractor is responsible for maintaining any records associated with the administration of these programs. 3. For each of its employees and each of its lower-tier subcontract employees that the Contractor has identified as having potential occupational exposures that require enrollment in a medical surveillance or medical qualification program, the Contractor shall provide its Occupational Medical provider with the following information: a. Current information about actual or potential work-related site hazards (chemical, radiological, physical, biological, or ergonomic); b. Employee job-task and hazard analysis information, including essential job functions; c. Actual or potential work-site exposures of each employee; and d. Personnel actions resulting in a change of job functions such that a change of hazards, or exposures results. 4. For each of its employees and each of its lower-tier subcontract employees, a copy of the exposure information provided to the Contractor's occupational medical provider shall be submitted to the Battelle Contracts Representative and approved by Battelle before any of these employees begin work under this contract. F. The Contractor shall notify the Battelle Contracts Representative immediately of any OSHArecordable injuries/illnesses, any "off-normal occurrences," or Government property damaged, that the Contractor determines to have occurred in the course of operations onsite and shall furnish such further information as the Battelle Contracts Representative may require. An "offnormal occurrence" is any unplanned or unexpected event, including near misses, or the discovery of a deficiency in a procedure, plan, or system that has real or potentially undesirable consequences to personnel, equipment, facilities, the environment, and/or programs. G. The Contractor's onsite ES&H activities will be subject to review by the Technical Administrator of this contract. Other representatives of Battelle may conduct periodic inspections of the Contractor's equipment, work and storage areas for compliance with the applicable ES&H requirements. The Battelle Contracts Representative will notify the Contractor by a written Notice of Non-compliance of any observed non-compliance with applicable ES&H requirements. The Contractor shall immediately take appropriate corrective action. The Contractor shall advise the Battelle Contracts Representative, in writing, within five (5) working days of the corrective action taken on any safety non-compliance noted on the written Notice of Non-compliance. If the Contractor fails or refuses to correct the safety non-compliance, Battelle may perform, or cause to be performed, the necessary corrective work and unilaterally charge the Contractor for the cost thereof. Such charges will be deducted from payments otherwise due the Contractor under this contract.
+
+RFP No. 198156, HPCS-4
+
+Page 31
+
+H. The Contractor shall promptly evaluate and resolve any non-compliance with applicable ES&H requirements. If the Contractor fails to provide resolution or if, at any time, the Contractor's acts or failure to act causes substantial harm or an imminent danger to the environment, or health and safety of employees or the public, the Battelle Contracts Representative may issue an order stopping work in whole or in part and the Contractor shall be liable for the delay and any costs thereby incurred. Any stop-work order issued by Battelle under this clause (or issued by the Contractor to a subcontractor in accordance with this clause) shall be without prejudice to any other legal or contractual rights of Battelle. In the event that the Battelle Contracts Representative issues a stop-work order, an order authorizing the resumption of the work may be issued at the discretion of the Battelle Contracts Representative. The Contractor shall not be entitled to an extension of time, or additional cost or fee, or damages by reason of, or in connection with, any work stoppage ordered in accordance with this clause. I. Employee Concerns Program 1. The Contractor, its agents, employees or subcontractors, are entitled to use the Battelle Employee Concerns Program and Hotline (509) 375-3999. The Hotline operates 24 hours per day, 7 days a week. Messages may be left anonymously, and all concerns are handled with confidentiality to the maximum extent possible. Employee concerns may also be submitted in writing to the Battelle Employee Concerns Office, Battelle, Pacific Northwest National Laboratory, P.O. Box 999, K1-42, Richland, Washington, 99352, or in person at the Staff Concerns Office, Battelle's Research Operation Building during normal business hours, Monday through Friday 7:30 a.m. to 4:30 p.m. 2. For the purpose of this document, allegations, concerns, and complaints are handled in a like manner and are referred to collectively as "employee concerns." A concern can consist of a declaration, statement, or assertion of impropriety or inadequacy on the part of one's employer or others at a DOE Site that has affected (or threatens to affect) aspects of operations, such as the environment, health, safety, quality, or security, and may include fraud, mismanagement, waste, or abuse of authority. 3. No retaliation or retribution shall be taken toward any individual as a result of filing an employee concern consistent with 10 CFR 708. J. Civil Penalties and Indemnification 1. The 2002 Bob Stump National Defense Authorization Act amended the Atomic Energy Act by adding section 234C "Worker Health and Safety Rules for Department of Energy Nuclear Facilities." It required DOE to promulgate a worker safety and health rule, published in the Federal Register on February 9, 2006, as 10 CFR 851. It establishes worker safety and health requirements that govern the conduct of contractor activities at both nuclear and non-nuclear DOE Sites. Contractors that fail to comply with the Rule are subject to civil penalties or contract penalties. 2. The Contractor assumes full responsibility and shall indemnify, hold harmless, and defend Battelle, its directors, officers, and employees from any civil or contractual liability under
+RFP No. 198156, HPCS-4 Page 32
+
+section 234C of the Atomic Energy Act of 1954, as amended, or the implementing regulations, arising out of the activities of the Contractor, its subcontractors, suppliers, agents, employees, and their officers, or directors. The Contractor's obligation to indemnify and hold harmless shall expressly include attorney fees and other reasonable costs of defending any action or proceeding instituted under section 234C or DOE's implementing regulations. K. The Contractor is responsible for its subcontractors' compliance with the ES&H requirements of this contract. The Contractor shall include a clause substantially the same as this clause in lower-tier subcontracts involving work at on property or facilities owned or controlled by Battelle that are identified as PNNL Work Sites. Such subcontracts shall provide for the right to stop work under the conditions described herein.
+
+RFP No. 198156, HPCS-4
+
+Page 33
+
+SECTION I GENERAL PROVISIONS
+
+Any resultant contract will be in accordance with the General Provisions for Commercial Items ­ Supplies/Services that can be viewed at http://www.pnl.gov/contracts/documents/
+
+RFP No. 198156, HPCS-4
+
+Page 34
+
+SECTION J LIST OF ATTACHMENTS The attachments listed below are a part of this solicitation. Attachment 1: Mandatory Requirements [MR] and Value Related Factors [VRF] Attachment 2: General Provisions for Commercial Items ­ Supplies/Services Attachment 3: Representations and Certifications ­ Commercial Items Attachment 4: Small Business Subcontracting Plan Form Attachment 5: Sample Lease Payment Schedule Attachment 6: Price Proposal Form [END OF SOLICITATION]
+
+RFP No. 198156, HPCS-4
+
+Page 35
+
+ATTACHMENT 1
+
+Technical Requirements
+1. GENERAL DESCRIPTION OF THE SYSTEM
+These technical requirements are for a next generation high performance computing system for EMSL, the Environmental Molecular Sciences Laboratory. EMSL is located at PNNL, the Pacific Northwest National Laboratory. The procurement project is designated HPCS-4, and will procure two systems two years apart. The first system, HPCS-4A, is to be installed at EMSL in early calendar year 2013, the second system, HPCS-4B is to be installed in early calendar year 2015. Based on past performance gains for high performance computing systems, Battelle expects the HCPS-4B system to have roughly 3x the performance of the HPCS-4A system when running similar workloads. The technical specifications detailed in this document are for the HPCS-4A system; HPCS-4B specification details will be determined closer to calendar year 2014.
+
+The HPCS-4A system shall be a Linux-based system with a balanced architecture suited to running scalable parallel simulations using MPI-2 and Global Arrays. Parallel jobs utilizing thousands or tens of thousands of cores with frequent inter-processor communications will be common on this system, so its performance features should be balanced appropriately. Offerors may propose accelerators as part of the system, but they will bear the burden of proving that accelerators are appropriate for Battelle's workload as characterized by the MSC benchmarks! Features shall include a high performance interconnect for inter-node communications and a high performance shared filesystem.
+
+Battelle's objective is to identify a system architecture with characteristics that achieve the best available performance on EMSL's computational workload, and to procure the largest such system possible within the available budget. The proposed system must meet all mandatory technical requirements in order to be considered responsive. All responsive proposals will be scored upon: ˇ Actual system performance on micro-benchmarks and application benchmarks ˇ Large-scale system performance projections, based on extrapolation from actual performance ˇ System Energy Efficiency ˇ Optional value-related factors that the proposed system may meet The responsive proposal that provides the best value for the price will be selected.
+
+2. GENERAL SYSTEM REQUIREMENTS
+Mandatory Requirements [Required] M-2.1 A balanced, multi-user, computer system supporting batch and interactive use. 1
+
+M-2.2 At least five nodes are required for users to login, compile and debug codes and submit batch jobs. Powering off all login nodes shall not interrupt the system workload. M-2.3 The complete system must be delivered and ready for onsite acceptance testing no later than 90 days after the contract award date M-2.4 A separate test system, composed of nodes identical to the main system, with a compute node count equal to 1% of the main system, is required for software and update testing. All infrastructure node types necessary to the main system, including failover pairs, are required for testing. If changes are made to the production system, they shall be made to the test system as well so that the configuration of the test system remains representative of the production system over its lifetime. M-2.5 Client support for AFS (Andrew FileSystem) is required on login nodes. M-2.6 Client support for the Lustre filesystem is required an all nodes. Requirement Meets Requirement: (yes/no/alternative proposal) Provide a description of how the requirement will be met / Provide the proposal page reference for additional supporting documentation
+
+M-2.1 M-2.2 M-2.3 M-2.4 M-2.5 M-2.6 Value Related Factors [Desired] V-2.1 Larger test system V-2.2 Nodes with additional RAM or accelerator nodes such as GPGPU or MIC. V-2.3 The test system has the same type of interconnect as the main system including any oversubscription and the number of layers or hops present in the main system. V-2.4 Low life-cycle costs (power and cooling costs, maintenance, operation, integration, conversion);
+
+Requirement
+
+VRF Proposal Offered (yes/no)
+
+Provide a description of related VRF proposal / Provide the proposal page reference for additional supporting documentation
+
+V-2.1 V-2.2 V-2.3 V-2.4
+
+2
+
+3. AVAILABILITY
+Mandatory Requirements [Required] M-3.1 Running a Battelle-defined workload, the system must be able to demonstrate 98% system availability during a 30-day acceptance test and an average scheduled availability of at least 97.5% over each year of the contract. As needed by Battelle, a monthly planned downtime of up to 24 hours in length is taken for support purposes. This downtime, as scheduled by Battelle is not counted as downtime as part of the availability requirement. M-3.2 Support shall provide all replacement / spare parts to meet the availability requirements. Support must include access to knowledgeable software support during PNNL working hours. i) The system must have one year comprehensive maintenance and support for all hardware and software components ii) Separate pricing for hardware support and software support options for years two through five are required. iii) Prices for support options shall be listed separate from the cost of the system. M-3.3 The system must be able to demonstrate that a single NWChem job running across 75% of the total system processor cores for up to twelve hours can complete without interruption. M-3.4 The system must be able to meet the performance portion of the acceptance test at any time. This test is expected to be run monthly and after any change to the system software or hardware configuration. M-3.5 The system is expected to run continuously between the regularly scheduled monthly maintenance periods. Failed components shall be able to be repaired and returned to production without interrupting the remainder of the system workload or causing the job submission and execution to be interrupted. Requirements Meets Requirement: (yes/no/alternative proposal) Provide a description of how the requirement will be met / Provide the proposal page reference for additional supporting documentation
+
+M-3.1 M-3.2 M-3.3 M-3.4 M-3.5 Value Related Factors [Desired] V-3.1 Automatic hardware / software diagnostics on first failure; V-3.2 Enhanced support structure including online support and patch download, increased software support (e.g., 12X5, 24X7, etc), and onsite hardware spare parts; V-3.3 Ability to perform corrective or preventative software and hardware maintenance on a portion of the system without impacting the rest of the system; V-3.4 Provide vendor specified number of spare nodes, switches and other parts on-site, as hot or cold spares, that can be for replacements when failures occur. 3
+
+Requirements
+
+VRF Proposal Offered (yes/no)
+
+Provide a description of related VRF proposal / Provide the proposal page reference for additional supporting documentation
+
+V-3.1 V-3.2 V-3.3 V-3.4
+
+4. DOCUMENTATION AND TRAINING
+Mandatory Requirements [Required] M-4.1 Full, online, searchable, documentation for hardware and any supplemental software, including web-based documentation, an unlimited right to print the documentation, and a limited right to copy printed documentation. Documentation must include relevant debugging and optimization information for all hardware and supplemental software. M-4.2 Forty classroom hours of on-site training. Topics to be covered shall be negotiated for inclusion in the Statement of Work. Suggested topic areas include: i) System Administration ii) Hardware (e.g. architecture, interconnect, file system) iii) Architecture-dependent optimization techniques iv) Software (e.g. MPI, backup tools) v) Code Development (e.g. compilers, debuggers, profilers) Requirements Meets Requirement: (yes/no/alternative proposal) Provide a description of how the requirement will be met / Provide the proposal page reference for additional supporting documentation
+
+M-4.1 M-4.2
+
+5. CYBER SECURITY
+Mandatory Requirements [Required] M-5.1 Security patches for all supported software must be made available to Battelle in a timely manner, no less than 30 days after public release. M-5.2 Security policy may not allow Battelle to return disk storage media or other persistent memory devices, including failed devices. Offeror's proposal shall include a pricing option for no-return disk maintenance. M-5.3 The system and network-accessible equipment access shall be password protected. The passwords shall be changed from factory defaults and provided to Battelle prior to system delivery.
+
+4
+
+M-5.4
+
+M-5.5
+
+The proposed system must not utilize clear-text, reusable passwords for remote access. All password challenge/response must be through an encrypted session such as ssh, https, etc. All network accessible portions of the proposed system must be able to support passwords that conform to the PNNL password standard: All systems must use system-generated or user-created passwords of at least eight characters that combine numeric characters (i.e., 0-9) and unrelated character strings. Character strings must be a combination of both upper case (A-Z) and lower case (a-z) letters and at least one special character.
+
+M-5.6
+
+M-5.7 M-5.8 M-5.9 M-5.10
+
+M-5.11 M-5.12
+
+M-5.13
+
+M-5.14 M-5.15
+
+The proposed system must support RSA SecureID authentication on the login nodes. PNNL already has a SecurID system implemented. Requirement is only that the login nodes be able to support SecurID authentication. All nodes must support Kerberos5 authentication (client). All nodes must support LDAP authorization and directory lookup (client). All nodes must support the ability to display a login banner before authentication. The network accessible login and head nodes must include a centralized logging/audit solution that logs at least: i) successful connections ii) attempted connections iii) unsuccessful connections iv) successful logins v) unsuccessful logins vi) security policy changes vii) changes to user account list viii) node console logs Filesystems must support user and group permissions on files and directories. Substitute user capability ­ To minimize the security exposure, a mechanism to allow a permitted user to execute a command as the system administrator or as another user is required (e.g. the "sudo" command). The login and service nodes will support pam_lastlog or equivalent. On successful login, the system will display a line of information about the last login of the user. The system will have the capability to display the date of the last login, the terminal and host from which the last login was attempted. The system will support pam_tty_audit or equivalent for TTY auditing for specified users for login and service nodes. The login and service nodes will support auditd or equivalent for login and service nodes to log file changes and system calls, including tools to assist in controlling audited events.
+
+The following (M-5.16 ­ M-5.19) are required for login and service nodes. M-5.16 The local file systems on nodes will support extended attributes on files and directories to improved security. In particular, a file marked as append only, undeletable, or immutable. 5
+
+M-5.17 The system will have the ability to verify the information about the installed files in package with information about the files in the package. The verification will compare file sizes, MD5 sum, permission, file type, owner and group of each file. M-5.18 The kernel will support protections such as No-Execute (NX) and Address Randomization (ASLR). The kernel will also have support to prevent module loading, and write protected kernel read-only data structures. This should be available for Linux kernel 2.6.32 or later. M-5.19 All programs in the distribution will be compiled with Stack Smashing Protection (SSP), ELF binary data hardening, Position Independent Execution (PIE) and glibc heap/stack memory checks by default. These features are enabled by default for many recent Linux distributions including RedHat, Centos and Ubuntu. The system will support pam_time or equivalent to provide the capability to restrict access to the system or specific applications based on their name, the time of day, the day of the week etc.
+
+Requirement
+
+Meets Requirement: (yes/no/alternative proposal)
+
+Provide a description of how the requirement will be met / Provide the proposal page reference for additional supporting documentation
+
+M-5.1 M-5.2 M-5.3 M-5.4 M-5.5 M-5.6 M-5.7 M-5.8 M-5.9 M-5.10 M-5.11 M-5.12 M-5.13 M-5.14 M-5.15 M-5.16 M-5.17 M-5.18 M.5-19
+
+6
+
+6. DEVELOPMENT SOFTWARE
+Mandatory Requirements [Required] M-6.1 The offeror must include Fortran77, Fortran90 and Fortran95, C and C++ compilers. Compilers used to produce the included benchmark results must be included. M-6.2 All compilers must support OpenMP M-6.3 Cray-style pointers must be a supported data type in Fortran. M-6.4 Preprocessors, compilers, and associated libraries must provide inter-language interoperability. M-6.5 Compilers must support 32-bit and 64-bit integer, floating point, and pointer data types with compiler options. M-6.6 All math libraries except SCALAPACK must support both 8byte and 4byte integer argument versions. The Offeror must supply and support the following libraries: M-6.7 M-6.8 M-6.9 M-6.10 M-6.11 Architecture-optimized BLAS1,2,3; Optimized Parallel BLAS; Optimized LAPACK; Optimized SCALAPACK; Math libraries with vector/pipelined logarithmic, exponential and trigonometric functions; M-6.12 Optimized FFT library (could be included in the Math library); M-6.13 Support of POSIX IEEE 1003.1C conforming threaded programming model within SMP nodes; and M-6.14 X11R6 or above libraries available on all login nodes. Requirement Meets Requirement: (yes/no/alternative proposal) Provide a description of how the requirement will be met / Provide the proposal page reference for additional supporting documentation
+
+M-6.1 M-6.2 M-6.3 M-6.4 M-6.5 M-6.6 M-6.7 M-6.8 M-6.9 M-6.10 M-6.11 M-6.12 M-6.13 M-6.14 7
+
+Value Related Factors [Desired] V-6.1 Interactive and postmortem parallel debugging environment which supports: a. source line level; b. mixed language, supporting compilers delivered; c. mixed multi- threaded/MPI applications. d. A graphical user interface for debugging applications. V-6.2 Source line level sequential and parallel CPU time profiling tools, including a graphical user interface for profiling. V-6.3 Scriptable debugger, which allows debugging on programs spanning more than 1000 hosts. V-6.4 Ability to perform detailed performance profiling of parallel codes with minimal performance impact. V-6.5 Additional compilers for Fortran, C or C++ with different performance characteristics. V-6.6 High resolution timer; V-6.7 Hardware performance counters for CPU, such as flops, cache performance, interconnect and communication performance, etc are desirable with software access to get the information (e.g., API or compile/run time options), to organize the data for parallel applications, and to analyze the results ideally in the context of the source code. V-6.8 Optimized FFT libraries compatible with FFTW API. V-6.9 Power control options and supporting API, libraries etc. to enable jobs to turn off unused processor cores or other unused system components to improve power efficiency Requirement VRF Proposal Offered (yes/no) Provide a description of related VRF proposal / Provide the proposal page reference for additional supporting documentation
+
+V-6.1 V-6.2 V-6.3 V-6.4 V-6.5 V-6.6 V-6.7 V-6.8 V-6.9
+
+7. INTERPROCESSOR COMMUNICATION
+Mandatory Requirements [Required] M-7.1 Zero-Copy non-blocking RDMA must be supported. M-7.2 Thread-safe MPI, MPI_THREAD_MULTIPLE must be supported. M-7.3 The inter-node RDMA Read/Get latency shall be at the most 3 microseconds regardless of the placement of the nodes and the "hop" distance between nodes. 8
+
+M-7.4 Point-to-point MPI Send/Recv ping pong test latency shall be at most 3 microseconds. M-7.5 The network interconnect shall have a data rate no lower than 54 gigabit per second per direction simultaneously for inter-node communication. Multi-rail QDR 4X Infiniband is acceptable. M-7.6 Global Array Toolkit version 5.1 shall run with its entire functionality. M-7.7 MPI libraries should fully support the MPI-2 standard. M-7.8 Global Arrays/ARMCI and MPI shall work along with each other. A single application shall concurrently be able to use Global Arrays/ARMCI and MPI.
+
+Requirement
+
+Meets Requirement: (yes/no/alternative proposal)
+
+Provide a description of how the requirement will be met / Provide the proposal page reference for additional supporting documentation
+
+M-7.1 M-7.2 M-7.3 M-7.4 M-7.5 M-7.6 M-7.7 M-7.8 Value Related Factors [Desired] V-7.1 The interconnect and associated software, including the resource manager must support the ability for users to specify on a per-job basis to not kill a parallel job when a node fails, including when a node reboots V-7.2 Non-Contiguous Zero-Copy non-blocking RDMA interfaces are desirable. V-7.3 Direct Virtual memory RDMA support is desirable. V-7.4 Better performance than the mandatory required is desirable V-7.5 Other network interconnect features which help to improve code performance, such as adaptive routing, cpu offload, etc. Requirement VRF Proposal Offered (yes/no) Provide a description of related VRF proposal / Provide the proposal page reference for additional supporting documentation
+
+V-7.1 V-7.2 V-7.3 V-7.4 V-7.5
+
+9
+
+8. NETWORKING
+Mandatory Requirements [Required] M-8.1 Required access protocols: SSH, SFTP and SCP. M-8.2 Each login node shall have at least one 10 gigabits per second Ethernet interface (these can be multiplexed into fewer upstream connections). M-8.3 The login nodes shall be separable such that they may be presented as at least two separate sets of systems meeting all the requirements above (for separate internal and external access). M-8.4 The system shall have adequate switching hardware provided to accommodate external interfaces using four 10 gigabits per second LACP bonded short range fiber optic connections. M-8.5 All system software, support systems, and applicable application software shall support both IPv4 and IPv6 simultaneously. Requirement Meets Requirement: (yes/no/alternative proposal) Provide a description of how the requirement will be met / Provide the proposal page reference for additional supporting documentation
+
+M-8.1 M-8.2 M-8.3 M-8.4 M-8.5 Value Related Factors [Desired] V-8.1 Higher network performance and reliability features are desired. V-8.2 All system and application software can run in an IPv6-only environment. Requirement VRF Proposal Offered (yes/no) Provide a description of related VRF proposal / Provide the proposal page reference for additional supporting documentation
+
+V-8.1 V-8.2
+
+9. PHYSICAL
+It is the vendor's responsibility to propose a system that fits into the Molecular Science Computing (MSC) facility. Drawings of the MSC floorspace, and conceptual drawings of the overhead power and under-floor chilled water are available for download at: http://www.emsl.pnl.gov/msc/MSC_computing_floorspace.pdf, http://www.emsl.pnl.gov/msc/MSC_HPCS-4_Power.pdf, and http://www.emsl.pnl.gov/msc/MSC_HPCS-4_Mechanical.pdf The vendor is encouraged to have a site-planning representative visit the MSC. 10
+
+Electrical
+The High Performance Computing System-4A (HPCS-4A) electrical infrastructure is based on delivery of 480v, 3-phase, 5 wire electrical power to the computer cabinet buss duct systems. The HPCS-4A system will be fed by overhead 800A buss ducts. The size, quantity, and number of poles of these individual breakers on the bus duct will be determined by the selected HPCS-4A solution. PNNL will provide the branch circuits from the switchboards, power distribution units, or remote distribution units to the individual cabinets of the HPCS-4A. M-9.1 M-9.2 M-9.3 Each computer cabinet shall be powered by a single 480V 3-phase circuit. Connection of supply circuits to HPCS-4a equipment shall be via one branch circuit per rack a buss duct circuit breaker above the racks. The total peak power consumption for the HPCS-4A is facility-limited to 2.5MW. The total peak power calculation shall be based on the realistic upper bound for worst-case power consumption for short durations. The sustained maximum consumption of power for the HPCS-4A is limited to 2.0MW. The sustained maximum consumption shall be based on an execution of a heavy workload at 95% or greater utilization A Reference comparison of total peak power consumption and sustained maximum power consumption is required. Power supplies for computer, network, and storage equipment; cooling systems, and other equipment directly associated with the HPCS-4A shall comply with IEEE 519 requirements for harmonic currents. The vendor shall provide PNNL with harmonic current data produced by HPCS-4A computer loads. Power supplies for all equipment associated with HPCS-4A shall be designed to tolerate power quality events bounded by the SEMI F47 curve for voltage anomalies below nominal voltage and by the ITI (CBEMA) curve for voltage anomalies above nominal voltages. Any electrical power other than the 480/277V that is provided by PNNL must be provided via vendor supplied and installed transformers and distribution panels. Power configuration to storage systems and racks shall be configured so that the power for these components is load-balanced at distribution buss ducts. The highest line current shall be less than 10% over the lowest line current at the 800A buss ducts used for rack distribution. The power factor (pf) for all equipment shall be greater than 97%. Maximum rack current shall be 80A at 480V 3 phase and each 800A buss duct shall not exceed 640A of continuous power. All electrical equipment that is provided by the vendor shall be listed and labeled by a nationally recognized testing laboratory. Any uninterruptable power supply or power conditioning equipment required shall be provided by the vendor and shall be submitted to PNNL for approval prior to installation.
+
+M-9.4
+
+M-9.5 M-9.6
+
+M-9.7
+
+M-9.8 M-9.9
+
+M-9.10 M-9.11 M-9.12 M-9.13
+
+11
+
+Mechanical Systems
+Chilled water available for HPCS-4A is a 30% PG/water at 44 to 46 degree F supply temperature. Maximum gpm flow rate available for HPCS-4A is 800 gpm. Minimum chilled water pressure differential (sub-floor hose connection nozzles, supply to return) available for HPCS-4A rack cooling is 10.0 psi. Mean operating pressure is 25 psig (+/20 psi). M-9.14 Maximum available cooling load for HPCS-4A is 400 tons. M-9.15 Maximum gpm flow rate available for HPCS-4A is 800 gpm. M-9.16 Minimum available chilled water pressure differential at the sub-floor hose connection nozzles, supply to return) for HPCS-4A rack cooling is 10.0 psi. Mean operating pressure is 25 psig (+/- 20 psi). M-9.17 HPCS-4A integral cooling system shall be room neutral type where the rack discharge temperature is at or below the room ambient air temperature, approximately 70 degrees Fahrenheit. M-9.18 HPCS-4A integral cooling system shall accommodate all condensate that might be extracted by the cooling coil to assure it is not harmful to any computer components. If condensate will occur a buyer-provided sub-floor condensate collection system will be installed for connecting to the drain ports in the integral cooling system. M-9.19 Modulating flow control valves shall be 2-inch line size of the slotted V ball type (or equivalent type designed for modulating service) with a Cv factor sufficient to obtain 30% to 50% of total 2" loop pressure drop. The valve motors shall be powered and controlled from the integral rack cooling system. M-9.20 The integral cooling system cooling coil shall be tested with 300 pounds air pressure under warm water and be suitable for operation at 200 psig working pressures.
+
+Other infrastructure requirements
+The current raised floor has a 1000 pound point load maximum, with 350 pounds per square foot maximum. Anything above this rating will require a stand mounted to the concrete in which is 2' below the raised floor to support the equipment. M-9.21 The layout of new computing shall be coordinated with existing fire protection systems and the most current applicable fire protection codes and standards. M-9.22 Access and egress for this space shall meet all applicable codes and standards. M-9.23 Stand mount to the concrete floor, for equipment which exceeds the floor loading limits. M-9.24 The maximum rack height is 96 inches.
+
+12
+
+Requirements
+
+Meets Requirement: (yes/no/alternative proposal)
+
+Provide a description of how the requirement will be met / Provide the proposal page reference for additional supporting documentation
+
+M-9.1 M-9.2 M-9.3 M-9.4 M-9.5 M-9.6 M-9.7 M-9.8 M-9.9 M-9.10 M-9.11 M-9.12 M-9.13 M-9.14 M-9.15 M-9.16 M-9.17 M-9.18 M-9.19 M-9.20 M-9.21 M-9.22 M-9.23 M-9.24 Value Related Factors [Desired] V-9.1 480V delta-connected power supplies (without neutral) preferred. V-9.2 Power and coolant monitoring at individual rack locations and reporting through BACnet or BACnet compatible interface is preferred.
+
+Requirement
+
+VRF Proposal Offered (yes/no)
+
+Provide a description of related VRF proposal / Provide the proposal page reference for additional supporting documentation
+
+V-9.1 V-9.2
+
+13
+
+10. SYSTEM MANAGEMENT HARDWARE AND SOFTWARE
+Mandatory Requirements [Required] M-10.1 The offeror must provide the ability to perform hands-off, remote updates of any node firmware including BIOS, and BMC; M-10.2 The offeror must provide hardware and software monitoring and alerting; M-10.3 The offeror must provide configuration management (for system files, software packages and patches); M-10.4 The offeror must provide kernel crash dump capability; M-10.5 The offeror must provide a batch scheduler with support for: i) node and system reservations; ii) backfilling parallel jobs iii) The queueing system must support the ability to backfill with jobs which can be automatically preempted or killed when higher priority jobs are available to run. M-10.6 Job accounting information shall be provided in a format or series of formats that are both human and machine readable and shall minimally include the following information: i) A unique identifier for each job ii) User or user id for whom the job was executed iii) The time the job was queued, started and ended iv) The number of processes (or processor cores) requested for the job v) A list of nodes on which the job ran vi) The project or bill code against which the job was charged M-10.7 The queuing system and resource manager must support the ability to not kill a parallel job when a node fails M-10.8 The batch system must support C language bindings for a DRMAA 1.0 interface to the batch queue for job submission, query and control. M-10.9 System software installations or upgrades on all nodes, including boot time, shall take less than 90 minutes from start to finish.
+
+Requirement
+
+Meets Requirement: (yes/no/alternative proposal)
+
+Provide a description of how the requirement will be met / Provide the proposal page reference for additional supporting documentation
+
+M-10.1 M-10.2 M-10.3 M-10.4 M-10.5 M-10.6 M-10.7 M-10.8 M-10.9
+
+14
+
+Value Related Factors [Desired] V-10.1 Contractor supplied onsite system administration and/or programming support to assist with the porting of codes to the new system and user migration. V-10.2 Job accounting information which includes additional information about the jobs, such as input, output and error files, and special requirements passed to the job scheduler if specified. Capturing the full job script would also be desirable. V-10.3 A resource management and job accounting solution, which can limit the use of the system by users and projects and which provides reports on system utilization by projects and users. V-10.4 The ability to suspend and resume parallel jobs as priorities require other jobs to use the system and support for preemption/termination of low priority backfill jobs. V-10.5 Configurable "fair share" job prioritization system to allow prioritization based on job sizes, project name, userid, current or past system use, remaining allocated time etc. V-10.6 System event monitoring, reporting and management V-10.7 Performance monitoring and reporting for the entire system V-10.8 Full process accounting along with the capability to enable or disable this feature on different node types (i.e. compute nodes may have process accounting disabled for efficiency, whereas login nodes may have it enabled for auditing purposes). V-10.9 Disk (local and global) usage and (potentially) performance accounting. This would include the ability to have both enforced (hard) and informational (soft) quotas on all globally accessible file-systems. V-10.10 Buildable source code for the delivered OS and other software; V-10.11 Tools for analyzing kernel crash/dump and problem diagnostics; V-10.12 Network kernel crash dump; V-10.13 Software stack closely matches existing Chinook software stack and system administration practices, or assistance in supporting Battelle's operating system and configuration management system currently in use on MSC systems, including support for benchmark testing and acceptance. The MSC systems currently run: a. Scientific Linux b. xCat provisioning c. SLURM d. opensm
+
+Requirements
+
+VRF Proposal Offered (yes/no)
+
+Provide a description of related VRF proposal / Provide the proposal page reference for additional supporting documentation
+
+V-10.1 V-10.2 V-10.3 V-10.4 V-10.5 V-10.6 15
+
+V-10.7 V-10.8 V-10.9 V-10.10 V-10.11 V-10.12 V-10.13
+
+11. AGGREGATE SYSTEM PERFORMANCE AND CAPACITY
+Battelle expects the HPCS-4A system to have a peak theoretical performance of approximately one PetaFlop. This figure is intended only as a point of reference for the expected performance range of the system. Peak theoretical performance will not be used as a selection criterion. Mandatory Requirements [Required] M-11.1 Sixty-four (64) bit integer, floating point, pointer, and file pointer are required. The sixty-four (64) bit floating point units shall conform to IEEE-754. M-11.2 The system must have a minimum of 64 gigabytes of memory per compute node. M-11.3 The system must have a shared, high-performance parallel file system that is accessible from all nodes in the system and has at least 2 Pibibytes capacity. The write performance of this filesystem shall sustain no less than 100 GibiBytes/sec. M-11.4 The shared, high performance parallel filesystem shall sustain 100 GibiBytes/sec for reading files. M-11.5 The shared, high performance parallel filesystem shall have redundancy including, failover, RAID etc. to meet the system uptime requirements. Failure of the shared filesystem shall be considered system downtime. M-11.6 The shared, high performance parallel filesystem shall sustain a metadata operation rate of at least 50000 operations per second, on the POSIX system calls open, stat, mkdir, access, link, close, and readdir, using the fileop acceptance benchmark M-11.7 The system must be able to transfer files to and from EMSL's HPSS archive at an aggregate bandwidth of 200Mibibytes/sec (Emulated Linux filesystem mount, SCP and SFTP protocols are available in addition to the native HPSS interface). M-11.8 The system shall be able to connect to the MSC, home filesystem. The proposed system shall supply four (4) infiniband connections to connect to MSC filesystems. M-11.9 Offeror shall specify the bisectional bandwidth of the system M-11.10 Offeror shall specify the interconnect topology
+
+16
+
+Requirement
+
+Meets Requirement: (yes/no/alternative proposal)
+
+Provide a description of how the requirement will be met / Provide the proposal page reference for additional supporting documentation
+
+M-11.1 M-11.2 M-11.3 M-11.4 M-11.5 M-11.6 M-11.7 M-11.8 M-11.9 M-11.10 Value Related Factors [Desired] V-11.1 Extended precision (128-bit or greater) hardware support for floating point arithmetic V-11.2 Additional memory V-11.3 Additional filesystem performance (metadata, bandwidth, etc.) V-11.4 Features to separate filesystem traffic from inter node communications V-11.5 Local persistent storage on each compute node Requirement VRF Proposal Offered (yes/no) Provide a description of related VRF proposal / Provide the proposal page reference for additional supporting documentation
+
+V-11.1 V-11.2 V-11.3 V-11.4 V-11.5
+
+12. BENCHMARKS
+The benchmarks described in this section shall be used to evaluate the offeror's proposal. If selected, the offeror shall be required to meet benchmark performance levels at Acceptance and throughout the life of the subcontract. The offeror may be required to demonstrate other performance metrics not mentioned herein as part of a negotiated statement of work. The set of benchmarks is designed to both examine many specific performance characteristics of the proposed system as well as run applications of interest to Battelle. Many of the micro-benchmarks represent many of the component operations in applications of interest. Results of these micro-benchmarks will also be used as input to a 17
+
+scaling model by Battelle to predict and test scalability of one or more of the applications of interest, whose results will also be a part of the Acceptance. The benchmarks have been designed to have reasonable run-times. They are to be run at various system sizes up to the maximum system size available on a system that comprises technology as close as possible to the intended delivery system. All program output shall be returned to Battelle. Any specific optimizations used, in terms of compiler flags and source code modifications should be recorded and provided to Battelle. The location of each benchmark is stated below. Each includes a Readme file that includes instructions on the configuration of the benchmark to be run. Any changes made to source by the offeror for optimization purposes must produce valid scientific results and be of production quality. Such changes are allowed for the benchmarks submitted for the RFP; further changes to code will NOT be allowed between award and acceptance. For benchmarks where tables are provided, the information requested for the table must be recorded in the table. All benchmark results along with original source files, any source modifications and output shall be provided to us on CD-ROM. The actual source code used along with scripts to compile and run the benchmarks shall be included. Submitted source shall be in a form that can readily be compiled on the proposed system. The submission shall not contain executables, object files, core files or other large binary data files. Performance projections should be provided if the benchmarks are not run on technology that will be supplied in the delivery system. A description of the projection method and any assumption used shall be also supplied to Battelle. Many of the benchmark codes and any benchmark specific instructions can be downloaded from the MSC benchmark web site at: http://www.emsl.pnl.gov/capabilities/computing/msc/msc_benchmark. Mandatory Requirements [Required] M-12.1 The offeror must run and report the results of the benchmarks from the Benchmark section. The benchmark performance reported shall only be derived from runs that exhibit correct execution. M-12.2 The offeror must provide anticipated performance of benchmarks for the proposed system and include the basis for projection. M-12.3 All benchmark program output (except temporary scratch files) shall be included in the response. M-12.4 Any specific optimizations used, in terms of compiler flags and source code modifications should be recorded and provided to Battelle. M-12.5 For benchmarks where tables are provided, the information requested for the table must be recorded in the table. M-12.6 All benchmark results along with original source files, any source modifications and output shall be provided to us on CD-ROM. The actual source code used along with scripts to compile and run the benchmarks shall be included. Submitted source shall be in a form that can readily be compiled on the proposed system. The submission shall not contain executables, object files, core files or other large binary data files. 18
+
+M-12.7 Specific execution instructions, compiler scripts (Makefiles) or compiler and compile options used to achieve the results for the benchmarks shall be documented. M-12.8 A description of the test system on which the benchmarks were run is required. This description shall include processor type, clock speed, memory configuration and speed, operating system and version, versions of libraries used (MPI, MKL etc.), interconnect network type and topology etc. This description shall also include information on any specific mapping of tasks to cores in the test system. M-12.9 Only software tools and libraries that will be included in the proposed system are permissible to build and execute the benchmarks. Requirements Meets Requirement: (yes/no/alternative proposal) Provide a description of how the requirement will be met / Provide the proposal page reference for additional supporting documentation
+
+M-12.1 M-12.2 M-12-3 M-12.4 M-12.5 M-12.6 M-12.7 M-12.8 M-12.9
+
+Micro Benchmarks
+Single Processor-Core Benchmarks: 1. Memtime Benchmark Memtime (http://www.emsl.pnl.gov/capabilities/computing/msc/msc_benchmark) Results from the memory latency benchmark memtime shall be provided 2. Cachebench Benchmark Cachebench (http://icl.cs.utk.edu/projects/llcbench/) Results from the cachebench benchmark for read, write, read & write as well as hand tuned options should be provided. Single Node Benchmarks: 3. MPI_STREAM Benchmark MPI_STREAM (http://www.cs.virginia.edu/stream/) results (Copy, Scale, Add, TRIAD) shall be provided for using between one and all cores within a socket, and using between one and all sockects within a single node.
+
+19
+
+Parallel Benchmarks: 4. MPI coNCePTual benchmarks Communication MPI-based benchmarks using the coNCePTuaL test Harness. All of the following benchmarks require the coNCePTuaL test (http://conceptual.sourceforge.net/). Benchmark source code and usage instructions for providing the results are available from http://dev.emsl.pnl.gov/capabilities/computing/msc/msc_benchmark. The suite comprises the following microbenchmarks: a. Point-2-Point unidirectional and bidirectional latency and bandwidth (both internode and intranode) b. Shift c. Contention d. Stencil (2-D and 3-D) e. All-reduce f. Barrier g. Ping_all 5. GA/ARMCI Benchmarks GA/ARMCI (http://dev.emsl.pnl.gov/capabilities/computing/msc/msc_benchmark) The following tests will require the GA toolkit version 5.1 (http://www.emsl.pnl.gov/docs/global/) a. ARMCI Latency and Bandwidth (both internode and intranode) b. GA Latency and Bandwidth (both internode and intranode) c. GA multiple Point to Point messaging d. GA Shift 6. PSNAP Benchmark PSNAP (http://dev.emsl.pnl.gov/capabilities/computing/msc/msc_benchmark). The OS-noise characterization program will be used on all processor-cores in all nodes. 7. I/O Benchmarks The I/O benchmarks consist of three tests of the global filesystem. A parallel I/O test, a single node I/O test, and a single node metadata test. Three benchmarks are run to accomplish this. All of these benchmarks will use a program called memgrabber to limit the available memory on each node. The instructions and the membrabber source can be downloaded in the io_benchmarks.tgz file from the MSC benchmark web site. A README file is included giving instructions to compile and run the benchmarks, along with the associated command line arguments that should be used. a. fileop ­ This tests the metadata on a single node. Use the fileop test from iozone3 (http://www.iozone.org/src/current/iozone3_398.tar) b. fio ­ This tests the single node write performance. (http://brick.kernel.dk/snaps/fio-1.58.tar.gz) 20
+
+c. IOR ­ Tests the total I/O bandwidth of the parallel filesystem connected to a computational system. (http://sourceforge.net/projects/ior-sio/files/IOR%20latest/IOR2.10.3/IOR-2.10.3.tgz) 8. Alltest The alltest code times message times between all nodes in the system simultaneously to give an indication of system topology and congestion. This code can be downloaded from the MSC benchmark site as alltest.tgz. As explained in the README file, only the job startup time run is required for this benchmark using the "-startonly" flag.
+
+Application Benchmarks
+The benchmark codes and any benchmark specific instructions can be downloaded from the PNNL web site at: http://www.emsl.pnl.gov/capabilities/computing/msc/msc_benchmark. 9. NWChem NWChem is an ab initio electronic structure code consisting of many options which follow very different code paths. NWChem utilizes the PNNL Global Arrays toolkit (GA) for many of its features. Building and running GA efficiently on a given computer platform is critical to the mission of the MSC. All NWChem input files are a product of PNNL's US government contract, as such they are licensed for this benchmark on behalf of the US Government. Testers will need to use version NWChem version 6.1, available from EMSL. http://www.nwchem-sw.org/ Input files and test information are available from the MSC benchmark page (http://www.emsl.pnl.gov/capabilities/computing/msc/msc_benchmark). NWChem requires several variables to be set to configure both NWChem and Global Arrays. Example settings from Chinook are in included in the NWChem_tests.tgz file as Sample_NWChem_environment.txt. NWChem tests consist of both parallel tests to be executed on several systems, and serial tests to be run on a single processor core. Parallel tests a. DFT module ­ electronic structure code b. TCE/EOM-CCSD(T) module ­ electronic structure code c. Plane-wave DFT module ­ electronic structure code d. Molecular Dynamics Serial tests e. BAND f. DFT_CH2F2 g. TCE_H2C0 21
+
+The tests are accompanied by a README file with any specific instructions for individual tests noted. For each test, all input and output should be included after verifying accurate results. Several tests include multiple runs with different numbers of processors, allowing us to understand scaling properties of the proposed systems. If it is not possible to run these tests at the scale requested or on the architecture being proposed, projections may be used to estimate the expected performance on the proposed system. Any projected results should include the actual performance measured along with method used to estimate the projected performance, including any assumptions made. The NWChem output should contain a line like: Total times cpu: 857.1s wall: 858.7s
+
+The times given in the output should be used for the table below. Number of processor cores a- DFT 512 (c240.nw) 1024 2048 b- TCE 512 (uracil.nw) 1024 2048 c- Plane Wave 512 (ebaden.272.nw) 1024 2048 d- MD 324 (OprF_md.nw) e- BAND 1 (band.nw) f- DFT_CH2F2 1 (dft_ch2f2.nw) g- TCE_H2CO 1 (tce_h2co.nw) Benchmark CPU time Wall Clock time
+
+10. WRF The Weather Research & Forecasting Model (WRD) is a next-generation numerical weather prediction system designed to serve both operational and forecasting and atmospheric research needs. It has been developed in collaboration principally at the National Center for Atmospheric Research (NCAR), the National Oceanic and Atmospheric Administration (NOAA), the Air Force Weather Agency (AFWA), the Naval Research Laboratory, University of Oklahoma, and the Federal Aviation Administration (FAA). 22
+
+Testers will need to use version 3.3.1 of WRF which can be downloaded from http://www.mmm.ucar.edu/wrf/users/download/get_source.html. Two test cases will be used for WRF which are both on the same polar stereographic projection but at different resolutions of 9km and 3km. The input files are available as part of the ARSC WRF Benchmarking Suite at http://weather.arsc.edu/BenchmarkSuite Details for the required runs can be found at (http://dev.emsl.pnl.gov/capabilities/computing/msc/msc_benchmark).
+
+23
+
+
+
+
+
+
+
+
+
+ATTACHMENT 5
+
+
+
+
+
+SMALL BUSINESS AND SMALL DISADVANTAGED 
+
+BUSINESS SUBCONTRACTING PLAN
+
+
+
+
+
+
+SMALL BUSINESS SUBCONTRACTING PLAN
+
+
+
+Note: Fields will expand to accommodate information being entered.  
+
+The following, together with any attachments, is hereby submitted as a Subcontracting Plan to satisfy the applicable requirements of Public Law 95-507, and General Provision clause "Small Business Subcontracting Plan.”
+
+
+
+I. Subcontractor Goals
+
+	Total estimated dollars to be subcontracted (lower-tier subcontracting in direct execution of this subcontract) 
+
+	$      
+
+
+
+  	The following goals (expressed in terms of a percentage of total planned dollars and the corresponding dollar values) will be applicable for this Subcontracting Plan.   The offeror shall include all subcontracts that contribute to contract performance, and may include a proportionate share of products and services that are normally allocated as indirect costs.  Goals must be established for each category.  
+
+
+
+	Should circumstances arise that impact the approved subcontracting plan, immediate notification shall be provided to: 
+
+
+
+
+
+	*Note: the Small Business Percentage + the Large Business Percentage must = 100%.  The 5 
+
+socio-economic categories are counted in the Small Business Percentage. 
+
+
+
+
+
+
+
+
+
+II. Methods Used to Develop Goals
+
+
+
+	List methods used in developing subcontract goals:
+
+	Examples:
+
+The work scope for this subcontract was reviewed to establish potential materials and services which could be subcontracted.
+
+From the total estimate of potential subcontracted items, a list of those items which were candidates for small businesses was established.
+
+From the total estimate of potential subcontracted items to small business, a list of those items which could be subcontracted to small disadvantaged businesses, woman-owned businesses and HUBZone certified small businesses was established.
+
+
+
+
+
+The products and/or services to be subcontracted under the subcontract and the type of businesses utilized are shown on Attachment 1. Mandatory
+
+
+
+III. Administration of the Subcontracting Program
+
+
+
+The following individuals will administer the Subcontracting Program:
+
+
+
+
+
+
+
+The individual's specific responsibility for review, monitoring and execution of the Plan, include, but are not limited to:
+
+
+
+	A.	Oversees compliance with the content of this plan.
+
+	B.	Ensures that all subcontracts placed contain the latest provisions regarding small business utilization and Subcontracting Plan Requirements, as implemented by this plan, are being fulfilled by the subcontractors.
+
+	C.	Performs periodic audits of sub tier subcontracting plans to measure progress of goals and monitors attainment of goals under this subcontracting plan.
+
+	D.	Submits the Individual Subcontract Report (ISR) and/or the Summary Subcontract Report (SSR), in accordance with the Electronic Subcontracting Reporting System (eSRS) at  and any other periodic reports as requested.
+
+	E.	Participates in procuring, planning and selection of potential sources to ensure that small business and small disadvantaged business concerns are offered every opportunity to participate in the program.
+
+	F.	Coordinates and participates with the Small Business Administration and other groups to locate capable firms.
+
+	G. 	Ensures inclusion of small business, small disadvantaged business, veteran–owned small business, service-disabled veteran-owned small business, HUBZone small business, and woman-owned small business concerns in all solicitations.
+
+	H.	Removes statements, clauses, etc. from solicitations which may tend to prohibit small business, small disadvantaged business, veteran–owned small business, service-disabled veteran-owned small business, HUBZone small business, and woman-owned small business concerns participation.
+
+		Maintains records of small business, small disadvantaged business, veteran–owned small business, service-disabled veteran-owned small business, HUBZone small business, and woman-owned small business concerns' programs.
+
+	J.	Provides records and reports and fully cooperates in all studies and surveys as may be required by governmental regulations.
+
+	K. 	Provides a notice to subcontractors and remedies concerning penalties for misrepresentation of business status as small business or small disadvantaged business for the purpose of obtaining a subcontract that is to be included as part or all of a goal contained in the Subcontractor's Subcontracting Plan.
+
+
+
+IV. Outreach Efforts
+
+
+
+	The following outreach efforts will be taken to ensure that small and small disadvantaged business concerns will have an equitable opportunity to compete for subcontracts.  Efforts will be made as follows as a minimum:
+
+	A.	Distribution of company policies and procedures which implement the requirements of FAR 52.219-8 and FAR 52.219-9.
+
+	B.	Assignment by name of specific individuals to carry out the policies and procedures.
+
+	C.	Periodic review of progress made with regard to goals established by individual subcontracting plans
+
+	D.	Training and motivation of personnel to ensure their complete support of the plan.
+
+	E.	Provision for technical and management assistance to small business and small disadvantaged business concerns to ensure complete understanding of requirements.
+
+	F.	Provision for clear-cut and realistic technical specifications and delivery schedules to encourage maximum participation.
+
+	G.	Consideration of all available small business, small disadvantaged business, veteran–owned small business, service-disabled veteran-owned small business, HUBZone small business, and woman-owned small business concerns during the make/buy process.
+
+	H. 	Allowing special consideration to small and small disadvantaged business firms by preparing solicitations, allowing adequate time for preparation of bids, arranging specifications and delivery schedules to facilitate the participation of such firms.
+
+	I.	Where subcontracting opportunities exist, the following publications/sources will be used to search for capable firms:
+
+			
+
+		Examples:
+
+Procurement Marketing and Access network (Pro-Net), of the Small Business Administration
+
+Minority Business Enterprise, published by the Defense Logistics Agency
+
+Contractor Central Registration
+
+Trade Organizations
+
+Business development organizations
+
+Existing Company source lists
+
+
+
+	J. 	An outreach effort will be made to solicit the assistance of local, state, and federal offices, trade and manufacturing associations and labor organizations in identifying qualified firms.
+
+	K. 	Counsels and discusses subcontracting opportunities with representatives of small and small disadvantaged business firms.
+
+	L.	Every effort will be made by subcontractor to attend small, small disadvantaged, veteran–owned, service-disabled veteran-owned, HUBZone, and/or woman-owned small business procurement conferences, workshops, and trade fairs that are available in their specific region during the term of this subcontract.  Such as:
+
+
+
+IV. 	Lower-Tier Subcontracting
+
+
+
+	The Subcontractor agrees that the clause in the subcontract, "Utilization of Small Business Concerns " will be included in all subcontracts which offer further subcontracting opportunities, and that all subcontractors except small business concerns who receive subcontracts in excess of $650,000 ($1,500,000 for construction) will include FAR 52.219-8 entitled “Utilization of Small Business Concerns” and FAR 52.219-9 entitled “Small Business Subcontracting Plan,” and those subcontractors will be required to adopt and comply with subcontracting plans similar to this one.  Such plans will be reviewed by comparing them with the provisions of Public Law 95-507, and assuring that all minimum requirements of an acceptable subcontracting plan have been satisfied.  The acceptability of percentage goals shall be determined on a case-by-case basis depending on the supplies/services involved, the availability of potential small and small disadvantaged subcontracts, and prior experience.  Once approved and implemented, plans will be monitored through the submission of periodic reports, and/or, as time and availability of funds permit, periodic visits to subcontractor's facilities to review applicable records and subcontracting program progress.
+
+
+
+V.	Indirect Costs
+
+
+
+Were indirect costs included when establishing subcontracting goals?  Yes     No    
+
+If indirect costs were included then explain below by describing the method used to determine the proportionate share of indirect costs to be shared with small business concerns (including ANC and Indian Tribes); veteran-owned small business concerns; service-disabled veteran-owned small business concerns; HUBZone small business concerns; Small disadvantaged business concerns (including ANC and Indian  tribes); and woman-owned small business concerns. 
+
+
+
+
+
+
+
+VI.	Surveys
+
+
+
+	The Subcontractor agrees to fully cooperate in any request for information, studies or surveys that may be required by the customer or Government regulations.
+
+
+
+VII.	Reporting
+
+
+
+	The Subcontractor shall submit periodic reports so that the Government can determine the extent of compliance by the offeror with the subcontracting plan.  Specifically the Subcontractor shall submit electronically through , their Individual Subcontracting Report (ISR) on a semi-annual basis and upon contract completion in accordance with the schedule below:
+
+
+
+		October 1 through March 31	Due by April 30
+
+		April 1 through September 30	Due by October 31
+
+
+
+The Subcontractor shall submit electronically through , their Summary Subcontracting Report (SSR) on an annual basis and upon contract completion due on October 31 and covering the period from subcontract inception through the end of the current fiscal year.
+
+		
+
+	Final Reports are due 25 days after expiration of contract or current budget period.  All reports must be sent directly to the Battelle Small Business Program Manager.
+
+
+
+Information needed for subcontractors to create ISR/SSR:
+
+		submit ISR as:		“subcontractor”
+
+Prime Contract#: 	DE-AC05-76RL01830
+
+Higher-tier DUNS#:	032987476 
+
+Approver: 		
+
+	
+
+	Subcontractor will ensure that its lower-tier subcontractors agree to submit their ISR and SSR in accordance with the instructions above.  Subcontractor will provide its prime contract number, its DUNS number, and the e-mail address of the Government or Contractor official responsible for acknowledging or rejecting the reports, to all first-tier subcontractors with subcontracting plans so they can enter this information into eSRS when submitting their reports.
+
+
+
+VIII.	Records to Document Compliance
+
+
+
+	The Subcontractor will maintain the records to demonstrate procedures have been adopted to comply with the requirements and goals in this plan, including establishing source lists and a description of its efforts to locate small business concerns and to fulfill the goals contained within this Subcontracting Plan.
+
+
+
+	The records shall include at least the following:
+
+
+
+	A.	Source lists, guides, and other data that identify small, small disadvantaged business, veteran–owned small business, service-disabled veteran-owned small business, HUBZone small business, and woman-owned small business concerns
+
+	B. 	Correspondence and invitations to small, small disadvantaged business, veteran–owned small business, service-disabled veteran-owned small business, HUBZone small business, and woman-owned small business concerns business firm to submit bids.
+
+	C.	Organizations contacted in an attempt to locate sources that are small, small disadvantaged business, veteran–owned small business, service-disabled veteran-owned small business, HUBZone small business, and woman-owned small business concerns business concerns.
+
+	D.	Records on each lower-tier subcontract solicitation resulting in an award of more than $100,000, indicating – 
+
+Whether small business concerns were solicited and if not, why not; whether small disadvantaged business concerns were solicited and if not, why not; whether small veteran-owned and service-disabled veteran-owned business concerns were solicited and if not, why not; whether HUBZone business concerns were solicited and if not, why not; and if applicable, the reason award was not made to a small business concern.
+
+	E.	Records of any outreach efforts to contact (1) trade associations; (2) business development organizations; and (3) conferences and trade fairs to locate small, small disadvantaged, woman-owned, veteran-service organizations, and HUBZone business sources.
+
+	F.	Records of internal guidance and encouragement provided to buyers through (1) workshops, seminars, training, etc., and (2) monitoring performance to evaluate compliance with the program's requirements.
+
+    	G.	On a Subcontract-by-Subcontract basis, records to support award data submitted by the offeror to the prime contractor, including the name, address and business size of each lower-tier subcontractor.  
+
+
+
+
+
+Printed Name:       
+
+
+
+Signature:                                                               	         
+
+
+
+Title:       
+
+
+
+Date:       
+
+
+
+
+
+Plan Accepted By:
+
+
+
+
+
+Signature:                                                              	 
+
+                          Battelle Small Business Program Manager
+
+
+
+Date:                                     	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ATTACHMENT 1 TO SUBCONTRACTING PLAN
+
+
+
+Battelle Contract Number       
+
+
+
+PROBABLE SUBCONTRACT/PROCUREMENT SOURCES
+
+
+
+
+
+**     *
+
+ 	Signature                                                                                    Date   ___________________                                                                           
+
+
+
+
+
+Date
+
+     
+
+     
+
+     
+
+                    Battelle Contracts Representative ____________________________
+
+                    Battelle Contracts Representative ____________________________
+
+                    Battelle Contracts Representative ____________________________
+
+                    Battelle Contracts Representative ____________________________
+
+Contractor
+
+Contractor
+
+Contractor
+
+     
+
+     
+
+     
+
+     
+
+     
+
+Address
+
+Address
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+
+
+Battelle Contract # 
+
+
+
+Battelle Contract # 
+
+
+
+Battelle Contract # 
+
+     
+
+     
+
+     
+
+Total Contract Value
+
+$      
+
+Description of Item/Service
+
+Description of Item/Service
+
+Description of Item/Service
+
+Description of Item/Service
+
+Description of Item/Service
+
+     
+
+     
+
+     
+
+
+
+Battelle Contracts Representative
+
+     
+
+Tel. No. 
+
+     
+
+Battelle Small Business Program Manager
+
+Kerry Bass (kerry.bass@pnnl.gov)
+
+Tel. No.
+
+509 371-7526
+
+
+
+BUSINESS CLASSIFICATION
+
+AMOUNT
+
+PERCENTAGE
+
+Small Business (SB)	
+
+$      
+
+     
+
+Small Disadvantaged Business (SDB)
+
+$      
+
+     
+
+Woman Owned Business (WOB)
+
+$      
+
+     
+
+HUBZone Business (HUB)
+
+$      
+
+     
+
+Veteran-Owned Small Business (VOSB)
+
+$      
+
+     
+
+Service-Disabled VOSB
+
+$      
+
+               
+
+Large Business
+
+$      
+
+     
+
+TOTAL SUBCONTRACT AMOUNT
+
+$      
+
+100%
+
+
+
+Method 1
+
+
+
+
+
+Method 2
+
+
+
+
+
+Method 3
+
+
+
+
+
+
+
+     Name:
+
+     
+
+     
+
+     
+
+     
+
+     
+
+Address:
+
+Address:
+
+Address:
+
+     
+
+     
+
+     
+
+E-mail:
+
+E-mail:
+
+     
+
+     
+
+     
+
+     
+
+Telephone:
+
+Telephone:
+
+Telephone:
+
+Telephone:
+
+     
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+Alternate Contact:
+
+Alternate Contact:
+
+Alternate Contact:
+
+Alternate Contact:
+
+Alternate Contact:
+
+
+
+Name:
+
+     
+
+     
+
+     
+
+     
+
+     
+
+Telephone:
+
+Telephone:
+
+Telephone:
+
+Telephone:
+
+     
+
+     
+
+E-mail:
+
+E-mail:
+
+     
+
+     
+
+     
+
+     
+
+
+
+Publications/sources used: 
+
+
+
+Examples of events visited: 
+
+
+
+Explanation:  
+
+
+
+DESCRIPTION
+
+SUPPLIER SOURCE
+
+ESTIMATED DOLLARS
+
+
+
+SB
+
+
+
+SBD
+
+
+
+WOB
+
+
+
+HUB
+
+VOSB
+
+
+
+
+
+SDVOSB
+
+
+
+LG
+
+     
+
+     
+
+$      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+     
+
+$      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+     
+
+$      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+     
+
+$      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+     
+
+$      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+     
+
+$      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+     
+
+$      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$        TOTAL*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ATTACHMENT 5 (page 1)
+Capital Lease to Own
+System Description: Payment Month Maintenance Lease Payment Total Monthly Payment Remaining Principle Amount (Buyout in lieu of Lease Payment)
+Lease & Maintenance for first two years 10500000.0
+Example assuming the system is delivered and accepted 6 months after award and value is $12 million 1.0 25000.0 437500.0 462500.0 10062500.0
+  2.0 25000.0 437500.0 462500.0 9625000.0
+3.0 25000.0 437500.0 462500.0 9187500.0
+4.0 25000.0 437500.0 462500.0 8750000.0
+5.0 25000.0 437500.0 462500.0 8312500.0
+6.0 25000.0 437500.0 462500.0 7875000.0
+7.0 25000.0 437500.0 462500.0 7437500.0
+8.0 25000.0 437500.0 462500.0 7000000.0
+9.0 25000.0 437500.0 462500.0 6562500.0
+10.0 25000.0 437500.0 462500.0 6125000.0
+11.0 25000.0 437500.0 462500.0 5687500.0
+12.0 25000.0 437500.0 462500.0 5250000.0
+Options 1 and 2 for Maintenance (Lease continues for 2 years) Payment Month Maintenance  Lease Payment Total Monthly Payment Remaining Principle Amount (Buyout in lieu of Lease Payment)
+13.0 25000.0 437500.0 462500.0 4812500.0
+14.0 25000.0 437500.0 462500.0 4375000.0
+15.0 25000.0 437500.0 462500.0 3937500.0
+16.0 25000.0 437500.0 462500.0 3500000.0
+17.0 25000.0 437500.0 462500.0 3062500.0
+18.0 25000.0 437500.0 462500.0 2625000.0
+19.0 25000.0 437500.0 462500.0 2187500.0
+20.0 25000.0 437500.0 462500.0 1750000.0
+21.0 25000.0 437500.0 462500.0 1312500.0
+22.0 25000.0 437500.0 462500.0 875000.0
+23.0 25000.0 437500.0 462500.0 437500.0
+24.0 25000.0 437500.0 462500.0
+Total Payments 600000.0 10500000.0 11100000.0
+Options 4 and 5 Payment Month Maintenance 
+25.0 25000.0
+26.0 25000.0
+27.0 25000.0
+28.0 25000.0
+29.0 25000.0
+30.0 25000.0
+31.0 25000.0
+32.0 25000.0
+33.0 25000.0
+34.0 25000.0
+35.0 25000.0
+36.0 25000.0
+Total 300000.0
+ 
+Options 7 and 8 Payment Month Maintenance 
+37.0 25000.0
+38.0 25000.0
+39.0 25000.0
+40.0 25000.0
+41.0 25000.0
+42.0 25000.0
+43.0 25000.0
+44.0 25000.0
+45.0 25000.0
+46.0 25000.0
+47.0 25000.0
+48.0 25000.0
+Total 300000.0
+Options 10 and 11 Payment Month Maintenance 
+49.0 25000.0
+50.0 25000.0
+51.0 25000.0
+52.0 25000.0
+53.0 25000.0
+54.0 25000.0
+55.0 25000.0
+56.0 25000.0
+57.0 25000.0
+58.0 25000.0
+59.0 25000.0
+60.0 25000.0
+Total 300000.0
+ATTACHMENT 5 (page 2)
+Operating Lease
+System Description: Payment Month Maintenance Lease Payment Total Monthly Payment
+Example assuming the system is delivered and accepted 6 months after award and total 5 year value is $12 million 1.0 25000.0 325000.0 350000.0
+  2.0 25000.0 325000.0 350000.0
+3.0 25000.0 325000.0 350000.0
+4.0 25000.0 325000.0 350000.0
+5.0 25000.0 325000.0 350000.0
+6.0 25000.0 325000.0 350000.0
+7.0 25000.0 325000.0 350000.0
+8.0 25000.0 325000.0 350000.0
+9.0 25000.0 325000.0 350000.0
+10.0 25000.0 325000.0 350000.0
+11.0 25000.0 325000.0 350000.0
+12.0 25000.0 325000.0 350000.0
+Total Payments 300000.0 3900000.0 4200000.0
+Operating Lease (continued)
+Option 3 Payment Month Maintenance  Lease Payment Total Monthly Payment
+13.0 25000.0 325000.0 350000.0
+14.0 25000.0 325000.0 350000.0
+15.0 25000.0 325000.0 350000.0
+16.0 25000.0 325000.0 350000.0
+17.0 25000.0 325000.0 350000.0
+18.0 25000.0 325000.0 350000.0
+19.0 25000.0 325000.0 350000.0
+20.0 25000.0 325000.0 350000.0
+21.0 25000.0 325000.0 350000.0
+22.0 25000.0 325000.0 350000.0
+23.0 25000.0 325000.0 350000.0
+24.0 25000.0 325000.0 350000.0
+Total  300000.0 3900000.0 4200000.0
+ 
+Option 6 Payment Month Maintenance  Lease Payment Total Monthly Payment
+25.0 25000.0 75000.0 100000.0
+26.0 25000.0 75000.0 100000.0
+27.0 25000.0 75000.0 100000.0
+28.0 25000.0 75000.0 100000.0
+29.0 25000.0 75000.0 100000.0
+30.0 25000.0 75000.0 100000.0
+31.0 25000.0 75000.0 100000.0
+32.0 25000.0 75000.0 100000.0
+33.0 25000.0 75000.0 100000.0
+34.0 25000.0 75000.0 100000.0
+35.0 25000.0 75000.0 100000.0
+36.0 25000.0 75000.0 100000.0
+Total  300000.0 900000.0 1200000.0
+Option 9 Payment Month Maintenance  Lease Payment Total Monthly Payment
+37.0 25000.0 75000.0 100000.0
+38.0 25000.0 75000.0 100000.0
+39.0 25000.0 75000.0 100000.0
+40.0 25000.0 75000.0 100000.0
+41.0 25000.0 75000.0 100000.0
+42.0 25000.0 75000.0 100000.0
+43.0 25000.0 75000.0 100000.0
+44.0 25000.0 75000.0 100000.0
+45.0 25000.0 75000.0 100000.0
+46.0 25000.0 75000.0 100000.0
+47.0 25000.0 75000.0 100000.0
+48.0 25000.0 75000.0 100000.0
+Total  300000.0 900000.0 1200000.0
+Option 12 Payment Month Maintenance  Lease Payment Total Monthly Payment
+49.0 25000.0 75000.0 100000.0
+50.0 25000.0 75000.0 100000.0
+51.0 25000.0 75000.0 100000.0
+52.0 25000.0 75000.0 100000.0
+53.0 25000.0 75000.0 100000.0
+54.0 25000.0 75000.0 100000.0
+55.0 25000.0 75000.0 100000.0
+56.0 25000.0 75000.0 100000.0
+57.0 25000.0 75000.0 100000.0
+58.0 25000.0 75000.0 100000.0
+59.0 25000.0 75000.0 100000.0
+60.0 25000.0 75000.0 100000.0
+Total  300000.0 900000.0 1200000.0
+
+
+*  Proposed lease payment schedules must be submitted in the formats shown in Attachment 5, Sample Lease Payment Schedules.  (If the sample schedules are provided electronically by Battelle, Offerors should not rely on the accuracy of the formulas contained in the sample schedules when submitting proposals.) 
+
+
+
+In addition to the above Price Proposal Form, you are required to provide a full price breakdown (items, descriptions, quantities, unit prices, etc.) for the HPCS-4 System you are offering.  This breakdown will be used, among other things, to evaluate the affordability factors as listed in Section C, Evaluation Criteria for Award, to evaluate other pricing factors in the tradeoff process during evaluation and so forth.  Specific areas of breakdown that are mandatory are as follows:
+
+
+
+Price for the shared, high performance parallel file system (Technical Requirements Section 11. M-11.3, M-11.4, M-11.5, M-11.6, etc.), with detail including the cost of a single discrete server/storage unit
+
+Price per Compute Node (definition of "Compute Node" shall be provided by Offeror in Offeror's technical proposal)
+
+Price per Compute Node Memory Upgrade 
+
+Price per Compute Node Processor Upgrade
+
+Price for interconnect, including costs/prices/quantities of switches and cabling (all components)
+
+Software
+
+Documentation and Training
+
+Price for delivery, installation and acceptance
+
+
+
+
+
+
+
+
+
+
+Note: 	Taking any exception to the provisions in Section I, or any other terms and conditions of the RFP, could negatively impact Battelle’s overall evaluation, to the extent that your proposal could be rendered non-responsive, removing your proposal from further award consideration. 
+
+
+
+
+
+Contract Pricing Scenarios
+
+Purchase
+
+Operating Lease*
+
+Lease-to-Own*
+
+HPCS-4 System, including delivery, installation, acceptance 
+
+ 
+
+Submit Attached Monthly Payment Schedule (Months 1-12)
+
+Submit Attached Monthly Payment Schedule (Months 1-12)
+
+Total Lease Payments (Months 1-12)
+
+ 
+
+ 
+
+ 
+
+Total Hardware Maintenance, Year 1 (Enter $0 if covered by 1 year warranty)
+
+ 
+
+ 
+
+ 
+
+Total Software Maintenance, Year 1 (Enter $0 if covered by 1 year warranty)
+
+
+
+
+
+
+
+
+
+OPTIONS
+
+
+
+OPTIONS
+
+
+
+
+
+YEAR 2
+
+Purchase
+
+Operating Lease
+
+Lease-to-Own
+
+Option 1: Hardware Maintenance (Months 13-24) (Enter $0 if covered by warranty) 
+
+ 
+
+ 
+
+ 
+
+Option 2:  Software Maintenance (Months 13-24)
+
+
+
+
+
+
+
+Option 3: Operating Lease Extension (Months 13-24)
+
+ 
+
+ 
+
+ 
+
+YEAR 3
+
+Purchase
+
+Operating Lease
+
+Lease-to-Own
+
+Option 4: Hardware Maintenance  (Months 25-36) (Enter $0 if covered by warranty)
+
+ 
+
+ 
+
+ 
+
+Option 5:  Software Maintenance (Months 25-36)
+
+
+
+
+
+
+
+Option 6: Operating Lease Extension (Months 25-36)
+
+ 
+
+ 
+
+ 
+
+YEAR 4
+
+Purchase
+
+Operating Lease
+
+Lease-to-Own
+
+Option 7: Hardware Maintenance (Months 37-48)
+
+ 
+
+ 
+
+ 
+
+Option 8:  Software Maintenance (Months 37-48)
+
+
+
+
+
+
+
+Option 9: Operating Lease Extension (Months 37-48)
+
+ 
+
+ 
+
+ 
+
+TOTAL AGGREGATE SYSTEM PRICE (TASP)
+
+(Not to exceed $12 million)
+
+ 
+
+ 
+
+ 
+
+YEAR 5
+
+Purchase
+
+Operating Lease
+
+Lease-to-Own
+
+Option 10: Hardware Maintenance  (Months 49-60)
+
+ 
+
+ 
+
+ 
+
+Option 11:  Software Maintenance (Months 49-60)
+
+
+
+
+
+
+
+Option 12: Operating Lease Extension (Months 49-60)
+
+ 
+
+ 
+
+ 
+
+
+
+OFFEROR’S SIGNATURE:
+
+
+
+
+
+
+
+Company
+
+
+
+Signature of Authorized Representative
+
+Date
+
+
+
+
+
+Typed/Printed Name
+
+
+
+
+
+
+
+Title
+

@@ -1,0 +1,648 @@
+Solicitation S5121A-12-Q-0011 Attachment 1
+
+Technical Specifications ITSM Service Desk DCMA requires software to support the management of Service Desk incidents and problems, including installation and system configuration services, training, and warranty support. Description of Required Supplies & Services Service Desk Suite Service Desk Suite Maintenance Service Desk Software (Concurrent User) Service Desk Software (Concurrent User) Maintenance Service Desk Software (Named User) Service Desk Software (Named User) Maintenance Incident Management Software (Concurrent User) Incident Management Software (Concurrent User) Maintenance Incident Management Software (Named User) Incident Management Software (Named User) Maintenance Problem Management Software (Concurrent User) Problem Management Software (Concurrent User) Maintenance Problem Management Software (Named User) Problem Management Software (Named User) Maintenance Analytics Reporting Tool (Concurrent) Analytics Reporting Tool (Concurrent) Maintenance Training Days Installation Services (On-Site @ DCMA Columbus, OH) Installation Services (Remote Installation, Boston, MA) Installation Services (Remote Installation, Carson, CA) Travel 1. Minimum Specifications
+
+The Contractor shall meet or exceed specifications described below. Each item must be addressed. Supplementary specifications are highly desirable but their exclusion does not disqualify a proposal. As described in the following sections, the following modules are required as part of the minimum solution: 1) 2) 3) 4) 5) Service Desk Incident Management Self-Service Problem Management Analytics Reporting Tool
+
+1 OF 12
+
+Solicitation S5121A-12-Q-0011 Attachment 1
+
+1.1.1
+
+Run-time System Configuration
+
+The Service Desk solution will be installed at three DCMA locations: 1) Carson, CA Production 2) Boston, MA Production 3) Columbus, OH Application Test Center One production license is expected for the entire solution. Of the two production centers, one will be active, the other standby. All data and configuration settings will periodically be replicated from the active system to the stand-by system and the active/standby status swapped between the two systems. The Columbus Test Center installation will be activated as necessary in order to provide a safe production replica environment for testing, troubleshooting, and verification of changes destined for the production environment. 1.1.2 Service Desk and General System Specifications
+
+The following specifications apply to the system as a whole and include the base Service Desk solution. Feature Service Desk Core Features Platform Minimum Specifications Solution shall provide means to track user requests (by phone, selfservice, or email) to Service Desk. Solution shall provide statistical reporting on user requests. Solution shall be supported as a virtual machine on VMware vSphere 4.0+. Solution shall have installation binaries available for Windows Server 2008 R2 Standard Edition, Red Hat Enterprise Linux 5 (64-bit), or be made available as a purpose-built virtual appliance that can be imported into the existing infrastructure to meet all technical and functional requirements. Agents Solution shall not require agents to be installed on the target network or any of its connected components in order to perform core Service Desk functionality. Where agents are required (see "Agents" requirements in other sections, below): Solution shall provide timely & reliable notification of agent status to the management server. Agent failure notification shall be communicated via SMTP or SNMP.
+
+2 OF 12
+
+Solicitation S5121A-12-Q-0011 Attachment 1
+
+Feature Integration
+
+Minimum Specifications Solution shall provide integration with base ITSM solution for all major ITSM Modules (i.e., Incident Management, Problem Management, Asset Management, Change Management, and Release Management). Solution shall provide an integration path between the base ITSM solution and common Configuration Management, Mapping and Discovery solutions. Solution shall have a single federated CMDB as described in the ITIL v3 standards. (CMDB provided with the solution shall allow for the writing of metadata by other 3rd party applications) Solution shall provide proper authorization and control over CMDB data. Data/Metadata populated to the CMDB by any means shall be available to all modules within ITSM. Solution shall be able to export reports into external formats i.e. HTML, CSV, PDF, XML, etc. Solution shall provide ability to e-mail/export reports on a scheduled basis. Reporting interface shall provide mechanism to customize views by user or groups. All GUIs shall exhibit quick response times for all functions. Solution shall provide out-of-the-box policies based on ITIL v3 standards. Solution shall provide manually activated backup and recovery for all settings. Backup procedure shall require a simple operation to create a comprehensive backup archive of all configuration settings. Restore procedure shall require a simple operation to restore all settings from a saved backup archive. Solution shall accommodate replication of all data by DCMA so as to support active/standby configuration. No failover functionality is required, however, solution shall allow for the use of a single common configuration between the active and standby system. No site-specific data shall be required so as to interfere with a replicated system's functionality. Solution shall supply reports providing an audit trail for all changes to access controls made in the system. Solution shall capture to an audit logging facility all administrative activities, all errors and alerts, and all failure and restart events.
+
+Configuration Management Database (CMDB)
+
+Reporting
+
+GUI ITIL Compliance Backup/Restore
+
+Fault Tolerance & Disaster Recovery
+
+Auditing
+
+3 OF 12
+
+Solicitation S5121A-12-Q-0011 Attachment 1
+
+Feature Enterprise SNMP Monitoring Security
+
+Minimum Specifications Solution shall easily integrate with CA Spectrum or System Edge monitoring systems. System shall support SNMP public and private communities. Solution shall supply a single administration interface to manage roles and permissions across the entire solution. Solution shall support strong passwords of no less than 15 characters as per DoD policy. Solution shall integrate with existing Common Access Card (CAC) authentication process on both the web and client interface. Solution shall support ability to setup groups with role-based permissions according to DCMA's real-world organization. System shall accommodate all necessary custom extensions to core product functionality provided by vendor to meet DCMA requirements for all foreseeable system upgrades during the lifetime of the product. All system APIs required by scripts or vendorsupplied extensions in order to meet DCMA requirements shall be fully supported by vendor under contractual obligation that is equivalent to the vendor's contractual obligation for their core product. Administration and operation of the system solution shall be 100% documented.
+
+Programming API and Vendor Custom Extensions--System Upgrades, Warranty, and Support
+
+Documentation
+
+1.1.3
+
+Required Module: Incident Management
+
+Incident Management is required as part of the Service Desk solution. Feature Incident Management Core Features Minimum Specifications Solution shall provide a process for Incident detection and recording. Solution shall provide a process to identify the classification and priority of support required. Solution shall provide a process for Incident investigation and diagnosis. Solution shall provide a process for Incident resolution and recovery. Solution shall provide a means to link or retrieve similar Incidents. Solution shall provide search and browse tools for incidents by keyword, category, and date/time of occurrence. Solution shall provide means for obtaining statistical reports related to Incidents.
+
+Search/Browsing Reporting
+
+4 OF 12
+
+Solicitation S5121A-12-Q-0011 Attachment 1
+
+Feature Information Tracking
+
+Minimum Specifications Solution shall capture the following information for each Incident: ˇ Description of Incident ˇ User contact information ˇ Other contacts ˇ Date/time of actual Incident ˇ Date/time of Incident record creation ˇ Troubleshooting commentary from initiating user and any personnel working on resolution, and all communication relating to Incident ˇ Linked Problem record (if any) ˇ Category, keywords ˇ Resolution status Solution shall not require agents to be installed on the target network or any of its connected components in order to perform Incident Management functionality. Solution shall allow for monitoring changes on specific incidents or groups. Solution shall allow creation of monitoring filters based DCMA defined criteria. Solution shall provide tools for customer feedback for each incident, including statistical reporting.
+
+Agents
+
+Monitoring Filters
+
+Customer Survey Function
+
+1.1.4
+
+Required Module: Self-Service Incident Management
+
+Self-Service Incident Management is required as part of the Service Desk solution. Feature Self-Service Incident Management Core Features Minimum Specifications Solution shall provide a process for Incident recording. Solution shall provide a process to classify and prioritize Incidents. Solution shall provide a means to attach documents to the Incident. Solution shall provide a process for Incident (status) tracking. Solution shall provide a process for Incident closure.
+
+5 OF 12
+
+Solicitation S5121A-12-Q-0011 Attachment 1
+
+1.1.5
+
+Required Module: Problem Management
+
+Problem Management is required as part of the Service Desk solution. Feature Problem Management Core Features Minimum Specifications Solution shall have the ability to align Problem Management Policies, Processes and Procedures as described in the ITIL v3 standards. Solution shall provide Root Cause Analysis based on Incident and CI Metadata. Solution shall provide Problem and trend analysis. Solution shall provide search and browse tools for problems by keyword and category. Solution shall not require agents to be installed on the target network or any of its connected components in order to perform Problem Management functionality. Solution shall provide means for obtaining statistical reports related to Problems. Solution shall capture the following information for each Problem: ˇ Description of Problem ˇ Contact information for multiple contacts ˇ Date/time of Problem record creation ˇ Troubleshooting commentary from initiating user and any personnel working on resolution, and all communication relating to Problem ˇ Linked Incident records (if any) ˇ Category, keywords ˇ Resolution status
+
+Search/Browsing Agents
+
+Reporting Information Tracking
+
+1.1.6 Required Module: Analytics Reporting Tool
+Analytics Reporting Tool is required as part of the Service Desk solution. Feature Analytics Reporting Tool Core Features Minimum Specifications Solution shall provide a reporting tool to develop, execute, and automate reporting. Solution shall include `quick-look' or `dashboard' reports in addition to existing canned or developed reports. Solution shall provide a means to export reports. Solution shall provide a means to automate distribution of reports. Solution Shall a means for measuring and tracking Service Level Agreement (SLA) compliance.
+
+6 OF 12
+
+Solicitation S5121A-12-Q-0011 Attachment 1
+
+2
+
+Installation Services
+
+The proposed solution should include professional services to assist with the design, documentation, installation, configuration, testing, and production deployment of the vendor's proposed solution. The contractor will install the software to include smart card integration within 90 days after contract award. Installation is required for Columbus, OH, Boston, MA, and Carson, CA. The contractor shall provide installation services as described below and in the performance expectations and standards: a. Manage the installation and configuration through a central project manager. The contractor will designate a central PM for the installation. The central project manager shall provide an installation schedule within 30 calendar days of order award and will coordinate with DCMA and be available for resolving deployment issues. During the deployment effort the central project manager will report on progress made on a weekly basis. Performance Objective: Delivery/Installation/Configuration is performed as planned and executed so as to minimize disruption (not to exceed one business day) to the DCMA workforce. Performance Standard: Contractor meets or exceeds 95% of all scheduled dates Method of Surveillance: Review of weekly report. b. Complete delivery of any necessary software within two days of scheduled delivery and not greater than 10 calendar days prior to installation. Performance Objective: Delivery as scheduled. Performance Standard: Deliver all software within the requirement parameters and within 45 days of contract award. Method of Surveillance: Review of weekly report. c. Installation of software includes working with DCMAIT personnel to define underlying operating system (OS) requirements and installation of enterprise management software and configuration for use. DCMA uses VMware ESX virtualization and all software will be installed on a guest virtual machine in the ESX environment or provided as a vendor supplied appliance. Supported OSs are Windows Server 2003, 2008, and 2008 R2 (Standard, Enterprise and Datacenter), and Red Hat Linux Enterprise Server 4 and 5.
+
+Performance Objective: Installation/Configuration is performed as planned so as to minimize disruption to the DCMA workforce. Performance Standard: Install and configure all enterprise management equipment or management software according to schedule, within 150 days of order award. Performance Standard: Systems work to meet the minimum specifications described above. Method of Surveillance: Government test after completion.
+
+7 OF 12
+
+Solicitation S5121A-12-Q-0011 Attachment 1
+
+3
+
+Training Services The contractor shall provide the Operational and Administrative training to DCMA personnel. All training shall be listed in days. a. Operational Training: The contractor will provide 5 days of operational training to Service Desk personnel located in Columbus Oh. Training should be conducted on-site for up to 30 personnel. Web based training shall be available as refresher training and for training new operational personnel. The on-site training shall be completed within 90 days of contract award. b. Administrative Training: The contractor will provide 5 days of Administrative training to Service Desk personnel located in Columbus Oh. Training should be conducted on-site for up to 5 personnel. Web based training shall be available as refresher training and for training new administrative personnel. The on-site training shall be completed within 90 days of contract award.
+
+4
+
+Deliverables The contractor shall ensure the following deliverables are provided to the Government: A0001: Weekly Activity Report delivered to the COTR and DCMA Project Manager by email NLT 8:00 PM EST, every Friday until final acceptance. A0002: Software Licenses for all Service Desk software within 30 calendar days of contract award A0003: Participate in joint weekly planning meeting (by phone/web) within 10 calendar days of contract award. A0004: Project Plan ­ The contractor must provide to COTR within 30 days of contract award. A0005: Documentation a. System Design Document ­ within 90 days. b. Installation Instructions ­ within 90 days after contract award. c. Operations Guide ­ within 90 days after contract award. A0006: Service Desk deployed and functional within 90 days after contact award. A0007: Operational Training: On-site training or Web based training: Within 90 days after contract award. A0008: Administrative Training: On-site training: Within 90 days after contract award.
+
+5
+
+Place of Performance
+
+The on-site installation to be performed under this contract shall be performed at the DCMA Columbus, OH. Installation at the Boston, MA and Carson, CA locations will be performed remotely. Exact addresses will be provided at the time of award. The contractor shall not perform any work on a government site without prior coordination from the Contracting Officers Technical Representative (COTR).
+
+8 OF 12
+
+Solicitation S5121A-12-Q-0011 Attachment 1
+
+6
+
+Security Requirements
+
+Contractor personnel performing Installation/Configuration must have an ADP level II clearance. All contractors that will be performing Installation/Configuration services or tasks that require access to a government data system must have a valid Common Access Card (CAC). This contract requires contractors(s) to be eligible to receive a CAC to access DCMA Automated Information Systems. Assignment of an ADP Level II requires favorable adjudication as stated in DoD 5200.2R. The contractor will provide sufficient documentation through their Security Office to the DCMA Security Office to show favorable adjudication of required investigations. The contractor will provide name, SSN, and security clearance information for all assigned personnel to show favorable adjudication of required investigations for contractor personnel assigned to perform this function at least 30 days prior commencement of work. Contractor personnel will be briefed in accordance with DCMA security policies, given a security awareness exam, and briefed on proper disposition of their passwords if issued. Mr. Gene Campbell. Clayborn.Campbell@dcma.mil (703) 428-0952 DCMA IT uses the Joint Personnel Adjudication Environment (JPAS) to verify clearances. JPAS uses a centralized database with centralized computer processing and application programs for standardized DoD personnel security processes. Contractors have access to JPAS to request and maintain security clearances for their personnel. New investigative requests will be submitted by the contractor through the Joint Personnel Adjudication Environment (JPAS). https://www.dss.mil/GW/ShowBinary/DSS/diss/jpas/jpas.html. DCMAIT-K will make every effort to confirm the clearance of contractors not in JPAS, however timely results are not common and delays would not be considered a reason for a Government caused delay. Sharing or common use of DCMA user identifications and passwords is strictly prohibited. The contractor shall be responsible for safeguarding all government equipment, information and property provided for contractor use. At the close of each work period, government facilities, equipment, and materials shall be secured. The contractor shall establish and implement methods of making sure all keys/key cards issued to the contractor by the Government are not lost or misplaced and are not used by unauthorized persons. 7 Other Requirements a. Ship software to: Configuration Management Center ATTN: Denise Spillman 18901 S. Wilmington Ave. Bldg DH2 Carson, CA 90746-2856 310-900-6559 Denise.Spillman@dcma.mil
+
+9 OF 12
+
+Solicitation S5121A-12-Q-0011 Attachment 1
+
+Vendor shall prepare a Software Description Summary (Appendix A) and attach it as well as an electronic version of the Licensing agreement to the Invoice. Please note: an invoice not including accurate information will be rejected as incomplete. b. Travel/Temporary Duty (TDY) The Government will reimburse for all other approved travel. All travel requirements (including plans, agenda, itinerary, or dates) shall be approved prior to travel by the Contracting Officers Technical Representative (COTR) in accordance with clause 52.231-9000, Travel Authorization Requirements on a cost reimbursement basis and may only be conducted if funding is available on the contract. Contractor travel must comply with the Joint Travel Regulation (JTR), as applicable. Contractors cannot use GSA city pair contracts. c. Safeguarding Government Equipment, Information and Property The contractor shall be responsible for safeguarding all government equipment, information and property provided for contractor use. At the close of each work period, government facilities, equipment, and materials shall be secured. The contractor shall establish and implement methods of making sure all keys/key cards issued to the contractor by the Government are not lost or misplaced and are not used by unauthorized persons. d. Site Maintenance and Storage The contractor shall keep the work site in a clean and orderly manner. All equipment, materials and supplies shall be stored so as to maintain a secure and safe work site. The contractor shall provide, and is responsible for, any security needs required to protect equipment, materials, and supplies required under this TECHNICAL SPECIFICATION. e. Liability The contractor shall be held responsible for any and all property damage that may occur in conjunction with performance of this TECHNICAL SPECIFICATION. This includes but is not limited to damage such as holes, scrapes, marks, stains, etc. to walls and/or ceilings, flooring (i.e. Carpet, tile, wood, laminate, etc.), furniture, equipment, etc. The U.S. Government or its representatives shall not be liable for any damages, either to the environment or property, as a result of the contractor's work. f. Safety
+
+The contractor is solely responsible for compliance with all federal, state and local laws, the Occupational, Safety and Health Act (OSHA) (Public Law 91-596) and the resulting standards, OSHA Standards 29 CFR 1910 and 1926, as applicable, and the protection of their employees. Additionally, the contractor is responsible for the safety and health of any and all subcontractor employees. The contractor shall ensure assigned personnel are adequately trained and qualified for the task being performed. All contractor and subcontractor personnel shall be briefed and training on the hazards involved with operations and applicable precautions to be taken. Should unidentified hazards arise, cease operations and immediately contact the COTR. The contractor is fully responsible for performing routine and recurring surveillance of the work site and work being performed to ensure the safety of their employee's and the safety of the work environment.
+
+10 OF 12
+
+Solicitation S5121A-12-Q-0011 Attachment 1
+
+g. Mishap Notification The contractor shall notify the COTR within one (1) hour of all mishaps or incidents at or exceeding $500 (material + labor) in damage to DoD property entrusted by this BPA. This notification requirement shall also include physiological mishaps and incidents. A written or email copy of the mishap/incident notification must be submitted to the COTR within three calendar days of the event. Mishap notifications, CDRL A0004, shall contain, at a minimum, the following information: 1) 2) 3) 4) 5) 6) 7) 8) BPA Delivery Order Number name and title of the person(s) reporting Date, time and exact location of the accident/incident Brief narrative of accident/incident (events leading to accident/incident) Cause of accident/incident, if known Estimated cost of accident/incident (material and labor to repair/replace) Nomenclature of equipment and personnel involved in accident/incident Corrective actions (taken and proposed) Any alternate pertinent information
+
+The contractor shall cooperate with any and all government mishap investigations. h. Other Direct Costs (ODCs) The Contractor is not authorized to charge ODCs related to this task.
+
+11 OF 12
+
+Solicitation S5121A-12-Q-0011 Attachment 1
+
+Appendix A - Software Description Summary Instructions: DCMA loads this information into its system for tracking software. Please complete/update the information in Blue. At a minimum there should be one product description for each CLIN in the contract or manufacturer's part number. POC for completion of this document is Denise Spillman Denise.Spillman@dcma.mil. Contract: Contract# Order: Order # Current Maintenance Start Date: 1/1/2009 End Date: 12/31/2010 Product: Software Name 1 Manufacturer's Software License SKU / Part Number: XXXXXX Manufacturer's Software Maintenance SKU / Part Number: XXXXXX Includes the following: Unabbreviated non-technical description of software purchase. If the software has components, then each component shall be listed. License Constraint: XXXX users, XXXX devices, ... Product: Software Name 2 Manufacturer's Software License SKU / Part Number: XXXXXX Manufacturer's Software Maintenance SKU / Part Number: XXXXXX Includes the following: Unabbreviated non-technical description of software purchase. If the software has components, then each component shall be listed. License Constraint: XXXX users, XXXX devices, ...
+
+12 OF 12
+
+
+   
+Attachment 2:  Pricing Spreadsheet
+Solicitation Title:  ITSM Service Desk    
+Solicitation Number:  S5121A-12-Q-0011          
+ Offeror: Fill-in yellow blocks only
+Base Period Option Year 1 Option Year 2 Option Year 3 Option Year 4
+From To From To From To From To From To
+Estimated Period of Performance: 41182.0 41546.0 41547.0   41911.0 41912.0 42276.0 42277.0 42642.0 42643.0 43007.0
+CLIN Sub CLIN Description of Supplies U/I Vendor Unit Price Vendor Discount % Vendor Unit Price (less discount) Qty Total Price Vendor Unit Price Vendor Discount % Vendor Unit Price (less discount) Qty Total Price Vendor Unit Price Vendor Discount % Vendor Unit Price (less discount) Qty Total Price Vendor Unit Price Vendor Discount % Vendor Unit Price (less discount) Qty Total Price Vendor Unit Price Vendor Discount % Vendor Unit Price (less discount) Qty Total Price
+             
+0001   ITSM Service Desk                                                    
+0001AA Service Desk Suite EA     15 1.0 15     15 1.0 15     15 1.0 15     15 1.0 15     15 6.0 15
+0001AB Service Desk Suite Maintenance EA     15 1.0 15     15 1.0 15     15 1.0 15     15 1.0 15     15 6.0 15
+0001AC Service Desk Software (Concurrent User) EA     15 50.0 15     15 100.0 15     15 1.0 15     15 1.0 15     15 1.0 15
+0001AD Service Desk Software (Concurrent User)   Maintenance EA     15 50.0 15     15 150.0 15     15 151.0 15     15 152.0 15     15 153.0 15
+0001AE Service Desk Software (Named User) EA     15 25.0 15     15 1.0 15     15 1.0 15     15 1.0 15     15 1.0 15
+0001AF Service Desk Software (Named User)   Maintenance EA     15 25.0 15     15 26.0 15     15 27.0 15     15 28.0 15     15 29.0 15
+0001AG Incident Management Software (Concurrent User) NOT SEPARATELY PRICED 50.0 15 NOT SEPARATELY PRICED 1.0 NOT SEPARATELY PRICED 1.0 NOT SEPARATELY PRICED 1.0 NOT SEPARATELY PRICED 1.0
+0001AH Incident Management Software (Concurrent User) Maintenance NOT SEPARATELY PRICED 50.0 15 NOT SEPARATELY PRICED 150.0 NOT SEPARATELY PRICED 151.0 NOT SEPARATELY PRICED 152.0 NOT SEPARATELY PRICED 153.0
+0001AJ Incident Management Software       (Named User) EA NOT SEPARATELY PRICED 25.0 NOT SEPARATELY PRICED 1.0 NOT SEPARATELY PRICED 1.0 NOT SEPARATELY PRICED 1.0 NOT SEPARATELY PRICED 1.0
+0001AK Incident Management Software       (Named User) Maintenance EA NOT SEPARATELY PRICED 25.0 NOT SEPARATELY PRICED 26.0 NOT SEPARATELY PRICED 27.0 NOT SEPARATELY PRICED 28.0 NOT SEPARATELY PRICED 29.0
+0001AL Problem Management Software     (Concurrent User) EA NOT SEPARATELY PRICED 50.0 NOT SEPARATELY PRICED 1.0 NOT SEPARATELY PRICED 1.0 NOT SEPARATELY PRICED 1.0 NOT SEPARATELY PRICED 1.0
+0001AM Problem Management Software     (Concurrent User) Maintenance EA NOT SEPARATELY PRICED 50.0 NOT SEPARATELY PRICED 150.0 NOT SEPARATELY PRICED 151.0 NOT SEPARATELY PRICED 152.0 NOT SEPARATELY PRICED 153.0
+0001AN Problem Management Software     (Named User) EA NOT SEPARATELY PRICED 25.0 NOT SEPARATELY PRICED 1.0 NOT SEPARATELY PRICED 1.0 NOT SEPARATELY PRICED 1.0 NOT SEPARATELY PRICED 1.0
+0001AO Problem Management Software      (Named User) Maintenance EA NOT SEPARATELY PRICED 25.0 NOT SEPARATELY PRICED 26.0 NOT SEPARATELY PRICED 27.0 NOT SEPARATELY PRICED 28.0 NOT SEPARATELY PRICED 29.0
+0001AP Analytics Reporting Tool (Concurrent) EA     15 3.0 15     15 3.0 15     15 1.0 15     15 1.0 15     15 1.0 15
+0001AQ Analytics Reporting Tool (Concurrent) Maintenance EA     15 3.0 15     15 6.0 15     15 7.0 15     15 8.0 15     15 9.0 15
+0002   Training Days EA     15 60.0 15     15 30.0 15     15 30.0 15     15 5.0 15     15 5.0 15
+0003 0003AA Installation Services On-Site               Columbus, OH EA     15 1.0 15     15 1.0 15     15 1.0 15     15 1.0 15     15 1.0 15
+0003 0003AB Installation Services                                 Remote Installation                                              Boston, MA EA     15 1.0 15     15 1.0 15     15 1.0 15     15 1.0 15     15 1.0 15
+0003 0003AC Installation Services                                          Remote Installation                                         Carson, CA EA     15 1.0 15     15 1.0 15     15 1.0 15     15 1.0 15     15 1.0 15
+TOTAL PRICE ESTIMATE OF CLIN:   15   15   15   15   15
+Note: Quantities provided in this worksheet are estimates only; utilized for price evaluation purposes.  Actual order quantities may differ.
+Offeror's Information:
+COMPANY NAME
+ADDRESS
+ 
+Tel:  
+Fax:
+TIN: 
+DUNS:
+CAGE:
+SOLICITATION/CONTRACT/ORDER FOR COMMERCIAL ITEMS
+OFFEROR TO COMPLETE BLOCKS 12, 17, 23, 24, AND 30
+2. CONTRACT NO. 3. AWARD/EFFECTIVE DATE 4. ORDER NUMBER
+
+1. REQUISITION NUMBER P2ITB2PR2AP443 5. SOLICITATION NUMBER
+
+PAGE 1 OF
+
+33
+
+6. SOLICITATION ISSUE DATE
+
+S5121A-12-Q-0011
+7. FOR SOLICITATION INFORMATION CALL: a. NAME b. TELEPHONE NUMBER (No Collect Calls)
+
+31-Aug-2012
+8. OFFER DUE DATE/LOCAL TIME
+
+LUANNE STAMPER
+CODE
+
+804-734-0438
+10. THIS ACQUISITION IS 11. DELIVERY FOR FOB DESTINATION UNLESS % FOR BLOCK IS MARKED SEE SCHEDULE
+
+11:00 AM 14 Sep 2012
+12. DISCOUNT TERMS
+
+9. ISSUED BY
+
+S5121A
+
+DCMA PROCUREMENT CENTER IT S5121A LUANNE STAMPER, CONTRACT SPECIALIST LUANNE.STAMPER@DCMA.MIL 3901 "A" AVE; BLD 10500 FORT LEE VA 23801-1809
+
+X UNRESTRICTED
+SET ASIDE: SB HUBZONE SB 8(A) SVC-DISABLED VET-OWNED SB
+
+13a. THIS CONTRACT IS A RATED ORDER UNDER DPAS (15 CFR 700) 13b. RATING 14. METHOD OF SOLICITATION NAICS:
+
+TEL: 804-734-0438 FAX: 804-734-0049
+15. DELIVER TO CODE
+
+EMERGING SB SIZE STD:
+
+$25M
+
+511210
+
+X RFQ
+
+IFB CODE
+
+RFP
+
+16. ADMINISTERED BY
+
+SEE SCHEDULE
+
+17a.CONTRACTOR/ OFFEROR
+
+CODE
+
+18a. PAY MENT WILL BE MADE BY
+
+CODE
+
+TEL.
+
+FACILITY CODE
+
+17b. CHECK IF REMITTANCE IS DIFFERENT AND PUT SUCH ADDRESS IN OFFER 19. ITEM NO.
+
+18b. SUBMIT INVOICES TO ADDRESS SHOWN IN BLOCK 18a. UNLESS BLOCK BELOW IS CHECKED SEE ADDENDUM 21. QUANTITY 22. UNIT 23. UNIT PRICE 24. AMOUNT
+
+20. SCHEDULE OF SUPPLIES/ SERVICES
+
+SEE SCHEDULE
+25. ACCOUNTING AND APPROPRIATION DATA 26. TOTAL AWARD AMOUNT (For Gov t. Use Only )
+
+0
+
+27a. SOLICITATION INCORPORATES BY REFERENCE FAR 52.212-1. 52.212-4. FAR 52.212-3. 52.212-5 ARE ATTACHED. 27b. CONTRACT/PURCHASE ORDER INCORPORATES BY REFERENCE FAR 52.212-4. FAR 52.212-5 IS ATTACHED.
+
+ADDENDA ADDENDA
+
+ARE ARE
+
+ARE NOT ATTACHED ARE NOT ATTACHED
+
+28. CONTRACTOR IS REQUIRED TO SIGN THIS DOCUMENT AND RETURN
+
+1
+
+COPIES
+
+29. AWARD OF CONTRACT: REFERENCE OFFER DATED . Y OUR OFFER ON SOLICITATION (BLOCK 5), INCLUDING ANY ADDITIONS OR CHANGES WHICH ARE SET FORTH HEREIN, IS ACCEPTED AS TO ITEMS:
+
+X
+
+TO ISSUING OFFICE. CONTRACTOR AGREES TO FURNISH AND DELIVER ALL ITEMS SET FORTH OR OTHERWISE IDENTIFIED ABOVE AND ON ANY ADDITIONAL SHEETS SUBJECT TO THE TERMS AND CONDITIONS SPECIFIED HEREIN.
+
+30a. SIGNATURE OF OFFEROR/CONTRACTOR
+
+31a.UNITED STATES OF AMERICA
+
+(SIGNATURE OF CONTRACTING OFFICER) 31c. DATE SIGNED
+
+30b. NAME AND TITLE OF SIGNER
+(TYPE OR PRINT)
+
+30c. DATE SIGNED
+
+31b. NAME OF CONTRACTING OFFICER
+
+(TYPE OR PRINT)
+
+TEL:
+
+EMAIL:
+
+AUTHORIZED FOR LOCAL REPRODUCTION PREVIOUS EDITION IS NOT USABLE
+
+STANDARD FORM 1449 (REV 3/2005) Prescribed by GSA FAR (48 CFR) 53.212
+
+SOLICITATION/CONTRACT/ORDER FOR COMMERCIAL ITEMS (CONTINUED)
+19. ITEM NO. 20. SCHEDULE OF SUPPLIES/ SERVICES 21. QUANTITY 22. UNIT
+
+PAGE 2 OF 33 23. UNIT PRICE 24. AMOUNT
+
+SEE SCHEDULE
+
+32a. QUANTITY IN COLUMN 21 HAS BEEN RECEIVED INSPECTED ACCEPTED, AND CONFORMS TO THE CONTRACT, EXCEPT AS NOTED: ______________________________________________________ 32b. SIGNATURE OF AUTHORIZED GOVERNMENT REPRESENTATIVE 32c. DATE 32d. PRINTED NAME AND TITLE OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32e. MAILING ADDRESS OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32f . TELEPHONE NUMBER OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32g. E-MAIL OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+33. SHIP NUMBER
+
+34. VOUCHER NUMBER
+
+35. AMOUNT VERIFIED CORRECT FOR
+
+36. PAY MENT COMPLETE PARTIAL FINAL
+
+37. CHECK NUMBER
+
+PARTIAL
+
+FINAL 39. S/R VOUCHER NUMBER 40. PAID BY
+
+38. S/R ACCOUNT NUMBER
+
+41a. I CERTIFY THIS ACCOUNT IS CORRECT AND PROPER FOR PAY MENT 42a. RECEIVED BY (Print) 41c. DATE 41b. SIGNATURE AND TITLE OF CERTIFY ING OFFICER 42b. RECEIVED AT (Location) 42c. DATE REC'D (YY/MM/DD) 42d. TOTAL CONTAINERS
+
+AUTHORIZED FOR LOCAL REPRODUCTION PREVIOUS EDITION IS NOT USABLE
+
+STANDARD FORM 1449 (REV 3/2005) BACK Prescribed by GSA FAR (48 CFR) 53.212
+
+S5121A-12-Q-0011 Page 3 of 33 Section SF 1449 - CONTINUATION SHEET
+
+DELIVERY INFORMATION CLIN DELIVERY DATE QUANTITY SHIP TO ADDRESS UIC
+
+CLAUSES INCORPORATED BY REFERENCE
+
+52.204-4 52.209-5 52.209-7 52.209-9 52.212-1 52.212-3 52.212-3 Alt I 52.212-4 52.215-1 52.215-1 Alt I 52.222-40 52.223-16 52.224-1 52.224-2 52.227-1 52.227-19 52.228-5 52.232-17 52.232-19 52.232-23 52.233-1 52.233-2 52.242-13 52.242-15 52.246-2 52.247-34
+
+Printed or Copied Double-Sided on Postconsumer Fiber MAY 2011 Content Paper Certification Regarding Responsibility Matters APR 2010 Information Regarding Responsibility Matters FEB 2012 Updates of Publicly Available Information Regarding FEB 2012 Responsibility Matters Instructions to Offerors--Commercial Items FEB 2012 Offeror Representations and Certification--Commercial Items APR 2012 Offeror Representations and Certifications--Commercial Items APR 2011 (APR 2012) Alternate I Contract Terms and Conditions--Commercial Items FEB 2012 Instructions to Offerors--Competitive Acquisition JAN 2004 Instructions to Offerors--Competitive Acquisition (Jan 2004) - OCT 1997 Alternate I Notification of Employee Rights Under the National Labor DEC 2010 Relations Act IEEE 1680 Standard for the Environmental Assessment of DEC 2007 Personal Computer Products Privacy Act Notification APR 1984 Privacy Act APR 1984 Authorization and Consent DEC 2007 Commercial Computer Software License DEC 2007 Insurance - Work On A Government Installation JAN 1997 Interest OCT 2010 Availability Of Funds For The Next Fiscal Year APR 1984 Assignment Of Claims JAN 1986 Disputes JUL 2002 Service Of Protest SEP 2006 Bankruptcy JUL 1995 Stop-Work Order AUG 1989 Inspection Of Supplies--Fixed Price AUG 1996 F.O.B. Destination NOV 1991
+
+S5121A-12-Q-0011 Page 4 of 33 52.249-2 52.252-2 252.201-7000 252.203-7002 252.203-7003 252.204-7008 252.209-7001 252.209-7002 252.209-7004 252.212-7000 252.225-7000 252.225-7002 252.225-7031 252.232-7010 252.243-7001 Termination For Convenience Of The Government (FixedAPR 2012 Price) Clauses Incorporated By Reference FEB 1998 Contracting Officer's Representative DEC 1991 Requirement to Inform Employees of Whistleblower Rights JAN 2009 Agency Office of the Inspector General APR 2012 Export-Controlled Items APR 2010 Disclosure of Ownership or Control by the Government of a JAN 2009 Terrorist Country Disclosure Of Ownership Or Control By A Foreign JUN 2010 Government Subcontracting With Firms That Are Owned or Controlled By DEC 2006 The Government of a Terrorist Country Offeror Representations and Certifications- Commercial Items JUN 2005 Buy American--Balance Of Payments Program Certificate JUN 2012 Qualifying Country Sources As Subcontractors JUN 2012 Secondary Arab Boycott Of Israel JUN 2005 Levies on Contract Payments DEC 2006 Pricing Of Contract Modifications DEC 1991
+
+CLAUSES INCORPORATED BY FULL TEXT
+
+52.204-99 SYSTEM FOR AWARD MANAGEMENT REGISTRATION (DEVIATION)(AUG 2012) (a) Definitions. As used in this clause-- "Central Contractor Registration (CCR) database" means the retired primary Government repository for Contractor information required for the conduct of business with the Government. "Commercial and Government Entity (CAGE) code" means-- (1) A code assigned by the Defense Logistics Agency (DLA) Logistics Information Service to identify a commercial or Government entity; or (2) A code assigned by a member of the North Atlantic Treaty Organization that DLA records and maintains in the CAGE master file. This type of code is known as an "NCAGE code." "Data Universal Numbering System (DUNS) number" means the 9-digit number assigned by Dun and Bradstreet, Inc. (D&B) to identify unique business entities. "Data Universal Numbering System+4 (DUNS+4) number" means the DUNS number means the number assigned by D&B plus a 4-character suffix that may be assigned by a business concern. (D&B has no affiliation with this 4character suffix.) This 4-character suffix may be assigned at the discretion of the business concern to establish additional SAM records for identifying alternative Electronic Funds Transfer (EFT) accounts (see the FAR at Subpart 32.11) for the same concern. "Registered in the SAM database" means that-- (1) The Contractor has entered all mandatory information, including the DUNS number or the DUNS+4 number, into the SAM database; (2) The Contractor's CAGE code is in the SAM database; and (3) The Government has validated all mandatory data fields, to include validation of the Taxpayer Identification Number (TIN) with the Internal Revenue Service (IRS), and has marked the record "Active". The Contractor will be required to provide consent for TIN validation to the Government as a part of the SAM registration process. "System for Award Management (SAM)" means the primary Government repository for prospective federal awardee information and the centralized Government system for certain contracting, grants, and other assistance related processes. It includes-- (1) Data collected from prospective federal awardees required for the conduct of business with the Government;
+
+S5121A-12-Q-0011 Page 5 of 33 (2) Prospective contractor submitted annual representations and certifications in accordance with FAR Subpart 4.12; and (3) The list of all parties suspended, proposed for debarment, debarred, declared ineligible, or excluded or disqualified under the nonprocurement common rule by agencies, Government corporations, or by the Government Accountability Office. (b)(1) The Contractor shall be registered in the SAM database prior to submitting an invoice and through final payment of any contract, basic agreement, basic ordering agreement, or blanket purchasing agreement resulting from this solicitation. (2) The SAM registration shall be for the same name and address identified on the contract, with its associated CAGE code and DUNS or DUNS+4. (3) If indicated by the Government during performance, registration in CCR may be required in lieu of SAM. (c) If the Contractor does not have a DUNS number, it should contact Dun and Bradstreet directly to obtain one. (1) A contractor may obtain a DUNS number-- (i) Via the internet at http://fedgov.dnb.com/webform or if the contractor does not have internet access, it may call Dun and Bradstreet at 1-866-705-5711 if located within the United States; or (ii) If located outside the United States, by contacting the local Dun and Bradstreet office. The contractor should indicate that it is a contractor for a U.S. Government contract when contacting the local Dun and Bradstreet office. (2) The Contractor should be prepared to provide the following information: (i) Company legal business name. (ii) Tradestyle, doing business, or other name by which your entity is commonly recognized. (iii) Company physical street address, city, state and Zip Code. (iv) Company mailing address, city, state and Zip Code (if separate from physical). (v) Company telephone number. (vi) Date the company was started. (vii) Number of employees at your location. (viii) Chief executive officer/key manager. (ix) Line of business (industry). (x) Company Headquarters name and address (reporting relationship within your entity). (d) Reserved. (e) Processing time for registration in SAM, which normally takes five business days, should be taken into consideration when registering. Contractors who are not already registered should consider applying for registration at least two weeks prior to invoicing. (f) The Contractor is responsible for the accuracy and completeness of the data within the SAM database, and for any liability resulting from the Government's reliance on inaccurate or incomplete data. To remain registered in the SAM database after the initial registration, the Contractor is required to review and update on an annual basis from the date of initial registration or subsequent updates its information in the SAM database to ensure it is current, accurate and complete. Updating information in the SAM does not alter the terms and conditions of this contract and is not a substitute for a properly executed contractual document. (g)(1)(i) If a Contractor has legally changed its business name, "doing business as" name, or division name (whichever is shown on the contract), or has transferred the assets used in performing the contract, but has not completed the necessary requirements regarding novation and change-of-name agreements in Subpart 42.12, the Contractor shall provide the responsible Contracting Officer sufficient documentation to support the legally changed name with a minimum of one business day's written notification of its intention to-- (A) Change the name in the SAM database; (B) Comply with the requirements of subpart 42.12 of the FAR; and (C) Agree in writing to the timeline and procedures specified by the responsible Contracting Officer. (ii) If the Contractor fails to comply with the requirements of paragraph (g)(1)(i) of this clause, or fails to perform the agreement at paragraph (g)(1)(i)(C) of this clause, and, in the absence of a properly executed novation or changeof-name agreement, the SAM information that shows the Contractor to be other than the Contractor indicated in the contract will be considered to be incorrect information within the meaning of the "Suspension of Payment" paragraph of the electronic funds transfer (EFT) clause of this contract. (2) The Contractor shall not change the name or address for EFT payments or manual payments, as appropriate, in the SAM record to reflect an assignee for the purpose of assignment of claims (see FAR Subpart 32.8, Assignment of Claims). Assignees shall be separately registered in the SAM database. Information provided to the Contractor's
+
+S5121A-12-Q-0011 Page 6 of 33 SAM record that indicates payments, including those made by EFT, to an ultimate recipient other than that Contractor will be considered to be incorrect information within the meaning of the "Suspension of payment" paragraph of the EFT clause of this contract. (h) Contractors may obtain information on registration and annual confirmation requirements via the SAM accessed through https://www.acquisition.gov or by calling 866-606-8220, or 334-206-7828 for international calls. (End of Clause)
+
+CLAUSES INCORPORATED BY FULL TEXT
+
+52.212-2
+
+EVALUATION--COMMERCIAL ITEMS (JAN 1999)
+
+(a) The Government will award a contract resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation will be most advantageous to the Government, price and other factors considered. The following factors shall be used to evaluate offers: __X__ Award will be made to the offeror whose quote complies with the RFQ, meets the Technical Specifications, represents the best value to the Government considering technical qualifications, past performance and price. __X__ Non-price factors, when combined, are significantly more important than price and more value will be placed on them than price as the Government makes a best value determination. (b) Options. The Government will evaluate offers for award purposes by adding the total price for all options to the total price for the basic requirement. The Government may determine that an offer is unacceptable if the option prices are significantly unbalanced. Evaluation of options shall not obligate the Government to exercise the option(s). (c) A written notice of award or acceptance of an offer, mailed or otherwise furnished to the successful offeror within the time for acceptance specified in the offer, shall result in a binding contract without further action by either party. Before the offer's specified expiration time, the Government may accept an offer (or part of an offer), whether or not there are negotiations after its receipt, unless a written notice of withdrawal is received before award. (End of provision)
+
+CLAUSES INCORPORATED BY FULL TEXT
+
+52.212-5 CONTRACT TERMS AND CONDITIONS REQUIRED TO IMPLEMENT STATUTES OR EXECUTIVE ORDERS--COMMERCIAL ITEMS (JUL 2012) (a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract by reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items: (1) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)). ___ Alternate I (Aug 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+
+(2) 52.233-3, Protest After Award (AUG 1996) (31 U.S.C. 3553). (3) 52.233-4, Applicable Law for Breach of Contract Claim (OCT 2004) (Pub. L. 108-77, 108-78).
+
+S5121A-12-Q-0011 Page 7 of 33
+
+(b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: (Contracting Officer check as appropriate.) _X_ (1) 52.203-6, Restrictions on Subcontractor Sales to the Government (Sept 2006), with Alternate I (Oct 1995) (41 U.S.C. 253g and 10 U.S.C. 2402).
+
+____ (2) 52.203-13, Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note)). ____ (3) 52.203-15, Whistleblower Protections under the American Recovery and Reinvestment Act of 2009 (June 2010) (Section 1553 of Pub. L. 111-5). (Applies to contracts funded by the American Recovery and Reinvestment Act of 2009.)
+
+_X_ (4) 52.204-10, Reporting Executive Compensation and First-Tier Subcontract Awards (Feb 2012) (Pub. L. 109282) (31 U.S.C. 6101 note).
+
+___ (5) 52.204-11, American Recovery and Reinvestment Act--Reporting Requirements (Jul 2010) (Pub. L. 1115). _X_ (6) 52.209-6, Protecting the Government's Interest When Subcontracting with Contractors Debarred, Suspended, or Proposed for Debarment. (Dec 2010) (31 U.S.C. 6101 note). ____ (7) 52.209-9, Updates of Publicly Available Information Regarding Responsibility Matters (Feb 2012) (41 U.S.C. 2313). ____ (8) 52.209-10, Prohibition on Contracting with Inverted Domestic Corporations (MAY 2012) (section 738 of Division C of Pub. L. 112-74, section 740 of Division C of Pub. L. 111-117, section 743 of Division D of Pub. L. 111-8, and section 745 of Division D of Pub. L. 110-161). ____ (9) 52.219-3, Notice of HUBZone Set-Aside or Sole-Source Award (NOV 2011) (15 U.S.C. 657a). ____ (10) 52.219-4, Notice of Price Evaluation Preference for HUBZone Small Business Concerns (Jan 2011) (if the offeror elects to waive the preference, it shall so indicate in its offer) (15 U.S.C. 657a).
+
+____ (11) [Reserved]
+
+____ (12)(i) 52.219-6, Notice of Total Small Business Set-Aside (NOV 2011) (15 U.S.C. 644).
+
+____ (ii) Alternate I (NOV 2011).
+
+____ (iii) Alternate II (NOV 2011). ____ (13)(i) 52.219-7, Notice of Partial Small Business Set-Aside (June 2003) (15 U.S.C. 644).
+
+S5121A-12-Q-0011 Page 8 of 33
+
+____ (ii) Alternate I (Oct 1995) of 52.219-7.
+
+____ (iii) Alternate II (Mar 2004) of 52.219-7.
+
+_X__ (14) 52.219-8, Utilization of Small Business Concerns (Jan 2011) (15 U.S.C. 637(d)(2) and (3)).
+
+_X__ (15)(i) 52.219-9, Small Business Subcontracting Plan (Jan 2011) (15 U.S.C. 637(d)(4)).
+
+____ (ii) Alternate I (Oct 2001) of 52.219-9.
+
+____ (iii) Alternate II (Oct 2001) of 52.219-9.
+
+____ (iv) Alternate III (Jul 2010) of 52.219-9. ____ (16) 52.219-13, Notice of Set-Aside of Orders (NOV 2011) (15 U.S.C. 644(r)). ____ (17) 52.219-14, Limitations on Subcontracting (NOV 2011) (15 U.S.C. 637(a)(14)). _X__ (18) 52.219-16, Liquidated Damages--Subcon-tracting Plan (Jan 1999) (15 U.S.C. 637(d)(4)(F)(i)). ____ (19)(i) 52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns (Oct 2008) (10 U.S.C. 2323) (if the offeror elects to waive the adjustment, it shall so indicate in its offer). ____ (ii) Alternate I (June 2003) of 52.219-23. ____ (20) 52.219-25, Small Disadvantaged Business Participation Program--Disadvantaged Status and Reporting (Dec 2010) (Pub. L. 103-355, section 7102, and 10 U.S.C. 2323).
+
+____ (21) 52.219-26, Small Disadvantaged Business Participation Program-- Incentive Subcontracting (Oct 2000) (Pub. L. 103-355, section 7102, and 10 U.S.C. 2323).
+
+____ (22) 52.219-27, Notice of Service-Disabled Veteran-Owned Small Business Set-Aside (NOV 2011) (15 U.S.C. 657f).
+
+_X__ (23) 52.219-28, Post Award Small Business Program Rerepresentation (Apr 2012) (15 U.S.C. 632(a)(2)). ____ (24) 52.219-29, Notice of Set-Aside for Economically Disadvantaged Women-Owned Small Business (EDWOSB) Concerns (APR 2012) (15 U.S.C. 637(m)). ____ (25) 52.219-30, Notice of Set-Aside for Women-Owned Small Business (WOSB) Concerns Eligible Under the WOSB Program (APR 2012) (15 U.S.C. 637(m)). _X__ (26) 52.222-3, Convict Labor (June 2003) (E.O. 11755).
+
+S5121A-12-Q-0011 Page 9 of 33 _X__ (27) 52.222-19, Child Labor--Cooperation with Authorities and Remedies (MAR 2012) (E.O. 3126). _X__ (28) 52.222-21, Prohibition of Segregated Facilities (Feb 1999). _X__ (29) 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246). _X__ (30) 52.222-35, Equal Opportunity for Veterans (Sep 2010)(38 U.S.C. 4212). _X__ (31) 52.222-36, Affirmative Action for Workers with Disabilities (Oct 2010) (29 U.S.C. 793). _X__ (32) 52.222-37, Employment Reports on Veterans (Sep 2010) (38 U.S.C. 4212). _X__ (33) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496). ____ (34) 52.222-54, Employment Eligibility Verification (Jul 2012). (Executive Order 12989). (Not applicable to the acquisition of commercially available off-the-shelf items or certain other types of commercial items as prescribed in 22.1803.) ____ (35)(i) 52.223-9, Estimate of Percentage of Recovered Material Content for EPA­Designated Items (May 2008) (42 U.S.C. 6962(c)(3)(A)(ii)). (Not applicable to the acquisition of commercially available off-the-shelf items.)
+
+____ (ii) Alternate I (May 2008) of 52.223-9 (42 U.S.C. 6962(i)(2)(C)). (Not applicable to the acquisition of commercially available off-the-shelf items.) ____ (36) 52.223-15, Energy Efficiency in Energy-Consuming Products (Dec 2007) (42 U.S.C. 8259b). ____ (37)(i) 52.223-16, IEEE 1680 Standard for the Environmental Assessment of Personal Computer Products (Dec 2007) (E.O. 13423). ____ (ii) Alternate I (Dec 2007) of 52.223-16. _X__ (38) 52.223-18, Encouraging Contractor Policies to Ban Text Messaging While Driving (Aug 2011) (E.O. 13513). ____ (39) 52.225-1, Buy American Act--Supplies (Feb 2009) (41 U.S.C. 10a-10d). ____(40)(i) 52.225-3, Buy American Act--Free Trade Agreements--Israeli Trade Act (MAY 2012) (41 U.S.C. chapter 83, 19 U.S.C. 3301 note, 19 U.S.C. 2112 note, 19 U.S.C. 3805 note, 19 U.S.C. 4001 note, Pub. L. 103-182, 108-77, 108-78, 108-286, 108-302, 109-53, 109-169, 109-283, 110-138, 112-41, and 112-42). ____ (ii) Alternate I (Mar 2012) of 52.225-3. ____ (iii) Alternate II (Mar 2012) of 52.225-3. ____ (iv) Alternate III (Mar 2012) of 52.225-3. ____ (41) 52.225-5, Trade Agreements (MAY 2012) (19 U.S.C. 2501, et seq., 19 U.S.C. 3301 note). _X__ (42) 52.225-13, Restrictions on Certain Foreign Purchases (June 2008) (E.O.'s, proclamations, and statutes administered by the Office of Foreign Assets Control of the Department of the Treasury).
+
+S5121A-12-Q-0011 Page 10 of 33 ____ (43) 52.226-4, Notice of Disaster or Emergency Area Set-Aside (Nov 2007) (42 U.S.C. 5150 ____ (44) 52.226-5, Restrictions on Subcontracting Outside Disaster or Emergency Area (Nov 2007) (42 U.S.C. 5150). ____ (45) 52.232-29, Terms for Financing of Purchases of Commercial Items (Feb 2002) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)). ____ (46) 52.232-30, Installment Payments for Commercial Items (Oct 1995) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)). _X__ (47) 52.232-33, Payment by Electronic Funds Transfer--Central Contractor Registration (Oct 2003) (31 U.S.C. 3332). ____ (48) 52.232-34, Payment by Electronic Funds Transfer--Other than Central Contractor Registration (May 1999) (31 U.S.C. 3332). ____ (49) 52.232-36, Payment by Third Party (Feb 2010) (31 U.S.C. 3332). ____ (50) 52.239-1, Privacy or Security Safeguards (Aug 1996) (5 U.S.C. 552a). ____ (51)(i) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) (46 U.S.C. Appx. 1241(b) and 10 U.S.C. 2631). ____ (ii) Alternate I (Apr 2003) of 52.247-64. (c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: (Contracting Officer check as appropriate.) _____ (1) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.).
+
+_____ (2) 52.222-42, Statement of Equivalent Rates for Federal Hires (May 1989) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+
+_____ (3) 52.222-43, Fair Labor Standards Act and Service Contract Act--Price Adjustment (Multiple Year and Option Contracts) (Sep 2009) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.). _____ (4) 52.222-44, Fair Labor Standards Act and Service Contract Act--Price Adjustment (Sep 2009) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.). _____ (5) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment--Requirements (Nov 2007) (41 351, et seq.). _____ (6) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services-- Requirements (Feb 2009) (41 U.S.C. 351, et seq.). _____ (7) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247). _____ (8) 52.237-11, Accepting and Dispensing of $1 Coin (Sept 2008) (31 U.S.C. 5112(p)(1)).
+
+S5121A-12-Q-0011 Page 11 of 33 (d) Comptroller General Examination of Record. The Contractor shall comply with the provisions of this paragraph (d) if this contract was awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at 52.215-2, Audit and Records--Negotiation. (1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right to examine any of the Contractor's directly pertinent records involving transactions related to this contract. (2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination, audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR Subpart 4.7, Contractor Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records relating to the work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such appeals, litigation, or claims are finally resolved. (3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary course of business or pursuant to a provision of law. (e) (1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c), and (d) of this clause, the Contractor is not required to flow down any FAR clause, other than those in this paragraph (e)(1)in a subcontract for commercial items. Unless otherwise indicated below, the extent of the flow down shall be as required by the clause-- (i) 52.203-13, Contractor Code of Business Ethics and Conduct (APR 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note). (ii) 52.219-8, Utilization of Small Business Concerns (DEC 2010) (15 U.S.C. 637(d)(2) and (3)), in all subcontracts that offer further subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $650,000 ($1.5 million for construction of any public facility), the subcontractor must include 52.219-8 in lower tier subcontracts that offer subcontracting opportunities. (iii) Reserved. (iv) 52.222-26, Equal Opportunity (MAR 2007) (E.O. 11246). (v) 52.222-35, Equal Opportunity for Veterans (SEP 2010) (38 U.S.C. 4212). (vi) 52.222-36, Affirmative Action for Workers with Disabilities (OCT 1998) (29 U.S.C. 793). (vii) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (DEC 2010) (E.O. 13496). Flow down required in accordance with paragraph (f) of FAR clause 52.222-40. (viii) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.). (ix) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)). Alternate I (AUG 2007) of 52.222-50 (22 U.S.C. 7104(g)). (x) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment--Requirements (Nov 2007) (41 U.S.C. 351, et seq.).
+
+S5121A-12-Q-0011 Page 12 of 33 (xi) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services-Requirements (FEB 2009) (41 U.S.C. 351, et seq.). (xii) 52.222-54, Employment Eligibility Verification (JUL 2012). (xiii) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations. (MAR 2009) (Pub. L. 110-247). Flow down required in accordance with paragraph (e) of FAR clause 52.226-6. (xiv) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (FEB 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C. 2631). Flow down required in accordance with paragraph (d) of FAR clause 52.247-64. (2) While not required, the contractor May include in its subcontracts for commercial items a minimal number of additional clauses necessary to satisfy its contractual obligations. (End of clause)
+
+52.216-1
+
+TYPE OF CONTRACT (APR 1984)
+
+The Government contemplates award of a firm fixed price contract resulting from this solicitation. (End of provision)
+
+52.217-9
+
+OPTION TO EXTEND THE TERM OF THE CONTRACT (MAR 2000)
+
+(a) The Government may extend the term of this contract by written notice to the Contractor within 30 days; provided that the Government gives the Contractor a preliminary written notice of its intent to extend at least 60 days before the contract expires. The preliminary notice does not commit the Government to an extension. (b) If the Government exercises this option, the extended contract shall be considered to include this option clause. (c) The total duration of this contract, including the exercise of any options under this clause, shall not exceed 5 years or 60 months.. (End of clause)
+
+52.219-1
+
+SMALL BUSINESS PROGRAM REPRESENTATIONS (APR 2012)
+
+(a)(1) The North American Industry Classification System (NAICS) code for this acquisition is 511210. (2) The small business size standard is $25M. (3) The small business size standard for a concern which submits an offer in its own name, other than on a construction or service contract, but which proposes to furnish a product which it did not itself manufacture, is 500 employees. (b) Representations.
+
+S5121A-12-Q-0011 Page 13 of 33
+
+(1) The offeror represents as part of its offer that it ( ) is, ( ) is not a small business concern. (2) (Complete only if the offeror represented itself as a small business concern in paragraph (b)(1) of this provision.) The offeror represents, for general statistical purposes, that it ( ) is, ( ) is not a small disadvantaged business concern as defined in 13 CFR 124.1002. (3) (Complete only if the offeror represented itself as a small business concern in paragraph (b)(1) of this provision.) The offeror represents as part of its offer that it ( ) is, ( ) is not a women-owned small business concern. (4) Women-owned small business (WOSB) concern eligible under the WOSB Program. [Complete only if the offeror represented itself as a women-owned small business concern in paragraph (b)(3) of this provision.] The offeror represents as part of its offer that-(i) It ( ) is, ( ) is not a WOSB concern eligible under the WOSB Program, has provided all the required documents to the WOSB Repository, and no change in circumstances or adverse decisions have been issued that affects its eligibility; and (ii) It [ ] is, [ ] is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation in paragraph (b)(4)(i) of this provision is accurate for each WOSB concern eligible under the WOSB Program participating in the joint venture. [The offeror shall enter the name or names of the WOSB concern eligible under the WOSB Program and other small businesses that are participating in the joint venture: ----------.] Each WOSB concern eligible under the WOSB Program participating in the joint venture shall submit a separate signed copy of the WOSB representation. (5) Economically disadvantaged women-owned small business (EDWOSB) concern. [Complete only if the offeror represented itself as a women-owned small business concern eligible under the WOSB Program in (b)(4) of this provision.] The offeror represents as part of its offer that-(i) It ( ) is, ( ) is not an EDWOSB concern eligible under the WOSB Program, has provided all the required documents to the WOSB Repository, and no change in circumstances or adverse decisions have been issued that affects its eligibility; and (ii) It [ ] is, [ ] is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation in paragraph (b)(5)(i) of this provision is accurate for each EDWOSB concern participating in the joint venture. [The offeror shall enter the name or names of the EDWOSB concern and other small businesses that are participating in the joint venture: ----------.] Each EDWOSB concern participating in the joint venture shall submit a separate signed copy of the EDWOSB representation. (6) (Complete only if the offeror represented itself as a small business concern in paragraph (b)(1) of this provision.) The offeror represents as part of its offer that it ( ) is, ( ) is not a veteran-owned small business concern. (7) (Complete only if the offeror represented itself as a veteran-owned small business concern in paragraph (b)(6) of this provision.) The offeror represents as part of its offer that it ( ) is, ( ) is not a service-disabled veteran-owned small business concern. (8) (Complete only if the offeror represented itself as a small business concern in paragraph (b)(1) of this provision.) The offeror represents, as part of its offer, that-(i) It [ ] is, [ ] is not a HUBZone small business concern listed, on the date of this representation, on the List of Qualified HUBZone Small Business Concerns maintained by the Small Business Administration, and no material changes in ownership and control, principal office, or HUBZone employee percentage have occurred since it was certified in accordance with 13 CFR Part 126; and
+
+S5121A-12-Q-0011 Page 14 of 33 (ii) It [ ] is, [ ] is not a HUBZone joint venture that complies with the requirements of 13 CFR Part 126, and the representation in paragraph (b)(8)(i) of this provision is accurate for each HUBZone small business concern participating in the HUBZone joint venture. [The offeror shall enter the names of each of the HUBZone small business concerns participating in the HUBZone joint venture: --------.] Each HUBZone small business concern participating in the HUBZone joint venture shall submit a separate signed copy of the HUBZone representation. (c) Definitions. As used in this provision-"Economically disadvantaged women-owned small business (EDWOSB) concern" means a small business concern that is at least 51 percent directly and unconditionally owned by, and the management and daily business operations of which are controlled by, one or more women who are citizens of the United States and who are economically disadvantaged in accordance with 13 CFR part 127. It automatically qualifies as a women-owned small business concern eligible under the WOSB Program. Service-disabled veteran-owned small business concern-(1) Means a small business concern-(i) Not less than 51 percent of which is owned by one or more service-disabled veterans or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more service-disabled veterans; and (ii) The management and daily business operations of which are controlled by one or more service-disabled veterans or, in the case of a service-disabled veteran with permanent and severe disability, the spouse or permanent caregiver of such veteran. (2) Service-disabled veteran means a veteran, as defined in 38 U.S.C. 101(2), with a disability that is serviceconnected, as defined in 38 U.S.C. 101(16). "Small business concern," means a concern, including its affiliates, that is independently owned and operated, not dominant in the field of operation in which it is bidding on Government contracts, and qualified as a small business under the criteria in 13 CFR Part 121 and the size standard in paragraph (a) of this provision. Veteran-owned small business concern means a small business concern-(1) Not less than 51 percent of which is owned by one or more veterans (as defined at 38 U.S.C. 101(2)) or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more veterans; and (2) The management and daily business operations of which are controlled by one or more veterans. "Women-owned small business concern," means a small business concern -(1) That is at least 51 percent owned by one or more women; in the case of any publicly owned business, at least 51 percent of the stock of which is owned by one or more women; and (2) Whose management and daily business operations are controlled by one or more women. "Women-owned small business (WOSB) concern eligible under the WOSB Program (in accordance with 13 CFR part 127)", means a small business concern that is at least 51 percent directly and unconditionally owned by, and the management and daily business operations of which are controlled by, one or more women who are citizens of the United States. (d) Notice.
+
+S5121A-12-Q-0011 Page 15 of 33
+
+(1) If this solicitation is for supplies and has been set aside, in whole or in part, for small business concerns, then the clause in this solicitation providing notice of the set-aside contains restrictions on the source of the end items to be furnished. (2) Under 15 U.S.C. 645(d), any person who misrepresents a firm's status as a business concern that is small, HUBZone small, small disadvantaged, service-disabled veteran-owned small, economically disadvantaged womenowned small, or women-owned small eligible under the WOSB Program in order to obtain a contract to be awarded under the preference programs established pursuant to section 8, 9, 15, 31, and 36 of the Small Business Act or any other provision of Federal law that specifically references section 8(d) for a definition of program eligibility, shall-- (i) Be punished by imposition of fine, imprisonment, or both; (ii) Be subject to administrative remedies, including suspension and debarment; and (iii) Be ineligible for participation in programs conducted under the authority of the Act.
+
+(End of provision)
+
+52.252-1
+
+SOLICITATION PROVISIONS INCORPORATED BY REFERENCE (FEB 1998)
+
+This solicitation incorporates one or more solicitation provisions by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. The offeror is cautioned that the listed provisions may include blocks that must be completed by the offeror and submitted with its quotation or offer. In lieu of submitting the full text of those provisions, the offeror may identify the provision by paragraph identifier and provide the appropriate information with its quotation or offer. Also, the full text of a solicitation provision may be accessed electronically at this/these address(es):
+
+http://farsite.hill.af.mil/
+(End of provision)
+
+252.201-9002
+
+CONTRACTING OFFICER'S REPRESENTATIVE (to
+
+be completed at time of award)
+
+a. The Contracting Officer's Representative for this contract is: ___________________________________(enter name) Defense Contract Management Agency/ (enter office symbol) ___________________________________(enter street address) ___________________________________(enter city, state, & zip code) Telephone (___) ____-_____ email address: _________________@dcma.mil b. The COR will act as the Contracting Officer's Representative for technical matters providing technical direction and discussion as necessary with respect to the specification/statement of work and monitoring the progress and quality of the Contractor's performance. The COR is NOT an Administrative
+
+S5121A-12-Q-0011 Page 16 of 33 Contracting Officer (ACO) and does not have the authority to take any action, either directly or indirectly that would change the pricing, quality, quantity, place of performance, delivery schedule, or any other terms and conditions of the contract, or to direct the accomplishment of effort, which goes beyond the scope of the specifications/statement of work in the contract. c. When, in the opinion of the Contractor, the COR requests effort outside the existing scope of the contract, the Contractor shall promptly notify the Contracting Officer in writing. No action shall be taken by the Contractor under such direction until the Contracting Officer has issued a modification to the Contract or has otherwise resolved the issue.
+
+252.201-9003
+
+LIMITATION OF AUTHORITY
+
+No person in the Government, other than a Contracting Officer, has the authority to provide direction to the Contractor which alters the Contractor's obligations or changes this contract in any way. If any person representing the Government, other than a Contracting Officer, attempts to alter contract obligations such as changing quantity, delivery, contract specifications/statement of work, increasing or decreasing the price, or tells the contractor to perform some effort which the Contractor believes to be outside the scope of this contract, the Contractor shall immediately notify the Procuring Contracting Officer (PCO). The contractor shall not comply with any such contract alteration or change in scope unless ordered or directed by a Contracting Officer.
+
+252.204-7003
+
+CONTROL OF GOVERNMENT PERSONNEL WORK PRODUCT (APR 1992)
+
+The Contractor's procedures for protecting against unauthorized disclosure of information shall not require Department of Defense employees or members of the Armed Forces to relinquish control of their work products, whether classified or not, to the contractor. (End of clause)
+
+252.204-9000 Contractor Access to Facilities or Information Systems Performance under this contract requires contractors to have routine physical access to a DCMA or other Federally-controlled facility, and/or routine access to a DCMA or other Federallycontrolled information system. Access shall be provided using a Common Access Card (CAC). The Contracting Officer's Representative (COR) or Contracting Officer's Technical Representative (COTR) designated in this contract is responsible for coordinating, approving, and terminating entry of contractor personnel to DCMA facilities. COR's/COTR's operating in this capacity will be referred to as the DCMA Trusted Agent (TA). Contractors shall submit requests for CACs to the DCMA Trusted Agent. The following information must be provided to begin the process for obtaining a CAC:
+
+S5121A-12-Q-0011 Page 17 of 33
+
+     
+
+Last Name First Name Middle Name Social Security Number Date of Birth Email Address
+
+The Trusted Agent will initiate and approve contractor CAC applications via the Contractor Verification System (CVS). The CVS is a WEB-based system that was put in place to allow DoD contractors to apply for a CAC via the Internet. Information concerning CVS is available at http://pmo.cac.navy.mil/cvs/docs/CVS-TA-TG%20v5a.pdf Contractors requiring access to DCMA facilities for less than 6 months will be issued a temporary escort required badge, unless the contractor has been cleared by the appropriate security center representative to receive a temporary no-escort required badge
+
+252.209-9000 ORGANIZATIONAL CONFLICTS OF INTEREST a. Purpose. The primary purpose of this clause is to aid in ensuring that: (1) the Contractor's objectivity and judgment are not biased because of its past, present, or currently planned interests (financial, contractual, organizational, or otherwise) which relate to work under this contract; (2) the Contractor does not obtain an unfair competitive advantage by virtue of its access to non-public information regarding the Government's program plans and actual or anticipated resources; and (3) by virtue of its access to proprietary information belonging to others, the Contractor does not obtain any unfair competitive advantage. b. Scope. The restrictions described herein shall apply to performance or participation by the Contractor and any of its affiliates or their successors in interest (hereinafter collectively referred to as "contractor") in the activities covered by this clause as prime contractor, subcontractor, co-sponsor, joint venture, consultant, or in any similar capacity. (1) Maintenance of Objectivity: The Contractor shall be ineligible to participate in any capacity in contracts, subcontracts, or proposals therefore (solicited or unsolicited) which stem directly from the Contractor's performance of work under this contract. Furthermore, unless so directed in writing by the Contracting Officer, the Contractor shall not perform any services under this contract on any of its own products or services, or the products or services of another firm if the Contractor is, or has been, substantially involved in their development or marketing. In addition, if the Contractor under this contract prepares a complete, or essentially complete, Statement of Work to be used in competitive acquisitions, the contractor shall be ineligible to perform or participate in any capacity in any contractual effort which is based on such Statement of Work or specifications. Nothing in this subparagraph shall preclude the contractor from competing for follow-on contracts involving the same or similar services. (2) Access To and Use of Government Information: If the Contractor, in the performance of this contract, obtains access to Government information such as plans, policies, reports, studies, financial plans, or data which has not been released or otherwise made available to the public, the contractor agrees that without prior written approval of the Contracting Officer, it shall not: (a) use such information for any private purpose unless the information has been released or otherwise made available to the public; (b) compete for work based on such information .until such information is released or otherwise made available to the public; (c) submit an unsolicited
+
+S5121A-12-Q-0011 Page 18 of 33 proposal to the Government which is based on such information until such information is released or otherwise made available to the public; and (d) release such information unless such information has previously been released or otherwise made available to the public by the Government. (3) Access To and Protection of Proprietary Information: The Contractor agrees that, to the extent it receives or is given access to proprietary data, trade secrets, or other confidential or privileged technical, business, or financial information (hereinafter referred to as "proprietary data") under this contract, it shall not use or
+
+disclose such information for any purpose other than providing the contract support services, and will not use or disclose the information for any personal or other commercial purpose. The Contractor
+further agrees to enter into a written agreement for the protection of the proprietary data of others and to exercise diligent effort to protect such proprietary data from unauthorized use or disclosure. A copy of each such written agreement shall be furnished to the Contracting Officer. In addition, the Contractor shall obtain from each employee who has access to proprietary data under this contract, a written agreement which shall in substance provide that such employee shall not, during his/her employment by the Contractor or thereafter, disclose to others or use for their benefit, proprietary data received in connection with the work under this Contract. c. Subcontracts: The Contractor shall include this clause, including this paragraph, in consulting agreements and subcontracts of any tier when directed by the Contracting Officer. The terms "contract," "Contractor," and "Contracting Officer" will be appropriately modified to preserve the Government's rights. d. Representations and Disclosures: (1) The Contractor represents that it has disclosed to the Contracting Officer, prior to award, all facts relevant to the existence or potential existence of organizational conflict of interests as that term is used in FAR Subpart 9.5. (2) The Contractor agrees that if after award it discovers an organizational conflict of interest with respect to this contract, prompt and full disclosure shall be made in writing to the Contracting Officer which shall include a description of the action the Contractor has taken or proposes to take to avoid or mitigate such conflicts. e. Remedies and Waiver: (1) For breach of any of the above restrictions or for nondisclosure or misrepresentation of any relevant facts required to be disclosed during this contract, the Government may terminate this contract for default, disqualify the Contractor for subsequent related contractual efforts, and pursue such other remedies as may be permitted by law or this contract. If, however, in compliance with this clause, the Contractor discovers and promptly reports an organizational conflict of interest (or potential therefore) subsequent to contract award, the Contracting Officer may terminate this contract for convenience if such termination is deemed to be in the best interest of the Government. (2) The parties recognize that it is impossible to foresee each circumstance to which this clause might be applied in the future and that the clause has effect which will survive the performance of this contract. Accordingly, the Contractor may at any time seek a waiver from the Contracting Officer by submitting a full written description of the requested waiver and the reasons in support thereof. If it is determined to be in the best interests of the Government, the Head of Contracting Activity will grant such a waiver in writing. f. Modifications: Prior to a contract modification, when the Statement of Work is changed to add new work or the period of performance is significantly increased, the Contracting Officer will request, and the Contractor is required to submit, either an organizational conflict of interest disclosure or an update of the previously submitted disclosure or representation.
+
+S5121A-12-Q-0011 Page 19 of 33
+
+252.209-9001 Non-Disclosure of Information The contractor performing work under this contract will likely have access to nonpublic information. Prior to having access to DCMA information system and files, the contractor's agent and each employee working under the contract must sign the following Contractor NonDisclosure Agreements (NDA). Nonpublic information is defined in the following Contractor Non-Disclosure Agreement. Submit NDAs to the Contracting Officer with a copy to the Contracting Officer's Representative, within ten days after award or prior to performance, which ever is sooner.
+
+S5121A-12-Q-0011 Page 20 of 33
+
+CONTRACTOR NON-DISCLOSURE AGREEMENT
+CONTRACT NO. _____________________ DELIVERY/TASK ORDER NO. _______ _______________________________(hereinafter (employee) and _______________ (hereinafter "agent") are employees of ___________________________________ (hereinafter "contractor"). The contractor is providing support services to the Defense Contract Management Agency (DCMA), and is likely to have access to nonpublic information. We, both in a personal, private, professional and employment capacity to the contractor, understand that:
+
+When used in this agreement the term "nonpublic information" is information generally not available to the public, includes Government generated information or information obtained by the Government in the course of Government employee's official duties or position, which would normally not be releasable under the Freedom of Information Act. Nonpublic information also includes proprietary information and personal privacy information. Government generated information includes, but is not limited to, source selection plans, technical evaluation plans, evaluations of technical proposals, evaluations of cost proposals, competitive range determinations, rankings of bids, or proposals , internal and external government generated memorandum, correspondence, documents, data and all information that would not normally be released under 5 U.S.C. 552 (reference (e)). Proprietary information, also known as a trade secret, is information that a company wishes to keep confidential or protected from those outside the company. The Uniform Trade Secrets Act (UTSA) defines trade secrets as "information that derives independent economic value from not being generally known, and that is kept secret through reasonable actions." Proprietary information can include, but is not limited to secret formulas, processes, and methods used in production. It can also include a company's business and marketing plans, salary structure, customer lists, contracts, and computer systems. In some cases, the special knowledge and skills that an employee has learned on the job are considered to be a company's proprietary information. Personal Privacy Information is any information, record item, collection, or grouping of information about an individual that is maintained by an agency, including, but not limited to, his personal address, social security number, education, financial transactions, medical history, and criminal or employment history and that contains his name, or the identifying number, symbol, or other identifying particular assigned to the individual, such as a finger or voice print or a photograph; THEREFORE, we, both in our personal, private, professional and employment capacity to the contractor
+agree and promise: Not to seek access to nonpublic information beyond what is required for the performance of the support services contract; To ensure that my status as a contractor employee is known when seeking access to and receiving such nonpublic information from Government employees; Not to use or disclose such non-public information for any purpose other than providing the contract support services; this includes not disclosing such non-public information to anyone within the company unless required for the contract support services;
+
+S5121A-12-Q-0011 Page 21 of 33
+
+Not to use or disclose the information for any personal, professional or any other purpose; Not to email or remove, in any manner, any information used during the course of the contract, without prior written permission from the Contracting Officer; and To promptly notify the Contracting Officer and the DCMA Office of Counsel of any attempt by an individual (including any contractor personnel, company or Government Representative) to gain unauthorized access to nonpublic information, and of any disclosure of such information to unauthorized parties. Such notification shall include the name and organization, if available, of the individual, company or Government Representative seeking access to such information. To return any nonpublic information given to me pursuant to this agreement, including any transcriptions of nonpublic information to which I was given access, (if not already destroyed). The contractor and I understand that any unauthorized use, release or disclosure of nonpublic information in violation of this agreement will subject me and the contractor to administrative, civil or criminal remedies as may be authorized by law. The contractor and I acknowledge that the owner of any proprietary information improperly disclosed stands as an intended third-party beneficiary of this non-disclosure agreement. In the event of an unauthorized disclosure of proprietary information, the owner of the information may seek legal recovery under this nondisclosure agreement, even though the information owner is not a formal party to the agreement. The contractor and I agree to indemnify and hold harmless the United States Government from any claim or action for any damages caused by his/her improper handling or disclosure of such information received. The contractor and I understand that an improper release of such information may subject the contractor, it, him/her and his/her company or institution, to administrative and civil remedies by the Government, including those discussed below. The undersigned understands that improper handling or disclosure of such information received from the Government may be considered by the Government as relating to suspension and debarment as Part 9.4 of the Federal Acquisition Regulation (FAR), and that any improper handling of such information received may also be considered as an issue of contractor responsibility under FAR 9.1, and further may be considered in evaluating past performance under the FAR.. Further, any willful mishandling may subject him/her, his/her company or institution to administrative or criminal penalties under several statutes including, but not limited to, the Economic Espionage Act, 18 U.S.C. 1831, and the Trade Secrets Act, 18 U.S.C. 1905. The aforementioned nonpublic information is Government property and the theft, or conversion without authority, of such property is potentially punishable under 18 U.S.C. 641. A breach of this agreement will be considered a breach of the contract and may be reason for termination for default or termination for cause.
+
+Employee SIGNATURE: _______________________ DATE: _________________ AGENT OF CONTRACTOR WHO HAS LEGAL AUTHORITY TO BIND THE COMPANY: ___________________
+(Signature)
+
+___________________
+(Printed Name)
+
+_________
+(Date)
+
+S5121A-12-Q-0011 Page 22 of 33
+
+252.212-7001 CONTRACT TERMS AND CONDITIONS REQUIRED TO IMPLEMENT STATUTES OR EXECUTIVE ORDERS APPLICABLE TO DEFENSE ACQUISITIONS OF COMMERCIAL ITEMS (JUN 2012) (a) The Contractor agrees to comply with the following Federal Acquisition Regulation (FAR) clause which, if checked, is included in this contract by reference to implement a provision of law applicable to acquisitions of commercial items or components. _X__ 52.203-3, Gratuities (APR 1984) (10 U.S.C. 2207). (b) The Contractor agrees to comply with any clause that is checked on the following list of Defense FAR Supplement clauses which, if checked, is included in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items or components. (1) _X__ 252.203-7000, Requirements Relating to Compensation of Former DoD Officials (SEP 2011) (Section 847 of Pub. L. 110-181). (2) ____ 252.203-7003, Agency Office of the Inspector General (APR 2012)(section 6101 of Pub. L. 110-252, 41 U.S.C. 3509). (3) ____ 252.205-7000, Provision of Information to Cooperative Agreement Holders (DEC 1991) (10 U.S.C. 2416). (4) _X__ 252.219-7003, Small Business Subcontracting Plan (DoD Contracts) (JUN 2012) (15 U.S.C. 637). (5) ____ 252.219-7004, Small Business Subcontracting Plan (Test Program) (JAN 2011) (15 U.S.C. 637 note). (6)(i) _X__ 252.225-7001, Buy American and Balance of Payments Program (JUN 2012) (41 U.S.C. chapter 83, E.O. 10582). (ii) ____ Alternate I (OCT 2011) of 252.225-7001. (7) ____ 252.225-7008, Restriction on Acquisition of Specialty Metals (JUL 2009) (10 U.S.C. 2533b). (8) ____ 252.225-7009, Restriction on Acquisition of Certain Articles Containing Specialty Metals (JUN 2012) (10 U.S.C. 2533b). (9) ____ 252.225-7012, Preference for Certain Domestic Commodities (JUN 2012) (10 U.S.C. 2533a). (10) ____ 252.225-7015, Restriction on Acquisition of Hand or Measuring Tools (JUN 2005) (10 U.S.C. 2533a). (11) ____ 252.225-7016, Restriction on Acquisition of Ball and Roller Bearings (JUN 2011) (Section 8065 of Pub. L. 107-117 and the same restriction in subsequent DoD appropriations acts). 12) ____ 252.225-7017, Photovoltaic Devices (JUN 2012) (Section 846 of Pub. L. 111-383). 13)(i) _X__ 252.225-7021, Trade Agreements (JUN 2012) (19 U.S.C. 2501-2518 and 19 U.S.C. 3301 note). (ii) ____ Alternate I (OCT 2011) of 252.225-7021. (iii) ____ Alternate II (OCT 2011) of 252.225-7021.
+
+S5121A-12-Q-0011 Page 23 of 33 (14) ____ 252.225-7027, Restriction on Contingent Fees for Foreign Military Sales (APR 2003) (22 U.S.C. 2779). (15) ____ 252.225-7028, Exclusionary Policies and Practices of Foreign Governments (APR 2003) (22 U.S.C. 2755). (16)(i) ____ 252.225-7036, Buy American Act--Free Trade Agreements--Balance of Payments Program (JUN 2012) (41 U.S.C. chapter 83 and 19 U.S.C. 3301 note). (ii) ____ Alternate I (JUN 2012) of 252.225-7036. (iii) ____ Alternate II (JUN 2012) of 252.225-7036. (iv) ____ Alternate III (JUN 2012) of 252.225-7036. (v) ____ Alternate IV (JUN 2012) of 252.225-7036. (vi) ____Alternate V (JUN 2012) of 252.225-7036. (17) ____ 252.225-7038, Restriction on Acquisition of Air Circuit Breakers (JUN 2005) (10 U.S.C. 2534(a)(3)). (18) ____ 252.225-7039, Contractors Performing Private Security Functions (JUN 2012) (Section 862 of Pub. L. 110-181, as amended by section 853 of Pub. L. 110-417 and sections 831 and 832 of Pub. L. 111-383). (19) ____ 252.226-7001, Utilization of Indian Organizations, Indian-Owned Economic Enterprises, and Native Hawaiian Small Business Concerns (SEP 2004) (Section 8021 of Pub. L. 107-248 and similar sections in subsequent DoD appropriations acts). (20) ____ 252.227-7013, Rights in Technical Data--Noncommercial Items (FEB 2012), if applicable (see 227.7103-6(a)). (21) ____ 252.227-7015, Technical Data--Commercial Items (DEC 2011) (10 U.S.C. 2320). (22) ____ 252.227-7037, Validation of Restrictive Markings on Technical Data (JUN 2012), if applicable (see 227.7102-4(c)))(10 U.S.C. 2321). (23) _X__ 252.232-7003, Electronic Submission of Payment Requests and Receiving Reports (MAR 2008) (10 U.S.C. 2227). (24) ____ 252.237-7010, Prohibition on Interrogation of Detainees by Contractor Personnel (NOV 2010) (Section 1038 of Pub. L. 111-84) (25) ____ 252.237-7019, Training for Contractor Personnel Interacting with Detainees (SEP 2006) (Section 1092 of Pub. L. 108-375). (26) _X__ 252.243-7002, Requests for Equitable Adjustment (MAR 1998) (10 U.S.C. 2410). (27) ____ 252.246-7004, Safety of Facilities, Infrastructure, and Equipment For Military Operations (OCT 2010) (Section 807 of Pub. L. 111-84). (28) ____ 252.247-7003, Pass-Through of Motor Carrier Fuel Surcharge Adjustment to the Cost Bearer (SEP 2010) (Section 884 of Pub. L. 110-417). (29)(i) _X__ 252.247-7023, Transportation of Supplies by Sea (MAY 2002) (10 U.S.C. 2631).
+
+S5121A-12-Q-0011 Page 24 of 33 (ii) ____ Alternate I (MAR 2000) of 252.247-7023. (iii) ____ Alternate II (MAR 2000) of 252.247-7023. (iv) ____ Alternate III (MAY 2002) of 252.247-7023. (30) ____ 252.247-7024, Notification of Transportation of Supplies by Sea (MAR (2000) (10 U.S.C. 2631). (31) ____ 252.247-7027, Riding Gang Member Requirements (OCT 2011) (Section 3504 of Pub. L. 110-417). c) In addition to the clauses listed in paragraph (e) of the Contract Terms and Conditions Required to Implement Statutes or Executive Orders--Commercial Items clause of this contract (FAR 52.212-5), the Contractor shall include the terms of the following clauses, if applicable, in subcontracts for commercial items or commercial components, awarded at any tier under this contract: (1) 252.225-7039, Contractors Performing Private Security Functions (JUN 2012) (Section 862 of Pub. L. 110-181, as amended by section 853 of Pub. L. 110-417 and sections 831 and 832 of Pub. L. 111-383). 2) 252.227-7013, Rights in Technical Data--Noncommercial Items (FEB 2012), if applicable (see 227.7103-6(a)). (3) 252.227-7015, Technical Data--Commercial Items (DEC 2011), if applicable (see 227.7102-4(a)). (4) 252.227-7037, Validation of Restrictive Markings on Technical Data (JUN 2012), if applicable (see 227.71024(c)). (5) 252.237-7010, Prohibition on Interrogation of Detainees by Contractor Personnel (NOV 2010) (Section 1038 of Pub. L. 111-84). (6) 252.237-7019, Training for Contractor Personnel Interacting with Detainees (SEP 2006) (Section 1092 of Pub. L. 108-375). (7) 252.247-7003, Pass-Through of Motor Carrier Fuel Surcharge Adjustment to the Cost Bearer (SEP 2010) (Section 884 of Pub. L. 110-417). (8) 252.247-7023, Transportation of Supplies by Sea (MAY 2002) (10 U.S.C. 2631). (9) 252.247-7024, Notification of Transportation of Supplies by Sea (MAR 2000) (10 U.S.C. 2631). (End of clause)
+
+252.228-9000 REQUIRED INSURANCE In compliance with FAR 52.228-5, "Insurance-Work on a Government Installation," insurance is required as follows: (a) The contractor shall procure and maintain during the entire period of contract performance under this contract the following minimum insurance: TYPE Workman's Compensation & Employer's MINIMUM AMOUNT $100,000.00
+
+S5121A-12-Q-0011 Page 25 of 33 Liability Insurance NOTE: In jurisdictions where all occupational diseases are not compensable under applicable law, insurance for occupational disease shall be required under the employer's liability section of the insurance policy. Comprehensive General Liability Insurance Bodily Injury Per occurrence Comprehensive Automobile Liability Insurance Bodily Injury Per Person Bodily Injury Per occurrence Property Damage Per occurrence $500,000.00
+
+$200,000.00 $500,000.00 $ 20,000.00
+
+(b) Prior to the commencement of work hereunder, the contractor shall furnish to the Contracting Officer a certificate or written statement of the above required insurance. The policies evidencing required insurance shall contain an endorsement to the effect that cancellation or any material change in the policies adversely affecting the interests of the Government in such insurance shall not be effective for such period as may be prescribed by the laws of the State in which this contract is to be performed and in no event less than (30) days after written notice thereof to the Contracting Officer.
+
+252.231-9000 TRAVEL AUTHORIZATION REQUIREMENTS The Contractor will be reimbursed for travel as authorized under orders issued under this BPA. All travel shall be approved by the COTR prior to commencement of travel. All travel, airfare, per diem, and car rental, required and authorized by the Contracting Officer's Representative, shall be performed and invoiced IAW FAR 31.205-46 and the Joint Travel Regulation, Volume 2, DoD Civilian Personnel, Appendix A, in effect at the time travel is performed. Costs shall be allowable only if the following information is documented -- (i) Date and place (city, town, or other similar designation) of the expenses; (ii) Purpose of the trip; and (iii) Name of person on trip and that person's title or relationship to the contractor.
+
+252.232-9003
+
+Receipt, Acceptance, and Payment (June 2012)
+
+This contract includes DFARS clause 252.232-7003, Electronic Submission of Payment Invoices. The Defense Contract Management Agency (DCMA) has implemented Wide Area Work Flow Receipt and Acceptance (WAWFRA) as its method of electronic submission of invoices and government inspection and acceptance, and it is the only acceptable format for submitting invoices and receiving reports. Any payment request that is not submitted in electronic form will be rejected by the Defense Finance Accounting Services (DFAS). If the contractor is unable to submit invoices using WAWF-RA, the contractor should immediately notify the Contracting Officer and provide rationale as to why the contractor is unable to use WAWF-RA. Information and training on WAWF-RA can be found at https://wawf.eb.mil/. Contractor shall create request for payment in accordance with WAWF training segment under Vendor, Create Document, Invoice and Receiving Report (Combo). The following information is provided to help streamline the payment process: 1. Invoices shall be submitted:
+
+S5121A-12-Q-0011 Page 26 of 33 [X] After Delivery of Supplies [ ] Monthly (after performance) [ ] Monthly (after performance - submit invoice prior to the 15th of the month) [ ] Quarterly (after performance) [ ] Yearly (after performance) [ ] In advance (use with FAR clause 52.213-2 ­ Invoices) 2. The contractor shall submit invoices using the following format: [ ] Invoice as 2-in-1 (Services only) [X] Invoice and Receiving Report (Combo) (For material and service) 3. The following codes are required to properly route invoices and/or receiving reports through WAWF-RA. IMPORTANT NOTE: When preparing the Invoice and Receiving Report (Combo), the Contractor MUST change Acceptance point from "destination" to "other" in WAWF-RA to allow the payment to process. CAGE/DODAAC [PCO fill-in] S5121A S5121A [PCO fill-in] [PCO fill-in] S5105A [PCO fill-in] WAWF Fields Matches data in contract Matches data in contract Matches data in contract Matches data in contract Destination Destination change to Other Matches data in contract
+
+Contractor CAGE Code Issue By DODAAC Admin Office DODAAC Ship To DODAAC Inspector DODAAC Acceptor DODAAC Payment Office DODAAC
+
+4. When creating invoices and/or receiving reports, the contractor should select the "additional E-mail notifications" link and enter the e-mail addresses shown below. The government will advise the contractor of any changes to email addresses by email vs. contract modification. Upon receipt of changes, the contractor shall include the new email notifications when creating invoices and/or receiving reports. Inspector (COTR) Acceptor (COR) Contract Specialist [PCO fill-in: Name, email address & phone number] [PCO fill-in: Name, email address & phone number] [PCO fill-in: Name, email address & phone number]
+
+5. Payment information can be accessed from the DFAS website at http://www.dfas.mil. The contract/order number or invoice number is required when inquiring about the status of a payment. 6. Questions concerning payment should be directed to the Defense Finance Accounting Services (DFAS) at 1-800756-4571. END CLAUSE
+
+252.237-9000 Supervision of Employees The Contractor's employees shall remain under the Contractor's direct supervision at all times. Although the Government may coordinate requirements within the scope of the contract and task orders, detailed instructions for Contractor employees and supervision of individual workers shall remain the responsibility of the Contractor.
+
+S5121A-12-Q-0011 Page 27 of 33
+
+252.242-9001 Technology Refresh (MAY 2012) After contract award, the Contractor is encouraged to independently propose additions and engineering changes to the equipment, software specifications or other requirements of this contract. These changes may be proposed for reasons of economy, improved performance, to save energy, or resolve increased data processing requirements. If the proposed changes are acceptable to both parties, the Contractor shall submit a price change proposal to the Government for evaluation. If the item was purchased under a GSA Federal Supply Schedule, any discount granted to the Government off the GSA price at the time of contract award will be applied to the new price for the item with technology refresh. Those proposed changes that are acceptable to the Government will be processed as modifications to the contract.
+END CLAUSE
+
+ADDITIONAL INFORMATION Instructions to Offerors Request for Quotation (RFQ) # S5121A-12-Q-0011 Information Technology Service Management (ITSM) Service Desk Software Defense Contract Management Agency (DCMA), Procurement Center 3901 A Avenue, Building 10500, Fort Lee, Virginia 23801-1809 1. Description of Requirement DCMA plans to establish a Single Award, Blanket Purchase Agreement (BPA) for ITSM Service Desk Software. The Technical Specifications (Attachment 1) describe the minimum equipment requirements. DCMA is issuing this RFQ to solicit vendors for the purpose of establishing a Single Award BPA for ITSM Service Desk Software. DCMA will conduct this acquisition using Federal Acquisition Regulation (FAR) Part 15. 2. RFQ Schedule Questions submitted in response to this RFQ should be made to Luanne Stamper via email address: luanne.stamper@dcma.mil on or before September 6, 2012, 11:00 a.m. Eastern time. Quotes/Proposals submitted in response to this RFQ shall be submitted via e-mail to luanne.stamper@dcma.mil on or before September 14, 2012, 11:00 a.m. Eastern Standard Time. No late quotes will be considered. 3. Type of Contract Firm Fixed Price 4. Schedule of Supplies The Awardee shall deliver all required supplies set forth in the Technical Specifications document, entitled Technical Specifications, ITSM Service Desk, Attachment 1 to this RFQ. The contractor shall provide Contract Data Requirements IAW Technical Specifications, Section 3, Deliverables. The cost of preparation and submission of the Contract Data Requirements List (CDRLs), indicated as Not Separately Priced (NSP), are ancillary to performance. CDRLs should be numbered A0002, A0002, etc. (Exhibit 1 to this RFQ). Inspection and Acceptance Inspection and acceptance of the supplies and deliverables to be furnished shall be performed by the Contracting Officer's Technical Representative (COTR). The Contracting Officer or the COTR may inspect any aspect of performance under this contract at any time. Government inspection and acceptance for all contractual items listed herein will be at destination by the designated COTR.
+
+S5121A-12-Q-0011 Page 28 of 33 5. Performance and Deliveries For each delivery order issued against this BPA, the Contractor must deliver supplies within the requirement parameters stated in the Technical Specifications. Place of Performance. Place of performance/ delivery under this agreement shall be performed at CONUS DCMA locations. Exact addresses will be provided at the time of award/delivery order. The contractor shall not perform any work on a Government site without prior coordination from the Contracting Officer's Technical Representative (COTR). Period of Performance. The period of performance for this effort will be one year from time of award with four, one-year option periods. Option periods will be unilaterally exercised by the Government. All terms and conditions applicable to the base period shall extend to the options unless otherwise specified or agreed upon. All CLINs that are followed with the word "OPTION" are optional unilaterally at the Government's discretion. The contractor shall not proceed with any effort associated with the performance of these CLINs unless and until the options are formally exercised by the Contracting Officer. The exercise of options shall be at the discretion of the Government.
+
+Any/all electronic and information technology (EIT) procured through this effort must meet the applicable accessibility standards at 36 CFR 1194. 36 CFR 1194 implements Section 508 of the Rehabilitation Act of 1973, as amended, and is viewable at http://www.section508.gov Contractors must be registered (active and updated) with System for Award Management (SAM). 7. INSTRUCTIONS TO OFFERORS - Quotation Submission Requirements In order to be eligible for award, quotes submitted must provide all information specified herein. Quotes that fail to furnish the required information, or reject the terms and conditions of the solicitation may be excluded from consideration. Contractor's quotation will be evaluated in accordance with the evaluation criteria stated below. The quote shall consist of the following parts: PART I - Administrative Data PART II - Technical PART III - Past Performance PART IV - Price Quote PART 1 ­ Administrative Data a. Transmittal letter. The transmittal letter to the offeror's proposal should describe in a brief narrative form any features that the offeror wishes identified before Government evaluation is initiated. Include a statement regarding acceptability of proposed contract schedule, clauses and general provisions, any recommendations, and any exceptions taken. In the event the offeror takes any exceptions to, or sets any conditions for its proposal under the subject solicitation, such exceptions or conditions shall be set forth in the transmittal letter. The offer must be signed by a representative of the offeror's company that has the legal authority to commit the company. b. Offerors must complete or respond to all requests for information contained in the clauses shown in full text. c. Provide a copy of any subcontract, teaming, or consultant commitment or agreement containing a description of and the extent of their role in the requirement, and a statement of commitment on their part to satisfy the requirements of this solicitation.
+
+S5121A-12-Q-0011 Page 29 of 33
+
+d. Provide the following information: ˇ Tax Identification Number (TIN) ˇ Dun & Bradstreet Number (DUNS)
+
+ˇ
+ˇ ˇ ˇ ˇ ˇ ˇ
+
+Complete Business Mailing Address CAGE Code NAICS Code Contact Name Contact Phone Contact Fax Number Contact email address
+
+PART II - Technical This will be a FAR Part 15 Best Value Selection with the following evaluation factors: ˇ Factor 1 Technical Approach Factor 2 Operational Software Maintenance and Support Factor 3 Licensing Agreements Factor 4 Installation Factor 5 Past Performance Factor 6 Price
+
+ˇ
+ˇ ˇ
+
+ˇ
+ˇ
+
+The non-price factors are of equal importance to each other and when combined are significantly more important than price. Offerors must provide written technical information that demonstrates their qualifications to meet all requirements of the Technical Requirements. Prepare the technical proposal in the same sequence as the technical evaluation criteria delineated in paragraph 7. Technical information must include the following: Factor 1 - Technical Approach For each item described in the Technical Specifications the offeror's proposal must provide the part number, manufacturer and description of the equipment/software that is proposed for that requirement. The description shall specifically identify how the proposed solution meets or exceeds each requirement listed for each item. 1) 2) 3) 4) 5) 6) 7) Run-time System Configuration Service Desk Incident Management Self-Service Problem Management Analytics Reporting Tool Knowledge Base
+
+The offeror shall include discussion of meeting the General Specifications spelled out in the requirements. The offeror shall include a detailed statement of potential problems involved with preparing a software image and performing an installation/data migration.
+
+S5121A-12-Q-0011 Page 30 of 33
+
+The offeror shall include a detailed statement and discussion of anticipated difficulties and problem areas, together with potential or recommended approaches for their resolution. Factor 2 - Operational Software Maintenance and Support The Offeror's proposal must describe how they will meet the Software Maintenance and support requirements specified in the technical specifications. The offeror must describe the infrastructure in place to meet these requirements. The description should specifically identify how the proposed solution meets or exceeds each minimum requirement listed.
+
+Factor 3 - Licensing Agreements - Page Limitation: None Offerors must submit all applicable Software Licensing Agreements that are customarily provided to the public.
+
+Factor 4 - Installation The Offeror's proposal must address their proposal for completing the installation of the service desk software as described in the technical specifications. The Offeror's proposal must address their process and infrastructure in place for providing individuals that have the appropriate security clearance as well as their plan for coordinating with DCMA to confirm these clearances. PART III - Past Performance Factor 5 - Past Performance Past performance is an indicator of a contractor's ability to perform satisfactorily on future awards and is a record of contractor's conformance to specifications, quality conformance, adherence to contract schedules, and commitment to customer satisfaction. The Government will utilize the Past Performance Information Retrieval System (PPIRS) at www.ppirs.gov to evaluate contractor past performance for those contractors having previously performed on a Federal Government contract(s). PPIRS is a web-enabled, government-wide application that collects quantifiable and narrative contractor past performance information from all Federal contracting agencies and provides a contractor's previous performance based on Federal Stock Class (FSC) or Product Service Code (PSC). In the event no information is available in PPIRS, the offeror may be requested to submit information on past and current Federal, State and local government as well as private sector contracts performed by the offeror within the last three years that are similar in nature to this acquisition; or may assign a neutral rating for the offeror. By submitting past performance information, the offeror agrees to permit the Government's representative to contact the listed reference and inquire of the offeror's performance. PART IV - Price Quote Factor 6 - Price The offeror's price quote must utilize Attachment 2, the Pricing Spreadsheet, that must detail the offerors current price and their proposed discounted offer for Base and Option Periods.
+
+S5121A-12-Q-0011 Page 31 of 33 The quantities provided in the pricing spreadsheet (Attachment 2) are estimates only and are provided for evaluation purposes only. Actual order quantities may vary. The offeror shall carefully review the Technical Specification and quote all costs that will be necessary for the offeror to successfully perform the contract. Any information obtained will be identified as "Source Selection Sensitive Information."
+
+END SECTION L EVALUATION AND AWARD CRITERIA Quotes submitted in response to this RFQ will be evaluated in accordance with the evaluation criteria set forth below. It is imperative that offerors respond directly to each area specified and to ensure that their quote is submitted on the most favorable terms, since less than their best potential could result in exclusion of the quote from further consideration. Responses which merely repeat the Technical Requirements cannot be considered as being responsive to the requirements of the RFQ. Assurances of experience, capability or qualifications, without a clear demonstration to support the claim, may adversely influence the evaluation of the quote. The Government will be making a best value award decision. Offers will be reviewed and evaluated to determine which offers comply with the solicitation requirements and provides the best value to the government. Evaluation of the offers will be based upon the following factors: Technical Approach, Operational Software Maintenance and Support, Licensing Agreements, Installation, Past Performance and Price. The non-price factors are of equal importance and when combined are significantly more important than price. If two or more offers are equal with respect to their overall non-price factors, price will become the deciding factor. Evaluation of price will be accomplished separately from the technical evaluation. Once the non-price submissions have been evaluated, the evaluated quotations/ proposals will then be compared to the price quotes as submitted to determine the best overall value for the Government.
+
+PART I ­ Administrative Data Quotes that fail to furnish the required information, or reject the terms and conditions of the solicitation may be excluded from consideration.
+
+PART II - Technical Factor 1 - Technical Approach Specifications - The offeror must demonstrate in their proposal the ability to provide equipment and ancillary services that meets or exceeds the Government's required minimum Technical Specifications. 1) 2) 3) 4) 5) 6) 7) Run-time System Configuration Service Desk Incident Management Self-Service Problem Management Analytics Reporting Tool Knowledge Base
+
+S5121A-12-Q-0011 Page 32 of 33 Offerors approaches for resolution of anticipated difficulties and problems areas will be evaluated to determine if the approach for resolution indicates a realistic ability to perform the requirements. Authorized reseller of the proposed solution. Factor 2 - Operational Software Maintenance and Support Offeror will be evaluated based on meeting the government's requirements for a 8 years of software maintenance and support, and continued integration troubleshooting services. The offeror must describe how issues or problems will be identified and resolved. Proposals will be evaluated to determine if the offeror can rapidly respond to problems. Factor 3 - Licensing Agreements Software Licensing Agreement(s) will be reviewed to determine 1) consistency with Federal law; and 2) meets the Government's needs. The license will be determined acceptable or not acceptable.
+
+Factor 4 - Installation Installation will be evaluated to determine if it meets the government's minimum requirements. PART III - Past Performance Factor 5 - Past Performance Offeror's past performance will be evaluated to determine how well the offeror demonstrated compliance with prior contract requirements for work similar in nature to the work described in the Technical Specification. The Government will utilize the Past Performance Information Retrieval System (PPIRS) at www.ppirs.gov to evaluate contractor past performance for those contractors having previously performed on a Federal Government contract(s). PPIRS is a web-enabled, government-wide application that collects quantifiable and narrative contractor past performance information from all Federal contracting agencies and provides a contractor's previous performance based on Federal Stock Class (FSC) or Product Service Code (PSC). A neutral rating may be applied for any contractor not having data available within PPIRS. The Government may also consider past performance information obtained through source(s) provided from the offeror or other sources. Past performance information will be evaluated based upon a comparative assessment among offerors.
+
+PART IV ­ Price Factor 6 - Price The total offered price will be determined by adding the total price for all options to the total price for the basic requirements. An offer may be rejected or not be considered for award if it is materially unbalanced. An offer is considered to be materially unbalanced when it is based on prices significantly less for some deliverables and prices which are significantly higher for other similar deliverables; and/or when discrepancies are present between prices for the basic requirement and prices for the option requirement. Evaluation of options shall not obligate the Government to exercise the options(s). Offerors price proposal must include Attachment 2, Pricing Spreadsheet, containing the offerors proposed price. Any significant inconsistency, if unexplained, raises a fundamental issue of the offerors understanding of the nature and scope of the work required. It also may reflect on the offerors ability to perform the contract within financial restraints and may be cause for not selecting the proposal for award.
+
+S5121A-12-Q-0011 Page 33 of 33 Evaluation of price will be accomplished separately from the technical evaluation. Once the technical proposals have been evaluated, the evaluated technical proposals will then be compared to the price proposals as submitted to determine the best overall buy for the Government.
+
+The buyer/primary POC for RFQ: Luanne Stamper, Contract Specialist Defense Contract Mangement Agency Procurement Center, DCMAN-W 3901 A Avenue, Building 10500 Fort Lee, VA 23801 RFQ Attachments
+
+The secondary POC for RFQ: Richard Deiter, Contracting Officer Defense Contract Management Agency Procurement Center, DCMAN-W 3901 A Avenue, Building 10500 Fort Lee, VA 2380
+
+Attachment 1 ­ Technical Specifications Attachment 2 - Pricing Spreadsheet Exhibit 1 ­ Contract Data Requirements List (CDRLs)
+
+

@@ -1,0 +1,994 @@
+
+
+
+Section SF 1449 - CONTINUATION SHEET
+
+PERFORMANCE WORK STATEMENT
+                                                            PERFORMANCE WORK STATEMENT
+                                                                       FOR
+                                               INTEGRATED LIBRARY SYTEM UNDER SOFTWARE AS A SERVICE
+                                                                  16 August 2011
+
+
+
+
+
+GENERAL INFORMATION/DESCRIPTION OF SERVICES
+
+
+
+1 USAFA Library Mission
+
+
+The mission of the United States Air Force Academy (USAFA) Academic Library is to provide all library services required by the faculty, staff,
+cadets, and other authorized patrons of the USAF Academy; to requisition, organize, house and maintain all library materials; to create a
+reference and basic research collection in the fields of air power and aerospace history; and to establish and maintain a special collection of
+unique and rare items pertinent to the growth and development of the USAF Academy.
+
+
+2 USAFA Library Services
+
+
+The Academy Libraries provide reference, research and reading collections on a collegiate and professional level to support the curricular and
+mission needs of the USAF Academy. They also provide professional and recreational reading materials for the USAF Academy community.
+
+
+3 General Description of Services
+
+
+
+The USAF Academy (USAFA) Libraries require Integrated Library System support under SaaS for the core functions of: Cataloging, Circulation
+Control, and Public Access modules. Additional functions include: Academic Reserves, Acquisitions & Serials Control with Electronic Data
+Interchange (EDI), Authority Control, Backup Circulation, Digital Media Archive, Graphical User Interface for Public Access, Reports, utility
+for importing Machine Readable Cataloging (MARC) records from Z39.50 sites, utilization of an Oracle database, VPN subscription, and a Z39.50
+server.  The service provider is responsible to provide for all systems administration, data base services, data integrity, service maintenance,
+corrective and emergency maintenance, preventative maintenance, data file management, backup and recovery, adaptive and perfective maintenance,
+and technical support necessary to deliver fully operational services.
+
+
+4 Technical and Support Requirements
+
+
+
+
+
+
+   2  System support requirements include:
+
+       1. Vendor migration of current SirsiDynix Symphony data to vendor hosted hardware (SaaS).
+       2. Vendor will provide a complete server, including all server resources -- CPU, memory, disk storage, server-side networking, etc.
+       3. All production server components must be redundant: CPU, memory, disks, and networking cards, etc.
+       4. If more performance is required based on usage or software enhancements, vendor’s servers will be upgraded or replaced, without
+          additional cost to USAFA.
+       5. Backups will be performed daily.
+       6. System will be managed and monitored proactively. System will notify Administrators of performance, free disk space, free memory, and
+          network errors or degradation.
+       7. Major system components must support predictive monitoring; so that components can be replaced before they fail and cause interruption.
+       8. System will be actively monitored for security and regularly patched to the latest OS security and stability releases.
+       9. System will be implemented on Oracle RDBMS.
+      10. System will be protected via firewalls and other security devices.
+      11. Site will receive 24 x 7 system and technical support for application, database or system outages
+      12. Application software upgrades will be scheduled by USAFA but performed by vendor staff.
+      13. System will be compliant with industry standards: MARC 21, XML, Unicode, EDI, and Z39.50.
+      14. System must support operations at McDermott Library, the Base “Community Center” Library, and the Center for Education Excellence, and
+          DFENG Blue Tube Lab.
+      15. System authentication passwords for staff must conform to USAF requirements: minimum 9 characters, 2 capitals, 2 lower case, 2 numbers,
+          and 2 special characters.
+      16. The service provider shall provide telephone and e-mail support to users and application support for the USAFA Integrated Library
+          System service during core operating hours.
+
+   2. Application functionality required:
+      1. Academic Reserves
+   a. Management of specialized reserve loan policies and other parameters, similar to Circulation module.
+   b. Require ability to search for items by instructor and course.
+     1. Acquisitions & Fund Accounting
+   a. Must provide for tracking of materials from ordering through claiming, receiving, invoicing, and payment.
+   b. Funds accounting for library expenditures; must track totals budgeted, encumbered, and spent, by vendor, budget fund, etc.
+   c. EDI X-12: must support all transactions formats currently adopted by Serials Industry Systems Advisory Committee (SISAC) Claims/Claim
+      Response /Invoice /Dispatch Information/Functional Acknowledgment and electronically transmit and receive information in these formats.
+   d. 9xx Book order Loader – must allow import of MARC records for new book orders and record order details in the bibliographic database from
+      vendors:  Baker and Taylor TitleSource II, Ingram iPage, BWI TitleTales, Brodart Bibz.com, Yankee Book Peddler GOBI, Blackwell Collection
+      Manager, and Harrassowitz OttoEditions.
+     2. Bibliographic & Inventory Control
+   a. Must be capable of supporting multiple MARC and non-MARC formats in a single database.
+   b. Must include Unicode support for Romanized and non-Romanized scripts.
+     3. Cataloging & Authority Control
+        a. MARC editor with full help and validation for creation and management of bibliographic and authority records.
+        b. Item group editor for attaching and maintaining library holdings data on MARC records.
+        c. Capability of producing book and spine labels.
+        d. Manage validation of author & subject headings for bibliographic records.
+        e. Manage cross-references for improper forms of heading, related terms, etc.
+   f. Utility for capturing and loading MARC records from a Z39.50 server directly into the library’s database.
+     4. Circulation Control
+   a. Must allow creation of policies for managing check-out, return, and overdue notice processes for multiple branches.
+   b. Must have built-in offline mode to handle periods of power and network outages.
+     5.  Digital Media Archive
+   a. Must support a hierarchical classification structure to allow end-user browsing of archived material by context.
+   b. Must allow use of Dublin Core metadata scheme for digital resources and other special items.
+   c. Must have OAI-PMH compatibility for harvesting and sharing metadata.
+   d. Must include a built-in OCR utility that will extract the text from image files, generate a text file that can be indexed, and
+      automatically associate that extracted text file with the original image file.
+   e. Requires access control and authentication management -- ability to restrict or limit access to protected assets, item-by-item, or batch,
+      and define different viewing privileges by individual user, group, or location.
+   f. Must be capable of being integrated with the ILS Public Access application.
+     6. Public Access
+   a. Must support multiple interfaces for different libraries, users, and environments.
+   b. Must allow multiple repository searches.  Can search multiple data types – traditional collection materials, PDFs, websites, Word documents
+      and more – including any Z39.50 target or compatible database, with results presented on a single page.
+   c. Must allow items to be highlighted using thumbnail images.
+   d. Must provide guided discovery with faceted and federated search capability.
+   e. Requires online account solutions to empower patrons, allowing them to manage their library account, place holds, or submit interlibrary
+      loan, purchase, or other requests.
+   f. Must support recommended reading lists, pre-defined searches (such as New Books, Flying Aces, Medal of Honor, etc.)
+   g.  Must allow highlighting specific resources or arrange materials from across the library collection into digital collections based on
+      theme, audience, or location.
+   h. Must provide “Did you mean” suggestions in cases of misspelled or incomplete queries.
+   i. Must provide alternate graphical search interface for children and other patrons.
+     7. Reports
+        a. Provides capability of tracking statistical and management information by various patron and item codes.
+        b. Must provide report templates and utilities, each of which can be set up and scheduled to run, or customized and saved as a new
+           template.
+        c. Must provide multiple scheduling, distribution, and output options.
+        d. Must include housekeeping tasks like updating indexes, changing codes on items or patrons, and removing items or patrons.
+     8. Serials Control
+   a. Require ability to create, edit, and remove serials control records.
+   b. Must manage prediction, receipt, and routing of all serial subscriptions.
+   c. Must be capable of handling combined issues, special issue, missing issues, or other irregularities.
+   d. Must track issues received and display data in public catalog
+     9. Staff Client (40 minimum)
+   a. Requires web-based staff client for performing acquisitions, cataloging, circulation, and serials functions, etc.
+   b. Requires VPN support to secure/encrypted staff connections to the hosted server.
+    10. Z39.50 server -- lets libraries on different automation systems search and retrieve information from USAFA libraries via a Z39.50
+        compliant client.
+
+
+
+      5 Training: Vendor will provide web-based training to acquaint relevant staff with any new applications/capabilities, sufficient for staff
+      to implement new functions.
+
+
+
+
+
+
+Services Summary
+
+
+Table 1 below shows the Service Summary (SS) for this PWS.
+
+|Specification Item                       |PWS Para|Performance Objective                              |Threshold                         |
+|Maintains Data Securely                  |1.4.1   |Any data breaches are reported to the USAFA staff  |No more than 1 per year.          |
+|                                         |        |within 24 hours of incident                        |                                  |
+|Software upgrades will be installed with |1.4.1   |Provide parts/ software within 1 business day.     |No more than 2 late responses per |
+|minimal disruption to Library Operations |        |                                                   |year.                             |
+|Maintains full running  capability of    |1.1     |No unscheduled downtime or reduced performance to  |No more than 2 occurrences per    |
+|server                                   |        |exceed 2 duty days.                                |year.                             |
+
+                                                            Table 1. Services Summary
+
+
+GOVERNMENT-FURNISHED PROPERTY AND SERVICES
+
+
+
+
+The government will provide the service provider access to facilities (i.e.,  McDermott  Library)  with  access  to  the  hardware  and  software
+necessary for operational services. Under this effort, the service  provider  provides  services  electronically/remotely.   USAFA  will  provide
+individual staff workstations and internal networking infrastructure adequate for accessing vendor SaaS services.
+
+
+
+GENERAL INFORMATION
+
+
+
+1 In accordance with DoDI 1100.22, the Contractor shall not perform work during a crisis declared by the Secretary of Defense or the Oversees
+      Combatant Commander.
+
+
+
+2 POSSIBLE KNOWN CONSTRAINTS.   Offerors’ personnel must coordinate and cooperate with 10 CS personnel for remote access to the current server
+      prior to migrating data to vendor hosted servers.Offeror may be required to work in accordance with High Performance Computing
+      Modernization Program (HPCMP) Defense Research and Engineering Network (DREN)  policies as outlined on the website:
+      http://www.hpcmo.hpc.mil/cms2/index.php.  The offeror will gain further access to polices upon contract award.
+
+
+
+3 OPERATIONS SECURITY CONSIDERATIONS.  System will be actively monitored for security and regularly patched to the latest OS security and
+      stability releases.  System will be protected via firewalls and other security devices.  System authentication passwords for staff must
+      conform to USAF requirements and use VPN support to secure/encrypted staff connections to the hosted server. Some data under this effort
+      may be considered Personally Identifiable Information and as such is subject to Privacy Act protection measures and shall not be released
+      either formally or informally to anyone without the written consent of appropriate USAFA personnel.
+
+
+
+4 DATA RIGHTS.  The Government has unlimited rights to all data under this effort.  The Government shall retain custody of all records
+      associated with this system and shall have exclusive control in the distribution of these records.
+
+
+
+5 PROJECTED NEED.  This government anticipates awarding a contract for one base year plus 4 option years.  Execution of the option years is
+      contingent on the availability of funds. The projected start date for this project is no later than 10 Sep 2011.
+
+
+
+6 TECHNICAL POINTS OF CONTACT.  The government Technical Point of Contact for this effort is Mr. M. Douglas Johnson who can be reached at (719)
+      333-4679.  The alternate Point of Contact is Ms. Janice Young, who can be reached at (719) 333-2283.
+
+
+
+7 HISTORICAL INFORMATION. This is a follow-on effort which previously required software support only for applications installed, under
+      SirsiDynix model G, on USAFA-owned hardware.  The USAFA server hardware is comprised of the following components:
+
+
+      1. a Sun MicroSystems SunFire V440 server
+           a. w/ 16 GB RAM
+           b.  4 * 1.593 GHz cpus
+           c.  2 Ultra 320 SCSI cards
+           d.  10/100/1000 ethernet interface
+           e.  XVR-100 grpahics card
+           f.  19” monitor
+           g.  DVD drive
+           h.  4*73 GB hard drives
+     2. RAID array with 9*73 GB hard drives
+     3. LTO cartridge tape drive
+     4. DAT-72 tape drive
+            Data measures:
+            1. # items = 804403
+            2. # titles = 697158
+            3. # patrons = 8500
+            4. Annual circulation = 125,000 items/year
+
+
+
+
+
+
+FAR PAYMENT PROCEDURES
+In accordance with 31 USC 3324, advanced payments are not allowed for this acquisition.
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0001           |                               |1                    |Years           |                               |                                       |
+|               |Software as a Service (SaaS) subscriptio                                                              |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |BASE YEAR.  Provide the USAF Academy (USAFA) McDermott Library an Integrated Library System (ILS)     |                                       |
+|               |support under Software as Service (SaaS) under a hosted option in accordance with the Performance Work|                                       |
+|               |Statement. Incidental to this service is migration of the current SirsiDynix Symphony system to a new |                                       |
+|               |hosted option. Period of Performance is 12 Sep 2011 to 11 Sep 2012.                                   |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|               |PURCHASE REQUEST NUMBER: F4BWL01068A001                                                               |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0002           |                               |1                    |Each            |                               |                                       |
+|               |Data Migration and Implementation                                                                     |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |BASE YEAR.  Migration of all data from current SirsiDynix Symphony system to a new Integrated Library |                                       |
+|               |System (ILS) under Software as Service (SaaS) hosted option in accordance with the Performance Work   |                                       |
+|               |Statement..  Period of Performance is 12 Sep 2011 to 11 Sep 2012.                                     |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0003           |                               |1                    |Each            |                               |                                       |
+|               |Training                                                                                              |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |BASE YEAR.  Provide training necessary to utilize the USAF Academy (USAFA) McDermott Library an       |                                       |
+|               |Integrated Library System (ILS) support under Software as Service (SaaS) under a hosted option in     |                                       |
+|               |accordance with the Performance Work Statement.  Period of Performance is 12 Sep 2011 to 11 Sep 2012. |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0004           |                               |1                    |Years           |                               |                                       |
+|               |Digital Asset Management System Subscrip                                                              |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |BASE YEAR.  Provide Digital Asset Management System Subscription in accordance with the Performance   |                                       |
+|               |Work Statement. Incidental to this service is migration of the current SirsiDynix Symphony system to a|                                       |
+|               |new hosted option. Period of Performance is 12 Sep 2011 to 11 Sep 2012.                               |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|1001           |                               |1                    |Years           |                               |                                       |
+|OPTION         |Software as a Service (SaaS) subscriptio                                                              |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |OPTION YEAR ONE.  Provide the USAF Academy (USAFA) McDermott Library an Integrated Library System     |                                       |
+|               |(ILS) support under Software as Service (SaaS) under a hosted option in accordance with the           |                                       |
+|               |Performance Work Statement. Incidental to this service is migration of the current SirsiDynix Symphony|                                       |
+|               |system to a new hosted option. Period of Performance is 12 Sep 2012 to 11 Sep 2013.                   |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|1002           |                               |1                    |Years           |                               |                                       |
+|OPTION         |Digital Asset Management System Subscrip                                                              |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |OPTION YEAR ONE.  Provide Digital Asset Management System Subscription in accordance with the         |                                       |
+|               |Performance Work Statement. Period of Performance is 12 Sep 2012 to 11 Sep 2013.                      |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|2001           |                               |1                    |Years           |                               |                                       |
+|OPTION         |Software as a Service (SaaS) subscriptio                                                              |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |OPTION YEAR TWO. Provide the USAF Academy (USAFA) McDermott Library an Integrated Library System (ILS)|                                       |
+|               |support under Software as Service (SaaS) under a hosted option in accordance with the Performance Work|                                       |
+|               |Statement. Incidental to this service is migration of the current SirsiDynix Symphony system to a new |                                       |
+|               |hosted option. Period of Performance is 12 Sep 2013 to 11 Sep 2014.                                   |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|2002           |                               |1                    |Years           |                               |                                       |
+|OPTION         |Digital Asset Management System Subscrip                                                              |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |OPTION YEAR TWO. Provide Digital Asset Management System Subscription in accordance with the          |                                       |
+|               |Performance Work Statement. Period of Performance is 12 Sep 2013 to 11 Sep 2014.                      |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|3001           |                               |1                    |Years           |                               |                                       |
+|OPTION         |Software as a Service (SaaS) subscriptio                                                              |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |OPTION YEAR THREE. Provide the USAF Academy (USAFA) McDermott Library an Integrated Library System    |                                       |
+|               |(ILS) support under Software as Service (SaaS) under a hosted option in accordance with the           |                                       |
+|               |Performance Work Statement. Incidental to this service is migration of the current SirsiDynix Symphony|                                       |
+|               |system to a new hosted option. Period of Performance is 12 Sep 2014 to 11 Sep 2015.                   |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|3002           |                               |1                    |Years           |                               |                                       |
+|OPTION         |Digital Asset Management System Subscrip                                                              |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |OPTION YEAR THREE. Provide Digital Asset Management System Subscription in accordance with the        |                                       |
+|               |Performance Work Statement. Period of Performance is 12 Sep 2014 to 11 Sep 2015.                      |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|4001           |                               |1                    |Years           |                               |                                       |
+|OPTION         |Software as a Service (SaaS) subscriptio                                                              |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |OPTION YEAR FOUR. Provide the USAF Academy (USAFA) McDermott Library an Integrated Library System     |                                       |
+|               |(ILS) support under Software as Service (SaaS) under a hosted option in accordance with the           |                                       |
+|               |Performance Work Statement. Incidental to this service is migration of the current SirsiDynix Symphony|                                       |
+|               |system to a new hosted option. Period of Performance is 12 Sep 2015 to 11 Sep 2016.                   |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|4002           |                               |1                    |Years           |                               |                                       |
+|OPTION         |Digital Asset Management System Subscrip                                                              |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |OPTION YEAR FOUR. Provide Digital Asset Management System Subscription in accordance with the         |                                       |
+|               |Performance Work Statement. Period of Performance is 12 Sep 2015 to 11 Sep 2016.                      |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+INSPECTION AND ACCEPTANCE TERMS
+
+Supplies/services will be inspected/accepted at:
+
+|CLIN      |INSPECT AT                                  |INSPECT BY           |ACCEPT AT                                   |ACCEPT BY            |
+|0001      |Destination                                 |Government           |Destination                                 |Government           |
+|0002      |Destination                                 |Government           |Destination                                 |Government           |
+|0003      |Destination                                 |Government           |Destination                                 |Government           |
+|0004      |Destination                                 |Government           |Destination                                 |Government           |
+|1001      |Destination                                 |Government           |Destination                                 |Government           |
+|1002      |Destination                                 |Government           |Destination                                 |Government           |
+|2001      |Destination                                 |Government           |Destination                                 |Government           |
+|2002      |Destination                                 |Government           |Destination                                 |Government           |
+|3001      |Destination                                 |Government           |Destination                                 |Government           |
+|3002      |Destination                                 |Government           |Destination                                 |Government           |
+|4001      |Destination                                 |Government           |Destination                                 |Government           |
+|4002      |Destination                                 |Government           |Destination                                 |Government           |
+
+
+
+
+
+DELIVERY INFORMATION
+
+|CLIN      |DELIVERY DATE                    |QUANTITY               |SHIP TO ADDRESS                                         |UIC           |
+|          |                                 |                       |                                                        |              |
+|0001      |POP 12-SEP-2011 TO               |N/A                    |HQ USAFA/DFLIB - F4BWL0                                 |F4BWL0        |
+|          |11-SEP-2012                      |                       |MARCIA MOHN                                             |              |
+|          |                                 |                       |2354 FAIRCHILD                                          |              |
+|          |                                 |                       |DEPT OF LIBRARY                                         |              |
+|          |                                 |                       |USAF ACADEMY CO 80840                                   |              |
+|          |                                 |                       |719-333-4693                                            |              |
+|          |                                 |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|0002      |POP 12-SEP-2011 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |F4BWL0        |
+|          |11-SEP-2012                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|0003      |POP 12-SEP-2011 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |F4BWL0        |
+|          |11-SEP-2012                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|0004      |POP 12-SEP-2011 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |F4BWL0        |
+|          |11-SEP-2012                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|1001      |POP 12-SEP-2012 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |F4BWL0        |
+|          |11-SEP-2013                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|1002      |POP 12-SEP-2012 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |F4BWL0        |
+|          |11-SEP-2013                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|2001      |POP 12-SEP-2013 TO               |N/A                    |N/A                                                     |              |
+|          |11-SEP-2014                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|2002      |POP 12-SEP-2013 TO               |N/A                    |N/A                                                     |              |
+|          |11-SEP-2014                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|3001      |POP 12-SEP-2014 TO               |N/A                    |HQ USAFA/DFLIB - F4BWL0                                 |F4BWL0        |
+|          |11-SEP-2015                      |                       |MARCIA MOHN                                             |              |
+|          |                                 |                       |2354 FAIRCHILD                                          |              |
+|          |                                 |                       |DEPT OF LIBRARY                                         |              |
+|          |                                 |                       |USAF ACADEMY CO 80840                                   |              |
+|          |                                 |                       |719-333-4693                                            |              |
+|          |                                 |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|3002      |POP 12-SEP-2014 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |F4BWL0        |
+|          |11-SEP-2015                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|4001      |POP 12-SEP-2015 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |F4BWL0        |
+|          |11-SEP-2016                      |                       |FOB:  Destination                                       |              |
+|          |                                 |                       |                                                        |              |
+|4002      |POP 12-SEP-2015 TO               |N/A                    |(SAME AS PREVIOUS LOCATION)                             |F4BWL0        |
+|          |11-SEP-2016                      |                       |FOB:  Destination                                       |              |
+
+
+
+
+CLAUSES INCORPORATED BY REFERENCE
+
+
+|52.203-6                |Restrictions On Subcontractor Sales To The Government                     |SEP 2006         |                       |
+|52.203-6 Alt I          |Restrictions On Subcontractor Sales To The Government  (Sep 2006) --      |OCT 1995         |                       |
+|                        |Alternate I                                                               |                 |                       |
+|52.204-10               |Reporting Executive Compensation and First-Tier Subcontract Awards        |JUL 2010         |                       |
+|52.209-6                |Protecting the Government's Interest When Subcontracting With Contractors |DEC 2010         |                       |
+|                        |Debarred, Suspended, or Proposed for Debarment                            |                 |                       |
+|52.212-1                |Instructions to Offerors--Commercial Items                                |JUN 2008         |                       |
+|52.212-3 Alt I          |Offeror Representations and Certifications--Commercial Items (May 2011)   |APR 2011         |                       |
+|                        |Alternate I                                                               |                 |                       |
+|52.212-4                |Contract Terms and Conditions--Commercial Items                           |JUN 2010         |                       |
+|52.219-28               |Post-Award Small Business Program Rerepresentation                        |APR 2009         |                       |
+|52.222-3                |Convict Labor                                                             |JUN 2003         |                       |
+|52.222-19               |Child Labor -- Cooperation with Authorities and Remedies                  |JUL 2010         |                       |
+|52.222-21               |Prohibition Of Segregated Facilities                                      |FEB 1999         |                       |
+|52.222-26               |Equal Opportunity                                                         |MAR 2007         |                       |
+|52.222-35               |Equal Opportunity for Veterans                                            |SEP 2010         |                       |
+|52.222-36               |Affirmative Action For Workers With Disabilities                          |OCT 2010         |                       |
+|52.222-37               |Employment Reports on Veterans                                            |SEP 2010         |                       |
+|52.222-40               |Notification of Employee Rights Under the National Labor Relations Act    |DEC 2010         |                       |
+|52.222-50               |Combating Trafficking in Persons                                          |FEB 2009         |                       |
+|52.223-18               |Encouraging Contractor Policies To Ban Text Messaging While Driving       |AUG 2011         |                       |
+|52.225-13               |Restrictions on Certain Foreign Purchases                                 |JUN 2008         |                       |
+|52.232-33               |Payment by Electronic Funds Transfer--Central Contractor Registration     |OCT 2003         |                       |
+|52.233-3                |Protest After Award                                                       |AUG 1996         |                       |
+|52.233-4                |Applicable Law for Breach of Contract Claim                               |OCT 2004         |                       |
+|52.239-1                |Privacy or Security Safeguards                                            |AUG 1996         |                       |
+|52.252-1                |Solicitation Provisions Incorporated By Reference                         |FEB 1998         |                       |
+|252.203-7000            |Requirements Relating to Compensation of Former DoD Officials             |JAN 2009         |                       |
+|252.232-7003            |Electronic Submission of Payment Requests and Receiving Reports           |MAR 2008         |                       |
+|252.232-7010            |Levies on Contract Payments                                               |DEC 2006         |                       |
+|252.247-7024            |Notification Of Transportation Of Supplies By Sea                         |MAR 2000         |                       |
+
+
+
+
+CLAUSES INCORPORATED BY FULL TEXT
+
+
+52.212-2     EVALUATION--COMMERCIAL ITEMS (JAN 1999)
+
+
+(a) The Government will award a contract resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation
+will be most advantageous to the Government, price and other factors considered. The following factors shall be used to evaluate offers:
+
+ (i) price; (ii) past performance
+
+Past performance is equally important as compared to price.
+
+(b) Options. The Government will evaluate offers for award purposes by adding the total price for all options to the total price for the basic
+requirement. The Government may determine that an offer is unacceptable if the option prices are significantly unbalanced. Evaluation of options
+shall not obligate the Government to exercise the option(s).
+
+(c) A written notice of award or acceptance of an offer, mailed or otherwise furnished to the successful offeror within the time for acceptance
+specified in the offer, shall result in a binding contract without further action by either party. Before the offer's specified expiration time,
+the Government may accept an offer (or part of an offer), whether or not there are negotiations after its receipt, unless a written notice of
+withdrawal is received before award.
+
+(End of provision)
+
+
+
+ 52.212-5     CONTRACT TERMS AND CONDITIONS REQUIRED TO IMPLEMENT STATUTES OR EXECUTIVE ORDERS--COMMERCIAL ITEMS (AUG 2011)  (DEVIATION)
+
+(a) Comptroller General Examination of Record.  The Contractor shall comply with the provisions of this paragraph (a) if this contract was
+awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at 52.215-2, Audit
+and Records-Negotiation.
+
+(1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right to
+examine any of the Contractor's directly pertinent records involving transactions related to this contract.
+
+(2) The Contractor shall make available at its offices at all reasonable times, the records, materials, and other evidence for examination,
+audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR Subpart 4.7, Contractor
+Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records relating to the
+work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the
+disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such
+appeals, litigation, or claims are finally resolved.
+
+(3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and
+regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary
+course of business or pursuant to a provision of law.
+
+(b)(1) Notwithstanding the requirements of any other clause in this contract, the Contractor is not required to flow down any FAR clause, other
+than those in this paragraph (b)(i) in a subcontract for commercial items. Unless otherwise indicated below, the extent of the flow down shall
+be as required by the clause-
+
+(i) 52.203-13, Contractor Code of Business Ethics and Conduct (APR 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note).
+
+(ii) 52.219-8, Utilization of Small Business Concerns (DEC 2010) (15 U.S.C. 637(d)(2) and (3)), in all subcontracts that offer further
+subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $650,000 ($1.5 million for
+construction of any public facility), the subcontractor must include 52.219-8 in lower tier subcontracts that offer subcontracting
+opportunities.
+
+(iii) Reserved.
+
+(iv) 52.222-26, Equal Opportunity (MAR 2007) (E.O. 11246).
+
+(v) 52.222-35, Equal Opportunity for Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans (SEP 2006) (38 U.S.C.
+4212).
+
+(vi) 52.222-36, Affirmative Action for Workers with Disabilities (JUN 1998) (29 U.S.C. 793).
+
+(vii) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (DEC 2010) (E.O. 13496). Flow down required in
+accordance with paragraph (f) of FAR clause 52.222-40.
+
+(viii) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.).
+
+(ix) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)).
+
+___ Alternate I (AUG 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+
+(x) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment--
+Requirements (Nov 2007) (41 U.S.C. 351, et seq.).
+
+(xi) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services--Requirements (FEB 2009) (41 U.S.C.
+351, et seq.).
+
+(xii) 52.222-54, Employment Eligibility Verification (JAN 2009).
+
+(xiii) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations. (MAR 2009) (Pub. L. 110-247). Flow down required in accordance with
+paragraph (e) of FAR clause 52.226-6.
+
+(xiv) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (FEB 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C. 2631). Flow down
+required in accordance with paragraph (d) of FAR clause 52.247-64.
+
+(2) While not required, the contractor may include in its subcontracts for commercial items a minimal number of additional clauses necessary to
+satisfy its contractual obligations.
+
+(End of clause)
+
+
+
+
+52.252-2      CLAUSES INCORPORATED BY REFERENCE (FEB 1998)
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request,
+the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at this/these
+address(es):
+
+www.arnet.gov
+
+(End of clause)
+
+
+
+252.212-7001     CONTRACT TERMS AND CONDITIONS REQUIRED TO IMPLEMENT STATUTES OR EXECUTIVE ORDERS APPLICABLE TO DEFENSE ACQUISITIONS OF
+COMMERCIAL ITEMS (DEC 2010) (DEVIATION)
+
+(a) In addition to the clauses listed in paragraph (b) of the Contract Terms and Conditions Required to Implement Statutes or Executive Orders--
+Commercial Items clause of this contract (FAR 52.212-5) (OCT 2010) (DEVIATION), the Contractor shall include the terms of the following clause,
+if applicable, in subcontracts for commercial items or commercial components, awarded at any tier under this contract:
+
+|252.237-7010                 |Prohibition on Interrogation of Detainees by Contractor Personnel (NOV 2010) (Section   |
+|                             |1038 of Pub. L. 111-84).                                                                |
+|252.237-7019                 |Training for Contractor Personnel Interacting with Detainees (SEP 2006) (Section 1092 of|
+|                             |Pub. L. 108-375).                                                                       |
+|252.247-7003                 |Pass-Through of Motor Carrier Fuel Surcharge Adjustment to the Cost Bearer (JUL 2009)   |
+|                             |(Section 884 of Public Law 110-417)                                                     |
+|252.247-7023                 |Transportation of Supplies by Sea (MAY 2002) (10 U.S.C. 2631)                           |
+|252.247-7024                 |Notification of Transportation of Supplies by Sea (MAR 2000) (10 U.S.C. 2631)           |
+
+(End of clause)
+
+
+
+
+5352.201-9101 OMBUDSMAN (APR 10)
+
+(a) An ombudsman has been appointed to hear and facilitate the resolution of concerns from offerors, potential offerors, and others for this
+acquisition. When requested, the ombudsman will maintain strict confidentiality as to the source of the concern. The existence of the ombudsman
+does not affect the authority of the program manager, contracting officer, or source selection official. Further, the ombudsman does not
+participate in the evaluation of proposals, the source selection process, or the adjudication of protests or formal contract disputes. The
+ombudsman may refer the party to another official who can resolve the concern.
+
+(b) Before consulting with an ombudsman, interested parties must first address their concerns, issues, disagreements, and/or recommendations to
+the contracting officer for resolution. Consulting an ombudsman does not alter or postpone the timelines for any other processes (e.g., agency
+level bid protests, GAO bid protests, requests for debriefings, employee-employer actions, contests of OMB Circular A-76 competition performance
+decisions).
+
+(c) If resolution cannot be made by the contracting officer, concerned parties may contact the USAF Academy Ombudsmen,
+Kelly S. Snyder
+8110 Industrial Drive, Ste 103
+USAFA, CO 80840
+Telephone number 719-333-2074
+FAX 719-333-9018
+email:  kelly.snyder@usafa.af.mil
+
+Concerns, issues, disagreements, and recommendations that cannot be resolved at the MAJCOM/DRU level, may be brought by the concerned party for
+further consideration to the Air Force ombudsman, Associate Deputy Assistant Secretary (ADAS) (Contracting), SAF/AQC, 1060 Air Force Pentagon,
+Washington DC 20330-1060, phone number (703) 588-7004, facsimile number (703) 588-1067.
+
+(d) The ombudsman has no authority to render a decision that binds the agency.
+
+(e) Do not contact the ombudsman to request copies of the solicitation, verify offer due date, or clarify technical requirements. Such inquiries
+shall be directed to the Contracting Officer.
+
+(End of clause)
+
+
+
+
+5352.223-9000 ELIMINATION OF USE OF CLASS I OZONE DEPLETING SUBSTANCES (ODS)  (APR 03)
+
+(a) Unless the requiring activity has obtained prior Senior Acquisition Official (SAO) approval, contractors may not:
+(1) Provide any service or product with any specification, standard, drawing, or other document that requires the use of a Class I ODS in the
+test, operation, or maintenance of any system, subsystem, item, component, or process; or
+(2) Provide any specification, standard, drawing, or other document that establishes a test, operation, or maintenance requirement that can only
+be met by use of a Class I ODS.
+[Note: This prohibition does not apply to manufacturing.]
+
+
+(b) For the purposes of Air Force policy, the following products that are pure (i.e., they meet the relevant product specification identified in
+AFI 32-7086) are Class I ODSs:
+(1) Halons: 1011, 1202, 1211, 1301, and 2402;
+(2) Chlorofluorocarbons (CFCs): CFC-11, CFC-12, CFC-13, CFC-111, CFC-112, CFC-113, CFC-114, CFC-115, CFC-211, CFC-212, CFC-213, CFC-214, CFC-
+215, CFC-216, and CFC-217, and the blends R-500, R-501, R-502, and R-503; and
+(3) Carbon Tetrachloride, Methyl Chloroform, and Methyl Bromide.
+[NOTE: Material that use one or more of these Class I ODSs as minor constituents do not meet the Air Force definition of a Class I ODS.]
+
+(c) The requiring activity has obtained SAO approval to permit the contractor to use the following Class I ODS(s):
+Class I ODS/ Application or Use/Quantity (lbs.) per contract period of performance
+
+[List each Class I ODS, its applications or use and the approved quantities for use throughout the length of the contract. If "None," so state.]
+
+(d) The offeror/contractor is required to notify the contracting officer if any Class I ODS that is not specifically listed above is required in
+the test, operation, or maintenance of any system, subsystem, item, component, or process.
+
+(End of clause)
+
+
+
+
+5352.242-9000 CONTRACTOR ACCESS TO AIR FORCE INSTALLATIONS (AUG 07)
+(a) The contractor shall obtain base identification and vehicle passes, if required, for all contractor personnel who make frequent visits to or
+perform work on the Air Force installation(s) cited in the contract. Contractor personnel are required to wear or prominently display
+installation identification badges or contractor-furnished, contractor identification badges while visiting or performing work on the
+installation.
+(b) The contractor shall submit a written request on company letterhead to the contracting officer listing the following: contract number,
+location of work site, start and stop dates, and names of employees and subcontractor employees needing access to the base. The letter will also
+specify the individual(s) authorized to sign for a request for base identification credentials or vehicle passes. The contracting officer will
+endorse the request and forward it to the issuing base pass and registration office or security police for processing. When reporting to the
+registration office, the authorized contractor individual(s) should provide a valid driver’s license, current vehicle registration, valid
+vehicle insurance certificate, and (refer to USAFA A-01 Contractor Access to USAFA Instruction) to obtain a vehicle pass.
+(c) During performance of the contract, the contractor shall be responsible for obtaining required identification for newly assigned personnel
+and for prompt return of credentials and vehicle passes for any employee who no longer requires access to the work site.
+(d) When work under this contract requires unescorted entry to controlled or restricted areas, the contractor shall comply with [insert any
+additional requirements to comply with AFI 31-101, Volume 1, The Air Force Installation Security Program, and AFI 31-501, Personnel Security
+Program Management,] citing the appropriate paragraphs as applicable.
+(e) Upon completion or termination of the contract or expiration of the identification passes, the prime contractor shall ensure that all base
+identification passes issued to employees and subcontractor employees are returned to the issuing office.
+(f) Failure to comply with these requirements may result in withholding of final payment.
+(End of clause)
+
+
+
+WAWF INVOICING USAFA ADDENDUM – USAF Academy Invoicing Instruction (Revised 4/23/08)
+
+a.  In accordance with DFARS 252-232-7003, Electronic Submission of Payment Requests, the contractor shall submit payment (invoice) requests
+through the Wide Area Workflow (WAWF) System.  For information on WAWF, including how to register, visit the WAWF website at
+https://wawf.eb.mil.  Web Based Training (WBT) is available at http://www/wawftraining.com.  If you need any further assistance you can contact
+the Contract Specialist or Contracting Officer whose name appears on the contract.
+
+b.  The address and DODAAC of the payment office (effective 1 Jun 06) is:
+
+
+      Defense Finance and Accounting Service
+      ATTN: DFAS-BAASD/CC
+      P. O. Box 369020
+      Columbus, OH 43236-9020
+      ATTN: VENDOR PAY (DODAAC F67100)
+
+
+                                                                (End of Addendum)
+
+
+
+ADDENDUM
+The Provision at 52.212-1, Instructions to Offerors-Commercial, applies to acquisition.  Addenda are also outlined below.
+
+ADDENDUM TO FAR 52.212-1
+
+52.212-1 INSTRUCTIONS TO OFFERORS—COMMERCIAL ITEMS (JAN 2005)
+
+Addendum to 52.212-1(b), Submission of Offers.  Quotes must be received no later than 1100 hours  Mountain Standard Time, 31 Aug 2011 at 10 LGC/
+LGCB, Attn: Elizabeth Lawson, 8110 Industrial Drive, Suite 200, USAF Academy, CO 80840-2315.  Quotes may also be submitted by e-mail to the
+Primary POC or by fax to 719-333-9103.   Questions and responses should be addressed to the Primary POC Elizabeth Lawson, Contracting Officer,
+USAF Academy (719) 333-3929, elizabeth.lawson@usafa.af.mil . Alternate POC is Jim Lovely, Contracting Specialist, (719) 333-3929,
+james.lovely@usafa.af.mil.
+
+Prices quoted must be Firm-Fixed Price.
+
+52.212-1 Proposal Contents/Required Information
+
+a. To assure timely and equitable evaluation of the offers, the offeror must follow the instructions contained herein. The quotes/responses must
+be complete, self-sufficient, and respond directly to the requirements of this solicitation.  To be eligible for award the offeror’s response to
+the RFQ must include the following: PRICE and  PAST PERFORMANCE INFORMATION as described below.  All responses to the RFQ must also include
+enough information to demostrate the the offer meets all requirements of the solicitation to be considered for award.
+
+b. The contracting officer has determined there is a high probability of adequate price competition in this acquisition.  Upon examination of
+the initial offers, the contracting officer will review this determination and if, in the contracting officer’s opinion, adequate price
+competition exists no additional cost information will be requested.  However, if at any time during this competition the contracting officer
+determines that adequate price competition no longer exists; offerors may be required to submit information to the extent necessary for the
+contracting officer to determine the reasonableness and affordability of the price.
+
+1. PRICE INFORMATION
+
+Insert proposed UNIT and EXTENDED prices for all Contract Line Items (CLINS) listed above. The extended amount must equal the whole dollar unit
+price multiplied by the number of units. Include any pertinent information regarding industry standards that may be applicable.
+
+2. PAST PERFORMANCE INFORMATION
+
+Provide a list of no more than five (5) references of the most relevant contracts performed for commercial customers, Federal agencies, or other
+military organizations that have used, or are currently using the same or similar service proposed for this contract. Provide only references
+for same or similar services or contracts.  The government will evaluate the quality and extent of an offeror’s performance deemed relevant to
+the requirements of this solicitation.  A past performance survey is attached to this solicitation.  It is the contrator’s responsibility to
+forward the survey to the references for completion..   Relevancy is defined as performance of contracts for same or similar work that are also
+similar or greater in scope, magnitude and complexity than the effort described in this solicitation.
+
+The evaluation of past performance information will take into account past performance information regarding key personnel who have relevant
+experience or subcontractors that will perform major critical aspects of the requirement when such information is relevant to the instant
+acquisition.  Furnish the following information for each reference:
+
+(i)   Company/Division name
+(ii)        Services provided
+(iii)       Contracting Agency/Customer
+(iv)        Contract Number
+(v)         Contract Dollar Value
+(vi)        Period of Performance
+(vii)       Verified up-to-date name, address, email address, FAX and telephone number(s) for each
+      company Point of Contact.
+(viii)      Comments regarding compliance with contract terms and conditions
+(ix)  Comments regarding any known performance deemed unacceptable to the customer, or not in
+      accordance with the contract terms and conditions.
+
+(f) Past Performance Questionaires. Offeror shall send the attached ‘Past and Present Performance Questionnaire” to their references to fill-
+out.  Completed performance surveys are not to be reviewed by the offeror.  ONCE THE SURVEY IS COMPLETED, IT IS CONSIDERED FOR OFFICIAL USE
+ONLY, and is only reviewed by Government personnel directly involved in the evaluation process for this acquisition.  The references should be
+companies who have worked with the offeror within the past three years.  It is the contractor’s responsibility to ensure their references submit
+timely questionaires in accordance with the solicitation. References shall submit completed questionaires through e-mail to  Elizabeth Lawson,
+Contracting Officer, elizabeth.lawson@usafa.af.mil by 31 Aug 2011, at noon. MST.  Alternate POC is Jim Lovely, Contracting Specialist, (719) 333-
+3929, james.lovely@usafa.af.mil.
+
+
+ADDENDUM TO 52.212-2 -- Evaluation -- Commercial Items (Jan 1999).
+
+a.  BASIS FOR CONTRACT AWARD:  The Government intends to award contract to offeror which represents best overall value in accordance with FAR
+Parts 12 and 13 in which competing offerors' past performance history and price will be considered.  By submission of its offer, the offeror
+accedes to ALL solicitation requirements, including terms and conditions, representations and certifications, and technical requirements.    The
+government reserves the right to reject any offer that does not meet all requirements of the solicitation.  Offerors must clearly identify any
+exception to the solicitation terms and conditions and provide complete accompanying rationale.
+
+b.  The evaluation will be conducted using simplified procedures outlined in FAR 13.106.  In accordance with simplified procedures, contracting
+offices may conduct comparative evaluations of offers. Evaluation of other factors, such as past performance --
+(i) Does not require the creation or existence of a formal data base; and
+(ii) May be based on one or more of the following:
+(A) The contracting officer’s knowledge of and previous experience with the supply or service being acquired;
+(B) Customer surveys, and past performance questionnaire replies;
+(C) The Government wide Past Performance Information Retrieval System (PPIRS) at www.ppirs.gov ; or
+(D) Any other reasonable basis.
+
+c.   The evaluation process shall proceed as follows:
+Step 1.   Rank all proposals by price.   IAW FAR 13.106-2 The contracting officer is allowed to make comparative analysis of offers to establish
+best overall value to the government.
+Step 2 – Evaluate all quotes for ability to meet all requirements of the solicitation. Offerors that do not conform fully to the solicitation
+will not be considered.
+Step 3 - Review any and /or all past performance information  as stated above.
+
+ d.   PAST PERFORMANCE RATINGS: The performance assessment process will result in an overall performance rating of “Sufficient Past Performance”
+or “Limited Past Performance”. Offerors with no relevant or recent past or present performance history shall receive the rating “Unknown Past
+Performance”, meaning the rating is treated neither favorably nor unfavorably.  Confidence ratings are defined as follows:
+
+      SUFFICIENT PAST PERFORMANCE:  Based on the offeror’s performance record, the government has a high expectation that the offeror will
+successfully perform the required effort.
+
+      LIMITED PAST PERFORMANCE:  Based on the offeror’s performance record, the government has a low expectation that the offeror will
+successfully perform the required effort.
+
+      UNKNOWN PAST PERFORMANCE:  Based on the offeror’s performance record, the government has no expectation that the offeror will be able to
+successfully perform the required effort.
+
+ e.  When determining relevancy and assigning a past performance confidence rating, the government will consider the type of experience, the
+amount of experience, and the flexibility of contractor to meet customer needs.
+
+Past performance regarding predecessor companies, key personnel who have relevant experience or sub-contractors that will perform major or
+critical aspects of the requirement will not be considered as highly as past performance information from the principal offeror.  Offerors with
+no relevant past or present performance history or the offeror’s performance record is so limited that no confidence assessment rating can be
+reasonably assigned shall receive the rating "Unknown Past Performance,” meaning the rating is treated neither favorably nor unfavorably. If the
+prime contractor has no past performance and is relying on their subcontractor's past performance, the prime contractor will be assessed an
+"Unknown Past Performance.”
+
+ g.  In evaluating past performance, the government reserves the right to give greater consideration to information on those contracts deemed
+most relevant to the effort described in this solicitation.
+
+h.  If the lowest priced evaluated offer is judged to have a “Sufficient Past Performance” performance rating that offer represents the best
+value for the Government and the evaluation process stops at this point.  Award shall be made to that offeror without further consideration of
+any other offers.
+
+The government reserves the right to award a contract to other than the lowest priced offeror if the lowest priced offeror is judged to have a
+performance confidence assessment of "Limited Past Performance" or when it is in the best interest of the government to do so.
+
+i.  If the lowest priced offeror is not judged to have a “Sufficient Past Performance” rating, the next lowest priced offeror will be evaluated
+and the process will continue (in order by price) until an offeror is judged to have a “Sufficient Past Performance”  performance rating or
+until all offerors are evaluated.
+
+j.  Offerors are cautioned to submit sufficient information and in the format specified in the proposals preparation instructions.  Offerors may
+be asked to clarify certain aspects of their proposal or respond to adverse past performance information to which the offeror has not previously
+had an opportunity to respond.  Adverse past performance is defined as past performance information that supports a less than satisfactory
+rating on any evaluation element or any unfavorable comments received from sources without a formal rating system.  Communication conducted to
+resolve minor or clerical errors would not constitute discussions and the contracting officer reserves the right to award a contract without the
+opportunity for proposal revision.
+
+k.  The government intends to award a contract without discussions with respective offerors.  The government, however, reserves the right to
+conduct discussions if deemed in its best interest of the government.
+
+(End of Addendum)
+
+
+
+

@@ -1,0 +1,1567 @@
+								
+
+QUALITY ASSURANCE SURVEILLANCE PLAN (QASP)
+
+
+
+
+
+
+
+Contract or Task Order Title GCSS-J Data Applications & Integration Analysis Support
+
+
+
+2.  Work Requirements
+
+
+
+Task 1 – Enterprise IT Policy and Planning
+
+Task 2 – Engineering Activities
+
+Task 3 – Technical Tasks
+
+
+
+3.  Primary Method of Surveillance:  Periodic Inspection will be the primary method of surveillance.  The contractor is required to prepare and submit bi-weekly status reports providing the status of monitoring of quality assurance configuration management, security management progress and program reviews
+
+
+
+4.  Scope of Performance: The contractor shall provide engineering, technical, and program support services required under the task areas as described in Section 6 of this PWS. The scope of this effort will span the breadth of the GCSS-J mission which is to provide enhanced decision support and situational awareness to the warfighter.  The contractor shall perform the role of Subject Matter Expert (SME) and have an intimate knowledge of Joint Doctrine and the Joint Capability Areas (JCA) defined in joint Pub 4.0.   
+
+
+
+
+
+5.  Performance Standards:  
+
+
+
+
+
+6.  Mandatory or regulatory compliance items:   The contractor will provide initial proof of compliance with regulatory and compliance items contained in the contract.  The Contracting Officer’s Representative (COR) and the contracting officer (KO) will evaluate the initial submission.  The COR and KO will conduct ad hoc reviews of the contractor’s compliance throughout the remainder of the contract.
+
+
+
+7.  Acceptable Quality Level (AQL):
+
+
+
+The contractor must achieve performance standards 90% of the time.
+
+
+
+8.  Evaluation Method:
+
+
+
+Bi-Weekly written reports
+
+Monthly financial reports 
+
+Daily inspections
+
+
+
+9.  Incentives (Positive and/or Negative):  Positive/Negative CPARS
+
+
+
+Task
+
+Subtask/Activity
+
+Performance Standard
+
+Method of Surveillance
+
+Performance Objective
+
+Acceptable Quality Level (AQL)
+
+Incentive
+
+6.1 Task 1
+
+
+
+
+
+
+
+
+
+
+
+6.1.1 Subtask 1.1, 6.1.2 Subtask 1.2, Activity 
+
+1.2.2, and 6.2.4 Subtask 2
+
+
+
+
+
+Must achieve completion of tasks as scheduled 95% of the time
+
+Daily observation, monthly financial reports and bi-weekly written reports 
+
+
+
+
+
+Completion of tasks as scheduled
+
+Must achieve completion of tasks as scheduled 90% of the time
+
+Positive/ 
+
+Negative CPARS
+
+6.2 Task 2
+
+6.2.8 Subtask 6
+
+Must achieve completion of tasks as scheduled 95% of the time
+
+Daily observation, monthly financial reports and bi-weekly written reports 
+
+
+
+
+
+Completion of tasks as scheduled
+
+Must achieve completion of tasks as scheduled 90% of the time
+
+Positive/ 
+
+Negative CPARS
+
+6.2 Task 2
+
+6.2.4 Subtask 2; 6.2.5 Subtask 3, 6.2.6 Subtask 4, and 6.2.3
+
+
+
+Must provide inter-contract support 95% of the time
+
+Daily observation, monthly financial reports and bi-weekly written reports 
+
+
+
+Quality inter-contract support
+
+Must provide inter-contract support 90% of the time
+
+Positive/ 
+
+Negative CPARSPERFORMANCE WORK STATEMENT (PWS)
+
+ As of 11/06/2013
+
+
+
+
+
+
+
+1.  Contracting Officer Representative (COR).  
+
+
+
+  
+
+a. Primary COR.
+
+
+
+
+
+b. Alternate COR.
+
+
+
+
+
+2.  Contract or Task Order Title.  Global Combat Support System-Joint (GCSS-J) Data Applications & Integration Analysis Support
+
+
+
+3.  Background. GCSS-J is an initiative that provides end-to-end visibility of retail and unit level Combat Support (CS) capability up through National Strategic Level, facilitating information interoperability across and between CS and Command and Control (C2) functions. GCSS-J provides enhanced CS situational awareness to the joint warfighter by integrating CS information into the C2 environment, and facilitating communications between the forward deployed elements and the sustaining bases, ultimately resulting in faster, more efficient decision making by the joint warfighter.  GCSS-J significantly increases access to information stored in disparate databases via a single sign on, web portal application, using a Secret Internet Protocol Router Network (SIPRNet) Public Key Infrastructure (PKI) hard tokens.  The GCSS-J infrastructure provides secure web-access, discrete user account administration, data mediation, and enterprise management features that facilitate delivery of capabilities to meet the vision of a net-centric architecture, as well as the integration of information across combat support functional areas. This PWS describes the functions to be performed in supporting these ongoing requirements. 
+
+ 
+
+4.  Objectives:  The objective is to provide technical support to the GCSS-J Program Management Office (PMO) with data engineering activities.  Specifically, the contractor shall conduct the following activities during the execution of the contract:  analysis of GCSS-J authoritative and non-authoritative data sources for their ability to satisfy GCSS-J requirements; analysis of GCSS-J Requirements for completeness; quality assurance analysis of GCSS-J authoritative and non-authoritative data sources; query development, which supports the GCSS-J software development effort; and test and evaluation of GCSS-J software products, to ensure software quality assurance and the software’s ability to satisfy the GCSS-J requirements.
+
+
+
+5.  Scope.  The contractor shall provide engineering, technical, and program support services required under the task areas as described in Section 6 of this PWS. The scope of this effort will span the breadth of the GCSS-J mission which is to provide enhanced decision support and situational awareness to the warfighter.  The contractor shall perform the role of Subject Matter Expert (SME) and have an intimate knowledge of Joint Doctrine and the Joint Capability Areas (JCA) defined in joint Pub 4.0.  The following task areas support the GCSS-J mission:
+
+
+
+6.  Performance Requirements
+
+
+
+6.1 Task 1 – Enterprise IT Policy and Planning (A001)
+
+
+
+This task provides the technical and functional activities needed for the Program Management aspects of this PWS.  It includes productivity and management methods such as Quality Assurance, Progress/Status reporting, and Program Reviews and provides centralized administrative, clerical, documentation and related functions.   The contractor shall report all subtasks and activities under this task in the monthly status report. All subtasks and activities performed in support of this task shall be reported against the GCSS-J Work Breakdown Structure (WBS). 
+
+
+
+6.1.1 Subtask 1.1: Contract Management Plan and Detailed Work Plan (A002) The contractor shall prepare a Contract Management Plan describing the technical approach, organizational resources and management controls to be employed to meet the cost, performance and schedule requirements throughout contract execution.  The contractor shall provide a Detailed Work Plan that further defines the activities to be performed under this contract.  The Detailed Work Plan shall be coordinated and approved by the COR.   
+
+
+
+Subtask 1.1 Deliverables:
+
+Contract Management Plan 
+
+Detailed Work Plan 
+
+
+
+6.1.2 Subtask 1.2:  Status Reports (A003) The contractor is required to prepare and submit bi-weekly status reports, described in Activity 1.2.1, and monthly progress, status and management reports, described in Activity 1.2.2. In addition, the contractor is required to participate in Bi-Monthly GCSS-J In-Process Reviews (IPRs), described in Activity 1.2.3, where they will provide a high-level summary status briefing.  The Contractor shall prepare the Work Package Plans (WPP).  The WPPs shall list the activities involved in each work package. Work packages that are open and/or closed must be coordinated, signed, and approved with the COR before any additions or changes are made to the work package.  This includes additions and/or deletions to the WBS elements, scope, and schedules. The format for the WPPs is contained in Appendix B.
+
+
+
+As part of the monthly status reports and IPRs, the contractor is required to report against the work packages associated with GCSS-J Work Breakdown Structure (WBS) using MS Excel in the required and approved government format.  The WBS is contained in Appendix A.
+
+
+
+Subtask 1.2 Deliverables:
+
+Work Package Plans (WPP)
+
+Work Breakdown Structure (WBS)
+
+Monthly Status Reports
+
+
+
+Activity 1.2.1 Bi-weekly Status Reports (A004)
+
+The contractor shall prepare a bi-weekly status report that will address the progress of work accomplished during the previous reporting period, outstanding issues or concerns, plans and activities for the next reporting period, and status of personnel staffing. This bi-weekly report will include the monitoring of quality assurance, configuration management, security management progress/status reporting and program reviews applied to each task in this PWS. This bi-weekly report shall also address all activities performed within a Task to the Subtask level, broken out by capability package, work order, or increments, the individual(s) who worked on each effort and their labor category, and the number of hours spent per effort.  
+
+At a minimum the bi-weekly status report will include:
+
+
+
+The project task schedule showing any proposed changes, the reasons for the changes, and the potential impact on the Integrated Master Schedule (IMS).
+
+
+
+Integrated project schedule showing milestones, technical changes, testing, software development, incremental deliverables to include integration and coordination with the GCSS-J Prime Integrator.
+
+
+
+Descriptions of activities and deliverables during the week with regards to the PWS. The description will include problem definitions and recommendations for program resolutions.
+
+
+
+Exercise and site support, trip reports, technical visits, technical reports, user/developer training, and related results.
+
+
+
+Planned activities for the next reporting period including technical data to be submitted.
+
+
+
+Personnel reassignment impacting contract work.
+
+
+
+The contractor shall submit the bi-weekly status report to the COR via email by the 1st business day of every other week.
+
+
+
+Activity 1.2.1 Deliverable:
+
+Bi-Weekly Status Report
+
+
+
+Activity 1.2.2 Monthly Financial Management Report (A005)
+
+This section will include a monthly Cost Performance Report (CPR) and other cost reports which will include a summary of the planned costs on a monthly basis and the actual costs incurred.  The contractor shall explain deviations from the planned expenditures. Also, the total amount of money projected vs. money remaining will be shown.  The contractor shall notify the COR, Alternate COR and/or Contracting Officer when 75% of resources have been expended and provide an estimate when resources will be fully expended. The format for the CPR is included in Appendix C. 
+
+
+
+Activity 1.2.2 Deliverables:
+
+Monthly Financial Report
+
+Cost Performance Report
+
+
+
+
+
+
+
+All activities conducted under this subtask shall be reported in the bi-weekly status report. All activities performed in support of this subtask shall be reported against the GCSS-J WBS.
+
+
+
+6.2 Task 2 – Engineering Activities 
+
+
+
+6.2.1 Subtask 1 – Data Analysis (B001) The contractor shall respond to data analysis tasks from the PMO.  These tasks are comprised of new requirements/capability requests review, Combatant Command 129 Requirements Document (CC129) review, approved user requirements, and defects encountered during system and acceptance testing.  Upon data analysis request, the contractor shall respond in writing via email to minimally, the requestor, COR and alternate COR.  The contractor shall provide subject matter expertise to the existing GCSS-J data sources: Integrated Data Environment Global Transportation Network Convergence (IGC), Joint Operational Plans and Execution System (JOPES),  National Geo-Spatial Intelligence Agency - Airfields, Seaports (NGA), Defense Manpower and Data Center (DMDC), Global Decision Support System (GDSS) and Current Forces Database (CFDB), Palanterra (NGA), Modernized Integrated Database (MIDB), Theatre Construction Management System (TCMS),Web Bulk Petroleum Contingency Report  (WebREPOL). and the contractor shall analyze a maximum of eight (8) potential new GCSS-J data sources per year (Base plus option years).
+
+
+
+6.2.2 Capability Functional and Technical Analysis (B002) The contractor shall examine user stories, functional and technical requirements and/or issues to provide effective solutions for integration efforts. In addition to examining user stories (The Program’s Agile Development Process), the contractor shall also participate in SCRUM, an agile development term, meetings on an as needed basis, sprint reviews and participate in testing for each development sprint. 
+
+
+
+These studies may include, but are not limited to, the following considerations: 
+
+
+
+Requirements Analysis 
+
+Data availability
+
+Data quality (to include but not be limited to accuracy, completeness, correctness, response, etc)
+
+Compliance with Legal and Regulatory Guidance 
+
+Interoperability
+
+Security 
+
+Standards
+
+Data Sharing
+
+Functional and Technical Integration 
+
+Benchmarking/Base lining
+
+
+
+The contractor shall respond to each task with a Data Analysis Report (DAR) using the format specified in Appendix D.  Upon written request of analysis of new application databases, the contractor shall produce a New Source System Analysis technical report instead of a DAR.   This technical report shall include, but not be limited to the following information:
+
+Definition and detailed description of data source and system (if applicable)
+
+List of tables, which would provide the data to satisfy the GCSS-J data requirements
+
+A detailed description of the sources ability to meet the specified requirement and any other CC129 Requirements not currently implemented
+
+Recommendation on attributes by which to retrieve the requested information
+
+Documentation on indexes or lack of indexes on attributes used to retrieve required information
+
+Recommended additional access controls 
+
+Recommended additional queries 
+
+Analysis of source systems data quality
+
+
+
+Based on defects received from testing or the user community and approved by GCSS-J Systems Engineering or GCSS-J Configuration Management Board, the contractor shall analyze deficiencies and propose solutions to the problem.    Problem solution shall be documented as input to the GCSS-J defect tracking system (A009), currently in the Rally tool.  A maximum of 50 defects requiring data analysis is anticipated during each year (base plus option years).
+
+
+
+6.2.2 Deliverables:
+
+Data Analysis Report (DAR) 
+
+Defect Tracking System Input 
+
+
+
+All activities conducted under this subtask shall be reported in the bi-weekly status report. All activities performed in support of this subtask shall be reported against the GCSS-J WBS.
+
+
+
+6.2.3 GCSS-J Source System Document Management. (B003)
+
+Upon a change to GCSS-J source database access (e.g. new tables or views required), the contractor shall provide input to GCSS-J/Source System Interface Control Documents (ICD) using template provided in Appendix E.  The contractor shall review the GCSS-J data source ICDs annually to ensure accesses are accurate.  The contractor shall support GCSS-J PMO in creating MOAs for the new data sources.
+
+
+
+6.2.3 Deliverable:
+
+New Source System Analysis Technical Report
+
+Input to Interface Control Document 
+
+
+
+All activities conducted under this subtask shall be reported in the bi-weekly status report. All activities performed in support of this subtask shall be reported against the GCSS-J WBS.
+
+
+
+6.2.4 Subtask 2 – Query Design and Development (B004)
+
+The contractor shall design the GCSS-J Query and Reporting Strategy. Specifically, the contractor shall analyze the requirements, use the provided authoritative data source, or in the event a data source has not yet been provided, locate data sources and algorithms to satisfy those requirements; examine the database structure, schemas, its architecture and the sources for accuracy and currency, determine options for accessing the data, and develop the SQL statements to execute the queries. The Design Strategy shall be documented in the form of an initial GCSS-J Query Specification.  The contractor shall submit the query spec to the COR, Alternate COR, Chief Engineer, and the capability development team for review.  Query development is accomplished by the capability developer.  Although it is not the contractor’s primary responsibility, the contractor shall provide query/report development support upon the COR’s request.  
+
+
+
+The contractor shall also review and create new User Stories and Acceptance Criteria in support of the GCSS-J Agile Development process. Any reports developed by the contractor shall be integrated into GCSS-J.  The contractor shall work with the lead GCSS-J integrator to include their report into GCSS-J.  The contractor shall complete an initial test of all queries, during the contractor integration phase of software development.  If poor query performance is discovered during the query development phase, the contractor shall document query performance statistics in the GCSS-J defect tracking system and report to the PMO as directed in the testing section of the PWS.
+
+
+
+Subtask 2 Deliverables:
+
+Query Specification 
+
+User stories 
+
+Acceptance Criteria 
+
+Input to GCSS-J Defect Tracking System
+
+
+
+All activities conducted under this subtask shall be reported in the bi-weekly status report. All activities performed in support of this subtask shall be reported against the GCSS-J WBS.
+
+
+
+6.2.5 Subtask 3 – Application Design and Development Support (B005)
+
+The contractor shall assist the application developer, as needed, in implementing the approved solution.  The contractor shall assist the application developer by providing expertise including, but not limited to the following:
+
+System Functionality clarifications
+
+Data related functionality constraints (Lack of data, because of poor source system quality)
+
+Functional algorithms in support of data requirements applicable display mechanisms to support data availability from authoritative/approved sources Expertise in the flow of information displayed by GCSS-J (how and in what order is information displayed from the application)
+
+Identification of the ability to drill down to access more information within GCSS-J; and the order in which information should be presented  
+
+Participate in team SCRUM meetings on an as needed basis
+
+
+
+The contractor shall also perform periodic updates of the GCSS-J Combat Support Applications Data Base (CSAPPDB) to include, but not be limited to, seaport and reference tables.  Using current data obtained from NGA, SDDC and other government supplied data sources as provided, the contractor shall analyze the differences between the new and existing tables, build the required data structures, and deliver the new tables and the associated documentation in a computer software end item (e.g., Oracle export file format).  A maximum of four (4) updates of the seaport and reference tables is anticipated over a five year period. Documentation shall include, but not be limited to, schema of table structure, table descriptions, size, and number of records in each table. 
+
+
+
+Subtask 3 Deliverable:
+
+New tables using an Oracle export file format 
+
+
+
+All activities conducted under this subtask shall be reported in the bi-weekly status report. All activities performed in support of this subtask shall be reported against the GCSS-J WBS.
+
+
+
+
+
+6.2.6 Subtask 4 – System Test Support (B007) The contractor shall support the GCSS-J development team during integration testing by testing the developed capabilities against the GCSS-J requirement.  The contractor shall test according to the IMS and upon receipt of an email request for capability compliance testing by the PMO or upon request via the GCSS-J defect tracking system currently in Rally. The contractor shall test  GCSS-J capabilities, widgets and reports for data quality and benchmarking.  The contractor shall provide performance benchmarking on all GCSS-J queries.  The contractor shall document the sources that provide poor query performance.  Queries with poor performance response times greater than two (2) minutes shall be documented in the GCSS-J defect tracking system.  The contractor shall advise on data quality improvements and provide input to the business process to improve the updates to the CSAPPDB.  All daily quality and performance related topics will be provided in the form of a query review technical report and/or presentation materials included in the daily Scenario Assessment Report (SAR).  The contractor shall support the Government by providing input parameters, expected results when available to the GCSS-J testing team and by participating on the testing team (performing tests).  Also, the contractor shall participate in regular sprint development reviews at the end of each sprint cycle and their assessments shall be based on acceptance criteria at sprint planning meetings and from ad-hoc testing.   In support of System Acceptance Test and Operational Test and Evaluation, the contractor shall provide input to the test scenarios, which will be the testing strategy used during the test events.  The contractor shall provide input and guidance to the team developing test scenarios to simplify the test strategy.  The contractor shall identify a test methodology which would use widget communication along with the appropriate input parameters to test multiple widgets in a dashboard with minimal user input.  The contractor shall provide the input necessary to support the development of an accurate assessment of the GCSS-J capabilities.  Also, in support of the test events, the contractor shall provide input and support to “Truth Data Testing” and Key Performance Parameters (KPPs) Testing.  
+
+
+
+Truth data testing is the testing of GCSS-J and GCSS-J source systems with the purpose of comparing the results returned and the intention of ensuring report consistency across all pertinent systems.
+
+
+
+The contractor shall produce a Scenario Assessment Report (SAR).  The report is an “end of day” email to the COR, Alternate COR, Chief, Systems Integration, Testing and Production, and Test Manager assessing test scenarios and truth data collection against the GCSS-J requirements met by the imminent release.  The report shall document in detail issues where the scenario is not consistent with current GCSS-J requirements.  If the scenarios created are consistent with the GCSS-J requirements for the release, a simple statement documenting such is sufficient.  The email shall have the title SAR for GCSS-J Release x.x as of date.
+
+
+
+On GCSS-J software upgrades the contractor shall provide regression testing of all GCSS-J reports, widgets and capabilities impacted.  The result will be documented in a query/widget status matrix.
+
+
+
+The contractor shall document defects found during test events in the GCSS-J defect tracking system.
+
+
+
+Subtask 4 Deliverables:
+
+Scenario Assessment Report
+
+Test results input to the Data Engineering Team Process Tool
+
+Integration test results input to the Data Engineering Team Process Tool
+
+Query Review Technical Report
+
+
+
+All activities conducted under this subtask shall be reported in the bi-weekly status report. All activities performed in support of this subtask shall be reported against the GCSS-J WBS.
+
+
+
+6.2.7 Subtask 5 – Meetings and Briefings (B008) The contractor shall also attend selected meetings to act as the technical advisor at such meetings.  Contractor shall prepare presentation materials to support on-going demonstrations of any of the objectives of this PWS as they evolve (i.e., deliverables, agenda, briefing materials, and after action report).  
+
+
+
+Subtask 5 Deliverable:
+
+Presentation materials 
+
+
+
+
+
+All activities conducted under this subtask shall be reported in the bi-weekly status report. All activities performed in support of this subtask shall be reported against the GCSS-J WBS.
+
+
+
+6.2.8 Subtask 6 – Requirements Analysis (B009)
+
+GCSS-J requirements are analyzed, evaluated and prioritized under the direction of the GCSS-J Functional Requirements Working Group (FRWG).  In accordance with the agile process, requirements management tool (currently Rally).  The FRWG is minimally comprised of Capability Managers, (CM), Joint Staff , users, select PMO staff, and GCSS-J contract staff from this PWS and select contract staff from other GCSS-J development or integrating contracts as identified by the GCSS-J PMO.  The contractor shall provide input and support to the FRWG.  The GCSS-J PMO will conduct a requirements review for each sprint and release via the FRWG. The output of this review shall be used to provide enough information for the capability Development Contractor (DC)(under a different GCSS-J contract) to produce the technical requirements needed to develop the requested capability.   The contractor shall participate in requirement reviews for each sprint with the PMO and Joint Staff to prioritize the list of requirements allocated for each sprint. The contractor shall interface with the customer, users and developers to ensure requirements are understood, well documented and data sources exist of good quality (able to provide result sets which are minimally but not limited to correct, complete and timely).  The contractor shall analyze the requirements to ensure requirements are clearly stated (implementable using the data from the intended source and clearly written for implementation by the DC).   The contractor shall write user stories and acceptance criteria in support of requirements and the contractor shall provide support and input to the CM to ensure all User Stories are well formed containing an appropriate title, good functional description, and complete acceptance criteria.  Upon request, the contractor shall produce a Requirements Analysis Report (RAR) (A0026), which documents data source availability and capability to support the requested functionality.  The contractor shall provide data source expertise to DC(s) to support capability design and subsequent development of user stories/requirements.   The contractor shall support the CM to produce a Requirements Clarification when the requirement is unclear as written.  The contractor shall participate in the GCSS-J Log COP working group, providing data source expertise and FRWG support during design presentations of up-coming GCSS-J capability /functionality to ensure user requirements are met.  GCSS-J is one of a Family of Systems, responsible for providing the logistics capabilities documented in the Combatant Command (CC) 129 requirements.  The contractor shall relate each GCSS-J requirement/User Story to a CC129 requirement.  GCSS-J tracks the status of our completion of the CC129 requirements, currently in the form of a spreadsheet, which will be provided as GFI.  The contractor shall update the CC129 completion status with each GCSS-J release/patch/widget.  Within two months of contract award, the contractor shall evaluate the current tracking mechanism and propose an alternative tracking mechanism, process improvements and artifact improvements to easily track CC129 and the CC129 completion status.   The contractor shall support the PMO in ensuring JS/J4 remains abreast of GCSS-J CC129 completion status.  The contractor shall also identify the appropriate Measure of Performance (MOP) and Measure of Effectiveness (MOE) assigned to each User Story / Requirement (currently documented in the requirements tracking tool).  The contractor shall document CC129 analysis status support, CM support and all communications with customers in the Bi-weekly Status Report.
+
+
+
+Subtask 6 Deliverables:
+
+Requirements Analysis Report 
+
+Requirements Clarification Request
+
+CC129 Tracking Process Improvement Analysis
+
+Input to GCSS-J Requirements Tracking Tool
+
+
+
+All activities conducted under this subtask shall be reported in the bi-weekly status report. All activities performed in support of this subtask shall be reported against the GCSS-J WBS.
+
+
+
+6.2.9 Subtask – 7 GCSS-J Help Desk and User Support (B011)
+
+The contractor shall provide Subject Matter Experts (SMEs), who are available to support the GCSS-J Help Desk and the GCSS-J users.  The contractor shall provide assistance when a problem or question arises on GCSS-J functionality or data clarification.  Questions and further clarification on GCSS-J functionality may also arise as a result of demonstrations and exercises.  The contractor shall provide data clarification and functionality support to users and prospective users.   The GCSS-J PMO will contact the appropriate contractor SME for help desk/user support.  The contractor-SME shall acknowledge receipt of request to the requestor and COR within 30 minutes of the work day.  The contractor shall provide periodic status of the issue to the PMO throughout the day and provide an end of day status report until the issue is resolved. The contractor shall provide a detailed description of the support provided in the bi-weekly report.    User support shall be provided as a result of systems engineering, Help Desk calls or CM support.
+
+
+
+Subtask 7 Deliverable:
+
+User Support Report
+
+
+
+All activities conducted under this subtask shall be reported in the bi-weekly status report. All activities performed in support of this subtask shall be reported against the GCSS-J WBS.
+
+
+
+
+
+
+
+6.2.10 Subtask – 8 GCSS-J JOPES Interface and Readiness Support (B013)
+
+The contractor shall provide Global Command and Control Systems – Joint GCCS-J JOPES expertise GCCS-J and joint Interoperability and Test Command (JITC) lab personnel are responsible for JOPES server systems administration and systems maintenance.  The contractor shall ensure that JOPES data is current and pertinent for each phase of the GCSS-J development lifecycle.  As needed, the contractor shall download data for inclusion on the GCSS-J JOPES test server.  The contractor shall communicate with GCSS-J JOPES users to ensure JOPES accounts are created and maintained, they are familiar with changes in the JOPES environment and are abreast of the latest JOPES Program requirements.  The contractor shall interface with the JOPES program development staff participating in configuration control boards, attending user group meetings, knowledgeable of changes as a result of JOPES modernization and support GCSS-J in maintaining Interface Control Documents.  The contractor shall provide JOPES SMEs to other GCSS-J developers.  Maintenance shall include but not be limited to identifying test Plan IDs (PIDS) to support functionality, downloading test plans to the test environment, ability to obtain summary knowledge of PID content The contractor shall provide readiness expertise, understanding the differences between GSORTS and the Defense Readiness Reporting System (DRRS).  The contractor shall provide knowledge of DRRS application, web services and summary content.  
+
+
+
+All activities conducted under this subtask shall be reported in the bi-weekly status report. All activities performed in support of this subtask shall be reported against the GCSS-J WBS.
+
+
+
+Subtask 8 Deliverables:
+
+Test results input to the Data Engineering Team Process Tool
+
+
+
+6.3 Task 3 – Functional Support Tasks 
+
+
+
+
+
+6.3.1- Global Combat Support System - Joint (GCSS-J) Functional Proponent Support (C001)
+
+
+
+The JSJ4 is the functional proponent for the Joint Requirements Oversight Council approved Global Combat Support System -Joint (GCSS-J) and also responsible for promoting the development and implementation of logistics information systems and technologies of the future to meet the knowledge-based requirements of the Combatant Commands. The contractor shall support the functional sponsor by serving as the SME and possessing an intimate knowledge of all Joint Capability Areas. To support the functional sponsor, the contractor must have a Top Secret clearance and the duty station will primarily be located at the Pentagon.  If the place of duty changes to Ft Meade, the contractor will be notified 30 days in advance. 
+
+
+
+The capability areas include:
+
+Deployment and Distribution
+
+Supply
+
+Combatant Command Logistics Common Operational Picture (COCOM) (LOGCOP)
+
+Logistics Services
+
+Interagency Coordination (NIPRNET)
+
+Adaptive Logistics Network
+
+Maintain
+
+Operational Contract Support
+
+Base and Installations Support
+
+Engineering
+
+Security Assistance
+
+Homeland Defense
+
+Anticipate two (2) of the JCAs would be the focus for release development per contract year. 
+
+
+
+6.3.1 - Subtask 1 GCSS-J Program Oversight (C002)
+
+
+
+The contractor shall provide administrative, planning, and functional expertise for working groups supporting the GCSS-J management structure documented in CJCSI 6723.01B.  Specifically, the contractor shall organize, recommend agendas and discussion topics, attend and document the results of the GCSS-J management working groups.
+
+
+
+Subtask 1 Deliverables:
+
+Meeting Agendas 
+
+Meeting Minutes
+
+
+
+6.3.2 - Subtask 2 GCSS-J Requirements Collection, Validation and Prioritization (C003)
+
+
+
+The contractor shall support the functional sponsor’s requirement in the collection, review, validation, and prioritization of combat support and combat service support information requirements for the GCSS-J. The contractor shall recommend methodologies, processes and procedures for collecting, validating and prioritizing these requirements. Specifically, the contractor shall recommend a new requirements request process that enables customers to submit new requirements and allows the Government to identify and track discrepancies. The contractor shall recommend a configuration management process that will ensure alignment of information requirements, supporting data elements, data sources and GCSS-J functional modules in a manner that enables traceability throughout. The contractor shall organize, attend, and in some cases, facilitate and document the results of requirements identification workshops, working groups, and planning and configuration management and control boards to facilitate the review, validation and prioritization of these requirements. The contractor shall make recommendations to the Government on the actual priority of these requirements. The contractor shall maintain, revise and consolidate these requirements within the appropriate GCSS-J Joint Capabilities Integration Development System (JCIDS) - required functional requirements documents.
+
+
+
+Subtask 2 Deliverables:
+
+Requirements Request Process
+
+Configuration Management Process
+
+Minutes for meetings, workshops, working groups, and control boards
+
+
+
+6.3.3 - Subtask 3 GCSS-J Data Analysis and Assessment (C004)
+
+
+
+The contractor shall assess the availability of logistics data to support the requirements identified in Subtask 4.4.1.2. The contractor shall recommend to the Government authoritative data sources for that data and identify gaps where that data is not currently available within the logistics community. The contractor shall organize, attend and, in some cases, facilitate and document the results of workshops, working groups, and meetings designed to define data requirements, authoritative data sources and data sharing procedures and policies.
+
+
+
+Subtask 3 Deliverables:
+
+Minutes for meetings, workshops, working groups, and control boards
+
+
+
+6.3.4 - Subtask 4 GCSS-J External Training, Marketing, and Briefing Support (C005)
+
+
+
+The contractor shall provide recurring external GCSS-J training, marketing and briefing support to venues such the Joint Course on Logistics (JCL).
+
+
+
+Subtask 4 Deliverables:
+
+Training sessions 
+
+Demonstrations
+
+
+
+6.3.5 - Subtask 5 Bi-Monthly In Process Reviews (IPRs) (C006)
+
+The contractor is required to participate in Quarterly IPRs where they will provide a high level summary briefing.  The IPR shall cover the following:
+
+
+
+Contract Summary- identify Contractor Team Lead; COR/ACOR; and specific contract information (e.g., contract vehicle, contract number, total dollar amount of effort, total dollars expended (as of the end of the reporting period), current month expenditures, average monthly burn rate, number of full time equivalents, period of performance, contract type and which WBS numbers the contractor is supporting;
+
+
+
+Reporting Structure- identify baseline dollars associated by Task and WBS and any baseline changes.
+
+
+
+
+
+Update/identify specific efforts worked on during the reporting period.
+
+
+
+Issues.
+
+
+
+
+
+Contractor Burn Rate- display budget, actual expenditures and estimate to complete data in a graph format.
+
+
+
+Subtask 5 Deliverable:
+
+Bi-Monthly IPR presentation materials
+
+
+
+
+
+7.  Performance Standard.  
+
+
+
+
+
+8.  Incentives.  Both positive and negative performance will be documented in past performance reports/databases, Contractor Performance Assessment Reporting System (CPARS), as appropriate and will be taken into consideration for follow-on work.
+
+
+
+9.  Place of Performance.  
+
+
+
+The primary place of performance will be 6910 Cooper Ave, Ft Meade, MD.   Space will be provided at Ft Meade, as requested, for up to three individuals that will be provided with laptops, internet connectivity, desk, and phone.  However, space is contingent upon overall GCSS-J PMO availability of space and approved space waivers.  Telework may be optional pending approval of the Government COR.
+
+
+
+Local travel from the primary place of performance to other facilities within the National Capital Region (NCR) will be required on a regular basis for data gathering, meetings, testing, etc.  Local travel from the primary place of performance to the GCSS-J Integrator site, currently located at 2340 Dulles Corner Blvd, Dulles, VA, will be required to support Functional Requirement Working Groups (FRWG) and text events.  The address of the integrator is subject to change, especially considering the re-compete of the integration contract.  All travel will be conducted in accordance with FAR 31.205-46, Travel Costs.  Only travel specifically authorized in advance and in writing by the COR will be reimbursed under this contract. To the extent that reimbursement of Contractor travel, lodging, meals and incidental expenses are specifically authorized, such reimbursements shall be limited to rates or amounts considered reasonable and allowable as defined in FAR 31.205-46.  Contractor travel is anticipated to support the requirements named in this Performance Work Statement.  Travel projections are two (2) trips for one (1) personnel within the CONUS and OCONUS to various locations per year.
+
+
+
+Alternate Place of Performance - Contingency Only.  Contractor employees may be required to work at home, another approved activity within the local travel area or at the contractor's facility in cases of unforeseen conditions or contingencies (e.g., pandemic conditions, exercises, etc.).  Any equipment such as laptops or phones provided to Contractor personnel shall be returned at the termination of the engagement or at another time mutually agreeable to both parties.  COR approval is required.  Contractor shall prepare all deliverables and other contract documentation utilizing contractor resources.  To the extent possible, the contractor shall use best efforts to provide the same level of support as stated in the PWS.  In the event the services are impacted, reduced, compromised, etc., the Contracting Officer or the contractor may request an equitable adjustment. 
+
+
+
+
+
+
+
+
+
+10.  Period of Performance.  The period of performance is a 1-year base with four (4) 1-year option periods beginning on:
+
+(Base) 25 April 2014 through 24 April 2015. 
+
+(Option Year 1) will be 25 April 2015 through 24 April 2016.  
+
+(Option Year 2) will be 25 April 2016 through 24 April 2017.  
+
+(Option Year 3) will be 25 April 2017 through 24 April 2018.  
+
+(Option Year 4) will be 25 April 2018 through 24 April 2019.  
+
+
+
+As directed by the COR, the contractor shall continue performance in emergency or mission essential conditions.  Additionally, the contractor may be required to account for the whereabouts of their personnel should this information be requested by the COR.
+
+
+
+
+
+11.  Delivery Schedule
+
+
+
+
+
+12.  Security.  
+
+The work to be performed under this contract is up to and including the Secret level and positions, except for the Functional Requirements task which requires a Top Secret clearance, are IT-II for systems access.  The company must have a final Secret Facility Clearance (FCL) from the Defense Industrial Security Clearance Office (DISCO).  For contractor employees, a minimum of Secret security clearance and IT-II access eligibility is required when performance starts.  This section shall be considered a supplement to block 13 of the Government provided DD 254, Contract Classification Specification.   Personnel designated to work on this contract will submit, within three (3) days after the start of this contract, written certification of their clearance level and term of viability.
+
+
+
+References: 
+
+
+
+    a. DOD 5200.2-R, DOD Personnel Security Program. 
+
+
+
+    b. DISAI 240-110-36, Personnel Security. 
+
+
+
+    c. DOD 5220.22-M, National Industrial Security Program Operating Manual.
+
+
+
+    d. DOD 5220.22-R, Industrial Security Regulation.
+
+
+
+    e. Enterprise Services Directorate Security Handbook.
+
+
+
+Personnel performing duties under this contract must undergo a favorably adjudicated National Agency Check, Local Agency Check and Credit Check (NACLC) as a minimum investigation.  The NACLC will be maintained current within 10-years and requests for Secret Periodic Reviews (SPRs) will be initiated 6-months prior to the 10-year anniversary date of the previous NACLC or SPR.   
+
+
+
+Adjudication of IT-II access will be accomplished by DISA Security and the granting of final IT-II access will be accomplished by Washington Headquarters Services Consolidated Adjudications Facility (WHS/CAF) for all solely unclassified contracts.  An exception to this is that individual contractor employees with a NACLC or SPR (within a 10-year scope) that is favorably adjudicated for a Secret security clearance or IT-II access by any of the other Department of Defense adjudication facilities (DISCO, DIA, ACCF, AFCAF, NAVCAF) will be automatically accepted for final IT-II access.  All personnel performing on this contract will be  citizens.
+
+
+
+The request for NACLC must be submitted by the contractor Facility Security Officer (FSO) to the Defense Industrial Security Clearance Office (DISCO).  A copy of the E-QIP or SF 86 forms must be submitted to the DISA Personnel Security points of contact listed below for interim IT-II determination.
+
+
+
+The Contractor will forward a Visit Authorization Letter (VAL) to the Primary Task Monitor listed at beginning of this PWS for all employees prior to the beginning of each contracting/task order period of performance and as new contractor employees are assigned to the contract:
+
+
+
+The VAR/VAL should be sent via one of two methods.  
+
+1.  Per direction of DISA Security, Visit Authorization Letters (VALs) or Visit Requests (VARs) for contract personnel that will be working for Defense Information Systems Agency either on or off site will be forwarded via Joint Personnel Adjudication System (JPAS) to the VAR Center using the following SMO Code:  DKABAA10.  
+
+
+
+For those companies submitting the VALs via JPAS, they will also provide a copy of the VALs to the task monitors of the contract for creation of records in the Trusted Associate Sponsorship System (TASS) so that Common Access Cards can be obtained for the contractors that require them.
+
+
+
+2.  For those companies that do not have the capability to send VALs via JPAS, they can send the VALs via e-mail to the task monitors.  Due to Privacy Act concerns, the VALs will be e-mailed as a password protected “WinZip” attachment, followed up by a second e-mail containing the password for the first e-mail.
+
+
+
+The VAR/VAL shall be on company letterhead or pre-fabricated form and contain the following information:
+
+
+
+Contract number with start and end dates
+
+Company point of contact (POC) and telephone number
+
+Government COR name and telephone number
+
+Complete legal name of employee(s)
+
+Social Security Number
+
+Security Clearance level, date granted, and adjudication facility name, i.e. DISCO
+
+Type of Personnel Security Investigation (PSI)                   
+
+Date PSI completed
+
+DISA Security Personnel can be contacted for security related questions as follows:
+
+
+
+For Industrial Security related issues:  
+
+
+
+Primary:  Terry Scott:  (301) 225-1229
+
+Defense Information Systems Agency
+
+ATTN:  MPS61, Industrial Security 
+
+Command Bldg, Rm C3B57D
+
+6910 Cooper Ave
+
+Ft Meade, Md 20755
+
+
+
+For Personnel Security related issues to include IT access requests:
+
+
+
+Primary:  Anni Otis, phone:  (301) 225-1612
+
+Defense Information Systems Agency
+
+ATTN:  MPS62, Personnel Security 
+
+Command Bldg, Rm C3A57C
+
+6910 Cooper Ave
+
+Ft Meade, Md 20755
+
+
+
+Contractor personnel must comply with local security requirements for entry and exit control for personnel and property at the government facility. 
+
+
+
+Contractor employees will be required to comply with all Government security regulations and requirements.  Initial and periodic security training and briefings will be provided by Government security personnel. Failure to comply with security requirements can be cause for termination of employment.
+
+
+
+The Contractor shall not divulge any information about DoD files, data processing activities or functions, user identifications, passwords, or any other knowledge that may be gained, to anyone who is not authorized to have access to such information.  The Contractor shall observe and comply with the security provisions in effect at the DoD facility. Identification shall be worn and displayed as required.
+
+
+
+DISA retains the right to request removal of contractor personnel regardless of prior clearance or adjudication status, whose actions, while assigned to this contract, clearly conflict with the interest of the Government.  The reason for removal will be fully documented in writing by the Contracting Officer (CO).  When and if such removal occurs, the contractor shall, within 15 working days, assign qualified personnel to the vacancy(ies) thus created.
+
+
+
+13.  Government-Furnished Equipment (GFE)/Government-Furnished Information (GFI)
+
+The Government will provide a work area for contractor personnel that are comparable to that already occupied by present Government personnel.  The Government will also provide access to Class A phone service, and personal computers.  If provided, the contractor shall control all equipment and software provided by the Government as GFE.  The contractor shall release all GFE equipment to the Government upon termination of the specific task or subtask; whichever date is earlier, in which its use is no longer necessary.  
+
+14.  Other Pertinent Information or Special Considerations. Due to the nature of the work, the contractor shall provide personnel familiar with the following specialized areas:
+
+
+
+Program Management
+
+Applications Software Experience
+
+Database Analysis Experience
+
+Oracle and/or Sybase DBMS Experience
+
+UNIX Workstation User Experience
+
+SQL/SQLPlus Experience*
+
+ERWin/ERx 3.0 Experience*
+
+Query Builder
+
+JBOSS
+
+Enterprise Data Services (EDS)
+
+Web Services
+
+
+
+Knowledge and experience in data sources; but not limited to the following:
+
+
+
+                                                                         
+
+
+
+Personnel assigned to this task shall have experience in the following environments:
+
+
+
+Windows 2003 Server and Windows 7 Workstations
+
+Sun Ultra Workstations and enterprise Servers
+
+Sun UNIX
+
+
+
+All agency security policies will be adhered to.  Software shall be shrink wrapped and submitted to the AIS Security Officer to be checked prior to installation.  All software must be certified as Year 2000 compliant.
+
+
+
+
+
+Identification of Possible Follow-on Work.
+
+
+
+Identification of Potential Conflicts of Interest (COI).
+
+ 
+
+Identification of Non-Disclosure Requirements. 
+
+
+
+Packaging, Packing and Shipping Instructions. Not Applicable
+
+
+
+Inspection and Acceptance Criteria. Not Applicable
+
+
+
+Property Accountability. The contractor shall submit the attached Electronic Product List (see below) in addition to complying with all requirements of DFARS 252.211-7003.  See DARS 252.211-9000, Requirement to Submit an Electronic Product List for additional information.  
+
+
+
+
+
+
+
+Identification of Non-Disclosure Requirements
+
+The contractor must provide a nondisclosure agreement when working with sensitive and/or proprietary information.  The government, at the time of this PWS, has identified no requirements; however, the government reserves the right to require one at the appropriate time.
+
+
+
+15.  Section 508 Accessibility Standards.  The following Section 508 Accessibility Standard(s) (Technical Standards and Functional Performance Criteria) are applicable (if box is checked) to this acquisition.
+
+
+
+Technical Standards
+
+
+
+ 1194.21 - Software Applications and Operating Systems
+
+ 1194.22 - Web Based Intranet and Internet Information and Applications
+
+ 1194.23 - Telecommunications Products
+
+ 1194.24 - Video and Multimedia Products
+
+ 1194.25 - Self-Contained, Closed Products
+
+ 1194.26 - Desktop and Portable Computers
+
+ 1194.41 - Information, Documentation and Support
+
+
+
+The Technical Standards above facilitate the assurance that the maximum technical standards are provided to the Offerors.  Functional Performance Criteria is the minimally acceptable standards to ensure Section 508 compliance.  This block is checked to ensure that the minimally acceptable electronic and information technology (E&IT) products are proposed.
+
+
+
+Functional Performance Criteria
+
+
+
+ 1194.31 - Functional Performance Criteria
+
+
+
+Contract Number:
+
+
+
+Task Order Number:
+
+N/A
+
+
+
+Name:
+
+
+
+Organization:
+
+DISA/CC22
+
+Department of Defense Activity
+
+Address Code (DODAAC):
+
+HC1047
+
+Address:
+
+P.O. Box 549, Ft. Meade, MD 20755-0549
+
+Phone Number:
+
+
+
+Fax Number:
+
+
+
+E-Mail Address:
+
+
+
+
+
+Name:
+
+
+
+Organization:
+
+DISA/CC22
+
+DODAAC:
+
+HC1047
+
+Address:
+
+P.O. Box 549, Ft. Meade, MD 20755-0549
+
+Phone Number:
+
+
+
+Fax Number:
+
+
+
+E-Mail Address:
+
+
+
+
+
+Performance Standard
+
+Acceptable Quality Level (AQL)
+
+Method of Surveillance
+
+Completion of tasks as scheduled
+
+Must achieve completion of tasks as scheduled 90% of the time
+
+Daily observation, monthly financial reports and bi-weekly written reports 
+
+
+
+
+
+Quality deliverables
+
+Must provide quality deliverables 90% of the time
+
+Daily observation, monthly financial reports and bi-weekly written reports 
+
+
+
+
+
+Quality inter-contract support
+
+Must provide inter-contract support 90% of the time
+
+Daily observation, monthly financial reports and bi-weekly written reports 
+
+
+
+
+
+
+
+PWS Task#
+
+PWS Deliverable Location#
+
+Deliverable Title
+
+CDRL/DID#
+
+CDRL/DID#
+
+Deliverable Due
+
+1
+
+1.1
+
+Contract Management Plan
+
+A002/DI-MGMT-80347
+
+Draft – 15 days after contract award
+
+Final – 30 days after contract award
+
+Draft – 15 days after contract award
+
+Final – 30 days after contract award
+
+1
+
+1.1
+
+Detailed Work Plan
+
+A002/DI-MGMT-80227
+
+Draft – 15 days after contract award
+
+Final – 30 days after contract award
+
+Draft – 15 days after contract award
+
+Final – 30 days after contract award
+
+1
+
+1.2
+
+Work Breakdown Structure
+
+A003/DI-MISC-80711A
+
+
+
+30 days after contract award
+
+30 days after contract award
+
+1
+
+1.2
+
+Work Package Plans
+
+A003/DI-MISC 80711B
+
+30 days after contract award
+
+30 days after contract award
+
+1
+
+1.2
+
+Monthly Project Status Report
+
+A003/DI-ADMN-81334
+
+Monthly
+
+Monthly
+
+1
+
+1.2.1
+
+Bi-Weekly Status Report
+
+A004/DI-ADMN-81334
+
+1st business day of every other week
+
+1st business day of every other week
+
+1
+
+1.2.2
+
+Financial Management Report
+
+A005/DI-MGMT-80227
+
+Monthly
+
+Monthly
+
+2
+
+6.2.2
+
+Data Analysis Report  (DAR)
+
+B002/ DI-MISC-80508
+
+2 weeks after query spec review
+
+2 weeks after query spec review
+
+2
+
+6.2.3
+
+New Source System Analysis Technical Report
+
+B003/ DI-MISC-80508
+
+Draft - 45 After Start of Analysis
+
+Final - 15 After Government Comments
+
+Draft - 45 After Start of Analysis
+
+Final - 15 After Government Comments
+
+2
+
+6.2.2
+
+Defect Tracking System Input
+
+B002/DI-MISC-80508
+
+1 week after IR submission
+
+1 week after IR submission
+
+2
+
+6.2.3
+
+Input to Interface Control Document
+
+B003/DI-MISC-80508
+
+Annually, by the start of acceptance testing.
+
+Annually, by the start of acceptance testing.
+
+2
+
+2
+
+Input to GCSS-J defect tracking system
+
+B004/DI-MISC-80508
+
+24 hours after test
+
+24 hours after test
+
+2
+
+2
+
+User Stories 
+
+B004/DI-MISC-80508
+
+At the beginning of each sprint
+
+At the beginning of each sprint
+
+2
+
+2
+
+Query specification
+
+B004/DI-MISC-80508
+
+At design completion
+
+At design completion
+
+2
+
+2
+
+Acceptance Criteria
+
+B004/DI-MISC-80508
+
+At the beginning of each sprint
+
+At the beginning of each sprint
+
+2
+
+3
+
+New tables using an Oracle export file format
+
+B005/DI-MISC-80508
+
+As required
+
+As required
+
+2
+
+4
+
+Test Results input to Data Engineering Team Process Tool
+
+B007DI-MISC-80508
+
+Input to GCSS-J defect tracking system
+
+Input to GCSS-J defect tracking system
+
+2
+
+4
+
+Integration Test Results input to the Data Engineering Team Process Tool
+
+B007/DI-MISC-80508
+
+24 hours after test
+
+24 hours after test
+
+2
+
+4
+
+Scenario Assessment Report
+
+B007/DI-MISC-80508
+
+Email daily during the acceptance test and operational test and evaluation process
+
+Email daily during the acceptance test and operational test and evaluation process
+
+2
+
+5
+
+Presentation Materials
+
+B008/DI-ADMN-81373
+
+Three days after written request
+
+Three days after written request
+
+2
+
+6
+
+Requirements Analysis Report
+
+B009/ DI-MISC-80508
+
+5 days after written request
+
+5 days after written request
+
+2
+
+6
+
+Requirements Clarification Request
+
+B009/ DI-MISC-80508
+
+5 days after written request
+
+5 days after written request
+
+2
+
+8
+
+User Support Report
+
+B011/DI-MGMT-80227
+
+Within the next weekly report
+
+Within the next weekly report
+
+2
+
+9
+
+Test Results input to Data Engineering Tool Process Tool
+
+B013/DI-MISC-80508
+
+24 hours after test
+
+24 hours after test
+
+3
+
+1
+
+Meeting agendas
+
+C002
+
+3 days prior to meeting
+
+3 days prior to meeting
+
+3
+
+1
+
+Meeting minutes
+
+C002
+
+3 days after meeting
+
+3 days after meeting
+
+3
+
+2
+
+Requirements Request Process
+
+C003
+
+30 days after option is exercised
+
+30 days after option is exercised
+
+3
+
+2
+
+Configuration Management Process
+
+C003
+
+30 days after option is exercised
+
+30 days after option is exercised
+
+3
+
+2
+
+Minutes for meetings, workshops, working groups, and control boards
+
+C003
+
+3 days after event
+
+3 days after event
+
+3
+
+3
+
+Minutes for meetings, workshops, working groups, and control boards
+
+C004
+
+3 days after event
+
+3 days after event
+
+3
+
+6.3.5
+
+Bi-Monthly In-Process Review Presentation Material
+
+C006/DI-ADMN-81373
+
+Bi-Monthly, on the 15th of the month 
+
+Bi-Monthly, on the 15th of the month 
+
+3
+
+4
+
+Training sessions 
+
+C005
+
+2 days prior to event
+
+2 days prior to event
+
+3
+
+4
+
+Demonstrations
+
+C005
+
+2 days prior to event
+
+2 days prior to event

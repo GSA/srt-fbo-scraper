@@ -1,0 +1,1368 @@
+OFFICE OF THE COMPTROLLER OF THE CURRENCY
+
+STATEMENT OF OBJECTIVES
+INTEGRATED MOBILE EMPLOYEE TECHNOLOGY REFRESH AND OPTIMIZATION (I-METRO)
+
+January 7, 2009
+
+I-METRO SOO 1/7/2009
+
+1
+
+TABLE OF CONTENTS
+1. 1.1. 1.2. 1.3. 1.4. 1.5. 2. 3. 3.1. 3.2. 3.3. 3.4. 3.5. 3.6. 3.7. 4. 4.1. 4.2. INTRODUCTION ................................................................................................................................................. 3 Organization Background...................................................................................................................................... 3 OCC Corporate Objectives.................................................................................................................................... 4 OCC Mobile Employees........................................................................................................................................ 4 OCC IT Service Delivery ...................................................................................................................................... 5 OCC IT Environment ............................................................................................................................................ 7 PURPOSE ............................................................................................................................................................. 8 OBJECTIVES........................................................................................................................................................ 8 Implement a Lifecycle Approach to Desktop Automation and Supporting Infrastructure Management.............. 8 Support OCC's Essential Communication Function ............................................................................................. 8 Capitalize on Industry Leading Practices and Innovation ..................................................................................... 8 Enhance the Work Experience of the Mobile Employees ..................................................................................... 8 Continuously Increase Customer Satisfaction ....................................................................................................... 9 Continuous Optimization....................................................................................................................................... 9 Ensure and Enforce a Secure, Operational Cyber Environment............................................................................ 9 SCOPE................................................................................................................................................................... 9 General .................................................................................................................................................................. 9 Specific Requirements........................................................................................................................................... 9 4.2.1 Lifecycle Workforce Automation Acquisition, Provisioning, Management and Maintenance.................. 10 4.2.2 Email, Blackberry, and Web Presence Support Services............................................................................ 11 4.2.3 Mobile Workforce Support Services .......................................................................................................... 11 4.2.4 HSPD-12 Compliance Technology and Administration Services .............................................................. 12 5. CONSTRAINTS.................................................................................................................................................. 13 5.1. User Authentication............................................................................................................................................. 13 5.2. Remote Management/Asset Management ........................................................................................................... 13 5.3. Backup and Recovery.......................................................................................................................................... 13 5.4. Personal Area Network........................................................................................................................................ 13 5.5. Second Hard Drive .............................................................................................................................................. 14 5.6. Quality Management ........................................................................................................................................... 14 5.7. Operational Controls ........................................................................................................................................... 14 5.8. Subject Matter Experts ........................................................................................................................................ 14 5.9. Applicable Documents ........................................................................................................................................ 14 APPENDIX A: Field Examiner Experience..................................................................................................................... 17 APPENDIX B: Minimum Hardware Specifications ........................................................................................................ 19 APPENDIX C: List of Software....................................................................................................................................... 24 APPENDIX D: Key Business Applications on the Desktop/Laptop............................................................................... 25 APPENDIX E: List of Client Locations........................................................................................................................... 26 APPENDIX F: Current E-mail Architecture and Mailbox Metrics.................................................................................. 27 APPENDIX G: Web Presence.......................................................................................................................................... 35 APPENDIX H: Desktop Management Environment ....................................................................................................... 36 APPENDIX I: Current Hardware Allocation by Device .................................................................................................. 37 APPENDIX J: Minimum Service Areas for Measurement .............................................................................................. 38
+
+I-METRO SOO 1/7/2009
+
+2
+
+Statement of Objectives 1. INTRODUCTION
+The Office of the Comptroller of the Currency (OCC) Integrated Mobile Employee Technology Refresh and Optimization (I-METRO) effort is seeking an experienced industry partner that will assist in its efforts to modernize its approach to providing and maintaining end user computing resources and services, align its technology investments to its business priorities, and provide a comprehensive, multi-faceted solution to improve the connectivity, collaboration, performance and overall user experience for its mobile workforce primarily bank examiners conducting on-site reviews and sustained supervision of the national banks. The OCC workforce faces a number of challenges in meeting its mission objectives. The banking industry is increasing in complexity. The consolidation of small banks into larger banks and larger banks into megabanks has reshaped the banking community. Complexity is increasing not only in the internal organizational structures of the banks but also in the products that the banks offer. This, in turn, amplifies the complexity of the risks associated with these products. Bank examiners are faced with more and more materials and data to review and analyze. While the OCC provides an array of sophisticated technologies in support of its staff and customers, the very sophistication of the OCC Information Technology (IT) portfolio presents unique challenges when it comes to extending these resources to its mobile workforce. Poor or non-existent communication services at many of its on-site engagements and computing equipment nearing the end of its useful life are two of the more significant impediments. Expectations are rising as the staff becomes increasingly more sophisticated in the knowledge and use of IT. Email and Blackberry support services, real-time collaboration facilities, asset management, and single signon authentication are no longer nice-to-have; they are essential. Whether the topic is mobility, security, accountability, data analytics and reporting, or a range of other technical concerns, the OCC's workforce wants and requires timely, accurate, and responsive service and information. 1.1. Organization Background
+
+The Department of the Treasury is the primary Federal agency responsible for the economic and financial prosperity of the United States. The Treasury is organized into departmental offices and operating bureaus. The bureaus carry out specifically assigned mission operations. As a Treasury bureau, the OCC charters, regulates, and supervises national banks to ensure a safe, sound, and competitive banking system that supports both the citizens and the economy of the United States. Currently, the OCC supervises approximately 1,849 institutions with national bank charters and 50 federal branches of foreign banks in the United States. The OCC has approximately 3,200 employees, 40% whom are highly mobile, in locations throughout the United States. The OCC has its headquarters in Washington, D.C., a data center in Landover, Maryland, and four district offices in Chicago, Dallas, Denver, and New York. The Office of the Ombudsman is located in Houston. The OCC also operates field offices and satellite locations in cities throughout the United States, resident examiner teams in the largest banking companies, and an examining office in London, England.
+
+I-METRO SOO 1/7/2009
+
+3
+
+The OCC's nationwide staff of examiners conducts on-site reviews of national banks and provides sustained supervision of bank operations. The agency issues rules, legal interpretations, and corporate decisions concerning banking, bank investments, bank community development activities, and other aspects of bank operations. Attachment A provides some additional insight into the Field Examiner's Experience and examination process. 1.2. OCC Corporate Objectives
+
+The OCC's activities are predicated on four objectives that support its mission to ensure a stable and competitive national banking system. The four objectives are: ˇ ˇ ˇ ˇ To ensure the safety and soundness of the national banking system; To foster competition by allowing banks to offer new products and services; To improve the efficiency and effectiveness of OCC supervision, including reducing regulatory; burden; and To ensure fair and equal access to financial services for all Americans.
+
+Additional information regarding OCC's mission, business objectives, and other product information can be attained at www.occ.gov. 1.3. OCC Mobile Employees
+
+National bank examiners supervise domestic and international activities of national banks and perform corporate analyses. Examiners analyze a bank's loan and investment portfolios, funds management, capital, earnings, liquidity, sensitivity to market risk, and compliance with consumer banking laws, including the Community Reinvestment Act. They review the bank's internal controls, internal and external audits, and compliance with law. They also evaluate bank management's ability to identify and control risk. The examiners generally work in teams, varying in size from 3 or 4 members for community and smaller midsize banks to over 20 for the Large Banks. When on site, these teams need to communicate with each other, the banks that they are examining, and OCC data center and regional offices. Appendix A contains an overview of the field examiners' work environment. There are a number of challenges experienced by the examiners during their on-site engagements. A significant number of the assignments take place in rural communities. Examiners often find themselves in areas where there is no service available to their wireless cards. In some environments, the physical structure of the building coupled with the location of the workspace (interior conference room, basement, etc.) degrades the strength of a signal, making it difficult to connect. Once a connection is established, a portion of the field staff reports difficulty staying connected through the current VPN implementation. In addition, connection speed can vary from location to location. Response times of 5+ seconds when using wide area network-centric programs can be common. As a result, field examiners are often challenged with networkcentric applications, often preferring to work off-line or only accessing the application when in the home office. Since examiners perform many of their activities off-line, database-to-database replication is used to transfer and receive data to and from the headquarters-based databases for some of the key business systems. The examiners typically perform the replication activity over connection options ranging from phone lines to WIFI services provided by their hotels when not in their home office. When in the home office, they are connected to the office LAN typically at 100MBps with a WAN connection back to headquarters. 4 I-METRO SOO 1/7/2009
+
+The OCC WAN consists of predominantly Multi-protocol Label Switching (MPLS)/Private Network Transport (PNT) telecommunications lines that support the transfer of data between Headquarters, the Data Center, four district offices, the Ombudsman's office and 96 field/bank offices. Transport protocol is TCP/IP. District and larger offices' data access speeds are 10 mbps; however, most offices are 3 mbps. About 10 smaller sites connect to the OCC network via the OCC VPN. The OCC Data Center connects to the MPLS network via two DS3s. A 100 Mbps VON Protected Ethernet backbone connects OCC Headquarters with the Data Center. The examiners also experience challenges with the hardware and software they employ on-site. The laptops are reaching the end of their productive lifecycle. Printer drivers are inconsistent. The download of patches and updates can make their equipment unavailable for substantial periods of time. Occasionally, examiners voice concerns over the amount of equipment they need to keep track of (computer, printer, scanner, RSA Token, wireless card, etc.). The snapshot below provides a high level overview of the OCC operational environment.
+
+1.4.
+
+OCC IT Service Delivery
+
+The Information Technology Services Department (ITS) provides centralized information systems development, operations and maintenance, and technical infrastructure engineering and operations for the business functions of the OCC. While ITS accepts primary responsibility for continuous improvement in the provision of IT-related services, effective implementation and use of these services results from a strong partnership between the OCC business units and ITS. In support of its strategic corporate objectives, the OCC commits to the following over-arching IT goals: Provide technical leadership and IT governance for better overall IT decision­making; Deliver highest quality products and services, and assure a reliable, secure, accessible, and modern IT environment in accordance with the IT modernization vision and strategy; 5 I-METRO SOO 1/7/2009 ˇ ˇ
+
+ˇ ˇ
+
+Assure, establish, and maintain a competent, high-performing IT workforce; and Securely provide data of decision-making quality and business-quality data documentation to duly authorized OCC staff, whatever their location.
+
+The OCC has initiated an effort to establish a multi-year, enterprise-wide IT Modernization Vision and Strategy (IT MV&S). The IT MV&S will emphasize both IT strategy and execution, with a direct focus on maximizing IT: ˇ ˇ ˇ ˇ ˇ Cost efficiency; Service availability; Stakeholder satisfaction; Business impact and value; and Service quality.
+
+The IT MV&S will serve as OCC's roadmap for: ˇ ˇ ˇ ˇ ˇ ˇ ˇ Establishing a disciplined approach for managing IT systems that is customer-centric and ensures that near-term (0 to 2 years) and long-term (3 to 5 years) IT solutions and services are fully aligned with emerging and future business drivers, goals, and opportunities; Maximizing information sharing with internal and external stakeholders; Unifying and virtualizing technology and protecting business critical IT operations and assets; Optimizing return on investment (ROI) for new IT development investments while streamlining product development and delivery times; Identifying the IT initiatives to be executed during the period of 2010 through 2015; Aligning IT service sourcing strategies to business objectives and fully leveraging industry innovation; and Identifying crosscutting IT capabilities, target solutions, information architectures and technology standards.
+
+I-METRO SOO 1/7/2009
+
+6
+
+Figure 1-1: The OCC IT Modernization Vision and Strategy
+
+The IT MV&S will be completed in Q2/FY2009. The Mobile Employee requirements described herein shall be necessarily impacted by the strategies, target standards, solutions and information architectures, business opportunities, and other such drivers defined in the IT MV&S. 1.5. OCC IT Environment
+
+Commensurate with its commitment to providing a state-of-the-art information technology (IT) environment in support of its strategic goals, the OCC invests in a range of sophisticated technologies. The OCC IT portfolio ranges from simple form-based surveys to mainframe applications to complex .NET implementations that support approximately 3,200 users, 40 percent of whom are highly mobile. The OCC is expanding into enterprise approaches in Web content management, document management, records management, knowledge management, identity management, notification services, data management and analytics, expansion of communication channels, and enterprise-wide security operations. Current initiatives include: ˇ WISDM: Implemented in FY08, WISDM is an information system and document/records manager that provides large bank examiners and OCC management the ability to collaboratively develop, securely store, search, and report on the status of their work documents and retain those documents for enterprise records management purposes; STARS: A strategic and resources system that enables bank examiners to plan, track, and schedule bank supervision activities and assign resources accordingly; CATS: A central application tracking system, presently in the planning phase, which will provide critical corporate application processing, tracking and monitoring functions currently provided by a mainframe application. CATS incorporates workflow, document management, records management, 7
+
+ˇ ˇ
+
+I-METRO SOO 1/7/2009
+
+ˇ
+
+and reporting components to enable automation of the receipt, processing and monitoring of corporate applications; and WEPS: A planned electronic publishing system designed to transform the traditional paper-based content management and document promulgation process into an electronic-based process with emphasis on flexible dissemination of electronic products.
+
+The OCC is currently evaluating the advisability of expanding its use of technologies such as the Citrix infrastructure and the OpenText document management system. The OCC is also examining the use of Microsoft Office SharePoint Services 2007, to provide for single point of entry into the OCC intranet environment, and an upgrade to Office 2007, to enhance smart document development and to provide for greater integration with SharePoint 2007. Additional information on the OCC technical environment in support of the OCC workforce can be found in the attached Appendices.
+
+2. PURPOSE
+The purpose of this Statement of Objectives (SOO) is to convey the current OCC organization, business objectives, and applicable scope and constraints. A SOO provides maximum flexibility to each Offeror to propose innovative solutions using proven processes, methods, standards and technologies. Offerors shall use the SOO as the basis for preparing proposals, which shall include the Offeror's Performance Work Statement (PWS). Offerors shall ensure that all aspects of the SOO are addressed in their proposals.
+
+3. OBJECTIVES
+The OCC expects to achieve a comprehensive approach to provisioning and supporting its mobile workforce. As a direct result of Contract performance, the OCC shall achieve the following outcomes: 3.1. Implement a Lifecycle Approach to Desktop Automation and Supporting Infrastructure Management Provide rapid deployment of the full range of end-user computing devices, peripherals and supporting services that accommodate the diverse needs of OCC's workforce. Establish technology refresh cycles for hardware to prevent equipment from extending beyond industry standard timeframes for end-of-life. 3.2. Support OCC's Essential Communication Function
+
+Provide stable, no-fault service delivery for mission critical Email, Blackberry and Web Presence Services. 3.3. Capitalize on Industry Leading Practices and Innovation
+
+Incorporate industry leading practices, standards, and innovation while ensuring compliance with applicable Federal policies and regulations. Provide timely and consistent delivery of emerging office automation and enterprise collaboration tools and capabilities and security safeguards. 3.4. Enhance the Work Experience of the Mobile Employees
+
+Deliver a comprehensive, multi-faceted solution geared toward the OCC's mobile workforce that enables them to have the user experience at bank sites that they have in their field offices. Provide anywhere, anytime Nation-wide connectivity managed by the IMETRO contractor. 8 I-METRO SOO 1/7/2009
+
+3.5.
+
+Continuously Increase Customer Satisfaction
+
+Deliver quality products and services that meet customer requirements and enhance the relationship between the OCC and its stakeholders. 3.6. Continuous Optimization
+
+Refresh and continuously enhance the effectiveness of the mobile workforce IT foundation throughout the period of performance of the contract. 3.7. Ensure and Enforce a Secure, Operational Cyber Environment
+
+Assure that the proposed solutions, services, facilities, and products provide appropriate safeguards for the confidentiality, integrity, and availability of OCC information and resources and are in full compliance with all applicable Federal regulations and statutes governing information technology, privacy, and security. Provide comprehensive Continuity of Operations (COOP) and disaster recovery provisions that meet or exceed evolving OCC requirements.
+
+4. SCOPE
+4.1. General The Integrated Mobile Employee Technology Refresh and Optimization (I-METRO) contract will encompass the complete range of activities required to successfully achieve the objectives described in this SOO. Offerors shall propose Service Level Agreements (SLAs) and metrics appropriate to each task area that will ensure that Task Order performance addresses the Contract's objectives. At a minimum, the Contractor shall address the service areas identified in Appendix J. Recommended surveillance methods and associated incentives and disincentives shall be included where appropriate. All tasks shall be performed in a manner that meets the highest level of professional and technical standards and adheres to industry leading practices. All Contractor personnel shall be considered experts in the areas in which they work. All Contractor personnel are expected to routinely: ˇ ˇ ˇ ˇ ˇ ˇ Keep current with advances in technology and share this knowledge with project team members; Act in a consultative manner, proactively searching for creative solutions and strategies; Respond promptly, professionally and courteously to requests for technical assistance; Support OCC training efforts by providing training-related services and materials that reflect changes in features or procedures; Provide knowledge transfer of work products and technology expertise associated with contracted tasks; and Support the development and delivery of electronic and information technology in accordance with Section 508 of the Rehabilitation Act that is accessible to individuals with disabilities Specific Requirements
+
+4.2.
+
+The OCC has elected to define basic requirements for the solutions and services required while encouraging maximum flexibility and creativity by Offerors. For clarity, the specific requirements are divided into four task areas as follows: 1) Lifecycle Workforce Automation Acquisition, Provisioning, Management and I-METRO SOO 1/7/2009 9
+
+Maintenance; 2) Email, Blackberry, and Web Presence Support Services; 3) Mobile Workforce Support Services; and 4) HSPD-12 Compliance Technology and Administration Services. The requirements listed within each work area are representative of those that shall be required in the Task Orders to be released under this contract but are not considered to be exhaustive. 4.2.1 Lifecycle Workforce Automation Acquisition, Provisioning, Management and Maintenance The Contractor shall develop, implement and fully manage comprehensive workforce legacy office automation and hardware system replacement and managed services plan that meets the following requirements at a minimum: ˇ Rapidly deploys technologically current end-user computing devices, peripherals and supporting services including the OCC-approved image, application and network configurations, and complete restoration of the user's data. While minimum configurations are included in Appendix B, the Contractor shall provide technology that is appropriate at the time a given task order is released, i.e., the technology provided must be current and updated as of the date of the task order. Establishes the appropriate technology refresh cycles for hardware to continuously prevent equipment from extending beyond industry standard timeframes for end-of-life; Accounts for the flexibility required to support different hardware requirements and image installations of OCC users across the enterprise (e.g. application developers, mid-size community bank examiners, large bank examiners, economists); Takes into account the appropriate number and type of hardware devices necessary for the OCC workforce to be productive; Effectively transitions the equipment acquisition, provisioning, deployment, configuration management, asset management, maintenance, equipment disposal and image management responsibilities from other contractors and the Government to the Contractor; Provides for comprehensive configuration and asset management methods to ensure that all issued end-user computing devices, peripherals and software licenses are tracked and managed consistently from the ordering process through disposal; Provides options for hardware asset tracking, recovery and remote hard drive wiping; Provides full disk and external media encryption; Provides automated, secure, and reliable methods (as required by FISMA guidance) for tracking and installing software patches, fixes, updates and new releases directly to the desktop for the full range of users (from Headquarters users to highly mobile field examiners); Provides automated tools for e-discovery of software configurations, patch levels, and non-authorized software on desktops and laptops; Provides updates to antivirus software definition files automatically to the desktops and laptops as they are received by the Contractor; Provides spyware prevention services; Provides a variety of shipping options to account for urgent and routine requirements; Provides automated data backups and restoration capabilities; Provides for Tier 2 and 3 support of the managed hardware services provided to OCC employees, with an inherent focus and understanding of the geographically dispersed workforce; Provides rapid restoration or replacement services for all covered equipment; Provides self-help overnight shipping services to customer locations for removable parts; Provides a loaner service for travel, training and emergency purposes; 10
+
+ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ
+
+I-METRO SOO 1/7/2009
+
+ˇ ˇ ˇ
+
+Provides end-user computing devices, peripherals, and drivers in support of OCC configuration management, release management, and acceptance testing efforts; Provides legacy equipment removal, disposal, media destruction and associated services in accordance with OCC policies; Enables the OCC to maintain compliance with the applicable security mandates and policies that ensure the appropriate stewardship of data that resides on employee hardware: o Incorporates the development and implementation of the mandated Federal Desktop Core Configuration (FDCC) on all client workstations/Laptops. Note: The implementation will remove admin rights from the desktop, therefore patch/application upgrade management and remote desktop support shall need to be specifically addressed with this constraint in mind; o Ensures compliance with FIPS 140-2 and NIST 853 Series for the data that is on end user's equipment, in transit, and at the Data Center. o Capitalizes on technologies for improved user authentication, which meets the requirements of emerging Federal policies such as HSPD-12.
+
+4.2.2 Email, Blackberry, and Web Presence Support Services The Contractor shall provide, manage and maintain a stable, highly reliable (i.e. 99.99%), no-fault solution for OCC's enterprise E-mail, Blackberry and Agency website communication services which: ˇ ˇ Provides 24x7x365 uptime for mission critical Email and Blackberry services; Provides 24x7x365 uptime for OCC public communication websites: o www.occ.treas.gov o www.occ.gov o www.helpwithmybank.gov Meets or exceeds OCC Redundancy, Fault-tolerance, and Geographic Separation requirements; Meets or exceeds OCC Disaster Recovery and COOP requirements; Incorporates the management of service plans for Blackberry devices, which account for national and international communication requirements; Accounts for different requirements for e-mail capacity among OCC defined user groups (See Appendix F); Provides SPAM prevention and virus scanning capabilities for incoming, outgoing and internal messaging; Provides access to enterprise email via web interface; Provides backup and restore capabilities on mailbox, post office, server, and system levels; Provides a transparent mail archival solution for users.
+
+ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ
+
+4.2.3 Mobile Workforce Support Services The Contractor shall document current practices and support methods, review industry best practices and innovations, engineer, develop, test, deploy, document, maintain and support a comprehensive solution that improves connectivity, communication, collaboration, performance, and the overall user experience of the OCC mobile workforce. Throughout the term of the contract, the Contractor shall continuously review and optimize the solution based upon the feedback of the mobile user community and other OCC stakeholders. The Mobile Workforce solution shall encompass the following components, at a minimum: ˇ Connectivity enhancements 11
+
+I-METRO SOO 1/7/2009
+
+o Address opportunities for 1) short-term remedies and easily addressable issues such as "last mile" improvements and 2) long-term remedies such as engaging data and network providers to come up with innovative solutions; o Address issues of little to no connectivity in rural areas as well as locations in metropolitan areas that are built upon antiquated technical infrastructure. o Available connectivity options/coverage/strategies for digital access to include current technologies (WI-MAX, DSL, Air Cards, LEOS, etc.) for the OCC national bank locations and projections for the current and future technologies coverage in 2, 5 and 10 years; ˇ Communication / collaboration enhancements o Establish a common workforce homepage with the full range of portal capabilities, customizable to reflect a unique experience on a user group by user group basis. The portal shall provide the opportunity for the OCC to implement single sign-on. o Establish avenues for the secure exchange of data:  Between banks and bank examiners;  Among bank examiners; and  Among agencies for interagency initiatives. o Explore possibilities for a secure remote examination, facilitating virtual collaboration. Productivity enhancements o Capitalize on technologies that support increasing the efficiency of tasks required for a bank examination. o Improve capabilities for offline and virtual training to accommodate a highly mobile workforce. Application architecture enhancements o Optimization of OCC's currently deployed application software (e.g. implement a combination of Microsoft's Mobile Office suite and new hand-held devices) to enhance the functionality provided by core OCC Supervision systems. o Applications whose functions and support should be optimized for the mobile workforce along with the associated deployment model; o Examining and recommending areas where the OCC can capitalize on the potential for "bandwidth" awareness;
+
+ˇ
+
+ˇ
+
+4.2.4 HSPD-12 Compliance Technology and Administration Services The contractor shall develop, implement and manage the technology and administration services required to provide OCC with a fully compliant HSPD-12 solution for the following requirements: ˇ A FIPS 201 compliant smartcard solution for Logical Access Control (networks, workstations, servers, applications, and remote access) that simplifies digital certificate management and provides smartcard based electronic signature capabilities. Note: The OCC receives its SmartIDs (HSPD12/PIV smartcards) from the GSA's USAccess Managed Service Office. The SmartIDs have Treasury PKI certificates on them. An Identity Management Lifecycle capability and infrastructure that can manage and synchronize OCC's digital identities, directories, and those processes associated with creating, managing, and deleting user accounts and entitlements and can be utilized to provide true Single Sign On capability 12
+
+ˇ
+
+I-METRO SOO 1/7/2009
+
+on all OCC workstations, web-based systems and legacy applications as well as self service password management capabilities such as the ability to reset passwords without helpdesk intervention; ˇ A Federated Identity Management (FIM) architecture and capability to improve collaboration and operational efficiencies between OCC and its partners, while still retaining the required separation of duties and systems between OCC's authentication and identification infrastructure (regardless of the underlying technologies) and partner networks.
+
+5. CONSTRAINTS
+5.1. User Authentication
+
+OCC will be implementing HSPD-12 in the FY 09- FY12 period. HSPD-12 requires all federal agencies to adopt a standard smart card for identity verification. OCC intends to use the smart card for electronic authentication. Therefore, any new hardware proposed shall contain a built-in smart card reader capable of reading these identity cards. 5.2. Remote Management/Asset Management
+
+The unique nature of the OCC work environment makes it increasingly difficult to manage issued computer equipment and software, especially with respect to its mobile workforce. Any managed service solution shall allow for: ˇ ˇ ˇ 5.3. Efficient and timely pushes of patches and anti-malware (anti-virus, anti-spyware) updates, especially when a user has been offline for more than one week; Capability to remotely destroy all information stored on a device in the event that the device is stolen; and Capability for physical asset, configuration and license management and tracking. Backup and Recovery
+
+The ability to recover from a catastrophic hardware or software failure increases an information system's availability, which is an integral part of information assurance. Given the large amount of critical information the OCC's mobile workforce deals with on a typical day, any solution requires such information to be securely backed up via remote connection. Many of the applications used by the mobile workforce, such as Examiner View (EV), are designed to store information on a central server. Solutions shall ensure that work done locally by the mobile workforce is frequently synchronized with the central server. In addition, the information system shall be configured to reduce the time to recover information that is backed up in the event it is needed. 5.4. Personal Area Network
+
+The OCC's mobile workforce often has a need to share files locally in Personal Area Networks. Although information that is locally stored or transmitted in the OCC network is encrypted, information transferred informally between users may not be. Today, this requirement is primarily handled via thumb drive transfers. Therefore, any optimized solution shall address the issue of providing adequate and convenient encryption for transfers of documents. Appropriate encryption mechanisms can be found in FIPS 140-2. I-METRO SOO 1/7/2009 13
+
+5.5. Second Hard Drive The OCC requires a second hard drive that is compatible with any new laptops the Contractor deploys as a part of the lifecycle hardware management process. The second hard drive will be an optional feature that can be requested by employees who are on extended travel. The second hard drive will be used to provide employees with a non-mission related operating environment which is isolated from any OCC networks, applications, and data. The contractor shall be able to support any second hard drive needs that arise for OCC employees. The second hard drive shall meet the following requirements: 1) Come preloaded with a base image of the latest OCC-approved operating system. The OCC will provide the license and the image. a. Come preconfigured with an OCC-approved and provided full disk encryption solution. b. Come preconfigured with OCC-approved and provided solutions for Anti Virus, Firewall, and Host Based Intrusion Detection/Prevention software. 2) Work in concert with device tracking and asset management software requested as part of Lifecycle Hardware Management efforts. As a part of the asset management efforts, the Contractor shall ensure that the hard drives are properly tagged. 3) Provide accurate inventory information related to the number of second hard drives issued. 4) Present the user with an OCC warning banner. 5.6. Quality Management
+
+The OCC is committed to delivering quality products and services that are compliant with industryrecognized standards such as ISO 9001:2000, ITIL and CMMI. Any proposed solution shall include a demonstrated capability to consistently meet or exceed customer requirements and place customer satisfaction as a key component. 5.7. ˇ ˇ ˇ ˇ Operational Controls Incident Reception and Documentation (Tier 1) will be maintained by a separate contractor that will provide notification of incident requirements; Equipment moves and relocations will be performed by others; Network infrastructure will be provided, monitored and administered by others; Production, administration, maintenance and other activities that may degrade the performance of network environments, operating systems, databases and applications shall be performed outside of business hours. Subject Matter Experts
+
+The Contractor shall work with others as defined in the following controls:
+
+5.8.
+
+In light of the specialization and high level of expertise of services typically required, the OCC is looking for Offerors to demonstrate the ability to attract, develop, motivate, organize, and retain the personnel needed to perform the services required by the contract. 5.9. Applicable Documents
+
+The specifications, standards, policies and procedures listed in the following table represent additional constraints placed on this acquisition. The most current version of applicable documents at the time of Task I-METRO SOO 1/7/2009 14
+
+Order issuance will take precedence. The list is not all-inclusive. Offerors shall comply with all listed mandatory documents.
+
+Title Section 508 of the Rehabilitation Act
+
+Applicable Portion Subpart B, Technical Standards 1194.21, Software Applications and Operating Systems, 1194.22, Web based Intranet and Internet Information and Applications, 1194.23 Telecommunications, 1194.24 Video and Multimedia, 1194.25 Self contained, closed products and 1194.26 desktop and portable computers as applicable to this requirement, and itemized and selected at the time of subsequent task orders. The following two shall apply to all current and future task orders: Subpart C. Functional Performance Criteria 36 CFR 1194.31 Subpart D. Information, Documentation and Support 36 CFR 1194.41
+
+Reference Location
+
+Mandatory (M) Advisory (A) M
+
+http://www.accessboard.gov/sec508/standards.htm
+OCC Section 508 Program Office: OCC Accessibility@occ.treas.gov
+
+OCC Organization OCC Systems Development Life Cycle FISMA, Federal Information Security Management Act National Institute of Standards Federal System Security
+
+http://www.occ.gov/org.htm
+
+A M
+
+Department of the Treasury Information Technology (IT) Security Program, Federal Desktop Core Configuration (FDCC)
+
+FISMA, Federal Information Security Management Act March 29, 2004 -- SECOND Draft Special Publication 800-60, Guide for Mapping Types of Information and Information Systems to Security Categories SP 800-18, Guide for Developing Security Plans for Information Technology Systems, December 1998 Department of the Treasury Information Technology (IT) Security Program, http://www.whitehouse.gov/omb/me moranda/fy2007/m07-11.pdf http://www.whitehouse.gov/omb/me moranda/fy2007/m07-18.pdf http://www.whitehouse.gov/omb/pub press/2007/073107_secure_configura tions.pdf http://www.whitehouse.gov/omb/ego v/press_releases/general/070731_Ne w_Website.html http://nvd.nist.gov/fdcc/index.cfm
+
+M M
+
+M
+
+M
+
+OCC MM 2008-3, Sanitizing
+
+M
+
+I-METRO SOO 1/7/2009
+
+15
+
+Title
+
+Applicable Portion
+
+Reference Location
+
+Mandatory (M) Advisory (A)
+
+OCC Electronic Media
+
+I-METRO SOO 1/7/2009
+
+16
+
+APPENDIX A: Field Examiner Experience
+The following are general observations about the Field Examiner experience. Individual situations and experiences may vary greatly within the population of approximately 2,000 field examiners. Exam Conditions  Community Bank Environment  Onsite at bank ­ Depends on the availability of space for the number of examiners on a team; most often in a Board Room or meeting space and can occasionally be in open areas such as a lunch room.  Short-Term focus ­ Typical onsite duration for an exam is 2 weeks.  Office Time - 1-2 weeks per quarter in the office to do periodic monitoring.  Team Size ­ For onsite activities, 4 to 8 examiners on average.  Mid-Size Bank Environment  Resident at Bank for blocks of time ­ The Examiner-in-Charge (EIC) is assigned to only one bank. They may or may not have permanent space assigned by the bank.  Average onsite for an exam is 4 weeks and there will be multiple activities at these banks in any given year.  Office time ­ The EIC typically splits their time between the bank and an OCC field office. Time spent in one or the other location varies greatly.  Team Size ­ Varies greatly, and multiple exam teams may be working in these banks at one time.  Large Bank Environment  Resident at Bank ­ These banks typically have an EIC and staff members who are assigned to just that bank. They will work in permanent bank-provided space.  Team Concept ­ Large Banks also has "teams" of examiners who split their time among 3 or 4 banks. These examiners use OCC leased facilities as their office space.  These banks have activities taking place throughout the supervisory cycle.  Office Time ­ Varies greatly and can range from none to significant amounts.  Team Size ­ Varies greatly, and multiple exam teams can be working in these banks at one time.
+
+Connections  Phone Line ­ In the community bank environment, phone lines temporarily installed into the banks for connection to OCC network.  Verizon or ATT Wireless Card ­ Every Mid-Size/Community Bank Examiner has either a Verizon or an ATT Wireless Card. Connections and speed tends to be better in the larger metropolitan areas, degrading to spotty or non-existent in more remote locations.  Wi-Fi ­ Occasional availability in examiners hotel locations.
+
+I-METRO SOO 1/7/2009, Appendix A
+
+17
+
+Challenges  Ability to Connect ­ A significant portion of the field examiners travel to smaller, rural communities to work in the banks where wireless communications are limited. The physical structure and working location inside of the building (interior conference room, basement, etc.) can also cause connectivity challenges.  Reliability of Connection ­ A small percentage have reported difficulty staying connected through the VPN access software/hardware.  Speed of Connection ­ Connection speed varies significantly from location to location. Response times of 5+ seconds when using network-centric programs can cause challenges for the workforce.  HP 460 Printer ­ Sharing of printers between examiners have led to multiple installs of drivers when on site.  Other Equipment Issues ­ Examiners have raised concerns over the amount of equipment needed to perform their exams (computer, printer, scanner, RSA Token, wireless card, etc.)
+
+I-METRO SOO 1/7/2009, Appendix A
+
+18
+
+APPENDIX B: Minimum Hardware Specifications
+LAPTOP KIT #1 ­ Mid sized (less than 6 lbs includes installed battery)
+Base Unit: Core 2 Duo Video: 14.1 WXGA+ LCD Minimum 128MG Discrete Video including adjustable display backlight/intensity control to support viewing in both dim and sunlit conditions Memory: 4 to 8.0GB, Double Data Rate 2-667 SDRAM, 1-2 Dimms Hard Drives: Two* 120-160GB Hard Drives, 9.5MM, 7200RPM; hardware hard disk encrypted or solid state technology hard drives Audio: Built-in speaker with volume control, microphone input port and headphone output port Floppy Drive: None Mouse: Integrated pointing devices, including centrally located touch pad and a pointing stick device External Mouse: Small hand held portable laptop USB device Primary Battery: Removable, rechargeable batteries that can easily be removed and installed without using a screwdriver or other tool minimum 9-cell/85 WHr Operating System: Capability to run either Windows XP Professional, SP2 or Windows Vista Business operating systems Integrated Communications: ˇ 10/100/1000 Gigabit Ethernet LAN port ˇ 56k v.92 Modem ˇ Wireless WLAN 802.11n ˇ Wireless 360 Bluetooth 2.0 EDR ("Enhanced Data Rate") Certified ˇ Type II Peripheral Component Microchannel Interconnect Architecture (PCMCIA) card slot ˇ Optional Mobile Broadband TBU: 90W AC Adapter designed to plug into standard 110/220-volt home use Combined CD-ROM/DVD-ROM Drive: 8x-24x DVD+/-RW integrated Security: Integrated Smart Card Reader -Supporting Cards: ISO 7816 1/2/3/4 microprocessor cards (T=0, T=1), 3v & 5v, Java Card; -Certification: WHQL certified for Microsoft PC/SC, EMV Level 1, 9600 to 115200 BPS Passwords: Primary System; Administrator and Hard Drive Integrated Trusted Platform Module (TPM) 1.1b Optional Biometrics Reader
+
+USB Ports: 4-6 USB 2.0; 1 ESATA
+Supplemental Battery: 9-Cell/85 WHr Extra Battery Feature: Automobile Power Adapter designed to plug into a standard 12-volt accessory outlet Feature: Mix of Rolling Computer Carrying Cases and Backpacks Feature: USB Memory Key/Flash Drive 2gb minimum capacity Note: *Hard Drive Removal: OCC intends to provide the option of issuing laptop computers with a second hard drive to give employees a "personal use" environment separate from the primary business function. To support this initiative, laptop hard drives must be quickly, easily and safely interchangeable on the laptop. Ideally, no tools would be required.
+
+LAPTOP KIT #2 ­ Small (less than 4 lbs)
+Base Unit: Core 2 Duo
+
+I-METRO SOO 1/7/2009, Appendix B
+
+19
+
+Video: 12.1 to 13.5 WXGA+ LCD minimum 128MG Integrated Video including adjustable display backlight/intensity control to support viewing in both dim and sunlit conditions Memory: 4 to 8.0GB, Double Data Rate 2-667 SDRAM, 1-2 Dimms Hard Drives: Two* 120-160GB Hard Drives, 9.5MM, 7200RPM; hardware hard disk encrypted or solid state technology hard drives Floppy Drive: None Audio: Built-in speaker with volume control, microphone input port and headphone output port Mouse: Integrated pointing devices, including centrally located touch pad and a pointing stick device External Mouse: Small hand held portable laptop USB device Primary Battery: Removable, rechargeable batteries that can easily be removed and installed without using a screwdriver or other tool minimum 9-cell/85 WHr Operating System: Capability to run either Windows XP Professional, SP2 or Windows Vista Business operating systems Integrated Communications: ˇ 10/100/1000 Gigabit Ethernet LAN port ˇ 56k v.92 Modem ˇ Wireless WLAN 802.11n ˇ Wireless 360 Bluetooth 2.0 EDR ("Enhanced Data Rate") Certified ˇ Type II Peripheral Component Microchannel Interconnect Architecture (PCMCIA) card slot ˇ Optional Mobil Broadband TBU: 90W AC Adapter designed to plug into standard 110/220-volt home use Combined CD-ROM/DVD-ROM Drive: 8x-16x DVD+/-RW may be integral to the laptop, modular or external Security: Integrated Smart Card Reader -Supporting Cards: ISO 7816 1/2/3/4 microprocessor cards (T=0, T=1), 3v & 5v, Java Card; -Certification: WHQL certified for Microsoft PC/SC, EMV Level 1, 9600 to 115200 BPS Passwords: Primary System; Administrator and Hard Drive Integrated Trusted Platform Module (TPM) 1.1b Optional Biometrics reader
+
+USB Ports: 2-4 USB 2.0; 1 ESATA
+Supplemental Battery: 9-Cell/85 WHr Extra Battery Feature: Automobile Power Adapter designed to plug into a standard 12-volt accessory outlet Feature: Mix of Rolling Computer Carrying Cases and Backpacks Feature: USB Memory Key/Flash Drive 2gb minimum capacity Note: *Hard Drive Removal: OCC intends to provide the option of issuing laptop computers with a second hard drive to give employees a "personal use" environment separate from the primary business function. To support this initiative, laptop hard drives must be quickly, easily and safely interchangeable on the laptop. Ideally, no tools would be required.
+
+LAPTOP KIT #3 ­ Developer
+Base Unit: Core 2 Duo 2.80 GHz 6M L2 Cache, 1066MHz FSB Video: 15.4" Widescreen WUXGA LCD minimum including adjustable display backlight/intensity control to support viewing in both dim and sunlit conditions Graphics Card: 512MB Memory: 4 to 8.0GB, Double Data Rate 2-667 SDRAM, 1-2 Dimms Hard Drives: 320GB Hard Drives, 7200RPM; hardware hard disk encrypted or solid state technology hard drives Floppy Drive: None Keyboard: Internal English Backlit Keyboard Audio: Built-in speaker with volume control, microphone input port and headphone output port
+
+I-METRO SOO 1/7/2009, Appendix B
+
+20
+
+Mouse: Integrated pointing devices, including centrally located touch pad and a pointing stick device External Mouse: Small hand held portable laptop USB device Camera: Integrated webcam with microphone Primary Battery: Removable, rechargeable batteries that can easily be removed and installed without using a screwdriver or other tool minimum 9-cell/85 WHr Operating System: Capability to run either Windows XP Professional, SP2 or Windows Vista Business operating systems Integrated Communications: ˇ 10/100/1000 Gigabit Ethernet LAN port ˇ 56k v.92 Modem ˇ Wireless WLAN 802.11n ˇ Wireless 360 Bluetooth 2.0 EDR ("Enhanced Data Rate") Certified ˇ Type II Peripheral Component Microchannel Interconnect Architecture (PCMCIA) card slot ˇ Optional Mobil Broadband TBU: 90W AC Adapter designed to plug into standard 110/220-volt home use Combined CD-ROM/DVD-ROM Drive: 8x-16x DVD+/-RW may be integral to the laptop, modular or external Security: Integrated Smart Card Reader -Supporting Cards: ISO 7816 1/2/3/4 microprocessor cards (T=0, T=1), 3v & 5v, Java Card; -Certification: WHQL certified for Microsoft PC/SC, EMV Level 1, 9600 to 115200 BPS Passwords: Primary System; Administrator and Hard Drive Integrated Trusted Platform Module (TPM) 1.1b Optional Biometrics reader
+
+USB Ports: 4-6 USB 2.0; 1 ESATA
+Supplemental Battery: 9-Cell/85 WHr Extra Battery Feature: Automobile Power Adapter designed to plug into a standard 12-volt accessory outlet Feature: Mix of Rolling Computer Carrying Cases and Backpacks Feature: USB Memory Key/Flash Drive 2gb minimum capacity Feature: Docking Station/Port Replicator .
+
+LAPTOP KIT #4 ­ Mid sized Tablet (less than 6 lbs includes installed battery)
+Base Unit: Core 2 Duo Video: 14.1 WXGA+ LCD Minimum 128MG Discrete Video including adjustable display backlight/intensity control to support viewing in both dim and sunlit conditions Memory: 4 to 8.0GB, Double Data Rate 2-667 SDRAM, 1-2 Dimms Hard Drives: Two* 120-160GB Hard Drives, 9.5MM, 7200RPM; hardware hard disk encrypted or solid state technology hard drives Audio: Built-in speaker with volume control, microphone input port and headphone output port Floppy Drive: None Mouse: Integrated pointing devices, including centrally located touch pad and a pointing stick device External Mouse: Small hand held portable laptop USB device Primary Battery: Removable, rechargeable batteries that can easily be removed and installed without using a screwdriver or other tool minimum 9-cell/85 WHr Operating System: Capability to run either Windows XP Professional, SP2 or Windows Vista Business operating systems Integrated Communications: ˇ 10/100/1000 Gigabit Ethernet LAN port ˇ 56k v.92 Modem ˇ Wireless WLAN 802.11n ˇ Wireless 360 Bluetooth 2.0 EDR ("Enhanced Data Rate") Certified ˇ Type II Peripheral Component Microchannel Interconnect Architecture (PCMCIA) card slot
+
+I-METRO SOO 1/7/2009, Appendix B
+
+21
+
+ˇ Optional Mobile Broadband TBU: 90W AC Adapter designed to plug into standard 110/220-volt home use Combined CD-ROM/DVD-ROM Drive: 8x-24x DVD+/-RW integrated Security: Integrated Smart Card Reader -Supporting Cards: ISO 7816 1/2/3/4 microprocessor cards (T=0, T=1), 3v & 5v, Java Card; -Certification: WHQL certified for Microsoft PC/SC, EMV Level 1, 9600 to 115200 BPS Passwords: Primary System; Administrator and Hard Drive Integrated Trusted Platform Module (TPM) 1.1b Optional Biometrics Reader
+
+USB Ports: 4-6 USB 2.0; 1 ESATA
+Supplemental Battery: 9-Cell/85 WHr Extra Battery Feature: Automobile Power Adapter designed to plug into a standard 12-volt accessory outlet Feature: Mix of Rolling Computer Carrying Cases and Backpacks Feature: USB Memory Key/Flash Drive 2gb minimum capacity Note: *Hard Drive Removal: OCC intends to provide the option of issuing laptop computers with a second hard drive to give employees a "personal use" environment separate from the primary business function. To support this initiative, laptop hard drives must be quickly, easily and safely interchangeable on the laptop. Ideally, no tools would be required.
+
+DESKTOP/MINI-TOWER KIT #1
+Base Unit: Core 2 Duo 3.0GHz, 6M L2 Cache, 1333MHz FSB Video: 20" Widescreen, Flat Panel LCD Monitor Graphics Card: 256MB Memory: 4.0GB, Double Data Rate 2-667 SDRAM, 2 DIMMs Hard Drive: 250GB Hard Drives, 3.0Gb/s Audio: Built-in speakers with volume control, microphone input port and headphone output port Media Card Reader: Internal USB Media Card Reader Keyboard and Mouse: Optional Bluetooth Keyboard and mouse Operating System: Capability to run either Windows XP Professional, SP2 or Windows Vista Business operating systems Integrated Communications: ˇ 10/100/1000 Gigabit Ethernet LAN port ˇ 56k v.92 Modem ˇ Wireless WLAN 802.11n ˇ Wireless 360 Bluetooth 2.0 EDR ("Enhanced Data Rate") Certified ˇ Type II Peripheral Component Microchannel Interconnect Architecture (PCMCIA) card slot ˇ Optional Mobile Broadband Combined CD-ROM/DVD-ROM Drive: 8x-24x DVD+/-RW integrated Security: Integrated Smart Card Reader -Supporting Cards: ISO 7816 1/2/3/4 microprocessor cards (T=0, T=1), 3v & 5v, Java Card; -Certification: WHQL certified for Microsoft PC/SC, EMV Level 1, 9600 to 115200 BPS Passwords: Primary System; Administrator and Hard Drive Integrated Trusted Platform Module (TPM) 1.1b Optional Biometrics Reader
+
+USB Ports: 4-6 USB 2.0; 1 ESATA I-METRO SOO 1/7/2009, Appendix B 22
+
+DESKTOP/MINI-TOWER KIT #2 - Developer
+Base Unit: Core 2 Duo 3.0GHz, 6M L2 Cache, 1333MHz FSB Video: 24" Widescreen, Flat Panel LCD Monitor Graphics Card: 512MB Memory: 4.0GB, Double Data Rate 2-800MHz SDRAM, 4 DIMMs Hard Drive: 250GB Hard Drives, 3.0Gb/s Audio: Built-in speakers with volume control, microphone input port and headphone output port Media Card Reader: Internal USB Media Card Reader Keyboard and Mouse: Optional Bluetooth Keyboard and mouse Operating System: Capability to run either Windows XP Professional, SP2 or Windows Vista Business operating systems Integrated Communications: ˇ 10/100/1000 Gigabit Ethernet LAN port ˇ 56k v.92 Modem ˇ Wireless WLAN 802.11n ˇ Wireless 360 Bluetooth 2.0 EDR ("Enhanced Data Rate") Certified ˇ Type II Peripheral Component Microchannel Interconnect Architecture (PCMCIA) card slot ˇ Optional Mobile Broadband Combined CD-ROM/DVD-ROM Drive: 8x-24x DVD+/-RW integrated Security: Integrated Smart Card Reader -Supporting Cards: ISO 7816 1/2/3/4 microprocessor cards (T=0, T=1), 3v & 5v, Java Card; -Certification: WHQL certified for Microsoft PC/SC, EMV Level 1, 9600 to 115200 BPS Passwords: Primary System; Administrator and Hard Drive Integrated Trusted Platform Module (TPM) 1.1b Optional Biometrics Reader
+
+USB Ports: 4-6 USB 2.0; 1 ESATA Communications Kit
+Wireless Broadband Router Wireless Access Point Portable Printer Portable Scanner
+
+I-METRO SOO 1/7/2009, Appendix B
+
+23
+
+APPENDIX C: List of Software
+STANDARD DESKTOP AND LAPTOP SOFTWARE MS Windows XP Professional w/Service Pack 2 Operating System: ˇ .NET 1.1 ˇ .NET 2.0 Framework MDAC 2.8 Symantec Antivirus 10.1.7.7000 Security: Symantec Personal Firewall 8.7.4.117 MS Office 2003 Suite Office Suite: ˇ Email: MS Outlook ˇ Word Processing: MS Word ˇ Spreadsheet: MS Excel ˇ Internet Browser: Internet Explorer 6 ˇ Database: MS Access ˇ Presentations: MS PowerPoint Examiner View 2007 Examiner Applications: SIS - Net e-Time Offline APRWIN 5.0 APY v1.02 Time and Attendance: TERS 4.13 WinZip 9 File Compression: Adobe Acrobat 7.0 Standard Document Reader/Writer: Avery Label Label Maker: Roxio Easy CD Creator CD Creation: PowerDVD DVD Viewer: MS Windows Media Player 10 Multimedia: Lotus Notes 6.5 Groupware: Communicator 2005 Virtual Meetings: Dynacom Elite 3270 Mainframe Emulator: Paperport 9.0 Scanner Support: Dialup Software: IPASS Client for OCC (laptops only) Verizon Access Manager Visio Viewer 2003 Other Software: Remove Hidden Data Tool for Office ZixSelect Java 2 Runtime 1.4
+
+I-METRO SOO 1/7/2009, Appendix C
+
+24
+
+APPENDIX D: Key Business Applications on the Desktop/Laptop
+Application Solution Name National Credit Tool Short Description
+
+Used in a disconnected environment to analyze, sample, and report on the contents of a bank's loan trial balance. NCT captures summary information from reviews and generates summary reports of review results, which are replicated through SIS ­ EV to the SIS database.
+
+Supervisory Information System - Examiner View
+
+Assists bank examiners in preparing, conducting, and analyzing examinations of financial institutions. The application is the primary tool to analyze community and mid-size banks. SIS - EV is primarily used in a disconnected environment, and examiners use replication to transfer and receive data for the SIS database.
+
+Supervisory Information System - National Resource Planning Tool
+
+Used by Community, Midsize, Large Bank, and MDPS resource coordinators to plan external work resources. Specifically, this application is used to request examiner support and assign examiners to support others. "External" requests refer to work that is not funded by one's own office or budget code. Risked Based Capital (RBC) is a model that supports the bankers in completing schedule RCR of the Call Report. It also allows the examiners to analyze risk to the bank's capital structure and to calculate the regulatory limitations based on "what if" scenarios. The Workflow and Information Systems and Document Management (WISDM) will automate the Large Bank (LB) examination workflow process while providing a central document repository with document and records management capabilities. A document management and electronic records management information system will improve the quality, consistency, and timeliness of the supervisory reports; ensures appropriate approvals, distributions, and records management; and provides information/report aggregation capabilities. APRWIN is a tool for calculating loans' annual percentage rates and reimbursement adjustments. The program is intended to comport with accuracy requirements of Regulation Z (12 CFR 226). Calculations are based on the actuarial method as contained in Appendix J (of the regulation) and the formulas contained in Appendix D (of the regulation) to the regulation. The application provides a tool for the calculation of annual percentage yields pursuant to the Truth in Savings Act (12 U.S.C. 4301 et seq.) and it's implementing regulation (Regulation DD, 12 CFR 230). E-Time is the Agency's electronic time and attendance reporting system. E-TIME is an online time, attendance, and activity reporting system that seeks to improve the timeliness and accuracy of the time and attendance reporting system(s) and processes of the Office of the Comptroller of the Currency (OCC). It provides functionality and features to enable OCC's 2,800 geographically dispersed employees to report their leave and work activities using a single automated paperless system, and successfully replaced the former existing paper-based leave and time reporting processes and supporting systems. It is comprised of a core time and attendance application, as well as 3 supplemental applications that allow for off-line time and attendance capabilities, automated processing of leave, and improved administrative functionality.
+
+Risked Based Capital
+
+Workflow & Information Systems & Document Management
+
+Annual Percentage Rate Program (for Windows)
+
+Annual Percentage Yield
+
+E-Time Application
+
+Travel Expense Reporting System (TERS) Client Application
+
+TERS Desktop Data Entry Form developed in Access and used to record travel expenses. It is standard software that is loaded on all OCC employee desktops. It is completed by the employee, printed out and provided to administrative staff for mainframe manual entry. Via nightly processing, expense information interface into $MART to facilitate the travel payment process.
+
+I-METRO SOO 1/7/2009, Appendix D
+
+25
+
+APPENDIX E: List of Client Locations
+Duty Station Name
+Albuquerque, NM Alexandria, MN Amarillo, TX Atlanta, GA Bensalem, PA Billings, MT Birmingham, AL Birmingham, AL Blue Ash, OH Boston, MA Carlsbad, CA Champaign, IL Charleston, WV Charlotte, NC Chicago, IL Cleveland, OH Columbus, OH Corpus Christi, TX Dallas, TX Denver, CO Downers Grove, IL Dublin, OH Duluth, MN Eau Claire, WI Edison, NJ Evansville, IN Fargo, ND Fort Worth, TX Grand Island, NE Houston, TX Independence, OH Indianapolis, IN Iron Mountain, MI Jackson, MS Jacksonville, FL Joplin, MO Kalamazoo, MI Landover, MD Little Rock, AR London, UK Longview, TX
+
+Employee Count
+11 14 11 41 48 6 1 17 20 34 14 12 7 126 89 31 8 2 97 85 30 16 7 5 48 9 11 25 8 106 26 18 4 4 23 12 2 40 23 5 19
+
+Duty Station Name
+Los Angeles, CA Louisville, KY Lubbock, TX Mclean, VA Memphis, TN Miami, FL Milwaukee, WI Minneapolis, MN Monroeville, PA Montgomery, AL Nashville, TN New Orleans, LA New York, NY Oklahoma City, OK Omaha, NE Overland Park, KS Peoria, IL Phoenix, AZ Pittsburgh, PA Portland, ME Providence, RI Roanoke, VA Salina, KS Salt Lake City, UT San Antonio, TX San Francisco, CA Santa Ana, CA Schaumburg, IL Seattle, WA Sioux City, IA Sioux Falls, SD Southfield, MI St Louis, MO Syracuse, NY Tampa, FL Tulsa, OK Washington, DC Wichita, KS Wilkes Barre, PA Wilmington, DE Windsor, CO
+
+Employee Count
+29 23 15 10 16 27 17 81 33 1 22 14 259 31 32 42 21 18 21 1 3 20 9 19 47 90 17 37 2 14 12 11 35 33 17 25 889 24 20 8 1
+
+Total
+
+81 sites
+
+3161 employees
+
+I-METRO SOO 1/7/2009, Appendix E
+
+26
+
+APPENDIX F: Current E-mail Architecture and Mailbox Metrics A. Key OCC Mailbox Metrics and Statistics
+ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ Approximately 4,200 mailboxes Mailboxes range from 200MB to 2GB (e.g. executives) Approximately 95 percent of users have 200MB storage allocations, with the remaining 5 percent averaging 400MB 21.7 million inbound e-mails in FY08 8.8 million blocked e-mails in FY08 (Spam) 46.4 million total e-mail transactions in FY08
+
+B. Blackberry Statistics
+Total number of devices: 600 Carriers: National - Sprint, Verizon; International ­ T-Mobile (for international service) Services: Voice and data International services: approximately 10 percent of the total Blackberry devices Blackberry devices: 8310, 8320, 8330, 8700 and 8703e. 8703e is predominant blackberry device in use by the OCC.
+
+C. Exchange 2007 Detailed Design
+The purpose of this document is to identify the requirements that have been satisfied by the OCC implementation along with identifying the majority of the associated HW. Additional detail design documentation can be provided upon request and signing of a non-disclosure agreement.
+
+B.2.1 Requirements for OCC's Current Exchange E-mail Subsystem Table 1--Contract Requirements for Exchange E-Mail Subsystem
+Req# 1.1 Requirement Description The solution shall provide message protection by using (spam filtering), (content filtering), and Exchange (anti-virus). Any proposed solution shall be compatible with this SOE and all subsequent releases of Exchange. Requirement Addressed The solution provides protection to messages and related subsystems using the tools quantified by the OCC.
+
+1.2
+
+The solution implements Exchange 2007 as the OCC messaging system. This will be compatible with future releases of Microsoft Exchange. The messaging system is compatible with the windows OCC standard operating environment (SOE).
+
+1.3
+
+The messaging system shall be compatible with the Windows OCC standard operating environment (SOE). The messaging system software shall be on the MS-compatibility list.
+
+1.4
+
+The messaging system is on the MSCompatibility list.
+
+I-METRO SOO 1/7/2009, Appendix F
+
+27
+
+Req# 1.5
+
+Requirement Description The solution shall support Outlook 2003 and all future versions of the Outlook email client. The solution shall support Outlook 2003. The solution shall design the logical & physical drive structure following Microsoft published recommendations of different physical drives for Windows OS, paging file, application code, transaction logs, and database files. The solution will be compatible with the Zix Select to provide encryption and signing of mail when required. The solution shall be sized such that the minimum standard mailbox size is 200 MB in Phase I and 1GB in Phase II.
+
+Requirement Addressed The solution is based on the use of Outlook 2003. The OCC is will be upgraded to use Outlook 2007 at a future date. The solution supports Outlook 2003.
+
+1.6
+
+1.7
+
+The solution follows the Microsoft published recommendations for the design of logical and physical drive structure for the placement of the Operating System, paging file, application code, log files and database files.
+
+1.8
+
+The solution provides for the encryption and signing of mail when required as well as settings for confidentiality. The solution calls for a system wide maximum of 1GB with most stores being set for a 200MB maximum limit in Phase I. The Phase II solution calls for a system wide minimum of 1GB. The solution sets a maximum mailbox size limit using database store properties. The mailbox system limits will be configured using the database store properties for the respective deployment phase. The mailbox system limits will not have a hard limit for receiving messages configured using the database store properties for the respective deployment phase. The solution will allow all customers mailboxes to be retained for restore for one month. The solution will allow public folders to be retained for restore for one month.
+
+1.9
+
+1.10
+
+The solution shall set a maximum size for the mailboxes. Phase I the messaging system shall send a warning at 180MB. Phase II the messaging system shall send a warning at 900MB. The messaging system will not configure a hard limit for receiving messages.
+
+1.11
+
+1.12
+
+1.13
+
+All customer mailboxes shall be retained for one month (30 days).
+
+1.14
+
+All public folders shall be retained and available for restoration for one month (30 days). The Exchange configuration shall retain 30 days of deleted items. The solution shall restore any Exchange database within 4 hours or an entire system within 8 hours.
+
+1.15
+
+The messaging system will allow the restoration of deleted items for 30 days. The design has sized all databases to be small enough to be restored within 4 hours and all systems have been sized to allow a 8-hour restoration time.
+
+1.16
+
+I-METRO SOO 1/7/2009, Appendix F
+
+28
+
+Req# 1.17
+
+Requirement Description The hour requirement shall begin at recovery initiation. The entire system consists of a server/operating system/exchange databases. The solution shall be designed so that a mass mailing of an average sized message (50 KB) to every mailbox in the system (3,000 licensed mailboxes OCC) arrives in 10 minutes or less. The solution shall be sized to fully support concurrent Outlook Web Access use for all OCC customers. All email shall be signed and encrypted when required. All email that requires non-repudiation shall be signed and all email that requires confidentiality shall be encrypted using Zix Select. The solution shall support the current volume of mail and accommodate a storage growth factor of 20% per year. The solution shall be designed to support a peak load of five times the current volume of email. The solution shall support five times the number of messages sent (SMTP). The solution shall provide for a 40% annual growth rate in the size of transaction logs. All customer mailboxes and folders shall be retained and available for restoration for one month. The solution shall not use Exchange circular logging for the transaction logs. Circular logging shall be acceptable on the Hub Transport and Client Access servers. OWA does not contain mailboxes or public folders.
+
+Requirement Addressed This requirement has been included in the design. This requirement has been included in the design.
+
+1.18
+
+1.19
+
+The system has been designed to allow a sub-10 minute delivery time for a mass mailing to all customers on the system.
+
+1.20
+
+The design is sized to allow all customers to be concurrently using Outlook Web Access.
+
+1.21
+
+The designed system is capable of signing and encrypting messages as necessary.
+
+1.22
+
+The design will accommodate the current volume of messages and storage growth by a factor of 20% per year.
+
+1.23
+
+The solution is designed to support a peak load five times the current volume of messages. The solution is designed to support five times the number of SMTP messages currently sent. The solution is designed to provide for a 40% annual growth in the size of transaction logs. The archiving solution will retain all mailboxes and folders for one month.
+
+1.24
+
+1.25
+
+1.26
+
+1.27
+
+The designed transaction log setting is to have circular logging turned off.
+
+1.28
+
+The designed transaction log setting is to have circular logging turned off.
+
+B.2.2 Exchange 2007 Client Access Server Configuration I-METRO SOO 1/7/2009, Appendix F 29
+
+Table 2 lists the configuration of the Client Access Server.
+
+Table 2--Exchange 2007 Client Access Server Configuration
+Component Server Count System Type Number and Type of Processor(s) RAM Direct Attached Storage Operating System Clustered Exchange Setup ˇ ˇ ˇ 2 HP DL380 G5 Two (2) Intel Xeon x64 Steps
+
+ˇ ˇ
+
+4GB Yes ­ Two (2) Internal 146GB SCSI
+
+ˇ
+
+Windows Server 2003 R2 x64 Standard Edition will be installed
+
+ˇ ˇ
+
+No ­ Load Balanced w/ Round Robin DNS or F5 BIG-IP Exchange Server 2007 Standard Edition with the Client Access Server role HTTP Virtual Server will be configured No stores required
+
+ˇ Storage Groups Security ˇ
+
+ˇ ˇ
+
+Unnecessary services and protocols will be removed or disabled URLScan and IIS Lockdown tool will be applied and fine-tuned based Network load balancing will be implemented with F5 Big IP Configuration
+
+Client Access Component Drive Configuration per Cluster
+
+ˇ
+
+Drive size requirements
+A: C: Reserved for Floppy OS/Exchange Application
+
+IOPS required
+
+B.2.3 Exchange 2007 Hub Transport Server Configuration
+Table 3 lists the configuration of the Hub Transport Server.
+
+Table 3--Exchange 2007 Hub Transport Server Configuration
+Component Server Count System Type ˇ ˇ 3 HP DL380 G5 Steps
+
+I-METRO SOO 1/7/2009, Appendix F
+
+30
+
+Component Number and Type of Processor(s) RAM Direct Attached Storage Operating System Clustered Exchange Setup ˇ Two (2) Intel Xeon x64
+
+Steps
+
+ˇ ˇ
+
+4GB Yes ­ Two (2) Internal 146GB SCSI for OS and three (3) Internal 146GB SCSI for tracking logs, etc Windows Server 2003 R2 x64 Standard Edition will be installed
+
+ˇ
+
+ˇ ˇ
+
+No ­ Multiple HT servers are load balanced by default Exchange Server 2007 Standard edition with the Hub Transport Server role No stores required Stores will be dismounted and deleted as necessary (public folder store will be deleted). Unnecessary services and protocols will be removed or disabled Configuration
+
+Storage Groups Security
+
+ˇ ˇ
+
+ˇ Component Drive Config per Cluster
+
+Drive size requirements
+A: C: D: E: Reserved for Floppy OS/Exchange Application DB/Queue/Tracking Logs 146GB 146GB
+
+B.2.4 Exchange 2007 Mailbox Server Configuration
+Table 4 lists the configuration for the standalone Mailbox server.
+
+Table 4--Exchange 2007 Standalone Mailbox Server Configuration
+Component Server Count System Type Number and Type of Processor(s) RAM Direct Attached Storage ˇ ˇ ˇ Steps 6 Mailboxes + 1 Public Folder (Phase I) HP DL380 G4 Two (2) Intel Xeon x64
+
+ˇ ˇ ˇ ˇ
+
+8-10GB Yes - Standalone Implementation 2 Drives ­ RAID 1 OS and transaction logs 4 Drives ­ RAID 10 databases
+
+I-METRO SOO 1/7/2009, Appendix F
+
+31
+
+Component Operating System Clustered Exchange Setup Storage Groups Security Component Drive Config per Cluster ˇ
+
+Steps Windows Server 2003 R2 x64 Enterprise Edition will be installed
+
+ˇ ˇ ˇ ˇ
+
+No Exchange Server 2007 Enterprise edition with Mailbox Server role 3 per mailbox server Unnecessary services and protocols will be removed or disabled Configuration
+
+Drive size requirements
+A: C: D: Reserved for Floppy OS/Exchange Binaries/ Transaction Logs Exchange Databases NA 146GB 600GB
+
+Table 5 lists the recommended configuration for the Clustered Mailbox Server (CCR).
+
+Table 5--Exchange 2007 Clustered Mailbox Server Configuration (CCR)
+Component Server Count System Type Number and Type of Processor(s) RAM Direct Attached Storage Operating System Clustered Exchange Setup Storage Groups Security Component ˇ ˇ ˇ Steps 6 ­ 3 x 2-node CCR clusters (Phase II) HP DL380 G4 Two (2) Intel Xeon x64
+
+ˇ ˇ
+
+8-10GB 2 Drives ­ RAID 1 OS. Data storage will be maintained on EMC SAN
+
+ˇ
+
+Windows Server 2003 R2 x64 Enterprise Edition will be installed
+
+ˇ ˇ
+
+Yes ­ Three (3) Continuous Cluster Replication Exchange Server 2007 Enterprise edition with Mailbox Server role
+
+ˇ
+
+15 per clustered mailbox server
+
+ˇ
+
+Unnecessary services and protocols will be removed or disabled Configuration
+
+I-METRO SOO 1/7/2009, Appendix F
+
+32
+
+Component Drive Config per Cluster
+
+Steps
+
+Drive size requirements
+A: C: D: Reserved for Floppy OS/Exchange Binaries/ Transaction Logs Exchange Application / Pagefile 146GB 146GB
+
+Detailed storage layout recommended and provided by Vendor.
+
+B.2.5
+
+Exchange Server Types
+Code Exchange Server Type
+Exchange 2007 Client Access Server Exchange 2007 Clustered Mailbox Server Exchange 2007 Hub Transport Server Exchange 2007 Mailbox Server Exchange 2007 Unified Messaging Server
+
+Table 6--Exchange Server Identifier Types
+
+Based on the naming conventions shown in Table 6 the servers for the OCC production environment are shown in Table 7.
+
+Table 7-- Exchange 2007 Servers for OCC Production Environment
+Host Name Server Purpose
+Exchange 2007 Client Access Server Exchange 2007 Client Access Server Exchange 2007 Clustered Mailbox Server 1 Exchange 2007 Clustered Mailbox Server 2 Exchange 2007 Clustered Mailbox Server 3 Exchange 2007 Hub Transport Server 1 Exchange 2007 Hub Transport Server 2 Exchange 2007 Hub Transport Server 3 Exchange 2007 Clustered Mailbox Server 1 Node 1 Exchange 2007 Clustered Mailbox Server 1 Node 2 Exchange 2007 Clustered Mailbox Server 2 Node 1 Exchange 2007 Clustered Mailbox Server 2 Node 2 Exchange 2007 Clustered Mailbox Server 3 Node 1 Exchange 2007 Clustered Mailbox Server 3 Node 2 Exchange 2007 Mailbox Server (Standalone) Exchange 2007 Mailbox Server (Standalone) Exchange 2007 Mailbox Server (Standalone) Exchange 2007 Mailbox Server (Standalone) Exchange 2007 Mailbox Server (Standalone) Exchange 2007 Mailbox Server (Standalone)
+
+I-METRO SOO 1/7/2009, Appendix F
+
+33
+
+Host Name
+
+Server Purpose
+Exchange 2007 Mailbox Server (Spare - Recovery) Exchange 2007 Public Folder Server Exchange 2007 Unified Messaging Server (Future req) Exchange 2007 Unified Messaging Server (Future req)
+
+B.2.6 SAN Equipment Table 8--EMC/DELL Clarion 4 Node Centera Primary and DR/COOP
+QTY
+2 4 4500 7 1
+
+Equipment
+Bundled 4 node GEN4LP with 1TB Drives with 2 switches EMC Centera Basic ­ Mirrored 2-Node Right to Use SW EMAILXtender Teir 2 QTY 26 ­ 5000 User mailboxes Fully Loaded 4GB Stiletto DAE w/WD 1TB low power disk CX3-80 (RAID 6) Array for Dual Engine DL
+
+I-METRO SOO 1/7/2009, Appendix F
+
+34
+
+APPENDIX G: Web Presence
+IS C O S Y E T S M SW (VLAN)
+S
+
+C S I O C Y T S M E S SW (VLAN)
+S
+
+S I C O T S Y M E S SW / Router
+S
+
+S I C O S Y E T S M SW (VLAN)
+S
+
+w ww.banknet.gov www.helpwithmybank.gov
+
+C S I O Y T S M E S Bi gIP F5
+S
+
+w ww.occ.treas. gov
+
+www.banknet.gov
+(NAT )
+
+ww w.occ.treas.gov
+(NAT )
+
+C S I O Y T S M E S Bi gIP F5
+S
+
+This serve r contains a replicated copy of BankNet and is crawle d by Google Sea rch Appliance .
+
+IIS Server HQ IISEXPBN06
+
+The BigIP devices transla te all HTTPS packets and lea ves all HTTP packets unchanged. All other pa ckets are dropped. External Firewall OCCRXE The externa l firewall translates all HTTP pac kets from and leaves all HTT PS pa ckets uncha nged. All other packets are dropped . IIS Server HQ IISEXPBN03
+
+W 2k
+
+IIS Server HQ IISEXPBN04
+W 2k
+
+W2 k
+
+IIS Server (Denver) DENEXTIIS01 .
+
+AD controller ADDCBN01
+
+W2 k3
+
+Se cure WebDAV Publishing This server a cts entry for publishing c ontent and migrating c ode. It also provide File replication s ervices.
+
+TRE AS URY NETWORK
+
+AD controller ADDCBN00
+Internal Fire wall/ P rox y
+
+W 2k3
+
+Internet
+H TT PS on po requ es r t 443 t
+
+HT T P o n p Sreq ort u e 4 43 st
+
+T rea sury Firew alls
+
+HQUT ILEXPBN00
+
+BankNet user 1
+
+Unix / Linux
+
+O CC user 4
+
+DMZ Exchange EXCHOW AEXT01
+
+W 2k
+
+(NAT)
+
+PIX Cisco Cluster
+
+webmail.banknet.gov
+
+DMZ IIS Server HQEXTIISO WA01
+
+W 2k
+
+S I C O Y T S M E S SW
+S Sn f i f e r Se r vr e
+
+o m t ig n r n a / y li s
+Sensor
+
+Sn i f e r Se r ve r
+
+o m t ig n r n a / y ls i Manager HQ SI00
+
+SSH
+
+Internal OC C Network
+Intrushield IDS
+
+Intrushield IDS
+Sn f i f e r Se r vr e
+
+o m t ig n r n a / y li s
+
+SSH
+
+NFRIDS
+
+Public Communication via the Internet ˇ www.occ.treas.gov ˇ www.helpwithmybank.gov Outlook Web Access ˇ email.occ.gov 35
+
+I-METRO SOO 1/7/2009, Appendix G
+
+APPENDIX H: Desktop Management Environment
+Current Desktop Hardware Support ˇ 1-800 number for technical support in the field ˇ Depot maintenance located in Landover, MD which handles all repair and replacement of OCC computer equipment and peripherals ˇ Loaner laptops available in district and field offices or overnight shipping if necessary ˇ 3 Day turnaround time for repairs ˇ Self help overnight shipping to customer location for removable parts ­ hard drive, floppy drive, flash drive, battery, memory Current Desktop Software Support ˇ Software Delivery ­ Systems Management Server (SMS) o Software installation and updates are delivered through SMS. The deployments occur as needed.  Package creation - The package is created based on installation requirements.  System Integration Testing - Application owners test application functionality.  User Acceptance Testing Package Delivery - The software is deployed to the application owner. The owner tests the delivery and the functionality.  Package Delivery - The application is deployed to the enterprise.  Deployment Reporting ­ The percentage of penetration is reported and monitored to quickly resolve any issues. ˇ Antivirus Update Delivery o Antivirus software upgrades are delivered through SMS. The upgrades are delivered as needed. o Antivirus definition updates (protection) are delivered daily through the Symantec Client Security Infrastructure ˇ Security Update Delivery ­ Windows Server Update Services (WSUS) o Microsoft security updates are delivered through WSUS. The deployment of updates occurs once a month.  System integration and user acceptance testing are performed before deployments  Operating system and office updates are delivered. ˇ Common Operating Environment Image Delivery o Major image updates delivered through DVDs. o All deployed applications, security updates, and additional configurations are included in the image before delivery
+
+I-METRO SOO 1/7/2009, Appendix H
+
+36
+
+APPENDIX I: Current Hardware Allocation by Device
+Note: Some of the equipment below (i.e. excluding the desktops and laptops) are still under warranty and not at end-of-life. The figures simply represent the OCC's inventory.
+Desktops / Laptops Laptop PCs Desktop PCs Tablet PCs Precision Workstations (Developer Machines) Quantity 3100 800 90 77
+
+Laptop Docking Stations B&W HP 4250 B&W HP 8150s Color LaserJet Printers Portable Printers Portable Scanners PC Projectors Apple Equipment Personal LaserJets Flatbed scanners Multifunction Printers - All in Ones Large Plotters Canon Scanner High Speed Fax Machines UPS' Replacements Inkjet Printers non-all in one Xerox Phaser Printers
+
+700 520 126 138 1974 1200 162 36 175 175 155 12 25 270 175 160 30
+
+I-METRO SOO 1/7/2009, Appendix I
+
+37
+
+APPENDIX J: Minimum Service Areas for Measurement
+Lifecycle Workforce Automation Acquisition, Provisioning, Management and Maintenance ˇ Deployment ­ The contractor shall measure the success of each scheduled deployment of equipment and peripherals to OCC users. ˇ Major release / service pack updates ­ The contractor shall measure the success of the installation of OCC-approved major releases and service pack updates to software and Operating Systems, deployed on end-user PC's and laptops connected to the OCC network. ˇ Application pushes ­ the contractor shall measure the success of the installation of OCC-approved application releases on end-user PC's and laptops connected to the OCC network. ˇ Anti-virus updates ­ The contractor shall measure the currency of antivirus signatures residing on end-user PC's and laptops connected to the OCC network. ˇ Security patching ­ the Contractor shall measure the currency of security patches residing on end-user PC's and laptops connected to the OCC network. ˇ Asset management / Installs, moves, adds, changes (IMACs) ­ The contractor shall measure the accuracy of its mechanisms (e.g. system) for tracking and storing information regarding the equipment, peripherals and software deployed across the OCC enterprise. ˇ Hardware restoration ­ The Contractor shall measure the quality and timeliness of each effort to restore (upon completion of service) an end user's equipment to a working state. ˇ Overnight delivery ­ The Contractor shall measure the timeliness of service in responding to an enduser's self-help need for overnight delivery of removable parts. Email, Blackberry, and Web Presence Support Services ˇ Availability ­ The Contractor shall measure the availability of critical e-mail, blackberry and web presence services on a continual basis. ˇ Spam updates ­ The contractor shall measure the currency of spam updates residing on end-user PC's and laptops connected to the OCC network.
+
+I-METRO SOO 1/7/2009, Appendix J
+
+38
+
+
+Attachment 5- Subcontracting Plan Outline
+
+  Department of the Treasury Small, HUBZone Small, Small Disadvantaged, Women-Owned Small, Veteran-Owned Small, & Service Disabled Veteran-Owned
+                                               Small Business Concerns Subcontracting Plan Outline
+
+The following outline meets the minimum requirements of Public Law 95-507 and the Federal Acquisition Regulation (FAR) Subparts 19.7.  It is
+intended to be a guideline.  It is not intended to replace any existing corporate plan which is more extensive. If you need assistance to locate
+small business sources, contact the Director, Office of Small Business Development at (202) 622-0530 or the bureau Small Business Specialist,
+Ms. Deirdre Eischens, Office of the Comptroller of the Currency, at (202) 874-5442. Please note that the Department of the Treasury has
+subcontracting goals of  41 % for small business,  3 % for HUBZone Small Business,  5 % for Small Disadvantaged Business (SDB),   5 % for Women-
+Owned Small Business (WOSB), and  3 % for Service Disabled Veteran-Owned Small Business (SDVOSB) for fiscal year  2008 . For this procurement,
+the Department of the Treasury expects all proposed subcontracting plans to contain the above goals, at a minimum.  Although there is no
+statutory goal for Veteran-Owned Small Business (VOSB) concerns, a VOSB goal must be proposed in accordance with FAR 19.7 and should represent
+the offeror’s best effort to provide the maximum practicable opportunities for VOSBs.  These percentages shall be expressed as percentages of
+the total available subcontracting dollars.
+
+Identification Data:
+  Company Name:                                                                      
+  Address:                                                                                   
+  Date Prepared:                  Solicitation Number:                     
+  Item/Service:                                                                           
+  Place of Performance:                                                                            
+
+1. TYPE OF PLAN: (Check only one).
+|        |INDIVIDUAL PLAN: In this type of plan, all elements are developed specifically for this contract and are applicable for |
+|        |the full term of this contract.                                                                                         |
+|        |MASTER PLAN: In this type of plan, goals are separately developed for this contract in an individual plan; all other    |
+|        |elements are standard. The master plan must be approved once every three (3) years. Once incorporated into a contract   |
+|        |with specific goals, it is valid for the life of the contract.                                                          |
+|        |COMMERCIAL PLAN: This type of plan is used when the contractor sells products and services customarily used for         |
+|        |non-government purposes. Plans and goals are negotiated with the initial agency on a company-wide basis rather than for |
+|        |individual contracts. The plan is effective only during year approved. The contractor must provide a copy of the initial|
+|        |agency approval, and must submit an annual Summary Subcontracting Report (SSR) in the electronic Subcontracting         |
+|        |Reporting System (eSRS) to Treasury with a breakout of subcontracting prorated for Treasury (with a further bureau      |
+|        |breakout, if possible).                                                                                                 |
+
+2. GOALS:
+FAR 19.704(a)(1) requires dollar and percentage goals for using small business, HUBZone small business, small disadvantaged business, women-
+owned small business, veteran-owned small business, and service disabled veteran-owned small business concerns as subcontractors for the base
+year and each option year.  (Please note that the goals for HUBZone small business, small disadvantaged business, women-owned small business,
+veteran-owned small business, and service disabled veteran-owned small business concerns are sub-sets of the small business goal).   Express all
+dollar goals as a percentage of total planned subcontracting dollars.   Zero percentage/dollar goals are NOT ACCEPTABLE and will not be
+approved.
+
+  A. Estimated dollar value of all planned subcontracting, i.e., to all types of business concerns under this contract is:
+|Estimated Dollar Value of All Planned Subcontracting                                      |
+|Base      |1st Option       |2nd Option        |3rd Option        |4th Option             |
+|$         |$                |$                 |$                 |$                      |
+|100%      |100%             |100%              |100%              |100%                   |
+
+
+  B. Estimated dollar value and percentage of total planned subcontracting to small business concerns is: (Include HUBZone Small, Small
+Disadvantaged, Women-owned Small Business, Veteran-owned Small Business and Service Disabled Veteran-Owned Small Business)
+      *(This figure includes the amount in C., D., E., F., and G. below.)
+|Subcontracting to Small Business Concerns                             |
+|Base    |1st Option    |2nd Option     |3rd Option    |4th Option    |
+|$       |$             |$              |$             |$             |
+|%       |%             |%              |%             |%             |
+
+
+  C. Estimated dollar value and percentage of total planned subcontracting to HUBZone small business concerns is:
+|Subcontracting to HUBZone Small Business Concerns                             |
+|Base     |1st Option      |2nd Option       |3rd Option      |4th Option      |
+|$        |$               |$                |$               |$               |
+|%        |%               |%                |%               |%               |
+
+
+  D. Estimated dollar value and percentage of total planned subcontracting to small disadvantaged business concerns is:
+|Subcontracting to Small Disadvantaged Business Concerns                               |
+|Base      |1st Option        |2nd Option        |3rd Option        |4th Option        |
+|$         |$                 |$                 |$                 |$                 |
+|%         |%                 |%                 |%                 |%                 |
+
+
+  E. Estimated dollar value and percentage of total planned subcontracting to women-owned small business concerns is:
+|Subcontracting to Women-Owned Small Business Concerns                                 |
+|Base      |1st Option        |2nd Option         |3rd Option        |4th Option        |
+|$         |$                 |$                  |$                 |$                 |
+|%         |%                 |%                  |%                 |%                 |
+
+
+
+
+
+
+
+
+
+
+  F. Estimated dollar value and percentage of total planned subcontracting to veteran-owned small business concerns is:
+|Subcontracting to Veteran-Owned Small Business Concerns                               |
+|Base      |1st Option        |2nd Option         |3rd Option        |4th Option        |
+|$         |$                 |$                  |$                 |$                 |
+|%         |%                 |%                  |%                 |%                 |
+
+
+  G. Estimated dollar value and percentage of total planned subcontracting to service disabled veteran-owned small business concerns is:
+|Subcontracting to Service Disabled Veteran-Owned Small Business Concerns                                       |
+|Base         |1st Option             |2nd Option              |3rd Option              |4th Option              |
+|$            |$                      |$                       |$                       |$                       |
+|%            |%                      |%                       |%                       |%                       |
+
+
+  H.  Supplies and/or services to be subcontracted under this contract, business size (i.e., SB, HUBZone, SDB, WOB, VOSB, SDVOSB, and LB), and
+     the estimated dollar expenditure are: (Check all that apply).
+|Business Category or Size                                                                                     |                    |
+|Supply/                                                                                                                           |
+|Service                                                                                                                           |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+
+
+    I2. Explain how the product and service areas to be subcontracted were established, how the areas to be subcontracted to small, HUBZone
+small, small disadvantaged, women-owned small, veteran-owned small, and service disabled veteran-owned small business concerns were determined.
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+
+
+    I3. How the capabilities of small, HUBZone small, small disadvantaged, women-owned small, veteran-owned small, and service disabled veteran-
+owned small business concerns were determined.
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+
+
+    I4. Identify all source lists used in the determination process.
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+
+
+    J. Indirect and overhead costs       HAVE BEEN or       HAVE NOT BEEN included in the dollar and percentage subcontracting goals stated
+above. (Check one.)
+
+
+    K. If indirect and overhead costs HAVE BEEN included, explain the method used to determine the proportionate share of such costs to be
+allocated as subcontracts to small, HUBZone small, small disadvantaged, women-owned small, veteran-owned small, and service disabled veteran-
+owned small business concerns.
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+
+3. PROGRAM ADMINISTRATOR:
+FAR 19.704(a)(7) requires information about the company employee who will administer the subcontracting program. Please provide the name, title,
+address, phone number, fax number, e:mail address, and position within the corporate structure and the duties of that employee.
+Name: ____________________
+Title: _____________________
+Position: __________________
+Address: _________________________________________________________
+Telephone: _________________
+Fax Number: ________________
+E:Mail Address: _____________________
+
+Duties: The Program Administrator’s general overall responsibility for the Contractor’s subcontracting program, i.e., developing, preparing, and
+executing individual subcontracting plans and monitoring performance relative to this particular plan. These duties may include, but are not
+limited to the following activities.   Does the individual named above perform the following?  (If NO is checked, please indicate who in the
+company performs those duties, or indicate why the duties are not performed in your company.)
+
+
+  A. Developing and promoting company/division policy statements that demonstrate the company’s/division’s support for awarding contracts and
+subcontracts to small, HUBZone small, small disadvantaged, women-owned small, veteran-owned small, and service disabled veteran-owned small
+business concerns.
+      ____ YES         ____ NO
+
+
+  B. Developing and maintaining bidders’ lists of small, HUBZone small, small disadvantaged, women-owned small, veteran-owned small, and service
+disabled veteran-owned small business concerns from all possible sources.
+      ____ YES         ____ NO
+
+
+  C. Ensuring periodic rotation of potential subcontractors on bidders’ lists.
+      ____ YES         ____ NO
+
+
+  D. Assuring that small, HUBZone small, small disadvantaged, women-owned small, veteran-owned small, and service disabled veteran-owned small
+business concerns are included on the bidders’ list for every subcontract solicitation for products and services they are capable of providing.
+      ____ YES         ____ NO
+
+
+  E. Ensuring that subcontract procurement “packages” are designed to permit the maximum possible participation of small, HUBZone small, small
+disadvantaged, women-owned small, veteran-owned small, and service disabled veteran-owned small business concerns.
+      ____ YES         ____ NO
+
+
+  F. Reviewing subcontract solicitations to remove statements, clauses, etc., which might tend to restrict or prohibit small, HUBZone small,
+small disadvantaged, women-owned small, veteran-owned small, and service disabled veteran-owned small business participation.
+      ____ YES         ____ NO
+
+
+  G. Ensuring that the subcontract bid proposal review board documents its reasons for not selecting any low bids submitted by small, HUBZone
+small, small disadvantaged, women-owned small, veteran-owned small, and service disabled veteran-owned small business concerns.
+      ____ YES         ____ NO
+
+
+  H. Overseeing the establishment and maintenance of contract and subcontract award records.
+      ____ YES         ____ NO
+
+
+  I. Attending or arranging for the attendance of company counselors at Business Opportunity Workshops, Minority Business Enterprise Seminars,
+Trade Fairs, etc.
+      ____ YES         ____ NO
+
+
+  J. Directly or indirectly counseling small, HUBZone small, small disadvantaged, women-owned small, veteran-owned small, and service disabled
+veteran-owned small business concerns on subcontracting opportunities and how to prepare responsive bids to the company
+      ____ YES         ____ NO
+
+
+  K. Providing notice to subcontractors concerning penalties for misrepresentations of business status as small, HUBZone small, small
+disadvantaged, women-owned small, veteran-owned small, or service disabled veteran-owned small business for the purpose of obtaining a
+subcontract that is to be included as part or all of a goal contained in the contractor’s subcontracting plan.
+      ____ YES         ____ NO
+
+
+  L. Conducting or arranging training for purchasing personnel regarding the intent and impact of Public Law 95-507 on purchasing procedures.
+      ____ YES         ____ NO
+
+
+  M. Developing and maintaining an incentive program for buyers which supports the subcontracting program.
+      ____ YES         ____ NO
+
+
+  N. Monitoring the company’s performance and making any adjustments necessary to achieve the subcontract plan goals.
+      ____ YES         ____ NO
+
+
+  O. Preparing and submitting timely reports.
+      ____ YES         ____ NO
+
+
+  P. Coordinating the company’s activities during compliance reviews by Federal agencies.
+      ____ YES         ____ NO
+
+4. EQUITABLE OPPORTUNITY
+FAR 19.704(a)(8) requires a description of the efforts your company will make to ensure that small, HUBZone small, small disadvantaged,  women-
+owned small, veteran-owned small, and service disabled veteran-owned small business concerns will have an equitable opportunity to compete for
+subcontracts. These efforts may include, but are not limited to the following activities: (Check all that apply.)
+  A. Outreach efforts to obtain sources:
+|        |Contacting minority and small business trade associations                                                               |
+|        |                                                                                                                        |
+|        |Contacting business development organizations                                                                           |
+|        |                                                                                                                        |
+|        |Finding sources from the Dynamic Small Business Search of the Central Contractor Registration (CCR) System at           |
+|        |http://www.ccr.gov                                                                                                      |
+|        |Attending small, HUBZone, minority, women-owned, veteran-owned, & service disabled veteran-owned small business         |
+|        |procurement conferences and trade fairs                                                                                 |
+
+
+  B. Internal efforts to guide and encourage purchasing personnel:
+|        |Presenting workshops, seminars and training programs                                                                    |
+|        |                                                                                                                        |
+|        |Establishing, maintaining and using small, HUBZone small, small disadvantaged, women-owned small, veteran-owned small,  |
+|        |and service disabled veteran-owned small business source lists, guides and other data for soliciting subcontracts       |
+|        |Monitoring activities to evaluate compliance with the subcontracting plan                                               |
+|        |                                                                                                                        |
+
+
+  C. Additional efforts: (Please describe.)
+|                                                                                                                                  |
+|                                                                                                                                  |
+
+5. CLAUSE INCLUSION AND FLOWDOWN
+FAR 19.704(a)(9) requires that your company provide assurances that it will include the clause at FAR 52.219-8, “Utilization of Small Business
+Concerns,” in all subcontracts that offer further subcontracting opportunities.  FAR 52.219-9(d)(9) also requires that your company agrees in
+this plan that it will require all subcontractors, except small business concerns, that receive subcontracts in excess of $550,000 ($1,000,000
+for construction) to adopt a plan that complies with the requirements of FAR 52.219-9, “Small Business Subcontracting Plan.”
+                                                                                        [Insert company name] agrees that the clause will be
+included and that the plans will be reviewed against the minimum requirements for such plans. The acceptability of percentage goals for small,
+HUBZone small, small disadvantaged, women-owned small, veteran-owned small, and service disabled veteran-owned small business concerns must be
+determined on a case-by-case basis depending on the supplies and services involved, the availability of potential small, HUBZone small, small
+disadvantaged, women-owned small, veteran-owned small, and service disabled veteran-owned small business subcontractors and prior experience.
+Once the plans are negotiated, approved, and implemented, the plans must be monitored through the submission of periodic reports, including the
+Individual Subcontracting Report and the Summary Subcontracting Report submitted through the electronic Subcontracting Reporting System (eSRS).
+
+6. REPORTING AND COOPERATION
+FAR 19.704(a)(10) requires that your company (1) cooperate in any studies or surveys as may be required, (2) submit periodic reports which show
+compliance with the subcontracting plan; (3) submit Individual Subcontracting Report and Summary Subcontracting Report through the electronic
+Subcontracting Reporting System (eSRS); and (4) ensure that subcontractors agree to submit the Individual Subcontracting Report and the Summary
+Subcontracting Report through the electronic Subcontracting Reporting System (eSRS).  The cognizant Contracting Officer of the Treasury bureau
+awarding the contract must approve the reports through the eSRS system.  The reports  must be submitted electronically through the eSRS system
+within 30 days after the close of each calendar period. That is:
+|Calendar Period |Report Due                       |Date Due |Send Report Through the Electronic Subcontracting Reporting System  |
+|                |                                 |         |(eSRS) to:                                                          |
+|10/01–03/31     |Individual Subcontracting Report |04/30    |Contracting Officer/Bureau Small Business Specialist                |
+|                |(old SF 294)                     |         |                                                                    |
+|04/01–09/30     |Individual Subcontracting Report |10/30    |Contracting Officer/Bureau Small Business Specialist                |
+|                |(old SF 294)                     |         |                                                                    |
+|10/01–09/30     |Summary Subcontracting Report    |10/30    |Contracting Officer/Bureau Small Business Specialist/Department of  |
+|                |(old SF 295*)                    |         |the Treasury Office of Small Business Development                   |
+
+
+  *Summary Subcontracting Report must also be submitted to SBA’s Commercial Market Representative
+|Contracting Officer’s Address is:              |Bureau Small Business Specialist     |Department of the Treasury Office of Small  |
+|Office of the Comptroller of the Currency,     |address is:                          |Business Development address is:            |
+|Attn: Edwin Davis                              |Deirdre Eischens,                    |Department of the Treasury, Attn: Director, |
+|250 E. Street, SW                              |250 E. Street, SW                    |Office of Small Business Development,       |
+|Washington, DC 20219                           |Washington, DC 20219                 |1500 Pennsylvania Avenue, NW, Mail Code 655 |
+|                                               |                                     |15th/6099, Washington, DC 20220             |
+
+7. RECORDKEEPING
+FAR 19.704(a)(11) requires a list of the types of records your company will maintain to demonstrate the procedures adopted to comply with the
+requirements and goals in the subcontracting plan. (Check all that apply.) (If NO is checked, please indicate why these types of records are not
+maintained.)  These records include, but are not limited to, the following:
+
+
+  A. Small, HUBZone small, small disadvantaged, women-owned small, veteran-owned small, and service disabled veteran-owned small business concern
+source lists, guides, and other data identifying such vendors.
+  ____ YES       ____ NO
+
+
+  B. Organizations contacted for small, HUBZone small, small disadvantaged, women-owned small, veteran-owned small, and service disabled veteran-
+owned small business sources.
+  ____ YES       ____ NO
+
+
+  C. On a contract-by-contract basis, records on all subcontract solicitations over $100,000 which indicate for each solicitation:
+  C1. Whether small business concerns were solicited, and if not, why not.
+  C2. Whether HUBZone small business concerns were solicited, and if not, why not.
+  C3. Whether small disadvantaged business concerns were solicited, and if not, why not.
+  C4. Whether women-owned small business concerns were solicited, and if not, why not.
+  C5. Whether veteran-owned small business concerns were solicited, and if not, why not
+  C6. Whether service disabled veteran-owned small business concerns were solicited, and if not, why not
+  C7. Reasons for the failure of solicited small, small disadvantaged, women-owned small, veteran-owned small, and service disabled veteran-owned
+small business concerns to receive the subcontract award.
+  ____ YES       ____ NO
+
+
+  D. Records to support other outreach efforts, e.g., contacts with minority and small business trade associations, attendance at small, HUBZone
+small, minority, women-owned small, veteran-owned small, and service disabled veteran-owned small business procurement conference and trade
+fairs.
+  ____ YES       ____ NO
+
+
+  E. Records to support internal activities to (1) guide and encourage purchasing personnel, e.g., workshops, seminars, training programs,
+incentive awards; and (2) monitor activities to evaluate compliance.
+  ____ YES       ____ NO
+
+
+  F. On a contract-by-contract basis, records to support subcontract award data including the name, address and business size and ownership
+status (SB, HUBZone, SDB, WOB, VOSB, SDVOSB, etc.) of each subcontractor. (This item is not required for company or division-wide commercial
+plans).
+  ____ YES       ____ NO
+
+
+  G. Other records to support your compliance with the subcontracting plan: (Please describe)
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+
+8. TIMELY PAYMENTS TO SUBCONTRACTORS
+FAR 19.702 requires your company to establish and use procedures to ensure the timely payment of amounts due pursuant to the terms of your
+subcontracts with small, HUBZone small, small disadvantaged, women-owned small, veteran-owned small, and service disabled veteran-owned small
+business concerns.
+                                                                                                        [Insert company name] has established and
+uses such procedures:
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+
+9. DESCRIPTION OF GOOD FAITH EFFORT
+
+Maximum practicable utilization of small, HUBZone small, small disadvantaged, women-owned small, veteran-owned small, and service disabled
+veteran-owned small business concerns as subcontractors in Government contracts is a matter of national interest with both social and economic
+benefits. When a contractor fails to make a good faith effort to comply with a subcontracting plan, these objectives are not achieved, and
+15 U.S.C. 637(d)(4)(F) directs that the contractor must pay liquidated damages. In order to demonstrate your compliance with a good faith effort
+to achieve the small, HUBZone small, small disadvantaged, women-owned small, veteran-owned small, and service disabled veteran-owned small
+business subcontracting goals, outline the steps your company plans to take. These steps will be negotiated with the contracting officer prior
+to approval of the plan.
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+|                                                                                                                                  |
+
+The offeror is advised that this subcontracting plan will be made a material part of the contract and that the submission of the Individual
+Subcontracting Report and the Summary Subcontracting Report will be made a not-separately-priced line item deliverable in the contract.
+
+10. SIGNATURES REQUIRED
+Company Signatures:
+|This subcontracting plan was submitted by:                 |
+|Signature:                                                 |
+|Typed Name:                                                |
+|Title:                                                     |
+|Date:                                                      |
+
+Government Signatures:
+|This subcontracting plan was reviewed by:                |
+|Signature:                                               |
+|Typed Name:                                              |
+|Title: Contracting Officer                               |
+|Date:                                                    |
+
+
+|This subcontracting plan was reviewed by:                |
+|Signature:                                               |
+|Typed Name:                                              |
+|Title: Small Business Specialist                         |
+|Date:                                                    |
+
+
+
+
+
+
+|This subcontracting plan was reviewed by:               |
+|Signature:                                              |
+|Typed Name:                                             |
+|Title: Small Business Administration Representative     |
+|Date:                                                   |
+
+
+|This subcontracting plan was approved by:               |
+|Signature:                                              |
+|Typed Name:                                             |
+|Title: Director, Office of Small Business Programs (or  |
+|designee)                                               |
+|Date:                                                   |
+
+
+|This subcontracting plan was accepted by:                |
+|Signature:                                               |
+|Typed Name:                                              |
+|Title: Contracting Officer                               |
+|Date:                                                    |
+
+
+
+PRICING INSTRUCTIONS
+1. All pricing information must be included in Volume I, Price and Business Proposal of the Offeror's response. It is recommended that the pricing worksheets provided herein be used in the pricing response; however, the worksheets may be altered to be commensurate with the Offeror's proposed solution. If alternative pricing templates are used, they must clearly depict the proposed pricing and indicate the breakout of all costs with supporting documentation to allow the Government to determine whether pricing is fair and reasonable and will facilitate the Offeror's ability to successfully perform under the resulting contract 
+2. The worksheet labeled Summary Pricing is a high level overview of the CLINS for the core tasks required under this contract and serves as a summary of the total evaluated price of each offer. The Offeror shall complete the unpopulated columns. Additionally, the Offeror shall provide a breakout of all costs for those tasks that are proposed on a time and materials basis.
+3. The worksheet labeled Labor Rate Pricing provides a list of the anticipated labor categories that may be used to perform services under this contract. This list is provided only as guidance to prospective offerors. Each Offeror must determine which categories would be appropriate for supporting multiple types of tasks under this contract. The Offeror shall complete the table utilizing the same categories provided, or indicate their own categories. For each category proposed, the Offeror shall provide a description of the labor category to include education, experience and qualifications. The Offeror shall propose the labor rate commensurate with the proposed category. Labor rates must be fully loaded, fixed price hourly rates for each category and shall include both on-site and off-site rates. The Offeror shall also provide a single escalation rate that applies to the outyears beyond the base period for these labor categories.The escalation shall be calculated and documented to easily discern outyear pricing.
+4. In completing the Sample Scenarios Worksheets, the Offeror shall refer to the requirements outlined for each scenario and the instructions noted in Section IV of the RFP. When completing the worksheets, the Offeror must use the prices proposed in its labor rate pricing worksheet. 
+5. Offerors must provide details pertaining to the assumptions, expectations and/or performance parameters used as the basis for pricing.
+CONTRACTOR:  `
+Total Price (Base and Option Years): 
+CLIN DESCRIPTION Unit of Issue Total Price
+0001 Equipment/Hardware - Lifecycle Workforce Automation Acquisition, Provisioning, Management and Maintenance – Base Period
+0001-1 Managed Services - Lifecycle Workforce Automation Acquisition, Provisioning, Management and Maintenance – Base Period
+0002 Email, Blackberry, and Web Presence Support Services – Base Period
+0003 Mobile Workforce Support Services – Base Period
+0004 HSPD-12 Compliance Technology and Administration Services – Base Period 
+1001.0 Equipment/Hardware - Lifecycle Workforce Automation Acquisition, Provisioning, Management and Maintenance – Base Period
+1001-1 Managed Services - Lifecycle Workforce Automation Acquisition, Provisioning, Management and Maintenance – Base Period
+1002 Email, Blackberry, and Web Presence Support Services – Base Period
+1003 Mobile Workforce Support Services – Base Period
+1004 HSPD-12 Compliance Technology and Administration Services – Base Period 
+2001 Equipment/Hardware - Lifecycle Workforce Automation Acquisition, Provisioning, Management and Maintenance – Option Year 2
+2001-1 Managed Services - Lifecycle Workforce Automation Acquisition, Provisioning, Management and Maintenance – Option Year 2
+2002 Email, Blackberry, and Web Presence Support Services – Option Year 2
+2003 Mobile Workforce Support Services –           Option Year 2
+2004 HSPD-12 Compliance Technology and Administration Services – Option Year 2
+3001 Equipment/Hardware - Lifecycle Workforce Automation Acquisition, Provisioning, Management and Maintenance – Option Year 3
+3001-1 Managed Services - Lifecycle Workforce Automation Acquisition, Provisioning, Management and Maintenance – Option Year 3
+3002 Email, Blackberry, and Web Presence Support Services – Option Year 3
+3003 Mobile Workforce Support Services –          Option Year 3
+3004 HSPD-12 Compliance Technology and Administration Services – Option Year 3 
+4001 Equipment/Hardware - Lifecycle Workforce Automation Acquisition, Provisioning, Management and Maintenance – Option Year 4
+4001-1 Managed Services - Lifecycle Workforce Automation Acquisition, Provisioning, Management and Maintenance – Option Year 4
+4002 Email, Blackberry, and Web Presence Support Services – Option Year 4
+4003 Mobile Workforce Support Services –           Option Year 4
+4004 HSPD-12 Compliance Technology and Administration Services – Option Year 4 
+CONTRACTOR: 
+BASE PERIOD OPTION YEAR I OPTION YEAR 2 OPTION YEAR 3 OPTION YEAR 4
+Labor Category Labor Rate Hours  Extended Costs Labor Rate Hours  Extended Costs Labor Rate Hours  Extended Costs Labor Rate Hours  Extended Costs Labor Rate Hours  Extended Costs
+Senior Quality Assurance Analyst
+Senior Business Analyst
+Communications Specialist
+Project Manager
+Senior Network Engineer
+Senior Quality Assurance Analyst
+Senior Information Systems Security Engineer
+Senior Software/Systems Architect
+Senior Software/Test Engineer
+Senior Technical Writer/Documentation Spec
+Senior LAN Technician
+Senior Storage Operations/Management Engineer
+Senior Systems Administrator
+Software Engineer/Developer
+Task Order Manager
+Technical Architect
+Senior Systems Engineer
+Senior Hardware/Software Technical
+Senior Test Technical
+Help Desk Technician
+Subject Matter Experts
+CONTRACTOR:
+Sample Scenario 1: Office Automation Refreshment and Managed Services 
+Cost Category Description Hours/Quantity Unit Price TOTAL
+Labor Enter Required Labor
+Hardware Enter Required HWSW
+Other Direct Costs Enter Required of ODCs
+CONTRACTOR:
+Sample Scenario 2: Identity Management and Access Controls Requirement
+Cost Category Description Hours/Quantity Unit Price TOTAL
+Labor Enter Required Labor
+Hardware Enter Required HWSW
+Other Direct Costs Enter Required of ODCs
+Office Automation Refreshment and Managed Services Scenario
+OCC end user computing equipment is nearing the end of its productive life. Rather than initiating a traditional hardware replacement acquisition, the OCC is seeking an innovative approach to providing its users the technology and services necessary to do their jobs. The purpose of this work request is to establish a pilot program that deploys a comprehensive, managed services approach to providing technologically current end user computing devices, peripherals and supporting services for the OCC Southern District locations indicated in Figure 1-1 with the staff complements listed in Figure 1-2. The resulting program will effectively transition the equipment acquisition, provisioning, deployment, configuration management, asset management, maintenance, equipment disposal and image management responsibilities from other contractors and the Government to the Contractor.
+
+Figure 1-1: OCC Southern District
+
+     
+
+Figure 1-2: OCC Southern District Employee Count by Location
+
+Duty Station Name Amarillo, TX Atlanta, GA Birmingham, AL Birmingham, AL Corpus Christi, TX Dallas, TX Fort Worth, TX Houston, TX Jackson, MS Jacksonville, FL Little Rock, AR Longview, TX Lubbock, TX Memphis, TN Miami, FL Nashville, TN New Orleans, LA Oklahoma City, OK San Antonio, TX Tampa, FL Tulsa, OK Total
+
+Employee Count 11 41 1 17 2 97 25 106 4 23 23 19 15 16 27 22 14 31 47 17 25 583  
+
+For the purposes of the sample population of 583 employees, the following requirements have been established: ˇ ˇ ˇ ˇ ˇ ˇ 140 require laptop kit #1 (mid-sized) and a communications kit 320 require laptop kit #2 (small) and a communications kit 10 require laptop kit #3 (developer) 50 require laptop kit #4 (mid-sized tablet) 60 require desktop / mini-tower kit #1 3 require desktop / mini-tower kit #2 (developer)
+
+Solutions shall include the following elements applied to the pilot community: ˇ ˇ A provision for loading the OCC-approved image, application and network configurations, and complete restoration of the user's data; Functionality that permits the selection of different hardware kits and image installations by user classification (e.g. application developer, mid-size community bank examiner, large bank examiner, economist);
+
+ˇ ˇ ˇ ˇ ˇ ˇ ˇ ˇ
+
+Efficient and timely pushes of patches, new releases and anti-malware (anti-virus, antispyware) updates, especially when a user has been offline for more than one week; Capability to remotely destroy all information stored on a device in the event that the device is stolen; Capability for physical asset, configuration and license management and tracking; Automated data backup and restoration capabilities; Legacy equipment removal, disposal, and media destruction services; Tier 2 and 3 support of the managed hardware services; Restoration or replacement services for all covered equipment; A provision for self-help overnight shipping services to customer locations for removable parts.
+
+Requirements
+The Offeror shall respond to the following: 1. Describe its approach to rapidly providing the OCC workforce with office automation equipment that leverages currently available technology, accounts for the different needs of certain sets of users, and prevents equipment from extending beyond industry standard timeframes for end-of-life throughout the life of the contract (assume a 5-year period of performance). 2. Prepare a schedule that addresses all activities and associated deliverables required for this scenario. Identify which labor categories including skill sets, associated experience and staffing levels (level of effort) are required to execute each task. 3. Describe any engineering challenges and significant risks and how they will be managed or mitigated. 4. Discuss the leading practices, business drivers and associated metrics that are key to achieving the objectives of this scenario. 5. Discuss any training requirements that may emerge due to the pilot deployment and how they will be met. 6. Prepare a detailed cost proposal that identifies detailed specifications and cost per unit for each hardware kit specified in Attachment 1 as well as a per seat cost for the array of supporting services proposed to meet the requirements of this scenario. It is envisioned that the Contractor shall provide technology appropriate to the timeframe in which the contract is awarded.
+
+Appendix 1: Sample Hardware Kits
+ 
+
+Laptop Kit #1 ­ Mid sized (less than 6 lbs includes installed battery)
+Base Unit: Core 2 Duo Video: 14.1 WXGA+ LCD Minimum 128MG Discrete Video including adjustable display backlight/intensity control to support viewing in both dim and sunlit conditions Memory: 8.0GB, Double Data Rate 2-667 SDRAM, 1-2 DIMMs Hard Drives: Two* 120-160GB Hard Drives, 9.5MM, 7200RPM; hardware hard disk encrypted or solid state technology hard drives Audio: Built-in speaker with volume control, microphone input port and headphone output port Floppy Drive: None Mouse: Integrated pointing devices, including centrally located touch pad and a pointing stick device External Mouse: Small hand held portable laptop USB device Primary Battery: Removable, rechargeable batteries that can easily be removed and installed without using a screwdriver or other tool minimum 9-cell/85 WHr Operating System: Capability to run either Windows XP Professional, SP2 or Windows Vista Business operating systems Integrated Communications: ˇ 10/100/1000 Gigabit Ethernet LAN port ˇ 56k v.92 Modem ˇ Wireless WLAN 802.11n ˇ Wireless 360 Bluetooth 2.0 EDR ("Enhanced Data Rate") Certified ˇ Type II Peripheral Component Microchannel Interconnect Architecture (PCMCIA) card slot ˇ Optional Mobil Broadband TBU: 90W AC Adapter designed to plug into standard 110/220-volt home use Combined CD-ROM/DVD-ROM Drive: 8x-24x DVD+/-RW integrated Security: Integrated Smart Card Reader -Supporting Cards: ISO 7816 1/2/3/4 microprocessor cards (T=0, T=1), 3v & 5v, Java Card; -Certification: WHQL certified for Microsoft PC/SC, EMV Level 1, 9600 to 115200 BPS Passwords: Primary System; Administrator and Hard Drive
+
+Integrated Trusted Platform Module (TPM) 1.1b Optional Biometrics Reader
+
+USB Ports: 4-6 USB 2.0; 1 ESATA Supplemental Battery: 9-Cell/85 WHr Extra Battery Feature: Automobile Power Adapter designed to plug into a standard 12-volt accessory outlet Feature: Mix of Rolling Computer Carrying Cases and Backpacks Feature: USB Memory Key/Flash Drive 2gb minimum capacity
+
+Note: *Hard Drive Removal: OCC intends to provide the option of issuing laptop computers with a second hard drive to give employees a "personal use" environment separate from the primary business function. To support this initiative, laptop hard drives must be quickly, easily and safely interchangeable on the laptop. Ideally, no tools would be required.  
+
+ 
+
+Laptop Kit #2 ­ Small ( less than 4 lbs)
+Base Unit: Core 2 Duo Video: 12.1 to 13.5 WXGA+ LCD minimum 128MG Integrated Video including adjustable display backlight/intensity control to support viewing in both dim and sunlit conditions Memory: 8.0GB, Double Data Rate 2-667 SDRAM, 1-2 DIMMs Hard Drives: Two* 120-160GB Hard Drives, 9.5MM, 7200RPM; hardware hard disk encrypted or solid state technology hard drives Floppy Drive: None Audio: Built-in speaker with volume control, microphone input port and headphone output port Mouse: Integrated pointing devices, including centrally located touch pad and a pointing stick device External Mouse: Small hand held portable laptop USB device Primary Battery: Removable, rechargeable batteries that can easily be removed and installed without using a screwdriver or other tool minimum 9-cell/85 WHr Operating System: Capability to run either Windows XP Professional, SP2 or Windows Vista Business operating systems Integrated Communications: ˇ 10/100/1000 Gigabit Ethernet LAN port
+
+ˇ 56k v.92 Modem ˇ Wireless WLAN 802.11n ˇ Wireless 360 Bluetooth 2.0 EDR ("Enhanced Data Rate") Certified ˇ Type II Peripheral Component Microchannel Interconnect Architecture (PCMCIA) card slot ˇ Optional Mobil Broadband TBU: 90W AC Adapter designed to plug into standard 110/220-volt home use Combined CD-ROM/DVD-ROM Drive: 8x-16x DVD+/-RW may be integral to the laptop, modular or external Security: Integrated Smart Card Reader -Supporting Cards: ISO 7816 1/2/3/4 microprocessor cards (T=0, T=1), 3v & 5v, Java Card; -Certification: WHQL certified for Microsoft PC/SC, EMV Level 1, 9600 to 115200 BPS Passwords: Primary System; Administrator and Hard Drive Integrated Trusted Platform Module (TPM) 1.1b Optional Biometrics reader USB Ports: 2-4 USB 2.0; 1 ESATA Supplemental Battery: 9-Cell/85 WHr Extra Battery Feature: Automobile Power Adapter designed to plug into a standard 12-volt accessory outlet Feature: Mix of Rolling Computer Carrying Cases and Backpacks Feature: USB Memory Key/Flash Drive 2gb minimum capacity Note:
+
+*Hard Drive Removal: OCC intends to provide the option of issuing laptop computers with a second hard drive to give employees a "personal use" environment separate from the primary business function. To support this initiative, laptop hard drives must be quickly, easily and safely interchangeable on the laptop. Ideally, no tools would be required.  
+
+ 
+
+Laptop Kit #3 ­ Developer
+Base Unit: Core 2 Duo 2.80 GHz 6M L2 Cache, 1066MHz FSB Video: 15.4" Widescreen WUXGA LCD minimum including adjustable display backlight/intensity control to support viewing in both dim and sunlit conditions Graphics Card: 512MB
+
+Memory: 8.0GB, Double Data Rate 2-667 SDRAM, 1-2 DIMMs Hard Drives: 320GB Hard Drives, 7200RPM; hardware hard disk encrypted or solid state technology hard drives Floppy Drive: None Keyboard: Internal English Backlit Keyboard Audio: Built-in speaker with volume control, microphone input port and headphone output port Mouse: Integrated pointing devices, including centrally located touch pad and a pointing stick device External Mouse: Small hand held portable laptop USB device Camera: Integrated webcam with microphone Primary Battery: Removable, rechargeable batteries that can easily be removed and installed without using a screwdriver or other tool minimum 9-cell/85 WHr Operating System: Capability to run either Windows XP Professional, SP2 or Windows Vista Business operating systems Integrated Communications: ˇ 10/100/1000 Gigabit Ethernet LAN port ˇ 56k v.92 Modem ˇ Wireless WLAN 802.11n ˇ Wireless 360 Bluetooth 2.0 EDR ("Enhanced Data Rate") Certified ˇ Type II Peripheral Component Microchannel Interconnect Architecture (PCMCIA) card slot ˇ Optional Mobil Broadband TBU: 90W AC Adapter designed to plug into standard 110/220-volt home use Combined CD-ROM/DVD-ROM Drive: 8x-16x DVD+/-RW may be integral to the laptop, modular or external Security: Integrated Smart Card Reader -Supporting Cards: ISO 7816 1/2/3/4 microprocessor cards (T=0, T=1), 3v & 5v, Java Card; -Certification: WHQL certified for Microsoft PC/SC, EMV Level 1, 9600 to 115200 BPS Passwords: Primary System; Administrator and Hard Drive Integrated Trusted Platform Module (TPM) 1.1b Optional Biometrics reader USB Ports: 4-6 USB 2.0; 1 ESATA Supplemental Battery: 9-Cell/85 WHr Extra Battery Feature: Automobile Power Adapter designed to plug into a standard 12-volt accessory outlet
+
+Feature: Mix of Rolling Computer Carrying Cases and Backpacks Feature: USB Memory Key/Flash Drive 2gb minimum capacity Feature: Docking Station/Port Replicator
+
+ 
+
+Laptop Kit #4 ­ Mid sized Tablet (less than 6 lbs includes installed battery)
+Base Unit: Core 2 Duo Video: 14.1 WXGA+ LCD Minimum 128MG Discrete Video including adjustable display backlight/intensity control to support viewing in both dim and sunlit conditions Memory: 8.0GB, Double Data Rate 2-667 SDRAM, 1-2 DIMMs Hard Drives: Two* 120-160GB Hard Drives, 9.5MM, 7200RPM; hardware hard disk encrypted or solid state technology hard drives Audio: Built-in speaker with volume control, microphone input port and headphone output port Floppy Drive: None Mouse: Integrated pointing devices, including centrally located touch pad and a pointing stick device External Mouse: Small hand held portable laptop USB device Primary Battery: Removable, rechargeable batteries that can easily be removed and installed without using a screwdriver or other tool minimum 9-cell/85 WHr Operating System: Capability to run either Windows XP Professional, SP2 or Windows Vista Business operating systems Integrated Communications: ˇ 10/100/1000 Gigabit Ethernet LAN port ˇ 56k v.92 Modem ˇ Wireless WLAN 802.11n ˇ Wireless 360 Bluetooth 2.0 EDR ("Enhanced Data Rate") Certified ˇ Type II Peripheral Component Microchannel Interconnect Architecture (PCMCIA) card slot ˇ Optional Mobil Broadband TBU: 90W AC Adapter designed to plug into standard 110/220-volt home use Combined CD-ROM/DVD-ROM Drive: 8x-24x DVD+/-RW integrated Security: Integrated Smart Card Reader -Supporting Cards: ISO 7816 1/2/3/4 microprocessor cards (T=0, T=1), 3v & 5v, Java Card; -Certification: WHQL certified for Microsoft PC/SC, EMV Level 1, 9600 to 115200 BPS
+
+Passwords: Primary System; Administrator and Hard Drive Integrated Trusted Platform Module (TPM) 1.1b Optional Biometrics Reader
+
+USB Ports: 4-6 USB 2.0; 1 ESATA Supplemental Battery: 9-Cell/85 WHr Extra Battery Feature: Automobile Power Adapter designed to plug into a standard 12-volt accessory outlet Feature: Mix of Rolling Computer Carrying Cases and Backpacks Feature: USB Memory Key/Flash Drive 2gb minimum capacity
+
+Note: *Hard Drive Removal: OCC intends to provide the option of issuing laptop computers with a second hard drive to give employees a "personal use" environment separate from the primary business function. To support this initiative, laptop hard drives must be quickly, easily and safely interchangeable on the laptop. Ideally, no tools would be required.  
+
+ 
+
+Desktop/Mini Tower Kit #1
+Base Unit: Core 2 Duo 3.0GHz, 6M L2 Cache, 1333MHz FSB Video: 20" Widescreen, Flat Panel LCD Monitor Graphics Card: 256MB Memory: 4.0GB, Double Data Rate 2-667 SDRAM, 2 DIMMs Hard Drive: 250GB Hard Drives, 3.0Gb/s Audio: Built-in speakers with volume control, microphone input port and headphone output port Media Card Reader: Internal USB Maedia Card Reader Keyboard and Mouse: Optional Bluetooth Keyboard and mouse Operating System: Capability to run either Windows XP Professional, SP2 or Windows Vista Business operating systems Integrated Communications: ˇ ˇ ˇ ˇ 10/100/1000 Gigabit Ethernet LAN port 56k v.92 Modem Wireless WLAN 802.11n Wireless 360 Bluetooth 2.0 EDR ("Enhanced Data Rate") Certified
+
+ˇ Type II Peripheral Component Microchannel Interconnect Architecture (PCMCIA) card slot ˇ Optional Mobil Broadband Combined CD-ROM/DVD-ROM Drive: 8x-24x DVD+/-RW integrated Security: Integrated Smart Card Reader -Supporting Cards: ISO 7816 1/2/3/4 microprocessor cards (T=0, T=1), 3v & 5v, Java Card; -Certification: WHQL certified for Microsoft PC/SC, EMV Level 1, 9600 to 115200 BPS Passwords: Primary System; Administrator and Hard Drive Integrated Trusted Platform Module (TPM) 1.1b Optional Biometrics Reader
+
+USB Ports: 4-6 USB 2.0; 1 ESATA
+
+ 
+
+Desktop/Mini Tower Kit #2 - Developer
+Base Unit: Core 2 Duo 3.0GHz, 6M L2 Cache, 1333MHz FSB Video: 24" Widescreen, Flat Panel LCD Monitor Graphics Card: 512MB Memory: 4.0GB, Double Data Rate 2-800MHz SDRAM, 4 DIMMs Hard Drive: 250GB Hard Drives, 3.0Gb/s Audio: Built-in speakers with volume control, microphone input port and headphone output port Media Card Reader: Internal USB Maedia Card Reader Keyboard and Mouse: Optional Bluetooth Keyboard and mouse Operating System: Capability to run either Windows XP Professional, SP2 or Windows Vista Business operating systems Integrated Communications: ˇ 10/100/1000 Gigabit Ethernet LAN port ˇ 56k v.92 Modem ˇ Wireless WLAN 802.11n ˇ Wireless 360 Bluetooth 2.0 EDR ("Enhanced Data Rate") Certified ˇ Type II Peripheral Component Microchannel Interconnect Architecture (PCMCIA) card slot ˇ Optional Mobil Broadband Combined CD-ROM/DVD-ROM Drive: 8x-24x DVD+/-RW integrated
+
+Security: Integrated Smart Card Reader -Supporting Cards: ISO 7816 1/2/3/4 microprocessor cards (T=0, T=1), 3v & 5v, Java Card; -Certification: WHQL certified for Microsoft PC/SC, EMV Level 1, 9600 to 115200 BPS Passwords: Primary System; Administrator and Hard Drive Integrated Trusted Platform Module (TPM) 1.1b Optional Biometrics Reader
+
+USB Ports: 4-6 USB 2.0; 1 ESATA
+
+ 
+
+Communications Kit
+ 
+Wireless Broadband Router Wireless Access Point Portable Printer Portable Scanner
+
+Identity Management and Access Control Requirements
+The OCC manages and oversees networks, systems, and mission critical applications that rely on an Identity Management and Access Control (IdAM) framework that has evolved over to time to incorporate different automated and manual IdAM technologies and processes. Since the OCC is making its systems and information more readily available to its mobile workforce and regulatory partners and, at the same time, is trying to meet mandatory requirements for HSPD-12 compliance, its existing IdAM framework cannot deliver the more responsive, more secure, more integrated, and more transparent IT services being demanded from the Information Technology Services (ITS) division. Current State Currently the OCC primarily relies on its directory services for its IdAM requirements. The current Microsoft Active Directory (AD) implementation is used as the authoritative authentication, identification and authorization repository for all of OCC. The existing AD architecture has been extended to roughly 50% of all OCC systems and 100% of all user accounts. While AD serves OCC well by providing the repositories for identities and credentials, and can perform some identity verification functions, it lacks the integrated architecture and framework to provide capabilities such as workflow, role management, and policy management. This has, in turn, resulted in a number of security and compliance challenges that OCC cannot adequately meet without dedicated IdAM engineering experience, best in class tools, governance, and education.
+
+Risk Proposition GAO and the Department of the Treasury, including the Inspector General's Office, have identified a number of business and security risks associated with the lack of a fully integrated and modernized IdAM architecture. (Sources: GAO-06-543R, GAO-07-364, GAO-08-211, GAO-07-364, GAO-07-364, GAO-08-211, TIGTA 2007-20-161, as well as a sampling of HSPD-12 & IdAM deployments across the Treasury's various bureaus. Business Value and Security Drivers for IdAM Administrative Efficiencies ­ the increase in internal and external users and their associated roles and identities has stretched OCC's technical, administrative and engineering resources to their limit. The right IdAM solution will allow OCC to simplify administration, allow for the reuse of various IdAM attributes, and ultimately reduce administrative and engineering costs. Security Efficiencies ­ the need for a single, integrated and authoritative access control infrastructure is critical if OCC is to provide agile and responsive security services to its internal and external users. Additionally OCC, as well as the rest of the Department, are required to meet a broad spectrum of regulatory and compliance requirements associated with FISMA, various OMB circulars, and HSPD-12, which have resulted in a number of audit findings. IdAM is built upon, and will provide OCC, the needed infrastructure, governance, and administrative efficiencies needed to achieve full audit and regulatory compliance. However, and more importantly, IdAM bolsters access control and provides the transparency needed to show who has access to what, why they were given that access, who approved the access, and what they accessed. Productivity & Agility ­ the need for doing more with less, coupled with ever growing demands on IT to rapidly meet the needs of the business, not to mention regulatory and compliance pressures, such as HSPD-12, require OCC to be able to more flexible and agile in how identities are created, managed, and controlled while not slowing down business initiatives. Unified Architecture & Governance ­ the need for a single, consistent and unified architecture and governance process for IdAM will allow for the understanding, prioritizing and communicating the numerous business and regulatory needs from OCC's business units to IT. The ability to standup IdAM processes that are tied to a unified architecture and governance process will allow OCC to formally implement the robust control environment that will authorize the creation of the needed policies and standards, access model, procedures, relevant project plans, key performance metrics, and the capital cost controls required for investment in OCC's new IdAM toolset. IdAM Program Goals 1. Develop an IdAM program that ensures security of OCC assets and resources; 2. Establish a OCC-wide IdAM governance structure that coordinates processes and policies and ensures compliance;
+
+3. Increase assurance level of employer and contractor identities in accordance with federal mandates; 4. Develop a secure IdAM infrastructure that allows appropriate access to OCC buildings and systems; and 5. Enable security audits of employee and contractor access to OCC resources. Requirements The Offeror shall respond to the following: 1. Describe its approach to establishing a formal IdAM program for the OCC that provides the technical, regulatory, and operational capabilities needed to administer, authorize, authenticate, and audit the full lifecycle of a user's identity and access permissions. 2. Prepare a sample, actionable roadmap with associated technologies that demonstrates the approach to meet the OCC's security and compliance requirements in a cost-effective, business-focused manner. 3. Describe any engineering challenges and significant risks and how they will be managed or mitigated. 4. Discuss the leading practices, business drivers and associated metrics that are key to achieving the objectives of this scenario. 5. Prepare a detailed cost proposal that identifies the skill mix, rates, hours, and the overall projected cost for a Federal agency needing to build, implement and manage a HSPD-12 and OMB compliant IdAM best practice program.
+
+

@@ -1,0 +1,776 @@
+Attachment Number One ­ IT Security Clauses
+
+RFQ766932
+
+NIH Information and Physical Access Security Acquisition/Solicitation Language
+
+1.
+
+FEDERAL INFORMATION AND INFORMATION SYSTEMS SECURITY: Include when contractor/subcontractor personnel will (1) develop, (2) have the ability to access, or (3) host and/or maintain Federal information and/or Federal information system(s). For additional information, see: HHS Information Security Program Policy at: http://intranet.hhs.gov/infosec/docs/policies_guides/ISPP/Information_Secu rity_Program_Policy.pdf and HHS Contractor Oversight Guide: http://intranet.hhs.gov/it/cybersecurity/policies_by_document_type/index.html
+
+a.
+
+Information Type [X] Administrative, Management and Support Information: D.14.3 Health Care Administration Information Type Health Care Administration assures that federal health care resources are expended effectively to ensure quality, safety, and efficiency. This includes managing health care quality, cost, workload, utilization, and fraud/abuse efforts.
+
+[]
+
+Mission Based Information:
+
+b.
+
+Security Categories and Levels Confidentiality Integrity Availability Overall Level: [ X ] Low Level: [ ] Low Level: [ X ] Low Level: [ ] Low
+Page 1 of 4
+
+[ ] Moderate [ X ] Moderate [ ] Moderate [ X] Moderate
+
+[ ] High [ ] High [ ] High [ ] High
+
+Attachment Number One ­ IT Security Clauses
+
+RFQ766932
+
+c.
+
+Commitment to Protect Non-Public Departmental Information and Data 1. Contractor Agreement The Contractor, and any subcontractors performing under this contract, shall not release, publish, or disclose non-public Departmental information to unauthorized personnel, and shall protect such information in accordance with provisions of the following laws and any other pertinent laws and regulations governing the confidentiality of such information: - 18 U.S.C. 641 (Criminal Code: Public Money, Property or Records) - 18 U.S.C. 1905 (Criminal Code: Disclosure of Confidential Information) - Public Law 96-511 (Paperwork Reduction Act) 2. Contractor Employee Non-Disclosure Agreement Each employee, including subcontractors, having access to non-public Department information under this acquisition shall complete the Commitment to Protect NonPublic Information ­ Contractor Employee Agreement A copy of each signed and witnessed Non-Disclosure agreement shall be submitted to the Project Officer prior to performing any work under this acquisition.
+
+d.
+
+NIST SP 800-53 Assessment This contract requires the Contractor to develop, host, and/or maintain a Federal information system at the Contractor's or any subcontractors' facility. The Contractor shall submit an annual information security assessment using NIST SP 800-53, Recommended Security Controls for Federal Information Systems. The assessments shall be due annually within 30 days after the anniversary date of the contract, with the final assessment due at contract completion. The assessments shall be based on the Federal IT Security Assessment Framework and NIST SP 800-53 at: NIST SP 800-53, Rev. 3 http://csrc.nist.gov/publications/nistpubs/800-53-Rev3/sp800-53-rev3-final_updatederrata_05-01-2010.pdf Annex 1: Baseline Security Controls for Low-Impact Information Systems
+http://csrc.nist.gov/publications/nistpubs/800-53-Rev3/sp800-53-rev3-annex1-updt.pdf
+
+Annex 2: Baseline Security Controls for Moderate-Impact Information Systems
+http://csrc.nist.gov/publications/nistpubs/800-53-Rev3/sp800-53-rev3-annex2-updt.pdf
+
+Annex 3: Baseline Security Controls for High-Impact Information Systems
+http://csrc.nist.gov/publications/nistpubs/800-53-Rev3/sp800-53-rev3-annex3-updt.pdf
+
+The Contractor shall ensure that all of its subcontractors (at all tiers), where applicable, comply with the above reporting requirements.
+
+Page 2 of 4
+
+Attachment Number One ­ IT Security Clauses
+
+RFQ766932
+
+e.
+
+Information System Security Plan (ISSP) The Contractor shall update the acceptable ISSP submitted in their proposal every three years following the effect date of the contract or when a major modification has been made to its internal system. One copy each shall be submitted to the Project Officer and Contracting Officer.
+
+f.
+
+Data Encryption The following encryption requirements apply to all laptop computers containing HHS data at rest and/or HHS data in transit. The date by which the Contractor shall be in compliance will be set by the Project Officer, however, device encryption shall occur before any sensitive data is stored on the laptop computer/mobile device, or within 45 days of the start of the contract, whichever occurs first. 1. The Contractor shall secure all laptop computers used on behalf of the government using a Federal Information Processing Standard (FIPS) 140-2 compliant whole-disk encryption solution. The cryptographic module used by an encryption or other cryptographic product must be tested and validated under the Cryptographic Module Validation Program to confirm compliance with the requirements of FIPS PUB 140-2 (as amended). For additional information, refer to http://csrc.nist.gov/cryptval. The Contractor shall secure all mobile devices, including non-HHS laptops and portable media that contain sensitive HHS information by using a FIPS 140-2 compliant product. Data at rest includes all HHS data regardless of where it is stored. The Contractor shall use a FIPS 140-2 compliant key recovery mechanism so that encrypted information can be decrypted and accessed by authorized personnel. Use of encryption keys which are not recoverable by authorized personnel is prohibited. Key recovery is required by "OMB Guidance to Federal Agencies on Data Availability and Encryption", November 26, 2001, http://csrc.nist.gov/drivers/documents/ombencryption-guidance.pdf. Encryption key management shall comply with all HHS and NIH policies (http://intranet.hhs.gov/infosec/docs/guidance/hhs_standard_2007.pdf) and shall provide adequate protection to prevent unauthorized decryption of the information. All media used to store information shall be encrypted until it is sanitized or destroyed in accordance with NIH procedures. Contact the NIH Center for Information Technology for assistance (http://cit.nih.gov/ProductsAndServices/ServiceCatalog/Services.htm?Service=Media +Sanitization+Service).
+
+2.
+
+3.
+
+Page 3 of 4
+
+Attachment Number One ­ IT Security Clauses
+
+RFQ766932
+
+g.
+
+Special Information Security Requirements for Foreign Contractors/Subcontractors When foreign contractors/subcontractors perform work under this acquisition at non-US Federal Government facilities, provisions of HSPD-12 do NOT apply. Information System Security Plan The Offeror shall submit an Information System Security Plan (ISSP) with its technical proposal using the current template in Appendix A of NIST SP 800-18, Guide to Developing Security Plans for Federal Information Systems (http://csrc.nist.gov/publications/nistpubs/800-18-Rev1/sp800-18-Rev1-final.pdf). The details contained in the ISSP must be commensurate with the size and complexity of the contract requirements based on the System Categorization determined above in the subparagraph entitled Security Categories and Levels. The Offeror shall also identify measures to ensure subcontractor compliance with the ISSP. The ISSP will be evaluated by the Government for appropriateness and adequacy. The Contractor will be required to update and resubmit its ISSP every three years following the effective date of the contract or when a major modification has been made to its internal system.
+
+Page 4 of 4
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Government Product Accessibility Template for Software Development Services
+Summary
+Column one involves consideration of all the Sections of the Standard that might apply to any deliverable. The total number of provisions within each Section of the Standard is shown in parentheses. ˇ Column two identifies the total number of provisions that typically apply to a deliverable of this type. Some of these may not be features of the vendor's deliverable. Conversely, others not noted may be features of the vendor's deliverable. If the deliverable involves consideration of additional features, the accessibility of these features must also be considered. ˇ Column three is for general notes about the Sections of the Standard. Some apply to all deliverables and some are specific to the deliverable. ˇ Column four is a summary of the vendor's response to applicable provisions and additional deliverable features from the Sections of the Standard. ˇ Column five is where the vendor can note explanations for any of the preceding columns, e.g. there are differences between expected applicable provisions and actual product features. Total Total Number of Number of Supported CFR 1194 Standard Possible Notes Provisions Please explain Sections Applicable Fully Partial Not Provisions
+Section 1194.21 Software Applications and Operating Systems (12 provisions) Software Development involves consideration of software applications and operating systems.
+
+ˇ
+
+12
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Total Number of CFR 1194 Standard Possible Sections Applicable Provisions
+Section 1194.22 Webbased Internet and Intranet Information and Applications (16 provisions)
+
+Notes
+
+Total Number of Supported Provisions Fully Partial Not
+
+Please explain
+
+16
+
+Software Development involves consideration of web-based applications and information.
+
+Section 1194.23 Telecommunications Products (14 provisions) Section 1194.24 Video and Multi-media Products (5 provisions)
+
+0 Software Development involves consideration of video and multimedia productions.
+
+3
+
+Section 1194.25 SelfContained, Closed Products (13 provisions) Section 1194.26 Desktop and Portable Computers (4 provisions) Section 1194.31 Functional Performance Criteria (6 provisions)
+
+0
+
+0 Functional performance criteria always apply.
+
+6
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Total Number of CFR 1194 Standard Possible Sections Applicable Provisions
+Section 1194.41 Information, Documentation and Support (3 provisions)
+
+Notes
+
+Total Number of Supported Provisions Fully Partial Not
+
+Please explain
+
+3
+
+Software Development requires reports, documents, presentations, etc in electronic formats. These must be accessible.
+
+Subpart B -- Technical Standards
+Note: If there is a possibility that the provision applies, the default value is "Yes". ˇ ˇ ˇ ˇ ˇ Column one is the full text of the provision from the Standard. Column two documents the agency's accessibility requirement based on common characteristics of the EIT deliverable. Place a Yes or No in this column based on program need and actual characteristics of your expected deliverable (i.e., Is this provision seen as applicable to the expected deliverable?) Column three provides explanatory information about the provision to help both the agency in determining applicability and the vendor in providing accessibility information. Column four is for the vendor to check off whether the deliverable meets, partially meets or does not meet the specific provision. Column five is for the vendor to provide an explanation of how the deliverable meets or does not meet the specific provision. It is also an opportunity to explain why a deliverable does not have an applicable feature or why it has a feature that was not identified as applicable.
+
+Section 1194.21 Software applications and operating systems
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Provision Text
+(a) When software is designed to run on a system that has a keyboard, product functions shall be executable from a keyboard where the function itself or the result of performing a function can be discerned textually. (b) Applications shall not disrupt or disable activated features of other products that are identified as accessibility features, where those features are developed and documented according to industry standards. Applications also shall not disrupt or disable activated features of any operating system that are identified as accessibility features where the application programming interface for those accessibility features has been documented by the manufacturer of the operating system and is available to the product developer. (c) A well-defined on-screen indication of the current focus shall be provided that moves among interactive interface elements as the input focus changes. The focus shall be programmatically exposed so that Assistive Technology can track focus and focus changes.
+
+Applicable
+
+Notes
+This applies to QWERTY keyboards.
+
+How does the EIT meet this requirement?
+__Fully __Partially __No
+
+Please explain
+
+Yes
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Provision Text
+(d) Sufficient information about a user interface element including the identity, operation and state of the element shall be available to Assistive Technology. When an image represents a program element, the information conveyed by the image must also be available in text. (e) When bitmap images are used to identify controls, status indicators, or other programmatic elements, the meaning assigned to those images shall be consistent throughout an application's performance. (f) Textual information shall be provided through operating system functions for displaying text. The minimum information that shall be made available is text content, text input caret location, and text attributes. (g) Applications shall not override user selected contrast and color selections and other individual display attributes. (h) When animation is displayed, the information shall be displayable in at least one non-animated presentation mode at the option of the user.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Please explain
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+In this requirement, the term "bitmap" refers to a broad number of image formats, such as .bmp, .gif, .jpeg, .tif and .svg.
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Yes Self-scrolling and moving text are considered animation.
+
+__Fully __Partially __No __Fully __Partially __No
+
+Yes
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Provision Text
+(i) Color coding shall not be used as the only means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (j) When a product permits a user to adjust color and contrast settings, a variety of color selections capable of producing a range of contrast levels shall be provided.
+
+Applicable
+
+Notes
+This requirement is also addressed in provision 1194.25(g).
+
+How does the EIT meet this requirement?
+__Fully __Partially __No
+
+Please explain
+
+Yes
+
+See www.lighthouse.org/color _contrast.htm Yes This requirement is also addressed in provision 1194.25(h). Other elements include turning graphics on and off or changing between images. This requirement is also addressed in provisions 1194.22(j) and 1194.25(i). This requirement is also addressed in provision 1194.22(n). Yes
+
+__Fully __Partially __No
+
+(k) Software shall not use flashing or blinking text, objects, or other elements having a flash or blink frequency greater than 2 Hz and lower than 55 Hz.
+
+Yes
+
+__Fully __Partially __No
+
+(l) When electronic forms are used, the form shall allow people using Assistive Technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues.
+
+__Fully __Partially __No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Section 1194.22 Web-based intranet and Internet information and applications
+Provision Text
+(a) A text equivalent for every nontext element shall be provided (e.g., via "alt", "longdesc", or in element content). (b) Equivalent alternatives for any multimedia presentation shall be synchronized with the presentation. (c) Web pages shall be designed so that all information conveyed with color is also available without color, for example from context or markup. (d) Documents shall be organized so they are readable without requiring an associated style sheet. (e) Redundant text links shall be provided for each active region of a server-side image map. (f) Client-side image maps shall be provided instead of server-side image maps except where the regions cannot be defined with an available geometric shape. (g) Row and column headers shall be identified for data tables.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No __Fully __Partially __No __Fully __Partially __No __Fully __Partially __No __Fully __Partially __No
+
+Please explain
+
+Yes
+
+Yes
+
+Yes
+
+Yes
+
+Yes
+
+Yes
+
+__Fully __Partially __No This requirement does not apply to tables used strictly for layout. __Fully __Partially __No
+
+Yes
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Provision Text
+(h) Markup shall be used to associate data cells and header cells for data tables that have two or more logical levels of row or column headers. (i) Frames shall be titled with text that facilitates frame identification and navigation (j) Pages shall be designed to avoid causing the screen to flicker with a frequency greater than 2 Hz and lower than 55 Hz. (k) A text-only page, with equivalent information or functionality, shall be provided to make a web site comply with the provisions of this part, when compliance cannot be accomplished in any other way. The content of the text-only page shall be updated whenever the primary page changes. (l) When pages utilize scripting languages to display content, or to create interface elements, the information provided by the script shall be identified with functional text that can be read by Assistive Technology.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No __Fully __Partially __No
+
+Please explain
+
+Yes
+
+Yes This requirement is also addressed in provisions 1194.21(k) and 1194.25(i).
+
+Yes
+
+__Fully __Partially __No
+
+This should only be used as a last resort. Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Provision Text
+(m) When a web page requires that an applet, plug-in or other application be present on the client system to interpret page content, the page must provide a link to a plug-in or applet that complies with Section1194.21(a) through (l). (n) When electronic forms are designed to be completed on-line, the form shall allow people using Assistive Technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues. (o) A method shall be provided that permits users to skip repetitive navigation links. (p) When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Please explain
+
+Yes
+
+__Fully __Partially __No
+
+This requirement is also addressed in provision 1194.21(l). Yes
+
+__Fully __Partially __No
+
+Yes This requirement is also addressed in provision 1194.25(b).
+
+__Fully __Partially __No __Fully __Partially __No
+
+Yes
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Section 1194.23 Telecommunications products
+Provision Text
+(a) Telecommunications products or systems which provide a function allowing voice communication and which do not themselves provide a TTY functionality shall provide a standard non-acoustic connection point for TTYs. Microphones shall be capable of being turned on and off to allow the user to intermix speech with TTY use. (b) Telecommunications products which include voice communication functionality shall support all commonly used cross-manufacturer non-proprietary standard TTY signal protocols. (c) Voice mail, auto-attendant, and interactive voice response telecommunications systems shall be usable by TTY users with their TTYs. (d) Voice mail, messaging, autoattendant, and interactive voice response telecommunications systems that require a response from a user within a time interval, shall give an alert when the time interval is about to run out, and shall provide sufficient time for the user to indicate more time is required.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Please explain
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Provision Text
+(e) Where provided, caller identification and similar telecommunications functions shall also be available for users of TTYs, and for users who cannot see displays. (f) For transmitted voice signals, telecommunications products shall provide a gain adjustable up to a minimum of 20 dB. For incremental volume control, at least one intermediate step of 12 dB of gain shall be provided. (g) If the telecommunications product allows a user to adjust the receive volume, a function shall be provided to automatically reset the volume to the default level after every use. (h) Where a telecommunications product delivers output by an audio transducer which is normally held up to the ear, a means for effective magnetic wireless coupling to hearing technologies shall be provided.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No
+
+Please explain
+
+No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Provision Text
+(i) Interference to hearing technologies (including hearing aids, cochlear implants, and assistive listening devices) shall be reduced to the lowest possible level that allows a user of hearing technologies to utilize the telecommunications product. (j) Products that transmit or conduct information or communication, shall pass through cross-manufacturer, non-proprietary, industry-standard codes, translation protocols, formats or other information necessary to provide the information or communication in a usable format. Technologies which use encoding, signal compression, format transformation, or similar techniques shall not remove information needed for access or shall restore it upon delivery. (k)(1) Products which have mechanically operated controls or keys shall comply with the following: Controls and Keys shall be tactilely discernible without activating the controls or keys.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Please explain
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Provision Text
+(k)(2) Products which have mechanically operated controls or keys shall comply with the following: Controls and Keys shall be operable with one hand and shall not require tight grasping, pinching, twisting of the wrist. The force required to activate controls and keys shall be 5 lbs. (22.2N) maximum. (k)(3) Products which have mechanically operated controls or keys shall comply with the following: If key repeat is supported, the delay before repeat shall be adjustable to at least 2 seconds. Key repeat rate shall be adjustable to 2 seconds per character. (k)(4) Products which have mechanically operated controls or keys shall comply with the following: The status of all locking or toggle controls or keys shall be visually discernible, and discernible either through touch or sound.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Please explain
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Section 1194.24 Video and multimedia products
+Provision Text
+(a) All analog television displays 13 inches and larger, and computer equipment that involves consideration of analog television receiver or display circuitry, shall be equipped with caption decoder circuitry which appropriately receives, decodes, and displays closed captions from broadcast, cable, video-tape, and DVD signals. As soon as practicable, but not later than July 1, 2002, widescreen digital television (DTV) displays measuring at least 7.8 inches vertically, DTV sets with conventional displays measuring at least 13 inches vertically, and stand-alone DTV tuners, whether or not they are marketed with display screens, and computer equipment that involves consideration of DTV receiver or display circuitry, shall be equipped with caption decoder circuitry which appropriately receives, decodes, and displays closed captions from broadcast, cable, videotape, and DVD signals. (b) Television tuners, including tuner cards for use in computers, shall be equipped with secondary audio program playback circuitry.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Please explain
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Provision Text
+(c) All training and informational video and multimedia productions which support the agency's mission, regardless of format, that contain speech or other audio information necessary for the comprehension of the content, shall be open or closed captioned. (d) All training and informational video and multimedia productions which support the agency's mission, regardless of format, that contain visual information necessary for the comprehension of the content, shall be audio described. (e) Display or presentation of alternate text presentation or audio descriptions shall be userselectable unless permanent.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Please explain
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Section 1194.25 Self-contained, closed products
+Provision Text
+(a) Self contained products shall be usable by people with disabilities without requiring an end-user to attach Assistive Technology to the product. Personal headsets for private listening are not Assistive Technology. (b) When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required. (c) Where a product utilizes touchscreens or contact-sensitive controls, an input method shall be provided that complies with Section1194.23 (k) (1) through (4). (d) When biometric forms of user identification or control are used, an alternative form of identification or activation, which does not require the user to possess particular biological characteristics, shall also be provided. (e) When products provide auditory output, the audio signal shall be provided at a standard signal level through an industry standard connector that will allow for private listening. The product must provide the ability to interrupt, pause, and restart the audio at anytime.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Please explain
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No __Fully __Partially __No
+
+No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Provision Text
+(f) When products deliver voice output in a public area, incremental volume control shall be provided with output amplification up to a level of at least 65 dB. Where the ambient noise level of the environment is above 45 dB, a volume gain of at least 20 dB above the ambient level shall be user selectable. A function shall be provided to automatically reset the volume to the default level after every use. (g) Color coding shall not be used as the only means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (h) When a product permits a user to adjust color and contrast settings, a range of color selections capable of producing a variety of contrast levels shall be provided. (i) Products shall be designed to avoid causing the screen to flicker with a frequency greater than 2 Hz and lower than 55 Hz.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Please explain
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No __Fully __Partially __No
+
+No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Provision Text
+(j) (1) Products which are freestanding, nonportable, and intended to be used in one location and which have operable controls shall comply with the following: The position of any operable control shall be determined with respect to a vertical plane, which is 48 inches in length, centered on the operable control, and at the maximum protrusion of the product within the 48 inch length on products which are freestanding, non-portable, and intended to be used in one location and which have operable controls. (j)(2) Products which are freestanding, nonportable, and intended to be used in one location and which have operable controls shall comply with the following: Where any operable control is 10 inches or less behind the reference plane, the height shall be 54 inches maximum and 15 inches minimum above the floor.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Please explain
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Provision Text
+(j)(3) Products which are freestanding, nonportable, and intended to be used in one location and which have operable controls shall comply with the following: Where any operable control is more than 10 inches and not more than 24 inches behind the reference plane, the height shall be 40 inches maximum and 15 inches minimum above the floor. (j)(4) Products which are freestanding, nonportable, and intended to be used in one location and which have operable controls shall comply with the following: Operable controls shall not be more than 24 inches behind the reference plane.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Please explain
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Section 1194.26 Desktop and portable computers
+Provision Text
+a) All mechanically operated controls and keys shall comply with Section1194.23 (k) (1) through (4).
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No
+
+Please explain
+
+No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Provision Text
+(b) If a product utilizes touchscreens or touch-operated controls, an input method shall be provided that complies with Section1194.23 (k) (1) through (4). (c) When biometric forms of user identification or control are used, an alternative form of identification or activation, which does not require the user to possess particular biological characteristics, shall also be provided. (d) Where provided, at least one of each type of expansion slots, ports and connectors shall comply with publicly available industry standards.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No
+
+Please explain
+
+No
+
+No
+
+__Fully __Partially __No
+
+No
+
+__Fully __Partially __No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Subpart C -- Functional Performance Criteria
+Section 1194.31 Functional performance criteria
+Provision Text
+(a) At least one mode of operation and information retrieval that does not require user vision shall be provided, or support for Assistive Technology used by people who are blind or visually impaired shall be provided. (b) At least one mode of operation and information retrieval that does not require visual acuity greater than 20/70 shall be provided in audio and enlarged print output working together or independently, or support for Assistive Technology used by people who are visually impaired shall be provided. (c) At least one mode of operation and information retrieval that does not require user hearing shall be provided, or support for Assistive Technology used by people who are deaf or hard of hearing shall be provided.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Please explain
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Provision Text
+(d) Where audio information is important for the use of a product, at least one mode of operation and information retrieval shall be provided in an enhanced auditory fashion, or support for assistive hearing devices shall be provided. (e) At least one mode of operation and information retrieval that does not require user speech shall be provided, or support for Assistive Technology used by people with disabilities shall be provided. (f) At least one mode of operation and information retrieval that does not require fine motor control or simultaneous actions and that is operable with limited reach and strength shall be provided.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+
+Please explain
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+Attachment Number Two ­ GPAT
+
+RFQ 766932
+
+Subpart D -- Information, Documentation, and Support
+Section 1194.41 Information, documentation, and support
+Provision Text
+(a) Product support documentation provided to end-users shall be made available in alternate formats upon request, at no additional charge. (b) End-users shall have access to a description of the accessibility and compatibility features of products in alternate formats or alternate methods upon request, at no additional charge. (c) Support services for products shall accommodate the communication needs of end-users with disabilities.
+
+Applicable
+
+Notes
+
+How does the EIT meet this requirement?
+__Fully __Partially __No
+
+Please explain
+
+Yes
+
+Yes
+
+__Fully __Partially __No
+
+Yes
+
+__Fully __Partially __No
+
+THIS ANNOUNCEMENT CONSTITUTES THE ONLY SOLICITATION AND A SEPARATE SOLICITATION WILL NOT BE ISSUED. This is a combined synopsis/solicitation for commercial supplies prepared in accordance with the format in Subpart 12.6, as supplemented with additional information included in this notice. The solicitation documents and incorporated provisions and clauses are those in effect through Federal Acquisition Circular (FAC) 2005-68 effective June 26, 2013. This acquisition will be processed under FAR Part 12, Simplified Acquisition Procedures (SAP), Acquisition of Commercial Items, and is unrestricted. The Solicitation Number for this acquisition is P13-001929 and is being issued as a Request for Quotation (RFQ). The North American Industry Classification System (NAICS) Code for this procurement is 541511 and the Small Business Size Standard is 25.5 million dollars.. BACKGROUND The Clinical Center (CC) is the clinical research facility of the National Institutes of Health (NIH) and serves as the premier center for clinical research. It provides patient care, services, training, and the environment in which NIH clinicians-scientists translate emerging knowledge into the better understanding, direction, treatment, and prevention of human diseases. The CC, through NIH's Intramural Research Program, provides patient support services for the 15 NIH Institutes that admit patients and health volunteers for the purpose of participating in the more than 1,000 intramural biomedical research studies that cover a wide spectrum of common and rare diseases. More information about the NIH Clinical Center may be found at http://clinicalcenter.nih.gov. The CC Pharmacy employees approximately 45 staff inpatient and out patient pharmacists and approximately 35 staff inpatient and out patient pharmacy technicians. The inpatient section is further divided into Unit Dose and IV Additive Unit. The pharmacy is open 24 hours a day, seven days a week. Pharmacists and pharmacy technicians cover approximately 30 or more different shifts during this time period. Pharmacy staff is scheduled by several supervisors in eight week blocks. STATEMENT OF OBJECTIVES The purpose of this requirement is to procure a web based program to schedule Clinical Center Pharmacy staff, specifically Pharmacist and Pharmacy Technicians. STATEMENT OF WORK The CC Pharmacy needs a continuing scheduling tool that streamlines creating, modifying, issuing, and communicating schedules with the staff. The scheduling software shall provide the following features to meet the Pharmacy's needs.           Have the ability to do auto-generation of skill, preference, and shift specific schedules Manage costs by averting over or under scheduling of staff Be able to track labor costs Reduces workload by allowing staff to send staffing requests online Staff can access and managing schedule remotely online Aligning staff needs with personal schedules Aids in the preparation of leave, labor costs, safety, and accountability reports that are easily generated from accumulated data generated for individuals, shifts, and departments Web-based program requiring no hardware or software installation Click and drag editing features Built in rotations and templates
+
+Revised 06-18-2013
+
+  
+
+Inclusion of set shifts and cycles, taking into account unique needs such as double shifts, preferred consecutive scheduling patterns, training, night/day shifts, and weekend rotations Report time span is flexible and will allow users to view many weeks of schedules with one quick step Program can be immediately customized for current and future pharmacy staffing needs
+
+PERIOD OF PERFORMANCE Base Year ­ August 1, 2013 through July 31, 2014 Option Year One ­ August 1, 2014 through July 31, 2015 Option Year Two ­ August 1, 2015 through July 31, 2016 Option Year Three ­ August 1, 2016 through July 31, 2017 Option Year Four ­ August 1, 2017 through July 31, 2018
+
+TECHNICAL EVALUATION ELEMENTS In addendum to FAR 52.212-2; the following factors shall be used to evaluate offers: Mandatory Evaluation Criteria All web based programs must be Section 508 compliant. Evaluation Criteria Points Possible
+
+Criteria One - Technical Approach.....................................................90 The Offerors proposal clearly demonstrates technical understanding of the tasks described in the SOW and presents an approach to the tasks that the meets the governments needs as follows: a) Ability to highlight duplicate or missing shifts .............................15 points b) Ability to build future schedules up to two (2) years in advance with known future events .............................................................................15 points c) Online employee access in order to submit time off request, view staffing schedules and confirm or communicate shift changes .......................................15 points d) Email notification when schedule changes (i.e. shift swaps) are requested .........................................................................15 points e) Reporting function for historical data ........................................10 points f) Web based access with single sign on ........................................10 points g) Multiple schedule views available for the scheduler ............................10 points Criteria Two - Past Performance......................................................20 The Government shall evaluate the Offerors past performance and will take into account past performance information regarding predecessor companies, key personnel who have relevant experience or subcontractors that will perform major or critical aspects of the requirement when such information is relevant to the acquisition.
+
+2
+
+Revised 06-20-2013
+
+The Government will conduct a performance risk evaluation based upon the past performance of the Offerors and their proposed major subcontractors as it relates to the probability of successfully performing the solicitation requirements. In conducting the performance risk evaluation, the Government may use data provided by the Offeror and data obtained from other sources including the Contractor Performance Assessment Reporting System (CPARS). The Government may elect to consider data obtained from other sources that it considers current and accurate. Criteria Three - Cost.....................................................................10 All proposals determined to be technically acceptable will then be evaluated for cost according to the following parameters. The prices offered in each proposal shall be totaled and compared. Points shall be awarded according to the following formula: Lowest price × # Available Points = Cost Points Assigned .......................................................................... Offeror's price .................................................................................................................................................. The government reserves the right to deduct points if the proposed pricing method for "other expenses" is adjudged to be excessive. This deduction will not exceed a total of 10 points. It is noted that points are merely a guide for source selection and the mathematical outcome is not necessarily determinative of the awardee. Total Possible Points...................................................................120 The following Provisions and Clauses apply: FAR 52.212-1 Instruction to Offerors-/Commercial Items (FEB 2012); FAR 52.212-2 Evaluation ­ Commercial Items (Jan 1999) (Additional Evaluation criteria set forth in the combined synopsis/solicitation; FAR 212-3, Offeror Representations and Certifications ­ Commercial Items (DEC 2012); FAR 52.212-4 Contract Terms and Conditions Commercial Items (FEB 2012), FAR 52.217-8 Option To Extend Supplies (NOV 1999); FAR 219-6, FAR 52.222-3 Convict Labor (JUN 2003); FAR 52.223-6 Drug Free Workplace (May 2001), FAR 52.227-14 RIGHTS IN DATA ­ General (Dec 2007) and FAR 52.232-33 Payment by Electronic Funds Transfer ­ Central Contractor Registration (OCT 2003). The Contractor shall comply with the following clauses, which are incorporated in this contract in full text, to implement provisions of law or Executive orders applicable to acquisitions of commercial items. 52.217-5 Evaluation of Options (July 1990) Except when it is determined in accordance with FAR 17.206(b) not to be in the Government's best interests, the Government will evaluate offers for award purposes by adding the total price for all options to the total price for the basic requirement. Evaluation of options will not obligate the Government to exercise the option(s). (End of clause)
+3
+
+Revised 06-20-2013
+
+52.217-8 Option to Extend Services, (NOV 1999) The Government may require continued performance of any services within the limits and at the rates specified in the contract. These rates may be adjusted only as a result of revisions to prevailing labor rates provided by the Secretary of Labor. The option provision may be exercised more than once, but the total extension of performance hereunder shall not exceed 6 months. The Contracting Officer may exercise the option by written notice to the Contractor within 60 days from the expiration of the contract. (End of clause) 52.217-9 Option to Extend the Term of the Contract, (MAR 2000) (a) The Government may extend the term of this contract by written notice to the Contractor within the current period of performance; provided that the Government gives the Contractor a preliminary written notice of its intent to extend at least 30 days before the contract expires. The preliminary notice does not commit the Government to an extension. (b) If the Government exercises this option, the extended contract shall be considered to include this option clause. (c) The total duration of this contract, including the exercise of any options under this clause, shall not exceed 60 months. (End of clause) Contracting Officer's Representative The following Contracting Officer Representative (COR) will represent the Government for the purpose of this contract: To be determined at the time of award. The COR is responsible for: (1) monitoring the Contractor's technical progress, including the surveillance and assessment of performance and recommending to the Contracting Officer changes in requirements; (2) interpreting the statement of work and any other technical performance requirements; (3) performing technical evaluation as required; (4) performing technical inspections and acceptances required by this contract; and (5) assisting in the resolution of technical problems encountered during performance. The Contracting Officer is the only person with authority to act as agent of the Government under this contract. Only the Contracting Officer has authority to: (1) direct or negotiate any changes in the statement of work; (2) modify or extend the period of performance; (3) change the delivery schedule; (4) authorize reimbursement to the Contractor for any costs incurred during the performance of this contract; or (5) otherwise change any terms and conditions of this contract. The Government may unilaterally change it's COR designation.
+
+4
+
+Revised 06-20-2013
+
+Security Clauses Please refer to attachment number one (1) to this solicitation for the specific security clauses, Section 508 requirements, and Attachment number two (2) for the Government Product Accessibility Template (GPAT). Section 508 Compliance Section 508 Program Need Requirements for accessibility based on Section 508 of the Rehabilitation Act of 1973 (29 U.S.C. 794d) are determined to be relevant for the following program need: "Web Applications." Section 508 Deliverable Requirements Technical standards from 36 CFR part 1194 Subpart B have been determined to apply to this acquisition. Solicitation respondents must describe how their proposed Electronic and Information Technology (EIT) deliverables meet at least those technical provisions identified as applicable in the attached Government Product/Service Accessibility Template (GPAT). Functional performance criteria from 36 CFR part 1194 Subpart C have been determined to apply to this acquisition. Solicitation respondents must describe how their proposed Electronic and Information Technology (EIT) deliverables meet at least those functional performance criteria identified as applicable in the attached Government Product/Service Accessibility Template (GPAT). Information, documentation, and support requirements from 36 CFR part 1194 Subpart D have been determined to apply to this acquisition. Solicitation respondents must describe how the information, documentation, and support proposed for Web Application deliverables meet at least those information, documentation, and support requirements identified as applicable in the attached Government Product/Service Accessibility Template (GPAT). Section 508 Evaluation Factors Responses to this solicitation will only be considered for award after it has been determined that the proposal adequately addresses the requirements for Section 508. Only proposals which contain adequate information to document their responsiveness to the Section 508 requirements (e.g. a completed GPAT, VPAT or equivalent and supporting documentation) will be eligible for any additional merit consideration. Section 508 Acceptance Criteria Web Applications delivered as a result of this solicitation will be accepted based in part on satisfaction of identified Section 508 requirements for accessibility. Web applications delivered must include a completed GPAT, a sample of which is included as a part of this solicitation. Web Application outputs/deliverables should meet applicable accessibility requirements and should not adversely affect accessibility features of existing EIT technologies.
+
+5
+
+Revised 06-20-2013
+
+Quotation Submission Interested Offerors may submit quotations electronically to this notice no later than 10:00 AM. (EST) July 20, 2013. Questions regarding this combined synopsis/solicitation must be received in writing by this office no later than July 15, 2013. Offerors may submit a completed FAR 52.212-3, or cite their Representations and Certifications on SAM.gov. The Government intends to make a single award based upon best value to the Government, technical and price factors considered. The anticipated award date for this requirement shall be on or before July 22, 2013. Facsimile submissions are not authorized and collect calls will not be accepted. Submit offers to Mr. Brian Lind at the address listed in this solicitation. Please reference the solicitation number P13-005595 on your offer. Requests for information concerning this requirement are to be addressed to Brian Lind via e-mail only to lindbj@cc.nih.gov prior to the closing date.
+
+6
+
+Revised 06-20-2013
+
+

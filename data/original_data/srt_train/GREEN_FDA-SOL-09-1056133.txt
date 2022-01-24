@@ -1,0 +1,1208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FSubcontractPlan-FY08.doc%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us"/><script type="text/javascript">url="http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FSubcontractPlan-FY08.doc%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>
+STATEMENT OF WORK
+
+
+Title:
+
+Technical Support for Operation and Maintenance of Advanced Signal Detection Software for the Food and Drug Administration (FDA), Center for
+Food Safety and Applied Nutrition (CFSAN) Adverse Event Reporting System (CAERS).
+
+I. Introduction:
+
+The Statutory provisions of the Federal Food, Drug, and Cosmetic Act as amended by the Food and Drug Administration Modernization Act (FDAMA),
+Section 406), Title 21 Code of Federal Regulations, Section 310.305, and Title 21 Code of Federal Regulations, Section 314.80 require FDA to
+ensure the safety and effectiveness of regulated marketed products.  This document defines the technical services that shall be delivered to
+support the software that can detect potential food or cosmetic safety signals in the Center for Food Safety and Applied Nutrition Adverse Event
+Reporting System (CAERS) database.
+
+
+II. Background
+
+The detection of safety signals in data from adverse event reports is an important challenge to the FDA and essential for good vigilance; a key
+component of FDA’s mission.   The FDA is interested in techniques and tools that are capable of generating, in an automated, reproducible and
+systematic way, a set of important and useful safety signals in a graphical illustration of the data that can serve as valuable input to the
+overall process of food and cosmetic safety monitoring and review. Safety signals are individual food or cosmetic adverse event combinations
+that occur in a higher than expected proportion. These signals need to be carefully investigated to understand if regulatory action needs to be
+taken.
+
+The CAERS database is one resource utilized by the FDA for identifying adverse events associated with foods and cosmetics marketed in the United
+States. CAERS was originally created in 2003 and contains approximately 50,000 adverse event reports. Reports of adverse events are entered into
+CAERS and MedDRA (Medical Dictionary for Regulatory Activities) coding terminology is applied to the verbatim reports of illness and injury.
+
+For managing CAERS signals of potential safety problems, a “signal management” capability shall be provided so that differences in signal
+importance and relevance can be accounted for, and documented, so that meaningful priorities can be established for signal evaluation and follow-
+up. The term “signal management” in this Statement of Work (SOW) refers to the software capability to detect potential signals of adverse events
+related to reports about foods or cosmetics in CAERS. In this SOW, the term “signal” refers to an excess of adverse events compared to what
+would be expected to be associated with a product's use. The “management” aspect of signal management refers to the software capability that
+enables users to appropriately prioritize the review of potential food and cosmetic safety problems.  Given the size of this database and the
+number of new adverse event reports received by the FDA each day, it is imperative that the signal management software be able to demonstrate a
+scientifically sound method for balancing sensitivity and specificity in detecting signals in the CAERS database.  In other words, the software
+must demonstrate the ability to minimize the over-detection of “false positive” signals while appropriately flagging “true positive” signals.
+
+Currently safety evaluators at FDA CDER use Empirica Signal software system (copyright 2000-2008 Phase Forward Incorporated) to detect and
+analyze spontaneous reports of adverse event reports to identify unexpectedly frequent combinations of regulated products and events, and to
+organize, identify, and interpret patterns in the data.  FDA CFSAN also had a signal detection contract with Phase Forward.  Prior to the
+expiration of the contract with CFSAN in the fall of 2008, Phase Forward placed a copy of CAERS data on CFSAN server number FDSWA093 (the CAERS
+data on FDSWA093 has not been refreshed since the contract expired).  Currently CFSAN statisticians can access Empirica Signal software using
+the password protected link but there is no technical support or training for this software.  If FDA awards a contract to Phase Forward the
+signal detection software will be updated to the current version and used to detect potential food or cosmetic safety signals in the CAERS
+database and Phase Forward will provide technical support and services for the operation and maintenance of the signal detection software.  If
+the FDA awards a contract to another contractor, that contractor shall be responsible for providing their own advanced signal detection software
+that can detect potential food or cosmetic safety signals in the FDA CFSAN CAERS database, in addition to providing technical support and
+services for the operation and maintenance of said software.  FDA will not provide access to the Empirica Signal software as a government
+furnished property.
+
+III. Objectives
+
+The Office of Information Management (OIM) requires the services of a Contractor to create an environment where CFSAN statisticians can mine
+CAERS data independent of the current production system. This environment would also be used to correct product code errors and thus used to
+update the current production CAERS database.  Specifically, the Contractor shall:
+
+    • provide and host easy-to-use customizable signal detection software for data mining by multiple users that is capable of detecting,
+      quantitatively profiling, graphing, documenting, and tracking safety signals, products of interest, and safety related issues in the CAERS
+      database. The software shall allow users to identify safety questions, establish a choice of standards for identifying and characterizing
+      safety signals, create custom ad-hoc reports, and design reports for others using CAERS data.  FDA will not purchase the software.
+
+
+    • obtain services for the operation and maintenance of software designed to detect signals of potential food and cosmetic safety problems,
+
+
+    • provide a signal annotation feature that allows users to differentiate signals that are disease related,
+
+    • develop a signal annotation feature that allows users to recognize duplicates reports, and/or reports that are linked in some way e.g.
+      related individuals,
+
+
+    • develop alternative data mining techniques to determine approaches most productive for use in generation of safety signals in CAERS data
+      and provide application of statistical tools such as time series analysis and logistic regression,
+
+    • identify and perform CAERS data cleaning needs with respect to product and ingredient names and possible product hierarchies; establish
+      product hierarchies depending on proposed solutions,  and
+
+
+    • provide a flexible feature for count data.
+
+IV. Scope
+
+The specific system requirements include:
+
+    • A system that allows CFSAN statisticians to mine CAERS data independent of the current production system.
+    • A system that allows product code corrections.
+    • A system that can merge with the current production CAERS database with no negative impact to the CAERS data.
+    • A system that can be merged with a larger Agency wide adverse event reporting database even as FDA updates its current adverse event
+      system.
+
+
+
+V. Description of Work/Statement of Work (base year)
+
+      A. Performance Requirements and Standards
+
+      1. Project Management
+
+           a. Performance Requirement
+
+
+           The Contractor shall work with the FDA Project Officer to establish plans and a set of actions to operate and maintain the software
+           in order to provide a signal management capability.
+
+
+           The Contractor shall be responsible for the following project management activities as required by the HHS Enterprise Performance
+           Lifecycle (EPLC), http://www.hhs.gov/ocio/eplc/index.html:
+
+
+                 i)    planning and organizing work to deliver required results,
+
+
+                 ii)   providing appropriate resources to complete the work within agreed upon timeframes and providing appropriate guidance and
+                 leadership to those resources,
+
+
+                 iii)  managing change requests
+
+
+                 iv)  working collaboratively with the FDA Project Officer to provide overall management of the project.
+
+           b. Performance Standard
+
+
+           The contractor shall provide a Monthly Status Report to be delivered on the fifth business day of each month and thereafter. Delivery
+           of EPLC required artifacts as defined under the Project Management Plan (PMP) and associated plans.
+
+
+           c. Quality Assurance Plan
+
+
+           FDA Project Officer will review the submitted monthly status reports.
+
+
+      2. Data Cleaning, Coding, and Merging
+
+           a. Performance Requirement
+
+
+           The Contractor shall develop a “standard product name dictionary”, within 180 days after the contact is awarded, to implement a
+           strategy for standardizing names of products and ingredients, as reported by cases, and make a clean data set that can be used for
+           signal detection.  The Contractor shall make available a snapshot of the standard product name data to the CFSAN staff bi-weekly (26
+           times per year) signal detection analysis.  The Contractor shall develop and implement a strategy to update the standard product name
+           data to include corrections, custom terms, product categories, signal scores, etc. identified as a result of signal detection
+           analysis.
+
+
+           b. Performance Standard
+
+           The contractor will identify CAERS data cleaning needs with respect to product and ingredient names; provide product coding and clean-
+           up; develop and provide a “standardized-product-name dictionary”, implement a strategy for standardizing names of products and
+           ingredients, as reported by cases, and make a clean data set that can be used for signal detection;  provide a snapshot of the
+           standard product named data to the CFSAN staff bi-weekly (26 times per year) signal detection analysis; develop and implement a
+           strategy to update the standard product name data to include corrections, custom terms, product categories, signal scores, etc.
+           identified as a result of signal detection analysis with the original data (e.g. implement a system to merge corrections with the
+           current production CAERS database with no negative impact to the CAERS data.
+
+
+            c. Quality Assurance Plan
+
+           The Contractor’s successful installation and acceptance testing by the FDA of the strategy for standardizing names of products and
+           ingredients, of the “standard product name dictionary”, the signal detection analysis, and the strategy to update the standard
+           product name data to include corrections, custom terms, new product categories, signal scores, etc identified as a result of signal
+           detection analysis. Acceptance testing reports shall not show severe errors without work-arounds.
+           Success will be defined by having no severity levels of 1-2-3 using the following scale where 1 = most serious and 4 = least serious
+           level.
+                 Severity Levels:
+                 1 = Catastrophic – software will not function
+                 2 = must be fixed – errors will result if software not fixed
+                 3 = error can be documented but otherwise software is fit for use
+                 4 = some feature would be nice to have but not critical
+
+      3. Signal Management Capability Operations and Maintenance
+
+           a. Performance Requirement
+
+
+           The Contractor shall provide operations and maintenance support to ensure availability of the signal management capability to end
+           users during normal business hours of Monday thru Friday, 8:00 a.m. to 4:30 p.m. Eastern Time. Regular day-to-day operational support
+           shall include Oracle database administration functions, initiating and running the data refresh processes described below, diagnosing
+           problems, and working problems through to their resolution. FDA’s OIM Division of Systems and Division of Infrastructure (DOS/DOI)
+           has regularly scheduled maintenance weekends each month. Work that requires the server or application to be unavailable to users
+           should be planned for these weekends. FDA OIM will provide the maintenance weekend schedule to the contractor.
+
+
+           i) Database Administration
+
+
+           The contractor’s database administration support in conjunction with FDA OIM personnel shall include the following activities:
+
+
+                 (1) Installing and upgrading the Oracle server and application tools
+
+
+                 The following tasks and schedules shall be provided:
+
+
+                 The Contractor shall establish an operational computing environment by installing an Oracle database and the signal management
+                 capabilities on FDA hardware located in College Park, MD.
+
+
+
+                 (2) Allocating database storage and planning future storage requirements
+
+
+                 Create the primary database storage structure and modify the database structure as necessary to hold a snapshot of the CAERS
+                 data and signal detection software; enroll Oracle users within 1 month after the contact is awarded and maintain system
+                 security; control and monitor access to the database; monitor and optimize database performance; and provide support to ensure
+                 the application is available to the users. These tasks shall be coordinated with OIM and treated as a high priorities. .
+
+
+                 The Contractor shall provide ongoing infrastructure and support through project coordination, bi-weekly (26 times per year)
+                 refresh of CAERS data, ongoing user support and application maintenance, and database administration. (Months 1-12)
+
+
+                 The FDA Project Officer and the Contractor shall discuss appropriate back up for both the signal management pilot and other
+                 longer term systems.  All parties shall be informed on the type of backup that is being done and what the limitations of that
+                 backup plan are. Database administration functions that require changes to the environments (e.g., install Oracle upgrades,
+                 changes to the database structure, etc.) are subject to approval by the DOS/DOI, which meets on a weekly basis. Requests for
+                 changes must be submitted by Friday, 5:00 p.m., Eastern Time, to be reviewed at the Tuesday Change Control Board (CCB) meetings.
+                 Requests are made using the DOS/DOI, Change Request Form (CRF). The Contractor shall coordinate with the DOS/DOI Technical
+                 Authority to fill out and submit the necessary CRF. The Contractor shall be available by phone to attend the DOS/DOI meeting
+                 when the CRF is presented to answer any technical questions.
+
+
+                 Rollout to CFSAN shall be implemented in conjunction with the FDA Project Officer.  The Contractor and FDA Project Officer will
+                 determine whether modifications to user interface are needed to efficiently identify adverse event signals. This shall be
+                 accomplished by developing and delivering onsite training for signal management capabilities at FDA. The contractor shall work
+                 with CFSAN staff to build their signal detection skill sets by providing demonstrations and end-user training.  The Project
+                 Officer and the contactor will develop a training schedule for up to 10 FDA employees, 30-45 days after the contract award date.
+
+
+                 The Contractor shall provide technical support to enhance FDA staff  signal management capabilities throughout the project.
+
+           ii) Data Refresh
+
+
+                 The contractor shall ensure the timely completion of bi-weekly (26 times per year) data refreshes of CAERS data. The CAERS data
+                 refreshes shall be loaded in an FDA production server and up to two other servers that are designated by the FDA Project
+                 Officer.
+
+
+                 Tasks necessary to complete this process include:
+                 The safety data (raw data and computed signal scores) to support Signal Management shall be derived from CAERS data and shall be
+                 refreshed in the production signal management instance on a bi-weekly(26 times per year) basis.  The Contractor shall install
+                 signal management capabilities on an OIM provided server in order to support the community of users in CFSAN.  A separate
+                 environment shall be provided to support software testing, data staging, quality assurance and training. The CAERS data and
+                 signal management information shall be refreshed on the primary server on a bi-weekly (26 times per year)  basis. The CAERS data
+                 shall also be refreshed on up to two other servers on a bi-weekly (26 times per year)  basis. The signal management information
+                 on the non-primary servers shall be refreshed upon request of the Project Officer in order to support specific testing, quality
+                 assurance or training activities.
+
+
+                 (1) The CAERS data refreshes shall include the following tasks:
+
+
+                     • loading the data into the appropriate server
+                     • running duplicate elimination and cosmetic name recognition software, adding new or recoded product names as appropriate
+                     • ensuring that the update has been executed successfully
+                     • publishing the refreshed secondary database for access by users.
+                     • on the production server, updating signal management software and the signal management configurations, runs, and reports
+
+
+           b. Performance Standard
+
+
+           The bi-weekly (26 time per year) data refresh of CAERS data is to be completed by 9 a.m. Eastern Time on every other Monday (or by
+           the following business day if Monday falls on a Government holiday).
+
+
+           The signal management software and the signal management function downtime is to be no more than 10 hours a month between the hours
+           of 9:00 a.m. to 5:30 p.m., Eastern Time, Monday through Friday (with the exception of pre-specified down times) from the time the
+           Contractor is made aware of the outage by the Project Officer or a member of the FDA signal management user community.  The
+           Contractor will provide the Project Officer with a contact telephone number and email address for notification of outages.  The
+           Project Officer will record details of outage notifications in a log. The Contractor’s responsibility does not extend to downtime
+           caused by hardware or system software failure or network outages, including network outages that prevent the Contractor from being
+           able to remotely access signal management software instances. The signal management software is to be operational at 9:00 a.m. on the
+           Monday following completion of routine FDA scheduled maintenance.
+
+
+           Installation of operational computing environment in support of development, Quality Assurance, training, and production
+           environments.
+
+
+           i) Rollout of full-scale implementation in CFSAN to approximately 10 FDA staff (including statisticians, epidemiologist, and
+           reviewers)
+
+
+           ii) Before implementation of signal annotation features the Contractor shall give a presentation to approximately 10 FDA staff
+           (including reviewers, statisticians, epidemiologists, and CAERS administrators) that outlines how this feature shall be implemented.
+           This presentation shall include a demonstration with several sample foods and cosmetics.
+
+
+           c. Quality Assurance Plan
+
+
+           i)   inspection of application to check for bi-weekly (26 times per year) data refresh
+           ii)  monitor and review user complaints on availability and data timeliness/validity
+
+
+              1. Successful installation and inspection and acceptance testing by the FDA of the signal management capabilities.  The contactor
+                 shall comply with the HHS Enterprise Performance Lifecycle (EPLC) guidance.
+              2. Inspection of software documentation and server environments unless this function is with OIM resources with CFSAN SWE
+                 participation.
+              3. User feedback and evaluation of training sessions (FDA may use a written evaluation form to solicit user feedback)
+              4. FDA will convene a group of management and subject matter experts from CFSAN to evaluate the utility of the signal annotation
+                 feature presentation that the Contractor shall demonstrate before rolling out to the general user community.
+
+      4. Customer Support
+
+
+                 Customer support involves helping users with computer-related problems, responding to telephone and email messages, and
+                 assisting users with specific signal management software problems.
+
+
+           a. Performance Requirements
+
+
+           i) The Contactor will provide application support and telephone support for end-users (member of the FDA signal management user
+           community) between 8:00 A.M. and 5:00 PM, Eastern Time Monday through Friday excluding days the government is not open for business.
+           The Contractor will provide the Project Officer with their email address and a telephone number for a live person pick-up.  End-users
+           will be instructed to contact the Project Officer if application support is required.  The Project Officer will notify the Contractor
+           and will record details of the notification of the need for application support in a log.
+
+
+           ii) If fixing the problem requires changes to the software, the change must be reviewed and approved by the DOS/DOI before the change
+           can be implemented.
+
+
+           iii) The Contractor shall maintain a log of requests for technical assistance that includes: name of the requestor, request date and
+           time, description of the request, and information on the assistance provided, and date the assistance was completed.
+
+
+
+
+           b. Performance Standard
+
+
+           Requests for assistance: 95 percent shall be resolved by contractor within 2 business days of notification excluding those instances
+           where approval is needed from DOS/DOI before change or fix can be made.
+
+
+           Contractor shall acknowledge all requests from the Project Officer or end-users  by email with copy to DOS/DOI within one business-
+           hour.  The Project Officer shall maintain a log which includes the email acknowledgements of requests for technical assistance from
+           the Contractor.  The acknowledgement shall include the name of the requestor, request date and time, description of the request, and
+           information on the assistance to be provided, and date the assistance was completed.
+
+
+
+
+           The Contractor’s responsibility does not extend to downtime caused by hardware or system software failure or network outages,
+           including network outages that prevent the Contractor from being able to remotely access signal management software instances.
+
+
+           c. Quality Assurance Plan
+
+
+           Monitor and review user feedback on compliance with turnaround times for service requests by project officer
+
+      5. Software Change Management
+
+           Software version control is essential to manage changes to the production baseline of the signal management application. The purpose
+           of this function is to ensure that there is a well-defined process for capturing, evaluating, assessing the impact, approving, and
+           tracking the status of any changes to the signal management software after implementation.
+
+           a. Performance Requirements
+
+
+           i) DOS/DOI will forward application problems to the contractor, who shall determine whether fixing the problem will require any
+           changes to the baseline software. Problem fixes that introduce changes to the software must be reviewed and approved by the DOS/DOI.
+           Once approved, the contractor shall implement these changes during the next scheduled production maintenance weekend.
+
+
+           ii) The DOS/DOI Technical Authority will be the focal point for all requests for changes or enhancements—these requests will be
+           submitted via a change request form (CRF). All CRFs will be reviewed by the signal management CCB for consideration.  Changes that
+           are “approved” by the change control board (CCB) will be prioritized and forwarded to the Contractor. The Contractor shall be
+           responsible for evaluating each change request and providing feedback to the DOS/DOI Technical Authority and CCB regarding its
+           disposition.
+
+           b. Performance Standards
+
+
+           The Contractor must indicate the planned disposition of each CRF within 60 calendar days of its receipt for affirmative decisions on
+           changes, changes that the Contractor agrees are to be fixed, must be incorporated into the software in  the next software release for
+           the signal management software and its signaling capabilities.
+
+
+
+
+           c. Quality Assurance Plan
+
+
+              1. 100 percent review and tracking of change requests sent to Contractor
+              2. 100 percent verification that the agreed-to changes are present
+
+
+
+      6. Software Updates and Signal Management Capabilities
+
+           a. Performance Requirements
+
+
+           i) FDA requires a new software release to be available 11 months after the contract award date. If the Contractor does not issue a
+           new release of the software, the Contractor shall provide the FDA Project Officer with a written justification as to the reason. The
+           new software release, or the justification, is to be provided at least 30 to 90 days from the scheduled release date.
+
+
+           ii) When a new release is available, the Contractor shall notify the FDA Project Officer and DOS/DOI Technical Authority via an email
+           message that provides information on the availability of the update, release notes describing the impact of the changes, and a
+           proposed schedule for installing the update. The Technical Authority will work with the selected business lead and DOS/DOI to ensure
+           that all affected stakeholders are prepared for the update. The Technical Authority also will submit a CRF to the CCB for
+           implementation of the change and present the request during the weekly CCB meeting.  The Contractor will be available by phone to
+           attend the DOS/DOI meeting when the CRF is presented to answer any technical questions.  The contractor shall implement approved
+           software updates on one of the DOS/DOI scheduled maintenance weekends but no later than 30 days after the updates have been approved.
+
+
+
+
+           iii) The Contractor support for software updates shall include assisting the FDA in updating system development life-cycle
+           documentation that is affected by the updates, including the System Security Plan (System Description and System Environment sections
+           only), version release notes, user guides, and training materials.  The Contractor shall provide the DOS/DOI Technical Authority with
+           a Project Schedule for the software update.
+
+
+           b. Performance Standard
+
+
+              1. Signal management software and any signaling capabilities are updated with the most recent release by the first scheduled
+                 maintenance weekend following approval of the update by the CCB.
+              2. Release notes or other applicable user documentation is available electronically to all users at or before the time of
+                 deployment.
+              3. Written justification is provided if Contractor does not issue new software releases.
+
+
+           c. Quality Assurance Plan
+
+
+              1. Successful execution by the FDA of user acceptance test
+              2. Inspection of software documentation
+
+
+
+      7. Training (base year plus employee training as needed)
+
+           a. Performance Requirements
+
+
+           i) The Contractor shall provide training customized (with input from the FDA Project Officer) to meet the needs of the current FDA
+           signal management user community. This training, which may include classroom, online, CD or DVD based presentations to be run on
+           PC’s, train-the-trainer, or one-on-one training, shall be designed to address current functionality for new users and functionality
+           that has been added in new releases. The quantity and type of the training to be delivered is detailed below.
+
+
+           ii) The Contractor shall develop (with input from FDA Project Officer) one computer-based training module to familiarize the FDA user
+           community with data mining capabilities and how the signal management software can be applied to FDA staff daily work.
+
+
+           iii) The Contractor shall visit the FDA periodically (approximately five, one-day visits during the contract period; at a time
+           mutually agreed upon by the Project Officer and the Contractor), and hold “office hours” in space designated by the Project Officer,
+           which shall be used to provide one-on-one training, training for users, demonstrations or workshops. The particular training format
+           for an on site session shall be selected by the FDA Project Officer and the Contractor and will depend on the information to be
+           conveyed.
+
+
+           iv) The Contractor shall provide one introductory self-directed computer-based training module for users within 1 month after the
+           contact is awarded and four contractor hosted in-person or remote (web-based) demonstrations.  The demonstrations will use scenarios
+           supplied by Contractor and shall be offered periodically to familiarize the user community with data mining capabilities and how the
+           signal management software can be applied to their daily work.
+
+
+           v) The Contractor shall supply paper or electronic copies of training materials for each training session (demonstrations or
+           workshops). The content and format of these materials are to be agreed upon between the Contractor and the FDA Project Officer and
+           finalized no later than one week in advance of the training to allow FDA ample time to copy and distribute them, as needed. The
+           content of these materials shall be sufficiently detailed to enhance the users understanding of the information presented.
+
+
+           b. Performance Standards
+
+
+              1. An introductory self-directed computer-based training module and four contractor hosted in-person or remote (web-based)
+                 demonstrations delivered.
+              2. Content and format of training materials finalized one week in advance of training.
+              3. User feedback and evaluation of training sessions
+
+
+           c. Quality Assurance Plan
+
+
+           User feedback and evaluation of training (FDA may use a written evaluation form to solicit user feedback)
+           Availability of training materials in advance of scheduled training
+
+
+
+
+      8. Option Year 1 and 2 (if exercised):
+
+           a.  Performance Requirements
+
+
+              1. The Contractor shall continue to clean data and continue the bi-weekly (26 time per year) refresh of CAERS data on all (up to a
+                 maximum of three) signal management software instances.
+              2. The Contractor shall continue the bi-weekly (26 time per year) refresh of the CAERS data for signal management..
+              3. The Contractor shall continue to provide hands-on and self-directed training and five on site training seminars per year.
+              4. The Contractor shall continue to provide signal management support services to CFSAN for duration of any option years exercised.
+
+
+
+
+           b. Performance Standards
+
+
+           i) Contractor shall work with FDA and make reasonable efforts to ensure that the signal management software has up-to-date data even
+           as FDA updates its current adverse event system.
+
+
+           c. Quality Assurance Plan
+
+
+              1. Successful installation and inspection and acceptance testing by the FDA of the signal management capabilities.
+
+
+           Inspection of documentation and server environments. The contactor shall comply with the HHS Enterprise Performance Lifecycle (EPLC)
+           guidance http://www.hhs.gov/ocio/eplc/index.html: .
+
+
+              2. User feedback and evaluation of training sessions (FDA may use a written evaluation form to solicit user feedback)
+
+
+              3. Availability of training materials in advance of scheduled training
+
+
+              4. FDA will keep contractor informed of changes in data structures that may end up affecting the CAERS data and give them adequate
+                 time to adjust to these changes
+
+9. Place of Performance
+
+
+      Work is to be performed at FDA facilities in the DC metro area, including College Park and White Oak sites. Offsite development and support
+      is permitted and encouraged. The contractor may be required to travel to FDA locations.
+
+
+10. Period of Performance
+
+
+      The Period of Performance is 3 years. The base period and 2 option periods will each be 12 months in duration.
+
+
+
+
+
+11. Reporting Requirement / Delivery Schedule
+
+
+      Deliverables and schedule will be coordinated by the OIM COR. Standard templates for reports/recommendations, and other documents, will be
+      provided from the FDA’s Process Asset Library (PAL) as needed.  Certain submissions must comply with appropriate CMM Level 2 requirements
+      and revision history, and will be identified upon task assignment.
+
+
+      Since CAERS signal pattern detection (SPD) is a component of the Investment for CFSAN and it is currently a non-major, tier 3 investment
+      (by OMB’s definition), the Contractor must provide monthly Earned Value reports that meet the ANSI 748 standard for this type of
+      investment.  The government should be notified proactively of any variances beyond certain thresholds of cost and schedule.
+
+
+      In particular, the Contractor shall be required to provide a monthly report that identifies all known risks related to cost, schedule and
+      performance with recommended mitigation strategies, as appropriate. This report shall be due to the Project Officer approximately one week
+      after the end of each calendar? month and may be used to conduct a monthly In-Progress review (IPR) for CAERS SPD and/or as part of ALM
+      program oversight activities.
+
+
+12.      Government Furnished Equipment (GFE)
+
+      FDA will provide the necessary hardware (2 servers) and software (operating system, ORACLE licenses) such that the Contractor can perform
+      the work as outlined in section 5.  FDA will provide any hardware support packages necessary.
+
+
+Government Responsibilities and Furnished Property
+
+      Government responsibilities for this support effort will be as follows:
+
+
+      • Provide the Contractor remote access to the system server via the FDA network.  The FDA shall provide the two FDA approved laptops for
+      Contractor technical support staff member working on this project, to have the capability to logon to the required server(s) from their
+      site, after appropriate confidentiality forms have been signed and clearances provided. The contractor shall follow all the rules and
+      regulations of secure computing that have been established by the FDA's central IT staff remote computing is supported in order to let
+      professionals work from other off-site locations. One stipulation of secure remote computing is that it must be done from an FDA supplied
+      computer with specialized encryption and firewall functionality. This equipment and training on this equipment will be supplied by the FDA
+      but must all be returned to the FDA, in working order, at the end of the contract period
+
+
+      • Maintain the server on the list of servers that are allowed to relay SMTP messages via the FDA's internal mail servers.
+
+
+      • Information on OIM scheduled maintenance weekends
+
+
+      • FDA will inform and work with the contractor so that all FDA IT security and IT standards are maintained by the signal management system
+
+
+
+
+
+
+General FDA Technical Environment
+
+The FDA’s System Development Environment (SDE) is rapidly evolving in response to emerging public health needs and technology drivers. Due to
+these imminent changes, it is recommended that the attached FDA-SDE document serve as a recommended guide and not as a binding source to
+restrict possible solutions. Optimal and innovative approaches are highly encouraged and desired. See attached document titled, FDA-SDE 2.doc
+provided as an attachment in Federal Business Opportunities.
+
+
+
+13. Section 508 Standards and Instruction
+
+
+      Full conformance or levels of conformance with Section 508 standards are required. (See Attachment 3)
+
+
+      Section 508 Standards
+      Section 508 of the Rehabilitation Act Amendments of 1998 (29 U.S.C. § 794 (d) was enacted in the Workforce Investment Act of 1998. Section
+      508 requires that when Federal agencies develop, procure, maintain, or use electronic and information technology, Federal employees with
+      disabilities have access to and use of information and data that is comparable to the access and use by Federal employees who are not
+      individuals with disabilities. The Act required the Architectural and Transportation Barriers Compliance Board (Access Board) to create
+      federal standards for electronic and information technology (EIT) products (goods and services) to make them more accessible by individuals
+      with disabilities.
+
+
+      The following applications standards have been identified as being applicable for this service:
+      § 1194.21 Software applications and operating systems.
+      § 1194.22 Web-based intranet and internet information and applications.
+      § 1194.31 Functional performance criteria.
+      § 1194.41 Information, documentation, and support
+
+
+
+
+14. Security
+
+
+      This SOW requires the Contractor to (1) develop, (2) have the ability to access, or (3) host and/or maintain a Federal information
+      system(s).
+
+
+      Pursuant to Federal and HHS Information Security Program Policies, the Contractor and any subcontractor shall comply with the following
+      requirements:
+
+
+     1. Provide the necessary documentation (System Security Plan, Contingency Plan, Risk Assessment) such that a Certification & Accreditation
+        (C&A) can be performed and completed by the FDA Security Office on the CAERS SPD prior to production implementation.
+
+     2. Help FDA properly address and update a Plan of Actions and Milestone (POA&M) on the CAERS SPD security deficiencies. These deficiencies
+        must be addressed, completed and the updates provided to the FDA security office for validation and verification.
+
+     3. Review and update user access rights in the CAERS SPD system semi-annually and report to the FDA security office.  The Contractor and
+        any subcontractor shall obtain a Level 5 Public Trust security clearance prior to production implementation.
+
+     4. Assist the FDA security office in completing an annual security assessments of CAERS SPD in accordance with the Federal Information
+        Security Management Act of 2002 (FISMA), Title III, E-Government Act of 2002, Pub. L. No. 107-347 (Dec. 17, 2002);
+        http://csrc.nist.gov/policies/FISMA-final.pdf.
+
+
+
+
+
+Instructions
+
+                                                            The Developers’ Guide the
+
+
+                                                       FDA STANDARD DEVELOPMENT ENVIRONMENT
+
+
+BACKGROUND
+
+
+FDA Centers – Bib – centralized IT (security, user authentication, other non-functional requirements) – standard development environments (SDEs)
+used as guides for contractors that will develop pieces of integrated systems. The FDA’s SDE is rapidly evolving in response to emerging public
+health needs and technology drivers. Due to these imminent changes, it is recommended that this document serve as a recommended guide and not
+as a binding source to restrict possible solutions. Optimal and innovative approaches are highly encouraged and desired for this RFI.
+
+
+Overview
+
+
+The FDA applications run mainly on a windows platform with some UNIX integration.  The applications themselves, are aging and use different
+technologies, mostly custom, that were available ten years ago.  Today, mainstream technical environments focus on component based COTS software
+that can be connected through standard API frameworks, rule-based engines, and re-useable code that serves as the primary structure of a
+development environment.  FDA must modernize its development environment to leverage the opportunities a standard development provides to enable
+the business needs and requirements of data sharing, high-throughput volume validations and business analytics.
+
+
+The standard development environment
+
+
+It is the desire of the FDA’s IT Program to create a federated, unified view of a standard application development approach in order to leverage
+organizational knowledge, reduce redundancy and develop a common set of architectural standards that should be developed against when delivering
+IT applications in the future. In order to promote project standards among projects a standardized development environment to be the target
+environment for all new Java Web application development projects has been identified by the Chief Technology Officer (CTO) and a working group
+of Senior Management Team (SMT) experts.
+
+
+Figure 1, shown below, describes the target development environment components.  Each component has been carefully selected to play a
+specialized role in Java Web Application development, and this configuration is thought to give the developers as well as other members of the
+project team the best possible component available to the FDA at the time of this writing.
+
+
+[pic]
+
+
+Figure 1, the FDA Target Development Environment.  The following table describes each component further.
+
+
+|Tool Name                       |Purpose                                                                |Type                    |
+|Eclipse                         |Integrated Development Environment for Java Source Code                |IDE                     |
+|Eclipse Plug-ins                |Extension points for Eclipse IDE to perform specialized tasks (ie: SVN |IDE                     |
+|                                |Repository browsing)                                                   |                        |
+|TOAD                            |Interactive Database Management Tool                                   |SQL Tool                |
+|Squirrel SQL                    |Interactive Database Management Tool                                   |SQL Tool                |
+|MySQL Database                  |Rapid Database Prototyping                                             |Database                |
+|Oracle Database                 |Production Database                                                    |Database                |
+|Apache Ant                      |Build Tool                                                             |Build Management        |
+|Subversion                      |Source Code Management (Version Control)                               |SCM                     |
+|JIRA                            |Issue and Defect Management                                            |Team Software           |
+|Confluence                      |Project Management and Content Management                              |Team Software           |
+|Bamboo                          |Continuous Integration                                                 |Build Management        |
+|oXyGen XML Editor               |XML/XSL Editor                                                         |XML IDE                 |
+|XML Spy                         |XML/XSL Editor                                                         |XML IDE                 |
+|ERWIN                           |UML Modeling Tool                                                      |Modeling                |
+|Appian BPM                      |Business Process Modeling Execution Engine                             |BPM                     |
+|Photoshop/Elements              |Image Processing                                                       |Graphics                |
+|DreamWeaver                     |Markup Language Editor (HTML/JSP)                                      |HTML                    |
+|Flex                            |Rich Client Application Interfaces                                     |Rich IDE                |
+|FireFox/FireBug                 |Standards based Web Browser with JavaScript Debugger                   |HTML                    |
+|Beyond Compare 3                |Diff/Compare Utility                                                   |Utility                 |
+|WinZip                          |Compression Utility                                                    |Utility                 |
+|Bare Tail                       |Log file utility                                                       |Utility                 |
+|Grep/WinGrep                    |Search Utility                                                         |Utility                 |
+|Citrix                          |SSH and FileTransfer                                                   |Utility                 |
+|CygWin                          |Unix File System Emulator                                              |Utility                 |
+
+
+Enterprise process documents:  JIRA/Subversion
+
+
+Steps
+
+
+    1. Set Up Team Environment
+
+
+a. Request Subversion Repository
+
+
+b. Request JIRA Project
+
+
+    2. Set Up Developer Environment
+
+
+    3.  Download and Setup Required Software
+
+
+c. See Section 5 Below or for more information click: here (Requires FDA Network Access)
+
+
+    4.  Generate the Project Using the Plug-In
+
+
+d. Using the FDAQuickstart Plug-in for Eclipse, generate the initial project artifacts for your project.  See Chapter 1Appendix A: for more
+information on how to create a new Java Project using the FDAQuickStart Plug-in.
+
+
+e. Elaborate on your project, creating the Java sources needed to perform the functionality your application implements.  Use FDAQuickStart to
+generate large portions of standardized code based on Java Model Objects.  See Chapter 1Appendix B: Dynamic Code Generation using FDAQuickStart
+to learn how to build your application quickly and in a way that meets the FDA”s target architecture.
+
+
+    5.  Select Common Components
+
+
+f. View the FASTAR Common Component Registry to review if your application can leverage previously built and well tested components
+
+
+g. Download and Required Common Components from FASTAR and integrate into your project as per the individual component usage guidelines
+
+
+    6.   Complete Environment Setup
+
+
+h. Request development/test/production server environments
+
+
+i. Request Appian Access if Business Processes will be part of your application
+
+
+j. Register your Project with FASTAR Repository
+
+
+k. Check-in your initial assets
+
+
+l. Request Continuous Integration Setup
+
+
+Software Checklist
+
+
+Apache Ant (http://ant.apache.org/) 1.6.5 or higher recommended
+
+
+Java Version 1.5.x or higher http://java.sun.com/javase/downloads/index_jdk5.jsp
+
+
+Subversion Client http://subversion.tigris.org/getting.html#windows
+
+
+Eclipse IDE (http://www.eclipse.org)
+
+
+JUnit 3.8 (http://www.junit.org)
+
+
+
+
+
+
+Required Eclipse Plug-ins
+
+
+|Plug-in                  |Description                                       |Source                                                |
+|FDA Quickstart           |FDA Project creation and common code generation   |FDA                                                   |
+|                         |                                                  |http://sde.fda.gov/confluence/download/attachments/399|
+|                         |                                                  |7767/gov.hhs.fda.QuickStart_1.0.1.zip                 |
+|Subclipse                |Allows IDE integration with Subversion Repository |Tigris.org                                            |
+|                         |                                                  |http://subclipse.tigris.org/                          |
+|ArgoEclipse              |The ArgoEclipse project provides integration      |Tirgis.org                                            |
+|                         |between the Eclipse IDE and the UML components of |http://argoeclipse.tigris.org/                        |
+|                         |ArgoUML. Instead of a standalone application, all |                                                      |
+|                         |ArgoUML functionality is available tightly        |                                                      |
+|                         |integrated within the IDE                         |                                                      |
+
+
+Other (Optional) Useful Plug-ins
+
+
+|Plug-in                    |Description                                    |Source                                                 |
+|Log4E                      |Log4E is an Eclipse Plugin which helps you to  |Jan-Friedrich Mutter                                   |
+|                           |set up your logger easily in Java Projects. It |http://log4e.jayefem.de/update                         |
+|                           |assists you in several tasks: logger           |                                                       |
+|                           |declaration, logger Insertions at certain      |                                                       |
+|                           |method entries, substitution of System out's,  |                                                       |
+|                           |modification of already existing logger        |                                                       |
+|                           |statements.                                    |                                                       |
+|DBViewer                   |DBViewer Plugin is an Eclipse Plugin as a      |http://sourceforge.jp/projects/dbviewer                |
+|                           |Database Front end .It connects with various   |                                                       |
+|                           |Databases by way of JDBC Driver                |                                                       |
+|ClayDatabase Modeling Tool |Allows Forward and Reverse Engineering of      |Azzurri Inc.                                           |
+|                           |Database DDL                                   |http://www.azzurri.co.jp/eclipse/plugins               |
+
+
+
+
+Recommended Reading
+
+
+SDE Web Site
+
+
+Java Code Standards
+
+
+Database Standards and Naming Conventions
+
+
+
+
+
+
+
+
+
+
+
+
+                                              OFFICE OF SMALL AND DISADVANTAGED BUSINESS UTILIZATION
+                                                        SMALL BUSINESS SUBCONTRACTING PLAN
+
+
+The following outline meets the minimum requirements of section 8(d) of the Small Business Act, as amended, and implemented by the Federal
+Acquisition Regulations (FAR) Subpart 19.7.  The U.S. Department of Health and Human Services (HHS), Office of Small and Disadvantaged Business
+Utilization (OSDBU) recommend offerors use the following format to submit proposed Individual Subcontracting Plans, including modifications.  It
+is not intended to replace any existing Corporate/Commercial Plan that is more extensive.  A subcontracting Plan is required if the estimated
+cost of the contract may exceed $550,000 (small businesses are excluded).  Questions should be forwarded to the Contracting Officer or Teneshia
+Alston, Senior Small Business Analyst (Teneshia.Alston@HHS.GOV).
+
+
+HHS Operating Division (OPDIV):  _______________________________
+
+SOLICITATION OR CONTRACT NUMBER:  ______________________________
+
+DATE OF PLAN:  ___________________________________________________
+CONTRACTOR:  ____________________________________________________
+ADDRESS: ________________________________________________________
+STATE/ZIP CODE___________________________________________________
+
+DUNN & BRADSTREET NUMBER:  _____________________________________
+
+ITEM/SERVICE (Description):  _______________________________________
+
+__________________________________________________________________
+
+__________________________________________________________________
+
+__________________________________________________________________
+
+__________________________________________________________________
+
+__________________________________________________________________
+
+
+
+NEW/INITIAL CONTRACT
+
+PERIOD OF CONTRACT PERFORMANCE (Month, Day & Year):__________________
+
+Base  $___________________   Performance Period/Quantity ____________
+
+Option 1:   $___________________  Performance Period/Quantity ____________
+
+Option 2:   $___________________  Performance Period/Quantity ____________
+
+Option 3:   $___________________  Performance Period/Quantity ____________
+
+Option 4:   $___________________  Performance Period/Quantity ____________
+
+      $____________________  Total Contract Cost
+
+
+CONTRACT MODIFICATION (if applicable)
+
+NEW PERIOD OF CONTRACT PERFORMANCE (Month, Day & Year):__________________
+
+Original/Base    $___________________   Performance Period/Quantity _________
+
+Modification     $___________________   Performance Period/Quantity _________
+
+Task Order  $___________________  Performance Period/Quantity _________
+
+        $___________________ Modified Total Contract Cost
+
+Failure to include the essential information of FAR Subpart 19.7 may be cause for either a delay in acceptance or the rejection of a bid or
+offer when a subcontracting plan is required.  “SUBCONTRACT,” as used in this clause, means any agreement (other than one involving an employer-
+employee relationship) entered into by a Federal Government prime contractor or subcontractor requesting supplies or services required for
+performance of the contract or subcontract.
+
+If assistance is needed to locate small business sources, contact the Small Business Specialist (SBS) supporting the OPDIV.  SBS contact
+information is located on the OSDBU website (http://www.hhs.gov/osdbu/staff.html) or you may contact the OSDBU headquarters at (202) 690-7300.
+
+HHS current subcontracting goal is 39.9% for small business, including 8(a) Program Participants (hereafter referred to as SB), 5.00% for Small
+Disadvantaged Business, including Alaska Native Corporations (ANC) and Indian Tribes (hereafter referred to as SDB), 5.00% for women-owned
+business and economically disadvantaged women-owned business (hereafter referred to as WOSB), 3.00% HubZone business (HUBZone) and 3.00% service
+disabled veteran-owned small business (SDVOSB) concerns for Fiscal Year (FY) 2008.  For this procurement, HHS expects all proposed
+subcontracting plans to contain at a minimum the aforementioned percentages.  These percentages shall be expressed as percentages of the total
+estimated subcontracting dollars.  Zero goal statement removed.
+   1. Type of Plan (check one)
+
+
+      _____ Individual plan (all elements developed specifically for this contract and applicable for the full term of this contract).
+
+
+      _____ Master plan (goals developed for this contract) all other elements standardized and approved by a lead agency Federal Official; must
+      be renewed every three years and contractor must provide copy of lead agency approval.
+
+
+      _____ Commercial products/service plan (goals are negotiated with the initial agency on a company-wide basis rather than for individual
+      contracts) this plan applies to the entire production of commercial service or items or a portion thereof. The contractor sells commercial
+      products and services customarily used for non-government purposes.  The plan is effective during the offeror’s fiscal year (attach a
+      copy).   The Summary Subcontracting Report (SSR) must include a breakout of subcontracting prorated for HHS and other Federal agencies.
+
+2.  Goals
+
+Below indicate the dollar and percentage goals for Small Business, Small Disadvantaged (SDB) including Alaska Native Corporations and Indian
+Tribes, Woman-owned and Economically Disadvantaged Women-Owned (WOSB), Historically Underutilized Business Zone (HUBZone), Service-Disabled
+Veteran-owned (SDVOSB) small businesses and “Other than small business” (Other) as subcontractors.  Indicate the base year and each option year,
+as specified in FAR 19.704 or project annual subcontracting base and goals under commercial plans.  If any contract has more four options,
+please attach additional sheets which illustrate dollar amounts and percentages.
+
+   a. Total estimated dollar value of ALL planned subcontracting, i.e., with ALL types of concerns under this contract is ________________  (Base
+      Year).
+
+      FY ___1st Option FY ___2nd Option FY ___3rd Option FY ___4th Option
+
+      $ _____________  $ _____________  $ _____________  $ _____________
+
+   b. Total estimated dollar value and percent of planned subcontracting with SMALL BUSINESSES (including SDB, WOSB, HUBz and SDVOSB):  (% of
+      “a”)
+       $ ________________ and ________________% (Base Year)
+
+      FY ___1st Option FY ___2nd Option FY ___3rd Option FY ___4th Option
+
+      $ _____________  $ _____________  $ _____________  $ _____________
+
+   c. Total estimated dollar value and percent of planned subcontracting with SMALL DISADVANTAGED BUSINESSES:  (% of “a”) $ ________________ and
+      ________________% (Base Year).
+
+      FY ___1st Option FY ___2nd Option FY ___3rd Option FY ___4th Option
+
+      $ _____________  $ _____________  $ _____________  $ _____________
+
+   d. Total estimated dollar value and percent of planned subcontracting with WOMAN-OWNED SMALL BUSINESSES:  (% of “a”)  $ ________________ and
+      ________________%  (Base Year)
+
+      FY ___1st Option FY ___2nd Option FY ___3rd Option FY ___4th Option
+
+      $ _____________  $ _____________  $ _____________  $ _____________
+
+   e. Total estimated dollar and percent of planned subcontracting with HUBZone SMALL BUSINESSES:
+      (% of “a”)  $ ________________ and ________________%  (Base Year)
+
+      FY ___1st Option FY ___2nd Option FY ___3rd Option FY ___4th Option
+
+      $ _____________  $ _____________  $ _____________  $ _____________
+
+   f. Total estimated dollar and percent of planned subcontracting with Service-Disabled Veteran-Owned SMALL BUSINESSES:  (% of “a”)  $
+      ________________ and ________________% (Base Year)
+
+      FY ___1st Option FY ___2nd Option FY ___3rd Option FY ___4th Option
+
+      $ _____________  $ _____________  $ _____________  $ _____________
+
+   g. Total estimated dollar and percent of planned subcontracting with “OTHER THAN SMALL BUSINESSES” (As defined by the Small Business
+      Administration as “any entity that is not classified as a small business.  This includes large businesses, state and local governments, non-
+      profit organizations, public utilities, educational institutions and foreign-owned firms.)      (% of “a”)  $ ________________ and
+      ________________% (Base Year)
+
+      FY ___1st Option FY ___2nd Option FY ___3rd Option FY ___4th Option
+
+      $ _____________  $ _____________  $ _____________  $ _____________
+
+Note:       Federal prime contract  percentage goals may serve as objectives for                      subcontracting goal development:
+
+
+               ▪ Total Small Business (SB) 19.00%
+               ▪ 8(a) Program Participants 5.00%
+               ▪ Small Disadvantaged Business (SDB) 5.00%
+               ▪ Woman Owned Small Business (WOSB) 5.00%
+               ▪ Historically Underutilized Business Zone (HUBZone) 3.00%
+               ▪ Service Disabled Veteran Owned Small Business (SDVOSB) 3.00%
+
+
+   h. Provide a description of ALL the products and/or services to be subcontracted under this contract, and indicate the size and type of
+      business supplying them (check all that apply):
+
+
+
+   |Products and/or Services          |Other                          |Small Business               |
+|                                  |                               |                             |
+|Oct 1 - Mar 31                    |ISR                            |4/30                         |
+|                                  |                               |                             |
+|Apr 1 - Sept 30                   |ISR                            |10/30                        |
+|                                  |                               |                             |
+|Oct 1 - Sept 30                   |SSR                            |10/30                        |
+|                                  |                               |                             |
+|Contract Completion               |Year End SDB Report            |30 days after completion     |
+
+
+
+
+Please refer to FAR Part 19.7 for instruction concerning the submission of a Commercial Plan:  SSR is due on 10/30 each year for the previous
+fiscal year ending 9/30.
+
+     a. Submit ISR (bi-annually) for the awarding Contracting Officer’s review and acceptance via the eSRS website.
+
+
+     b.   Currently, SSR (annually) must be submitted for the HHS eSRS Agency Coordinator review and acceptance via the eSRS website.  (Note:
+         Log onto the OSDBU website to view the HHS Agency Coordinator contact information (http://www.hhs.gov/osdbu/staff.html).
+
+
+Note:  The Request for Proposal (RFP) will indicate whether a subcontracting plan is required.  Due to the nature and complexity of many HHS
+contracts, particularly the Centers for Medicare and Medicaid (CMS), the contractor may not be required to submit its subcontracting reports
+through the eSRS.   The Contracting Officer will confirm reporting requirements prior to the issuance of an award.  For more information,
+contact Teneshia Alston, Agency Coordinator-eSRS (Teneshia.Alston@HHS.GOV).
+
+7.  Record keeping
+
+FAR 19.704(a) (11) requires a list of the types of records your company will maintain to demonstrate the procedures adopted to comply with the
+requirements and goals in the subcontracting plan.  The following is a recitation of the types of records the contractor will maintain to
+demonstrate the procedures adopted to comply with the requirements and goals in the subcontracting plan.  These records will include, but not be
+limited to, the following:
+
+     a. SB, SDB, WOSB, HUBZone and SDVOSB source lists, guides and other data identifying such vendors;
+
+     b. Organizations contacted in an attempt to locate SB, SDB, WOSB, HUBZone and SDVOSB sources;
+
+     c. On a contract-by-contract basis, records on all subcontract solicitations over $100,000, which indicate for each solicitation (1)
+        whether SB, SDB, WOSB, HUBZone and/or SDVOSB concerns were solicited, if not, why not and the reasons solicited concerns did not receive
+        subcontract awards;
+
+     d. Records to support other outreach efforts, e.g., contacts with minority and small business trade associations, attendance at small and
+        minority business procurement conferences and trade fairs;
+
+     e. Records to support internal guidance and encouragement provided to buyers through (1) workshops, seminars, training programs, incentive
+        awards; and (2) monitoring performance to evaluate compliance with the program and requirements; and
+
+     f. On a contract-by-contract basis, records to support subcontract award data including the name, address, and business type and size of
+        each subcontractor. (This is not required on a contract–by–contract basis for commercial plans.)
+     g. Other records to support your compliance with the subcontracting plan: (Please describe)
+        _____________________________________________________________
+
+
+        _____________________________________________________________
+
+
+        _____________________________________________________________
+
+
+        _____________________________________________________________
+
+
+
+
+8.  Timely Payments to Subcontractors
+
+FAR 19.702 requires your company to establish and use procedures to ensure the timely payment of amounts due pursuant to the terms of your
+subcontracts with small business concerns, 8(a), SDB, women-owned small business, HubZone and service disabled veteran-owned small business
+concerns.
+
+Your company has established and used such procedures:  ________ yes _________ no
+
+
+9.  Description of Good Faith Effort
+
+Maximum practicable utilization of small, 8(a), small disadvantaged, woman-owned, HubZone small and service disabled veteran owned concerns as
+subcontractors in Government contracts is a matter of national interest with both social and economic benefits.  When a contractor fails to make
+a good faith effort to comply with a subcontracting plan, these objectives are not achieved, and 15 U.S.C. 637(d) (4) (F) directs that
+liquidated damages shall be paid by the contractor.  In order to demonstrate your compliance with a good faith effort to achieve the small, SDB,
+WOSB, HubZone and SDVOSB small business subcontracting goals, outline the steps your company plans to take.  These steps will be negotiated with
+the contracting official prior to approval of the plan.
+
+____________________________________________________________________
+
+
+
+____________________________________________________________________
+
+
+
+____________________________________________________________________
+
+
+____________________________________________________________________
+
+
+____________________________________________________________________
+
+
+
+                                                                  SIGNATURE PAGE
+
+Signatures Required:
+
+This subcontracting plan was submitted by:
+
+Signature:             __________________________________________________
+
+Typed Name: __________________________________________________
+
+Title:                 __________________________________________________
+
+Date:            __________________________________________________
+
+
+This plan was reviewed by:
+
+Signature:             __________________________________________________
+
+Typed Name: __________________________________________________
+
+Title:                 Contracting Officer                    Date: ______________
+
+
+This plan was reviewed by:
+
+Signature:             __________________________________________________
+
+Typed Name: __________________________________________________
+
+Title:                 HHS Small Business Specialist (SBS)    Date:  ______________
+
+
+This plan was reviewed by:
+
+Signature:             __________________________________________________
+
+Typed Name: __________________________________________________
+
+Title:                 Small Business Administration Procurement Center Representative
+
+Date:            __________________________________________________
+
+
+-----------------------
+    [pic]
+
+

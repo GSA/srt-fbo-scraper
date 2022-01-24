@@ -1,0 +1,278 @@
+PERFORMANCE WORK STATEMENT (PWS)
+
+
+
+Defense Logistics Agency (DLA)
+
+
+
+BMC ProactiveNet Performance Manager (BPPM) Consulting Services
+
+
+
+
+
+SUMMARY OF SERVICES
+
+
+
+Defense Logistics Agency (DLA) needs assistance from a highly-qualified subject matter expert to complete their in-progress deployment and integration of BMC ProactiveNet Performance Manager (BPPM) 9.5.
+
+
+
+SCOPE
+
+
+
+BPPM has been deployed within the development environment at DLA Transaction Services to facilitate event management and performance monitoring for non-Windows Operating Systems as well as Government-built and Commercial Off-The-Shelf (COTS) software to support situational awareness of mission-critical operations.
+
+
+
+The contracted company shall complete the installation and configuration of BPPM 9.5 in the development and production environments and provide post-production sustainment activities in accordance with the performance objectives of this performance work statement.
+
+
+
+PERFORMANCE OBJECTIVES
+
+
+
+The success of the deployment will be measured with following performance objectives:
+
+
+
+BPPM product is successfully installed in the development and production environments at DLA Transaction Services and configured in accordance with the design referenced in item 6.4 of the Assumptions and Constraints section below.  Deployment must be confirmed operational. (A0002)
+
+Implementation and validation of the BMC Event Management Framework to enhance BPPM event processing.  At least 75% of all event processing is facilitated by the BMC Event Management Framework.
+
+Implementation of a custom email adapter, developed in Perl, to parse alarms sent via email from various Government-Off-The-Shelf(GOTS) and COTS software and submit parsed alarms as events to BPPM.  All emails will generate events within BPPM unless otherwise documented; excepted emails will be logged for reference.
+
+Integration of BPPM with BMC Remedy Service Desk using the Integration for BMC Remedy Service Desk (IBRSD).  BPPM Events associated with a service disruption will generate Critical priority Incidents; BPPM Events associated with an imminent service disruption will generate High priority Incidents; BPPM Events associated with degraded service will generate Medium priority Incidents.  Resolution of Incidents in Remedy Service Desk must resolve events in BPPM.  Resolution of events in BPPM must resolve Incidents in Remedy Service Desk.
+
+Integration of BPPM with BMC PATROL. All BMC PATROL alarms will be forwarded to BPPM for event processing.
+
+Integration of BPPM with application log monitors. At least four application log monitors will be implemented in BPPM for event processing.
+
+Implementation of Service Impact Models for enhanced event management.
+
+BPPM development and production deployments must be operational.  An operational deployment will be measured by the ability for BPPM to:
+
+Ingest an event from BMC PATROL and subsequently generate an Incident in BMC Remedy Service Desk.  Resolution of an event in BMC PATROL must resolve the event in BPPM.
+
+Ingest an event by email and subsequently generate an Incident in BMC Remedy Service Desk
+
+Ingest an event from an application log monitor and subsequently generate an Incident in BMC Remedy Service Desk
+
+Ingest an event from Microsoft System Center Operations Manager (SCOM) and subsequently generate an Incident in BMC Remedy Service Desk.  Resolution of event in BPPM must resolve the event in SCOM.  
+
+Ingest an event from SolarWinds Orion Network Performance Manager (NPM) and subsequently generate an Incident in BMC Remedy Service Desk.  Resolution of the event in BPPM must resolve the event in NPM.  
+
+Configure all BPPM components to conform to security requirements
+
+All user interfaces must be accessed in a secure manner (i.e., HTTPS and/or SSH)
+
+Authentication to all user interfaces must be facilitated via X.509 client certificates.  If X.509 client certificates are determined to be technically infeasible in conjunction with BMC Support, LDAP authentication will be considered an acceptable alternative.
+
+All ports and protocols employed by product must be documented
+
+All product components must be configured to run without elevated privileges where feasible.
+
+Test and validate all BPPM component functionality and performance including all custom integrations
+
+Implementation of performance monitoring in BPPM for all components monitored by BMC PATROL to include memory utilization, CPU utilization and disk utilization
+
+Provide one month of post-production support to remediate any reported errors, ensure product remains operational and performance is tuned to accommodate observed usage
+
+Provide documentation of the deployment as specified in the deliverables section below; reference section 4.0 for details.
+
+
+
+DELIVERABLES
+
+
+
+The contractor shall provide the following deliverables to the Government:
+
+A project schedule, due 5 days within contract award, outlining the work to be completed along with major milestones, decision points and any tasks requiring the Government’s assistance.
+
+A weekly status report, due Mondays by 0800 EST/EDT, including accomplishments, risks and any change to the original project schedule. (A0001)
+
+A solution requirements document, due prior to start of production migration, detailing use cases mapped to functional requirements, relevant IT security policies/standards, auditing and reporting requirements, and systems architecture (A0003)
+
+A solution architecture components and design document, due prior to start of production migration, outlining the infrastructure requirements for the development and production environments, test approach, integration plan and maintenance procedures. (A0003)
+
+A solution implementation document, due upon completion of production migration, detailing the install and configuration of all BPPM product components, custom integrations and unit testing results. (A0003)
+
+A quality assurance and test document, due upon production migration, outlining the solution test plan, results of the executed test plans and any configuration changes implemented to resolve issues observed from the executed tests. (A0003)
+
+A standard operating procedures document, due upon completion of production migration, detailing solution integration instructions, startup and shutdown procedures, backup and restore procedures, risk mitigation activities, monitoring procedures and security controls. (A0003)
+
+
+
+Services Summary (SS)
+
+
+
+
+
+ASSUMPTIONS AND CONSTRAINTS
+
+
+
+All Virtual Machines, Directory Servers and Databases will be provisioned and operated by the Government.
+
+If the Contractor’s resource is expected to have direct, privileged access (i.e., local administrator or root) to any servers, they will be provisioned Government Furnished Property subject to Department of Defense and/or Defense Logistics Agency configuration and change management policies and procedures.
+
+The Contractor shall:
+
+Possess an active IT-1 security clearance.
+
+Have documented success of medium to large-scale implementations of BPPM 9.0 or later.
+
+Have a documented partnership with BMC in good standing and sufficient to meet the requirements of the PWS.
+
+Be a US-based company.
+
+BPPM Architecture Design
+
+
+
+
+
+
+
+PROJECT LOCATION
+
+
+
+The professional services will be performed at the DLA Transaction Services facility at WPAFB, OH.
+
+
+
+BASE SUPPORT
+
+
+
+Base support shall be provided by the Government in accordance with this provision.
+
+
+
+Base support includes Government-controlled working space, material, equipment, services (including automatic data processing), or other support (excluding use of the Defense Switched Network (DSN)) which the Government determines can be made available at, or through, any Air Force installation where this contract shall be performed. All Government property in the possession of the Contractor, provided through the base support provision, shall be used and managed in accordance with the Government Property clauses. 
+
+
+
+Unless otherwise stipulated in the contract schedule, support shall be provided on a no-charge-for-use basis and the value shall be a part of the Government's contract consideration. 
+
+
+
+The Contractor shall immediately report (with a copy to the cognizant CAO) inadequacies, defective Government-Furnished Property (GFP), or nonavailability of support stipulated by the contract schedule, together with a recommended plan for obtaining the required support.  Facilities shall not be purchased under this provision. Additionally, the Contractor (or authorized representative) shall not purchase, or otherwise furnish any base support requirement provided by the provision (or authorize others to do so), without prior written approval of the Contracting Officer regarding the price, terms, and conditions of the proposed purchase, or approval of other arrangements.
+
+
+
+Following are installations where base support will be provided: WPAFB, OH.
+
+
+
+The Government support to be furnished under this contract is normal, usual office space, supplies and equipment.  Because of the nature and location(s) of the work performed, the value of such equipment is undeterminable. The Contractor shall not incur any cost resulting from nonsupport prior to Contracting Officer concurrence in accordance with this provision.
+
+
+
+   
+
+TRAVEL
+
+
+
+The Contractor shall obtain approval from the Contracting Officer prior to the accomplishment of any travel. Travel performed in association with this effort shall be done in accordance with the Joint Travel Regulations and should be cost-reimbursement.
+
+
+
+CONTRACTOR MANPOWER REPORTING (CMR)
+
+The contractor shall report ALL contractor labor hours (including subcontractor labor hours) required for performance of services provided under this contract for the Air Force via a secure data collection site. The contractor is required to completely fill in all required data fields at  (using the Air Force link).
+
+
+
+Reporting inputs will be for the labor executed during the period of performance for each Government fiscal year (FY), which runs 1 October through 30 September. While inputs may be reported any time during the FY, all data shall be reported no later than 31 October of each calendar year. Contractors may direct questions to the Air Force CMRA help desk.
+
+
+
+
+
+
+
+
+
+Performance Objective
+
+PWS Para
+
+Performance Threshold
+
+Weekly Status Reports
+
+4.2
+
+Weekly report passes the Government’s inspection upon first submission 75% of the time within a 4 week period; rework must be accomplished within one business day.
+
+Development BPPM deployment
+
+3.1
+
+Deployment passes the Government’s testing upon first inspection; rework must be accomplished within two weeks.
+
+Production BPPM deployment
+
+3.1
+
+Deployment passes the Government’s testing upon first inspection; rework must be accomplished within two weeks.
+
+Solution Documentation
+
+4.3, 4.4, 4.5, 4.6, 4.7
+
+Systems documentation passes the Government’s inspection upon first submission 80% of the time; rework must be accomplished within one week.
+
+252.209-7994  Representation by Corporations Regarding an Unpaid Delinquent Tax Liability or a Felony Conviction under any Federal Law — Fiscal Year 2014 Appropriations.
+
+
+
+REPRESENTATION BY CORPORATIONS REGARDING AN UNPAID DELINQUENT TAX LIABILITY OR A FELONY CONVICTION UNDER ANY FEDERAL LAW—FISCAL YEAR 2014 APPROPRIATIONS 
+
+(DEVIATION 2014-O0004) (OCTOBER 2013)
+
+
+
+	(a)  In accordance with section 101(a) of Division A of the Continuing Appropriations Act, 2014 (Pub. L. 113-46),  none of the funds made available by that Act for DoD (including Military Construction funds) may be used to enter into a contract with any corporation that—
+
+
+
+(1)  Has any unpaid Federal tax liability that has been assessed, for which all judicial and administrative remedies have been exhausted or have lapsed, and that is not being paid in a timely manner pursuant to an agreement with the authority responsible for collecting the tax liability, where the awarding agency is aware of the unpaid tax liability, unless the agency has considered suspension or debarment of the corporation and made a determination that this further action is not necessary to protect the interests of the Government; or 
+
+
+
+(2)  Was convicted of a felony criminal violation under any Federal law within the preceding 24 months, where the awarding agency is aware of the conviction, unless the agency has considered suspension or debarment of the corporation and made a determination that this action is not necessary to protect the interests of the Government.
+
+
+
+	(b)  The Offeror represents that—
+
+
+
+		(1)  It is [ ] is not [ ] a corporation that has any unpaid Federal tax liability that has been assessed, for which all judicial and administrative remedies have been exhausted or have lapsed, and that is not being paid in a timely manner pursuant to an agreement with the authority responsible for collecting the tax liability,
+
+
+
+		(2)  It is [ ] is not [ ] a corporation that was convicted of a felony criminal violation under a Federal law within the preceding 24 months. 
+
+
+
+
+
+
+
+
+
+____________________________		        _______________________
+
+CONTRACTOR SIGNATURE			   DATE
+

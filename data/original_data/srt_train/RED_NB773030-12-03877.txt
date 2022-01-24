@@ -1,0 +1,120 @@
+Amendment 0001
+
+NB773030-12-03877 Android Security Testing
+
+
+
+
+
+The purposes of this amendment are as follows:
+
+
+
+To modify the Combined Synopsis heading section, from:
+
+
+
+THIS IS A COMBINED SYNOPSIS/SOLICITATION FOR COMMERCIAL
+
+ITEMS PREPARED IN ACCORDANCE WITH THE FORMAT IN FAR SUBPART 12.6-STREAMLINED PROCEDURES FOR EVALUATION AND SOLICITATION FOR COMMERCIAL ITEMS-AS SUPPLEMENTED WITH ADDITIONAL INFORMATION INCLUDED IN THIS NOTICE. THIS ANNOUNCEMENT CONSTITUTES THE ONLY SOLICITATION; QUOTATIONS ARE BEING REQUESTED, AND A WRITTEN SOLICITATION DOCUMENT WILL NOT BE ISSUED. THIS SOLICITATION IS BEING ISSUED USING SIMPLIFIED ACQUISITION PROCEDURES UNDER THE AUTHORITY OF FAR SUBPART 13.5 TEST PROGRAM FOR CERTAIN COMMERCIAL ITEMS
+
+
+
+to:
+
+
+
+THIS IS A COMBINED SYNOPSIS/SOLICITATION FOR COMMERCIAL
+
+ITEMS PREPARED IN ACCORDANCE WITH THE FORMAT IN FAR SUBPART 12.6-STREAMLINED PROCEDURES FOR EVALUATION AND SOLICITATION FOR COMMERCIAL ITEMS-AS SUPPLEMENTED WITH ADDITIONAL INFORMATION INCLUDED IN THIS NOTICE. THIS ANNOUNCEMENT CONSTITUTES THE ONLY SOLICITATION; QUOTATIONS ARE BEING REQUESTED, AND A WRITTEN SOLICITATION DOCUMENT WILL NOT BE ISSUED.
+
+
+
+To provide answers to questions received pertaining to this solicitation:
+
+
+
+
+
+a. What is the primary use of the tool, can you give me an use case?
+
+
+
+To detect security vulnerabilities, poor programming practices, excessive permissions, and reliability problems.
+
+
+
+b. Is it to validate Android Apps before installing them on secured devices?
+
+
+
+To detect security and reliability problems before installing them on devices.
+
+
+
+c. Enforce pre-specified access policies, can you provide some examples?
+
+
+
+Apps cannot access contact list, for example.
+
+d. Is it the government's intent to procure a commercial software product, or to procure software development services?
+
+ 
+
+NIST will consider existing products and wherever technology gaps exist will procure software development services to bridge these gaps.
+
+
+
+ 
+
+e. Is the contractor expected to define detailed requirements and acceptance criteria for the software items and documentation developed under this contract?
+
+ 
+
+Yes.
+
+ 
+
+f. What is the government's preferred licensing approach for developed and related software? Will the government accept the use of commercial, license required, software in the product? Does the government intend to use only software components available to the government without cost (Governmen-purpose rights, public-domain or other freely available code (e.g., GPL))?
+
+ 
+
+NIST will evaluate each proposal based on the technical capabilities, the licensing approach will depend on how much of the technology has already been developed by the vendor, and how much of the technology will be government funded.
+
+
+
+
+
+g. There exist a wide range of software that can perform elements of the government's requirements. Is the contractor free to choose which of these components are to be integrated into the procured tool?
+
+
+
+Yes.
+
+
+
+ 
+
+h. In the "Contractor requirements" section of the solicitation there are paragraphs stating that "the Contractor will" or "the Contractor shall" or "the vendor's tool should."  Is it the government's intention that all of these qualifiers be interpreted as requirements of the development activity? (replace "will" and "should" with "shall")?
+
+ 
+
+Yes.
+
+
+
+i. Still within the "Contractor Requirements" section, in the list of 4 items that the vendor's tool should be able to do, can the government clarify what was intended by item #4?
+
+ 
+
+The software tool should be able to scan apps with thousands of lines of code.
+
+
+
+j. How will technical sufficiency of the vendor product be determined, that is, what are the acceptance criteria for the software developed? Should the contractor propose acceptance criteria with the quotation, or as part of determining the detailed design?
+
+
+
+The contractor can propose acceptance criteria.
+

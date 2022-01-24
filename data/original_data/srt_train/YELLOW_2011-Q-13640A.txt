@@ -1,0 +1,279 @@
+SOLICITATION NOTICE:  The Centers for Disease Control and Prevention, National Institute for Occupational Safety and Health (NIOSH), Office of Mine Safety and Health Research (OMSHR), has a requirement for MAIDETS Application Revision and Update.
+
+
+
+      This requirement is solicitated as a small business set aside.
+
+
+The CDC intends to award a single Firm-Fixed-Price Purchase Order in accordance with FAR Part 13. The period of performance is 12 months from date of contract award.
+
+
+
+
+
+TITLE OF PROJECT:  MAIDETS Application Revision and Update  
+
+
+
+Statement of Work
+
+
+
+Title: Mine Accident Injury and Illness Data Exploration Tools Application (MAIIDETS)  Revision and Data Update
+
+
+
+Period of Performance: September 1, 2011 - July 31, 2012
+
+
+
+Background and Purpose:
+
+
+
+The mission of NIOSH’s Office of Mine Safety and Health Research is to eliminate mining fatalities, injuries, and illnesses through research and prevention. The program, which began in 1910 under the U.S. Bureau of Mines, has contributed significantly to safety and health improvements in the mining industry. Mine safety research engineering needs and targeting is dependent on mine accident, injury and illness surveillance data. It is important to have current, relevant data. Fast and systematic procedures to accurately process, analyze, and distribute these data are vital.
+
+
+
+MAIIDETS is an intranet application (http://maiidetsdev.cdc.gov/) that uses an array of application programming interfaces (API’s) and internally developed application tools to process the Mine Safety and Health Administration’s (MSHA) data from the agency’s “Address and Employment”, “Accident , Injury, and Illness”, and “Area and Personal Samples” data files available from MSHA at . or on an individual mine basis from their “Mine Data Retrieval System” (). Though the MAIIDETS application hosts direct access to mine and accident data summary tables and charts, it is most useful to researchers for its interactive capabilities. MAIIDETS offers users the ability to build custom datasets and provides tools to examine, analyze, map, and report results from these datasets. The application was designed to make MSHA data more transparent and easily accessible to both frequent and occasional users. Though MAIIDETS is supplementary to other in-house analysis tools, the application’s goal is to offer interactive tools that provide standardized methods that produce consistent results across a wide range of user skills. MAIIDETS also could serve as a host for future data sharing/integration opportunities for noise, demographic, and mine equipment data. Top third party applications were integrated into the application to enhance and expand output capabilities.
+
+
+
+Task Order Overview:
+
+
+
+This statement of work for the revision and update of MAIIDETS delineates the tasks needed to make the application operational on CDC servers in Atlanta. The tasks delineate the work necessary to make MAIIDETS fully functional, utilizing “state of the art” code. MAIIDETS will also need to be loaded with MSHA Mine Address and Employment, and Accident, Injury, and Illness data from 1983 through 2010.
+
+
+
+Tasks:
+
+
+
+The Contractor shall perform the following tasks.
+
+
+
+Task 1: Kickoff Meeting
+
+
+
+A preliminary meeting will be scheduled at CDC/NIOSH Spokane Research Lab (SRL) for September. Key project personnel from the Contractor, including the Project Manager and at least one program code writer will be present to discuss the scope of work, code and deployment issues, expected deliverables, and the project schedule. (A mid-contract and a contract close meeting will also be scheduled.  Times will be determined based on the contract progress.)
+
+
+
+Task 2: Deploy and Host MAIIDETS on a Fully Functional Development Server
+
+
+
+The MAIIDETS application is currently housed on a server in Atlanta. The contractor shall install and configure MAIIDETS on their own server at their own place of business for testing and development.
+
+
+
+Task 3: Rewrite .NET and SQL Server Code
+
+
+
+The MAIIDETS application is currently written in ASP.NET version 2.0 and SQL Server 2000. The contractor will update MAIIDETS code to .NET 3.5 ( or .NET 4.0 if it is available when coding begins) and SQL Server 2008. Updating will substantially increase MAIIDETS capabilities and efficiencies.
+
+Task 4: Install New Third Party Software
+
+
+
+OMSHR staff will request from Atlanta ITSO the creation of a consolidated environment for the MAIIDETS ASP.NET application and its database. After Certification and Accreditation of Third Party software and the MAIIDETS application with its database, the contractor will be responsible for installation of newer MAIIDETS upgraded Third Party software on host servers in Atlanta. This will require the contractor to work remotely with ITSO personnel in Atlanta for direct access to the application for updating and modification. The contractor will be responsible to ensure that the most recent versions of Third Party software are installed properly on the correct servers and that their functionality within the MAIIDETS application is fully restored. Purchase and acquisition of the upgraded versions of this software (the 508 Compliant Corda Technologies, server graphing PopCharts / Optimap and Autodesk MapGuide Server software) will be the responsibility of NIOSH OMSHR.
+
+Task 5: Load Current and Historic MSHA Data
+
+
+
+The contractor shall load SPSS, SAS, or dBase MSHA data files into MAIIDETS. The MSHA data files will be provided by OMSHR. These data will be processed MSHA year-end close-out files covering the time period from 1983 through 2010.
+
+Task 6: Correct Coding Errors
+
+
+
+The contractor will work with the NIOSH OMSHR surveillance personnel to identify and restore original functionality that once worked but is now reported as an “error”. This may be due to programming changes made elsewhere in the application or incompatibility due to system environmental changes that occurred during the application’s move from the Spokane server environment to the Atlanta environment. For example, the incidence rate calculator wizard no longer results in a numerical rate output.
+
+Task 7: Install Login Security to Enable Restrict-by-Account
+
+
+
+MAIIDETS currently has no system limits. The contractor will write into the application a tool that will manage user access rights. The revised system will have a security management system enabling new accounts to be granted “GUEST” privileges as default.  A MAIIDETS system administrator will need to have the capability to grant access rights beyond “Guest.”
+
+Task 8: Reformat Fonts and Style to Conform to NIOSH/CDC Standards
+
+The contractor will update the MAIIDETS format style so that it is consistent with fonts and formats of existing OMSHR/NIOSH/CDC web sites.
+
+Task 9: Create Working Models for Updating Procedures
+
+The contractor will create an update utility to allow OMSHR personnel to add future year’s MSHA “close-out” data to the system. This will enable designated personnel with the proper administrative access rights to run stored automated procedures that will update the MAIIDETS Production Server with annual MSHA Address and Employment, Accident Injury and Illness, and Sampling data. 
+
+Task 10: Create a “Glossary of Terms” and “User Help Guide”
+
+The contractor will create a “Glossary of Terms” database widget that can be accessible from anywhere in the MAIIDETS application to look-up definitions of mining terms. The contractor will also create an on-line help manual which will be accessible from anywhere in the system.
+
+
+
+Task 11: Prepare Final Project Report
+
+The contractor will prepare a final report which presents a summary of the work done to update and make functional the MAIIDETS application. This report should also include recommendations for improving the speed, efficiency, and ease of use of MAIIDETS.
+
+Special Notes:
+
+The contractor will document and provide to OMSHR all source code modification of old code and the new code written to update the MAIIDETS application.
+
+OMSHR will take ownership of all source code and any Third Party tool licenses used in MAIIDETS, other than Microsoft Visual Studio.
+
+To the maximum extent possible, 508 compliance must be addressed in the reporting, charting, and mapping products of the application.
+
+The contractor will be required to submit to OMSHR interim installs of builds during development for OMSHR testing and assistance with the certification and accreditation (C&A) process.
+
+
+
+Schedule of Deliverables:
+
+
+
+
+
+Minimum Contractor Evaluation Criteria:
+
+
+
+MAIIDETS Experience — The contractor must demonstrate previous work experience and understanding with the MAIIDETS application code for purposes of updating code so that it works on CDC Atlanta servers. Additionally, the contractor must have had several years experience working with safety data to understand both the needs of government agency and the source company (e.g. mining company) in terms of database query and output products.
+
+
+
+Location/Travel — The contractor’s project manager or designated project engineer must be able to make several and possible short notice meetings to the CDC/NIOSH Spokane Research Lab, Spokane, Washington. A minimum of three trips to the Spokane office are anticipated. The first trip at the onset of the contract would include the contractor’s project leader and the principle team programmer, the second and last trips to Spokane would be for one day each to include at least the Project Leader and would be timed approximately mid-way and at the close of the contract. Up to two additional trips, by the contractor’s Project Leader, to Spokane should be anticipated and planned.
+
+
+
+Personnel — Project manager must be a certified safety professional with experience in working with government safety regulatory agencies such as OSHA and MSHA and must have a basic understanding and experience in collection methods, definitions and analysis of accident, injury, and illness data these agencies collect and report. Some knowledge or work experience among the contractor’s team in mining or with mining companies is critical. 
+
+
+
+Technical Approach — Project team members working on the project should be all in-house with no programming code subcontracted out of their office. The contractor must have experienced programming staff with multiple years of experience with the same management. It is critical that the contractor provide staff that will be qualified to gain clearance to the CDC IT infrastructure and NIOSH SRL Spokane campus. The contractor’s team must have the ability be to conduct MAIIDETS application modifications and fixes “real-time”. The contractor needs to have a record of strategic planning in his experience of directing program code changes to foresee future needs of the application/system as it grows and technology changes. Additionally, the contractor must demonstrate that they have and utilize a “standards document” to organize their code in order to facilitate future code updates.
+
+
+
+Web-based Charting and Geospatial Mapping Experience — The contractor must have experience in incorporating a variety of 3rd-party licensed mapping and charting software into web based data applications.
+
+
+
+The complete solicitation document, and reference material, if applicable, will be available for downloading at  on or about August 12th and quotes will be due by August 26th.  No verbal or written request for copies will be accepted.  Forward your reply to Margaret Mooney at .  It is the responsibility of perspective offerors to stay abreast of additional postings regarding this solicitation at the FedBizOpps internet site.  Questions will be accepted through August 18th and posted to the website by August 23rd.
+
+No government-wide notes apply.  All vendors must be registered in the Central Contractor Registry (CCR) prior to an award of a federal contract.  The website is:  
+
+All responsible responsive sources may submit an offer which shall be considered by the agency.
+
+
+
+
+
+
+
+
+
+OFFEROR CRITERIA :  MAIIDETS Contract Solicitation 
+
+
+
+
+
+Minimum Contractor Evaluation Criteria:
+
+
+
+MAIIDETS Experience — The contractor must demonstrate previous work experience and understanding with the MAIIDETS application code for purposes of updating code so that it works on CDC Atlanta servers. Additionally, the contractor must have had several years experience working with safety data to understand both the needs of government agency and the source company (e.g. mining company) in terms of database query and output products.
+
+
+
+Location/Travel — The contractor’s project manager or designated project engineer must be able to make several and possible short notice meetings to the CDC/NIOSH Spokane Research Lab, Spokane, Washington. A minimum of three trips to the Spokane office are anticipated. The first trip at the onset of the contract would include the contractor’s project leader and the principle team programmer, the second and last trips to Spokane would be for one day each to include at least the Project Leader and would be timed approximately mid-way and at the close of the contract. Up to two additional trips, by the contractor’s Project Leader, to Spokane should be anticipated and planned.
+
+
+
+Personnel — Project manager must be a certified safety professional with experience in working with government safety regulatory agencies such as OSHA and MSHA and must have a basic understanding and experience in collection methods, definitions and analysis of accident, injury, and illness data these agencies collect and report. Some knowledge or work experience among the contractor’s team in mining or with mining companies is critical. 
+
+
+
+Technical Approach — Project team members working on the project should be all in-house with no programming code subcontracted out of their office. The contractor must have experienced programming staff with multiple years of experience with the same management. It is critical that the contractor provide staff that will be qualified to gain clearance to the CDC IT infrastructure and NIOSH SRL Spokane campus. The contractor’s team must have the ability be to conduct MAIIDETS application modifications and fixes “real-time”. The contractor needs to have a record of strategic planning in his experience of directing program code changes to foresee future needs of the application/system as it grows and technology changes. Additionally, the contractor must demonstrate that they have and utilize a “standards document” to organize their code in order to facilitate future code updates.
+
+
+
+Web-based Charting and Geospatial Mapping Experience — The contractor must have experience in incorporating a variety of 3rd-party licensed mapping and charting software into web based data applications.
+
+
+
+
+
+
+
+
+
+
+         Task Deliverable
+
+                Copies
+
+                Due Date
+
+Task 1 & 2: Meet with NIOSH/SRL, Deploy and Host MAIIDETS on a Fully Functional Development Server
+
+
+
+Month 1 of contract
+
+Task 2: Rewrite .NET and SQL Server Code
+
+
+
+Months 2–3 of contract
+
+Task 3: Install New Third Party Software
+
+
+
+Months 2-3 of contract
+
+Task 4: Load Current and Historic MSHA
+
+
+
+Months 4-5 of contract
+
+Task 5: Correct Coding Errors
+
+
+
+Months 6-8 of contract
+
+Task 6: Install Login Security to Enable Restrict-by-Account
+
+
+
+Months 9-11 of contract
+
+Task 7: Reformat Fonts and Style to Conform to NIOSH/CDC Standards
+
+
+
+Months 9-11 of contract
+
+Task 8: Create Working models for Updating Procedures
+
+
+
+Months 9-11 of contract
+
+Task 9: Create a “Glossary of Terms” and “User Help Guide”
+
+
+
+Months 9-11 of contract
+
+Task 10: Final Report
+
+2
+
+Month 12 of contract<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2F2011-Q-13640Terms%26Conditions.docx%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us"/><script type="text/javascript">url="http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2F2011-Q-13640Terms%26Conditions.docx%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>

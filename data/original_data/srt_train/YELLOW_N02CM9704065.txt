@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FAttachment4QASP.pdf%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us"/><script type="text/javascript">url="http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FAttachment4QASP.pdf%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>Attachment 1
+
+PACKAGING AND DELIVERY OF THE PROPOSAL
+Your proposal shall be organized as specified in Section L.2., "Instructions to Offerors" - General Instructions. Shipment and marking shall be as indicated below.
+
+EXTERNAL PACKAGE MARKING In addition to the address cited below, mark each package as follows:
+
+RFP NO. N02-CM-97040-65 DUE DATE: November 10, 2009 at 2:00 PM (Eastern Prevailing Time)
+.
+
+TO BE OPENED BY AUTHORIZED GOVERNMENT PERSONNEL ONLY
+
+PLEASE READ THE FOLLOWING INFORMATION CAREFULLY:
+
+NUMBER OF COPIES
+
+TECHNICAL PROPOSAL: ORIGINAL* AND SEVEN (7) COPIES TO: BUSINESS PROPOSAL: ORIGINAL* AND SEVEN (7) COPIES TO:
+
+If hand-delivered or delivery service C. Timothy Crilley, Contracting Officer Office of Acquisitions National Cancer Institute Building 244, Room 112 Fort Detrick Frederick, Maryland 21702-1201
+
+If using U.S. Postal Service C. Timothy Crilley, Contracting Officer Office of Acquisitions National Cancer Institute PO Box B, 244 Miller Drive, Room 112 Fort Detrick Frederick, Maryland 21702-1201
+
+NOTE: Fort Detrick is a secure military base. Couriers delivering proposals must use the 7th Street (Main Entrance) in order to gain access to Fort Detrick. It is recommended that you contact Tim Crilley on 301-228-4224 or Kelly Fowler on 301-228-4239 to schedule a specific date/time in order to deliver your proposal. *THE ORIGINALS MUST BE READILY ACCESSIBLE FOR DATE STAMPING PURPOSES. NOTE: The Government is not responsible for picking up any mail at the local post office. It is the offeror's responsibility to allow sufficient time for security clearance at the main gate and then delivery of the proposal to the designated location by the date and time for receipt of proposals.
+
+If a proposal is not received at the place, date, and time specified herein, it will be considered a "late proposal."
+
+Statement of Work Operation and Maintenance of the Biological Data Processing System A. Overall Objectives The purpose of this contract is to provide software engineering, database design, commercial-off-the-shelf product support, mathematical and statistical support for the Information Technology Branch (ITB). This includes design and or/redesign of application programs as well as initial coding, revising, testing, documenting, operating and maintaining all custom software. The Contractor will work at their own location, but frequently be required to attend meetings with Contracting Officer's Technical Representative(s) (COTRs) at Government offices in Frederick and Rockville, MD. Data communication between the Contractor's site and the NCI- Frederick, located in Frederick, MD will be the responsibility of the contractor. Technical support for troubleshooting and maintaining communications with NCI-Frederick computers will be available to the contractor, but the contractor will be responsible for obtaining and maintaining adequate Internet services. The database operates in an Oracle RDBMS environment on a HP Integrity Server rx8620 using the VMS operating system. The software suite spans several generations of computing technologies. These technologies include:     host based programs running in the VMS environment web-based applications running under Microsoft Windows IIS/ASP web-based applications running under Java2 Enterprise Edition CambridgeSoft Enterprise/Desktop Suite
+
+Figure 1: Environment Oracle10G VAX/VMS Tools SQL*Net, PL/SQL Digital Command Language (DCL), Module Management System (MMS), Code Management System (CMS), TCP/IP Windows (MS, NT) JDK 1.5.0, WebLogic 9.2.0 Visual Basic, Active Server Page, HTML, Adobe PDF Professional JBuilder X, Java Server Page (JSP), Extensible Markup Language(XML), Java 2 Enterprise Edition (J2EE), Concurrent Versions System (CVS) E-notebook, BioAssay, BioSAR, Biological Inventory
+
+Cambridgesoft Enterprise Suite
+
+Attachment # 3 ­ August 13, 2009
+
+Page 1
+
+The goal of the ITB is to consolidate this wide variation of technologies into a consistent architecture. The contractor shall be knowledgeable in the following products and technologies and shall migrate legacy applications from these technologies to the J2EE and/or CambridgeSoft architecture using programming languages and tools listed below: Tools SVG, XSLT, JavaScript, HTML, CSS, EJB, Struts, Hibernate, BEA Weblogic Server, Tomcat, Oracle RDBMS
+
+B. Description of Work 1.0 Software Development Independently, and not as an agent of the Government, the Contractor shall perform the services described below. The Contractor shall provide qualified personnel, material, equipment and facilities not otherwise provided by the Government during performance of this contract. The Contractor shall perform work on all phases of the software life cycle, including requirements analysis, system design, software development, testing, and implementation. The contract will require that solutions be implemented in a wide range of software environments (see figure 1) using many different programming tools. 1.1 General Principals for Software Development (includes new software and upgrades to existing software) 1.1.1 All software databases shall be compliant with current and future ITB data standards. 1.1.2 All applications and data shall be designed to assure integration and interoperability. 1.1.3 All applications shall be delivered in a timely fashion determined by the Contracting Officer's Technical Representative. 1.1.4 All applications shall be user-friendly and meet the needs of staff as outlined during the project development. 1.1.5 All new software shall be compliant with section 508 of the Rehabilitation Act. 1.1.6 The Contractor shall design, develop and deliver software applications to address scientific, operational, and administrative needs. These applications shall be developed utilizing best practices and methodologies. 2.0 Software Testing 2.1 General Principals regarding Software Testing: 2.1.1 The Contractor shall develop and implement a process to validate that all new custom software or custom software upgrades perform as designed and do not adversely impact other custom applications. 2.1.2 The Contractor shall develop and implement processes and procedures to maintain the integrity and quality of new data. 3.0 Documentation
+
+Attachment # 3 ­ August 13, 2009
+
+Page 2
+
+3.1 The Contractor shall develop, update and maintain all system documentation including technical system documentation. 4.0 Software Maintenance 4.1 Maintenance of all current and future applications is critical for continuous successful operations. Maintenance includes, but it not limited to the following:    Corrective Maintenance - Correct any identified bugs in the system. Preventive - Modify system to maintain both effectiveness and reliability. Adaptive - Provide any modifications required to accommodate physical changes in the software environment. These might include, adapting to a new network topology, or reconfiguration to accommodate a new release of ORACLE. Perfective Maintenance - Add new functions to accommodate change in the requirements. Structural Reengineering ­ Modify systems to take advantage of new technology and improve software readability and modularity.
+
+ 
+
+4.2 The Contractor shall perform all periodic operational tasks required to maintain the proper level of performance and integrity of all systems. This shall include all design and/or redesign of system program, verification and validation; initial coding; revision; testing; debugging; documentation for all system software. 4.3 All maintenance to the BDPS system shall be planned and executed with appropriate consideration paid to security issues. 4.4 The Contractor shall deploy all source code and documentation to the application server. 5.0 Transition: Phase-In/Phase-out The transition plan is to define the required activities and to lay out a schedule as to how the current organization will transition to a new contractor. 5.1 Phase-In. The incumbent Contractor shall assist the successful contractor in the transition of this contract. The transition period shall consist of the final 30 calendar days of the current contract. On the 31 calendar day, the successful contractor shall assume all responsibilities. The following shall apply only to a transition wherein the incumbent contractor is not the successful contractor. 5.1.1 The incumbent Contractor shall provide the successor with detailed briefings regarding the structure of the database tables and software required continuing maintenance and operation of systems developed under this contract. 5.1.2 The incumbent Contractor shall transfer all project materials, to include but not limited to, source codes, course files, computer programs, project materials, documentation, operating manuals, etc. to the successor Contractor upon direction from the Contracting Officer and in a
+
+Attachment # 3 ­ August 13, 2009
+
+Page 3
+
+manner prescribed by the Contracting Officer's Technical Representative (COTR). Transfer shall be completed by the expiration date of the contract and shall include provision by the incumbent Contractor of accurate and complete data files and pertinent documentation. 5.1.3 The incumbent Contractor shall transfer the source files and documentation for all software developed on this contract to the successor Contractor. Transfer shall be completed by the expiration date of the contract and shall include provision by the incumbent Contractor of accurate and complete source files and documentation for all software developed. 5.1.4 For a contractor other than the incumbent provide a detailed plan and timetable for implementing the transition from the current facility to the proposed facility. The Incumbent Contractor shall be responsible for the physical move of all inventories. The move shall be accomplished prior to the effective date of the contract. 5.2 Phase-Out. At the conclusion of this effort, the Contractor shall assist in the transition of this contract to a successor contractor. The transition period shall consist of the final 30 calendar days of the contract. On the 31 calendar day, the successor will assume all responsibilities. The following shall apply only to a transition wherein the contractor is not the recipient of the successor award. 5.2.1 The Contractor shall provide the successor with detailed briefings regarding the structure of the database tables and software required continuing maintenance and operation of systems developed under this contract. 5.2.2 The Contractor shall transfer all project materials, to include but not limited to, source codes, course files, computer programs, project materials, documentation, operating manuals, etc. to the successor Contractor upon direction from the Contracting Officer and in a manner prescribed by the Contracting Officer's Technical Representative(s). Transfer shall be completed by the expiration date of the contract and shall include provision by the incumbent Contractor of accurate and complete data files and pertinent documentation. 5.2.3 The Contractor shall transfer the source files and documentation for all software developed on this contract to the successor Contractor. Transfer shall be completed by the expiration date of the contract and shall include provision by the incumbent Contractor of accurate and complete source files and documentation for all software developed. 5.2.4 Provide a detailed plan and timetable for implementing the transition from the current facility to the proposed facility. The Incumbent Contractor shall be responsible for the physical move of all inventories. The move shall be accomplished prior to the effective date of the contract. 6.0 Miscellaneous 6.1The Contractor shall participate, as needed, in joint government personnel and government contractor's software development efforts, which include software development, database integration, and implementation of shared information management resources
+
+Attachment # 3 ­ August 13, 2009
+
+Page 4
+
+7.0 Staff Experience Requirements The Project Manager shall be considered a key person and should devote 50% of his or her time to this project. The Project Manager shall be expected to perform as a senior level developer as well as manage the overall efforts of the development team. The Project Manager shall have extensive experience with the full life cycle of large applications projects and the following experience:  Within the last ten (10) years, the Project Manager shall demonstrate eight (8) years of experience with application systems design and development, three (3) of which are at the management level. Within the last seven (7) years, the Project Manager shall have five (5) recent years working in an ORACLE environment on a VAX/VMS platform. Experience managing the development of large biological database systems within the last four (4) years. Experience managing a software development team in a J2EE environment using web-based BEA WebLogic application server front end tools and ORACLE as a database server within the last four (4) years Experience developing in a J2EE environment.
+
+  
+
+
+
+Programmer Analysts The two Analysts shall be committed full time to this project. Within the last eight (8) years, the Analysts shall demonstrate six (6) years of experience with application system design and development. Within the last six (6) years the Analysts shall demonstrate four (4) years of experience designing and developing systems in an ORACLE/Java/J2EE environment. At least one (1) analyst shall possess experience implementing solutions using the CambridgeSoft Enterprise Software Suite. The experience should document requirements analysis, template configuration and processing, as well as support for subsequent data mining techniques. Programmer The Programmer shall be committed full-time to this project and shall have experience with full life cycle of large application projects. Within the last six (6) years, the Programmer shall have six (6) years experience with ORACLE within the last six (6) years and two (2) years experience with J2EE/Java environment.
+
+Attachment # 3 ­ August 13, 2009
+
+Page 5
+
+The application portfolio listed in the table below has documentation available in the electronic reading room at:
+http://dtp.nci.nih.gov/BDPSAcqusitionPlan2009ReadingRoom/
+
+System Name Aids Decisions Antimicrobial Activity Assignment BEC Minutes
+
+Cancer Decisions Combination/Fractionation
+
+COMMON Data Warehouse
+
+Generic Plate Loader High Throughput Prescreen
+
+Hollow Fiber Analysis/Spreadsheet
+
+Hollow Fiber Scoring Hollow Fiber Setup
+
+Hollow Fiber Calculation In vivo Presentation In vivo Detailed Graphics In vivo Calculation
+
+Description Supports the evaluation of Aids screening results Antimicrobial DB and reporting of activity reports Support the assignment and availability of Cancer compounds Supports maintaining detail minutes, action items, and monthly reports Supports the evaluation of Cancer screening results Supports assignment of Combination/Fractionation compounds Lookup tables and functions that are referenced BDPS systems Supports common data architecture for biological data available to public researchers Supports the screening laboratories plate data Supports the cell-based anticancer compound 384 well plate format for screening Support the Hollow Fiber in vivo assay. It involves implanting hollow fibers contain cancer cell lines into animals, treating the animals with drugs and then removing the fibers and testing them in vitro Supports data summarization of the in vivo hollow fiber assay Supports initial indices of in vivo drug efficacy Hollow Fiber screen Supports calculation module for Hollow Fiber screen Produces presentation-quality graphs for the in vivo screen. Produces graphs of the animals in an in vivo test group Supports the evaluation of
+
+System Tools J2EE J2EE J2EE J2EE
+
+PL/SQL J2EE
+
+Oracle Database Only PL/SQL
+
+J2EE Oracle Database Only
+
+J2EE
+
+J2EE J2EE
+
+PL/SQL J2EE J2EE PL/SQL
+
+Attachment # 3 ­ August 13, 2009
+
+Page 6
+
+Material Safety Data Sheets
+
+Molecular Target Screening Natural Product Tracking
+
+Natural Product Raw Material Natural Products Plant Header
+
+PreScreen (Natural Products and Synthetic) Screening System Aids
+
+Screening System Cancer
+
+Screening System OneDose
+
+clinical efficacy in vivo screening results Supports know hazard and safety information on each compound for NCI repository Supports for a cell based screen for inhibitors Supports Natural Products processing and shipments of extracts Supports Natural Products collection of extracts Supports the protocols from 1959-1972 for screening Natural Products against in vitro biological system Supports the cell-based anticancer compound Prescreen screening database Support the cell-based antiviral screenings assays, which examine the anti-HIV activity of synthetic and pure natural product compounds Support the cell-based anticancer compound screening, which examine activity of synthetic and pure natural product compounds Support the cell-based anticancer compound screening program for 60 cell lines at a single dose which examine the activity of synthetic and pure natural product compounds in vitro Cell Line Screening System (IVSS). IVSS is designed to screen compounds for potential anticancer activity Maintains and support the Supplier Reporting System (SRS) providing graphical and tabular reports used for in-house evaluation of anti-cancer and anti-AIDS screens Two procedures called from with Java modules Oracle
+
+Active Server Page JavaScript J2EE Active Server Page JavaScript J2EE J2EE
+
+Oracle Database Only
+
+Oracle Database Only
+
+Database modules packages, procedures, functions, triggers, DCL scripts, SQL*Plus scripts Database modules packages, procedures, functions, triggers, DCL scripts, SQL*Plus scripts
+
+Screening System in vitro
+
+Supplier Report
+
+Database modules packages, procedures, functions, triggers, DCL scripts, SQL*Plus scripts, J2EE J2EE
+
+Supplier Report Cancer Package Stanford/ARL
+
+Oracle PL/SQL Oracle Database Only
+
+Attachment # 3 ­ August 13, 2009
+
+Page 7
+
+Supplier Notification Task Tracking
+
+Test Counts
+
+Test History Time Course Assay
+
+Oracle Batch Job sends email to suppliers about data availability Support the assign compounds to a branch for a particular task. Supports the reporting of statistics for screening Supports the reporting of compounds complete in the different anti-cancer screens Support the web-based system to facilitate data capture, calculation, analysis, presentation and efficient database retrieval for allowing a ranking of cell line sensitivities on the basis of time-relevant drug exposure conditions
+
+Oracle Database/Oracle Batch Jobs J2EE J2EE J2EE
+
+Active Server Pages JavaScript J2EE
+
+Appendix 1: Glossary of Terms ASP - Active Serve Page BDPS - Biological Data Processing System BEA - WebLogic - Application Server CMS - Code Management System CSS - Cascading Style Sheets CO - Contracting Officer COTR ­ Contracting Officer's Technical Representative COTS ­ Commercial-off-the-shelf Software CVS - Concurrent Versions System DBMS - Database Management System DCL - Digital Command Language DCTD - Division of Cancer Treatment and Diagnosis, NCI DHHS - Department of Health and Human Services EJB - Enterprise Java Beans Hibernate - Object-relation mapping library for the Java language
+
+Attachment # 3 ­ August 13, 2009
+
+Page 8
+
+HTML - Hyper Text Markup Language ITB - Information Technology Branch JSP - Java Server Page J2EE - Java 2 Enterprise Edition LAN - Local Area Network MMS - Module Management System NCI - National Cancer Institute NIH - National Institutes of Health PBSC - Performance-Based Service Contracting ORADIS - NCI Drug Information System PDF - Portable Document Format PL/SQL - Procedural Language/Structured Query Language PRS - Performance Requirements Summary Struts - open-source web application framework for developing web applications. QA - Quality Assurance QASP - Quality Assurance Surveillance Plan RDBMS - Relational Data Base Management System SVG - Scalable Vector Graphics XML - Extensible Markup Language XSLT - Language for transforming XML documents into other XML documents.
+
+Attachment # 3 ­ August 13, 2009
+
+Page 9
+
+Quality Assurance Surveillance Plan Listing of Acceptable Quality Levels (AQL)
+Indicators/Tasks Weight Standard/AQL Degree of Deviation Method of Surveillance 6 Months Project Officer Performance Assessment 6 Months Project Officer Performance Assessment 6 Months Review Incentive (+/-) Date and Degree Accepted
+
+1
+
+Software Design
+
+35%
+
+81-90% Performance assessment
+
+2
+
+Software Development and Maintenance Daily Operations
+
+50%
+
+81-90% Performance assessment
+
+3
+
+10%
+
+<48 Hours response to Project Officer
+
+4
+
+Overall User Satisfaction
+
+5%
+
+90% User satisfaction
+
+91-100%(+) 81% Standard AQL 71% (-) Below 71% (0%) 91-100%(+) 81% Standard AQL 71% (-) Below 71% (0%) <24 (+) <48 Normal (AQL) <72 (-) >72 (0%) 91-100%(+) 81% Standard AQL 71% (-) Below 71% (0%)
+
+6 Months User Surveys
+
+91% - up = 100% of AAF (+) 81% - 90% of AAF (AQL) 71% - 80% = 80% of AAF (-) Below 71% = 0% of AAF 91% - up = 100% of AAF (+) 81% - 90% of AAF (AQL) 71% - 80% = 80% of AAF (-) Below 71% = 0% of AAF <24 hrs = 100% of AAF (+) <48hrs = 90% of (AQL) <72 hrs = 80% of AAF (-) >72 hrs = 0 of AAF 91% - up = 100% of AAF (+) 81% = 90% of AAF (AQL) 71% - 80% = 80% of AAF (-) Below 71% = 0% of AAF
+
+% Achieved % achieved equated to $ of the Allowable Award Fee (AAF) for the Period. Project Officer This will be sent to the Contractor every quarter (3 months) and on a six (6) month interval. The Contractor will be notified what dollar amount of the available award fee to invoice. Acronyms: Acceptable Quality Levels (AQL) Allowable Award Fee (AAF) Statement of Work (SOW)
+
+Attachment # 4 - QASP
+
+QASP - Evaluation and Rating of Contractor Performance Evaluation of Contractor's performance shall be based on the requirements delineated in the Contract and shall be rated according to the system set forth in the Quality Assurance Surveillance Plan (QASP). The relative weights of each evaluation criteria are delineated in the QASP. 1. Software Design All new software designs will be assessed based on a "Project Officers Performance Assessment". All projects will be assessed based on the following factors: a. Complete design plan b. Project Plan c. Delivery Dates and milestones outlined 2. Software Development and Maintenance All software development and maintenance will be assessed based on a "Project Officers Performance Assessment" on the following factors: a. Complete development and maintenance as proposed in software design includes:  All required modules are updated in Concurrent Versions System (CVS)  Overview of entire system  Documentation  Unit Testing  Build Scripts  Detailed module dependencies reports  Deployment requirements
+
+b. Comparison of actual production software deployment date to the estimated production software deployment date that was base lined in the approved software design. c. Verification of software functionality to meet required systems architecture and system performance.
+
+Attachment # 4 - QASP
+
+3. Daily Operations During the life of the contract daily operations include verifying proper level of performance and integrity of the Biological Data Processing System (BDPS) databases. Operations logs and system statistics will be accessed randomly. The acceptable standard is 48 hours response to Project Officer of any performance or integrity problems on the BDPS databases, 4. Overall Technical and Managerial Performance ­ User Satisfaction The following factors will be rated in the user satisfaction survey: a. Rate of Performance: Is work scheduled and promptly executed; are project levels of effort achieved on schedule. b. Responsiveness: Does the Contractor show responsiveness and support initially and during the course of a given task to ensure quality and effective communication among project personnel and the Government or Contractor counterparts. c. Management effectiveness: Are the Contractor's costs within established budgets or cost estimates; are plan/proposals for implementation developed in a timely manner; does the Contract demonstrate initiative and capability in discussing alternative approaches.
+
+Attachment # 4 - QASP
+
+

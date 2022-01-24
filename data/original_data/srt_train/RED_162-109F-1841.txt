@@ -1,0 +1,780 @@
+
+CLIN  DESCRIPTION                                  QTY        UNIT
+0001  Database Servers -4U Chassis w/8 2.5” SAS                 3         EA
+      Drive Bays, 4ea 8-Core Intel Xeon Processor(E7520)32GB Fully
+      Buffered Mem.2ea 73GB 15K 2.5” Hot Swappable 6Gbps SAS HD
+      ,3ea300GB 10K 2.5” Hot wappable 6Gbps SAS HD
+
+
+
+0002  Database Servers- .2U Chassis                       14        EA
+      with   8 2.5” SAS Drive Bays 2ea.Quad-Core Intel Xeon Processor
+      (E5630)24GB Dual Rank Mem.7ea 146GB Hot Swappable 2.5” 10K
+      SAS HD,Embedded RAID Controller
+
+
+
+0003  File and Print Cluster Servers, 2U Chassis                          3                     EA
+      with   8 2.5” SAS Drive Bays 2ea.Quad-Core Intel Xeon Processor
+      (E5630)24GB Dual Rank Mem.
+
+
+      7ea 146GB Hot Swappable 2.5” 10K
+      SAS HD,Embedded RAID Controller
+
+0004  File and Print Cluster Servers-.1U Chassis with 6 2.5”      3            EA
+      SAS Drive Bay 2ea. Quad-Core Intel Xeon Processor(E5630),12GB
+      Dual Rank Mem.2 ea. 73GB 15K 2.5” Hot Swappable 6 Gbps
+       SAS hard drive,Embedded RAID Controller
+
+
+
+0005  Firewall-.2U Chassis w/8 2.5” SAS Drive Bays 2ea. Quad-Core Intel Xeon Processor(E5630)24GB Dual Rank Mem.7 ea. 146GB Hot Swappable 2.5”
+      10K SAS hard drive Embedded RAID ControllerDual Port GB Ethernet NIC
+                                                   3                      EA
+
+
+0006  Firewall-.2U Chassis w/8 2.5” SAS Drive Bays 2ea. Quad-Core Intel Xeon Processor(E5630)24GB Dual Rank Mem.7 ea. 146GB Hot Swappable 2.5”
+      10K SAS hard drive Embedded RAID ControllerDual Port GB Ethernet NIC
+                                                   2                EA
+
+0007  SAN-.4GB/8GB Disk Array Enclosure Redundant         1                                       EA
+      Controllers
+
+      RedundantPower Supplies w/Cables~450GB Fiber Disk~1TB SATA/FATA Disk(per recommendation)24 Port 8GB Fiber Switches Dual Channel 8GB PCI-e
+
+
+0008  SAN- .4GB/8GB Disk Array Enclosure Redundant              1                                       EA
+      Controllers
+
+      RedundantPower Supplies w/Cables~450GB Fiber Disk~1TB SATA/FATA Disk(per recommendation)24 Port 8GB Fiber Switches Dual Channel 8GB PCI-e
+
+0009         Data Migration Services                                     1                                     EA
+
+
+
+
+STATEMENT OF WORK
+                                       Infrastructure Modernization – Phase I –Server and SAN Replacements
+                                                  Occupational Safety and Health Administration
+                                                      Directorate of Information Technology
+
+
+I     PURPOSE
+
+The U.S. Department of Labor, (USDOL), Occupational Safety and Health Administration (OSHA), Directorate of Information Technology (DIT) is
+responsible for information resource management of agency information technology projects, including management of systems for the electronic
+transmission of occupational safety and health information to OSHA staff, partners and customers.
+
+OSHA’s network hardware has reached the end of its life cycle. DIT has maximized its current configuration, life expectancy, and growth.  OSHA
+has begun a network infrastructure modernization project which will be implemented through a phased approach. This phased approach will minimize
+the impact on OSHA current staffing and budgetary resources.  This statement of work is to begin building an OSHANet server infrastructure that
+will support OSHA’s mobile workforce, improve system performance, provide redundancy for high availability connectivity and disaster recovery,
+provide ease of connectivity for emergency response teams, as well as provide for growth to support future OSHA initiatives.
+
+II    BACKGROUND
+
+As an Agency of the U.S. Department of Labor, the Occupational Safety and Health Administration’s (USDOL OSHA) mission is to assure the safety
+and health of America's workers by setting and enforcing standards; providing training, outreach, and education; establishing partnerships; and
+encouraging continual improvement in workplace safety and health.
+
+III   OVERALL CURRENT INFRASTRUCTURE ENVIRONMENT
+
+The OSHANet is an end-to-end private communications facility consisting of:
+
+      • Approximately 140 local area networks (LANs) at various OSHA federal and state sites,  including offshore sites (Puerto Rico and Virgin
+        Islands)
+      • Approximately 200 servers connected to the network
+      • DNS, DHCP and WINS services
+      • Approximately 10 centralized e-mail servers
+      • Remote access services
+      • Two main data centers: one at the National Office in Washington, DC, and the Recovery Site in Salt Lake City, UT.
+
+The infrastructure connects to the National Office (NO) with the Regional, Area, and Field Offices through a MPLS Wide Area network.  Regional,
+Area, and Field Offices are connected to the network via a T1 to T3 line speed.  These services are achieved though what is commonly known the
+OSHANet, the high level design contains two major elements, WAN and the LAN.
+
+The Wide Area Network (WAN) is the component that links sites and allows OSHA remote sites at different locations to communicate with one
+another.  The main component is located in the National Office with a recovery site in Salt Lake City, Utah.   The Local Area Network (LAN) is
+limited to a specific location, such as a field office and regional offices and provides access to a variety of information resources.
+
+
+IV    SCOPE
+
+The Occupational Safety and Health Administration (OSHA), Directorate of Information Technology (DIT), is responsible for replacing storage
+equipment in the national office located in Washington, DC and the secondary site located in Sandy, UT as well as replacing the required servers
+in the national office located in Washington, DC, the secondary site located in Sandy, UT, and the ten (10) OSHA Regional Offices within the
+target dates. OSHA/DIT requires the procurement, burn-in, setup and shipment of 2 - new SAN storage equipment to the Washington, DC and Sandy,
+UT locations; and procurement and shipment of all servers to the same locations to be completed within 2 months after award.  The new equipment
+and associated software must meet all federal mandates.
+
+
+The equipment and software shall be installed with an OSHA approved configuration, and must pass the federal security certification process.
+The majority of the software installed on the new equipment shall be OSHA-furnished licensed commercial applications.
+
+
+
+A     Scope Task Requirements
+
+
+      The vendor will provide OSHA/DIT the replacement equipment and software to accomplish the OSHA storage solution upgrade and the server
+      upgrade.
+
+
+      Equipment to be replaced:
+
+|Component                                            |Solution                                                         |
+|Servers                                              |Procurement and delivery of select windows based servers in the  |
+|                                                     |National Office, and Sandy, UT Datacenters.                      |
+|Storage – Storage Area Network (SAN)                 |Procurement, installation, configuration, integration,           |
+|                                                     |implementation, and knowledge transfer in the National Office and|
+|                                                     |Sandy, UT                                                        |
+
+
+B     Server and SAN Storage Replacement
+
+      1.  Servers
+      OSHA is specifying the following classes of servers, Class A (File and Print), Class B (Application/Regional Offices), Class C (Database),
+      and Server Class D (Firewall).
+
+|Features                                                                 |Qty        |
+|OSHANet Supported Windows Servers – Washington, DC (National Office Data Center (    |
+|NO))                                                                                 |
+|Class A - File and Print                                                 |3          |
+|Class B - Application/Regional Office Servers                            |14         |
+|Class C - Database Servers                                               |3          |
+|Class D- Firewall                                                        |2          |
+|OSHANet Supported Windows Servers – Sandy, UT (Salt Lake City Data Center)           |
+|Class A - File and Print                                                 |3          |
+|Class D - Firewall                                                       |2          |
+
+           Ten (10) of the Class B servers procured and delivered are being configured by OSHA staff for the Regional offices located throughout
+           the U.S.
+
+      Appendix B – Server Specifications contains detail specifications for the Windows-based Servers; and Appendix D - OSHA Hardware Shipment
+      Locations provides the shipping information.
+
+      2. SAN Storage
+
+
+      OSHA requires the vendor to replace the current SAN in the National Office; Washington, D.C. and Sandy, UT with SAN components that have at
+      least the capability of 4GB/sec fiber and 1GB/sec iSCSI connection speeds which could be upgradable to 8GB/sec fiber and 10GB/sec iSCSI
+      connection speeds.  The SAN component’s total storage capacity should accommodate at least 34 Terabytes for live data storage and 30 TB for
+      archived data.  Appendix C – Minimum SAN Specifications lists the minimum specifications required by OSHA/DIT
+
+
+      OSHA’s storage goals are to provide the initial storage requirements for current, archived, and retention data, as well as providing the
+      performance necessary for optimal service of applications, such as MS Exchange (e-mail), database access and OSHA applications used and
+      accessed by the majority of the OSHA workforce while building the foundational storage infrastructure to allow for future storage growth.
+
+
+
+
+
+
+
+      Example of SAN Configuration for Initial and Future Growth
+
+
+
+      [pic]
+
+
+      Appendix C – Minimum SAN Specifications contains detail information, specifications and quantities of National Office and Sandy, UT storage
+      requirements.  Appendix D – OSHA Hardware Shipping Locations provides the shipping information.
+
+
+
+
+
+
+      V     Deliverables
+
+
+DELIVERABLES MUST BE APPROVED BY OSHA/DIT AND ARE DUE ON TARGET DATES AT APPROPRIATE INTERVALS BUT MUST BE COMPLETED PRIOR TO THE END OF THE
+PERIOD OF PERFORMANCE.  ALL DELIVERABLES MUST BE CONSISTENT WITH FEDERAL GOVERNMENT, DEPARTMENT OF LABOR (DOL), AND OSHA RULES, REGULATIONS, AND
+POLICIES, INCLUDING THE GOVERNMENT INFORMATION SECURITY REFORM ACT (GISRA), THE DOL SYSTEMS DEVELOPMENT AND LIFE CYCLE MANUAL, THE DOL SECURITY
+HANDBOOK, DIT CONFIGURATION MANAGEMENT PLAN AND VARIOUS OSHA DIRECTIVES.  DELIVERABLES SHALL INCLUDE THE FOLLOWING:
+
+
+A.    Vendor Performance
+
+      The vendor will shall provide procure the required servers and SAN storage equipment, installation services and maintenance for the
+      National Office, the Sandy, UT, and ten (10) regional sites that will provide OSHA with access to data resources and additional capacity of
+      storage to support agency goals and objectives.
+
+
+
+
+
+
+      The Government will own all infrastructure equipment, licenses, and maintenance that will be installed, configured, tested, and delivered
+      in the National Office and Sandy, UT locations.
+
+
+      The vendor will deliver all servers to the National Office, Department of Labor, OSHA, Directorate of Information Technology, 200
+      Constitution Avenue NW, Room S6212, Washington, D.C. 20002 and Salt Lake City Technical Center (SLTC), Department of Labor, OSHA,
+      Directorate of Information Technology, 8660 South Sandy Parkway, Sandy, UT 84070 per as specified in Appendix D – OSHA Hardware Shipping
+      Locations.
+
+      Special Instructions for the SAN Storage Equipment
+
+
+      The vendor shall Ddeliver the two new SAN equipment to the National Office, Department of Labor, OSHA, Directorate of Information
+      Technology, 200 Constitution Avenue NW, Room S6212, Washington, D.C. 20002 for setup, configuration and data migration.
+
+
+      The two new SANs are referred to as follows: 1) “National Office SAN”; and 2) “Salt Lake City SAN.”  Upon completion of requirements setup,
+      configuration and data migration, next the vendor shall deliver the Salt Lake City SAN to the Sandy, UT Datacenter.
+
+
+      The vendor will setup, configure and perform data migration from the existing National Office SAN.  The vendor is required to receive
+      Government acceptance after each step below and provide the acceptance forms as part of the final invoice. The SAN setup requirements are
+      listed below:
+
+
+     1. The vendor will setup, and configure the two new SAN devices per OSHA configuration standards
+     2. The vendor will perform data migration from the OSHA’s existing EMC/Clarion SAN to the new “National Office SAN”
+     3. The vendor will next perform data replication between the “National Office SAN” and the “Salt Lake City SAN” (SAN to SAN)
+     4. After successful replication, the vendor will dismantled and repackage the “Salt Lake City SAN”
+     5. The vendor will ship the “Salt Lake City SAN” to, Department of Labor, OSHA, Salt Lake City Technical Center, Directorate of Information
+        Technology, 8660 South Sandy Parkway , Sandy, UT 84070.
+     6. Upon arrival of the new “Salt Lake City SAN” the vendor will dismantle the existing Salt Lake City SAN
+     7. The vendor will setup the new “Salt Lake City SAN” and re-establish the new “National Office SAN” to “Salt Lake City SAN” replication
+        across the WAN.
+     8. The vendor will provide a schematic drawing using MS Visio detailing server rack configurations front and back detailing network
+        connections, all peripherals and power layouts
+
+
+
+      The vendor will work closely with the COTR, OSHA Manager, and other OSHANet technical staff .  Selected vendor shalto l ensure that this
+      project is coordinated to meet contract period of performancerequirement.  The vendor shall provide OSHA with the management oversight and
+      technical expertise to fully implement the SAN equipment.  The vendor shall provide OSHA technical staff with the necessary documentation
+      and knowledge transfer needed to implement and troubleshoot the SAN equipment, and to perform successful data migration and data
+      replication.
+
+
+      The vendor will includeshall provide a well organized transition and knowledge transfer to all required technical staff after the
+      implementation of the SAN.
+
+
+      The vendor shall perform services for the shipmentprovide, inside delivery to each designated room location, on-site installation, setup,
+      and document the services for this project.  These services include the following.The vendor shall provide the following documentation:
+
+
+           Delivery Dates and Times
+
+
+           Immediate Notification Directly If if Equipment Delivery Date Changes,
+
+
+           Immediate Notification Directly  Iif Installation Date Changes,
+
+
+           Equipment Shipment and Tracking,
+
+
+           Inside Delivery to designed room (not just to loading dock)
+
+
+           Unpack Equipment and Setup
+
+
+           Leave each work area clean and free of debris
+
+
+           Service Resource Center for Tracking Service Calls; this should be provided with a plan to replace any equipment deemed “Dead On
+                 Arrival” (DOA) within one (1) business day of notice of these units.
+
+
+      The vendor shall perform all requirements within timeframes approved by OSHA/DIT to meet government target contract dates. The vendor will
+      also provide OSHA/DIT with a Service Resource Center Number and a process and iInstructions to Log and Track Service Calls following the
+      installations.
+
+
+      The vendor shall apply industry best practices to support OSHA in-service hardware through the duration of the purchase agreement.
+
+
+
+
+
+B.    Purchase of hardware and software
+
+
+      The vendor will procure the requested SAN and server equipment, setup, and maintenance.  The Government will own all equipment, software
+      licenses, and maintenance that will be installed, configured, tested, and delivered in OSHA’s National Office, Sandy UT, and Regional
+      Office locations.  The vendor shall provide standard configuration benchmarks and maintenance for all equipment as follows:
+
+         • Quick Reference Guide REF
+         • Custom Project, Factory Install and Integration Service
+         • Hardware Support Services: Federal Keep Your Hard Drive Service: 3 YEAR
+         • 3 Year 7x24 Technical Support with 4 hour Onsite Call Support
+         • Support and 1-800-number
+         • Installation: Standard On-Site
+         • Parts and Labor included
+
+
+
+      All hardware will be received on site at OSHA facilities no later than one (1) month from contract award. All deliveries of equipment will
+      be inside and shipped as specified in Appendix D – OSHA Hardware Shipping Locations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VI    Delivery Format
+
+
+Unless directed to the contrary, the vendor shall deliver one hardcopy and one electronic copy using Microsoft Office Tools, Version 2003
+(approved and accepted by Government) of each deliverable to the Government’s Program Management Office and/or other identified federal point of
+contact to ensure deliverables are on time and acceptable to Government.
+
+
+
+
+VII   ASSUMPTIONS
+
+      • OSHA shall provide guidance and a technical support coordinator.
+      • OSHA shall provide information on the equipment required on-site.
+      • OSHA shall inventory all new equipment
+      • OSHA shall provide the disposition of all old equipment
+      • The vendor shall respond each day in a timely manner to address and resolve problems associated with this project.
+      • The vendor shall provide qualified staff with the proper skill set, knowledge, expertise and technical resources to successfully perform
+        the tasks, meet deadlines, and are in compliance with all federal requirements and mandates.
+
+VIII  SPECIAL INSTRUCTIONS
+
+The vendor staff shall bring problems or potential problems affecting performance or target dates immediately to the attention of the Government
+Project Manager and OSHA COTR. Verbal reports shall be followed up with written reports may be required for the duration of this award.
+
+The vendor shall work with the Government and technical staff to make required technical adjustments to coordinate modifications and efforts
+throughout the life cycle of this project. Problems and concerns identified by the Government shall be addressed and resolved expeditiously
+(within 24 hours or as agreed by the Government).  This includes newly discovered problems that would have a negative impact on the final
+product, services or target dates.  During the project implementation, the contractor shall conduct immediate report to the Government the
+following:
+           a. Newly Identified Technical Issues
+           b. Problem Resolution Plan
+           c. Installation Schedule Revisions
+           d. Replacement Machines for Dead on Arrival or Defective Equipment
+
+
+
+
+      IX    Ownership
+
+
+ALL PRODUCTS AND DELIVERABLES DEVELOPED UNDER THIS CONTRACT ARE THE PROPERTY OF THE U.S. GOVERNMENT AND THE OCCUPATIONAL SAFETY AND HEALTH
+ADMINISTRATION.
+
+
+X     STANDARDS AND REFERENCES
+
+
+The documents listed below are directive upon the contractor. Unless a specific issue is indicated, the issue in effect on the date of the
+contract shall apply for guidance or information only.  Additional reference publications may be made available if applicable:
+
+    • Authority to Operate (ATO) for services
+    • Clinger Cohen Act
+    • Department of Labor Management Series, Section 9 (DLMS-9),
+    • Department of Labor (DOL) Systems Development Life Cycle Manual,
+    • Department of Labor (DOL) Information Technology (IT) Security Manual
+    • Federal Information Security Management Act of 2002 (FISMA)
+    • Federal Acquisition Regulations FAR
+    • Freedom of Information Act (FOIA) and E-FOIA
+    • NIST 800-53 and 800-53a Recommended Security Controls for Federal Information Systems
+    • Office of Management and Budget (OMB) Circular A-130 policies.
+
+XI    FEDERAL REQUIREMENTS
+
+A.    Electronic Product Environmental Product Environmental Assessment Tool (EPEAT)
+
+      The equipment must be energy star compliant as mandated by the Federal Government and within the United States Department of Energy (DOE)
+      standards to improve energy efficiency.
+
+      When applicable, the contractor shall purchase EPEAT-registered green electronic products as required under the Presidential Executive
+      Order 13423, Strengthening Federal Environmental, Energy, and Transportation Management.
+
+
+      The EPEAT is designed to help evaluate and compare selected equipment for the following:
+
+
+         • Ensure that the agency when acquiring an electronic product to meet its requirements, meets at least 95 percent of those requirements
+           with an Electronic Product Environmental Assessment Tool registered electronic product, unless there is no EPEAT standard for such
+           product,
+
+
+         • Enables the Energy Star feature on agency computers and monitors,
+
+
+         • Establishes and implements policies to extend the useful life of agency electronic equipment; uses environmentally sound practices
+           with respect to disposition of agency electronic equipment that has reached the end of its useful life.
+
+
+      Under the EPEAT program, manufacturers declare their products’ conformance to a comprehensive set of environmental criteria.  Products are
+      rated Bronze, Silver and Gold based on how many criteria are met.  EPEAT Gold products must meet all 23 required criteria and at least 75%
+      of the optional criteria.
+
+
+     A. Reduction/Elimination of Environmentally Sensitive Materials
+     B. Materials Selection
+     C. Design for End of Life
+     D. Life Cycle Extension
+     E. Energy Conservation
+     F. End of Life Management
+     G. Corporate Performance
+     H. Packaging
+
+      The new equipment provided to OSHA by the vendor must conform to Executive Order 13423, Section 2(h) which requires that federal agencies
+      use the Electronic Product Environmental Assessment Tool (EPEAT) to evaluate environmentally friendly product features.  This tool is
+      designed to compare selected equipment based on their environmental attributes.  New hardware must meet at least 95 percent of those
+      requirements, unless there is no EPEAT standard for such product.
+
+
+B.    DOL IT Security Requirements
+
+
+      Requirements set forth by the United States (US) Office of Management and Budget (OMB) mandate the implementation of security settings on
+      networked equipment to strengthen security on government computer systems using guidelines and standards developed by the National
+      Institute of Standards and Technology (NIST).
+      All Contract staff working in OSHA office space and/or using OSHA LAN/WAN and computer systems to perform duties under this Contract will
+      agree to and sign the OSHA Rules of Behavior for Computer Use and a Non-disclosure Agreement.  A copy of each signed and witnessed Non-
+      Disclosure agreement shall be submitted to the Contract Project Officer prior to the employee performing any work under any task order.
+
+      All contractor employees must receive security training prior to being given access to OSHA and DOL systems and periodically thereafter are
+      required by DOL/OSHA security policies.
+
+
+      Required Security Training
+
+
+      If applicable, contractor employees must receive security training prior to being given access to OSHA and DOL systems and periodically
+      thereafter are required by DOL/OSHA security policies.
+
+      The provider of information technology shall certify applications are fully functional and operate correctly as intended on systems using
+      NIST guidelines.  The standard installation, operation, maintenance, updates, and/or patching of software shall not alter the OSHA approved
+      configuration settings.
+
+
+C.    Underwriters Laboratory (UL) requirements and be Nationally Recognized Testing Laboratory (NRTL)
+
+
+      The equipment must meet Underwriters Laboratory (UL) requirements and be Nationally Recognized Testing Laboratory (NRTL) certified with a
+      Department of Energy (DOE) energy star rating.  Equipment shall comply with Rules of the Federal Communications Commission (FCC), Code of
+      Federal Regulations (CFR) frequency operations within the Continental United States as appropriate http://www.fcc.gov/oet/info/rules/.
+
+
+D     Section 508 Requirements
+
+
+      If applicable, the contractor shall be required to operate under reasonable accommodations for special needs employees pursuant to recent
+      legislation.  OSHA shall be responsible for procuring any necessary equipment and software needed by special needs employees utilized by
+      the Contractor.
+
+
+XII   POINTS OF CONTACT
+
+      Cheryle Greenaugh, Director
+      Directorate of Information Technology, OSHA, U.S. Department of Labor,
+      OSHA National Office; Francis Perkins Building,
+      200 Constitution Avenue, NW, Room N3663
+      Washington DC, 20210
+      (202) 693-1818
+
+
+      Dennis Sprouse, COTR
+      Directorate of Administrative Programs, OSHA, U.S. Department of Labor,
+      OSHA National Office; Francis Perkins Building,
+      200 Constitution Avenue, NW, Room N3104
+      Washington DC, 20210
+      (202) 693-2429
+
+
+      Tonya Byrd, Vendor Coordinator
+      Directorate of Information Technology, OSHA, U.S. Department of Labor,
+       Francis Perkins Building,
+      200 Constitution Avenue, NW, Room N3663
+      Washington, DC, 20210
+      (202) 693-1818, [Fax Number: (202) 693-2590]
+
+
+      Celina Williams, OSHA Project Leader
+      Directorate of Information Technology, OSHA, U.S. Department of Labor
+      Francis Perkins Building
+      200 Constitution Avenue, NW, Room N3663,
+      Washington, DC, 20210
+      (202) 693-2384
+
+
+      Terry Lane, Federal POC
+      Salt Lake City Technical Center (SLTC)
+      Department of Labor, OSHA
+      Directorate of Information Technology,
+      8660 South Sandy Parkway
+      Sandy, UT 84070
+
+
+
+XIII  PERFORMANCE LOCATIONS
+
+
+      Final acceptance and performance locations are:
+
+      1.  Department of Labor, OSHA
+      Directorate of Information Technology
+      Francis Perkins Building,
+      200 Constitution Avenue, NW, Room S6212
+      Washington, DC, 20210
+
+
+      2.  Salt Lake City Technical Center (SLTC)
+      Department of Labor, OSHA
+      Directorate of Information Technology,
+      8660 South Sandy Parkway
+      Sandy, UT 84070
+
+XIV   WORK HOURS
+
+      Vendor shall perform work for this contract both within the core business hours (7:00 a.m. to 6:00 p.m. local time) and outside core
+      business hours.  Evening and weekend work may be required to minimize disruption of OSHA’s network services.
+
+XV    PERIOD OF PERFORMANCE
+
+      The period of performance is two months from Date of Award.
+
+
+
+
+
+
+
+                                                                    Appendix A
+                                                                Glossary of Terms
+
+
+
+|Acronym/Term                         |Description                                                                                                  |
+|ADA                                  |Americans with Disabilities Act                                                                              |
+|ATO                                  |Authority to Operate.  An accreditation statement acknowledging that a system has been through the           |
+|                                     |DOL-prescribed certification and accreditation process, and has been determined to be operating at an        |
+|                                     |acceptable level of risk.                                                                                    |
+|CSH                                  |U.S. Department of Labor Computer Security Handbook                                                          |
+|DIT                                  |Directorate of Information Technology                                                                        |
+|DOL                                  |U.S. Department of Labor                                                                                     |
+|FAR                                  |Federal Acquisition Regulations                                                                              |
+|FISMA                                |Federal Information Security Management Act                                                                  |
+|FOIA                                 |Freedom of Information Act                                                                                   |
+|IT                                   |Information Technology                                                                                       |
+|NIST                                 |National Institute of Standards and Technology                                                               |
+|NO                                   |National Office                                                                                              |
+|OMB                                  |Office of Management and Budget                                                                              |
+|OSHANet                              |Occupational Safety and Health Administration Network                                                        |
+|Regional Offices                     |OSHA has 10 regions that coordinate the Agency efforts in smaller units.  They manage the activities of the  |
+|                                     |next level as well as delivering some OSHA services directly.                                                |
+|SDLCM                                |System Development Life Cycle Management - Methodology that sets forth a standard and logical process for    |
+|                                     |managing and documenting IT system development activities consistent with legislation and industry standards.|
+|                                     |“System Development Life Cycle Management Manual Administrative Update,” Version 2.1, is the current DOL     |
+|                                     |SDLCM mandated for use throughout DOL for development efforts of all sizes.                                  |
+|Section 508                          |Americans with Disabilities Act (ADA), Section 508.  Law applied to all Federal agencies using electronic and|
+|                                     |information technology to ensure disabled persons access to information that is comparable to the access     |
+|                                     |available to others.                                                                                         |
+|SLTC                                 |Salt Lake Technical Center                                                                                   |
+                                                                    Appendix B
+                                                              Server Specifications
+
+
+Maintenance for each Server:
+
+         • Quick Reference Guide REF
+         • Custom Project, Factory Install and Integration Service
+         • Hardware Support Services: Federal Keep Your Hard Drive Service: 3 YEAR
+         • 3 Year 7x24 Technical Support with 4 hour Onsite Call Support
+         • Support and 1-800-number
+         • Installation: Standard On-Site
+         • Parts and Labor included
+
+
+Server Class A (File and Print) – 6 each
+           1U Chassis with 6 2.5” SAS Drive Bays
+           2 each Quad-Core Intel Xeon Processor (E5630)
+           12GB Dual Rank Memory
+           2 each 73GB 15K 2.5” Hot Swappable 6 Gbps SAS hard drive
+           Embedded RAID Controller
+           Out of band Management Module
+           2 each Dual Port Gigabit Ethernet NIC
+           Dual Port Gigabit Ethernet NIC with TOE
+           DVD Optical Drive
+           Redundant Power Supplies
+           Rail Kit
+           No Operating System
+           Server Management Software
+           Electronic Documentation
+
+
+Server Class B (Application, Regional Office) – 14 each
+           2U Chassis with 8 2.5” SAS Drive Bays
+           2 each Quad-Core Intel Xeon Processor (E5630)
+           24GB Dual Rank Memory
+           7 each 146GB Hot Swappable 2.5” 10K SAS hard drive
+           Embedded RAID Controller
+           Out of band Management Module
+           2 each Dual Port Gigabit Ethernet NIC
+           Dual Port Gigabit Ethernet NIC with TOE
+           DVD Optical Drive
+           Redundant Power Supplies
+           Rail Kit
+           No Operating System
+           Server Management Software
+           Electronic Documentation
+
+
+Server Class C (Database) – 3 each
+           4U Chassis with 8 2.5” SAS Drive Bays
+           4 each 8-Core Intel Xeon Processor (E7520)
+           32GB Fully Buffered Memory
+           2 each 73GB 15K 2.5” Hot Swappable 6 Gbps SAS hard drive
+           3 each 300GB 10K 2.5” Hot Swappable 6Gbps SAS hard drive
+           Embedded RAID Controller
+           Out of band Management Module
+           Quad Port Gigabit Ethernet NIC
+           Dual Port Gigabit Ethernet NIC with TOE
+           DVD Optical Drive
+           Redundant Power Supplies
+           Rail Kit
+           No Operating System
+           Server Management Software
+           Electronic Documentation
+
+
+Server Class D (Firewall) – 4 ea
+           2U Chassis with 8 2.5” SAS Drive Bays
+           2 each Quad-Core Intel Xeon Processor (E5630)
+           24GB Dual Rank Memory
+           7 each 146GB Hot Swappable 2.5” 10K SAS hard drive
+           Embedded RAID Controller
+           Out of band Management Module
+           Dual Port Gigabit Ethernet NIC with TOE
+           2 each Quad Port Gigabit Ethernet NIC
+           DVD Optical Drive
+           Redundant Power Supplies
+           Rail Kit
+           No Operating System
+           Server Management Software
+           Electronic Documentation
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    Appendix C
+
+
+                                             Minimum SAN Specifications (same for National Office SAN
+
+
+                                                             and Salt Lake City SAN)
+
+
+
+
+
+4GB/8GB Disk Array Enclosure
+
+
+Redundant Controllers
+
+
+Redundant Power Supplies with Cables
+
+
+600GB Fiber Disk to equal 34 TB
+
+
+1TB SATA / FATA Disk to equal 30 TB
+
+
+24 Port 8GB Fiber Switches (Brocade or Cisco)
+
+
+Dual Channel 8GB PCI-e Host Bus Adapter
+
+
+Management Software (Snap management, dynamic disk / volume allocation, Server
+
+
+       Virtualization Storage Management)
+
+
+WAN Optimized Replication Software
+
+
+Compatible backup interface to NetBackup
+
+
+
+
+
+High Availability
+
+
+At least 60% of active storage space allocated performing at 99.999% up time.
+
+
+Site to Site Synchronization
+
+
+
+
+
+Maintenance
+
+         • Quick Reference Guide REF
+         • Custom Project, Factory Install and Integration Service
+         • Hardware Support Services: Federal Keep Your Hard Drive Service: 3 YEAR
+         • 3 Year 7x24 Technical Support with 4 hour Onsite Call Support
+         • Support and 1-800-number
+         • Installation: Standard On-Site
+         • Parts and Labor included
+
+
+
+                                                                    Appendix D
+
+                                                         OSHA Hardware Shipment Locations
+
+|                                                     |                                          |                                               |             |
+|OSHA Location/Address                                |Point of Contact                          |Hardware/Include the supporting HW/SW          |Qty          |
+|U.S. Department of Labor/OSHA                        |Edgar Beery                               |Class A - File and Print Servers               |3            |
+|Directorate of Information Technology, National      |beery.edgar@dol.gov                       |Class B - Application Servers                  |4            |
+|Office                                               |                                          |                                               |             |
+|200 Constitution Avenue, NW, Room S6212              |202-693-1814                              |Class B - Regional Office Servers              |5            |
+|Washington DC, 20210                                 |                                          |Class D - Firewall Servers                     |2            |
+|                                                     |                                          |Class C - Database Servers                     |3            |
+|                                                     |                                          |*SAN                                           |2            |
+|                                                     |                                          |                                               |             |
+|                                                     |                                          |                                               |             |
+|U.S. Department of Labor/OSHA                        |Terry Lane                                |Class A - File and Print Servers               |3            |
+|Directorate of Information Technology, Salt Lake City|lane.terry@dol.gov                        |Class B - Regional Office Servers              |5            |
+|Technical Center                                     |                                          |                                               |             |
+|8660 South Sandy Parkway                             |801-233-4986                              |Class D - Firewall Servers                     |2            |
+|Sandy, UT  84070                                     | * After setup – ship one of the above SAN| * SAN                                         |1            |
+|                                                     |to Sandy, UT                              |                                               |             |
+|                                                     |                                          |                                               |             |
+
+
+

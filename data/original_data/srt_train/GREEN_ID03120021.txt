@@ -1,0 +1,2643 @@
+This is a COMBINED SYNOPSIS/SOLICITATION for commercial items prepared in accordance with the information in FAR Subpart 12.6 using Simplified Acquisition Procedures under the Acquisition of Commercial Items at FAR 12. This announcement constitutes the only solicitation; a written solicitation will not be issued. PAPER COPIES OF THIS SOLICITATION WILL NOT BE AVAILABLE. This combined synopsis/solicitation SHALL be posted in FEDBIZOPPS , The RFQ number is ID03120021. This solicitation documents and incorporates provisions and clauses in effect through FAC 2005-55. It is the responsibility of the contractor to be familiar with the applicable clauses and provisions.
+
+The clauses may be accessed in full text at these addresses: www.acqnet.gov/far and http://www.acq.osd.mil/dpap/dfars/index.htm. The NAICS code is 334611 - Software Reproducing.
+
+The proposed contract action is for commercial supplies or services for which the Government intends to solicit and negotiate with ONLY ONE SOURCE under the authority of FAR 12. Interested persons may identify their interest and capability to respond to the requirement or submit proposals. This notice of intent is not a request for competitive proposals. However, all bids, proposals, or quotations received by the closing response date will be considered by the Government. A determination by the Government not to compete with this proposed contract based upon responses to this notice is solely within the discretion of the Government.
+
+Information received will normally be considered solely for the purpose of determining whether to conduct a competitive procurement. 
+
+
+
+Sole Source provider is:
+
+QUADRAMED CORPORATION
+
+12110 SUNSET HILLS RD  STE 600
+
+RESTON, VA 20190-3223
+
+
+
+
+This supply/services action is for:
+
+The VA Eastern Colorado Health Care System has identified the need to pursue a pilot project for a Natural Language Processing (NLP)/ Computer Assisted Coding (CAC) software solution through the Department of Veterans Affairs (VA) Grassroots Innovations Program.
+
+
+
+The Department of Veterans Affairs Grassroots Innovations Program is a cooperative effort between the VA Chief Technology Officer, the Health and Medical Informatics Office, and the VA’s Office of Information and Technology to catalyze and support VA’s next generation of Health Information Technology Innovation.  The Innovations Program provides VA employees (innovators) with a mechanism to propose new opportunities and to develop these ideas into functional prototypes.
+
+
+
+There are two (2) separate phases to the Innovations Program.  The low bar phase is a proof of concept phase and all work will be accomplished outside of the VA’s network in a virtual testing environment (Innovations Sandbox).  The high bar phase occurs when a concept is moved to a developmental/production environment after the proof of concept has been developed, tested, and approved for full scale deployment.  
+
+
+
+The VHA has a demonstrated a need for the aforementioned NLP/CAC software solution.  This pilot project falls within the low bar phase parameter.  The low bar phase will entail the integration of the Veterans Health Information Systems and Technology Architecture (VistA) with the NLP/CAC software solution in the virtual testing environment (Innovations Sandbox). It is projected to have five (5) physicians and five (5) coders use the computer assisted coding in the Innovations Sandbox environment. 
+
+
+
+
+
+PERFORMANCE WORK STATEMENT (PWS)
+
+FOR
+
+DEPARTMENT OF VETERANS AFFAIRS
+
+Office of Information & Technology (OI&T)
+
+Grassroots Innovations Program
+
+Computer Assisted Coding Pilot
+
+
+
+Task Type: Firm Fixed Price
+
+Contract Vehicle: Open Market
+
+ITSS Order ID: ID03120021
+
+BACKGROUND
+
+The Department of Veterans Affairs (VA), Veterans Health Administration (VHA) is a health care system that utilizes an electronic health record system, Veterans Health Information Systems and Technology Architecture/ Computerized Patient Record System (VistA/CPRS) to capture and document all care provided to Veterans.  For each care setting (outpatient, inpatient, surgery), workload is captured by diagnosis, procedure, and visit code assignment. Coding has been a laborious manual task performed by professional coders and clinicians.  The VHA has insufficient in-house coding resources to execute manual reviews for every outpatient note to validate proper diagnostic and procedural coding.  Emerging technology that combines natural language processing and automated coding software can dramatically change the demands on clinicians and coding personnel and will enable the VHA to more effectively capture workload, and bill for services provided to those Veterans who have secondary private insurance.
+
+
+
+The use of coded clinical data in VHA continues to rise.  There are not enough professional coders available to code 100% of VHA’s outpatient encounters and inpatient admissions.  Quality healthcare depends on capturing accurate and timely medical data.  For the last several years, VHA has required clinicians to perform their own coding for diagnoses, services, and procedures for all outpatient encounters.  Clinicians are not trained, however, in the concepts and nuances of coding.  Data derived from coding is used for many purposes: managing care and disease processes, processing claims,  Veterans Equitable Resource Allocation (VERA) reimbursement, evaluation of processes and outcomes, measuring quality, safety and efficacy of care, clinical education, case-mix management, research, epidemiological studies, clinical trials, monitoring resource utilization, and various administrative activities.
+
+
+
+The VA Eastern Colorado Health Care System has identified the need to pursue a pilot project for a Natural Language Processing (NLP)/ Computer Assisted Coding (CAC) software solution through the Department of Veterans Affairs (VA) Grassroots Innovations Program.
+
+
+
+The Department of Veterans Affairs Grassroots Innovations Program is a cooperative effort between the VA Chief Technology Officer, the Health and Medical Informatics Office, and the VA’s Office of Information and Technology to catalyze and support VA’s next generation of Health Information Technology Innovation.  The Innovations Program provides VA employees (innovators) with a mechanism to propose new opportunities and to develop these ideas into functional prototypes.
+
+
+
+There are two (2) separate phases to the Innovations Program.  The low bar phase is a proof of concept phase and all work will be accomplished outside of the VA’s network in a virtual testing environment (Innovations Sandbox).  The high bar phase occurs when a concept is moved to a developmental/production environment after the proof of concept has been developed, tested, and approved for full scale deployment.  
+
+
+
+The VHA has a demonstrated a need for the aforementioned NLP/CAC software solution.  This pilot project falls within the low bar phase parameter.  The low bar phase will entail the integration of the Veterans Health Information Systems and Technology Architecture (VistA) with the NLP/CAC software solution in the virtual testing environment (Innovations Sandbox). It is projected to have five (5) physicians and five (5) coders use the computer assisted coding in the Innovations Sandbox environment. 
+
+APPLICABLE DOCUMENTS
+
+Documents referenced or germane to this Performance Work Statement (PWS) are listed below.  In the performance of the tasks associated with this Performance Work Statement, the Contractor shall comply with the following:
+
+44 U.S.C. § 3541, “Federal Information Security Management Act (FISMA) of 2002”
+
+Federal Information Processing Standards (FIPS) Publication 140-2, “Security Requirements For Cryptographic Modules”
+
+FIPS Pub 201, “Personal Identity Verification of Federal Employees and Contractors,” March 2006
+
+10 U.S.C. § 2224, "Defense Information Assurance Program"
+
+Software Engineering Institute, Software Acquisition Capability Maturity Modeling (SA CMM) Level 2 procedures and processes
+
+5 U.S.C. § 552a, as amended, “The Privacy Act of 1974” 
+
+42 U.S.C. § 2000d “Title VI of the Civil Rights Act of 1964”
+
+Department of Veterans Affairs (VA) Directive 0710, “Personnel Suitability and Security Program,” September 10, 2004
+
+VA Directive 6102, “Internet/Intranet Services,” July 15, 2008
+
+36 C.F.R. Part 1194 “Electronic and Information Technology Accessibility Standards,” July 1, 2003
+
+OMB Circular A-130, “Management of Federal Information Resources,” November 28, 2000
+
+32 C.F.R. Part 199, “Civilian Health and Medical Program of the Uniformed Services (CHAMPUS)”
+
+An Introductory Resource Guide for Implementing the Health Insurance Portability and Accountability Act (HIPAA) Security Rule, October 2008
+
+Sections 504 and 508 of the Rehabilitation Act (29 U.S.C. § 794d), as amended by the Workforce Investment Act of 1998 (P.L. 105-220), August 7, 1998
+
+Homeland Security Presidential Directive (12) (HSPD-12)
+
+VA Directive 6500, “Information Security Program,” August 4, 2006
+
+VA Handbook 6500, “Information Security Program,” September 18, 2007
+
+VA Handbook 6500.1, “Electronic Media Sanitization,” November 3, 2008.
+
+VA Handbook 6500.2, “Management of Security and Privacy Incidents,” June 17, 2008.
+
+VA Handbook 6500.3, “Certification and Accreditation of VA Information Systems,” November 24, 2008.
+
+VA Handbook, 6500.5, Incorporating Security and Privacy in System Development Lifecycle.
+
+VA Handbook 6500.6, “Contract Security,” March 12, 2010
+
+Project Management Accountability System (PMAS) portal (reference PWS References -Technical Library at )
+
+OIT ProPath Process Methodology (reference PWS References -Technical Library and ProPath Library links at ) NOTE:  In the event of a conflict, OIT ProPath takes precedence over other processes or methodologies. 
+
+Technical Reference Model (TRM) (reference at )
+
+National Institute Standards and Technology (NIST) Special Publications
+
+VA Directive 6508, VA Privacy Impact Assessment, October 3, 2008
+
+VA Directive 6300, Records and Information Management, February 26, 2009
+
+VA Handbook, 6300.1, Records Management Procedures, March 24, 2010
+
+
+
+SCOPE OF WORK
+
+The Contractor shall provide all resources necessary to accomplish the requirements described in this PWS.  
+
+
+
+The VA currently has an existing enterprise level contract with QuadraMed for the use of their Encoder Product Suite (EPS).  All VHA facilities throughout the nation are required to utilize QuadraMed’s Encoder Product Suite for revenue collection processes including billing and coding functions.
+
+
+
+The Contractor shall develop and integrate a NLP/CAC software solution in a test environment (Innovations Sandbox) that interfaces with VistA and the QuadraMed EPS.  The NLP/CAC solution shall provide diagnostic, Current Procedural Terminology (CPT) procedure, and evaluation and management code assignments for the outpatient care setting including surgery cases for the provider, and coder as the users. The NLP/CAC solution will utilize real-time or near real-time data with the user after the completion of the progress note, and before the transmission of the encounter information to Patient Care Encounter (PCE). In addition to real-time interaction with the provider user, the NLP/CAC solution shall be accessible by the provider any time after the progress note for the visit is completed. The NLP/CAC solution shall also be capable of being implemented in a live production environment after interfacing with VistA has been completed and tested.  During testing, Licensed Independent Practitioners and coder users will utilize the computer assisted coding software solution.  Monitoring and reporting capabilities will be used to monitor, track and identify software modifications, improvements, and return on investment.
+
+period of performance
+
+The period of performance shall be twelve (12) months from date of award.
+
+
+
+place of performance
+
+All work shall be performed at the Contractor’s facilities
+
+
+
+Any work at the Government site shall not take place on Federal holidays or weekends unless directed by the Contracting Officer (CO).
+
+
+
+There are ten (10) Federal holidays set by law (USC Title 5 Section 6103) that the VA follows:
+
+
+
+Under current definitions, four are set by date:
+
+
+
+New Year's Day			January 1
+
+Independence Day		July 4
+
+Veterans Day			November 11
+
+Christmas Day			December 25
+
+
+
+If any of the above falls on a Saturday, then Friday shall be observed as a holiday.  Similarly, if one falls on a Sunday, then Monday shall be observed as a holiday.
+
+
+
+The other six are set by a day of the week and month:
+
+
+
+Martin Luther King's Birthday	Third Monday in January
+
+Washington's Birthday		Third Monday in February
+
+Memorial Day			Last Monday in May
+
+Labor Day			First Monday in September
+
+Columbus Day			Second Monday in October
+
+Thanksgiving			Fourth Thursday in November 
+
+
+
+TRAVEL
+
+
+
+The Government anticipates travel under this effort to perform the tasks associated with the effort, as well as to attend program-related meetings or conferences through the period of performance.  The Government estimates four (4) trips in support of this effort estimated at approximately five (5) days in duration each (including travel days). The anticipated four (4) trips are comprised of the Kick-Off meeting, working session meeting, pre-live production transition meeting, and Close-out meeting.  The anticipated location includes the following:
+
+Denver VA Medical Center
+
+1055 Clermont Street
+
+Denver, CO  80220
+
+
+
+The cost reimbursable not-to-exceed travel limit for the lifetime of the project is estimated at $20,000.00. It is noted that the travel costs set forth are estimates and the Government reserves the right to increase or decrease this estimate during performance as necessary to meet requirements.  Any travel requirements that arise in excess of the limitations set forth above shall be incorporated through a modification to this task order.  
+
+
+
+The VA Project Manager (PM) and Contracting Officer Technical Representative (COTR) will approve all required travel requirements/ requests before travel is to begin.  The contractor shall be entitled to recovery of reasonable transportation costs incurred for employees.  Reimbursement of travel will be accomplished when the contractor submits an invoice for travel along with supporting documentation (receipts as required by Federal Travel regulations).  Expenses for subsistence and lodging will be reimbursed to the contractor only to the extent where an overnight stay is necessary and authorized by the Federal Travel regulations in effect at the time of stay for this specific location.  All travel and per diem expenses will be reimbursed in accordance with the Federal Travel Regulations.  Federal Travel Regulations require receipts for travel expenditures of $75.00 or more.  The receipts shall be submitted with invoices.
+
+SPECIFIC TASKS AND DELIVERABLES
+
+The Contractor shall perform the following:  
+
+PROJECT MANAGEMENT
+
+PROJECT MANAGEMENT PLAN
+
+The Contractor shall draft a Project Management Plan (PMP) that lays out the Contractor’s approach, timeline and tools to be used in execution of the contract.  The PMP should take the form of both a narrative and graphic format that displays the schedule, milestones, risks and resource support.  The PMP shall also include how the Contractor shall coordinate and execute planned, routine, and ad hoc data collection reporting requests as identified within the PWS.  The initial baseline PMP shall be concurred upon and updated monthly thereafter.  The Contractor shall update and maintain the PMP throughout the period of performance. The PMP must be approved by the VA PM and GSA COTR.
+
+
+
+Deliverables:  
+
+Project Management Plan
+
+
+
+REPORTING REQUIREMENTS
+
+
+
+The Contractor shall provide the Contracting Officer’s Technical Representative (COTR) and VA PM with Monthly Progress Reports in electronic form in Microsoft Word and Project formats.  The report shall include detailed instructions/explanations for each required data element, to ensure that data is accurate and consistent.  These reports shall reflect data as of the last day of the preceding Month.  
+
+
+
+The Monthly Progress Reports shall cover all work completed during the reporting period and work planned for the subsequent reporting period.  The report shall also identify any problems that arose and a description of how the problems were resolved.  If problems have not been completely resolved, the Contractor shall provide an explanation including their plan and timeframe for resolving the issue.  The Contractor shall monitor performance against the PMP and report any deviations.  It is expected that the Contractor will keep in communication with the VA accordingly so that issues that arise are transparent to both parties to prevent escalation of outstanding issues.
+
+
+
+The Contractor shall coordinate and facilitate a kick-off meeting and shall provide an agenda within five (5) business days after contract award.  An entrance conference kick-off meeting shall be held at the within ten (10) business days after the contract has been awarded.   The Contractor shall provide meeting minutes after the kick-off meeting.
+
+
+
+
+
+Deliverables: 
+
+Monthly Progress Report
+
+Kick-Off Meeting Minutes
+
+COMPUTER ASSISTED CODING (CAC) SOLUTION
+
+
+
+NLP/CAC FUNCTIONAL REQUIREMENTS
+
+
+
+The contractor shall provide a NLP/CAC solution to perform the following required functionality in the Innovations Sandbox environment: 
+
+Provide coded CPT/E&M/ICD-9-CM/Healthcare Common Procedure Coding System (HCPCS) data through the use of a natural language processing engine
+
+Distinguish among visit types: new patient, established patient, and consultation.
+
+Provide ICD-10 diagnostic and procedure codes to users for education and readiness.
+
+Provide ability to apply 1995 and 1997 Coding Guidelines for E&M Services.
+
+Incorporate periodic updates to all nomenclatures used
+
+Provide ability to read free text in progress notes that may or may not use templates
+
+Provide ability to assign modifiers and to attach comments to specific codes
+
+Provide ability to identify the language in the  Text Integration Utility (TIU) document that the codes are based on and produce an audit trail for the user
+
+Support the creation of local business rules for coding and processing.
+
+Create work lists for the coder user 
+
+Provide feedback mechanism to clinician that is inserted into the clinician documentation/coding/encounter form workflow without disrupting the process
+
+ Provide a mechanism for the “coder user” to review and validate generated codes from the computer assisted coding solution
+
+VISTA INTEGRATION REQUIREMENTS
+
+
+
+The Contractor shall develop VistA integration/interface with the NLP/CAC solution by utilizing existing interfaces/application programming interface/service. VistA integration will be developed in the test environment (Innovation Sandbox). Because of required access to VA patient data, the Contractor will need to execute a Business Associate Agreement (BAA) with the VA regarding use of Protected Health Information (PHI) and Electronic Protected Health Information (EPHI).
+
+
+
+The Contractor shall meet the following VistA integration requirements:
+
+
+
+Interface with Text Integration Utility (TIU) for outpatient visits and inpatient Professional Fee Service (pro fee) coding. Progress notes from TIU must be brought into the computer assisted coding solution.  Progress notes may be parsed but they cannot be changed.
+
+Interface with Patient Care Encounter (PCE):  ICD-9 and CPT codes from PCE must be brought into the computer assisted coding solution. The software package must keep an audit trail of all changes.
+
+Interface with Computerized Patient Record System’s (CPRS) Electronic Encounter Form (EEF) Graphical User Interface to allow codes identified by CAC to be seen and validated by the physician user and populated in the electronic encounter form.
+
+
+
+Deliverables: 
+
+
+
+Functional NLP/CAC interface to VistA TIU (Innovation Sandbox)
+
+Functional NLP/CAC interface to VistA PCE (Innovation Sandbox)
+
+Functional NLP/CAC interface to VistA CPRS EEF (Innovation Sandbox)
+
+Functional Low-Bar NLP/CAC solution (Innovation Sandbox)
+
+
+
+Note:  Functional interfaces between NLP/CAC and all required VistA packages/CPRS is defined as establishing bi-directional, electronic, and direct communication without workarounds such as manual file extraction/file importing.  The NLP/CAC solution shall be real time.  
+
+
+
+MONITORING AND REPORTING CAPABILITIES
+
+	
+
+The Contractor shall provide functionality in the NLP/CAC solution to produce monitoring and reporting capabilities.  Data elements shall include code history of CAC/NLP and provider user selection, existing QuadraMed Audit Compliance Module data fields in the PCE Compliance Module reports, and existing Quantim Encoder reports data fields.  These data elements will assist VA in determining benefits of utilizing a NLP/CAC solution.  The following reports are required and will be utilized throughout each development phase and iteration of the NLP/CAC solution:
+
+
+
+Relative Value Unit (RVU) comparison report - comparing RVU quantity of CAC generated, physician selected, and coder selected CPT/HCPCS codes.
+
+Evaluation and Management code change report between CAC generated codes, provider user accepted codes, and coder user validated codes.
+
+CPT and HCPCS code change report between CAC generated codes, provider accepted codes, and coder user validated codes.
+
+ICD-9 code change report between CAC generated codes, provider accepted codes and coder user validated codes.
+
+Veterans Equitable Resource Allocation (VERA) change report – Vested versus non-Vested.
+
+Tracking history of codes selected by provider, selected by NLP/CAC solution, and selected by coder.
+
+
+
+Deliverables:  
+
+Functioning monitoring and reporting capabilities (Innovation Sandbox)
+
+FIELD TEST EVALUATION
+
+The Contractor shall perform field test evaluations for the NLP/CAC Innovation Sandbox.  The Contractor shall deliver a test plan prior to the start of the field test evaluation.  The test plan shall address requirements identified in Sections  through .  The test plan shall serve as the basis for the field test evaluations.
+
+	
+
+The field test evaluations shall be conducted with system-trained healthcare providers, patients and administrators who have familiarized themselves with the application interface during normal workflow.  The test shall be conducted in the intended operational environment with representative users exercising the system for all anticipated purposes.
+
+
+
+The Contractor shall conduct a structured evaluation of both the technical and subjective aspects of the VA implementation of the NLP/CAC solution and shall ensure that the evaluation criteria include the following domains:
+
+
+
+Technical Viability: Including system reliability, availability of needed functionalities, and system quality
+
+Usability: Evaluated on the basis of user interviews and user shadowing
+
+Integration: Integrated with VA business processes
+
+Effectiveness: Effectively improves the quality, accessibility, cost and performance of the healthcare delivered
+
+
+
+The Contractor shall conduct an evaluation of the field test and document the findings in a Field Test Evaluation Report.  The Contractor shall document any results obtained, any issues encountered, provide patient satisfaction survey results, clinician satisfaction survey results, lessons learned, and an objective comparison with and without the NLP/CAC solution in place.  The report shall provide clear explanations of how critical design features of the system performed and lay out a comprehensive advanced development and integration plan for subsequent development, scaling and integration into VA IT systems.
+
+
+
+Deliverables:
+
+Test Plan (Innovation Sandbox)
+
+Field Test Evaluation Report (Innovation Sandbox
+
+GENERAL REQUIREMENTS
+
+ENTERPRISE AND IT FRAMEWORK
+
+The Contractor shall support the VA enterprise management framework.  In association with the framework, the Contractor shall comply with OIT Technical Reference Model (One-VA TRM).  One-VA TRM is one component within the overall Enterprise Architecture (EA) that establishes a common vocabulary and structure for describing the information technology used to develop, operate, and maintain enterprise applications.  One-VA TRM includes the Standards Profile and Product List that collectively serves as a VA technology roadmap.  Architecture, Strategy, and Design (ASD) has overall responsibility for the One-VA TRM.
+
+
+
+Where applicable, the Contractor solution shall support the latest Internet Protocol Version 6 (IPv6) requirements and compliance standards established by FAR and NIST for IPv6 for Federal Government Agencies. IPv6 technology must be included in all infrastructure and application design and development efforts.
+
+
+
+The Contractor shall support VA efforts in accordance with the Project Management Accountability System (PMAS) that mandates all new VA IT projects/programs use an incremental development approach, requiring frequent delivery milestones that deliver new capabilities for business sponsors to test and accept functionality.  Implemented by the Assistant Secretary for IT, PMAS is a VA-wide initiative to better empower the OIT Project Managers and teams to meet their mission: delivering world-class IT products that meet business needs on time and within budget.  
+
+
+
+The Contractor shall utilize ProPath, the OIT-wide process management tool that assists in the execution of an IT project (including adherence to PMAS standards).  It is a one-stop shop providing critical links to the formal approved processes, artifacts, and templates to assist project teams in facilitating their PMAS-compliant work.  ProPath is used to build schedules to meet project requirements, regardless of the development methodology employed.  
+
+CONTRACTOR PERSONNEL SECURITY REQUIREMENTS
+
+The following security requirement must be addressed regarding Contractor supplied equipment:  Contractor supplied equipment, PCs of all types, equipment with hard drives, etc. for contract services must meet all security requirements that apply to Government Furnished Equipment (GFE) and Government Owned Equipment (GOE).  Security Requirements include:  a) VA Approved Encryption Software must be installed on all laptops or mobile devices before placed into operation, b) Bluetooth equipped devices are prohibited within the VA; Bluetooth must be permanently disabled or removed from the device, c) VA approved anti-virus and firewall software, d) Equipment must meet all VA sanitization requirements and procedures before disposal.  The COTR, CO, the Project Manager, and the Information Security Officer (ISO) must be notified and verify all security requirements have been adhered to.
+
+Position Sensitivity and Background Investigation - The position sensitivity and the level of background investigation commensurate with the required level of access is:
+
+
+
+	Low/NACI
+
+	Moderate/MBI
+
+	High/BI
+
+
+
+
+
+Contractor Responsibilities: 
+
+The Contractor shall prescreen all personnel requiring access to the computer systems to ensure they maintain the appropriate Background Investigation, and are able to read, write, speak and understand the English language.  .
+
+The Contractor shall bear the expense of obtaining background investigations. 
+
+For a Low Risk designation the following forms are required: 1.OF-306 and either 2. DVA Memorandum – Electronic Fingerprints or FD-258 Fingerprint card. For Moderate or High Risk the following forms are required:   1. VA Form 0710 and either 2. DVA Memorandum – Electronic Fingerprints or FD-258 Fingerprint card.  These should be submitted to the CO or COTR after award has been made.
+
+The Contractor personnel will receive an email notification from the Electronics Questionnaire for Investigations Processes (e-QIP) identifying the website link that includes detailed instructions regarding completion of the investigation documents (SF85 or SF85P).  The Contractor personnel shall submit all required information related to their background investigations utilizing the Office of Personnel Management’s (OPM) Electronic Questionnaire for Investigations Processing (e-QIP).
+
+The Contractor is to sign the signature page and send to the COTR and CO for electronic submission to the Security and Investigations Center (SIC).
+
+The Contractor shall be responsible for the actions of all personnel provided to work for VA under this contract.  In the event that damages arise from work performed by Contractor provided personnel, under the auspices of this contract, the Contractor shall be responsible for all resources necessary to remedy the incident.
+
+If the background investigation is not completed prior to the start date of the contract, the Contractor employee may work on the contract once the investigation has been initiated and sent to the OPM.  However, the Contractor will be responsible for the actions of the Contractor personnel they provide to perform work for the VA.  The investigative history for Contractor personnel working under this contract must be maintained in the databases of either the OPM or the Defense Industrial Security Clearance Organization (DISCO).
+
+The Contractor, when notified of an unfavorable determination by the Government, shall withdraw the employee from consideration in working under the contract.
+
+Failure to comply with the Contractor personnel investigative requirements may result in termination of the contract for default.
+
+METHOD AND DISTRIBUTION OF DELIVERABLES
+
+1)	For every task, the contractor shall identify in writing all necessary subtasks (if any), associated costs by task, and together with associated sub-milestone dates.  The contractor’s subtask structure shall be reflected in the technical proposal and detailed project management plan (PMP).
+
+2)	All written deliverables will be phrased in layperson language.  Statistical and other technical terminology will not be used without providing a glossary of terms.
+
+
+
+The Task Monitor has the right to reject or require correction of any deficiencies found in the deliverables contrary to this PWS and the contractor’s accepted quote. In the event of a rejected deliverable, the contractor shall be notified in writing by the Task Monitor of the specific reason for rejection. The contractor shall have five working days to correct the rejected deliverable and redeliver it.
+
+
+
+If for any reason the scheduled time for a deliverable cannot be met, the contractor is required to explain why (include the original deliverable due date) in writing to the CO, including a firm commitment of when the work shall be completed.  This notice to the CO shall cite the reasons for the delay, and the impact on the overall project.  The CO will then review the facts and issue a response in accordance with applicable regulations. 
+
+
+
+The Contractor shall deliver documentation in electronic format, unless otherwise directed in Section B of the solicitation/contract.  Acceptable electronic media include: MS Word 2000/2003/2007, MS Excel 2000/2003/2007, MS PowerPoint 2000/2003/2007, MS Project 2000/2003/2007, MS Access 2000/2003/2007, MS Visio 2000/2002/2003/2007, CAD 2002, and Adobe Postscript Data Format (PDF).
+
+ PERFORMANCE METRICS
+
+The Contractor shall monitor performance against the established schedule, milestones, risks and resource support outlined in the approved PMP.  The Contractor shall report any deviations in the Monthly Progress Report. As a minimum, the following metrics shall be included:  
+
+
+
+For Example:
+
+
+
+
+
+The Government will utilize a Quality Assurance Surveillance Plan (QASP) throughout the life of the contract to ensure that the Contractor is performing the services required by this PWS in an acceptable manner.  The Government reserves the right to alter or change the surveillance methods in the QASP at its own discretion.
+
+FACILITY/RESOURCE PROVISIONS 
+
+All procedural guides, reference materials, and program documentation for the project and other Government applications will be provided on an as-needed basis.
+
+
+
+The Contractor shall request other Government documentation deemed pertinent to the work accomplishment directly from the Government officials with whom the Contractor has contact.  The Contractor shall consider the COTR as the final source for needed Government documentation when the Contractor fails to secure the documents by other means.  The Contractor is expected to use common knowledge and resourcefulness in securing all other reference materials, standard industry publications, and related materials that are pertinent to the work.
+
+
+
+The VA shall provide access to VA specific systems/network as required for execution of the task via a site-to-site VPN or other technology, including VA specific software such as Veterans Health Information System and Technology Architecture (VistA), ClearQuest, ProPath, Primavera, and Remedy, including appropriate seat management and user licenses.  The Contractor shall utilize Government-provided software development and test accounts, document and requirements repositories, etc. as required for the development, storage, maintenance and delivery of products within the scope of this effort.  The Contractor shall not transmit, store or otherwise maintain sensitive data or products in Contractor systems (or media) within the VA firewall IAW VA Handbook 6500.6 dated March 12, 2010.  All VA sensitive information shall be protected at all times in accordance with local security field office System Security Plans (SSP’s) and Authority to Operate (ATO)’s for all systems/LAN’s accessed while performing the tasks detailed in this PWS. For detailed Security and Privacy Requirements refer to  and ADDENDUM B. 
+
+
+
+GOVERNMENT FURNISHED PROPERTY
+
+
+
+Not Applicable
+
+
+
+ADMISTRATIVE MATTERS
+
+
+
+SCHEDULE FOR DELIVERABLES
+
+
+
+Note:  Days used in the table below refer to calendar days unless otherwise stated.  Deliverables with due dates falling on a weekend or holiday shall be submitted the following government work day after the weekend or holiday.
+
+
+
+
+
+
+
+
+
+POINTS OF CONTACT
+
+
+
+VA Program Manager:
+
+Name:		Joshua Patterson
+
+Address:	3773 Cherry Creek North Drive
+
+		Denver, CO 08220
+
+Voice:		303-809-7870
+
+Email:		
+
+
+
+VA Innovation Project Lead:
+
+Name:		Adam Chin
+
+Address:	Denver VA Medical Center
+
+1055 Clermont Street
+
+Denver, CO  80220
+
+Voice:		303-399-8020 x2259
+
+Email:		
+
+
+
+Contracting Officer:
+
+Name:  		Eileen Flanigan
+
+Address:	The Strawbridges Building
+
+		20 North 8th Street
+
+		Philadelphia, PA 19107
+
+Voice:		215.446.5857
+
+Email:		
+
+
+
+Contract Specialist:
+
+Name:  		Ryan Mathews
+
+Address:	The Strawbridges Building
+
+		20 North 8th Street
+
+		Philadelphia, PA 19107
+
+Voice:		215.446.5816
+
+Email:		
+
+
+
+Contracting Officer Technical Representative:
+
+Name:  		Michael Baumann
+
+Address:	The Strawbridges Building
+
+		20 North 8th Street
+
+		Philadelphia, PA 19107
+
+Voice:		215.446.5852
+
+Email:		
+
+
+
+ADDITIONAL ITEMS 
+
+
+
+GOVERNMENT RESPONSIBILITIES
+
+The following needs to be provided by the CO to the Contractor:
+
+The Security Investigations Center will require the following forms from the Contractor or to the Contractor’s personnel:
+
+For a Low Risk designation the following forms are necessary: 1.OF-306 and either 2. DVA Memorandum – Electronic Fingerprints or FD-258 Fingerprint card. (The SF85 does not need to be uploaded because OPM is going paperless and the contractor will complete this questionnaire online when the e-QIP link is sent.) (DVA Memorandum – Electronic Fingerprints is filled out by the VA Facility that took the electronic fingerprint or if they want to go to their local Fingerprinting Facility the FD-258 Fingerprint cards are mailed to the contractor from the SIC and will then be mailed back to the SIC.) 
+
+For Moderate or High Risk:   1. VA Form 0710 and either 2. DVA Memorandum – Electronic Fingerprints or FD-258 Fingerprint card. (The SF85P does not need to be uploaded because OPM is going paperless and the contractor will complete this questionnaire online) (DVA Memorandum – Electronic Fingerprints is filled out by the VA Facility that took the electronic fingerprint or if they want to go to their local Fingerprinting Facility the FD-258 Fingerprint cards are mailed to the contractor from the SIC  and will then be mailed back to the SIC.) 
+
+Upon receipt, the VA Office of Security and Law Enforcement will review the completed forms for accuracy and initiates the contractor in e-QIP and sends an email notifying the CO or COTR and the contractor personnel that they have been initiated in e-QIP.
+
+The contractor will then login to e-QIP to complete the questionnaire (SF85 or SF 85P) and then prints and signs the signature pages which are then turned into the CO/COTR.  (Please be advised that the contractor will need all the necessary information easily accessible as the website will time out and they can lose the information they inputted if they take too long to fill it in.)
+
+The SIC will then upload the e-QIP signature pages to e-QIP and release the case file to OPM for investigation.
+
+The SIC will notify the CO and Contractor after adjudicating the results of the background investigations received from OMB.
+
+
+
+
+
+BILLING/INVOICING
+
+
+
+The Contractor shall provide original invoices to the address shown on Block 24 of the GSA Form 300 award document.  A concurrent copy of each invoice shall be sent to the Client Representative (CR).
+
+Invoices	(January/2010)
+
+The Period of Performance (POP) for each invoice shall be for one calendar month. The contractor shall submit only one invoice per month per order/contract.  The appropriate GSA office will receive the invoice by the twenty-fifth calendar day of the month after either:
+
+
+
+The end of the invoiced month (for services) or 
+
+The end of the month in which the products (commodities) or deliverables (fixed-priced services) were delivered and accepted by the Government.
+
+ 
+
+For Labor Hour and Time and Material orders/contracts each invoice shall show, the skill level category, the hours worked per skill level, the rate per skill level and the extended amount for that invoice period.  It shall also show the total cumulative hours worked (inclusive of the current invoice period) per skill level, the hourly rate per skill level, the total cost per skill level, the total travel costs incurred and invoiced, and the total of any other costs incurred and invoiced, as well as the grand total of all costs incurred and invoiced.
+
+
+
+For Labor Hour and Time and Material orders/contracts each invoice shall clearly indicate both the current invoice’s monthly “burn rate” and the total average monthly “burn rate”.
+
+
+
+The contractor shall submit all required documentation (unless exempted by the contract or order) as follows:
+
+
+
+For Travel: Submit the traveler's name, dates of travel, location of travel, and dollar amount of travel.
+
+For ODCs:  Submit a description of the ODC, quantity, unit price and total price of each ODC.
+
+
+
+Note: The Government reserves the right to audit, thus; the contractor shall keep on file all backup support documentation for travel and ODCs.
+
+
+
+Posting Acceptance Documents:  Invoices shall initially be submitted monthly through GSA’s electronic Web-Based Order Processing System, currently ITSS, to allow the client and GSA COTR to electronically accept and certify services received by the CR.  Included with the invoice will be all back-up documentation required such as, but not limited to, travel authorizations and training authorizations (including invoices for such).   
+
+
+
+Receiving Agency’s Acceptance:  The receiving agency has the following options in accepting and certifying services;
+
+Electronically:  The client agency may accept and certify services electronically via GSA’s electronic Web-Based Order Processing System, currently ITSS, by accepting the Acceptance Document generated by the contractor.  Electronic acceptance of the invoice by the CR is considered concurrence and acceptance of services.  NOTE:  The Government’s preference is that receiving agency’s acceptance is conducted electronically.
+
+On Paper Copy:  The client agency may accept and certify services by providing written acceptance with the signature of the authorized client representative and the date of acceptance.
+
+Electronic and/or written acceptance of the invoice by the CR is considered concurrence and acceptance of services.  Regardless, of the method of acceptance the contractor shall seek acceptance and electronically post the acceptance document in GSA’s electronic Web-based Order Processing System, currently ITSS.  (Written acceptances will be posted as an attachment along with any other supporting documentation.)  After acceptance of the invoice by the CR, the Contractor shall submit a proper invoice to GSA Finance not later than five (5) workdays after acceptance by the Government of the product, service, and/or cost item.  
+
+
+
+Note:  The acceptance of the authorized agency customer representative is REQUIRED prior to the approval of payment for any invoiced submitted.  Although this acceptance may occur in two ways, electronically or in paper copy, at least shall be obtained prior to the approval of payment.  In order to expedite payment, it is strongly recommended that the contractor continue to include the receiving agency’s WRITTEN acceptance of all the services or products delivered, with signature of the authorized agency customer representative and the date of acceptance, as part of the submission documentation.  
+
+
+
+Note: If any invoice is received without the required documentation and, (A) the customer's signed written acceptance OR (B) the customer’s electronic acceptance, the invoice shall be rejected in whole or in part as determined by the Government.  
+
+
+
+Posting Invoice Documents: Contractors shall submit invoices to GSA Finance for payment, after acceptance has been processed in GSA’s electronic Web-Based Order Processing System, currently ITSS.  The contractor has the option of posting the invoice on GSA’s Ft. Worth web site,   or mail to the address shown on BLOCK 24 of the GSA FORM 300.  NOTE:  Only use one method of submission, web site or regular U.S. mail, but not both.
+
+
+
+U.S. Mailing Address:
+
+General Services Administration
+
+Financial Operations and Disbursement Branch (BCEB)
+
+PO BOX 219434
+
+KANSAS CITY, MO 64121-9434
+
+
+
+Content of Invoice: The contractor’s invoice will be submitted monthly for work performed the prior month.  The contractor may invoice only for the hours, travel and unique services ordered by GSA and actually used in direct support of the client representative’s project.  The invoice shall be submitted on official letterhead and shall include the following information at a minimum.
+
+GSA Task Order Number
+
+Task Order ACT Number
+
+Remittance Address
+
+Period of Performance for Billing Period
+
+Point of Contact and Phone Number
+
+Invoice Amount
+
+Skill Level Name and Associated Skill Level Number
+
+Actual Hours Worked During the Billing Period
+
+Travel Itemized by Individual and Trip (if applicable)
+
+Training Itemized by Individual and Purpose (if applicable)
+
+Support Items Itemized by Specific Item and Amount (if applicable)
+
+
+
+Final Invoice:  Invoices for final payment must be so identified and submitted within 60 days from task completion and no further charges are to be billed.  A copy of the written acceptance of task completion must be attached to final invoices.  The contractor shall request from GSA an extension for final invoices that may exceed the 60-day time frame.
+
+
+
+The Government reserves the right to require certification by a GSA COTR before payment is processed, if necessary. 
+
+ 
+
+Close-out Procedures. 
+
+General:  The contractor shall submit a final invoice within sixty (60) calendar days after the end of the Performance Period.  After the final invoice has been paid the contractor shall furnish a completed and signed Release of Claims (GSA Form 1142) to the Contracting Officer.  This release of claims is due within fifteen (15) calendar days of final payment.
+
+
+
+
+
+
+
+
+8.0 CLAUSES
+
+
+
+52.252-2      CLAUSES INCORPORATED BY REFERENCE (FEB 1998) 
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request, the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at this/these address(es):
+
+
+
+
+
+
+
+
+
+(End of clause)
+
+
+
+CLAUSES INCORPORATED BY REFERENCE
+
+
+
+
+
+CLAUSES INCORPORATED BY FULL TEXT
+
+52.212-1  Instructions to Offerors—Commercial Items.
+
+Instructions to Offerors—Commercial Items (Feb 2012) 
+
+(a) North American Industry Classification System (NAICS) code and small business size standard. The NAICS code and small business size standard for this acquisition appear in Block 10 of the solicitation cover sheet (). However, the small business size standard for a concern which submits an offer in its own name, but which proposes to furnish an item which it did not itself manufacture, is 500 employees. 
+
+(b) Submission of offers. Submit signed and dated offers to the office specified in this solicitation at or before the exact time specified in this solicitation. Offers may be submitted on the , letterhead stationery, or as otherwise specified in the solicitation. As a minimum, offers must show— 
+
+(1) The solicitation number; 
+
+(2) The time specified in the solicitation for receipt of offers; 
+
+(3) The name, address, and telephone number of the offeror; 
+
+(4) A technical description of the items being offered in sufficient detail to evaluate compliance with the requirements in the solicitation. This may include product literature, or other documents, if necessary; 
+
+(5) Terms of any express warranty; 
+
+(6) Price and any discount terms; 
+
+(7) “Remit to” address, if different than mailing address; 
+
+(8) A completed copy of the representations and certifications at FAR  (see FAR (b) for those representations and certifications that the offeror shall complete electronically); 
+
+(9) Acknowledgment of Solicitation Amendments; 
+
+(10) Past performance information, when included as an evaluation factor, to include recent and relevant contracts for the same or similar items and other references (including contract numbers, points of contact with telephone numbers and other relevant information); and 
+
+(11) If the offer is not submitted on the , include a statement specifying the extent of agreement with all terms, conditions, and provisions included in the solicitation. Offers that fail to furnish required representations or information, or reject the terms and conditions of the solicitation may be excluded from consideration. 
+
+(c) Period for acceptance of offers. The offeror agrees to hold the prices in its offer firm for 30 calendar days from the date specified for receipt of offers, unless another time period is specified in an addendum to the solicitation. 
+
+(d) Product samples. When required by the solicitation, product samples shall be submitted at or prior to the time specified for receipt of offers. Unless otherwise specified in this solicitation, these samples shall be submitted at no expense to the Government, and returned at the sender’s request and expense, unless they are destroyed during preaward testing. 
+
+(e) Multiple offers. Offerors are encouraged to submit multiple offers presenting alternative terms and conditions or commercial items for satisfying the requirements of this solicitation. Each offer submitted will be evaluated separately. 
+
+(f) Late submissions, modifications, revisions, and withdrawals of offers. 
+
+(1) Offerors are responsible for submitting offers, and any modifications, revisions, or withdrawals, so as to reach the Government office designated in the solicitation by the time specified in the solicitation. If no time is specified in the solicitation, the time for receipt is 4:30 p.m., local time, for the designated Government office on the date that offers or revisions are due. 
+
+(2)(i) Any offer, modification, revision, or withdrawal of an offer received at the Government office designated in the solicitation after the exact time specified for receipt of offers is “late” and will not be considered unless it is received before award is made, the Contracting Officer determines that accepting the late offer would not unduly delay the acquisition; and— 
+
+(A) If it was transmitted through an electronic commerce method authorized by the solicitation, it was received at the initial point of entry to the Government infrastructure not later than 5:00 p.m. one working day prior to the date specified for receipt of offers; or 
+
+(B) There is acceptable evidence to establish that it was received at the Government installation designated for receipt of offers and was under the Government’s control prior to the time set for receipt of offers; or 
+
+(C) If this solicitation is a request for proposals, it was the only proposal received. 
+
+(ii) However, a late modification of an otherwise successful offer, that makes its terms more favorable to the Government, will be considered at any time it is received and may be accepted. 
+
+(3) Acceptable evidence to establish the time of receipt at the Government installation includes the time/date stamp of that installation on the offer wrapper, other documentary evidence of receipt maintained by the installation, or oral testimony or statements of Government personnel. 
+
+(4) If an emergency or unanticipated event interrupts normal Government processes so that offers cannot be received at the Government office designated for receipt of offers by the exact time specified in the solicitation, and urgent Government requirements preclude amendment of the solicitation or other notice of an extension of the closing date, the time specified for receipt of offers will be deemed to be extended to the same time of day specified in the solicitation on the first work day on which normal Government processes resume. 
+
+(5) Offers may be withdrawn by written notice received at any time before the exact time set for receipt of offers. Oral offers in response to oral solicitations may be withdrawn orally. If the solicitation authorizes facsimile offers, offers may be withdrawn via facsimile received at any time before the exact time set for receipt of offers, subject to the conditions specified in the solicitation concerning facsimile offers. An offer may be withdrawn in person by an offeror or its authorized representative if, before the exact time set for receipt of offers, the identity of the person requesting withdrawal is established and the person signs a receipt for the offer. 
+
+(g) Contract award (not applicable to Invitation for Bids). The Government intends to evaluate offers and award a contract without discussions with offerors. Therefore, the offeror’s initial offer should contain the offeror’s best terms from a price and technical standpoint. However, the Government reserves the right to conduct discussions if later determined by the Contracting Officer to be necessary. The Government may reject any or all offers if such action is in the public interest; accept other than the lowest offer; and waive informalities and minor irregularities in offers received. 
+
+(h) Multiple awards. The Government may accept any item or group of items of an offer, unless the offeror qualifies the offer by specific limitations. Unless otherwise provided in the Schedule, offers may not be submitted for quantities less than those specified. The Government reserves the right to make an award on any item for a quantity less than the quantity offered, at the unit prices offered, unless the offeror specifies otherwise in the offer. 
+
+(i) Availability of requirements documents cited in the solicitation.  
+
+(1)(i) The GSA Index of Federal Specifications, Standards and Commercial Item Descriptions, FPMR Part 101-29, and copies of specifications, standards, and commercial item descriptions cited in this solicitation may be obtained for a fee by submitting a request to— 
+
+GSA Federal Supply Service Specifications Section
+Suite 8100
+470 East L’Enfant Plaza, SW
+Washington, DC 20407 
+
+Telephone (202) 619-8925
+Facsimile (202) 619-8978. 
+
+(ii) If the General Services Administration, Department of Agriculture, or Department of Veterans Affairs issued this solicitation, a single copy of specifications, standards, and commercial item descriptions cited in this solicitation may be obtained free of charge by submitting a request to the addressee in paragraph (i)(1)(i) of this provision. Additional copies will be issued for a fee. 
+
+(2) Most unclassified Defense specifications and standards may be downloaded from the following ASSIST websites: 
+
+(i) ASSIST (). 
+
+(ii) Quick Search (). 
+
+(iii) ASSISTdocs.com (). 
+
+(3) Documents not available from ASSIST may be ordered from the Department of Defense Single Stock Point (DoDSSP) by— 
+
+(i) Using the ASSIST Shopping Wizard (); 
+
+(ii) Phoning the DoDSSP Customer Service Desk (215) 697-2179, Mon-Fri, 0730 to 1600 EST; or 
+
+(iii) Ordering from DoDSSP, Building 4, Section D, 700 Robbins Avenue, Philadelphia, PA 19111-5094, Telephone (215) 697-2667/2179, Facsimile (215) 697-1462. 
+
+(4) Nongovernment (voluntary) standards must be obtained from the organization responsible for their preparation, publication, or maintenance. 
+
+(j) Data Universal Numbering System (DUNS) Number. (Applies to all offers exceeding $3,000, and offers of $3,000 or less if the solicitation requires the Contractor to be registered in the Central Contractor Registration (CCR) database.) The offeror shall enter, in the block with its name and address on the cover page of its offer, the annotation “DUNS” or “DUNS+4” followed by the DUNS or DUNS+4 number that identifies the offeror’s name and address. The DUNS+4 is the DUNS number plus a 4-character suffix that may be assigned at the discretion of the offeror to establish additional CCR records for identifying alternative Electronic Funds Transfer (EFT) accounts (see FAR ) for the same concern. If the offeror does not have a DUNS number, it should contact Dun and Bradstreet directly to obtain one. An offeror within the United States may contact Dun and Bradstreet by calling 1-866-705-5711 or via the internet at . An offeror located outside the United States must contact the local Dun and Bradstreet office for a DUNS number. The offeror should indicate that it is an offeror for a Government contract when contacting the local Dun and Bradstreet office. 
+
+(k) Central Contractor Registration. Unless exempted by an addendum to this solicitation, by submission of an offer, the offeror acknowledges the requirement that a prospective awardee shall be registered in the CCR database prior to award, during performance and through final payment of any contract resulting from this solicitation. If the Offeror does not become registered in the CCR database in the time prescribed by the Contracting Officer, the Contracting Officer will proceed to award to the next otherwise successful registered Offeror. Offerors may obtain information on registration and annual confirmation requirements via the CCR database accessed through  or by calling 1-888-227-2423 or 269-961-5757. 
+
+(l) Debriefing. If a post-award debriefing is given to requesting offerors, the Government shall disclose the following information, if applicable: 
+
+(1) The agency’s evaluation of the significant weak or deficient factors in the debriefed offeror’s offer. 
+
+(2) The overall evaluated cost or price and technical rating of the successful and the debriefed offeror and past performance information on the debriefed offeror. 
+
+(3) The overall ranking of all offerors, when any ranking was developed by the agency during source selection. 
+
+(4) A summary of the rationale for award; 
+
+(5) For acquisitions of commercial items, the make and model of the item to be delivered by the successful offeror. 
+
+(6) Reasonable responses to relevant questions posed by the debriefed offeror as to whether source-selection procedures set forth in the solicitation, applicable regulations, and other applicable authorities were followed by the agency. 
+
+
+
+
+
+52.212-2  Evaluation—Commercial Items. (Jan 1999)
+
+
+
+The technical and price evaluation factors are included as separate document.  (See RFQ document)
+
+
+
+52.212-3  Offeror Representations and Certifications—Commercial Items. 
+
+Offeror Representations and Certifications—Commercial Items (Feb 2012) 
+
+An offeror shall complete only paragraph (b) of this provision if the offeror has completed the annual representations and certifications electronically via . If an offeror has not completed the annual representations and certifications electronically at the ORCA website, the offeror shall complete only paragraphs (c) through (o) of this provision. 
+
+(a) Definitions. As used in this provision— 
+
+“Economically disadvantaged women-owned small business (EDWOSB) concern” means a small business concern that is at least 51 percent directly and unconditionally owned by, and the management and daily business operations of which are controlled by, one or more women who are citizens of the United States and who are economically disadvantaged in accordance with 13 CFR part 127. It automatically qualifies as a women-owned small business eligible under the WOSB Program. 
+
+“Forced or indentured child labor” means all work or service— 
+
+(1) Exacted from any person under the age of 18 under the menace of any penalty for its nonperformance and for which the worker does not offer himself voluntarily; or 
+
+(2) Performed by any person under the age of 18 pursuant to a contract the enforcement of which can be accomplished by process or penalties. 
+
+“Inverted domestic corporation”, as used in this section, means a foreign incorporated entity which is treated as an inverted domestic corporation under , i.e., a corporation that used to be incorporated in the United States, or used to be a partnership in the United States, but now is incorporated in a foreign country, or is a subsidiary whose parent corporation is incorporated in a foreign country, that meets the criteria specified in , applied in accordance with the rules and definitions of . An inverted domestic corporation as herein defined does not meet the definition of an inverted domestic corporation as defined by the Internal Revenue Code at . 
+
+“Manufactured end product” means any end product in Federal Supply Classes (FSC) 1000-9999, except— 
+
+(1) FSC 5510, Lumber and Related Basic Wood Materials; 
+
+(2) Federal Supply Group (FSG) 87, Agricultural Supplies; 
+
+(3) FSG 88, Live Animals; 
+
+(4) FSG 89, Food and Related Consumables; 
+
+(5) FSC 9410, Crude Grades of Plant Materials; 
+
+(6) FSC 9430, Miscellaneous Crude Animal Products, Inedible; 
+
+(7) FSC 9440, Miscellaneous Crude Agricultural and Forestry Products; 
+
+(8) FSC 9610, Ores; 
+
+(9) FSC 9620, Minerals, Natural and Synthetic; and 
+
+(10) FSC 9630, Additive Metal Materials. 
+
+“Place of manufacture” means the place where an end product is assembled out of components, or otherwise made or processed from raw materials into the finished product that is to be provided to the Government. If a product is disassembled and reassembled, the place of reassembly is not the place of manufacture. 
+
+“Restricted business operations” means business operations in Sudan that include power production activities, mineral extraction activities, oil-related activities, or the production of military equipment, as those terms are defined in the Sudan Accountability and Divestment Act of 2007 (Pub. L. 110-174). Restricted business operations do not include business operations that the person (as that term is defined in Section 2 of the Sudan Accountability and Divestment Act of 2007) conducting the business can demonstrate— 
+
+(1) Are conducted under contract directly and exclusively with the regional government of southern Sudan; 
+
+(2) Are conducted pursuant to specific authorization from the Office of Foreign Assets Control in the Department of the Treasury, or are expressly exempted under Federal law from the requirement to be conducted under such authorization; 
+
+(3) Consist of providing goods or services to marginalized populations of Sudan; 
+
+(4) Consist of providing goods or services to an internationally recognized peacekeeping force or humanitarian organization; 
+
+(5) Consist of providing goods or services that are used only to promote health or education; or 
+
+(6) Have been voluntarily suspended. 
+
+“Sensitive technology”— 
+
+(1) Means hardware, software, telecommunications equipment, or any other technology that is to be used specifically— 
+
+(i) To restrict the free flow of unbiased information in Iran; or 
+
+(ii) To disrupt, monitor, or otherwise restrict speech of the people of Iran; and 
+
+(2) Does not include information or informational materials the export of which the President does not have the authority to regulate or prohibit pursuant to section 203(b)(3) of the International Emergency Economic Powers Act (). 
+
+“Service-disabled veteran-owned small business concern”— 
+
+(1) Means a small business concern— 
+
+(i) Not less than 51 percent of which is owned by one or more service-disabled veterans or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more service-disabled veterans; and 
+
+(ii) The management and daily business operations of which are controlled by one or more service-disabled veterans or, in the case of a service-disabled veteran with permanent and severe disability, the spouse or permanent caregiver of such veteran. 
+
+(2) Service-disabled veteran means a veteran, as defined in , with a disability that is service-connected, as defined in . 
+
+“Small business concern” means a concern, including its affiliates, that is independently owned and operated, not dominant in the field of operation in which it is bidding on Government contracts, and qualified as a small business under the criteria in 13 CFR Part 121 and size standards in this solicitation. 
+
+“Subsidiary” means an entity in which more than 50 percent of the entity is owned— 
+
+(1) Directly by a parent corporation; or 
+
+(2) Through another subsidiary of a parent corporation. 
+
+“Veteran-owned small business concern” means a small business concern— 
+
+(1) Not less than 51 percent of which is owned by one or more veterans (as defined at ) or, in the case of any publicly owned business, not less than 51 percent of the stock of which is owned by one or more veterans; and 
+
+(2) The management and daily business operations of which are controlled by one or more veterans. 
+
+“Women-owned business concern” means a concern which is at least 51 percent owned by one or more women; or in the case of any publicly owned business, at least 51 percent of its stock is owned by one or more women; and whose management and daily business operations are controlled by one or more women. 
+
+“Women-owned small business concern” means a small business concern— 
+
+(1) That is at least 51 percent owned by one or more women; or, in the case of any publicly owned business, at least 51 percent of the stock of which is owned by one or more women; and 
+
+(2) Whose management and daily business operations are controlled by one or more women. 
+
+“Women-owned small business (WOSB) concern eligible under the WOSB Program” (in accordance with 13 CFR part 127), means a small business concern that is at least 51 percent directly and unconditionally owned by, and the management and daily business operations of which are controlled by, one or more women who are citizens of the United States. 
+
+(b) 
+
+(1) Annual Representations and Certifications. Any changes provided by the offeror in paragraph (b)(2) of this provision do not automatically change the representations and certifications posted on the Online Representations and Certifications Application (ORCA) website. 
+
+(2) The offeror has completed the annual representations and certifications electronically via the ORCA website accessed through . After reviewing the ORCA database information, the offeror verifies by submission of this offer that the representations and certifications currently posted electronically at FAR 52.212-3, Offeror Representations and Certifications—Commercial Items, have been entered or updated in the last 12 months, are current, accurate, complete, and applicable to this solicitation (including the business size standard applicable to the NAICS code referenced for this solicitation), as of the date of this offer and are incorporated in this offer by reference (see FAR ), except for paragraphs ______________. 
+
+[Offeror to identify the applicable paragraphs at (c) through (o) of this provision that the offeror has completed for the purposes of this solicitation only, if any. 
+
+These amended representation(s) and/or certification(s) are also incorporated in this offer and are current, accurate, and complete as of the date of this offer. 
+
+Any changes provided by the offeror are applicable to this solicitation only, and do not result in an update to the representations and certifications posted electronically on ORCA.] 
+
+(c) Offerors must complete the following representations when the resulting contract will be performed in the United States or its outlying areas. Check all that apply. 
+
+(1) Small business concern. The offeror represents as part of its offer that it o is, o is not a small business concern. 
+
+(2) Veteran-owned small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this provision.] The offeror represents as part of its offer that it o is, o is not a veteran-owned small business concern. 
+
+(3) Service-disabled veteran-owned small business concern. [Complete only if the offeror represented itself as a veteran-owned small business concern in paragraph (c)(2) of this provision.] The offeror represents as part of its offer that it o is, o is not a service-disabled veteran-owned small business concern. 
+
+(4) Small disadvantaged business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this provision.] The offeror represents, for general statistical purposes, that it o is, o is not a small disadvantaged business concern as defined in 13 CFR 124.1002. 
+
+(5) Women-owned small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this provision.] The offeror represents that it o is, o is not a women-owned small business concern. 
+
+(6) WOSB concern eligible under the WOSB Program. [Complete only if the offeror represented itself as a women-owned small business concern in paragraph (c)(5) of this provision.] The offeror represents that— 
+
+(i) It o is,o is not a WOSB concern eligible under the WOSB Program, has provided all the required documents to the WOSB Repository, and no change in circumstances or adverse decisions have been issued that affects its eligibility; and 
+
+(ii) It o is, o is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation in paragraph (c)(6)(i) of this provision is accurate in reference to the WOSB concern or concerns that are participating in the joint venture. [The offeror shall enter the name or names of the WOSB concern or concerns that are participating in the joint venture: __________.] Each WOSB concern participating in the joint venture shall submit a separate signed copy of the WOSB representation. 
+
+(7) Economically disadvantaged women-owned small business (EDWOSB) concern. [Complete only if the offeror represented itself as a WOSB concern eligible under the WOSB Program in (c)(6) of this provision.] The offeror represents that— 
+
+(i) It o is, o is not an EDWOSB concern eligible under the WOSB Program, has provided all the required documents to the WOSB Repository, and no change in circumstances or adverse decisions have been issued that affects its eligibility; and 
+
+(ii) It o is, o is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation in paragraph (c)(7)(i) of this provision is accurate in reference to the EDWOSB concern or concerns that are participating in the joint venture. The offeror shall enter the name or names of the EDWOSB concern or concerns that are participating in the joint venture: __________. Each EDWOSB concern participating in the joint venture shall submit a separate signed copy of the EDWOSB representation. 
+
+Note: Complete paragraphs (c)(8) and (c)(9) only if this solicitation is expected to exceed the simplified acquisition threshold. 
+
+(8) Women-owned business concern (other than small business concern). [Complete only if the offeror is a women-owned business concern and did not represent itself as a small business concern in paragraph (c)(1) of this provision.] The offeror represents that it o is a women-owned business concern. 
+
+(9) Tie bid priority for labor surplus area concerns. If this is an invitation for bid, small business offerors may identify the labor surplus areas in which costs to be incurred on account of manufacturing or production (by offeror or first-tier subcontractors) amount to more than 50 percent of the contract price:____________________________________ 
+
+(10) [Complete only if the solicitation contains the clause at FAR , Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns, or FAR , Small Disadvantaged Business Participation Program—Disadvantaged Status and Reporting, and the offeror desires a benefit based on its disadvantaged status.] 
+
+(i) General. The offeror represents that either— 
+
+(A) It o is, o is not certified by the Small Business Administration as a small disadvantaged business concern and identified, on the date of this representation, as a certified small disadvantaged business concern in the CCR Dynamic Small Business Search database maintained by the Small Business Administration, and that no material change in disadvantaged ownership and control has occurred since its certification, and, where the concern is owned by one or more individuals claiming disadvantaged status, the net worth of each individual upon whom the certification is based does not exceed $750,000 after taking into account the applicable exclusions set forth at 13 CFR 124.104(c)(2); or 
+
+(B) It o has, o has not submitted a completed application to the Small Business Administration or a Private Certifier to be certified as a small disadvantaged business concern in accordance with 13 CFR 124, Subpart B, and a decision on that application is pending, and that no material change in disadvantaged ownership and control has occurred since its application was submitted. 
+
+(ii) o Joint Ventures under the Price Evaluation Adjustment for Small Disadvantaged Business Concerns. The offeror represents, as part of its offer, that it is a joint venture that complies with the requirements in 13 CFR 124.1002(f) and that the representation in paragraph (c)(10)(i) of this provision is accurate for the small disadvantaged business concern that is participating in the joint venture. [The offeror shall enter the name of the small disadvantaged business concern that is participating in the joint venture: ________________.] 
+
+(11) HUBZone small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this provision.] The offeror represents, as part of its offer, that— 
+
+(i) It o is, o is not a HUBZone small business concern listed, on the date of this representation, on the List of Qualified HUBZone Small Business Concerns maintained by the Small Business Administration, and no material changes in ownership and control, principal office, or HUBZone employee percentage have occurred since it was certified in accordance with 13 CFR Part 126; and 
+
+(ii) It o is, o is not a HUBZone joint venture that complies with the requirements of 13 CFR Part 126, and the representation in paragraph (c)(11)(i) of this provision is accurate for each HUBZone small business concern participating in the HUBZone joint venture. [The offeror shall enter the names of each of the HUBZone small business concerns participating in the HUBZone joint venture: __________.] Each HUBZone small business concern participating in the HUBZone joint venture shall submit a separate signed copy of the HUBZone representation. 
+
+(d) Representations required to implement provisions of Executive Order 11246— 
+
+(1) Previous contracts and compliance. The offeror represents that— 
+
+(i) It o has, o has not participated in a previous contract or subcontract subject to the Equal Opportunity clause of this solicitation; and 
+
+(ii) It o has, o has not filed all required compliance reports. 
+
+(2) Affirmative Action Compliance. The offeror represents that— 
+
+(i) It o has developed and has on file, o has not developed and does not have on file, at each establishment, affirmative action programs required by rules and regulations of the Secretary of Labor (41 cfr parts 60-1 and 60-2), or 
+
+(ii) It o has not previously had contracts subject to the written affirmative action programs requirement of the rules and regulations of the Secretary of Labor. 
+
+(e) Certification Regarding Payments to Influence Federal Transactions (31 U.S.C. 1352). (Applies only if the contract is expected to exceed $150,000.) By submission of its offer, the offeror certifies to the best of its knowledge and belief that no Federal appropriated funds have been paid or will be paid to any person for influencing or attempting to influence an officer or employee of any agency, a Member of Congress, an officer or employee of Congress or an employee of a Member of Congress on his or her behalf in connection with the award of any resultant contract. If any registrants under the Lobbying Disclosure Act of 1995 have made a lobbying contact on behalf of the offeror with respect to this contract, the offeror shall complete and submit, with its offer, OMB Standard Form LLL, Disclosure of Lobbying Activities, to provide the name of the registrants. The offeror need not report regularly employed officers or employees of the offeror to whom payments of reasonable compensation were made. 
+
+(f) Buy American Act Certificate. (Applies only if the clause at Federal Acquisition Regulation (FAR) , Buy American Act—Supplies, is included in this solicitation.) 
+
+(1) The offeror certifies that each end product, except those listed in paragraph (f)(2) of this provision, is a domestic end product and that for other than COTS items, the offeror has considered components of unknown origin to have been mined, produced, or manufactured outside the United States. The offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as domestic end products, i.e., an end product that is not a COTS item and does not meet the component test in paragraph (2) of the definition of “domestic end product.” The terms “commercially available off-the-shelf (COTS) item” “component,” “domestic end product,” “end product,” “foreign end product,” and “United States” are defined in the clause of this solicitation entitled “Buy American Act—Supplies.” 
+
+(2) Foreign End Products:
+
+[List as necessary] 
+
+(3) The Government will evaluate offers in accordance with the policies and procedures of FAR . 
+
+(g)(1) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate. (Applies only if the clause at FAR , Buy American Act—Free Trade Agreements—Israeli Trade Act, is included in this solicitation.) 
+
+(i) The offeror certifies that each end product, except those listed in paragraph (g)(1)(ii) or (g)(1)(iii) of this provision, is a domestic end product and that for other than COTS items, the offeror has considered components of unknown origin to have been mined, produced, or manufactured outside the United States. The terms “Bahrainian, Moroccan, Omani, or Peruvian end product,” “commercially available off-the-shelf (COTS) item,” “component,” “domestic end product,” “end product,” “foreign end product,” “Free Trade Agreement country,” “Free Trade Agreement country end product,” “Israeli end product,” and “United States” are defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements–Israeli Trade Act.” 
+
+(ii) The offeror certifies that the following supplies are Free Trade Agreement country end products (other than Bahrainian, Moroccan, Omani, or Peruvian end products) or Israeli end products as defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli Trade Act”: 
+
+Free Trade Agreement Country End Products (Other than Bahrainian, Moroccan, Omani, or Peruvian End Products) or Israeli End Products:
+
+[List as necessary] 
+
+(iii) The offeror shall list those supplies that are foreign end products (other than those listed in paragraph (g)(1)(ii) of this provision) as defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli Trade Act.” The offeror shall list as other foreign end products those end products manufactured in the United States that do not qualify as domestic end products, i.e., an end product that is not a COTS item and does not meet the component test in paragraph (2) of the definition of “domestic end product.” 
+
+Other Foreign End Products:
+
+[List as necessary] 
+
+(iv) The Government will evaluate offers in accordance with the policies and procedures of FAR . 
+
+(2) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate, Alternate I. If Alternate I to the clause at FAR  is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision: 
+
+(g)(1)(ii) The offeror certifies that the following supplies are Canadian end products as defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli Trade Act”: 
+
+Canadian End Products:
+
+[List as necessary] 
+
+(3) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate, Alternate II. If Alternate II to the clause at FAR  is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision: 
+
+(g)(1)(ii) The offeror certifies that the following supplies are Canadian end products or Israeli end products as defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli Trade Act”: 
+
+Canadian or Israeli End Products:
+
+[List as necessary] 
+
+(4) Trade Agreements Certificate. (Applies only if the clause at FAR , Trade Agreements, is included in this solicitation.) 
+
+(i) The offeror certifies that each end product, except those listed in paragraph (g)(4)(ii) of this provision, is a U.S.-made or designated country end product, as defined in the clause of this solicitation entitled “Trade Agreements.” 
+
+(ii) The offeror shall list as other end products those end products that are not U.S.-made or designated country end products. 
+
+Other End Products:
+
+[List as necessary] 
+
+(iii) The Government will evaluate offers in accordance with the policies and procedures of FAR . For line items covered by the WTO GPA, the Government will evaluate offers of U.S.-made or designated country end products without regard to the restrictions of the Buy American Act. The Government will consider for award only offers of U.S.-made or designated country end products unless the Contracting Officer determines that there are no offers for such products or that the offers for such products are insufficient to fulfill the requirements of the solicitation. 
+
+(h) Certification Regarding Responsibility Matters (Executive Order 12689). (Applies only if the contract value is expected to exceed the simplified acquisition threshold.) The offeror certifies, to the best of its knowledge and belief, that the offeror and/or any of its principals— 
+
+(1) o Are, o are not presently debarred, suspended, proposed for debarment, or declared ineligible for the award of contracts by any Federal agency; 
+
+(2) o Have, o have not, within a three-year period preceding this offer, been convicted of or had a civil judgment rendered against them for: commission of fraud or a criminal offense in connection with obtaining, attempting to obtain, or performing a Federal, state or local government contract or subcontract; violation of Federal or state antitrust statutes relating to the submission of offers; or commission of embezzlement, theft, forgery, bribery, falsification or destruction of records, making false statements, tax evasion, violating Federal criminal tax laws, or receiving stolen property; 
+
+(3) o Are, o are not presently indicted for, or otherwise criminally or civilly charged by a Government entity with, commission of any of these offenses enumerated in paragraph (h)(2) of this clause; and 
+
+(4) o Have, o have not, within a three-year period preceding this offer, been notified of any delinquent Federal taxes in an amount that exceeds $3,000 for which the liability remains unsatisfied. 
+
+(i) Taxes are considered delinquent if both of the following criteria apply: 
+
+(A) The tax liability is finally determined. The liability is finally determined if it has been assessed. A liability is not finally determined if there is a pending administrative or judicial challenge. In the case of a judicial challenge to the liability, the liability is not finally determined until all judicial appeal rights have been exhausted. 
+
+(B) The taxpayer is delinquent in making payment. A taxpayer is delinquent if the taxpayer has failed to pay the tax liability when full payment was due and required. A taxpayer is not delinquent in cases where enforced collection action is precluded. 
+
+(ii) Examples. 
+
+(A) The taxpayer has received a statutory notice of deficiency, under I.R.C. §6212, which entitles the taxpayer to seek Tax Court review of a proposed tax deficiency. This is not a delinquent tax because it is not a final tax liability. Should the taxpayer seek Tax Court review, this will not be a final tax liability until the taxpayer has exercised all judicial appeal rights. 
+
+(B) The IRS has filed a notice of Federal tax lien with respect to an assessed tax liability, and the taxpayer has been issued a notice under I.R.C. §6320 entitling the taxpayer to request a hearing with the IRS Office of Appeals contesting the lien filing, and to further appeal to the Tax Court if the IRS determines to sustain the lien filing. In the course of the hearing, the taxpayer is entitled to contest the underlying tax liability because the taxpayer has had no prior opportunity to contest the liability. This is not a delinquent tax because it is not a final tax liability. Should the taxpayer seek tax court review, this will not be a final tax liability until the taxpayer has exercised all judicial appeal rights. 
+
+(C) The taxpayer has entered into an installment agreement pursuant to I.R.C. §6159. The taxpayer is making timely payments and is in full compliance with the agreement terms. The taxpayer is not delinquent because the taxpayer is not currently required to make full payment. 
+
+(D) The taxpayer has filed for bankruptcy protection. The taxpayer is not delinquent because enforced collection action is stayed under 11 U.S.C. §362 (the Bankruptcy Code). 
+
+(i) Certification Regarding Knowledge of Child Labor for Listed End Products (Executive Order 13126). [The Contracting Officer must list in paragraph (i)(1) any end products being acquired under this solicitation that are included in the List of Products Requiring Contractor Certification as to Forced or Indentured Child Labor, unless excluded at (b).] 
+
+(1) Listed end products.
+
+(2) Certification. [If the Contracting Officer has identified end products and countries of origin in paragraph (i)(1) of this provision, then the offeror must certify to either (i)(2)(i) or (i)(2)(ii) by checking the appropriate block.] 
+
+[  ] (i) The offeror will not supply any end product listed in paragraph (i)(1) of this provision that was mined, produced, or manufactured in the corresponding country as listed for that product. 
+
+[  ] (ii) The offeror may supply an end product listed in paragraph (i)(1) of this provision that was mined, produced, or manufactured in the corresponding country as listed for that product. The offeror certifies that it has made a good faith effort to determine whether forced or indentured child labor was used to mine, produce, or manufacture any such end product furnished under this contract. On the basis of those efforts, the offeror certifies that it is not aware of any such use of child labor. 
+
+(j) Place of manufacture. (Does not apply unless the solicitation is predominantly for the acquisition of manufactured end products.) For statistical purposes only, the offeror shall indicate whether the place of manufacture of the end products it expects to provide in response to this solicitation is predominantly— 
+
+(1) o In the United States (Check this box if the total anticipated price of offered end products manufactured in the United States exceeds the total anticipated price of offered end products manufactured outside the United States); or 
+
+(2) o Outside the United States. 
+
+(k) Certificates regarding exemptions from the application of the Service Contract Act. (Certification by the offeror as to its compliance with respect to the contract also constitutes its certification as to compliance by its subcontractor if it subcontracts out the exempt services.) [The contracting officer is to check a box to indicate if paragraph (k)(1) or (k)(2) applies.] 
+
+[  ] (1) Maintenance, calibration, or repair of certain equipment as described in FAR (c)(1). The offeror o does o does not certify that— 
+
+(i) The items of equipment to be serviced under this contract are used regularly for other than Governmental purposes and are sold or traded by the offeror (or subcontractor in the case of an exempt subcontract) in substantial quantities to the general public in the course of normal business operations; 
+
+(ii) The services will be furnished at prices which are, or are based on, established catalog or market prices (see FAR (c)(2)(ii)) for the maintenance, calibration, or repair of such equipment; and 
+
+(iii) The compensation (wage and fringe benefits) plan for all service employees performing work under the contract will be the same as that used for these employees and equivalent employees servicing the same equipment of commercial customers. 
+
+[  ] (2) Certain services as described in FAR (d)(1). The offeror o does o does not certify that— 
+
+(i) The services under the contract are offered and sold regularly to non-Governmental customers, and are provided by the offeror (or subcontractor in the case of an exempt subcontract) to the general public in substantial quantities in the course of normal business operations; 
+
+(ii) The contract services will be furnished at prices that are, or are based on, established catalog or market prices (see FAR (d)(2)(iii)); 
+
+(iii) Each service employee who will perform the services under the contract will spend only a small portion of his or her time (a monthly average of less than 20 percent of the available hours on an annualized basis, or less than 20 percent of available hours during the contract period if the contract period is less than a month) servicing the Government contract; and 
+
+(iv) The compensation (wage and fringe benefits) plan for all service employees performing work under the contract is the same as that used for these employees and equivalent employees servicing commercial customers. 
+
+(3) If paragraph (k)(1) or (k)(2) of this clause applies— 
+
+(i) If the offeror does not certify to the conditions in paragraph (k)(1) or (k)(2) and the Contracting Officer did not attach a Service Contract Act wage determination to the solicitation, the offeror shall notify the Contracting Officer as soon as possible; and 
+
+(ii) The Contracting Officer may not make an award to the offeror if the offeror fails to execute the certification in paragraph (k)(1) or (k)(2) of this clause or to contact the Contracting Officer as required in paragraph (k)(3)(i) of this clause. 
+
+(l) Taxpayer Identification Number (TIN) (, ). (Not applicable if the offeror is required to provide this information to a central contractor registration database to be eligible for award.) 
+
+(1) All offerors must submit the information required in paragraphs (l)(3) through (l)(5) of this provision to comply with debt collection requirements of , reporting requirements of , and implementing regulations issued by the Internal Revenue Service (IRS). 
+
+(2) The TIN may be used by the Government to collect and report on any delinquent amounts arising out of the offeror’s relationship with the Government (). If the resulting contract is subject to the payment reporting requirements described in FAR , the TIN provided hereunder may be matched with IRS records to verify the accuracy of the offeror’s TIN. 
+
+(3) Taxpayer Identification Number (TIN). 
+
+o  TIN: ________________________________. 
+
+o  TIN has been applied for. 
+
+o  TIN is not required because: 
+
+o  Offeror is a nonresident alien, foreign corporation, or foreign partnership that does not have income effectively connected with the conduct of a trade or business in the United States and does not have an office or place of business or a fiscal paying agent in the United States; 
+
+o  Offeror is an agency or instrumentality of a foreign government; 
+
+o  Offeror is an agency or instrumentality of the Federal Government. 
+
+(4) Type of organization. 
+
+o  Sole proprietorship; 
+
+o  Partnership; 
+
+o  Corporate entity (not tax-exempt); 
+
+o  Corporate entity (tax-exempt); 
+
+o  Government entity (Federal, State, or local); 
+
+o  Foreign government; 
+
+o  International organization per 26 CFR 1.6049-4; 
+
+o  Other ________________________________. 
+
+(5) Common parent. 
+
+o  Offeror is not owned or controlled by a common parent; 
+
+o  Name and TIN of common parent: 
+
+Name ________________________________. 
+
+TIN _________________________________. 
+
+(m) Restricted business operations in Sudan. By submission of its offer, the offeror certifies that the offeror does not conduct any restricted business operations in Sudan. 
+
+(n) Prohibition on Contracting with Inverted Domestic Corporations. 
+
+(1) Relation to Internal Revenue Code. An inverted domestic corporation as herein defined does not meet the definition of an inverted domestic corporation as defined by the Internal Revenue Code . 
+
+(2) Representation. By submission of its offer, the offeror represents that— 
+
+(i) It is not an inverted domestic corporation; and 
+
+(ii) It is not a subsidiary of an inverted domestic corporation. 
+
+(o) Sanctioned activities relating to Iran. 
+
+(1) The offeror shall e-mail questions concerning sensitive technology to the Department of State at . 
+
+(2) Representation and Certification. Unless a waiver is granted or an exception applies as provided in paragraph (o)(3) of this provision, by submission of its offer, the offeror— 
+
+(i) Represents, to the best of its knowledge and belief, that the offeror does not export any sensitive technology to the government of Iran or any entities or individuals owned or controlled by, or acting on behalf or at the direction of, the government of Iran; and 
+
+(ii) Certifies that the offeror, or any person owned or controlled by the offeror, does not engage in any activities for which sanctions may be imposed under section 5 of the Iran Sanctions Act. 
+
+(3) The representation and certification requirements of paragraph (o)(2) of this provision do not apply if— 
+
+(i) This solicitation includes a trade agreements certification (e.g., (g) or a comparable agency provision); and 
+
+(ii) The offeror has certified that all the offered products to be supplied are designated country end products. 
+
+(End of provision) 
+
+52.212-4  Contract Terms and Conditions—Commercial Items. 
+
+Contract Terms and Conditions—Commercial Items (Feb 2012) 
+
+(a) Inspection/Acceptance. The Contractor shall only tender for acceptance those items that conform to the requirements of this contract. The Government reserves the right to inspect or test any supplies or services that have been tendered for acceptance. The Government may require repair or replacement of nonconforming supplies or reperformance of nonconforming services at no increase in contract price. If repair/replacement or reperformance will not correct the defects or is not possible, the Government may seek an equitable price reduction or adequate consideration for acceptance of nonconforming supplies or services. The Government must exercise its post-acceptance rights— 
+
+(1) Within a reasonable time after the defect was discovered or should have been discovered; and 
+
+(2) Before any substantial change occurs in the condition of the item, unless the change is due to the defect in the item. 
+
+(b) Assignment. The Contractor or its assignee may assign its rights to receive payment due as a result of performance of this contract to a bank, trust company, or other financing institution, including any Federal lending agency in accordance with the Assignment of Claims Act (). However, when a third party makes payment (e.g., use of the Governmentwide commercial purchase card), the Contractor may not assign its rights to receive payment under this contract. 
+
+(c) Changes. Changes in the terms and conditions of this contract may be made only by written agreement of the parties. 
+
+(d) Disputes. This contract is subject to the Contract Disputes Act of 1978, as amended (). Failure of the parties to this contract to reach agreement on any request for equitable adjustment, claim, appeal or action arising under or relating to this contract shall be a dispute to be resolved in accordance with the clause at FAR , Disputes, which is incorporated herein by reference. The Contractor shall proceed diligently with performance of this contract, pending final resolution of any dispute arising under the contract. 
+
+(e) Definitions. The clause at FAR , Definitions, is incorporated herein by reference. 
+
+(f) Excusable delays. The Contractor shall be liable for default unless nonperformance is caused by an occurrence beyond the reasonable control of the Contractor and without its fault or negligence such as, acts of God or the public enemy, acts of the Government in either its sovereign or contractual capacity, fires, floods, epidemics, quarantine restrictions, strikes, unusually severe weather, and delays of common carriers. The Contractor shall notify the Contracting Officer in writing as soon as it is reasonably possible after the commencement of any excusable delay, setting forth the full particulars in connection therewith, shall remedy such occurrence with all reasonable dispatch, and shall promptly give written notice to the Contracting Officer of the cessation of such occurrence. 
+
+(g) Invoice. 
+
+(1) The Contractor shall submit an original invoice and three copies (or electronic invoice, if authorized) to the address designated in the contract to receive invoices. An invoice must include— 
+
+(i) Name and address of the Contractor; 
+
+(ii) Invoice date and number; 
+
+(iii) Contract number, contract line item number and, if applicable, the order number; 
+
+(iv) Description, quantity, unit of measure, unit price and extended price of the items delivered; 
+
+(v) Shipping number and date of shipment, including the bill of lading number and weight of shipment if shipped on Government bill of lading; 
+
+(vi) Terms of any discount for prompt payment offered; 
+
+(vii) Name and address of official to whom payment is to be sent; 
+
+(viii) Name, title, and phone number of person to notify in event of defective invoice; and 
+
+(ix) Taxpayer Identification Number (TIN). The Contractor shall include its TIN on the invoice only if required elsewhere in this contract. 
+
+(x) Electronic funds transfer (EFT) banking information. 
+
+(A) The Contractor shall include EFT banking information on the invoice only if required elsewhere in this contract. 
+
+(B) If EFT banking information is not required to be on the invoice, in order for the invoice to be a proper invoice, the Contractor shall have submitted correct EFT banking information in accordance with the applicable solicitation provision, contract clause (e.g., , Payment by Electronic Funds Transfer—Central Contractor Registration, or , Payment by Electronic Funds Transfer—Other Than Central Contractor Registration), or applicable agency procedures. 
+
+(C) EFT banking information is not required if the Government waived the requirement to pay by EFT. 
+
+(2) Invoices will be handled in accordance with the Prompt Payment Act () and Office of Management and Budget (OMB) prompt payment regulations at 5 CFR Part 1315. 
+
+(h) Patent indemnity. The Contractor shall indemnify the Government and its officers, employees and agents against liability, including costs, for actual or alleged direct or contributory infringement of, or inducement to infringe, any United States or foreign patent, trademark or copyright, arising out of the performance of this contract, provided the Contractor is reasonably notified of such claims and proceedings. 
+
+(i) Payment.— 
+
+(1) Items accepted. Payment shall be made for items accepted by the Government that have been delivered to the delivery destinations set forth in this contract. 
+
+(2) Prompt payment. The Government will make payment in accordance with the Prompt Payment Act () and prompt payment regulations at 5 CFR Part 1315. 
+
+(3) Electronic Funds Transfer (EFT). If the Government makes payment by EFT, see (b) for the appropriate EFT clause. 
+
+(4) Discount. In connection with any discount offered for early payment, time shall be computed from the date of the invoice. For the purpose of computing the discount earned, payment shall be considered to have been made on the date which appears on the payment check or the specified payment date if an electronic funds transfer payment is made. 
+
+(5) Overpayments. If the Contractor becomes aware of a duplicate contract financing or invoice payment or that the Government has otherwise overpaid on a contract financing or invoice payment, the Contractor shall— 
+
+(i) Remit the overpayment amount to the payment office cited in the contract along with a description of the overpayment including the— 
+
+(A) Circumstances of the overpayment (e.g., duplicate payment, erroneous payment, liquidation errors, date(s) of overpayment); 
+
+(B) Affected contract number and delivery order number, if applicable; 
+
+(C) Affected contract line item or subline item, if applicable; and 
+
+(D) Contractor point of contact. 
+
+(ii) Provide a copy of the remittance and supporting documentation to the Contracting Officer. 
+
+(6) Interest. 
+
+(i) All amounts that become payable by the Contractor to the Government under this contract shall bear simple interest from the date due until paid unless paid within 30 days of becoming due. The interest rate shall be the interest rate established by the Secretary of the Treasury as provided in Section 611 of the Contract Disputes Act of 1978 (Public Law 95-563), which is applicable to the period in which the amount becomes due, as provided in (i)(6)(v) of this clause, and then at the rate applicable for each six-month period as fixed by the Secretary until the amount is paid. 
+
+(ii) The Government may issue a demand for payment to the Contractor upon finding a debt is due under the contract. 
+
+(iii) Final decisions. The Contracting Officer will issue a final decision as required by  if— 
+
+(A) The Contracting Officer and the Contractor are unable to reach agreement on the existence or amount of a debt within 30 days; 
+
+(B) The Contractor fails to liquidate a debt previously demanded by the Contracting Officer within the timeline specified in the demand for payment unless the amounts were not repaid because the Contractor has requested an installment payment agreement; or 
+
+(C) The Contractor requests a deferment of collection on a debt previously demanded by the Contracting Officer (see ). 
+
+(iv) If a demand for payment was previously issued for the debt, the demand for payment included in the final decision shall identify the same due date as the original demand for payment. 
+
+(v) Amounts shall be due at the earliest of the following dates: 
+
+(A) The date fixed under this contract. 
+
+(B) The date of the first written demand for payment, including any demand for payment resulting from a default termination. 
+
+(vi) The interest charge shall be computed for the actual number of calendar days involved beginning on the due date and ending on— 
+
+(A) The date on which the designated office receives payment from the Contractor; 
+
+(B) The date of issuance of a Government check to the Contractor from which an amount otherwise payable has been withheld as a credit against the contract debt; or 
+
+(C) The date on which an amount withheld and applied to the contract debt would otherwise have become payable to the Contractor. 
+
+(vii) The interest charge made under this clause may be reduced under the procedures prescribed in  of the Federal Acquisition Regulation in effect on the date of this contract. 
+
+(j) Risk of loss. Unless the contract specifically provides otherwise, risk of loss or damage to the supplies provided under this contract shall remain with the Contractor until, and shall pass to the Government upon: 
+
+(1) Delivery of the supplies to a carrier, if transportation is f.o.b. origin; or 
+
+(2) Delivery of the supplies to the Government at the destination specified in the contract, if transportation is f.o.b. destination. 
+
+(k) Taxes. The contract price includes all applicable Federal, State, and local taxes and duties. 
+
+(l) Termination for the Government’s convenience. The Government reserves the right to terminate this contract, or any part hereof, for its sole convenience. In the event of such termination, the Contractor shall immediately stop all work hereunder and shall immediately cause any and all of its suppliers and subcontractors to cease work. Subject to the terms of this contract, the Contractor shall be paid a percentage of the contract price reflecting the percentage of the work performed prior to the notice of termination, plus reasonable charges the Contractor can demonstrate to the satisfaction of the Government using its standard record keeping system, have resulted from the termination. The Contractor shall not be required to comply with the cost accounting standards or contract cost principles for this purpose. This paragraph does not give the Government any right to audit the Contractor’s records. The Contractor shall not be paid for any work performed or costs incurred which reasonably could have been avoided. 
+
+(m) Termination for cause. The Government may terminate this contract, or any part hereof, for cause in the event of any default by the Contractor, or if the Contractor fails to comply with any contract terms and conditions, or fails to provide the Government, upon request, with adequate assurances of future performance. In the event of termination for cause, the Government shall not be liable to the Contractor for any amount for supplies or services not accepted, and the Contractor shall be liable to the Government for any and all rights and remedies provided by law. If it is determined that the Government improperly terminated this contract for default, such termination shall be deemed a termination for convenience. 
+
+(n) Title. Unless specified elsewhere in this contract, title to items furnished under this contract shall pass to the Government upon acceptance, regardless of when or where the Government takes physical possession. 
+
+(o) Warranty. The Contractor warrants and implies that the items delivered hereunder are merchantable and fit for use for the particular purpose described in this contract. 
+
+(p) Limitation of liability. Except as otherwise provided by an express warranty, the Contractor will not be liable to the Government for consequential damages resulting from any defect or deficiencies in accepted items. 
+
+(q) Other compliances. The Contractor shall comply with all applicable Federal, State and local laws, executive orders, rules and regulations applicable to its performance under this contract. 
+
+(r) Compliance with laws unique to Government contracts. The Contractor agrees to comply with  relating to limitations on the use of appropriated funds to influence certain Federal contracts;  relating to officials not to benefit; , et seq., Contract Work Hours and Safety Standards Act; , Anti-Kickback Act of 1986;  and  relating to whistleblower protections; , Fly American; and  relating to procurement integrity. 
+
+(s) Order of precedence. Any inconsistencies in this solicitation or contract shall be resolved by giving precedence in the following order: 
+
+(1) The schedule of supplies/services. 
+
+(2) The Assignments, Disputes, Payments, Invoice, Other Compliances, and Compliance with Laws Unique to Government Contracts paragraphs of this clause. 
+
+(3) The clause at . 
+
+(4) Addenda to this solicitation or contract, including any license agreements for computer software. 
+
+(5) Solicitation provisions if this is a solicitation. 
+
+(6) Other paragraphs of this clause. 
+
+(7) The . 
+
+(8) Other documents, exhibits, and attachments. 
+
+(9) The specification. 
+
+(t) Central Contractor Registration (CCR). 
+
+(1) Unless exempted by an addendum to this contract, the Contractor is responsible during performance and through final payment of any contract for the accuracy and completeness of the data within the CCR database, and for any liability resulting from the Government’s reliance on inaccurate or incomplete data. To remain registered in the CCR database after the initial registration, the Contractor is required to review and update on an annual basis from the date of initial registration or subsequent updates its information in the CCR database to ensure it is current, accurate and complete. Updating information in the CCR does not alter the terms and conditions of this contract and is not a substitute for a properly executed contractual document. 
+
+(2)(i) If a Contractor has legally changed its business name, “doing business as” name, or division name (whichever is shown on the contract), or has transferred the assets used in performing the contract, but has not completed the necessary requirements regarding novation and change-of-name agreements in FAR , the Contractor shall provide the responsible Contracting Officer a minimum of one business day’s written notification of its intention to (A) change the name in the CCR database; (B) comply with the requirements of ; and (C) agree in writing to the timeline and procedures specified by the responsible Contracting Officer. 
+
+The Contractor must provide with the notification sufficient documentation to support the legally changed name. 
+
+(ii) If the Contractor fails to comply with the requirements of paragraph (t)(2)(i) of this clause, or fails to perform the agreement at paragraph (t)(2)(i)(C) of this clause, and, in the absence of a properly executed novation or change-of-name agreement, the CCR information that shows the Contractor to be other than the Contractor indicated in the contract will be considered to be incorrect information within the meaning of the “Suspension of Payment” paragraph of the electronic funds transfer (EFT) clause of this contract. 
+
+(3) The Contractor shall not change the name or address for EFT payments or manual payments, as appropriate, in the CCR record to reflect an assignee for the purpose of assignment of claims (see , Assignment of Claims). Assignees shall be separately registered in the CCR database. Information provided to the Contractor’s CCR record that indicates payments, including those made by EFT, to an ultimate recipient other than that Contractor will be considered to be incorrect information within the meaning of the “Suspension of payment” paragraph of the EFT clause of this contract. 
+
+(4) Offerors and Contractors may obtain information on registration and annual confirmation requirements via CCR accessed through  or by calling 1-888-227-2423 or 269-961-5757. 
+
+(End of clause) 
+
+52.212-5  Contract Terms and Conditions Required to Implement Statutes or Executive Orders—Commercial Items. 
+
+Contract Terms and Conditions Required to Implement Statutes or Executive Orders—Commercial Items (Feb 2012) 
+
+(a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract by reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items: 
+
+(1) , Combating Trafficking in Persons (Feb 2009) (). 
+
+___Alternate I (Aug 2007) of  (). 
+
+(2) , Protest After Award (Aug 1996) (). 
+
+(3) , Applicable Law for Breach of Contract Claim (Oct 2004) (Pub. L. 108-77, 108-78). 
+
+(b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: 
+
+[Contracting Officer check as appropriate.] 
+
+_X_ (1) , Restrictions on Subcontractor Sales to the Government (Sept 2006), with Alternate I (Oct 1995) ( and ). 
+
+__ (2) , Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 ()). 
+
+__ (3) , Whistleblower Protections under the American Recovery and Reinvestment Act of 2009 (June 2010) (Section 1553 of Pub. L. 111-5). (Applies to contracts funded by the American Recovery and Reinvestment Act of 2009.) 
+
+_X_ (4) , Reporting Executive Compensation and First-Tier Subcontract Awards (Feb 2012) (Pub. L. 109-282) (). 
+
+__ (5) , American Recovery and Reinvestment Act—Reporting Requirements (Jul 2010) (Pub. L. 111-5). 
+
+__ (6) , Protecting the Government’s Interest When Subcontracting with Contractors Debarred, Suspended, or Proposed for Debarment. (Dec 2010) (31 U.S.C. 6101 note). 
+
+__ (7) , Updates of Publicly Available Information Regarding Responsibility Matters (Jan 2012) (41 U.S.C. 2313). 
+
+__ (8) , Prohibition on Contracting with Inverted Domestic Corporations (section 740 of Division C of Pub. L. 111-117, section 743 of Division D of Pub. L. 111-8, and section 745 of Division D of Pub. L. 110-161). 
+
+__ (9) , Notice of HUBZone Set-Aside or Sole-Source Award (Nov 2011) (). 
+
+__ (10) , Notice of Price Evaluation Preference for HUBZone Small Business Concerns (Jan 2011) (if the offeror elects to waive the preference, it shall so indicate in its offer) (). 
+
+__ (11) [Reserved] 
+
+_X_ (12)(i)  , Notice of Total Small Business Set-Aside (Nov 2011) (). 
+
+__ (ii) Alternate I (Nov 2011). 
+
+__ (iii) Alternate II (Nov 2011). 
+
+__ (13)(i)  , Notice of Partial Small Business Set-Aside (June 2003) (). 
+
+__ (ii) Alternate I (Oct 1995) of . 
+
+__ (iii) Alternate II (Mar 2004) of . 
+
+_X (14) , Utilization of Small Business Concerns (Jan 2011) ( and (3)). 
+
+__ (15)(i)  , Small Business Subcontracting Plan (Jan 2011) (). 
+
+__ (ii) Alternate I (Oct 2001) of . 
+
+__ (iii) Alternate II (Oct 2001) of . 
+
+__ (iv) Alternate III (Jul 2010) of . 
+
+__ (16) , Notice of Set-Aside of Orders (Nov 2011)(15 U.S.C. 644(r)). 
+
+__ (17) , Limitations on Subcontracting (Nov 2011) (). 
+
+__ (18) , Liquidated Damages—Subcon-tracting Plan (Jan 1999) (). 
+
+__ (19)(i)  , Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns (Oct 2008) () (if the offeror elects to waive the adjustment, it shall so indicate in its offer). 
+
+__ (ii) Alternate I (June 2003) of . 
+
+__ (20) , Small Disadvantaged Business Participation Program—Disadvantaged Status and Reporting (Dec 2010) (Pub. L. 103-355, section 7102, and ). 
+
+__ (21) , Small Disadvantaged Business Participation Program— Incentive Subcontracting (Oct 2000) (Pub. L. 103-355, section 7102, and ). 
+
+X_ (22) , Notice of Service-Disabled Veteran-Owned Small Business Set-Aside (Nov 2011) (). 
+
+X_ (23)  52.219-28, Post Award Small Business Program Rerepresentation (Apr 2009) (). 
+
+__ (24)  Notice of Set-Aside for Economically Disadvantaged Women-Owned Small Business Concerns (Nov 2011). 
+
+__ (25)  Notice of Set-Aside for Women-Owned Small Business Concerns Eligible Under the Women-Owned Small Business Program (Nov 2011). 
+
+X_ (26) , Convict Labor (June 2003) (E.O. 11755). 
+
+X_ (27) , Child Labor—Cooperation with Authorities and Remedies (Jul 2010) (E.O. 13126). 
+
+X_ (28) , Prohibition of Segregated Facilities (Feb 1999). 
+
+X_ (29) , Equal Opportunity (Mar 2007) (E.O. 11246). 
+
+X_ (30) , Equal Opportunity for Veterans (Sep 2010)(38 U.S.C. 4212). 
+
+X_ (31) , Affirmative Action for Workers with Disabilities (Oct 2010) (). 
+
+X_ (32) , Employment Reports on Veterans (Sep 2010) (38 U.S.C. 4212). 
+
+X_ (33) , Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496). 
+
+X_ (34) , Employment Eligibility Verification (Jan 2009). (Executive Order 12989). (Not applicable to the acquisition of commercially available off-the-shelf items or certain other types of commercial items as prescribed in .) 
+
+__ (35)(i)  , Estimate of Percentage of Recovered Material Content for EPA–Designated Items (May 2008) (). (Not applicable to the acquisition of commercially available off-the-shelf items.) 
+
+__ (ii) Alternate I (May 2008) of  (). (Not applicable to the acquisition of commercially available off-the-shelf items.) 
+
+__ (36) , Energy Efficiency in Energy-Consuming Products (Dec 2007) (). 
+
+__ (37)(i)  , IEEE 1680 Standard for the Environmental Assessment of Personal Computer Products (Dec 2007) (E.O. 13423). 
+
+__ (ii) Alternate I (Dec 2007) of . 
+
+__ (38) , Encouraging Contractor Policies to Ban Text Messaging While Driving (Aug 2011) (E.O. 13513). 
+
+X_ (39) , Buy American Act—Supplies (Feb 2009) (). 
+
+__ (40)(i)  , Buy American Act—Free Trade Agreements—Israeli Trade Act (June 2009) (,  note,  note,  note, Pub. L. 108-77, 108-78, 108-286, 108-302, 109-53, 109-169, 109-283, and 110-138). 
+
+__ (ii) Alternate I (Jan 2004) of . 
+
+__ (iii) Alternate II (Jan 2004) of . 
+
+__ (41) , Trade Agreements (Nov 2011) (, et seq.,  note). 
+
+X_ (42) , Restrictions on Certain Foreign Purchases (June 2008) (E.O.’s, proclamations, and statutes administered by the Office of Foreign Assets Control of the Department of the Treasury). 
+
+__ (43) , Notice of Disaster or Emergency Area Set-Aside (Nov 2007) (). 
+
+__ (44) , Restrictions on Subcontracting Outside Disaster or Emergency Area (Nov 2007) (). 
+
+__ (45) , Terms for Financing of Purchases of Commercial Items (Feb 2002) (, ). 
+
+__ (46) , Installment Payments for Commercial Items (Oct 1995) (, ). 
+
+X_ (47) , Payment by Electronic Funds Transfer—Central Contractor Registration (Oct 2003) (). 
+
+__ (48) , Payment by Electronic Funds Transfer—Other than Central Contractor Registration (May 1999) (). 
+
+__ (49) , Payment by Third Party (Feb 2010) (). 
+
+X_ (50) , Privacy or Security Safeguards (Aug 1996) (). 
+
+__ (51)(i)  , Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) ( and ). 
+
+__ (ii) Alternate I (Apr 2003) of . 
+
+(c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer has indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: 
+
+[Contracting Officer check as appropriate.] 
+
+__ (1) , Service Contract Act of 1965 (Nov 2007) (, et seq.). 
+
+__ (2) , Statement of Equivalent Rates for Federal Hires (May 1989) ( and , et seq.). 
+
+__ (3) , Fair Labor Standards Act and Service Contract Act—Price Adjustment (Multiple Year and Option Contracts) (Sep 2009) ( and , et seq.). 
+
+__ (4) , Fair Labor Standards Act and Service Contract Act—Price Adjustment (Sep 2009) ( and , et seq.). 
+
+__ (5) , Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment—Requirements (Nov 2007) (, et seq.). 
+
+__ (6) , Exemption from Application of the Service Contract Act to Contracts for Certain Services—Requirements (Feb 2009) (, et seq.). 
+
+__ (7) , Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247). 
+
+__ (8) , Accepting and Dispensing of $1 Coin (Sept 2008) (). 
+
+(d)  Comptroller General Examination of Record. The Contractor shall comply with the provisions of this paragraph (d) if this contract was awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at , Audit and Records—Negotiation. 
+
+(1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right to examine any of the Contractor’s directly pertinent records involving transactions related to this contract. 
+
+(2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination, audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR , Contractor Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records relating to the work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such appeals, litigation, or claims are finally resolved. 
+
+(3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary course of business or pursuant to a provision of law. 
+
+(e)(1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c), and (d) of this clause, the Contractor is not required to flow down any FAR clause, other than those in this paragraph (e)(1) in a subcontract for commercial items. Unless otherwise indicated below, the extent of the flow down shall be as required by the clause— 
+
+(i) , Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 ()). 
+
+(ii) , Utilization of Small Business Concerns (Dec 2010) ( and (3)), in all subcontracts that offer further subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $650,000 ($1.5 million for construction of any public facility), the subcontractor must include  in lower tier subcontracts that offer subcontracting opportunities. 
+
+(iii) [Reserved] 
+
+(iv) , Equal Opportunity (Mar 2007) (E.O. 11246). 
+
+(v) , Equal Opportunity for Veterans (Sep 2010) (). 
+
+(vi) , Affirmative Action for Workers with Disabilities (Oct 2010) (). 
+
+(vii) , Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496). Flow down required in accordance with paragraph (f) of FAR clause . 
+
+(viii) , Service Contract Act of 1965 (Nov 2007) (, et seq.). 
+
+(ix) , Combating Trafficking in Persons (Feb 2009) (). 
+
+___Alternate I (Aug 2007) of  (). 
+
+(x) , Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment-Requirements (Nov 2007) (, et seq.). 
+
+(xi) , Exemption from Application of the Service Contract Act to Contracts for Certain Services-Requirements (Feb 2009) (, et seq.). 
+
+(xii) , Employment Eligibility Verification (Jan 2009). 
+
+(xiii) , Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247). Flow down required in accordance with paragraph (e) of FAR clause . 
+
+(xiv) , Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) ( and ). Flow down required in accordance with paragraph (d) of FAR clause . 
+
+(2) While not required, the contractor may include in its subcontracts for commercial items a minimal number of additional clauses necessary to satisfy its contractual obligations. 
+
+(End of clause)
+
+
+
+
+
+Contractor Rules of Behavior-Appendix D in Handbook 6500.6
+
+
+
+VA ACQUISITION REGULATION SOLICITATION PROVISION AND CONTRACT CLAUSE
+
+NOTE: This clause will undergo official rule making by the Office of Acquisitions and Logistics.  The below language will be submitted for public review through the Federal Register. The final wording of the clause may be changed from what is outlined below based on public review and comment. Once approved, the final language in the clause can be obtained from the Office of Acquisitions and Logistics Programs and Policy.
+
+
+
+SUBPART 839.2 – INFORMATION AND INFORMATION TECHNOLOGY SECURITY REQUIREMENTS
+
+
+
+839.201 Contract clause for Information and Information Technology Security:
+
+
+
+a. Due to the threat of data breach, compromise or loss of information that resides on
+
+either VA-owned or contractor-owned systems, and to comply with Federal laws and
+
+regulations, VA has developed an Information and Information Technology Security clause to be used when VA sensitive information is accessed, used, stored, generated, transmitted, or exchanged by and between VA and a contractor, subcontractor or a third party in any format (e.g., paper, microfiche, electronic or magnetic portable media).
+
+
+
+b. In solicitations and contracts where VA Sensitive Information or Information Technology will be accessed or utilized, the CO shall insert the clause found at 852.273-75, Security Requirements for Unclassified Information Technology Resources.
+
+
+
+852.273-75 - SECURITY REQUIREMENTS FOR UNCLASSIFIED INFORMATION
+
+TECHNOLOGY RESOURCES (INTERIM- OCTOBER 2008)
+
+As prescribed in 839.201:
+
+(a) The contractor and their personnel shall be subject to the same Federal laws, regulations, standards and VA policies as VA personnel, regarding information and information system security. These include, but are not limited to Federal Information Security Management Act (FISMA), Appendix III of OMB Circular A-130, and guidance and standards, available from the Department of Commerce’s National Institute of Standards and Technology (NIST). This also includes the use of common security configurations available from NIST’s Web site at: http://checklists.nist.gov/.
+
+(b) To ensure that appropriate security controls are in place, Contractors must follow the procedures set forth in “VA Information and Information System Security/Privacy Requirements for IT Contracts” located at the following Web site: .
+
+(c) These provisions shall apply to all contracts in which VA sensitive information is stored, generated, transmitted, or exchanged by VA, a contractor, subcontractor or a third-party, or on behalf of any of these entities regardless of format or whether it resides on a VA system or Contractor/Subcontractor’s electronic information system(s) operating for or on the VA’s behalf.
+
+(d) Clauses (a) and (b) shall apply to current and future contracts and acquisition vehicles including, but not limited to, job orders, task orders, letter contracts, purchase orders, and modifications.  Contracts do not include grants and cooperative agreements covered by 31 U.S.C. §6301 et seq.
+
+
+
+
+ADDENDUM A
+
+Cyber and Information Security Requirements for VA IT Services
+
+The Contractor shall ensure adequate LAN/Internet, data, information, and system security in accordance with VA standard operating procedures and standard PWS language, conditions, laws, and regulations.  The Contractor’s firewall and web server shall meet or exceed the VA minimum requirements for security.  All VA data shall be protected behind an approved firewall.  Any security violations or attempted violations shall be reported to the VA Program Manager and VA Information Security Officer as soon as possible.  The Contractor shall follow all applicable VA policies and procedures governing information security, especially those that pertain to certification and accreditation.
+
+
+
+Each documented initiative under this contract incorporates the security clause VAAR 852.273-75 by reference as though fully set forth therein, as well as the VA Handbook 6500.6, “Contract Security,” March 12, 2010, in its entirety.  Both the security clause VAAR 852.273-75 and the VA Handbook 6500.6, “Contract Security” shall also be included in every related agreement, contract or order.  The VA Handbook 6500.6, Appendix C, is included in this document as Addendum B.
+
+
+
+Training requirements:  The Contractor shall complete all mandatory training courses identified on the current external VA training site, the Employee Education System (EES), and will be tracked therein.  The EES may be accessed at . If the decision is made by the local Program Office to provide the Contractor a VA Talent Management System (TMS) account, the Contractor shall use the VA TMS to complete their mandatory training, accessed at 
+
+   
+
+
+
+Contractor employees shall complete a VA Systems Access Agreement if they are provided access privileges as an authorized user of the computer system of VA.
+
+VA Enterprise Architecture Compliance
+
+The applications, supplies, and services furnished under this contract must comply with One-VA Enterprise Architecture (EA), available at  in force at the time of issuance of this contract, including the Program Management Plan and VA's rules, standards, and guidelines in the Technical Reference Model/Standards Profile (TRMSP).  The VA reserves the right to assess contract deliverables for EA compliance prior to acceptance.  
+
+VA Internet and Intranet Standards:
+
+
+
+The Contractor shall adhere to and comply with VA Directive 6102 and VA Handbook 6102, Internet/Intranet Services, including applicable amendments and changes, if the Contractor’s work includes managing, maintaining, establishing and presenting information on VA’s Internet/Intranet Service Sites.  This pertains, but is not limited to: creating announcements; collecting information; databases to be accessed, graphics and links to external sites. 
+
+
+
+Internet/Intranet Services Directive 6102 is posted at (copy and paste the following URL to browser): 
+
+
+
+Internet/Intranet Services Handbook 6102 is posted at (copy and paste following URL to browser):  
+
+
+
+Notice of the Federal Accessibility Law Affecting All Electronic and Information Technology Procurements  (Section 508)
+
+On August 7, 1998, Section 508 of the Rehabilitation Act of 1973 was amended to require that when Federal departments or agencies develop, procure, maintain, or use Electronic and Information Technology, that they shall ensure it allows Federal employees with disabilities to have access to and use of information and data that is comparable to the access to and use of information and data by other Federal employees.  Section 508 required the Architectural and Transportation Barriers Compliance Board (Access Board) to publish standards setting forth a definition of electronic and information technology and the technical and functional criteria for such technology to comply with Section 508. These standards have been developed are published with an effective date of December 21, 2000. Federal departments and agencies shall develop all Electronic and Information Technology requirements to comply with the standards found in 36 CFR 1194.
+
+
+
+Section 508 – Electronic and Information Technology (EIT) Standards:
+
+The Section 508 standards established by the Architectural and Transportation Barriers Compliance Board (Access Board) are incorporated into, and made part of all VA orders, solicitations and purchase orders developed to procure Electronic and Information Technology (EIT). These standards are found in their entirety at:  and . A printed copy of the standards will be supplied upon request.  The Contractor shall comply with the technical standards as marked: 
+
+
+
+_x_§ 1194.21 Software applications and operating systems
+
+_x_§ 1194.22 Web-based intranet and internet information and applications
+
+_x_§ 1194.23 Telecommunications products
+
+_x_§ 1194.24 Video and multimedia products
+
+_x_§ 1194.25 Self contained, closed products
+
+_x_§ 1194.26 Desktop and portable computers
+
+_x_§ 1194.31 Functional Performance Criteria
+
+_x_§ 1194.41 Information, Documentation, and Support
+
+
+
+The standards do not require the installation of specific accessibility-related software or the attachment of an assistive technology device, but merely require that the EIT be compatible with such software and devices so that it can be made accessible if so required by the agency in the future.
+
+Physical Security & Safety Requirements:
+
+The Contractor and their personnel shall follow all VA policies, standard operating procedures, applicable laws and regulations while on VA property.  Violations of VA regulations and policies may result in citation and disciplinary measures for persons violating the law.
+
+The Contractor and their personnel shall wear visible identification at all times while they are on the premises.
+
+The VA does not provide parking spaces at the work site; the Contractor must obtain parking at the work site if needed.  It is the responsibility of the Contractor to park in the appropriate designated parking areas.  The VA will not invalidate or make reimbursement for parking violations of the Contractor under any conditions.
+
+Smoking is prohibited inside/outside any building other than the designated smoking areas.
+
+Possession of weapons is prohibited.
+
+The Contractor shall obtain all necessary licenses and/or permits required to perform the work, with the exception of software licenses that need to be procured from a Contractor or vendor in accordance with the requirements document.  The Contractor shall take all reasonable precautions necessary to protect persons and property from injury or damage during the performance of this contract.
+
+Confidentiality and Non-Disclosure
+
+The Contractor shall follow all VA rules and regulations regarding information security to prevent disclosure of sensitive information to unauthorized individuals or organizations.
+
+
+
+The Contractor may have access to Protected Health Information (PHI) and Electronic Protected Health Information (EPHI) that is subject to protection under the regulations issued by the Department of Health and Human Services, as mandated by the Health Insurance Portability and Accountability Act of 1996 (HIPAA); 45 CFR Parts 160 and 164, Subparts A and E, the Standards for Privacy of Individually Identifiable Health Information (“Privacy Rule”); and 45 CFR Parts 160 and 164, Subparts A and C, the Security Standard (“Security Rule”).  Pursuant to the Privacy and Security Rules, the Contractor must agree in writing to certain mandatory provisions regarding the use and disclosure of PHI and EPHI.  
+
+The Contractor will have access to some privileged and confidential materials of the VA.  These printed and electronic documents are for internal use only, are not to be copied or released without permission, and remain the sole property of the VA.  Some of these materials are protected by the Privacy Act of 1974 (revised by PL 93-5791) and Title 38.  Unauthorized disclosure of Privacy Act or Title 38 covered materials is a criminal offense.
+
+The GSA Contracting Officer will be the sole authorized official to release in writing, any data, draft deliverables, final deliverables, or any other written or printed materials pertaining to this contract. The Contractor shall release no information.  Any request for information relating to this contract presented to the Contractor shall be submitted to the VA Contracting Officer for response.
+
+Contractor personnel recognize that in the performance of this effort, Contractor personnel may receive or have access to sensitive information, including information provided on a proprietary basis by carriers, equipment manufacturers and other private or public entities.  Contractor personnel agree to safeguard such information and use the information exclusively in the performance of this contract.  Contractor shall follow all VA rules and regulations regarding information security to prevent disclosure of sensitive information to unauthorized individuals or organizations as enumerated in this section and elsewhere in this Contract and its subparts and appendices.
+
+Contractor shall limit access to the minimum number of personnel necessary for contract performance for all information considered sensitive or proprietary in nature.  If the Contractor is uncertain of the sensitivity of any information obtained during the performance this contract, the Contractor has a responsibility to ask the VA Contracting Officer.
+
+Contractor shall train all of their employees involved in the performance of this contract on their roles and responsibilities for proper handling and nondisclosure of sensitive VA or proprietary information.  Contractor personnel shall not engage in any other action, venture or employment wherein sensitive information shall be used for the profit of any party other than those furnishing the information. The sensitive information transferred, generated, transmitted, or stored herein is for VA benefit and ownership alone. 
+
+Contractor shall maintain physical security at all facilities housing the activities performed under this contract, including any Contractor facilities according to VA-approved guidelines and directives.  The Contractor shall ensure that security procedures are defined and enforced to ensure all personnel who are provided access to patient data must comply with published procedures to protect the privacy and confidentiality of such information as required by the VA.
+
+Contractor must adhere to the following:
+
+The use of “thumb drives” or any other medium for transport of information is expressly prohibited.
+
+Controlled access to system and security software and documentation.
+
+Recording, monitoring, and control of passwords and privileges.
+
+All terminated personnel are denied physical and electronic access to all data, program listings, data processing equipment and systems.
+
+VA, as well as any Contractor (or Subcontractor) systems used to support development, provide the capability to cancel immediately all access privileges and authorizations upon employee termination.
+
+Contractor PM and VA PM are informed within twenty-four (24) hours of any employee termination.
+
+Acquisition sensitive information shall be marked "Acquisition Sensitive" and shall be handled as "For Official Use Only (FOUO)".
+
+Contractor does not require access to classified data.
+
+Regulatory standard of conduct governs all personnel directly and indirectly involved in procurements.  All personnel engaged in procurement and related activities shall conduct business in a manner above reproach and, except as authorized by statute or regulation, with complete impartiality and with preferential treatment for none.  The general rule is to strictly avoid any conflict of interest or even the appearance of a conflict of interest in VA/Contractor relationships.
+
+
+
+
+ADDENDUM B
+
+
+
+VA INFORMATION AND INFORMATION SYSTEM SECURITY/PRIVACY LANGUAGE 
+
+VA HANDBOOK 6500.6, APPENDIX C, MARCH 12, 2010
+
+
+
+GENERAL
+
+Contractors, Contractor personnel, Subcontractors, and Subcontractor personnel shall be subject to the same Federal laws, regulations, standards, and VA Directives and Handbooks as VA and VA personnel regarding information and information system security.
+
+
+
+ACCESS TO VA INFORMATION AND VA INFORMATION SYSTEMS
+
+A Contractor/Subcontractor shall request logical (technical) or physical access to VA information and VA information systems for their employees, Subcontractors, and affiliates only to the extent necessary to perform the services specified in the contract, agreement, or task order.
+
+All Contractors, Subcontractors, and third-party servicers and associates working with VA information are subject to the same investigative requirements as those of VA appointees or employees who have access to the same types of information. The level and process of background security investigations for Contractors must be in accordance with VA Directive and Handbook 0710, Personnel Suitability and Security Program. The Office for Operations, Security, and Preparedness is responsible for these policies and procedures.
+
+Contract personnel who require access to national security programs must have a valid security clearance. National Industrial Security Program (NISP) was established by Executive Order 12829 to ensure that cleared U.S. defense industry contract personnel safeguard the classified information in their possession while performing work on contracts, programs, bids, or research and development efforts. The Department of Veterans Affairs does not have a Memorandum of Agreement with Defense Security Service (DSS). Verification of a Security Clearance must be processed through the Special Security Officer located in the Planning and National Security Service within the Office of Operations, Security, and Preparedness.
+
+Custom software development and outsourced operations must be located in the U.S. to the maximum extent practical. If such services are proposed to be performed abroad and are not disallowed by other VA policy or mandates, the Contractor/Subcontractor must state where all non-U.S. services are provided and detail a security plan, deemed to be acceptable by VA, specifically to address mitigation of the resulting problems of communication, control, data protection, and so forth. Location within the U.S. may be an evaluation factor.  
+
+The Contractor or Subcontractor must notify the Contracting Officer immediately when an employee working on a VA system or with access to VA information is reassigned or leaves the Contractor or Subcontractor’s employ. The Contracting Officer must also be notified immediately by the Contractor or Subcontractor prior to an unfriendly termination.
+
+
+
+VA INFORMATION CUSTODIAL LANGUAGE
+
+Information made available to the Contractor or Subcontractor by VA for the performance or administration of this contract or information developed by the Contractor/Subcontractor in performance or administration of the contract shall be used only for those purposes and shall not be used in any other way without the prior written agreement of the VA. This clause expressly limits the Contractor/Subcontractor's rights to use data as described in Rights in Data - General, FAR 52.227-14(d) (1).
+
+VA information should not be co-mingled, if possible, with any other data on the Contractors/Subcontractor’s information systems or media storage systems in order to ensure VA requirements related to data protection and media sanitization can be met. If co-mingling must be allowed to meet the requirements of the business need, the Contractor must ensure that VA’s information is returned to the VA or destroyed in accordance with VA’s sanitization requirements. VA reserves the right to conduct on site inspections of Contractor and Subcontractor IT resources to ensure data security controls, separation of data and job duties, and destruction/media sanitization procedures are in compliance with VA directive requirements.
+
+Prior to termination or completion of this contract, Contractor/Subcontractor must not destroy information received from VA, or gathered/created by the Contractor in the course of performing this contract without prior written approval by the VA. Any data destruction done on behalf of VA by a Contractor/Subcontractor must be done in accordance with National Archives and Records Administration (NARA) requirements as outlined in VA Directive 6300, Records and Information Management and its Handbook 6300.1 Records Management Procedures, applicable VA Records Control Schedules, and VA Handbook 6500.1, Electronic Media Sanitization. Self-certification by the Contractor that the data destruction requirements above have been met must be sent to the VA Contracting Officer within 30 days of termination of the contract.
+
+The Contractor/Subcontractor must receive, gather, store, back up, maintain, use, disclose and dispose of VA information only in compliance with the terms of the contract and applicable Federal and VA information confidentiality and security laws, regulations and policies. If Federal or VA information confidentiality and security laws, regulations and policies become applicable to the VA information or information systems after execution of the contract, or if NIST issues or updates applicable FIPS or Special Publications (SP) after execution of this contract, the parties agree to negotiate in good faith to implement the information confidentiality and security laws, regulations and policies in this contract. 
+
+The Contractor/Subcontractor shall not make copies of VA information except as authorized and necessary to perform the terms of the agreement or to preserve electronic information stored on Contractor/Subcontractor electronic storage media for restoration in case any electronic equipment or data used by the Contractor/Subcontractor needs to be restored to an operating state. If copies are made for restoration purposes, after the restoration is complete, the copies must be appropriately destroyed. 
+
+If VA determines that the Contractor has violated any of the information confidentiality, privacy, and security provisions of the contract, it shall be sufficient grounds for VA to withhold payment to the Contractor or third party or terminate the contract for default or terminate for cause under Federal Acquisition Regulation (FAR) part 12. 
+
+If a VHA contract is terminated for cause, the associated Business Associate Agreement (BAA) must also be terminated and appropriate actions taken in accordance with VHA Handbook 1600.01, Business Associate Agreements. Absent an agreement to use or disclose protected health information, there is no business associate relationship. 
+
+The Contractor/Subcontractor must store, transport, or transmit VA sensitive information in an encrypted form, using VA-approved encryption tools that are, at a minimum, FIPS 140-2 validated.
+
+The Contractor/Subcontractor’s firewall and Web services security controls, if applicable, shall meet or exceed VA’s minimum requirements. VA Configuration Guidelines are available upon request.
+
+Except for uses and disclosures of VA information authorized by this contract for performance of the contract, the Contractor/Subcontractor may use and disclose VA information only in two other situations: (i) in response to a qualifying order of a court of competent jurisdiction, or (ii) with VA’s prior written approval. The Contractor/Subcontractor must refer all requests for, demands for production of, or inquiries about, VA information and information systems to the VA contracting officer for response.
+
+Notwithstanding the provision above, the Contractor/Subcontractor shall not release VA records protected by Title 38 U.S.C. 5705, confidentiality of medical quality assurance records and/or Title 38 U.S.C. 7332, confidentiality of certain health records pertaining to drug addiction, sickle cell anemia, alcoholism or alcohol abuse, or infection with human immunodeficiency virus. If the Contractor/Subcontractor is in receipt of a court order or other requests for the above mentioned information, that Contractor/Subcontractor shall immediately refer such court orders or other requests to the VA contracting officer for response.
+
+For service that involves the storage, generating, transmitting, or exchanging of VA sensitive information but does not require C&A or a Memorandum of Understanding-Interconnection Service Agreement (MOU-ISA) for system interconnection, the Contractor/Subcontractor must complete a Contractor Security Control Assessment (CSCA) on a yearly basis and provide it to the COTR.
+
+
+
+
+
+INFORMATION SYSTEM DESIGN AND DEVELOPMENT
+
+Information systems that are designed or developed for or on behalf of VA at non-VA facilities shall comply with all VA directives developed in accordance with FISMA, HIPAA, NIST, and related VA security and privacy control requirements for Federal information systems. This includes standards for the protection of electronic PHI, outlined in 45 C.F.R. Part 164, Subpart C, information and system security categorization level designations in accordance with FIPS 199 and FIPS 200 with implementation of all baseline security controls commensurate with the FIPS 199 system security categorization (reference Appendix D of VA Handbook 6500, VA Information Security Program). During the development cycle a Privacy Impact Assessment (PIA) must be completed, provided to the COTR, and approved by the VA Privacy Service in accordance with Directive 6508, VA Privacy Impact Assessment.
+
+The Contractor/Subcontractor shall certify to the COTR that applications are fully functional and operate correctly as intended on systems using the VA Federal Desktop Core Configuration (FDCC), and the common security configuration guidelines provided by NIST or the VA. This includes Internet Explorer 7 configured to operate on Windows XP and Vista (in Protected Mode on Vista) and future versions, as required.
+
+The standard installation, operation, maintenance, updating, and patching of software shall not alter the configuration settings from the VA approved and FDCC configuration. Information technology staff must also use the Windows Installer Service for installation to the default “program files” directory and silently install and uninstall.
+
+Applications designed for normal end users shall run in the standard user context without elevated system administration privileges.
+
+The security controls must be designed, developed, approved by VA, and implemented in accordance with the provisions of VA security system development life cycle as outlined in NIST Special Publication 800-37, Guide for Applying the Risk Management Framework to Federal Information Systems, VA Handbook 6500, Information Security Program and VA Handbook 6500.5, Incorporating Security and Privacy in System Development Lifecycle. 
+
+The Contractor/Subcontractor is required to design, develop, or operate a System of Records Notice (SOR) on individuals to accomplish an agency function subject to the Privacy Act of 1974, (as amended), Public Law 93-579, December 31, 1974 (5 U.S.C. 552a) and applicable agency regulations. Violation of the Privacy Act may involve the imposition of criminal and civil penalties.
+
+The Contractor/Subcontractor agrees to:
+
+Comply with the Privacy Act of 1974 (the Act) and the agency rules and regulations issued under the Act in the design, development, or operation of any system of records on individuals to accomplish an agency function when the contract specifically identifies:
+
+The Systems of Records (SOR); and
+
+The design, development, or operation work that the Contractor/Subcontractor is to perform;
+
+Include the Privacy Act notification contained in this contract in every solicitation and resulting subcontract and in every subcontract awarded without a solicitation, when the work statement in the proposed subcontract requires the redesign, development, or operation of a SOR on individuals that is subject to the Privacy Act; and
+
+Include this Privacy Act clause, including this subparagraph (3), in all subcontracts awarded under this contract which requires the design, development, or operation of such a SOR
+
+In the event of violations of the Act, a civil action may be brought against the agency involved when the violation concerns the design, development, or operation of a SOR on individuals to accomplish an agency function, and criminal penalties may be imposed upon the officers or employees of the agency when the violation concerns the operation of a SOR on individuals to accomplish an agency function. For purposes of the Act, when the contract is for the operation of a SOR on individuals to accomplish an agency function, the Contractor/Subcontractor is considered to be an employee of the agency.
+
+“Operation of a System of Records” means performance of any of the activities associated with maintaining the SOR, including the collection, use, maintenance, and dissemination of records.
+
+“Record” means any item, collection, or grouping of information about an individual that is maintained by an agency, including, but not limited to, education, financial transactions, medical history, and criminal or employment history and contains the person’s name, or identifying number, symbol, or any other identifying particular assigned to the individual, such as a fingerprint or voiceprint, or a photograph.
+
+“System of Records” means a group of any records under the control of any agency from which information is retrieved by the name of the individual or by some identifying number, symbol, or other identifying particular assigned to the individual.
+
+The vendor shall ensure the security of all procured or developed systems and technologies, including their subcomponents (hereinafter referred to as “Systems”), throughout the life of this contract and any extension, warranty, or maintenance periods. This includes, but is not limited to workarounds, patches, hot fixes, upgrades, and any physical components (hereafter referred to as Security Fixes) which may be necessary to fix all security vulnerabilities published or known to the vendor anywhere in the Systems, including Operating Systems and firmware. The vendor shall ensure that Security Fixes shall not negatively impact the Systems.
+
+The vendor shall notify VA within 24 hours of the discovery or disclosure of successful exploits of the vulnerability which can compromise the security of the Systems (including the confidentiality or integrity of its data and operations, or the availability of the system). Such issues shall be remediated as quickly as is practical, based on the severity of the incident.
+
+When the Security Fixes involve installing third party patches (such as Microsoft OS patches or Adobe Acrobat), the vendor will provide written notice to the VA that the patch has been validated as not affecting the Systems within 10 working days. When the vendor is responsible for operations or maintenance of the Systems, they shall apply the Security Fixes based upon the requirements identified within the contract.
+
+All other vulnerabilities shall be remediated as specified in this paragraph in a timely manner based on risk, but within 60 days of discovery or disclosure. Exceptions to this paragraph (e.g. for the convenience of VA) shall only be granted with approval of the contracting officer and the VA Assistant Secretary for Office of Information and Technology.
+
+
+
+INFORMATION SYSTEM HOSTING, OPERATION, MAINTENANCE, OR USE
+
+For information systems that are hosted, operated, maintained, or used on behalf of VA at non-VA facilities, Contractors/Subcontractors are fully responsible and accountable for ensuring compliance with all HIPAA, Privacy Act, FISMA, NIST, FIPS, and VA security and privacy directives and handbooks. This includes conducting compliant risk assessments, routine vulnerability scanning, system patching and change management procedures, and the completion of an acceptable contingency plan for each system. The Contractor’s security control procedures must be equivalent, to those procedures used to secure VA systems. A Privacy Impact Assessment (PIA) must also be provided to the COTR and approved by VA Privacy Service prior to operational approval. All external Internet connections to VA’s network involving VA information must be reviewed and approved by VA prior to implementation.
+
+Adequate security controls for collecting, processing, transmitting, and storing of Personally Identifiable Information (PII), as determined by the VA Privacy Service, must be in place, tested, and approved by VA prior to hosting, operation, maintenance, or use of the information system, or systems by or on behalf of VA. These security controls are to be assessed and stated within the PIA and if these controls are determined not to be in place, or inadequate, a Plan of Action and Milestones (POA&M) must be submitted and approved prior to the collection of PII.
+
+Outsourcing (Contractor facility, Contractor equipment or Contractor staff) of systems or network operations, telecommunications services, or other managed services requires certification and accreditation (authorization) (C&A) of the Contractor’s systems in accordance with VA Handbook 6500.3, Certification and Accreditation and/or the VA OCS Certification Program Office. Government-owned (Government facility or Government equipment) Contractor-operated systems, third party or business partner networks require memorandums of understanding and interconnection agreements (MOU-ISA) which detail what data types are shared, who has access, and the appropriate level of security controls for all systems connected to VA networks.
+
+The Contractor/Subcontractor’s system must adhere to all FISMA, FIPS, and NIST standards related to the annual FISMA security controls assessment and review and update the PIA. Any deficiencies noted during this assessment must be provided to the VA contracting officer and the ISO for entry into VA’s POA&M management process. The Contractor/Subcontractor must use VA’s POA&M process to document planned remedial actions to address any deficiencies in information security policies, procedures, and practices, and the completion of those activities. Security deficiencies must be corrected within the timeframes approved by the Government. Contractor/Subcontractor procedures are subject to periodic, unannounced assessments by VA officials, including the VA Office of Inspector General. The physical security aspects associated with Contractor/Subcontractor activities must also be subject to such assessments. If major changes to the system occur that may affect the privacy or security of the data or the system, the C&A of the system may need to be reviewed, retested and re-authorized per VA Handbook 6500.3. This may require reviewing and updating all of the documentation (PIA, System Security Plan, and Contingency Plan). The Certification Program Office can provide guidance on whether a new C&A would be necessary.
+
+The Contractor/Subcontractor must conduct an annual self assessment on all systems and outsourced services as required. Both hard copy and electronic copies of the assessment must be provided to the COTR. The Government reserves the right to conduct such an assessment using Government personnel or another Contractor/Subcontractor. The Contractor/Subcontractor must take appropriate and timely action (this can be specified in the contract) to correct or mitigate any weaknesses discovered during such testing, generally at no additional cost.
+
+VA prohibits the installation and use of personally-owned or Contractor/Subcontractor owned equipment or software on VA’s network. If non-VA owned equipment must be used to fulfill the requirements of a contract, it must be stated in the service agreement, SOW or contract. All of the security controls required for Government furnished equipment (GFE) must be utilized in approved other equipment (OE) and must be funded by the owner of the equipment. All remote systems must be equipped with, and use, a VA-approved antivirus (AV) software and a personal (host-based or enclave based) firewall that is configured with a VA approved configuration. Software must be kept current, including all critical updates and patches. Owners of approved OE are responsible for providing and maintaining the anti-viral software and the firewall on the non-VA owned OE.
+
+All electronic storage media used on non-VA leased or non-VA owned IT equipment that is used to store, process, or access VA information must be handled in adherence with VA Handbook 6500.1, Electronic Media Sanitization upon: (i) completion or termination of the contract or (ii) disposal or return of the IT equipment by the Contractor/Subcontractor or any person acting on behalf of the Contractor/Subcontractor, whichever is earlier. Media (hard drives, optical disks, CDs, back-up tapes, etc.) used by the Contractors/Subcontractors that contain VA information must be returned to the VA for sanitization or destruction or the Contractor/Subcontractor must self-certify that the media has been disposed of per 6500.1 requirements. This must be completed within 30 days of termination of the contract.
+
+Bio-Medical devices and other equipment or systems containing media (hard drives, optical disks, etc.) with VA sensitive information must not be returned to the vendor at the end of lease, for trade-in, or other purposes. The options are:
+
+Vendor must accept the system without the drive;
+
+VA’s initial medical device purchase includes a spare drive which must be installed in place of the original drive at time of turn-in; or
+
+VA must reimburse the company for media at a reasonable open market replacement cost at time of purchase.
+
+Due to the highly specialized and sometimes proprietary hardware and software associated with medical equipment/systems, if it is not possible for the VA to retain the hard drive, then;
+
+The equipment vendor must have an existing BAA if the device being traded in has sensitive information stored on it and hard drive(s) from the system are being returned physically intact; and
+
+Any fixed hard drive on the device must be non-destructively sanitized to the greatest extent possible without negatively impacting system operation. Selective clearing down to patient data folder level is recommended using VA approved and validated overwriting technologies/methods/tools. Applicable media sanitization specifications need to be preapproved and described in the purchase order or contract.
+
+A statement needs to be signed by the Director (System Owner) that states that the drive could not be removed and that (a) and (b) controls above are in place and completed. The ISO needs to maintain the documentation.
+
+
+
+SECURITY INCIDENT INVESTIGATION
+
+The term “security incident” means an event that has, or could have, resulted in unauthorized access to, loss or damage to VA assets, or sensitive information, or an action that breaches VA security procedures. The Contractor/Subcontractor shall immediately notify the COTR and simultaneously, the designated ISO and Privacy Officer for the contract of any known or suspected security/privacy incidents, or any unauthorized disclosure of sensitive information, including that contained in system(s) to which the Contractor/Subcontractor has access.
+
+To the extent known by the Contractor/Subcontractor, the Contractor/Subcontractor’s notice to VA shall identify the information involved, the circumstances surrounding the incident (including to whom, how, when, and where the VA information or assets were placed at risk or compromised), and any other information that the Contractor/Subcontractor considers relevant.
+
+With respect to unsecured protected health information, the business associate is deemed to have discovered a data breach when the business associate knew or should have known of a breach of such information. Upon discovery, the business associate must notify the covered entity of the breach. Notifications need to be made in accordance with the executed business associate agreement.
+
+In instances of theft or break-in or other criminal activity, the Contractor/Subcontractor must concurrently report the incident to the appropriate law enforcement entity (or entities) of jurisdiction, including the VA OIG and Security and Law Enforcement. The Contractor, its employees, and its Subcontractors and their employees shall cooperate with VA and any law enforcement authority responsible for the investigation and prosecution of any possible criminal law violation(s) associated with any incident. The Contractor/Subcontractor shall cooperate with VA in any civil litigation to recover VA information, obtain monetary or other compensation from a third party for damages arising from any incident, or obtain injunctive relief against any third party arising from, or related to, the incident.
+
+
+
+LIQUIDATED DAMAGES FOR DATA BREACH
+
+Consistent with the requirements of 38 U.S.C. §5725, a contract may require access to sensitive personal information. If so, the Contractor is liable to VA for liquidated damages in the event of a data breach or privacy incident involving any SPI the Contractor/Subcontractor processes or maintains under this contract.
+
+The Contractor/Subcontractor shall provide notice to VA of a “security incident” as set forth in the Security Incident Investigation section above. Upon such notification, VA must secure from a non-Department entity or the VA Office of Inspector General an independent risk analysis of the data breach to determine the level of risk associated with the data breach for the potential misuse of any sensitive personal information involved in the data breach. The term 'data breach' means the loss, theft, or other unauthorized access, or any access other than that incidental to the scope of employment, to data containing sensitive personal information, in electronic or printed form, that results in the potential compromise of the confidentiality or integrity of the data. Contractor shall fully cooperate with the entity performing the risk analysis. Failure to cooperate may be deemed a material breach and grounds for contract termination.
+
+Each risk analysis shall address all relevant information concerning the data breach, including the following:
+
+Nature of the event (loss, theft, unauthorized access);
+
+Description of the event, including:
+
+date of occurrence;
+
+data elements involved, including any PII, such as full name, social security number, date of birth, home address, account number, disability code;
+
+Number of individuals affected or potentially affected;
+
+Names of individuals or groups affected or potentially affected;
+
+Ease of logical data access to the lost, stolen or improperly accessed data in light of the degree of protection for the data, e.g., unencrypted, plain text;
+
+Amount of time the data has been out of VA control;
+
+The likelihood that the sensitive personal information will or has been compromised (made accessible to and usable by unauthorized persons);
+
+Known misuses of data containing sensitive personal information, if any;
+
+Assessment of the potential harm to the affected individuals;
+
+Data breach analysis as outlined in 6500.2 Handbook, Management of Security and Privacy Incidents, as appropriate; and
+
+Whether credit protection services may assist record subjects in avoiding or mitigating the results of identity theft based on the sensitive personal information that may have been compromised.
+
+Based on the determinations of the independent risk analysis, the Contractor shall be responsible for paying to the VA liquidated damages in the amount of $37.50 per affected individual to cover the cost of providing credit protection services to affected individuals consisting of the following:
+
+Notification;
+
+One year of credit monitoring services consisting of automatic daily monitoring of at least 3 relevant credit bureau reports;
+
+Data breach analysis;
+
+Fraud resolution services, including writing dispute letters, initiating fraud alerts and credit freezes, to assist affected individuals to bring matters to resolution;
+
+One year of identity theft insurance with $20,000.00 coverage at $0 deductible; and
+
+Necessary legal expenses the subjects may incur to repair falsified or damaged credit records, histories, or financial affairs.
+
+
+
+SECURITY CONTROLS COMPLIANCE TESTING
+
+On a periodic basis, VA, including the Office of Inspector General, reserves the right to evaluate any or all of the security controls and privacy practices implemented by the Contractor under the clauses contained within the contract. With 10 working-day’s notice, at the request of the Government, the Contractor must fully cooperate and assist in a Government-sponsored security controls assessment at each location wherein VA information is processed or stored, or information systems are developed, operated, maintained, or used on behalf of VA, including those initiated by the Office of Inspector General. The Government may conduct a security control assessment on shorter notice (to include unannounced assessments) as determined by VA in the event of a security incident or at any other time. 
+
+
+
+TRAINING
+
+All Contractor employees and Subcontractor employees requiring access to VA information and VA information systems shall complete the following before being granted access to VA information and its systems:
+
+Sign and acknowledge (either manually or electronically) understanding of and responsibilities for compliance with the Contractor Rules of Behavior, Appendix D relating to access to VA information and information systems;
+
+Successfully complete the VA Privacy and Information Security Awareness and Rules of Behavior training and annually complete required security training;
+
+Successfully complete VHA Privacy Policy Training if Contractor will have access to PHI;
+
+Successfully complete the appropriate VA privacy training and annually complete required privacy training; and
+
+Successfully complete any additional cyber security or privacy training, as required for VA personnel with equivalent information system access 
+
+The Contractor shall provide to the contracting officer and/or the COTR a copy of the training certificates and certification of signing the Contractor Rules of Behavior for each applicable employee within 1 week of the initiation of the contract and annually thereafter, as required.
+
+Failure to complete the mandatory annual training and sign the Rules of Behavior annually, within the timeframe required, is grounds for suspension or termination of all physical or electronic access privileges and removal from work on the contract until such time as the training and documents are complete.
+
+
+
+
+
+
+
+
+
+Position Sensitivity
+
+Background Investigation (in accordance with Department of Veterans Affairs 0710 Handbook, “”Personnel Security Suitability Program,” Appendix A)
+
+Low
+
+National Agency Check with Written Inquiries (NACI) A NACI is conducted by OPM and covers a 5-year period. It consists of a review of records contained in the OPM Security Investigations Index (SII) and the DOD Defense Central Investigations Index (DCII), FBI name check, FBI fingerprint check, and written inquiries to previous employers and references listed on the application for employment. In VA it is used for Non-sensitive or Low Risk positions.
+
+Moderate
+
+Minimum Background Investigation (MBI) A MBI is conducted by OPM and covers a 5-year period. It consists of a review of National Agency Check (NAC) records [OPM Security Investigations Index (SII), DOD Defense Central Investigations Index (DCII), FBI name check, and a FBI fingerprint check], a credit report covering a period of 5 years, written inquiries to previous employers and references listed on the application for employment; an interview with the subject, law enforcement check; and a verification of the educational degree.
+
+High 
+
+Background Investigation (BI) A BI is conducted by OPM and covers a 10-year period. It consists of a review of National Agency Check (NAC) records [OPM Security Investigations Index (SII), DOD Defense Central Investigations Index (DCII), FBI name check, and a FBI fingerprint check report], a credit report covering a period of 10 years, written inquiries to previous employers and references listed on the application for employment; an interview with the subject, spouse, neighbors, supervisor, co-workers; court records, law enforcement check, and a verification of the educational degree.
+
+
+
+Performance Indicator
+
+Performance Standard
+
+Acceptable Quality Level
+
+Surveillance Method
+
+Product provides required functionality
+
+Software provides the required functionality according to the functional requirements outlined in the PWS
+
+100% compliance unless granted forbearance by the CO
+
+User Acceptance Testing Review
+
+Timely Completion of Project
+
+Meets all required deliverables and milestones as defined in the PWS
+
+
+
+95% compliance unless granted forbearance by the CO
+
+Inspection of Deliverables
+
+3.    Product Quality
+
+The production version of the product has no latent defects, and if any are identified, they are resolved in a timeframe agreed upon with the Government
+
+100% compliance unless granted forbearance by the CO
+
+User Acceptance Testing Review
+
+4.     Outputs, Reports and Other Deliverables
+
+The deliverables must comply with agency approved formats for accuracy and completeness
+
+100% compliance unless granted forbearance by the CO
+
+Random Inspection
+
+
+
+Task
+
+Deliverable ID
+
+Deliverable Description
+
+
+
+A
+
+
+
+Project Management Plan
+
+Thirty (30) days after contract (DAC) and updated monthly thereafter.
+
+Electronic submission to:  VA PM, COTR, CO.
+
+Inspection:  destination
+
+Acceptance:  destination
+
+
+
+
+
+A
+
+Monthly Progress Report
+
+Due the fifth day of each month throughout the period of performance (PoP).
+
+Electronic submission to:  VA PM, COTR, CO
+
+Inspection:  destination
+
+Acceptance:  destination
+
+
+
+
+
+B
+
+Kick-Off Meeting Minutes
+
+Due Ten (10) days after the Kick-off meeting
+
+Electronic submission to:  VA PM, COTR, CO	
+
+Inspection:  destination
+
+Acceptance:  destination
+
+
+
+
+
+A
+
+Functional NLP/CAC interface to VistA TIU (Innovation Sandbox)
+
+Due NTL One-Hundred and Eighty (180) DAC
+
+Electronic submission to:  VA PM, COTR, CO
+
+Inspection:  destination
+
+Acceptance:  destination
+
+
+
+
+
+B
+
+Functional NLP/CAC interface to VistA PCE (Innovation Sandbox)
+
+Due NTL One-Hundred and Eighty (180) DAC
+
+Electronic submission to:  VA PM, COTR, CO
+
+Inspection:  destination
+
+Acceptance:  destination
+
+
+
+
+
+C
+
+Functional NLP/CAC interface to VistA CPRS EEF (Innovation Sandbox)
+
+Due NTL One-Hundred and Eighty (180) DAC
+
+Electronic submission to:  VA PM, COTR, CO
+
+Inspection:  destination
+
+Acceptance:  destination
+
+
+
+
+
+D
+
+Functional Low-Bar NLP/CAC solution (Innovation Sandbox)
+
+Due NTL One-Hundred and Eighty (180) DAC
+
+Electronic submission to:  VA PM, COTR, CO
+
+Inspection:  destination
+
+Acceptance:  destination
+
+
+
+5.3
+
+A
+
+Functioning monitoring and reporting capabilities (Innovation Sandbox)
+
+Due NTL One-Hundred and Eighty (180) DAC
+
+Electronic submission to:  VA PM, COTR, CO
+
+Inspection:  destination
+
+Acceptance:  destination
+
+
+
+
+
+A
+
+Test Plan (Innovation Sandbox)
+
+Due NTL Two-Hundred and Seventy (270) DAC
+
+Electronic submission to:  VA PM, COTR, CO
+
+Inspection:  destination
+
+Acceptance:  destination
+
+
+
+
+
+B
+
+Field Test Evaluation Report (Innovation Sandbox)
+
+Due NTL Two-Hundred and Seventy (270) DAC
+
+Electronic submission to:  VA PM, COTR, CO
+
+Inspection:  destination
+
+Acceptance:  destination
+
+
+
+52.247-34 
+
+F.O.B. Destination 
+
+NOV 1991 
+
+ 
+
+52.204-7 
+
+Central Contractor Registration
+
+FEB 2012
+
+ 
+
+
+
+Line Item No. 
+
+Country of Origin 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+
+
+Line Item No. 
+
+Country of Origin 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+
+
+Line Item No. 
+
+Country of Origin 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+
+
+Line Item No. 
+
+_______________________________________ 
+
+_______________________________________ 
+
+_______________________________________ 
+
+
+
+Line Item No. 
+
+Country of Origin 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+
+
+Line Item No. 
+
+Country of Origin 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+______________ 
+
+_________________ 
+
+
+
+Listed End Product 
+
+Listed Countries of Origin 
+
+___________________ 
+
+___________________ 
+
+___________________ 
+
+___________________ REQUEST FOR QUOTE
+
+
+
+DEPARTMENT OF VETERANS AFFAIRS
+
+Office of Information & Technology (OI&T)
+
+Grassroots Innovations Program
+
+Computer Assisted Coding Pilot
+
+
+
+This is a combined synopsis/solicitation for commercial items prepared in accordance with the format in Subpart 12.6, as supplemented with additional information included in this notice. This announcement constitutes the only solicitation; quotes are being requested and a written solicitation will not be issued. The solicitation is issued directly to QuadraMed Corporation as a single source in accordance with FAR 6.302-1(b)(1)(ii), which stipulates that the supplies or services are available from only one or a limited number of sources.  Award of this requirement will be in accordance with Federal Acquisition Regulation FAR Part 15, Contract by Negotiations.  
+
+
+QUOTE SUBMITTAL REQUIREMENTS: 
+
+Please carefully review the Performance Work Statement (PWS) and instructions included herein and respond with a written quote as indicated below.
+
+The quote submission shall include two separate volumes: Volume I - Technical Quote and Volume II - Price Quote.
+
+The Government is requesting a Firm Fixed Price quote in response to this RFQ. The contractor is advised that the Government intends to make an award on the basis of the initial quote.  As a result, the contractor shall be certain to present their most advantageous quote that clearly meets all requirements of the PWS and complies completely with all quote submittal requirements. The Government will select the Lowest Priced, Technically Acceptable Solution. 
+
+EVALUATION OF QUOTES
+
+Questions: Quoters are encouraged to submit questions as early as possible. All questions regarding this requirement shall be submitted in writing via email not later than 12:00PM (noon) EST on Wednesday, March 21, 2012 to the GSA Contracting Officer, GSA Contract Specialist and GSA Information Technology Manager at the following email addresses: Michael.Baumann@gsa.gov and ryan.mathews@gsa.gov.  Answers to written questions will be posted in FedBizOpps as amendments to the RFQ.
+
+
+
+Quote Due Date/Time: Quotes are due on or before 2:00PM EST on March 28, 2012. All quotes must be submitted via email to  and ryan.mathews@gsa.gov.  Award will be made via GSA's automated procurement system (ITSS) https://web.itss.gsa.gov/  Please ensure proper registration in ITSS prior to the quote due date and time. Confirmation of registration can be obtained by contacting the ITSS Help Desk at 1-877-243-2889.
+
+
+
+***NOTE: THERE WILL BE ABSOLUTELY NO EXTENSIONS OF THE RFQ DUE DATE.***
+
+
+
+Evaluation Criteria and Quote Submittal Instructions
+
+
+
+The written submission shall be broken into two volumes: Volume 1 – Technical Quote and Volume 2 – Price Quote.  
+
+
+
+Factors:  Quotes will be evaluated on the basis of the following:
+
+
+
+Technical Factors:  --- Presented in Volume 1.  The Technical Factors are listed in descending order of importance.
+
+ 
+
+Best Value Determination Criteria
+
+1.	Technical Approach
+
+2.	Past Performance
+
+
+
+Price:  --- Presented in Volume 2.  Quoters shall adhere to the price submission guidelines of this RFQ when preparing their submission.
+
+
+
+The Technical Factors when combined are considered more important than price.  However, price is always evaluated and price rises in importance when technical merit among the quotes becomes more equal.
+
+Volume I – Technical Quote
+
+
+
+The technical quote is limited to seven (7) one-sided, letter size (8.5” x 11”) pages with 1” margins. Anything over seven (7) pages will be ignored.  Number the pages consecutively and use an 11 point (or larger) font size in an easily readable font, such as Times New Roman. Note: The table of contents and title page does not count within the 7 page limitation.
+
+
+
+Factor 1:	TECHNICAL APPROACH
+
+
+
+The contractor shall provide a description of the complete technical approach that the contractor envisions using to implement the Computer Assisted Coding / Natural Language Processing (CAC/NLP) solution as outlined in the PWS with minimal risk and maximum efficiency.
+
+
+
+This technical approach shall not be a reiteration of the requirements from the PWS, but shall be evidence of the quoter’s understanding of the tasks required to meet the requirements of the PWS.  
+
+
+
+Factor 2:	PAST PERFORMANCE
+
+
+
+The contractor shall provide two (2) examples in narrative format.  Anything over 2 examples will be ignored.  The first past performance example shall demonstrate past performance that included work within the QuadraMed Encoder Product Suite (EPS) for a Government Agency.  The second past performance example shall demonstrate the implementation of a CAC/NLP product with a private sector customer.
+
+
+
+The past performance examples shall have been performed within the past 2 years and may have been performed as a prime or sub.
+
+
+
+To allow the Government to verify the information submitted, include the following:
+
+Name of Organization and Contract Number
+
+Period of Performance
+
+Dollar Value
+
+Contracting and Technical Points of Contact with correct phone numbers, titles, and e-mail addresses to allow the Government to verify information submitted.
+
+
+
+The Government will evaluate the technical similarity, quality, timeliness, and customer’s satisfaction of the contractor’s past performance example. In evaluating the past performance, the Government reserves the right to use data obtained from other sources as well as that provided in the quote.  This includes information contained in the Past Performance Information Retrieval System (PPIRS).
+
+
+
+Note: Contractors are cautioned that it is exclusively the contractor’s responsibility to ensure that information provided is accurate and complete for all points of contact listed.  Further, contractors are responsible for ensuring references will willingly participate in the Government’s attempts to verify information provided in the quote.  The Government is not responsible for the inability to contact a contractor’s references due to inaccurate contact information or uncooperative references. An inability to verify past performance information due to inaccurate contact information and/or uncooperative references may result in a quote receiving a lower technical rating and/or may result in the quote no longer being considered for award.
+
+
+
+Volume II – Price Quote
+
+Contractor shall submit a Firm Fixed Price Quote.  The price quote shall include a total price for the base year including a breakdown by task (PWS section 5.0) of all labor categories, specifying offsite or onsite, the hourly labor rates, total hours by labor category, discounts if applicable, and subtotal by labor category, as well as a total dollar price for each task.  The quoter shall identify and provide a description of each labor category proposed and provide a labor matrix.  Show the total amount of labor hours for the entire task.
+
+
+
+If the quote fails to identify the specific labor categories, price per hour, and the amount of hours per each labor category (in each performance period) may result in the Government no longer considering that quote.
+
+Material Costs/ODC’s:  In the price quote, include a cost reimbursable Materials line item for the Computer Coded Assisting Solution software, inclusive of G&A or any similar indirect rate.  The Government will not pay any applied indirect rate unless (1) the rate was part of the pricing quote and (2) the rate is confirmed by DCAA after award as being accurate and properly applied.  The contractor will be fully responsible for providing DCAA contact information needed for the Government to verify any proposed indirect rates.
+
+Travel: The Government anticipates travel under this effort to perform the tasks associated with the effort, as well as to attend program-related meetings or conferences through the period of performance.  The Government estimates four (4) trips in support of this effort estimated at approximately five (5) days in duration each (including travel days). The anticipated four (4) trips are comprised of the Kick-Off meeting, working session meeting, pre-live production transition meeting, and Close-out meeting.  The anticipated location includes the following:
+
+Denver VA Medical Center
+
+1055 Clermont Street
+
+Denver, CO  80220
+
+
+
+Travel will be cost-reimbursable and will be submitted in accordance with the invoicing procedures contained within the PWS.SOLICITATION AND OFFER NEGOTIATED ACQUISITION
+1. SOLICITATION NUMBER
+
+PAGE
+
+OF
+
+PAGES
+
+I. SOLICITATION
+
+1
+3. OFFERS DUE BY
+
+69
+
+2. DATE ISSUED
+
+4. OFFERS VALID FOR 60 DAYS UNLESS A DIFFERENT PERIOD IS ENTERED HERE
+
+ID03120021
+Regional Clients Acq Operations Div 20 NORTH EIGHTH STREET PHILADELPHIA PA 19107-3101
+5. ISSUED BY
+
+03/13/2012
+
+03/28/2012
+6. ADDRESS OFFER TO (If other than Item 5)
+
+7. INFORMATION CALL (No collect calls) A. NAME AREA CODE B. TELEPHONE PHONE NUMBER C. E-MAIL ADDRESS
+
+Ryan Mathews
+8. BRIEF DESCRIPTION
+
+215
+
+446-5793
+
+ryan.mathews@gsa.gov
+
+Please see attached solicitation.
+
+9. TABLE OF CONTENTS (X) SEC. A B C D E F G H DESCRIPTION PART I - THE SCHEDULE SOLICITATION/CONTRACT FORM SUPPLIES OR SERVICES AND PRICES/COSTS DESCRIPTION/SPECS./WORK STATEMENT PACKAGING AND MARKING INSPECTION AND ACCEPTANCE DELIVERIES OR PERFORMANCE CONTRACT ADMINISTRATION DATA SPECIAL CONTRACT REQUIREMENTS K L M J I PAGE(S) (X) SEC. CONTRACT CLAUSES PART III - LIST OF DOCUMENTS, EXHIBITS AND OTHER ATTACH. LIST OF ATTACHMENTS PART IV - REPRESENTATIONS AND INSTRUCTIONS REPRESENTATIONS, CERTIFICATIONS AND OTHER STATEMENTS OF OFFERORS INSTRS., CONDS., AND NOTICES TO OFFERORS EVALUATION FACTORS FOR AWARD DESCRIPTION PART II - CONTRACT CLAUSES PAGE(S)
+
+II. OFFER The undersigned agrees to furnish and deliver the items or perform services to the extent states in this document for the consideration stated. The rights and obligations of the parties to the resultant contract shall be subject to and governed by this document and any documents attached or incorporated by reference.
+10A. PERSONS AUTHORIZED TO NEGOTIATE 10B. TITLE 10C. TELEPHONE AREA CODE NUMBER
+
+11. NAME AND ADDRESS OF OFFEROR
+
+12A. SIGNATURE OF PERSON AUTHORIZED TO SIGN
+
+12B. NAME OF SIGNER 12C. TITLE OF SIGNER 12D. DATE AREA CODE 12E. TELEPHONE NUMBER
+
+AUTHORIZED FOR LOCAL REPRODUCTION
+
+OPTIONAL FORM 308 (9-97) Prescribed by GSA - FAR (48 CFR) 53.215-1(f)
+
+

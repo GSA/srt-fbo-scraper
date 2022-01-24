@@ -1,0 +1,2584 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FM67861-14-T-0001.doc%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us"/><script type="text/javascript">url="http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FM67861-14-T-0001.doc%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>
+Solicitation M67861-14-T-0001, Attachment 1
+
+|BuyAccessible Government Product / Service Accessibility Template (GPAT)                                                                    |
+|                                                                                                                                            |
+|Section 508 (http://section508.gov/index.cfm?fuseAction=policies)requires that federal agencies electronic and information technology is    |
+|accessible to people with disabilities. The law applies to all Federal agencies when they develop, procure, maintain, or use electronic and |
+|information technology.                                                                                                                     |
+|                                                                                                                                            |
+|Requirements for accessibility based on Section 508 of the Rehabilitation Act of 1973 (29 U.S.C. 794d)                                      |
+|(http://section508.gov/index.cfm?fuseAction=1998Amend) are determined as applicable to this acquisition based on the following technical    |
+|provisions: To understand the technical standards that apply to each provision, the respondent should refer to http://Section 508.gov at    |
+|http://section508.gov/index.cfm?fuseAction=stdsdoc.                                                                                         |
+|                                                                                                                                            |
+|This GPAT is a simple tool to assist Federal contracting and procurement officials in fulfilling the market research requirements associated|
+|with Section 508 regulations. The GPAT is intended as a form to be included with government solicitations, to be filled out by solicitation |
+|respondents as a part of their proposal to indicate how their proposed solution addresses the applicable Section 508 requirements.          |
+|                                                                                                                                            |
+|NOTE: Section 508 provisions are determined to apply based in part on EIT requirements characterized using the BuyAccessible Wizard.        |
+|Provisions based on definite EIT requirements are identified by a "yes" in the Applicable column. Provisions based on possible EIT          |
+|requirements are identified by a "maybe" in the Applicable column. Provisions not identified with program requirements for this acquisition |
+|have no entry in the Applicable column. However, if your product or service deliverable has physical or functional characteristics          |
+|corresponding to any of the listed EIT accessibility requirements, even those beyond identified program requirements, then the requirement  |
+|applies and you should provide appropriate accessibility information.                                                                       |
+|                                                                                                                                            |
+|The GPAT is organized as a series of ten tables. The first eight tables reflect accessibility information about EIT products, corresponding |
+|to the six technical sections, the functional performance criteria, and the requirements for information, documentation, and support as     |
+|defined in the Access Board Standard for Section 508. The ninth and tenth tables correspond to accessibility information about information  |
+|content deliverables and labor hours, respectively.                                                                                         |
+|                                                                                                                                            |
+|Please fill the information below as a part of request for accessibility information of your proposed deliverable.                          |
+|                                                                                                                                            |
+|Product Name:_______________________________________                                                                                        |
+|                                                                                                                                            |
+|Vendor Name:________________________________________                                                                                        |
+|                                                                                                                                            |
+|Accessibility Information URL (if any):______________________________                                                                       |
+|                                                                                                                                            |
+
+|1194.21 Software Applications and Operating Systems                                                                                         |
+|Id   |Provision Text                            |Applicable         |Notes                        |How does the EIT meet    |Please explain  |
+|     |                                          |                   |                             |this requirement?        |                |
+|a    |When software is designed to run on a     |yes                |                             |[pic]Fully               |                |
+|     |system that has a keyboard, product       |                   |                             |[pic]Partially           |                |
+|     |functions shall be executable from a      |                   |                             |[pic]No                  |                |
+|     |keyboard where the function itself or the |                   |                             |[pic]Don't know          |                |
+|     |result of performing a function can be    |                   |                             |                         |                |
+|     |discerned textually.                      |                   |                             |                         |                |
+|b    |Applications shall not disrupt or disable |yes                |                             |[pic]Fully               |                |
+|     |activated features of other products that |                   |                             |[pic]Partially           |                |
+|     |are identified as accessibility features, |                   |                             |[pic]No                  |                |
+|     |where those features are developed and    |                   |                             |[pic]Don't know          |                |
+|     |documented according to industry          |                   |                             |                         |                |
+|     |standards. Applications also shall not    |                   |                             |                         |                |
+|     |disrupt or disable activated features of  |                   |                             |                         |                |
+|     |any operating system that are identified  |                   |                             |                         |                |
+|     |as accessibility features where the       |                   |                             |                         |                |
+|     |application programming interface for     |                   |                             |                         |                |
+|     |those accessibility features has been     |                   |                             |                         |                |
+|     |documented by the manufacturer of the     |                   |                             |                         |                |
+|     |operating system and is available to the  |                   |                             |                         |                |
+|     |product developer.                        |                   |                             |                         |                |
+|c    |A well-defined on-screen indication of the|yes                |                             |[pic]Fully               |                |
+|     |current focus shall be provided that moves|                   |                             |[pic]Partially           |                |
+|     |among interactive interface elements as   |                   |                             |[pic]No                  |                |
+|     |the input focus changes. The focus shall  |                   |                             |[pic]Don't know          |                |
+|     |be programmatically exposed so that       |                   |                             |                         |                |
+|     |assistive technology can track focus and  |                   |                             |                         |                |
+|     |focus changes.                            |                   |                             |                         |                |
+|d    |Sufficient information about a user       |yes                |                             |[pic]Fully               |                |
+|     |interface element including the identity, |                   |                             |[pic]Partially           |                |
+|     |operation and state of the element shall  |                   |                             |[pic]No                  |                |
+|     |be available to assistive technology. When|                   |                             |[pic]Don't know          |                |
+|     |an image represents a program element, the|                   |                             |                         |                |
+|     |information conveyed by the image must    |                   |                             |                         |                |
+|     |also be available in text.                |                   |                             |                         |                |
+|e    |When bitmap images are used to identify   |yes                |                             |[pic]Fully               |                |
+|     |controls, status indicators, or other     |                   |                             |[pic]Partially           |                |
+|     |programmatic elements, the meaning        |                   |                             |[pic]No                  |                |
+|     |assigned to those images shall be         |                   |                             |[pic]Don't know          |                |
+|     |consistent throughout an application's    |                   |                             |                         |                |
+|     |performance.                              |                   |                             |                         |                |
+|f    |Textual information shall be provided     |yes                |                             |[pic]Fully               |                |
+|     |through operating system functions for    |                   |                             |[pic]Partially           |                |
+|     |displaying text. The minimum information  |                   |                             |[pic]No                  |                |
+|     |that shall be made available is text      |                   |                             |[pic]Don't know          |                |
+|     |content, text input caret location, and   |                   |                             |                         |                |
+|     |text attributes.                          |                   |                             |                         |                |
+|g    |Applications shall not override user      |yes                |                             |[pic]Fully               |                |
+|     |selected contrast and color selections and|                   |                             |[pic]Partially           |                |
+|     |other individual display attributes.      |                   |                             |[pic]No                  |                |
+|     |                                          |                   |                             |[pic]Don't know          |                |
+|h    |When animation is displayed, the          |yes                |                             |[pic]Fully               |                |
+|     |information shall be displayable in at    |                   |                             |[pic]Partially           |                |
+|     |least one non-animated presentation mode  |                   |                             |[pic]No                  |                |
+|     |at the option of the user.                |                   |                             |[pic]Don't know          |                |
+|i    |Color coding shall not be used as the only|yes                |                             |[pic]Fully               |                |
+|     |means of conveying information, indicating|                   |                             |[pic]Partially           |                |
+|     |an action, prompting a response, or       |                   |                             |[pic]No                  |                |
+|     |distinguishing a visual element.          |                   |                             |[pic]Don't know          |                |
+|j    |When a product permits a user to adjust   |yes                |                             |[pic]Fully               |                |
+|     |color and contrast settings, a variety of |                   |                             |[pic]Partially           |                |
+|     |color selections capable of producing a   |                   |                             |[pic]No                  |                |
+|     |range of contrast levels shall be         |                   |                             |[pic]Don't know          |                |
+|     |provided.                                 |                   |                             |                         |                |
+|k    |Software shall not use flashing or        |yes                |                             |[pic]Fully               |                |
+|     |blinking text, objects, or other elements |                   |                             |[pic]Partially           |                |
+|     |having a flash or blink frequency greater |                   |                             |[pic]No                  |                |
+|     |than 2 Hz and lower than 55 Hz.           |                   |                             |[pic]Don't know          |                |
+|l    |When electronic forms are used, the form  |yes                |                             |[pic]Fully               |                |
+|     |shall allow people using Assistive        |                   |                             |[pic]Partially           |                |
+|     |Technology to access the information,     |                   |                             |[pic]No                  |                |
+|     |field elements, and functionality required|                   |                             |[pic]Don't know          |                |
+|     |for completion and submission of the form,|                   |                             |                         |                |
+|     |including all directions and cues.        |                   |                             |                         |                |
+
+
+|1194.22 Web-based Intranet and Internet Information and Applications                                                                        |
+|Id   |Provision Text               |Applicable         |Notes          |How does the EIT meet this requirement?             |Please explain  |
+|a    |A text equivalent for every  |yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |non-text element shall be    |                   |               |                                                    |                |
+|     |provided (e.g., via "alt",   |                   |               |                                                    |                |
+|     |"longdesc", or in element    |                   |               |                                                    |                |
+|     |content).                    |                   |               |                                                    |                |
+|b    |Equivalent alternatives for  |yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |any multimedia presentation  |                   |               |                                                    |                |
+|     |shall be synchronized with   |                   |               |                                                    |                |
+|     |the presentation.            |                   |               |                                                    |                |
+|c    |Web pages shall be designed  |yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |so that all information      |                   |               |                                                    |                |
+|     |conveyed with color is also  |                   |               |                                                    |                |
+|     |available without color, for |                   |               |                                                    |                |
+|     |example from context or      |                   |               |                                                    |                |
+|     |markup.                      |                   |               |                                                    |                |
+|d    |Documents shall be organized |yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |so they are readable without |                   |               |                                                    |                |
+|     |requiring an associated style|                   |               |                                                    |                |
+|     |sheet.                       |                   |               |                                                    |                |
+|e    |Redundant text links shall be|yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |provided for each active     |                   |               |                                                    |                |
+|     |region of a server-side image|                   |               |                                                    |                |
+|     |map.                         |                   |               |                                                    |                |
+|f    |Client-side image maps shall |yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |be provided instead of       |                   |               |                                                    |                |
+|     |server-side image maps except|                   |               |                                                    |                |
+|     |where the regions cannot be  |                   |               |                                                    |                |
+|     |defined with an available    |                   |               |                                                    |                |
+|     |geometric shape.             |                   |               |                                                    |                |
+|g    |Row and column headers shall |yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |be identified for data       |                   |               |                                                    |                |
+|     |tables.                      |                   |               |                                                    |                |
+|h    |Markup shall be used to      |yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |associate data cells and     |                   |               |                                                    |                |
+|     |header cells for data tables |                   |               |                                                    |                |
+|     |that have two or more logical|                   |               |                                                    |                |
+|     |levels of row or column      |                   |               |                                                    |                |
+|     |headers.                     |                   |               |                                                    |                |
+|i    |Frames shall be titled with  |yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |text that facilitates frame  |                   |               |                                                    |                |
+|     |identification and           |                   |               |                                                    |                |
+|     |navigation.                  |                   |               |                                                    |                |
+|j    |Pages shall be designed to   |yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |avoid causing the screen to  |                   |               |                                                    |                |
+|     |flicker with a frequency     |                   |               |                                                    |                |
+|     |greater than 2 Hz and lower  |                   |               |                                                    |                |
+|     |than 55 Hz.                  |                   |               |                                                    |                |
+|k    |A text-only page, with       |yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |equivalent information or    |                   |               |                                                    |                |
+|     |functionality, shall be      |                   |               |                                                    |                |
+|     |provided to make a web site  |                   |               |                                                    |                |
+|     |comply with the provisions of|                   |               |                                                    |                |
+|     |this part, when compliance   |                   |               |                                                    |                |
+|     |cannot be accomplished in any|                   |               |                                                    |                |
+|     |other way. The content of the|                   |               |                                                    |                |
+|     |text-only page shall be      |                   |               |                                                    |                |
+|     |updated whenever the primary |                   |               |                                                    |                |
+|     |page changes.                |                   |               |                                                    |                |
+|l    |When pages utilize scripting |yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |languages to display content,|                   |               |                                                    |                |
+|     |or to create interface       |                   |               |                                                    |                |
+|     |elements, the information    |                   |               |                                                    |                |
+|     |provided by the script shall |                   |               |                                                    |                |
+|     |be identified with functional|                   |               |                                                    |                |
+|     |text that can be read by     |                   |               |                                                    |                |
+|     |Assistive Technology.        |                   |               |                                                    |                |
+|m    |When a web page requires that|yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |an applet, plug-in or other  |                   |               |                                                    |                |
+|     |application be present on the|                   |               |                                                    |                |
+|     |client system to interpret   |                   |               |                                                    |                |
+|     |page content, the page must  |                   |               |                                                    |                |
+|     |provide a link to a plug-in  |                   |               |                                                    |                |
+|     |or applet that complies with |                   |               |                                                    |                |
+|     |1194.21(a) through (l).      |                   |               |                                                    |                |
+|n    |When electronic forms are    |yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |designed to be completed     |                   |               |                                                    |                |
+|     |on-line, the form shall allow|                   |               |                                                    |                |
+|     |people using Assistive       |                   |               |                                                    |                |
+|     |Technology to access the     |                   |               |                                                    |                |
+|     |information, field elements, |                   |               |                                                    |                |
+|     |and functionality required   |                   |               |                                                    |                |
+|     |for completion and submission|                   |               |                                                    |                |
+|     |of the form, including all   |                   |               |                                                    |                |
+|     |directions and cues.         |                   |               |                                                    |                |
+|o    |A method shall be provided   |yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |that permits users to skip   |                   |               |                                                    |                |
+|     |repetitive navigation links. |                   |               |                                                    |                |
+|p    |When a timed response is     |yes                |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |required, the user shall be  |                   |               |                                                    |                |
+|     |alerted and given sufficient |                   |               |                                                    |                |
+|     |time to indicate more time is|                   |               |                                                    |                |
+|     |required.                    |                   |               |                                                    |                |
+
+
+|1194.23 Telecommunication Products                                                                                                          |
+|Id   |Provision Text              |Applicable         |Notes          |How does the EIT meet this requirement?             |Please explain  |
+|a    |Telecommunications products |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |or systems which provide a  |                   |               |                                                    |                |
+|     |function allowing voice     |                   |               |                                                    |                |
+|     |communication and which do  |                   |               |                                                    |                |
+|     |not themselves provide a TTY|                   |               |                                                    |                |
+|     |functionality shall provide |                   |               |                                                    |                |
+|     |a standard non-acoustic     |                   |               |                                                    |                |
+|     |connection point for TTYs.  |                   |               |                                                    |                |
+|     |Microphones shall be capable|                   |               |                                                    |                |
+|     |of being turned on and off  |                   |               |                                                    |                |
+|     |to allow the user to        |                   |               |                                                    |                |
+|     |intermix speech with TTY    |                   |               |                                                    |                |
+|     |use.                        |                   |               |                                                    |                |
+|b    |Telecommunications products |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |which include voice         |                   |               |                                                    |                |
+|     |communication functionality |                   |               |                                                    |                |
+|     |shall support all commonly  |                   |               |                                                    |                |
+|     |used cross-manufacturer     |                   |               |                                                    |                |
+|     |non-proprietary standard TTY|                   |               |                                                    |                |
+|     |signal protocols.           |                   |               |                                                    |                |
+|c    |Voice mail, auto-attendant, |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |and interactive voice       |                   |               |                                                    |                |
+|     |response telecommunications |                   |               |                                                    |                |
+|     |systems shall be usable by  |                   |               |                                                    |                |
+|     |TTY users with their TTYs.  |                   |               |                                                    |                |
+|d    |Voice mail, messaging,      |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |auto-attendant, and         |                   |               |                                                    |                |
+|     |interactive voice response  |                   |               |                                                    |                |
+|     |telecommunications systems  |                   |               |                                                    |                |
+|     |that require a response from|                   |               |                                                    |                |
+|     |a user within a time        |                   |               |                                                    |                |
+|     |interval, shall give an     |                   |               |                                                    |                |
+|     |alert when the time interval|                   |               |                                                    |                |
+|     |is about to run out, and    |                   |               |                                                    |                |
+|     |shall provide sufficient    |                   |               |                                                    |                |
+|     |time for the user to        |                   |               |                                                    |                |
+|     |indicate more time is       |                   |               |                                                    |                |
+|     |required.                   |                   |               |                                                    |                |
+|e    |Where provided, caller      |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |identification and similar  |                   |               |                                                    |                |
+|     |telecommunications functions|                   |               |                                                    |                |
+|     |shall also be available for |                   |               |                                                    |                |
+|     |users of TTYs, and for users|                   |               |                                                    |                |
+|     |who cannot see displays.    |                   |               |                                                    |                |
+|f    |For transmitted voice       |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |signals, telecommunications |                   |               |                                                    |                |
+|     |products shall provide a    |                   |               |                                                    |                |
+|     |gain adjustable up to a     |                   |               |                                                    |                |
+|     |minimum of 20 dB. For       |                   |               |                                                    |                |
+|     |incremental volume control, |                   |               |                                                    |                |
+|     |at least one intermediate   |                   |               |                                                    |                |
+|     |step of 12 dB of gain shall |                   |               |                                                    |                |
+|     |be provided.                |                   |               |                                                    |                |
+|g    |If the telecommunications   |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |product allows a user to    |                   |               |                                                    |                |
+|     |adjust the receive volume, a|                   |               |                                                    |                |
+|     |function shall be provided  |                   |               |                                                    |                |
+|     |to automatically reset the  |                   |               |                                                    |                |
+|     |volume to the default level |                   |               |                                                    |                |
+|     |after every use.            |                   |               |                                                    |                |
+|h    |Where a telecommunications  |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |product delivers output by  |                   |               |                                                    |                |
+|     |an audio transducer which is|                   |               |                                                    |                |
+|     |normally held up to the ear,|                   |               |                                                    |                |
+|     |a means for effective       |                   |               |                                                    |                |
+|     |magnetic wireless coupling  |                   |               |                                                    |                |
+|     |to hearing technologies     |                   |               |                                                    |                |
+|     |shall be provided.          |                   |               |                                                    |                |
+|i    |Interference to hearing     |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |technologies (including     |                   |               |                                                    |                |
+|     |hearing aids, cochlear      |                   |               |                                                    |                |
+|     |implants, and assistive     |                   |               |                                                    |                |
+|     |listening devices) shall be |                   |               |                                                    |                |
+|     |reduced to the lowest       |                   |               |                                                    |                |
+|     |possible level that allows a|                   |               |                                                    |                |
+|     |user of hearing technologies|                   |               |                                                    |                |
+|     |to utilize the              |                   |               |                                                    |                |
+|     |telecommunications product. |                   |               |                                                    |                |
+|j    |Products that transmit or   |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |conduct information or      |                   |               |                                                    |                |
+|     |communication, shall pass   |                   |               |                                                    |                |
+|     |through cross-manufacturer, |                   |               |                                                    |                |
+|     |non-proprietary,            |                   |               |                                                    |                |
+|     |industry-standard codes,    |                   |               |                                                    |                |
+|     |translation protocols,      |                   |               |                                                    |                |
+|     |formats or other information|                   |               |                                                    |                |
+|     |necessary to provide the    |                   |               |                                                    |                |
+|     |information or communication|                   |               |                                                    |                |
+|     |in a usable format.         |                   |               |                                                    |                |
+|     |Technologies which use      |                   |               |                                                    |                |
+|     |encoding, signal            |                   |               |                                                    |                |
+|     |compression, format         |                   |               |                                                    |                |
+|     |transformation, or similar  |                   |               |                                                    |                |
+|     |techniques shall not remove |                   |               |                                                    |                |
+|     |information needed for      |                   |               |                                                    |                |
+|     |access or shall restore it  |                   |               |                                                    |                |
+|     |upon delivery.              |                   |               |                                                    |                |
+|k[1] |Products which have         |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |mechanically operated       |                   |               |                                                    |                |
+|     |controls or keys shall      |                   |               |                                                    |                |
+|     |comply with the following:  |                   |               |                                                    |                |
+|     |Controls and Keys shall be  |                   |               |                                                    |                |
+|     |tactilely discernible       |                   |               |                                                    |                |
+|     |without activating the      |                   |               |                                                    |                |
+|     |controls or keys.           |                   |               |                                                    |                |
+|k[2] |Products which have         |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |mechanically operated       |                   |               |                                                    |                |
+|     |controls or keys shall      |                   |               |                                                    |                |
+|     |comply with the following:  |                   |               |                                                    |                |
+|     |Controls and Keys shall be  |                   |               |                                                    |                |
+|     |operable with one hand and  |                   |               |                                                    |                |
+|     |shall not require tight     |                   |               |                                                    |                |
+|     |grasping, pinching, twisting|                   |               |                                                    |                |
+|     |of the wrist. The force     |                   |               |                                                    |                |
+|     |required to activate        |                   |               |                                                    |                |
+|     |controls and keys shall be 5|                   |               |                                                    |                |
+|     |lbs. (22.2N) maximum.       |                   |               |                                                    |                |
+|k[3] |Products which have         |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |mechanically operated       |                   |               |                                                    |                |
+|     |controls or keys shall      |                   |               |                                                    |                |
+|     |comply with the following:  |                   |               |                                                    |                |
+|     |If key repeat is supported, |                   |               |                                                    |                |
+|     |the delay before repeat     |                   |               |                                                    |                |
+|     |shall be adjustable to at   |                   |               |                                                    |                |
+|     |least 2 seconds. Key repeat |                   |               |                                                    |                |
+|     |rate shall be adjustable to |                   |               |                                                    |                |
+|     |2 seconds per character.    |                   |               |                                                    |                |
+|k[4] |Products which have         |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |mechanically operated       |                   |               |                                                    |                |
+|     |controls or keys shall      |                   |               |                                                    |                |
+|     |comply with the following:  |                   |               |                                                    |                |
+|     |The status of all locking or|                   |               |                                                    |                |
+|     |toggle controls or keys     |                   |               |                                                    |                |
+|     |shall be visually           |                   |               |                                                    |                |
+|     |discernible, and discernible|                   |               |                                                    |                |
+|     |either through touch or     |                   |               |                                                    |                |
+|     |sound.                      |                   |               |                                                    |                |
+
+
+|1194.24 Video and Multimedia Products                                                                                                       |
+|Id   |Provision Text               |Applicable         |Notes          |How does the EIT meet this requirement?             |Please explain  |
+|a    |All analog television        |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |displays 13 inches and       |                   |               |                                                    |                |
+|     |larger, and computer         |                   |               |                                                    |                |
+|     |equipment that includes      |                   |               |                                                    |                |
+|     |analog television receiver or|                   |               |                                                    |                |
+|     |display circuitry, shall be  |                   |               |                                                    |                |
+|     |equipped with caption decoder|                   |               |                                                    |                |
+|     |circuitry which appropriately|                   |               |                                                    |                |
+|     |receives, decodes, and       |                   |               |                                                    |                |
+|     |displays closed captions from|                   |               |                                                    |                |
+|     |broadcast, cable, videotape, |                   |               |                                                    |                |
+|     |and DVD signals. As soon as  |                   |               |                                                    |                |
+|     |practicable, but not later   |                   |               |                                                    |                |
+|     |than July 1, 2002, widescreen|                   |               |                                                    |                |
+|     |digital television (DTV)     |                   |               |                                                    |                |
+|     |displays measuring at least  |                   |               |                                                    |                |
+|     |7.8 inches vertically, DTV   |                   |               |                                                    |                |
+|     |sets with conventional       |                   |               |                                                    |                |
+|     |displays measuring at least  |                   |               |                                                    |                |
+|     |13 inches vertically, and    |                   |               |                                                    |                |
+|     |stand-alone DTV tuners,      |                   |               |                                                    |                |
+|     |whether or not they are      |                   |               |                                                    |                |
+|     |marketed with display        |                   |               |                                                    |                |
+|     |screens, and computer        |                   |               |                                                    |                |
+|     |equipment that includes DTV  |                   |               |                                                    |                |
+|     |receiver or display          |                   |               |                                                    |                |
+|     |circuitry, shall be equipped |                   |               |                                                    |                |
+|     |with caption decoder         |                   |               |                                                    |                |
+|     |circuitry which appropriately|                   |               |                                                    |                |
+|     |receives, decodes, and       |                   |               |                                                    |                |
+|     |displays closed captions from|                   |               |                                                    |                |
+|     |broadcast, cable, videotape, |                   |               |                                                    |                |
+|     |and DVD signals.             |                   |               |                                                    |                |
+|b    |Television tuners, including |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |tuner cards for use in       |                   |               |                                                    |                |
+|     |computers, shall be equipped |                   |               |                                                    |                |
+|     |with secondary audio program |                   |               |                                                    |                |
+|     |playback circuitry.          |                   |               |                                                    |                |
+|c    |All training and             |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |informational video and      |                   |               |                                                    |                |
+|     |multimedia productions which |                   |               |                                                    |                |
+|     |support the agency's mission,|                   |               |                                                    |                |
+|     |regardless of format, that   |                   |               |                                                    |                |
+|     |contain speech or other audio|                   |               |                                                    |                |
+|     |information necessary for the|                   |               |                                                    |                |
+|     |comprehension of the content,|                   |               |                                                    |                |
+|     |shall be open or closed      |                   |               |                                                    |                |
+|     |captioned.                   |                   |               |                                                    |                |
+|d    |All training and             |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |informational video and      |                   |               |                                                    |                |
+|     |multimedia productions which |                   |               |                                                    |                |
+|     |support the agency's mission,|                   |               |                                                    |                |
+|     |regardless of format, that   |                   |               |                                                    |                |
+|     |contain visual information   |                   |               |                                                    |                |
+|     |necessary for the            |                   |               |                                                    |                |
+|     |comprehension of the content,|                   |               |                                                    |                |
+|     |shall be audio described.    |                   |               |                                                    |                |
+|e    |Display or presentation of   |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |alternate text presentation  |                   |               |                                                    |                |
+|     |or audio descriptions shall  |                   |               |                                                    |                |
+|     |be user-selectable unless    |                   |               |                                                    |                |
+|     |permanent.                   |                   |               |                                                    |                |
+
+
+|1194.25 Self Contained, Closed Products                                                                                                     |
+|Id   |Provision Text               |Applicable         |Notes          |How does the EIT meet this requirement?             |Please explain  |
+|a    |Self contained products shall|                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |be usable by people with     |                   |               |                                                    |                |
+|     |disabilities without         |                   |               |                                                    |                |
+|     |requiring an end-user to     |                   |               |                                                    |                |
+|     |attach Assistive Technology  |                   |               |                                                    |                |
+|     |to the product. Personal     |                   |               |                                                    |                |
+|     |headsets for private         |                   |               |                                                    |                |
+|     |listening are not Assistive  |                   |               |                                                    |                |
+|     |Technology.                  |                   |               |                                                    |                |
+|b    |When a timed response is     |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |required, the user shall be  |                   |               |                                                    |                |
+|     |alerted and given sufficient |                   |               |                                                    |                |
+|     |time to indicate more time is|                   |               |                                                    |                |
+|     |required.                    |                   |               |                                                    |                |
+|c    |Where a product utilizes     |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |touchscreens or              |                   |               |                                                    |                |
+|     |contact-sensitive controls,  |                   |               |                                                    |                |
+|     |an input method shall be     |                   |               |                                                    |                |
+|     |provided that complies with  |                   |               |                                                    |                |
+|     |1194.23 (k) (1) through (4). |                   |               |                                                    |                |
+|d    |When biometric forms of user |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |identification or control are|                   |               |                                                    |                |
+|     |used, an alternative form of |                   |               |                                                    |                |
+|     |identification or activation,|                   |               |                                                    |                |
+|     |which does not require the   |                   |               |                                                    |                |
+|     |user to possess particular   |                   |               |                                                    |                |
+|     |biological characteristics,  |                   |               |                                                    |                |
+|     |shall also be provided.      |                   |               |                                                    |                |
+|e    |When products provide        |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |auditory output, the audio   |                   |               |                                                    |                |
+|     |signal shall be provided at a|                   |               |                                                    |                |
+|     |standard signal level through|                   |               |                                                    |                |
+|     |an industry standard         |                   |               |                                                    |                |
+|     |connector that will allow for|                   |               |                                                    |                |
+|     |private listening. The       |                   |               |                                                    |                |
+|     |product must provide the     |                   |               |                                                    |                |
+|     |ability to interrupt, pause, |                   |               |                                                    |                |
+|     |and restart the audio at     |                   |               |                                                    |                |
+|     |anytime.                     |                   |               |                                                    |                |
+|f    |When products deliver voice  |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |output in a public area,     |                   |               |                                                    |                |
+|     |incremental volume control   |                   |               |                                                    |                |
+|     |shall be provided with output|                   |               |                                                    |                |
+|     |amplification up to a level  |                   |               |                                                    |                |
+|     |of at least 65 dB. Where the |                   |               |                                                    |                |
+|     |ambient noise level of the   |                   |               |                                                    |                |
+|     |environment is above 45 dB, a|                   |               |                                                    |                |
+|     |volume gain of at least 20 dB|                   |               |                                                    |                |
+|     |above the ambient level shall|                   |               |                                                    |                |
+|     |be user selectable. A        |                   |               |                                                    |                |
+|     |function shall be provided to|                   |               |                                                    |                |
+|     |automatically reset the      |                   |               |                                                    |                |
+|     |volume to the default level  |                   |               |                                                    |                |
+|     |after every use.             |                   |               |                                                    |                |
+|g    |Color coding shall not be    |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |used as the only means of    |                   |               |                                                    |                |
+|     |conveying information,       |                   |               |                                                    |                |
+|     |indicating an action,        |                   |               |                                                    |                |
+|     |prompting a response, or     |                   |               |                                                    |                |
+|     |distinguishing a visual      |                   |               |                                                    |                |
+|     |element.                     |                   |               |                                                    |                |
+|h    |When a product permits a user|                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |to adjust color and contrast |                   |               |                                                    |                |
+|     |settings, a range of color   |                   |               |                                                    |                |
+|     |selections capable of        |                   |               |                                                    |                |
+|     |producing a variety of       |                   |               |                                                    |                |
+|     |contrast levels shall be     |                   |               |                                                    |                |
+|     |provided.                    |                   |               |                                                    |                |
+|i    |Products shall be designed to|                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |avoid causing the screen to  |                   |               |                                                    |                |
+|     |flicker with a frequency     |                   |               |                                                    |                |
+|     |greater than 2 Hz and lower  |                   |               |                                                    |                |
+|     |than 55 Hz.                  |                   |               |                                                    |                |
+|j[1] |Products which are           |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |freestanding, non-portable,  |                   |               |                                                    |                |
+|     |and intended to be used in   |                   |               |                                                    |                |
+|     |one location and which have  |                   |               |                                                    |                |
+|     |operable controls shall      |                   |               |                                                    |                |
+|     |comply with the following:   |                   |               |                                                    |                |
+|     |The position of any operable |                   |               |                                                    |                |
+|     |control shall be determined  |                   |               |                                                    |                |
+|     |with respect to a vertical   |                   |               |                                                    |                |
+|     |plane, which is 48 inches in |                   |               |                                                    |                |
+|     |length, centered on the      |                   |               |                                                    |                |
+|     |operable control, and at the |                   |               |                                                    |                |
+|     |maximum protrusion of the    |                   |               |                                                    |                |
+|     |product within the 48 inch   |                   |               |                                                    |                |
+|     |length on products which are |                   |               |                                                    |                |
+|     |freestanding, non-portable,  |                   |               |                                                    |                |
+|     |and intended to be used in   |                   |               |                                                    |                |
+|     |one location and which have  |                   |               |                                                    |                |
+|     |operable controls.           |                   |               |                                                    |                |
+|j[2] |Products which are           |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |freestanding, non-portable,  |                   |               |                                                    |                |
+|     |and intended to be used in   |                   |               |                                                    |                |
+|     |one location and which have  |                   |               |                                                    |                |
+|     |operable controls shall      |                   |               |                                                    |                |
+|     |comply with the following:   |                   |               |                                                    |                |
+|     |Where any operable control is|                   |               |                                                    |                |
+|     |10 inches or less behind the |                   |               |                                                    |                |
+|     |reference plane, the height  |                   |               |                                                    |                |
+|     |shall be 54 inches maximum   |                   |               |                                                    |                |
+|     |and 15 inches minimum above  |                   |               |                                                    |                |
+|     |the floor.                   |                   |               |                                                    |                |
+|j[3] |Products which are           |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |freestanding, non-portable,  |                   |               |                                                    |                |
+|     |and intended to be used in   |                   |               |                                                    |                |
+|     |one location and which have  |                   |               |                                                    |                |
+|     |operable controls shall      |                   |               |                                                    |                |
+|     |comply with the following:   |                   |               |                                                    |                |
+|     |Where any operable control is|                   |               |                                                    |                |
+|     |more than 10 inches and not  |                   |               |                                                    |                |
+|     |more than 24 inches behind   |                   |               |                                                    |                |
+|     |the reference plane, the     |                   |               |                                                    |                |
+|     |height shall be 46 inches    |                   |               |                                                    |                |
+|     |maximum and 15 inches minimum|                   |               |                                                    |                |
+|     |above the floor.             |                   |               |                                                    |                |
+|j[4] |Products which are           |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |freestanding, non-portable,  |                   |               |                                                    |                |
+|     |and intended to be used in   |                   |               |                                                    |                |
+|     |one location and which have  |                   |               |                                                    |                |
+|     |operable controls shall      |                   |               |                                                    |                |
+|     |comply with the following:   |                   |               |                                                    |                |
+|     |Operable controls shall not  |                   |               |                                                    |                |
+|     |be more than 24 inches behind|                   |               |                                                    |                |
+|     |the reference plane.         |                   |               |                                                    |                |
+
+
+|1194.26 Desktop and Portable Computers                                                                                                      |
+|Id   |Provision Text               |Applicable         |Notes          |How does the EIT meet this requirement?             |Please explain  |
+|a    |All mechanically operated    |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |controls and keys shall      |                   |               |                                                    |                |
+|     |comply with 1194.23 (k) (1)  |                   |               |                                                    |                |
+|     |through (4).                 |                   |               |                                                    |                |
+|b    |If a product utilizes        |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |touchscreens or              |                   |               |                                                    |                |
+|     |touch-operated controls, an  |                   |               |                                                    |                |
+|     |input method shall be        |                   |               |                                                    |                |
+|     |provided that complies with  |                   |               |                                                    |                |
+|     |1194.23 (k) (1) through (4). |                   |               |                                                    |                |
+|c    |When biometric forms of user |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |identification or control are|                   |               |                                                    |                |
+|     |used, an alternative form of |                   |               |                                                    |                |
+|     |identification or activation,|                   |               |                                                    |                |
+|     |which does not require the   |                   |               |                                                    |                |
+|     |user to possess particular   |                   |               |                                                    |                |
+|     |biological characteristics,  |                   |               |                                                    |                |
+|     |shall also be provided.      |                   |               |                                                    |                |
+|d    |Where provided, at least one |                   |               |[pic]Fully[pic]Partially[pic]No[pic]Don't know      |                |
+|     |of each type of expansion    |                   |               |                                                    |                |
+|     |slots, ports and connectors  |                   |               |                                                    |                |
+|     |shall comply with publicly   |                   |               |                                                    |                |
+|     |available industry standards.|                   |               |                                                    |                |
+
+
+|1194.31 Functional Performance Criteria                                                                                                     |
+|Id   |Provision Text                |Applicable         |Notes           |How does the EIT meet this requirement?          |Please explain  |
+|a    |At least one mode of operation|yes                |                |[pic]Fully[pic]Partially[pic]No[pic]Don't know   |                |
+|     |and information retrieval that|                   |                |                                                 |                |
+|     |does not require user vision  |                   |                |                                                 |                |
+|     |shall be provided, or support |                   |                |                                                 |                |
+|     |for Assistive Technology used |                   |                |                                                 |                |
+|     |by people who are blind or    |                   |                |                                                 |                |
+|     |visually impaired shall be    |                   |                |                                                 |                |
+|     |provided.                     |                   |                |                                                 |                |
+|b    |At least one mode of operation|yes                |                |[pic]Fully[pic]Partially[pic]No[pic]Don't know   |                |
+|     |and information retrieval that|                   |                |                                                 |                |
+|     |does not require visual acuity|                   |                |                                                 |                |
+|     |greater than 20/70 shall be   |                   |                |                                                 |                |
+|     |provided in audio and enlarged|                   |                |                                                 |                |
+|     |print output working together |                   |                |                                                 |                |
+|     |or independently, or support  |                   |                |                                                 |                |
+|     |for Assistive Technology used |                   |                |                                                 |                |
+|     |by people who are visually    |                   |                |                                                 |                |
+|     |impaired shall be provided.   |                   |                |                                                 |                |
+|c    |At least one mode of operation|yes                |                |[pic]Fully[pic]Partially[pic]No[pic]Don't know   |                |
+|     |and information retrieval that|                   |                |                                                 |                |
+|     |does not require user hearing |                   |                |                                                 |                |
+|     |shall be provided, or support |                   |                |                                                 |                |
+|     |for Assistive Technology used |                   |                |                                                 |                |
+|     |by people who are deaf or hard|                   |                |                                                 |                |
+|     |of hearing shall be provided. |                   |                |                                                 |                |
+|d    |Where audio information is    |yes                |                |[pic]Fully[pic]Partially[pic]No[pic]Don't know   |                |
+|     |important for the use of a    |                   |                |                                                 |                |
+|     |product, at least one mode of |                   |                |                                                 |                |
+|     |operation and information     |                   |                |                                                 |                |
+|     |retrieval shall be provided in|                   |                |                                                 |                |
+|     |an enhanced auditory fashion, |                   |                |                                                 |                |
+|     |or support for assistive      |                   |                |                                                 |                |
+|     |hearing devices shall be      |                   |                |                                                 |                |
+|     |provided.                     |                   |                |                                                 |                |
+|e    |At least one mode of operation|yes                |                |[pic]Fully[pic]Partially[pic]No[pic]Don't know   |                |
+|     |and information retrieval that|                   |                |                                                 |                |
+|     |does not require user speech  |                   |                |                                                 |                |
+|     |shall be provided, or support |                   |                |                                                 |                |
+|     |for Assistive Technology used |                   |                |                                                 |                |
+|     |by people with disabilities   |                   |                |                                                 |                |
+|     |shall be provided.            |                   |                |                                                 |                |
+|f    |At least one mode of operation|yes                |                |[pic]Fully[pic]Partially[pic]No[pic]Don't know   |                |
+|     |and information retrieval that|                   |                |                                                 |                |
+|     |does not require fine motor   |                   |                |                                                 |                |
+|     |control or simultaneous       |                   |                |                                                 |                |
+|     |actions and that is operable  |                   |                |                                                 |                |
+|     |with limited reach and        |                   |                |                                                 |                |
+|     |strength shall be provided.   |                   |                |                                                 |                |
+
+
+|1194.41 Information, Documentation, and Support                                                                                             |
+|Id   |Provision Text             |Applicable         |Notes              |How does the EIT meet this requirement?          |Please explain  |
+|a    |Product support            |yes                |If Web-based       |[pic]Fully[pic]Partially[pic]No[pic]Don't know   |                |
+|     |documentation provided to  |                   |information,       |                                                 |                |
+|     |end-users shall be made    |                   |documentation, and |                                                 |                |
+|     |available in alternate     |                   |support are        |                                                 |                |
+|     |formats upon request, at no|                   |requested, then    |                                                 |                |
+|     |additional charges.        |                   |provisions from    |                                                 |                |
+|     |                           |                   |Section 1194.22    |                                                 |                |
+|     |                           |                   |Web-based intranet |                                                 |                |
+|     |                           |                   |and internet       |                                                 |                |
+|     |                           |                   |information and    |                                                 |                |
+|     |                           |                   |applications would |                                                 |                |
+|     |                           |                   |apply.If Web-based |                                                 |                |
+|     |                           |                   |information,       |                                                 |                |
+|     |                           |                   |documentation, and |                                                 |                |
+|     |                           |                   |support are        |                                                 |                |
+|     |                           |                   |requested via video|                                                 |                |
+|     |                           |                   |and multimedia,    |                                                 |                |
+|     |                           |                   |then provisions    |                                                 |                |
+|     |                           |                   |1194.24c, 1194.24d,|                                                 |                |
+|     |                           |                   |1194.24e would     |                                                 |                |
+|     |                           |                   |apply.             |                                                 |                |
+|b    |End-users shall have access|yes                |If Web-based       |[pic]Fully[pic]Partially[pic]No[pic]Don't know   |                |
+|     |to a description of the    |                   |information,       |                                                 |                |
+|     |accessibility and          |                   |documentation, and |                                                 |                |
+|     |compatibility features of  |                   |support are        |                                                 |                |
+|     |products in alternate      |                   |requested, then    |                                                 |                |
+|     |formats, or alternate      |                   |provisions from    |                                                 |                |
+|     |methods upon request, at no|                   |Section 1194.22    |                                                 |                |
+|     |additional charge.         |                   |Web-based intranet |                                                 |                |
+|     |                           |                   |and internet       |                                                 |                |
+|     |                           |                   |information and    |                                                 |                |
+|     |                           |                   |applications would |                                                 |                |
+|     |                           |                   |apply.If Web-based |                                                 |                |
+|     |                           |                   |information,       |                                                 |                |
+|     |                           |                   |documentation, and |                                                 |                |
+|     |                           |                   |support are        |                                                 |                |
+|     |                           |                   |requested via video|                                                 |                |
+|     |                           |                   |and multimedia,    |                                                 |                |
+|     |                           |                   |then provisions    |                                                 |                |
+|     |                           |                   |1194.24c, 1194.24d,|                                                 |                |
+|     |                           |                   |1194.24e would     |                                                 |                |
+|     |                           |                   |apply.             |                                                 |                |
+|c    |Support services for       |yes                |If Web-based       |[pic]Fully[pic]Partially[pic]No[pic]Don't know   |                |
+|     |products shall accommodate |                   |information,       |                                                 |                |
+|     |the communication needs of |                   |documentation, and |                                                 |                |
+|     |end-users with             |                   |support are        |                                                 |                |
+|     |disabilities.              |                   |requested, then    |                                                 |                |
+|     |                           |                   |provisions from    |                                                 |                |
+|     |                           |                   |Section 1194.22    |                                                 |                |
+|     |                           |                   |Web-based intranet |                                                 |                |
+|     |                           |                   |and internet       |                                                 |                |
+|     |                           |                   |information and    |                                                 |                |
+|     |                           |                   |applications would |                                                 |                |
+|     |                           |                   |apply.If Web-based |                                                 |                |
+|     |                           |                   |information,       |                                                 |                |
+|     |                           |                   |documentation, and |                                                 |                |
+|     |                           |                   |support are        |                                                 |                |
+|     |                           |                   |requested via video|                                                 |                |
+|     |                           |                   |and multimedia,    |                                                 |                |
+|     |                           |                   |then provisions    |                                                 |                |
+|     |                           |                   |1194.24c, 1194.24d,|                                                 |                |
+|     |                           |                   |1194.24e would     |                                                 |                |
+|     |                           |                   |apply.             |                                                 |                |
+
+|                                                                                                                                            |
+|                                                                                                                                            |
+|                                                                                                                                            |
+|Information Content Deliverable Accessibility Template                                                                                      |
+|                                                                                                                                            |
+|Please fill the information below as a part of request for accessibility information of your service deliverable.                           |
+|                                                                                                                                            |
+|Vendor Name:________________________________________                                                                                        |
+|                                                                                                                                            |
+|Accessibility Information URL (if any):______________________________                                                                       |
+|                                                                                                                                            |
+|NOTE: Section 508 requirements are determined to apply based in part on EIT requirements characterized using the BuyAccessible Wizard.      |
+|Definite information content deliverable requirements are identified by a "yes" in the Applicable column. Possible information content      |
+|deliverable requirements are identified by a "maybe" in the Applicable column.                                                              |
+
+|Section 508 Service Requirements         |Applicable         |How does the deliverable meet this requirement?  |Please explain              |
+|Information Content will include topics  |                   |[pic]Fully[pic]Partially[pic]No[pic]Don't know   |                            |
+|that address EIT products and EIT-related|                   |                                                 |                            |
+|services. Section 508 must be considered |                   |                                                 |                            |
+|as a requirement on the delivered content|                   |                                                 |                            |
+|to assure that it includes data and/or   |                   |                                                 |                            |
+|knowledge appropriate to specific Section|                   |                                                 |                            |
+|508 accessibility requirements. The      |                   |                                                 |                            |
+|specific requirements that apply depend  |                   |                                                 |                            |
+|upon the specific type of EIT referred to|                   |                                                 |                            |
+|in the information content as well as the|                   |                                                 |                            |
+|functional performance criteria detailed |                   |                                                 |                            |
+|in 1194.31.                              |                   |                                                 |                            |
+|Information Content deliverable is       |                   |[pic]Fully[pic]Partially[pic]No[pic]Don't know   |                            |
+|intended to be posted on the agency's a  |                   |                                                 |                            |
+|website. Section 508 must be considered  |                   |                                                 |                            |
+|as a requirement on the delivered content|                   |                                                 |                            |
+|to assure that it considers the specific |                   |                                                 |                            |
+|Section 508 accessibility requirements   |                   |                                                 |                            |
+|detailed in 1194.22 as well as the       |                   |                                                 |                            |
+|functional performance criteria detailed |                   |                                                 |                            |
+|in 1194.31.                              |                   |                                                 |                            |
+|Information Content deliverable is       |                   |[pic]Fully[pic]Partially[pic]No[pic]Don't know   |                            |
+|intended to be made available in a       |                   |                                                 |                            |
+|multimedia format by the agency. Section |                   |                                                 |                            |
+|508 must be considered as a requirement  |                   |                                                 |                            |
+|on the delivered content to assure that  |                   |                                                 |                            |
+|it considers the specific Section 508    |                   |                                                 |                            |
+|accessibility requirements detailed in   |                   |                                                 |                            |
+|1194.24 as well as the functional        |                   |                                                 |                            |
+|performance criteria detailed in 1194.31.|                   |                                                 |                            |
+
+|                                                                                                                                            |
+|                                                                                                                                            |
+|                                                                                                                                            |
+|Labor Hours Deliverable Accessibility Template                                                                                              |
+|                                                                                                                                            |
+|Please fill the information below as a part of request for accessibility information of your service deliverable.                           |
+|                                                                                                                                            |
+|Vendor Name:________________________________________                                                                                        |
+|                                                                                                                                            |
+|Accessibility Information URL (if any):______________________________                                                                       |
+|                                                                                                                                            |
+|NOTE: Section 508 requirements are determined to apply based in part on EIT requirements characterized using the BuyAccessible Wizard.      |
+|Definite labor hour characteristic requirements are identified by a "yes" in the Applicable column. Possible labor hour characteristic      |
+|requirements are identified by a "maybe" in the Applicable column.                                                                          |
+
+|Section 508 Service Requirements         |Applicable         |How does the deliverable meet this requirement?  |Please explain              |
+|The activity to be performed relates to  |                   |[pic]Fully[pic]Partially[pic]No[pic]Don't know   |                            |
+|or requires the use of EIT. Section 508  |                   |                                                 |                            |
+|must be considered as a requirement for  |                   |                                                 |                            |
+|the EIT related labor hours activity to  |                   |                                                 |                            |
+|assure that it considers specific Section|                   |                                                 |                            |
+|508 accessibility requirements. The      |                   |                                                 |                            |
+|specific requirements that apply depend  |                   |                                                 |                            |
+|upon the specific type of EIT related to |                   |                                                 |                            |
+|performing the activity as well as the   |                   |                                                 |                            |
+|functional performance criteria detailed |                   |                                                 |                            |
+|in 1194.31                               |                   |                                                 |                            |
+
+
+
+
+
+
+
+
+Section SF 1449 - CONTINUATION SHEET
+
+INTENT TO SOLE SOURCE
+
+
+The proposed contract action is for supplies or services for which the Government intends to solicit and negotiate with only one source under
+authority of FAR 6.302.  Interested persons may identify their interest and capability to respond to the requirement or submit proposals.  A
+determination by the Government not to compete this proposed contract based upon responses to this notice is solely within the discretion of the
+government.  Information received will normally be considered solely for the purpose of determining whether to conduct a competitive
+procurement.  The Government intends to make award to Replicon Inc., 800, 910 – 7th Ave SW, Calgary Alberta T2P 3N8, Canada (650) 286-9200.
+
+
+ADDENDUM TO FAR 52.212-1
+
+INSTRUCTIONS TO OFFEROR:
+
+Contractor shall complete Attachment 1 – Section 508 GPAT and return with quote.
+
+
+|ITEM NO        |SUPPLIES/SERVICES              |QUANTITY             |UNIT            |UNIT PRICE                     |AMOUNT                                 |
+|0001           |                               |550                  |Each            |                               |                                       |
+|               |Replicon Support                                                                                      |                                       |
+|               |FFP                                                                                                   |                                       |
+|               |TimeBill - Replicon Hosted                                                                            |                                       |
+|               |Usage for 550 seats for 3 months                                                                      |                                       |
+|               |                                                                                                      |                                       |
+|               |FOB: Destination                                                                                      |                                       |
+|               |MILSTRIP: M0009414RC00005                                                                             |                                       |
+|               |PURCHASE REQUEST NUMBER: M0009414RC00005A                                                             |                                       |
+|                                                                                      |                               |                                       |
+|                                                                                                                      |                                       |
+|                                                                                                                                                               |
+|                                                                                      |NET AMT                        |                                       |
+|                                                                                                                                                               |
+|               |                                                                      |                               |                                       |
+
+
+
+
+
+
+
+
+
+
+INSPECTION AND ACCEPTANCE TERMS
+
+Supplies/services will be inspected/accepted at:
+
+|CLIN      |INSPECT AT                                  |INSPECT BY           |ACCEPT AT                                   |ACCEPT BY            |
+|0001      |Destination                                 |Government           |Destination                                 |Government           |
+
+
+
+
+
+DELIVERY INFORMATION
+
+|CLIN      |DELIVERY DATE                    |QUANTITY               |SHIP TO ADDRESS                                         |UIC           |
+|          |                                 |                       |                                                        |              |
+|0001      |POP 01-JAN-2014 TO               |N/A                    |M00094 TSO                                              |M00094        |
+|          |31-MAR-2014                      |                       |ROLLAND FOX                                             |              |
+|          |                                 |                       |135 N PENNSYLVANIA ST.                                  |              |
+|          |                                 |                       |SUITE 2215                                              |              |
+|          |                                 |                       |INDIANAPOLIS IN 46204                                   |              |
+|          |                                 |                       |317-200-3315                                            |              |
+|          |                                 |                       |FOB:  Destination                                       |              |
+
+
+
+
+CLAUSES INCORPORATED BY REFERENCE
+
+
+|52.204-7                |System for Award Management                                               |JUL 2013         |                       |
+|52.204-13               |System for Award Management Maintenance                                   |JUL 2013         |                       |
+|52.212-1                |Instructions to Offerors--Commercial Items                                |JUL 2013         |                       |
+|52.212-4                |Contract Terms and Conditions--Commercial Items                           |SEP 2013         |                       |
+|52.225-25               |Prohibition on Contracting with Entities Engaging in Certain Activities or|DEC 2012         |                       |
+|                        |Transactions Relating to Iran-- Representation and Certifications.        |                 |                       |
+|252.203-7000            |Requirements Relating to Compensation of Former DoD Officials             |SEP 2011         |                       |
+|252.203-7002            |Requirement to Inform Employees of Whistleblower Rights                   |SEP 2013         |                       |
+|252.204-7004 Alt A      |System for Award Management Alternate A                                   |MAY 2013         |                       |
+|252.204-7011            |Alternative Line Item Structure                                           |SEP 2011         |                       |
+|252.232-7003            |Electronic Submission of Payment Requests and Receiving Reports           |JUN 2012         |                       |
+|252.232-7010            |Levies on Contract Payments                                               |DEC 2006         |                       |
+|252.243-7001            |Pricing Of Contract Modifications                                         |DEC 1991         |                       |
+|252.244-7000            |Subcontracts for Commercial Items                                         |JUN 2013         |                       |
+|252.247-7023            |Transportation of Supplies by Sea                                         |JUN 2013         |                       |
+|252.247-7023 Alt III    |Transportation of Supplies by Sea (JUN 2013) Alternate III                |MAY 2002         |                       |
+
+
+
+
+CLAUSES INCORPORATED BY FULL TEXT
+
+
+52.212-3     OFFEROR REPRESENTATIONS AND CERTIFICATIONS--COMMERCIAL ITEMS (AUG 2013) ALTERNATE I (APR 2011)
+
+
+
+
+
+An offeror shall complete only paragraph (b) of this provision if the offeror has completed the annual representations and certifications
+electronically via http://www.acquisition.gov. If an offeror has not completed  the annual representations and certifications electronically at
+the System for Award Management (SAM) website, the offeror shall complete only paragraphs (b) through (i) of this provision.
+
+
+
+(a) Definitions. As used in this provision:
+
+
+
+"Emerging small business" means a small business concern whose size is no greater than 50 percent of the numerical size standard for the NAICS
+code designated.
+
+
+
+"Forced or indentured child labor" means all work or service-
+
+
+(1) Exacted from any person under the age of 18 under the menace of any penalty for its nonperformance and for which the worker does not offer
+himself voluntarily; or
+
+
+
+(2) Performed by any person under the age of 18 pursuant to a contract the enforcement of which can be accomplished by process or penalties.
+
+
+
+Inverted domestic corporation, as used in this section, means a foreign incorporated entity which is treated as an inverted domestic corporation
+under 6 U.S.C. 395(b), i.e., a corporation that used to be incorporated in the United States, or used to be a partnership in the United States,
+but now is incorporated in a foreign country, or is a subsidiary whose parent corporation is incorporated in a foreign country, that meets the
+criteria specified in 6 U.S.C. 395(b), applied in accordance with the rules and definitions of 6 U.S.C. 395(c). An inverted domestic corporation
+as herein defined does not meet the definition of an inverted domestic corporation as defined by the Internal Revenue Code at 26 U.S.C. 7874.
+
+
+
+“Manufactured end product” means any end product in Federal Supply Classes (FSC) 1000-9999, except—
+
+(1) FSC 5510, Lumber and Related Basic Wood Materials;
+
+
+
+(2) Federal Supply Group (FSG) 87, Agricultural Supplies;
+
+
+
+(3) FSG 88, Live Animals;
+
+
+
+(4) FSG 89, Food and Related Consumables;
+
+
+
+(5) FSC 9410, Crude Grades of Plant Materials;
+
+
+
+(6) FSC 9430, Miscellaneous Crude Animal Products, Inedible;
+
+
+
+(7) FSC 9440, Miscellaneous Crude Agricultural and Forestry Products;
+
+
+
+(8) FSC 9610, Ores;
+
+
+
+(9) FSC 9620, Minerals, Natural and Synthetic; and
+
+
+
+(10) FSC 9630, Additive Metal Materials.
+
+
+
+“Place of manufacture” means the place where an end product is assembled out of components, or otherwise made or processed from raw materials
+into the finished product that is to be provided to the Government. If a product is disassembled and reassembled, the place of reassembly is not
+the place of manufacture.
+
+
+
+Restricted business operations means business operations in Sudan that include power production activities, mineral extraction activities, oil-
+related activities, or the production of military equipment, as those terms are defined in the Sudan Accountability and Divestment Act of 2007
+(Pub. L. 110-174). Restricted business operations do not include business operations that the person (as that term is defined in Section 2 of
+the Sudan Accountability and Divestment Act of 2007) conducting the business can demonstrate--
+
+
+
+(1) Are conducted under contract directly and exclusively with the regional government of southern Sudan;
+
+
+
+(2) Are conducted pursuant to specific authorization from the Office of Foreign Assets Control in the Department of the Treasury, or are
+expressly exempted under Federal law from the requirement to be conducted under such authorization;
+
+
+
+(3) Consist of providing goods or services to marginalized populations of Sudan;
+
+
+
+(4) Consist of providing goods or services to an internationally recognized peacekeeping force or humanitarian organization;
+
+
+
+(5) Consist of providing goods or services that are used only to promote health or education; or
+
+
+
+(6) Have been voluntarily suspended.
+
+
+
+Sensitive technology--
+
+(1) Means hardware, software, telecommunications equipment, or any other technology that is to be used specifically--
+
+(i) To restrict the free flow of unbiased information in Iran; or
+
+(ii) To disrupt, monitor, or otherwise restrict speech of the people of Iran; and
+
+(2) Does not include information or informational materials the export of which the President does not have the authority to regulate or
+prohibit pursuant to section 203(b)(3) of the International Emergency Economic Powers Act (50 U.S.C. 1702(b)(3)).
+
+
+Service-disabled veteran-owned small business concern--
+
+
+
+(1) Means a small business concern--
+
+
+
+(i) Not less than 51 percent of which is owned by one or more service-disabled veterans or, in the case of any publicly owned business, not less
+than 51 percent of the stock of which is owned by one or more service-disabled veterans; and
+
+
+
+(ii) The management and daily business operations of which are controlled by one or more service-disabled veterans or, in the case of a service-
+disabled veteran with permanent and severe disability, the spouse or permanent caregiver of such veteran.
+
+
+
+(2) Service-disabled veteran means a veteran, as defined in 38 U.S.C. 101(2), with a disability that is service-connected, as defined in 38
+U.S.C. 101(16).
+
+
+
+"Small business concern" means a concern, including its affiliates, that is independently owned and operated, not dominant in the field of
+operation in which it is bidding on Government contracts, and qualified as a small business under the criteria in 13 CFR Part 121 and size
+standards in this solicitation.
+
+
+
+Subsidiary means an entity in which more than 50 percent of the entity is owned--
+
+
+
+(1) Directly by a parent corporation; or
+
+
+
+(2) Through another subsidiary of a parent corporation.
+
+
+
+Veteran-owned small business concern means a small business concern--
+
+
+
+(1) Not less than 51 percent of which is owned by one or more veterans (as defined at 38 U.S.C. 101(2)) or, in the case of any publicly owned
+business, not less than 51 percent of the stock of which is owned by one or more veterans; and
+
+
+
+(2) The management and daily business operations of which are controlled by one or more veterans.
+
+
+
+"Women-owned small business concern" means a small business concern--
+
+
+
+(1) That is at least 51 percent owned by one or more women or, in the case of any publicly owned business, at least 51 percent of its stock is
+owned by one or more women; or
+
+
+
+(2) Whose management and daily business operations are controlled by one or more women.
+
+
+
+"Women-owned business concern" means a concern which is at least 51 percent owned by one or more women; or in the case of any publicly owned
+business, at least 51 percent of the stock of which is owned by one or more women; and whose management and daily business operations are
+controlled by one or more women.
+
+
+
+(b) (1) Annual Representations and Certifications. Any changes provided by the offeror in paragraph (b)(2) of this provision do not
+automatically change the representations and certifications posted electronically on the SAM website.
+
+
+
+(2) The offeror has completed the annual representations and certifications electronically via the SAM website accessed through
+https://www.acquisition.gov. After reviewing the SAM database information, the offeror verifies by submission of this offer that the
+representations and certifications currently posted electronically at FAR 52.212-3, Offeror Representations and Certifications--Commercial
+Items, have been entered or updated in the last 12 months, are current, accurate, complete, and applicable to this solicitation (including the
+business size standard applicable to the NAICS code referenced for this solicitation), as of the date of this offer and are incorporated in this
+offer by reference (see FAR 4.1201), except for paragraphs ----------.
+
+
+
+(Offeror to identify the applicable paragraphs at (c) through (n) of this provision that the offeror has completed for the purposes of this
+solicitation only, if any.)
+
+
+
+These amended representation(s) and/or certification(s) are also incorporated in this offer and are current, accurate, and complete as of the
+date of this offer.
+
+
+
+Any changes provided by the offeror are applicable to this solicitation only, and do not result in an update to the representations and
+certifications posted on ORCA.]
+
+
+
+
+
+(c) Offerors must complete the following representations when the resulting contract will be performed in the United States or its outlying
+areas. Check all that apply.
+
+
+
+(1) Small business concern. The offeror represents as part of its offer that it (  ) is, (  ) is not a small business concern.
+
+
+
+(2) Veteran-owned small business concern. (Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of
+this provision.) The offeror represents as part of its offer that it (  ) is, (  ) is not a veteran-owned small business concern.
+
+
+
+(3) Service-disabled veteran-owned small business concern. (Complete only if the offeror represented itself as a veteran-owned small business
+concern in paragraph (c)(2) of this provision.) The offeror represents as part of its offer that it (  ) is, (  ) is not a service-disabled
+veteran-owned small business concern.
+
+
+
+(4) Small disadvantaged business concern. (Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of
+this provision.) The offeror represents, for general statistical purposes, that it (  ) is, (  )  is not a small disadvantaged business concern
+as defined in 13 CFR 124.1002.
+
+
+
+(5) Women-owned small business concern. (Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this
+provision.) The offeror represents that it (  ) is, (  )  is not a women-owned small business concern.
+
+
+
+Note to paragraphs (c)(8) and (9): Complete paragraphs (c)(8) and (c)(9) only if this solicitation is expected to exceed the simplified
+acquisition threshold.
+
+
+
+(6) WOSB concern eligible under the WOSB Program. [Complete only if the offeror represented itself as a women-owned small business concern in
+paragraph (c)(5) of this provision.] The offeror represents that--
+
+
+
+(i) It * is, * is not a WOSB concern eligible under the WOSB Program, has provided all the required documents to the WOSB Repository, and no
+change in circumstances or adverse decisions have been issued that affects its eligibility; and
+
+
+
+(ii) It [ballot] is, [ballot] is not a joint venture that complies with the requirements of 13 CFR part 127, and the
+
+representation in paragraph (c)(6)(i) of this provision is accurate for each WOSB concern eligible under the WOSB Program participating in the
+joint venture. [The offeror shall enter the name or names of the WOSB concern eligible under the WOSB Program and other small businesses that
+are participating in the joint venture: ----------.] Each WOSB concern eligible under the WOSB Program participating in the joint venture shall
+submit a separate signed copy of the WOSB representation.
+
+
+
+(7) Economically disadvantaged women-owned small business (EDWOSB) concern. [Complete only if the offeror represented itself as a WOSB concern
+eligible under the WOSB Program in (c)(6) of this provision.] The offeror represents that--
+
+
+
+(i) It [ballot] is, [ballot] is not an EDWOSB concern, has provided all the required documents to the WOSB Repository, and no change in
+circumstances or adverse decisions have been issued that affects its eligibility; and
+
+
+
+(ii) It [ballot] is, [ballot] is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation in paragraph
+(c)(7)(i) of this provision is accurate for each EDWOSB concern participating in the joint venture. [The offeror shall enter the name or names
+of the EDWOSB concern and other small businesses that are participating in the joint venture: ----------.] Each EDWOSB concern participating in
+the joint venture
+
+shall submit a separate signed copy of the EDWOSB representation.
+
+
+
+(8) Women-owned business concern (other than small business concern). (Complete only if the offeror is a women-owned business concern and did
+not represent itself as a small business concern in paragraph (c)(1) of this provision.) The offeror represents that it (  ) is, a women-owned
+business concern.
+
+
+
+(9) Tie bid priority for labor surplus area concerns. If this is an invitation for bid, small business offerors may identify the labor surplus
+areas in which costs to be incurred on account of manufacturing or production (by offeror or first-tier subcontractors) amount to more than 50
+percent of the contract price:
+
+
+
+_____________________________________________
+
+
+
+(10) Small Business Size for the Small Business Competitiveness Demonstration Program and for the Targeted Industry Categories under the Small
+Business Competitiveness Demonstration Program. (Complete only if the offeror has represented itself to be a small business concern under the
+size standards for this solicitation.)
+
+
+
+(i) (Complete only for solicitations indicated in an addendum as being set-aside for emerging small businesses in one of the designated industry
+groups (DIGs).) The offeror represents as part of its offer that it (  ) is, (  ) is not an emerging small business.
+
+
+
+(ii) (Complete only for solicitations indicated in an addendum as being for one of the targeted industry categories (TICs) or designated
+industry groups (DIGs).) Offeror represents as follows:
+
+
+
+(A) Offeror's number of employees for the past 12 months (check the Employees column if size standard stated in the solicitation is expressed in
+terms of number of employees); or
+
+
+
+(B) Offeror's average annual gross revenue for the last 3 fiscal years (check the Average Annual Gross Number of Revenues column if size
+standard stated in the solicitation is expressed in terms of annual receipts).
+
+
+
+(Check one of the following):
+
+
+
+Average Annual
+
+
+
+Number of Employees Gross Revenues
+
+
+
+___ 50 or fewer ___ $1 million or less
+
+
+
+___ 51 - 100 ___ $1,000,001 - $2 million
+
+
+
+___ 101 - 250 ___ $2,000,001 - $3.5 million
+
+
+
+___ 251 - 500 ___ $3,500,001 - $5 million
+
+
+
+___ 501 - 750 ___ $5,000,001 - $10 million
+
+
+
+___ 751 - 1,000 ___ $10,000,001 - $17 million
+
+
+
+___ Over 1,000 ___ Over $17 million
+
+
+
+(11) (Complete only if the solicitation contains the clause at FAR 52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged
+Business Concerns or FAR 52.219-25, Small Disadvantaged Business Participation Program-Disadvantaged Status and Reporting, and the offeror
+desires a benefit based on its disadvantaged status.)
+
+
+
+(i) General. The offeror represents that either--
+
+
+
+(A) It (  ) is, (  ) is not certified by the Small Business Administration as a small disadvantaged business concern and identified, on the date
+of this representation, as a certified small disadvantaged business concern in the SAM Dynamic Small Business Search Database maintained by the
+Small Business Administration, and that no material change in disadvantaged ownership and control has occurred since its certification, and,
+where the concern is owned by one or more individuals claiming disadvantaged status, the net worth of each individual upon whom the
+certification is based does not exceed $750,000 after taking into account the applicable exclusions set forth at 13 CFR 124.104(c)(2); or
+
+
+
+(B) It (  ) has, (  )( has not submitted a completed application to the Small Business Administration or a Private Certifier to be certified as
+a small disadvantaged business concern in accordance with 13 CFR 124, Subpart B, and a decision on that application is pending, and that no
+material change in disadvantaged ownership and control has occurred since its application was submitted.
+
+
+
+(ii) Joint Ventures under the Price Evaluation Adjustment for Small Disadvantaged Business Concerns. The offeror represents, as part of its
+offer, that it is a joint venture that complies with the requirements in 13 CFR 124.1002(f) and that the representation in paragraph (c)(9)(i)
+of this provision is accurate for the small disadvantaged business concern that is participating in the joint venture. (The offeror shall enter
+the name of the small disadvantaged business concern that is participating in the joint venture: ____________.)
+
+
+
+
+
+(12) Complete if the offeror has represented itself as disadvantaged in paragraph (c)(4) or (c)(10) of this provision.)
+
+
+
+(The offeror shall check the category in which its ownership falls):
+
+
+
+____Black American.
+
+
+
+____Hispanic American.
+
+
+
+____Native American (American Indians, Eskimos, Aleuts, or Native Hawaiians).
+
+
+
+____Asian-Pacific American (persons with origins from Burma, Thailand, Malaysia, Indonesia, Singapore, Brunei, Japan, China, Taiwan, Laos,
+Cambodia (Kampuchea), Vietnam, Korea, The Philippines, U.S. Trust Territory of the Pacific Islands (Republic of Palau), Republic of the Marshall
+Islands, Federated States of Micronesia, the Commonwealth of the Northern Mariana Islands, Guam, Samoa, Macao, Hong Kong, Fiji, Tonga, Kiribati,
+Tuvalu, or Nauru).
+
+
+
+____Subcontinent Asian (Asian-Indian) American (persons with origins from India, Pakistan, Bangladesh, Sri Lanka, Bhutan, the Maldives Islands,
+or Nepal).
+
+
+
+____Individual/concern, other than one of the preceding.
+
+
+
+(d) Certifications and representations required to implement provisions of Executive Order 11246--
+
+
+
+(1) Previous Contracts and Compliance. The offeror represents that--
+
+
+
+(i) It (  ) has, (  ) has not, participated in a previous contract or subcontract subject either to the Equal Opportunity clause of this
+solicitation, the and
+
+
+
+(ii) It (  ) has, (  ) has not, filed all required compliance reports.
+
+
+
+(2) Affirmative Action Compliance. The offeror represents that--
+
+
+
+(i) It (  ) has developed and has on file, (  ) has not developed and does not have on file, at each establishment, affirmative action programs
+required by rules and regulations of the Secretary of Labor (41 CFR Subparts 60-1 and 60-2), or
+
+
+
+(ii) It (  ) has not previously had contracts subject to the written affirmative action programs requirement of the rules and regulations of the
+Secretary of Labor.
+
+
+
+(e) Certification Regarding Payments to Influence Federal Transactions (31 U.S.C. 1352). (Applies only if the contract is expected to exceed
+$100,000.) By submission of its offer, the offeror certifies to the best of its knowledge and belief that no Federal appropriated funds have
+been paid or will be paid to any person for influencing or attempting to influence an officer or employee of any agency, a Member of Congress,
+an officer or employee of Congress or an employee of a Member of Congress on his or her behalf in connection with the award of any resultant
+contract. If any registrants under the Lobbying Disclosure Act of 1995 have made a lobbying contact on behalf of the offeror with respect to
+this contract, the offeror shall complete and submit, with its offer, OMB Standard Form LLL, Disclosure of Lobbying Activities, to provide the
+name of the registrants. The offeror need not report regularly employed officers or employees of the offeror to whom payments of reasonable
+compensation were made.
+
+
+
+(f) Buy American Act--Balance of Payments Program Certificate. (Applies only if the clause at Federal Acquisition Regulation (FAR) 52.225-1, Buy
+American Act--Balance of Payments Program--Supplies, is included in this solicitation.)
+
+
+
+(1) The offeror certifies that each end product, except those listed in paragraph (f)(2) of this provision, is a domestic end product and that
+for other than COTS items, the offeror has considered components of unknown origin to have been mined, produced, or manufactured outside the
+United States. The offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as
+domestic end products, i.e., an end product that is not a COTS item and does not meet the component test in paragraph (2) of the definition of
+“domestic end product.” The terms “commercially available off-the-shelf (COTS) item,” “component,” “domestic end product,” “end product,”
+“foreign end product,” and “United States” are defined in the clause of this solicitation entitled “Buy American Act--Supplies.”
+
+
+
+(2) Foreign End Products:
+
+
+
+|LINE ITEM NO.                                                 |COUNTRY OF ORIGIN                                               |
+|                                                              |                                                                |
+|                                                              |                                                                |
+|                                                              |                                                                |
+
+
+(List as necessary)
+
+
+
+(3) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25.
+
+
+
+(g)(1) Buy American Act -- Free Trade Agreements -- Israeli Trade Act Certificate. (Applies only if the clause at FAR 52.225-3, Buy American Act
+-- Free Trade Agreements -- Israeli Trade Act, is included in this solicitation.)
+
+
+
+The offeror certifies that each end product, except those listed in paragraph (g)(1)(ii) or (g)(1)(iii) of this provision, is a domestic end
+product and that for other than COTS items, the offeror has considered components of unknown origin to have been mined, produced, or
+manufactured outside the United States. The terms “Bahrainian, Moroccan, Omani, Panamanian, or Peruvian end product,” “commercially available
+off-the-shelf (COTS) item,” “component,” “domestic end product,” “end product,” “foreign end product,” “Free Trade Agreement country,” “Free
+Trade Agreement country end product,” “Israeli end product,” and “United States” are defined in the clause of this solicitation entitled “Buy
+American Act-Free Trade Agreements-Israeli Trade Act.”
+
+
+
+(ii) ) The offeror certifies that the following supplies are Free Trade Agreement country end products (other than Bahrainian, Moroccan, Omani,
+Panamanian, or Peruvian end products) or Israeli end products as defined in the clause of this solicitation entitled ``Buy American Act--Free
+Trade Agreements--Israeli Trade Act'':
+
+
+
+Free Trade Agreement Country End Products (Other than Bahrainian, Moroccan, Omani, Panamanian, or Peruvian End Products) or Israeli End
+Products:
+
+
+
+|LINE ITEM NO.                                                 |COUNTRY OF ORIGIN                                               |
+|                                                              |                                                                |
+|                                                              |                                                                |
+|                                                              |                                                                |
+
+
+[List as necessary]
+
+
+
+(iii) The offeror shall list those supplies that are foreign end products (other than those listed in paragraph (g)(1)(ii) or this provision) as
+defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli Trade Act.” The offeror shall list as other
+foreign end products those end products manufactured in the United States that do not qualify as domestic end products, i.e., an end product
+that is not a COTS item and does not meet the component test in paragraph (2) of the definition of “domestic end product.”
+
+
+
+Other Foreign End Products:
+
+|LINE ITEM NO.                                                 |COUNTRY OF ORIGIN                                               |
+|                                                              |                                                                |
+|                                                              |                                                                |
+|                                                              |                                                                |
+
+
+[List as necessary]
+
+
+(iv) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25.
+
+
+
+(2) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate, Alternate I (Jan 2004). If Alternate I to the clause at FAR 52.225-3
+is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision:
+
+
+
+(g)(1)(ii) The offeror certifies that the following supplies are Canadian end products as defined in the clause of this solicitation entitled
+“Buy American Act—Free Trade Agreements—Israeli Trade Act”:
+
+
+
+Canadian End Products:
+
+Line Item No.:
+
+___________________________________________
+
+[List as necessary]
+
+
+(3) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate, Alternate II (Jan 2004). If Alternate II to the clause at FAR 52.225-3
+is included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision:
+
+
+
+(g)(1)(ii) The offeror certifies that the following supplies are Canadian end products or Israeli end products as defined in the clause of this
+solicitation entitled ``Buy American Act--Free Trade Agreements--Israeli Trade Act'':
+
+
+
+Canadian or Israeli End Products:
+
+|Line Item No.:                                                  |Country of Origin:                                                |
+|                                                                |                                                                  |
+|                                                                |                                                                  |
+|                                                                |                                                                  |
+
+
+[List as necessary]
+
+
+
+(4) Buy American Act--Free Trade Agreements--Israeli Trade Act Certificate, Alternate III. If Alternate III to the clause at 52.225-3 is
+included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision:
+
+
+
+(g)(1)(ii) The offeror certifies that the following supplies are Free Trade Agreement country end products (other than Bahrainian, Korean,
+Moroccan, Omani, Panamanian, or Peruvian end products) or Israeli end products as defined in the clause of this solicitation entitled ``Buy
+American Act--Free Trade Agreements--Israeli Trade Act'':
+
+
+
+Free Trade Agreement Country End Products (Other than Bahrainian, Korean, Moroccan, Omani, Panamanian, or Peruvian End Products) or Israeli End
+Products:
+
+
+
+|Line Item No.:                                                    |Country of Origin:                                                |
+|                                                                  |                                                                  |
+|                                                                  |                                                                  |
+|                                                                  |                                                                  |
+
+
+[List as necessary]
+
+
+(5) Trade Agreements Certificate. (Applies only if the clause at FAR 52.225-5, Trade Agreements, is included in this solicitation.)
+
+
+
+(i) The offeror certifies that each end product, except those listed in paragraph (g)(5)(ii) of this provision, is a U.S.-made or designated
+country end product as defined in the clause of this solicitation entitled “Trade Agreements.”
+
+(ii) The offeror shall list as other end products those end products that are not U.S.-made or designated country end products.
+
+
+
+Other End Products
+
+|Line Item No.:                                                    |Country of Origin:                                                |
+|                                                                  |                                                                  |
+|                                                                  |                                                                  |
+|                                                                  |                                                                  |
+
+
+[List as necessary]
+
+
+(iii) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25. For line items covered by the WTO GPA,
+the Government will evaluate offers of U.S.-made or designated country end products without regard to the restrictions of the Buy American Act.
+The Government will consider for award only offers of U.S.-made or designated country end products unless the Contracting Officer determines
+that there are no offers for such products or that the offers for such products are insufficient to fulfill the requirements of the
+solicitation.
+
+
+
+(h) Certification Regarding Responsibility Matters (Executive Order 12689). (Applies only if the contract value is expected to exceed the
+simplified acquisition threshold.) The offeror certifies, to the best of its knowledge and belief, that the offeror and/or any of its principals-
+-
+
+
+
+(1) (  ) Are, (  ) are not presently debarred, suspended, proposed for debarment, or declared ineligible for the award of contracts by any
+Federal agency; and
+
+
+
+(2) (  ) Have, (  ) have not, within a three-year period preceding this offer, been convicted of or had a civil judgment rendered against them
+for: Commission of fraud or a criminal offense in connection with obtaining, attempting to obtain, or performing a Federal, state or local
+government contract or subcontract; violation of Federal or state antitrust statutes relating to the submission of offers; or Commission of
+embezzlement, theft, forgery, bribery, falsification or destruction of records, making false statements, tax evasion, violating Federal criminal
+tax laws, or receiving stolen property; and
+
+
+
+(3) (  ) Are, (  ) are not presently indicted for, or otherwise criminally or civilly charged by a Government entity with, commission of any of
+these offenses enumerated in paragraph (h)(2) of this clause; and
+
+(4) [ballot] Have, [ballot] have not, within a three-year period preceding this offer, been notified of any delinquent Federal taxes in an
+amount that exceeds $3,000 for which the liability remains unsatisfied.
+
+
+
+(i) Taxes are considered delinquent if both of the following criteria apply:
+
+
+
+(A) The tax liability is finally determined. The liability is finally determined if it has been assessed. A liability is not finally determined
+if there is a pending administrative or judicial challenge. In the case of a judicial challenge to the liability, the liability is not finally
+determined until all judicial appeal rights have been exhausted.
+
+
+
+(B) The taxpayer is delinquent in making payment. A taxpayer is delinquent if the taxpayer has failed to pay the tax liability when full payment
+was due and required. A taxpayer is not delinquent in cases where enforced collection action is precluded.
+
+
+
+(ii) Examples.
+
+
+
+(A) The taxpayer has received a statutory notice of deficiency, under I.R.C. Sec.  6212, which entitles the taxpayer to seek Tax Court review of
+a proposed tax deficiency. This is not a delinquent tax because it is not a final tax liability. Should the taxpayer seek Tax Court review, this
+will not be a final tax liability until the taxpayer has exercised all judicial appeal rights.
+
+
+
+(B) The IRS has filed a notice of Federal tax lien with respect to an assessed tax liability, and the taxpayer has been issued a notice under
+I.R.C. Sec.  6320 entitling the taxpayer to request a hearing with the IRS Office of Appeals contesting the lien filing, and to further appeal
+to the Tax Court if the IRS determines to sustain the lien filing. In the course of the hearing, the taxpayer is entitled to contest the
+underlying tax liability because the taxpayer has had no prior opportunity to contest the liability. This is not a delinquent tax because it is
+not a final tax liability. Should the taxpayer seek tax court review, this will not be a final tax liability until the taxpayer has exercised
+all judicial appeal rights.
+
+
+
+(C) The taxpayer has entered into an installment agreement pursuant to I.R.C. Sec.  6159. The taxpayer is making timely payments and is in full
+compliance with the agreement terms. The taxpayer is not delinquent because the taxpayer is not currently required to make full payment.
+
+
+
+(D) The taxpayer has filed for bankruptcy protection. The taxpayer is not delinquent because enforced collection action is stayed under 11
+U.S.C. 362 (the Bankruptcy Code).
+
+
+
+(i) Certification Regarding Knowledge of Child Labor for Listed End Products (Executive Order 13126).  (The Contracting Officer must list in
+paragraph (i)(1) any end products being acquired under this solicitation that are included in the List of Products Requiring Contractor
+Certification as to Forced or Indentured Child Labor, unless excluded at 22.1503(b).)
+
+
+
+(1) Listed End Product
+
+| Listed End Product                                |· Listed Countries of Origin:                       |
+|·                                                  |·                                                   |
+|·                                                  |·                                                   |
+|·                                                  |·                                                   |
+
+
+(2) Certification.  (If the Contracting Officer has identified end products and countries of origin in paragraph (i)(1) of this provision, then
+the offeror must certify to either (i)(2)(i) or (i)(2)(ii) by checking the appropriate block.)
+
+
+
+(  )(i) The offeror will not supply any end product listed in paragraph (i)(1) of this provision that was mined, produced, or manufactured in
+the corresponding country as listed for that product.
+
+
+
+(  ) (ii) The offeror may supply an end product listed in paragraph (i)(1) of this provision that was mined, produced, or manufactured in the
+corresponding country as listed for that product. The offeror certifies that is has made a good faith effort to determine whether forced or
+indentured child labor was used to mine, produce, or manufacture any such end product furnished under this contract. On the basis of those
+efforts, the offeror certifies that it is not aware of any such use of child labor.    
+
+
+
+(j) Place of manufacture. (Does not apply unless the solicitation is predominantly for the acquisition of manufactured end products.) For
+statistical purposes only, the offeror shall indicate whether the place of manufacture of the end products it expects to provide in response to
+this solicitation is predominantly—
+
+
+
+(1) (  )In the United States (Check this box if the total anticipated price of offered end products manufactured in the United States exceeds
+the total anticipated price of offered end products manufactured outside the United States); or
+
+
+
+(2) (  ) Outside the United States.
+
+
+
+(k) Certificates regarding exemptions from the application of the Service Contract Act. (Certification by the offeror as to its compliance with
+respect to the contract also constitutes its certification as to compliance by its subcontractor if it subcontracts out the exempt services.)
+ (The contracting officer is to check a box to indicate if paragraph (k)(1) or (k)(2) applies.)
+
+
+
+(  ) (1) Maintenance, calibration, or repair of certain equipment as described in FAR 22.1003-4(c)(1). The offeror (  ) does (  ) does not
+certify that--
+
+
+
+(i) The items of equipment to be serviced under this contract are used regularly for other than Governmental purposes and are sold or traded by
+the offeror in substantial quantities to the general public in the course of normal business operations;
+
+
+
+(ii) The services will be furnished at prices which are, or are based on, established catalog or market prices (see FAR 22.1003-4(c)(2)(ii)) for
+the maintenance, calibration, or repair of such equipment; and
+
+
+
+(iii) The compensation (wage and fringe benefits) plan for all service employees performing work under the contract will be the same as that
+used for these employees and equivalent employees servicing the same equipment of commercial customers.
+
+
+
+(  ) (2) Certain services as described in FAR 22.1003-4(d)(1). The offeror (  ) does (  ) does not certify that--
+
+
+
+(i) The services under the contract are offered and sold regularly to non-Governmental customers, and are provided by the offeror (or
+subcontractor in the case of an exempt subcontract) to the general public in substantial quantities in the course of normal business operations;
+
+
+
+(ii) The contract services will be furnished at prices that are, or are based on, established catalog or market prices (see FAR 22.1003-
+4(d)(2)(iii));
+
+
+
+(iii) Each service employee who will perform the services under the contract will spend only a small portion of his or her time (a monthly
+average of less than 20 percent of the available hours on an annualized basis, or less than 20 percent of available hours during the contract
+period if the contract period is less than a month) servicing the Government contract; and
+
+
+
+(iv) The compensation (wage and fringe benefits) plan for all service employees performing work under the contract is the same as that used for
+these employees and equivalent employees servicing commercial customers.
+
+
+
+(3) If paragraph (k)(1) or (k)(2) of this clause applies--
+
+
+
+(i) If the offeror does not certify to the conditions in paragraph (k)(1) or (k)(2) and the Contracting Officer did not attach a Service
+Contract Act wage determination to the solicitation, the offeror shall notify the Contracting Officer as soon as possible; and
+
+
+
+(ii) The Contracting Officer may not make an award to the offeror if the offeror fails to execute the certification in paragraph (k)(1) or
+(k)(2) of this clause or to contact the Contracting Officer as required in paragraph (k)(3)(i) of this clause.    
+
+
+
+(l) Taxpayer Identification Number (TIN) (26 U.S.C. 6109, 31 U.S.C. 7701). (Not applicable if the offeror is required to provide this
+information to the SAM database to be eligible for award.)
+
+
+
+(1) All offerors must submit the information required in paragraphs (l)(3) through (l)(5) of this provision to comply with debt collection
+requirements of 31 U.S.C. 7701(c) and 3325(d), reporting requirements of 26 U.S.C. 6041, 6041A, and 6050M, and implementing regulations issued
+by the Internal Revenue Service (IRS).
+
+
+
+(2) The TIN may be used by the Government to collect and report on any delinquent amounts arising out of the offeror's relationship with the
+Government (31 U.S.C. 7701(c)(3)). If the resulting contract is subject to the payment reporting requirements described in FAR 4.904, the TIN
+provided hereunder may be matched with IRS records to verify the accuracy of the offeror's TIN.
+
+
+
+(3) Taxpayer Identification Number (TIN).
+
+
+
+(  ) TIN: --------------------.
+
+
+
+(  ) TIN has been applied for.
+
+
+
+(  ) TIN is not required because:
+
+
+
+(  ) Offeror is a nonresident alien, foreign corporation, or foreign partnership that does not have income effectively connected with the
+conduct of a trade or business in the United States and does not have an office or place of business or a fiscal paying agent in the United
+States;
+
+
+
+(  ) Offeror is an agency or instrumentality of a foreign government;
+
+
+
+(  ) Offeror is an agency or instrumentality of the Federal Government.
+
+
+
+(4) Type of organization.
+
+
+
+(  ) Sole proprietorship;
+
+
+
+(  ) Partnership;
+
+
+
+(  ) Corporate entity (not tax-exempt);
+
+
+
+(  ) Corporate entity (tax-exempt);
+
+
+
+(  ) Government entity (Federal, State, or local);
+
+
+
+(  ) Foreign government;
+
+
+
+(  ) International organization per 26 CFR 1.6049-4;
+
+
+
+(  ) Other ----------.
+
+
+
+(5) Common parent.
+
+
+
+(  ) Offeror is not owned or controlled by a common parent;
+
+
+
+(  ) Name and TIN of common parent:
+
+
+
+Name --------------------.
+
+TIN --------------------.
+
+
+
+(m) Restricted business operations in Sudan. By submission of its offer, the offeror certifies that the offeror does not conduct any restricted
+business operations in Sudan.
+
+
+
+(n) Prohibition on Contracting with Inverted Domestic Corporations—
+
+
+
+(1) Relation to Internal Revenue Code. An inverted domestic corporation as herein defined does not meet the definition of an inverted domestic
+corporation as defined by the Internal Revenue Code 25 U.S.C. 7874.
+
+
+
+(2) Representation. By submission of its offer, the offeror represents that--
+
+
+
+(i) It is not an inverted domestic corporation; and
+
+
+
+(ii) It is not a subsidiary of an inverted domestic corporation.
+
+
+(o) The offeror shall email questions concerning sensitive technology to the Department of State at CISADA106@state.gov.
+
+(2) Representation and certifications. Unless a waiver is granted or an exception applies as provided in paragraph (o)(3) of this provision, by
+submission of its offer, the offeror--
+
+
+(i) Represents, to the best of its knowledge and belief, that the offeror does not export any sensitive technology to the government of Iran or
+any entities or individuals owned or controlled by, or acting on behalf or at the direction of, the government of Iran;
+
+
+(ii) Certifies that the offeror, or any person owned or controlled by the offeror, does not engage in any activities for which sanctions may be
+imposed under section 5 of the Iran Sanctions Act; and
+
+
+
+(iii) Certifies that the offeror, and any person owned or controlled by the offeror, does not knowingly engage in any transaction that exceeds
+$3,000 with Iran's Revolutionary Guard Corps or any of its officials, agents, or affiliates, the property and interests in property of which are
+blocked pursuant to the
+
+International Emergency Economic Powers Act (50 U.S.C. 1701 et seq.) (see OFAC's Specially Designated Nationals and Blocked Persons List at
+http://www.treasury.gov/ofac/downloads/t11sdn.pdf).
+
+
+
+(3) The representation and certification requirements of paragraph (o)(2) of this provision do not apply if—
+
+
+
+(i) This solicitation includes a trade agreements certification (e.g., 52.212-3(g) or a comparable agency provision); and
+
+
+
+(ii) The offeror has certified that all the offered products to be supplied are designated country end products.
+
+
+
+(End of provision)
+
+
+
+
+52.212-5     CONTRACT TERMS AND CONDITIONS REQUIRED TO IMPLEMENT STATUTES OR EXECUTIVE ORDERS--COMMERCIAL ITEMS (SEP 2013)
+
+
+
+(a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract by
+reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items:
+
+
+
+(1) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)).
+
+
+
+ ___    Alternate I (Aug 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+
+
+
+(2) 52.233-3, Protest After Award (AUG 1996) (31 U.S.C. 3553).
+
+
+
+(3) 52.233-4, Applicable Law for Breach of Contract Claim (OCT 2004) (Pub. L. 108-77, 108-78).
+
+
+
+(b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the Contracting Officer has indicated as being incorporated in
+this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items: (Contracting
+Officer check as appropriate.)
+
+
+
+ ___   (1) 52.203-6, Restrictions on Subcontractor Sales to the Government (Sept 2006), with Alternate I (Oct 1995) (41 U.S.C. 253g and 10
+U.S.C. 2402).
+
+
+
+
+
+____ (2) 52.203-13, Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note)).
+
+
+
+____  (3) 52.203-15, Whistleblower Protections under the American Recovery and Reinvestment Act of 2009 (June 2010) (Section 1553 of Pub. L. 111-
+5). (Applies to contracts funded by the American Recovery and Reinvestment Act of 2009.)
+
+
+
+___ (4) 52.204-10, Reporting Executive Compensation and First-Tier Subcontract Awards (July 2013) (Pub. L. 109-282) (31 U.S.C. 6101 note).
+
+
+
+___  (5) 52.204-11, American Recovery and Reinvestment Act—Reporting Requirements (Jul 2010) (Pub. L. 111-5).
+
+
+
+___  (6) 52.209-6, Protecting the Government's Interest When Subcontracting with Contractors Debarred, Suspended, or Proposed for Debarment.
+(Aug, 2013) (31 U.S.C. 6101 note).
+
+____ (7) 52.209-9, Updates of Publicly Available Information Regarding Responsibility Matters (July 2013) (41 U.S.C. 2313).
+
+
+____ (8) 52.209-10, Prohibition on Contracting with Inverted Domestic Corporations (MAY 2012) (section 738 of Division C of Pub. L. 112-74,
+section 740 of Division C of Pub. L. 111-117, section 743 of Division D of Pub. L. 111-8, and section 745 of Division D of Pub. L. 110-161).
+
+
+
+____ (9) 52.219-3, Notice of HUBZone Set-Aside or Sole-Source Award (NOV 2011) (15 U.S.C. 657a).
+
+
+
+____ (10) 52.219-4, Notice of Price Evaluation Preference for HUBZone Small Business Concerns (Jan 2011) (if the offeror elects to waive the
+preference, it shall so indicate in its offer) (15 U.S.C. 657a).
+
+
+
+
+
+____ (11) [Reserved]
+
+
+
+
+
+____ (12)(i)  52.219-6, Notice of Total Small Business Set-Aside (NOV 2011) (15 U.S.C. 644).
+
+
+
+
+
+____ (ii) Alternate I (NOV 2011).
+
+
+
+
+
+____ (iii) Alternate II (NOV 2011).
+
+
+
+____ (13)(i)  52.219-7, Notice of Partial Small Business Set-Aside (June 2003) (15 U.S.C. 644).
+
+
+
+
+
+____ (ii) Alternate I (Oct 1995) of 52.219-7.
+
+
+
+
+
+____ (iii) Alternate II (Mar 2004) of 52.219-7.
+
+
+
+
+
+____ (14) 52.219-8, Utilization of Small Business Concerns (July 2013) (15 U.S.C. 637(d)(2) and (3)).
+
+
+
+
+
+____ (15)(i)  52.219-9, Small Business Subcontracting Plan (July 2013) (15 U.S.C. 637(d)(4)).
+
+
+
+
+
+____ (ii) Alternate I (Oct 2001) of 52.219-9.
+
+
+
+
+
+____ (iii) Alternate II (Oct 2001) of 52.219-9.
+
+
+
+
+
+____ (iv) Alternate III (Jul 2010) of 52.219-9.
+
+
+
+____ (16) 52.219-13, Notice of Set-Aside of Orders (NOV 2011) (15 U.S.C. 644(r)).
+
+
+
+____ (17) 52.219-14, Limitations on Subcontracting (NOV 2011) (15 U.S.C. 637(a)(14)).
+
+
+
+____ (18) 52.219-16, Liquidated Damages—Subcon-tracting Plan (Jan 1999) (15 U.S.C. 637(d)(4)(F)(i)).
+
+
+
+____ (19)(i)  52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns (Oct 2008) (10 U.S.C. 2323) (if the
+offeror elects to waive the adjustment, it shall so indicate in its offer).
+
+
+
+____ (ii) Alternate I (June 2003) of 52.219-23.
+
+
+
+____ (20) 52.219-25, Small Disadvantaged Business Participation Program—Disadvantaged Status and Reporting (July 2013) (Pub. L. 103-355, section
+7102, and 10 U.S.C. 2323).
+
+
+
+
+
+____ (21) 52.219-26, Small Disadvantaged Business Participation Program— Incentive Subcontracting (Oct 2000) (Pub. L. 103-355, section 7102, and
+10 U.S.C. 2323).
+
+
+
+
+
+____ (22) 52.219-27, Notice of Service-Disabled Veteran-Owned Small Business Set-Aside (NOV 2011) (15 U.S.C. 657f).
+
+
+
+
+
+__X__ (23)  52.219-28, Post Award Small Business Program Rerepresentation (July 2013) (15 U.S.C. 632(a)(2)).
+
+
+
+____ (24) 52.219-29, Notice of Set-Aside for Economically Disadvantaged Women-Owned Small Business (EDWOSB) Concerns (July 2013) (15 U.S.C.
+637(m)).
+
+
+
+____ (25) 52.219-30, Notice of Set-Aside for Women-Owned Small Business (WOSB) Concerns Eligible Under the WOSB Program (July 2013) (15 U.S.C.
+637(m)).
+
+
+
+__X__ (26) 52.222-3, Convict Labor (June 2003) (E.O. 11755).
+
+
+
+__X__ (27) 52.222-19, Child Labor—Cooperation with Authorities and Remedies (MAR 2012) (E.O. 3126).
+
+
+
+__X__ (28) 52.222-21, Prohibition of Segregated Facilities (Feb 1999).
+
+
+
+__X__ (29) 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246).
+
+
+
+____ (30) 52.222-35, Equal Opportunity for Veterans (Sep 2010)(38 U.S.C. 4212).
+
+
+__X__ (31) 52.222-36, Affirmative Action for Workers with Disabilities (Oct 2010) (29 U.S.C. 793).
+
+
+
+____ (32) 52.222-37, Employment Reports on Veterans (Sep 2010) (38 U.S.C. 4212).
+
+
+
+____ (33) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496).
+
+
+
+____ (34) 52.222-54, Employment Eligibility Verification (Jul 2012). (Executive Order 12989). (Not applicable to the acquisition of commercially
+available off-the-shelf items or certain other types of commercial items as prescribed in 22.1803.)
+
+
+
+____ (35)(i)  52.223-9, Estimate of Percentage of Recovered Material Content for EPA–Designated Items (May 2008) (42 U.S.C. 6962(c)(3)(A)(ii)).
+(Not applicable to the acquisition of commercially available off-the-shelf items.)
+
+
+
+
+
+____ (ii) Alternate I (May 2008) of 52.223-9 (42 U.S.C. 6962(i)(2)(C)). (Not applicable to the acquisition of commercially available off-the-
+shelf items.)
+
+
+
+____ (36) 52.223-15, Energy Efficiency in Energy-Consuming Products (Dec 2007) (42 U.S.C. 8259b).
+
+
+
+____ (37)(i)  52.223-16, IEEE 1680 Standard for the Environmental Assessment of Personal Computer Products (Dec 2007) (E.O. 13423).
+
+
+
+____ (ii) Alternate I (Dec 2007) of 52.223-16.
+
+
+
+__X__ (38) 52.223-18, Encouraging Contractor Policies to Ban Text Messaging While Driving (Aug 2011) (E.O. 13513).
+
+
+
+____ (39) 52.225-1, Buy American Act—Supplies (Feb 2009) (41 U.S.C. 10a-10d).
+
+
+
+____(40)(i) 52.225-3, Buy American Act--Free Trade Agreements--Israeli Trade Act (NOV 2012) (41 U.S.C. chapter 83, 19 U.S.C. 3301 note, 19
+U.S.C. 2112 note, 19 U.S.C. 3805 note, 19 U.S.C. 4001 note, Pub. L. 103-182, 108-77, 108-78, 108-286, 108-302, 109-53, 109-169, 109-283, 110-
+138, 112-41, 112-42, and 112-43).
+
+ (ii) Alternate I (MAR 2012) of 52.225-3.
+
+ (iii) Alternate II (MAR 2012) of 52.225-3.
+
+ (iv) Alternate III (NOV 2012) of 52.225-3.
+
+____ (41) 52.225-5, Trade Agreements (Sep 2013) (19 U.S.C. 2501, et seq., 19 U.S.C. 3301 note).
+
+
+__X__ (42) 52.225-13, Restrictions on Certain Foreign Purchases (June 2008) (E.O.’s, proclamations, and statutes administered by the Office of
+Foreign Assets Control of the Department of the Treasury).
+
+
+
+____ (43) 52.225-26, Contractors Performing Private Security Functions Outside the United States (Jul 2013) (Section 862, as amended, of the
+National Defense Authorization Act for Fiscal Year 2008; 10 U.S.C. 2302 Note).
+
+
+
+____ (44) 52.226-4, Notice of Disaster or Emergency Area Set-Aside (Nov 2007) (42 U.S.C. 5150
+
+
+
+____ (45) 52.226-5, Restrictions on Subcontracting Outside Disaster or Emergency Area (Nov 2007) (42 U.S.C. 5150).
+
+
+
+____ (46) 52.232-29, Terms for Financing of Purchases of Commercial Items (Feb 2002) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+
+
+
+____ (47) 52.232-30, Installment Payments for Commercial Items (Oct 1995) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+
+
+
+__X__ (48) 52.232-33, Payment by Electronic Funds Transfer—System for Award Management (July 2013) (31 U.S.C. 3332).
+
+
+
+____ (49) 52.232-34, Payment by Electronic Funds Transfer—Other than System for Award Management (July 2013) (31 U.S.C. 3332).
+
+
+
+____ (50) 52.232-36, Payment by Third Party (July 2013) (31 U.S.C. 3332).
+
+
+
+____  (51) 52.239-1, Privacy or Security Safeguards (Aug 1996) (5 U.S.C. 552a).
+
+
+
+____ (52)(i)  52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) (46 U.S.C. Appx. 1241(b) and 10 U.S.C. 2631).
+
+
+
+____ (ii) Alternate I (Apr 2003) of 52.247-64.
+
+
+
+(c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer has
+indicated as being incorporated in this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of
+commercial items: (Contracting Officer check as appropriate.)
+
+
+
+_____ (1) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.).
+
+
+
+
+
+_____ (2) 52.222-42, Statement of Equivalent Rates for Federal Hires (May 1989) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+
+
+
+
+
+_____ (3) 52.222-43, Fair Labor Standards Act and Service Contract Act—Price Adjustment (Multiple Year and Option Contracts) (Sep 2009) (29
+U.S.C. 206 and 41 U.S.C. 351, et seq.).
+
+
+
+_____ (4) 52.222-44, Fair Labor Standards Act and Service Contract Act—Price Adjustment (Sep 2009) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+
+
+
+_____ (5) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain
+Equipment—Requirements (Nov 2007) (41 351, et seq.).
+
+
+
+_____ (6) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services—Requirements (Feb 2009) (41 U.S.C.
+351, et seq.).
+
+
+
+_____ (7) 52.222-17, Nondisplacement of Qualified Workers (JAN 2013) (E.O.13495).
+
+
+
+_____ (8) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations (Mar 2009) (Pub. L. 110-247).
+
+
+
+_____ (9) 52.237-11, Accepting and Dispensing of $1 Coin (Sept 2008) (31 U.S.C. 5112(p)(1)).
+
+
+
+(d) Comptroller General Examination of Record. The Contractor shall comply with the provisions of this paragraph (d) if this contract was
+awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at 52.215-2, Audit
+and Records--Negotiation.
+
+
+
+(1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right to
+examine any of the Contractor's directly pertinent records involving transactions related to this contract.
+
+
+
+(2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination,
+audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR Subpart 4.7, Contractor
+Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records relating to the
+work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to appeals under the
+disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made available until such
+appeals, litigation, or claims are finally resolved.
+
+
+
+(3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and
+regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the ordinary
+course of business or pursuant to a provision of law.
+
+
+
+(e) (1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c), and (d) of this clause, the Contractor is not required to
+flow down any FAR clause, other than those in this paragraph (e)(1)in a subcontract for commercial items. Unless otherwise indicated below, the
+extent of the flow down shall be as required by the clause—
+
+
+
+(i) 52.203-13, Contractor Code of Business Ethics and Conduct (APR 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note).
+
+
+
+(ii) 52.219-8, Utilization of Small Business Concerns (Jul 2013) (15 U.S.C. 637(d)(2) and (3)), in all subcontracts that offer further
+subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $650,000 ($1.5 million for
+construction of any public facility), the subcontractor must include 52.219-8 in lower tier subcontracts that offer subcontracting
+opportunities.
+
+
+
+(iii) 52.222-17, Nondisplacement of Qualified Workers (JAN 2013) (E.O. 13495). Flow down required in accordance with paragraph (l) of FAR clause
+52.222-17.
+
+
+
+(iv) 52.222-26, Equal Opportunity (MAR 2007) (E.O. 11246).
+
+
+
+(v) 52.222-35, Equal Opportunity for Veterans (SEP 2010) (38 U.S.C. 4212).
+
+
+(vi) 52.222-36, Affirmative Action for Workers with Disabilities (OCT 1998) (29 U.S.C. 793).
+
+
+
+(vii) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (DEC 2010) (E.O. 13496). Flow down required in
+accordance with paragraph (f) of FAR clause 52.222-40.
+
+
+
+(viii) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.).
+
+
+
+(ix) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)).
+
+
+
+Alternate I (AUG 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+
+
+
+(x) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain Equipment--
+Requirements (Nov 2007) (41 U.S.C. 351, et seq.).
+
+
+
+(xi) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services--Requirements (FEB 2009) (41 U.S.C.
+351, et seq.).
+
+
+
+(xii) 52.222-54, Employment Eligibility Verification (JUL 2012).
+
+
+
+(xiii) 52.225-26, Contractors Performing Private Security Functions Outside the United States (Jul 2013) (Section 862, as amended, of the
+National Defense Authorization Act for Fiscal Year 2008; 10 U.S.C. 2302 Note).
+
+
+
+(xiv) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations. (MAR 2009) (Pub. L. 110-247). Flow down required in accordance with
+paragraph (e) of FAR clause 52.226-6.
+
+
+
+(xv) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (FEB 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C. 2631). Flow down
+required in accordance with paragraph (d) of FAR clause 52.247-64.
+
+
+
+(2) While not required, the contractor May include in its subcontracts for commercial items a minimal number of additional clauses necessary to
+satisfy its contractual obligations.
+
+
+
+(End of clause)
+
+
+
+
+
+
+
+
+
+
+52.252-1     SOLICITATION PROVISIONS INCORPORATED BY REFERENCE (FEB 1998)
+
+
+
+This solicitation incorporates one or more solicitation provisions by reference, with the same force and effect as if they were given in full
+text. Upon request, the Contracting Officer will make their full text available. The offeror is cautioned that the listed provisions may include
+blocks that must be completed by the offeror and submitted with its quotation or offer. In lieu of submitting the full text of those provisions,
+the offeror may identify the provision by paragraph identifier and provide the appropriate information with its quotation or offer. Also, the
+full text of a solicitation provision may be accessed electronically at this/these address(es):
+
+
+
+http://farsite.hill.af.mil/
+
+
+
+(End of provision
+
+
+
+
+52.252-2      CLAUSES INCORPORATED BY REFERENCE (FEB 1998)
+
+
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full text. Upon request,
+the Contracting Officer will make their full text available. Also, the full text of a clause may be accessed electronically at this/these
+address(es):
+
+
+
+http://farsite.hill.af.mil/
+
+
+
+(End of clause)
+
+
+
+
+252.203-7005  REPRESENTATION RELATING TO COMPENSATION OF FORMER DOD OFFICIALS (NOV
+2011)
+
+(a) Definition. Covered DoD official is defined in the clause at 252.203-7000, Requirements Relating to Compensation of Former DoD Officials.
+
+(b) By submission of this offer, the offeror represents, to the best of its knowledge and belief, that all covered DoD officials employed by or
+otherwise receiving compensation from the offeror, and who are expected to undertake activities on behalf of the offeror for any resulting
+contract, are presently in compliance with all post-employment restrictions covered by 18 U.S.C. 207, 41 U.S.C. 2101-2107, and 5 CFR parts 2637
+and 2641, including Federal
+Acquisition Regulation 3.104-2.
+
+(End of provision)
+
+
+
+
+
+
+252.232-7006 WIDE AREA WORKFLOW PAYMENT INSTRUCTIONS (MAY 2013)
+
+(a) Definitions. As used in this clause--
+
+Department of Defense Activity Address Code (DoDAAC) is a six position code that uniquely identifies a unit, activity, or organization.
+
+Document type means the type of payment request or receiving report available for creation in Wide Area WorkFlow (WAWF).
+
+Local processing office (LPO) is the office responsible for payment certification when payment certification is done external to the entitlement
+system.
+
+(b) Electronic invoicing. The WAWF system is the method to electronically process vendor payment requests and receiving reports, as authorized
+by DFARS 252.232-7003, Electronic Submission
+of Payment Requests and Receiving Reports.
+
+(c) WAWF access. To access WAWF, the Contractor shall--
+
+(1) Have a designated electronic business point of contact in the System for Award Management at https://www.acquisition.gov; and
+
+(2) Be registered to use WAWF at https://wawf.eb.mil/ following the step-by-step procedures for self-registration available at this Web site.
+
+(d) WAWF training. The Contractor should follow the training instructions of the WAWF Web-Based Training Course and use the Practice Training
+Site before submitting payment requests through
+WAWF. Both can be accessed by selecting the “Web Based Training” link on the WAWF home page at https://wawf.eb.mil/.
+
+(e) WAWF methods of document submission. Document submissions may be via Web entry, Electronic Data Interchange, or File Transfer Protocol.
+
+(f) WAWF payment instructions. The Contractor must use the following information when submitting payment requests and receiving reports in WAWF
+for this contract/order:
+
+(1) Document type. The Contractor shall use the following document type(s).
+
+____
+
+(Contracting Officer: Insert applicable document type(s). Note: If a “Combo” document type is identified but not supportable by the Contractor's
+business systems, an “Invoice” (stand-alone) and
+“Receiving Report” (stand-alone) document type may be used instead.)
+
+(2) Inspection/acceptance location. The Contractor shall select the following inspection/acceptance location(s) in WAWF, as specified by the
+contracting officer.
+
+____
+
+(Contracting Officer: Insert inspection and acceptance locations or “Not applicable”.)
+
+(3) Document routing. The Contractor shall use the information in the Routing Data Table below only to fill in applicable fields in WAWF when
+creating payment requests and receiving reports in the
+system.
+
+Routing Data Table*
+--------------------------------------------------------------------------------------------
+Field Name in WAWF                Data to be entered in WAWF
+--------------------------------------------------------------------------------------------
+Pay Official DoDAAC               ____
+Issue By DoDAAC              ____
+Admin DoDAAC                      ____
+Inspect By DoDAAC                 ____
+Ship To Code                      ____
+Ship From Code                    ____
+Mark For Code                     ____
+Service Approver (DoDAAC)         ____
+Service Acceptor (DoDAAC)         ____
+Accept at Other DoDAAC       ____
+LPO DoDAAC                   ____
+DCAA Auditor DoDAAC               ____
+Other DoDAAC(s)              ____
+--------------------------------------------------------------------------------------------
+
+(*Contracting Officer: Insert applicable DoDAAC information or “See schedule” if multiple ship to/acceptance locations apply, or “Not
+applicable.”)
+
+(4) Payment request and supporting documentation. The Contractor shall ensure a payment request includes appropriate contract line item and
+subline item descriptions of the work performed or supplies delivered, unit price/cost per unit, fee (if applicable), and all relevant back-up
+documentation, as defined in DFARS Appendix F, (e.g. timesheets) in support of each payment request.
+
+(5) WAWF email notifications. The Contractor shall enter the email address identified below in the “Send Additional Email Notifications” field
+of WAWF once a document is submitted in the system.
+____
+
+(Contracting Officer: Insert applicable email addresses or “Not applicable.”)
+
+(g) WAWF point of contact. (1) The Contractor may obtain clarification regarding invoicing in WAWF from the following contracting activity's
+WAWF point of contact.
+
+____
+
+(Contracting Officer: Insert applicable information or “Not applicable.”)
+
+(2) For technical WAWF help, contact the WAWF helpdesk at 866-618-5988.
+
+(End of clause)
+
+
+
+SECTION 508
+
+Requirements for accessibility based on Section 508 of the Rehabilitation Act of 1973 (29 U.S.C. 794d) are determined to be relevant for the
+following program need: "Web based project time reporting software as a service. Vendor will host the software and Government will purchase
+access."
+
+Technical standards from 36 CFR part 1194 Subpart B have been determined to apply this acquisition. Solicitation respondents must describe how
+their proposed Electronic and Information Technology (EIT) deliverables meet at least those technical provisions identified as applicable in the
+attached Government Product/Service Accessibility Template (GPAT).
+
+Functional performance criteria from 36 CFR part 1194 Subpart C have been determined to apply this acquisition. Solicitation respondents must
+describe how their proposed Electronic and Information Technology (EIT) deliverables meet at least those functional performance criteria
+identified as applicable in the attached Government Product/Service Accessibility Template (GPAT).
+
+Information, documentation, and support requirements from 36 CFR part 1194 Subpart D have been determined to apply this acquisition.
+Solicitation respondents must describe how the information, documentation, and support proposed for Electronic and Information Technology (EIT)
+deliverables meet at least those information, documentation, and support requirements identified as applicable in the attached Government
+Product/Service Accessibility Template (GPAT).
+

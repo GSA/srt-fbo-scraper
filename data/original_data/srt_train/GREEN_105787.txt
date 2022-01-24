@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FFBO.SOW.doc%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us"/><script type="text/javascript">url="http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FFBO.SOW.doc%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>
+Statement of Work (SOW)
+
+   Task Order Title:  Acquisition of Data Modeling Tool and Technical Support
+
+
+   Agency Department Health and Human Services, Food and Drug Administration
+
+
+
+
+
+Background
+
+   The Food and Drug Administration’s (FDA’s) mission is to enforce the Federal Food, Drug, and Cosmetic (FD&C) Act and other laws that are
+   designed to protect consumers' health and safety. All the Information Technology (IT) systems have been created to meet mission critical
+   requirements as well as requirements imposed by executive orders.  These systems assist FDA personnel in tracking and managing cases
+   throughout the regulatory workflow.
+
+
+   The FDA Office of Information Management (OIM) focuses on creating and maintaining resource light IT environments for FDA applications that
+   support the increasing need for information sharing and collaboration.  Managing information in this new environment plays a critical role in
+   enabling the FDA’s efforts to transform Agency operations and respond quickly and accurately to emerging scientific, technological, and
+   economic trends affecting its regulatory mission.
+
+
+   Under the former FDA Office of Chief Information Office (OCIO), each center’s Office of Information Technology (OIT) used various data
+   modeling tools for their data modeling and database design needs. OIM has a goal to streamline and standardize data modeling and design, data
+   integration, and data management across FDA centers. One data modeling tool will be selected and used through out FDA centers.
+
+
+Objectives
+
+   The purpose of this contract is to obtain enterprise licenses and technical support service for an enterprise data modeling tool, with options
+   to acquire additional licenses should the need arise. This data modeling software will be used to support the logical and physical data
+   modeling, data and database designs, and integrating database designs into the process of developing FDA-wide application systems in order to
+   meet the growing demand of FDA’s business needs and ensuring public safety.
+
+Scope
+
+   The FDA is seeking vendor to provide data modeling tool which meets FDA data modeling requirements to support FDA missions with lowest price,
+   and software support.
+
+
+   3.1. The specific requirements include:
+
+1 Target databases include the following databases:
+
+            • Oracle
+            • SQL server
+            • Sybase
+            • DB2
+            • MySQL
+            • Access
+            • Others
+
+
+
+   2 For database versions, this software should work on the latest and up to 3 legacy versions (ex. Oracle 8i, 9i, 10g, and 11g). Data model
+           types include
+
+            • Logical
+            • Physical
+            • Logical/physical
+            • Data warehouse
+
+
+
+   3 Create data models and design from scratch or from reverse-engineering of existing databases
+
+
+4 Logical data modeling and design including
+
+
+1 Entities
+
+
+2 Relationships – All common relationships including many-to-many relationships
+
+
+3 Attributes and normalization/denormalization
+
+
+4 Supertypes / subtypes rolling and classing - The ability to have a single entity or table correspond to multiple entities or tables, and vice
+                 versa.
+
+
+5 Recursive relationships
+
+
+6 Subject areas – The ability to group “Entities” by Subject Areas (data context, business areas, etc.) as a way of subdividing the Entities
+                 maintained in FDA’s data-model.
+
+
+
+
+        5 Conversion capabilities between logical and physical models
+
+
+6 Create following outputs
+
+            • ERD with multiple layout options and navigation, no overlapping diagram
+            • Data dictionary
+            • Database build scripts
+            • Customer reports
+               o Complete or partial model reports
+               o Printable Customizable reports - The ability to select a subset of modeling information for attractive user-friendly reports
+                 (such as a report of entities, attributes and descriptions).
+               o Exportable Customizable reports - The ability to select a subset of modeling information for export to other software
+                 environments (e.g. HHS EA repository).
+            • Problem reports and data mapping solutions for reverse-engineering models into target data architecture
+            • XML Schema generation from logical and physical models
+
+
+
+   7 Import/Export metadata (entities, attributes, subject areas, relationships, etc.) to/from other software environments (e.g. HHS EA
+           repository).
+
+
+8 XML Schema Import/Export – Ability to load XML Schema files (such as Health Level 7(HL7)/Individual Case Safety Report(ICSR), and view the
+           schema in a graphical form suitable for data-modeling purposes. 
+
+
+9 Support the implementation of naming convention standards
+
+
+10 Easy to use and user friendly
+
+            • Quick to learn and use
+            • User friendly interfaces and navigation
+            • Simultaneous same model multiple users access and modification
+
+
+
+   11 24x7 lifecycle customer support
+
+
+12 Quick product line upgrades on new Oracle database and other major database versions for new features.
+
+      3.1.13      The data modeling software must utilize a repository or another comparable means to allow collaborative, shared development of
+           data models with version control capability.
+
+
+3.2. Software and Licenses
+
+       Base Year:
+
+      3.2.1 Data Modeling Suite Product with Support & Upgrade Protection for 13 users.
+      3.2.2.    Cross-system Analysis Data Profiling Tool with Support & Upgrade Protection for 2 users
+      3.2.3 Data Modeling Read-Only Product with Support & Upgrade Protection for 10 users.
+       Option Years:
+
+      Maintenance and software technical support with options to purchase additional licenses as needed within budget.
+
+
+
+      3.5. Maintenance and Technical support
+
+
+      Maintenance and technical support for bug fix shall be of quality and availability to ensure customer satisfaction.
+
+
+
+
+
+
+Specific Tasks/Deliverables
+
+The current request is to exercise the Base Year to obtain a data modeling tool and software technical support.
+
+
+Period of Performance
+
+
+    o Base Year
+
+
+    o Option Year 1
+
+
+    o Option Year 2
+
+
+    o Option Year 3
+
+
+    o Option Year 4
+
+
+
+
+
+
+Reporting Requirement/Delivery Schedule
+
+            The data modeling software should be delivered within 14 days of contract awarded.
+
+
+Security
+
+      This Statement of Work (SOW) does not require the contractor to (1) develop, (2) have the ability to access, or (3) host and/or maintain a
+      Federal information system(s).  For security information, vendor may refer to Federal Information Security Management Act of 2002 (FISMA),
+      Title III, E-Government Act of 2002, Pub. L. No. 107-347 (Dec. 17, 2002); http://csrc.nist.gov/policies/FISMA-final.pdf
+
+
+Government Furnished Equipment (GFE)/ Government Furnished Information (GFI)
+
+
+      Government furnished equipment is not anticipated for this contract.
+
+
+Inspection and Acceptance Criteria
+
+
+      The Government will select the offeror whose offer best conforms to the solicitation and is most advantageous to the Government. The
+      ability to provide the requested technical support is also a factor. If proposals are equal in their technical merit, lowest price will
+      become the determining factor.
+
+      Evaluation Criteria:
+
+         o Ability to meet both business and technical requirements
+
+         o Cost
+
+Other Pertinent Information or Special Considerations
+
+
+      508 Standard Requirement
+      All electronic and information technology (EIT) must meet the applicable accessibility standards at 36 CFR 1194, unless an agency exception
+      to this requirement exists.  36 CFR 1194 implements Section 508 of the Rehabilitation Act of 1973, as amended, and is viewable at
+      http://www.accessboard.gov/sec508/508standards.htm - Part 1194.
+
+
+
+
+
+11.  Post-Award Administration
+
+      Completion of all deliverables, quality and timeliness of delivery, as well as incidents and types of defects, will be used as future
+      reference.
+
+

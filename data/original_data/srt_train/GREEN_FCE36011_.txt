@@ -1,0 +1,1057 @@
+
+
+                                                         GENERAL SERVICES ADMINISTRATION
+                                                           FEDERAL ACQUISITION SERVICE
+                                                       GREATER SOUTHWEST REGION (Region 7)
+
+
+                                                            PERFORMANCE WORK STATEMENT
+                                           Veterans Administration (VA) Financial Services Center (FSC)
+                                                                    Austin, TX
+
+
+TASK:     FCE36011                                                                      DATE:  26 July 2010
+TYPE:  Fixed Price Per Volume
+TASK DESCRIPTION:  Clearinghouse Services
+
+                 PERFORMANCE WORK REQUIREMENTS (PWS)
+
+
+This is a combined synopsis/solicitation for commercial items prepared in accordance with the format in FAR Subpart 12.6, the test program in
+FAR Subpart 13.5, and FAR Part 15, as supplemented with additional information included in this notice.
+
+1.0  BACKGROUND
+
+
+The Department of Veterans Affairs (VA) Financial Services Center (FSC) is a franchise fund site operated under the Government Management Reform
+Act, P.L. 103-356.  Consequently, the FSC receives no federally appropriated funding and is required to market FSC services to customers.  As a
+franchise fund organization, the FSC provides financial services to the VA as well as Other Government Agencies (OGAs).
+
+One of the FSC product offerings is receipt and processing of medical claims.  The FSC requires the services of an electronic clearinghouse to
+support this product line and is seeking the services described below.
+
+2.  SCOPE OF WORK
+
+The Contractor shall provide the necessary services to accomplish all of the requirements stated herein.  The vendor, at a minimum, shall offer
+services to accept and transmit electronic medical claims received from healthcare providers to the FSC in an 837 file format.  The vendor, at a
+minimum, shall offer services to receive TIFF images from the FSC and convert those images into 837 compliant transactions and transmit the
+transactions to the FSC.
+
+2.1  Places of Performance:  The contractor shall perform the services of this task order at their own locations.  The FSC does not expect the
+contractor to be needed on-site to perform the services described in this PWS.  Travel is not anticipated for this requirement.  The Government
+will not reimburse any travel expenses incurred by the contractor.
+
+2.  Contractor Personnel:  The contractor shall not use any offshore resources (personnel, hardware, software, etc) in support of the services
+   being provided under this contract.  Data used on this contract shall not be transmitted to or stored at an offshore location.  For the
+   purposes of this contract, offshore is defined as being any location outside the United States, its possessions, and Puerto Rico.
+
+2.3  Security and Privacy Requirements:  Contractor personnel providing services under the contract shall be required to successfully pass
+various background investigations before commencing performance on the contract (see Section 6.0)  The Contractor shall comply with all Federal,
+VA and FSC security regulations and policies.  The FSC Security and Privacy requirements are provided in Section 6.0.
+
+2.4  The contractor shall ensure that only technically qualified and knowledgeable personnel suited for the individual tasks shall perform under
+this contract.  In addition, personnel assigned by the contractor to the performance of work under this contract shall be acceptable to the
+Contracting Officer Technical Representative (COTR) in terms of personal and professional conduct.
+
+3.0  TASKS AND DELIVERABLES
+
+3.1  Task 1: Post Award Orientation Conference (PAOC) – Develop Project Plan
+
+3.1.1 Participate in the PAOC via conference call.
+
+3.1.2 Identify Tasks, Subtasks, Timelines, and the Delivery Schedule for project plan.
+
+3.1.3 Meet with FSC Team/Counterparts/Data Contacts.
+
+3.1.4 Prepare a Project Plan that identifies Tasks, Subtasks, Timelines, and the Delivery Schedule for all tasks to accomplish the project
+      outcomes of this PWS.
+
+3.1.5 Deliver Project Plan.
+
+3.2   Deliverable 1:   PAOC
+
+3.2.1 Quality Standards Specific to Deliverable 1:  Deliverable 1 shall meet the following minimum quality standards:
+
+3.2.1.1     The PAOC meeting is held on schedule.
+3.2.1.2     Comments and concerns raised by the FSC are addressed.
+3.2.1.3     Tasks, Subtasks, Timelines and the delivery schedule are determined.
+
+3.3   Deliverable 2:   Project Plan
+
+3.3.1 Due Date for Deliverable 2:  Within 10 workdays from the date of issuance of notice to proceed.
+
+3.3.2 Quality Standards Specific to Deliverable 2:  Deliverable 2 shall meet the following minimum quality standards:
+
+3.3.2.1     The plan is delivered on schedule.
+3.3.2.2     Comments and concerns raised by the FSC are addressed in the final plan.
+3.3.2.3     Timelines are complete and sound.
+3.3.2.4     Data are clear and logical and the plan is one that is fully executable.
+3.3.2.5     Project management principles are applied effectively.
+3.3.2.6     Documentation is logical and concise.
+3.3.2.7     The document is presented and written in a professional business-like manner.
+3.3.2.8     The document is grammatically correct and error free.
+
+3.4   Task 2:  Provide medical claims clearinghouse services.  At a minimum, this shall include, but not be limited to, the following:
+
+
+   1. Receive and document receipt date of electronic medical claims from providers.
+
+   2. Validate the electronic medical claims data using FSC provided required information (a.k.a. edits).
+
+   3. Create Health Insurance Portability and Accountability Act (HIPAA) compliant 837 transaction files based on the validated electronic
+      medical claims data.
+
+
+   4. Receive encrypted TIFF images from the FSC and convert those TIFF images into HIPAA compliant 837 transaction files within 48 hours of
+      receipt of the TIFF images.
+      Electronically transmit the encrypted HIPAA compliant 837 transaction files to the FSC.
+
+   5. The Healthcare Clearinghouse (HCCH) shall be able to transmit and receive health care transactions in the currently adopted HIPAA X12
+      4010A1 standard version or proprietary formats acceptable to FSC. The HCCH shall support at a minimum the following transactions and
+      relevant code sets as applicable:
+
+
+
+    • HCFA OCR Claims
+                  • HCFA UB Claims
+                  • 837 Health Care Claims (Institutional and Professional, Dental)
+                  • 835 Health Care Claim Payment/Advice
+
+
+
+
+   6. The HCCH shall send and receive electronic acknowledgements for X12 Interchange Envelopes and Standard Conformance for HIPAA X12
+      transactions to and from FSC or its submitters.
+
+
+   7. At the time of the award the HCCH shall implement the following transactions with FSC:
+
+
+3.4.7.1     837 Professional, Dental, Institutional using batch transactions
+
+   8. The HCCH shall assist the FSC in implementing the following transactions within 6 months of the award:
+
+
+    • 835 Healthcare payment advice
+
+
+   9. HCCH shall assist FSC in implementing additional transaction types as part of the migration to 5010 or by December 2012 should 5010 be
+      delayed. The additional transactions FSC  will considered for implementation include:
+
+
+3.4.10.3    Acknowledgements 999, 824, 277CA
+3.4.10.4    COB payer to payer claims
+
+
+  10. The HCCH shall provide and implement plans to migrate to future adopted versions of paper institutional and non-institutional health care
+      claims before the deadline imposed by industry.  The transition process shall allow ample time for testing of the new versions to assure
+      compliance with the National Uniform Billing Committee (NUBC), National Uniform Claim Committee (NUCC) and NCPDP mandated requirements.
+
+3.5   Deliverable 3:   Provide medical claims clearinghouse services.  At a minimum, this shall include each item shown in Task 2.  Also, the
+services provided that relate to Internet access must be compliant with the requirements as defined in Section 508 of the Rehabilitation Act (29
+U.S.C. 794d).  Section 508 requires that Federal agencies' electronic and information technology is accessible to people with disabilities.
+Detailed information about Section 508 can be found at http://www.section508.gov.
+
+   1. Due Date for Deliverable 3:  Start date of award.
+
+   2. Quality Standards Specific to Deliverable 3:  Deliverable 3 shall meet the following minimum quality standards:
+
+3.5.2.1     The TIFF images must be converted into HIPAA 837 transaction files no later than 48 hours or less of receipt 100% of the time.
+3.5.2.2     All medical claims data must be 95% accurate for 98% of the time.
+3.5.2.3     Comments and concerns raised by the Government are addressed.
+3.5.2.4     All written documentation shall be provided in an electronic format that can be read and edited in any Microsoft Office product
+        (e.g. MS Word format, MS Excel, MS Visio, etc.), and shall be made available to the FSC IT support staff.
+
+3.6   Task 3:  Written Monthly Activity Reports and Interim Reports.  Provide to the FSC written monthly activity reports regarding medical
+claims processing.  No specific format has been established however, at a minimum, this report should include the following:
+
+
+   1. TIFF claims:
+
+3.6.1.1     The date the TIFF claim was received.
+3.6.1.2     The date the TIFF claim was processed.
+3.6.1.3     The date the 837 was transmitted to the FSC.
+3.6.1.4     The number of pages in the claim.
+3.6.1.5     The number of pages rejected from the claim.
+
+   2. Electronic medical claims:
+
+3.6.2.1     The date the electronic claim was received.
+3.6.2.2     The date when the electronic claim was validated.
+3.6.2.3     The date the electronic claim was transmitted to the FSC.
+
+
+   3. Daily  837 Claims sent  (Institutional, Professional, Dental) by batch, Payer ID and source
+
+   4. Weekly  837 Claims sent  (Institutional, Professional, Dental) by batch, Payer ID and source
+
+   5. Monthly Summary 837 Claims reports by Payer ID and source (Institutional, Professional, Dental)
+
+   6.  Daily 835 Health Care Payment / Advice Transactions received by payer ID and 835 picked up  by provider/submitter
+
+   7. Weekly 835 Health Care Payment / Advice Transactions received by payer ID and 835 picked up by provider/submitter
+
+   8. Monthly Summary 835 Health Care Payment / Advice Transactions received by payer ID and 835 picked up by provider/submitter
+
+   9. Monthly Summary Paper Claim Report (for network submitters sending paper to payer by payer ID
+
+
+
+
+  10. Daily report of Optical Character Recognition (OCR) files submitted and received by the HCCH with count by type of image (professional,
+      institutional, dental), single or multi page, claims rejected, date received, date 837 file is returned and claim count
+
+
+3.7   Deliverable 4 – Written Monthly Activity Report
+
+   1. Due Date for Deliverable 4:  Due by 12:00PM Central Time 3 workdays after the last day of the month.
+
+   2. Quality Standards Specific to Deliverable 4:  Deliverable 4 shall meet the following minimum quality standards:
+
+3.7.2.1     The monthly activity reports are delivered on schedule.
+3.7.2.2     The monthly activity reports are grammatically correct and error free.
+3.7.2.3     The monthly activity reports are written in a non-technical manner so that any layperson can understand it.
+3.7.2.4     The monthly activity reports are in a format that can be read on any Microsoft Windows Office product (e.g. MS Word format,
+        MS Excel, MS Visio, etc.)
+
+3.8   Deliverable 5 – Written Interim Reports
+
+
+   1. Due Date for Deliverable 5:  Due within 2 workdays after request
+
+   2. Quality Standards Specific to Deliverable 5:  Deliverable 5 shall meet the following minimum quality standards:
+
+3.8.2.1     The written interim reports are delivered on schedule.
+3.8.2.2     The written interim reports are grammatically correct and error free.
+3.8.2.3     The written interim reports are written in a non-technical manner so that any layperson can understand it.
+3.8.2.4     The written interim reports are in a format that can be read on any Microsoft Windows Office product (e.g. MS Word format, MS Excel,
+        MS Visio, etc.)
+
+4.0  DELIVERABLES
+
+4.1  Delivery:  All information acquired and documents developed during this contract belong to the Department of Veterans Affairs.  Unless
+otherwise directed, deliverables shall be submitted to the COTR or their designee.
+
+           2. Review of Deliverables:  The FSC will complete their review of deliverables within seven (7) calendar-days from date of receipt.
+              The contractor shall have five (5) workdays to deliver the final deliverable from date of receipt of VA’s comments.
+
+           3. Data Rights:  The contractor has the responsibility to obtain from its subcontractors all data and rights therein necessary to
+              fulfill the contractor’s obligations to the Government (including licensed software) under this contract.  If a subcontractor
+              refuses to accept terms affording the Government such rights, the contractor must promptly bring such refusal to the attention of
+              the Contracting Officer and not proceed with subcontract award without further authorization.
+
+           4. Rights in Government Furnished Data and Materials:  The Government shall retain all rights and privileges, including those of
+              patent and copy, to all Government furnished data.  The contractor shall neither retain nor reproduce for private or commercial
+              use any data or other materials furnished under this contract.  The contractor agrees not to assert any rights at common law or in
+              equity or establish any claim to statutory copyright in such data.  These rights are not exclusive and are in addition to any
+              other rights and remedies to which the Government is otherwise entitled elsewhere in this contract.
+
+           5. Technical Data, Specifications and Document Updates:  The contractor shall provide Technical Data, Specifications and Document
+              Updates as project requirements dictate.  The COTR will review all deliverables for accuracy, completeness, and suitability and
+              submit required changes to the contractor.  The contractor shall have five working days to correct and re-submit the rejected
+              deliverable (this time may be extended with concurrence of the COTR.)  Only the COTR has the authority to inspect, accept, or
+              reject deliverables:
+
+5.  INSPECTION and ACCEPTANCE
+
+
+     1. The COTR with the assistance of the GSA Project Manager shall be responsible for inspecting and accepting services in accordance with
+        the Quality Assurance Surveillance Plan (QASP) for the Task Order and Federal Acquisition Regulation clauses 52.246-02 and 52.246-03.
+
+     2. Quality Assurance Surveillance Plan (QASP) – The Government will evaluate contractor performance and deliverables against the following
+        criteria to determine final acceptance and completion of the task assignments:
+
+|Item     |Critical Performance    |PWS         |Monitoring                 |Performance Standards        |                                                         |
+|         |Objectives              |Section     |Method                     |                             |Incentive/Disincentive                                   |
+|1        |Develop Project Plan    |3.0         |On time delivery of        |Monitor for timely, compliant|Incentive - Full payment for meeting the requirement.    |
+|         |                        |            |Project Plan               |and accurate submission.     |                                                         |
+|         |                        |            |                           |                             |Disincentive – If requirement is not met consistently,   |
+|         |                        |            |                           |                             |then the vendor task performance rating may be effected. |
+|2        |Provide medical claims  |3.0         |Monitoring of actual       |System meets required        |Incentive - Full payment for meeting the requirement.    |
+|         |clearinghouse services  |            |performance against        |performance levels 99% of    |                                                         |
+|         |                        |            |expected performance.      |time.                        |Disincentive – If requirement is not met consistently,   |
+|         |                        |            |                           |                             |then the vendor task performance rating may be effected. |
+|3        |Provide written monthly |3.0         |On time delivery of reports|Monitory for timely,         |Incentive - Full payment for meeting the requirement.    |
+|         |activity reports and    |            |                           |compliant accurate submission|                                                         |
+|         |interim reports         |            |                           |                             |Disincentive – If requirement is not met consistently,   |
+|         |                        |            |                           |                             |then the vendor task performance rating may be effected. |
+
+
+6. OTHER INFORMATION AND REQUIREMENTS
+
+1. VA INFORMATION SECURITY:
+
+   1. The Contractor and Contractor personnel shall be subject to the same Federal laws, regulations, standards and VA policies as VA, and VA
+      personnel, regarding information and information system security.  Contractor activities and personnel must follow all of the Directives
+      established by VA to include protection of computers and other mobile devices used to process, store or transmit sensitive information.
+
+   2. Access to VA Information and VA Information Systems: Contractor shall request access to VA information and VA information systems for
+      employees, subcontractors and affiliates only to the extent necessary: (1) to perform the services specified in the contract; (2) to
+      perform necessary maintenance functions for electronic storage or transmission media necessary for performance of the contract, and (3) for
+      individuals who first satisfy the same conditions, requirements and restrictions that comparable VA employees must meet in order to have
+      access to the same type of VA information.  These restrictions include the same level of investigative requirements, as applicable, with
+      the following exceptions:
+
+
+           • Contract personnel not accessing VA information resources such as personnel hired to maintain the facility grounds, construction
+             contracts, utility system contractors, etc.
+
+
+           • Contract personnel with limited and intermittent access to equipment connected to facility networks where no Protected Health
+             Information (PHI) is available, including contractors who install, maintain and repair networked building equipment such as fire
+             alarm; heating, ventilation and air conditioning equipment; elevator control systems, etc.
+
+
+    1. All contractors and subcontractors working with sensitive VA information are subject to the same investigative requirements as those of
+       regular VA appointees or employees who have access to the same type of information.  The level of background security investigation will
+       be in accordance with VA Directive 0710 and Handbook 0710, available at http://www1.va.gov/vapubs/ .
+
+    2. The position risk and sensitivity level(s) for this effort have been designated at as Low Risk.
+
+    3. The contractor shall satisfy all requirements for appropriate security eligibility in dealing with access to sensitive information and
+       information systems belonging to or being used on behalf of the Department of Veterans Affairs.  To satisfy the requirements of the
+       Department of Veterans Affairs a Minimum Background Investigation (MBI) or National Agency Check and Inquiries (NACI), based on position
+       level shall be conducted prior to performing work under this contract.  Appropriate Background Investigation (BI) forms will be provided
+       upon contract (or task order) award, and are to be completed and returned to the FSC Personal Identification Verification (PIV) Sponsor
+       for processing and submission to VA Security Investigation Center (SIC).  The PIV process currently takes approximately 3-4 weeks for
+       completion.  All BI forms shall be submitted to the FSC PIV Sponsor within 5 days after contract award.   Contractors will be notified by
+       Office of Security and Law Enforcement (OSL&E) when the BI has been completed and adjudicated.
+
+    4. All costs associated with obtaining clearances for contractor provided personnel will be the responsibility of the contractor.  Further,
+       the contractor will be responsible for the actions of all individuals provided to work for VA under this contract.  In the event that
+       damages arise from work performed by contractor provided personnel, under the auspices of this contract, the contractor will be
+       responsible for all resources necessary to remedy the incident.
+
+    5. All contractor personnel and subcontractor personnel requiring access to VA information and VA information system shall complete the
+       following training before being granted access to VA networks:
+           a. Sign and acknowledge understanding of, and responsibilities for compliance with, the National Rules of Behavior relating to access
+              to VA information systems;
+           b. Successfully complete VA Cyber Security Awareness training, and annual refresher training, as required;
+           c. Successfully complete VA General Privacy training, and annual refresher training, as required;
+           d. Successfully complete any additional cyber security or privacy training as VA personnel with equivalent information system access,
+              as required.
+
+
+       The contractor shall provide to the Contracting Officer’s Technical Representative a copy of the training certificates for each
+       applicable employee within one week of the initiation of the contract, prior to systems access and badge issuance, and annually
+       thereafter, as required.  The courses must be taken at the FSC facility or another VA location as directed by the COTR.  Failure to
+       complete this mandatory training within the required timeframe will be grounds for suspension or termination of all physical and
+       electronic access privileges and removal from work on the contract until such time as the training is completed.  Removal from work on
+       the contract due to failure to complete mandatory training shall result in a reduction in the overall contract cost and is not sufficient
+       reason to warrant an extension in the delivery order time or cost.
+
+    6. Comply with the same standards, conditions and restrictions placed on VA personnel for the handling of VA sensitive data, to include the
+       standards, conditions, and restrictions contained in VA Directive and Handbook 6500.
+
+   3. Physical Security Requirements.
+
+    1. General:
+
+     1. The FSC is a high-security government facility.  For purposes of this specification section, “FSC,” “premises”, “site,” “Center,” and
+        “facility” shall mean the FSC building and surrounding property, including parking areas.
+
+     2. All contractor and subcontractor personnel must read and abide by the security requirements in place at this facility.  Failure to
+        comply with these security requirements may result in revocation of physical and/or electronic access privileges and/or termination of
+        the contract for default.
+
+     3. Failure to complete the work in a timely manner, or by any required completion date, caused by delays in requesting security clearances,
+        or due to revocation of access privileges resulting solely from the actions of the contractor or their personnel, is not sufficient
+        reason to warrant an extension in contract time or cost.
+
+    2. Access Privileges.
+
+     1. Access into the FSC is only allowed through the main entrance.  All items will be manually inspected (this includes opening and
+        inspecting all packages) prior to being allowed entry.
+
+     2. Access Cards/Badges.  After award of the contract, all contractor employees requiring long-term access (more frequent than once per
+        month) to the FSC or the project site may be required to obtain an FSC-issued access badge.  Each contractor or subcontractor employee
+        shall conspicuously display, on his/her person, a government-provided identification badge.  The identification badge record and
+        associated data will be kept in a government-maintained computer database for security purposes.
+
+     3. Security Clearances.  All contractor personnel who will routinely work on-site at the FSC or other FSC-controlled government
+        installations shall satisfy all security requirements prior to starting work under this contract.  These requirements necessitate that
+        the contractor submit certain information in order to initiate the government’s background investigation process, and for certain
+        positions, may require that the contractor employee actually obtain the VA security clearance before they may begin work at the FSC.
+        The contractor shall pre-screen all personnel requiring physical or electronic access to ensure they are U.S. citizens and are able to
+        read, write, speak, and understand the English language (in addition to any other languages they may speak).
+
+     4. Physical Access.  Each person requiring unescorted physical access to the property will be required to submit personal identifying
+        information (full legal name (first, middle, and last), date of birth, state-issued driver’s license or identification card number and
+        the state that issued it, and name as it appears on the identification card.  This information will be used to perform a criminal
+        history check.  Visitors who are not subjected to the criminal history check must be escorted at all times by someone who has been
+        issued a permanent FSC ID badge.  The cost of conducting the criminal history check is the responsibility of the FSC.  The cost, if any,
+        of arranging for an escort is the responsibility of the contractor.  The contractor shall pre-screen all personnel requiring physical
+        access to the property to ensure they are legally able to work in the U.S. and are not currently sought by law enforcement authorities.
+        Adjudication of information discovered during or after the criminal history check is solely the responsibility of the Chief, Security
+        Services.  Being admitted entry into the FSC based on a finding of no criminal history does not convey any security clearance.  The
+        Chief, Security Services may revoke physical access privileges at any time if criminal history is discovered, or if the person commits
+        security incidents warranting such revocation.  NOTE: Personnel doing work on the FSC site under contract to GSA will also be required
+        to submit additional documentation and be fingerprinted, and be determined by the Department of Homeland Security (DHS) Federal
+        Protective Service (FPS) to be suitable to work on this property.
+
+
+     5. Both Physical and Computer System Access.  Persons requiring both physical and computer system access are subject to all of the
+        requirements listed above.
+
+   4. Contractor System Security:  The contractor shall ensure adequate LAN/internet, data, information and system security in accordance with VA
+      policy, standard operating procedures and Federal standards, laws and regulations.  The contractor’s firewall and web server shall meet or
+      exceed the Government minimum requirements for security.  VA Directives are available on the VA Directives website at
+      http://vaww1.va.gov/vapubs/. The contractor shall administer and maintain firewall and web server implementations that meet or exceed the
+      Government minimum requirements for security. All Government data shall be protected behind an approved firewall.  The Contractor shall
+      adhere to applicable federal laws, standards and VA policies and procedures governing information security, especially those that pertain
+      to certification and accreditation.
+
+   5. Information System Design and Development: Information systems designed or developed for or on behalf of VA at non-VA facilities shall
+      comply with all Federal Information Security Management Act (FISMA), NIST, and related VA security control requirements for Federal
+      information systems.  This includes system security categorization level designations in accordance with FIPS 199, and implementation of
+      all baseline security controls commensurate with the FIPS 199 system security categorization (reference Appendix D of VA Handbook 6500, VA
+      Information Security Program).
+
+      The security controls must be designed, developed and implemented in accordance with the provisions of VA security system development life
+      cycle as outlined in VA 6500 Handbook.
+
+      The Contractor will be required to design, develop, or operate a system of records on individuals, to accomplish an agency function subject
+      to the Privacy Act of 1974, Public Law 93-579, December 31, 1974 (5 U.S.C.552a) and applicable agency regulations. Violation of the Act may
+      involve the imposition of criminal penalties.
+
+      The Contractor agrees to:
+           a. Comply with the Privacy Act of 1974 (the Act) and the agency rules and regulations issued under the Act in the design,
+              development, or operation of any system of records on individuals to accomplish an agency function when the contract specifically
+              identifies the systems of records and the design, development or operation work the contractor is to perform.
+           b. Include the Privacy Act notification contained in this contract in every solicitation and resulting subcontract and in every
+              subcontract awarded without a solicitation, when the work statement in the proposed subcontract requires the redesign,
+              development, or operation of a system of records on individuals that is subject to the Act; and
+           c. Include this clause, including this subparagraph (3), in all subcontracts awarded under this contract, which requires the design,
+              development, or operation of such a system of records.
+
+      In the event of violations of the Act, a civil action may be brought against the agency involved when the violation concerns the design,
+      development, or operation of a system of records on individuals to accomplish an agency function, and criminal penalties may be imposed
+      upon the officers or employees of the agency when the violation concerns the operation of a system of records on individuals to accomplish
+      an agency function. For purposes of the Act, when the contract is for the operation of a system of records on individuals to accomplish an
+      agency function, the Contractor is considered to be an employee of the agency.
+
+           a. “Operation of a system of records,” as used in this clause, means performance of any of the activities associated with maintaining
+              the system of records, including the collection, use, and dissemination of records.
+
+
+           b.  “Record,” as used in this clause, means any item, collection, or grouping of information about an individual that is maintained
+              by an agency, including, but not limited to, education, financial transactions, medical history, and criminal or employment
+              history and that contains the person’s name, or the identifying number, symbol, or other identifying particular assigned to the
+              individual, such as a fingerprint or voiceprint or a photograph.
+
+
+           c. “System of records on individuals,” as used in this clause, means a group of any records under the control of any agency from
+              which information is retrieved by the name of the individual or by some identifying number, symbol, or other identifying
+              particular assigned to the individual.
+
+
+   6. Information System Hosting, Operation, Maintenance or Use:  For information systems which are hosted, operated, maintained or used on
+      behalf of VA at non-VA facilities, contractors are fully responsible and accountable for ensuring compliance with all FISMA, NIST, FIPS,
+      and VA security policies and procedures.  The contractor security control procedures must be identical, not equivalent, to those procedures
+      used to secure VA systems.  A privacy impact assessment (PIA) must also be included and approved by VA Privacy Service prior to operational
+      approval.  All external Internet connections involving VA information must be reviewed and approved by VA prior to implementation.
+
+      The security controls must be in place prior to hosting, operation, maintenance, or use of the information system, or systems by or on
+      behalf of VA.  Security controls for collecting, processing, transmitting, and storing of personally identifiable information (PII) must be
+      in place prior to operating.
+
+
+      Outsourcing (contractor facility/contractor equipment/contractor staff) of systems or network operations, telecommunications services, or
+      other managed services requires certification and accreditation of the contractor’s systems prior to operation of the systems.  Government
+      owned (government facility/government equipment), contractor operated systems require a system interconnection agreement for all systems
+      connected to VA networks.
+
+
+      The contractor must adhere to all FISMA, FIPS and NIST legislation and standards related to conduct of an annual security controls
+      assessment and review and updates to the Privacy Impact Assessment (PIA).  Any deficiencies noted during this assessment must be provided
+      to the VA Contracting Officer and the Information Security Officer (ISO) for entry into VA’s Plan of Action and Milestone (POA&M)
+      management process. The contractor will use VA’s POA&M process to document planned remedial actions to address any deficiencies in
+      information security policies, procedures, and practices, and the completion of those activities.  Security deficiencies must be corrected
+      within the timeframes approved by the Government.  Contractor procedures will be subject to periodic, unannounced assessments by VA
+      officials.  The physical security aspects associated with contractor activities will also be subject to such assessments.
+
+      All electronic storage media used on non-VA leased or owned IT equipment that is used to store, process, or access VA sensitive information
+      must have all VA sensitive information removed, cleared, sanitized, or destroyed in accordance with VA policies and procedures upon the
+      earlier of: (1) completion or termination of the contract or (2) disposal or return of the IT equipment by the contractor or any person
+      acting on behalf of the contractor.
+
+   7. VA Information Custodial requirements:  As a consequence of this agreement, the contractor may become a temporary custodian of VA data on
+      behalf of VA.  Information made available to the Contractor by VA for the performance or administration of this contract shall be used only
+      for those purposes and shall not be used in any other way without the written agreement of the Contracting Officer.  This clause expressly
+      limits the Contractor’s rights to use data as described in Rights in Data – General, FAR 52.227-14(d)(1).
+
+      Except for uses and disclosures of VA information authorized by this contract for performance of the contract, the contractor may use and
+      disclose VA information only in two other situations: (i) in response to a qualifying order of a court of competent jurisdiction, or (ii)
+      with VA’s prior written approval.  The contractor will refer all requests for, demands for production of, or inquiries about, VA
+      information and information systems to the VA Contracting Officer for response.
+
+      The contractor shall not release information protected by either 38 USC 5705 or 7332 in response to a court order, and shall immediately
+      refer such court orders to the VA Contracting Officer for response
+
+      VA information will not be co-mingled with any other data on the contractor’s or subcontractors’ information systems or media storage
+      systems in order to ensure VA requirements related to media sanitization can be met.  VA reserves the right to conduct on-site inspection
+      of information destruction or media sanitization procedures to ensure they are in compliance with VA policy requirements.
+           a.  The VA data associated with this contract has been categorized from VA sensitive to VA critical.
+           b.  As custodian on behalf of VA, the contractor shall store, transport and transmit VA data, or any derivatives thereof, utilizing a
+              FIPS 140-2 validated encryption module.
+           c.  Prior to contract termination, contractor will not destroy VA information received from VA or gathered or created by Contractor
+              in the course of performing this contract without prior written approval by the VA Contracting Officer.
+           c.  At contract termination or upon demand, the contractor shall return all VA data, and derivatives thereof, and shall purge or
+              destroy all electronic, magnetic, optical or hardcopy media in accordance with VA media sanitization procedures.
+           d.  Contractor will receive, gather, store, back up, maintain, use, disclose and dispose of VA information only in compliance with
+              the terms of this contract and applicable federal and VA information confidentiality and security laws, regulations and policies.
+              Applicable federal information security regulations include all Federal Information Processing Standards (FIPS) and Special
+              Publications (SP) issued by the National Institute of Standards and Technology (NIST).  If federal or VA information
+              confidentiality and security laws, regulations and policies become applicable to the VA information or information systems after
+              execution of the contract, or if NIST issues or updates applicable FIPS after execution of this contract, the parties agree to
+              negotiate in good faith to implement the information confidentiality and security laws, regulations and policies, including FIPS
+              or SP, in this contract.
+           e.  The Contractor shall not make copies of VA information except as necessary to perform this agreement or to preserve electronic
+              information stored on contractor electronic storage media for restoration in case any electronic equipment or data used by the
+              contractor needs to be restored to an operating state.
+           f.  A determination by VA that the contractor has violated any of the information confidentiality and security provisions of this
+              contract shall be sufficient grounds for VA to terminate the contract for default.
+
+
+   8. Security Incident Investigation: The term “security incident” means an event that has, or could have, resulted in loss or damage to VA
+      assets, or sensitive information, or an action that breaches VA security procedures.  The contractor shall immediately (within 1 hour)
+      notify the COTR and simultaneously, the VA Network Security Operations Center (vansoc@va.gov) and the designated ISO/Privacy Officer for
+      the contract of any known or suspected security/privacy incident, or any unauthorized disclosure of sensitive information, including that
+      contained in system(s) to which the contractor has access.
+
+      To the extent known by the contractor, the contractor’s notice to VA will identify the information involved, the circumstances surrounding
+      the incident (including to whom, how, when, and where VA information/assets were placed at risk or compromised), and any other information
+      that the contractor considers relevant.
+
+
+      Contractor will simultaneously report the incident to the appropriate law enforcement entities of jurisdiction in instances of theft or
+      break-in.  The contractor, its employees, and its subcontractors and their employees will cooperate with VA and any law enforcement
+      authority responsible for the investigation and prosecution of any possible criminal law violation(s) associated with any incident.  The
+      contractor will cooperate with VA in any civil litigation to recover VA information, to obtain monetary or other compensation from a third
+      party for damages arising from any incident, or to obtain injunctive relief against any third party arising from, or related to, the
+      incident.
+
+
+      To the extent practicable, contractor shall mitigate any harmful effects on individuals whose VA information was accessed or disclosed in a
+      security incident.  In the event of a data breach with respect to any sensitive personal information processed or maintained by the
+      contractor or subcontractor under the contract, the contractor is responsible for liquidated damages to be paid to VA and remediation to
+      potentially harmed individuals (such as offering and paying for credit monitoring).
+
+   9. Security Controls Compliance Testing: On a periodic basis, VA, including the VA Office of Inspector General, reserves the right to evaluate
+      any or all of the security controls implemented by the contractor under the clauses contained within the contract.  With 10 working-day’s
+      notice, at the request of the Government, the contractor will fully cooperate and assist in a Government-sponsored security controls
+      assessment at each location wherein VA information is processed or stored, or information systems are developed, operated, maintained, or
+      used on behalf of VA, including those initiated by the Office of Inspector General.    The Government may conduct a security control
+      assessment on shorter notice (to include unannounced assessments) determined by VA in the event of a security incident or at any other
+      time.
+
+  10. Data Security and Privacy:
+
+    1. Confidentiality and Disclosure
+
+    2. The Contracting Officer will be the sole authorized official to release verbally or in writing, any data, draft deliverables, final
+       deliverables, or any other written or printed materials pertaining to this task order.  The contractor shall release no information.
+
+    3. Press releases, marketing material or any other printed or electronic documentation related to this project, shall not be publicized
+       without the written approval of the Contracting Officer.
+
+    4. While in the custody of the contractor, all information shall be protected from unauthorized disclosure, depending upon the content of
+       information provided to the contractor, the key staff shall be required to sign non-disclosure statements to endure the confidentiality
+       of Government information.
+
+2. Section 508 of the Rehabilitation Act of 1973:
+
+   a. NOTICE OF THE FEDERAL ACCESSIBILITY LAW AFFECTING ALL ELECTRONIC AND INFORMATION TECHNOLOGY PROCUREMENTS (SECTION 508)
+
+
+      On August 7, 1998, Section 508 of the Rehabilitation Act of 1973 was amended to require that when Federal departments or agencies develop,
+      procure, maintain, or use Electronic and Information Technology, that they shall ensure it allows Federal employees with disabilities to
+      have access to and use of information and data that is comparable to the access to and use of information and data by other Federal
+      employees.
+
+
+      Section 508 required the Architectural and Transportation Barriers Compliance Board (Access Board) to publish standards setting forth a
+      definition of electronic and information technology and the technical and functional criteria for such technology to comply with Section
+      508. These standards have been developed were published with an effective date of December 21, 2000. Federal departments and agencies must
+      develop all Electronic and Information Technology requirements to comply with the standards found in 36 CFR 1194.
+
+
+   b. SECTION 508 – ELECTRONIC AND INFORMATION TECHNOLOGY (EIT) STANDARDS
+
+      The Section 508 standards established by the Architectural and Transportation Barriers Compliance Board (Access Board) are incorporated
+      into, and made part of all VA contracts, solicitations and purchase orders developed to procure Electronic and Information
+      Technology (EIT). These standards are found in their entirety at http://www.section508.gov . A printed copy of the standards will be
+      supplied upon request.  The contractor must comply with the technical standards at 36 CFR 1194.21-24, 26, 31, and 41 in performing this
+      contract.
+
+
+6.3   FAR Clause 52.204-9 Personal Identity Verification of Contractor Personnel (Sept 2007)
+(a) The contractor shall comply with agency personal identity verification procedures identified in the contract that implement Homeland
+Security Presidential Directive-12 (HSPD-12), Office of Management and Budget (OMB) guidance M-05-24, and Federal Information Processing
+Standards Publication (FIPS PUB) Number 201.
+(b) The contractor shall insert this clause in all subcontracts when the subcontractor is required to have routine physical access to a
+Federally-controlled facility and/or routine access to a Federally-controlled information system.
+Homeland Security Presidential Directive 12 (HSPD-12) was issued to implement the policy of the United States to enhance security, increase
+Government efficiency, reduce identity fraud, and protect personal privacy by establishing a mandatory, Government-wide standard for secure and
+reliable forms of identification issued by the Federal Government to its employees and contractors (including contractor employees).  Under this
+directive, the heads of executive departments and agencies are required to implement programs to ensure that identification issued by their
+departments and agencies to Federal employees and contractors meets the Standard.  This policy can be found at the following website:
+
+http://www.whitehouse.gov/news/releases/2004/08/20040827-8.html .
+
+In performance of services under this task, contractor shall insure all its personnel who require physical access to Federally-controlled
+facilities and access to Federally-controlled information systems have been issued identification in compliance with HSPD-12 policy.  In their
+quotes, contractors shall confirm they will comply with the government client’s identification procedure that is implementing HSPD-12 policy.
+The Security/Identification point of contact for the client agency that is responsible for implementing their HSPD-12 compliant policy is:
+
+Name:  JoAnne Rountree
+Phone:  (512)460-5757
+
+6.4   Government Points of Contact:
+
+6.4.1 Project Manager:
+
+      Carol England
+      GSA/FAS
+      100 N.E. Loop 410, Ste 1400
+      San Antonio, TX  78216
+      Phone:  210-341-8323
+      Fax:  210-341-8304
+      Email:  carol.england@gsa.gov
+
+6.4.2 Contracting Officer:
+
+
+      Rose Dominguez
+      GSA/FAS
+      100 N.E. Loop 410, Ste 1400
+      San Antonio, TX  78216
+      Phone:  210-341-8359
+      Fax:  210-341-8304
+      Email:  rose.dominguez@gsa.gov
+
+
+5.  Contracting Officer’s Technical Representative:
+
+6.5.1 The Contracting Officer will designate a COTR to assist in the administration and oversight of the contract.  The COTR’s authority will be
+       delegated in writing by the Contracting Officer and is limited to those duties designated.  The authority is not re-delegable.  If the
+       assigned COTR is unavailable, all duties revert back to the Contracting Officer.  The COTR responsibilities will include the following:
+
+            • Act as the sole Government technical focal point and liaison with the contractor.
+            • Monitor performance to determine if the services/deliverables meet Government requirements.
+
+            • Provide technical reviews of contract proposals and submittals.
+
+            • Authorize release of Government materials or actions.
+
+            • Coordinate activities between the Government and contractor.
+
+            • Oversee and account for Government furnished material or facilities.
+
+            • Review contractor invoices/payment vouchers and recommend approval.
+
+            • Attend meetings or conferences to determine status.
+
+            • Provide technical direction as long as it does not change price, quantity, or schedule.
+
+            • Review and recommend for approval to the Contracting Officer for contractor travel requests.
+
+            • Advise the Contracting Officer on all technical matters related to performance
+
+
+   2. The contractor shall notify the COTR if problems arise adversely affecting the performance of any effort under this contract.
+
+   3. The COTR is:
+
+
+      JoAnne Rountree
+      Department of Veterans Affairs
+      Financial Services Center
+      1615 Woodward St.
+      Austin, Texas 78772
+      (512) 460-5757  (phone)
+      Joanne.rountree@va.gov (email)
+
+7.   PERIOD OF PERFORMANCE AND CLAUSES
+
+     1. The performance period is one year from the date of award for the Base Year with an additional four (4) option years.  This solicitation
+        requests quotes for work to be performed during the Period of Performance, base and all options.  Submit pricing for the base year and
+        all option years, setting out each year separately.
+
+7.2   The following FAR clauses regarding Options (Inserted in their entirety) apply:
+
+7.2.1 FAR 52.217-5 Evaluation of Options - Except when it is determined in accordance with FAR 17.206(b) not to be in the Government’s best
+      interests, the Government will evaluate offers for award purposes by adding the total price for all options to the total price for the
+      basic requirement. Evaluation of options will not obligate the Government to exercise the option(s).
+
+7.2.2 FAR 52.217-8 Option to Extend Services - The Government may require continued performance of any services within the limits and at the
+      rates specified in the contract. These rates may be adjusted only as a result of revisions to prevailing labor rates provided by the
+      Secretary of Labor. This option provision may be exercised more than once, but the total extension of performance hereunder shall not
+      exceed 6 months. The Contracting Officer may exercise the option by written notice to the contractor given at least 60 days prior to the
+      expiration of the contract period.
+
+
+7.2.3 FAR 52.217-9 Option to Extend the Term of the Contract
+
+      (a) The Government may extend the term of this contract by written notice to the contractor given at any time prior to the expiration of
+      the current period of performance; provided that the Government gives the contractor a preliminary written notice of its intent to extend
+      least 60 days prior to the expiration of the current period of performance.  The preliminary notice does not commit the Government to an
+      extension.
+
+
+      (b) If the Government exercises this option, the extended contract shall be considered to include this option clause.
+
+
+      (c) The total duration of this contract, including the exercise of any option years under this clause, shall not exceed five (5) years.
+
+7.2.4  This solicitation document and incorporated provisions and clauses are those in effect through    Federal Acquisition Circular 2005-08.
+
+
+7.2.5  Solicitation provision at FAR 52.212-1, Instructions to Offerors--Commercial Items (JAN 2005) is hereby incorporated by reference.
+
+7.2.6  A written notice of award or acceptance of an offer, mailed or otherwise furnished to the successful offeror within the time for
+      acceptance specified in the offer, shall result in a binding contract without further action by either party. Before the offer’s specified
+      expiration time, the Government may accept an offer (or part of an offer), whether or not there are negotiations after its receipt, unless
+      a written notice of withdrawal is received before award.
+
+7.2.7  Offerors shall include a completed copy of the provision at 52.2 12-3, Offeror Representations and Certifications--Commercial Items (MAR
+      2005) with their offer.
+
+7.2.8  Clause 52.212-4, Contract Terms and Conditions--Commercial Items (SEP 2005), is hereby incorporated by reference.
+
+      a)  The Contractor shall comply with the FAR clauses in this paragraph, that the contracting officer has indicated as being incorporated in
+      this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items:
+
+                    [Contracting Officer shall check as appropriate.]
+
+                  __X _(1) 52.203-6, Restrictions on Subcontractor Sales to the Government (Jul 1995), with Alternate I (Oct 1995)(41 U.S.C. 253g
+                  and 10 U.S.C. 2402).
+                  _____(2) 52.2 19-3, Notice of Total HUBZone Set-Aside (Jan 1999)(15 U.S.C. 657a).
+                  _____(3) 52.2 19-4, Notice of Price Evaluation Preference for HUBZone Small Business Concerns (Jul 2005) (if the offeror elects
+                  to waive the preference, it shall so indicate in its offer)(15 U.S.C.    657a).
+                  _____(4) (i) 52.2 19-5, Very Small Business Set-Aside (June 2003)(Pub. L. 103-403, section 304, Small Business Reauthorization
+                  and Amendments Act of 1994).
+                        _____(ii) Alternate I (Mar 1999) of 52.219-5.
+                        _____(iii) Alternate II (June 2003) of 52.219-5.
+                  _____(5) (i) 52.2 19-6, Notice of Total Small Business Aside (June 2003) (15 U.S.C. 644).
+                        _____(ii) Alternate I (Oct 1995) of 52.219-6.
+                        _____(iii) Alternate II (Mar 2004) of 52.219-6.
+                  _____(6) (i) 52.2 19-7, Notice of Partial Small Business Set-Aside (June 2003)(15 U.S.C. 644).
+                        _____(ii) Alternate I (Oct 1995) of 52.219-7.
+                        _____(iii) Alternate II (Mar 2004) of 52.219-7.
+                  _____(7) 52.2 19-8, Utilization of Small Business Concerns (May 2004) (15 U.S.C. 637(d)(2) and (3)).
+                  _____(8) (i) 52.2 19-9, Small Business Subcontracting Plan (Jul 2005)(15 U.S.C. 637 (d)(4)).
+                        _____(ii) Alternate I (Oct2001) of 52.219-9.
+                        _____(iii) Alternate II (Oct 2001) of 52.219-9.
+                  ______(9) 52.219-14, Limitations on Subcontracting (Dec 1996)(15 U.S.C. 637(a)(14)).
+                  __ ___(10) (i) 52.2 19-23, Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns (Sep 2005)(10 U.S.C.
+                  2323) (if the offeror elects to waive the adjustment, it shall so indicate in its offer).
+                        _____(ii) Alternate I (June 2003) of 52.219-23.
+                  __ ___(ll)52.2 19-25, Small Disadvantaged Business Participation Program—Disadvantaged Status and Reporting (Oct 1999)(Pub. L.
+                  103-355, section 7102, and 10 U.S.C. 2323).
+                  __ ___(12) 52.2 19-26, Small Disadvantaged Business Participation Program—Incentive Subcontracting (Oct 2000)(Pub. L. 103-3 55,
+                  section 7102, and 10 U.S.C. 2323).
+                  _____(13) 52.2 19-27, Notice of Total Service-Disabled Veteran-Owned Small Business Set-Aside (May 2004).
+                  _____(14) 52.222-3, Convict Labor (June 2003)(E.O. 11755).
+                  __X__(15) 52.222-19, Child Labor—Cooperation with Authorities and Remedies (June 2004) (E.O. 13126).
+                  _ __  (16) 52.222-21, Prohibition of Segregated Facilities (Feb 1999).
+                  _  _ _ (17) 52.222-26, Equal Opportunity (Apr 2002)(E.O. 11246).
+                  _____ (18) 52.222-35, Equal Opportunity for Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans
+                  (Dec 2001)(38 U.S.C. 4212).
+                  _____ (19) 52.222-36, Affirmative Action for Workers with Disabilities (Jun 1998)(29 U.S.C. 793).
+                  _____ (20) 52.222-37, Employment Reports on Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans
+                  (Dec 2001)(38 U.S.C. 4212).
+                  ______(21) 52.222-39, Notification of Employee Rights Concerning Payment of Union Dues or Fees (Dec 2004) (E.O. 13201).
+                  __X__ (22) (i) 52.223-9, Estimate of Percentage of Recovered Material Content for EPA-Designated Products (Aug 2000)(42 U.S.C.
+                  6962(c)(3)(A)(ii)).
+                        _____(ii) Alternate I (Aug 2000) of 52.223-9 (42 U.S.C. 6962(i)(2)(C)).
+                  _____(23) 52.225-1, Buy American Act--Supplies (June 2003)(41 U.S.C. l0a-l0d).
+                  _____(24) (i) 52.225-3, Buy American Act —Free Trade Agreements - Israeli Trade Act (Jan 2005)(41 U.S.C. lOa-lOd, 19 U.S.C.
+                  3301 note, 19 U.S.C. 2112 note, Pub. L. 108-77, 108-78, 108-286).
+                        _____(ii) Alternate I (Jan 2004) of 52.225-3.
+                        _____(iii) Alternate II (Jan 2004) of 52.225-3.
+                  __X_(25) 52.225-5, Trade Agreements (Jan 2005)(19 U.S.C. 2501, etseq., 19 U.S.C. 3301 note).
+                  __X__(26) 52.225-13, Restrictions on Certain Foreign Purchases (Mar 2005) (E.o.s, proclamations, and statutes administered by
+                  the Office of Foreign Assets Control of the Department of the Treasury).
+                  _____(27) 52.225-15, Sanctioned European Union Country End Products (Feb 2000)(E.O. 12849).
+                  _____(28) 52.225-16, Sanctioned European Union Country Services (Feb 2000)(E.O. 12849).
+                  _____(29) 52.232-29, Terms for Financing of Purchases of Commercial Items (Feb 2002)(41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+                  _____(30) 52.232.30, Installment Payments for Commercial Items (Oct 1995)(41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+                  _____(31) 52.232-33, Payment by Elecironic Funds Transfer— Central Contractor Registration (Oct. 2003)(3 1 U.S.C. 3332).
+                  _____(32) 52.232-34, Payment by Electronic Funds Transfer—Other Than Central Contractor Registration (May 1999)(31 U.S.C.
+                  3332).
+                  __X _(33) 52.232-36, Payment by Third Party (May 1999)(31 U.S.C. 3332).
+                  _____(34) 52.239-1, Privacy or Security Safeguards (Aug 1996)(5 U.S.C. 552a).
+                  _____(35) (i) 52.247-64, Preference for Privately Owned U.S-Flag Commercial Vessels (Apr 2003)(46 U.S.C. 1241 and 10 U.S.C.
+                  2631).
+                        _____(ii) Alternate I (Apr 2003) of 52.247-64.
+
+      (b)  The Contractor shall comply with the FAR clauses in this paragraph (b), applicable to commercial services, that the Contracting
+      Officer has indicated as being incorporated in this contract by reference to implement provisions of law or executive orders applicable to
+      acquisitions of commercial items:
+
+                      [Contracting Officer check as appropriate.]
+
+                  _____(1) 52.222-41, Service Contract Act of 1965, as Amended (Jul 2005)(41 U.S.C. 351, et seq.).
+                  _____(2) 52.222-42, Statement of Equivalent Rates for Federal Hires (May 1989)(29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+                  _____(3) 52.222-43, Fair Labor Standards Act and Service Contract Act -- Price Adjustment (Multiple Year and Option Contracts)
+                  (May 1989)(29 U.S.C.206 and 41 U.S.C. 351, et seq.).
+                  _____(4) 52.222-44, Fair Labor Standards Act and Service Contract Act -- Price Adjustment (Feb 2002)(29 U.S.C. 206 and 41
+                  U.S.C. 351, et seq.).
+                  _____(5) 52.222-47, SCA Minimum Wages and Fringe Benefits Applicable to Successor Contract Pursuant to Predecessor Contractor
+                  Collective Bargaining Agreements (CBA) (May 1989)(41 U.S.C. 351, et seq.).
+
+      (c)  Comptroller General Examination of Record. The Contractor shall comply with the provisions of this paragraph (d) if this contract was
+      awarded using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at 52.2 15-2,
+      Audit and Records --Negotiation.
+
+           (1)    The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to
+           and right to examine any of the Contractor’s directly pertinent records involving transactions related to this contract.
+           (2)    The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for
+           examination, audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR
+           Subpart 4.7, Contractor Records Retention, of the other clauses of this contract. If this contract is completely or partially
+           terminated, the records relating to the work terminated shall be made available for 3 years after any resulting final termination
+           settlement. Records relating to appeals under the disputes clause or to litigation or the settlement of claims arising under or
+           relating to this contract shall be made available until such appeals, litigation, or claims are finally resolved.
+           (3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type
+           and regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in
+           the ordinary course of business or pursuant to a provision of law.
+
+      (d) Notwithstanding the requirements of the clauses in paragraphs (a), (b),  (c) and (d) of this clause, the Contractor is not required to
+      flow down any FAR clause, other than those in paragraphs (i) through (vi) of this paragraph in a subcontract for commercial items. Unless
+      otherwise indicated below, the extent of the flow down shall be as required by the clause-
+
+           (i) 52.2 19-8, Utilization of Small Business Concerns (May 2004)(15 U.S.C. 637(d)(2) and (3)), in all subcontracts that offer further
+           subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $500,000 ($1,000,000 for
+           construction of any public facility), the subcontractor must include 52.219-8 in lower tier subcontracts that offer subcontracting
+           opportunities.
+           (ii) 52.222-26, Equal Opportunity (Apr 2002)(E.O. 11246).
+           (iii) 52.222-3 5, Equal Opportunity for Special Disabled Veterans, Veterans of the Vietnam Era, and Other Eligible Veterans (Dec
+           2001)(38 U.S.C. 4212).
+           (iv) 52.222-36, Affirmative Action for Workers with Disabilities (June 1998)(29 U.S.C. 793).
+           (v) 52.222-39, Notification of Employee rights Concerning Payment of Union Dues or Fees (Dec 2004) (E.O. 13201).
+           (vi) 52.222-41, Service Contract Act of 1965, as Amended (Jul
+           2005), flow down required for all subcontracts subject to the
+           Service Contract Act of 1965 (41 U.S.C. 351, et seq.)
+
+
+8. PROPOSAL INSTRUCTIONS
+
+8.1   Proposals shall be submitted via email on or before the date and time set out in the FedBizOps RFQ notice.  Proposals shall be emailed to
+carol.england@gsa.gov.  All companies must be registered in IT Solutions Shop (ITSS) under open market conditions.  To register in ITSS, open
+http://it-solutions.gsa.gov/ and click on contractor registration under the “Tell Me About Registration” drop down menu.  Project award and
+contract administration will be conducted in ITSS.
+
+8.2   Contractor’s questions shall be submitted to the GSA PM via e-mail within 3 business days of the issue date of the solicitation.
+
+8.3   52.212-2   Evaluation—Commercial Items.
+
+                                                      EVALUATION—COMMERCIAL ITEMS (JAN 1999)
+
+The Government will award a contract resulting from this solicitation to the responsible contractor whose offer conforming to the solicitation
+will be most advantageous to the Government, price and other factors considered. The following factors shall be used to evaluate offers:
+
+Technical Factors:
+1.  Technical Approach
+2.  Past Experience
+
+Non-Technical Factor:
+Price
+
+8.4   Technical approach is significantly more important than past experience and technical approach and past experience, when combined, are
+      more important than price.  Non-Price technical factors will be evaluated first, then price.  GSA will award the task to the vendor that
+      provides the best value to the Government.  Note that as non price factors become closer in system capabilities, price could become the
+      determining factor for award.
+
+8.5   The proposal shall include the contractor’s DUNS, Tax ID, and NAICS Code.
+
+8.6   PROMPT PAYMENT TERMS:  The contractor shall provide their prompt payment discount terms in their proposal.
+
+8.7   OTHER DIRECT COSTS (ODC’s):  This task does not anticipate ODC’s, however, ODC’s shall be identified if know.
+
+8.8   Pricing must be provided separate from the technical proposal.
+
+8.9   Technical Approach  – Each contractor will be evaluated on their demonstrated understanding of the task order requirements (Feasible), the
+adequacy of the solution approach (Practical), the quality and completeness of their technical solutions to these objectives (Appropriate).
+
+
+8.9.1 Contractors ability to meet VA specific requirements as outlined in the PWS relating to the following key areas:
+
+            ▪ Post Award Orientation Conference
+            ▪ Project Plan
+            ▪ Provide Medical Claims Clearinghouse Services
+            ▪ Written Monthly Activity Reports and Interim Reports
+         ▪ Quality Control Plan (QCP) – Contractors will provide a QCP in accordance with the QASP in section 5.2.
+         ▪ The Technical Approach shall be limited to 20 pages.
+
+8.10  Past Experience:
+
+8.10.1  Contractors shall submit documentation of at least three past or current contracts/task orders executed within the past 3-5 years with
+comparable (same or similar scope, size, duration, complexity) requirements to the solicited task.  At least one contract/task order should be a
+Federal contract/order with the U.S. Federal Government.  In rating this factor, the Government will evaluate the firm's comparable experience.
+This factor will be evaluated as a measure of the Government's confidence in the vendor’s ability to successfully complete a project with
+comparable scope, size, duration, and complexity to the solicited task.  Note:  Limit each narrative to one (1) page.
+
+8.10.2  Each narrative shall include the project title, project number, customer, key personnel, length of project, and description of project
+and services provided.
+
+8.10.3  Describe projects your firm has or is working on that address the kinds and types of requirements specifically called out in the PWS.
+Direct experience with similar systems of other agencies should be highlighted.
+
+8.10.4  The Government may supplement the information provided with any other information it may obtain from any other source including its own
+experience with your firm (or Sub-vendor or teaming partner), and information concerning past experience from any other reliable source.
+
+8.11  Price
+
+8.11.1      Pricing shall be for a base year and four (4) additional one-year option years, with each year set out separately and a grand total
+       for all five years.  The proposal must be priced by year and include a summary for the base year and the 4 option years.
+
+8.11.2      This task order will be awarded as Firm Fixed Price Per Volume.
+
+   3. In an effort to receive the highest quality solution at the best value, the government requests all available discounts on all services
+      offered by contractors for this requirement.  Contractors are encouraged to offer discounts below contract rates. When offering discounts,
+      proposals must clearly identify both the contract and the discount price.
+
+   4. The Government is expecting unit price per volume based costing for the claims.  The contractor shall provide unit prices for each type of
+      claim.
+
+
+9. LEVEL OF EFFORT
+
+Note:  Start-Up Services is an initial connection and set up with the FSC.
+
+Base Year
+|ITEM                                |Estimated Volume          |Unit Price Per Volume  |Extended Price            |DISCOUNT                     |
+|Start Up Services                   |N/A                       |N/A                    |                          |                             |
+|HCFA OCR Claims                     |139,750                   |                       |                          |                             |
+|UB OCR Claims                       |53,750                    |                       |                          |                             |
+|837 Health Care Claims              |61,500                    |                       |                          |                             |
+|835 Health Care Claim Payment       |40,000                    |                       |                          |                             |
+
+ Option Year 1
+|ITEM                                |Estimated Volume          |Unit Price Per Volume  |Extended Price            |DISCOUNT                     |
+|HCFA OCR Claims                     |143,000                   |                       |                          |                             |
+|UB OCR Claims                       |55,000                    |                       |                          |                             |
+|837 Health Care Claims              |22,000                    |                       |                          |                             |
+
+Option Year 2
+|ITEM                                |Estimated Volume          |Unit Price Per Volume  |Extended Price            |DISCOUNT                     |
+|HCFA OCR Claims                     |157,000                   |                       |                          |                             |
+|UB OCR Claims                       |60,500                    |                       |                          |                             |
+|837 Health Care Claims              |24,200                    |                       |                          |                             |
+
+Option Year 3
+|ITEM                                |Estimated Volume          |Unit Price Per Volume  |Extended Price            |DISCOUNT                     |
+|HCFA OCR Claims                     |173,030                   |                       |                          |                             |
+|UB OCR Claims                       |66,500                    |                       |                          |                             |
+|837 Health Care Claims              |26,620                    |                       |                          |                             |
+
+ Option Year 4
+|ITEM                                |Estimated Volume          |Unit Price Per Volume  |Extended Price            |DISCOUNT                     |
+|HCFA OCR Claims                     |190,000                   |                       |                          |                             |
+|UB OCR Claims                       |73,000                    |                       |                          |                             |
+|837 Health Care Claims              |29,300                    |                       |                          |                             |
+
+
+
+10.0  CONTRACTOR RESPONSIBILITIES TO RECEIVE PAYMENT - FAR Clause 52.212-4, Contract Terms and Conditions – Commercial Items (Oct 2003) applies
+to this task.  Additional instructions on invoicing and payment are provided below.
+
+10.1  Systems Submission of Invoices -  Invoice submission is a two step process:
+
+10.1.1      The Contractor shall develop an Acceptance Information document in IT Solutions Shop (ITSS) and attach a copy of invoice with all
+required back-up documentation.
+
+            Current ITSS web site https://it-solutions.gsa.gov
+
+10.1.2      Contractor must obtain client acceptance through ITSS.  If unable to perform this function in ITSS the contractor must send a copy
+of the invoice with client acceptance to the following address:
+
+           GSA/FTS/7TC
+           ATTN:  Client Acceptance
+           819 Taylor Street, Room 11A30
+           Fort Worth, TX  76102
+
+10.1.3      The Contractor shall also complete the invoice form on the Finance web site and attach an electronic copy of invoice.  This is the
+official system of record; the invoice will not be processed for payment unless this process is completed.
+
+           Current General Services Administration (GSA) Finance web site is www.finance.gsa.gov.  Go to http://finance.gsa.gov/password/ to
+           obtain Password/Sign-Up for Email Notification.
+
+10.2  Invoice Submission Process
+
+10.2.1      Submit each invoice only once in ITSS and the Finance website.  If editing is required, update the first submission; don’t create a
+second invoice submission.  Make sure the invoice amount and the acceptance document amount are the same.  Use the same invoice number for both
+the Finance and ITSS submission.  Don’t use voucher numbers.  Always enter the invoice number on the Acceptance document in ITSS.  The invoice
+number must be identical in both sites.
+
+10.2.2      Do not use special characters in the invoice number, only alpha and/or numeric.  No spaces in invoice number.
+
+10.2.3      If an invoice is rejected, a corrected invoice will be submitted using the original invoice number with some type of unique
+identifier attached; i.e. “R” to denote resubmission which will make the invoice number unique.  Each invoice submission must have an invoice
+number that is unique.  The corrected invoice must be submitted both in ITSS and the Finance website with the new resubmitted invoice number.
+
+10.2.4      In addition, the contractor is responsible for ensuring client acceptance of invoice. This can be accomplished in ITSS or contractor
+may have client sign a hard copy of invoice prior to attaching to the Acceptance Information document in ITSS.
+
+10.3  Timing of invoices - Invoices shall be submitted for payment of items/services that have been completed and accepted by the Contracting
+      Officer Representative (COR).
+
+10.4  Payment of Invoices
+
+10.4.1      Payment of invoices shall be based on the acceptability of the invoiced item.  All items invoiced must meet or exceed the
+contractual standard.  If the invoiced item does not meet the established contractual standard, the invoice will not be paid until the item has
+been determined to meet the established standards.
+
+10.4.2      The contractor is reminded that invoices shall be submitted In accordance with (IAW) FAR 52.212-4, Contract Terms and Conditions –
+Commercial Items, paragraph g, which states the following:
+
+           52.212-4(g) Invoice.
+           (1) The contractor shall submit an original invoice and three copies (or electronic invoice, if authorized) to the address designated
+           in the contract to receive invoices. An invoice must include:
+
+
+           (i) Name and address of the contractor;
+           (ii) Invoice date and number;
+           (iii) Contract number, contract line item number and, if applicable, the order number;
+           (iv) Description, quantity, unit of measure, unit price and extended price of the items delivered;
+           (v) Shipping number and date of shipment, including the bill of lading number and weight of shipment if shipped on Government bill of
+           lading;
+           (vi) Terms of any discount for prompt payment offered;
+           (vii) Name and address of official to whom payment is to be sent;
+           (viii) Name, title, and phone number of person to notify in event of defective invoice; and
+           (ix) Taxpayer Identification Number (TIN). The contractor shall include its TIN on the invoice only if required elsewhere in this
+           contract.
+           (x) Electronic funds transfer (EFT) banking information.
+
+10.4.3      The contractor shall include EFT banking information on the invoice only if required elsewhere in this contract.
+
+10.4.4      If EFT banking information is not required to be on the invoice, in order for the invoice to be a proper invoice, the contractor
+shall have submitted correct EFT banking information in accordance with the applicable solicitation provision, contract clause (e.g., 52.232-33,
+Payment by Electronic Funds Transfer—Central Contracting Registration, or 52.232-34, Payment by Electronic Funds Transfer—Other Than Central
+Contracting Registration), or applicable agency procedures.
+
+10.4.5      EFT banking information is not required if the Government waived the requirement to pay by EFT.
+
+10.4.6      Invoices will be handled in accordance with the Prompt Payment Act (31 U.S.C. 3903) and Office of Management and Budget (OMB) prompt
+payment regulations at 5 CFR part 1315.
+
+10.5  Other Information Relating to Successful Invoice Processing
+
+10.5.1      If any of the information listed above is absent from an invoice, GSA will reject your invoice.
+
+10.5.2      Due to Congressional Mandate and the Policy Memo from the Office of the Chief Financial Officer, all purchase order contractor data
+(including contracts) in ITSS must match the contractor data in the Central Contracting Registration (CCR).  Finance is now rejecting purchase
+orders, purchase order modifications and invoices having data that does not match CCR information.  This includes all orders regardless of
+remaining value.  Contact the GSA CO or GSA PM for further information or assistance.
+
+10.5.3      Review contractor registration, individual contract personnel registration and contract registration in ITSS on a regular basis to
+ensure all information is correct and up-to-date.  This will help in processing invoices as well as task order actions successfully.  The ITSS
+Help desk phone number is 1-877-243-2889 and their website is https://it-solutions.gsa.gov.
+
+10.5.4      Be sure to reference ACT number when submitting requests for client acceptance.  Monthly status report shall also be submitted in
+ITSS with the invoice.
+
+10.5.5      If an invoice is rejected, it is the responsibility of the contractor to notify the Project Manager (PM) so issues can be resolved
+in a timely manner.
+

@@ -1,0 +1,638 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FBPD-ARC-11-CI-0007.pdf%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us"/><script type="text/javascript">url="http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FBPD-ARC-11-CI-0007.pdf%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>
+Price Matrix for IDIQ Contract
+The Offeror shall manipulate the number of lines per item to accurately provide a price breakdown, if necessary.  All items listed below shall be priced for the base and all nine (9) option periods.  Refer to Volume II outlined on Page 31 and see identified PWS task numbers and item(s) listed below for description of requirements.
+The following items will be required through the life of the contract, and will be required through the issuance of a task order. Base Period Option Period I Option Period II Option Period III  Option Period IV Option Period V Option Period VI Option Period VII Option Period VIII Option Period IX
+Firm-Fixed Price Tasks:
+Draft Implementation Plan (Task 1) Draft to be submitted with contract proposal.
+Final Implementation Plan (Task 2) Subsequent non ARC implementations will price Task 2 in accordance with the firm-fixed price labor rates below.
+CWS Software Package (Task 3)
+Technical Support Help Desk (Task 4) (per month)
+System Documentation
+     Technical Software (Task 5)
+     System User Manual (Task 6)
+Initial Training Sessions (Task 7a) (per session)
+General User Training Sessions (Task 7b) (per session)
+Annual Licenses Maintenance (Task 8)
+     Insert Quantity Discounts
+     Insert Quantity Discounts
+Software Licenses Optional line item may be awarded at any time during the life of the contract to include initial implementation.
+     Insert Functionality Type & Quantity
+     Insert Functionality Type & Quantity
+Firm-Fixed Price Labor Rates:
+Professional IT Consulting Services (Task 9 and Task 2 of Option Periods) Add/delete lines for each labor category, as needed. 
+     Insert Labor Category & Hourly Rates
+     Insert Labor Category & Hourly Rates
+     Insert Labor Category & Hourly Rates
+Development of Other Financial System Integration Add/delete lines for each labor category, as needed. 
+     Insert Labor Category & Hourly Rates
+     Insert Labor Category & Hourly Rates
+     Insert Labor Category & Hourly Rates
+Travel (Section 17.0) Travel estimates will be required at the task order level and will be in accordance with the Federal Travel Regulation. 
+Note:  Also provide pricing for Task Order 0001 in accordance with the pricing provided in the matrix above.
+
+Technical Exhibit 1 - Contract Writing System Requirements
+Process / Activity Requirement Number Category Mandatory or Value Added (VA) Requirements Meets (Y/N) VA included in COTS (Y/N) Comments/Notes
+(Include cost of Value Added customization) FHFA Priority
+High - Must Have
+Medium - Nice to Have
+Low - Wish List     Gap Detected  Gap Analysis                    (LOE)
+High
+ (81+)                                                                                                                                                                                                                                                              Medium (41-80)                                                                                                                                                                                                                                                                Low 
+(0-40) (B) Business Process Change
+(R)export
+(I)interface
+(C)configuration
+(E)extension
+(S) Standard  System Source Test Plan ID Test Script ID Test Results (P/F)
+General
+GM-01 General Mandatory Shall capture and process acquisition documents, such as:
+-- Requisitions (Purchase Requests)
+-- Requisition amendments
+-- Solicitations
+-- Solicitation amendments
+-- Contracts
+-- Contract modifications
+-- Delivery/Purchase/Task Orders
+-- Delivery/Purchase/Task Order modifications
+-- Interagency Agreements (IAA)
+-- IAA modifications
+-- Blanket Purchase Agreements (BPAs)
+-- BPA modifications
+-- BPA Calls
+-- BPA Call modifications
+GM-02 General Mandatory Shall maintain contract type codes that are consistent with the FAR, such as:
+-- FFP (Firm Fixed Price)
+-- FPI (Fixed Price Incentive)
+-- CPAF (Cost Plus Award Fee)
+-- T&M (Time and Materials)
+-- Labor Hour
+-- Fixed Fee
+GM-03 General Mandatory Shall maintain solicitation method codes as consistent with the FAR, such as:
+-- IFB (Invitation for Bids)
+-- RFQ (Request for Quotations)
+-- RFP (Request for Proposals)
+-- SAP (Simplified Acquisition Procedures)
+GM-04 General Mandatory Shall maintain competition extent codes as consistent with the FAR and FPDS-NG, such as:
+-- Full and open competition
+-- Not available for competition
+-- Not competed
+-- Competed under Simplified Acquisition Threshold (SAT)
+GM-05 General Mandatory Shall maintain a classification code structure consistent with the Federal Supply Classification (FSC) codes and the Product Service Codes (PSC).
+GM-06 General Mandatory Shall maintain a North American Industry Classification System (NAICS) code structure, including sub-codes, consistent with the standard NAICS codes assigned by the U.S. Census Bureau http://www.census.gov.
+GM-07 General Mandatory Shall maintain a funding status code structure to include the following funding statuses:
+-- Fully funded
+-- Incrementally funded
+-- Subject to availability of funds
+-- Unfunded
+-- Other
+GM-08 General Mandatory Shall maintain the following address codes segregated by customer:
+-- Ship to address
+-- Bill to address
+-- Originating office address
+-- Issuing office address
+-- Administrating office address
+GM-09 General Mandatory Shall maintain agency defined text statements for use in populating text fields in documents.  Security Shall be such that user can only view their own agency's statements.
+GM-10 General Mandatory Shall capture vendor information such as:
+-- Vendor ID
+-- DUNS #
+-- DUNS +4
+-- Vendor Name 
+-- Vendor Address
+-- Vendor POC
+-- Vendor Email Address
+GM-11 General Mandatory Shall provide query capability on vendor information.
+GM-12 General Mandatory Shall prevent duplicate vendor ID codes.
+GM-13 General Mandatory Shall prevent the change of vendor data on an approved acquisition document after invoices or receipts have been posted.
+GM-14 General Mandatory Shall allow the allocation of funds by percentage or manual entry at the lowest level of the line items.
+GM-15 General Mandatory Shall deliver a contract file document check-out capability that will prevent documents from being checked out in read/write mode by multiple users.
+GM-16 General Mandatory Shall generate a unique system-generated document number for all document types and document versions.
+GM-17 General Mandatory Shall allow manual document numbering of all document types and document versions
+GM-18 General Mandatory Shall validate that document numbers are unique.
+GM-19 General Mandatory Document number used in CWS shall be the same alphanumeric scheme or referenced in the financial system.
+GM-20 General Mandatory Shall send new document and modified data to Oracle Federal Financials financial modules to allow appropriate financial reporting.  This includes cancellation of documents.
+GM-21 General Mandatory Shall allow the use of the following values from the financial system:
+-- Accounting Classification values 
+-- Payment Terms
+GM-22 General Mandatory Shall capture and provide access for authorized users to view documents at all acquisition stages that will link to the original document number, (i.e. requisition Shall provide a direct link to the associated solicitation(s) and/or award documents and vice versa).
+GM-23 General Mandatory Shall be able to populate data from CWS document into all Procurement standard forms as designated by the FAR in a viewable and printable format.
+
+GM-24 General Mandatory Shall support assignment of a unique Procurement Instrument IDentifier (PIID or reference PIID) in accordance with the FAR or agency supplement. 
+GM-25 General Mandatory Shall contain a validation process that will ensure that required fields are complete, funds are available (document total and line level), and accounting segments are accurate.
+GM-26 General Mandatory Display on-screen message to the user when any acquisition document (referenced in GM-01 above) data fails a validation edit.  This notification shall include an error code, description, and validation error level (rejection or warning).
+GM-27 General Mandatory Shall allow documents to be held for data entry completion or processing at a later date.
+GM-28 General Mandatory Shall allow authorized users to correct errors or warnings after failed edits.
+GM-29 General Mandatory Shall prevent further approval of documents that fail validation error checks.
+GM-30 General Mandatory Shall allow approval of documents that fail validation warning checks.
+GM-31 General Mandatory Shall allow authorized users to cancel processed documents.
+GM-32 General Mandatory Shall allow authorized users to delete unprocessed documents.
+GM-33 General Mandatory Shall capture the current system processing status on all documents.
+GM-34 General Mandatory Shall capture the date, time stamp and user information when document status changes.
+GM-35 General Mandatory Shall allow authorized users to reopen a closed document to allow further processing without creating an amendment or modification.
+GM-36 General Mandatory Shall allow for a query on all document types by the following information:
+-- Action history
+-- Document status
+-- Associated parent documents
+-- Document type
+-- Vendor
+-- Owner
+-- Document number
+-- Line item description
+-- Agency
+-- Contracting Officer
+-- COTR
+-- Transaction date range
+-- Status date range
+GM-37 General Mandatory All data elements shall be available for reporting or internal searches.
+GM-38 General Mandatory Shall update the status of documents from initial creation through closeout.
+GM-39 General Mandatory Shall associate imported files with system maintained acquisition documents. Shall capture index data for all filed materials, such as:
+-- Attachment/document name
+-- Description
+-- Date added
+-- Browse functionality to attach file to document
+GM-40 General Mandatory Shall retain each version of all document types separately not to be overwritten when the next modification is created regardless of document status.
+GM-41 General Mandatory Shall provide a text box that will generate a summary of changes of the data fields on a modification to an existing award.  Users Shall be able to edit this field.
+GM-42 General Mandatory Shall define at least eight (8) levels of document approval/review.
+GM-43 General Mandatory Shall allow changes to approval/review levels in GM-42. 
+GM-44 General Mandatory Shall allow the definition of approval rules by document type, dollar amount and/or account segment by customer.
+GM-45 General Mandatory Shall capture user comments when approving/disapproving documents
+GM-46 General Mandatory Shall prevent changes to document once submitted for approval.  Shall allow override by authorized officials.
+GM-47 General Mandatory Shall provide spell check functionality for large text fields.
+GM-48 General Mandatory Shall provide an Unawarded Action report.
+GM-49 General Mandatory Shall provide an Awarded Actions report.
+GM-50 General Mandatory Shall provide a Buyer Workload report.
+GM-51 General Mandatory Shall provide an Open Contract Listing, including current expiration date and available options.
+GM-52 General Mandatory Shall provide audit report of invalid log in attempts.
+GM-53 General Mandatory Shall provide audit report of deleted documents.
+GM-54 General Mandatory Shall provide audit report of changes to user profile.
+GM-55 General Mandatory Shall provide audit report of changes to user responsibilities.
+GM-56 General Mandatory Shall provide ability to capture Oracle Project Accounting information, such as:
+-- Project
+-- Task          
+-- Expenditure Organization
+-- Expenditure Type
+-- Expenditure Date
+GM-57 General Mandatory Shall integrate the Oracle Project Accounting date to the financial system.
+GVA-01 General Value Added Should send new document and modified data to other Federal financial systems in addition to Oracle Federal Financials.
+GVA-02 General Value Added Should allow references to externally stored documentation
+GVA-03 General Value Added Should maintain a procurement purpose code structure that is consistent with the FAR, such as:
+-- Supplies
+-- Research and Development
+-- Services
+-- Construction 
+-- Architect-Engineering
+-- Utility Services
+GVA-04 General Value Added Should maintain a Zip+4 code structure consistent with the United States Postal Service (USPS) ZIP+4 Codes.
+GVA-05 General Value Added Should allow for referential look up of CCR data for relevent vendor data.
+GVA-06 General Value Added Should identify updated CCR company names (legal, DBA, or division) that are different than vendor names on obligations.
+GVA-07 General Value Added Should define user-configurable checklists of required processing steps by document type to be configurable by agency.
+GVA-08 General Value Added Should capture the completion status of each checklist item.
+GVA-09 General Value Added Should prevent finalization of documents until all required checklist items are cleared.  Allow override by authorized officials with remarks.
+GVA-10 General Value Added Should provide query of all checklist data with a result in a display of checklist items and their completion status.
+GVA-11 General Value Added Should notify user of checklist items that have not been completed when documents are submitted for finalization.
+GVA-12 General Value Added Should provide the ability to mark attachments and supporting documentation as sensitive to prevent other users not listed on award document from viewing.
+GVA-13 General Value Added Should have the ability to create and store forms and/or letters.
+Requisitions
+RM-01 Requisition Mandatory Shall have ability to create a requisition using FAR requisition form templates that capture supplies, services, price and cost entries.
+RM-02 Requisition Mandatory Shall capture requestor information.
+RM-03 Requisition Mandatory Shall capture the following data elements for header requisition documents:
+-- Requisition number
+-- Version
+-- Total amount
+-- Committed amount
+-- Requisitioner Name
+-- Requisition Date
+-- Buying Agent
+-- Buyer Assigned Date
+-- Agency
+-- Period of Performance
+-- Invoice Approver or COTR
+-- Payment Office Address
+-- Fields to enter free form text to print on standard form
+-- Approved date
+-- Supporting Documents
+-- Agency Specific Configurable fields
+-- Toggle to change view from current modification information to consolidated view of document after all modifications
+RM-04 Requisition Mandatory Shall capture the following information at the requisition line level:
+-- Line number
+-- Item Description
+-- Option Item indicator
+-- Item Status
+-- Line amount
+-- Item number/NSN/Part number
+-- Period of Performance
+-- Quantity
+-- Unit of measure
+-- Unit Price
+-- Extended Price
+-- Free on Board (FOB) shipping points
+-- Ship-To address
+-- Ship To Amount
+-- Deliver By Date or Days After Award 
+-- Accounting classification segments
+
+RM-05 Requisition Mandatory Shall have ability to assign and reassign requisitions to appropriate buyers.
+RM-06 Requisition Mandatory Shall allow the upload of supporting documents to a requisition.
+RM-07 Requisition Mandatory Shall capture the accounting information on each requisition line item.
+RM-08 Requisition Mandatory Shall have ability to amend requisition after final approval to update/add information as needed based on RM-03 and RM-04.
+RM-09 Requisition Mandatory Shall provide ability to cancel requisitions until the point of award.
+RM-10 Requisition Mandatory Shall change status of requisition to closed (or equivalent) when awarded.
+RVA-01 Requisition Value Added Shall capture information on multiple suggested sources, such as:
+-- Vendor Name
+-- Vendor DUNS, if applicable
+-- Vendor Address
+-- Vendor Telephone
+-- Vendor Point of Contact
+-- Vendor Email Address
+RVA-02 Requisition Value Added Shall notify requestor when requisition is awarded.
+Solicitation
+SM-01 Solicitation Mandatory Shall have ability to create a solicitation using FAR form templates that capture supplies, services, price and cost entries.
+SM-02 Solicitation Mandatory Shall capture solicitation-related dates such as:
+-- Synopsis Submission Date
+-- Issue Date (solicitation)
+-- Posted Date/Time
+-- Closing/Due Date
+-- Amendment Date
+SM-03 Solicitation Mandatory Shall build solicitation clause package using FAR Matrix templates.
+SM-04 Solicitation Mandatory Shall allow inclusion of DTAR and agency specific clauses in matrices.
+SM-05 Solicitation Mandatory Shall prevent duplication of selected clauses in multiple clause package sections.
+SM-06 Solicitation Mandatory Shall allow generation of solicitation amendments.
+SVA-01 Solicitation Value Added Should capture the following sections in the solicitation process:
+-- SOW/PWS/SOO with details, if applicable
+-- Packaging and marking
+-- Inspection and acceptance
+-- Deliveries or performance
+-- Contract administration data
+-- Special requirements
+-- Representations, certifications, and other statements of offerors or respondents
+--Instructions, conditions, and notices to offerors and respondents
+-- Evaluation factors for award
+-- Funding plan or status
+SVA-02 Solicitation Value Added Should flag the appropriate provision/clause to include the statement of funding contingency when funds have not been committed or will not be received by issuance of the solicitation.
+SVA-03 Solicitation Value Added Should maintain solicitation mailing lists.
+SVA-04 Solicitation Value Added Should capture correspondence and other information when a solicitation is in a "protest" status.
+Clause
+CM-01 Clause Mandatory Shall maintain current solicitation provisions and contract/order clauses for use in generating solicitations, contracts, and orders consistent with the FAR, Part 52.  Attributes Shall include:
+-- “Provision” or “clause” indicator
+-- Number
+-- Title
+-- Prescription
+-- FAR version date
+-- Effective date
+-- Text
+-- “Incorporated by reference” indicator
+-- Uniform contract format (UCF) section
+-- Status (active, inactive)
+-- Fill ins
+-- Owner organization
+CM-02 Clause Mandatory Shall have ability to create and maintain agency or acquisition-specific provisions/clauses that supplement the FAR, recording the same attributes as contained in CM-01.
+CM-03 Clause Mandatory Shall allow the update of agency specification and/or FAR provisions and clauses and their associated prescription through fill-ins, tables, etc.
+CM-04 Clause Mandatory Shall allow modification and update to provisions and clauses.
+CM-05 Clause Mandatory Shall provide query and view of full text of provisions and clauses and their underlying prescriptions.
+CM-06 Clause Mandatory Shall maintain the following statuses for provisions and clauses in the FAR matrices:
+-- Required                                                                                         -- Required when applicable                                                                 -- Optional                                                                                              -- Alternative provisions and clauses
+CM-07 Clause Mandatory Shall deactivate/remove rescinded or expired clauses to make unavailable for selection when creating clause packages
+CM-08 Clause Mandatory Shall make regulatory changes available for installation within 20 calendar days of publication of an interim or final rule in the Federal Register.
+CM-09 Clause Mandatory Shall allow creation of provision/clause package with solicitation and award document types.
+CM-10 Clause Mandatory Shall notify and give user an option to accept or reject a change to a provision/clause/prescription.
+CM-11 Clause Mandatory Shall notify and give user an option to accept or reject new provisions/clauses that become available for inclusion in solicitations/contracts/orders that are in progress.
+CM-12 Clause Mandatory Shall show listing of all provisions/clauses that have been selected for an acquisition action.
+CM-13 Clause Mandatory Shall allow the update to required provision/clause fill-in data.
+CM-14 Clause Mandatory Shall generate agency specific or user created templates of solicitation provisions and contract/order clauses based on  unique characteristics of a proposed acquisitions action, per FAR matrix.
+CM-15 Clause Mandatory Shall capture full text of a provision/clause, in lieu of incorporation by reference, upon demand.
+CM-16 Clause Mandatory Shall validate and notify user of invalid selections and fill-ins, missing provisions/clauses and incomplete fill-ins.
+CVA-01 Clause Value Added Should receive provision/clause updates within 10 calendar days of publication of an interim or final rule in the Federal Register.
+CVA-02 Clause Value Added Should maintain future-dated effective dates on provisions/clauses and associated prescriptions (e.g., this provision will be effective as of [date]).
+CVA-03 Clause Value Added Should activate provisions/clauses for selection based on clause/provisions effective date.
+Offeror Screening
+OSVA-01 Offeror Screening Value Added Should have Offeror Screening Process with the following steps but not limited to:
+-- Ability to add vendor information to solicitation
+-- Check EPLS
+-- Check CCR
+-- Check ORCA
+-- Check CPARS
+-- Check EEO
+-- Check VETS-100
+-- Generate request for preaward survey
+OSVA-02 Offeror Screening Value Added Should have ability to capture the offer evaluation process, abstract reports, and protests.
+Milestones
+MM-01 Milestones Mandatory Shall define configurable milestone rules for tracking date-driven calendar events based on:
+-- Procurement action
+-- Procurement purpose
+-- Procurement pricing
+-- Document type
+-- Control period (# business days)
+-- Closing process/action
+MM-02 Milestones Mandatory Shall define prerequisite actions that shall be performed prior to a calendar event.
+MM-03 Milestones Mandatory Shall update calendar events by system generated actions or by manual completion.
+MM-04 Milestones Mandatory Shall associate milestones with acquisition documents.
+MM-05 Milestones Mandatory Shall notify users of calendar events based on milestone rules.
+Awards
+AM-01 Awards Mandatory Shall capture the following data elements for header award documents:
+-- Award Number
+-- Order/Call Number - if applicable
+-- Version
+-- Total amount
+-- Obligation amount
+-- Award date / GL Date
+-- Effective Date
+-- Vendor Name 
+-- DUNS/Supplier Code
+-- DUNS+4 number
+-- Buying Agent
+-- Contracting officer
+-- Period of performance (header level)
+-- Primary product or service code
+-- NAICS Code
+-- Administrative Office Address
+-- Issuing Office Address
+-- Payment Office Address
+-- Payment terms
+-- Source system ID
+-- Associated document(s) reference number
+-- Obligation type (contract, delivery/task order, purchase order)
+-- Treasury Account Symbol
+-- Matching type
+-- Fields to enter free form text to print on standard form
+-- Approved date
+-- FPDS-NG transmission information
+-- Agency Specific Configurable Fields
+-- Toggle to change view from current modification information to consolidated view of document after all modifications
+AM-02 Awards Mandatory Shall capture the following information at the contract line or sub-line level:
+-- Line number (alphanumeric)
+-- Item Description
+-- Option Item indicator
+-- Item Status
+-- Line amount
+-- Reference document number
+-- Reference document line item
+-- Item number/NSN/Part number
+-- PSC or FSC
+-- Period of Performance
+-- Quantity
+-- Unit of measure
+-- Unit Price
+-- Extended Price
+-- Invoice/Receipt Matching Type (e.g. 2-way/3-way)
+-- Free on Board (FOB) shipping points
+-- Ship-To address
+-- Ship To Amount
+-- Deliver By Date or Days After Award 
+-- Accounting classification segments
+-- Distinguish between goods and services type
+AM-03 Awards Mandatory Shall have ability to generate a new award document from an existing award document.
+AM-04 Awards Mandatory Shall reference multiple prior documents, such as associate one solicitation to multiple requisitions, or multiple awards to one requisition.
+AM-05 Awards Mandatory Shall allow attachment of award terms and conditions, including customized clause text and fill-ins.
+AM-06 Awards Mandatory Shall associate the full award package to the award documents, including clause packages and attachments.
+AM-07 Awards Mandatory Shall allow single solicitation to multiple awards.
+AM-08 Awards Mandatory Shall capture contract information to include a list of documents, exhibits, fill-ins, and other attachments.
+AM-09 Awards Mandatory Shall upload attachments and exhibits and make viewable within application.
+AM-10 Awards Mandatory Shall generate a list of uploaded attachments and exhibits for procurement instruments and award actions as separate files.
+AM-11 Awards Mandatory Shall have the ability to modify and delete attachments/supporting documents and exhibits prior to award as needed.
+AM-12 Awards Mandatory Shall associate award line items with solicitation line items.
+AM-13 Awards Mandatory Shall allow multiple line items on a solicitation to be utilized to create one line item of an award document
+AM-14 Awards Mandatory Shall allow one line item of a solicitation to be utilized to create multiple line items of an award document.
+AM-15 Awards Mandatory Shall allow multiple line items on a requisition to be utilized to create one line item of an award document
+AM-16 Awards Mandatory Shall allow one line item of a requisition to be utilized to create multiple line items of an award document.
+AM-17 Awards Mandatory Shall prevent an award to any vendors whose CCR registration is expired.
+AM-18 Awards Mandatory Shall provide the ability to override when awarding to vendors with an expired CCR record.
+AM-19 Awards Mandatory Shall prevent award from processing if funds are not available.
+AM-20 Awards Mandatory Shall have ability to set a tolerance between the award and requisition as a hard error or warning message by customer
+AM-21 Awards Mandatory Shall capture designated COR, COTR and/or POC.
+AM-22 Awards Mandatory Shall allow assignment of Contract Adminstrator personnel to award.
+AM-23 Awards Mandatory Shall capture maximum contract value (MCV) at the contract and/or contract line item levels, as appropriate.
+AM-24 Awards Mandatory Shall interface populated CWS award data to Federal Procurement Data System - Next Generation (FPDS-NG)
+AM-25 Awards Mandatory Shall allow association of task orders or delivery orders to contracts within system.
+AM-26 Awards Mandatory Shall maintain existing document data in separate versions when modifications/amendments are created.
+AM-27 Awards Mandatory Shall capture minimum and maximum quantities on IDIQ contracts.
+AM-28 Awards Mandatory Shall monitor the accumulation quantities delivered on IDIQ contracts.
+AM-29 Awards Mandatory Shall calculate the following values for each contract, task order, delivery order, or agreement:
+-- Funded amount
+-- Unfunded amount (e.g. option periods and quantities/amounts subject to avail)
+-- Total amount of contract
+-- Total modifications
+-- Total obligated amount
+-- Remaining value (total amount of contract less total obligated amount)
+GM-16 AM-30 Awards Mandatory Shall have Procurement Action Lead Time (PALT) tracking functionality
+AM-31 Awards Mandatory Shall modify the data elements, clauses, and related documents of existing awards.
+AM-32 Awards Mandatory Shall modify awards to exercise contract options, including those that are not funded and those that do not require funding, such as indefinite delivery contracts.
+AM-33 Awards Mandatory Shall allow update to the period of performance end date on contract upon exercising contract option or modifying schedule.
+AM-34 Awards Mandatory Shall allow update of the value of a contract (or delivery order, task order, etc) upon processing dollar amount modifications to contracts or exercising options.
+AM-35 Awards Mandatory Shall process concurrent modifications to the same award.
+AM-36 Awards Mandatory Shall allow an update to the contract payment terms.
+AM-37 Awards Mandatory Shall have definable closeout process.
+AM-38 Awards Mandatory Shall maintain an agency defined checklist of contract closeout items.
+AM-39 Awards Mandatory Shall capture closeout user.
+AM-40 Awards Mandatory Shall identify contract(s) eligible for closeout based on the period of performance end date, delivery, or payment status.
+AM-41 Awards Mandatory Shall allow the user to delete the associated files prior to approval of award.
+AM-42 Awards Mandatory Ability to create an Award without a Req shall be configurable by customer.
+AM-43 Awards Mandatory Shall prevent deletion of procurement action-related documents after contract award.
+AM-44 Awards Mandatory Shall maintain approving official profiles, including authorized actions and dollar-value thresholds.
+AM-45 Awards Mandatory Shall capture system user comments on system-maintained acquisition documents and attachments.
+AVA-01 Awards Value Added Should allow use of electronic catalogs which contain shared contracts.  Catalogs would allow the search, sort and selection of items at already established pricing.
+AVA-01 Awards Value Added Should prevent award to excluded parties.
+AVA-02 Awards Value Added Should generate and export the obligation data elements for each contract sub-line item (SLIN) to the financial system.
+AVA-03 Awards Value Added Should capture multiple award ceiling value across associated contracts.
+AVA-03 Awards Value Added Should capture data on the status of protests.
+AVA-04 Awards Value Added Should provide capability for electronic signatures.
+AVA-05 Awards Value Added Should calculate the total payments for each contract, task order, delivery order, or agreement
+AVA-06 Awards Value Added Should have notification process to inform users or an external party, of actions with an agency defined amount of time, including but not limited to: 
+-- Expiring contract options
+-- Ending period of performance
+-- Notify assigned user of acquisition status changes via standard email or application in-box
+-- Expiring warranties period
+-- Calendar events based on milestone rules
+-- When a calendar date is approaching or past due
+-- When minimum and maximums are within an agency-defined range
+-- When the contract ceiling amount is within an agency-defined range
+
+AVA-07 Awards Value Added Should capture status of contract closeout items.
+AVA-08 Awards Value Added Should be able to accept invoice data from financial system to the associated award, such as:
+-- Invoice number
+-- Invoice amount
+-- Payment date
+AVA-09 Awards Value Added Should capture the contract distribution list.  Information should include but not be limited to:
+-- Recipient Name
+-- Recipient Organization
+-- Recipient Company/Agency
+-- Recipient Email
+-- Recipient Address (city, state, zip)
+-- Recipient Telephone
+AVA-10 Awards Value Added Should generate a consolidated copy of the contract form that incorporates any and all changes into a single document.
+Receiving
+RCVA-01 Receiving Value Added Should have receiving module to record the receipt of good and services received, such as:
+-- Receipt number
+-- Receipt amount/quantity
+-- Received date
+-- Received by
+RCVA-02 Receiving Value Added Should capture the current processing status of receiving reports and payment authorizations, such as:
+-- Received by system
+-- Rejected by system
+-- Validated
+-- Returned
+-- Approved
+-- Processed
+-- Cancelled
+RCVA-03 Receiving Value Added Should have receiving data reportable fields.
+RCVA-04 Receiving Value Added Should export receiving reports and receiving report modifications to the financial system.
+System Security
+SSM-01 System Security Mandatory Shall prevent unauthorized users from creating or approving documents.
+SSM-02 System Security Mandatory Shall provide ability to create agency site information.  A site is a specific customer organization or sub-organization.
+SSM-03 System Security Mandatory Shall be able to segregate site information and data from other organizations.
+SSM-04 System Security Mandatory Shall have capability to assign multiple sites to users.  
+SSM-05 System Security Mandatory Shall prevent unauthorized user from viewing documents, accounting strings, statements, clauses, system reports and listing of users belonging to sites for which they are not assigned.
+SSM-06 System Security Mandatory Shall prevent users from logging into the system if they do not correctly type in their password after a definable number of attempts.
+SSM-07 System Security Mandatory Shall lock user from system after definable number of consecutive unsuccessful attempts to log in.
+SSM-08 System Security Mandatory Shall prevent user from logging into system after set number of days of inactivity.
+SSM-09 System Security Mandatory Shall require user to reset password after a system activation or password reset.
+SSM-10 System Security Mandatory Shall support high level password rules to ensure a secure password.
+SSM-11 System Security Mandatory Shall prevent user from reusing password for an established period of time.
+SSM-12 System Security Mandatory Shall automatically expire a user's password after determined number of days
+SSM-13 System Security Mandatory Shall terminate system session after defined period of inactivity.
+SSVA-01 System Security Value Added Should allow system administrators the ability to manually update all lists included from GVA-03 to GVA-13.
+System Utilities
+SUM-01 System Utilities Mandatory Shall provide ability to assign and reassign the following:
+-- Buyer to Requisition
+-- Document site
+-- Owner
+-- Change buyer on released awards
+SUM-02 System Utilities Mandatory Shall provide ability to change buyer on a group of documents at once
+SUM-03 System Utilities Mandatory Shall provide system admins the ability to change document status which will allow a non-financial update after final approval to all document types.
+SUM-04 System Utilities Mandatory Shall provide system admins the ability to restart the import/export process to the financial system, in the event of an error or disapproval.
+SUM-05 System Utilities Mandatory Shall provide system admins the ability to finalize documents  by bypassing the system validation process
+System Setup
+SYM-01 System Setup Mandatory Shall be able to create user.
+SYM-02 System Setup Mandatory Shall be able to update existing user.
+SYM-03 System Setup Mandatory Shall be able to setup roles and responsibilities of user types.
+SYM-04 System Setup Mandatory Shall be able to assign roles and responsibilities to users.
+SYM-05 System Setup Mandatory Shall provide ability to update existing agency sites.
+SYM-06 System Setup Mandatory Shall have ability to create multiple agency sites.
+SYM-07 System Setup Mandatory Shall have ability to associate agency sites together such as creating an independent parent and dependent child sites.
+SYM-08 General Mandatory Shall maintain approving official profiles, including authorized actions and dollar-value thresholds by user and customer.
+SYM-09 System Setup Mandatory Shall prevent the user from bypassing their own approval levels assigned in order to conform to the principle of separation of duties. 
+SYM-10 System Setup Mandatory Shall allow approving official to assign alternate approver in their absence.
+SYM-11 System Setup Mandatory Shall have different control levels for general users and system administrators.
+SYM-12 System Setup Mandatory Shall provide ability to assign individual users with selected rights to admin functionality.
+SYM-13 System Setup Mandatory Shall provide ability to set defined percentage and/or dollar amount requisition to award tolerance level per agency site.
+SYM-14 System Setup Mandatory Shall provide ability to create agency specific system generated document numbering schemes.
+SYM-15 System Setup Mandatory Shall provide ability to set up agency defined customized fields which allow to be set as required, visible and resets to null values.
+SYM-16 System Setup Mandatory Shall restrict the approval of an award document if FPDS-NG record has not been created from within system.
+External Procurement Systems
+EPSVA-01 External Procurement Systems Value Added Should deliver the capability to interface with and import/export to/from the following external systems:
+-- CCR
+-- Excluded Parties List System (EPLS)
+-- On-line Representations and Certifications Application (ORCA)
+-- General Services Administration (GSA) Advantage
+-- FedBizOpps (FBO)
+-- Wage Determination On-Line (WDOL)
+-- Navy Contractor Performance Assessment Reporting System (CPARS) 
+-- eBuy portal (GSA schedule buy)
+-- Solicitation to GPE                                                                                     --FAPIS
+--EEO
+-- VETS 100
+System Technical Requirements
+STM-01 System Technical Mandatory Shall be scalable for future growth (users, functionality, document counts, agencies) to prevent system degradation.
+STM-02 System Technical Mandatory Shall have agency configurable features that are table/parameter driven, e.g. different standard form printing options.
+STM-03 System Technical Mandatory Shall be upgradeable to accommodate changes in laws, regulations, best practices or new technology.
+STM-04 System Technical Mandatory Shall generate output reports, query results, and data files, using multiple formats as specified.  Such formats can include online display, printed report, Portable Document Format (PDF), Microsoft (MS) Word, Excel, eXtensible Markup Language (XML), American Standard Code for Information Interchange (ASCII) or delimited text file.  In cases where an output format is not specified within a requirement, the requested information Shall be viewable to the agency online, using the application user interface.
+STM-05 System Technical Mandatory Shall be able to import approximately 200 gigabytes of data for conversion
+STM-06 System Technical Mandatory Shall deliver a reports management capability to enable online retrieval, viewing, reprinting, and to save reports locally.
+STM-07 System Technical Mandatory Shall support an Oracle relational database. 
+STM-08 System Technical Mandatory Shall deliver an online graphical user interface (GUI).  The GUI Shall provide consistent data entry, navigation, and information presentation across all modules and sub-systems.
+STM-09 System Technical Mandatory Shall comply with Section 508 of the Rehabilitation Act, as detailed in 36 Code of Federal Regulations (CFR) 1194, Subpart B.
+STM-10 System Technical Mandatory Shall incorporate user interface features designed to reduce the amount of direct keying required for transaction processing, such as:
+-- Default values based on system-maintained transaction and user profiles
+-- Value look-up tables
+-- Highlighting or accentuating required fields
+-- Grayed data fields that are unavailable for user entry
+-- Cut, copy and paste functionality
+-- Keyboard shortcuts (e.g., function keys to invoke help facility, clear screen, etc.)
+-- Ability to select records from a list by scrolling or typing only part of an entry
+-- Ability to pass common data from field to field, screen to screen and transaction to transaction
+STM-11 System Technical Mandatory Shall support integration with other common desktop applications (e.g., word processing, spreadsheets, agency e-mail systems, agency browser IE7, Adobe PDF Reader).
+STM-12 System Technical Mandatory Shall deliver capability to import and process requisition and award transactions generated by other systems. 
+STM-13 System Technical Mandatory Shall deliver data record layouts for all transactions that can be imported. 
+STM-14 System Technical Mandatory Transactions shall include sufficient data to enable complete validation and processing by the receiving system.
+STM-15 System Technical Mandatory Shall process API (Application Programming Interface) transactions using the same business rules, program logic, and edits used by the system in processing transactions submitted through the application client.
+STM-16 System Technical Mandatory Shall deliver API processing controls to ensure real-time transactions or batch transactions files are received from authorized sources, complete, and not duplicates. 
+STM-17 System Technical Mandatory Shall generate API transaction edit error records using a data layout defined by the vendor (i.e., provide two-way interface support).
+STM-18 System Technical Mandatory Shall deliver the capability to integrate with an agency operated e-mail system. This capability Shall include the ability to distribute application-generated email messages.
+STM-19 System Technical Mandatory Shall deliver an integrated XML parsing capability.
+STM-20 System Technical Mandatory Shall support TCP/IP for application component connectivity.
+STM-21 System Technical Mandatory All system modules / functionality shall be accessible using an internet browser.
+STM-22 System Security Mandatory Shall meet and maintain the National Institute of Standards and Technology's (NIST) security controls, as outlined in the NIST Special Publication 800-53 Rev 3.  The controls that Shall be satisfied, are the ones that only relate to the application.  This publication can be found at http://csrc.nist.gov/publications/nistpubs/800-53-Rev3/sp800-53-rev3-final_updated-errata_05-01-2010.pdf
+STM-23 System Technical Mandatory Shall generate online status messages to the operator, including job or transaction type, name, when processing initiates, when it completes, and any processing errors encountered.
+STM-24 System Technical Mandatory Shall deliver a restart capability for all application's online and batch processing components. Batch jobs Shall be segmented to facilitate restart in the event of a system failure.
+STM-25 System Technical Mandatory Shall deliver common error-handling routines across functional modules. Shall generate meaningful and traceable error messages that allow the user or system operator to identify and respond to reported problems.
+STM-26 System Technical Mandatory Shall deliver an event logging capability for systems, transactions, tables, and system parameters. The logs Shall include the following:
+-- User ID
+-- System date
+-- Time
+-- Type of activity (i.e., add, modify, delete)
+-- Old value
+-- New value
+STM-27 System Technical Mandatory Shall deliver the capability to process queued jobs (i.e. reports, transaction files from interfacing systems, bulk record updates) with no online performance degradation.
+STM-28 System Technical Mandatory Shall process the agency’s specified workload (appx 50,000 document transactions) without adversely impacting projected online response time (approval/interface completion within 2 minutes).
+STM-29 System Technical Mandatory Shall maintain the agency’s specified current and historical data (e.g., documents, transactions, lines, and vendor records) storage needs with no degradation to online or batch processing performance. (Currently 306,500 total document versions since 2003)
+STM-30 System Technical Mandatory Shall support 300 concurrent users accessing the functional modules of the CWS.
+STM-31 System Technical Mandatory Shall deliver computing performance metrics for platforms and systems environments on which the application is certified to run. Performance metrics provided by the vendor should describe:
+-- Transaction processing throughput capacity
+-- Expected workstation client response time by transaction type and location
+-- Data storage capacity
+-- Limitations on concurrent user connectivity
+
+STVA-01 System Technical Value Added Should have capability to operate in multiple environments using government standard operating system requirements.
+STVA-02 System Technical Value Added Should deliver a context sensitive, online help facility.
+STVA-03 System Technical Value Added Shall incorporate user interface features designed to reduce the amount of direct keying required for transaction processing, such as:
+-- Ability to suppress fields not applicable based upon previous data input
+-- Auto fill text
+STVA-04 System Technical Value Added Shall deliver a document archiving capability, including the ability to define, establish, and maintain archival criteria, such as date, accounting period, closed items, and vendors inactive for a specific time period. Archiving of closed or completed detail transactions Shall not affect related general ledger account balances.
+STVA-05 System Technical Value Added Shall support data archiving and record retention in accordance with rules published by the National Archives and Records Administration (NARA), GAO, and NIST.
+STVA-06 System Technical Value Added Shall deliver the capability to restore archived data based on agency-defined criteria such as date, accounting period, or vendor.
+STVA-07 System Technical Value Added Should deliver the capability to customize error message text.
+Workflow
+WM-01 Workflow Mandatory Shall deliver an integrated workflow management capability to automate internal routing of documents, transactions, forms or reports for online approval processing.
+WM-02 Workflow Mandatory Shall have capability for approvers to designate with a start and end date another approving official as authorized to sign documents.  
+WM-03 Workflow Mandatory Shall deliver the capability to send workflow processes to  required approvers or proxy approving authorities. 
+WM-04 Workflow Mandatory Shall deliver the capability to define multiple levels of document approvals based on agency-defined criteria, including dollar amounts, types of items purchased, and document types.
+WM-05 Workflow Mandatory Shall deliver the capability to define separate user approval levels by document type to a single user. 
+WM-06 Workflow Mandatory Shall deliver the capability to capture approval actions by transaction, including the time/date and approving party.
+WM-07 Workflow Mandatory Shall deliver the capability to route action requests/status messages internally and externally to individuals.
+WM-08 Workflow Mandatory Shall deliver the capability to generate workflow event-based user alerts (e.g., notify the contracting officer of contract expiration "x" days prior to the end of the period of performance).
+WVA-01 Workflow Value Added Should deliver the capability to generate user alerts based on agency defined thresholds (e.g., notify the contracting officer when available funds reach 80% of the contract funding).
+# Action/Issue Event Owner Current Status Comments/Resolutions
+1.0 EOP change requests for new/modified USSGLs, BOC's and Trans Codes submitted to ASD Management for approval. CSB- Shelly Murphy
+2.0 Opportunity to comment on ASD change requests for new/modified USSGLs, BOCs, and Trans Codes. CSB- Shelly Murphy
+3.0 Scheduling of FACTS II requests required with ASD (C1 cannot handle multiple FACTS II submissions at the same time). CSB- Shelly Murphy
+4.0 224- EOP currently runs 224 for all ALC's.  C1 runs by ALC. What happens if you run 224 for all by set of books? POC- Lisa Offenberger
+5.0 Potential delay in concurrent requests having to wait on other processes to finish. CSB- Shelly Murphy            QCB- Lisa Offenberger
+6.0 Advance Process - EOP currently using system process.  ASD currently resting Oracle standard functionality in C1. POC- Lisa Offenberger
+7.0 Additional DFF on fund in C2 not currently displayed in C1. QCB POC- Lisa Offenberger
+8.0 AFF Descriptions - table to be modified to include SOB ID for Discoverer reports PTSB- Dave Williamson QCB POC- Heather Moore
+9.0 ARC Generic Audit (code change) - audit modified to include the SOB ID PTSB- Dave Williamson  QCB POC- Lisa Offenberger
+10.0 CCR - Separate responsibilities to get update for SOB1 and SOB2 CSB- Shelly Murphy
+11.0 Custom Application Discoverer Reports - fields for SOB                                             Need to determine how many.                                 Detail TB can be obtained by all org_ids for EOP. PTSB- Dave Williamson  QCB POC- Heather Moore
+12.0 Custom Application Oracle Reports - SOB parameter                                                  Need to determine how many. PTSB- Dave Williamson QCB POC- Lisa Offenberger
+13.0 Data collections - modify the open items table to include SOB ID.  Change truncate to DELETE based on the SOB profile retrieved. PTSB- Dave Williamson  QCB POC- Heather Moore
+14.0 Data Loads - AP Invoice Interface - needs to fetch the SOB ID from the profile and use to perform all vendor validation PTSB- Dave Williamson POC- Heather Moore
+15.0 EOR - code change and data conversion of setup information PTSB- Dave Williamson QCB POC- Heather Moore
+16.0 ARC Predict - code change with the employee and payment data.  Need to add SOB ID PTSB- Dave Williamson  QCB POC- Lisa Offenberger
+17.0 HHS Grants Migration - code need migrated to C1 and the trigger logic needs to filter for EOP activity only. PTSB- Dave Williamson QCB POC- Lisa Offenberger
+18.0 PYA - Prior Year Adjustment Program - SOB ID PTSB- Dave Williamson QCB POC- Lisa Offenberger
+19.0 Forms Personalization's - ensure vendor information is not available across SOB.                                                        * AP Invoice                                                                       * AP Payment Batch                                                          * AP Invoices - Inquiry Screen                                             * AP Reoccurring Invoices                                                    * AP Payment Overview                                                     * AP View Accounting                                                        * PO Requisition Entry                                                       * PO Summary Screen                                                      * PO Entry Screen                                                             * PO Summary Form - find screen                                      * PO - Auto create                                                              * PO - Releases                                                                 * PO - Receipt Entry                                                          * PO - Return Entry                                                           * Vendor/Suppliers Form                                                    * View Suppliers under all responsibilities                            * New Vendor Search                                                         * AR Customer Standard                                                    * AR Customers Quick                                                       * AR Receipts both standard & MR in DFF                          * AR Transactions - Invoices, Guarantees, credit memos                                                                                                PTSB- Dave Williamson       QCB POC- Lisa Offenberger
+20.0 * GL Journals DFF - segregate the list by OU               * All vendors are available in GL Module.  How will security be applied here?                                            * Customers are viewable (customer name and number) at the Master Level when entering a new customer.                          Will SOB1 operating units see SOB2 customers?                                                 * Will SOB2 be able to see SOB1 batch names, journal names, and descriptions in the GL Journals and Posting Windows (Value Set Security prevents seeing AFF detail)?    PTSB- Dave Williamson       QCB POC- Lisa Offenberger
+21.0 Discoverer Reports - approximately 277 workbooks will need to be recreated QCB POC- Heather Moore                           CSB- Tim Seigneur
+22.0 Setup for EOP CSB- Shelly Murphy
+23.0 Question on whether GL interface errors with journal in SOB1 will hold up to SOB2 journal? POC- Lisa Offenberger
+24.0 SF224 Program - LOV may need to be altered to pull in only EOP ALC's. This needs tested. POC- Lisa Offenberger
+25.0 Conversion Activities -                                                    Vendor conversions                                                           Open Items Conversion - AR, AP, PO                                 Assumption - ASD will determine any cross walking of USSGL's and BOC's needed QCB POC- Lisa Offenberger                    CSB- J. Warman
+26.0 Database for legacy information to be stored and ability to report from both databases in one report POC- Heather Moore We will need to identify reports that need to be joined. Because we are importing open balances to C1 we will not be able to join reports that may pull from these balances in both databases.
+27.0 FACTS II setup - will SOB1 be able to set and see SOB2 treasury symbols? POC- Lisa Offenberger
+28.0 Concurrent Requests - Need to ensure that SOB2 posting process is set to retain 4 postings per day - 9, 12, 3, 6. CSB- Shelly Murphy
+# Questions
+1.0 All vendors are available in GL Module.  How will security be applied here?
+2.0 Customers are viewable (customer name and number) at the Master Level when entering a new customer.  Will SOB1 operating units see SOB2 customers?
+3.0 Will SOB2 be able to see SOB1 batch names, journal names, and descriptions in th GL Journals and Posting Windows (Value Set Security prevents seeing AFF detail)?
+4.0 GL Interface Errors- set of books specific?  What happens if one journal errors in SOB1 does SOB2 journals get stuck as well?
+5.0 FACTS II- Can SOB1 set SOB2 treasury symbols and vice versa?
+6.0 Viewing and monitoring concurrent requests- Will SOB1 users see SOB2 requests (Discoverer and Oracle)? Will SOB2 see SOB1 requests?
+GM-21 General Mandatory Must accept and store source identifier from external system SME-05 Y Tie gap to interface requirements from outside systems will need to remove from this document but ensure it is in R12 requirements

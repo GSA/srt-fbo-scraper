@@ -1,0 +1,176 @@
+
+
+Drug Information Source for MedlinePlus – Statement of Work
+
+
+1.  Background Information
+
+To assist consumers in obtaining the information they need to make informed decisions about health and wellness, the National Library of
+Medicine (NLM) has developed MedlinePlus (http://medlineplus.gov), an easily understandable Web resource for the public.  MedlinePlus contains
+and links to information from authoritative health Web sites and content providers, especially those from the National Institutes of Health.
+NLM makes MedlinePlus available to the public through a variety of MedlinePlus-branded Web sites, Web services, Web applications, APIs, email
+and social media communications, XML files and search results.
+
+2.  Purpose and Objectives of the Procurement
+
+NLM intends to license drug information in English and Spanish to assist the public in locating information about prescription and over-the-
+counter medications via MedlinePlus.  “MedlinePlus” means all MedlinePlus branded full and mobile Web sites, Web services, Web applications,
+APIs, email and social media communications, XML files and search results.
+
+3.  Mandatory Content Requirements
+
+   1. At least 1,000 English monographs.
+   2. Equivalent content in Spanish.
+   3. The ability to identify equivalent English and Spanish monographs.  The vendor must describe how they associate equivalent English and
+      Spanish monographs within the data provided for each monograph.
+   4. The ability to toggle between all English and Spanish monographs at the individual, equivalent monograph level.
+   5. Coverage of both prescription and over-the-counter medications.
+   6. Coverage of both single ingredient medications and combination ingredient medications.
+   7. Each monograph must include the ingredient (generic) name for the medication that is used in the United States, alternate or synonymous
+      medication names, when applicable, and associated brand names and brand names of combination products used in the United States.
+   8. A stand-alone file that maps all of the relevant RxNorm Concept Unique Identifiers (RXCUIs), including, at a minimum, all relevant Semantic
+      Clinical Dose Form (SCDF) RXCUIs, to each monograph.  The file must include, at a minimum, the monograph ID, the English monograph name,
+      the SCDF RXCUI and the SCDF RXCUI name.  If the English and Spanish monograph IDs are not identical for equivalent English/Spanish
+      monographs, then the file must also include both the English monograph ID and the Spanish monograph ID and must indicate the equivalent
+      relationship between the two.  The file must be delivered at the same time as the monograph updates, and the file must reflect the most
+      recent monograph content.  RXCUI mappings embedded within each individual monograph XML file are also acceptable.  Embedded mappings must
+      also include, at a minimum, all relevant Semantic Clinical Dose Form (SCDF) RXCUIs for the given monograph.
+   9. We expect that RXCUI mappings will be identical for the equivalent English & Spanish monographs.  If there is ever a circumstance where the
+      mapping would differ between the equivalent English & Spanish monographs, the vendor must describe this circumstance and how they handle it
+      from an editorial perspective and within the stand-alone mapping file or embedded mappings.
+  10. The vendor must explain their process of mapping monographs to RXCUIs and their process for updating and maintaining those mappings.
+  11. All content must be free of commercial endorsements or advertisements.
+  12. The vendor must describe the typical contents of each monograph or each class of monograph if there are multiple classes of them.  Contents
+      may include, but are not limited to, information on why a medication is prescribed, how it is used, precautions, side effects,
+      interactions, storage, missed doses and overdose information.  The vendor must list the topics or sections that they cover on each
+      monograph and describe the contents of those topics/sections.
+  13. The vendor must describe their process for keeping monograph content up to date.
+  14. The vendor must describe how they keep up with, display, and make editorial decisions about FDA warnings at the monograph level for both
+      English and Spanish monographs. Examples of warnings include, but are not limited to, safety alerts, ongoing safety reviews, safety
+      communications and notices of withdrawal from market.
+  15. The vendor must address whether or not they provide FDA approval status at the monograph level.
+  16. The intended audience for the monographs must be general health information consumers in the United States.  The vendor must describe how
+      they address the needs of a U.S. consumer audience in their writing and in their editorial policies.
+  17. Monographs must be written in consumer friendly language.  In the response, the vendor must indicate the reading or grade level.  The
+      vendor must include the measurement scale used to determine the reading or grade level.
+  18. Spanish monographs must be in culturally neutral Spanish appropriate for a U.S. consumer audience, not written or narrated in the style or
+      vocabulary of a particular Spanish nationality.  The vendor must describe their translation procedures, including quality control
+      procedures.
+  19. The vendor must deliver updated monograph and mapping file content to NLM at least once a month.  The response must include the vendor’s
+      regular update schedule and a description of the content of the update and the delivery mechanism.
+  20. When NLM identifies major content issues, NLM will communicate the issue with the vendor.  The vendor must describe their procedure and
+      turn-around time for content updates, including procedures and timelines for emergency content updates.
+  21. NLM will forward to the vendor any feedback received from users regarding content.  The vendor must describe their procedure for reviewing
+      this feedback, incorporating this feedback into their editorial cycle, and following-up with NLM on any action taken.
+
+Preferred Content Features (not mandatory)
+
+   1. Within the stand-alone file that maps all of the relevant RXCUIs or within the RXCUIs embedded in the individual monograph XML files,
+      additional RXCUI mappings of the following term types may be included for each monograph.  Note: SCDF mappings are required.  See
+      “Mandatory Content Requirements” above.
+     a) BPCK – Brand Name Pack    
+     b) BN – Brand Name         
+     c) SCDC – Semantic Clinical Drug Component    
+     d) SCD – Semantic Clinical Drug       
+     e) SBD – Semantic Branded Drug       
+     f) SBDC – Semantic Branded Drug Component    
+     g) GPCK – Generic Pack    
+     h) SBDF – Semantic Branded Drug Form     
+   2. If the vendor provides the RXCUI mappings in a stand-alone file, the stand-alone file includes the Spanish monograph name for each entry.
+   3. A pronunciation guide for the monograph name (ingredient/generic name).
+   4. Pill images with meaningful alt text in both English and Spanish.  The vendor must provide an identifier for linking the pill images to the
+      appropriate English & Spanish monographs.  If the vendor offers pill images, they must include at least 5 sample images with their
+      proposal.  The vendor must also describe or demonstrate how they associate individual pill image files to individual English and Spanish
+      monograph XML files.  The pill images must be delivered at the same time as the monograph updates, and the pill images must reflect the
+      most recent monograph content.
+   5. Citations or references, with PubMed links, in each monograph.
+   6. Relative links to other monographs in the collection.
+   7. Indicate any other special features available.
+
+4.  Mandatory Technical Requirements
+   1. Delivery of monographs in well-formed, valid XML format with an accompanying DTD.
+   2. Delivery of individual XML files for each monograph in each language – One XML file for the English monograph and a separate XML file for
+      the equivalent Spanish monograph.
+   3. Delivery of monograph-to-SCDF RXCUI mappings in a stand-alone CSV or XML file (XML is preferred but CSV is acceptable) or embedded within
+      each individual monograph XML file.
+   4. Allow NLM to host all of the vendor-provided content on NLM servers, including pill images, if applicable.
+   5. Allow for MedlinePlus co-branding on drug information pages.
+   6. The awardee will be required to provide NLM with technical support and advanced delivery of the content files within 2 weeks of being
+      selected by NLM so that NLM can implement the co-branded content pages and links to these pages on MedlinePlus-branded sites, services and
+      files.
+   7. When NLM identifies major technical issues, NLM will communicate the issue with the vendor.  The vendor must describe their procedure and
+      turn-around time for technical fixes, including procedures and timelines for emergency fixes.
+   8. Accessibility of content:  All electronic content must meet Section 508 Guidelines.  See the more specific requirements below regarding
+      Section 508 Compliance.
+
+5. Section 508 Requirements
+Section 508 of the Rehabilitation Act requires that Federal agencies' electronic and information technology is accessible to people with
+disabilities.  The drug information and associated mapping file must be Section 508 compliant. Specifically, the end product must be conformant
+with all applicable provisions, including:
+
+1194.41 Information, documentation, and support.
+
+These provisions can be found at http://www.access-board.gov/sec508/standards.htm.
+
+Section 508 Program Need
+
+Requirements for accessibility based on Section 508 of the Rehabilitation Act of 1973 (29 U.S.C. 794d) are determined to be relevant for the
+following program need: "Drug Information Source for MedlinePlus."
+
+Section 508 Product Requirements
+
+Information, documentation, and support requirements from 36 CFR part 1194 Subpart D have been determined to apply to this acquisition.
+Solicitation respondents must describe how the information, documentation, and support proposed for Electronic and Information Technology (EIT)
+deliverables meet at least the information, documentation, and support requirements identified as applicable in the attached Government
+Product/Service Accessibility Template (GPAT).
+
+Section 508 Evaluation Factors
+
+Responses to this solicitation will only be considered for award after it has been determined that the proposal adequately addresses the
+requirements for Section 508.  Only proposals which contain adequate information to document their responsiveness to the Section 508
+requirements (e.g. a completed GPAT, VPAT or equivalent and supporting documentation) will be eligible for any additional merit consideration.
+
+If the deliverable proposed in response to this solicitation includes features and functions in addition to those identified as requirements,
+these features and functions also need to conform to relevant Section 508 technical provisions, functional performance criteria, and
+information, documentation and support. The accessibility of these additional features and functions should be described in the completed GPAT,
+VPAT or equivalent supporting information.
+
+Section 508 Acceptance Criteria
+
+The drug information licensed as a result of this solicitation will be accepted based in part on satisfaction of identified Section 508
+requirements for accessibility.  The drug information vendor must include a completed GPAT, a sample of which is included as a part of this
+solicitation.
+
+If the deliverable includes features and functions in addition to those identified as requirements, these features and functions also need to
+conform to relevant Section 508 technical provisions, functional performance criteria, and information, documentation and support.
+
+6.  Additional Requirements
+
+   1. Features and product offerings will be evaluated as they exist at the time of proposal submission.  Beta releases and planned updates will
+      not be considered.
+   2. Include the cost for licensing this product. The cost must be an annual flat fee for providing the content to users of any MedlinePlus
+      branded Web site, the ability for end-users of MedlinePlus-branded sites to print, email and share links to the content for individual,
+      personal use, and for providing links to the content on any MedlinePlus branded Web service, Web application, API, email and social media
+      communication, XML file and search result.
+   3. Include a sample license agreement governing the use of the content on all MedlinePlus-branded Web sites, Web services, Web applications,
+      APIs, email and social media communications, XML files and search results.  The license agreement must also address NLM’s rights related to
+      the sharing of links to the content on MedlinePlus-branded sites, services, applications, communications, files and search results.
+   4. Include your copyright statement and any required disclaimers in both English and Spanish.
+   5. If the vendor requires their logo to be displayed on all vendor-supplied content pages, the logo must be smaller than 70x70 pixels and NLM
+      must be allowed to determine the placement of the logo on the content pages.  Include a sample of the logo (in English and Spanish if the
+      logo differs in each language) and any display requirements.
+   6. Provide a list of at least three other organizations that license the content, along with accompanying Web site URLs.  Provide at least
+      three references that NLM can contact.
+   7. Provide a copy of your customer service policy, or other evidence of your commitment to customer service.
+   8. Provide a copy of your editorial policies and procedures.  Also include the names and affiliations of the members of your editorial and/or
+      medical board.
+   9. The vendor must have policies/procedures in place regarding the quality control of the drug information and associated RXCUI mapping file.
+      Provide these policies/procedures in your response.
+  10. Include 5 English monographs and their Spanish equivalents in both XML format and an example of the final presentation format.
+  11. Include your DTD.
+  12. Include a sample of the stand-alone monograph-to-RXCUI mapping file that covers at least 10% of the entire monograph collection being
+      offered, including the 5 example monographs required in #8 above.  If the RXCUI mappings will be embedded in the monograph XML, provide
+      those embedded mappings in the 5 example monographs required in #8 above.
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2F12-322-ci-syn-sol-gpat.doc%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us"/><script type="text/javascript">url="http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2F12-322-ci-syn-sol-gpat.doc%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>

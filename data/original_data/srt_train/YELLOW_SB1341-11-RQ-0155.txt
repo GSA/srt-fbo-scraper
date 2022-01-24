@@ -1,0 +1,394 @@
+J Forensic Sci, July 2004, Vol. 49, No. 4 Paper ID JFS2003384 Available online at: www.astm.org
+
+Li Ma,1,2 Ph.D.; John Song;1 Eric Whitenton;1 Theodore Vorburger,1 Ph.D.; Jack Zhou,3 Ph.D.; and Alan Zheng4
+
+NIST Bullet Signature Measurement System for RM (Reference Material) 8240 Standard Bullets
+
+ABSTRACT: A bullet signature measurement system based on a stylus instrument was developed at the National Institute of Standards and Technology (NIST) for the signature measurements of NIST RM (Reference Material) 8240 standard bullets. The standard bullets are developed as a reference standard for bullet signature measurements and are aimed to support the recently established National Integrated Ballistics Information Network (NIBIN) by the Bureau of Alcohol, Tobacco and Firearms (ATF) and the Federal Bureau of Investigation (FBI). The RM bullets are designed as both a virtual and a physical bullet signature standard. The virtual standard is a set of six digitized bullet signatures originally profiled from six master bullets fired at ATF and FBI using six different guns. By using the virtual signature standard to control the tool path on a numerically controlled diamond turning machine at NIST, 40 RM bullets were produced. In this paper, a comparison parameter and an algorithm using autoand cross-correlation functions are described for qualifying the bullet signature differences between the RM bullets and the virtual bullet signature standard. When two compared signatures are exactly the same (point by point), their cross-correlation function (CCF) value will be equal to 100%. The measurement system setup, measurement program, and initial measurement results are discussed. Initial measurement results for the 40 standard bullets, each measured at six land impressions, show that the CCF values for the 240 signature measurements are higher than 95%, with most of them even higher than 99%. These results demonstrate the high reproducibility for both the manufacturing process and the measurement system for the NIST RM 8240 standard bullets. KEYWORDS: forensic science, ballistics measurement, bullet signature, cross-correlation function, CCF, reference material, RM, standard bullet
+
+Bullets and casings when fired or ejected from guns pick up characteristic signatures, that are unique to the weapon. Striations on the bullet are caused by its passage through the gun barrel. Marks on the casing are caused by impact with the firing pin, breech face, and ejector. By analyzing these signatures, firearm examiners can connect a firearm to criminal acts. In the early 1990s, the IBIS (Integrated Ballistics Identification System) and the DRUGFIRE system were established for this purpose in laboratories of the Bureau of Alcohol, Tobacco and Firearms (ATF) and the Federal Bureau of Investigation (FBI), respectively (1­3). Both systems are based on image capture, image analysis, and database techniques. In 1998, the ATF and FBI initiated a joint project to establish the National Integrated Ballistics Information Network (NIBIN) (1­3). In December 2002, after a nearly two-year effort, computer specialists finished installing IBIS workstations into the last of the 233 U.S. crime labs slated to be on the NIBIN (1). In order to implement a nationwide ballistics information network by sharing data between ballistics laboratories, it is important to establish a measurement standard for traceability, unification, and quality control of ballistics measurements. The RM (Reference Material) 8240 standard bullets are being developed by the National
+
+Institute of Standards and Technology (NIST) in collaboration with the ATF. These RM bullets are planned for use in instrument calibration and measurement quality control, and for establishment of measurement traceability to the National Laboratory Center of ATF. In 1998, two prototype standard bullets were manufactured at NIST (4­6). A new parameter and algorithm were proposed for bullet signature measurements (7). A traceability system was also proposed to establish the measurement traceability for bullet signature measurements nationwide (8­11). Based on the NIST proposed parameter and algorithm, a bullet signature measurement system has now been established at NIST (12). In 2002 and 2003, forty standard bullets were manufactured at NIST (13). All 40 bullets were measured by this system and have shown good results. In the following sections, we introduce the NIST RM 8240 standard bullet project, discuss a new parameter and algorithm for bullet signature measurements, and describe the NIST bullet signature measurement system and some initial measurement results. NIST RM 8240 Standard Bullets Project NIST RM 8240 standard bullets are designed as both a virtual and a physical bullet signature standard (6). The virtual standard is a set of six digitized bullet profile signatures. In 2000, NIST received six master bullets from ATF and FBI. These master bullets were fired by six different guns under a standardized shooting procedure. Each master bullet has six land impressions in which there are six unique bullet signatures. By tracing one bullet signature on each master bullet using a stylus instrument, a set of six digitized bullet signatures was established and stored in a NIST computer as a 2-D virtual bullet signature standard. This virtual standard was then used as reference standard for both the production and measurement of the physical standard, the NIST RM 8240 standard bullets. In
+
+National Institute of Standards and Technology, Gaithersburg, MD 20899. Guest Scientist from Drexel University. 3 Drexel University, Philadelphia, PA 19104. 4 Georgia Institute of Technology, Atlanta, GA 30332.  Certain commercial equipment, instruments, or materials are identified in this paper to specify adequately the experimental procedure. Such identification does not imply recommendation or endorsement by the National Institute of Standards and Technology, nor does it imply that the materials or equipment identified are necessarily the best available for the purpose. Received 16 Nov. 2003; and in revised form 27 Jan. 2004; accepted 1 Feb. 2004; published XXXX.
+2
+
+1
+
+Copyright
+
+C
+
+2004 by ASTM International, 100 Barr Harbor Drive, PO Box C700, West Conshohocken, PA 19428-2959.
+
+1
+
+2 JOURNAL OF FORENSIC SCIENCES
+bullet signature measurements (7). Because the bullet signatures can be considered as random profiles, their auto-correlation functions decay as the shift distance increases. This statistical property is very useful for bullet signature comparisons to quantify the difference of bullet signatures:
+
+FIG. 1--Master bullet from ATF National Laboratory Center (left), NIST prototype standard bullet (center), and NIST RM 8240 standard bullet (right).
+
+January 2002, by using the virtual standard to control the tool path of a numerically controlled diamond turning machine at NIST, 20 RM 8240 standard bullets were produced. Another 20 RM bullets were made in June 2003 (13). Figure 1 shows a master bullet (left) fired at the ATF's National Laboratory Center, from which one of the bullet signatures was traced at NIST's Surface Calibration Laboratory as the virtual bullet signature standard. The prototype (center) and the RM 8240 standard bullet (right) are also shown. Bullet Signature Comparisons Using Auto- and CrossCorrelation Functions It was decided to adapt the auto-correlation function (ACF) and cross-correlation function (CCF) from signal processing theory for
+
+r When two bullet signatures are compared with each other, one of them is taken as a references (see signature A in Fig. 2) and the other is the compared signature B. If these two signatures are exactly the same, B = A, then their CCF achieves the maximum value (1.00) when the shift distance is zero. r If two compared bullet signatures have nearly the same pattern with only small differences on their profiles, as occurs when two bullets are fired from the same gun, they show a strong correlation. Examples of this are signatures A and B in Fig. 3, where B  A. When the shift distance is zero, their CCF has a maximum value, but not as large as the maximum value of the auto-correlation function of the reference signature (ACF = 1.00), because there are small differences between these two signatures. r If signatures A and B come from bullets fired from different guns, there should be only a small correlation between the two bullet signatures. This is shown in Fig. 4, where B = A. With the shift distance  changing, only random variations appear on the CCF curve without a clear correlation peak.
+Signature Difference Parameter, Ds , for Bullet Signature Comparisons Although the CCF can be used for signature comparison, it is not a unique parameter. Based on the definition of the crosscorrelation function (7), if two compared signatures have the same shape but different vertical scales, their CCF is still 100% even if they are two different signatures. Therefore, a parameter we call the
+
+FIG. 2--Bullet signature comparisons between identical bullet signatures, B = A, ACF = 1.
+
+MA ET AL.
+
+r BULLET SIGNATURE MEASUREMENT SYSTEM 3
+
+FIG. 3--Bullet signature comparisons between similar bullet signatures, B  A. A clear correlation peak can be seen on the CCF curve, CCF < 1.
+
+FIG. 4--Bullet signature comparisons between dissimilar bullet signatures, B = A. No obvious correlation peak can be seen on the CCF curve.
+
+signature difference Ds was proposed for quantifying bullet signature differences (7). The procedure is as follows:
+
+equal to the difference of the compared profile signature Z (B) and the reference profile signature Z (A): Z (B - A) = Z (B) - Z (A) (1)
+
+r At the maximum cross-correlation point between signature B and A (see Fig. 3), construct a new profile Z (B - A) which is
+
+4 JOURNAL OF FORENSIC SCIENCES r Calculate the Rq (root-mean-square roughness (14)) value for the new profile Z (B - A), Rq(B - A). r Calculate the signature difference Ds of signatures B and A defined as
+Ds = Rq 2 (B - A)/ Rq 2 (A) (2)
+
+r From Eqs 1 and 2 it can be seen that for the collection of all two-profile comparisons, the minimum profile difference is Ds = 0, which occurs when, and only when, these two profiles are exactly the same. That means that when any two compared 2-D or 3-D profiles have a profile difference of Ds = 0, these two profiles must be exactly the same (point by point).
+NIST Bullet Signature Measurement System Based on the proposed parameter and algorithm, a bullet signature measurement system was developed at NIST for the measurements of RM 8240 standard bullets. The measurement setup is shown in Fig. 5. A commercial stylus instrument is used for bullet signature measurements. For each measurement, a diamond stylus (item 1 in Fig. 5) traces a land impression of the standard bullet 2. The nominal tip radius of the diamond stylus is 2 ľm. The nominal contact force is 0.001 N (about 100 mgf). The traversing speed is 0.5 mm/s. The vertical resolution is 0.01 ľm, the horizontal resolution 0.25 ľm. The standard bullet is set on a bullet holder 3 (see Fig. 5), which is mounted on a rotary stage 4. The bullet holder is the same as that used in the IBIS system. This allows the standard bullet to be compatible with the IBIS system. The rotary stage is set on another horizontal rotary stage 5, which is rotated about 5 left around the vertical (Z) axis so that the bullet land with a 5 right twist can be measured perpendicular to the land. Both rotary stage 4 and the horizontal rotary stage 5 are set on an X-Y stage 6. This allows for the adjustment of the X-Y location of the bullet. After the measurement for the first land by scanning the tip in the x-direction perpendicular to the land impression, bullet 2 is rotated 60 by rotary stage 4 so that the next land is measured. This is repeated for all
+
+where Rq2 (A) is the mean square roughness of the reference signature Z (A), used here as a comparison reference. From Eqs 1 and 2 it can be seen that when two compared profiles are exactly the same (see Fig. 2) Z (B - A) = Z (B) - Z (A) = 0 then Rq 2 (B - A) = 0 and Ds = 0 Advantages of Using the Proposed Parameter of Signature Difference Ds The proposed parameter Ds has several features (7):
+
+r It is easy to understand and use. r It can be used for quantifying signature differences for both 2-D bullet signatures and 3-D casing signatures. r Because signature information of all 2-D or 3-D data points is used for comparison, the parameter Ds could have high sensitivity, and can yield high repeatability and reproducibility.
+
+FIG. 5--Measurement setup for NIST bullet signature measurement system. 1: diamond stylus; 2: standard bullet; 3: bullet holder; 4: rotary stage; 5: horizontal rotary stage; 6: X-Y stage.
+
+MA ET AL.
+
+r BULLET SIGNATURE MEASUREMENT SYSTEM 5
+
+FIG. 6--Bullet signature comparison between the land 1 of S/N RM 8240 001 standard bullet (Signature B, as shown on second profile from top) and virtual standard (Signature A, as shown on top). Cross-correlation function CCF = 99.55%; signature difference Ds = 0.92%.
+
+six lands. Finally, the measurement profiles are input into the bullet signature comparison program for analysis. Bullet Signature Comparison Program Overview of Comparison Program The bullet signature comparison program is based on the proposed parameters and algorithm as mentioned above. A screen output of the bullet signature comparison program is shown in Fig. 6. The top profile is the virtual bullet signature standard, or signature A, which is one of the six surface profiles from the bullet signatures of the six master bullets fired at ATF and FBI. The virtual signature standard is used to control the tool path of the numerically controlled diamond turning machine to produce the RM bullets. It is also used as a reference standard for the measurements of the bullet signatures of the RM bullets. The second signature in Fig. 6 shows the measured bullet signature, or signature B, which is a surface profile from the No. 1 land impression of the S/N RM 8240 001 bullet. At the maximum cross-correlation position of the two profiles, a correlation peak shows CCF = 99.55% (see Fig. 6). At this position, a new signature, B ­ A (see the bottom profile in Fig. 6), is constructed, which is equal to the difference between the two compared signatures. Then the signature difference is calculated by Eq 2, Ds = 0.92%. Modification of the Bullet Signatures Both the virtual bullet signature standard (Signature A) and the measured bullet signature (Signature B) are modified bullet signa-
+
+tures. When the stylus of the instrument traces a land impression (see Fig. 5), the traced bullet signature, or the raw profile, includes the shape of the land impression as well as the surface roughness and waviness (14) (see Fig. 7a). By windowing the central part of the land impression and removing the curvature, a modified bullet signature is obtained as shown in Fig. 7b, which includes both the roughness and waviness (14). The waviness represents the relatively low-frequency profile information, which is considered as being of secondary importance for the bullet signature identification, and is removed before the signature comparison. A high-pass Gaussian filter (14) with 0.25 mm long cutoff length is used for that purpose. Figure 7c shows the modified bullet signature after windowing, curvature removal, and Gaussian filter. Both the virtual bullet signature standard (Signature A, see Fig. 6) and the measured RM bullet signature (Signature B) must be modified by the same process before comparisons. Correction for Unequal Spacing of Horizontal Scales As the bullet signature is measured on a curved bullet surface, the total range of Z heights in the profiles is significant. The stylus instrument initially acquires the profiles as points equally spaced in X. As with most stylus instruments, however, the stylus actually measures the angle of the stylus tip as it rotates about a pivot point and not the Z height. When the stylus instrument converts these angles into true Z heights, the once equally spaced points become unequally spaced in X. Unequally spaced points are not a problem when manufacturing the bullets, but most profile analysis techniques are significantly easier to implement with equally
+
+6 JOURNAL OF FORENSIC SCIENCES
+
+FIG. 7--Raw profile on No. 1 land impression of S/N RM 8240 001 standard bullet (a); profile after windowing and curvature removed (b); and profile after a 0.25-mm-long cutoff Gaussian filter (c).
+
+spaced points. Fortunately, cubic spline functions may be used to resample the profile data to make the profiles equally spaced again (13). Both the virtual signature standard (see Fig. 6, Signature A), which is originally traced on the master bullets provided by ATF and FBI, and the compared signature (see Fig. 6, Signature B), which is traced on the RM bullets, must be corrected for unequal spacing of the horizontal scales. Figure 8 shows the standard signature A, which has been corrected, and the compared signature B, which has not. As a result, there is a relative lateral distortion between Signatures A and B, resulting in a large signature difference B - A (see the bottom signature in Fig. 8), CCF = 73.67%, Ds = 51.91%. When resampling is applied to Signature B (see Fig. 9), Signatures A and B are aligned very well in the lateral direction, and the signature difference B - A is very small (see the bottom profile in Fig. 9), CCF = 98.47%, Ds = 3.04%. Data Flow of Standard Signature A and Compared Signature B Figure 10 illustrates the bullet signature data flow through the measurement program. There are two channels of data flow in the measurement program. The left one shows the data flow of the virtual signature standard, or Signature A, while the right one shows the data flow of the measured signature, or Signature B. Both emanate from the six different master bullets from ATF and FBI. As a
+
+result, the radius of curvature for each of the lands is different. The time required to machine the lands on the diamond turning machine is minimized when the radius of those lands are the same as the radius of the standard bullet itself. In order to minimize the machining time, the measured radius was removed from each of the six lands and the designed radius of the standard bullet is added back to each land. By doing this, the virtual bullet signature standard is generated (see Fig. 10). The virtual signature standard is used as a reference standard for both the production and the measurement of the RM bullets. First, it is used for control of the tool path of the numerically controlled diamond turning machine to produce the physical standard of the RM bullets. Then it is input into the measurement system (see the left channel of the measurement program in Fig. 10) as a reference standard for the signature measurements of RM bullets. In the measurement system the profile of the virtual signature standard is first processed by X-scale resampling to linearize the X-scale, as discussed before. Then a short Gaussian filter (14) with 0.0025 mm short cutoff length is used to remove the high-frequency noise. After curvature removal and application of a 0.25-mm-long cutoff Gaussian filter as discussed before, the standard signature A is used as a reference for the measurement of the bullet signature B. After the diamond turning process, as shown in Fig. 10, the RM bullets are measured by the stylus instrument through the same data
+
+MA ET AL.
+
+r BULLET SIGNATURE MEASUREMENT SYSTEM 7
+
+FIG. 8--Bullet signature comparison before the X-scale correction for Signature B: CCF = 73.67%, Ds = 51.91%.
+
+processing program to generate a modified profile. The modified profile is input into the measurement program and passes through exactly the same process as the signature A is passed, which includes X resampling, short Gaussian filter, removal of curvature, and long Gaussian filter. Then the measured signature B is compared with the standard signature A. Measurement Results and Discussion Repeatability and Reproducibility Tests Before measurements of bullet signatures of the RM bullets may be considered valid, the measurement repeatability and reproducibility of the measurement system must be tested first. The measurement repeatability is a measure of the short-term random variations of the instrument and the measurement system itself. To assess measure repeatability, it is necessary to minimize other random factors caused by, for example, instrument calibration and measurement setup, and the environment variation. For that reason, the repeatability test was carried out on the same day under the same measurement setup and instrument calibration by repeating ten measurements on the same land impression of the same RM bullet. Using NIST virtual bullets signature standard as reference signature A, the repeatability test results on the No. 1 land of S/N RM 8240 001 bullet (Signature B) are given in Table 1. They have a mean CCF = 99.47% with a standard deviation of 0.06%. On the other hand, the reproducibility test measures the effects of all the random factors, including those from both the short- and long-term random variations from the instrument and the measurement system, and the day-to-day variations of the measurement
+
+TABLE 1--Repeatability tests for NIST bullet signature measurement
+
+system. RM 8240-001 Land No. 1 CCF % Ds % Rq(A) ľm Rq(B) ľm Rq(B - A) ľm 1 2 3 4 5 6 7 8 9 10 Mean S.D. 99.29 99.49 99.51 99.51 99.51 99.48 99.47 99.47 99.48 99.48 99.47 0.06 1.41 1.02 0.99 0.99 0.98 1.03 1.05 1.06 1.03 1.04 1.06 0.13 0.467 0.467 0.467 0.467 0.467 0.467 0.467 0.467 0.468 0.467 0.467 0.000 0.461 0.462 0.462 0.462 0.463 0.463 0.462 0.462 0.463 0.463 0.462 0.001 0.0555 0.0472 0.0463 0.0464 0.0463 0.0474 0.0478 0.0481 0.0476 0.0476 0.0480 0.0027
+
+setup, instrument calibration, and the environment. Therefore, the reproducibility test was carried out on different days under different measurement setups and instrument calibrations by measuring the same land impression of the same bullet. The reproducibility test results on the No. 1 land of S/N RM 8240 001 bullet are given in Table 2. They have a mean CCF = 99.29% with a standard deviation 0.26%. It is understandable that the reproducibility tests have smaller mean CCF values (99.26%) and a larger standard deviation (0.26%) when compared with the results of the repeatability tests (CCF = 99.47%, S.D. = 0.06%). This is because the reproducibility tests include all the same sources of error as the repeatability tests and other sources as well.
+
+8 JOURNAL OF FORENSIC SCIENCES
+
+FIG. 9--Same as Fig. 8, after X-scale correction for Signature B: CCF = 98.47%, Ds = 3.04%.
+TABLE 2--Reproducibility tests for NIST bullet signature measurement TABLE 3--Measurement results for first set of bullets, S/N RM 8240
+
+system. RM 8240-001 Land No. 1 1 2 3 4 5 6 7 Mean S.D. Date 3/13/2003 3/19/2003 3/31/2003 3/31/2003 4/1/1993 4/3/2003 4/8/2003 CCF % 99.55 99.12 99.08 98.95 99.38 99.66 99.29 99.29 0.26 Ds % 0.92 1.76 1.83 2.10 1.25 0.69 1.41 1.42 0.51 Rq(A) ľm 0.467 0.468 0.466 0.468 0.468 0.468 0.467 0.467 0.001 Rq(B) ľm 0.460 0.461 0.460 0.463 0.463 0.463 0.461 0.462 0.001 Rq(B - A) ľm 0.0447 0.0620 0.0632 0.0677 0.0523 0.0388 0.0555 0.0549 0.0104
+
+001-020, each measured in six lands. RM 8240 001-020 Land No. 1 Mean S.D. Land No. 2 Mean S.D. Land No. 3 Mean S.D. Land No. 4 Mean S.D. Land No. 5 Mean S.D. Land No. 6 Mean S.D. CCF % 99.26 0.54 98.83 0.59 99.69 0.11 99.40 0.23 99.73 0.14 97.20 0.65 Ds % 1.49 1.06 2.34 1.18 0.62 0.21 1.25 0.45 0.57 0.26 5.53 1.25 Rq(A) ľm 0.467 0.001 0.354 0.001 0.451 0.002 0.407 0.001 0.651 0.003 0.147 0.000 Rq(B) ľm 0.461 0.002 0.353 0.002 0.445 0.002 0.396 0.001 0.640 0.004 0.142 0.001 Rq(B - A) ľm 0.0548 0.0162 0.0525 0.0132 0.0352 0.0058 0.0448 0.0080 0.0480 0.0106 0.0345 0.0039
+
+Measurements for 40 RM 8240 Standard Bullets So far 40 RM bullets have been produced at NIST. The first 20 bullets were produced in January 2002 under the same manufacturing setup. The second 20 bullets were produced in June 2003 by a different individual following the same manufacturing procedures as used for the first set of bullets. All 40 bullets have been measured with the NIST bullet signature measurement system. The measurement results for the first set of 20 bullets are given in Table 3 and for the second set in Table 4. Both sets of measurements use the same virtual bullet signature standard as a comparison reference. Measurement results show that the manufactured bullet signatures are very close to the virtual bullet signature standard. For example, Fig. 11 shows the distribution of CCF values from 240 signature measurements of 40 RM bullets, each measured at six lands. All CCF values are higher than 95%, and most are higher than 99%. Considering that CCF = 100% means the measured bullet signature is exactly the same with the virtual bullet signature standard (point by point), the measurement results have demonstrated high reproducibility for both the bullet signature measurement system and the manufacturing process of the RM bullets. Based on NIST Technical Note 1297 (15), an uncertainty analysis procedure is currently in progress to report the measurement results for both CCF and Ds values with 95% confidence level. From Tables 3 and 4, it can be seen that most of the mean CCF values are higher than 99%, but the mean CCF values on the No. 6
+
+MA ET AL.
+
+r BULLET SIGNATURE MEASUREMENT SYSTEM 9
+
+FIG. 10--Bullet signature data flow through comparison program.
+
+land shows a significant difference from the others. It is found that the virtual bullet signature of the No. 6 land, which was originally traced on the No. 6 master bullet, is significantly smoother than the other five signatures traced on the other five master bullets. From Tables 3 and 4, it can be seen that the Rq roughness (14) of the No. 6 land is much less than the Rq values of the other five lands. However, the Rq roughness for the signature difference, Rq(B ­ A), of the No. 6 land does not show a big difference from the others (also see Tables 3 and 4). This is because Rq(B - A) is determined mainly by the random variations during
+
+the manufacturing and measurement process, which are kept at the same level for the same process. As a result, the relative signature difference Rq(B - A)/Rq(A) for the No. 6 land is larger than the others, resulting in a smaller CCF value and a larger Ds value (see Eq 2). Production Repeatability and Reproducibility for RM Bullets Production repeatability here refers to the similarity of bullet signatures produced at the same time. Production reproducibility
+
+10 JOURNAL OF FORENSIC SCIENCES
+TABLE 4--Measurement results for second set of bullets, S/N RM 8240
+
+021-040, each measured in six lands. RM 8240 021-040 Land No. 1 Mean S.D. Land No. 2 Mean S.D. Land No. 3 Mean S.D. Land No. 4 Mean S.D. Land No. 5 Mean S.D. Land No. 6 Mean S.D. CCF % 99.47 0.24 99.25 0.36 99.66 0.12 99.12 0.37 99.66 0.20 96.72 0.78 Ds % 1.07 0.47 1.51 0.71 0.68 0.23 1.80 0.71 0.70 0.39 6.47 1.53 Rq(A) ľm 0.470 0.004 0.348 0.001 0.452 0.001 0.403 0.000 0.642 0.001 0.145 0.000 Rq(B) ľm 0.463 0.004 0.342 0.001 0.450 0.001 0.391 0.001 0.631 0.002 0.141 0.001 Rq(B - A) ľm 0.0475 0.0100 0.0419 0.0093 0.0368 0.0061 0.0532 0.0105 0.0520 0.0128 0.0370 0.0049
+
+FIG. 12--Least-squares fitting for statistical relationship between CCF and Ds measured on 240 bullet signatures on 40 RM bullets.
+
+production repeatability and reproducibility that when these standard bullets are distributed nationwide for checking instrument calibrations, they will virtually play the same function as a single bullet. Linear Relationship Between Parameters of CCF and Ds As discussed above, CCF is not a unique parameter for representing bullet signature difference, and therefore the signature difference parameter Ds is derived. However, when the measurement system is well calibrated to measure the 240 signature of 40 bullets, CCF and Ds showed a strong linear correlation (see Fig. 12). We are currently working to develop statistical models to describe that linear relationship. Summary refers to the similarity of all RM bullet signatures produced at two different times. Table 5 compares signature measurements performed on the same RM bullet and on different RM bullets. The repeatability and reproducibility tests are carried out on the No. 1 land impression of S/N RM 8240 001 bullet. The mean CCF and standard deviation are 99.47 % and 0.06% for the measurement repeatability, and 99.29% and 0.26% for the measurement reproducibility. When the No. 1 land impression on different bullets is tested, the mean CCF value and standard deviation are 99.26% and 0.54% for the first set of 20 bullets, and 99.47%, 0.24% for the second set of 20 bullets (see Table 5). It can be seen that the signature variations between bullet and bullet are very close to the repeatability and reproducibility of the measurement system that are tested on the same bullet. This demonstrates that bullet signatures on the 40 standard bullets are manufactured with such a high degree of Based on auto- and cross-correlation functions, a new parameter and algorithm are proposed for bullet signature measurements for NIST RM 8240 standard bullets. A measurement system based on a stylus instrument is developed at NIST's Surface Calibration Laboratory. Initial test results show that the machined bullet signatures are highly uniform among the 40 RM bullets and are in good agreement with the virtual signature standard. Measurements on 240 bullet signatures of the 40 NIST RM 8240 standard bullets show that the cross-correlation functions (CCF) between the measured bullet signature and the virtual bullet signature standard are higher than 95%; most are even higher than 99%. Considering that CCF = 100% means the measured bullet signature is exactly the same as the virtual bullet signature standard (point by point), the measurement results demonstrate the high reproducibility for both the bullet signature measurement system and the manufacturing process of the RM bullets.
+
+FIG. 11--CCF distribution for 240 bullet signatures of 40 RM bullets. All CCF values are higher than 95%; most are even higher than 99%. CCF = 100% means that the measured bullet signature is exactly the same as the virtual bullet signature standard (point by point).
+
+TABLE 5--Comparison of signature measurements performed on same RM bullet and on different RM bullets.
+
+Measurements Repeatability CCF % Same bullet land Same meas. day Same meas. setup Same calib. 99.47% 0.06% Reproducibility Same bullet land Dif. meas. days Dif. meas. setup Dif. calib. 99.29% 0.26% Repeatability First 20 bullets made with same setup 99.26% 0.54%
+
+Production Reproducibility Second 20 bullets made and measured by dif. people with the same procedures 99.47% 0.24%
+
+Mean S.D.
+
+MA ET AL.
+
+r BULLET SIGNATURE MEASUREMENT SYSTEM 11
+
+Acknowledgments The funding for this research was provided by the National Institute of Justice (NIJ) through the Office of Law Enforcement Standards (OLES) at NIST. The authors are grateful to M. Ols, J. Miller, and R. Thompson of the Bureau of Alcohol, Tobacco and Firearms (ATF) for their contributions to this project. The authors are also grateful to R. Clary, B. Dutterer, D. Kelley, C. Johnson, and T. B. Renegar of NIST for their contributions in the manufacturing and measurements of the RM 8240 standard bullets, and to T. B. Renegar for taking the photo of Fig. 5. References
+1. Weiss P. A shot in the light--precise bullet replicas take aim at crimefighting standard. Science News 2003 Jan. 11;163(2):23­5. 2. Office of Firearms, Explosives and Arson at ATF. ATF's NIBIN Program, 98 AFTE (Association of Firearm and Tool Mark Examiners); 12­17 Jul. 1998; Tampa, FL. 3. Casey W, Wooten J, Murch R. National integrated ballistics identification network. 98 AFTE Workshop; 12­17 Jul. 1998; Tampa, FL. 4. Song J, Vorburger T, Clary R, McGlauflin M, Whitenton E, Evans C. NIST random profile roughness specimens and standard bullets. Proceedings of the 2000 Measurement Science Conference (MSC); 13­14 Jan. 2000; Anaheim, CA. 5. Song J, Vorburger T. Development of NIST standard bullets and casings status report, NIJ Report 603-00,National Institute of Justice, U.S. Department of Justice, 2000 Nov. 6. Song J, Vorburger T, Ols M. Establishment of a virtual/physical standard for bullet signature measurements. Proceedings of the 2001 NCSL; Jul. 29­Aug 2 2001; Washington, DC. 7. Song J, Vorburger T. Proposed bullet signature comparisons using autocorrelation functions. Proceedings of the 2000 NCSL; 16­20 Jul. 2000; Toronto, Canada.
+
+8. Song J, Vorburger T, Ols M. Establishment of measurement traceability for NIST standard bullets and casings. Proceedings of the 2001 Measurement Science Conference (MSC); 18­19 Jan. 2001; Anaheim, CA. 9. Song J, Vorburger T, Clary R, Whitenton E, Ma L, Ballou S. Standards for bullets and casings. Materials Today 2002 Nov;5(11):26­31. 10. Song J, Vorburger T, Clary R, Whitenton E, Ols M. Establishment of ballistics measurement traceability using NIST RM 8240 standard bullets. Proceedings of the 2002 NCSL; 4­8 Aug. 2002; San Diego, CA. 11. Song J, Vorburger T, Clary R, Whitenton E, Ma L, Ballou S. Standards for optical imaging systems in forensic laboratories. Proceedings of the 2002 International Symposium of Instrumentation Science and Technology; 18­22 Aug. 2002; Jinan, China. 12. Song J, Ma L, Whitenton E, Vorburger T. Bullet signature measurements at NIST. Proceedings of the 2003 Measurement Science Conference (MSC); 13­14 Jan. 2003; Anaheim, CA. 13. Whitenton E, Johnson C, Kelley D, Clary R, Dutterer B, Ma L, et al. Manufacturing and quality control of the NIST reference material 8240 standard bullet. Proceedings of the 2003 ASPE (American Society for Precision Engineering); 28­31 Oct. 2003; Portland, OR. 14. AMSE/ANSI B46-1995. Surface texture--Roughness. Waviness and Lay 1995; ASME. 15. Taylor B, Kuyatt C. Guidelines for evaluation and expressing the uncertainty of NIST measurement results, NIST Technical Note 1297. Gaithersburg, MD: National Institute of Standards and Technology, 1994. Additional information and reprint requests: Li Ma, Ph.D. Guest Scientist National Institute of Standards and Technology 100 Bureau Drive, Stop 8553 Gaithersburg, MD 20899-8553 Phone: (301) 975-2057 Fax: (301) 974-4553 Email: li.ma@nist.gov
+
+
+Statement of Work
+For Development of Methods for Correlating the Surface Topographies of Fired Cartridge Components, Standard Cartridge Cases, and Toolmarks
+
+I.    BACKGROUND
+
+The National Institute of Standards and Technology (NIST) in Gaithersburg, MD, has developed Standard Reference Material (SRM) Bullets for
+testing automated optical systems used in crime lab investigations of bullet evidence from firearms and is developing SRM Cartridge Cases
+(Casings) for testing these systems when used for examining casing evidence. An important attribute of these materials is their high similarity
+from one SRM unit to the next so that different laboratories on the same network can check the operation of their systems with the same tests
+and expect the same results.  NIST has also developed both optical and contacting systems for measurement and analysis of surface topography 1)
+for demonstrating the quality and similarity of the SRM materials and 2) for research into optimizing the accuracy and minimizing the
+uncertainty of optical measurements of bullet and casing surfaces.  The systems for surface topography analysis include research software
+written in the MATLAB language for quantifying the similarity of a pair of surface topography images.  The software contains the following
+functions:
+ • Loading measured surface topography images
+ • Identifying dropout data points in the images
+ • Identifying outlier data points in the images
+ • Masking the outlier and dropout data points
+ • Filtering the measured images to minimize the noise having high spatial frequency and the irrelevant form components having low spatial
+   frequency
+ • Registering the two images to optimize their alignment thus minimizing the differences between them
+ • Calculating statistics to characterize the similarity between the registered topography images.
+
+NIST is continuing its research in all these areas and is initiating research in the surface topography of toolmark evidence as well.
+
+As part of its continuing research into optical measurements for surface topography measurement, NIST requires the services of experts in the
+analysis of surface topography, in the registration and correlation of topographic images, and in the manufacture of reproducible toolmarks.
+
+Information about NIST’s research in this area is contained in the attached report and two articles.
+
+II.   GENERAL REQUIREMENTS
+
+The contractor shall provide analysis of topography measurement results for both bullets and casings and provide advice on the manufacture of
+reproducible toolmarks.
+
+Confidentiality and Proprietary Data:
+This work does not involve confidential or proprietary data.
+
+Safety:
+This work must follow all NIST safety and evacuation requirements outlined in the attached Occupational  Health and Safety Orientation
+Checklist, and to be described in detail at contract initiation.
+
+Patent Rights:
+The government retains a government use license to all inventions arising from this work.
+
+
+III.  SCOPE OF WORK
+
+The contractor shall provide technical expertise in the analysis of surface topography measurements of bullets and casings and in the
+registration and correlation of topographic images of bullets and casings in order to quantify the similarity of topography images.
+
+
+IV.   SPECIFIC TASKS
+The Contractor shall perform the following tasks:
+1.    Upgrade and test existing MATLAB software for pairwise correlation of the topography of the firing pin regions and of the breech face
+regions of standard casings. This software has the working title—FP Correlator.  This work consists of the following subtasks:
+-Studying the code and becoming familiar with the details of its functions,
+-Documenting the code further for users by inserting comment lines describing the function of each routine in the code where necessary,
+-Integrating a routine for a Gaussian regression filter into the code in order to maximize the sizes of surface topography areas that can be
+compared.
+-Testing and debugging the revised code,
+-Running the code on a set of approximately 175 topography images to be supplied by the NIST Contracting Officer’s Technical Representative
+(COTR).
+
+2.    Demonstrate an automated approach for correlating the surface topographies of fired bullets. This work consists of the following subtasks:
+-Refining an existing software code in MATLAB, working title—Bullet Correlator, that has similar functions to the code FP Correlator but in
+addition identifies and counts consecutive striations of bullets and selects useful surface areas where the agreement of striations is
+significant,
+-Testing the code on a set of measured topography images and comparing the accuracy of the correlation results with a widely used manual method
+employing comparison optical microscopy of split images of two similar objects with the same orientation and illumination,
+Provide a written report to the COTR describing the results of the testing.
+
+3.    Develop software for correlating the surface topographies of casing ejector marks. This work consists of the following subtasks:
+-Developing an algorithm for capturing the outline of an ejector mark area,
+-Developing an algorithm for correlating the topographies of a pair of ejector mark areas,
+-Developing a software code in MATLAB, working title— Standard Ejector Mark Correlator, that embodies the algorithms developed above,
+-Testing the code on a minimum of three pairs of casing ejector marks,
+Provide a written report to the COTR describing the results of the testing.
+
+4.    Provide consultation when requested by the COTR on the manufacture of reproducible toolmarks.
+
+
+V.    DELIVERABLES AND REPORTS
+The Contractor shall deliver the following:
+    • A software code containing a Gaussian regression filter that can be used for the correlation of the surface topography of casing firing pin
+      impressions and breech face impressions.  This will enable NIST to test for and demonstrate improved accuracy for identifying casings fired
+      by the same firearm.  All routines in the software shall include embedded comments to describe their functions.
+    • Demonstration that the accuracy of the method for correlating the surface topography of bullet striations is equal to or better than the
+      conventional comparison optical microscopy method for identifying bullets fired by the same firearm.  The demonstration will likely consist
+      of a comparison on an Excel spreadsheet of the accuracy of the two methods for identifying a set of approximately 15 bullets fired by the
+      same firearm.
+    • A software code that can be used for the correlation of SRM cartridge case ejector marks.  All routines in the software shall include
+      embedded comments to describe their functions.
+
+    • The following Progress Report Outputs:
+1.    Report demonstrating that the MATLAB code, FP Correlator, runs without failure and with credible results on a minimum of three pairs of
+SRM firing pin topography images and three pairs of SRM breech face topography images to be supplied by NIST. The report shall be in the form of
+detailed graphical results comparing pairs of measured and filtered casing topography images and numerical results indicating optimized
+registration.  This report is expected three months after the initiation of the contract.
+2.    Report describing the results of testing Bullet Correlator on 15 bullet topography images.  The report shall be in the form of detailed
+graphical results comparing pairs of measured and filtered bullet topography images and numerical results indicating optimized registration.
+This report is expected six months after the initiation of the contract.
+3.    Report demonstrating that MATLAB code, Standard Ejector Mark Correlator, runs without failure and with credible results on a minimum of
+three pairs of SRM firing pin topography images to be supplied by NIST.  The report shall be in the form of detailed graphical results comparing
+pairs of measured topography images and numerical results indicating optimized registration.  This report is expected nine months after the
+initiation of the contract.
+4.    Publishable report demonstrating the detailed results of testing Bullet Correlator, described in Task 2, establishing the accuracy of the
+method for identifying pairs of bullets fired from the same firearm for the set of bullets tested, and comparing the accuracy to that of other
+methods.  This report shall be judged by the NIST COTR to be of a quality to be publishable in Forensic Science journals.  The report is
+expected twelve months after the initiation of the contract.
+
+Non-data outputs and end items:
+1. Documented Excel spreadsheets as needed describing the analysis of results to the COTR. See the second bulleted deliverable above.
+
+VI.   PERIOD OF PERFORMANCE AND LOCATION OF WORK
+
+    • The period of performance shall be one year from date of award.
+    • The Contractor’s work shall be performed at the contractor’s office and on site at NIST in Gaithersburg, MD between 7:30 am and 7:00 pm
+      Eastern Standard Time on normal workdays. At least half of the time will be spent on site at NIST to enable face-to-face technical
+      interactions with the COTR and other key NIST staff.
+    • The expected level of effort is 1090 hours total for all tasks.
+    • The Contractor shall present deliverable number four at a suitable professional conference, to be determined by mutual agreement of the
+      contractor and the COTR.
+
+VII.  GOVERNMENT-FURNISHED PROPERTY, DATA, AND/OR INFORMATION
+
+    • The Mechanical Metrology Division equipment and facilities required for this work shall be made available to the Contractor as needed.  A
+      computer, software, topographic optical microscope, and internet access shall be provided to the Contractor.
+    • All equipment and material provided by the government for this project will remain the property of the government and must be surrendered
+      to the government upon completion or termination of this project.
+
+VIII. EXHIBITS AND REFERENCE DOCUMENTS
+
+T. Vorburger, J. Yen, B. Bachrach, T.B. Renegar, J.J. Filliben, L. Ma, H.-G. Rhee, A. Zheng, J.-F. Song, M. Riley, C.D. Foreman, S.M. Ballou,
+Surface Topography Analysis for a Feasibility Assessment of a National Ballistics Imaging Database, NISTIR 7362, (National Institute of
+Standards and Technology, Gaithersburg MD, 2007); http://www.nist.gov/pml/div681/grp13/upload/nistir2007-7362.pdf.
+
+L. Ma, J. Song, E. Whitenton, A. Zheng, T.V. Vorburger, and J. Zhou, “NIST Bullet Signature Measurement System for RM (Reference Material) 8240
+Standard Bullets,” J. Forensic. Sci. 49, 649 (2004), attached.
+
+T.V. Vorburger, J. Song, W. Chu, T.B. Renegar, A. Zheng, J. Yen, R.M. Thompson, R. Silver, B. Bachrach, and M. Ols, “Topography measurements for
+correlations of standard cartridge cases,” Proc. SPIE 7729, 77291D (2010); doi: 10.1117/12.859918, attached.
+
+Topography measurements for correlations of standard cartridge cases
+T.V. Vorburger*, J. Song, W. Chu, T.B. Renegar, A. Zheng, J. Yen, R.M. Thompson, R. Silver National Institute of Standards and Technology 100 Bureau Drive Gaithersburg, MD 20899, USA B. Bachrach Intelligent Automation, Inc. 15400 Calhoun Drive Rockville, MD 20855 M. Ols Bureau of Alcohol, Tobacco, Firearms, and Explosives 6000 Ammendale Road Ammendale, MD 20705
+ABSTRACT
+The National Institute of Standards and Technology Standard Reference Materials (SRM) 2460 Standard Bullets and 2461 Standard Cartridge Cases are intended for use as check standards for crime laboratories to help verify that their computerized optical imaging equipment for ballistics image acquisitions and correlations is operating properly. Using topography measurements and cross-correlation methods, our earlier results for the SRM bullets and recent results for the SRM cartridge cases both demonstrate that the individual units of the SRMs are highly reproducible. Currently, we are developing procedures for topographic imaging of the firing pin impressions, breech face impressions, and ejector marks of the standard cartridge cases. The initial results lead us to conclude that all three areas can be measured accurately and routinely using confocal techniques. We are also nearing conclusion of a project with crime lab experts to test sets of both SRM cartridge cases and SRM bullets using the automated commercial systems of the National Integrated Ballistics Information Network. Keywords: Forensic science, ballistics identification, standard bullet, standard cartridge case, topography measurement, confocal.
+
+1. INTRODUCTION
+Fired cartridge cases and bullets are marked with characteristic signatures, which are unique to the firearm. Impression marks on the fired cartridge case are caused by impact from the firing pin, breech face, and ejector. Striations on the fired bullet are caused by its passage through the gun barrel. By analyzing these ballistics signatures, firearm examiners can connect a firearm to criminal acts1. The procedure of comparing similar cartridge cases and bullets with comparison optical microscopes to determine whether the evidence has been fired from the same firearm is a standard practice for crime labs. Since the 1990's, automated optical systems have also been developed for speeding up the process of ballistics identification2 in crime labs. The automated microscopes are widely used for acquisition of casing and bullet
+
+*
+
+Email address: tvtv@nist.gov
+
+Scanning Microscopy 2010, edited by Michael T. Postek, Dale E. Newbury, S. Frank Platek, David C. Joy, Proc. of SPIE Vol. 7729, 77291D ˇ Š 2010 SPIE ˇ CCC code: 0277-786X/10/$18 ˇ doi: 10.1117/12.859918
+
+Proc. of SPIE Vol. 7729 77291D-1
+
+images, which are stored in databases. Correlation software is then used for similarity testing of the stored images to assist in the investigation of gun related crimes. There are several such installations in the United States. The largest of these is the National Integrated Ballistics Identification Network (NIBIN)3 operated by the Bureau of Alcohol, Tobacco, Firearms, and Explosives (ATF) comprising about 235 imaging stations across the country. Similar systems have been developed in other countries. Most systems are based on optical imaging comparisons; however, ballistics signatures are 3D geometrical topographies by nature. When a topography feature is observed with an optical microscope, its optical images may show large variations depending on the lighting conditions, such as the intensity and direction of the light, potentially resulting in significant uncertainty in correlations of the acquired images with these systems. In this paper, we discuss the advantages of using topography measurements for correlation of cartridge cases and emphasize topography methods for imaging cartridge cases intended as physical standards in crime labs. The National Institute of Standards and Technology (NIST) and the ATF have collaborated on the development of physical standards for verification and traceability of the automated optical systems and the associated acquisition procedures.4 The NIST Standard Reference Material (SRM) 2460 Standard Bullets and 2461 Cartridge Cases are seeing use as check standards for crime laboratories to help verify that their computerized optical imaging equipment for ballistics image acquisitions and correlations is operating properly. These SRM Bullets and Casings are aimed to support the NIBIN, as tools for ballistics measurement quality control, measurement unification, and traceability to standards. Because similarity of surface topography and its appearance is a key factor in firearms identification, the reproduction of identical standards is a key property in this activity. Essentially identical standards are required to demonstrate that different systems across the country are operating the same. In order to test the topography reproducibility of the SRM Cartridge Cases and Bullets, the cross correlation function maximum CCFmax and a NIST proposed parameter called the topography difference Ds are used in the analysis.5 A topography measurement and analysis system was developed at NIST for calculating these parameters for correlation of both 2D topography profiles for bullets and 3D topography images for cartridge cases. Thus far we have developed and certified Standard Reference Material (SRM) Bullets (SRM 2460) and are nearing completion on SRM 2461 Cartridge Cases. Earlier results for the SRM Bullets demonstrate that the individual units of the SRMs are highly reproducible. The recent topography measurements of the SRM Cartridge Cases also reveal very high similarity among individual units. Along the way we had an opportunity to evaluate actual test fired casings6 under a National Academies study on the feasibility of developing a National Ballistics Imaging Database7. One conclusion of our work was that direct measurement of surface topography with a research system provided more accurate determinations of cartridge cases fired from the same firearm than a commercial system using optical imaging alone. This result was obtained for both breech face and firing pin impressions on cartridge cases fired from sets of both new and used firearms. Subsequently, we arrived at a similar conclusion for a set of fired bullets8. After fabrication of the first sets of the SRM Cartridge Cases, we recently completed a laboratory comparison of both types of standards with the participation of 20 operators on 15 of the widely used Integrated Ballistics Identification Systems (IBIS) currently operating in the NIBIN. The project was called the National Ballistics Imaging Comparison (NBIC) and was a collaboration of NIST and the ATF. This paper is about the reproducibility of topography images of the new SRM cartridge cases.
+
+Certain commercial equipment, instruments, or materials are identified in this paper to specify adequately the experimental procedure. Such identification does not imply recommendation or endorsement by the National Institute of Standards and Technology, nor does it imply that the materials or equipment identified are necessarily the best available for the purpose.
+
+
+
+Proc. of SPIE Vol. 7729 77291D-2
+
+2. CONDITIONS OF TOPOGRAPHY MEASUREMENT
+Topography images have been taken of firing pin impressions, breech face impressions, and ejector marks on the surfaces of the standard cartridge cases. All topography measurements were taken with a Nanofocus Surf confocal microscope, which uses Nipkow Disk technology9 to provide the confocal effect and produce topography images of the surfaces. Important conditions of these measurements include the nominal magnification of the objective lens, its numerical aperture, the lateral pixel spacing, the vertical spacing of the image slices, the total number of image slices, the number of areas that were stitched to form a composite image, and the areas of the composite images. These and other measurement parameters are shown in Table 1.
+Table 1. Instrument parameters of the confocal microscope for topography measurements of three regions of the standard cartridge cases
+
+Region Measured Magnification Numerical aperture Pixel Spacing Number of pixels in one field of view Vertical slice spacing (h) Typical number of slices (n) Total vertical travel (h × n) Number of stitched areas Approx. size of measured area
+
+Firing Pin 20× 0.6 1.563 m × 1.563 m 512 × 512 0.15 m 1000 150 m 1 field of view 0.8 mm × 0.8 mm
+
+Breech Face 10× 0.3 3.125 m × 3.125 m 512 × 512 0.2 m 900 180 m 3×3 4 mm × 4 mm 20× 0.6 1.563 m × 1.563 m 512 × 512 0.15 m 987 148 m 6×6 4 mm × 4 mm
+
+Ejector Mark 20× 0.6 1.563 m × 1.563 m 512 × 512 0.25 m 967 242 m 1×2 0.8 mm × 1.5 mm
+
+3. SRM 2461, STANDARD CARTRIDGE CASES
+The cartridge cases are produced by electroforming replicas from a single 9 mm master selected from several test fires at the ATF. The selection criteria for the master were overall clarity of the firing pin, breech face, and ejector mark impressions, the quality of the master casing material, and the potential for long life during the replication process. The electroforming process is provided by a commercial vendor10. Thin replicas of the base of the cartridge case master are produced by the electroforming process. These replicas are then bonded to real cartridge cases to produce standards that have the approximate geometry of a real 9 mm cartridge case but have a slightly larger diameter, partly so that the standards cannot be mistaken for actual fired 9 mm cartridge cases. A photo of several cartridge case SRMs is shown in Fig. 1. The final products are positive replicas, not of the master itself, but of several positive (3rd generation) replicas of the master. Thus far, four sets of cartridge case replicas, about 278 units in all, have been fabricated. Altogether, 250 units of cartridge cases are planned to be measured, certified, and made available as SRM 2461. Each unit will have its surface topography measured by confocal microscopy in the regions of the firing pin impression, breech face impression, and ejector mark. Each unit will also undergo IBIS11 acquisition of its firing pin impression, breech face impression, and ejector mark.
+
+Proc. of SPIE Vol. 7729 77291D-3
+
+Figure 1. Typical batch of SRM cartridge cases. The buttons on top are the electroformed Ni replicas, which are bonded to turned cylindrical bases. The outer diameter is about 13 mm.
+
+4. TOPOGRAPHY IMAGES OF FIRING PIN IMPRESSIONS
+Approximately 150 firing pin impressions have been measured for their surface topography. An example of a topography image is shown in Fig. 2. It has an overall bowl shape upon which are superimposed fine markings, which may be used as identifying characteristics. The correlations so far have been performed with respect to the SRM unit with serial number 007. For each casing, the correlation is done after a high-pass Gaussian filter12 with 0.25 mm cutoff has been applied to remove the bowl shape. As an example, the correlation of unit #110 with unit #007 is shown in Fig. 3. The upper two graphs are color plots of the unfiltered topography data; the lower two graphs on the left and in the middle are the filtered data and they appear almost identical. The middle graph is shown slightly rotated and translated to produce optimum alignment as determined by a registration program with automated search capability, which calculates the cross-correlation function maximum CCFmax between the two topographic images for each rotational and translational position chosen. If the match were perfect between the two images, the value of CCFmax would be unity, or 100 %. The value of 99.6 % obtained here is excellent and shows the high degree of reproducibility of the two casing firing pin impressions. Figure 4 shows the CCFmax results for the first 173 units received when correlated with respect to unit #007. The goal specification is that the value of CCFmax be greater than 95 % for all units of the SRM when each firing pin impression is correlated with the firing pin impression for unit #007. So far, nearly all the units have acceptable surface topography. The four units that do not qualify are all seen to have defects or unremovable debris on their surfaces. The presence of these artifacts evidently reduced the CCFmax values.
+
+Proc. of SPIE Vol. 7729 77291D-4
+
+Figure 2. Topographic image of the firing pin impression on SRM 2461, Standard Cartridge Case, Unit #007. The outside border region contains numerous outliers and dropouts, so only the data in the center are used in the analysis.
+
+Figure 3. User screen showing the correlation of the firing pin impressions on two units of SRM 2461, the standard cartridge cases reproducibly fabricated by electroforming.
+
+Proc. of SPIE Vol. 7729 77291D-5
+
+Figure 4. Cross-correlation maxima for the topographic images of firing pin impressions of 173 SRM cartridge cases, using SRM unit #007 as a master.
+
+These excellent results are tempered by the fact that some units of the first two sets of casings reveal a slowly increasing contamination on their surfaces, likely due to the use of solder to bond the thin replicas to the cartridge case substrates. These first two sets will not be distributed as SRMs and the soldering procedure has since been replaced with a gluing process to bond the replicas to the substrates.
+
+5. TOPOGRAPHY IMAGES OF BREECH FACE IMPRESSIONS
+Preliminary topography data have also been obtained for the breech face impressions. Here we also see a high degree of reproducibility among the breech face impressions we have tested so far. The preliminary testing has involved the development of a measurement protocol to be used for the production measurements of each breech face impression. The main activity there was to test the trade-off between a 10× objective, which has a field of view of 1.6 mm, and a 20× objective, which has better lateral resolution but a field of view of only 0.8 mm. The surface of the breech face impression, with diameter approximately 3.7 mm, could be measured more quickly with the 10× objective because only nine stitched images would be required, whereas 36 stitched images would be required with the 20× objective. To explore this issue we measured a single breech face impression (SRM 2461, unit #007) with confocal microscopy with both objectives (10× and 20×) at six relative orientations of the cartridge case (0°, 5°, 35°, 45°, 90°, and 105°). Then we used a registration program to locate the positions and rotational orientations of each pair of images and calculated the cross-correlation coefficient at the best matching positions. Two of the data sets are shown in Fig. 5. The data for the 10× and 20× objectives at the same orientation appear quite similar. Figure 6 shows a detailed correlation between two topography images taken with the 10× objective with the casing in two different orientations, 0°, and 35°. The value of the cross-correlation function at the optimum orientation is 0.95, close to the ideal value of 1.00 for identical data sets. A summary of the cross-correlation maxima is shown in Table 2. The entries show the average CCFmax values for correlations of the images measured with the 10× objective, correlations of the images measured with the 20× objective, and correlations between 10× and 20× images. The orientation has little effect, suggesting that there is little distortion in the microscope images. There is a significant but small drop in the correlation value when the images from the two different objectives are compared. This may be due to a slight loss of resolution in the 10× images because the numerical aperture is 0.3, whereas the 20× objective has a numerical aperture of 0.6. In any case, we conclude that there is little loss in image quality with the 10× objective versus the 20× objective and there is a factor of four gain in
+
+Proc. of SPIE Vol. 7729 77291D-6
+
+measurement speed. So we plan to perform all of our subsequent measurements on these SRM breech face impressions with the 10× objective.
+
+Figure 5. Topographic images of breech face impressions obtained with confocal microscopy using a 10× objective (left) and a 20× objective (right).
+
+Figure 6. Topographic images of breech face impressions obtained with confocal microscopy using a 10× objective: (left) at 0° orientation and (right) at 35° orientation. The latter image has been rotated manually here to be close to the optimum orientation for correlation. The cross-correlation maximum between the images is 0.95.
+
+Proc. of SPIE Vol. 7729 77291D-7
+
+Table 2. Summary of the cross-correlation results of topographic images of the same breech face impression acquired with different objectives (10× and 20×) measured in six different rotational orientations (0°, 5°, 35°, 45°, 90°, and 105°). The images were trimmed to remove data points at the edges that are outliers or otherwise not related to the breech face impression itself.
+
+Microscope Objectives being Compared 10× vs. 10× 10× vs. 20× 20× vs. 20× Number Pairs Mean CCFmax Stdev. of 30 0.941 0.018 72 0.903 0.023 30 0.952 0.016
+
+6. TOPOGRAPHIC IMAGES OF EJECTOR MARKS
+Initial data on the ejector marks also suggest that they are highly reproducible. Figure 7 shows a comparison of topographic images of ejector marks from two SRM cartridge cases. Comparing these unusual shaped images is difficult to automate. Here the data have been truncated into rectangles, which mask unreliable data at the edges and make the images easier to deal with mathematically. The result is a pair of images that look quite similar and produce a crosscorrelation coefficient of 0.965. Because the confocal method is sensitive to low signal-to-noise and because it produces outliers and dropouts at high incident angle, these images were recorded with the cartridge cases tilted so that the principal face of the ejector mark is normal to the optical axis, thus producing a large optical signal and with few dropouts. Figure 8 shows the orientation that was used as well as the normal orientation recommended for inspection on ordinary reflection optical microscopes. This tilted orientation will enable us to demonstrate with topographic imaging whether the ejector mark is highly reproducible from one unit to the next. This orientation is not recommended for viewing with a reflection optical microscope in crime labs. The cartridge case should still be inspected in the normal onaxis orientation when it is in service as a standard in order to demonstrate control of the image acquisitions in crime labs.
+
+7. CONCLUDING OBSERVATIONS
+We have developed and certified standard bullets (SRM 2460) for use in crime labs to help demonstrate the quality of image acquisitions by automated microscopes connected to image databases and correlation systems. We are continuing measurements of standard cartridge cases for the same purpose. These cartridge cases will be certified for the reproducibility of their firing pin impressions, breech face impressions, and ejector marks, so that different stations connected to large databases can demonstrate the similarity of their measuring systems and their procedures with different units of the SRM. In related projects we have also shown that topography measurements produced more accurate matches of test fires from the same firearm than the widely used method employing reflection optical microscopy. This was done both for two sets of cartridge cases6 as well as a set of bullets.8 If the speed of the acquisition setup and the correlation software can be optimized, the use of topography acquisitions of bullets and casings by optical methods is very promising.
+
+Proc. of SPIE Vol. 7729 77291D-8
+
+Figure 7. Comparison of ejector mark topography images from two different units of SRM 2461, #001 on the left and #011 on the right. The inner rectangles designate the approximate limits of the areas that were correlated after trimming by the Gaussian filter (solid line) then further trimming of unreliable data points (dashed line).
+
+Optical axis
+
+Cartridge case with ejector mark on the top right edge
+
+Side view: cartridge case fixtured with base squared up to optical axis of microscope
+
+Cartridge case fixtured with ejector mark facet squared up to optical axis of microscope
+
+Figure 8. Two orientations for microscopic inspection of cartridge case ejector mark; (middle) customary setup, (right) setup used to optimize the signal-to-noise and minimize dropouts and outliers for measurement of surface topography with confocal microscopy.
+
+Proc. of SPIE Vol. 7729 77291D-9
+
+ACKNOWLEDGEMENTS
+This work was funded in the main by the National Institute of Justice through the NIST Office of Law Enforcement Standards and in part by the Dimensional Metrology Program of the NIST Manufacturing Engineering Laboratory. The authors are grateful to Paul Rubert, Rubert & Co., for many discussions about the electroforming process and the fabrication of the replica casings and to R. Dixson and L. Ma for their careful reviews of the manuscript.
+
+REFERENCES
+[1]. Kirk,P.L., [Crime Investigation], 2nd Ed., Krieger Publ. Co., Malabar, FL (1985). [2]. Braga, A.A. and G.L. Pierce, G.L., "Linking Crime Guns: The impact of ballistics imaging technology on the productivity of the Boston Police Department's ballistics unit," Paper ID JFS2003205, J. Forensic Sci. 49 (4), 1-5 (2004). [3]. www.nibin.gov, (accessed, May 6, 2010). [4]. Ma, L, Song, J., Whitenton, E., Zheng, A., Vorburger, T.V. and Zhou, J., "NIST Bullet Signature Measurement System for RM (Reference Material) 8240 Standard Bullets," Paper ID JFS2003384, J. Forensic Sci. 49 (4), 649-659 (2004). [5]. Song, J., Vorburger, T., Rhee, H., Zheng, A., Ma, L., Libert, J., Ballou, S., Bachrach, B. and Bogert, K., "Correlation of Topography Measurements of NIST SRM 2460 Standards Bullets by Four Techniques," Meas. Sci. Technol. 17, 500 503 (2006). [6]. Vorburger, T., Yen, J., Bachrach, B., Renegar, T.B., Filliben, J.J., Ma L., Rhee, H.-G., Zheng, A., Song, J.-F., Riley, M., Foreman, C.D. and Ballou, S.M., [Surface Topography Analysis for a Feasibility Assessment of a National Ballistics Imaging Database], NISTIR 7362, National Institute of Standards and Technology, Gaithersburg MD (2007). [7]. Cork, D.L., Rolph, J.E., Meieran, E.S. and Petrie, C.V., eds., [Ballistic Imaging], National Academies Press, Washington, DC (2008). [8]. Chu, W., Song, J. and Vorburger, T., "Pilot study of automated bullet signature identification based on topography measurements and correlations," J. Forensic Sci. 55 (2), 341-347 (2010). [9]. Schmidt, M.A. and Compton, R.D., "Confocal Microscopy," in [ASM Handbook Volume 18, Friction, Lubrication, and Wear Technology], ASM International, Materials Park, OH (1992) pp. 357-361. [10]. Rubert, P., "Properties of Electroformed Calibration Standards for Surface Topography Measuring Systems," in [X. International Colloquium on Surfaces], Dietzsch, M. and Trumpold, H., eds., Shaker Verlag, Aachen, Germany (2000) pp. 245-251. [11]. http://www.forensictechnologyinc.com/p7.html. [12]. ASME B46.1-2002, [Surface Texture (Surface Roughness, Waviness, and Lay)], American Society of Mechanical Engineers, New York (2003).
+
+Proc. of SPIE Vol. 7729 77291D-10
+
+

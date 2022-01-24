@@ -1,0 +1,601 @@
+
+OVERVIEW - The U. S. Railroad Retirement Board (“RRB”) is an independent Federal agency that administers a retirement and survivor benefits
+program for railroad employees and their families.  The RRB was established by the Railroad Retirement Acts of 1937 and 1974.  Its benefits
+program was the forerunner of the more familiar Social Security System.  The Railroad Retirement System is unique inasmuch as it is the only
+federally administered benefits program covering a single private industry.  The RRB also administers the Railroad Unemployment Insurance Act,
+which provides unemployment and sickness benefits to railroad employees.  The RRB’s headquarters is located in Chicago, Illinois.  Background -
+The RRB currently has an EMC2 Clarion CX4-120 open systems storage system with two partially populated drawers (DAEs). This system is populated
+with approximately 6 TBs storage capacity on SATA drives and 4 TBs of storage capacity on Fiber Channel (FC) drives.  Space is available in the
+FC DAE for three additional .3 terabyte (TB) drives and in the SATA DAE for nine additional 1TB drives.  The RRB’s EMC2 Clarion CX4-120 is
+currently under EMC2 maintenance coverage and the last option period end date for the services is November 3, 2011.  – Objective - The RRB’s
+objective is to procure the added storage from EMC2 partners as offers made under the terms of each offeror’s GSA Schedule 70 Contract or one of
+their Government Wide Acquisition Contracts (GWACs). The RRB desires to add a minimum of 53.4 TB of physical storage to the RRB’s existing EMC2
+Clarion CX4-120 open systems storage system.  See Attachment 4 for an illustration of the current and envisioned future states of the RRB’s
+Clarion storage system.  PRICE SCHEDULE - The offeror shall provide a “fully loaded” firm-fixed price to furnish, install, configure, test, and
+provide consulting and training (CLINs001-002) for their proposed open systems storage solution.  (Basic and Optional) The RRB defines “fully
+loaded” as the price inclusive of direct wages, fringe benefits, all overheads, general and administrative (G&A) costs, profit and fees, and all
+travel and per diem costs for the contractor’s employees to perform the required services at the RRB headquarters facility, located in Chicago,
+Illinois.  The offeror shall also enter an annual maintenance/support price (Basic and Optional) for the period of performance effective with
+the RRB acceptance of the contractor’s solution through November 3, 2011 resulting in coterminous maintenance coverage with the existing Clarion
+Storage System and its currently installed drives (as described in Section I - the Background paragraph).  * The contractor’s price offering for
+this option (CLIN 001B) shall be valid for at least six months from the date of award.  - STATEMENT OF WORK A.   The contractor shall provide,
+install, and configure equipment, software, peripherals, and other components, that meet all of the following requirements:  The offered
+equipment shall be compatible with and shall fully integrate into the RRB’s existing EMC2 Clarion CX4-120 and the RRB’s information systems
+operating environment, (see Attachment 1).  2.  The proposed solution shall add a minimum of 53.4 TB of storage upon installation.  This minimum
+of 53.4 TB of additional physical storage capacity shall be comprised of approximately 1/3 15,000 RPM FC drives and approximately 2/3 7,200 RPM
+SATA drives.  The RRB prefers that not more than four DAEs in addition to the two currently in use be populated in order to add the required
+minimum of 53.4 TB of physical storage.  See the RRB envisioned (target) future/end state as illustrated on Attachment 4 for RRB sought use of
+the minimum required total physical storage for the Clarion system.  3.   The contractor shall provide and install XBR-000141 4GB Brocade small
+form-factor pluggable (SFP) eight-pack modules to the existing Brocade switch. These modules shall provide 32 ports to connect the provided and
+installed storage drives to the brocade switch.  The Contractor shall also provide the cables needed to connect the drives to the modules. RRB
+staff will install and configure the modules as necessary.  3. The contractor shall provide and install all storage media and all other
+necessary equipment (including but not being limited to cables, cable connectors, connections, and modules) required to connect the offered
+solution to the RRB’s current IT system environment equipment.  The installation schedule shall not disrupt on-going RRB IT systems operations
+and shall be mutually agreed upon with the RRB.  4.The Contractor shall supply a storage system solution that is capable to have disk drives and
+other components replaced, microcode updated, and feature capacity upgrades performed without any interruption of system/user access to the data
+on the current installed 10TBs of disk drives on the Clarion.  5. The Contractor shall ensure that the installation of the added storage to the
+Clarion CX4-120 shall be performed by a contractor and personnel duly authorized and certified by EMC2 to perform such installation and
+maintenance.  The Contractor shall provide that the equipment and installation is certified for maintenance coverage by EMC2 prior to the RRB’s
+acceptance.  6. The provided equipment shall be new or shall be accompanied by a certificate of maintainability from the original equipment
+manufacturer.  The equipment offered shall be in current production.  B. As an option, and upon exercise, the RRB requires the contractor to
+provide and install, at a minimum, 6.75 TB of 15,000 RPM FC drives, as well as any accompanying peripherals, cables, connectors, modules, or
+other equipment in the existing EMC Clarion CX4-120 in accordance with the requirements of solicitation section III.A.  C. The contractor shall
+provide the following services:  1. The contractor shall provide the RRB pre-installation assistance in developing an implementation plan, which
+shall not disrupt RRB operations.  2.  The contractor shall provide a technical overview of LUN layout that ensures and demonstrates that they
+will follow EMC2’s best practices.  3.  The contractor shall provide on-site training/knowledge transfer for two RRB Network/LAN engineers to
+become capable of performing all necessary functions for successful system operation of the installed open systems storage solution in the RRB’s
+environment.  4.  The contractor shall make their key project staff available to attend a project initiation meeting, within five days of award,
+The RRB and Contractor project staff will discuss plans and details about the Storage Solution installation.  This discussion can be held via
+teleconference or on-site at the RRB’s headquarters location at no additional cost to the RRB. The Contractor shall begin other project work at
+a mutually agreed upon date thereafter.  Contractor delivery and installation (which does not impact operation of and user access to the RRB’s
+network) shall be scheduled and conducted Monday thru Friday, excluding Federal holidays between 8:00 am and 5:00 pm Central time.  D.
+Maintenance/Support Services - The Contractor shall provide maintenance on the installed storage solution as a conterminous maintenance period,
+24x7 warranty and service on the entire solution, including all proposed hardware and software.  Four-hour restoration time is required after
+the Contractor receives a malfunction notification from the RRB for the entire warranty period post award. The Contractor shall provide
+documentation of its standard warranty provisions, the price of which is included in the purchase price of the proposed solution open systems
+storage devices.  Preventive maintenance shall be scheduled at mutually agreed-upon times.  RRB will be assigning in-house technical and
+functional personnel to this project to assist in answering questions, conveying an understanding of the RRB’s EMC2 Clarion environment, and
+other information to promote the stated project as necessary.  The RRB will provide workspace(s), telephone(s) for local and toll-free calls,
+and basic office equipment for contractor’s staff use when on-site at RRB headquarters.  The RRB will not provide PCs or PC software.  The RRB
+shall provide the necessary system access for implementation, testing, and evaluation purposes.  The contractor shall be responsible for
+obtaining any and all necessary licenses, permits and/or authorizations and shall comply with all local codes and ordinances required for
+performance of this contract without additional cost to RRB.  Under Section 508 of the Rehabilitation Act of 1973 (29 U.S.C. 794d), acquisitions
+of Electronics and Information Technology (EIT) supplies and services shall meet the accessibility standards as set forth in Attachment 2 to
+this solicitation.  Offerors shall complete the certificate at Attachment 2 and certify which accessibility standards the offered EIT products
+and/or services meet.  The contractor’s employee(s) shall successfully pass the necessary background/security checks.  Contractor personnel
+assigned to support the RRB shall be subjected to suitability screening and background investigation, in accordance with Federal regulations.
+Background investigation shall include, at a minimum, checking criminal court records and verifying social security number, credit, employment,
+education records, and reports to determine suitability for employment.  Contractor personnel engaged in this contract shall receive computer
+security awareness training (of approximately 1 hour or less) in accordance with the Federal Information Security Management Act (FISMA) of
+2002.  The selected contractor shall comply with the RRB’s system security requirements for personnel and equipment requiring access to the RRB
+computer network.  For network access, all contractor employees shall sign form G-455 (Computer Access Authorization Request), read the G-15
+(Information Systems Security Awareness Training for the RRB), sign G-15a (Employee Acknowledgment Statement for the Information Resources
+Security Program for the RRB), complete and sign the SF-85p (Questionnaire for Public Trust Positions).  For personnel having access to
+annuitant/beneficiary/claimant information, the individuals shall meet with the RRB’s privacy official for a brief training session.  All
+network-connected computers must have antivirus software with the current virus definition file(s) installed.   Sensitive Attachments  -
+Attachments 1 and 4 provide information on the RRB’s IT Infrastructure which contain sensitive but unclassified information or Privacy Act Data.
+For security reasons, these documents shall be provided to you upon request.  Your request must be on your company’s letterhead.  This
+attachment will not be submitted with this solicitation document.  Any unauthorized review, use, disclosure or distribution of this attachment
+is prohibited. All inquiries shall identify the solicitation number and be addressed and/or faxed, (312/751-4923) to:  U.S. Railroad Retirement
+Board, Ms. Velinda Nix, Acquisition Management, 844 North Rush Street, Chicago, IL  60611    All electronic proposals shall be submitted to
+PROPOSALS@RRB.GOV, Acquisition Management - Procurement or faxed to 312/751-4923.  RRB will accept electronically submitted proposals.  If the
+offeror elects electronic commerce for submission of its proposal, only one hard copy of the entire proposal package must be submitted by the
+time and date specified in the solicitation to U.S. Railroad Retirement Board, 844 North Rush Street, Acquisition Management-Procurement,
+Chicago, Illinois  60611.  The agency will accept Word or PDF documents, via disk or email.  Electronic submissions shall be sent to
+proposals@rrb.gov.  An electronically delivered proposal not received by the time and date specified in this solicitation (See Section VII.)
+shall be handled in accordance with FAR 52.212-1(f), “Late submissions, modifications, revisions, and withdrawals of offerors”.  The Offeror
+shall submit two (2) signed copies of Standard Form (SF-1449) with Blocks 12, 17a. and b., and 30a., b.,  and c. completed.  2. The offeror
+shall complete Section II – The Price Schedule with prices for all CLINs.  All pricing information quoted shall be fully loaded rates, including
+all appropriate travel and miscellaneous expenses.  3. Other information the contractor determines appropriate and relevant to the evaluation
+team.  C.  1. The technical proposal shall include a very specific description of the goods and services being offered in sufficient detail to
+evaluate compliance with the mandatory requirements and the evaluated technical factors of the solicitation.  2. The offeror shall provide
+complete and detailed technical information to facilitate scoring of the following two evaluated technical factors.  The offeror shall submit a
+detailed project plan and events timeline with their proposal.  The project plan shall include a detailed narrative outlining the required
+functionalities and activities, a projected timeline/milestone chart, corresponding staff assignments, work steps involved in completing the
+entire project described in Section III.  The offeror shall also submit proposed RRB acceptance procedures.  2)  A complete explanation
+including narrative, diagrams, charts, etc. that communicates how the proposed solution provides the RRB requirements in Section III as well as
+the following RRB desired technical capabilities or functionalities:  a)The offeror shall place special emphasis on how they will perform the
+installation, testing, and configuration of the proposed equipment without any disruption to ongoing RRB information processing operations.  b)
+The offerors shall explain any technical characteristics they provide that would be advantageous to the RRB.  This could include (but not
+necessarily be limited to) such things as hardware/software advantages, high capacity hardware components, efficient combinations of drives and
+DAEs, additional technical resources available through a corporate support structure or from another source, tools or approaches that would
+enable them to understand the RRB’s data processing situation in greater depth, etc.  c) The offeror shall also provide a detailed parts list
+and diagram showing the physical configuration of the proposed end-state storage system solution for both the basic (CLIN 001A) and optional
+(CLIN 001B) storage solution capacities.  b. All offerors shall submit information on previously performed contracts that are similar to this
+statement of work.  They should involve the installation and configuration of EMC2 open systems storage systems in environments similar to the
+RRB’s (as described in Attachment 1).  Information shall be provided on either, 1) all such contracts within the past three years, or 2) the
+last three contracts performed, whichever is fewer and shall include the names and addresses of the organization and at least two contact
+individuals and their direct phone numbers at each organization.  Offerors shall also submit a detailed description of the projects to be
+referenced including, but not being limited to, the nature of the open systems system installed.  3.  The contractor shall describe and list all
+resources, equipment, software, and tools the contractor requires RRB to provide and/or being furnished.  The offeror shall state the size of
+their staff and their space and equipment needs.  If any tools are to be installed on RRB equipment (as opposed to contractor PCs), the offeror
+shall provide a description of the environment and support needed from the RRB to accomplish this.  VI.    The RRB will award a contract
+resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation will be most advantageous to the RRB,
+price and other factors considered. Proposals will be evaluated using the following criteria in descending order of importance:
+Implementation/installation/upgrade project plan and technical approach (55 possible points, 55% of the total technical points available)
+Information on this element should have been submitted per Section IV.C.2.a.  The RRB will evaluate the detailed project plan and events
+timeline.  The RRB will evaluate the offeror’s approach to avoiding disruption during implementation.  The RRB will evaluate any technical
+characteristics the offeror provides that would be advantageous to the RRB.  b.Past performance (45 possible points, 45% of the total technical
+points available)  Information on this element should have been submitted per Section IV.C.2.b.  The RRB will evaluate past performance elements
+of direct relevance of the reference, overall customer satisfaction, quality of service, and reliability, contract compliance, and timeliness of
+performance.  Offerors will be evaluated on a technical to price ratio of 1:1.  Award will be made on a best value basis as outlined above and
+following the procedures in the FAR subpart 8.404.  Attachments - RRB Information Systems Technical Overview, Notification of Personal Identity
+Verification Requirements, Certification of Accessibility for Electronics and Information Technology – Section 508, RRB Current and Target
+Storage Capacity and Usage States
+
+
+
+
+                                            NOTIFICATION OF PERSONAL IDENTITY VERIFICATION REQUIREMENTS
+
+
+Background
+
+Homeland Security Presidential Directive 12 (HSPD-12), Policy for a Common Identification Standard for Federal Employees and Contractors,
+established a policy for all Federal agencies to create and use a government-wide secure and reliable form of identification for their Federal
+employees and contractors. This policy is intended to ensure a more complete, reliable, and trusted identification of individuals and for
+controlling the access of Federal employees and contractors to Federal physical facilities and information systems.
+
+This notification is issued to applicants for employee and certain contractor positions with the Railroad Retirement Board (RRB) to describe the
+personal identity verification policies of this agency.
+
+
+Applicant Identification Responsibilities
+
+As an applicant for a position as an employee or contractor with the RRB, you are required to do the following in order to complete your
+application process:
+    • Appear in person before the appropriate RRB official and present two forms of identity source documents to prove your claimed identity.
+      The identity source documents must be in original form and come from the list of acceptable documents shown below. At least one document
+      shall be a valid State or Federal government issued picture identification (ID).
+    • Complete and bring with you the enclosed Standard Form (SF) 85, OPM Questionnaire for Non-Sensitive Positions, or an equivalent form to
+      provide the required background information; so that a background check can be completed, unless one was previously done, remains on file,
+      and can be referenced. (For additional copies of this form go to http://www.opm.gov/forms.)
+    • Submit to having your picture and fingerprints taken.
+
+Once a background check has been completed, and no derogatory information is developed, you will be required to:
+    • Appear in person to the authorized RRB official to collect your PIV (Personal Identity Verification) Card. At that time, you will again be
+      required to present a state or Federal government picture identity source document to verify that you are the same individual as the one
+      who applied for the employee or contractor position and submitted the identity information required under this policy.
+    • Accept the PIV Card by signing for the card and acknowledging the related responsibilities.
+
+
+Responsibilities of Holding a PIV Card
+
+When you are issued a PIV Card, you have the following responsibilities regarding its care and protection. You will be asked to sign a statement
+acknowledging your responsibilities. Some of the important responsibilities are:
+
+
+    • You are required to protect your PIV Card from loss or theft. However, in the event that your card is lost or stolen, you must report the
+      loss within 24 hours of noting its disappearance.
+    • You agree that you will not attempt to clone, modify, or obtain data from any PIV Card.
+    • You agree that you will not assist others in gaining unauthorized access to Federal facilities or information.
+
+
+Protection of Applicant Information
+
+The following information provided by you will be used as part of the process of identity proofing, registration/enrollment, conducting a
+background investigation, and issuance of a PIV Card:
+    • Applicant’s full name;
+    • Date and place of birth;
+    • Identity source documents; and
+    • Other relevant information useful for proving the claimed identity of the applicant.
+
+This information will be stored in secure electronic media or in locked files. Access to the records is limited to those individuals who have a
+need to know the information in order to perform official functions under the PIV issuance process.
+
+
+Notification of Results of Identity Proofing
+
+If, as a result of the identity proofing process, you are deemed ineligible to be appointed to the position for which you applied and to be
+issued an official RRB identity document, you will be notified in writing of the identity proofing results. You will also be notified at that
+time of any additional rights you have under the RRB’s identity proofing processes.
+
+
+Rights If PIV Card Is Not Approved for You
+
+If you are denied a PIV Card, you have the right to appeal that decision Your appeal should start with a request to the Director of Human
+Resources to review your case. [Note: If the position/contract you seek is in the Office of Inspector General (OIG), you should appeal to the
+Assistant Inspector General for Investigations in the OIG.] Your request must be made within five workdays of receiving notification of the
+denial, and should specify the basis for your belief that the decision to deny you a PIV Card was incorrect. If you are not satisfied with the
+decision at this stage, you may make a further appeal to the Director of Administration [or the Inspector General in the case of a
+position/contract in the OIG] within five workdays of receiving the decision at the initial stage of the appeal.
+
+
+Correcting Incorrect Information
+
+You have the right to present evidence to correct any information that you believe to be incorrect that is obtained about you as a result of the
+PIV Card identity proofing, registration/enrollment, and issuance. Such evidence should be presented to the Director of Human Resources [or the
+Assistant Inspector General for Investigations in the OIG for a position/contract in the OIG] as soon as you become aware of a decision being
+made about you based on the incorrect information. A PIV Applicant Representative is available to assist you in removing incorrect
+
+
+information from your records. The name of your PIV Applicant Representative is Marvina Sims. She can be reached at telephone number 312-751-
+4943.
+Privacy Rights
+The information collected during the PIV process may be disclosed in accordance with the Railroad Retirement Board’s published routine uses as
+stated in System of Records RRB-46 and RRB-48 and as otherwise permitted under the Privacy Act of 1974 (5 U.S.C. § 552a), including disclosure:
+to the Office of Personnel Management, the Merit Systems Protection Board, the Equal Employment Opportunity Commission, and the Federal Labor
+Relations Authority upon an authorized request; to agencies, contractors, and others to administer personnel and payroll systems, for debt
+collection and for employment or security investigations; to law enforcement agencies if the Railroad Retirement Board becomes aware of a
+possible violation of a law or regulation; to a Congressional office in response to requests made on your behalf; to the Department of Justice,
+courts, and counsel during litigation; to unions if needed to perform their authorized duties; to other agencies under approved computer
+matches; and as otherwise authorized by law or regulations.
+
+
+Violations of Privacy
+
+Any person who knowing and willfully discloses information in violation of the Privacy Act is subject to civil, criminal and/or administrative
+penalties.
+
+Please contact the Bureau of Human Resources (312/751-4580) with any questions regarding the information contained in this notice.
+
+
+
+
+CERTIFICATION OF EIT ACCESSIBILITY
+
+I do hereby certify, as the designated representative of the offeror, to the best of my knowledge, that the Information  Technology  products  or
+services offered herein, in response to the government solicitation number (above), do hereby meet the  Electronics  and  Information  Technology
+Accessibility Standards checked below (use “X” or “(”) under the designated categories.
+
+
+                  (Signature)                            (Date)
+
+
+
+            Name (F,L, MI)                         Title
+
+
+
+                                                         Subpart B - Technical Standards
+
+
+(  § 1194.21 Software applications and operating systems.
+
+ ❑ When software is designed to run on a system that has a keyboard, product functions shall be executable from a  keyboard  where  the  function
+   itself or the result of performing a function can be discerned textually.
+ ❑ Applications shall not disrupt or disable activated features of other products that are identified  as  accessibility  features,  where  those
+   features are developed and documented according to industry standards. Applications also shall not disrupt or disable  activated  features  of
+   any operating system that are identified as accessibility features  where  the  application  programming  interface  for  those  accessibility
+   features has been documented by the manufacturer of the operating system and is available to the product developer.
+ ❑ A well-defined on-screen indication of the current focus shall be provided that moves among interactive interface elements as the input  focus
+   changes. The focus shall be programmatically exposed so that assistive technology can track focus and focus changes.
+ ❑ Sufficient information about a user interface element including the identity, operation and  state  of  the  element  shall  be  available  to
+   assistive technology. When an image represents a program element, the information conveyed by the image must also be available in text.
+ ❑ When bitmap images are used to identify controls, status indicators, or other programmatic elements, the  meaning  assigned  to  those  images
+   shall be consistent throughout an application's performance.
+ ❑ Textual information shall be provided through operating system functions for displaying text. The  minimum  information  that  shall  be  made
+   available is text content, text input caret location, and text attributes.
+ ❑ Applications shall not override user selected contrast and color selections and other individual display attributes.
+ ❑ When animation is displayed, the information shall be displayable in at least one non-animated presentation mode at the option of the user.
+ ❑ Color coding shall not be used as the only means of conveying information, indicating an action, prompting a  response,  or  distinguishing  a
+   visual element.
+ ❑ When a product permits a user to adjust color and contrast settings, a variety of color selections capable of producing a  range  of  contrast
+   levels shall be provided.
+ ❑ Software shall not use flashing or blinking text, objects, or other elements having a flash or blink frequency greater than  2  Hz  and  lower
+   than 55 Hz.
+ ❑ When electronic forms are used, the form shall allow people using  assistive  technology  to  access  the  information,  field  elements,  and
+   functionality required for completion and submission of the form, including all directions and cues.
+
+(  § 1194.22 Web-based intranet and internet information and applications.
+
+ ❑ A text equivalent for every non-text element shall be provided (e.g., via "alt", "longdesc", or in element content).
+ ❑ Equivalent alternatives for any multimedia presentation shall be synchronized with the presentation.
+ ❑ Web pages shall be designed so that all information conveyed with color is also available without color, for example from context or markup.
+ ❑ Documents shall be organized so they are readable without requiring an associated style sheet.
+ ❑ Redundant text links shall be provided for each active region of a server-side image map.
+ ❑ Client-side image maps shall be provided instead of server-side image maps except where the  regions  cannot  be  defined  with  an  available
+   geometric shape.
+ ❑ Row and column headers shall be identified for data tables.
+ ❑ Markup shall be used to associate data cells and header cells for data tables that have two or more logical levels of row or column headers.
+ ❑ Frames shall be titled with text that facilitates frame identification and navigation.
+ ❑ Pages shall be designed to avoid causing the screen to flicker with a frequency greater than 2 Hz and lower than 55 Hz.
+ ❑ A text-only page, with equivalent information or functionality, shall be provided to make a web site comply with the provisions of this  part,
+   when compliance cannot be accomplished in any other way. The content of the text-only page shall be updated whenever the primary page changes.
+ ❑ When pages utilize scripting languages to display content, or to create interface elements, the information provided by the  script  shall  be
+   identified with functional text that can be read by assistive technology.
+ ❑ When a web page requires that an applet, plug-in or other application be present on the client system to  interpret  page  content,  the  page
+   must provide a link to a plug-in or applet that complies with §1194.21(a) through (l).
+ ❑ When electronic forms are designed to be completed on-line, the form shall allow people using assistive technology to access the  information,
+   field elements, and functionality required for completion and submission of the form, including all directions and cues.
+ ❑ A method shall be provided that permits users to skip repetitive navigation links.
+ ❑ When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required.
+
+Note to §1194.22: 1. The Board interprets paragraphs (a) through (k) of this section as consistent with the following priority 1  Checkpoints  of
+the Web Content Accessibility Guidelines 1.0 (WCAG 1.0) (May 5, 1999) published by the  Web  Accessibility  Initiative  of  the  World  Wide  Web
+Consortium:
+
+|Section 1194.22 Paragraph                             |WCAG 1.0 Checkpoint                      |
+|(a)                                                   |1.1                                      |
+|(b)                                                   |1.4                                      |
+|(c)                                                   |2.1                                      |
+|(d)                                                   |6.1                                      |
+|(e)                                                   |1.2                                      |
+|(f)                                                   |9.1                                      |
+|(g)                                                   |5.1                                      |
+|(h)                                                   |5.2                                      |
+|(i)                                                   |12.1                                     |
+|(j)                                                   |7.1                                      |
+|(k)                                                   |11.4                                     |
+
+2. Paragraphs (l), (m), (n), (o), and (p) of this section are different from WCAG 1.0. Web pages that conform to WCAG 1.0, level A (i.e., all
+priority 1 checkpoints) must also meet paragraphs (l), (m), (n), (o), and (p) of this section to comply with this section. WCAG 1.0 is available
+at http://www.w3.org/TR/1999/WAI-WEBCONTENT-19990505.
+
+
+(  § 1194.23 Telecommunications products.
+
+ ❑ Telecommunications products or systems which provide a function allowing voice communication  and  which  do  not  themselves  provide  a  TTY
+   functionality shall provide a standard non-acoustic connection point for TTYs. Microphones shall be capable of being  turned  on  and  off  to
+   allow the user to intermix speech with TTY use.
+ ❑ Telecommunications products which  include  voice  communication  functionality  shall  support  all  commonly  used  cross-manufacturer  non-
+   proprietary standard TTY signal protocols.
+ ❑ Voice mail, auto-attendant, and interactive voice response telecommunications systems shall be usable by TTY users with their TTYs.
+ ❑ Voice mail, messaging, auto-attendant, and interactive voice response telecommunications systems that require a response from a user within  a
+   time interval, shall give an alert when the time interval is about to run out, and shall provide sufficient time for the user to indicate more
+   time is required.
+ ❑ Where provided, caller identification and similar telecommunications functions shall also be available for users of TTYs, and  for  users  who
+   cannot see displays.
+ ❑ For transmitted voice signals, telecommunications products shall provide a gain adjustable up to a minimum of 20 dB.  For  incremental  volume
+   control, at least one intermediate step of 12 dB of gain shall be provided.
+ ❑ If the telecommunications product allows a user to adjust the receive volume, a function shall be provided to automatically reset  the  volume
+   to the default level after every use.
+ ❑ Where a telecommunications product delivers output by an audio transducer which is normally  held  up  to  the  ear,  a  means  for  effective
+   magnetic wireless coupling to hearing technologies shall be provided.
+ ❑ Interference to hearing technologies (including hearing aids, cochlear implants, and assistive listening devices)  shall  be  reduced  to  the
+   lowest possible level that allows a user of hearing technologies to utilize the telecommunications product.
+ ❑ Products that transmit or conduct information or communication, shall  pass  through  cross-manufacturer,  non-proprietary,  industry-standard
+   codes, translation protocols, formats or other information necessary  to  provide  the  information  or  communication  in  a  usable  format.
+   Technologies which use encoding, signal compression, format transformation, or similar techniques shall  not  remove  information  needed  for
+   access or shall restore it upon delivery.
+ ❑ Products which have mechanically operated controls or keys, shall comply with the following:
+    ❑ Controls and keys shall be tactilely discernible without activating the controls or keys.
+    ❑ Controls and keys shall be operable with one hand and shall not require tight grasping, pinching, or  twisting  of  the  wrist.  The  force
+      required to activate controls and keys shall be 5 lbs. (22.2 N) maximum.
+    ❑ If key repeat is supported, the delay before repeat shall be adjustable to at least 2 seconds. Key repeat rate shall  be  adjustable  to  2
+      seconds per character.
+    ❑ The status of all locking or toggle controls or keys shall be visually discernible, and discernible either through touch or sound.
+
+(  § 1194.24 Video and multimedia products.
+
+ ❑ All analog television displays 13 inches and larger, and computer equipment that includes analog television  receiver  or  display  circuitry,
+   shall be equipped with caption decoder circuitry which appropriately receives, decodes, and displays closed captions  from  broadcast,  cable,
+   videotape, and DVD signals. As soon as practicable, but not later than July 1, 2002, widescreen digital television (DTV) displays measuring at
+   least 7.8 inches vertically, DTV sets with conventional displays measuring at least 13 inches vertically, and stand-alone DTV tuners,  whether
+   or not they are marketed with display screens, and computer equipment that includes DTV receiver or display circuitry, shall be equipped  with
+   caption decoder circuitry which appropriately receives, decodes, and displays closed  captions  from  broadcast,  cable,  videotape,  and  DVD
+   signals.
+ ❑ Television tuners, including tuner cards for use in computers, shall be equipped with secondary audio program playback circuitry.
+ ❑ All training and informational video and multimedia productions which support the agency's mission, regardless of format, that contain  speech
+   or other audio information necessary for the comprehension of the content, shall be open or closed captioned.
+ ❑ All training and informational video and multimedia productions which support the agency's mission, regardless of format, that contain  visual
+   information necessary for the comprehension of the content, shall be audio described.
+ ❑ Display or presentation of alternate text presentation or audio descriptions shall be user-selectable unless permanent.
+
+
+(  § 1194.25 Self contained, closed products.
+
+ ❑ Self contained products shall be usable by people with disabilities without requiring an  end-user  to  attach  assistive  technology  to  the
+   product. Personal headsets for private listening are not assistive technology.
+ ❑ When a timed response is required, the user shall be alerted and given sufficient time to indicate more time is required.
+ ❑ Where a product utilizes touchscreens or contact-sensitive controls, an input method shall be provided that complies  with  §1194.23  (k)  (1)
+   through (4).
+ ❑ When biometric forms of user identification or control are used, an alternative form of identification or activation, which does  not  require
+   the user to possess particular biological characteristics, shall also be provided.
+ ❑ When products provide auditory output, the audio signal shall be provided at a standard signal level through an  industry  standard  connector
+   that will allow for private listening. The product must provide the ability to interrupt, pause, and restart the audio at anytime.
+ ❑ When products deliver voice output in a public area, incremental volume control shall be provided with output amplification up to a  level  of
+   at least 65 dB. Where the ambient noise level of the environment is above 45 dB, a volume gain of at least 20 dB above the ambient level shall
+   be user selectable. A function shall be provided to automatically reset the volume to the default level after every use.
+ ❑ Color coding shall not be used as the only means of conveying information, indicating an action, prompting a  response,  or  distinguishing  a
+   visual element.
+ ❑ When a product permits a user to adjust color and contrast settings, a range of color selections capable of producing a  variety  of  contrast
+   levels shall be provided.
+ ❑ Products shall be designed to avoid causing the screen to flicker with a frequency greater than 2 Hz and lower than 55 Hz.
+ ❑ Products which are freestanding, non-portable, and intended to be used in one location and which have operable controls shall comply with  the
+   following:
+    ❑ The position of any operable control shall be determined with respect to a vertical plane, which is 48 inches in length,  centered  on  the
+      operable control, and at the maximum protrusion of the product within the 48 inch length (see Figure 1 of this part).
+    ❑ Where any operable control is 10 inches or less behind the reference plane, the height shall be 54 inches maximum  and  15  inches  minimum
+      above the floor.
+    ❑ Where any operable control is more than 10 inches and not more than 24 inches behind the reference plane, the height  shall  be  46  inches
+      maximum and 15 inches minimum above the floor.
+    ❑ Operable controls shall not be more than 24 inches behind the reference plane (see Figure 2 of this part).
+
+
+(  § 1194.26 Desktop and portable computers.
+
+ ❑ All mechanically operated controls and keys shall comply with §1194.23 (k) (1) through (4).
+ ❑ If a product utilizes touchscreens or touch-operated controls, an input method shall be provided that complies with §1194.23 (k)  (1)  through
+   (4).
+ ❑ When biometric forms of user identification or control are used, an alternative form of identification or activation, which does  not  require
+   the user to possess particular biological characteristics, shall also be provided.
+ ❑ Where provided, at least one of each type of expansion slots, ports and connectors shall comply with publicly available industry standards.
+
+                                                   Subpart C -- Functional Performance Criteria
+
+(  § 1194.31 Functional performance criteria.
+ ❑ At least one mode of operation and information retrieval that does not require user  vision  shall  be  provided,  or  support  for  assistive
+   technology used by people who are blind or visually impaired shall be provided.
+ ❑ At least one mode of operation and information retrieval that does not require visual acuity greater than 20/70 shall  be  provided  in  audio
+   and enlarged print output working together or independently, or support for assistive technology used by  people  who  are  visually  impaired
+   shall be provided.
+ ❑ At least one mode of operation and information retrieval that does not require user hearing  shall  be  provided,  or  support  for  assistive
+   technology used by people who are deaf or hard of hearing shall be provided.
+ ❑ Where audio information is important for the use of a product, at least one mode of operation and information retrieval shall be  provided  in
+   an enhanced auditory fashion, or support for assistive hearing devices shall be provided.
+ ❑ At least one mode of operation and information retrieval that does not require user  speech  shall  be  provided,  or  support  for  assistive
+   technology used by people with disabilities shall be provided.
+ ❑ At least one mode of operation and information retrieval that does not require  fine  motor  control  or  simultaneous  actions  and  that  is
+   operable with limited reach and strength shall be provided.
+
+
+                                               Subpart D -- Information, Documentation, and Support
+
+
+(  § 1194.41 Information, documentation, and support.
+
+ ❑ Product support documentation provided to end-users shall be made available in alternate formats upon request, at no additional charge.
+ ❑ End-users shall have access to a description of the accessibility and compatibility features of products in  alternate  formats  or  alternate
+   methods upon request, at no additional charge.
+ ❑ Support services for products shall accommodate the communication needs of end-users with disabilities.
+
+                                                              (End of Certification)
+
+Figures to Part 1194
+   Figure1
+   Figure 2
+1. Section 508 does not apply to national security systems, as that term is defined in section 5142 of the Clinger-Cohen Act of 1996  (40  U.S.C.
+1452).
+
+2. The Access Board is an independent Federal agency established by section 502 of the Rehabilitation Act (29 U.S.C. 792) whose  primary  mission
+is to promote accessibility for individuals with disabilities. The Access Board consists of 25 members. Thirteen are appointed by  the  President
+from among the public, a majority of who are required to be individuals with disabilities. The other twelve are heads of  the  following  Federal
+agencies or their designees whose positions are Executive  Level  IV  or  above:  The  departments  of  Health  and  Human  Services,  Education,
+Transportation, Housing and Urban Development,  Labor,  Interior,  Defense,  Justice,  Veterans  Affairs,  and  Commerce;  the  General  Services
+Administration; and the United States Postal Service.
+
+3. Whenever the Access Board revises its standards, the Federal  Acquisition  Regulatory  Council  is  required  to  revise  the  FAR,  and  each
+appropriate Federal agency is required to revise its procurement policies and directives within six months to incorporate the revisions.
+
+4. 48 CFR Chapter 1, part 2, §2.101 Definitions Information Technology (c).
+SOLICITATION/CONTRACT/ORDER FOR COMMERCIAL ITEMS OFFEROR TO COMPLETE BLOCKS 12, 17, 23, 24, & 30
+2. CONTRACT NO. 3. AWARD/EFFECTIVE DATE 4. ORDER NUMBER
+
+1. REQUISITION NUMBER 5. SOLICITATION NUMBER
+
+PAGE 1 OF
+
+18
+6. SOLICITATION ISSUE DATE
+
+RRB09Q027
+7. FOR SOLICITATION INFORMATION CALL:
+9. ISSUED BY a. NAME b. TELEPHONE NUMBER (No collect calls)
+
+08/06/09
+8. OFFER DUE DATE/ LOCAL TIME
+
+velinda.nix@rrb.gov
+CODE
+
+312/751-3387
+10. THIS ACQUISITON IS UNRESTRICTED OR SET ASIDE:
+
+08/25/09
+% FOR: EMERGING SMALL BUSINESS
+
+U.S. Railroad Retirement Board Acquisition Management-Procurement 844 North Rush Street Chicago, IL 60611
+11. DELIVERY FOR FOB DESTINATION UNLESS BLOCK IS MARKED SEE SCHEDULE 15. DELIVER TO 12. DISCOUNT TERMS
+
+SMALL BUSINESS NAICS: SIZE STANDARD:
+
+HUBZONE SMALL BUSINESS SERVICE-DISABLED VETERANOWNED SMALL BUSINESS 13b. RATING
+
+8(A)
+
+13a. THIS CONTRACT IS A RATED ORDER UNDER DPAS (15 CFR 700) CODE 16. ADMINISTERED BY
+
+14. METHOD OF SOLICITATION RFQ IFB CODE RFP
+
+17a. CONTRACTOR/ OFFEROR
+
+CODE
+
+FACILITY CODE
+
+18a. PAYMENT WILL BE MADE BY
+
+CODE
+
+TELEPHONE NO. 17b. CHECK IF REMITTANCE IS DIFFERENT AND PUT SUCH ADDRESS IN OFFER 19. ITEM NO. 20. SCHEDULE OF SUPPLIES/SERVICES 18b. SUBMIT INVOICES TO ADDRESS SHOWN IN BLOCK 18a UNLESS BLOCK BELOW IS CHECKED SEE ADDENDUM 21. QUANTITY 22. UNIT 23. UNIT PRICE 24. AMOUNT
+
+1
+
+Open Systems Storage and Services - See Attached
+
+(Use Reverse and/or Attach Additional Sheets as Necessary) 25. ACCOUNTING AND APPROPRIATION DATA
+
+26. TOTAL AWARD AMOUNT (For Govt. Use Only)
+
+27a. SOLICITATION INCORPORATES BY REFERENCE FAR 52.212-1, 52.212-4. FAR 52.212-3 AND 52.212-5 ARE ATTACHED. ADDENDA 27b. CONTRACT/PURCHASE ORDER INCORPORATES BY REFERENCE FAR 52.212-4. FAR 52.212-5 IS ATTACHED. ADDENDA
+
+ARE ARE
+
+ARE NOT ATTACHED ARE NOT ATTACHED
+
+28. CONTRACTOR IS REQUIRED TO SIGN THIS DOCUMENT AND RETURN COPIES TO ISSUING OFFICE. CONTRACTOR AGREES TO FURNISH AND
+
+1
+
+29. AWARD OF CONTRACT: REF.
+
+OFFER
+
+DELIVER ALL ITEMS SET FORTH OR OTHERWISE IDENTIFIED ABOVE AND ON ANY ADDITIONAL SHEETS SUBJECT TO THE TERMS AND CONDITIONS SPECIFIED 30a. SIGNATURE OF OFFEROR/CONTRACTOR
+
+DATED . YOUR OFFER ON SOLICITATION (BLOCK 5), INCLUDING ANY ADDITIONS OR CHANGES WHICH ARE SET FORTH HEREIN, IS ACCEPTED AS TO ITEMS:
+
+31a. UNITED STATES OF AMERICA (SIGNATURE OF CONTRACTING OFFICER)
+
+30b. NAME AND TITLE OF SIGNER (Type or print)
+
+30c. DATE SIGNED
+
+31b. NAME OF CONTRACTING OFFICER (Type or print)
+
+31c. DATE SIGNED
+
+AUTHORIZED FOR LOCAL REPRODUCTION PREVIOUS EDITION IS NOT USABLE
+
+STANDARD FORM 1449
+
+(REV. 3/2005) Prescribed by GSA - FAR (48 CFR) 53.212
+
+19. ITEM NO.
+
+20. SCHEDULE OF SUPPLIES/SERVICES
+
+21. QUANTITY
+
+22. UNIT
+
+23. UNIT PRICE
+
+24. AMOUNT
+
+32a. QUANTITY IN COLUMN 21 HAS BEEN RECEIVED INSPECTED ACCEPTED, AND CONFORMS TO THE CONTRACT, EXCEPT AS NOTED:
+
+32b. SIGNATURE OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32c. DATE
+
+32d. PRINTED NAME AND TITLE OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32e. MAILING ADDRESS OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+32f. TELPHONE NUMBER OF AUTHORZED GOVERNMENT REPRESENTATIVE 32g. E-MAIL OF AUTHORIZED GOVERNMENT REPRESENTATIVE
+
+33. SHIP NUMBER PARTIAL FINAL 38. S/R ACCOUNT NO.
+
+34. VOUCHER NUMBER
+
+35. AMOUNT VERIFIED CORRECT FOR
+
+36. PAYMENT COMPLETE PARTIAL FINAL
+
+37. CHECK NUMBER
+
+39. S/R VOUCHER NUMBER
+
+40. PAID BY 42a. RECEIVED BY (Print) 42b. RECEIVED AT (Location) 42c. DATE REC'D (YY/MM/DD) 42d. TOTAL CONTAINERS
+
+41a. I CERTIFY THIS ACCOUNT IS CORRECT AND PROPER FOR PAYMENT 41b. SIGNATURE AND TITLE OF CERTIFYING OFFICER 41c. DATE
+
+STANDARD FORM 1449
+
+(REV. 3/2005)
+
+BACK
+
+

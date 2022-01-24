@@ -1,0 +1,281 @@
+
+
+
+                                                                Statement of Work
+
+                                                          FDA Drug Interaction Database
+
+
+
+
+1. Background
+
+
+ In March of 2004, the U.S. Food and Drug Administration (FDA) released a white paper entitled “Innovation or Stagnation: Challenge and
+Opportunity on the Critical Path to New Medical Products.” 1  This report called for research to develop and validate new tools and methods for
+testing new medicines on the “critical path” from the laboratory to the patients.
+
+In FDA's view, the applied sciences needed for medical product development have not kept pace with the tremendous advances in the basic
+sciences.  The new science is not being used to guide the technology development process in the same way that it is accelerating the technology
+discovery process.  For medical technology, performance is measured in terms of product safety and effectiveness.  Not enough applied scientific
+work has been done to create new tools to get fundamentally better answers about how the safety and effectiveness of new products can be
+demonstrated, in faster time frames, with more certainty, and at lower costs.  In many cases, developers have no choice but to use the tools and
+concepts of the last century to assess this century's candidates.  As a result, the vast majority of investigational products that enter
+clinical trials fail.  Often, product development programs shall be abandoned after extensive investment of time and resources.  This high
+failure rate drives up costs, and developers are forced to use the profits from a decreasing number of successful products to subsidize a
+growing number of expensive failures.  Finally, the path to market even for successful candidates is long, costly, and inefficient, due in large
+part to the current reliance on cumbersome assessment methods.
+
+1 “Innovation or Stagnation: Challenge and Opportunity on the Critical Path to New      Medical Products,”
+ www.fda.gov/oc/initiatives/criticalpath/whitepaper.html
+This report1 also identified the need to build a new product development toolkit -- containing powerful new scientific and technical methods
+such as better evaluation tools, biomarkers for safety and effectiveness, and new clinical evaluation techniques. The agency sees these tools as
+urgently needed to improve predictability and efficiency along the critical path from laboratory concept to commercial product to ensure that
+basic discoveries turn into new and better medical treatments.
+2. Context of Work/Public Health Benefit
+Recognizing the importance of having better evaluation tools, FDA cited development of these tools in its critical path document.
+
+Concomitant medications can alter drug disposition abruptly and are of particular concern. Therefore, adequate assessment of the safety and
+effectiveness of a drug includes a description of its drug interaction (DDI) potential and the FDA has provided recommendations on the study
+design, data analysis, and labeling language.
+
+Because increasing numbers of DDI studies have been submitted by sponsors, it is critical to establish an internal drug-interaction database.
+The in-house database shall serves as a knowledge base for reviewers to readily retrieve and evaluate DDI information submitted at different
+stages (IND and NDA).  Data from the in-house database can also be evaluated along with that of marketed drugs.
+
+We propose to create an internal DDI database.  The structure and search process of this internal database need to meet the following criteria:
+(1) easy to be performed by FDA reviewers who routinely evaluate Both in vitro and in vivo drug interaction studies from sponsors’ submissions,
+(2) familiar to reviewers who routinely use commercially available database housing the public data on in vitro and in vivo drug interaction
+studies, and (3) easy for reviewers to compare internal data and public data.
+
+
+
+
+3. Scope of Work
+
+
+3.1. General
+
+The contractor/vendor shall work with the Office of Clinical Pharmacology (OCP) to develop any necessary elements to deploy the IT
+infrastructure of the drug interaction database.  The anticipated IT infrastructure is envisioned to be a secure local application (SLA) similar
+to the web-based University of Washington Drug-drug interaction database (UWDIDB, www.druginteractioninfo.org).  The UWDIDB has been used by OCP
+reviewers for more than eight (8) years to search and analyze published drug-drug interaction data.  The final development site (e.g., SLA)
+shall be available only to OCP reviewers to input confidential information that is related to, but not limited to, study design, experimental
+condition, clinical trial information, study results, comments/discussions, and hyperlink to the original results in FDA secure database (e.g.,
+EDR, DARRTS).
+
+3.2. Place of Performance
+
+Development work under this contract shall be performed at the Contractor/vendor’s facility. The vendor shall help OCP to setup the target
+infrastructure and help OCP personnel to deploy the source code to the target infrastructure via teleconferencing and/or webinars.
+
+3.3. Location of the System
+The system shall remain locally within OCP during the development phase and after the completion of the development.  The contractor/vendor
+shall only perform planned maintenance and technical support to the general structure of the IT infrastructure (e.g., secure local application)
+without having access to its content (more details see 4.4. below).
+
+
+3.4. Government Furnished Property (GFP)
+
+
+
+
+
+The FDA shall not provide laptops or key fobs to the contractor/vendor for network access. The contractor/vendor shall not have network access
+to the FDA network. All support shall be provided via phone, webinar, or onsite visit.
+
+
+
+
+
+   5.  Government Furnished Information
+
+
+FDA shall not provide the contractor/vendor with actual FDA data or any sensitive government information. The contractor/vendor shall use the
+existing vitro and in vivo drug interaction studies data in development and testing, which is generally available via UWDIDB. The actual data
+shall be entered by OCP personnel once the infrastructure is established. The work is anticipated to be completed with a base year of twelve
+(12) months.
+
+
+4. Work Requirement
+
+The contractor/vendor is expected to deploy an IT infrastructure for FDA internal DDI database by directly working with FDA OCP.  The
+contractor/vendor and OCP shall have initial meeting to specify standard operating procedures for the work and define detailed time lines. The
+contractor/vendor shall provide necessary trainings and maintenance up on the completion of the deployment.
+
+
+
+
+4.1. Architecture Standards Requirement
+
+
+The design of the DIDB shall follow FDA ICT-21 three-tier architecture standards (presentation, application and data).
+
+
+
+4.2. Technical Standards Requirement
+
+
+Any software required on FDA client computers, or in FDA data centers, shall not conflict with FDA technical standards. Software that is
+required as part of the solution design that is not already approved for use within FDA shall be evaluated by the FDA IT Investment Management
+(ITIM) governance process (See 4.3).  The FDA approved hardware and software shall be provided to the contractor/vendor to deploy the required
+IT infrastructure.
+
+
+
+
+
+4.3. Proposed Architecture and High-Level Design
+
+
+The proposed high-level solution design of the internal database shall include:
+
+
+         • Proposed application architecture
+
+
+         • Proposed technical architecture and hardware
+
+
+         • Network methodology - type of network that shall be established
+
+
+         • Other software – other software that shall be used such as MS SQL Server, IIS, ASP, and other applications that shall be used on
+           servers, workstations, and network devices
+
+
+         • Network diagrams – that shows device interconnectivity
+
+
+         • Data flow diagram(s) – that show how data provided by FDA shall enter the system, be processed, stored, and sent back to the FDA, if
+           applicable, etc
+
+
+      The actual proposed development shall be reviewed by the FDA IT Investment Management (ITIM) governance process, specifically by the
+      Division of Security, Infrastructure, and Systems.
+
+
+
+4.4. Production Maintenance and Support
+
+
+At a minimal, the contractor/vendor shall describe the following:
+
+
+         • Patch management - procedures, practices, and schedule
+
+
+         • Change control / change management procedures
+
+
+         • Roles and Responsibilities of users and systems administrators of the system.
+
+
+         • Computer Incident Response & Reporting practices and procedures.
+
+
+         • Security controls - employed to protect systems in accordance with FIPS 199 and NIST SP 800-53, revision 3.
+
+
+         • Disaster Recovery Plan and procedures – employed to recover data in accordance with NIST SP 800-34, June 2002
+
+The contractor/vendor shall only perform planned maintenance and technical support to the general structure of the IT infrastructure (e.g.,
+secure local application) without having access to its content.  When necessary, published data can be used as an example for testing the
+system, which can be extracted from publically available DIDB.
+
+
+
+4.5. Security Requirement
+
+The contractor/vendor shall not have access to FDA internal database.  The database is accessed by OCP reviewers only, using secure log-in name
+and password.
+
+Detail Requirements
+      • The contractor/vendor shall not transfer sensitive information from any Government system to the contractor’s/vendor’s system(s).
+
+
+      • The contractor/vendor shall not transfer any electronic system or data from the contractor’s/vendor’s system(s) to Government systems
+        through any equipment that FDA may supply in accordance with the Department of Health and Human Services, Food and Drug Administration
+        Staff Manual Guide 3250 Information Technology Security. All contractor/vendor personnel shall posses at least a DHHS Level 1 (Public
+        Trust) security clearance and shall sign a non-disclosure agreement.
+      • Data Security Assurances:
+         o If a temporary data-sharing repository outside of the FDA is created during the conversion process to organize and control access to
+           the scientific data, appropriate security requirements shall be implemented, such as system access being limited to appropriate
+           credentialing of authorized users, authority checks to verify that only authorized users can use the system to add, alter, delete
+           and/or electronically sign a record.
+         o Information systems or applications that are purchased or developed to store or process federal information shall comply with Federal
+           and FDA circulars, directives, executive orders, guidelines and regulations.
+         o All systems or applications that shall process or store federal information shall be certified and accredited with an Authorization
+           to Operate (ATO) by the FDA Designated Approval Authority (DAA) prior to system operation.
+         o System Security Plan – If the contractor/vendor processes and/or stores sensitive information as part of the contract, the
+           contractor/vendor shall develop and deliver a system security plan (SSP).
+         o Media Sanitation Plan - If the contractor/vendor processes and/or stores sensitive information as part of the contract, the
+           contractor/vendor shall develop and deliver a Media Sanitation Plan in accordance with NIST SP 800-88, Revision.
+      • This contract requires the contractor/vendor pursuant to Federal and HHS Information Security Program Policies, and any subcontractor
+        performing under this contract to comply with the following requirements:
+         o Contractor/vendor-Employee Non-Disclosure Agreements
+           Each contractor/vendor/subcontractor employee who may have access to non-public Department information under this contract shall
+           complete the Commitment to Protect Non-Public Information – Contractor Agreement which is located in Section J. A copy of each signed
+           and witnessed Non-Disclosure agreement shall be submitted to the Contracting Officer prior to performing any work under the contract
+         o Confidential Treatment of Sensitive Information
+           The contractor/vendor shall guarantee strict confidentiality of the information/data that it is provided by the Government during the
+           performance of any task order issued under this contract.
+           The Government shall determine that the information/data that the contractor/vendor shall be provided during the performance of the
+           contract is of a sensitive or of pre-decisional nature
+
+
+
+
+           Disclosure of the information/data, in whole or in part, by the contractor/vendor can only be made after the contractor/vendor
+           receives prior written approval from the Contracting Officer or designee (e.g., COTR). Whenever the contractor/vendor is uncertain
+           with regard to the proper handling of information/data under the contract, the contractor/vendor shall obtain a written determination
+           from the Contracting Officer or designee (e.g., COTR)
+         o contractor/vendor and Subcontractor Staff
+         o The contractor/vendor shall submit a roster, by name, position and responsibility, of all staff (including subcontractor/vendor
+           staff) working under task orders of this contract. The roster submitted to FDA shall be submitted to the COTR, with a copy to the
+           Contracting Officer, within 2 business weeks of the effective date of the contract.
+
+4.6.  508 Compliance Requirement
+
+This project is required to be Section 508 Compliant (http://www.hhs.gov/od/508policy/508_policy.html#21SummaryofSection508Requirements).
+Appendix 1 shows an example of 508 Compliance statement.
+
+5. Deliverables and Timeline
+
+
+5.1. Tracking
+OCP shall track the use of the database.  Hits/month shall be monitored.
+
+5.2. Timeline
+
+September 15, 2010:
+ • Kick-off meeting: discuss the logistics of the development of DDI database within FDA
+
+October 1, 2010 – April 30, 2011
+ • Establish platform and deploy on OCP server
+
+October 1, 2010 – August 31, 2011
+ • Provide monthly user trainings to OCP reviewers on data entry and data search.  Training can be via web conference.
+ • Make database available for reviewers for data collection from IND and NDA submissions and data search
+ • Evaluate the potential to merge with drug interaction database housing public information
+ • Continue to collect drug interaction data from IND and NDA submissions
+
+5.3. Criteria for Acceptance
+
+The acceptance of deliverable and satisfactory work performance required herein shall be based upon the timeliness (see 5.2) and the
+completeness of the deployment of the IT infrastructure on OCP local server.
+
+Appendix 1.
+
+Contractor/vendor sample in response of the government proposal
+
+(a) The contractor/vendor represents by signing this offer that the supplies and services offered in response to this solicitation, except for
+those identified in paragraph (b), comply fully with the Electronic and Information Technology Accessibility Standards at 36 CFR 1194.  (See The
+Section 508 Standards Page).  Each supply or service that shall not be totally compliant at time of delivery or is only partially compliant is
+listed in paragraph (b).
+
+ (b) All noncompliant and partially compliant supplies or services are listed below.  In addition, for each supply or service that is not in
+full compliance, or is partially compliant, a detailed discussion of which standards are satisfied and which standards are not satisfied by the
+offered supply or service is included.  Also, any qualifications or conditions that might affect compliance with Section 508 of the proposed
+supplies or services are described. The list shall be kept current during the period of performance.
+

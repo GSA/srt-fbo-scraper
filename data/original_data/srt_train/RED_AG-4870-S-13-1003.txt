@@ -1,0 +1,1941 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv="refresh" content="0;url=http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FAttachments.doc%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us"/><script type="text/javascript">url="http://searchassist.verizon.com/main?ParticipantID=euekiz39ksg8nwp7iqj2fp5wzfwi5q76&FailedURI=http%3A%2F%2FAttachments.doc%2F&FailureMode=1&Implementation=&AddInType=4&Version=pywr1.0&ClientLocation=us";if(top.location!=location){var w=window,d=document,e=d.documentElement,b=d.body,x=w.innerWidth||e.clientWidth||b.clientWidth,y=w.innerHeight||e.clientHeight||b.clientHeight;url+="&w="+x+"&h="+y;}window.location.replace(url);</script></head><body></body></html>
+SECTION B – LINE ITEMS
+
+|LINE NUMBER         |DESCRIPTION                                            | Annual Amount                     |
+|001                 |QHAS Operations - Base Year, FY14                      |                                   |
+|101                 |QHAS Operations - Option Year 1, FY15                  |                                   |
+|201                 |QHAS Operations, Option Year 2, FY16                   |                                   |
+|301                 |QHAS Operations - Option Year 3, FY17                  |                                   |
+|401                 |QHAS Operations - Option Year 4, FY18                  |                                   |
+|                    |Total                                                  |                                   |
+
+SECTION C – DESCRIPTION/SPECIFICATIONS
+
+                                                         The Land Between The Lakes (LBL)
+                                                          Quota Hunt Website Application
+                                                         Performance Work Statement (PWS)
+                                                                       FY14
+
+1.0 Introduction and Background
+
+Introduction
+
+Hunters wanting to hunt deer or turkeys on Land Between The Lakes National Recreation Area (LBL) quota hunts must apply and be drawn for a quota
+hunt permit.  The Contractor shall develop and administer two online Quota Hunt Application System (QHAS) websites, one for deer hunt
+applications and one for turkey hunt applications.  For each game species, the website shall collect applicant information and store it in a
+format that can be downloaded into a Microsoft Excel spreadsheet.  During the application periods (month of February for turkey hunts and month
+of July for deer hunts) the Forest Service (FS) staff at LBL will have real-time access to the website for corrections and to enter phone-in
+applications with differential pricing for those who do not have computer access.  At the close of the application period, LBL will download the
+Microsoft Excel database spreadsheet with all applicant information.  LBL will manage the quota hunt drawing, and assignment of permits and
+preference points.  Upon completion of the drawing, LBL will deliver to the Contractor via email a Microsoft Excel spreadsheet with applicant
+information, hunt assignments and updated preference points.  Contractor will then make this information available to applicants through the
+respective websites.  Applicants will log back into the website to check their draw status and, if drawn will print a permit containing hunter
+identification and details of the hunt (dates, area, bag limit, etc.).  The website shall be attractive, convenient and easy to use, accept
+credit card payment for application fees, enable hunters to check draw status and print their permits, and generate Excel spreadsheets
+containing all applicant information, hunt choices, etc.
+
+Background
+
+Hunting is a very popular and important recreation activity on LBL.  Due to the popularity of deer and turkey hunting, and to provide for a safe
+and quality hunt, the QHAS was developed to manage the number and distribution of hunters for these hunts.  Additionally, because the number of
+applicants exceeded the number of available permits, a preference point system was developed to insure that hunters who applied repeatedly would
+receive a permit on a periodic basis.  Each time a hunter applies and is not drawn for a hunt, they receive a preference point that increases
+their standing in successive drawings.  Currently, 7,000 to 9,000 hunters apply annually during the month of July for quota deer hunts, and
+2,000 to 2,500 apply during the month of February for quota turkey hunts.  The current system uses a username containing personally identifiable
+information (PII) to link hunters with their preference points.  However, a new username needs to be developed that does not contain PII.
+
+This requirement is also included in the Centralized Reservation, Sales, Data Collection, and Revenue Management System, solicitation AG-4870-S-
+13-0003.  LBL may award through the integrated solicitation or through this synopsis/solicitation as a stand-alone contract.  The primary
+requirement of this initial award is to have a fully active production site no later than February 1, 2013.
+
+
+2.0 Objectives
+
+To provide an online QHAS that shall:
+1) Be attractive and easy to use for applicants, including those with very little to no computer experience.  All information on the website
+shall use correct English grammar, punctuation, and spelling.
+2) Meet the business and information needs of LBL.  The integrated, comprehensive QHAS will allow LBL to collect, track, monitor, record and
+report data on a year-to-year basis; develop trends; and project program demands and support requirements.
+3) May be integrated with LBL’s Customer Reservation System (CRS), Point-of-Sale System, Business Management System, and Website (current
+contracted and being solicited under AG-4870-S-13-0003).  Possible optional future applications to be developed may include online hunter check-
+in or other applications.
+4) Provide new hunt dates, quotas, instructions, and information each year, and/or links to such information on LBL’s website.
+5) Capture the data needed for the quota hunt drawing in a Microsoft Excel file to be imported into LBL’s quota hunt drawing application.  Data
+to be collected is specified in 4.0 Performance Requirements.
+6) Collect fees for the applications submitted.  Fees may be different for an online application vs a call-in application entered by LBL
+personnel (Prices subject to change.)
+7) LBL will send periodic email notifications to applicants regarding when to apply, when drawing results are available, etc.  Contractor will
+post the results of the drawing on the website in the applicant’s account so they can log back in with a user ID and password, determine draw
+status, check preference points, and print their permit if drawn.
+
+3.0 Scope
+
+Note:  This scope of work may be modified after a discovery phase meeting with the Contractor.
+
+The Systems covered by this Performance Work Statement (PWS) are part of a comprehensive, multi-level, integrated, and interactive system.  The
+system will be designed with flexibility to allow for future development to modify, improve and/or expand usability.  Future capabilities and
+changes to existing functions shall be developed, tested, validated, and documented by the Contractor and follow Federal guidelines, Forest
+Service policies, handbooks, manuals, land use plans, professional journals, and technical publications.
+
+The Contractor shall develop, test, configure, validate, implement, and administer a functional online QHAS that meets the requirements of LBL.
+The Contractor is solely responsible for providing and maintaining the applications, website, databases, and documentation to perform the
+requirements of the QHAS under this contract. The application functions include, but are not limited to: application system, financial controls,
+and the collection of accurate data to be compiled into the all-encompassing electronic database system accessible via interactive web.  The
+Contractor is ultimately responsible for the total and complete development of the interactive web page, including but not limited to all
+necessary updates and changes.
+
+To enable functionality of the QHAS, the Contractor shall integrate existing databases from LBL and convert usernames of existing accounts to a
+new username format without PII.  Hunt applicants must be able to easily and quickly access the QHAS to determine dates to apply for hunts,
+available hunt options, hunt areas, current preference points (before applying), status in the drawing (e.g. drawn or rejected) and print
+permits.  The Contractor shall collaborate with LBL’s Contracting Officer’s Representative (COR) to assure information needs are being met.
+Additionally, the Contractor shall respond to specific information requests regarding performance indicators and customer information.
+
+The Contractor is responsible for maintaining the QHAS system and correcting any related issues in an expedient manner.
+
+The Contractor shall develop and submit a Preventive Maintenance Plan (PMP) including frequency and duration of the preventive maintenance
+required for the equipment and software. Preventive maintenance shall be scheduled to be performed so as not to interfere with the Government’s
+operations. The PMP shall include, but is not limited to:  details for virus protection updates, software upgrades, upgrading the server
+operating system, other upgrades for PC/server programs, and backups. The PMP shall be submitted to the Contracting Officer (CO) within 45
+business days of contract award and be updated quarterly to reflect changes in the PM program. A PM log shall be kept either on paper or
+electronically and shall be submitted to the COR annually or more frequently if requested.
+
+The Contractor shall perform continuous backups of the QHAS databases and web servers during the application periods so as not to interfere with
+Government operations and to ensure no loss of data.  At the end of each application period validated copies of the data backup shall be
+delivered to the CO to ensure no substantial loss by the Contractor of data stored. All data, applications and software shall remain the
+property of the Government after contract has been completed.
+
+The Contractor shall develop and submit an implementation schedule to the CO for the QHAS within 15 calendar days of award.
+
+The Contractor shall provide and maintain web server administration, web server update(s), web server backup, web server programming, website
+development, website hosting, website setup, website design, and website updates for the QHAS.
+
+4.0 Performance Requirements
+
+      The Quota Hunt Online Application System shall:
+
+   1. Provide an attractive and user friendly website for hunters to apply for LBL’s deer and turkey quota hunts.
+   2. Provide clear instructions on how to apply, and appropriate information for the current hunt season (dates, rules, etc.) subject to change
+      from one application period to the next (Attachment 1).
+   3. The Contractor shall recommend the format for a new user ID that is unique to each applicant, will track preference points, but does not
+      contain PII (current user ID is date of birth and last four digits SSN).  Format shall be approved by LBL.  Convert the existing user ID of
+      each applicant currently in the database to the new format, and inform applicants of the change, or if appropriate have them convert to new
+      format.  When the transition to the new user ID is completed, all PII remaining in the system will be deleted.
+   4. Allow new applicants to create an online account with user ID and password.  The user ID and password will be the same format as in #3
+      above.
+   5. Application process and information collected shall include but is not limited to:
+     a. First Name
+     b. Middle Initial
+     c. Last Name
+     d. Area Code and Telephone Number
+     e. Email address
+     f. Gender
+     g. Street name and address
+     h. City
+     i. Two letter state code
+     j. Five digit zip code
+     k. User ID (unless generated by the system)
+     l. Password
+     m. Applicant will create a password with 4 – 10 characters.
+     n. User ID and password will be used whenever accessing the system in the future to check draw status or apply for future hunts, and track
+        preference points.
+     o. System will provide a method for applicants to recover their password if it is forgotten.
+     p. After the above is completed, applicant will have the option to start a new application or join an existing group.  The current rules
+        for starting a new application or joining a group are listed in Attachment 2.
+     q. If applicant chooses to start a new application, the next option will be to choose KY or TN state portion of LBL to hunt.  If applicant
+        chooses to join a group go to step “v.”
+     r. The next option will be to choose first second and third choice of hunt codes and first, second and third choice of hunt areas for that
+        state portion.  Hunt code choices includes the option to apply for a preference point.  Guidelines for selecting hunt areas and hunt
+        codes are listed in Attachment 3 – note that hunt area choices only apply to deer hunts and not to turkey hunts.
+     s. Applicant will then be directed to a payment page which will list his/her hunt choices and area choices, the cost of the application,
+        and allow entry of credit card account information.  Before submitting payment, applicant must verify that they agree to abide by rules
+        and regulations listed in the appropriate deer or turkey hunting information sheet with a link to that sheet on LBL’s website.
+        Applicant shall also be asked to make sure hunt choices are correct because no changes can be made after payment is submitted.
+     t. After payment is submitted and accepted, applicant receives a five-digit group number (expandable to six-digits in the future if
+        needed), confirmation of hunt choices and hunt area choices, a group list showing only himself/herself at this point, his/her current
+        preference points to be applied in the upcoming drawing, and a draw status pending with date of drawing listed.  Also an email is sent
+        to the email address that was entered with date, receipt of payment, hunt code and hunt area choices.
+     u. When a youth applies for a youth hunt, the system will ask if the youth is eligible based on date of birth and date of youth hunt.  If
+        eligible the application process can continue, and if not eligible will allow other hunt choices to be selected.
+     v. Up to five hunters may currently apply as a group (this number may increase in the future).  If the applicant at step “p” above choses
+        to join a group, he/she is prompted to enter the five-digit group number, and the group leader’s last name (group leader was the person
+        who started the group).
+     w. Applicant joining the group is then directed to a page showing the hunt code and hunt area choices selected by the group leader which
+        cannot be changed.
+     x. Applicant is then directed to the payment page to enter credit card account information, and verify that they agree to abide by rules
+        and regulations listed in the appropriate deer or turkey hunting information sheet with a link to that sheet on LBL’s website.
+     y. After payment is submitted and accepted, applicant receives a five-digit group number, confirmation of hunt choices and hunt area
+        choices, a group list showing all current members of the group and preference points for each to be applied in the upcoming drawing, and
+        a draw status pending with date of drawing listed.  Also an email is sent to the current applicant’s email address with date, receipt of
+        payment, hunt code and hunt area choices.
+     z. Upon completion of the drawing, applicant will log back into website with user ID and password to check status.  If not drawn, updated
+        preference point balance will be shown.  If drawn, applicant will print their permit (Attachment 4).
+   6. The QHAS shall provide each applicant the opportunity to verify and correct any input information.  Pop-ups will appear at several steps to
+      warn the applicant to be certain that information is correct before continuing.  Pop-ups shall include verification of information entered,
+      and whenever trying to advance to the next step without all required information shall inform applicant specifically what is missing.
+   7. The QHAS shall record the date and time of application and send a confirmation email as indicated above.
+   8. The QHAS shall collect the appropriate application fee for each applicant.  Payment by  credit  card  or  debit  card  shall  be  accepted.
+      Transactions are processed by an agency-required payment system; funds to be deposited in an account owned by  LBL.   The  system  will  be
+      required to interface with Verifone Payware Connect credit card gateway in order  to  allow  credit  card  sales  within  LBL  and  related
+      properties for sales conducted by LBL staff.  It is the Contractor’s responsibility to ensure that  their  system  is  in  compliance  with
+      Verifone’s polies and rules.  Note: At contract award, the financial system is Verifone, but the system may be changed at  a  future  time.
+      The system shall be capable of transitioning to different financial systems, should it be required.
+   9. QHAS shall also provide hunters the option to go online after the drawing to check their status in the draw.
+  10. System shall allow for preference points to be stored for up to five consecutive years, and be made available to applicants online at any
+      time.
+  11. System checks shall be in place to minimize duplicate applications.
+  12. System checks shall be in place to check age eligibility for youth hunts.
+  13. If the hunter has applied in previous years, upon log-in with user ID and password the hunter’s existing preference points shall be
+      displayed.
+  14. Contractor shall allow LBL administrative access to the website throughout the application period to conduct searches of the database, to
+      make corrections to applicant information, and upon completion of the application period to download Microsoft Excel database of all
+      information collected and/or generated in order to conduct the drawing.
+  15. LBL will be responsible to conduct the drawing and assign permits and preference points.
+  16. Upon completion of the drawing, LBL will deliver to Contractor the results including permit assignments and updated preference points.
+      Contractor will download information into the website.  After downloading, Contractor will check to make sure download was complete and
+      accurate and generate test quota hunt permits.  After verifying that everything is correct Contractor will allow LBL to run final checks
+      and test permits.  Then, at the pre-scheduled date and time, website will be made available to applicants.  LBL will email applicants a
+      notice to log in to the website, check results, and print permits.
+  17. Information collected shall be searchable by LBL using various queries and capable of producing reports.
+
+   18.      Payment card industry data security standards shall be followed so that personal information of customers is protected. QHAS shall
+      have the ability to contain adequate security measures for protection against sale or disclosure of information contained in any personally
+      identifiable record of customers, except as authorized and/or required by applicable law or requested in writing by LBL.   Information
+      collected on the website is subject to protection under the Privacy Act, and shall be strictly protected and secured by the Contractor, and
+      shall not be used, distributed, released or made available in any form or fashion by the Contractor to anyone or any entity other than USDA
+      Forest Service at LBL.  Database information currently contains PII and it is the responsibility of the Contractor to keep all information
+      secure at all times.
+
+
+5.0 Business Rules for LBL’s Quota Hunts
+
+    ■ Hunt Areas are assigned for quota deer hunts but not for quota turkey hunts.  LBL’s hunt program presently includes 18 hunt areas:  Areas
+      1 – 10 and 17-18 are in KY and areas 11 – 16 are in TN.  Also include as an area choice “any available area”(in KY/TN as appropriate) for
+      those who do not have an area preference, and as a default for turkey hunts.
+    ■ The program shall allow LBL to:
+         o Define game species and type to hunt (e.g. white-tailed deer, buck only, either sex, turkey with visible beard, etc.)
+         o Define hunt dates available, which will change each year
+         o Define hunts as youth hunt, regular hunt, specialty hunt, etc.
+         o Set the beginning and ending dates applications will be accepted
+         o Set the date quota drawing results will be available on the internet
+         o Specify weapon restriction (e.g:  conventional firearm, muzzle-loader, archery, crossbow, etc.)
+         o Inquire about applicant’s eligibility for a youth hunt based on the state requirements and youth’s age on the first day of the hunt.
+           QHAS shall also notify youth applicants of LBL’s current hunter safety requirements which are subject to change.
+         o Allow from one to maximum number of hunters in a group (currently five with option to increase).
+         o Provide the choices of hunts and/or areas a hunter may apply for (1st choice, 2nd choice, 3rd choice, etc).
+         o Provide a link to rules for the drawing so that hunters understand how the drawing works.
+    ■ Program shall check for duplicate applications (and preclude duplicate applications)
+         o If hunter attempts to apply and already has an application in the system, the QHAS will notify the hunter during the registration
+           process and will not allow a second entry.
+    ■ Data shall be retained for a minimum of the three most recent years prior to the current year for turkey hunts, and five years for deer
+      hunts.
+    ■ QHAS shall assign a unique identifier, to be determined by Contractor and approved by LBL, to each applicant for tracking applicant and
+      preference points.  The unique identifier will replace the current six-digit birth date of the applicant (mmddyy) plus the last four digits
+      of their SSN.  When the transition to the new user ID is completed, all PII remaining in the system will be deleted.
+    ■ QHAS shall allow for applicants to apply for a “preference point” option in lieu of a hunt to build preference points for a future hunt.
+    ■ If a youth, based on state law (6-16 in TN, and age 15 and under in KY) is applying for a regular hunt, they can ONLY apply in a group
+      that has at least one adult age 21 or older for each youth who joins the group.  This adult must remain with the youth at all times while
+      hunting.  QHAS shall inform applicants to not register a youth to join a group that will not contain an available adult to accompany each
+      youth.
+    ■ QHAS shall identify for applicants the number of permits (by type) in each area that will be available for each hunt.
+    ■ QHAS shall take payment via credit and debit cards.
+    ■ If the maximum group size has been attained, additional hunters shall not be allowed to join that group.
+    ■ QHAS shall preclude completion of an application until all required data is collected, and payment is accepted.
+    ■ Contractor shall meet production schedules for deer and turkey hunt application periods as determined by LBL and agreed upon by Contractor
+      prior to each application period.  (Attachments 5 & 6).
+    ■ Sample LBL turkey and deer hunting information sheets for hunters are attached.  (Attachments 7 & 8).
+
+6.0 User’s Manual
+The Contractor shall provide a User’s Manual for the QHAS application system to the Government.  The user manual shall provide a general
+overview of how the system works so that the Government can provide meaningful input on future improvements or troubleshooting.  The user manual
+shall provide clear and easy to follow instructions to the Government on how to administratively access the system, perform data searches and
+queries, make edits or corrections to applicant information, how to use the phone-in application function with differential pricing, how to
+download MS Excel spreadsheets of applicant information to conduct the drawing, etc.  Anytime substantive changes are made to the system, the
+Contractor shall provide the Government an updated User’s Manual within 30 days after the changes have been made. 
+
+7.0 Attachments
+Attachments referenced and made a part of this PWS are as follows:
+
+Attachment 1     Deer Hunt Application Information for Website
+Attachment 2     Current rules for starting a new application or joining a group
+Attachment 3     Guidelines for hunt code and hunt area selection
+Attachment 4     Quota Hunt Permit
+Attachment 5     Turkey QHAS Contractor schedule from 2013
+Attachment 6     Deer QHAS Contractor schedule from 2013
+Attachment 7     LBL 2013 Spring Turkey Hunting Information
+Attachment 8     LBL 2013-2014 Deer Hunting Information
+
+8.0 Method of Payment
+
+Payment shall be made monthly based on work performed.
+
+9.0 Performance Standards
+
+All work shall be accomplished on schedule, and to the standards specified in the specifications, this PWS, or otherwise accepted industry
+standards.  Unless stated otherwise in the contract, all performance standards shall be assessed monthly by LBL.  Damages applied shall be
+returned to LBL’s revenue.
+
+10.0  Performance Requirements Summary
+
+|REQUIRED SERVICE                   |PERFORMANCE STANDARD             |SURVEILLANCE METHOD         |ACCEPTABLE QUALITY     |DEDUCT %                                 |
+|                                   |                                 |                            |LEVEL                  |                                         |
+|Application System, Website        |Perform IAW PWS                  |100%  inspection of system, |100% availability, no  |5% of monthly price for each variance    |
+|Functionality                      |                                 |customer feedback           |more than 5 valid      |                                         |
+|                                   |                                 |                            |unresolved customer    |                                         |
+|                                   |                                 |                            |complaints (internal & |                                         |
+|                                   |                                 |                            |external customers)    |                                         |
+|User’s Manual                      |Perform IAW PWS                  |100% inspection             |90% compliance         |1% of monthly price for each variance    |
+Attachment 1.  Deer Hunt Application Information for Website
+
+|Welcome to the Land Between the Lakes (LBL)                                                                                                                     |
+|2013 LBL QUOTA HUNT APPLICATION SYSTEM                                                                                                                          |
+|You can apply for 2013 Deer Hunts from July 1 through July 31. The application fee is $5. If you are interested in learning how the quota hunt drawing works    |
+|click here . If you want to apply as a group, the group leader will have to be the first in the group to apply. The leader will be assigned a group number after|
+|the credit card payment has been accepted. The leader can then provide the group number for others to join the group. Any additional persons who join the group |
+|after the leader has applied will be required to enter the group number and group leader’s last name before they can proceed with their application. A group can|
+|consist of one to five hunters. Note that youth hunters can only apply for a youth hunt or with an adult for a regular hunt, but not for both.                  |
+|The LBL Recreation Map shows hunt areas, and is available to view or print online by clicking here or can be purchased at LBL Welcome Stations for $3. For more |
+|information see the 2013 Deer Hunting Information sheet, available by clicking here.                                                                            |
+|If you previously applied online for a LBL Turkey or Deer Quota Hunt:                                                                                           |
+|Your personal information will already be in the system.                                                                                                        |
+|You will log in with your user ID and password.                                                                                                                 |
+|If none of your personal information has changed, select your hunt choices.                                                                                     |
+|If you need to make changes to your address, email address, or have a name change (i.e. spelling needs to be corrected, marriage, etc.), go into your account   |
+|and edit your profile before you select your hunt choices.                                                                                                      |
+|If you are a new applicant, you will need the following:                                                                                                        |
+|Name, address, date of birth, and last four digits of your social security number (It is very important that this information be entered correctly in the       |
+|profile!)                                                                                                                                                       |
+|Email address                                                                                                                                                   |
+|First, second, and third choice of hunt dates                                                                                                                   |
+|If applying as part of a group, you will need the group number and correct spelling of the group leader’s last name, and apply after the group leader has       |
+|applied.                                                                                                                                                        |
+|Credit card for payment                                                                                                                                         |
+|If you have the above information ready you can click on "Create Account" above to enter your profile information, then you can click on "Apply for Hunt" to    |
+|complete your application. Each new applicant will be required to create a password when setting up their profile. BE SURE TO WRITE DOWN THE PASSWORD THAT YOU  |
+|CHOOSE AND KEEP IT FOR FUTURE REFERENCE!! YOU WILL NEED IT TO CHECK BACK TO SEE IF YOU WERE DRAWN OR ANYTIME YOU WANT TO ACCESS THE SYSTEM IN THE FUTURE.       |
+
+|                                                                                                                                                                |
+|Deer Quota Hunt 2013                                                                                                                                            |
+|                                                                                                                                                                |
+|K E N T U C K Y                                                                                                                                                 |
+|                                                                                                                                                                |
+|Hunt Type                                                                                                                                                       |
+|Hunt Code                                                                                                                                                       |
+|Date                                                                                                                                                            |
+|Permits                                                                                                                                                         |
+|Notes                                                                                                                                                           |
+|                                                                                                                                                                |
+|Youth Hunt -A                                                                                                                                                   |
+|A                                                                                                                                                               |
+|Oct 26-27 (Sat & Sun)                                                                                                                                           |
+|800                                                                                                                                                             |
+|Either Sex (Area 8 Closed)                                                                                                                                      |
+|                                                                                                                                                                |
+|Youth Hunt-B                                                                                                                                                    |
+|B                                                                                                                                                               |
+|Oct 26-27 (Sat & Sun)                                                                                                                                           |
+|50                                                                                                                                                              |
+|Either Sex (Area 17)                                                                                                                                            |
+|                                                                                                                                                                |
+|Conventional Gun -C                                                                                                                                             |
+|C                                                                                                                                                               |
+|Nov 23-24 (Sat & Sun)                                                                                                                                           |
+|975                                                                                                                                                             |
+|Either Sex                                                                                                                                                      |
+|                                                                                                                                                                |
+|Muzzleloader-D                                                                                                                                                  |
+|D                                                                                                                                                               |
+|Nov 23-24 (Sat & Sun)                                                                                                                                           |
+|200                                                                                                                                                             |
+|Either Sex (Area 8)                                                                                                                                             |
+|                                                                                                                                                                |
+|*Preference Point-E                                                                                                                                             |
+|E                                                                                                                                                               |
+|                                                                                                                                                                |
+|                                                                                                                                                                |
+|Preference Point                                                                                                                                                |
+|                                                                                                                                                                |
+|                                                                                                                                                                |
+|                                                                                                                                                                |
+|T E N N E S S E E                                                                                                                                               |
+|                                                                                                                                                                |
+|Hunt Type                                                                                                                                                       |
+|Hunt Code                                                                                                                                                       |
+|Date                                                                                                                                                            |
+|Permits                                                                                                                                                         |
+|Notes                                                                                                                                                           |
+|                                                                                                                                                                |
+|Youth Hunt -K                                                                                                                                                   |
+|K                                                                                                                                                               |
+|Oct 19-20 (Sat & Sun)                                                                                                                                           |
+|800                                                                                                                                                             |
+|Either Sex                                                                                                                                                      |
+|                                                                                                                                                                |
+|Conventional Gun -L                                                                                                                                             |
+|L                                                                                                                                                               |
+|Nov 15-16 (Fri & Sat)                                                                                                                                           |
+|920                                                                                                                                                             |
+|Either Sex                                                                                                                                                      |
+|                                                                                                                                                                |
+|Muzzleloader-M                                                                                                                                                  |
+|M                                                                                                                                                               |
+|Nov 15-16 (Fri & Sat)                                                                                                                                           |
+|80                                                                                                                                                              |
+|Either Sex (Area 11)                                                                                                                                            |
+|                                                                                                                                                                |
+|Conventional Gun-N                                                                                                                                              |
+|N                                                                                                                                                               |
+|Nov 29-30 (Fri & Sat)                                                                                                                                           |
+|870                                                                                                                                                             |
+|Either Sex                                                                                                                                                      |
+|                                                                                                                                                                |
+|Muzzleloader-O                                                                                                                                                  |
+|O                                                                                                                                                               |
+|Nov 29-30 (Fri & Sat)                                                                                                                                           |
+|130                                                                                                                                                             |
+|Either Sex (Area 12)                                                                                                                                            |
+|                                                                                                                                                                |
+|*Preference Point-P                                                                                                                                             |
+|P                                                                                                                                                               |
+|                                                                                                                                                                |
+|                                                                                                                                                                |
+|Preference Point                                                                                                                                                |
+|                                                                                                                                                                |
+|                                                                                                                                                                |
+|                                                                                                                                                                |
+
+
+*If you are unable to hunt this year, choose Preference Point to increase points for future years.
+
+
+Attachment 2.  Current rules for starting a new application or joining a group
+|                                                                                                                                                    |
+|*Start new application.                                                                                                                             |
+|                                                                                                                                                    |
+|A regular group can be started by an adult. Only youth hunters as defined in #2 can be group leader or group members when applying for youth hunts. |
+|Youths applying for the Kentucky youth hunts must be less than 16 years of age on 10/26/2013. Youths applying for the Tennessee youth hunt must be  |
+|at least age 6 and less than 17 years of age on 10/19/2013. All youth must meet state hunter safety requirements, and those not required to have a  |
+|hunter safety card must carry a signed verification form available on LBL's website.                                                                |
+|When your credit card information is accepted the application process is completed and a group number will be issued to you by the system.          |
+|If you would like other hunters to join your group, you will need to provide them the group number and the correct spelling of your last name.      |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|*Join a group.                                                                                                                                      |
+|                                                                                                                                                    |
+|To join an existing group you will need to provide the group number and correct spelling of last name of the group leader.                          |
+|A maximum of 5 hunters may be part of a group. Once you join a group you cannot change your group.                                                  |
+|Hunters joining a group cannot change the hunt selections made by the group leader.                                                                 |
+|Youth are allowed to join an adult group only if the group already has a hunter who is an adult at least  21 years of age; if a second youth wants  |
+|to join the group, 2 hunters of at least 21 years of age need to be part of the group.                                                              |
+|Only youth hunters can join a group applying for youth hunts.                                                                                       |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+
+
+Attachment 3.  Guidelines for hunt code and hunt area selection
+                 • If starting a new group select your choices and submit your application.
+                 • If you are joining a group you cannot make any choices here because your choices have already been made by the group leader.
+                 • Hunt Areas are not assigned for Turkey Hunts
+                 • If you are unable to hunt this year, choose Preference Point instead of hunt choices to increase your points for future years.
+
+
+                 • Hunters must be licensed for the respective state portion of LBL in which they hunt. If applying for a preference point be
+                   sure to select appropriate code.
+Attachment 4.  Quota Hunt Permit that is generated and will print with hunter’s information on 8 ½ x 11 printer paper.  This example is for deer
+hunts (slightly different wording for turkey hunts).  Information for each field will be supplied by LBL except bar code.  Contractor will
+generate the bar code, which will be the supplied permit number converted to bar code format.  Permit is sized correctly and when cut and folded
+will be the same size as a standard credit card.
+
+
+
+Congratulations!  Please print this page.  The permit below must be carried with you in the field while hunting.  In addition to this permit, a
+state hunting license and deer permit for the state portion you are hunting is required according to state regulations, and hunters age 16 and
+older must also possess a valid LBL Hunter Use Permit.  You can view and print the LBL Deer Hunting Information Sheet and hunt area maps from
+LBL’s website at www.lbl.org.
+We hope you have a safe and memorable hunt at Land Between The Lakes!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Attachment 5.  Turkey QHAS Contractor schedule from 2013.  Schedule is subject to change.
+
+|CONTRACTOR 2013 QUOTA TURKEY APPLICATION PROCESSING SCHEDULE COMPRESSED                                                                                                                      |
+|          |Draft 12/20/2012                                                                                 |                       |                                |                       |
+|Item      |Task (Note: Tasks that do not involve Contractor have been omitted, e.g. numbers  1, 4, etc.)    |Date Due               |Responsible Person              |Completed              |
+|2         |Conference Call with Contractor and LBL                                                          |12/3/2012              |All                             |                       |
+|3         |LBL provides Contractor with hunt dates, hunt codes, and youth eligibility dates for the current |1/3/2013               |Steve                           |                       |
+|          |turkey season, web address for Turkey Hunting Information Sheet                                  |                       |                                |                       |
+|5         |Pop-up msg correction:  If a hunter selects "Start a New Application" and does not select KY or  |1/11/2013              |Contractor                      |                       |
+|          |TN, a pop-up message appears which says "Please select one of the Hunt Area Options."    Change  |                       |                                |                       |
+|          |pop-up wording to "Please select KY or TN" (this was previously submitted, but I don't think it  |                       |                                |                       |
+|          |was corrected)                                                                                   |                       |                                |                       |
+|6         |Pop-up msg correction: Reword pop-up for TN youth hunt age eligibility from "You are not eligible|1/11/2013              |Contractor                      |                       |
+|          |for applying Hunt according to state law you should be in 6 to 16 age group" to "You must be from|                       |                                |                       |
+|          |age 6 to 16 on the first day of the hunt to apply for this hunt. "  (this was previously         |                       |                                |                       |
+|          |submitted, but has not been corrected)                                                           |                       |                                |                       |
+|7         |Pop-up msg correction: When youth hunters apply to hunt for a regular hunt with adult applicants |1/11/2013              |Contractor                      |                       |
+|          |and there are not enough adult applicants already in the group, change pop-up wording from, "The |                       |                                |                       |
+|          |Group has not enough members aged 21 to accommodate youth members" to "Each youth must be        |                       |                                |                       |
+|          |individually accompanied by an adult age 21 or older while hunting.   This group does not        |                       |                                |                       |
+|          |currently have enough members over age 21 to add this youth. " (this was previously submitted,   |                       |                                |                       |
+|          |but has not been corrected)                                                                      |                       |                                |                       |
+|8         |Contractor sets up new hunt season in test environment with pop-up message changes, new hunt     |1/11/2013              |Contractor                      |                       |
+|          |dates, new dates for youth hunt age eligibility, link to Turkey Hunt Information Sheet.          |                       |                                |                       |
+|          |Contractor verifies all changes are complete and accurate as provided by LBL.  Contractor submits|                       |                                |                       |
+|          |test applications to verify system is working correctly.  Contractor sends test site link and    |                       |                                |                       |
+|          |dummy credit card information to LBL for validation.                                             |                       |                                |                       |
+|9         |Turkey hunt information sheet available on LBL website.                                          |12/12/2012             |Steve/Denise                    |                       |
+|10        |LBL validates pop-ups, hunt dates and codes, website link, and provides Contractor with marked up|1/15/2013              |Steve/Greg                      |                       |
+|          |web pages (within PWS) of any additional changes for the current season.                         |                       |                                |                       |
+|13        |Contractor makes final edits and/or changes and notifies LBL when complete                       |1/18/2013              |Contractor                      |                       |
+|14        |LBL validates final edits and/or changes                                                         |1/23/2013              |Steve/Avanell                   |                       |
+|19        |QHAS Website application operational by 12:01 a.m.                                               |1-Feb                  |Contractor                      |                       |
+|25        |Application no longer available on QHAS website at 12:01 a.m.  Add wording near top of home page |1-Mar                  |Contractor                      |                       |
+|          |in bold red saying, "Log in beginning March 19 to see if you were selected for 2013 Spring Quota |                       |                                |                       |
+|          |Turkey Hunt"                                                                                     |                       |                                |                       |
+|29        |LBL Edits Quota Hunt Permit and sends to Contractor.                                             |4-Mar                  |Steve                           |                       |
+|31        |Drawing data is validated by Forest Service and forwarded to Contractor                          |11-Mar                 |[Avanell]                       |                       |
+|33        |Contractor posts current drawing results in test environment.  Contractor reviews results and    |13-Mar                 |Contractor                      |                       |
+|          |generates test permits, then notifies LBL that test environment is ready                         |                       |                                |                       |
+|34        |LBL reviews results, prints test permits, and validates results and permit.                      |14-Mar                 |Steve/[Avanell]                 |                       |
+|35        |Contractor deletes test permits and posts drawing results to the public site at 9:00 a.m. Central|18-Mar                 |Contractor                      |                       |
+|          |time/10:00 a.m. Eastern time.                                                                    |                       |                                |                       |
+|38        |After Action Review (AAR) conference call                                                        |26-Mar                 |All                             |                       |
+|39        |First Quota Hunt - KY Youth Hunt                                                                 |30-Mar                 |LBL                             |                       |
+|42        |QHAS public website deactivated.  Change bold red wording on home page from, "Log in beginning   |1-May                  |Contractor                      |                       |
+|          |March 19 to see if you were selected for 2013 Spring Quota Turkey Hunt" to "Log in from  July 1 -|                       |                                |                       |
+|          |31 to apply for LBL Fall Quota Deer Hunts"                                                       |                       |                                |                       |
+|43        |LBL sends 2013 Fall Quota Deer Hunt QHAS Schedule                                                |15-May                 |Steve                           |                       |
+
+Attachment 6. Deer QHAS Contractor schedule from 2013.  Schedule is subject to change.
+
+|2013 CONTRACTOR QUOTA DEER APPLICATION PROCESSING SCHEDULE                                                                                                                                   |
+|         |Final 5/16/2013                                                                                             |               |                             |                        |
+|Item     |Task                                                                                                        |Date Due       |Responsible Person           |Completed               |
+|1        |LBL sends draft QHAS schedule to all parties                                                                |7-May          |Steve                        |                        |
+|3        |Contractor and others provide any schedule changes to LBL                                                   |13-May         |Contractor                   |                        |
+|4        |LBL sends final QHAS schedule to all parties                                                                |16-May         |Steve                        |                        |
+|7        |LBL provides Contractor with hunt dates, hunt codes,  hunt areas, number of permits, and birth dates for    |23-May         |Steve/Avanell                |                        |
+|         |youth hunt eligibility for the 2013 season                                                                  |               |                             |                        |
+|9        |LBL reviews any corrections to preference points and forwards database to Contractor for upload             |3-Jun          |Steve                        |                        |
+|13       |Contractor sets up new hunt season in test environment with new hunt dates, new birth dates for youth hunt  |11-Jun         |Contractor                   |                        |
+|         |eligibility, $7 phone-in application function, and operational links to current deer hunting information    |               |                             |                        |
+|         |sheet.  Contractor verifies all changes are complete and accurate as provided by LBL.  Contractor submits   |               |                             |                        |
+|         |test applications to verify system is working correctly.  Contractor notifies LBL for testing and           |               |                             |                        |
+|         |verification, and provides credit card information to Contractor for testing.                               |               |                             |                        |
+|15       |Forest Service reviews hunt setup and submits test applications.  LBL submits any needed edits or changes to|17-Jun         |Steve/Avanell                |                        |
+|         |Contractor.                                                                                                 |               |                             |                        |
+|16       |Contractor makes final edits and/or changes and notifies LBL when complete                                  |20-Jun         |Contractor                   |                        |
+|17       |LBL approves final edits and/or changes                                                                     |24-Jun         |Steve/Avanell                |                        |
+|19       |QHAS Website application operational by 12:01 a.m.                                                          |1-Jul          |Steve/Denise                 |                        |
+|24       |LBL sends email reminder to Contractor to stop accepting applications on QHAS website at 12:01 a.m. August  |29-Jul         |Steve                        |                        |
+|         |1.                                                                                                          |               |                             |                        |
+|25       |Application no longer available on QHAS website at 12:01 a.m.                                               |1-Aug          |Contractor                   |                        |
+|29       |Contractor generates Quota Deer Hunt test permit and uploads to QHAS test website                           |6-Aug          |Contractor                   |                        |
+|30       |LBL approves Quota Deer Hunt test permit                                                                    |8-Aug          |Steve/Greg                   |                        |
+|32       |Drawn database is reviewed by LBL and forwarded to Contractor                                               |14-Aug         |Steve/Avanell                |                        |
+|33       |Contractor posts drawing results in test environment.  Contractor reviews results and generates test        |20-Aug         |Contractor                   |                        |
+|         |permits, then notifies LBL that test environment is ready.                                                  |               |                             |                        |
+|34       |LBL reviews results and verifies test permits.  Approves results to be posted to QHAS website.              |22-Aug         |Steve/Avanell                |                        |
+|36       |Contractor posts drawing results  to the public site by 12:01 a.m. CDT                                      |28-Aug         |Contractor                   |                        |
+|40       |LBL and Contractor After Action Review (AAR) conference call 1:00 Central/2:00 Eastern                      |17-Sep         |LBL/Use                      |                        |
+|42       |First Quota Deer Hunt - TN Youth Hunt                                                                       |19-Oct         |LBL                          |                        |
+|43       |LBL sends Contractor Quota Turkey Hunt QHAS schedule                                                        |7-Nov          |Steve                        |                        |
+|45       |QHAS public website deactivated with message to apply in February for spring turkey hunts.                  |2-Dec          |Contractor                   |                        |
+
+Attachment 7.  LBL 2013 Spring Turkey Hunting Information
+[pic]
+[pic]
+
+Attachment 8.  LBL 2013-2014 Deer Hunting Information
+
+[pic]
+[pic]
+section i – contract clauses
+
+CONTRACT CLAUSES INCORPORATED BY REFERENCE
+
+
+
+52.202-1    Definitions (JAN 2012)
+52.203-3    Gratuities (APR 1984)
+52.203-5    Covenant Against Contingent Fees (APR 1984)
+52.203-7    Anti-Kickback Procedures (OCT 2010)
+   8. Cancellation, Rescission, and Recovery of Funds for Illegal or Improper Activity (JAN 1997)
+52.203-10   Price or Fee Adjustment for Illegal or Improper Activity (JAN 1997)
+52.203-11   Certification and Disclosure Regarding Payments to Influence Certain Federal Transactions (SEP 2007)
+       12. Limitation on Payments to Influence Certain Federal Transactions (OCT 2010)
+52.204-4    Printed or Copied Double- Sided on Recycled Paper (MAY 2011)
+52.204-6    Data Universal Numbering System (DUNS) (APR 2008)
+52.212-4    Contract Terms and Conditions – Commercial Items (FEB 2012) Alternate I (OCT 2008)
+52.217-5    Evaluation of Options (JUL 1990)
+52.219-1    Small Business Program Representations (APR 2011)
+52.223-6    Drug-Free Workplace (MAY 2001)
+52.223-10   Waste Reduction Program (MAY 2011)
+52.224-1    Privacy Act Notification (APR 1984)
+52.224-2    Privacy Act (APR 1984)
+52.225-25   Prohibition on Contracting with Entities Engaging in Sanctioned Activities Relating to  Iran-Representation  and  Certification  (NOV
+           2010)
+52.227-14   Rights in Data – General (DEC 2007)
+52.227-19   Commercial Computer Software License (DEC 2007)
+52.229-3    Federal, State, and Local Taxes (APR 2003)
+52.232-1    Payments (APR 1984)
+52.232-13   Notice of Progress Payments (APR 1984)
+52.232-17   Interest (OCT 2010)
+52.232-18   Availability of Funds (APR 1984)
+52.233-1    Disputes (JUL 2002)
+52.237-3    Continuity of Services (JAN 1991)
+52.243-1    Changes – Fixed Price (AUG 1987)
+52.246-4    Inspection of Services – Fixed-Price (AUG 1996)
+52.246-20   Warranty of Services (MAY 2001)
+52.248-1    Value Engineering (OCT 2010)
+52.249-4    Termination for Convenience of the Government (Services) (Short Form) (APR 1984)
+52.249-8    Default (Fixed-Price Supply and Service) (APR 1984)
+452.204-70  Inquiries (FEB 1988)
+
+CONTRACT CLAUSES AND PROVISIONS INCORPORATED BY FULL TEXT
+
+
+
+
+52.212-5 Contract Terms and Conditions Required to Implement Statutes or Executive Orders – Commercial Items (JAN 2013)
+
+(a) The Contractor shall comply with the following Federal Acquisition Regulation (FAR) clauses, which are incorporated in this contract by
+reference, to implement provisions of law or Executive orders applicable to acquisitions of commercial items:
+   (1) 52.222-50, Combating Trafficking in Persons (FEB 2009) (22 U.S.C. 7104(g)).
+   ____ Alternate I (AUG 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+   (2) 52.233-3, Protest After Award (AUG 1996) (31 U.S.C. 3553).
+   (3) 52.233-4, Applicable Law for Breach of Contract Claim (OCT 2004) (Pub. L. 108-77, 108-78).
+(b) The Contractor shall comply with the FAR clauses in this paragraph (b) that the contracting officer has indicated as being incorporated in
+this contract by reference to implement provisions of law or Executive orders applicable to acquisitions of commercial items:
+   _X__ (1) 52.203-6, Restrictions on Subcontractor Sales to the Government (Sept 2006), with Alternate I (Oct 1995) (41 U.S.C. 253g and 10
+   U.S.C. 2402).
+   _C__ (2) 52.203-13, Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note)).
+   ___ (3) 52.203-15, Whistleblower Protections under the American Recovery and Reinvestment Act of 2009 (Jun 2010) (Section 1553 of Pub L. 111-
+   5) (Applies to contracts funded by the American Recovery and Reinvestment Act of 2009).
+   ___ (4) 52.204-10, Reporting Executive compensation and First-Tier Subcontract Awards (Aug 2012) (Pub. L. 109-282) (31 U.S.C. 6101 note).
+   ___ (5) 52.204-11, American Recovery and Reinvestment Act—Reporting Requirements (Jul 2010) (Pub. L. 111-5).
+   _X__ (6) 52.209-6, Protecting the Government’ Interest When Subcontracting with Contractors Debarred, Suspended, or Proposed for Debarment
+   (Dec 2010) (31 U.S.C. 6101 note).
+   ___ (7) 52.209-9, Updates of Publicly Available Information Regarding Responsibility Matters (Feb 2012) (41 U.S.C. 2313).
+   ___ (8) 52.209-10, Prohibition on Contracting with Inverted Domestic Corporations (May 2012) (section 738 of Division C of Public Law 112-74,
+   section 740 of Division C of Pub. L. 111-117, section 743 of Division D of Pub. L. 111-8, and section 745 of Division D of Pub. L. 110-161).
+   ___ (9) 52.219-3, Notice of HUBZone Set-Aside or Sole-Source Award (Nov 2011) (15 U.S.C. 657a).
+   ___ (10) 52.219-4, Notice of Price Evaluation Preference for HUBZone Small Business Concerns (Jan 2011) (if the offeror elects to waive the
+   preference, it shall so indicate in its offer)(15 U.S.C. 657a).
+   ___ (11) [Reserved]
+   _X__ (12) (i) 52.219-6, Notice of Total Small Business Aside (Nov 2011) (15 U.S.C. 644).
+   ___ (ii) Alternate I (Nov 2011).
+   ___ (iii) Alternate II (Nov 2011).
+   ___ (13) (i) 52.219-7, Notice of Partial Small Business Set-Aside (June 2003) (15 U.S.C. 644).
+   ___ (ii) Alternate I (Oct 1995) of 52.219-7.
+   ___ (iii) Alternate II (Mar 2004) of 52.219-7.
+   _X__ (14) 52.219-8, Utilization of Small Business Concerns (Jan 2011) (15 U.S.C. 637(d)(2) and (3)).
+   ___ (15) (i) 52.219-9, Small Business Subcontracting Plan (Jan 2011) (15 U.S.C. 637 (d)(4).)
+   ___ (ii) Alternate I (Oct 2001) of 52.219-9.
+   ___ (iii) Alternate II (Oct 2001) of 52.219-9.
+   ___ (iv) Alternate III (July 2010) of 52.219-9.
+   ___ (16) 52.219-13, Notice of Set-Aside of Orders (Nov 2011) (15 U.S.C. 644(r)).
+   _X__ (17) 52.219-14, Limitations on Subcontracting (Nov 2011) (15 U.S.C. 637(a)(14)).
+   ___ (18) 52.219-16, Liquidated Damages—Subcontracting Plan (Jan 1999) (15 U.S.C. 637(d)(4)(F)(i)).
+   ___ (19) (i) 52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged Business Concerns (Oct 2008) (10 U.S.C. 2323) (if the
+   offeror elects to waive the adjustment, it shall so indicate in its offer).
+   ___ (ii) Alternate I (June 2003) of 52.219-23.
+   ___ (20) 52.219-25, Small Disadvantaged Business Participation Program—Disadvantaged Status and Reporting (Dec 2010) (Pub. L. 103-355, section
+   7102, and 10 U.S.C. 2323).
+   ___ (21) 52.219-26, Small Disadvantaged Business Participation Program—Incentive Subcontracting (Oct 2000) (Pub. L. 103-355, section 7102, and
+   10 U.S.C. 2323).
+   ___ (22) 52.219-27, Notice of Service-Disabled Veteran-Owned Small Business Set-Aside (Nov 2011) (15 U.S.C. 657f).
+   ___ (23) 52.219-28, Post Award Small Business Program Rerepresentation (Apr 2012) (15 U.S.C. 632(a)(2)).
+   ___ (24) 52.219-29, Notice of Set-Aside for Economically Disadvantaged Women-Owned Small Business (EDWOSB) Concerns (Apr 2012) (15 U.S.C.
+   637(m)).
+   ___ (25) 52.219-30, Notice of Set-Aside for Women-Owned Small Business (WOSB) Concerns Eligible Under the WOSB Program (Apr 2012) (15 U.S.C.
+   637(m)).
+   _X__ (26) 52.222-3, Convict Labor (June 2003) (E.O. 11755).
+   _X__ (27) 52.222-19, Child Labor—Cooperation with Authorities and Remedies (Mar 2012) (E.O. 13126).
+   _X__ (28) 52.222-21, Prohibition of Segregated Facilities (Feb 1999).
+   _X__ (29) 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246).
+   ___ (30) 52.222-35, Equal Opportunity for Veterans (Sep 2010) (38 U.S.C. 4212).
+   _X__ (31) 52.222-36, Affirmative Action for Workers with Disabilities (Oct 2010) (29 U.S.C. 793).
+   ___ (32) 52.222-37, Employment Reports on Veterans (Sep 2010) (38 U.S.C. 4212).
+   _X__ (33) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496).
+   ___ (34) 52.222-54, Employment Eligibility Verification (Jul 2012). (Executive Order 12989). (Not applicable to the acquisition of
+   commercially available off-the-shelf items or certain other types of commercial items as prescribed in 22.1803.)
+   ___ (35) (i) 52.223-9, Estimate of Percentage of Recovered Material Content for EPA-Designated Items (May 2008) (42 U.S.C. 6962(c)(3)(A)(ii)).
+   (Not applicable to the acquisition of commercially available off-the-shelf items.)
+   ___ (ii) Alternate I (May 2008) of 52.223-9 (42 U.S.C. 6962(i)(2)(C)). (Not applicable to the acquisition of commercially available off-the-
+   shelf items.)
+   _X__ (36) 52.223-15, Energy Efficiency in Energy-Consuming Products (Dec 2007) (42 U.S.C. 8259b).
+   ___ (37) (i) 52.223-16, IEEE 1680 Standard for the Environmental Assessment of Personal Computer Products (Dec 2007) (E.O. 13423).
+   ___ (ii) Alternate I (Dec 2007) of 52.223-16.
+   _X__ (38) 52.223-18, Encouraging Contractor Policies to Ban Text Messaging while Driving (Aug 2011).
+   ___ (39) 52.225-1, Buy American Act--Supplies (Feb 2009) (41 U.S.C. 10a-10d).
+   ___ (40) (i) 52.225-3, Buy American Act--Free Trade Agreements--Israeli Trade Act (Nov 2012) (41 U.S.C. chapter 83, 19 U.S.C. 3301 note, 19
+   U.S.C. 2112 note, 19 U.S.C. 3805 note, 19 U.S.C. 4001 note, Pub. L. 103-182, Pub. L. 108-77, 108-78, 108-286, 108-302, 109-53, 109-169, 109-
+   283, 110-138, 112-41, 112-42, and 112-43).
+   ___ (ii) Alternate I (Mar 2012) of 52.225-3.
+   ___ (iii) Alternate II (Mar 2012) of 52.225-3.
+   ___ (iv) Alternate III (Nov 2012) of 52.225-3.
+   ___ (41) 52.225-5, Trade Agreements (Nov 2012) (19 U.S.C. 2501, et seq., 19 U.S.C. 3301 note).
+   _X__ (42) 52.225-13, Restrictions on Certain Foreign Purchases (Jun 2008) (E.O.’s, proclamations, and statutes administered by the Office of
+   Foreign Assets Control of the Department of the Treasury).
+   ___ (43) 52.226-4, Notice of Disaster or Emergency Area Set-Aside (Nov 2007) (42 U.S.C. 5150).
+   ___ (44) 52.226-5, Restrictions on Subcontracting Outside Disaster or Emergency Area (Nov 2007) (42 U.S.C. 5150).
+   ___ (45) 52.232-29, Terms for Financing of Purchases of Commercial Items (Feb 2002) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+   ___ (46) 52.232-30, Installment Payments for Commercial Items (Oct 1995) (41 U.S.C. 255(f), 10 U.S.C. 2307(f)).
+   _X__ (47) 52.232-33, Payment by Electronic Funds Transfer—Central Contractor Registration (Oct. 2003) (31 U.S.C. 3332).
+   ___ (48) 52.232-34, Payment by Electronic Funds Transfer—Other Than Central Contractor Registration (May 1999) (31 U.S.C. 3332).
+   ___ (49) 52.232-36, Payment by Third Party (Feb 2010) (31 U.S.C. 3332).
+   _X__ (50) 52.239-1, Privacy or Security Safeguards (Aug 1996) (5 U.S.C. 552a).
+   ___ (51) (i) 52.247-64, Preference for Privately Owned U.S.-Flag Commercial Vessels (Feb 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C. 2631).
+   ___ (ii) Alternate I (Apr 2003) of 52.247-64.
+(c) The Contractor shall comply with the FAR clauses in this paragraph (c), applicable to commercial services, that the Contracting Officer has
+indicated as being incorporated in this contract by reference to implement provisions of law or executive orders applicable to acquisitions of
+commercial items:
+   _X__ (1) 52.222-41, Service Contract Act of 1965 (Nov 2007) (41 U.S.C. 351, et seq.).
+   _X__ (2) 52.222-42, Statement of Equivalent Rates for Federal Hires (May 1989) (29 U.S.C. 206 and 41 U.S.C. 351, et seq.).
+   _X__ (3) 52.222-43, Fair Labor Standards Act and Service Contract Act -- Price Adjustment (Multiple Year and Option Contracts) (Sep 2009) (29
+   U.S.C.206 and 41 U.S.C. 351, et seq.).
+   ___ (4) 52.222-44, Fair Labor Standards Act and Service Contract Act -- Price Adjustment (Sep 2009) (29 U.S.C. 206 and 41 U.S.C. 351, et
+   seq.).
+   ___ (5) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain
+   Equipment--Requirements (Nov 2007) (41 U.S.C. 351, et seq.).
+   ___ (6) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services--Requirements (Feb 2009) (41
+   U.S.C. 351, et seq.).
+   _X__ (7) 52.222-17, Nondisplacement of Qualified Workers (Jan 2013) (E.O. 13495).
+   ___ (8) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations. (Mar 2009) (Pub. L. 110-247).
+   ___ (9) 52.237-11, Accepting and Dispensing of $1 Coin (Sep 2008) (31 U.S.C. 5112(p)(1)).
+(d) Comptroller General Examination of Record The Contractor shall comply with the provisions of this paragraph (d) if this contract was awarded
+using other than sealed bid, is in excess of the simplified acquisition threshold, and does not contain the clause at 52.215-2, Audit and
+Records -- Negotiation.
+   (1) The Comptroller General of the United States, or an authorized representative of the Comptroller General, shall have access to and right
+   to examine any of the Contractor’s directly pertinent records involving transactions related to this contract.
+   (2) The Contractor shall make available at its offices at all reasonable times the records, materials, and other evidence for examination,
+   audit, or reproduction, until 3 years after final payment under this contract or for any shorter period specified in FAR Subpart 4.7,
+   Contractor Records Retention, of the other clauses of this contract. If this contract is completely or partially terminated, the records
+   relating to the work terminated shall be made available for 3 years after any resulting final termination settlement. Records relating to
+   appeals under the disputes clause or to litigation or the settlement of claims arising under or relating to this contract shall be made
+   available until such appeals, litigation, or claims are finally resolved.
+   (3) As used in this clause, records include books, documents, accounting procedures and practices, and other data, regardless of type and
+   regardless of form. This does not require the Contractor to create or maintain any record that the Contractor does not maintain in the
+   ordinary course of business or pursuant to a provision of law.
+(e)
+   (1) Notwithstanding the requirements of the clauses in paragraphs (a), (b), (c) and (d) of this clause, the Contractor is not required to flow
+   down any FAR clause, other than those in this paragraph (e)(1) in a subcontract for commercial items. Unless otherwise indicated below, the
+   extent of the flow down shall be as required by the clause—
+      (i) 52.203-13, Contractor Code of Business Ethics and Conduct (Apr 2010) (Pub. L. 110-252, Title VI, Chapter 1 (41 U.S.C. 251 note)).
+      (ii) 52.219-8, Utilization of Small Business Concerns (Dec 2010) (15 U.S.C. 637(d)(2) and (3)), in all subcontracts that offer further
+      subcontracting opportunities. If the subcontract (except subcontracts to small business concerns) exceeds $650,000 ($1.5 million for
+      construction of any public facility), the subcontractor must include 52.219-8 in lower tier subcontracts that offer subcontracting
+      opportunities.
+      (iii) 52.222-17, Nondisplacement of Qualified Workers (Jan 2013) (E.O. 13495). Flow down required in accordance with paragraph (1) of FAR
+      clause 52.222-17.
+      (iv) 52.222-26, Equal Opportunity (Mar 2007) (E.O. 11246).
+      (v) 52.222-35, Equal Opportunity for Veterans (Sep 2010) (38 U.S.C. 4212).
+      (vi) 52.222-36, Affirmative Action for Workers with Disabilities (Oct 2010) (29 U.S.C. 793).
+      (vii) 52.222-40, Notification of Employee Rights Under the National Labor Relations Act (Dec 2010) (E.O. 13496). Flow down required in
+      accordance with paragraph (f) of FAR clause 52.222-40.
+      (viii) 52.222-41, Service Contract Act of 1965, (Nov 2007), (41 U.S.C. 351, et seq.)
+      (ix) 52.222-50, Combating Trafficking in Persons (Feb 2009) (22 U.S.C. 7104(g)).
+      ___ Alternate I (Aug 2007) of 52.222-50 (22 U.S.C. 7104(g)).
+      (x) 52.222-51, Exemption from Application of the Service Contract Act to Contracts for Maintenance, Calibration, or Repair of Certain
+      Equipment--Requirements (Nov 2007) (41 U.S.C. 351, et seq.)
+      (xi) 52.222-53, Exemption from Application of the Service Contract Act to Contracts for Certain Services--Requirements (Feb 2009) (41
+      U.S.C. 351, et seq.)
+      (xii) 52.222-54, Employment Eligibility Verification (Jul 2012).
+      (xiii) 52.226-6, Promoting Excess Food Donation to Nonprofit Organizations. (Mar 2009) (Pub. L. 110-247). Flow down required in accordance
+      with paragraph (e) of FAR clause 52.226-6.
+      (xiv) 52.247-64, Preference for Privately-Owned U.S. Flag Commercial Vessels (Feb 2006) (46 U.S.C. Appx 1241(b) and 10 U.S.C. 2631). Flow
+      down required in accordance with paragraph (d) of FAR clause 52.247-64.
+   (2) While not required, the contractor may include in its subcontracts for commercial items a minimal number of additional clauses necessary
+   to satisfy its contractual obligations.
+
+52.217-8 Option to Extend Services (NOV 1999)
+The Government may require continued performance of any services within the limits and at the rates specified in the contract. These rates may
+be adjusted only as a result of revisions to prevailing labor rates provided by the Secretary of Labor. The option provision may be exercised
+more than once, but the total extension of performance hereunder shall not exceed 6 months. The Contracting Officer may exercise the option by
+written notice to the Contractor within 30 days.
+
+52.217-9 Option to Extend the Term of the Contract (MAR 2000)
+(a) The Government may extend the term of this contract by written notice to the Contractor within 30 days; provided that the Government gives
+the Contractor a preliminary written notice of its intent to extend at least 60 days before the contract expires. The preliminary notice does
+not commit the Government to an extension.
+(b) If the Government exercises this option, the extended contract shall be considered to include this option clause.
+(c) The total duration of this contract, including the exercise of any options under this clause, shall not exceed 66 months.
+
+
+52.227-15 Representation of Limited Rights Data and Restricted Computer Software (Dec 2007)
+
+(a) This solicitation sets forth the Government’s known delivery requirements for data (as defined in the clause at 52.227-14, Rights in Data--
+General). Any resulting contract may also provide the Government the option to order additional data under the Additional Data Requirements
+clause at 52.227-16, if included in the contract. Any data delivered under the resulting contract will be subject to the Rights in Data--General
+clause at 52.227-14 included in this contract. Under the latter clause, a Contractor may withhold from delivery data that qualify as limited
+rights data or restricted computer software, and deliver form, fit, and function data instead. The latter clause also may be used with its
+Alternates II and/or III to obtain delivery of limited rights data or restricted computer software, marked with limited rights or restricted
+rights notices, as appropriate. In addition, use of Alternate V with this latter clause provides the Government the right to inspect such data
+at the Contractor’s facility.
+(b) By completing the remainder of this paragraph, the offeror represents that it has reviewed the requirements for the delivery of technical
+data or computer software and states [offeror check appropriate block]—
+      [ ] (1) None of the data proposed for fulfilling the data delivery requirements qualifies as limited rights data or restricted computer
+      software; or
+      [ ] (2) Data proposed for fulfilling the data delivery requirements qualify as limited rights data or restricted computer software and are
+      identified as follows:
+      _____________________________________________________
+      ____________________________________________________
+      ____________________________________________________
+(c) Any identification of limited rights data or restricted computer software in the offeror's response is not determinative of the status of
+the data should a contract be awarded to the offeror.
+52.232-19 Availability of Funds for the Next Fiscal Year (Apr 1984)
+Funds are not presently available for performance under this contract beyond 30 September 2013. The Government’s obligation for performance of
+this contract beyond that date is contingent upon the availability of appropriated funds from which payment for contract purposes can be made.
+No legal liability on the part of the Government for any payment may arise for performance under this contract beyond 30 September 2013, until
+funds are made available to the Contracting Officer for performance and until the Contractor receives notice of availability, to be confirmed in
+writing by the Contracting Officer.
+
+52.233-2   Service of Protest (SEP 2006)
+(a) Protests, as defined in section 33.101 of the Federal Acquisition Regulation, that are filed directly with  an  agency,  and  copies  of  any
+protests that are filed with the Government Accountability Office (GAO), shall be served on the Contracting Officer  (addressed  as  follows)  by
+obtaining written and dated acknowledgment of receipt from Angela Mitchell, 100 Van Morgan Drive, Golden Pond, KY 42211.
+(b) The copy of any protest shall be received in the office designated above within one day of filing a protest with the GAO.
+
+52.252-1   Solicitation Provisions Incorporated by Reference (FEB 1998)
+This solicitation incorporates one or more solicitation provisions by reference, with the same force and effect as if they  were  given  in  full
+text.  Upon request, the Contracting Officer will make their full text available.  The offeror  is  cautioned  that  the  listed  provisions  may
+include blocks that must be completed by the offeror and submitted with its quotation or offer.  In lieu of submitting the  full  text  of  those
+provisions, the offeror may identify the provision by paragraph identifier and provide the appropriate information with its quotation  or  offer.
+Also, the full text of a solicitation provision may be accessed electronically at this/these address(es):
+www.arnet.gov/far/
+www.usda.gov/procurement/policy/agar.html
+
+
+52.252-2   Clauses Incorporated by Reference (FEB 1998)
+
+This contract incorporates one or more clauses by reference, with the same force and effect as if they were given in full  text.   Upon  request,
+the Contracting Officer will make their full text available.  Also, the full text of a  clause  may  be  accessed  electronically  at  this/these
+address(es): www.arnet.gov/far/
+
+52.252-5 Authorized Deviations in Provisions (Apr 1984)
+(a) The use in this solicitation of any Federal Acquisition Regulation (48 CFR Chapter 1) provision with an authorized deviation is indicated by
+the addition of “(DEVIATION)” after the date of the provision.
+
+52.252-6 Authorized Deviations in Clauses (APR 1984)
+(a) The use in this solicitation or contract of any Federal Acquisition Regulation (48 CFR Chapter 1) clause with an authorized deviation is
+indicated by the addition of “(DEVIATION)” after the date of the clause.
+
+AGAR 452.215-73 Post-Award Conference (NOV 1996)
+A post award conference with the successful offeror is required. It will be scheduled within 15 days after the date of contract award. The
+conference will be held at: 100 Van Morgan Drive, Golden Pond, KY 42211.  A teleconference may be authorized with prior approval.
+
+AGAR 452.219-70   SIZE STANDARD AND NAICS CODE INFORMATION (SEP 2001)
+The North American Industrial classification System Code(s) and business size standard(s) describing the products and/or services to be  acquired
+under this solicitation are listed below:
+
+Contract line item(s):            All
+--NAICS Code                 541511     ______
+--Size Standard                   $25.5 Million
+
+THE AWARD IS BEING CONSIDERED USING A BEST VALUE APPROACH. Failure to provide all required information may result in THE offer not being
+considered for award
+
+
+SECTION J - LIST OF DOCUMENTS, EXHIBITS, AND OTHER ATTACHMENTS
+
+Wage Determination
+Scope of Work and applicable Attachments
+
+
+SECTION K – REPRESENTATIONS, CERTIFICATIOSN, AND OTHER STATEMENTS OF BIDDERS
+
+
+
+
+
+52.212-3 Offeror Representations and Certifications – Commercial Items (DEC 2012)
+
+An offeror shall complete only paragraphs (b) of this provision if the offeror has completed the annual representations and certificates
+electronically via http://sam.gov.  If an offeror has not completed the annual representations and certifications electronically at the website,
+the offeror shall complete only paragraphs (c) through (o) of this provision.
+(a) Definitions. As used in this provision--
+“Economically disadvantaged women-owned small business (EDWOSB) concern” means a small business concern that is at least 51 percent directly and
+unconditionally owned by, and the management and daily business operations of which are controlled by, one or more women who are citizens of the
+United States and who are economically disadvantaged in accordance with 13 CFR part 127. It automatically qualifies as a women-owned small
+business eligible under the WOSB Program.
+“Forced or indentured child labor” means all work or service—
+   (1) Exacted from any person under the age of 18 under the menace of any penalty for its nonperformance and for which the worker does not offer
+   himself voluntarily; or
+   (2) Performed by any person under the age of 18 pursuant to a contract the enforcement of which can be accomplished by process or penalties.
+“Inverted domestic corporation,” as used in this section, means a foreign incorporated entity which is treated as an inverted domestic
+corporation under 6 U.S.C. 395(b), i.e., a corporation that used to be incorporated in the United States, or used to be a partnership in the
+United States, but now is incorporated in a foreign country, or is a subsidiary whose parent corporation is incorporated in a foreign country,
+that meets the criteria specified in 6 U.S.C. 395(b), applied in accordance with the rules and definitions of 6 U.S.C. 395(c). An inverted
+domestic corporation as herein defined does not meet the definition of an inverted domestic corporation as defined by the Internal Revenue Code
+at 26 U.S.C. 7874.
+“Manufactured end product” means any end product in Federal Supply Classes (FSC) 1000-9999, except—
+      (1) FSC 5510, Lumber and Related Basic Wood Materials;
+      (2) Federal Supply Group (FSG) 87, Agricultural Supplies;
+      (3) FSG 88, Live Animals;
+      (4) FSG 89, Food and Related Consumables;
+      (5) FSC 9410, Crude Grades of Plant Materials;
+      (6) FSC 9430, Miscellaneous Crude Animal Products, Inedible;
+      (7) FSC 9440, Miscellaneous Crude Agricultural and Forestry Products;
+      (8) FSC 9610, Ores;
+      (9) FSC 9620, Minerals, Natural and Synthetic; and
+      (10) FSC 9630, Additive Metal Materials.
+“Place of manufacture” means the place where an end product is assembled out of components, or otherwise made or processed from raw materials
+into the finished product that is to be provided to the Government. If a product is disassembled and reassembled, the place of reassembly is not
+the place of manufacture.
+“Restricted business operations” means business operations in Sudan that include power production activities, mineral extraction activities, oil-
+related activities, or the production of military equipment, as those terms are defined in the Sudan Accountability and Divestment Act of 2007
+(Pub. L. 110-174). Restricted business operations do not include business operations that the person (as that term is defined in Section 2 of
+the Sudan Accountability and Divestment Act of 2007) conducting the business can demonstrate—
+      (1) Are conducted under contract directly and exclusively with the regional government of southern Sudan;
+      (2) Are conducted pursuant to specific authorization from the Office of Foreign Assets Control in the Department of the Treasury, or are
+      expressly exempted under Federal law from the requirement to be conducted under such authorization;
+      (3) Consist of providing goods or services to marginalized populations of Sudan;
+      (4) Consist of providing goods or services to an internationally recognized peacekeeping force or humanitarian organization;
+      (5) Consist of providing goods or services that are used only to promote health or education; or
+      (6) Have been voluntarily suspended.
+Sensitive technology—
+      (1) Means hardware, software, telecommunications equipment, or any other technology that is to be used specifically—
+           (i) To restrict the free flow of unbiased information in Iran; or
+           (ii) To disrupt, monitor, or otherwise restrict speech of the people of Iran; and
+      (2) Does not include information or informational materials the export of which the President does not have the authority to regulate or
+      prohibit pursuant to section 203(b)(3) of the International Emergency Economic Powers Act (50 U.S.C. 1702(b)(3)).
+“Service-disabled veteran-owned small business concern”—
+      (1) Means a small business concern—
+      (i) Not less than 51 percent of which is owned by one or more service-disabled veterans or, in the case of any publicly owned business, not
+      less than 51 percent of the stock of which is owned by one or more service-disabled veterans; and
+      (ii) The management and daily business operations of which are controlled by one or more service-disabled veterans or, in the case of a
+      service-disabled veteran with permanent and severe disability, the spouse or permanent caregiver of such veteran.
+      (2) Service-disabled veteran means a veteran, as defined in 38 U.S.C. 101(2), with a disability that is service-connected, as defined in
+38 U.S.C. 101(16).
+“Small business concern” means a concern, including its affiliates, that is independently owned and operated, not dominant in the field of
+operation in which it is bidding on Government contracts, and qualified as a small business under the criteria in 13 CFR Part 121 and size
+standards in this solicitation.
+“Subsidiary” means an entity in which more than 50 percent of the entity is owned—
+   (1) Directly by a parent corporation; or
+   (2) Through another subsidiary of a parent corporation.
+“Veteran-owned small business concern” means a small business concern—
+   (1) Not less than 51 percent of which is owned by one or more veterans(as defined at 38 U.S.C. 101(2)) or, in the case of any publicly owned
+   business, not less than 51 percent of the stock of which is owned by one or more veterans; and
+   (2) The management and daily business operations of which are controlled by one or more veterans.
+“Women-owned business concern” means a concern which is at least 51 percent owned by one or more women; or in the case of any publicly owned
+business, at least 51 percent of the its stock is owned by one or more women; and whose management and daily business operations are controlled
+by one or more women.
+“Women-owned small business concern” means a small business concern --
+   (1) That is at least 51 percent owned by one or more women or, in the case of any publicly owned business, at least 51 percent of the stock of
+   which is owned by one or more women; and
+   (2) Whose management and daily business operations are controlled by one or more women.
+“Women-owned small business (WOSB) concern eligible under the WOSB Program (in accordance with 13 CFR part 127),” means a small business concern
+that is at least 51 percent directly and unconditionally owned by, and the management and daily business operations of which are controlled by,
+one or more women who are citizens of the United States.
+(b)
+   (1) Annual Representations and Certifications. Any changes provided by the offeror in paragraph (b)(2) of this provision do not automatically
+   change the representations and certifications posted on the Online Representations and Certifications Application (ORCA) website.
+   (2) The offeror has completed the annual representations and certifications electronically via the ORCA website accessed through
+   https://www.acquisition.gov . After reviewing the ORCA database information, the offeror verifies by submission of this offer that the
+   representation and certifications currently posted electronically at FAR 52.212-3, Offeror Representations and Certifications—Commercial
+   Items, have been entered or updated in the last 12 months, are current, accurate, complete, and applicable to this solicitation (including the
+   business size standard applicable to the NAICS code referenced for this solicitation), as of the date of this offer and are incorporated in
+   this offer by reference (see FAR 4.1201), except for paragraphs ____________. [Offeror to identify the applicable paragraphs at (c) through
+   (o) of this provision that the offeror has completed for the purposes of this solicitation only, if any. These amended representation(s)
+   and/or certification(s) are also incorporated in this offer and are current, accurate, and complete as of the date of this offer. Any changes
+   provided by the offeror are applicable to this solicitation only, and do not result in an update to the representations and certifications
+   posted electronically on ORCA.]
+(c) Offerors must complete the following representations when the resulting contract is to be performed in the United States or its outlying
+areas. Check all that apply.
+   (1) Small business concern. The offeror represents as part of its offer that it [_] is, [_] is not a small business concern.
+   (2) Veteran-owned small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of
+   this provision.] The offeror represents as part of its offer that it [_] is, [_] is not a veteran-owned small business concern.
+   (3) Service-disabled veteran-owned small business concern. [Complete only if the offeror represented itself as a veteran-owned small business
+   concern in paragraph (c)(2) of this provision.] The offeror represents as part of its offer that it [_] is, [_] is not a service-disabled
+   veteran-owned small business concern.
+   (4) Small disadvantaged business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of
+   this provision.] The offeror represents, for general statistical purposes, that it [_] is, [_] is not, a small disadvantaged business concern
+   as defined in 13 CFR 124.1002.
+   (5) Women-owned small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of
+   this provision.] The offeror represents that it [_] is, [_] is not a women-owned small business concern.
+   Note: Complete paragraphs (c)(8) and (c)(9) only if this solicitation is expected to exceed the simplified acquisition threshold.
+   (6) WOSB concern eligible under the WOSB Program. [Complete only if the offeror represented itself as a women-owned small business concern in
+   paragraph (c)(5) of this provision.] The offeror prepresents that—
+      (i) It [_] is, [_] is not a WOSB concern eligible under the WOSB Program, has provided all the required documents to the WOSB Repository,
+      and no change in circumstances or adverse decisions have been issued that affects its eligibility; and
+      (ii) It [_] is, [_] is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation in paragraph
+      (c)(6)(i) of this provision is accurate for each WOSB concern eligible under the WOSB Program participating in the joint venture. [The
+      offeror shall enter the name or names of the WOSB concern eligible under the WOSB Program and other small businesses that are participating
+      in the joint venture: _________.] Each WOSB concern eligible under the WOSB Program participating in the joint venture shall submit a
+      separate signed copy of the WOSB representation.
+   (7) Economically disadvantaged women-owned small business (EDWOSB) concern. [Complete only if the offeror represented itself as a WOSB concern
+   eligible under the WOSB Program in (c)(6) of this provision.] The offeror represents that—
+      (i) It [_] is, [_] is not an EDWOSB concern, has provided all the required documents to the WOSB Repository, and no change in circumstances
+      or adverse decisions have been issued that affects its eligibility; and
+      (ii) It [_] is, [_] is not a joint venture that complies with the requirements of 13 CFR part 127, and the representation in paragraph
+      (c)(7)(i) of this provision is accurate for each EDWOSB concern participating in the joint venture. [The offeror shall enter the name or
+      names of the EDWOSB concern and other small businesses that are participating in the joint venture: _____________.] Each EDWOSB concern
+      participating in the joint venture shall submit a separate signed copy of the EDWOSB representation.
+   (8) Women-owned business concern (other than small business concern). [Complete only if the offeror is a women-owned business concern and did
+   not represent itself as a small business concern in paragraph (c)(1) of this provision.]. The offeror represents that it [_] is, a women-owned
+   business concern.
+   (9) Tie bid priority for labor surplus area concerns. If this is an invitation for bid, small business offerors may identify the labor surplus
+   areas in which costs to be incurred on account of manufacturing or production (by offeror or first-tier subcontractors) amount to more than 50
+   percent of the contract price:
+                 ___________________________________________
+   (10) [Complete only if the solicitation contains the clause at FAR 52.219-23, Notice of Price Evaluation Adjustment for Small Disadvantaged
+   Business Concerns, or FAR 52.219-25, Small Disadvantaged Business Participation Program—Disadvantaged Status and Reporting, and the offeror
+   desires a benefit based on its disadvantaged status.]
+      (i) General. The offeror represents that either—
+        (A) It [_] is, [_] is not certified by the Small Business Administration as a small disadvantaged business concern and identified, on
+        the date of this representation, as a certified small disadvantaged business concern in the CCR Dynamic Small Business Search database
+        maintained by the Small Business Administration , and that no material change in disadvantaged ownership and control has occurred since
+        its certification, and, where the concern is owned by one or more individuals claiming disadvantaged status, the net worth of each
+        individual upon whom the certification is based does not exceed $750,000 after taking into account the applicable exclusions set forth
+        at 13 CFR 124.104(c)(2); or
+        (B) It [_] has, [_] has not submitted a completed application to the Small Business Administration or a Private Certifier to be
+        certified as a small disadvantaged business concern in accordance with 13 CFR 124, Subpart B, and a decision on that application is
+        pending, and that no material change in disadvantaged ownership and control has occurred since its application was submitted.
+      (ii) Joint Ventures under the Price Evaluation Adjustment for Small Disadvantaged Business Concerns. The offeror represents, as part of its
+      offer, that it is a joint venture that complies with the requirements in 13 CFR 124.1002(f) and that the representation in paragraph
+      (c)(10)(i) of this provision is accurate for the small disadvantaged business concern that is participating in the joint venture. [The
+      offeror shall enter the name of the small disadvantaged business concern that is participating in the joint venture: ________________.]
+   (11) HUBZone small business concern. [Complete only if the offeror represented itself as a small business concern in paragraph (c)(1) of this
+   provision.] The offeror represents, as part of its offer, that--
+      (i) It [_] is, [_] is not a HUBZone small business concern listed, on the date of this representation, on the List of Qualified HUBZone
+      Small Business Concerns maintained by the Small Business Administration, and no material changes in ownership and control, principal
+      office, or HUBZone employee percentage have occurred since it was certified in accordance with 13 CFR part 126; and
+      (ii) It [_] is, [_] is not a HUBZone joint venture that complies with the requirements of 13 CFR part 126, and the representation in
+      paragraph (c)(11)(i) of this provision is accurate for each HUBZone small business concern participating in the HUBZone joint venture. [The
+      offeror shall enter the names of each of the HUBZone small business concerns participating in the HUBZone joint venture: __________.] Each
+      HUBZone small business concern participating in the HUBZone joint venture shall submit a separate signed copy of the HUBZone
+      representation.
+(d) Representations required to implement provisions of Executive Order 11246 --
+   (1) Previous contracts and compliance. The offeror represents that --
+      (i) It [_] has, [_] has not, participated in a previous contract or subcontract subject to the Equal Opportunity clause of this
+      solicitation; and
+      (ii) It [_] has, [_] has not, filed all required compliance reports.
+   (2) Affirmative Action Compliance. The offeror represents that --
+      (i) It [_] has developed and has on file, [_] has not developed and does not have on file, at each establishment, affirmative action
+      programs required by rules and regulations of the Secretary of Labor (41 CFR parts 60-1 and 60-2), or
+      (ii) It [_] has not previously had contracts subject to the written affirmative action programs requirement of the rules  and regulations
+      of the Secretary of Labor.
+(e) Certification Regarding Payments to Influence Federal Transactions (31 U.S.C. 1352). (Applies only if the contract is expected to exceed
+$150,000.) By submission of its offer, the offeror certifies to the best of its knowledge and belief that no Federal appropriated funds have
+been paid or will be paid to any person for influencing or attempting to influence an officer or employee of any agency, a Member of Congress,
+an officer or employee of Congress or an employee of a Member of Congress on his or her behalf in connection with the award of any resultant
+contract. If any registrants under the Lobbying Disclosure Act of 1995 have made a lobbying contact on behalf of the offeror with respect to
+this contract, the offeror shall complete and submit, with its offer, OMB Standard Form LLL, Disclosure of Lobbying Activities, to provide the
+name of the registrants. The offeror need not report regularly employed officers or employees of the offeror to whom payments of reasonable
+compensation were made.
+(f) Buy American Act Certificate. (Applies only if the clause at Federal Acquisition Regulation (FAR) 52.225-1, Buy American Act – Supplies, is
+included in this solicitation.)
+   (1) The offeror certifies that each end product, except those listed in paragraph (f)(2) of this provision, is a domestic end product and that
+   for other than COTS items, the offeror has considered components of unknown origin to have been mined, produced, or manufactured outside the
+   United States. The offeror shall list as foreign end products those end products manufactured in the United States that do not qualify as
+   domestic end products, i.e., an end product that is not a COTS item and does not meet the component test in paragraph (2) of the definition of
+   “domestic end product.” The terms “commercially available off-the-shelf (COTS) item,” “component,” “domestic end product,” “end product,”
+   “foreign end product,” and “United States” are defined in the clause of this solicitation entitled “Buy American Act—Supplies.”
+   (2) Foreign End Products:
+|LINE ITEM NO.                                                   |COUNTRY OF ORIGIN                                               |
+|                                                                |                                                                |
+|                                                                |                                                                |
+|                                                                |                                                                |
+
+
+[List as necessary]
+   (3) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25.
+(g)
+   (1) Buy American Act -- Free Trade Agreements -- Israeli Trade Act Certificate. (Applies only if the clause at FAR 52.225-3, Buy American Act
+   -- Free Trade Agreements -- Israeli Trade Act, is included in this solicitation.)
+      (i) The offeror certifies that each end product, except those listed in paragraph (g)(1)(ii) or (g)(1)(iii) of this provision, is a
+      domestic end product and that for other than COTS items, the offeror has considered components of unknown origin to have been mined,
+      produced, or manufactured outside the United States. The terms “Bahrainian, Moroccan, Omani, Panamanian, or Peruvian end product,”
+      “commercially available off-the-shelf (COTS) item,” “component,” “domestic end product,” “end product,” “foreign end product,” “Free Trade
+      Agreement country,” “Free Trade Agreement country end product,” “Israeli end product,” and “United States” are defined in the clause of
+      this solicitation entitled “Buy American Act--Free Trade Agreements--Israeli Trade Act.”
+      (ii) The offeror certifies that the following supplies are Free Trade Agreement country end products (other than Bahrainian, Moroccan,
+      Omani, Panamanina, or Peruvian end products) or Israeli end products as defined in the clause of this solicitation entitled “Buy American
+      Act—Free Trade Agreements—Israeli Trade Act”:
+Free Trade Agreement Country End Products (Other than Bahrainian, Moroccan, Omani, Panamanian, or Peruvian End Products) or Israeli End
+Products:
+|LINE ITEM NO.                                                   |COUNTRY OF ORIGIN                                               |
+|                                                                |                                                                |
+|                                                                |                                                                |
+|                                                                |                                                                |
+
+
+[List as necessary]
+      (iii) The offeror shall list those supplies that are foreign end products (other than those listed in paragraph (g)(1)(ii) or this
+      provision) as defined in the clause of this solicitation entitled “Buy American Act—Free Trade Agreements—Israeli Trade Act.” The offeror
+      shall list as other foreign end products those end products manufactured in the United States that do not qualify as domestic end products,
+      i.e., an end product that is not a COTS item and does not meet the component test in paragraph (2) of the definition of “domestic end
+      product.”
+Other Foreign End Products:
+|LINE ITEM NO.                                                   |COUNTRY OF ORIGIN                                               |
+|                                                                |                                                                |
+|                                                                |                                                                |
+|                                                                |                                                                |
+
+
+[List as necessary]
+      (iv) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25.
+   (2) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate, Alternate I. If Alternate I to the clause at FAR 52.225-3 is
+   included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision:
+      (g)(1)(ii) The offeror certifies that the following supplies are Canadian end products as defined in the clause of this solicitation
+      entitled “Buy American Act—Free Trade Agreements—Israeli Trade Act”:
+      Canadian End Products:
+                                                                  Line Item No.:
+                                                   ___________________________________________
+                                                               [List as necessary]
+   (3) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate, Alternate II. If Alternate II to the clause at FAR 52.225-3 is
+   included in this solicitation, substitute the following paragraph (g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision:
+      (g)(1)(ii) The offeror certifies that the following supplies are Canadian end products or Israeli end products as defined in the clause of
+      this solicitation entitled ``Buy American Act--Free Trade Agreements--Israeli Trade Act'':
+Canadian or Israeli End Products:
+|Line Item No.:                                                    |Country of Origin:                                                |
+|                                                                  |                                                                  |
+|                                                                  |                                                                  |
+|                                                                  |                                                                  |
+
+
+[List as necessary]
+   (4) Buy American Act—Free Trade Agreements—Israeli Trade Act Certificate, Alternate III. If Alternate III to the clause at 52.225-3 is
+   included in this solicitation, substitute the following paragraph(g)(1)(ii) for paragraph (g)(1)(ii) of the basic provision:
+      (g)(1)(ii) The offeror certifies that the following supplies are Free Trade Agreement country end products (other than Bahrainian, Korean,
+      Moroccan, Omani, Panamanian, or Peruvian end products) or Israeli end products as defined in the clause of this solicitation entitled “Buy
+      American Act—Free Trade Agreements—Israeli Trade Act”:
+Free Trade Agreement Country End Products (Other than Bahrainian, Korean, Moroccan, Omani, Panamanian, or Peruvian End Products) or Israeli End
+Products:
+|Line Item No.:                                                    |Country of Origin:                                                |
+|                                                                  |                                                                  |
+|                                                                  |                                                                  |
+|                                                                  |                                                                  |
+
+
+[List as necessary]
+   (5) Trade Agreements Certificate. (Applies only if the clause at FAR 52.225-5, Trade Agreements, is included in this solicitation.)
+      (i) The offeror certifies that each end product, except those listed in paragraph (g)(5)(ii) of this provision, is a U.S.-made or
+      designated country end product as defined in the clause of this solicitation entitled “Trade Agreements.”
+      (ii) The offeror shall list as other end products those end products that are not U.S.-made or designated country end products.
+Other End Products
+|Line Item No.:                                                    |Country of Origin:                                                |
+|                                                                  |                                                                  |
+|                                                                  |                                                                  |
+|                                                                  |                                                                  |
+
+
+[List as necessary]
+      (iii) The Government will evaluate offers in accordance with the policies and procedures of FAR Part 25. For line items covered by the WTO
+      GPA, the Government will evaluate offers of U.S.-made or designated country end products without regard to the restrictions of the Buy
+      American Act. The Government will consider for award only offers of U.S.-made or designated country end products unless the Contracting
+      Officer determines that there are no offers for such products or that the offers for such products are insufficient to fulfill the
+      requirements of the solicitation.
+(h) Certification Regarding Responsibility Matters (Executive Order 12689). (Applies only if the contract value is expected to exceed the
+simplified acquisition threshold.) The offeror certifies, to the best of its knowledge and belief, that the offeror and/or any of its principals-
+-
+   (1) [_] Are, [_] are not presently debarred, suspended, proposed for debarment, or declared ineligible for the award of contracts by any
+   Federal agency;
+   (2) [_] Have, [_] have not, within a three-year period preceding this offer, been convicted of or had a civil judgment rendered against them
+   for: commission of fraud or a criminal offense in connection with obtaining, attempting to obtain, or performing a Federal, state or local
+   government contract or subcontract; violation of Federal or state antitrust statutes relating to the submission of offers; or commission of
+   embezzlement, theft, forgery, bribery, falsification or destruction of records, making false statements, tax evasion, violating Federal
+   criminal tax laws, or receiving stolen property; and
+   (3) [_] Are, [_] are not presently indicted for, or otherwise criminally or civilly charged by a Government entity with, commission of any of
+   these offenses enumerated in paragraph (h)(2) of this clause; and
+   (4) [_] Have, [_] have not, within a three-year period preceding this offer, been notified of any delinquent Federal taxes in an amount that
+   exceeds $3,000 for which the liability remains unsatisfied.
+      (i) Taxes are considered delinquent if both of the following criteria apply:
+        (A) The tax liability is finally determined. The liability is finally determined if it has been assessed. A liability is not finally
+        determined if there is a pending administrative or judicial challenge. In the case of a judicial challenge to the liability, the
+        liability is not finally determined until all judicial appeal rights have been exhausted.
+        (B) The taxpayer is delinquent in making payment. A taxpayer is delinquent if the taxpayer has failed to pay the tax liability when full
+        payment was due and required. A taxpayer is not delinquent in cases where enforced collection action is precluded.
+      (ii) Examples.
+        (A) The taxpayer has received a statutory notice of deficiency, under I.R.C. §6212, which entitles the taxpayer to seek Tax Court review
+        of a proposed tax deficiency. This is not a delinquent tax because it is not a final tax liability. Should the taxpayer seek Tax Court
+        review, this will not be a final tax liability until the taxpayer has exercised all judicial appear rights.
+        (B) The IRS has filed a notice of Federal tax lien with respect to an assessed tax liability, and the taxpayer has been issued a notice
+        under I.R.C. §6320 entitling the taxpayer to request a hearing with the IRS Office of Appeals Contesting the lien filing, and to further
+        appeal to the Tax Court if the IRS determines to sustain the lien filing. In the course of the hearing, the taxpayer is entitled to
+        contest the underlying tax liability because the taxpayer has had no prior opportunity to contest the liability. This is not a
+        delinquent tax because it is not a final tax liability. Should the taxpayer seek tax court review, this will not be a final tax
+        liability until the taxpayer has exercised all judicial appeal rights.
+        (C) The taxpayer has entered into an installment agreement pursuant to I.R.C. §6159. The taxpayer is making timely payments and is in
+        full compliance with the agreement terms. The taxpayer is not delinquent because the taxpayer is not currently required to make full
+        payment.
+        (D) The taxpayer has filed for bankruptcy protection. The taxpayer is not delinquent because enforced collection action is stayed under
+        11 U.S.C. §362 (the Bankruptcy Code).
+(i) Certification Regarding Knowledge of Child Labor for Listed End Products (Executive Order 13126). [The Contracting Officer must list in
+paragraph (i)(1) any end products being acquired under this solicitation that are included in the List of Products Requiring Contractor
+Certification as to Forced or Indentured Child Labor, unless excluded at 22.1503(b).]
+   (1) Listed End Product
+|Listed End Product:                                               |Listed Countries of Origin:                                       |
+|                                                                  |                                                                  |
+|                                                                  |                                                                  |
+|                                                                  |                                                                  |
+
+
+   (2) Certification. [If the Contracting Officer has identified end products and countries of origin in paragraph (i)(1) of this provision, then
+   the offeror must certify to either (i)(2)(i) or (i)(2)(ii) by checking the appropriate block.]
+      [_] (i) The offeror will not supply any end product listed in paragraph (i)(1) of this provision that was mined, produced, or manufactured
+      in the corresponding country as listed for that product.
+      [_] (ii) The offeror may supply an end product listed in paragraph (i)(1) of this provision that was mined, produced, or manufactured in
+      the corresponding country as listed for that product. The offeror certifies that is has made a good faith effort to determine whether
+      forced or indentured child labor was used to mine, produce, or manufacture any such end product furnished under this contract. On the basis
+      of those efforts, the offeror certifies that it is not aware of any such use of child labor.
+(j) Place of manufacture. (Does not apply unless the solicitation is predominantly for the acquisition of manufactured end products.) For
+statistical purposes only, the offeror shall indicate whether the place of manufacture of the end products it expects to provide in response to
+this solicitation is predominantly—
+   (1) [_] In the United States (Check this box if the total anticipated price of offered end products manufactured in the United States exceeds
+   the total anticipated price of offered end products manufactured outside the United States); or
+   (2) [_] Outside the United States.
+(k) Certificates regarding exemptions from the application of the Service Contract Act. (Certification by the offeror as to its compliance with
+respect to the contract also constitutes its certification as to compliance by its subcontractor if it subcontracts out the exempt services.)
+[The contracting officer is to check a box to indicate if paragraph (k)(1) or (k)(2) applies.]
+   (1) [_] Maintenance, calibration, or repair of certain equipment as described in FAR 22.1003-4(c)(1). The offeror [_] does [_] does not
+   certify that—
+      (i) The items of equipment to be serviced under this contract are used regularly for other than Governmental purposes and are sold or
+      traded by the offeror (or subcontractor in the case of an exempt subcontract) in substantial quantities to the general public in the course
+      of normal business operations;
+      (ii) The services will be furnished at prices which are, or are based on, established catalog or market prices (see FAR 22.1003-
+      4(c)(2)(ii)) for the maintenance, calibration, or repair of such equipment; and
+      (iii) The compensation (wage and fringe benefits) plan for all service employees performing work under the contract will be the same as
+      that used for these employees and equivalent employees servicing the same equipment of commercial customers.
+   (2) [_] Certain services as described in FAR 22.1003-4(d)(1). The offeror [_] does [_] does not certify that—
+      (i) The services under the contract are offered and sold regularly to non-Governmental customers, and are provided by the offeror (or
+      subcontractor in the case of an exempt subcontract) to the general public in substantial quantities in the course of normal business
+      operations;
+      (ii) The contract services will be furnished at prices that are, or are based on, established catalog or market prices (see FAR 22.1003-
+      4(d)(2)(iii));
+      (iii) Each service employee who will perform the services under the contract will spend only a small portion of his or her time (a monthly
+      average of less than 20 percent of the available hours on an annualized basis, or less than 20 percent of available hours during the
+      contract period if the contract period is less than a month) servicing the Government contract; and
+      (iv) The compensation (wage and fringe benefits) plan for all service employees performing work under the contract is the same as that used
+      for these employees and equivalent employees servicing commercial customers.
+   (3) If paragraph (k)(1) or (k)(2) of this clause applies—
+      (i) If the offeror does not certify to the conditions in paragraph (k)(1) or (k)(2) and the Contracting Officer did not attach a Service
+      Contract Act wage determination to the solicitation, the offeror shall notify the Contracting Officer as soon as possible; and
+      (ii) The Contracting Officer may not make an award to the offeror if the offeror fails to execute the certification in paragraph (k)(1) or
+      (k)(2) of this clause or to contact the Contracting Officer as required in paragraph (k)(3)(i) of this clause.
+(l) Taxpayer identification number (TIN) (26 U.S.C. 6109, 31 U.S.C. 7701). (Not applicable if the offeror is required to provide this
+information to a central contractor registration database to be eligible for award.)
+   (1) All offerors must submit the information required in paragraphs (l)(3) through (l)(5) of this provision to comply with debt collection
+   requirements of 31 U.S.C. 7701(c) and 3325(d), reporting requirements of 26 U.S.C. 6041, 6041A, and 6050M, and implementing regulations issued
+   by the Internal Revenue Service (IRS).
+   (2) The TIN may be used by the government to collect and report on any delinquent amounts arising out of the offeror’s relationship with the
+   Government (31 U.S.C. 7701(c)(3)). If the resulting contract is subject to the payment reporting requirements described in FAR 4.904, the TIN
+   provided hereunder may be matched with IRS records to verify the accuracy of the offeror’s TIN.]
+   (3) Taxpayer Identification Number (TIN).
+      [_] TIN:_____________________.
+      [_] TIN has been applied for.
+      [_] TIN is not required because:
+      [_] Offeror is a nonresident alien, foreign corporation, or foreign partnership that does not have income effectively connected with the
+      conduct of a trade or business in the United States and does not have an office or place of business or a fiscal paying agent in the United
+      States;
+      [_] Offeror is an agency or instrumentality of a foreign government;
+      [_] Offeror is an agency or instrumentality of the Federal Government;
+   (4) Type of organization.
+      [_] Sole proprietorship;
+      [_] Partnership;
+      [_] Corporate entity (not tax-exempt);
+      [_] Corporate entity (tax-exempt);
+      [_] Government entity (Federal, State, or local);
+      [_] Foreign government;
+      [_] International organization per 26 CFR 1.6049-4;
+      [_] Other ____________________.
+   (5) Common parent.
+      [_] Offeror is not owned or controlled by a common parent:
+      [_] Name and TIN of common parent:
+           Name ____________________________________
+           TIN ______________________________________
+(m) Restricted business operations in Sudan. By submission of its offer, the offeror certifies that the offeror does not conduct any restricted
+business operations in Sudan.
+(n) Prohibition on Contracting with Inverted Domestic Corporations—
+   (1) Relation to Internal Revenue Code. An inverted domestic corporation as herein defined does not meet the definition of an inverted domestic
+   corporation as defined by the Internal Revenue Code 25 U.S.C. 7874.
+   (2) Representation. By submission of its offer, the offeror represents that—
+      (i) It is not an inverted domestic corporation; and
+      (ii) It is not a subsidiary of an inverted domestic corporation.
+(o) Prohibition on contracting with entities engaging in certain activities or transactions relating to Iran.
+   (1) The offeror shall email questions concerning sensitive technology to the Department of State at CISADA106@state.gov.
+   (2) Representation and Certification. Unless a waiver is granted or an exception applies as provided in paragraph (o)(3) of this provision, by
+   submission of its offer, the offeror—
+      (i) Represents, to the best of its knowledge and belief, that the offeror does not export any sensitive technology to the government of
+      Iran or any entities or individuals owned or controlled by, or acting on behalf or at the direction of, the government of Iran;
+      (ii) Certifies that the offeror, or any person owned or controlled by the offeror, does not engage in any activities for which sanctions
+      may be imposed under section 5 of the Iran Sanctions Act; and
+      (iii) Certifies that the offeror, and any person owned or controlled by the offeror, does not knowingly engage in any transaction that
+      exceeds $3,000 with Iran’s Revolutionary Guard Corps or any of its officials, agents, or affiliates, the property and interests in property
+      of which are blocked pursuant to the International Emergency Economic Powers Act (50(U.S.C. 1701 et seq.) (see OFAC’s Specially Designated
+      Nationals and Blocked Persons List at http://www.treasury.gov/ofac/downloads/t11sdn.pdf ).
+   (3) The representation and certification requirements of paragraph (o)(2) of this provision do not apply if—
+      (i) This solicitation includes a trade agreements certification (e.g., 52.212-3(g) or a comparable agency provision); and
+      (ii) The offeror has certified that all the offered products to be supplied are designated country end products.
+Alternate I (Apr 2011). As prescribed in 12.301(b)(2), add the following paragraph (c)(12) to the basic provision:
+   (12) (Complete if the offeror has represented itself as disadvantaged in paragraph (c)(4) or (c)(10) of this provision.)
+   [The offeror shall check the category in which its ownership falls]:
+      ___ Black American.
+      ___ Hispanic American.
+      ___ Native American (American Indians, Eskimos, Aleuts, or Native Hawaiians).
+      ___ Asian-Pacific American (persons with origins from Burma, Thailand, Malaysia, Indonesia, Singapore, Brunei, Japan, China, Taiwan, Laos,
+      Cambodia (Kampuchea), Vietnam, Korea, The Philippines, U.S. Trust Territory or the Pacific Islands (Republic of Palau), Republic of the
+      Marshall Islands, Federated States of Micronesia, the Commonwealth of the Northern Mariana Islands, Guam, Samoa, Macao, Hong Kong, Fiji,
+      Tonga, Kiribati, Tuvalu, or Nauru).
+      ___ Subcontinent Asian (Asian-Indian) American (persons with origins from India, Pakistan, Bangladesh, Sri Lanka, Bhutan, the Maldives
+      Islands, or Nepal).
+      ___ Individual/concern, other than one of the preceding.
+Alternate II (Jan2012). As prescribed in 12.301(b)(2), add the following paragraph (c)(10)(iii) to the basic provision:
+      (iii) Address. The offeror represents that its address [_]is, [_] is not in a region for which a small disadvantaged business procurement
+      mechanism is authorized and its address has not changed since its certification as a small disadvantaged business concern or submission of
+      its application for certification. The list of authorized small disadvantaged business procurement mechanisms and regions is posted at
+      http://www.acquisition.gov/References/sdbadjustments.htm. The offeror shall use the list in effect on the date of this solicitation.
+      “Address,” as used in this provision, means the address of the offeror as listed on the Small Business Administration’s register of small
+      disadvantaged business concerns or the address on the completed application that the concern has submitted to the Small Business
+      Administration or a Private Certifier in accordance with 13 CFR part 124, subpart B. For joint ventures, “address” refers to the address of
+      the small disadvantaged business concern that is participating in the joint venture.
+
+
+
+AGAR 452.209-70   Representation by Corporations Regarding an Unpaid Delinquent Tax Liability or a Felony Conviction.  (DEVIATION 2012-01)
+Alternate 1 (Feb 2012).
+ (a)  Awards made under this solicitation are subject to the provisions contained in the Consolidated Appropriations Act. 2012 (P.L. No. 112-
+ 74). Division , Sections 433 and 434 regarding corporate felony convictions and corporate federal tax delinquencies.  To comply with these
+ provisions, all offerors must complete paragraph (1) of this representation, and all
+ corporate offerors also must complete paragraphs (2) and (3) of this representation.
+
+ (b)  The Offeror represents that-
+    (1) The Offeror is [   ],      is not [   ] (check one)   an entity that has filed articles of incorporation in one of the fifty states, the
+      District of Columbia or the various territories of the United States including American Samoa, Federated States of Micronesia, Guam,
+      Midway Islands, Northern Mariana Islands, Puerto Rico, Republic of Palau, Republic of the Marshall Islands, U.S. Virgin Islands. (Note
+      that this includes both for-profit and
+       non-profit organizations.)
+
+    If the Offeror checked "is' above, the Offeror must complete paragraphs (2) and (3) of the  representation.   If  Offeror  checked  "is  not"
+    above, Offeror may leave the remainder of the representation blank.
+
+    (2) (i)  The Offeror has [   ].  has not [  ] (check one) been convicted of a felony criminal violation under Federal or State law in the 24
+      months preceding the date of offer.
+      (ii)  Ofteror has [   ].   has not [   ] (check one)   had any officer or agent of Offeror convicted of a felony  criminal  violation  for
+      actions taken on behalf of Offeror under Federal law in the 24 months preceding the date of offer.
+    (3) The Offeror does [   ].   does not [  ] (check one)  have any unpaid Federal tax liability that has been assessed, for which all judicial
+      and administrative remedies have been exhausted or have lapsed, and  that is not being paid in a timely manner pursuant to an agreement
+      with the authority responsible for collecting the tax liability.
+
+
+
+AGAR 452.209 – 71 Assurance Regarding Felony Conviction Or Tax Delinquent Status For Corporate Applicants Alternate 1 (Feb 2012).
+(a) This award is subject to the provisions contained in the Consolidated Appropriations Act, 2012 (P.L. No. 112-74), Division E, Sections 433
+and 434 regarding corporate felony convictions and corporate federal tax delinquencies. Accordingly, by accepting this award the contractor
+acknowledges that it –
+(1) does not have a tax delinquency, meaning that it is not subject to any unpaid Federal tax liability that has been assessed, for which all
+judicial and administrative remedies have been exhausted or have lapsed, and that is not being paid in a timely manner pursuant to an agreement
+with the authority responsible for collecting the tax liability, and
+(2) has not been convicted (or had an officer or agent acting on its behalf convicted) of a felony criminal violation under any Federal law
+within 24 months preceding the award, unless a suspending and debarring official of the United States Department of Agriculture has considered
+suspension or debarment of the awardee, or such officer or agent, based on these convictions and/or tax delinquencies and determined that
+suspension or debarment is not necessary to protect the interests of the Government.
+
+(b) If the awardee fails to comply with these provisions, the Forest Service may terminate this contract for default and may recover any funds
+the awardee has received in violation of sections 433 or 434.
+
+
+
+
+
+SECTION L – INSTRUCTIONS, CONDITIONS, AND NOTICES TO BIDDERS
+
+
+   1. Offerors are required to present two (2) copies of their proposal.  There is no required format for the proposal documents.
+   2. The current contractor is USeDirect, 168 Main Street, Ste 2, Huntington, NY 11743.  USeDirect has performed these tasks since 2009 under
+      contract AG-4870-C-08-0007.
+   3. The Government anticipates notifications to successful and unsuccessful offerors being submitted on or before 4 October 2013.
+   4. The Government anticipates award on or before 7 October 2013.
+   5. The Contractor shall be paid monthly.
+
+
+
+
+SECTION M – EVALUATION FACTORS FOR AWARD
+
+
+
+
+
+52.212-2 Evaluation – Commercial Items (JAN 1999)
+
+(a) The Government will award a contract resulting from this solicitation to the responsible offeror whose offer conforming to the solicitation
+will be most advantageous to the Government, price and other factors considered. The following factors shall be used to evaluate offers:
+  1. Past Performance.  The proposal shall reflect the prime contractor’s past experience on similar projects completed over the past five (5)
+     years.  Experience is relevant when the offeror has been confronted with the kinds of work, challenges, and volume that will be present
+     under the contract contemplated.  The offeror will be assessed by the relevant experience on the basis of its breadth and its depth.
+  2. Technical approach.  The proposals shall reflect the offeror’s understanding of the project and its potential problems, the offeror’s
+     ability to meet the requirements specified in the PWS, and the offeror’s proposed solutions for the requirements specified in the PWS.  The
+     approach/solution should describe the resources to be used and the milestones/schedule for the overall project.  Technical approach shall
+     not exceed thirty (30) pages.  Past performance and staffing is not considered part of the thirty page limit.
+  3. Price.  The price factor will be rated approximately equal to all other factors combined.  The price proposals will be evaluated against the
+     Government Price Estimate, as well as other price proposals received. The estimate will be used as a benchmark for which the price
+     evaluation will be conducted. The analysis of the variance between the Government's estimate and each offer and variance among the offerors
+     will indicate whether further review is necessary in order to determine if the price is realistic. Additional review may be performed by
+     both the technical board and the Contracting Officer.
+
+Award will be made to the offeror(s) whose proposed technical/cost relationship is the most advantageous to the Government. Evaluation factors
+other than price, when combined, are approximately equal to price in the award decision. Evaluation factors other than price are approximately
+equal to each other.
+(b) Options. The Government will evaluate offers for award purposes by adding the total price for all options to the total price for the basic
+requirement. The Government may determine that an offer is unacceptable if the option prices are significantly unbalanced. Evaluation of options
+shall not obligate the Government to exercise the option(s).
+(c) A written notice of award or acceptance of an offer, mailed or otherwise furnished to the successful offeror within the time for acceptance
+specified in the offer, shall result in a binding contract without further action by either party. Before the offer’s specified expiration time,
+the Government may accept an offer (or part of an offer), whether or not there are negotiations after its receipt, unless a written notice of
+withdrawal is received before award.
+
+WD 05-2187 (Rev.-13) was first posted on www.wdol.gov on 06/25/2013
+************************************************************************************
+REGISTER OF WAGE DETERMINATIONS UNDER  |        U.S. DEPARTMENT OF LABOR
+       THE SERVICE CONTRACT ACT        |  EMPLOYMENT STANDARDS ADMINISTRATION
+By direction of the Secretary of Labor |         WAGE AND HOUR DIVISION
+                                       |         WASHINGTON D.C.  20210
+                                       |
+                                       |
+                                       |
+                                       | Wage Determination No.: 2005-2187
+Diane C. Koplewski       Division of   |           Revision No.: 13
+Director            Wage Determinations|       Date Of Revision: 06/19/2013
+_______________________________________|____________________________________________
+States: Indiana, Kentucky, Tennessee
+
+Area: Indiana Counties of Perry, Posey, Spencer, Vanderburgh, Warrick
+Kentucky Counties of Butler, Caldwell, Christian, Crittenden, Daviess, Hancock,
+ Henderson, Hopkins, Livingston, Logan, Lyon, McLean, Muhlenberg, Ohio, Todd,
+Trigg, Union, Warren, Webster
+Tennessee Counties of Montgomery, Stewart
+____________________________________________________________________________________
+          **Fringe Benefits Required Follow the Occupational Listing**
+OCCUPATION CODE - TITLE                                  FOOTNOTE               RATE
+01000 - Administrative Support And Clerical Occupations
+  01011 - Accounting Clerk I                                                   12.35
+  01012 - Accounting Clerk II                                                  13.86
+  01013 - Accounting Clerk III                                                 15.50
+  01020 - Administrative Assistant                                             15.65
+  01040 - Court Reporter                                                       13.03
+  01051 - Data Entry Operator I                                                11.55
+  01052 - Data Entry Operator II                                               12.60
+  01060 - Dispatcher, Motor Vehicle                                            15.64
+  01070 - Document Preparation Clerk                                           11.00
+  01090 - Duplicating Machine Operator                                         11.00
+  01111 - General Clerk I                                                      10.83
+  01112 - General Clerk II                                                     11.82
+  01113 - General Clerk III                                                    13.26
+  01120 - Housing Referral Assistant                                           14.53
+  01141 - Messenger Courier                                                     9.22
+  01191 - Order Clerk I                                                        11.10
+  01192 - Order Clerk II                                                       12.33
+  01261 - Personnel Assistant (Employment) I                                   14.43
+  01262 - Personnel Assistant (Employment) II                                  16.14
+  01263 - Personnel Assistant (Employment) III                                 18.00
+  01270 - Production Control Clerk                                             19.18
+  01280 - Receptionist                                                         10.38
+  01290 - Rental Clerk                                                          9.95
+  01300 - Scheduler, Maintenance                                               11.65
+  01311 - Secretary I                                                          11.65
+  01312 - Secretary II                                                         13.03
+  01313 - Secretary III                                                        14.53
+  01320 - Service Order Dispatcher                                             14.35
+  01410 - Supply Technician                                                    16.15
+  01420 - Survey Worker                                                        11.93
+  01531 - Travel Clerk I                                                       12.44
+  01532 - Travel Clerk II                                                      13.21
+  01533 - Travel Clerk III                                                     13.92
+  01611 - Word Processor I                                                     11.98
+  01612 - Word Processor II                                                    13.44
+  01613 - Word Processor III                                                   15.03
+05000 - Automotive Service Occupations
+  05005 - Automobile Body Repairer, Fiberglass                                 17.91
+  05010 - Automotive  Electrician                                              17.11
+  05040 - Automotive Glass Installer                                           16.28
+  05070 - Automotive Worker                                                    16.28
+  05110 - Mobile Equipment Servicer                                            14.59
+  05130 - Motor Equipment Metal Mechanic                                       17.91
+  05160 - Motor Equipment Metal Worker                                         16.28
+  05190 - Motor Vehicle Mechanic                                               17.91
+  05220 - Motor Vehicle Mechanic Helper                                        13.73
+  05250 - Motor Vehicle Upholstery Worker                                      15.45
+  05280 - Motor Vehicle Wrecker                                                16.28
+  05310 - Painter, Automotive                                                  17.11
+  05340 - Radiator Repair Specialist                                           16.28
+  05370 - Tire Repairer                                                        12.86
+  05400 - Transmission Repair Specialist                                       17.19
+07000 - Food Preparation And Service Occupations
+  07010 - Baker                                                                13.37
+  07041 - Cook I                                                               10.90
+  07042 - Cook II                                                              12.15
+  07070 - Dishwasher                                                            8.49
+  07130 - Food Service Worker                                                   8.48
+  07210 - Meat Cutter                                                          13.12
+  07260 - Waiter/Waitress                                                       8.97
+09000 - Furniture Maintenance And Repair Occupations
+  09010 - Electrostatic Spray Painter                                          17.17
+  09040 - Furniture Handler                                                    11.82
+  09080 - Furniture Refinisher                                                 17.17
+  09090 - Furniture Refinisher Helper                                          13.82
+  09110 - Furniture Repairer, Minor                                            15.50
+  09130 - Upholsterer                                                          17.17
+11000 - General Services And Support Occupations
+  11030 - Cleaner, Vehicles                                                     8.73
+  11060 - Elevator Operator                                                     9.93
+  11090 - Gardener                                                             12.49
+  11122 - Housekeeping Aide                                                     9.38
+  11150 - Janitor                                                               9.95
+  11210 - Laborer, Grounds Maintenance                                          9.93
+  11240 - Maid or Houseman                                                      7.90
+  11260 - Pruner                                                                9.42
+  11270 - Tractor Operator                                                     11.68
+  11330 - Trail Maintenance Worker                                              9.93
+  11360 - Window Cleaner                                                       10.70
+12000 - Health Occupations
+  12010 - Ambulance Driver                                                     13.86
+  12011 - Breath Alcohol Technician                                            15.41
+  12012 - Certified Occupational Therapist Assistant                           21.53
+  12015 - Certified Physical Therapist Assistant                               22.48
+  12020 - Dental Assistant                                                     14.05
+  12025 - Dental Hygienist                                                     25.70
+  12030 - EKG Technician                                                       20.58
+  12035 - Electroneurodiagnostic Technologist                                  20.58
+  12040 - Emergency Medical Technician                                         13.68
+  12071 - Licensed Practical Nurse I                                           14.93
+  12072 - Licensed Practical Nurse II                                          16.69
+  12073 - Licensed Practical Nurse III                                         18.61
+  12100 - Medical Assistant                                                    11.37
+  12130 - Medical Laboratory Technician                                        16.90
+  12160 - Medical Record Clerk                                                 12.26
+  12190 - Medical Record Technician                                            13.71
+  12195 - Medical Transcriptionist                                             13.40
+  12210 - Nuclear Medicine Technologist                                        27.88
+  12221 - Nursing Assistant I                                                  10.15
+  12222 - Nursing Assistant II                                                 11.41
+  12223 - Nursing Assistant III                                                12.45
+  12224 - Nursing Assistant IV                                                 13.98
+  12235 - Optical Dispenser                                                    16.90
+  12236 - Optical Technician                                                   13.99
+  12250 - Pharmacy Technician                                                  14.75
+  12280 - Phlebotomist                                                         13.98
+  12305 - Radiologic Technologist                                              21.61
+  12311 - Registered Nurse I                                                   21.17
+  12312 - Registered Nurse II                                                  25.89
+  12313 - Registered Nurse II, Specialist                                      25.89
+  12314 - Registered Nurse III                                                 31.32
+  12315 - Registered Nurse III, Anesthetist                                    31.32
+  12316 - Registered Nurse IV                                                  37.54
+  12317 - Scheduler (Drug and Alcohol Testing)                                 19.08
+13000 - Information And Arts Occupations
+  13011 - Exhibits Specialist I                                                16.88
+  13012 - Exhibits Specialist II                                               20.92
+  13013 - Exhibits Specialist III                                              25.91
+  13041 - Illustrator I                                                        16.88
+  13042 - Illustrator II                                                       20.92
+  13043 - Illustrator III                                                      25.91
+  13047 - Librarian                                                            23.16
+  13050 - Library Aide/Clerk                                                    9.39
+  13054 - Library Information Technology Systems                               20.92
+  Administrator
+  13058 - Library Technician                                                   13.35
+  13061 - Media Specialist I                                                   15.09
+  13062 - Media Specialist II                                                  16.88
+  13063 - Media Specialist III                                                 18.83
+  13071 - Photographer I                                                       13.29
+  13072 - Photographer II                                                      14.87
+  13073 - Photographer III                                                     18.42
+  13074 - Photographer IV                                                      21.08
+  13075 - Photographer V                                                       22.87
+  13110 - Video Teleconference Technician                                      15.09
+14000 - Information Technology Occupations
+  14041 - Computer Operator I                                                  14.13
+  14042 - Computer Operator II                                                 16.01
+  14043 - Computer Operator III                                                17.85
+  14044 - Computer Operator IV                                                 19.84
+  14045 - Computer Operator V                                                  21.98
+  14071 - Computer Programmer I                          (see 1)               20.94
+  14072 - Computer Programmer II                         (see 1)               25.96
+  14073 - Computer Programmer III                        (see 1)
+  14074 - Computer Programmer IV                         (see 1)
+  14101 - Computer Systems Analyst I                     (see 1)
+  14102 - Computer Systems Analyst II                    (see 1)
+  14103 - Computer Systems Analyst III                   (see 1)
+  14150 - Peripheral Equipment Operator                                        14.13
+  14160 - Personal Computer Support Technician                                 21.98
+15000 - Instructional Occupations
+  15010 - Aircrew Training Devices Instructor (Non-Rated)                      29.95
+  15020 - Aircrew Training Devices Instructor (Rated)                          36.23
+  15030 - Air Crew Training Devices Instructor (Pilot)                         39.68
+  15050 - Computer Based Training Specialist / Instructor                      27.36
+  15060 - Educational Technologist                                             27.18
+  15070 - Flight Instructor (Pilot)                                            39.68
+  15080 - Graphic Artist                                                       19.39
+  15090 - Technical Instructor                                                 18.54
+  15095 - Technical Instructor/Course Developer                                22.68
+  15110 - Test Proctor                                                         14.96
+  15120 - Tutor                                                                14.96
+16000 - Laundry, Dry-Cleaning, Pressing And Related Occupations
+  16010 - Assembler                                                             8.96
+  16030 - Counter Attendant                                                     8.96
+  16040 - Dry Cleaner                                                          11.16
+  16070 - Finisher, Flatwork, Machine                                           8.96
+  16090 - Presser, Hand                                                         8.96
+  16110 - Presser, Machine, Drycleaning                                         8.96
+  16130 - Presser, Machine, Shirts                                              8.96
+  16160 - Presser, Machine, Wearing Apparel, Laundry                            8.96
+  16190 - Sewing Machine Operator                                              11.86
+  16220 - Tailor                                                               12.51
+  16250 - Washer, Machine                                                       9.76
+19000 - Machine Tool Operation And Repair Occupations
+  19010 - Machine-Tool Operator (Tool Room)                                    18.35
+  19040 - Tool And Die Maker                                                   22.22
+21000 - Materials Handling And Packing Occupations
+  21020 - Forklift Operator                                                    13.85
+  21030 - Material Coordinator                                                 19.18
+  21040 - Material Expediter                                                   19.18
+  21050 - Material Handling Laborer                                            12.75
+  21071 - Order Filler                                                         11.70
+  21080 - Production Line Worker (Food Processing)                             13.85
+  21110 - Shipping Packer                                                      14.07
+  21130 - Shipping/Receiving Clerk                                             14.07
+  21140 - Store Worker I                                                       12.19
+  21150 - Stock Clerk                                                          16.22
+  21210 - Tools And Parts Attendant                                            13.85
+  21410 - Warehouse Specialist                                                 13.85
+23000 - Mechanics And Maintenance And Repair Occupations
+  23010 - Aerospace Structural Welder                                          22.08
+  23021 - Aircraft Mechanic I                                                  21.05
+  23022 - Aircraft Mechanic II                                                 22.08
+  23023 - Aircraft Mechanic III                                                23.09
+  23040 - Aircraft Mechanic Helper                                             15.70
+  23050 - Aircraft, Painter                                                    19.48
+  23060 - Aircraft Servicer                                                    17.86
+  23080 - Aircraft Worker                                                      18.98
+  23110 - Appliance Mechanic                                                   17.18
+  23120 - Bicycle Repairer                                                     12.87
+  23125 - Cable Splicer                                                        22.66
+  23130 - Carpenter, Maintenance                                               15.78
+  23140 - Carpet Layer                                                         16.86
+  23160 - Electrician, Maintenance                                             19.65
+  23181 - Electronics Technician Maintenance I                                 21.98
+  23182 - Electronics Technician Maintenance II                                23.23
+  23183 - Electronics Technician Maintenance III                               26.91
+  23260 - Fabric Worker                                                        15.85
+  23290 - Fire Alarm System Mechanic                                           18.23
+  23310 - Fire Extinguisher Repairer                                           14.90
+  23311 - Fuel Distribution System Mechanic                                    20.41
+  23312 - Fuel Distribution System Operator                                    19.33
+  23370 - General Maintenance Worker                                           15.76
+  23380 - Ground Support Equipment Mechanic                                    21.05
+  23381 - Ground Support Equipment Servicer                                    17.86
+  23382 - Ground Support Equipment Worker                                      18.53
+  23391 - Gunsmith I                                                           14.90
+  23392 - Gunsmith II                                                          16.86
+  23393 - Gunsmith III                                                         18.78
+  23410 - Heating, Ventilation And Air-Conditioning                            17.97
+  Mechanic
+  23411 - Heating, Ventilation And Air Contditioning                           18.88
+  Mechanic (Research Facility)
+  23430 - Heavy Equipment Mechanic                                             18.04
+  23440 - Heavy Equipment Operator                                             18.62
+  23460 - Instrument Mechanic                                                  22.75
+  23465 - Laboratory/Shelter Mechanic                                          17.81
+  23470 - Laborer                                                              11.20
+  23510 - Locksmith                                                            17.80
+  23530 - Machinery Maintenance Mechanic                                       21.46
+  23550 - Machinist, Maintenance                                               17.80
+  23580 - Maintenance Trades Helper                                            13.82
+  23591 - Metrology Technician I                                               22.75
+  23592 - Metrology Technician II                                              23.79
+  23593 - Metrology Technician III                                             24.89
+  23640 - Millwright                                                           23.03
+  23710 - Office Appliance Repairer                                            17.33
+  23760 - Painter, Maintenance                                                 15.61
+  23790 - Pipefitter, Maintenance                                              21.57
+  23810 - Plumber, Maintenance                                                 21.51
+  23820 - Pneudraulic Systems Mechanic                                         18.80
+  23850 - Rigger                                                               18.78
+  23870 - Scale Mechanic                                                       16.86
+  23890 - Sheet-Metal Worker, Maintenance                                      19.63
+  23910 - Small Engine Mechanic                                                14.85
+  23931 - Telecommunications Mechanic I                                        23.85
+  23932 - Telecommunications Mechanic II                                       25.02
+  23950 - Telephone Lineman                                                    23.22
+  23960 - Welder, Combination, Maintenance                                     17.97
+  23965 - Well Driller                                                         18.78
+  23970 - Woodcraft Worker                                                     18.78
+  23980 - Woodworker                                                           13.32
+24000 - Personal Needs Occupations
+  24570 - Child Care Attendant                                                  8.22
+  24580 - Child Care Center Clerk                                              12.43
+  24610 - Chore Aide                                                            9.83
+  24620 - Family Readiness And Support Services                                12.20
+  Coordinator
+  24630 - Homemaker                                                            13.11
+25000 - Plant And System Operations Occupations
+  25010 - Boiler Tender                                                        19.84
+  25040 - Sewage Plant Operator                                                17.69
+  25070 - Stationary Engineer                                                  20.67
+  25190 - Ventilation Equipment Tender                                         15.33
+  25210 - Water Treatment Plant Operator                                       17.69
+27000 - Protective Service Occupations
+  27004 - Alarm Monitor                                                        14.21
+  27007 - Baggage Inspector                                                    11.06
+  27008 - Corrections Officer                                                  15.64
+  27010 - Court Security Officer                                               16.68
+  27030 - Detection Dog Handler                                                13.60
+  27040 - Detention Officer                                                    15.64
+  27070 - Firefighter                                                          18.17
+  27101 - Guard I                                                              11.06
+  27102 - Guard II                                                             13.60
+  27131 - Police Officer I                                                     18.21
+  27132 - Police Officer II                                                    20.24
+28000 - Recreation Occupations
+  28041 - Carnival Equipment Operator                                          13.33
+  28042 - Carnival Equipment Repairer                                          14.17
+  28043 - Carnival Equpment Worker                                              9.87
+  28210 - Gate Attendant/Gate Tender                                           12.36
+  28310 - Lifeguard                                                            11.74
+  28350 - Park Attendant (Aide)                                                14.24
+  28510 - Recreation Aide/Health Facility Attendant                            10.09
+  28515 - Recreation Specialist                                                12.54
+  28630 - Sports Official                                                      11.34
+  28690 - Swimming Pool Operator                                               16.81
+29000 - Stevedoring/Longshoremen Occupational Services
+  29010 - Blocker And Bracer                                                   18.57
+  29020 - Hatch Tender                                                         18.57
+  29030 - Line Handler                                                         18.57
+  29041 - Stevedore I                                                          18.05
+  29042 - Stevedore II                                                         19.63
+30000 - Technical Occupations
+  30010 - Air Traffic Control Specialist, Center (HFO)   (see 2)               35.77
+  30011 - Air Traffic Control Specialist, Station (HFO)  (see 2)               24.66
+  30012 - Air Traffic Control Specialist, Terminal (HFO) (see 2)               27.10
+  30021 - Archeological Technician I                                           17.66
+  30022 - Archeological Technician II                                          19.75
+  30023 - Archeological Technician III                                         24.48
+  30030 - Cartographic Technician                                              24.48
+  30040 - Civil Engineering Technician                                         24.86
+  30061 - Drafter/CAD Operator I                                               17.66
+  30062 - Drafter/CAD Operator II                                              19.75
+  30063 - Drafter/CAD Operator III                                             22.03
+  30064 - Drafter/CAD Operator IV                                              27.10
+  30081 - Engineering Technician I                                             15.52
+  30082 - Engineering Technician II                                            17.41
+  30083 - Engineering Technician III                                           19.48
+  30084 - Engineering Technician IV                                            24.14
+  30085 - Engineering Technician V                                             29.66
+  30086 - Engineering Technician VI                                            35.90
+  30090 - Environmental Technician                                             23.02
+  30210 - Laboratory Technician                                                21.43
+  30240 - Mathematical Technician                                              24.48
+  30361 - Paralegal/Legal Assistant I                                          15.98
+  30362 - Paralegal/Legal Assistant II                                         18.90
+  30363 - Paralegal/Legal Assistant III                                        23.12
+  30364 - Paralegal/Legal Assistant IV                                         27.95
+  30390 - Photo-Optics Technician                                              24.48
+  30461 - Technical Writer I                                                   24.48
+  30462 - Technical Writer II                                                  29.45
+  30463 - Technical Writer III                                                 32.79
+  30491 - Unexploded Ordnance (UXO) Technician I                               22.74
+  30492 - Unexploded Ordnance (UXO) Technician II                              27.51
+  30493 - Unexploded Ordnance (UXO) Technician III                             32.97
+  30494 - Unexploded (UXO) Safety Escort                                       22.74
+  30495 - Unexploded (UXO) Sweep Personnel                                     22.74
+  30620 - Weather Observer, Combined Upper Air Or        (see 2)               22.03
+  Surface Programs
+  30621 - Weather Observer, Senior                       (see 2)               24.48
+31000 - Transportation/Mobile Equipment Operation Occupations
+  31020 - Bus Aide                                                             10.51
+  31030 - Bus Driver                                                           14.07
+  31043 - Driver Courier                                                       12.36
+  31260 - Parking and Lot Attendant                                            10.06
+  31290 - Shuttle Bus Driver                                                   13.21
+  31310 - Taxi Driver                                                          10.59
+  31361 - Truckdriver, Light                                                   13.21
+  31362 - Truckdriver, Medium                                                  14.07
+  31363 - Truckdriver, Heavy                                                   15.07
+  31364 - Truckdriver, Tractor-Trailer                                         15.07
+99000 - Miscellaneous Occupations
+  99030 - Cashier                                                               7.88
+  99050 - Desk Clerk                                                            8.22
+  99095 - Embalmer                                                             22.29
+  99251 - Laboratory Animal Caretaker I                                         9.65
+  99252 - Laboratory Animal Caretaker II                                       10.31
+  99310 - Mortician                                                            22.29
+  99410 - Pest Controller                                                      13.39
+  99510 - Photofinishing Worker                                                12.74
+  99710 - Recycling Laborer                                                    14.53
+  99711 - Recycling Specialist                                                 17.02
+  99730 - Refuse Collector                                                     13.30
+  99810 - Sales Clerk                                                          10.75
+  99820 - School Crossing Guard                                                13.56
+  99830 - Survey Party Chief                                                   18.67
+  99831 - Surveying Aide                                                       11.09
+  99832 - Surveying Technician                                                 16.97
+  99840 - Vending Machine Attendant                                            10.81
+  99841 - Vending Machine Repairer                                             12.82
+  99842 - Vending Machine Repairer Helper                                      10.81
+
+____________________________________________________________________________________
+
+ALL OCCUPATIONS LISTED ABOVE RECEIVE THE FOLLOWING BENEFITS:
+
+HEALTH & WELFARE: $3.81 per hour or $152.40 per week or $660.40 per month
+
+VACATION: 2 weeks paid vacation after 1 year of service with a contractor or successor; 3 weeks after 8 years, and 4 weeks after 15 years.
+Length of service includes the whole span of continuous service with the present contractor or successor, wherever employed, and with the
+predecessor contractors in the performance of similar work at the same Federal facility.  (Reg. 29 CFR 4.173)
+
+HOLIDAYS: A minimum of ten paid holidays per year, New Year's Day, Martin Luther King Jr's Birthday, Washington's Birthday, Memorial Day,
+Independence Day, Labor Day, Columbus Day, Veterans' Day, Thanksgiving Day, and Christmas Day.  (A contractor may substitute for any of the
+named holidays another day off with pay in accordance with a plan communicated to the employees involved.)  (See 29 CFR 4174)
+
+THE OCCUPATIONS WHICH HAVE NUMBERED FOOTNOTES IN PARENTHESES RECEIVE THE FOLLOWING:
+
+1)  COMPUTER EMPLOYEES:  Under the SCA at section 8(b), this wage determination does not apply to any employee who individually qualifies as a
+bona fide executive, administrative, or professional employee as defined in 29 C.F.R. Part 541.  Because most Computer System Analysts and
+Computer Programmers who are compensated at a rate not less than $27.63 (or on a salary or fee basis at a rate not less than $455 per week) an
+hour would likely qualify as exempt computer professionals, (29 C.F.R. 541. 400) wage rates may not be listed on this wage determination for all
+occupations within those job families.  In addition, because this wage determination may not list a wage rate for some or all occupations within
+those job families if the survey data indicates that the prevailing wage rate for the occupation equals or exceeds $27.63 per hour conformances
+may be necessary for certain nonexempt employees.  For example, if an individual employee is nonexempt but nevertheless performs duties within
+the scope of one of the Computer Systems Analyst or Computer Programmer occupations for which this wage determination does not specify an SCA
+wage rate, then the wage rate for that employee must be conformed in accordance with the conformance procedures described in the conformance
+note included on this wage determination.
+
+Additionally, because job titles vary widely and change quickly in the computer industry, job titles are not determinative of the application of
+the computer professional exemption.  Therefore, the exemption applies only to computer employees who satisfy the compensation requirements and
+whose primary duty consists of:
+    (1) The application of systems analysis techniques and procedures, including consulting with users, to determine hardware, software or
+system functional specifications;
+    (2) The design, development, documentation, analysis, creation, testing or modification of computer systems or programs, including
+prototypes, based on and related to user or system design specifications;
+    (3) The design, documentation, testing, creation or modification of computer programs related to machine operating systems; or
+    (4) A combination of the aforementioned duties, the performance of which requires the same level of skills.  (29 C.F.R. 541.400).
+
+2)  AIR TRAFFIC CONTROLLERS AND WEATHER OBSERVERS - NIGHT PAY & SUNDAY PAY:  If you work at night as part of a regular tour of duty, you will
+earn a night differential and receive an additional 10% of basic pay for any hours worked between 6pm and 6am.
+ If you are a full-time employed (40 hours a week) and Sunday is part of your regularly scheduled workweek, you are paid at your rate of basic
+pay plus a Sunday premium of 25% of your basic rate for each hour of Sunday work which is not overtime (i.e. occasional work on Sunday outside
+the normal tour of duty is considered overtime work).
+
+HAZARDOUS PAY DIFFERENTIAL: An 8 percent differential is applicable to employees employed in a position that represents a high degree of hazard
+when working with or in close proximity to ordinance, explosives, and incendiary materials.  This includes work such as screening, blending,
+dying, mixing, and pressing of sensitive ordinance, explosives, and pyrotechnic compositions such as lead azide, black powder and photoflash
+powder.  All dry-house activities involving propellants or explosives.
+  Demilitarization, modification, renovation, demolition, and maintenance operations
+on sensitive ordnance, explosives and incendiary materials.  All operations involving regrading and cleaning of artillery ranges.
+
+A 4 percent differential is applicable to employees employed in a position that represents a low degree of hazard when working with, or in close
+proximity to ordinance, (or employees possibly adjacent to) explosives and incendiary materials which involves potential injury such as
+laceration of hands, face, or arms of the employee engaged in the operation, irritation of the skin, minor burns and the like; minimal damage to
+immediate or adjacent work area or equipment being used. All operations involving, unloading, storage, and hauling of ordinance, explosive, and
+incendiary ordnance material other than small arms ammunition.  These differentials are only applicable to work that has been specifically
+designated by the agency for ordinance, explosives, and incendiary material differential pay.
+
+** UNIFORM ALLOWANCE **
+
+If employees are required to wear uniforms in the performance of this contract (either by the terms of the Government contract, by the employer,
+by the state or local law, etc.), the cost of furnishing such uniforms and maintaining (by laundering or dry cleaning) such uniforms is an
+expense that may not be borne by an employee where such cost reduces the hourly rate below that required by the wage determination. The
+Department of Labor will accept payment in accordance with the following standards as compliance:
+
+The contractor or subcontractor is required to furnish all employees with an adequate number of uniforms without cost or to reimburse employees
+for the actual cost of the uniforms.  In addition, where uniform cleaning and maintenance is made the responsibility of the employee, all
+contractors and subcontractors subject to this wage determination shall (in the absence of a bona fide collective bargaining agreement providing
+for a different amount, or the furnishing of contrary affirmative proof as to the actual cost), reimburse all employees for such cleaning and
+maintenance at a rate of $3.35 per week (or $.67 cents per day).  However, in those instances where the uniforms furnished are made of "wash and
+wear" materials, may be routinely washed and dried with other personal garments, and do not require any special treatment such as dry cleaning,
+daily washing, or commercial laundering in order to meet the cleanliness or appearance standards set by the terms of the Government contract, by
+the contractor, by law, or by the nature of the work, there is no requirement that employees be reimbursed for uniform maintenance costs.
+
+The duties of employees under job titles listed are those described in the "Service Contract Act Directory of Occupations", Fifth Edition, April
+2006, unless otherwise indicated. Copies of the Directory are available on the Internet. A links to the Directory may be found on the WHD home
+page at http://www.dol.gov/esa/whd/ or through the Wage Determinations On-Line (WDOL) Web site at http://wdol.gov/.
+
+REQUEST FOR AUTHORIZATION OF ADDITIONAL CLASSIFICATION AND WAGE RATE {Standard Form
+1444 (SF 1444)}
+
+Conformance Process:
+
+The contracting officer shall require that any class of service employee which is not listed herein and which is to be employed under the
+contract (i.e., the work to be performed is not performed by any classification listed in the wage determination), be classified by the
+contractor so as to provide a reasonable relationship (i.e., appropriate level of skill comparison) between such unlisted classifications and
+the classifications listed in the wage determination.  Such conformed classes of employees shall be paid the monetary wages and furnished the
+fringe benefits as are determined.  Such conforming process shall be initiated by the contractor prior to the performance of contract work by
+such unlisted class(es) of employees.  The conformed classification, wage rate, and/or fringe benefits shall be retroactive to the commencement
+date of the contract. {See Section 4.6 (C)(vi)} When multiple wage determinations are included in a contract, a separate SF 1444 should be
+prepared for each wage determination to which a class(es) is to be conformed.
+
+The process for preparing a conformance request is as follows:
+
+1) When preparing the bid, the contractor identifies the need for a conformed occupation(s) and computes a proposed rate(s).
+
+2) After contract award, the contractor prepares a written report listing in order proposed classification title(s), a Federal grade equivalency
+(FGE) for each proposed classification(s), job description(s), and rationale for proposed wage rate(s), including information regarding the
+agreement or disagreement of the authorized representative of the employees involved, or where there is no authorized representative, the
+employees themselves.  This report should be submitted to the contracting officer no later than 30 days after such unlisted class(es) of
+employees performs any contract work.
+
+3) The contracting officer reviews the proposed action and promptly submits a report of the action, together with the agency's recommendations
+and pertinent information including the position of the contractor and the employees, to the Wage and Hour Division, Employment Standards
+Administration, U.S. Department of Labor, for review.  (See section 4.6(b)(2) of Regulations 29 CFR Part 4).
+
+4) Within 30 days of receipt, the Wage and Hour Division approves, modifies, or disapproves the action via transmittal to the agency contracting
+officer, or notifies the contracting officer that additional time will be required to process the request.
+
+5) The contracting officer transmits the Wage and Hour decision to the contractor.
+
+6) The contractor informs the affected employees.
+
+Information required by the Regulations must be submitted on SF 1444 or bond paper.
+
+When preparing a conformance request, the "Service Contract Act Directory of Occupations" (the Directory) should be used to compare job
+definitions to insure that duties requested are not performed by a classification already listed in the wage determination.   Remember, it is
+not the job title, but the required tasks that determine whether a class is included in an established wage determination. Conformances may not
+be used to artificially split, combine, or subdivide classifications listed in the wage determination.
+
+
+
+-----------------------
+                                                                      [pic]
+                                                              LBL Quota Hunt Permit
+                                                         This permit is not transferable
+                                                [Permit #]                             [Bar Code]
+----------------------------------fold here-----------------------------------
+[Name]
+[Address]
+[Address]
+Hunt Type:
+Hunt Area:
+Limit:
+Date:
+
+
+

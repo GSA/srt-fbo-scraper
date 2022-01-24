@@ -1,0 +1,833 @@
+
+Current NSF System Details
+Financial Management System: Financial Accounting System (FAS)
+Type: Legacy
+# of system users: 1200 (300 read-only)
+Modules/Functionality: General Ledger
+Funds Management
+Accounts Payable
+Accounts Receivable
+Project/Cost Accounting
+Hosted by/Managed by: NSF
+Other NSF Systems:
+Grants Management Awards Systems (Awards) (Stores grant award information and interfaces with FAS to obligate funds)
+Grants Management FastLane (On-line submission of grant proposals, fund requests, and financial status reporting by grantees.Interfaces with FAS.)
+Grants Management Proposal and Review System (PARS) (Interfaces with FAS to check funds availability and committ funds)
+Procurement System Automated Acquisition Management System (AAMS)
+Travel - E-Travel System FedTraveler
+Guest Travel System Guest Travel and Reimbursement System (Guest) (Reimburses non NSF employees for travel)
+Training Learning Management System (LMS)
+Reporting Tool Report Web
+Reporting Tool Enterprise Information System (EIS)
+Payroll  Federal Personnel and Payroll System (FPPS)
+Vendor Management (government-wide) Central Contractor Registration (CCR)
+Vendor Management (NSF Only) Institution Database
+General Annual Amount / Quantity
+Annual Budget $: $6,196 Million System generated, Congressional Approval $5,917 Million. 
+Number of employees (FTE): 1295 full time and 42 part time NSF employees 
+Number of Appropriations/Treasury Symbols: 43 Treasure Symbols 10 Appropiations
+Number of Fund types: four 2 year funds, two 1 year funds, Three no year funds, one no year trust fund
+Amount of Grant Dollars awarded: 5558509870.21
+Amount of Donation and Trust Fund Dollars received: 41280961.11
+Amount of Donations / Contributions received: 100 (transactions)
+Technology Description Product Version / # of Licenses
+Current Financial System: FAS Custom built Number of users: 1200 (300 read-only)
+Operating System Domain Server Windows 2003 Server
+User Workstations  MS Windows XP-SP2
+E-Mail Server  MS Exchange 2003 e-mail servers
+Unix Server SUN Solaris
+Database Sybase ASE 12.5.3
+Application Server
+Data warehouse
+Development Tools PowerBuilder 10.2
+C++  2.8.1
+Java 1.4.2
+Perl 5.6
+Sybase SQL Advantage 12.5.3
+PowerGen 7.0
+Rational Clearcase 2003.06.10+
+Rational Clearquest 2003.06.14.567.000
+Eclipse 3.11
+Testing tools Rational Test Manager 2003.06.14.567
+Other 3rd Party Software ReportWeb 3.2.0.2
+Aqua Data Studio 4.0.1
+Service Description NSF Responsible 
+Organization Annual # of Events/
+Frequency
+Accounting Services 
+Funds Management 
+Budget Documents (warrant, appropriations, apportionments, rescissions, etc.)  421.0
+Allocation Documents (internal agency budget plans)-count of documents 4929.0
+Allocation Documents (internal agency budget plans)-count of transactions 11387.0
+Funding Documents (inter-agency agreements) 1077.0
+Budget Plans-Interagency agreements-count of documents 1233.0
+Budget Plans-Interagency agreements-count of transactions 2832.0
+Reprogramming Documents (move money between object classes on budget plans)-post award actions (2926), funds transfer actions (3806) 6732.0
+Commitments (purchase request or other entry to set aside funds)-non CGI (CGI captured under Cash Management) 24047.0
+Decommitment actions 1895.0
+Upward/downward adjustments--commitment actions 192.0
+Obligations - purchase orders 1166.0
+Obligations - inter-agency agreements 653.0
+Obligations - training documents 926.0
+Obligations - contracts 410.0
+Obligations - travel (incl interagency-154) 20244.0
+Obligations - other/misc  511.0
+Deobligations-all 1780.0
+Upward/downward adjustments-all non-grant 18894.0
+General Ledger Processing
+Automated Transactions (i.e. via transaction codes) 486343.0
+Manual Journal Vouchers-count of JV document IDs DFM/AOB 360.0
+Accounts Payable
+Number of automated disbursements (i.e. IPAC, wire transfers) DFM/AOB 4000/year on average
+Number of manual disbursements (i.e. 1080 form) DFM/AOB 250-300/year; ad hoc
+Number of vendor invoices (FAS transaction entries-may be applied across multiple amendments); invoice count approx 5890 7020.0
+Number of invoices acted upon (incl those carried over fr FY06) 6992.0
+Number of travel related disbursements-(Guest)-to individuals 16466.0
+Number of travel related disbursements-(FedTraveler)-to individuals 1613.0
+Number of travel ticket transactions (summary records at obligation level; incl reconciling entries, refunds, fees) 16235.0
+Number of non-ticket file, non-Guest, non FedTraveler travel related disbursements to individuals 14063.0
+Number of interest payments disbursed (related to prompt payment act) 214.0
+Number of stipend disbursements DFM/AOB 3600/year; monthly
+Number of foreign payments 260 (checks) 
+Number of miscellaneous payments (under MORs, etc) 3267.0
+Number of EFT returns/reissues 386.0
+Number of zero-dollar closeout transactions 30578.0
+Cash Management
+Manual Program Payments (grants, other program payment vouchers) 1671.0
+Automated Program Payment Files (payment files from customer feeder system); data shown reflects purchase card file upload.  See above for Guest and FedTraveler reimbursements to individuals 10163.0
+Accounts Receivable
+Manual Billing Documents (paper document to establish receivable) 98.0
+Automated Billing Files (receivable files from customer billing system) 281.0
+Manual Collection Documents (paper documents to liquidate a receivable) 48.0
+Automated Collection Files (collection files from customer collection system) 630.0
+Credit Card Collections and bank used: N/A
+Receivable  Write-off Transactions 11.0
+Number of interest payments received (related to prompt payment act) 49 (note:  these interest payments received are NOT relateed to Prompt Payment Act)
+Grants Management
+Number of competitive awards funded in FY2008 11162.0
+Number of payment requests for awarded grant funding (via Fastlane)-advances  19481.0
+Number of payment disbursements for grant funding/expenditures  147410.0
+Number of continuing grant increments CGIs-(Awards/DIAS) TBD
+Number of upward/downward grant-related adjustments  25731.0
+Number of PI transfer actions  772.0
+Number of FCTRs/FFRs submitted-FastLane 6538.0
+Inter-agency Agreements Processing
+Number of inter-agency agreements currently managed 400-450
+Number of inter-agency agreements received 400-450
+Intergovernmental Personnel Act (IPA) Mobility Program-HR
+# of IPAs TBD
+# of contracts associated with IPAs TBD
+Amount spent on IPA related expenses (i.e. relocation) TBD
+Other Document Processing
+# of Individual Address Maintenance-EFT FAS updates (manual entry, FastLane, etc) 5781 FastLane
+# of Individual Address Maintenance-non-EFT FAS updates (manual entry, FastLane) 10713 FastLane
+# of Institution/Vendor updates-EFT FAS updates via CCR 1612 CCR
+Financial Reporting
+Statement of Transactions (SF-224)  DFM/AOB 12/year; monthly
+Inter-agency Performance Report DFM/AOB 4/year; quarterly
+Intragovernmental F-Transactions Report DFM/AOB 4/year; quarterly
+Intragovernmental Confirmations DFM/AOB 130-150/year; quarterly
+Intragovernmental Fiduciary Confirmation System (IFCS)  DFM/AOB 4/year; quarterly
+Status of Disposition Certification (Material Difference Report) DFM/AOB 4/year; quarterly
+Balance Sheet  DFM/AOB 4/year; quarterly
+Statement of Net Cost   DFM/AOB 4/year; quarterly
+Statement of Changes in Net Position  DFM/AOB 4/year; quarterly
+Statement of Budgetary Resources  DFM/AOB 4/year; quarterly
+Reconciliation of Budgetary to Proprietary (formerly Statement of Financing) DFM/AOB 4/year; quarterly
+Federal Agencies’ Centralized Trial-Balance System II Reports 
+(FACTS II: 2108, ATB, SF-133, Fund & Account Attributes) manual DFM/AOB n/a
+Federal Agencies’ Centralized Trial-Balance System II Reports 
+(FACTS II: 2108, ATB, SF-133, Fund & Account Attributes) bulk upload DFM/AOB 4/year; quarterly
+Treasury Report on Receivables (TROR) DFM/AOB 4/year; quarterly
+Confirmation on Cash/Investments held outside US Treasury (CIHO) DFM/AOB 4/year; quarterly
+International Transactions Report (SF-13) DFM/AOB 4/year; quarterly
+Federal Agencies’ Centralized Trial-Balance System I Reports (FACTS I) manual DFM/AOB 1/year; annually
+Federal Agencies’ Centralized Trial-Balance System I Reports (FACTS I) bulk upload DFM/AOB n/a
+Closing Package (Re-classified Statements) via GFRS DFM/AOB 1/year; annually
+Debt Collection Improvement Act (DCIA) Annual Report  DFM/AOB 1/year; annually
+Work Years and Personnel Costs Report DFM/AOB 1/year; annually
+Procurement Services DACS/DAS
+Simplified Acquisitions
+Open Market POs/BPAs 394.0 394.0
+Modifications to Open Market POs/BPAs 98.0 98.0
+GSA Schedule Orders/BPAs 308.0 308.0
+Modifications to GSA Schedule Orders/BPAs 316.0 316.0
+Orders under GWACs 26.0 26.0
+Modifications to GWAC Orders 19.0 19.0
+Total Number 1161.0 1161.0
+What is the average dollar value of these purchase orders? 171184.0
+Contracts
+Number of contracts awarded per year 11.0
+How many are fixed price? 1.0
+How many are time and materials and labor-hour? 7.0
+How many are cost-type? 3.0
+Delivery Orders or Task Orders under NSF Contracts 40.0 40.0
+Modifications to DOs or TOs under NSF Contracts 83.0 83.0
+Co-operative Agreements Awards/DIAS
+Number of agreements executed  TBD
+Purchase Card Program DAS
+Number of card holders in purchase card program 250.0
+Number of approving officials in purchase card program TBD
+What is the purchase card threshold for non-procurement buyers? TBD
+Travel Services (NSF cardholders)
+Travel Services (NSF cardholders)
+Number of cards in travel card program 950.0
+Number of travelers TBD
+Number of other eTravel users (support staff, etc.) TBD
+Number of  travel requests 16745.0
+Travel Services (Guest)--DAS
+Number of travelers  12301.0
+Number of automated travel requests  16632.0
+All Other Transaction Processing 
+Payroll Accounting File Processing
+Current E-payroll Provider DOI (NBC/FPPS)
+Vendor and Employee File Maintenance/1099 Reporting
+Individuals 11867.0
+Vendors -  519.0
+Use of CCR for vendors?  Y/N (for contract, purchase order vendors-yes; not yet required for grantees) TBD
+Use of e-payroll banking for travelers?  Y/N  yes
+CCR exceptions?
+
+System* Interface Type Complexity Interface Frequency Details
+NSF Specific Systems Institution Database (NSF Vendor Management) Batch Single Direction Daily Vendor records new and updates inbound
+NSF Grants Management System (FastLane, PARS, Awards) On Demand Multi Direction Minutes Grant Vendors new and updates, Commitments, Obligations, Payment Requests inbound and Financial data outbound to Grants
+Automated Acquisition Management System (AAMS) Procurement System On Demand Multi Direction Minutes Contracts and Simplified Acquisition Obligations inbound
+Guest Travel (NSF Reimbursement System for Panelist) Batch Single Direction Daily Obligations and Payment Requests inbound
+TBD Property Management System Batch Multi Direction Daily Asset acquisitions outbound, depreciation inbound
+TBD Reporting Tool Near Real Time Single Direction Hourly/Daily Financial and document data outbound
+Standard Federal Systems Central Contractor Registration (CCR) Batch Single Direction Daily Vendor records new and updates inbound
+FedTraveler Batch Multi Direction Minutes Travel Orders (Obligations) and Travel Vouchers (Invoices) inbound
+FedBizOpps Batch Single Direction Hourly Contracts and Simplified Acquisition documents outbound
+JPMorgan Chase Travel Credit Card Processing System  Batch Single Direction Daily Credit Card Detail inbound
+JPMorgan Chase Government Purchase Card Service  Batch Single Direction Daily Credit Card Detail inbound
+Federal Personnel and Payroll System (FPPS) Batch Single Direction Weekly Payroll entries, adjustments and accruals inbound
+Learning Management System (LMS) Training System Batch Single Direction Minutes Obligations inbound
+General Services Administration FPDS-NG Batch Single Direction Daily Contract information outbound
+U.S. Treasury CA$HLINK Batch Single Direction Daily Collections inbound
+U.S. Treasury GOALS II Batch Multi Direction Daily Payment reconciliation information inbound, SF224 outbound
+U.S. Treasury FMSInTouch (FACTS II) Batch Single Direction Quarterly FACTSII Reporting outbound
+U.S. Treasury DMS (FedDebt and TROR) Batch Multi Direction Monthly Collections inbound and TROR outbound
+U.S. Treasury TWAI (IPAC) Batch Multi Direction Daily IPAC Collections outbound and IPAC Payments inbound
+U.S. Treasury PACER (Payments) Batch Single Direction Hourly Payments outbound
+U.S. Treasury Pay.Gov (Future) Batch Single Direction Daily Collections inbound
+U.S. Treasury SPS Batch Single Direction Daily Payment details inbound
+*The systems listed are assumptions at this time for purposes of the RFI.
+
+Table Instructions:
+The table on the "Functional Area Estimates" tab contains the areas that NSF is considering for the iTRAK implementation.  Please follow the guidance below to populate the table.
+Field Name Description
+Estimated Costs for Deployment Provide the estimated cost for deploying the functional area.
+Recommended Federal FTEs Provide an estimate of the number of Federal Full Time Employees that will be needed to support Deployment.
+Estimated Costs for Operation & Maintenance Support Provide the estimated cost for operations and mainteance of the functional area.
+Recommended Federal FTEs Provide an estimate of the number of Federal Full Time Employees that will be needed to support Operations & Maintenance.
+# Implementation Activity Estimated Costs for Deployment Recommended Federal FTEs (for Deployement) Estimated Costs for Operation & Maintenance Support Recommended Federal FTEs (for O&M)
+Business Functions 1.0 Core Financials (General Ledger,  Budget Execution, Grants Accounting, Payment Management, Collections)
+2.0 Budget Formulation
+3.0 Property, Plant & Equipment (Real and Personal Property)
+4.0 Acquisition
+5.0 Reporting (Operational, Federally Mandated and Data Warehouse)
+Other 6.0 Data Conversion
+7.0 Interfaces to NSF-specific systems*
+8.0 Interfaces to standard Federal systems**
+9.0 Business Process Support  Services***
+*NSF-specific systems include: FastLane, PARS, Awards, Guest Travel, Institutions, Property, Acquisition, and Reporting
+**Standard Federal systems include CCR, FedTraveler, JPMorgan Chase Credit Card, FPPS, LMS, FPDS-NG, and U.S. Treasury Systems
+***This includes transaction processing (invoice and travel payments), financial management (financial reporting, reconciliation and audit support), and other operational services you may provide.
+
+General Information
+Request for Information Number: DACS09-RFI-KR01
+Subject:    Request for Information
+Date: March 20, 2009
+NAICS:      541512 Computer Systems Design Services
+
+Contracting Specialist:      Ms. Kay Marie Rison
+CS’s Address:    National Science Foundation
+                  4201 Wilson Boulevard
+                  Arlington, VA 22230
+CS’s Email Address:    mrison@nsf.gov
+Response Due Date:     April 10, 2009
+
+
+   Request for Information
+
+The purpose of this Request for Information (RFI) is to assist the National Science Foundation (NSF) in conducting market research to determine
+the interest and capabilities of qualified companies/agencies for the opportunity described below. This request is for information purposes only
+to help NSF gain a better understanding of potential solutions and overall costs. Responses will assist NSF in developing the acquisition
+strategy including the alternatives analysis and in determining the appropriate approach for acquiring the systems implementation services,
+hosting and application management shared services, and software. Respondents must identify any information they consider to be sensitive or
+proprietary.   Vendors are encouraged to limit their use of sensitive and proprietary information.  However should responses contain sensitive
+and proprietary information, the information will be handled accordingly.  Any information submitted will not be returned, and no payment will
+be made by the Government for such information.
+
+This RFI is not a request for proposal and the Government will not award a contract pursuant to this announcement. No solicitation package is
+available at this time and requests for solicitation packages will not receive a response. Please do not contact the NSF CFO and CIO or their
+staff at this time.
+
+NSF has contracted with PricewaterhouseCoopers LLP (PwC) under NSFDACS08D1596 for financial management modernization planning support, among
+other services. As part of the financial management modernization planning support task, PwC is required to assist NSF in conducting market
+research. Part of the market research includes the development of the RFI and review of responses resulting from the issuance of the RFI. In
+accordance with Part 9 of the Federal Acquisition Regulation (FAR) it has been determined that as a result of receiving award NSFDACS08D1596, an
+organizational conflict exists which will prohibit PwC from proposing on the design, development, and implementation effort that may result from
+this RFI.  Further, PwC is bound by confidentiality of information provisions under their contract with NSF.
+
+   About NSF
+
+The National Science Foundation (NSF), established by Congress in 1950, is the premier federal agency supporting research across  all  fields  of
+science and engineering and all levels of science and engineering education. NSF funds the best ideas and most promising  people,  searching  out
+the frontiers of science and engineering to foster high-risk, potentially transformative research that will generate important  discoveries,  new
+technologies, and a dynamic workforce. NSF also provides funding for advanced instrumentation and facilities that  allow  scientists,  engineers,
+and students to work at the forefront of knowledge. NSF has one location for all operations in Arlington, Virginia.
+
+Although NSF's annual budget represents less than 4 percent of the total federal budget for research and development, NSF provides more  than  40
+percent of the federal support for nonmedical basic research at America's colleges and universities. NSF  is  the  principal  source  of  federal
+academic support. NSF supports research and education through a competitive, merit-based review process.
+
+Basic research generates new ideas that support productivity growth and an improving quality of life. Basic  research  underpins  the  technology
+that is fueling today's global market. Innovation and technology are engines of the American economy, and advances  in  science  and  engineering
+provide the fuel. NSF-supported discoveries have contributed to the nation's knowledge base, to our economy, and to the high standard  of  living
+Americans enjoy. Moreover, the new knowledge and new tools, methods, and processes generated by NSF's investments provide insight  into  many  of
+today's complex national and global challenges. NSF's task is to kindle the leadership and excellence in basic research and education that  keeps
+America at the leading edge of science, engineering, and technology.
+
+   RFI Purpose
+
+NSF is in the process of replacing its legacy financial management, budget execution, and property management systems under an effort known as
+iTRAK. NSF is also considering the feasibility of including the acquisition system as part of iTRAK. To replace these systems, iTRAK requires
+support in the form of systems implementation services, hosting and application management shared services, and software. NSF plans to acquire
+all services and software through a single acquisition process that will result in one award.
+
+This notice is issued solely for information and planning purposes. It is not a solicitation and does not constitute a request for proposal
+(RFP). NSF may release an RFP and respond to questions at a later date. If NSF proceeds with a formal procurement process, the proposed solution
+will have to be in compliance with all relevant federal laws and regulations (as defined in the procurement).
+
+NSF may conduct a single public-private competition to acquire all required integration services, hosting and application management shared
+services, and software. The services and software will be acquired from a Federal government Financial Management Line of Business (FMLoB)
+Shared Service Provider (SSP) using an inter-agency agreement or from a commercial vendor using a yet to be determined contract vehicle.
+
+The competition will be guided by the Office of Management and Budget’s (OMB) Competition Framework for Financial Management Lines of Business
+Migrations [May 22, 2006][1] and the Financial Systems Integration Office (FSIO) FMLoB Migration Planning Guidance [Version 1, September 13,
+2006][2]; however, neither of those documents will form the basis of any evaluation of offers submitted in response to an RFP. Rather, the
+competition will be conducted in accordance with applicable provisions of the Federal Acquisition Regulation (FAR)[3], and offers will be
+evaluated in conformance with the provisions of the FAR and the terms of the solicitation.
+
+If NSF releases an RFP it may include:
+
+   1. A performance-based statement of work, instructions for the submission of technical and price quotations, evaluation criteria, information
+      about the requirements for a mandatory proof of concept, and applicable general terms and conditions.
+
+   2. A set of system requirements consisting of applicable FSIO requirements and NSF-specific requirements.
+
+   3. Information about NSF’s business processes related to grants financial management and property management.
+
+   4. Information about NSF’s other business processes, including procurement, accounts payable, accounts receivable, etc.
+
+   5. Information about NSF’s existing financial systems architecture, including information about automated and manual interfaces and feeder
+      systems.
+
+
+     Key Business Drivers
+
+To provide some additional background and context for NSF's iTRAK project, a list of key business issues driving NSF's need for financial
+systems modernization follows:
+
+   1. NSF is a leader in grants management and a key element for the future financial system is to meet the grant financial requirements and
+      fully integrate with the financial system.
+
+   2. The current lack of an integrated PP&E system is resulting in a variety of manually intensive procedures which are prone to errors. An
+      integrated PP&E system would ultimately improve the integrity, accountability, completeness, and timeliness of reporting PP&E activities in
+      NSF’s financial statements.
+
+   3. Ever evolving business processes and compliance requirements necessitate constant modifications to Financial Accounting System (FAS) which
+      are costly and inefficient. The level of effort to develop and test system changes and increased external manual processes can reduce the
+      efficiency, effectiveness and accuracy of the financial information.
+
+   4. OMB is defining a government-wide account classification structure and standard business processes that NSF will be required to implement.
+
+
+
+   5. OMB Circular A-127 requires that agencies record financial events at the transaction level in a manner that is consistent with the
+      applicable definitions, attributes, and processing rules of the U.S. Standard General Ledger (USSGL). There are a growing number of
+      variances between current FAS functionality and the most recent OMB/Financial Systems Integration Office requirements. NSF has a number of
+      transaction codes that are not compliant with the Standard General Ledger (SGL) and the established Treasury standards.
+
+   6. The current lack of an integrated Procurement System is resulting in manual procedures for both ensuring that funds have been appropriately
+      committed as well as obligated once an award has been made and thus prone to errors.  An integrated Procurement System would improve the
+      integrity and timeliness of reporting obligation activities in NSF’s financial system.
+
+
+   Project Scope and Approach
+
+NSF environment includes numerous custom systems designed and developed to meet  specific  business  requirements.  The  custom  systems  include
+functions and features that were engineered to take advantage of technology available during development.  The  systems  are  tightly  integrated
+including shared tables and relevant data records. The details of the existing environment are provided in  the  following  section  Current  NSF
+Environment.
+
+NSF is conducting market research [FAR 10.001] to arrive at the most suitable approach for acquiring the systems implementation services,
+hosting and application management, business services, and software to migrate to a FSIO certified financial system. Additional capabilities
+under consideration include integration or replacement of the current acquisition system and installation of property management and budget
+formulation systems.  As part of the Market Research, NSF reserves the right to conduct one-on-one meetings with vendors that provide in-depth
+or unique responses.  The NSF will consider partial responses.
+
+NSF invites Federal SSPs and commercial vendors to assist with this research by providing responses to each question below.
+
+
+1 Deployment Approach
+
+   1. What deployment approach do you suggest for financial system implementation into your environment - phased, big bang, hybrid? Describe the
+      important factors in recommending an approach. Include definition of the approach, functionality deployed, duration in months, benefits and
+      limitations.
+
+   2. What deployment approaches have your customers used in past implementations?
+
+   3. What are lessons learned on specific deployment approaches?
+
+
+2 Scope
+
+   1. Describe the real and personal property capabilities as an integrated part of the financial system and/or as a third party interface to the
+      system. What third party systems are integrated as part of the asset management system? Is the integration in real time, near real time or
+      batch? What approach do you recommend for real and personal property management?
+
+   2. Does the system include acquisition capabilities as an integrated part of the financials system and/or as a third party interface to the
+      system? What third party acquisition or contract writing system has been integrated to the financial system? Is the integration in real
+      time, near real time or batch? Describe the integration and supported processes. What approach do you recommend for acquisition management?
+
+   3. Describe the integration and supported processes between the PP&E and acquisition systems. Is the integration in real time, near real time
+      or batch? What approach do you recommend for integrating the two systems?
+
+   4. Does the system include budget formulation and reporting capabilities as an integrated part of the financials system and/or as a third
+      party interface to the system capabilities as an integrated part of the financial system and/or as a third party interface to the system.
+      What third party systems are integrated as part of the budget formulation system? Is the integration in real time, near real time or batch?
+      Please list the capabilities. What approach do you recommend for budget formulation and reporting?
+
+   5. Provide possible approaches and/or best practices for integrating reporting tools with the financial system. What reporting strategy do you
+      recommend for operational and federally mandated reports?
+
+
+3 Data Conversion
+
+   1. What tools, protocols and other methodologies do you suggest for the development of conversion programs? Describe each, including the
+      benefits and limitations.
+
+   2. What strategy do you recommend for data conversion from legacy systems?  Is there data that you recommend not converting?  How should that
+      data be stored for historical reference and to be compliant with data retention guidelines?
+
+   3. How many years of historical data do other customers maintain after go-live of the new system? Is there an archive process that provides
+      limited access to data?
+
+   4. Provide possible approaches and/or best practices for executing data clean-up and data conversion.
+
+
+4 Services - Accounting, Reporting, Helpdesk
+
+   1. What are the support models you have to provide accounting and reporting services?
+
+   2. What are the estimated costs (ROM) associated with each level of service?
+
+   3. Explain what functions the helpdesk will provide and how it will interact with the NSF helpdesk.
+
+
+5 General Questions
+
+   1. Change management is crucial to the success of a financial systems implementation.  What best practices are you aware of in this area?
+
+   2. What type of training do you offer?  Describe the training options including benefits and limitations. What are the estimated costs
+      associated with training?
+
+   3. Are you aware of any best practices in training users on a new software package?  If so, please describe.
+
+   4. What Operational support do you provide and what are the estimated associated costs?
+
+   5. What forums or methods are used to collect input from your customers such as feedback, functionality requests, etc?
+
+   6. What are some key lessons learned from past implementations you were responsible for and/or are aware of?
+
+6 Estimated Costs
+
+   1. On the Costing Estimates spreadsheet provided as part of the RFI package (Appendix C), provide approximate cost information (rough order of
+      magnitude estimates) for expected system implementation costs for deployment  as well as for yearly ongoing operational costs - based on
+      the minimal requirements outlined in the RFI (assuming it can be used with no major modification).  Appendix A: Current System Data and
+      Appendix B: Interface Definitions are provided to support this estimate.
+
+   2. The vendors are requested to identify the cost drivers for an effort of this nature.  In addition, vendors are requested to identify the
+      cost factors that present the most risk.
+
+
+
+   Current NSF Environment
+
+NSF workforce has approximately 1295 full time employees and is characterized by constant change due to the ever-changing scientific landscape,
+new workplace technologies and rotating staff.  Uniquely structured, NSF’s workforce is comprised of permanent and temporary staff including
+“rotators” who work as Intergovernmental Personnel Act (IPA) researchers or Visiting Scientists, Engineers and Educators (VSEEs). NSF’s
+workforce consists of four primary job family groupings: Management, Science and Engineering, Technical and Functional, and
+Administrative/Support.
+
+Financial System
+From a business systems standpoint, NSF systems today are a mix of in-house developed systems, Commercial-off-the-Shelf (COTS) software and eGov
+solutions. The legacy financial system has been serving NSF for over 20 years and has had a number of technology upgrades. It currently runs on
+a Sybase server with PowerBuilder, C++ and Java as the front-end development tools. The Financial Accounting System (FAS) is an on-line real
+time system and is the primary vehicle for managing all funding allocated to NSF. A central transaction management procedure called the “post-
+routine” represents the core of the system, handling the full spectrum of financial transaction processing, accounts maintenance, transaction
+history, and rules processing. This procedure processes any financial request, whether generated from within the Financial System itself or by
+an external system. NSF Current System information is available in Appendix A.
+
+FAS is extensively integrated with all of NSF’s core business systems including the e-Jacket, Proposal and Reviewer System, the Awards System,
+Guest Travel System, and the FastLane System in support of Grants management. FAS is the main tool NSF staff utilizes to monitor, control, and
+execute financial accountability of approximately $6B for 20,000 active grant awards with 2000 external grantees by using assistance agreements.
+
+In FY05 NSF implemented an interface with the Federal Personnel and Payroll System (FPPS) that provides employees with web based access to their
+employee information.  In FY06, NSF implemented a near real-time interface between FAS and FedTraveler that includes evaluation of funds
+availability and funds obligation. NSF expects the same type of data exchanges with other externally provided E-Gov cross-services. The e-
+Learning /FAS interfaces are scheduled to be implemented in FY 2009.
+
+Property, Plant, and Equipment
+NSF properties are categorized as follows: Construction in Progress, Real Property, Equipment (PP&E) and Software in Development. NSF-owned
+properties are both internal and external to the organization. Currently, NSF has a legacy property management system. NSF has approximately
+$379 million of PP&E in Antarctica that is managed by a contractor.
+
+Grants Financial Management
+One of the key successes to NSF’s long standing tradition of strong financial management is the integration that exists between the grants
+management, grant financial management and financial processes. Data is passed between grants management and the financial system.
+
+FAS was customized to support NSF’s grants management process and contains functionality specifically designed to support the award and
+administration of grants. One example of this customization is the integration with other NSF systems that allows grantees to check available
+funds in FAS in real-time through FastLane. As grants management is integral to the mission of the Foundation, over the years a considerable
+amount of time and money has been invested to integrate the grants management systems with FAS and other administrative support systems.
+
+The grant financial requirements for commitment and obligation accounting are embedded in FAS and Fastlane. Payment requests (or cash drawdowns)
+are initiated in Fastlane, processed through the FAS Post Server and entered on the payment file created by FAS. NSF grants are drawdown based
+on the pooling methodology. Grantees make cash advance requests (at any time throughout the year) and submit expenditure reporting (at anytime
+throughout the year, but required quarterly) using FastLane. Over 90% of NSF grantees request cash on a reimbursable basis for actual expenses
+already incurred. NSF uses a cash pooling process to allow a grantee to request lump sum cash advances without specifying a particular award.
+Within FAS, the Accounting Operations Branch (AOB) manages the recording of grant accruals in the general ledger and the appropriate financial
+statement reporting for the transactions.
+
+NSF grantees report grant expenses to NSF at the grant level using the Federal Cash Transactions Report (FCTR) or the Federal Financial Report
+(FFR). FAS creates the to-date grantee financial data to populate the information on the FCTR or the FFR reports in Fastlane, or Research.Gov in
+the future. Grantees then access the reports, enter their expenditure data and finalize the report. FAS also runs a procedure to post grantee
+reported expenditures from the grant level to the amendment and/or funding site level using a modified FIFO methodology. Many of the grant
+financial processes are not supported by the FSIO certified software applications, therefore developing a strategy for addressing these
+processes will be critical to the success of the project.
+
+Another key factor to the future financial system is NSF is one of the Grants Management Line of Business (GMLoB) Consortia leads. Established
+under the Federal Financial Assistance Management Improvement Act (P.L. 106-107), GMLoB’s goals are to increase effectiveness and performance of
+financial assistance programs; to simplify Federal financial assistance and application requirements; to improve delivery of services to the
+public; and to enhance coordination of those responsible for providing grants services.
+
+Acquisition
+NSF currently uses the Automated Acquisition Management System (AAMS) (ProTrac/ProDoc) by Distributed Solutions, Inc. for acquisition.  AAMS is
+a Commercial off-the-shelf system recently deployed to provide a uniform tool to support acquisition processing.  The system is not integrated
+to the FAS financial system to provide commitment and obligation accounting.
+
+NSF currently uses the JP Morgan Purchase Card solution for acquiring purchases at or below the micro-purchase threshold, as appropriate. The
+charges are paid through the Treasury Secure Payment System and the information is entered into FAS.
+
+Reporting
+NSF’s accounting and financial systems staff created customized desktop solutions using Microsoft Access with the ability to produce its
+financial statements including the Closing Package statements, generate automated closing entries, produce the SGL Tie points reports, other
+reports to assist in reconciling account balances, and to create journal vouchers.
+
+NSF’s Enterprise Information System (EIS), the FAS and the Report.web reporting system that provides financial, budgetary, awards and
+performance information (including PART) is accessible in multiple formats at every workstation on a 24/7, real-time basis. EIS reflects data
+extracted from NSF systems including FastLane, eJacket, the Award system, Proposal, PI, Meeting, Budget & Reviewer System (PARS), and FAS. EIS
+also provides business information such as dwell time, funding rates, reviewer statistics, and financial data. Managers use this information to
+make decisions regarding NSF budget priorities and business processes. NSF’s Statement of Net Cost uses the FAS to report the full cost of each
+strategic goal.
+
+Future NSF Environment
+Most of NSF systems, including FAS, FastLane, eJacket and EIS are hosted in a data center located at NSF in Arlington, VA. NSF is transitioning
+services and systems to offsite locations. For example, as part of government-wide initiatives, the Department of Interior provides offsite
+payroll services for NSF, and the Office of Personnel Management provides offsite training services for NSF. In addition, NSF is piloting a new
+hosting model where some of NSF systems are located in offsite facilities. Research.gov, a Federal web portal led by NSF with a vision to
+centralize customer service for the research community while streamlining and standardizing business processes among partnering federal
+agencies, is hosted at a facility in Ashburn, VA. Services and/or systems associated with the modernization of NSF’s financial management system
+will be hosted external to NSF’s onsite data center, and will need to interface with systems and services located in disparate locations.
+
+In addition to transitioning from an onsite to an offsite hosting model, NSF is also transitioning its technology platform.  The new technology
+platform uses (1) an Oracle Database Management System, (2) various BEA products including their WebLogic Server, WebLogic Portal, AquaLogic
+Service Bus and AquaLogic Business Process Management (BPM) solution, (3) various content management software products from Interwoven, and (4)
+select products from EMC Documentum. All new NSF systems, including those that will need to share services and data with NSF’s financial
+management system, will use a technology platform based on these products.
+
+   Request for Information: Additional Detailed Questions
+
+In addition to the market research data requested in Section 5 Project Scope and Approach, NSF requests responses to the detailed questions
+below to obtain a better understanding of the available alternatives to meet NSF specific requirements.
+
+
+1 Compliance with Federal Standards
+
+   1. Have the property capabilities in the system been reviewed against the latest FSIO Property Management System Requirements - October 2000
+      available on the FSIO website? If so, are the results for mandatory and value add requirements available?  Please provide a copy.
+      http://www.fsio.gov/fsio/fsiodata/docs_systemrequirements.shtml
+
+   2. Have the grants financial capabilities in the system been reviewed against the latest FSIO Grants Financial System Requirements - June 2002
+      available on the FSIO website?  If so, are the results for mandatory and value add requirements available?  Please provide a copy.
+      http://www.fsio.gov/fsio/fsiodata/docs_systemrequirements.shtml
+
+   3. Have the procurement capabilities in the system been reviewed against the latest FSIO Acquisition Financial System Requirements - June 2002
+      and Addendum to Core Financial System Requirements - March 2006 available on the FSIO website?  If so, are the results for mandatory and
+      value add requirements available?  Please provide a copy.  http://www.fsio.gov/fsio/fsiodata/docs_systemrequirements.shtml
+
+   4. The COTS system must be certified against Core Financial Systems Requirements - January 2006 FSIO requirements and include capabilities to
+      meet the mandatory requirements.  Are the results for value add requirements available?  Please provide a copy.
+      http://www.fsio.gov/fsio/fsiodata/docs_systemrequirements.shtml
+
+   5. Do you plan to incorporate FSIO certified configurations? What is the timeline for deploying the FSIO certified configurations?
+
+   6. Do you plan to incorporate Common Government Account Classification (CGAC) required values? What is the timeline for deploying the CGAC
+      configurations
+
+   7. FMLoB Federal Shared Service Provider Due Diligence Checklist (Optional for commercial entities) Please provide the most up-to-date FMLoB
+      Due Diligence Checklist for your organization.  The checklist can be downloaded at
+      http://www.fsio.gov/fsio/fsiodata/fmlob_migrationplanning.shtml
+
+
+2 Property, Plant & Equipment (PP&E)
+
+   1. NSF property includes assets acquired and controlled by third parties.  Does the system include the ability to import and maintain assets
+      from third party systems?  Describe the complexity of importing assets from third party systems. Can the system provide reports and query
+      capability with a summery of transactions?
+
+   2. Does the system include the ability to acquire, maintain, transfer, and dispose of personal and real property?  Describe the processes
+      including automated and manual steps.  Are the appropriate accounting entries automatically generated within the system?
+
+   3. What type of inventory tracking functionality does the system provide? Can it generate bar code labels and interface to a scanner?
+
+   4. How does the system support capturing acquisition data and/or initiate the capture of information at the point of obligation of funds?  Are
+      notifications available to support property tracking for acquired assets at the time of obligation?
+
+   5. Does the PP&E system integrate with the purchase card provider system?  Describe notifications available to support property tracking for
+      acquired assets using the purchase card.
+
+   6. Does the PP&E system support Bar Coding for property and locations at the time of receipt and during placement into facility locations?
+      Are third party tools required to support this process?  What are the third party tools?
+
+   7. Describe how the PP&E system supports Radio Frequency Identification (RFID) to manage and track assets.  Are third party tools required to
+      support this process?  What are the third party tools?
+
+   8. Describe how the PP&E system support disposal of assets through GSA.  Is the disposal process integrated to GSA or manual?
+
+   9. Provide possible approaches and/or best practices for integrating the financial system with the PP&E system.
+
+
+3 Grants Financials Management
+
+   1. Has the system been integrated to a grants line of business or third party provider of solicitation and award of grants capabilities?  If
+      so, is the integration in real time, near real time or batch?  What grant systems were integrated?  Describe the integration and supported
+      processes.
+
+   2. The pooling process allows grantees to request funding from multiple agreements in a single request.  Does the financial system support
+      pooling by allowing pooled advance payments that are allocated to agreements based on specific algorythms?  Does the system reconcile and
+      charge the actual agreement when the quarterly report is received? If the financial system does not support pooling, how does it process
+      payment requests?
+
+   3. Does the system generate and handle Federal Financial Reports (FFR) utilized for grant reporting? If so please explain the capabilities and
+      the interface for grantees to submit the FFR.
+
+   4. How robust are the FSIO compliant software in the area of grants financials? Please provide details. If not robust, are there any third-
+      party software packages NSF should look at to integrate with the core financials?
+
+   5. Provide possible approaches and/or best practices for integrating the financial system with the grants management system and executing the
+      grant financial processes.
+
+
+4 Acquisition Management
+
+   1. Provide the system's acquisition reporting capability to support management, end users, administrators, and auditors.
+
+   2. Is the acquisition system compliant with government-wide E-Gov initiatives (Integrated Acquisition Environment)?  Provide details.
+
+   3. Does the acquisition system automate the generation of regulatory procurement-related documents and forms (including simplified
+      acquisitions, large contracts, delivery order and task order awards and modifications) utilizing applicable procurement regulations (e.g.
+      FAR and agency FAR supplement)?
+
+   4. NSF currently uses the Automated Acquisition Management System (AAMS) (ProTrac/ProDoc) by Distributed Solutions, Inc. for acquisition.
+      Provide possible approaches and/or best practices for integrating the financial system with AAMS or if recommended, another acquisition
+      system.
+
+   5. Does the system include integration to the Federal Procurement Card providers (NSF uses JP Morgan Chase)?  What functionality is available
+      to support of validation and approval of disbursement?  Are third party tools required to support this process?  What are the third party
+      tools?
+
+
+5 Interagency Agreements
+
+   1. Does the system provide the capability to record and manage interagency agreements (IPAC)? If yes, describe.
+
+   2. Does the system provide an automated process to track costs, bill, collect (IPAC) and report on reimbursable agreements for NSF? Describe
+      the supported processes.
+
+   3. Does the system provide an automated process to record interagency agreement payments (IPAC) from NSF? Describe the supported processes.
+
+   4. Provide possible approaches and/or best practices for managing interagency agreements.
+
+
+6 Budget Formulation and Execution
+
+   1. Does the budget system/module have the functionality to establish and maintain strategic plans, including resource data, planned
+      performance, and actual performance? If yes, please list the capabilities
+
+   2. Does the budget system/module connect to external systems such as the core financial system and the payroll system, etc.?
+
+   3. Does the budget system/module have the ability to link funding amounts and transactions (obligations) to performance goals? If yes, please
+      list the capabilities.
+
+   4. Does the budget system/module have the ability to categorize the same funding amount multiple ways (e.g. a single dollar may contribute to
+      both an add and a non-add)? If yes, please list the capabilities.
+
+   5. Have the budgeting capabilities in the system been reviewed against the decision matrix developed by the interagency Budget Formulation and
+      Execution Line of Business?  If so, what are the results available?
+
+
+7 Financial Management
+
+   1. What process is used to retire general ledger data from cancelled accounts?  Where is GL data that is retired from production stored?  Can
+      it be easily accessed for data mining purposes?
+
+   2. NSF uses the Federal Personnel and Payroll System (FPPS). Provide possible approaches and/or best practices for interfacing with FPPS.
+
+   3. Describe the payment management capabilities offered by the system.
+
+   4. What kind of tools does the system offer to reconcile with the Treasury GOALS II system? Describe the supported processes.
+
+
+8 Reporting
+
+   1. What tools are available for reporting from the system for end users and advanced users?  Do the tools include Federal specific data and
+      reporting capabilities? Describe the tools and related capabilities.
+
+   2. Does the system have an enterprise information system component that could be used by management and non-financial users?
+
+   3. Does the system provide OLAP reporting against the entire base transaction set?  If yes, does the OLAP access follow the standard API and
+      support standard reporting tools: [specifically Excel, Tableau etc..]?  If access via the standard OLAP API is not provided is there any
+      “Cube” based multi-dimensional reporting capability?
+
+   4. How has the system been implemented in conjunction with a third-party data warehouses?  Has the replication been real time, near real time
+      or batch? Describe the data warehouses and supported processes.
+
+   5. Does the system include reports developed specifically for Federal customers? Describe the reports.
+
+   6. In the past, the certified FSIO COTS solutions did not easily support the generation of financial statements.  A third party reporting tool
+      was necessary to generate financial statements.  How have the COTS solutions evolved in this area?  If they have not, what are the
+      recommended third party tools to generate financial statements and to produce ad hoc financial reports and financial queries?
+
+   7. Are all the federally mandated reported generated directly from the financial system? If no, describe the process.
+
+
+9 Vendor Management
+
+   1. NSF uses two vendor data systems, the government-wide database known as Central Contractor Registration (CCR), and the Institution Database
+      (NSF specific).  Describe approaches for interfacing these two systems with the financial system.
+
+
+10 Internal Controls
+
+   1. What integrated or third party tool is available to support Governance, Risk and Compliance (GRC) within the system? How does it integrate
+      with existing e-authentication or LDAP models in use at other agencies?
+
+   2. How does the system and tools support OMB Circular A-123, Appendix A testing and reporting?
+
+   3. Do you have standard configurations for the applications which you recommend?  What options are available to the agency? What are you doing
+      to address or participate in FSIO's initiative to standardize configurations?
+
+   5. Provide possible approaches and/or best practices for integrating GRC functionality with the financial system.
+
+
+11 Interfaces
+
+   1. What interfaces to other eGov initiatives have you developed and deployed? Describe the interfaces and supported processes.
+
+   2. What tools, protocols and other methodologies do you suggest for the development of interfaces? Describe each including the benefits and
+      limitations.
+
+
+12 Technical
+
+   1. Does the hosting solution allow for customer specific application instances or are they shared? What is the cost differential for each
+      option?  What are the benefits and limitations of each option?
+
+   2. Describe the release process in a shared environment and a stand alone environment. What is the release process for break fix, enhancements
+      and patches into the environment? How are major upgrades deployed into each type of environment? What is the customer participation for
+      break fix, enhancements, patches and major upgrades?
+
+   3. What is the release process for upgrades to the technology stack and applications? What are the impacts of upgrades on the customer? Are
+      there any costs associated with upgrades?
+
+   4. Is there customer involvement in testing? How is User Acceptance testing and Integration testing handled?
+
+   5. Does the system provide advanced users direct SQL access to production data or replicated data in near real time?
+
+   6. What process is used to retire data from cancelled accounts? Where is data that is retired from production stored? Can it be easily
+      accessed for data mining purposes?
+
+   7. What connection mechanisms and protocols are used to connect users and systems from customers to the system?
+
+   8. What specific security requirements must be met to connect to the system for the users and interfaces?
+
+   9. Describe how the system provides security management of users, roles, and permissions?
+
+  10. What type of redundancy is used for the infrastructure, hardware, data, etc?
+
+  11. What monitoring capabilities at the infrastructure level are used and how would the end user be notified of pertinent events?
+
+
+13 Standard Size
+
+   1. Please indicate if your company is a HubZone, Service-Disabled Veteran-Owned Small Business, Small Business, or other than Small Business.
+      NSF anticipates that the North American Industry Classification Systems (NAICS) Code for any procurement resulting from this RFI is 541512.
+
+
+14 Contract Type and Performance Based Considerations
+
+   1. Please provide the contract type(s) you have performed under for the same or similar services as those described in this RFI. Please be
+      concise and limit your response to this question to one page.
+
+
+15 Other
+
+   1. Are there other best practices/approaches or subject areas that we did not address in the questions above that you would like to describe?
+
+   Request for Information: Past Experience
+
+
+1 Experience Implementing Financial Systems
+
+List the recent U.S. Government clients where your organization has played a role in implementing FSIO (or JFMIP) compliant financial management
+systems. Provide a short description of the work performed and the interfaces that were developed (i.e.:  interface with CCR, payroll system)
+and implemented with the solution.  Also please provide the government point of contact information.
+
+
+   Submission Instructions
+
+
+1 Instructions for the Submission of Responses
+
+Please limit submissions to seventy-five (75) pages. This page limit does not include the cover page, table of contents, FSIO System
+Requirements in section 7.1, FSIO Due Diligence Checklist, and Appendix C - Costing Estimates. In addition, include a cover letter, not to
+exceed two pages, that provides your organization’s address, and at least two points of contact. The font size for body text must be 10 point or
+larger. Text in diagrams or other graphics may be smaller than 10 point, as appropriate. All margins must be 1 inch or larger. At a minimum,
+your organization’s name and a page number should appear in the header or footer of all pages that constitute the body of your response.
+
+Number your responses to match the question number. To maximize the space for your response, do not repeat the question as part of your
+response.
+
+Clearly identify all proprietary information contained in your response.
+
+Responses must be submitted in Microsoft Word 2000 or 2003 or PDF. Only electronic submissions via email will be accepted; oral responses,
+hardcopy responses, and electronic responses provided on physical media are not acceptable. Responses must be submitted via email to Ms. Kay
+Marie Rison, Contracts Specialist, at mrison@nsf.gov, no later than 5: 00 PM, EST, April 10, 2009.
+
+
+2 Instructions for the Submission of Questions
+
+Questions must be submitted in Microsoft Word 2000 or 2003 or PDF.  Only electronic submissions via email will be accepted.  Questions must be
+submitted via email to Ms. Kay Marie Rison, Contracts Specialist, at mrison@nsf.gov, no later than 5: 00 PM, EST, March 26, 2009.
+
+
+
+-----------------------
+[1] See http://www.fsio.gov/fsio/fsiodata/fmlob_migrationplanning.shtml
+[2] See http://www.fsio.gov/fsio/fsiodata/fmlob_migrationplanning.shtml
+[3] See http://www.acquisition.gov/far/index.html.
+

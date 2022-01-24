@@ -1,0 +1,1881 @@
+
+                                                            PERFORMANCE WORK STATEMENT
+                                                  WEB HOSTING AND SOCIAL MEDIA SECURITY SERVICES
+                                                            NSW RECRUITING DIRECTORATE
+
+1. BACKGROUND
+
+Naval Special Warfare Recruiting Directorate runs the authoritative websites sealswcc.com, leapfrogs.sealswcc.com, Training Forum, and mobile
+applications to inform and guide high potential candidates interested in becoming Navy SEALs (Sea, Air, Land special operators) and SWCC
+(Special Warfare Combatant Craft Crewmen). Intrinsic to its continued operation, the websites, forum and applications must be backed up by high
+quality and responsive technical support and server support to: ensure server security, database security, steady state Internet connection, and
+protection of the personal identifiable information (PII) of candidates participating in the forum.
+
+2.0   OBJECTIVES
+
+The purpose of this proposal is to contract for enhanced, comprehensive technical web hosting services. Services will ensure continuous website
+support for the official U.S. Navy websites, forum and apps, during both routine and extreme periods of usage. The Contractor will provide
+secure host servers, flexible bandwidth, security services and maintenance for Recruiting Directorate public websites, forum, and apps. The
+Contractor must be ready to assume website support on 12 July 2014 to ensure continuous service to the NSW Recruiting Directorate.
+
+3.0   SCOPE
+
+The Contractor shall provide the personnel, management, materials, and customer service required to ensure the security and continuity of the
+websites, forum, and apps.
+
+4.0   REQUIREMENTS
+
+4.1   WEB HOSTING SUPPLIES/SERVICES
+
+The Contractor shall provide an array of web hosting services that allows for increased bandwidth, with room for growth and enhanced networking
+equipment as needed. These services include:
+
+
+   4.1.1   Managed dedicated server hosting.
+   4.1.2   24x7x365 emergency telephone and email technical support.
+   4.1.3   24x7x365 monitoring of server resources, index file change activity and latency.
+   4.1.4   Perimeter managed firewall protection and policy configuration.
+   4.1.5   Anti-virus & access protection software and virus remediation.
+   4.1.6   Full Root / Administrative server access to servers.
+   4.1.7   Client provided software installation and general website technical support.
+   4.1.8   Client control panel integration including website, DNS and file management.
+   4.1.9 Domain name management services to purchase, renew, and edit contact details.
+   4.1.10 Managed daily data backup service with versioning and retention.
+   4.1.11 File backup restoration services and remediation.
+   4.1.12 Microsoft operating system security updates installation and support.
+   4.1.13 File and folder Access Control List (ACL) permission configuration and management.
+   4.1.14 Raw website log compression and event log management.
+   4.1.15 Access to shared hosting resources including email, MySQL and MS SQL databases.
+   4.1.16 Microsoft Network Load Balancing (NLB) – with Class-C Affinity.
+    18. VV Engine file synchronization software between load-balanced servers.
+   4.1.18 Maintenance of shared configuration and file synchronization between load-balanced servers.
+   4.1.19 Maintenance and management of Internet Information Services 8.5.
+
+4.2         BANDWIDTH SERVICES
+
+The Contractor will provide two levels of bandwidth services as described herein and be prepared to move seamlessly from level 1 to level 2 as
+may be required to ensure uninterrupted web service. The Contractor will invoice each month only for the service provided under each level. The
+Contractor will advise the NSW Recruiting Directorate when approaching the contract limits for each level. Level 1 support is assumed to be the
+steady state. Level 2 will be delivered during higher website use.
+
+      4.2.1 Level 1: Sustained, committed, monthly bandwidth at a minimum of 25Mbps per month.
+
+      4.2.2 Level 2: Additional 90 days per year of committed bandwidth at 25Mbps to be made available on demand as needed for peak traffic
+outside normal allocated bandwidth. Unused bandwidth at this level, purchased separately and committed, may be held in reserve if unneeded and
+does not expire until the end of the contract year. Excess, unused bandwidth will not be billed to the Government.
+
+4.3   TECHNICAL MANAGEMENT / HOSTING REQUIREMENTS FOR ONLINE FORUM
+
+The Contractor will be required to provide technical and database support for an online forum, aka bulletin board, with commercial software
+provided by Naval Special Warfare. This forum resides on the website www.sealswcc.com.
+
+4.4         WEB DEVELOPMENT AND CONSULTATION SERVICES
+
+The Contractor will propose a maximum number of technical support hours, if such a limit exists, that would be made available to the NSW
+Recruiting Directorate in support of each of the specific requirements below. The Contractor will invoice each month only for the service
+provided under each item of support. In the bid proposal, the Contractor will establish maximum costs for each item anticipated over the period
+of performance (12 months) and may not exceed that cost without contract modification.
+
+   1. Vulnerability Scan and Security Assessment Report: Contractor will conduct a website and web server threat assessment and vulnerability
+      test against all servers for security related issues a minimum of every six months. Contractor will prepare a report for websites,
+      subdomains and apps. The assessment report will summarize recommendations to repair all threats discovered and will include:
+
+
+     1) A checking of all files to see if hacked or would otherwise enable a dangerous gateway;
+     2) A manual review of all databases to see if any fields have been injected with harmful code; and,
+     3) A review of any previous security reports to check for outstanding issues.
+
+   2. Web Application Firewall: Contractor will provide additional management and consulting services as follows:
+
+     1) On-going general configuration for the handling of false-positive reports;
+     2) Creation of exception policies and IP whitelist management;
+     3) Manual synchronization of configuration and exception configurations to the load-balanced server; and,
+     4) The purchase, installation and configuration of software upgrades.
+
+   3. Mobile Application Maintenance and Updates: Contractor will ensure the continuity, maintenance, and currency of the NSW Physical Screening
+      Test (PST) Training mobile application. Initial development is not required under this Performance Work Statement.
+
+   4. General Updates to Computer Code and Software: Contractor will implement recommended security modifications and general code modifications
+      per request.
+
+5.0         DELIVERABLES
+
+The Contractor shall adhere to the following deliverables table.
+
+|  Deliverable                                                  |PWS Ref.          |Delivery  Date                                         |
+|Site/app statistics                                            |11.3              |Submit weekly each Friday                              |
+|Level 1 Bandwidth Services Report                              |4.2.1             |Report by E-mail when 10% of contract limits are       |
+|                                                               |                  |reached                                                |
+|Level 2 Bandwidth Services Report                              |4.2.2             |Report by E-mail when 10% of contract limits are       |
+|                                                               |                  |reached                                                |
+|Website and web server threat assessment and vulnerability Test|4.4.1             |Submit written report, minimum  every six months (Dec  |
+|Report                                                         |                  |and Jun) within 1 week of assessment completion        |
+|Report of PII Breach                                           |8.2               |Report by phone or E-mail immediately upon discovery   |
+
+6.0         CONTRACTOR MANPOWER REPORTING
+
+The contractor shall report ALL contractor labor hours (including subcontractor labor hours) required for performance of services provided under
+this contract for the Recruiting Directorate via a secure data collection site. The contractor is required to completely fill in all required
+data fields using the following web address: http://www.ecmra.mil/.  Reporting inputs will be for the labor executed during the period of
+performance during each Government fiscal year (FY), which runs October 1 through September 30. While inputs may be reported any time during the
+FY, all data shall be reported no later than October 31 of each calendar year, beginning with 2013. Contractors may direct questions to the help
+desk at help desk at: http://www.ecmra.mil.
+
+
+7.0         CONTRACTOR TRAVEL
+
+No Contractor travel is planned or anticipated for the proper performance of this contract.
+
+8.0         SECURITY
+
+8.1   Perform offsite work with Personally Identifiable Information (PII) only on systems that meet Department of Defense Information Assurance
+Certification and Accreditation Process (DIACAP) requirements and will be updated on an on-going basis to continue to meet DIACAP requirements.
+Systems must have and maintain an Authority to Operate (ATO) or if acceptable to the government, an Interim Authority to Operate (IATO).
+
+8.2   Contractor and all Contractor personnel with access to or responsibility for nonpublic Government data under this contract shall comply
+with DoD Directive 8500.1 Information Assurance (IA), DoD Instruction 8500.2 Information Assurance (IA) Implementation, DoD Directive 5400.11
+DoD Privacy Program, DoD 6025.18-R DoD Health Information Privacy Regulation, DoD 5200.2-R Personnel Security Program, and Homeland Security
+Presidential Directive (HSPD) 12.
+
+8.3   Contractor shall establish appropriate administrative, technical, and physical safeguards to protect any and all nonpublic Government data
+to ensure the confidentiality, integrity, and availability of government data.
+
+8.4   Contractor systems and information networks that receive, transmit, store, or process nonpublic government data must be accredited
+according to DoD I 8510.01 DoD Information Assurance Certification and Accreditation Process (DIACAP) and comply with annual Federal Information
+Security Management Act (FISMA) security control testing.  All systems subject to DIACAP must present evidence of Certification and
+Accreditation (C&A) testing in the form System Identification Profile (SIP), DIACAP Implementation Plan (DIP), DIACAP Scorecard and Plan of
+Action and Milestones (POA&M).  Evidence of FISMA compliance must be presented in the form of a POA&M.  The Contractor will be responsible for
+the cost of IA C&A and FISMA testing required for any Contractor owned and operated network, facility and/or application processing DoD
+information.
+
+8.5   Contractor personnel with access to or responsibility for nonpublic Government data under this contract must comply with HSPD-12 Personal
+Identity Verification (PIV) issuance requirements, known as the Common Access Card (CAC) for NSW and must:
+
+8.5.1 Be CAC or PIV ready prior to reporting for work.  At minimum all Contractor personnel must obtain/maintain a favorable FBI National
+Criminal History Check (fingerprint check), two forms of identity proofed identification (I-9 document), and submit a National Agency Check and
+Law Credit (NACLAC) vetting package for processing.  Obtaining CAC or PIV ready status is the responsibility of the contracting agency.  It is
+the responsibility of the contracting agency to notify NSW when this is complete.
+
+8.5.2 Be citizens of the United States.
+
+8.5.3 Maintain favorable FBI National Criminal History checks and ensure completion and successful adjudication of a NACLAC as required for
+Federal employment.
+
+8.2   The Contractor shall report immediately to the COR discovery of any Privacy breach.
+
+
+9.0   GOVERNMENT FURNISHED PROPERTY/EQUIPMENT/INFORMATION (GFP/GFE/GFI)
+
+The Government will provide electronic files for the above mentioned websites and software to operate the online bulletin board.
+
+10.0  QUALITY CONTROL
+
+The contractor shall implement and maintain a Quality Control Plan (QCP) to ensure work performed conforms to the scope of work and meets the
+requirements under this PWS.  The QCP shall, at a minimum provide a method for performing inspections; identifying, correcting and preventing
+problems/defective service; addressing customer complaints, and improving the quality of services over the life of the contract.
+
+11.0  QUALITY ASSURANCE
+
+11.1  The Government reserves the right to perform inspections and surveillance to evaluate the Contractor’s compliance to the contract terms
+and performance of the requirements in the PWS. The Government will make every effort to ensure that the surveillance methods described below
+are conducted in an objective, fair, and consistent manner.
+
+11.1.1      Periodic Surveillance. This action occurs when the COR or other Government official observes a deficiency. Examples include evidence
+from accidents, incidents, or delays. Regardless of where in the line-of-duty the COR observes contractual procedures not being followed, he/she
+has an obligation to document and report the deficiency to the Contracting Officer.
+
+11.1.2      Customer Complaint Surveillance. This action is instituted when the COR receives a complaint from a stakeholder regarding contractor
+service.  The COR will obtain the complaint in writing and then conduct an investigation to determine its validity. If the complaint is deemed
+valid, the COR will immediately notify the contracting Officer for action. The COR will notify both the Contract Manager and the complainant of
+the Government’s response to their complaint.
+
+11.2  Contract Discrepancy Report (CDR).  In the event of unsatisfactory contractor performance, the COR or CO will issue a CDR that will
+explain the circumstances and findings concerning the incomplete or unsatisfactory service.  The contractor shall acknowledge receipt of the CDR
+and respond in writing as to how he/she shall correct the unacceptable performance and avoid a recurrence.  The Government will review the
+contractor's corrective action response to determine acceptability and will use any completed CDR as part of an overall evaluation of Contractor
+performance when determining present or future contractual actions.
+
+11.3 The table below identifies the Critical Performance Elements and the respective Performance Standards and Acceptable Quality Levels (AQLs)
+which the Government will use to determine contractor performance.
+
+
+|Critical Performance Element                      |Applicable PWS Section       |Performance Standard                  |Acceptable Quality Level                  |
+|24/7/365 database support & programming updates   |4.1                          |Immediate phone or E-mail response    |Implementation within 24 hours            |
+|                                                  |                             |with Client                           |                                          |
+|Site/app statistics                               |5.0                          |Email PDF delivery                    |Weekly                                    |
+|Website/Forum Intrusion Prevention/PII            |8.1                          |Industry standard protection          |Quarantine and elimination of Intrusions; |
+|protection/General Security                       |                             |                                      |Zero breaches of PII, detailed reports    |
+|Website, Forum & Web Application Firewall         |4.4.2                        |Immediate phone/email response with   |Implementation within 24 hours            |
+|technical support                                 |                             |Client                                |                                          |
+|Flexible bandwidth service for website            |4.2                          |Commensurate with site visitor demand,|Commensurate with site visitor demand, at |
+|                                                  |                             |at least 25 mbps, with seamless       |least 25 mbps, with seamless integration  |
+|                                                  |                             |integration of second level service   |of second level service                   |
+|Website and web server threat assessment and      |5.0                          |Industry standard protection          |Minimum occurrence every six months       |
+|vulnerability test                                |                             |                                      |                                          |
+|Mobile application maintenance/updates            |4.4.3                        |Immediate phone/email response upon   |Implementation within 10 working days     |
+|                                                  |                             |Client request                        |                                          |
+
+12.0  APPLICABLE DOCUMENTS
+
+|Document                                                                     |Web link                                                                            |
+|DoDI 8500.2, Information Assurance (IA) Implementation                       |http://www.dtic.mil/whs/directives/corres/pdf/850002p.pdf                           |
+|DoDI  8510.01, DoD Information Assurance Certification and Accreditation     |http://www.dtic.mil/whs/directives/corres/pdf/851001p.pdf                           |
+|Process (DIACAP)                                                             |                                                                                    |
+
+13.0  PLACE OF PERFORMANCE
+
+Work shall be performed at the Contractor’s facilities and at the location of the servers to be employed.
+
+
+
+
+
+14.0  PERIOD OF PERFORMANCE
+
+Base Year: 12 July 2014 – 11 July 2015
+Option Year 1: 12 July 2015 – 11 July 2016, if exercised
+Option Year 2: 12 July 2016 – 11 July 2017, if exercised
+Option Year 3: 12 July 2017 – 11 July 2018, if exercised
+Option Year 4: 12 July 2018 – 11 July 2019, if exercised
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ATTACHMENT 2 – PRICING TEMPLATE BASE PERIOD
+
+ATTACHMENT 2 – PRICING TEMPLATE BASE PERIOD
+
+ATTACHMENT 2 – PRICING TEMPLATE BASE PERIOD
+
+ATTACHMENT 2 – PRICING TEMPLATE BASE PERIOD
+
+ATTACHMENT 2 – PRICING TEMPLATE BASE PERIOD
+
+ATTACHMENT 2 – PRICING TEMPLATE BASE PERIOD
+
+ATTACHMENT 2 – PRICING TEMPLATE BASE PERIOD
+
+ATTACHMENT 2 – PRICING TEMPLATE BASE PERIOD
+
+ATTACHMENT 2 – PRICING TEMPLATE BASE PERIOD
+
+ATTACHMENT 2 – PRICING TEMPLATE BASE PERIOD
+
+CLIN
+
+DESCRIPTION
+
+QUANTITY
+
+QUANTITY
+
+UNIT OF ISSUE
+
+UNIT OF ISSUE
+
+UNIT PRICE
+
+UNIT PRICE
+
+EXTENDED PRICE
+
+EXTENDED PRICE
+
+0001
+
+WEB HOSTING 
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+
+
+0002
+
+BANDWIDTH SERVICES
+
+BANDWIDTH SERVICES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0002AA
+
+LEVEL 1 SERVICE
+
+LEVEL 1 SERVICE
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+0002AB
+
+90 DAYS OF LEVEL 2 SERVICE
+
+90 DAYS OF LEVEL 2 SERVICE
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+0003
+
+TECHNICAL MANAGEMENT/HOSTING REQUIREMENTS FOR ONLINE FORUM
+
+TECHNICAL MANAGEMENT/HOSTING REQUIREMENTS FOR ONLINE FORUM
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+0004
+
+WEB DEVELOPMENT AND TECHNICAL SUPPORT SERVICES
+
+WEB DEVELOPMENT AND TECHNICAL SUPPORT SERVICES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0004AA
+
+VOLUNERABILITY SCAN AND SECURITY ASSESSMENT REPORT
+
+VOLUNERABILITY SCAN AND SECURITY ASSESSMENT REPORT
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+0004AB
+
+WEB APPLICATIONS FIREWALL
+
+WEB APPLICATIONS FIREWALL
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+0004AC
+
+MOBILE APPLICATION MAINTENANCE AND UPDATE
+
+MOBILE APPLICATION MAINTENANCE AND UPDATE
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+0004AD
+
+GENERAL UPDATES TO COMPUTER CODE AND SOFTWARE
+
+GENERAL UPDATES TO COMPUTER CODE AND SOFTWARE
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+
+
+
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION ONE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION ONE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION ONE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION ONE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION ONE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION ONE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION ONE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION ONE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION ONE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION ONE
+
+CLIN
+
+DESCRIPTION
+
+QUANTITY
+
+QUANTITY
+
+UNIT OF ISSUE
+
+UNIT OF ISSUE
+
+UNIT PRICE
+
+UNIT PRICE
+
+EXTENDED PRICE
+
+EXTENDED PRICE
+
+1001
+
+WEB HOSTING 
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+
+
+1002
+
+BANDWIDTH SERVICES
+
+BANDWIDTH SERVICES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1002AA
+
+LEVEL 1 SERVICE
+
+LEVEL 1 SERVICE
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+0002AB
+
+90 DAYS OF LEVEL 2 SERVICE
+
+90 DAYS OF LEVEL 2 SERVICE
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+1003
+
+TECHNICAL MANAGEMENT/HOSTING REQUIREMENTS FOR ONLINE FORUM
+
+TECHNICAL MANAGEMENT/HOSTING REQUIREMENTS FOR ONLINE FORUM
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+1004
+
+WEB DEVELOPMENT AND TECHNICAL SUPPORT SERVICES
+
+WEB DEVELOPMENT AND TECHNICAL SUPPORT SERVICES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1004AA
+
+VOLUNERABILITY SCAN AND SECURITY ASSESSMENT REPORT
+
+VOLUNERABILITY SCAN AND SECURITY ASSESSMENT REPORT
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+1004AB
+
+WEB APPLICATIONS FIREWALL
+
+WEB APPLICATIONS FIREWALL
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+1004AC
+
+MOBILE APPLICATION MAINTENANCE AND UPDATE
+
+MOBILE APPLICATION MAINTENANCE AND UPDATE
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+1004AD
+
+GENERAL UPDATES TO COMPUTER CODE AND SOFTWARE
+
+GENERAL UPDATES TO COMPUTER CODE AND SOFTWARE
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+
+
+
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION TWO
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION TWO
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION TWO
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION TWO
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION TWO
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION TWO
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION TWO
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION TWO
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION TWO
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION TWO
+
+CLIN
+
+DESCRIPTION
+
+QUANTITY
+
+QUANTITY
+
+UNIT OF ISSUE
+
+UNIT OF ISSUE
+
+UNIT PRICE
+
+UNIT PRICE
+
+EXTENDED PRICE
+
+EXTENDED PRICE
+
+2001
+
+WEB HOSTING 
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+
+
+2002
+
+BANDWIDTH SERVICES
+
+BANDWIDTH SERVICES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2002AA
+
+LEVEL 1 SERVICE
+
+LEVEL 1 SERVICE
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+2002AB
+
+90 DAYS OF LEVEL 2 SERVICE
+
+90 DAYS OF LEVEL 2 SERVICE
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+2003
+
+TECHNICAL MANAGEMENT/HOSTING REQUIREMENTS FOR ONLINE FORUM
+
+TECHNICAL MANAGEMENT/HOSTING REQUIREMENTS FOR ONLINE FORUM
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+2004
+
+WEB DEVELOPMENT AND TECHNICAL SUPPORT SERVICES
+
+WEB DEVELOPMENT AND TECHNICAL SUPPORT SERVICES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2004AA
+
+VOLUNERABILITY SCAN AND SECURITY ASSESSMENT REPORT
+
+VOLUNERABILITY SCAN AND SECURITY ASSESSMENT REPORT
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+2004AB
+
+WEB APPLICATIONS FIREWALL
+
+WEB APPLICATIONS FIREWALL
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+2004AC
+
+MOBILE APPLICATION MAINTENANCE AND UPDATE
+
+MOBILE APPLICATION MAINTENANCE AND UPDATE
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+2004AD
+
+GENERAL UPDATES TO COMPUTER CODE AND SOFTWARE
+
+GENERAL UPDATES TO COMPUTER CODE AND SOFTWARE
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+
+
+
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION THREE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION THREE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION THREE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION THREE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION THREE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION THREE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION THREE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION THREE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION THREE
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION THREE
+
+CLIN
+
+DESCRIPTION
+
+QUANTITY
+
+QUANTITY
+
+UNIT OF ISSUE
+
+UNIT OF ISSUE
+
+UNIT PRICE
+
+UNIT PRICE
+
+EXTENDED PRICE
+
+EXTENDED PRICE
+
+3001
+
+WEB HOSTING 
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+
+
+3002
+
+BANDWIDTH SERVICES
+
+BANDWIDTH SERVICES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3002AA
+
+LEVEL 1 SERVICE
+
+LEVEL 1 SERVICE
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+3002AB
+
+90 DAYS OF LEVEL 2 SERVICE
+
+90 DAYS OF LEVEL 2 SERVICE
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+3003
+
+TECHNICAL MANAGEMENT/HOSTING REQUIREMENTS FOR ONLINE FORUM
+
+TECHNICAL MANAGEMENT/HOSTING REQUIREMENTS FOR ONLINE FORUM
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+3004
+
+WEB DEVELOPMENT AND TECHNICAL SUPPORT SERVICES
+
+WEB DEVELOPMENT AND TECHNICAL SUPPORT SERVICES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3004AA
+
+VOLUNERABILITY SCAN AND SECURITY ASSESSMENT REPORT
+
+VOLUNERABILITY SCAN AND SECURITY ASSESSMENT REPORT
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+3004AB
+
+WEB APPLICATIONS FIREWALL
+
+WEB APPLICATIONS FIREWALL
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+3004AC
+
+MOBILE APPLICATION MAINTENANCE AND UPDATE
+
+MOBILE APPLICATION MAINTENANCE AND UPDATE
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+3004AD
+
+GENERAL UPDATES TO COMPUTER CODE AND SOFTWARE
+
+GENERAL UPDATES TO COMPUTER CODE AND SOFTWARE
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+
+
+
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION FOUR
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION FOUR
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION FOUR
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION FOUR
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION FOUR
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION FOUR
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION FOUR
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION FOUR
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION FOUR
+
+ATTACHMENT 2 – PRICING TEMPLATE OPTION FOUR
+
+CLIN
+
+DESCRIPTION
+
+QUANTITY
+
+QUANTITY
+
+UNIT OF ISSUE
+
+UNIT OF ISSUE
+
+UNIT PRICE
+
+UNIT PRICE
+
+EXTENDED PRICE
+
+EXTENDED PRICE
+
+4001
+
+WEB HOSTING 
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+
+
+4002
+
+BANDWIDTH SERVICES
+
+BANDWIDTH SERVICES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4002AA
+
+LEVEL 1 SERVICE
+
+LEVEL 1 SERVICE
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+4002AB
+
+90 DAYS OF LEVEL 2 SERVICE
+
+90 DAYS OF LEVEL 2 SERVICE
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+4003
+
+TECHNICAL MANAGEMENT/HOSTING REQUIREMENTS FOR ONLINE FORUM
+
+TECHNICAL MANAGEMENT/HOSTING REQUIREMENTS FOR ONLINE FORUM
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+4004
+
+WEB DEVELOPMENT AND TECHNICAL SUPPORT SERVICES
+
+WEB DEVELOPMENT AND TECHNICAL SUPPORT SERVICES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4004AA
+
+VOLUNERABILITY SCAN AND SECURITY ASSESSMENT REPORT
+
+VOLUNERABILITY SCAN AND SECURITY ASSESSMENT REPORT
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+4004AB
+
+WEB APPLICATIONS FIREWALL
+
+WEB APPLICATIONS FIREWALL
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+4004AC
+
+MOBILE APPLICATION MAINTENANCE AND UPDATE
+
+MOBILE APPLICATION MAINTENANCE AND UPDATE
+
+12
+
+12
+
+MO
+
+MO
+
+
+
+
+
+
+
+4004AD
+
+GENERAL UPDATES TO COMPUTER CODE AND SOFTWARE
+
+GENERAL UPDATES TO COMPUTER CODE AND SOFTWARE
+
+1
+
+1
+
+LOT
+
+LOT
+
+
+
+
+
+
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+TOTAL
+
+
+                                                            PAST PERFORMANCE WORKSHEET
+
+ Include relevant  and recent past performance related to this requirement for current or past contracts/subcontracts.
+
+
+|OFFEROR’S COMPANY NAME                            |                                                                                          |
+|OFFEROR’S POINT OF CONTACT FOR PAST PERFORMANCE   |                                                                                          |
+|                                                                                                                                              |
+|CUSTOMER’S COMPANY NAME                           |                                                                                          |
+|CONTRACT NUMBER                                   |                                                                                          |
+|CONTRACT TYPE (FIRM FIXED PRICE, COST             |                                                                                          |
+|REIMBURSABLE, ETC.)                               |                                                                                          |
+|PLACE OF PERFORMANCE                              |                                                                                          |
+|CONTRACT START DATE                               |                                                                                          |
+|CONTRACT END DATE                                 |                                                                                          |
+|CONTRACT DOLLAR VALUE                             |                                                                                          |
+|                                                                                                                                              |
+|PROVIDE TWO POINTS OF CONTACT THAT CAN COMMENT ON THE QUALITY OF SERVICE                                                                      |
+|CUSTOMER POINT OF CONTACT #1                                                                                                                  |
+|NAME              |                                                                                                                           |
+|TITLE             |                                                                                                                           |
+|COMM #                                         |FAX #                                          |DSN #                                          |
+|E-MAIL ADDRESS                    |                                                                                                           |
+|CUSTOMER POINT OF CONTACT #2                                                                                                                  |
+|NAME              |                                                                                                                           |
+|TITLE             |                                                                                                                           |
+|COMM #                                         |FAX #                                          |DSN #                                          |
+|E-MAIL ADDRESS                    |                                                                                                           |
+|DESCRIPTION OF  WORK PERFORMED    |                                                                                                           |
+|(Describe how this contract is    |                                                                                                           |
+|relevant in scope and complexity  |                                                                                                           |
+|to this requirement)              |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|COMMENTS / REMARKS (Include       |                                                                                                           |
+|information on problems           |                                                                                                           |
+|encountered during performance of |                                                                                                           |
+|this contract, if any, and        |                                                                                                           |
+|corrective actions taken)         |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+|                                  |                                                                                                           |
+
+
+252.209-7993  Representation by Corporations Regarding an Unpaid Delinquent Tax Liability or a Felony Conviction under any Federal Law—Fiscal Year 2014 Appropriations.
+
+
+
+Include the attached provision in all solicitations that will use funds appropriated by the Department of Defense Appropriations Act, 2014 and by the Military Construction and Veterans Affairs and Related Agencies Appropriations Act, 2014 (Pub. L. 113-76, Divisions C and J), including solicitations for the acquisition of commercial items under FAR part 12.
+
+
+
+REPRESENTATION BY CORPORATIONS REGARDING AN UNPAID DELINQUENT TAX LIABILITY OR A FELONY CONVICTION UNDER ANY FEDERAL LAW—FISCAL YEAR 2014 APPROPRIATIONS 
+
+(DEVIATION 2014-OO0009) (FEB 2014)
+
+
+
+	(a)  In accordance with sections 8113 and 8114 of the Department of Defense Appropriations Act, 2014, and sections 414 and 415 of the Military Construction and Veterans Affairs and Related Agencies Appropriations Act, 2014 (Public Law 113-76, Divisions C and J), none of the funds made available by those divisions (including Military Construction funds) may be used to enter into a contract with any corporation that—
+
+
+
+		(1)  Has any unpaid Federal tax liability that has been assessed, for which all judicial and administrative remedies have been exhausted or have lapsed, and that is not being paid in a timely manner pursuant to an agreement with the authority responsible for collecting the tax liability, where the awarding agency is aware of the unpaid tax liability, unless the agency has considered suspension or debarment of the corporation and made a determination that this further action is not necessary to protect the interests of the Government; or 
+
+
+
+		(2)  Was convicted of a felony criminal violation under any Federal law within the preceding 24 months, where the awarding agency is aware of the conviction, unless the agency has considered suspension or debarment of the corporation and made a determination that this action is not necessary to protect the interests of the Government.
+
+
+
+	(b)  The Offeror represents that—
+
+
+
+		(1)  It is [ ] is not [ ] a corporation that has any unpaid Federal tax liability that has been assessed, for which all judicial and administrative remedies have been exhausted or have lapsed, and that is not being paid in a timely manner pursuant to an agreement with the authority responsible for collecting the tax liability,
+
+
+
+		(2)  It is [ ] is not [ ] a corporation that was convicted of a felony criminal violation under a Federal law within the preceding 24 months. 
+
+
+
+(End of provision)
+                                                          Combined Synopsis/Solicitation
+
+This is a COMBINED SYNOPSIS/SOLICITATION for commercial items prepared in accordance with the information in FAR Subpart 12.6, using Simplified
+Acquisition Procedures under the test program for commercial items found at FAR 13.5, as supplemented with additional information included in
+this notice. This announcement constitutes the only solicitation on FedBizOpps; quotes are being requested and a written solicitation will not
+be issued.
+
+Solicitation [pic] is issued as a request for quotation (RFQ).
+
+The solicitation document and incorporated provisions and clauses are those in effect through Federal Acquisition Circular 2005-73, effective
+April 29, 2014 and DFARS Change Notice 20140506, effective May 6, 2014.
+
+|NAICS code                                 |518210            |
+|Small business size standard               |$30M              |
+
+
+DEADLINE FOR RFQ SUBMISSION:  Submit quotes/proposals, information and questions electronically to carolyn.giles@navsoc.socom.mil and WARCOM-
+Contracts@navsoc.socom.mil; the “Subject” line must show the RFQ/RFP Solicitation Number, H92240-14-Q-1012.  Submit questions not than  June 17,
+2014 at 1200 Pacific time.   Submit quotes/proposal not later than June 24, 2014 at 1200 Pacific time unless an amendment is issued to extend
+the date/time for receipt of quotes/proposals.
+
+
+No facsimile quotes/proposals  will be accepted. All quotes/prpopsals  must be clearly marked with the RFQ/RFP Number.  Contractors are
+responsible for verifying receipt of their quotes/ proposals to this office before offer due date and time.
+The following PROVISIONS AND CLAUSES apply to this acquisition and will be incorporated into any resultant purchase order.
+
+|52.203-3         |Gratuities                                                                                      |(APR 1984)        |
+|52.204-7         |System for Award Management                                                                     |(JUL 2013)        |
+|52.212-1         |Instructions to Offerors-Commercial Items                                                       |(APR 2014)        |
+|52.212-3         |Offeror Representations and Certifications Commercial Items Alt I                               |(NOV 2013)        |
+|52.212-4         |Contract Terms and Conditions - Commercial Items                                                |(SEP 2013)        |
+|52.212-5         |Contract Terms and Conditions Required to Implement Statutes or Exective Orders-Commercial Items|                  |
+|                 |                                                                                                |(JAN 2014)        |
+|52.232-40        |Providing Accelerated Payments to Small Business Subcontractors                                 |(DEC 2013)        |
+|52.242-13        |Bankruptcy                                                                                      |(JUL 1995)        |
+|52.247-34        |F.o.b. – Destination                                                                            |(NOV 1991)        |
+|52.252-1         |Solicitation Provisions Incorporated by Reference), http://farsite.hill.af.mil/ and             |(FEB 1998)        |
+|                 |www.acq.osd.mil                                                                                 |                  |
+|52.252-2         |Clauses Incorporated by Reference http://farsite.hill.af.mil/ and www.acq.osd.mil               |(FEB 1998)        |
+
+Note:  Quotes received without the completed copy of the provision at FAR 52.212-3 or completed SAM representation may be considered non-
+compliant. Vendors must be registered in the System for Award Management (SAM) to be eligible for award.
+
+
+ADDENDUM TO 52.212-1 Instructions to Offerors Commercial Items
+Proposal preparation instructions are attached separately.
+
+
+52.212-2 Evaluation -- Commercial Items (JAN 1999):
+
+(a) The Government will award a contract resulting from this solicitation to the responsible quoter whose proposal conforming to the
+solicitation will be most advantageous to the Government, price and other factors considered.
+
+The Government will evaluate all proposals as acceptable or unacceptable for the Technical  factor.  The Price Factor will not be evaluated as
+acceptable or unacceptable; however, this factor will be evaluated for reasonableness.
+
+       Factor 1: Technical
+       Factor 2: Price
+
+
+       Techncical:
+        Subfactor 1: Technical Capability/Approach
+        Subfactor 2: Contractor’s General Capabilities and Policies
+        Subfactor 3: Site Security
+        Subfactor 4: Key Personnel
+        Subfactor 5: Contractor’s Team
+        Subfactor 6: Past Performance
+
+
+       Each technical subfactor will be rated either acceptable or unacceptable.  A technical proposal receiving an unacceptable rating for any
+       subfactor will be determined unacceptable and no further consideration will be given.
+
+
+
+
+       |Rating                        |Description                                                                               |
+|Acceptable (A)                |Proposal clearly meets the minimum requirements of the solicitation.                      |
+|Unacceptable (U)              |Proposal does not clearly meet the minimum requirements of the solicitation.              |
+
+
+
+
+      Price:  The Government will evaluate price based on the aggregate total prices submitted for the Base and four (4) one-year  Option CLINs
+      (see Excel pricing spreadsheet).
+
+
+Procedures in FAR 13.106 are applicable to this procurement. While price will be a significant factor in the evaluation of offers, the final
+contract award will be based on the combination of the factors above.
+
+(b) Options. The Government will evaluate offers for award purposes by adding the total price for all options to the total price for the basic
+requirement. The Government may determine that an offer is unacceptable if the option prices are significantly unbalanced. Evaluation of options
+shall not obligate the Government to exercise the option(s).
+(c) A written notice of award or acceptance of a quote mailed or otherwise furnished to the successful quoter within the time for acceptance
+specified in the quote, shall result in a binding contract without further action by either party. Before the quote's specified expiration time,
+the Government may accept a quote (or part of a quote), whether or not there are negotiations after its receipt, unless a written notice of
+withdrawal is received before award.
+
+
+The following clauses are hereby checked in 52.212-5, Contract Terms and Conditions to Implement Statutes or Executive Orders-Commercial Items
+(JAN 2014):
+|52.203-6         |Restrictions on Subcontractor Sales to the Government                                    |(Sept 2006)         |
+|52.204-10        |Reporting Executive compensation and First-Tier Subcontract Awards                       |(Jul 2013)          |
+|52.209-6         |Protecting the Government’ Interest When Subcontracting with Contractors Debarred,       |(Aug 2013)          |
+|                 |Suspended, or Proposed for Debarment                                                     |                    |
+|52.219-6         |Notice of Total Small Business Set-Aside                                                 |(Nov 2011)          |
+|52.219-8         |Utilization of Small Business Concerns                                                   |(Jul 2013)          |
+|52.219-28        |Post-Award Small Business Program Rerepresentation                                       |(Jul 2013)          |
+|52.222-3         |Convict Labor                                                                            |(Jun 2003)          |
+|52.222-19        |Child Labor—Cooperation with Authorities and Remedies                                    |(Jan 2014)          |
+|52.222-21        |Prohibition of Segregated Facilities                                                     |(Feb 1999)          |
+|52.222-26        |Equal Opportunity                                                                        |(Mar 2007)          |
+|52.222-35        |Equal Opportunity for Veterans                                                           |(Sep 2010)          |
+|52.222-36        |Affirmative Action for Workers with Disabilities                                         |(Oct 2010)          |
+|52.222-37        |Employment Reports on Veterans                                                           |(Sep 2010)          |
+|52.222-40        |Notification of Employee Rights Under the National Labor Relations Act                   |(Dec 2010)          |
+|52.223-18        |Encouraging Contractor Policies to Ban Text Messaging while Driving                      |(Aug 2011)          |
+|52.225-13        |Restrictions on Certain Foreign Purchases                                                |(Jun 2008)          |
+|52.232-33        |Payment by Electronic Funds Transfer—System for Award Management                         |(Jul 2013)          |
+|52.239-1         |Privacy or Security Safeguards                                                           |(Aug 1996)          |
+|52.222-53        |Exemption from Application of the Service Contract Act to Contracts for Certain          |(Feb 2009)          |
+|                 |Services-Requirements                                                                    |                    |
+
+52.217-8 – Option to Extend Services (Nov 1999) The Government may require continued performance of any services within the limits and at the
+rates specified in the contract. These rates may be adjusted only as a result of revisions to prevailing labor rates provided by the Secretary
+of Labor. The option provision may be exercised more than once, but the total extension of performance hereunder shall not exceed 6 months. The
+Contracting Officer may exercise the option by written notice to the Contractor within 15 days of contract expiration.
+52.217-9 – Option to Extend the Term of the Contract (Mar 2000)  (a) The Government may extend the term of this contract by written notice to
+the Contractor within  15 days of contract expiration; provided that the Government gives the Contractor a preliminary written notice of its
+intent to extend at least 60 days before the contract expires. The preliminary notice does not commit the Government to an extension.
+(b) If the Government exercises this option, the extended contract shall be considered to include this option clause.
+(c) The total duration of this contract, including the exercise of any options under this clause, shall not exceed 60 months/5 years.
+The following DFARS provisions and clauses apply to this acquisition and are incorporated by reference.  If the offeror has completed any of the
+following provisions listed in this paragraph
+electronically as part of its annual representations and certifications at https://www.acquisition.gov, the offeror they are to indicated in the
+submitted quote, there is no need to complete these provisions again for a this solicitation.
+
+|252.203-7000           |Requirements Relating to Compensation of Former DoD Officials                           |(SEP 2011)          |
+|252.203-7002           |Requirement to Inform Employees of Whistleblower Rights                                 |(SEP 2013)          |
+|252.203-7005           |Representation Relating to Compensation of Former DoD Officials                         |(NOV 2011)          |
+|252.204-7003           |Control Of Government Personnel Work Product                                            |(APR 1992)          |
+|252.204-7004           |Alternate A, System For Award Management                                                |(FEB 2014)          |
+|252.204-7011           |Alternate Line Item Structure                                                           |(SEP 2011)          |
+|252.204-7012           |Safeguarding of Unclassified Controlled Technical Information                           |(NOV 2013)          |
+|252.215-7007           |Notice of Intent to Resolicit                                                           |(JUN 2012)          |
+|252.215-7008           |Only One Offer                                                                          |(OCT 2013)          |
+|252.225-7001           |Buy American and Balance of Payments Program                                            |(DEC 2012           |
+|252.225-7012           |Preference for Certain Domestic Quantities                                              |(FEB 2013)          |
+|252.227-7015           |Technical Data—Commercial Items                                                         |(FEB 2014)          |
+|252.227-7037           |Validation of Restrictive Markings on Technical Data                                    |(JUN 2013)          |
+|252.232-7003           |Electronic Submission Of Payment Requests And Receiving Reports                         |(JUN 2012)          |
+|252.232-7006           |Wide Area Workflow Payment Instructions                                                 |(MAY 2013)          |
+|252.232-7010           |Levies on Contract Payments                                                             |(DEC 2006)          |
+|252.239-7018           |Supply Chain Risk                                                                       |(NOV 2013)          |
+|252.243-7002           |Requests for Equitable Adjustment                                                       |(DEC 2012)          |
+|252.244-7000           |Subcontracts for Commercial Items                                                       |(JUN 2013)          |
+|252.247-7023           |Transportation of Supplies by Sea                                                       |(APR 2014)          |
+
+The following SOFARS provision and clauses apply to this acquisition:
+
+5652.201-9002 Authorized Changes Only by Contracting Officer (JAN 2005)                                                             The
+Contractor shall not comply with any order, direction or request of Government personnel unless it is issued in writing and signed by the
+Contracting Officer, or is pursuant to specific authority otherwise included as part of this contract. Except as specified herein, no order,
+statement, or conduct of Government personnel who visit the contractor’s facilities or in any other manner communicates with Contractor
+personnel during the performance of this contract shall constitute a change under the Changes clause in Section I. In the event the Contractor
+effects any change at the direction of any person other the Contracting Officer, the change will be considered to have been made without
+authority and no adjustment will be made in the contract price to cover any increase in cost incurred as a result thereof. The address and
+telephone number of the Contracting Officer is:  Laura Patterson, 619-537-1372, Email: laura.patterson@navsoc.socom.mil
+
+5652.204-9003 Disclosure of Unclassified Information (NOV 2007)
+(a) On September 21, 2001, the Department of Defense designated Headquarters US Special Operations Command (USSOCOM) a sensitive unit, as
+defined by Title 10 United States Code (USC) Section 130b (10 USC 130b). In keeping with this designation, unclassified information related to
+USSOCOM military technology acquisitions managed by USSOCOM or any of its component commands, will be designated Controlled Unclassified
+Information (CUI). As such, the contractor hereby unequivocally agrees that it shall not release to anyone outside the Contractor's organization
+any unclassified information, regardless of medium (e.g., film, tape, document, contractor's external website, newspaper, magazine, journal,
+corporate annual report, etc.), pertaining to any part of this contract or any program related to this contract, unless the Contracting Officer
+has given prior written approval. Furthermore, any release of information which associates USSOCOM, Special Operation Forces (SOF), or any
+component command with an acquisition program, contractor, or this contract is prohibited unless specifically authorized by USSOCOM.
+
+
+(b) Request for approval shall identify the specific information to be released, the medium to be used, and the purpose for the release. The
+contractor shall submit the request to the Contracting Officer at least 45 days before the propose date for release for approval. No release of
+any restricted information shall be made without specific written authorization by the Contracting Office.
+
+
+(c) The Contractor shall include a similar requirement in each subcontract under this contract. Subcontractors shall submit request for
+authorization to release through the prime contractor to the Contracting Officer.
+(d) The Contractor further understands that Title 18 USC Section 701 specifically prohibits the use of the USSOCOM emblem or logo in any medium
+(e.g., corporate website, marketing brochure, news paper, magazine, etc.) unless authorized in writing by USSOCOM. Forward any request to use
+the USSOCOM emblem or logo through the Contracting Officer.
+
+5652.215-9016  Technical and Contractual Questions Concerning This Solicitation (2000). All questions concerning this procurement, either
+technical or contractual must be submitted in writing to the Contracting Office. No direct discussion between the technical representative and a
+prospective offeror will be conducted unless it is deemed necessary by the Contracting Officer. Questions shall be sent to the following point
+of contact: Carolyn Giles at carolyn.giles@navsoc.socom.mil.
+
+
+
+ATTACHMENTS
+
+Attachment 1 – Performance Work Statement (PWS)
+Attachment 2 – Pricing Template
+Attachment 3 – Past Performance Worksheet
+Attachment 4 – DFARS Clause Deviations
+
+
+
+

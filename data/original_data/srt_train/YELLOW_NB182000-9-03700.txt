@@ -1,0 +1,235 @@
+
+Service Catalog
+KEY: M-Mandatory, HD-Highly Desirable, D-Desirable.  Answer - provide a "Yes" if the tool proposed has this capability and "No" if it does not.                                                                                                                                                                                                                   Quoters Name (Company Name) : _______________________________________                                                                                         Software Tool (Name/Version and/or Part Number): ________________________________                                                                                                                                                                                             
+Reference Requirements Criteria M HD D Answer
+SC-1 Does the tool permit the creation and publication of a Service Catalog that includes a description of service features, functions, and benefits in business terms? X
+SC-2 Does the tool support the notion of service levels including available service options, pricing and costing - defined dynamically with references to user-defined attributes? X
+SC-3 Does the tool support multiple views of the Service Catalog including a customer view, a financial and demand management view, and an IT view? X
+SC-4 Does the tool support the bundling of service components into service options? X
+SC-5 Does the tool support the creation and publication of service components that include both professional and technical services? X
+SC-6 Does the tool facilitate service request form with request fulfillment workflow? X
+SC-7 Does the tool support distributed, roles-based service catalog management design (and maintenance), enabling different aspects of the service catalog to be configured and maintained by different service managers? If so, how many different service managers can be configured or how many level of managers can be defined? X
+SC-8 Does the tool facilitate mass editing of service components for managing complex, enterprise-wide set of services? X
+SC-9 Does the tool provide a standard dictionary for re-usable service components? X
+SC-10 Does the tool provide the ability to display the service catalog via a web interface leveraging intuitive search functionality to enable users to easily locate service offerings or service components? If so, what type of search protocol is used? X
+SC-11 Does the tool support keywords for searching - including synonyms for service components? How are keywords identified, managed, and what is the limit on the number of keywords? X
+SC-12 Does the tool provide the ability to support and enforce an authorization processes related to assessing the Service Catalog? X
+SC-13 Does the tool provide the ability to manage the service lifecycle status from strategy to design through transition, operation, maintenance, and retirement?  X
+SC-14 Does the tool provide the ability to complete a detailed price/cost modeling to determine the cost unit structure for each service offering? X
+SC-15 Does the tool provide charge-back capabilities related to service offerings and service consumption? X
+SC-16 Does the tool provide the ability to manage service agreements against service offerings contained in the service catalog? X
+SC-17 Does the tool facilitate the publication of different service levels for the same service (e.g., bronze, silver, and gold levels)? X
+SC-18 Does the tool provide a library of pre-package IT services with preview and mass-editing capabilities? X
+SC-19 Does the tool support the creation of customized reports related to services based costing, consumption, and recovery? If so, what type of reporting technology is used? X
+Incident Management Process
+KEY: M-Mandatory, HD-Highly Desirable, D-Desirable.  Answer - provide a "Yes" if the tool proposed has this capability and "No" if it does not.                                                                                                                                                                                                                                                                                                                        Quoters Name (Company Name) : _______________________________________                                                                                         Software Tool (Name/Version and/or Part Number): ________________________________                                                                                                                                                                                             
+Reference Requirements Criteria M HD D Answer
+IM-1 Does the tool facilitate the creation, modification and closure of Incident records using the notion of multiple tasks per incident? If so, what are the capabilities and limitations? X
+IM-2 Does the tool support the input of searchable free text for the recording of Incident descriptions and resolution activities? If so, what type of search algorithm is used? X
+IM-3 During Incident registration and update, are time, date and Incident number fields mandatory?  X
+IM-4 Does the tool restrict the ability to open, modify and close Incident records to authorized staff only (e.g., setting permission levels by support roles/groups)? Can an Incident be re-opened?  Is there a limitation on how many times? X
+IM-5 Does the tool automate the rapid classification and recording of Incidents?  X
+IM-6 Does the tool facilitate customizable thresholds for automated escalation?  X
+IM-7 Does the tool enable priority, impact, and urgency indicators to be allocated to Incident records? If so, does the tool permit different priority, impact, and urgency settings for customers? X
+IM-8 Does the tool facilitate the monitoring and tracking of Incidents by service (support) groups? Can SLO objectives be set for different groups, sites, and requests/incidents? X
+IM-9 Does the tool facilitate the monitoring and tracking of Incidents by users through a self-service portal? Along with predefined set of SLO's? X
+IM-10 Does the tool support  automated notification to support staff or groups when Incidents are assigned to them? If so, is the notification message customizable?  Does the tool support notification to multiple users when an incident is resolved? X
+IM-11 Does the tool facilitate ad-hoc report generation? If so, how? By a third-party tool?  Is there API capability? X
+IM-12 Does the tool facilitate the production of management reports from historical Incident records?  X
+IM-13 Is the tool able to generate reports on outstanding (unresolved) Incidents?  X
+IM-14 Does the tool provide a secure, historical audit log of all Incident updates and resolution activities?  X
+IM-15 Does the tool provide search capabilities for closed Incidents? Is there automated Archiving? X
+IM-16 Does the tool support different categories for ticket open and ticket closures? X
+IM-17 Does the tool accept incidents from external sources, such as network monitoring tools? Is there other types on integration from other monitoring tools such as FogLight? X
+IM-18 Can the tool maintain distinct status codes for the life of an incident? How many status codes are available and are they customizable? X
+IM-19 Does the tool generate duration reports based upon incident status (e.g., Aging of incidents)? Can the tool be customized for specific support coverage and holidays? X
+IM-20 Does the tool facilitate Incident matching? For example, listing all possible problem matches keyed on a categorization tree.  X
+IM-21 Does the tool enable and maintain the relationships between Incident, Known Error, and Problem records?  X
+IM-22 Does the tool facilitate the closure of all Incidents when the associated Problem or Known Error is resolved?  X
+IM-23 Does the tool facilitate the production of reports from Incident data that can be used by Problem Management to identify any degradations to Service(s) or unavailability?  X
+IM-24 Are there separate escalations paths for incidents and problems that are related? X
+IM-25 Can Incident/Problem/Error matching occur?  X
+IM-24 Is there searching for easy linkage of problem to incidents or incidents to a problem? X
+IM-25 Does the tool facilitate secure and role-based access to the Configuration Management Database to navigate, modify and extract Incident related information?  X
+IM-26 Does the tool provide linkage to user relationships to other configuration items?  X
+IM-27 Can the tool access user data from Active Directory? What types of user data is required?  Can the tool handle reorganizations and re-assignment of staff by organization automatically? X
+IM-28 Does the tool facilitate secured and role-based access to Change Management information such as Change schedules and Change history? X
+IM-29 Does the tool support an interface with the Change Management tool to determine whether scheduled Changes provide a solution to an existing Incident(s)? X
+IM-30 Does the tool facilitate Incident Management to notify and assign high priority Incidents to multiple destinations?  X
+IM-31 Does the tool support the ability to measure actual work time as well as support effort to resolve the incident? X
+IM-32 Does the tool track the number of ticket "bounces" (multiple assignments), as well as the amount of time spent in each status/stage? X
+Problem Management Process
+KEY: M-Mandatory, HD-Highly Desirable, D-Desirable.  Answer - provide a "Yes" if the tool proposed has this capability and "No" if it does not.                                                                                                                                                                                                                                                                                              Quoters Name (Company Name) : _______________________________________                                                                                         Software Tool (Name/Version and/or Part Number): ________________________________                                                                                                                                                                                             
+Reference Requirements Criteria M HD D Answer
+PM-1 Does the tool facilitate the creation, modification, and closure of Problem records? What is the relationship with incident and change records? X
+PM-2 Does the tool facilitate the automatic generation of problem ID, time, and date stamping for new Problem records? X
+PM-3 Does the tool support the ability to distinguish between an Incident, Problem, and Known Error?  X
+PM-4 Does the tool facilitate the automated matching of Incidents to Problems and Known Errors?  X
+PM-5 Does the tool support the ability to route and assign Problem records to pre-defined support staff or groups? X
+PM-6 Does the tool enable impact and urgency codes to be assigned to Problem records?  X
+PM-7 Does the tool facilitate progress tracking and monitoring of Problems? For example, tracking ownership and responsibility for resolving the Problem as well as time spent in resolving the problem. X
+PM-8 Does the tool facilitate the escalation of Problems after pre-defined thresholds have been breached? If so, how and where are thresholds defined? X
+PM-9 Does the tool provide historical data on Problems and Known Errors for use by support staff during the investigation process?  X
+PM-10 Does the tool facilitate the generation of customizable management reports? For example, can the tool facilitate trend analysis reports to identify potential Problems before they occur? What type of report technology is used? X
+PM-11 Does the tool permit the ability to mark problems as known errors? X
+PM-12 Does the tool facilitate the entry of free text for the recording of Problem descriptions and resolution activities? What is the length limit on all free text fields? X
+PM-13 Does the tool facilitate secured and role-based access to Problem Management information and Problem history information?  X
+PM-14 Does the tool facilitate the association and maintenance of the relationships between Known Error records and RFCs (request for change)?  X
+PM-15 When a Change has been successfully implemented does the tool facilitate the closure of all associated Known Error records?  X
+PM-16 Does the tool facilitate secure and role-based access to the CMDB to navigate, modify, and extract Problem Management related information?  X
+PM-17 Does the tool differentiate between the criticality of CIs to assist Problem Management staff in classifying Problem records?  X
+PM-18 Does the tool facilitate links with the CMDB to enable the updating of Problem records with Configuration information? (including CI components, relationships, and dependencies). X
+PM-19 Does the tool facilitate the automation of escalation procedures from Incident Management to Problem Management? For example, contact staff, department, and actions required?  X
+PM-20 Does the tool enable the Problem Management team to communicate status and progress reports, as well as temporary solutions and workarounds to the Service Desk staff? X
+PM-21 Is the tool able to automatically increase the severity or impact rating of a Problem according to the number of associated Incidents and/or the number of End Users affected? X
+PM-22 Does the tool automatically alert the Problem Manager of Problems that are in danger of exceeding pre-defined thresholds? If so, how? X
+PM-23 Does the tool facilitate secure and role-based access to Service Level Management information? If so, how many different levels? X
+PM-24 Does the tool allow the assignment of a problem to multiple teams at the same time (for instance, when major problems occur)? X
+Change Management Process
+KEY: M-Mandatory, HD-Highly Desirable, D-Desirable.  Answer - provide a "Yes" if the tool proposed has this capability and "No" if it does not.                                                                                                                                                                                                                   Quoters Name (Company Name) : _______________________________________                                                                                         Software Tool (Name/Version and/or Part Number): ________________________________                                                                                                                                                                                             
+Reference Requirements Criteria M HD D Answer
+ChM-1 Does the tool facilitate the recording and storage of RFCs in an easily accessible format? X
+ChM-2 Does the tool allow only authorized personnel to submit RFCs?  X
+ChM-3 Does the tool facilitate the monitoring and tracking of the life cycle of a Change request?  X
+ChM-4 Does the tool facilitate the ability to manage, read, write, and modify access for the change coordinator, change builders, testers, etc. to update the RFC throughout the Change lifecycle? X
+ChM-5 Does the tool facilitate the routing of RFCs to the appropriate authorization bodies as defined within the ITIL Change Management Process?  X
+ChM-6 Does the tool facilitate the ability to reject Changes?  X
+ChM-7 Does the tool facilitate the recording of impact assessment information within the Change record in order to support the Change authorization process?  X
+ChM-8 Does the tool facilitate the production of Change schedules (Forward Schedule of Changes (FSC))?  X
+ChM-9 Does the tool facilitate the recording of back-out procedures within the Change record?  X
+ChM-10 Does the tool facilitate notification and escalation throughout the Change lifecycle should Service Levels be breached?  X
+ChM-11 Does the tool facilitate the scheduling of Change reviews for implemented Changes after definable time periods?  X
+ChM-12 Does the tool facilitate customization of reporting functions? If so, what type of report technology is used? X
+ChM-13 Does the tool support a change moratorium period: (1) same moratorium for all services, (2) different moratorium for different services, and (3) disallows/warns of scheduling of changes during a moratorium period X
+ChM-14 Do facilities exist for establishing and maintaining the logical association between Known Errors and Changes? X
+ChM-15 Does the tool facilitate the closure of Known Errors, Problems and Incidents when a related Change is successfully implemented? Does tool permit relationships between multiple changes, problems, and known errors? X  
+ChM-16 Does the tool facilitate the communication of Change information and schedules that can be distributed to the Service Desk and user groups? For example, the use of email and whiteboard communication methods. Is there interfaces into tools such as SYMON? X
+ChM-17 Does the tool allow for online viewing of the FSC by users, and the ability to expand to a detailed view of individual events. X
+ChM-18 Can the FSC show changes that are planned and yet to be approved  X
+ChM-19 Does the tool facilitate the Problem Management process being kept apprised of future, current, and historic Changes? X
+ChM-20 Does the tool facilitate the task of updating CI information in the CMDB?  X
+ChM-21 Is the tool able to access CI detail to assist in the assessment of Change authorization?  X
+ChM-22 Does the tool use the knowledge of architecture infrastructure to assess impact? X
+ChM-23 Does tool have a built-in Outage Calendar? X
+ChM-24 Does the tool track planned outages as specified by RFC, vs. unplanned downtime (recorded by Incident Management)? X
+ChM-25 Does the tool facilitate the identification of post implementation impact and resource utilization for completed Changes?  Also, can planned vs. actual resource utilization be tracked and analyzed?  X
+ChM-26 Are Incidents and Problems resulting from an implemented Change easily identified? X
+ChM-27 Can the tool automate the sending of user notification using customizable templates.  The templates should be capable of using fields from the RFC. X
+ChM-28 Can the tool identify the user community affected by the proposed changes?  This capability would be required for impact assessment. X
+ChM-29 Does the tool support the notion of change templates for repetitive RFC's? X
+Configuration Management Process
+KEY: M-Mandatory, HD-Highly Desirable, D-Desirable.  Answer - provide a "Yes" if the tool proposed has this capability and "No" if it does not.                                                                                                                                                                                                                   Quoters Name (Company Name) : _______________________________________                                                                                         Software Tool (Name/Version and/or Part Number): ________________________________                                                                                                                                                                                             
+Reference Requirements Criteria M HD D Answer
+CoM-1 Does the tool facilitate the registration and management of an organization’s Configuration Items (CIs)? For example, hardware, Software, Contracts, and SLAs.  X
+CoM-2 Does the tool facilitate the recording of CI attributes? For example, serial number, version, and location attributes.  X
+CoM-3 Does the tool facilitate the automated validation of CI data? For example, are all CI names unique?  X
+CoM-4 Does the tool facilitate the establishment of relationships between CIs? For example, parent / child, peer-to-peer, upstream / downstream relationships. X
+CoM-5 Does the tool support customizable CI lifecycle status management? For example, planned, ordered, under development, in test, implementation, production, in repair/ maintenance. X
+CoM-6 Does the tool facilitate only authorized access to the CMDB for read, write, and modify activities? X
+CoM-7 Does the tool facilitate the recording of CI baseline information? For example, reverting to a previous version of CI Configuration in the event that a Change fails.  X
+CoM-8 Does the tool facilitate the logging of historical Changes to the CI record for auditing purposes? For example, installation date, records of Changes, previous locations. Is there a limiation on size?  Is there archiving capability? X
+CoM-9 Does the tool facilitate the verification of the CI data with the actual physical infrastructure by manual means? For example, the use of Systems management tools to validate real time vs. static information.  X
+CoM-10 Does the tool provide flexible management reports regarding CI inventory, and asset to facilitate Configuration audits?  X
+CoM-11 Does the tool provide flexible management reports regarding CI financial information to facilitate Configuration audits?  X
+CoM-12 Does the tool facilitate relating CI's to user accounts X
+CoM-13 Does the tool facilitate the integration of CMDB data with Incident records?  X
+CoM-14 Does the tool facilitate Incident Management in providing criticality and impact indicators of failed CIs for classification of Incident records? X
+CoM-15 Does the tool facilitate the integration of CMDB data within Problem Management records?  X
+CoM-16 Does the CMDB facilitate proactive Problem Management by identifying infrastructure components that are problematic or unstable? For example, does CI status accounting provide information about weak or maintenance prone Configuration Items? X
+CoM-17 Does the tool facilitate the integration of CMDB data within the Change Management records?    X
+CoM-18 Does the tool facilitate the assessment and approval of Change requests by providing information on affected CIs?  X
+CoM-19 Does the tool facilitate the identification of different RFCs that pertain to the same CIs?  X
+CoM-20 Does the tool facilitate the recording of CI status Changes when Changes are proposed or authorized Changes are implemented? For example: Nature of Change, future status, scheduled date of Change. X
+CoM-21 Does the tool provide a form of (graphic) display to show the relationships between CIs?  X
+CoM-22 Does the tool facilitate scheduled Configuration audits?  X
+CoM-23 Can Configuration Management information be used to automate the updating of the live environment? For example, integration with software Release packages for software or virus definition updates.  X
+CoM-24 Is the tool able to customize the CI relationship models to meet organizational requirements?  X
+CoM-25 Does the tool facilitate the automated reestablishment of parent and child relationships when CIs are added, deleted, or updated?  X
+CoM-26 Does the tool allow for reporting and reconciling discrepancies between live environment and CMDB? X
+CoM-27 Does the tool allow for reporting and reconciling discrepancies between federated databases? X
+CoM-28 Does the tool record CI change history (attributes and relationships)? X
+CoM-29 Does the tool have the ability to define a Standard Operating Environment (baseline); e.g., tracking the baseline of desktop computers being deployed? X
+CoM-30 Does the tool provide API access to the CMDB? X
+CoM-31 Does the tool integrate with Active Directory? Or other LDAP technologies? X
+Security Criteria
+KEY: M-Mandatory, HD-Highly Desirable, D-Desirable.  Answer - provide a "Yes" if the tool proposed has this capability and "No" if it does not.                                                                                                                                                                                                                               Quoters Name (Company Name) : _______________________________________                                                                                         Software Tool (Name/Version and/or Part Number): ________________________________                                                                                                                                                                                             
+Reference Requirements Criteria M HD D Answer
+Se-1 Has the application been Certified and Accredited by a US federal government agency following the processes defined in the NIST-Special Publication 800-37 and FIPS PUB 200? X
+Se-2 If the application requires local accounts, does the application include automated mechanisms to support the management of system accounts? X
+Se-3 If the application requires local accounts, does the application include automated mechanisms to audit account creations, modifications, disabling and termination actions and to nofigy appropriate individuals? X
+Se-4 Does the application enforces a limit of consecutive invalid access attempts by a user during a specified time period? X
+Se-5 Does the application activates session lock mechanisms automatically after a period of inactivity and users can directly initiate session lock mechanisms? X
+Se-6 Does the application generates audit records for system-defined events? X
+Se-7 Does the application produces audit records that contain sufficient information to establish what events occurred, the sources of the events, and the outcome of the events?  The capability to include additional, more detailed information in the audit record for audit events identified by type, location, or subject is provided. X
+Se-8 In the event of an audit processing failure, does the system alerts appropriate system staff and takes some corrective action? X
+Se-9 Are there automated mechanisms are employed to alert system staff of system-defined inappropriate or unusual activities with security implications? X
+Se-10 Does the application provide an audit reduction and report capability to support after-the-fact investigations of security incidents without altering original audit records? X
+Se-11 Does the application provides time stamps (including date and time) for use in audit record generation using internal system clocks. X
+Se-12 Can audit information and audit tools be protected from unauthorized access, modification, and deletion?  Audit information includes all information (e.g. audit records, audit settings, and audit reports) needed to successfully audit information system activity. X
+Se-13 Does the application obscures feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals (displaying asterisks when a user types in a password is an example of obscuring feedback)? X
+Se-14 Does the application protects the integrity of transmitted information by implementing controls such as Transport Layer Security (TLS), IPsec, DNS message authentication and integrity verification, SSH, VPN, etc.? X
+Se-15 Does the application protects the confidentiality of transmitted information by implementing controls such as Transport Layer Security (TLS), IPsec, SSH, VPN, etc.? X
+Se-16 Does the application terminate a network connection at the end of a session or after a system-defined period of inactivity?  X
+Se-17 Does the application implements cryptographic mechanisms that comply with applicable laws, policies, directives, standards, guidance, etc. (the current applicable federal standard for non-national security systems is FIPS 140-2)? X
+Se-18 Does the application provides mechanisms to protect the authenticity of communications sessions?   X
+Se-19 Does the application checks information for accuracy, completeness, validity, and authenticity as close to the point of origin as possible?  Rules for checking the valid syntax of inputs (e.g., character set length, numerical range, acceptable values, drop-down lists, checksums, hashes, etc.) are in place to verify that inputs match specified definitions for format and content.  Inputs passed to interpreters are prescreened to prevent the content from being unintentionally interpreted as commands.  X
+Se-20 Does the application identifies and handles error conditions in an expeditious manner without providing information that could be exploited by adversaries?
+
+• Error messages are revealed only to authorized personnel (e.g., system administrators, maintenance personnel, etc.)
+
+• Error messages generated by the system provide timely and useful information without revealing potentially harmful information that could be used by adversaries (e.g., a message about a failed logon should not indicate that the user name was correct and only the password was not valid). 
+
+• Information that is moderate for confidentiality are not listed in error logs or associated error messages.   X
+Other Criteria
+KEY: M-Mandatory, HD-Highly Desirable, D-Desirable.  Answer - provide a "Yes" if the tool proposed has this capability and "No" if it does not.                                                                                                                                                                                  Quoters Name (Company Name) : _______________________________________                                                                                         Software Tool (Name/Version and/or Part Number): ________________________________                                                                                                                                                                                             
+Reference Requirements Criteria M HD D Answer
+OT-1 A. Is the tool a fully web-based interface (containing all application functions) for support staff? B. If so, are there browser compatibility issues? X A.                   B.
+OT-2 Is the tool a fully web-based client interface which allows for staff to submit and monitor their requests? X
+OT-3 Can the tool be easily used by support staff to access requests assigned to them anywhere on campus or off campus.  X
+OT-4 Are request details modifiable with full audit trail? X
+OT-5 A. Does the tool allow for easy attachment/detachment/access of files? B. Are there file size limitations with attachments? X A.                  B.
+OT-6 Does the tool meet W3C Web Content Accessibility Guidelines? X
+OT-7 Does the tool meet Section 508 Accessibility? X
+OT-8 Does the tool insert default values automatically where possible? Are default values customizable by support staff? X A.                   B.
+OT-9 Does the tool allow users to define their default printer for automatic printing jobs on creation? X
+OT-10 Is print on demand via standard browser printing API? X
+OT-11 Does the tool have the ability to log express calls for common tasks? X
+OT-12 Does it have the ability to turn off or adjust escalations when reopening a request - with full audit trail? X
+OT-13 Does the tool have the ability to turn off or adjust escalations for any request - with full audit trail? X
+OT-14 Can products or services be linked to skill groups and displayed by skill group? X
+OT-15 Is there a message board that can be used globally across groups or locally? X
+OT-16 Does the tool have the ability to display system status messages? X
+OT-17 Can full client details be shown in the request logging window? Is this customizable? X A.                    B.
+OT-18 Does the tool have the ability to record the method for the initiation of the request (e.g. Email, phone, face to face, automated process)? X
+OT-19 Are the full details of the request available within [the] one window? X
+OT-20 Does the tool have Spell-Checker? X
+OT-21 Is extensive online help available? X
+OT-22 Does the tool contain comprehensive documentation including quick reference guides and user guides? X
+OT-23 When viewing list of information (users, positions, products, groups) can the information can be sorted in ascending/descending order based on a specific column simply by clicking on the header for that column X
+OT-24 Can default options for various aspects of the system can be saved in cookies for quicker system operation? For example, saving report options so the report can be run quickly at a later time. X
+OT-25 Does the tool make a very clear and obvious distinction between operations that are being performed on incidents, problems, and the various other records in the system? X
+OT-26 Does the tool have the ability to create service requests or otherwise distinguish requests for work from incidents? X
+OT-27 Does the tool include an easily-maintained knowledge base? X
+OT-28 Does the tool have the ability to keep track of jobs that have passed to another group within the system. or  'Watch this incident' - similar to 'watch this item' on eBay. X
+OT-29 Does the tool have the ability to create resolution scripts for Helpdesk staff - a course of action based on a decision tree? X
+OT-30 Can the tool display current top (top 10) incidents/problems? X
+OT-31 Does the tool use standard technologies for OS, network, web, and database, including Windows Server and SQL Server? X
+OT-32 Does the tool provide flexible notification options - providing the ability to send (cc or bcc) to multiple recipients? X
+OT-33 Does the tool have escalation to anyone including end-user in response to triggers or a lapse of time (e.g. a period of inactivity)?  X
+OT-34 Can security be set on reports queued in the system so only specific system users can view and edit them? X
+OT-35 Can notifications on items in the system can be modified on a per job basis after a job has been logged into the system? X
+OT-36 Can user details in the system be easily and permanently updated by the users themselves? X
+OT-37 Can notifications be customized to a variety of different notification methods based on various details of the job including priority, product, skill group and position, stage of the job? X
+OT-38 Does the tool have the capacity for clients to respond to emails, with an entry being written to the incident log, and a notification sent to the support staff? X
+OT-39 Does the tool have the ability to have default support positions for products? X
+OT-40 Does the tool include extensive and powerful data import and export utilities? X
+OT-41 Does the system allow for live backup of the database? X
+OT-42 Does the tool include standard reports which provide feedback on adherence to ITSM processes? X
+OT-43 Is the reporting interface functional, flexible, and user friendly? X
+OT-44 Is there a reporting wizard which will assist staff in the creation of reports? X
+OT-45 Does the tool have ad hoc SQL reporting ability? X
+OT-46 Does the tool report on service commitments including time to acknowledge and respond? X
+OT-47 Does the tool have the ability to report on incidents for a service where the service was unavailable due to dependence on other systems? X
+OT-48 Does the tool have the ability to interface with SQL Server to utilize its graphical reporting capabilities? X
+OT-49 Does the tool have built-in reporting of KPIs? X
+OT-50 Does the tool allow staff to filter/hide specific data selected in the report? X

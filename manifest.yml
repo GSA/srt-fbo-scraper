@@ -1,7 +1,7 @@
 ---
 applications:
 - name: srt-fbo-scraper
-  memory: 1GB
+  memory: 2GB
   disk_quota: 4GB
   no-route: true
   health-check-type: process

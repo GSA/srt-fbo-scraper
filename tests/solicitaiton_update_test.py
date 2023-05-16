@@ -1,12 +1,12 @@
 import os
 import sys
 import unittest
-from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_data
+from fbo_scraper.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_data
 import pytest
 
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from utils import sam_utils
+from fbo_scraper import sam_utils
 
 
 class SamUtilsTestCase(unittest.TestCase):

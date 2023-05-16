@@ -1,7 +1,7 @@
 import unittest
-from utils import get_opps
-from utils import sam_utils
-from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer
+from fbo_scraper import get_opps
+from fbo_scraper import sam_utils
+from fbo_scraper.db.db_utils import get_db_url, session_scope, DataAccessLayer
 
 
 class SAMAPITestCase(unittest.TestCase):

@@ -5,8 +5,8 @@ import requests_mock
 import re
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
-from utils.request_utils import requests_retry_session
-from utils.predict import Predict
+from fbo_scraper.request_utils import requests_retry_session
+from fbo_scraper.predict import Predict
 from tests.mock_opps import mock_transformed_opp_bad_attachment, mock_transformed_opp_one
 from unittest.mock import MagicMock, Mock
 

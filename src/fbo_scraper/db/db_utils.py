@@ -9,12 +9,15 @@ from random import random
 
 import dill as pickle
 from sqlalchemy import create_engine, func, case, inspect
+from sqlalchemy.engine import Engine
 from sqlalchemy.orm import sessionmaker, make_transient
 from sqlalchemy.pool import NullPool
 from sqlalchemy_utils import database_exists, create_database, drop_database
-from utils.db.db import  Solicitation, AgencyAlias, Agencies
+from fbo_scraper.db.db import  Solicitation, AgencyAlias, Agencies
 
-import utils.db.db as db
+import fbo_scraper.db.db as db
+from fbo_scraper.binaries import Path, binary_path
+
 import functools
 CACHE_SIZE=256
 
@@ -493,7 +496,7 @@ def fetch_validated_attachments(session):
     else:
         i = cwd.find('root')
         root_path = cwd
-    trained_data_path = os.path.join(root_path, 'utils/binaries/train.pkl')
+    trained_data_path = os.path.join(root_path, Path(binary_path,'train.pkl'))
     with open(trained_data_path, 'rb') as f:
         original_labeled_samples = pickle.load(f)
     
@@ -543,3 +546,49 @@ def fetch_notice_attachments(notice_id, session):
     attachment_dicts = [object_as_dict(a) for a in attachments]
     
     return attachment_dicts
+
+
+def drop_everything(engine: Engine):
+    """(On a live db) drops all foreign key constraints before dropping all tables.
+    Workaround for SQLAlchemy not doing DROP ## CASCADE for drop_all()
+    (https://github.com/pallets/flask-sqlalchemy/issues/722)
+    """
+    from sqlalchemy.engine.reflection import Inspector
+    from sqlalchemy.schema import (
+        DropConstraint,
+        DropTable,
+        MetaData,
+        Table,
+        ForeignKeyConstraint,
+    )
+
+    con = engine.connect()
+    trans = con.begin()
+    inspector = Inspector.from_engine(engine)
+
+    # We need to re-create a minimal metadata with only the required things to
+    # successfully emit drop constraints and tables commands for postgres (based
+    # on the actual schema of the running instance)
+    meta = MetaData()
+    tables = []
+    all_fkeys = []
+
+    for table_name in inspector.get_table_names():
+        fkeys = []
+
+        for fkey in inspector.get_foreign_keys(table_name):
+            if not fkey["name"]:
+                continue
+
+            fkeys.append(ForeignKeyConstraint((), (), name=fkey["name"]))
+
+        tables.append(Table(table_name, meta, *fkeys))
+        all_fkeys.extend(fkeys)
+
+    for fkey in all_fkeys:
+        con.execute(DropConstraint(fkey))
+
+    for table in tables:
+        con.execute(DropTable(table))
+
+    trans.commit()

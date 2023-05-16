@@ -16,7 +16,8 @@ from imblearn.pipeline import Pipeline
 from imblearn.over_sampling import SMOTE
 import dill as pickle
 import logging
-from utils.predict import Predict
+from fbo_scraper.predict import Predict
+from fbo_scraper.binaries import binary_path, Path
 
 logger = logging.getLogger(__name__)
 
@@ -176,5 +177,6 @@ def pickle_model(best_estimator):
         None
     '''
 
-    with open('utils/binaries/atc_estimator.pkl', 'wb') as f:
+
+    with open(Path(binary_path, 'atc_estimator.pkl'), 'wb') as f:
         pickle.dump(best_estimator, f)

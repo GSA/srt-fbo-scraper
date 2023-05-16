@@ -20,8 +20,8 @@ dal.connect()
 def main(limit=None, updateOld=True, opportunity_filter_function=None, target_sol_types="o,k", skip_attachments=False, from_date = 'yesterday', to_date='yesterday'):
     try:
         
-        logger.info("Starting srt-fbo-scraper from MASTER branch")
-
+        logger.info("Starting srt-fbo-scraper from dev branch")
+        
         if limit:
             logger.error("Artifical limit of {} placed on the number of opportunities processed.  Should not happen in production.".format(limit))
 

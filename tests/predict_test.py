@@ -2,7 +2,7 @@ import unittest
 import sys
 import os
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
-from utils.predict import Predict
+from fbo_scraper.predict import Predict
 from tests.mock_opps import mock_transformed_opp_one
 
 class PredictTestCase(unittest.TestCase):

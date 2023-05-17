@@ -18,10 +18,10 @@ from os import path
 #since 'utils/' and 'alembic/' are siblings folders, we can import the 
 #relative module using the append method of the sys.path module
 sys.path.append( path.dirname( path.dirname( path.abspath(__file__) ) ) )
-from utils.db.db_utils import get_db_url
+from fbo_scraper.db.db_utils import get_db_url
 config.set_main_option('sqlalchemy.url',
                        get_db_url())
-from utils.db import db
+from fbo_scraper.db import db
 target_metadata = db.Base.metadata
 
 

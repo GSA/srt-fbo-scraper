@@ -7,7 +7,7 @@ import unittest
 from fpdf import FPDF
 from docx import Document
 
-from utils.get_doc_text import get_doc_text
+from fbo_scraper.get_doc_text import get_doc_text
 
 
 class GetDocTextTestCase(unittest.TestCase):

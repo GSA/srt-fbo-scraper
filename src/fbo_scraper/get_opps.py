@@ -9,9 +9,9 @@ import hashlib
 import urllib
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
-from utils.get_doc_text import get_doc_text
-from utils.sam_utils import schematize_opp
-from utils.request_utils import requests_retry_session
+from fbo_scraper.get_doc_text import get_doc_text
+from fbo_scraper.sam_utils import schematize_opp
+from fbo_scraper.request_utils import requests_retry_session
 
 logger = logging.getLogger(__name__)
 

@@ -9,7 +9,7 @@ import requests_mock
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from tests import mock_opps
 from tests.test_utils import get_zip_in_memory
-from utils.get_opps import get_opps_for_day, get_docs, get_attachment_data, \
+from fbo_scraper.get_opps import get_opps_for_day, get_docs, get_attachment_data, \
                            transform_opps, schematize_opp
 from tests.mock_opps import mock_opp_one
 

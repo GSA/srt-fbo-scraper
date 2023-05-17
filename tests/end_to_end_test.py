@@ -6,7 +6,7 @@ from unittest.mock import patch
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from main import main
-from utils.db.db_utils import get_db_url, session_scope, DataAccessLayer, clear_data
+from fbo_scraper.db.db_utils import get_db_url, session_scope, DataAccessLayer, clear_data
 
 class EndToEndTest(unittest.TestCase):
     def setUp(self):

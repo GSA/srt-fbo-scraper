@@ -12,7 +12,7 @@ import requests_mock
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from tests.test_utils import get_zip_in_memory, get_day_side_effect
 from tests import mock_opps
-from utils.sam_utils import get_org_info, write_zip_content, get_notice_data, get_notice_type,\
+from fbo_scraper.sam_utils import get_org_info, write_zip_content, get_notice_data, get_notice_type,\
                             schematize_opp, naics_filter, get_dates_from_opp, find_yesterdays_opps
 
 

@@ -7,6 +7,8 @@ import string
 import sys
 from nltk.stem.porter import PorterStemmer
 import logging
+from pathlib import Path
+from fbo_scraper.binaries import binary_path
 
 logger = logging.getLogger(__name__)
 
@@ -18,7 +20,7 @@ class Predict():
         data (list): a list of dicts, with each dict representing an opportunity.
     '''
 
-    def __init__(self, data, best_model_path='utils/binaries/estimator.pkl'):
+    def __init__(self, data, best_model_path=Path(binary_path, 'estimator.pkl')):
         self.data = data
         cwd = os.getcwd()
         if 'fbo-scraper' in cwd:

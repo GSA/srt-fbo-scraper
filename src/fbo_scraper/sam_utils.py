@@ -6,12 +6,12 @@ import os
 import re
 import sys
 import zipfile
-import utils.db.db as db
+import fbo_scraper.db.db as db
 
-from utils.db.db_utils import fetch_notice_type_by_id
+from fbo_scraper.db.db_utils import fetch_notice_type_by_id
 import copy
-from utils import get_opps
-import utils.db.db_utils
+from fbo_scraper import get_opps
+from fbo_scraper.db.db_utils import fetch_notice_type_id
 
 import requests
 
@@ -334,7 +334,7 @@ def update_notice_type_if_necessary(sol, sam_data,session):
     if sol.noticeType != sam_data['type']:
         logger.info(f"Updating the notice type for {sol.solNum} to be {sam_data['type']}")
         sol.noticeType = sam_data['type']
-        sol.notice_type_id = utils.db.db_utils.fetch_notice_type_id(sam_data['type'], session)
+        sol.notice_type_id = fetch_notice_type_id(sam_data['type'], session)
         return 1
     return 0
 

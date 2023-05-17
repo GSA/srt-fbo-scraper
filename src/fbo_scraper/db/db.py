@@ -90,7 +90,8 @@ class Users(Base):
     creationDate = Column(String)
     tempPassword = Column(String)
     createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
-    updatedAt = Column(DateTime, nullable = False)
+    updatedAt = Column(DateTime, nullable = True)
+    maxId = Column(String)
 
 class Agencies(Base):
     __tablename__ = 'Agencies'
@@ -119,7 +120,7 @@ class Surveys(Base):
     note = Column(Text)
     choicesNote = Column(JSONB)
     createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
-    updatedAt = Column(DateTime, nullable = False)
+    updatedAt = Column(DateTime, nullable = True)
 
 class Predictions(Base):
     __tablename__ = 'Predictions'
@@ -151,19 +152,21 @@ class Predictions(Base):
 class Solicitation(Base):
     __tablename__ = 'solicitations'
     id = Column(Integer, primary_key=True)
-    solNum = Column(String)
+    solNum = Column(String) # TODO: nullable = False??
     active = Column(Boolean)
     createdAt = Column(DateTime, nullable = False, default = datetime.datetime.utcnow)
-    updatedAt = Column(DateTime, nullable = False)
+    updatedAt = Column(DateTime, nullable = True)
     title = Column(String)
     url = Column(String)
     agency = Column(String)
     agency_id = Column(Integer)
     numDocs = Column(Integer)
+    noticeData = Column(JSONB)
     notice_type_id = Column(Integer)
     noticeType = Column(String)
     date = Column(DateTime)
     office = Column(String)
+    predictions = Column(JSONB)
     na_flag = Column(Boolean)
     category_list = Column(JSONB)
     undetermined = Column(Boolean)
@@ -173,11 +176,8 @@ class Solicitation(Base):
     actionDate = Column(DateTime)
     contactInfo= Column(JSONB)
     parseStatus = Column(JSONB)
-    predictions = Column(JSONB)
     reviewRec = Column(String)
     searchText = Column(String)
     compliant = Column (Integer)
-    noticeData = Column(JSONB)
     attachments = relationship("Attachment", back_populates="solicitaiton", cascade="all, delete-orphan");
-
 

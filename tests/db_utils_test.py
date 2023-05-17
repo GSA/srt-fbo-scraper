@@ -4,8 +4,8 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tests.mock_opps import mock_schematized_opp_two
-from utils.db.db import Notice, NoticeType, Solicitation, Attachment, Model, now_minus_two
-from utils.db.db_utils import get_db_url, session_scope, insert_data_into_solicitations_table, \
+from fbo_scraper.db.db import Notice, NoticeType, Solicitation, Attachment, Model, now_minus_two
+from fbo_scraper.db.db_utils import get_db_url, session_scope, insert_data_into_solicitations_table, \
     DataAccessLayer, clear_data, object_as_dict, fetch_notice_type_id, \
     insert_model, insert_notice_types, retrain_check, \
     get_validation_count, get_trained_count, \

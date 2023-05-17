@@ -20,8 +20,8 @@ dal.connect()
 def main(limit=None, updateOld=True, opportunity_filter_function=None, target_sol_types="o,k", skip_attachments=False, from_date = 'yesterday', to_date='yesterday'):
     try:
         
-        logger.info("Starting srt-fbo-scraper from dev branch")
-        
+        logger.info("Starting srt-fbo-scraper from MASTER branch")
+
         if limit:
             logger.error("Artifical limit of {} placed on the number of opportunities processed.  Should not happen in production.".format(limit))
 
@@ -87,6 +87,34 @@ def check_environment():
         exit(7)
     else:
         logger.info(f"Found SAM_API_KEY in the environment: { os.environ['SAM_API_KEY'][:4] }...{ os.environ['SAM_API_KEY'][-4:] }")
+
+
+def actual_main():
+    # set defaults
+    limit = None
+    updateOld = True
+    target_sol_types = "o,k"
+    skip_attachemnts = False
+    from_date = "yesterday"
+    to_date = "yesterday"
+
+    # set these PSC codes for EPA demo mode
+    # set_psc_code_download_list(["61", "6117", "6125", "6130", "6135", "6140", "6150", "7", "7A", "7A20", "7A21", "7B", "7B20", "7B21", "7B22", "7C", "7C20", "7C21", "7D", "7D20", "7E", "7E20", "7E21", "7F", "7F20", "7G", "7G20", "7G21", "7G22", "7H", "7H20", "7J", "7J20", "7K" "7K20", "7730", "D", "DA", "DA01", "DA10", "DB", "DB01", "DB02", "DB10", "DC", "DC01", "DC10", "DD", "DD01", "DE", "DE01", "DE02", "DE10", "DE11", "DF", "DF01", "DF10", "DG", "DG01", "DG10", "DG11", "DH", "DH01", "DH10", "DJ", "DJ01", "DJ10", "DK", "DK01", "DK10"] )
+
+
+    # fast mode
+    # limit=40
+    updateOld=False
+    # skip_attachemnts=True
+
+    #db reload for last week
+    #from_date = datetime.date.today() - datetime.timedelta(days=8)
+    #to_date = datetime.date.today() - datetime.timedelta(days=1)
+    # updateOld=False
+
+    
+    check_environment()
+    main(limit=limit, updateOld=updateOld, opportunity_filter_function=opportunity_filter_function, target_sol_types=target_sol_types, skip_attachments=skip_attachemnts, from_date=from_date, to_date=to_date)
 
 
 if __name__ == '__main__':

@@ -59,7 +59,7 @@ class Attachment(Base):
     machine_readable = Column(Boolean)
     attachment_text = Column(Text)
     prediction = Column(Integer)
-    decision_boundary = Column(Float(53))
+    decision_boundary = Column(Float)
     validation = Column(Integer)
     attachment_url = Column(Text)
     trained = Column(Boolean)

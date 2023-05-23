@@ -192,16 +192,18 @@ def get_docs(opp, out_path):
     http.clear()
     return filelist
 
-def handle_file_too_long(filepath):
+def handle_file_too_long(filepath: os.path) -> Path:
+    """
+    If the filepath is too long, shorten it by removing the middle of the filename.
+    This should preserve the beginning and end of the filename.
+    :param filepath: the filepath to shorten
+    """
     path_f = Path(filepath)
     stem = path_f.stem
     suffix = path_f.suffix
     path = path_f.parent
 
-    # if the filename is too long, try to shorten it by removing the middle
-    # of the filename this should preserve the beginning and end of the filename
-
-    new_stem = stem[:int(len(stem)/2)]+ '--' + stem[-20:]
+    new_stem = stem[:int(len(stem)/2)]+ '...' + stem[-20:]
     new_filename = new_stem + suffix
 
     return Path(path, new_filename)

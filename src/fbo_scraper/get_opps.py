@@ -7,6 +7,8 @@ import urllib3
 import shutil
 import hashlib
 import urllib
+import errno
+from pathlib import Path
 
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from fbo_scraper.get_doc_text import get_doc_text
@@ -176,11 +178,35 @@ def get_docs(opp, out_path):
                 if match and len(match.groups()) > 0:
                     real_filename = urllib.parse.unquote(match.group(1)).replace("+", " ")  # have to replace + with space because parse doesn't do that
                     real_filename_with_path = os.path.join(out_path, real_filename)
-                    os.rename(filename, real_filename_with_path)
+                    try:
+                        os.rename(filename, real_filename_with_path)
+                    except OSError as e:
+                        if e.errno == errno.ENAMETOOLONG:
+                            logger.warning(f"Filename {real_filename_with_path} is too long. Skipping.")
+                            real_filename_with_path = handle_file_too_long(real_filename_with_path)
+                            os.rename(filename, real_filename_with_path)
+                        else:
+                            raise
                     logger.info("Downloaded file {}".format(real_filename_with_path))
                     filelist.append( (real_filename_with_path, file_url) )
     http.clear()
     return filelist
+
+def handle_file_too_long(filepath):
+    path_f = Path(filepath)
+    stem = path_f.stem
+    suffix = path_f.suffix
+    path = path_f.parent
+
+    # if the filename is too long, try to shorten it by removing the middle
+    # of the filename this should preserve the beginning and end of the filename
+
+    new_stem = stem[:int(len(stem)/2)]+ '--' + stem[-20:]
+    new_filename = new_stem + suffix
+
+    return Path(path, new_filename)
+    
+    
 
 def get_attachment_data(file_name, url):
     text = get_doc_text(file_name)

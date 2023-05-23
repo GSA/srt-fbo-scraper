@@ -182,7 +182,7 @@ def get_docs(opp, out_path):
                         os.rename(filename, real_filename_with_path)
                     except OSError as e:
                         if e.errno == errno.ENAMETOOLONG:
-                            logger.warning(f"Filename {real_filename_with_path} is too long. Skipping.")
+                            logger.warning(f"Filename {real_filename_with_path} is too long. Shortening Name.")
                             real_filename_with_path = handle_file_too_long(real_filename_with_path)
                             os.rename(filename, real_filename_with_path)
                         else:

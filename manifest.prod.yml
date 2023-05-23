@@ -1,9 +1,9 @@
 ---
 applications:
-- name: srt-fbo-scraper
+- name: srt-fbo-scraper-prod
   memory: 1GB
   disk_quota: 4GB
   no-route: true
   health-check-type: process
   services:
-    - srt-postgres-dev
+    - srt-postgres-prod

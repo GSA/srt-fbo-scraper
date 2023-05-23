@@ -22,6 +22,7 @@ from fbo_scraper.db.db_utils import get_db_url
 config.set_main_option('sqlalchemy.url',
                        get_db_url())
 from fbo_scraper.db import db
+
 target_metadata = db.Base.metadata
 
 

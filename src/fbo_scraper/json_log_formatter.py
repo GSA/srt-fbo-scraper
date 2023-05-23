@@ -5,6 +5,7 @@ from dateutil import parser
 from sys import stdout
 from logging.handlers import TimedRotatingFileHandler
 import re
+from pathlib import Path
 
 class CustomJsonFormatter(jsonlogger.JsonFormatter):
 
@@ -68,7 +69,7 @@ def configureLogger(logger, log_file_level = logging.INFO, stdout_level = 11):
     logger.addHandler(logHandler)
 
     # file handler
-    fh = TimedRotatingFileHandler(r'smartie-logger.log', when='midnight', backupCount=14)
+    fh = TimedRotatingFileHandler(Path('logs', 'smartie-logger.log'), when='midnight', backupCount=14)
     fh.setFormatter( logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
     fh.setLevel(log_file_level)
     logger.addHandler(fh)

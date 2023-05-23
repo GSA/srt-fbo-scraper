@@ -3,7 +3,7 @@ from pythonjsonlogger import jsonlogger
 from datetime import datetime
 from dateutil import parser
 from sys import stdout
-
+from logging.handlers import TimedRotatingFileHandler
 import re
 
 class CustomJsonFormatter(jsonlogger.JsonFormatter):
@@ -50,16 +50,6 @@ class CustomJsonFormatter(jsonlogger.JsonFormatter):
         for key in to_be_removed:
             del log_record[key]
 
-        # TODO: we *should* be able to get this to work as a dict, but cloud.gov doesn't do it for me.
-        extra = ""
-        for key in log_record['meta']:
-            extra = "{} {}:{} |".format(extra, key, log_record['meta'][key])
-        if not extra == "":
-            extra = " [{} ]".format(extra)
-        log_record['message'] = "{}{}".format(log_record['message'], extra)
-
-        del log_record['meta']
-
 
         return log_record
 
@@ -72,13 +62,13 @@ def configureLogger(logger, log_file_level = logging.INFO, stdout_level = 11):
 
     # json output setup
     logHandler = logging.StreamHandler(stdout)
-    formatter = CustomJsonFormatter('(timestamp) (level) (message) (filename) (lineno)') # jsonlogger.JsonFormatter()
+    formatter = CustomJsonFormatter('%(timestamp)s %(level)s %(message)s %(filename)s %(lineno)s') # jsonlogger.JsonFormatter()
     logHandler.setFormatter(formatter)
     logHandler.setLevel(stdout_level)
     logger.addHandler(logHandler)
 
     # file handler
-    fh = logging.FileHandler(r'smartie-logger.log')
+    fh = TimedRotatingFileHandler(r'smartie-logger.log', when='midnight', backupCount=14)
     fh.setFormatter( logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
     fh.setLevel(log_file_level)
     logger.addHandler(fh)

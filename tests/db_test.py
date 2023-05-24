@@ -3,14 +3,14 @@ import sys
 import os
 import logging
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
-from tests.mock_opps import mock_data_for_db
+from tests.mock_opps import mock_schematized_opp_one
 from fbo_scraper.db.db import Notice, NoticeType, Attachment, Model, now_minus_two
-from fbo_scraper.db.db_utils import get_db_url, session_scope, insert_data, \
-                              DataAccessLayer, clear_data, object_as_dict, fetch_notice_type_id, \
-                              insert_model, insert_notice_types, retrain_check, \
-                              get_validation_count, get_trained_count, \
-                              get_validated_untrained_count, fetch_validated_attachments, \
-                              fetch_last_score, fetch_notices_by_solnbr, fetch_notice_type_by_id
+from fbo_scraper.db.db_utils import (get_db_url, session_scope, insert_data_into_solicitations_table,
+                              DataAccessLayer, clear_data, object_as_dict, fetch_notice_type_id,
+                              insert_model, insert_notice_types, retrain_check,
+                              get_validation_count, get_trained_count,
+                              get_validated_untrained_count, fetch_validated_attachments,
+                              fetch_last_score, fetch_notices_by_solnbr, fetch_notice_type_by_id )
 
 from unittest import mock
 
@@ -21,7 +21,7 @@ from unittest import mock
 class DBTestCase(unittest.TestCase):
     
     def setUp(self):
-        self.data = [mock_data_for_db.copy()]
+        self.data = [mock_schematized_opp_one.copy()]
         self.dal = DataAccessLayer(conn_string = get_db_url())
         self.dal.create_test_postgres_db()
         self.dal.connect()
@@ -45,15 +45,15 @@ class DBTestCase(unittest.TestCase):
         call_count = 0
         with session_scope(self.dal) as session:
             # intentionally bad notice type
-            data = mock_data_for_db.copy()
+            data = mock_schematized_opp_one.copy()
             data['notice type'] = "not to be found"
-            self.assertNotEqual(mock_data_for_db['notice type'], data['notice type'])
+            self.assertNotEqual(mock_schematized_opp_one['notice type'], data['notice type'])
 
             logger = logging.getLogger("utils.db.db_utils")
             print (logger)
 
             with mock.patch.object(logger, 'warning', wraps=logger.warning):
-                insert_data(session, [ data ])
+                insert_data_into_solicitations_table(session, [ data ])
                 call_count = logger.warning.call_count
         self.assertEqual (1, call_count, "We should get one warning when adding a notice with a new notice type.")
 
@@ -72,9 +72,9 @@ class DBTestCase(unittest.TestCase):
         expected = len(types)
         self.assertEqual(result, expected)
         
-    def test_insert_data(self):
+    def test_insert_data_into_solicitations_table(self):
         with session_scope(self.dal) as session:
-            insert_data(session, self.data)
+            insert_data_into_solicitations_table(session, self.data)
         result = []
         with session_scope(self.dal) as session:
             notices = session.query(Notice).all()
@@ -104,12 +104,12 @@ class DBTestCase(unittest.TestCase):
                      'na_flag': False}]
         self.assertCountEqual(result, expected)
 
-    def test_insert_data_with_new_notice_type(self):
+    def test_insert_data_into_solicitations_table_with_new_notice_type(self):
         opp = self.data[0].copy()
         nnt = "new notice type"
         opp['notice type'] = nnt
         with session_scope(self.dal) as session:
-            insert_data(session, [opp])
+            insert_data_into_solicitations_table(session, [opp])
         result = []
         with session_scope(self.dal) as session:
             notices = session.query(Notice).all()
@@ -159,7 +159,7 @@ class DBTestCase(unittest.TestCase):
 
     def test_get_validation_count(self):
         with session_scope(self.dal) as session:
-            insert_data(session, self.data)
+            insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
             result = get_validation_count(session)
         expected = 0
@@ -167,7 +167,7 @@ class DBTestCase(unittest.TestCase):
 
     def test_get_trained_count(self):
         with session_scope(self.dal) as session:
-            insert_data(session, self.data)
+            insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
             result = get_trained_count(session)
         expected = 0
@@ -175,7 +175,7 @@ class DBTestCase(unittest.TestCase):
 
     def test_get_validated_untrained_count(self):
         with session_scope(self.dal) as session:
-            insert_data(session, self.data)
+            insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
             result = get_validated_untrained_count(session)
         expected = 0
@@ -183,7 +183,7 @@ class DBTestCase(unittest.TestCase):
 
     def test_retrain_check(self):
         with session_scope(self.dal) as session:
-            insert_data(session, self.data)
+            insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
             result = retrain_check(session)
         expected = False
@@ -191,7 +191,7 @@ class DBTestCase(unittest.TestCase):
 
     def test_fetch_validated_attachments(self):
         with session_scope(self.dal) as session:
-            insert_data(session, self.data)
+            insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
             attachments = fetch_validated_attachments(session)
         result = len(attachments)
@@ -201,7 +201,7 @@ class DBTestCase(unittest.TestCase):
 
     def test_fetch_notices_by_solnbr(self):
         with session_scope(self.dal) as session:
-            insert_data(session, self.data)
+            insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
             notices = fetch_notices_by_solnbr('test', session)
         result = len(notices)
@@ -210,7 +210,7 @@ class DBTestCase(unittest.TestCase):
 
     def test_fetch_notices_by_solnbr_bogus_solnbr(self):
         with session_scope(self.dal) as session:
-            insert_data(session, self.data)
+            insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
             notices = fetch_notices_by_solnbr('notexist', session)
         result = len(notices)

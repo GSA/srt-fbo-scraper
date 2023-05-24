@@ -12,8 +12,8 @@ import requests_mock
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from tests.test_utils import get_zip_in_memory, get_day_side_effect
 from tests import mock_opps
-from fbo_scraper.sam_utils import get_org_info, write_zip_content, get_notice_data, get_notice_type,\
-                            schematize_opp, naics_filter, get_dates_from_opp, find_yesterdays_opps
+from fbo_scraper.sam_utils import (write_zip_content, get_notice_data, get_notice_type,
+                            schematize_opp, naics_filter, get_dates_from_opp, find_yesterdays_opps)
 
 
 class SamUtilsTestCase(unittest.TestCase):
@@ -27,20 +27,6 @@ class SamUtilsTestCase(unittest.TestCase):
         self.zip_in_memory = None
         self.opp = None
 
-    @patch('utils.sam_utils.get_org_request_details')    
-    @requests_mock.Mocker()
-    def test_get_org_info(self, mock_get_org_request_details, mock_request):
-        fhorgid = '123'
-        url = f'https://api.sam.gov/prod/federalorganizations/v1/orgs?fhorgid={fhorgid}'
-        mock_get_org_request_details.return_value = (url, {})
-        response = {'orglist': [{'fhagencyorgname': 'agency', 'fhorgname': 'org'}]}
-        mock_request.register_uri('GET',
-                                  url = url,
-                                  json = response,
-                                  status_code = 200)
-        result = get_org_info(fhorgid)
-        expected = ('agency', 'org')
-        self.assertEqual(result, expected)
 
     def test_write_zip_content(self):    
         content = self.zip_in_memory

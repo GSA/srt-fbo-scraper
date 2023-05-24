@@ -64,3 +64,21 @@ wget==3.2
 wsproto==1.2.0
 xlrd==1.2.0
 XlsxWriter==3.1.1
+
+
+#
+# Only needed for testing
+#
+fpdf
+pytest
+pytest-cov
+pytest-watch
+python-docx
+reportlab
+requests-mock
+responses
+ruff
+mypy
+tox
+# For pycario issues:
+# Linux: sudo apt-get install libcairo2 libcairo2-dev

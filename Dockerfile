@@ -1,4 +1,4 @@
-FROM python:3.6.15
+FROM python:3.10
 
 ENV SUPERCRONIC_URL=https://github.com/albertcrowley/supercronic/releases/download/cloud-2/supercronic-linux-x86 \
     SUPERCRONIC=supercronic-linux-x86 \

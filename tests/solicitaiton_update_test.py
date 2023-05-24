@@ -1,8 +1,8 @@
+import pytest
 import os
 import sys
 import unittest
-from fbo_scraper.db.db_utils import get_db_url, session_scope, DataAccessLayer, insert_data
-import pytest
+from fbo_scraper.db.db_utils import get_db_url, session_scope, DataAccessLayer
 
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

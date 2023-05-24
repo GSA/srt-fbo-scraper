@@ -1,4 +1,7 @@
-#mock_opp_one = {'data': {'link': {'href': 'test.com',
+from datetime import datetime
+
+#mock_opp_one =
+#  {'data': {'link': {'href': 'test.com',
 #   'additionalInfo': {'content': 'description'}},
 #  'type': 'p',
 #  'award': {'awardee': {'location': {}},
@@ -191,7 +194,20 @@ mock_opps = [mock_opp_one[0], mock_opp_two[0]]
 
 mock_data = {'_embedded': {'results': mock_opps}}
 
-mock_schematized_opp_one = {'notice type': 'test', 'solnbr': 'test', 'agency': 'agency', 'compliant': 0, 'office': 'office', 'opp_id': 'test', 'attachments': [], 'classcod': 'test', 'naics': 'test', 'subject': 'test', 'url': 'https://beta.sam.gov/opp/123/view', 'setaside': 'test', 'emails': ['test@test.gov']}
+mock_schematized_opp_one = {
+    'notice type': 'test', 
+    'solnbr': 'test', 
+    'agency': 'agency', 
+    'compliant': 0, 
+    'office': 'office', 
+    'opp_id': 'test', 
+    'attachments': [], 
+    'classcod': 'test', 
+    'naics': 'test', 
+    'subject': 'test', 
+    'url': 'https://beta.sam.gov/opp/123/view', 
+    'setaside': 'test', 'emails': ['test@test.gov'], 
+    'postedDate': datetime(1998, 11, 25, 2, 51, 28)}
 
 mock_schematized_opp_two = {'notice type': 'Special Notice', 'solnbr': 'ATC1234', 'agency': 'DEPT OF DEFENSE',
                             'compliant': 0, 'office': 'DEPT OF THE AIR FORCE', 'attachments': [

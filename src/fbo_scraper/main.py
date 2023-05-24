@@ -108,7 +108,7 @@ def actual_main():
     # skip_attachemnts=True
 
     #db reload for last week
-    #from_date = datetime.date.today() - datetime.timedelta(days=8)
+    from_date = datetime.date.today() - datetime.timedelta(days=60)
     #to_date = datetime.date.today() - datetime.timedelta(days=1)
     # updateOld=False
 

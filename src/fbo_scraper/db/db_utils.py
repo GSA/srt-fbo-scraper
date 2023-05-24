@@ -326,11 +326,11 @@ def insert_data_into_solicitations_table(session, data):
             sol.parseStatus = parseStatus
             new_prediction = deepcopy(sol.predictions)  # make a copy - if you only chagne the props then SQAlchamy won't know the object changed
             if sol_prediction != 0:
-                new_prediction['value'] = "green";
-                new_prediction['508'] = "green";
+                new_prediction['value'] = "green"
+                new_prediction['508'] = "green"
             else:
-                new_prediction['value'] = "red";
-                new_prediction['508'] = "red";
+                new_prediction['value'] = "red"
+                new_prediction['508'] = "red"
 
             # add a random estar prediction
             # TODO: properly compute estar prediction
@@ -374,7 +374,7 @@ def insert_data_into_solicitations_table(session, data):
 
             if (not sol_existed_in_db):
                 logger.info("Inserting {}".format(sol.solNum))
-                session.add(sol);
+                session.add(sol)
             else:
                 logger.info("Updating {}".format(sol.solNum))
             opp_count += 1

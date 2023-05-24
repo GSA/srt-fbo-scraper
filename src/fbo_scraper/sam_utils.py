@@ -366,7 +366,7 @@ def update_old_solicitations(session, age_cutoff=365, max_tests=100, fraction=14
             stats['examined'] += 1
             if stats['examined'] > max_tests:
                 logger.warning("Max test count hit when trying to examine old solicitations")
-                break;
+                break
 
             sam_sol_data = get_opps.get_opp_from_sam(sol.solNum)
             if sam_sol_data == None:

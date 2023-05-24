@@ -185,7 +185,7 @@ class Solicitation(Base):
     compliant = Column(Integer, server_default=text("0"))
     noticeData = Column(JSONB)
     
-    attachments = relationship("Attachment", back_populates="solicitation", cascade="all, delete-orphan");
+    attachments = relationship("Attachment", back_populates="solicitation", cascade="all, delete-orphan")
 
 class SurveyResponse(Base):
     __tablename__ = 'survey_responses'

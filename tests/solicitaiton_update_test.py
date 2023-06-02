@@ -1,4 +1,3 @@
-import pytest
 import os
 import sys
 import unittest
@@ -10,7 +9,6 @@ from fbo_scraper import sam_utils
 
 
 class SamUtilsTestCase(unittest.TestCase):
-
     def setUp(self):
         pass
 
@@ -25,5 +23,6 @@ class SamUtilsTestCase(unittest.TestCase):
         with session_scope(dal) as session:
             sam_utils.update_old_solicitations(session, age_cutoff=365, max_tests=5)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

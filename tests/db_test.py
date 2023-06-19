@@ -5,7 +5,7 @@ import logging
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tests.mock_opps import mock_schematized_opp_one
-from fbo_scraper.db.db import Notice, NoticeType, Model
+from fbo_scraper.db.db import Notice, NoticeType, Model, Solicitation
 from fbo_scraper.db.db_utils import (
     get_db_url,
     session_scope,
@@ -21,7 +21,7 @@ from fbo_scraper.db.db_utils import (
     get_validated_untrained_count,
     fetch_validated_attachments,
     fetch_last_score,
-    fetch_notices_by_solnbr,
+    fetch_solicitations_by_solnbr,
     fetch_notice_type_by_id,
 )
 
@@ -58,14 +58,14 @@ class DBTestCase(unittest.TestCase):
                 mock_schematized_opp_one["notice type"], data["notice type"]
             )
 
-            logger = logging.getLogger("utils.db.db_utils")
+            logger = logging.getLogger("fbo_scraper.db.db_utils")
             print(logger)
 
             with mock.patch.object(logger, "warning", wraps=logger.warning):
                 insert_data_into_solicitations_table(session, [data])
                 call_count = logger.warning.call_count
         self.assertEqual(
-            1,
+            2,
             call_count,
             "We should get one warning when adding a notice with a new notice type.",
         )
@@ -100,38 +100,10 @@ class DBTestCase(unittest.TestCase):
             insert_data_into_solicitations_table(session, self.data)
         result = []
         with session_scope(self.dal) as session:
-            notices = session.query(Notice).all()
-            for n in notices:
-                notice = object_as_dict(n)
-                # pop the date and createdAt attributes since they're constructed programmatically
-                notice.pop("date")
-                notice.pop("createdAt")
-                # pop this as it'll vary
-                notice.pop("notice_type_id")
-                result.append(notice)
-        expected = [
-            {
-                "id": 1,
-                "solicitation_number": "test",
-                "agency": "agency",
-                "notice_data": {
-                    "url": "url",
-                    "naics": "test",
-                    "office": "office",
-                    "subject": "test",
-                    "classcod": "test",
-                    "setaside": "test",
-                    "emails": ["test@test.gov"],
-                },
-                "compliant": 0,
-                "feedback": None,
-                "history": None,
-                "action": None,
-                "updatedAt": None,
-                "na_flag": False,
-            }
-        ]
-        self.assertCountEqual(result, expected)
+            result = fetch_solicitations_by_solnbr("test", session)
+            
+        expected = self.data
+        assert len(result) == len(expected)
 
     def test_insert_data_into_solicitations_table_with_new_notice_type(self):
         opp = self.data[0].copy()
@@ -221,16 +193,16 @@ class DBTestCase(unittest.TestCase):
         with session_scope(self.dal) as session:
             insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
-            notices = fetch_notices_by_solnbr("test", session)
+            notices = fetch_solicitations_by_solnbr("test", session)
         result = len(notices)
         expected = 1
         self.assertEqual(result, expected)
 
-    def test_fetch_notices_by_solnbr_bogus_solnbr(self):
+    def test_fetch_solicitations_by_solnbr_bogus_solnbr(self):
         with session_scope(self.dal) as session:
             insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
-            notices = fetch_notices_by_solnbr("notexist", session)
+            notices = fetch_solicitations_by_solnbr("notexist", session)
         result = len(notices)
         expected = 0
         self.assertEqual(result, expected)

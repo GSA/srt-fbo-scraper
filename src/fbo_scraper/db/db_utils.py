@@ -244,6 +244,27 @@ def is_opp_update(existing_date, posted_date, sol_existed_in_db):
     return False
 
 
+def grab_notice_type_id(notice_type: str, session: DataAccessLayer) -> int:
+    """
+    Fetch the notice_type_id for a given notice_type \
+    or create notice type if it does not exist.
+    """
+
+    if notice_type is None:
+        logger.error("Notice type is None. Cannot fetch notice type id.")
+        return
+
+
+    notice_type_id = fetch_notice_type_id(notice_type, session)
+    if notice_type_id is None:
+        logger.warning("Notice type {} not found. Creating new notice type."
+                       .format(notice_type))
+        insert_notice_types(session, [notice_type])
+        notice_type_id = fetch_notice_type_id(notice_type, session)
+
+    return notice_type_id
+
+
 def insert_data_into_solicitations_table(session, data):
     """
     Insert opportunities data into the database.
@@ -261,22 +282,8 @@ def insert_data_into_solicitations_table(session, data):
         try:
             now_datetime = datetime.utcnow()
             now_datetime_string = now_datetime.strftime("%Y-%m-%dT%H:%M:%SZ")
-            notice_type = opp["notice type"]
-            notice_type_id = fetch_notice_type_id(notice_type, session)
-
-            if notice_type_id is None:
-                logger.warning(
-                    "Notice type '{}' found in Notice {} was not in the database".format(
-                        notice_type, opp.get("solnbr", "")
-                    ),
-                    extra={
-                        "notice type": notice_type,
-                        "soliciation number": opp.get("solnbr", ""),
-                        "agency": opp.get("agency", ""),
-                    },
-                )
-                insert_notice_types(session, [notice_type])
-                notice_type_id = fetch_notice_type_id(notice_type, session)
+            notice_type = opp.get("notice type")
+            notice_type_id = grab_notice_type_id(notice_type, session)
 
             attachments = opp.pop("attachments")
 
@@ -292,8 +299,6 @@ def insert_data_into_solicitations_table(session, data):
                 sol.updatedAt = now_datetime
             if sol is None:
                 sol = Solicitation()
-                sol.active = True
-                sol.na_flag = False
 
             sol.noticeData = opp
             sol.notice_type_id = notice_type_id
@@ -485,6 +490,7 @@ def insert_data_into_solicitations_table(session, data):
                 session.add(sol)
             else:
                 logger.info("Updating {}".format(sol.solNum))
+
             opp_count += 1
 
         except Exception as e:
@@ -542,7 +548,7 @@ def get_validated_untrained_count(session):
                 [
                     (
                         (db.Attachment.trained is False)
-                        & (db.Attachment.validation == 1),
+                        and (db.Attachment.validation == 1),
                         1,
                     )
                 ],
@@ -575,7 +581,6 @@ def retrain_check(session):
     else:
         return False
 
-
 def fetch_notices_by_solnbr(solnbr, session):
     """
     Fetch all notices with a given solicitation number (solnbr).
@@ -590,6 +595,21 @@ def fetch_notices_by_solnbr(solnbr, session):
     notice_dicts = [object_as_dict(notice) for notice in notices]
 
     return notice_dicts
+
+def fetch_solicitations_by_solnbr(solnbr, session):
+    """
+    Fetch all solicitations with a given solicitation number (solnbr).
+
+    Parameters:
+        solnbr (str): A solicitation number. For example, 'spe7m119t8133'
+
+    Returns:
+        sol_dict (list): a list of dicts, with each dict representing a solicitation
+    """
+    solicitations = session.query(db.Solicitation).filter(db.Solicitation.solNum == solnbr)
+    sol_dict = [object_as_dict(sol) for sol in solicitations]
+
+    return sol_dict
 
 
 def fetch_notice_by_id(notice_id, session):

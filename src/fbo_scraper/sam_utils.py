@@ -167,7 +167,7 @@ def schematize_opp(opp):
     # org_id = opp_data.get('organizationId')
 
     # opp_data['fullParentPathName'] is a . separated list. First is the agency, second is the office, and then it goes down from there.
-    organizationHierarchy = opp_data["fullParentPathName"].split(".")
+    organizationHierarchy = opp_data.get("fullParentPathName", "").split(".")
     agency = office = ""
     if (
         organizationHierarchy

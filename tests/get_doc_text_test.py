@@ -61,6 +61,7 @@ class GetDocTextTestCase(unittest.TestCase):
         # create a docx
         document_docx = Document()
         document_docx.add_heading(text, 0)
+        document_docx.add_paragraph(text)
         self.temp_outfile_path_docx = os.path.join(self.abs_out_path, "test.docx")
         document_docx.save(self.temp_outfile_path_docx)
 

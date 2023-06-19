@@ -34,8 +34,6 @@ def main(
     to_date="yesterday",
 ):
     try:
-        logger.info("Starting srt-fbo-scraper from MASTER branch")
-
         if limit:
             logger.error(
                 "Artifical limit of {} placed on the number of opportunities processed.  Should not happen in production.".format(
@@ -138,7 +136,7 @@ def actual_main():
 
     # fast mode
     # limit=40
-    updateOld = False
+    #updateOld = False
     # skip_attachemnts=True
 
     # db reload for last week
@@ -172,7 +170,7 @@ if __name__ == "__main__":
 
     # fast mode
     # limit=40
-    updateOld = False
+    #updateOld = False
     # skip_attachemnts=True
 
     # db reload for last week

@@ -410,7 +410,7 @@ mock_schematized_opp_one = {
     "url": "https://beta.sam.gov/opp/123/view",
     "setaside": "test",
     "emails": ["test@test.gov"],
-    "postedDate": datetime(1998, 11, 25, 2, 51, 28),
+    "postedDate": '2023-06-01',
 }
 
 mock_schematized_opp_two = {

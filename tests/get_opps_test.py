@@ -35,9 +35,9 @@ class GetOppsTestCase(unittest.TestCase):
         self.beta_opp_uri = None
         self.mock_schematized_opp_one
 
-    @patch("utils.get_opps.find_yesterdays_opps")
-    @patch("utils.get_opps.get_opps")
-    @patch("utils.get_opps.get_opp_request_details")
+    @patch("fbo_scraper.get_opps.find_yesterdays_opps")
+    @patch("fbo_scraper.get_opps.get_opps")
+    @patch("fbo_scraper.get_opps.get_opp_request_details")
     def test_get_yesterdays_opps(self, m_get_opp_request_details, m_g_op, m_yester):
         m_g_op.return_value = (mock_opps.mock_opps, 1)
         m_yester.return_value = (mock_opps.mock_opps, False)
@@ -77,8 +77,8 @@ class GetOppsTestCase(unittest.TestCase):
     #                mock_opps.mock_opp_two, mock_opps.mock_opp_two]
     #    self.assertCountEqual(result, expected)
 
-    @patch("utils.get_opps.get_doc_request_details")
-    @patch("utils.get_opps.write_zip_content")
+    @patch("fbo_scraper.get_opps.get_doc_request_details")
+    @patch("fbo_scraper.get_opps.write_zip_content")
     @requests_mock.Mocker()
     def test_get_docs(
         self, m_write_zip_content, m_get_doc_request_details, mock_request
@@ -92,7 +92,7 @@ class GetOppsTestCase(unittest.TestCase):
         expected = ["test.pdf"]
         self.assertEqual(result, expected)
 
-    @patch("utils.get_opps.get_doc_text")
+    @patch("fbo_scraper.get_opps.get_doc_text")
     def test_get_attachment_data(self, mock_get_doc_text):
         mock_get_doc_text.return_value = "test"
         url = "test"
@@ -100,10 +100,10 @@ class GetOppsTestCase(unittest.TestCase):
         expected = mock_opps.mock_attachment_data
         self.assertEqual(result, expected)
 
-    @patch("utils.get_opps.get_attachment_data")
-    @patch("utils.get_opps.get_doc_text")
-    @patch("utils.get_opps.get_docs")
-    @patch("utils.get_opps.schematize_opp")
+    @patch("fbo_scraper.get_opps.get_attachment_data")
+    @patch("fbo_scraper.get_opps.get_doc_text")
+    @patch("fbo_scraper.get_opps.get_docs")
+    @patch("fbo_scraper.get_opps.schematize_opp")
     def test_transform_opps(
         self, m_schematize_opp, m_g_docs, m_g_doc_text, m_g_attachment_data
     ):

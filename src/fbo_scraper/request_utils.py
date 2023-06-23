@@ -4,10 +4,27 @@ import sys
 
 
 import requests
+import ssl
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from urllib3.poolmanager import PoolManager
 
 logger = logging.getLogger(__name__)
+
+class SAMHttpAdapter(HTTPAdapter):
+    """
+    Transport adapter that allows us to use custom ssl_context for SAM API
+    https://stackoverflow.com/questions/71603314/ssl-error-unsafe-legacy-renegotiation-disabled/71646353#71646353
+    """
+    def __init__(self, ssl_context=None, **kwargs):
+        self.ssl_context = ssl_context
+        super().__init__(**kwargs)
+
+    def init_poolmanager(self, connections, maxsize, block=False):
+        self.poolmanager = PoolManager(
+            num_pools=connections, maxsize=maxsize,
+            block=block, ssl_context=self.ssl_context)
+
 
 
 def requests_retry_session(
@@ -27,6 +44,11 @@ def requests_retry_session(
     adapter = HTTPAdapter(max_retries=retry)
     session.mount("http://", adapter)
     session.mount("https://", adapter)
+    
+    ctx = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)
+    # Work around for https://bugs.python.org/issue44888
+    ctx.options |= 0x4
+    session.mount('https://', SAMHttpAdapter(ctx))
 
     return session
 

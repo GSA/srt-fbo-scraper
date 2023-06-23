@@ -7,28 +7,52 @@ from random import randint
 
 
 import requests
+import ssl
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from urllib3.poolmanager import PoolManager
 
 logger = logging.getLogger(__name__)
 
-def requests_retry_session(retries=3, 
-                           backoff_factor=0.3,
-                           status_forcelist=(500, 502, 503, 504), 
-                           session=None):
-    '''
+class SAMHttpAdapter(HTTPAdapter):
+    """
+    Transport adapter that allows us to use custom ssl_context for SAM API
+    https://stackoverflow.com/questions/71603314/ssl-error-unsafe-legacy-renegotiation-disabled/71646353#71646353
+    """
+    def __init__(self, ssl_context=None, **kwargs):
+        self.ssl_context = ssl_context
+        super().__init__(**kwargs)
+
+    def init_poolmanager(self, connections, maxsize, block=False):
+        self.poolmanager = PoolManager(
+            num_pools=connections, maxsize=maxsize,
+            block=block, ssl_context=self.ssl_context)
+
+
+
+def requests_retry_session(
+    retries=3, backoff_factor=0.3, status_forcelist=(500, 502, 503, 504), session=None
+):
+    """
     Use to create an http(s) requests session that will retry a request.
-    '''
+    """
     session = session or requests.Session()
-    retry = Retry(total = retries, 
-                  read = retries, 
-                  connect = retries, 
-                  backoff_factor = backoff_factor, 
-                  status_forcelist = status_forcelist)
-    adapter = HTTPAdapter(max_retries = retry)
-    session.mount('http://', adapter)
-    session.mount('https://', adapter)
+    retry = Retry(
+        total=retries,
+        read=retries,
+        connect=retries,
+        backoff_factor=backoff_factor,
+        status_forcelist=status_forcelist,
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount("http://", adapter)
+    session.mount("https://", adapter)
     
+    ctx = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)
+    # Work around for https://bugs.python.org/issue44888
+    ctx.options |= 0x4
+    session.mount('https://', SAMHttpAdapter(ctx))
+
     return session
 
 

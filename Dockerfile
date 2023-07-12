@@ -4,10 +4,7 @@ ENV SUPERCRONIC_URL=https://github.com/albertcrowley/supercronic/releases/downlo
     SUPERCRONIC=supercronic-linux-x86 \
     SUPERCRONIC_SHA1SUM=2b5144dee1af0dc07c372c3c45026dd42af81226
 
-ADD requirements.txt .
-
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
 
 RUN apt-get update && apt-get install -y \
     antiword \
@@ -53,8 +50,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
     && unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 
 ADD . .
-RUN python setup.py install
-COPY ./src /usr/local/lib/python3.6/site-packages/
+RUN pip install .
 
 #see https://docs.cloudfoundry.org/devguide/deploy-apps/push-docker.html
 COPY ./conf/passwd /etc/passwd

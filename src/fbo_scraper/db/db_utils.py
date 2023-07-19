@@ -298,9 +298,9 @@ def insert_data_into_solicitations_table(session, data):
             else:
                 if ( not sol.action ):
                     sol.action = []
-                sol.action.append({"date": now_datetime_string, "user": "", "action": "Solicitaiton Posted", "status": "complete"})
+                sol.action.append({"date": now_datetime_string, "user": "", "action": "Solicitation Posted", "status": "complete"})
                 sol.actionDate = now_datetime
-                sol.actionStatus = "Solicitaiton Posted"
+                sol.actionStatus = "Solicitation Posted"
                 sol.predictions = { "value": "red", "508": "red", "estar": "red", "history" : [] }
 
 

@@ -1,13 +1,10 @@
-FROM python:3.6.15
+FROM python:3.6.15-slim-buster
 
 ENV SUPERCRONIC_URL=https://github.com/albertcrowley/supercronic/releases/download/cloud-2/supercronic-linux-x86 \
     SUPERCRONIC=supercronic-linux-x86 \
     SUPERCRONIC_SHA1SUM=2b5144dee1af0dc07c372c3c45026dd42af81226
 
 ADD requirements.txt .
-
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
 
 RUN apt-get update && apt-get install -y \
     antiword \
@@ -33,6 +30,7 @@ RUN apt-get update && apt-get install -y \
     python-dev \
     ssh \
     swig \
+    wget \
     tar \
     unrtf \
     zlib1g-dev \
@@ -44,6 +42,8 @@ RUN apt-get update && apt-get install -y \
     #clean up the apt cache
     && rm -rf /var/lib/apt/lists/*
 
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt --no-cache-dir
 
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
     && echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list \

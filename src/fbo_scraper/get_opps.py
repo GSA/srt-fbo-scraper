@@ -146,9 +146,9 @@ def get_opps_for_day(
         uri_with_offset = f"{uri}&offset={offset}"
         r = session.get(uri_with_offset, timeout=100)
         data = r.json()
-        logger.info(f"JSON Data returned from SAM.gov: {data}")
-        totalRecords = data["totalRecords"]
-        offset += len(data["opportunitiesData"])
+        logger.debug(f"Retrieved json from {uri_with_offset}: {data}")
+        totalRecords = data['totalRecords']
+        offset += len(data['opportunitiesData'])
 
         opportunities_data = data["opportunitiesData"]
 

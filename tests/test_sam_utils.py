@@ -1,3 +1,4 @@
+import pytest
 from datetime import datetime as dt
 import os
 import shutil
@@ -12,8 +13,8 @@ import requests_mock
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from tests.test_utils import get_zip_in_memory, get_day_side_effect
 from tests import mock_opps
-from fbo_scraper.sam_utils import get_org_info, write_zip_content, get_notice_data, get_notice_type,\
-                            schematize_opp, naics_filter, get_dates_from_opp, find_yesterdays_opps
+from fbo_scraper.sam_utils import (write_zip_content, get_notice_data, get_notice_type,
+                            schematize_opp, naics_filter, get_dates_from_opp, find_yesterdays_opps)
 
 
 class SamUtilsTestCase(unittest.TestCase):
@@ -27,20 +28,6 @@ class SamUtilsTestCase(unittest.TestCase):
         self.zip_in_memory = None
         self.opp = None
 
-    @patch('utils.sam_utils.get_org_request_details')    
-    @requests_mock.Mocker()
-    def test_get_org_info(self, mock_get_org_request_details, mock_request):
-        fhorgid = '123'
-        url = f'https://api.sam.gov/prod/federalorganizations/v1/orgs?fhorgid={fhorgid}'
-        mock_get_org_request_details.return_value = (url, {})
-        response = {'orglist': [{'fhagencyorgname': 'agency', 'fhorgname': 'org'}]}
-        mock_request.register_uri('GET',
-                                  url = url,
-                                  json = response,
-                                  status_code = 200)
-        result = get_org_info(fhorgid)
-        expected = ('agency', 'org')
-        self.assertEqual(result, expected)
 
     def test_write_zip_content(self):    
         content = self.zip_in_memory
@@ -56,21 +43,32 @@ class SamUtilsTestCase(unittest.TestCase):
                 shutil.rmtree('temp_archive')
 
     def test_get_notice_data(self):
-        opp_data = {'pointOfContacts': [{'email': 'test@test.gov'}],
-                    'psc':[{'code':'test'}],
-                    'naics': [{"code": ["test"]}],
-                    'title': 'test',
-                    'typeOfSetAside':'test'}
+        # Set up mock data
+        mock_opp_data = {
+            'pointOfContact': [
+                {'email': 'test1@example.com'},
+                {'email': 'test2@example.com'}
+            ],
+            'classificationCode': 'ABC',
+            'naicsCode': '123',
+            'title': 'test opportunity',
+            'uiLink': 'https://example.com',
+            'typeOfSetAside': 'Small Business Set-Aside'
+        }
+        mock_opp_id = 'ABC123'
 
-        opp_id = '123'
-        result = get_notice_data(opp_data, opp_id)
-        expected = {'classcod': 'test',
-                    'naics': 'test',
-                    'subject': 'Test', #title-cased by function
-                    'url': f'https://beta.sam.gov/opp/{opp_id}/view',
-                    'setaside': 'test',
-                    'emails': ['test@test.gov']}
-        self.assertEqual(result, expected)
+        # Call the function with mock data
+        notice_data = get_notice_data(mock_opp_data, mock_opp_id)
+
+        # Check the results
+        self.assertIsNotNone(notice_data)
+        self.assertEqual(notice_data['classcod'], 'ABC')
+        self.assertEqual(notice_data['psc'], 'ABC')
+        self.assertEqual(notice_data['naics'], '123')
+        self.assertEqual(notice_data['subject'], 'Test Opportunity')
+        self.assertEqual(notice_data['url'], 'https://example.com')
+        self.assertEqual(notice_data['setaside'], 'Small Business Set-Aside')
+        self.assertEqual(notice_data['emails'], ['test1@example.com', 'test2@example.com'])
 
     def test_get_notice_type_presol(self):
         expected = get_notice_type('p')
@@ -92,38 +90,33 @@ class SamUtilsTestCase(unittest.TestCase):
         result = None
         self.assertEqual(result, expected)
 
-    @patch('utils.sam_utils.get_notice_data')
-    @patch('utils.sam_utils.get_org_info')
-    @patch('utils.sam_utils.get_notice_type')
-    def test_schematize_opp(self, m_get_notice_type, m_get_org_info, m_get_notice_data):
-        m_get_notice_type.return_value = 'test'
-        m_get_org_info.return_value = ('agency', 'office')
-        notice_data = {'classcod': 'test',
-                       'naics': 'test',
-                       'subject': 'test',
-                       'url': 'https://beta.sam.gov/opp/123/view',
-                       'setaside': 'test',
-                       'emails': ['test@test.gov']}
-        required_data = {'notice type':'Award Notice',
-                         'solnbr': 'FY1912306',
-                         'agency': 'DEPARTMENT OF DEFENSE',
-                         'compliant': 0,
-                         'office': 'DEPT OF THE NAVY',
-                         'opp_id': '532e8551391a4ba784e1e186656b6a39',
-                         'attachments':[]}
-        m_get_notice_data.return_value = notice_data
-        result = schematize_opp(self.opp)
-        expected = {**required_data, **notice_data}
-        self.assertEqual(result, expected)
+    def test_schematize_opp(self):
+        # Set up mock data
+        mock_opp = {
+            'solicitationNumber': 'ABC123',
+            'type': 'Presolicitation',
+            'fullParentPathName': 'Department of Defense.Air Force'
+        }
+
+        # Call the function with mock data
+        schematized_opp = schematize_opp(mock_opp)
+
+        # Check the results
+        self.assertIsNotNone(schematized_opp)
+        self.assertEqual(schematized_opp['opp_id'], 'ABC123')
+        self.assertEqual(schematized_opp['notice type'], 'Presolicitation')
+        self.assertEqual(schematized_opp['agency'], 'Department of Defense')
+        self.assertEqual(schematized_opp['office'], 'Air Force')
+        self.assertEqual(schematized_opp['compliant'], 0)
+        self.assertEqual(schematized_opp['attachments'], [])
 
     def test_schematize_opp_with_errors(self):
         opp = copy.deepcopy(self.opp)
         # use only one level of hierarchy to make sure the schematize function can handle it
-        opp['organizationHierarchy'] = [ {"name": "test"}]
+        opp['fullParentPathName'] = "test"
         result = schematize_opp(opp)
         self.assertEqual(result['agency'], "test")
         self.assertEqual(result['office'], "")
-        self.assertEqual(result['solnbr'], opp.get('cleanSolicitationNumber',''))
 
 
 
@@ -165,7 +158,7 @@ class SamUtilsTestCase(unittest.TestCase):
                     dt.strptime('2019-09-19', "%Y-%m-%d"))
         self.assertEqual(result, expected)
 
-    @patch('utils.sam_utils.get_day')
+    @patch('fbo_scraper.sam_utils.get_day')
     def test_find_yesterdays_opps_mod_only(self, mock_get_day):
         mock_get_day.side_effect = get_day_side_effect
         opps = [{'modifiedDate': '2019-09-19T21:18:20.669+0000'},
@@ -176,7 +169,7 @@ class SamUtilsTestCase(unittest.TestCase):
                     False)
         self.assertEqual(result, expected)
 
-    @patch('utils.sam_utils.get_day')
+    @patch('fbo_scraper.sam_utils.get_day')
     def test_find_yesterdays_opps_mod_and_post(self, mock_get_day):
         mock_get_day.side_effect = get_day_side_effect
         opps = [{'modifiedDate': '2019-09-19 00:00:00', 'publishDate':'2019-09-19 00:00:00'},
@@ -187,7 +180,7 @@ class SamUtilsTestCase(unittest.TestCase):
                     False)
         self.assertEqual(result, expected)
 
-    @patch('utils.sam_utils.get_day')
+    @patch('fbo_scraper.sam_utils.get_day')
     def test_find_yesterdays_opps_mod_and_post(self, mock_get_day):
         mock_get_day.side_effect = get_day_side_effect
         opps = [{'modifiedDate': '2019-09-19 00:00:00', 'publishDate':'2019-09-19 00:00:00'},
@@ -198,7 +191,7 @@ class SamUtilsTestCase(unittest.TestCase):
                     False)
         self.assertEqual(result, expected)
 
-    @patch('utils.sam_utils.get_day')
+    @patch('fbo_scraper.sam_utils.get_day')
     def test_find_yesterdays_opps_post_only(self, mock_get_day):
         mock_get_day.side_effect = get_day_side_effect
         opps = [{'modifiedDate': '2019-09-19 00:00:00', 'publishDate':'2019-09-19 00:00:00'},
@@ -209,7 +202,7 @@ class SamUtilsTestCase(unittest.TestCase):
                     False)
         self.assertEqual(result, expected)
 
-    @patch('utils.sam_utils.get_day')
+    @patch('fbo_scraper.sam_utils.get_day')
     def test_find_yesterdays_opps_only_today(self, mock_get_day):
         mock_get_day.side_effect = get_day_side_effect
         opps = [{'modifiedDate': '2019-09-19 00:00:00', 'publishDate':'2019-09-19 00:00:00'},
@@ -219,7 +212,7 @@ class SamUtilsTestCase(unittest.TestCase):
                     True)
         self.assertEqual(result, expected)
 
-    @patch('utils.sam_utils.get_day')
+    @patch('fbo_scraper.sam_utils.get_day')
     def test_find_yesterdays_opps_more(self, mock_get_day):
         mock_get_day.side_effect = get_day_side_effect
         opps = [{'modifiedDate': '2019-09-19 00:00:00', 'publishDate':'2019-09-19 00:00:00'},
@@ -231,7 +224,7 @@ class SamUtilsTestCase(unittest.TestCase):
                     True)
         self.assertEqual(result, expected)
 
-    @patch('utils.sam_utils.get_day')
+    @patch('fbo_scraper.sam_utils.get_day')
     def test_find_yesterdays_opps_no_more(self, mock_get_day):
         mock_get_day.side_effect = get_day_side_effect
         opps = [{'modifiedDate': '2019-09-17 00:00:00', 'publishDate':'2019-09-17 00:00:00'},

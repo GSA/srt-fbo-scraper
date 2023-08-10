@@ -7,6 +7,7 @@ from unittest.mock import patch
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from main import main
 from fbo_scraper.db.db_utils import get_db_url, session_scope, DataAccessLayer, clear_data
+from sqlalchemy.orm.session import close_all_sessions
 
 class EndToEndTest(unittest.TestCase):
     def setUp(self):
@@ -18,8 +19,7 @@ class EndToEndTest(unittest.TestCase):
     def tearDown(self):
         with session_scope(self.dal) as session:
             clear_data(session)
-        with session_scope(self.dal) as session:
-            session.close_all()
+        close_all_sessions()
         self.dal.drop_test_postgres_db()
         self.dal = None
 

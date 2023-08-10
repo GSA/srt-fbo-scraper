@@ -55,17 +55,6 @@ def get_opportunities_search_url(api_key=None, page_size=500, postedFrom=None, p
     get_string = "&".join([ "{}={}".format(item[0], item[1]) for item in params  ])
     return "{}?{}".format(base_uri, get_string)
 
-def get_opp_from_sam(solNum):
-    base_uri = os.getenv('SAM_API_URI') or "https://api.sam.gov/opportunities/v2/search"
-    uri = base_uri + f"?solnum={solNum}&api_key={os.getenv('SAM_API_KEY')}&limit=1"
-    session = requests_retry_session()
-    r = session.get(uri, timeout = 100)
-    data = r.json()
-    if data['totalRecords'] == 0:
-        return None
-    session.close()
-    return data['opportunitiesData'][0]
-
 def sam_format_date(input_date):
     '''
     Try to format a date as mm/dd/yyyy.  It isn't too smart tho.
@@ -158,7 +147,6 @@ def make_attachement_request(file_url, http):
             logger.info(f"rewriting attachment url from {file_url} to {new_file_url} ")
             try:
                 r = http.request('GET', new_file_url, preload_content=False)
-                shutil.copyfileobj(r, out)
             except Exception as e2:
                 logger.error(f"{type(e)} encountered when trying to download fixed attachment URL {file_url}")
     return r

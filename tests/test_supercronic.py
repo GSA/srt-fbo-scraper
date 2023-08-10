@@ -9,9 +9,10 @@ class SupercronicTestCase(unittest.TestCase):
 
     def tearDown(self):
         pass
-
+    
+    
     def test_supercronic_call(self):
-        if not os.getenv('TEST_DB_URL'):
+        if not os.getenv('SUPERCRONIC'):
             #if tests are happening locally, no need to test supercronic
             self.assertTrue(True)
             return

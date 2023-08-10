@@ -1,4 +1,7 @@
-#mock_opp_one = {'data': {'link': {'href': 'test.com',
+from datetime import datetime
+
+#mock_opp_one =
+#  {'data': {'link': {'href': 'test.com',
 #   'additionalInfo': {'content': 'description'}},
 #  'type': 'p',
 #  'award': {'awardee': {'location': {}},
@@ -191,7 +194,20 @@ mock_opps = [mock_opp_one[0], mock_opp_two[0]]
 
 mock_data = {'_embedded': {'results': mock_opps}}
 
-mock_schematized_opp_one = {'notice type': 'test', 'solnbr': 'test', 'agency': 'agency', 'compliant': 0, 'office': 'office', 'opp_id': 'test', 'attachments': [], 'classcod': 'test', 'naics': 'test', 'subject': 'test', 'url': 'https://beta.sam.gov/opp/123/view', 'setaside': 'test', 'emails': ['test@test.gov']}
+mock_schematized_opp_one = {
+    'notice type': 'test', 
+    'solnbr': 'test', 
+    'agency': 'agency', 
+    'compliant': 0, 
+    'office': 'office', 
+    'opp_id': 'test', 
+    'attachments': [], 
+    'classcod': 'test', 
+    'naics': 'test', 
+    'subject': 'test', 
+    'url': 'https://beta.sam.gov/opp/123/view', 
+    'setaside': 'test', 'emails': ['test@test.gov'], 
+    'postedDate': datetime(1998, 11, 25, 2, 51, 28)}
 
 mock_schematized_opp_two = {'notice type': 'Special Notice', 'solnbr': 'ATC1234', 'agency': 'DEPT OF DEFENSE',
                             'compliant': 0, 'office': 'DEPT OF THE AIR FORCE', 'attachments': [
@@ -203,9 +219,30 @@ mock_schematized_opp_two = {'notice type': 'Special Notice', 'solnbr': 'ATC1234'
 
 mock_attachment_data = {'text': 'test', 'filename': 'test.txt', 'machine_readable': True, 'url': 'test', 'prediction': None, 'decision_boundary': None, 'validation': None, 'trained': False}
 
-mock_bad_attachment_data = {'text': 'This notice contains link(s). To view, enter the below URLs in your web browser:\n\n -    https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A620T402G', 'filename': 'test.txt', 'machine_readable': True, 'url': 'test', 'prediction': None, 'decision_boundary': None, 'validation': None, 'trained': False}
+mock_bad_attachment_data = {
+    'text': 'This notice contains link(s). To view, enter the below URLs in your web browser:\n\n -    https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A620T402G', 
+    'filename': 'test.txt', 
+    'machine_readable': True, 
+    'url': 'test', 
+    'prediction': None, 
+    'decision_boundary': None, 
+    'validation': None, 'trained': False}
 
-mock_transformed_opp_one = {'notice type': 'test', 'solnbr': 'test', 'agency': 'agency', 'compliant': 0, 'office': 'office', 'attachments': [mock_attachment_data], 'classcod': 'test', 'naics': 'test', 'subject': 'test', 'url': 'https://beta.sam.gov/opp/123/view', 'setaside': 'test', 'emails': ['test@test.gov']}
+mock_transformed_opp_one = {
+    'notice type': 'test', 
+    'solnbr': 'test', 
+    'agency': 'agency', 
+    'compliant': 0, 
+    'office': 'office', 
+    'attachments': [mock_attachment_data], 
+    'classcod': 'test', 
+    'naics': 'test', 
+    'subject': 'test', 
+    'opp_id': 'test',
+    'postedDate': datetime(1998, 11, 25, 2, 51, 28),
+    'url': 'https://beta.sam.gov/opp/123/view', 
+    'setaside': 'test', 'emails': ['test@test.gov']
+    }
 
 mock_transformed_opp_bad_attachment = {'notice type': 'test', 'solnbr': 'test', 'agency': 'agency', 'compliant': 0, 'office': 'office', 'attachments': [mock_bad_attachment_data], 'classcod': 'test', 'naics': 'test', 'subject': 'test', 'url': 'https://beta.sam.gov/opp/123/view', 'setaside': 'test', 'emails': ['test@test.gov']}
 

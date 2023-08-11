@@ -10,7 +10,6 @@ import fbo_scraper.db.db as db
 
 from fbo_scraper.db.db_utils import fetch_notice_type_by_id
 import copy
-from fbo_scraper import get_opps
 from fbo_scraper.db.db_utils import fetch_notice_type_id
 
 import requests
@@ -119,6 +118,17 @@ def get_notice_type(notice_type_code):
     return sam_notice_type
 
 
+def get_opp_from_sam(solNum):
+    base_uri = os.getenv('SAM_API_URI') or "https://api.sam.gov/opportunities/v2/search"
+    uri = base_uri + f"?solnum={solNum}&api_key={os.getenv('SAM_API_KEY')}&limit=1"
+    session = requests_retry_session()
+    r = session.get(uri, timeout = 100)
+    data = r.json()
+    if data['totalRecords'] == 0:
+        return None
+    session.close()
+    return data['opportunitiesData'][0]
+
 def schematize_opp(opp):
     opp_id = opp['solicitationNumber']
     if not opp_id:
@@ -129,19 +139,13 @@ def schematize_opp(opp):
     if not opp_data:
         return
 
-    # notice_type_code = opp_data.get('type')
-#    notice_type_code = opp_data.get('type')['value']
-
-    # notice_type = get_notice_type(notice_type_code)
     notice_type = opp_data['type']
 
     if not notice_type:
         return
 
-    # org_id = opp_data.get('organizationId')
 
-    # opp_data['fullParentPathName'] is a . separated list. First is the agency, second is the office, and then it goes down from there.
-    organizationHierarchy = opp_data['fullParentPathName'].split(".")
+    organizationHierarchy = opp_data.get('fullParentPathName', '').split(".")
     agency = office = ""
     if organizationHierarchy and isinstance(organizationHierarchy, list) and len(organizationHierarchy) > 0:
         agency =organizationHierarchy[0]
@@ -149,8 +153,6 @@ def schematize_opp(opp):
             office = organizationHierarchy[1]
 
     solicitation_number = opp['solicitationNumber']
-    # agency, office = get_org_info(org_id)
-    # agency = opp_data
 
     required_data = {'notice type': notice_type,
                      'solnbr': solicitation_number,
@@ -366,9 +368,9 @@ def update_old_solicitations(session, age_cutoff=365, max_tests=100, fraction=14
             stats['examined'] += 1
             if stats['examined'] > max_tests:
                 logger.warning("Max test count hit when trying to examine old solicitations")
-                break;
+                break
 
-            sam_sol_data = get_opps.get_opp_from_sam(sol.solNum)
+            sam_sol_data = get_opp_from_sam(sol.solNum)
             if sam_sol_data == None:
                 logger.info(f"could not find {sol.solNum} in the sam.gov API - I will assume that means it is inactive")
                 sol.active = False

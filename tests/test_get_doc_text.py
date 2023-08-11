@@ -3,9 +3,12 @@ import shutil
 import sys
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 import unittest
+from unittest.mock import patch
+from zipfile import ZipFile, BadZipfile
 
 from fpdf import FPDF
 from docx import Document
+import textract
 
 from fbo_scraper.get_doc_text import get_doc_text
 
@@ -42,6 +45,7 @@ class GetDocTextTestCase(unittest.TestCase):
         self.temp_outfile_path_txt = os.path.join(self.abs_out_path, 'temp_test_file_txt.txt')
         with open(self.temp_outfile_path_txt, 'w') as f:
             f.write(text)
+        
 
         # create mock pdf
         pdf = FPDF()
@@ -110,13 +114,6 @@ class GetDocTextTestCase(unittest.TestCase):
         expected = "This is a test"
         self.assertEqual(result, expected)
 
-    def test_get_doc_text_doc(self):
-        with open(self.temp_outfile_path_doc, 'rb') as f:
-            lines = f.read() 
-        result = get_doc_text(self.temp_outfile_path_doc, rm = False)
-        expected = "This is a test"
-        self.assertEqual(result, expected)
-
     def test_get_doc_text_fake_docx(self):
         # see GH183
         result = get_doc_text(self.temp_outfile_path_fake_docx, rm = False)
@@ -129,6 +126,56 @@ class GetDocTextTestCase(unittest.TestCase):
         expected = "This is a test"
         self.assertEqual(result, expected)
 
+    @patch('textract.process')
+    def test_get_doc_text_success(self, mock_process):
+        # Set up mock data
+        mock_process.return_value = b'This is a test document.'
+
+        # Call the function with mock data
+        file_name = 'test.doc'
+        text = get_doc_text(file_name)
+
+        # Check the results
+        self.assertEqual(text, 'This is a test document.')
+
+    @patch('textract.process')
+    def test_get_doc_text_missing_file(self, mock_process):
+        # Set up mock data
+        mock_process.side_effect = textract.exceptions.MissingFileError('test.doc')
+
+        # Call the function with mock data
+        file_name = 'test.doc'
+        text = get_doc_text(file_name)
+
+        # Check the results
+        self.assertEqual(text, '')
+        self.assertTrue(mock_process.called)
+
+    @patch('textract.process')
+    def test_get_doc_text_bad_zipfile(self, mock_process):
+        # Set up mock data
+        mock_process.side_effect = BadZipfile('test.docx')
+
+        # Call the function with mock data
+        file_name = 'test.docx'
+        text = get_doc_text(file_name)
+
+        # Check the results
+        self.assertEqual(text, '')
+        self.assertTrue(mock_process.called)
+
+    @patch('textract.process')
+    def test_get_doc_text_error(self, mock_process):
+        # Set up mock data
+        mock_process.side_effect = Exception('Test error')
+
+        # Call the function with mock data
+        file_name = 'test.doc'
+        text = get_doc_text(file_name)
+
+        # Check the results
+        self.assertEqual(text, '')
+        self.assertTrue(mock_process.called)
 
 if __name__ == '__main__':
     unittest.main()

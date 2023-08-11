@@ -15,6 +15,7 @@ from fbo_scraper.db.db_utils import get_db_url, session_scope, insert_data_into_
 from unittest import mock
 
 from unittest import mock
+from sqlalchemy.orm.session import close_all_sessions
 
 
 class DBTestCase(unittest.TestCase):
@@ -28,8 +29,7 @@ class DBTestCase(unittest.TestCase):
 
 
     def tearDown(self):
-        with session_scope(self.dal) as session:
-            session.close_all()
+        close_all_sessions()
         self.dal = None
         self.data = None
 

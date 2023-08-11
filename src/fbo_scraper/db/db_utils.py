@@ -1,6 +1,7 @@
 from contextlib import contextmanager
 from datetime import datetime
 import json
+from typing import Union
 import logging
 import os
 import sys
@@ -64,7 +65,8 @@ class DataAccessLayer:
     Sets up a connection to the database.
     '''
     test_db_uris = ['postgres://circleci@localhost:5432/smartie-test?sslmode=disable',
-                    'postgresql+psycopg2://localhost/test']
+                    'postgresql+psycopg2://localhost/test',
+                    'postgresql+psycopg2://circleci_dev:srtpass@localhost:5432/test']
     
     def __init__(self, conn_string):
         self.engine = None
@@ -105,7 +107,8 @@ def session_scope(dal):
     session = dal.Session()
     try:
         yield session
-        logger.info ("Commiting DB session")
+        print("Commiting DB session")
+        logger.info("Commiting DB session")
         session.commit()
     except Exception as e:
         session.rollback()
@@ -206,6 +209,21 @@ def is_opp_update(existing_date, posted_date, sol_existed_in_db):
         return True
     return False
 
+def datetime_to_string_in(obj: Union[dict, list], str_format="%Y-%m-%dT%H:%M:%SZ"):
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            if isinstance(v, datetime):
+                obj[k] = v.strftime(str_format)
+            elif isinstance(v, dict) or isinstance(v, list):
+                datetime_to_string_in(v, str_format)
+    elif isinstance(obj, list):
+        for i, v in enumerate(obj):
+            if isinstance(v, datetime):
+                obj[i] = v.strftime(str_format)
+            elif isinstance(v, dict) or isinstance(v, list):
+                datetime_to_string_in(v, str_format)
+    return obj
+
 
 def insert_data_into_solicitations_table(session, data):
     '''
@@ -253,13 +271,13 @@ def insert_data_into_solicitations_table(session, data):
                 sol.active = True
                 sol.na_flag = False
 
-            sol.noticeData = opp
+            sol.noticeData = datetime_to_string_in(opp)
             sol.notice_type_id = notice_type_id
             sol.noticeType = notice_type
             sol.solNum = opp['solnbr']
             sol.agency = opp['agency']
             original_sol_date = sol.date or datetime.utcnow() # need this later to see if this is an update or not
-            sol.date = posted_date_to_datetime(opp['postedDate'])
+            sol.date = opp['postedDate']
             sol.compliant = opp['compliant']
             sol.numDocs = len(attachments)
             sol.office = opp['office']
@@ -326,11 +344,11 @@ def insert_data_into_solicitations_table(session, data):
             sol.parseStatus = parseStatus
             new_prediction = deepcopy(sol.predictions)  # make a copy - if you only chagne the props then SQAlchamy won't know the object changed
             if sol_prediction != 0:
-                new_prediction['value'] = "green";
-                new_prediction['508'] = "green";
+                new_prediction['value'] = "green"
+                new_prediction['508'] = "green"
             else:
-                new_prediction['value'] = "red";
-                new_prediction['508'] = "red";
+                new_prediction['value'] = "red"
+                new_prediction['508'] = "red"
 
             # add a random estar prediction
             # TODO: properly compute estar prediction
@@ -358,24 +376,21 @@ def insert_data_into_solicitations_table(session, data):
 
 
             # now set the search text column so that we can easily do a full text search in the API
-            if sol.date:
-                safe_date = sol.date.strftime("%Y-%m-%dT%H:%M:%SZ")
-            else:
-                safe_date = " "
+            safe_date = sol.date if sol.date else " "
 
-            if sol.actionDate:
-                safe_action_date = sol.actionDate.strftime("%Y-%m-%dT%H:%M:%SZ")
-            else:
-                safe_action_date = " "
+            safe_action_date = sol.actionDate.strftime("%Y-%m-%dT%H:%M:%SZ") if sol.actionDate else " "
 
             sol.searchText = " ".join((sol.solNum, notice_type, sol.title, safe_date,
                                        sol.reviewRec, sol.actionStatus or "", safe_action_date,
                                        sol.agency, sol.office)).lower()
 
+
             if (not sol_existed_in_db):
+                #print("Inserting {}".format(sol.solNum))
                 logger.info("Inserting {}".format(sol.solNum))
-                session.add(sol);
+                session.add(sol)
             else:
+                #print("Updating {}".format(sol.solNum))
                 logger.info("Updating {}".format(sol.solNum))
             opp_count += 1
 
@@ -404,7 +419,8 @@ def get_trained_count(session):
     '''
     Gets the number of attachments that have been used to train a model
     '''
-    trained_count = session.query(func.sum(case([(db.Attachment.trained == True, 1)], else_ = 0)))
+
+    trained_count = session.query(func.coalesce(func.sum(case([(db.Attachment.trained == True, 1)], else_ = 0)), 0))
     trained_count = trained_count.scalar()
     try:
         trained_count = int(trained_count)
@@ -417,8 +433,8 @@ def get_validated_untrained_count(session):
     Gets the number of attachments whose predictions have been validated but have not been
     used to train a model.
     '''
-    validated_untrained_count = session.query(func.sum(case([((db.Attachment.trained == False) & (db.Attachment.validation == 1), 1)], else_ = 0)))
-    validated_untrained_count = validated_untrained_count.scalar()
+    validated_untrained_count = session.query(func.coalesce(func.sum(case([((db.Attachment.trained == False) & (db.Attachment.validation == 1), 1)], else_ = 0)), 0)).scalar()
+
     try:
         validated_untrained_count = int(validated_untrained_count)
     except TypeError:
@@ -456,6 +472,21 @@ def fetch_notices_by_solnbr(solnbr, session):
     notice_dicts = [object_as_dict(notice) for notice in notices]
     
     return notice_dicts
+
+
+def fetch_solicitations_by_solnbr(solnbr, session):
+    """
+    Fetch all solicitations with a given solicitation number (solnbr).
+    Parameters:
+        solnbr (str): A solicitation number. For example, 'spe7m119t8133'
+    Returns:
+        sol_dict (list): a list of dicts, with each dict representing a solicitation
+    """
+    
+    solicitations = session.query(db.Solicitation).filter(db.Solicitation.solNum == solnbr)
+    sol_dict = [object_as_dict(sol) for sol in solicitations]
+
+    return sol_dict
 
 
 def fetch_notice_by_id(notice_id, session):

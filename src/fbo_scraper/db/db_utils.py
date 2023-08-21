@@ -189,19 +189,16 @@ def insert_model(session, results, params, score):
 
 
 def posted_date_to_datetime(posted_date_string):
+    from dateutil.parser import parse, ParserError
     # double check we didn't pass in a datetime already
     if isinstance(posted_date_string, datetime):
         return posted_date_string
 
-    parts = posted_date_string.split("-")
-    if len(parts) < 2:
-        parts = posted_date_string.split("/")
-
-    if len(parts) < 2:
+    try:
+        return parse(posted_date_string)
+    except ParserError:
         logger.error("Unable to parse posted date")
         return datetime.utcnow()
-
-    return datetime(int(parts[0]), int(parts[1]), int(parts[2]), 12) # use noon on the day so that timezone issues don't move it a day earlier/later
 
 
 def is_opp_update(existing_date, posted_date, sol_existed_in_db):
@@ -225,12 +222,10 @@ def datetime_to_string_in(obj: Union[dict, list], str_format="%Y-%m-%dT%H:%M:%SZ
     return obj
 
 def create_new_or_exisiting_sol(sol_number, session):
-    results = fetch_solicitations_by_solnbr(sol_number, session, as_dict=False)
+    result = fetch_solicitations_by_solnbr(sol_number, session, as_dict=False)
     sol = None 
-    if results:
-        for s in results:
-            # make a duplicate
-            sol = s
+    if result:
+        sol = result
     else:
         sol = Solicitation()
         sol.active = True
@@ -280,6 +275,10 @@ def update_solicitation_history(solicitation,
                                 in_database: bool = False,
                                 posted_at: datetime = None,
                                 ):
+    
+    if isinstance(posted_at, str):
+        posted_at = posted_date_to_datetime(posted_at)
+
     original_sol_date = posted_at or now # need this later to see if this is an update or not
     now_datetime_string = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 

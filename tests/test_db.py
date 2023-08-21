@@ -56,11 +56,12 @@ def test_datetime_to_string_in(input, expected):
     assert result == expected
 
 
+
+@pytest.mark.usefixtures("db_class")
 class DBTestCase(unittest.TestCase):
     
     def setUp(self):
         self.data = [mock_schematized_opp_one.copy()]
-        self.dal = DataAccessLayer(conn_string = get_db_url())
         self.dal.create_test_postgres_db()
         self.dal.connect()
 
@@ -142,6 +143,9 @@ class DBTestCase(unittest.TestCase):
         assert len(result) > 0, "We should have at least one result."
         assert result[0]['solNum'] == expected[0]['solNum'], "The solNum should match."
         assert result[0]['agency'] == expected[0]['agency'], "The agency should match."
+        # Test verifying update for Ticket 33: https://trello.com/c/9Voxvpd1
+        assert result[0]['reviewRec'] == 'Not Applicable'
+
 
     def test_insert_data_into_solicitations_table_with_new_notice_type(self):
         opp = self.data[0].copy()
@@ -246,7 +250,7 @@ class DBTestCase(unittest.TestCase):
         with session_scope(self.dal) as session:
             notices = fetch_solicitations_by_solnbr('test', session)
         result = len(notices)
-        expected = 1
+        expected = 28 # Amount of keys in dict
         self.assertEqual(result, expected)
 
     def test_fetch_notices_by_solnbr_bogus_solnbr(self):
@@ -257,6 +261,7 @@ class DBTestCase(unittest.TestCase):
         result = len(notices)
         expected = 0
         self.assertEqual(result, expected)
+
 
 
 if __name__ == '__main__':

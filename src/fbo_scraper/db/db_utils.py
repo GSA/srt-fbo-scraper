@@ -332,10 +332,29 @@ def handle_attachments(opportunity: dict, solicitation: Solicitation, now: datet
         parse_status_text = "successfully parsed" if doc['machine_readable'] else "processing error"
         parseStatus.append({"id": attachment.id, "name": doc['filename'], "status": parse_status_text, "postedDate": now_datetime_string, "attachment_url": doc['url'] })
 
-    solicitation.na_flag = False if attachments else True 
+    solicitation.na_flag = not is_machine_readable(attachments) if attachments else True
+
     solicitation.parseStatus = parseStatus
 
     return prediction
+
+def is_machine_readable(attachments: list) -> bool:
+    """
+    Determine if any of the attachments are machine readable.
+
+    Args:
+        attachments (list): List of attachment dicts from the API
+
+    Returns:
+        bool: True if any attachment is machine readable, False otherwise.
+    """
+    if not attachments:
+        return False
+
+    for attachment in attachments:
+        if attachment.get('machine_readable'):
+            return True
+    return False
 
 def insert_data_into_solicitations_table(session, data):
     '''

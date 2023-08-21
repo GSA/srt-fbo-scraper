@@ -203,21 +203,23 @@ def test_handle_attachments():
     assert len(sol.attachments) == 0
     assert len(sol.parseStatus) == 0
 
-     # Test case 3: no machine readable attachemnts
-     # Ticket 33: https://trello.com/c/9Voxvpd1
-    sol = MockSolicitation(1, [], False)
-    opportunity["attachments"] = [
-        {
-                "filename": "attachment1.txt",
-                "machine_readable": True,
-                "text": "This is attachment 1.",
-                "prediction": 1,
+    # Test case 3: no machine readable attachemnts
+    # Ticket 33: https://trello.com/c/9Voxvpd1
+    sol = MockSolicitation(1, [], None)
+    opportunity = {
+        "attachments": [
+            {
+                "filename": "attachment2.txt",
+                "machine_readable": False,
+                "text": "",
+                "prediction": 0,
                 "decision_boundary": 0.5,
-                "validation": True,
-                "url": "http://example.com/attachment1.txt",
-                "trained": False
-            },
-    ]
+                "validation": False,
+                "url": "http://example.com/attachment2.txt",
+                "trained": True
+            }
+        ]
+    }
     handle_attachments(opportunity, sol, now=now_datetime)
     assert sol.numDocs == 1
     assert sol.na_flag == True

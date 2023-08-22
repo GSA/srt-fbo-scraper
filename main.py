@@ -12,12 +12,19 @@ import os
 logger = logging.getLogger()
 configureLogger(logger, stdout_level=logging.INFO)
 
-conn_string = get_db_url()
-dal = DataAccessLayer(conn_string)
-dal.connect()
+def setup_db():
+    conn_string = get_db_url()
+    dal = DataAccessLayer(conn_string)
+    dal.connect()
+    logger.info("Connecting with database at {}".format(conn_string))
+
+    return dal
 
 
 def main(limit=None, updateOld=True, opportunity_filter_function=None, target_sol_types="o,k", skip_attachments=False, from_date = 'yesterday', to_date='yesterday'):
+    
+    dal = setup_db()
+    
     try:
         
         logger.info("Starting srt-fbo-scraper from dev branch")
@@ -32,7 +39,6 @@ def main(limit=None, updateOld=True, opportunity_filter_function=None, target_so
             # make sure that the notice types are configured and committed before going further
             insert_notice_types(session)
 
-        logger.info("Connecting with database at {}".format(conn_string))
         logger.info("Smartie is fetching opportunties from SAM...")
 
 

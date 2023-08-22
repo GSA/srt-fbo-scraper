@@ -207,7 +207,7 @@ mock_schematized_opp_one = {
     'subject': 'test', 
     'url': 'https://beta.sam.gov/opp/123/view', 
     'setaside': 'test', 'emails': ['test@test.gov'], 
-    'postedDate': datetime(1998, 11, 25, 2, 51, 28)}
+    'postedDate': '2019-09-25T21:43:03.675+0000'}
 
 mock_schematized_opp_two = {'notice type': 'Special Notice', 'solnbr': 'ATC1234', 'agency': 'DEPT OF DEFENSE',
                             'compliant': 0, 'office': 'DEPT OF THE AIR FORCE', 'attachments': [
@@ -239,7 +239,7 @@ mock_transformed_opp_one = {
     'naics': 'test', 
     'subject': 'test', 
     'opp_id': 'test',
-    'postedDate': datetime(1998, 11, 25, 2, 51, 28),
+    'postedDate': '2019-09-25T21:43:03.675+0000',
     'url': 'https://beta.sam.gov/opp/123/view', 
     'setaside': 'test', 'emails': ['test@test.gov']
     }

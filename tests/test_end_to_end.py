@@ -2,31 +2,25 @@ import os
 import sys
 import unittest
 from unittest.mock import patch
-
-
+import pytest
+import logging
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
-from main import main
+
 from fbo_scraper.db.db_utils import get_db_url, session_scope, DataAccessLayer, clear_data
 from sqlalchemy.orm.session import close_all_sessions
 
-class EndToEndTest(unittest.TestCase):
-    def setUp(self):
-        conn_string = get_db_url()
-        self.dal = DataAccessLayer(conn_string)
-        self.dal.create_test_postgres_db()
-        self.dal.connect()
+def test_end_to_end(db_access_layer):
 
-    def tearDown(self):
-        with session_scope(self.dal) as session:
-            clear_data(session)
-        close_all_sessions()
-        self.dal.drop_test_postgres_db()
-        self.dal = None
+    logger = logging.getLogger("fbo_scraper.db.db_utils")
 
-    def test_main(self):
-        with self.subTest():
+
+    with patch('fbo_scraper.main.setup_db', return_value=db_access_layer) as mock_dal:
+        from fbo_scraper.main import main
+
+        with patch.object(logger, 'error', wraps=logger.error):
             main(limit = 20)
-            self.assertTrue(True)
+            assert logger.error.call_count == 0
+    
 
 if __name__ == '__main__':
     unittest.main()

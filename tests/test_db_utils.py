@@ -7,7 +7,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tests.mock_opps import mock_schematized_opp_two
 from fbo_scraper.db.db import Notice, NoticeType, Solicitation, Attachment, Model, now_minus_two
 from fbo_scraper.db.db_utils import get_db_url, session_scope, insert_data_into_solicitations_table, \
-    DataAccessLayer, insert_notice_types, update_solicitation_history, search_for_agency, handle_attachments
+    DataAccessLayer, insert_notice_types, update_solicitation_history, search_for_agency, handle_attachments, apply_predictions_to
 
 from datetime import datetime, timedelta
 
@@ -224,3 +224,85 @@ def test_handle_attachments():
     assert sol.numDocs == 1
     assert sol.na_flag == True
     assert len(sol.attachments) == 1
+
+
+@pytest.mark.parametrize("solicitation,prediction, expected", [
+    ## Test case 1: Solicitation with grey value and a prediction of 0
+    (
+    Solicitation(
+        na_flag=False,
+        predictions={
+            'value': 'grey',
+            '508': 'grey',
+            'estar': 'Not Applicable',
+            'history': []
+        }
+    ), 0, {
+        'value': 'red',
+        '508': 'red',
+        'reviewRec': 'Non-compliant (Action Required)',
+        'compliant': 0,
+    }),
+    ## Test case 2: Solicitation with grey value and a prediction of 1
+    (
+    Solicitation(
+        na_flag=False,
+        predictions={
+            'value': 'grey',
+            '508': 'grey',
+            'estar': 'Not Applicable',
+            'history': []
+        }
+    ), 1, 
+    {
+        'value':'green',
+        '508':'green',
+        'reviewRec':'Compliant',
+        'compliant':1,
+    }),
+    ## Test case 3: Solicitation with green value, prediciton 1 and na_flag set to True
+    (
+    Solicitation(
+        na_flag=True,
+        predictions={
+            'value': 'green',
+            '508': 'green',
+            'estar': 'Compliant',
+            'history': []
+        }
+    ), 1, 
+    {
+        'value': 'grey',
+        '508': 'grey',
+        'reviewRec': 'Not Applicable',
+        'compliant': None
+    }),
+    ## Test case 4: Solicitation with green value, prediciton 0 and na_flag set to True
+    (
+    Solicitation(
+        na_flag=True,
+        predictions={
+            'value': 'green',
+            '508': 'green',
+            'estar': 'Compliant',
+            'history': []
+        }
+    ), 0, 
+    {
+        'value': 'grey',
+        '508': 'grey',
+        'reviewRec': 'Not Applicable',
+        'compliant': None
+    })
+])
+def test_apply_predictions_to(solicitation, prediction, expected):
+    solicitation.noticeData = {}
+
+    # Call the function with a prediction of 1
+    apply_predictions_to(solicitation, prediction)
+
+    # Check that the predictions were updated correctly
+    assert solicitation.predictions['value'] == expected['value']
+    assert solicitation.predictions['508'] == expected['508']
+    assert solicitation.reviewRec == expected['reviewRec']
+    assert solicitation.compliant == expected['compliant']    

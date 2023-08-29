@@ -355,6 +355,36 @@ def is_machine_readable(attachments: list) -> bool:
             return True
     return False
 
+def apply_predictions_to(solicitation: Solicitation, predicition: int):
+    new_prediction = deepcopy(solicitation.predictions)  # make a copy - if you only chagne the props then SQAlchamy won't know the object changed
+
+    if solicitation.na_flag:
+        solicitation.reviewRec = "Not Applicable"
+        new_prediction['value'] = "grey"
+        new_prediction['508'] = "grey"
+    else:
+        if predicition != 0:
+            new_prediction['value'] = "green"
+            new_prediction['508'] = "green"
+            solicitation.reviewRec = "Compliant"
+            solicitation.compliant = 1
+        else:
+            new_prediction['value'] = "red"
+            new_prediction['508'] = "red"
+            solicitation.reviewRec = "Non-compliant (Action Required)"
+            solicitation.compliant = 0
+
+    # add a random estar prediction
+    # TODO: properly compute estar prediction
+    if solicitation.noticeData.get('epa_psc_match', False):
+        estar = "red" if random() < .5 else "green"
+    else:
+        estar = "Not Applicable"
+    new_prediction['estar'] = estar
+
+    new_prediction['history'].append( { "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "value": new_prediction['value'], "508": new_prediction['value'], "estar": estar}  )
+    solicitation.predictions = new_prediction
+
 def insert_data_into_solicitations_table(session, data):
     '''
     Insert opportunities data into the database.
@@ -404,35 +434,9 @@ def insert_data_into_solicitations_table(session, data):
 
             sol_prediction = handle_attachments(opp, sol, now=now_datetime)
             
-            new_prediction = deepcopy(sol.predictions)  # make a copy - if you only chagne the props then SQAlchamy won't know the object changed
-            if sol_prediction != 0:
-                new_prediction['value'] = "green"
-                new_prediction['508'] = "green"
-            else:
-                new_prediction['value'] = "red"
-                new_prediction['508'] = "red"
-
-            # add a random estar prediction
-            # TODO: properly compute estar prediction
-            if sol.noticeData.get('epa_psc_match', False):
-                estar = "red" if random() < .5 else "green"
-            else:
-                estar = "Not Applicable"
-            new_prediction['estar'] = estar
-
-            new_prediction['history'].append( { "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "value": new_prediction['value'], "508": new_prediction['value'], "estar": estar}  )
-            sol.predictions = new_prediction
-
-
-            if sol.na_flag:
-                sol.reviewRec = "Not Applicable"
-            else:
-                if new_prediction['value'] == "green":
-                    sol.reviewRec = "Compliant"
-                    sol.compliant = 1
-                else:
-                    sol.reviewRec = "Non-compliant (Action Required)"
-                    sol.compliant = 0
+            
+            apply_predictions_to(solicitation=sol, predicition=sol_prediction)
+            
 
             # now set the search text column so that we can easily do a full text search in the API
             safe_date = sol.date if sol.date else " "

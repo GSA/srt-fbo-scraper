@@ -30,7 +30,7 @@ def main(limit=None, updateOld=True, opportunity_filter_function=None, target_so
         if not updateOld:
             logger.error("Set to NOT update old solicitations. Should not happen in production.".format(limit))
 
-        with session_scope(dal) as session:
+        with dal.Session.begin() as session:
             # make sure that the notice types are configured and committed before going further
             insert_notice_types(session)
 
@@ -49,7 +49,7 @@ def main(limit=None, updateOld=True, opportunity_filter_function=None, target_so
             logger.info("Smartie is done making predictions for each notice attachment!")
 
 
-        with session_scope(dal) as session:
+        with dal.Session.begin() as session:
             if data:
                 # insert_data(session, data)
                 logger.info("Smartie is inserting data into the database...")

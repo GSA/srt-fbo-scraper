@@ -46,6 +46,9 @@ def get_db_url():
     '''
     if os.getenv('VCAP_SERVICES'):
         db_string = os.getenv('DATABASE_URL')
+        # SQLAlchemy 1.4 removed the deprecated postgres dialect name, the name postgresql must be used instead now.
+        if db_string and db_string.startswith("postgres://"):
+            db_string.replace("postgres://", "postgresql://", 1)
     elif os.getenv('TEST_DB_URL'):
         db_string = os.getenv('TEST_DB_URL')
     else:

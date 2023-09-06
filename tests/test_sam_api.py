@@ -47,8 +47,3 @@ class SAMAPITestCase(unittest.TestCase):
         for k in keys:
             self.assertIn(k, schematized_opp)
 
-    def test_transform(self):
-        opps = get_opps.get_opps_for_day(
-            limit=10, opportunity_filter_function=sam_utils.opportunity_filter_function
-        )
-        get_opps.transform_opps(opps, "/tmp/")

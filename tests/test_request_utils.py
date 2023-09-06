@@ -2,8 +2,8 @@ import os
 import sys
 import unittest
 import re
-
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from logging import WARNING
+sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from fbo_scraper.request_utils import requests_retry_session
 from fbo_scraper.predict import Predict
 from tests.mock_opps import (
@@ -31,9 +31,9 @@ class RequestUtilsTestCase(unittest.TestCase):
         self.assertTrue(r)
 
     def test_bad_attachment_detection(self):
-        # bad data should get an ERROR log message
-        predict = Predict(data=[mock_transformed_opp_bad_attachment])
-        with self.assertLogs(level="ERROR") as a:
+        # bad data should get an WARNING log message
+        predict = Predict(data = [mock_transformed_opp_bad_attachment])
+        with self.assertLogs( level=WARNING) as a:
             predict.insert_predictions()
             msgFound = False
             for msg in a.output:

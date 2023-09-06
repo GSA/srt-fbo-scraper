@@ -1,6 +1,6 @@
 from datetime import datetime
 
-# mock_opp_one =
+#mock_opp_one =
 #  {'data': {'link': {'href': 'test.com',
 #   'additionalInfo': {'content': 'description'}},
 #  'type': 'p',
@@ -397,21 +397,19 @@ mock_opps = [mock_opp_one[0], mock_opp_two[0]]
 mock_data = {"_embedded": {"results": mock_opps}}
 
 mock_schematized_opp_one = {
-    "notice type": "test",
-    "solnbr": "test",
-    "agency": "agency",
-    "compliant": 0,
-    "office": "office",
-    "opp_id": "test",
-    "attachments": [],
-    "classcod": "test",
-    "naics": "test",
-    "subject": "test",
-    "url": "https://beta.sam.gov/opp/123/view",
-    "setaside": "test",
-    "emails": ["test@test.gov"],
-    "postedDate": '2023-06-01',
-}
+    'notice type': 'test', 
+    'solnbr': 'test', 
+    'agency': 'agency', 
+    'compliant': 0, 
+    'office': 'office', 
+    'opp_id': 'test', 
+    'attachments': [], 
+    'classcod': 'test', 
+    'naics': 'test', 
+    'subject': 'test', 
+    'url': 'https://beta.sam.gov/opp/123/view', 
+    'setaside': 'test', 'emails': ['test@test.gov'], 
+    'postedDate': '2019-09-25T21:43:03.675+0000'}
 
 mock_schematized_opp_two = {
     "notice type": "Special Notice",
@@ -451,30 +449,29 @@ mock_attachment_data = {
 }
 
 mock_bad_attachment_data = {
-    "text": "This notice contains link(s). To view, enter the below URLs in your web browser:\n\n -    https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A620T402G",
-    "filename": "test.txt",
-    "machine_readable": True,
-    "url": "test",
-    "prediction": None,
-    "decision_boundary": None,
-    "validation": None,
-    "trained": False,
-}
+    'text': 'This notice contains link(s). To view, enter the below URLs in your web browser:\n\n -    https://www.dibbs.bsm.dla.mil/rfq/rfqrec.aspx?sn=SPE4A620T402G', 
+    'filename': 'test.txt', 
+    'machine_readable': True, 
+    'url': 'test', 
+    'prediction': None, 
+    'decision_boundary': None, 
+    'validation': None, 'trained': False}
 
 mock_transformed_opp_one = {
-    "notice type": "test",
-    "solnbr": "test",
-    "agency": "agency",
-    "compliant": 0,
-    "office": "office",
-    "attachments": [mock_attachment_data],
-    "classcod": "test",
-    "naics": "test",
-    "subject": "test",
-    "url": "https://beta.sam.gov/opp/123/view",
-    "setaside": "test",
-    "emails": ["test@test.gov"],
-}
+    'notice type': 'test', 
+    'solnbr': 'test', 
+    'agency': 'agency', 
+    'compliant': 0, 
+    'office': 'office', 
+    'attachments': [mock_attachment_data], 
+    'classcod': 'test', 
+    'naics': 'test', 
+    'subject': 'test', 
+    'opp_id': 'test',
+    'postedDate': '2019-09-25T21:43:03.675+0000',
+    'url': 'https://beta.sam.gov/opp/123/view', 
+    'setaside': 'test', 'emails': ['test@test.gov']
+    }
 
 mock_transformed_opp_bad_attachment = {
     "notice type": "test",

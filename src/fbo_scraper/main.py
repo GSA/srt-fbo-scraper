@@ -19,9 +19,12 @@ import os
 logger = logging.getLogger()
 configureLogger(logger, stdout_level=logging.INFO)
 
-conn_string = get_db_url()
-dal = DataAccessLayer(conn_string)
-dal.connect()
+def setup_db():
+    conn_string = get_db_url()
+    dal = DataAccessLayer(conn_string)
+    dal.connect()
+    logger.info("Connecting with database at {}".format(conn_string))
+    return dal
 
 
 def main(
@@ -46,11 +49,10 @@ def main(
                 "Set to NOT update old solicitations. Should not happen in production.".format()
             )
 
-        with session_scope(dal) as session:
+        with dal.Session.begin() as session:
             # make sure that the notice types are configured and committed before going further
             insert_notice_types(session)
 
-        logger.info("Connecting with database at {}".format(conn_string))
         logger.info("Smartie is fetching opportunties from SAM...")
 
         data = get_opps.main(
@@ -75,7 +77,7 @@ def main(
                 "Smartie is done making predictions for each notice attachment!"
             )
 
-        with session_scope(dal) as session:
+        with dal.Session.begin() as session:
             if data:
                 # insert_data(session, data)
                 logger.info("Smartie is inserting data into the database...")
@@ -93,7 +95,6 @@ def main(
         logger.error("Unhandled error. Data for the day may be lost.")
         logger.error(f"Exception: {e}", exc_info=True)
         logger.error("Unexpected error: {}".format(str(sys.exc_info()[0])))
-
 
 def check_environment():
     """

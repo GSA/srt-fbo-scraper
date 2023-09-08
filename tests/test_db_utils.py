@@ -10,7 +10,7 @@ from fbo_scraper.db.db_utils import get_db_url, session_scope, insert_data_into_
     DataAccessLayer, insert_notice_types, update_solicitation_history, search_for_agency, handle_attachments, apply_predictions_to
 
 from datetime import datetime, timedelta
-
+from addict import Addict
 
 from unittest import mock
 from unittest.mock import Mock
@@ -199,7 +199,7 @@ def test_handle_attachments():
     opportunity["attachments"] = []
     handle_attachments(opportunity, sol, now=now_datetime)
     assert sol.numDocs == 0
-    assert sol.na_flag == True
+    assert sol.na_flag == False
     assert len(sol.attachments) == 0
     assert len(sol.parseStatus) == 0
 
@@ -222,21 +222,22 @@ def test_handle_attachments():
     }
     handle_attachments(opportunity, sol, now=now_datetime)
     assert sol.numDocs == 1
-    assert sol.na_flag == True
+    assert sol.na_flag is None
     assert len(sol.attachments) == 1
 
 
 @pytest.mark.parametrize("solicitation,prediction, expected", [
     ## Test case 1: Solicitation with grey value and a prediction of 0
     (
-    Solicitation(
+    Addict(
         na_flag=False,
         predictions={
             'value': 'grey',
             '508': 'grey',
             'estar': 'Not Applicable',
             'history': []
-        }
+        },
+        attachments=[{"machine_readable": True}]
     ), 0, {
         'value': 'red',
         '508': 'red',
@@ -245,14 +246,15 @@ def test_handle_attachments():
     }),
     ## Test case 2: Solicitation with grey value and a prediction of 1
     (
-    Solicitation(
+    Addict(
         na_flag=False,
         predictions={
             'value': 'grey',
             '508': 'grey',
             'estar': 'Not Applicable',
             'history': []
-        }
+        },
+        attachments=[{"machine_readable": True}]
     ), 1, 
     {
         'value':'green',
@@ -293,7 +295,47 @@ def test_handle_attachments():
         '508': 'grey',
         'reviewRec': 'Not Applicable',
         'compliant': None
-    })
+    }),
+    ## Test cast 5: Solicitation with green value, prediciton and no attachments
+    (
+    Addict(
+        na_flag=False,
+        predictions={
+            'value': 'green',
+            '508': 'green',
+            'estar': 'Compliant',
+            'history': []
+        },
+        compliant=None,
+        attachments=[]
+    ), 0,
+    {
+        'value': 'yellow',
+        '508': 'yellow',
+        'reviewRec': 'Cannot Evaluate (Review Required)',
+        'compliant': None
+    }
+    ),
+    ## Test case 6: Solicitation with green value, prediciton and attachements not machine readable
+    (
+    Addict(
+        na_flag=False,
+        predictions={
+            'value': 'green',
+            '508': 'green',
+            'estar': 'Compliant',
+            'history': []
+        },
+        compliant=None,
+        attachments=[{'machine_readable': False}]
+    ), 0,
+    {
+        'value': 'yellow',
+        '508': 'yellow',
+        'reviewRec': 'Cannot Evaluate (Review Required)',
+        'compliant': None
+    }
+    ),
 ])
 def test_apply_predictions_to(solicitation, prediction, expected):
     solicitation.noticeData = {}

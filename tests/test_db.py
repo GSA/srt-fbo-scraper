@@ -143,8 +143,8 @@ class DBTestCase(unittest.TestCase):
         assert len(result) > 0, "We should have at least one result."
         assert result[0]['solNum'] == expected[0]['solNum'], "The solNum should match."
         assert result[0]['agency'] == expected[0]['agency'], "The agency should match."
-        # Test verifying update for Ticket 33: https://trello.com/c/9Voxvpd1
-        assert result[0]['reviewRec'] == 'Not Applicable'
+        # Test verifying update for Ticket 67: https://trello.com/c/wAhW6CgG
+        assert result[0]['reviewRec'] == 'Cannot Evaluate (Review Required)'
 
 
     def test_insert_data_into_solicitations_table_with_new_notice_type(self):

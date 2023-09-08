@@ -36,7 +36,8 @@ def main(
     to_date="yesterday",
 ):
     try:
-        logger.info("Starting srt-fbo-scraper from dev branch")
+        
+        dal = setup_db()
 
         if limit:
             logger.error(
@@ -76,7 +77,7 @@ def main(
                 "Smartie is done making predictions for each notice attachment!"
             )
 
-        with session_scope(dal) as session:
+        with dal.Session.begin() as session:
             if data:
                 # insert_data(session, data)
                 logger.info("Smartie is inserting data into the database...")

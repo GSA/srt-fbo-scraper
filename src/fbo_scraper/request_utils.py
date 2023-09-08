@@ -33,6 +33,7 @@ def requests_retry_session(
     """
     Use to create an http(s) requests session that will retry a request.
     """
+
     session = session or requests.Session()
     retry = Retry(
         total=retries,
@@ -41,14 +42,13 @@ def requests_retry_session(
         backoff_factor=backoff_factor,
         status_forcelist=status_forcelist,
     )
-    adapter = HTTPAdapter(max_retries=retry)
-    session.mount("http://", adapter)
-    session.mount("https://", adapter)
     
     ctx = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)
     # Work around for https://bugs.python.org/issue44888
     ctx.options |= 0x4
-    session.mount('https://', SAMHttpAdapter(ctx))
+    adapter = SAMHttpAdapter(ctx, max_retries=retry)
+    session.mount("http://", adapter)
+    session.mount('https://', adapter)
 
     return session
 

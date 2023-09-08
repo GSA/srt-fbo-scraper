@@ -5,3 +5,6 @@ log_path = Path(base_dir, "logs")
 alembic_path = Path(base_dir, "alembic")
 bin_path = Path(base_dir, "bin")
 sql_path = Path(base_dir, "sql")
+
+name = "fbo-scraper"
+version = "2.0.0dev0"

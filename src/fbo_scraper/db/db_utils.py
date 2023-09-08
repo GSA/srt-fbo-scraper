@@ -1,6 +1,5 @@
 from contextlib import contextmanager
 from datetime import datetime
-import json
 from typing import Union
 import logging
 import os
@@ -9,16 +8,13 @@ from copy import deepcopy
 from random import random
 
 import dill as pickle
-from sqlalchemy import create_engine, func, case, inspect
+from sqlalchemy import func, case, inspect
 from sqlalchemy.engine import Engine
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.pool import NullPool
-from sqlalchemy_utils import database_exists, create_database, drop_database
 from fbo_scraper.db.db import Solicitation
 
 import fbo_scraper.db.db as db
 from fbo_scraper.binaries import Path, binary_path
-
+from fbo_scraper.db.connection import DataAccessLayer
 import functools
 
 CACHE_SIZE = 256
@@ -43,74 +39,7 @@ def clear_data(session):
         session.execute(table.delete())
 
 
-def get_db_url():
-    """
-    Return the db connection string depending on the environment
-    """
-    if os.getenv('VCAP_SERVICES'):
-        db_string = os.getenv('DATABASE_URL')
-        # SQLAlchemy 1.4 removed the deprecated postgres dialect name, the name postgresql must be used instead now.
-        if db_string and db_string.startswith("postgres://"):
-            db_string = db_string.replace("postgres://", "postgresql://", 1)
-    elif os.getenv('TEST_DB_URL'):
-        db_string = os.getenv('TEST_DB_URL')
-    else:
-        if not os.getenv("VCAP_APPLICATION"):
-            db_string = "postgresql+psycopg2://localhost/test"
-        else:
-            db_string = None
-    if db_string:
-        return db_string
-    else:
-        logger.critical("Exception occurred getting database url")
-        sys.exit(1)
 
-
-class DataAccessLayer:
-    """
-    Sets up a connection to the database.
-    """
-    test_db_uris = ['postgres://circleci@localhost:5432/smartie-test?sslmode=disable',
-                    'postgresql+psycopg2://localhost/test',
-                    'postgresql+psycopg2://circleci_dev:srtpass@localhost:5432/test']
-    
-    def __init__(self, conn_string):
-        self.engine = None
-        self.conn_string = conn_string
-
-    def connect(self):
-        is_test = self.conn_string in DataAccessLayer.test_db_uris
-        if is_test:
-            if not database_exists(self.conn_string):
-                self.create_test_postgres_db()
-            # NullPool is a Pool which does not pool connections.
-            # Instead it literally opens and closes the underlying DB-API connection
-            # per each connection open/close.
-            self.engine = create_engine(self.conn_string, poolclass=NullPool)
-        else:
-            self.engine = create_engine(
-                self.conn_string, echo=False
-            )  # use echo=True to log SQL
-        try:
-            db.Base.metadata.create_all(self.engine)
-        except Exception as e:
-            logger.critical(
-                f"Exception occurred creating database metadata with uri:  \
-                               {self.conn_string}. Full traceback here:  {e}",
-                exc_info=True,
-            )
-            sys.exit(1)
-        self.Session = sessionmaker(bind=self.engine)
-
-    def drop_test_postgres_db(self):
-        is_test = self.conn_string in DataAccessLayer.test_db_uris
-        if database_exists(self.conn_string) and is_test:
-            drop_database(self.conn_string)
-
-    def create_test_postgres_db(self):
-        is_test = self.conn_string in DataAccessLayer.test_db_uris
-        if not database_exists(self.conn_string) and is_test:
-            create_database(self.conn_string)
 
 @contextmanager
 def session_scope(dal):
@@ -539,7 +468,7 @@ def insert_data_into_solicitations_table(session, data):
 def get_validation_count(session):
     """
     Gets the number of validated attachment predictions
-    """
+    """    
     validation_count = session.query(func.count(db.Attachment.validation))
     validation_count = validation_count.scalar()
     try:

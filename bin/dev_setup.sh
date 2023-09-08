@@ -74,6 +74,10 @@ ln -s $main_dir/fbo_scraper fbo_scraper # Remove when > 3.6
 cd $main_dir
 pip install .
 
+# For parser
+# cd $main_dir/venv/
+# ln -s $main_dir/conf conf
+
 # check if srt database exists
 if [psql -l | grep "srt "] then
     echo "srt database exists"

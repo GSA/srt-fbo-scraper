@@ -1,13 +1,10 @@
 import logging
 from pathlib import Path
-
 from fbo_scraper import get_opps
 from fbo_scraper.binaries import binary_path
 from fbo_scraper.predict import Predict
 from fbo_scraper.db.db_utils import (
-    get_db_url,
     session_scope,
-    DataAccessLayer,
     insert_data_into_solicitations_table,
     insert_notice_types,
 )
@@ -15,6 +12,11 @@ from fbo_scraper.json_log_formatter import configureLogger
 from fbo_scraper.sam_utils import update_old_solicitations, opportunity_filter_function
 import sys
 import os
+from fbo_scraper.db.connection import DataAccessLayer, get_db_url, DALException
+from fbo_scraper.options import pre_main
+from fbo_scraper.options.parser import make_parser
+from fbo_scraper import name, version
+
 
 logger = logging.getLogger()
 configureLogger(logger, stdout_level=logging.INFO)
@@ -23,9 +25,79 @@ def setup_db():
     conn_string = get_db_url()
     dal = DataAccessLayer(conn_string)
     dal.connect()
-    logger.info("Connecting with database at {}".format(conn_string))
     return dal
 
+def scraper_parser():
+    """
+    Allows to accept command line arguments for the scraper.
+    """
+    from argparse import BooleanOptionalAction
+
+    parser = make_parser()
+
+    client = parser.add_argument_group("Client Options")
+    
+    client.add_argument(
+        "--solicitation-types",
+        dest="client.target_sol_types",
+        required=False,
+        help="Define the solicitation types to be fetched from SAM.",
+    )
+
+    client.add_argument(
+        "--skip-attachments",
+        dest="client.skip_attachments",
+        required=False,
+        help="Define whether to skip attachments.",
+    )
+
+    client.add_argument(
+        "--from-date",
+        dest="client.from_date",
+        required=False,
+        help="Define the start date for the search. Format: mm/dd/yyyy",
+    )
+    client.add_argument(
+        "--to-date",
+        dest="client.to_date",
+        required=False,
+        help="Define the end date for the search. Format: mm/dd/yyyy",
+    )
+
+    client.add_argument(
+        "--limit",
+        dest="client.limit",
+        required=False,
+        help="Define the limit for the number of opportunities to be fetched from SAM.",
+    )
+
+    database = parser.add_argument_group("Database Options")
+
+    database.add_argument(
+        "--update-old",
+        dest="database.update_old",
+        action=BooleanOptionalAction,
+        required=False,
+        help="Define whether to update old solicitations.",
+    )
+
+    prediction_model = parser.add_argument_group("Prediction Model Options")
+    prediction_model.add_argument(
+        "--model-name",
+        dest="prediction.model_name",
+        required=False,
+        help="Define the name to the prediction model in binaries folder.",
+
+    )
+
+    prediction_model.add_argument(
+        "--model-path",
+        dest="prediction.model_path",
+        required=False,
+        help="Define the full path to the prediction model.",
+    )
+
+    return parser
 
 def main(
     limit=None,
@@ -37,6 +109,9 @@ def main(
     to_date="yesterday",
 ):
     try:
+
+        dal = setup_db()
+
         if limit:
             logger.error(
                 "Artifical limit of {} placed on the number of opportunities processed.  Should not happen in production.".format(
@@ -90,7 +165,8 @@ def main(
                 update_old_solicitations(session, max_tests=10)
 
         logger.info("Run complete without major errors.")
-
+    except DALException as e:
+        logger.error(f"Database Error - {e}", exc_info=True)
     except Exception as e:
         logger.error("Unhandled error. Data for the day may be lost.")
         logger.error(f"Exception: {e}", exc_info=True)
@@ -137,24 +213,32 @@ def actual_main():
 
     # fast mode
     # limit=40
-    #updateOld = False
+    # updateOld = False
     # skip_attachemnts=True
 
     # db reload for last week
     # from_date = datetime.date.today() - datetime.timedelta(days=60)
     # to_date = datetime.date.today() - datetime.timedelta(days=1)
     # updateOld=False
+    
+    options = pre_main(
+        app_name=name,
+        app_version=version,
+        _make_parser=scraper_parser,
+    )
 
     check_environment()
+
     main(
-        limit=limit,
-        updateOld=updateOld,
+        limit=options.client.limit,
+        updateOld=options.database.update_old,
         opportunity_filter_function=opportunity_filter_function,
-        target_sol_types=target_sol_types,
-        skip_attachments=skip_attachemnts,
-        from_date=from_date,
-        to_date=to_date,
+        target_sol_types=options.client.target_sol_types,
+        skip_attachments=options.client.skip_attachments,
+        from_date=options.client.from_date,
+        to_date=options.client.to_date,
     )
+    
 
 
 if __name__ == "__main__":
@@ -180,6 +264,7 @@ if __name__ == "__main__":
     # updateOld=False
 
     check_environment()
+
     main(
         limit=limit,
         updateOld=updateOld,
@@ -189,3 +274,4 @@ if __name__ == "__main__":
         from_date=from_date,
         to_date=to_date,
     )
+    

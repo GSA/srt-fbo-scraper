@@ -1,0 +1,8 @@
+client:
+  limit: null
+  target_sol_types: "o,k"
+  skip_attachments: False
+  from_date: "yesterday"
+  to_date: "yesterday"
+database:
+  update_old: True

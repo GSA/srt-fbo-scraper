@@ -7,7 +7,8 @@ import sys
 from pathlib import Path
 
 config_defaults = """
-estimator: estimator.pkl
+prediction: 
+    model_name: estimator.pkl
 """
 
 config = DotDict()
@@ -51,11 +52,10 @@ def pre_main(
         parser = _make_parser()
     else:
         parser = make_parser()
+    
+    cli = parser.parse_args() if not args else parser.parse_args(args)
 
-    cli = parser.parse_args(args)
-
-    config.merge(cli)
-    merge_into(config, config._config)
+    merge_into(config, cli._config)
     copy_config = deepcopy(config)
     for k, v in copy_config.items():
         if str(v).endswith(".yml"):
@@ -65,5 +65,7 @@ def pre_main(
             config[k] = merge_into(config, p_v, merge=False)
 
     config.prefix = sys.prefix
+
+    config.merge(cli)
 
     return config

@@ -9,7 +9,7 @@ def get_requirements():
 
 setup(
     name='fbo-scraper',
-    version='1.1.1',
+    version='1.2.0',
     description="This project gathers Information Technology (IT) solicitations that are posted by the US Federal Government on beta.sam.gov.",
     long_description="This project gathers Information Technology (IT) solicitations that are posted by the US Federal Government on beta.sam.gov.",
     long_description_content_type='text/markdown',

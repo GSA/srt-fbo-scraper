@@ -1,6 +1,6 @@
 # Overview 
 The SRT FBO Scraper is a Python application that gathers data about Information Technology (IT) solicitations submitted by agencies around the federal government by scraping that data from the SAM.gov website. For each solicitation that is found, this application extracts the text of each document and feeds it to a [supervised machine learning model](https://github.com/GSA/srt-ml) in order to determine whether or not the document contains appropriate [Section 508 accessibility](https://www.section508.gov/) language. 
-Following a [service-oriented architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture), this application comprises one component of the back-end for the [Solicitation Review Tool](https://github.com/GSA/srt-ui), a web application that GSA policy experts will use to review IT solicitations for Section 508 compliance; notify the owners of deficient solicitations; monitor historical changes in compliance; and validate predictions to improve the machine-learning model's performance. 
+Following a [service-oriented architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture), this application comprises one component of the back-end for the [Solicitation Review Tool](https://srt.app.cloud.gov/auth), a web application that GSA policy experts will use to review IT solicitations for Section 508 compliance; notify the owners of deficient solicitations; monitor historical changes in compliance; and validate predictions to improve the machine-learning model's performance. 
 This application is designed to run as a cron daemon within a Docker image on [cloud.gov](https://cloud.gov/). Here's what happens every time the cron job is triggered: 
 1) Fetches yesterday's updated/posted solicitations from sam.gov using the [Opportunity Management API](https://open.gsa.gov/api/opportunities-api/#get-list-of-opportunities), filtering for those solicitations that have an IT-related [NAICS](https://www.census.gov/naics/) code.
 2) Uses the [Federal Hierarchy API](https://open.gsa.gov/api/fh-public-api/) to look up canonical agency and office names. 
@@ -82,7 +82,7 @@ cf restage srt-fbo-scraper
 ```
 In the commands above, `<service>` is the name of a postgres service (e.g. `aws-rds shared-psql`) while `<service-tag>` is whatever you want to call this service. 
 
-Since services can sometimes take up to 60 minutes to be provisioned, we use `cf create-service-key`` to ensure the service has been provisioned. See this for more details. 
+Since services can sometimes take up to 60 minutes to be provisioned, we use `cf create-service-key` to ensure the service has been provisioned. See this for more details. 
 
 Every subsequent time you can merely use: 
 ```

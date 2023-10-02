@@ -12,7 +12,7 @@ imbalanced-learn==0.3.3
 lxml~=4.6.3
 # https://github.com/mattgwwalker/msg-extractor/zipball/master
 extract-msg==0.23.1
-nltk~=3.6.6
+nltk~=3.8.1
 numpy==1.16.2
 pdfminer.six==20191110 #<-- go back to this after the shebang fix is released (see https://github.com/goulu/pdfminer/issues/27)
 # #https://github.com/goulu/pdfminer/zipball/e6ad15af79a26c31f4e384d8427b375c93b03533#egg=pdfminer.six
@@ -23,7 +23,7 @@ python-dateutil
 python-pptx~=0.6.5
 python-json-logger
 requests==2.21.0
-scikit-learn==0.19.1
+scikit-learn==0.24.2
 scipy==1.2.1
 singledispatch==3.4.0.3
 six==1.12.0

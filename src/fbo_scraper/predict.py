@@ -10,6 +10,10 @@ from fbo_scraper.binaries import binary_path
 logger = logging.getLogger(__name__)
 
 
+class PredictException(Exception):
+    pass
+
+
 class Predict:
     """
     Make 508 accessibility predictions solicitation document text.
@@ -18,8 +22,9 @@ class Predict:
         data (list): a list of dicts, with each dict representing an opportunity.
     """
 
-    def __init__(self, data, best_model_path=Path(binary_path, "atc_estimator.pkl")):
-        self.data = data
+    _predict_model = None
+
+    def __init__(self, best_model_path=Path(binary_path, "atc_estimator.pkl"), data=None):
         cwd = os.getcwd()
         if "fbo-scraper" in cwd:
             i = cwd.find("fbo-scraper")
@@ -28,6 +33,28 @@ class Predict:
             i = cwd.find("root")
             root_path = cwd
         self.best_model_path = os.path.join(root_path, best_model_path)
+        self.predict_model = self.load_predict_model()
+        self.data = data
+
+    def load_predict_model(self):
+        """
+        Returns the predict model.
+
+        Returns:
+            predict_model (sklearn.pipeline.Pipeline): the predict model
+        """
+
+        if self._predict_model is None:
+            try:
+                with open(self.best_model_path, "rb") as f:
+                    self._predict_model = pickle.load(f)
+            except Exception as e:
+                raise PredictException(
+                    "Error loading the predict model from {}".format(
+                        self.best_model_path
+                    )
+                ) from e
+        return self._predict_model
 
     @staticmethod
     def transform_text(doc):
@@ -81,7 +108,7 @@ class Predict:
 
         return words
 
-    def insert_predictions(self):
+    def insert_predictions(self, opps_data=None):
         """
         Inserts predictions and decision boundary for each attachment in the nightly JSON
 
@@ -89,9 +116,9 @@ class Predict:
             json_data (dict): a Python dict representing the updated json data
         """
 
-        with open(self.best_model_path, "rb") as f:
-            pickled_model = pickle.load(f)
-        data = self.data
+        pickled_model = self.predict_model
+        
+        data = opps_data if opps_data else self.data
         for opp in data:
             opp["compliant"] = 0  # noncompliant until proven otherwise
             if "attachments" in opp:

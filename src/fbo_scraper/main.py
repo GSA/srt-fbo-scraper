@@ -2,7 +2,7 @@ import logging
 from pathlib import Path
 from fbo_scraper import get_opps
 from fbo_scraper.binaries import binary_path
-from fbo_scraper.predict import Predict
+from fbo_scraper.predict import Predict, PredictException
 from fbo_scraper.db.db_utils import (
     session_scope,
     insert_data_into_solicitations_table,
@@ -94,10 +94,24 @@ def scraper_parser():
         "--model-path",
         dest="prediction.model_path",
         required=False,
-        help="Define the full path to the prediction model.",
+        help="Define the absolute path to the prediction model.",
     )
 
     return parser
+
+def grab_model_path(options):
+    """
+    Returns the path to the prediction model.
+    """
+    model_name = options.prediction.model_name
+    model_path = options.prediction.model_path
+    if model_name:
+        model_path = Path(binary_path, model_name)
+    elif model_path:
+        model_path = Path(model_path)
+    else:
+        model_path = Path(binary_path, "atc_estimator.pkl")
+    return model_path
 
 def main(
     limit=None,
@@ -107,10 +121,14 @@ def main(
     skip_attachments=False,
     from_date="yesterday",
     to_date="yesterday",
+    options=None,
 ):
     try:
 
         dal = setup_db()
+
+        model_path = grab_model_path(options)
+        predict = Predict(best_model_path=model_path)
 
         if limit:
             logger.error(
@@ -144,10 +162,8 @@ def main(
             logger.info("Smartie is done fetching opportunties from SAM!")
 
             logger.info("Smartie is making predictions for each notice attachment...")
-            predict = Predict(
-                data, best_model_path=Path(binary_path, "atc_estimator.pkl")
-            )
-            data = predict.insert_predictions()
+
+            data = predict.insert_predictions(data)
             logger.info(
                 "Smartie is done making predictions for each notice attachment!"
             )
@@ -165,6 +181,8 @@ def main(
                 update_old_solicitations(session, max_tests=10)
 
         logger.info("Run complete without major errors.")
+    except PredictException as e:
+        logger.error(f"Prediction Error - {e}", exc_info=True)
     except DALException as e:
         logger.error(f"Database Error - {e}", exc_info=True)
     except Exception as e:
@@ -237,6 +255,7 @@ def actual_main():
         skip_attachments=options.client.skip_attachments,
         from_date=options.client.from_date,
         to_date=options.client.to_date,
+        options=options,
     )
     
 
@@ -263,15 +282,22 @@ if __name__ == "__main__":
     # to_date = datetime.date.today() - datetime.timedelta(days=1)
     # updateOld=False
 
+    options = pre_main(
+        app_name=name,
+        app_version=version,
+        _make_parser=scraper_parser,
+    )
+
     check_environment()
 
     main(
-        limit=limit,
-        updateOld=updateOld,
+        limit=options.client.limit,
+        updateOld=options.database.update_old,
         opportunity_filter_function=opportunity_filter_function,
-        target_sol_types=target_sol_types,
-        skip_attachments=skip_attachemnts,
-        from_date=from_date,
-        to_date=to_date,
+        target_sol_types=options.client.target_sol_types,
+        skip_attachments=options.client.skip_attachments,
+        from_date=options.client.from_date,
+        to_date=options.client.to_date,
+        options=options,
     )
     

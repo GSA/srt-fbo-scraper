@@ -1,11 +1,12 @@
 from contextlib import contextmanager
 from datetime import datetime
-from typing import Union
+from typing import Union, List
 import logging
 import os
 import sys
 from copy import deepcopy
 from random import random
+from enum import Enum
 
 import dill as pickle
 from sqlalchemy import func, case, inspect
@@ -21,6 +22,11 @@ CACHE_SIZE = 256
 
 logger = logging.getLogger(__name__)
 
+class PredictionEnum(Enum):
+    compliant = 0
+    non_compliant = 1
+    not_applicable = 2
+    cannot_evaluate = 3
 
 def object_as_dict(obj):
     """
@@ -292,19 +298,17 @@ def handle_attachments(opportunity: dict, solicitation: Solicitation, now: datet
         solicitation.attachments.append(attachment)
         parse_status_text = "successfully parsed" if doc['machine_readable'] else "processing error"
         parseStatus.append({"id": attachment.id, "name": doc['filename'], "status": parse_status_text, "postedDate": now_datetime_string, "attachment_url": doc['url'] })
-
-    solicitation.na_flag = not is_machine_readable(attachments) if attachments else True
-
+    
     solicitation.parseStatus = parseStatus
 
     return prediction
 
-def is_machine_readable(attachments: list) -> bool:
+def is_machine_readable(attachments: List[db.Attachment]) -> bool:
     """
     Determine if any of the attachments are machine readable.
 
     Args:
-        attachments (list): List of attachment dicts from the API
+        attachments (list [Attachment]): List of attachment dicts from the API
 
     Returns:
         bool: True if any attachment is machine readable, False otherwise.
@@ -313,28 +317,33 @@ def is_machine_readable(attachments: list) -> bool:
         return False
 
     for attachment in attachments:
-        if attachment.get('machine_readable'):
+        if attachment.machine_readable:
             return True
     return False
 
 def apply_predictions_to(solicitation: Solicitation, predicition: int):
     new_prediction = deepcopy(solicitation.predictions)  # make a copy - if you only chagne the props then SQAlchamy won't know the object changed
 
-    if solicitation.na_flag:
+    prediction_result = determine_prediction_value(solicitation, predicition)
+
+    if prediction_result == PredictionEnum.not_applicable:
         solicitation.reviewRec = "Not Applicable"
         new_prediction['value'] = "grey"
         new_prediction['508'] = "grey"
+    elif prediction_result == PredictionEnum.compliant:
+        new_prediction['value'] = "green"
+        new_prediction['508'] = "green"
+        solicitation.reviewRec = "Compliant"
+        solicitation.compliant = 1
+    elif prediction_result == PredictionEnum.non_compliant:
+        new_prediction['value'] = "red"
+        new_prediction['508'] = "red"
+        solicitation.reviewRec = "Non-compliant (Action Required)"
+        solicitation.compliant = 0
     else:
-        if predicition != 0:
-            new_prediction['value'] = "green"
-            new_prediction['508'] = "green"
-            solicitation.reviewRec = "Compliant"
-            solicitation.compliant = 1
-        else:
-            new_prediction['value'] = "red"
-            new_prediction['508'] = "red"
-            solicitation.reviewRec = "Non-compliant (Action Required)"
-            solicitation.compliant = 0
+        new_prediction['value'] = "yellow"
+        new_prediction['508'] = "yellow"
+        solicitation.reviewRec = "Cannot Evaluate (Review Required)"
 
     # add a random estar prediction
     # TODO: properly compute estar prediction
@@ -367,6 +376,19 @@ def grab_notice_type_id(notice_type: str, session: DataAccessLayer) -> int:
 
     return notice_type_id
 
+def determine_prediction_value(solicitation: Solicitation, predicition: int):
+    pred = None
+
+    if solicitation.na_flag:
+        pred = PredictionEnum.not_applicable
+    else:
+        if not solicitation.attachments or not is_machine_readable(solicitation.attachments):
+            pred = PredictionEnum.cannot_evaluate
+        elif predicition != 0:
+            pred = PredictionEnum.compliant
+        else:
+            pred = PredictionEnum.non_compliant
+    return pred
 
 def insert_data_into_solicitations_table(session, data):
     """

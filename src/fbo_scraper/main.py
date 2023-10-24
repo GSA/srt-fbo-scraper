@@ -274,7 +274,7 @@ if __name__ == "__main__":
 
     # fast mode
     # limit=40
-    #updateOld = False
+    # updateOld = False
     # skip_attachemnts=True
 
     # db reload for last week

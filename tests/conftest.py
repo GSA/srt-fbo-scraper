@@ -8,8 +8,6 @@ class TestDB(DataAccessLayer):
         def __init__(self):
             self._username = "circleci"
             self._password = "srtpass"
-
-
             conn_string = f"postgresql+psycopg2://{self.username}:{self.password}@localhost/test"
             super().__init__(conn_string)
         
@@ -32,7 +30,7 @@ class TestDB(DataAccessLayer):
 
         def create_test_postgres_db(self):
             if not database_exists(self.conn_string):
-                create_database(self.conn_string)
+                create_database(self.conn_string, template="template_srt")
 
 @pytest.fixture(scope="class")
 def db_class(request):

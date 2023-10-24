@@ -6,7 +6,9 @@ import pytest
 import logging
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 
-from fbo_scraper.db.db_utils import get_db_url, session_scope, DataAccessLayer, clear_data
+from fbo_scraper.db.db_utils import session_scope, DataAccessLayer, clear_data
+from fbo_scraper.db.connection import get_db_url
+
 from sqlalchemy.orm.session import close_all_sessions
 
 def test_end_to_end(db_access_layer):

@@ -483,7 +483,7 @@ def get_trained_count(session):
     Gets the number of attachments that have been used to train a model
     """
 
-    trained_count = session.query(func.coalesce(func.sum(case([(db.Attachment.trained == True, 1)], else_ = 0)), 0))
+    trained_count = session.query(func.coalesce(func.sum(case((db.Attachment.trained == True, 1), else_ = 0)), 0))
     trained_count = trained_count.scalar()
     try:
         trained_count = int(trained_count)
@@ -497,7 +497,7 @@ def get_validated_untrained_count(session):
     Gets the number of attachments whose predictions have been validated but have not been
     used to train a model.
     """
-    validated_untrained_count = session.query(func.coalesce(func.sum(case([((db.Attachment.trained == False) & (db.Attachment.validation == 1), 1)], else_ = 0)), 0)).scalar()
+    validated_untrained_count = session.query(func.coalesce(func.sum(case(((db.Attachment.trained == False) & (db.Attachment.validation == 1), 1), else_ = 0)), 0)).scalar()
 
     try:
         validated_untrained_count = int(validated_untrained_count)

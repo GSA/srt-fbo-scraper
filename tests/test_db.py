@@ -7,12 +7,15 @@ import logging
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from tests.mock_opps import mock_schematized_opp_one
 from fbo_scraper.db.db import Notice, NoticeType, Attachment, Model, now_minus_two, Solicitation
-from fbo_scraper.db.db_utils import (get_db_url, session_scope, insert_data_into_solicitations_table,
+from fbo_scraper.db.db_utils import (session_scope, insert_data_into_solicitations_table,
                               DataAccessLayer, clear_data, object_as_dict, fetch_notice_type_id,
                               insert_model, insert_notice_types, retrain_check,
                               get_validation_count, get_trained_count,
                               get_validated_untrained_count, fetch_validated_attachments,
                               fetch_last_score, fetch_notices_by_solnbr, fetch_notice_type_by_id, datetime_to_string_in, fetch_solicitations_by_solnbr)
+
+from fbo_scraper.db.connection import get_db_url
+
 
 from sqlalchemy.orm.session import close_all_sessions
 
@@ -228,6 +231,7 @@ class DBTestCase(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_retrain_check(self):
+        result = None
         with session_scope(self.dal) as session:
             insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
@@ -236,6 +240,7 @@ class DBTestCase(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_fetch_validated_attachments(self):
+        attachments = None
         with session_scope(self.dal) as session:
             insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
@@ -246,6 +251,7 @@ class DBTestCase(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_fetch_solicitations_by_solnbr(self):
+        notices = None
         with session_scope(self.dal) as session:
             insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
@@ -255,6 +261,7 @@ class DBTestCase(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_fetch_solicitations_by_solnbr_bogus_solnbr(self):
+        notices = []
         with session_scope(self.dal) as session:
             insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:

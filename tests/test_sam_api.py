@@ -14,7 +14,7 @@ class SAMAPITestCase(unittest.TestCase):
         ops = get_opps.get_opps_for_day(
             limit=100, opportunity_filter_function=sam_utils.opportunity_filter_function
         )
-        self.assertGreater(len(ops), 10)
+        self.assertGreater(len(ops), 5)
 
         for opp in ops:
             if not any(

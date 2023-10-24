@@ -60,7 +60,7 @@ To run the scan locally, do the following:
 cd path/to/this/locally/cloned/repo
 python3 -m venv env
 source env/bin/activate
-pip install -e ".[testing]"
+pip install -e ".[dev]"
 
 # Adding Configuration file to where the scraper can read it
 cd env

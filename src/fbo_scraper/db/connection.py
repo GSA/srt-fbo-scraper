@@ -111,17 +111,23 @@ class TestDAL(DataAccessLayer):
     Creates a database connection and session specifically for testing.
     """
 
-    test_db_uris = ['postgres://circleci@localhost:5432/smartie-test?sslmode=disable',
-                    'postgresql+psycopg2://localhost/test',
-                    'postgresql+psycopg2://circleci_dev:srtpass@localhost:5432/test']
-    _is_test = None
-
+    def __init__(self):
+            self._username = "circleci"
+            self._password = "srtpass"
+            conn_string = f"postgresql+psycopg2://{self.username}:{self.password}@localhost/test"
+            super().__init__(conn_string)
 
     @property
-    def is_test(self):
-        if self._is_test is None:
-            self._is_test = self.conn_string in self.test_db_uris
-        return self._is_test
+    def username(self):
+        if self._username is None:
+            self._username = input("Enter PostgreSQL username: ")
+        return self._username
+
+    @property
+    def password(self):
+        if self._password is None:
+            self._password = input("Enter PostgreSQL password: ")
+        return self._password
 
     def connect(self):
         self.create_test_postgres_db()
@@ -139,9 +145,9 @@ class TestDAL(DataAccessLayer):
         self.Session = sessionmaker(self.engine)
 
     def drop_test_postgres_db(self):
-        if database_exists(self.conn_string) and self.is_test:
+        if database_exists(self.conn_string):
             drop_database(self.conn_string)
 
     def create_test_postgres_db(self):
-        if not database_exists(self.conn_string) and self.is_test:
+        if not database_exists(self.conn_string):
             create_database(self.conn_string)

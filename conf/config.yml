@@ -6,3 +6,5 @@ client:
   to_date: "yesterday"
 database:
   update_old: True
+prediction: 
+  model_name: "clf_ajbuckingham_roc_auc.pkl"

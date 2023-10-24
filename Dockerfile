@@ -4,7 +4,6 @@ ENV SUPERCRONIC_URL=https://github.com/albertcrowley/supercronic/releases/downlo
     SUPERCRONIC=supercronic-linux-x86 \
     SUPERCRONIC_SHA1SUM=2b5144dee1af0dc07c372c3c45026dd42af81226
 
-RUN pip install --upgrade pip
 ADD requirements.txt .
 
 RUN apt-get update && apt-get install -y \
@@ -43,8 +42,6 @@ RUN apt-get update && apt-get install -y \
     #clean up the apt cache
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt --no-cache-dir
 
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
     && echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list \
@@ -54,10 +51,11 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
     && unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 
 ADD . .
-RUN pip install .
+RUN pip install --upgrade pip && pip install -e .
 
 #see https://docs.cloudfoundry.org/devguide/deploy-apps/push-docker.html
 COPY ./conf/passwd /etc/passwd
+COPY ./conf /usr/local/conf
 
 ENTRYPOINT ["supercronic"]
 

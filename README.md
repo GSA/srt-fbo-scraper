@@ -59,10 +59,15 @@ To run the scan locally, do the following:
 ```bash
 cd path/to/this/locally/cloned/repo
 python3 -m venv env
-source venv/bin/activate
-pip install -r requirements.txt
-#now you can run the scan
-python main.py
+source env/bin/activate
+pip install -e ".[dev]"
+
+# Adding Configuration file to where the scraper can read it
+cd env
+ln -s <abs_path_to_repo>/conf conf
+
+# Now you can run the scan
+fbo_scraper
 ```
 
 #### Running the tests
@@ -70,7 +75,7 @@ python main.py
 To run the tests the locally, set up the environment like before but instead run:
 
 ```bash
-python3 -W ignore -m unittest discover tests -p '*_test.py'
+py.test
 ```
 
 Several warnings and exceptions will print out. Those are by design as we're mocking HTTP requests in the unit testing.

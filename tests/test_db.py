@@ -7,12 +7,15 @@ import logging
 sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ) )
 from tests.mock_opps import mock_schematized_opp_one
 from fbo_scraper.db.db import Notice, NoticeType, Attachment, Model, now_minus_two, Solicitation
-from fbo_scraper.db.db_utils import (get_db_url, session_scope, insert_data_into_solicitations_table,
+from fbo_scraper.db.db_utils import (session_scope, insert_data_into_solicitations_table,
                               DataAccessLayer, clear_data, object_as_dict, fetch_notice_type_id,
                               insert_model, insert_notice_types, retrain_check,
                               get_validation_count, get_trained_count,
                               get_validated_untrained_count, fetch_validated_attachments,
                               fetch_last_score, fetch_notices_by_solnbr, fetch_notice_type_by_id, datetime_to_string_in, fetch_solicitations_by_solnbr)
+
+from fbo_scraper.db.connection import get_db_url
+
 
 from sqlalchemy.orm.session import close_all_sessions
 
@@ -59,7 +62,6 @@ def test_datetime_to_string_in(input, expected):
 
 @pytest.mark.usefixtures("db_class")
 class DBTestCase(unittest.TestCase):
-    
     def setUp(self):
         self.data = [mock_schematized_opp_one.copy()]
         self.dal.create_test_postgres_db()
@@ -69,7 +71,7 @@ class DBTestCase(unittest.TestCase):
             insert_notice_types(session)
 
         self.maxDiff = None
-    
+
     def tearDown(self):
         with session_scope(self.dal) as session:
             clear_data(session)
@@ -79,7 +81,6 @@ class DBTestCase(unittest.TestCase):
         self.data = None
 
     def test_insert_bad_notice(self):
-
         call_count = 0
         with session_scope(self.dal) as session:
             # intentionally bad notice type
@@ -98,12 +99,22 @@ class DBTestCase(unittest.TestCase):
     def test_insert_notice_types(self):
         with session_scope(self.dal) as session:
             insert_notice_types(session)
-        
-        types= ['Presolicitation','Solicitation','Combined Synopsis/Solicitation','TRAIN']
+
+        types = [
+            "Presolicitation",
+            "Solicitation",
+            "Combined Synopsis/Solicitation",
+            "TRAIN",
+        ]
         notice_type_ids = []
         for notice_type in types:
             with session_scope(self.dal) as session:
-                notice_type_id = session.query(NoticeType.id).filter(NoticeType.notice_type==notice_type).first().id
+                notice_type_id = (
+                    session.query(NoticeType.id)
+                    .filter(NoticeType.notice_type == notice_type)
+                    .first()
+                    .id
+                )
                 notice_type_ids.append(notice_type_id)
         notice_type_ids = set(notice_type_ids)
         result = len(notice_type_ids)
@@ -150,7 +161,7 @@ class DBTestCase(unittest.TestCase):
     def test_insert_data_into_solicitations_table_with_new_notice_type(self):
         opp = self.data[0].copy()
         nnt = "new notice type"
-        opp['notice type'] = nnt
+        opp["notice type"] = nnt
         with session_scope(self.dal) as session:
             insert_data_into_solicitations_table(session, [opp])
         result = []
@@ -158,20 +169,16 @@ class DBTestCase(unittest.TestCase):
             notices = session.query(Notice).all()
             for n in notices:
                 notice = object_as_dict(n)
-                notice_type_id = int(notice['notice_type_id'])
+                notice_type_id = int(notice["notice_type_id"])
                 notice_type = fetch_notice_type_by_id(notice_type_id, session)
                 self.assertCountEqual(notice_type.notice_type, nnt)
 
-
     def test_insert_model(self):
-        results = {'c': 'd'}
-        params = {'a': 'b'}
-        score = .99
+        results = {"c": "d"}
+        params = {"a": "b"}
+        score = 0.99
         with session_scope(self.dal) as session:
-            insert_model(session, 
-                         results = results, 
-                         params = params, 
-                         score = score)
+            insert_model(session, results=results, params=params, score=score)
         result = []
         with session_scope(self.dal) as session:
             models = session.query(Model).all()
@@ -187,18 +194,15 @@ class DBTestCase(unittest.TestCase):
         self.assertCountEqual(result, expected)
 
     def test_fetch_last_score(self):
-        results = {'c':'d'}
-        params = {'a':'b'}
-        score = .99
+        results = {"c": "d"}
+        params = {"a": "b"}
+        score = 0.99
         with session_scope(self.dal) as session:
-            insert_model(session, 
-                         results = results, 
-                         params = params, 
-                         score = score)
-        with session_scope(self.dal) as session:   
+            insert_model(session, results=results, params=params, score=score)
+        with session_scope(self.dal) as session:
             score = fetch_last_score(session)
         result = score
-        expected = .99
+        expected = 0.99
         self.assertEqual(result, expected)
 
     def test_get_validation_count(self):
@@ -227,6 +231,7 @@ class DBTestCase(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_retrain_check(self):
+        result = None
         with session_scope(self.dal) as session:
             insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
@@ -235,6 +240,7 @@ class DBTestCase(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_fetch_validated_attachments(self):
+        attachments = None
         with session_scope(self.dal) as session:
             insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
@@ -245,6 +251,7 @@ class DBTestCase(unittest.TestCase):
         self.assertEqual(result, expected)
 
     def test_fetch_solicitations_by_solnbr(self):
+        notices = None
         with session_scope(self.dal) as session:
             insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
@@ -253,15 +260,15 @@ class DBTestCase(unittest.TestCase):
         expected = 28 # Amount of keys in dict
         self.assertEqual(result, expected)
 
-    def test_fetch_notices_by_solnbr_bogus_solnbr(self):
+    def test_fetch_solicitations_by_solnbr_bogus_solnbr(self):
+        notices = []
         with session_scope(self.dal) as session:
             insert_data_into_solicitations_table(session, self.data)
         with session_scope(self.dal) as session:
-            notices = fetch_notices_by_solnbr('notexist', session)
+            notices = fetch_solicitations_by_solnbr("notexist", session)
         result = len(notices)
         expected = 0
         self.assertEqual(result, expected)
-
 
 
 if __name__ == '__main__':

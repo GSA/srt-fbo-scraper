@@ -1,0 +1,10 @@
+client:
+  limit: null
+  target_sol_types: "o,k"
+  skip_attachments: False
+  from_date: "yesterday"
+  to_date: "yesterday"
+database:
+  update_old: True
+prediction: 
+  model_name: "clf_ajbuckingham_roc_auc.pkl"

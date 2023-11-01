@@ -54,8 +54,8 @@ fi
 
 
 # Install python with pyenv
-pyenv install 3.6 # TODO: Change to 3.10 when upgraded
-pyenv global 3.6
+pyenv install 3.10 # TODO: Change to 3.10 when upgraded
+pyenv global 3.10
 
 # Create virtual environment
 python -m venv $main_dir/venv
@@ -63,16 +63,14 @@ python -m venv $main_dir/venv
 # Sourcing new virtual env
 source $main_dir/venv/bin/activate
 
-# Install requirements
-pip install -r $main_dir/requirements.txt
-
-# Symbolic link in site packages to fbo_scraper module
-# TODO: Python > 3.6 solves this without symbolic link
-# TODO: pip install -e $main_dir
-cd $main_dir/venv/lib/python3.6/site-packages # Remove when > 3.6
-ln -s $main_dir/fbo_scraper fbo_scraper # Remove when > 3.6
+# Install fbo_scraper 
 cd $main_dir
-pip install .
+pip install -e ".[dev]"
+
+# Symbolic link in site packages to configuration folder 
+cd $main_dir/venv/
+ln -s $main_dir/conf conf
+cd $main_dir
 
 # check if srt database exists
 if [psql -l | grep "srt "] then
@@ -94,5 +92,6 @@ else
 
 fi
 
-echo "Run fbo_scraper in cli to start scraper"
+echo "Run 'fbo_scraper' in command line to start scraper"
+echo "Run 'fbo_scraper --help' for more information"
 echo "Don't forget to set SAM_API_KEY & TEST_DB_URL environment variables for local run"

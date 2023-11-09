@@ -2,7 +2,7 @@ BEGIN;
 
 -- Running upgrade  -> 06c9149baecd
 
-DROP TABLE solicitations_pre_dla_update_oct_2021;
+-- DROP TABLE solicitations_pre_dla_update_oct_2021;
 
 ALTER TABLE "Agencies" ALTER COLUMN "updatedAt" DROP NOT NULL;
 

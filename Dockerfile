@@ -1,4 +1,4 @@
-FROM python:3.6.15-slim-buster
+FROM python:3.10-slim-buster
 
 ENV SUPERCRONIC_URL=https://github.com/albertcrowley/supercronic/releases/download/cloud-2/supercronic-linux-x86 \
     SUPERCRONIC=supercronic-linux-x86 \
@@ -42,8 +42,6 @@ RUN apt-get update && apt-get install -y \
     #clean up the apt cache
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt --no-cache-dir
 
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
     && echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list \
@@ -53,11 +51,11 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
     && unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 
 ADD . .
-RUN python setup.py install
-COPY ./src /usr/local/lib/python3.6/site-packages/
+RUN pip install --upgrade pip && pip install -e .
 
 #see https://docs.cloudfoundry.org/devguide/deploy-apps/push-docker.html
 COPY ./conf/passwd /etc/passwd
+COPY ./conf /usr/local/conf
 
 ENTRYPOINT ["supercronic"]
 

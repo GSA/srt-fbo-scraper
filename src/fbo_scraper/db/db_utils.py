@@ -1,7 +1,6 @@
 from contextlib import contextmanager
 from datetime import datetime
-import json
-from typing import List, Union
+from typing import Union, List
 import logging
 import os
 import sys
@@ -10,18 +9,16 @@ from random import random
 from enum import Enum
 
 import dill as pickle
-from sqlalchemy import create_engine, func, case, inspect
+from sqlalchemy import func, case, inspect
 from sqlalchemy.engine import Engine
-from sqlalchemy.orm import sessionmaker, make_transient
-from sqlalchemy.pool import NullPool
-from sqlalchemy_utils import database_exists, create_database, drop_database
-from fbo_scraper.db.db import  Solicitation, AgencyAlias, Agencies
+from fbo_scraper.db.db import Solicitation
 
 import fbo_scraper.db.db as db
 from fbo_scraper.binaries import Path, binary_path
-
+from fbo_scraper.db.connection import DataAccessLayer
 import functools
-CACHE_SIZE=256
+
+CACHE_SIZE = 256
 
 logger = logging.getLogger(__name__)
 
@@ -32,84 +29,23 @@ class PredictionEnum(Enum):
     cannot_evaluate = 3
 
 def object_as_dict(obj):
-    '''
-    When using the ORM to retrieve objects, getting row values in a dict is not 
+    """
+    When using the ORM to retrieve objects, getting row values in a dict is not
     available by default. The SQLAlchemy inspection system must be used.
-    '''
-    return {c.key: getattr(obj, c.key)
-            for c in inspect(obj).mapper.column_attrs}
+    """
+    return {c.key: getattr(obj, c.key) for c in inspect(obj).mapper.column_attrs}
+
 
 def clear_data(session):
-    '''
+    """
     Clears database content without dropping the schema (for testing)
-    '''
+    """
     meta = db.Base.metadata
     for table in reversed(meta.sorted_tables):
         session.execute(table.delete())
 
-def get_db_url():
-    '''
-    Return the db connection string depending on the environment
-    '''
-    if os.getenv('VCAP_SERVICES'):
-        db_string = os.getenv('DATABASE_URL')
-        # SQLAlchemy 1.4 removed the deprecated postgres dialect name, the name postgresql must be used instead now.
-        if db_string and db_string.startswith("postgres://"):
-            db_string = db_string.replace("postgres://", "postgresql://", 1)
-    elif os.getenv('TEST_DB_URL'):
-        db_string = os.getenv('TEST_DB_URL')
-    else:
-        if not os.getenv('VCAP_APPLICATION'):
-            db_string = "postgresql+psycopg2://localhost/test"
-        else:
-            db_string = None
-    if db_string:
-        return db_string
-    else:
-        logger.critical("Exception occurred getting database url")
-        sys.exit(1)
 
 
-class DataAccessLayer:
-    '''
-    Sets up a connection to the database.
-    '''
-    test_db_uris = ['postgres://circleci@localhost:5432/smartie-test?sslmode=disable',
-                    'postgresql+psycopg2://localhost/test',
-                    'postgresql+psycopg2://circleci_dev:srtpass@localhost:5432/test']
-    
-    def __init__(self, conn_string):
-        self.engine = None
-        self.conn_string = conn_string
-
-    def connect(self):
-        is_test = self.conn_string in DataAccessLayer.test_db_uris
-        if is_test:
-            if not database_exists(self.conn_string):
-                self.create_test_postgres_db()
-            #NullPool is a Pool which does not pool connections.
-            #Instead it literally opens and closes the underlying DB-API connection 
-            # per each connection open/close.
-            self.engine = create_engine(self.conn_string, poolclass = NullPool)
-        else:
-            self.engine = create_engine(self.conn_string, echo=False)  # use echo=True to log SQL
-        try:
-            db.Base.metadata.create_all(self.engine)
-        except Exception as e:
-            logger.critical(f"Exception occurred creating database metadata with uri:  \
-                               {self.conn_string}. Full traceback here:  {e}", exc_info=True)
-            sys.exit(1)
-        self.Session = sessionmaker(bind = self.engine)
-
-    def drop_test_postgres_db(self):
-        is_test = self.conn_string in DataAccessLayer.test_db_uris
-        if database_exists(self.conn_string ) and is_test:
-            drop_database(self.conn_string)
-
-    def create_test_postgres_db(self):
-        is_test = self.conn_string in DataAccessLayer.test_db_uris
-        if not database_exists(self.conn_string) and is_test:
-            create_database(self.conn_string)
 
 @contextmanager
 def session_scope(dal):
@@ -117,19 +53,22 @@ def session_scope(dal):
     session = dal.Session()
     try:
         yield session
-        print("Commiting DB session")
         logger.info("Commiting DB session")
         session.commit()
     except Exception as e:
         session.rollback()
-        logger.critical(f"Exception occurred during database session, causing a rollback:  \
-                        {e}", exc_info=True)
+        logger.critical(
+            f"Exception occurred during database session, causing a rollback:  \
+                        {e}",
+            exc_info=True,
+        )
     finally:
         session.close()
 
+
 @functools.lru_cache(CACHE_SIZE)
 def fetch_notice_type_id(notice_type, session):
-    '''
+    """
     Fetch the notice_type_id for a given notice_type.
 
     Parameters:
@@ -141,19 +80,24 @@ def fetch_notice_type_id(notice_type, session):
 
     Returns:
         None or notice_type_id (int): if notice_type_id, this is the PK for the notice_type
-    '''
+    """
     try:
-        notice_type_id = session.query(db.NoticeType.id).filter(db.NoticeType.notice_type==notice_type).first().id
-    except AttributeError as e:
+        notice_type_id = (
+            session.query(db.NoticeType.id)
+            .filter(db.NoticeType.notice_type == notice_type)
+            .first()
+            .id
+        )
+    except AttributeError:
         logger.debug("Requested notice type {} was not found.".format(notice_type))
         return
-    
+
     return notice_type_id
 
 
 @functools.lru_cache(CACHE_SIZE)
 def fetch_notice_type_by_id(notice_type_id, session):
-    '''
+    """
     Fetch the notice_type for a given notice_type_id.
 
     Parameters:
@@ -161,40 +105,50 @@ def fetch_notice_type_by_id(notice_type_id, session):
 
     Returns:
         None or notice_type object
-    '''
+    """
     try:
-        notice_type = session.query(db.NoticeType).filter(db.NoticeType.id == notice_type_id).first()
-    except AttributeError as e:
+        notice_type = (
+            session.query(db.NoticeType)
+            .filter(db.NoticeType.id == notice_type_id)
+            .first()
+        )
+    except AttributeError:
         logger.warn("Requested notice type ID {} was not found.".format(notice_type_id))
         return
 
     return notice_type
 
 
-def insert_notice_types(session, sam_notice_types= ['Combined Synopsis/Solicitation', 'Presolicitation', 'Solicitation', 'TRAIN'] ):
-    '''
+def insert_notice_types(
+    session,
+    sam_notice_types=[
+        "Combined Synopsis/Solicitation",
+        "Presolicitation",
+        "Solicitation",
+        "TRAIN",
+    ],
+):
+    """
     Insert each of the notice types into the notice_type table if it isn't already there.
-    '''
-    
+    """
+
     for notice_type in sam_notice_types:
         notice_type_id = fetch_notice_type_id(notice_type, session)
         if not notice_type_id:
-            nt = db.NoticeType(notice_type = notice_type)
+            nt = db.NoticeType(notice_type=notice_type)
             session.add(nt)
 
 
 def insert_model(session, results, params, score):
-    '''
+    """
     Add a Model to the database.
 
     Parameters:
         results (dict): a dict of scoring metrics and their values
         params (dict): parameter setting that gave the best results on the hold out data.
         score (float): mean cross-validated score of the best_estimator.
-    '''
-    model = db.Model(results = results,
-                     params = params,
-                     score = score)
+    """
+    model = db.Model(results=results, params=params, score=score)
     session.add(model)
 
 
@@ -207,12 +161,16 @@ def posted_date_to_datetime(posted_date_string):
     try:
         return parse(posted_date_string)
     except ParserError:
-        logger.error("Unable to parse posted date")
+        logger.error("Unable to parse posted date. Returning current utc datetime.")
         return datetime.utcnow()
 
-
 def is_opp_update(existing_date, posted_date, sol_existed_in_db):
-    if sol_existed_in_db and existing_date and posted_date and existing_date < posted_date_to_datetime(posted_date):
+    if (
+        sol_existed_in_db
+        and existing_date
+        and posted_date
+        and existing_date < posted_date_to_datetime(posted_date)
+    ):
         return True
     return False
 
@@ -398,6 +356,26 @@ def apply_predictions_to(solicitation: Solicitation, predicition: int):
     new_prediction['history'].append( { "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "value": new_prediction['value'], "508": new_prediction['value'], "estar": estar}  )
     solicitation.predictions = new_prediction
 
+def grab_notice_type_id(notice_type: str, session: DataAccessLayer) -> int:
+    """
+    Fetch the notice_type_id for a given notice_type \
+    or create notice type if it does not exist.
+    """
+
+    if notice_type is None:
+        logger.error("Notice type is None. Cannot fetch notice type id.")
+        return
+
+
+    notice_type_id = fetch_notice_type_id(notice_type, session)
+    if notice_type_id is None:
+        logger.warning("Notice type {} not found. Creating new notice type."
+                       .format(notice_type))
+        insert_notice_types(session, [notice_type])
+        notice_type_id = fetch_notice_type_id(notice_type, session)
+
+    return notice_type_id
+
 def determine_prediction_value(solicitation: Solicitation, predicition: int):
     pred = None
 
@@ -413,7 +391,7 @@ def determine_prediction_value(solicitation: Solicitation, predicition: int):
     return pred
 
 def insert_data_into_solicitations_table(session, data):
-    '''
+    """
     Insert opportunities data into the database.
 
     Parameters:
@@ -421,7 +399,7 @@ def insert_data_into_solicitations_table(session, data):
 
     Returns:
         None
-    '''
+    """
     insert_notice_types(session)
     opp_count = 0
     skip_count = 0
@@ -470,33 +448,49 @@ def insert_data_into_solicitations_table(session, data):
 
             safe_action_date = sol.actionDate.strftime("%Y-%m-%dT%H:%M:%SZ") if sol.actionDate else " "
 
-            sol.searchText = " ".join((sol.solNum, notice_type, sol.title, safe_date,
-                                       sol.reviewRec, sol.actionStatus or "", safe_action_date,
-                                       sol.agency, sol.office)).lower()
+            sol.searchText = " ".join(
+                (
+                    sol.solNum,
+                    notice_type,
+                    sol.title,
+                    safe_date,
+                    sol.reviewRec,
+                    sol.actionStatus or "",
+                    safe_action_date,
+                    sol.agency,
+                    sol.office,
+                )
+            ).lower()
 
-
-            if (not sol_existed_in_db):
-                #print("Inserting {}".format(sol.solNum))
+            if not sol_existed_in_db:
                 logger.info("Inserting {}".format(sol.solNum))
                 session.add(sol)
             else:
                 #print("Updating {}".format(sol.solNum))
                 logger.info("Updating {}".format(sol.solNum))
+
             opp_count += 1
 
         except Exception as e:
-            logger.error("Unhandled error. Data for solictation " + opp.get('solnbr', '') + " may be lost.")
+            logger.error(
+                "Unhandled error. Data for solictation "
+                + opp.get("solnbr", "")
+                + " may be lost."
+            )
             logger.error(f"Exception: {e}", exc_info=True)
             logger.error("Unexpected error: {}".format(str(sys.exc_info()[0])))
 
-
-    logger.info("Added {} notice records to the database. {} were skipped.".format(opp_count, skip_count))
+    logger.info(
+        "Added {} notice records to the database. {} were skipped.".format(
+            opp_count, skip_count
+        )
+    )
 
 
 def get_validation_count(session):
-    '''
+    """
     Gets the number of validated attachment predictions
-    '''
+    """    
     validation_count = session.query(func.count(db.Attachment.validation))
     validation_count = validation_count.scalar()
     try:
@@ -505,12 +499,13 @@ def get_validation_count(session):
         return
     return validation_count
 
-def get_trained_count(session):
-    '''
-    Gets the number of attachments that have been used to train a model
-    '''
 
-    trained_count = session.query(func.coalesce(func.sum(case([(db.Attachment.trained == True, 1)], else_ = 0)), 0))
+def get_trained_count(session):
+    """
+    Gets the number of attachments that have been used to train a model
+    """
+
+    trained_count = session.query(func.coalesce(func.sum(case((db.Attachment.trained == True, 1), else_ = 0)), 0))
     trained_count = trained_count.scalar()
     try:
         trained_count = int(trained_count)
@@ -518,12 +513,13 @@ def get_trained_count(session):
         return
     return trained_count
 
+
 def get_validated_untrained_count(session):
-    '''
+    """
     Gets the number of attachments whose predictions have been validated but have not been
     used to train a model.
-    '''
-    validated_untrained_count = session.query(func.coalesce(func.sum(case([((db.Attachment.trained == False) & (db.Attachment.validation == 1), 1)], else_ = 0)), 0)).scalar()
+    """
+    validated_untrained_count = session.query(func.coalesce(func.sum(case(((db.Attachment.trained == False) & (db.Attachment.validation == 1), 1), else_ = 0)), 0)).scalar()
 
     try:
         validated_untrained_count = int(validated_untrained_count)
@@ -531,25 +527,26 @@ def get_validated_untrained_count(session):
         return
     return validated_untrained_count
 
+
 def retrain_check(session):
-    '''
-    Returns True if the number of validated-untrained attachments divided by the number of 
+    """
+    Returns True if the number of validated-untrained attachments divided by the number of
     trained attachments is greater than .2
-    '''
+    """
     validated_untrained_count = get_validated_untrained_count(session)
     trained_count = get_trained_count(session)
     try:
         eps = validated_untrained_count / trained_count
     except (ZeroDivisionError, TypeError):
         return False
-    threshold = .2
+    threshold = 0.2
     if eps >= threshold:
         return True
     else:
         return False
 
 def fetch_notices_by_solnbr(solnbr, session):
-    '''
+    """
     Fetch all notices with a given solicitation number (solnbr).
 
     Parameters:
@@ -557,10 +554,10 @@ def fetch_notices_by_solnbr(solnbr, session):
 
     Returns:
         notice_dicts (list): a list of dicts, with each dict representing a notice
-    '''
+    """
     notices = session.query(db.Notice).filter(db.Notice.solicitation_number == solnbr)
     notice_dicts = [object_as_dict(notice) for notice in notices]
-    
+
     return notice_dicts
 
 @functools.lru_cache(CACHE_SIZE)
@@ -588,7 +585,7 @@ def fetch_solicitations_by_solnbr(solnbr: str, session, as_dict: bool=True) -> U
 
 
 def fetch_notice_by_id(notice_id, session):
-    '''
+    """
     Fetch a notice given a notice_id.
 
     Parameters:
@@ -596,54 +593,56 @@ def fetch_notice_by_id(notice_id, session):
 
     Returns:
         None or notice_dict (dict): a dict representing the notice.
-    '''
+    """
     try:
         notice = session.query(db.Notice).get(notice_id)
     except AttributeError:
         return
     notice_dict = object_as_dict(notice)
-    
+
     return notice_dict
 
+
 def fetch_validated_attachments(session):
-    '''
+    """
     Gets all of the validated attachments (including the original training dataset)
-    '''
-    validated_attachments = session.query(db.Attachment).filter(db.Attachment.validation.isnot(None))
+    """
+    validated_attachments = session.query(db.Attachment).filter(
+        db.Attachment.validation.isnot(None)
+    )
     attachments = []
     for attachment in validated_attachments:
         text = attachment.text
         validation = attachment.validation
-        attachments.append({
-            'text':text,
-            'target':validation
-        })
+        attachments.append({"text": text, "target": validation})
     cwd = os.getcwd()
-    if 'fbo-scraper' in cwd:
-        i = cwd.find('fbo-scraper')
-        root_path = cwd[:i+len('fbo-scraper')]
+    if "fbo-scraper" in cwd:
+        i = cwd.find("fbo-scraper")
+        root_path = cwd[: i + len("fbo-scraper")]
     else:
-        i = cwd.find('root')
+        i = cwd.find("root")
         root_path = cwd
-    trained_data_path = os.path.join(root_path, Path(binary_path,'train.pkl'))
-    with open(trained_data_path, 'rb') as f:
+    trained_data_path = os.path.join(root_path, Path(binary_path, "train.pkl"))
+    with open(trained_data_path, "rb") as f:
         original_labeled_samples = pickle.load(f)
-    
+
     training_data = attachments + original_labeled_samples
 
     return training_data
 
+
 def fetch_last_score(session):
-    '''
+    """
     Gets the score from the most recently trained model.
-    '''
+    """
     model = session.query(db.Model).order_by(db.Model.id.desc()).first()
     score = model.score
 
     return score
 
+
 def fetch_notices_by_solnbr_and_ntype(solnbr, notice_type, session):
-    '''
+    """
     Given a solicitation number and notice type, return all matching notices.
 
     Parameters:
@@ -651,29 +650,34 @@ def fetch_notices_by_solnbr_and_ntype(solnbr, notice_type, session):
         notice_type (str): a notice type, e.g Presolicitation
 
     Returns:
-        matching_notices (list): a list of matching notices, with each row-object 
+        matching_notices (list): a list of matching notices, with each row-object
             as a dict within that list.
-    '''
+    """
     notices = fetch_notices_by_solnbr(solnbr, session)
     notice_type_id = fetch_notice_type_id(notice_type, session)
-    matching_notices = [notice for notice in notices if notice['notice_type_id'] == notice_type_id]
-    
+    matching_notices = [
+        notice for notice in notices if notice["notice_type_id"] == notice_type_id
+    ]
+
     return matching_notices
 
+
 def fetch_notice_attachments(notice_id, session):
-    '''
+    """
     Given a notice_id, fetch all of its attachments.
 
     Parameters:
         notice_id (int): the primary key for a notice
 
     Returns:
-        attachment_dicts (list): a list of attachment row-objects, each of which represented 
+        attachment_dicts (list): a list of attachment row-objects, each of which represented
                                  as a dict
-    '''
-    attachments = session.query(db.Attachment).filter(db.Attachment.notice_id == notice_id)
+    """
+    attachments = session.query(db.Attachment).filter(
+        db.Attachment.notice_id == notice_id
+    )
     attachment_dicts = [object_as_dict(a) for a in attachments]
-    
+
     return attachment_dicts
 
 

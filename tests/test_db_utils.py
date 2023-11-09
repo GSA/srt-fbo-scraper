@@ -6,8 +6,11 @@ import pytest
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tests.mock_opps import mock_schematized_opp_two
 from fbo_scraper.db.db import Notice, NoticeType, Solicitation, Attachment, Model, now_minus_two
-from fbo_scraper.db.db_utils import get_db_url, session_scope, insert_data_into_solicitations_table, \
+from fbo_scraper.db.db_utils import session_scope, insert_data_into_solicitations_table, \
     DataAccessLayer, insert_notice_types, update_solicitation_history, search_for_agency, handle_attachments, apply_predictions_to
+
+from fbo_scraper.db.connection import get_db_url
+
 
 from datetime import datetime, timedelta
 from addict import Addict

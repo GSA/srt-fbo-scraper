@@ -1,6 +1,7 @@
 import logging
 from pathlib import Path
 from fbo_scraper import get_opps
+from fbo_scraper.get_opps import SamApiError
 from fbo_scraper.binaries import binary_path
 from fbo_scraper.predict import Predict, PredictException
 from fbo_scraper.db.db_utils import (
@@ -181,6 +182,9 @@ def main(
                 update_old_solicitations(session, max_tests=10)
 
         logger.info("Run complete without major errors.")
+    
+    except SamApiError as e:
+        logger.error(f"API Error - {e}", exc_info=True)
     except PredictException as e:
         logger.error(f"Prediction Error - {e}", exc_info=True)
     except DALException as e:

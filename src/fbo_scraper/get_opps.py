@@ -17,6 +17,8 @@ from fbo_scraper.request_utils import requests_retry_session
 
 logger = logging.getLogger(__name__)
 
+class SamApiError(Exception):
+    pass
 
 def get_opportunities_search_url(
     api_key=None,
@@ -146,6 +148,11 @@ def get_opps_for_day(
         uri_with_offset = f"{uri}&offset={offset}"
         r = session.get(uri_with_offset, timeout=100)
         data = r.json()
+
+        if r.status_code != 200:
+            api_error = data.get("error", {}).get("message")
+            raise SamApiError(f"Sam.gov API returned error message: {api_error}")
+
         logger.debug(f"Retrieved json from {uri_with_offset}: {data}")
         totalRecords = data['totalRecords']
         offset += len(data['opportunitiesData'])
@@ -333,7 +340,9 @@ def main(
         transformed_opps = transform_opps(
             opps, out_path, skip_attachments=skip_attachments
         )
-
+    
+    except SamApiError:
+        raise
     except Exception as e:
         logger.critical(f"Exception {e} getting solicitations", exc_info=True)
         sys.exit(1)

@@ -68,6 +68,7 @@ class GetOppsTestCase(unittest.TestCase):
         }
         mock_response = MagicMock()
         mock_response.json.return_value = mock_response_data
+        mock_response.status_code = 200
         mock_session.return_value.get.return_value = mock_response
 
         # Call the function with mock data
@@ -76,6 +77,31 @@ class GetOppsTestCase(unittest.TestCase):
         # Check the results
         self.assertEqual(len(opps), 1)
         self.assertEqual(opps[0]['solicitationNumber'], 'ABC123')
+
+    @patch('fbo_scraper.get_opps.get_opportunities_search_url', return_value = 'https://api.sam.gov/prod/opportunity/v1/api/search')
+    @patch('fbo_scraper.get_opps.requests_retry_session')
+    def test_get_opps_for_day_error(self, mock_session, mock_search_url):
+        from fbo_scraper.get_opps import SamApiError
+        mock_search_url.return_value = 'https://api.sam.gov/prod/opportunity/v1/api/search' 
+        
+        # Set up mock response data
+        mock_response_data = {
+            "error": {
+                "code": "API_KEY_INVALID",
+                "message": "An invalid API key was supplied. Please submit with a valid API key."
+            }
+        }
+        mock_response = MagicMock()
+        mock_response.json.return_value = mock_response_data
+        mock_response.status_code = 403
+        mock_session.return_value.get.return_value = mock_response
+
+        # Call the function with mock data
+        with self.assertRaises(SamApiError) as context:
+            opps = get_opps_for_day(limit=1)
+
+        # Check the results
+        self.assertTrue('Sam.gov API returned error message' in str(context.exception))
 
     @patch('fbo_scraper.get_opps.make_attachement_request', return_value = MagicMock(headers={'Content-Disposition': 'attachment; filename=test.pdf'}))
     @patch('fbo_scraper.get_opps.shutil.copyfileobj')

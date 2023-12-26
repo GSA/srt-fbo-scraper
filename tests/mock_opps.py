@@ -437,6 +437,37 @@ mock_schematized_opp_two = {
     "emails": ["jacob.trejo.1@us.af.mil"],
 }
 
+mock_schematized_solnum_constraint_error = [
+    {
+    "notice type": "Special Notice",
+    "solnbr": "ATC1234",
+    "agency": "DEPT OF DEFENSE",
+    "compliant": 0,
+    "office": "DEPT OF THE AIR FORCE",
+    "attachments": [],
+    "classcod": None,
+    "naics": "5",
+    "subject": "Gartner Licenses",
+    "url": "https://beta.sam.gov/opp/bdc8e589bfe24772a226b98b16239cb7/view",
+    "setaside": "",
+    "emails": ["jacob.trejo.1@us.af.mil"],
+    },
+    {
+    "notice type": "Special Notice",
+    "solnbr": "ATC1234",
+    "agency": "DEPT OF DEFENSE",
+    "compliant": 0,
+    "office": "DEPT OF THE AIR FORCE",
+    "attachments": [],
+    "classcod": None,
+    "naics": "5",
+    "subject": "Gartner Licenses",
+    "url": "https://beta.sam.gov/opp/bdc8e589bfe24772a226b98b16239cb7/view",
+    "setaside": "",
+    "emails": ["jacob.trejo.1@us.af.mil"],
+    }
+]
+
 mock_attachment_data = {
     "text": "test",
     "filename": "test.txt",

@@ -144,6 +144,11 @@ class GetOppsTestCase(unittest.TestCase):
         expected = [mock_opps.mock_transformed_opp_one]
         self.assertEqual(result, expected)
 
+    @patch('fbo_scraper.get_opps.schematize_opp')
+    def test_transform_opps_duplicates(self, m_schematize_opp):
+        m_schematize_opp.return_value = mock_opps.mock_schematized_solnum_constraint_error[0]
+        result = transform_opps(mock_opps.mock_schematized_solnum_constraint_error, self.out_path, skip_attachments=True)
+        self.assertEqual(len(result), 1)
 
 
 if __name__ == '__main__':

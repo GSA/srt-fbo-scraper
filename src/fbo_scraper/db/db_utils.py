@@ -462,12 +462,8 @@ def insert_data_into_solicitations_table(session, data):
                 )
             ).lower()
 
-            if not sol_existed_in_db:
-                logger.info("Inserting {}".format(sol.solNum))
-                session.add(sol)
-            else:
-                #print("Updating {}".format(sol.solNum))
-                logger.info("Updating {}".format(sol.solNum))
+
+            insert_data_into(session, sol, sol_existed_in_db)
 
             opp_count += 1
 
@@ -486,6 +482,13 @@ def insert_data_into_solicitations_table(session, data):
         )
     )
 
+def insert_data_into(db_session, from_sol_model, existed_in_db):
+    if not existed_in_db:
+        logger.info("Inserting {}".format(from_sol_model.solNum))
+        db_session.add(from_sol_model)
+    else:
+        #print("Updating {}".format(sol.solNum))
+        logger.info("Updating {}".format(from_sol_model.solNum))
 
 def get_validation_count(session):
     """
@@ -577,7 +580,7 @@ def fetch_solicitations_by_solnbr(solnbr: str, session, as_dict: bool=True) -> U
     solicitation = session.query(db.Solicitation).filter(db.Solicitation.solNum == solnbr).first()
     
     if as_dict:
-        sol_dict = object_as_dict(solicitation)
+        sol_dict = object_as_dict(solicitation) if solicitation else None
     else:
         sol_dict = solicitation
 
@@ -598,7 +601,7 @@ def fetch_notice_by_id(notice_id, session):
         notice = session.query(db.Notice).get(notice_id)
     except AttributeError:
         return
-    notice_dict = object_as_dict(notice)
+    notice_dict = object_as_dict(notice) if notice else None
 
     return notice_dict
 
@@ -676,7 +679,8 @@ def fetch_notice_attachments(notice_id, session):
     attachments = session.query(db.Attachment).filter(
         db.Attachment.notice_id == notice_id
     )
-    attachment_dicts = [object_as_dict(a) for a in attachments]
+
+    attachment_dicts = [object_as_dict(a) for a in attachments] if attachments else []
 
     return attachment_dicts
 

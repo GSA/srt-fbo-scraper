@@ -149,7 +149,7 @@ def main(
 
         logger.info("Smartie is fetching opportunties from SAM...")
 
-        data = get_opps.main(
+        opps_data = get_opps.main(
             limit,
             opportunity_filter_function=opportunity_filter_function,
             target_sol_types=target_sol_types,
@@ -157,26 +157,28 @@ def main(
             from_date=from_date,
             to_date=to_date,
         )
-        if not data:
+        if not opps_data:
             logger.info("Smartie didn't find any opportunities!")
         else:
             logger.info("Smartie is done fetching opportunties from SAM!")
 
             logger.info("Smartie is making predictions for each notice attachment...")
 
-            data = predict.insert_predictions(data)
+            predict_data = predict.insert_predictions(opps_data)
             logger.info(
                 "Smartie is done making predictions for each notice attachment!"
             )
 
         with dal.Session.begin() as session:
-            if data:
+            if predict_data:
                 # insert_data(session, data)
                 logger.info("Smartie is inserting data into the database...")
-                insert_data_into_solicitations_table(session, data)
+                insert_data_into_solicitations_table(session, predict_data)
                 logger.info("Smartie is done inserting data into database!")
             else:
-                logger.error("No data to insert. Something went wrong.")
+                if opps_data and not predict_data:
+                    # We received opps data but no predictions.  This is a problem.
+                    logger.error("No predicition data to insert. Something went wrong.")
 
             if updateOld:
                 update_old_solicitations(session, max_tests=10)

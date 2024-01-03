@@ -9,6 +9,7 @@ import hashlib
 import urllib
 import errno
 from pathlib import Path
+import pandas as pd
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from fbo_scraper.get_doc_text import get_doc_text
@@ -299,6 +300,12 @@ def transform_opps(opps, out_path, skip_attachments=False):
                 ]
                 schematized_opp["attachments"].extend(attachment_data)
         transformed_opps.append(schematized_opp)
+    
+    # Removing duplicate solicitation numbers resulting in a unique solNum constraint violation
+    df = pd.DataFrame(transformed_opps)
+    df.drop_duplicates(subset=['solnbr'], inplace=True)
+    transformed_opps = df.to_dict('records')
+
     return transformed_opps
 
 

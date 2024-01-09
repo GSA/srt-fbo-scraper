@@ -124,6 +124,9 @@ def main(
     to_date="yesterday",
     options=None,
 ):
+    opps_data = None
+    predict_data = None
+
     try:
 
         dal = setup_db()

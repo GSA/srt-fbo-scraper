@@ -2,7 +2,8 @@ import pytest
 import os
 import sys
 import unittest
-from fbo_scraper.db.db_utils import get_db_url, session_scope, DataAccessLayer
+from fbo_scraper.db.db_utils import DataAccessLayer
+from fbo_scraper.db.connection import get_db_url
 
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -18,7 +19,7 @@ class SamUtilsTestCase(unittest.TestCase):
         self.dal.connect()
 
     def tearDown(self):
-        with session_scope(self.dal) as session:
+        with self.dal.Session.begin() as session:
             clear_data(session)
         close_all_sessions()
         self.dal.drop_test_postgres_db()
@@ -27,7 +28,7 @@ class SamUtilsTestCase(unittest.TestCase):
 
     def test_update_old_solicitations(self):
 
-        with session_scope(self.dal) as session:
+        with self.dal.Session.begin() as session:
             sam_utils.update_old_solicitations(session, age_cutoff=365, max_tests=5)
 
 if __name__ == '__main__':

@@ -6,8 +6,11 @@ import pytest
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tests.mock_opps import mock_schematized_opp_two
 from fbo_scraper.db.db import Notice, NoticeType, Solicitation, Attachment, Model, now_minus_two
-from fbo_scraper.db.db_utils import get_db_url, session_scope, insert_data_into_solicitations_table, \
-    DataAccessLayer, insert_notice_types, update_solicitation_history, search_for_agency, handle_attachments, apply_predictions_to
+from fbo_scraper.db.db_utils import insert_data_into_solicitations_table, \
+    DataAccessLayer, insert_notice_types, update_solicitation_history, search_for_agency, handle_attachments, apply_predictions_to,create_new_or_exisiting_sol, insert_data_into
+
+from fbo_scraper.db.connection import get_db_url
+
 
 from datetime import datetime, timedelta
 from addict import Addict
@@ -25,12 +28,12 @@ class DBTestCase(unittest.TestCase):
         self.dal.create_test_postgres_db()
         self.dal.connect()
 
-        with session_scope(self.dal) as session:
+        with self.dal.Session.begin() as session:
             insert_notice_types(session)
 
 
     def tearDown(self):
-        with session_scope(self.dal) as session:
+        with self.dal.Session.begin() as session:
             clear_data(session)
         close_all_sessions()
         self.dal.drop_test_postgres_db()
@@ -38,11 +41,12 @@ class DBTestCase(unittest.TestCase):
         self.data = None
 
     def test_insert_data_into_solicitations_table(self):
-        with session_scope(self.dal) as session:
+        with self.dal.Session.begin() as session:
             try:
                 insert_data_into_solicitations_table(session, [mock_schematized_opp_two])
             except Exception as e:
                 print (e)
+        
 
 def test_update_solicitation_history():
     # Create a mock solicitation object

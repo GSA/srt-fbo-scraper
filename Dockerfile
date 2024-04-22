@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM python:3.13.0a6-slim
 
 ENV SUPERCRONIC_URL=https://github.com/albertcrowley/supercronic/releases/download/cloud-2/supercronic-linux-x86 \
     SUPERCRONIC=supercronic-linux-x86 \

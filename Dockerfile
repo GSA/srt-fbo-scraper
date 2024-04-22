@@ -51,7 +51,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
     && unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 
 ADD . .
-RUN pip install --upgrade pip && pip install -e .
+RUN pip install --upgrade pip && pip install -r requirements.txt && pip install -e .
 
 #see https://docs.cloudfoundry.org/devguide/deploy-apps/push-docker.html
 COPY ./conf/passwd /etc/passwd

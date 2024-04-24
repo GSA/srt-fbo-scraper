@@ -4,6 +4,8 @@ ENV SUPERCRONIC_URL=https://github.com/albertcrowley/supercronic/releases/downlo
     SUPERCRONIC=supercronic-linux-x86 \
     SUPERCRONIC_SHA1SUM=2b5144dee1af0dc07c372c3c45026dd42af81226
 
+WORKDIR /app
+
 ADD requirements.txt .
 
 RUN apt-get update && apt-get install -y \

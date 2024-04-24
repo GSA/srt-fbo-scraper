@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM python:3.10.14-slim-bookworm
 
 ENV SUPERCRONIC_URL=https://github.com/albertcrowley/supercronic/releases/download/cloud-2/supercronic-linux-x86 \
     SUPERCRONIC=supercronic-linux-x86 \
@@ -27,7 +27,7 @@ RUN apt-get update && apt-get install -y \
     poppler-utils \
     postgresql-common \
     xpdf \
-    python-dev \
+    python3-dev \
     ssh \
     swig \
     wget \

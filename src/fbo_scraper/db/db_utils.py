@@ -1,5 +1,5 @@
 from contextlib import contextmanager
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Union, List
 import logging
 import os
@@ -126,6 +126,7 @@ def insert_notice_types(
         "Presolicitation",
         "Solicitation",
         "TRAIN",
+        "RFQ",
     ],
 ):
     """
@@ -162,7 +163,7 @@ def posted_date_to_datetime(posted_date_string):
         return parse(posted_date_string)
     except ParserError:
         logger.error("Unable to parse posted date. Returning current utc datetime.")
-        return datetime.utcnow()
+        return datetime.now(timezone.utc)
 
 def is_opp_update(existing_date, posted_date, sol_existed_in_db):
     if (
@@ -265,14 +266,14 @@ def update_solicitation_history(solicitation,
         solicitation.actionStatus = "Solicitation Posted"
         solicitation.predictions = { "value": "red", "508": "red", "estar": "red", "history" : [] }
 
-def handle_attachments(opportunity: dict, solicitation: Solicitation, now: datetime = datetime.utcnow()) -> int:
+def handle_attachments(opportunity: dict, solicitation: Solicitation, now: datetime = datetime.now(timezone.utc)) -> int:
     """
     Create Attachment objects from the opportunity data and attach them to the solicitation.
 
     Args:
         opportunity (dict): Opportunity data from the API
         solicitation (Solicitation): SQL Alchemy Solicitation object
-        now (datetime, optional): Current datetime. Defaults to datetime.utcnow().
+        now (datetime, optional): Current datetime. Defaults to datetime.now(timezone.utc).
     Returns:
         prediction int: Solicitation prediction returned from attachment value
     """
@@ -353,7 +354,7 @@ def apply_predictions_to(solicitation: Solicitation, predicition: int):
         estar = "Not Applicable"
     new_prediction['estar'] = estar
 
-    new_prediction['history'].append( { "date": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "value": new_prediction['value'], "508": new_prediction['value'], "estar": estar}  )
+    new_prediction['history'].append( { "date": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "value": new_prediction['value'], "508": new_prediction['value'], "estar": estar}  )
     solicitation.predictions = new_prediction
 
 def grab_notice_type_id(notice_type: str, session: DataAccessLayer) -> int:
@@ -405,7 +406,7 @@ def insert_data_into_solicitations_table(session, data):
     skip_count = 0
     for opp in data:
         try:
-            now_datetime = datetime.utcnow()
+            now_datetime = datetime.now(timezone.utc)
             notice_type = opp['notice type']
             notice_type_id = fetch_notice_type_id(notice_type, session)
 

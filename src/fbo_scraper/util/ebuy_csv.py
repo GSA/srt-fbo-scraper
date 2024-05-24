@@ -1,9 +1,30 @@
+"""
+Important Note: Need to have a cookies.json file stored in the conf directory.
+This file is used to authenticate the user to the eBuy site to download the attachments.
+Here's a step-by-step guide:
+
+- Manually log into eBuy through Max.gov  website in your browser.
+- Use EditThisCookie chrome extension to export your cookies. 
+- Copy the exported values into a cookies.json file.
+
+"""
+
 import logging
 from pathlib import Path
 import sys, traceback
-
+import http.cookiejar
+import json
+from addict import Addict
 from fbo_scraper.predict import Predict
 from fbo_scraper.options import pre_main
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options as FirefoxOptions
+from selenium.webdriver.edge.options import Options as EdgeOptions
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.safari.options import Options as SafariOptions
+
+import functools
+
 from fbo_scraper.options.parser import make_parser
 from fbo_scraper.json_log_formatter import configureLogger
 from fbo_scraper.db.connection import DataAccessLayer, get_db_url, DALException
@@ -21,6 +42,7 @@ BASE_PKG_DIR = Path(__file__).parent.parent.parent.parent
 EBUY_DEFAULT_DIR = Path(BASE_PKG_DIR, "ebuy")
 ATTACHMENTS_DIR = Path(BASE_PKG_DIR, "attachments")
 
+
 logger = logging.getLogger()
 configureLogger(logger, stdout_level=logging.INFO)
 
@@ -32,7 +54,6 @@ def setup_db():
 
 def ebuy_parser():
 
-    
     ebuy_config = Path(BASE_DIR, "conf", "ebuy.yml")
 
     parser = make_parser(ebuy_config)
@@ -101,6 +122,69 @@ def rfq_relabeling(data) -> list[dict]:
             continue
     return data
 
+def get_default_browser():
+    """Grabbing the default browser based on operating system"""
+    import platform
+    browser = None
+
+    # Determine the operating system
+    os_name = platform.system()
+
+    # Choose the appropriate driver based on the operating system
+    match os_name:
+        case "Windows":
+            browser = webdriver.Edge(options=EdgeOptions())
+        case "Darwin":
+            browser = webdriver.Safari(options=SafariOptions())
+        case _:
+            browser = webdriver.Firefox(options=FirefoxOptions())
+
+    return browser
+
+def grab_cookies(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        driver = get_default_browser()
+        try:
+            driver.get("https://login.max.gov/cas/login?service=https%3A%2F%2Fwww.ebuy.gsa.gov%2Febuyopen%2F")
+        except Exception as e:
+            logger.error(f"Error loading the eBuy site: {e}")
+            driver.quit()
+            raise e
+        # Wait for the user to manually log in
+        input("Press Enter after you have logged in...")
+        cookies = driver.get_cookies()
+        
+        f = func(cookies, *args, **kwargs)
+        driver.quit()
+        return f
+    return wrapper
+
+
+@grab_cookies
+def create_ebuy_headers(cookies):
+
+    """
+    cookies_path = Path(BASE_DIR, "conf", "cookies.json") 
+    # Load the cookies from the file
+    with open(cookies_path, 'r') as f:
+        cookies = json.load(f)
+    """
+
+    # Add the cookies to the cookie jar
+    cookie_jar = [Addict(cookie) for cookie in cookies]
+
+    # Get the cookies as a string
+    cookie_string = '; '.join(f'{c.name}={c.value}' for c in cookie_jar)
+
+    # Add the cookies to the headers
+    headers = {
+        'Cookie': cookie_string,
+    }
+
+    return headers
+    
+
 def grab_attachment_texts(data) -> list[dict]:
     """
     Calling the document url listed in the resourceLinks key to grab the text
@@ -108,8 +192,9 @@ def grab_attachment_texts(data) -> list[dict]:
     """
 
     prediction_ready = []
+    headers = create_ebuy_headers()
     for opp in data:
-        file_list = get_docs(opp, out_path=ATTACHMENTS_DIR)
+        file_list = get_docs(opp, out_path=ATTACHMENTS_DIR, headers=headers)
         opp["attachments"] = []
 
         if file_list:
@@ -136,21 +221,23 @@ def ebuy_process(options):
 
     grab_ebuy_csv(options)
     options.model_path = grab_model_path(options)
-    print(options)
+    logger.debug(options)
 
     predict = Predict(best_model_path=options.model_path)
     
     rfq_data = parse_csv(options.file_path)
-    print("After Parse: ", rfq_data[0])
+    logger.debug("After Parse: ", rfq_data[0])
+    
     rfq_data = filter_out_no_attachments(rfq_data)
-    print("After Filter: ", rfq_data[0])
+    logger.debug("After Filter: ", rfq_data[0])
+    
     rfq_data = rfq_relabeling(rfq_data)
-    print("After Labeling: ", rfq_data[0])
+    logger.debug("After Labeling: ", rfq_data[0])
 
     rfq_data = grab_attachment_texts(rfq_data)
 
     predicted_data = predict.insert_predictions(rfq_data)
-    print(predicted_data[0])
+    logger.debug(predicted_data[0])
 
     with dal.Session.begin() as session:
         if predicted_data:

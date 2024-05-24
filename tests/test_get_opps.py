@@ -103,10 +103,10 @@ class GetOppsTestCase(unittest.TestCase):
         # Check the results
         self.assertTrue('Sam.gov API returned error message' in str(context.exception))
 
-    @patch('fbo_scraper.get_opps.make_attachement_request', return_value = MagicMock(headers={'Content-Disposition': 'attachment; filename=test.pdf'}))
+    @patch('fbo_scraper.get_opps.make_attachment_request', return_value = MagicMock(headers={'Content-Disposition': 'attachment; filename=test.pdf'}))
     @patch('fbo_scraper.get_opps.shutil.copyfileobj')
     @requests_mock.Mocker()
-    def test_get_docs(self, m_make_attachement_request, m_copy_file, mock_request):
+    def test_get_docs(self, m_make_attachment_request, m_copy_file, mock_request):
         opp_id = 'test'
         url = f'https://api.sam.gov/prod/opportunity/v1/api/{opp_id}/resources/download/zip'
         

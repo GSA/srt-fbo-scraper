@@ -190,10 +190,10 @@ def get_opps_for_day(
     return opps
 
 
-def make_attachement_request(file_url, http):
+def make_attachment_request(file_url, http, headers: dict = None):
     r = None
     try:
-        r = http.request("GET", file_url, preload_content=False)
+        r = http.request("GET", file_url, preload_content=False, headers=headers)
     except Exception as e:
         logger.error(
             f"{type(e)} encountered when trying to download an attachement from {file_url}"
@@ -202,11 +202,11 @@ def make_attachement_request(file_url, http):
         if re.search("beta.sam.gov", file_url):
             new_file_url = file_url.replace("beta.sam.gov", "sam.gov")
             logger.info(f"rewriting attachment url from {file_url} to {new_file_url} ")
-            return make_attachement_request(new_file_url, http)
+            return make_attachment_request(new_file_url, http)
     return r
 
 
-def get_docs(opp, out_path):
+def get_docs(opp, out_path, headers: dict = None):
     filelist = []
     http = urllib3.PoolManager()
     for file_url in opp["resourceLinks"] or []:
@@ -214,7 +214,7 @@ def get_docs(opp, out_path):
             out_path, hashlib.sha1(file_url.encode("utf-8")).hexdigest()
         )
         with open(filename, "wb") as out:
-            r = make_attachement_request(file_url, http)
+            r = make_attachment_request(file_url, http, headers=headers)
             if r and "Content-Disposition" in r.headers:
                 shutil.copyfileobj(r, out)
                 content_disposition = r.headers[

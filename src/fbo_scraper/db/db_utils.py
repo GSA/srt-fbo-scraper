@@ -206,7 +206,9 @@ def create_new_or_existing_attachment(doc: dict, session) -> db.Attachment:
     attachment_name = doc.get('filename')
     sol_id = doc.get('sol_id')
 
-    result = fetch_sol_attachment_by_name(sol_id, attachment_name, session, as_dict=False)
+    result = None 
+    if session is not None:
+        result = fetch_sol_attachment_by_name(sol_id, attachment_name, session, as_dict=False)
 
     attachment = None
     if result:
@@ -288,7 +290,7 @@ def update_solicitation_history(solicitation,
         solicitation.actionStatus = "Solicitation Posted"
         solicitation.predictions = { "value": "red", "508": "red", "estar": "red", "history" : [] }
 
-def handle_attachments(opportunity: dict, solicitation: Solicitation, session, now: datetime = datetime.now(timezone.utc)) -> int:
+def handle_attachments(opportunity: dict, solicitation: Solicitation, session=None, now: datetime = datetime.now(timezone.utc)) -> int:
     """
     Create Attachment objects from the opportunity data and attach them to the solicitation.
 
@@ -462,7 +464,7 @@ def insert_data_into_solicitations_table(session, data) -> list[Solicitation]:
                                         posted_at=opp.get('postedDate', None))
 
 
-            sol_prediction = handle_attachments(opp, sol, session, now=now_datetime)
+            sol_prediction = handle_attachments(opp, sol, session=session, now=now_datetime)
             
             
             apply_predictions_to(solicitation=sol, predicition=sol_prediction)

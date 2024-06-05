@@ -134,6 +134,7 @@ def test_handle_attachments():
     class MockSolicitation:
         def __init__(self, notice_type_id, parseStatus, na_flag):
             self.notice_type_id = notice_type_id
+            self.id = None
             self.parseStatus = parseStatus
             self.na_flag = na_flag
             self.attachments = []

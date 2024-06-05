@@ -144,7 +144,7 @@ class Predict:
                                 "notice type": opp.get("notice type", ""),
                             },
                         )
-                    normalized_text = [Predict.transform_text(text)]
+                    normalized_text = [self.transform_text(text)]
                     raw_prediction = pickled_model.predict(normalized_text)[0]
                     pred = int(raw_prediction)
                     compliant_counter += 1 if pred == 1 else 0

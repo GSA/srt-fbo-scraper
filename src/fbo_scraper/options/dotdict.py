@@ -10,7 +10,7 @@ class DotDict(Addict):
         if merg_dict:
             if isinstance(merg_dict, Namespace):
                 merg_dict = self.from_dict(vars(merg_dict))
-                print(merg_dict)
+                #print(merg_dict)
             
             for key, value in merg_dict.items():
                 if isinstance(value, (dict, self.__class__)):

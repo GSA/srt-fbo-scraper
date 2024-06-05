@@ -12,8 +12,8 @@ Here's a step-by-step guide:
 import logging
 from pathlib import Path
 import sys, traceback
-import http.cookiejar
-import json
+from datetime import datetime
+from typing import Any
 from addict import Addict
 from fbo_scraper.predict import Predict
 from fbo_scraper.options import pre_main
@@ -24,7 +24,7 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.safari.options import Options as SafariOptions
 
 import functools
-
+from copy import deepcopy
 from fbo_scraper.options.parser import make_parser
 from fbo_scraper.json_log_formatter import configureLogger
 from fbo_scraper.db.connection import DataAccessLayer, get_db_url, DALException
@@ -33,6 +33,7 @@ from fbo_scraper.get_opps import get_docs, get_attachment_data
 from fbo_scraper.db.db_utils import (
     insert_data_into_solicitations_table,
 )
+from fbo_scraper.db.db import Attachment, NoticeType, Solicitation, Base
 
 
 BASE_DIR = sys.prefix
@@ -42,7 +43,13 @@ BASE_PKG_DIR = Path(__file__).parent.parent.parent.parent
 EBUY_DEFAULT_DIR = Path(BASE_PKG_DIR, "ebuy")
 ATTACHMENTS_DIR = Path(BASE_PKG_DIR, "attachments")
 
+SOLICITATION_COLUMNS = Solicitation.__table__.columns.keys()
+ATTACHMENT_COLUMNS = Attachment.__table__.columns.keys()
 
+SOLICITATION_JSON_FIELDS = ('category_list', 'history', 'action', 'contactInfo', 'parseStatus', 'predictions', 'noticeData')
+
+now = datetime.now()
+now_sft = now.strftime("%Y_%m_%d_%H-%M-%S")
 logger = logging.getLogger()
 configureLogger(logger, stdout_level=logging.INFO)
 
@@ -110,12 +117,13 @@ def rfq_relabeling(data) -> list[dict]:
     for d in data:
         try:
             d["resourceLinks"] = d["Attachments"].split("\n")
+            d["numDocs"] = d["AttachmentCount"]
             d["notice type"] = "RFQ" # Specific eBuy notice type
             d["solnbr"] = d["RFQID"]
             d["agency"] = d["BuyerAgency"]
             d["subject"] = d["Title"]
             d["postedDate"] = parse(d["IssueDate"])
-            d["emails"] = d["BuyerEmail"]
+            d["emails"] = [d["BuyerEmail"]]
             d["office"] = ""
         except KeyError:
             logger.error(f"Not all data present for {d.get('RFQID')}")
@@ -216,6 +224,93 @@ def clear_attachments():
     except Exception as e:
         logger.error(f"Error clearing attachments: {e}")
 
+def none_to_null(row: dict):
+    from sqlalchemy import null
+
+    for k, v in row.items():
+        if v is None:
+            row[k] = 'NULL'
+    return row 
+
+def make_sql_statment(row_values: list[dict], table):
+    from sqlalchemy.sql import text
+    
+    table_name = table.__tablename__
+
+    columns = ", ".join([f'"{col}"' for col in table.__table__.columns.keys()])
+
+    statements = []
+    #print(row_values)
+    for row in row_values:
+        value_keys = row.keys()
+
+        row = none_to_null(row)
+
+        update_values = ', '.join([f'"{key}" = EXCLUDED."{key}"' for key in value_keys]).replace("'NULL'", "NULL")
+            #stmt = f"UPDATE {table_name} SET {update_values} WHERE id = '{row['id']}'"
+        insert_values = ', '.join([f"'{row[key]}'" for key in value_keys]).replace("'NULL'", "NULL")
+            #stmt = f"INSERT INTO {table_name} ({columns}) VALUES ({insert_values})"
+
+
+        stmt = f"INSERT INTO {table_name} ({columns}) VALUES ({insert_values}) ON CONFLICT (id) DO UPDATE SET {update_values};"
+
+        statements.append(stmt)
+
+    return '\n'.join(statements)
+
+
+def models_to_sql_insert(sols):
+    # Convert the models to dictionaries
+
+    import json
+    from sqlalchemy import func
+    sol_data = []
+    attachment_data = []
+
+    for sol in sols:
+        sol.updatedAt = func.now()
+        sol_dict = deepcopy(sol.__dict__)
+        attachments = sol_dict.pop("attachments")
+        
+        if "noticeData" in sol_dict and '\ufeffS.No' in sol_dict["noticeData"]:
+            sol_dict["noticeData"].pop('\ufeffS.No', None)
+
+        for key, value in sol_dict.items():
+            if isinstance(value, (dict, list)) or key in SOLICITATION_JSON_FIELDS:
+                sol_dict[key] =json.dumps(value, ensure_ascii=False).replace("'", "''")
+
+        if "_sa_instance_state" in sol_dict:
+            sol_dict.pop("_sa_instance_state")
+
+
+        sol_dict = {col: sol_dict.get(col, None) for col in SOLICITATION_COLUMNS}
+
+        for attachment in attachments:
+            attachment_dict = deepcopy(attachment.__dict__)
+            
+            if "_sa_instance_state" in attachment_dict:
+                attachment_dict.pop("_sa_instance_state")
+            if "attachment_text" in attachment_dict:
+                attachment_dict.pop("attachment_text")
+
+            attachment_dict = {col: attachment_dict.get(col, None) for col in ATTACHMENT_COLUMNS}
+
+            attachment_data.append(attachment_dict)
+        
+        sol_data.append(sol_dict)
+
+    # Compile the statement to get the SQL
+    logger.info('Compiling insert statements....')
+    attachment_stmt = make_sql_statment(attachment_data, Attachment)
+
+    
+    sol_stmt = make_sql_statment(sol_data, Solicitation)
+
+    # Get the SQL and the parameters
+    sql_stmt = str(attachment_stmt) + "\n" + str(sol_stmt) 
+
+    return sql_stmt
+
 def ebuy_process(options):
     dal = setup_db()
 
@@ -243,8 +338,19 @@ def ebuy_process(options):
         if predicted_data:
             # insert_data(session, data)
             logger.info("Smartie is inserting data into the database...")
-            insert_data_into_solicitations_table(session, predicted_data)
+            solicitation_inserted = insert_data_into_solicitations_table(session, predicted_data)
             logger.info("Smartie is done inserting data into database!")
+
+        if solicitation_inserted:
+            sql = models_to_sql_insert(solicitation_inserted)
+            logger.debug(f"SQL: {sql}")
+
+            if sql:
+                with open(Path(EBUY_DEFAULT_DIR, f"ebuy_insert_{now_sft}.sql"), "w") as f:
+                    f.write(sql)
+                    logger.info("SQL Insert file created!")
+
+
 
 def main():
     options = pre_main(

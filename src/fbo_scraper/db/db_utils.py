@@ -190,7 +190,7 @@ def datetime_to_string_in(obj: Union[dict, list], str_format="%Y-%m-%dT%H:%M:%SZ
                 datetime_to_string_in(v, str_format)
     return obj
 
-def create_new_or_exisiting_sol(sol_number, session):
+def create_new_or_exisiting_sol(sol_number: str, session) -> Solicitation:
     result = fetch_solicitations_by_solnbr(sol_number, session, as_dict=False)
     sol = None 
     if result:
@@ -201,6 +201,28 @@ def create_new_or_exisiting_sol(sol_number, session):
         sol.na_flag = False
     
     return sol
+
+def create_new_or_existing_attachment(doc: dict, session) -> db.Attachment:
+    attachment_name = doc.get('filename')
+    sol_id = doc.get('sol_id')
+
+    result = fetch_sol_attachment_by_name(sol_id, attachment_name, session, as_dict=False)
+
+    attachment = None
+    if result:
+        result.updatedAt = func.now()  # Update the updatedAt field
+        attachment = result
+    else:
+        attachment =  db.Attachment(notice_type_id=doc['notice_type_id'],
+                                    filename=attachment_name,
+                                    machine_readable=doc['machine_readable'],
+                                    attachment_text=doc['text'],
+                                    prediction=doc['prediction'],
+                                    decision_boundary=doc['decision_boundary'],
+                                    validation=doc['validation'],
+                                    attachment_url=doc['url'],
+                                    trained=doc['trained'])
+    return attachment
 
 def sol_attributes_from(opportunity, solicitation: Solicitation):
     """
@@ -266,7 +288,7 @@ def update_solicitation_history(solicitation,
         solicitation.actionStatus = "Solicitation Posted"
         solicitation.predictions = { "value": "red", "508": "red", "estar": "red", "history" : [] }
 
-def handle_attachments(opportunity: dict, solicitation: Solicitation, now: datetime = datetime.now(timezone.utc)) -> int:
+def handle_attachments(opportunity: dict, solicitation: Solicitation, session, now: datetime = datetime.now(timezone.utc)) -> int:
     """
     Create Attachment objects from the opportunity data and attach them to the solicitation.
 
@@ -280,26 +302,26 @@ def handle_attachments(opportunity: dict, solicitation: Solicitation, now: datet
     prediction = 0
     now_datetime_string = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    parseStatus = deepcopy(solicitation.parseStatus) or []
+    parseStatus = []
             
     attachments = opportunity.pop('attachments')
     solicitation.numDocs = len(attachments)
     
+    sol_attachments = []
+
     for doc in attachments:
-        attachment = db.Attachment(notice_type_id=solicitation.notice_type_id,
-                                    filename=doc['filename'],
-                                    machine_readable=doc['machine_readable'],
-                                    attachment_text=doc['text'],
-                                    prediction=doc['prediction'],
-                                    decision_boundary=doc['decision_boundary'],
-                                    validation=doc['validation'],
-                                    attachment_url=doc['url'],
-                                    trained=doc['trained'])
+        doc['notice_type_id'] = solicitation.notice_type_id
+        doc['sol_id'] = solicitation.id
+
+        attachment = create_new_or_existing_attachment(doc, session)
+        
         prediction += doc['prediction'] # this should be a 0/1 boolean and if any 1 then it's enough to make the total result true
-        solicitation.attachments.append(attachment)
+        sol_attachments.append(attachment)
         parse_status_text = "successfully parsed" if doc['machine_readable'] else "processing error"
         parseStatus.append({"id": attachment.id, "name": doc['filename'], "status": parse_status_text, "postedDate": now_datetime_string, "attachment_url": doc['url'] })
     
+    solicitation.attachments = sol_attachments
+
     solicitation.parseStatus = parseStatus
 
     return prediction
@@ -391,19 +413,21 @@ def determine_prediction_value(solicitation: Solicitation, predicition: int):
             pred = PredictionEnum.non_compliant
     return pred
 
-def insert_data_into_solicitations_table(session, data):
+def insert_data_into_solicitations_table(session, data) -> list[Solicitation]:
     """
-    Insert opportunities data into the database.
+    Insert opportunities data into the database. 
 
     Parameters:
         data (list): a list of dicts, each representing a single opportunity
 
     Returns:
-        None
+        List of Solicitation objects that were inserted, if needed.
     """
     insert_notice_types(session)
     opp_count = 0
     skip_count = 0
+
+    list_of_sols = []
     for opp in data:
         try:
             now_datetime = datetime.now(timezone.utc)
@@ -438,7 +462,7 @@ def insert_data_into_solicitations_table(session, data):
                                         posted_at=opp.get('postedDate', None))
 
 
-            sol_prediction = handle_attachments(opp, sol, now=now_datetime)
+            sol_prediction = handle_attachments(opp, sol, session, now=now_datetime)
             
             
             apply_predictions_to(solicitation=sol, predicition=sol_prediction)
@@ -463,7 +487,7 @@ def insert_data_into_solicitations_table(session, data):
                 )
             ).lower()
 
-
+            list_of_sols.append(sol)
             insert_data_into(session, sol, sol_existed_in_db)
 
             opp_count += 1
@@ -482,6 +506,8 @@ def insert_data_into_solicitations_table(session, data):
             opp_count, skip_count
         )
     )
+
+    return list_of_sols
 
 def insert_data_into(db_session, from_sol_model, existed_in_db):
     if not existed_in_db:
@@ -587,6 +613,28 @@ def fetch_solicitations_by_solnbr(solnbr: str, session, as_dict: bool=True) -> U
 
     return sol_dict
 
+@functools.lru_cache(CACHE_SIZE)
+def fetch_sol_attachment_by_name(solicitation_id, attachment_name:str, session, as_dict:bool=False) -> Union[dict, db.Attachment]:
+    """
+    Fetch an attachment by its filename.
+
+    Parameters:
+        solicitation_id (int): the PK id for a solicitation
+        attachment_name (str): the filename of the attachment
+        session (SQLAlchemy session): a session object that represents a connection to the database
+        as_dict (bool): a boolean flag that indicates whether the results should be returned as a list of dictionaries (True) or as a SQLAlchemy query object (False). The default value is True.
+    Returns:
+        attachment (dict | Model): a SQL Model or dict representing the attachment
+    """
+    
+
+
+    attachment = session.query(db.Attachment).filter(db.Attachment.filename == attachment_name, db.Attachment.solicitation_id == solicitation_id).first()
+
+    if as_dict:
+        attachment = object_as_dict(attachment) if attachment else None
+
+    return attachment
 
 def fetch_notice_by_id(notice_id, session):
     """

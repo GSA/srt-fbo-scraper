@@ -34,7 +34,9 @@ from fbo_scraper.db.db_utils import (
     insert_data_into_solicitations_table,
 )
 from fbo_scraper.db.db import Attachment, NoticeType, Solicitation, Base
+from dotenv import load_dotenv
 
+load_dotenv() 
 
 BASE_DIR = sys.prefix
 
@@ -53,9 +55,11 @@ now_sft = now.strftime("%Y_%m_%d_%H-%M-%S")
 logger = logging.getLogger()
 configureLogger(logger, stdout_level=logging.INFO)
 
+connection_params = {'connect_timeout': 30}
+
 def setup_db():
     conn_string = get_db_url()
-    dal = DataAccessLayer(conn_string)
+    dal = DataAccessLayer(conn_string, connection_params)
     dal.connect()
     return dal
 
@@ -87,6 +91,15 @@ def ebuy_parser():
         dest="prediction.model_path",
         required=False,
         help="Define the absolute path to the prediction model.",
+    )
+
+    prediction_model.add_argument(
+        "-e",
+        "--environment",
+        dest="environment",
+        required=False,
+        default="local",
+        help="Define the cloud.gov environment to run",
     )
 
     return parser
@@ -311,7 +324,67 @@ def models_to_sql_insert(sols):
 
     return sql_stmt
 
+def db_forwarding(env: str):
+    import os 
+    import subprocess
+    import pexpect
+
+    ssh_command = None
+    cloud_user = None
+    cloud_pass = None
+
+    match env:
+        case "local":
+            os.environ["TEST_DB_URL"] = os.environ.get("LOCAL_DB")
+        case "dev":
+            cloud_user = os.getenv("DEV_CLOUD_GOV_USERNAME")
+            cloud_pass = os.getenv("DEV_CLOUD_GOV_PASSWORD")
+
+            ssh_command = [ "cf", "ssh", "-L", 
+                           os.getenv("DEV_DB_FWD"), "srt-fbo-scraper-dev"
+            ]
+            os.environ["TEST_DB_URL"] = os.environ.get("DEV_DB")
+        case "staging":
+            ssh_command = [ "cf", "ssh", "-L",
+                            os.getenv("STAGING_DB_FWD"), "srt-fbo-scraper-staging"
+                ]
+            os.environ["TEST_DB_URL"] = os.environ.get("STAGING_DB")
+        case "production":
+            ssh_command = [ "cf", "ssh", "-L",
+                            os.getenv("PROD_DB_FWD"), "srt-fbo-scraper-prod"
+                ]
+            os.environ["TEST_DB_URL"] = os.environ.get("PROD_DB")
+        case "prod":
+            ssh_command = [ "cf", "ssh", "-L",
+                            os.getenv("PROD_DB_FWD"), "srt-fbo-scraper-prod"
+                ]
+            os.environ["TEST_DB_URL"] = os.environ.get("PROD_DB")
+        case _:
+            os.environ["TEST_DB_URL"] = os.environ.get("LOCAL_DB")
+    
+
+
+    if ssh_command and cloud_user and cloud_pass:
+        login_process = " ".join(["cf", "login", "-u", cloud_user, "-p", cloud_pass, "&&", "cf target -s dev &&"])
+
+        full_command = login_process + " ".join(ssh_command)
+        child = pexpect.spawn('/bin/bash', ['-c', full_command])
+
+        return child
+    
+    if ssh_command and not cloud_user and not cloud_pass:
+
+        print("Execute below command in different terminal window")
+        print(" ".join(ssh_command))
+        input("Enter to continue...")
+
+        return None
+
+        
 def ebuy_process(options):
+
+    db_child = db_forwarding(options.environment)
+
     dal = setup_db()
 
     grab_ebuy_csv(options)
@@ -341,7 +414,7 @@ def ebuy_process(options):
             solicitation_inserted = insert_data_into_solicitations_table(session, predicted_data)
             logger.info("Smartie is done inserting data into database!")
 
-        if solicitation_inserted:
+        if solicitation_inserted and options.make_sql_insert:
             sql = models_to_sql_insert(solicitation_inserted)
             logger.debug(f"SQL: {sql}")
 
@@ -350,7 +423,8 @@ def ebuy_process(options):
                     f.write(sql)
                     logger.info("SQL Insert file created!")
 
-
+    if db_child:
+        db_child.close()
 
 def main():
     options = pre_main(

@@ -41,8 +41,9 @@ class AbstractDAL(ABC):
     """
     _masked_conn_string = None  
 
-    def __init__(self, connection_string: str = None) -> None:
+    def __init__(self, connection_string: str = None, connection_args: dict = {}) -> None:
         self.engine = None
+        self.connection_args = connection_args
         self._conn_string = connection_string
         self.session = None
 
@@ -83,7 +84,9 @@ class DataAccessLayer(AbstractDAL):
         """
         try:
             # Pool_pre_ping description: https://docs.sqlalchemy.org/en/20/core/pooling.html#dealing-with-disconnects
-            self.engine = create_engine(self.conn_string, echo=False, pool_pre_ping=True)
+            self.engine = create_engine(self.conn_string, 
+                                        echo=False, pool_pre_ping=True, 
+                                        connect_args=self.connection_args)
         except Exception as e:
             raise DALException(f"Exception occurred creating database engine with uri: {self.masked_conn_string}") from e
 

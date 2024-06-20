@@ -1,5 +1,5 @@
 import pytest
-from fbo_scraper.util.ebuy_csv import grab_ebuy_csv, parse_csv, filter_out_no_attachments, rfq_relabeling, EBUY_DEFAULT_DIR, make_sql_statment
+from fbo_scraper.util.ebuy_csv import grab_ebuy_csv, parse_csv, filter_out_no_attachments, rfq_relabeling, EBUY_DEFAULT_DIR, make_sql_statment, filter_out_no_naics
 from selenium.webdriver import Edge, Safari, Firefox
 from unittest.mock import Mock
 
@@ -26,6 +26,19 @@ def test_filter_out_no_attachments():
     ]
     result = filter_out_no_attachments(data)
     assert result == []
+
+def test_filter_out_no_naics():
+    data = [
+        {'Category': '334111', 'Name': 'Product A'},
+        {'Category': '67890', 'Name': 'Product B'},
+        {'Category': 'ABCDE', 'Name': 'Product C'}
+    ]
+    # Assuming NAICS_CODES contains '12345' and '67890' but not 'ABCDE'
+    expected = [
+        {'Category': '334111', 'Name': 'Product A'},
+    ]
+    result = filter_out_no_naics(data)
+    assert result == expected
 
 def test_rfq_relabeling():
     data = [

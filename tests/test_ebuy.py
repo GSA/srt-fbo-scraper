@@ -33,7 +33,7 @@ def test_filter_out_no_naics():
         {'Category': '67890', 'Name': 'Product B'},
         {'Category': 'ABCDE', 'Name': 'Product C'}
     ]
-    # Assuming NAICS_CODES contains '12345' and '67890' but not 'ABCDE'
+    
     expected = [
         {'Category': '334111', 'Name': 'Product A'},
     ]

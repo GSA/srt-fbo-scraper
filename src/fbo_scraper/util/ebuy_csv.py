@@ -50,6 +50,12 @@ ATTACHMENT_COLUMNS = Attachment.__table__.columns.keys()
 
 SOLICITATION_JSON_FIELDS = ('category_list', 'history', 'action', 'contactInfo', 'parseStatus', 'predictions', 'noticeData')
 
+NAICS_CODES = ('334111', '334118', '3343', '334310', '334510', '334511', 
+               '334512', '334513', '334514', '334515', '334516', '334517',
+               '334519', '334614', '5112', '511210', '5182', '518210', '54169'
+               '541211', '54121', '541213', '541214', '541219', '5415',
+               '541511', '541512', '541513', '541519', '541690', '611420', '61142')
+
 now = datetime.now()
 now_sft = now.strftime("%Y_%m_%d_%H-%M-%S")
 logger = logging.getLogger()
@@ -120,6 +126,9 @@ def filter_out_no_attachments(data) -> list[dict]:
     return [d for d in data if d["Attachments"] and len(d) == 13] 
     # Length of 13 is to mitigate the csv deliminter issue from export
     # Hopefully eBuy Open will adjust
+
+def filter_out_no_naics(data) -> list[dict]:
+    return [d for d in data if d["Category"] in NAICS_CODES]
 
 def rfq_relabeling(data) -> list[dict]:
     """ 
@@ -398,6 +407,9 @@ def ebuy_process(options):
     
     rfq_data = filter_out_no_attachments(rfq_data)
     logger.debug("After Filter: ", rfq_data[0])
+
+    rfq_data = filter_out_no_naics(rfq_data)
+    logger.debug("After NAICS Filter: ", rfq_data[0])
     
     rfq_data = rfq_relabeling(rfq_data)
     logger.debug("After Labeling: ", rfq_data[0])

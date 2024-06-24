@@ -40,6 +40,23 @@ def test_filter_out_no_naics():
     result = filter_out_no_naics(data)
     assert result == expected
 
+def test_filter_out_no_naics_multiple_codes():
+    data = [
+        {'Category': '33411, 334118', 'Name': 'Product A'},
+        {'Category': '334118', 'Name': 'Product A2'},
+        {'Category': '67890, 123743', 'Name': 'Product B'},
+        {'Category': 'ABCDE', 'Name': 'Product C'},
+        {'Category': 'ABCDE', 'Name': 'Product C'}
+
+    ]
+    
+    expected = [
+        {'Category': '33411, 334118', 'Name': 'Product A'},
+        {'Category': '334118', 'Name': 'Product A2'},
+    ]
+    result = filter_out_no_naics(data)
+    assert result == expected
+
 def test_rfq_relabeling():
     data = [
         {'Attachments': 'link1\nlink2', 'AttachmentCount': 2, 'other_key': 'value'}

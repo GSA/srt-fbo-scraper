@@ -128,7 +128,7 @@ def filter_out_no_attachments(data) -> list[dict]:
     # Hopefully eBuy Open will adjust
 
 def filter_out_no_naics(data) -> list[dict]:
-    return [d for d in data if d["Category"] in NAICS_CODES]
+    return [d for d in data if any(code.strip() in NAICS_CODES for code in d["Category"].split(','))]
 
 def rfq_relabeling(data) -> list[dict]:
     """ 

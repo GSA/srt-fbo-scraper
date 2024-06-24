@@ -29,7 +29,7 @@ python-json-logger==2.0.7
 python-pptx==0.6.22
 PyYAML==6.0.1
 regex==2023.10.3
-requests==2.31.0
+requests==2.32.0
 scikit-learn==1.2.2
 scipy==1.11.3
 six==1.12.0
@@ -41,10 +41,10 @@ SQLAlchemy==2.0.22
 SQLAlchemy-Utils==0.41.1
 textract==1.6.5
 threadpoolctl==3.2.0
-tqdm==4.66.1
+tqdm==4.66.3
 typing_extensions==4.9.0
 tzlocal==5.2
-urllib3==2.0.7
+urllib3==2.2.2
 wget==3.2
 xlrd==1.2.0
 XlsxWriter==3.1.9

@@ -8,6 +8,8 @@ This application is designed to run as a cron daemon within a Docker image on [c
 4) Extracts the text from each of those documents using [textract](https://github.com/deanmalmgren/textract). 
 5) Restructures the data and inserts it into a PostgreSQL database. 
 In a future release, the script will poll the database for the number of user-validated predictions on document compliance. If there's a significant increase, those newly validated documents will be sent to the [machine learning component](https://github.com/GSA/srt-ml) of the application to train a new and improved model. 
+
+**Note:** eBuy is now integrated into SRT. Navigate to [eBuy Documentation](https://github.com/GSA/srt-fbo-scraper/tree/main/documentation/eBuy.md) for more information
 # Developer Requirements 
 ## Software Components and Tools 
 The following is a summary of the software and tools that are needed for development of this project: 

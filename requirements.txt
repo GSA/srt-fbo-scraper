@@ -48,3 +48,4 @@ urllib3==2.2.2
 wget==3.2
 xlrd==1.2.0
 XlsxWriter==3.1.9
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability

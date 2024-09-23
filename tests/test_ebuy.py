@@ -1,5 +1,5 @@
 import pytest
-from fbo_scraper.util.ebuy_csv import grab_ebuy_csv, parse_csv, filter_out_no_attachments, rfq_relabeling, EBUY_DEFAULT_DIR, make_sql_statment, filter_out_no_naics
+from fbo_scraper.util.ebuy_csv import check_for_ebuy_headers, grab_ebuy_csv, parse_csv, filter_out_no_attachments, rfq_relabeling, EBUY_DEFAULT_DIR, make_sql_statment, filter_out_no_naics
 from selenium.webdriver import Edge, Safari, Firefox
 from unittest.mock import Mock
 
@@ -85,3 +85,21 @@ def test_make_sql_statment():
         'ON CONFLICT (id) DO UPDATE SET "id" = EXCLUDED."id", "column1" = EXCLUDED."column1", "column2" = EXCLUDED."column2";'
     )
     assert sql_statement == expected_sql_statement
+
+def test_check_for_ebuy_headers_all_present():
+    data = [
+        {'col1': 'val1', 'col2': 'val2', 'col3': 'val3'}
+    ]
+    with patch('fbo_scraper.util.ebuy_csv.EBUY_NEEDED_COLUMNS', ['col1', 'col2', 'col3']):
+        result = check_for_ebuy_headers(data)
+        assert result == True
+
+def test_check_for_ebuy_headers_missing_columns():
+    data = [
+        {'col1': 'val1', 'col2': 'val2'}
+    ]
+    with patch('fbo_scraper.util.ebuy_csv.EBUY_NEEDED_COLUMNS', ['col1', 'col2', 'col3']):
+        with patch('fbo_scraper.util.ebuy_csv.logger') as mock_logger:
+            result = check_for_ebuy_headers(data)
+            mock_logger.error.assert_called_once_with("Missing columns: ['col3']")
+            assert result == False

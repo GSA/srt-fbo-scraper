@@ -56,10 +56,11 @@ NAICS_CODES = ('334111', '334118', '3343', '334310', '334510', '334511',
                '541211', '54121', '541213', '541214', '541219', '5415',
                '541511', '541512', '541513', '541519', '541690', '611420', '61142')
 
+EBUY_NEEDED_COLUMNS = ('RFQID', 'BuyerAgency', 'IssueDate', 'Title', 'Source', 'Category', 'Status', 'BuyerEmail', 'Description', 'CategoryName', 'AttachmentCount', 'Attachments')
+
 now = datetime.now()
 now_sft = now.strftime("%Y_%m_%d_%H-%M-%S")
 logger = logging.getLogger()
-configureLogger(logger, stdout_level=logging.INFO)
 
 connection_params = {'connect_timeout': 30}
 
@@ -120,7 +121,20 @@ def parse_csv(file_path) -> list:
     with open(file_path, "r", newline='') as csv_file:
         dict_reader = csv.DictReader(csv_file, delimiter=",", quotechar='"')
         return list(dict_reader)
-    
+
+def check_for_ebuy_headers(data) -> bool:
+    """
+    Checking for the necessary columns in the eBuy CSV
+    """
+
+    # Log columns missing
+    missing_col = [col for col in EBUY_NEEDED_COLUMNS if col not in data[0]]
+        
+    if missing_col:
+        logger.error(f"Missing columns: {missing_col}")
+        return False
+
+    return True 
 
 def filter_out_no_attachments(data) -> list[dict]:
     return [d for d in data if d["Attachments"] and len(d) == 13] 
@@ -392,18 +406,22 @@ def db_forwarding(env: str):
         
 def ebuy_process(options):
 
-    db_child = db_forwarding(options.environment)
-
-    dal = setup_db()
-
     grab_ebuy_csv(options)
     options.model_path = grab_model_path(options)
     logger.debug(options)
 
-    predict = Predict(best_model_path=options.model_path)
-    
     rfq_data = parse_csv(options.file_path)
     logger.debug("After Parse: ", rfq_data[0])
+    
+    if not check_for_ebuy_headers(rfq_data):
+        logger.error("Missing necessary columns in the eBuy CSV")
+        return
+
+    db_child = db_forwarding(options.environment)
+
+    dal = setup_db()
+
+    predict = Predict(best_model_path=options.model_path)
     
     rfq_data = filter_out_no_attachments(rfq_data)
     logger.debug("After Filter: ", rfq_data[0])

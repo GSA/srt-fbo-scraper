@@ -304,6 +304,9 @@ def transform_opps(opps, out_path, skip_attachments=False):
     # Removing duplicate solicitation numbers resulting in a unique solNum constraint violation
     df = pd.DataFrame(transformed_opps)
     df.drop_duplicates(subset=['solnbr'], inplace=True)
+    # Removing NaN values from the dataframe
+    df = df.where(pd.notnull(df), None)
+    
     transformed_opps = df.to_dict('records')
 
     return transformed_opps

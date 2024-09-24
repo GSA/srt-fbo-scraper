@@ -214,6 +214,8 @@ class Solicitation(Base):
     attachments = relationship(
         "Attachment", back_populates="solicitation", cascade="all, delete-orphan"
     )
+    
+    art_language = relationship("ARTLanguage", back_populates="solicitation")
 
 class ARTLanguage(Base):
     __tablename__ = "art_language"

@@ -215,6 +215,15 @@ class Solicitation(Base):
         "Attachment", back_populates="solicitation", cascade="all, delete-orphan"
     )
 
+class ARTLanguage(Base):
+    __tablename__ = "art_language"
+    id = Column(Integer, primary_key=True)
+    solicitation_id = Column(Integer, ForeignKey("solicitations.id"))
+    language = Column(JSONB, nullable=False)
+    createdAt = Column(DateTime, nullable=False, default=func.now())
+    updatedAt = Column(DateTime, onupdate=func.now())
+
+    solicitation = relationship("Solicitation", back_populates="art_language")
 
 class SurveyResponse(Base):
     __tablename__ = "survey_responses"

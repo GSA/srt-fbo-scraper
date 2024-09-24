@@ -411,7 +411,7 @@ def ebuy_process(options):
     logger.debug(options)
 
     rfq_data = parse_csv(options.file_path)
-    logger.debug("After Parse: ", rfq_data[0])
+    #logger.debug("After Parse: ", rfq_data[0])
     
     if not check_for_ebuy_headers(rfq_data):
         logger.error("Missing necessary columns in the eBuy CSV")
@@ -424,18 +424,18 @@ def ebuy_process(options):
     predict = Predict(best_model_path=options.model_path)
     
     rfq_data = filter_out_no_attachments(rfq_data)
-    logger.debug("After Filter: ", rfq_data[0])
+    #logger.debug("After Filter: ", rfq_data[0])
 
     rfq_data = filter_out_no_naics(rfq_data)
-    logger.debug("After NAICS Filter: ", rfq_data[0])
+    #logger.debug("After NAICS Filter: ", rfq_data[0])
     
     rfq_data = rfq_relabeling(rfq_data)
-    logger.debug("After Labeling: ", rfq_data[0])
+    #logger.debug("After Labeling: ", rfq_data[0])
 
     rfq_data = grab_attachment_texts(rfq_data)
 
     predicted_data = predict.insert_predictions(rfq_data)
-    logger.debug(predicted_data[0])
+    #logger.debug(predicted_data[0])
 
     with dal.Session.begin() as session:
         if predicted_data:

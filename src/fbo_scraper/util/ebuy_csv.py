@@ -1,12 +1,4 @@
 """
-Important Note: Need to have a cookies.json file stored in the conf directory.
-This file is used to authenticate the user to the eBuy site to download the attachments.
-Here's a step-by-step guide:
-
-- Manually log into eBuy through Max.gov  website in your browser.
-- Use EditThisCookie chrome extension to export your cookies. 
-- Copy the exported values into a cookies.json file.
-
 """
 
 import logging
@@ -22,6 +14,7 @@ from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.edge.options import Options as EdgeOptions
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.safari.options import Options as SafariOptions
+from argparse import BooleanOptionalAction
 
 import functools
 from copy import deepcopy
@@ -100,14 +93,23 @@ def ebuy_parser():
         help="Define the absolute path to the prediction model.",
     )
 
-    prediction_model.add_argument(
+    parser.add_argument(
         "-e",
         "--environment",
         dest="environment",
         required=False,
         default="local",
-        help="Define the cloud.gov environment to run",
+        help="Define the cloud.gov environment for data insertion",
     )
+
+    parser.add_argument(
+        "--unactive-check",
+        dest="unactive_check",
+        action=BooleanOptionalAction,
+        required=False,
+        help="Define whether to update unactive (cancelled or closed) RFQs.",
+    )
+
 
     return parser
 
@@ -403,6 +405,28 @@ def db_forwarding(env: str):
 
         return None
 
+def unactive_processing(data, options):
+    from fbo_scraper.db.db_utils import update_solicitation_to_inactive
+    from sqlalchemy import update
+
+    db_child = db_forwarding(options.environment)
+
+    dal = setup_db()
+
+    data = [d for d in data if d["Status"]]
+
+    unactive_data = [{"solNum": d["RFQID"], "active": False} for d in data if d["Status"].lower() in ("cancelled", "closed")]
+
+    try:
+        with dal.Session.begin() as session:
+            for d in unactive_data:
+                result = update_solicitation_to_inactive(d["solNum"],session)
+                if result:
+                    logger.info(f"Updated to inactive: {d['solNum']}")
+    except Exception as e:
+        logger.error("Error updating RFQs to inactive")
+        raise e
+
         
 def ebuy_process(options):
 
@@ -413,6 +437,11 @@ def ebuy_process(options):
     rfq_data = parse_csv(options.file_path)
     #logger.debug("After Parse: ", rfq_data[0])
     
+    if options.unactive_check:
+        logger.info("Processing unactive RFQs...")
+        unactive_processing(rfq_data, options)
+        return
+
     if not check_for_ebuy_headers(rfq_data):
         logger.error("Missing necessary columns in the eBuy CSV")
         return

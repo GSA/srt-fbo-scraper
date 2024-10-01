@@ -152,6 +152,16 @@ def insert_model(session, results, params, score):
     model = db.Model(results=results, params=params, score=score)
     session.add(model)
 
+def update_solicitation_to_inactive(solnbr, session):
+    """
+    Given a solicitation number, set the active flag to False.
+    """
+    sol = fetch_solicitations_by_solnbr(solnbr, session, as_dict=False)
+    if sol:
+        sol.active = False
+        session.add(sol)
+        return True
+    return False
 
 def posted_date_to_datetime(posted_date_string):
     from dateutil.parser import parse, ParserError

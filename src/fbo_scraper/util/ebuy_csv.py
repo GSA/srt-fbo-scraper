@@ -406,7 +406,7 @@ def db_forwarding(env: str):
         return None
 
 def unactive_processing(data, options):
-    from fbo_scraper.db.db_utils import update_solicitation_to_inactive
+    from fbo_scraper.db.db_utils import update_solicitation_to_inactive, bulk_fetch_solicitations_by_solnbr
     from sqlalchemy import update
 
     db_child = db_forwarding(options.environment)
@@ -415,14 +415,14 @@ def unactive_processing(data, options):
 
     data = [d for d in data if d["Status"]]
 
-    unactive_data = [{"solNum": d["RFQID"], "active": False} for d in data if d["Status"].lower() in ("cancelled", "closed")]
+    unactive_sols = [d["RFQID"] for d in data if d["Status"].lower() in ("cancelled", "closed")]
 
     try:
         with dal.Session.begin() as session:
-            for d in unactive_data:
-                result = update_solicitation_to_inactive(d["solNum"],session)
-                if result:
-                    logger.info(f"Updated to inactive: {d['solNum']}")
+            inactive_sols = bulk_fetch_solicitations_by_solnbr(unactive_sols, session)
+            for d in inactive_sols:
+                d.active = False
+                logger.info(f"Updated to inactive: {d.solNum}")
     except Exception as e:
         logger.error("Error updating RFQs to inactive")
         raise e

@@ -625,6 +625,25 @@ def fetch_solicitations_by_solnbr(solnbr: str, session, as_dict: bool=True) -> U
 
     return sol_dict
 
+def bulk_fetch_solicitations_by_solnbr(sol_numbers: list, session, as_dict: bool=False) -> List[Union[dict, Solicitation]]:
+    """
+    Fetch multiple solicitations by their solicitation numbers.
+
+    Parameters:
+        sol_numbers (list): a list of solicitation numbers
+        session (SQLAlchemy session): a session object that represents a connection to the database
+        as_dict (bool): a boolean flag that indicates whether the results should be returned as a list of dictionaries (True) or as a SQLAlchemy query object (False). The default value is True.
+
+    Returns:
+        solicitations (list): a list of solicitation dictionaries or SQLAlchemy query objects
+    """
+    solicitations = session.query(db.Solicitation).filter(db.Solicitation.solNum.in_(sol_numbers)).all()
+
+    if as_dict:
+        solicitations = [object_as_dict(sol) for sol in solicitations]
+
+    return solicitations
+
 @functools.lru_cache(CACHE_SIZE)
 def fetch_sol_attachment_by_name(solicitation_id, attachment_name:str, session, as_dict:bool=False) -> Union[dict, db.Attachment]:
     """

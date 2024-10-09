@@ -6,4 +6,4 @@ applications:
   no-route: true
   health-check-type: process
   services:
-    - srt-postgres-dev
+    - srt-postgres15-dev

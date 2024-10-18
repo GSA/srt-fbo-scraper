@@ -1,4 +1,4 @@
-FROM python:3.10.14-slim-bookworm
+FROM python:slim-bookworm
 
 ENV SUPERCRONIC_URL=https://github.com/aptible/supercronic/releases/download/v0.2.30/supercronic-linux-amd64 \
     SUPERCRONIC=supercronic-linux-amd64 \

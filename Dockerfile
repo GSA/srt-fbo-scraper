@@ -1,8 +1,8 @@
 FROM python:3.10.14-slim-bookworm
 
-ENV SUPERCRONIC_URL=https://github.com/aptible/supercronic/releases/download/v0.2.30/supercronic-linux-amd64 \
+ENV SUPERCRONIC_URL=https://github.com/BuckinghamAJ/supercronic/releases/download/v0.2.30.1/supercronic-linux-amd64 \
     SUPERCRONIC=supercronic-linux-amd64 \
-    SUPERCRONIC_SHA1SUM=9f27ad28c5c57cd133325b2a66bba69ba2235799
+    SUPERCRONIC_SHA1SUM=b181308ec7b3ca33ce9c3d534b21aba5da6aa94f
 
 WORKDIR /app
 
@@ -61,4 +61,4 @@ COPY ./conf /usr/local/conf
 
 ENTRYPOINT ["supercronic"]
 
-CMD ["-json","crontab"]
+CMD ["-raw","crontab"]

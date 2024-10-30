@@ -1,8 +1,8 @@
 FROM python:3.10.14-slim-bookworm
 
-ENV SUPERCRONIC_URL=https://github.com/BuckinghamAJ/supercronic/releases/download/v0.2.30.1/supercronic-linux-amd64 \
+ENV SUPERCRONIC_URL=https://github.com/BuckinghamAJ/supercronic/releases/download/v0.2.30.2_V2/supercronic-linux-amd64 \
     SUPERCRONIC=supercronic-linux-amd64 \
-    SUPERCRONIC_SHA1SUM=b181308ec7b3ca33ce9c3d534b21aba5da6aa94f
+    SUPERCRONIC_SHA1SUM=fa9257f5b96fae2fbfa36dafd7a699d61d7f8920
 
 WORKDIR /app
 

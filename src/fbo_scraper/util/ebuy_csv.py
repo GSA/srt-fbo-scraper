@@ -19,7 +19,6 @@ from argparse import BooleanOptionalAction
 import functools
 from copy import deepcopy
 from fbo_scraper.options.parser import make_parser
-from fbo_scraper.json_log_formatter import configureLogger
 from fbo_scraper.db.connection import DataAccessLayer, get_db_url, DALException
 from fbo_scraper.main import grab_model_path
 from fbo_scraper.get_opps import get_docs, get_attachment_data

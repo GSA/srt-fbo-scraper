@@ -17,7 +17,6 @@ from fbo_scraper.db.connection import DataAccessLayer, get_db_url, DALException
 from fbo_scraper.options import pre_main
 from fbo_scraper.options.parser import make_parser
 from fbo_scraper import name, version
-from fbo_scraper.json_log_formatter import configure_logger, configureLogger
 
 # Initialize logger with specific name
 logger = logging.getLogger('scraper')

@@ -9,22 +9,14 @@ class CustomJsonFormatter(jsonlogger.JsonFormatter):
     def add_fields(self, log_record, record, message_dict):
         super().add_fields(log_record, record, message_dict)
         
-        # Add timestamp if not present
         if not log_record.get('timestamp'):
             now = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%fZ')
             log_record['timestamp'] = now
         
-        # Handle level consistently
         log_record['level'] = record.levelname.lower()
-        
-        # Process meta information
         self.process_log_record(log_record)
     
     def process_log_record(self, log_record):
-        """
-        Move everything besides message, level, and timestamp into
-        a 'meta' dict to be compatible with cloud.gov loggerator
-        """
         meta = {}
         to_remove = []
         
@@ -46,32 +38,18 @@ class CustomJsonFormatter(jsonlogger.JsonFormatter):
         return log_record
 
 def configure_logger(logger, options, stdout_level=logging.INFO):
-    """
-    Configure logger with either JSON or standard formatting
-    """
-    # Clear existing handlers
+    """Configure logger with either JSON or standard formatting"""
     logger.handlers = []
     
-    # Create the formatter based on options
-    if hasattr(options, 'client') and getattr(options.client, 'json_logging', False):
-        formatter = CustomJsonFormatter(
-            '%(timestamp)s %(level)s %(name)s %(message)s'
-        )
+    # Cleaner options check using DotDict
+    if options.client.json_logging:
+        formatter = CustomJsonFormatter()
     else:
-        formatter = logging.Formatter(
-            '%(asctime)s - %(levelname)s - %(message)s'
-        )
+        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
     
-    # Add console handler
-    console_handler = logging.StreamHandler()
-    console_handler.setFormatter(formatter)
-    console_handler.setLevel(stdout_level)
-    logger.addHandler(console_handler)
-    
-    # Set overall logger level
-    logger.setLevel(stdout_level)
+    handler = logging.StreamHandler()
+    handler.setFormatter(formatter)
+    handler.setLevel(stdout_level)
+    logger.addHandler(handler)
     
     return logger
-
-# Keep the old name for backward compatibility
-configureLogger = configure_logger

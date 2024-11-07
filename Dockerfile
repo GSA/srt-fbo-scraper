@@ -61,4 +61,4 @@ COPY ./conf /usr/local/conf
 
 ENTRYPOINT ["supercronic"]
 
-CMD ["-json","crontab"]
+CMD ["crontab"]

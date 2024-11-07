@@ -41,15 +41,24 @@ def configure_logger(logger, options, stdout_level=logging.INFO):
     """Configure logger with either JSON or standard formatting"""
     logger.handlers = []
     
-    # Cleaner options check using DotDict
+    # Choose the formatter
     if options.client.json_logging:
         formatter = CustomJsonFormatter()
     else:
         formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
     
-    handler = logging.StreamHandler()
+    # Configure handler for the named logger
+    handler = logging.StreamHandler(sys.stdout)
     handler.setFormatter(formatter)
     handler.setLevel(stdout_level)
     logger.addHandler(handler)
+    
+    # Add this section to configure the root logger
+    root_logger = logging.getLogger()
+    if not root_logger.handlers:
+        root_handler = logging.StreamHandler(sys.stdout)
+        root_handler.setFormatter(formatter)
+        root_handler.setLevel(stdout_level)
+        root_logger.addHandler(root_handler)
     
     return logger

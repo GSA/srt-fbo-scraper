@@ -9,7 +9,7 @@ from fbo_scraper.db.db_utils import (
     insert_data_into_solicitations_table,
     insert_notice_types,
 )
-from fbo_scraper.json_log_formatter import configure_logger
+import sap.cf_logging  # Import sap.cf_logging without a specific initialization function
 from fbo_scraper.sam_utils import update_old_solicitations, opportunity_filter_function
 import sys
 import os
@@ -21,15 +21,18 @@ from fbo_scraper import name, version
 # Initialize logger with specific name
 logger = logging.getLogger('scraper')
 
-def setup_logging(options):
-    """Initialize logging configuration"""
-    global logger
-    logger = configure_logger(
-        logger,
-        options,
-        stdout_level=logging.INFO
-    )
-    return logger
+def setup_logging():
+    """Initialize logging configuration with Cloud Foundry-compatible structured logging"""
+    # Set the root logger to log to stdout for Cloud Foundry compatibility
+    root_logger = logging.getLogger()
+    root_logger.setLevel(logging.INFO)
+
+    # Add StreamHandler to the root logger for stdout if not already present
+    if not root_logger.hasHandlers():
+        handler = logging.StreamHandler(sys.stdout)
+        root_logger.addHandler(handler)
+    
+    return root_logger
 
 def setup_db():
     """Setup database connection"""
@@ -243,8 +246,9 @@ def actual_main():
     )
     
     # Setup logging with options
-    setup_logging(options)
-    
+    setup_logging()
+    logger.info("Test message from 'scraper' logger.")
+    logging.getLogger().info("Test message from root logger.")
     # Check environment after logging is configured
     check_environment()
 

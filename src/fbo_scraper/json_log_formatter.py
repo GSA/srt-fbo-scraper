@@ -1,4 +1,3 @@
-import sys  # Necessary for sys.stdout
 import logging
 from pythonjsonlogger import jsonlogger
 from datetime import datetime

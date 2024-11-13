@@ -133,6 +133,7 @@ def process_separation_report(options):
         if options.government_file:
             process_government(options.government_file, session)
 
+    logger.info("Separation Report Processing Complete")
 
     if db_child:
         db_child.close()

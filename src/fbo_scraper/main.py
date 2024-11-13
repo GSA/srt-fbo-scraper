@@ -122,9 +122,15 @@ def grab_model_path(options):
     """
     Returns the path to the prediction model.
     """
-    # Use absolute path to the model file in src directory
-    base_dir = Path(__file__).parent
-    return str(base_dir / "binaries" / "clf_ajbuckingham_roc_auc.pkl")
+    model_name = options.prediction.model_name
+    model_path = options.prediction.model_path
+    if model_name:
+        model_path = Path(binary_path, model_name)
+    elif model_path:
+        model_path = Path(model_path)
+    else:
+        model_path = Path(binary_path, "atc_estimator.pkl")
+    return model_path
 
 def check_environment():
     """

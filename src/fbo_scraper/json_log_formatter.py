@@ -38,18 +38,44 @@ class CustomJsonFormatter(jsonlogger.JsonFormatter):
         return log_record
 
 def configure_logger(logger, options, stdout_level=logging.INFO):
-    """Configure logger with either JSON or standard formatting"""
-    logger.handlers = []
+    """Configure logger with both JSON and standard formatting"""
+    logger.handlers = []  # Clear existing handlers
+    logger.setLevel(logging.INFO)
     
-    # Cleaner options check using DotDict
-    if options.client.json_logging:
-        formatter = CustomJsonFormatter()
-    else:
-        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    # Create logs directory if it doesn't exist
+    log_dir = Path("/var/log/fbo_scraper")
+    log_dir.mkdir(parents=True, exist_ok=True)
     
-    handler = logging.StreamHandler()
-    handler.setFormatter(formatter)
-    handler.setLevel(stdout_level)
-    logger.addHandler(handler)
+    # 1. Standard log file handler
+    standard_log_path = log_dir / "fbo_scraper.log"
+    standard_file_handler = TimedRotatingFileHandler(
+        standard_log_path,
+        when="midnight",
+        interval=1,
+        backupCount=30
+    )
+    standard_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    standard_file_handler.setFormatter(standard_formatter)
+    standard_file_handler.setLevel(stdout_level)
+    logger.addHandler(standard_file_handler)
+    
+    # 2. JSON log file handler
+    json_log_path = log_dir / "fbo_scraper.json.log"
+    json_file_handler = TimedRotatingFileHandler(
+        json_log_path,
+        when="midnight",
+        interval=1,
+        backupCount=30
+    )
+    json_formatter = CustomJsonFormatter()
+    json_file_handler.setFormatter(json_formatter)
+    json_file_handler.setLevel(stdout_level)
+    logger.addHandler(json_file_handler)
+    
+    # 3. Console handler (using standard formatting)
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(standard_formatter)
+    console_handler.setLevel(stdout_level)
+    logger.addHandler(console_handler)
     
     return logger

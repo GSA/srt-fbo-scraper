@@ -80,7 +80,12 @@ def separation_parser():
 
     return parser
 
-def process_not_government(file_path: str, session):
+def process_not_government(file_path: Path, session):
+    
+    if not file_path.exists():
+        logger.error(f"File {file_path} does not exist")
+        return
+    
     employees_listed = parse_csv(file_path)
 
     try:
@@ -99,7 +104,11 @@ def process_not_government(file_path: str, session):
         raise e
     
 
-def process_government(file_path: str, session):
+def process_government(file_path: Path, session):
+    if not file_path.exists():
+        logger.error(f"File {file_path} does not exist")
+        return
+
     employees_listed = parse_csv(file_path)
 
     try:
@@ -128,10 +137,12 @@ def process_separation_report(options):
 
     with dal.Session.begin() as session:
         if options.not_government_file:
-            process_not_government(options.not_government_file, session)
+            with session.begin_nested():
+                process_not_government(Path(options.not_government_file), session)
         
         if options.government_file:
-            process_government(options.government_file, session)
+            with session.begin_nested():
+                process_government(Path(options.government_file), session)
 
     logger.info("Separation Report Processing Complete")
 

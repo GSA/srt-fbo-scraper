@@ -5,6 +5,10 @@ from dateutil import parser
 from pathlib import Path
 from logging.handlers import TimedRotatingFileHandler
 
+# Define log directory relative to the project root
+PROJECT_ROOT = Path(__file__).parent.parent.parent
+LOG_DIR = PROJECT_ROOT / "logs"
+
 class CustomJsonFormatter(jsonlogger.JsonFormatter):
     def add_fields(self, log_record, record, message_dict):
         super().add_fields(log_record, record, message_dict)
@@ -39,17 +43,40 @@ class CustomJsonFormatter(jsonlogger.JsonFormatter):
 
 def configure_logger(logger, options, stdout_level=logging.INFO):
     """Configure logger with either JSON or standard formatting"""
-    logger.handlers = []
-    
+    import sys
+    import os    
     # Cleaner options check using DotDict
+
+    handlers = []
+
     if options.client.json_logging:
         formatter = CustomJsonFormatter()
     else:
         formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
     
-    handler = logging.StreamHandler()
+    handler = logging.StreamHandler(sys.stdout)
     handler.setFormatter(formatter)
     handler.setLevel(stdout_level)
-    logger.addHandler(handler)
+    handlers.append(handler)
+
+    # Create logs directory if it doesn't exist
+    os.makedirs(LOG_DIR, exist_ok=True)
+
+    # File handler
+    log_file_path = LOG_DIR / "smartie-logger.log"
+    fh = TimedRotatingFileHandler(
+        log_file_path,
+        when="midnight",
+        backupCount=14
+    )
+    fh.setFormatter(formatter)
+    fh.setLevel(stdout_level)
+    handlers.append(fh)
+
+    logging.basicConfig(handlers=handlers, level=stdout_level, force=True)
     
+    logger.info(f"Log file location: {log_file_path}")
+
     return logger
+
+__all__ = ['configure_logger', 'CustomJsonFormatter']

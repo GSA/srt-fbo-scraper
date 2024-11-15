@@ -39,22 +39,10 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/srt-fbo-scraper:dev-${{ steps.current-time.outputs.formattedTime }}
   
-  cloudfoundry:
-    name: Update Cloud Foundry Public Key and Repository
-    runs-on: ubuntu-latest
-    needs: docker
-    steps:
-      - 
-        name: Getting Keys
-        run: |
-          wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo gpg --dearmor -o /usr/share/keyrings/cli.cloudfoundry.org.gpg
-          echo "deb [signed-by=/usr/share/keyrings/cli.cloudfoundry.org.gpg] https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
-          sudo apt-get update
-
   cloudgov:
     name: Deploying to Cloud.gov
     runs-on: ubuntu-latest
-    needs: cloudfoundry
+    needs: docker
     steps:
       -
         name: Checkout
@@ -63,14 +51,26 @@ jobs:
         name: Check Working Directory
         run: |
           ls -la
-      
       -
-        name: Push to Cloud.gov Dev Space
-        uses: citizen-of-planet-earth/cf-cli-action@master
-        with:
-          cf_api: https://api.fr.cloud.gov
-          cf_username: ${{ secrets.CF_USER }}
-          cf_password: ${{ secrets.CF_PASSWORD }}
-          cf_org: gsa-ogp-srt
-          cf_space: dev
-          command: push srt-fbo-scraper-dev -f cf/manifest.dev.yml --docker-image ${{ secrets.DOCKERHUB_USERNAME }}/srt-fbo-scraper:dev-${{ needs.docker.outputs.formattedTime }}
+        name: Update Cloud Foundry Public Key and Repository
+        run: |
+          wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo gpg --dearmor -o /usr/share/keyrings/cli.cloudfoundry.org.gpg
+          echo "deb [signed-by=/usr/share/keyrings/cli.cloudfoundry.org.gpg] https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
+          sudo apt-get update
+      -
+        name: Install Cloud Foundry CLI
+        run: sudo apt-get install -y cf8-cli
+      -
+        name: Cloud Foundry Login
+        env:
+          CF_API: https://api.fr.cloud.gov
+          CF_USERNAME: ${{ secrets.CF_USER }}
+          CF_PASSWORD: ${{ secrets.CF_PASSWORD }}
+          CF_ORG: gsa-ogp-srt
+          CF_SPACE: dev
+        run: cf login -a $CF_API -u $CF_USERNAME -p $CF_PASSWORD -o $CF_ORG -s $CF_SPACE
+      -
+        name: Cloud Foundry Push
+        env:
+          DOCKER_IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}/srt-fbo-scraper:dev-${{ needs.docker.outputs.formattedTime }}
+        run: cf push srt-fbo-scraper-dev -f cf/manifest.dev.yml --docker-image $DOCKER_IMAGE

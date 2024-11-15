@@ -51,6 +51,12 @@ jobs:
         name: Check Working Directory
         run: |
           ls -la
+      - 
+        name: Update Cloud Foundry Public Key and Repository
+        run: |
+          wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo gpg --dearmor -o /usr/share/keyrings/cli.cloudfoundry.org.gpg
+          echo "deb [signed-by=/usr/share/keyrings/cli.cloudfoundry.org.gpg] https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
+          sudo apt-get update
       -
         name: Push to Cloud.gov Dev Space
         uses: citizen-of-planet-earth/cf-cli-action@master

@@ -26,6 +26,8 @@ from fbo_scraper.db.db_utils import (
     insert_data_into_solicitations_table,
 )
 from fbo_scraper.db.db import Attachment, NoticeType, Solicitation, Base
+from fbo_scraper.json_log_formatter import configure_logger
+
 from dotenv import load_dotenv
 
 load_dotenv() 
@@ -52,7 +54,17 @@ EBUY_NEEDED_COLUMNS = ('RFQID', 'BuyerAgency', 'IssueDate', 'Title', 'Source', '
 
 now = datetime.now()
 now_sft = now.strftime("%Y_%m_%d_%H-%M-%S")
-logger = logging.getLogger()
+logger = logging.getLogger('ebuy')
+
+def setup_logging(options):
+    """Initialize logging configuration"""
+    global logger
+    logger = configure_logger(
+        logger,
+        options,
+        stdout_level=logging.INFO
+    )
+    return logger
 
 connection_params = {'connect_timeout': 30}
 
@@ -191,7 +203,7 @@ def grab_cookies(func):
     def wrapper(*args, **kwargs):
         driver = get_default_browser()
         try:
-            driver.get("https://login.max.gov/cas/login?service=https%3A%2F%2Fwww.ebuy.gsa.gov%2Febuyopen%2F")
+            driver.get("https://www.ebuy.gsa.gov/ebuyopen/")
         except Exception as e:
             logger.error(f"Error loading the eBuy site: {e}")
             driver.quit()
@@ -492,6 +504,7 @@ def main():
     )
     
     try:
+        setup_logging(options)
         ebuy_process(options)
     except KeyboardInterrupt:
         logger.exception("Keyboard Interrupt")

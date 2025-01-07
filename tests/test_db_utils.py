@@ -6,13 +6,13 @@ import pytest
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tests.mock_opps import mock_schematized_opp_two
 from fbo_scraper.db.db import Notice, NoticeType, Solicitation, Attachment, Model, now_minus_two
-from fbo_scraper.db.db_utils import insert_data_into_solicitations_table, \
+from fbo_scraper.db.db_utils import convert_to_datetime, insert_data_into_solicitations_table, \
     DataAccessLayer, insert_notice_types, update_solicitation_history, search_for_agency, handle_attachments, apply_predictions_to,create_new_or_exisiting_sol, insert_data_into
 
 from fbo_scraper.db.connection import get_db_url
 
 
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from addict import Addict
 
 from unittest import mock
@@ -60,11 +60,12 @@ def test_update_solicitation_history():
             self.actionStatus = None
             self.predictions = None
 
-    now = datetime.now()
+    now = datetime.now(timezone.utc)
+    previous_posting = "2023-05-17T10:02:11Z"
 
     # Test case 1: new solicitation
     sol1 = MockSolicitation()
-    update_solicitation_history(sol1, now, in_database=False)
+    update_solicitation_history(sol1, now, in_database=False, previous_posting=None)
     assert sol1.action[0]["action"] == "Solicitation Posted"
     assert sol1.actionDate == now
     assert sol1.actionStatus == "Solicitation Posted"
@@ -73,7 +74,7 @@ def test_update_solicitation_history():
     # Test case 2: existing solicitation with no history
     sol2 = MockSolicitation()
     sol2.date = now
-    update_solicitation_history(sol2, now, in_database=True, posted_at=now - timedelta(days=7))
+    update_solicitation_history(sol2, now, in_database=True, posted_at=now - timedelta(days=7), previous_posting=previous_posting)
     assert sol2.history[0]["action"] == "Solicitation Updated on SAM"
     assert sol2.updatedAt == now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -81,7 +82,7 @@ def test_update_solicitation_history():
     sol3 = MockSolicitation()
     sol3.date = now
     sol3.history = [{ "date": "2022-01-01T00:00:00Z", "user": "admin", "action": "Solicitation Created", "status": "complete" }]
-    update_solicitation_history(sol3, now, in_database=True, posted_at=now - timedelta(days=7))
+    update_solicitation_history(sol3, now, in_database=True, posted_at=now - timedelta(days=7), previous_posting="2022-01-01T00:00:00Z" )
     assert sol3.history[1]["action"] == "Solicitation Updated on SAM"
     assert sol3.updatedAt == now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -127,6 +128,12 @@ def test_search_for_agency():
     search_for_agency("XYZ", sol, session)
     assert sol.agency_id == None
     assert sol.agency == None
+
+
+def test_convert_to_datetime():
+    date_str = "2023-05-19T10:02:11Z"
+    result = convert_to_datetime(date_str)
+    assert isinstance(result, datetime)
 
 
 def test_handle_attachments():

@@ -175,12 +175,12 @@ def posted_date_to_datetime(posted_date_string):
         logger.error("Unable to parse posted date. Returning current utc datetime.")
         return datetime.now(timezone.utc)
 
-def is_opp_update(existing_date, posted_date, sol_existed_in_db):
+def is_opp_update(previous_posting: datetime, current_posting: datetime, sol_existed_in_db: bool):
     if (
         sol_existed_in_db
-        and existing_date
-        and posted_date
-        and existing_date < posted_date_to_datetime(posted_date)
+        and previous_posting
+        and current_posting
+        and previous_posting < current_posting
     ):
         return True
     return False
@@ -277,28 +277,35 @@ def update_solicitation_history(solicitation,
                                 now: datetime,
                                 in_database: bool = False,
                                 posted_at: datetime = None,
-                                ):
-    
-    if isinstance(posted_at, str):
-        posted_at = posted_date_to_datetime(posted_at)
-
-    original_sol_date = posted_at or now # need this later to see if this is an update or not
+                                previous_posting: datetime = None):
+    posted_at = convert_to_datetime(posted_at)
+    previous_posting = convert_to_datetime(previous_posting)
     now_datetime_string = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
-
     if in_database:
-        if not solicitation.history:
-            solicitation.history = []
-        if is_opp_update(existing_date=original_sol_date, posted_date=solicitation.date, sol_existed_in_db=in_database):
-            solicitation.history.append({ "date": now_datetime_string, "user": "", "action": "Solicitation Updated on SAM", "status": "" })
-        solicitation.updatedAt = now_datetime_string
+        update_history_in_database(solicitation, now_datetime_string, previous_posting, posted_at)
     else:
-        if not solicitation.action:
-            solicitation.action = []
-        solicitation.action.append({"date": now_datetime_string, "user": "", "action": "Solicitation Posted", "status": "complete"})
-        solicitation.actionDate = now
-        solicitation.actionStatus = "Solicitation Posted"
-        solicitation.predictions = { "value": "red", "508": "red", "estar": "red", "history" : [] }
+        update_history_not_in_database(solicitation, now, now_datetime_string)
+
+def convert_to_datetime(date):
+    if isinstance(date, str):
+        return posted_date_to_datetime(date)
+    return date
+
+def update_history_in_database(solicitation, now_datetime_string, previous_posting, posted_at):
+    if not solicitation.history:
+        solicitation.history = []
+    if is_opp_update(previous_posting, posted_at, True):
+        solicitation.history.append({"date": now_datetime_string, "user": "", "action": "Solicitation Updated on SAM", "status": ""})
+    solicitation.updatedAt = now_datetime_string
+
+def update_history_not_in_database(solicitation, now, now_datetime_string):
+    if not solicitation.action:
+        solicitation.action = []
+    solicitation.action.append({"date": now_datetime_string, "user": "", "action": "Solicitation Posted", "status": "complete"})
+    solicitation.actionDate = now
+    solicitation.actionStatus = "Solicitation Posted"
+    solicitation.predictions = {"value": "red", "508": "red", "estar": "red", "history": []}
 
 def handle_attachments(opportunity: dict, solicitation: Solicitation, session=None, now: datetime = datetime.now(timezone.utc)) -> int:
     """
@@ -462,6 +469,7 @@ def insert_data_into_solicitations_table(session, data) -> list[Solicitation]:
 
             sol = create_new_or_exisiting_sol(opp['solnbr'], session)
             sol_existed_in_db = True if sol.solNum else False
+            last_posted_date = sol.date if sol.date else None # grab initial posting date to check if it was truly updated.
             sol.notice_type_id = notice_type_id
 
 
@@ -471,7 +479,8 @@ def insert_data_into_solicitations_table(session, data) -> list[Solicitation]:
             update_solicitation_history(sol, 
                                         now_datetime, 
                                         in_database=sol_existed_in_db,
-                                        posted_at=opp.get('postedDate', None))
+                                        posted_at=opp.get('postedDate', None),
+                                        previous_posting=last_posted_date)
 
 
             sol_prediction = handle_attachments(opp, sol, session=session, now=now_datetime)

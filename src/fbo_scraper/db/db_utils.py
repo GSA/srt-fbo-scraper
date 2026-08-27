@@ -9,7 +9,7 @@ from random import random
 from enum import Enum
 
 import dill as pickle
-from sqlalchemy import func, case, inspect
+from sqlalchemy import func, case, inspect, text
 from sqlalchemy.engine import Engine
 from fbo_scraper.db.db import Solicitation
 
@@ -152,16 +152,6 @@ def insert_model(session, results, params, score):
     model = db.Model(results=results, params=params, score=score)
     session.add(model)
 
-def update_solicitation_to_inactive(solnbr, session):
-    """
-    Given a solicitation number, set the active flag to False.
-    """
-    sol = fetch_solicitations_by_solnbr(solnbr, session, as_dict=False)
-    if sol:
-        sol.active = False
-        session.add(sol)
-        return True
-    return False
 
 def posted_date_to_datetime(posted_date_string):
     from dateutil.parser import parse, ParserError
@@ -175,12 +165,12 @@ def posted_date_to_datetime(posted_date_string):
         logger.error("Unable to parse posted date. Returning current utc datetime.")
         return datetime.now(timezone.utc)
 
-def is_opp_update(previous_posting: datetime, current_posting: datetime, sol_existed_in_db: bool):
+def is_opp_update(existing_date, posted_date, sol_existed_in_db):
     if (
         sol_existed_in_db
-        and previous_posting
-        and current_posting
-        and previous_posting < current_posting
+        and existing_date
+        and posted_date
+        and existing_date < posted_date_to_datetime(posted_date)
     ):
         return True
     return False
@@ -277,35 +267,28 @@ def update_solicitation_history(solicitation,
                                 now: datetime,
                                 in_database: bool = False,
                                 posted_at: datetime = None,
-                                previous_posting: datetime = None):
-    posted_at = convert_to_datetime(posted_at)
-    previous_posting = convert_to_datetime(previous_posting)
+                                ):
+    
+    if isinstance(posted_at, str):
+        posted_at = posted_date_to_datetime(posted_at)
+
+    original_sol_date = posted_at or now # need this later to see if this is an update or not
     now_datetime_string = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
+
     if in_database:
-        update_history_in_database(solicitation, now_datetime_string, previous_posting, posted_at)
+        if not solicitation.history:
+            solicitation.history = []
+        if is_opp_update(existing_date=original_sol_date, posted_date=solicitation.date, sol_existed_in_db=in_database):
+            solicitation.history.append({ "date": now_datetime_string, "user": "", "action": "Solicitation Updated on SAM", "status": "" })
+        solicitation.updatedAt = now_datetime_string
     else:
-        update_history_not_in_database(solicitation, now, now_datetime_string)
-
-def convert_to_datetime(date):
-    if isinstance(date, str):
-        return posted_date_to_datetime(date)
-    return date
-
-def update_history_in_database(solicitation, now_datetime_string, previous_posting, posted_at):
-    if not solicitation.history:
-        solicitation.history = []
-    if is_opp_update(previous_posting, posted_at, True):
-        solicitation.history.append({"date": now_datetime_string, "user": "", "action": "Solicitation Updated on SAM", "status": ""})
-    solicitation.updatedAt = now_datetime_string
-
-def update_history_not_in_database(solicitation, now, now_datetime_string):
-    if not solicitation.action:
-        solicitation.action = []
-    solicitation.action.append({"date": now_datetime_string, "user": "", "action": "Solicitation Posted", "status": "complete"})
-    solicitation.actionDate = now
-    solicitation.actionStatus = "Solicitation Posted"
-    solicitation.predictions = {"value": "red", "508": "red", "estar": "red", "history": []}
+        if not solicitation.action:
+            solicitation.action = []
+        solicitation.action.append({"date": now_datetime_string, "user": "", "action": "Solicitation Posted", "status": "complete"})
+        solicitation.actionDate = now
+        solicitation.actionStatus = "Solicitation Posted"
+        solicitation.predictions = { "value": "red", "508": "red", "estar": "red", "history" : [] }
 
 def handle_attachments(opportunity: dict, solicitation: Solicitation, session=None, now: datetime = datetime.now(timezone.utc)) -> int:
     """
@@ -362,6 +345,33 @@ def is_machine_readable(attachments: List[db.Attachment]) -> bool:
         if attachment.machine_readable:
             return True
     return False
+
+def v4_verdict_exists(session, sol_num: str) -> bool:
+    """
+    Return True if the V4 RAG pipeline (srt-rag-usai) has already written an
+    authoritative verdict for this solicitation in the "rag-solicitations" table.
+
+    V4 (v4.1) is the single source of truth for reviewRec. When a V4 row exists,
+    the legacy FBO scraper must NOT overwrite reviewRec / predictions / compliant —
+    its older ML model would clobber the better verdict (the "Cannot Evaluate"
+    regression we hit on solicitations like N00173-26-Q-1301351793).
+    """
+    if not sol_num:
+        return False
+    try:
+        row = session.execute(
+            text('SELECT 1 FROM "rag-solicitations" '
+                 'WHERE solicitation_number = :sn AND ai_applicable IS NOT NULL '
+                 'LIMIT 1'),
+            {"sn": sol_num},
+        ).fetchone()
+        return row is not None
+    except Exception as e:
+        # If the lookup fails for any reason, fall back to legacy behavior
+        # (better to risk a stale verdict than to crash the daily run).
+        logger.warning(f"v4_verdict_exists check failed for {sol_num}: {e}")
+        return False
+
 
 def apply_predictions_to(solicitation: Solicitation, predicition: int):
     new_prediction = deepcopy(solicitation.predictions)  # make a copy - if you only chagne the props then SQAlchamy won't know the object changed
@@ -469,7 +479,6 @@ def insert_data_into_solicitations_table(session, data) -> list[Solicitation]:
 
             sol = create_new_or_exisiting_sol(opp['solnbr'], session)
             sol_existed_in_db = True if sol.solNum else False
-            last_posted_date = sol.date if sol.date else None # grab initial posting date to check if it was truly updated.
             sol.notice_type_id = notice_type_id
 
 
@@ -479,14 +488,23 @@ def insert_data_into_solicitations_table(session, data) -> list[Solicitation]:
             update_solicitation_history(sol, 
                                         now_datetime, 
                                         in_database=sol_existed_in_db,
-                                        posted_at=opp.get('postedDate', None),
-                                        previous_posting=last_posted_date)
+                                        posted_at=opp.get('postedDate', None))
 
 
             sol_prediction = handle_attachments(opp, sol, session=session, now=now_datetime)
             
             
-            apply_predictions_to(solicitation=sol, predicition=sol_prediction)
+            # V4 (v4.1 srt-rag-usai) is the single source of truth for reviewRec.
+            # If it has already written a verdict for this solicitation, do NOT let
+            # the legacy ML model overwrite it — that caused correct verdicts to be
+            # clobbered back to "Cannot Evaluate" (e.g. N00173-26-Q-1301351793).
+            if v4_verdict_exists(session, sol.solNum):
+                logger.info(
+                    "Skipping legacy prediction for {} — V4 verdict already present "
+                    "(rag-solicitations is source of truth)".format(sol.solNum)
+                )
+            else:
+                apply_predictions_to(solicitation=sol, predicition=sol_prediction)
             
 
             # now set the search text column so that we can easily do a full text search in the API
@@ -633,25 +651,6 @@ def fetch_solicitations_by_solnbr(solnbr: str, session, as_dict: bool=True) -> U
         sol_dict = solicitation
 
     return sol_dict
-
-def bulk_fetch_solicitations_by_solnbr(sol_numbers: list, session, as_dict: bool=False) -> List[Union[dict, Solicitation]]:
-    """
-    Fetch multiple solicitations by their solicitation numbers.
-
-    Parameters:
-        sol_numbers (list): a list of solicitation numbers
-        session (SQLAlchemy session): a session object that represents a connection to the database
-        as_dict (bool): a boolean flag that indicates whether the results should be returned as a list of dictionaries (True) or as a SQLAlchemy query object (False). The default value is True.
-
-    Returns:
-        solicitations (list): a list of solicitation dictionaries or SQLAlchemy query objects
-    """
-    solicitations = session.query(db.Solicitation).filter(db.Solicitation.solNum.in_(sol_numbers)).all()
-
-    if as_dict:
-        solicitations = [object_as_dict(sol) for sol in solicitations]
-
-    return solicitations
 
 @functools.lru_cache(CACHE_SIZE)
 def fetch_sol_attachment_by_name(solicitation_id, attachment_name:str, session, as_dict:bool=False) -> Union[dict, db.Attachment]:

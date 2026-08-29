@@ -43,7 +43,7 @@ XML tags for each notice template.
 Some of the templates have tags (e.g. `<URL>`) that provide a link to additional documentation.
  
 ## Valid Tag Values
-Occasioanlly, the documentation lists the valid values for a tag. We'll document those here.
+Occasionally, the documentation lists the valid values for a tag. We'll document those here.
 
 ### Set-Aside Values
 Valid tag values include:

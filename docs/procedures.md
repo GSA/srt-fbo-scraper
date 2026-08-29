@@ -19,14 +19,14 @@ Both of the adding and removing processes should be initiated by creating an iss
 These accounts are created for developers that need access to contribute code and deploy apps.
 
 1. [Create an account](https://github.com/) with GitHub and [enable multi factor authentication](https://github.com/blog/1614-two-factor-authentication).
-2. Make sure you have [gitseekrets](https://github.com/18F/laptop/tree/master/seekret-rules) installed whereever you develop.
+2. Make sure you have [gitseekrets](https://github.com/18F/laptop/tree/master/seekret-rules) installed wherever you develop.
 3. Then, you will want to contact the system owner by creating a new issue in the [issue tracker](https://github.com/GSA/srt-fbo-scraper/issues). In that message, include your name, the name of your supervisor, confirm you have two-factor authentication on and have installed gitseekrets. 
 4. The system owner will confirm the GSA identity of the applicant, and signal approval in the ticket. 
 5. The system owner will then add the GitHub handle for the new member to the GSA GitHub team and close the ticket.
 
 ### Cloud.gov Access 
 
-The SRT System Administrator posseses the following three roles at the organization level:
+The SRT System Administrator possesses the following three roles at the organization level:
  - Org Manager: Administer the org.
  - Org Auditor: Read-only access to user information and org quota usage information.
  - Org Billing Manager: Create and manage billing account and payment information.
@@ -78,8 +78,8 @@ Here is the step-by-step for adding a user to one of the SRT access groups:
 * Log into MAX.gov: https://max.gov
 * On your MAX user home page you should see a section labeled Collaboration Groups. In that section, find the group you want to put the new user in. This will typically be SRT-508-COORDINATOR for 'regular' SRT users. In the associated dropdown list, choose the "Manage Group" action
 * On the manage group page you can see the list of current members. If the user is not listed already, click the "Add Users" button.
-* On this page you can search fro the appropriate user by name or email address. Click Check Email Addresses when done.
-* When the email addresses have been verfified, the confirmation page will show the invitation text that will be sent by email. You can either modifiy the text or uncheck the Notify Users with MAX Accounts check box.
+* On this page you can search for the appropriate user by name or email address. Click Check Email Addresses when done.
+* When the email addresses have been verified, the confirmation page will show the invitation text that will be sent by email. You can either modify the text or uncheck the Notify Users with MAX Accounts check box.
 * Click the Send Invitations button to finish the process.
 
 
@@ -162,11 +162,11 @@ The initiation of a solution (system or application) project begins when a busin
 
 ### Phase Two - Planning
 
-This phase is concerned with how the business will operate once the approved solution (i.e. SRT) is implemented, and to assess how the solution will impact employees and customers, including impacts on their privacy. Our team has engaged with section-508 coordinators accross the 24 CFO-Act agencies in order to collect user stories, conduct user acceptance testing, and to validate the accuracy of the compliance classifications rendered by the machine learning algorithms.
+This phase is concerned with how the business will operate once the approved solution (i.e. SRT) is implemented, and to assess how the solution will impact employees and customers, including impacts on their privacy. Our team has engaged with section-508 coordinators across the 24 CFO-Act agencies in order to collect user stories, conduct user acceptance testing, and to validate the accuracy of the compliance classifications rendered by the machine learning algorithms.
 
 ### Phase Three – Requirements Analysis
 
-In this phase, the SRT team collected functional user requirements and formally defined them in terms of data, solution performance, security, and maintainability in light of resource contraints.
+In this phase, the SRT team collected functional user requirements and formally defined them in terms of data, solution performance, security, and maintainability in light of resource constraints.
 
 ### Phase Four – Design
 
@@ -174,7 +174,7 @@ In this phase, our team designed the physical characteristics of the SRT system 
 
 ### Phase Five – Development
 
-In this phase, the SRT Team produced translated the detailed specifications enumerated in the design phase into executable software created through incremental development techniques in intervals that were not to exceed six months. All software components were unit tested, integrated, and re-tested in a systematic manner using CircleCI in conjuction with GitFlow.
+In this phase, the SRT Team produced translated the detailed specifications enumerated in the design phase into executable software created through incremental development techniques in intervals that were not to exceed six months. All software components were unit tested, integrated, and re-tested in a systematic manner using CircleCI in conjunction with GitFlow.
 
 ### Phase Six – Integration and Testing
 

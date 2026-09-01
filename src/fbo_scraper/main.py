@@ -1,7 +1,7 @@
 import logging
 from pathlib import Path
 from fbo_scraper import get_opps
-from fbo_scraper.get_opps import SamApiError
+from fbo_scraper.get_opps import SamApiError, SamApiThrottled
 from fbo_scraper.binaries import binary_path
 from fbo_scraper.predict import Predict, PredictException
 from fbo_scraper.db.db_utils import (
@@ -226,6 +226,11 @@ def main(
 
             logger.info("Run complete without major errors.")
     
+    except SamApiThrottled as e:
+        # The daily quota is spent. Say so plainly and exit without a stack
+        # trace, because this is an expected operational condition rather than a
+        # defect, and retrying only spends more of tomorrow's allowance.
+        logger.error(f"SAM.gov quota exhausted, stopping for today: {e}")
     except SamApiError as e:
         logger.error(f"API Error - {e}", exc_info=True)
     except PredictException as e:

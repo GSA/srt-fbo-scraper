@@ -1,2 +1,8 @@
-# Run every day at 5 AM Eastern Standard Time
-0 10 * * * /usr/local/bin/fbo_scraper
+# Run every day at 5 AM Eastern Standard Time.
+#
+# The timeout matters as much as the schedule. supercronic will not start a
+# second instance of a job while the first is still running, so a run that
+# hangs silently suppresses every run after it. That happened: a run begun on
+# 19 August was still alive thirteen days later, and no data was ingested in
+# between.
+0 10 * * * timeout 3600 /usr/local/bin/fbo_scraper

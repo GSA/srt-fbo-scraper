@@ -18,6 +18,23 @@ from fbo_scraper.request_utils import requests_retry_session
 
 logger = logging.getLogger(__name__)
 
+# The number of pages a single run may request before giving up. 500 records a
+# page means this covers 2.5 million records, far more than a day's postings,
+# while still bounding a run that cannot make progress.
+MAX_ROUNDS = 5000
+
+
+class SamApiThrottled(Exception):
+    """
+    SAM.gov refused the request because the daily quota is spent.
+
+    Distinct from SamApiError because retrying makes it worse: every attempt
+    counts against the same quota. The caller should stop for the day rather
+    than back off and try again.
+    """
+    pass
+
+
 class SamApiError(Exception):
     pass
 
@@ -143,11 +160,41 @@ def get_opps_for_day(
     totalRecords = 9999999
     offset = 0
     opps = []
+    rounds = 0
 
     session = requests_retry_session()
     while offset < totalRecords and (not limit or len(opps) < limit):
         uri_with_offset = f"{uri}&offset={offset}"
-        r = session.get(uri_with_offset, timeout=100)
+        rounds += 1
+        if rounds > MAX_ROUNDS:
+            # A guard against never terminating. Without it a page that returns
+            # no records leaves the offset unchanged and the loop runs forever,
+            # which is how a single run stayed alive for thirteen days and
+            # exhausted the SAM.gov daily quota.
+            raise SamApiError(
+                f"Stopping after {MAX_ROUNDS} requests without finishing. "
+                f"Retrieved {len(opps)} of a reported {totalRecords} records."
+            )
+
+        # A connect timeout and a read timeout. A single number is only a read
+        # timeout, and a read timeout resets on every byte, so a server that
+        # trickles bytes can hold the connection open indefinitely.
+        r = session.get(uri_with_offset, timeout=(10, 60))
+
+        # The quota response is not JSON-decodable as an error object, so check
+        # the status before trying to read a message out of the body.
+        if r.status_code == 429:
+            body = {}
+            try:
+                body = r.json()
+            except Exception:
+                pass
+            raise SamApiThrottled(
+                body.get("description")
+                or body.get("message")
+                or "SAM.gov returned 429 Too Many Requests."
+            )
+
         data = r.json()
 
         if r.status_code != 200:
@@ -156,7 +203,18 @@ def get_opps_for_day(
 
         logger.debug(f"Retrieved json from {uri_with_offset}: {data}")
         totalRecords = data['totalRecords']
-        offset += len(data['opportunitiesData'])
+
+        returned = len(data['opportunitiesData'])
+        if returned == 0:
+            # An empty page means there is nothing further to read, whatever
+            # totalRecords claims. Advancing by zero would spin forever.
+            logger.info(
+                f"SAM returned an empty page at offset {offset} while reporting "
+                f"{totalRecords} total records. Treating the result set as complete."
+            )
+            break
+
+        offset += returned
 
         opportunities_data = data["opportunitiesData"]
 
